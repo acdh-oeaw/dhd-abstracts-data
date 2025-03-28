@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="185_final-ANDORFER_Peter_DHd_2019_Book_of_Abstracts_Hackathon" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="142_final-HORSTMANN_Jan_Texte_digital_annotieren_und_analysieren_mit_C" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>DHd 2019 Book of Abstracts Hackathon</title>
+                <title>Texte digital annotieren und analysieren mit CATMA 6.0</title>
                 <author>
                     <persName>
-                        <surname>Andorfer</surname>
-                        <forename>Peter</forename>
+                        <surname>Horstmann</surname>
+                        <forename>Jan</forename>
                     </persName>
-                    <affiliation>Österreichische Akademie der Wissenschaften, Österreich</affiliation>
-                    <email>peter.andorfer@oeaw.ac.at</email>
+                    <affiliation>Universität Hamburg, Deutschland</affiliation>
+                    <email>jan.horstmann@uni-hamburg.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Cremer</surname>
-                        <forename>Fabian</forename>
+                        <surname>Meister</surname>
+                        <forename>Jan Christoph</forename>
                     </persName>
-                    <affiliation>Max Weber Stiftung, Bonn</affiliation>
-                    <email>Cremer@MaxWeberStiftung.de</email>
+                    <affiliation>Universität Hamburg, Deutschland</affiliation>
+                    <email>jan-c-meister@uni-hamburg.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Steyer</surname>
-                        <forename>Timo</forename>
+                        <surname>Petris</surname>
+                        <forename>Marco</forename>
                     </persName>
-                    <affiliation>Forschungsverbund Marbach Weimar Wolfenbüttel / Herzog August Bibliothek Wolfenbüttel</affiliation>
-                    <email>steyer@hab.de</email>
+                    <affiliation>Universität Hamburg, Deutschland</affiliation>
+                    <email>marco.petris@uni-hamburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schumacher</surname>
+                        <forename>Mareike</forename>
+                    </persName>
+                    <affiliation>Universität Hamburg, Deutschland</affiliation>
+                    <email>mareike.schumacher@uni-hamburg.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2018-10-09T07:06:00Z</date>
+                    <date>2019-01-02T11:06:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -63,16 +71,16 @@
                     <term>Workshop</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Digitales Publizieren</term>
-                    <term>Publikationsprozess</term>
-                    <term>Transformation</term>
-                    <term>Abstracts</term>
-                    <term>TEI</term>
+                    <term>Annotation</term>
+                    <term>Analyse</term>
+                    <term>Visualisierung</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Veröffentlichung</term>
-                    <term>Webentwicklung</term>
-                    <term>Software</term>
+                    <term>Strukturanalyse</term>
+                    <term>Annotieren</term>
+                    <term>Einführung</term>
+                    <term>Visualisierung</term>
+                    <term>Methoden</term>
                     <term>Text</term>
                 </keywords>
             </textClass>
@@ -82,200 +90,125 @@
         <body>
             <div type="div1" rend="DH-Heading1">
                 <head>Einleitung</head>
-                <p>
-                    <hi style="font-size:11pt">”Auf der Konferenz [DHd 2018; d. Verf.] war zu jeder Zeit an jedem Ort genug Kompetenz versammelt, um in einer Kaffeepause eine digitale Publikation der Abstracts zu bauen, mit Inhaltsverzeichnis, Volltext- und Schlagwortsuche und anderen netten Features, die sonst zum Standard jeder Webpräsentation in den DH gehören.” So postuliert Fabian Cremer in seinem Blog-Post “Nun sag, wie hältst Du es mit dem Digitalen Publizieren, Digital Humanities?” (Cremer 2018). Nur, wie Cremer weiter ausführt, niemand habe es gemacht oder irrt der Autor in dieser Aussage, da die Aufgabe nicht so trivial ist, wie auf dem ersten Blick erscheint? Der hier vorgeschlagene Workshop “DHd 2019 Book of Abstracts Hackathon” soll der DHd-Community den Raum bieten, dieser Frage nachzugehen, eine gemeinsame digitale Publikation der Konferenz-Abstracts zu realisieren und so einen Diskussionsimpuls zur Zukunft des Digitalen Publizierens in den Digital Humanities zu geben.  </hi>
+                <p>In diesem hands-on Workshop werden wir die Möglichkeiten der für Geisteswissenschaftler*innen entwickelten Annotations- und Analyseplattform CATMA 6.0 praktisch erkunden. Es werden keinerlei technische Vorkenntnisse vorausgesetzt. Inhaltlich werden wir uns vor allem den theoretischen und praktischen Aspekten der digitalen Annotation von (literarischen) Texten, als auch der Analyse und Visualisierung dieser Texte und der erstellten Annotationen widmen.</p>
+                <p>CATMA (Computer Assisted Text Markup and Analysis; 
+                    <ref target="http://www.catma.de/">
+                        <hi rend="color(1155CC)" style="font-family:Open Sans">www.catma.de</hi>
+                    </ref>) ist ein open-source-Tool, das seit 10 Jahren an der Universität Hamburg entwickelt und derzeit von über 60 Forschungsprojekten weltweit genutzt wird. Die neue Version 6.0 wird im Zuge des DFG-Projektes forTEXT (
+                    <ref target="http://www.fortext.net/">
+                        <hi rend="color(1155CC)" style="font-family:Open Sans">www.fortext.net</hi>
+                    </ref>) entwickelt und implementiert. Neben erweiterten technischen Möglichkeiten (wie beispielsweise die Möglichkeit der Datenversionierung und die Organisation kollaborativer Arbeit in einer Projektstruktur), bietet die neue Version ein völlig überarbeitetes, intuitiver nutzbares User-Interface, das auf Material Design als dem avanciertesten und am Markt etabliertesten Schema basiert, welches die meisten Nutzer*innen bereits internalisiert haben. Das Interface ermöglicht einen leichten Einstieg in die digitale Textannotation und -analyse, ohne dass umfangreiche technische Kenntnisse vonnöten wären, und ohne dass die Nutzer*innen mit zu vielen (Experten-)Funktionen gleichzeitig konfrontiert würden. Das gesamte Repertoire an Funktionen (wie beispielsweise kollaborative Annotation oder automatische Annotation von Textkorpora) kann dann von erfahreneren Nutzer*innen bei Bedarf genutzt werden.
                 </p>
+                <p>CATMA unterstützt</p>
+                <list type="unordered">
+                    <item>individuelle wie kollaborative Annotation und Analyse – Texte können privat, aber auch im Team erforscht werden;</item>
+                    <item>explorative, non-deterministische Praktiken der Textannotation – CATMA liegt ein diskursiver, diskussionsorientierter Ansatz zur Textannotation zugrunde, der auf die Forschungspraktik hermeneutischer Disziplinen zugeschnitten ist;</item>
+                    <item>die nahtlose Verknüpfung von Textannotation und -analyse in einer webbasierten Arbeitsumgebung – Analyse und Interpretation gehen nach dem Prinzip des ‘hermeneutischen Zirkels’ in CATMA damit Hand in Hand.</item>
+                </list>
+                <p>Von linguistischen Textanalysetools unterscheidet sich CATMA insbesondere durch seinen 
+                    <hi rend="color(3A3A3A)">„</hi>undogmatischen” Ansatz: Das System schreibt mit seiner hermeneutischen Annotation (vgl. Piez 2010) weder definierte Annotationsschemata oder -regeln vor, noch erzwingt es die Verwendung von starren Ja-/Nein- oder Richtig-/Falsch-Taxonomien. Wenn eine Textstelle mehrere Interpretationen zulässt (wie es in literarischen Texten häufig der Fall ist), ist es in CATMA daher möglich, mehrere und sogar widersprechende Annotationen zu vergeben und so der Bedeutungsvielfalt der Texte Rechnung zu tragen. Mit dem sog. Query-Builder lassen sich außerdem Schritt für Schritt Textanalysen durchführen. Die Ergebnisse der Analyse können schließlich in verschiedenen Varianten visualisiert und für die literaturwissenschaftliche Interpretation und Argumentation genutzt werden.
+                </p>
+                <p>Zudem bietet CATMA auch die Möglichkeit, bereits annotierte Texte zu verarbeiten (z.B. durch den Upload von XML-Dateien) und die in anderen Tools erstellten Annotationen anzuzeigen, mit zu analysieren und damit wissenschaftlich nachzunutzen. Außerdem lassen sich in CATMA auch automatische (z.B. POS für deutschsprachige Texte) und halb-automatische Annotationen generieren.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Digitales Publizieren und Digital Humanities</head>
-                <p>
-                    <hi style="font-size:11pt">Das digitale Publizieren hat sich im Rahmen des Kanonisierungsprozesses zu einem etablierten Bestandteil der Digital Humanities entwickelt. Dies umfasst sowohl methodische Überlegungen (Kohle 2017) wie auch die praktische Umsetzungen (DHd-AG 2016). Längst existieren etablierte digitale Publikationsorgane der Digital Humanities, welche die Vielfalt und Potentiale der digitalen Publikationsformate demonstrieren und als Vorbild der Publikationspraxis und Wissenschaftskommunikation 
-                    gelten.</hi><ref target="ftn1" n="1"/>
-                    <hi style="font-size:11pt" xml:space="preserve"> Diesen Entwicklungen zum Trotz werden in der Breite und Spitze der Digital Humanities Forschung diese Potentiale nicht ausgeschöpft und traditionelle Publikationspraktiken weiterhin gepflegt (Stäcker 2012). Dies gilt für die Ebene der Technologie, so liegt das Book of Abstracts der DHd 2018 als PDF ohne Strukturdaten vor (Vogeler 2018). Aber gleichfalls auch für die offene Zugänglichkeit, so wurde das deutschsprachige Standardwerk zu den DH nicht als Open Access publiziert (Jannidis et al. 2017 vgl. dazu Stäcker 2017). Die Anforderungen an digitale Publikationen sind schon seit längerem formuliert. “Digital publishing is not simply repackaging a book or article as a computer file, although even a searchable pdf has advantages over paper”, bemerkt Borgman in ihrem “Call to Action for the Humanities” und adressiert hier auch dezidiert die Digital Humanities (Borgman 2010: #p16).</hi>
+                <head>Manuelles und kollaboratives Annotieren</head>
+                <p>Die Annotation von Texten gehört seit Jahrhunderten zu den textwissenschaftlichen Kernpraktiken (vgl. Moulin 2010). Genauer lassen sich hier Freitextkommentare, taxonomiebasierte Annotation und Textauszeichnung unterscheiden, wobei die Übergänge häufig fließend sind (vgl. Jacke 2018, § 9). Während CATMA 6.0 auch eine Funktion für Freitextkommentare bietet, ist die taxonomiebasierte Annotation das eigentliche Kerngeschäft des Tools – wobei die Taxonomie prinzipiell undogmatisch erstellt werden kann und die Form von sog. Tagsets annimmt, denen für kollaborative Annotationsprojekte wahlweise eine Annotations-Guideline beigegeben werden kann (vgl. auch Bögel et al).</p>
+                <p>Im Workshop werden wir den Unterschied von 
+                    <hi rend="italic">Document</hi> (der eigentliche Text), 
+                    <hi rend="italic">Tagset</hi> (die aus 
+                    <hi rend="italic" xml:space="preserve">Tags </hi>– d.h. aus einzelnen Beschreibungsbegriffen – gebildete Taxonomie, mit der Texte annotiert werden) und 
+                    <hi rend="italic">Annotation Collection</hi> (die nutzerspezifische Sammlung individueller Annotationen zu einem 
+                    <hi rend="italic">Document</hi> oder einem Korpus) kennenlernen. Diese Dreigliederung ist spezifisch für CATMA und bietet eine Reihe von Vorteilen:
                 </p>
-                <p>
-                    <hi style="font-size:11pt">Neben den wissenschaftsökonomischen und wissenschaftspolitischen Vorteilen digitalen Publizierens eröffnen digitale Formate neue wissenschaftliche Methoden zur Weiterverarbeitung. Diese Potentiale sind sich insbesondere die mit digitalen Quellen und Daten arbeitenden  Geisteswissenschaftler*innen bewusst und Formulieren entsprechende Ansprüche an die Digitalisierung und Bereitstellung der Untersuchungsgegenstände, wie etwa Volltexte mit standardisierter Strukturierung und Interoperabilität sowie mit Entitäten und komplexen Strukturmerkmalen angereichert 
-                    (Klaffki et al. 2018: 19-20).</hi><ref target="ftn2" n="2"/>
-                    <hi style="font-size:11pt" xml:space="preserve"> Diese Ansprüche müssten in den Geisteswissenschaften, in der die eigenen Texte in Form einer kritischen Rezeption und Iteration Teil der Informationsquellen sind, auch an die eigene Textproduktion gestellt werden. Folgerichtig lautet die Empfehlung der DHd-AG “Digitales Publizieren”, die semantischen Strukturen zu kodieren, die Dokumente maschinenlesbar und prozessierbar zu machen und PDF nicht als primäres Publikationsformat zu verwenden (DHd-AG 2016). Die TEI-basierten Veröffentlichungen der Digital Humanities Community demonstrieren das Potential der Publikationen als Untersuchungsgegenstand des Faches (Sahle/Henny-Krahmer 2018 und Hannesschläger/Andorfer 2018). Allein die Zusammenführung der strukturierten Datenbasis der Texte mit den vorhandenen Technologien und Methoden neuer Publikationsformate steht häufig noch aus. Diese Lücke adressiert das vorliegende Konzept.</hi>
-                </p>
+                <list type="unordered">
+                    <item>Taxonomien können projektübergreifend und unabhängig von Texten und Annotationen wiederverwendet werden;</item>
+                    <item>Annotationen können als 
+                        <hi rend="italic" xml:space="preserve">Collections </hi>nach unterschiedlichen inhaltlichen (z. B. nach Forschungsaspekten) oder auch organisatorischen Gesichtspunkten (z. B.  nach Projektmitgliedern) gruppiert und wiederverwendet bzw. erweitert werden;
+                    </item>
+                    <item>benutzerspezifische Annotationen werden als sog. 
+                        <hi rend="italic">Stand-off Markup</hi> gespeichert und können damit wahlweise angezeigt oder ausgeblendet werden. Der eigentliche Text wird hierbei nicht verändert. Arbeitet eine Gruppe von Annotator*innen mit der gleichen Taxonomie an einem Text, lassen sich Übereinstimmungen und Widersprüche direkt und einfach erkennen (vgl. Gius und Jacke 2017), um auf interessante oder problematische Textstellen aufmerksam zu werden und die ‘Arbeit am Text’ zugleich kritisch zu reflektieren.
+                    </item>
+                </list>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Konzeption des Workshops</head>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Ziele</head>
-                    <p>
-                        <hi style="font-size:11pt">Der Hackathon liefert einerseits ein Proof-of-Concept für die Implementierung digitaler Technologien in einen Publikationsprozess (der digitalen Geisteswissenschaften) und möchte andererseits ein partizipatives Format zur Unterstützung der DHd-Tagung durch die DHd-Community in kollaborativer Arbeitsform (Hackathon) darstellen. Der Einsatz vorhandener Frameworks aus der Community demonstriert die Leistungsfähigkeit und das vorhandene Potential. Die erarbeiteten Transformationsskripte und Workflows können die Basis für eine Weiterentwicklung und Nachnutzung in institutionellen Publikationsprozessen darstellen. Eine Analyse des Workshops, der Ergebnisse und der damit verbundenen Rezeption liefert die Grundlage für die Formulierung von Empfehlungen zum möglichen zukünftigen Umgang mit den DHd-Abstracts und deren stetig steigende Relevanz als Publikationsformat. Der Hackathon kann dabei sowohl technologische wie methodische Impulse für das Digitale Publizieren in der DHd-Community liefern.</hi>
-                    </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Vorbereitungen</head>
-                    <p>
-                        <hi style="font-size:11pt">Die Datengrundlage für den Workshop bilden die zur DHd 2019 eingereichten Abstracts im dhc-Format und idealerweise in einer harmonisierten TEI-Version. Die Workshopleiter vertrauen hier auf die wertvolle Redaktionsarbeit der DHd-Konferenzorganisation, wie es die DHd 2018 vorbildlich umgesetzt 
-                        hat.</hi><ref target="ftn3" n="3"/>
-                        <hi style="font-size:11pt" xml:space="preserve"> Um die hier angestrebten Verarbeitungsprozesse und Methoden des Digitalen Publizierens umsetzen zu können, müssen die Daten weiter vorbereitet und angereichert werden. Die vorbereitende Prozessierung soll umfassen: </hi>
-                    </p>
-                    <list type="unordered">
-                        <item>Harmonisierung (Sichtung; Vereinheitlichung von Ambiguitäten, Setzen der Mindeststandards)</item>
-                        <item>
-                            <hi style="font-size:11pt">Strukturdatenauszeichnung (Überschriften, Absatznummerierung, Metadaten)</hi>
-                        </item>
-                        <item>Verknüpfung mit Normdaten (Erkennung und Auszeichnung von zentralen Entitäten wie Personen, Orte, Institutionen, Werke)</item>
-                        <item>Rahmenwerke (Generierung von Listen und Registern für Schlagworte, Titel, Namen)</item>
-                    </list>
-                    <p>
-                        <hi style="font-size:11pt">Die Aufbereitung und Anreicherung der Datenbasis wird von den Organisatoren in Zusammenarbeit mit dem Austrian Centre for Digital Humanities (ACDH) im Vorfeld der DHd 2019 vorgenommen. Die Workshopleitung wird dahingehend mit der Konferenzorganisation und dem Programmkomitee eine enge Kooperation anstreben.</hi>
-                    </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Themen und Arbeitsgruppen</head>
-                    <p>
-                        <hi style="font-size:11pt">Die Entwicklungsphasen des Hackathons finden als Gruppenarbeit statt. Die parallel arbeitenden Gruppen widmen sich verschiedenen Repräsentationen und Verarbeitungsprozessen der gemeinsamen Datenbasis. Die hier skizzierten Themen und Arbeitsgruppen sind als Vorschläge von Seiten der Organisatoren zu verstehen und werden abhängig von den Kompetenzen und Interessen der Teilnehmenden zu Beginn des Workshops adaptiert. Die beiden Arbeitsbereiche “Transformation” und “Präsentation” werden für die Ziele des Workshops als zwingend notwendig erachtet und sind daher gesetzt. Weitere Themen und Arbeitsgruppen können von den Teilnehmenden ausgestaltet werden. Die Organisatoren moderieren die Bildung der Arbeitsgruppen und begleiten beratend die Entwicklungsphasen.</hi>
-                    </p>
-                    <div type="div3" rend="DH-Heading3">
-                        <head>AG “Style und Sheet”: Transformation</head>
-                        <p>
-                            <hi style="font-size:11pt">Die Transformation der Ausgangsdaten (XML/TEI) in verschiedene Zielformate bildet die Grundlage für die verschiedenen Nutzungs- und Rezeptionsformen. Als Zielformate der Stylesheets bieten sich u.a. an: HTML, LaTex, PDF, MS-Word, Markdown, JATS. Idealerweise können die Teilnehmenden eigene, bereits genutzte Transformationen in der Gruppe diskutieren, erweitern und optimieren.</hi>
-                        </p>
-                    </div>
-                    <div type="div3" rend="DH-Heading3">
-                        <head>AG “Web und App”: Präsentation</head>
-                        <p>
-                            <hi style="font-size:11pt">Der Zeitrahmen des Workshops erlaubt keine Neuentwicklung eines Frontends. Für die Realisierung verschiedener Präsentationschichten müssen die Basisdaten in vorhandene Publikationsframeworks integriert werden. Dabei sind generische Ansätze (z.B. eXist Webapp, GitHub pages, eLife Lens Viewer, Jupyter) ebenso möglich wie spezifische oder instiutionelle Lösungen der DH-Community.</hi>
-                        </p>
-                    </div>
-                    <div type="div3" rend="DH-Heading3">
-                        <head>AG “Maschine und Modell”: Schnittstellen</head>
-                        <p>Die Bereitstellung der Daten über standardisierte maschinenlesbare Schnittstellen (API) ist eine grundlegende Repräsentationsform zukünftiger Publikationspraktiken. Idealerweise wird hier prototypisch ein Protokoll oder eine Spezifikation implementiert (z.B. OAI-PMH, FCS, DTS).</p>
-                    </div>
-                    <div type="div3" rend="DH-Heading3">
-                        <head>AG “Wolke und Vektor”: Textanalyse</head>
-                        <p>
-                            <hi style="font-size:11pt">Durch Tokenisieren, Lemmatisieren, Vektorisieren werden Wortlisten, Wortfrequenzen, Wortwolken, Topicmodelling realisiert. Die Strukturierungs- und Visualisierungsformen sind die Grundlage für alternative Rezeptionsformen und textinterne Analysen bis zu (korpus)linguistischen Methoden.</hi>
-                        </p>
-                    </div>
-                    <div type="div3" rend="DH-Heading3">
-                        <head>AG “Beziehung und Geflecht”: Netzwerke</head>
-                        <p>
-                            <hi style="font-size:11pt">Die mit Normdaten angereicherte Datenbasis bietet die Möglichkeit, die Beziehungen zwischen den Entitäten (Personen, Orte, Institutionen, Werke) zu extrahieren, zu visualisieren und zu analysieren. Zu den Anwendungsfällen gehören Netzwerkanalysen und explorative Navigationsformen.</hi>
-                        </p>
-                    </div>
-                    <div type="div3" rend="DH-Heading3">
-                        <head>AG “Medial und Modular”: Multimedia</head>
-                        <p>Die Verwaltung, Adressierung und Einbettung multimedialer Inhalte die sowie Erzeugung und Integration interaktiver Elemente, wie dynamische Visualisierungen, gehören zu den großen Herausforderungen des Digitalen Publizierens. Prototypische Umsetzungen können hierfür Impulse liefern oder Lücken in bestehenden Frameworks aufzeigen.</p>
-                    </div>
-                </div>
-                <div type="div2" rend="DH-Heading2">					
-                    <head>Agenda:</head>
-                    <p>
-                        <hi style="font-size:11pt">15’</hi>
-                        <hi rend="apple-tab-span"> </hi>
-                        <hi style="font-size:11pt">Begrüßung, Organisatorisches, Vorstellungsrunde,</hi>
-                    </p>
-                    <p>
-                        <hi style="font-size:11pt">15’</hi>
-                        <hi rend="apple-tab-span"> </hi>
-                        <hi style="font-size:11pt">Vorstellung der Daten und Aufteilung auf Arbeitsgruppen</hi>
-                    </p>
-                    <p>
-                        <hi style="font-size:11pt">60’</hi>
-                        <hi rend="apple-tab-span"> </hi>
-                        <hi style="font-size:11pt">Entwicklungsphase I</hi>
-                    </p>
-                    <p>
-                        <hi style="font-size:11pt">30’</hi>
-                        <hi rend="apple-tab-span"> </hi>
-                        <hi style="font-size:11pt">Pause</hi>
-                    </p>
-                    <p>
-                        <hi style="font-size:11pt">45’</hi>
-                        <hi rend="apple-tab-span"> </hi>
-                        <hi style="font-size:11pt">Entwicklungsphase II</hi>
-                    </p>
-                    <p>
-                        <hi style="font-size:11pt">30’</hi>
-                        <hi rend="apple-tab-span"> </hi>
-                        <hi style="font-size:11pt">Vorstellung der Ergebnisse</hi>
-                    </p>
-                    <p>
-                        <hi style="font-size:11pt">15’</hi>
-                        <hi rend="apple-tab-span"> </hi>
-                        <hi style="font-size:11pt">Abschlussdiskussion</hi>
-                    </p>
-                </div>
+                <head>Analyse und Visualisierung</head>
+                <p>Neben der Annotation sind die Analyse und Visualisierung der Text- und Annotationsdaten das andere wichtige Standbein von CATMA. Hier wird 
+                    <hi rend="italic">distant reading</hi> mit 
+                    <hi rend="italic">close reading</hi> zusammengebracht, denn die zuvor manuell erstellten qualitativen Annotationen werden nun in ihrer Quantität und Verteilung hinterfragt. Dies geschieht in Zusammenhang mit „klassischen” DH-Textanalysemethoden wie dem Erstellen einer Wortfrequenzliste, der Analyse von Keywords in Context (KWIC und 
+                    <hi rend="italic">DoubleTree</hi>) oder der Distribution ausgewählter Wörter (oder eben Annotationen) im Text oder in der Textsammlung.
+                </p>
+                <p>Neben diesen grundlegenden Funktionen, die alle per Klick ausgeführt werden können, bietet CATMA den sog. 
+                    <hi rend="italic">Query Builder</hi>, in dem komplexere Abfragen einfach per Mausklick erzeugt werden können, ohne dass tiefergehende Kenntnisse einer Abfragesprache (sog. 
+                    <hi rend="italic">Query Language</hi>) verlangt werden. Im Workshop werden wir uns dabei nicht nur den Analysefunktionen widmen, sondern auch die unterschiedlichen Visualisierungsmöglichkeiten zu den einzelnen Abfragen anschauen und hinterfragen.
+                </p>
+                <p>Im Analysebereich können außerdem halbautomatische Annotationen erstellt werden, d.h. man annotiert wiederkehrende Wörter oder Wortgruppen auf einmal mit einem bestimmten Tag, statt dies manuell und wiederholt im Annotationsmodul zu tun.</p>
+                <p>Der Wechsel zwischen der Arbeit im Annotations- und Analyse- und Visualisierungs-Modul ist ein iterativer Prozess, der die klassisch-zirkuläre hermeneutische Interpretationsarbeit in der Literaturwissenschaft widerspiegelt (vgl. Gius, in Vorbereitung).</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Organisation</head>
-                <div type="div2" rend="DH-Heading2">
-                    <head>
-                        <hi style="font-family:Trebuchet MS;font-size:13pt">Ergebnissicherung und Outreach</hi>
-                    </head>
-                    <p>
-                        <hi style="font-size:11pt">Die ausgearbeiteten Ergebnisse der Arbeitsgruppen (Daten, Skripte, Anwendungen) werden offen lizensiert und frei zur Verfügung gestellt. Ein Workshopbericht fasst die Ergebnisse übersichtlich als Blogpost zusammen. Gemeinsam mit interessierten Teilnehmenden plant die Workshopleitung eine Ausarbeitung der Ergebnisse als Empfehlung für mögliche Umsetzungen der DHd-Abstracts. Die konkreten Implementierungen sollen während der Konferenz online verfügbar gehalten werden und werden von der Workshopleitung (und freiwillig Teilnehmenden) über soziale Medien bekannt gegeben und zur Diskussion gestellt. Weitere erwünschte Kommunikationskanäle (Website, Email) werden mit der Konferenzorganisation besprochen.</hi>
-                    </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Datenmanagement und Infrastruktur</head>
-                    <p>
-                        <hi style="font-size:11pt">Die Einrichtung einer dezidierten Organisation auf GitHub.com für den Workshop erlaubt das Management der verschiedenen Entwicklungen und kollaborative Arbeitsformen. Die Dokumentation und das Projektmanagement werden ebenfalls über git umgesetzt (GitHubWiki/  GitHub-Projects/Issues). Die Publikation der Ergebnisse erfolgt über GitHub-Repositories via Zenodo. Grundsätzlich stehen auch nichtkommerzielle Gitlab-Instanzen und das DARIAH-DE-Repository zur Sicherung zur Verfügung. Das ACDH kann für das kurz- und mittelfristige Hosting der im Rahmen des Workshops entwickelten Applikationen und Services die erforderliche Server-Infrastruktur zur Verfügung stellen. Weiter ist die Bereitstellung von mehreren Instanzen der Applikationen Voyant und eXistDB zur Nutzung im Workshop über DARIAH-DE vorgesehen.</hi>
-                    </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Teilnehmer*innen</head>
-                    <p>
-                        <hi style="font-size:11pt">Die praktischen Arbeitsphasen der Gruppenarbeit erlauben nur kleine Gruppengrößen. Die Zahl der möglichen Teilnehmer*innen beträgt daher maximal 25 Personen. Für die Workshopteilnahme werden zwar keine spezifischen technischen oder methodischen Grundlagen (jenseits des Umgangs mit den TEI/XML-Basisdaten) vorausgesetzt, jedoch erfordert ein Hackathon von den Teilnehmenden selbständiges Arbeiten und die Anwendung vorhandener Kompetenzen auf den Gegenstandsbereich. Der Workshop bietet den Rahmen und Raum für die gemeinsames Arbeiten und offenen Austausch.</hi>
-                    </p>
-                </div>
+                <head>Ablauf</head>
+                <p>Im Workshop werden wir uns in einer Mischung aus Präsentations- und Hands-on-Phasen der textanalytischen Arbeit in CATMA 6.0 nähern. Nach einer generellen Einführung in das Tool werden die Teilnehmer*innen anhand eines vorgegebenen Beispieltextes den gesamten Workflow von der individuellen taxonomiebasierten Textannotation, über die Analyse hin zur Visualisierung und Interpretation der Text- und Annotationsdaten kennenlernen und praktisch erproben können.</p>
             </div>
-        </body>
-        <back>
-            <div type="notes">
-                <note xml:id="ftn1" n="1" rend="footnote text">
-                    Dies zeigt sich am Beispiel der Zeitschrift für digitale Geisteswissenschaften (ZfdG), die als Vorbild für die Zeitschrift Medieval and Early Modern Material Culture Online (MEMO) fungierte.
-                </note>
-                <note xml:id="ftn2" n="2" rend="footnote text">
-                    Siehe die Digitalisierungsklassen IV und V für Texte.
-                </note>
-                <note xml:id="ftn3" n="3" rend="footnote text">
-                    Die vielgestaltigen TEI-Kodierungen aus den Einreichungen und Transformationen wurden einheitlich angeglichen, dokumentiert auf: 
-                    <ref target="https://github.com/GVogeler/DHd2018">
-                        <hi rend="color(1155CC)">https://github.com/GVogeler/DHd2018</hi>
-                    </ref>.
-                </note>
+            <div type="div1" rend="DH-Heading1">
+                <head>Lernziele</head>
+                <p>Die Teilnehmer*innen sollen ausgehend vom digitalen Text in die Lage versetzt werden, Annotationen manuell und automatisch unterstützt zu erstellen und in Annotation Collections zu speichern, Tagsets/Taxonomien zu entwickeln und den Text alleine und in Kombination mit den Annotationen zu analysieren und zu visualisieren. Für Diskussionen und individuelle Rückfragen (theoretischer, praktischer und technischer Art) auf jedem Niveau und in Bezug auf die Projekte der Teilnehmer*innen wird ausreichend Möglichkeit bestehen.</p>
             </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Zeitplan</head>
+                <p>Im Workshop werden wir den Arbeitsablauf der digitalen Texterforschung praktisch kennenlernen:</p>
+                <list type="unordered">
+                    <item>analytische Textexploration (ca. 30 Minuten)</item>
+                    <item>manuelle und automatische Annotation und Spezifikation von Annotationskategorien (ca. 40 Minuten)</item>
+                    <item>kombinierte Abfragen von Annotations- und Textdaten (ca. 30 Minuten)</item>
+                    <item>visuelle Darstellungsmöglichkeiten von Abfrageergebnissen (ca. 20 Minuten)</item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Beitragende (Kontaktdaten und Forschungsinteressen)</head>
+                <p>Dr. Jan Horstmann</p>
+                <p>Universität Hamburg, Institut für Germanistik, Überseering 35, Postfach #15, 22297 Hamburg</p>
+                <p>Jan Horstmann ist Postdoc und koordiniert das DFG-Projekt forTEXT, in dem neben der Dissemination von digitalen Routinen, Ressourcen und Tools in die klassischeren Fachwissenschaften auch die Weiterentwicklung von CATMA eine wesentliche Rolle spielt. Als Literaturwissenschaftler interessiert er sich vor allem für die neuen Perspektiven und Erkenntnispotentiale, die DH-Methoden auf literarische Artefakte bereithalten können, und forscht in diesem Sinne unter anderem zu Entsagung und Ironie bei Goethe.</p>
+                <p>Prof. Dr. Jan Christoph Meister</p>
+                <p>Universität Hamburg, Institut für Germanistik, Überseering 35, Postfach #15, 22297 Hamburg</p>
+                <p>Jan Christoph Meister ist Professor für Digital Humanities mit dem Schwerpunkt Literaturwissenschaft. Als ursprünglicher Erfinder von CATMA hat er etliche Forschungsprojekte zur Annotation und Visualisierung textueller Daten und der Entwicklung und Verbesserung von DH-Tools geleitet.</p>
+                <p>Marco Petris, Dipl. Inform.</p>
+                <p>Universität Hamburg, Institut für Germanistik, Überseering 35, Postfach #15, 22297 Hamburg</p>
+                <p>Marco Petris ist Informatiker mit starker Affinität zu geisteswissenschaftlichen Fragestellungen. Er ist von Anfang an an der Entwicklung von CATMA beteiligt und beschäftigt sich mit allen Aspekten der DH-Toolentwicklung, des Tool-Designs und der Implementierung.</p>
+                <p>Mareike Schumacher, M.A.</p>
+                <p>Universität Hamburg, Institut für Germanistik, Überseering 35, Postfach #15, 22297 Hamburg</p>
+                <p>Mareike Schumacher promoviert als digitale Literaturwissenschaftlerin über Orte und narratologische Ortskategorien in literarischen Texten, beschäftigt sich besonders mit den Methoden des distant reading (u.a. Named Entity Recognition oder Stilometrie) und ist im forTEXT-Projekt u.a. für die Dissemination in den (sozialen) Medien zuständig.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Zahl der möglichen Teilnehmer*innen</head>
+                <p>Bis zu 30 Personen.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Benötigte technische Ausstattung</head>
+                <p>Teilnehmer*innen bringen ihren eigenen Laptop mit, der mit dem Internet verbunden ist (Achtung: Touch-Devices werden derzeit noch nicht unterstützt). Am Workshop können bis zu 30 Personen teilnehmen. Neben einer stabilen Internetverbindung werden ein Beamer und eine Leinwand benötigt.</p>
+            </div>
+		</body>
+		<back>
             <div type="bibliogr">
                 <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl>
-                        <hi rend="bold">Borgman, Christine L. (2010)</hi>: <hi rend="italic">“The Digital Future is Now. A Call to Action for the Humanities”</hi>, in: Digital Humanities Quarterly 3 (4): #p16, <ref target="http://www.digitalhumanities.org/dhq/vol/3/4/000077/000077.html">http://www.digitalhumanities.org/dhq/vol/3/4/000077/000077.html</ref> [letzter Zugriff 26. September 2018].
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Cremer, Fabian (2018)</hi>: <hi rend="italic">“Nun sag, wie hältst Du es mit dem Digitalen Publizieren, Digital Humanities?”</hi>, in: Digitale Redaktion (Blog), 21.03.2018, <ref target="https://editorial.hypotheses.org/113">https://editorial.hypotheses.org/113</ref> [letzter Zugriff 26. September 2018].
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">DHd-AG "Digitales Publizieren" (2016)</hi>: <hi rend="italic">“Digitales Publizieren”</hi>, Working Paper, 01.03.2016, <ref target="http://diglib.hab.de/ejournals/ed000008/startx.htm">http://diglib.hab.de/ejournals/ed000008/startx.htm</ref> [letzter Zugriff 26. September 2018].
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Hannesschläger, Vanessa / Andorfer, Peter (2018)</hi>: <hi rend="italic">Menschen gendern? Datenmodellierung zur Erhebung von Geschlechterverteilung am Beispiel der TEI2016 Abstracts App</hi>, DHd 2018, Köln,<ref target="https://doi.org/10.5281/zenodo.1182576">https://doi.org/10.5281/zenodo.1182576</ref>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Jannidis, Fotis /  Kohle, Hubertus / Rehbein, Malte (2017)(eds.)</hi>: <hi rend="italic">Digital Humanities. Eine Einführung</hi>,  Stuttgart: J. B. Metzler.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Kohle, Hubertus (2017)</hi>: <hi rend="italic">“Digitales Publizieren”</hi>, in: <hi rend="bold">Jannidis, Fotis et al. (eds.)</hi>: <hi rend="italic">Digital Humanities. Eine Einführung</hi>,  Stuttgart: J. B. Metzler 199-205.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Klaffki, Lisa / Schmunk, Stefan / Stäcker Thomas (2018)</hi>: <hi rend="italic">“Stand der Kulturgutdigitalisierung in Deutschland. Eine Analyse und Handlungsvorschläge des DARIAH-DE Stakeholdergremiums 'Wissenschaftliche Sammlungen'”</hi>, DARIAH-DE Working Papers 26, Göttingen, URN: <ref target="http://resolver.sub.uni-goettingen.de/purl/?dariah-2018-1">urn:nbn:de:gbv:7-dariah-2018-1-3</ref>.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Stäcker, Thomas (2012)</hi>: <hi rend="italic">“Wie schreibt man digital humanities?”</hi>, in: DHd-Blog, 19.08.2012, <ref target="https://dhd-blog.org/?p=673">https://dhd-blog.org/?p=673</ref> [letzter Zugriff 26. September 2018].
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Stäcker, Thomas (2017)</hi>: <hi rend="italic">“Digital Humanities : eine Einführung / Fotis Jannidis, Hubertus Kohle, Malte Rehbein (Hg.)”</hi>, in:  O-Bib. Das Offene Bibliotheksjournal 4(3): 142-148, <ref target="https://doi.org/10.5282/o-bib/2017H3S142-148">https://doi.org/10.5282/o-bib/2017H3S142-148</ref>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Vogeler, Georg (2018)(ed.)</hi>: <hi rend="italic">DHd 2018. Kritik der digitalen Vernunft. Konferenzabstracts</hi>, Köln: Universität zu Köln 2018.
-                    </bibl>
-                </listBibl>
+					<head>Bibliographie</head>
+					<bibl>
+						<hi rend="bold">Bögel, Thomas / Gertz, Michael / Gius, Evelyn / Jacke, Janina / Meister, Jan Christoph / Petris, Marco / Strötgen, Jannik (2015)</hi>: <hi rend="italic">„Collaborative Text Annotation Meets Machine Learning: heureCLÉA, a Digital Heuristic of Narrative”</hi>, in: DHCommons Journal 1.
+					</bibl>
+					<bibl>
+						<hi rend="bold">Gius, Evelyn (in Vorbereitung)</hi>: <hi rend="italic">„Digitale Hermeneutik: Computergestütztes close reading als literaturwissenschaftliches Forschungsparadigma?”</hi> in: <hi rend="bold">Fotis Jannidis (Hrsg.)</hi>: <hi rend="italic">Digitale Literaturwissenschaft</hi>. DFG-Symposium 9.–13.10.2018.
+					</bibl>
+					<bibl>
+						<hi rend="bold">Gius, Evelyn / Jacke, Janina (2017)</hi>: <hi rend="italic">„The Hermeneutic Profit of Annotation: On Preventing and Fostering Disagreement in Literary Analysis”</hi>, in: International Journal of Humanities and Arts Computing 11 (2), 233–254.
+					</bibl>
+					<bibl>
+						<hi rend="bold">Jacke, Janina (2018)</hi>: <hi rend="italic">„Manuelle Annotation"</hi>, in: forTEXT. Literatur digital erforschen. <ref target="http://fortext.net/routinen/methoden/manuelle-annotation">http://fortext.net/routinen/methoden/manuelle-annotation</ref> (Zugriff: 24. September 2018).
+					</bibl>
+					<bibl>
+						<hi rend="bold">Moulin, Claudine (2010)</hi>: <hi rend="italic">„Am Rande der Blätter. Gebrauchsspuren, Glossen und Annotationen in Handschriften und Büchern aus kulturhistorischer Perspektive"</hi>, in: Autorenbibliotheken, Quarto. Zeitschrift des Schweizerischen Literaturarchivs 30/31, 19–26.
+					</bibl>
+					<bibl>
+						<hi rend="bold">Piez, Wendell (2010)</hi>: <hi rend="italic">„Towards Hermeneutic Markup. An Architectural Outline"</hi>, in: Digital Humanities Conference 2010, London <ref target="http://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-743.html">http://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-743.html </ref>(Zugriff: 24. September 2018).
+					</bibl>
+				</listBibl>
             </div>
         </back>
     </text>

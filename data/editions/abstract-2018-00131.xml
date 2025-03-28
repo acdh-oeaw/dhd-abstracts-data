@@ -1,30 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="SCHLUPKOTHEN_Frederik_Zwischen_Polysemie_und_Formalisierung_">
+     xml:id="REBORA_Simone_The_Tiroler_Soldaten_Zeitung_and_its_">
    <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Zwischen Polysemie und Formalisierung: Mehrstufige Modellierung komplexer intertextueller Relationen als Annäherung an ein ‚literarisches‘ Semantic Web</title>
+                <title>The 'Tiroler Soldaten-Zeitung' and its Authors. A Computer-Aided Search for Robert Musil</title>
                 <author>
                     <persName>
-                        <surname>Nantke</surname>
-                        <forename>Julia</forename>
+                        <surname>Salgaro</surname>
+                        <forename>Massimo</forename>
                     </persName>
-                    <affiliation>Bergische Universität Wuppertal, Deutschland</affiliation>
-                    <email>nantke@uni-wuppertal.de</email>
+                    <affiliation>University of Verona, Italy</affiliation>
+                    <email>massimo.salgaro@univr.it</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Schlupkothen</surname>
-                        <forename>Frederik</forename>
+                        <surname>Rebora</surname>
+                        <forename>Simone</forename>
                     </persName>
-                    <affiliation>Bergische Universität Wuppertal, Deutschland</affiliation>
-                    <email>schlupko@uni-wuppertal.de</email>
+                    <affiliation>University of Verona, Italy</affiliation>
+                    <email>simone.rebora@univr.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lauer</surname>
+                        <forename>Gerhard</forename>
+                    </persName>
+                    <affiliation>University of Basel, Switzerland</affiliation>
+                    <email>gerhard.lauer@unibas.ch</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Herrmann</surname>
+                        <forename>J. Berenike</forename>
+                    </persName>
+                    <affiliation>University of Basel, Switzerland</affiliation>
+                    <email>berenike.herrmann@unibas.ch</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2018-01-14T18:47:00Z</date>
+                    <date>2018-01-08T20:38:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -56,179 +72,337 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Literaturwissenschaft</term>
-                    <term>Intertextualität</term>
-                    <term>Semantic Web</term>
-                    <term>Situationstheorie</term>
+                    <term>Robert Musil</term>
+                    <term>Stylometry</term>
+                    <term>Authorship Attribution</term>
+                    <term>Short Texts</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Beziehungsanalyse</term>
-                    <term>Modellierung</term>
-                    <term>Annotieren</term>
-                    <term>Kontextsetzung</term>
-                    <term>Theoretisierung</term>
-                    <term>Text</term>
+                    <term>Stilistische Analyse</term>
+                    <term>Literatur</term>
+                    <term>Methoden</term>
                 </keywords>
             </textClass>
         <settingDesc>
             <ab n="conference">DHd2018 - "Kritik der Digitalen Vernunft", Köln</ab>
-            <ab n="paperID">250</ab>
-            <ab n="session_ID">158</ab>
-            <ab n="session_numberInSession">2</ab>
-            <ab n="session_short">VP_9b</ab>
-            <ab n="session_title">Semantische Analyse</ab>
-            <ab n="session_start">2018-03-02 11:00</ab>
-            <ab n="session_end">2018-03-02 12:30</ab>
+            <ab n="paperID">230</ab>
+            <ab n="session_ID">29</ab>
+            <ab n="session_numberInSession">3</ab>
+            <ab n="session_short">VP_1b</ab>
+            <ab n="session_title">Textmining I</ab>
+            <ab n="session_start">2018-02-28 09:00</ab>
+            <ab n="session_end">2018-02-28 10:30</ab>
          </settingDesc>
       </profileDesc>
     </teiHeader>
    <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Kontext und Zielsetzung</head>
-                <p>Die Modellierung textueller und transbiblionomer Relationen mithilfe von Semantic Web-Technologien bildet mittlerweile eines der zentralen Forschungsfelder der Digital Humanities. Die Struktur und Funktionsweise literarischer Texte erfordern in Bezug auf die formale Beschreibung, Erklärung und Kategorisierung von semantischen Strukturen ein besonders differenziertes Vorgehen: Interne und externe textuelle Beziehungen bestehen in Form komplexer, häufig ambiger Zeichenrelationen, die plurale, sich auf verschiedenen Ebenen überlagernde Bedeutungsangebote stiften. Letztere können zudem nicht auf verortbare Ereignisse, stabile Relationen zwischen (bibliografischen, historischen) Artefakten oder ein konkretes argumentatives Ziel bezogen werden. Die Kategorisierung literarischer ‚Daten‘ erfolgt deshalb systematisch im Spannungsfeld zwischen dem Text als linguistisch-materieller Zeichenformation und deren interpretierender Auffassung. Die Aktualisierung bestimmter Codes hängt hierbei immer auch von kulturellen und historischen Faktoren, methodologischen Vorannahmen sowie der Kontingenz interpretativer Schlussfolgerung ab. Die daraus resultierende Bedingtheit und potentielle Vielfalt semantischer Zuschreibungen muss daher in einer Modellierung transparent abbildbar sein.
-                    <ref target="ftn1" n="1"/> Dieser Herausforderung begegnet das Projekt, welches in dem Beitrag vorgestellt wird, indem auf der Basis eines situationstheoretischen Formalismus (Barwise/Perry 1983, Devlin 1990) ein mehrstufiges Modell zur Abbildung und Beschreibung komplexer intertextueller Relationen zwischen literarischen Texten entwickelt wird.
-                </p>
-                <p>Das Projekt möchte damit in zweierlei Hinsicht einen Beitrag zur methodologischen Reflexion leisten: Zum einen streben wir mit dieser zunächst auf das genauere Verständnis intertextueller Phänomene gerichteten stufenweisen Modellierung
-                    <ref target="ftn2" n="2"/> einen literaturtheoretisch reflektierten Einsatz digitaler Methoden an. Zum anderen trägt das Vorgehen bei der Modellierung ebenso zu einer Schärfung der literaturwissenschaftlichen Perspektive auf Intertextualität und zur fundierten Beschreibung hierbei wirksamer Faktoren bei. Ziel des Projekts ist eine maschinenlesbare Systematisierung intertextueller „Schreibweisen“ (Verweyen/Wittig, S. 38)
-                    <ref target="ftn3" n="3"/> sowie der Kriterien zur Isolierung und Charakterisierung der Schreibweisen. Diese soll eine computergestützte Erschließung literarischer Intertextualität ermöglichen.
-                </p>
-                <p>Der Beitrag diskutiert zum einen konkrete Probleme, welche sich im Spannungsfeld zwischen literarischer Polysemie, der Literaturwissenschaft inhärenter Perspektivenvielfalt und technischer Normierung ergeben, denn das Projekt dient nicht zuletzt auch der Reflexion der Möglichkeiten zur Formalisierung literaturwissenschaftlicher Erkenntnisse sowie dem Ausloten der Grenzen für den Einsatz formaler Beschreibungssprachen im Hinblick auf literaturwissenschaftliche Forschungsfragen.</p>
-                <p>Zum anderen wird dargestellt, wie durch die spezifische Anlage der Modellierung auf verschiedenen Ebenen Desideraten bisheriger Ansätze begegnet und gleichzeitig ein Beitrag zum literaturtheoretisch fundierten Einsatz von DH-Methoden geleistet werden kann.</p>
-                <p>Erste Ergebnisse werden in dem vorgeschlagenen Beitrag anhand konkreter Beispiele wie etwa des intertextuellen Netzes um Matthias Claudius’ 
-                    <hi rend="italic">Rheinweinlied</hi> präsentiert, welches aufgrund der dem Netz inhärenten Vielzahl intertextueller Phänomene bei gleichzeitig relativ kurzen Texten hierfür besonders geeignet erscheint.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Stand der Forschung und Abgrenzung</head>
-                <p>In vielen bisherigen Projekten zur Erfassung literarischer Beziehungen schränkt die Konzentration auf automatisierbare Analysevorgänge das heuristische Potential digitaler Modellierung für die literaturwissenschaftliche Forschung in verschiedener Hinsicht ein:</p>
-                <p>Erstens werden Modelle zur Beschreibung (innertextueller) literarischer Strukturen an stark Plot-lastigen Texten entwickelt,
-                    <ref target="ftn4" n="4"/> was die Herausforderung der vielfältigen Bedeutungsebenen komplexerer literarischer Texte deutlich reduziert. Die Modelle erscheinen deshalb kaum auf den Großteil der literaturwissenschaftlich relevanten Beispiele übertragbar.
-                </p>
-                <p>Zweitens erfolgt eine Modellierung intertextueller Beziehungen anhand einer „historische[n] Positivtät von Kontext-Dokumenten“ (Wagner/Mehler/Biber 2016, S. 90 mit Bezug auf das Projekt Wikidition), deren Verknüpfungen auf linguistischer Ebene modelliert werden. Auf diese Weise werden zwar viele Probleme im Hinblick auf die Intersubjektivierbarkeit der Modellierung und die Differenzen zwischen verschiedenen Intertextualitätskonzepten vermieden, gleichzeitig wird aber aus literaturwissenschaftlicher Sicht die Aussagekraft der Ergebnisse stark eingeschränkt, indem der literaturwissenschaftlich relevante Fokus auf die Kategorisierung, Funktion und Wirkung von Intertextualität und die hierbei produktiven Schreibweisen und Markierungen (vgl. Kocher 2007, 179) zugunsten einer eher enzyklopädischen Perspektive verloren geht.
-                    <ref target="ftn5" n="5"/>
-                </p>
-                <p>Unser Projekt richtet sich hingegen weder auf die automatisierte Textanalyse noch beschränkt es sich auf die linguistische Ebene konkreter Wortäquivalenz. Vielmehr steht die Entwicklung eines formalisierten Vokabulars zur semantischen Repräsentation literarischer Intertextualität im Zentrum des Forschungsinteresses. Die Isolierung und formale Beschreibung intertextueller Phänomene dient der Beobachtung und Darstellung des Zusammenwirkens jener Schreibweisen und Markierungen bei der Erzeugung von Intertextualität. Die intertextuellen Beziehungen werden dabei also nicht deduktiv im Sinne einer Qualifizierung als Parodie, Kontrafaktur, Nachahmung, Hommage etc. modelliert, da derartige ‚Gattungszuschreibungen‘ in systematischen literaturwissenschaftlichen Untersuchungen zur Typisierung von Intertextualität oftmals den Blick für die spezifischen, bei der Erzeugung von Intertextualität wirksamen Faktoren verstellen. Die angeführten literarischen Beispiele dienen dann eher der selektiven Untermauerung der jeweils präfigurierten Typologie (vgl. einschlägig Broich/Pfister 1985; Genette 1993). Im Gegensatz dazu bildet die Modellierung von Beziehungen zwischen konkreten Schreibweisen den Ausgangspunkt unseres Projekts, welcher im Anschluss Schlussfolgerungen über die Relationen der verschiedenen Ebenen, auf denen intertextuelle Verknüpfungen stattfinden, sowie über die jeweils erzeugten Wirkungen ermöglichen soll.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Methodik</head>
-                <p>Für das angestrebte Forschungsziel stellt die mehrstufige Modellierung einen expliziten heuristischen Gewinn gegenüber bisherigen Ansätzen der Systematisierung dar, indem die umfassende induktive Erfassung und Beschreibung sowie die anschließend abgeleiteten strukturellen Konstanten nicht unverbunden nebeneinander stehen, sondern Mikro- und Makrostrukturen durch das Modell in ihrem Zusammenhang beobachtbar gemacht werden (s. Abbildung 1).</p>
-                <figure>
-                    <graphic n="1001"
-                        width="13.591333333333333cm"
-                        height="8.515686111111112cm"
-                        rend="inline"
-                        url="SCHLUPKOTHEN_Frederik_Zwischen_Polysemie_und_Formalisierung_-image1.png"/>
-                    <head>Abbildung 1: Konzeptuelle Darstellung des Modells</head>
-                </figure>
-                <p>Indem zunächst Einzeltextphänomene modelliert, darauf aufbauend deren Funktionen im Sinne ihres Beitrags zur „Bedeutungskonstitution“ (Hempfer 1991, S. 19) erfasst und daraus übergreifende Kategorien abgeleitet werden, können zwei bislang getrennt voneinander verhandelte Bereiche der Untersuchung von Intertextualität in einer ganzheitlichen Modellierung verbunden werden: die ‚Entwirrung‘ des intertextuellen Gefüges eines einzelnen Textes (vgl. hierfür exemplarisch Bauer Lucca 2001; Dudzik 2017) sowie die übergeordnete Suche nach gemeinsamen Strukturen und Funktionsweisen intertextueller Verweise. Das vorgestellte Modell verknüpft also die in der Literaturwissenschaft seit den 1980er Jahren unternommenen Bestrebungen zur Typologisierung intertextueller Strukturen und Funktionsweisen mit einer umfassenden Detailuntersuchung literarischer Texte. Die Differenzierung in Phänomenbeschreibung und ‑bewertung, welche der eingesetzte Formalismus unterstützt (s. u.), sieht explizit die Modellierung funktionaler Überlagerungen und alternativer Forschungsmeinungen vor, sodass im Rahmen der Formalisierung sowohl der Multifunktionalität intertextueller Schreibweisen (vgl. Kocher 2010, S. 179) als auch der maßgeblich auf produktivem Dissens basierenden Dynamik des literaturwissenschaftlichen Diskurses Rechnung getragen wird.</p>
-                <p>Als Ausgangspunkt zur formalen Beschreibung intertextueller Phänomene dient ein situationstheoretischer Ansatz, welcher die Brücke zwischen literaturwissenschaftlicher Analyse und technischer Modellierung darstellt. Die Situationstheorie bietet sich an, da sie im Sinne der angestrebten Beschreibung der Intertextualität einen mehrstufigen Formalismus zur Verfügung stellt, welcher Informationen und Informationsflüsse in Kontextabhängigkeit beschreibt: Basale Phänomene werden durch basale Informationseinheiten (sog. „Infone“) beschrieben, welche wiederum „Situationen“ als Phänomene einer höheren Ordnung aus der Perspektive eines oder mehrerer „Agenten“ zu bilden erlauben.</p>
-                <p>Somit kann formal unterschieden werden zwischen der Modellierung konkreter (sprachlicher, inhaltlicher, stilistischer) Texteigenschaften und -relationen (beschrieben als Infone) und der Klassifizierung der modellierten Informationseinheiten im Sinne ihrer Funktion sowie einer durch sie indizierten, Kontext-abhängigen Wirkung (beschrieben als Situationen). Im Gegensatz zu technischen Beschreibungssprachen (wie etwa RDF oder OWL) liefert die Situationstheorie einen Formalismus, welcher zunächst frei von umsetzungsspezifischen Einschränkungen (wie etwa festgelegten Datentypen oder Objekthierarchien) ist, die sich ungewollt perspektivierend auf die Modellierung auswirken können.
-                    <ref target="ftn6" n="6"/> Für die Beschreibung literarischer Texte erweist sich der situationstheoretische Formalismus also als besonders geeignet, da er Modellierungsfreiheit mit der für die technische Umsetzung notwendigen formalen Strenge vereint.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ausblick</head>
-                <p>Das Modell wird sukzessive unter Einbezug literarischer Texte verschiedener Textsorten und Publikationszeiträume getestet und weiterentwickelt. An diese sukzessive formale Strukturierung anknüpfend wird geprüft, inwieweit etablierte Beschreibungssprachen bei einer technischen Umsetzung des Modells Anwendung finden können. Insbesondere etablierte Sprachen aus dem Umfeld elektronischer Publikation sollen auf ihre Anwendbarkeit bzw. Möglichkeiten der Erweiterung hin betrachtet werden. Dies sind im Rahmen der durch das W3C beschriebene Standards für Verweisstrukturen Sprachen wie XPath, XLink oder XPointer (vgl. einschlägig Wilde/Lowe 2003), für semantische Auszeichnungen die Sprachen des Semantic Web wie RDF oder OWL. Dies schließt – unabhängig von der konkreten Sprache – die Berücksichtigung unterschiedlicher Auszeichnungskonzepte wie bspw. Standoff- in Abgrenzung zu Inline-Markup ein (vgl. Banski 2010).
-                    <ref target="ftn7" n="7"/>
-                </p>
-            </div>
+            <p>Robert Musil, one of the most important authors of the twentieth-century German-written literature, fought in the Austrian army at the Italian front. During the First World War, between 1916 and 1917, Musil was chief editor of the 
+                <hi rend="italic">Tiroler Soldaten-Zeitung</hi> in Bozen. This activity has always been a philological problem for Musil scholars, who have not been able to attribute with certainty a range of texts to the author. However, their identification is fundamental in the study of his political thinking. With this paper, we present a new approach, that combines historical and philological research with stylometric methods.
+            </p>
+            <p>The starting point for the determination of possible authorship is the screening of previous attempts. The number of articles attributed to Musil has so far varied extensively:</p>
+            <table rend="rules">
+                <row>
+                    <cell>Attribution proposed by</cell>
+                    <cell>Number of TSZ articles attributed to Musil</cell>
+                </row>
+                <row>
+                    <cell>(Dinklage 1960)</cell>
+                    <cell>3</cell>
+                </row>
+                <row>
+                    <cell>(Roth 1972)</cell>
+                    <cell>19</cell>
+                </row>
+                <row>
+                    <cell>(Corino 1973, 2003, and 2010)</cell>
+                    <cell>8</cell>
+                </row>
+                <row>
+                    <cell>(Arntzen 1980)</cell>
+                    <cell>22</cell>
+                </row>
+                <row>
+                    <cell>(Fontanari / Libardi 1987)</cell>
+                    <cell>36</cell>
+                </row>
+                <row>
+                    <cell>(Amann 
+                        <hi rend="italic">et al. </hi> 2009)
+                    </cell>
+                    <cell>36</cell>
+                </row>
+            </table>
+            <p>We have limited our test set to the 38 TSZ articles listed by (Schaunig 2014), for which Musil’s authorship has been proposed at least once. The major problem for carrying out a stylometric analysis on this corpus is text length. As demonstrated by recent research, the minimum length for a reliable authorship attribution is around 5,000 words (see Eder 2015). However, the average length of the 38 disputed TSZ articles is slightly below 1,000 words (see Figure 1). As a possible solution for this issue, we decided to develop a combinatory design that analyzes longer chunks composed by the juxtaposition of single texts. To reduce the number of combinations, we excluded the nine shortest texts (below 500 word), together with the only text attributed to Musil on solid philological ground (see Corino 1973). This leaves us with a corpus of 28 texts, already digitized by (Amann 
+                <hi rend="italic">et al.</hi> 2009). The optimal configuration was obtained by combining groups of 6 texts. This permutation generated 376,740 text chunks with an average length of N=6,963 words and a standard deviation of 909 words.
+            </p>
+            <figure>
+                <graphic n="1001"
+                     width="15.980833333333333cm"
+                     height="13.700125cm"
+                     rend="inline"
+                     url="REBORA_Simone_The__em_Tiroler_Soldaten_Zeitung__em__and_its_-image1.jpeg"/>
+                <head>Figure 1. Test set composition</head>
+            </figure>
+            <p>As for the composition of the training set, we drew both on the “impostors method” (see Koppel / Winter 2014) and on historiographical research. Following (Juola 2015), we fixed the number of “impostors” to a minimum of three: Franz Blei, Franz Kafka, and Stefan Zweig. Subsequently, we selected three authors suggested by (Urbaner 2001) as possible TSZ collaborators: Marie delle Grazie, Hugo Salus, and Albert Ritter (his texts were not available in digitized format, so we OCRed and manually refined them). The training set was then completed by a selection of articles published by Musil in various journals between 1911 and 1919. For each author, the retrieved material was subdivided in three text chunks with a length comprised between 6,000 and 8,000 words: the training set was thus composed by 21 text chunks (see Figure 2).
+            </p>
+            <figure>
+                <graphic n="1002"
+                     width="16.003763888888887cm"
+                     height="20.0025cm"
+                     rend="inline"
+                     url="REBORA_Simone_The__em_Tiroler_Soldaten_Zeitung__em__and_its_-image2.jpeg"/>
+                <head>Figure 2. Training set</head>
+            </figure>
+            <p>The analysis was carried out using the R package 
+                    <hi rend="italic">Stylo</hi> (see Eder / Rybicki / Kestemont 2016). For each iteration, the distances between test set and training set were saved in the tabular form provided by the package. At the end of the process, mean values were calculated by sub-grouping the combinations by each TSZ text. Notwithstanding the employment of a high-standard computational power (provided by GWDG, University of Göttingen), a first experiment using 50–500 most frequent words (MFW) and Burrows’s Delta distance took more than one week to be completed (see Figure 3). However, when repeating the experiment with only one-tenth of the combinations (i.e. 
+                37,674 iterations, randomly selected), results were rather identical (see Figure 4) and the process took less than one day. When the experiment was repeated without any combination, results were extremely noisier (see Figure 5), thus confirming that the combinatory design was able to better discern authorial signals.
+            </p>
+            <figure>
+                <graphic n="1003"
+                     width="15.980833333333333cm"
+                     height="19.173472222222223cm"
+                     rend="inline"
+                     url="REBORA_Simone_The__em_Tiroler_Soldaten_Zeitung__em__and_its_-image3.jpeg"/>
+                <head>Figure 3. Combinatory design results</head>
+            </figure>
+            <figure>
+                <graphic n="1004"
+                     width="15.980833333333333cm"
+                     height="19.178763888888888cm"
+                     rend="inline"
+                     url="REBORA_Simone_The__em_Tiroler_Soldaten_Zeitung__em__and_its_-image4.jpeg"/>
+                <head>Figure 4. Combinatory design results (one-tenth iterations)</head>
+            </figure>
+            <figure>
+                <graphic n="1005"
+                     width="15.980833333333333cm"
+                     height="19.178763888888888cm"
+                     rend="inline"
+                     url="REBORA_Simone_The__em_Tiroler_Soldaten_Zeitung__em__and_its_-image5.jpeg"/>
+                <head>Figure 5. Results without combinatory design</head>
+            </figure>
+            <p>To validate the results, the experiment has been repeated with 16 different configurations, by combining Eder’s Delta, Burrow’s Delta, Canberra, and Cosine distances with 10–100, 20–200, 50–500, and 100–1,000 MFW. In all configurations, Ritter and Musil are the only authors disputing the authorship of the TSZ articles. This evidence has been corroborated by the discovery of a document in the 
+                <hi rend="italic">Kriegsarchiv </hi>in Wien, which confirms that Albert Ritter was part of the TSZ editorial team (see Figure 6).
+            </p>
+            <figure>
+                <graphic n="1006"
+                     width="15.993180555555556cm"
+                     height="6.6675cm"
+                     rend="inline"
+                     url="REBORA_Simone_The__em_Tiroler_Soldaten_Zeitung__em__and_its_-image6.jpeg"/>
+                <head>Figure 6. Source: Kriegsarchiv, Wien</head>
+            </figure>
+            <p>Final results have been synthetized here:</p>
+            <table rend="rules">
+                <row>
+                    <cell>TSZ articles’ titles and dates of publication</cell>
+                    <cell>Agreement between classifiers on Musil’s authorship</cell>
+                </row>
+                <row>
+                    <cell>1. „Kameraden arbeitet mit!“ (6. 8. 1916)</cell>
+                    <cell>
+                        <anchor xml:id="Hlk493164864"/>100,00%
+                    </cell>
+                </row>
+                <row>
+                    <cell>2. „Bin ich ein Österreicher?“ (20. 8. 1916)</cell>
+                    <cell>87,50%</cell>
+                </row>
+                <row>
+                    <cell>3. „Herr Tüchtig und Herr Wichtig” (27. 8. 1916)</cell>
+                    <cell>81,25%</cell>
+                </row>
+                <row>
+                    <cell>4. „Das Schlagwort” (27. 8. 1916)</cell>
+                    <cell>100,00%</cell>
+                </row>
+                <row>
+                    <cell>5. „Die Erziehung zum Staat” (3. 9. 1916)</cell>
+                    <cell>100,00%</cell>
+                </row>
+                <row>
+                    <cell>6. „Bauernleben” (1. 10. 1916)</cell>
+                    <cell>100,00%</cell>
+                </row>
+                <row>
+                    <cell>7. „Sonderbare Patrioten” (15. 10. 1916)</cell>
+                    <cell>100,00%</cell>
+                </row>
+                <row>
+                    <cell>8. „Noch einmal Bauernleben” (29. 10. 1916)</cell>
+                    <cell>100,00%</cell>
+                </row>
+                <row>
+                    <cell>9. „Opportunität” (12. 11. 1916)</cell>
+                    <cell>100,00%</cell>
+                </row>
+                <row>
+                    <cell>10. „Eine gute persönliche Beziehung” (26. 11. 1916)</cell>
+                    <cell>100,00%</cell>
+                </row>
+                <row>
+                    <cell>11. „Eine österreichische Kultur” (10. 12. 1916)</cell>
+                    <cell>100,00%</cell>
+                </row>
+                <row>
+                    <cell>12. „Der Nörgler und der neue Österreicher” (17. 12. 1916)</cell>
+                    <cell>100,00%</cell>
+                </row>
+                <row>
+                    <cell>13. „Das Kompromiß” (24. 12. 1916)</cell>
+                    <cell>100,00%</cell>
+                </row>
+                <row>
+                    <cell>14. „Heilige Zeit” (31. 12. 1916)</cell>
+                    <cell>100,00%</cell>
+                </row>
+                <row>
+                    <cell>15. „Zentralismus und Föderalismus” (7. 1. 1917)</cell>
+                    <cell>68,75%</cell>
+                </row>
+                <row>
+                    <cell>16. „Föderalismus oder Zentralismus” (14. 1. 1917)</cell>
+                    <cell>68,75%</cell>
+                </row>
+                <row>
+                    <cell>17. „Zu Milde und zu Wilde” (11. 2. 1917)</cell>
+                    <cell>93,75%</cell>
+                </row>
+                <row>
+                    <cell>18. „Neu-Altösterreichisches” (25. 2. 1917)</cell>
+                    <cell>87,50%</cell>
+                </row>
+                <row>
+                    <cell>19. „Ist die »österreichische Frage« schwierig?” (4. 3. 1917)</cell>
+                    <cell>62,50%</cell>
+                </row>
+                <row>
+                    <cell>20. „Seiner Hochwohlgeboren!” (4. 3. 1917)</cell>
+                    <cell>100,00%</cell>
+                </row>
+                <row>
+                    <cell>21. „Luxussteuern” (4. 3. 1917)</cell>
+                    <cell>93,75%</cell>
+                </row>
+                <row>
+                    <cell>22. „Positive Ziele” (11. 3. 1917)</cell>
+                    <cell>81,25%</cell>
+                </row>
+                <row>
+                    <cell>23. „Der Frieden versprochen!” (18. 3. 1917)</cell>
+                    <cell>68,75%</cell>
+                </row>
+                <row>
+                    <cell>24. „Das Staatsprogramm der Deutschen” (18. 3. 1917)</cell>
+                    <cell>87,50%</cell>
+                </row>
+                <row>
+                    <cell>25. „Wehe dem Staatsmann!” (25. 3. 1917)</cell>
+                    <cell>68,75%</cell>
+                </row>
+                <row>
+                    <cell>26. „Der Frieden und die Zukunft” (1. 4. 1917)</cell>
+                    <cell>62,50%</cell>
+                </row>
+                <row>
+                    <cell>27. „Presse und Krieg” (8. 4. 1917)</cell>
+                    <cell>68,75%</cell>
+                </row>
+                <row>
+                    <cell>28. „Vermächtnis” (15. 4. 1917)</cell>
+                    <cell>100,00%</cell>
+                </row>
+            </table>
+            <p>A general trend is evident: while, for the articles published in 1916, Musil’s authorship is almost unquestionable, many more doubts emerge with the articles published in 1917. In no case, however, Ritter’s signal becomes dominant. Notwithstanding the high margins of uncertainty, these results are to be considered as significant for multiple reasons. First, the combinatory design, while having shown the dominance of Musil’s signal throughout the test set, may have overshadowed different, minor signals. Second, it should be considered the fact that Musil, in the role of chief editor, may have altered many articles in the journal, thus intermixing his authorial signal with those of others. All this considered, further research is advisable, while the focus should be shifted towards the texts on which classifiers disagree.</p>
+            <p>Among possible future developments of the research, is the definition of new training sets to validate the results and an expansion of the test set. Both these developments, however, will require an extensive digitization effort: most of the useful texts, in fact, are not available in a clean plain-text format. In addition, other software should be tested on the already defined corpus, from JGAAP (see Juola 
+                <hi rend="italic">et al. </hi>2008) to the CLEF/PAN software (see Stamatatos 
+                <hi rend="italic">et al.</hi> 2014), focusing specifically on different methods for authorship attribution, from lower-level features such as character n-grams (see Halvani 
+                <hi rend="italic">et al. </hi>2016), to higher-level features such as syntactic labels (see Hirst / Feiguina 2007), taking into consideration also machine-learning techniques (see Jockers / Witten 2010). With our study, we hope to have cast the groundwork for a research that can have long-lasting consequences on the history of German literature, confirming at the same time how quantitative methods are not in opposition, but complementary to qualitative analysis (see Herrmann 2018).
+            </p>
         </body>
         <back>
-         <div type="notes">
-            <note xml:id="ftn1" n="1" rend="footnote text"> Meister 2012, S. 112 betont aufgrund der Dynamik und historisch-kulturellen Dependenz von Sprache zurecht, dass „[t]he problems posed by the interpretation of literary texts are thus not an exceptional, but rather an exemplary case“. Dennoch erfolgt literarische (bzw. allgemein künstlerische) Kommunikation im Rahmen einer spezifischen „Kommunikationslogik“, die sich von der alltagssprachlicher Kommunikationssituationen unterscheidet (vgl. Spoerhase 2007, S. 414–418).</note>
-            <note xml:id="ftn2" n="2" rend="footnote text"> Vgl. zur Unterscheidung zwischen „modeling for understanding“ und „modeling for production“ Eide 2014.</note>
-            <note xml:id="ftn3" n="3" rend="footnote text">„Schreibweisen“ ist hierbei nicht intentionalistisch, sondern im Sinne von Textstrukturen mit Verweisfunktion zu verstehen.</note>
-            <note xml:id="ftn4" n="4" rend="footnote text"> Vgl. hierzu u. a. die Ausführungen zur visuellen Analyse in John u. a. 2016. Einen komplexeren, narratologisch ausgerichteten Ansatz verfolgt das Projekt heureCLÉA (vgl. hierzu Gius/Jacke 2015). Das Projekt ist daher in seiner Orientierung an konkreten literaturwissenschaftlichen Methoden beispielhaft, verfolgt aber mit seiner Ausrichtung auf innertextuelle Strukturen ein grundsätzlich anderes Ziel als unser Projekt.</note>
-            <note xml:id="ftn5" n="5" rend="footnote text"> Wagner/Mehler/Biber 2016, S. 90 verstehen ihr Projekt daher auch eher im Sinne einer Vorstufe für die „Erschließung des intertextuellen Potentials eines je gegebenen literarischen Texts“. Ihr methodischer Ansatz „zielt nicht auf die 
-                            <hi rend="italic">Implementierung</hi> literarischer Intertextualität“.
-                        </note>
-            <note xml:id="ftn6" n="6" rend="footnote text"> Im Gegensatz dazu ist bspw. der in Heßbrüggen-Walter 2015 dargestellte Ansatz unmittelbar RDF-basiert gedacht.</note>
-            <note xml:id="ftn7" n="7" rend="footnote text"> Zahlreiche rechnergestützte, aber proprietäre Anwendungen wurden im Verlauf der Entwicklung der Situationstheorie vorgestellt (vgl. einschlägig etwa Tin/Akman 1994). Neuere Ansätze schlagen die Verwendung etablierter Sprachen, wie insb. durch das Semantic Web gegeben, vor (Kokar/Matheus/Baclawski 2009).</note>
-         </div>
          <div type="bibliogr">
                 <listBibl>
-                    <head>Bibliographie</head>
+                    <head>Bibliography</head>
                     <bibl>
-                        <hi rend="bold">Banski, Pjotr</hi> (2010): “Why TEI stand-off annotation doesn't quite work: and why you might want to use it nevertheless”, in: 
-                        <hi rend="italic">Proceedings of Balisage: The Markup Conference</hi> 2010.
+                        <hi rend="bold">Amann, Klaus / Corino, Karl / Fanta, Walter </hi>(2009): 
+                        <hi rend="italic">Robert Musil, Klagenfurter Ausgabe. </hi>Klagenfurt: Robert Musil-Institut der Universität Klagenfurt.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Barwise, Jon / Perry, John</hi> (1983): 
-                        <hi rend="italic">Situations and Attitudes</hi>. Cambridge: Bradford Book, MIT Press.
+                        <hi rend="bold">Arntzen, Helmut</hi> (1980): 
+                        <hi rend="italic">Musil-Kommentar sämtlicher zu Lebzeiten erschienener Schriften außer dem Roman “Der Mann ohne Eigenschaften”</hi>. München: Winkler.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Bauer Lucca, Eva</hi> (2001): 
-                        <hi rend="italic">Versteckte Spuren: eine intertextuelle Annäherung an Thomas Manns Roman “Doktor Faustus”</hi>. Wiesbaden: Deutscher Universitätsverlag.
+                        <hi rend="bold">Corino, Karl</hi> (1973): “Robert Musil, Aus der Geschichte eines Regiments”, in: Studi Germanici 11: 109–115.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Broich, Ulrich / Pfister, Manfred</hi> (eds.) (1985): 
-                        <hi rend="italic">Intertextualität. Formen, Funktionen, anglistische Fallstudien</hi>. Tübingen: Niemeyer.
+                        <hi rend="bold">Corino, Karl</hi> (2003): 
+                        <hi rend="italic">Robert Musil: eine Biographie</hi>, Reinbek bei Hamburg: Rowohlt.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Devlin, Keith J.</hi> (1990): Logic and Information. Cambridge: Cambridge University Press.
+                        <hi rend="bold">Corino, Karl</hi> (2010): “Klaviersonnen über Schluchten des Gemüts. Robert Musil und die Musik”, in: 
+                        <hi rend="italic">Das Plateau</hi> 120: 4–21.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Dudzik, Yvonne</hi> (2017): 
-                        <hi rend="italic">Geschichten bereichern die Geschichte: Intertextualität als Untersuchungskategorie in Uwe Johnsons “Jahrestage”</hi>. Göttingen: V&amp;R unipress.
+                        <hi rend="bold">Dinklage, Karl</hi> (1960): 
+                        <hi rend="italic">Robert Musil. Leben, Werk, Wirkung</hi>, Zürich.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Eide, Øvind</hi> (2014): “Ontologies, Data, and TEI”, in: 
-                        <hi rend="italic">Journal of the Text Encoding Initiative</hi> 8: 1–22.
+                        <hi rend="bold">Eder, Maciej / Kestemont, Mike / Rybicki, Jan </hi>(2016): “Stylometry with R: a package for computational text analysis”, in: 
+                        <hi rend="italic">R Journal</hi> 8(1): 107–121.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Genette, Gérard</hi> (1993): 
-                        <hi rend="italic">Palimpseste. Die Literatur auf zweiter Stufe</hi>. Frankfurt a. M.: Suhrkamp.
+                        <hi rend="bold">Eder, Maciej</hi> (2015): “Does size matter? Authorship attribution, small samples, big problem”, in: 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi> 30(2): 167–182.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Gius, Evelyn / Jacke, Janina</hi> (2015): “Informatik und Hermeneutik. Zum Mehrwert interdisziplinärer Textanalyse”, in: Baum, Constanze / Stäcker, Thomas (eds.): 
-                        <hi rend="italic">Grenzen und Möglichkeiten der Digital Humanities</hi>. (= Sonderband der Zeitschrift für digitale Geisteswissenschaften, 1) 10.17175/sb001_006.
+                        <hi rend="bold">Fontanari, Alessandro / Libardi, Massimo </hi>(1987): 
+                        <hi rend="italic">La guerra parallela</hi>. Trento: Reverdito.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Hempfer, Klaus W.</hi> (1991): „Intertextualität. Systemreferenz und Strukturwandel: Die Pluralisierung des erotischen Diskurses in der italienischen und französischen Renaissance-Lyrik (Ariost, Bembo, Du Bellay, Ronsard)“, in: Titzmann, Michael (ed.): 
-                        <hi rend="italic">Modelle des literarischen Strukturwandels</hi>. Tübingen: Niemeyer, 7–43.
+                        <hi rend="bold">Halvani, Oren / Winter, Christian / Pflug, Anika</hi> (2016): “Authorship verification for different languages, genres and topics”, in: 
+                        <hi rend="italic">Digital Investigation</hi> 16: 33–43.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Heßbrüggen-Walter, Stefan</hi> (2015): “What People Said: The Theoretical Foundations of a Minimal Doxographical Ontology and Its Use in the History of Philosophy”, in: Baum, Constanze / Stäcker, Thomas (eds.): 
-                        <hi rend="italic">Grenzen und Möglichkeiten der Digital Humanities</hi>. (= Sonderband der Zeitschrift für digitale Geisteswissenschaften, 1). DOI: 10.17175/sb001_001 
+                        <hi rend="bold">Herrmann, J. Berenike</hi> (2018): “In test bed with Kafka. Introducing a mixed-method approach to digital stylistics”, in: 
+                        <hi rend="italic">Digital Humanities Quarterly</hi> [in press].
                     </bibl>
                     <bibl>
-                        <hi rend="bold">John, Markus / Lohmann, Steffen / Koch, Steffen / Wörner, Michael / Ertl, Thomas</hi> (2016): „Visual Analytics for Narrative Texts. Visualizing Characters and their Relationships as Extracted from Novels”, in: 
-                        <hi rend="italic">Proceedings of the 7th International Conference on Information Visualization Theory and Applications</hi>. Rom, Italien: SciTePress [Preprint: 
-                        <ref target="http://www.visualdataweb.org/publications/2016_IVAPP_VA-for-Narrative_preprint.pdf">http://www.visualdataweb.org/publications/2016_IVAPP_VA-for-Narrative_preprint.pdf</ref>].
+                        <hi rend="bold">Hirst, Graeme / Feiguina, Ol’ga</hi> (2007): “Bigrams of syntactic labels for authorship discrimination of short texts”, in: 
+                        <hi rend="italic">Literary and Linguistic Computing</hi> 22(4): 405–417.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Kocher, Ursula</hi> (2007): “Im Gewirr der Fäden: Intertextualitätstheorie und Edition”, in: Falk, Rainer / Mattenklott, Gert (eds.): 
-                        <hi rend="italic">Ästhetische Erfahrung und Edition</hi>. Tübingen: Max Niemeyer, 175–185.
+                        <hi rend="bold">Jockers, Mattew / Witten, Daniela </hi>(2010): “A comparative study of machine learning methods for authorship attribution”, in: 
+                        <hi rend="italic">Literary and Linguistic Computing</hi> 25(2): 215–223.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Kokar, Mieczyslaw M. / Matheus, Christopher J. / Baclawski, Kenneth</hi> (2009): „Ontology-based situation awareness“, in: 
-                        <hi rend="italic">Information Fusion</hi> 10, 1. St. Louis, MO, USA: Elsevier, 83–98.
+                        <hi rend="bold">Juola, Patrick / Noecker, John / Ryan, Mike / Zhao, Mengjia</hi> (2008): “JGAAP3.0 – authorship attribution for the rest of us”, in: 
+                        <hi rend="italic">Digital Humanities 2008: Book of Abstracts</hi>: 250–251.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Tin, Erkan / Akman, Varol </hi>(1994): „Computational Situation Theory”, in: Hoebel, Louis J. / Powers, David (eds.): 
-                        <hi rend="italic">SIGART Bulletin</hi> 5, 4. New York, NY, USA: ACM, 4–17.
+                        <hi rend="bold">Juola, Patrick</hi> (2015): “The Rowling Case: A Proposed Standard Analytic Protocol for Authorship Questions”, in: 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi> 30: 100–113.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Meister, Jan-Christoph</hi> (2012): „Crowdsourcing ‚True Meaning‘: A Collaborative Markup Approach to Textual Interpretation“, in: Deegan, Marilyn (ed.): 
-                        <hi rend="italic">Collaborative Research in the Digital Humanities. A Volume in Honour of Harold Short, on the Occasion of his 65th Birthday and his Retirement</hi>. Farnham: Ashgate 2012, 106–122.
+                        <hi rend="bold">Koppel, Moshe / Winter Yaron</hi> (2014): “Determining if two documents are by the same author”, in: JASIST 65(1): 178-187.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Spoerhase, Carlos</hi> (2007): 
-                        <hi rend="italic">Autorschaft und Interpretation. Methodische Grundlagen einer philologischen Hermeneutik</hi>. Berlin/New York: De Gruyter.
+                        <hi rend="bold">Roth, Marie-Louise</hi> (1972): 
+                        <hi rend="italic">Robert Musil. Ethik und Ästhetik</hi>. München: List.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Verweyen, Theodor / Wittig, Gunther</hi> (2010): 
-                        <hi rend="italic">Einfache Formen der Intertextualität: Theoretische Überlegungen und historische Untersuchungen</hi>. Paderborn: mentis.
+                        <hi rend="bold">Schaunig, Regina</hi> (2014): 
+                        <hi rend="italic">Der Dichter im Dienst des Generals. Robert Musils Propagandaschriften im ersten Weltkrieg</hi>. Klagenfurt: Kitab.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Wagner, Benno / Mehler, Alexander / Biber, Hanno</hi> (2016): “Transbiblionome Daten in der Literaturwissenschaft. Texttechnologische Erschließung und digitale Visualisierng intertextueller Beziehungen digitaler Korpora“, in: 
-                        <hi rend="italic">Konferenzabstracts DHd 2016 Modellierung, Vernetzung, Visualisierung. Die Digital Humanties als fächerübergreifendes Forschungsparadigma</hi>
-                        <ref target="http://dhd2016.de/boa.pdf">http://dhd2016.de/boa.pdf</ref>, 88–94.
+                        <hi rend="bold">Stamatatos, Efstathios / Daelemans, Walter / Verhoeven, Ben / Potthast, Martin / Stein, Benno / Juola, Patrick / Sanchez-Perez, Miguel A. / Barrón-Cedeño, Alberto</hi> (2014): “Overview of the Author Identification Task at PAN 2014
+                        <anchor xml:id="Hlk493150859"/>”, in: 
+                        <hi rend="italic">CLEF 2014 (Working Notes)</hi>: 877-897.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Wilde, Erik / Lowe, David</hi> (2003): 
-                        <hi rend="italic">XPath, XLink, XPointer, and XML: A Practical Guide to Web Hyperlinking and Transclusion</hi>. Boston, MA: Addison-Wesley.
+                        <hi rend="bold">Urbaner, Roman</hi> (2001): “‘... daran zugrunde gegangen, daß sie Tagespolitik treiben wollte‘? Die ‚(Tiroler) Soldaten-Zeitung‘ 1915-1917”, in: 
+                        <hi rend="italic">eForum zeitGeschichte</hi> 3/4. www.eforum-zeitgeschichte.at [accessed 14.09.2017]
                     </bibl>
                 </listBibl>
             </div>

@@ -1,267 +1,186 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="poster-REGER">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Comparison of Methods for Automatic Relation Extraction in German Novels</title>
-                <author>
-                    <persName>
-                        <surname>Krug</surname>
-                        <forename>Markus</forename>
-                    </persName>
-                    <affiliation>Universität Würzburg, Deutschland</affiliation>
-                    <email>markus.krug@uni-wuerzburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Wick</surname>
-                        <forename>Christoph</forename>
-                    </persName>
-                    <affiliation>Universität Würzburg, Deutschland</affiliation>
-                    <email>christoph.wick@uni-wuerzburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Jannidis</surname>
-                        <forename>Fotis</forename>
-                    </persName>
-                    <affiliation>Universität Würzburg, Deutschland</affiliation>
-                    <email>fotis.jannidis@uni-wuerzburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Reger</surname>
-                        <forename>Isabella</forename>
-                    </persName>
-                    <affiliation>Universität Würzburg, Deutschland</affiliation>
-                    <email>isabella.reger@uni-wuerzburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Weimer</surname>
-                        <forename>Lukas</forename>
-                    </persName>
-                    <affiliation>Universität Würzburg, Deutschland</affiliation>
-                    <email>lukas.weimer@uni-wuerzburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Madarasz</surname>
-                        <forename>Nathalie</forename>
-                    </persName>
-                    <affiliation>Universität Würzburg, Deutschland</affiliation>
-                    <email>nathalie.madarasz@stud-mail.uni-wuerzburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Puppe</surname>
-                        <forename>Frank</forename>
-                    </persName>
-                    <affiliation>Universität Würzburg, Deutschland</affiliation>
-                    <email>frank.puppe@uni-wuerzburg.de</email>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2016-12-01T13:07:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Prof. Dr. Michael Stolz</publisher>
-                <address>
-                    <addrLine>UniversitÃ¤t Bern</addrLine>
-                    <addrLine>Institut fÃ¼r Germanistik</addrLine>
-                    <addrLine>Laenggass-Str. 49</addrLine>
-                    <addrLine>CH-3000 Bern 9</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document </p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.17">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Poster</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term></term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Relation Extraction</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Beziehungsanalyse</term>
-                    <term>Modellierung</term>
-                    <term>Annotieren</term>
-                    <term>Netzwerkanalyse</term>
-                    <term>Literatur</term>
-                    <term>benannte Entitäten (named entities)</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p>Die automatische Erkennung von spezifischen Relationen ermöglicht Einsichten über die Beziehungen zwischen Entitäten. Solche Informationen können nicht nur als Kantenbezeichner in sozialen Netzwerken fungieren, sondern auch als globale Constraints für das schwierige Problem der Coreference Resolution eingesetzt werden. Darüber hinaus kann eine Relationserkennung zur Beantwortung diverser literarischer Fragestellungen eingesetzt werden, z.B. ob eine Romangattung sich mit bestimmten Relationstypen befasst, oder ob die Arten der Relationen sich über die Jahrhunderte verändern. In dieser Arbeit stellen wir ein Label-Set für die Extraktion von binären Relationen zwischen Personen-Entitäten vor und vergleichen Feature-basierte Ansätze des maschinellen Lernens mit regelbasierten Ansätzen zur automatischen Erkennung dieser Relationen. Da Trainingsmaterial zur Verfügung steht, liegt der Fokus in dieser Arbeit auf dem Einsatz überwachter Methoden, d.h. unsere regelbasierten Verfahren sind ebenfalls auf einer zuvor abgetrennten Menge entwickelt worden. Wir verwenden ein neues Korpus, das manuell mit mehr als 50 verschiedenen, hierarchisch gegliederten Relationstypen annotiert wurde.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Related Work</head>
-                <p>Eine Übersicht über Arbeiten zur Relationserkennung findet sich in [Jung et al. 2012] sowie [Bach und Badaskar 2007]. Sowohl für den überwachten, als auch den halb-überwachten Fall wurden erfolgreiche Methoden entwickelt. Da dieses Paper sich hauptsächlich auf überwachte Algorithmen bezieht, geben wir nur einen knappen Überblick über halb-überwachte Verfahren.</p>
-                <p>Algorithmen zur Relationsextraktion erhalten typischerweise zwei (oder mehr) Referenzen zu Entitäten (sogenannte Instanzen) als Input und sollen die Klasse, und das dazugehörige Label, vorhersagen, welche die Relation zwischen den Entitäten beschreibt. Die meisten Experimente wurden anhand englischer Texte und den Datensätzen der Automatic Content Extraction (ACE) Workshops 2004 und 2006 durchgeführt. Auf dem Datensatz von 2004 wurden Experimente zur Unterscheidung von 5 und 27 verschiedenen Klassen wie Arbeitsplatz-, körperliche, soziale, Mitgliedschafts- und Diskursrelationen (wobei manche Unterklassen von anderen sein können) betrachtet. Hierfür gibt es zahlreiche Ansätze, die jedoch alle versuchen, eine diskriminative Beschreibung der Instanzen zu erhalten und diese davon ausgehend zu klassifizieren:</p>
-                <list type="unordered">
-                    <item>In der Feature-basierten Klassifikation wird eine Instanz (normalerweise zwei Referenzen zu Entitäten) durch einen Feature-Vektor mit manchmal mehr als einer Million Dimensionen repräsentiert und mit Methoden wie Maximum Entropy Modellen [Kambhatla 2004] oder Support Vector Machines [Jiang und Zhai 2007] klassifiziert. Der letztere Ansatz konnte auf den ACE2004-Daten einen F1-Score von 72,9% für die Erkennung von 7 verschiedenen Relationen erzielen. In unseren Experimenten verwenden wir für die Feature-basierten Methoden ähnliche Features wie Kambhatla [Kambhatla 2004].</item>
-                    <item>Kernel-basierte Klassifikation wurde häufig zur Relationsextraktion genutzt und liefert konkurrenzfähige Ergebnisse [Zhou et al. 2007, Zhang et al. 2006, Zhao und Grishman 2005]. Während Feature-basierte Verfahren die Instanz direkt repräsentieren, funktionieren Kernel-basierte Methoden etwas anders. Aus einer technischen Perspektive kann ein Kernel als eine Funktion betrachtet werden, die zwei Instanzen als Input erhält (also ein Paar von Referenzen) und direkt einen Wert berechnet, der auf der "Ähnlichkeit" dieser Instanzen basiert, wobei einer höherer Wert eine größere Ähnlichkeit anzeigt. Es wurden zahlreiche Kernel für die Relationsextraktion vorgeschlagen; eine tiefgehende Analyse und Erklärung findet sich in Jung et al. [Jung et al. 2012].</item>
-                    <item>Die regelbasierte Klassifikation verwendet eine für den Menschen lesbare Repräsentation durch Regeln, die entweder manuell erstellt oder gelernt wurden. Als Vorteile können die inhärente Erklärungsfähigkeit und die einfache Integration in Feature-basierte Machine Learning-Verfahren gesehen werden.</item>
-                </list>
-                <p>Im Folgenden vergleichen wir die genannten Methoden anhand eines Label-Sets zur Erkennung binärer Relationen zwischen Figuren in manuell annotierten Abschnitten von deutschsprachigen Romanen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Annotation, Datensatz und Vorverarbeitung</head>
-                <p>Da Textstellen, an denen Relationen zwischen Entitäten explizit benannt werden, in Romanen typischerweise rar sind, ist es nicht sinnvoll, komplette Romane zu annotieren, da der Ertrag an Daten zu gering wäre. Aus diesem Grund wurde zunächst eine kleine Teilmenge per Hand annotiert und dann genutzt, um mit einem MaxEnt Classifier in einer Active Learning-Umgebung neue Sätze zum Labeln vorschlagen zu können. (Ein Überblick hierzu findet sich in Finn und Kushmerick [Finn und Kushmerick 2003]). Diese Umgebung erhielt Sätze aus 312 verschiedenen Romanen von Projekt Gutenberg und 215 Zusammenfassungen aus dem Kindler Literatur Lexikon Online. Daraus entstand ein Korpus mit 2412 Sätzen, die insgesamt 1265 Relationen enthalten (was wiederum die Knappheit an Daten illustriert). 33 Texte wurden zufällig für die Testmenge ausgewählt, sodass es feste Test- und Trainingsdaten gibt (1988 respektive 424 Sätze mit 1070 respektive 195 Relationen). Die verwendeten Label sind ähnlich zu Massey et al. [Massey et al. 2015]. Die Relationen werden durch eine Ontologie mit momentan 57 verschiedenen Relationstypen repräsentiert, die hierarchisch geordnet sind (beispielsweise ist die Relation "Tochter" der Relation "Familie" untergeordnet). Abbildung 1 zeigt die oberste Ebene des Label-Sets, mit den gleichen Kategorien wie in Massey et al. [Massey et al. 2015] und einer zusätzlichen Relation "Liebe".</p>
-                <figure>
-                    <graphic n="1001" width="15.197666666666667cm" height="1.8896583333333334cm" url="poster-REGER-image1.png" rend="inline"/>
-                </figure>
-                <p>Abbildung 1: Die ersten beiden Ebenen unseres verwendeten Label-Sets mit den vier Haupttypen, die sich weiter in insgesamt 57 Relationstypen untergliedern lassen.</p>
-                <p>Eine Relation wurde von einem Annotator als ein benannter, gerichteter Bogen zwischen zwei Entitäten in einem Satz gelabelt, sofern sie explizit im Text beschrieben ist. Es wurde immer das spezifischste Label verwendet, da die übergeordneten Relationstypen (vgl. Abbildung 1) daraus abgeleitet werden können. Abbildung 2 zeigt ein Beispiel einer Relation, wie sie in unserem Korpus annotiert ist.</p>
-                <figure>
-                    <graphic n="1002" width="15.113cm" height="1.4212222222222222cm" url="poster-REGER-image2.png" rend="inline"/>
-                </figure>
-                <p>Abbildung 2: Zwei gelabelte Instanzen von Relationen in unserem Datensatz. Die erste zeigt die Relation “hatTochter” und die zweite die Relation “hatVerehrer”.</p>
-                <p>Um solche Relationen automatisch erkennen zu können, müssen die Texte eine große Zahl an Vorverarbeitungsschritten durchlaufen. Wir verwenden die Figurenerkennung von Jannidis et al. [Jannidis et al. 2015] und die gleiche Vorverarbeitung wie in [Krug et al. 2016].</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Experimente</head>
-                <p>Wir verwenden einen regelbasierten Ansatz mit manuell erstellten Regeln und zwei Feature-basierte Lernverfahren (Maximum Entropy, MaxEnt und Support Vector Machines, SVM). Der regelbasierte Ansatz nutzt sowohl die textuelle Repräsentation, als auch den kürzesten Pfad im Dependency-Baum und formuliert die Regel auf Basis dieser Repräsentationen und der Repräsentationen aus dem reinen Text. Das folgende Beispiel zeigt Regeln, die zu den Relationen aus Abbildung 2 passen:</p>
-                <list type="unordered">
-                    <item>Tochter des &lt;Entität&gt; =&gt; hatTochter(2,1)</item>
-                    <item>Pfad: &lt;Entität&gt;-&gt;verliebt&lt;-&gt;in&lt;-&lt;Entität&gt; =&gt; hatVerehrer(2,1)</item>
-                </list>
-                <p>Die erste Regel basiert auf der angepassten Text-Repräsentation, während die zweite Regel sich auf den kürzesten Dependency-Pfad zwischen "sich" und "sie" bezieht. Die Zahlen in runden Klammern geben die Richtung an (in beiden Fällen von Entität 2 auf Entität 1). Die Regeln wurden manuell auf den zuvor gewählten Trainingsdaten erzeugt. Insgesamt wurden fast 500 solcher Regeln ermittelt. Der Großteil der Relationen konnte jedoch mit 3 Regeln (ab hier sogenannte Core-Regeln) abgedeckt werden, die Possessiv- und Genitivkonstruktionen abbilden.</p>
-                <p>Die Feature-basierten Ansätze wurden in zwei Szenarien evaluiert: a) nur mit bereits bekannten Features aus Related Work und b) mit zusätzlichen Booleschen Features (eines pro Regel), falls eine der 500 Regeln passt.</p>
-                <p>Tabelle 1 zeigt die Evaluationsergebnisse der verschiedenen Methoden für drei hierarchische Ebenen (alle Relationen, Relationen der obersten Ebene, alle 57 Relationstypen) und Tabelle 2 die Ergebnisse für die vier Relationstypen der obersten Ebene. Während die Verwendung aller Regeln zu einem F1-Score von 71% für alle Relationen und 59% für die vier übergeordneten Relationstypen führt, erreicht der Feature-basierte Ansatz mit MaxEnt mit einem Booleschen Feature für jede Regel etwas bessere Ergebnisse (F1 von 73,6% und 61,2%). Ohne die Regel-Features liegt der Score der Lernverfahren deutlich niedriger. Die SVM erreicht teilweise eine höhere Precision als MaxEnt, aber im Allgemeinen einen signifikant geringeren F1-Wert.</p>
-                <p>Tabelle 1: Ergebnisse der verschiedenen Ansätze für drei verschiedene Evaluationsszenarien: binär (das reine Vorliegen einer Relation), für die 4 Haupttypen und für alle 57 Relationstypen insgesamt.
-                    <graphic n="1003" width="15.927916666666667cm" height="6.773333333333333cm" url="poster-REGER-image3.png" rend="inline"/>
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="poster-BAILL" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Nachhaltigkeit durch Zusammenschluss: Die DARIAH Data Re-Use Charter</title>
+<author>
+<persName>
+<surname>Baillot</surname>
+<forename>Anne</forename>
+</persName>
+<affiliation>Centre Marc Bloch, Deutschland</affiliation>
+<email>anne.baillot@gmail.com</email>
+</author>
+<author>
+<persName>
+<surname>Busch</surname>
+<forename>Anna</forename>
+</persName>
+<affiliation>Forschungsverbund Weimar Marbach Wolfenbüttel</affiliation>
+<email>anna_busch@gmx.de</email>
+</author>
+<author>
+<persName>
+<surname>Puren</surname>
+<forename>Marie</forename>
+</persName>
+<affiliation>Inria Paris</affiliation>
+<email>marie.puren@inria.fr</email>
+</author>
+<author>
+<persName>
+<surname>Mertens</surname>
+<forename>Mike</forename>
+</persName>
+<affiliation>Goettingen Center for Digital Humanities</affiliation>
+<email>mike.mertens@dariah.eu</email>
+</author>
+<author>
+<persName>
+<surname>Romary</surname>
+<forename>Laurent</forename>
+</persName>
+<affiliation>Inria Paris</affiliation>
+<email>laurent.romary@inria.fr</email>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2016-08-26T11:28:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Prof. Dr. Michael Stolz</publisher>
+<address>
+<addrLine>UniversitÃ¤t Bern</addrLine>
+<addrLine>Institut fÃ¼r Germanistik</addrLine>
+<addrLine>Laenggass-Str. 49</addrLine>
+<addrLine>CH-3000 Bern 9</addrLine>
+</address>
+</publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document </p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.17">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Poster</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term/>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Kulturerbedaten</term>
+<term>Forschungsinfrastruktur</term>
+<term>Kooperation</term>
+<term>Datenzentren</term>
+<term>Equipment</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Teilen</term>
+<term>Sammlung</term>
+<term>Transkription</term>
+<term>Annotieren</term>
+<term>Kommunikation</term>
+<term>Archivierung</term>
+<term>Veröffentlichung</term>
+<term>Identifizierung</term>
+<term>Konservierung</term>
+<term>Artefakte</term>
+<term>Datei</term>
+<term>Bilder</term>
+<term>Infrastruktur</term>
+<term>Manuskript</term>
+<term>Karte</term>
+<term>Metadaten</term>
+<term>Forschung</term>
+<term>Forschungsprozess</term>
+<term>Standards</term>
+<term>Text</term>
+<term>texttragende Gegenstände</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Bedarf und Forschungsstand</head>
+<p>Ausgangspunkt der Charter ist die Feststellung, dass es bis dato keinen klaren Rahmen gibt, der die wissenschaftlichen Weiternutzungsbedingungen von digitalen Daten regelt, die auf Beständen von Kulturerbeinstitutionen basieren. Einige allgemeine Richtlinien wurden entwickelt, die allerdings nicht spezifisch die Interaktion zwischen digitalen Kulturerbedaten und Forschung in den Blick nehmen, sondern breiter angelegt sind. So etwa die Data Re-Use Models 
+                    <ref target="https://dans.knaw.nl/en">
+<hi rend="underline color(1155CC)">DANS</hi>
+</ref> oder die 
+                    <ref target="http://unesdoc.unesco.org/images/0013/001300/130071e.pdf">
+<hi rend="underline color(1155CC)">UNESCO Guidelines for the preservation of digital heritage</hi>
+</ref> (die wohlgemerkt nicht ausschliesslich Kulturerbedaten in den Blick nehmen). Andere Initiativen haben die Evaluation der digitalen Best-Practices in den Mittelpunkt gestellt, so etwa der 
+                    <ref target="http://www.datasealofapproval.org/en/">
+<hi rend="underline color(1155CC)">Data Seal of Approval</hi>
+</ref> oder die 
+                    <ref target="http://www.crl.edu/archiving-preservation/digital-archives">
+<hi rend="underline color(1155CC)">Richtlinien zur </hi>
+</ref>
+<ref target="http://www.crl.edu/archiving-preservation/digital-archives">
+<hi rend="underline color(1155CC) background(white)">Certification and Assessment of Digital Repositories</hi>
+</ref>
+<hi rend="color(444444) background(white)"> des Center for Research Libraries. </hi>Im Bereich des Forschungsökosystems selbst jedoch kann in diesem Sinne hauptsächlich auf den 
+                    <ref target="https://cdsweb.cern.ch/record/1273755/files/Codeofconduct.pdf">
+<hi rend="underline color(1155CC)">CERN Code of Conduct</hi>
+</ref> hingewiesen werden, der zwar wenig konkrete Verpflichtungen definiert, dafür aber den Schwerpunkt auf eine Ethik der wissenschaftlichen Zusammenarbeit legt, dessen Geist ebenfalls in der hier dargestellten Charter von wesentlicher Bedeutung ist. 
                 </p>
-                <p>Tabelle 2: Ergebnisse für die verschiedenen Ansätze, aufgeschlüsselt nach den 4 Haupttypen. Familienrelationen erreichen sehr gute Ergebnisse mit einem F1-Wert von fast 80% und einer Precision von bis zu 95%. Liebesrelationen sind schwerer zu erkennen, liegen aber dennoch bei 56,3% F1. Die anderen Relationstypen fallen in der Qualität ab, sind aber gleichzeitig weniger relevant. 
-                    <graphic n="1004" width="15.927916666666667cm" height="5.503333333333333cm" url="poster-REGER-image4.png" rend="inline"/>
+<p>Der Mangel eines klaren Rahmens für die Zusammenarbeit an und mit digitalen Kulturerbedaten macht sich für alle beteiligten Akteure im Alltag bemerkbar: Forscher und Forscherinnen, die vor einem Scan stehen, ohne zu wissen, wie sie diesen weiterverwenden und zitieren dürfen; Kulturerbeeinrichtungen, die ihre Metadatensätze mit den entstehenden Forschungsarbeiten verknüpfen möchten; Equipments, die Anfragen für die gleichen Artefakte immer wieder bekommen; Datenzentren, 
+                    <hi rend="color(333333) background(white)">die der Schnittstelle zwischen Kulturerbeeinrichtungen und Forschung fernbleiben bzw. von der Verwaltung der unterschiedlichen Rechte der von ihnen gehosteten Daten herausgefordert sind</hi>; Forschungseinrichtungen, denen Strukturen fehlen, um ihren Mitarbeitern und Mitarbeiterinnen good-practice-Empfehlungen an die Hand zu geben. Der Mangel an definitorischer Schärfe des betroffenen Informationsaustauschs steht im Gegensatz sowohl zu dem damit für alle Beteiligten zusammenhängenden Bedarf als auch zu dem offensichtlichen Vorteil, den ein solcher für das ganze Ökosystem repräsentiert. Nachhaltig kann ein solcher Austausch nur dann werden, wenn neben den Datenproduzenten (Forscher/innen, Kulturerbeeinrichtungen, Equipments) auch Datenzentren daran beteiligt sind, wie es hier vorgesehen ist. Einige Einrichtungen übernehmen zwar mehrere dieser Funktionen, aber die Kommunikation zwischen den entsprechenden Abteilungen ist auch dort nicht immer optimal. 
                 </p>
-                <p>Sehr auffällig ist das gute Ergebnis für die drei Core-Regeln und dabei besonders die hervorragende Precision von 96,2% für Familien-Relationen. Eine genauere Betrachtung der False Positives (FP) in Tabelle 3 zeigt, dass diese Relationen fast immer syntaktisch korrekt erkannt wurden, aber semantisch irrelevant und daher nicht im Goldstandard annotiert sind (z.B. "mein Gott"). Hier zeigt sich eine Schwachstelle dieser Arbeit: teilweise unpräzise Richtlinien für die Annotation von Relationen. Das ist jedoch ein sehr schwieriges Problem, das eventuell umgangen werden kann, wenn die Relationserkennung kein Ziel in sich, sondern eine untergeordnete Aufgabe im Zuge der Erkennung der Hauptfiguren und deren Beziehungen in Romanen ist.</p>
-                <p>Tabelle 3: Auswertung der drei Core-Regeln auf unserem Datensatz</p>
-                <table rend="rules">
-                    <row>
-                        <cell>Regel</cell>
-                        <cell>Beispiel</cell>
-                        <cell>TP</cell>
-                        <cell>FP</cell>
-                    </row>
-                    <row>
-                        <cell>&lt;Possessive&gt; … &lt;Entity&gt;</cell>
-                        <cell>seine liebe Mutter [his loved mother]</cell>
-                        <cell>83</cell>
-                        <cell>22</cell>
-                    </row>
-                    <row>
-                        <cell>&lt;Entity_Noun&gt;...&lt;GENITIV_Noun&gt;</cell>
-                        <cell>Frau des Kanzlers [wife of the chancellor]</cell>
-                        <cell>21</cell>
-                        <cell>7</cell>
-                    </row>
-                    <row>
-                        <cell>&lt;GENITIV_Noun&gt; &lt;Entity_NN&gt;</cell>
-                        <cell>Peters Frau [Peter’s wife]</cell>
-                        <cell>19</cell>
-                        <cell>5</cell>
-                    </row>
-                </table>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Fazit und zukünftige Arbeiten</head>
-                <p>Dieses Paper hat gezeigt, dass automatische Relationserkennung eine Herausforderung darstellt. Einfache Regeln können jedoch bereits einen wesentlichen Teil der Relationen mit hoher Precision erkennen. Dennoch ist der Bedarf an weiteren Verbesserungen durch fortschrittliche Methoden hier deutlich. Zudem ist die Evaluation der Relationserkennung an sich schwierig und kann besser im Kontext eines übergeordneten Ziels wie der automatischen Erstellung eines Netzwerks der Hauptfiguren eines Romans [Krug 2016] oder der Gattungsklassifikation [Hettinger et al. 2015] eingebracht werden.</p>
-            </div>
-        </body>
-        <back>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliography</head>
-                    <bibl>
-                        <hi rend="bold">Bach, Nguyen / Badaskar, Sameer</hi> (2007): 
-                        „A review of relation extraction“, 
-                        in: 
-                        <hi rend="italic">Literature review for Language and Statistics</hi> II.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Finn, Aidan / Kushmerick, Nicolas</hi> (2003): 
-                        „Active learning selection strategies for information extraction“, 
-                        in: 
-                        <hi rend="italic">Proceedings of the International Workshop on Adaptive Text Extraction and Mining (ATEM-03)</hi>.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Hettinger, Lena / Becker, Martin / Reger, Isabella / Jannidis, Fotis / Hotho, Andreas</hi> (2015): 
-                        „Genre classification on German novels“, 
-                        in: 
-                        <hi rend="italic">Proceedings of the 12th International Workshop on Text-based Information Retrieval</hi>.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Jannidis, Fotis / Krug, Markus / Reger, Isabella / Toepfer, Martin / Weimer, Lukas / Puppe, Frank</hi> (2015):
-                        „Automatische Erkennung von Figuren in deutschsprachigen Romanen“, 
-                        in: 
-                        <hi rend="italic">DHd 2015: Von Daten zu Erkenntnissen</hi>.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Jiang, Jing / Zhai, ChengXiang</hi> (2007): 
-                        „A Systematic Exploration of the Feature Space for Relation Extraction“, 
-                        in: 
-                        <hi rend="italic">Proceedings of Human Language Technologies: The Conference of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT 2007)</hi>.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Jung, Hanmin / Choi, Sung-Pil / Lee, Seungwoo / Song, Sa-Kwang</hi> (2012): 
-                        „Survey on Kernel-Based Relation Extraction“, 
-                        in: Sakurai, Shigeaki (ed.): 
-                        <hi rend="italic">Theory and Applications for Advanced Text Mining</hi>. InTech Open Science 10.5772/51005.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Kambhatla, Nanda</hi> (2004): 
-                        „Combining lexical, syntactic, and semantic features with maximum entropy models for extracting relations“,
-                        in: 
-                        <hi rend="italic">Proceedings of the ACL 2004 on Interactive poster and demonstration sessions</hi>.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Krug, Markus / Fotis, Jannidis / Reger, Isabella / Weimer, Lukas / Macharowsky, Luisa / Puppe, Frank</hi> (2016):
-                        „Attribuierung direkter Reden in deutschen Romanen des 18.-20. Jahrhunderts. Methoden zur Bestimmung des Sprechers und des Angesprochenen“, 
-                        in: 
-                        <hi rend="italic">DHd 2016: Modellierung - Vernetzung - Visualisierung</hi>. 
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Krug, Markus / Fotis, Jannidis / Reger, Isabella / Weimer, Lukas / Macharowsky, Luisa / Puppe, Frank</hi> (2016): 
-                        „Comparison of Methods for the Identification of Main Characters in German Novels“,
-                        in: 
-                        <hi rend="italic">DH2016: Converence Abstracts</hi>.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Massey, Philip / Xia, Patrick / Bamman, David / Smith, Noah A.</hi> (2015): 
-                        „Annotating Character Relationships in Literary Texts“,
-                        in: 
-                        <hi rend="italic">arXiv</hi>, 
-                        arXiv:1512.00728.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Zhao, Shubin / Grishman, Ralph</hi> (2005): 
-                        „Extracting relations with integrated information using kernel methods“, 
-                        in: 
-                        <hi rend="italic">Proceedings of ACL-2005</hi>.
-                    </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+<p>Nicht zuletzt für die Weiterentwicklung der Digital Humanities handelt es sich bei dem hier geschilderten Zusammenhang um ein zentrales Anliegen, bilden diese Daten ja die Grundlage für eine beachtliche Reihe geisteswissenschaflicher Forschungen etwa in den Bereichen der Archäologie, der Kunstgeschichte, der Musikwissenschaft, aber auch u.a. der Literaturgeschichte und der Editionswissenschaft. Selbst vom Standpunkt nicht-historischer Fächer ist es auf Dauer von Vorteil, wenn für digitale Daten aller Art hinsichtlich der Formate und Standards Rücksprache gehalten wird, wenn Equipments die bereits durchgeführten Scanarbeiten transparent machen, wenn auf einen Blick klar werden kann, zu welchen Kulturerbebeständen in welchen Datenzentren Arbeiten vorhanden sind. Die DARIAH Data Re-Use Charter hat zum Ziel, die Transaktionen zwischen all den Akteuren, die an der wissenschaftlichen Arbeit mit den digitalen Daten, die auf Kulturerbedaten basieren, Interesse haben, einfacher, transparenter und nachhaltiger zu machen, sodass alle daraus einen Nutzen für ihre eigene Arbeit ziehen können.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Grundprinzipien</head>
+<p>Die DARIAH Data Re-Use Charter ist eine Interaktionsplattform für alle an der wissenschaftlichen Nutzung digitaler Daten von Kulturerbeeinrichtungen interessierten Akteure. Die Charter stellt diesen Textbausteine zur Verfügung, damit sie die Bedingungen ihrer Zusammenarbeit gemeinsam definieren können. Auf diesem Weg kann eine Kulturerbeinstitution die Nutzungsbedingungen ihres Gesamtbestands, aber auch von Sondersammlungen unterschiedlich beschreiben. Eine Universität kann ihre Befürwortung der Open Access-Prinzipien deklarieren und ihren Mitarbeiter/innen empfehlen, ihre Kooperationen mit Kulturerbeeinrichtungen in diesem Sinne zu konzipieren. Wie in diesen zwei Beispielen liefert die Charter ausformulierte Bausteine für die Zusammensetzung einer Kooperationsvereinbarung, an der ebenfalls Infrastruktureinrichtungen beteiligt sind, die mit der nachhaltigen Sicherung der Primär- bzw. Sekundärdaten betraut sind. Auf diese Art und Weise werden Empfehlungen in folgenden Bereichen formuliert (wobei mehrere Formulierungen pro Bereich zur Verfügung stehen sowie jeweils ein freies Textfeld):</p>
+<p>Zugang zu Metadaten, Texten, Bildern (beispielsweise im Fall einer zu edierenden Handschrift: Archivmetadaten, Transkription und Annotation, Scan, die dann auch explizit miteinander verlinkt werden)</p>
+<list type="unordered">
+<item>Lizenzierung der Inhalte (mit Verweis auf weiterführende, informierende Dokumentation)</item>
+<item>Formate und Standards (ebenso)</item>
+<item>Anreicherungen; Verknüpfung der wissenschaftlichen Anreicherungen der Kulturerbedaten mit den Metadaten</item>
+<item>Streuung sowohl der Kulturerbedaten als auch der Anreicherungen</item>
+<item>Qualitätssicherung bei allen beteiligten Akteuren </item>
+</list>
+<p>Darüber hinaus nennt jede Einrichtung den/die einschlägige(n) Ansprechspartner/in, damit eine Kommunikation erleichtert wird. </p>
+<p>Neben den technischen Aspekten, bei denen mit Sicherheit Aufklärungsbedarf besteht, geht es auch, wenn nicht vorrangig, darum, eine digitale Kooperationsethik zu fördern, die wie im CERN Code of Conduct auf dem Respekt vor dem Werk anderer, der guten Zusammenarbeit, der Förderung von Kooperation und der Offenheit gegenüber der Öffentlichkeit beruht. 
+                    <anchor xml:id="liw1usme97hj"/>
+</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Umsetzung</head>
+<p>Die Charter wird die Form eines Webinterfaces annehmen, auf dem sich die Akteure in ihrer jeweiligen Funktion (Forscher/in, Kulturerbeinstitution, Datenzentrum, Equipment, Forschungseinrichtung) registrieren lassen können und von dort ausgehend unter den ihnen zur Verfügung stehenden Optionen diejenigen aussuchen können, zu denen sie sich bekennen möchten. Im Vortrag wird nach einer Einführung zum Grundgedanken der Charter spezieller auf den Teil des Interfaces eingegangen, das dem Forscher/der Forscherin gewidmet ist.</p>
+<p>Als registrierter Forscher/registrierte Forscherin soll man sich in drei Bereichen positionieren, die jeweils entweder im öffentlichen Profil oder im privaten Bereich (nur für die eigens ausgewählten Kooperationspartner - Kulturerbeinstitution, Datenzentrum, Equipment - zugänglich) erscheinen. </p>
+<p>Der erste Bereich betrifft den Zugang zu den Daten. Dort verpflichtet sich der Forscher dazu, den Anforderungen der Kulturerbeinstitutionen zu folgen, was die Verwendung (insbes. Zitierweise) der digitalen Kulturerbedaten angeht. Hier kann der Forscher ebenfalls die Bestände anklicken, für die er sich interessiert und diese Information auch publik machen oder nur den betroffenen Institutionen zugänglich machen. </p>
+<p>Der zweite Bereich betrifft die Streuung der vom Forscher auf der Grundlage der Kultuererbedaten produzierten Sekundärdaten oder angereicherten Metadaten. An dieser Stelle kann der Forscher die Lizenzen nennen, die er bevorzugt (weiterführende Dokumentation zu diesem Thema wird anklickbar gemacht). Eine Identifikation mittels einer 
+                    <ref target="http://orcid.org/">
+<hi rend="underline color(1155CC)">ORCID-Nummer</hi>
+</ref>, die Referenzierung einer 
+                    <ref target="https://hal.archives-ouvertes.fr/page/mon-idhal">
+<hi rend="underline color(1155CC)">Id-HAL</hi>
+</ref> oder Vergleichbares können ebenfalls an dieser Stelle angegeben werden. 
+                </p>
+<p>Im dritten Bereich geht es um den Umgang mit den anderen Charter-Partnern: Best-Practices wie die systematische Nennung der Kooperationspartner oder die explizite Nennung der Art und Weise, wie man selbst zitiert werden möchte, werden dort deklariert. </p>
+<p>Diese drei Bereiche, die die Nutzung von Primärdaten, die Produktion- und Streuung von Sekundärdaten und die allgemeine Kooperationsethik bedingen und definieren, machen die Grundlage des Forscherprofils aus. Von dort ausgehend kann er dann die Einrichtungen, Bestände und Dienstleistungen recherchieren, mit denen er zusammenarbeiten möchte.</p>
+<p>Die Charter hat somit eine doppelte Dimension: die einer Information- und Selbstpositionierungsplattform und die eines sozialen Netzwerkes, wobei auf die Balance zwischen Transparenz und Respekt der Privatsphäre stets geachtet wird
+                    <anchor xml:id="gtah1mkwr314"/>;
+                </p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Perspektiven</head>
+<p>Die DARIAH Data Re-Use Charter wird zwischen Herbst 2016 und Frühjahr 2017 soweit entwickelt sein, dass ein Soft Launch im Frühjahr 2017 stattfinden kann. Das Kernteam arbeitet sowohl an der Entwicklung der Webseite als auch an der Einholung von Feedback interessierter Akteure, um dieses in der Entwicklung des Interfaces im Allgemeinen und der relevanten Bausteine im Besonderen zu integrieren. Sie wurde bereits in ihren Ansätzen auf Konferenzen dargestellt und wird im Herbst in ähnlichen Kontexten vorgestellt, damit weiteres Feedback eingeholt werden kann. Darüber hinaus findet im November 2016 in Berlin eine dedizierte Arbeitssitzung statt sowie eine Woche später eine entsprechende in Paris und im Januar eine in Rom - womöglich können über den Winter ebenfalls in anderen EU-Ländern entsprechende Sitzungen stattfinden. Bis zur DHd wird das Interface als das Ergebnis dieser breitgefächerten Konsultation demonstrierbar sein und kurz vor dem Launch stehen. Das bereits signalisierte Interesse zahlreicher Einrichtungen und Forscher/innen lässt vermuten, dass die Vernetzungsfunktion der Plattform rasch Konturen gewinnen wird.</p>
+<p>Ausgerechnet dieser Aspekt gilt es mit Blick auf Nachhaltigkeit zu unterstreichen: Wenn Equipments systematischer zitiert werden, wenn Datenzentren expliziter an der Schnittstelle zwischen Kulturerbeinstitutionen und Forschung arbeiten können, wenn Forscher/innen ohne akademische Anbindung - und es gibt immer mehr prekäre Wissenschaftler/innen, die nichtsdestotrotz forschend tätig sind - einen Kooperationsraum finden können, dann ist für das gesamte Forschungsökosystem viel gewonnen und ein entscheidender Beitrag zur Nachhaltigkeit von digitalen Primär- und Sekundärkulturerbedaten geleistet. </p>
+</div>
+</body>
+</text>
 </TEI>

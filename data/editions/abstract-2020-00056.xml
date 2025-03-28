@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="176_final-HODEL_Tobias_Maschinelles_Lernen_in_den_Geisteswissenschafte" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="214_final-SCHROTT_Maximilian_Die_Digitale_Edition_der_Protokolle_des_B" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title type="full">
-<title type="main">Maschinelles Lernen in den Geisteswissenschaften.</title>
-<title type="sub">Systemische und epistemologische Konsequenzen einer neuen Technologie</title>
-</title>
+<title>Die Digitale Edition der Protokolle des Bayerischen Ministerrats – ein Erfahrungsbericht</title>
+<author>
+<persName>
+<surname>Schrott</surname>
+<forename>Maximilian</forename>
+</persName>
+<affiliation>Historische Kommission bei der Bayerischen Akademie der Wissenschaften, Deutschland</affiliation>
+<email>maximilian.schrott@ndb.badw-muenchen.de</email>
+</author>
+<author>
+<persName>
+<surname>Reinert</surname>
+<forename>Matthias</forename>
+</persName>
+<affiliation>Historische Kommission bei der Bayerischen Akademie der Wissenschaften, Deutschland</affiliation>
+<email>Matthias.Reinert@ndb.badw-muenchen.de</email>
+</author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2015-10-04T22:02:00Z</date>
+<date>2019-12-09T11:27:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -38,106 +51,128 @@
 <term>Paper</term>
 </keywords>
 <keywords n="subcategory" scheme="ConfTool">
-<term>Panel</term>
+<term>Vortrag</term>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Maschinelles Lernen</term>
-<term>Methodendiskussion</term>
-<term>Epistemologie</term>
+<term>Historische Edition</term>
+<term>Digitale Edition</term>
+<term>XML</term>
+<term>TEI</term>
+<term>Oxygen XML Editor</term>
+<term>Bayern</term>
+<term>Zeitgeschichte</term>
+<term>Protokolle</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Programmierung</term>
+<term>Modellierung</term>
+<term>Bearbeitung</term>
+<term>Veröffentlichung</term>
+<term>Text</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-  <p style="text-align:left; ">Seit einigen Jahren machen maschinelles Lernen und Überlegungen zu den Konsequenzen der dadurch entstehenden Artificial Intelligence Schlagzeilen. Von Spracherkennung über selbstfahrende Autos bis hin zu komplexen Spielen, maschinelles Lernen macht Computer in einzelnen Handlungsfeldern leistungsfähiger als Menschen. </p>
-  <p style="text-align:left; ">In der Theorie werden drei Formen (<hi rend="italic">supervised</hi>, <hi rend="italic">unsupervised</hi> und <hi rend="italic">reinforcing</hi>) des maschinellen Lernens unterschieden. Während die erste Form (<hi rend="italic">supervised</hi>) auf Training basiert, also dem Versuch vorgegebene Resultate zu imitieren, ist das Ziel des zweiten (<hi rend="italic">unsupervised</hi>) in einer Gesamtmasse Muster zu erkennen und zu <hi rend="italic">clustern</hi>. Die dritte Form schliesslich (<hi rend="italic">reinforcing</hi>) ist eine Mischung der beiden ersten Ansätze, der Lösungswege aufgrund von positiven oder negativen Rückmeldungen in eine gewünschte Richtung lenkt. Unabhängig von der Form des maschinellen Lernens stellen die Algorithmen im Handumdrehen komplexe Programme in den Schatten, die Spezialisten über Jahrzehnte hinweg entwickelt haben. 
-  </p>
-  <p style="text-align:left; ">Ein Ansatz, das sogenannte 
-  <hi rend="italic">deep learning</hi> basiert auf neuronalen Netzen, die dem menschlichen Gehirn nachempfunden sind. Sogenannte Neuronen (eigentlich Speicherbereiche) werden über mehrere Schichten vernetzt, mit Eingangs- sowie den gewünschten Ausgangsdaten konfrontiert und auf dieser Grundlage trainiert. Der Algorithmus „lernt“ oder „imitiert“ erwartetes Verhalten 
-  <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"DRXtmHRG","properties":{"formattedCitation":"(Leifert et al., 2016)","plainCitation":"(Leifert et al., 2016)","noteIndex":0},"citationItems":[{"id":5850,"uris":["http://zotero.org/users/534029/items/P7XGTGUS"],"uri":["http://zotero.org/users/534029/items/P7XGTGUS"],"itemData":{"id":5850,"type":"article-journal","title":"Cells in Multidimensional Recurrent Neural Networks","container-title":"Journal of Machine Learning Research","page":"1-37","volume":"17","issue":"97","source":"jmlr.org","author":[{"family":"Leifert","given":"Gundram"},{"family":"Strauβ","given":"Tobias"},{"family":"Grüning","given":"Tobias"},{"family":"Wustlich","given":"Welf"},{"family":"Labahn","given":"Roger"}],"issued":{"date-parts":[["2016"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Leifert et al., 2016). 
-  </p>
-  <p style="text-align:left; ">Ebenso werden andere unüberwachte und überwachte Verfahren des maschinellen Lernens eingesetzt, um Strukturen in großen Datenmengen zu finden und die Zusammenhänge zwischen den Daten und ihnen zugeordneten Kategorien zu erkennen (z.B. Verfahren zur Dimensionalitätsreduktion, Clustering, Klassifikation, 
-  <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"a9ZQ9O7H","properties":{"formattedCitation":"(Alpaydin, 2014)","plainCitation":"(Alpaydin, 2014)","noteIndex":0},"citationItems":[{"id":17677,"uris":["http://zotero.org/users/534029/items/PXEICFJU"],"uri":["http://zotero.org/users/534029/items/PXEICFJU"],"itemData":{"id":17677,"type":"book","title":"Introduction to Machine Learning (3rd Edition)","publisher":"The MIT Press","source":"www.recherche-portal.ch","URL":"https://sfx.ethz.ch/sfx_locater?url_ver=Z39.88-2004&ctx_ver=Z39.88-2004&ctx_enc=info:ofi/enc:UTF-8&rfr_id=info:sid/sfxit.com:opac_856&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&sfx.ignore_date_threshold=1&rft.object_id=3710000000226686&svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&","ISBN":"978-0-262-02818-9","language":"eng","author":[{"family":"Alpaydin","given":"Ethem"}],"issued":{"date-parts":[["2014"]]},"accessed":{"date-parts":[["2019",9,25]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>siehe einführend Alpaydin, 2014). 
-  </p>
-  <p style="text-align:left; ">Die Technologien, die auf die 1980er Jahre zurückgehen, wurden lange nur testweise eingesetzt, weil die Leistungsfähigkeit der Computersysteme nicht ausreichend war 
-  <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"nMkMxKYE","properties":{"formattedCitation":"(Fausett, 1993)","plainCitation":"(Fausett, 1993)","noteIndex":0},"citationItems":[{"id":13525,"uris":["http://zotero.org/groups/277635/items/G92I2ITF"],"uri":["http://zotero.org/groups/277635/items/G92I2ITF"],"itemData":{"id":13525,"type":"book","title":"Fundamentals of Neural Networks: Architectures, Algorithms And Applications","publisher":"Pearson","publisher-place":"Englewood Cliffs, N.J.","number-of-pages":"461","edition":"1 edition","source":"Amazon","event-place":"Englewood Cliffs, N.J.","abstract":"Providing detailed examples of simple applications, this new book introduces the use of neural networks. It covers simple neural nets for pattern classification; pattern association; neural networks based on competition; adaptive-resonance theory; and more. For professionals working with neural networks.","ISBN":"978-0-13-334186-7","title-short":"Fundamentals of Neural Networks","language":"English","author":[{"family":"Fausett","given":"Laurene V."}],"issued":{"date-parts":[["1993",12,19]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Fausett, 1993). Inzwischen lernen Maschinen mit den Methoden erfolgreich auf Gebieten, die schwer formalisierbar sind. Kommerzielle Anbieter wie Google, Amazon, Apple und Facebook implementieren 
-  <hi rend="italic">machine learning</hi> heute schon in fast all ihren Produkten. Mit jeder Suchanfrage bei Google nutzen Menschen diese Technologie, ohne sich dessen bewusst zu sein, mit teils problematischen Folgen 
-  <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"xBrSFtKO","properties":{"formattedCitation":"(Noble, 2018)","plainCitation":"(Noble, 2018)","noteIndex":0},"citationItems":[{"id":5885,"uris":["http://zotero.org/users/534029/items/NTJE8K5L"],"uri":["http://zotero.org/users/534029/items/NTJE8K5L"],"itemData":{"id":5885,"type":"book","title":"Algorithms of Oppression: How Search Engines Reinforce Racism","publisher":"New York University Press","publisher-place":"New York","number-of-pages":"256","source":"Amazon","event-place":"New York","abstract":"A revealing look at how negative biases against women of color are embedded in search engine results and algorithms  Run a Google search for “black girls”—what will you find? “Big Booty” and other sexually explicit terms are likely to come up as top search terms. But, if you type in “white girls,” the results are radically different. The suggested porn sites and un-moderated discussions about “why black women are so sassy” or “why black women are so angry” presents a disturbing portrait of black womanhood in modern society. In Algorithms of Oppression, Safiya Umoja Noble challenges the idea that search engines like Google offer an equal playing field for all forms of ideas, identities, and activities. Data discrimination is a real social problem; Noble argues that the combination of private interests in promoting certain sites, along with the monopoly status of a relatively small number of Internet search engines, leads to a biased set of search algorithms that privilege whiteness and discriminate against people of color, specifically women of color.  Through an analysis of textual and media searches as well as extensive research on paid online advertising, Noble exposes a culture of racism and sexism in the way discoverability is created online. As search engines and their related companies grow in importance—operating as a source for email, a major vehicle for primary and secondary school learning, and beyond—understanding and reversing these disquieting trends and discriminatory practices is of utmost importance.  An original, surprising and, at times, disturbing account of bias on the internet, Algorithms of Oppression contributes to our understanding of how racism is created, maintained, and disseminated in the 21st century.","ISBN":"978-1-4798-3724-3","title-short":"Algorithms of Oppression","language":"Englisch","author":[{"family":"Noble","given":"Safiya Umoja"}],"issued":{"date-parts":[["2018",2,20]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Noble, 2018).
+<p>Im Sommer 2019 konnte die Historische Kommission bei der Bayerischen Akademie der Wissenschaften ihr 2014 begonnenes Pilotprojekt für ein neues Konzept historisch-kritischer Editionsarbeit zu einem erfolgreichen Abschluss bringen. Mit dem neunten Band der Reihe „Protokolle des Bayerischen Ministerrats 1945–1962“<ref n="1" target="ftn1"/>, bearbeitet von Dr. Oliver Braun (München), entstand die erste Edition der Historischen Kommission auf XML-Basis. Das neue Konzept ermöglicht es, ohne großen Zusatzaufwand, einen vollwertigen gedruckten Band und eine digitale Version mit zahlreichen Such- und Verlinkungsfeatures herzustellen. Vor allem aber ist es darauf ausgelegt, dass die Bearbeiter und Bearbeiterinnen ihren Editionstext in vollwertigem TEI-XML<ref n="2" target="ftn2"/> herstellen können, ohne technische Vorkenntnisse zu benötigen. Dank einer speziell eingerichteten Arbeitsumgebung im Programm                <hi rend="italic">Oxygen XML Editor</hi><ref n="3" target="ftn3"/> können sie ihre bisher gewohnte Arbeitsweise weitgehend beibehalten. Unser Vortrag möchte dieses neue Editionskonzept und die Arbeitsumgebung vorstellen sowie von den Erfahrungen berichten, die wir bei der Herstellung des Bands 9 der Bayerischen Ministerratsprotokolle gemacht haben.
+            </p>
+<p>Die Edition „Protokolle des Bayerischen Ministerrats 1945–1962“<ref n="4" target="ftn4"/>, die seit Anfang der 1990er Jahre
+                <hi rend="bold">,</hi> dank Förderung durch den Freistaat Bayern, bei der Historischen Kommission entsteht, ist eines der wichtigsten Forschungsprojekte zur bayerischen Zeitgeschichte. In bisher acht Bänden, die die Jahre 1945 bis 1951 abdecken, dokumentieren die ausführlichen Gesprächsprotokolle der Ministerratssitzungen das Handeln der Bayerischen Staatsregierung. Sie geben Einblick in die Fragen und Herausforderungen der Nachkriegszeit in Bayern, erst unter amerikanischer Kontrolle, dann in der noch jungen Bundesrepublik. Deutlich lassen sich aus Ihnen die Kontroversen und die teilweise heftig geführten Diskussionen zwischen den Kabinettsmitgliedern herauslesen. Nicht selten gleichen dabei die vor 70 Jahren geführten Debatten zu Themen wie Flüchtlingen, Verkehrspolitik und Bildungswesen verblüffend den aktuellen politischen Auseinandersetzungen in Bayern und Deutschland. Die ersten acht Bände der Edition (bis 1952) stehen im Volltext retrodigitalisiert auch online zur Verfügung.<ref n="5" target="ftn5"/>
 </p>
-<div rend="DH-Heading1" type="div1">
-  <head>Unterschiedliche Perspektiven auf maschinelles Lernen</head>
-  <p style="text-align:left; ">Das Panel hat zum Ziel, die Entwicklung und Anwendung des maschinellen Lernens mit einer Reflexion zu verbinden, die die Konsequenzen des Einsatzes aufzeigt. Dabei soll weder der häufig mit euphorischen Erwartungen verbundene Nutzen, noch unberechtigte Fundamentalabwehr befeuert werden. Vielmehr ist die differenzierte Beurteilung aus unterschiedlichen Blickwinkeln das Ziel. </p>
-  <p style="text-align:left; ">Im Panel zentral gesetzt werden epistemologische Fragen, die gerade aufgrund der imitierenden Natur des maschinellen Lernens entscheidend sind für die Aufbereitung von Trainingsmaterial oder die Implementierung in Entscheidungsprozesse. Gleichzeitig ähneln die Prozesse, die die Algorithmen übernehmen Vorgehensweisen geisteswissenschaftlicher Verstehensprozesse, die unter dem Begriff der „Hermeneutik“ versammelt werden. Maschinelles Lernen hat entsprechend das Potential, als Methode unsere Zugänge und den Blick auf unser Material fundamental zu erweitern.</p>
-  <p style="text-align:left; ">Im Rahmen des Panels werden vier Protagonist*innen ihre Perspektive auf die Konsequenzen der Nutzung des maschinellen Lernens werfen:</p>
-  <div rend="DH-Heading2" type="div2">
-    <head>DH Segment: Generischer Ansatz für historische Dokumente</head>
-    <p>
-      <hi rend="italic">Sofia Ares Oliveira (Lausanne)</hi>
-    </p>
-    <p style="text-align:left; ">Der Einsatz des maschinellen Lernens erfordert insbesondere bei der Erstellung neuer Algorithmen Fertigkeiten aus den Computerwissenschaften. Genau dieser Aufgabe stellt sich Sofia Ares Oliveira täglich, wenn sie als Ingenieurin selbständig neuronale Netze für dhlab der Eidgenössisch Technischen Hochschule in Lausanne (EPFL) erstellt. Im Rahmen des Panels wird sie verantwortlich sein für eine kurze Einführung in maschinelles Lernen.</p>
-    <p style="text-align:left; ">Aufgrund jahrelanger Beschäftigung mit der visuellen Analyse digitalisierter Dokumente, ist Ares Oliveira Spezialistin für den Aufbau und die Umsetzung neuronaler Netze zur semantischen Aufbereitung von Dokumenten (Segmentierung und Annotation). „DH segment“ 
-    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"X54cbP36","properties":{"formattedCitation":"(Ares Oliveira et al., 2018)","plainCitation":"(Ares Oliveira et al., 2018)","noteIndex":0},"citationItems":[{"id":17596,"uris":["http://zotero.org/users/534029/items/BMXF8I4V"],"uri":["http://zotero.org/users/534029/items/BMXF8I4V"],"itemData":{"id":17596,"type":"chapter","title":"dhSegment: A generic deep-learning approach for document segmentation","container-title":"Frontiers in Handwriting Recognition (ICFHR), 2018, 16th International Conference","page":"7-12","author":[{"family":"Ares Oliveira","given":"Sofia"},{"family":"Seguin","given":"Benoît"},{"family":"Kaplan","given":"Frédéric"}],"issued":{"date-parts":[["2018"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Ares Oliveira et al., 2018) eine Applikation, die für die Analyse und Identifikation von Dokumententeilen genutzt werden kann, beruht auf einem eigens erstellten, trainierbaren neuronalen Netz und dient als Ausgangspunkt zu Überlegungen zum Aufbau von 
-    <hi rend="italic">machine learning</hi> Algorithmen.
-    </p>
-    <p style="text-align:left; ">Die zwei Teilbeiträge von Sofia Ares Oliveira werden auf Englisch vorgetragen.</p>
-  </div>
-  <div rend="DH-Heading2" type="div2">
-    <head>Machine Learning-Algorithmen für die Digitalen Literaturwissenschaften</head>
-    <p>
-      <hi rend="italic">Christof Schöch (Trier)</hi>
-    </p>
-    <p style="text-align:left; ">Anhand von Beispielen aus der jüngeren Forschung in den Computational Literary Studies (u.a. Underwood 2019 und So 2019) möchte der Beitrag aufzeigen, dass Verfahren des überwachten 
-    <hi rend="italic">machine learning</hi> auch gewinnbringend für Fragestellungen aus den Geisteswissenschaften eingesetzt werden können, die sich nicht auf die eindeutige Zuordnung von Items zu Klassen reduzieren lassen. Als hierfür nützlich erweisen sich Zugänge zu den beim 
-    <hi rend="italic">machine learning</hi> entstehenden Daten, die es beispielsweise erlauben, Grade der Unsicherheit zu modellieren, die Interpretierbarkeit von Algorithmen zu erhöhen oder statt der Kategorisierung das Verständnis des untersuchten Gegenstandsbereichs in den Vordergrund zu rücken. Das impliziert, dass nicht die Fragestellungen an die vorhandenen Verfahren des Machine Learning angepasst werden müssen, sondern umgekehrt, die Verfahren so eingesetzt oder modifiziert werden können, dass sie sich bestmöglich für den Erkenntnisgewinn in den Geisteswissenschaften eignen.
-    </p>
-  </div>
-  <div rend="DH-Heading2" type="div2">
-    <head>Gattungsstilistik und maschinelles Lernen</head>
-    <p>
-      <hi rend="italic">Ulrike Henny-Krahmer (Würzburg)</hi>
-    </p>
-    <p style="text-align:left; ">In dem Beitrag werden verschiedene Möglichkeiten vorgestellt, maschinelle Lernverfahren für die Erforschung historischer Gattungen anhand des Textstils einzusetzen, insbesondere Clustering, Klassifikation und Topic Modeling 
-    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"yFatUDBr","properties":{"formattedCitation":"(Henny-Krahmer, 2018, p.; Sch\\uc0\\u246{}ch et al., 2016)","plainCitation":"(Henny-Krahmer, 2018, p.; Schöch et al., 2016)","noteIndex":0},"citationItems":[{"id":17678,"uris":["http://zotero.org/users/534029/items/XCP5J86W"],"uri":["http://zotero.org/users/534029/items/XCP5J86W"],"itemData":{"id":17678,"type":"paper-conference","title":"Exploration of Sentiments and Genre in Spanish American Novels – DH2018","container-title":"Digital Humanities 2018. Puentes-Bridges","publisher-place":"Mexico City","page":"399-403","event-place":"Mexico City","URL":"https://dh2018.adho.org/en/exploration-of-sentiments-and-genre-in-spanish-american-novels/","language":"en-US","author":[{"family":"Henny-Krahmer","given":"Ulrike"}],"issued":{"date-parts":[["2018"]]},"accessed":{"date-parts":[["2019",9,25]]}},"locator":"-"},{"id":17680,"uris":["http://zotero.org/users/534029/items/764GHF4Y"],"uri":["http://zotero.org/users/534029/items/764GHF4Y"],"itemData":{"id":17680,"type":"paper-conference","title":"Topic, Genre, Text. Topics im Textverlauf von Untergattungen des spanischen und hispanoamerikanischen Romans (1880-1930)","container-title":"Konferenzabstracts DHd 2016","publisher-place":"Leipzig","page":"235-239","event-place":"Leipzig","author":[{"family":"Schöch","given":"Christof"},{"family":"Henny-Krahmer","given":"Ulrike"},{"family":"Calvo","given":"José"},{"family":"Schlör","given":"Daniel"},{"family":"Popp","given":"Stefanie"}],"issued":{"date-parts":[["2016"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Henny-Krahmer, 2018; Schöch et al., 2016). Dabei wird diskutiert, welche neuen Möglichkeiten sich durch die Verfahren für die Gattungsforschung ergeben (u.a. automatische Gattungsbestimmung, Untersuchung umfangreicher Textkorpora, umfassende und systematische Untersuchung von Textmerkmalen), aber auch, welche Konzepte von Gattung und Textstil durch maschinelle Lernverfahren in den Vordergrund rücken, wodurch der Anschluss an neuere gattungstheoretische Diskussionen (z.B. Gattungen als literarisch-soziale Institutionen, Familienähnlichkeitsbeziehungen in Gattungen, siehe dazu 
-    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"Y6OSXaeo","properties":{"formattedCitation":"(Hempfer, 2010; Vo\\uc0\\u223{}kamp, 1977)","plainCitation":"(Hempfer, 2010; Voßkamp, 1977)","noteIndex":0},"citationItems":[{"id":17681,"uris":["http://zotero.org/users/534029/items/6FUQH5JC"],"uri":["http://zotero.org/users/534029/items/6FUQH5JC"],"itemData":{"id":17681,"type":"article-journal","title":"Zum begrifflichen Status der Gattungsbegriffe: Von ,Klassen' zu ,Familienähnlichkeiten' und ,Prototypen'","container-title":"Zeitschrift für französische Sprache und Literatur","page":"14-32","volume":"120","issue":"1","source":"JSTOR","archive":"JSTOR","abstract":"La présente étude cherche à déconstruire deux présupposés de la traditionnelle théorie des genres : 1° que les genres sont des classes au sens logique du terme et 2° que les genres ne peuvent être déterminés qu'historiquement. Pour arriver à une nouvelle conception de la notion de <genre>, nous proposons de recourir à la notion de «ressemblance de famille» („Familienähnlichkeit\") développée par Wittgenstein et à la notion de <prototype> développée dans le cadre de la psychologie cognitive. Ces deux notions permettent, d'une part, de relier la théorie des genres à la conception actuelle des catégories linguistiques et, de l'autre, de différencier la description des invariants transhistoriques (les modes) de celles des genres en tant qu'ensembles historiques de textes concrets. En conclusion nous chercherons à esquisser, dans le nouveau cadre conceptuel, la tradition particulièrement compliquée de l'élégie.","ISSN":"0044-2747","title-short":"ZUM BEGRIFFLICHEN STATUS DER GATTUNGSBEGRIFFE","author":[{"family":"Hempfer","given":"Klaus W."}],"issued":{"date-parts":[["2010"]]}}},{"id":17683,"uris":["http://zotero.org/users/534029/items/AL839M77"],"uri":["http://zotero.org/users/534029/items/AL839M77"],"itemData":{"id":17683,"type":"chapter","title":"Gattungen als literarisch-soziale Institutionen","container-title":"Textsortenlehre, Gattungsgeschichte","collection-title":"Medium Literatur","publisher":"Quelle und Meyer","publisher-place":"Heidelberg","page":"27-42","volume":"4","source":"www.recherche-portal.ch","event-place":"Heidelberg","ISBN":"978-3-494-00892-9","language":"ger","editor":[{"family":"Hinck","given":"Walter"}],"author":[{"family":"Voßkamp","given":"Wilhelm"}],"issued":{"date-parts":[["1977"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>Hempfer, 2010; Voßkamp, 1977) nicht immer gegeben ist. Am Beispiel der Gattungsstilistik soll so aufgezeigt werden, wie maschinelles Lernen die Möglichkeiten empirischer Untersuchungen in den Geisteswissenschaften erweitern kann, aber auch wie sich der Erkenntnisgewinn auf bestimmte sprachlich-formale textuelle Aspekte konzentriert.
-  </p>
-</div>
-<div rend="DH-Heading2" type="div2">
-  <head>Ground-Truth und Fragen der geisteswissenschaftlichen Datenaufbereitung</head>
-  <p>
-    <hi rend="italic">Tobias Hodel (Bern)</hi>
-  </p>
-  <p style="text-align:left; ">Im Rahmen von Projekt READ wurde mit der Einführung von maschinellen Lernverfahren die Erkennung von Handschriften und alten Drucken markant verbessert. Da die neuronalen Netze auf Trainingsmaterial basieren (also 
-  <hi rend="italic">supervised</hi> sind), müssen Fragen nach der Aufbereitung gestellt und eine Verständigung epistemologischer Grundannahmen, insbesondere nach dem Konzept der „Ground-Truth“ untersucht werden. Solche Diskussionen bilden einerseits eine Aussensicht auf die verwendeten Algorithmen, andererseits lassen sich Vorstellungen aus den Disziplinen (Germanistik, Geschichte, Editionswissenschaften) kritisch in den Blick nehmen. 
-  </p>
-  <p style="text-align:left; ">Die Panelisten werden kurz und thesenhaft ihre Perspektive auf die Technologie darlegen, dabei sollen sie u.a. zu drei Komplexen Stellung nehmen: </p>
-</div>
-<div rend="DH-Heading2" type="div2">
-  <head>Chancen und Grenzen der Technologie</head>
-  <p style="text-align:left; ">Wo wird der Einsatz der Technologie in den Geisteswissenschaften neue Erkenntnisse bringen, welche Dokumente/Materialien/Daten eignen sich nicht für die Behandlung mit 
-  <hi rend="italic">machine learning</hi> Algorithmen? Inwiefern ähnelt oder unterscheidet sich der Einsatz der Technologie von hermeneutischen Prozessen?
-  </p>
-</div>
-<div rend="DH-Heading2" type="div2">
-  <head>Epistemologische Konsequenzen (für die DH/geisteswissenschaftliche Disziplinen)</head>
-  <p style="text-align:left; ">Fragen nach Erkenntnismöglichkeiten werden in diversen geisteswissenschaftlichen Disziplinen seit Jahrzehnten diskutiert. Die Nutzung von Algorithmen des maschinellen Lernens erfordern jedoch klare Aussagen zur untersuchten Materie, unabhängig davon, ob es sich um 
-  <hi rend="italic">supervised</hi> oder 
-  <hi rend="italic">unsupervised</hi> Zugäng handelt (was ist Text, was soll identifiziert werden, welche Einheiten sind sinntragend etc.). Der Einsatz des maschinellen Lernens zwingt entsprechend zur Offenlegung von Konzepten und Vorstellungen.
-  </p>
-</div>
-<div rend="DH-Heading2" type="div2">
-  <head>Regeln zur Nutzung von <hi rend="italic">machine learning</hi> Algorithmen</head>
-<p style="text-align:left; ">Neben der Angst vor dem Kontrollverlust und etwaigem Rückgang von Arbeitsplätzen oder der Überwachung von Menschenmassen, sind es nicht zuletzt Skandale zur Verletzung der Privatsphäre, die in den vergangenen Monaten zum Ruf nach der Regelung des Einsatzes der Technologie führten 
-                        <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"8PYBkfiR","properties":{"formattedCitation":"(Lobo, 2019)","plainCitation":"(Lobo, 2019)","noteIndex":0},"citationItems":[{"id":17684,"uris":["http://zotero.org/users/534029/items/6DDHP4QG"],"uri":["http://zotero.org/users/534029/items/6DDHP4QG"],"itemData":{"id":17684,"type":"book","title":"Realitätsschock: Zehn Lehren aus der Gegenwart","publisher":"Kiepenheuer & Witsch","publisher-place":"Köln","source":"www.recherche-portal.ch","event-place":"Köln","ISBN":"978-3-462-05322-7","title-short":"Realitätsschock","language":"ger","author":[{"family":"Lobo","given":"Sascha"}],"issued":{"date-parts":[["2019"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Lobo, 2019). Neuste Forschungen zeigen, dass die Vorstellungen einer ethischen AI stark divergieren 
-                        <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"N6V6KR9Q","properties":{"formattedCitation":"(Jobin et al., 2019)","plainCitation":"(Jobin et al., 2019)","noteIndex":0},"citationItems":[{"id":16360,"uris":["http://zotero.org/users/534029/items/CB7VXTDZ"],"uri":["http://zotero.org/users/534029/items/CB7VXTDZ"],"itemData":{"id":16360,"type":"article-journal","title":"The global landscape of AI ethics guidelines","container-title":"Nature Machine Intelligence","page":"1-11","source":"www.nature.com","abstract":"As AI technology develops rapidly, it is widely recognized that ethical guidelines are required for safe and fair implementation in society. But is it possible to agree on what is ‘ethical AI’? A detailed analysis of 84 AI ethics reports around the world, from national and international organizations, companies and institutes, explores this question, finding a convergence around core principles but substantial divergence on practical implementation.","DOI":"10.1038/s42256-019-0088-2","ISSN":"2522-5839","journalAbbreviation":"Nat Mach Intell","language":"en","author":[{"family":"Jobin","given":"Anna"},{"family":"Ienca","given":"Marcello"},{"family":"Vayena","given":"Effy"}],"issued":{"date-parts":[["2019",9,2]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Jobin et al., 2019). Ethische Regelungen sind in den Geisteswissenschaften unüblich, gerade deshalb sind die Diskussionen im Umfeld der Technologie fruchtbar. Inwiefern besteht ein Zusammenhang zwischen geforderter Diversifizierung der DH mit der Anwendung der Technologie?
-                    </p>
-</div>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Maschinelles Lernen in den Digital Humanities</head>
-<p style="text-align:left; ">Im wissenschaftlichen Bereich sind es zurzeit vor allem die angewandte Informatik und Mathematik sowie die Computerlinguistik, die maschinelles Lernen in ihre Forschungen integrieren. In den Digital Humanities spielt die Technologie bislang von wenigen Zentren abgesehen eine untergeordnete Rolle. In absehbarer Zeit dürfte sie ein wichtiger Teil der Disziplin werden – nicht nur im Recherche –, sondern auch im Auswertungs- und Schreibprozess. Insbesondere im Umgang mit digitalisierten Dokumenten, großen Datenmengen und Bildquellen können neuronale Netze ein wichtiges Mittel sein, um Daten zu finden, zu sortieren und auszuwerten.</p>
-<p style="text-align:left; ">Die digitalen Geisteswissenschaften umfassen mit ihrem Methodenapparat sowohl komplexe Softwareentwicklung, als auch die Anwendung statistischer Modelle und das Erklären mit hermeneutischen Verfahren. Daher ist die Disziplin prädestiniert in den Diskussionen dieser gesellschaftsverändernden Technologie eine Vorreiterrolle einzunehmen.</p>
-</div>
+<figure>
+<graphic height="8.669513888888888cm" n="1001" rend="inline" url="214_final-6ba30a0c7e61812dd79a4e16c096c2ed.png" width="16.002cm"/>
+<head>Abbildung 1: Ein Protokoll aus der Edition in seiner XML-Grundform, …</head>
+</figure>
+<p>Die Arbeiten an dem hier vorgestellten Editionskonzept begannen im Jahr 2014. Ausgangsbasis war damals das Projekt 
+                <hi rend="italic">ediarum</hi><ref n="6" target="ftn6"/> der Berlin-Brandenburgischen Akademie der Wissenschaften (Dumont/Fechner 2015). Während es Inspiration und eine wertvolle technische Grundlage lieferte, ergaben sich rasch Anforderungen, die mit dem damals verfügbaren Werkzeugen von 
+                <hi rend="italic">ediarum</hi> nicht vollständig zu erfüllen waren. Und so begannen Matthias Reinert und Maximilian Schrott (beide München), Mitarbeiter in der Abteilung „Digitale Publikationen“ mit der Entwicklung eines eigenen Ansatzes. Dessen Kerngedanke ist es, dass der Bearbeiter möglichst gar keine Berührungspunkte mit der XML-Syntax der Dokumente hat. Stattdessen soll er sich voll auf die Arbeit am Editionstext konzentrieren können. Dennoch legt Herr Dr. Braun teils komplexe Strukturen auf Basis des TEI Lite Schemas in den Protokolltext an und baut während der gesamten Editionsarbeit interne und externe Verknüpfungen in den Text ein. So wird das Projekt mit Metainformationen angereicht, die vor allem bei der digitalen Veröffentlichung im Internet einen Mehrwert bringen. Entscheidend unterstützt wird er dabei durch den 
+                <hi rend="italic">Oxygen XML Editor</hi>. Dieses leistungsstarke XML-Bearbeitungsprogramm, bietet die Möglichkeit eine stark individualisierte Arbeitsumgebung einzurichten. 
+            </p>
+<p>Die wichtigsten Bestandteile dieser Arbeitsumgebung für unser Editionsprojekt sind Operationen und Stile. Die Operationen sind eine Reihe von vorbereiten Funktionen, die eine Eingabe des Bearbeiters entgegen nehmen, daraus XML-Fragmente generieren und in den Text einfügen. Sie werden entweder aus Standardoperationen, die der 
+                <hi rend="italic">Oxygen XML Editor</hi> bietet, konfiguriert oder können selbst über eine Java-Schnittstelle programmiert werden. Herr Dr. Braun löst sie nach Bedarf über Buttons in der Menüleiste des Editors aus. Die Operationen ermöglichen es ihm mit wenigen Mausklicks und Eingaben in Textmasken komplexe Strukturelemente wie den Protokollkopf einzufügen, den Protokolltext in Tagesordnungspunkte und Unterpunkte zu gliedern oder Verweise auf andere Abschnitte und Fußnoten innerhalb des Editionskorpus zu setzen. Auf diese Weise kann Herr Dr. Braun das XML seiner Editionsdokumente bequem und ohne Angst vor lästigen Flüchtigkeitsfehlern bearbeiten und das mit minimalem Einarbeitungsaufwand.
+            </p>
+<p>Die Stile werden über Cascading Style Sheets (CSS) eingerichtet. Mit diesen kann die Darstellung der XML-Dokumente in 
+                <hi rend="italic">Oxygen XML Editor</hi> weitreichend angepasst werden. Für die Bayerischen Ministerratsprotokolle fiel der Entschluss, das XML-Markup, das oft als störend empfunden wird, größtenteils auszublenden und nur den reinen Editionstext darzustellen. Die semantischen Strukturen werden stattdessen über Formatierung, Textsetzung und farbliche Markierungen kenntlich gemacht. Herr Dr. Braun kann zwischen mehreren hinterlegten Stilen wechseln, die jeweils einen bestimmten Schritt des Workflows besonders unterstützen.
+            </p>
+<figure>
+<graphic height="8.669513888888888cm" n="1002" rend="inline" url="214_final-01e8203a4d8b7778e4f5002f0f79e442.png" width="16.002cm"/>
+<head>Abbildung 2: … in der Darstellung der Arbeitsumgebung …</head>
+</figure>
+<p>Zusammengenommen ermöglichen Operationen und Stile ein bequemes und produktives Arbeiten in XML. Durch das vollständige Verlagern der Syntax in den Hintergrund, sinkt die Einstiegshürde für XML-unkundige Bearbeiter. Gleichzeitig ist die Arbeit schneller, bequemer und weniger fehleranfällig, als wenn das Markup von Hand eingegeben werden müsste. Und der Blick des Bearbeiters auf den Text wird nicht durch unübersichtliche XML-Element-Konstruktionen versperrt.</p>
+<p>Eine neu hinzugekommene Aufgabe für Herrn Dr. Braun während der Editionsarbeit ist die Markierung der registerrelevanten Entitäten (Personen, Orte, Schlagwörter, Gesetze, Quellen und Literaturtitel) im Text. Die systematische Referenzierung dieser Textstellen erhöht den Grad der thematischen Verknüpfung innerhalb der Edition enorm und ermöglicht ein hohes Maß an Erschließ- und Durchsuchbarkeit für die digitale Präsentation. Kernstück dieser Verknüpfungsarbeit ist die Registerdatenbank (RDB). In diese trägt der Bearbeiter sämtliche registerrelevanten Entitäten im TEI-Format ein, ebenfalls unterstützt durch die Arbeitsumgebung. Da Herr Dr. Braun zwar an verschiedenen Orten aber alleine an seinen Editionstexten arbeitet, schien es zunächst unnötig die RDB als 
+                <hi rend="italic">eXist-</hi>Datenbank<ref n="7" target="ftn7"/> einzurichten. Stattdessen handelt es sich um eine Reihe von einfachen XML-Dateien, die jeweils einen einzelnen Entitätstypen beinhalten. Diese Lösung spart Wartungsaufwand und vermeidet einen Onlinezwang während der Arbeit, ohne dass sich dadurch ein merkbarer Nachteil ergab. Die Sicherung der RDB-Dateien, wie auch der Editionsdokumente, erfolgt stattdessen über 
+                <hi rend="italic">Sync+Share</hi><ref n="8" target="ftn8"/>, das Cloud-Speicherangebot des Leibniz-Rechenzentrums. Dieses sorgt gleichzeitig für den Austausch der Arbeitsdateien mit den technischen Betreuern.
+            </p>
+<p>Vom Text aus kann Herr Dr. Braun über entsprechende Operationen den jeweils benötigten RDB-Eintrag heraussuchen und eine Referenz auf diesen hinterlegen. Zusätzlich zu den Registerinformationen wie Personen- und Ortsname kann die RDB auch weiterführende Daten zu ihren Einträgen speichern. Zum Beispiel die geographischen Koordinaten eines Ortes, Normdaten-Identifier (GND)<ref n="9" target="ftn9"/> oder biographische Informationen zu den Personen. Diese können während der Bearbeitung und später in der digitalen Präsentation genutzt werden, um zusätzlichen Funktionen zu realisieren.
+            </p>
+<p>Während sich Herr Dr. Braun auf seine Editionsarbeit konzentrieren kann, kümmert sich die Abteilung Digitale Publikationen der Historischen Kommission um die technische Umsetzung. Zu Projektbeginn prüfte sie, in Absprachen mit dem Bearbeiter, die Anforderungen des Editionsprojekts. Auf dieser Basis wurde dann entschieden, welche Phänomene des Editionstextes in XML kodiert werden mussten und wie. Aus diesen Überlegungen entstanden schließlich die digitalen Editionsrichtlinien. Anhand dieser richtete Maximilian Schrott dann die Editionsumgebung in 
+                <hi rend="italic">Oxygen XML Editor</hi> ein, designte die Stile und programmierte die Operationen. Nach dieser Erstkonfiguration leistete er Herrn Dr. Braun während des gesamten Bearbeitungszeitraums fortlaufend Support. Er verbesserte Fehler in der Arbeitsumgebung, entwickelte diese auf Basis seines Feedbacks weiter und überwachte die korrekte Form der Editionsdokumente. Zum Ende der Editionsarbeit hin übernahm die Abteilung Digitale Publikation schließlich die Umwandlung des Editionstextes in die gedruckte Form.
+            </p>
+<figure>
+<graphic height="16.00023611111111cm" n="1003" rend="inline" url="214_final-78d2980a6357bc47e3dfc80b0b1285d2.png" width="10.410472222222221cm"/>
+<head>Abbildung 3: … und in der finalen PDF-Druckfassung.</head>
+</figure>
+<p>Denn auch wenn die Veröffentlichung einer hochwertigen, digitalen Version im Fokus des Editionskonzepts steht, sollte auch der neunte Band der Bayerischen Ministerratsprotokolle noch gedruckt erscheinen. Die PDF-Vorlage für den Druck wird dabei direkt aus den erstellten XML-Dateien erzeugt. Als Satzprogramm dient das in den 
+                <hi rend="italic">Oxygen XML Editor</hi> integrierte 
+                <hi rend="italic">Apache-FOP</hi><ref n="10" target="ftn10"/>. In dieses werden die Editionsdateien mittels einer XSL-Transformation überführt. So lässt sich in weniger als einer Minute eine vollständige Druckversion des kompletten 1000seitigen Druckbandes im gewünschten Layout erstellen. Der finale Satz erfolgt somit komplett intern, ohne Zuarbeiten durch den Verlag. Der automatisierte Satz funktioniert insgesamt sehr gut, es bleiben aber vereinzelte Mängel. Vor allem Zeilen-, Spalten- und Seitenumbruch müssen an einigen Stellen manuell nachgearbeitet werden. Auch bei der Erstellung der gedruckten Version ergeben sich durch die Anreicherungsarbeiten in XML Vorteile. So kann durch die wortgenaue Kennzeichnung der registerrelevanten Entitäten und die Verknüpfung mit der RDB auch das Druckregister halbautomatisch erstellt und dem Bearbeiter so eine besonders mühsame Arbeit erspart werden.
+            </p>
+<p>Das abgeschlossen Pilotprojekt wird von Seiten der Historischen Kommission als sehr erfolgreich eingestuft. Die Arbeit im 
+                <hi rend="italic">Oxygen XML Editor</hi> wurde von Herrn Dr. Braun als angenehm empfunden, die Drucklegung wurde pünktlich abgeschlossen und es konnten wertvolle Erfahrungen zur Verbesserung der Arbeitsumgebung und des Workflows gesammelt werden. Der Komfort für den Bearbeiter und die Qualität der Ergebnisse wird freilich durch eine vergleichsweise hohen Einrichtungs- und Supportaufwand erkauft. Diese Mehrarbeiten werden aber von der technischen Betreuung geleistet. Eine zusätzliche Belastung für den wissenschaftlichen Editor wird weitestgehend vermieden. Die Veränderungen in seinem Workflow sind zwar merkbar, aber nicht einschneidend. In der jetzigen Form funktioniert die Zusammenarbeit zwischen Bearbeiter und Technikern für beide Seiten sehr fruchtbringend. Außerdem sind die gewonnen Erfahrungen und Programmierarbeiten zum größten Teil für andere Projekte wiederverwendbar. Die Historische Kommission sieht sich deshalb in ihrem Entschluss bestätigt, zukünftig verstärkt auf das digitale, XML-basierte Editionskonzept zu setzen. Neben den noch ausstehenden Bänden der Bayerischen Ministerratsprotokolle sind bereits drei Briefeditionsprojekte in Arbeit, die auf diesem Ansatz beruhen.<ref n="11" target="ftn11"/>  Weitere Projekte befinden sich in der Vorbereitungs- und Planungsphase. 
+            </p>
+<p>Der neunte Band der Bayerischen Ministerratsprotokolle ist im Oktober 2019 gedruckt erschienen. Die Veröffentlichung im Internet wird sich noch bis voraussichtlich 2022 verzögern. Dann endet mit dem Erscheinen des 10. Bandes, die mit dem Verlag vereinbarte Exklusivitätsperiode im Druck. Der Inhalt von Band 9 und der RDB können somit zum bestehenden Webangebot der Protokolle des Bayerischen Ministerrats<ref n="12" target="ftn12"/> hinzugefügt werden. Ein größeres Funktionsupdate für die Website, das hiermit einhergehen soll, befindet sich derzeit noch in der Konzeptionsphase. Es soll das Webangebot um zahlreiche neue Features erweitern, die die Anreicherungen und Vernetzungen im Editionstext für die User zugänglich macht. Noch geprüft wird, welche Verlinkungsmöglichkeiten zu externen Webangeboten und Normdatenbanken umgesetzt werden können. Außerdem gibt es Überlegungen für spezialisierte Recherche- und Visualisierungsmöglichkeiten, zum Bespiel mittels der in der RDB erfassten Orte auf Karten.
+            </p>
 </body>
+<back>
+  <div type="notes">
+    <note n="1" rend="footnote text" xml:id="ftn1">
+      Das Kabinett Ehard III 18.Dezember 1950 bis 14. Dezember 1954, Band 3 8.1.1953–29.12.1953. bearb. von Oliver Braun, München [2019] (= Die Protokolle des Bayerischen Ministerrats. 1945-1962, Hg. von der Historischen Kommission bei der Bayerischen Akademie der Wissenschaften durch Andreas Wirsching und von der Generaldirektion der Staatlichen Archive durch Margit Ksoll-Marcon, Band 9).
+    </note>
+    <note n="2" rend="footnote text" xml:id="ftn2">
+      <ref target="http://www.tei-c.org/">http://www.tei-c.org</ref> ; alle URLs in diesem Artikel wurden zuletzt am 25.09.2019 aufgerufen.
+    </note>
+    <note n="3" rend="footnote text" xml:id="ftn3">
+      <ref target="http://oxygenxml.com/">http://oxygenxml.com</ref>
+    </note>
+    <note n="4" rend="footnote text" xml:id="ftn4">
+      Die Protokolle des Bayerischen Ministerrats 1945-1962 [ehemals 1945-1954], Hg. von der Historischen Kommission bei der Bayerischen Akademie der Wissenschaften und der Generaldirektion der Staatlichen Archive Bayerns, 9 Bände, bearbeitet von Karl-Ulrich Gelberg [Bände 1-5] und Oliver Braun [Bände 6-9], 1995-2019.
+    </note>
+    <note n="5" rend="footnote text" xml:id="ftn5">
+      <ref target="http://www.bayerischer-ministerrat.de/">www.bayerischer-ministerrat.de</ref>
+    </note>
+    <note n="6" rend="footnote text" xml:id="ftn6">
+      <ref target="http://www.bbaw.de/telota/software/ediarum">http://www.bbaw.de/telota/software/ediarum</ref>
+    </note>
+    <note n="7" rend="footnote text" xml:id="ftn7">
+      <ref target="https://exist-db.org">https://exist-db.org</ref>
+    </note>
+    <note n="8" rend="footnote text" xml:id="ftn8">
+      <ref target="https://syncandshare.lrz.de">https://syncandshare.lrz.de</ref>
+    </note>
+    <note n="9" rend="footnote text" xml:id="ftn9">
+      <ref target="https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html">https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html</ref>
+    </note>
+    <note n="10" rend="footnote text" xml:id="ftn10">
+      <ref target="https://xmlgraphics.apache.org/fop/">https://xmlgraphics.apache.org/fop/</ref>
+    </note>
+    <note n="11" rend="footnote text" xml:id="ftn11">
+      Die wissenschaftliche Korrespondenz des Historikers Karl Hegel (1813-1901), bearbeitet von Marion Kreis; Der Briefwechsel zwischen Adolf Harnack und Friedrich Althoff (1886-1908), bearbeitet von Claudia Kampmann; Zwischen Wissenschaft und Politik. Hans Delbrück – Ausgewählte Korrespondenz (1868-1929), bearbeitet von Andreas Rose und Jonas Klein.
+    </note>
+    <note n="12" rend="footnote text" xml:id="ftn12">
+      Siehe Anm. 5.
+      </note></div><div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl style="text-align:left; ">
+<hi rend="bold">Dumont, Stefan / Fechner, Martin</hi> (2012): „Digitale Arbeitsumgebung für das Editionvorhaben ‚Schleiermacher in Berlin 1808–1834‘“ http://digiversity.net/2012/digitale-arbeitsumgebung-fur-das-editionsvorhaben-schleiermacher-in-berlin-1808-1834 [letzter Zugriff 25.09.2019].
+                    </bibl>
+<bibl style="text-align:left; ">
+<hi rend="bold">Dumont Stefan / Fechner Martin</hi> (2015): „Bridging the Gap: Greater Usability for TEI encoding, in: Journal of the Text Encoding Initiative 8“ http://jtei.revues.org/1242 [letzter Zugriff 25.09.2019].
+                    </bibl>
+</listBibl>
+    <p>&#160;<lb/>&#160;<lb/>&#160;<lb/>&#160; <lb/>&#160;</p>
+
+</div>
+</back>
 </text>
 </TEI>

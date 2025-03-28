@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="STROBEL_Jochen_Zur_Zukunft_der_Digitalen_Briefedition___koop">
+     xml:id="HELLING_Patrick_Sechs_Wege_der_FRBRisierung_von_Textverknüpf">
    <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Zur Zukunft der Digitalen Briefedition – kooperative Lösungen im kulturwissenschaftlichen Forschungsdaten-management </title>
+                <title>Sechs Wege der FRBRisierung von Textverknüpfungen</title>
                 <author>
                     <persName>
-                        <surname>Strobel</surname>
-                        <forename>Jochen</forename>
+                        <surname>Helling</surname>
+                        <forename>Patrick</forename>
                     </persName>
-                    <affiliation>Philipps-Universität Marburg, Deutschland</affiliation>
-                    <email>strobel@staff.uni-marburg.de</email>
+                    <affiliation>Universität zu Köln, Deutschland</affiliation>
+                    <email>patrick.helling@uni-koeln.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Bürger</surname>
-                        <forename>Thomas</forename>
+                        <surname>Mathiak</surname>
+                        <forename>Brigitte</forename>
                     </persName>
-                    <affiliation>Sächsische Landesbibliothek - Staats- und Universitätsbibliothek Dresden</affiliation>
-                    <email>buerger@slub-dresden.de</email>
+                    <affiliation>Universität zu Köln, Deutschland</affiliation>
+                    <email>mathiak@gmail.com</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2018-01-20T19:32:00Z</date>
+                    <date>2018-01-12T16:26:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -53,108 +53,135 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Workshop</term>
+                    <term>Poster</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Briefedition</term>
-                    <term>Standardisierung</term>
-                    <term>virtuelle Forschungsumgebung</term>
-                    <term>Projektvernetzung</term>
-                    <term>Forschungsdateninfrastruktur</term>
+                    <term>FRBRoo</term>
+                    <term>Modellierung</term>
+                    <term>Ontologie</term>
+                    <term>Linked Open Data</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Transkription</term>
-                    <term>Kollaboration</term>
-                    <term>Projektmanagement</term>
-                    <term>Infrastruktur</term>
-                    <term>Literatur</term>
-                    <term>Text</term>
+                    <term>Modellierung</term>
+                    <term>Identifizierung</term>
+                    <term>Organisation</term>
+                    <term>Bibliographie</term>
                 </keywords>
             </textClass>
         <settingDesc>
             <ab n="conference">DHd2018 - "Kritik der Digitalen Vernunft", Köln</ab>
-            <ab n="paperID">236</ab>
-            <ab n="session_ID">141</ab>
-            <ab n="session_numberInSession">1</ab>
-            <ab n="session_short">Workshop_14a</ab>
-            <ab n="session_start">2018-02-27 14:00</ab>
-            <ab n="session_end">2018-02-27 15:30</ab>
+            <ab n="paperID">194</ab>
+            <ab n="session_ID">60</ab>
+            <ab n="session_numberInSession">48</ab>
+            <ab n="session_short">Poster_1</ab>
+            <ab n="session_title">Postersession</ab>
+            <ab n="session_start">2018-03-01 17:45</ab>
+            <ab n="session_end">2018-03-01 23:00</ab>
          </settingDesc>
       </profileDesc>
     </teiHeader>
    <text>
         <body>
-            <p>Ausgehend von thesenförmigen Impulsreferaten (<hi rend="bold">jeweils 10 Min., die PPT-Folien werden nach der Tagung publiziert</hi>) sollen editionstheoretische und -technische Fragen diskutiert werden.
-            </p>
             <div type="div1" rend="DH-Heading1">
-                <head>Block 1 Impulse (90 Minuten) 14:00 – 15:30 Uhr</head>
-                <list type="ordered">
-                     <item>Begrüßung und Einführung (Thomas Bürger und Jochen Strobel)</item>
-                     <item>Offenheit und institutionelle Schließung (Patrick Sahle)</item>
-                     <item>Kommentierung – ein Auslaufmodell? (Anne Bohnenkamp)</item>
-                     <item>Versionierung/Zitation (Joachim Veit)</item>
-                     <item>Hemmnisse und Katalysatoren digitaler Brief-Infrastrukturen (Thomas Stäcker)</item>
-                     <item>Schnelle Wege zu den Briefen (Stefan Dumont)</item>
-                     <item>DARIAH-Services für Briefeditionen (Mirjam Blümm)</item>
-                     <item>Akteure und Rollen (Jochen Strobel)</item>
-                </list>
+                <head>Einleitung</head>
+                <p>Linked Open Data wird auch in den Geisteswissenschaften immer wichtiger (Barbera 2013: 91 – 105). Dabei geht es sehr oft um die Verknüpfung von Text mit weiterem Text, z.B. mit Kommentaren, Referenzen auf andere Werke oder anderen Entitäten wie Personen, Orte, etc. Mit Ontologien wie den Functional Requirements for Bibliographic Records object-oriented (FRBRoo) (Bekiari et al. 2015) können zwar bibliographische Gegenstände im Rahmen einer digitalen Datenbank auf eine Art und Weise modelliert und bereitgestellt werden, dass diese allein durch ihre Organisation und objektübergreifende Strukturierung und Verknüpfung bibliographisch-informationellen Mehrwert im Rahmen der Recherche erzeugen können (Förster / Becker 2010: 15 - 25). Allerdings ist nicht immer klar, wie Verknüpfungen aus den Texten heraus mit anderen Texten oder aber zu komplett anderen Entitäten zu modellieren sind. Die Verknüpfung von verschiedensten Dokumenten und Entitäten ist allerdings eine der Hauptideen bei der Benutzung von Ontologien und Linked Open Data.</p>
+                <p>Einige Forschungsprojekte haben sich dieses Problems in Spezialfällen bereits angenommen. So wird bei HuCit (Romanello / Pasin 2011: 216 - 218) betrachtet, wie kanonische Zitation, z.B. der klassischen Literatur, modelliert werden kann. In (Bartalesi / Meghini 2016: 385 - 394) wird eine Ontologie speziell für die Texte von Dante Alighieri entwickelt. In (Mathiak / Boland 2015) wird der Spezialfall einer Verknüpfung zwischen Texten und Datensätzen, auf denen diese Texte beruhen, betrachtet.</p>
+                <p>Wir nehmen die zuvor genannten Ansätze als Ausgangspunkt, systematisieren diese und arbeiten Vor- und Nachteile heraus. Ziel ist es ein Modell für textbasierte Materialien zu konzipieren, mit dem Text(-stellen) mit anderen Textstellen oder Entitäten verknüpft und modelliert werden können. </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Block 2 Diskussion, Fazit, Ausblick (90 Minuten) 16:00 – 17:30 Uhr</head>
-                <p>Diskussion der Impulsreferate und der fachlichen und förderpolitischen Schlussfolgerungen (Moderation: Thomas Bürger, Jochen Strobel)</p>
-                <p><hi rend="bold">Block 1: 14:00 – 15:30 Uhr</hi></p>
-                <p><hi rend="bold">1. Einführung (Thomas Bürger, Jochen Strobel)</hi></p>
-                        <p>Ob es nun zutrifft, dass die Edition zu den Kerngeschäften der Geisteswissenschaften gehört und sogar die Königsdisziplin der Digital Humanities sei, bleibe dahingestellt – nutzerseitig handelt es sich bei den Forschungsergebnissen dieser Disziplin um diejenigen mit der längsten Halbwertszeit. Die Aussicht, dass gut gemachte Editionen zu den unverzichtbaren Grundlagen der wissenschaftlichen Praxis gehören, setzt die an Editionen Beteiligten aber auch unter Druck. Editionen sind langwierig und teuer, sie müssen im fachlichen und technischen Sinne zuverlässige Daten vorhalten, sie müssen dauerhaft verfügbar und doch auf der Höhe der Zeit sein. Dazu bedarf es fachlich und technisch versierter Bearbeiter. Tagungen und Publikationen zur Digitalen Editionverdeutlichen das Bedürfnis nach Orientierung, Standardisierung, Weiterentwicklung und transparenterer Vernetzung. Eine pragmatische Ausrichtung schließt diese Ziele ein:</p>
-                        <list type="unordered">
-                            <item>die Orientierung der Usability an Forschungsfragen der Nutzer*innen, insbesondere eine Optimierung der Durchsuch- und Findbarkeit und eine gute Lesbarkeit der Texte</item>
-                            <item>die zeitgemäße Einbettung der Edition in stabile virtuelle Forschungsumgebungen </item>
-                            <item>die Anschlussfähigkeit in Infrastrukturen </item>
-                            <item>Sparten und Institutionen übergreifende Projektvernetzung.</item>
-                        </list>
-                    
-                        <p>Die Briefedition ist ein prominentes Paradigma: In analoger Form ist sie besonders zeitraubend und kostspielig. Als Zeugnis historischer Netzwerke und Kommunikations-strukturen und wegen der vergleichsweise fortgeschrittenen Standardisierung bietet sie sich als Avantgarde digitaler Projektvernetzung und Daten-Aggregierung geradezu an. </p>
-                        <p>Patrick Sahle hat für Editionen plausibel zwischen der Repräsentation der eigentlichen Daten („Inhalt“) und der Präsentation („Form“) unterschieden. Unumstrittene Geltung besitzen Kriterien, wie sie auch durch Roland Kamzelak benannt wurden, also z. B. XML-Standard, Open Source-Software und Open Access, Nachnutzbarkeit, persistente URL, Langzeitarchivierung. Ein faktischer Standard besteht mit den von der DFG herausgegebenen Förderkriterien für Wissenschaftliche Editionen. Komplementär hierzu und um ein Vielfaches differenzierter bietet der vom IDE bereitgestellte Kriterienkatalog für die Besprechung digitaler Editionen Anhaltspunkte. Mit RIDE besteht ein Rezensionsjournal für Editionen. Thomas Stäcker, Thomas Burch u.a. verweisen auf innovative multiple Analyse- und Darstellungsmöglichkeiten (Distant Reading, Mapping the Republic of Letters), die neue Fragestellungen und Vermittlungsformen erlauben und zu neuen Verständigungen (z.B. über Remediatisierung, über innovative Vermittlungswege der wissenschaftlichen und kulturellen Überlieferung, das Potential graphorientierter Datemodelle) anregen. </p>
-                <p><hi rend="bold">2. Offenheit und institutionelle Schließung (Patrick Sahle)</hi></p>
-                        <p>Die Digitale Edition verheißt ewige Unabgeschlossenheit und technische wie fachliche Offenheit – was aber bedeutet dies: Paradies oder Inferno? Bei allen Vorzügen der Korrigier- und Ergänzbarkeit durch das Editorenteam oder auch durch User: editorische Daten müssen zuverlässig sein – wir wollen nicht ewig auf Baustellen leben. Was bedeutet dies im Hinblick auf mögliche Schließungsregeln für ein offenes Medium (s. u.: Zitation/Versionierung)? Was folgt etwa in puncto Nachnutzbarkeit hieraus? Ist zu unterscheiden zwischen gesicherten Forschungsdaten und solchen, die als Forschungsergebnisse zwar intersubjektiver Nachprüfbarkeit unterliegen, in ihrer Thesenhaftigkeit wie auch Kontextabhängigkeit aber zugleich diskussionswürdig und revidierbar sind, wie etwa Interpretamente?</p>
-                        <p>In der Praxis sind es institutionelle und finanzielle Zwänge, die die Begrenzung und Schließung von an sich offenen Projekten erforderlich machen. Hieraus ergeben sich grundlegende Fragen nach der gebündelten Kuratierung abgeschlossener Projekte.</p>
-                <p><hi rend="bold">3. Kommentierung – ein Auslaufmodell? (Anne Bohnenkamp)</hi></p>
-                        <p>Ist der „Stellenkommentar“ überflüssig, ein in der Editionsphilologie zwischen Redundanz- und Interpretationsverdikt immer schon umstrittenes Element, das gleichwohl der Profilierung der Editor*innen wie vor allem der Usability diente? Ist über Tagging und Verlinkung hinaus ein editionsspezifisches kommentierendes Angebot sinnvoll – und wie sollte es sich zu den zuhauf existenten externen Informationsressourcen technisch und sachlich verhalten? Ist die Kommentierung vielleicht sogar jenseits der scheinbar mechanischen und objektiven digitalen Repräsentation jener letzte Ort, an dem das Fachwissen und die interpretatorische Leistung die Unverzichtbarkeit des Editors als eigentlichem Experten und bestem Kenner der Materie belegt?</p>
-                <p><hi rend="bold">4. Versionierung/Zitation (Joachim Veit)</hi></p>
-                        <p>Die Herstellung von beliebig vielen, zitationsfähigen Versionen eines edierten Texts oder Textabschnitts ist technisch kein Problem, die Zuweisung persistenter Identifier ebenso wenig. Wie sollten Forschungsdaten jenseits der Text(präsentations)ebene zitiert werden? Was sind die (Haupt-?)Bestandteile der Editionen, wo liegen ihre Grenzen? Nach der verbindlichen Veröffentlichung eines Textes müssen editorische Veränderungen als unterschiedliche Versionen markiert werden. Hierzu dienlich ist ein Versionierungssystem. Präzise Zitierfähigkeit ist ein unverzichtbares Merkmal von Editionen – doch wie bleibt sie unter digitalen Auspizien praktikabel? Hierzu zählt z. B. die nicht triviale Frage nach der Länge des Zitatnachweises, der ganz oder teilweise zugleich Link in einer Online-Publikation ist. </p>
-                <p><hi rend="bold">5. Hemmnisse und Katalysatoren digitaler Brief-Infrastrukturen (Thomas Stäcker)</hi></p>
-                        <p>Es besteht seit langem Einigkeit darüber, dass die Verwendung normierter Metadaten sowie die Codierung gemäß den Regeln des TEI-Konsortiums eine Garantie für Qualität und Nachhaltigkeit bietet. GND, VIAF – inzwischen verwenden Digitale Editionen bibliothekarische Normdaten zur Referenzierung von Personen, Orten u.a. Die Standardisierung von Werktiteln schreitet eher langsam voran. In der Praxis ist aber ebenso bekannt, dass von Projekt zu Projekt kleinere oder größere Abweichungen zu verzeichnen sind. Welche Folgerungen sind aus dieser Inkongruenz zu ziehen, wie ist mit einer unterschiedlichen Nutzung von Standards umzugehen?</p>
-                        <p>Mit dem Verlassen der Zweidimensionalität des gedruckten Textes findet nicht nur durch das Verschwinden des Substrates ein Verlust an Stabilität statt, sondern es treten durchaus andere stabile Konstituentien an dessen Stelle. Welche Entwicklungen sind zu erwarten bzw. zu organisieren?</p>
-                <p><hi rend="bold">6. Schnelle Wege zu den Briefen (Stefan Dumont)</hi></p>
-                        <p>CorrespSearch will verbesserte Voraussetzungen für die Vernetzung von Briefeditionen schaffen. Damit sollen Briefmetadaten über das bisherige Basis-Set hinaus verarbeitet und auch die Erstellung von digitalen Briefverzeichnissen aus gedruckten Publikationen unterstützt werden. Über Schnittstellen zu anderen Diensten ist der Webservice in die existierende und zu entwickelnde Infrastrukturlandschaft tiefer einzubetten. Wie lassen sich nutzer- und forschungsfreundlich die Zugänge zu Briefen und insbesondere zu den Volltexten vereinfachen? In welchem Verhältnis steht CorrepSearch zu den vielen anderen Angeboten (Deutsche Digitale Bibliothek, Europeana, Kalliope u.a.)?</p>
-                <p><hi rend="bold">7. DARIAH-Services für Briefeditionen (Mirjam Blümm)</hi></p>
-                        <p>DARIAH.DE ist eine Informations- und Technikinfrastruktur für Lehre, Forschung, Forschungsdaten und technische Werkzeuge. Welchen Stand hat die Infrastruktur zur Einbindung digitaler Editionen erreicht und welche kollaborativen Strukturen und Ziele sollten angestrebt werden? </p>
-                <p><hi rend="bold">8. Akteure und Rollen (Jochen Strobel)</hi></p>
-                        <p>Die Digital Humanities fördern kollaboratives Arbeiten und generell eine Diversifizierung und Verflüssigung von Rollen und Verantwortlichkeiten. Zu den Rollen einer digitalen wissenschaftlichen Autor- und Beiträgerschaft zählen u.a. Hauptherausgeber*in, Kurator*in, Programmierer*in, Kodierer*in, Tagger*in, wissenschaftliche Hilfskraft, Crowdsourcer*in. Einige dieser und weitere Rollen sind so neu nicht, manche dürften vom bisherigen Urheberrecht nicht hinreichend abgedeckt sein. Editionen sind seit langem kollaborative Projekte, die Rollen der Beteiligten sind dementsprechend vielfach ausdifferenziert. Welche Folgerungen ergeben sich für die digitale Edition einerseits und für die akademische Karriereplanung zwischen Forschung und Informationsinfrastruktur andererseits?</p>
-                        <p><hi rend="bold">Block 2: 16:00 – 17:30 Uhr</hi></p>
-                <p><hi rend="bold">9. Diskussion, Fazit, Ausblick (Moderation: Thomas Bürger, Jochen Strobel)</hi></p>
-                        <p>In der Schlussdiskussion sollen die Impulsreferate diskutiert und ein Fazit gezogen werden. Dabei sind auch forschungspolitische Schlussfolgerungen zu thematisieren. Editionen und insbesondere Briefeditionen sind in der Regel langfristige Projekte und deshalb vor allem an Akademien angesiedelt. Durch die sich verbreiternde Retrodigitalisierung und verfügbare digitale Werkzeuge können Projektlaufzeiten perspektivisch weiter verkürzt und Projektfortschritte transparent in Forschung und Lehre eingebunden werden. Wie groß ist der Bedarf an digitalen Editionen und wie können sie Teil einer Nationalen Forschungsdateninfrastruktur werden? Welche drängenden Fragen sind zeitnah in weiteren Workshops zu besprechen?</p>
+                <head>Sechs Wege</head>
+                <p>1.) Die direkte Verbindung</p>
+                <p>In diesem einfachen Fall gibt es einfach eine Verbindung zwischen dem Dokument und der Entität, die mit diesem verknüpft werden soll. Die Property wird dazu idealerweise aus einer bereits etablierten Ontologie gewählt (siehe Abb. 1). Das klassische Beispiel hierfür ist eine Verschlagwortung oder die Zuordnung zu Autoren. Obwohl diese Art der Modellierung sehr einfach ist, hat sie doch starke Einschränkungen. Es bleibt unklar, welcher Teil des Dokuments für die Verbindung verantwortlich ist und es ist schwierig die Art der Verbindung über die Property hinaus zu beschreiben.</p>
+                <figure>
+                    <graphic n="1001"
+                        width="15.917333333333334cm"
+                        height="3.81cm"
+                        rend="inline"
+                        url="HELLING_Patrick_Sechs_Wege_der_FRBRisierung_von_Textverkn_pf-image1.jpeg"/>
+                    <head>Abb. 1: Die direkte Verbindung.</head>
+                </figure>
+                <p>2.) Die Verbindung über die Textstelle</p>
+                <p>Bei dieser Art der Modellierung wird zunächst die Textstelle innerhalb des Dokuments identifiziert und dann im nächsten Schritt mit der Entität verbunden, wodurch im Gegensatz zu Variante 1 eindeutig definiert wird, welcher Teil des Dokuments für die Verbindung verantwortlich ist (siehe Abb. 2).</p>
+                <figure>
+                    <graphic n="1002"
+                        width="15.917333333333334cm"
+                        height="2.413cm"
+                        rend="inline"
+                        url="HELLING_Patrick_Sechs_Wege_der_FRBRisierung_von_Textverkn_pf-image2.jpeg"/>
+                    <head>Abb. 2: Die Verbindung über die Textstelle.</head>
+                </figure>
+                <p>3.) Die Verknüpfung als eigene Entität</p>
+                <p>Dabei wird das Dokument bzw. die Textstelle zunächst mit einem Verknüpfungsobjekt verbunden und dann dieses mit der Zielentität (siehe Abb. 3), wobei im Vergleich zu Variante 1 die Erfassung relationsbeschreibender Informationen möglich wird. Diese Art der Modellierung ist vor allem nützlich, wenn es sehr viele Zusatzinformationen zu der Verknüpfung selbst gibt. </p>
+                <figure>
+                    <graphic n="1003"
+                        width="15.917333333333334cm"
+                        height="10.668cm"
+                        rend="inline"
+                        url="HELLING_Patrick_Sechs_Wege_der_FRBRisierung_von_Textverkn_pf-image3.jpeg"/>
+                    <head>Abb. 3: Die Verknüpfung als eigene Entität.</head>
+                </figure>
+                <p>4.) Die Verknüpfung mit einer Stellvertreterentität</p>
+                <p>Manchmal ist es nicht eindeutig möglich das Ziel der Verknüpfung als Entität zu identifizieren. In diesem Fall kann es sinnvoll sein, zunächst ein fiktives Ziel zu definieren und dann dessen Beziehungen zu bereits bekannten Entitäten zu etablieren (siehe Abb. 4). In gewissem Sinne ist dies invers zu Methode 2 zu sehen, bei der ja auch zunächst das Objekt der Textstelle neu erschaffen wird, indem es zu seinem Quelldokument in Beziehung gesetzt wird. In (Mathiak / Boland 2015) wird dies benutzt um fehlende Informationen zur Zielentität zu modellieren. </p>
+                <figure>
+                    <graphic n="1004"
+                        width="15.917333333333334cm"
+                        height="7.598833333333333cm"
+                        rend="inline"
+                        url="HELLING_Patrick_Sechs_Wege_der_FRBRisierung_von_Textverkn_pf-image4.jpeg"/>
+                    <head>Abb. 4: Die Verknüpfung mit einer Stellvertreterentität.</head>
+                </figure>
+                <p>5.) Das unabhängige Netzwerk</p>
+                <p>In vielen Fällen ist der Textbezug für die Ergebnisdarstellung nur von sekundärer Bedeutung, stattdessen werden die referenzierten Entitäten direkt miteinander in Verbindung gesetzt (siehe Abb. 5). Als Beispiel seien Beziehungsnetzwerke von Protagonisten in literarischen Werken genannt. Die Entitäten sind zwar auch mit dem Dokument verknüpft in dem sie auftauchen, aber die Kerninformation liegt in den Beziehungen, die diese untereinander haben. </p>
+                <figure>
+                    <graphic n="1005"
+                        width="15.917333333333334cm"
+                        height="9.3345cm"
+                        rend="inline"
+                        url="HELLING_Patrick_Sechs_Wege_der_FRBRisierung_von_Textverkn_pf-image5.jpeg"/>
+                    <head>Abb. 5: Das unabhängige Netzwerk.</head>
+                </figure>
+                <p>6.) Multiple Dokumente</p>
+                <p>Verschiedene Versionen desselben Dokuments werden in typischen Ontologien bisher wenig betrachtet, obwohl sie in den Digital Humanities eine häufige Modellierungsherausforderung sind. </p>
+                <p>Poster-Präsentation</p>
+                <p>Auf dem Poster präsentieren wir die grundlegende Ontologie-Struktur und stellen die verschiedenen modularen Modellierungsstrategien genauer vor. Zur Veranschaulichung werden wir eine Umsetzung unserer ontologischen Konzepte an einem Beispiel aus den Geisteswissenschaften demonstrieren.</p>
             </div>
         </body>
         <back>
          <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Roland Kamzelak</hi>: Empfehlungen zum Umgang mit Editionen im Digitalen Zeitalter, in editio 26 (2012), S. 202–209.</bibl>
-                    <bibl><hi rend="bold">Patrick Sahle</hi>: Digitale Editionsformen. 3 Bände. Norderstedt 2013.</bibl>
                     <bibl>
-                        <ref target="http://www.mww-forschung.de/blog/blogdetail/wie-sieht-die-digitale-edition-der-zukunft-aus-herr-kamzelak/?tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Baction%5D=detail">http://www.mww-forschung.de/blog/blogdetail/wie-sieht-die-digitale-edition-der-zukunft-aus-herr-kamzelak/?tx_news_pi1%5Bcontroller%5D=News&amp;tx_news_pi1%5Baction%5D=detail</ref> (30.8.2017)
+                        <hi rend="bold">Barbera, Michele </hi>(2013): “Linked (open) data at web scale: research, social and engineering challenges in the digital humanities” 
+                        <hi rend="italic">in: Global Interoperability and Linked Data in Libraries: Special issue. JLIS.it, Vol. 4, No. 1</hi>: 91 – 105 
+                        <ref target="http://dx.doi.org/10.4403/jlis.it-6333">http://dx.doi.org/10.4403/jlis.it-6333</ref>. 
                     </bibl>
                     <bibl>
-                        <ref target="http://dhd-wp.hab.de/?q=ag-text#abschnitt4">http://dhd-wp.hab.de/?q=ag-text#abschnitt4</ref> (30.8.2017)
+                        <hi rend="bold">Bartalesi, Valentina / Meghini, Carlo</hi> (2016): 
+                        <hi rend="italic">„</hi>Using an Ontology for Representing Knowledge on Literary Texts: the Dante Alighieri Case Study
+                        <hi rend="italic">“ in: Semantic Web, Volume 8, Number 3, 6. Dezember 2016</hi>: 385 – 394 
+                        <ref target="http://www.semantic-web-journal.net/content/using-ontology-representing-knowledge-literary-texts-dante-alighieri-case-study-0">http://www.semantic-web-journal.net/content/using-ontology-representing-knowledge-literary-texts-dante-alighieri-case-study-0</ref> [letzter Zugriff 22. September 2017].
                     </bibl>
                     <bibl>
-                        <ref target="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/foerderkriterien_editionen_literaturwissenschaft.pdf">http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/foerderkriterien_editionen_literaturwissenschaft.pdf</ref> (30.8.2017)
+                        <hi rend="bold">Bekiari, Chryssoula / Doerr, Martin / Le Boeuf, Patrick / Riva, Pat</hi> (2015): „Definition of FRBRoo. A Conceptual Model for Bibliographic Information in Object-Oriented Formalism
+                        <hi rend="italic">“</hi> Den Haag: 
+                        <ref target="https://www.ifla.org/files/assets/cataloguing/FRBRoo/frbroo_v_2.4.pdf">https://www.ifla.org/files/assets/cataloguing/FRBRoo/frbroo_v_2.4.pdf</ref> [letzter Zugriff: 25. September 2017].
                     </bibl>
                     <bibl>
-                        <ref target="https://www.i-d-e.de/publikationen/weitereschriften/kriterien-version-1-1/">https://www.i-d-e.de/publikationen/weitereschriften/kriterien-version-1-1/</ref> (30.8.2017)
+                        <hi rend="bold">Förster, Frank / Becker, Hans-Georg</hi> (2010): 
+                        <hi rend="italic">„</hi>Vernetztes Wissen – Ereignisse in der bibliographischen Dokumentation“ 
+                        <hi rend="italic">in: Zeitschrift für Bibliothekswesen und Bibliographie.</hi> 57. Jahrgang/Heft Nr. 1: 15 – 25 
+                        <ref target="http://dx.doi.org/10.3196/186429501057133">http://dx.doi.org/10.3196/186429501057133</ref>.
                     </bibl>
                     <bibl>
-                        <ref target="http://ride.i-d-e.de/">http://ride.i-d-e.de/</ref> (30.08.2017)
+                        <hi rend="bold">Mathiak, Brigitte / Boland, Katarina</hi> (2015): „Challenges in Matching Dataset Citation Strings to Datasets in Social Science
+                        <hi rend="italic">“ in: D-Lib Magazine, Volume 21, Number 1/2, Januar/Februar 2015</hi>, 
+                        <ref target="https://doi.org/10.1045/january2015-mathiak">https://doi.org/10.1045/january2015-mathiak</ref>. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Romanello, Matteo / Pasin, Michele</hi> (2011): 
+                        <hi rend="italic">„</hi>An Ontological View of Canonical Citations
+                        <hi rend="italic">“ in: DH 2011 Book of Abstracs. Stanford</hi>: Stanford University Library 216 - 218 
+                        <ref target="http://dh2011abstracts.stanford.edu/xtf/view?docId=tei/ab-143.xml">http://dh2011abstracts.stanford.edu/xtf/view?docId=tei/ab-143.xml</ref> [letzter Zugriff 22. September 2017].
                     </bibl>
                 </listBibl>
             </div>

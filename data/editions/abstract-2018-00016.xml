@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="BUBENHOFER_Noah_Wissenschaft_ohne_Geist__Herausforderungen_d">
+     xml:id="GLÜCK_David_An_den_Grenzen_der_Interoperabilität__Eine_kriti">
    <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Wissenschaft ohne Geist: Herausforderungen der Digital Humanities am Beispiel der Korpuslinguistik</title>
+                <title>An den Grenzen der Interoperabilität: Eine kritische Reflexion über digitale Forschungsdaten und -anwendungen in der Online-Edition des Projekts "Die Schule von Salamanca"</title>
                 <author>
                     <persName>
-                        <surname>Bubenhofer</surname>
-                        <forename>Noah</forename>
+                        <surname>Wagner</surname>
+                        <forename>Andreas</forename>
                     </persName>
-                    <affiliation>Universität Zürich, Schweiz</affiliation>
-                    <email>bubenhofer@cl.uzh.ch</email>
+                    <affiliation>Max-Planck-Institut für europäische Rechtsgeschichte, Frankfurt am Main</affiliation>
+                    <email>wagner@rg.mpg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Glück</surname>
+                        <forename>David</forename>
+                    </persName>
+                    <affiliation>Akademie der Wissenschaften und der Literatur, Mainz; Johann Wolfgang Goethe-Universität Frankfurt am Main</affiliation>
+                    <email>glueck@rg.mpg.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2015-10-04T22:02:00Z</date>
+                    <date>2018-01-15T12:23:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -48,91 +56,155 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Korpuslinguistik</term>
-                    <term>Computerlinguistik</term>
-                    <term>Deep Learning</term>
-                    <term>Textmining</term>
-                    <term>Geistewissenschaften</term>
+                    <term>Interoperabilität</term>
+                    <term>Textmodellierung</term>
+                    <term>Webentwicklung</term>
+                    <term>Microservices</term>
+                    <term>persistente Referenzierung</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
                     <term>Modellierung</term>
-                    <term>Theoretisierung</term>
-                    <term>Methoden</term>
-                    <term>Forschungsprozess</term>
+                    <term>Archivierung</term>
+                    <term>Webentwicklung</term>
+                    <term>Daten</term>
+                    <term>Software</term>
+                    <term>Text</term>
                 </keywords>
             </textClass>
         <settingDesc>
             <ab n="conference">DHd2018 - "Kritik der Digitalen Vernunft", Köln</ab>
-            <ab n="paperID">288</ab>
-            <ab n="session_ID">32</ab>
+            <ab n="paperID">281</ab>
+            <ab n="session_ID">37</ab>
             <ab n="session_numberInSession">3</ab>
-            <ab n="session_short">VP_2a</ab>
-            <ab n="session_title">Theorie der digitalen Geisteswissenschaften II</ab>
-            <ab n="session_start">2018-02-28 11:00</ab>
-            <ab n="session_end">2018-02-28 12:30</ab>
+            <ab n="session_short">VP_5a</ab>
+            <ab n="session_title">Digitale Edition I</ab>
+            <ab n="session_start">2018-03-01 11:00</ab>
+            <ab n="session_end">2018-03-01 12:30</ab>
          </settingDesc>
       </profileDesc>
     </teiHeader>
    <text>
         <body>
-            <p>Alle, die mit maschinellen Methoden Sprache analysieren, erleben momentan einen tiefgreifenden methodologischen Wandel.<ref target="ftn1" n="1"/> 
-                Einerseits erfreut man sich vielleicht als Geisteswissenschaftler/in am immer stärkeren Interesse der Ingenieurtechniken und der Informatik für Sprache. Dies kann durchaus als Erfolg der Linguistik betrachtet werden, zurückgehend auf den Linguistic Turn, der viele andere Disziplinen schon seit Jahrzehnten beeinflusst. Unternehmen interessieren sich für ihre Reputation im massenmedialen Diskurs oder sind der Überzeugung, ihr in unzähligen Dokumenten versprachlichtes Wissen besser verwalten zu können, wenn sie es nach sprachlichen Kriterien neu ordnen. Das Geschäftsmodell von Internetunternehmen basiert ganz erheblich darauf, sprachliche Kommunikation maschinell zu verarbeiten um daraus Wissen aufzubauen und Vorhersagen über das Handeln von Kunden zu machen. Auch in der Politik ist die Analyse von Sprachgebrauch ein wichtiger Faktor, um Wahlkämpfe zu gewinnen.
-            </p>
-            <p>Andererseits beschert einen dieses Interesse eine Vielzahl von neuen Methoden für die maschinelle Analyse von Text, die auch für geisteswissenschaftliche Fragestellungen interessant sind. Die Digital Humanities sind ein Beispiel für eine Disziplin, die sich den Experimenten mit diesen Methoden verschrieben hat. Auch die Korpuslinguistik profitiert maßgeblich von diesen neuen Methoden.</p>
-            <p>Aktuell erfahren in der Computerlinguistik und generell im Data Mining neuronale Netze großen Zuspruch, die den Prozess des maschinellen Lernens nach dem Modell des menschlichen Gehirns gestalten. Solche Systeme, „Deep Learning“-Systeme genannt, sind in der Lage, Muster in den Daten zu erkennen, ohne dass vorher explizit die Eigenschaften festgelegt werden, die getestet werden sollen. Zudem findet das Lernen auf mehreren verborgenen Ebenen statt, so dass das Lernen nicht beobachtet und damit auch die Frage, welche Eigenschaften nun welchen Einfluss auf das gelernte Modell haben, kaum beantwortet werden kann.</p>
-            <p>In der Computerlinguistik wurden bereits für viele Probleme Deep-Learning-Algorithmen eingesetzt, meist mit Erfolg. Erfolg bedeutet, dass die statistischen Modelle besser den Goldstandard voraussagen können, aber nicht, dass das grundlegende linguistische Problem (z.B.: Sentiment-Analyse: wie werden Gefühle und Meinungen ausgedrückt; Textklassifikation: wie drückt sich Stil, Autorschaft, Textsorte, Thema etc. aus) besser gelöst wäre.</p>
-            <p>Überall wo Sprachgebrauch quantitativ und maschinell analysiert wird, gibt es einen starken Trend, möglichst ohne linguistischen Kategorien und Theorien auszukommen und Black-Box-Systeme zu verwenden. Das ist nachvollziehbar, da es in den meisten Fällen darum geht, ein System zu bauen, das eine klar definierte Aufgabe sehr gut lösen kann. Obwohl diese Ansätze natürlich auch für die Korpuslinguistik interessant sind, genügen sie linguistischen Forschungsinteressen eigentlich nicht, da sie keinen Beitrag dazu leisten, sprachliche Phänomene zu verstehen und erklären zu können.</p>
-            <p>Viel dramatischer ist jedoch, dass die Linguistik offensichtlich nicht in der Lage ist, einen nützlichen Beitrag zur Lösung der Probleme der maschinellen Textanalyse zu leisten. Die Linguistik scheint für die quantitative Analyse von Text weitgehend bedeutungslos zu werden.</p>
-            <p>Um der Bedeutungslosigkeit zu entgehen, muss die Linguistik ein kritisches Verhältnis zur Forschungslogik in den ingenieurstechnischen Disziplinen pflegen und auf zwei Prinzipien bestehen: 1) Mehr linguistische Theorie. 2) Ergebnisse von quantitativen Analysen müssen gedeutet werden.</p>
-            <p>Zu 1): Nicht nur für die Linguistik, sondern für alle geistes- und sozialwissenschaftlichen Disziplinen gilt: Eine theoretische Fundierung der Analysekategorien ist essentiell. Dafür werden valide Analysekategorien benötigt, die deutbar sind. Dieses Prinzip richtet sich jedoch keinesfalls gegen datengeleitete Verfahren, im Gegenteil: Sie sind es, die die theoretischen Modelle herausfordern und schärfen können. Aber das Ziel aller Analysen muss darin liegen, ein Puzzleteil zu einem besseren Verständnis sprachlicher Strukturen, von Sprachgebrauch oder gesellschaftlichen und kulturellen Bedeutungen von Sprache zu führen. Wir benötigen White-Box-, nicht Black-Box-Systeme.</p>
-            <p>Das Problem der fehlenden Validität zeigt sich z.B. im Feld der sog. „Authorship Attribution“, also der Zuordnung eines Textes X zu einem Autor A, B, C, …. Um dies zu tun, stehen Texte zur Verfügung, von denen die Autorschaft bekannt ist. Die Frage ist dann also, ob über die sprachlichen Merkmale des Textes X automatisch bestimmt werden kann, wer der Autor/die Autorin (aus der Menge der möglichen Autoren/innen) von Text X ist. Genauer lautet die Frage aber, ob und wie sich persönlicher Schreibstil sprachlich niederschlägt.</p>
-            <p>Besonders erfolgreich für diese Aufgabe sind Methoden maschinellen Lernens, die das Problem als Klassifikationsaufgabe auffassen und anhand von Trainingskorpora typische sprachliche Merkmale der Texte der jeweiligen Autor/innen lernen. Dabei zeigt sich, dass „low-level features like character n-grams are very successful for representing texts for stylistic purposes” (Stamatatos, 2009, S. 24). 
-                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"sxfqPHnj","properties":{"formattedCitation":"(Stamatatos, 2009, S. 24)","plainCitation":"(Stamatatos, 2009, S. 24)"},"citationItems":[{"id":9112,"uris":["http://zotero.org/users/677080/items/BIH6LCQ6"],"uri":["http://zotero.org/users/677080/items/BIH6LCQ6"],"itemData":{"id":9112,"type":"article-journal","title":"A Survey of Modern Authorship Attribution Methods","container-title":"J. Am. Soc. Inf. Sci. Technol.","page":"538–556","volume":"60","issue":"3","source":"ACM Digital Library","abstract":"Authorship attribution supported by statistical or computational methods has a long history starting from the 19th century and is marked by the seminal study of Mosteller and Wallace (1964) on the authorship of the disputed “Federalist Papers.” During the last decade, this scientific field has been developed substantially, taking advantage of research advances in areas such as machine learning, information retrieval, and natural language processing. The plethora of available electronic texts (e.g., e-mail messages, online forum messages, blogs, source code, etc.) indicates a wide variety of applications of this technology, provided it is able to handle short and noisy text from multiple candidate authors. In this article, a survey of recent advances of the automated approaches to attributing authorship is presented, examining their characteristics for both text representation and text classification. The focus of this survey is on computational requirements and settings rather than on linguistic or literary issues. We also discuss evaluation methodologies and criteria for authorship attribution studies and list open questions that will attract future work in this area. © 2009 Wiley Periodicals, Inc.","DOI":"10.1002/asi.v60:3","ISSN":"1532-2882","author":[{"family":"Stamatatos","given":"Efstathios"}],"issued":{"date-parts":[["2009",3]]}},"locator":"24"}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"} ?>
-                Das bedeutet, solche Modelle, die auf der Distribution von Buchstaben-N-Grammen beruhen, sind, gemessen an einem Goldstandard, am erfolgreichsten. Allein: Solche Modelle lassen sich nicht linguistisch deuten, da völlig unklar ist, was sie eigentlich messen. Ist es Stil, Thema, Textsorte, …? Es handelt sich also weder um eine valide, noch um eine deutbare Kategorie (insbesondere, wenn das statistische Modell nicht einsehbar ist). Für spezifische Aufgaben der Autorschaftsattribution mag das ausreichend sein, aber bereits für forensische Anwendungen, beispielsweise vor Gericht, ist eine solche Modellierung fragwürdig und gefährlich. Und für eine linguistische Deutung des Phänomens Autorschaftsstil ist sie gänzlich unbrauchbar.<ref target="ftn2" n="2"/>
-            </p>
-            <p>Die Kritik geht jedoch nicht nur in Richtung des Textminings und der Computerlinguistik, manchmal nicht-valide Kategorien einzusetzen (was zudem oft für die dortigen Zwecke auch sinnvoll ist), sondern auch in die Richtung der Linguistik: Die Computer- und die Korpuslinguistik zeigen beide gleichermaßen, wie wichtig es ist, auch abstrakte Kategorien so zu definieren versuchen, dass überhaupt eine Chance besteht, sie für eine quantitative Analyse operationalisierbar zu machen. Wenn eine linguistische Kategorie so vage ist, dass sich selbst (geschulte) Menschen uneinig darüber sind, wenn sie an authentischem Sprachegebrauch angewendet werden, scheitert die quantitativ-maschinelle Lösung unweigerlich.</p>
-            <p>2) Die Ergebnisse von quantitativen Analysen sind nicht Antworten auf Fragestellungen, sondern neue Daten, die vor einem geistes- und sozialwissenschaftlichen Hintergrund genauso hermeneutisch gedeutet werden müssen, wie einzelne Texte. Das ist vielleicht das größte Missverständnis, wenn Textminer und Computerlinguistinnen mit Korpuslinguistinnen zusammenarbeiten: Erstere wollen, dass ein Werkzeug ein Ergebnis hervorbringt, das an einem Goldstandard evaluiert werden kann. Das Ergebnis ist dann im Einzelfall richtig oder falsch und in der Gesamtheit genügend präzise oder nicht. Das Ergebnis ist dann auch im Idealfall die Lösung der Forschungsfrage. Bei den meisten geistes- und sozialwissenschaftlichen Fragestellungen beginnt auf der Grundlage dieser Ergebnisse jedoch ein Interpretationsprozess, um (meist in Kombination mit weiteren Analysen) eine plausible Deutung zu ermöglichen – eine vorläufige Deutung. Die Stärke der Geistes- und Sozialwissenschaften liegt dabei ja gerade darin, dass in ihrer Methodologie ein Zweifeln inhärent ist, mit dem die „gegenwärtig besiegelten Bedeutungen jeweils eingeklammert oder angezweifelt [werden], um zu prüfen, inwiefern sich nach rationalem Ermessen nicht bessere Lösungen, überlegenere Interpretationen oder zustimmungsfähigere Regelungen finden lassen“ (Honneth, 2016, S. 312). 
-                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"a207f3j33jm","properties":{"formattedCitation":"(Honneth, 2016, S. 312)","plainCitation":"(Honneth, 2016, S. 312)"},"citationItems":[{"id":9111,"uris":["http://zotero.org/users/677080/items/7IB9RNLN"],"uri":["http://zotero.org/users/677080/items/7IB9RNLN"],"itemData":{"id":9111,"type":"chapter","title":"Denaturierung der Lebenswelt. Vom dreifachen Nutzen der Geisteswissenschaften","container-title":"Texte zur Theorie der Geisteswissenschaften","collection-title":"Reclams Universal-Bibliothek","collection-number":"Nr. 19353","publisher":"Reclam","publisher-place":"Stuttgart","page":"283-315","source":"Gemeinsamer Bibliotheksverbund ISBN","event-place":"Stuttgart","ISBN":"978-3-15-019353-2","note":"OCLC: 932667571","language":"ger","editor":[{"family":"Panteos","given":"Athena"},{"family":"Rojek","given":"Tim"}],"author":[{"family":"Honneth","given":"Axel"}],"issued":{"date-parts":[["2016"]]}},"locator":"312"}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"} ?>
-            </p>
-            <p>Neben der Suche nach validen Analysekategorien und dem Hochhalten geisteswissenschaftlicher Prinzipien der Deutung sehe ich einen weiteren Aspekt, der helfen sollte, der Korpuslinguistik eine deutliche linguistische Prägung zu verleihen. Es ist der Versuch, korpuslinguistisches Arbeiten als „diagrammatisches Operieren“ aufzufassen. Mit dem Diagramm-Begriff folge ich Krämer (2016), 
-                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"a1t1dntdfrn","properties":{"formattedCitation":"(2016)","plainCitation":"(2016)"},"citationItems":[{"id":8547,"uris":["http://zotero.org/users/677080/items/BSGQZFK3"],"uri":["http://zotero.org/users/677080/items/BSGQZFK3"],"itemData":{"id":8547,"type":"book","title":"Figuration, Anschauung, Erkenntnis: Grundlinien einer Diagrammatologie","publisher":"Suhrkamp Verlag","number-of-pages":"373","source":"Google Books","abstract":"In unserer dreidimensionalen Welt sind wir umgeben von bebilderten und beschrifteten Flächen. Welche Rolle spielt die »Kulturtechnik der Verflachung« in unseren Wissenspraktiken? Worin besteht die kognitive Kreativität von Tabellen, Texten, Diagrammen und Karten, die für Erkenntnis und Wissenschaft unverzichtbar sind? Sybille Krämer untersucht, wie synoptische Anordnungen zu Denkzeugen werden. Sie analysiert die Erkenntniskraft der Linie als Wurzel eines diagrammatischen Denkens, dessen Spuren sich schon in den Erkenntnistheorien von Platon, Descartes, Kant und Wittgenstein sichern lassen. So entstehen die Konturen einer Diagrammatologie, in deren Rahmen sich die Orientierungsleistung und Imaginationskraft sichtbarer, räumlicher Schemata für das Erkennen erforschen lassen.","ISBN":"978-3-518-74467-3","note":"00000 \nGoogle-Books-ID: E8BlDQAAQBAJ","shortTitle":"Figuration, Anschauung, Erkenntnis","language":"de","author":[{"family":"Krämer","given":"Sybille"}],"issued":{"date-parts":[["2016",11,14]]}},"suppress-author":true}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"} ?>
-                die deutlich macht, dass Diagramme als Formen der Visualisierung von Daten „Denkzeuge“ sind, mit denen operiert wird: Ich kann Daten in einem Diagramm darstellen (auf einer Karte, in einem Netzwerkgraph, einem Punkteplot, …) und danach damit operieren, um neue Erkenntnisse daraus zu ziehen. Wenn man einem breiten Diagramm-Begriff folgt, wird deutlich, dass auch Listen, Tabellen und dergleichen diagrammatischen Charakter haben (Siegel, 2009; Steinseifer, 2013). 
-                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"a2m4kclvdp1","properties":{"formattedCitation":"(Siegel, 2009; Steinseifer, 2013)","plainCitation":"(Siegel, 2009; Steinseifer, 2013)"},"citationItems":[{"id":7029,"uris":["http://zotero.org/users/677080/items/E99KT85J"],"uri":["http://zotero.org/users/677080/items/E99KT85J"],"itemData":{"id":7029,"type":"book","title":"Tabula: Figuren der Ordnung um 1600","publisher":"Akademie-Verlag","publisher-place":"Berlin / Boston","source":"Open WorldCat","event-place":"Berlin / Boston","URL":"http://search.ebscohost.com/login.aspx?direct=true&scope=site&db=nlebk&db=nlabk&AN=711178","ISBN":"978-3-05-006222-8","shortTitle":"Tabula","language":"German","author":[{"family":"Siegel","given":"Steffen"}],"issued":{"date-parts":[["2009"]]},"accessed":{"date-parts":[["2015",4,1]]}}},{"id":6261,"uris":["http://zotero.org/users/677080/items/EF232UIW"],"uri":["http://zotero.org/users/677080/items/EF232UIW"],"itemData":{"id":6261,"type":"article-journal","title":"Texte sehen – Diagrammatologische Impulse für die Textlinguistik","container-title":"Zeitschrift für germanistische Linguistik","page":"8-39","volume":"41","issue":"1","source":"www.degruyter.com","abstract":"AbstractDiagrams are used to make complex relationships and proportions visually clear. Their underlying semiotic structure and their potential to generate an understanding of the complex phenomena they are referring to turn diagrams into distinctive media of representation and are the focus of a current debate in philosophy and cultural theory. Under the heading of ‘diagrammatics’ (Diagrammatik) or ‘diagrammatology’ (Diagrammatologie), the schematic iconicity (abstractivity) and the operational character (operativity) of diagrammatic reasoning – both central insights in Charles Sanders Peirce’s semiotic philosophy – are promoted in the debate as key concepts for cultural analysis.The paper outlines the discussion and draws on these two central concepts to argue that visual shape is a constitutive dimension of textuality. Written texts, even purely ‘verbal’ ones, are not only designed to be read, but can always be interpreted – or ‘seen’ – in terms of spatial relationships on a page: the shapes of lines and paragraphs often suffice to identify the genre of a text before a single word is read. But serving on their own as contextualisation cues is merely a side effect of the functions that the visual relationships of verbal parts have within a text: these relationships primarily allow for a flexible form of coherence and help readers navigate their way through complex texts. The paper shows how a diagrammatically informed pragmatic analysis can account for these functions, which have rarely been addressed within the linguistics of written discourse so far and are largely overlooked by both recent typographic and multimodal approaches alike. The paper concludes by outlining three key areas for future research: (1) the relationships between verbal and visual units on the page (or the screen), (2) the pragmatics of lists and tables as prototypes of diagrammatically structured text-parts; and (3) the diagrammatic character of epistemic writing.","author":[{"family":"Steinseifer","given":"Martin"}],"issued":{"date-parts":[["2013"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"} ?>
-                Dies sind nun aber Formen, die in der Korpuslinguistik zentral sind: Die Keyword in Context-Liste (zurückgehend etwa auf Zettelkästen im 16. Jahrhundert) etwa kann als Keimzelle eines völlig neuen Textverständnisses angesehen werden, mit dem die Einheit des Textes zerstört wird, um eine neue Sicht auf Textdaten zu gewinnen. Viele weitere Formen der Anordnung von Textdaten spielen ebenfalls wichtige Rollen, entscheidend etwa die Überführung von Textdaten in den Vektorraum, in dem operiert werden kann (z.B. in Form geometrischer Operationen – Lagen von Vektoren und ihren Winkeln zueinander). Aber auch die Erfindung der Partiturdarstellung bei Gesprächstrankripten, mit der überhaupt erst eine moderne Gesprächslinguistik möglich wurde, zeigt die Kraft von diagrammatischen Umformungen, um Daten neu lesbar zu machen. Hinter diesen diagrammatischen Umformungen stecken diagrammatische Grundfiguren (Bubenhofer im Druck b), die in den Geisteswissenschaften generell wirkmächtig sind.
-            </p>
-            <p>Ich meine, es lohnt sich, korpuslinguistisches Arbeiten unter diagrammatischer Perspektive zu reflektieren, um die Mechanismen und Möglichkeiten der Gegenstandskonstitution besser zu verstehen. Die Digitalität der Daten und Methoden erlaubt dabei neue Transformationen und macht Daten, egal welcher Modalität, miteinander verrechenbar. Aber die diagrammatischen Grundfiguren führen zu unterschiedlichen Gegenständen: Repräsentiert in einem Vektorraum geben die gleichen Daten einen völlig anderen Gegenstand ab als dargestellt in einer Keyword in Context-Liste. Und es müsste vordringliches Ziel sein, noch ganz andere Formen der diagrammatischen Darstellung von Text zu finden, um damit andere Gegenstandskonstitutionen und Fragestellungen zu ermöglichen. Die algorithmische Repräsentation der Daten folgt dabei ebenfalls den diagrammatischen Transformationen (Beispiel Vektorraum) und kann daher nicht unabhängig davon gedacht werden. Für eine hermeneutische Deutung brauchbare Analysekategorien zu erarbeiten, bedeutet deshalb auch, die damit verbundenen diagrammatischen Operationen zu reflektieren. Dafür nötig sind semiotische und natürlich auch wissenschaftstheoretische Überlegungen, die für alle Disziplinen, die mit maschineller Textanalyse befasst sind, relevant sein müssten.</p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung</head>
+                <p>Der Beitrag diskutiert kritisch, welche nicht allein arbeitsökonomischen, sondern vor allem intellektuellen, methodologischen und wissenschaftstheoretischen "Kosten" mit der Digitalisierung und dem dadurch etablierten Fokus auf Fragen der Interoperabilität entstehen. Die deutlichen wissenschaftlichen Vorteile von Interoperabilität müssen nämlich einem Umbau (und z.T. Rückbau) in wissenschaftlichen Modellierungen und im Verständnis wissenschaftlicher Erkenntnisvermehrung gegenüber gestellt werden. Dabei wird im Sinne des doppelten Genitivs "Kritik der digitalen Vernunft" sowohl das naheliegende Phänomen diskutiert, dass die digitale Transformation Hoffnungen weckt und Lösungen wissenschaftlich-methodologischer Schwierigkeiten nahelegt, die sich (z.T. erst bei der Implementierung) als wissenschaftlich nicht akzeptabel erweisen, als auch der umgekehrte Fall, dass die digitale Transformation ein kritisches Umdenken in der Ausrichtung der eigenen wissenschaftlichen Arbeit und eine Umorientierung wissenschaftlicher Ambitionen erzwingt.</p>
+                <p>Diese Diskussion wird im Durchgang durch einige beispielhafte Entwicklungen im seit vier Jahren laufenden Projekt "Die Schule von Salamanca" geführt, bevor ein Versuch der Verallgemeinerung unternommen wird. Dass Interoperabilität signifikante wissenschaftliche Kosten mit sich bringt, heißt im Übrigen nicht, dass diese nicht womöglich durch die Vorteile aufgewogen würden. Es ist allerdings in der Orientierung der Projektarbeit wichtig, sich an den „Grenzen der Interoperabilität“ abzuarbeiten und sich regelmäßig beide Seiten dieser Bilanz vorzulegen.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Interoperabilität</head>
+                <p>Mit der digitalen Transformation sind die Möglichkeiten des überregionalen und interdisziplinären Austauschs und der Weiterverwendung von Forschungsdaten in einer ganz neuen Weise möglich geworden. So hat sich der Begriff der Interoperabilität als zentrales Paradigma in den Digital Humanities etabliert, um den Anspruch zu beschreiben, diese Möglichkeiten methodisch auszubauen und ein Evaluationskriterium für Forschungsleistungen und -ergebnisse anzubieten. Interoperabilität ist auf mehreren Ebenen zu verstehen (vgl. Gradmann 2009) und wird auf den konkreten technischen und syntaktischen Ebenen vor allem durch Standards für Datenformate und Schnittstellen, sowie auf der pragmatischen Ebene u.a. durch den Bezug auf Normdaten realisiert. Mag Interoperabilität auf der semantischen Ebene schließlich vor einiger Zeit noch als ein utopisches Ziel angemutet haben (vgl. Baumann 2011), so haben sich etwa durch die Selbstreflexion digitaler geisteswissenschaftlicher Forschungs-Arbeit (Hughes et al. 2016) oder in der Beschreibung von kulturellen und geistigen Phänomenen (Le Boeuf et al. 2017; Stead et al. 2015) deutliche Fortschritte in der Modellierbarkeit geisteswissenschaftlicher Phänomene und in der Verfügbarkeit und Relationierbarkeit von semantischen Forschungsdaten und ‑ergebnissen ergeben.</p>
+                <p>Wie Forschungsprojekte den derart gewachsenen Interoperabilitätserwartungen gerecht werden können, kann jedoch kaum allgemein, sondern nur im Rahmen ihrer jeweils spezifischen Arbeit ermittelt werden (zu einer projektunabhängig formulierten Handreichung vgl. aber Beer et al. 2014). Dabei stellt sich die Frage nach dem Nutzen, den Grenzen und den Kosten interoperabler Techniken im Projekt "Die Schule von Salamanca" insofern auf besondere Weise, als dieses einerseits über einen langen Zeitraum und mit Blick auf eine langzeitverfügbare Erschließung von relativ großen (Text-)Datenmengen operiert, andererseits aber auch die Erforschung innovativer Textaufbereitungsverfahren und Webanwendungsfunktionen zur Ermöglichung neuartiger Forschungserkenntnisse für die beteiligten Fachwissenschaften anstrebt.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Das Projekt</head>
+                <p>Im durch die Akademie der Wissenschaften und der Literatur | Mainz geförderten und insgesamt auf 18 Jahre angelegten Projekt "Die Schule von Salamanca. Eine digitale Quellensammlung und ein Wörterbuch ihrer juristisch-politischen Sprache" (Duve et al. 2013) werden voraussichtlich insgesamt etwa 120 Texte der gleichnamigen Schule iberischer Theologen und Juristen des 16. und 17. Jahrhunderts nach und nach digitalisiert und als Volltexte erfasst. Die in TEI-XML ausgezeichneten und aufwändig normalisierten Texte werden nicht nur strukturell, sondern auch im Hinblick auf als Linked Open Data (LOD) referenzierbare Entitäten – etwa Personennamen – erschlossen; dabei werden die Text-Digitalisate, die Volltexte und die LOD-Datensammlungen online bereit gestellt. Hinzu kommt ein digitales (und schließlich auch gedrucktes) Wörterbuch, in dem sowohl biographische Informationen zu den in der Edition vertretenen Autoren als auch zentrale Begriffe der Rechts- und politischen Ideengeschichte und deren Entwicklung im Diskussionszusammenhang der "Schule von Salamanca" erfasst werden. In diesen beiden Säulen des Projekts ist die Erschließung und Repräsentation der Struktur der internen Verweise (Autoren, die sich wechselseitig zitieren, Wörterbuchartikel, die auf Textstellen verweisen) eines der zentralen wissenschaftlichen Ergebnisse.</p>
+                <p>Die sowohl für die Benutzung als auch für die Bereitstellung der Daten als zentrales Portal dienende Webseite des Projekts (
+                    <ref target="https://www.salamanca.school/">https://salamanca.school/</ref>) ist technisch in Form einer komplex modularisierten Webanwendung implementiert, die fachwissenschaftlichen BenutzerInnen eine Vielzahl von Funktionen bieten soll, z.B. eine geräteübergreifende und performante Darstellung der Editionstexte, eine intelligente Suchfunktion, die den frühmodern-lateinischen und -spanischen Volltexten angepasst ist, und eine feinkörnige Referenzierung der Texteinheiten. Durch technische Mechanismen (content negotiation, API, RESTful Microservice-Architektur), Exportfunktionen (abschnitts-, text- oder corpusweise, plaintext-, TEI- oder andere Formate) und die Orientierung an Formatstandards wird Anforderungen der Interoperabilität explizit Rechnung getragen. Der Quelltext der Webanwendung wird bis Januar 2018 ebenfalls veröffentlicht und fortan in Open Source weiterentwickelt werden.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Interoperabilitäts-"Konflikte": Einige Beispiele</head>
+                <p>Einhergehend mit der Open Source-Veröffentlichung der Webanwendung soll über einige repräsentative Aspekte der Projektarbeit reflektiert werden, in denen sich an vermeintlich technischen Herausforderungen Konflikte um die wissenschaftlichen Implikationen von Interoperabilität entzünden:</p>
+                <div type="div2" rend="DH-Heading2">   
+                    <head>a) Textrepräsentation:</head>
+                        <p>Während in diesem Kernbereich der Projektarbeit gegenwärtig noch mit einem eigens spezifizierten und den bisherigen Forschungsanforderungen entsprechenden "idiosynkratischen" TEI-Format gearbeitet wird und die Datenmodellierung somit eher als "research-driven" (vgl. Flanders/Jannidis 2016: 233) bezeichnet werden kann, wird eine langfristige Verfügbarmachung der Texte in einem interoperableren, "curation-driven" Format wie etwa 
+                        <hi rend="italic">TEI Simple</hi> (Text Encoding Initiative Consortium 2016) erwägt. Dies ist nicht zuletzt auch durch den Blick auf die Wissenschaftsförderung motiviert (vgl. etwa DFG 2015, Anhang), die die Interoperabilität von Textauszeichnungen dem erst noch nachzuweisenden Erkenntnisgewinn 'reicher' Annotationen gegenüberstellt. Nun beinhaltet das XML-Ökosystem der Edition allerdings auch Informationen wie etwa Metadaten zur Zeichenkodierung (die nicht zuletzt Interoperabilitäts-Funktionen erfüllen), die sich nach derzeitigem Stand nicht ohne weiteres in 
+                        <hi rend="italic">TEI Simple</hi> abbilden lassen. So ergibt sich eine nur durch einigen Aufwand aufzulösende Spannung zwischen detaillierter wissenschaftlicher Gegenstandsbeschreibung und Maßnahmen zur Förderung der Nachnutzbarkeit der eigenen Ressourcen (z.B. des Angebots mehrerer alternativer Datenformate), und es stellt sich die Frage, wann und durch wen jener Aufwand erbracht werden soll. Selbst eine gegenüber den "Experten"-Annotationen tolerantere Zielvorgabe, die sich etwa am Konzept des 'Interchange' (als einer durch menschliche Interpretation vermittelten Nachnutzung, vgl. Holmes 2017, Baumann 2011) orientiert und im Vergleich zum Modell einer bruchlosen Weiterverwertbarkeit der Daten durch automatische Prozesse gemäßigtere Ansprüche erhebt, sieht sich ähnlichen Fragen der Standardisierung von Schnittstellen und Datenformaten ausgesetzt.
+                        </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>b) Modulare Infrastruktur:</head>
+                    <p>Im Zuge der Einrichtung einer Linked Open Data-Infrastruktur haben wir 
+                        <hi rend="italic">content-negotiation</hi>-Mechanismen, Weiterleitungen und die Adressierung unterschiedlicher Funktionen über verschiedene Server und Server-Adressen eingeführt. Diese Entwicklung legt eine Fortsetzung nahe, die den Umbau der Web-Anwendung insgesamt in ein Ensemble von Microservices bedeuten würde (vgl. Wolff 2016), in dem Daten und Dienste aufs Engste verschränkt sind. Während dies die Interoperabilität, d.h. konversions- und barrierearme Nachnutzbarkeit der Daten enorm verbessert (etwa dadurch, dass auf verschiedenen Ebenen in verschiedenen Formaten und verschiedenen Granularitäten Daten und Dienste verfügbar sind, vgl. Turska et al. 2016) hat es jedoch auch den Nachteil, dass der Daten- und Anwendungszusammenhang – der eben auch 
+                        <hi rend="italic">als Zusammenhang</hi> eine Forschungsleistung darstellt – nur in einer sehr viel aufwändigeren Weise repliziert und ggf. archiviert werden kann: Während erste Infrastrukturen die Archivierung und langfristige Zugänglichkeit von Javascript-Anwendungen erlauben sollen (vgl. Bingert/Buddenbohm 2016; kritischer: Brunelle 2016), so ist dies für eine solche Infrastruktur mit mehreren kooperierenden und kommunizierenden Servern nur sehr viel schwerer vorstellbar.
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>c) Adressierung, Versionierung und Persistenz:</head>
+                    <p>Im Zusammenhang mit der Adressierung von einzelnen Textpassagen haben wir ein System eingeführt, das sowohl semantische Aussagen über Text-Entitäten als auch die Realisierung der Verweisstrukturen auf implementierungs- und plattformunabhängige, intellektuell intuitive Weise erlaubt (im Anschluss an das Canonical Text Services-Schema, Blackwell/Smith 2014; vgl. Wagner 2016). Diese Struktur der komplexen Verknüpfung von Ressourcen und Entitäten untereinander verträgt sich aktuell nicht mit etablierten Methoden, Dokumente persistent zu identifizieren und die Überarbeitungshistorie der Ressourcen in einer Versionierung transparent und nachvollziehbar zu machen. Diese Methoden spezifizieren nämlich zumeist den Umgang mit einem ganzen Dokument und vernachlässigen den Bedarf, Entitäten innerhalb des Dokuments (persistent) zu referenzieren oder die Einbettung jenes Dokuments in ein Corpus zu verwalten. Wenn beispielsweise ein Dokument verändert wird, muss es unter anderem normalerweise eine neue persistente ID erhalten - damit entsteht ein Aktualisierungs- oder mindestens Kontrollbedarf bei den Querverweisen innerhalb des Dokuments sowie in allen weiteren Dokumenten des Corpus (und in unserem Falle in allen Artikeln des Wörterbuchs), welche Verweise auf das aktuelle Dokument enthalten. Mechanismen wie das Memento framework (van de Sompel/Nelson 2015) bieten eine transparente und flexible Versionierung, die für Web-Dokumente wie für Semantische Ressourcen gleichermaßen funktioniert, sind jedoch in ihrer Integration mit PID-Systemen ebenfalls noch nicht erprobt. Versteht man diese Motive in einem Interoperabilitäts-Zusammenhang, lesen sie sich wie ein Konflikt zwischen etablierten Lösungen auf verschiedenen Interoperabilitäts-Ebenen und es fragt sich, wie kanonische Verweissysteme (funktional-pragmatische Ebene nach Gradmann 2009) und Persistent Identifiers (technische Ebene) miteinander harmonieren können.</p>
+                </div>
+             </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Diskussion</head>
+                <p>Die hier am Beispiel digitaler Projektarbeit aufgezeigten Probleme etwa einer gesteigerten Spannung zwischen „Interoperabilität und Expressivität“ (Baumann 2011) weisen auf grundlegendere wissenschafts- und erkenntnistheoretische Fragestellungen hin, die nicht zuletzt das Selbstverständnis der Digital Humanities und die mit ihnen verbundenen Hoffnungen berühren: Ist Expertenwissen am Ende vielleicht gar nicht "interoperabel"? Erweisen sich die Möglichkeiten, durch Verknüpfung digitaler Forschungsdaten und ‑anwendungen verschiedenster Kontexte neuartige Einsichten zu generieren, als stark begrenzt? Eine wissenschaftspolitische Pointe des Beitrags besteht so darin, auf die entscheidende Rolle aufmerksam zu machen, die die Erwartung darüber spielt, an welchem Ort – zwischen den Disziplinen oder “tief” in den fachwissenschaftlichen Spezialdiskursen – wissenschaftlicher Fortschritt erzielt wird.</p>
+            </div>
         </body>
         <back>
-         <div type="notes">
-            <note xml:id="ftn1" n="1" rend="footnote text"> Dieses „extended Abstract“ ist eine verkürzte und angepasste Fassung des stärker linguistisch ausgerichteten Beitrages von Bubenhofer (im Druck a).</note>
-            <note xml:id="ftn2" n="2" rend="footnote text"> Vgl. für eine aktuelle linguistisch motivierte Diskussion von stilometrischen Messmethoden für die Autorschaftsattribution Büttner et al. (2017). </note>
-         </div>
          <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Bubenhofer, Noah </hi>(im Druck a): Wenn „Linguistik“ in „Korpuslinguistik“ bedeutungslos wird. Vier Thesen zur Zukunft der Korpuslinguistik. In: Osnabrücker Beiträge zur Sprachtheorie (OBST).</bibl>
-                    <bibl><hi rend="bold">Bubenhofer, Noah </hi>(im Druck b): Visual Linguistics: Plädoyer für ein neues Forschungsfeld. In: Bubenhofer, Noah / Kupietz, Marc (Hg.): Visualisierung sprachlicher Daten. Heidelberg: HeiUP.</bibl>
-                    <bibl><hi rend="bold">Büttner, Andreas / Dimpel, Friedrich Michael / Evert, Stefan / Jannidis, Fotis / Pielström, Steffen / Proisl, Thomas / Reger, Isabella / Schöch, Christof / Vitt, Thorsten </hi>(2017): »Delta« in der stilometrischen Autorschaftsattribution. In: Zeitschrift für digitale Geisteswissenschaften. text/html Format. DOI: 10.17175/2017_006.</bibl>
-                    <bibl><hi rend="bold">Honneth, Axel </hi>(2016): Denaturierung der Lebenswelt. Vom dreifachen Nutzen der Geisteswissenschaften. In: Panteos, A./Rojek, T. (Hrsg.): 
-                        <hi rend="italic">Texte zur Theorie der Geisteswissenschaften</hi>, 
-                        <hi rend="italic">Reclams Universal-Bibliothek</hi>. Stuttgart : Reclam, S. 283–315
+                    <bibl><hi rend="bold">Baumann, Syd </hi>(2011): “Interchange vs. Interoperability”, in: 
+                        <hi rend="italic">Proceedings of Balisage: The Markup Conference 2011</hi> 7, 
+                        <ref target="https://doi.org/10.4242/BalisageVol7.Bauman01">https://</ref>
+                        <ref target="https://doi.org/10.4242/BalisageVol7.Bauman01">
+                            <hi rend="Betont">doi</hi>
+                        </ref>
+                        <ref target="https://doi.org/10.4242/BalisageVol7.Bauman01">.org/</ref>
+                        <ref target="https://doi.org/10.4242/BalisageVol7.Bauman01">10.4242/BalisageVol7.Bauman01</ref> [letzter Zugriff: 13.01.2018].
                     </bibl>
-                    <bibl><hi rend="bold">Krämer, Sybille </hi>(2016): 
-                        <hi rend="italic">Figuration, Anschauung, Erkenntnis: Grundlinien einer Diagrammatologie.</hi> Frankfurt/Main: Suhrkamp Verlag.
+                    <bibl><hi rend="bold">Beer, Nikolaos / Herold, Kristin / Kolbmann, Wibke / Kollatz, Thomas / Romanello, Matteo / Rose, Sebastian / Walkowski, Niels-Oliver </hi>(2014): "Interdisciplinary Interoperability", DARIAH-DE Working Papers Nr. 3, 
+                        <ref target="http://nbn-resolving.de/urn.nbn.de.gbv:7-dariah-2014-1-0">http://nbn-resolving.de/urn.nbn.de.gbv:7-dariah-2014-1-0</ref> [letzter Zugriff: 18.01.2018].
                     </bibl>
-                    <bibl><hi rend="bold">Nakov, Preslav/Ritter, Alan/Rosenthal, Sara/Stoyanov, Veselin/Sebastiani, Fabrizio </hi>(2016): SemEval-2016 Task 4: Sentiment Analysis in Twitter. In: 
-                        <hi rend="italic">Proceedings of the 10th International Workshop on Semantic Evaluation</hi>, 
-                        <hi rend="italic">SemEval ’16</hi>. San Diego, California : Association for Computational Linguistics.
+                    <bibl><hi rend="bold">Bingert, Sven / Buddenbohm, Stefan </hi>(2016): "Die HDC-Anwendungskonservierung - ein Dienst zur Archivierung und Bereitstellung komplexer Forschungsergebnisse", in: 
+                        <hi rend="italic">GWDG-Nachrichten</hi> 11/2016: 7-9 
+                        <ref target="https://www.gwdg.de/documents/20182/27257/GN_11-2016_www.pdf">https://www.gwdg.de/documents/20182/27257/GN_11-2016_www.pdf</ref> [letzter Zugriff: 23.09.2017].
                     </bibl>
-                    <bibl><hi rend="bold">Siegel, Steffen </hi>(2009): 
-                        <hi rend="italic">Tabula: Figuren der Ordnung um 1600</hi>. Berlin / Boston : Akademie-Verlag.
+                    <bibl><hi rend="bold">Blackwell, Christopher / Smith, Neel </hi>(2014): "The Canonical Text Services protocol, version 5.0.rc.2", 
+                        <ref target="https://cite-architecture.github.io/cts_spec/">https://cite-architecture.github.io/cts_spec/</ref> [letzter Zugriff: 25.09.2017].
                     </bibl>
-                    <bibl><hi rend="bold">Stamatatos, Efstathios </hi>(2009): A Survey of Modern Authorship Attribution Methods. In: 
-                        <hi rend="italic">J. Am. Soc. Inf. Sci. Technol.</hi> Bd. 60, Nr. 3, S. 538–556
+                    <bibl><hi rend="bold">Brunelle, Justin F. / Kelly, Mat / Weigle, Michele C. / Nelson, Michael L. </hi>(2016): "The impact of JavaScript on archivability", in: 
+                        <hi rend="italic">International Journal on Digital Libraries</hi> 17/2: 95–117, 
+                        <ref target="https://doi.org/10.1007/s00799-015-0140-8">https://doi.org/10.1007/s00799-015-0140-8</ref> [letzter Zugriff: 25.09.2017].
                     </bibl>
-                    <bibl><hi rend="bold">Steinseifer, Martin </hi>(2013): Texte sehen – Diagrammatologische Impulse für die Textlinguistik. In: 
-                        <hi rend="italic">Zeitschrift für germanistische Linguistik</hi> Bd. 41, Nr. 1, S. 8–39
+                    <bibl><hi rend="bold">DFG </hi>(2015): "Förderkriterien für wissenschaftliche Editionen in der Literaturwissenschaft", 
+                        <ref target="http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/foerderkriterien_editionen_literaturwissenschaft.pdf">http://www.dfg.de/download/pdf/foerderung/grundlagen_dfg_foerderung/informationen_fachwissenschaften/geisteswissenschaften/foerderkriterien_editionen_literaturwissenschaft.pdf</ref> [letzter Zugriff: 12.1.2018].
                     </bibl>
+                    <bibl><hi rend="bold">Duve, Thomas / Lutz-Bachmann, Matthias / Birr, Christiane / Niederberger, Andreas </hi>(2013): "Die Schule von Salamanca: eine digitale Quellensammlung und ein Wörterbuch ihrer juristisch-politischen Sprache. Zu Grundanliegen und Struktur eines Forschungsvorhabens". Mainz: Akademie der Wissenschaften und der Literatur. 
+                        <ref target="http://nbn-resolving.de/urn/resolver.pl?urn:nbn:de:hebis:30:3-324011">http://nbn-resolving.de/urn/resolver.pl?urn:nbn:de:hebis:30:3-324011</ref> [letzter Zugriff: 12.1.2018].
+                    </bibl>
+                    <bibl><hi rend="bold">Flanders, Julia / Jannidis, Fotis </hi>(2016): "Data Modeling", in: Schreibman, Susan / Siemens, Ray / Unsworth, John (eds.): 
+                        <hi rend="italic">A New Companion to Digital Humanities</hi>. Chichester: Wiley Blackwell 229-237.
+                    </bibl>
+                    <bibl><hi rend="bold">Gradman, Stefan </hi>(2009): "Interoperability. A key concept for large scale, persistent digital libraries". 
+                        <hi rend="italic">Digital Preservation Europe</hi>
+                        <ref target="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.363.6311&amp;rep=rep1&amp;type=pdf">http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.363.6311&amp;rep=rep1&amp;type=pdf</ref> [letzter Zugriff: 25.09.2017].
+                    </bibl>
+                    <bibl><hi rend="bold">Holmes, Martin </hi>(2017): "Whatever happened to Interchange?", in: 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi> 32 (Issue suppl_1): i63–i68 
+                        <ref target="https://doi.org/10.1093/llc/fqw048">https://doi.org/10.1093/llc/fqw048</ref> [letzter Zugriff: 25.09.2017].
+                    </bibl>
+                    <bibl><hi rend="bold">Hughes, Lorna / Constantopoulos, Panos / Dallas, Costis </hi>(2016): “Digital Methods in the Humanities: Understanding and Describing their Use across the Disciplines“, in: Susan Schreibman / Ray Siemens / John Unsworth (eds.), 
+                        <hi rend="italic">A New Companion to Digital Humanities</hi>, Wiley &amp; Sons, 150–170, 
+                        <ref target="https://doi.org/10.1111/b.9781118680643.2016.00013.x">https://doi.org/10.1111/b.9781118680643.2016.00013.x</ref> [letzter Zugriff: 13.1.2018].
+                    </bibl>
+                    <bibl><hi rend="bold">Le Boeuf, Patrick / Doerr, Martin / Ore, Christian Emil / Stead, Stephen et al. </hi>(2017): “Definition of the CIDOC Conceptual Reference Model”, Version 6.2.2, 
+                        <ref target="http://www.cidoc-crm.org/sites/default/files/2017-09-30%23CIDOC%20CRM_v6.2.2_esIP.pdf">http://www.cidoc-crm.org/sites/default/files/2017-09-30%23CIDOC%20CRM_v6.2.2_esIP.pdf
+                        </ref> [letzter Zugriff: 13.1.2018].
+                    </bibl>
+                    <bibl><hi rend="bold">Schmidt, Desmond </hi>(2014): “Towards an Interoperable Digital Scholarly Edition”, in: 
+                        <hi rend="italic">Journal of the Text Encoding Initiative</hi> 7, 
+                        <ref target="https://doi.org/10.4000/jtei.979">https://doi.org/10.4000/jtei.979</ref> [letzter Zugriff: 13.1.2018].
+                    </bibl>
+                    <bibl><hi rend="bold">Stead, Stephen / Doerr, Martin et al. </hi>(2015): “CRMinf: the Argumentation Model. An Extension of CIDOC-CRM to support argumentation”, 
+                        <ref target="http://www.cidoc-crm.org/crminf/sites/default/files/CRMinf-0.7(forSite).pdf">
+                            <hi rend="Internetverknüpfung">http://www.cidoc-crm.org/crminf/sites/default/files/CRMinf-0.7%28forSite%29.pdf</hi>
+                        </ref> [letzter Zugriff: 13.1.2018].
+                    </bibl>
+                    <bibl><hi rend="bold">Text Encoding Initiative Consortium </hi>(2016): "TEI Simple" 
+                        <ref target="https://github.com/TEIC/TEI-Simple">https://github.com/TEIC/TEI-Simple</ref> [letzter Zugriff: 25.09.2017].
+                    </bibl>
+                    <bibl><hi rend="bold">Turska, Magdalena / Cummings, James / Rahtz, Sebastian </hi>(2016): "Challenging the Myth of Presentation in Digital Editions", in: 
+                        <hi rend="italic">Journal of the Text Encoding Initiative</hi> 9 
+                        <ref target="http://jtei.revues.org/1453">http://jtei.revues.org/1453</ref> [letzter Zugriff: 25.09.2017].
+                    </bibl>
+                    <bibl><hi rend="bold">van de Sompel, Herbert / Nelson, Michael L. </hi>(2015): "Reminiscing about 15 Years of Interoperability Efforts", in: 
+                        <hi rend="italic">D-Lib Magazine</hi> 21 (11/12) 
+                        <ref target="http://www.dlib.org/dlib/november15/vandesompel/11vandesompel.html">http://www.dlib.org/dlib/november15/vandesompel/11vandesompel.html</ref> [letzter Zugriff: 25.09.2017].
+                    </bibl>
+                    <bibl><hi rend="bold">Wagner, Andreas </hi>(2016): "What’s in a URI? Part I: The School of Salamanca, the Semantic Web and Scholarly Referencing" 
+                        <ref target="https://blog.salamanca.school/2016/11/15/whats-in-a-uri-part-1/">https://blog.salamanca.school/2016/11/15/whats-in-a-uri-part-1/</ref> [letzter Zugriff: 22.09.2017].
+                    </bibl>
+                    <bibl><hi rend="bold">Wolff, Eberhard </hi>(2016): "Microservices. Grundlagen flexibler Softwarearchitekturen". Heidelberg: dpunkt.verlag.</bibl>
                 </listBibl>
             </div>
       </back>

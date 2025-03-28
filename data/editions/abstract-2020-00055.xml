@@ -1,45 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="174_final-WEIMER_Lukas_Redewiedergabe_in_Heftromanen_und_Hochliteratur" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="249_final-ANDRESEN_Melanie_Syntaktische_Profile_für_Interpretationen_j" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Redewiedergabe in Heftromanen und Hochliteratur</title>
+<title>Syntaktische Profile für Interpretationen jenseits der Textoberfläche</title>
 <author>
 <persName>
-<surname>Brunner</surname>
-<forename>Annelen</forename>
+<surname>Andresen</surname>
+<forename>Melanie</forename>
 </persName>
-<affiliation>Leibniz-Institut für Deutsche Sprache, Mannheim</affiliation>
-<email>brunner@ids-mannheim.de</email>
+<affiliation>Universität Hamburg, Deutschland</affiliation>
+<email>melanie.andresen@uni-hamburg.de</email>
 </author>
 <author>
 <persName>
-<surname>Jannidis</surname>
-<forename>Fotis</forename>
+<surname>Begerow</surname>
+<forename>Anke</forename>
 </persName>
-<affiliation>Julius-Maximilians-Universität Würzburg, Deutschland</affiliation>
-<email>fotis.jannidis@uni-wuerzburg.de</email>
+<affiliation>Hochschule für Angewandte Wissenschaften Hamburg</affiliation>
+<email>anke.begerow@haw-hamburg.de</email>
 </author>
 <author>
 <persName>
-<surname>Tu</surname>
-<forename>Ngoc Duyen Tanja</forename>
+<surname>Franken</surname>
+<forename>Lina</forename>
 </persName>
-<affiliation>Leibniz-Institut für Deutsche Sprache, Mannheim</affiliation>
-<email>tu@ids-mannheim.de</email>
+<affiliation>Universität Hamburg, Deutschland</affiliation>
+<email>lina.franken@uni-hamburg.de</email>
 </author>
 <author>
 <persName>
-<surname>Weimer</surname>
-<forename>Lukas</forename>
+<surname>Gaidys</surname>
+<forename>Uta</forename>
 </persName>
-<affiliation>Julius-Maximilians-Universität Würzburg, Deutschland</affiliation>
-<email>lukas.weimer@uni-wuerzburg.de</email>
+<affiliation>Hochschule für Angewandte Wissenschaften Hamburg</affiliation>
+<email>Uta.Gaidys@haw-hamburg.de</email>
+</author>
+<author>
+<persName>
+<surname>Koch</surname>
+<forename>Gertraud</forename>
+</persName>
+<affiliation>Universität Hamburg, Deutschland</affiliation>
+<email>gertraud.koch@uni-hamburg.de</email>
+</author>
+<author>
+<persName>
+<surname>Zinsmeister</surname>
+<forename>Heike</forename>
+</persName>
+<affiliation>Universität Hamburg, Deutschland</affiliation>
+<email>heike.zinsmeister@uni-hamburg.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2015-10-04T22:02:00Z</date>
+<date>2019-09-27T13:31:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -70,17 +86,15 @@
 <term>Vortrag</term>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Redewiedergabe</term>
-<term>Heftromane</term>
-<term>Genre</term>
-<term>Automatische Erkennung</term>
+<term>Interpretation</term>
+<term>Kollokationen</term>
+<term>Syntax</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Programmierung</term>
+<term>Inhaltsanalyse</term>
 <term>Annotieren</term>
-<term>Stilistische Analyse</term>
-<term>Sprache</term>
-<term>Literatur</term>
+<term>Kontextsetzung</term>
+<term>Methoden</term>
 <term>Text</term>
 </keywords>
 </textClass>
@@ -88,166 +102,549 @@
 </teiHeader>
 <text>
 <body>
+<p style="text-align:left; ">Viele Verfahren des Text Mining und Distant Reading beschränken sich auf eine wortbasierte Auswertung von Texten. Auch wenn auf Basis der Wortformen und ihrer linearen Abfolge bereits neue Perspektiven auf Texte gewonnen werden (z. B. mittels der Voyant Tools, Sinclair / Rockwell 2016), schöpfen diese Methoden das Potential von Texten bei Weitem nicht aus. Insbesondere, wenn die Auswertungsergebnisse Gegenstand weiterführender Interpretationen werden, z. B. um soziale Phänomene zu beschreiben, sehen wir einen Mehrwert in der Auswertung zusätzlicher sprachlicher Strukturen. Konkret verwenden wir syntaktische Annotationen, die präzisere Informationen zu Wortkombinationen liefern können, etwa „X ist Subjekt von Y“ anstelle von „X steht im Kontext von Y“. Zudem bestehen viele syntaktische Relationen über eine längere Distanz an der Oberfläche hinweg und können deshalb nur durch eine syntaktische Perspektive erfasst werden (z. B. Andresen / Zinsmeister 2017). Dies gilt für unterschiedliche Sprachen in unterschiedlichem Ausmaß. Das Deutsche verfügt über deutlich mehr Distanzstrukturen als das Englische, für das die meisten Analyseverfahren ursprünglich entwickelt wurden.</p>
+<p style="text-align:left; ">In diesem Beitrag vergleichen wir zwei Ansätze zur Berechnung von Kollokationen, einen oberflächenorientierten Ansatz und einen auf Dependenzannotationen basierten. An zwei Fallstudien aus den Fächern Kulturanthropologie und Pflegewissenschaft wird demonstriert, wie die beiden Ansätze eine qualitative Interpretation von Textdaten in Hinblick auf gesellschaftliche bzw. soziale Phänomene unterstützen können. Die Erstellung eines eindeutigen Goldstandards, der eine formale Evaluation erlauben würde, ist bei dieser Art Fragestellung nicht möglich. Stattdessen wird auf qualitative Weise das Potential dieser Analyse zur Bearbeitung der geistes- und sozialwissenschaftlichen Fragestellungen beschrieben.</p>
 <div rend="DH-Heading1" type="div1">
-<head>Einführung</head>
-<p style="text-align:left; ">Die Art und Weise, wie die Rede und Gedanken einer Figur im Erzähltext eingebunden werden, ist einer der traditionellen Aspekte der Narratologie (vgl. z.B. Genette 2010; Martínez/Scheffel 2016). Die vorgestellte Studie untersucht die Anteile unterschiedlicher Redewiedergabeformen im Vergleich zwischen zwei Literaturtypen von gegensätzlichen Enden des Spektrums: Hochliteratur – definiert als Werke, die auf der Auswahlliste von Literaturpreisen standen – und Heftromanen, massenproduzierten Erzählwerken, die zumeist über den Zeitschriftenhandel vertrieben werden und früher abwertend als „Romane der Unterschicht” (Nusser 1981) bezeichnet wurden. Unsere These ist, dass sich diese Literaturtypen hinsichtlich ihrer Erzählweise unterscheiden, und sich dies in den verwendeten Wiedergabeformen niederschlägt. Der Fokus der Untersuchung liegt auf der Dichotomie zwischen direkter und nicht-direkter Wiedergabe, die schon in der klassischen Rhetorik aufgemacht wurde (vgl. McHale 2014). </p>
-<p style="text-align:left; ">Die Studie geht von manuell annotierten Daten aus und evaluiert daran die Validität automatischer Annotationswerkzeuge, die im Anschluss eingesetzt werden, um die Menge des betrachteten Materials beträchtlich zu erweitern. </p>
-<p style="text-align:left; ">Zur Kontrastierung von Heftromanen und Hochliteratur mit quantitativen Methoden liegen bereits Studien vor, welche sich mit Fragen der sprachlichen und thematischen Komplexität beschäftigen (Jannidis/Konle/Leinen 2019a/2019b). Das verwendete Annotationssystem sowie die Erkenner wurden im Rahmen des Redewiedergabe-Projekts entwickelt (Brunner et al. 2019a/2019b).</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Voruntersuchung und Evaluation der automatischen Methoden </head>
-<p style="text-align:left; ">Für die Voruntersuchung wurden aus 22 Hochliteratur-Texten und 22 Heftromanen zufällige Textausschnitte von ca. 1000 Tokens gezogen. Da Heftromane typischerweise in Reihen mit unterschiedlichem Fokus erscheinen, betrachten wir auch das Verhalten dieser unterschiedlichen Heftroman-Genres. Die Heftroman-Ausschnitte wurden darum je zur Hälfte aus den Genres Liebesroman und Horrorroman gewählt. Die Texte wurden von zwei Erstannotatoren unabhängig voneinander bearbeitet. Eine dritte Person erstellte dann auf dieser Grundlage eine Konsensannotation, indem sie die beiden Annotationen verglich, Unstimmigkeiten bereinigte und wenn nötig offensichtliche Fehler korrigierte. </p>
-<p style="text-align:left; ">Das Annotationssystem (Brunner et al. 2019a) erfasst sowohl die Wiedergabe von Rede als auch von Gedanken und Geschriebenem. Es umfasst vier Haupttypen von Wiedergabe: </p>
-<list type="unordered">
-<item>direkt: 
-                        <hi rend="italic" xml:space="preserve">Er dachte: </hi>
-<hi rend="italic underline">„Ich habe Hunger.“</hi>
-</item>
-<item>frei-indirekt (‘erlebte Rede’): 
-                        <hi rend="italic" xml:space="preserve">Er war ratlos. </hi>
-<hi rend="italic underline">Wo sollte er jetzt etwas zu essen finden?</hi>
-</item>
-<item>indirekt: 
-                        <hi rend="italic" xml:space="preserve">Er sagte, </hi>
-<hi rend="italic underline">dass er Hunger habe.</hi>
-</item>
-<item>erzählt: 
-                        <hi rend="italic underline">Er sprach über das Mittagessen.</hi>
-</item>
-</list>
-<p style="text-align:left; ">Frei-indirekte Wiedergabe ist im Folgenden ausgeschlossen, da sich die automatische Erkennung für diese Form als noch zu unzuverlässig erwiesen hat. Die Formen indirekte und erzählte Wiedergabe sind zu ‘nicht-direkt’ zusammengefasst. Diese Form umfasst damit sowohl die klassische indirekte Wiedergabe mit Rahmenformel und abhängiger Proposition als auch strukturell abweichende und häufig stärker zusammenfassende. Sie steht im Gegensatz zur direkten Wiedergabe insofern, als die Rede, Gedanken oder schriftliche Äußerung einer Figur in den Erzählertext integriert anstatt in einem Zitat klar davon abgesetzt wird.</p>
-<p style="text-align:left; ">Die automatischen Erkenner beruhen auf DeepLearning.<ref n="1" target="ftn1"/> Als Trainingsmaterial wurde hauptsächlich das Redewiedergabe-Korpus (Brunner et al. 2019b; verfügbar unter github.com/redewiedergabe/corpus) verwendet, welches historische Textdaten (19. bis frühes 20. Jahrhundert) und sowohl fiktionales als auch nicht-fiktionales Material umfasst. Da die in dieser Studie verwendeten Texte deutlich moderner sind (ca. 1950 bis Gegenwart), war es umso wichtiger, die Übertragbarkeit des Modells zu evaluieren. Es lagen speziell trainierte Erkenner für jede der Formen direkte, indirekte und erzählte Wiedergabe vor, die unabhängig voneinander auf die Testdaten angewendet wurden. Überlagerungen von Wiedergabetypen werden somit erkannt. Als ‚nicht-direkt‘ zählen Tokens, die entweder als Teil von indirekter oder von erzählter Wiedergabe erkannt wurden. 
+<head>Syntaktische Profile: Forschungsstand</head>
+<p style="text-align:left; ">Die Nutzung syntaktischer Informationen zur Charakterisierung von Wortverwendungen ist vor allem in der Lexikografie betrieben worden. Populär wurde das Konzept unter dem Namen „word sketch“ besonders durch die korpuslinguistische Software SketchEngine (Kilgarriff et al. 2004, Kilgarriff et al. 2014). Für ein gegebenes Suchwort wird hier angegeben, welche anderen Wörter besonders häufig in spezifischen syntaktischen Relationen zum Suchwort stehen, z. B. 
+                    <hi rend="italic">glimpse</hi> als frequentes Objekt von 
+                    <hi rend="italic">catch</hi> (Kilgarriff et al. 2014: 9). Im Digitalen Wörterbuch der deutschen Sprache (DWDS) kann eine entsprechende Darstellung als sog. DWDS-Wortprofil abgerufen werden (Geyken 2011).
                 </p>
-<p style="text-align:left; ">Um eine bessere Einschätzung der Erkennungswerte zu geben, ein paar Worte zur Vorkommenshäufigkeit der Redewiedergabetypen: Im den konsensannotierten Testdaten liegt der durchschnittliche Anteil von direkter Wiedergabe knapp unter 30% der Tokens (mit starken Schwankungen), von nicht-direkter bei ca. 15%. </p>
-<p style="text-align:left; ">Tabelle 1 zeigt die Übereinstimmungswerte zwischen den Erstannotatoren, um einen Eindruck zu vermitteln, wie verlässlich eine von Menschen durchgeführte Annotation wäre.</p>
-<figure>
-  <graphic height="9.038166666666667cm" n="1001" rend="inline" url="174_final-14b09ece70856ea73e1806657f884bfc.png" width="16.002cm"/>
-  <head> Tabelle 1: Übereinstimmung zwischen den Erstannotatoren. F1, Precision, Recall jeweils für die Kategorie direkt bzw. nicht-direkt, gerechnet auf Tokenbasis; prozentuale Anteile ebenfalls auf Tokenbasis.</head>
-</figure>
-<!-- <p style="text-align:left; ">Tab. 1: Übereinstimmung zwischen den Erstannotatoren. F1, Precision, Recall jeweils für die Kategorie direkt bzw. nicht-direkt, gerechnet auf Tokenbasis; prozentuale Anteile ebenfalls auf Tokenbasis.</p> -->
-<p style="text-align:left; ">Tabelle 2 zeigt nun für die Formen direkt und nicht-direkt die Übereinstimmungsquoten der automatischen Methoden im Vergleich zur Konsensannotation. Wenn man als Baseline einen Erkenner annimmt, der jedes Token mit 50% Wahrscheinlichkeit als Teil von Wiedergabe klassifiziert, käme man für die Testdaten (alle Samples) für direkt auf einen F1-Score von 0,36 (Precision: 0,28; Recall: 0,50), für nicht-direkt auf einen F1-Score von 0,23 (Precision: 0,17; Recall: 0,50), wobei die Einzelscores für Heftromane vs. Hochliteratur bei direkt gleich wären, bei nicht-direkt etwas besser für Hochliteratur (F1: 0,25).</p>
-<figure>
-<graphic height="8.995833333333334cm" n="1002" rend="inline" url="174_final-70cb6754211ba85d66dff0c671aa3d71.png" width="16.002cm"/>
-  <head> Tabelle 2: Auswertung der automatischen Methoden gegen die Konsens-Annotation. </head>
-</figure>
-<!-- <p style="text-align:left; ">Tab. 2: Auswertung der automatischen Methoden gegen die Konsens-Annotation. </p> -->
-<p style="text-align:left; ">Bei direkter Wiedergabe sind die Erkennungsraten der automatischen Methoden vor allem bei den Heftromanen gut, es gibt jedoch Schwankungen zwischen den Textausschnitten. Probleme treten insbesondere bei Ich-Perspektive in Kombination mit unmarkierter Wiedergabe auf, was in Hochliteratur häufiger vorkommt. Dennoch sind die mit dem maschinellen Erkenner erzielten Ergebnisse – gerade für solche Fälle – deutlich stabiler als eine Identifikation von direkter Wiedergabe anhand von Anführungszeichen gewesen wäre. Insgesamt neigt der Erkenner dazu, den Anteil von direkter Wiedergabe eher zu über- als zu unterschätzen. Der durchschnittliche absolute Fehler bei der Abschätzung der Anteile liegt im Schnitt bei ca. 10%.</p>
-<p style="text-align:left; ">Für die nicht-direkte Wiedergabe ist zu betonen, dass die Übereinstimmungsquote auch zwischen Menschen deutlich schlechter ist (vgl. Tabelle 1). Ursache ist, dass durch die stärkere Integration in den Erzähltext sowohl die genaue Abgrenzung als auch die Entscheidung, was als Wiedergabe zu werten ist, schwieriger sind. Die automatischen Methoden erreichen bei den Heftromanen fast gleiche Verlässlichkeit, während die Hochliteratur-Abschnitte sich wiederum als etwas schwieriger erweisen. Da die Anteile von nicht-direkt geringer sind und weniger Schwankungen unterliegen als die Anteile von direkt, ist auch der durchschnittliche absolute Fehler deutlich geringer (ca. 3%), wobei der Anteil von nicht-direkt eher unterschätzt wird. </p>
-<p style="text-align:left; ">Da für die Erzählweise eines Textes auch das Zusammenspiel der beiden Wiedergabetypen von Interesse ist, visualisieren wir die Textausschnitte der unterschiedlichen Untersuchungsgruppen in einem Scatterplot (Abb. 1). </p>
-<figure>
-<graphic height="8.001cm" n="1003" rend="inline" url="174_final-88eae6a599ecb737bd28c152c7019167.png" width="16.002cm"/>
-  <head> Abbildung 1: Scatterplot der 1000-Token-Samples auf Basis der manuellen Konsens-Annotation</head>
-</figure>
-<!-- <p style="text-align:left; ">Abb. 1: Scatterplot der 1000-Token-Samples auf Basis der manuellen Konsens-Annotation</p> -->
-<p style="text-align:left; ">In dieser Darstellung auf Basis der manuellen Konsens-Annotation lässt sich ein Trend der Horrorroman-Textausschnitte erkennen, mit niedrigen Werte sowohl in direkt als auch in nicht-direkt zusammenzuclustern, während Hochliteratur und Liebesroman stark gestreut erscheinen. Mit einem Permutationstest (p=0,01) (Koplenig 2019) lassen sich im Vergleich Heftroman vs. Hochliteratur allerdings auf keiner der beiden Dimensionen signifikante Unterschiede nachweisen. Bei dem Vergleich mit Genres sind lediglich die Abweichungen zwischen Hochliteratur und Horrorroman im Anteil nicht-direkter Wiedergabe signifikant. Legt man die automatisch annotierten Daten zugrunde, verschwindet auch diese Signifikanz.</p>
+<p style="text-align:left; ">Weitere Anwendungen gibt es in der Literaturwissenschaft und Linguistik: Googasian / Heuser (2019) vergleichen die syntaktischen Kontexte von Menschen und Tieren in einem Korpus sog. „wild animal stories“. Andresen (2018) nutzt syntaktische n-Gramme für einen Vergleich der Wissenschaftssprachen in den Fächern Literaturwissenschaft und Linguistik. Eine Anwendung auf sozialwissenschaftliche Fragestellungen erfolgt vor allem in den Politikwissenschaften: Anhand syntaktischer Muster wie z. B. Argumentstrukturen oder Mustern der Redewiedergabe werden hier politische Akteure und ihre Positionen identifiziert, miteinander in Relation gesetzt und so Diskurse charakterisiert (van Atteveldt et al. 2008, Kleinnijenhuis / van Atteveldt 2014, Wüest et al. 2011, Blessing et al. 2013). In den Fächern Pflegewissenschaft und Kulturanthropologie steht die Exploration des Mehrwertes syntaktischer Analysen noch aus.</p>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>Erweiterung der Studie auf Volltexte </head>
-<p style="text-align:left; ">Im nächsten Schritt erweitern wir unser Untersuchungsmaterial stark. Das Korpus wurde aus Volltexten zusammengestellt, wobei diesmal die Unterschiede zwischen Hochliteratur und den einzelnen Genres in den Fokus gerückt wurden: 50 Hochliteratur-Texte wurden mit jeweils 50 Heftromanen aus vier unterschiedlichen Reihen kontrastiert, die unterschiedliche Genres repräsentieren (vgl. Tab. 3).</p>
-<figure>
-<graphic height="6.316486111111111cm" n="1004" rend="inline" url="174_final-a4d6a2bebd50e2fe3c6cf721cd297abb.png" width="16.002cm"/>
-  <head> Tabelle 3: Korpuszusammensetzung</head>
-</figure>
-<!-- <p style="text-align:left; ">Tab. 3: Korpuszusammensetzung</p> -->
-<p style="text-align:left; ">Ein Ziel war, eine größtmögliche Diversität von Autoren zu erreichen, um zu verhindern, dass das Autorensignal die Gruppenzugehörigkeiten überlagert, die uns eigentlich interessieren. Problematisch war dies bei Horrorromanen, wo ein Autor die Reihe extrem dominiert und Krimis, bei denen so gut wie keine Autoreninformationen verfügbar waren. Es ist allerdings bekannt, dass die Reihe „Jerry Cotton” von über 100 unterschiedlichen Autoren verfasst wurde (vgl. Karr 2019).<ref n="2" target="ftn2"/> Da Heftromane üblicherweise unter Pseudonym veröffentlicht werden, ist die Autorenzuschreibung hier insgesamt mit Unsicherheit behaftet (vgl. Hügel 2001).
+<head>Daten und Fragestellungen der Fallstudien</head>
+<p style="text-align:left; ">Das Potential syntaktisch definierter Kollokationen wird an zwei Fallstudien mit komplementärer Datenlage erprobt. Die erste nutzt ein großes Korpus geschriebener Sprache, das dadurch methodisch eine sehr sichere Grundlage bietet. Die zweite Fallstudie basiert auf einem eher kleinen Korpus mit gesprochener Sprache, was mehr methodische Herausforderungen erwarten lässt.</p>
+<p style="text-align:left; ">Die kulturanthropologische Fallstudie befasst sich mit dem Themenkomplex der Telemedizin und insbesondere der Frage nach der (Nicht-)Akzeptanz telemedizinischer Anwendungen durch unterschiedliche gesellschaftliche Akteursgruppen. Das hierfür erstellte Korpus umfasst 8.784 Texte mit insgesamt 14,8 Mio. Token und basiert auf einem Webcrawling (Adelmann / Franken 2020). Dafür wurden Webseiten von Krankenkassen, Ärzte- und Patientenverbänden als Ausgangspunkt genutzt und dann Links zu Seiten verfolgt, die mindestens eines von mehreren Wörtern aus einem Wortfeld zur Telemedizin enthalten (Koch / Franken im Druck). </p>
+<p style="text-align:left; ">Grundlage der pflegewissenschaftlichen Fallstudie ist ein Korpus aus 31 Dialogen, die mit schwerkranken und sterbenden Menschen in palliativer Versorgung geführt wurden. Es handelt sich um Transkripte gesprochener Sprache im Umfang von gut 100.000 Token. Gegenstand der Studie sind die Deutungen von Entscheidungen hinsichtlich der gesundheitlichen Versorgung der Betroffenen.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Methode</head>
+<p style="text-align:left; ">Die Texte beider Korpora werden mithilfe
+des Parsers MATE (Bohnet 2010), trainiert auf der Hamburger Dependency
+Treebank (Foth et al. 2014), mit Lemmata, Wortarten und syntaktischen
+Dependenzen annotiert. Unter Kollokationen verstehen wir „a
+combination of two words that exhibit a tendency to occur near each
+other in natural language“ (Evert 2008: 1214). Bei der
+Operationalisierung von „near each other“ können Kriterien an der
+Textoberfläche oder syntaktische Kriterien angesetzt werden: Für den
+einfachen Ansatz ohne Annotationen betrachten wir Wörter in einem
+Kontextfenster von +/- 3 Wörtern als benachbart, für den syntaktischen
+Ansatz Wörter mit einer direkten Dependenzrelation. In beiden Fällen
+wird mithilfe des Log-Likelihood-Ratios (LLR, Dunning 1993) berechnet,
+welche Kombinationen häufiger im Korpus vorkommen, als basierend auf
+den Einzelfrequenzen der Wörter zu erwarten wäre. Im Falle der
+syntaktischen Kollokationen werden dafür die Einzelfrequenzen in der
+spezifischen syntaktischen Relation genutzt. Die Ergebnisse basieren
+auf den Lemmata und werden nach Schlüsselwörtern gefiltert, die für
+die jeweiligen Fragestellungen als bedeutsam ausgewählt wurden
+(<hi rend="italic">T</hi>/<hi rend="italic">telemed</hi> bzw. 
+<hi rend="italic">E</hi>/<hi rend="italic">entscheid</hi>). Das hierfür verwendete Analyseskript steht auf GitHub zur Verfügung.<ref n="1" target="ftn1"/> Für die Interpretation werden die Top 10 beider Listen verglichen und nach Bedarf weitere Einträge gesichtet.
 </p>
-<p style="text-align:left; ">Die Texte wurden mit den automatischen Erkennern komplett annotiert. Da die Variation der Textlängen insbesondere in der Gruppe Hochliteratur stark ist, wurden die Texte in 1000-Token-Abschnitte zerlegt, für diese die Anteile von direkter und nicht-direkter Wiedergabe berechnet und die Ergebnisse anschließend für jeden Text gemittelt (analog zur standardisierten Type-Token-Ratio). Anders als bei den Testdaten zeigen sich bei der Auswertung nun klare Unterschiede in beiden Dimensionen: Der Anteil direkter Wiedergabe ist bei Hochliteratur geringer, während der Anteil nicht-direkter Wiedergabe höher ist. Die Signifikanz dieser Unterschiede, wie auch viele Unterschiede zwischen den Genres, lassen sich mit dem Permutationstest mit p=0.01 bestätigen (vgl. Abbildung 2 und 3).</p>
-<figure>
-<graphic height="10.668cm" n="1005" rend="inline" url="174_final-75618d351c2c09e8cef7e6d6c62fb442.png" width="16.002cm"/>
-  <head> Abbildung 2: Boxplots Heftromane vs. Hochliteratur. Unterschiede sind signifikant mit p=0.01.</head>
-</figure>
-<!-- <p style="text-align:left; ">Abb. 2: Boxplots Heftromane vs. Hochliteratur. Unterschiede sind signifikant mit p=0.01.</p> -->
-<figure>
-<graphic height="10.668cm" n="1006" rend="inline" url="174_final-55090e191f8f8cf950a3e4f3cc3a22ea.png" width="16.002cm"/>
-  <head> Abbildung 3: Boxplots Hochliteratur vs. Heftchen-Genres: Signifikant mit p=0,01 sind die Unterschiede hoch/krimi, hoch/horror, horror/krimi, horror/liebes (in beiden Dimensionen); hoch/liebes, scifi/liebes, scifi/krimi (nur in Anteil direkt); horror/scifi (nur in Anteil nicht-direkt).</head>
-</figure>
-<!-- <p style="text-align:left; ">Abb. 3: Boxplots Hochliteratur vs. Heftchen-Genres: Signifikant mit p=0,01 sind die Unterschiede hoch/krimi, hoch/horror, horror/krimi, horror/liebes (in beiden Dimensionen); hoch/liebes, scifi/liebes, scifi/krimi (nur in Anteil direkt); horror/scifi (nur in Anteil nicht-direkt).</p> -->
-<figure>
-<graphic height="11.43cm" n="1007" rend="inline" url="174_final-b7115de825b3cb4b07578f63d2595950.png" width="16.002cm"/>
-  <head> Abbildung 4: Scatterplots für die Volltexte, automatische Annotation</head>
-</figure>
-<!-- <p style="text-align:left; ">Abb. 4: Scatterplots für die Volltexte, automatische Annotation </p> -->
-<p style="text-align:left; ">Bei der Betrachtung beider Dimensionen in Relation (Abb. 4) fällt sofort auf, dass die Hochliteratur-Texte eine deutliche Streuung aufweisen, während nicht nur die einzelnen Genres, sondern auch die Heftromane als Gruppe zusammenclustern. Angesichts der Tatsache, dass die Heftroman-Genres bewusst reglementierte Reihen sind, während die Hochliteratur-Gruppe nur dadurch definiert ist, dass die enthaltenen Werke als literarisch hochwertig eingeschätzt wurden, ist dieser Befund nicht erstaunlich. Es ist jedoch durchaus bemerkenswert, dass sich der Unterschied zwischen konventionalisiertem und individualistischem Erzählen auf der Dimension der Redewiedergabetypen so deutlich quantitativ nachweisen lässt. </p>
-<p style="text-align:left; ">Die Hochliteratur-Texte sind zudem die einzige Gruppe, in der ein ‚Übergewicht‘ an nicht-direkter im Gegensatz zu direkter Wiedergabe auftritt. Die Autoren sind also in der Art und Weise, wie sie Figurenstimmen in den Text einbinden, sowohl individualistischer als auch eher bereit, nicht das direkte Zitat zu wählen. </p>
-<p style="text-align:left; ">Innerhalb der Gruppe der Heftromane man kann für die Genres Liebesroman, Horrorroman und Krimi einen nahezu linearen Anstieg der beiden Wiedergabeformen in Relation zueinander beobachten, wobei der Anteil direkter Wiedergabe stets höher ist. Es differenziert sich recht klar das Horror-Genre mit einem insgesamt geringeren Wiedergabeanteil, während die ‚kommunikativeren’ Genres Liebesroman und Krimi sich stark überlagern. Für diese beiden Genres lassen sich auch keine signifikanten Unterschiede nachweisen. Science-Fiction nimmt eine Zwischenstellung ein: Die Texte sind diverser und streuen ähnlich wie Hochliteratur, wenn auch nicht so extrem. Es ist das einzige Heftroman-Genre, für das sich auf keiner der beiden Dimensionen signifikante Unterschiede zu Hochliteratur nachweisen lassen. Dies passt zu Beobachtungen von Jannidis/Konle/Leinen (2019a), dass Science-Fiction unter den Heftroman-Genres eine Sonderstellung einnimmt und auch bei unterschiedlichen Komplexitätsmaßen wie standardisierter Type-Token-Ratio und Wortlänge höher abschneidet als die anderen Genres. </p>
-<p style="text-align:left; ">Warum zeigen sich diese interessanten Muster erst in den Volltextdaten und nicht in der Voruntersuchung? Die Erklärung ist, dass die Schwankungen in den Anteilen von Wiedergabe innerhalb eines Erzähltextes so stark sind, dass sie die beobachteten Trends überlagern. Abb. 5 zeigt einen Datenpunkt für jeden der 1000 Token-Abschnitte aus dem Untersuchungskorpus. Zwar werden in der Gesamtheit dieser Datenpunkte die gleichen Trends sichtbar wie in Abb. 4, doch wenn man – wie bei der Testauswertung – nur wenige zufällig gezogene 1000-Token-Abschnitte betrachtet, ist es unwahrscheinlich, dass sie erkennbar wären. Die Ausweitung auf mehr Material, die durch die Anwendung automatischer Methoden möglich wurde, führt hier also zu einem Erkenntnisgewinn, der sonst nur mit extremem Annotationsaufwand möglich gewesen wäre. </p>
-<figure>
-<graphic height="15.409333333333333cm" n="1008" rend="inline" url="174_final-2bdcad4a9a0af0a488a2e40482ed23c4.png" width="16.002cm"/>
-  <head> Abbildung 5: Scatterplots für die Volltexte (zerlegt in 1000-Token-Abschnitte), automatische Annotation.</head>
-</figure>
-<!-- <p style="text-align:left; ">Abb. 5: Scatterplots für die Volltexte (zerlegt in 1000-Token-Abschnitte), automatische Annotation.</p> -->
-<p style="text-align:left; ">Da die schlechteren Erkennungsraten des Direkte-Wiedergabe-Erkenners für Texte in der Ich-Perspektive bekannt sind, wurde für einen großen Teil der Texte die Erzählperspektive ermittelt. Die Durchmischung ist sowohl bei den Hochliteraturtexten als auch bei den Heftromanen gegeben und Texte beider Perspektiven platzieren sich an unterschiedlichen Stellen. Einzig der Bereich mit sehr niedrigem Anteil von direkter Wiedergabe (&lt;17%) ist ausschließlich durch Texte in Er-Perspektive besetzt. Der Einfluss der Erzählperspektive ist ein Faktor, der in weiteren Untersuchungen genauer betrachtet werden sollte.</p>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>Ausblick</head>
-<p style="text-align:left; ">Mit den vorhandenen Werkzeugen ist es denkbar, die Studien auf noch mehr Textmaterial auszuweiten und dabei auch weitere Genres von Heftromanen zu untersuchen. Zudem lässt sich die Methodik leicht auf Fragestellungen zu den Anteilen von Redewiedergabe in anderen Textgruppen übertragen, z.B. zwischen fiktionalem und nicht-fiktionalem Material oder im diachronen Vergleich. Wir arbeiten zudem im Redewiedergabe-Projekt weiter daran, unsere automatischen Erkenner zu verbessern, insbesondere auch den für freie-indirekte Wiedergabe (zum aktuellen Stand vgl. Brunner et al. 2019c). Die im Redewiedergabe-Projekt entwickelten Erkenner werden nach Abschluss des Projekts im Frühjahr 2020 der Forschungsgemeinschaft zur Verfügung gestellt werden, ebenso wie große Teile des verwendeten manuell annotierten Trainingsmaterials.</p>
+<head>Ergebnisse der Fallstudien</head>
+<div rend="DH-Heading2" type="div2">
+<head>Kulturanthropologie</head>
+<p style="text-align:left; ">Tabelle 1 zeigt die oberflächenbasierten Kollokationen zu Lemmata mit 
+<hi rend="italic">T</hi>/<hi rend="italic">telemed</hi> im kulturanthropologischen Korpus mit den höchsten LLR-Werten. 
+<hi rend="italic">Telemedizin</hi> ist sehr stark mit dem verwandten Wort 
+<hi rend="italic">Telematik</hi> assoziiert, was die enge Verknüpfung
+der Bereiche anzeigt. Manche Wortpaare sind Bestandteil mehrteiliger
+Eigennamen
+(<hi rend="italic">Bayerische TelemedAllianz, [Zentrum für Telematik
+und] Telemedizin GmbH</hi>), die für die Interpretation einen
+eingeschränkten Mehrwert haben,
+aber doch für den Diskurs potentiell relevante und ggf. bisher unbekannte Akteure sichtbar machen. Mit dem 
+<hi rend="italic">Tag der Telemedizin</hi> wird ein Fachkongress als wichtiger Begegnungspunkt dieser Akteure aufgeführt. Außerdem liegen allgemeine Konzepte wie 
+<hi rend="italic">telemedizisch</hi> und 
+<hi rend="italic">Anwendung</hi> hoch im Ranking.
+</p>
+<table rend="rules">
+  <head> Tabelle 1: Top 10 der oberflächenbasierten Kollokationen zu
+  Lemmata mit <hi rend="italic">T</hi>/ <hi rend="italic">telemed</hi> im kulturanthropologischen Korpus</head>
+<row>
+<cell rend="DH-Default">
+<hi rend="bold">Wort 1</hi>
+</cell>
+<cell rend="DH-Default">
+<hi rend="bold">Wort 2</hi>
+</cell>
+<cell rend="DH-Default">LLR</cell>
+<cell rend="DH-Default">
+<hi rend="bold">abs. Frequenz</hi>
+</cell>
+</row>
+<row>
+<cell rend="DH-Default">Telematik</cell>
+<cell rend="DH-Default">Telemedizin</cell>
+<cell rend="DH-Default">2044,88</cell>
+<cell rend="DH-Default">468</cell>
+</row>
+<row>
+<cell rend="DH-Default">telemedizinisch</cell>
+<cell rend="DH-Default">Anwendung</cell>
+<cell rend="DH-Default">1753,90</cell>
+<cell rend="DH-Default">465</cell>
+</row>
+<row>
+<cell rend="DH-Default">bayerisch</cell>
+<cell rend="DH-Default">TelemedAllianz</cell>
+<cell rend="DH-Default">1497,94</cell>
+<cell rend="DH-Default">204</cell>
+</row>
+<row>
+<cell rend="DH-Default">Telemedizin</cell>
+<cell rend="DH-Default">GmbH</cell>
+<cell rend="DH-Default">1007,39</cell>
+<cell rend="DH-Default">340</cell>
+</row>
+<row>
+<cell rend="DH-Default">Tag</cell>
+<cell rend="DH-Default">Telemedizin</cell>
+<cell rend="DH-Default">845,74</cell>
+<cell rend="DH-Default">274</cell>
+</row>
+<row>
+<cell rend="DH-Default">telemedizinisch</cell>
+<cell rend="DH-Default">Betreuung</cell>
+<cell rend="DH-Default">841,88</cell>
+<cell rend="DH-Default">212</cell>
+</row>
+<row>
+<cell rend="DH-Default">bayerisch</cell>
+<cell rend="DH-Default">Telemedallianz</cell>
+<cell rend="DH-Default">731,35</cell>
+<cell rend="DH-Default">97</cell>
+</row>
+<row>
+<cell rend="DH-Default">der</cell>
+<cell rend="DH-Default">Telemedizin</cell>
+<cell rend="DH-Default">644,28</cell>
+<cell rend="DH-Default">2533</cell>
+</row>
+<row>
+<cell rend="DH-Default">Gesellschaft</cell>
+<cell rend="DH-Default">Telemedizin</cell>
+<cell rend="DH-Default">632,95</cell>
+<cell rend="DH-Default">241</cell>
+</row>
+<row>
+<cell rend="DH-Default">telemedizinisch</cell>
+<cell rend="DH-Default">Zentrum</cell>
+<cell rend="DH-Default">585,73</cell>
+<cell rend="DH-Default">165</cell>
+</row>
+</table>
+<!-- <p style="text-align:left; ">Tabelle 1: Top 10 der oberflächenbasierten Kollokationen zu Lemmata mit  -->
+<!--                         <hi rend="italic">T</hi>/ -->
+<!--                         <hi rend="italic">telemed</hi> im kulturanthropologischen Korpus -->
+<!--                     </p> -->
+<table rend="rules">
+  <head> Tabelle 2: Top 10 der syntaxbasierten Kollokationen zu Lemmata mit <hi rend="italic">T</hi>/<hi rend="italic">telemed</hi> im kulturanthropologischen Korpus</head> 
+<row>
+<cell rend="DH-Default">
+<hi rend="bold">Wort 1</hi>
+</cell>
+<cell rend="DH-Default">Relation</cell>
+<cell rend="DH-Default">
+<hi rend="bold">Wort 2</hi>
+</cell>
+<cell rend="DH-Default">LLR</cell>
+<cell rend="DH-Default">
+<hi rend="bold">abs. Frequenz</hi>
+</cell>
+</row>
+<row>
+<cell rend="DH-Default">GmbH</cell>
+<cell rend="DH-Default">ist Apposition von</cell>
+<cell rend="DH-Default">Telemedizin</cell>
+<cell rend="DH-Default">2261,71</cell>
+<cell rend="DH-Default">353</cell>
+</row>
+<row>
+<cell rend="DH-Default">telemedizinisch</cell>
+<cell rend="DH-Default">ist Attribut von</cell>
+<cell rend="DH-Default">Anwendung</cell>
+<cell rend="DH-Default">2236,42</cell>
+<cell rend="DH-Default">456</cell>
+</row>
+<row>
+<cell rend="DH-Default">bayerisch</cell>
+<cell rend="DH-Default">ist Attribut von</cell>
+<cell rend="DH-Default">TelemedAllianz</cell>
+<cell rend="DH-Default">2002,48</cell>
+<cell rend="DH-Default">204</cell>
+</row>
+<row>
+<cell rend="DH-Default">Telemedizin</cell>
+<cell rend="DH-Default">ist Genitivattribut von</cell>
+<cell rend="DH-Default">Tag</cell>
+<cell rend="DH-Default">1904,26</cell>
+<cell rend="DH-Default">274</cell>
+</row>
+<row>
+<cell rend="DH-Default">telemedizinisch</cell>
+<cell rend="DH-Default">ist Attribut von</cell>
+<cell rend="DH-Default">Betreuung</cell>
+<cell rend="DH-Default">981,87</cell>
+<cell rend="DH-Default">200</cell>
+</row>
+<row>
+<cell rend="DH-Default">bayerisch</cell>
+<cell rend="DH-Default">ist Attribut von</cell>
+<cell rend="DH-Default">Telemedallianz</cell>
+<cell rend="DH-Default">967,93</cell>
+<cell rend="DH-Default">98</cell>
+</row>
+<row>
+<cell rend="DH-Default">DGTelemed</cell>
+<cell rend="DH-Default">ist Apposition von</cell>
+<cell rend="DH-Default">V.</cell>
+<cell rend="DH-Default">899,83</cell>
+<cell rend="DH-Default">84</cell>
+</row>
+<row>
+<cell rend="DH-Default">telemedizinisch</cell>
+<cell rend="DH-Default">ist Attribut von</cell>
+<cell rend="DH-Default">Zentrum</cell>
+<cell rend="DH-Default">772,92</cell>
+<cell rend="DH-Default">163</cell>
+</row>
+<row>
+<cell rend="DH-Default">Telemedizin</cell>
+<cell rend="DH-Default">ist Apposition von</cell>
+<cell rend="DH-Default">Fachkongress</cell>
+<cell rend="DH-Default">727,37</cell>
+<cell rend="DH-Default">64</cell>
+</row>
+<row>
+<cell rend="DH-Default">Telemedizin</cell>
+<cell rend="DH-Default">ist Genitivattribut von</cell>
+<cell rend="DH-Default">Möglichkeit</cell>
+<cell rend="DH-Default">720,75</cell>
+<cell rend="DH-Default">144</cell>
+</row>
+</table>
+<!-- <p style="text-align:left; ">Tabelle 2: Top 10 der syntaxbasierten Kollokationen zu Lemmata mit  -->
+<!--                         <hi rend="italic">T</hi>/ -->
+<!--                         <hi rend="italic">telemed</hi> im kulturanthropologischen Korpus -->
+<!--                     </p> -->
+<p style="text-align:left; ">Die syntaktischen Informationen in Tabelle 2 machen den Zusammenhang zwischen den Bestandteilen der Eigennamen in der Relation der Apposition explizit und bieten damit mehr Informationen zur Einordnung dieser Datenpunkte. Die Annotationen ermöglichen außerdem, die Gesamtliste nach bestimmten syntaktischen Relationen zu filtern. Die genannten Appositionen beispielsweise können anhand des Relationslabels ausgeblendet werden. Auch hier gibt es sehr allgemeine Konzepte wie 
+<hi rend="italic">telemedizinisch</hi> als Attribut von 
+<hi rend="italic">Anwendung</hi>, die zwar frequent, aber nicht sehr informativ sind. 
+<hi rend="italic">Telemedizin</hi> als Genitivattribut von 
+<hi rend="italic">Möglichkeit</hi> weist daraufhin, dass eben deren Möglichkeiten noch Gegenstand des Diskurses sind. In der Durchsicht der Kollokationen jenseits der Top 10 finden sich verwandte Themen des Potentials und der Projekthaftigkeit (<hi rend="italic">Potential der Telemedizin</hi>, 
+<hi rend="italic">Telemedizin-typisches Potential</hi>, 
+<hi rend="italic">evaluiertes Telemedizinprojekt</hi>, 
+<hi rend="italic">vielversprechendes Telemedizinprojekt</hi>), die anzeigen, dass sich die Umsetzung der Telemedizin in einer frühen Phase befindet und ihre Akzeptanz als Regelversorgung noch nicht abschließend verhandelt ist.
+</p>
+<p style="text-align:left; ">Auch zur Kollokation 
+<hi rend="italic">telemedizinisch</hi> als Attribut von 
+<hi rend="italic">Betreuung</hi> finden sich weiter unten im Ranking
+ähnliche Verwendungen zum Thema Betreuung
+(<hi rend="italic">telemedizinisch betreuen</hi>, 
+<hi rend="italic">telemedizinisch betreut</hi> …) und Unterstützung
+(<hi rend="italic">telemedizinisch unterstützt</hi>, 
+<hi rend="italic">telemedizinisch-unterstützte</hi> (sic!) 
+<hi rend="italic">Versorgung</hi>, 
+<hi rend="italic">Telematikunterstützung</hi> …). Dies weist auf die (bisher) eher ergänzende Rolle der Telemedizin im Verhältnis zur medizinischen Regelversorgung hin. 
+</p>
+<p>&#160; <lb/>&#160; <lb/>&#160; <lb/>&#160;</p>
+</div>
+<div rend="DH-Heading2" type="div2">
+<head>Pflegewissenschaft</head>
+<p style="text-align:left; ">Tabelle 3 zeigt die zehn ersten oberflächenbasierten Kollokationen des Dialogkorpus zu Lemmata mit 
+<hi rend="italic">E</hi>/<hi rend="italic">entscheid</hi>. Hier werden zunächst Probleme in den Daten deutlich: Mit 
+<hi rend="italic">Finan/</hi> liegt ein für gesprochene Sprache typischer Abbruch eines Wortes (vermutlich: 
+<hi rend="italic">Finanzentscheidung</hi>) vor. Zudem ist 
+<hi rend="italic">Entscheidungsvariant</hi> eine fehlerhafte Lemmaform zu 
+<hi rend="italic">Entscheidungsvarianten</hi>. Insgesamt sind die Frequenzen aufgrund der geringen Korpusgröße klein, lassen aber trotzdem hilfreiche Schlüsse für die Analyse zu. Im syntaxbasierten Gegenstück in Tabelle 4 sind zusätzliche Probleme erkennbar, die durch die automatische Verarbeitung gesprochener Sprache entstehen. Die Relation zwischen 
+<hi rend="italic">hab</hi> und 
+<hi rend="italic">entscheiden</hi> ist fehlerhaft als adverbial (korrekt: auxiliar) bezeichnet. Allerdings wird ein direkter Zusammenhang zwischen diesen Wörtern erst durch die syntaktischen Annotationen überhaupt erkennbar, da sie im Satz häufig nicht benachbart stehen. Zusätzlich gibt es vollständig falsche Analysen wie die Relation zwischen 
+<hi rend="italic">entscheidend</hi> und 
+<hi rend="italic">Puh</hi>.
+</p>
+<table rend="rules">
+  <head> Tabelle 3: Top 10 der oberflächenbasierten Kollokationen zu Lemmata mit 
+                        <hi rend="italic">E</hi>/<hi rend="italic">entscheid</hi> im pflegewissenschaftlichen Korpus</head>
+  <row>
+    <cell rend="DH-Default">
+<hi rend="bold">Wort 1</hi>
+</cell>
+<cell rend="DH-Default">
+<hi rend="bold">Wort 2</hi>
+</cell>
+<cell rend="DH-Default">LLR</cell>
+<cell rend="DH-Default">
+<hi rend="bold">abs. Frequenz</hi>
+</cell>
+</row>
+<row>
+<cell rend="DH-Default">Entscheidung</cell>
+<cell rend="DH-Default">treffen</cell>
+<cell rend="DH-Default">33,41</cell>
+<cell rend="DH-Default">7</cell>
+</row>
+<row>
+<cell rend="DH-Default">richtig</cell>
+<cell rend="DH-Default">Entscheidung</cell>
+<cell rend="DH-Default">23,06</cell>
+<cell rend="DH-Default">7</cell>
+</row>
+<row>
+<cell rend="DH-Default">Tablettenform</cell>
+<cell rend="DH-Default">entscheiden</cell>
+<cell rend="DH-Default">21,28</cell>
+<cell rend="DH-Default">4</cell>
+</row>
+<row>
+<cell rend="DH-Default">der</cell>
+<cell rend="DH-Default">Entscheidung</cell>
+<cell rend="DH-Default">17,54</cell>
+<cell rend="DH-Default">28</cell>
+</row>
+<row>
+<cell rend="DH-Default">dieser</cell>
+<cell rend="DH-Default">Entscheidung</cell>
+<cell rend="DH-Default">13,02</cell>
+<cell rend="DH-Default">7</cell>
+</row>
+<row>
+<cell rend="DH-Default">selbst</cell>
+<cell rend="DH-Default">entscheiden</cell>
+<cell rend="DH-Default">12,88</cell>
+<cell rend="DH-Default">4</cell>
+</row>
+<row>
+<cell rend="DH-Default">Entscheidung</cell>
+<cell rend="DH-Default">überlassen</cell>
+<cell rend="DH-Default">10,87</cell>
+<cell rend="DH-Default">2</cell>
+</row>
+<row>
+<cell rend="DH-Default">Entscheidungsvariant</cell>
+<cell rend="DH-Default">nebeneinandstellen</cell>
+<cell rend="DH-Default">10,38</cell>
+<cell rend="DH-Default">1</cell>
+</row>
+<row>
+<cell rend="DH-Default">Finan/</cell>
+<cell rend="DH-Default">Versorgungsentscheidung</cell>
+<cell rend="DH-Default">10,38</cell>
+<cell rend="DH-Default">1</cell>
+</row>
+<row>
+<cell rend="DH-Default">entschieden</cell>
+<cell rend="DH-Default">Abraten</cell>
+<cell rend="DH-Default">10,38</cell>
+<cell rend="DH-Default">1</cell>
+</row>
+</table>
+<!-- <p style="text-align:left; ">Tabelle 3: Top 10 der oberflächenbasierten Kollokationen zu Lemmata mit  -->
+<!--                         <hi rend="italic">E</hi>/ -->
+<!--                         <hi rend="italic">entscheid</hi> im pflegewissenschaftlichen Korpus -->
+<!--                     </p> -->
+<p style="text-align:left; ">Auch für die pflegewissenschaftliche Interpretation bieten die Kollokationen mit den höchsten LLR-Werten erste Anhaltspunkte, die dann durch eine Sichtung der weiteren Rangplätze ergänzt werden können. Die häufigsten Kollokatoren von Entscheidungen stehen für eine Realisierung eigener Entscheidungen der Betroffenen. Die Kollokation 
+<hi rend="italic">richtig</hi> macht Bewertungen der Entscheidungen sichtbar. Es zeigen sich zudem gegensätzliche Dimensionen des Phänomens, wie „selber entscheiden“ vs. „Entscheidung abgeben“, die hinter der Kollokation mit 
+<hi rend="italic">überlassen</hi> stehen. Insbesondere die Subjekt-
+und Objektrelationen
+(<hi rend="italic">Entscheidung treffen</hi>, 
+<hi rend="italic">Entschluss entstehen</hi>, 
+<hi rend="italic">Entscheidung überlassen</hi>) sind durch die syntaktische Analyse adäquater und theoretisch fundierter abgebildet. Dieser Nutzen wird jedoch durch Fehler in der automatischen Annotation eingeschränkt. Zudem werden diese Relationen in der gesprochenen Sprache mit kürzeren Sätzen möglicherweise auch durch die oberflächenbasierte Analyse besser erfasst als in anderen sprachlichen Registern. Insgesamt betrachtet werden durch den quantitativen Zugang Verwendungszusammenhänge des Phänomens „Entscheidung“ transparent, die wiederum auf wichtige Handlungskontexte in der Versorgungsrealität von schwerkranken und sterbenden Menschen verweisen. 
+</p>
+<table rend="rules">
+  <head>Tabelle 4: Top 10 der syntaxbasierten Kollokationen zu Lemmata mit 
+                        <hi rend="italic">E</hi>/
+                        <hi rend="italic">entscheid</hi> im pflegewissenschaftlichen Korpus </head> 
+<row>
+<cell rend="DH-Default">
+<hi rend="bold">Wort 1</hi>
+</cell>
+<cell rend="DH-Default">Relation</cell>
+<cell rend="DH-Default">
+<hi rend="bold">Wort 2</hi>
+</cell>
+<cell rend="DH-Default">LLR</cell>
+<cell rend="DH-Default">
+<hi rend="bold">abs. Frequenz</hi>
+</cell>
+</row>
+<row>
+<cell rend="DH-Default">entscheiden</cell>
+<cell rend="DH-Default">ist Adverbial von</cell>
+<cell rend="DH-Default">hab</cell>
+<cell rend="DH-Default">33,25</cell>
+<cell rend="DH-Default">9</cell>
+</row>
+<row>
+<cell rend="DH-Default">richtig</cell>
+<cell rend="DH-Default">ist Attribut von</cell>
+<cell rend="DH-Default">Entscheidung</cell>
+<cell rend="DH-Default">24,54</cell>
+<cell rend="DH-Default">6</cell>
+</row>
+<row>
+<cell rend="DH-Default">Entscheidung</cell>
+<cell rend="DH-Default">ist Akkusativobjekt von</cell>
+<cell rend="DH-Default">treffen</cell>
+<cell rend="DH-Default">23,47</cell>
+<cell rend="DH-Default">4</cell>
+</row>
+<row>
+<cell rend="DH-Default">Entschluss</cell>
+<cell rend="DH-Default">ist Subjekt von</cell>
+<cell rend="DH-Default">entstehen</cell>
+<cell rend="DH-Default">21,93</cell>
+<cell rend="DH-Default">2</cell>
+</row>
+<row>
+<cell rend="DH-Default">selbst</cell>
+<cell rend="DH-Default">ist Adverbial von</cell>
+<cell rend="DH-Default">entscheiden</cell>
+<cell rend="DH-Default">18,74</cell>
+<cell rend="DH-Default">4</cell>
+</row>
+<row>
+<cell rend="DH-Default">entscheidend</cell>
+<cell rend="DH-Default">ist Adverbial von</cell>
+<cell rend="DH-Default">Puh</cell>
+<cell rend="DH-Default">16,42</cell>
+<cell rend="DH-Default">1</cell>
+</row>
+<row>
+<cell rend="DH-Default">Tablettenform</cell>
+<cell rend="DH-Default">ist Subjekt von</cell>
+<cell rend="DH-Default">entscheiden</cell>
+<cell rend="DH-Default">16,13</cell>
+<cell rend="DH-Default">2</cell>
+</row>
+<row>
+<cell rend="DH-Default">Entscheidung</cell>
+<cell rend="DH-Default">ist Akkusativobjekt von</cell>
+<cell rend="DH-Default">überlassen</cell>
+<cell rend="DH-Default">15,59</cell>
+<cell rend="DH-Default">2</cell>
+</row>
+<row>
+<cell rend="DH-Default">Entscheidung</cell>
+<cell rend="DH-Default">ist Akkusativobjekt von</cell>
+<cell rend="DH-Default">treff</cell>
+<cell rend="DH-Default">13,52</cell>
+<cell rend="DH-Default">2</cell>
+</row>
+<row>
+<cell rend="DH-Default">für</cell>
+<cell rend="DH-Default">ist Präposition zu</cell>
+<cell rend="DH-Default">entscheiden</cell>
+<cell rend="DH-Default">13,46</cell>
+<cell rend="DH-Default">7</cell>
+</row>
+</table>
+<!-- <p style="text-align:left; ">Tabelle 4: Top 10 der syntaxbasierten Kollokationen zu Lemmata mit  -->
+<!--                         <hi rend="italic">E</hi>/ -->
+<!--                         <hi rend="italic">entscheid</hi> im pflegewissenschaftlichen Korpus -->
+<!--                     </p> -->
+</div>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Schlussfolgerungen</head>
+<p style="text-align:left; ">Es hat sich gezeigt, dass die Berechnung von Kollokationen auf der Grundlage der sprachlichen Oberfläche bzw. der Syntax für qualitative Fragestellungen informativ sein kann. Für die Auswertung einer spezifischen Fragestellung ist die Assoziationsstärke allein jedoch nicht immer das entscheidende Kriterium. Die Kollokationen geben Hinweise auf Zusammenhänge innerhalb des Korpus, die neue Fragestellungen und Perspektiven generieren können. Gleichzeitig werden durch die Relationsannotationen bereits kleine Datenmengen in erweiterter Form auswertbar.</p>
+<p style="text-align:left; ">Die beispielhaften Analysen haben gezeigt, dass die syntaktischen Annotationen eine für die Interpretation hilfreiche Differenzierung bieten, indem präziser angegeben wird, in welcher Relation zwei Wörter stehen. Das ermöglicht auch das Filtern nach interessanten Relationstypen. Zudem werden durch den Einbezug der Syntax Relationen zwischen Wörtern in Distanzstellung sichtbar, was insbesondere vom Verb abhängige Satzteile besser sichtbar macht. Andererseits erfordern die syntaktischen Annotationen eine aufwendigere Vorverarbeitung, die mehr Zeit und technische Fähigkeiten erfordert. Außerdem stellen sie eine zusätzliche Fehlerquelle dar. Dies gilt besonders für die gesprochensprachlichen Daten. Eine systematische Überprüfung und Rückbindung an konkrete Korpusbelege ist deshalb wichtig und verbessert die Interpretationsmöglichkeiten aus qualitativer Sicht. </p>
+<p style="text-align:left; ">Anschließend an diese Arbeiten ist geplant, stärker Kontexte zu aggregieren: In grammatischer Hinsicht wird das durch Koreferenzannotationen erfolgen, die für das pflegewissenschaftliche Korpus bereits vorliegen. Auf semantischer Ebene verfolgen wir den Ansatz, Wortgruppen zu Konzepten zusammenzufassen, z. B. können 
+<hi rend="italic">Ärztin</hi>, 
+<hi rend="italic">Arzt</hi>, 
+<hi rend="italic">Hausarzt</hi>, 
+<hi rend="italic">Onkologin</hi> usw. auf ein gemeinsames Konzept ÄRZT*INNEN abgebildet werden (vgl. den Ansatz von Wüest et al. 2011). Wir sehen außerdem weitere Anwendungsfälle über die Fächergrenzen hinweg, etwa zur literaturwissenschaftlichen Beschreibung von Geschlechterzuschreibungen, indem die sprachlichen Kontexte weiblicher und männlicher Vornamen verglichen werden.
+</p>
 </div>
 </body>
 <back>
   <div type="notes">
     <note n="1" rend="footnote text" xml:id="ftn1">
-      Wir verwenden eine BiLSTM-CRF-Architektur mit contextual string embeddings in Kombination mit FastText word embeddings (adaptiert von Akbik/Blythe/Vollgraf 2018). Eine detaillierte Beschreibung übersteigt den Rahmen dieses Beitrags, aber sie entspricht im Wesentlichen der Architektur in Brunner et al. 2019c.
-    </note>
-    <note n="2" rend="footnote text" xml:id="ftn2">
-      Von den 50 Jerry-Cotton-Krimis konnten nur für 4 Autoreninformationen gefunden werden, von denen eine zudem unsicher ist. Gesichert kann man damit sagen, dass mindestens 2 unterschiedliche Autoren in der Gruppe Krimi vorliegen, vermutlich sind es jedoch deutlich mehr.
+      <ptr target="https://github.com/melandresen/DHd2020"/>
     </note>
   </div>
   <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl style="text-align:left; ">
-<hi rend="bold">Akbik, Alan / Blythe, Duncan / Vollgraf, Roland</hi> (2018): "Contextual String Embeddings for Sequence Labeling", in: 
-                        <hi rend="italic">Proceedings of the 27th International Conference on Computational Linguistics</hi> 1638-1649.
+<hi rend="bold">Adelmann, Benedikt / Franken, Lina</hi> (2020): Thematic web crawling and scraping as a way to form focussed web archives, in: 
+                        <hi rend="italic">Engaging with Web Archives Conference Book of Abstracts</hi>. To be published at  
+                        <ref target="https://ewaconference.com/">https://ewaconference.com/</ref>.
                     </bibl>
 <bibl style="text-align:left; ">
-<hi rend="bold">Brunner, Annelen / Weimer, Lukas / Engelberg, Stefan / Jannidis, Fotis / Tu, Ngoc Duyen Tanja</hi> (2019a): 
-                        <hi rend="italic">Annotationsrichtlinien des Projekts „Redewiedergabe. Eine literatur- und sprachwissenschaftliche Korpusanalyse“.</hi> Zenodo. 
-                        <hi rend="ng-binding">http://doi.org/10.5281/zenodo.2634994</hi> [letzter Zugriff 17. Dezember 2019].
+<hi rend="bold">Andresen, Melanie</hi> (2018): Sprachliche Variation in der Germanistik: eine n-Gramm-basierte Stilanalyse, in: 
+                        <hi rend="italic">Book of Abstracts of DHd 2018</hi>. Köln, Deutschland, 311–15.
                     </bibl>
 <bibl style="text-align:left; ">
-<hi rend="bold">Brunner, Annelen / Weimer, Lukas / Tu, Ngoc Duyen Tanja / Engelberg, Stefan / Jannidis, Fotis</hi> (2019b): "Das Redewiedergabe-Korpus. Eine neue Ressource", in: 
-                        <hi rend="italic">Digital Humanities im deutschsprachigen Raum – Konferenzabstracts</hi> 103-106.
+<hi rend="bold">Andresen, Melanie / Zinsmeister, Heike</hi> (2017): The benefit of syntactic vs. linear n-grams for linguistic description, in: 
+                        <hi rend="italic">Proceedings of the 4th International Conference on Dependency Linguistics (Depling 2017).</hi> Pisa, Italy, 4–14 http://aclweb.org/anthology/W17-6503.
                     </bibl>
 <bibl style="text-align:left; ">
-<hi rend="bold">Brunner, Annelen / Tu, Ngoc Duyen Tanja / Weimer, Lukas / Jannidis, Fotis</hi> (2019c): "Deep Learning for Free Indirect Representation", in: 
-                        <hi rend="italic">Proceedings of the 15th Conference on Natural Language Processing (KONVENS 2019)</hi> 241-245.
+<hi rend="bold">van Atteveldt, Wouter / Kleinnijenhuis, Jan / Ruigrok, Nel</hi> (2008): Parsing, Semantic Networks, and Political Authority Using Syntactic Analysis to Extract Semantic Relations from Dutch Newspaper Articles, in: 
+                        <hi rend="italic">Political Analysis</hi>, 16(4): 428–46 doi:10.1093/pan/mpn006.
                     </bibl>
 <bibl style="text-align:left; ">
-<hi rend="bold">Genette, Gérard</hi> (2010): 
-                        <hi rend="italic">Die Erzählung</hi>. 3., durchges. und korrigierte Aufl. Paderborn: Fink.
+<hi rend="bold">Blessing, Andre / Sonntag, Jonathan / Kliche, Fritz / Heid, Ulrich / Kuhn, Jonas / Stede, Manfred</hi> (2013): Towards a Tool for Interactive Concept Building for Large Scale Analysis in the Humanities, in: 
+                        <hi rend="italic">Proceedings of the 7th Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities</hi>. 55–64 https://www.aclweb.org/anthology/W13-2708.
                     </bibl>
 <bibl style="text-align:left; ">
-<hi rend="bold">Hügel, Hans-Otto</hi> (2001): "Kommunikative und ästhetische Funktion des Romanhefts", in: Leonhardt, Joachim-Felix / Ludwig, Hans-Werner / Schwarze, Dietrich / Straßner, Erich (eds.): 
-                        <hi rend="italic" xml:space="preserve">Medienwissenschaft. </hi>Ein Handbuch zur Entwicklung der Medien und Kommunikationsformen. Berlin / New York: de Gruyter 1621-1631.
+<hi rend="bold" xml:space="preserve">Bohnet, Bernd </hi>(2010): Very High Accuracy and Fast Dependency Parsing is not a Contradiction, in: 
+                        <hi rend="italic">Proceedings of the 23rd International Conference on Computational Linguistics (COLING 2010).</hi> Beijing, China, 89–97. https://www.aclweb.org/anthology/C10-1011
                     </bibl>
 <bibl style="text-align:left; ">
-<hi rend="bold">Jannidis, Fotis / Konle, Leonard / Leinen, Peter</hi> (2019a): "Makroanalytische Untersuchung von Heftromanen", in: 
-                        <hi rend="italic">Digital Humanities im deutschsprachigen Raum – Konferenzabstracts</hi> 167-173.
+<hi rend="bold">Dunning, Ted</hi> (1993): Accurate Methods for the Statistics of Surprise and Coincidence, in: 
+                        <hi rend="italic">Computational Linguistics</hi>, 19(1): 61–74. https://www.aclweb.org/anthology/J93-1003
                     </bibl>
 <bibl style="text-align:left; ">
-<hi rend="bold">Jannidis, Fotis / Konle, Leonard / Leinen, Peter</hi> (2019b): "Thematic complexity", in: 
-                        <hi rend="italic">Digital Humanities Conference</hi> https://dev.clariah.nl/files/dh2019/boa/0504.html [letzter Zugriff 17. Dezember 2019].
+<hi rend="bold">Evert, Stefan</hi> (2008): Corpora and collocations, in: Lüdeling, Anke / Kytö, Merja (Hg.), 
+                        <hi rend="italic">Corpus linguistics: an International Handbook</hi>, Vol. 2. (Handbücher zur Sprach- und Kommunikationswissenschaft 29). Berlin, Boston: De Gruyter, 1212–1248.
                     </bibl>
 <bibl style="text-align:left; ">
-<hi rend="bold">Karr, H.P.</hi> (2019): "Cotton, Jerry", in: Ders. (ed.): 
-                        <hi rend="italic">Lexikon der deutschen Krimi-Autoren – Internet Edition</hi> http://www.krimilexikon.de/cotton.htm [letzter Zugriff 17. Dezember 2019].
+<hi rend="bold">Foth, Kilian A. / Köhn, Arne / Beuck, Niels / Menzel, Wolfgang</hi> (2014): Because Size Does Matter: The Hamburg Dependency Treebank, in: 
+                        <hi rend="italic">Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC’14)</hi>, 2326–2333. Reykjavik, Iceland. 
+                        <ref target="http://www.lrec-conf.org/proceedings/lrec2014/pdf/860_Paper.pdf">http://www.lrec-conf.org/proceedings/lrec2014/pdf/860_Paper.pdf</ref>.
                     </bibl>
 <bibl style="text-align:left; ">
-<hi rend="bold">Koplenig, A.</hi> (2019): "A non-parametric significance test to compare corpora", in: 
-                        <hi rend="italic">PLoS ONE</hi> 14(9): e0222703 https://doi.org/10.1371/journal.pone.0222703 [letzter Zugriff 17. Dezember 2019].
+<hi rend="bold">Gaidys, Uta / Gius, Evelyn / Jarchow, Margarete / Koch, Gertraud / Menzel, Wolfgang / Orth, Dominik / Zinsmeister, Heike</hi> (2017): hermA: Automated modelling of hermeneutic processes, in: 
+                        <hi rend="italic">Hamburger Journal für Kulturanthropologie</hi>(7): 119–23.
                     </bibl>
 <bibl style="text-align:left; ">
-<hi rend="bold">Martínez, Matías / Scheffel, Michael</hi> (2016): 
-                        <hi rend="italic">Einführung in die Erzähltheorie</hi>. 10. Auflage. München: C.H. Beck.
+<hi rend="bold">Geyken, Alexander</hi> (2011): Statistische Wortprofile zur schnellen Analyse der Syntagmatik in Textkorpora, in: Abel, Andrea / Zanin, Renata (Hg.), 
+                        <hi rend="italic">Korpora in Lehre und Forschung</hi>. Bozen: Bolzano Univ. Press, 129–54.
                     </bibl>
 <bibl style="text-align:left; ">
-<hi rend="bold">McHale, Brian</hi> (2014): "Speech Representation", in: Hühn, Peter / Pier, John / Schmid, Wolf / Schönert, Jörg (eds.): 
-                        <hi rend="italic">The living handbook of narratology</hi>. Hamburg: Hamburg University Press 434-446 http://www.lhn.uni-hamburg.de/article/speech-representation [letzter Zugriff 17. Dezember 2019].
+<hi rend="bold">Googasian, Victoria / Heuser, Ryan J.</hi> (2019): Digital Animal Studies: Modeling Anthropomorphism in Animal Writing, 1870-1930, in: 
+                        <hi rend="italic">Book of Abstracts of DH 2019</hi> https://dev.clariah.nl/files/dh2019/boa/0458.html.
                     </bibl>
 <bibl style="text-align:left; ">
-<hi rend="bold">Nusser, Peter</hi> (1981): 
-                        <hi rend="italic">Romane für die Unterschicht</hi>. Groschenhefte und ihre Leser. 5. Auflage. Stuttgart: Metzler.
+<hi rend="bold">Kilgarriff, Adam / Baisa, Vít / Bušta, Jan / Jakubíček, Miloš / Kovář, Vojtěch / Michelfeit, Jan, Rychlý / Pavel. / Suchomel, Vít</hi> (2014): The Sketch Engine: ten years on, in: 
+                        <hi rend="italic">Lexicography</hi>, 1(1): 7–36 doi:10.1007/s40607-014-0009-9.
                     </bibl>
+<bibl style="text-align:left; ">
+<hi rend="bold">Kilgarriff, Adam / Rychlý, Pavel / Smrz, Pavel / Tugwell, David</hi> (2004): The Sketch Engine: in: 
+                        <hi rend="italic">Proceedings of the 11th EURALEX International Congress</hi>. 105–15 https://euralex.org/publications/the-sketch-engine/.
+                    </bibl>
+<bibl style="text-align:left; ">
+<hi rend="bold">Kleinnijenhuis, Jan / van Atteveldt, Wouter</hi> (2014): Positions of Parties and Political Cleavages between Parties in Texts, in: Kaal, Bertie / Maks, Isa / van Elfrinkhof, Annemarie (Hg.), 
+                        <hi rend="italic">Discourse Approaches to Politics, Society and Culture</hi>, Vol. 55. Amsterdam: Benjamins, 1–20 doi:10.1075/dapsac.55.01kle. 
+                    </bibl>
+<bibl style="text-align:left; ">
+<hi rend="bold">Koch, Gertraud / Franken, Lina</hi> (im Druck): Automatisierungspotenziale in der qualitativen Diskursanalyse. Das Prinzip des Filterns, in: Schilling, Samuel / Klimczak, Peter (Hg.): 
+                        <hi rend="italic">Die Gesellschaft im Spiegellabyrinth sozialer Medien.</hi> Wiesbaden.
+                    </bibl>
+<bibl style="text-align:left; ">
+  <hi rend="bold">Sinclair, Stéfan / Rockwell, Geoffrey</hi> (2016):
+  Voyant Tools. Web.
+  <ptr target="http://voyant-tools.org/"/>. 
+</bibl>
+<bibl style="text-align:left; ">
+  <hi rend="bold">Wüest, Bruno / Clematide, Simon / Bünzli, Alexandra / Laupper, Daniel</hi> (2011): Semi-Automatic Core Sentence Analysis: Improving Content Analysis for Electoral Campaign Research, in: 
+  <hi rend="italic">International Relations Online Working
+  Paper</hi>(1).
+  <ref target="https://www.sowi.uni-stuttgart.de/dokumente/forschung/irowp/IROWP_Series_2011_1_Wueest_Clematide_Buenzli_Laupper_Content_Analysis.pdf">https://www.sowi.uni-stuttgart.de/dokumente/forschung/irowp/IROWP_Series_2011_1_Wueest_Clematide_Buenzli_Laupper_Content_Analysis.pdf</ref>.
+</bibl>
 </listBibl>
 </div>
 </back>

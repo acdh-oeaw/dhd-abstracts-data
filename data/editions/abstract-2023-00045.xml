@@ -1,25 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="HAGEN_Thora_Von_A_bis_Z__berlegungen_zur_Erstellung_eines_W" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="HINZMANN_Maria_SPARQL_für__digitale__Geisteswissenschaftler_" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title type="full">
-                    <title type="main">Von A bis Z: Überlegungen zur Erstellung eines Wissensgraphen aus historischen Enzyklopädien</title>
+                    <title type="main">SPARQL für (digitale) Geisteswissen-schaftler:innen – Querying Wikidata und die MiMoTextBase</title>
                     <title type="sub"/>
                 </title>
                 <author>
                     <persName>
-                        <surname>Hagen</surname>
-                        <forename>Thora</forename>
+                        <surname>Hinzmann</surname>
+                        <forename>Maria</forename>
                     </persName>
-                    <affiliation>Universität Würzburg, Deutschland</affiliation>
-                    <email>thora.hagen@uni-wuerzburg.de</email>
-                    <idno type="ORCID">0000-0002-3731-6397</idno>
+                    <affiliation>Trier Center for Digital Humanities, Universität Trier, Deutschland</affiliation>
+                    <email>hinzmannm@uni-trier.de</email>
+                    <idno type="ORCID">0000-0001-7199-1436</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Klee</surname>
+                        <forename>Anne</forename>
+                    </persName>
+                    <affiliation>Trier Center for Digital Humanities, Universität Trier, Deutschland</affiliation>
+                    <email>klee@uni-trier.de</email>
+                    <idno type="ORCID">0000-0002-1532-2649</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Konstanciak</surname>
+                        <forename>Johanna</forename>
+                    </persName>
+                    <affiliation>Trier Center for Digital Humanities, Universität Trier, Deutschland</affiliation>
+                    <email>konstanciak@uni-trier.de</email>
+                    <idno type="ORCID">0000-0003-0159-6144</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Röttgermann</surname>
+                        <forename>Julia</forename>
+                    </persName>
+                    <affiliation>Trier Center for Digital Humanities, Universität Trier, Deutschland</affiliation>
+                    <email>roettger@uni-trier.de</email>
+                    <idno type="ORCID">0000-0002-1918-8117</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schöch</surname>
+                        <forename>Christof</forename>
+                    </persName>
+                    <affiliation>Trier Center for Digital Humanities, Universität Trier, Deutschland</affiliation>
+                    <email>schoech@uni-trier.de</email>
+                    <idno type="ORCID">0000-0002-4557-2753</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Steffes</surname>
+                        <forename>Moritz</forename>
+                    </persName>
+                    <affiliation>Trier Center for Digital Humanities, Universität Trier, Deutschland</affiliation>
+                    <email>steffesm@uni-trier.de</email>
+                    <idno type="ORCID">0000-0002-4355-3209</idno>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-08-01T17:07:49.246061942</date>
+                    <date>2022-07-15T12:29:02.850000000</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -62,188 +107,294 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag</term>
+                    <term>Workshop</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Wissensgraphen</term>
-                    <term>Datentransformation</term>
-                    <term>Reflexion</term>
+                    <term>Linked Open Data</term>
+                    <term>SPARQL</term>
+                    <term>Literaturgeschichte</term>
+                    <term>Wikidata</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Umwandlung</term>
-                    <term>Theoretisierung</term>
-                    <term>Text</term>
+                    <term>Modellierung</term>
+                    <term>Visualisierung</term>
+                    <term>Literatur</term>
+                    <term>Metadaten</term>
+                    <term>benannte Entitäten (named entities)</term>
+                    <term>Software</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p>Strukturierte Daten, insbesondere Wissensgraphen, gewinnen in vielen Forschungsfeldern zunehmend an Bedeutung. Sie bieten eine kondensierte Sicht auf menschliches Wissen, sei es allgemein oder domänenspezifisch. Unter anderem können sie damit in Forschungsprojekten helfen, Textkorpora mit zusätzlichen Informationen anzureichern oder das Beantworten spezifischer Fragestellungen durch Inferenzbildungen erst möglich zu machen. Für den Erstellungsprozess eines Wissensgraphen gibt es allerdings keinen universal gültigen Lösungsweg (Kejriwal 2019, 4).</p>
-            <p>In diesem Beitrag geht es speziell um die Herausforderungen, einen Wissensgraphen aus historischen Enzyklopädien zu erstellen. Als Beispiel dafür dient das DFG-geförderte Projekt EncycNet.<ref n="1" target="ftn1"/> Es soll hierbei nicht die Präsentation von Methoden und deren Ergebnisse im Vordergrund stehen, sondern es sollen eher die Besonderheiten des Vorhabens und die damit einhergehenden konzeptuellen Überlegungen, die letztendlich auch bei der Auswahl der Methoden eine Rolle spielen, genauer darstellt werden. Im Folgenden soll deshalb zunächst ein kurzer Überblick über Wissensgraphen und deren Erstellung gegeben werden. Den Hauptteil leitet dann eine kurze Einführung zu EncycNet ein und schließlich werden die drei Herausforderungen des Projekts diskutiert.
-            </p>
-            <div type="div1" rend="DH-Heading">
-                <head>Forschungskontext</head>
-                <p>Um zu verstehen, was die Umwandlung von verschiedenen Quellen in einen Wissensgraph bedeutet, sollte zunächst der Begriff „Wissensgraph” geklärt werden. Es gibt zwei verschiedene Definitionen des Begriffs; eine traditionelle und eine moderne Verwendung. Traditionell wird davon ausgegangen, dass ein Wissensgraph nur Weltwissen enthält – ganz konkret nur Named Entities. Dabei wird auch erwartet, dass es eine schwergewichtige Ontologie zu dem Wissensgraph gibt. Geprägt ist diese traditionelle Sichtweise durch das erste Aufkommen des Begriffs durch den Google Knowledge Graph, also Wikidata, welcher genau diese Eigenschaften besitzt. Gemäß dieser Definition sind also WordNet oder GermaNet auch keine Wissensgraphen, sondern semantische Netzwerke. Die moderne Definition ist dem gegenüber etwas weniger streng; hier können Wissensgraphen jegliche Art von Wissen abbilden und die Ontologie darf ebenso auch leichtgewichtig sein.</p>
-                <p>Die Erstellung von Wissensgraphen lässt sich in drei Schritten zusammenfassen: 1) der Aufbau einer Ontologie, 2) die Erkennung von Entitäten und deren Alignierung und 3) die Relationsextraktion. Zusammengefasst aus der neuesten Forschung in dem Feld (aus Chaves-Fraga et al. 2021 u. 2022) lässt sich sagen, dass hier hauptsächlich das Mapping von Datenstrukturen im Vordergrund steht bzw. das Vereinheitlichen verschieden strukturierter Daten, um einen Graphen zu erstellen. Das bedeutet: Für alle drei Schritte kann auf bereits strukturierte Information zurückgegriffen werden und die Re-Organisation ist Kern der Aufgabe (Schröder et al. 2021, Wu et al. 2020). Daneben stehen häufig auch domänenspezifische Anforderungen an den Graphen im Vordergrund, so wie zum Beispiel bei der Erstellung des Open Drug Knowledge Graphs (Mann et al. 2021).</p>
-                <p>Ein Teilbereich der Forschung wiederum beschäftigt sich auch mit dem Erstellen von Graphen aus Fließtext, wobei hier die traditionelle Sichtweise auf Wissensgraphen, also die Repräsentation von realen Entitäten, dominiert. Typische Methoden aus dem Bereich sind daher z.B. Named Entity Recognition und Entity Linking (Kejriwal 2019, 12, 33). Dies gilt auch für das Feld der Digital Humanities, eben besonders für das Beschreiben kultureller Objekte, so wie zum Beispiel dem Modellieren von Erzählorten in Romanen (Hinzmann et al. 2022) oder dem Modellieren von Künstlern und Werken aus kunsthistorischen Texten (Jain et al. 2022). Daneben können auch syntaktische Marker statt Named Entities die Graphmodellierung stützen (Perak 2020). Häufig wird auch auf strukturierte Daten, z.B. Wissensgraphen aus derselben Domäne, zurückgegriffen, um eine Basis für die Alignierung der Konzepte, Relationsauswahl und Ontologie zu schaffen (Jain et al. 2022, Clancy et al. 2019).</p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>EncycNet: Herausforderungen und Chancen</head>
-                <p>Das Ziel von EncycNet ist es, einen Wissensgraphen aus sechs historischen Enzyklopädien (genauer: Konversationslexika, siehe Tabelle 1) zu erstellen.<ref n="2" target="ftn2"/> Der Graph soll ein lexikalisch-semantisches Netzwerk sein, welcher einerseits die Einträge über alle Enzyklopädien hinweg aligniert und disambiguiert. Zum anderen müssen die relevanten Relationen aus den Einträgen enthalten sein. So sollen beispielsweise Themenbereiche zu Stichwörtern verzeichnet sein („Operation“ / „Mathematik“ und „Operation“ / „Medizin“), aber auch typische Informationen über Named Entities wie Geburtsdatum und Geburtsort von bekannten Personen. Der Graph soll zunächst eine Vogelperspektive auf die Daten bieten; insbesondere sollen so Bedeutungsverschiebungen eines Konzepts im Verlauf der Zeit (z.B. durch Veränderung der nächsten Nachbarn) sichtbar gemacht werden. Ebenfalls kann mithilfe von Inferenzen der Graph genauer analysiert werden: Etwa die Verwandtschaftsgrade von Konzepten über Pfade, Zentralität von Konzepten für eine bestimmte Zeit oder die Bildung von Communities. Darüber hinaus können die Graphdaten dazu dienen, Textkorpora anzureichern oder historische Evaluationsdaten bereitzustellen. 
-
-                        <table rend="frame" xml:id="Tabelle1">
-                            <row>
-                                <cell rend="underline">Lexikon</cell>
-                                <cell rend="underline">Anzahl Einträge</cell>
-                                <cell rend="underline">Anzahl Tokens</cell>
-                            </row>
-                            <row>
-                                <cell rend="start">Brockhaus Conversations-Lexikon oder kurzgefaßtes Handwörterbuch (1809)</cell>
-                                <cell rend="start">6.960</cell>
-                                <cell rend="start">1.186.000</cell>
-                            </row>
-                            <row>
-                                <cell rend="start">Brockhaus Bilder-Conversations-Lexikon (1837)</cell>
-                                <cell rend="start">7.049</cell>
-                                <cell rend="start">2.604.000</cell>
-                            </row>
-                            <row>
-                                <cell rend="start">Brockhaus Kleines Konversations-Lexikon (1911)</cell>
-                                <cell rend="start">82.780</cell>
-                                <cell rend="start">2.434.000</cell>
-                            </row>
-                            <row>
-                                <cell rend="start">Damen Conversations Lexikon (1834)</cell>
-                                <cell rend="start">7.099</cell>
-                                <cell rend="start">1.461.000</cell>
-                            </row>
-                            <row>
-                                <cell rend="start">Herders Conversations-Lexikon (1854)</cell>
-                                <cell rend="start">39.755</cell>
-                                <cell rend="start">2.256.000</cell>
-                            </row>
-                            <row>
-                                <cell rend="start">Meyers Großes Konversations-Lexikon (1905)</cell>
-                                <cell rend="start">156.264</cell>
-                                <cell rend="start">17.437.000</cell>
-                            </row>
-                            <head>Tabelle 1: Auflistung der Konversationslexika für die Grundlage des Wissensgraphen EncycNet</head>
-                        </table>
-<p>Für die Erstellung des Graphen bedeutet der dargestellte Forschungskontext, dass ein solches Vorhaben verschiedene Forschungsnischen in sich vereint. Zum einen bedient sich EncycNet der modernen Definition für Wissensgraphen. Da in den historischen Enzyklopädien nicht nur Personen und Orte zu finden sind, sondern auch Objekte und Phänomene aller Art, muss der resultierende Wissensgraph diese Dinge auch abbilden können. Zum anderen liegen die Enzyklopädien nur semi-strukturiert (TEI-XML) vor.</p><ref n="3" target="ftn3"/> – zum Großteil handelt es sich deshalb um eine Grapherstellung aus Fließtext. Und letztlich, durch die Diversität, die mit einem historischen Korpus einhergeht, muss die Erstellung zusätzlich auf heterogene Fließtextdaten abgestimmt sein. Auf diese drei Herausforderungen, die das Enzyklopädienkorpus mit sich bringt, soll im Folgenden genauer eingegangen werden.
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung</head>
+                <p>Nicht nur in Kultur- und Gedächtnisinstitutionen, auch in DH-Projekten ist derzeit eine Zunahme des Linked Open Data-Paradigmas sichtbar. Wie können Daten im Sinne von „Open Data, Open Cultures“ offen, gut zugänglich, interoperabel vernetzt, maschinenlesbar und langfristig verfügbar dargeboten werden? Im Projekt „
+                    <ref target="http://www.mimotext.uni-trier.de/">Mining and Modeling Text</ref>“ haben wir uns für die offene und kostenlose Software Wikibase entschieden, die einen eigenen 
+                    <ref target="https://query.mimotext.uni-trier.de/">SPARQL-Endpoint</ref> beinhaltet und neben Wikidata von einer wachsenden Anzahl an Forschungsprojekten verwendet wird.<ref n="1" target="ftn1"/>
                 </p>
-                <div type="div2">
-                    <head>Domänenübergreifendes Wissen</head>
-                    <p>In den Enzyklopädien wird jegliche Art von Wissen über unterschiedlichste Wissensdomänen äußerst detailreich abgebildet. Insbesondere dann, wenn Einträge deutlich länger als nur eine Definition sind, findet sich dort einiges an Wissen, welches sich idealerweise auch in dem resultierenden Wissensgraphen widerspiegeln sollte. Allerdings sind solche längeren Einträge auch weniger standardisiert als die kürzeren, einfachen Begriffsdefinitionen in den Enzyklopädien. Trotzdem gibt es auch in längeren Einträgen bereits einige vorstrukturierte Elemente, gekennzeichnet durch die XML Annotation, die sich auf den ersten Blick zum extrahieren anbieten. Dazu gehören beispielsweise Hierarchien oder Aufzählungen, Vers, oder auch semi-strukturierte Formen im Fließtext wie z.B. Gleichungen, Angaben von Einheiten oder Ähnliches (einige Beispiele in Abbildung 1). Allerdings sind diese Elemente dann fast immer domänenspezifisch und sind damit nur in den wenigsten Einträgen zu finden.</p>
-                    <p>
-                        <figure>
-                            <graphic url="Pictures/cc131f863c8408735cbbdd58508b4355.jpg"/>
-                            <head>Abbildung 1: Beispiele für strukturierte bis semi-strukturierte Inhalte in den Einträgen der Enzyklopädien.</head>
-                        </figure>
-                    </p>
-                    <p>Um ein möglichst generisches Bild von dem Inhalt der Enzyklopädien zu erhalten, können die Einträge zunächst in generische Klassen unterteilt werden; für EncycNet ergaben sich die Klassen Personen, Orte, Objekte und Abstrakta. Diese Klassen wurden nach dem Vorbild von Wikidata (Personen und Orte als 2 Hauptkategorien) und WordNet („physical entity“ und „abstract entity“ als direkte Hyponyme des Wurzelelements „entity“). Mehrere Artikel aus diesen Klassen können dann gesichtet werden und in Abstimmung mit Wikidata oder WordNet die wichtigsten Informationen oder thematische Segmente innerhalb der Einträge identifiziert werden.</p>
-                    <p>So ergeben sich drei Gütekriterien für die regelbasierte Extraktion von strukturiertem Wissen aus historischen Enzyklopädien: 1) Wie generisch ist die Information; also auf wie viele Klassen und auf wie viele Einträge trifft sie insgesamt zu, 2) Wie stark ist die Information vorstrukturiert, also wie präzise kann eine Regel für die Information gefunden werden und 3) Wie relevant ist die Information im Hinblick auf die Ziele, die der Wissensgraph verfolgt? Recht generische Informationen sind beispielsweise Synonyme und Übersetzungen; in den meisten Einträgen werden diese direkt nach der Nennung des Konzepts aufgelistet und sind damit auch vergleichsweise einfach zu extrahieren. Die Beispiele aus Abbildung 1 sind das Gegenteil: Zwar sind sie alle eher einfach zu extrahieren durch die vorstrukturierte Form, allerdings sind sie auch in nur wenigen Einträgen vorhanden und insbesondere Zahlen und Einheiten sind für das Ziel das EncycNet verfolgt, nämlich ein semantisches Netzwerk zu bilden, eher uninteressant. Es empfiehlt sich daher, zunächst alle möglichen Informationen nach diesen Kriterien zu sortieren und dann erst mit der Extraktion zu beginnen, um eben nicht nur Detailwissen zu extrahieren bzw. bestimmte Domänen zu bevorzugen.</p>
-                    <p>Die domänenübergreifende Perspektive wirkt sich auch auf die Auswahl der Ontologie aus. Zusammen mit dem Ziel, nicht nur Entitäten sondern auch lexikalischen Wissen semantisch zu modellieren, schließt dies einige Standards aus. OntoLex (Cimiano et al. 2016) beispielsweise ist gerade dafür gedacht, lexikalisches Wissen aus Nachschlagewerken in einen Graphen umzuwandeln. Allerdings liegt hier der Fokus auf morphologischen statt semantischen Eigenschaften (Wortart, Genus, etc.), welche in Lexika nicht unbedingt aufgeführt werden. Die Struktur des Lexikons wird außerdem explizit beibehalten. So werden beispielsweise Referenzen auf andere Artikel als Kante „reference“ eingepflegt und nicht weiter typisiert. Daneben gibt es CIDOC-CRM (Doerr 2005), eine Standard-Ontologie zum Beschreiben von kulturellen Objekten, und Faktoide (Bradley und Short 2005) zur Abbildung von spezifischen Stellen in einer Quelle über Personen. Bei beiden Modellierungsarten sind Objekte und Eigenschaften eher auf Named Enitites und weniger auf Lexeme ausgelegt. Alle drei Standards sind gut geeignet für Teilbereiche der Enzyklopädien, so wie zum Beispiel Faktoide für biographische Einträge. Die möglichst vollständige Abbildung aller Inhalte die EncycNet anstrebt, auch hauptsächlich von lexikalischen Eigenschaften (z.B. Synonyme oder Hyperonyme), ist aber nicht möglich.</p>
-                    <p>Synonyme und Hyperonyme gehören bei der Bildung eines lexikalisch-semantischen Netzwerks zu den Grundbausteinen; sind also besonders wichtig für Punkt 3. Synonyme werden benötigt, um Synsets nach dem Vorbild von WordNet zu bilden (bzw. das Verknüpfen gleicher Konzepte) und Hyperonyme für den Aufbau einer Taxonomie. Allerdings ist die Extraktion einer vollständigen Taxonomie, welche alle Domänen umfasst, nur aus dem Enzyklopädienkorpus weitestgehend unrealistisch, weswegen auf zusätzliches Material zurückgegriffen werden muss. Als bislang größte Online-Enzyklopädie kann Wikidata / Wikipedia, welche inzwischen nicht nur Entitäten-bezogenes Wissen sondern über die Integration von WordNet auch über lexikalisches Wissen verfügt, als Schnittstelle genutzt werden. Sie liefert einerseits die Taxonomie, aber auch andererseits über Wikipedia zusätzliches Textmaterial zu den Konzepten, welches ebenfalls für die Alignierung der Einträge über verschiedene Enzyklopädien hinweg von nutzen sein kann (Hagen et al. 2022).</p>
-                </div>
-                <div type="div2">
-                    <head>Heterogene Daten</head>
-                    <p>Der Wissensgraph, der durch EncycNet entstehen soll, fasst das Wissen von 6 allgemeinen Enzyklopädien zusammen. Alle diese Enzyklopädien unterscheiden sich hinsichtlich der Auswahl und Organisation der Konzepte, der inneren Struktur der Einträge, Umfang und Auslegung der Definitionen und dem Stil. Jede dieser Eigenheiten müssen für die Informationsextraktion berücksichtigt werden, was bedeutet, dass die Relationen für alle Enzyklopädien neu beurteilt werden müssen. Pragmatisch betrachtet heißt dies auch, dass die Informationsdichte im resultierenden Graph abnimmt, da weniger Relationen in Betracht genommen werden können. Insbesondere auf mögliche Inferenzbildungen durch den Graph wirkt sich das negativ aus.</p>
-                    <p>Aus diesem Grund sollten generische Methoden für die Informationsextraktion hinzugezogen werden, sodass der Graph an Informationsdichte gewinnt. Hierbei kann auf typische Methoden in den Digital Humanities zurückgegriffen werden: Topic Modeling zum Identifizieren von übergreifenden Wissensbereichen, TF-IDF für distinktive Terme eines Eintrags, Komposita des Konzepts als verwandte Konzepte, Named Entity Recognition, oder spezifisch für Enzyklopädien die Extraktion von Referenzen auf andere Einträge. Nachteil dieser generischen Extraktion ist allerdings, dass das Mapping der extrahierten Terme auf eine Relation sich schwieriger gestaltet bzw. viele der Terme eine unspezifische Relation zum Konzept erhalten (z.B. in GermaNet „related_to“).</p>
-                    <p>Auch für die Alignierung ergeben sich praktische Probleme bei der Grapherstellung, denn in den Enzyklopädien können die Konzepte unterschiedlich organisiert sein. Dies reicht von Betitelungskonventionen der Einträge (z.B. „Der Adler“ / „Adler,“ oder „William Shakespeare“ / „Shakespeare“ / „Shakespeare, William“) bis hin zu der Möglichkeit, dass es Einträge gibt, die mehrere Konzepte zusammenfassen. In Meyer (1905) werden beispielsweise manche Entitäten thematisch gruppiert. So gibt es zum Beispiel genau zwei Einträge zu 
-                        <hi rend="italic">Alexander</hi>: einer gruppiert Fürsten und der andere griechische Schriftsteller mit dem Vornamen, die auch jeweils nochmal genauer beschrieben werden. In Herder (1854) dagegen gibt es drei Einträge: einen, der den Vornamen ohne Personenzuordnung nennt, einen zu Alexander I. (welcher auch Alexander II. umfasst) und einen zu Alexander III. Hier gilt es also zu klären, inwieweit die Konzepte getrennt werden können. In Meyer sind die Konzepte deutlich durch Paragraphen gekennzeichnet, in Herder werden sie sprachlich vermischt. Zusätzlich können allerdings, selbst wenn die Konzepte isoliert sind, diese auch unterschiedlich ausgelegt werden, auch historisch bedingt.
-                    </p>
-                </div>
-                <div type="div2">
-                    <head>Historisches Wissen</head>
-                    <p>Die Historizität der Daten wirkt sich damit ebenso auf die Alignierung der Konzepte aus. Auf der einen Seite werden teils archaische Begriffe oder Schreibweisen für Konzepte verwendet (z.B. „Irrenanstalt,“ jetzt „psychiatrische Klinik“). Durch eine orthographische Normalisierung und durch die Verwendung von Wikipedia für die Alignierung, welche zum Teil auch archaische Begriffe umfasst und auflösen kann, kann diesem Problem entgegengekommen werden. Auf der anderen Seite können sich aber auch die Definitionen von Begriffen im Laufe der Zeit stark verändert haben, etwa weil sich ein Konzept in ein anderes verwandelt hat oder weil Konzepte zu unterschiedlichen Zeiten anders ausgelegt werden.</p>
-                    <p>So wird beispielsweise in Meyer (1905) die 
-                        <hi rend="italic">Exploration</hi> beschrieben als die physische Untersuchung eines Kranken durch einen Arzt, während sie in Wikipedia mit 
-                        <hi rend="italic">Anamnese</hi> gleichgestellt wird, also der Erfragung von Informationen im Rahmen einer Erkrankung. Ein weiteres Beispiel findet sich in Herder (1854): Der Begriff 
-                        <hi rend="italic">Proportionalität</hi> wird beschrieben durch „Harmonie der Größenverhältnisse” und „Proportionslehre der menschlichen Gestalt,” während für 
-                        <hi rend="italic">Proportion</hi> die Verhältnisgleichung in der Mathematik genannt wird; also was die Menschen heute eigentlich unter Proportionalität verstehen würden.
-                    </p>
-                    <p>Diese Beispiele zeigen eine notwendige Modellierungsentscheidung für einen historischen Wissensgraphen auf: Sollen Konzepte, welche sich grundlegend verändert haben trotzdem miteinander aligniert werden und die Alignierung macht somit den semantischen Wandel sichtbar? Oder sollten nur Konzepte, welche tatsächlich semantische Äquivalente sind aligniert werden, da die Definitionen so unterschiedlich ausfallen können? Je nach Ziel, den der resultierende Graph verfolgt, kann diese Entscheidung unterschiedlich ausfallen.</p>
-                    <p>Letztlich wirkt sich das historische Wissen auch auf den Aufbau der Taxonomie aus. Um eine vollständige Taxonomie automatisch zu generieren, kann auf bestehendes strukturiertes Wissen (wie Wikidata) zurückgegriffen werden. Allerdings besteht hierbei die Gefahr, historisches Wissen zu ignorieren oder zu überschreiben. In den Enzyklopädien wird beispielsweise der Begriff 
-                        <hi rend="italic">Hexe</hi> als „Unholdin,” „Weib” oder „weissagende Frau” beschrieben, während in Wikidata „Magier” verwendet wird. Ein anderes Beispiel ist 
-                        <hi rend="italic">Hierarchie</hi>, welche in Wikidata als „Struktur“ oder „System“ eingeordnet wird, jedoch in den Enzyklopädien mit „Priesterherrschaft,” „Macht” oder „alle Rechte der Römischen Päpste über die gesammte Christenheit” beschrieben wird.
-                    </p>
-                </div>
+                <p>Der Workshop setzt es sich zum Ziel, theoretisches und praktisches Wissen zur Modellierung geisteswissenschaftlichen und speziell literaturgeschichtlichen Wissens in Form von Linked Open Data (LOD) zu vermitteln, Einblick in die Syntax der Abfragesprache SPARQL zu geben und den Mehrwert der Aufbereitung von Daten als Wissensgraphen in Anwendungsszenarien aufzuzeigen. Dabei liegt der Schwerpunkt auf der Vermittlung von SPARQL in theoretischen und praktischen Sessions. Teilnehmende sollen die Kompetenz erlangen, die Struktur von SPARQL zu verstehen und eigenständig Queries zu schreiben.</p>
+                
+                    <figure>
+                        <graphic url="Pictures/557b4cd8e508dfd84c23a1e0961634f1.png"/>
+                    <head>Abb. 1: Query und Ergebnisvisualisierung: Welche thematischen Konzepte sind im französischen Roman 1751-1800 vertreten? Beispiel: 
+                    <ptr target="https://tinyurl.com/2m8l3u99"/>.</head>
+                </figure>
+                
             </div>
-            <div type="div1" rend="DH-Heading">
-                <head>Zusammenfassung</head>
-                <p>Das Bilden eines historischen Wissensgraphen aus Enzyklopädien kombiniert zwei Forschungsnischen aus dem Forschungsfeld. Einerseits geht es hier um die Abbildung von lexikalisch-semantischem Wissen und nicht um nur um Entitätenwissen wie z.B. Wikidata, und andererseits stellt heterogener Fließtext die Datengrundlage für den Graphen dar. Beides sind Voraussetzungen, die sich selten in der aktuellen Forschung zur Erstellung von Wissensgraphen wiederfinden. Der Aufbau von EncycNet wird geleitet von praktischen Anforderungen an den Graphen, welche sich aus den vordefinierten Zielen ergeben. Dabei geht es um die Einschätzung, welche Informationen in den Enzyklopädien sich für eine Relationsextraktion anbieten, aber gleichzeitig soll möglichst viel Wissen mit dem Graphen abgedeckt werden. Zusätzlich, insbesondere um Inferenzen zu ermöglichen, muss der resultierende Graph eine möglichst große Informationsdichte in Tiefe (Taxonomie) und Breite (generische Relationen) aufweisen. Es ergibt sich daraus eine Bottom-up Strategie (schematisch zusammengefasst in Abbildung 2).</p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Linked Open Data für die Geisteswissenschaften</head>
+                <p>Es ist zu beobachten, dass es ein zunehmendes Interesse in der DH-Community gibt, die eigenen Daten in Form von LOD zu veröffentlichen und mit dem Semantic Web zu vernetzen oder die aktuellen Entwicklungen zu reflektieren (Hogan et al. 2021; Ikonić Nešić et al. 2021; Thornton et al. 2021; Alves 2022; Dörpinghaus 2022; Ohmukai / Yamada 2022; Zhao 2022). Auch das Projekt „
+                    <ref target="http://www.mimotext.uni-trier.de/">Mining and Modeling Text</ref>“ hat es sich zum Ziel gesetzt, Daten aus unterschiedlichen Informationsquellen zu aggregieren und im Sinne des LOD-Paradigmas mit weiteren Ressourcen zu verknüpfen (Schöch et al. 2022). Der Mehrwert der aufwändigen Erschließung und Modellierung der Daten wird erst in den vielfältigen und flexiblen Abfragemöglichkeiten deutlich und ist demnach nicht loszulösen von SPARQL.
+                </p>
+                <p>SPARQL (SPARQL Protocol and RDF Query Language) ist eine 2008 vom W3C veröffentlichte, graphenbasierte Abfragesprache für RDF (Resource Description Framework). RDF ist ein Datenmodell, mit dem sich Ressourcen im World Wide Web darstellen lassen. Es ist der zentrale Standard des W3C, der semantische Daten in der charakteristischen Tripel-Struktur bestehend aus ‚Subjekt – Prädikat – Objekt‘ repräsentiert. Ausgehend von einem einzelnen solchen Tripel wird die Struktur eines Knowledge Graphen im Workshop entfaltet und die „Übersetzung“ von Forschungsfragen in natürlicher Sprache in die SPARQL-Syntax erläutert. </p>
+                
+                    <figure>
+                        <graphic url="Pictures/184989ed4b0981abe0a9bb62bba2e7d4.png"/>
+                    <head>Abb. 2: Tripel-Struktur bestehend aus ‚Subjekt – Prädikat – Objekt‘, hier ein Beispiel zu einem literarischen Werk (Candide) aus der MiMoTextBase: 
+                    <ptr target="http://data.mimotext.uni-trier.de/wiki/Item:Q1022"/>.</head></figure>
+                
+                <p>Die Abfragesprache SPARQL setzt sich aus mehreren Bausteinen zusammen: 
+                    <hi rend="italic">pattern matching</hi> (Filtern des Datenbestands), 
+                    <hi rend="italic">solution modifier</hi> (Bearbeitung der Zwischenergebnisse) &amp; 
+                    <hi rend="italic">output</hi> (Ausgabe als Tabelle oder Graph; Arenas et al. 2010). SPARQL ermöglicht es User:innen, durch Rekombination von Datensätzen neue Muster in den Daten zu erkennen und hypothesengeleitete Abfragen zu formulieren. Die Stärken dieser Abfragesprache und der Strukturierung von Wissen als RDF Triplestore sollen im Workshop in Anwendungsbeispielen gezeigt werden.
+                </p>
+                <p>SPARQL-Abfragen werden häufig innerhalb eines einzelnen Knowledge Graphen gestellt. Es besteht jedoch auch die Möglichkeit, über mehrere Knowledge Graphen hinweg Abfragen zu stellen, sogenannte 
+                    <hi rend="italic">federated queries </hi>(Prud’hommeaux / Buil-Aranda 2013). Hier kommt das volle Potential von LOD zum Vorschein, denn so lässt sich Erkenntnisgewinn aus der Kombination mehrerer Graphen ziehen, ohne durch Replikationen von Datensätzen unnötige Redundanzen zu erzeugen. Im Workshop werden 
+                    <hi rend="italic">federated queries </hi>mit Wikidata erlernt und es wird gezeigt, inwieweit Nutzen aus diesen gezogen werden kann.
+                </p>
                 <p>
                     <figure>
-                        <graphic url="Pictures/ae82a9ed812ab6ec9cb14c22dc712964.png"/>
-                        <head>Abbildung 2: Schematische Darstellung der Erstellung des Graphen: gezielte Extraktion von Relationen aus den Enzyklopädien (links), Aufbau der Taxonomie (Mitte) und Verdichtung durch ungezielte, generische Relationsextraktion (rechts).</head>
-                    </figure>Für EncycNet werden aktuell Alignierung sowie Relationsextraktion fertiggestellt. Da die größtmögliche Abdeckung für beide Aufgaben erzielt werden soll, werden die Methoden diesbezüglich kontinuierlich optimiert. Noch ausstehend ist die Evaluierung des extrahierten Wissens mit Golddaten. Final sollen dann über die Evaluierung die Relationen und die Alignierung mit Gewichten ausgestattet werden, welche die Konfidenz angeben. Im Frühjahr 2024 sollen dann die Daten in RDF* zur Verfügung gestellt werden.
+                        <graphic url="Pictures/0a21bf32fcbf6e7ac34d3d94e1653753.png"/>
+                    <head>Abb. 3: 
+                    <hi rend="italic">Federated queries</hi> in SPARQL erlauben es, eigene Daten und externe Datenbestände (z. B. Wikidata) gleichzeitig abzufragen. Beispiel: 
+                    <ptr target="https://tinyurl.com/2ke42c3f"/>.</head></figure>
                 </p>
-                <p>Im Vordergrund dieses Beitrags sollten damit jene Entscheidungsfindungen stehen, die in Methoden-orientierten Beiträgen sonst meist nur am Rande erwähnt werden. Dabei wurde sich auf EncycNet bezogen, jedoch können die hier aufgeführten Ideen genauso für Projekte, die auf ähnliche Herausforderungen bei dem Aufbau eines Wissensgraphen stoßen, interessant sein.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Workshop-Konzept</head>
+                <p>Der Workshop vermittelt Grundlagenwissen und Möglichkeiten, die das LOD-Paradigma bietet. Der im Projekt erstellte multilinguale Wissensgraph MiMoTextBase zur Domäne der französischen Literatur des 18. Jahrhunderts soll dabei als Anschauungsbeispiel dienen.</p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Lernziele</head>
+                    <p>Der Workshop möchte praktisches Wissen vermitteln: Wie schreibt man SPARQL-Queries? Welchen Mehrwert kann ein Knowledge Graph für literaturgeschichtliche Fragen im Besonderen und die Geisteswissenschaften im Allgemeinen bieten?</p>
+                    <p>In dem halbtägigen Workshop wird der Wissensgraph 
+                        <ref target="https://data.mimotext.uni-trier.de/">MiMoTextBase</ref> (Hinzmann et al. 2022a) des Projekts „Mining and Modeling Text“ vorgestellt und es werden Anwendungsszenarien formuliert und visualisiert. Dazu werden Grundlagen der Abfragesprache SPARQL erlernt und eigene Queries formuliert. Wir arbeiten beispielhaft auf dem projektinternen Knowledge Graphen sowie auf Wikidata und werden über 
+                        <hi rend="italic">federated queries</hi> die Verbindung mehrerer Wissensgraphen demonstrieren.
+                    </p>
+                    <p>Konkrete Lernziele sind: Erwerb von Grundlagenwissen zu Semantic Web und RDF, LOD, Wikidata Graph; vertiefte Kenntnisse zu SPARQL und die praktische Fähigkeit, eigene SPARQL-Queries zu formulieren; Kennenlernen der Software Wikibase und Exploration der Visualisierungsmöglichkeiten des SPARQL-Endpoints. </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Zielpublikum und Anforderungen</head>
+                    <p>Der Workshop wendet sich an digitale Geisteswissenschaftler:innen mit Interesse an LOD und SPARQL. Spezielle Vorkenntnisse sind nicht notwendig. Teilnehmende benötigen einen Laptop.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Struktur / Ablauf</head>
+                    <p>Der Workshop setzt sich aus aufeinander aufbauenden Sessions zusammen, die jeweils Input-Phasen und Übungsphasen verbinden. Es wird vorab eine ausführliche Tutorial-Seite (inklusive Verlinkung auf weitere hilfreiche Ressourcen zum SPARQL-Lernen) zur Verfügung gestellt, die den Teilnehmenden (und allen weiteren Interessierten) in der Vorbereitung sowie zur Vertiefung nützlich sein kann (Hinzmann et al. 2022b).</p>
+                    <p>Im Zentrum des Workshops stehen drei Blöcke mit jeweils unterschiedlichem Schwerpunkt, in denen das Formulieren von SPARQL-Queries geübt wird (vgl. für Details den Ablauf im Appendix). Auch Teilnehmende ohne Vorkenntnisse werden schrittweise an zunehmend komplexere Queries herangeführt. Der Schwierigkeitsgrad wächst innerhalb der einzelnen Blöcke, wobei der Fokus auf dem eigenständigen Formulieren sowie Anpassen von Beispiel-Queries und dem Klären aller dabei auftretenden Fragen liegen wird.</p>
+                    <p>1. Im ersten Teil liegt der Fokus auf Abfragen zu literarischen Werken. Im Hinblick auf SPARQL geht es hier zunächst um die zentralen Grundlagen wie das Schreiben einfacher 
+                        <hi rend="italic">triple patterns</hi> und Möglichkeiten der Kombination mehrerer 
+                        <hi rend="italic">triple patterns</hi> zu zunehmend komplexeren Queries. Der Mehrwert, der sich aus solchen Kombinationsmöglichkeiten ergibt, wird mit dem durch die MiMoTextBase gegebenen Fokus auf den französischen Aufklärungsroman besonders deutlich.
+                    </p>
+                    <p>2. Im zweiten Teil widmen wir uns Wikidata als größtem öffentlichen Wissensgraphen, der sich zugleich als ‚Hub‘ begreifen lässt (Neubert 2017), und fokussieren Autor:innen als Entitäten. Autor:innen sind in allen geisteswissenschaftlichen Disziplinen relevant und ein wichtiges Scharnier zwischen verschiedenen Wissensgraphen. Bezogen auf die SPARQL-Syntax gehen wir einen Schritt weiter und integrieren Funktionen wie OPTIONAL und FILTER, um das Spektrum der Abfragemöglichkeiten zu erweitern. Ein Einstieg wird hier mit Queries zu Literat:innen der MiMoText-Domäne gemacht. Im nächsten Schritt können die Teilnehmenden die Daten von Autor:innen in ihrer jeweiligen Domäne in Wikidata explorieren.</p>
+                    <p>3. Der dritte Teil verknüpft die beiden vorigen Teile auf mehreren Ebenen. Der Schwerpunkt liegt auf 
+                        <hi rend="italic">federated queries</hi>, wobei wir uns auf Abfragen, die sich über die MiMoTextBase und Wikidata erstrecken, konzentrieren werden. Die genauere Betrachtung von Autor:innen des 2. Teils wird hier fortgesetzt und vertieft. In diesem abschließenden Teil wird der Mehrwert von Standards und geteilten Datenmodellen (Ontologien bzw. 
+                        <hi rend="italic">entity schemata</hi>) sowie die Verknüpfung von Ressourcen besonders deutlich.<ref n="2" target="ftn2"/> Alle Autor:innen der MiMoTextBase, für die es auch Wikidata-Items gibt, können mit diesen über die Property 
+                        <hi rend="italic">exact match</hi> verknüpft werden, wodurch zusätzliche Informationen bereitstehen und diverse Abfragemöglichkeiten eröffnet werden.<ref n="3" target="ftn3"/> Die Wikibase-Infrastruktur bietet außerdem vielfältige Explorationsmöglichkeiten, die beispielhaft eingeführt werden (
+                        <hi rend="italic">marker cluster</hi> für Geo-Daten, Timelines für Geburtsdatum u. ä.).
+                    </p>
+                    <p>Es soll in der abschließenden Diskussion auch Raum sein, einen kritischen Blick auf Entwicklungen im Bereich des Semantic Web zu werfen, beispielsweise die Frage, welche Monopolisierungskräfte und Marktkräfte Einfluss nehmen (van Hooland / Verborgh 2014, 247–48; Singhal 2012). Zum Abschluss werden die wichtigsten Anwendungsmöglichkeiten und Fragen zusammengetragen und weiterführende Ressourcen (DuCharme 2013; van Hooland / Verborgh 2014; Lincoln 2015; Blaney 2017) sowie bei Interesse Möglichkeiten der Kooperation thematisiert.</p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Appendix </head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Ablauf (4 Stunden)</head>
+                    <table rend="frame" xml:id="Tabelle1">
+                        <row>
+                            <cell>10 Min.</cell>
+                            <cell>Begrüßung (Vorstellung evtl. über Mentimeter) </cell>
+                        </row>
+                        <row>
+                            <cell>20 Min. </cell>
+                            <cell>Einleitung: Input zu Semantic Web, RDF, LOD für die Literaturgeschichte am Beispiel des Projekts Mining and Modeling Text. Wikidata &amp; Wikibase Ecosystem, Mehrsprachigkeit des Graphen.</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell rend="bold">SPARQL Teil 1 (MiMoTextBase)</cell>
+                        </row>
+                        <row>
+                            <cell>20 Min.</cell>
+                            <cell>(a) Input zu SPARQL-Grundlagen (interaktive Phase), SPARQL-Syntax, Möglichkeiten der Datenvisualisierung in Wikibase, Debugging &amp; Help.</cell>
+                        </row>
+                        <row>
+                            <cell>35 Min.</cell>
+                            <cell>(b) Praxis-Teil: Anpassen vorhandener und Formulieren einfacher, eigener SPARQL-Queries auf der MiMoTextBase (Breakout Session bzw. Gruppenarbeit).</cell>
+                        </row>
+                        <row>
+                            <cell>15 Min.</cell>
+                            <cell>Pause</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell rend="bold">SPARQL Teil 2 (Wikidata)</cell>
+                        </row>
+                        <row>
+                            <cell>20 Min.</cell>
+                            <cell>(a) Input: Erweiterte Elemente der SPARQL-Syntax wie OPTIONAL und FILTER; Datenmodell für Autor:innen auf Wikidata.</cell>
+                        </row>
+                        <row>
+                            <cell>35 Min.</cell>
+                            <cell>(b) Praxis: Formulieren etwas komplexerer Queries auf Wikidata. </cell>
+                        </row>
+                        <row>
+                            <cell>15 Min.</cell>
+                            <cell>Pause</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell rend="bold">SPARQL Teil 3 (
+                                <hi rend="italic">Federated queries</hi>)
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>20 Min.</cell>
+                            <cell>(a) Input: Fortgeschrittene SPARQL-Queries: 
+                                <hi rend="italic">Federated queries</hi>, 
+                                <hi rend="italic">prefixes</hi> definieren, 
+                                <hi rend="italic">marker cluster</hi> etc.
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>35 Min.</cell>
+                            <cell>(b) Praxis: 
+                                <hi rend="italic">Federated queries</hi> etc. anwenden.
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>15 Min.</cell>
+                            <cell>Abschließende Diskussion, Empfehlung weiterführender Ressourcen zur Vertiefung des Gelernten.</cell>
+                        </row>
+                    </table>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Organisatorisches</head>
+                    <p>Maximale Zahl der Teilnehmenden: 25. Wir benötigen einen Raum mit WLAN und Beamer und bieten gern ein Hybrid-Szenario an. </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Fördernachweis</head>
+                    <p>„Mining and Modeling Text“ (Universität Trier, Trier Center for Digital Humanities) wird von der Forschungsinitiative des Landes Rheinland-Pfalz 2019-2023 gefördert. </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Beitragende</head>
+                    <p>Der Workshop wird von Mitarbeiter:innen des LOD-Projekts „Mining and Modeling Text“ durchgeführt. Das interdisziplinäre Projekt verfügt über einen eigenen SPARQL-Endpoint und wurde in Wikibase implementiert. </p>
+                    <p>Maria Hinzmann; hinzmannm@uni-trier.de; Trier Center for Digital Humanities, Universität Trier | Historisches Seminar: Digital Humanities, Bergische Universität Wuppertal; Forschungsinteressen: Datenmodellierung, LOD, Textanalyseverfahren.</p>
+                    <p>Anne Klee; klee@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: Digitale Textverarbeitung; Digitale Lexikographie.</p>
+                    <p>Johanna Konstanciak; konstanciak@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: Digitale Textverarbeitung; XML/Web-Technologien.</p>
+                    <p>Julia Röttgermann; roettger@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: LOD, Textmining-Verfahren wie Topic Modeling, NER und Sentiment Analysis.</p>
+                    <p>Christof Schöch; schoech@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: Computational Literary Studies.</p>
+                    <p>Moritz Steffes; steffesm@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: Softwaresysteme, Semantic Web Technologien, Forschungsinfrastrukturen.</p>
+                </div>
             </div>
         </body>
         <back>
 <div type="notes">
-<note xml:id="ftn1" rend="footnote text" n="1">
-                    <ref target="https://encycnet.github.io/">https://encycnet.github.io/</ref>
-                </note>
-<note xml:id="ftn2" rend="footnote text" n="2"> Eine ausführliche Übersicht über das Korpus ist auf <ref target="https://encycnet.github.io/corpus-overview.html">https://encycnet.github.io/corpus-overview.html</ref> gegeben.
+<note xml:id="ftn1" rend="footnote text" n="1"> Einige aktuelle Beispiele für Forschungsprojekte, die Wikibase verwenden: 
+                        <ref target="https://enslaved.org/">Enslaved</ref> (Zhou et al. 2020), 
+                        <ref target="https://artbase.rhizome.org/wiki/Main_Page">Rhizome Artbase</ref> (Rhizome 2021), 
+                        <ref target="https://database.factgrid.de/">FactGrid</ref> (Simons 2022; Brunner 2022).
                     </note>
-<note xml:id="ftn3" rend="footnote text" n="3"> Die TEI-Daten können über Zenodo (<ref target="http://dx.doi.org/10.5281/zenodo.4039569">http://dx.doi.org/10.5281/zenodo.4039569</ref>) heruntergeladen werden.
-                    </note></div>
-                    
+<note xml:id="ftn2" rend="footnote text" n="2"> Diese Verknüpfung entspricht dem 5. Stern im Linked Open Data-Modell von Berners-Lee (2006).</note>
+<note xml:id="ftn3" rend="footnote text" n="3"> Vgl. dazu den entsprechenden Query auf der MiMoTextBase: 
+                            .
+                        </note></div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Bradley, John und Harold Short.</hi> 2005. “Texts into databases: the Evolving Field of New-style Prosopography.” 
-                        <emph>Literary and Linguistic Computing </emph>20 (1): 3-24.
+                    <bibl><hi rend="bold">Alves, Daniel, Hrsg.</hi> 2022. „IJHAC: A Journal of Digital Humanities. Special Issue: Linked Open Data in the Arts and Humanities“ 16 (1). 
+                        <ptr target="https://www.euppublishing.com/doi/epdf/10.3366/ijhac.2022.0271"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Chaves-Fraga, David, Anastasia Dimou, Pieter Heyvaert, Freddy Priyatna und Juan Sequeda. Hrsg.</hi> 2021. „Proceedings of the 2nd International Workshop on Knowledge Graph Construction co-located with 18th Extended Semantic Web Conference (ESWC 2021).“ In 
-                        <hi rend="italic">CEUR Workshop Proceedings</hi> 2873. 
-                        <ref target="http://ceur-ws.org/Vol-3141/">http://ceur-ws.org/Vol-2873/</ref> (zugegriffen: 01. August 2022).
+                    <bibl><hi rend="bold">Arenas, Marcelo, Claudio Gutierrez und Jorge Pérez.</hi> 2010. „On the Semantics of SPARQL“. In 
+                        <hi rend="italic">Semantic Web Information Management: A Model-Based Perspective</hi>, herausgegeben von Roberto de Virgilio, Fausto Giunchiglia, und Letizia Tanca, 281–307. Berlin, Heidelberg: Springer. 
+                        <ptr target="https://doi.org/10.1007/978-3-642-04329-1_13"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Chaves-Fraga, David, Anastasia Dimou, Pieter Heyvaert, Freddy Priyatna und Juan Sequeda. Hrsg. </hi>2022. „Proceedings of the 3rd International Workshop on Knowledge Graph Construction (KGCW 2022) co-located with 19th Extended Semantic Web Conference (ESWC 2022).“ In C
-                        <hi rend="italic">EUR Workshop Proceedings</hi> 3141. 
-                        <ptr target="http://ceur-ws.org/Vol-3141/"/> (zugegriffen: 01. August 2022).
+                    <bibl><hi rend="bold">Berners-Lee, Tim.</hi> 2006. „Linked Data – Design Issues“. 27. Juli 2006. 
+                        <ptr target="https://www.w3.org/DesignIssues/LinkedData.html"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Cimiano, Philipp, John P. McCrae, und Paul Buitelaar. </hi>2016. 
-                        <hi rend="italic">Lexicon model for ontologies: community report, 10 May 2016.</hi>
-                        <ptr target="https://www.w3.org/2016/05/ontolex/"/> (zugegriffen: 07. Dezember 2022).
+                    <bibl><hi rend="bold">Blaney, Jonathan.</hi> 2017. „Introduction to the Principles of Linked Open Data“. 
+                        <hi rend="italic">Programming Historian.</hi>
+                        <ptr target="https://programminghistorian.org/en/lessons/intro-to-linked-data"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Clancy, Ryan, Ihab F. Ilyas und Jimmy Lin. </hi> 2019. „Knowledge Graph Construction from Unstructured Text with Applications to Fact Verification and Beyond.“ In 
-                        <hi rend="italic">Proceedings of the Second Workshop on Fact Extraction and VERification (FEVER)</hi>, Hong Kong, China.
+                    <bibl><hi rend="bold">Brunner, Katharina.</hi> 2022. „FactGrid wants to become part of the Wikidata federation ecosystem“. 30. Mai 2022. 
+                        <ptr target="https://blog.factgrid.de/archives/2922"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Doerr, Martin.</hi> 2005. "The CIDOC CRM, an ontological approach to schema heterogeneity." 
-                        <hi rend="italic">Dagstuhl Seminar Proceedings</hi>. Schloss Dagstuhl – Leibniz-Zentrum für Informatik.
+                    <bibl><hi rend="bold">Dörpinghaus, Jens. </hi> 2022. “Wissensgraphen: Interdisziplinäre Perspektiven für Linked Data in den Geistes- und Sozialwissenschaften.” 
+                        <hi rend="italic">Zeitschrift für digitale Geisteswissenschaften</hi> 07. 
+                        <ptr target="https://doi.org/10.17175/2022_011"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Hagen, Thora, Fotis Jannidis und Andreas Witt.</hi> 2022. „Word sense alignment and disambiguation for historical encyclopedias.“ In 
-                        <hi rend="italic">6th International Conference on Graphs and Networks in the Humanities</hi>. 
-                        <ref target="https://nbn-resolving.org/urn:nbn:de:bsz:mh39-109834">urn:nbn:de:bsz:mh39-109834</ref> (zugegriffen: 09. Dezember 2022). Vorveröffentlichung.
+                    <bibl><hi rend="bold">DuCharme, Bob. 2013. </hi>Learning SPARQL. Sebastopol, UNITED STATES: O’Reilly Media.</bibl>
+                    <bibl>Hinzmann, Maria, Anne Klee, Johanna Konstanciak, Julia Röttgermann, Christof Schöch und Moritz Steffes. 2022a. „MiMoTextBase“, Trier Center for Digital Humanities, 
+                        <ref target="https://data.mimotext.uni-trier.de/">https://data.mimotext.uni-trier.de</ref>, 11/2022.
                     </bibl>
-                    <bibl><hi rend="bold">Hinzmann, Maria, Julia Röttgermann, Anne Klee, Moritz Steffes und Christof Schöch.</hi> 2022. „The French Enlightenment Novel as a Graph? Potentials and Challenges in the Construction of a Knowledge Network.“ In 
-                        <hi rend="italic">6th International Conference on Graphs and Networks in the Humanities</hi>. 
-                        <ref target="https://doi.org/10.5281/zenodo.5840088">10.5281/zenodo.5840088</ref> (zugegriffen: 09. Dezember 2022). Vorveröffentlichung.
+                    <bibl><hi rend="bold">Hinzmann, Maria, Anne Klee, Johanna Konstanciak, Julia Röttgermann, Christof Schöch und Moritz Steffes.</hi> 2022b. „MiMoTextBase Tutorial“. Juli 2022. 
+                        <ptr target="https://mimotext.github.io/MiMoTextBase_Tutorial/"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Jain, Nitisha, Alejandro Sierra-Múnera, Maria Lomaeva, Julius Streit, Simon Thormeyer, Philipp Schmidt und Ralf Krestel.</hi> 2022. „Generating Domain-Specific Knowledge Graphs: Challenges with Open Information Extraction.“ In 
-                        <hi rend="italic">Proceedings of International Workshop on Knowledge Graph Generation from Text (Text2KG), co-located with the Extended Semantic Web Conference (ESWC 2022)</hi>.
+                    <bibl><hi rend="bold">Hogan, Aidan, Eva Blomqvist, Michael Cochez, Claudia d’Amato, Gerard de Melo, Claudio Gutierrez, Sabrina Kirrane, et al.</hi> 2021. „Knowledge Graphs“. 
+                        <hi rend="italic">Synthesis Lectures on Data, Semantics, and Knowledge</hi> 12 (2): 1–257. 
+                        <ptr target="https://doi.org/10.2200/S01125ED1V01Y202109DSK022"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Kejriwal, Mayank.</hi> 2019. 
-                        <hi rend="italic">Domain-specific knowledge graph construction</hi>. New York: Springer International Publishing.
+                    <bibl><hi rend="bold">Hooland, Seth van und Ruben Verborgh.</hi> 2014. 
+                        <hi rend="italic">Linked Data for Libraries, Archives and Museums: How to clean, link and publish your metadata</hi>. London: Facet Publishing.
                     </bibl>
-                    <bibl><hi rend="bold">Mann, Mark, Filip Ilievski, Mohammad Rostami, Aastha und Basel Shbita. </hi>2021. „Open Drug Knowledge Graph.“ In 
-                        <hi rend="italic">Proceedings of the 3rd International Workshop on Knowledge Graph </hi>
-                        <hi rend="italic">Construction (KGCW 2022) co-located with 19th Extended Semantic Web Conference (ESWC 2022)</hi>. 
-                        <ptr target="http://ceur-ws.org/Vol-2873/paper10.pdf"/> (zugegriffen: 01. August 2022).
+                    <bibl><hi rend="bold">Ikonić Nešić, Milica, Ranka Stanković und Biljana Rujević. </hi>2021. „Serbian ELTeC Sub-Collection in Wikidata“. 
+                        <hi rend="italic">Infotheca </hi>21 (2): 60–86. 
+                        <ptr target="https://doi.org/10.18485/infotheca.2021.21.2.4"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Perak, Benedikt. </hi>2020. "Modeling Semantic Relations from a Dependency-Based Graph: A Corpus-Based Network Analysis of Croatian Parliamentary Debates." In 
-                        <hi rend="italic">Graph Technologies in the Humanities - Proceedings 2020</hi>. 
-                        <ptr target="https://ceur-ws.org/Vol-3110/paper9.pdf"/> (zugegriffen: 09. Dezember 2022).
+                    <bibl><hi rend="bold">Lincoln, Matthew.</hi> 2015. „Using SPARQL to access Linked Open Data“. Herausgegeben von Fred Gibbs. 
+                        <hi rend="italic">The Programming Historian</hi>, Nr. 4 (November). 
+                        <ptr target="https://doi.org/10.46430/phen0047"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Schröder, Markus, Christian Jilek und Andreas Dengel. </hi>2021. "Mapping Spreadsheets to RDF: Supporting Excel in RML." In 
-                        <hi rend="italic">Proceedings of the 3rd International Workshop on Knowledge Graph Construction (KGCW 2021) co-located with 19th Extended Semantic Web Conference (ESWC 2021)</hi>.
+                    <bibl><hi rend="bold">Neubert, Joachim.</hi> 2017. „Wikidata as a Linking Hub for Knowledge Organization Systems? Integrating an Authority Mapping into Wikidata and Learning Lessons for KOS Mappings“. In 
+                        <hi rend="italic">Proceedings of the 17th European NKOS workshop</hi>. 
+                        <ptr target="http://ceur-ws.org/Vol-1937/paper2.pdf"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Wu, Tianxing, Haofen Wang, Cheng Li, Guilin Qi, Xing Niu, Meng Wang, Lin Li und Chaomin Shi.</hi> 2020. "Knowledge graph construction from multiple online encyclopedias." In 
-                        <hi rend="italic">World Wide Web</hi> 23 (5): 2671-2698.
+                    <bibl><hi rend="bold">Ohmukai, Ikki und Taizo Yamada, Hrsg.</hi> 2022. 
+                        <hi rend="italic">Digital Humanities 2022. Conference Abstracts. Responding to Asian Diversity.</hi> Tokyo: ADHO. 
+                        <ptr target="https://dh2022.dhii.asia/dh2022bookofabsts.pdf"/>.
+                    </bibl>
+                    <bibl><hi rend="bold">Prud’hommeaux, Eric und Carlos Buil-Aranda.</hi> 2013. „SPARQL 1.1 Federated Query“. W3C Recommendation. 21. März 2013. 
+                        <ptr target="https://www.w3.org/TR/sparql11-federated-query/"/>.
+                    </bibl>
+                    <bibl><hi rend="bold">Rhizome. </hi>2021. „The ArtBase Relaunches: Welcome to Linked Open Data. Rhizome“. 
+                        <ptr target="http://rhizome.org/editorial/2021/apr/26/the-artbase-relaunches-welcome-to-linked-open-data"/>.
+                    </bibl>
+                    <bibl><hi rend="bold">Sack, Harald und Mehwish Alam. </hi>2020. „Knowledge Graphs“. Potsdam. 
+                        <ptr target="https://open.hpi.de/courses/knowledgegraphs2020"/>.
+                    </bibl>
+                    <bibl><hi rend="bold">Schöch, Christof, Maria Hinzmann, Röttgermann Julia, Anne Klee und Katharina Dietz.</hi> 2022. „Smart Modelling for Literary History“.
+                        <hi rend="italic">IJHAC: International Journal of Humanities and Arts Computing [Special issue on Linked Open Data]</hi> 16 (1): 78–93. 
+                        <ptr target="https://doi.org/10.3366/ijhac.2022.0278"/>.
+                    </bibl>
+                    <bibl><hi rend="bold">Simons, Olaf.</hi> 2022. „FactGrid“, Forschungszentrum Gotha der Universität Erfurt, 
+                        <ref target="http://database.factgrid.de/">database.factgrid.d</ref>
+                        <ref target="http://database.factgrid.de/">e</ref>, 11/2022. 
+                        <ptr target="http://doi.org/10.17616/R31NJMQR"/>.
+                    </bibl>
+                    <bibl><hi rend="bold">Singhal, Amit.</hi> 2012. „Introducing the Knowledge Graph: Things, Not Strings“. 
+                        <hi rend="italic">Google </hi>(blog). 16. Mai 2012. 
+                        <ptr target="https://blog.google/products/search/introducing-knowledge-graph-things-not/"/>.
+                    </bibl>
+                    <bibl><hi rend="bold">Thornton, Katherine, Kenneth Seals-Nutt, Marianne Van Renmoortel, Julie M. Birkholz und Pieterjan De Potter. </hi>2021. „Linking Women Editors of Periodicals to the Wikidata Knowledge Graph“. 
+                        <hi rend="italic">Semantic Web journal </hi>Special Issue Cultural Heritage 2021. 
+                        <ptr target="http://www.semantic-web-journal.net/content/linking-women-editors-periodicals-wikidata-knowledge-graph"/>.
+                    </bibl>
+                    <bibl><hi rend="bold">Zhao, Fudie.</hi> 2022. „How to Critically Utilise Wikidata - A Systematic Review of Wikidata in DH Projects“. In 
+                        <hi rend="italic">Digital Humanities 2022 - Conference Abstracts</hi>, herausgegeben von Ikki Ohmukai und Taizo Yamada, 608–10. The University of Tokyo, Japan: DH2022 Local Organizing Committee. 
+                        <ptr target="https://dh2022.dhii.asia/dh2022bookofabsts.pdf"/>.
+                    </bibl>
+                    <bibl><hi rend="bold">Zhou, Lu, Cogan Shimizu, Pascal Hitzler, Alicia M. Sheill, Seila Gonzalez Estrecha, Catherine Foley, Duncan Tarr und Dean Rehberger.</hi> 2020. „The Enslaved Dataset: A Real-world Complex Ontology Alignment Benchmark using Wikibase“. In 
+                        <hi rend="italic">Proceedings of the 29th ACM International Conference on Information &amp; Knowledge Management</hi>, 3197–3204. CIKM ’20. New York, NY, USA: Association for Computing Machinery. 
+                        <ptr target="https://doi.org/10.1145/3340531.3412768"/>.
                     </bibl>
                 </listBibl>
             </div>

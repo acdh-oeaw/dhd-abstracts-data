@@ -1,48 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="KONLE_Leonard_Gattungen_und_Emotionen_in_der_Lyrik_des_Reali" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="WINTJES_Jorit_Die_historische_Konfliktsimulation_als_wissens" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Gattungen und Emotionen in der Lyrik des Realismus und der frühen Moderne</title>
+                <title>Die historische Konfliktsimulation als wissenschaftliches Modellierungsproblem in der Lehre</title>
                 <author>
                     <persName>
-                        <surname>Kröncke</surname>
-                        <forename>Merten</forename>
+                        <surname>Wintjes</surname>
+                        <forename>Jorit</forename>
                     </persName>
-                    <affiliation>Universität Göttingen, Deutschland</affiliation>
-                    <email>merten.kroencke@uni-goettingen.de</email>
-                    <idno type="ORCID">0000-0003-2717-0598</idno>
+                    <affiliation>Julius-Maximilians-Universität, Deutschland</affiliation>
+                    <email>jorit.wintjes@uni-wuerzburg.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Konle</surname>
-                        <forename>Leonard</forename>
+                        <surname>Pielström</surname>
+                        <forename>Steffen</forename>
                     </persName>
-                    <affiliation>Universität Würzburg, Deutschland</affiliation>
-                    <email>leonard.konle@uni-wuerzburg.de</email>
-                    <idno type="ORCID">0000-0001-5833-0414</idno>
+                    <affiliation>Julius-Maximilians-Universität, Deutschland</affiliation>
+                    <email>pielstroem@biozentrum.uni-wuerzburg.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Winko</surname>
-                        <forename>Simone</forename>
+                        <surname>Bock</surname>
+                        <forename>Sina</forename>
                     </persName>
-                    <affiliation>Universität Göttingen, Deutschland</affiliation>
-                    <email>simone.winko@phil.uni-goettingen.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Jannidis</surname>
-                        <forename>Fotis</forename>
-                    </persName>
-                    <affiliation>Universität Würzburg, Deutschland</affiliation>
-                    <email>fotis.jannidis@uni-wuerzburg.de</email>
-                    <idno type="ORCID">0000-0001-6944-6113</idno>
+                    <affiliation>Julius-Maximilians-Universität, Deutschland</affiliation>
+                    <email>sina.bock@uni-wuerzburg.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-07-15T10:28:00Z</date>
+                    <date>2022-07-30T00:19:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -88,18 +77,15 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Emotion</term>
-                    <term>Gattung</term>
-                    <term>Lyrik</term>
-                    <term>Realismus</term>
-                    <term>Moderne</term>
+                    <term>Konfliktsimulation</term>
+                    <term>Modellierung</term>
+                    <term>facilitator-based-simulations</term>
+                    <term>agent-based simulations</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Inhaltsanalyse</term>
+                    <term>Programmierung</term>
                     <term>Modellierung</term>
-                    <term>Annotieren</term>
-                    <term>Literatur</term>
-                    <term>Text</term>
+                    <term>Lehre</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -107,350 +93,459 @@
     <text>
         <body>
             <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p style="text-align: left; ">Der literarische Wandel vom Realismus zur Moderne ist nach wie vor Gegenstand vielfältiger literaturwissenschaftlicher Debatten. Eine dieser Debatten betrifft die Frage, wie sich die Gestaltung von Emotionen in lyrischen Texten veränderte. Während einige typologisch argumentierende Forscher:innen (z. B. 
-                    <ref target="https://www.zotero.org/google-docs/?fg89V7">Andreotti 2014)</ref> davon ausgehen, dass die moderne Lyrik gegenüber der traditionelleren Lyrik des Realismus zu einer nüchternen, nicht-emotionalen Ausdrucksweise tendiert, argumentieren andere (z. B. 
-                    <ref target="https://www.zotero.org/google-docs/?omnPxW">Winko 2003)</ref> ausgehend von zeitgenössischen Selbstbeschreibungen, dass die Lyrik der frühen Moderne – historisch verstanden – sehr wohl Emotionen gestalte, wenn auch in modifizierter Weise (vgl. zu dieser Debatte auch 
-                    <ref target="https://www.zotero.org/google-docs/?g8KejA">Konle u. a. 2022)</ref>.
+                <head>
+                    <hi rend="normaltextrun">Modellierung und Simulation in den Digital Humanities</hi>
+                </head>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">Die Modellierung von Forschungsgegenständen sowie die Operationalisierung von Forschungsfragen sind zentrale Bestandteile geisteswissenschaftlicher Forschung (Beynon et al. 2006, Flanders and Jannidis 2015, Thaller 2017, Piotrowski, 2019). Mit Einzug der Digitalisierung können Forschungsgegenstände in strukturierte Forschungsdaten transformiert und durch diese formalisierte Modellierung mit informationstheoretischen Methoden untersucht werden. Die Kompetenzen, die für eine adäquate konzeptionelle und formale Modellierung sowie für eine quantitative Analyse geisteswissenschaftlicher Forschungsinteressen erforderlich sind, bilden den “fächerübergreifende[n] Kern der Digital Humanities” (Thaller 2017, S. 16).</hi>
                 </p>
-                <p style="text-align: left; ">Zu bedenken ist, dass die damalige Lyrik keine homogene Einheit bildet. Aussagen darüber, inwiefern sich die Emotionsgestaltung ‘der’ Lyrik veränderte, lassen sich differenzieren. Ein naheliegendes, wichtiges Differenzmerkmal lyrischer Texte – und damit ein potentiell relevanter Einflussfaktor auf die Emotionsgestaltung – ist die Gattung. Ziel dieses Beitrags ist deshalb, zu prüfen, inwiefern sich lyrische Gattungen in unserem Untersuchungszeitraum durch spezifische Emotionsprofile auszeichnen und ob die Entwicklung der Lyrik vom Realismus zur frühen Moderne unter der Perspektive der Emotionsgestaltung, die wir in  (
-                    <ref target="https://www.zotero.org/google-docs/?oWFE6v">Konle u. a. 2022</ref>) herausgearbeitet haben, mit der Zugehörigkeit zu bestimmten lyrischen Gattungen zusammenhängt. An diesem Beispiel soll gezeigt werden, wie wichtig es auch für quantitative Untersuchungen ist, literarische Phänomene nicht isoliert zu betrachten, sondern als Teil eines komplexen Systems zu modellieren, in dem unterschiedliche Faktoren einander beeinflussen. Der Beitrag versteht sich als Schritt hin zu einer solchen multifaktoriellen Modellierung von Literatur und literarischem Wandel.
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun" xml:space="preserve">Die Fähigkeit zur kritischen Auseinandersetzung mit den Vorannahmen und Auswirkungen der Reduktion, die für die formale Beschreibung von Forschungsgegenständen notwendigerweise einhergeht, ist mehreren geisteswissenschaftlichen Disziplinen gemein und von zentraler Bedeutung (Thaller 2017, Ciula et al, 2018, Piotrowski 2019). </hi>
+                    <hi rend="eop"> </hi>
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ressourcen</head>
-                <p style="text-align: left; ">Das zu analysierende Korpus besteht aus Texten in Lyrikanthologien aus dem Untersuchungszeitraum, die sich auf Gedichte von Zeitgenoss:innen konzentrieren. Das Teilkorpus ‘Realismus’ umfasst Gedichte aus Anthologien, die zwischen 1850 und den frühen 1880er Jahren publiziert wurden; das Teilkorpus ‘Moderne’ enthält Texte aus Anthologien, die um 1900 erschienen sind und deren Herausgeber:innen die Gedichte aufgrund ihrer Modernität ausgewählt haben. Welche Texte als ‘realistisch’ und welche als ‘modern’ gelten, wird in diesem Beitrag also aus zeitgenössischer Sicht (und nicht aus Sicht heutiger Forscher:innen) modelliert.<ref n="1" target="ftn1"/> Da keine der einbezogenen Anthologien nach 1911 erschienen ist, beschränken sich die Analysen auf die 
-                    <hi rend="italic">frühe</hi> Moderne.
-                </p>
-                
-                <table rend="rules">
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
-                        <cell style="text-align: left;" rend="DH-Default">Anthologien</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Gedichte</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Wörter</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">Realismus</cell>
-                        <cell style="text-align: left;" rend="DH-Default">8</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3367</cell>
-                        <cell style="text-align: left;" rend="DH-Default">400k</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">Moderne</cell>
-                        <cell style="text-align: left;" rend="DH-Default">12</cell>
-                        <cell style="text-align: left;" rend="DH-Default">2882</cell>
-                        <cell style="text-align: left;" rend="DH-Default">320k</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">Insgesamt</cell>
-                        <cell style="text-align: left;" rend="DH-Default">20</cell>
-                        <cell style="text-align: left;" rend="DH-Default">6249</cell>
-                        <cell style="text-align: left;" rend="DH-Default">720k</cell>
-                    </row>
-                    <head><p style="text-align: left; ">Tabelle 1: Korpus Statistik</p></head>
-                </table>
-                <p style="text-align: left; ">Für 1412 Korpustexte wurden die Gattungszugehörigkeit und die Emotionsgestaltung annotiert. Die Gattungsannotation hält fest, ob ein Text bestimmten im Untersuchungszeitraum relevanten thematischen Gattungen (Naturlyrik, Liebeslyrik usw.) sowie nicht-thematischen Gattungen (Ballade, Lied usw.) angehört und ob er situativ bestimmt oder situativ unbestimmt ist. Wenn im Folgenden von ‘Gattungen’ die Rede ist, sind in aller Regel die thematischen Gattungen gemeint, auf die sich dieser Beitrag erst einmal konzentriert. Die Gattungszuordnung ist weder exklusiv noch zwingend: Während der Annotation konnten einem Text genau eine, aber auch keine oder mehrere Gattungen zugewiesen werden.<ref n="2" target="ftn2"/> Die Emotionsannotation zielt darauf ab, die im Text gestalteten Emotionen (und nicht die Leseremotionen) zu erfassen. Genutzt wurde ein Set von 40 diskreten Emotionen, darunter zum Beispiel Liebe, Trauer, Hoffnung, Sehnsucht oder Hass. Einerseits handelt es sich um Emotionen, die in gängigen Emotionstheorien 
-                    <ref target="https://www.zotero.org/google-docs/?ujhMJp">(Ekman 1992; 1999; Plutchik 1980b; 1980a; 2001)</ref> als grundlegend angesehen werden, andererseits wurden zusätzliche Emotionen, die in den Korpustexten häufig vorkommen, aufgenommen, um das Emotionsset an das historische Material anzupassen. Die Annotationseinheiten sind Wörter bzw. Wortfolgen.<ref n="3" target="ftn3"/> Da für viele einzelne Emotionen nicht genügend Annotationen vorliegen, um ihre maschinelle Detektion trainieren zu können, werden die Emotionen nachträglich zu sechs Gruppen zusammengefasst: Liebe, Freude, Trauer, Erregung/Überraschung, Angst und Wut. Die Gruppierung orientiert sich an der Emotionshierarchie in 
-                    <ref target="https://www.zotero.org/google-docs/?9aHjPw">Shaver u. a. (1987)</ref>.
-                </p>
-                <table rend="rules">
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">Gattung</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Liebe</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Natur</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Philosophie</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Religion</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">Anzahl</cell>
-                        <cell style="text-align: left;" rend="DH-Default">350</cell>
-                        <cell style="text-align: left;" rend="DH-Default">286</cell>
-                        <cell style="text-align: left;" rend="DH-Default">163</cell>
-                        <cell style="text-align: left;" rend="DH-Default">100</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">Gattung</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Poetologie</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Politik</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Kultur</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Geschichte</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">Anzahl</cell>
-                        <cell style="text-align: left;" rend="DH-Default">61</cell>
-                        <cell style="text-align: left;" rend="DH-Default">21</cell>
-                        <cell style="text-align: left;" rend="DH-Default">104</cell>
-                        <cell style="text-align: left;" rend="DH-Default">118</cell>
-                    </row>
-                    <head><p>Tabelle 2: Annotierte Gattungen</p></head>
-                </table>
-                <p style="text-align: left; ">Jedes Gedicht wurde zunächst von zwei Annotator:innen annotiert; anschließend haben die beiden Annotator:innen ihre Annotationen miteinander verglichen, die Disagreements diskutiert und eine Konsensannotation erstellt. Auf den Konsensannotationen beruhen alle weiteren Auswertungen. Das Agreement der Einzelannotationen beträgt 0.69 (Krippendorffs Alpha).</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Methoden</head>
-                <p style="text-align: left; ">Um Gattungslabel für das gesamte Korpus herstellen zu können, sollen Classifier trainiert und angewandt werden.<ref n="4" target="ftn4"/> Da Gedichte sehr kurz sind, kommt ein Verfahren auf bag-of-words-Basis nicht in Betracht. Stattdessen wird auf das Fine-Tuning neuronaler Sprachmodelle zurückgegriffen. In einer Vorstudie zur Gattung Liebeslyrik sollen das geeignetste Sprachmodell und Hyperparameter<ref n="5" target="ftn5"/> ermittelt werden. Getestet werden die Modelle gbert-large 
-                    <ref target="https://www.zotero.org/google-docs/?52a9sN">(Chan, Schweter, und Möller 2020)</ref> und gottbert-base 
-                    <ref target="https://www.zotero.org/google-docs/?Wvn7LZ">(Scheible u. a. 2020)</ref>. Das beste Ergebnis wird mit gbert-large erzielt (Batchsize 20, Learning Rate 1e-5 und 50 Epochen). Durch eine Anpassung auf das Lyrikkorpus durch fortgesetztes Pretraining<ref n="6" target="ftn6"/>
-                    <ref target="https://www.zotero.org/google-docs/?3zSd0D">(Gururangan u. a. 2020)</ref> kann die Performance weiter gesteigert werden (siehe Tab. 3 ,gbert-large-poetry).
-                </p>
-                <table rend="rules">
-                    
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">Modell</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Accuracy (std)</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">gbert-large-poetry</cell>
-                        <cell style="text-align: left;" rend="DH-Default">.880 (.022)</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">gbert-base</cell>
-                        <cell style="text-align: left;" rend="DH-Default">.854 (.040)</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">Gottbert-base</cell>
-                        <cell style="text-align: left;" rend="DH-Default">.826 (.032)</cell>
-                    </row>
-                    <head>Tabelle 3: Ergebnis der Vorstudie zur Gattung ‘Liebeslyrik’. Evaluation durch 5-fold-cross validation.</head>
-                </table>
-                <p style="text-align: left; ">Das Modell wird mit den ermittelten Hyperparametern verwendet, um binäre Classifier für alle übrigen Gattungen zu trainieren. Da die Klasse der nicht zur fokussierten Gattung gehörenden Gedichte in jedem Fall größer ist, wird epochenweise Random Undersampling angewandt. Für politische Lyrik wird kein Modell trainiert, da nicht genügend Beispiele vorhanden sind (siehe Tabelle. 2).</p>
-                <table rend="rules">
-                    
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">Gattung</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Liebe</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Natur</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Poetologie</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Geschichte</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Politik</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Philosophie</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Religion</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Kutlur</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">Acc</cell>
-                        <cell style="text-align: left;" rend="DH-Default background-color(C2D69B)">.880</cell>
-                        <cell style="text-align: left;" rend="DH-Default background-color(C2D69B)">.833</cell>
-                        <cell style="text-align: left;" rend="DH-Default background-color(D99594)">.623</cell>
-                        <cell style="text-align: left;" rend="DH-Default background-color(C2D69B)">.872</cell>
-                        <cell style="text-align: left;" rend="DH-Default background-color(D99594)">-</cell>
-                        <cell style="text-align: left;" rend="DH-Default background-color(C2D69B)">.723</cell>
-                        <cell style="text-align: left;" rend="DH-Default background-color(C2D69B)">.815</cell>
-                        <cell style="text-align: left;" rend="DH-Default background-color(D99594)">.470</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">Std</cell>
-                        <cell style="text-align: left;" rend="DH-Default">.022</cell>
-                        <cell style="text-align: left;" rend="DH-Default">.024</cell>
-                        <cell style="text-align: left;" rend="DH-Default">.224</cell>
-                        <cell style="text-align: left;" rend="DH-Default">.026</cell>
-                        <cell style="text-align: left;" rend="DH-Default">-</cell>
-                        <cell style="text-align: left;" rend="DH-Default">.028</cell>
-                        <cell style="text-align: left;" rend="DH-Default">.059</cell>
-                        <cell style="text-align: left;" rend="DH-Default">.169</cell>
-                    </row>
-                    <head>Tabelle 4: Ergebnisse der Evaluation der Classifier für thematische Gattungen (5-fold cross-validation).</head>
-                </table>
-                <p style="text-align: left; ">Tabelle 4 zeigt die Qualität der trainierten Classifier. Da die Performance für die Gattungen Kultur und Poetologie nicht ausreicht, um solide Analysen zu ermöglichen, werden diese im Weiteren nicht behandelt und fallen, wie Politik, der Kategorie ‘Sonstige’ zu, die daneben diejenigen Gedichte umfasst, die keiner thematischen Gattung zugeordnet wurden.</p>
-                <p style="text-align: left; ">Für Informationen zur Annotation von Emotionen und Modellen zur Emotionsdetektion siehe 
-                    <ref target="https://www.zotero.org/google-docs/?IcIPYd">(Konle u. a. 2022)</ref>.
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">In den Geschichtswissenschaften findet sich diese Auseinandersetzung einerseits in Diskussionen über die Anwendung formaler Methoden zur Beschreibung und Analyse historischer Phänomene,</hi><ref n="1" target="ftn1"/>
+                    <hi rend="normaltextrun" xml:space="preserve"> andererseits aber auch in Reflektionen über Möglichkeiten der Vermittlung dieser Methodik in der Lehre. Ein Beispiel hierfür bilden analoge und digitale Simulationen, die in den Geschichtswissenschaften seit Langem als didaktische Methode eingesetzt werden, um die Modellierung von historischen Konflikten zu erlernen (Sabin 2011, Sabin, 2012, Sabin 2016).</hi>
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Ergebnisse </head>
-                <figure>
-                    <graphic n="1001" width="16.002cm" height="9.045222222222222cm" url="Pictures/9f426abee1b5966b140d1496c05ad8ac.png" rend="inline"/>
-                    <head> Verteilung von thematischen Gattungen in Realismus und Moderne. Absolute Anzahl über Balken. Die Kategorie ‘Sonstige’ repräsentiert diejenigen Gedichte, die keiner der übrigen in dieser Abbildung gezeigten thematischen Gattungen zugeordnet wurden.</head>
-                </figure>
-                <p style="text-align: left; ">Verteilung von thematischen Gattungen in Realismus und Moderne. Absolute Anzahl über Balken. Die Kategorie ‘Sonstige’ repräsentiert diejenigen Gedichte, die keiner der übrigen in dieser Abbildung gezeigten thematischen Gattungen zugeordnet wurden.</p>
-                <p style="text-align: left; ">60% der untersuchten Gedichte konnten (mindestens) einer der fünf Gattungen Liebeslyrik, Naturlyrik, religiöse Lyrik, philosophische Lyrik oder Geschichtslyrik zugeordnet werden. Liebeslyrik und Naturlyrik sind im Korpus deutlich verbreiteter als religiöse Lyrik, philosophische Lyrik und Geschichtslyrik. Im Epochenvergleich werden nur begrenzte Verschiebungen sichtbar; die Rangfolge der Häufigkeiten bleibt konstant (siehe Abb. 1).</p>
-                <p style="text-align: left; ">Wie die Gattungen kommen auch die Emotionen im Korpus unterschiedlich oft vor: Emotionen der Gruppen Liebe, Freude und Trauer werden deutlich häufiger gestaltet als Emotionen der Gruppen Erregung/Überraschung, Angst und Wut. Die Häufigkeit positiver Emotionen – Liebe und Freude – nimmt zur Moderne hin ab 
-                    <ref target="https://www.zotero.org/google-docs/?3449V4">(Konle u. a. 2022)</ref>.
+                <head>
+                    <hi rend="normaltextrun">Konfliktsimulationen als didaktisches Instrument im Unterricht</hi>
+                </head>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">Konfliktsimulationen sind ein äußerst leistungsfähiges didaktisches Instrument für den akademischen und nicht-akademischen Unterricht; auf diese Weise eingesetzt können sie zu den 
+                        <hi rend="italic">serious</hi>
+                        <hi rend="italic">games</hi> gezählt werden (Jones 1995; Michael and Chen 2006). Sie stellen ein Element partizipatorischen Unterrichts dar und eröffnen beispielsweise im Fach Geschichte den Teilnehmenden einen Zugang zu den für die Vorbereitung der Simulation notwendigen Quellenmaterialien, der sich stark von einer eher rezeptiven Wissensaufnahme unterscheidet: für die Teilnahme an einer Konfliktsimulation, in deren Mittelpunkt immer die Verarbeitung von Information und das Entscheiden auf der Basis dieser prozessierten Information steht, ist eine auf die Ziele der Simulation hin ausgerichtete Aufbereitung des jeweils relevanten Quellenmaterials notwendig. Hierdurch bieten sich den Teilnehmenden Perspektiven, die ohne eine derartige Aufbereitung kaum deutlich würden. 
+                    </hi>
+                    <hi rend="eop"> </hi>
                 </p>
-                <figure>
-                    <graphic n="1002" width="16.002cm" height="9.001125cm" url="Pictures/c4f2d717cd6284be96197a9240282a61.png" rend="inline"/>
-                    <head>Emotionsprofile nach Gattungen. Die Emotionen wurden mit dem Median 
-                        <hi rend="underline">aller</hi> Gedichte normalisiert, um auch Unterschiede in wenig häufigen Emotionen (Anger, Fear, Agitation) sichtbar zu machen. Die 0-Linie markiert die Übereinstimmung mit dem Median aller Gedichte, darüber bedeutet mehr und darunter weniger Emotion.<ref n="7" target="ftn7"/>
-                    </head>
-                </figure>
-                <p style="text-align: left; ">Die Ergebnisse (Abb. 2) zeigen, dass Gattungen eigenständige Emotionsprofile ausbilden; dies gilt auch für die nicht durch Emotionen definierten Gattungen. Einige Gattungen verhalten sich in Hinsicht auf bestimmte Emotionen ähnlich, z.B. philosophische Gedichte und Geschichtslyrik in Hinsicht auf die Gruppen Freude und Trauer, weichen aber in anderen Emotionen stark voneinander ab. Während z.B. in Liebeslyrik – wenig überraschend – Emotionen der Gruppe Liebe dominant sind, werden in Geschichtslyrik Emotionen der Gruppen Liebe und Freude unter- und Emotionen der Gruppen Wut und Angst überproportional dargestellt.</p>
-                <p style="text-align: left; ">Ein kontrastiver Blick auf Gattungen unter der Perspektive von Epochen (Abb. 3) zeigt, dass sich (1) die lyrische Emotionsgestaltung in der frühen Moderne gegenüber dem Realismus verändert, und zwar (2) je nach Gattung in unterschiedlicher Weise. </p>
-                <figure>
-                    <graphic n="1003" width="13.784247222222222cm" height="21.999222222222222cm" url="Pictures/a3afaad4eae12421bf04e76c0f0da3ab.png" rend="inline"/>
-                    <head>Emotionsprofilenach Epochen und Gattungen. Die Abbildung zeigt anders als Abb.2 nicht die Abweichung vom Median, sondern den Mittelwert der Emotionen.</head>
-                </figure>
-                <p style="text-align: left; ">Der summarische Trend über alle Gattungen zu weniger Emotionen, verursacht vor allem durch den Rückgang positiver Emotionen in der Moderne (siehe Konle u.a. 2022), betrifft nicht alle Gattungen in gleicher Weise. Während sich die Ergebnisse zu Liebes-, Natur- und philosophischer Lyrik noch diesem Trend zuordnen lassen, entwickeln sich Geschichts- und religiöse Lyrik durch Zunahme negativer Emotionen eigenständiger. Religiöse Lyrik läuft dem Trend sogar durch ein vermehrtes Auftreten von Emotionen der Gruppe Liebe entgegen. Diese Befunde erlauben einen differenzierten Blick auf Emotionen, Gattungen und deren Veränderung in der frühen Moderne.</p>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Case Study: Religiöse Lyrik</head>
-                    <p style="text-align: left; ">Anschließend an unsere Ergebnisse stellt sich die Frage nach den Faktoren, welche die gattungsspezifischen Emotionsprofile zu unterschiedlichen Zeitpunkten beeinflussen. Für Geschichtslyrik bietet sich die These an, dass mit der Thematisierung von Konflikten und Feindseligkeiten 
-                        <ref target="https://www.zotero.org/google-docs/?ksrwXP">(Detering und Trilcke 2013)</ref> negative Emotionen einhergehen. Ob in der frühen Moderne diese Themen zunehmen oder stärker mit Emotionen verbunden werden, muss geprüft werden. 
-                    </p>
-                    <p style="text-align: left; ">Die Entwicklung der Emotionen in religiöser Lyrik ist noch komplexer, es nehmen nicht nur negative Emotionen zu, sondern auch die der Gruppe Liebe, bei gleichzeitigem Rückgang der Gruppe Freude.<ref n="8" target="ftn8"/> Diese Beobachtung kann an Einsichten der Forschung anschließen und diese ergänzen. Bekannt ist, dass moderne Lyrik trotz z.T. dezidierter Kritik noch „vielfältig auf religiöse Traditionen bezogen“ bleibt 
-                        <ref target="https://www.zotero.org/google-docs/?8H2r1R">(Detering 2016, 126)</ref>, dass sie sich u.a. stärker von christlichen Institutionen entfernt und religiöse Motive umdefiniert. Offenbar verbindet sie aber auch mehr und andere Emotionen mit dem Thema als die Lyrik des Realismus. Einen ersten Hinweis auf den Zusammenhang zwischen Motiven und Emotionen gibt Tabelle 5, die u.a. eine Verschiebung der distinktiven Substantive von der Institution zu Personen sowie eine Tendenz zu symbolfähigen Ausdrücken zeigt. Die Verschiebung zum persönlichen Glaubensaspekt könnte die erhöhte Anzahl der Emotionen erklären. Betrachtet man die in der frühen Moderne häufiger werdenden Emotionen (Tab. 6) zeigt sich, dass ein Teil der Zunahme über die Sexualisierung religiöser Inhalte erklärt werden kann. Zur Erklärung der vermehrten negativen Emotionen wären weitere Untersuchungen nötig. Aufschlussreich ist auch, dass sich der Darstellungsmodus religiöser Lyrik insofern ändert, als in Gedichten der frühen Moderne verstärkt Emotionswörter und Wörter vorkommen, die Emotionen körperlich, z.B. gestisch oder mimisch ausdrücken.
-                    </p>
-                    <table rend="rules">
-                        
-                        <row>
-                            <cell style="text-align: center;" rend="DH-Default">Realismus</cell>
-                            <cell style="text-align: center;" rend="DH-Default">Moderne</cell>
-                        </row>
-                        <row>
-                            <cell style="text-align: left;" rend="DH-Default">
-                                <p style="text-align: left; ">Wald</p>
-                                <p style="text-align: left; ">Kirche</p>
-                                <p style="text-align: left; ">Kaiser</p>
-                                <p style="text-align: left; ">Bischof</p>
-                                <p style="text-align: left; ">Segen</p>
-                                <p style="text-align: left; ">Grab</p>
-                                <p style="text-align: left; ">Priester</p>
-                                <p style="text-align: left; ">Glocke</p>
-                                <p style="text-align: left; ">Mönch</p>
-                                <p style="text-align: left; ">Heil</p>
-                                <p style="text-align: left; ">Werk</p>
-                                <p style="text-align: left; ">Sieg</p>
-                                <p style="text-align: left; ">Haus</p>
-                                <p style="text-align: left; ">Friede</p>
-                                <p style="text-align: left; ">Dom</p>
-                                <p style="text-align: left; ">Andacht</p>
-                                <p style="text-align: left; ">Lenz</p>
-                                <p style="text-align: left; ">Sonntag</p>
-                                <p style="text-align: left; ">Mahl</p>
-                                <p style="text-align: left; ">Ehr</p>
-                            </cell>
-                            <cell style="text-align: left;" rend="DH-Default">
-                                <p style="text-align: left; ">Gott</p>
-                                <p style="text-align: left; ">Seele</p>
-                                <p style="text-align: left; ">Nacht</p>
-                                <p style="text-align: left; ">Auge</p>
-                                <p style="text-align: left; ">Mensch</p>
-                                <p style="text-align: left; ">Tod</p>
-                                <p style="text-align: left; ">Weib</p>
-                                <p style="text-align: left; ">Licht</p>
-                                <p style="text-align: left; ">Welt</p>
-                                <p style="text-align: left; ">Stimme</p>
-                                <p style="text-align: left; ">Traum</p>
-                                <p style="text-align: left; ">Kreuz</p>
-                                <p style="text-align: left; ">Brust</p>
-                                <p style="text-align: left; ">Blut</p>
-                                <p style="text-align: left; ">Volk</p>
-                                <p style="text-align: left; ">Erde</p>
-                                <p style="text-align: left; ">Herz</p>
-                                <p style="text-align: left; ">König</p>
-                                <p style="text-align: left; ">Kind</p>
-                                <p style="text-align: left; ">Leib</p>
-                            </cell>
-                        </row>
-                        <head>Tabelle 5: Distinktive Substantive der Gattung Religion. Ranking nach Keyness. genauer: Simple Maths Parameter 
-                            <ref target="https://www.zotero.org/google-docs/?Uc7i4f">(Brezina 2018, S.85)</ref>.
-                        </head>
-                    </table>
-                    <table rend="rules">
-                        
-                        <row>
-                            <cell style="text-align: center;" rend="DH-Default">Abnehmend</cell>
-                            <cell style="text-align: center;" rend="DH-Default">Zunehmend</cell>
-                        </row>
-                        <row>
-                            <cell style="text-align: left;" rend="DH-Default">
-                                <p style="text-align: left; ">Freude</p>
-                                <p style="text-align: left; ">Ausgeglichenheit</p>
-                                <p style="text-align: left; ">Lust (nicht-sexuell)</p>
-                                <p style="text-align: left; ">Aufregung</p>
-                                <p style="text-align: left; ">Dankbarkeit</p>
-                            </cell>
-                            <cell style="text-align: left;" rend="DH-Default">
-                                <p style="text-align: left; ">Liebe</p>
-                                <p style="text-align: left; ">Abneigung</p>
-                                <p style="text-align: left; ">Sehnsucht</p>
-                                <p style="text-align: left; ">Leid</p>
-                                <p style="text-align: left; ">Lust (sexuell)</p>
-                            </cell>
-                        </row>
-                        <head>Tabelle 6: Verschiebung der Emotionen zwischen Realismus und Moderne in religiöser Lyrik (Datengrundlage: Manuell annotierte Gedichte).</head>
-                    </table>
-                </div>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">Ein weiteres wichtiges Einsatzgebiet ist die Auseinandersetzung mit den Problemen, die bei der Prozessierung von Information, der darauf basierenden Entscheidungsfindung und anschließenden Kommunikationsprozessen entstehen. Hier können Konfliktsimulationen eindrücklicher aufzeigen, als dies in anderen Unterrichtsformen möglich wäre, wie durch dysfunktionale Entscheidungsprozesse Handlungsmöglichkeiten von Akteuren eingeschränkt werden.</hi>
+                    <hi rend="eop"> </hi>
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">Neben der Teilnahme führt schließlich die Erstellung einer Konfliktsimulation zu einer deutlich vertieften Auseinandersetzung mit dem gegebenen Phänomen (Sabin 2012, Sabin 2016). Bei einem erfolgreichen Simulationsdesign handelt es sich immer um eine stark abstrahierende Modellierung einer sehr komplexen Realität; der Versuch einer solchen Modellierung beinhaltet daher immer auch eine Auseinandersetzung mit der Frage, welche Faktoren Eingang in die Simulation finden sollen, und welche unberücksichtigt bleiben können.</hi>
+                    <hi rend="eop"> </hi>
+                </p>
+                <p style="text-align: left; ">Über die Frage nach Perspektivbildung und Modellierungsleistung der Teilnehmenden hinaus führt die bei der Durchführung von Simulationen schließlich immer wieder zu beobachtende Immersion zu einer sinnvollen Auflockerung des Unterrichts.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Fazit</head>
-                <p style="text-align: left; ">Die gleichzeitige Beobachtung von Gattung und Emotion zeigt nicht nur, dass Gattungen wesentlichen Einfluss auf die Verteilung von Emotionen haben, sondern auch, dass der Übergang von Realismus zu früher Moderne innerhalb von Gattungen eigenen Dynamiken folgt. Im Fall religiöser Lyrik und Geschichtslyrik verlaufen diese Dynamiken sogar in Widerspruch zum Gesamttrend. Im Anschluss ergeben sich drei weitere Perspektiven: Wie sehen die Emotionsprofile der nicht-thematischen Gattungen aus? Welche anderen differenzierenden Faktoren neben der Gattung können wir identifizieren, z.B. Autorschaft, Publikationsort, Intertextualität usw.? Ein wichtiger Aspekt könnte die Zeit sein, bezogen auf kleinere Einheiten als Epochen: Wie entwickeln sich die Lyrik und die einzelnen Gattungen unter der Perspektive der Emotionsgestaltung in der Zeit, etwa von Jahrzehnt zu Jahrzehnt?</p>
+                <head>
+                    <hi rend="normaltextrun">Konfliktsimulationen und das Problem der Zugänglichkeit im Unterricht</hi>
+                </head>
+                <quote>
+                    <hi rend="normaltextrun">“Sheldon: I am here to sit with you and keep you company. - Bernadette: Oh, that's nice. - Sheldon: Yeah, by playing the most complicated board game ever invented: Campaign for North Africa. I bought it off eBay. It smells a little like chili, but all the pieces are there.”</hi><ref n="2" target="ftn2"/>
+                </quote>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">Ungeachtet ihrer Vorteile ist der Einsatz von Konfliktsimulationen im Unterricht mit einem zentralen Problem verbunden: der Zugänglichkeit für die Teilnehmenden. Jede Simulation stellt eine verregelte Reduktion der Realität dar – die vollständige Abbildung eines realweltlichen Phänomens in einer Simulation ist unmöglich –, bei der komplexe Geschehen in der Regel auf wenige Faktoren reduziert werden. Das Ineinandergreifen dieser Faktoren wird dann durch ein Regelwerk abgebildet, das der Simulation zugrunde liegt. Als Konsequenz ist eine erfolgreiche Teilnahme an einer Simulation nur auf der Grundlage belastbarer Regelkenntnis möglich. Konkret gesprochen bedeutet der Einsatz beispielsweise des Schachspiels, dass alle Teilnehmenden dessen Regelwerk beherrschen müssen.</hi>
+                    <hi rend="eop"> </hi>
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">Dieser Umstand hat drei wichtige Konsequenzen. Zum ersten wirken Simulationen umso abschreckender, je komplexer die Regelwerke sind. Aus diesem Grund ist der weitaus größte Teil der kommerziell erhältlichen Konfliktsimulationen für eine Unterrichtssituation im Normalfall denkbar ungeeignet (Sabin 2012); das im voranstehenden Zitat genannte 
+                        <hi rend="italic" xml:space="preserve">The Campaign </hi>
+                        <hi rend="italic">for</hi>
+                        <hi rend="italic" xml:space="preserve"> North </hi>
+                        <hi rend="italic">Africa</hi>
+                    </hi><ref n="3" target="ftn3"/>
+                    <hi rend="normaltextrun"> nimmt zwar bis heute eine Ausnahmestellung ein, die allermeisten kommerziell erhältlichen Konfliktsimulationen sind aber ohne eine längere Einweisung nicht durchführbar. Eine zweite wichtige Konsequenz liegt in der Auswirkung, die das Regelwerk auf die Teilnehmenden an der Simulation hat. In den meisten Fällen interagieren diese aus dem Bemühen heraus, keine Fehler zu machen, mehr mit dem Regelwerk als mit der eigentlichen Simulationssituation. Dabei besteht die Gefahr, dass die Teilnehmer sich stärker auf das „korrekte Bedienen“ des Regelwerks konzentrieren als auf den eigentlichen Inhalt der Simulation. Zum dritten führen die sich aus dem Einsatz komplexer Regelwerke ergebenden Notwendigkeiten häufig dazu, dass Konfliktsimulationen 
+                        <hi rend="underline color(D13438)" xml:space="preserve">- </hi>wenn überhaupt
+                        <hi rend="underline color(D13438)" xml:space="preserve"> -</hi> nur in sehr einfacher Form im Unterricht Einsatz finden (Wintjes und Pielström 2018).
+                    </hi>
+                    <hi rend="eop"> </hi>
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">Das grundsätzliche Dilemma der Unvereinbarkeit von leichter Zugänglichkeit und komplexer Simulation lässt sich auch durch eine digitale Simulation nicht lösen, da auch hier eine Zunahme an Komplexität der Simulation immer mit einer Zunahme an Komplexität der Bedienung verbunden sein wird; in dieser Hinsicht verhalten sich digitale Simulationen nicht anders als analoge Simulationen.</hi>
+                    <hi rend="eop"> </hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <hi rend="normaltextrun">facilitator-based simulations (FBS) im Unterricht</hi>
+                </head>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">Einen Ausweg aus dem oben beschriebenen Dilemma bieten sogenannte 
+                        <hi rend="italic">facilitator-based-simulations</hi> (FBS), bei denen es sich um die älteste Form edukativer Konfliktsimulationen handelt (Wintjes und Pielström 2019, Wintjes 2022). Bei diesen ist eine Regelkenntnis der Teilnehmer nicht nötig; diese interagieren nicht direkt mit dem Regelwerk, vielmehr geben sie Entscheidungen, Aufträge oder Handlungsanweisungen an das Leitungsgremium der Simulation, die facilitator, heraus, die diese dann gemäß dem der Simulation zugrunde liegenden Regelwerk umsetzen und über die Ergebnisse den Teilnehmenden wiederum Bericht erstatten (Jones 1995). Das Regelwerk ist somit von den Teilnehmenden abgeschirmt, die sich ganz auf ihre Aufgaben der Informationsprozessierung und des Entscheidens konzentrieren können. Durch den Wegfall der Notwendigkeit, das Regelwerk zu beherrschen, erweisen sich FBS als ausgesprochen zugänglich auch für diejenigen, die keinerlei Vorerfahrungen mit Konfliktsimulationen aufweisen können.  
+                    </hi>
+                    <hi rend="eop"> </hi>
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">Für den Einsatz im Unterricht stellen FBS eine nahezu ideale Lösung dar, ermöglichen sie es doch mit einem Minimum an Aufwand – der leitende facilitator muss das Regelwerk beherrschen, im Idealfall wird er je nach Umfang der Simulation durch weitere facilitator unterstützt – eine Simulation durchzuführen, bei der sich die Teilnehmenden ganz auf ihre Rolle in der Simulation konzentrieren können.</hi>
+                    <hi rend="eop"> </hi>
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">Diese stehen dabei vor der Herausforderung, sich nicht nur auf analytische Art und Weise mit den einzelnen Gegenständen der Simulation auseinanderzusetzen, sondern ihr Zusammenwirken innerhalb eines komplexen, multifaktorischen Systems nachzuvollziehen. Das hierbei entstehende ganzheitliche Verständnis für beispielsweise historische Phänomene kann dann die Voraussetzung für eine adäquate multiperspektivische Modellierung komplexer Phänomene bilden; im Idealfall schließt sich daher an die Teilnahme an einer Konfliktsimulation in einem zweiten Schritt die Erstellung einer solchen an.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <hi rend="normaltextrun">agent-based simulations (ABS) im Unterricht</hi>
+                </head>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">Insbesondere in Veranstaltungen mit fortgeschrittenen Studierenden, die bereits grundsätzlich mit dem Instrument der Konfliktsimulation vertraut sind, bietet es sich an, die eigenständige Modellierung und kollaborative Implementierung von Konfliktsimulationen zu ausgesuchten Teilproblemen zu einer zentralen Aufgabe von Kleingruppen zu machen, um anschließend die – zunächst oft unbewusst getroffenen – Modellierungsentscheidungen der einzelnen Gruppen zu präsentieren und diskutieren.</hi>
+                    <hi rend="eop"> </hi>
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun" xml:space="preserve">Für die Implementierung formaler Modelle in imperative Programmiersprachen eignet sich dabei besonders das Konzept der objekt-orientierten Programmierung (OOP). Bei diesem Ansatz werden Forschungsdaten als Objekte mit Attributen repräsentiert, die über Objekten spezifisch zugeordnete Funktionen miteinander interagieren. Generell handelt es sich bei den für eine derartige Umsetzung notwendigen Fähigkeiten zur Abstraktion und Modularisierung um zentrale Kompetenzen für die imperative Programmierung (Jannidis 2017, S. 88). </hi>
+                    <hi rend="eop"> </hi>
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">Als Beispiel sei hier ein Seminar aus dem Sommersemester 2022 an der Julius-Maximilians-Universität Würzburg kurz vorgestellt: In diesem Seminar wurden Studierende des Masterstudienganges Digital Humanities an Thema der mathematischen Modellierung von Abnutzung in militärischen Konflikten herangeführt. Die Teilnehmenden wurden zunächst, nach einer kurzen Einführung in den historischen Kontext, vor die Aufgabe gestellt, in zwei kleinen Gruppen mit Hilfe von Würfeln und Markern Regeln zu entwickeln, mit deren Hilfe das beschriebene Phänomen simuliert werden kann. Gleichzeitig sollten die Studierenden experimentell untersuchen, welche Erkenntnisse über das Phänomen sich aus ihren Modell ableiten lassen. In einem zweiten Schritt wurde der Kurs mit dem wichtigsten deterministisch-mathematischen Modell konfrontiert, das bis heute für die Modellierung dieses Problems genutzt wird (Lanchester 1916). Zu diesem Zeitpunkt war den Teilnehmenden der Vergleich verschiedener Modellierungskonzepte für dasselbe Problem bereits möglich. In den folgenden Seminarstunden wurde das Konzept des 
+                        <hi rend="italic">agent-based</hi>
+                        <hi rend="italic">modeling</hi> (vgl. Gavin 2014 und Romanovska et al. 2021) eingeführt und ein einfaches Python-Framework
+                    </hi><ref n="4" target="ftn4"/>
+                    <hi rend="normaltextrun"> für eine 
+                        <hi rend="italic">agent-based</hi>
+                        <hi rend="italic">simulation</hi> (ABS) von Abnutzung vorgestellt. Dieses Framework dient
+                        <hi rend="underline color(D13438)">e</hi> initial zur Umsetzung vergleichender Experimente, aber auch als Grundlage für die Implementierung neuer Aspekte und der Setzung eigener Schwerpunkte durch die Studierenden. 
+                    </hi>
+                    <hi rend="eop"> </hi>
+                </p>
+                <p style="text-align: left; ">Dieses Unterrichtskonzept erweist sich als ein geeigneter Rahmen für die generelle Diskussion über die Eignung verschiedener Modellierungsansätze im Hinblick auf unterschiedliche Forschungsprobleme, eine Einführung in die Erstellung und die Anwendung einer ABS und darüber hinaus ein technisch niederschwelliges Framework aus der Forschungspraxis für das objektorientierte Programmieren.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Ausblick</head>
+                <quote>
+                    <hi rend="normaltextrun">“Come, Watson, Come! The Game is afoot!”</hi><ref n="5" target="ftn5"/>
+                </quote>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">Bei Konfliktsimulationen – und insbesondere bei FBS – handelt es sich um leistungsfähige Werkzeuge, deren didaktischer Wert in drei Bereichen zu finden ist: zum ersten bieten sie den Teilnehmenden einen partizipatorischen Zugang zu dem jeweils behandelten Gegenstand und damit eine alternative Lernerfahrung. Zum zweiten erfahren die Teilnehmenden direkt die mit der Prozessierung komplexer Information sowie der darauf basierenden Entscheidung verbundenen Schwierigkeiten und gewinnen so Einsichten in ihre eigenen Entscheidungsprozesse. Die Auseinandersetzung mit dem Problem der Erstellung einer Simulation stellt schließlich einen niederschwelligen Einstieg in das Problem der Modellierung von Forschungsgegenständen sowie der Operationalisierung von Forschungsfragen dar; im Rahmen der Erstellung einer Simulation können die Teilnehmenden anhand konkreter Beispiele den Aufbau möglicher Forschungsvorhaben diskutieren und kritisch reflektieren.</hi>
+                    <hi rend="eop"> </hi>
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="normaltextrun">Über den konkreten Nutzen im Rahmen des historischen bzw. Gesellschaftswissenschaftlichen Unterrichts hinaus kann die Auseinandersetzung mit Konfliktsimulationen gerade aufgrund des niederschwelligen Zugangs einen wichtigen Beitrag zur allgemeinen Auseinandersetzung mit Modellierungsfragen, mit dem Erwerb weiterer Kompetenzen (
+                        <hi rend="italic" xml:space="preserve">Digital </hi>
+                        <hi rend="italic">Literacy</hi>) und damit einer erfolgreichen Partizipation in einer vernetzten, hoch technologisierten Gesellschaft leisten. Der Einsatz von Konfliktsimulationen, ihre Fähigkeiten und Begrenzungen verdienen daher auch in den Digital Humanities mehr Beachtung, als sie momentan erfahren.
+                    </hi>
+                    <hi rend="eop"> </hi>
+                </p>
             </div>
         </body>
         <back>
 <div type="notes">
 <note rend="footnote text" xml:id="ftn1" n="1">
-                         Korpus:  
-                            <ref target="https://www.zotero.org/google-docs/?nbIWLy">Winko u. a. 2022</ref>; Korpusbeschreibung: 
-                            <ref target="https://www.zotero.org/google-docs/?PxNNld">Winko u. a. 2022a</ref>.
+                        
+                            <hi rend="normaltextrun">Beispielsweise im Rahmen der „ Historical Social Research (HSR)“, einer international begutachteten, wissenschaftlichen Fachzeitschrift für die Anwendung formaler Methoden in der Geschichte. </hi>
+                            <ref target="https://www.gesis.org/hsr">
+                                <hi rend="normaltextrun">
+                                    <hi rend="underline color(0563C1)" style="font-size:10pt">https://www.gesis.org/hsr</hi>
+                                </hi>
+                            </ref>
+                            <hi rend="normaltextrun"> oder in Jeremiah McCalls Artikel „Historical Simulations as Problem Spaces: Criticism and Classroom Use“ (McCall, 2012). </hi>
                         
                     </note>
 <note rend="footnote text" xml:id="ftn2" n="2">
-                         Annotationsrichtlinien Lyrische Gattungen: 
-                            <ref target="https://www.zotero.org/google-docs/?JjyKAM">Kröncke u. a. (2022b)</ref>
+                        
+                            <hi rend="normaltextrun">Linvill, Gay, dir. 
+                                <hi rend="italic">“</hi>The Neonatal Nomenclature.
+                                <hi rend="italic">“</hi> 
+                                <hi rend="italic" style="font-size:10pt">Big Bang Theory</hi>, season 11, episode 16, CBS, 2018.
+                            </hi>
                         
                     </note>
 <note rend="footnote text" xml:id="ftn3" n="3">
-                         Annotationsrichtlinien Emotionsmarker und Emotionen: 
-                            <ref target="https://www.zotero.org/google-docs/?05R0oJ">Kröncke u. a. (2022)</ref>
+                        
+                            <hi rend="normaltextrun">Das von Richard Berg entwickelte Spiel wurde 1978 von Simulations Publications Inc. veröffentlicht.</hi>
+                            <hi rend="eop"> </hi>
                         
                     </note>
 <note rend="footnote text" xml:id="ftn4" n="4">
-                         Code und Daten: https://github.com/LeKonArD/Gattungen_und_Emotionen_dhd2023
+                        
+                            <hi rend="normaltextrun">Der in Python implementierte 
+                                <hi rend="italic" style="font-size:10pt">Attrition Simulator </hi>(Pielström, Steffen 2022) ist frei zugänglich unter: 
+                            </hi>
+                            <ref target="https://github.com/cosimg/attritionsim">
+                                <hi rend="normaltextrun">
+                                    <hi rend="underline color(0563C1)">https://github.com/cosimg/attritionsim</hi>
+                                </hi>
+                            </ref>
+                            <hi rend="normaltextrun">.</hi>
+                        
                     </note>
 <note rend="footnote text" xml:id="ftn5" n="5">
-                         Batchsize (5,10,15,20), Learning Rate (1e-5, 5e-5, 1e-4) und Epochen (10,20,50)
-                    </note>
-<note rend="footnote text" xml:id="ftn6" n="6">
-                         10 Epochen über das gesamte Korpus, Batchsize 64, Learning Rate 1e-5
-                    </note>
-<note rend="footnote text" xml:id="ftn7" n="7">
-                             Dieses Vorgehen ist mit dem Fokus unseres Aufsatzes auf Gattungen begründet. Die gewählte Normalisierung führt dazu, dass Unterschiede zwischen Textgruppen visuell identifiziert werden können. Da die absoluten Häufigkeiten der Emotionen im Korpus stark schwanken (Liebe kommt 7-fach häufiger als Wut vor), ist es nicht möglich, diese in einer Graphik abzubilden, ohne die Unterschiede der Gattungen zu marginalisieren. Ähnliches gilt für die Art der Normalisierung: Wir haben uns für den Median über alle Gedichte entschieden, da dies die ‘neutralste’ Variante ist. Normalisierung mit den Gedichten, die keiner Gattung zugeschlagen werden, erscheint wahllos, da wir über diese Gruppe nichts wissen. Eine Normalisierung durch balanciertes Sampling der Gattungen impliziert die Annahme, dass jede Gattung gleich häufig ist und die Verteilungsunterschiede durch einen 
-                                <hi rend="italic" xml:space="preserve">Selection Bias </hi>entstanden sind. Dies ist aber in Anbetracht der Größe des Korpus unwahrscheinlich.
-                            
-                        </note>
-<note rend="footnote text" xml:id="ftn8" n="8">
-                             Ein t-test auf den euklidischen Distanzen der Emotionsprofile religiöser Lyrik in Moderne und Realismus resultiert in einem signifikanten Unterschied (p &lt; 0.05).
-                        </note></div>
+                        
+                            <hi rend="normaltextrun">Doyle, Arthur Conan. 1904. 
+                                <hi rend="italic" style="font-size:10pt">The Adventure of the Abbey Grange.</hi>
+                            </hi>
+                        
+                    </note></div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl style="text-align: left; "><hi rend="bold">Andreotti, Mario.</hi> 2014. 
-                        <hi rend="italic">Die Struktur der modernen Literatur: Neue Wege in die Textanalyse. Einführung Epik und Lyrik.</hi> 5. Aufl. Bd. 1127. Wien/Köln/Weimar.
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Beynon</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Meurig</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Steve Russ</hi> und 
+                            <hi rend="bold" style="font-size:11pt">Willard McCarty</hi>. 2006. „Human Computing—Modelling with Meaning.“ 
+                            <hi rend="italic" style="font-size:11pt">Literary and Linguistic Computing</hi> 21 (2): 141–57. 
+                        </hi>
+                        <ref target="https://doi.org/10.1093/llc/fql015">
+                            <hi rend="normaltextrun">
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">doi:10.1093/</hi>
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">llc</hi>
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">/fql015</hi>
+                            </hi>
+                        </ref>
+                        <hi rend="normaltextrun">.</hi>
+                        <hi rend="eop"> </hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Brezina, Vaclav.</hi> 2018. 
-                        <hi rend="italic">Statistics in Corpus Linguistics: A Practical Guide.</hi> 1. Aufl. Cambridge University Press. https://doi.org/10.1017/9781316410899.
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Ciula</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Arianna</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Oyvind</hi>
+                            <hi rend="bold" style="font-size:11pt">Fide</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Cristina</hi>
+                            <hi rend="bold" style="font-size:11pt">Marras</hi> and 
+                            <hi rend="bold" style="font-size:11pt" xml:space="preserve">Patrick </hi>
+                            <hi rend="bold" style="font-size:11pt">Sahle</hi>. 2018. „Models and Modelling between Digital and Humanities: Remarks from a Multidisciplinary Perspective“. 
+                            <hi rend="italic" style="font-size:11pt">Hist. Soc. Res.</hi> 43 (4): 343-362.
+                        </hi>
+                        <hi rend="eop"> </hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Chan, Branden, Schweter, Stefan, Möller, Timo</hi> (2020). German’s next language model. In: COLING 2020 – Proceedings of the 28th International Conference on Computational Linguistics. December 8-13, 2020 (Virtual Event), pp. 6788–6796 </bibl>
-                    <bibl style="text-align: left; ">Detering, Heinrich. 2016. „Lyrik und Religion“. In 
-                        <hi rend="italic">Handbuch Lyrik</hi>. Theorie, Analyse, Geschichte, herausgegeben von Dieter Lamping, 119–28. Stuttgart: Metzler.
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Davis</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Paul K</hi>, und 
+                            <hi rend="bold" style="font-size:11pt">Paul Bracken</hi>. 2022. „Artificial Intelligence for Wargaming and Modeling.” 
+                            <hi rend="italic" style="font-size:11pt">The Journal of Defense Modeling and Simulation</hi>. 
+                        </hi>
+                        <ref target="http://doi:%20/10.1177/15485129211073126">
+                            <hi rend="normaltextrun">
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">doi:10.1177/15485129211073126</hi>
+                            </hi>
+                        </ref>
+                        <hi rend="normaltextrun">. </hi>
+                        <hi rend="eop"> </hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Detering, Heinrich, und Peer Trilcke, Hrsg.</hi> 2013. 
-                        <hi rend="italic">Geschichtslyrik. Ein Kompendium</hi>. 2 Bde. Göttingen: Wallstein.
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Flanders</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Julia</hi> und 
+                            <hi rend="bold" style="font-size:11pt">Fotis</hi>
+                            <hi rend="bold" style="font-size:11pt">Jannidis</hi>. 2015. „Data Modeling“. In 
+                            <hi rend="italic" style="font-size:11pt">A New Companion to Digital Humanities</hi>, 229–37. John Wiley &amp; Sons, Ltd. 
+                        </hi>
+                        <ref target="https://doi.org/10.1002/9781118680605.ch16">
+                            <hi rend="normaltextrun">
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">doi:10.1002/9781118680605.ch16</hi>
+                            </hi>
+                        </ref>
+                        <hi rend="eop"> </hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Ekman, Paul.</hi> 1992. „An Argument for Basic Emotions“. 
-                        <hi rend="italic">Cognition and Emotion</hi> 6 (3–4): 169–200. https://doi.org/10.1080/02699939208411068.
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Gavin</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Michael</hi>. 2014. „Agent-Based Modeling and Historical Simulation“. Digital Humanities Quarterly 8 (4). Zugegriffen 29. Juli 2022. 
+                        </hi>
+                        <ref target="http://www.digitalhumanities.org/dhq/vol/8/4/000195/000195.html">
+                            <hi rend="normaltextrun">
+                                <hi rend="underline" style="font-size:11pt">http://www.digitalhumanities.org/dhq/vol/8/4/000195/000195.html</hi>
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">.</hi>
+                            </hi>
+                        </ref>
+                        <hi rend="eop"> </hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Ekman, Paul.</hi> 1999. „Basic Emotions“. In 
-                        <hi rend="italic">Handbook of Cognition and Emotion</hi>, herausgegeben von Tim Dalgleish und Mick J. Power, 45–60. Chichester, UK: John Wiley &amp; Sons, Ltd. https://doi.org/10.1002/0470013494.ch3.
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Jannidis</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Fotis</hi>. 2017. „Grundbegriffe des Programmierens“. In 
+                            <hi rend="italic" style="font-size:11pt" xml:space="preserve">Digital </hi>
+                            <hi rend="italic" style="font-size:11pt">Humanities</hi>
+                            <hi rend="italic" style="font-size:11pt">: Eine Einführung</hi>, hg. v. Fotis Jannidis, Hubertus Kohle und Malte Rehbein, 68–95. Stuttgart: J.B. Metzler. 
+                        </hi>
+                        <ref target="https://doi.org/10.1007/978-3-476-05446-3_6">
+                            <hi rend="normaltextrun">
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">doi:10.1007/978-3-476-05446-3_6</hi>
+                            </hi>
+                        </ref>
+                        <hi rend="normaltextrun">.</hi>
+                        <hi rend="eop"> </hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Gururangan, Suchin, Ana Marasović, Swabha Swayamdipta, Kyle Lo, Iz Beltagy, Doug Downey, und Noah A. Smith.</hi> 2020. „Don’t Stop Pretraining: Adapt Language Models to Domains and Tasks“. arXiv:2004.10964 [cs], Mai. http://arxiv.org/abs/2004.10964.</bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Konle, Leonard, Merten Kröncke, Fotis Jannidis, und Simone Winko.</hi> 2022. „Emotions and Literary Periods“. In 
-                        <hi rend="italic">Digital Humanities Conference Abstracts</hi>, 278–81. Tokyo. https://dh2022.dhii.asia/dh2022bookofabsts.pdf.
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Jones</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Ken</hi>. 1995. 
+                            <hi rend="italic" style="font-size:11pt">Simulations: A Handbook for Teachers and Trainers</hi>. London³: Kogan Page Ltd.
+                        </hi>
+                        <hi rend="eop"> </hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Kröncke, Merten, Fotis Jannidis, Leonard Konle, und Simone Winko.</hi> 2022a. „Annotationsrichtlinien Lyrische Gattungen“. https://doi.org/10.5281/zenodo.6021007.</bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Kröncke, Merten, Fotis Jannidis, Leonard Konle, und Simone Winko.</hi> 2022b. „Annotationsrichtlinien Emotionsmarker und Emotionen“. https://doi.org/10.5281/zenodo.6021152.</bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Plutchik, Robert.</hi> 1980a. „A General Psychoevolutionary Theoey of Emotion“. In 
-                        <hi rend="italic">Theories of Emotion</hi>, 3–33. Elsevier. https://doi.org/10.1016/B978-0-12-558701-3.50007-7.
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Lanchester</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Frederick</hi>
+                            <hi rend="bold" style="font-size:11pt">W</hi>. 1916. 
+                            <hi rend="italic" style="font-size:11pt" xml:space="preserve">Aircraft in Warfare: </hi>
+                            <hi rend="italic" style="font-size:11pt">the</hi>
+                            <hi rend="italic" style="font-size:11pt" xml:space="preserve"> Dawn of the Fourth Arm</hi>. London: Constable and Company Limited.
+                        </hi>
+                        <hi rend="eop"> </hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Plutchik, Robert.</hi> 1980b. „A Psychoevolutionary Theory of Emotions“. Social Science Information 21 (4–5): 529–53. https://doi.org/10.1177/053901882021004003.</bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Plutchik, Robert.</hi> 2001. „The Nature of Emotions“, American Scientist, 89 (4): 344–50.</bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Scheible, Raphael, Fabian Thomczyk, Patric Tippmann, Victor Jaravine, und Martin Boeker.</hi> 2020. „GottBERT: a pure German Language Model“. arXiv. http://arxiv.org/abs/2012.02110.</bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Shaver, Phillip, Judith Schwartz, Donald Kirson, und Cary O’Connor.</hi> 1987. „Emotion Knowledge. Further Exploration of a Prototype Approach“. Journal of Personality and Social Psychology 52 (6): 1061–86. https://doi.org/10.1037/0022-3514.52.6.1061.</bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Winko, Simone.</hi> 2003. 
-                        <hi rend="italic">Kodierte Gefühle: zu einer Poetik der Emotionen in lyrischen und poetologischen Texten um 1900</hi>. Berlin: Erich Schmidt Verlag.
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">McCall</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Jeremia</hi>. 2012. „Historical Simulations as Problem Spaces: Criticism and Classroom Use“ In 
+                            <hi rend="italic" style="font-size:11pt">Journal of Digital Humanities</hi>. Zugegriffen 26. Juli 2022. 
+                        </hi>
+                        <ref target="http://journalofdigitalhumanities.org/1-2/historical-simulations-as-problem-spaces-by-jeremiah-mccall/">
+                            <hi rend="normaltextrun">
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">http://journalofdigitalhumanities.org/1-2/historical-simulations-as-problem-spaces-by-jeremiah-mccall/</hi>
+                            </hi>
+                        </ref>
+                        <hi rend="normaltextrun">.</hi>
+                        <hi rend="eop"> </hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Winko, Simone, Leonard Konle, Merten Kröncke, und Fotis Jannidis.</hi> 2022a. „Lyrikanthologien 1850-1910“. https://doi.org/10.5281/zenodo.6053951.</bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Winko, Simone, Leonard Konle, Merten Kröncke, und Fotis Jannidis.</hi> 2022b. „Korpusbeschreibung der Lyrikanthologien 1850-1910“. https://doi.org/10.5281/zenodo.6053972.</bibl>
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Michael</hi>, 
+                            <hi rend="bold" style="font-size:11pt">David</hi> und 
+                            <hi rend="bold" style="font-size:11pt">Chen Sande</hi>. 2006. 
+                            <hi rend="italic" style="font-size:11pt" xml:space="preserve">Serious Games: Games that Educate, </hi>
+                            <hi rend="italic" style="font-size:11pt">Train</hi>
+                            <hi rend="italic" style="font-size:11pt" xml:space="preserve"> and Inform</hi>. Mason: Course Technology.
+                        </hi>
+                        <hi rend="eop"> </hi>
+                    </bibl>
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Pielström</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Steffen</hi>. 2022. „Attrition Simulator“. Conflict Simulation Group, GitHub repository. 
+                        </hi>
+                        <ref target="https://github.com/cosimg/attritionsim">
+                            <hi rend="normaltextrun">
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">https://github.com/cosimg/attritionsim</hi>
+                            </hi>
+                        </ref>
+                        <hi rend="normaltextrun">.</hi>
+                        <hi rend="eop"> </hi>
+                    </bibl>
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Piotrowski</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Michael</hi>. 2019. „Accepting and Modeling Uncertainty“. In 
+                            <hi rend="italic" style="font-size:11pt">Zeitschrift</hi>
+                            <hi rend="italic" style="font-size:11pt" xml:space="preserve"> Für </hi>
+                            <hi rend="italic" style="font-size:11pt">Digitale</hi>
+                            <hi rend="italic" style="font-size:11pt">Geisteswissenschaften</hi>. 
+                        </hi>
+                        <ref target="http://dx.doi.org/10.17175/sb004_006a">
+                            <hi rend="normaltextrun">
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">doi:10.17175/sb004_006a</hi>
+                            </hi>
+                        </ref>
+                        <hi rend="normaltextrun">.</hi>
+                        <hi rend="eop"> </hi>
+                    </bibl>
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Romanowska</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Isa</hi>, 
+                            <hi rend="bold" style="font-size:11pt" xml:space="preserve">Colin D. </hi>
+                            <hi rend="bold" style="font-size:11pt">Wren</hi> and 
+                            <hi rend="bold" style="font-size:11pt">Stefani A. Crabtree</hi>. 2021. „Agent-Based Modeling for Archaeology”. SFI Press, Santa Fe. 
+                        </hi>
+                        <ref target="https://doi.org/10.37911/9781947864382">
+                            <hi rend="normaltextrun">
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">doi:10.37911/9781947864382</hi>
+                            </hi>
+                        </ref>
+                        <hi rend="normaltextrun" xml:space="preserve"> </hi>
+                        <hi rend="eop"> </hi>
+                    </bibl>
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Sabin</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Philip</hi>. 2011. „The benefits and limits of computerization in conflict simulation“. 
+                            <hi rend="italic" style="font-size:11pt">Literary and Linguistic Computing</hi> 26 (3): 323–28. 
+                        </hi>
+                        <ref target="https://doi.org/10.1093/llc/fqr024">
+                            <hi rend="normaltextrun">
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">doi:10.1093/</hi>
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">llc</hi>
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">/fqr024</hi>
+                            </hi>
+                        </ref>
+                        <hi rend="normaltextrun">.</hi>
+                        <hi rend="eop"> </hi>
+                    </bibl>
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Sabin</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Philip</hi>. 2012. 
+                            <hi rend="italic" style="font-size:11pt">Simulating War: Studying Conflict through Simulation Games</hi>. London: Continuum, 2012.
+                        </hi>
+                        <hi rend="eop"> </hi>
+                    </bibl>
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Sabin</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Philip</hi>. 2016. „Wargames as an academic instrument”. In 
+                            <hi rend="italic" style="font-size:11pt">Zones of Control. Perspectives on Wargaming</hi> hg. von Pat Harrigan und Matthew Kirschenbaum, 421-438. Cambridge, MA: MIT Press.
+                        </hi>
+                        <hi rend="eop"> </hi>
+                    </bibl>
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Thaller</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Manfred</hi>. 2017. „Digital Humanities als Wissenschaft“. In 
+                            <hi rend="italic" style="font-size:11pt" xml:space="preserve">Digital </hi>
+                            <hi rend="italic" style="font-size:11pt">Humanities</hi>
+                            <hi rend="italic" style="font-size:11pt">: Eine Einführung</hi>, hrsg. v. Fotis Jannidis, Hubertus Kohle und Malte Rehbein, 13–18. Stuttgart: J.B. Metzler. 
+                        </hi>
+                        <ref target="https://doi.org/10.1007/978-3-476-05446-3_2">
+                            <hi rend="normaltextrun">
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">doi:10.1007/978-3-476-05446-3_2</hi>
+                            </hi>
+                        </ref>
+                        <hi rend="normaltextrun">.</hi>
+                        <hi rend="eop"> </hi>
+                    </bibl>
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Wintjes</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Jorit</hi> und 
+                            <hi rend="bold" style="font-size:11pt">S</hi>
+                            <hi rend="bold" style="font-size:11pt">teffen</hi>
+                            <hi rend="bold" style="font-size:11pt">Pielström</hi>. 2019. „Pluie de Balles; Complex Wargames in the Classroom“. In | 
+                            <hi rend="italic" style="font-size:11pt">Analog Game Studies</hi> V (III). Zugegriffen 29. Juli 2022. 
+                        </hi>
+                        <ref target="https://analoggamestudies.org/2018/09/pluie-de-balles-complex-wargames-in-the-classroom/">
+                            <hi rend="normaltextrun">
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">https://analoggamestudies.org/2018/09/pluie-de-balles-complex-wargames-in-the-classroom/</hi>
+                            </hi>
+                        </ref>
+                        <hi rend="normaltextrun">.</hi>
+                        <hi rend="eop"> </hi>
+                    </bibl>
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Wintjes</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Jorit</hi> und 
+                            <hi rend="bold" style="font-size:11pt">Steffen</hi>
+                            <hi rend="bold" style="font-size:11pt">Pielström</hi>. 2019. "»Preußisches Kriegsspiel«: Ein Projekt an der Julius-Maximilians-Universität Würzburg" 
+                            <hi rend="italic" style="font-size:11pt">Militärgeschichtliche Zeitschrift</hi> 78 (1): 86-98. 
+                        </hi>
+                        <ref target="https://doi.org/10.1515/mgzs-2019-0004">
+                            <hi rend="normaltextrun">
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">doi:10.1515/mgzs-2019-0004</hi>
+                            </hi>
+                        </ref>
+                        <hi rend="normaltextrun">.</hi>
+                        <hi rend="eop"> </hi>
+                    </bibl>
+                    <bibl rend="paragraph" style="text-align: left; ">
+                        <hi rend="normaltextrun">
+                            <hi rend="bold" style="font-size:11pt">Wintjes</hi>, 
+                            <hi rend="bold" style="font-size:11pt">Jorit</hi>. 2022. "A School for War – A Brief History of the Prussian Kriegsspiel." In Simulation and Wargaming, hg. von C. Turnitsa/C. Blais/A. Tolk (eds.), 25-64. Hoboken: Wiley. 
+                        </hi>
+                        <ref target="https://doi.org/10.1002/9781119604815.ch2">
+                            <hi rend="normaltextrun">
+                                <hi rend="underline color(0563C1)" style="font-size:11pt">https://doi.org/10.1002/9781119604815.ch2</hi>
+                            </hi>
+                        </ref>
+                        <hi rend="normaltextrun" xml:space="preserve"> </hi>
+                        <hi rend="eop"> </hi>
+                    </bibl>
                 </listBibl>
             </div>
         </back>

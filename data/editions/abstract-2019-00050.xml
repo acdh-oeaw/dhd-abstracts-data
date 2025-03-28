@@ -1,32 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="183_final-KREMER_Gerhard_Maschinelles_Lernen_lernen__Ein_CRETA_Hackato" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="132_final-SCHMIDT_Thomas_Qualitätsstandards_und_Interdisziplinarität_i" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="full">
-                    <title type="main">Maschinelles Lernen lernen: Ein CRETA-Hackatorial zur reflektierten automatischen Textanalyse</title>
-                    <title type="sub"/>
-                </title>
+                <title>Qualitätsstandards und Interdisziplinarität in der Kuration audiovisueller (Sprach-)Daten</title>
                 <author>
                     <persName>
-                        <surname>Kremer</surname>
-                        <forename>Gerhard</forename>
+                        <surname>Schmidt</surname>
+                        <forename>Thomas</forename>
                     </persName>
-                    <affiliation>Institut für maschinelle Sprachverarbeitung, Universität Stuttgart, Deutschland</affiliation>
-                    <email>gerhard.kremer@ims.uni-stuttgart.de</email>
+                    <affiliation>Institut für Deutsche Sprache, Mannheim, Deutschland</affiliation>
+                    <email>thomas.schmidt@ids-mannheim.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Jung</surname>
-                        <forename>Kerstin</forename>
+                        <surname>Blumtritt</surname>
+                        <forename>Jonathan</forename>
                     </persName>
-                    <affiliation>Institut für maschinelle Sprachverarbeitung, Universität Stuttgart, Deutschland</affiliation>
-                    <email>kerstin.jung@ims.uni-stuttgart.de</email>
+                    <affiliation>Data Center for the Humanities, Universität zu Köln, Deutschland</affiliation>
+                    <email>jonathan.blumtritt@uni-koeln.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hedeland</surname>
+                        <forename>Hanna</forename>
+                    </persName>
+                    <affiliation>Hamburger Zentrum für Sprachkorpora, Universität Hamburg, Deutschland</affiliation>
+                    <email>hanna.hedeland@uni-hamburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gorisch</surname>
+                        <forename>Jan</forename>
+                    </persName>
+                    <affiliation>Institut für Deutsche Sprache, Mannheim, Deutschland</affiliation>
+                    <email>gorisch@ids-mannheim.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Rau</surname>
+                        <forename>Felix</forename>
+                    </persName>
+                    <affiliation>Data Center for the Humanities, Universität zu Köln, Deutschland</affiliation>
+                    <email>f.rau@uni-koeln.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wörner</surname>
+                        <forename>Kai</forename>
+                    </persName>
+                    <affiliation>Hamburger Zentrum für Sprachkorpora, Universität Hamburg, Deutschland</affiliation>
+                    <email>kai.woerner@uni-hamburg.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2019-01-10T11:04:57.361244734</date>
+                    <date>2018-10-12T07:40:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -39,7 +68,7 @@
                 </t:address>
             </publicationStmt>
             <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
+                <p>Converted from a Word document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -58,22 +87,19 @@
                     <term>Workshop</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>maschinelle Lernverfahren</term>
-                    <term>Entitätenreferenzen</term>
-                    <term>Reflexion</term>
-                    <term>Korpus</term>
-                    <term>Evaluation</term>
-                    <term>Programmiercode</term>
-                    <term>Methodik</term>
-                    <term>Praxiserfahrung</term>
+                    <term>Forschungsdatenmanagement</term>
+                    <term>Kuration</term>
+                    <term>Qualitätssicherung</term>
+                    <term>audiovisuell</term>
+                    <term>Sprachkorpora</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Programmierung</term>
-                    <term>Inhaltsanalyse</term>
+                    <term>Transkription</term>
                     <term>Annotieren</term>
-                    <term>Lehre</term>
-                    <term>Organisation</term>
-                    <term>Methoden</term>
+                    <term>Archivierung</term>
+                    <term>Multimedia</term>
+                    <term>Ton</term>
+                    <term>Video</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -81,183 +107,198 @@
     <text>
         <body>
             <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p>Das Ziel dieses Tutorials ist es, den Teilnehmerinnen und Teilnehmern konkrete und praktische Einblicke in einen Standardfall automatischer Textanalyse zu geben. Am Beispiel der automatischen Erkennung von Entitätenreferenzen gehen wir auf allgemeine Annahmen, Verfahrensweisen und methodische Standards bei maschinellen Lernverfahren ein. Die Teilnehmerinnen und Teilnehmer können beim Bearbeiten von lauffähigem Programmiercode den Entscheidungsraum solcher Verfahren ausleuchten und austesten. Es werden dabei keinerlei Vorkenntnisse zu maschinellem Lernen oder Programmierkenntnisse vorausgesetzt.</p>
-                <p>Es gibt keinen Grund, den Ergebnissen von maschinellen Lernverfahren im Allgemeinen und NLP-Tools im Besonderen blind zu vertrauen. Durch die konkreten Einblicke in den "Maschinenraum" von maschinellen Lernverfahren wird den Teilnehmenden ermöglicht, das Potenzial und die Grenzen statistischer Textanalysewerkzeuge realistischer einzuschätzen. Mittelfristig hoffen wir dadurch, den immer wieder auftretenden Frustrationen beim Einsatz automatischer Verfahren für die Textanalyse und deren teilweise wenig zufriedenstellender Ergebnis-Daten zu begegnen, aber auch die Nutzung und Interpretation der Ergebnisse von maschinellen Lernverfahren (d.h. in erster Linie von automatisch erzeugten Annotationen) zu fördern. Zu deren adäquater Nutzung, etwa in hermeneutischen Interpretationsschritten, ist der Einblick in die Funktionsweise der maschinellen Methoden unerlässlich. Insbesondere ist die Art und Herkunft der Trainingsdaten für die Qualität der maschinell produzierten Daten von Bedeutung, wie wir im Tutorial deutlich machen werden.</p>
-                <p>Neben einem Python-Programm für die automatische Annotierung von Entitätenreferenzen, mit und an dem während des Tutorials gearbeitet werden wird, stellen wir ein heterogenes, manuell annotiertes Korpus sowie die Routinen zur Evaluation und zum Vergleich von Annotationen zu Verfügung. Das Korpus enthält Entitätenreferenzen, die im "Center for Reflected Text Analytics" 
-                (CRETA)<ref target="ftn1" n="1"/> in den letzten drei Jahren annotiert wurden, und deckt Texte verschiedener Disziplinen und Sprachstufen ab.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor xml:id="id_entitätenreferenzen"/>Entitätenreferenzen
-                </head>
-                <p>Als empirisches Phänomen befassen wir uns mit dem Konzept der Entität und ihrer Referenz. Das Konzept steht für verschiedene linguistische und semantische Kategorien, die im Rahmen der Digital Humanities von Interesse sind. Es ist bewusst weit gefasst und damit anschlussfähig für verschiedene Forschungsfragen aus den geistes- und sozialwissenschaftlichen Disziplinen. Auf diese Weise können unterschiedliche Perspektiven auf Entitäten berücksichtigt werden. Insgesamt werden in den ausgewählten Texten fünf verschiedene Entitätenklassen betrachtet: PER (Personen/Figuren), LOC (Orte), ORG (Organisationen), EVT (Ereignisse) und WRK (Werke).</p>
-                <p>Unter Entitätenreferenzen verstehen wir Ausdrücke, die auf eine Entität in der realen oder fiktiven Welt referieren. Das sind zum einen Eigennamen (Named Entities, z.B. "Peter"), zum anderen Gattungsnamen (z.B. "der Bauer"), sofern diese sich auf eine konkrete Instanz der Gattung beziehen. Dabei wird als Referenzausdruck immer die maximale Nominalphrase (inkl. Artikel, Attribut) annotiert. Pronominale Entitätenreferenzen werden hingegen nicht annotiert.</p>
-                <p>In 
-                    <hi rend="bold">literarischen Texten</hi> sind vor allem Figuren und Räume als grundlegende Kategorien der erzählten Welt von Interesse. Über die Annotation von Figurenreferenzen können u.a. Figurenkonstellationen und -relationen betrachtbar gemacht sowie Fragen zur Figurencharakterisierung oder Handlungsstruktur angeschlossen werden. Spätestens seit dem 
-                    <hi rend="italic">spatial turn</hi> rückt auch der Raum als relevante Entität der erzählten Welt in den Fokus. Als "semantischer Raum" (Lotmann, 1972) übernimmt er eine strukturierende Funktion und steht in Wechselwirkung mit Aspekten der Figur.
-                </p>
-                <p>In den 
-                    <hi rend="bold">Sozialwissenschaften</hi> sind politische Parteien und internationale Organisationen seit jeher zentrale Analyseobjekte der empirischen Sozialforschung. Die Annotation der Entitäten der Klassen ORG, PER und LOC in größeren Textkorpora ermöglicht vielfältige Anschlussuntersuchungen, unter anderem zur Sichtbarkeit oder Bewertung bestimmter Instanzen, beispielsweise der Europäischen Union.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor xml:id="id_text-korpus"/>Textkorpus
-                </head>
-                <p>Die Grundlage für (überwachte) maschinelle Lernverfahren bilden Annotationen. Um die Annotierung von Entitätenreferenzen automatisieren zu können, bedarf es Textdaten, die die Vielfalt des Entitätenkonzepts abdecken. Bei diesem Tutorial werden wir auf Annotationen zurückgreifen, die im Rahmen von CRETA an der Universität Stuttgart entstanden sind (vgl. Blessing et al., 2017; Reiter et al., 2017a). Das Korpus enthält literarische Texte aus zwei Sprachstufen des Deutschen (Neuhochdeutsch und Mittelhochdeutsch) sowie ein sozialwissenschaftliches 
-                Teilkorpus.<ref target="ftn2" n="2"/>
-                </p>
-                <p>Der 
-                    <hi rend="bold italic">Parzival</hi>
-                    <hi rend="bold"> Wolframs von Eschenbach</hi> ist ein arthurischer Gralroman in mittelhochdeutscher Sprache, entstanden zwischen 1200 und 1210. Der 
-                    <hi rend="italic">Parzival</hi> zeichnet sich u.a. durch sein enormes Figureninventar und seine komplexen genealogischen Strukturen aus, wodurch er für Analysen zu Figurenrelationen von besonderem Interesse ist. Der Text ist in 16 Bücher unterteilt und umfasst knapp 25.0000 Verse.
-                </p>
-                <p>
-                    <hi rend="bold">Johann Wolfgang von Goethes </hi>
-                    <hi rend="bold italic">Die Leiden des jungen Werthers</hi> ist ein Briefroman aus dem Jahr 1774. Unsere Annotationen sind an einer überarbeiteten Fassung von 1787 vorgenommen und umfassen die einleitenden Worte des fiktiven Herausgebers sowie die ersten Briefe von Werther an seinen Freund Wilhelm.
-                </p>
-                <p>Das 
-                    <hi rend="bold">Plenardebattenkorpus des deutschen Bundestages</hi> besteht aus den von Stenografinnen und Stenografen protokollierten Plenardebatten des Bundestages und umfasst 1.226 Sitzungen zwischen 1996 und 
-                    2015.<ref target="ftn3" n="3"/> Unsere Annotationen beschränken sich auf Auszüge aus insgesamt vier Plenarprotokollen, die inhaltlich Debatten über die Europäische Union behandeln. Hierbei wurde pro Protokoll jeweils die gesamte Rede eines Politikers bzw. einer Politikerin annotiert.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor xml:id="id_ablauf"/>Ablauf
-                </head>
-                <p>Der Ablauf des Tutorials orientiert sich an sog. 
-                    <hi rend="italic">shared tasks</hi> aus der Computerlinguistik, wobei der Aspekt des Wettbewerbs im Tutorial vor allem spielerischen Charakter hat. Bei einem traditionellen 
-                    <hi rend="italic">shared task</hi> arbeiten die teilnehmenden Teams, oft auf Basis gleicher Daten, an Lösungen für eine einzelne gestellte Aufgabe. Solch eine definierte Aufgabe kann z.B. 
-                    <hi rend="italic">part of speech-tagging</hi> sein. Durch eine zeitgleiche Evaluation auf demselben Goldstandard können die entwickelten Systeme direkt verglichen werden. In unserem Tutorial setzen wir dieses Konzept live und vor Ort um.
-                </p>
-                <p>Zunächst diskutieren wir kurz die zugrundeliegenden Texte und deren Annotierung. Annotationsrichtlinien werden den Teilnehmerinnen und Teilnehmern im Vorfeld zur Verfügung gestellt. Im Rahmen der Einführung wird auch auf die konkrete Organisation der Annotationsarbeit eingegangen, so dass das Tutorial als Blaupause für zukünftige Tätigkeiten der Teilnehmenden in diesem und ähnlichen Arbeitsfeldern dienen kann.</p>
-                <p>Die Teilnehmerinnen und Teilnehmer versuchen selbständig und unabhängig voneinander, eine Kombination aus maschinellen Lernverfahren, Merkmalsmenge und Parametersetzungen zu finden, die auf einem neuen, vom automatischen Lernverfahren ungesehenen Datensatz zu den Ergebnissen führt, die dem Goldstandard der manuellen Annotation am Ähnlichsten sind. Das bedeutet konkret, dass der Einfluss von berücksichtigten Features (z.B. Groß- und Kleinschreibung oder Wortlänge) auf die Erkennung von Entitätenreferenzen empirisch getestet werden kann. Dabei sind Intuitionen über die Daten und das annotierte Phänomen hilfreich, da simplem Durchprobieren aller möglichen Kombinationen („brute force'“) zeitlich Grenzen gesetzt sind.</p>
-                <p>Wir verzichten bewusst auf eine graphische Benutzerschnittstelle (vgl. Reiter et al., 2017b) – stattdessen editieren die Teilnehmerinnen und Teilnehmer das (Python)-Programm direkt, nach einer Einführung und unter Anleitung. Vorkenntnisse in Python sind dabei nicht nötig: Das von uns zur Verfügung gestellte Programm ist so aufgebaut, dass auch Python-Neulinge relativ schnell die zu bearbeitenden Teile davon verstehen und damit experimentieren können. Wer bereits Erfahrung im Python-Programmieren hat, kann fortgeschrittene Funktionalitäten des Programms verwenden.</p>
-                <p>Wie am Ende jedes maschinellen Lernprozesses wird auch bei uns abschließend eine Evaluation der automatisch generierten Annotationen durchgeführt. Hierfür werden den Teilnehmerinnen und Teilnehmern nach Ablauf einer begrenzten Zeit des Experimentierens und Testens (etwa 60 Minuten) die finalen, vorher unbekannten Testdaten zur Verfügung gestellt. Auf diese Daten werden die erstellten Modelle angewendet, um automatisch Annotationen zu erzeugen. Diese wiederum werden dann mit dem Goldstandard verglichen, wobei die verschiedenen Entitätenklassen sowie Teilkorpora getrennt evaluiert werden. Auch das Programm zur Evaluation stellen wir bereit.</p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor xml:id="id_lernziele"/>Lernziele
-                </head>
-                <p>Am hier verwendeten Beispiel der automatischen Annotation von Entitätenreferenzen demonstrieren wir, welche Schritte für die Automatisierung einer Textanalyseaufgabe mittels maschinellen Lernverfahren nötig sind und wie diese konkret implementiert werden können. Die Teilnehmenden des Workshops bekommen einen zusammenhängenden Überblick von der manuellen Annotation ausgewählter Texte über die Feinjustierung der Lernverfahren bis zur Evaluation der Ergebnisse. Die vorgestellte Vorgehensweise für den gesamten Ablauf ist grundsätzlich auf ähnliche Projekte übertragbar.</p>
-                <p>Das Tutorial schärft dabei das Verständnis für den Zusammenhang zwischen untersuchtem Konzept und den dafür relevanten Features, die in ein statistisches Lernverfahren einfließen. Durch Einblick in die technische Umsetzung bekommen die Teilnehmerinnen und Teilnehmer ein Verständnis für die Grenzen und Möglichkeiten der Automatisierung, das sie dazu befähigt, zum einen das Potenzial solcher Verfahren für eigene Vorhaben realistisch(er) einschätzen zu können, zum anderen aber auch Ergebnisse, die auf Basis solcher Verfahren erzielt wurden, angemessen hinterfragen und deuten zu können.
-                    <lb/>
-                </p>
-                <p>
-                    <hi rend="bold">Zeitplan:</hi>
-                    <lb/>(Dauer in Minuten, ca.)
-                </p>
-                <p>Im Vorfeld der Veranstaltung: Installationsanweisungen und Support</p>
+                <head>Workshop-Beschreibung</head>
+                <p style="text-align:left; ">Audiovisuelle Sprachdaten - d.h. Audio- und Videoaufzeichnungen sprachlicher Interaktion mit zugehörigen Metadaten, Transkripten und Annotationen - sind ein Typ multimedialer Daten, der in vielen geisteswissenschaftlichen Disziplinen eine Rolle spielt. Audiovisuelle Korpora und Datensammlungen werden in verschiedenen Teildisziplinen der Sprachwissenschaften (z.B. Sprachdokumentation: Drude et al. 2014, Variationsforschung: Kehrein &amp; Vorberger 2018, Gesprächsforschung: Schmidt 2018, Phonetik: Draxler &amp; Schiel 2018), in der Geschichtswissenschaft (Oral History: z.B. Pagenstecher &amp; Apostolopoulos 2013, Pagenstecher &amp; Pfänder 2017, Leh 2018, Boyd &amp; Larson 2014), in der Qualitativen Sozialforschung (Qualitative Interviews: z.B. Medjedovic 2011), in den Medien- und Kulturwissenschaften (z.B. Klausmann &amp; Tschofen 2011) sowie in ethnologischen oder volkskundlichen Forschungsprojekten (Harbeck et al. 2018) erstellt und als Basis empirischer Forschung verwendet. Mit der zunehmenden Bedeutung, die das Forschungsdatenmanagement und die Bereitstellung von Daten für eine Nachnutzung aktuell und insbesondere im Kontext der Digital Humanities erfahren, stellen sich auch neue Fragen und Herausforderungen für Archive und Datenzentren, die audiovisuelle Sprachdaten bewahren, kuratieren und bereitstellen. Um diese soll es im Workshop gehen.</p>
+                <p style="text-align:left; ">Der Workshop versteht sich als Fortsetzung einer thematischen Reihe, die mit dem Workshop “Nachhaltigkeit von Workflows zur Datenkuratierung” auf der FORGE 2016 begonnen und bei der DHd-Tagung 2018 in Köln mit dem Workshop “Nutzerunterstützung und neueste Entwicklungen in Forschungsdatenrepositorien für audiovisuelle (Sprach-)Daten” weitergeführt wurde. Er richtet sich sowohl an Personen, die im Rahmen von Archiven und Datenzentren mit dem Forschungsdatenmanagement audiovisueller Sprachdaten zu tun haben, als auch an Forschende, Lehrende und Studierende, die solche Daten in ihrer akademischen Tätigkeit erstellen, bearbeiten oder nachnutzen. </p>
+                <p style="text-align:left; ">Der Fokus des Workshops liegt auf Qualitätsstandards für audiovisuelle Sprachdaten vor dem Hintergrund, dass bei deren Nachnutzung interdisziplinäre Perspektiven eine zunehmend wichtige Rolle spielen. So werden etwa Daten, die in den 1950er und 1960er Jahren zur sprachwissenschaftlichen Untersuchung dialektaler Variation des Deutschen erhoben wurden, nun unter kulturwissenschaftlicher Perspektive betrachtet (Klausmann &amp; Tschofen 2011); die Dokumentation bedrohter Sprachen hat von jeher in ihrem Selbstverständnis neben sprachtypologischen Fragestellungen auch das Bewahren kulturellen Erbes und die Sprachpolitik im Blick (Seifart et al. 2012); und auch audiovisuelle Daten, die ursprünglich der empirischen Fundierung nicht-geisteswissenschaftlicher (psychologischer und medizinischer) Studien dienten, können bei geeigneter Aufbereitung ein Nachleben als Quellen zu Oral History Studies oder linguistischer Forschung führen (von Hodenberg 2018, Möller/Schmidt 2017). Zudem rücken - im Sinne einer “Third Mission” - auch nicht unmittelbar wissenschaftliche Nutzungsszenarien (z.B. als Objekte für Museen und Ausstellungen, als Material für die (Fremd-)Sprachvermittlung oder im Schulunterricht) und das wirtschaftliche Verwertungspotential (insbesondere in der Sprachtechnologie) solcher Daten zunehmend in den Blickpunkt. Schließlich geht mit einer Loslösung von der ursprünglichen Forschungsdisziplin oft auch eine Internationalisierung des Nutzerkreises einher.</p>
+                <p style="text-align:left; ">Archive und Datenzentren müssen sich der Herausforderung stellen, die Qualitätsstandards, die sie für Ihre Kurationsarbeit etabliert haben, vor diesem Hintergrund neu zu bewerten und geeignet weiter zu entwickeln. Der Wert einer gegebenen Ressource mag unter Berücksichtigung ihres Potentials zur interdisziplinären Nachnutzung anders beurteilt werden, und es kann notwendig werden, technische Standards der Datenrepräsentation oder Instrumente zur Dissemination an dieses Potential anzupassen. Im Einzelnen wird der Workshop daher den folgenden Fragen nachgehen:</p>
                 <list type="unordered">
-                    <item>(10) Lecture
-                        <list type="unordered">
-                            <item>Intro &amp; Ablauf</item>
-                        </list>
-                    </item>
-                    <item>(15) Hands-On
-                        <list type="unordered">
-                            <item>Test der Installation bei allen</item>
-                        </list>
-                    </item>
-                    <item>(50) Lecture
-                        <list type="unordered">
-                            <item>Einführung in Korpus und Annotationen</item>
-                            <item>Grundlagen maschinellen Lernens</item>
-                            <item>Überblick über das Skript (where can you edit what?)
-                                <list type="unordered">
-                                    <item>Grundlagen Python Syntax</item>
-                                    <item>Bereitgestellte Features</item>
-                                </list>
-                            </item>
-                        </list>
-                    </item>
-                    <item>(15) Hands-On
-                        <list type="unordered">
-                            <item>Erste Schritte</item>
-                        </list>
-                    </item>
-                    <item>(30) Kaffeepause</item>
-                    <item>(60) Hands-On
-                        <list type="unordered">
-                            <item>Hack</item>
-                        </list>
-                    </item>
-                    <item>(30) Evaluation</item>
+                    <item>Welche Qualitätsmaßstäbe sollten an Primärobjekte (Bild- und Tonaufnahmen), Sekundärdaten (Transkripte, Annotationen) und Metadaten eines audio-visuellen Sprachkorpus angelegt werden? Inwieweit sind solche Maßstäbe disziplinspezifisch oder abhängig vom Nachnutzungsszenario? Welche disziplinübergreifenden Qualitätsmaßstäbe kommen als gemeinsamer Nenner in Frage?</item>
+                    <item>Welche intersubjektiven Methoden oder Maße (z.B. Audio Quality Assessment, Inter-Annotator-Agreement) können zur Qualitätsbeurteilung von audiovisuellen Daten herangezogen werden?</item>
+                    <item>Nach welchen Kriterien lassen sich Qualität, Kurationsaufwand und Nachnutzungswert für eine gegebene Ressource bewerten und zueinander in Bezug setzen? Wie können oder sollten ggf. Teilaufgaben der Kuration einer Ressource (z.B. Digitalisierung von Aufnahmen vs. Aufbereitung von Annotationen) untereinander priorisiert werden?</item>
+                    <item>Welche Herangehensweisen gibt es, um den Nachnutzungswert disziplinspezifisch entstandener Ressourcen in einem interdisziplinären Kontext zu beurteilen?</item>
+                    <item>Nach welchen Kriterien können oder sollten innerhalb von Datenzentren oder Verbünden Datenkurationen priorisiert werden? Welche Ansätze für Sammelstrategien gibt es zentrenintern und zentrenübergreifend?</item>
+                    <item>Welche Verfahren und Standards sind geeignet, um bei Kurationen den interdisziplinären Nachnutzungswert einer Ressource zu steigern?</item>
+                    <item>Wie sollten sprachspezifische Ressourcen aufbereitet werden, um Möglichkeiten einer Nachnutzung in einem internationalen und mehrsprachigen Umfeld zu verbessern?</item>
+                    <item>Wie können durch eine geeignete Kuration auch nicht-wissenschaftliche Nutzungsweisen für die Daten ermöglicht werden?</item>
                 </list>
             </div>
-            <div type="div1" rend="DH-Heading">
+            <div type="div1" rend="DH-Heading1">
+                <head>Workshop-Beiträge</head>
+                <p style="text-align:left; ">Wir haben neun Beiträge zusammengestellt, die sich mehrerer dieser Fragen annehmen und zugehörige Lösungsansätze anhand eigener Arbeiten zur Erstellung, Kuration oder Nutzung von audiovisuellen Sprachdaten konkret illustrieren. Wir erhoffen uns, auf Basis einer Darstellung des Status Quo eine fruchtbare Diskussion über offene Fragen und Zukunftsperspektiven zu den genannten Themen führen zu können. Berichte und Diskussionsbeiträge zu “Work in Progress” sind daher ausdrücklich erwünscht. Die primäre Workshop-Sprache ist Deutsch, Beiträge, Fragen und Kommentare auf Englisch sind aber ebenfalls willkommen. </p>
+                <p style="text-align:left; ">Der Workshop umfasst folgende Beiträge:</p>
+                <list type="ordered">
+                    <item>Cord Pagenstecher (Center für Digitale Systeme, CeDIS, FU Berlin) stellt die Digitalen Interview-Sammlungen an der Freien Universität Berlin vor und diskutieren Kurationsstrategien und Qualitätsstandards für die Oral History.</item>
+                    <item>Frank Seifart (CNRS, laboratoire Dynamique Du Langage, Lyon; Zentrum für Allgemeine Sprachwissenschaft, Berlin) wird über Kurationsarbeiten im Rahmen von “DoReCo: Ein Projekt zur Erstellung von Referenzkorpora aus Dokumentationen 50 kleiner Sprachen” berichten.</item>
+                    <item>Almut Leh (Institut für Geschichte und Biographie, Fernuni Hagen) wird vor dem Hintergrund ihrer Erfahrung mit der Archivierung und Analyse von Oral History-Interviews über Akquirierung, Kuratierung und Nachnutzung von qualitativen audio-visuellen Interviews sprechen.</item>
+                    <item>Bernd Meyer (Fachbereich Sprach-, Translations- und Kulturwissenschaften, Johannes Gutenberg-Universität Mainz) wird die “Community Interpreting Database (ComInDat)” als ein Pilotprojekt zur Kuration von gedolmetschten Gesprächen aus unterschiedlichen institutionellen Kontexten vorstellen.</item>
+                    <item>Hanna Hedeland (Hamburger Zentrum für Sprachkorpora, Universität Hamburg) wird in ihrem Beitrag Fragen zur Anwendbarkeit und Angemessenheit verschiedener Qualitätsstandards in Bezug auf verschiedene Typen von audiovisuellen Sprachdaten thematisieren.</item>
+                    <item>Jonathan Blumtritt und Felix Rau (Data Center for the Humanities und Institut für Linguistik, Universität zu Köln) werden Qualitätsicherungsmaßnahmen im Übernahmeprozess am Language Archive Cologne mit Blick auf interdiszipliäre Nachnutzungs- und Discoveryszenarien vorstellen.</item>
+                    <item>Thomas Schmidt, Jan Gorisch, Josef Ruppenhofer und Ulf-Michael Stift werden laufende Arbeiten am Archiv für Gesprochenes Deutsch (AGD) des Instituts für Deutsche Sprache in Mannheim unter den genannten Aspekten beleuchten und dabei insbesondere auf interdisziplinäre Schnittstellen zwischen Sprachwissenschaft einerseits und Kulturwissenschaft und Oral History andererseits eingehen.</item>
+                    <item>Sabine Imeri (Fachinformationsdienst Sozial- und Kulturanthropologie, UB der HU Berlin) wird Einblicke in Debatten der ethnologischen Fächer zur Archivierung und Nachnutzung von u.a. audio-visuellen Daten beitragen, und dabei insbesondere forschungsethische Probleme thematisieren. </item>
+                    <item>Christoph Draxler (Institut für Phonetik und Sprachverarbeitung, LMU München) präsentiert eine Pilotstudie zur Transkription studentischer Kurzpräsentation. In dieser Studie werden zwei Transkriptionsverfahren verglichen: zum einen die rein manuelle Transkription, zum anderen die manuelle Korrektur von Rohtranskripten der automatischen Sprachverarbeitung. </item>
+                </list>
+                <p style="text-align:left; ">Beiträge sollen in Slots von 25+15 Minuten präsentiert werden. Wir rechnen mit etwa 30 Workshop-Teilnehmer(inn)en. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
                 <head>Beitragende (Kontaktdaten und Forschungsinteressen)</head>
-                <p>Der Workshop wird ausgerichtet von Mitarbeitenden des "Center for Reflected Text Analytics" (CRETA) an der Universität Stuttgart. CRETA verbindet Literaturwissenschaft, Linguistik, Philosophie und Sozialwissenschaft mit Maschineller Sprachverarbeitung und Visualisierung. Hauptaufgabe von CRETA ist die Entwicklung reflektierter Methoden zur Textanalyse, wobei wir Methoden als Gesamtpaket aus konzeptuellem Rahmen, Annahmen, technischer Implementierung und Interpretationsanleitung verstehen. Methoden sollen also keine "black box" sein, sondern auch für Nicht-Technikerinnen und -Techniker so transparent sein, dass ihr reflektierter Einsatz im Hinblick auf geistes- und sozialwissenschaftliche Fragestellungen möglich wird.
-                    <lb/>
+                <p style="text-align:left; ">
+                    <hi rend="underline">Jonathan Blumtritt</hi>
                 </p>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Gerhard Kremer</head>
-                    <p>
-                        <ref target="mailto:gerhard.kremer@ims.uni-stuttgart.de">gerhard.kremer@ims.uni-stuttgart.de</ref>
-                        <lb/>Institut für Maschinelle Sprachverarbeitung
-                        <lb/>Pfaffenwaldring 5b
-                        <lb/>70569 Stuttgart
-                    </p>
-                    <p>Der Interessenschwerpunkt Gerhard Kremers ist der reflektierte Einsatz von Werkzeugen der Computerlinguistik für geistes- und sozialwissenschaftliche Fragestellungen. Damit zusammenhängend gehören die Entwicklung übertragbarer Arbeitsmethoden und die angepasste, nutzerfreundliche Bedienbarkeit automatischer linguistischer Analysetools zu seinen Forschungsthemen.
-                        <lb/>
-                    </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Kerstin Jung</head>
-                    <p>
-                        <ref target="mailto:kerstin.jung@ims.uni-stuttgart.de">kerstin.jung</ref>
-                        <ref target="mailto:kerstin.jung@ims.uni-stuttgart.de">@ims.uni-stuttgart.de</ref>
-                        <lb/>Institut für Maschinelle Sprachverarbeitung
-                        <lb/>Pfaffenwaldring 5b
-                        <lb/>70569 Stuttgart
-                    </p>
-                    <p>Kerstin Jungs Forschungsinteressen liegen im Bereich der Nachhaltigkeit von (computer)linguistischen Ressourcen und Abläufen sowie der Verlässlichkeitsbeschreibung von automatisch erzeugten Annotationen. Dabei verfolgt sie einen aufgabenbasierten Ansatz und arbeitet an der Schnittstelle zwischen Computerlinguistik und anderen sprach- und textverarbeitenden Disziplinen.</p>
-                </div>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor xml:id="id_zahl-der-möglichen-teilnehmerinnen-und-t"/>Zahl der möglichen Teilnehmerinnen und Teilnehmer
-                </head>
-                <p>Zwischen 15 und 25.</p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor xml:id="id_benötigte-technische-ausstattung"/>Benötigte technische Ausstattung
-                </head>
-                <p>Es wird außer einem Beamer keine besondere technische Ausstattung benötigt. Es sollte sich um einen Raum handeln, in dem es möglich ist, den Teilnehmenden über die Schulter zu blicken und durch die Reihen zu gehen.</p>
+                <p style="text-align:left; ">Data Center for the Humanities</p>
+                <p style="text-align:left; ">Universität zu Köln</p>
+                <p style="text-align:left; ">Albertus-Magnus-Platz</p>
+                <p style="text-align:left; ">50923 Köln</p>
+                <p style="text-align:left; ">jonathan.blumtritt@uni-koeln.de </p>
+                <p style="text-align:left; ">Jonathan Blumtritt ist Mitarbeiter im Data Center for the Humanities an der Universität zu Köln und technischer Koordinator im BMBF-Verbundprojekt Kölner Zentrum Analyse und Archivierung von AV
+                    <hi style="font-family:Cambria Math">‐</hi>Daten (KA³).
+                </p>
+                <p style="text-align:left; ">Christoph Draxler</p>
+                <p style="text-align:left; ">Institut für Phonetik und Sprachverarbeitung</p>
+                <p style="text-align:left; ">Ludwig-Maximilians-Universität München</p>
+                <p style="text-align:left; ">Schellingstr. 3</p>
+                <p style="text-align:left; ">80799 München</p>
+                <p style="text-align:left; ">draxler@phonetik.uni-muenchen.de </p>
+                <p style="text-align:left; ">Christoph Draxler ist Leiter des Bayerischen Archivs für Sprachsignale, einem CLARIN-D Zentrum für gesprochene Sprache. Seine Forschungsinteressen umfassen Web-basierte Dienste und Werkzeuge für die Sprachverarbeitung, z. B. online Perzeptionsexperimente und Transkription per Crowdsourcing, Sprachdatenbanken sowie die Automatisierung des Workflows bei der Erstellung von Sprachdatenbanken.</p>
+                <p style="text-align:left; ">
+                    <hi rend="underline">Jan Gorisch</hi>
+                </p>
+                <p style="text-align:left; ">Archiv für Gesprochenes Deutsch</p>
+                <p style="text-align:left; ">Institut für Deutsche Sprache</p>
+                <p style="text-align:left; ">R5, 6-13</p>
+                <p style="text-align:left; ">68161 Mannheim</p>
+                <p style="text-align:left; ">gorisch@ids-mannheim.de </p>
+                <p style="text-align:left; ">Jan Gorisch ist wissenschaftlicher Mitarbeiter im Programmbereich Mündliche Korpora am Institut für Deutsche Sprache in Mannheim. Neben der Kuration von Korpora gesprochener Sprache liegen seine Forschungsinteressen in der Analyse von Prosodie, Gestik und Konversation.</p>
+                <p style="text-align:left; ">
+                    <hi rend="underline">Hanna Hedeland</hi>
+                </p>
+                <p style="text-align:left; ">Hamburger Zentrum für Sprachkorpora</p>
+                <p style="text-align:left; ">Universität Hamburg</p>
+                <p style="text-align:left; ">Max-Brauer-Allee 60</p>
+                <p style="text-align:left; ">22765 Hamburg</p>
+                <p style="text-align:left; ">hanna.hedeland@uni-hamburg.de </p>
+                <p style="text-align:left; ">Hanna Hedeland ist Geschäftsführerin des Hamburger Zentrum für Sprachkorpora und Mitarbeiterin im Projekt CLARIN-D.</p>
+                <p style="text-align:left; ">Sabine Imeri</p>
+                <p style="text-align:left; ">Universitätsbibliothek der Humboldt-Universität zu Berlin</p>
+                <p style="text-align:left; ">Fachinformationsdienst Sozial- und Kulturanthropologie</p>
+                <p style="text-align:left; ">Jacob-und-Wilhelm-Grimm-Zentrum</p>
+                <p style="text-align:left; ">Planckstr. 16</p>
+                <p style="text-align:left; ">10117 Berlin</p>
+                <p style="text-align:left; ">sabine.imeri.1@ub.hu-berlin.de </p>
+                <p style="text-align:left; ">Sabine Imeri ist Europäische Ethnologin und führt als wissenschaftliche Mitarbeiterin am Fachinformationsdienst Sozial- und Kulturanthropologie Erhebungen zum Umgang mit Forschungsdaten in den ethnologischen Fächern durch. </p>
+                <p style="text-align:left; ">
+                    <hi rend="underline">Almut Leh</hi>
+                </p>
+                <p style="text-align:left; ">Fern-Universität in Hagen</p>
+                <p style="text-align:left; ">Institut für Geschichte und Biographie</p>
+                <p style="text-align:left; ">Feithstr. 152</p>
+                <p style="text-align:left; ">58097 Hagen</p>
+                <p style="text-align:left; ">almut.leh@fernuni-hagen.de </p>
+                <p style="text-align:left; ">Almut Leh ist Historikerin und leitet als wissenschaftliche Mitarbeiterin am Institut für Geschichte und Biographie der Fernuniversität in Hagen das Archiv “Deutsches Gedächtnis”, eine Sammlung von derzeit 3.000 Oral History-Interviews, und führt intverviewbasierte Forschungs- und Dokumentationsprojekte.</p>
+                <p style="text-align:left; ">Bernd Meyer</p>
+                <p style="text-align:left; ">Johannes-Gutenberg-Universität Mainz</p>
+                <p style="text-align:left; ">Arbeitsbereich Interkulturelle Kommunikation</p>
+                <p style="text-align:left; ">An der Hochschule 2</p>
+                <p style="text-align:left; ">76726 Germersheim</p>
+                <p style="text-align:left; ">meyerb@uni-mainz.de </p>
+                <p style="text-align:left; ">0152-33982190</p>
+                <p style="text-align:left; ">Bernd Meyer ist Sprachwissenschaftler und untersucht institutionelle und mehrsprachige Kommunikation. Insbesondere interessiert er sich für gedolmetschte Gespräche und hat hierzu umfangreiche Datensammlungen aufgebaut.</p>
+                <p style="text-align:left; ">Cord Pagenstecher</p>
+                <p style="text-align:left; ">Freie Universität Berlin</p>
+                <p style="text-align:left; ">Center für Digitale Systeme/Universitätsbibliothek</p>
+                <p style="text-align:left; ">Ihnestr. 24</p>
+                <p style="text-align:left; ">14195 Berlin</p>
+                <p style="text-align:left; ">cord.pagenstecher@cedis.fu-berlin.de</p>
+                <p style="text-align:left; ">Cord Pagenstecher ist Historiker am Center für Digitale Systeme/Universitätsbibliothek der Freien Universität Berlin. Er betreut das Interview-Archiv “Zwangsarbeit 1939-1945” und weitere Oral-History-Projekte und koordiniert den Bereich E-Research &amp; E-Publishing.</p>
+                <p style="text-align:left; ">Felix Rau</p>
+                <p style="text-align:left; ">Institut für Linguistik</p>
+                <p style="text-align:left; ">Universität zu Köln</p>
+                <p style="text-align:left; ">Albertus-Magnus-Platz</p>
+                <p style="text-align:left; ">50923 Köln</p>
+                <p style="text-align:left; ">f.rau@uni-koeln.de </p>
+                <p style="text-align:left; ">Felix Rau ist wissenschaftlicher Mitarbeiter am Institut für Linguistik – im Rahmen des BMBF-Verbundprojekts Kölner Zentrum Analyse und Archivierung von AV
+                    <hi style="font-family:Cambria Math">‐</hi>Daten (KA³) und CLARIN-D – und am Language Archive Cologne. 
+                </p>
+                <p style="text-align:left; ">
+                    <hi rend="underline">Josef Ruppenhofer</hi>
+                </p>
+                <p style="text-align:left; ">Archiv für Gesprochenes Deutsch</p>
+                <p style="text-align:left; ">Institut für Deutsche Sprache</p>
+                <p style="text-align:left; ">R5, 6-13</p>
+                <p style="text-align:left; ">68161 Mannheim</p>
+                <p style="text-align:left; ">ruppenhofer@ids-mannheim.de </p>
+                <p style="text-align:left; ">Josef Ruppenhofer ist wissenschaftlicher Mitarbeiter im Programmbereich Mündliche Korpora und Ko-Koordinator des Archivs für Gesprochenes Deutsch (AGD). Neben der Kuration von Korpora gesprochener Sprache liegen seine Forschungsinteressen in den Bereichen Korpuslinguistik, Computerlexikographie, Konstruktionsgrammatik, Sentimentanalyse und Sprache in sozialen Medien.</p>
+                <p style="text-align:left; ">Thomas Schmidt</p>
+                <p style="text-align:left; ">Archiv für Gesprochenes Deutsch</p>
+                <p style="text-align:left; ">Institut für Deutsche Sprache</p>
+                <p style="text-align:left; ">R5, 6-13</p>
+                <p style="text-align:left; ">68161 Mannheim</p>
+                <p style="text-align:left; ">thomas.schmidt@ids-mannheim.de </p>
+                <p style="text-align:left; ">Thomas Schmidt ist Leiter des Programmbereichs Mündliche Korpora am Institut für Deutsche Sprache und in dieser Funktion verantwortlich für das Archiv für Gesprochenes Deutsch (AGD), die Datenbank für Gesprochenes Deutsch (DGD) und das Forschungs- und Lehrkorpus Gesprochenes Deutsch (FOLK). Seine Forschungsinteressen liegen in den Bereichen Korpustechnologie, Korpuslinguistik und Computer-Lexikographie. </p>
+                <p style="text-align:left; ">
+                    <hi rend="underline">Frank Seifart</hi>
+                </p>
+                <p style="text-align:left; ">PD Dr. Frank Seifart</p>
+                <p style="text-align:left; ">CNRS, laboratoire Dynamique Du Langage</p>
+                <p style="text-align:left; ">14 avenue Berthelot</p>
+                <p style="text-align:left; ">F-69363 Lyon CEDEX 07</p>
+                <p style="text-align:left; ">frank.seifart@cnrs.fr </p>
+                <p style="text-align:left; ">Frank Seifarts Forschungsinteressen gehen aus von der Sprachdokumentation und daraus resultierenden multimedialen Korpora. Er untersucht vergleichend die Morphosyntax, Semantik und Prosodie menschlicher Sprachen, besonders Sprechtempovariation; weitere </p>
+                <p style="text-align:left; ">Interessen liegen in der Sprachgeschichte und im Sprachkontakt, besonders auf dem Gebiet der morphologischen Entlehnungen. Er ist spezialisiert in den Amazonassprachen Bora und Resígaro.</p>
+                <p style="text-align:left; ">Ulf-Michael Stift</p>
+                <p style="text-align:left; ">Archiv für Gesprochenes Deutsch</p>
+                <p style="text-align:left; ">Institut für Deutsche Sprache</p>
+                <p style="text-align:left; ">R5, 6-13</p>
+                <p style="text-align:left; ">68161 Mannheim</p>
+                <p style="text-align:left; ">stift@ids-mannheim.de </p>
+                <p style="text-align:left; ">Ulf-Michael Stift ist Historiker und Mitarbeiter des Archivs für Gesprochenes Deutsch. </p>
             </div>
         </body>
         <back>
-            <div type="notes">
-                <note xml:id="ftn1" n="1" rend="footnote text">
-                    <ref target="http://www.creta.uni-stuttgart.de/">www.creta.uni-stuttgart.de</ref>
-                </note>
-                <note xml:id="ftn2" n="2" rend="footnote text">
-                    Aus urheberrechtlichen Gründen wird das Tutorial ohne das Teilkorpus zu Adornos ästhetischer Theorie stattfinden, das in den Publikationen erwähnt wird.
-                </note>
-                <note xml:id="ftn3" n="3" rend="footnote text">
-                    Die Texte wurden im Rahmen des PolMine-Projekts verfügbar gemacht: http://polmine.sowi.uni-due.de/polmine/
-                </note>
-            </div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">Kuhn, Jonas / Reiter, Nils (2015)</hi>: <hi rend="italic">"A Plea for a Method-Driven Agenda in the Digital Humanities"</hi> in: Digital Humanities 2015: Conference Abstracts, Sydney.
+                        <hi rend="bold">Boyd, Douglas A. / Larson, Mary A. (2014)</hi>: <hi rend="italic">Oral History and Digital Humanities – Voice, Access, and Engagement.</hi> Palgrave Studies in Oral History. Basingstoke: Palgrave Macmillan. [10.1057/9781137322029]
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Reiter, Nils / Blessing, André / Echelmeyer, Nora / Koch, Steffen / Kremer, Gerhard / Murr, Sandra / Overbeck, Maximilian / Pichler, Axel (2017a)</hi>: <hi rend="italic">"CUTE: CRETA Unshared Task zu Entitätenreferenzen"</hi> in Konferenzabstracts DHd2017, Bern.
+                        <hi rend="bold">Draxler, Christoph / Schiel, Florian (2018)</hi>: <hi rend="italic">“Moderne phonetische Datenbanken”</hi>. In: <hi rend="bold">Kupietz, Marc &amp; Schmidt, Thomas (eds.) (2018)</hi>: <hi rend="italic">Korpuslinguistik</hi>. (=Germanistische Sprachwissenschaft um 2020, Bd. 5). Berlin/Boston: de Gruyter, 179-208.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Reiter, Nils / Kuhn, Jonas / Willand, Marcus (2017b)</hi>: <hi rend="italic">"To GUI or not to GUI?"</hi> in Proceedings of INFORMATIK 2017, Chemnitz.
+                        <hi rend="bold">Drude, Sebastian / Broeder, Daan / Trilsbeek, Paul (2014)</hi>: <hi rend="italic">The Language Archive and its solutions for sustainable endangered languages corpora.</hi> Book 2.0, 4, 5-20. doi:10.1386/btwo.4.1-2.5_1.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Blessing, André / Echelmeyer, Nora / John, Markus / Reiter, Nils (2017)</hi>: <hi rend="italic">"An end-to-end environment for research question-driven entity extraction and network analysis"</hi> in Proceedings of the Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature, Vancouver.
+                        <hi rend="bold">Harbeck, Matthias / Imeri, Sabine / Sterzer, Wjatscheslaw (2018)</hi>: <hi rend="italic">“Feldnotizen und Videomitschnitte. Zum Forschungsdatenmanagement qualitativer Daten am Beispiel der ethnologischen Fächer”</hi>. Erscheint in: o-bib, Schwerpunktheft Forschungsdaten (Heft 2/2018)
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Lotman, Juri (1972)</hi>: <hi rend="italic">Die Struktur literarischer Texte</hi>, München.
+                        <hi rend="bold">von Hodenberg, Christine (2018)</hi>: <hi rend="italic">Das andere Achtundsechzig: Gesellschaftsgeschichte einer Revolte.</hi> München: Beck. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kehrein, Roland / Vorberger, Lars (2018)</hi>: <hi rend="italic">“Dialekt- und Variationskorpora”</hi>. In: <hi rend="bold">Kupietz, Marc / Schmidt, Thomas (eds.) (2018)</hi>: <hi rend="italic">Korpuslinguistik</hi>. (=Germanistische Sprachwissenschaft um 2020, Bd. 5). Berlin/Boston: de Gruyter, 125-150.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Klausmann, Hubert / Tschofen, Bernhard (2011)</hi>: <hi rend="italic">“‘Sprachalltag’. Ein sprach- und kulturwissenschaftliches Projekt. Zur Alltagssprache in Nord-Baden-Württemberg”</hi>. In: <hi rend="bold">Wicker, Hubert (ed.)</hi>: <hi rend="italic">Schwäbisch. Dialekt mit Tradition und Zukunft.</hi> Festschrift zum 10jährigen Bestehen des Fördervereins Schwäbischer Dialekt e.V.. Gomaringen 2011, 91-102.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Leh, Almut (2018)</hi>: <hi rend="italic">“Zeitzeugenkonserven. Interviews für nachfolgende Forschergenerationen im Archiv ‘Deutsches Gedächtnis’”</hi>, in: Archivar, 71. Jg. (Heft 02, Mai 2018), 153-155.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Medjedovic, Irena (2011)</hi>: <hi rend="italic">“Secondary Analysis of Qualitative Interview Data: Objections and Experiences. Results of a German Feasibility Study”</hi>. In: Forum Qualitative Sozialforschung/Forum Qualitative Social Research, 12(3), Art.10, 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Möller, Katrin / Schmidt, Thomas (2017)</hi>: <hi rend="italic">“The Bonn Longitudinal Study on Ageing (BOLSA) as an interdisciplinary research resource”</hi>. Beitrag zu: <hi rend="italic">Encounters in Language and Aging Research: Pragmatic Spaces, Longitudinal Studies and Multilingualism.</hi> Third International Conference on Corpora for Language and Aging Research (CLARe 3). Berlin. <ref target="https://wikis.fu-berlin.de/pages/viewpage.action?pageId=736856191">https://wikis.fu-berlin.de/pages/viewpage.action?pageId=736856191</ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pagenstecher, Cord / Apostolopoulos, Nicolas (2013)</hi>: <hi rend="italic">Erinnern an Zwangsarbeit. Zeitzeugen-Interviews in der digitalen Welt.</hi> Berlin: Metropol.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pagenstecher, Cord / Pfänder, Stefan (2017)</hi>: <hi rend="italic">“Hidden dialogues. Towards an interactional understanding of Oral History interviews”</hi>. in: <hi rend="bold">Kasten, Erich / Roller, Katja / Wilbur, Joshua (eds.)</hi>: <hi rend="italic">Oral History Meets Linguistics</hi>, Fürstenberg/Havel: Kulturstiftung Sibirien, 185-207, <ref target="http://www.siberian-studies.org/publications/orhili_E.html">http://www.siberian-studies.org/publications/orhili_E.html</ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schmidt, Thomas (2018)</hi>:  <hi rend="italic">“Gesprächskorpora”</hi>. In: <hi rend="bold">Kupietz, Marc &amp; Schmidt, Thomas (eds.) (2018)</hi>: <hi rend="italic">Korpuslinguistik</hi>. (=Germanistische Sprachwissenschaft um 2020, Bd. 5). Berlin/Boston: de Gruyter, 209-230.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Seifart, Frank / Haig, Geoffrey / Himmelmann, Nikolaus P. / Jung, Dagmar / Margetts, Anna / Trilsbeek, Paul (eds.) (2012)</hi>: <hi rend="italic">Potentials of Language Documentation Methods, Analyses and Utilization.</hi> Language Documentation &amp; Conversation, Special Publication No. 3. Honolulu: University of Hawaii Press.
                     </bibl>
                 </listBibl>
             </div>

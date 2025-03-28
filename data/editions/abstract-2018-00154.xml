@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="ULLRICH_Sabine__Aufdecken_von__versteckten__Einflüssen__Teil">
+     xml:id="DAHNKE_Michael__Professionalisierung_der_Ausbildung_von_Geis">
    <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title type="full">
-                    <title type="main"> Aufdecken von “versteckten” Einflüssen: Teil-Automatisierte Textgenetische Prozesse mit Methoden der Computerlinguistik und des Machine Learning</title>
+                    <title type="main">Professionalisierung der Ausbildung von Geisteswissenschaftlern in der Digitalisierung von Texten</title>
                     <title type="sub"/>
                 </title>
                 <author>
                     <persName>
-                        <surname>Ullrich</surname>
-                        <forename>Sabine</forename>
+                        <surname>Dahnke</surname>
+                        <forename>Michael</forename>
                     </persName>
-                    <affiliation>Ludwig-Maximilians-Universität München, Deutschland</affiliation>
-                    <email>sabine.ullrich@campus.lmu.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Bruder</surname>
-                        <forename>Daniel</forename>
-                    </persName>
-                    <affiliation>Universität Cambridge, Vereinigtes Königreich</affiliation>
-                    <email>dmb77@cam.ac.uk</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Hadersbeck</surname>
-                        <forename>Maximilian</forename>
-                    </persName>
-                    <affiliation>Ludwig-Maximilians-Universität München, Deutschland</affiliation>
-                    <email>maximilian@cis.uni-muenchen.de</email>
+                    <affiliation>Universität Würzburg, Deutschland</affiliation>
+                    <email>fedja_anatevka@web.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2018-01-13T17:41:00.289265909</date>
+                    <date>2018-01-15T09:13:14.61</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -67,26 +51,21 @@
                     <term>Poster</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Textgenese bei Editionen</term>
-                    <term>Machine Learning</term>
-                    <term>Ähnlichkeiten</term>
-                    <term>Suchmaschine</term>
-                    <term>automatisieren</term>
+                    <term>Digitalisierung OCR Metadaten Transkription TEI</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Programmierung</term>
-                    <term>Inhaltsanalyse</term>
-                    <term>Kontextsetzung</term>
-                    <term>Methoden</term>
-                    <term>Software</term>
-                    <term>Werkzeuge</term>
+                    <term>Bilderfassung</term>
+                    <term>Transkription</term>
+                    <term>Daten</term>
+                    <term>Bilder</term>
+                    <term>Metadaten</term>
                 </keywords>
             </textClass>
         <settingDesc>
             <ab n="conference">DHd2018 - "Kritik der Digitalen Vernunft", Köln</ab>
-            <ab n="paperID">192</ab>
+            <ab n="paperID">144</ab>
             <ab n="session_ID">60</ab>
-            <ab n="session_numberInSession">36</ab>
+            <ab n="session_numberInSession">60</ab>
             <ab n="session_short">Poster_1</ab>
             <ab n="session_title">Postersession</ab>
             <ab n="session_start">2018-03-01 17:45</ab>
@@ -97,39 +76,85 @@
    <text>
         <body>
             <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p>Am Beispiel von Ludwig Wittgensteins Nachlass (Pichler et al. 2009; Wittgenstein 1996) wird ein Tool vorgestellt und erläutert, welches die Digital Humanities durch einen computer-unterstützten Prozess für textgenetische Aufgaben bereichern soll. </p>
-                <p>Ludwig Wittgensteins Nachlass umfasst etwa 20.000 Seiten, in welchen er eine Menge Zitate aus der Weltliteratur verwendet, diese aber nicht notwendigerweise explizit als solche kennzeichnet. Es scheint, als verzichte Wittgenstein auf explizite Quellenangaben bei Autoren, von welchen er annimmt, sie seien Teil eines „allgemeinen” „kulturellen Horizonts“, und lässt bei seinen Zitaten in Fällen wie z.B. Goethe die Namen der Autoren weg.</p>
-                <p>In einer sinnvollen Zusammenarbeit im Rahmen der Digital Humanities kann die Informatik im Allgemeinen und die Computerlinguistik im Speziellen der Philologie unterstützende Werkzeuge anbieten, die dem Geisteswissenschaftler helfen sollte, derartige mühevolle Prozesse der Zitat-Aufdeckung teil-automatisieren zu können.</p>
-                <p>In diesem Poster wird ein Tool vorgestellt, welches dem Philologen mit Methoden des Machine Learning beim Aufspüren von Einflüssen aus Zitaten in textgenetischen Prozessen unterstützen kann, indem es erlaubt, „ähnliche” Textabschnitte, d.h. potentielle Zitate, vorzufiltern und zu sortieren, um diese im nächsten Schritt einer genaueren Untersuchung zu unterziehen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Bezug zum aktuellen Forschungsstand</head>
-                <p>Die Plagiatsaufdeckung ist die Bestimmung von „ähnlichen“ Texten, d.h. die Aufdeckung von (ungekennzeichneten) Zitaten. Eine Möglichkeit zur Aufdeckung von Ähnlichkeiten ist dabei der Vergleich von syntaktischen Merkmalen zweier oder mehrerer Texte. Diese Charakteristika umfassen beispielsweise die Berücksichtigung von Part-of-Speech Tags, Lemmata und Wortpositionen (Ekbahl et al. 2012). Um zusätzlich modifizierte, aber dennoch semantisch gleiche Texte zu identifizieren, müssen auch Synonyme in Betracht gezogen werden (Abdalgader et al. 2010). Eine Vorverarbeitung, welche u.a. das Tokenisieren der Texte, die Entfernung von Stoppwörtern und eine Sprachidentifizierung beinhaltet, hilft zudem, redundante Wörter zu ignorieren und damit genauere Ergebnisse zu erzielen. Weitere Methoden zur Erkennung von ähnlichen Texten beinhalten u.a. subjektbasierte Graphen (Tomita et al., 2004) und 
-                    <hi rend="italic">Document Fingerprinting</hi> (Sadowski and Lewin, 2007; Kent et al. 2010). Überraschenderweise wurde bislang kein Versuch unternommen, die oben genannten linguistischen Features aus dem Bereich der Syntax und der Semantik zu kombinieren, um die Performanz der Ähnlichkeitssuche weiter zu verbessern. Dass eine solche Kombination sinnvoll ist und besonders gute Ergebnisse leisten kann, zeigt Ullrich (2017).
+                <head>Motivation</head>
+                <p>
+                    »Angesichts der steigenden Sichtbarkeit der Digital Humanities, auch und gerade bei universitären Schwerpunktsetzungen, ist die Frage, wie sie am sinnvollsten gelehrt werden sollen, von steigender Bedeutung« […] »Um diese Bemühungen längerfristig in der Community zu verankern, wurde auf der ersten Jahreskonferenz der Digital Humanities der deutschsprachigen Länder im März 2014« […] »eine Arbeitsgruppe der DHd gegründet. Die Proponenten der Arbeitsgruppe schlugen vor,« […] »die bisher losen Diskussionen stärker auf ein »Referenzcurriculum« zu fokussieren.«
+                    <ref target="https://dig-hum.de/ag-referenzcurriculum-digital-humanities">(https://dig-hum.de/ag-referenzcurriculum-digital-humanities)</ref>
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Forschungsproblem</head>
-                <p>Solche Ansätze könnten – durch entsprechende Umwidmung und in koordinierter Zusammenarbeit mit Philologen – in den Digital Humanities sinnvoll zur Anwendung gebracht werden, um textgenetische Prozesse teil-automatisiert zu unterstützen und Zeit für intensivere Analysen zu gewähren.</p>
-                <p>Die Idee ist, das bestehende Tool zur Ähnlichkeitsbestimmung aus Ullrich (2017) so umzufunktionieren, dass nicht nur die Ähnlichkeit 
-                    <hi rend="italic">einer </hi>gegebene Texteingabe mit 
-                    <hi rend="italic">einer</hi> anderen gegebenen Eingabe bestimmt werden kann, sondern eine 
-                    <hi rend="italic">Sortierung</hi> (
-                    <hi rend="italic">ranking</hi>) von ähnlichen Texten vorgenommen werden kann. Zunächst werden dafür die Texte in kürzere Abschnitte – bei Wittgenstein „Bemerkungen“ genannt – geteit. Nun wird eine 
-                    <hi rend="italic">Sammlung</hi> dieser Abschnitte mit einer anderen 
-                    <hi rend="italic">Sammlung</hi> an Abschnitten verglichen, um dann die potentiell Ähnlichsten in einer Art Hitliste auszugeben. Eine derartige Vorsortierung könnte es dem Philologen besonders erleichtern, potentielle Zitate, Einflüsse und Verweise eines Autors innerhalb seines Werkes und im Bezug auf die Literatur seiner Zeit aufzuspüren.
+                <p>
+                    Diesem Anliegen fühlt sich der als Dozent für die Vermittlung von Digitalisierungskompetenz an der Universitäsbibliothek Würzburg arbeitende Autor verpflichtet. Er engagiert sich in der 
+                    <ref target="https://dig-hum.de/ag-referenzcurriculum-digital-humanities"><hi rend="italic">AG Referenzcurriculum Digital Humanities,</hi></ref> ist Mitglied des Würzburger Arbeitskreis Digitale Editionen und unterstützt das Editionsprojekt 
+                    <ref target="http://kallimachos.de/kallimachos/index.php/Narragonien">
+                        <hi rend="italic">Narragonien digital.</hi></ref> 
+                    Er plädiert mit seinem Beitrag dafür, die DH-Ausbildung bezüglich der Bilddigitalisierung und des OCR (Optical Character Recognition) stärker zu kanonisieren. Mit seiner eigenen 
+                    <ref target="https://www.bibliothek.uni-wuerzburg.de/fileadmin/ub/pdf-Dateien/Infoblaetter/handzettelModulvorstellung.pdf">Lehrveranstaltung</ref>
+                    <ref target="https://www.bibliothek.uni-wuerzburg.de/fileadmin/ub/pdf-Dateien/Infoblaetter/handzettelModulvorstellung.pdf">
+                        <hi rend="italic">Bilddigitalisierung und OCR für Geisteswissenschaftler</hi>
+                    </ref>, deren Schwerpunkt auf der Erstellung der Digitalisate und dem OCR liegt, bietet er eine Referenz, die er hiermit zur Diskussion in der Community stellt.
                 </p>
-                <p>Es muss betont werden, dass mit einem derartigen Werkzeug die Arbeit des Philologen lediglich unterstützt aber keinesfalls ersetzt werden kann. Im Wesentlichen erlaubt eine teil-automatisierte Vorfilterung von „ähnlichen” Textstellen eine drastische Reduktion des „Suchraums“.</p>
-                <p>Um die Leistung eines Philologen wie Hans Biesenbach (2014) zu illustrieren: Wittgensteins Nachlass umfasst 20.000 Seiten. Rechnet man mit 5 Bemerkungen pro Seite und die angestrebte Ähnlichkeitssuche beschränkt sich auf 20.000 Seiten der „Weltliteratur” mit ebenfalls 5 Abschnitten pro Seite, dann gäbe es mathematisch 100.000 x 100.000, also 10 Milliarden mögliche Beeinflussungen, die manuell zu prüfen wären. Selbst für besonders leistungsfähige Rechner werden hier Grenzen erreicht, die nach geeigneten NLP Methoden verlangen.</p>
+                <p>Das Ziel der Lehrveranstaltung ist die Vermittlung von Kenntnissen des gesamten Digitalisierungsprozesses für MA-, BA- und LA-Studentinnen und Studenten aller geisteswissenschaftlichen Fachrichtungen. Diese nachfolgend als Zielgruppe Bezeichneten sollen in die Lage versetzt werden, selbständig strukturiert ausgezeichnete, digitale Volltexte zu erzeugen und die Ergebnisse der Erstellung derselben beurteilen zu können. Diese Kenntnisse sind wichtig, weil Projekte häufig auch dadurch gefährdet sind, dass Vertretern der Zielgruppe die mangelnde Qualität der ihnen vorliegenden Digitalisate zu spät bewusst wird. Darum müssen sie von Beginn an Digitalisate auf ihre Brauchbarkeit für die automatische Texterkennung beurteilen können. Strukturiert ausgezeichnete, digitale Volltexte sind unabdingbar beispielsweise für Topic Modeling oder Sentiment Analysis auf größeren Textcorpora und als Zwischenstufe für die Erstellung digitaler Editionen.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Angewendete Methode</head>
-                <p>Mit Hilfe computerlinguistischer Methoden berechnet man für jeden Abschnitt eines Textes seinen „charakteristischen” Vektor oder, intuitiv gesprochen, seinen linguistischen „Fingerabdruck”. Dieser automatisierte Prozess kann unabhängig im Voraus berechnet werden um spätere Prozesse zu vereinfachen und beschleunigen. Dieser „Fingerabdruck“ beinhaltet die oben genannten syntaktischen, sowie semantischen Informationen.</p>
-                <p>Wird eine Suchanfrage zum Auffinden ähnlicher Abschnitte gestartet, lässt sich der charakteristische Vektor des eingegebenen Abschnitts berechnen und daraufhin die Vektoren mit dem geringsten Abstand im multi-dimensionalen Raum bestimmen. Diese Vektoren verweisen auf die ähnlichsten Textabschnitte, die dann dem Philologen zur genaueren Prüfung in einer Hitliste vorgeschlagen werden.</p>
-                <p>Die bereits erfolgreiche Ähnlichkeits
-                    <hi rend="italic">bestimmung</hi> in Ullrich (2017) soll zu einem Ähnlichkeits
-                    <hi rend="italic">rankingtool</hi>weiterentwickelt werden, um sie vor allem für textgenetische Prozesse in digitalen Editionen nutzbar zu machen. Sobald diese Weiterentwicklung abgeschlossen ist, soll sie die Wittgenstein Advanced Search Tools (Hadersbeck et al. 2014) in der Suchmaschine WiTTFind (siehe: http://wittfind.cis.lmu.de) erweitern, welche am Centrum für Informations- und Sprachverarbeitung der Universität München entwickelt wurde.
+                <head>Ablauf</head>
+                <p>Kurz gefaßt sind die sechs Arbeitschritte dafür</p>
+                <list type="ordered">
+                    <item>die Sensibilisierung für juristische Aspekte der Bilddigitalisierung,</item>
+                    <item>die Suche nach vorhandenen oder die Erstellung von eigenen Digitalisaten,</item>
+                    <item>deren Vorverarbeitung,</item>
+                    <item>das OCR,</item>
+                    <item>die Anreicherung der Digitalisate und des generierten Rohtextes – im Idealfall einer diplomatische Transkription – mit Metadaten, sowie</item>
+                    <item>die inhaltliche Auszeichnung des generierten Rohtextes.</item>
+                </list>
+                <div type="div2" rend="DH-Heading2">
+                    <head>2.1. Rechtliche Grundlagen der Bilddigitalisierung</head>
+                    <p>Um den Teilnehmern den typischen Arbeitsablauf der Textdigitalisierung möglichst stringent und ohne thematische Abschweifungen vorzuführen, werden sie zuerst intensiv mit den juristischen Grundlagen der Bilddigitalisierung vertraut gemacht. Dazu gehören</p>
+                    <list type="ordered">
+                        <item>die Vorstellung des UrhG beziehungsweise speziell der § 60d und 60g UrhG in der novellierten Fassung des UrhWissG 2017,</item>
+                        <item>die Unterscheidung zwischen Immaterial- und Materialgüterrecht und was daraus für die Digitalisierung zweidimensionaler Objekte folgt,</item>
+                        <item>die Persönlichkeitsrechte des Urhebers und weiterer Betroffener sowie</item>
+                        <item>der Umgang mit Werken, die unter der Creative Commons Lizenz stehen und die Möglichkeit, diese selbst zu benutzen.</item>
+                    </list>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>2.2. Suche nach vorhandenen Digitalisaten beziehungsweise deren Erstellung</head>
+                    <p>Am Anfang der Transformation vom gedruckten zum digitalen Corpus steht die Suche nach möglicherweise bereits vorhandenen Digitalisaten. Diese Suche setzt neben nicht DH-spezifischen Kenntnissen der Erschließung das Wissen um Metadaten zu digitalen Bildformaten voraus. Die Vertreter der Zielgruppe müssen in dieser Situation wissen, dass beispielsweise die Chancen eines erfolgreichen OCR mit einem JPEG mit 72 dpi deutlich geringer sind als mit einem unkomprimierten TIFF, True Color und 300 dpi. Sollte er schließlich feststellen, dass ihm Digitalisate in der gewünschten Form nicht zugänglich sind, bedarf er der Kenntnisse zu digitalen Bildformaten genauso, um im nächsten Schritt erfolgreich den Scan selbst durchzuführen oder nach seinen Vorgaben durchführen zu lassen.</p>
+                    <p>Ausgehend von den skizzierten Anforderungen werden den Vertretern der Zielgruppe in der Veranstaltung die Grundlagen der Bilddigitalisierung nahe gebracht. Vertieft wird hier auf das menschliche Sehen und die Farbreproduktion, die Entstehung digitaler Bilder (Rastergraphik, optische und interpolierte Auflösung, Farbtiefe), Farbräume, Color-Management-Systeme, verschiedene Graphikspeicherformate, Speichermedien und verschiedene Scannertypen eingegangen. Auch für die Berücksichtigung konservatorischer Aspekte werden die Teilnehmer sensibilisiert.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>2.3. Aufbereitung der Digitalisate für das OCR</head>
+                    <p>Die Forschung im Bereich OCR, insbesondere auf Inkunabeln und Wiegendrucken, sowie die eigene Praxis des Autors belegen die Bedeutung einer vorherigen Aufbereitung der Digitalisate für das OCR, der darum entsprechend Platz in der Veranstaltung eingeräumt wird (Springmann 2015: 9). Als Tätigkeiten sind hier in der Reihenfolge ihrer Ausführung die Bereinigung und anschließende Binarisierung der Digitalisate, deren Segmentierung in einzelne Textabschnitte und schließlich einzelne Textzeilen sowie die Transkription (›ground truth‹) einer Anzahl der Textzeilen zu nennen. Die gesamte Aufbereitung der Digitalisate für das OCR führen die Vertreter der Zielgruppe in der Veranstaltung selbst an ausgewähltem Trainingsmaterial durch. Nach der Teilnahme an der Veranstaltung sollen sie auch diesen Arbeitsschritt selbständig erledigen und Arbeitsergebnisse anderer in diesem Bereich beurteilen können.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>2.4. OCR</head>
+                    <p>Entsprechend der zunehmenden Spezialisierung des Digitalisierungszentrums der UB Würzburg ist es erstens wünschenswert, in der Lehrveranstaltung besonders auf das Training eigener Modelle beispielsweise mit 
+                    <ref target="https://github.com/tmbdev/ocropy">
+                        <hi rend="italic">OCRopus</hi>
+                    </ref> einzugehen. Zweitens soll ein Arbeitsablauf für die Digitalisierung eigener Texte vorgestellt werden, der von den Vertretern der Zielgruppe selbständig mit möglichst geringem technischen Aufwand realisierbar ist. Diese Form der Digitalisierung von Texten soll als handhabbares Mittel zum Zweck wahrgenommen werden.
+                    </p>
+                    <p>Schließlich wird in diesem Zusammenhang auf die Frage nach dem Zeitpunkt der Normalisierung des mit dem OCR erstellten Textes eingegangen. Soll bereits mit dem OCR ein normalisierter Text erstellt werden und wenn ja, nach welchen Regeln? Ist also beispielsweise von der verwendeten OCR-Software das Schaft-s bereits automatisch als Rund-s zu lernen und anschließend zu transkribieren? Oder soll das Ergebnis des OCR graphisch so dicht wie möglich am Original bleiben und normalisierende Eingriffe erst hinterher erfolgen?</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>2.5. Auszeichnung/Anreicherung</head>
+                    <p>Nach dem OCR wird erst die Notwendigkeit der Auszeichnung sowohl der Digitalisate mit Metadaten als auch des Rohtextes erläutert, die die Teilnehmer dann auch selbst vornehmen sollen. Für den extrahierten Rohtext gilt das in zweifacher Hinsicht: Erstens sind ihm Metadaten hinzuzufügen, welche die spätere, eindeutige Identifikation des Werkes und dessen Auffindbarkeit ermöglichen. Zweitens muss der Text strukturiert mit inhaltsbezogenen Elementen angereichert werden.</p>
+                    <p>Konkret sind bei der digitalen Repräsentation eines Romans beispielsweise die Figuren, Orte, Zeitpunkte und gegebenenfalls weitere signifikante Entitäten im Text für das spätere, automatisierte Retrieval zu kodieren. Andere Anforderungen stellen digitalierte Transkriptionen gesprochener Sprache und wiederum andere die Erstellung einer Urkundenedition (Vogeler 2015). Für die visuelle Präsentation, beispielsweise auf einem Webportal, sind textstrukturierende Merkmale wie die Einteilung nach Kapiteln, Abschnitten, Fußnoten etc. zu kennzeichnen. Dem unterschiedlichen Kenntnisstand der Teilnehmer geschuldet muss hier vor der Vorstellung der TEI Guidelines zuvor zweifelsohne XML dargestellt werden. Wie ausführlich daneben 
+                    <ref target="http://dublincore.org/">Dublin Core</ref> und bibliotheksspezifische Formate (MARC21) thematisiert werden, ist noch nicht entschieden. Wieviel Zeit für weiterführende Themen wie 
+                    <ref target="http://www.datacommunitydc.org/blog/2013/04/a-survey-of-stochastic-and-gazetteer-based-approaches-for-named-entity-recognition">Named Entity Recognition</ref>, 
+                    <ref target="http://www.persid.org/downloads/PI-intro-2010-09-22.pdf">PID</ref> und Normdaten wie GND bleibt, muß ebenfalls die Praxis weisen.
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Forschungsbezug und Weiterentwicklung</head>
+                <p>Die eine Stärke der Würzburger Lehrveranstaltung ist die Praxisorientierung, der nach der zweitägigen Einführung noch stärker mit einer drei Tage dauernden Übung Rechnung getragen wird. Bei dieser werden die Vertreter der Zielgruppe mit vorbereiteten Scans selbständig die genannten Arbeitsschritte von der Bereinigung und anschließenden Binarisierung über die Segmentierung und Transkription, dem OCR bis zum anschließenden Auszeichnen beziehungsweise der Anreicherung des digitalen Corpus mit den nötigen Metadaten vornehmen.</p>
+                <p>Unverzichtbar für die gesamte Ausbildung im DH-Bereich ist neben dem Praxisbezug die Orientierung am neuesten Stand der Forschung in allen Teilbereichen. Dem wird bei der skizzierten Lehrveranstaltung erstens durch die Forschung einzelner Mitglieder des Digitalisierungszentrums als die Veranstaltung verantwortende Abteilung Rechnung getragen (1. Reul/Wick/Springmann/Puppe: 2017. 2. Springmann: 2016. 459–462). Zweitens ist die enge Zusammenarbeit des Digitalisierungszentrums mit dem Lehrstuhl für Informatik VI der Universität Würzburg zu nennen.</p>
+                <p>Denkbare Erweiterungen für eine zukünftig breiter angelegte Lehrveranstaltung der beschriebenen Art sind die Vorstellung a) des OCR von Handschriften, beispielsweise in der Kooperation mit einer 
+                    <ref target="https://transkribus.eu/wikiDe/index.php/Hauptseite">Transkribus</ref> anwendenden Institution, idealerweise der 
+                    <ref target="https://transkribus.eu/Transkribus/">
+                        <hi rend="italic">Digitalisierung und elektronische Archivierung – DEA</hi>
+                    </ref> der Universität Innsbruck, und b) des Einsatzes virtueller Forschungsumgebungen zur Herstellung digitaler Ressourcen.
+                </p>
+                <p>Aus Sicht des Autors ist nach der erfolgreichen Durchführung die kritische Diskussion mit den Autors ähnlicher oder gleicher Veranstaltungen von anderen Institutionen unverzichtbar. Ausgehend von
+                    <ref target="http://cceh.uni-koeln.de/digitale-geisteswissenschaften-studiengange-2011/">http://cceh.uni-koeln.de/digitale-geisteswissenschaften-studiengange-2011/</ref> befragt er aktuell die Mitarbeiter einschlägiger Institutionen nach deren Angeboten im Bereich der Digitalisierung von Texten. Er hofft mit seinem Beitrag wie dem AG Treffen an der DHd2018 auf einen fruchtbaren Meinungsaustausch.
                 </p>
             </div>
         </body>
@@ -137,49 +162,35 @@
          <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl>
-                        <hi rend="bold">Abdalgader, Khaled / Skabar, Andrew</hi>(2010): “Short-text similarity measurement using word sense disambiguation and synonym expansion.”, in: 
-                        <hi rend="italic">Australasian Joint Conference on Articial Intelligence</hi>, Springer 435-444.
+                    <bibl><hi rend="bold">Corbach, Almuth</hi>: 
+                        <hi rend="italic">Bestandsschonendes Digitalisieren von schriftlichem Kulturgut</hi>. In: Digital und analog. Die beiden Archivwelten. 46. Rheinischer Archivtag. Ratingen 21.-22. Juni 2012.
                     </bibl>
-                    <bibl>
-                        <anchor xml:id="id_productTitle"/>
-                        <anchor xml:id="id_title"/>
-                        <hi rend="bold">Biesenbach, Hans </hi>(2014): 
-                        <hi rend="italic">Anspielungen und Zitate im Werk Ludwig Wittgensteins</hi>,
-                        <hi rend="italic"> </hi>Sofia University Press.
+                    <bibl><hi rend="bold">Jannidis, Fotis / Hubertus Kohle / Malte Rehbein </hi>[Hrsg.]: 
+                        <hi rend="italic">Digital Humanities. Eine Einführung</hi>. Springer-Verlag GmbH Deutschland, 2017.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Ekbal, Asif / Saha, Sriparna / Choudhary, Gaurav</hi> (2012): “Plagiarism detection in text using vector space model.”, in: 
-                        <hi rend="italic">Hybrid Intelligent Systems</hi> (HIS), 2012 12th International Conference on, pages 366-371. IEEE.
+                    <bibl><hi rend="bold">Kneißl, Michael</hi>: 
+                        <hi rend="italic">Scannen wie die Profis : Text- und Bildvorlagen perfekt digitalisieren</hi>. München: DTV. (2)2002.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Hadersbeck, Maximilian / Pichler, Alois / Fink, Florian / Gjesdal, Øyvind, L.</hi> (2014): 
-                        <hi rend="italic">Wittgenstein‘s Nachlass: WiTTFind and Wittgenstein Advanced Search Tools (WAST).</hi> DATeH. Madrid.
+                    <bibl><hi rend="bold">Loewenheim, Ulrich / Adolf Dietz / Gerhard Schricker</hi>: 
+                        <hi rend="italic">Urheberrecht</hi>. Kommentar. München: Beck. (4)2010.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">C.K. Kent / N. Salim </hi>(2010): „Features based text similarity detection.“, in: 
-                        <hi rend="italic">Journal of Computing</hi>, 2 (1).
+                    <bibl><hi rend="bold">Reul, Christian / Christoph Wick / Uwe Springmann / Frank Puppe</hi>: 
+                        <hi rend="italic">Transfer Learning for OCRopus Model Training on Early Printed Books</hi>. In: 
+                        <hi rend="italic">Zeitschrift für Bibliothekskultur</hi>. Bd. 5, Nr. 1 (2017).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Pichler, Alois / Krüger, Heinz W. / Smith, D. / Bruvik, Tone / Lindebjerg, Anne / Olstad, Vemund </hi>(Hrsg.) (2009): 
-                        <hi rend="italic">Wittgenstein Source Bergen Facsimile (BTE)</hi>. Wittgenstein Source Bergen.
+                    <bibl><hi rend="bold">Springmann, Uwe</hi>: 
+                        <hi rend="italic">A high accuracy OCR method to convert early printings into digital text. A Tutorial</hi>. 
+                        <hi rend="italic">Center for Information and Language Processing (CIS)</hi>. LMU. München. 2015. S. 9.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Sadowski, Caitlin / Levin, Greg</hi> (2007): 
-                        <hi rend="italic">Simhash: Hash-based similarity detection</hi>.
+                    <bibl><hi rend="bold">Springmann, Uwe</hi>: 
+                        <hi rend="italic">OCR für alte Drucke</hi>. 
+                        <hi rend="italic">Informatik-Spektrum</hi>. 39(6):459–462. 2016.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Tomita, Junji / Nakawatase, Hidekazu / Ishii, Megumi </hi>(2004): „Calculating similarity between texts using graph-based text representation model”, in: 
-                        <hi rend="italic">Proceedings of the thirteenth ACM international conference on Information and knowledge management</hi>, pages 248-249. ACM.
+                    <bibl><hi rend="bold">Vogeler, Georg</hi>: 
+                        <hi rend="italic">Die Text Encoding Initiative (TEI) als Werkzeug des Urkundeneditors – Erfahrungen und Desiderate</hi>. In: Fees, Irmgard Prof. Dr.; Hotz, Benedikt; Schönfeld, Benjamin (Hrsg.): 
+                        <hi rend="italic">Papsturkundenforschung zwischen internationaler Vernetzung und Digitalisierung. Neue Zugangsweisen zur europäischen Schriftgeschichte</hi>. Göttingen. 2015.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Ullrich, Sabine </hi>(2017): 
-                        <hi rend="italic">Evaluation of Existing Plagiarism Research for the Optimisation of NLP-based Similarity Detection using Ludwig Wittgenstein's Remarks,</hi> Bachelor thesis, Ludwig-Maximilians-Universität München.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Wittgenstein, Ludwig / Nedo, Michael (Hrsg.)</hi> (1996): 
-                        <hi rend="italic">Wiener Ausgabe</hi>. Band 1-5.
-                    </bibl>
+                    <bibl><hi rend="bold">Weitzmann, John H. / Paul Klimpel</hi>: Rechtliche Rahmenbedingungen für Digitalisierungsprojekte von Gedächtnisinstitutionen. Berlin: Zuse Institute Berlin. digiS – Servicestelle Digitalisierung Berlin. (3)2016.</bibl>
                 </listBibl>
             </div>
       </back>

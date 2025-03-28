@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="SELTMANN_Melanie_Elisabeth_H___PublicDH_oder_doch_nur__WissK" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="NOICHL_Maximilian_PhilroBERTa__Ein_multilinguales_Sprachmode" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>#PublicDH oder doch nur #WissKomm?</title>
+                <title type="full">
+                    <title type="main">PhilroBERTa: Ein multilinguales Sprachmodell zur Beantwortung philosophiehistorischer Fragestellungen</title>
+                    <title type="sub"/>
+                </title>
                 <author>
                     <persName>
-                        <surname>Seltmann</surname>
-                        <forename>Melanie Elisabeth-H.</forename>
+                        <surname>Noichl</surname>
+                        <forename>Maximilian</forename>
                     </persName>
-                    <affiliation>Universitäts- und Landesbibliothek Darmstadt</affiliation>
-                    <email>melanie.seltmann@tu-darmstadt.de</email>
-                    <idno type="ORCID">0000-0002-7588-4395</idno>
+                    <affiliation>Universität Wien, Österreich; Universität Bamberg, Deutschland</affiliation>
+                    <email>noichlmax@hotmail.co.uk</email>
+                    <idno type="ORCID">0000-0003-4518-0837</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Panzer</surname>
+                        <forename>Lukas</forename>
+                    </persName>
+                    <affiliation>Universität Bamberg, Deutschland</affiliation>
+                    <email>lukas.panzer@stud.uni-bamberg.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-11-23T11:18:00Z</date>
+                    <date>2022-07-15T12:29:02.850000000</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -43,7 +54,7 @@
                     </address>
                 </publicationStmt>
             <sourceDesc>
-                <p>Converted from a Word document</p>
+                <p>Converted from an OASIS Open Document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -62,15 +73,18 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Wissenschaftskommunikation</term>
-                    <term>Citizen Science</term>
-                    <term>Public Humanities</term>
+                    <term>Sentence-Transformer</term>
+                    <term>Natural Language Processing</term>
+                    <term>Analytische Philosophie</term>
+                    <term>Kontinentale Philosophie</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Kommunikation</term>
-                    <term>Community-Bildung</term>
-                    <term>Veröffentlichung</term>
-                    <term>Crowdsourcing</term>
+                    <term>Entdeckung</term>
+                    <term>Programmierung</term>
+                    <term>Strukturanalyse</term>
+                    <term>Visualisierung</term>
+                    <term>Literatur</term>
+                    <term>Text</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -78,281 +92,230 @@
     <text>
         <body>
             <div type="div1" rend="DH-Heading1">
-                <head>Einleitung und Methode</head>
-                <p style="text-align: left; ">Digitale Wissenschaftskommunikation und die Möglichketen der sozialen Medien werfen in den letzten Jahren vermehrt wieder Fragen der klassischen Forschung zu Wissenschaftskommunikation auf (vgl. Franzen 2019, 616). Der vorliegende Beitrag schließt hier für das Konzept der 
-                    <hi rend="italic">Public Humanities</hi> an. Damit ist auch klar, dass nicht jegliche Form der Wissenschaftskommunikation betrachtet werden kann. Im Laufe des Beitrages wird herausgearbeitet, dass es sich bei 
-                    <hi rend="italic">Public Humanities</hi> nicht um eine traditionelle Form der Wissenschaftskommunikation handelt, wie etwa die Veröffentlichung eines (populär-)wissenschaftlichen Beitrages oder das Halten eines (populär-)wissenschaftlichen Vortrages, sondern um eine moderne, digitale, in der durch moderne Medienformen die 
-                    <hi rend="italic">One-to-Many-Communication</hi> zu einer 
-                    <hi rend="italic">Many-to-Many-Communication</hi> wird und der Diskurs damit interaktiv und rekursiv wird (vgl. Bucher 2019, 64). Damit einhergehend wird die Wissenschaftskommunikation von einem öffentlichen Bewusstsein für Wissenschaft zu einem bürgerlichen Engagement verschoben, die Kommunikation wird zum Dialog (vgl. Bucchi and Trench 2014, 4).
-                </p>
-                <p style="text-align: left; ">Nach einer Definition der Konzepte 
-                    <hi rend="italic">Public Humanities</hi> sowie 
-                    <hi rend="italic">Public Digital Humanities</hi> folgt eine Betrachtung verschiedener Arten und Dimensionen von Wissenschaftskommunikation. Hierbei fokussiere ich mich in diesem Beitrag auf den europäischen Raum. In den USA findet das Thema 
-                    <hi rend="italic">Public Humanities</hi> schon länger Betrachtung als in Europa, ebenso wie die Forschung zu Wissenschaftskommunikation allgemein ausgeprägter ist (vgl. Schäfer et al. 2019, 79), dieser Aspekt soll hier jedoch ausgeklammert werden und für die weitere Forschung aufgehoben werden. In einem dritten Schritt soll das Konzept der 
-                    <hi rend="italic">Public Humanities</hi> in die Wissenschaftskommunikationsmatrix nach Frick et al. (2021) eingebettet werden und damit herausgearbeitet werden, wer in den 
-                    <hi rend="italic">Public Humanities</hi> agiert und zu welcher Form von Wissenschaftskommunikation sie gehören. An diese theoretischen Betrachtungen schließt sich ein Kapitel zum Mehrwert von 
-                    <hi rend="italic">Public Humanities</hi> für verschiedene Zielgruppen und in Hinblick auf verschiedene Aktivitäten an. Daraufhin werden Handlungsempfehlungen für möglichst erfolgreiche 
-                    <hi rend="italic">Public Humanities</hi> gegeben. Der Beitrag schließt mit einem Resümee.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Definitionsversuche #PublicDH</head>
-                <p style="text-align: left; ">Zu Beginn möchte ich den Terminus 
-                    <hi rend="italic">#PublicDH</hi> versuchen zu definieren. Wie bei so ziemlich jedem Terminus gibt es auch hier reichlich Möglichkeiten der Definition. Heinisch (2021) gibt einen umfassenden Überblick über den Unterschied zwischen 
-                    <hi rend="italic">Public Humanities</hi>, 
-                    <hi rend="italic">Public Digital Humanities</hi> und 
-                    <hi rend="italic">Citizen Humanities</hi>. Aus ihren Ausführungen zu den 
-                    <hi rend="italic">Public Humanities</hi> kann man zusammenfassen, dass ein wesentlicher Bestandteil ist, die Geisteswissenschaften aus ihrem universitären Elfenbeinturm herauszuheben und zum einen der Öffentlichkeit näher zu bringen, sie aber gleichermaßen auch in die Forschung einzubinden. Damit einher geht das Schaffen von neuen Formaten der Wissenschaftskommunikation sowie die Bidirektionalität selbiger. Es ist nicht mehr allein der:die Wissenschaftler:in, der:die kulturelle Artefakte untersucht, sondern sie werden in Gemeinsamkeit mit Bürger:innen reflektiert und interpretiert. Jacobson (2020) führt hierfür beispielsweise die Form des Story-Tellings an (vgl. Jacobson 2020, 165–169).
-                </p>
-                <p style="text-align: left; ">Anfangs gingen die 
-                    <hi rend="italic">Public Humanities</hi> beinahe missionarisch vor, wenn sie die Bevölkerung belehrten und ihre eigenen Aktivitäten rechtfertigten (vgl. Gibbs 2016, 1). Heutzutage steht jedoch viel mehr der Wunsch, durch Zusammenarbeit etwas zu verändern und in der Gesellschaft zu bewirken (vgl. Miller et al. 2017). Zudem werden Disziplingrenzen überwunden und interdisziplinär etwas Größeres vermittelt und erarbeitet. Es handelt sich also um bidirektionale und disziplinübergreifende Wissenschaftskommunikation.
-                </p>
-                <p style="text-align: left; ">Im Unterschied dazu erweitern die 
-                    <hi rend="italic" xml:space="preserve">Public Digital Humanities </hi>(oder kurz 
-                    <hi rend="italic">#PublicDH</hi>) die 
-                    <hi rend="italic">Public Humanities</hi> durch eine digitale Komponente: die vermittelte Wissenschaft wird mit Hilfe von digitalen Methoden durchgeführt. Dies betrifft sowohl die originär von Wissenschaflter:innen durchgeführte Forschung als auch dialogisch mit Bürger:innern erzeugte Forschung. Zudem kann auch die gemeinsame (Weiter-)Entwicklung dieser digitalen Methoden Teil der 
-                    <hi rend="italic">#PublicDH</hi> sein (vgl. Heinisch 2021). Damit sind die 
-                    <hi rend="italic" xml:space="preserve">#PublicDH </hi>die Art der 
-                    <hi rend="italic">Public Humanities</hi>, die eine spezielle Form der #WissKomm für die Disziplin(en) der 
-                    <hi rend="italic">Digital Humanities</hi> aufbereiten. An der Grenze der 
-                    <hi rend="italic">#PublicDH</hi> liegen Wissenschaftskommunikationsformate, in denen nicht-digitale Wissenschaft durch digitale Formate für die Vermittlung aufbereitet wird. Genau genommen handelt es sich bei dieser Form der #WissKomm eher um 
-                    <hi rend="italic">Digital Public Humanities</hi> denn um 
-                    <hi rend="italic">#PublicDH</hi>.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Arten und Dimensionen der Wissenschaftskommunikation</head>
-                <p style="text-align: left; ">Wissenschaftskommunikation ist jedoch nicht gleich Wissenschaftskommunikation. Dafür möchte ich im Folgenden genauer betrachten, welche Formen von Wissenschaftskommunikation oder kurz #WissKomm es gibt. </p>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Kommunikationsmatrix</head>
-                    <p style="text-align: left; ">Meistens wird hier vor allem zwischen interner und externer #WissKomm unterschieden. Die interne #WissKomm, auch 
-                        <hi rend="italic">Scholarly Communication</hi> genannt, richtet sich an die wissenschaftliche Community, häufig der eigenen Disziplin. Die externe #WissKomm adressiert dahingegen Nicht-Spezialist:innen (vgl. Könneker 2017, 454). Die Definition greift hier jedoch zu kurz. Für eine Spezifizierung verschiedener Wissenschaftskommunikationsformen sollte nicht nur der:die Adressat:in betrachtet werden, sondern auch der:die Sender:in. Folglich spannt sich hier eine Matrix auf (vgl. Figure 1).
-                    </p>
+                <head>
+                    <anchor xml:id="id_docs-internal-guid-3633fc81-7fff-6c5f-2bfb-33024082521b"/>Einleitung
+                </head>
+                <p>Die wohl bedeutendste Struktur der zeitgenössischen akademischen Philosophie ist die Trennung zwischen kontinentaler und analytischer Philosophie.</p>
+                <p>Obwohl wenig Einigkeit über die eigentliche Natur der Trennung besteht – ist es eine methodologische (vgl. Petrovich und Buonomo 2018), thematische, linguistische (vgl. Hobbs 2014), oder doch nur eine soziale? – spielt sie eine wichtige Rolle im philosophischen Berufsleben, und wird nicht nur informell verhandelt, sondern schlägt sich in den Aufnahmekriterien von Fachzeitschriften, in den Entscheidungen von Berufungskommissionen und im Aufbau zahlreicher professioneller Vereinigungen nieder.</p>
+                <p>Klarheit über die Topologie dieser Trennung zu erreichen, ist dementsprechend von großem Interesse. Dennoch besteht in der Literatur eine ausgesprochene Uneinigkeit über eine Reihe von basalen Fragen: Wann hat die Spaltung ihren Anfang genommen (man vgl. die Darstellungen von e.g. Glock 2008; Critchley 1997; 2001)? Handelt es sich überhaupt um eine Trennung, oder eher um zwei Extreme am Rande eines Kontinuums? Hat sie überhaupt noch Bestand, oder hat sich die Kluft im einundzwanzigsten Jahrhundert weitestgehend geschlossen (Bieri 2007; Beckermann 2003; Hoche 2009)?</p>
+                <p>
                     <figure>
-                        <graphic n="1001" width="16.002cm" height="2.968386111111111cm" url="Pictures/9d80c80811dd5fe45897d8dea2a836df.png" rend="inline"/>
-                        <head>
-                            <hi style="font-size:8pt">Figure 1: Matrix Wissenschaftskommunikation (Verkürzung von Frick et al. 2021)</hi>
-                        </head>
+                        <graphic url="Pictures/04968ee8f4d03889e47663a481f41fde.png"/>
+                        <head>Zusammensetzung des gereinigten Datensatz über hundertzehn Jahre. Wir beobachten eine sich massiv verstärkende Dominanz des englischen Materials über das Jahrhundert hinweg, die Teils den Datenquellen geschuldet, zu einem großen Teil aber auch aus den Bedingungen des modernen wissenschaftlichen Publizierens erwachsen ist.</head>
                     </figure>
-                    <p style="text-align: left; ">Das orange hinterlegte Feld (
-                        <hi rend="italic">Science-to-Science</hi>) repräsentiert die interne, die blau hinterlegten Felder (
-                        <hi rend="italic">Science-to-Public</hi>, 
-                        <hi rend="italic">Public-to-Science</hi>, 
-                        <hi rend="italic">Public-to-Public</hi>) die externe #WissKomm. Externe #WissKomm kann folglich viel mehr als Kommunikation, die nicht intern innerhalb einer Wissenschaftsdisziplin oder allgemein innerhalb der Wissenschaft erfolgt, verstanden werden. Frick et al. (2021) bestimmen externe #WissKomm genauer in drei Bereiche und setzen sie in den Kontext von traditionellen Veröffentlichungsformen und 
-                        <hi rend="italic">Citizen Science</hi>. 
-                        <hi rend="italic">Science-to-Public-Communication</hi> ist die „normale“ externe Wissenschaftskommunikation oder auch 
-                        <hi rend="italic">Science Communication</hi>, obgleich sie nicht nur in den STEM-Fächern (Naturwissenschaften, Technik, Ingenieurswissenschaften, Mathematik) vorhanden ist, sondern auch in den SSH (Sozialwissenschaften, Geisteswissenschaften). Die Bereiche 
-                        <hi rend="italic">Public-to-Science</hi> und 
-                        <hi rend="italic">Public-to-Public</hi> betreffen den Bereich 
-                        <hi rend="italic">Citizen Science</hi>. In der 
-                        <hi rend="italic">Public-to-Science-Communication</hi> liefern Bürger:innen Erkenntnisse an die Wissenschaft. Zudem gehört in diesen Bereich auch das Einbringen von Forschungsfragen durch Bürger:innen. Hierdurch wird für die Allgemeinheit relevante Forschung besonders sichtbar. Den Bereich der 
-                        <hi rend="italic">Public-to-Public-Communication</hi> bezeichnen Frick et al. (2021) als 
-                        <hi rend="italic">Citizen-Science-Communication</hi>. Hier wird dem Rechnung getragen, dass Bürger:innen sich in 
-                        <hi rend="italic">Citizen-Science</hi>-Projekten nicht nur der Forschung beteiligen, sondern selbst als Multiplikator:innen fungieren und von ihrer Forschung und ihren Ergebnissen, seien sie positiv oder negativ, erzählen. Damit umfassen Frick et al. (2021) mit ihrem Begriff von 
-                        <hi rend="italic">Citizen-Science-Communication</hi> nur einen Teil der Kommunikationsformen, die anderswo inhärent wären. Häufig werden auch die 
-                        <hi rend="italic">Science-to-Public-Communication</hi> sowie die 
-                        <hi rend="italic">Public-to-Science-Communication</hi> mit in den Bereich Citizen Science gezählt.
-                    </p>
-                    <p style="text-align: left; ">Schumacher (2021) spricht sogar von mindestens fünf kommunikativen Schnittstellen in den digitalen Geisteswissenschaften: 
-                        <hi rend="italic">Humanities-to-Public</hi> (Wissenschafts-PR), 
-                        <hi rend="italic">Humanities-to-Media</hi> (Wissenschaftsjournalismus), 
-                        <hi rend="italic">Public-to-Humanities</hi> (Citizen Science), 
-                        <hi rend="italic">(Digital-)Humanities-to-(Digital-)Humanities</hi> (Kommunikation in der eigenen Community) sowie 
-                        <hi rend="italic">Digital-Humanities-to-non-Digital-Humanities</hi>. Wobei die Zuordnung zu Frick et al. (2021) nicht eins zu eins gelingt. Schumacher (2021) lässt die 
-                        <hi rend="italic">Public-to-Public-Communication</hi> außen vor, ergänzt dafür jedoch die 
-                        <hi rend="italic">Humanities-(oder Science-)to-Media-Communication</hi> sowie die 
-                        <hi rend="italic">Digital-Humanities-to-non-Digital-Humanities-Communication</hi>, also die disziplinenübergreifende #WissKomm bzw. die #WissKomm zwischen Wissenschaftler:innen verschiedener Methoden. Möchte man Schumachers kommunikative Schnittstellen in die Wissenschaftskommunikationsmatrix nach Frick et al. (2021) einordnen, so wäre die 
-                        <hi rend="italic">Humanities-to-Media-Communication</hi> eine Sonderform der 
-                        <hi rend="italic">Science-to-Public-Communication</hi>. Bucher (2019) führt aus, dass es bei der Wissenschaftskommunikation, die über Wege des Journalismus vermittelt wird, um die traditionelle Form der 
-                        <hi rend="italic">Science-to-Public-Communication</hi> handelt, die digitalen Medien jedoch Möglichkeiten für eine direkte 
-                        <hi rend="italic">Science-to-Public-Communication</hi> schaffen (vgl. Bucher 2019, 64). Bei der 
-                        <hi rend="italic">Digital-Humanities-to-non-Digital-Humanities-Communication</hi> handelt es sich um eine Sonderform der 
-                        <hi rend="italic">Science-to-Science-Communication</hi>.
-                    </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Dimensionen</head>
-                    <p style="text-align: left; ">Alle Bereiche der #WissKomm haben ihre ganz eigenen Herausforderungen und je nach Form müssen fünf der sechs Dimensionen der Wissenschaftskommunikation (Frick et al. 2021) anders bedacht werden. Die erste Dimension (
-                        <hi rend="italic">Inhalt</hi>) ist in allen Formen der #WissKomm gleich (für einen spezifischen Kommunikationsanlass). Im nächsten Schritt entscheidet man, welche 
-                        <hi rend="italic">Zielgruppe</hi> man ansprechen möchte (Dimension 2). Hier unterscheidet sich die folgende #WissKomm in die verschiedenen Formen. Die weiteren Dimensionen passen sich an die getroffene Entscheidung an und stehen auch untereinander in enger Beziehung. Ändert sich eine der Dimensionen, so müssen auch die anderen angepasst werden. Mit der dritten Dimension wird der verwendete 
-                        <hi rend="italic">Stil</hi> betrachtet, in der vierten Dimension wird sich für ein adäquates 
-                        <hi rend="italic">Format</hi> entschieden. Wichtig ist auch zu betrachten, welche 
-                        <hi rend="italic">Motivation</hi> man bei der #WissKomm hat, also warum man etwas vermitteln möchte (Dimension 5) und schließlich sollte man sich vor dem Kommunikationsakt klar werden, welche 
-                        <hi rend="italic">Rolle</hi> man selbst spielen möchte (Dimension 6). 
-                    </p>
-                    <p style="text-align: left; ">Auch das NaWik gibt mit ihrem NaWik-Pfeil (vgl. Könneker 2017, 468) Hilfestellung für die Planung von Wissenschaftskommunikation und rät dazu, fünf Dimension im Vornhinein zu beachten. Vier davon decken sich mit den eben beschriebenen sechs Dimensionen. Als erstes ist die Dimension 
-                        <hi rend="italic">Thema</hi> zu beachten, die der Dimension 
-                        <hi rend="italic">Inhalt</hi> entspricht. Daraufhin soll über den 
-                        <hi rend="italic">Stil</hi> (Dimension 2) nachgedacht werden, der bei Frick et al. (2021) erst im dritten Schritt betrachtet wird. Als dritte Dimension wird hier nun das 
-                        <hi rend="italic">Medium</hi> reflektiert, was dem 
-                        <hi rend="italic">Format</hi> entspricht. Erst im vierten Schritt wird bei NaWik über die 
-                        <hi rend="italic">Zielgruppe</hi> nachgedacht. Schließlich führt NaWik als fünfte Dimension das 
-                        <hi rend="italic">Ziel</hi> selbst an, was ähnlich wie die 
-                        <hi rend="italic">Motivation</hi> bei Frick et al. (2021) zu verorten ist. Der Unterschied ist also abgesehen von der Reihenfolge einiger Dimensionen, dass Frick et al. (2021) die Frage nach der Rolle, die die kommunizierende Person einnimmt, aufwirft.
-                    </p>
-                </div>
+                </p>
+                <p>Diese Uneinigkeit ist nicht überraschend. Da die Konkretisierung der Trennung in eine Zeit exponentieller Zunahme des wissenschaftlichen Outputs seit den 1950er Jahren fiel (vgl. Bornmann und Mutz 2015, siehe auch Abb. 1), und zugleich von geografischen und sprachlichen Grenzen moderiert wurde, aber nicht mit diesen identifiziert werden kann, ist ihre Geschichtsschreibung mit außergewöhnlichen Herausforderungen konfrontiert, da sie sich nicht mit Hunderten, sondern eigentlich mit Hunderttausenden von heterogenen Quellen befassen muss, wenn sie Fragen nach der tatsächlichen disziplinären Meta-Struktur beantworten will, anstatt sich mit philosophischen Einzelschicksalen zu befassen.</p>
+                <p>In der vorliegenden Arbeit schlagen wir eine Methode zur Beantwortung solcher grenzüberschreitenden, globalen Fragestellungen vor. Mithilfe eines multilingualen Sprachmodells (PhilroBERTa), welches wir auf philosophischen Texten fein-tunen generieren wir Textvektoren von 288.546 philosophischen Texten aus den vergangenen hundert Jahren. In dem derart aufgespannten Vektorraum identifizieren wir die Achse welche der kontinental-/-analytischen Unterscheidung entspricht. Indem wir die Positionierung der einzelnen Artikel auf dieser Achse erheben, können wir eine erste quantitative Einschätzungen der Topologie der analytisch/kontinentalen-Trennung vorschlagen.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Einbettung des Konzepts #PublicDH in die Kommunikationsmatrix</head>
-                <p style="text-align: left; ">Doch wie lässt sich das zuvor definierte Konzept 
-                    <hi rend="italic">#PublicDH</hi> in die eben aufgestellte Kommunikationsmatrix einbetten? Da ich als einen zentralen Punkt die Einbindung der Öffentlichkeit definiert habe, gehören die Bereiche 
-                    <hi rend="italic">Science-to-Public</hi> und 
-                    <hi rend="italic">Public-to-Science</hi> zu den 
-                    <hi rend="italic">#PublicDH</hi>. Sowohl die verständliche Vermittlung der Forschung als auch der Dialog darüber sind wesentlicher Bestandteil der 
-                    <hi rend="italic">#PublicDH</hi>. Auch ist es relativ selbstverstehend, dass der Bereich 
-                    <hi rend="italic">Science-to-Science</hi> nicht eingeschlossen ist in die 
-                    <hi rend="italic">#PublicDH</hi>. Problematischer ist die Bestimmung, ob der Bereich 
-                    <hi rend="italic">Public-to-Public-Communication</hi> Teil der 
-                    <hi rend="italic">#PublicDH</hi> ist oder nicht. Zwar könnte man argumentieren, dass ebenso wie bei 
-                    <hi rend="italic">Citizen-Science</hi>-Projekten auch in den 
-                    <hi rend="italic">#PublicDH</hi> die Multiplikator:innenrolle der Bürger:innen wichtiger Bestandteil ist, jedoch plädiere ich dafür, den Bereich aus den 
-                    <hi rend="italic">#PublicDH</hi> auszuklammern. Nach der oben aufgestellten Definition sind 
-                    <hi rend="italic">#PublicDH</hi> die Kommunikation von Wissenschaft und Öffentlichkeit über Forschungsinhalte und -methoden der digitalen Geisteswissenschaften. Die Wissenschaft ist also den 
-                    <hi rend="italic">#PublicDH</hi> inhärent. Folglich kann die 
-                    <hi rend="italic">Public-to-Public-Communication</hi> nicht Teil der 
-                    <hi rend="italic">#PublicDH</hi> (zumindest im engen Sinne) sein (vgl. Figure 2). Hierin liegt auch die Unterscheidung zur externen #WissKomm. Die Wissenschaft muss ein Agens sein und bleiben, das ist bei der #WissKomm nicht der Fall. 
+                <head>Datensatz</head>
+                <p>Eine scharfe Umgrenzung des Gebietes der Philosophie, insbesondere eine, welche einem ganzen Jahrhundert und mehreren nationalen Philosophiekulturen, verpflichtet ist, ist ausgesprochen schwierig. Dementsprechend ist für die vorgelegte Arbeit der zugrundeliegende Datensatz so expansiv wie möglich gewählt worden. Der Datensatz enthält alle Texte welche in der JStor Datenbank unter der Rubrik ‘Philosophy’ archiviert worden sind (437.703 Rohtexte), sowie alle Abstracts aus dem 
+                    <hi rend="italic">Web of Science (WOS)</hi>, welche in den Rubriken ‘Philosophy’ und ‘History and Philosophy of Science’ angesiedelt sind, oder aus in der 
+                    <hi rend="italic">PhilPapers-</hi>Journal-Liste verzeichneten Publikationen stammen (188.794 Einträge).
                 </p>
-                <figure>
-                    <graphic n="1002" width="16.002cm" height="5.834416666666667cm" url="Pictures/5bd368b7759a3d1c30ec656c91ffb42a.png" rend="inline"/>
-                    <head>
-                        <hi style="font-size:8pt">Figure 2: Matrix #WissKomm und #PublicDH (Erweiterung von Frick et al. 2021)</hi>
-                    </head>
-                </figure>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Mehrwert #PublicDH</head>
-                <p style="text-align: left; ">Nachdem ich definiert habe, was 
-                    <hi rend="italic">#PublicDH</hi> sind und wie sie sich in die Wissenschaftskommunikationsmatrix einbetten lassen, betrachte ich in diesem Abschnitt, welchen Mehrwert 
-                    <hi rend="italic" xml:space="preserve">#PublicDH </hi>eigentlich bringen. Betrachtet werden dafür unterschiedliche Gruppen: zum einen der Mehrwert für die Wissenschaftler:innen, zum anderen für die Öffentlichkeit.
-                </p>
-                <p style="text-align: left; ">Hierzu sei erst einmal allgemein die Frage nach dem Mehrwert von #WissKomm gestellt. Fröhlich (1994) führen drei potentielle Mehrwerte auf, die jedoch vor allem auf interne #WissKomm zutreffen: Zum einen fördert #WissKomm die Motivation und lässt neue Ideen aufkommen, Mehrfacherfindungen werden vermieden, aber dafür Synergieeffekte erzeugt und schließlich führt die #WissKomm zu einer Form der Qualitätskontrolle und damit auch zur Selektion von Forschung (vgl. Fröhlich 1994, 7). Zudem bezeichnet Fröhlich als Mehrwert von #WissKomm den „errungene[n] Kredit auf wissenschaftliche Glaubwürdigkeit“ (Fröhlich 1994, 8) von Individuen, Gruppen und Institutionen im Bourdieuschen Sinne. </p>
-                <p style="text-align: left; ">Auch für die 
-                    <hi rend="italic">#PublicDH</hi> ist die Qualitätskontrolle sicherlich ein großer Mehrwert. Hinzu kommt die Anwendbarkeit der eigenen Forschung(sergebnisse) auch in alltäglichen Situationen. Durch die Kommunikation über Forschung, Methoden und Ergebnisse wird Wissenschaft nicht nur aus dem Elfenbeinturm gehoben und erfahrbar gemacht, sondern es kommt zu einer Responsion, die die Wissenschaft wiederum bestärken und zu relevanter Forschung von Bedeutung lenken kann. Dadurch kann wiederum Motivation geschaffen und neue Ideen und Ansätze gefunden und ausprobiert werden.
-                </p>
-                <p style="text-align: left; ">So 
-                    <hi rend="italic">#PublicDH</hi> innerhalb der sozialen Medien betrieben werden, können zudem Mehrwerte aus dem speziellen Medium erzeugt werden. "Für Wissenschaftler stehen hier die Vernetzungsmöglichkeiten im Vordergrund. Wissenschaftsjournalisten nutzen sie primär als Rechercheinstrument, Laien zur Informationsbeschaffung." (Weitze und Heckl 2016, 191) Diese Verknüpfung verschiedener Benutzungsgründe eines Mediums können in Verbindung der kommunikativen Interaktionsmöglichkeiten hervorragend für #WissKomm und auch 
-                    <hi rend="italic">#PublicDH</hi> verwendet werden. Für den speziellen Fall von Twitter führen Geyer und Gottschling (2019) an, dass die Wissenschaftskommunikation hier „den fachinternen Dialog befördern und zugleich Erkenntnisse des Fachs der Öffentlichkeit zugänglich machen, über Methoden oder über aktuelle fachwissenschaftliche Diskussionen und Projekte informieren und auf vielfältige Weise den unmittelbaren Austausch mit zumindest Teilen der Gesellschaft erleichtern [kann].“ (Geier und Gottschling, 2019, 284) An wenig anderen Orten als in den sozialen Medien kommen die verschiedenen Akteur:innen zusammen, um ihre jeweiligen Bedürfnisse der Informationsbeschaffung und des Informationsaustauschs zu stillen. 
-                </p>
-                <p style="text-align: left; ">Zusätzlich kann als Mehrwert gesehen werden, dass die eigene Person bekannter wird und dass Wissenschaftskommunikation Spaß macht (vgl. Ziegler/Fischer 2020, 7).</p>
-                <p style="text-align: left; ">All diese Mehrwerte beziehen sich jedoch auf die Wissenschaftler:innen selbst. Es stellt sich jedoch die Frage, ob es 
-                    <hi rend="italic">#PublicDH</hi> auch einen Mehrwert für die Öffentlichkeit erzeugt. Der gesellschaftliche Mehrwert von Wissenschaftskommunikation findet bisher wenig Beachtung in der Forschung (vgl. Siegel/Dunkel/ Terstriep (2021). Eine der raren Untersuchungen, die auch den gesellschaftlichen Mehrwert adressiert, ist die Umfrage von Ziegler/Fischer (2020) zu Zielen von Wissenschaftskommunikation. Als gesellschaftliche Mehrwerte werden eine Steigerung der Demokratiefähigkeit sowie die Stärkung der Wissensgesellschaft genannt (vgl. Ziegler/Fischer 2020, 7). Ziegler/Fischer (2020) führen zudem an, dass ihre Untersuchungen ergeben haben, „dass Politik und Öffentlichkeit in ihren Entscheidungen stärker auf wissenschaftliche Erkenntnisse zurückgreifen“ (Ziegler/Fischer 2020, 15). Sie zeigen, dass „Forschung klar als Triebkraft gesellschaftlicher Weiterentwicklung und Innovation gesehen [wird]“ (Ziegler/Fischer 2020, 16). Des weiteren wird eine Ausbildung der 
-                    <hi rend="italic">scientific literacy</hi> sowie die eigene Mündigkeit durch die Möglichkeit auf wissenschaftliches Wissen zuzugreifen als Mehrwert herausgearbeitet. Nichtsdestotrotz ist hier noch ein weites Feld für weitere Untersuchungen.
+                <p>
+                    <hi rend="color(#000000)">Da die Qualität der Rohdaten mäßig ist und die Fehlerquellen äußerst heterogen sind, verwenden wir einen Bulk-Labelling-Ansatz, bei dem alle Texte nach einem BOW-Modell encodiert werden und mit UMAP (McInnes, Healy, und Melville 2018)</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">kartographiert werden. Cluster verwendbarer Rohdaten werden in einem interaktiven Layout manuell selektiert. Dabei wurden Titeleien, publizierte Bibliographien, besonders ungenügendes OCR und nur partiell oder gar nicht erhaltene Artikel entfernt. JSTOR und WOS-Quellen wurden vereint und überschneidende Artikel angeglichen, was zu einem finalen Datensatz von 288.546 Artikeln führte.</hi>
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Konsequenzen und Handlungsempfehlungen</head>
-                <p style="text-align: left; ">Was für Konsequenzen können nun aus den Mehrwerten der 
-                    <hi rend="italic">#PublicDH</hi> gezogen werden und welche Handlungsempfehlungen für digitale Geisteswissenschaftler:innen ergeben sich daraus? Zum einen sollte erkannt werden, welches Potential in den 
-                    <hi rend="italic">#PublicDH</hi> liegt, und überlegt werden, wie dieses Potential für die eigene Forschung genutzt werden kann.
+                <head>Methode</head>
+                <p>
+                    <hi rend="color(#000000)">Die Modellierung multilingualer Textcorpora stellt seit längerem ein Problem für zahlreiche Bereiche der Digital Humanities dar </hi>
+                    <hi rend="color(#000000)">(Dombrowski 2020). Klassische Methoden, wie BOW-, Topic-, oder Wortvektormodelle stoßen hier an ihre Grenzen, da die von ihnen gelernten Repräsentationen hauptsächlich Unterschiede zwischen Sprachen als salienteste Muster erkennen, und das eigentliche übersprachliche Erkenntnisinteresse verdecken. Der aus diesen Problemen resultierende Fokus auf rein englischsprachiges Quellenmaterial ist unbefriedigend (Pitman und Taylor 2017; Galina Russell 2014). Multilinguale Sprachmodelle, wie z. B. xml-Roberta (Conneau u. a. 2020)</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">sind zwar in der Lage, dieses Problem zu lösen, indem sie deckungsgleiche Vektorräume für verschiedene Sprachen bereitstellen. Ihre Anwendbarkeit auf spezifische Forschungskorpora ist allerdings begrenzt, da die notwendige Wissensrepräsentation über den spezifischen Textgehalt nicht gegeben ist. </hi>
+                    <hi rend="color(#000000)">Das fine-tuning solcher Modelle auf den Forschungsdaten stellt hier allerdings eine Herausforderung dar, weil die dafür zur Verfügung stehenden Architekturen dazu tendieren, in multilingualen Trainingskorpora hauptsächlich Sprachunterschiede zu lernen und damit die Einbettungen ‚auseinanderzubrechen‘.</hi>
                 </p>
-                <p style="text-align: left; ">Der Dialog mit anderen Wissenschaftler:innen, aber auch mit der Öffentlichkeit kann das Weiterkommen in der eigenen Arbeit bestärken. Durch Diskussionen und Fragen können sich über die relevanten Säulen ihrer Forschung bewusster werden und den Kern ihrer Forschung genau durchdenken. Insofern kann die Forschung von 
-                    <hi rend="italic">#PublicDH</hi> nur profitieren.
+                <p>
+                    <hi rend="color(#000000)">Ein kürzlich vorgeschlagener Lösungsansatz, nämlich die automatische Übersetzung des gesamten Textcorpus (vgl. Malaterre und Lareau 2022; siehe auch Böhm, Alexander u. a. 2022)</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">ist vielversprechend für die Erforschung der thematischen Zusammensetzung von Korpora, aber </hi>
+                    <hi rend="color(#000000)">ungeeignet</hi>
+                    <hi rend="color(#000000)"> für Anwendungen in denen die unterschiedlichen </hi>
+                    <hi rend="color(#000000)">Konnotationen</hi>
+                    <hi rend="color(#000000)"> von Wörtern in unterschiedlichen Sprachen und Kontexten eine Rolle spielen. Weiterhin ist die automatisierte Überführung von anderen Sprachen in eine einzige Basissprache – Englisch – mit Blick auf den Wunsch nach einer Wertschätzung verschiedener Sprachkulturen nicht ideal.</hi>
                 </p>
-                <p style="text-align: left; ">Wichtig ist jedoch, die verschiedenen Dimensionen (s. Kapitel 2.2) zu beachten und entsprechend anzuwenden, damit #WissKomm gelingen kann. Es ist keine Schande, sich für einzelne (oder auch alle) Dimensionen Hilfe zu holen und diesbezüglich weiterzubilden. Unterstützung kann hier beispielsweise der Referenzrahmen Wissenschaftskommunikation (Frick und Seltmann, in Vorbereitung) bieten. Es lohnt auch über den wissenschaftlichen Rahmen hinauszublicken und sich in den Bereichen Marketing und Journalismus Hilfestellungen zu holen. Zwar kann es auch mit gut ausgearbeiteten Dimensionen dazu kommen, dass der Dialog nicht funktioniert, aber dies sollte nur selten der Fall sein, insofern ein echtes Interesse des Austauschs besteht. Wichtig ist zudem zu beachten, dass #WissKomm im Allgemeinen und 
-                    <hi rend="italic">#PublicDH</hi> im Besonderen Zeit benötigen. Allerdings ist diese Zeit sinnvoll investiert.
+                <p>
+                    <figure>
+                        <graphic url="Pictures/4ac8a55ab9a573929fbe865495c1fcc1.png"/>
+                        <head>Karte des verwendeten Datensatzes. Jeder der kleinen Datenpunkte entspricht einem von 288.546 Artikeln, angeordnet anhand der Cosinusähnlichkeit ihrer Textvektoren. Einzelne Cluster sind mit (aus Platzgründen) jeweils zwei zufällig ausgewählten Sprachen anhand von mit tfidf-ausgewählten Keywords gelabelt.</head>
+                    </figure>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">In dieser Einreichung folgen wir dementsprechend einem alternativem Ansatz: Wir beginnen damit, zwei zur Erhebung von Textähnlichkeiten geeignete Sprachmodelle – ein </hi>
+                    <hi rend="color(#000000)">englischsprachiges</hi>
+                    <hi rend="color(#000000)"> (</hi>
+                    <hi rend="color(#000000)">paraphrase-distilroberta-base-v2</hi>
+                    <hi rend="color(#000000)">) und ein multilingual vortrainiertes Modell (</hi>
+                    <hi rend="color(#000000)">xlm-roberta-base, beide bereitgestellt von </hi>
+                    <hi rend="color(#000000)">Reimers und Gurevych 2019)</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">auf trainings-samplen aus unserem Beispielkorpus feinzutunen. Für das englischsprachige Modell greifen wir dabei auf GPL </hi>
+                    <hi rend="color(#000000)">(Wang u. a. 2022)</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">zurück, das multilinguale Modell tunen wir mit TSDAE </hi>
+                    <hi rend="color(#000000)">(Wang, Reimers, und Gurevych 2021)</hi>
+                    <hi rend="color(#000000)">, da der für GPL benötigte query-generator nur auf Englisch verfügbar ist. Danach verwenden wir den Ansatz von </hi>
+                    <hi rend="color(#000000)">Reimers und Gurevych (2020</hi>
+                    <hi rend="color(#000000)">) bei dem das englischsprachige Modell als ‘Lehrer’ verwendet wird, um mithilfe eines Korpus von Übersetzungen, die unterschiedlichen Sprachen in dem multilingualen Modell zur Deckung zu bringen. Wie Abb. 2 zeigt, gelingt das tatsächlich: Eine durch </hi>
+                    <hi rend="color(#000000)italic">UMAP</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">(McInnes, Healy, und Melville 2018)</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">auf der Grundlage von Cosinus-Ähnlichkeiten zwischen Texteinbettungen erstellte Karte unseres Korpus weist keine separierten Cluster von Einzelsprachen auf. Gleichzeitig ist das TSDAE-pretraining über die Angleichung der Sprachen hinweg erhalten geblieben: In einem Philosophie-spezifischen triplet-evaluation task, bei dem das Modell mit drei Passagen aus der </hi>
+                    <hi rend="color(#000000)italic">Stanford Encyclopedia of Philosophy </hi>
+                    <hi rend="color(#000000)">konfontiert war, in welchem zwei aus dem selben Artikel, die dritte jedoch aus einem der (mit einem einfachen BOW-Modell ermittelten) zwanzig thematisch ähnlichsten Artikel stammte, verbesserte sich die Fähigkeit, die zusammengehörenden Artikel zu ermitteln, um sieben Prozentpunkte.</hi>
+                </p>
+                <p>Um von unserem Sprachmodell zu Antworten auf unsere Fragen nach der Struktur der analytisch-kontinentalen Kluft zu kommen, encodieren wir zuerst alle Texte in unserem Sample mit dem multilingualen Sprachmodell. </p>
+                <p>Die analytisch-Kontinentale Trennung wird in philosophiehistorischen Werken häufig über die Angabe von paradigmatischen ReferenzautorInnen eingeführt (e.g. "Frege", "Russel", "Moore", Quine, Strawson, … und "Hegel", "Husserl", "Heidegger","Adorno",...). Wir sammeln solche Listen in der Literatur und wählen die am häufigsten genannten Autoren aus. Dann wählen wir zufällig 2000 Beispielartikel aus, welche Autoren aus der einen, aber nicht der anderen Gruppe zitieren, also tendenziell eher aus der analytischen, oder kontinentalen Ecke kommen. Das ist unsere 'seed'-Stichprobe. 
+                    <hi rend="color(#000000)">Einem von Waller und Anderson (2021)</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">inspirierten Verfahren für die Modellierung von Polarisierung in Online-communities folgend, bilden wir den durchschnittlichen Differenzvektor zwischen den Einbettungen dieser 'seed'-</hi>
+                    <hi rend="color(#000000)">A</hi>
+                    <hi rend="color(#000000)">rtikel. Anschließend suchen wir nach 500 Paaren von ähnlichen Artikeln, deren Vektordifferenz diesem Differenzvektor am ähnlichsten ist, d.h. Artikelpaaren, die ein ähnliches Thema behandeln, aber deren Grundeinstellung einmal analytisch, einmal kontinental ist. </hi>
+                    <hi rend="color(#000000)">Ein solches Paar bilden beispielsweise </hi>
+                    <hi rend="color(#000000)">der analytischere Text:</hi>
+                    <hi rend="color(#000000)"> '¿Hay una Filosofia de la Ciencia en el ultimo Wittgenstein?' (Moulines 1989), und die kontinentaler gelagerte Besprechung: 'Von Umgangskörpern, Vertikalspannungen, Responsivität und Musikphilosophie: Ludwig Wittgenstein im Spiegel neuerer Literatur' (Kroß 2012). Auf diese Weise ‚bereinigen‘ wir die ursprünglichen Differenzvektoren von nur thematischen Ungleichgewichten. </hi>
+                </p>
+                <p>Durch die Berechnung der Cosinus-Ähnlichkeit aller Artikelvektoren in dem Datensatz zu den kontinentalen und analytischen Artikeln in den ermittelten Artikelpaaren können wir so einen themenunabhängigen einzigen "Analytizität/Kontinentalität"-Score für jeden Artikel entlang der kontinentalen/analytischen Achse ableiten. Die Dichte-Verteilung aller Artikel auf diesem Score ist in Abb. 3.b dargestellt. </p>
+                <p>Für die Validierung dieser von dem Modell berechneten Scores, haben wir eine Web-Applikation entwickelt, in der NutzerInnen, in unserem Fall PhilosophInnen, den Titel eines Artikel aus unserem Datensatz angezeigt bekommen und entscheiden müssen, ob der Artikel aus der kontinentalen oder analytischen Philosophie stammt. Die Applikation ist sowohl auf Desktop-PCs als auch auf mobilen Endgeräten verfügbar. Die erstellte Applikation wird in den kommenden Monaten gezielt einem multilingualen Fachpublikum zugänglich gemacht werden, sodass die aus dem Sprachmodell generierten Scores empirisch validiert werden können.</p>
+                <p>Um zu messen, wie sich die kontinentale/analytische Spaltung im Laufe der Zeit vergrößert/verkleinert hat, fitten wir eine Serie von verbundenen gaußschen Mischverteilungsmodellen auf den Datensatz. Unter der Annahme, dass der Datensatz tatsächlich durch die Wirkung zweier Prozesse, welche analytische und kontinentale Philosophie generieren, entstanden ist, geben uns diese Modelle die jeweilige zentrale Tendenz und Spannbreite dieser Prozesse an.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/f5b7869205ba6850fda47bce8d8fffda.png"/>
+                        <head>Verteilung von Artikeln entlang des analytisch-Kontinentalen-Gradienten. (a) zeigt die Entwicklung des Gradienten im Verlauf der Zeit. Zentrale Tendenzen und Dezile sind einer Serie von verbundenen zwei-Komponenten Gaußschen Mischmodellen entnommen. Im ersten Drittel wäre allerdings ein ein-Komponenten-Modell vorzuziehen. Vier einzelne Philosophen-Karrieren sind anhand der fortschreitenden zentralen Tendenz der Werte ihrer Artikel auf dem Gradienten eingetragen. Man beachte insbesondere die Karriere Rortys von einem ursprünglich analytischen Philosophen, zu einem der wirkungsvollsten Proponenten kontinentaler Autoren im angloamerikanischen Raum. (b) Zufällig ausgewählte Beispiel-Titel entlang des analytisch-kontinentalen Gradienten, nebst Dichte-Verteilung über das gesamte Sample.</head>
+                    </figure>
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Resümee</head>
-                <p style="text-align: left; ">Der Titel des Beitrags stellt die Frage, ob 
-                    <hi rend="italic">#PublicDH</hi> mehr ist als „nur“ #WissKomm. Hierfür habe ich zuerst definiert, was 
-                    <hi rend="italic">#PublicDH</hi> ist (Kapitel 2). Daraufhin habe ich die Kommunikationsmatrix nach Frick et al. (2021) beschrieben und mit den kommunikativen Schnittstellen von Schumacher (2021) verglichen (Kapitel 3). Einen wesentlichen Beitrag zur Beantwortung der aufgestellten Frage liefert die Einbettung des Konzepts 
-                    <hi rend="italic">#PublicDH</hi> in die Fricksche Kommunikationsmatrix (Kapitel 4). Hierdurch wurde klar, wie der Zusammenhang zwischen #WissKomm und 
-                    <hi rend="italic">#PublicDH</hi> ist und dass beide nicht identisch sind. Das Konzept der 
-                    <hi rend="italic">#PublicDH</hi> ist präziser als nur #WissKomm für digitale Geisteswissenschaften, auch als externe #WissKomm für digitale Geisteswissenschaften. Denn es beinhaltet als wesentlichen Bestandteil den Diskurs zwischen Wissenschaft und Öffentlichkeit. Damit sind beide Seiten Agens und Patiens im Diskurs gleichermaßen. Nach dieser Feststellung habe ich den Mehrwert von 
-                    <hi rend="italic">#PublicDH</hi> beschrieben (Kapitel 5) und schließlich Handlungsempfehlungen daraus abgeleitet (Kapitel 6). Mit diesem Beitrag ist die Forschung zu den 
-                    <hi rend="italic" xml:space="preserve">#PublicDH </hi>natürlich keinesfalls abgeschlossen. Zu betrachten ist einerseits, inwiefern die 
-                    <hi rend="italic">#PublicDH</hi> überhaupt anders funktionieren als Wissenschaftskommunikation anderer Disziplinen und was Abgrenzungskriterien sind. Des weiteren wäre interessant zu untersuchen, inwiefern in den 
-                    <hi rend="italic">#PublicDH</hi> spezifisches (methodologisches) Wissen der DH Anwendung findet. Viele weitere Fragestellungen können sich anschließen.
-                </p>
+                <head>Vorläufige Ergebnisse</head>
+                <p>Die Ergebnisse dieser Modelle sind in Abb. 3.a wiedergegeben. Wir beobachten, dass sich die beiden Verteilungen bis in die späten 1940er Jahre nahezu parallel entwickeln – und in der Tat suggerieren die statistischen Kennzahlen der Modellwahl, dass eine einzige Gauß-Verteilung die Daten in diesem Bereich besser beschreiben würde. Von 1950 bis 1960 beobachten wir hingegen ein scharfes Ausschwenken der analytischen Verteilung, gemeinsam mit einer Verkleinerung der Breite der Verteilung – also eine Konzentration und Konsolidierung analytischer Tendenzen in unserem Korpus, verbunden mit einer asymmetrische Polarisierung, die bis heute weitestgehend konstant zu bestehen scheint.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Diskussion</head>
+                <p>Diese Ergebnisse stehen im scharfen Kontrast zu früheren monolingualen Zitations-Studien, die eine Isoliertheit kontinentaler Philosophie identifiziert hatten (Noichl 2021). Die Erweiterung des Datensatzes um mehrere Sprachen und die damit einhergehende methodologische Komplexität stellt also in jedem Fall eine notwendige Grundlage für weitere Untersuchungen dar. Dabei hat der verwendete Datensatz noch nicht alle Möglichkeiten zu multilingualer Erweiterung ausgeschöpft: Die reichhaltige spanischsprachige OpenAccess-Kultur hat in unserer Untersuchung zum Beispiel noch nicht ausreichend Eingang gefunden. Wenn für die gestellte Fragestellung auch nicht zwingend notwendig, wäre eine Erweiterung über den europäischen Sprachraum hinweg wünschenswert.</p>
             </div>
         </body>
         <back>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold" xml:space="preserve">Bucchi, Massimo und Brian Trench. </hi>2014. Science communication research: Themes and challenges. In: 
-                        <hi rend="italic">Routledge handbook of public communication of science and technology</hi>, hg. von Massimo Bucchi und Brian Trench, 1–14. New York: Routledge 
-                        <ref target="https://doi.org/10.4324/9780203483794">10.4324/9780203483794</ref>.
+                    <bibl><hi rend="bold">Beckermann, Ansgar. </hi>2003. „Muss die Philosophie noch analytischer werden?  (Ist die Analytische Philosophie am Ende?)“. Universität Würzburg.</bibl>
+                    <bibl>
+                        <hi rend="bold">Bieri, Peter.</hi> 2007. „Was bleibt von der analytischen Philosophie?“ 
+                        <hi rend="color(#000000)italic">Deutsche Zeitschrift für Philosophie</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">55 (3). https://doi.org/10.1524/dzph.2007.55.3.333.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold" xml:space="preserve">Bucher, Hans-Jürgen. </hi>2019. The contribution of media studies to the understanding of science communication. In: 
-                        <hi rend="italic">Science Communication</hi>, hg. von Annette Leßmöllmann, Marcelo Dascal, und Thomas Gloning, 51–76. Berlin, Boston: De Gruyter Mouton 
-                        <ref target="https://doi.org/10.1515/9783110255522-003">10.1515/9783110255522-003</ref>.
+                    <bibl>
+                        <hi rend="bold">Böhm, Alexander, Reiners-Selbach, Stefan, Baedke, Jan, Fábregas Tejeda, Alejandro, und Nicholson, Daniel J.</hi> 2022. „What was Theoretical Biology? A Topic-Modelling Analysis of a Multilingual Corpus of Monographs and Journals, 1914-1945“. 
+                        <hi rend="color(#000000)italic">DHd2022: Kulturen des digitalen Gedächtnisses</hi>
+                        <hi rend="color(#000000)">, März. https://doi.org/10.5281/ZENODO.6328143.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold" xml:space="preserve">Franzen, Martina. </hi>2019. Reconfigurations of science communication research in the digital age. In: 
-                        <hi rend="italic">Science Communication</hi>, hg. von Annette Leßmöllmann, Marcelo Dascal und Thomas Gloning, 603–624. Berlin, Boston: De Gruyter Mouton 
-                        <ref target="https://doi.org/10.1515/9783110255522-028">10.1515/9783110255522-028</ref>.
+                    <bibl>
+                        <hi rend="bold">Bornmann, Lutz, und Rüdiger Mutz.</hi> 2015. „Growth Rates of Modern Science: A Bibliometric Analysis Based on the Number of Publications and Cited References“. 
+                        <hi rend="color(#000000)italic">Journal of the Association for Information Science and Technology</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">66 (11): 2215–22. https://doi.org/10.1002/asi.23329.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Frick, Claudia, Lambert Heller, Sabrina Ramünke und Florian Strauß</hi>. 2021. „Bibliotheken als Dienstleisterinnen und Labore der Wissenschaftskommunikation“. 
-                        <hi rend="italic">Zenodo</hi>
-                        <ref target="https://doi.org/10.5281/zenodo.5752401">10.5281/zenodo.5752401</ref>.
+                    <bibl><hi rend="bold">Conneau, Alexis, Kartikay Khandelwal, Naman Goyal, Vishrav Chaudhary, Guillaume Wenzek, Francisco Guzmán, Edouard Grave, Myle Ott, Luke Zettlemoyer, und Veselin Stoyanov.</hi> 2020. „Unsupervised Cross-lingual Representation Learning at Scale“. arXiv. http://arxiv.org/abs/1911.02116.</bibl>
+                    <bibl>
+                        <hi rend="bold">Critchley, Simon.</hi> 1997. „What Is Continental Philosophy?“ 
+                        <hi rend="color(#000000)italic">International Journal of Philosophical Studies</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">5 (3): 347–63. https://doi.org/10.1080/09672559708570862.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Frick, Claudia und Melanie Seltmann</hi>. In Vorbereitung. Referenzrahmen selbständige digitale Wissenschaftskommunikation.
+                    <bibl>
+                        <hi rend="color(#000000)">———</hi>
+                        <hi rend="color(#000000)">. 2001. </hi>
+                        <hi rend="color(#000000)italic">Continental philosophy: A very short introduction</hi>
+                        <hi rend="color(#000000)">. Oxford: Oxford University Press.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Fröhlich, Gerhard</hi>. 1994. „Der (Mehr-)Wert der Wissenschaftskommunikation“. In: 
-                        <hi rend="italic">Mehrwert von Information - Professionalisierung der Informationsarbeit</hi>, hg. von Wolf Rauch, 84–95. Universitätsverlag Konstanz. 
-                        <ref target="http://eprints.rclis.org/15101/">http://eprints.rclis.org/15101/</ref> (zugegriffen: 2. August 2022).
+                    <bibl><hi rend="bold">Dombrowski, uinn.</hi> 2020. „What’s a ‚Word‘: Multilingual DH and the English Default“. McGill, Oktober 15. https://quinndombrowski.com/blog/2020/10/15/whats-word-multilingual-dh-and-english-default/undefined.</bibl>
+                    <bibl>
+                        <hi rend="bold">Galina Russell, Isabel. </hi>2014. „Geographical and linguistic diversity in the Digital Humanities“. 
+                        <hi rend="color(#000000)italic">Literary and Linguistic Computing</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">29 (3): 307–16. https://doi.org/10.1093/llc/fqu005.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Geier, Andrea und Markus Gottschling.</hi> 2019. Wissenschaftskommunikation auf Twitter? Eine Chance für die Geisteswissenschaften! 
-                        <hi rend="italic">Mitteilungen des Deutschen Germanistenverbandes</hi> 66, Nr. 3: 282–291. 
-                        <ref target="https://doi.org/10.14220/mdge.2019.66.3.282">10.14220/mdge.2019.66.3.282</ref>.
+                    <bibl>
+                        <hi rend="bold">Glock, Hans-Johann.</hi> 2008. 
+                        <hi rend="color(#000000)italic">What is analytic philosophy?</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">Cambridge: Cambridge University Press.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Gibbs, Robert</hi>. 2016. „Meeting Our Publics: A Search for the Right Questions in Public Humanities“. 
-                        <hi rend="italic">University of Toronto Quarterly</hi> 85, Nr. 4: 1–5 
-                        <ref target="file:///Users/mese/Documents/Wissenschaft/GuK/konferenzen/DHd2023/Einreichung/10.3138/utq.85.4.1">10.3138/utq.85.4.1</ref>.
+                    <bibl>
+                        <hi rend="bold">Hobbs, Valerie.</hi> 2014. „Accounting for the Great Divide: Features of Clarity in Analytic Philosophy Journal Articles“.
+                        <hi rend="color(#000000)italic">Journal of English for Academic Purposes</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">15 (September): 27–36. https://doi.org/10.1016/j.jeap.2014.05.001.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Heinisch, Barbara</hi>. 2021. „Ein Pfad durch den Begriffsdschungel der Public Humanities“. 
-                        <hi rend="italic">Public Humanities</hi>, hg. von Lisa Kolodzie, Mareike Schumacher, Melanie Seltmann und Daniel Brenn, 
-                        <ref target="https://publicdh.hypotheses.org/136">https://publicdh.hypotheses.org/136</ref> (zugegriffen: 1. August 2022).
+                    <bibl>
+                        <hi rend="bold">Hoche, Hans-Ulrich. </hi>2009. „Bieri über die Zukunft der analytischen Philosophie — Eine unerlässliche Entgegnung“.
+                        <hi rend="color(#000000)italic">Jahrbuch für Recht und Ethik / Annual Review of Law and Ethics</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">17: 415–44.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Jacobson, Matthew Frye</hi>. 2020. „Afterword: The “Doing” of Doing Public Humanities“. In: 
-                        <hi rend="italic">Doing Public Humanities</hi>, hg. von Susan Smulyan. New York: Routledge.
+                    <bibl>
+                        <hi rend="bold">Kroβ, Matthias.</hi> 2012. „Von Umgangskörpern, Vertikalspannungen, Responsivität und Musikphilosophie: Ludwig Wittgenstein im Spiegel neuerer Literatur“. 
+                        <hi rend="color(#000000)italic">Philosophische Rundschau</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">59 (3): 197–216.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Könneker, Carsten</hi>. 2017. „Wissenschaftskommunikation in vernetzten Öffentlichkeiten“. In: 
-                        <hi rend="italic">Forschungsfeld Wissenschaftskommunikation</hi>, hg. von Heinz Bonfadelli, Birte Fähnrich, Corinna Lüthje, Jutta Milde, Markus Rhomberg, und Mike S. Schäfer, 453–476. Wiesbaden: Springer Fachmedien 
-                        <ref target="https://doi.org/10.1007/978-3-658-12898-2_24">10.1007/978-3-658-12898-2_24</ref>.
+                    <bibl>
+                        <hi rend="bold">Malaterre, Christophe, und Francis Lareau.</hi> 2022. „The Early Days of Contemporary Philosophy of Science: Novel Insights from Machine Translation and Topic-Modeling of Non-Parallel Multilingual Corpora“. 
+                        <hi rend="color(#000000)italic">Synthese</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">200 (3): 242. https://doi.org/10.1007/s11229-022-03722-x.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Miller, Elizabeth, Edward Little und Steven High</hi>. 2017. 
-                        <hi rend="italic">Going Public: The Art of Participatory Practice</hi>. Toronto: University of British Columbia Press. 
-                        <ref target="https://press.uchicago.edu/ucp/books/book/distributed/G/bo69987452.html">https://press.uchicago.edu/ucp/books/book/distributed/G/bo69987452.html</ref> (zugegriffen: 1. August 2022).
+                    <bibl>
+                        <hi rend="bold">McInnes, Leland, John Healy, und James Melville.</hi> 2018. „UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction“. 
+                        <hi rend="color(#000000)italic">arXiv:1802.03426 [cs, stat]</hi>
+                        <hi rend="color(#000000)">, Februar. http://arxiv.org/abs/1802.03426.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Schäfer, Mike S., Sabrina H. Kessler und Birte Fähnrich.</hi> 2019. Analyzing science communication through the lens of communication science: Reviewing the empirical evidence. In: 
-                        <hi rend="italic">Science Communication</hi>, hg. von Annette Leßmöllmann, Marcelo Dascal, und Thomas Gloning, 77–104. Berlin, Boston: De Gruyter Mouton 
-                        <ref target="https://doi.org/10.1515/9783110255522-004">10.1515/9783110255522-004</ref>.
+                    <bibl>
+                        <hi rend="bold">Moulines, Ulises.</hi> 1989. „¿Hay una filosofia de la ciencia en el ultimo wittgenstein?“ 
+                        <hi rend="color(#000000)italic">Theoria: An International Journal for Theory, History and Foundations of Science</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">4 (11): 327–42.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Schumacher, Mareike</hi>. 2021. „What’s in it for us? Public Humanities als Herausforderung und Chance für die Digital Humanities“. 
-                        <hi rend="italic">Public Humanities</hi>, hg. von Lisa Kolodzie, Mareike Schumacher, Melanie Seltmann und Daniel Brenn, 
-                        <ref target="https://publicdh.hypotheses.org/314">https://publicdh.hypotheses.org/314</ref> (zugegriffen: 1. August 2022).
+                    <bibl>
+                        <hi rend="bold">Noichl, Maximilian.</hi> 2021. „Modeling the Structure of Recent Philosophy“. 
+                        <hi rend="color(#000000)italic">Synthese</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">198 (6): 5089–5100. https://doi.org/10.1007/s11229-019-02390-8.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold" xml:space="preserve">Siegel, Jessica, Kolja Dunkel und Judith Terstriep. </hi>2021. Hochschulen als Kommunikatoren der Wissenschaft? Eine exemplarische Bestandsaufnahme. 
-                        <hi rend="italic" xml:space="preserve">Forschung Aktuell </hi>06/2021. Institut Arbeit und Technik (IAT), Gelsenkirchen. 
-                        <ref target="http://hdl.handle.net/10419/235877">http://hdl.handle.net/10419/235877</ref>.
+                    <bibl>
+                        <hi rend="bold">Petrovich, Eugenio, und Valerio Buonomo. </hi>2018. „Reconstructing Late Analytic Philosophy. A Quantitative Approach“. 
+                        <hi rend="color(#000000)italic">Philosophical Inquiries</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">6 (1): 151–82. https://doi.org/10.4454/philinq.v6i1.184.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Weitze, Marc-Denis und Wolfgang M. Heckl</hi>. 2016. „Wissenschaftskommunikation in sozialen Netzwerken“. In: 
-                        <hi rend="italic">Wissenschaftskommunikation - Schlüsselideen, Akteure, Fallbeispiele</hi>, hg. von Marc-Denis Weitze und Wolfgang M. Heckl, 189–195. Berlin, Heidelberg: Springer 
-                        <ref target="https://doi.org/10.1007/978-3-662-47843-1_18">10.1007/978-3-662-47843-1_18</ref>.
+                    <bibl>
+                        <hi rend="bold">Pitman, Thea, und Claire Taylor.</hi> 2017. „Where’s the ML in DH? And Where’s the DH in ML? The Relationship between Modern Languages and Digital Humanities, and an Argument for a Critical DHML.“ 
+                        <hi rend="color(#000000)italic">DHQ: Digital Humanities Quarterly</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">11 (1).</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Ziegler, Ricarda und Liliann Fischer.</hi> 2020. 
-                        <hi rend="italic">Ziele von Wissenschaftskommunikation – Eine Analyse der strategischen Ziele relevanter Akteure für die institutionelle Wissenschaftskommunikation in Deutschland, 2014-2020</hi>. Berlin: Wissenschaft im Dialog. 
-                        <ref target="https://www.wissenschaft-im-dialog.de/fileadmin/user_upload/Projekte/Impact_Unit/Dokumente/210701_Ergebnisbericht_Strategische_Ziele_der_Wissenschaftskommunikation.pdf">https://www.wissenschaft-im-dialog.de/fileadmin/user_upload/Projekte/Impact_Unit/Dokumente/210701_Ergebnisbericht_Strategische_Ziele_der_Wissenschaftskommunikation.pdf</ref> (zugegriffen: 9. Dezember 2022).
+                    <bibl><hi rend="bold">Reimers, Nils, und Iryna Gurevych.</hi> 2019. „Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks“. arXiv. http://arxiv.org/abs/1908.10084.</bibl>
+                    <bibl>
+                        <hi rend="color(#000000)">———</hi>
+                        <hi rend="color(#000000)">. 2020. „Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation“. arXiv. http://arxiv.org/abs/2004.09813.</hi>
                     </bibl>
+                    <bibl>
+                        <hi rend="bold">Waller, Isaac, und Ashton Anderson. </hi>2021. „Quantifying Social Organization and Political Polarization in Online Platforms“. 
+                        <hi rend="color(#000000)italic">Nature</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">600 (7888): 264–68. https://doi.org/10.1038/s41586-021-04167-x.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wang, Kexin, Nils Reimers, und Iryna Gurevych.</hi> 2021. „TSDAE: Using Transformer-based Sequential Denoising Auto-Encoderfor Unsupervised Sentence Embedding Learning“. In 
+                        <hi rend="color(#000000)italic">Findings of the Association for Computational Linguistics: EMNLP 2021</hi>
+                        <hi rend="color(#000000)">, 671–88. Punta Cana, Dominican Republic: Association for Computational Linguistics. https://doi.org/10.18653/v1/2021.findings-emnlp.59.</hi>
+                    </bibl>
+                    <bibl>Wang, Kexin, Nandan Thakur, Nils Reimers, und Iryna Gurevych. 2022. „GPL: Generative Pseudo Labeling for Unsupervised Domain Adaptation of Dense Retrieval“. arXiv. http://arxiv.org/abs/2112.07577.</bibl>
                 </listBibl>
             </div>
         </back>

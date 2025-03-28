@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="164_final-SAHLE_Patrick_Wie_wir_lesen_könnten__Streamreader_sub_PS__su" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="142_final-IHDEN_Sarah_Varianz__Ambiguität__Unsicherheit__Methodische_S" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Wie wir lesen könnten. Streamreader<hi rend="subscript">PS</hi> 0.1</title>
+<title>Varianz, Ambiguität, Unsicherheit. Methodische Schlaglichter zur mittelniederdeutschen Grammatikographie</title>
 <author>
 <persName>
-<surname>Sahle</surname>
-<forename>Patrick</forename>
+<surname>Ihden</surname>
+<forename>Sarah</forename>
 </persName>
-<affiliation>Bergische Universität Wuppertal, Deutschland</affiliation>
-<email>sahle@uni-wuppertal.de</email>
+<affiliation>Universität Hamburg, Deutschland</affiliation>
+<email>sarah.ihden@uni-hamburg.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2020-01-03T17:12:00Z</date>
+<date>2015-10-04T22:02:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -46,81 +46,162 @@
 <term>Vortrag</term>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Textualität</term>
-<term>Medialität</term>
-<term>Forschungsprogramm</term>
+<term>Mittelniederdeutsch</term>
+<term>Grammatikographie</term>
+<term>Flexionsmorphologie</term>
+<term>Korpuslinguistik</term>
+<term>Varianz</term>
+<term>Ambiguität</term>
+<term>Unsicherheit</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Gestaltung</term>
-<term>Modellierung</term>
-<term>Theoretisierung</term>
-<term>Veröffentlichung</term>
-<term>Webentwicklung</term>
-<term>Text</term>
+<term>Annotieren</term>
+<term>Bearbeitung</term>
+<term>Daten</term>
+<term>Sprache</term>
+<term>Methoden</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<div rend="DH-Heading1" type="div1">
-<head>Ausgangspunkte</head>
-<p style="text-align:left; ">Man sagt, Sprache sei ein lineares Ereignis in der Zeit. Schrift sei die Fixierung gesprochener Sprache. Text sei essentiell ein Strom sprachlicher Einheiten. Davon halte ich: nichts. Insbesondere ist die Idee, Text sei (letztlich nur) eine Abfolge von Zeichen, Wörtern oder Sätzen, ganz unsinnig. Auch wenn die analytisch ausgerichtete Praxis der Computerlinguistik und großer Teile der Computerphilologie sich aus der höchst produktiven Reduktion des (recodierten) Textes auf einen “stream of tokens” speist, bleibt die Vorstellung eines linearen Textes aus einer allgemeinen, medienhistorisch bewussten Sicht auf Text, Textgenres, Textualität und Textmedialität heraus ganz arm, um nicht zu sagen: schlicht falsch. Denn offensichtlich beruht der große Erfolg der etabliertesten Textmedien (z.B.: das Buch) darauf, dass die Linearität der (gesprochenen) Sprache durch eine Zweidimensionalität der Schriftsprache auf der Schreibfläche 
-                    <hi rend="italic">ersetzt</hi> ist. Text (wie wir ihn kennen) ist nicht so sehr Fixation von gesprochener Sprache, sondern bildet ein eigenes, autonomes Ausdruckssystem, das auf komplexe Medialisierung und auf eine primär humanoide Rezeption, die wir Lesen nennen, ausgerichtet ist. Unser Lesen aber ist Sehen. Ist das visuelle Erfassen von flächigen Bildern, nämlich Wörtern, auf strukturierten Flächen: dem Layout der Seite. Diese Konfiguration des Lesens als Erkennung komplexer Muster und Strukturen ist aber historisch bedingt, ist das Ergebnis einer bestimmten Lesesozialisation und die Konsequenz aus der Anwendung bestimmter Schrift- und Lese<space quantity="0" unit="chars"/><hi rend="italic">medien</hi>, die von der beschriebenen Fläche ausgehen. Sie ist das Ergebnis der Nutzung bestimmter Technologien. Was jedoch würde passieren, wenn wir die (naive) Ursprungsidee des Textes als Zeichenstrom wieder aufnähmen und sie mit aktuellen technischen Möglichkeiten verbänden?
-                </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Der StreamReader </head>
-<p style="text-align:left; ">Es ist ganz einfach: Digitale Technologien medialisieren Daten ad hoc und erlauben eine dynamische, interaktiv zu kontrollierende Darstellung von Inhalten. Natürlich könnten Texte auch als “laufende” Schrift dargestellt werden, die sich als einzelne Zeile auf einer Anzeigefläche von rechts nach links bewegt. Als Strom von Zeichen, die wie gehabt als Wörter und Sätze gelesen werden können. Als Leser möchte man dann einige erste Steuerungsfunktionen haben: Start / Pause, Schneller, Langsamer, Zurück zum Absatzanfang. </p>
-<figure>
-<graphic height="3.095625cm" n="1001" rend="inline" url="164_final-d9f75e7db3c8d124c2e2c96dad6ac78a.png" width="16.51cm"/>
-<head>Abbildung 1: Der Streamreader, Papiermodell für eine klassische Bildschirmanwendung. Das Fließen der Textzeile muss man sich hinzudenken, weil auch dieser Text (das vorliegende Abstract) im Rahmen des Drucks gefangen ist.</head>
-</figure>
-<p style="text-align:left; ">Darstellung und Steuerung hängen im Detail von der gewählten technischen Lösung und medialen Umgebung ab. Einige denkbare Szenarien seien hier angedeutet: (1.) In einem Webbrowser steuert man Bedienungselemente mit der Maus oder Tastatur um den Textlauf zu regeln. (2.) Bei einem Smartphone kippt man das Gerät nach rechts oder links, um die Geschwindigkeit des Stroms zu kontrollieren. Man kippt nach vorne, um zu stoppen. (3.) Bei einer VR-Brille dreht man den Kopf nach rechts um die fließende Textzeile, die gewissermaßen einen halbkreisförmigen Horizont bildet, zu beschleunigen - und nach links, um ihr hinterherzusehen und sie zu verlangsamen. Mit einem längeren Augenzwinkern würde man pausieren. (4.) Ein kleiner Projektor wirft laufende Schrift an die Zimmerdecke, wenn man im Bett liegt. Ein Steuerungsgerät hält man in der Hand. Oder die Zimmerdecke schaut zurück: Beschleunigung, wenn Kopf oder Augen sich nach rechts wenden. Verlangsamung beim Blick nach Links. Die Anwendung wird geschlossen, wenn die Augen lange geschlossen bleiben.</p>
-<p style="text-align:left; ">Das sind naheliegende Anwendungsszenarien mit grundlegenden Funktionen. Schnell fragt man nach weiteren Möglichkeiten, die sich aus den jeweiligen technischen Bedingungen ergeben oder eine Übersetzung aus den gewohnten Funktionalitäten etablierter Textmedien sind. Inhaltsverzeichnisse und Text-Makro-Strukturen wie Abschnitte, Absätze oder Seiteneinheiten sind in kompakte Visualisierungen umzusetzen, die für Überblick, Orientierung und gezieltes Einspringen in den Text sorgen. Eine Lesezeichenfunktion erlaubt das Weiterlesen nach längerer Pause an entsprechender Stelle. Illustrationen, Fußnoten und andere “Textfeatures”, die sich die Zweidimensionalität der Schriftseite zunutze machen, erfordern angepasste Verhaltensweisen in der Stromdarstellung. Hinzu kommen weitere Text-Ausdrucksmittel. Mikrotypografische Phänomene wie Fettdruck, Kursivierung, Höher- bzw. Tieferstellung, Farbe, Font, Schriftgröße können erhalten bleiben, müssen aber auf ihre Funktionalität und veränderte Effekte hin überprüft werden. Andere Gestaltungselemente, wie Zeilenumbrüche oder vertikale Abstände verlangen nach ganz neuen Ausdrucksformen. Das Spacing innerhalb und zwischen Wörtern und Sätzen müsste neu bedacht werden. Dies aber sind nur einige erste Hinweise. Der schriftsprachliche, typografische Ausdrucksraum enthält noch weitere Phänomene, die zu remodellieren wären.</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Prototypenentwicklung</head>
-<p style="text-align:left; ">Dies ist kein Bericht zu einem laufenden oder geplanten Projekt. Es ist der Versuch, einen vielleicht neuen, recht allgemeinen Ansatz auf der fachlich einschlägigen Konferenz vorzustellen und zu diskutieren. In den vergangenen Jahren habe ich mit verschiedenen Kolleginnen und Mitarbeitern begonnen, die technischen Möglichkeiten eines StreamReaders im Rahmen spielerischer Ansätze, ohne jede projektförmige Organisation oder Finanzierung zu bedenken. Dabei ergab sich zunächst der überraschende Befund, dass die gängigen, besonders niederschwelligen Standardtechnologien, wie Web Browser, HTML (mit dem uralten marquee-Element oder den neueren HTML5-Canvas-Möglichkeiten), CSS, Javascript, SVG, VR-Programmbibliotheken die intendierte Anwendung gar nicht gut unterstützen. Bereits hier lässt sich mit einigem technologiekritischen Gewinn herausarbeiten, wie weit unsere medialen Grundvorstellungen von Text als einem an Statik, an hierarchischer Grundstruktur und an der begrenzten Fläche als Präsentationsraum orientierten Informationsobjekt, sich in die Grundkonzepte der Technologien eingeschrieben haben und ein fundamental abweichendes Denken und entsprechende Softwarelösungen behindern. Zu den zuletzt im Rahmen einer Qualifikationsarbeit (Drach 2019) weiter verfolgten Ansätzen gehörte schließlich ein Rückgriff auf primitivste HTML-Browser-Features, die immerhin das Testen einiger Grundfunktionen des StreamReaders ermöglichen und mit ersten Anwendungsreflexionen Anstöße für die weitere Konzeptentwicklung geben können. Sviatoslav Drach (2020) wird diesen Prototyp auf einem Poster zur Konferenz vorstellen. Gemeinsam machen wir uns hier dialogisch ein niederschwelliges “critical prototyping” zunutze, bei dem die Entwicklung von Software zugleich Anstöße für die weitere konzeptionelle Entwicklung und die theoretische Auseinandersetzung mit dem Gegenstand ist.</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Worum es hier (nicht) geht </head>
-<p style="text-align:left; ">Disclaimer wegen der absehbaren Reflexe: Es geht hier 
-                    <hi rend="italic">nicht</hi> darum, eine neue, bessere Lesetechnologie zu entwickeln, die das gedruckte Buch oder den digital flächig dargestellten Text ablösen könnte. Es ist klar und offensichtlich, dass diese Form der Textdarstellung und Textrezeption erhebliche Schwierigkeiten und Nachteile mit sich bringen, die vielleicht nicht nur unserem gelernten Leseverhalten geschuldet sind, sondern auch auf anthropologische Konstanten (z.B. unserer visuellen Wahrnehmung) zurückgehen. Die vielen Vorteile flächiger Textdarstellung brauchen innerhalb dieses Ansatzes auch nicht erneut diskutiert zu werden. Sie werden durch die Demonstration abweichender Formen ohnehin augenfällig und sind damit ein Abfallprodukt dieser Form praktischer Auseinandersetzung. Es sollen ausdrücklich nicht Textdarstellung oder Lesen 
-                    <hi rend="italic">verbessert</hi> oder optimiert werden, sondern mögliche Darstellungsoptionen und bisherige Lesepraktiken 
-                    <hi rend="italic">kontrastiert</hi> werden - um neue Einblicke in den Phänomenbereich Textualität und alternative Leseformen zu gewinnen. Es geht auch nicht um die Effizienz des Lesens (z.B. durch Schnellleseverfahren) oder gar der Informationsaufnahme aus Texten. Im Gegenteil: Der Diskurs um das Lesen digitaler Texte (das es im Übrigen nicht gibt; es gibt nur das Lesen verschiedener digital angetriebener Textmedien) dreht sich häufig um den Verlust an Konzentration und tiefergehender Beschäftigung mit Texten. Dagegen ist es einer der vielen Aspekte des StreamReaders, dem (erzwungenen?) langsamen und damit kontemplativen Lesen vielleicht eine neue Möglichkeit zu geben. Insofern schließt sich der StreamReader auch nicht historisch, technisch oder konzeptionell an bestehende Formen von Textströmen an, wie man sie von anderen Übermittlungssystemen (Morse, Fernschreiber), Präsentationsformen (Werbebannern) oder Bildmedien (Newstickern) kennt und die auf ganz andere Textsorten und Nutzungssituationen abziel(t)en. Bisher ist auf Studien zur Nutzung typischer Anwendungen des StreamReaders im Sinne einer Leseforschung ganz verzichtet worden, denn Effizienz oder Ergonomie stehen, wie gesagt, zunächst nicht im Mittelpunkt des Interesses. Stattdessen geht es eher um eine medien- und technikkritische Untersuchung zu Textualität als Medialität: Was sind in den verschiedenen Medien und Texttechnologien die Ausdrucksmöglichkeiten oder Ausdrucksräume von Schrift und wie verhalten sie sich in Übersetzungssituationen zwischen traditionellen und neuen Medien? Hinzu kommt die Frage nach den Genres: wie verhalten sich verschiedene Textsorten in den Textmedien? Welche Medien unterstützen oder behindern welche Textsorten? Welche lassen sich besser oder schlechter von einem anderen Medium adaptieren? Jenseits dieser auf Experiment und Prototyping aufbauenden deskriptiv-analytischen Betrachtungsweise geht der Blick nach vorne: Wenn Text auf eine laufende Zeile reduziert wird, dann schafft das vorgestellte neue Textmedium ganz neue Ausdrucks<space quantity="0" unit="chars"/><hi rend="italic">räume</hi> im engeren Sinne. Reduktion 
-                    <hi rend="italic">und</hi> Expansion! Es entstehen plötzlich Spielräume, in denen experimentell neue Formen der Textpräsentation entstehen können. Unter Erweiterung der einfachen Einzeiligkeit können verstärkt Kontexte und hypertextuelle Verbindungen sichtbar gemacht, Texte stellennah illustriert oder annotiert und mehrfache oder synoptische, aufeinander bezogene Schriftströme realisiert werden. 
-                </p>
-<figure>
-<graphic height="3.1485416666666666cm" n="1002" rend="inline" url="164_final-10c38abbd373c4ed96b55121050bcbba.png" width="16.51cm"/>
-<head>Abbildung 2: Mehrfacher Schriftstrom, hier: mehrfache Übersetzungen.</head>
-</figure>
-<figure>
-<graphic height="4.841875cm" n="1003" rend="inline" url="164_final-b2bbaa6bb93994ed40f509ca8a60f594.png" width="16.51cm"/>
-<head>Abbildung 3: Mehrfacher Schriftstrom, hier: variante Überlieferung mit Normalisierungsstufen.</head>
-</figure>
-<p style="text-align:left; ">Erste Experimente zur Darstellung von varianten Fassungen, Normalisierungsschritten in der Transkription oder Visualisierung der semantischen oder Rhythmusstruktur in den Nebensatzkonstruktionen (z.B. in literarischen Werken wie bei Thomas Bernhard) deuten bereits an, dass sich hier jenseits der übersetzenden Reproduktion auch erhebliche produktive und innovative Kräfte entfalten könnten. Denn, Aphorismussektion: Alle neuen Medien müssen nicht nur ihre Formen erst noch finden, sondern auch ihre spezifischen Funktionen.</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Digital Humanities?</head>
-<p style="text-align:left; ">Dies ist ein sehr offener, explorativer Ansatz. Er speist sich aus keiner Fachdisziplin. Er nimmt seinen Ausgang nicht von bestimmten sprach- oder literaturwissenschaftlichen, anthropologischen, medienwissenschaftlichen oder historischen Fragestellungen. Es ist nur Digital Humanities: Ausgehend von dem allgemeinen Interesse an “Text” und der Reflexion unserer historischen und gegenwärtigen medialen, technologischen und Informationsumwelt soll über experimentelle Anwendungen nachgedacht werden, die uns helfen, durch den Kontrast mit bestehenden Lösungen ein besseres Verständnis dieser Umwelt zu entwickeln und zugleich neue Möglichkeiten auszuloten. Wir kennen die historischen Textmedien, wir haben elektronische Texte entwickelt, die Diskussion um Hypertext und Multimedia ist geführt. Gegenwärtig sehen wir die gegensätzlichen paradigmatischen Strömungen von informationsorientiertem Text Mining und KI auf Basis linearisierter Texte und einer an Komplexität und skripto- bzw. typografischen Details interessierten “material philology” und medienbewussten Textologie. Im vorliegenden Fall dient ein (simulierter, kontrafaktischer) Medienübergang einmal mehr der Reflexion und Modellbildung zu Textualität, textlichen Informationsstrukturen und Ausdrucksformen als Kerngegenstände der Geisteswissenschaften. Überprüft werden dabei auch die Übertragbarkeit und Übersetzbarkeit textueller Information und ihrer Codierungen und damit Effekte, Möglichkeiten und Grenzen der eben genannten Paradigmen von Text-Informativität und Text-Medialität. Die Angebote neuer Technologien sind von den Digital Humanities immer wieder auf ihre Einsatzoptionen hin zu prüfen. Ob sich daraus neue Lösungen und nachhaltig neue Anwendungen ergeben ist zunächst nebensächlich. Grundsätzlich aber gilt, dass Innovation häufig nicht aus dem Versuch entsteht, ein bestehendes Problem zu lösen, sondern aus dem spielerischen Ausloten der Affordanz neu gegebener technischer Rahmenbedingungen. Let’s play!</p>
-</div>
+<p>Eine besondere Herausforderung in der Grammatikographie historischer Sprachstufen des Deutschen stellt der Umgang mit Varianz, Ambiguitäten und Unsicherheiten dar. Hinzu kommt die Gefahr, dass durch die den Analysen für die Grammatikschreibung zugrunde gelegten Daten, insbesondere grammatische Annotationen in Korpora, die Ergebnisse dieser Analysen gewissermaßen vorgeprägt sind. Diese Besonderheiten sind auch bei der geplanten Bearbeitung der Flexionsmorphologie als Teil einer neuen wissenschaftlichen mittelniederdeutschen Grammatik zu berücksichtigen. Im Vortrag sollen die Methoden und Grundsätze dieser neuen Grammatik vorgestellt werden, wobei ein Fokus auf der Variationssensitivität und dem Korpusbezug liegt. Zudem soll beschrieben und anhand erster Analysen veranschaulicht werden, wie in der Erforschung der mittelniederdeutschen Flexionsmorphologie dem potentiellen Risiko einer zirkulären Darstellung begegnet wird und wie auf der Basis von Daten, die möglichst oberflächenbezogen annotiert und in denen Ambiguitäten ausgezeichnet sind, flexionsmorphologische Variation ermittelt und vor dem Hintergrund potentieller außer- und innersprachlicher Parameter beschrieben werden kann.</p>
+<p>Eine umfassende wissenschaftliche Grammatik des Mittelniederdeutschen, die modernen Ansprüchen genügt, stellt ein dringendes Forschungsdesiderat dar. Die gegenwärtig sowohl für die Forschung als auch die akademische Lehre herangezogenen Grammatiken von Colliander (1912), Lasch (1914, / 
+                <hi rend="superscript">2</hi>1974 / Nachdruck 2011), Lübben (1882) und Sarauw (1921–1924) sind methodisch veraltet. Ihrer Entstehungszeit entsprechend folgen sie einem junggrammatischen Paradigma und liefern Darstellungen der mittelniederdeutschen Grammatik mit einem deutlichen Fokus auf der Laut- und Formenlehre. Andere Sprachebenen wie Satz und Text bleiben weitestgehend unberücksichtigt. Auch die unflektierbaren Wortarten werden, wenn überhaupt, nur am Rand betrachtet wie bei Lübben (1882: 120–132) und Sarauw (1924: 229–234).
+            </p>
+<p>In einer neuen wissenschaftlichen Grammatik des Mittelniederdeutschen sollen diese Lücken geschlossen und dabei moderne Methoden der Grammatikschreibung herangezogen werden. Eine wesentliche methodische Anforderung liegt im Korpusbezug. Eine umfassende Beschreibung der tatsächlichen grammatischen Gegebenheiten im Mittelniederdeutschen benötigt ein umfangreiches empirisches Fundament. Hierfür werden die Daten des strukturierten und balancierten Referenzkorpus Mittelniederdeutsch / Niederrheinisch (1200–1650) (kurz: ReN) genutzt, das seit 2013 mit Unterstützung der DFG an den Universitäten Hamburg und Münster entstanden ist und dessen finale Korpusversion im September 2019 online veröffentlicht wird. Das ReN ist nach verschiedenen Zeit- und Sprachräumen sowie Feldern der Schriftlichkeit strukturiert (vgl. Barteld et al. 2017: 227f., Peters / Nagel 2014: 167–169). Zudem können die Texte des Korpus differenziert nach umfangreichen Metadaten, unter anderem zur Kommunikationssituation, zur äußeren Form oder zum Genre (z.B. Prosa vs. Vers), betrachtet werden.</p>
+<p>Das nach verschiedenen Parametern strukturierte Korpus als Basis der Analysen ermöglicht die Umsetzung zweier weiterer methodischer Prinzipien der neuen Grammatik: Die Variationssensitivität und die diasystematische Differenziertheit, die in neueren grammatischen Darstellungen zunehmend als wesentliche Parameter erkannt worden sind. So spielt sprachliche Variation unter anderem in neueren grammatischen Studien zur Gegenwartssprache eine Rolle, bspw. in der Variantengrammatik des Standarddeutschen (Dürscheidt / Elspaß / Ziegler 2018) und in der Korpus-Grammatik des IDS (http://www1.ids-mannheim.de/gra/projekte/korpusgrammatik.html?L=0). Wie die Abbildung von zeitlich und räumlich sowie durch die Überlieferungsform bedingter Variation auf der Basis eines umfangreichen Korpus für eine historische Grammatik erfolgen kann, lässt sich anhand der Neuerarbeitung der Mittelhochdeutschen Grammatik beobachten (vgl. Herbers 2014), von der die Bände zur Wortbildung (Klein u. a. 2009) sowie zur Flexionsmorphologie (Klein u. a. 2018) publiziert sind. Auch im Konzept der geplanten Neuerarbeitung der Mittelniederdeutschen Grammatik stehen Korpusbezug und Variation im Mittelpunkt.</p>
+<p>Die geplante Gesamtgrammatik des Mittelniederdeutschen soll mit Bezug auf die zu berücksichtigenden Sprachebenen (Graphemik, Phonologie, Lexemklassifizierung, Lexembildung und Flexion, Syntax und Text inklusive Pragmatik) in mehreren Schritten bearbeitet werden. In einem ersten Zugriff steht die Flexionsmorphologie im Fokus. Gerade für flexionsmorphologische Analysen bildet das ReN mit seinen Annotationen zu Wortart (PoS), Flexionsmorphologie und Lemma die ideale Basis. Von den insgesamt ca. 2,3 Mio. Token der finalen Korpusversion ReN 1.0 (http://hdl.handle.net/11022/0000-0007-D829-8) sind knapp 1,4 Mio. Token grammatisch annotiert. Damit ist eine unabdingbare Voraussetzung für eine korpusbezogene variationssensitive Grammatik erfüllt. Die Annotation der Wortarten und der Flexionsmorphologie ist mit dem im ReN entwickelten HiNTS (Historisches-Niederdeutsch-Tagset) erfolgt, das auf dem HiTS (Historisches Tagset; vgl. Dipper et al. 2013) und dem STTS (Stuttgart-Tübingen-Tagset; vgl. Schiller et al. 1999) basiert. Zusätzlich wurde auf der Basis einer digitalen Lemmaliste für das Mittelniederdeutsche eine Lemmatisierung vorgenommen (vgl. Kleymann et al. 2015).</p>
+<p>Eine zentrale Anforderung an die neue mittelniederdeutsche Grammatik, die bereits in den grammatischen Annotationen des ReN berücksichtigt wurde, stellt die Vermeidung von Vorgriffen und bestimmten Interpretationen, welche die Ergebnisse entscheidend beeinflussen, dar. Gerade in einer korpusbasierten Grammatikschreibung ist die Auseinandersetzung mit der Frage, inwieweit die genutzten Daten und deren Annotation das Ergebnis der Analyse vorprägen, von besonderer Bedeutung. So basiert bspw. die Festsetzung der PoS-Tags im Tagset auf Vorannahmen zur Differenzierung zwischen bestimmten Wortarten in der jeweiligen Sprache. Auch im Bereich der mittelniederdeutschen Flexionsmorphologie können durch Interpretationen der Annotatorinnen und Annotatoren, z.B. aufgrund vorhandener grammatischer Darstellungen oder durch Übertragungen aus dem Gegenwartsdeutschen, die Ergebnisse vorweggenommen werden. Gleichzeitig jedoch kann keine grammatische Annotation absolut frei von bestimmten Annahmen über die Grammatik der jeweiligen Sprache erfolgen. Wie gezeigt werden soll, wird im ReN daher eine Balance zwischen notwendigen und vermeidbaren Vorannahmen sowie zwischen Oberflächenbezogenheit und Einbeziehung des sprachlichen Kontextes angestrebt. So gilt im Bereich der Valenz von Verben beispielweise die Regel, dass für das Subjekt im Satz der Nominativ annotiert werden kann (auch wenn der Beleg rein formal z.B. nach Nominativ oder Akkusativ flektiert ist), sofern keine eindeutig davon abweichende Form vorliegt. Eine Unterscheidung zwischen Genitiv-, Dativ- und Akkusativobjekt hingegen kann lediglich auf der Basis einer eindeutigen Flexionsform erfolgen. Da bislang kein Valenzwörterbuch des Mittelniederdeutschen existiert, ist bei ambigen Formen eine Auflösung nicht möglich, ohne dadurch wiederum die Ergebnisse zur Valenz mittelniederdeutscher Verben vorwegzunehmen.</p>
+<p>Im Vortrag soll erläutert werden, wie der beschriebenen Gefahr einer zirkulären Darstellung begegnet werden kann, um eine oberflächenbezogene grammatische Analyse zu ermöglichen. Im ReN wurde mit dem HiNTS die Auszeichnung von Ambiguitäten auf flexionsmorphologischer Ebene mithilfe von Portmanteau-Tags (Leech et al. 1994) vorgenommen (vgl. Barteld et al. 2014).<ref n="1" target="ftn1"/> So erhält bspw. eine Form wie 
+                <hi rend="italic">mî</hi> (Personalpronomen), die sowohl Dativ als auch Akkusativ repräsentieren kann und bei der aufgrund des vorliegenden Kontextes keine Disambiguierung möglich ist, das Tag „Dat-Akk“. Der Vorteil eines solchen Tags im Vergleich z.B. zum Asterisk, der für ambige Formen im STTS genutzt wird, besteht darin, dass die konkrete Überschneidung – hier zwischen Dativ und Akkusativ – abgebildet wird und weitere Alternativen ausgeschlossen werden. Statt die bestehenden Ambiguitäten auf der Basis bestimmter Vorannahmen aufzulösen und auf diese Weise mit den Annotationen dieses Vorwissen zu bestätigen, werden mehrdeutige Formen als solche gekennzeichnet. 
+            </p>
+<p>Bei einem solchen Vorgehen ist kritisch zu hinterfragen, ob durch die Vergabe unterspezifizierter Tags die Annotationsentscheidung unnötigerweise auf einen späteren Zeitpunkt verlagert wird. Sollten nämlich bestimmte zunächst ausgewiesene Ambiguitäten nachträglich aufgelöst werden, erfordert dies eine erneute Sichtung der Belege, was insgesamt einen Mehraufwand bedeutet. Diese spätere Analyse der Sprachdaten mit potentieller Neubewertung der grammatischen Annotation ist jedoch unabdingbar, um die oben erwähnte Zirkularität zu vermeiden. Kann bspw. auf Basis der ReN-Daten die Valenz eines Verbs im Mittelniederdeutschen (z.B. 
+                <hi rend="italic">rôpen</hi>) mit Hilfe der Fälle nicht-ambiger Kasusannotation bei Objekten dieses Verbs (z.B. 
+                <hi rend="italic">he rep dat kint</hi>
+<hi rend="subscript">Neut.Akk.S</hi>) eindeutig bestimmt werden, wäre bei Objekten mit ambiger Form (z.B. 
+                <hi rend="italic">he rep den sone</hi>
+<hi rend="subscript">Masc.Dat-Akk.Sg</hi>) eine Auflösung der Ambiguität zugunsten des ermittelten Objektkasus möglich (z.B. 
+                <hi rend="italic">he rep den sone</hi>
+<hi rend="subscript">[Masc.Akk.Sg]</hi>). Während der Annotation im Rahmen der Korpuserstellung sind diese Informationen noch nicht vorhanden, sodass eine Disambiguierung ohne Vorannahmen nicht möglich ist. Neben diese Fälle, in denen die Auszeichnung der Ambiguität im ersten Schritt notwendig ist, um die Ergebnisse nicht vorzuprägen, eventuell aber in einem zweiten Schritt anhand neuer korpusbasierter Erkenntnisse eine nachträgliche Disambiguierung erfolgt, treten solche Fälle, in denen auch zu einem späteren Zeitpunkt keinerlei Auflösung der Ambiguität möglich ist. Dies betrifft unter anderem die Ebene des Genus, wo formal bestehende Ambiguitäten (z.B. 
+                <hi rend="italic">dit is en spegel</hi>
+<hi rend="italic subscript">Masc-Neut.Nom.Sg</hi>) ausschließlich durch den sprachlichen Kontext (z.B. durch einen eindeutig nach einem Genus markierten Determinierer) aufgelöst werden können, was bereits in der Annotation im ReN berücksichtigt wird. Diese Beispiele belegen, dass durch die Vergabe von Portmanteau-Tags auf flexionsmorphologischer Ebene Entscheidungen zugunsten eines Wertes vermieden werden, die entweder gar nicht oder zum Zeitpunkt der Korpuserstellung noch nicht getroffen werden können, und dass die Auszeichnung von Ambiguitäten für eine möglichst vorurteilsfreie Annotation der mittelniederdeutschen Sprachdaten zwingend notwendig ist.
+            </p>
+<p>Um die Anwendbarkeit dieses Verfahrens zu evaluieren und potentielle Vor- und Nachteile der Auszeichnung von Ambiguitäten durch Portmanteau-Tags im ReN gegenüber der Annotation mithilfe des Asteriks wie im STTS auszumachen, wurden Inter-Annotator-Agreement-Experimente durchgeführt (vgl. Barteld et al. 2018: 3943). Diese ergaben unter anderem, dass der Wert der Übereinstimmung zwischen den Annotierenden auf flexionsmorphologischer Ebene unter Verwendung des HiNTS ähnlich hoch ausfällt, wie wenn statt der Portmanteau-Tags solche mit Asterisk gesetzt würden. Die vergleichsweise höhere Zahl an potentiellen Tags im HiNTS führt somit nicht zu einer geringeren Qualität der Annotation. Dabei bieten jedoch die Portmanteau-Tags den entscheidenden Vorteil, eine bestehende Ambiguität in konkreter Form abzubilden.</p>
+<p>Für eine variationssensitive Analyse der mittelniederdeutschen Flexionsmorphologie können solche Auszeichnungen von Ambiguitäten auf unterschiedlichen Ebenen genutzt werden, bspw. um den Gebrauch von Substantiven in verschiedenen Genera zu untersuchen. Hierfür können in einem ersten Schritt all diejenigen Lemmata ermittelt werden, bei denen eine Genusambiguität annotiert ist. Anschließend kann für spezifische Lemmata geprüft werden, wo sie in einer eindeutigen Genusform vorkommen. Disambiguierung wird hier durch den sprachlichen Kontext erreicht, z.B. durch einen eindeutig nach einem Genus flektierten Determinierer. In Analysen exemplarisch betrachteter Substantive wie „lîf“ und „dê<hi rend="superscript">i</hi>l“ wird eine auf der Ebene des Genus zum Teil sehr unterschiedlich stark ausgeprägte Variation sichtbar.
+<!-- <hi style="font-family:Cambria Math">ⁱ</hi>l“ wird eine auf der Ebene des Genus zum Teil sehr unterschiedlich stark ausgeprägte Variation sichtbar. -->
+Während bei „dê<hi rend="superscript">i</hi>l“ der Anteil der als Maskulinum und der als Neutrum annotierten Belege annähernd ähnlich hoch ausfällt, dominieren bei „lîf“ deutlich die als Neutrum annotierten Belege. Zudem zeigen sich vereinzelt je nach Text und Sprachraum unterschiedliche Verteilungen.
+<!-- <hi style="font-family:Cambria Math">ⁱ</hi>l“ der Anteil der als Maskulinum und der als Neutrum annotierten Belege annähernd ähnlich hoch ausfällt, dominieren bei „lîf“ deutlich die als Neutrum annotierten Belege. Zudem zeigen sich vereinzelt je nach Text und Sprachraum unterschiedliche Verteilungen. -->
+</p>
+<p>Ein Beispiel für die erwähnte Ausbalancierung von Vorwissen einerseits und reiner Oberflächenbezogenheit andererseits findet sich bei der Rektion von Präpositionen. Ausgehend von den Angaben im Mittelniederdeutschen Handwörterbuch von Lasch et al. (1956ff.) wurde bei der Annotation eine Eingrenzung auf bestimmte Kasus vorgenommen, z.B. bei 
+<hi rend="italic">in</hi> auf den Dativ und den Akkusativ. Gleichzeitig aber wurde eine Einbeziehung des semantischen Kontextes, z.B. bei 
+<hi rend="italic">in</hi> die Annotation von Dativ bei lokaler und Akkusativ bei direktionaler Semantik, vermieden und stattdessen die Ambiguität mithilfe von Portmanteau-Tags abgebildet. Bei Belegen, die eine von den Angaben im Wörterbuch abweichende eindeutige Form aufweisen, wurde eine Annotation zugunsten der tatsächlich vorliegenden Form vorgenommen. Auf diese Weise kann z.B. an bestimmten Stellen der sich im Niederdeutschen vollziehende Kasussynkretismus der Substantive, bei denen Dativ und Akkusativ zu einem obliquen Kasus auf der Basis der Akkusativform zusammenfallen, beobachtet und untersucht werden. Erste Analysen, die im Vortrag vorgestellt werden sollen, liefern im ReN mehrere Belege, in denen auf die Präpositionen 
+<hi rend="italic">nâ</hi> und 
+<hi rend="italic">tô,</hi> die im Mittelniederdeutschen überwiegend den Dativ regieren, Nominalphrasen im Akkusativ als Teil der Präpositionalphrase folgen
+(<hi rend="italic">nâ</hi>: 22 Belege, <hi rend="italic">tô</hi>: 14 Belege). Hierbei zeigt sich eine deutliche Konzentration auf Texte des 16. und 17. Jahrhunderts. Dies stützt die Hypothese, dass im späteren Mittelniederdeutschen der Kasuszusammenfall einsetzt. Zudem zeigt sich ein starkes Gewicht der Belege auf einer Quelle, der Seekarte von 1577, das durch den Inhalt des Textes, der zahlreiche Richtungsangaben enthält, zu erklären ist. Bei 
+<hi rend="italic">nâ</hi> fällt außerdem auf, dass es mit Akkusativ vereinzelt auch in früheren Texten aus dem niederrheinischen Sprachraum vorkommt, was auf eine gewisse diatopische Variation hindeutet.
+            </p>
+<p style="text-align:left; ">Wie anhand der Ergebnisse erster Analysen gezeigt wird, kann dank der Oberflächenbasiertheit und der Auszeichnung von Ambiguitäten im ReN Variation erfasst und vor dem Hintergrund potentieller außer- und innersprachlicher Parameter beschrieben werden. Auf diese Weise leistet die geplante korpuslinguistisch basierte variationssensitive Grammatik einen entscheidenden Beitrag für die moderne mittelniederdeutsche Grammatikographie.</p>
 </body>
 <back>
-<div type="bibliogr">
+<div type="notes"><note n="1" rend="footnote text" xml:id="ftn1">
+Die Herausforderung ambiger bzw. unterspezifizierter Einheiten für linguistische Annotationen wurde zunächst vor allem für die semantische und syntaktische Ebene diskutiert (s. z.B. Bunt 2007, Kountz et al. 2007). Auch für die Auszeichnung von grammatischer Ambiguität in historischen Sprachdaten wurden bereits Vorschläge gemacht (s. z.B. Pauly et al. 2012, Dipper et al. 2013), die sich jedoch auf die Annotation von Wortarten und syntaktischen Strukturen konzentrieren und flexionsmorphologische Mehrdeutigkeiten nicht berühren.
+</note></div><div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
-<bibl style="text-align:left; ">Die Überlegungen zum StreamReader befinden sich hinsichtlich der Literaturbasis zugleich in einem Ozean und einer Wüste. Die Forschungen zu Schrift, Text, Textualität, Textmedien, Texttechnologien und Lesen sind uferlos, leisten aber nur sehr mittelbar Beiträge zum hier vorgestellten Ansatz. Gering an Zahl sind Texte zu “laufender Schrift” oder gar ihrer Reflexion. Mit dem Konzept und Anwendungsbereich des StreamReaders haben diese außerdem nichts zu tun, da sie z.B. niemals auf klassische literarische Genres, “Langtexte” oder Multitexte zielen. Eine sehr allgemeine Literaturbasis ergäbe sich allenfalls in der Diskussion um „kritisches Prototyping“ in den Digital Humanities einerseits und literaturwissenschaftlichen Debatten z.B. um den Sprachfluss bei Autoren wie Thomas Bernhard. Beides wird hier aber bislang eher spielerisch aufgenommen und nicht gezielt als Ausgangspunkte genommen. Der StreamReader hat insofern zwar mit sehr vielem zu tun, baut aber auf nichts auf - außer dem allgemeinen historischen Hintergrund, dem aktuellen technischen System und der Neugier auf abweichende Ansätze. Er ist keine Fortführung anderer Arbeiten. Tatsächlich entspringt er letztlich einem Gespräch mit Tobias Kraft, das im April 2016 an der Berlin-Brandenburgischen Akademie der Wissenschaften in Berlin stattgefunden hat und sich um Textualität, Medialität und Technizität drehte. Der unmittelbare, bibliografisch manifestierbare Bezug, die (allerdings seitwärts, nicht rückwärts) genutzte Literatur reduziert sich damit auf:</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">Drach, Sviatoslav</hi>
-  <hi rend="italic" xml:space="preserve"> (2019): Neue Leseformen in digitalen Umgebungen - StreamReader</hi><space quantity="0" unit="chars"/><hi rend="subscript">SD</hi>
-  <hi rend="italic" xml:space="preserve"> 0.1 als Webanwendung für Text als Zeichenstrom, Masterarbeit Universität zu Köln.</hi>
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">Drach, Sviatoslav</hi> (2020): 
-  <hi rend="italic">StreamReader</hi><space quantity="0" unit="chars"/><hi rend="subscript">SD</hi>
-  <hi rend="italic" xml:space="preserve"> 0.2 - Eine prototypische Webanwendung für das Lesen von Texten als Zeichenstrom</hi>. Book of Abstracts zur DHd2020, Paderborn. 
-</bibl>
+<bibl>
+<hi rend="bold">Barteld Fabian / Ihden, Sarah / Schröder, Ingrid / Zinsmeister, Heike</hi> (2014): “Annotating descriptively incomplete language phenomena”, in: 
+                        <hi rend="italic">Proceedings of LAW VIII – The 8th Linguistic Annotation Workshop</hi> 99–104 http://www.aclweb.org/anthology/W14-4915 [letzter Zugriff 09. Dezember 2019].
+                    </bibl>
+<bibl>
+<hi rend="bold">Barteld, Fabian / Dreessen, Katharina / Ihden, Sarah / Schröder, Ingrid</hi> (2017): „Das Referenzkorpus Mittelniederdeutsch / Niederrheinisch (1200–1650) – Korpusdesign, Korpuserstellung und Korpusnutzung“ in: Becker, Anja / Hausmann, Albrecht (eds.): 
+                        <hi rend="italic">Mittelniederdeutsche Literatur. Mitteilungen des deutschen Germanistenverbandes</hi> 64/3: 226–241.
+                    </bibl>
+<bibl>
+<hi rend="bold">Barteld, Fabian / Ihden, Sarah / Dreessen, Katharina / Schröder, Ingrid</hi> (2018): “HiNTS: A Tagset for Middle Low German”, in: 
+                        <hi rend="italic">Proceedings of the Eleventh International Conference on Language Resources and Evaluation (</hi>
+<hi rend="caps">
+<hi rend="italic">LREC</hi>
+</hi>
+<hi rend="italic" xml:space="preserve"> 2018)</hi> 3940–3945 http://www.lrec-conf.org/proceedings/lrec2018/summaries/870.html [letzter Zugriff 09. Dezember 2019].
+                    </bibl>
+<bibl>
+<hi rend="bold">Bunt, Harry</hi> (2007): “Semantic underspecification. Which technique for what purpose?” in: Bunt, Harry / Muskens, Reinhard (eds.): 
+                        <hi rend="italic">Computing Meaning</hi> Bd. 3 (= Studies in Linguistics and Philosophy 83). Dordrecht: Springer 55–85.
+                    </bibl>
+<bibl>
+<hi rend="bold">Colliander, Elof</hi> (1912): 
+                        <hi rend="italic">Mittelniederdeutsches Elementarbuch</hi> (Photokopie der Druckfahnen des nicht zur Veröffentlichung gelangten Werkes, das mit § 365 abbricht). Heidelberg: Winter.
+                    </bibl>
+<bibl>
+<hi rend="bold">Dipper, Stefanie / Donhauser, Karin / Klein, Thomas / Linde, Sonja / Müller, Stefan / Wegera, Klaus-Peter</hi> (2013): „HiTS: ein Tagset für historische Sprachstufen des Deutschen“, in: 
+                        <hi rend="italic">Journal for Language Technology and Computational Linguistics</hi>, Special Issue, 28(1): 85–137 https://jlcl.org/content/2-allissues/9-Heft1-2013/5Dipper.pdf [letzter Zugriff 09. Dezember 2019].
+                    </bibl>
+<bibl>
+<hi rend="bold">Dürscheid, Christa / Elspaß, Stephan /Ziegler, Arne</hi> (2018): 
+                        <hi rend="italic">Variantengrammatik des Standarddeutschen</hi>. Ein Online-Nachschlagewerk http://mediawiki.ids-mannheim.de/VarGra/index.php/Start [letzter Zugriff 09. Dezember 2019]
+                    </bibl>
+<bibl>
+<hi rend="bold">Herbers, Birgit</hi> (2014): „Prozessualität und Variabilität in der Grammatikographie des Mittelhochdeutschen“ in: Ágel, Vilmos / Gardt, Andreas (eds.): 
+                        <hi rend="italic">Paradigmen der aktuellen Sprachgeschichtsforschung</hi> (= Jahrbuch für germanistische Sprachgeschichte 5). Berlin, Boston: de Gruyter 135–149.
+                    </bibl>
+<bibl>
+<hi rend="bold">IDS</hi> (o.J.): Korpusgrammatik – grammatische Variation im standardsprachlichen und standardnahen Deutsch: http://www1.ids-mannheim.de/gra/projekte/korpusgrammatik.html?L=0 [letzter Zugriff 09. Dezember 2019].
+                    </bibl>
+<bibl>
+<hi rend="bold">Klein, Thomas / Solms, Hans-Joachim / Wegera, Klaus-Peter</hi> (2009): 
+                        <hi rend="italic">Mittelhochdeutsche Grammatik</hi>. Teil III: Wortbildung. Tübingen: Niemeyer.
+                    </bibl>
+<bibl>
+<hi rend="bold">Klein, Thomas / Solms, Hans-Joachim / Wegera, Klaus-Peter</hi> (2018): 
+                        <hi rend="italic">Mittelhochdeutsche Grammatik</hi>. Teil II: Flexionsmorphologie. Berlin, Boston: de Gruyter.
+                    </bibl>
+<bibl>
+<hi rend="bold">Kleymann, Verena / Nagel, Norbert / Peters, Robert</hi> (2015): „Die digitale Lemmaliste für das Mittelniederdeutsche im DFG-Projekt ‚Referenzkorpus Mittelniederdeutsch / Niederrheinisch (1200–1650)‘“, in: 
+                        <hi rend="italic">Korrespondenzblatt des Vereins für niederdeutsche Sprachforschung</hi> 122/2: 95–100.
+                    </bibl>
+<bibl>
+<hi rend="bold">Kountz, Manuel / Heid, Ulrich / Eckart, Kerstin</hi> (2007): “A LAF/GrAF based Encoding Scheme for underspecified Representations of syntactic Annotations”, in: 
+                        <hi rend="italic">Proceedings of the International Conference on Language Resources and Evaluation 2008</hi> 2262–2269 http://www.lrec-conf.org/proceedings/lrec2008/pdf/569_paper.pdf [letzter Zugriff 09. Dezember 2019].
+                    </bibl>
+<bibl>
+<hi rend="bold">Lasch, Agathe</hi> (1914 / 
+                        <hi rend="superscript">2</hi>1974 / Nachdruck 2011): 
+                        <hi rend="italic">Mittelniederdeutsche Grammatik</hi> (= Sammlung kurzer Grammatiken germanischer Dialekte. A. Hauptreihe 9). Tübingen: Niemeyer.
+                    </bibl>
+<bibl>
+<hi rend="bold">Lasch, Agathe / Borchling, Conrad</hi> (1956ff.): 
+                        <hi rend="italic">Mittelniederdeutsches Handwörterbuch</hi>. Fortgef. von Gerhard Cordes und Dieter Möhn. Hg. von Ingrid Schröder. Neumünster / Kiel / Hamburg: Wachholtz.
+                    </bibl>
+<bibl>
+<hi rend="bold">Leech, Geoffrey / Garside, Roger / Bryant, Michael</hi> (1994): „CLAWS4: The tagging of the British National Corpus”, in: Proceedings of the 15th International Conference on Computational Linguistics (COLING) 1: 622–628.
+                    </bibl>
+<bibl>
+<hi rend="bold">Lübben, August</hi> (1882): 
+                        <hi rend="italic">Mittelniederdeutsche Grammatik</hi>. Nebst Chrestomathie und Glossar. Leipzig: Weigel.
+                    </bibl>
+<bibl>
+<hi rend="bold">Pauly, Dennis / Senyuk, Ulyana / Demske, Ulrike</hi> (2012): “Strukturelle Mehrdeutigkeit in frühneuhochdeutschen Texten, in: JLCL 27(2): 65–82 https://jlcl.org/content/2-allissues/10-Heft2-2012/5Pauly.pdf [letzter Zugriff 09. Dezember 2019].
+                    </bibl>
+<bibl>
+<hi rend="bold">Peters, Robert / Nagel, Norbert</hi> (2014): „Das digitale ‚Referenzkorpus Mittelniederdeutsch / Niederrheinisch (ReN)‘“ in: Ágel, Vilmos / Gardt, Andreas (eds.): 
+                        <hi rend="italic">Paradigmen der aktuellen Sprachgeschichtsforschung</hi> (= Jahrbuch für germanistische Sprachgeschichte 5). Berlin, Boston: de Gruyter 165–175.
+                    </bibl>
+<bibl>
+<hi rend="bold">ReN-Team (2019)</hi>: Referenzkorpus Mittelniederdeutsch/Niederrheinisch (1200–1650). Archiviert im Hamburger Zentrum für Sprachkorpora. Version 1.0. Publikationsdatum 14.08.2019. http://hdl.handle.net/11022/0000-0007-D829-8 [letzter Zugriff 09. Dezember 2019].
+                    </bibl>
+<bibl>
+<hi rend="bold">Sarauw, Christian</hi> (1921): 
+                        <hi rend="italic">Niederdeutsche Forschungen</hi>. Bd. 1: Vergleichende Lautlehre der niederdeutschen Mundarten im Stammlande (= Historisk-filologiske Meddelelser 5.1). Kopenhagen: Høst.
+                    </bibl>
+<bibl>
+<hi rend="bold">Sarauw, Christian</hi> (1924): 
+                        <hi rend="italic">Niederdeutsche Forschungen</hi>. Bd. 2: Die Flexionen der mittelniederdeutschen Sprache (= Historisk-filologiske Meddelelser 10.1). Kopenhagen: Høst.
+                    </bibl>
+<bibl>
+<hi rend="bold">Schiller, Anne / Teufel, Simone / Stöckert, Christine / Thielen, Christine</hi> (1999): „Guidelines für das Tagging deutscher Textcorpora mit STTS (Kleines und großes Tagset)“ <ptr target="http://www.sfs.uni-tuebingen.de/resources/stts-1999.pdf"/> [letzter Zugriff 09. Dezember 2019].
+                    </bibl>
 </listBibl>
 </div>
 </back>

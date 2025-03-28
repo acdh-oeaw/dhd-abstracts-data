@@ -1,13 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="270_final-OVER_Berthold_Multimodale_Anreicherung_von_Noteneditionen__E" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="184_final-NEUEFEIND_Claes_Technologienutzung_im_Kontext_Digitaler_Edit" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Multimodale Anreicherung von Noteneditionen: Edirom und Datenbank</title>
+                <title type="full">
+                    <title type="main">Technologienutzung im Kontext Digitaler Editionen – eine Landschaftsvermessung</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Neuefeind</surname>
+                        <forename>Claes</forename>
+                    </persName>
+                    <affiliation>Universität zu Köln, Deutschland</affiliation>
+                    <email>c.neuefeind@uni-koeln.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schildkamp</surname>
+                        <forename>Philip</forename>
+                    </persName>
+                    <affiliation>Universität zu Köln, Deutschland</affiliation>
+                    <email>philip.schildkamp@uni-koeln.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mathiak</surname>
+                        <forename>Brigitte</forename>
+                    </persName>
+                    <affiliation>Universität zu Köln, Deutschland</affiliation>
+                    <email>bmathiak@uni-koeln.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Harzenetter</surname>
+                        <forename>Lukas</forename>
+                    </persName>
+                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
+                    <email>lukas.harzenetter@iaas.uni-stuttgart.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Barzen</surname>
+                        <forename>Johanna</forename>
+                    </persName>
+                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
+                    <email>johanna.barzen@iaas.uni-stuttgart.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Breitenbücher</surname>
+                        <forename>Uwe</forename>
+                    </persName>
+                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
+                    <email>uwe.breitenbuecher@iaas.uni-stuttgart.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Leymann</surname>
+                        <forename>Frank</forename>
+                    </persName>
+                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
+                    <email>frank.leymann@iaas.uni-stuttgart.de</email>
+                </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2019-01-08T18:16:00Z</date>
+                    <date>2019-01-09T16:07:40</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -20,7 +79,7 @@
                 </t:address>
             </publicationStmt>
             <sourceDesc>
-                <p>Converted from a Word document</p>
+                <p>Converted from an OASIS Open Document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -36,221 +95,134 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Panel</term>
+                    <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Musikedition</term>
-                    <term>Edirom</term>
-                    <term>kulturwissenschaftliche Datenbank</term>
-                    <term>FRBR</term>
-                    <term>Pasticcio</term>
+                    <term>Lebende Systeme</term>
+                    <term>Digitale Editionen</term>
+                    <term>Software-Stacks</term>
+                    <term>TOSCA</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Kontextsetzung</term>
+                    <term>Community-Bildung</term>
+                    <term>Organisation</term>
+                    <term>Projekte</term>
+                    <term>Software</term>
+                    <term>Standards</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p style="text-align:left; ">In den vergangenen Jahren hat man in der Musikwissenschaft zunehmend den traditionellen und vor allem im 19. Jahrhundert konturierten Werkbegriff insbesondere für Musik, die vor 1800 entstand, in Frage gestellt. Das Verständnis von Werken als unveränderbare Entitäten, die als Geniestreich des Komponisten eine fixe Gestalt besitzen, wurde aufgegeben zugunsten einer Sichtweise, die ein Werk als Produkt zeitgenössischer Performanz und kultureller Praxis versteht. Die von Aufführung zu Aufführung wechselnde Gestalt eines Werks lässt es eher als ständiges „work in progress“ erscheinen (Calella 2014, 2007; Goehr 2007; Over i.Dr.). Projekte wie 
-                <hi rend="italic">A Cosmopolitan Composer in Pre-Revolutionary Europe – Giuseppe Sarti</hi> 
-                <ref target="http://www.sarti-edition.de">(www.sarti-edition.de)</ref>, das die Modularität von zwei Sarti-Opern 
-                (<hi rend="italic">Fra i due litiganti il terzo gode</hi>, <hi rend="italic">Giulio Sabino</hi>) editorisch darstellt (vgl. auch Albrecht-Hohmaier/Siegert 2015; Herold/Siegert 2016), oder 
-                <hi rend="italic">Beethovens Werkstatt</hi> 
-                <ref target="https://beethovens-werkstatt.de">(https://beethovens-werkstatt.de)</ref>, das Aspekte der Werkgenese digital aufarbeitet, versuchen, diesen Gegebenheiten gerecht zu werden.
-            </p>
-            <p style="text-align:left; ">Das Anfang des Jahres gestartete, polnisch-deutsche, auf drei Jahre angelegte und von DFG und NCN (Narodowe Centrum Nauki) finanzierte Forschungsprojekt 
-                <hi rend="italic">PASTICCIO. Ways of Arranging Attractive Operas</hi> der Universitäten Warschau und Mainz untersucht das Opernpasticcio. Ähnlich der seit dem 19. Jahrhundert beliebten Potpourris oder Revuen im frühen 20. Jahrhundert griff man im Pasticcio auf musikalisches Material zurück, das sich in vielerlei Hinsicht bereits bewährt hatte, und stellte daraus ein „Werk“ zusammen: Arien, die sich einer gewissen Popularität beim Publikum erfreuten, mit denen Sänger Erfolge gefeiert hatten, die aus dem Repertoire eines Sänger-Stars stammten, die einen neuen Stil präsentierten usw. Die zentrale These lautet, dass das Pasticcio als kulturelle Praxis entscheidende europaweite Soziabilitäts- und Autoritätsvorstellungen mit Blick auf Komponisten, Sängerinnen und Sänger, Librettistinnen und Librettisten sowie Impresari in der ausgehenden Frühen Neuzeit widerspiegelt. Diese Vorstellungen sind im Spannungsfeld einer aktiven Kenntnis sowie Verwendung des europäischen Musikrepertoires und der frühneuzeitlichen Subjektkonstitution stetigen Veränderungen unterworfen. Um die sich daraus entwickelnden Autorschafts- und Stilkonzepte als transregionale Prozesse und entstehende Normen erforschen zu können, werden digitale Editionen von drei Pasticci und einer Oper mit einer kulturwissenschaftlichen Datenbank verbunden, in der Daten zu Reisewegen, Transfermechanismen, Netzwerken, musikalischen Institutionen, den beteiligten Akteuren, der Materialität der Quellen, musikalischen Vorlagen sowie textlichen und musikalischen Bearbeitungen gesammelt sind.
-            </p>
-            <p style="text-align:left; ">Der Zuschnitt des Projekts geht von der aktuellen Forschungslage aus, dass Opernpasticci Produkte einer multiplen Autorschaft sind. Sowohl Sängerinnen und Sänger forderten die Einlage ihrer sogenannten Kofferarien, anhand derer sie ihre individuellen virtuosen Fertigkeiten bestmöglich demonstrieren konnten, als auch Impresari, Agenten und der lokale Adel den Einbau von Arien oder die Vertonung bekannter Libretti vorschlugen (Strohm 2011; Brandt 2002; Holmes 1993; Freeman 1992). Komponisten nutzten das Pasticcio unter anderem, um zu Beginn der Stagione ihr Sängerensemble vorzustellen, um sich mit Opernkompositionen aus Italien auseinanderzusetzen oder um mit wenig Zeitaufwand neue Produktionen fertigzustellen (Strohm 2009a, 2009b). Innerhalb dieses Zuschnitts ist die frühneuzeitliche Mobilität von Musikerinnen und Musikern von eminenter Wichtigkeit, denn gerade durch sie kamen SängerInnen-orientierte Opernproduktionen sowie eine europaweite Zirkulation von Musik zustande (zur Nieden 2015; Burden 2013; Korsmeier 2000; Woyke 1998; LaRue 1995). Die Verbreitung von Musik durch Pasticci unterliegt somit bestimmten ästhetischen wie sozialen Grundvorstellungen, die von einer Orientierung an der Modellkultur Italien bis hin zu lokalen Konjunkturen bestimmter, sich in Musik spiegelnder Soziabilitätsmodelle reichen. Ziel ist es, die Erarbeitung eines ästhetischen Verständnisses des Arbeitens mit präexistentem Material als Praxis auf die Konturierung musikalischer Stile und Autorschaftsfunktionen im 18. Jahrhundert in ihrem Wandel zurückzuspiegeln. Auf diese Weise ist es nicht nur möglich, die Erforschung des Opernpasticcios stärker in die interdisziplinäre Forschung zu Pastiche, Burlesque, Parodie oder Capriccio einzubinden, sondern auch, den bisherigen Akzent auf dem Opernpasticcio als Produkt oder Werk stärker auf seine praxisrelevanten Dimensionen des Vergleichens, Transkribierens oder Kopierens zu legen (zu pasticcio-ähnlichen Arbeitsweisen in anderen Disziplinen vgl. etwa Décout 2017; Kanz 2002).</p>
-            <p style="text-align:left; ">Um die dargestellten kulturwissenschaftlichen Dimensionen der Pasticcio-Produktion in der Edition von drei Opern-Pasticci und einer Oper abzubilden, fließen neben der Integration von digitalisierten Quellen (Partituren, Manuskripte von Einzelarien, Libretti) kulturwissenschaftliche Daten aller Art ein. Diese umfassen hauptsächlich Informationen zu Werken, ihren Vorlagen, den Ursprungswerken, Sängerkarrieren und -itineraren, beteiligten Akteuren wie Impresari, Widmungsträger und Publikum. Diese Informationen sind einerseits in einer Datenbank recherchierbar und können andererseits in der Edition bei den einzelnen das Pasticcio konstituierenden Bestandteilen abgerufen werden. </p>
-            <p style="text-align:left; ">Die Aufbereitung der Daten erfolgt anhand des FRBR-Modells (Tillett 2005). Dieses für den Bibliotheksbedarf entwickelte Modell (Functional Requirements for Bibliographic Records) bietet den Vorteil einer quasi neutralen Strukturierung von Daten, die sich um einen Autor und ein Werk sammeln. FRBR strukturiert Daten u. a. in „works“, „expressions“, „manifestations“, „items“, „persons“ und „corporate bodies“. Adaptiert auf das Projekt werden in Bezug auf das „work“ einerseits inhaltliche Dimensionen („work“ und „ work component“), andererseits Abhängigkeitsverhältnisse („work“ und „derivative“, wie etwa ein Arrangement) dargestellt. „Expressions“ zeigt die performative Ebene auf. Hier werden etwa alle Produktionen erfasst. „Manifestations“ fasst die materialen Aspekte zusammen, d. h. die verschiedenen Arten von Quellen (Partitur, Einzelarie, Libretto u. ä.). Jede einzelne Quelle wird als „item“ bezeichnet. „Persons“ und „corporate bodies“ (etwa Institutionen wie Opernhäuser) verstehen sich von selbst.</p>
-            <p style="text-align:left; ">Das Panel nähert sich der Einbindung der Datenbank in die Edition aus verschiedenen Perspektiven. Einerseits thematisiert es das Erkenntnisinteresse, das mit der Integration der Datenbank verbunden ist (Gesa zur Nieden). Andererseits wird aus Quellen- und Datensicht die Integration beleuchtet (Berthold Over). Denn während die Anreicherung von Editionen durch Quellen bereits seit Jahren in Edirom praktiziert wird, ist eine weitergehende Anreicherung durch Daten Neuland. Die Herausforderungen der Pasticcio-Edition (Martin Albrecht-Hohmaier) führt schließlich zur Zusammenführung von Datenbank und Edition (Kristin Herold), die als eines der Projektziele integraler Bestandteil des Projekts bildet und in ihrer Innovativität Pilotcharakter für künftige Projekte hat. Eine kritische Beurteilung der unterschiedlichen Perspektiven erfolgt durch Christine Siegert, die durch eigene Projekte als ausgewiesene Spezialistin auf dem Gebiet der digitalen Edition und der Instabilität frühneuzeitlicher musikalischer „Werke“ gelten muss. Als Diskutantin gibt sie ein direktes Feedback auf die Impulsreferate und regt durch ihre Statements zur weiteren Diskussion im Plenum an.</p>
-            <p style="text-align:left; ">Christine Siegert (Beethoven-Haus Bonn)</p>
-            <p style="text-align:left; ">
-                <hi rend="bold">Diskutantin</hi>
-            </p>
-            <p style="text-align:left; ">Gesa zur Nieden (Johannes Gutenberg-Universität Mainz)</p>
-            <p style="text-align:left; ">
-                <hi rend="bold">Pasticcio-Forschung und Digital Humanities</hi>
-            </p>
-            <p style="text-align:left; ">Innerhalb der Erforschung des frühneuzeitlichen Opernpasticcios ist die Entwicklung angemessener Darstellungsweisen der komplexen kultur- und musikgeschichtlichen Zusammenhänge ein zentrales Anliegen. Die Mobilität nicht nur der beteiligten Akteure, sondern auch der zahlreichen Arien, ihrer Abschriften und Drucke, die allesamt in die Produktion von Opernpasticci eingingen, ist in Vorträgen kaum anschaulich beschreibbar. Zum einen sind die Transferwege, die als Grundlage für einzelne musikalische Modifikationen anzusehen sind, an sich bereits zu filigran und verzweigt. Zum anderen potenziert sich diese Filigranität noch weiter, sobald gezielte Forschungsfragen wie z.B. ästhetisch-inspirierte überregionale Austauschprozesse untersucht werden. </p>
-            <p style="text-align:left; ">Im Vortrag sollen die Vorzüge einer digital unterstützten Arbeitsweise in der Pasticcio-Forschung zwischen Präsentation und zentralen Forschungsfragen eruiert werden. Eine Verknüpfung von digitaler Edition (Edirom) und einer Datenbank ermöglicht dabei nicht nur kollaboratives Arbeiten und projektspezifische Visualisierungen samt ihrer operationellen und explorativen Möglichkeiten, sondern ebenso eine kulturhistorisch informierte Bewahrung dieser bisher selten beachteten musikalischen Gattung, die aber als kompositorisches Arbeitsprinzip für das 18. Jahrhundert von zentraler Bedeutung war. </p>
-            <p style="text-align:left; ">Berthold Over (Johannes Gutenberg-Universität Mainz)</p>
-            <p style="text-align:left; ">
-                <hi rend="bold">Die Basis der multimodalen Anwendung: Quellen und Daten</hi>
-            </p>
-            <p style="text-align:left; ">Im Projekt 
-                <hi rend="italic">PASTICCIO. Ways of Arranging Attractive Operas</hi> werden drei Pasticci und eine Oper ediert: das von Georg Friedrich Händel arrangierte Pasticcio 
-                <hi rend="italic">Catone</hi> (1732), das von der Operntruppe Mingotti aufgeführte Pasticcio 
-                <hi rend="italic">Catone in Utica</hi> (1744), Johann Adolf Hasses Eigenpasticcio 
-                <hi rend="italic">Siroe</hi> (1763) und dessen Vorlage (1733). Sowohl Quellen, die sich um diese Werke gruppieren (Libretti, Vorlagen für das Arrangement, Einzelarien), als auch Daten zu Akteuren (Sängerinnen/Sänger, Komponisten, Arrangeure, Impresari, Widmungsträger) und Institutionen (Opernhäuser) werden in einer Datenbank nach FRBR strukturiert gesammelt, um sie in der Edition als Zusatzinformationen abrufen zu können. Ebenso fließen Aufführungsdaten von Werken und Aufenthaltsdaten von Personen in die Datenbank ein. Durch diese Zusatzinformationen können Fragen zur Herkunft von übernommenem musikalischen Material, zu den ursprünglichen Sängerinnen und Sängern, ihren Karrieren und Itineraren sowie zum Quellenmaterial und dessen Zirkulation beantwortet werden.
-            </p>
-            <p style="text-align:left; ">Martin Albrecht-Hohmaier (Johannes Gutenberg-Universität Mainz)</p>
-            <p style="text-align:left; ">
-                <hi rend="bold">Die digitalen Editionen</hi>
-            </p>
-            <p style="text-align:left; ">Das Projekt erarbeitet zwei Editionen, in denen jeweils eine Werkgruppe präsentiert wird; zum einen mit zwei Opern-Pasticci, zum anderen mit einer Oper und einem Pasticcio. Diese Bündelung von je zwei Werken dient der beispielhaften Darstellung einer Opern-Praxis im 18. Jahrhundert, wobei die beiden Editionen bewusst sehr divergierende Praktiken darstellen. Die beiden 
-                <hi rend="italic">Catone</hi>-Vertonungen, von unterschiedlichen Autoren und an unterschiedlichen „Institutionen“ aufgeführt, haben fast keine Überschneidungen und zeigen zwei sehr voneinander abweichende Versionen, das Libretto zu vertonen bzw. musikalisch zu realisieren; die beiden 
-                <hi rend="italic">Siroe</hi>-Vertonungen hingegen stammen vom gleichen Autor/Komponisten, entstanden mit 30 Jahren Abstand und sind an einigen Stellen deckungsgleich. Im Rahmen des Panels sollen an dieser Stelle einerseits Beispiele für die komplexe Quellenlage der ersteren Werke, andererseits solche für die Zusammenhänge bei einem Self-Pasticcio gezeigt werden – wobei an beiden die Vorteile einer digitalen Edition und die Sinnfälligkeit der Verknüpfung mit der Datenbank zutage treten.
-            </p>
-            <p style="text-align:left; ">Kristin Herold (ZenMEM Detmold/Paderborn)</p>
-            <p style="text-align:left; ">
-                <hi rend="bold">Zusammenführung von Datenbank und Edition</hi>
-            </p>
-            <p style="text-align:left; ">Sowohl die Informationssammlung in Form einer Datenbank, als auch die digitale Edition wurden in anderen Projekten bisher als Einzelbestandteile betrachtet; jedoch erst durch die Kombination beider Komponenten kann im Rahmen des Projektes 
-                <hi rend="italic">PASTICCIO. Ways of Arranging Attractive Operas</hi> das volle Potential ausgeschöpft werden, welches sich aus diesem Wechselspiel ergibt. Mit digitalen Methoden versucht das 
-                <hi rend="italic">PASTICCIO</hi> -Projekt erstmals, Informationen über Sängerinnen und Sänger, die einzelnen Bestandteile der Pasticci und ihre Provenienzen und die Informationen über die Aufführungskontexte in Beziehung zu den Musikeditionen zu setzen.
-            </p>
-            <p style="text-align:left; ">Am Beispiel von Sängerkarrieren wird das spannende Zusammenspiel von Informationen aus Datenbank und Edition illustriert. Durch notwendige Umarbeitungen in Form von direkten Eingriffen in den Notentext (so mussten u. a. die Stimmumfänge von unterschiedlichen Sängerinnen und Sängern durch Transpositionen berücksichtigt werden) bei wechselnden Besetzungen ist beispielsweise die in der Datenbank vorgehaltene Information der Mobilität von Sängerinnen und Sängern auch direkt in der Edition belegbar und macht eine Karriere sichtbar. </p>
-            <p style="text-align:left; ">
-                <hi rend="bold">Timetable</hi>
-            </p>
-            <p style="text-align:left; ">5 Min. Einführung</p>
-            <p style="text-align:left; ">10 + 5 Min. Gesa zur Nieden, 
-                <hi rend="italic">Pasticcio-Forschung und Digital Humanities</hi> + Feedback
-            </p>
-            <p style="text-align:left; ">10 + 5 Min. Berthold Over, 
-                <hi rend="italic">Die Basis der multimodalen Anwendung: Quellen und Daten</hi> + Feedback
-            </p>
-            <p style="text-align:left; ">10 + 5 Min. Martin Albrecht-Hohmaier, 
-                <hi rend="italic">Die digitalen Editionen</hi> + Feedback
-            </p>
-            <p style="text-align:left; ">10 + 5 Min. Kristin Herold, 
-                <hi rend="italic">Zusammenführung von Datenbank und Edition</hi> + Feedback
-            </p>
-            <p style="text-align:left; ">25 Min. Diskussion des Plenums</p>
+            <div type="div1" rend="DH-Heading">
+                <head>Einleitung</head>
+                <p>Geisteswissenschaftliche Forschung ist schon seit langem eine auch digitale Praxis. Dies spiegelt sich u. a. in den Methoden der Ergebnissicherung wider: Präsentationssysteme, interaktive Visualisierungen, Recherche-Datenbanken und nicht zuletzt Digitale Editionen haben sich neben der klassischen Publikation längst als digitale Instrumente der Ergebnissicherung etabliert. Während für die Persistenz statischer Daten wie z. B. digitaler Dokumente bereits gut etablierte Strategien und Standards wie TEI-XML (TEI 2018) oder OASIS-DITA (OASIS 2018) existieren, stellt Forschungssoftware im Hinblick auf die langfristige Ergebnissicherung noch immer eine besondere Herausforderung dar. </p>
+                <p>Dies äußert sich in erster Linie in einem Mangel an konkreten Nachhaltigkeitsstrategien und erwächst u. a. aus einem als „Software-Aging“ (Parnas 1994) bekannten Problem, dem Forschungsanwendungen als „Lebende Systeme“ (Sahle/Kronenwett 2013) grundsätzlich unterworfen sind, da sie, wie jede Software, nicht unabhängig von ihrer Laufzeitumgebung bzw. ihrem digitalen Ökosystem gedacht werden können. Die kontinuierliche Evolution dieser Umgebungen sorgt dafür, dass Softwaresysteme, die nicht stetig an diese veränderten Umweltbedingungen angepasst werden, mit der Zeit veralten und letztendlich unbenutzbar werden.</p>
+                <p>In dem von der DFG geförderten Kooperationsprojekt „SustainLife 
+                    <hi rend="bold">– </hi>Erhalt lebender, digitaler Systeme für die Geisteswissenschaften“, das in einer Zusammenarbeit zwischen dem Data Center for the Humanities (DCH, siehe 
+                    <ref target="http://dch.phil-fak.uni-koeln.de/">
+                        <hi rend="color(#1155cc)underline">http://dch.phil-fak.uni-koeln.de</hi>)
+                    </ref> der Universität zu Köln und dem Institut für Architektur von Anwendungssystemen (IAAS, siehe 
+                    <ref target="http://www.iaas.uni-stuttgart.de/">
+                        <hi rend="color(#1155cc)underline">http://www.iaas.uni-stuttgart.de</hi>)
+                    </ref> der Universität Stuttgart durchgeführt wird, arbeiten wir an einem Lösungsvorschlag für dieses Problem (vgl. dazu Barzen et al. 2018 sowie Neuefeind et al. 2018). Gegenstand des Projekts ist die Adaption und Weiterentwicklung von Verfahren und Technologien aus dem Cloud-Deployment für die Digital Humanities (DH) mit dem Ziel, Management und Provisionierung von DH-Anwendungen zu optimieren und deren Sicherung und nachhaltigen Betrieb zu realisieren. 
+                </p>
+                <p>Das Projekt setzt hierbei auf den OASIS-Standard TOSCA 
+                (<hi rend="italic">Topology and Orchestration Specification for Cloud Applications</hi>, siehe OASIS 2013, OASIS 2016) sowie dessen Open-Source-Implementierung OpenTOSCA (Binz et al. 2013, Breitenbücher et al. 2017). Mithilfe von TOSCA können (Forschungs-)Anwendungen mitsamt ihrer jeweiligen Laufzeitumgebung als Topologien von zusammenhängenden Software-Artefakten und Schnittstellen in standardisierter Weise modelliert werden. Daraufhin können diese Topologie-Modelle und damit alle benötigten Komponenten und Dateien der modellierten Applikation in sogenannten CSARs 
+                (<hi rend="italic">Cloud Service Archives</hi>) paketiert werden, so dass diese portablen Archive von jeder TOSCA-Runtime interpretiert und automatisiert bereitgestellt werden können.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Methodisches Vorgehen</head>
+                <p>Eine wesentliche Voraussetzung für eine Lösung, die eine standardisierte, TOSCA-konforme Beschreibung von Softwaresystemen vorsieht, ist ein möglichst genaues Bild der technologischen Landschaft innerhalb der Digital Humanities. Grundlage für den im Projekt verfolgten Ansatz ist daher eine ausführliche Bedarfs- und Anforderungsanalyse, anhand derer die Spezifikation häufig eingesetzter Systemkomponenten sowie die Identifikation von Schlüsselkomponenten zur Erstellung von Anwendungsvorlagen erfolgen kann. </p>
+                <p>Im Projekt setzen wir hierfür im Wesentlichen auf zwei Instrumente: Zum einen quantitativ angelegte Umfragen in der Community in Form von Fragebögen, zum anderen die qualitativ orientierte Untersuchung von ausgewählten Beispielanwendungen auf Basis von gezielten Codeanalysen. Letzteres zielt auf eine genauere Analyse der quantitativ erhobenen Daten bezüglich der eingesetzten Technologien, um konkrete Systemkomponenten identifizieren zu können, die im weiteren Projektverlauf u. a. für die Modellierung von Usecases auf Basis des TOSCA-Standards eingesetzt werden sollen.</p>
+                <p>Eine erste Kurzumfrage wurde im Rahmen der DHd2018 in Köln unter den Teilnehmern der Konferenz durchgeführt (Barzen et al. 2018). Primäres Ziel des eingesetzten Fragebogens war es, eine explorative Typisierung von DH-Anwendungen vorzunehmen und das Spektrum der dabei eingesetzten Technologien zu konturieren. Die Umfrage ergab im Wesentlichen, dass sich Entscheidungen bezüglich der Technologienutzung vor allem am jeweiligen Anwendungstyp orientieren. Um eine möglichst zielgenaue Analyse typischer Technologien zu erreichen bietet es sich deshalb an, den Skopus der Befragung entsprechend auf einzelne Anwendungstypen hin einzugrenzen.</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Technologienutzung im Kontext Digitaler Editionen</head>
+                <p>Nachdem sich der Zusammenhang zwischen der Art der Anwendung und den konkreten technologischen Entscheidungen besonders deutlich bei Digitalen Editionen zeigte, und da diese zugleich als besonders repräsentative Form digitaler Ergebnissicherung im Bereich der Digitalen Geisteswissenschaften angesehen werden können, haben wir uns dazu entschieden, hier den ersten Ausgangspunkt für eine gezielte Erhebung von Daten über die Technologienutzung zu setzen. Hierfür richteten wir gemeinsam mit dem Cologne Center for eHumanities (CCeH, siehe 
+                    <ref target="http://cceh.uni-koeln.de/">
+                        <hi rend="color(#1155cc)underline">http://cceh.uni-koeln.de</hi>)
+                    </ref> sowie in Kooperation mit der Landesinitiative NFDI der Digitalen Hochschule NRW (siehe 
+                    <ref target="https://fdm-nrw.de/">
+                        <hi rend="color(#1155cc)underline">https://fdm-nrw.de</hi>)
+                    </ref> und der Nordrhein-Westfälischen Akademie der Wissenschaften und der Künste (AWK, siehe 
+                    <ref target="http://www.awk.nrw.de/">
+                        <hi rend="color(#1155cc)underline">http://www.awk.nrw.de</hi>
+                    </ref> einen Workshop zum Thema „Nachhaltigkeit Digitaler Editionen“ aus, der am 17.9.2018 in den Räumen der AWK stattfand (siehe 
+                    <ptr target="http://dch.phil-fak.uni-koeln.de/nde-workshop.html"/>).
+                </p>
+                <p>Der Workshop hatte das Ziel, vorhandene Lösungsansätze und Aktivitäten, die der nachhaltigen Bereitstellung von Digitalen Editionen gewidmet sind, mit der Fachcommunity zu diskutieren. So wird bereits seit einigen Jahren an verschiedenen Stellen an Konzepten gearbeitet, die dieses Problem adressieren. Bspw. wird in der Schweiz derzeit eine „Nationale Infrastruktur für Editionen“ (NIE-INE, siehe 
+                    <ref target="https://www.nie-ine.ch/">
+                        <hi rend="color(#1155cc)underline">https://www.nie-ine.ch</hi>)
+                    </ref> aufgebaut, die auf die Homogenisierung von Editionsprojekten zielt, und in Österreich wurde mit dem „Kompetenznetzwerk Digitale Editionen“ (KONDE, siehe 
+                    <ref target="http://www.digitale-edition.at/">
+                        <hi rend="color(#1155cc)underline">http://www.digitale-edition.at</hi>)
+                    </ref> ein umfangreiches Verbundprojekt eingesetzt, das ebenfalls den Aufbau und die Weiterentwicklung einer nationalen Forschungsinfrastruktur für Digitale Editionen zum Ziel hat. Auch in Deutschland gibt es vergleichbare, wenn auch lokaler ausgerichtete Initiativen, die auf die Schaffung einer gemeinsamen Infrastruktur für Editionsprojekte und damit längerfristig auf eine Standardisierung von Digitalen Editionen zielen. Im Rahmen des Workshops hatten wir die Gelegenheit viele der maßgeblichen Akteure als Sprecher zu gewinnen. Unter den Teilnehmern fanden sich ebenfalls viele Personen, die selbst an Digitalen Editionen arbeiten oder an der Nachhaltigkeitsproblematik anderweitig interessiert waren, z.B. aus Perspektive der Drittmittelgeber.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Begleitende Umfrage</head>
+                <p>Im Vorfeld des Workshops führten wir unter den insgesamt 80 Teilnehmern (70 Gäste und 10 eingeladene Sprecher) eine Umfrage durch, mit dem Ziel, Informationen über die Technologielandschaft speziell in diesem Bereich der DH zu gewinnen. Die Umfrage enthielt Fragen zu persönlichen Vorerfahrungen in der Arbeit mit Digitalen Editionen, zu den formalen Charakteristika von Editionsprojekten sowie zu den dabei eingesetzten Technologien. Schon anhand einer ersten Auswertung der Umfrage, die unmittelbar vor dem Workshop vorgenommen wurde und bei der die Angaben zu 31 verschiedenen Editionsprojekten berücksichtigt wurden, ließen sich deutliche Tendenzen in Bezug auf die eingesetzten Nachnutzungs- und Nachhaltigkeitsstrategien ablesen. So zeigen die in Abbildung 1 wiedergegebenen Angaben bezüglich der Datenmodellierung sehr deutlich, dass mit TEI-XML mittlerweile ein weit verbreiteter Standard zur nachhaltigen Sicherung von Daten vorliegt, der für speziellere Bedarfe durch weitere standardisierte Formate ergänzt wird.</p>
+                <p>
+                    <figure>
+                        <graphic url="184_final-93b177aeb588d360d283f3fe6d050dd0.png"/>
+                        <head>
+                            <lb/>Abbildung 1: Nutzung von Standards für Metadaten und für die Modellierung von Primärdaten.
+                        </head>
+                    </figure>
+                </p>
+                <p>Aufseiten der Implementierungen dagegen fehlen solche Standards, was entsprechend zu einer deutlich höheren Heterogenität der eingesetzten Technologien führt (siehe Abbildung 2). Aus der Zusammenschau der verschiedenen Fragekategorien lässt sich ersehen, dass es zwar durchaus auch in Bezug auf die genutzten Technologien und Systemkomponenten Favoriten gibt, jedoch wird unsere Annahme einer technologischen und methodischen Heterogenität des Feldes dennoch klar bestätigt.</p>
+                <p>
+                    <figure>
+                        <graphic url="184_final-cf75d5984f3411f3d0218c2091855dec.png"/>
+                        <head>
+                            <lb/>Abbildung 2: Technologienutzung im Kontext Digitaler Editionsprojekte.
+                        </head>
+                    </figure>
+                </p>
+                <p>Während sich also im Bereich der Primärdaten in Gestalt verschiedener TEI-Dialekte eine zunehmende Standardisierung abzeichnet, so gilt dies nicht für das Layout und die Präsentation von Editionen. Hinsichtlich Aussehen, Funktionalitäten und technischer Architekturen besteht hier weiterhin eine sehr große Heterogenität. Zudem deuten sich hier auch bereits verschiedene Technologie-Stacks an, die sich aus typischen Kombinationen von Systemkomponenten ergeben. Allerdings scheinen sich solche Stacks v. a. innerhalb verschiedener Trägerinstitutionen herauszubilden, was sich in Teilen auf personelle Überschneidungen zwischen Projekten oder auf institutionelle Lösungsansätze zur Bewältigung von Nachhaltigkeitsanforderungen zurückführen lässt. Diese Ergebnisse spiegelten sich auch in den Diskussionen auf dem Workshop wider. Während die Nachhaltigkeit der Daten weitestgehend gelöst zu sein scheint, brachte die Frage nach der Nachhaltigkeit der Software eine Reihe von Lösungsansätzen hervor. Die Vor- und Nachteile von verschiedenen Technologie-Stacks wurden kontrovers diskutiert. Weitestgehende Einigkeit bestand darin, dass eine Digitale Edition aus Daten plus Software besteht, dass also eine alleinige Konservierung der Daten für die Konservierung der Digitalen Edition an sich nicht ausreicht.</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Fazit und Ausblick</head>
+                <p>In unserem Beitrag möchten wir die bisherigen Ergebnisse unserer Anforderungsanalyse an lebende Systeme in den Digital Humanities zur Diskussion stellen. Neben den hier gezeigten Kennzahlen fokussieren wir dabei verschiedene Technologie-Stacks, die typische Kombinationen von Systemkomponenten widerspiegeln. Die hier vorgestellten Ergebnisse der Anforderungsanalyse dienen uns als Basis für die weitere Projektarbeit. Unser Ziel ist es, häufig genutzte Schlüsselkomponenten und typische Anwendungsstrukturen digitaler Erkenntnisträger im Bereich der Digital Humanities zu identifizieren, sie anschließend in TOSCA zu modellieren und zu einer Komponentenbibliothek zusammenzufassen sowie in Form von Anwendungsvorlagen für weitere Modellierungen bereitzustellen, um dadurch konsistente und zukunftssichere Standards und Nachhaltigkeitsstrategien für Forschungssoftware zu etablieren. Über die konkrete Projektarbeit hinaus sind die hier vorgestellten Ergebnisse auch von generellem Interesse für die Community. So sind die erhobenen Daten u. a. auch für Datenzentren wie das DCH Köln von hohem Nutzen, um beispielsweise Strategien und Betreuungskonzepte für Forschungssoftware zu entwerfen.</p>
+            </div>
         </body>
         <back>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">Albrecht-Hohmaier, Martin / Siegert, Christine (2015):</hi> 
-                        <hi rend="italic">Eine codierte Opernedition als Angebot für Wissenschaft, Lehre und Musikpraxis. Überlegungen am Beispiel von Giuseppe Sarti (1729–1802)</hi>, 
-                        in: 
-                        <hi rend="bold">Thomas Bein (ed.): </hi>
-                        <hi rend="italic">Vom Nutzen der Edition. Zur Bedeutung moderner Editorik für die Erforschung von Literatur- und Kulturgeschichte</hi> 
-                        (= Beihefte zu editio 39). Berlin: de Gruyter 1–17.
+                        <hi rend="bold">Barzen, J. / Blumtritt, J. / Breitenbücher, U. / Kronenwett, S. / Leymann, F. / Mathiak, B. / Neuefeind, C. (2018)</hi>: <hi rend="italic">"SustainLife - Erhalt lebender, digitaler Systeme für die Geisteswissenschaften."</hi> In: Book of Abstracts der 5. Jahrestagung der Digital Humanities im deutschsprachigen Raum (DHd 2018), Köln 26.2.–2.3.2018, S. 471–474. <ptr target="https://kups.ub.uni-koeln.de/8085/1/boa-DHd2018-.pdf"/>[letzter Zugriff 8.1.2019].
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Brandt, Stefan (2002):</hi> 
-                        <hi rend="italic">Gleicher Text, unterschiedliche Realisierungen. Zum Einfluss des sängerischen Personals auf Arienkompositionen bei Porpora und Händel</hi>, 
-                        in: Basler Jahrbuch für historische Musikpraxis XXVI: 109–127.
+                        <hi rend="bold">Binz, T. / Breitenbücher, U. / Haupt, F. / Kopp, O. / Leymann, F. / Nowak, A. / Wagner, S. (2013)</hi>: <hi rend="italic">“OpenTOSCA - A Runtime for TOSCA-based Cloud Applications“</hi>. In: ICSOC, 2013, S. 692–695.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Burden, Michael (2013): </hi>
-                        <hi rend="italic">Regina Mingotti: Diva and Impresario at the King’s Theatre London</hi> 
-                        (= Royal Musical Association Monographs 22). Farnham.
+                        <hi rend="bold">Breitenbücher, U. / Barzen, J. / Falkenthal, M. / Leymann, F. (2017)</hi>: <hi rend="italic">"Digitale Nachhaltigkeit in den Geisteswissenschaften durch TOSCA: Nutzung eines standardbasierten Open-Source Ökosystems"</hi>, in: DHd 2017: Digitale Nachhaltigkeit, S. 235–238. <ptr target="http://www.dhd2017.ch/wp-content/uploads/2017/01/Abstractband_def_24.1.17-1.pdf"/>[letzter Zugriff 8.1.2019].
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Calella, Michele (2007):</hi> 
-                        <hi rend="italic">Zwischen Autorwillen und Produktionssystem. Zur Frage des ‚Werkcharakters‘ in der Oper des 18. Jahrhunderts</hi>, 
-                        in: 
-                        <hi rend="bold">Ulrich Konrad (ed.):</hi>
-                        <hi rend="italic">Bearbeitungspraxis in der Oper des späten 18. Jahrhunderts. Bericht über die Internationale wissenschaftliche Tagung vom 18. bis 20. Februar 2005 in Würzburg</hi> 
-                        (= Würzburger musikhistorische Beiträge Bd. 27). Tutzing: Schneider 15–32.
+                        <hi rend="bold">Neuefeind, C. / Harzenetter, L. / Schildkamp, P. / Breitenbücher, U. / Mathiak, B. / Barzen, J. / Leymann, F. (2018)</hi>: <hi rend="italic">"The SustainLife Project – Living Systems in Digital Humanities"</hi>. In: Proceedings of the 12th Advanced Summer School on Service-Oriented Computing, 2018 (IBM Research Report RC25681), S.101-112.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Calella, Michele (2014):</hi> 
-                        <hi rend="italic">Musikalische Autorschaft. Der Komponist zwischen Mittelalter und Neuzeit</hi> 
-                        (= Schweizer Beiträge zur Musikforschung 20). Kassel: Bärenreiter. 
+                        <hi rend="bold">OASIS (2013)</hi>: <hi rend="italic">„Topology and Orchestration Specification for Cloud Applications Version 1.0“</hi>. 25 November 2013. OASIS Standard. <ptr target="http://docs.oasis-open.org/tosca/TOSCA/v1.0/os/TOSCA-v1.0-os.html"/>. [letzter Zugriff 8.1.2019]
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Décout, Maxime (2017):</hi> 
-                        <hi rend="italic">Qui a peur de l’imitation?</hi> 
-                        Paris : Les éditions de minuit.
+                        <hi rend="bold">OASIS (2016)</hi>: <hi rend="italic">„TOSCA Simple Profile in YAML, Version 1.0“</hi>. Edited by Derek Palma, Matt Rutkowski, and Thomas Spatzier. 21 December 2016. OASIS Standard. <ptr target="http://docs.oasis-open.org/tosca/TOSCA-Simple-Profile-YAML/v1.0/os/TOSCA-Simple-Profile-YAML-v1.0-os.html"/>. [letzter Zugriff 8.1.2019]
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Freeman, Daniel E. (1992):</hi> 
-                        <hi rend="italic">An 18<hi rend="superscript">th</hi>-Century Singer’s Commission of ‚Baggage‘ Arias</hi>, 
-                        in: Early Music 20/3: 427–433.
+                        <hi rend="bold">OASIS (2018)</hi>: <hi rend="italic">„Darwin Information Typing Architecture (DITA) Version 1.3 Errata 02“</hi>. Edited by Robert D. Anderson and Kristen James Eberlein. 19 June 2018. OASIS Approved Errata. <ptr target="http://docs.oasis-open.org/dita/dita/v1.3/errata02/os/dita-v1.3-errata02-os.html"/> [letzter Zugriff 8.1.2019].
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Goehr, Lydia (2007): </hi>
-                        <hi rend="italic">The Imaginary Museum of Musical Works: an Essay in the Philosophy of Music</hi>. 
-                        Oxford: Oxford University Press.
+                        <hi rend="bold">Parnas, D. L. (1994)</hi>: <hi rend="italic">”Software Aging“</hi>. In: Proceedings of the 16th International Conference on Software Engineering (ICSE 1994). IEEE, Mai 1994, S. 279–287.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Herold, Kristin / Siegert, Christine (2016):</hi> 
-                        <hi rend="italic">Die Gattung als vernetzte Struktur. Überlegungen zur Oper um 1800</hi>, 
-                        in: 
-                        <hi rend="bold">Kristina Richts / Peter Stadler (eds.): </hi>
-                        <hi rend="italic">„Ei, dem alten Herrn zoll’ ich Achtung gern“. Festschrift für Joachim Veit zum 60. Geburtstag</hi>. 
-                        München: Allitera Verlag 671–702.
+                        <hi rend="bold">Sahle, P. und Kronenwett, S. (2013)</hi>: <hi rend="italic">”Jenseits der Daten: Überlegungen zu Datenzentren für die Geisteswissenschaften am Beispiel des Kölner ’Data Center for the Humanities’“</hi>. In: LIBREAS. Library Ideas 23, S. 76–96.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Holmes, William (1993): </hi>
-                        <hi rend="italic">Opera Observed: Views of a Florentine Impresario in the Early Eighteenth Century</hi>, 
-                        Chicago: University of Chicago Press.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Kanz, Roland (2002): </hi>
-                        <hi rend="italic">Die Kunst des Capriccio. Kreativer Eigensinn in Renaissance und Barock</hi>. 
-                        München: Deutscher Kunstverlag.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Korsmeier, Claudia Maria (2000): </hi>
-                        <hi rend="italic">Der Sänger Giovanni Carestini (1700–1760) und „seine“ Komponisten</hi> 
-                        (= Schriften zur Musikwissenschaft aus Münster 13). Eisenach: Verlag der Musikalienhandlung Wagner.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">LaRue, C. Stephen (1995): </hi>
-                        <hi rend="italic">Handel and His Singers. The Creation of the Royal Academy Operas</hi>, 
-                        1720–1728. Oxford: Clarendon Press.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Over, Berthold (i.Dr.):</hi> 
-                        <hi rend="italic">Zwischen multipler Autorschaft und autonomem Kunstwerk. Musikalische ‘Werke’ im 17. und 18. Jahrhundert</hi>, 
-                        in: 
-                        <hi rend="bold">Panja Mücke (ed.):</hi> 
-                        <hi rend="italic"> Geschichte der Musik im Barock</hi>, 
-                        Bd. 1: Weltliche Vokalmusik (Handbuch der Musik des Barock 1). Laaber: Laaber Verlag.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Siegert, Christine (2016):</hi> 
-                        <hi rend="italic">Zum Pasticcio-Problem</hi>, 
-                        in: 
-                        <hi rend="bold">Thomas Betzwieser (ed.):</hi> 
-                        <hi rend="italic"> Opernkonzeptionen zwischen Berlin und Bayreuth. Das musikalische Theater der Markgräfin Wilhelmine. Referate des Symposiums anlässlich der Aufführung von L’Huomo im Markgräflichen Opernhaus in Bayreuth am 2. Oktober 2009</hi> 
-                        (= Thurnauer Schriften zum Musiktheater 31). Würzburg: Königshausen &amp; Neumann 155–166.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Strohm, Reinhard (2011):</hi> 
-                        <hi rend="italic">Wer entscheidet? Möglichkeiten der Zusammenarbeit an Pasticcio-Opern</hi>, 
-                        in: 
-                        <hi rend="bold">Daniel Brandenburg / Thomas Seedorf (ed.): </hi> 
-                        <hi rend="italic">„Per ben vestir la virtuosa“. Die Oper des 18. und frühen 19. Jahrhunderts im Spannungsfeld zwischen Komponisten und Sängern</hi>, 
-                        (= Forum Musikwissenschaft 6). Schliengen: Edition Argus 62–78. 
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Strohm, Reinhard (2009a):</hi> 
-                        <hi rend="italic">Händels Pasticci</hi>, 
-                        in: 
-                        <hi rend="bold">Arnold Jacobshagen / Panja Mücke (ed.): </hi> 
-                        <hi rend="italic">Händels Opern</hi>, 
-                        Teilband 2. Laaber: Laaber Verlag 351–358.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Strohm, Reinhard (2009b):</hi> 
-                        <hi rend="italic">Der wandernde Gluck und die verwandelte ‚Ipermestra‘</hi>, 
-                        in: 
-                        <hi rend="bold">Irene Brandenburg / Tanja Gölz (ed.):</hi>  
-                        <hi rend="italic">Gluck der Europäer</hi> 
-                        (= Gluck-Studien 5). Kassel: Bärenreiter 37–63.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Tillett, Barbara (2005):</hi> 
-                        <hi rend="italic">What is FRBR? A Conceptual Model for the Bibliographic Universe</hi>, 
-                        in: Australian Library Journal 54: 24–30.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Woyke, Saskia  (1998):</hi> 
-                        <hi rend="italic">Faustina Bordoni-Hasse. Eine Sängerinnenkarriere im 18. Jahrhundert</hi>, 
-                        in: Göttinger Händel-Beiträge 7: 218–257.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">zur Nieden, Gesa (2015):</hi> 
-                        <hi rend="italic">Mobile Musicians: Paths of Migration in Early Modern Europe</hi>, 
-                        in: European History Yearbook 16: 111–129.
+                        <hi rend="bold">TEI Consortium, eds. (2018)</hi>: <hi rend="italic">“TEI P5: Guidelines for Electronic Text Encoding and Interchange.”</hi> Version 3.4.0 vom 23.7.2018. <ptr target="http://www.tei-c.org/Guidelines/P5/"/>[letzter Zugriff 8.1.2019].
                     </bibl>
                 </listBibl>
             </div>

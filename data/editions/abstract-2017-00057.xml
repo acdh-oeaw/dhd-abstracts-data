@@ -1,48 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="vortrag-FISCH" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="vortrag-WINDH" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title type="full">
-<title type="main">„Der Helmut Kohl unter den Brotaufstrichen“. Zur Extraktion vossianischer Antonomasien aus großen Zeitungskorpora</title>
-<title type="sub"/>
-</title>
+<title>Zur polykubistischen Informationsvisualisierung von Biographiedaten</title>
 <author>
 <persName>
-<surname>Jäschke</surname>
-<forename>Robert</forename>
+<surname>Windhager</surname>
+<forename>Florian</forename>
 </persName>
-<affiliation>University of Sheffield</affiliation>
-<email>r.jaschke@sheffield.ac.uk</email>
+<affiliation>Donau-Universität Krems, Österreich</affiliation>
+<email>florian.windhager@donau-uni.ac.at</email>
 </author>
 <author>
 <persName>
-<surname>Strötgen</surname>
-<forename>Jannik</forename>
+<surname>Mayr</surname>
+<forename>Eva</forename>
 </persName>
-<affiliation>Max-Planck-Institut für Informatik, Saarbrücken</affiliation>
-<email>jannik.stroetgen@mpi-inf.mpg.de</email>
+<affiliation>Donau-Universität Krems, Österreich</affiliation>
+<email>eva.mayr@donau-uni.ac.at</email>
 </author>
 <author>
 <persName>
-<surname>Krotova</surname>
-<forename>Elena</forename>
+<surname>Schreder</surname>
+<forename>Günther</forename>
 </persName>
-<affiliation>Higher School of Economics, Moskau</affiliation>
-<email>kroelebor@gmail.com</email>
+<affiliation>Donau-Universität Krems, Österreich</affiliation>
+<email>guenther.schreder@donau-uni.ac.at</email>
 </author>
 <author>
 <persName>
-<surname>Fischer</surname>
-<forename>Frank</forename>
+<surname>Wandl-Vogt</surname>
+<forename>Eveline</forename>
 </persName>
-<affiliation>Higher School of Economics, Moskau</affiliation>
-<email>frafis@gmail.com</email>
+<affiliation>Österreichische Akademie der Wissenschaften, Wien</affiliation>
+<email>eveline.wandl-vogt@oeaw.ac.at</email>
+</author>
+<author>
+<persName>
+<surname>Gruber</surname>
+<forename>Christine</forename>
+</persName>
+<affiliation>Österreichische Akademie der Wissenschaften, Wien</affiliation>
+<email>christine.gruber@oeaw.ac.at</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2016-11-29T01:00:48.936622345</date>
+<date>2016-08-26T20:44:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -55,7 +60,7 @@
 </address>
 </publicationStmt>
 <sourceDesc>
-<p>Converted from an OASIS Open Document</p>
+<p>Converted from a Word document </p>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
@@ -74,280 +79,176 @@
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Antonomasie</term>
-<term>vossianische Antonomasie</term>
-<term>Stilistik</term>
-<term>Zeitungskorpora</term>
+<term>Biographiedaten</term>
+<term>Informationsvisualisierung</term>
+<term>Visuelle Analyse</term>
+<term>Visuelle Synthese</term>
+<term>Space-Time Cube</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Programmierung</term>
-<term>Stilistische Analyse</term>
-<term>Sprache</term>
-<term>Literatur</term>
+<term>Gestaltung</term>
+<term>Strukturanalyse</term>
+<term>Räumliche Analyse</term>
+<term>Netzwerkanalyse</term>
+<term>Visualisierung</term>
+<term>Daten</term>
+<term>Bilder</term>
+<term>Karte</term>
+<term>Metadaten</term>
+<term>Methoden</term>
+<term>Personen</term>
+<term>Forschung</term>
+<term>Visualisierung</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<div rend="DH-Heading1" type="div1">
-<head>Einführung und Forschungslage</head>
-<p>Wenn Peter Paul Rubens als »Tarantino des Barock« beschrieben wird (im 
-                    <hi rend="italic">Tagesspiegel</hi>, 2014) oder Alice Schwarzer als der »Erich Honecker des Feminismus« (in 
-                    <hi rend="italic">Cicero</hi>, 2014), dann handelt es sich um eine Vossianische Antonomasie. Diese Trope ist nach dem niederländischen Humanisten und Rhetoriklehrer Vossius benannt (und wird im Folgenden als ›Vossanto‹ abgekürzt, in Anlehnung an den Vorschlag von Fischer/Wälzholz 2014). Generell spricht man von Antonomasie, wenn eine bestimmte Eigenschaft einer Person für diese selbst steht (z. B. »der Leimener« für Boris Becker). Beim Spezialfall der Vossanto wird einer Person über die Nennung einer anderen (bekannteren, populäreren, berüchtigteren) Person als Referenzgröße eine bestimmte Eigenschaft zugeschrieben. Dabei sorgt ein »untypologisches, aktualisierendes Signal« (Lausberg 1960) für den Bedeutungstransfer (in den oben genannten Beispielen wären dies der Barock und der Feminismus). Anders ausgedrückt: Die Vossanto stellt über einen ›modifier‹ einen Zusammenhang zwischen ›source‹ und ›target‹ her (Bergien 2013). Entitäten können sowohl als ›source‹ als auch als ›target‹ auftreten, wie ebd. am Beispiel Obama demonstriert: bis 2011 trat er in Vossantos vor allem als ›target‹ auf, danach diente er immer mehr als ›source‹. Die ›source‹-Referenz wird im Fachdiskurs im Anschluss an Lakoff 1987 auch als ›paragon‹ bezeichnet (»a specific example that comes close to embodying the qualities of the ideal«, ebd.).
-                </p>
-<p>Der Begriff »Vossianische Antonomasie« wird international kaum verwendet, stattdessen wird etwa zwischen »Antonomasia1« und »Antonomasia2« unterschieden: »metonymic« vs. »metaphorical antonomasia« (Holmqvist/Płuciennik 2010). Innerhalb dieses Klassifikationsschemas wäre unsere Vossanto ein Spezialfall von »Antonomasia2«, nämlich wenn es um »comparisons with paragons from other spheres of culture« geht: »Lyotard is a pope of postmodernism, Bush is no Demosthenes; and we can buy the Cadillac of vacuum cleaners.« (ebd.)</p>
-<p>Dieses Stilmittel, dessen reger Gebrauch seit der Antike belegt ist, ist heute medial ubiquitär anzutreffen. Oft findet es sich schon in Überschriften, da es zugleich informativ und rätselhaft sein kann und zudem oft unterhaltsame Qualitäten bietet. Eine eigene größere Sammlung an Musterexemplaren (
-                    <ptr target="http://www.umblaetterer.de/datenzentrum/vossianische-antonomasien.html"/>) gab den Ausschlag, dieses Phänomen systematisch zu erforschen, mit historischer Perspektive und auf Grundlage größerer englischer und deutscher Zeitungskorpora. Ziel dieser Arbeit ist eine erste methodisch-explorative Analyse des Phänomens Vossanto in der Tageszeitung 
-                    <hi rend="italic">New York Times</hi> (1987–2007) und der Wochenzeitung 
-                    <hi rend="italic">Die Zeit</hi> (1995–2011). Die Korpora wurden aufgrund ihrer Verfügbarkeit, Bedeutung und ihres Umfangs gewählt. Die Extraktion der Vossantos erfolgte jeweils korpusspezifisch, um den verschiedenen Formaten und Sprachen Rechnung zu tragen.
-                </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Englischsprachiges Korpus</head>
-<p>Aus den XML-Daten des 
-                    <hi rend="italic">New York Times</hi>-Korpus (Sandhaus 2008) wurde für jeden der 1.854.726 Artikel der Volltext extrahiert. Anschließend wurde der Text mit Hilfe des NLTK (Bird/Loper/Klein 2009) in Sätze zerlegt und die Wörter jedes Satzes mit dem Part-of-Speech-Tagger des NLTK annotiert. Zusätzlich wurden Named Entities (Personen, Orte, Organisationen) mit dem NLTK-eigenen Named-Entity-Extraktor annotiert. Die so annotierten Sätze wurden mit einer Liste von Vossanto-typischen Mustern (in Form von regulären Ausdrücken) abgeglichen. Eine vereinfachte Darstellung eines solchen Musters ist beispielsweise:
-                </p>
-<quote>\((PERSON|ORGANIZATION|GPE) *\) (is|has) (often|sometimes)? (been)? (called)? the \(PERSON|ORGANIZATION|GPE) *\) (of|among|from) \((PERSON|ORGANIZATION|GPE) *\)</quote>
-<p>Die zu findenden drei Elemente einer Vossanto sind darin durch * gekennzeichnet. Passte ein Satz auf eines der Muster, so wurden diese drei Teile extrahiert und tabellarisch ausgegeben. Anschließend wurden die extrahierten 10.744 Kandidaten manuell überprüft. Nicht-Vossantos und Vossantos mit Städten und Firmen wurden entfernt (Treffer der Art »Algarve, the Riviera of Portugal« oder »Pepsi is the Nike of soft drinks« sind eine eigene Untersuchung wert) und der Fokus auf Vossantos gelegt, in denen Individuen (Personen, Tiere, fiktive Figuren) als ›source‹ oder ›target‹ dienen. 246 Vossantos blieben dabei übrig (Übersicht in unserem Arbeitsrepo, siehe Bibliografie), die sich wie folgt über das Korpus verteilen:</p>
-<p>
+<p>Methoden der Informationsvisualisierung dienen der Unterstützung menschlicher Kognition im Umgang mit abstrakten Daten und Themen (Scaife &amp; Rogers, 1996). Dank der erfolgreichen Entwicklung entsprechender Verfahren helfen interaktive visuelle Repräsentationen seit geraumer Zeit bei der Analyse von multidimensionalen Daten in verschiedensten Disziplinen, inklusive zahlreicher geistes- und kulturwissenschaftlicher Forschungsfelder (cf. Sula, 2013; Jänicke, Franzini, Cheema &amp; Scheuermann, 2015). Als Resultat ist mittlerweile ein ganzes Spektrum von bildgebenden Methoden für die Exploration und Analyse der Daten von geisteswissenschaftlichen ForscherInnen verfügbar. Dies gilt auch für HistorikerInnen, die biographische Datensätze von historischen Individuen exemplarisch mit Hilfe von geographischen Karten, chronologischen Timelines, genealogischen Bäumen, oder in relationalen Topologien und Netzwerken von Akteuren und Artefakten veranschaulichen und visuell analysieren können. </p>
+<p>Der Vortrag baut auf dieser Vielheit von etablierten Methoden für die visuelle Analyse biographischer Daten auf – und präsentiert ein neue Methode der visuellen Synthese und Integration in einem konsistenten Rahmenwerk. Damit wird ein Vorschlag für die Gestaltung eines visuellen Interface unterbreitet, das die bessere kognitive Integration von mehreren möglichen Perspektiven auf komplexe historische Datensätze ermöglicht. </p>
+<p>Das Bezugsproblem stellt dabei die kognitive Herausforderung dar, die auftritt, wenn multiple Visualisierungen (z.B. Karten, Treemaps oder Netzwerke – mit ihrer jeweiligen zeitlich-dynamischen Dimension) als Teilperspektiven auf denselben Datensatz zusammenkommen. Indem die resultierenden Bilder üblicherweise nur zeitlich gestaffelt (sequentiell) oder in räumlichem Nebeneinander (parallel, gelegentlich auch als „coordinated multiple views“, Roberts, 2007) präsentiert werden, stellt die makrokognitive Synthese (Klein &amp; Hofmann, 2008) dieser lokalen Teilperspektiven zu einem globalen 
+                <hi rend="italic">bigger picture</hi> eine besondere Herausforderung dar, das die kognitiven Systeme von ForscherInnen nicht selten überlastet. Kognitionswissenschaftlichen Reflexionen zum Gebrauch visueller Interfaces (Hegarty, 2011; Liu, Nersessian, &amp; Stasko, 2008; Patterson et al., 2014) gehen davon aus, dass solche Synthesen qualitativ sehr unterschiedliche Ergebnisse zeitigen können – und dass ohne besonderen makrokognitiven Aufwand nur das Zustandekommen von unvollständigen und oftmals inkonsistenten „kognitiven Collagen“ (Tversky, 1993) zu erwarten ist.
+            </p>
+<p>Im Kontrast dazu präsentiert der Vortrag ein polykubistisches Rahmenwerk (Windhager, 2013; Windhager et al., 2016), das eine Synthese von unterschiedlichen Visualisierungen schon auf der Ebene der externen Repräsentation (i.e. des Displays) vornimmt, und somit die Konstruktion eines konsistenten mentalen Modells als interne Repräsentation erleichtert. Als grundlegende Methode der Visualisierung dienen hierbei sogenannte Raum-Zeit-Kuben (Space-Time Cubes), die zweidimensionale Visualisierungen (z.B. Karten) mit einer Zeitachse in der dritten Dimension zusammenführen. Die geographische Bewegung von Individuen oder Objekten wird in solchen Kuben als Raum-Zeit-Spur mit jeweils spezifischer und charakteristischer Gestalt sichtbar: Während ruhende Objekte vertikale Trajektorien in die Raumzeit zeichnen, werden Wanderungen und Ortsveränderungen als horizontale Abweichungen sichtbar, die in der Folge visuell analysiert werden können. Durch die freie Skalierbarkeit solcher Kuben können räumliche Bewegungen (von lokalen bis zu globalen Mustern) in allen zeitlichen Maßstäben (von Stunden bis zu Epochen) abgedeckt werden. </p>
+<p>Dieses Verfahren, dass die beiden Visualisierungsmethoden von geographischen Karten und chronographischen Timelines zur Synthese bringt, kann in der Folge auf andere Methoden wie Treemaps oder Netzwerkvisualisierungen übertragen werden (Federico, Aigner, Miksch, Windhager, &amp; Zenk, 2011; Windhager, 2013). Damit werden komplementäre Perspektiven auf die Lebenswege von Individuen durch die dreidimensionalen Topologien von geografischer, sozialer oder kulturell-kategorialer Raumzeit zusammengeführt (Abb. 1). Dieses Rahmenwerk von „coordinated multiple cubes“ dient durch seine generalisierte Projektionsmethode für zeit-orientierte Daten insofern zugleich der visuellen Analyse, sowie der visuellen Synthese von üblicherweise getrennten Einzelperspektiven. Die Kuben können in der Folge mit verschiedenen Methoden der dynamischen Visualisierung im Detail exploriert werden (Bach et al., 2014), sowie durch die Nutzung weiterer visueller Kohärenztechniken (z.B. narrative Methoden, cf. Windhager, Schreder, Smuc, &amp; Mayr 2015) verwoben werden. Darüber hinaus wird durch die skizzierte Architektur die Trennung von Methoden der “Scientific Visualization” und der “Information Visualization” (Rhyne, 2003) überbrückt, wodurch Vorteile und Synergien für beide Seiten zum Tragen kommen (Sedlmair et al., 2009).</p>
+<p>Um die praktische Relevanz dieses Rahmenwerks für die Exploration historischer Daten zu demonstrieren, präsentieren wir erste Ergebnisse der geo-temporalen Visualisierung von biographischen Datensätzen aus dem APIS-Projekt (http://www.oeaw.ac.at/acdh/en/apis) mithilfe der Software GeoTime (Kapler &amp; Wright, 2005). In der Gegenüberstellung der Lebenswege von Individuen verschiedener Berufsgruppen (z.B. von Abenteurern und Kunstschaffenden) kommen strukturelle Merkmale zum Vorschein, die der visuellen Analyse komplexer historischer Datensätze neue Möglichkeiten eröffnen.</p>
 <figure>
-<graphic url="vortrag-FISCH-1000020000000320000002584F1C62E428FC24BB.png"/>
-<head>vossantos_nyt.png</head>
+<graphic height="8.006102777777778cm" n="1001" rend="inline" url="vortrag-WINDH-image1.png" width="16.002cm"/>
 </figure>
-</p>
-<p>Am häufigsten als ›source‹ verwendet wurden folgende Namen:</p>
-<table rend="frame" xml:id="Table1">
-<row>
-<cell rend="center bold">Anzahl</cell>
-<cell rend="center bold">source</cell>
-</row>
-<row>
-<cell rend="center">6</cell>
-<cell rend="center">Michael Jordan</cell>
-</row>
-<row>
-<cell rend="center">5</cell>
-<cell rend="center">Michelangelo</cell>
-</row>
-<row>
-<cell rend="center">4</cell>
-<cell rend="center">Babe Ruth</cell>
-</row>
-<row>
-<cell rend="center">3</cell>
-<cell rend="center">Zelig</cell>
-</row>
-<row>
-<cell rend="center">3</cell>
-<cell rend="center">Rodney Dangerfield</cell>
-</row>
-<row>
-<cell rend="center">3</cell>
-<cell rend="center">Neil Young</cell>
-</row>
-<row>
-<cell rend="center">3</cell>
-<cell rend="center">Elvis</cell>
-</row>
-<row>
-<cell rend="center">3</cell>
-<cell rend="center">Don Quixote</cell>
-</row>
-</table>
-<p>Als Beispiel für Treffer seien diejenigen für Michael Jordan genannt:</p>
-<list type="unordered">
-<item>»Romario is the 
-                        <hi rend="italic">Michael Jordan</hi> of soccer and Bebeto is the Magic Johnson of soccer« (1994)
-                    </item>
-<item>»Bonfire, the 
-                        <hi rend="italic">Michael Jordan</hi> of dressage horses« (1998)
-                    </item>
-<item>»Brian Foster, the 
-                        <hi rend="italic">Michael Jordan</hi> of BMX racing« (1998)
-                    </item>
-<item>»The stunt biker Dave Mirra, the 
-                        <hi rend="italic">Michael Jordan</hi> of the dirt set« (2000)
-                    </item>
-<item>»Cynthia Cooper is the 
-                        <hi rend="italic">Michael Jordan</hi>, the Larry Bird, the Magic Johnson of this league« (2000)
-                    </item>
-<item>»McNabb has been called the 
-                        <hi rend="italic">Michael Jordan</hi> of the National Football League« (2001)
-                    </item>
-</list>
-<p>Trotz der zeitlichen Einschränkung des Korpus lassen sich bereits einige vielversprechende Beobachtungen anstellen und Thesen bilden: 1. Produktive Referenzgrößen einer Vossanto sind sowohl reale als auch fiktionale Figuren (Bsp. für letztere aus der obigen Liste: Woody Allens »Zelig«, Cervantes’ »Don Quixote«). 2. Öffentliche Personen oder bekannte fiktionale Charaktere haben bestimmte Eigenschaften, die sie für die Verwendung als Referenzgröße einer Vossanto prädestinieren oder nicht (es bleibt etwa zu erforschen, warum gerade Michael Jordan und Michelangelo sich so gut eignen und nicht andere Sportler bzw. Künstler). 3. Es gibt historisch stabile Referenzgrößen, deren Bekanntheit vorausgesetzt werden kann (z. B. Michelangelo), und es gibt ephemere Referenzgrößen, die ab irgendeinem Zeitpunkt nicht mehr als Bezugspunkt taugen (für das benutzte zeitgenössische Korpus eher noch nicht relevant).</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Deutschsprachiges Korpus</head>
-<p>Das deutsche Datenset besteht aus einer Sammlung des Archivs der Wochenzeitung 
-                    <hi rend="italic">Die Zeit</hi> und enthält die Artikel aus den Jahren 1995 bis 2011. Insgesamt umfasst das Korpus 126.702 Dokumente.
-                </p>
-<p>Zunächst wurden die Volltexte (inklusive Überschriften) aller Dokumente extrahiert. Diese wurden dann mit Hilfe des Part-of-Speech-Taggers und Named-Entity-Recognition-Tools des Stanford CoreNLP Package verarbeitet. Für die Analyse deutschsprachiger Texte enthält Stanford CoreNLP speziell für das Deutsche trainierte Modelle (Faruqui und Pado 2010). Somit können alle Texte auf drei Ebenen untersucht werden: auf der Wortebene, der Part-of-Speech-Ebene sowie der Named-Entity-Ebene. Mithilfe von regulären Ausdrücken, die auf den verschiedenen Ebenen angewandt werden können, wurde dann nach Vossanto-Mustern gesucht. Im Gegensatz zur Verarbeitung des englischsprachigen Korpus wurde jedoch noch nicht versucht, auch das ›target‹ einer Vossanto zu extrahieren. Stattdessen wurden Muster entworfen, die das ›source‹-Objekt sowie das »aktualisierende Signal« matchen. Ausschlaggebend für diese Herangehensweise waren die in einem Testdurchlauf beobachtete hohe Anzahl an Vossantos ohne unmittelbaren Verweis auf das ›target‹ sowie eine große Vielfalt an möglichen Formulierungen, die auf die Relation zum ›target‹ hinweisen können. Mithilfe relativ strikter Regeln konnte die Anzahl an falschen Extraktionen im Rahmen gehalten werden. Ein vereinfachtes Beispiel für eine Extraktionsregel lautet etwa: »eine Art PERSON (der|des) (ADJECTIVE)? NOUN«.</p>
-<p>Die Produktivität der beiden häufigsten Referenznamen des NYT-Korpus bestätigt sich im verwendeten deutschen Korpus, etwa wenn vom »Michael Jordan der analytischen Philosophie« die Rede ist (
-                    <hi rend="italic">Die Zeit</hi> 44/1999) oder vom »bulgarischen Michelangelo« (
-                    <hi rend="italic">Die Zeit</hi> 14/2001). Ansonsten scheint es sprachen- bzw. kulturspezifische Präferenzen zu geben. Die häufigsten ›sources‹ sind:
-                </p>
-<table rend="frame" xml:id="Table2">
-<row>
-<cell rend="center bold">Anzahl</cell>
-<cell rend="center bold">source</cell>
-</row>
-<row>
-<cell rend="center">9</cell>
-<cell rend="center">Robin Hood</cell>
-</row>
-<row>
-<cell rend="center">6</cell>
-<cell rend="center">Bill Gates</cell>
-</row>
-<row>
-<cell rend="center">4</cell>
-<cell rend="center">Franz Beckenbauer</cell>
-</row>
-<row>
-<cell rend="center">3</cell>
-<cell rend="center">Daniel Düsentrieb</cell>
-</row>
-<row>
-<cell rend="center">3</cell>
-<cell rend="center">Heinz Rühmann</cell>
-</row>
-<row>
-<cell rend="center">3</cell>
-<cell rend="center">James Dean</cell>
-</row>
-<row>
-<cell rend="center">3</cell>
-<cell rend="center">Jesus Christus</cell>
-</row>
-<row>
-<cell rend="center">3</cell>
-<cell rend="center">Norbert Blüm</cell>
-</row>
-<row>
-<cell rend="center">3</cell>
-<cell rend="center">Willy Brandt</cell>
-</row>
-</table>
-<p>Ähnlich wie im NYT-Korpus ist erkennbar, wie stark typisierend mythische bzw. fiktive Figuren sind (Robin Hood, Daniel Düsentrieb). Daneben zeigt sich, dass »Bill Gates«, der im NYT-Korpus nur zweimal als ›source‹ einer Vossanto vorkommt, im 
-                    <hi rend="italic">Zeit</hi>-Korpus sechs Mal als Referenz vertreten ist:
-                </p>
-<list type="unordered">
-<item>»eine Art Bill Gates des Stolperns« (1998)</item>
-<item>»Der Bill Gates von Aurich« (2001)</item>
-<item>»der Bill Gates von Ostfriesland« (2001)</item>
-<item>»der Bill Gates von Aurich« (2002)</item>
-<item>»der britische Bill Gates« (2008)</item>
-<item>»der Bill Gates von Estland« (2010)</item>
-</list>
-<p>Die wiederholte Verwendung des »Bill Gates von Aurich« zeigt, wie stark ein ›target‹ mit einer ›source‹ verwachsen kann. (Paradebeispiel hierfür ist im Übrigen Vittorio Hösle, »der Boris Becker der Philosophie«, eine Bezeichnung, die es bis in den Wikipedia-Artikel zu Hösle geschafft hat.) Am Beispiel Bill Gates’ lässt sich wie zuvor am Beispiel Obama demonstrieren, dass ein Name sowohl als ›target‹ als auch als ›source‹ vorkommen kann. Bevor Bill Gates selbst als Referenz verwendet wird, wird er in einem Artikel von 1995 noch durch eine andere Person beschrieben: »Bill Gates ist der Henry Ford des Computerzeitalters«.</p>
-<p>Insgesamt wurden aus 1.456 Vossanto-Kandidaten 225 manuell als Vossantos markiert, die sich wie folgt über die im Korpus vorhandenen Jahre verteilen:</p>
 <p>
-<figure>
-<graphic url="vortrag-FISCH-100002000000032000000258BB20B0C3704E9BD3.png"/>
-<head>vossantos_zeit.png</head>
-</figure>
-</p>
-<p>Zu den fälschlich extrahierten Named Entities gehören »der Berliner Klaus Wowereit«, »der deutsche Michel« oder »der Anton aus Tirol«, stehende Wendungen, die grammatisch unseren definierten Vossanto-Mustern entsprechen.</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Erkenntnisse und Ausblick</head>
-<p>Die Vossanto ist als Stilmittel nur scheinbar einfach strukturiert, das Erstellen von Extraktionsregeln daher alles andere als trivial. Die vorliegenden Skripte weisen bekannte Lücken auf, die Qualität hängt v. a. von der Verlässlichkeit der benutzten NER-Tools und der Präzision der definierten Muster ab. Fehlende Goldannotationen für dieses Phänomen erschweren zudem eine Evaluierung. Die vorliegende Arbeit hat daher explorativen Charakter, die Optimierung von Precision und Recall lag noch nicht in deren Fokus, ist aber das nächste Ziel dieses Projekts.</p>
-<p>Trotz der genannten Einschränkungen konnten durch diesen korpusbasierten Ansatz neue Erkenntnisse zur Vielgestaltigkeit des Phänomens ›Vossianische Antonomasie‹ gewonnen werden. So lassen sich zahlreiche Spezialfälle unterscheiden und systematisch untersuchen (vgl. auch Fischer/Wälzholz 2014), beispielhaft genannt seien:</p>
-<list type="unordered">
-<item>Tiere als ›target‹ (»
-                        <hi rend="italic">Sea Hero</hi> is the Bobo Holloman of racing«, NYT, 1993; »
-                        <hi rend="italic">Bonfire</hi>, the Michael Jordan of dressage horses«, NYT, 1998),
-                    </item>
-<item>Feminisierungen (Adele Schopenhauer, »eine Art 
-                        <hi rend="italic">Donna Quichotta</hi> des Weimarer Musenvereins«, 
-                        <hi rend="italic">Die Zeit</hi> 18/2002; »Tracey [Emin], die 
-                        <hi rend="italic">Donna Giovanna</hi> der britischen Gegenwartskunst«, 
-                        <hi rend="italic">Die Zeit</hi> 9/2006; »Kati Witt ist jetzt eine 
-                        <hi rend="italic">Franziska Beckenbauer</hi> der Münchner Olympiabewerbung.«, 
-                        <hi rend="italic">Die Zeit</hi> 39/2010),
-                    </item>
-<item>nicht individualisierbare ›sources‹: »the [God, King, Queen, Satan, Emperor, Oracle, Shogun, Czar, Sultan, Buddha] of«,</item>
-<item>mythologische und fiktive Figuren als ›sources‹: »the [Santa Claus, Midas, Godzilla, Pied Piper, Energizer Bunny, Jupiter, Icarus] of«,</item>
-<item>Personifizierungen, also der Einsatz individueller Personen/Figuren als ›source‹ für Firmen, Vereine, Bands oder Orte als ›target‹ (»
-                        <hi rend="italic">Sturm, Ruger</hi> is the 
-                        <hi rend="italic">Benedict Arnold</hi> of the gun industry«, NYT, 1989; »
-                        <hi rend="italic">Aerosmith</hi>, the 
-                        <hi rend="italic">Dorian Gray</hi> of rock bands«, NYT, 1993; »the 
-                        <hi rend="italic">Hudson</hi> has been the 
-                        <hi rend="italic">John Barrymore</hi> of rivers, noble in profile but a sorry wreck«, NYT, 1996; »the 
-                        <hi rend="italic">National Collegiate Athletic Association</hi>, the 
-                        <hi rend="italic">Kenneth Starr</hi> of sports«, NYT, 1998).
-                    </item>
-</list>
-<p>Zu letzteren Beispielen gehört nun endlich auch der titelgebende »Helmut Kohl unter den Brotaufstrichen« (
-                    <hi rend="italic">der Freitag</hi> 35/2011).
-                </p>
-<p>Auch zur Distribution der Vossantos innerhalb der beiden Zeitungskorpora ließen sich belastbare Ergebnisse gewinnen. Demnach sind Vossantos besonders im Kultur- und Sport-Ressort beliebt (Vorkommen in der Sektion »Arts« der NYT: 78; in der Sektion »Sports«: 57; auf dem nächsten Rang mit großem Abstand »New York and Region«: 28 – im »Feuilleton + Literatur«-Ressort der Zeit: 76, »Politik«: 54, nächstrangig ist weit entfernt »Wirtschaft« mit 23 Vorkommen; »Sport« hat hier keine Treffer, denn die gedruckte 
-                    <hi rend="italic">Zeit</hi> hat kein dediziertes Sport-Ressort).
-                </p>
-</div>
+<hi rend="bold">Abbildung 1</hi>: Rahmenwerk zur Visualisierung von Biographiedaten mit paralleler Perspektive auf geographische, soziale und kategoriale Raumzeit.
+            </p>
 </body>
 <back>
 <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-<hi rend="bold">Bergien, Angelika</hi> (2013):
-                        „Names as frames in current-day media discourse“, 
-                        in: Felecan, Oliviu (ed.): 
-                        <hi rend="italic">Name and Naming</hi>. Proceedings of the second international conference on onomastics. Cluj-Napoca: Editura Mega 2013: 19–27.
-                    </bibl>
-<bibl>
-<hi rend="bold">Bird, Steven / Loper, Edward / Klein, Ewan</hi> (2009): 
-                        <hi rend="italic">Natural Language Processing with Python</hi>. 
-                        O’Reilly Media Inc.
-                    </bibl>
-<bibl>
-<hi rend="bold">Faruqui, Manaal / Pado, Sebastian</hi> (2010):
-                        „Training and Evaluating a German Named Entity Recognizer with Semantic Generalization“, 
-                        in: 
-                        <hi rend="italic">Proceedings of Konvens 2010</hi>.
-                    </bibl>
-<bibl>
-<hi rend="bold">Fischer, Frank / Wälzholz, Joseph</hi> (2014): 
-                        „Jeder kann Napoleon sein: Vossianische Antonomasie: Eine Stilkunde“, 
+<hi rend="bold">Bach, Benjamin / Dragicevic, Pierre / Archambault, Daniel / Hurter, Christophe / Carpendale, Sheelagh</hi> (2014):
+                        „A Review of Temporal Data Visualizations Based on Space-Time Cube Operations“, 
                         in:
-                        <hi rend="italic">Frankfurter Allgemeine Sonntagszeitung</hi> 51 (21. Dezember 2014): 34 
-                        <ptr target="http://www.umblaetterer.de/wp-content/uploads/2014/12/vossanto_fas.png"/>.
+                        <hi rend="italic">EuroVis-STARs</hi>.
+                        The Eurographics Association 23–41. 
                     </bibl>
 <bibl>
-<hi rend="bold">Holmqvist Kenneth / Płuciennik Jarosław</hi> (2010): 
-                        „Princess antonomasia and the truth: Two types of metonymic relations“,
-                        in: Burkhardt, Armin / Nerlich, Brigitte (eds.): 
-                        <hi rend="italic">Tropical Truth(s): The Epistemology of Metaphor and Other Tropes</hi>. 
-                        Berlin/New York: De Gruyter 373–381 
-                        10.1515/9783110230215.
+<hi rend="bold">Engelhardt, Yuri</hi> (2006): 
+                        „Objects and spaces: The visual language of graphics“,  
+                        in:
+                        <hi rend="italic">International Conference on Theory and Application of Diagrams</hi>. 
+                        Berlin / Heidelberg: Springer 104–108.
                     </bibl>
 <bibl>
-<hi rend="bold">Lakoff, George</hi> (1987): 
-                        <hi rend="italic">Women, Fire, and Dangerous Things: What Categories Reveal about the Mind</hi>. 
-                        Chicago: The University of Chicago Press.
+<hi rend="bold">Federico, Paolo / Aigner, Wolfgang / Miksch, Silvia / Windhager, Florian / Zenk, Lukas</hi> (2011): 
+                        „A Visual Analytics Approach to Dynamic Social Networks“, 
+                        in:
+                        <hi rend="italic">Proceedings of the 11th International Conference on Knowledge Management and Knowledge Technologies (i-KNOW), Special Track on Theory and Applications of Visual Analytics (TAVA)</hi>. 
+                        Graz: ACM 47:1–47:8.
                     </bibl>
 <bibl>
-<hi rend="bold">Lausberg, Heinrich</hi> (1960): 
-                        <hi rend="italic">Handbuch der literarischen Rhetorik. Eine Grundlegung der Literaturwissenschaft</hi> 2. 
-                        München: Hueber.
+<hi rend="bold">Hegarty, Mary</hi> (2011): 
+                        „The cognitive science of visual-spatial displays: Implications for design“ ,
+                        in: 
+                        <hi rend="italic">Topics in Cognitive Science</hi> 3: 446–474.
                     </bibl>
 <bibl>
-<hi rend="bold">Sandhaus, Evan</hi> (2008): 
-                        <hi rend="italic">The New York Times Annotated Corpus LDC2008T19</hi>. DVD. 
-                        Philadelphia: Linguistic Data Consortium.
+<hi rend="bold">Jänicke, Stefan / Franzini, Greta / Cheema, Muhammad Faisal / Scheuermann, Gerik</hi> (2015): 
+                        „On Close and Distant Reading in Digital Humanities: A Survey and Future Challenges“,  
+                        in:
+                        <hi rend="italic">EuroVis-STARs</hi>. 
+                        The Eurographics Association.
                     </bibl>
 <bibl>
-<hi rend="bold italic">Arbeitsrepositorium</hi>: 
-                        <ptr target="https://github.com/weltliteratur/vossanto"/>
-</bibl>
+<hi rend="bold">Kapler, Thomas / Wright, William</hi> (2005): 
+                        „GeoTime information visualization“,
+                        in: 
+                        <hi rend="italic">Information Visualization</hi> 4 (2), 136–146.
+                    </bibl>
 <bibl>
-<hi rend="bold italic">Folien zum Vortrag</hi>: 
-                        <ptr target="https://lehkost.github.io/slides/2017-bern/"/>
-</bibl>
+<hi rend="bold">Klein, Gary / Hoffman, Robert R.</hi> (2008): 
+                        „Macrocognition, mental models, and cognitive task analysis methodology“, 
+                        in: 
+                        <hi rend="italic">Naturalistic Decision Making and Macrocognition</hi> 57–80.
+                    </bibl>
+<bibl>
+<hi rend="bold">Liu, Zhicheng / Nersessian, Nancy J. / Stasko, John T.</hi> (2008): 
+                        „Distributed cognition as a theoretical framework for information visualization“,
+                        in:
+                        <hi rend="italic">IEEE Transactions on Visualization and Computer Graphics</hi> 14 (6) 1173–1180.
+                    </bibl>
+<bibl>
+<hi rend="bold">Patterson, Robert E. / Blaha, Leslie M. / Grinstein, Georges G. / Liggett, Kristen K. / Kaveney, David E. / Sheldon, Kathleen C. /  Moore, Jason A.</hi> (2014): 
+                        „A human cognition framework for information visualization“,  
+                        in:
+                        <hi rend="italic">Computers &amp; Graphics</hi> 42: 42–58.
+                    </bibl>
+<bibl>
+<hi rend="bold">Roberts, Jonathan C.</hi> (2007): 
+                        „State of the art: Coordinated &amp; multiple views in exploratory visualization“,  
+                        in:
+                        <hi rend="italic">Fifth International Conference on Coordinated and Multiple Views in Exploratory Visualization (CMV’07)</hi> 61–71. 
+                        IEEE.
+                    </bibl>
+<bibl>
+<hi rend="bold">Rhyne, Theresa-Marie</hi> (2003): 
+                        „Does the difference between information and scientific visualization really matter?“,
+                        in:
+                        <hi rend="italic">IEEE Computer Graphics and Applications</hi> 23 (3): 6–8.
+                    </bibl>
+<bibl>
+<hi rend="bold">Scaife, Mike / Rogers, Yvonne</hi> (1996): 
+                        „External cognition: how do graphical representations work?“,
+                        in:
+                        <hi rend="italic">International Journal of Human-Computer Studies</hi> 45 (2): 185–213.
+                    </bibl>
+<bibl>
+<hi rend="bold">Sedlmair, Michael / Ruhland, Kerstin / Hennecke, Fabian / Butz, Andreas / Bioletti, Susan / O’Sullivan, Carol</hi> (2009): 
+                        „Towards the big picture: Enriching 3d models with information visualisation and vice versa“,  
+                        in:
+                        <hi rend="italic">Smart Graphics</hi>.
+                        Springer 27–39.
+                    </bibl>
+<bibl>
+<hi rend="bold">Sula, Chris Alen</hi> (2013): 
+                        „Quantifying Culture: Four Types of Value in Visualisation“,  
+                        in: Bowen, Jonathan P. / Keene, Suzanne / Ng, Kia (eds.):
+                        <hi rend="italic">Electronic Visualisation in Arts and Culture</hi>. 
+                        Springer 25–37.
+                    </bibl>
+<bibl>
+<hi rend="bold">Swaab, Roderick I. / Postmes, Tom / Neijens, Peter / Kiers, Marius H. / Dumay, Adrie C. M.</hi> (2002): 
+                        „Multiparty negotiation support: The role of visualization’s influence on the development of shared mental models“, 
+                        in:
+                        <hi rend="bold">Journal of Management Information Systems</hi> 19 (1): 129–150.
+                    </bibl>
+<bibl>
+<hi rend="bold">Tversky, Barbara</hi> (1993): 
+                        „Cognitive maps, cognitive collages, and spatial mental models“,  
+                        in:
+                        <hi rend="italic">Spatial Information Theory: A Theoretical Basis for GIS</hi>. 
+                        Berlin: Springer 14–24.
+                    </bibl>
+<bibl>
+<hi rend="bold">Windhager, Florian</hi> (2013): 
+                        „On Polycubism. Outlining a Dynamic Information Visualization Framework for the Humanities and Social Sciences“,  
+                        in: Fuellsack, Manfred (ed.):
+                        <hi rend="italic">Networking Networks: Origins, Applications, Experiments</hi>. 
+                        Wien: Turia + Kant 26–63.
+                    </bibl>
+<bibl>
+<hi rend="bold">Windhager, Florian / Mayr, Eva / Schreder, Günther / Smuc, Michael / Federico, Paolo / Miksch, Silvia</hi> (2016): 
+                        „Reframing Cultural Heritage Collections in a Visualization Framework of Space-Time Cubes“,  
+                        in:
+                        <hi rend="italic">Proceedings of the 3rd International Workshop on Computational History (HistoInformatics 2016)</hi>.
+                        CEUR 20–24.
+                    </bibl>
+<bibl>
+<hi rend="bold">Windhager, Florian / Schreder, Günther / Smuc, Michael / Mayr, Eva</hi> (2015): 
+                        „Drawing Things Together: Supporting Information Visualizations' Coherence across Multiple Views“,  
+                        in:
+                        <hi rend="italic">Proceedings of the IEEE Information Visualization Conference 2016 (Posters Compendium)</hi>.
+                        IEEE Computer Society Press.
+                    </bibl>
 </listBibl>
 </div>
 </back>

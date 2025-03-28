@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="142_final-HORSTMANN_Jan_Texte_digital_annotieren_und_analysieren_mit_C" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="108_final-HODEL_Tobias_Automatic_Text_and_Feature_Recognition__Mit_REA" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Texte digital annotieren und analysieren mit CATMA 6.0</title>
+                <title>Automatic Text and Feature Recognition: Mit READ Werkzeugen Texte erkennen und Dokumente analysieren</title>
                 <author>
                     <persName>
-                        <surname>Horstmann</surname>
-                        <forename>Jan</forename>
+                        <surname>Hodel</surname>
+                        <forename>Tobias</forename>
                     </persName>
-                    <affiliation>Universität Hamburg, Deutschland</affiliation>
-                    <email>jan.horstmann@uni-hamburg.de</email>
+                    <affiliation>Staatsarchiv des Kantons Zürich, Schweiz</affiliation>
+                    <email>tobias.hodel@uzh.ch</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Meister</surname>
-                        <forename>Jan Christoph</forename>
+                        <surname>Diem</surname>
+                        <forename>Markus</forename>
                     </persName>
-                    <affiliation>Universität Hamburg, Deutschland</affiliation>
-                    <email>jan-c-meister@uni-hamburg.de</email>
+                    <affiliation>Computer Vision Lab, TU Wien</affiliation>
+                    <email>diem@cvl.tuwien.ac.at</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Petris</surname>
-                        <forename>Marco</forename>
+                        <surname>Oliveira Ares</surname>
+                        <forename>Sofia</forename>
                     </persName>
-                    <affiliation>Universität Hamburg, Deutschland</affiliation>
-                    <email>marco.petris@uni-hamburg.de</email>
+                    <affiliation>Digital Humanities Lab, EPF Lausanne</affiliation>
+                    <email>sofia.oliveiraares@epfl.ch</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Schumacher</surname>
-                        <forename>Mareike</forename>
+                        <surname>Weidemann</surname>
+                        <forename>Max</forename>
                     </persName>
-                    <affiliation>Universität Hamburg, Deutschland</affiliation>
-                    <email>mareike.schumacher@uni-hamburg.de</email>
+                    <affiliation>Citlab, Universität Rostock</affiliation>
+                    <email>max.weidemann@uni-rostock.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2019-01-02T11:06:00Z</date>
+                    <date>2015-10-04T22:02:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -71,144 +71,113 @@
                     <term>Workshop</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Annotation</term>
-                    <term>Analyse</term>
-                    <term>Visualisierung</term>
+                    <term>Handwritten Text Recognition</term>
+                    <term>Layout Analysis</term>
+                    <term>Transcription</term>
+                    <term>Crowdsourcing</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Strukturanalyse</term>
-                    <term>Annotieren</term>
-                    <term>Einführung</term>
-                    <term>Visualisierung</term>
-                    <term>Methoden</term>
-                    <term>Text</term>
+                    <term>Bilderfassung</term>
+                    <term>Transkription</term>
+                    <term>Identifizierung</term>
+                    <term>Kollaboration</term>
+                    <term>Infrastruktur</term>
+                    <term>Forschungsprozess</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p>In diesem hands-on Workshop werden wir die Möglichkeiten der für Geisteswissenschaftler*innen entwickelten Annotations- und Analyseplattform CATMA 6.0 praktisch erkunden. Es werden keinerlei technische Vorkenntnisse vorausgesetzt. Inhaltlich werden wir uns vor allem den theoretischen und praktischen Aspekten der digitalen Annotation von (literarischen) Texten, als auch der Analyse und Visualisierung dieser Texte und der erstellten Annotationen widmen.</p>
-                <p>CATMA (Computer Assisted Text Markup and Analysis; 
-                    <ref target="http://www.catma.de/">
-                        <hi rend="color(1155CC)" style="font-family:Open Sans">www.catma.de</hi>
-                    </ref>) ist ein open-source-Tool, das seit 10 Jahren an der Universität Hamburg entwickelt und derzeit von über 60 Forschungsprojekten weltweit genutzt wird. Die neue Version 6.0 wird im Zuge des DFG-Projektes forTEXT (
-                    <ref target="http://www.fortext.net/">
-                        <hi rend="color(1155CC)" style="font-family:Open Sans">www.fortext.net</hi>
-                    </ref>) entwickelt und implementiert. Neben erweiterten technischen Möglichkeiten (wie beispielsweise die Möglichkeit der Datenversionierung und die Organisation kollaborativer Arbeit in einer Projektstruktur), bietet die neue Version ein völlig überarbeitetes, intuitiver nutzbares User-Interface, das auf Material Design als dem avanciertesten und am Markt etabliertesten Schema basiert, welches die meisten Nutzer*innen bereits internalisiert haben. Das Interface ermöglicht einen leichten Einstieg in die digitale Textannotation und -analyse, ohne dass umfangreiche technische Kenntnisse vonnöten wären, und ohne dass die Nutzer*innen mit zu vielen (Experten-)Funktionen gleichzeitig konfrontiert würden. Das gesamte Repertoire an Funktionen (wie beispielsweise kollaborative Annotation oder automatische Annotation von Textkorpora) kann dann von erfahreneren Nutzer*innen bei Bedarf genutzt werden.
-                </p>
-                <p>CATMA unterstützt</p>
-                <list type="unordered">
-                    <item>individuelle wie kollaborative Annotation und Analyse – Texte können privat, aber auch im Team erforscht werden;</item>
-                    <item>explorative, non-deterministische Praktiken der Textannotation – CATMA liegt ein diskursiver, diskussionsorientierter Ansatz zur Textannotation zugrunde, der auf die Forschungspraktik hermeneutischer Disziplinen zugeschnitten ist;</item>
-                    <item>die nahtlose Verknüpfung von Textannotation und -analyse in einer webbasierten Arbeitsumgebung – Analyse und Interpretation gehen nach dem Prinzip des ‘hermeneutischen Zirkels’ in CATMA damit Hand in Hand.</item>
-                </list>
-                <p>Von linguistischen Textanalysetools unterscheidet sich CATMA insbesondere durch seinen 
-                    <hi rend="color(3A3A3A)">„</hi>undogmatischen” Ansatz: Das System schreibt mit seiner hermeneutischen Annotation (vgl. Piez 2010) weder definierte Annotationsschemata oder -regeln vor, noch erzwingt es die Verwendung von starren Ja-/Nein- oder Richtig-/Falsch-Taxonomien. Wenn eine Textstelle mehrere Interpretationen zulässt (wie es in literarischen Texten häufig der Fall ist), ist es in CATMA daher möglich, mehrere und sogar widersprechende Annotationen zu vergeben und so der Bedeutungsvielfalt der Texte Rechnung zu tragen. Mit dem sog. Query-Builder lassen sich außerdem Schritt für Schritt Textanalysen durchführen. Die Ergebnisse der Analyse können schließlich in verschiedenen Varianten visualisiert und für die literaturwissenschaftliche Interpretation und Argumentation genutzt werden.
-                </p>
-                <p>Zudem bietet CATMA auch die Möglichkeit, bereits annotierte Texte zu verarbeiten (z.B. durch den Upload von XML-Dateien) und die in anderen Tools erstellten Annotationen anzuzeigen, mit zu analysieren und damit wissenschaftlich nachzunutzen. Außerdem lassen sich in CATMA auch automatische (z.B. POS für deutschsprachige Texte) und halb-automatische Annotationen generieren.</p>
+            <p style="text-align:left; ">Dank 
+                <hi rend="italic">machine learning</hi> und 
+                <hi rend="italic">computer vision</hi> ist seit wenigen Jahren die automatisierte Handschriftenerkennung möglich. Obwohl aktuell einzelne Handschriften bzw. sehr ähnliche Handschriftentypen noch trainiert werden müssen, wird es in absehbarer Zeit allgemeine Modelle geben, die Rohtranskriptionen mit einer Fehlerquote unter 10% ausgeben. Paläographische Kenntnisse werden vor allem zur Korrektur und kritischen Begutachtung der Technik nötig sein.
+            </p>
+            <p style="text-align:left; ">Im Rahmen des Projekts READ (Recognition and Enrichment of Archival Documents) werden unterschiedliche Aufgaben der Automatisierung (weiter-)entwickelt, um qualitativ gute Ergebnisse mit optimalem Ressourceneinsatz zu erhalten. Ein speziell dafür entwickeltes Tool ist die Software Transkribus und die Transkribus Weboberfläche (für Transkription, Tagging/Annotation und Korrektur in der Layouterkennung). Beide Ansätze verkoppeln auf unterschiedliche Weise die Arbeit von Expertinnen und maschinelle Erkennleistung. Software und Webservice sind frei verfügbar unter 
+                <ref target="http://www.transkribus.eu">www.transkribus.eu</ref>. Darüber hinaus wurden im Rahmen von READ weitere Extraktions- und Annotationsmöglichkeiten entwickelt, die im Workshop zusammen mit Transkribus vorgestellt und durch die Teilnehmenden mit eigenen oder zur Verfügung gestellten Dokumenten getestet werden 
+                können.<ref target="ftn1" n="1"/>
+            </p>
+            <p style="text-align:left; ">Transkribus unterstützt alle Prozesse vom Import der Bilder über die Identifikation der Textblöcke und Zeilen, die zu einer detaillierten Verlinkung zwischen Text und Bild führt, sowie die Transkription und Annotation der Handschrift bis zum Export der gewonnen Daten in standardisierten Formaten. Darüber hinaus wurden aber noch weitere Tools und Algorithmen entwickelt, die zur Erkennung von graphischen Features genutzt werden können und Tabellen als solche aufbereiten.</p>
+            <p rend="DH-Heading2">Transkribus als Arbeitsumgebung </p>
+            <p style="text-align:left; ">Die Erkennung von Texten bedingt den Upload digitaler Bilder und Prozessierung mit Layouterkennungswerkzeugen. Upload und Layoutanalyse können grosse Batches verarbeiten. Die Nachkorrektur von Layoutanalyse ist nur noch in wenigen Fällen nötig.</p>
+            <p style="text-align:left; ">Je nach Einsatzzweck könne Dokumente entweder automatisch mit bereits bestehenden ATR-Modellen (Automatic Text Recognition) erkannt oder händisch Transkriptionen erstellt werden. Um im erkannten Text und Variantenlesungen (sog. Keywordspotting) zu suchen reicht in den meisten Fällen die Anwendung von bestehenden Modellen.</p>
+            <p style="text-align:left; ">Einzig im Umgang mit Tabellen sind weiterhin diverse manuelle Schritte möglich, um eine hochwertige Identifikation zu gewährleisten. Der Workshop wird einen Fokus auf die Bearbeitung und Erkennung von Tabellenstrukturen legen, die halbautomatisch erfolgen kann.</p>
+            <p style="text-align:left; ">Korrekter Text – entweder durch Transkription oder Korrektur von erkanntem Text entstanden – kann danach zum Training von Handschriftenmodellen verwendet werden. Im Rahmen des Workshops wird das Trainieren von Handschriftenmodellen demonstriert und kann durch die Teilnehmenden selbst ausgetestet werden.</p>
+            <p style="text-align:left; ">Aufbauend auf den Transkriptionen ist es möglich Entitäten (Personen, Orte, Verweise) auszuzeichnen und textuelle Annotationen (Titel, Marginalien, Fussnoten) innerhalb des Textes, aber auch darüber hinaus für Einzeldokumente und ganze Dokumentenbestände anzulegen. Visuelle Features wie Seitenzahlen, Titel oder Marginalien lassen sich nach der Auszeichnung als Strukturmodelle trainieren und können für die Erkennung von grösseren Dokumentenmassen verwendet werden. Die Vorgehensweise wird im Rahmen des Workshops vorgeführt und kann selbst nachvollzogen werden. Daneben ist auch die Anreicherung der Dokumente mit 
+                <hi rend="italic">named entities</hi> (Personen, Orten und Organisationen) möglich, sodass simple digitale Editionen grösstenteils in Transkribus erstellt werden können.
+            </p>
+            <p rend="DH-Heading2">Ausgabeformate </p>
+            <p style="text-align:left; ">Für den Export stehen unterschiedliche Formate und Ausgabeformen zur Verfügung. So ist es möglich XML-Dateien zu exportieren, die den Vorgaben der TEI entsprechen (auch ist es möglich die Standardumformung abzuändern und den eigenen Bedürfnissen anzupassen). Weiter sind auch Ausgaben als Druckdaten (PDF) oder zur Weiterbearbeitung für Textverarbeitungsprogramme (DOCX, TXT) implementiert. Schließlich ist auch ein Export im PAGE-Format (zur Anzeige in Viewern für OCR gelesene Dokumente, Pletschacher, 2010) sowie als METS (Metadata Encoding and Transmission) möglich. </p>
+            <p rend="DH-Heading2">Zielpublikum </p>
+            <p style="text-align:left; ">Die Plattform Transkribus ist für unterschiedliche Gruppen konzipiert. Einerseits für Geisteswissenschaftler*innen, die selbst Transkriptionen und Editionen historischer Dokumente erstellen möchten. Andererseits richtet sich die Plattform an Archive, Bibliotheken und andere Erinnerungsinstitutionen, die handschriftliche Dokumente in ihren Sammlungen aufbewahren und ein Interesse an der Suchbarmachung des Materials haben. Angesprochen werden sollen auch Studierende der Geistes-, Archiv- und Bibliothekswissenschaften mit einem Interesse an der Transkription historischer Handschriften. </p>
+            <p style="text-align:left; ">Das Ziel, eine robuste und technisch hochstehende Automatisierung von Layout- und Handschriftenerkennung, lässt sich nur durch die enge Zusammenarbeit zwischen Geisteswissenschaftler*innen und Informatiker*innen sowie anderen Computerspezialist*innen mit unterschiedlichen Voraussetzungen und Ansprüchen an Datenqualität und Herstellung von Transkriptionen erreichen. Die Algorithmen werden somit nicht nur bis zu einem Status als 
+                <hi rend="italic">proof-of-concept</hi> erarbeitet, sondern bis zur Praxistauglichkeit verfeinert und in größeren Forschungs- und Aufbewahrungsumgebungen getestet und verbessert. Die Informatiker*innen sowie Personen aus angrenzenden Fächern sind entsprechend ebenfalls ein wichtiges Zielpublikum, wobei bei ihnen weniger die Nutzung der Plattform als das Beisteuern von Software(teilen) anvisiert wird. 
+            </p>
+            <p style="text-align:left; ">Die Speicherung der Dokumente erfolgt in der Cloud, gehostet auf Servern der Universität Innsbruck. Die importierten Daten bleiben auch während der Bearbeitung unverändert im Dateisystem liegen und werden ergänzt durch METS und PAGE XML. Alle bearbeiteten Dokumente und Daten bleiben somit in den unterschiedlichen Bearbeitungsstadien nicht nur lokal verfügbar, sondern können für andere Transkribusnutzerinnen und -nutzer freigegeben werden. Dank elaboriertem 
+                <hi rend="italic">user-management</hi> ist die Zuteilung von Rollen möglich. 
+            </p>
+            <p style="text-align:left; ">Die eingespeisten Dokumente und Daten bleiben privat und vor dem Zugriff Dritter geschützt. Von Projektseite können vorgenommene Arbeitsschritte zwecks besserem Verständnis der ausgeführten Arbeiten und letztlich der Verbesserung der Produkte ausgewertet werden.</p>
+            <p style="text-align:left; ">Die Erkennprozesse werden serverseitig durchgeführt, sodass die Ressourcen auf den lokalen Rechnern nicht strapaziert werden. Transkribus ist mit JAVA und SWT programmiert und kann daher plattformunabhängig (Windows, Mac, Linux) genutzt werden. </p>
+            <p rend="DH-Heading2">Ein- und Ausblicke im Workshop </p>
+            <p style="text-align:left; ">Der Workshop richtet sich sowohl an Geisteswissenschaftler*innen als auch an Computerwissenschaftler*innen, wobei vorwiegend die Tools und Möglichkeiten von Transkribus präsentiert werden. </p>
+            <p style="text-align:left; ">Drei zentrale Forschungsaspekte aus READ können im Rahmen des Workshops neben Transkribus 
+                <hi rend="italic">hands-on</hi> ausgetestet werden:
+            </p>
+            <list type="ordered">
+                <item>Max Weidemann: Das Training von Handschriftenmodellen (HTR+);</item>
+                <item>Sofia Ares Oliveira 
+                (<hi rend="italic">in English</hi>): Identifikation von visuellen Features mit dh-segment;
+                </item>
+                <item>Markus Diem: Aufbereitung und Erkennung von Tabellen mit Transkribus und nomacs.</item>
+            </list>
+            <p rend="DH-Heading2">Programm/Ablauf des Workshops </p>
+            <list type="unordered">
+                <item>Begrüssung und Einführung in READ und Transkribus :45’</item>
+                <item>Kurze Beschreibungen der vermittelten Forschungsaspekte (je 15’): 45’</item>
+                <item>Kaffeepause: 30’</item>
+                <item>Arbeit in Kleingruppen am jeweiligen Forschungsaspekt: 60’ (nach ca. 40 Minuten besteht die Möglichkeit die Gruppe zu wechseln)</item>
+                <item>Diskussion der Resultate, weiterer Ausblick und Evaluation: (15-)30'</item>
+            </list>
+            <p style="text-align:left; ">Nach Interesse der Teilnehmenden können während der Gruppenarbeit weitere Tools und Ansätze, die im Rahmen von READ entwickelt wurden, kurz diskutiert werden: 1. Matching von Text und Bild (bspw. aus bestehenden Transkriptionen), 2. Transkribus Learn (e-Learningumgebung), 3. Crowdsourcing-Infrastruktur, 4. ScanTent und DocScan (Fotografieren von Dokumenten mit Android App). </p>
+            <p style="text-align:left; ">Während des gesamten Workshops stehen vier wissenschaftliche Mitarbeitende des Projekts für Fragen und Auskünfte zur Verfügung.</p>
+            <p style="text-align:left; ">Tobias Hodel nimmt bereits im Vorfeld gerne Dokumente oder Projektideen an, damit sich die Veranstalter bereits vor dem Workshop Gedanken zu möglichen technischen Umsetzungen machen können. </p>
+            <p style="text-align:left; ">Das Projekt READ und somit die Weiterentwicklung von Transkribus werden finanziert durch einen Grant der Europäischen Union im Rahmen des Horizon 2020 Forschungs- und Innovationsprogramms (grant agreement No 674943). </p>
+            <p style="text-align:left; ">Zahl der möglichen Teilnehmerinnen und Teilnehmer: Max. 30 Personen.
+                <hi style="font-family:MS Mincho"> </hi>Benötigte technische Ausstattung: Beamer und Whiteboard. 
+            </p>
+            <p style="text-align:left; ">Teilnehmende: Eigener Rechner (wenn möglich Installation von Transkribus; Hilfe zur Installation von Transkribus wird 15 Minuten vor der Veranstaltung angeboten).</p>
+            <p style="text-align:left; ">Rückfragen bitte an tobias.hodel@ji.zh.ch </p>
+            <p style="text-align:left; ">Kontaktdaten aller Beitragenden (inkl. Forschungsinteressen)</p>
+            <p style="text-align:left;">Sofia Ares Oliveira, École Polytechnique de Lausanne, 
+                <hi rend="color(252525)" style="font-family:Helvetica;font-size:10.5pt">CDH-DHLAB</hi>, 
+                <hi rend="color(252525)" style="font-family:Helvetica;font-size:10.5pt">INN 116 / Station 14 / CH-1015 Lausanne / Switzerland</hi>; sofia.oliveiraares@epfl.ch (
+                <hi rend="color(252525)" style="font-family:Helvetica;font-size:10.5pt">Electrical engineering, signal processing, computer vision</hi>).
+            </p>
+            <p style="text-align:left; ">Markus Diem, Technische Universität Wien, Institute of Computer Aided Automation Computer Vision Lab, Favoritenstr. 9/183-2, A-1040 Vienna, Österreich; diem@caa.tuwien.ac.at (Computer Vision, Document Analysis, Layout Analysis/Page Segmentation, Cluster Analysis, Automated Flow Cytometry Analysis).</p>
+            <p style="text-align:left; ">Tobias Hodel, Staatsarchiv des Kantons Zürich, Winterthurerstrasse 170, CH-8057 Zürich, Schweiz; tobias.hodel@ji.zh.ch (Digital Humanities; Automatic Text Recognition; eArchiving; Information Retrieval).</p>
+            <p style="text-align:left; ">Max Weidemann, Institut für Mathematik, Ulmenstraße 69, Universität Rostock, 18051 Rostock, Deutschland; max.weidemann@uni-rostock.de; (Deep Learning, Information Retrieval und Natural Language Processing). </p>
+        </body>
+        <back>
+            <div type="notes">
+                <note xml:id="ftn1" n="1" rend="footnote text">
+                    Einführend siehe die online Tutorials: 
+                    <ref target="https://read.transkribus.eu/transkribus/">https://read.transkribus.eu/transkribus/</ref>. Als 
+                    <hi rend="italic">hands-on</hi> Anleitung wird der Beitrag von Martin Prell empfohlen: »ps: ich bitt noch mahl umb ver gebung meines confusen und üblen schreibens wegen« – Frühneuzeitliche Briefe als Herausforderung automatisierter Handschriftenerkennung. Online: https://doi.org/10.22032/dbt.34849.
+                </note>
             </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Manuelles und kollaboratives Annotieren</head>
-                <p>Die Annotation von Texten gehört seit Jahrhunderten zu den textwissenschaftlichen Kernpraktiken (vgl. Moulin 2010). Genauer lassen sich hier Freitextkommentare, taxonomiebasierte Annotation und Textauszeichnung unterscheiden, wobei die Übergänge häufig fließend sind (vgl. Jacke 2018, § 9). Während CATMA 6.0 auch eine Funktion für Freitextkommentare bietet, ist die taxonomiebasierte Annotation das eigentliche Kerngeschäft des Tools – wobei die Taxonomie prinzipiell undogmatisch erstellt werden kann und die Form von sog. Tagsets annimmt, denen für kollaborative Annotationsprojekte wahlweise eine Annotations-Guideline beigegeben werden kann (vgl. auch Bögel et al).</p>
-                <p>Im Workshop werden wir den Unterschied von 
-                    <hi rend="italic">Document</hi> (der eigentliche Text), 
-                    <hi rend="italic">Tagset</hi> (die aus 
-                    <hi rend="italic" xml:space="preserve">Tags </hi>– d.h. aus einzelnen Beschreibungsbegriffen – gebildete Taxonomie, mit der Texte annotiert werden) und 
-                    <hi rend="italic">Annotation Collection</hi> (die nutzerspezifische Sammlung individueller Annotationen zu einem 
-                    <hi rend="italic">Document</hi> oder einem Korpus) kennenlernen. Diese Dreigliederung ist spezifisch für CATMA und bietet eine Reihe von Vorteilen:
-                </p>
-                <list type="unordered">
-                    <item>Taxonomien können projektübergreifend und unabhängig von Texten und Annotationen wiederverwendet werden;</item>
-                    <item>Annotationen können als 
-                        <hi rend="italic" xml:space="preserve">Collections </hi>nach unterschiedlichen inhaltlichen (z. B. nach Forschungsaspekten) oder auch organisatorischen Gesichtspunkten (z. B.  nach Projektmitgliedern) gruppiert und wiederverwendet bzw. erweitert werden;
-                    </item>
-                    <item>benutzerspezifische Annotationen werden als sog. 
-                        <hi rend="italic">Stand-off Markup</hi> gespeichert und können damit wahlweise angezeigt oder ausgeblendet werden. Der eigentliche Text wird hierbei nicht verändert. Arbeitet eine Gruppe von Annotator*innen mit der gleichen Taxonomie an einem Text, lassen sich Übereinstimmungen und Widersprüche direkt und einfach erkennen (vgl. Gius und Jacke 2017), um auf interessante oder problematische Textstellen aufmerksam zu werden und die ‘Arbeit am Text’ zugleich kritisch zu reflektieren.
-                    </item>
-                </list>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Analyse und Visualisierung</head>
-                <p>Neben der Annotation sind die Analyse und Visualisierung der Text- und Annotationsdaten das andere wichtige Standbein von CATMA. Hier wird 
-                    <hi rend="italic">distant reading</hi> mit 
-                    <hi rend="italic">close reading</hi> zusammengebracht, denn die zuvor manuell erstellten qualitativen Annotationen werden nun in ihrer Quantität und Verteilung hinterfragt. Dies geschieht in Zusammenhang mit „klassischen” DH-Textanalysemethoden wie dem Erstellen einer Wortfrequenzliste, der Analyse von Keywords in Context (KWIC und 
-                    <hi rend="italic">DoubleTree</hi>) oder der Distribution ausgewählter Wörter (oder eben Annotationen) im Text oder in der Textsammlung.
-                </p>
-                <p>Neben diesen grundlegenden Funktionen, die alle per Klick ausgeführt werden können, bietet CATMA den sog. 
-                    <hi rend="italic">Query Builder</hi>, in dem komplexere Abfragen einfach per Mausklick erzeugt werden können, ohne dass tiefergehende Kenntnisse einer Abfragesprache (sog. 
-                    <hi rend="italic">Query Language</hi>) verlangt werden. Im Workshop werden wir uns dabei nicht nur den Analysefunktionen widmen, sondern auch die unterschiedlichen Visualisierungsmöglichkeiten zu den einzelnen Abfragen anschauen und hinterfragen.
-                </p>
-                <p>Im Analysebereich können außerdem halbautomatische Annotationen erstellt werden, d.h. man annotiert wiederkehrende Wörter oder Wortgruppen auf einmal mit einem bestimmten Tag, statt dies manuell und wiederholt im Annotationsmodul zu tun.</p>
-                <p>Der Wechsel zwischen der Arbeit im Annotations- und Analyse- und Visualisierungs-Modul ist ein iterativer Prozess, der die klassisch-zirkuläre hermeneutische Interpretationsarbeit in der Literaturwissenschaft widerspiegelt (vgl. Gius, in Vorbereitung).</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ablauf</head>
-                <p>Im Workshop werden wir uns in einer Mischung aus Präsentations- und Hands-on-Phasen der textanalytischen Arbeit in CATMA 6.0 nähern. Nach einer generellen Einführung in das Tool werden die Teilnehmer*innen anhand eines vorgegebenen Beispieltextes den gesamten Workflow von der individuellen taxonomiebasierten Textannotation, über die Analyse hin zur Visualisierung und Interpretation der Text- und Annotationsdaten kennenlernen und praktisch erproben können.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Lernziele</head>
-                <p>Die Teilnehmer*innen sollen ausgehend vom digitalen Text in die Lage versetzt werden, Annotationen manuell und automatisch unterstützt zu erstellen und in Annotation Collections zu speichern, Tagsets/Taxonomien zu entwickeln und den Text alleine und in Kombination mit den Annotationen zu analysieren und zu visualisieren. Für Diskussionen und individuelle Rückfragen (theoretischer, praktischer und technischer Art) auf jedem Niveau und in Bezug auf die Projekte der Teilnehmer*innen wird ausreichend Möglichkeit bestehen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Zeitplan</head>
-                <p>Im Workshop werden wir den Arbeitsablauf der digitalen Texterforschung praktisch kennenlernen:</p>
-                <list type="unordered">
-                    <item>analytische Textexploration (ca. 30 Minuten)</item>
-                    <item>manuelle und automatische Annotation und Spezifikation von Annotationskategorien (ca. 40 Minuten)</item>
-                    <item>kombinierte Abfragen von Annotations- und Textdaten (ca. 30 Minuten)</item>
-                    <item>visuelle Darstellungsmöglichkeiten von Abfrageergebnissen (ca. 20 Minuten)</item>
-                </list>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Beitragende (Kontaktdaten und Forschungsinteressen)</head>
-                <p>Dr. Jan Horstmann</p>
-                <p>Universität Hamburg, Institut für Germanistik, Überseering 35, Postfach #15, 22297 Hamburg</p>
-                <p>Jan Horstmann ist Postdoc und koordiniert das DFG-Projekt forTEXT, in dem neben der Dissemination von digitalen Routinen, Ressourcen und Tools in die klassischeren Fachwissenschaften auch die Weiterentwicklung von CATMA eine wesentliche Rolle spielt. Als Literaturwissenschaftler interessiert er sich vor allem für die neuen Perspektiven und Erkenntnispotentiale, die DH-Methoden auf literarische Artefakte bereithalten können, und forscht in diesem Sinne unter anderem zu Entsagung und Ironie bei Goethe.</p>
-                <p>Prof. Dr. Jan Christoph Meister</p>
-                <p>Universität Hamburg, Institut für Germanistik, Überseering 35, Postfach #15, 22297 Hamburg</p>
-                <p>Jan Christoph Meister ist Professor für Digital Humanities mit dem Schwerpunkt Literaturwissenschaft. Als ursprünglicher Erfinder von CATMA hat er etliche Forschungsprojekte zur Annotation und Visualisierung textueller Daten und der Entwicklung und Verbesserung von DH-Tools geleitet.</p>
-                <p>Marco Petris, Dipl. Inform.</p>
-                <p>Universität Hamburg, Institut für Germanistik, Überseering 35, Postfach #15, 22297 Hamburg</p>
-                <p>Marco Petris ist Informatiker mit starker Affinität zu geisteswissenschaftlichen Fragestellungen. Er ist von Anfang an an der Entwicklung von CATMA beteiligt und beschäftigt sich mit allen Aspekten der DH-Toolentwicklung, des Tool-Designs und der Implementierung.</p>
-                <p>Mareike Schumacher, M.A.</p>
-                <p>Universität Hamburg, Institut für Germanistik, Überseering 35, Postfach #15, 22297 Hamburg</p>
-                <p>Mareike Schumacher promoviert als digitale Literaturwissenschaftlerin über Orte und narratologische Ortskategorien in literarischen Texten, beschäftigt sich besonders mit den Methoden des distant reading (u.a. Named Entity Recognition oder Stilometrie) und ist im forTEXT-Projekt u.a. für die Dissemination in den (sozialen) Medien zuständig.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Zahl der möglichen Teilnehmer*innen</head>
-                <p>Bis zu 30 Personen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Benötigte technische Ausstattung</head>
-                <p>Teilnehmer*innen bringen ihren eigenen Laptop mit, der mit dem Internet verbunden ist (Achtung: Touch-Devices werden derzeit noch nicht unterstützt). Am Workshop können bis zu 30 Personen teilnehmen. Neben einer stabilen Internetverbindung werden ein Beamer und eine Leinwand benötigt.</p>
-            </div>
-		</body>
-		<back>
             <div type="bibliogr">
                 <listBibl>
-					<head>Bibliographie</head>
-					<bibl>
-						<hi rend="bold">Bögel, Thomas / Gertz, Michael / Gius, Evelyn / Jacke, Janina / Meister, Jan Christoph / Petris, Marco / Strötgen, Jannik (2015)</hi>: <hi rend="italic">„Collaborative Text Annotation Meets Machine Learning: heureCLÉA, a Digital Heuristic of Narrative”</hi>, in: DHCommons Journal 1.
-					</bibl>
-					<bibl>
-						<hi rend="bold">Gius, Evelyn (in Vorbereitung)</hi>: <hi rend="italic">„Digitale Hermeneutik: Computergestütztes close reading als literaturwissenschaftliches Forschungsparadigma?”</hi> in: <hi rend="bold">Fotis Jannidis (Hrsg.)</hi>: <hi rend="italic">Digitale Literaturwissenschaft</hi>. DFG-Symposium 9.–13.10.2018.
-					</bibl>
-					<bibl>
-						<hi rend="bold">Gius, Evelyn / Jacke, Janina (2017)</hi>: <hi rend="italic">„The Hermeneutic Profit of Annotation: On Preventing and Fostering Disagreement in Literary Analysis”</hi>, in: International Journal of Humanities and Arts Computing 11 (2), 233–254.
-					</bibl>
-					<bibl>
-						<hi rend="bold">Jacke, Janina (2018)</hi>: <hi rend="italic">„Manuelle Annotation"</hi>, in: forTEXT. Literatur digital erforschen. <ref target="http://fortext.net/routinen/methoden/manuelle-annotation">http://fortext.net/routinen/methoden/manuelle-annotation</ref> (Zugriff: 24. September 2018).
-					</bibl>
-					<bibl>
-						<hi rend="bold">Moulin, Claudine (2010)</hi>: <hi rend="italic">„Am Rande der Blätter. Gebrauchsspuren, Glossen und Annotationen in Handschriften und Büchern aus kulturhistorischer Perspektive"</hi>, in: Autorenbibliotheken, Quarto. Zeitschrift des Schweizerischen Literaturarchivs 30/31, 19–26.
-					</bibl>
-					<bibl>
-						<hi rend="bold">Piez, Wendell (2010)</hi>: <hi rend="italic">„Towards Hermeneutic Markup. An Architectural Outline"</hi>, in: Digital Humanities Conference 2010, London <ref target="http://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-743.html">http://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-743.html </ref>(Zugriff: 24. September 2018).
-					</bibl>
-				</listBibl>
+                    <head>Bibliographie</head>
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">Leifert, Gundram / Strauß, Tobias / Grüning, Tobias / Wustlich, Welf / Labahn, Roger (2016)</hi>: <hi rend="italic">„Cells in Multidimensional Recurrent Neural Networks”</hi> in: <hi rend="italic">Journal of Machine Learning Research</hi> 17, 1-37.
+                    </bibl>
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">Prell, Martin (2018)</hi>: <hi rend="italic">„»ps: ich bitt noch mahl umb ver gebung meines confusen und üblen schreibens wegen« – Frühneuzeitliche Briefe als Herausforderung automatisierter Handschriftenerkennung“</hi>. Online: https://doi.org/10.22032/dbt.34849.
+                    </bibl>
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">READ (2018)</hi>: <hi rend="italic">„Tutorials and How To Guides“</hi>. Online: https://read.transkribus.eu/transkribus/.
+                    </bibl>
+                </listBibl>
             </div>
         </back>
     </text>

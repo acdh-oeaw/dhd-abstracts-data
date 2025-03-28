@@ -1,40 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="PITTROFF_Sarah_Bilder_im_Kontext__Die_Entwicklung_des_Corpus" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="HENNING_Pia_Das_preußische_Kriegsspiel_als_Forschungsobjekt" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="full">
-                    <title type="main">Bilder im Kontext: Die Entwicklung des Corpus Vitrearum vom Bildarchiv zu Born-Digitals</title>
-                    <title type="sub"/>
-                </title>
+                <title>Das preußische Kriegsspiel als Forschungsobjekt</title>
                 <author>
                     <persName>
-                        <surname>Pittroff</surname>
-                        <forename>Sarah</forename>
+                        <surname>Henning</surname>
+                        <forename>Pia</forename>
                     </persName>
-                    <affiliation>Akademie der Wissenschaften und der Literatur | Mainz, Deutschland</affiliation>
-                    <email>sarah.pittroff@adwmainz.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Gerber</surname>
-                        <forename>Anja</forename>
-                    </persName>
-                    <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland</affiliation>
-                    <email>anja.gerber@bbaw.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Steller</surname>
-                        <forename>Jonatan</forename>
-                    </persName>
-                    <affiliation>Akademie der Wissenschaften und der Literatur | Mainz, Deutschland</affiliation>
-                    <email>jonatan.steller@adwmainz.de</email>
+                    <affiliation>Deutsches Biomasseforschungszentrum; Julius-Maximilians-Universität Würzburg</affiliation>
+                    <email>pia.henning@dbfz.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-08-03T21:52:08.225598167</date>
+                    <date>2022-12-08T09:50:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -61,7 +42,7 @@
                     </address>
                 </publicationStmt>
             <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
+                <p>Converted from a Word document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -77,124 +58,124 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag</term>
+                    <term>Posterpräsentation</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Corpusfotografie</term>
-                    <term>Kontextualisierung</term>
-                    <term>Datenmodellierung</term>
+                    <term>Kriegsspiel</term>
+                    <term>Natural Language Processing</term>
+                    <term>Textkorpus</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Bilderfassung</term>
+                    <term>Sammlung</term>
                     <term>Programmierung</term>
-                    <term>Kontextsetzung</term>
+                    <term>Annotieren</term>
                     <term>Veröffentlichung</term>
-                    <term>Lehre</term>
-                    <term>Artefakte</term>
+                    <term>Stilistische Analyse</term>
+                    <term>Text</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p>Die großen geisteswissenschaftlichen Langzeitvorhaben im deutschen Akademienprogramm umfassen auf Jahrzehnte angelegte Forschungsprojekte, die in der Vergangenheit analog konzipiert wurden und in der Gegenwart vor der Herausforderung stehen, nicht nur ihre Methoden sondern auch ihre Forschungsergebnisse und Publikationsformen einer digitalen Transformation zu unterziehen. Als ursprünglich analoges Langzeitvorhaben, mit nachträglich ergänzter digitaler Komponente, ist das Corpus Vitrearum Medii Aevi (CVMA) Deutschland ein Paradebeispiel für die kontinuierliche Entwicklung von der Buchreihe über das ergänzende digitale Bildarchiv bis hin zum Aufbau von 
-                <hi rend="italic">born-digital</hi> Publikationen. Unter dem Namen ‘Glasmalereien im Kontext’ verlinken Mitarbeitende des Forschungsvorhabens entkontextualisierte Einzelfotografien von Kirchenfenstern, machen die Fenster in ihrem räumlichen Kontext digital erfahrbar und reichern sie mit Linked Open Data an. Der vorliegende Beitrag soll das Vorgehen bei der Entwicklung des Formats aufzeigen und argumentiert darüber hinaus, dass solche offenen digitalen Publikationsformen ein zentraler Beitrag der Digital Humanities zur Weiterentwicklung traditioneller Vorhaben und zukunftsgerichtete Anbindung ihrer Forschungsergebnisse sein können.
+            <div type="div1" rend="DH-Heading1">
+                <head>Historischer Hintergrund</head>
+            <p rend="paragraph" style="text-align: left; ">
+                <hi rend="normaltextrun">Die Geschichte Preußens und seiner Armee wurde bereits intensiver erforscht. Das Kriegsspiel, das mit dieser verbunden ist, bisher jedoch kaum. Um ein Gesamtbild für diese Zeit und ihre Zusammenhänge erhalten zu können, ist eine kritische Auseinandersetzung mit dem Kriegsspiel ebenfalls nötig. Das 1824 vom preußischen Artillerieoffizier Georg Heinrich von Reisswitz ursprünglich der Armee vorgestellte
+                    <hi rend="italic" style="font-size:11pt" xml:space="preserve"> Preußische Kriegsspiel</hi> war das erste offiziell eingeführte professionelle Kriegsspiel. Es handelt sich um eine kartenbasierte Simulation bei der Truppenfiguren maßstabsgetreu dargestellt sind. Der Würfel dient zur Ermittlung von Gefechtsausgängen und anderen nicht durch die Anleitungen festgelegten Entscheidungen. Die damaligen Offiziere versuchten militärische Auseinandersetzungen realitätsnah zu simulieren (Wintjes 2017, Henning 2021b). Bis zu Beginn des 20. Jahrhunderts wurde das Kriegsspiel von unterschiedlichen Autoren weiterentwickelt, so dass heute 20 Regelwerke vorliegen (Henning 2021a; 2021b).
+                </hi>
+                <hi rend="eop"> </hi>
+            </p></div>
+
+            <div type="div1" rend="DH-Heading1">
+                <head>Forschungsstand</head>
+            <p rend="paragraph" style="text-align: left; ">
+                <hi rend="normaltextrun">Aus einem vorangegangenen Projekt liegen Faksimiles von 18 Originalen vor. Diese wurden mit 
+                    <hi rend="italic" style="font-size:11pt" xml:space="preserve">OCR4all </hi>(Reul et al. 2019) erfasst. Da die Faksimiles in unterschiedlichen Frakturschrifttypen vorliegen, musste das OCR-Modell jeweils neu trainiert und für eine erste statistische Analyse einzeln vorverarbeitet werden. Aufgrund des Umfangs und der unterschiedlichen Bildqualität kann die Digitalisierung und Standardisierung des Korpus als zentrale Aufgabe betrachtet werden, bevor die eigentlichen Analysen stattfinden können. Die manuelle Nachkorrektur der Texte und die einheitliche Auszeichnung nach TEI ist ein laufendes Projekt. Weiterhin ist bekannt, dass diverse Übersetzungen der Regelwerke veröffentlicht wurden, allerdings sind diese noch gänzlich unerforscht und bisher nicht im Korpus integriert (Henning 2021a; 2021b, Wintjes 2022).
+                </hi>
+                <hi rend="eop"> </hi>
             </p>
+            <p rend="paragraph" style="text-align: left; ">
+                <hi rend="normaltextrun">Teil der bisherigen Analyse war die Extraktion von distinktiven Merkmalen auf Textebene. Diese wurden im Rahmen meiner Masterthesis bereits erstellt und veröffentlicht (Henning, 2021a; Henning, 2021b). So konnte mit Hilfe einer Zeta-Analyse gezeigt werden, dass eine Zuordnung der einzelnen Texte zur Textsorte 
+                    <hi rend="italic" style="font-size:11pt">Preußisches Kriegsspiel</hi> basierend auf distinktiven Wörtern möglich sein kann. Eine auf BERTs (Devlin et al. 2019) Word Embedding (WE) folgende Support Vector Machine (SVM) zeigt, dass eine automatische Textklassifzierung in ‘Regelwerke’ und ‘militärtheoretische Literatur’ – als Vergleichskorpus – ebenfalls aussichtsreich ist. Auch die Untersuchung der 
+                    <hi rend="italic" style="font-size:11pt">most</hi>
+                    <hi rend="italic" style="font-size:11pt" xml:space="preserve"> frequent </hi>
+                    <hi rend="italic" style="font-size:11pt">words</hi> (MFW), 
+                    <hi rend="italic" style="font-size:11pt">named</hi>
+                    <hi rend="italic" style="font-size:11pt">entity</hi>
+                    <hi rend="italic" style="font-size:11pt">recognition</hi> (NER) und 
+                    <hi rend="italic" style="font-size:11pt">part</hi>
+                    <hi rend="italic" style="font-size:11pt">of</hi>
+                    <hi rend="italic" style="font-size:11pt">speech</hi> (POS) helfen Merkmale des Korpus, wie zum Beispiel die Verwendung der Truppengattungen und des Würfels, sowie den allgemeinen sprachlichen Aufbau (z.B. Wort-/Satzlänge, Verteilung von Substantiven/Adjektiven/Verben) der Textkategorie
+                    <hi rend="italic" style="font-size:11pt" xml:space="preserve"> Preußisches Kriegsspiel </hi>nachzuweisen. Die nach zeitlichen Aspekten gebildeten Teilkorpora sowie das gebildete Vergleichskorpus können ebenfalls anhand der Merkmale unterschieden werden (Versuchsaufbauten: Henning 2021a; 2021b). Dadurch konnte die Hypothese gestärkt werden, dass sich die untersuchten Regelwerke und gebildeten Teilkorpora nicht nur gemeinsam gegen ein Vergleichskorpus abgrenzen lassen, sondern auch untereinander, wodurch eine historische Entwicklung deutlich wird. Durch distinktive Merkmale wie die Verwendung des Würfels als Zufallskomponente und die Veränderung der Gewichtung der Truppengattungen, sind drei Phasen innerhalb der Kriegsspielgeschichte definierbar (Henning 2021a; 2021b). 
+                </hi>
+                <hi rend="eop"> </hi>
+            </p>
+            <p rend="paragraph" style="text-align: left; ">
+                <hi rend="normaltextrun">Sieben Regelwerke, entstanden zwischen 1862 und 1874, der Autoren Wilhelm von Tschischwitz (1862, 1866, 1870, 1874) und Thilo von Trotha (1867, 1970, 1874) wurden bereits einzeln</hi>
+                <hi rend="scxw84434420"> </hi>
+                <lb/>
+                <hi rend="normaltextrun">intensiver untersucht und jeweils zu einer Ausgabe zusammengeführt. Tschischwitz’ Werke</hi>
+                <hi rend="scxw84434420"> </hi>
+                <lb/>
+                <hi rend="normaltextrun">bereits veröffentlicht (Wintjes, 2019), Trothas’ liegen in einer bisher unveröffentlichten Abschlussarbeit vor (Henning, 2018). Dadurch ist eine tiefere Analyse des</hi>
+                <hi rend="scxw84434420"> </hi>
+                <lb/>
+                <hi rend="normaltextrun">gesamten Korpus angestoßen, sowie die Forschung in der praktischen Durchführung einer </hi>
+                <hi rend="scxw84434420"> </hi>
+                <lb/>
+                <hi rend="normaltextrun">Simulation, mit Studenten oder an einer Führungsakademie, ermöglicht worden.</hi>
+                <hi rend="eop"> </hi>
+            </p> </div>
+
             <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="id__r7c4kqjpjqug"/>Ausgangslage: Das entkontextualisierte Bildarchiv
-                </head>
-                <p>Das CVMA Deutschland ist ein interakademisches Forschungsvorhaben mit Arbeitsstellen in Freiburg (Akademie der Wissenschaften und Literatur Mainz) sowie Potsdam (Berlin-Brandenburgische Akademie der Wissenschaften). Die Aufgabe des Corpus ist die Erfassung, Dokumentation und Katalogisierung von Glasmalereien des Mittelalters und der Frühen Neuzeit (bis etwa 1550) in Deutschland. Das CVMA Deutschland ist Mitglied des 1952 gegründeten Internationalen Corpus Vitrearum, welches sich aufgrund der erheblichen Verluste durch die beiden Weltkriege zum Ziel gesetzt hat, die Glasmalereien des Mittelalters vollständig fotografisch zu erfassen und nach festen Richtlinien zu dokumentieren. Die Forschungsergebnisse werden auf Grundlage der auf internationaler Ebene vereinbarten Richtlinien (Comité international d’histoire de l’art und Union académique internationale 2016) als Katalogtexte in den Corpusbänden publiziert. Dabei entsteht neben einem umfassenden schriftlichen Werk ein umfangreiches kuratiertes Bildarchiv, welches in Deutschland seit 2015 über eine gemeinsame Plattform strukturiert online verfügbar gemacht wird (CVMA Deutschland o. J. a). Mit Metadaten angereicherte Bilddaten dienen als nachnutzbares digitales Instrument für die wissenschaftliche Arbeit.</p>
-                <p>Die Rolle des Bildes als Repräsentation des Kunstwerkes ist je nach Publikationsform unterschiedlich. Im gedruckten Corpusband präsentiert sich die Abbildung als visuelle Argumentation mittels Gegenüberstellungen und vergleichenden Anbringungen inhaltlich gleichberechtigt zum Text. Beide Kommunikationsformen ergänzen sich zu einer umfassenden Darlegung der wissenschaftlichen Erkenntnisse. Digitale Bildarchive stehen im Vergleich zu klassischen Bucheditionen vor Herausforderungen auf zwei Ebenen: der des potentiellen Nutzer:innenkreises eines über das Internet frei zugänglichen und vernetzten Bildarchivs, der im Gegensatz zu dem oft engen und bildungsbürgerlichen Nutzer:innenkreis der gedruckten Corpusbände steht, wo traditionell Kontextwissen durch die Gesamtschau innerhalb eines Bandes abgedeckt wird. Online-Bildarchive sprechen in der Regel breitere Zielgruppen an, Webseiten bedienen veränderte Lese- und Betrachtungsmethoden (cf. Hyman, Moser und Segala 2014, 37). Herausforderungen stellen sich genauso auf der Ebene der nun vom Werk- als auch vom Textkontext entfremdeten Abbildung, die ihre ästhetische wie wissenschaftliche Bedeutung im Online-Bildarchiv neu manifestieren muss.</p>
-                <p>Das Online-Bildarchiv des CVMA Deutschland (CVMA Deutschland o. J. a) versammelt bereits mehr als 7.000 Abbildungen aus der Buchreihe sowie zusätzliches, bisher unveröffentlichtes Material und wird von den beiden Arbeitsstellen konstant um weitere Bestände erweitert. Dabei stehen Detailaufnahmen einzelner Scheiben, zugehörige Fensterdarstellungen oder Montagen komplexer Bilderzählungen nicht zwangsläufig nebeneinander. Die Sortierung der Galerieansicht orientiert sich zunächst an einer Datenlogik, nicht an ihrem Inhalt. Über diesen Zugang fehlen übergreifende Informationen zum Nachvollziehen der Zusammenhänge zwischen Einzelbildern und ihrer wissenschaftlichen Einordnung. Der Workflow einer Veröffentlichung über das Online-Bildarchiv lässt die Möglichkeit, Abbildungen semantisch zu Objekten zu gruppieren und sie innerhalb der Architektur bzw. der Räume zu verorten, in denen sie sich befinden, als Desiderat zurück. </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="id__u8ps9rxljcvs"/>Grundlage: Nachhaltiges und interoperables Metadatenmanagement
-                </head>
-                <p>Grundlage für die Erweiterung und Weiterentwicklung des Online-Bildarchivs auf ein 
-                    <hi rend="italic">born-digital</hi> Publikationsformat ist die einheitliche Anlage von Metadaten entlang internationaler Standards. Die Grundsätze des nachhaltigen und interoperablen Metadatenmanagements müssen nach der Langzeitverfügbarkeit der Daten und damit auch nach der sie zugänglich machenden Soft- und Hardware fragen. Die Antwort zielt dabei auf Standards, die von vielen geteilt, verstanden und weiterentwickelt werden. Auch eine interoperable und nachhaltige Datenmodellierung, die unabhängig von ausführenden und alternden Softwarelösungen lesbar bleiben möchte, basiert auf standardisierten Ausdrücken und generischen Ansätzen der Formulierung von Beziehungen.
-                </p>
-                <p>Die Integration von Metadaten in die Bilddateien ist ein maßgeblicher Bestandteil der Strategie ihrer Langzeitarchivierung und Auffindbarkeit. Das CVMA orientiert sich dabei am Standard für PDF-Dokumente, der 
-                    <hi rend="italic">Extensible Metadata Platform</hi> (XMP), seit 2012 ISO Standard ISO 16684-1 (ISO 2019). Die Metadaten werden hierbei in den Header der Bilddateien geschrieben, so dass die digitale Ressource und ihre Metadaten eine Einheit bilden. Die CVMA-XMP-Metadatenspezifikation (CVMA Deutschland 2016)vereint administrative, beschreibende und technische Metadaten. Sie nutzt weit verbreitete Standards nach, z. B. Dublin Core, IPTC und wurde um einen CVMA-spezifischen 
-                    <hi rend="italic">namespace </hi>erweitert, mit dem die genuin glasmalereispezifischen Informationen erfasst werden. Die Bilddateien enthalten auf diese Weise ihre relevante Metadaten und können durch Dritte heruntergeladen werden, wobei die Einheit der digitalen Fotografie und ihrer Metadaten eine umfassende Nachnutzbarkeit über die visuelle Information hinaus gewährleistet. 
-                </p>
-                <p>Die Auszeichnung der Abbildungen mit Normdaten nutzt nicht nur der Verlinkung von Informationen mit außenstehenden Repositorien, sondern dient auch der internen Strukturierung des Bildarchivs. So werden prospektiv alle Normdateneinträge, zur Zeit zumindest die IconClass Notationen sowie die Personendaten, neben den eigentlichen Bilddateien als Ressourcen des Archivs betrachtet und prozessiert. Jede Ressource erhält durch die automatisierte Vergabe von Uniform Ressource Identifiern (URI) eine CVMA-interne ID. Diese erlaubt eine eindeutige Referenzierung innerhalb des Bildarchivs und auch nach außen. Über unterschiedliche Serialisierungen können diese Ressourcen für verschiedene Bedarfe ausgegeben werden. JSON-, RDF- und TTL-Formate erlauben eine Einbindung der Ressourcen in weitere Datenkontexte, die HTML-Serialisierung dient in erster Linie einer visuellen Erfassung der Ressourcen über den Browser. Für die Bilddaten ist dies die Einzelansicht der Abbildung im Online-Bildarchiv mit einer Auswahl an relevanten Metadaten, die über Kartenansicht und begleitender Textanzeige ein grundlegendes Informationsset zum dargestellten Werk bietet. Für Iconclass-Notationen umfasst dies die Darstellung aller Bildressourcen aus dem Online-Bildarchiv, die mit jener spezifischen Notation ausgezeichnet sind.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="id__nao8dxx9rx2t"/>Erweiterung: Das Cultural Heritage Framework
-                </head>
-                <p>Das Ziel der Strukturierung des Bildarchivs lautet aber nicht, weitere Sammlungen zu erzeugen, sondern die Daten durch eine komplexere semantische Verknüpfung zu modellieren. Dafür kommt das an der Digitalen Akademie in Mainz entwickelte Cultural Heritage Framework, kurz CHF, zum Einsatz (Schrade 2017).</p>
-                <p>Das Framework dient unterschiedlichen Projekten, die mit Objekterfassung im Bereich des kulturellen Erbes befasst sind, dazu, Digitalisate unterschiedlicher Provenienz zu einem Kulturerbeobjekt zu verknüpfen, mit (wissenschaftlichen) Texten anzureichern und als 
-                    <hi rend="italic">born-digital</hi> Onlinepublikation zu veröffentlichen.
-                </p>
-                <p>Das Datenmodell besteht aus mehreren Komponenten, die auf den jeweiligen Erfassungsbedarf des Projektes angepasst werden: ‘Artefakte’, ‘Entitäten’, ‘Ereignisse’, ‘Personen’ und ‘Orte’. Artefakte können dabei mit den digitalen institutionellen Sammlungen, zum Beispiel Ressourcen aus dem CVMA Online-Bildarchiv, verknüpft werden. Datierungen, geographische Angaben wie Koordinaten, Ortsangaben oder 
-                    <hi rend="italic">Geonames Identifier</hi> und Stichwörter werden zwischen den entsprechenden Datenbanken, die diese Informationen speichern, sowie dem Datenmodell ausgetauscht. Es organisiert textuelle und nicht-textuelle Forschungsdaten. 
-                </p>
-                <p>Für das CVMA wurde hieraus das auf der Webseite verfügbar gemachte Modul “Glasmalerei im Kontext” entwickelt. Das Publikationsmodell kann aus drei Perspektiven betrachtet werden. </p>
-                <p>Aus der Sicht des Datenmodells strukturiert es Forschungsdaten zu Bauwerken, meist Kirchen, hierarchisch: vom Standort zum Gebäude, zum Gebäudeteil, zum Fenster, zur Einzelscheibe bzw. Montage. Spezielle Entitäten können mit weiteren spezifischen Ressourcen verknüpft werden. Die oberste Hierarchieebene sieht die Einbindung eines Grundrisses vor, während die unterste Hierarchieebene eine direkte Verlinkung zu den Bildressourcen des Online-Bildarchivs erlaubt. Auf allen Ebenen der Fenster- und Scheibendarstellungen wird eine Gegenüberstellung der Glasmalereien und ihrer Erhaltungsschemata ermöglicht, um mittelalterlich erhaltene Bestandteile und die Anteile möglicher Restaurierungsmaßnahmen visuell nachzuvollziehen. Damit wird das Publikationsformat zu einem wertvollen Forschungsinstrument.</p>
-                <p>Aus der Sicht der Abbildungen bietet das Modul ‘Glasmalereien im Kontext’ die Möglichkeit zur semantischen Strukturierung und kontextualisierten Darstellung der im Online-Bildarchiv publizierten Bildressourcen. So bietet sich dem Nutzer des Bildarchivs bei jeder über das Modul verlinkten Ressource automatisch der Weg in die Standortdarstellung. Eine Datenmodellierung über das Content Management System und dem dort aufgesetzten CHF wirkt sich also strukturierend auf das Online-Bildarchiv aus.</p>
-                <p>Aus der Sicht der Nutzenden schließlich eröffnet sich ein niedrigschwelliger Zugang nicht nur zu einzelnen Forschungsressourcen, wie im Bildarchiv, sondern auch zu den Forschungsergebnissen, die in Form von Bildmaterial und kurzen Texten als Microsites veröffentlicht sind. Hier gibt es in übersichtlichen Schritten immer tiefergehende Informationen von der Baugeschichte des Kirchenstandortes bis zu den Vorbildern einzelner in den Glasmalereien dargestellter Szenen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="id__qtg5mca3s47w"/>Ergebnis: Glasmalereien im Kontext – 
-                    <hi rend="italic">Born-Digitals</hi> als semantische Datenmodellierung, offene digitale Publikationsform und Open Educational Resource
-                </head>
-                <p>‘Glasmalereien im Kontext’ ist eine Kombination aus semantischer Datenmodellierung und deren Ausspielung als digitale Publikationsform (CVMA Deutschland o. J. b). Aufgeschlüsselt nach Standorten können Nutzer:innen hier Kirchenräume und ihren mittelalterlichen Glasmalereibestand über Text- und Bildmaterial erkunden. Die Notwendigkeit, Struktur in die entkontextualisiert vorliegende Bildsammlung zu bringen, hat im Ergebnis eigenständige 
-                    <hi rend="italic">born-digital</hi> Publikationen aus vormals gedruckten Corpusbänden entstehen lassen, die sich in konservativer Modellierung an der Struktur der Printpublikationen orientieren und darüber hinaus auch innovative Modellierungen zulassen, die als niedrigschwellige aber hochwertige, aktualisierte und non-lineare Ergänzungen zu den gedruckten Werken veröffentlicht werden.
-                </p>
-                <p>Für die nah am Corpusband formulierte Modellierung werden ausgewählte Standorte mit überarbeiteten und reduzierten Katalogtexten zu den jeweiligen Gesamtfenstern, Szenen und Einzelscheiben angeboten. Eine Kirche wird in Objektgruppen untergliedert, bei denen es sich um Gebäudeteile wie Chor oder Langhaus handelt. Die darunter liegenden Ebenen bilden die dort enthaltenen Objekte. Dies sind die Buntglasfenster, die in ihrer Gesamtdarstellung als Bildmontagen und im Detail als Einzelscheiben dargestellt sind. Beide Entitäten sind im Objekt enthaltene Objektteile.</p>
-                <p>Während eines mehrere Jahrzehnte umspannenden Forschungszeitraums ergeben sich unter Umständen für bereits bearbeitete Objekte neue Erkenntnisse oder Forschungsmeinungen, die der Revision bedürfen. Das born-digital Format ‘Glasmalereien im Kontext’ bietet die Möglichkeit, bereits gedruckte Katalogtexte und -abbildungen in den Corpusbänden zu ergänzen und zu erweitern, auf die vorangegangenen Texte bezug zu nehmen oder von ihnen Abstand zu gewinnen. So können bspw. neue Erkenntnisse zu bereits vor geraumer Zeit publizierten Forschungen einfließen und neu aufgefundene Standorte veröffentlicht werden. Hier zeigt sich die einzigartige Möglichkeit, aktuelle Forschungen zitierfähig und nachnutzbar zu publizieren.</p>
-                <p>Darüber hinaus bietet das generische Datenmodell aber auch die Möglichkeit, alternative Rekonstruktionsvorschläge für einen architektonischen Teilraum, einer Objektgruppe im CHF, vorzulegen. Hier werden Abbildungen nicht in ihrer aktuellen Anbringung im Kirchenraum kontextualisiert, sondern ihre vermutete Anbringungen zu unterschiedlichen Zeitpunkten in der Vergangenheit für einen Ort modelliert. Diese Nebeneinanderstellung unterschiedlicher Zustände bzw. Rekonstruktionen stellt einen innovativen Ansatz in der Forschung der mittelalterlichen Glasmalerei dar, der insbesondere in der universitären Lehre in Seminaren Anwendung findet.</p>
-                <p>Dabei ist das CHF in seiner Form als ‘Glasmalereien im Kontext’ zugleich Modellierungsumgebung und semantisches Tool und wird mit der Verfügbarmachung der Ergebnisse über das Internet als digitale Publikationsform sofort zur Open Educational Resource.</p>
+                <head>Geplantes Promotionsprojekt</head>
+            <p rend="paragraph" style="text-align: left; ">
+                <hi rend="normaltextrun">Kernziel des Projekts ist die öffentliche Bereitstellung eines Regelwerkskorpus, inklusive dazugehöriger tabellarischer Beiwerke sowie Übersetzungen. Mit Hilfe von Methoden des 
+                    <hi rend="italic" style="font-size:11pt">natural</hi>
+                    <hi rend="italic" style="font-size:11pt">language</hi>
+                    <hi rend="italic" style="font-size:11pt">processing</hi> (NLP) sollen inhaltliche und sprachliche Unterschiede und Entwicklungen im Laufe der Entstehungsgeschichte der Kriegsspiele aufgezeigt werden. Ziel ist eine diachrone und vergleichende Analyse der Gattung der Regelwerke sowie das Erstellen einer Ontologie für Regelwerke und nicht-literarischer Texte über das Kriegsspiel hinaus. Durch die Erstellung einer digitalen Sammlung und Ontologie, die auf vollständig annotierten und aufbereiteten Texten basiert, kann in einem Webtool eine direkte visuelle Vergleichbarkeit zwischen individuell gewählten Regelwerken geschaffen werden.  Texte, Faksimiles, Analyseergebnisse und weitere für das preußische Kriegsspiel relevante Materialen sollen zentral gesammelt und für die Forschung sowie die interessierte Öffentlichkeit bereitgestellt werden. Beispielsweise verändert sich die Nutzung eines Würfels als zufallsgebende Instanz zur dritten Phase der Kriegsspiele. Auch die Veränderung bei der Verwendung der Truppengattungen, kann so verdeutlicht werden. Dies kann durch Textverweise und Hervorhebungen sowohl im Original, in einer aufbereiteten Version als auch als Graphik kenntlich gemacht werden. Visualisierungen über sprachliche und formale Veränderungen bieten zudem neue Zugänge zu dem Forschungsgegenstand.
+                </hi>
+            </p>
+            <figure>
+                <graphic n="1001" width="12.488333333333333cm" height="6.326272222222222cm" url="Pictures/fbd6cc187a35d8ac6d293d65ee644ad9.png" rend="inline"/>
+                <head>Abbildung 1: Veränderung der Truppengattungen in den Regelwerken</head>
+            </figure>
             </div>
         </body>
         <back>
             <div type="bibliogr">
                 <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Comité international d’histoire de l’art und Union académique internationale. </hi>2016. „Corpus Vitrearum: Richtlinien“. 
-                        <hi rend="italic">CVMA Freiburg</hi>. Vers. 4. Troyes. 
-                        <ptr target="http://cvi.cvma-freiburg.de/documents/CVRichtlinienEdition.pdf"/>.
+<head>Bibliographie</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Devlin, Jacob,</hi> Ming-Wei Chang, Kenton Lee, Kristina Toutanova. “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding”. 
+                        <hi rend="italic">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</hi> (1): 4171–4186. Minneapolis, Minnesota.
                     </bibl>
-                    <bibl><hi rend="bold">CVMA Deutschland. </hi>2016. „XMP Metadatenspezifikation“. 
-                        <hi rend="italic">CVMA Deutschland.</hi> Vers. 1.1, 8. Juni 2016. 
-                        <ptr target="https://corpusvitrearum.de/cvma-digital/spezifikationen/cvma-xmp/11.html"/>.
-                    </bibl>
-                    <bibl>———. o. J. a. „Bildarchiv“. 
-                        <hi rend="bold">CVMA Deutschland.</hi> Letzter Zugriff am 2. August 2022. 
-                        <ptr target="https://corpusvitrearum.de/bildarchiv"/>.
-                    </bibl>
-                    <bibl>———. o. J. b. „Mittelalterliche Glasmalereien im Kontext“. 
-                        <hi rend="bold">CVMA Deutschland.</hi> Letzter Zugriff am 2. August 2022. 
-                        <ptr target="https://corpusvitrearum.de/glasmalerei-im-kontext"/>.
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Henning, Pia.</hi> 2018. “Das Kriegsspiel des Thilo Wolf von Trotha“. Bachelorthesis, Julius-Maximilians-Universität Würzburg. 
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Hyman, Jack A., Mary T. Moser und Laura N. Segala. </hi>2014. „Electronic Reading and Digital Library Technologies: Understanding Learner Expectation and Usage Intent for Mobile Learning“. 
-                        <hi rend="italic">Educational Technology Research and Development</hi> 62 (1): 35–52.
-                        <ref target="https://doi.org/10.1007/s11423-013-9330-5">
-                            <hi rend="color(#1155cc)underline">https://doi.org/10.1007/s11423-013-9330-5</hi>
-                        </ref>.
+                        <hi rend="bold">Henning, Pia.</hi> 2021a. „‘Game on!’: A Research Project on the Prussian Kriegsspiel“. 
+                        <hi rend="italic">British Journal for Military History</hi> 7 (2): 174–83. 
+                        <ref target="https://doi.org/10.25602/GOLD.bjmh.v7i2.1561">doi:10.25602/GOLD.bjmh.v7i2.1561.</ref>
                     </bibl>
-                    <bibl><hi rend="bold">IconClass. </hi>o. J. „IconClass Illustrated Edition“. 
-                        <hi rend="italic">IconClass</hi>. Letzter Zugriff am 2. August 2022. 
-                        <ref target="https://iconclass.org/">
-                            <hi rend="color(#1155cc)underline">https://iconclass.org</hi>
-                        </ref>.
+                    <bibl>
+                        <hi rend="bold">Henning, Pia.</hi> 2021b. „Die Entwicklung des preußischen Kriegsspiels”. Masterthesis, Julius-Maximilians-Universität Würzburg.
                     </bibl>
-                    <bibl><hi rend="bold">ISO (International Organization for Standardization). </hi>2019. 
-                        <hi rend="italic">Graphic Technology — Extensible Metadata Platform (XMP) — Part 1: Data Model, Serialization and Core Properties.</hi> ISO 16684-1:2019, 2, April 2019. Paris: ISO. 
-                        <ptr target="https://www.iso.org/standard/75163.html"/>.
+                    <bibl>
+                        <hi rend="bold">Reul, Christian,</hi> Dennis Christ, Alexander Hartelt, Nico Balbach, Maximilian Wehner, Uwe Springmann, Christoph Wick, Christine Grundig, Andreas Büttner and Frank Puppe. 2019. „OCR4all—An Open-Source Tool Providing a (Semi-)Automatic OCR Workflow for Historical Printings” 
+                        <hi rend="italic">Applied Sciences</hi> 9(22): 4853. 
+                        <ref target="https://doi.org/10.3390/app9224853">https://doi.org/10.3390/app9224853</ref>
                     </bibl>
-                    <bibl><hi rend="bold">Schrade, Torsten. </hi>2017. „Sammlungs- und Editionsportale mit dem Cultural Heritage Framework der Digitalen Akademie: Ein Werkstattbericht“. Vortrag beim Workshop 
-                        <hi rend="italic">Editionsportale</hi>, Friedrich-Schiller-Universität Jena, 3. August 2017. 
-                        <ptr target="https://digicademy.github.io/2017-editionsportale-jena"/>.
+                    <bibl>
+                        <hi rend="bold">Wintjes, Jorit.</hi> 2017. „When a Spiel is not a Game”. Vulcan, 5(1): 5-28. 
                     </bibl>
-                    <bibl><hi rend="bold">The Getty. </hi>2017. „Art &amp; Architecture Thesaurus“. 
-                        <hi rend="italic">The Getty Research Institute</hi>. 7. März 2017. 
-                        <ptr target="https://www.getty.edu/research/tools/vocabularies/aat/"/>.
+                    <bibl>
+                        <hi rend="bold">Wintjes, Jorit.</hi> 2019. „Das Kriegsspiel des Wilhelm von ”. Hamburg.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Wintjes, Jorit.</hi> 2022. “A School for War – A Brief History of the Prussian Kriegsspiel”, C. Turnitsa/C. Blais/A. Tolk (eds.), 
+                        <hi rend="italic">Simulation and Wargaming</hi>. Hoboken. 25-46
                     </bibl>
                 </listBibl>
             </div>

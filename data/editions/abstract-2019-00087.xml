@@ -1,32 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="230_final-SPORLEDER_Caroline_Multimodale_Sentimentanalyse_politischer_" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="248_final-TOSCANO_Roberta_Netzwerkanalyse_für_Historiker__Probleme_und" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="full">
-                    <title type="main">Multimodale Sentimentanalyse politischer Tweets</title>
-                    <title type="sub"/>
-                </title>
+                <title>Netzwerkanalyse für Historiker. Probleme und Lösungen am Beispiel eines Promotionsvorhabens</title>
                 <author>
                     <persName>
-                        <surname>Ziehe</surname>
-                        <forename>Stefan</forename>
+                        <surname>Toscano</surname>
+                        <forename>Roberta</forename>
                     </persName>
-                    <affiliation>GCDH, Universität Göttingen, Deutschland</affiliation>
-                    <email>stefan.ziehe@stud.uni-goettingen.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Sporleder</surname>
-                        <forename>Caroline</forename>
-                    </persName>
-                    <affiliation>GCDH, Universität Göttingen, Deutschland</affiliation>
-                    <email>csporled@gwdg.de</email>
+                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
+                    <email>toscano-r@outlook.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2019-01-12T21:18:33</date>
+                    <date>2019-01-13T14:24:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -39,7 +28,7 @@
                 </t:address>
             </publicationStmt>
             <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
+                <p>Converted from a Word document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -58,96 +47,108 @@
                     <term>Posterpräsentation</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Twitter</term>
-                    <term>multimodale Analyse</term>
-                    <term>Deep Learning</term>
+                    <term>historische Netzwerkanalyse</term>
+                    <term>Gephi</term>
+                    <term>Entscheidungsprozess</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Inhaltsanalyse</term>
-                    <term>Bilder</term>
-                    <term>Multimedia</term>
-                    <term>Multimodale Kommunikation</term>
-                    <term>Text</term>
+                    <term>Beziehungsanalyse</term>
+                    <term>Netzwerkanalyse</term>
+                    <term>Einführung</term>
+                    <term>Visualisierung</term>
+                    <term>Forschungsprozess</term>
+                    <term>Visualisierung</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p>Die automatische Analyse von Tweets mit politischem Inhalt kann Sozial- und Politikwissenschaftlern Aufschluss über die Prozesse politischer Meinungsbildung geben. Beiträge in den sozialen Medien spiegeln oft Tendenzen in der Zufriedenheit mit politischen Parteien wider und helfen umstrittene oder viel diskutierte Themen zu identifizieren. Auch das Kommunikationsverhalten verschiedener Gruppen lässt sich aus ihrer Interaktion bei Twitter analysieren (z.B. unterschiedliche Dominanz von Echokammereffekten (Colleoni et al., 2014) oder Verbreitung von Gerüchten und Fake News (Ma et al., 2018)).</p>
-            <p>Eine wichtige Rolle spielt dabei die Sentimentanalyse, die es erlaubt zu identifzieren, ob ein Akteur Zustimmung oder Ablehnung zu einem bestimmten Inhalt signalisiert. Für Textdaten lässt sich das Sentiment meist recht gut bestimmen. Tweets sind aufgrund ihrer Kürze jedoch zum einen oft schwer recht kryptisch, zum andern enthalten sie häufig weitere Materialien, insbesondere Bilder, die nennenswert zur Aussage beitragen. Z.B. ist der Text „und wieder ein neuer Morgen“ neutral formuliert, gewinnt aber eine negative Bedeutung, wenn er um eine Bild bereichert wird, das eine lange Autoschlange zeigt. Ebenso kann es sein, dass ein relativ neutrales Bild lediglich über den Text ein positives oder negatives Sentiment zugewiesen bekommt.</p>
-            <p>Die meisten bisher existierenden Sentimentanalyseverfahren beschränken sich auf die Verarbeitung entweder von Text- oder von Bilddaten. Modelle, die beide Modalitäten</p>
-            <p>berücksichtigen, sind noch vergleichsweise selten, können jedoch eine signifikant höhere Genauigkeit bei der Sentiment-Vorhersage erreichen als solche, die dies nicht tun (You et al. 2016). Fast alle multimodalen Verfahren nutzen eine Deep-Learning-Architektur. Solche Verfahren sind herkömmlichen Lernverfahren zwar oft überlegen, sie sind aber aufgrund der Vielzahl der möglichen Architekturen auch relativ schwer zu optimieren. Das Ziel dieser Arbeit ist es, verschiedene multimodale Sentimentanalyseverfahren und -architekturen systematisch zu vergleichen und auf ihre Vor- und Nachteile hin zu untersuchen.</p>
-            <p>Das grundsätzliche Schema der Modelle orientiert sich am "Latent Multimodal Mixing" (Bruni et al. 2014); hierbei werden zunächst Text- und Bild-Features extrahiert, als Vektoren kodiert</p>
-            <p> und anschließend in einem dritten Schritt auf einen gemeinsamen (multimodalen) Vektorraum abgebildet (Fusion). Aus diesen Vektoren kann dann mit Methoden des maschinellen Lernens das Sentiment berechnet werden. Innerhalb dieses Schemas können beliebige und auch neuartige Kombinationen verschiedener Methoden zur Feature-Extraktion und Fusion verwendet werden. Hierfür gibt es unter anderem folgende Möglichkeiten:</p>
-            <list type="unordered">
-                <item>Texte können mit dem Doc2Vec-Verfahren auf einen latenten Vektorraum abgebildet werden. Dieses Verfahren erzielte in der Vergangenheit bereits gute Ergebnisse bei der Sentimentanalyse. (Le et al. 2014)</item>
-                <item>Basierend auf einem existierenden Word-Embedding-Modell (z.B. GloVe (Pennington et al. 2014)) können die Word-Embeddings aller Wörter eines Textes auf verschiedene Arten zu einem Text-Embedding aggregiert werden (z.B. gewichteter Mittelwert, elementweises Minimum/Maximum). (De Boom et al. 2016)</item>
-                <item>Für die Extraktion visueller Features können bereits existierende Deep Learning-Modelle zur Bild-Klassifikation in leicht modifizierter Form wiederverwendet werden. (Campos et al. 2017)</item>
-                <item>Aus dem Farbhistogramm eines Bildes können können statistische Features erster Ordnung berechnet werden.</item>
-                <item>Der Fusionsschritt besteht aus einer einfachen Verkettung der Text- und Bild-Vektoren. Zusätzlich kann auch eine affine Projektion auf einen latenten multimodalen Vektorraum gelernt werden. (Chen et al. 2017)</item>
-            </list>
-            <p>Die Datengrundlage für das Training der Modelle bilden manuell annotierte multimodale Tweets u.a. aus dem Photo Tweet Sentiment Benchmark (Borth et al. 2013), sowie das Columbia MVSO Image Sentiment Dataset (Dalmia et al. 2016). Aufgrund der unterschiedlichen Größe der Datensätze wird ein Transfer Learning-Ansatz verfolgt: Die Modelle werden zunächst auf den MVSO-Daten vortrainiert und anschließend mithilfe der Twitter-Daten feinadjustiert.</p>
-            <p>Erste Testergebnisse bestätigen, dass Modelle, die Text- und Bild-Features fusionieren, eine höhere Genauigkeit erreichen können als unimodale Modelle. Allerdings haben die bisher getesteten Modelle derzeit noch Schwierigkeiten damit, negatives Sentiment korrekt zu klassifizieren.</p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung </head>
+                <p>
+                    <hi style="font-size:12pt">Methoden der Digital Humanities erfreuen sich zunehmender Akzeptanz in den Geisteswissenschaften - auch in traditionellen Disziplinen wie den Geschichtswissenschaften. Die Werkzeuge der Digital Humanities können hilfreich sein, um die eigenen Daten zu strukturieren, unerwartete Zusammenhänge zu erkennen und Erkenntnisse hervorzubringen, die man ohne den Einsatz von digitalen Methoden nicht erlangt hätte. Vor allem im Bereich der historischen Netzwerkanalyse gibt es seit einigen Jahren neue interessante Entwicklungen. Während man sich anfangs noch an Werkzeugen aus der Sozialwissenschaft bediente</hi>
+                    <hi rend="Fußnotenzeichen2" xml:space="preserve"> </hi>
+                    <hi style="font-size:12pt">(Jannidis / Kohle / Rehbein 2017: 14), gibt es mittlerweile Software, die nicht nur statistische Ergebnisse ausgibt, sondern auch für historische Fragestellungen geeignet ist. Die Vorteile liegen auf der Hand: einerseits kann man komplexe Beziehungen, deren Reichweite und Auswirkungen ordnen und darstellen; andererseits durch Visualisierungen die Ergebnisse einer breiten Öffentlichkeit zugänglich machen (Düring / Kerschbaumer 2016: 31). Wenn man anfangs mit dem Gedanken spielt, ob man für die Bearbeitung einer geisteswissenschaftlichen Forschungsarbeit überhaupt digitale Hilfsmittel anwenden sollte, wird man mit verschiedenen Fragen konfrontiert:</hi>
+                </p>
+                <p>
+                    <hi style="font-size:12pt" xml:space="preserve">Wie und wo fange ich an? Welches Tool ist sinnvoll? Welche Daten habe ich überhaupt und wie möchte ich diese darstellen? Welchen Mehrwert verspreche ich mir von dem Einsatz digitaler Methoden? Muss ich meine Fragstellungen anpassen um ein zufriedenstellendes Ergebnis zu erhalten? Welche Kenntnisse und Fähigkeiten muss ich mir aneignen? Lohnt sich das überhaupt? Der Posterbeitrag soll an diese Fragen anknüpfen. </hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Netzwerkanalyse für Historiker</head>
+                <p>
+                    <hi style="font-size:12pt">Die eigene Recherche hat gezeigt, dass das Angebot und die Initiativen (national wie international) von "Social Network Analysis" (kurz SNA) für Historiker auf den ersten Blick enorm zu sein scheint. Allerdings stellt sich bei näherer Betrachtung meistens heraus, dass nur einige der Tools für das eigene Thema geeignet sind. Schließlich variieren bei geschichtlichen Forschungsfragen die gewählten Zugänge sowie die Quellenlage und der Blickwinkel. Dieses Poster soll einerseits die meist verbreiteten Techniken für Historiker in der Netzwerkanalyse vorstellen; andererseits soll an konkreten Schritten der Entscheidungsprozess für ein geeignetes Tool zur Netzwerkanalyse beispielhaft am eigenen Dissertationsvorhaben nachvollzogen werden. Aufkommende Probleme und mögliche Lösungswege sollen beleuchtet werden.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Anwendung in der Praxis mit „Gephi“</head>
+                <p>
+                    <hi style="font-size:12pt">Mein Forschungsthema befasst sich mit der Darstellung von Palästina in württembergischen Medien des 19. Jahrhunderts. Dafür werte ich politische, religiöse und pädagogische Medien aus. Eine der Hauptfragestellungen ist unter anderem welche Netzwerke gebildet wurden, in denen die Hauptakteure eine gewissen Einfluss übten und dadurch die gegenseitigen Beziehungen beider Länder prägten und förderten. Eine große Rolle spielt die Wissensverbreitung über das damals relativ unbekannte "Heilige Land": wie wurde spezielles Wissen - unter anderem Agrarmethoden, kulturelles und religiöses Leben in Palästina - weitergegeben? Neben den sozialen Beziehungen bestand auch ein reger wirtschaftlicher Austausch zwischen Palästina und Württemberg, der sich unter anderem im Handel äußerte. In diesem Zusammenhang plane ich meine Ergebnisse, die Verbindungen und Verflechtungen, sowie den Transfer zwischen beiden Länder mit der Hilfe von digitalen Tools zu visualisieren. Knotenpunkte wie Personen, Handelsbeziehungen, etc. sollen bei der Analyse im Fokus stehen und die ursprünglich aufgeworfenen Fragen ergänzend bereichern.</hi>
+                </p>
+                <p>
+                    <hi style="font-size:12pt">Diese Forschungsarbeit und Fragestellungen bieten den Rahmen für die nähere Betrachtung der Möglichkeiten der historischen Netzwerkanalyse mit der Open Software "Gephi". Die zahlreichen Tutorials </hi>
+                    <ref target="https://gephi.org/users/">
+                        <hi style="font-size:12pt">(https://gephi.org/users/),</hi>
+                    </ref>
+                    <hi style="font-size:12pt"> die aktive Nutzercommunity </hi>
+                    <ref target="https://gephi.wordpress.com/">
+                        <hi style="font-size:12pt">(https://gephi.wordpress.com/),</hi>
+                    </ref>
+                    <hi style="font-size:12pt"> die intuitive Nutzermaske und die vielfältigen Projekten, die bereits umgesetzt wurden, sind nur einige der Gründe, die für die Anwendung von „Gephi“ sprechen. Diese und andere Entscheidungskriterien, die in diesem Beispiel zur Wahl von „Gephi“ geführt haben, werden im Posterbeitrag veranschaulicht.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Zweck des Posters</head>
+                <p>
+                    <hi style="font-size:12pt" xml:space="preserve">Der Beitrag soll einen Überblick zu den existierenden Angeboten von Netzwerkanalysen geben sowie Vor-und Nachteile zur Diskussion stellen. Am Beispiel des eigenen Promotionsvorhabens werden Anregungen gegeben, Schritte erläutert und der Entscheidungsprozess begleitet. Das Ziel ist es aus der Perspektive eines Anfängers, Möglichkeiten aufzuzeigen wie man anfängliche Herausforderungen meistern kann. Der Beitrag wendet sich an Ein-und Quereinsteiger und soll durch eine konzeptionelle Gestaltung vermitteln, welches Potenzial und welcher Mehrwert in Netzwerkanalysen steckt. Damit stellt dieses Poster zu gleichen Teilen eine Absichtserklärung und einen Erfahrungsbericht dar. </hi>
+                </p>
+            </div>
         </body>
         <back>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">You, Quanzeng / Luo, Jiebu / Jin, Hailin / Yang, Jianchao (2016):</hi> 
-                        <hi rend="italic">Cross-modality Consistent Regression for Joint Visual-Textual Sentiment Analysis of Social Multimedia</hi>, 
-                        in: The Ninth International Conference on Web Search and Data Mining, February 2016, San Francisco, CA, USA.
+                        <hi rend="bold">Bastian M. / Heymann S., Jacomy M. (2009):</hi> 
+                        <hi rend="italic">Gephi: an open source software for exploring and manipulating networks</hi>,
+                        International AAAI Conference on Weblogs and Social Media. 
+                        <ref target="https://gephi.org/publications/gephi-bastian-feb09.pdf">https://gephi.org/publications/gephi-bastian-feb09.pdf</ref>
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Bruni, Elia / Tran, Nam Khanh / Baroni, Marco (2014):</hi> 
-                        <hi rend="italic">Multimodal distributional semantics</hi>, 
-                        in: Journal of Artificial Intelligence Research 49, 1 (Januar 2014), 1-47
+                        <hi rend="bold">Düring, Marten. (2017):</hi> 
+                        <hi rend="italic">Historical Network Research. Network Analysis in the Historical Disciplines.</hi> 
+                        <ref target="http://historicalnetworkresearch.org/">
+                            <hi rend="bold">http://historicalnetworkresearch.org/.</hi>
+                        </ref>
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Colleoni, Elanor/ Rozza, Alessandro / Arvidsson, Adam (2014):</hi> 
-                        <hi rend="italic">Echo Chamber or Public Sphere? Predicting Political Orientation and Measuring Political Homophily in Twitter Using Big Data</hi>, 
-                        in: Journal of Communicatio 64 (2014) 317–332
+                        <hi rend="bold">Düring, Marten / Kerschbaumer, Florian (2016):</hi> 
+                        <hi rend="italic">Quantifizierung und Visualisierung. Anknüpfungspunkte in den Geschichtswissenschaften</hi>, 
+                        in: 
+                        <hi rend="bold">Düring, Marten / Eumann, Ulrich / Stark, Martin / von Keyserlingk, Linda (eds.):</hi> 
+                        <hi rend="italic">Handbuch Historische Netzwerkforschung. Grundlagen und Anwendungen</hi>. 
+                        Münster: Lit Verlag 31- 44.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">De Boom, Cedric / Van Canneyt, Steven / Demeester, Thomas / Dhoedt, Bart (2016):</hi> 
-                        <hi rend="italic">Representation learning for very short texts using weighted word embedding aggregation</hi>, 
-                        in: Pattern Recognition Letters 80, C (September 2016), 150-156.
+                        <hi rend="bold">Grandjean, M. (2015):</hi> 
+                        <hi rend="italic">GEPHI – Introduction to Network Analysis and Visualization</hi>. 
+                        http://www.martingrandjean.ch/gephi-introduction/
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Campos, Victor / Jou, Brendan / Giró-i-Nieto, Xavier (2017):</hi> 
-                        <hi rend="italic">From Pixels to Sentiment: Fine-uning CNNs for Visual Sentiment Prediction</hi>, 
-                        in: Image and Vision Computing 65 (September 2017), 15-22
+                        <hi rend="bold">Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (2017):</hi>
+                        <hi rend="italic">Digital Humanities. Eine Einführung</hi>. 
+                        Stuttgart: J. B. Metzler.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Chen, Xingyue / Wang, Yunhong / Liu, Qingjie (2017):</hi> 
-                        <hi rend="italic">Visual and Textual Sentiment Analysis Using Deep Fusion Convolutional Neural Networks</hi>, 
-                        in: IEEE International Conference on Image Processing (ICIP), Beijing, China
+                        <hi rend="bold">Milligan, I. (2015):</hi> 
+                        <hi rend="italic">From Dataverse to Gephi: Network Analysis on our Data, A Step-by-Step Walkthrough</hi>. 
+                        https://ianmilligan.ca/2015/12/11/from-dataverse-to-gephi-network-analysis-on-our-data/
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Dalmia, Vaidehi / Liu, Hongyi / Chang, Shih-Fu (2016):</hi> 
-                        <hi rend="italic">Columbia MVSO Image Sentiment Dataset</hi>, 
-                        in: CoRR, abs/1611.04455
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Borth, Damian / Ji, Rongrong / Chen, Tao / Breuel, Thomas / Chang, Shih-Fu (2013):</hi> 
-                        <hi rend="italic">Large-scale Visual Sentiment Ontology and Detectors Using Adjective Noun Pairs</hi>, 
-                        in: The 21st ACM International Conference on Multimedia, October 2013, Barcelona, Spain
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Le, Quoc / Mikolov, Tomas (2014):</hi> 
-                        <hi rend="italic">Distributed Representations of Sentences and Documents</hi>, 
-                        in: The 31st International Conference on Machine Learning, June 2014, Beijing, China
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Ma, Jing / Gao, Wei / Wong, Kam-Fai (2018)</hi> 
-                        <hi rend="italic">Rumor Detection on Twitter with Tree-Structured Recursive Neural Networks</hi>, 
-                        in: Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics, 1980–1989, Melbourne, Australia, July 15 - 20, 2018
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Pennington, Jeffrey / Socher, Richard / Manning, Christopher (2014):</hi> 
-                        <hi rend="italic">GloVe: Global Vectors for Word Representation</hi>, 
-                        in: Empirical Methods in Natural Language Processing (EMNLP), 1532-1543
+                        <hi rend="bold">Scott, John. </hi>
+                        <hi rend="italic">What Is Social Network Analysis? </hi>
+                        London: Bloomsbury Academic, 2013.
                     </bibl>
                 </listBibl>
             </div>

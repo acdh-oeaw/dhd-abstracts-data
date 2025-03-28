@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="167_final-GIUS_Evelyn_Korpusbereinigung_für_größere_Textmengen" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="202_final-MESSEMER_Heike_3D_Rekonstruktion_als_Werkzeug_der_Quellenref" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title type="full">
-<title type="main">Korpusbereinigung für größere Textmengen.</title>
-<title type="sub">Eine (kurze) Problematisierung und ein Lösungsansatz für Duplikate</title>
-</title>
+<title>3D-Rekonstruktion als Werkzeug der Quellenreflexion</title>
 <author>
 <persName>
-<surname>Adelmann</surname>
-<forename>Benedikt</forename>
+<surname>Messemer</surname>
+<forename>Heike</forename>
 </persName>
-<affiliation>Universität Hamburg, Deutschland</affiliation>
-<email>adelmann@informatik.uni-hamburg.de</email>
+<affiliation>Julius-Maximilians-Universität Würzburg, Deutschland</affiliation>
+<email>heike.messemer@uni-wuerzburg.de</email>
 </author>
 <author>
 <persName>
-<surname>Gius</surname>
-<forename>Evelyn</forename>
+<surname>Clados</surname>
+<forename>Christiane</forename>
 </persName>
-<affiliation>Technische Universität Darmstadt, Deutschland</affiliation>
-<email>gius@linglit.tu-darmstadt.de</email>
+<affiliation>Philipps-Universität Marburg, Deutschland</affiliation>
+<email>clados@staff.uni-marburg.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2019-12-19T14:53:00Z</date>
+<date>2020-01-06T10:17:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -54,18 +51,25 @@
 <term>Paper</term>
 </keywords>
 <keywords n="subcategory" scheme="ConfTool">
-<term>Posterpräsentation</term>
+<term>Vortrag</term>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Korpuserstellung</term>
-<term>Dubletten</term>
-<term>Bereinigung</term>
+<term>3D-Rekonstruktion</term>
+<term>Dokumentation</term>
+<term>London Charter</term>
+<term>Quellenlage</term>
+<term>Architektur</term>
+<term>Ruine</term>
+<term>archäologisches Objekt</term>
+<term>Museum</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Umwandlung</term>
-<term>Sammlung</term>
-<term>Bereinigung</term>
-<term>Text</term>
+<term>Modellierung</term>
+<term>Kontextsetzung</term>
+<term>3D-Bilder</term>
+<term>Multimodale Kommunikation</term>
+<term>Forschungsprozess</term>
+<term>Standards</term>
 </keywords>
 </textClass>
 </profileDesc>
@@ -73,150 +77,195 @@
 <text>
 <body>
 <div rend="DH-Heading1" type="div1">
-<head>Korpuserstellung in der Literaturwissenschaft</head>
-<div rend="DH-Heading2" type="div2">
-<head>Eine neue Praxis</head>
-<p style="text-align:left; ">
-<anchor xml:id="ch340jjzq5nj"/>Die Zusammenstellung von Primärtexten als Forschungsgrundlage ist in der Literaturwissenschaft Alltagsgeschäft. Die beiden Standardfälle der (nicht-digitalen) Korpusanalyse gelten in Bezug auf die Korpuszusammensetzung als wenig problematisch:
-                    </p>
-<list type="ordered">
-<item>Wenn die Forschungsfrage eine spezifische Textgrundlage erfordert, steht das Korpus von vornherein fest (z. B. alle Romane von Thomas Mann für eine Studie zur Repräsentation von Krankheit in Manns Romanwerk).</item>
-<item>In Korpora kanonischer Texte werden weitergehende Fragen untersucht (z. B. ausgewählte Texte aus dem Realismus zur Untersuchung des Ausdrucks von Idylle im Realismus).</item>
+<head>Ausgangslage</head>
+<p>3D-Rekonstruktionen tragen zu einem besseren Verständnis bestimmter Aspekte des kulturellen Erbes bei. Da sie bei der Präsentation des Themas behilflich sind, spielen sie eine wichtige Rolle als Instrument zur „Übersetzung“ wissenschaftlicher Daten, um sie der Öffentlichkeit zugänglich zu machen.</p>
+<p>Spätestens seit der London Charter (2009) und den Seville Principles (2011) ist die Verwendung digitaler Rekonstruktionen als wissenschaftliches Werkzeug und zur Visualisierung wissenschaftlicher Erkenntnisse in der Wissenschaftsgemeinde anerkannt. Allerdings formulieren beide Chartas nur Rahmenbedingungen für die Erstellung und Anwendung digitaler Rekonstruktionen in Wissenschaft, Forschung und Vermittlung. Auch aufgrund einer zunehmenden Vielfalt von Visualisierungstechniken scheint man heute weiter denn je von allgemeingültigen Regeln, Prinzipien und Normierungen in den Visualisierungsmethoden entfernt zu sein. Besonders zurückhaltend wird mit wenigen Ausnahmen (Grellert/Svenshon 2010; Pfarr 2010; Bruschke/Wacker 2016) bis heute die Dokumentation von 3D-Rekonstruktionen betrieben, obgleich besonders die London Charter (2009: 8-9) dieser im vierten Leitsatz besondere Aufmerksamkeit widmet.<ref n="1" target="ftn1"/>
+</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Ziel</head>
+<p>In diese Problematik ist die Präsentation der folgenden zwei 3D-Rekonstruktionen zu verorten, die einen Beitrag zum Leitsatz 4 der London Charter leisten soll, eine digitale Rekonstruktion umfassend und nachvollziehbar zu dokumentieren. Die beiden Objekte zeigen einen hohen Grad an Unterschiedlichkeit, sodass ein breites Spektrum an Quellen, Dokumentationsmethoden und Visualisierungsmodi abgedeckt und Spielräume auf den Ebenen von Thema, Technologie und Visualisierungsstil genutzt werden können. Der Schwerpunkt liegt nicht allein auf der Datenaquirierung und Quellendokumentation, sondern auf der eigentlichen Entscheidungsfindung anhand der Quellenreflexion und dem Erkenntnisgewinn durch die fertiggestellte Rekonstruktion. Ziel ist es, die Bandbreite bisheriger Dokumentationsformen zu erweitern und sie an nicht herkömmlichen Objekttypen zu erproben.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Methodik</head>
+<p>Die Dokumentationsmethode folgt der von Mieke Pfarr-Harfst und Marc Grellert (2016), die die Erstellung einer 3D-Rekonstruktion mit drei Wissensarten konnotieren: direkt im 3D-Modell abgebildetes Wissen, Kontextinformationen zum Modell und Informationsmehrwert, der sich aus dem 3D-Rekonstruktionsprozess ergibt (Pfarr-Harfst/Grellert 2016: 40-41). Die Idee, aus dem eigentlichen Prozess einer 3D-Rekonstruktion Erkenntnis zu erlangen, ist bereits von Forte und Siliotti (1997: 13) benannt worden. Ebenso bedeutend sind Überlegungen zu Rekonstruktionen, die ohne Befund sind (Grellert/Svenshon 2010). </p>
+<p>Aufbauend auf diesen Ansätzen, sind mit der Erstellung der im Folgenden vorgestellten 3D-Rekonstruktionen drei Fragen verknüpft:</p>
+<list type="unordered">
+<item>Inwieweit sind die oben genannten Dokumentationsformen für Objekte mit eingeschränkter Befund-und Quellenlage anwendbar? </item>
+<item> In welchen Momenten der Visualisierung ergibt sich ein Erkenntnismehrwert? </item>
+<item> Auf welchen Ebenen findet Quellenreflexion statt? </item>
 </list>
-<p style="text-align:left; ">Mit der Verfügbarkeit digitaler Texte wurde die Praxis der Korpuserstellung jedoch erweitert und es wurde offensichtlich, dass sie nicht ohne weiteres in die bestehende literaturwissenschaftliche Disziplinarmatrix (Kuhn 1970) integriert werden kann. Viele der digital verfügbaren Texte sind nämlich weder kanonisch noch repräsentativ, die Qualität einzelner Texte ist aus philologischer Sicht oft fragwürdig und ein Korpus enthält trotz der Vielzahl der verfügbaren digitalen Texte selten die gesamte Population relevanter Texte, sondern nur eine Teilmenge.<ref n="1" target="ftn1"/>
+<!-- <p> -->
+<!--     <hi style="font-family:Symbol"></hi> Inwieweit sind die oben genannten Dokumentationsformen für Objekte mit eingeschränkter Befund-und Quellenlage anwendbar? -->
+<!-- </p> -->
+<!-- <p> -->
+<!--     <hi style="font-family:Symbol"></hi> In welchen Momenten der Visualisierung ergibt sich ein Erkenntnismehrwert? -->
+<!-- </p> -->
+<!-- <p> -->
+<!--     <hi style="font-family:Symbol"></hi> Auf welchen Ebenen findet Quellenreflexion statt? -->
+<!-- </p> -->
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Anwendungsbeispiele</head>
+<div rend="DH-Heading2" type="div2">
+<head>Ruine der Sophienkirche, Dresden</head>
+<p>Im Rahmen der in der Nachwuchsforschungsgruppe HistStadt4D erfolgten Entwicklung eines interaktiven 4D-Browsers, der ein digitales Modell der Stadt Dresden von ca. 1850 bis zur Gegenwart umfasst, wurde die heute nicht mehr existierende Sophienkirche mit der Open-Source-Software 
+                        <hi rend="italic">SketchUp</hi> 3D-rekonstruiert (Dewitz et al. 2019: 410).<ref n="2" target="ftn2"/> Mit der Zeit als vierten Dimension ist es das Ziel des Stadtmodells, zu zeigen, welche baulichen Veränderungen sich in diesem Zeitraum an der im 13. Jahrhundert errichteten Sophienkirche vollzogen (Schreier/Lauffer 2014). Ende des Zweiten Weltkriegs brannte die Sophienkirche komplett aus; Gewölbe und Pfeiler stürzten später ein, stand hielten die Umfassungsmauern, Turmstümpfe sowie der Helm des südlichen Turms (Abb. 1). In diesem zerstörten Zustand, der sich im Laufe der Zeit weiter veränderte, prägte die Ruine der Sophienkirche das Dresdner Stadtbild bis zu ihrem Abriss 1964.<ref n="3" target="ftn3"/>
 </p>
-<p style="text-align:left; ">Über die philologisch einwandfreie Auswahl von Texten hinaus birgt die Kuration von Korpora weitere Herausforderungen.<ref n="2" target="ftn2"/> Die vermutlich größte ist, sich einen Überblick über ein Korpus zu verschaffen, das mehr Texte enthält, als man lesen kann. Bei einer nicht von einem Einzelnen erfassbaren Textmenge kann selbst eine scheinbar einfache Aufgabe wie die Erkennung von Duplikaten unlösbare Probleme bereiten.
+<!-- <p>Abb. 1 Ruine der Sophienkirche in Dresden nach der Zerstörung im Zweiten Weltkrieg, SLUB/Deutsche Fotothek, Walter Hahn, nach 1945.</p> -->
+<p>Bei der digitalen Rekonstruktion von Ruinen kann nicht auf ein bewährtes Darstellungsrepertoire zurückgegriffen werden, denn 3D-Rekonstruktionen von nicht mehr existierenden Bauwerken, deren Zustand als Ruine modelliert wird, sind kaum Gegenstand von Forschungsprojekten.<ref n="4" target="ftn4"/>
+</p>
+<figure>
+  <graphic height="9.949722222222222cm" n="1001" rend="inline" url="202_final-a2142c3c70f486e981a36566c2697ff9.png" width="6.920836111111111cm"/>
+  <head>Abbildung 1: Ruine der Sophienkirche in Dresden nach der Zerstörung im Zweiten Weltkrieg, SLUB/Deutsche Fotothek, Walter Hahn, nach 1945. </head> 
+</figure>
+<p>Für den 4D-Browser sollten einfache Geometriemodelle, die das Bauwerk nur von außen zeigen, ohne Texturen oder modellierten Bauschmuck erstellt werden. Als Grundlage für die digitale Rekonstruktion diente eine Abbildung des Grundrisses, der den baulichen Zustand nach 1864 zeigt, da sich an dieser Grundstruktur bis zum Abriss nichts verändert hat (Schreier/Lauffer 2014: 11, Abb. 8). Zudem wurden historische Fotografien in der Bilddatenbank der Deutschen Fotothek herangezogen, die die Erscheinungsweise der Sophienkirche seit Ende des 19. Jahrhunderts gut dokumentieren.<ref n="5" target="ftn5"/> Allerdings zeigt sich, dass das Bauwerk vornehmlich aus Westen und Südwesten fotografiert wurde. Der Chorbereich findet sich – sofern er überhaupt abgebildet ist – vor allem auf Fotos des kriegszerstörten Dresden, wodurch dessen Rekonstruktion erschwert wird (Abb. 2).
                     </p>
+<figure>
+<graphic height="7.475361111111111cm" n="1002" rend="inline" url="202_final-224a28ddac328ae20c83752f63c11e09.jpg" width="16.002cm"/>
+  <head>Abbildung 2: Sophienkirche aus Richtung Nordosten (links, SLUB/Deutsche Fotothek, Walter Möbius, 1934) und Südosten (rechts, SLUB/Deutsche Fotothek, Detail: 06.11.1951). </head> 
+</figure>
+<!-- <p>Abb. 2 Sophienkirche aus Richtung Nordosten (links, SLUB/Deutsche Fotothek, Walter Möbius, 1934) und Südosten (rechts, SLUB/Deutsche Fotothek, Detail: 06.11.1951).</p> -->
+<p>Im Rekonstruktionsprozess zeigten sich weitere Unsicherheiten im Wissen: Der Zustand der Ruine veränderte sich bis zum Abriss und ist fotografisch nur lückenhaft dokumentiert. Die Fotografien zeigen zudem teils nur bestimmte Abschnitte der Kirche, sodass nicht immer ersichtlich ist, welche Teile noch intakt und welche bereits zerstört waren. Auch die Datierung der Fotografien ist teils nicht gesichert. Daher ist es nicht möglich, die Ruine in einem 3D-Modell zu einem bestimmten Zeit<space quantity="0" unit="chars"/><hi rend="bold">punkt</hi> darzustellen. Vielmehr zeigt das resultierende digitale Modell Facetten der Ruinenwerdung über einen Zeit<space quantity="0" unit="chars"/><hi rend="bold">raum</hi> hinweg, summiert also einzelne Elemente und lässt einen hypothetischen Ruinenbau entstehen. Es stellt sich die Frage, welche Möglichkeiten für die Darstellung von Ruinen im 3D-Modell bestehen und welche sich hierfür am besten eigenen. Als Grundlage zur Diskussion wurden vier unterschiedliche Darstellungsweisen entwickelt (Abb. 3).<ref n="6" target="ftn6"/>
+</p>
+<figure>
+<graphic height="10.084152777777778cm" n="1003" rend="inline" url="202_final-528e05cfb31d246cd7cd74334b53ccff.jpg" width="16.002cm"/>
+  <head>Abbildung 3: Digitale 3D-Rekonstruktion der Ruine der Sophienkirche in Dresden: verräumlichter Grundriss opak und transparent (oben), zerstörtes Bauwerk (unten links), vollständige Kirche transparent (unten rechts), Heike Messemer und Jonas Bruschke, <hi rend="italic">HistStadt4D,</hi> 2019.</head> 
+</figure>
+<!-- <p>Abb. 3 Digitale 3D-Rekonstruktion der Ruine der Sophienkirche in Dresden: verräumlichter Grundriss opak und transparent (oben), zerstörtes Bauwerk (unten links), vollständige Kirche transparent (unten rechts), Heike Messemer und Jonas Bruschke,  -->
+<!--                         <hi rend="italic">HistStadt4D,</hi> 2019. -->
+<!--                     </p> -->
 </div>
 <div rend="DH-Heading2" type="div2">
-<head>Ein exemplarisches Korpus</head>
-<p style="text-align:left; ">Der vorgestellte Ansatz wurde für ein Korpus entwickelt, das in einem Forschungsprojekt zur geschlechtsspezifischen Darstellung von Krankheit in literarischen Texten im Rahmen der Forschungskooperation hermA<ref n="3" target="ftn3"/> erstellt wurde. Ausgangspunkt war das Kolimo-Korpus, das mehr als 42.000 literarische und nicht-literarische deutsche Texte vor allem von 1880 bis 1930 aus drei großen Repositorien deutscher Texte enthält: dem Deutschen Textarchiv<ref n="4" target="ftn4"/>, dem TextGrid Repository<ref n="5" target="ftn5"/> und Projekt Gutenberg-DE<ref n="6" target="ftn6"/> (vgl. Herrmann &amp; Lauer 2017). Wir haben alle Prosatexte von 1870 bis 1920 ausgewählt, die ursprünglich auf Deutsch verfasst waren (vgl. Gius et al., 2019).
-                    </p>
-<p style="text-align:left; ">Im daraus resultierenden Korpus von mehr als 2.500 Texten mussten Artefakte behandelt werden, die durch unterschiedliche Digitalisierungsstrategien verursacht wurden. Nicht nur die Erhaltung von Sonderzeichen wie das recht häufige lange s (ſ) zwischen oder innerhalb der Repositorien war inkonsistent, sondern auch die Verwendung von Bindestrichen (Wortverbindung, Worttrennung an Zeilenumbruch, andere Bindestriche, Gedankenstriche) oder die Kodierung von Zeilenumbrüchen und Absätzen. Diese Probleme konnten mit einer relativ einfachen Heuristik angegangen werden.</p>
+<head>Nasenschmuck, Museo Del Oro, Bogotá</head>
+<p>Fallbeispiel zwei ist die Rekonstruktion eines altkolumbianischen Nasenschmucks (22,1 cm x 21,1 cm) der Calima-Malagana-Kultur des 5. Jahrhunderts (Abb. 4 links). Die Herkunft des Objektes, das sich heute im Museo Del Oro, Bogotá, befindet (Reg. 016637), wird mit Cauca-Tal angegeben, obwohl es aus keiner kontrollierten Grabung stammt. Es ist aus hochwertigem Gold, Smaragden und Pyriten gearbeitet und besteht aus drei Hauptteilen, 115 Metallplättchen und acht Röhrchen, die durch Metallringe beweglich miteinander verbunden sind. Das rechte Segment weist einen alten Bruch auf, der schon in der vorspanischen Zeit mit Klammern repariert wurde. Angaben zur Goldlegierung sowie die Maße konnten dem Online-Katalog des Museums entnommen werden. Ziel im Hinblick auf die Visualisierung war zum einen, einen Nasenschmuck zu rekonstruieren, wie er kurz nach der Fertigstellung ausgesehen haben mag: ohne Bruch, durch fehlende Teile ergänzt, mit unverbrauchter materialer Oberfläche. Weitere Ziele waren das Objekt aufgrund seiner Größe in Bezug zu einem menschlichen Kopf zu zeigen, um das Zusammenspiel von Gesicht und Nasenschmuck auszutesten sowie aufgrund der Vielteiligkeit des Objektes eine Simulation der sich bewegenden Plättchen zu erstellen (Abb. 4 rechts). </p>
+<figure>
+<graphic height="7.097888888888889cm" n="1004" rend="inline" url="202_final-3055bf25f9a1c1515570e9788f0e4d51.JPG" width="16.002cm"/>
+  <head>Abbildung 4: Nasenschmuck im Museo Del Oro, Bogota (links), und digitale Rekonstruktion mit Anzeige der beweglichen Teile in rot (rechts), <hi style="font-size:10.5pt">© </hi>Christiane Clados. </head> 
+</figure>
+<!-- <p>Abb. 4 Nasenschmuck im Museo Del Oro, Bogota (links), und digitale Rekonstruktion mit Anzeige der beweglichen Teile in rot (rechts),  -->
+<!--                         <hi style="font-size:10.5pt">© </hi>Christiane Clados.  -->
+<!--                     </p> -->
+<p>Das Objekt war vor Ort nicht zugänglich, jedoch eine große Anzahl von Fotografien im Bestand des Museo Del Oro. Mit einer durch die General Public Lizence lizensierten 3D-Grafiksuite konnte das Objekt maßstabsgetreu rekonstruiert werden. Der gute Erhaltungszustand und einige wenige Vergleichsobjekte erlaubten die sachgerechte Ergänzung fehlender Plättchen. Mehr Unsicherheiten zeigt die Rekonstruktion des Objekts in seinem Kontext, d.h. im Moment, wenn es getragen wurde. Mehrere Figurinen derselben Datierung veranschaulichen den Tragemodus des Nasenornaments. In Bezug zu einem menschlichen Kopf gesetzt wurde ersichtlich, dass der Nasenschmuck einstmals große Teile des Kopfes verdeckte (Abb. 5 links). Die Vielteiligkeit des Ornaments impliziert, dass sich während des Tragens alle Teile in ständiger Bewegung befanden. In einer Animation wurde deswegen der Bewegungsverlauf derselben simuliert und mit einer Tonspur unterlegt, die der Klangkulisse sich bewegender Metallplättchen entspricht. Ferner wurde ein Licht-Umfeld erzeugt, das Tageslicht und tropische Vegetation imitiert, die vom Metall reflektiert werden (Abb. 5 rechts).<ref n="7" target="ftn7"/>
+</p>
+<figure>
+<graphic height="6.976180555555556cm" n="1005" rend="inline" url="202_final-4b76ecfb6bbfcb7de3e6cd91d33a08b1.JPG" width="16.002cm"/>
+ <head>Abbildung 5: Nasenschmuck im Kontext (links), und mit Einzelteilen in Bewegung, Sonne und Vegetation reflektierend (rechts),  <hi style="font-size:10.5pt">© </hi>Christiane Clados. </head>
+</figure>
+<!-- <p>Abb. 5 Nasenschmuck im Kontext (links), und mit Einzelteilen in Bewegung, Sonne und Vegetation reflektierend (rechts),  -->
+<!--                         <hi style="font-size:10.5pt">© </hi>Christiane Clados.  -->
+<!--                     </p> -->
 </div>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>Die Identifizierung von Duplikaten</head>
-<p style="text-align:left; ">Ein schwierigeres Problem ist die Frage der Duplikate: Insbesondere bei der Zusammenstellung eines Korpus aus verschiedenen Quellen kann es vorkommen, dass der gleiche Text mehrfach vorhanden ist. In der Regel ist es nicht erwünscht, mehr als eine Instanz desselben Textes im Korpus zu haben, da die Überrepräsentation einzelner Werke bei statistischen Analysen zu verzerrten Ergebnissen führen kann. Daher sollte die Identifizierung von Duplikaten ein wesentlicher Bestandteil der Korpuserstellung sein.</p>
-<p style="text-align:left; ">Dabei gibt es zwei Probleme: Erstens wächst die Anzahl der ungeordneten Werkpaare, die alle potenziell Duplikate sein könnten, quadratisch mit der Anzahl der Werke. In unserem Korpus mit gut 2.500 Texten müssten deshalb 3,1 Millionen Werkpaare überprüft werden. Zweitens ist auch für jedes einzelne Textpaar die Feststellung, ob es sich um Duplikate handelt, aufgrund von Metadaten- und Textinkonsistenzen eine nicht-triviale Aufgabe. Ansätze zur <hi rend="italic">text reuse detection</hi> (z. B. Bär et al. 2012) blenden den kombinatorischen Aspekt oft aus.
+<head>Schlussfolgerungen</head>
+<p>Die schon bestehenden Dokumentationsmethoden sind auch auf Objekte mit eingeschränkter Befund- und Quellenlage anwendbar. Jedoch ergibt sich aufgrund der Unterschiedlichkeit von Objekttyp, Visualiserungsziel und Arbeitsumfeld ein breites Feld von Ausgangslagen. Ein Erkenntnismehrwert zeigte sich in unterschiedlicher Weise in den Rekonstruktionsprozessen der beiden hier vorgestellten Fallbeispiele:</p>
+<p>Da die Quellenlage zur Sophienkirche sehr heterogen beziehungsweise lückenhaft war, konnte das 3D-Modell zur Ruine nicht einen bestimmten Zeit<space quantity="0" unit="chars"/><hi rend="bold">punkt</hi> darstellen. Vielmehr entstand eine Rekonstruktion eines Zeit<space quantity="0" unit="chars"/><hi rend="bold">raums</hi>. In Projekten zur 3D-Rekonstruktion von historischer Architektur wird ein solcher Umstand bislang nicht thematisiert, obwohl die zur Modellierung verwendeten Quellen nicht immer einen identischen Zeitpunkt darstellen.<ref n="8" target="ftn8"/> Zukünftig ist es notwendig diese Diskrepanz zu reflektieren. Die Erkenntnis führte in der Folge zur Untersuchung von Ruinendarstellungen in digitalen Rekonstruktionen. Auch in diesem Kontext wurde deutlich, dass es weiterer Forschung bedarf: Ruinen, die zum Zeitpunkt der 3D-Rekonstruktion nicht mehr existieren, werden bisher kaum 3D-modelliert. Im Fall der Sophienkirche konnte deutlich gemacht werden, dass es zur Veranschaulichung der Stadtgestalt Dresdens in den 1950er-Jahren erforderlich ist, den Zustand der Kirche als Ruine im 3D-Model darzustellen.
                 </p>
-<p style="text-align:left; ">Wir haben mit zwei Methoden zur automatischen Duplikatidentifizierung experimentiert. Beide sind Heuristiken für die Suche nach Werkpaaren, die Duplikate sind; sie lösen aber nicht das daran anschließende Problem, zu entscheiden, welche von mehreren Instanzen tatsächlich in das Korpus aufgenommen werden sollen.</p>
-<p style="text-align:left; ">Für die Evaluation wurden alle Duplikatkandidaten, die von mindestens einer der beiden Methoden gefunden wurden, manuell auf ihre Richtigkeit überprüft. Wir berichten über den Prozentsatz der automatisch als Duplikate identifizierten Paare, die tatsächlich Duplikate sind (Precision), und den Prozentsatz der tatsächlichen Duplikate, die automatisch identifiziert werden (Recall). Allerdings lässt sich der Recall nur exakt bestimmen, wenn alle 3,1 Millionen Werkpaare manuell untersucht werden. Als Annäherung verwenden wir daher stattdessen den Prozentsatz der bei der manuellen Prüfung identifizierten tatsächlichen Duplikate (Gesamtzahl: 355), die ebenfalls automatisch gefunden werden.<ref n="7" target="ftn7"/>
-</p>
-<p style="text-align:left; ">Die erste Methode basiert auf Metadaten und ist deshalb schnell genug, um alle ungeordneten Werkpaare im Korpus zu testen. Für jedes Werkpaar werden Autor*innen- und Titelinformationen verglichen. Was die Autor*innen-Informationen betrifft, so wird die sogenannte Edit-Distanz (Levenshtein 1965) der vollständigen Namen der Autor*innen berechnet; die Edit-Distanz ist die kleinste Anzahl von Zeicheneinfügungen, Zeichenlöschungen und Zeichenersetzungen („Edits“), mit der der erste Autor*innen-Name in den zweiten umgewandelt werden kann.</p>
-
-<figure>
-  <graphic height="10.054166666666667cm" n="1001" rend="inline" url="167_final-bd4c95c048818278f3936691b0a46fc9.png" width="15.927916666666667cm"/>
-  <head> Abbildung 1: Edit-Distanzen Autor*innen-Namen (Schwellenwert bei 2)</head>
-</figure>
-<p style="text-align:left; ">Für die Titelinformationen haben wir das Maß leicht modifiziert: Wir verwenden die kleinste Anzahl von Edits, die einen der Titel in einen 
-                    <hi rend="italic">Teil</hi> (d. h. Teilzeichenkette) des anderen verwandeln können, mit der zusätzlichen Einschränkung, dass ganze Wörter vollständig abgeglichen werden müssen, um unangemessen kurze Entfernungswerte zu vermeiden (sonst ließe sich beispielsweise „Tot“ nach nur zwei Edits als Teilzeichenkette von „Das Jüngste Gericht“ finden, hätte also Abstand 2).<ref n="8" target="ftn8"/> Durch dieses modifizierte Maß sollen hohe Titeldistanzen vermieden werden, wenn Untertitel in nur einem der beiden Titel enthalten sind.<ref n="9" target="ftn9"/>
-</p>
-  <figure>
-    <graphic height="10.301111111111112cm" n="1002" rend="inline" url="167_final-36605bee51bf7d8f0fc0b8068b4e9c49.png" width="15.927916666666667cm"/>
-    <head>Abbildung 2: Kombinierte Edit-Distanzen für Autor*innen und Titel</head>
-  </figure>
-<p style="text-align:left; ">Zwei Texte werden als Duplikate betrachtet, wenn der Abstand sowohl beim Autor*innen-Namen als auch beim Titel höchstens so hoch wie der Schwellenwert ist. Bei einem Schwellenwert von 2 wurden 672 Duplikatpaare mit einer Precision von 51,9 % und einem Recall von 98,3 % identifiziert. Unter den sechs nicht identifizierten Duplikaten finden sich beispielsweise zwei Werke von Karl May mit abweichender Behandlung von Sammelband-/Einzelwerktitel („Ardistan und Dschinnistan. 1. Band“ vs. „Der Mir von Dschinnistan“; „Satan und Ischariot III“ vs. „Im Todesthale“) und ein Fall, in dem bei einem der beiden Werke fälschlich der Name des Autors als Titel eingetragen war (Ferdinand von Saar, „Vae victis!“).</p>
-  <figure>
-    <graphic height="10.301111111111112cm" n="1003" rend="inline" url="167_final-4eeb448cfac3e45f96dd53a243188a0e.png" width="15.927916666666667cm"/>
-    <head>Abbildung 3: Edit-Distanzen in Titeln, wo Autor*innen-Namen max. Edit-Distanz 2 aufweisen</head>
-  </figure>
-<p style="text-align:left; ">Das zweite Verfahren berechnet die Edit-Distanzen von Volltexten. Da dies eine zeitaufwändige Operation ist, beschränken wir uns auf den Vergleich von Texten, bei denen der Autor*innen-Name eine Edit-Distanz von maximal zwei hat. Manuelle Überprüfungen zeigten, dass diese Schwelle alle Rechtschreibfehler und Varianten in unseren Daten erfasst, verschiedene Autor*innen mit ähnlichen Namen jedoch ausnimmt. Für Volltexte verwenden wir wieder Teilzeichenketten-Edit-Distanzen, da ein Text mehr oder weniger vollständig in einem anderen enthalten sein kann (z. B. bei Anthologien). Zugunsten der Rechenzeiten verwenden wir wortbezogene Distanzen mit Insertionskosten gleich Deletionskosten gleich Substitutionskosten gleich eins.<ref n="10" target="ftn10"/>
-</p>
-<figure>
-  <graphic height="12.276666666666667cm" n="1004" rend="inline"
-	   url="167_final-abe49b09db87adca8000aac1a63d7c89.png"
-	   width="15.927916666666667cm"/>
-  <head> Abbildung 4: Edit-Distanzen der Volltexte</head>
-</figure>
-<p style="text-align:left; ">Zwei Texte gelten als Duplikate, wenn die Teilzeichenketten-Edit-Distanzen für beide Richtungen (1 als Teilzeichenkette von 2 oder umgekehrt), dividiert durch die Länge des jeweils als Teilzeichenkette einzubettenden Texts, unter 15 % liegt. Auf diese Weise können wir 307 Duplikate mit einer Precision von 98 % und einem Recall von 84,8 % bestimmen.</p>
-<p style="text-align:left; ">678 Paare wurden so durch mindestens ein Verfahren als Duplikate identifiziert (Precision: 52,4 %),<ref n="11" target="ftn11"/> 301 durch beide (Precision: 98 %, Recall: 83,1 %). Letzteres ist bedeutsam für praktische Anwendungen, bei denen man mit Methode 1 kostengünstig Werkpaare auswählen möchte, die anschließend mit der teuren Methode 2 getestet werden sollen.
-                </p>
+<p>Im Falle des Nasenschmucks lässt sich ein deutlicher Erkenntnismehrwert in der Bewegungssimulation erkennen, insbesondere hinsichtlich der Licht- und Klangeffekte, die das Ornament im Moments des Tragens und im Zusammenspiel mit der Sonne entfaltet. Die Simulation der Bewegung des virtuellen Nasenschmucks verdeutlicht audiovisuelle Effekte, die aus konservatorischen Gründen am originalen Nasenschmuck nur bedingt aufgezeigt werden können. Die Simulation ist Interpretationshilfe, ein Umstand, der bislang, wenn überhaupt, nur in wenigen Publikationen zur Diskussion gestellt wird. Der rekonstruierte Bewegungsverlauf von mehr als 200 metallenen Elementen, ihre Reflexion im Sonnenlicht, bei gleichzeitiger Reflexion einer tropisch-grünen Umgebung lässt den Schluss zu, dass das Objekt so konzipiert wurde, dass es erst in Interaktion mit Licht und Wind seine volle Funktion erfüllte. Die Rekonstruktion bestätigt damit die Aussagen spanischer Chronisten, die von ähnlichen Licht- und Klangeffekten altkolumbianischer Goldornamente berichteten. Bei der Veranschaulichung des Tragemodus zeigt sich zudem, dass der Mund des Trägers beim Sprechen ganz bewusst verdeckt bleibt, was ihm eine nicht-menschliche Wirkung verlieh (Clados 2019). </p>
+<p>Das Vorhandensein/Fehlen von Befunden/Quellen für die digitale Rekonstruktion eines Artefakts hat unweigerlich Auswirkungen auf den Rekonstruktionsprozess: Inwiefern sich dies auch visuell im 3D-Modell wiederspiegelt, hängt stark davon ab unter welcher Maßgabe die finale Visualisierung gestaltet sein soll. So hätten Teile der Sophienkirche, die fotografisch gut dokumentiert sind, mit architektonischen Details (wie Fenster, Portal, Bauschmuck) zwar ansatzweise rekonstruiert werden können, allerdings war für das 4D-Modell, in das die Ruine implementiert wurde, nur ein einfaches Geometriemodell notwendig. Im Falle des Nasenschmucks war es durch die Unzugänglichkeit nicht möglich, eine Klangprobe der Plättchen zu nehmen.</p>
+<p>Die hier vorgestellten 3D-Rekonstruktionsprojekte und die darin verhandelten Fragen verdeutlichen, dass es 10 Jahre nach Formulierung der London Charter an der Zeit ist, deren Leitsätze neu zu denken, sie an die Weiterentwicklung digitaler Technologien und neuen Fragestellungen anzupassen und mit Blick auf die Vielfältigkeit der rekonstruierten Objekte zu konkretisieren.</p>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>Fazit</head>
-<p style="text-align:left; ">Die Digitalisierung hat die Arbeit mit literarischen Korpora erheblich gefördert. Die schiere Menge an Texten in einem Korpus muss sowohl technisch als auch konzeptionell unterstützt werden. Für die Erreichung dieser Ziele ist es umso wichtiger, Qualitätskriterien für die Zusammenstellung von Korpora im Hinblick auf die verfügbaren Daten, d. h. für Texte aus heterogenen Quellen unterschiedlicher Qualität, zu entwickeln und umzusetzen. Zusätzlich zu diesen noch zu entwickelnden Kriterien für die wissenschaftliche Qualitätssicherung können einige pragmatische Entscheidungen die Qualität eines Korpus und seiner Texte in Fällen mit geringer Daten- und insbesondere Metadatenqualität erheblich verbessern.</p>
-<p style="text-align:left; ">Der vorgestellte Ansatz zum Umgang mit Duplikaten kann zusammen mit den genannten Vorverarbeitungsschritten ein wichtiger erster Schritt in diesem Prozess sein.</p>
+<head>Forschungsförderung</head>
+<p>Die dem Abschnitt 4.1 zugrundeliegende Forschung ist Teil der Aktivitäten der Nachwuchsforschungsgruppe 
+<hi rend="italic">HistStadt4D</hi>, die vom Bundesministerium für Bildung und Forschung im Rahmen der Fördervereinbarung Nr. 01UG1630 gefördert wird.
+</p>
 </div>
 </body>
 <back>
   <div type="notes">
     <note n="1" rend="footnote text" xml:id="ftn1">
-      Für verschiedene Typen von Datensammlungen oder Korpora vgl. Schöch (2017).
+      Vgl. London Charter, Fassung 2.1, Februar 2009, online verfügbar: 
+      <ref target="http://www.londoncharter.org/">http://www.londoncharter.org/</ref>
+      (letzter Zugriff: 11.09.2019).
     </note>
     <note n="2" rend="footnote text" xml:id="ftn2">
- Einige der Probleme und Lösungsmöglichkeiten wurden in Gius et al. (2019) vorgestellt, für einen breiteren Überblick vgl. Lauer &amp; Herrmann (2018).
+      Für die 3D-Rekonstruktion mit <hi rend="italic">SketchUp</hi>  zeichnet Heike Messemer verantwortlich, für die Erstellung der finalen Visualisierung und Einbettung in den 4D-Browser Jonas Bruschke.
+      Webseite von  <hi rend="italic">HistSadt4D</hi>:
+      <ref target="http://4dbrowser.urbanhistory4d.org/">http://4dbrowser.urbanhistory4d.org/</ref>
+      (letzter Zugriff: 18.09.2019).
     </note>
     <note n="3" rend="footnote text" xml:id="ftn3">
- Vgl. <ref target="https://www.herma.uni-hamburg.de">https://www.herma.uni-hamburg.de</ref> und Gaidys et al. (2017) [alle Links in diesem Beitrag wurden am 15.09.2019 das letzte Mal abgerufen].
+      Wie historische Fotos aus der Zeit nach der Zerstörung der Kirche zeigen, wurde die Ruine zugemauert, der Helm des südlichen Turms entfernt, das Portal abgerissen (Lerm 2001: 85; Schreier/Lauffer 2014: 12).
     </note>
     <note n="4" rend="footnote text" xml:id="ftn4">
-      Vgl. 
-      <ref target="http://www.deutschestextarchiv.de/">http://www.deutschestextarchiv.de/</ref>
+      Eine der wenigen Ausnahmen umfasst die schematisch angelegte 3D-Modellierung der Ruine des buddhistischen Klosters Sompur Mahavihara in Paharpur, Bangladesch (Rashid/Rahaman 2016).
     </note>
     <note n="5" rend="footnote text" xml:id="ftn5">
-      Vgl. 
-      <ref target="https://textgridrep.org/">https://textgridrep.org/</ref>
+      Vgl. Webseite der Deutschen Fotothek: 
+      <ref target="http://www.deutschefotothek.de/">http://www.deutschefotothek.de/</ref>
+      (letzter Zugriff: 18.09.2019). Es existieren keine historischen Aufrisse, die die Sophienkirche nach ihrem umfassenden Umbau zeigen.
     </note>
     <note n="6" rend="footnote text" xml:id="ftn6">
- Vgl. 
- <ref target="https://www.gutenberg.org/wiki/DE_Hauptseite">https://www.gutenberg.org/wiki/DE_Hauptseite</ref> (Achtung: seit 2018-02 nicht mehr über deutsche IP-Adressen abrufbar).
+      Um die Möglichkeiten für die Darstellungsweisen von Ruinen als 3D-Modelle weiter zu untersuchen, wurde eine Nutzerstudie zu deren Wahrnehmung im 4D-Browser durchgeführt, die noch ausgewertet wird (Dewitz et al. 2019: 410). Es wird erwartet mit der Studie grundlegende Tendenzen aufzuzeigen, wie die einzelnen Darstellungsweisen im Kontext von wissenschaftlichen 3D-Modellen bewertet werden.
     </note>
     <note n="7" rend="footnote text" xml:id="ftn7">
-      Unter den manuell geprüften Werkpaaren finden sich keine Duplikate innerhalb DTA, zwei innerhalb TextGrid und 46 innerhalb Gutenberg sowie 23 zwischen DTA und TextGrid, 27 zwischen DTA und Gutenberg und 257 zwischen TextGrid und Gutenberg.
+      Video zur digitalen Rekonstruktion des Nasenschmucks in Bewegung: 
+      <ref target="https://www.youtube.com/watch?v=uJg3DW_XMk0">https://www.youtube.com/watch?v=uJg3DW_XMk0</ref> (letzter Zugriff: 26.09.2019).
     </note>
     <note n="8" rend="footnote text" xml:id="ftn8">
-      Formal: Edit-Distanzen auf Wortebene mit folgenden Kosten: Einfügungen, Löschungen: an Anfang und Ende der Wortsequenzen 0, sonst Anzahl Zeichen im eingefügten/gelöschten Wort Substitutionskosten: zeichenbasierte Edit-Distanzen
-    </note>
-    <note n="9" rend="footnote text" xml:id="ftn9">
-      Wir haben bewusst auf spezialisierte Heuristiken für Untertitel, Schreibweisealternativen und andere für dieses Korpus spezifische Titelabweichungsphänomene verzichtet.
-    </note>
-    <note n="10" rend="footnote text" xml:id="ftn10">
-      Ob die Edit-Distanz über einem vorgegebenen Schwellwert liegen würde, lässt sich außerdem in einigen Fällen auch ohne deren tatsächliche Berechnung (und damit erheblich effizienter) feststellen (Tateishi &amp; Kusui 2008), allerdings waren wir für diesen Beitrag an exakten Maßen interessiert. Außerdem ist die dortige Formel auf vollständige Edit-Distanzen und nicht auf Teilzeichenfolgen-Distanzen ausgelegt.
-    </note>
-    <note n="11" rend="footnote text" xml:id="ftn11">
-      Eine Recall-Angabe ist hier nicht sinnvoll, da die manuelle Auswertung sich genau auf diese Menge beschränkt.
+      Beispielsweise werden für die Rekonstruktion von Synagogen auch Zeitzeugenberichte herangezogen, die in der Regel nicht die Eindrücke zu einem bestimmten Zeitpunkt wiedergeben, sondern eine Zeitspanne umfassen. Das resultierende 3D-Modell reflektiert dies allerdings nicht visuell. Auch in Berichten zur 3D-Rekonstruktion wird dieser Umstand nicht aufgegriffen. Vgl. Grellert 2007.
     </note>
   </div>
   <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
-<bibl style="text-align:left; ">
-  <hi rend="bold"> Bär, Daniel / Zesch, Torsten / Gurevych, Iryna </hi> (2012): Text reuse detection using a composition of text similarity measures. 
-  <hi rend="italic">Proceedings of COLING 2012</hi>, S. 167–184.
+<bibl>
+  <hi rend="bold">Bruschke, Jonas / Wacker, Markus</hi> (2016): “Simplifying Documentation of Digital Reconstruction Processes. Introducing an Interactive Documentation System”, in: Münster, Sander / Pfarr-Harfst, Mieke / Kuroczyński, Piotr / Ioannides, Marinos (Hrsg.): 
+  <hi rend="italic">3D Research Challenges in Cultural Heritage II. How to Manage Data and Knowledge Related to Interpretative Digital 3D Reconstructions of Cultural Heritage.</hi> Lecture Notes in Computer Science, Bd. 10025. Cham: Springer 256-271.
 </bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold"> Gaidys, Uta / Gius, Evelyn / Jarchow, Margarete / Koch, Gertraud / Menzel, Wolfgang / Orth, Dominik / Zinsmeister, Heike </hi> (2017): Project Description. HermA: Automated Modelling of Hermeneutic Processes. In 
-  <hi rend="italic">Hamburger Journal für Kulturanthropologie</hi> 7. S. 119–123.
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold"> Gius, Evelyn / Krüger, Katharina / Sökefeld, Carla </hi> (2019): Korpuserstellung als literaturwissenschaftliche Aufgabe. In 
-  <hi rend="italic">DHd2019 Book of Abstracts</hi>.
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold"> Herrmann, Berenike / Lauer, Gerhard</hi> (2017): Das „Was-bisher-geschah“ von KOLIMO. Ein Update zum Korpus der literarischen Moderne. In 
-  <hi rend="italic">DHd 2017 Digitale Nachhaltigkeit Book of Abstracts</hi>. S. 107–111.
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold"> Kuhn, T. S.</hi> (1970). 
-  <hi rend="italic">The Structure of scientific revolutions</hi>. 2nd ed., enlarged. Chicago: Chicago Univ. Press.
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold"> Lauer, Gerhard / Herrmann, Berenike </hi> (2018): Korpusliteraturwissenschaft. Zur Konzeption und Praxis am Beispiel eines Korpus zur literarischen Moderne. 
-  <hi rend="italic">Osnabrücker Beiträge zur Sprachtheorie</hi> 92. 7–35
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold"> Levenshtein, Vladimir </hi> (1965): Binary codes capable of correcting deletions, insertions, and reversals. Englische Übersetzung in: 
-  <hi rend="italic">Soviet Physics Doklady</hi>, Bd. 10, Nr. 8, S. 707–710, 1966.
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold"> Schöch, Christof </hi> (2017): Aufbau von Datensammlungen. In: Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (Hrsg.): 
-  <hi rend="italic">Digital Humanities: eine Einführung.</hi> Stuttgart: J. B. Metzler Verlag. S. 223–233.
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold"> Tateishi, Kenji / Kusui, Dai </hi> (2008): Fast Duplicated Documents Detection using Multi-level Prefix-filter. 
-  <hi rend="italic">Proceedings of the Third International Joint Conference on Natural Language Processing</hi>, Bd. II.
-</bibl>
+<bibl>
+<hi rend="bold">Clados, Christiane</hi> (2019): “The Golden Ones”, in: 
+                        <hi rend="italic" xml:space="preserve">Amerindian Socio-Cosmologies between the Andes, Amazonia and Mesoamerica. Toward an anthropological understanding of the Isthmo-Colombian Area, </hi>Hrsg. Ernst Halbmayer. Routledge Verlag (im Druck). 
+                    </bibl>
+<bibl>
+<hi rend="bold">Denard, Hugh</hi> (Hrsg., 2009): 
+                        <hi rend="italic">London Charter. For the Computer-based Visualisation of Cultural Heritage. Draft 2.1. 7 February 2009</hi>. London 
+                        <ref target="http://www.londoncharter.org/">
+<hi rend="underline">http://www.londoncharter.org/</hi>
+</ref> [letzter Zugriff 20.09.2019].
+                    </bibl>
+<bibl>
+<hi rend="bold">Dewitz, Leyla / Kröber, Cindy / Messemer, Heike / Maiwald, Ferdinand / Münster, Sander / Bruschke, Jonas / Niebling, Florian</hi> (2019): “Historical Photos and Visualizations: Potential for Research”, in: 
+                        <hi rend="italic">27th CIPA International Symposium “Documenting the past for a better future”</hi> 405-412 (= Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci., Bd. XLII-2W15)
+                    </bibl>
+<bibl>
+<hi rend="bold">Forte, Maurizio / Siliotti Alberto</hi> (Hrsg., 1997): 
+                        <hi rend="italic">Virtual Archaeology. Re-creating Ancient Worlds</hi>. New York: Harry N. Abrams Inc.
+                    </bibl>
+<bibl>
+<hi rend="bold">Grellert, Marc</hi> (2007): 
+                        <hi rend="italic">Immaterielle Zeugnisse. Synagogen in Deutschland. Potentiale digitaler Technologien für das Erinnern zerstörter Architektur</hi>, Bielefeld: transcript.
+                    </bibl>
+<bibl>
+<hi rend="bold">Grellert, Marc / Svenshon, Helge</hi> (2010): „Rekonstruktion ohne Befund?“, in: 
+                        <hi rend="italic">Befund und Rekonstruktion. Mitteilungen der Deutschen Gesellschaft für Archäologie des Mittelalters und der Neuzeit</hi> 22: 189-198.
+                    </bibl>
+<bibl>
+<hi rend="bold">Lerm, Matthias</hi> (2001): 
+                        <hi rend="italic">Abschied vom alten Dresden. Verluste historischer Bausubstanz nach 1945</hi>. Rostock: Hirnstorff.
+                    </bibl>
+<bibl>
+<hi rend="bold">o.A.</hi> (2011): 
+                        <hi rend="italic">Principles of Seville. International Principles of Virtual Archaeology</hi>. o.O. 
+                        <ref target="http://smartheritage.com/wp-content/uploads/2015/03/FINAL-DRAFT.pdf">
+<hi rend="underline">http://smartheritage.com/wp-content/uploads/2015/03/FINAL-DRAFT.pdf</hi>
+</ref> [letzter Zugriff 20.09.2019).
+                    </bibl>
+<bibl>
+<hi rend="bold">Pfarr, Mieke</hi> (2010): 
+                        <hi rend="italic">Dokumentationssystem für Digitale Rekonstruktionen am Beispiel der Grabanlage Zhaoling, Provinz Shaanxi, China</hi>, Dissertation, Technische Universität Darmstadt.
+                    </bibl>
+<bibl>
+<hi rend="bold">Pfarr-Harfst / Grellert, Marc</hi> (2016): „The Reconstruction – Argumentation Method: Proposal for a Minimum Standard of Documentation in the Context of Virtual Reconstructions“, in: 
+                        <hi rend="italic">Digital Heritage. Progress in Cultural Heritage: Documentation, Preservation, and Protection. 6th International Conference, EuroMed 2016</hi>, 
+                        <hi rend="italic">(Proceedings Part 1)</hi> 39-49.
+                    </bibl>
+<bibl>
+<hi rend="bold">Schreier, Dietmar / Lauffer, Manfred</hi> (2014): „Die Sophienkirche“, in: Landeshauptstadt Dresden, die Oberbürgermeisterin (Hrsg.): 
+                        <hi rend="italic">Verlorene Kirchen. Dresdens zerstörte Gotteshäuser. Eine Dokumentation seit 1938</hi> (2. Auflage). Dresden: 8-13.
+                    </bibl>
 </listBibl>
 </div>
 </back>

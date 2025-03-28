@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="195_final-DIMPEL_Friedrich_Gute_Wörter_für_Delta__Verbesserung_der_Aut" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="191_final-GIUS_Evelyn_Korpuserstellung_als_literaturwissenschaftliche_" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Gute Wörter für Delta: Verbesserung der Autorschaftsattribution durch autorspezifische distinktive Wörter</title>
+                <title>Korpuserstellung als literaturwissenschaftliche Aufgabe</title>
                 <author>
                     <persName>
-                        <surname>Dimpel</surname>
-                        <forename>Friedrich</forename>
+                        <surname>Gius</surname>
+                        <forename>Evelyn</forename>
                     </persName>
-                    <affiliation>Universität Erlangen</affiliation>
-                    <email>mail@dimpel.de</email>
+                    <affiliation>Universität Hamburg, Deutschland</affiliation>
+                    <email>evelyn.gius@uni-hamburg.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Proisl</surname>
-                        <forename>Thomas</forename>
+                        <surname>Katharina</surname>
+                        <forename>Krüger</forename>
                     </persName>
-                    <affiliation>Universität Erlangen</affiliation>
-                    <email>thomas.proisl@fau.de</email>
+                    <affiliation>Universität Hamburg, Deutschland</affiliation>
+                    <email>katharina.krueger@uni-hamburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Carla</surname>
+                        <forename>Sökefeld</forename>
+                    </persName>
+                    <affiliation>Universität Hamburg, Deutschland</affiliation>
+                    <email>carla.soekefeld@studium.uni-hamburg.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2018-12-20T11:11:00Z</date>
+                    <date>2015-10-04T22:02:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -52,18 +60,19 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Posterpräsentation</term>
+                    <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Stilometrie</term>
-                    <term>Autorschaftsattribution</term>
-                    <term>Quantitative Verfahren</term>
+                    <term>Korpora</term>
+                    <term>Korpuserstellung</term>
+                    <term>Dubletten</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Modellierung</term>
-                    <term>Stilistische Analyse</term>
-                    <term>Sprache</term>
-                    <term>Personen</term>
+                    <term>Sammlung</term>
+                    <term>Bereinigung</term>
+                    <term>Literatur</term>
+                    <term>Methoden</term>
+                    <term>Forschungsprozess</term>
                     <term>Text</term>
                 </keywords>
             </textClass>
@@ -72,282 +81,266 @@
     <text>
         <body>
             <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="nry0zrjge7d8"/>1. Einleitung
-                </head>
-                <p>Autorschaftsattributionsverfahren sind längst etabliert (vgl. Burrows 2002, Jannidis et al. 2015). Auf DHd-Jahrestagungen wurden Techniken vorgestellt, die die Attributionsverfahren optimieren (Büttner et al. 2016, Dimpel 2017a, 2018a/b). Die Optimierung der Verfahren ist deshalb wichtig, weil ein literaturwissenschaftliches Interesse besteht, die Frage nach der Autorschaft auch bei schwierigen Bedingungen zu klären. Gute Bedingungen, bei denen in Evaluationstests über hohe Erkennungsquoten berichtet wurde, sind dann gegeben, wenn viele Texte aus der gleichen Gattung vorliegen, wenn die Texte eine ausreichende Länge aufweisen (mindestens 5.000 Wortformen), wenn die Texte chronologisch nicht zu weit auseinander liegen und wenn die Texte einen möglichst normierten Sprachstand hinsichtlich Orthographie und Standardsprache aufweisen (Schöch 2014, Eder 2013a und 2013b).</p>
-                <p>All diese Bedingungen sind nicht erfüllt, wenn man mittelhochdeutsche Kleinepik untersuchen möchte – gerade etwa mit Blick auf die Kleinepik des Strickers wäre eine stilometrische Klärung bei einigen Texten interessant. Mittelhochdeutsche Texte folgen keiner geregelten Orthographie, es liegen sowohl mehr oder weniger normalisierte als auch nicht-normalisierte digitale Texte vor, sie sind oft dialektal geprägt und viele Texte aus dem Bereich der Kleinepik übersteigen kaum eine Anzahl von 2.000 Wortformen. Anhand der ‚Halben Birne‘ (umstrittene Autorschaft Konrads von Würzburg; 2.469 Wortformen) wurde ein Verfahren vorgestellt, wie mit Burrows’ Delta die distinktiven Wörter ermittelt werden können, die Konrads Wortschatz von anderen Autoren unterscheiden (Dimpel 2018a). Damit konnte die Erkennungsqualität so optimiert werden, dass Delta auf die ‚Halbe Birne‘ angewendet werden konnte. Nun wird anhand eines weniger problematischen Korpus (Romane ca. 19. 
-                Jahrhundert<ref target="ftn1" n="1"/>) evaluiert, wie sich Erkennungsquote und False-Positives verändern, wenn man Delta nicht auf allen Most Frequent Words (MFWs) berechnet, sondern nur auf „guten“ MFWs.
+                <head>Korpuserstellung in der (digitalen) Literaturwissenschaft</head>
+                <p style="text-align:left;">Die Praxis der Zusammenstellung von Primärtexten zu einem Korpus ist gewissermaßen literaturwissenschaftliches Alltagsgeschäft, trotzdem wird sie selten problematisiert. Die beiden Standardfälle der nicht-digitalen Korpusanalyse erscheinen auch bezüglich der Korpuszusammenstellung unproblematisch: (1) Die Forschungsfrage erfordert eine bestimmte Textbasis (etwa bei einer Untersuchung zu Krankheitsdarstellungen bei Thomas Mann), (2) Die Korpuserstellung basiert auf der Kanonizität der Texte. Zumindest im zweiten Fall ist das geeignete Vorgehen allerdings nicht selbstverständlich, denn es müsste begründet werden, nach welchen Kriterien Werke tatsächlich exemplarisch und repräsentativ sind. Dies wird jedoch kaum thematisiert (vgl. Gius, in Vorbereitung). </p>
+                <p style="text-align:left;">Bei der konkreten Erstellung eines 
+                    <hi rend="italic">digitalen</hi> Korpus ist wiederum aufgrund der Menge der verfügbaren Texte häufig nur eine balancierte Sammlung nach vordefinierten Kriterien realisierbar, die allerdings die Gefahr von unerwünschten Korrelationen birgt 
+                    (Schöch 2017).<ref target="ftn1" n="1"/> Trotz dieser Problematik wird die methodologische Bedeutung der Korpuszusammenstellung auch in den 
+                    <hi rend="italic">Digital Humanities</hi> kaum wahrgenommen
+                    <hi rend="color(0000FF)" xml:space="preserve">. </hi>So ergibt eine Stichwortsuche nach „Korpus“ bzw. „corpus“ in allen Tagungsbänden der 
+                    <hi rend="italic">Digital Humanities</hi>- und 
+                    <hi rend="italic">Digital Humanities im deutschsprachigen Raum</hi>-Konferenzen von 2014-2017 jeweils hunderte Beiträge. Allerdings gehen nur acht der 49 Abstracts mit literaturwissenschaftlicher Thematik explizit auf die Korpus
+                    <hi rend="italic">erstellung</hi> ein, obwohl in den übrigen durchaus auch von repräsentativen Korpora die Rede ist. Lediglich 
+                    fünf<ref target="ftn2" n="2"/> dieser Beiträge beschäftigen sich dezidiert mit der Problematik eines literaturwissenschaftlichen Korpus.
+                </p>
+                <p style="text-align:left;">Ein Grund für die geringe Auseinandersetzung mit dem Thema kann sein, dass die Praxeologie der Zusammenstellung literarischer digitaler Korpora verhältnismäßig neu ist und sich bislang keine literaturwissenschaftlichen Routinen etablieren konnten, die das Zusammenstellen des Untersuchungsobjektes 
+                betreffen.<ref target="ftn3" n="3"/> Ein anderer Erklärungsansatz ist, dass schon in der traditionellen Literaturwissenschaft der “literaturwissenschaftliche Objektumgang vor allem durch implizite Normen strukturiert” ist (Schruhl 2018) und entsprechend auch eine Übersetzung dieses nicht-digitalen Zugangs in einen digitalen Zugang – also eine Art Operationalisierung der Korpuserstellung – nicht möglich ist.
+                </p>
+                <p style="text-align:left;">Die digitale literaturwissenschaftliche Korpuserstellung stellt also ein ungelöstes methodologisches Grundproblem dar.</p>
+                <p style="text-align:left;">Wir erläutern im Folgenden die Problematik der literaturwissenschaftlichen Korpuserstellung exemplarisch, um eine Diskussion darüber anzustoßen sowie mögliche Lösungsansätze vorzustellen. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Erstellung eines Korpus zur Untersuchung von genderspezifischer Darstellung von Krankheit</head>
+                <p style="text-align:left;">Im Rahmen unseres Forschungsprojektes zu genderspezifischer Darstellung von Krankheit in literarischen Texten im Forschungsverbund hermA (“Automatische Modellierung hermeneutischer 
+                Prozesse”)<ref target="ftn4" n="4"/> geht es um die Frage nach der genderspezifischen Darstellung von Krankheit bei literarischen Figuren um 1900. In einem korpusbasierten Ansatz werden Methoden für die Analyse der Darstellung von Krankheit entwickelt. Da wir einen konstruktivistischen Ansatz in Bezug auf Genderkonzepte verfolgen und außerdem grundsätzlich davon ausgehen, dass sich semantische Aspekte in literarischen Texten nur bedingt an der Textoberfläche 
+                materialisieren,<ref target="ftn5" n="5"/>mussten wir Strategien entwickeln, um ein möglichst großes Ausgangskorpus zu etablieren. Die Grundlage zur Erstellung dieses Korpus war das Kolimo-Korpus nach Herrmann und Lauer (2017). Es enthält über 42.000 Texte mit einem Fokus auf der Zeitspanne von 1880 bis 1930 aus dem Deutschen Textarchiv, dem TextGrid Repository und dem Projekt Gutenberg-DE (vgl. Tabelle 2).
+                </p>
+                <p style="text-align:left;">Da die Entwicklung von Strategien zur Bildung themenspezifischer Subkorpora ebenfalls Ziel des Forschungsvorhabens ist, gab es für die Textauswahl zunächst keine inhaltlichen Einschränkungen. Kriterien zur Textauswahl waren deshalb nur das Datum der Erstveröffentlichung, Textsprache, das Genre und Textlänge; Grundlage für ihre Ermittlung bildeten die Kolimo-Metadaten. </p>
+                <table rend="rules">
+                    <row>
+                        <cell rend="left">Kriterium</cell>
+                        <cell rend="left">Relevanter Bereich</cell>
+                        <cell rend="left">Zweifelsfälle </cell>
+                        <cell rend="left">Festlegung durch:</cell>
+                    </row>
+                    <row>
+                        <cell rend="left">Erscheinungsdatum</cell>
+                        <cell rend="left">1870-1920</cell>
+                        <cell rend="left">Zeitspannen, widersprüchliche Angaben, fehlende Angaben</cell>
+                        <cell rend="left">
+                            <p style="text-align:left;">Metadaten</p>
+                            <p style="text-align:left;">
+                                <hi style="font-size:10pt" xml:space="preserve">+ Recherche zu Ersterscheinungsdaten bzw. Lebensdaten </hi>
+                            </p>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell rend="left">Sprache</cell>
+                        <cell rend="left">Deutschsprachig (Standardsprache), keine Übersetzungen</cell>
+                        <cell rend="left"/>
+                        <cell rend="left">Automatisierte Überprüfung: &gt;90% deutschsprachig</cell>
+                    </row>
+                    <row>
+                        <cell rend="left">Gattung/Genre</cell>
+                        <cell rend="left">Prosa und dazugehörige Genres</cell>
+                        <cell rend="left">
+                            <p style="text-align:left;">Kinder- und Jugendbuch (im Kernkorpus)</p>
+                            <p style="text-align:left;">
+                                <hi style="font-size:10pt">Autobiographie, Biographie, Fabel, Märchen, Memoire, Tagebuch (nicht im Kernkorpus)</hi>
+                            </p>
+                            <p style="text-align:left;">Ohne spezifisches Genre</p>
+                        </cell>
+                        <cell rend="left">
+                            <p style="text-align:left;">Metadaten</p>
+                            <p style="text-align:left;">Kategorisierung der Angaben in den Metadaten</p>
+                            <p style="text-align:left;">Recherche </p>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell rend="left">Textlänge</cell>
+                        <cell rend="left">&gt; 1.000 Wörter</cell>
+                        <cell rend="left">
+                            <hi style="font-size:10pt">Kapitelweise vorliegende Texte u.ä.</hi>
+                        </cell>
+                        <cell rend="left">automatische Wortzählung</cell>
+                    </row>
+                </table>
+                <p style="text-align:center;">
+                    <hi rend="italic bold">Tabelle 1:</hi> Übersicht der Kriterien für die Korpuserstellung
+                </p>
+                <p style="text-align:left;">Ins Korpus aufgenommen wurden Texte mit Erstveröffentlichung zwischen 1870 und 1920. Die Auswahl wurde anhand der vorliegenden Metadaten getroffen und bei Bedarf weiter ergänzt. Je nach Repositorium unterschied sich die zusätzlich nötige Recherchearbeit stark: elf DTA-Texte, 7.602 Gutenberg-Texte, und 27.300 TextGrid-Texte hatten keine Datumsangabe. </p>
+                <p style="text-align:left;">Da wir uns auf Phänomene konzentrieren, die in der deutschsprachigen zeitgenössischen Literatur verhandelt wurden, lag der Fokus auf standarddeutschen Texten. Übersetzungen wurden in ein Sonderkorpus aufgenommen, zu weniger als 90% deutschsprachige Texte aussortiert. 
+                    <lb/>Außerdem wurden ausschließlich Prosatexte berücksichtigt, wobei für die (Sub-)Genres Autobiographie, Biographie, Fabel, Märchen, Memoire und Tagebuch eigene Sonderkorpora erstellt wurden. Texte der Kategorie Kinder- beziehungsweise Jugendbuch wurden hingegen in das Kernkorpus miteinbezogen. 
+                    <lb/>Um Kürzestprosa auszuschließen, die sich meist deutlich von der narrativen Struktur anderer Formen unterscheidet, wurden nur Texte mit über 1.000 Wörtern aufgenommen. 
+                </p>
+                <p style="text-align:left;">Das nach diesen Kriterien manuell erstellte Kernkorpus umfasst nur noch etwa 2.700 Werke.</p>
+                <table rend="rules">
+                    <row>
+                        <cell rend="left">Korpus</cell>
+                        <cell rend="left">Texte (DTA/Textgrid/Gutenberg)</cell>
+                    </row>
+                    <row>
+                        <cell rend="left">Ausgangskorpus Kolimo</cell>
+                        <cell rend="left">42.710 (1.317 / 27.412 / 13.981)</cell>
+                    </row>
+                    <row>
+                        <cell rend="left">Kernkorpus</cell>
+                        <cell rend="left">2.726 (50 / 1.137 / 1.539)</cell>
+                    </row>
+                    <row>
+                        <cell rend="left">Sonderkorpus Märchen</cell>
+                        <cell rend="left">2.601</cell>
+                    </row>
+                    <row>
+                        <cell rend="left">Sonderkorpus Übersetzungen</cell>
+                        <cell rend="left">465</cell>
+                    </row>
+                    <row>
+                        <cell rend="left">Weitere Sonderkorpora </cell>
+                        <cell rend="left">69</cell>
+                    </row>
+                </table>
+                <p style="text-align:center;">
+                    <hi rend="italic bold">Tabelle 2:</hi> Übersicht Korpusgrößen
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="np4bh28snht8"/>2. Gute-Wörter und die Level-2-Differenz
-                </head>
-                <p>Für Burrows’ Delta ermittelt man relative Worthäufigkeiten – hier für 
-                    <hi rend="color(0070C0)" xml:space="preserve">zwei Texte von Wolfram (Willehalm, Parzival) </hi>sowie den 
-                    <hi rend="color(FF0000)" xml:space="preserve">Tristan von Gottfried. </hi>Weiter werden Mittelwert, Standardabweichung und 
-                    <hi rend="italic">z</hi>-Werte (Spalten Z1, Z2, Z3) sowie die absolute Differenz der 
-                    <hi rend="italic">z</hi>-Werte (Spalten AbsDiff) berechnet. Der Mittelwert der absoluten 
-                    <hi rend="italic">z</hi>-Wert-Differenzen ergibt das Abstandsmaß Delta – hier wäre Delta für Parzival–Willehalm der Mittelwert der drittletzten Spalte. 
+                <head>Korpusbereinigung</head>
+                <p style="text-align:left;">Die dargestellten Schwierigkeiten bei der Entscheidung über die Aufnahme eines Textes in das Kernkorpus basierten auf unvollständigen, widersprüchlichen oder nicht ohne weiteres aufeinander abbildbaren Metadaten und konnten anhand der dargelegten Setzungen vergleichsweise einfach gelöst werden. Weitaus schwieriger gestaltete sich hingegen die Identifikation von Dubletten und die Konzipierung einer geeigneten Problembehandlung – ein leider typisches Problem bei der Aggregation eines Korpus aus verschiedenen Quellen. </p>
+                <p style="text-align:left;">So zeigte sich bei einer ersten manuellen Durchsicht der Liste und der stichprobenartigen Überprüfung der Volltexte, dass Dubletten nicht eindeutig anhand von Metadaten identifizierbar sind. Die naheliegende Lösung, ein Volltextvergleich, müsste jedoch bei 2.700 Texten über sieben Millionen mögliche Paare vergleichen und würde auch bei der Nutzung von Cluster Computing Jahrzehnte dauern. Deshalb mussten Heuristiken entwickelt werden, um das Verfahren abzukürzen.</p>
+                <p style="text-align:left;">Entsprechend haben wir einen Workflow entworfen, um mit möglichst hoher Treffgenauigkeit Dubletten zu identifizieren. Ziel war, alle echten Dubletten zu finden und das Korpus entsprechend zu bereinigen, ohne Texte vorschnell zu streichen. </p>
+                <p style="text-align:left;">Dafür wurden folgende, größtenteils automatische Prüfungen 
+                durchgeführt:<ref target="ftn6" n="6"/>
                 </p>
-                <figure>
-                    <graphic n="1001" width="16.002cm" height="6.8428611111111115cm" url="195_final-fc58d9d65b645950e094e67435c3531d.png" rend="inline"/>
-                </figure>
-                <p>Die guten Wörter beruhen auf den Level-2-Differenzen: Die 
-                    <hi rend="italic">z</hi>-Wert-Differenzen zwischen den Autortexten sollen kleiner sein als die 
-                    <hi rend="italic">z</hi>-Wert-Differenzen zwischen Autortexten und Distraktortexten: Man zieht die Differenzen zwischen Autor- und Distraktortexten von den Differenzen zwischen den Autortexten untereinander ab. Im Beispiel bildet man die Differenz aus der 
-                    <hi rend="italic">z</hi>-Wert-Differenz zwischen Wolframs ‚Willehalm‘ und Gottfrieds ‚Tristan‘ (für „der“: 2,0) und zwischen Wolframs ‘Willehalm’ und Wolframs ‘Parzival’ (für „der“ 1,07). Die Level-2-Differenz für „der“ beträgt 0,93. Bei einer positiven Level-2-Differenz kann ein Wort die Autortexte von den Distraktortexten unterscheiden; „ich“ mit negativer Level-2-Differenz ist hier ungeeignet. In dem Beispiel mit nur drei Texten ist dies auch anhand der Worthäufigkeitswerte und 
-                    <hi rend="italic">z</hi>-Werte nachvollziehbar. Sonst sind jedoch weder erhöhte Worthäufigkeitswerte noch erhöhte 
-                    <hi rend="italic">z</hi>-Werte allein hinreichend, um ein Wort als distinktiv zu identifizieren (Dimpel 2017b). 
-                </p>
-                <p>Formal ausgedrückt werden die Level-2-Differenzen anhand von zwei Teilkorpora ermittelt: Einem Teilkorpus 
-                    <formula>
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
-                            <mi xmlns="http://www.w3.org/1998/Math/MathML">A</mi>
-                            <mo xmlns="http://www.w3.org/1998/Math/MathML">=</mo>
-                            <mfenced open="{" close="}" separators="|" xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mrow>
-                                    <msub>
-                                        <mrow>
-                                            <mi>a</mi>
-                                        </mrow>
-                                        <mrow>
-                                            <mn>1</mn>
-                                        </mrow>
-                                    </msub>
-                                    <mo>,</mo>
-                                    <mo>…</mo>
-                                    <mo>,</mo>
-                                    <msub>
-                                        <mrow>
-                                            <mi>a</mi>
-                                        </mrow>
-                                        <mrow>
-                                            <mi>n</mi>
-                                        </mrow>
-                                    </msub>
-                                </mrow>
-                            </mfenced>
-                        </mml:math>
-                    </formula> von Autortexten und einem Teilkorpus 
-                    <formula>
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
-                            <mi xmlns="http://www.w3.org/1998/Math/MathML">D</mi>
-                            <mo xmlns="http://www.w3.org/1998/Math/MathML">=</mo>
-                            <mfenced open="{" close="}" separators="|" xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mrow>
-                                    <msub>
-                                        <mrow>
-                                            <mi>d</mi>
-                                        </mrow>
-                                        <mrow>
-                                            <mn>1</mn>
-                                        </mrow>
-                                    </msub>
-                                    <mo>,</mo>
-                                    <mo>…</mo>
-                                    <mo>,</mo>
-                                    <msub>
-                                        <mrow>
-                                            <mi>d</mi>
-                                        </mrow>
-                                        <mrow>
-                                            <mi>n</mi>
-                                        </mrow>
-                                    </msub>
-                                </mrow>
-                            </mfenced>
-                        </mml:math>
-                    </formula> von Distraktortexten anderer Autoren. Dabei ist jeder Text ein Vektor von 
-                    <hi rend="italic">z</hi>-Werten. Es werden für jeden Autortext 
-                    <formula>
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
-                            <msub xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mrow>
-                                    <mi>a</mi>
-                                </mrow>
-                                <mrow>
-                                    <mi>i</mi>
-                                </mrow>
-                            </msub>
-                        </mml:math>
-                    </formula> die absoluten 
-                    <hi rend="italic">z</hi>-Wert-Differenzen zu jedem Distraktortext 
-                    <formula>
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
-                            <mi xmlns="http://www.w3.org/1998/Math/MathML">d</mi>
-                        </mml:math>
-                    </formula> und zu jedem anderen Autortext 
-                    <formula>
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
-                            <msub xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mrow>
-                                    <mi>a</mi>
-                                </mrow>
-                                <mrow>
-                                    <mi>j</mi>
-                                </mrow>
-                            </msub>
-                        </mml:math>
-                    </formula> ermittelt, daraus die Level-2-Differenzen berechnet und anschließend gemittelt. Für die Mittelwerte der Level-2-Differenzen gilt:
-                </p>
-                <figure>
-                    <graphic n="1002" width="13cm" height="1.4021833333333333cm" url="195_final-bce5acc9146039c893e3389c21cb6bd8.png" rend="inline"/>
-                </figure>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="jykltqslmjgg"/>3. Setting und Korpus
-                </head>
-                <p>Wir prüfen, ob mit „guten Wörtern“ Texte des Zielautors besser von denen anderer Autoren abgegrenzt werden können als mit dem üblichen Delta-Ansatz, der rein auf den 
-                    <formula>
-                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
-                            <mi xmlns="http://www.w3.org/1998/Math/MathML">n</mi>
-                        </mml:math>
-                    </formula> häufigsten Wörtern basiert. Wir fassen die Autorschaftsattribution als ein Zwei-Klassen-Problem auf: Für jeden Text im Ratekorpus wollen wir wissen, ob er vom Zielautor oder von einem anderen Autor ist.
-                </p>
-                <p>Für die Berechnung der guten Wörter und zur Evaluation werden ein Ratekorpus und ein Vergleichskorpus verwendet. Im Vergleichskorpus befinden sich ein Autorvergleichstext (Text vom Zielautor), je nach Testreihe zwanzig oder mehr Distraktortexte von Autoren, die nicht im Ratekorpus vertreten sind, sowie in manchen Experimenten Texte von den übrigen im Ratekorpus vertretenen Autoren. Wenn der Delta-Abstand zwischen Ratetext und Autorvergleichstext der niedrigste ist, gilt dieser Text als dem Zielautor zugeordnet; ist der Abstand zu einem Distraktortext von einem anderen Autor am niedrigsten, gilt der Text als falsch 
-                erkannt.<ref target="ftn2" n="2"/>Für die Evaluation werden Precision, Recall, 
-                F<hi rend="subscript">1</hi>-Score und Accuracy berechnet und über alle Autoren hinweg gemittelt.
-                </p>
-                <p>Die guten Wörter werden jeweils auf den alphabetisch ersten drei Texten des Autors für jeden Autor in vier Varianten berechnet. Ausgangspunkt sind jeweils die häufigsten 1.200 Wörter:</p>
                 <list type="ordered">
-                    <item>Als gute Wörter werden Wörter gewählt, bei denen die Mittelwerte aller Level-2-Differenzen ≥ 0,4 sind.</item>
-                    <item>wie A, jedoch Mittelwert ≥ 0,2.</item>
-                    <item>Wie A, zusätzlich müssen 3 von 3 oder 5 von 6 Autortexten zu mindestens je einem Distraktortext eine Level-2-Differenz &gt; 1,64 aufweisen.</item>
-                    <item>Wie C, jedoch muss die Level-2-Differenz nur &gt; 1,2 statt 1,64 sein; zudem mit Mittelwerten ≥ 0,4. Die zwei schlechtesten Level-2-Differenzen werden ignoriert, da ein Wort einen Text womöglich gut von vielen Distraktortexten unterscheiden kann, bei einigen wenigen Distraktortexten jedoch womöglich sehr schlecht 
-                    funktioniert.<ref target="ftn3" n="3"/>
+                    <item>Identifikation eindeutiger Dubletten:
+                        <list type="unordered">
+                            <item>Werke, denen derselbe Volltext zugeordnet wurde</item>
+                            <item>Werke mit einer Edit-Distanz (Levensthein 1966) ≤ 2 bei Autor und Titel </item>
+                        </list>
+                    </item>
+                    <item>Identifikation Dublettenkandidaten:
+                        <list type="unordered">
+                            <item>Werke mit einer Edit-Distanz ≤ 2 bei Autor (und mehr beim Titel)</item>
+                        </list>
+                    </item>
+                    <item>Volltextvergleich Dublettenkandidaten:
+                        <list type="unordered">
+                            <item>gemessene einseitige Edit-Distanz (in beiden Richtungen):
+                                <list type="unordered">
+                                    <item>≤15%: Dublette</item>
+                                    <item>≥ 80%: keine Dublette </item>
+                                </list>
+                            </item>
+                            <item>alle anderen Fälle: manuelle Prüfung (vgl. Tabelle 3)</item>
+                        </list>
+                    </item>
+                    <item>Entfernung verbleibender Texte mit 
+                        <list type="unordered">
+                            <item>≤ 1.000 Wörter und/oder </item>
+                            <item>≥ 10% nichtdeutscher Textanteil</item>
+                        </list>
                     </item>
                 </list>
-                <p>Wir verwenden stets 400 gute Wörter, da auch kurze Texte mit 2.000 Token getestet werden sollen. Wenn eine Variante mehr als 400 gute Wörter liefert, verwenden wir die 400 Wörter mit den größten Level-2-Differenz-Mittelwerten; wenn sie weniger als 400 gute Wörter liefert, füllen wir mit MFWs auf.</p>
+                <p style="text-align:left;">Bei den verbleibenden Textpaaren gehen wir von echten Dubletten aus. Für diese erfolgt eine Repositorien-Priorisierung nach der Qualität der Repositorien (1. DTA, 2. TextGrid, 3. Gutenberg).</p>
+                <table rend="rules">
+                    <row>
+                        <cell rend="left">Problem</cell>
+                        <cell rend="left">Bsp.</cell>
+                        <cell rend="left">Lösungsansatz</cell>
+                    </row>
+                    <row>
+                        <cell rend="left">Text enthält zusätzlichen Paratext</cell>
+                        <cell rend="left">“Hymnen” (Ferdinand von Saar) mit Vorwort des Herausgebers</cell>
+                        <cell rend="left">Variante ohne Paratext</cell>
+                    </row>
+                    <row>
+                        <cell rend="left">Eindeutig stark veränderte Ausgabe</cell>
+                        <cell rend="left">“Die Pilger der Wildnis” (Johannes Scherr) als “für die Jugend bearbeitete Ausgabe“</cell>
+                        <cell rend="left">“Ursprungsvariante” wählen</cell>
+                    </row>
+                    <row>
+                        <cell rend="left">Mehrbändiges Werk (≠ Dubletten)</cell>
+                        <cell rend="left">
+                            <hi style="font-size:10pt">“Auch Einer” (Friedrich Theodor von Vischer, 1879): Band 1 und 2 mit zwei nahezu gleichlautenden Dateinamen</hi>
+                        </cell>
+                        <cell rend="left">zusammenführen</cell>
+                    </row>
+                    <row>
+                        <cell rend="left">Teile eines Sammelbandes (≠ Dubletten)</cell>
+                        <cell rend="left">“Der Schmied seines Glückes” von Gottfried Keller, erschienen in “Die Leute von Seldwyla”</cell>
+                        <cell rend="left">aufteilen</cell>
+                    </row>
+                </table>
+                <p style="text-align:center;">
+                    <hi rend="italic bold">Tabelle 3:</hi> Dubletten: Lösungsansätze bei manueller Überprüfung
+                </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="kdtleadj1crn"/>4. Experimente
-                </head>
-                <p>Wir führen drei Testreihen durch:</p>
-                <list type="ordered">
-                    <item>Bootstrapping der Ratetexte. Im Vergleichskorpus werden die vollen Texte verwendet; um die Robustheit zu erhöhen, wird ein Bootstrapping-Verfahren auf die Ratetexte angewendet. Pro Ratetext werden 100 Stichproben gezogen, wobei für jede Stichprobe zufällig so viele Wörter mit Zurücklegen aus dem Ratetext gezogen werden, wie der Ratetext umfasst.</item>
-                    <item>Subsampling der Ratetexte. Im Vergleichskorpus werden die vollen Texte verwendet, aus den Ratetexten werden jedoch zufällige Stichproben von 2.000 Wörtern gezogen, um das Verhalten auf kurzen Ratetexten zu simulieren.</item>
-                    <item>Subsampling der Rate- und der Vergleichstexte. Sowohl aus den Rate- als auch aus den Vergleichstexten werden zufällige Stichproben von 2.000 Wörtern gezogen, um das Verhalten auf kurzen Textsorten zu simulieren.</item>
-                </list>
-                <p>Dadurch werden wichtige Einsatzszenarien (lange Texte, kurze Texte mit langen Vergleichstexten und kurze Texte mit kurzen Vergleichstexten) abgedeckt. </p>
-                <div type="div2" rend="DH-Heading2">
-                    <head>
-                        <anchor xml:id="eowfprnr7box"/>Testreihe 1: Bootstrapping der Ratetexte
-                    </head>
-                    <p>Hier evaluieren wir die Methoden bei vollständigen Romanen. Einmal enthält das Vergleichskorpus Texte von allen Autoren im Ratekorpus, im zweiten Schritt enthält das Vergleichskorpus zwar einen Text des Zielautors, jedoch keinen Text der anderen Autoren im Ratekorpus.</p>
-                    <p>Für das erste Experiment verwenden wir ein Vergleichskorpus, das je einen Text von allen 32 Autoren enthält. Für jeden Autor ermitteln wir die guten Wörter auf Basis des Vergleichskorpus und zwei weiteren Texten des Autors (also insgesamt drei Autortexten und 31 Distraktortexten). Die Ratekorpora für jeden Autor umfassen drei Texte des Autors und drei zufällige Texte von den übrigen Autoren. </p>
-                    <p>Mittelwerte über alle 32 Autoren:</p>
-                    <figure>
-                        <graphic n="1003" width="16.002cm" height="7.5017611111111115cm" url="195_final-68e64c817075e4300696af493eb4bfce.png" rend="inline"/>
-                    </figure>
-                    <p>Die klassischen Delta-Varianten (MFW400, MFW1200) haben in Bezug auf den Zielautor eine hohe Precision und einen niedrigeren Recall, während sich das Verhältnis für Texte anderer Autoren umdreht: Niedrige Erkennungsquote, dafür kaum False Positives (Texte, die fälschlicherweise dem Zielautor zugeschrieben werden).</p>
-                    <p>Die Gute-Wörter-Varianten führen zu deutlichen Recall-Verbesserungen beim Zielautor auf Kosten einer etwas geringeren Precision. Die Precision für Texte anderer Autoren steigt zu Lasten des Recalls. Mit den guten Wörtern werden also mehr Texte des Autors richtig erkannt (&gt;97%), dafür gibt es minimal mehr False Positives (2,5%).</p>
-                    <p>Mehr häufigste Wörter funktionieren besser als weniger. Alle vier Gute-Wörter-Varianten funktionieren besser als die reinen Delta-Varianten (Verbesserungen von 6–8 Punkten bei Accuracy und F
-                        <hi rend="subscript">1</hi>).
-                    </p>
-                    <p>Für das zweite Experiment wird lediglich das Vergleichskorpus verändert. Es enthält jetzt jeweils einen Text des Zielautors und je einen Text von 24 zusätzlichen Autoren (die sich nicht mit den 32 getesteten Autoren überschneiden). Die wahren Autoren für drei der sechs Texte in den Ratekorpora befinden sich nicht mehr im Vergleichskorpus, was die Klassifikation der entsprechenden Texte erschwert.</p>
-                    <figure>
-                        <graphic n="1004" width="16.002cm" height="7.199175cm" url="195_final-d5df6b9cfb2794170c5e0639b41c7b87.png" rend="inline"/>
-                    </figure>
-                    <p>Tatsächlich bewegen sich alle Ergebnisse auf einem etwas niedrigeren Niveau als im ersten Experiment. Auch hier: Mittels guter Wörter steigt der Recall für Texte des Zielautors deutlich, während die Precision leicht sinkt. Für Texte anderer Autoren verhält es sich umgekehrt. Auch hier führen die guten Wörter zu besseren Accuracy- und F
-                        <hi rend="subscript">1</hi>-Werten (2–5 Punkte). 
-                    </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>
-                        <anchor xml:id="ytk698mcshsj"/>Testreihe 2: Subsampling der Ratetexte
-                    </head>
-                    <p>In dieser Testreihe wollen wir prüfen, wie gut die einzelnen Methoden für kurze Rate- und lange (vollständige) Vergleichstexte funktionieren. Dazu ziehen wir für jeden Ratetext 100 Stichproben à 2.000 Wörter; der übrige Versuchsaufbau ist identisch zu Testreihe 1.</p>
-                    <p>Test 2a) Alle Autoren aus den Ratekorpora sind im Vergleichskorpus vertreten:</p>
-                    <figure>
-                        <graphic n="1005" width="16.002cm" height="7.126305555555556cm" url="195_final-0f360eaf119adbd5a6562ec90ba86578.png" rend="inline"/>
-                    </figure>
-                    <p>Die Ergebnisse sind auf den 2.000-Wort-Samples spürbar schlechter. Das Gesamtbild ist jedoch dasselbe: Die guten Wörter verbessern die Klassifikation und führen zu deutlich höheren Recall-Werten für den Zielautor bei etwas niedrigerer Precision.</p>
-                    <p>Test 2B) Die Nicht-Zielautoren sind nicht im Vergleichskorpus vertreten:</p>
-                    <figure>
-                        <graphic n="1006" width="16.002cm" height="7.171177777777777cm" url="195_final-0d6d941c13fc69d5c0fa52557721ac1d.png" rend="inline"/>
-                    </figure>
-                    <p>Auch hier verbessern die guten Wörter die Erkennung der Zielautortexte (Erkennungsquote &gt;96%). Größere Einbußen gibt es bei der Erkennung von Texten, die nicht vom Zielautor stammen, so dass die guten Wörter zwar die Erkennung von Texten des Zielautors enorm verbessern (Reduktion der Fehlerrate &gt;80%), die Ergebnisse insgesamt aber leicht schlechter sind.</p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>
-                        <anchor xml:id="s7co3wcqmmwo"/>Testreihe 3: Subsampling der Rate- und der Vergleichstexte
-                    </head>
-                    <p>Nunmehr werden die guten Wörter mit zwei Ratetexten und einem Autorvergleichstext berechnet; wenn jedoch mehr als sechs Texte pro Autor vorliegen, werden entsprechend mehr Ratetexte verwendet. Da diese drei (oder mehr) Texte nicht wie oben reihum als Rate- und Autorvergleichstext verwendet werden, ist die Qualität der Wortlisten etwas schlechter. Im Evaluationstest werden nicht nur im Ratekorpus kleine Bag-of-Words mit 2.000 Wortformen verwendet, sondern auch im Vergleichskorpus, wodurch die Erkennungsquoten deutlich schlechter werden. Die Parameter für die Author-Recall-Ermittlung sind: 250 Stichproben bei 400 MFWs, im Vergleichskorpus befinden sich neben dem Autorvergleichstext 24 Texte von anderen Autoren. Die False-Positives werden hier mit je zwei Texten von allen anderen 31 Autoren als Ratetexte in 32 Tests gegen das Vergleichskorpus ermittelt, in dem neben 24 Texten von anderen Autoren reihum alle 32 Autoren mit einem Autorvergleichstext vertreten waren (Parameter: Bag-of-Words mit 2.000 Wortformen, 400 MFWs, 100 Stichproben). </p>
-                    <figure>
-                        <graphic n="1007" width="12cm" height="4.772205555555556cm" url="195_final-a38b41b1366a5a832820b6e5e2501150.png" rend="inline"/>
-                    </figure>
-                    <p>Auch hier übertrifft der Gewinn bei der Verbesserung der Erkennungsquote die Verschlechterung bei den False-Positives. Wenn sich der fragliche Autor im Vergleichskorpus befindet, ergibt sich sogar bei den False-Positives bei A) und B) eine leichte Verbesserung. Bei C) ist die Verschlechterung bei den False-Positives problematisch. </p>
-                </div>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="voeu8c8jph5u"/>5. Fazit
-                </head>
-                <p>Die Gute-Wörter-Verfahren führen zu besseren Erkennungsquoten; in geringem Umfang treten mehr False-Positives auf, doch sind die positiven Effekte größer als die negativen. Die detaillierten Zahlen, für die hier kein Platz verfügbar ist, zeigen, dass die False-Positives je nach Autor erheblich schwanken. In einem Anwendungsfall kann vorab getestet werden, ob es bei dem fraglichen Autor zu erhöhten False-Positives kommt – um zu prüfen, ob das Verfahren bei diesem Autor gut anwendbar ist. Künftig wollen wir untersuchen, ob ein mittels Maschinellem Lernen erstelltes autorspezifisches Vokabular zu weiteren Verbesserungen führt. </p>
+                <head>Ansätze für die literaturwissenschaftliche Korpuserstellung?</head>
+                <p style="text-align:left;">Die Digitalisierung fördert die literaturwissenschaftliche Korpuserstellung in neuem Umfang und macht dadurch die Textzusammenstellung als literaturwissenschaftliches Problem offensichtlich, das methodologisch kaum beleuchtet ist. Oft dominiert die Frage, welche Texte überhaupt ins Korpus können, also aus welchen bereits digitalisierten oder noch digitalisierbaren Texten ausgewählt werden kann, die literaturwissenschaftlichen Überlegungen zur Textauswahl.</p>
+                <p style="text-align:left;">Da die Menge digitalisiert vorliegender Texte stetig steigt, haben Korpora außerdem immer häufiger eine Größe, die von einzelnen Forscher/innen nicht mehr überschaubar ist. Deshalb muss sich die literaturwissenschaftliche Begründung der Relevanz der Texte in einem Korpus einer gewissen Größe im Zweifelsfall auf Aspekte, die als Informationen in den Metadaten der Texte vorliegen – wie Zeit, Gattung/Genre oder Autor/innen – beschränken.</p>
+                <p style="text-align:left;">Sowohl die Menge der zur Verfügung stehenden Texte als auch die Qualität der Primär- und Metadaten sind noch steigerungsfähig. Hier ist die Forschungsgemeinschaft genauso gefordert wie Bibliotheken und Archive.</p>
+                <p style="text-align:left;">Im Sinne einer wissenschaftlichen Qualitätssicherung ist es daher umso wichtiger, im Hinblick auf das
+                    <hi rend="italic" xml:space="preserve"> zur Verfügung </hi>stehende Datenmaterial Qualitätskriterien für die Zusammenstellung der Korpora zu entwickeln und umzusetzen, wie das vorgestellte Verfahren zeigen soll. So können aus Texten mit schlechten oder fehlenden Metadaten vergleichsweise homogene Korpora erstellt und anschließend mit weiteren Informationen angereichert werden.
+                </p>
+                <p style="text-align:left;">Da das literaturwissenschaftliche Wissen über ein Korpus mit steigender Korpusgröße notwendigerweise ab- und damit die Gefahr unerwünschter Korrelationen zunimmt, sollte das Korpus außerdem mit Informationen angereichert werden, die für die Interpretation von Analyseergebnissen genutzt werden können (Epochenzugehörigkeit, thematische Zuordnung etc). Dadurch können entdeckte Korrelationen auf einer größeren Basis an Texteigenschaften – also: besser – interpretiert werden. Da das manuelle Ergänzen von Informationen sehr arbeitsaufwändig ist, sollten dafür (halb-)automatische Verfahren entwickelt bzw. genutzt 
+                werden.<ref target="ftn7" n="7"/>
+                </p>
+                <p style="text-align:left;">Die Anforderungen an ein Korpus variieren je nach Kontext und Forschungsfrage des Projekts, deshalb müssen allgemeine Qualitätskriterien für die Korpuserstellung eine gewisse Offenheit aufweisen. Grundsätzlich gilt aber: Für die Korpuserstellung muss frühzeitig eine Strategie zur Priorisierung von Problemen entwickelt – und dokumentiert! – werden. Dabei geht es darum, sich wie in diesem Beitrag skizziert eine Übersicht über konzeptuelle und technische Aspekte zu verschaffen und anschließend einfach zu lösende Probleme und konzeptuell wichtige Entscheidungen in eine geeignete Reihenfolge zu bringen – den Workflow für die Korpuserstellung.</p>
             </div>
         </body>
         <back>
             <div type="notes">
                 <note xml:id="ftn1" n="1" rend="footnote text">
-                    Verwendet werden alle Romane aus dem Textgrid-Repository bzw. von gutenberg.org, bei denen mindestens sechs Texte eines Autors vorliegen. Aussortiert wurden Novellensammlungen etc. sowie dialektal geprägte Texte. Es verbleiben 280 Texte von 32 Autoren.
+                    Zu den verschiedenen Typen von Datensammlungen bzw. Korpora vgl. ebenfalls Schöch (2017).
                 </note>
                 <note xml:id="ftn2" n="2" rend="footnote text">
-                    Eine ausführliche Darstellung des Evaluationsverfahrens findet sich in Dimpel 2017b.
+                    Farrar (2016): Corpus of Revenge Tragedy; Herrmann und Lauer (2016a/b): Kafka/Referenzkorpus; Herrmann und Lauer (2017): Kolimo; Pernes et al. (2017): historisch-literarisches Metaphernkorpus.
                 </note>
                 <note xml:id="ftn3" n="3" rend="footnote text">
-                    Diese Parameter haben sich in Prätests als vielversprechend erwiesen. Mit Blick auf die Rechenzeit muss es zunächst bei vier Varianten bleiben – für die False-Positives-Experimente in Testreihe 3 war pro Wert eine mehrtägige Rechenzeit nötig.
+                    Trilcke &amp; Fischer (2018) sprechen hier davon, dass das “epistemische Ding” der Literaturwissenschaft sich vom (einzelnen) Primärtext hin zu durch Weiterverarbeitung entstandene Zwischenformate und Korpora entwickelt.
+                </note>
+                <note xml:id="ftn4" n="4" rend="footnote text">
+                    Vgl. 
+                    <ref target="https://www.herma.uni-hamburg.de">https://www.herma.uni-hamburg.de</ref> und Gaidys et al. (2017).
+                </note>
+                <note xml:id="ftn5" n="5" rend="footnote text">
+                    So wird häufig eine für den Texte zentrale Krankheit nur andeutungsweise erzählt, etwa in Schnitzlers Novelle 
+                    <hi rend="italic">Sterben</hi> (1894), in der die Krankheit des Protagonisten über den Großteil des Textes ausschließlich über die Symptom- und Behandlungsbeschreibungen als Tuberkulose erkennbar ist.
+                </note>
+                <note xml:id="ftn6" n="6" rend="footnote text">
+                    Für die Mitarbeit bei der Planung und die Implementierung der Verfahren danken wir Benedikt Adelmann.
+                </note>
+                <note xml:id="ftn7" n="7" rend="footnote text">
+                    Zum Beispiel durch die Einbindung von fachlichen Wissensbasen wie etwa den in der Deutschen Nationalbibliothek verfügbaren bibliographischen Metadaten.
                 </note>
             </div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">Büttner, Andreas / Dimpel, Friedrich Michael / Evert, Stefan / Jannidis, Fotis / Pielström, Steffen / Proisl, Thomas / Reger, Isabella / Schöch, Christof / Vitt, Thorsten (2016)</hi>: <hi rend="italic">„Delta“ in der stilometrischen Autorschaftsattribution, in: Modellierung – Vernetzung – Visualisierung. Die Digital Humanities als fächerübergreifendes Forschungsparadigma</hi>. Konferenzabstracts zur DHd-Tagung 2016 in Leipzig, http://dhd2016.de/, S. 61–74
+						<hi rend="bold">Farrar, Danielle Marie (2016)</hi>: <hi rend="italic">The Corpus of Revenge Tragedy (CoRT): Toward Interdisciplining Early Modern Digital Humanities and Genre Analysis</hi>. In: DH 2016 - Conference Abstracts. S. 789–790.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Büttner, Andreas / Dimpel, Friedrich Michael / Evert, Stefan / Jannidis, Fotis / Pielström, Steffen / Proisl, Thomas / Reger, Isabella / Schöch, Christof / Vitt, Thorsten (2017)</hi>: <hi rend="italic">„„Delta“ in der stilometrischen Autorschaftsattribution“</hi>, in: Zeitschrift für digitale Geisteswissenschaft 2017. DOI: 10.17175/2017_006. 
+						<hi rend="bold">Gaidys, Uta/Gius, Evelyn/Jarchow, Margarete/Koch, Gertraud/Menzel, Wolfgang/Orth, Dominik/Zinsmeister, Heike (2017)</hi>: <hi rend="italic">Project Description. HermA: Automated Modelling of Hermeneutic Processes</hi>. In: Hamburger Journal für Kulturanthropologie 7 (2017), S. 119–123.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Burrows, John (2002)</hi>: <hi rend="italic">„‘Delta’: A Measure of Stylistic Difference and a Guide to Likely Authorship“</hi>, in: Literary and Linguistic Computing 17/3: 267–87. 10.1093/llc/17.3.267.
+						<hi rend="bold">Gius, Evelyn (in Vorbereitung)</hi>: <hi rend="italic">Digitale Hermeneutik: Computergestütztes close reading als literaturwissenschaftliches Forschungsparadigma?</hi> In: <hi rend="bold">Jannidis, Fotis (Hg.)</hi>: <hi rend="italic">Digitale Literaturwissenschaft</hi>. Metzler.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Dimpel, Friedrich Michael (2016)</hi>: <hi rend="italic">„Burrows’ Delta im Mittelalter: Wilde Graphien und metrische Analysedaten“</hi>, in: Modellierung – Vernetzung – Visualisierung. Die Digital Humanities als fächerübergreifendes Forschungsparadigma. Konferenzabstracts zur DHd-Tagung 2016 in Leipzig, http://dhd2016.de/: 65–70.
+						<hi rend="bold">Herrmann, Berenike/Lauer, Gerhard (2017)</hi>: <hi rend="italic">Das „Was-bisher-geschah“ von KOLIMO. Ein Update zum Korpus der literarischen Moderne</hi>. In: DHd 2017 Digitale Nachhaltigkeit Konferenzabstracts. S. 107–111.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Dimpel, Friedrich Michael (2017a)</hi>: <hi rend="italic">„Autorschaftsattribution bei nicht-normalisiertem Mittelhochdeutsch. Bessere Erkennungsquoten durch ein Normalisierungswörterbuch“</hi>, in <hi rend="bold">Stolz, Michael (Hrsg.)</hi>: <hi rend="italic">Konferenzabstracts DHd 2017 Bern. Digitale Nachhaltigkeit</hi>. Bern: 100-103. <ref target="http://www.dhd2017.ch/programm">http://www.dhd2017.ch/programm</ref>.
+						<hi rend="bold">Herrmann, Berenike/Lauer, Gerhard (2016a)</hi>: <hi rend="italic">Aufbau und Annotation des Kafka/Referenzkorpus</hi>. In: DHd 2016 Modellierung - Vernetzung - Visualisierung Konferenzabstracts. S. 158–159.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Dimpel, Friedrich Michael (2017b)</hi>: <hi rend="italic">„Ein Delta-Rätsel: Nicht-normalisierte mittelhochdeutsche Texte, Z-Wert-Begrenzung und ein Normalisierungswörterbuch. Oder: Auf welche Wörter kommt es bei Delta an?“</hi>, in: Dariah-de-Working Papers 25, 2017, resolver.sub.uni-goettingen.de/purl/, <ref target="http://nbn-resolving.de/urn:nbn:de:gbv:7-dariah-2017-5-1">http://nbn-resolving.de/urn:nbn:de:gbv:7-dariah-2017-5-1</ref>.
+						<hi rend="bold">Herrmann, Berenike/Lauer, Gerhard (2016b)</hi>: <hi rend="italic">KARREK: Building and Annotating a Kafka/Reference Corpus</hi>. In: DH 2016 - Conference Abstracts. S. 552–553.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Dimpel, Friedrich Michael (2018a)</hi>: <hi rend="italic">Die guten ins Töpfchen: Zur Anwendbarkeit von Burrows’ Delta bei kurzen mittelhochdeutschen Texten nebst eines Attributionstests zu Konrads ‚Halber Birne‘</hi>, in: <hi rend="bold">Georg Vogeler (Hg.)</hi>: <hi rend="italic">Kritik der digitalen Vernunft. Konferenzabstracts DHd 2018</hi>, Köln 2018, http://dhd2018.uni-koeln.de, S. 168–173.
+                        <hi rend="bold">Levenshtein, Vladimir (1966)</hi>: <hi rend="italic">Binary codes capable of correcting deletions, insertions, and reversals</hi>. In: Soviet Physics Doklady. Vol. 10, No. 8, S. 707–710. 
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Dimpel, Friedrich Michael (2018b)</hi>: <hi rend="italic">„Stabile Autorschaft trotz handschriftlicher Varianz? Die Erfolgsquote von Burrows' Delta bei nicht-normalisierten mittelhochdeutschen Texten optimieren“</hi>, in: ZfdA 147, 2018, S. 341-363.
+						<hi rend="bold">Pernes, Stefan/Keller, Lennart/Peterek, Christoph (2017)</hi>: <hi rend="italic">Aufbau eines historisch-literarischen Metaphernkorpus für das Deutsche</hi>. In: DHd 2017 Digitale Nachhaltigkeit Konferenzabstracts. S. 92–94.
+					</bibl>
+                    <bibl>
+						<hi rend="bold">Trilcke, Peer/Fischer, Frank (2018)</hi>: <hi rend="italic">Literaturwissenschaft als Hackathon. Zur Praxeologie der Digital Literary Studies und ihren epistemischen Dingen</hi>. In: Zeitschrift für digitale Geisteswissenschaften, Sonderband 3 “Wie Digitalität die Geisteswissenschaften verändert. Neue Forschungsgegenstände und Methoden”.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Eder, Maciej (2013a)</hi>: <hi rend="italic">„Mind Your Corpus: systematic errors in authorship attribution“</hi>, in: Literary and Linguistic Computing 28:603-614. 10.1093/llc/fqt039.
+						<hi rend="bold">Schöch, Christof (2017)</hi>: <hi rend="italic">Aufbau von Datensammlungen</hi>. In: <hi rend="bold">Jannidis, Fotis/Kohle, Hubertus/Rehbein, Malte (Hg.)</hi>: Digital Humanities: eine Einführung. Stuttgart: J.B. Metzler Verlag. S. 223–233.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Eder, Maciej (2013b)</hi>: <hi rend="italic">„Does size matter? Authorship attribution, small samples, big problem“</hi>, in: Literary and Linguistic Computing Advanced Access 29:1-16. 10.1093/llc/fqt066.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Evert, Stefan / Proisl, Thomas / Jannidis, Fotis / Pielström, Steffen / Schöch, Christof / Vitt, Thorsten (2015)</hi>: <hi rend="italic">„Towards a better understanding of Burrows’s Delta in literary authorship attribution“</hi>, in: Proceedings of the Fourth Workshop on Computational Linguistics for Literature. Denver, CO: Association for Computational Linguistics: 79–88. 10.5281/zenodo.18177. http://www.aclweb.org/anthology/W/W15/W15-0709.pdf [Abruf 20.8.2015].
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Evert, Stefan / Proisl, Thomas / Jannidis, Fotis / Pielström, Steffen / Reger, Isabella/ Schöch, Christof / Vitt, Thorsten (2016)</hi>: <hi rend="italic">„Burrows Delta verstehen“</hi>, in: <hi rend="italic">Modellierung – Vernetzung – Visualisierung. Die Digital Humanities als fächerübergreifendes Forschungsparadigma</hi>. Konferenzabstracts zur DHd-Tagung 2016 in Leipzig, http://dhd2016.de/: 61–65.
-                        <lb/>
-                        <hi rend="bold">Jannidis, Fotis / Lauer, Gerhard (2014)</hi>: <hi rend="italic">„Burrows’s Delta and Its Use in German Literary History“</hi> in: <hi rend="bold">Erlin, Matt / Tatlock, Lynne (eds.)</hi>: <hi rend="italic">Distant Readings. Topologies of German Culture in the Long Nineteenth Century</hi>. New York: 29–54.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Jannidis, Fotis / Pielström, Steffen / Schöch, Christof / Vitt, Thorsten (2015)</hi>: <hi rend="italic">„Improving Burrows’ Delta – An Empirical Evaluation of Text Distance Measures“</hi>, in: Digital Humanities Conference 2015, Sydney. <ref target="http://dh2015.org/abstracts/xml/JANNIDIS_Fotis_Improving_Burrows__Delta___An_empi/JANNIDIS_Fotis_Improving_Burrows__Delta___An_empirical_.html">http://dh2015.org/abstracts/xml/JANNIDIS_Fotis_Improving_Burrows__Delta___An_empirical_.html</ref>.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Schöch, Christof (2014)</hi>: <hi rend="italic">„Corneille, Molière et les autres. Stilometrische Analysen zu Autorschaft und Gattungszugehörigkeit im französischen Theater der Klassik“</hi> in: <hi rend="bold">Christof Schöch und Lars Schneider (Hrsg.)</hi>: <hi rend="italic">Literaturwissenschaft im digitalen Medienwandel</hi>, Berlin (Philologie im Netz, Beiheft 7): 130–157. 
+						<hi rend="bold">Schruhl, Friederike (2018)</hi>: <hi rend="italic">Objektumgangsnormen in der Literaturwissenschaft</hi>. In: Zeitschrift für digitale Geisteswissenschaften, Sonderband 3 “Wie Digitalität die Geisteswissenschaften verändert. Neue Forschungsgegenstände und Methoden”.
                     </bibl>
                 </listBibl>
             </div>

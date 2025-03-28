@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="vortrag-SNICK" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="vortrag-NEUEF" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>3D-Metamodeling Christopher Polhem’s <hi rend="italic">Laboratorium mechanicum</hi> 1696</title>
+<title type="full">
+<title type="main">Bild, Beschreibung, (Meta)Text</title>
+<title type="sub">Automatische inhaltliche Erschließung und Annotation kunsthistorischer Daten</title>
+</title>
 <author>
 <persName>
-<surname>Snickars</surname>
-<forename>Pelle</forename>
+<surname>Dieckmann</surname>
+<forename>Lisa</forename>
 </persName>
-<affiliation>Umea university, Schweden</affiliation>
-<email>pelle.snickars@umu.se</email>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>lisa.dieckmann@uni-koeln.de</email>
+</author>
+<author>
+<persName>
+<surname>Hermes</surname>
+<forename>Jürgen</forename>
+</persName>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>hermesj@uni-koeln.de</email>
+</author>
+<author>
+<persName>
+<surname>Neuefeind</surname>
+<forename>Claes</forename>
+</persName>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>c.neuefeind@uni-koeln.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2015-10-04T22:02:00Z</date>
+<date>2016-12-05T14:20:41</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -28,7 +47,7 @@
 </address>
 </publicationStmt>
 <sourceDesc>
-<p>Converted from a Word document </p>
+<p>Converted from an OASIS Open Document</p>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
@@ -47,104 +66,137 @@
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Christopher Polhem</term>
-<term>virtual heritage</term>
-<term>pedagogical models</term>
-<term>3D modeling</term>
-<term>3D scanning</term>
-<term>3D simulation</term>
-<term>Laboratorium mechanicum</term>
-<term>Royal Swedish Model Chamber</term>
+<term>Bilddatenbanken</term>
+<term>Informationsextraktion</term>
+<term>Annotation</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Sammlung</term>
-<term>Modellierung</term>
-<term>Archivierung</term>
-<term>Visualisierung</term>
-<term>3D-Bilder</term>
-<term>Forschungsprozess</term>
-<term>Forschungsergebnis</term>
+<term>Programmierung</term>
+<term>Inhaltsanalyse</term>
+<term>Strukturanalyse</term>
+<term>Annotieren</term>
+<term>Organisation</term>
+<term>Artefakte</term>
+<term>Daten</term>
+<term>Bilder</term>
+<term>Metadaten</term>
+<term>Text</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<p rend="Brödtext A">In a letter from autumn 1696 to the Royal Swedish Bergs Collegium, the scientist and pre-industrial inventor, Christopher Polhem (1661-1751)—sometimes described as “the Father of Swedish Technology” (Lindroth 1951; Johnson 1963, Lindgren 2011)—argued that the Swedish king really ought to establish a 
-                <hi rend="italic">Laboratorium mechanicum</hi>, all in order to foster future engineers. Importantly, this mechanical laboratory should have included educational 
-                <hi rend="italic">wood models</hi> of contemporary equipment, machines and building structures, as well as water gates, hoistings and locks. Following Polhem, mechanics was simply the foundation of all knowledge: ”mechaniken är en grund och fundament til heela philosophien”. A few years later, a mechanical laboratory was indeed founded by Polhem, established near the Falu copper mine. Essentially his 
-                <hi rend="italic">Laboratorium mechanicum</hi> became a pioneering facility (albeit small) for the pre-industrial training of Swedish engineers, as well as a laboratory for testing and exhibiting Polhem’s own wooden models and designs. By the mid 1700, Polhem’s 
-                <hi rend="italic">Laboratorium mechanicum</hi> had transformed into the so called, 
-                <hi rend="italic">Royal Model Chamber</hi>, a Swedish institution (funded by the king) for information and dissemination of technology and architecture set up in central Stockholm. It was admired, for example, by Johann Beckmann on his trip through Sweden in the mid 1760s. Later, during the 19th century, the pedagogical models belonging to the Royal Model Chamber were frequently used by engineering students at the KTH Royal Institute of Technology (in Stockholm). Apparently, this was especially the case with Polhem’s so called 
-                <hi rend="italic">mechanical alphabet</hi>. Initially, it consisted of 80 wooden models of basic machine elements like the lever, the wheel and the screw. Since a writer naturally had to know the alphabet in order to create words and sentences, Polhem argued that a contemporary 
-                <hi rend="italic">mechanicus</hi> had to grasp his mechanical alphabet to be able to construct and 
-                <hi rend="italic">understand</hi> machines. Evidently, Polhem’s models are interesting as physical traces of the 
-                <hi rend="italic">material foundations</hi> of scientific knowledge (Ludwig, Weber &amp; Zausig, 2014). Around 1930, however, part of the Royal Model Chamber and Polhem’s mechanical alphabet collection was transferred to the Swedish National Museum of Science and Technology. Ever since it has served—and been frequently exhibited—as a kind of 
-                <hi rend="italic">meta-museological artifact</hi>, since Polhem’s designs proved to be pedagogical museological objects 
-                <hi rend="italic">avant la lettre</hi>.
+<p>Der Vortrag thematisiert die automatische inhaltliche Erschließung und linguistische Annotation der digitalen Repräsentationen  kunst- und kulturhistorischer Artefakte innerhalb des prometheus Bildarchivs (
+                <ref target="http://prometheus-bildarchiv.de/">http://prometheus-bildarchiv.de</ref>), das derzeit 89 Datenbanken aus Museen und Forschungsinstitutionen mit insgesamt über 1,5 Mio. Datensätzen zusammenführt (Dieckmann 2015). Das durch eine bereits abgeschlossene Vorstudie initiierte Projekt verfolgt zwei unterschiedliche, teilweise aufeinander aufbauende Ansätze: Zum einen die Annotation von Freitexten zur strukturierten Erschließung kunsthistorischer Daten, zum anderen die Analyse der Identität von Datensätzen über die Berechnung gradueller Ähnlichkeiten von Objekten. Beide Ansätze dienen erstens einer Verbesserung des Retrievals, zweitens einer nachhaltigen Sicherung der Daten durch die Verknüpfung mit Normdaten; drittens sollen die zusätzlich erschlossenen Informationen längerfristig als Grundlage für weiterführende (fachspezifische) Fragestellungen eingesetzt werden, etwa zur Rekonstruktion von Künstlergruppen durch die Erstellung von Personen-Netzwerken. Das Projekt wird an der Universität zu Köln in enger Zusammenarbeit zwischen Fachwissenschaftlern der Kunstgeschichte und der Sprachlichen Informationsverarbeitung (
+                <ptr target="http://www.spinfo.phil-fak.uni-koeln.de/"/>) durchgeführt, deren Schwerpunkte u.a. auf Systemen zur syntaktischen und semantischen Analyse und Verarbeitung textueller Daten (Hermes 2012, Schwiebert 2012) sowie zur Annotation nicht-standardisierter Daten (Neuefeind 2013) liegen.
             </p>
-<p rend="Brödtext A"> One of the objectives of the London Charter on computer-based visualisation of heritage promotes “intellectual and technical rigour in digital heritage visualisation” (London Charter 2009)—yet, in what way should one today digitise Polhem’s 
-                <hi rend="italic">Laboratorium mechanicum</hi>? What is the 
-                <hi rend="italic">exact</hi> relation between “technical rigour” and virtual heritage in a software culture permeated by constant updates? Within the interdisciplinary Swedish research project, “Digital Models. Techno-historical collections, digital humanities &amp; narratives of industrialisation” (funded by the Royal Swedish Academy of Letters, History and Antiquities) parts of Polhem’s collection has been 3D scanned and 3D reconstructed by 
-                <hi rend="italic">different</hi> software. The project set up is part of the trend were heritage institutions are today exploring how 3D technologies can broaden access to, and the understanding of their collections (Urban 2016; Ioannides 2014). Then again, is a 3D scan of a model (in our case) for example more 
-                <hi rend="italic">rigour</hi> than a simulation? 
-            </p>
-<p rend="Brödtext A"> In general, the research project “Digital Models” (that I am heading) explores the 
-                <hi rend="italic">potential</hi> of digital technologies to reframe Swedish industrialisation and its stories about society, people and environments. The project uses three different cultural heritage perspectives to examine the 
-                <hi rend="italic">specificity of digitisation</hi> and its potential to bridge research, institutional heritage and interest from the general public. Departing from the digitisation of three selected categories of material in the Swedish National Museum of Science and Technology collections, these mirror the three phases of industrialisation: (A.) parts of the business leader and industry historian, Carl Sahlin’s extensive collection. (B.), all editions of the museum yearbook, 
-                <hi rend="italic">Daedalus</hi> (1931-2014), and (C.) all of Polhem’s preserved wooden models. These materials and phases correspond to three methodological approaches: traditional digitisation (A.), mass digitisation (B.) and critical digitisation (C.). Digitisation methods are hence correlated with different industrial-historical periods, resulting in three sets of digital tools, applications and/or game prototypes focused on various narratives of Swedish industrialisation.
-            </p>
-<p rend="Brödtext A"> In my presentation—done in English, but where questions can be posed in German since I am a fluent speaker—I want to present the ways in which we have worked with 3D modeling (parts of) Christopher Polhem’s mechanical alphabet. Our 3D-metamodeling has been conceived as both a scholarly and as a museological practice. On the one hand we have tried to increase the historical understanding and knowledge about (and around) Polhem’s models via visualisation, virtualisation and simulation, and on the other to experiment with novel ways to use the model’s inherent pedagogical quality, and especially so within a museological context at the Swedish National Museum of Science and Technology. We have for example 3D scanned some of Polhem’s models using a simple iPad iSense 3D scanner—and where we have also 3D printed some of our resulting imagistic models (with moving parts). Some of these digitisation activities have been performed within the actual museum space as a pedagogical activity, stressing the ways in which Polhem’s old models still have a didactic quality to them. In addition, we have designed a few simple 
-                <hi rend="italic">virtual reality models</hi> (of the models). Furthermore, in co-operation with Visualiseringscenter C (at Linköping University) we have also CT-scanned some of Polhem’s models—i.e where images are taken from different angles to produce a cross-sectional and tomographic 3D image, a kind of virtual slice, allowing one to see inside the models without breaking them. Digital geometry processing has, in short, been used to generate a three-dimensional image of the inside of the models and their different parts. We have also co-operated with the professional animator Rolf Lindberg; on YouTube he has uploaded a number of videos of Polhem’s models (Lindberg 2016). Lindberg, however, did not 3D scan Polhem’s mechanical models—he 
-                <hi rend="italic">computer-animated</hi> them in Cinema4D.
-            </p>
-<p rend="Brödtext A"> Hence, from a museological perspective, digitising Polhem’s mechanical alphabet has produced a number of really different results. The London Charter on computer-based visualisation of heritage defines principles for the use of computer-based visualisation methods “in relation to intellectual integrity, reliability, documentation, sustainability and access” (London Charter 2009). Indeed, the charter recognises that the range of available computer-based visualisation methods is constantly increasing. Still, the linkage and genealogy between copy and original sometimes becomes weak. For animator Lindberg, rather than 3D scanning Polhem’s heritage items, it was way easier—and more pedagogical and visually enticing to 
-                <hi rend="italic">simulate</hi> them—that is, building and constructing 
-                <hi rend="italic">brand new virtual objects</hi>. The precious and highly esteemed original models collected at the museum—Polhem’s mechanical alphabet—then becomes a model (rather than vice versa). Still, in the case of Polhem’s models, the theme of (digital) reconstruction also has a profound historical dimension, since he sincerely believed (as a pre-industrial inventor) that 
-                <hi rend="italic">physical models</hi> were always superior to drawings and abstract representations. The question is if he would have considered 3D reconstructions in a similar manner.
-            </p>
+<div rend="DH-Heading" type="div1">
+<head>Metadaten und Referenzobjekte</head>
+<p>Die digitalen Repräsentationen der in prometheus zusammengeführten kunst- und kulturhistorischen Artefakte stellen insofern eine besondere Herausforderung für die automatisierte Erschließung inhaltlicher Informationen dar, als dass die Metadaten und Texte strukturell und inhaltlich sehr heterogen und in unterschiedlichen Kontexten vorliegen. Die Datensätze der einzelnen Bilddatenbanken sind zwar stets in ein eigenes Metadatenschema eingepasst, jedoch erfolgt die Erschließung der Werke an den jeweiligen Institutionen nicht nach einer einheitlichen Methodik, was u.a. datenbank- oder sammlungsspezifische Gründe hat. Zum einen liegt innerhalb der Klassifikationen der jeweiligen Datenbanken eine Vielzahl an Texten vor, die bislang nicht strukturiert erschlossen sind, sondern derzeit nur über eine einfache Volltextsuche miteinbezogen werden (es handelt sich hierbei oftmals um unstrukturierte Freitextfelder, die z.B. Angaben über Standort(e), die Publikationsgeschichte oder ausführliche Bildbeschreibungen enthalten können). Zum anderen wird selten ein bestimmter Metadatenstandard zugrunde gelegt oder auf Fachvokabulare und Terminologieressourcen zurückgegriffen, was dazu führt, dass zum Teil stark variierende Schreibweisen u.a. bei Künstler- oder Ortsnamen existieren. In der kunsthistorischen Forschung haben sich zudem selten einheitliche Bezeichnungen für Werktitel durchgesetzt. So liegt bspw. das Werk “Bonaparte überquert den großen Sankt Bernhard” von Jacques-Louis David (Malmaison, 1801) in prometheus in mindestens sieben verschiedenen Titelbezeichnungen vor, die zumeist in Teilen, unter Umständen aber auch vollständig voneinander abweichen (etwa “Napoleon überquert die Alpen” gegenüber “Bonaparte auf dem großen Sankt Bernhard”). Eine Verknüpfung mit Normdaten wie der Gemeinsamen Normdatei der Deutschen Nationalbibliothek (GND,
+                    <ref target="http://d-nb.info/gnd/1067141367"> </ref>
+<ptr target="http://d-nb.info/gnd/1067141367"/>) ist auf dieser Grundlage nicht möglich. Diese wäre aber nötig, um eine automatische Zusammenführung der Einzelabbildungen zu Objekten vornehmen und die Objekte eindeutig und damit nachhaltig identifizieren zu können, was zugleich die Grundlage für eine weitere Anreicherung mit GND-verknüpften Daten oder weiteren Normdaten (z.B. VIAF, 
+                    <ref target="http://viaf.org/">http://viaf.org</ref>; Wikidata, 
+                    <ref target="https://www.wikidata.org/">
+<hi rend="color(#1155cc)">https://www.wikidata.org</hi>
+</ref>) bilden würde. 
+                </p>
+</div>
+<div rend="DH-Heading" type="div1">
+<head>Methodologie</head>
+<p>Die Heterogenität der Daten wird in prometheus bereits teilweise in Anwendung linguistischer Analyseverfahren bei der Indexierung ausgeglichen, wobei der Schwerpunkt hier v.a. auf der orthographischen und morphosyntaktischen Ebene liegt, etwa auf Grundlage sprachspezifischer Wörterbücher (u.a. zur Grundformreduzierung, Phrasenerkennung, Synonymgenerierung, Kompositazerlegung) sowie durch Anreicherung mit synonymen Künstlernamen (siehe 
+                    <ptr target="http://prometheus-bildarchiv.de/tools/pkn"/>d). Diese Maßnahmen dienen in erster Linie dazu, das Retrieval zu optimieren und den Recall zu verbessern. In Bezug auf die oben aufgeworfenen Probleme der Normalisierung und Zuordnung von Einzeldarstellungen zu Objekten sind sie jedoch nur als ein erster Schritt anzusehen. Ziel ist vielmehr ein erweiterter Thesaurus, in dem die tatsächlich auftretenden, zum Teil stark variierenden Schreibweisen von Werktiteln und Künstlernamen auf die verfügbaren Normdaten abgebildet werden. Da die Variation in den Schreibweisen keine eindeutige Zuordnung erlaubt, bedarf es hierbei zusätzlicher Kriterien. Im Zuge des Projekts wird hierfür ein semantisch motiviertes Verfahren erarbeitet, das die gesamten zu einem Objekt verfügbaren Informationen berücksichtigt: Neben den bereits erschlossenen Metainformationen (wie Name, Titel, Datierung, Standort, etc.) sollen auch die in den bislang nur unstrukturiert vorliegenden Freitextfeldern (s.o.) enthaltenen Informationen genutzt werden können. Zu diesem Zweck werden die Texte zunächst mittels Informationsextraktion aufbereitet (Annotation von Orts- und Personennamen, Zeitausdrücken, etc). Auf Grundlage dieser neu gewonnenen Informationen werden zusätzliche, das Objekt beschreibende Merkmale erstellt und in Form von Feature-Vektoren kodiert (Features sind z.B. „Personen“, „Orte“, „Material“, o.ä.; Werte sind jeweils die konkreten Nennungen, vgl. Abb. 1).
+                </p>
+<p>
+<figure>
+<graphic url="vortrag-NEUEF-image1.png"/>
+</figure>Abb. 1: Beispiel einer Freitextbeschreibung im prometheus-Bildarchiv, in der exemplarisch mittels Informationsextraktion identifizierte Elemente markiert wurden.
+                </p>
+<p>Aus den zusätzlichen Merkmalen kann nun, in Kombination mit den bereits vorhandenen Metainformationen, für jedes Objekt ein „semantisches Profil“ bzw. „Fingerprint“ erstellt werden, anhand dessen sich die Ähnlichkeit zwischen Objekten ermitteln lässt. Die Ähnlichkeit wird dabei zunächst in Bezug auf die einzelnen Merkmale ermittelt (u.a. mittels Edit-Distance oder Soundex- bzw. Metaphone-Difference zwischen einzelnen Feldern, Abgleich zeitlicher Angaben, Distanz zwischen Feature-Vektoren zu „Personen“, „Orten“, „Material“, etc.), wobei der Einfluss einzelner Merkmale unterschiedlich gewichtet werden kann. Daraus wird ein kombiniertes Maß der Übereinstimmung zwischen zwei Datensätzen errechnet, das auch bei deutlich abweichenden Schreibweisen eine Aussage darüber erlaubt, ob es sich um das gleiche Objekt handelt. Auf dieser Grundlage können identische Objekte dann auf das jeweilige Referenzobjekt der GND abgebildet werden.</p>
+<p>In einem vorbereitenden Projekt für das laufende Vorhaben wurden zunächst die bestehenden Metadaten der einzelnen Datenbanken des prometheus-Bildarchivs quantitativ ausgewertet, um einen Überblick darüber zu erlangen, wie sich der Umfang der zu erschließenden Daten darstellt. Die meisten der 89 Datenbanken verfügen über noch nicht erschlossene Freitextbeschreibungen der Objekte. Diese erstrecken sich zu einem nicht geringen Teil über mittellange (25-75 Wörter) und lange (&gt;75 Wörter) Texte, die im Zuge des Projekts aufbereitet werden sollen. Abb. 2 zeigt die Verteilung dieser unterschiedlichen Textsorten in ausgewählten Datenbanken. Einige verfügen über keinerlei Freitext-Bildbeschreibungen, z.B. die Datenbank des 
+                    <hi rend="italic">Zentralarchivs für Kunstgeschichte </hi>in München (zi_muc). Andere, etwa die Erlanger Datenbank 
+                    <hi rend="italic">Zeichnungen der graphischen Sammlung</hi> (erlangen_z), weisen fast ausschließlich kurze Beschreibungen auf, wieder andere enthalten dagegen auch eine Reihe mittellanger und langer Texte.
+                </p>
+<p>
+<figure>
+<graphic url="vortrag-NEUEF-image2.png"/>
+</figure>Abb. 2: Verteilung der Freitextlängen über verschiedene Datenbanken des prometheus-Bildarchivs
+                </p>
+<p>Zur Nutzung der in den Bildbeschreibungen und Ikonographien enthaltenen Informationen müssen diese zunächst identifiziert und entsprechend ausgezeichnet werden. Dafür wurde zunächst ein Komponenten-Workflow konzipiert und auf Basis des UIMA-Frameworks (Unstructured Information Management Architecture, siehe 
+                    <ref target="https://uima.apache.org/">
+<hi rend="color(#1155cc)">https://uima.apache.org</hi>
+</ref>) implementiert. Im Zuge der Verarbeitung werden die zu annotierenden Informationen in ausgewählten Feldern der Datensätze identifiziert (vgl. Abb. 3). Dabei kommen Standardmethoden der Informationsextraktion (z.B. Temporal Expression Detection, Named Entity Recognition) genauso zum Einsatz wie informationstheoretische Maße (etwa Log-Likelihood oder tf.idf), um domänenspezifisch relevante Terme zu bestimmen.
+                </p>
+<p>
+<figure>
+<graphic url="vortrag-NEUEF-image3.png"/>
+</figure>Abb. 3: Workflow zur Informationsextraktion in Freitexten im prometheus-Bildarchiv.
+                </p>
+<p>Die erste Projektphase diente vor allem der Evaluierung von Werkzeugen, etwa dem Stanford Named Entity Tagger (siehe 
+                    <ptr target="http://nlp.stanford.edu/software/CRF-NER.shtml"/>) zur Identifikation von (Orts-)Namen, oder HeidelTime (siehe 
+                    <ptr target="http://dbs.ifi.uni-heidelberg.de/index.php?id=129"/>) zur Annotation von Zeitausdrücken, um den voraussichtlichen Bedarf an Anpassungen der Werkzeuge für die kunsthistorische Domäne zu ermitteln. Abb. 4 zeigt das Ergebnis der StanfordNER-Komponente, die in einem Text der Datenbank “The Daumier Register” (
+                    <ptr target="http://www.daumier-register.org/"/>) Eigennamen auszeichnet: Künstlernamen (“Henry Monnier”), Werktitel (“Séraphita”), Werkstoffe (“China-Papier”), sowie Ortsnamen (“Sevilla”) werden mit verschiedenen Tags (I-PERS, I-MISC, I-LOC) gekennzeichnet. Wie sich zeigt, werden jedoch nicht alle Eigennamen aufgefunden (etwa “Balzac, Honoré de”), was v.a. darauf zurückzuführen ist, dass hier zunächst nur das für das Deutsche verfügbar NER-Modell zum Einsatz kam. In der weiteren Projektlaufzeit muss die Erkennungsrate durch eine Erweiterung und Modifikation der vorhandenen Modelle verbessert werden, damit die Daten möglichst präzise und vollständig auswerten werden können.
+                </p>
+<p>
+<figure>
+<graphic url="vortrag-NEUEF-image4.png"/>
+</figure>Abb. 4: Exemplarisches Ergebnis der Anwendung eines verfügbaren Standard-Modells zur Named Entity Recognition.
+                </p>
+</div>
+<div rend="DH-Heading" type="div1">
+<head>Zusammenfassung und Ausblick</head>
+<p>Das beschriebene Vorgehen wird derzeit exemplarisch an ausgewählten Datensätzen entwickelt, um anschließend auf den gesamten Bildpool des prometheus-Bildarchivs angewendet zu werden. Ein wesentliches Ziel des Projekts ist es, eine größtmögliche Automatisierung in der Thesauruserstellung zu erreichen. Das hierfür vorgesehene kombinierte Ähnlichkeitsmaß ist flexibel erweiterbar. So können zum einen zusätzliche Informationen aus externen Quellen herangezogen werden, etwa indem weitere, digital vorliegende kunsthistorische Texte (z.B. das Reallexikon zur Deutschen Kunstgeschichte, RDK, siehe 
+                    <ref target="http://www.rdklabor.de/">
+<hi rend="color(#1155cc)">http://www.rdklabor.de</hi>
+</ref>), Ausstellungs- und Auktionskataloge (z.B. Getty Art and Architecture, siehe 
+                    <ptr target="http://www.getty.edu/research/tools/vocabularies/aat/"/>, UB Heidelberg 
+                    <ref target="http://artsales.uni-hd.de/">
+<hi rend="color(#1155cc)">http://artsales.uni-hd.de</hi>
+</ref>) oder auch Wikipedia analysiert und klassifiziert werden und mittels des erstellten Thesaurus mit den Datensätzen in prometheus verknüpft werden. Zum anderen soll das Ähnlichkeitsmaß auch durch komplementäre (z.B. optische) Verfahren des Bildvergleichs erweitert werden. So wurde bspw. zusammen mit der Computer Vision Group Heidelberg bereits ein Projekt zur automatischen Bilderkennung angestoßen (siehe Bell/Dieckmann 2015). Durch die Kombination verschiedener Methoden der Ähnlichkeitsberechnung zu einem gemeinsamen, multidimensionalen Ähnlichkeitsmaß ist der hier vorgeschlagene Ansatz in hohem Maße adaptierbar für vergleichbare Anwendungen. Die im Projekt erarbeitete Vorgehensweise ist somit auf weitere Metadatenpools kulturhistorischer Inhalte übertragbar und dank der Automatisierung beliebig skalierbar.
+                </p>
+</div>
 </body>
 <back>
 <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-<hi rend="bold">Ioannides, Marinos</hi> et. al. (eds.) (2014):
-                        <hi rend="italic">Digital Heritage: Progress in Cultural Heritage</hi>.
-                        Cham: Springer.
+<hi rend="bold">Bell, Peter / Dieckmann, Lisa</hi> (2015): 
+                        „Die Kunst als Ganzes. Heterogene Bilddatensätze als Herausforderung für die Kunstgeschichte und die Computer Vision“, 
+                        in: 
+                        <hi rend="italic">DHd 2016: Modellierung - Vernetzung - Visualisierung</hi>
+<ptr target="http://dhd2016.de/boa.pdf#118"/> [letzter Zugriff 23.11.2016].
                     </bibl>
 <bibl>
-<hi rend="bold">Johnson, William A.</hi> (1963):
-                        <hi rend="italic">Christopher Polhem, The Father of Swedish Technology</hi>.
-                        Hartford: Trinity College Press.
+<hi rend="bold">Bell, Peter / Dieckmann, Lisa / Ommer, Björn / Takami, Masato</hi> (2015): 
+                        <hi rend="italic">Passion Search. Prototype of an unrestricted image search of the crucifixion</hi>. 
+                        <ptr target="http://hci.iwr.uni-heidelberg.de/COMPVIS/projects/suchpassion/"/> [letzter Zugriff 23.11.2016]
                     </bibl>
 <bibl>
-<hi rend="bold">Lindberg, Rolf</hi> (2016):
-                        <ref target="https://www.youtube.com/channel/UC0UKj1XHuArjk-EZOrQRafQ">https://www.youtube.com/channel/UC0UKj1XHuArjk-EZOrQRafQ</ref>.
+<hi rend="bold">Dieckmann, Lisa</hi> (2015): 
+                        „prometheus – das verteilte digitale Bildarchiv für Forschung &amp; Lehre e. V.“, 
+                        in: Euler, Ellen / Hagedorn-Saupe, Monika/ Maier, Gerald/ Schweibenz, Werner/ Sieglerschmidt, Jörn (eds.): 
+                        <hi rend="italic">Handbuch Kulturportale. Online-Angebote aus Kultur und Wissenschaft</hi>. 
+                        Berlin / Boston: DeGruyter 223–229.
                     </bibl>
 <bibl>
-<hi rend="bold">Lindgren, Mikael H.</hi> (2011):
-                        <hi rend="italic">Christopher Polhems testamente</hi>.
-                        Stockholm: Innovationshistoria förlag.
+<hi rend="bold">Hermes, Jürgen</hi> (2012): 
+                        <hi rend="italic">Textprozessierung: Design und Applikation</hi>.
+                        Dissertation, Universität zu Köln. 
+                        <ptr target="http://kups.ub.uni-koeln.de/id/eprint/4561"/> [letzter Zugriff 23. November 2016].
                     </bibl>
 <bibl>
-<hi rend="bold">Ludwig, David / Weber, Cornelia / Zausig, Oliver</hi> (eds.) (2014):
-                        <hi rend="italic">Das Materielle Model</hi>.
-                        Paderborn: Fink.
+<hi rend="bold">Neuefeind, Claes</hi> (2013): 
+                        „The Digital Romansh Chrestomathy. Towards an Annotated Corpus of Romansh“, 
+                        in: Zampieri, Marcos / Diwersy, Sascha (eds.), 
+                        <hi rend="italic">Special Volume on Non-Standard Data Sources in Corpus-Based Research</hi> (ZSM Studien 5). 
+                        Aachen: Shaker 41–58.
                     </bibl>
 <bibl>
-<hi rend="bold">Lindroth, Sten</hi> (1951):
-                        <hi rend="italic">Christopher Polhem och Stora Kopparberget</hi>.
-                        Uppsala: Almqvist &amp; Wiksell.
-                    </bibl>
-<bibl>
-<hi rend="bold">London Charter</hi> (2009): 
-                        <ref target="http://www.londoncharter.org/fileadmin/templates/main/docs/london_charter_2_1_en.pdf">http://www.londoncharter.org/fileadmin/templates/main/docs/london_charter_2_1_en.pdf</ref>.
-                    </bibl>
-<bibl>
-<hi rend="bold">Urban, Richard</hi> (2016):
-                        <hi rend="italic">Collections Cubed: Into the third dimension</hi>.
-                        <ref target="http://mw2016.museumsandtheweb.com/paper/collections-cubed-into-the-third- dimension/">http://mw2016.museumsandtheweb.com/paper/collections-cubed-into-the-third- dimension/</ref>.
+<hi rend="bold">Schwiebert, Stephan</hi> (2012): 
+                        <hi rend="italic">Tesla - ein virtuelles Labor für experimentelle Computer- und Korpuslinguistik</hi>.
+                        Dissertation, Universität zu Köln. 
+                        <ptr target="http://kups.ub.uni-koeln.de/id/eprint/4571"/> [letzter Zugriff 23. November 2016].
                     </bibl>
 </listBibl>
 </div>

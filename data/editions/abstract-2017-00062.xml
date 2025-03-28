@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="vortrag-HERRM" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="vortrag-BARTH" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Das „Was-bisher-geschah“ von KOLIMO. Ein Update zum Korpus der literarischen Moderne</title>
+<title>Digitale Modellierung literarischen Raums</title>
 <author>
 <persName>
-<surname>Herrmann</surname>
-<forename>J. Berenike</forename>
+<surname>Barth</surname>
+<forename>Florian</forename>
 </persName>
-<affiliation>Universität Göttingen, Deutschland</affiliation>
-<email>bherrma1@gwdg.de</email>
+<affiliation>Universität Stuttgart, Deutschland</affiliation>
+<email>florianbarth@ilw.uni-stuttgart.de</email>
 </author>
 <author>
 <persName>
-<surname>Lauer</surname>
-<forename>Gerhard</forename>
+<surname>Viehhauser</surname>
+<forename>Gabriel</forename>
 </persName>
-<affiliation>Universität Göttingen, Deutschland</affiliation>
-<email>Gerhard.Lauer@phil.uni-goettingen.de</email>
+<affiliation>Universität Stuttgart, Deutschland</affiliation>
+<email>viehhauser@ilw.uni-stuttgart.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2016-12-01T21:23:00Z</date>
+<date>2016-12-01T20:30:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -55,296 +55,259 @@
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Korpus</term>
-<term>Annotation</term>
-<term>Moderne</term>
-<term>POS</term>
-<term>Stil</term>
+<term>Raum</term>
+<term>Narratologie</term>
+<term>Digitale Textanalyse</term>
+<term>Literaturkartographie</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Teilen</term>
-<term>Sammlung</term>
+<term>Datenerkennung</term>
+<term>Entdeckung</term>
+<term>Inhaltsanalyse</term>
 <term>Strukturanalyse</term>
+<term>Räumliche Analyse</term>
 <term>Modellierung</term>
 <term>Annotieren</term>
-<term>Kontextsetzung</term>
 <term>Theoretisierung</term>
 <term>Bereinigung</term>
-<term>Bearbeitung</term>
-<term>Archivierung</term>
-<term>Veröffentlichung</term>
+<term>Netzwerkanalyse</term>
 <term>Stilistische Analyse</term>
-<term>Projektmanagement</term>
-<term>Webentwicklung</term>
-<term>Konservierung</term>
-<term>Artefakte</term>
+<term>Visualisierung</term>
 <term>Daten</term>
-<term>Infrastruktur</term>
 <term>Sprache</term>
-<term>Link</term>
 <term>Literatur</term>
-<term>Metadaten</term>
+<term>Karte</term>
+<term>Methoden</term>
 <term>benannte Entitäten (named entities)</term>
+<term>Forschung</term>
+<term>Forschungsprozess</term>
+<term>Forschungsergebnis</term>
 <term>Text</term>
+<term>Visualisierung</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<p>Der vorgeschlagene Beitrag dokumentiert den Fortschritt beim Aufbau unseres digitalen Korpus der literarischen Moderne (KOLIMO), das im Herbst 2016 in der Beta-Version veröffentlicht werden soll (abrufbar unter https://kolimo.uni-goettingen.de/). Im Fokus des Beitrags stehen das Verfahren zur Aufbereitung der Texte (insb. Format und Metadaten in TEI) und das linguistische Tagging (POS).</p>
-<p>Als Teil des laufenden Projektes Q-LIMO (Quantitative Analyse der literarischen Moderne) ist KOLIMO ein repräsentatives und computerlinguistisch solide aufbereitetes Korpus von narrativen fiktionalen Erzähltexten der literarischen Epoche der Moderne. Um durch stratifiziertes Sampling Repräsentativität (verstanden als „extent to which a sample includes the full range of variability in a population“; vgl. Biber 1994) zu ermöglichen, umfasst das Korpus ein möglichst breites Spektrum der literarischen Moderne, verteilt über kanonische und nichtkanonische Texte. So wurden in das Korpus bislang ca. 596.000.000 Wörter aus frei zugänglichen Repositorien importiert (s. Abbildung 1).</p>
-<p>Abbildung 1</p>
-<p>Gesamtanzahl Wörter aus den drei Hauptressourcen (Zwischenstand August 2016)</p>
-<figure>
-<graphic height="9.0805cm" n="1001" rend="inline" url="vortrag-HERRM-image1.png" width="15.197666666666667cm"/>
-</figure>
-<p>Die Datenbank umfasst so neben Texten aus TextGrid und Gutenberg-DE (s. Abbildung 2) und dem DTA auch eine wachsende Zahl von Retrodigitalisaten. Das Sampling ist nicht zuletzt dadurch beeinflusst, dass KOLIMO auch das Kafka/Referenzkorpus (KAREK) beinhaltet, welches zum Ziel hat, Kafkas Texte und Texte, die Kafkas Schreibprozess beeinflusst haben könnten, möglichst umfangreich abzubilden (vgl. Herrmann / Lauer 2016a,b).</p>
-<p>Abbildung 2</p>
-<p>Screenshot KOLIMO-WebApp: Anzahl Wörter, Autoren und Einträge aus TextGrid &amp; Gutenberg-DE (ohne DTA und andere Quellen, Stand August 2016)</p>
-<figure>
-<graphic height="10.117666666666667cm" n="1002" rend="inline" url="vortrag-HERRM-image2.png" width="15.896166666666666cm"/>
-</figure>
-<p>Um philologischen Ansprüchen an den editorischen Status literarischer Texte und die Abbildung von Epochen sowie Gattungskonzepten zu genügen, war eine hohe Genauigkeit und Konsistenz bei der informatischen Vorverarbeitung Textmarkup (XML-TEI) inklusive der Metadaten (Autor, Entstehungszeitpunkt und Gattung) besonders wichtig. Gerade die Auszeichnung der genannten Metadaten stellt eine Schnittstelle zwischen den informatischen und philologischen Dimensionen unseres Projektes dar: so sind Metadaten (a) die unabhängigen Variablen unserer stilistischen Analyse und (b) variieren in den von uns importierten Korpus-Ressourcen stark in qualitativer und quantitativer Hinsicht (Fehler, missing entries, unterschiedliche Ontologien). Der vorgeschlagene Beitrag wird so erstens einen kurzen Einblick in unsere Vorgehensweise geben, wobei Kriterien der Nachhaltigkeit berücksichtigt werden:</p>
-<list type="unordered">
-<item>Strategien der Textextraktion nach Genre-Kriterien unter Nutzung bestehender Metadatenschemata (ausgeschlossen wurden z.B. alle Texte, deren Metadaten sie als dramatisch und lyrisch ausflaggten, sowie Texte, die keine Absätze [without (tei:p)] enthielten);</item>
-<item>ein transparenter Workflow zur Korpusauszeichnung (internes eXist Webinterface);</item>
-<item>Anwendung eines standardisierten Text-Markups (u.a. Transformation der TextGrid und Gutenberg Header in das DTA-Basisformat TEI);</item>
-<item>Strategien der konsistenten Implementierung und Verbesserung von Metadatenschemata (Ineinandergreifen von händischen und skriptgestützen Workflows, wie Recherche zu [Erst-]Erscheinungsdaten bei missing entries, Zusammenführung der unterschiedlichen Gattungschemata, Überprüfung und ggf. Zuweisung von GNDs für Autoren);</item>
-<item>die nachhaltige Veröffentlichung des Korpus auf einem eigenen Server mit standardisierten Datenschnittstellen;</item>
-<item>Datenbankabbild (nonpublic) zur Langzeitarchivierung.</item>
-</list>
-<p>Zweitens wird der Beitrag unser Vorgehen bezüglich der linguistischen Anreicherung zusammenfassen: Unter der Annahme, dass Stil quantitativ beschreibbar ist (vgl. Herrmann / van Dalen-Oskam / Schöch 2015), und dass Wortarten verlässliche Indikatoren für Register und Genrevariation sind (vgl. z.B. Biber / Conrad 2009), haben wir uns für die linguistische Annotation auf POS (STTS Tagset; vgl. Schiller / Teufel / Thielen 1995) entschieden. POS sind im Vergleich mit anderen Variationsmarkern durch eine relativ akkurate automatische Annotation besonders praktikabel. Das Webinterface liefert variablen Zugriff auf die annotierten Daten, u.a. eine Volltextansicht (siehe Abbildung 3); geplant sind zur Veröffentlichung die Exportierbarkeit in .csv-Files und TCF-Format.</p>
-<p>Abbildung 3</p>
-<p>Screenshot KOLIMO WebApp Textview POS-Tagging</p>
-<figure>
-<graphic height="8.339666666666666cm" n="1003" rend="inline" url="vortrag-HERRM-image3.png" width="16.213666666666665cm"/>
-</figure>
-<p>Zwar liefern bereits trainierte Modelle von einigen Taggern (z.B. TreeTagger) eine gute Genauigkeit für das gegenwärtige Standarddeutsch, angewendet auf ältere Sprachstufen oder vom Standarddeutschen abweichende Register wie „Literatur“ sinkt die Genauigkeit jedoch. Ein bereits auf POS annotiertes Korpus ist das Deutsche Textarchiv (DTA, Berlin-Brandenburgische Akademie der Wissenschaften 2016), ein Referenzkorpus für das Deutsche, das sowohl historische Sprachstufen als auch das Register „Literatur“ enthält. Die POS-Annotation baut hier auf fehlertoleranten linguistischen Analyse historischer Texte auf und verwendet ein Tool zur Morphologisierung (Jurish 2012), ist allerdings hinsichtlich ihrer Qualität noch nicht umfassend evaluiert worden. Ausgehend von diesem Datensatz haben wir zwei Strategien verfolgt: (1) Ein epochensensitives POS-Tagging, das verschiedene Tagger auf dem Datensatz des DTA, aber auf unterschiedlichen literarischen Epochen trainiert (vgl. Paluch et al. in Vorbereitung); (2) eine Überprüfung der Qualität der DTA-POS-Tags durch quantitative und qualitative Verfahren. </p>
-<p>In Strategie (1) machen wir uns zunutze, dass Annotationsgenauigkeit erhöht werden kann, wenn Tagger auf verschiedene Register/Sprachstände trainiert und diese trainierten Modelle dann auf noch nicht trainierte Texte des gleichen Registers angewendet werden (vgl. Giesbrecht / Evert). Für KOLIMO haben wir u.a. den TreeTagger (vgl. Schmid 1994), Perceptron (vgl. Rosenblatt 1958) und MarMoT (vgl. Müller / Schmid / Schütze 2013) verwendet. Durch die Wahl unterschiedlicher Tagger soll gewährleistet werden, dass die Genauigkeit der POS-Annotation maximiert werden kann, indem nur derjenige Tagger mit den besten Ergebnissen pro Register verwendet wird. Die Auswahl der Tagger basierte einerseits darauf, dass sie unterschiedliche Prinzipien benutzen: So funktioniert der TreeTagger nach dem Hidden Markov Model (HMM, vgl. Baum / Petrie 1966), MarMot nach dem Prinzip der Conditional Random Fields (DRF, vgl. Hammersly / Clifford 1971) und Perceptron nach dem neuronaler Netzwerke. Der Grund für die Wahl des TreeTaggers war zudem seine Prävalenz in der Forschungsliteratur, die nicht zuletzt durch gute Ergebnisse begründet scheint (vgl. Dipper 2012; Giesbrecht / Evert 2009). In einem ersten Schritt (vgl. Paluch et al. in Vorbereitung) wurden hier bereits getaggte Texte aus dem DTA in fünf Epochen geordnet. Neben der Moderne umfassten diese zu Vergleichszwecken auch Barock, Aufklärung, Romantik, und Realismus. Für die Einteilung der Epochen in Zeitperioden sowie der Einteilung von Autoren zu bestimmten Epochen wurden einschlägige Literaturgeschichten zu Rate gezogen (u.a. Beutin 2001; Jørgensen / Bohnen / Øhrgaard 1990; Meid 2009; Schulz 2000; Sprengel 1998, 2004). Anschließend wurden die Tagger auf jeweils eine Epoche trainiert, indem die Texte randomisiert in Trainings- und Evaluationstexte getrennt wurden und eine k-fold cross validation (vgl. Witten / Elbe 2005) für jeden Tagger durchgeführt wurde. Die Ergebnisse (vgl. auch Paluch et al. in Vorbereitung) weisen auf eine gute Genauigkeit insbesondere von Perceptron hin, müssen aber unter dem Vorbehalt betrachtet werden, dass der Status des DTA als Goldstandard für POS-Tagging noch fraglich ist.</p>
-<p>Hier setzen wir mit Strategie (2) an, mit der wir zunächst für alle POS-Tags Übereinstimmung und Abweichung (Matches und Missmatches) des Outputs des Tree-Taggers und MarMots mit dem DTA-Datensatz vergleichen. Aufbauend auf diese quantitative Überprüfung der einzelnen Tag-Zuweisung evaluieren wir zudem händisch Stichproben der Nichtübereinstimmungen in der Annotation der einzelnen Tags. </p>
-<p>Unsere quantitative Überprüfung ergibt eine generelle Übereinstimmung mit dem DTA-Datensatz in POS-Tags für den TreeTagger und den Marmot Tagger von jeweils 80%. Die generelle Übereinstimmung zwischen den Tags des TreeTaggers und denen des MarMot Taggers hingegen liegt bei 0.78%. </p>
-<p>Tabelle 1 zeigt Ergebnisse aus der Analyse der Übereinstimmungen (Matches) und Abweichungen (Missmatches) bei der POS-Tagzuweisung von TreeTagger (TT) und MarMot (MM) im Vergleich mit den Tags des DTA. Abgebildet sind hier solche Fälle pro POS-Tag, in denen TT und MM übereinstimmen, aber vom DTA abweichen. Die Tabelle listet die elf POS-Tags, die (von TT und MM gemeinsam) die proportional den höchsten Anteil der Abweichung vom DTA ausmachen.</p>
-<p>Tabelle 1 Abweichung zu POS-Tags des DTA (Übereinstimmung MM und TT)</p>
-<table rend="rules">
-<row>
-<cell>POS-Tag*</cell>
-<cell>Häufigkeit</cell>
-<cell>Rel. Häufigkeit </cell>
-</row>
-<row>
-<cell>NE</cell>
-<cell>1444048</cell>
-<cell>0.12</cell>
-</row>
-<row>
-<cell>NN</cell>
-<cell>1443795</cell>
-<cell>0.12</cell>
-</row>
-<row>
-<cell>VVFIN</cell>
-<cell>1326081</cell>
-<cell>0.11</cell>
-</row>
-<row>
-<cell>ADJA</cell>
-<cell>1309006</cell>
-<cell>0.11</cell>
-</row>
-<row>
-<cell>ADJD</cell>
-<cell>741903</cell>
-<cell>0.06</cell>
-</row>
-<row>
-<cell>ADV</cell>
-<cell>618465</cell>
-<cell>0.05</cell>
-</row>
-<row>
-<cell>VAFIN</cell>
-<cell>582791</cell>
-<cell>0.05</cell>
-</row>
-<row>
-<cell>FM.la</cell>
-<cell>404341</cell>
-<cell>0.03</cell>
-</row>
-<row>
-<cell>PPOSAT</cell>
-<cell>397465</cell>
-<cell>0.03</cell>
-</row>
-<row>
-<cell>APPR</cell>
-<cell>362774</cell>
-<cell>0.03</cell>
-</row>
-<row>
-<cell>PDAT</cell>
-<cell>255896</cell>
-<cell>0.02</cell>
-</row>
-</table>
-<p>*STTS Tagset</p>
-<p>Aufbauend auf diesen Daten wird im nächsten Schritt die tatsächliche Qualität der bereits vorhandenen DTA-Tags für den Datensatz der literarischen Texte evaluiert. Auf der Grundlage von randomisiertem Sampling verbessern wir die POS-Annotationen bei tatsächlichen Fehlern händisch, um in der Folge u.a. eigene Sprachmodelle für unser spezifisches Korpus narrativer Texte zu trainieren. So soll schließlich unter Nutzung vorhandener Ressourcen ein Silber- oder sogar Goldstandard für das POS-Tagging historischer literarischer Texte des Deutschen erreicht werden. </p>
-<p>KOLIMO wird in der Beta-Version zur Tagung veröffentlicht (s. 
-                <ref target="https://kolimo.uni-goettingen.de">https://kolimo.uni-goettingen.de</ref>) und so der Forschungsgemeinschaft zur Verfügung gestellt. Es soll eine hypothesengetriebene, aber auch explorative, quantitative Stilistik ermöglichen (vgl. Herrmann eingereicht); zum Zeitpunkt der Tagung sind erste Ergebnisse zur stilistischen Variation der literarischen Moderne zu erwarten (vgl. schon Herrmann / Lauer / Mattner 2016).
+<p>Problemstellung</p>
+<p>Im Anschluss an den 1990 durch den Humangeographen Edward Soja ausgerufenen ‚Spatial Turn’ (Soja 1990) haben sich zahlreiche kulturwissenschaftliche Forschungsarbeiten mit einer Beschreibung des Raums beschäftigt. In der Literaturwissenschaft fanden dabei u.a. kartografische Darstellungen große Resonanz: Franco Moretti etwa untersuchte in seinem „Atlas of the European Novel“ Orte der literarischen Produktion und Rezeption (Moretti 1998), Barbara Piattis Studie „Die Geographie der Literatur“ richtete den Fokus auf die Illustration einer konkreten literarisch thematisierten Gegend (die Zentralschweiz, vgl. Piatti 2008). Besondere Aufmerksamkeit wurde literarischen Karten auch im Kontext der Digital Humanities zu Teil, in denen geografische Informationssysteme (GIS) zum Einsatz kommen (typische Workflows beschreiben Gregory et. al. 2015)</p>
+<p>Den meisten dieser Ansätze ist dabei gemein, dass sie für ihre Datengrundlage in erster Linie auf konkrete Nennungen von Ortsnamen (Toponymen) rekurrieren und weitere Ortsmarker weniger stark berücksichtigen. An der Konstitution literarischer Räume sind jedoch in der Regel auch komplexere Faktoren beteiligt, zu deren Beschreibung bereits erste narratologische Ansätze vorliegen (etwa von Kathrin Dennerlein [2009 und 2011] oder Gabriel Zoran [1984], vgl. auch die Überlegungen bei Piatti [2008]), die jedoch im Kontext der Digital Humanities bislang noch zu wenig Beachtung gefunden haben.</p>
+<p>In unserem Beitrag möchten wir diese Ansätze aufgreifen, um das Instrumentarium der digitalen Textanalyse hinsichtlich der Kategorie des Raums zu schärfen und zu erweitern. Dazu scheinen uns insbesondere zwei Aspekte von Bedeutung: Zum einem die Unterscheidung von Raummarkierungen hinsichtlich ihrer Handlungsrelevanz (I), zum anderen die Ausweitung der Analyse auf räumliche Begriffe, die über bloße Namensnennungen hinausgehen (II). Für beide Problemfelder präsentieren wir erste Verfahren zur automatischen Auswertung und geben Ausblicke auf die Möglichkeiten einer vergleichenden Analyse.</p>
+<p>
+<hi rend="bold">I. Differenzierung von Räumen nach Handlungsrelevanz</hi>
+</p>
+<p>Im Anschluss an Dennerleins Narratologie des Raumes hat sich insbesondere der Terminus der 
+                <hi rend="italic">räumlichen Gegebenheit</hi> als Grundeinheit zur Bezeichnung von Ort und Raum durchgesetzt. Sind räumliche Gegebenheiten der Schauplatz eines konkreten Ereignisses, werden sie als 
+                <hi rend="italic">Ereignisregionen</hi> spezifiziert. Diese haben als die zentralen handlungsrelevanten Räume besondere Bedeutung gegenüber 
+                <hi rend="italic">erwähnten räumlichen Gegebenheiten</hi>, die bei nicht-situationsbezogener Thematisierung von Raum entstehen. In ähnlicher Weise unterscheiden Piatti (2008) sowie Piatti et. al. (2011) zwischen 
+                <hi rend="italic">Schauplatz </hi>und 
+                <hi rend="italic">projizierten Orten</hi>.
             </p>
-<p>Gleichzeitig planen wir eine detaillierte Dokumentation der Arbeitsschritte zu veröffentlichen, die ähnlichen Projekten als Leitfaden zur Verfügung zu stehen soll. Unser Projekt dokumentiert in seinem gegenwärtigen Status Entscheidungen auf verschiedenen konzeptionellen, analytischen und prozeduralen Ebenen. Es zeigt, dass der Aufbau eines digitalen literarischen Korpus, das den synchronen und diachronen quantitativen Vergleich einer Schwerpunktepoche erlauben soll, bei Weitem keine triviale Aufgabe darstellt. So wurde zum Beispiel deutlich, wie Hypothesen zur Konstitution von Epochen, Autorschaft und Gattungen die Korpuskompilation steuern – und deshalb auf einer möglichst präzisen Modellierung der zugrundeliegenden textwissenschaftlichen Theorien fußen sollten. Gleichzeitig sind Metadaten (u. a. Autor, Titel, Publikationsdatum, Publikationsort, Gattung) und linguistische Parameter (wie POS) gerade die Ansatzpunkte, an denen philologische Fragestellungen in präzise und praktikable Kategorien umgewandelt werden können. Nicht zuletzt deshalb sollten literarische Daten in flexiblen Architekturen gespeichert werden, die zusätzliche Annotationsebenen zulassen – denn hermeneutische Erkenntnisprozesse stellen eine erwachsene Stärke der Geisteswissenschaften dar, die auch im digitalen Zeitalter einen explizit modellierten Platz einnehmen muss.</p>
+<p>Am Beispiel von Jules Vernes „Reise um die Erde in 80 Tagen“ lässt sich die Wichtigkeit dieser Unterscheidung aufzeigen: So bietet z.B. Kapitel 14 eine Zugfahrt durch das Gangestal mit Aufenthalten in Allahabad und Benares sowie der Ankunft in Calcutta. Genannt werden im Text jedoch auch weitere Städte Indiens und das nächste Ziel Hongkong; eine Vielzahl der extrahierten Ortsnamen bezieht sich somit nicht auf den Handlungsort des Kapitels.</p>
+<p>Erst die kategoriale Trennung der Raummarkierungen in Ereignisregionen und erwähnte räumlichen Gegebenheiten ermöglicht die valide Rekonstruktion einer Reiseroute, die dann in einer GIS-Darstellung visualisiert werden kann (Abbildung 1). </p>
+<figure>
+<graphic height="9.837208333333333cm" n="1001" rend="inline" url="vortrag-BARTH-image1.png" width="15.993180555555556cm"/>
+</figure>
+<p>Eine automatische Unterscheidung dieser Kategorien muss daher das Fernziel computerunterstützter Raumuntersuchungen sein. Ansätze zu einer solchen Differenzierung suchen wir in der Anwendung von computerlinguistischen Methoden der Relationsextraktion, bei denen sich aus strukturellen Auffälligkeiten Regeln zur Klassifikation von Ereignisregionen und erwähnten räumlichen Gegebenheiten ableiten lassen. Hierzu zwei Beispiele: </p>
+<p>1. Das 14. Kapitel der „Reise um die Erde in 80 Tagen“ beginnt mit dem in Abbildung 2 dargestellten Satz:</p>
+<figure>
+<graphic height="4.938888888888889cm" n="1002" rend="inline" url="vortrag-BARTH-image2.png" width="16.002cm"/>
+</figure>
+<p>Vor allem der Hauptsatz mit dem Pfad [Figur – SUBJ – Bewegungsverb - OBJ – Raumnomen] zwischen "Phileas Fogg" und "Gangesthal" kennzeichnet letzteres als Ereignisregion. Dabei stellt insbesondere die Verbkategorie ein Indiz für die Klassifikationsentscheidung dar: Statische Verben ("stehen", "sitzen") oder Verben der Bewegung ("gehen", "fahren") zeugen in spezifischen Satzstrukturen häufig von einer Ereignishaftigkeit im Gegensatz zu Verben der Kognition ("denken"). </p>
+<p>Zur Einteilung der Verben nutzen wir das von der Universität Tübingen entwickelte lexikalisch-semantische Netz 
+                <hi rend="italic">GermaNet</hi> (Hamp/Feldweg 1997, Henrich/Hinrichs 2010), in dem eine Systematisierung vorliegt, die auf den Verbkategorien von Levin und dem Valenzwörterbuch von Schumacher basiert (Levin 1993, Schumacher 1986).
+            </p>
+<p>2. Findet ein erzähltes Ereignis innerhalb einer Bewegung im Raum statt, können mehrere Räume zu einem 
+                <hi rend="italic">Bewegungsbereich</hi> zusammengefasst werden. Diese können bei Strukturen wie der folgenden leicht maschinell erkannt werden:
+            </p>
+<p>"Ich fuhr [...] 
+                <hi rend="underline">von Königstadt</hi>, wo unser Hauptbüro war, 
+                <hi rend="underline">nach Gründerheim</hi>, wo wir eine Nebenstelle hatten. 
+                <hi rend="underline">Dort</hi> holte ich dringende Korrespondenz, Gelder und schwebende Fälle." (Böll, Heinrich: Über die Brücke)
+            </p>
+<p>Im zweiten Satz findet sich zudem eine Referenz auf das Antezedens "Gründerheim". Eigentlich werden derartige deiktische Adverbialausdrücke ("hier", "da" und "dort") bei der Koreferenz-Resolution nicht berücksichtigt. Deshalb planen wir eine Erweiterung der Trainingssets bestehender Koreferenz-Systeme hinsichtlich dieser Termini. </p>
+<p>Die hier an zwei Beispielfällen dargestellten Regeln zur Unterscheidung narratologischer Raumeinheiten sollen in Zukunft kontinuierlich erweitert und zunächst so gestaltet werden, dass sie eine hohe Präzision erzielen. Anschließend können sie als Features für spätere maschinelle Lernverfahren verwendet werden.</p>
+<p>
+<hi rend="bold">II. Anreicherung der Raumbeschreibung</hi>
+</p>
+<p>Netzwerkvisualisierung von Raumnomen</p>
+<p>Eine kartografische Darstellung, wie sie in Abbildung 1 ersichtlich ist, bleibt auf realweltliche Ortsnamen beschränkt und lässt wesentliche Aspekte der Raumdarstellung außer Acht. Einen ersten Ansatz, die Vielfältigkeit der tatsächlichen Handlungsräume und ihrer Zusammenhänge abzubilden, bietet das Netzwerk in Abbildung 3. Hier werden für das angesprochene Kapitel 14 neben den Toponymen auch unspezifische Raumnomen als Knoten berücksichtigt und Verbindungen immer dann etabliert, wenn zwei Raumbegriffe gemeinsam in einem Satz auftreten.</p>
+<p>Insbesondere landschaftliche (grün) und architektonische Raumnomen (grau) stellen relevante Klassen von Raummarkern dar, die neben den konkreten Ortsnamen zentrale Komponenten der literarischen Raumbeschreibung bilden. Als räumliche Gegebenheiten kommen aber auch bewegliche Objekte, in denen sich Figuren aufhalten können, in Frage, wie die in der Grafik blau markierten Fahrzeuge. </p>
+<figure>
+<graphic height="22.642877777777777cm" n="1003" rend="inline" url="vortrag-BARTH-image3.png" width="16.002cm"/>
+</figure>
+<p>Abbildung 3: Netzwerk</p>
+<p>Lexikon und Taxonomien für Raumbegriffe</p>
+<p>Zur lexikalischen Erfassung von realweltlichen Toponymen greifen wir auf die Named-Entitiy-Recognition von 
+                <hi rend="italic">Weblicht</hi> (2012) zurück, deren Ergebnisse wir mit dem Rückgriff auf die frei zugänglichen Datenbanken 
+                <hi rend="italic">GeoNames </hi>(www.geonames.org) und 
+                <hi rend="italic">OpenStreetMap</hi> (www.openstreetmap.org, Datendownload über www.geofabrik.de) zu verfeinern trachten. Aufgrund des Problems der möglichen Ambiguität von Ortsnamen (Leidner / Liebermann 2011, Gregory / Hardie 2011) ist jedoch eine manuelle Nachbearbeitung nötig. Listen von unspezifischen Raumnomen („Berg“, „Bach“, etc.) erstellen wir (ebenfalls semi-automatisch) auf der Basis von 
+                <hi rend="italic">GermaNet</hi>.
+            </p>
+<p>Innerhalb dieses Lexikons planen wir zudem eine Einordung der Raumbegriffe in spezifische Taxonomien:</p>
+<p>
+<hi rend="italic">i) Vertikale Raum-Ort-Hierarchie</hi>
+</p>
+<p>Narratologisch wird unter dem Begriff 
+                <hi rend="italic">Raum</hi> ein umfassendes Gebiet in der erzählten Welt verstanden, welches ein Innen und Außen besitzt und wiederum lokalisierbare, punktuelle 
+                <hi rend="italic">Orte</hi> beinhaltet (Dennerlein 2009). Diese Zuordnung erfolgt jedoch meist relational zur Erzählsituation: In Alfred Döblins Roman 
+                <hi rend="italic">Berlin Alexanderplatz</hi> bildet die Stadt den Raum mit einzelnen Plätzen und Straßen als Orten. Unter einer geringfügigen Erweiterung des Erzählspektrums wäre Berlin aber potentiell nur ein Ort unter vielen im übergeordneten Raum Deutschland.
+            </p>
+<p>Statt einer festen Zuschreibung nähern wir uns dem Verhältnis von Ort und Raum über eine vertikale Taxonomie von räumlichen Gegebenheiten an, die von der Planetenebene bis zu jenen Objekten reicht, in denen sich unter Annahme faktualer Gesetzmäßigkeiten keine Figur mehr aufhalten kann. Im Sinne des 
+                <hi rend="italic">principles of minimum departure </hi>(Ryan 1980) kann dabei so lange von einer nach realweltlichen Gesetzen eingerichteten Erzählwelt ausgegangen werden, bis deren bewusste Aufhebung innerhalb fiktionaler Texte in spezifischen Fällen eine gezielte Anpassung der Taxonomie erfordert (z.B. bei Aladins Flaschengeist in der Wunderlampe).
+            </p>
+<p>Abbildung 4 zeigt basierend auf den kapitelweise extrahierten Ereignisregionen in „Reise um die Erde in 80 Tagen“ die obersten taxonomischen Stufen: 1. Kontinent, 2. Land, 3. Stadt bzw. landschaftliche Region (inklusive Transportmittel, markiert in blau). </p>
+<figure>
+<graphic height="7.688791666666667cm" n="1004" rend="inline" url="vortrag-BARTH-image4.png" width="16.002cm"/>
+</figure>
+<p>Während in den ersten beiden Ebenen dieses Beispiels ausschließlich Toponyme vorkommen, beinhaltet zumindest die dritte Stufe in der Nominalphrase „Latenenwald bei Allahabad“ ein unspezifisches Raumnomen. Weitere allgemeine Begriffe wären vor allem auf einer hier nicht dargestellten vierten Ebene zu finden (z.B. „Sumpf“, „Bach“, „Weizenfeld“ innerhalb der Landschaft „Behar“, vgl. Abb. 3).</p>
+<p>Zur automatischen Erstellung einer solchen Hierarchie bieten sich bei Toponymen die in 
+                <hi rend="italic">GeoNames</hi> vorhandenen Metadaten an, in denen bei jedem Stadt-Eintrag Informationen zu Land und Kontinent vorhanden sind. Bei unspezifischen Raumnomen eignet sich hingegen die hierarchische Struktur von 
+                <hi rend="italic">GermaNet</hi>. So stellt etwa der Begriff „Bach“ ein Hyponym zum übergeordneten Synset „Wasser/Gewässer“ dar, letzteres besitzt wiederum die Hyperonyme „Land/Gegend/Gefilde“.
+            </p>
+<p>
+<hi rend="italic">ii) Wortfelder</hi>
+</p>
+<p>Wie in Abb. 3 ersichtlich, speisen sich Raumnomen zu großen Teilen aus den Wortfeldern Architektur und Landschaft. Die folgende Analyse basiert auf semiautomatisch erstellten Wortlisten, die auf der Basis von 
+                <hi rend="italic">GermaNet</hi> durch die Auswertung der entsprechenden Synsets und Implikationen (Hyperonymie und Hyponymie) von zentralen Begriffen aus beiden Wortfeldern gewonnen wurden.
+            </p>
+<p>Makroperspektive</p>
+<p>Das Potential digitaler korpusgestützter Raum-Analysen soll anhand des Vergleichs dreier ‚Berlin-Romane’ exemplarisch aufgezeigt werden. Dazu werden die Texte in jeweils zehn Segmente aufgeteilt und hinsichtlich der Frequenz spezifischer Raumbegriffe aus den Wortfeldern Architektur und Landschaft untersucht:</p>
+<p>Dabei lassen sich deutlich höhere Anteile des architektonischen Vokabulars gegenüber dem Segmentmittelwerten eines Vergleichskorpus erkennen, das aus 451 im Textgrid-Repository enthaltenen Romanen besteht (Abbildung 5, oben). </p>
+<figure>
+<graphic height="13.356166666666667cm" n="1005" rend="inline" url="vortrag-BARTH-image5.png" width="15.963194444444444cm"/>
+</figure>
+<p>Während die Verteilung des architektonischen Wortschatzes in Hesses „Heimliches Berlin“ nur temporäre Spitzen zeigt, sind die Segmentverteilungen von „Berlin Alexanderplatz“ und Wilhelm Raabes „Die Chronik der Sperlingsgasse“ gegenüber der mittleren Verteilung des Korpus signifikant verschieden. Dies wurde sowohl mit dem Wilcoxon-Rangsummentest (Annahme der Varianzhomogenität und Gleichverteilung zwischen den Sampleverteilungen) sowie dem Mood's Median-Test (keine Verteilungsannahme) überprüft (Abbildung 6).</p>
+<p>Das landschaftliche Vokabular hingegen liegt bei den Berlin-Romanen tendenziell etwas unter dem Mittel des Korpus, allerdings sind die Abweichungen nur im Fall von „Berlin Alexanderplatz“ eindeutig signifikant (Abb. 5 unten, Abb. 6)</p>
+<figure>
+<graphic height="8.715375cm" n="1006" rend="inline" url="vortrag-BARTH-image6.png" width="15.984361111111111cm"/>
+</figure>
+<p>Ungeachtet dieser Unterschiede sind die Zusammenhänge zwischen beiden Wortfeldern auffällig (Abbildung 7). Die Spearman-Korrelation zwischen architektonischen und landschaftlichen Begriffen bei „Berlin Alexanderplatz“ beträgt 0.5030488 und bei „Die Chronik der Sperlingsgasse“ sogar 0.7454545. So kann trotz abweichender Anteile der Wortfelder hinsichtlich ihrer Frequenz eine starke Verflechtung spezifischer Klassen von Räumen angenommen werden.</p>
+<figure>
+<graphic height="13.576652777777777cm" n="1007" rend="inline" url="vortrag-BARTH-image7.png" width="15.984361111111111cm"/>
+</figure>
+<p>Ausblick</p>
+<p>Die vorgestellten Ansätze verstehen sich als Anregung für die Entwicklung eines differenzierten Instrumentariums der digitalen Raumanalyse, das in Zukunft weiter ausgebaut werden soll und die Grundlage für die Behandlung weiterführender literaturwissenschaftlicher Fragestellungen bildet, die etwa Aspekte der Semantisierung von Räumen (Lotman 1972), des raumzeitlichen Entwurfs von Erzählwelten (Bachtin 1989) und der Bedeutung von Raumkonstellationen für die Gattungspoetik beinhalten (vgl. zusammenfassend Nünning 2009). </p>
 </body>
 <back>
 <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-<hi rend="bold">Baum, Leonard E. / Petrie, Ted</hi> (1966): 
-                        „Statistical inference for probabilistic functions of finite state markov chains“, 
+<hi rend="bold">Bachtin, Michail Michailowitsch</hi> (1989): 
+                        <hi rend="italic">Formen der Zeit im Roman. Untersuchungen zur historischen Poetik</hi>. Ed. von Kowalski, Edward / Wegner, Michael.
+                        Frankfurt am Main: Fischer.
+                    </bibl>
+<bibl>
+<hi rend="bold">Bastian Mathieu / Heymann Sebastian / Jacomy Mathieu</hi> (2009): 
+                        „Gephi. An open source software for exploring and manipulating networks“, 
                         in: 
-                        <hi rend="italic">The annals of mathematical statistics 37</hi> (6) :1554–1563.  
+                        <hi rend="italic">International AAAI Conference on Weblogs and Social Media</hi>.
                     </bibl>
 <bibl>
-<hi rend="bold">Berlin-Brandenburgische Akademie der Wissenschaften</hi> (2016): 
-                        <hi rend="italic">Deutsches Textarchiv</hi>. 
-                        <ref target="http://www.deutschestextarchiv.de/">http://www.deutschestextarchiv.de/</ref> [letzer Zugriff 24. Mai 2016].
+<hi rend="bold">Dennerlein, Katrin</hi> (2009): 
+                        <hi rend="italic">Narratologie des Raumes</hi>. 
+                        Berlin: de Gruyter.
                     </bibl>
 <bibl>
-<hi rend="bold">Beutin, Wolfgang</hi> (2001): 
-                        <hi rend="italic">Deutsche Literaturgeschichte: von den Anfängen bis zur Gegenwart</hi>. 
-                        Stuttgart: Metzler.
+<hi rend="bold">Dennerlein, Katrin</hi> (2011): 
+                        „Raum“,
+                        in: Matías Martínez (ed.): 
+                        <hi rend="italic">Handbuch Erzählliteratur: Theorie, Analyse, Geschichte</hi>. 
+                        Stuttgart / Weimar: Metzler 158–165.
                     </bibl>
 <bibl>
-<hi rend="bold">Biber, Douglas / Conrad, Susan</hi> (2009): 
-                        <hi rend="italic">Register, Genre, and Style</hi>. 
-                        Cambridge: Cambridge University Press.</bibl>
+<hi rend="bold">Gregory, Ian / Hardie, Andrew</hi> (2011): 
+                        „Visual GISting: bringing together corpus linguistics and Geographical Information Systems“, 
+                        in; 
+                        <hi rend="italic">LLC</hi> 26: 297–314. 
+                    </bibl>
 <bibl>
-<hi rend="bold">Dipper, Stefanie</hi> (2012): 
-                        „Morphological and part-of-speech tagging of historical language data: A comparison“,
+<hi rend="bold">Gregory, Ian / Cooper, David / Hardie, Andrew / Rayson, Paul</hi> (2015): 
+                        „Spatializing and Analyzing Digital Texts. Corpora, GIS, and Places“, 
+                        in: David Bodenhamer / John Corrigan / Trevor Harris: 
+                        <hi rend="italic">Deep Maps and Spatial Narratives</hi>. 
+                        Bloomington: Indiana University Press 150–178. 
+                    </bibl>
+<bibl>
+<hi rend="bold">Hamp, Birgit / Feldweg, Helmut</hi> (1997): 
+                        „GermaNet - a Lexical-Semantic Net for German“, 
                         in: 
-                        <hi rend="italic">Workshop on Annotation of Corpora</hi>.
-                        <ref target="http://www.coli.uni-saarland.de/conf/ACRH10/slides/dipper.pdf">http://www.coli.uni-saarland.de/conf/ACRH10/slides/dipper.pdf</ref>.
+                        <hi rend="italic">Proceedings of the ACL workshop Automatic Information Extraction and Building of Lexical Semantic Resources for NLP Applications</hi>.
+                        Madrid.
                     </bibl>
 <bibl>
-<hi rend="bold">Gaede, Friedrich</hi> (1971): 
-                        <hi rend="italic">Humanismus, Barock, Aufklärung: Geschichte der deutschen Literatur vom 16. bis zum 18. Jahrhundert</hi>. 
-                        Bern: Francke Verlag.
-                    </bibl>
-<bibl>
-<hi rend="bold">Giesbrecht, Eugenie / Evert, Stefan</hi> (2009): 
-                        „Is part-of-speech tagging a solved task? An evaluation of pos taggers for the German web as corpus“, 
+<hi rend="bold">Henrich, Verena / Hinrichs Erhard</hi> (2010): 
+                        „GernEdiT - The GermaNet Editing Tool“, 
                         in: 
-                        <hi rend="italic">Proceedings of the fifth Web as Corpus Workshop</hi> 27–35. 
+                        <hi rend="italic">Proceedings of LREC 2010</hi> 2228–2235.
                     </bibl>
 <bibl>
-<hi rend="bold">Hammersley, John M. / Clifford, Peter</hi> (1971): 
-                        <hi rend="italic">Markov fields on finite graphs and lattices</hi>.
-                         <ref target="http://www.statslab.cam.ac.uk/~grg/books/hammfest/hamm-cliff.pdf">http://www.statslab.cam.ac.uk/~grg/books/hammfest/hamm-cliff.pdf</ref>.
-                    </bibl>
-<bibl>
-<hi rend="bold">Herrmann, J. Berenike</hi> (eingereicht): 
-                        „In test bed with Kafka. Introducing a mixed-method approach to digital stylistics“,
-                        in: Chambers, Sally / Jones, Catherine / Kestemont, Mike / Koolen, Marijn / Zundert, Joris van (Eds.). 
-                        <hi rend="italic">Special Issue DHBenelux 2015, Digital Humanities Quarterly</hi>.
-                    </bibl>
-<bibl>
-<hi rend="bold">Herrmann, J. Berenike / Lauer, Gerhard</hi> (2016a): 
-                        „KAREK: Building and Annotating a Kafka/Reference Corpus“,
-                        in:
-                        <hi rend="italic">DH2016: Conference Abstracts</hi>.
-                    </bibl>
-<bibl>
-<hi rend="bold">Herrmann, J. Berenike / Lauer, Gerhard</hi> (2016b): 
-                        „Aufbau und Annotation des Kafka/Referenzkorpus“,
-                        in:
-                        <hi rend="italic">DHd 2016: Modellierung - Vernetzung - Visualisierung</hi>.
-                    </bibl>
-<bibl>
-<hi rend="bold">Herrmann, J. Berenike / Lauer, Gerhard / Mattner, Cosima</hi> (2016): 
-                        <hi rend="italic">Measuring Kafka's Diaries</hi>. A Psychostylistic Approach International Society for the Empirical Study of Literature and Media (IGEL), Chicago, USA.
-                    </bibl>
-<bibl>
-<hi rend="bold">Herrmann, J. Berenike / van Dalen-Oskam, Karina / Schöch, Christof</hi> (2015): 
-                        „Revisiting Style, a Key Concept in Literary Studies“,
-                        in:
-                        <hi rend="italic">Journal of Literary Theory</hi> 9 (1): 25–52.
-                    </bibl>
-<bibl>
-<hi rend="bold">Jørgensen, Sven Aaage / Bohnen, Klaus / Øhrgaard, Per</hi> (1990): 
-                        <hi rend="italic">Aufklärung, Sturm und Drang, frühe Klassik: 1740 - 1789</hi>. (Boor, Helmut de / Newald, Richard, eds.). 
-                        München: Beck.
-                    </bibl>
-<bibl>
-<hi rend="bold">Jurish, Bryan</hi> (2012): 
-                        <hi rend="italic">Finite-state Canonicalization Techniques for Historical German</hi>. 
-                        PhD, Universität Potsdam.
-                    </bibl>
-<bibl>
-<hi rend="bold">Manning, Christopher D. / Raghavan, Prabhakar / Schütze, Heinrich</hi> (2008): 
-                        <hi rend="italic">Introduction to information retrieval</hi> 1. 
-                        Cambridge: Cambridge University Press. 
-                    </bibl>
-<bibl>
-<hi rend="bold">Meid, Volker</hi> (2009):
-                        <hi rend="italic">Die deutsche Literatur im Zeitalter des Barock: vom Späthumanismus zur Frühaufklärung: 1570 - 1740</hi>. (Boor, Helmut de / R. Newald, Richard, eds.) ([Neuausg.].). 
-                        München: Beck.
-                    </bibl>
-<bibl>
-<hi rend="bold">Müller, Thomas / Schmid, Helmut / Schütze, Hinrich</hi> (2013): 
-                        „Efficient higher-order CRFs for morphological tagging“,
-                        in:
-                        <hi rend="italic">Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing</hi>.
-                    </bibl>
-<bibl>
-<hi rend="bold">Nekula, Marek</hi> (2003): 
-                        „Franz Kafkas Deutsch“, 
+<hi rend="bold">Leidner, Jochen / Lieberman, Michael</hi> (2011): 
+                        „Detecting Geographical References in the Form of Place Names and Associated Spatial Natural Language“, 
                         in: 
-                        <hi rend="italic">Linguistik online</hi> 13 (1)
-                        <ref target="https://bop.unibe.ch/linguistik-%20online/article/view/879/1533">https://bop.unibe.ch/linguistik- online/article/view/879/1533</ref>.
+                        <hi rend="italic">SIGSPATIAL Special</hi> 3: 5–11.
                     </bibl>
 <bibl>
-<hi rend="bold">Paluch, Markus / Rotari, Gabriela / Steding, David / Weß, Maximilian / Moritz, Maria</hi> (in Vorbereitung): 
-                        <hi rend="italic">Non-static analysis of part-of-speech tagging of historical German texts</hi>.
+<hi rend="bold">Levin, Beth</hi> (1993): 
+                        <hi rend="italic">English Verb Classes and Alternations</hi>. 
+                        University of Chicago Press.
                     </bibl>
 <bibl>
-<hi rend="bold">Rosenblatt, Frank</hi> (1958): 
-                        „The perceptron: a probabilistic model for information storage and organization in the brain“, 
-                        in:
-                        <hi rend="italic">Psychological Review</hi> 65 (6): 386. 
+<hi rend="bold">Lotman, Juri</hi> (1972): 
+                        <hi rend="italic">Die Struktur literarischer Texte</hi>. 
+                        München: Fink.
                     </bibl>
 <bibl>
-<hi rend="bold">Schiller, Anne / Teufel, Simone / Thielen, Christine</hi> (1995): 
-                        „Guidelines für das Tagging deutscher Textcorpora mit STTS“,
-                        in:
-                        <hi rend="italic">Manuscript, Universities of Stuttgart and Tübingen</hi>.
-                        <ref target="http://www.sfs.uni-tuebingen.de/resources/stts-1999.pdf">http://www.sfs.uni-tuebingen.de/resources/stts-1999.pdf</ref>.
+<hi rend="bold">Moretti, Franco</hi> (1998): 
+                        <hi rend="italic">Atlas of the European novel. 1800-1900</hi>. 
+                        London / New York: Verso.
                     </bibl>
 <bibl>
-<hi rend="bold">Schmid, Helmut</hi> (1994):
-                        „Probabilistic part-of-speech tagging using decision trees“, 
+<hi rend="bold">Nünning, Ansgar</hi> (2009): 
+                        „Formen und Funktionen literarischer Raumdarstellung: Grundlagen, Ansätze, narratologische Kategorien und neue Perspektiven“, 
+                        in: Wolfgang Hallet / Birgit Neumann (eds.): 
+                        <hi rend="italic">Raum und Bewegung in der Literatur: Die Literaturwissenschaften und der Spatial Turn</hi>. 
+                        Bielefeld: Transcript 33–52.
+                    </bibl>
+<bibl>
+<hi rend="bold">Piatti, Barbara</hi> (2008): 
+                        <hi rend="italic">Die Geographie der Literatur. Schauplätze, Handlungsräume, Raumphantasien</hi>. 
+                        Göttingen: Wallstein.
+                    </bibl>
+<bibl>
+<hi rend="bold">Piatti, Barbara / Reuschel, Anne-Kathrin / Hurni, Lorenz</hi> (2011): 
+                        „A Literary Atlas of Europe – Analysing the Geography of Fiction with an Interactive Mapping and Visualisation System“, 
                         in: 
-                        <hi rend="italic">Proceedings of the international conference on new methods in language processing</hi> 12: 44–49. 
+                        <hi rend="italic">Proceedings of the 25th International Cartographic Conference</hi>. Paris.
                     </bibl>
 <bibl>
-<hi rend="bold">Schulz, Gerhard</hi> (2000): 
-                        <hi rend="italic">Das Zeitalter der Französischen Revolution: 1789 - 1806</hi>. (Boor, Helmut de / Newald, Richard, eds.) (2., neubearb. Aufl.). 
-                        München: Beck.
+<hi rend="bold">Ryan, Marie Laure</hi> (1980): 
+                        „Fiction, Non-Factuals, and Minimal Departure“, 
+                        in:
+                        <hi rend="italic">Poetics</hi> 8: 403–422.
                     </bibl>
 <bibl>
-<hi rend="bold">Sprengel, Peter</hi> (1998):
-                        <hi rend="italic">Geschichte der deutschsprachigen Literatur 1870 - 1900: von der Reichsgründung bis zur Jahrhundertwende</hi>. (Boor, Helmut de / Newald, Richard, eds.). 
-                        München: Beck.
+<hi rend="bold">Schumacher, Helmut</hi> (1986): 
+                        <hi rend="italic">Verben in Feldern: Valenzwörterbuch zur Syntax und Semantik deutscher Verben</hi>. 
+                        Berlin / New York: de Gruyter Verlag,
                     </bibl>
 <bibl>
-<hi rend="bold">Sprengel, Peter</hi> (2004): 
-                        <hi rend="italic">Geschichte der deutschsprachigen Literatur 1900 - 1918: von der Jahrhundertwende bis zum Ende des Ersten Weltkriegs</hi>. (Boor, Helmut de / Newald, Richard, eds.). 
-                        München: Beck.
+<hi rend="bold">Soja, Edward</hi> (1990): 
+                        <hi rend="italic">Postmodern Geographies: The Reassertion of Space in Critical Social Theory</hi>.
+                        London / New York: Verso.
                     </bibl>
 <bibl>
-<hi rend="bold">Witten, Ian H. / Elbe, Frank</hi> (2005): 
-                        <hi rend="italic">Data Mining: Practical machine learning tools and techniques</hi>. 
-                        San Francisco: Morgan Kaufmann Publishers.
+<hi rend="bold">WebLicht </hi>(2012): 
+                        CLARIN-D/SfS-Uni. Tübingen 2012. <hi rend="italic">WebLicht: Web-Based Linguistic Chaining Tool</hi>. 
+                        <ref target="https://weblicht.sfs.uni-tuebingen.de/">https://weblicht.sfs.uni-tuebingen.de/</ref> [letzter Zugriff 1. Dezember 2016]
+                    </bibl>
+<bibl>
+<hi rend="bold">Zoran, Gabriel</hi> (1984): 
+                        „Towards a theory of space in narrative“, 
+                        in: 
+                        <hi rend="italic">Poetics Today</hi> 5: 309–335.
                     </bibl>
 </listBibl>
 </div>

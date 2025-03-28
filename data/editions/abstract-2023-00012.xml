@@ -1,46 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="BURGHARDT_Manuel_FakeNarratives___First_Forays_in_Understand" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="BALCK_Sandra_Digitale_Editionen_von_historischen_Reiseberich" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>FakeNarratives – First Forays in Understanding Narratives of Disinformation in Public and Alternative News Videos</title>
+                <title>Digitale Editionen von historischen Reiseberichten öffnen: Open Text und Open Data mit einheitlicher Textauszeichnung, semantischer Annotation und ontologiebasierter Datenmodellierung</title>
                 <author>
                     <persName>
-                        <surname>Tseng</surname>
-                        <forename>Chiao-I</forename>
+                        <surname>Balck</surname>
+                        <forename>Sandra</forename>
                     </persName>
-                    <affiliation>Universität Bremen</affiliation>
-                    <email>tseng@uni-bremen.de</email>
+                    <affiliation>IOS Regensburg, Deutschland</affiliation>
+                    <email>balck@ios-regensburg.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Liebl</surname>
-                        <forename>Bernhard</forename>
+                        <surname>Frank</surname>
+                        <forename>Ingo</forename>
                     </persName>
-                    <affiliation>Universität Leipzig</affiliation>
-                    <email>liebl@informatik.uni-leipzig.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Burghardt</surname>
-                        <forename>Manuel</forename>
-                    </persName>
-                    <affiliation>Universität Leipzig</affiliation>
-                    <email>burghardt@informatik.uni-leipzig.de</email>
-                    <idno type="ORCID">0000-0003-1354-9089</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Bateman</surname>
-                        <forename>John</forename>
-                    </persName>
-                    <affiliation>Universität Bremen</affiliation>
-                    <email>bateman@uni-bremen.de</email>
+                    <affiliation>IOS Regensburg, Deutschland</affiliation>
+                    <email>frank@ios-regensburg.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-12-14T11:35:00Z</date>
+                    <date>2022-07-15T10:28:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -83,20 +66,16 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag</term>
+                    <term>Posterpräsentation</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>video analytics</term>
-                    <term>narrative strategies</term>
-                    <term>disinformation</term>
+                    <term>Digitale Edition</term>
+                    <term>Historische Reiseberichte</term>
+                    <term>Ontologie</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Inhaltsanalyse</term>
-                    <term>Beziehungsanalyse</term>
+                    <term>Modellierung</term>
                     <term>Annotieren</term>
-                    <term>Visualisierung</term>
-                    <term>Multimodale Kommunikation</term>
-                    <term>Video</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -104,197 +83,191 @@
     <text>
         <body>
             <div type="div1" rend="DH-Heading1">
-                <head>Introduction: Narratives of Disinformation</head>
-                <p>Audiovisual media, such as film, TV, webseries, YouTube-videos and so on, have long become one, if not the, dominant cultural communication form of our times (Mirzoeff, 1999; Mitchell, 2001). Their role in shaping sociocultural configurations of all kinds appears incontestable. However, description and analysis of such media presents immense challenges which have so far resisted scalable solutions. Although it is becoming increasingly possible to conduct larger-scale stylistic and formal feature analysis (shot lengths, brightness, color profiles, dynamicity, etc.: cf., e.g., Heftberger, 2018), productive engagement with such media as powerful sociocultural artifacts demands in addition hermeneutic and functional interpretations as pursued in many branches of the humanities. Analyses of these kinds have not so far been possible within the digital humanities.</p>
-                <p>In an ongoing BMBF project on FakeNarratives<ref n="1" target="ftn1"/>, we combine expertise, experience and tools crucial for making general advances towards these goals, practically directed at a soundly delimited and, at the same time, socially significant class of audiovisual artifacts: TV news. We address the research hypothesis that news of this kind increasingly employs strategies of 
-                    <hi rend="italic">audiovisual narrative</hi> that may undercut, undermine or construct ideological positions and evaluations of news content 
-                    <hi rend="italic">independently</hi> of what may be simply stated, for example, in accompanying spoken text. The increasing sophistication and technical possibilities available to news channels makes it possible to draw on techniques for storytelling well established in film, but this can by no means always be guaranteed to work as intended. Indeed, filmic storytelling techniques may also serve to more effectively dis-inform.
+                <head>Einleitung</head>
+                <p>
+                    <hi style="font-size:11pt">Innerhalb der Literatur- und Kulturwissenschaften ist die historische Reiseforschung ein beliebtes Forschungsfeld, dennoch gibt es innerhalb der Digital Humanities wenige nennenswerte Fortschritte bei der Erschließung, Verarbeitung und Visualisierung von Reiseberichten. Konventionellen digitalen Editionen fehlt bisher die notwendige Ausdruckskraft und Flexibilität, um die diversen Anwendungsfälle und Forschungsfragen der historischen Reiseforschung zu erschließen. Anstatt einer starren Auszeichnung mit TEI zu folgen, müssen Informationen in digitalen Editionen erkannt, identifiziert, mit zusätzlichen Daten angereichert und Narrationen der Ereignisse explizit modelliert werden.</hi><ref n="1" target="ftn1"/>
+                    <hi style="font-size:11pt"> </hi>
                 </p>
-                <p>Although consideration of news reporting as narrative already has a considerably history and is nowadays hardly controversial (Sperry, 1981; Bell, 1999; Liebes, 1994; Langer, 1998; Hickethier, 2000; Dunn, 2005; Machill et al., 2006), methods for engaging specifically with their 
-                    <hi rend="italic">audiovisual</hi> non-verbal properties remain limited. Analyses addressing the audiovisual are overwhelmingly based on small datasets and, as is usual within the humanities, are performed interpretatively. Consequently, just how widespread ‘narrativization’ strategies are, and to what effect and aims they are being applied, urgently demands in depth and larger-scale research from within the digital humanities.
+                <p style="text-align: left;">Dieser Beitrag beschäftigt sich mit der Frage der Öffnung digitaler Reiseberichte für die wissenschaftliche Analyse und Visualisierung (von Zeit, Raum, Ereignissen u.a.) durch Textauszeichnung, semantische Annotation und ontologiebasierte Modellierung. Hierbei verfolgen wir einen disziplinübergreifenden, iterativen Ansatz, welcher sowohl geistes- als auch informationswissenschaftliche Perspektiven einbezieht.<ref n="2" target="ftn2"/> Erprobt wird dieser Ansatz an der digitalen Edition des Reiseberichts Franz Xaver Bronners (1758–1850), der 1810 als Professor für theoretische Physik von Aarau in der Schweiz an die russische Universität Kasan an der Wolga ging und 1817 in die Schweiz zurückkehrte. 
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Case study: Tagesschau vs. Bild TV</head>
-                <p>The current paper presents some early results of the FakeNarratives project illustrating how narrative audiovisual strategies might begin to be addressed at variable scales. Several distinct kinds of narrative strategies have been discussed in the journalism and newsreporting literature, but for the purposes of our first case study we focus on the production of ‘individual-centered narrative’ by means of editing devices such as showing layperson’s talk, individualized events and actions, close- ups of individual faces, and emotion shown either visually or exhibited in accompanying language. These features appear to be widely used across alternative and public news outlets (Vettehen et al., 2008). Our research hypothesis is that both kinds of news outlets use narrative strategies to some degree, but that there may still be significant differences in why and how often they are actually used. We consider it highly implausible that the use of narrative strategies can be reduced to any binary “good vs. bad” or “informing vs. dis-informing” characterisation and so more finely discriminating accounts are in any case necessary. The basic challenge we address here is then to set out how hypotheses concerning narrative construction may be made amenable to larger-scale data analysis. </p>
-                <p>Here we select some of the most commonly discussed narrative features in news that contribute to highlighting individual stories, a technique that can effectively increase the viewers' memories of news contents and their perception of news severity (Aust &amp; Zillmann, 1996; Zillmann &amp; Brosius, 2012)
-                    <hi rend="color(FF0000)" xml:space="preserve">. </hi>We examine whether and how these features are presented in both public and online alternative news channels. In particular, we consider how these features are employed to individualise, personalise or emotionalise people shown in news videos. In other words, we seek to operationalise just what constitutes the narrative strategy of 
-                    <hi rend="italic">individualisation</hi> so that we can explore how the strategy is used across our selected news channels.
+                <head>Problemstellung</head>
+                <p>
+                    <hi style="font-size:11pt">Datenmodellierung kann laut Flanders und Jannidis (vgl. 2015) in zwei Gruppen unterschieden werden: Curation-Driven und Research-Driven. Curation-driven beschreibt die Praktiken von Bibliotheken und Archiven, Objekte mit Hilfe von Standards einheitlich zu erfassen, um so die Auffindbarkeit und Transparenz zu gewährleisten. Die dafür notwendige Reduktion führt jedoch zu Ungenauigkeiten und Lücken im Datenmaterial. Research-Driven hingegen zielt auf die Beantwortung spezifischer Forschungsfragen ab und die Datenerfassung/Modellierung folgt einem konkreten Forschungsinteresse. Dabei werden nur selten Standards berücksichtigt. Dieser Gegensatz zwischen Forschungs- und Kuratierungspraxis erschwert die Kompatibilität und damit die Vergleichbarkeit der Daten. Um digitale Reiseberichte für wissenschaftliche Analysen verwertbar zu machen, müssen sie beiden Ansprüchen gerecht werden. </hi>
                 </p>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Data</head>
-                    <p>Our data include a preliminary selection of 166 news videos, 70 videos from Tagesschau, which we use as an example for more traditional, serious media, and 96 comparable videos from Bild TV, which we use as an example for a more recent, alternative news channel. These videos were all produced between 1 January 2022 and 15 March 2022. The length of entire news programs in both channels is around 15-25 minutes. For current purposes, we analyze the first news report of each news video, namely, the top news story of the entire program, which usually lasts from 3 to 5 minutes. The most reported top news themes from January to the middle of March in 2022 were Covid-19 and the outbreak of the Ukraine war.</p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Method</head>
-                    <p>For systematically analyzing the news videos, we employed the multimodal discourse approach of film cohesion (Tseng, 2013), which operates by picking out how the deployment of visual image, sound, verbal language, written language, camera movement, framing, color, and many more pattern together so as to introduce and coherently track people, places, objects and events within an unfolding event sequence. In other work, we have found that the cohesion structures resulting from such analyses appear to play significant roles for scaffolding an audience’s perception and understanding of narratives (cf., e.g., Tseng et al., 2021).</p>
-                    <p>Five distinct types of people commonly depicted in news reported were singled out for attention: (1) anchor persons, (2) reporters, (3) news commentators, (4) protagonists in the reported news events and (5) laypersons. The first three traditionally represent the authoritative voice in news and so we track and analyze whether these voices are personalized by including their own attitudes and emotions. The fourth type, protagonists, includes the main involved characters of news events, whereas the fifth type, laypersons, refers to people represented as generic exemplars effected by the news event.</p>
-<list type="ordered">
-                        <item>
-                            <hi rend="italic">Layperson in [talking head] mode</hi>: whether a news video employs layperson’s interviews.
-                        </item>
-                        <item>
-                            <hi rend="italic">Specific protagonist</hi>: whether a particular individual in the news report is cohesively identified as a specific protagonist.
-                        </item>
-                        <item>
-                            <hi rend="italic">Putin</hi>: whether the Russian president Putin is depicted as protagonist co-patterned with particular personalized quality and emotional features.
-                        </item>
-                        <item>
-                            <hi rend="italic">Close-up of laypersons and protagonists</hi>: whether laypersons or protagonists are additionally shown with close shots.
-                        </item>
-                        <item>
-                            <hi rend="italic">Self references of anchors, reporters or commentators</hi>: whether the ‘authoritative’ voices make recurring uses of self-references, such as the uses of “I”, “my”, “me” suggesting subjective opinions or personal attitudes of the journalists.
-                        </item>
-                    </list>
-                    <p>In addition to these five multimodal categories derived directly from the cohesive chains concerning individuals, we also analyze how these individuals are combined with the following four narratively relevant features: </p>
-<list type="ordered">
-                        <item>
-                            <hi rend="italic">Conflict or violent events</hi>: whether any conflict-related event is being mentioned, seen or written in news reports. 
-                        </item>
-                        <item>
-                            <hi rend="italic">Negative evaluation</hi>: whether particular, recurring quality features with negative evaluation can be found in news reports, for instance, the negative descriptions about the war or politicians. 
-                        </item>
-                        <item>
-                            <hi rend="italic">Emotions</hi>: whether there are multimodal realization of emotions, for instance, emotional terms mentioned in spoken or written texts and emotional reactions shown in visual images or sounds. 
-                        </item>
-                        <item>
-                            <hi rend="italic">Wallpapering</hi>: whether, in addition to the individuals and their evaluative features derived from the analysis of cohesive chains, background images that are not strictly related to the contents of the news report running in the foreground are shown.
-                        </item>
-                    </list>
-                    <p>The process of deriving the applicability of these categories for a video segment on the basis of the analysis of cohesive chains is depicted graphically in Figure 1.</p>
-                    <figure>
-                        <graphic n="1001" width="16.06876388888889cm" height="6.879166666666666cm" url="Pictures/9c2dc0ac732afa311f60b6c6cb069a32.png" rend="inline"/>
-                        <head>Illustrative example of cohesive chains (right) developed on the basis of the unfolding video segment (Bild TV news, 25.02.2022, left). The chains show how the identities and elements tracked may occur in any modality and that their combination provides direct support for the narratively relevant features being targeted.</head>
-                    </figure>
-                    <p>Initially, we coded and analyzed these nine categories in 166 video segments manually. Each segment was coded as ‘1’ when the category applies and ‘0’ when it does not apply. For simple coding of single news stories, the analyses could be entered into spreadsheets; for more complex coding, either of further narrative strategies or including more of the videos beyond the first news story, more structured annotations are essential, typically performed currently using tools such as ELAN (ELAN, 2021).</p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Results and discussion</head>
-                    <p>The occurrences of the nine categories in our two selected TV channels are displayed in Figure 2. This shows the complex similarities and differences of the two channels when employing the distinct fine-grained strategies contributing to individualization. From the differing distributions among the fine-grained strategies, it becomes clear that, although both channels might be said to be employing individualization as a technique for raising the interest-value of their reports, they do this in differing ways. For example, the occurrences of closeup faces and the talk of laypersons show no significant difference across the two channel (Fisher’s exact test, p=0.101 and p=0.324 respectively); thus both channels can be seen to use the individualizing feature of closeups and laypeople reports. However, the comparison also shows that Tagesschau uses significantly more 
-                        <hi rend="italic" xml:space="preserve">protagonists </hi>to report news events than does Bild TV (Fisher’s exact test, p=0.001). This means that Tagesschau actually individualizes news stories more than Bild TV does, but in a very specific way. Nevertheless, the result in the category of 
-                        <hi rend="italic" xml:space="preserve">Putin </hi>indicates that Bild TV does specifically individualize Putin significantly more than Tagesschau. Indeed, in our data, Bild TV largely labels the Ukraine war or the violent conflict as Putin’s war, while Tagesschau mostly refers the war to the ‘invasion of Russia’ or Russian soldiers. Figure 2 also shows that the categories of conflict events, emotional reaction, negative evaluation and wallpapering all pattern similarly with significantly more use in Bild TV than in Tagesschau. Moreover, the substantial use of self references of reporters in Bild TV indicates the common insertion of personalized attitudes and opinions into their news reports.
-                    </p>
-                    <p>In summary, Tagesschau minimizes Putin’s personification, negative evaluation, decorative editing and reporters’ self-references, presumably in order to balance its heavy use of protagonist- centered narrative model with objective representation and visualization, while the Bild TV news videos employ evaluative and decorative features to dramatize the news events.</p>
-                    <figure>
-                        <graphic n="1002" width="16.002cm" height="8.080375cm" url="Pictures/3674589c4e6fae1112c79aee4f69be96.png" rend="inline"/>
-                        <head>The percentage occurrences of the nine categories in Tagesschau and Bild TV and corresponding p-values indicating the significance of difference (Fisher’s exact test).</head>
-                    </figure>
-                    <p>Apart from the narrative strategy of 
-                        <hi rend="italic">individualisation</hi>, we are currently analysing and formalising other crucial news narrative strategies such as 
-                        <hi rend="italic">dramatisation</hi> and 
-                        <hi rend="italic" xml:space="preserve"> fragmentation</hi> (Bennett, 1988). Nevertheless, for enlarging the corpus of news videos and the scale of annotation categories, we require more effective annotation tools beyond the time-intensive manual annotation methods such as ELAN. In this pursuit, automatic annotation is one central goal of the FakeNarratives project.
-                    </p>
-                </div>
+                <p>
+                    <hi style="font-size:11pt">Im Bereich der digitalen Editionen haben sich die TEI-Guidelines zum De-facto-Standard entwickelt. “[TEI] is the most systematic effort so far to create standards for scholarly memory in an evolving digital culture.” (tei-c.org 2019) Die Guidelines beinhalten aktuell 585 Elemente und sind flexibel gestaltet, um für ein breites Spektrum von Forschungsfragen anwendbar zu sein. Ein Problem ist jedoch, dass dieselbe Information unterschiedlich kodiert und interpretiert werden kann (z. B. &lt;rs&gt;, &lt;persName&gt;) und der „Standard” damit nicht zwingend interoperabel ist (siehe Unsworth 2011; Burrows et al. 2021; Giovannetti und Tomasi 2022). Die TEI versucht die Brücke zwischen Standardisierung und Granularität zu schlagen, verliert damit aber ihre Eindeutigkeit (vgl. Kudella und Jefferies 2019). </hi>
+                </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>What’s ahead: Automatic annotation and exploratory visualization tool</head>
-                <p>The results of the previous section are encouraging concerning the use of more abstract audiovisual analyses as a means for revealing differences and similarities between audiovisual materials in ways that naturally relate to issues of narrativization. The characterizations of our selected news media clearly indicate where differences in broader strategies are occurring. It is also nevertheless clear that for more reliable and extensive results, expanding both the kinds of audiovisual materials analyses and the kinds of strategies at issue, it will be essential to move beyond time-intensive manual annotation. Augmenting this work further by the development and application of automatic and semi-automatic annotation is consequently a further central goal of the FakeNarratives project, for which we adopt a two-pronged approach combining foci on visualization and automated analysis. </p>
-                <p>We now combine a range of computational techniques for which there are already good solutions available, such as shot detection, face detection, etc., into a flexible tool named 
-                    <hi rend="italic">Zoetrope</hi>, supporting the progressive annotation of larger data sets by means of a more interactive interface (see Figure 3). 
-                    <hi rend="italic">Zoetrope</hi> enhances the existing landscape of tools for audiovisual annotation and analysis (for an overview see Pustu-Iren et al., 2020), as it is not only capable of visualizing automatic annotations, but also provides some basic functionalities for querying the video, for instance for specific key words or named entities. By these means, annotation becomes an activity that can leverage both automatic results of audiovisual processing and more abstract characterizations of data in terms such as cohesive structures as used above. 
+                <head>Textauszeichnung und Ontologie-Entwurfsmuster</head>
+                <p>
+                    <hi style="font-size:11pt">Einen Lösungsansatz für das Interoperabilitätsproblem auf Textseite bietet das DTA-Basisformat (Haaf et al. 2015), welches sich zum Ziel gesetzt hat: “[...] eine umfassende Textaufbereitung [zu] ermöglichen und dabei gleichzeitig Variationsspielräume bei der Annotation so ein[zu]schränken, dass die Kohärenz [...] untereinander gewährleistet wird.” (DTABf 2011-2020) Das DTABf richtet sich dabei nach den P5-Richtlinien der TEI. Um darüber hinaus auch spezifische Forschungsinteressen der historischen Reiseforschung zu adressieren, entwickeln wir auf Datenseite einen ontologiebasierten Textanreicherungs- und Bearbeitungsworkflow: Ontologie-Entwurfsmuster werden iterativ aufgebaut und für die Klassifizierung von Reise(teil)ereignissen (Abreise, Ankunft usw.) und Reisebeobachtungen (z. B. besuchte öffentliche Orte, Gewohnheiten von Personen) angewandt. </hi>
                 </p>
-                <p>The current 
-                    <hi rend="italic">Zoetrope 1.0</hi> prototype already allows researchers to search for keywords (
-                    <hi rend="italic">segment 1</hi>). Any keyword can be used as a query, which will then be searched in the spoken (Mozilla DeepSpeech<ref n="2" target="ftn2"/> with a German model by Agarwal and Zesch<ref n="3" target="ftn3"/>) and written (scene detection framework 
-                    <hi rend="italic">easyOCR</hi><ref n="4" target="ftn4"/>) language of the video. We also embed the query using word embeddings<ref n="5" target="ftn5"/> so that we can find words semantically related to the query as well. Via a slider, the similarity threshold can be set looser or more exact (=100%). The results of such a query are visualized in 
-                    <hi rend="italic">segment 2</hi>, which basically uses a timeline metaphor. Query results found in spoken language are rendered in green, results in written language are rendered in red. Note that for the query “Krieg” we also find semantically related concepts such as “Truppen”, “Invasion” or “Militär”, due to the semantic similarity threshold, which was set here rather low, at 50%. In segment 3, we see some exemplary automatically determined features, including face detection and audio analysis by means of a spectrogram. Finally, segment 4 shows an interactive video player, which can be navigated by means of the timeline or by clicking on specific results, such as a keyword or a face. Visible features, such as written keywords or faces, can also be rendered with their bounding box withing the video.
+                <p>
+                    <hi style="font-size:11pt">Während TEI für die Textauszeichnung verwendet wird, dient CRM zur Anreicherung des Textes mit explizitem Wissen, welches in einer Datenbank gespeichert wird. Wir modellieren mit den Ontologie-Entwurfsmustern nicht die Erzählung als solche</hi><ref n="3" target="ftn3"/>
+                    <hi style="font-size:11pt">, sondern den rekonstruierten und stellenweise interpretierten Reiseverlauf als Repräsentation der Realität. Aus narratologischer Sicht machen wir mit dem ereigniszentrierten Modellierungsansatz von CRM also nur die Fabula (chronologische Reihenfolge der Ereignisse) eines Reiseberichts explizit. Das Sujet (Erzählreihenfolge) kann allerdings bei Bedarf anhand der annotierten Textstellen abgefragt und rekonstruiert werden.</hi><ref n="4" target="ftn4"/>
                 </p>
-                <figure>
-                    <graphic n="1003" width="16.002cm" height="14.322777777777778cm" url="Pictures/5fdc08387904ece20cb2da9e4fdf2e07.png" rend="inline"/>
-                    <head>
-                        <hi rend="italic">Zoetrope 1.0</hi> prototype for visualizing and exploring news videos.
-                    </head>
-                </figure>
-                <p>The tools developed within the project will continue to pursue advanced visualization and more extensive automatic analysis. The latter goal is supported by our project partners in Hanover and their continuing development of the web-based audiovisual analytics platform TIBAVA (TIB AV- Analytics).</p>
+                <p>
+                    <hi style="font-size:11pt">Zur Erstellung des Annotationsschemas und der damit verbundenen Ontologie-Entwurfsmuster wenden wir die Frame-Semantik als theoretischen Rahmen an. Frames können als n-äre Relationen</hi><ref n="5" target="ftn5"/>
+                    <hi style="font-size:11pt" xml:space="preserve"> repräsentiert und daher zur Entwicklung von Ontologie-Entwurfsmustern für Reiseereignisse und -beobachtungen verwendet und darüber hinaus als "knowledge patterns" zur Validierung der Entwurfsmuster herangezogen werden (vgl. Presutti et al. 2012).</hi><ref n="6" target="ftn6"/>
+                    <hi style="font-size:11pt">Die Ontology Design Patterns dienen uns als „Schablonen” zum Anlegen an den Text – wobei deren Orientierung an den Frames sehr hilfreich ist – um Reisedaten, Beobachtungen und Tätigkeiten unterwegs und während Zwischenstopps zu erfassen. Im ständigen Austausch mit der Bearbeitung von Forschungsfragen am Text werden die Frames und Design Patterns laufend überprüft und angepasst. Diese Form der forschungsgeleiteten Standardisierung (mittels expliziter und einheitlicher Modellierung) macht digitale historische Reiseberichte interoperabel und öffnet sie damit für vergleichende Analysen. Die möglichen Ansätze zur Verknüpfung von TEI-kodiertem Text und RDF-Daten mittels semantischer Annotation evaluieren wir (vgl. Eide 2015 und Borriello et al. 2016) und stellen im Poster Lösungswege mit EARMARK (Barabucci et al. 2013) und NIF (Hellmann et al. 2013) vor.</hi>
+                </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Conclusions and Outlook </head>
-                <p>We have shown in this paper some of the benefits that may accrue when the analysis of audiovisual media can build on more abstract discourse patterns carried out at scale. We have argued that to take this further, however, a progressive increase in computational support is necessary. To this end, we have set out some first steps taken towards bridging some of the gaps between current technical feature processing possibilities and discourse-related characterizations of data. This is being enabled first and foremost by an interactive tool which already seamlessly incorporates a variety of state of the art processing techniques relevant for more abstract annotation practices. We believe such a tool will greatly speed up the manual annotation that our current corpus analysis relies on and will allow us to discover and annotate many more narrative strategies in the future. Once the tool is beyond its prototype stage, we also plan to release it for the DH community, which might use it to search other video material than news videos, for instance YouTube Let’s Play videos for game studies, or any movie or TV series for film studies scenarios. A live demo of the prototype will be included in the presentation at DHd 2023.</p>
+                <head>Verwandte Arbeiten und Schlussfolgerung</head>
+                <p>
+                    <hi style="font-size:11pt">Es gibt einige Beispiele wie das Hellespont-Projekt (Mambrini 2016) oder die Semantic Blumenbach-Edition (Wettlaufer 2015), die TEI-kodierten Text und CRM-modellierte Daten miteinander verknüpfen. Unser Ansatz geht jedoch über die bestehenden Projekte hinaus, da wir Ontologie-Entwurfsmuster für eine explizitere Datenmodellierung entwickeln und anwenden.</hi><ref n="7" target="ftn7"/>
+                    <hi style="font-size:11pt" xml:space="preserve"> Kurz gesagt, wir lösen die Interoperabilitäts- und Ausdrucksprobleme von TEI und CRM mit Hilfe von DTABf und Frame-basierten Ontologie-Entwurfsmustern, was wiederum die Kategorien von Reiseereignissen und Reisebeobachtungen in historischen Reiseberichten für die weitere Analyse und Visualisierung explizit macht.</hi>
+                </p>
             </div>
         </body>
         <back>
 <div type="notes">
 <note rend="footnote text" xml:id="ftn1" n="1">
-                         https://fakenarratives.github.io/index
+                        
+                            <hi style="font-size:10pt">  Bei der Erstellung der digitalen Edition folgen wir dem Historical Information Life Cycle (Meroño-Peñuela et al. 2014), wobei wir Ontologien nicht nur in der Anreicherungs-, Bearbeitungs- und Retrieval-Phase des Lebenszyklus, sondern auch in der Analyse- und Visualisierungsphase einsetzen.</hi>
+                        
                     </note>
 <note rend="footnote text" xml:id="ftn2" n="2">
-                         https://github.com/mozilla/DeepSpeech
+                        
+                            <hi style="font-size:10pt"> Unser Ontologie-Entwurfsansatz orientiert sich an der eXtreme Design-Vorgehensweise (Presutti et al. 2009), bei der sog. Competeny Questions aus anfänglichen User Stories abgeleitet werden, um die Anforderungen an die Datenmodellierung und das Information Retrieval zu definieren.</hi>
+                        
                     </note>
 <note rend="footnote text" xml:id="ftn3" n="3">
-                         https://github.com/AASHISHAG/deepspeech-german
+                        
+                            <hi style="font-size:10pt"> siehe hierzu den Modellierungsansatz von Bartalesi et al. 2017</hi>
+                        
                     </note>
 <note rend="footnote text" xml:id="ftn4" n="4">
-                         https://github.com/JaidedAI/EasyOCR
+                        
+                            <hi style="font-size:10pt"> Das kann interessant für Analyse und Visualisierung sein, weil, wie Maurer (2015, S. 391 f.) anmerkt, Reiseberichte von wissenschaftlichen Forschern oft einer thematischen Organisation folgen, um „Reiseergebnisse” zu präsentieren, anstatt einfach einer chronologischen Reihenfolge zu folgen.</hi>
+                        
                     </note>
 <note rend="footnote text" xml:id="ftn5" n="5">
-                         Using spaCy’s de_core_news_md model
+                        
+                            <hi style="font-size:10pt"> Annotationswerkzeuge wie brat (Stenetorp et al. 2012) oder INCEpTION (Klie et al. 2018) bieten Annotations- und Visualisierungskomponenten für n-äre Relationen (Frames oder Ereignisse inkl. der Rollen von Akteuren). </hi>
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn6" n="6">
+                        
+                            <hi style="font-size:10pt" xml:space="preserve"> Siehe dazu etwa das allgemeine Frame </hi>
+                            <hi rend="italic" style="font-size:10pt">Travel</hi>
+                            <hi style="font-size:10pt" xml:space="preserve"> mit Frame-spezifischen Eigenschaften zur Beschreibung von reisender Person, Reiseziel, Verkehrsmittel usw. in FrameNet: http://framenet.lexicalsemantics.org/frameIndex.xml?frame=Travel</hi>
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn7" n="7">
+                        
+                            <hi style="font-size:10pt"> Die Datenmodelle GeoJSON-T, Linked Places und Linked Traces (siehe Grossner et al. 2017) sind bereits gut etabliert, aber es handelt sich dabei nur um Formate für den Datenaustausch und kommen daher in unserem Projekt nicht für den Aufbau der Datenbank in Frage.</hi>
+                        
                     </note></div>
             <div type="bibliogr">
                 <listBibl>
-<head>Bibliographie</head>
+                    <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">Aust, Charles &amp; Dolf Zillmann.</hi> 1996. “Effects of Victim Exemplification in Television News on Viewer Perception of Social Issues”. Journal of Mass Media and Communication Quarterly 4(73), 787-803.
+                        <hi rend="bold" style="font-size:11pt" xml:space="preserve">Barabucci, Gioele, Angelo Di Iorio, Silvio Peroni, Francesco Poggi, and Fabio Vitali. </hi>
+                        <hi style="font-size:11pt" xml:space="preserve">2013. “Annotations with Earmark in Practice: A Fairy Tale.” In </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of the 1st International Workshop on Collaborative Annotations in Shared Environment: Metadata, Vocabularies and Techniques in the Digital Humanities</hi>
+                        <hi style="font-size:11pt">. DH-Case ’13. Association for Computing Machinery, 10.1145/2517978.2517990</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="bold" xml:space="preserve">Benett, Lance W. </hi>1988. 
-                        <hi rend="bold">“</hi>News: The Politics of Illusions”. New York: Longman.
+                        <hi rend="bold" style="font-size:11pt" xml:space="preserve">Bartalesi, Valentina, Carlo Meghini, and Daniele Metilli. </hi>
+                        <hi style="font-size:11pt" xml:space="preserve">2017. “A Conceptualisation of Narratives and Its Expression in the Crm.” In </hi>
+                        <hi rend="italic" style="font-size:11pt">International Journal of Metadata, Semantics and Ontologies</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 12 (1): 35–46.</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Bell, Allan.</hi> 1999. “News stories as narratives.” In A. Jaworski and N. Coupland (Eds.), 
-                        <hi rend="italic">The Discourse Reader</hi>, Chapter 13, 236–251. London: Routledge. 
+                        <hi rend="bold" style="font-size:11pt">Burrows, Toby, Matthew Holford, David Lewis, Andrew Morrison, Kevin Page, and Athanasios Velios.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 2021. “Transforming Tei Manuscript Descriptions into Rdf Graphs.” In </hi>
+                        <hi rend="italic" style="font-size:11pt">Graph Data-Models and Semantic Web Technologies in Scholarly Digital Editing</hi>
+                        <hi style="font-size:11pt">, 143–54. Norderstedt: BoD, http://www.digitalhumanities.org/dhq/vol/16/2/000605/000605.html</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="bold" xml:space="preserve">Dunn, Anne. </hi>2005. “Television news as narrative.” In H. Fulton, R. Huisman, J. Murphet, and A. Dunn (Eds.), 
-                        <hi rend="italic">Narrative and Media</hi>, 140–152. Cambridge, UK: Cambridge University Press.
+                        <hi rend="bold" style="font-size:11pt">Eide, Øyvind.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve">2015. “Ontologies, Data Modeling, and TEI.” In </hi>
+                        <hi rend="italic" style="font-size:11pt">Journal of the Text Encoding Initiative</hi>
+                        <hi style="font-size:11pt">, no. 8 (December), https://doi.org/10.4000/jtei.1191</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="bold">ELAN.</hi> 2021. “ELAN – Linguistic Annotator (Version 6.2).” computer software. Nijmegen: Max Planck Institute for Psycholinguistics. The Language Archive.
+                        <hi rend="bold">Füssel, Marian, Tim Neu.</hi> 2021. “Akteur-Netzwerk-Theorie und Geschichtswissenschaft”. Paderborn: Brill; Ferdinand Schöningh.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Heftberger, Adelheit.</hi> 2018. “Digital Humanities and Film Studies: Visualising Dziga Vertov’s Work.” Switzerland: Springer Nature.
+                        <hi rend="bold" style="font-size:11pt">Giovannetti, Francesca; Tomasi, Francesca.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 2022. “Linked data from TEI (LIFT): A Teaching Tool for TEI to Linked Data Transformation” In </hi>
+                        <hi rend="italic" style="font-size:11pt">Digital Humanities Quarterly</hi>
+                        <hi style="font-size:11pt">16 (2). http://www.digitalhumanities.org/dhq/vol/16/2/000605/000605.html.</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Hickethier, Knut.</hi> 2000. “Fernsehnachrichten. Geschichten aus 1001 Nachricht.” Message 2(2), 70–74.
+                        <hi rend="bold" style="font-size:11pt">Grossner, Karl, Merrick Lex Berman, and Rainer Simon.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 2017. “Linked Places: A Modeling Pattern and Software for Representing Historical Movement.” In </hi>
+                        <hi rend="italic" style="font-size:11pt">Digital Humanities 2017: Conference Abstracts</hi>
+                        <hi style="font-size:11pt">, 463–65, https://dh2017.adho.org/abstracts/204/204.pdf</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Langer, John.</hi> 1998. “Tabloid Television: Popular Journalism and the ‘Other News’.” London and New York: Routledge.
+                        <hi rend="bold" style="font-size:11pt">Haaf, Susanne, Alexander Geyken, and Frank Wiegand.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 2015. “The Dta ‘Base Format’: A Tei Subset for the Compilation of a Large Reference Corpus of Printed Text from Multiple Sources.” In </hi>
+                        <hi rend="italic" style="font-size:11pt">Journal of the Text Encoding Initiative</hi>
+                        <hi style="font-size:11pt">, no. 8, doi:10.4000/jtei.1114</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Liebes, Tamar</hi>. 1994. “Narrativization of the News: An Introduction.” 
-                        <hi rend="italic">Journal of Narrative and Life History</hi> 4(1– 2), 1–8.
+                        <hi rend="bold">Hellmann, Sebastian, Jens Lehmann, Sören Auer, and Martin Brümmer</hi>. 2013. “Integrating NLP using Linked Data”. In: 12th International Semantic Web Conference, 21–25 October 2013, Sydney, Australia.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Machill, Marcel, Sebastian Köhler, &amp; Markus Waldhauser.</hi> 2006. “Narrative Fernsehnachrichten: Ein Experiment zur Innovation journalistischer Darstellungsformen.” 
-                        <hi rend="italic">Publizistik</hi> 51(4), 479–497.
+                        <hi rend="bold">Klie, Jan-Christoph, Michael Bugert, Beto Boullosa, Richard Eckart de Castilho, and Iryna Gurevych.</hi> 2018. “The INCEpTION Platform: Machine-Assisted and Knowledge-Oriented Interactive Annotation”. In 
+                        <hi rend="italic">Proceedings of System Demonstrations of the 27th International Conference on Computational Linguistics (COLING 2018),</hi> Santa Fe, New Mexico, USA. https://aclanthology.org/C18-2002
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Mirzoeff, Nicholas.</hi> 1999. “An introduction to visual culture.” London &amp; New York: Routledge.
+                        <hi rend="bold" style="font-size:11pt">Kudella, Christoph, and Neil Jefferies.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 2019. “How Do We Model the Republic of Letters?” In </hi>
+                        <hi rend="italic" style="font-size:11pt">Reassembling the Republic of Letters in the Digital Age</hi>
+                        <hi style="font-size:11pt">, edited by Howard Hotson and Thomas Wallnig, 41–53. Göttingen: Göttingen University Press, 10.17875/gup2019-1146</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Mitchell, William.</hi> 2001. “What is visual culture?” In 
-                        <hi rend="italic">Meaning in the visual arts: views from the outside,</hi> 202–217. Princeton: Institute for Advanced Study.
+                        <hi rend="bold" style="font-size:11pt">Mambrini, Francesco.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 2016. “Treebanking in the World of Thucydides. Linguistic Annotation for the Hellespont Project.” In </hi>
+                        <hi rend="italic" style="font-size:11pt">Digital Humanities Quarterly</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 10 (2), http://www.digitalhumanities.org/dhq/vol/10/2/000251/000251.html</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Pustu-Iren, Kader, Julian Sittel, Roman Mauer, Oksana Bulgakowa &amp; Ralph Ewerth.</hi> 2020. "Automated Visual Content Analysis for Film Studies: Current Status and Challenges". Digital Humanities Quarterly, 14(4).
+                        <hi rend="bold" style="font-size:11pt">Maurer, Michael.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 2015. “Reiseberichte als Wissensspeicher.” In </hi>
+                        <hi rend="italic" style="font-size:11pt">Wissensspeicher Der Frühen Neuzeit: Formen und Funktionen</hi>
+                        <hi style="font-size:11pt">, edited by Frank Grunert and Anette Syndikus, 391–412. Berlin, Boston: De Gruyter, 10.1515/9783050086637-015</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Sperry, Sharon L.</hi> 1981. “Television News as Narrative.” In R. P. Adler (Ed.), 
-                        <hi rend="italic">Understanding Television: Essays on Television as a Social and Cultural Force</hi>, 295–312. New York: Praeger.
+                        <hi rend="bold" style="font-size:11pt">Meroño-Peñuela, Albert, Ashkan Ashkpour, Marieke van Erp, Kees Mandemakers, Leene Breure, Andrea Scharnhorst, Stefan Schlobach, and Frank van Harmelen.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve">2015. “Semantic Technologies for Historical Research: A Survey.” </hi>
+                        <hi rend="italic" style="font-size:11pt">Semantic Web</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 6 (6). IOS Press: 539–64, 10.3233/SW-140158</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Tseng, Chiao-l.</hi> 2013. “Cohesion in Film: Tracking Film Elements.” Basingstoke: Palgrave Macmillan.
+                        <hi rend="bold">Presutti, Valentina, Enrico Daga, Aldo Gangemi, and Eva Blomqvist.</hi> 2009. “eXtreme Design with Content Ontology Design Patterns.” WOP.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Tseng, Chiao-I., Jochen Laubrock, &amp; John A. Bateman.</hi> 2021. “The impact of multimodal cohesion on attention and interpretation in film.” 
-                        <hi rend="italic">Discourse, Context &amp; Media</hi> 44, aop.
+                        <hi rend="bold" style="font-size:11pt">Presutti, Valentina, Eva Blomqvist, Enrico Daga, and Aldo Gangemi.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 2012. “Pattern-Based Ontology Design.” In </hi>
+                        <hi rend="italic" style="font-size:11pt">Ontology Engineering in a Networked World</hi>
+                        <hi style="font-size:11pt">, edited by Mari Carmen Suárez-Figueroa, Asunción Gómez-Pérez, Enrico Motta, and Aldo Gangemi, 35–64. Berlin: Springer.</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Vettehen, Paul, Koos Nuijten, &amp; Allerd Peeters.</hi> 2008. “Explaining effects of 
-                        <hi rend="italic">sensationalism</hi> on liking of television news stories: The role of emotional arousal.” 
-                        <hi rend="italic">Communication Research</hi> 35, 319–338.
+                        <hi rend="bold">Stenetorp, Pontus, Sampo Pyysalo, Goran Topić, Tomoko Ohta, Sophia Ananiadou, and Jun’ichi Tsujii.</hi> 2012. “Brat: a Web-based Tool for NLP-Assisted Text Annotation”. In 
+                        <hi rend="italic">Proceedings of the Demonstrations at the 13th Conference of the European Chapter of the Association for Computational Linguistics</hi>, 102–107.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Zillmann, Dolf &amp; Hans-Bernd Brosius.</hi> 2012. "Exemplification in Communication the influence of Case Reports on the Perception of Issues". Routledge.
+                        <hi rend="bold">tei-c.org.</hi> 2019. “A very gentle introduction to the TEI markup language.” https://tei-c.org/Vault/Tutorials/mueller-index.htm.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Unsworth, John.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 2011. “Computational Work with Very Large Text Collections. Interoperability, Sustainability, and the Tei.” In </hi>
+                        <hi rend="italic" style="font-size:11pt">Journal of the Text Encoding Initiative</hi>
+                        <hi style="font-size:11pt">, no. 1 (June), 10.4000/jtei.215</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt" xml:space="preserve">Wettlaufer, Jörg, Christopher Johnson, Martin Scholz, Mark Fichtner, and Sree Ganesh Thotempudi. </hi>
+                        <hi style="font-size:11pt" xml:space="preserve">2015. “Semantic Blumenbach: Exploration of Text–Object Relationships with Semantic Web Technology in the History of Science.” In </hi>
+                        <hi rend="italic" style="font-size:11pt">Digital Scholarship in the Humanities</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 30 (suppl_1): i187–i198, 10.1093/llc/fqv047</hi>
                     </bibl>
                 </listBibl>
             </div>

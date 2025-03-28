@@ -1,70 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="HINZMANN_Maria_SPARQL_für__digitale__Geisteswissenschaftler_" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="PITTROFF_Sarah_Bilder_im_Kontext__Die_Entwicklung_des_Corpus" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title type="full">
-                    <title type="main">SPARQL für (digitale) Geisteswissen-schaftler:innen – Querying Wikidata und die MiMoTextBase</title>
+                    <title type="main">Bilder im Kontext: Die Entwicklung des Corpus Vitrearum vom Bildarchiv zu Born-Digitals</title>
                     <title type="sub"/>
                 </title>
                 <author>
                     <persName>
-                        <surname>Hinzmann</surname>
-                        <forename>Maria</forename>
+                        <surname>Pittroff</surname>
+                        <forename>Sarah</forename>
                     </persName>
-                    <affiliation>Trier Center for Digital Humanities, Universität Trier, Deutschland</affiliation>
-                    <email>hinzmannm@uni-trier.de</email>
-                    <idno type="ORCID">0000-0001-7199-1436</idno>
+                    <affiliation>Akademie der Wissenschaften und der Literatur | Mainz, Deutschland</affiliation>
+                    <email>sarah.pittroff@adwmainz.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Klee</surname>
-                        <forename>Anne</forename>
+                        <surname>Gerber</surname>
+                        <forename>Anja</forename>
                     </persName>
-                    <affiliation>Trier Center for Digital Humanities, Universität Trier, Deutschland</affiliation>
-                    <email>klee@uni-trier.de</email>
-                    <idno type="ORCID">0000-0002-1532-2649</idno>
+                    <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland</affiliation>
+                    <email>anja.gerber@bbaw.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Konstanciak</surname>
-                        <forename>Johanna</forename>
+                        <surname>Steller</surname>
+                        <forename>Jonatan</forename>
                     </persName>
-                    <affiliation>Trier Center for Digital Humanities, Universität Trier, Deutschland</affiliation>
-                    <email>konstanciak@uni-trier.de</email>
-                    <idno type="ORCID">0000-0003-0159-6144</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Röttgermann</surname>
-                        <forename>Julia</forename>
-                    </persName>
-                    <affiliation>Trier Center for Digital Humanities, Universität Trier, Deutschland</affiliation>
-                    <email>roettger@uni-trier.de</email>
-                    <idno type="ORCID">0000-0002-1918-8117</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Schöch</surname>
-                        <forename>Christof</forename>
-                    </persName>
-                    <affiliation>Trier Center for Digital Humanities, Universität Trier, Deutschland</affiliation>
-                    <email>schoech@uni-trier.de</email>
-                    <idno type="ORCID">0000-0002-4557-2753</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Steffes</surname>
-                        <forename>Moritz</forename>
-                    </persName>
-                    <affiliation>Trier Center for Digital Humanities, Universität Trier, Deutschland</affiliation>
-                    <email>steffesm@uni-trier.de</email>
-                    <idno type="ORCID">0000-0002-4355-3209</idno>
+                    <affiliation>Akademie der Wissenschaften und der Literatur | Mainz, Deutschland</affiliation>
+                    <email>jonatan.steller@adwmainz.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-07-15T12:29:02.850000000</date>
+                    <date>2022-08-03T21:52:08.225598167</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -107,294 +77,124 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Workshop</term>
+                    <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Linked Open Data</term>
-                    <term>SPARQL</term>
-                    <term>Literaturgeschichte</term>
-                    <term>Wikidata</term>
+                    <term>Corpusfotografie</term>
+                    <term>Kontextualisierung</term>
+                    <term>Datenmodellierung</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Modellierung</term>
-                    <term>Visualisierung</term>
-                    <term>Literatur</term>
-                    <term>Metadaten</term>
-                    <term>benannte Entitäten (named entities)</term>
-                    <term>Software</term>
+                    <term>Bilderfassung</term>
+                    <term>Programmierung</term>
+                    <term>Kontextsetzung</term>
+                    <term>Veröffentlichung</term>
+                    <term>Lehre</term>
+                    <term>Artefakte</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
+            <p>Die großen geisteswissenschaftlichen Langzeitvorhaben im deutschen Akademienprogramm umfassen auf Jahrzehnte angelegte Forschungsprojekte, die in der Vergangenheit analog konzipiert wurden und in der Gegenwart vor der Herausforderung stehen, nicht nur ihre Methoden sondern auch ihre Forschungsergebnisse und Publikationsformen einer digitalen Transformation zu unterziehen. Als ursprünglich analoges Langzeitvorhaben, mit nachträglich ergänzter digitaler Komponente, ist das Corpus Vitrearum Medii Aevi (CVMA) Deutschland ein Paradebeispiel für die kontinuierliche Entwicklung von der Buchreihe über das ergänzende digitale Bildarchiv bis hin zum Aufbau von 
+                <hi rend="italic">born-digital</hi> Publikationen. Unter dem Namen ‘Glasmalereien im Kontext’ verlinken Mitarbeitende des Forschungsvorhabens entkontextualisierte Einzelfotografien von Kirchenfenstern, machen die Fenster in ihrem räumlichen Kontext digital erfahrbar und reichern sie mit Linked Open Data an. Der vorliegende Beitrag soll das Vorgehen bei der Entwicklung des Formats aufzeigen und argumentiert darüber hinaus, dass solche offenen digitalen Publikationsformen ein zentraler Beitrag der Digital Humanities zur Weiterentwicklung traditioneller Vorhaben und zukunftsgerichtete Anbindung ihrer Forschungsergebnisse sein können.
+            </p>
             <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p>Nicht nur in Kultur- und Gedächtnisinstitutionen, auch in DH-Projekten ist derzeit eine Zunahme des Linked Open Data-Paradigmas sichtbar. Wie können Daten im Sinne von „Open Data, Open Cultures“ offen, gut zugänglich, interoperabel vernetzt, maschinenlesbar und langfristig verfügbar dargeboten werden? Im Projekt „
-                    <ref target="http://www.mimotext.uni-trier.de/">Mining and Modeling Text</ref>“ haben wir uns für die offene und kostenlose Software Wikibase entschieden, die einen eigenen 
-                    <ref target="https://query.mimotext.uni-trier.de/">SPARQL-Endpoint</ref> beinhaltet und neben Wikidata von einer wachsenden Anzahl an Forschungsprojekten verwendet wird.<ref n="1" target="ftn1"/>
-                </p>
-                <p>Der Workshop setzt es sich zum Ziel, theoretisches und praktisches Wissen zur Modellierung geisteswissenschaftlichen und speziell literaturgeschichtlichen Wissens in Form von Linked Open Data (LOD) zu vermitteln, Einblick in die Syntax der Abfragesprache SPARQL zu geben und den Mehrwert der Aufbereitung von Daten als Wissensgraphen in Anwendungsszenarien aufzuzeigen. Dabei liegt der Schwerpunkt auf der Vermittlung von SPARQL in theoretischen und praktischen Sessions. Teilnehmende sollen die Kompetenz erlangen, die Struktur von SPARQL zu verstehen und eigenständig Queries zu schreiben.</p>
-                
-                    <figure>
-                        <graphic url="Pictures/557b4cd8e508dfd84c23a1e0961634f1.png"/>
-                    <head>Abb. 1: Query und Ergebnisvisualisierung: Welche thematischen Konzepte sind im französischen Roman 1751-1800 vertreten? Beispiel: 
-                    <ptr target="https://tinyurl.com/2m8l3u99"/>.</head>
-                </figure>
-                
+                <head>
+                    <anchor xml:id="id__r7c4kqjpjqug"/>Ausgangslage: Das entkontextualisierte Bildarchiv
+                </head>
+                <p>Das CVMA Deutschland ist ein interakademisches Forschungsvorhaben mit Arbeitsstellen in Freiburg (Akademie der Wissenschaften und Literatur Mainz) sowie Potsdam (Berlin-Brandenburgische Akademie der Wissenschaften). Die Aufgabe des Corpus ist die Erfassung, Dokumentation und Katalogisierung von Glasmalereien des Mittelalters und der Frühen Neuzeit (bis etwa 1550) in Deutschland. Das CVMA Deutschland ist Mitglied des 1952 gegründeten Internationalen Corpus Vitrearum, welches sich aufgrund der erheblichen Verluste durch die beiden Weltkriege zum Ziel gesetzt hat, die Glasmalereien des Mittelalters vollständig fotografisch zu erfassen und nach festen Richtlinien zu dokumentieren. Die Forschungsergebnisse werden auf Grundlage der auf internationaler Ebene vereinbarten Richtlinien (Comité international d’histoire de l’art und Union académique internationale 2016) als Katalogtexte in den Corpusbänden publiziert. Dabei entsteht neben einem umfassenden schriftlichen Werk ein umfangreiches kuratiertes Bildarchiv, welches in Deutschland seit 2015 über eine gemeinsame Plattform strukturiert online verfügbar gemacht wird (CVMA Deutschland o. J. a). Mit Metadaten angereicherte Bilddaten dienen als nachnutzbares digitales Instrument für die wissenschaftliche Arbeit.</p>
+                <p>Die Rolle des Bildes als Repräsentation des Kunstwerkes ist je nach Publikationsform unterschiedlich. Im gedruckten Corpusband präsentiert sich die Abbildung als visuelle Argumentation mittels Gegenüberstellungen und vergleichenden Anbringungen inhaltlich gleichberechtigt zum Text. Beide Kommunikationsformen ergänzen sich zu einer umfassenden Darlegung der wissenschaftlichen Erkenntnisse. Digitale Bildarchive stehen im Vergleich zu klassischen Bucheditionen vor Herausforderungen auf zwei Ebenen: der des potentiellen Nutzer:innenkreises eines über das Internet frei zugänglichen und vernetzten Bildarchivs, der im Gegensatz zu dem oft engen und bildungsbürgerlichen Nutzer:innenkreis der gedruckten Corpusbände steht, wo traditionell Kontextwissen durch die Gesamtschau innerhalb eines Bandes abgedeckt wird. Online-Bildarchive sprechen in der Regel breitere Zielgruppen an, Webseiten bedienen veränderte Lese- und Betrachtungsmethoden (cf. Hyman, Moser und Segala 2014, 37). Herausforderungen stellen sich genauso auf der Ebene der nun vom Werk- als auch vom Textkontext entfremdeten Abbildung, die ihre ästhetische wie wissenschaftliche Bedeutung im Online-Bildarchiv neu manifestieren muss.</p>
+                <p>Das Online-Bildarchiv des CVMA Deutschland (CVMA Deutschland o. J. a) versammelt bereits mehr als 7.000 Abbildungen aus der Buchreihe sowie zusätzliches, bisher unveröffentlichtes Material und wird von den beiden Arbeitsstellen konstant um weitere Bestände erweitert. Dabei stehen Detailaufnahmen einzelner Scheiben, zugehörige Fensterdarstellungen oder Montagen komplexer Bilderzählungen nicht zwangsläufig nebeneinander. Die Sortierung der Galerieansicht orientiert sich zunächst an einer Datenlogik, nicht an ihrem Inhalt. Über diesen Zugang fehlen übergreifende Informationen zum Nachvollziehen der Zusammenhänge zwischen Einzelbildern und ihrer wissenschaftlichen Einordnung. Der Workflow einer Veröffentlichung über das Online-Bildarchiv lässt die Möglichkeit, Abbildungen semantisch zu Objekten zu gruppieren und sie innerhalb der Architektur bzw. der Räume zu verorten, in denen sie sich befinden, als Desiderat zurück. </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Linked Open Data für die Geisteswissenschaften</head>
-                <p>Es ist zu beobachten, dass es ein zunehmendes Interesse in der DH-Community gibt, die eigenen Daten in Form von LOD zu veröffentlichen und mit dem Semantic Web zu vernetzen oder die aktuellen Entwicklungen zu reflektieren (Hogan et al. 2021; Ikonić Nešić et al. 2021; Thornton et al. 2021; Alves 2022; Dörpinghaus 2022; Ohmukai / Yamada 2022; Zhao 2022). Auch das Projekt „
-                    <ref target="http://www.mimotext.uni-trier.de/">Mining and Modeling Text</ref>“ hat es sich zum Ziel gesetzt, Daten aus unterschiedlichen Informationsquellen zu aggregieren und im Sinne des LOD-Paradigmas mit weiteren Ressourcen zu verknüpfen (Schöch et al. 2022). Der Mehrwert der aufwändigen Erschließung und Modellierung der Daten wird erst in den vielfältigen und flexiblen Abfragemöglichkeiten deutlich und ist demnach nicht loszulösen von SPARQL.
+                <head>
+                    <anchor xml:id="id__u8ps9rxljcvs"/>Grundlage: Nachhaltiges und interoperables Metadatenmanagement
+                </head>
+                <p>Grundlage für die Erweiterung und Weiterentwicklung des Online-Bildarchivs auf ein 
+                    <hi rend="italic">born-digital</hi> Publikationsformat ist die einheitliche Anlage von Metadaten entlang internationaler Standards. Die Grundsätze des nachhaltigen und interoperablen Metadatenmanagements müssen nach der Langzeitverfügbarkeit der Daten und damit auch nach der sie zugänglich machenden Soft- und Hardware fragen. Die Antwort zielt dabei auf Standards, die von vielen geteilt, verstanden und weiterentwickelt werden. Auch eine interoperable und nachhaltige Datenmodellierung, die unabhängig von ausführenden und alternden Softwarelösungen lesbar bleiben möchte, basiert auf standardisierten Ausdrücken und generischen Ansätzen der Formulierung von Beziehungen.
                 </p>
-                <p>SPARQL (SPARQL Protocol and RDF Query Language) ist eine 2008 vom W3C veröffentlichte, graphenbasierte Abfragesprache für RDF (Resource Description Framework). RDF ist ein Datenmodell, mit dem sich Ressourcen im World Wide Web darstellen lassen. Es ist der zentrale Standard des W3C, der semantische Daten in der charakteristischen Tripel-Struktur bestehend aus ‚Subjekt – Prädikat – Objekt‘ repräsentiert. Ausgehend von einem einzelnen solchen Tripel wird die Struktur eines Knowledge Graphen im Workshop entfaltet und die „Übersetzung“ von Forschungsfragen in natürlicher Sprache in die SPARQL-Syntax erläutert. </p>
-                
-                    <figure>
-                        <graphic url="Pictures/184989ed4b0981abe0a9bb62bba2e7d4.png"/>
-                    <head>Abb. 2: Tripel-Struktur bestehend aus ‚Subjekt – Prädikat – Objekt‘, hier ein Beispiel zu einem literarischen Werk (Candide) aus der MiMoTextBase: 
-                    <ptr target="http://data.mimotext.uni-trier.de/wiki/Item:Q1022"/>.</head></figure>
-                
-                <p>Die Abfragesprache SPARQL setzt sich aus mehreren Bausteinen zusammen: 
-                    <hi rend="italic">pattern matching</hi> (Filtern des Datenbestands), 
-                    <hi rend="italic">solution modifier</hi> (Bearbeitung der Zwischenergebnisse) &amp; 
-                    <hi rend="italic">output</hi> (Ausgabe als Tabelle oder Graph; Arenas et al. 2010). SPARQL ermöglicht es User:innen, durch Rekombination von Datensätzen neue Muster in den Daten zu erkennen und hypothesengeleitete Abfragen zu formulieren. Die Stärken dieser Abfragesprache und der Strukturierung von Wissen als RDF Triplestore sollen im Workshop in Anwendungsbeispielen gezeigt werden.
+                <p>Die Integration von Metadaten in die Bilddateien ist ein maßgeblicher Bestandteil der Strategie ihrer Langzeitarchivierung und Auffindbarkeit. Das CVMA orientiert sich dabei am Standard für PDF-Dokumente, der 
+                    <hi rend="italic">Extensible Metadata Platform</hi> (XMP), seit 2012 ISO Standard ISO 16684-1 (ISO 2019). Die Metadaten werden hierbei in den Header der Bilddateien geschrieben, so dass die digitale Ressource und ihre Metadaten eine Einheit bilden. Die CVMA-XMP-Metadatenspezifikation (CVMA Deutschland 2016)vereint administrative, beschreibende und technische Metadaten. Sie nutzt weit verbreitete Standards nach, z. B. Dublin Core, IPTC und wurde um einen CVMA-spezifischen 
+                    <hi rend="italic">namespace </hi>erweitert, mit dem die genuin glasmalereispezifischen Informationen erfasst werden. Die Bilddateien enthalten auf diese Weise ihre relevante Metadaten und können durch Dritte heruntergeladen werden, wobei die Einheit der digitalen Fotografie und ihrer Metadaten eine umfassende Nachnutzbarkeit über die visuelle Information hinaus gewährleistet. 
                 </p>
-                <p>SPARQL-Abfragen werden häufig innerhalb eines einzelnen Knowledge Graphen gestellt. Es besteht jedoch auch die Möglichkeit, über mehrere Knowledge Graphen hinweg Abfragen zu stellen, sogenannte 
-                    <hi rend="italic">federated queries </hi>(Prud’hommeaux / Buil-Aranda 2013). Hier kommt das volle Potential von LOD zum Vorschein, denn so lässt sich Erkenntnisgewinn aus der Kombination mehrerer Graphen ziehen, ohne durch Replikationen von Datensätzen unnötige Redundanzen zu erzeugen. Im Workshop werden 
-                    <hi rend="italic">federated queries </hi>mit Wikidata erlernt und es wird gezeigt, inwieweit Nutzen aus diesen gezogen werden kann.
-                </p>
-                <p>
-                    <figure>
-                        <graphic url="Pictures/0a21bf32fcbf6e7ac34d3d94e1653753.png"/>
-                    <head>Abb. 3: 
-                    <hi rend="italic">Federated queries</hi> in SPARQL erlauben es, eigene Daten und externe Datenbestände (z. B. Wikidata) gleichzeitig abzufragen. Beispiel: 
-                    <ptr target="https://tinyurl.com/2ke42c3f"/>.</head></figure>
-                </p>
+                <p>Die Auszeichnung der Abbildungen mit Normdaten nutzt nicht nur der Verlinkung von Informationen mit außenstehenden Repositorien, sondern dient auch der internen Strukturierung des Bildarchivs. So werden prospektiv alle Normdateneinträge, zur Zeit zumindest die IconClass Notationen sowie die Personendaten, neben den eigentlichen Bilddateien als Ressourcen des Archivs betrachtet und prozessiert. Jede Ressource erhält durch die automatisierte Vergabe von Uniform Ressource Identifiern (URI) eine CVMA-interne ID. Diese erlaubt eine eindeutige Referenzierung innerhalb des Bildarchivs und auch nach außen. Über unterschiedliche Serialisierungen können diese Ressourcen für verschiedene Bedarfe ausgegeben werden. JSON-, RDF- und TTL-Formate erlauben eine Einbindung der Ressourcen in weitere Datenkontexte, die HTML-Serialisierung dient in erster Linie einer visuellen Erfassung der Ressourcen über den Browser. Für die Bilddaten ist dies die Einzelansicht der Abbildung im Online-Bildarchiv mit einer Auswahl an relevanten Metadaten, die über Kartenansicht und begleitender Textanzeige ein grundlegendes Informationsset zum dargestellten Werk bietet. Für Iconclass-Notationen umfasst dies die Darstellung aller Bildressourcen aus dem Online-Bildarchiv, die mit jener spezifischen Notation ausgezeichnet sind.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Workshop-Konzept</head>
-                <p>Der Workshop vermittelt Grundlagenwissen und Möglichkeiten, die das LOD-Paradigma bietet. Der im Projekt erstellte multilinguale Wissensgraph MiMoTextBase zur Domäne der französischen Literatur des 18. Jahrhunderts soll dabei als Anschauungsbeispiel dienen.</p>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Lernziele</head>
-                    <p>Der Workshop möchte praktisches Wissen vermitteln: Wie schreibt man SPARQL-Queries? Welchen Mehrwert kann ein Knowledge Graph für literaturgeschichtliche Fragen im Besonderen und die Geisteswissenschaften im Allgemeinen bieten?</p>
-                    <p>In dem halbtägigen Workshop wird der Wissensgraph 
-                        <ref target="https://data.mimotext.uni-trier.de/">MiMoTextBase</ref> (Hinzmann et al. 2022a) des Projekts „Mining and Modeling Text“ vorgestellt und es werden Anwendungsszenarien formuliert und visualisiert. Dazu werden Grundlagen der Abfragesprache SPARQL erlernt und eigene Queries formuliert. Wir arbeiten beispielhaft auf dem projektinternen Knowledge Graphen sowie auf Wikidata und werden über 
-                        <hi rend="italic">federated queries</hi> die Verbindung mehrerer Wissensgraphen demonstrieren.
-                    </p>
-                    <p>Konkrete Lernziele sind: Erwerb von Grundlagenwissen zu Semantic Web und RDF, LOD, Wikidata Graph; vertiefte Kenntnisse zu SPARQL und die praktische Fähigkeit, eigene SPARQL-Queries zu formulieren; Kennenlernen der Software Wikibase und Exploration der Visualisierungsmöglichkeiten des SPARQL-Endpoints. </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Zielpublikum und Anforderungen</head>
-                    <p>Der Workshop wendet sich an digitale Geisteswissenschaftler:innen mit Interesse an LOD und SPARQL. Spezielle Vorkenntnisse sind nicht notwendig. Teilnehmende benötigen einen Laptop.</p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Struktur / Ablauf</head>
-                    <p>Der Workshop setzt sich aus aufeinander aufbauenden Sessions zusammen, die jeweils Input-Phasen und Übungsphasen verbinden. Es wird vorab eine ausführliche Tutorial-Seite (inklusive Verlinkung auf weitere hilfreiche Ressourcen zum SPARQL-Lernen) zur Verfügung gestellt, die den Teilnehmenden (und allen weiteren Interessierten) in der Vorbereitung sowie zur Vertiefung nützlich sein kann (Hinzmann et al. 2022b).</p>
-                    <p>Im Zentrum des Workshops stehen drei Blöcke mit jeweils unterschiedlichem Schwerpunkt, in denen das Formulieren von SPARQL-Queries geübt wird (vgl. für Details den Ablauf im Appendix). Auch Teilnehmende ohne Vorkenntnisse werden schrittweise an zunehmend komplexere Queries herangeführt. Der Schwierigkeitsgrad wächst innerhalb der einzelnen Blöcke, wobei der Fokus auf dem eigenständigen Formulieren sowie Anpassen von Beispiel-Queries und dem Klären aller dabei auftretenden Fragen liegen wird.</p>
-                    <p>1. Im ersten Teil liegt der Fokus auf Abfragen zu literarischen Werken. Im Hinblick auf SPARQL geht es hier zunächst um die zentralen Grundlagen wie das Schreiben einfacher 
-                        <hi rend="italic">triple patterns</hi> und Möglichkeiten der Kombination mehrerer 
-                        <hi rend="italic">triple patterns</hi> zu zunehmend komplexeren Queries. Der Mehrwert, der sich aus solchen Kombinationsmöglichkeiten ergibt, wird mit dem durch die MiMoTextBase gegebenen Fokus auf den französischen Aufklärungsroman besonders deutlich.
-                    </p>
-                    <p>2. Im zweiten Teil widmen wir uns Wikidata als größtem öffentlichen Wissensgraphen, der sich zugleich als ‚Hub‘ begreifen lässt (Neubert 2017), und fokussieren Autor:innen als Entitäten. Autor:innen sind in allen geisteswissenschaftlichen Disziplinen relevant und ein wichtiges Scharnier zwischen verschiedenen Wissensgraphen. Bezogen auf die SPARQL-Syntax gehen wir einen Schritt weiter und integrieren Funktionen wie OPTIONAL und FILTER, um das Spektrum der Abfragemöglichkeiten zu erweitern. Ein Einstieg wird hier mit Queries zu Literat:innen der MiMoText-Domäne gemacht. Im nächsten Schritt können die Teilnehmenden die Daten von Autor:innen in ihrer jeweiligen Domäne in Wikidata explorieren.</p>
-                    <p>3. Der dritte Teil verknüpft die beiden vorigen Teile auf mehreren Ebenen. Der Schwerpunkt liegt auf 
-                        <hi rend="italic">federated queries</hi>, wobei wir uns auf Abfragen, die sich über die MiMoTextBase und Wikidata erstrecken, konzentrieren werden. Die genauere Betrachtung von Autor:innen des 2. Teils wird hier fortgesetzt und vertieft. In diesem abschließenden Teil wird der Mehrwert von Standards und geteilten Datenmodellen (Ontologien bzw. 
-                        <hi rend="italic">entity schemata</hi>) sowie die Verknüpfung von Ressourcen besonders deutlich.<ref n="2" target="ftn2"/> Alle Autor:innen der MiMoTextBase, für die es auch Wikidata-Items gibt, können mit diesen über die Property 
-                        <hi rend="italic">exact match</hi> verknüpft werden, wodurch zusätzliche Informationen bereitstehen und diverse Abfragemöglichkeiten eröffnet werden.<ref n="3" target="ftn3"/> Die Wikibase-Infrastruktur bietet außerdem vielfältige Explorationsmöglichkeiten, die beispielhaft eingeführt werden (
-                        <hi rend="italic">marker cluster</hi> für Geo-Daten, Timelines für Geburtsdatum u. ä.).
-                    </p>
-                    <p>Es soll in der abschließenden Diskussion auch Raum sein, einen kritischen Blick auf Entwicklungen im Bereich des Semantic Web zu werfen, beispielsweise die Frage, welche Monopolisierungskräfte und Marktkräfte Einfluss nehmen (van Hooland / Verborgh 2014, 247–48; Singhal 2012). Zum Abschluss werden die wichtigsten Anwendungsmöglichkeiten und Fragen zusammengetragen und weiterführende Ressourcen (DuCharme 2013; van Hooland / Verborgh 2014; Lincoln 2015; Blaney 2017) sowie bei Interesse Möglichkeiten der Kooperation thematisiert.</p>
-                </div>
+                <head>
+                    <anchor xml:id="id__nao8dxx9rx2t"/>Erweiterung: Das Cultural Heritage Framework
+                </head>
+                <p>Das Ziel der Strukturierung des Bildarchivs lautet aber nicht, weitere Sammlungen zu erzeugen, sondern die Daten durch eine komplexere semantische Verknüpfung zu modellieren. Dafür kommt das an der Digitalen Akademie in Mainz entwickelte Cultural Heritage Framework, kurz CHF, zum Einsatz (Schrade 2017).</p>
+                <p>Das Framework dient unterschiedlichen Projekten, die mit Objekterfassung im Bereich des kulturellen Erbes befasst sind, dazu, Digitalisate unterschiedlicher Provenienz zu einem Kulturerbeobjekt zu verknüpfen, mit (wissenschaftlichen) Texten anzureichern und als 
+                    <hi rend="italic">born-digital</hi> Onlinepublikation zu veröffentlichen.
+                </p>
+                <p>Das Datenmodell besteht aus mehreren Komponenten, die auf den jeweiligen Erfassungsbedarf des Projektes angepasst werden: ‘Artefakte’, ‘Entitäten’, ‘Ereignisse’, ‘Personen’ und ‘Orte’. Artefakte können dabei mit den digitalen institutionellen Sammlungen, zum Beispiel Ressourcen aus dem CVMA Online-Bildarchiv, verknüpft werden. Datierungen, geographische Angaben wie Koordinaten, Ortsangaben oder 
+                    <hi rend="italic">Geonames Identifier</hi> und Stichwörter werden zwischen den entsprechenden Datenbanken, die diese Informationen speichern, sowie dem Datenmodell ausgetauscht. Es organisiert textuelle und nicht-textuelle Forschungsdaten. 
+                </p>
+                <p>Für das CVMA wurde hieraus das auf der Webseite verfügbar gemachte Modul “Glasmalerei im Kontext” entwickelt. Das Publikationsmodell kann aus drei Perspektiven betrachtet werden. </p>
+                <p>Aus der Sicht des Datenmodells strukturiert es Forschungsdaten zu Bauwerken, meist Kirchen, hierarchisch: vom Standort zum Gebäude, zum Gebäudeteil, zum Fenster, zur Einzelscheibe bzw. Montage. Spezielle Entitäten können mit weiteren spezifischen Ressourcen verknüpft werden. Die oberste Hierarchieebene sieht die Einbindung eines Grundrisses vor, während die unterste Hierarchieebene eine direkte Verlinkung zu den Bildressourcen des Online-Bildarchivs erlaubt. Auf allen Ebenen der Fenster- und Scheibendarstellungen wird eine Gegenüberstellung der Glasmalereien und ihrer Erhaltungsschemata ermöglicht, um mittelalterlich erhaltene Bestandteile und die Anteile möglicher Restaurierungsmaßnahmen visuell nachzuvollziehen. Damit wird das Publikationsformat zu einem wertvollen Forschungsinstrument.</p>
+                <p>Aus der Sicht der Abbildungen bietet das Modul ‘Glasmalereien im Kontext’ die Möglichkeit zur semantischen Strukturierung und kontextualisierten Darstellung der im Online-Bildarchiv publizierten Bildressourcen. So bietet sich dem Nutzer des Bildarchivs bei jeder über das Modul verlinkten Ressource automatisch der Weg in die Standortdarstellung. Eine Datenmodellierung über das Content Management System und dem dort aufgesetzten CHF wirkt sich also strukturierend auf das Online-Bildarchiv aus.</p>
+                <p>Aus der Sicht der Nutzenden schließlich eröffnet sich ein niedrigschwelliger Zugang nicht nur zu einzelnen Forschungsressourcen, wie im Bildarchiv, sondern auch zu den Forschungsergebnissen, die in Form von Bildmaterial und kurzen Texten als Microsites veröffentlicht sind. Hier gibt es in übersichtlichen Schritten immer tiefergehende Informationen von der Baugeschichte des Kirchenstandortes bis zu den Vorbildern einzelner in den Glasmalereien dargestellter Szenen.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Appendix </head>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Ablauf (4 Stunden)</head>
-                    <table rend="frame" xml:id="Tabelle1">
-                        <row>
-                            <cell>10 Min.</cell>
-                            <cell>Begrüßung (Vorstellung evtl. über Mentimeter) </cell>
-                        </row>
-                        <row>
-                            <cell>20 Min. </cell>
-                            <cell>Einleitung: Input zu Semantic Web, RDF, LOD für die Literaturgeschichte am Beispiel des Projekts Mining and Modeling Text. Wikidata &amp; Wikibase Ecosystem, Mehrsprachigkeit des Graphen.</cell>
-                        </row>
-                        <row>
-                            <cell/>
-                            <cell rend="bold">SPARQL Teil 1 (MiMoTextBase)</cell>
-                        </row>
-                        <row>
-                            <cell>20 Min.</cell>
-                            <cell>(a) Input zu SPARQL-Grundlagen (interaktive Phase), SPARQL-Syntax, Möglichkeiten der Datenvisualisierung in Wikibase, Debugging &amp; Help.</cell>
-                        </row>
-                        <row>
-                            <cell>35 Min.</cell>
-                            <cell>(b) Praxis-Teil: Anpassen vorhandener und Formulieren einfacher, eigener SPARQL-Queries auf der MiMoTextBase (Breakout Session bzw. Gruppenarbeit).</cell>
-                        </row>
-                        <row>
-                            <cell>15 Min.</cell>
-                            <cell>Pause</cell>
-                        </row>
-                        <row>
-                            <cell/>
-                            <cell rend="bold">SPARQL Teil 2 (Wikidata)</cell>
-                        </row>
-                        <row>
-                            <cell>20 Min.</cell>
-                            <cell>(a) Input: Erweiterte Elemente der SPARQL-Syntax wie OPTIONAL und FILTER; Datenmodell für Autor:innen auf Wikidata.</cell>
-                        </row>
-                        <row>
-                            <cell>35 Min.</cell>
-                            <cell>(b) Praxis: Formulieren etwas komplexerer Queries auf Wikidata. </cell>
-                        </row>
-                        <row>
-                            <cell>15 Min.</cell>
-                            <cell>Pause</cell>
-                        </row>
-                        <row>
-                            <cell/>
-                            <cell rend="bold">SPARQL Teil 3 (
-                                <hi rend="italic">Federated queries</hi>)
-                            </cell>
-                        </row>
-                        <row>
-                            <cell>20 Min.</cell>
-                            <cell>(a) Input: Fortgeschrittene SPARQL-Queries: 
-                                <hi rend="italic">Federated queries</hi>, 
-                                <hi rend="italic">prefixes</hi> definieren, 
-                                <hi rend="italic">marker cluster</hi> etc.
-                            </cell>
-                        </row>
-                        <row>
-                            <cell>35 Min.</cell>
-                            <cell>(b) Praxis: 
-                                <hi rend="italic">Federated queries</hi> etc. anwenden.
-                            </cell>
-                        </row>
-                        <row>
-                            <cell>15 Min.</cell>
-                            <cell>Abschließende Diskussion, Empfehlung weiterführender Ressourcen zur Vertiefung des Gelernten.</cell>
-                        </row>
-                    </table>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Organisatorisches</head>
-                    <p>Maximale Zahl der Teilnehmenden: 25. Wir benötigen einen Raum mit WLAN und Beamer und bieten gern ein Hybrid-Szenario an. </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Fördernachweis</head>
-                    <p>„Mining and Modeling Text“ (Universität Trier, Trier Center for Digital Humanities) wird von der Forschungsinitiative des Landes Rheinland-Pfalz 2019-2023 gefördert. </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Beitragende</head>
-                    <p>Der Workshop wird von Mitarbeiter:innen des LOD-Projekts „Mining and Modeling Text“ durchgeführt. Das interdisziplinäre Projekt verfügt über einen eigenen SPARQL-Endpoint und wurde in Wikibase implementiert. </p>
-                    <p>Maria Hinzmann; hinzmannm@uni-trier.de; Trier Center for Digital Humanities, Universität Trier | Historisches Seminar: Digital Humanities, Bergische Universität Wuppertal; Forschungsinteressen: Datenmodellierung, LOD, Textanalyseverfahren.</p>
-                    <p>Anne Klee; klee@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: Digitale Textverarbeitung; Digitale Lexikographie.</p>
-                    <p>Johanna Konstanciak; konstanciak@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: Digitale Textverarbeitung; XML/Web-Technologien.</p>
-                    <p>Julia Röttgermann; roettger@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: LOD, Textmining-Verfahren wie Topic Modeling, NER und Sentiment Analysis.</p>
-                    <p>Christof Schöch; schoech@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: Computational Literary Studies.</p>
-                    <p>Moritz Steffes; steffesm@uni-trier.de; Trier Center for Digital Humanities; Forschungsinteressen: Softwaresysteme, Semantic Web Technologien, Forschungsinfrastrukturen.</p>
-                </div>
+                <head>
+                    <anchor xml:id="id__qtg5mca3s47w"/>Ergebnis: Glasmalereien im Kontext – 
+                    <hi rend="italic">Born-Digitals</hi> als semantische Datenmodellierung, offene digitale Publikationsform und Open Educational Resource
+                </head>
+                <p>‘Glasmalereien im Kontext’ ist eine Kombination aus semantischer Datenmodellierung und deren Ausspielung als digitale Publikationsform (CVMA Deutschland o. J. b). Aufgeschlüsselt nach Standorten können Nutzer:innen hier Kirchenräume und ihren mittelalterlichen Glasmalereibestand über Text- und Bildmaterial erkunden. Die Notwendigkeit, Struktur in die entkontextualisiert vorliegende Bildsammlung zu bringen, hat im Ergebnis eigenständige 
+                    <hi rend="italic">born-digital</hi> Publikationen aus vormals gedruckten Corpusbänden entstehen lassen, die sich in konservativer Modellierung an der Struktur der Printpublikationen orientieren und darüber hinaus auch innovative Modellierungen zulassen, die als niedrigschwellige aber hochwertige, aktualisierte und non-lineare Ergänzungen zu den gedruckten Werken veröffentlicht werden.
+                </p>
+                <p>Für die nah am Corpusband formulierte Modellierung werden ausgewählte Standorte mit überarbeiteten und reduzierten Katalogtexten zu den jeweiligen Gesamtfenstern, Szenen und Einzelscheiben angeboten. Eine Kirche wird in Objektgruppen untergliedert, bei denen es sich um Gebäudeteile wie Chor oder Langhaus handelt. Die darunter liegenden Ebenen bilden die dort enthaltenen Objekte. Dies sind die Buntglasfenster, die in ihrer Gesamtdarstellung als Bildmontagen und im Detail als Einzelscheiben dargestellt sind. Beide Entitäten sind im Objekt enthaltene Objektteile.</p>
+                <p>Während eines mehrere Jahrzehnte umspannenden Forschungszeitraums ergeben sich unter Umständen für bereits bearbeitete Objekte neue Erkenntnisse oder Forschungsmeinungen, die der Revision bedürfen. Das born-digital Format ‘Glasmalereien im Kontext’ bietet die Möglichkeit, bereits gedruckte Katalogtexte und -abbildungen in den Corpusbänden zu ergänzen und zu erweitern, auf die vorangegangenen Texte bezug zu nehmen oder von ihnen Abstand zu gewinnen. So können bspw. neue Erkenntnisse zu bereits vor geraumer Zeit publizierten Forschungen einfließen und neu aufgefundene Standorte veröffentlicht werden. Hier zeigt sich die einzigartige Möglichkeit, aktuelle Forschungen zitierfähig und nachnutzbar zu publizieren.</p>
+                <p>Darüber hinaus bietet das generische Datenmodell aber auch die Möglichkeit, alternative Rekonstruktionsvorschläge für einen architektonischen Teilraum, einer Objektgruppe im CHF, vorzulegen. Hier werden Abbildungen nicht in ihrer aktuellen Anbringung im Kirchenraum kontextualisiert, sondern ihre vermutete Anbringungen zu unterschiedlichen Zeitpunkten in der Vergangenheit für einen Ort modelliert. Diese Nebeneinanderstellung unterschiedlicher Zustände bzw. Rekonstruktionen stellt einen innovativen Ansatz in der Forschung der mittelalterlichen Glasmalerei dar, der insbesondere in der universitären Lehre in Seminaren Anwendung findet.</p>
+                <p>Dabei ist das CHF in seiner Form als ‘Glasmalereien im Kontext’ zugleich Modellierungsumgebung und semantisches Tool und wird mit der Verfügbarmachung der Ergebnisse über das Internet als digitale Publikationsform sofort zur Open Educational Resource.</p>
             </div>
         </body>
         <back>
-<div type="notes">
-<note xml:id="ftn1" rend="footnote text" n="1"> Einige aktuelle Beispiele für Forschungsprojekte, die Wikibase verwenden: 
-                        <ref target="https://enslaved.org/">Enslaved</ref> (Zhou et al. 2020), 
-                        <ref target="https://artbase.rhizome.org/wiki/Main_Page">Rhizome Artbase</ref> (Rhizome 2021), 
-                        <ref target="https://database.factgrid.de/">FactGrid</ref> (Simons 2022; Brunner 2022).
-                    </note>
-<note xml:id="ftn2" rend="footnote text" n="2"> Diese Verknüpfung entspricht dem 5. Stern im Linked Open Data-Modell von Berners-Lee (2006).</note>
-<note xml:id="ftn3" rend="footnote text" n="3"> Vgl. dazu den entsprechenden Query auf der MiMoTextBase: 
-                            .
-                        </note></div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Alves, Daniel, Hrsg.</hi> 2022. „IJHAC: A Journal of Digital Humanities. Special Issue: Linked Open Data in the Arts and Humanities“ 16 (1). 
-                        <ptr target="https://www.euppublishing.com/doi/epdf/10.3366/ijhac.2022.0271"/>.
+                    <bibl><hi rend="bold">Comité international d’histoire de l’art und Union académique internationale. </hi>2016. „Corpus Vitrearum: Richtlinien“. 
+                        <hi rend="italic">CVMA Freiburg</hi>. Vers. 4. Troyes. 
+                        <ptr target="http://cvi.cvma-freiburg.de/documents/CVRichtlinienEdition.pdf"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Arenas, Marcelo, Claudio Gutierrez und Jorge Pérez.</hi> 2010. „On the Semantics of SPARQL“. In 
-                        <hi rend="italic">Semantic Web Information Management: A Model-Based Perspective</hi>, herausgegeben von Roberto de Virgilio, Fausto Giunchiglia, und Letizia Tanca, 281–307. Berlin, Heidelberg: Springer. 
-                        <ptr target="https://doi.org/10.1007/978-3-642-04329-1_13"/>.
+                    <bibl><hi rend="bold">CVMA Deutschland. </hi>2016. „XMP Metadatenspezifikation“. 
+                        <hi rend="italic">CVMA Deutschland.</hi> Vers. 1.1, 8. Juni 2016. 
+                        <ptr target="https://corpusvitrearum.de/cvma-digital/spezifikationen/cvma-xmp/11.html"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Berners-Lee, Tim.</hi> 2006. „Linked Data – Design Issues“. 27. Juli 2006. 
-                        <ptr target="https://www.w3.org/DesignIssues/LinkedData.html"/>.
+                    <bibl>———. o. J. a. „Bildarchiv“. 
+                        <hi rend="bold">CVMA Deutschland.</hi> Letzter Zugriff am 2. August 2022. 
+                        <ptr target="https://corpusvitrearum.de/bildarchiv"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Blaney, Jonathan.</hi> 2017. „Introduction to the Principles of Linked Open Data“. 
-                        <hi rend="italic">Programming Historian.</hi>
-                        <ptr target="https://programminghistorian.org/en/lessons/intro-to-linked-data"/>.
+                    <bibl>———. o. J. b. „Mittelalterliche Glasmalereien im Kontext“. 
+                        <hi rend="bold">CVMA Deutschland.</hi> Letzter Zugriff am 2. August 2022. 
+                        <ptr target="https://corpusvitrearum.de/glasmalerei-im-kontext"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Brunner, Katharina.</hi> 2022. „FactGrid wants to become part of the Wikidata federation ecosystem“. 30. Mai 2022. 
-                        <ptr target="https://blog.factgrid.de/archives/2922"/>.
+                    <bibl>
+                        <hi rend="bold">Hyman, Jack A., Mary T. Moser und Laura N. Segala. </hi>2014. „Electronic Reading and Digital Library Technologies: Understanding Learner Expectation and Usage Intent for Mobile Learning“. 
+                        <hi rend="italic">Educational Technology Research and Development</hi> 62 (1): 35–52.
+                        <ref target="https://doi.org/10.1007/s11423-013-9330-5">
+                            <hi rend="color(#1155cc)underline">https://doi.org/10.1007/s11423-013-9330-5</hi>
+                        </ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Dörpinghaus, Jens. </hi> 2022. “Wissensgraphen: Interdisziplinäre Perspektiven für Linked Data in den Geistes- und Sozialwissenschaften.” 
-                        <hi rend="italic">Zeitschrift für digitale Geisteswissenschaften</hi> 07. 
-                        <ptr target="https://doi.org/10.17175/2022_011"/>.
+                    <bibl><hi rend="bold">IconClass. </hi>o. J. „IconClass Illustrated Edition“. 
+                        <hi rend="italic">IconClass</hi>. Letzter Zugriff am 2. August 2022. 
+                        <ref target="https://iconclass.org/">
+                            <hi rend="color(#1155cc)underline">https://iconclass.org</hi>
+                        </ref>.
                     </bibl>
-                    <bibl><hi rend="bold">DuCharme, Bob. 2013. </hi>Learning SPARQL. Sebastopol, UNITED STATES: O’Reilly Media.</bibl>
-                    <bibl>Hinzmann, Maria, Anne Klee, Johanna Konstanciak, Julia Röttgermann, Christof Schöch und Moritz Steffes. 2022a. „MiMoTextBase“, Trier Center for Digital Humanities, 
-                        <ref target="https://data.mimotext.uni-trier.de/">https://data.mimotext.uni-trier.de</ref>, 11/2022.
+                    <bibl><hi rend="bold">ISO (International Organization for Standardization). </hi>2019. 
+                        <hi rend="italic">Graphic Technology — Extensible Metadata Platform (XMP) — Part 1: Data Model, Serialization and Core Properties.</hi> ISO 16684-1:2019, 2, April 2019. Paris: ISO. 
+                        <ptr target="https://www.iso.org/standard/75163.html"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Hinzmann, Maria, Anne Klee, Johanna Konstanciak, Julia Röttgermann, Christof Schöch und Moritz Steffes.</hi> 2022b. „MiMoTextBase Tutorial“. Juli 2022. 
-                        <ptr target="https://mimotext.github.io/MiMoTextBase_Tutorial/"/>.
+                    <bibl><hi rend="bold">Schrade, Torsten. </hi>2017. „Sammlungs- und Editionsportale mit dem Cultural Heritage Framework der Digitalen Akademie: Ein Werkstattbericht“. Vortrag beim Workshop 
+                        <hi rend="italic">Editionsportale</hi>, Friedrich-Schiller-Universität Jena, 3. August 2017. 
+                        <ptr target="https://digicademy.github.io/2017-editionsportale-jena"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Hogan, Aidan, Eva Blomqvist, Michael Cochez, Claudia d’Amato, Gerard de Melo, Claudio Gutierrez, Sabrina Kirrane, et al.</hi> 2021. „Knowledge Graphs“. 
-                        <hi rend="italic">Synthesis Lectures on Data, Semantics, and Knowledge</hi> 12 (2): 1–257. 
-                        <ptr target="https://doi.org/10.2200/S01125ED1V01Y202109DSK022"/>.
-                    </bibl>
-                    <bibl><hi rend="bold">Hooland, Seth van und Ruben Verborgh.</hi> 2014. 
-                        <hi rend="italic">Linked Data for Libraries, Archives and Museums: How to clean, link and publish your metadata</hi>. London: Facet Publishing.
-                    </bibl>
-                    <bibl><hi rend="bold">Ikonić Nešić, Milica, Ranka Stanković und Biljana Rujević. </hi>2021. „Serbian ELTeC Sub-Collection in Wikidata“. 
-                        <hi rend="italic">Infotheca </hi>21 (2): 60–86. 
-                        <ptr target="https://doi.org/10.18485/infotheca.2021.21.2.4"/>.
-                    </bibl>
-                    <bibl><hi rend="bold">Lincoln, Matthew.</hi> 2015. „Using SPARQL to access Linked Open Data“. Herausgegeben von Fred Gibbs. 
-                        <hi rend="italic">The Programming Historian</hi>, Nr. 4 (November). 
-                        <ptr target="https://doi.org/10.46430/phen0047"/>.
-                    </bibl>
-                    <bibl><hi rend="bold">Neubert, Joachim.</hi> 2017. „Wikidata as a Linking Hub for Knowledge Organization Systems? Integrating an Authority Mapping into Wikidata and Learning Lessons for KOS Mappings“. In 
-                        <hi rend="italic">Proceedings of the 17th European NKOS workshop</hi>. 
-                        <ptr target="http://ceur-ws.org/Vol-1937/paper2.pdf"/>.
-                    </bibl>
-                    <bibl><hi rend="bold">Ohmukai, Ikki und Taizo Yamada, Hrsg.</hi> 2022. 
-                        <hi rend="italic">Digital Humanities 2022. Conference Abstracts. Responding to Asian Diversity.</hi> Tokyo: ADHO. 
-                        <ptr target="https://dh2022.dhii.asia/dh2022bookofabsts.pdf"/>.
-                    </bibl>
-                    <bibl><hi rend="bold">Prud’hommeaux, Eric und Carlos Buil-Aranda.</hi> 2013. „SPARQL 1.1 Federated Query“. W3C Recommendation. 21. März 2013. 
-                        <ptr target="https://www.w3.org/TR/sparql11-federated-query/"/>.
-                    </bibl>
-                    <bibl><hi rend="bold">Rhizome. </hi>2021. „The ArtBase Relaunches: Welcome to Linked Open Data. Rhizome“. 
-                        <ptr target="http://rhizome.org/editorial/2021/apr/26/the-artbase-relaunches-welcome-to-linked-open-data"/>.
-                    </bibl>
-                    <bibl><hi rend="bold">Sack, Harald und Mehwish Alam. </hi>2020. „Knowledge Graphs“. Potsdam. 
-                        <ptr target="https://open.hpi.de/courses/knowledgegraphs2020"/>.
-                    </bibl>
-                    <bibl><hi rend="bold">Schöch, Christof, Maria Hinzmann, Röttgermann Julia, Anne Klee und Katharina Dietz.</hi> 2022. „Smart Modelling for Literary History“.
-                        <hi rend="italic">IJHAC: International Journal of Humanities and Arts Computing [Special issue on Linked Open Data]</hi> 16 (1): 78–93. 
-                        <ptr target="https://doi.org/10.3366/ijhac.2022.0278"/>.
-                    </bibl>
-                    <bibl><hi rend="bold">Simons, Olaf.</hi> 2022. „FactGrid“, Forschungszentrum Gotha der Universität Erfurt, 
-                        <ref target="http://database.factgrid.de/">database.factgrid.d</ref>
-                        <ref target="http://database.factgrid.de/">e</ref>, 11/2022. 
-                        <ptr target="http://doi.org/10.17616/R31NJMQR"/>.
-                    </bibl>
-                    <bibl><hi rend="bold">Singhal, Amit.</hi> 2012. „Introducing the Knowledge Graph: Things, Not Strings“. 
-                        <hi rend="italic">Google </hi>(blog). 16. Mai 2012. 
-                        <ptr target="https://blog.google/products/search/introducing-knowledge-graph-things-not/"/>.
-                    </bibl>
-                    <bibl><hi rend="bold">Thornton, Katherine, Kenneth Seals-Nutt, Marianne Van Renmoortel, Julie M. Birkholz und Pieterjan De Potter. </hi>2021. „Linking Women Editors of Periodicals to the Wikidata Knowledge Graph“. 
-                        <hi rend="italic">Semantic Web journal </hi>Special Issue Cultural Heritage 2021. 
-                        <ptr target="http://www.semantic-web-journal.net/content/linking-women-editors-periodicals-wikidata-knowledge-graph"/>.
-                    </bibl>
-                    <bibl><hi rend="bold">Zhao, Fudie.</hi> 2022. „How to Critically Utilise Wikidata - A Systematic Review of Wikidata in DH Projects“. In 
-                        <hi rend="italic">Digital Humanities 2022 - Conference Abstracts</hi>, herausgegeben von Ikki Ohmukai und Taizo Yamada, 608–10. The University of Tokyo, Japan: DH2022 Local Organizing Committee. 
-                        <ptr target="https://dh2022.dhii.asia/dh2022bookofabsts.pdf"/>.
-                    </bibl>
-                    <bibl><hi rend="bold">Zhou, Lu, Cogan Shimizu, Pascal Hitzler, Alicia M. Sheill, Seila Gonzalez Estrecha, Catherine Foley, Duncan Tarr und Dean Rehberger.</hi> 2020. „The Enslaved Dataset: A Real-world Complex Ontology Alignment Benchmark using Wikibase“. In 
-                        <hi rend="italic">Proceedings of the 29th ACM International Conference on Information &amp; Knowledge Management</hi>, 3197–3204. CIKM ’20. New York, NY, USA: Association for Computing Machinery. 
-                        <ptr target="https://doi.org/10.1145/3340531.3412768"/>.
+                    <bibl><hi rend="bold">The Getty. </hi>2017. „Art &amp; Architecture Thesaurus“. 
+                        <hi rend="italic">The Getty Research Institute</hi>. 7. März 2017. 
+                        <ptr target="https://www.getty.edu/research/tools/vocabularies/aat/"/>.
                     </bibl>
                 </listBibl>
             </div>

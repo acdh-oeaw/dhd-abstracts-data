@@ -1,21 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="227_final-KRAUTTER_Benjamin_Ein_Schritt_zurück__Distinktive_Eigenschaf" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="200_final-WUTTKE_Ulrike_Barcamp_data_literacy__Datenkompetenzen_in_den" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Ein Schritt zurück: Distinktive Eigenschaften im deutschsprachigen Drama</title>
+<title type="full">
+<title type="main">Barcamp data literacy: Datenkompetenzen in den digitalen Geisteswissenschaften vermitteln</title>
+<title type="sub"/>
+</title>
 <author>
 <persName>
-<surname>Krautter</surname>
-<forename>Benjamin</forename>
+<surname>Wuttke</surname>
+<forename>Ulrike</forename>
 </persName>
-<affiliation>Universität Stuttgart, Deutschland</affiliation>
-<email>Benjamin.Krautter@ilw.uni-stuttgart.de</email>
+<affiliation>Fachhochschule Potsdam, Fachbereich Informationswissenschaften, RDMO, Deutschland</affiliation>
+<email>ulrike.wuttke@gmx.net</email>
+</author>
+<author>
+<persName>
+<surname>Lemaire</surname>
+<forename>Marina</forename>
+</persName>
+<affiliation>Universität Trier, Servicezentrum eSciences, Deutschland</affiliation>
+<email>marina.lemaire@uni-trier.de</email>
+</author>
+<author>
+<persName>
+<surname>Stefan</surname>
+<forename>Schulte</forename>
+</persName>
+<affiliation>Philipps-Universität Marburg, Marburg Center for Digital Culture &amp; Infrastructure (MCDCI), Deutschland</affiliation>
+<email>stefan.schulte@uni-marburg.de</email>
+</author>
+<author>
+<persName>
+<surname>Helling</surname>
+<forename>Patrick</forename>
+</persName>
+<affiliation>Data Center for the Humanities (DCH), Universität zu Köln, Deutschland</affiliation>
+<email>patrick.helling@uni-koeln.de</email>
+</author>
+<author>
+<persName>
+<surname>Blumtritt</surname>
+<forename>Jonathan</forename>
+</persName>
+<affiliation>Data Center for the Humanities (DCH), Universität zu Köln, Deutschland</affiliation>
+<email>jonathan.blumtritt@uni-koeln.de</email>
+</author>
+<author>
+<persName>
+<surname>Schmunk</surname>
+<forename>Stefan</forename>
+</persName>
+<affiliation>Hochschule Darmstadt, Fachbereich Media, HeFDI, Deutschland</affiliation>
+<email>stefan.schmunk@h-da.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2015-10-04T22:02:00Z</date>
+<date>2019-12-20T12:29:33.634720963</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -27,7 +70,7 @@
 </address>
 </publicationStmt>
 <sourceDesc>
-<p>Converted from a Word document</p>
+<p>Converted from an OASIS Open Document</p>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
@@ -43,21 +86,18 @@
 <term>Paper</term>
 </keywords>
 <keywords n="subcategory" scheme="ConfTool">
-<term>Vortrag</term>
+<term>Workshop</term>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Topic Modeling</term>
-<term>Netzwerkanalyse</term>
-<term>Klassifikation</term>
-<term>Operationalisierung</term>
-<term>Methodologie</term>
+<term>Data Literacy</term>
+<term>Forschungsdatenmanagement</term>
+<term>Datenkompetenzen</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Strukturanalyse</term>
-<term>Theoretisierung</term>
-<term>Netzwerkanalyse</term>
-<term>Literatur</term>
-<term>Text</term>
+<term>Lehre</term>
+<term>Organisation</term>
+<term>Methoden</term>
+<term>Forschungsprozess</term>
 </keywords>
 </textClass>
 </profileDesc>
@@ -65,319 +105,188 @@
 <text>
 <body>
 <div rend="DH-Heading1" type="div1">
-<head>Einführung in die Fragestellung</head>
-<p style="text-align:left; ">
-<hi rend="italic">Topic Modeling</hi> und soziale Netzwerkanalysen zählen zu den etabliertesten quantitativen Methoden innerhalb der 
-<hi rend="italic">Computational Literary Studies</hi> (vgl. Du 2019; Trilcke u.a. 2016, Jannidis 2017: 148–161). Beide gelten insbesondere als geeignet, um große literarische Korpora auf Muster – semantischer oder struktureller Art – zu untersuchen, die durch lineares Lesen nicht oder nur schwer zu greifen sind (vgl. Willand 2017: 86). Auf diese Weise versprechen sie literarhistorische Entwicklungslinien aufzuzeigen, die die traditionelle, auf symptomatische Beispiele fußende Literaturgeschichtsschreibung zu übersehen neige (vgl. Moretti 2017: 6f.; Jockers 2013: 9). Epistemologisch sind die durch 
-<hi rend="italic">Topics</hi> oder Netzwerkmaße erschlossenen Textmodelle jedoch vom ursprünglichen literarischen Text deutlich zu unterscheiden. So konstatieren Peer Trilcke und Frank Fischer, dass es sich um andere ‚epistemische Dinge‘ handle (vgl. Trilcke, Fischer 2018). Denn beide Methoden reduzieren den literarischen Text auf spezifische Eigenschaften: im Fall der Netzwerkanalyse zumeist auf Figurenbeziehungen, die durch Knoten und Kanten repräsentiert werden; im Fall des 
-<hi rend="italic">Topic Modeling</hi> auf Wortkollokationen, die als 
-<hi rend="italic">Topics</hi> interpretiert werden. Positiv ließe sich diese Reduktion als Notwendigkeit der Operationalisierung fassen, die ein – in Abhängigkeit der Fragestellung gewähltes – theoretisches Konzept messbar machen soll (vgl. Moretti 2013). So könnte sich, wie Franco Moretti postuliert, die Handlung eines Textes näherungsweise als die Summe an Interaktionen der Figuren im Netzwerk operationalisieren lassen (vgl. Moretti 2011: 2–4). Die Zentralitätsmaße von Figurennetzwerken ermöglichen dann einen auf quantitativen Werten basierenden Vergleich der literarischen Texte. 
-</p>
-<!-- <p style="text-align:left; "> -->
-<!-- <hi rend="italic">Abbildung 1</hi>:  -->
-<!--                     <hi rend="italic">Average Degree</hi> im historischen Verlauf;  -->
-<!--                     <hi rend="italic" xml:space="preserve">LOESS </hi>Kurve. -->
-<!--                 </p> -->
-<p style="text-align:left; ">Ein mögliches Anwendungsszenario zeigt 
-<hi rend="italic">Abbildung 1</hi>. Sie stellt das 
-<hi rend="italic" xml:space="preserve">Average Degree </hi>(durchschnittlicher Grad) von insgesamt 443 Dramennetzwerken dar. 
-<hi rend="italic">Degree</hi> ist ein simples Zentralitätsmaß, das für jede Dramenfigur bemisst, mit wie vielen anderen sie im Verlauf des Stücks interagiert. Trilcke und Fischer nutzen eine ähnliche Darstellung, um literarhistorische Erkenntnisse zu bestätigen. Basierend auf der Vorstellung, dass 
-<hi rend="italic">Degree</hi> ein „Indikator für soziale Komplexität“ (Trilcke, Fischer: 2018) sein könnte, formulieren sie die geläufige These, dass das Drama seit Mitte des 18. Jahrhunderts gesellschaftliche Modernisierungsprozesse widerspiegeln würde.
-</p>
-<figure>
-<graphic height="11.064875cm" n="1001" rend="inline" url="227_final-e565d6c230f2edac108f84b2e122bd98.png" width="15.991416666666666cm"/>
-<head> Abbildung 1: <hi rend="italic">Average Degree</hi> im historischen Verlauf; <hi rend="italic" xml:space="preserve">LOESS </hi>Kurve.</head>
-</figure>
-<p style="text-align:left; ">Ziel dieses Beitrags ist es jedoch, einen Schritt hinter solche makroanalytischen Befunde zurück zu treten. In einem vorgelagerten Arbeitsschritt möchte ich erörtern, welche quantitativ erfassbaren Merkmale dramatischer Texte überhaupt geeignet sind, um eine literarhistorische Einordnung und Unterscheidung der Dramen vorzunehmen. Anders formuliert sollen also die Kriterien ermittelt werden, die mit Blick auf die Entstehungszeit der Dramen unterscheidungstragend sind. Zu diesem Zweck dient im vorliegenden Fall eine einfach gehaltene Klassifikationsaufgabe. Ließen sich die dramatischen Texte erfolgreich ihrem Veröffentlichungszeitraum zuweisen, könnte daraus auf die Kriterien rückgeschlossen werden, die den entscheidenden Beitrag zu dieser Klassifikation leisten. Daran anschließend wäre eine Rückübersetzung der ermittelten Merkmale denkbar – analog zur Operationalisierung –, die eine Interpretation anleiten könnten.</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Korpus</head>
-<p style="text-align:left; ">Die folgenden Untersuchungen konzentrieren sich auf 443 deutschsprachige Dramen zwischen 1730 und 1930 aus dem 
-                    <hi rend="italic" xml:space="preserve">German Drama Corpus </hi>(Fischer u.a. 2019). 
-                    <hi rend="italic">Abbildung </hi>2 gibt einen Überblick über die zeitliche Verteilung der Dramen. Es handelt sich um ein recht heterogenes Korpus, das auf unterschiedlichen poetologischen Vorstellungen fußt, die wiederum an verschiedene Produktions- und Rezeptionsbedingungen geknüpft sein können. Sowohl versifizierte als auch in Prosa gehaltene Damen sind enthalten. Sehr kurze Stücke, in denen die Figurenrede weniger als 3000 Tokens umfasst, wurden für die Analysen entfernt, so dass die Länge der Stücke zwischen noch immer kurzen 3017 und längst nicht mehr ungekürzt auf der Bühne darstellbaren 146248 Tokens liegt (median: 22548; Standardabweichung: 13304). Die Zahl der auftretenden Figuren liegt zwischen zwei und 183 (median: 17; Standardabweichung: 19,2). Das Korpus enthält Stücke von insgesamt 166 Autor*Innen, darunter sowohl hochkanonische als auch heutzutage kaum noch wahrgenommene.
+<head>Beschreibung des Themas: Vermittlung von data literacy in den Geisteswissenschaften</head>
+<p>Nachdem beim Thema Forschungsdatenmanagement (FDM) auf politischer Ebene lange die institutionelle Verankerung, z. B. über FDM-Policies (vgl. Forschungsdaten.org (o.J.), Helbig et al. 2018) sowie der Infrastrukturaufbau im Vordergrund stand, findet mittlerweile eine Fokussierung auf die Vermittlung von Kompetenzen im Umgang mit Forschungsdaten – data literacy (vgl. RfII 2019, Schüller et al. 2019) – statt, auch im Prozess zur Errichtung einer Nationalen Forschungsdateninfrastruktur (NFDI). In praktisch allen geisteswissenschaftlich geprägten Konsortien finden sich Aussagen zur Kompetenzvermittlung und mit der fachübergreifenden Konsortiumsinitiative CompeNDI gibt es sogar einen Antrag, der Datenkompetenzen in den Mittelpunkt stellt.<ref n="1" target="ftn0"/> Auch in der Neuauflage der Empfehlungen zur Sicherung der guten wissenschaftlichen Praxis (DFG 2019) wird wiederholt der verantwortungsvolle und möglichst offene Umgang mit Forschungsdaten thematisiert und es werden FDM-Kompetenzen für die Sicherung der Forschungsqualität und -exzellenz als unabdingbare wissenschaftliche Schlüsselkompetenzen gezählt (vgl. Wuttke &amp; Klar 2019).
                 </p>
-<figure>
-<graphic height="10.36cm" n="1002" rend="inline" url="227_final-06c79be4ff85da0eabf68b251626cb7f.png" width="11.33cm"/>
-<head> Abbildung 2: Korpusübersicht.</head>
-</figure>
-<!-- <p style="text-align:left; "> -->
-<!-- <hi rend="italic" xml:space="preserve">Abbildung </hi>2: Korpusübersicht. -->
-<!--                 </p> -->
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Methode</head>
-<p style="text-align:left; ">Die historische Verortung der dramatischen Texte fasse ich als basal gehaltene Klassifikationsaufgabe. Ziel der Klassifikation ist es, mittels maschineller Lernverfahren näherungsweise den Veröffentlichungszeitraum der Dramen zu bestimmen, um daran anschließend die Einflussfaktoren identifizieren und untersuchen zu können. Dazu greife ich auf Metadaten zurück, die Angaben zur Erstaufführung und zur Erstpublikation umfassen. Diese Metadaten werden genutzt, um jedes Drama einer von vier heuristisch gesetzten Zeitspannen zuzuordnen, die jeweils circa 50 Jahre umfassen: 1730–1785 (93 Dramen), 1786–1832 (116 Dramen), 1833–1881 (105 Dramen) und 1882–1930 (129 Dramen). Die dadurch entstehenden Zeiträume dienen als Zielpunkt der Klassifikation und orientieren sich an wichtigen literaturgeschichtlichen Zäsuren: Aufklärung, Goethezeit, Realismus und literarische Moderne (vgl. etwa Brenner 2011).<ref n="1" target="ftn1"/> Als Features der Klassifikation nutze ich verschieden komplexe Netzwerk- und Zentralitätsmetriken sowie durch 
-                    <hi rend="italic">Topic Modeling</hi> trainierte 
-                    <hi rend="italic">Topics</hi>.
+<p>Diese zunehmende Fokussierung auf data literacy steht durchaus im Kontrast zur Situation in den geisteswissenschaftlichen Studiengängen und im Forschungsalltag, in denen die explizite Vermittlung von Datenkompetenzen keine Selbstverständlichkeit ist. Dies liegt u. a. an einer grundsätzlichen Akzeptanzproblematik von FDM in diesen Disziplinen. So werden beispielsweise der Nutzen des FDM und der FAIR-Prinzipien<ref n="2" target="ftn1"/> angezweifelt, da der zu erwartende zeitliche und finanzielle Mehraufwand den Nutzen (im Sinne wissenschaftlicher Reputation) nicht rechtfertige. Vielen Wissenschaftler*innen fehlt die Vorstellungskraft, dass ihre Daten für nachfolgende Forschungsprojekte nützlich sein könnten. Zum Teil werden Forderungen zur Offenlegung der Daten und der zur Erstellung und Analyse verwendeten Methoden und Werkzeuge als Angriff auf die Wissenschaftsfreiheit verstanden beziehungsweise als indirekter Vorwurf bislang nicht nach den Regeln der guten wissenschaftlichen Praxis gearbeitet zu haben. Auch wird in Frage gestellt, ob sich die qualitativen, insbesondere hermeneutischen Methoden und Erkenntnisprozesse der Geisteswissenschaften, mittels digitaler Daten und Systeme abbilden lassen. Zudem schätzen viele Geisteswissenschaftler*innen ihre FDM-Kompetenzen als unzureichend ein und fühlen sich von den Anforderungen (zu recht?) überfordert (vgl. Lemaire 2018, 238).
                 </p>
-<p style="text-align:left; ">Basis der Netzwerk- und Zentralitätsmetriken sind Netzwerkgraphen, die auf Präsenz- bzw. Adjazenzmatrizen fußen. Knoten und Kanten repräsentieren hierbei Dramenfiguren und deren Interaktion, wobei Interaktion als das gemeinsame Sprechen innerhalb einer Szene operationalisiert ist (vgl. Trilcke 2013: 238f.). Eine Kante zwischen zwei Knoten wird also genau dann instanziiert, wenn die beiden fraglichen Figuren innerhalb derselben Dramenszene sprechen. Das bedeutet auch, dass verschiedene poetologische Vorstellungen von Akt und Aufzug sowie Szene und Auftritt, die im Verlauf der Dramengeschichte einem Wandel unterliegen, einen Eingang in die Graphen findet (vgl. etwa Vogel 2012). Für die Klassifikation nutze ich die folgenden acht Maße: 
-                    <hi rend="italic">Degree, Weighted Degree, Closeness Centrality, Betweenness Centrality, Eigenvector Centrality</hi>,
-                    <hi rend="italic" xml:space="preserve"> Average Path Length</hi>, 
-                    <hi rend="italic">Clustering Coefficient</hi> und 
-                    <hi rend="italic">Density</hi>.<ref n="2" target="ftn2"/>
-</p>
-<p style="text-align:left; ">
-<hi rend="italic">Topic Modeling</hi> gilt als Technik, die – in einem weiteren Sinn gefasst – semantische Strukturen in größeren Textkorpora zu identifizieren vermag (vgl. etwa Schöch 2017: 42). Die von mir verwendeten 
-                    <hi rend="italic">Topics</hi> wurden auf dem gesamten in 
-                    <hi rend="italic" xml:space="preserve">Abbildung 2 </hi>dargestellten Dramenkorpus trainiert, wobei die Figurenrede eines jeden Dramas nochmals in Segmente von je 1000 Tokens unterteilt ist. Vorab wurde das Wortmaterial auf Nomen, Adjektive und Vollverben beschränkt. Um die 
-                    <hi rend="italic">Topics</hi> zu trainieren, greife ich auf das von David M. Blei, Andrew Y. Ng und Michael I. Jordan (2003) vorgeschlagene probabilistische Modell 
-                    <hi rend="italic">Latent Dirichlet Allocation</hi> zurück. Für die maschinelle Klassifikation setze ich ein Modell mit 20 
-                    <hi rend="italic">Topics</hi> (T1–T20) ein, das einen guten Kompromiss bietet zwischen der Interpretierbarkeit einzelner 
-                    <hi rend="italic">Topics</hi> und ihrer Eignung, die Texte diachron zu unterscheiden.
-                </p>
-<p style="text-align:left; ">Das maschinelle Klassifikationsverfahren selbst nutzt den Algorithmus 
-                    <hi rend="italic">Random Forest</hi> (Ho 1995, Breiman 2001). 
-                    <hi rend="italic" xml:space="preserve">Random Forest </hi>fügt mehrere unkorrelierte Entscheidungsbäume zusammen und berechnet mittels mathematischer Regression die Parameter. Beim Trainieren wurde das Korpus in zehn Segmente gegliedert (10-
-                    <hi rend="italic">fold cross validation</hi>), wodurch verzerrte Ergebnisse durch die zufällige Verteilung von Trainings- und Testkorpus vermieden werden sollen.<ref n="3" target="ftn3"/>
-</p>
+<p>Die beschriebenen Hemmnisse für die Akzeptanz und Implementierung des FDM in der geisteswissenschaftlichen Praxis sind inzwischen bekannt und Hochschulen und Forschungseinrichtungen sind dazu aufgefordert, verstärkt Maßnahmen und Angebote zur Vermittlung von Datenkompetenzen, als Oberbegriff unter den hier FDM-Kompetenzen subsumiert werden sollen, zu etablieren (vgl. RfII 2016, 50). Hierfür liegen bereits gute allgemeine Konzepte vor (vgl. FDMentor &amp; DINI/nestor-AG Forschungsdaten 2018, Dolzycka et al. 2019, Wiljes &amp; Cimiano 2019), es gibt jedoch noch wenig disziplinspezifische Erfahrungen im Bereich der Geisteswissenschaften. Es stellen sich Fragen nach dem “Wann” und “Wie” des Erwerbs von FDM-Kompetenzen, nach geeigneten didaktischen Formaten oder der Abgrenzung bezüglich tiefergehender DH-Kompetenzen, wie sie in spezialisierten Studiengängen vermittelt werden. Diese und weitere Fragen sollen unter Einbeziehung unterschiedlicher Perspektiven im Rahmen eines Barcamps diskutiert werden, weil dieses offene, partizipatorische Format, das stark vom Input aller Teilnehmer*innen lebt, besonders geeignet scheint für eine explorative Diskussion komplexer Themenbereiche.</p>
+<p>Das geplante Barcamp ist Teil der Bemühungen der DHd-AG Datenzentren, weiterführende Anforderungen und Aufgaben des langfristigen digitalen Kulturwandels in den Geisteswissenschaften zu eruieren. Hierfür ist bei der DHd 2020 auch ein Panel zur Datenqualität vorgesehen. Ziel beider Aktivitäten ist langfristig die Schaffung positiver Anreize für FDM und Forschungsdatenpublikationen aus den Bedürfnissen der wissenschaftlichen Praxis heraus. Speziell mit dem Barcamp möchte die DHd-AG Datenzentren:</p>
+<list type="unordered">
+<item>einen Erfahrungsaustausch über konkrete Vermittlungsformen und didaktische Konzepte initiieren, </item>
+<item>Geisteswissenschaftler*innen, FDM-Expert*innen etc., die sich mit der Kompetenzvermittlung befassen, vernetzen, </item>
+<item>einen Beitrag zur Diskussion über den Stellenwert von Datenkompetenzen in den Geisteswissenschaften leisten sowie</item>
+<item>Impulse für die zukünftige Arbeit der AG Datenzentren ableiten. </item>
+</list>
+<div type="div2">
+<head>Workshopformat: Barcamp</head>
+<p>Die Einreichenden möchten im Rahmen eines eintägigen Barcamps gemeinsam mit interessierten Wissenschaftler*innen, Forschungsdatenmanager*innen etc. die oben skizzierten Aspekte der Vermittlung von Datenkompetenzen in den Geisteswissenschaften, sowie weiterführende Themen und Fragen, diskutieren. Die für dieses Format typische dynamische, interaktive Entwicklung der Tagesordnung scheint für eine agile “Szene”, wie die des FDM, als großer Vorteil und das Format hat sich schon in ähnlichen Kontexten bewährt auf deren Erfahrungswerte die Organisator*innen zurückgreifen können (vgl. Budd et al. 2015, Dogunke et al. 2018, Tóth-Czifra &amp; Wuttke 2019, Muuß-Merholz 2019).</p>
+<p>Das wichtigste Merkmal eines Barcamps ist die gemeinsame Programmgestaltung durch Organisator*innen und Teilnehmer*innen, d.h. zu einem Barcamp können alle Beteiligten hierarchieunabhängig aus ihrer Erfahrungswelt beitragen und gemeinsam zu neuen Lösungsansätzen gelangen.</p>
 </div>
-<div rend="DH-Heading1" type="div1">
-<head>Ergebnisse</head>
-<p style="text-align:left; ">
-<hi rend="italic">Tabelle</hi> 1 zeigt die Ergebnisse der Klassifikation anhand von drei Modellen. Zusätzlich zum Gesamtmodell, das Netzwerkanalysen und 
-                    <hi rend="italic">Topic Modeling</hi> zusammenführt, wurden die acht Netzwerkmetriken und die 20 
-                    <hi rend="italic" xml:space="preserve">Topics </hi>auch isoliert betrachtet. Die 
-                    <hi rend="italic">Baseline</hi> berechnet sich, angelehnt an die einleitenden Überlegungen, anhand des 
-                    <hi rend="italic">Average Degree</hi>.<ref n="4" target="ftn4"/> Die Werte in 
-                    <hi rend="italic">Tabelle </hi>1 verdeutlichen zweierlei: Einerseits erreicht bereits die 
-                    <hi rend="italic">Baseline</hi> annehmbare Ergebnisse. 309 Dramen werden anhand ihres 
-                    <hi rend="italic">Average Degree</hi> richtig klassifiziert. Andererseits scheint insbesondere das trainierte 
-                    <hi rend="italic">Topic Model</hi> zur
-		    Leistungsfähigkeit des gesamten Modells
-		    beizutragen. Letzteres zeigt sich mit einem
-		    F<hi rend="subscript">1</hi>-Wert von 0.921 angemessen performant – lediglich 34 Dramen werden einem falschen Zeitraum zugewiesen. Wirklich überraschen kann dieser Umstand jedoch nicht, sind die heuristischen Klassifikationszeiträume doch recht groß gewählt. Kleiner gefasste Zeiträume führen das Modell hingegen recht schnell an seine Grenzen. Teilt man die durch das Textkorpus abgedeckte Dramengeschichte in feingliedrigere Segmente, beispielsweise in zehn Zeiträume von nurmehr 20 Jahren, sinkt der F<hi rend="subscript">1</hi>-Wert auf 0.431 (Precision: 0.585, Recall: 0.451).
-</p>
-<table rend="rules">
-  <head>Tabelle 1: Modelle trainiert auf 443 Dramen; 10-<hi rend="italic">fold cross validation</hi>, <hi rend="italic">SMOTE-sampling</hi>.  </head>
-<row>
-<cell rend="DH-Default"/>
-<cell rend="DH-Default">Precision </cell>
-<cell rend="DH-Default">Recall </cell>
-<cell rend="DH-Default">F<hi rend="subscript">1</hi>
-</cell>
-</row>
-<row>
-<cell rend="DH-Default">Baseline (
-                            <hi rend="italic">Avg. Degree</hi>) 
-                        </cell>
-<cell rend="DH-Default">0.701</cell>
-<cell rend="DH-Default">0.702</cell>
-<cell rend="DH-Default">0.698</cell>
-</row>
-<row>
-<cell rend="DH-Default">Netzwerkmetriken</cell>
-<cell rend="DH-Default">0.829</cell>
-<cell rend="DH-Default">0.821</cell>
-<cell rend="DH-Default">0.814</cell>
-</row>
-<row>
-<cell rend="DH-Default">Topic Model</cell>
-<cell rend="DH-Default">0.899</cell>
-<cell rend="DH-Default">0.903</cell>
-<cell rend="DH-Default">0.899</cell>
-</row>
-<row>
-<cell rend="DH-Default">Gesamtes Modell</cell>
-<cell rend="DH-Default">0.921</cell>
-<cell rend="DH-Default">0.925</cell>
-<cell rend="DH-Default">0.921</cell>
-</row>
-</table>
-<!-- <p style="text-align:left; "> -->
-<!-- <hi rend="italic">Tabelle</hi> 1: Modelle trainiert auf 443 Dramen; 10- -->
-<!--                     <hi rend="italic">fold cross validation</hi>,  -->
-<!--                     <hi rend="italic">SMOTE-sampling</hi>.  -->
-<!--                 </p> -->
-<p style="text-align:left; ">Die in 
-                    <hi rend="italic">Tabelle </hi>1 dargestellten Klassifikationsergebnisse erlauben nun einen Einblick in die Unterscheidungskraft der eingespeisten Features. 
-                    <hi rend="italic">Abbildung </hi>3 zeigt die sogenannte 
-                    <hi rend="italic">Feature Importance</hi>. Sie vergleicht nach und nach die Leistungsfähigkeit des Modells, wenn jeweils eines der Features nicht beachtet wird. Die Abnahme an Performanz entspricht dann der relativen Wichtigkeit des nicht einbezogenen Features für die Klassifikation. Die Abbildung verdeutlicht, dass das 
-                    <hi rend="italic" xml:space="preserve">Topic Model </hi>– insbesondere die 
-                    <hi rend="italic">Topics </hi>8 und 5 – einen starken Einfluss auf die Klassifikation nimmt. Doch bei weitem nicht jedes 
-                    <hi rend="italic" xml:space="preserve">Topic </hi>(etwa T17, T7, T10) ist von solch großer Bedeutung. Als gewichtigste Netzwerkmetrik lässt sich die 
-                    <hi rend="italic">Betweenness Centrality</hi> identifizieren. Der durchschnittliche Grad (
-                    <hi rend="italic">Average Degree</hi>) ist mittig platziert, wobei der Einfluss der weniger entscheidungstragenden Features insgesamt ähnlich gering ausfällt.
-                </p>
-<figure>
-<graphic height="10.137069444444444cm" n="1003" rend="inline" url="227_final-52ddd69ec662fb0104be16343fca2961.png" width="15.991416666666666cm"/>
-  <head>Abbildung 3: <hi rend="italic">Feature Importance</hi> des Klassifikationsmodells.</head>
-</figure>
-<!-- <p style="text-align:left; "> -->
-<!-- <hi rend="italic">Abbildung</hi> 3:  -->
-<!--                     <hi rend="italic">Feature Importance</hi> des Klassifikationsmodells. -->
-<!--                 </p> -->
 </div>
-<div rend="DH-Heading1" type="div1">
-  <head>Operationalisierung und Interpretation</head>
-  <p style="text-align:left; ">Auf Basis dieser Daten lassen sich nun analog zu 
-  <hi rend="italic">Abbildung</hi> 1 Werte berechnen und visualisieren, die die zeitliche Entwicklung der als relevant erscheinenden Merkmale darstellen, etwa von 
-  <hi rend="italic">Topic</hi> 8 oder der 
-  <hi rend="italic">Betweenness Centrality</hi>. Diese sollten – vertraut man der Klassifikation – einen höheren Aussagegehalt haben, als der zu Beginn diskutierte 
-  <hi rend="italic">Average Degree</hi>.
-  </p>
-  <figure>
-    <graphic height="11.064875cm" n="1004" rend="inline" url="227_final-f2a1ee9d7f890f2df22927e39df6b22b.png" width="15.991416666666666cm"/>
-    <head>Abbildung 4: <hi rend="italic">Topic </hi>8 im historischen Verlauf, normalisiert nach Dramenlänge; <hi rend="italic" xml:space="preserve">LOESS </hi>Kurve.</head>
-  </figure>
-  <!-- <p style="text-align:left; "> -->
-<!-- <hi rend="italic">Abbildung 4</hi>:  -->
-<!--                     <hi rend="italic">Topic </hi>8 im historischen Verlauf, normalisiert nach Dramenlänge;  -->
-<!--                     <hi rend="italic" xml:space="preserve">LOESS </hi>Kurve. -->
-<!--                 </p> -->
-<figure>
-  <graphic height="11.064875cm" n="1005" rend="inline" url="227_final-444e0753dc6a8b3cb7ce32bd5149fa7b.png" width="15.991416666666666cm"/>
-  <head>Abbildung 5: <hi rend="italic">Betweenness Centrality</hi> im historischen Verlauf; <hi rend="italic" xml:space="preserve">LOESS </hi>Kurve.</head>
-</figure>
-<!-- <p style="text-align:left; "> -->
-<!-- <hi rend="italic">Abbildung </hi>5:  -->
-<!--                     <hi rend="italic">Betweenness Centrality</hi> im historischen Verlauf;  -->
-<!--                     <hi rend="italic" xml:space="preserve">LOESS </hi>Kurve. -->
-<!--                 </p> -->
-<p style="text-align:left; ">
-  <hi rend="italic">Abbildung </hi>4 zeigt die Frequenzen, mit denen sich die Wörter aus 
-  <hi rend="italic">Topic </hi>8 auf die einzelnen Dramen verteilen. Tatsächlich veranschaulicht die Visualisierung eine recht deutliche Entwicklung. Von 1730 ausgehend scheint 
-  <hi rend="italic">Topic </hi>8 bis etwa 1830 recht stark an Einfluss einzubüßen, ehe die Werte fortan auf einem stabilen Niveau bleiben. Betrachtet man die zehn ausschlaggebendsten Wörter des 
-  <hi rend="italic" xml:space="preserve">Topics </hi>– ‚liebe‘, ‚herz‘, ‚machen‘, ‚lassen‘, ‚sagen‘, ‚vater‘, ‚schwester‘, ‚sehen‘ und ‚weiß‘ –, lässt sich dieser Verlauf auch literaturgeschichtlich plausibilisieren. Zu einem großen Teil können diese Begriffe mit bürgerlichen Trauerspielen und Rührstücken in Verbindung gesetzt werden, die für die Dramengeschichte des 18. Jahrhunderts prägend sind.
-</p>
-<p style="text-align:left; ">Auch der in 
-<hi rend="italic">Abbildung </hi>5 dargestellte diachrone Verlauf der 
-<hi rend="italic">Betweenness Centrality</hi> macht eine Entwicklung der Werte sichtbar. Die lokal gewichtete Regression veranschaulicht einen Höhepunkt zwischen 1810 und 1825. Die 
-<hi rend="italic">Betweenness</hi> Centrality bemisst, in welchem Maß ein Knoten im Netzwerk selbst zum Teil eines Pfades wird, also die indirekte Verbindung von zwei anderen Knoten ermöglicht (vgl. Newman 2010: 185–193). Auf Dramennetzwerke übertragen ließen sich dadurch Figuren identifizieren, die als Brückenfiguren agieren und voneinander getrennte Figurengruppen verbinden. Die Darstellung lässt sich somit als weiterer Indikator für die zu Beginn skizzierte These von Trilcke und Fischer lesen. Die zusehende Abkehr von der Regelpoetik in der zweiten Hälfte des 18. Jahrhunderts scheint eine komplexere Struktur der Dramen nach sich zu ziehen, die sich in den Netzwerkdaten wiederfinden lässt.
-</p>
-<p style="text-align:left; ">Die größte Schwierigkeit bei der Interpretation dieser Daten bleibt jedoch nach wie vor bestehen und ist den hier gezeigten Analysen vorgelagert. Es ist die Operationalisierung der Fragestellung, die zumeist mit einem großen konzeptuellen Aufwand verbunden ist (vgl. Gius 2019: 2f.; Reiter / Willand 2018). Denn unklar bleibt, wie sich Zentralitätsmetriken in einem Figurennetzwerk oder Wahrscheinlichkeitsverteilungen von Worthäufigkeiten zu literaturwissenschaftlichen Kategorien verhalten. Die bemessenen Werte müssten sich konzeptionell so rückübersetzen lassen, dass sie auch mit Blick auf spezifisch literaturwissenschaftliche Fragestellungen interpretiert werden können. Dass etwa die Handlung literarischer Texte nicht einfach durch ein Figurennetzwerk abzubilden ist, muss auch Moretti erkennen, weshalb er die Netzwerktheorie letztlich nurmehr als Vorstufe, als „beginning of the beginning“ (Moretti 2011: 2) zu einer quantifizierbaren Handlung einordnet.</p>
+<div rend="DH-Heading" type="div1">
+<head>Potentielle Themen und Fragen</head>
+<p>Die folgende Sammlung potentieller für das Barcamp zentraler Themen und Fragen aus dem Bereich der Lehre und Vermittlung von data literacy, insbesondere FDM, in den Geisteswissenschaften, dient einem ersten Eindruck. Sie beruht auf den Erfahrungen der Einreichenden und der aktuellen Forschung und erhebt keinen Vollständigkeitsanspruch:</p>
+<list type="unordered">
+<item>Welche didaktischen Konzepte eignen sich für welche Zielgruppen?</item>
+<item>Welche Formate eignen sich für die (weiterbildende) Sensibilisierung und Qualifikation (z. B. allgemeine Workshops, Coffee Lectures, Learning by Doing etc.)? </item>
+<item>Welche Strategien eignen sich, um data literacy in geisteswissenschaftliche Curricula zu integrieren? </item>
+<item>Über welche Kompetenzen müssen FDM-Lehrende und -Trainer*innen verfügen und wie kann man diese vermitteln? </item>
+<item>Welche Datenkompetenzen benötigen alle Geisteswissenschaftler*innen und welche sollten spezifisch in DH-Studiengänge integriert werden?</item>
+<item>Welche Aspekte von data literacy sind spezifisch für die Geisteswissenschaften, welche generisch?</item>
+<item> Wie lassen sich Forschende für FDM gewinnen: Top-Down oder Bottom-Up, Push oder Pull?</item>
+<item>Welche Akteure spielen für die Etablierung von Vermittlungsangeboten eine Rolle? </item>
+<item>Welche Maßnahmen gibt es zur Verbesserung der Zugänglichkeit zu FDM-Anlaufstellen bzw. -Institutionen und Serviceangeboten? </item>
+<item>Welche Beratungskompetenzen und -strategien sind zur Vermittlung von bedarfsorientierten FDM-Kompetenzen und -Lösungen innerhalb von Beratungsgesprächen nötig? </item>
+</list>
 </div>
-<div rend="DH-Heading1" type="div1">
-<head>Fazit und Ausblick</head>
-<p style="text-align:left; ">Das vorgestellte multidimensionale Modell
-liefert sinnvolle Ergebnisse und kann den recht weit gefassten
-Veröffentlichungszeitraum deutschsprachiger Dramen mit angemessener
-Genauigkeit (F<hi rend="subscript">1</hi>
-<hi rend="italic">-</hi>Wert 0.921) klassifizieren. Da die Entstehung neuer literarischer Epochen und Strömungen zumeist als fließender Prozess zu beschreiben ist, muss die hier vorgestellte Methode aber als Heuristik eingestuft werden, die vor allem zum Ziel hat, die entscheidungstragenden Merkmale der Klassifikation zu identifizieren. Erst dadurch bietet die Klassifikationsaufgabe Anschlusspotential für literarhistorische Studien. Für künftige Arbeiten erscheint es einerseits lohnend, eine metrische Vorhersage der Veröffentlichungsjahre zu erproben. Dadurch würde die Vorhersage deutlich an Präzision gewinnen. Andererseits würde es sich anbieten, neben 
-<hi rend="italic">Topic Modeling</hi> und Netzwerkanalysen auch stilometrische Maße in die Klassifikation zu integrieren. So könnte auch der Stil der Stücke – in einem quantitativen und damit weiten Sinn – Teil der Voraussage werden.
-</p>
+<div rend="DH-Heading" type="div1">
+<head>Durchführung / Ablauf</head>
+<p>Das Barcamp-Format sieht vor, dass zum Veranstaltungsbeginn alle Themenvorschläge gesammelt werden und auf einem „Marktplatz” verhandelt wird, welche Diskussionsgruppen mit welchen Formaten (z. B. Gruppendiskussion, Fishbowl, Knowledge Café, vgl. DCC 2019) entstehen und wer an welcher Diskussionsgruppe teilnimmt. Zur Themenfindung für das Barcamp werden daher die Organisator*innen im Vorfeld zum einen über verschiedene Kanäle aus dem Bereich der DH- und FDM-Communities für Vorschläge werben, zum anderen werden die Organisator*innen aus der eigenen Praxis Themen vorschlagen. Alle Themenvorschläge werden zentral online gesammelt, damit sich alle Interessierten über die eingegangenen Vorschläge informieren können. Alle Vorschläge werden zusammen mit tagesaktuellen Vorschlägen zu Beginn des Barcamps auf dem “Marktplatz” anhand des Feedbacks der Teilnehmer*innen gruppiert, priorisiert und darauf basierend die endgültige Tagesordnung festgelegt. Zusätzlich wird es zur allgemeinen inhaltlichen Unterfütterung bzw. zur Einstimmung auf die Barcamp-Sessions kurze “Teaser-Talks” (ca. 2-3 Min.) geben (u. a. von Mitgliedern des Organisationskomitees bzw. Teilnehmer*innen, im Vorfeld wird auf diese Möglichkeit hingewiesen).</p>
+<p>Der zeitliche Rahmen ist so gestaltet, dass es möglich sein wird, grundlegende Fragen zu thematisieren und spezifische Aspekte zu vertiefen. Wir sehen für die thematische Diskussion 45-minütige Sessions für kleinere Gruppendiskussionen (ggf. andere Formate) vor, die je nach Anzahl der Themenvorschläge, Interesse und Teilnehmerzahl parallel stattfinden können. Für die Dokumentation, Moderation und Durchführung des Barcamps sind insbesondere die Einreichenden verantwortlich. Zusätzlich werden alle thematischen Sessions durch die Gruppen selbst dokumentiert (z. B. Flipcharts, Etherpad) und anschließend die Ergebnisse dem Plenum präsentiert. Hierfür wird jeweils ein/e Verantwortliche/r benannt (Dokumentator*in &amp; Präsentator*in). Für die Ergebnispräsentation der thematischen Sessions sind am Ende des Nachmittags gesonderte Slots vorgesehen. Die Dokumentationsmaterialien dienen als Grundlage für weitere Formate der Ergebnissicherung und -verbreitung (siehe unten).</p>
+</div>
+<div rend="DH-Heading" type="div1">
+  <head>Organisatorisches</head>
+  <div rend="DH-Heading" type="div2">
+    <head>Ziele &amp; Sicherung der Ergebnisse</head>
+    <!-- <p>Ziele &amp; Sicherung der Ergebnisse</p> -->
+    <p>Es ist ein ausführlicher Blogpost zu den Ergebnissen
+    geplant. Abhängig vom Feedback der Teilnehmenden und der breiteren
+    Community sind weitere Formate (White Paper, Artikel) möglich.</p>
+    <p>&#160;</p>
+  </div>
+  <div rend="DH-Heading" type="div2">
+    <head>Beitragende</head>
+    <!-- <p>Beitragende</p> -->
+    <p>Das Barcamp wird von Mitgliedern der DHd-AG Datenzentren und ausgewiesenen Expert*innen organisiert und durchgeführt:</p>
+    <list type="unordered">
+      <item>Ulrike Wuttke (Potsdam) ist stellvertretende Sprecherin der AG Datenzentren und Mitarbeiterin im DFG-Projekt RDMO. Sie verfügt über Expertise im Bereich Forschungsdatenmanagement unter besonderer Berücksichtigung nationaler und internationaler Infrastrukturen und Community-Anforderungen und lehrt in diesem Bereich. </item>
+      <item>Marina Lemaire (Trier) ist Referentin für Projektmanagement im Bereich digitaler Forschungsinfrastrukturen in den Geistes- und Sozialwissenschaften am Servicezentrum eSciences und Mitglied in der AG Datenzentren. Ihre Expertise beruht auf mehr als 10-jähriger FDM-Beratungspraxis in interdisziplinären Forschungskontexten, der Forschung zur FDM-Implementierung an Forschungseinrichtungen und der Durchführung von FDM-Workshops, Einzelschulungen und Informationsveranstaltung.</item>
+      <item>Patrick Helling und Jonathan Blumtritt (Köln) vertreten das DCH in der AG Datenzentren. Sie greifen auf eine über 6-jährige Beratungserfahrung im geisteswissenschaftlichen FDM zurück, betreiben aktives FDM an der Universität zu Köln (UzK) und sind im Bereich der universitären FDM-Lehre tätig. Jonathan Blumtritt ist außerdem technischer Koordinator im BMBF-Verbundprojekt KA3. </item>
+      <item>Stefan Schmunk (Darmstadt) ist Professor für Informationswissenschaft / Digital Libraries an der Hochschule Darmstadt (h-da) und beschäftigt sich in Forschung und Lehre seit zehn Jahren mit Forschungsdaten, FDM und digitalen Forschungsinfrastrukturen in den Geistes- und Kulturwissenschaften. Er leitet seit April 2019 das HDA-Teilprojekt der Hessischen Forschungsdateninfrastruktur (HeFDI).</item>
+      <item>Stefan Schulte (Marburg) ist Koordinator des Marburg Centers for Digital Culture &amp; Infrastructure (MCDCI, in Gründung) und arbeitet seit mehreren Jahren zum Forschungsdatenmanagement in den Geisteswissenschaften. Er ist Mitherausgeber der Open Access-Zeitschrift “Bausteine Forschungsdatenmanagement” und hat 2018 das Projekt „TRUST - Training zum Umgang mit sensiblen Forschungsdaten” durchgeführt. </item>
+    </list>
+    <p>Zusätzlich liegen bereits Interessenbekundungen zur Teilnahme
+    aus der Community vor (u. a. seitens FDMentor und der DINI-Nestor
+    UAG Schulungen/Fortbildungen).</p>
+  </div>
+  <div type="div1" rend="DH-Heading1">
+    <head>Zahl der möglichen Teilnehmerinnen und Teilnehmer</head>
+    <p>
+      Ca. 30-40 Teilnehmer*innen zuzüglich des Organisationskommitees.
+    </p>
+  </div>
+  <!-- <p>Zahl der möglichen Teilnehmer*innen</p> -->
+  <!-- <list type="unordered"> -->
+  <!-- <item>ca. 30-40 Teilnehmer*innen zuzüglich des Organisationskommitees </item> -->
+  <!-- </list> -->
+  <div type="div1" rend="DH-Heading1">
+    <head>Benötigte technische Ausstattung</head>
+    <p>
+      <list type="unordered">
+	<item>Aufgrund der vorgesehenen Gruppendiskussionen wäre ein gut unterteilbarer, großer Raum bzw. mehrere Räume sinnvoll </item>
+	<item>Moderationsmaterialien, insbesondere Flipcharts und eine große Pinnwand für die Sessionplanung (inkl. Moderationskarten, Flipchartstiften und Pins) und kleinere Pinnwände für die Gruppenarbeit </item>
+	<item>Beamer für Begrüßung und einführende Teaser-Talks </item>
+      </list>
+    </p>
+  </div>
+  <!-- <p>Benötigte technische Ausstattung</p> -->
+  <!-- <list type="unordered"> -->
+  <!-- <item>Aufgrund der vorgesehenen Gruppendiskussionen wäre ein gut unterteilbarer, großer Raum bzw. mehrere Räume sinnvoll </item> -->
+  <!-- <item>Moderationsmaterialien, insbesondere Flipcharts und eine große Pinnwand für die Sessionplanung (inkl. Moderationskarten, Flipchartstiften und Pins) und kleinere Pinnwände für die Gruppenarbeit </item> -->
+  <!-- <item>Beamer für Begrüßung und einführende Teaser-Talks </item> -->
+  <!-- </list> -->
 </div>
 </body>
 <back>
   <div type="notes">
-    <note n="1" rend="footnote text" xml:id="ftn1">
-      Da literarische Epochen und Strömungen eine fließende Entwicklung nehmen, ergeben sich durch diese Setzung zwangsläufig Überschneidungen. So fallen beispielsweise Lessings 
-      <hi rend="italic" xml:space="preserve">Emilia Galotti </hi>(1772) und Schillers 
-      <hi rend="italic" xml:space="preserve">Die Räuber </hi>(1781), zwei schon strukturell sehr verschieden gebaute Stücke unterschiedlicher Strömungen, in die gleiche Klasse.
+    <note n="1" rend="footnote text" xml:id="ftn0"> Siehe NFDI-Absichtserklärungen: 
+    <ref
+	target="https://www.dfg.de/foerderung/programme/nfdi/absichtserklaerungen/index.html">https://www.dfg.de/foerderung/programme/nfdi/absichtserklaerungen/index.html</ref>
+    [letzter Zugriff 10.09.2019].
     </note>
-    <note n="2" rend="footnote text" xml:id="ftn2">
-      Für eine Übersicht über die verschiedenen Metriken vgl. Newman (2010): 168–204.
-    </note>
-    <note n="3" rend="footnote text" xml:id="ftn3">
-      Die Implementierung erfolgt über die Pakete randomForest und  Caret für R:
-      <ptr target="https://cran.r-project.org/web/packages/randomForest/index.html/"/>
-      und <ptr target="https://cran.r-project.org/web/packages/caret/"/>.
-      Caret bietet vielfältige Optionen für das 
-      <hi rend="italic">Preprocessing</hi> und 
-      <hi rend="italic">Sampling</hi> der Daten. Ich nutze die Methoden 
-      <hi rend="italic">center</hi> und 
-      <hi rend="italic">scale</hi> zur Kalibrierung und 
-      <hi rend="italic">SMOTE-sampling</hi>, um die zahlenmäßige Ungleichverteilung der Dramen in den verschiedenen Zeiträumen auszugleichen (eine genauere Beschreibung eines ähnlichen Versuchsaufbaus findet sich in Krautter / Pagel / Reiter / Willand 2018: 19–29).
-    </note>
-    <note n="4" rend="footnote text" xml:id="ftn4">
-      Die Leistungsfähigkeit einer <hi rend="italic" xml:space="preserve">Majority Baseline </hi>wäre aufgrund des 
-      <hi rend="italic">multiclass</hi> Klassifikation sehr eingeschränkt (Precision: 0.291).
+    <note n="2" rend="footnote text" xml:id="ftn1"> Siehe 
+    <ptr target="https://www.go-fair.org/fair-principles/"/> [letzter Zugriff 10.09.2019].
     </note>
   </div>
   <div type="bibliogr">
 <listBibl>
-  <head>Bibliographie</head>
-  <bibl style="text-align:left; ">
-    <hi rend="bold" xml:space="preserve">Blei, David M. / Ng, Andrew Y.  / Jordan, Michael I. </hi>(2003). „Latent Dirichlet Allocation“, in: 
-    <hi rend="italic">The Journal of machine Learning research</hi> 3: 993–1022.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Breiman, Leo</hi> (2001): „Random Forests“, in: 
-    <hi rend="italic">Machine Learning</hi> 24 (2): 5–32.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Brenner, Peter J.</hi> (2011): 
-    <hi rend="italic">Neue deutsche Literaturgeschichte. Von ‚Ackermann‘ zu Günter Grass</hi>. Berlin / New York: De Gruyter.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Du, Keli</hi> (2019):
-    „A Survey on LDA Topic Modeling in Digital Humanities“, in: 
-    <hi rend="italic">DH 2019. Conference Abstracts</hi>. https://dev.clariah.nl/files/dh2019/boa/0326.html [letzer Zugriff 05. Januar 2019].
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Fischer, Frank / Börner, Ingo / Göbel, Mathias / Hechtl, Angelika / Kittel, Christopher / Milling, Carsten / Trilcke, Peer</hi> (2019): „Programmable Corpora. Die digitale Literaturwissenschaft zwischen Forschung und Infrastruktur am Beispiel von DraCor“, in: 
-    <hi rend="italic">DHd 2019. Konferenzabstracts:</hi> 194–197. DOI: 10.5281/zenodo.2596094 [letzer Zugriff 05. Januar 2019].
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Gius, Evelyn</hi> (2019): „Computationelle Textanalysen als fünfdimensionales Problem: Ein Modell zur Beschreibung von Komplexität“, in: 
-    <hi rend="italic" xml:space="preserve">Litlab Pamphlet </hi>8. https://www.digitalhumanitiescooperation.de/pamphlet-8-computationelle-textanalysen/ [letzter Zugriff 05. Januar 2019].
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Ho, Tin Kam</hi> (1995): „Random Decision Forests“, in: 
-    <hi rend="italic">Proceedings of the 3rd International Conference on Document Analysis and Recognition</hi>: 278–282.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Jannidis, Fotis</hi> (2017): „Netzwerke“, in: Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): 
-    <hi rend="italic" xml:space="preserve">Digital Humanities: Eine Einführung. </hi>Stuttgart: J.B. Metzler 148–161.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Jockers, Matthew L.</hi> (2013): 
-    <hi rend="italic">Macroanalysis. Digital Methods and Literary History.</hi> Urbana / Chicago / Springfield: University of Illinois Press.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Krautter, Benjamin / Pagel, Janis / Reiter, Nils / Willand, Marcus</hi> (2018): „Titelhelden und Protagonisten – Interpretierbare Figurenklassifikation in deutschsprachigen Dramen“, in: 
-    <hi rend="italic">Litlab Pamphlet</hi> 7. https://www.digitalhumanitiescooperation.de/wp-content/uploads/2019/06/p07_krautter_et_al-1.pdf [letzter Zugriff 05. Januar 2019].
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Moretti, Franco</hi> (2011): „Network Theory, Plot Analysis“, in: 
-    <hi rend="italic">Literary Lab Pamphlet</hi> 2. https://litlab.stanford.edu/LiteraryLabPamphlet2.pdf [letzer Zugriff 05. Januar 2019].
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Moretti, Franco</hi> (2013): „‚Operationalizing‘: or, the Function of Measurement in Modern Literary Theory“, in: 
-    <hi rend="italic">Literary Lab Pamphlet</hi> 6. https://litlab.stanford.edu/LiteraryLabPamphlet6.pdf [letzer Zugriff 27. September 2019].
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Moretti, Franco</hi> (2017): „Patterns and Interpretation“, in: 
-    <hi rend="italic">Literary Lab Pamphlet</hi> 15. https://litlab.stanford.edu/LiteraryLabPamphlet15.pdf [letzer Zugriff 05. Januar 2019].
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Newman, Mark E. J.</hi> (2010): 
-    <hi rend="italic">Networks: An Introduction</hi>. Oxford: UP.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold" xml:space="preserve">Reiter, Nils / Willand,
-    Marcus</hi> (2018):
-    „Poetologischer Anspruch und dramatische Wirklichkeit: Indirekte Operationalisierung in der digitalen Dramenanalyse. Shakespeares natürliche Figuren im deutschen Drama des 18. Jahrhunderts,
-    in: Bernhart, Toni / Willand, Marcus / Richter, Sandra / Albrecht, Andrea (eds.):
-    <hi rend="italic">Quantitative Ansätze in den Literatur- und Geisteswissenschaften: Systematische und historische Perspektiven</hi>. Berlin / Boston: De Gruyter
-    45–75.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Schöch, Christof</hi> (2017): „Gattungen des Kriminalromans: Ein quantitativer, Topic-basierter Zugang“, in: Koch, Corinna / Schmitz, Sabine / Lang, Sandra (eds.): 
-    <hi rend="italic">Dialogische Krimianalysen. Fachdidaktik und Fachwissenschaft untersuchen aktuelle Repräsentationsformen des französischen Krimis</hi>. Frankfurt a. M.: Peter Lang 37–64.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Trilcke, Peer</hi> (2013): „Social Network Analysis (SNA) als Methode einer textempirischen Literaturwissenschaft“, in: Ajouri, Philip / Mellmann, Katja / Rauen, Christoph (eds.): 
-    <hi rend="italic">Empirie in der Literaturwissenschaft</hi>. Münster: Mentis 201–247.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Trilcke, Peer / Fischer, Frank</hi> (2018): „Literaturwissenschaft als Hackathon. Zur Praxeologie der Digital Literary Studies und ihren epistemischen Dingen“, in: Huber, Martin / Krämer, Sybille (eds.): Sonderband 3 der ZfdG: Wie Digitalität die Geisteswissenschaften verändert: Neue Forschungsgegenstände und Methoden. http://www.zfdg.de/sb003_003 [letzter Zugriff 05. Januar 2019].
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Trilcke, Peer / Fischer, Frank / Göbel, Matthias / Kampkaspar, Dario</hi> (2016): „Theatre Plays as ‚Small Worlds‘? Network Data on the History and Typology of German Drama, 1730–1930“, in: 
-    <hi rend="italic">DH 2016. Conference Abstracts</hi>: 385–387.
-    <anchor xml:id="Hlk20520630"/>
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Vogel, Juliane</hi> (2012): „Aus dem Takt: Auftrittsstrukturen in Schillers 
-    <hi rend="italic">Don Karlos</hi>“, in: 
-    <hi rend="italic">Deutsche Vierteljahrsschrift für Literaturwissenschaft und Geistesgeschichte</hi> 86 (4): 532–546.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <anchor xml:id="Hlk20929611"/>
-    <hi rend="bold">Willand, Marcus</hi> (2017): „Hermeneutische Interpretation und digitale Analyse:
-    Versuch einer Verhältnisbestimmung“, in: Banki, Luisa / Scheffel, Michael (eds.): 
-    <hi rend="italic">Lektüren. Positionen zeitgenössischer Philologie</hi>. Trier: WVT 77–98.
-  </bibl>
+<head>Bibliographie</head>
+<bibl>
+  <hi rend="bold">Budd, A. / Dinkel, H. / Corpas, M. / Fuller, J.C. / Rubinat, L. / Devos, D.P. / Khoueiry, P.H. / Förstner, K.U. / Georgatos, F. / Rowland, F. / Sharan, M. / Binder, J.X. / Grace, T. / Traphagen, K. / Gristwood, A. / Wood, N.T. </hi> (2015): “Ten simple rules for organizing an unconference”, in: 
+  <hi rend="italic">PLoS Comput Biol.</hi> 11, e1003905, DOI: 10.1371/journal.pcbi.1003905.
+</bibl>
+<bibl>
+  <hi rend="bold">DCC </hi> (2019): “Unconference”, Blogpost: 
+  <ref target="http://www.dcc.ac.uk/events/idcc19/unconference">http://www.dcc.ac.uk/events/idcc19/unconference</ref> [letzter Zugriff 10.09.2019].
+</bibl>
+<bibl>
+  <hi rend="bold">DFG </hi> (2019): 
+  <hi rend="italic">Leitlinien zur Sicherung guter wissenschaftlicher Praxis: Kodex</hi>, Bonn, 
+  <ref target="https://www.dfg.de/download/pdf/foerderung/rechtliche_rahmenbedingungen/gute_wissenschaftliche_praxis/kodex_gwp.pdf">https://www.dfg.de/download/pdf/foerderung/rechtliche_rahmenbedingungen/gute_wissenschaftliche_praxis/kodex_gwp.pdf</ref>
+  [letzter Zugriff 10.09.2019].
+</bibl>
+<bibl>
+  <hi rend="bold">Dogunke, Swantje / Steyer, Timo / Mayer, Corinna</hi> (2018): “Barcamp Data and Demons: von Bestands- und Forschungsdaten zu Services. Treffen sich ein Bibliothekar, eine Archäologin, ein Informatiker, …” in: 
+  <hi rend="italic">LIBREAS. Library Ideas</hi> 33,
+  <ptr target="https://libreas.eu/ausgabe33/dogunke/"/> [letzter Zugriff 10.09.2019].
+</bibl>
+<bibl>
+  <hi rend="bold">Dolzycka, Dominika / Biernacka, Katarzyna / Helbig, Kerstin / Buchholz, Petra </hi> (2019): 
+  <hi rend="italic">Train-the-Trainer Konzept zum Thema Forschungsdatenmanagement (Version 2.0)</hi>, DOI: 
+  <ptr target="http://doi.org/10.5281/zenodo.2581292"/>.
+</bibl>
+<bibl>
+  <hi rend="bold">FDMentor &amp; DINI/nestor-AG Forschungsdaten </hi> (2018): "Materialkatalog zum Forschungsdatenmanagement (Version 1.0) [Data set]". DOI: 
+  <ptr target="http://doi.org/10.5281/zenodo.1209284"/>.
+</bibl>
+<bibl>
+  <hi rend="bold">Forschungsdaten.org </hi> (o. J.): "Data Policies", Webseite, 
+  <ptr target="https://www.forschungsdaten.org/"/>
+  [letzter Zugriff 10.09.2019].
+</bibl>
+<bibl>
+  <hi rend="bold">Helbig, Kerstin / Hahn, Uli / Jagusch, Gerald / Rex, Jessica</hi> (2018): “Erstellung und Realisierung einer institutionellen Forschungsdaten-Policy” in: 
+  <hi rend="italic">Bausteine Forschungsdatenmanagement</hi> 1: 17-23, DOI: 
+  <ptr target="https://doi.org/10.17192/bfdm.2018.1.7945"/>.
+</bibl>
+<bibl>
+  <hi rend="bold">Lemaire, Marina </hi> (2018): “Vereinbarkeit von Forschungsprozess und Datenmanagement. Forschungsdatenmanagement nüchtern betrachtet” in: 
+  <hi rend="italic">o-bib. Das offene Bibliotheksjournal</hi> 5(4): 237–247, DOI: 
+  <ptr target="https://doi.org/10.5282/o-bib/2018H4S237-247"/>.
+</bibl>
+<bibl>
+  <hi rend="bold">Muuß-Merholz, Jöran</hi> (2019): 
+  <hi rend="italic">Barcamps &amp; Co: Peer to Peer-Methoden für Fortbildungen</hi>, Weinheim: Beltz 
+  <ptr target="http://www.content-select.com/index.php?id=bib_view&amp;ean=9783407367082"/> [letzter Zugriff 11.12.2019].
+</bibl>
+<bibl>
+  <hi rend="bold">RfII</hi> (2016): <hi rend="italic">Leistung aus Vielfalt – Empfehlungen zu Strukturen, Prozessen und Finanzierung des Forschungsdatenmanagements in Deutschland</hi>, Göttingen, 
+  <ptr target="http://www.rfii.de/?wpdmdl=1998"/> [letzter Zugriff 10.09.2019].
+</bibl>
+<bibl>
+  <hi rend="bold">RfII</hi> (2019): 
+  <hi rend="italic">Digitale Kompetenzen – dringend gesucht! Empfehlungen zu Berufs- und Ausbildungsperspektiven für den Arbeitsmarkt Wissenschaft</hi>, Göttingen, 
+  <ptr target="http://www.rfii.de/?wpdmdl=3883"/> [letzter Zugriff 10.09.2019].
+</bibl>
+<bibl>
+  <hi rend="bold">Schüller, Katharina / Busch, Paulina / Hindinger, Carina</hi> (2019): 
+  <hi rend="italic">Future Skills: Ein Framework für Data Literacy</hi>. Hochschulforum Digitalisierung. Arbeitspapier Nr. 47. 
+  <ptr target="https://hochschulforumdigitalisierung.de/sites/default/files/dateien/HFD_AP_Nr_47_DALI_Kompetenzrahmen_WEB.pdf"/> [letzter Zugriff 10.09.2019].
+</bibl>
+<bibl>
+  <hi rend="bold">Tóth-Czifra, Erzsébet / Wuttke, Ulrike</hi> (2019): “Loners, Pathfinders, or Explorers? How are the Humanities Progressing in Open Science?" (Bericht vom Open Science Barcamp Berlin, 2019), Blogpost Generation R, 20.04.2019, DOI: 
+  <ptr target="https://doi.org/10.25815/x516-wf23"/>.
+</bibl>
+<bibl>
+  <hi rend="bold">Wiljes, Cord / Cimiano, Philipp</hi> (2019): “Teaching Research Data Management for Students” in: 
+  <hi rend="italic">Data Science Journal</hi> 18(1), DOI: 
+  <ptr target="http://doi.org/10.5334/dsj-2019-038"/>.
+</bibl>
+<bibl>
+  <hi rend="bold">Wuttke, Ulrike / Klar, Jochen</hi> (2019): "How FAR is FAIR? Der öffentliche Zugang zu geisteswissenschaftlichen Forschungsdaten als gute wissenschaftliche Praxis und die Rolle des Forschungsdatenmanagements", Vortragsfolien, DOI: 
+  <ptr target="http://doi.org/10.5281/zenodo.3365979"/>.
+</bibl>
 </listBibl>
 </div>
 </back>

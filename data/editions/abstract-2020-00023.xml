@@ -1,32 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="135_final-ECKL_Markus_Der_Event_Crawl_als_Ansatz_f_r_den_Aufbau_von_We" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="211_final-MERTGENS_Andreas__Re__Collecting_Theatre_History__Wissensdin" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
 <title type="full">
-<title type="main">Der Event Crawl als Ansatz für den Aufbau von Webarchiven am Beispiel von politischen Wahlkämpfen</title>
+<title type="main">(Re-)Collecting Theatre History: Wissensdinge, Biographien, Wirkungsräume</title>
 <title type="sub"/>
 </title>
 <author>
 <persName>
-<surname>Eckl</surname>
-<forename>Markus</forename>
+<surname>Mertgens</surname>
+<forename>Andreas</forename>
 </persName>
-<affiliation>Uni Passau, Deutschland</affiliation>
-<email>markus.eckl@uni-passau.de</email>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>a.mertgens@googlemail.com</email>
 </author>
 <author>
 <persName>
-<surname>Gassner</surname>
-<forename>Sebastian</forename>
+<surname>Türkoğlu</surname>
+<forename>Enes</forename>
 </persName>
-<affiliation>Uni Passau, Deutschland</affiliation>
-<email>Sebastian.Gassner@uni-passau.de</email>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>enes.tuerkoglu@uni-koeln.de</email>
+</author>
+<author>
+<persName>
+<surname>Probst</surname>
+<forename>Nora</forename>
+</persName>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>nora.probst@uni-koeln.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2020-01-03T21:53:01.567907379</date>
+<date>2020-01-06T20:32:26.308823918</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -54,94 +62,173 @@
 <term>Paper</term>
 </keywords>
 <keywords n="subcategory" scheme="ConfTool">
-<term>Posterpräsentation</term>
+<term>Vortrag</term>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Webarchive</term>
-<term>Event Crawl</term>
-<term>Wahlkampf</term>
+<term>Theater</term>
+<term>Nachlässe</term>
+<term>Prosopographie</term>
+<term>LIDO</term>
+<term>XML</term>
+<term>XSLT</term>
+<term>Biographie</term>
+<term>eXist-DB</term>
+<term>Netzwerke</term>
+<term>Digitalisierung</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Inhaltsanalyse</term>
+<term>Umwandlung</term>
+<term>Sammlung</term>
 <term>Modellierung</term>
-<term>Archivierung</term>
-<term>Identifizierung</term>
-<term>Metadaten</term>
-<term>Forschungsprozess</term>
+<term>Netzwerkanalyse</term>
+<term>Daten</term>
+<term>Personen</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
+<div type="div1">
+<head>Fachwissenschaftliche Hintergründe</head>
 <p>
-<anchor xml:id="id_docs-internal-guid-4e125d22-7fff-27eb-5b72-9d05986e04ac"/>
-<hi rend="color(#000000)">Die vielfältigen internationalen Aktivitäten im Handlungsfeld Webarchivierung zeigen, dass der Aufgabe, die Inhalte im Web als eine neue Form von Quellenmaterial für die Wissenschaft dauerhaft zu sichern und zugänglich zu halten, in den Gedächtnis- und Forschungsinstitutionen inzwischen eine große Bedeutung beigemessen wird (Aubry 2010). So nimmt der Aufbau und die Erforschung von Webarchiven auch in den Sozial- und Geisteswissenschaften eine immer wichtigere Rolle ein (Brügger 2012; Milligan et al. 2019). Zu konstatieren ist aber, dass sowohl die Methoden ihrer Erzeugung, sowie die Analyse fachwissenschaftlicher Fragestellungen noch nicht hinreichend erforscht sind. </hi>
+Theaterhistorische Wissensdinge sind divers und unmittelbar mit vielfältigen historisch-kulturellen Bezügen aufgeladen. Die Objekte stammen teils unmittelbar aus der Aufführungspraxis (z.B. Masken und Requisiten) und sind damit Akteure und Zeugen des Geschehens. Zum Teil stammen sie aber auch aus Produktionsprozessen (z.B. Regiebücher, Bühnenbildentwürfe und -modelle) und ermöglichen damit einen Blick in die Prozesse, Mechanismen und Materialitäten des Theaters. Andere Objekte hingegen dokumentieren das ephemere Ereignis (z.B. Fotografien oder Kritiken) und erlauben so einen Zugriff auf die performativen Spuren einer Aufführung. Und wieder andere Objekte wie Programmhefte und Theaterzettel beinhalten historisch-kulturelle Kontextinformationen. Ergänzend zu den genannten Objektarten tragen Ego-Dokumente wie Briefe und Kalender eher eine sozio-historische Bedeutung: Sie geben Hinweise auf die beteiligten Individuen sowie deren Lebensläufe und Beziehungen. Die Bedeutungsebenen und Bezüge der Objekte sind nicht statisch: Mit jeder neuen Kontextualisierung weiten sich ihre Bedeutungsräume aus. Oft befinden sich Objekte an den Schnittstellen von diversen Verwendungsmöglichkeiten – bspw. beschreiben Kritiken nicht nur, was auf der Bühne geschehen ist, sie bilden auch Publikumsreaktionen und damit einen wichtigen Teil der Rezeptionsgeschichte ab.<ref n="1" target="ftn1"/>
+<hi rend="background-color(#ffffff)"> </hi>
 </p>
 <p>
-<hi rend="color(#000000)">Politische Wahlkämpfe sind beispielsweise nicht nur für die Politikwissenschaft, sondern auch für andere sozial- und geisteswissenschaftliche Disziplinen ein wichtiges Forschungsfeld. Angesichts der zunehmenden Verlagerung von Wahlkämpfen auf virtuelle Arenen ergeben sich methodische Herausforderungen, wie diese politischen Diskurse beobachtet und analysiert werden können. So steigt der Umfang von zu untersuchenden Inhalten und Diskursen enorm an und herkömmliche, qualitative Analysemethoden stoßen an ihre Grenzen. Zum anderen verschwinden nach einiger Zeit immer mehr relevante Inhalte im Web und können nicht mehr abgerufen werden. In diesem Zusammenhang wird der Aufbau und die Nutzung von Webarchiven immer bedeutender, wobei angesichts des diachronen Verlaufs von Wahlkämpfen auch spezifische Strategien des Web-Crawlings notwendig sind (Eckl &amp; Rehbein 2018). Der Event Crawl, als ein möglicher Ansatz der Webarchivierung, kann diese besonderen Anforderungen nicht nur berücksichtigen, sondern er ermöglicht auch die Archivierung digitaler Diskurslandschaften von Ereignissen (Brügger 2012, Rogers 2019).</hi>
+Theateraufführungen lassen sich verstehen als das Ergebnis einer intensiven und oft monatelangen Zusammenarbeit unterschiedlichster Professionen: Akteur_innen<ref n="2" target="ftn2"/>
+<hi rend="background-color(#ffffff)"> aus den Tätigkeitsbereichen Regie, Darstellung, Bühnen- und Kostümbild, Bühnentechnik und vielen weiteren bilden ein komplexes Netzwerk, das für einen begrenzten Zeitraum besteht und im organisierten Zusammenspiel eine Inszenierungsidee auf der Theaterbühne verwirklicht. Theaterhistorisch relevante Forschungsobjekte beinhalten implizite und explizite Spuren dieser Verwirklichung. Der Wirkungsraum der Objekte erstreckt sich dabei sowohl auf Ereignisse als auch auf die Akteur_innen, die an diesen Ereignissen beteiligt waren. Die unterschiedlichen Ereignisse, zwischen denen Beziehungen und Interdependenzen bestehen, lassen sich als das Ergebnis von komplexen Interaktionen zwischen Akteur_innen beschreiben und können somit als Modelle für personenbezogene Interaktionsnetzwerke dienen. Um diese Netzwerke erfassen zu können, müssen nicht nur die relevanten Objekte mit </hi>
+<hi rend="background-color(#ffffff)">inhaltsreichen Daten erschlossen werden, sondern auch die Relationen zwischen diesen Daten modelliert werden. </hi>
 </p>
 <p>
-<hi rend="color(#000000)">Das Poster möchte auf Grundlage von zwei durchgeführten Event Crawls, dem bayerischen Landtagswahlkampf 2018 und dem Europawahlkampf 2019, die methodischen Herausforderungen und deren Lösungsansätze darlegen und die Möglichkeiten hinsichtlich der Analyse dieses Webarchives mit Methoden der Digital Humanities diskutieren. Bei beiden Wahlkämpfen wurden Webseiten von Medienhäusern, Parteien und Politikern (+social media accounts) mehrfach gecrawlt und daraus ein Archiv mit einem Umfang von mehr als 4 TB aufgebaut.</hi>
+<hi rend="background-color(#ffffff)">Diesen vergänglichen Netzwerken von Ereignissen und Akteur_innen im 20. Jahrhundert spürt die Theaterwissenschaftliche Sammlung (TWS) in Zusammenarbeit mit Cologne Center for eHumanities (CCeH) nach. Das Forschungsprojekt </hi>
+<hi rend="background-color(#ffffff)italic">(Re-)Collecting Theatre History</hi>
+<hi rend="background-color(#ffffff)"> zielt auf die theaterwissenschaftliche Resystematisierung personenbezogener Bestände in den theaterhistorischen Sammlungen der Universität zu Köln und der FU Berlin sowie ergänzend der Theatermuseen Düsseldorf und München ab. Die scheinbare ‚Zufälligkeit‘ von Lebenswegen, die sich nicht den Ordnungsbegriffen der politischen oder der Kunstgeschichte unterordnet, soll zum Ausgangspunkt genommen werden, um die Netzwerke ebenso zu erhellen wie die Frage nach personellen und ästhetischen Kontinuitäten im Theaterbetrieb.</hi>
 </p>
-<p>In Abgrenzung zum Web Scraping einerseits, bei dem Inhalte von möglichst vielen Webseiten automatisiert gecrawlt werden, und dem Selektiven Crawling andererseits, bei dem eine sehr begrenzte Anzahl von Webseiten gecrawlt werden, besteht hinsichtlich des Event Crawls die Herausforderung, die Grenzen des Events und somit die relevanten Webinhalte zu bestimmen. Durch eine sachliche, zeitliche und akteurszentrierte Eingrenzung des Gegenstandes ist es möglich, relevante Webseiten und -inhalte zu bestimmen und dieses Vorgehen kann einen wichtigen Beitrag hinsichtlich der Diskussion über die Vollständigkeit von Webarchiven liefern (Weber &amp; Napoli 2018). Wir teilen hier die Auffassung von Brügger (2018), dass Webarchive in der Regel unvollständig sind und eine hohe Selektivität aufweisen. Auch wenn durch unsere Eingrenzungen sich kein vollständiges Webarchiv aufbauen lässt, ist es dadurch dennoch möglich, approximativ diesem Ziel näher zu kommen. Vielmehr soll durch die gewählte Abgrenzung des Untersuchungsgegenstandes, die zentralsten Diskurse der beiden Wahlkämpfe erfasst werden. Im Gegensatz zu manch anderen Webarchiven, die eine hohe Selektivität aufweisen, nicht zuletzt aufgrund anderer Crawlmethoden, sind hier vielversprechende Ergebnisse zu erwarten. </p>
+<p>Die im Projekt entwickelte Plattform eröffnet Querverbindungen und Vergleichsmöglichkeiten der Bestände in den wichtigsten universitären Theatersammlungen und öffentlichen Theatermuseen in Deutschland – als solche ist sie offen und auch für zukünftige Projekte erweiterbar –, und schafft dadurch ein umfangreiches Forschungsnetzwerk.</p>
+</div>
+<div type="div1">
+<head>Metadaten: Modell und Erfassung</head>
+<p>Aus methodischer Sicht lässt sich das Projekt auf den ersten Blick zwar noch als klassische Nachlassdigitalisierung und Erschließung beschreiben, doch schon auf den zweiten Blick wird deutlich, dass die einfache Erfassung von objektbezogenen Metadaten keine ausreichende Datengrundlage für die intendierte Aufdeckung und Erforschung der beschriebenen komplexen Netzwerk- und Interaktionsstrukturen bieten würde. Die Gesamtheit der Objekte und, in Konsequenz daraus, die Objektdatenbank bildet zwar das Rückgrat des Projektes, sie muss aber den gesamten sozio-historischen Wirkungsraum und Kontext der Objekte erfassen können und darf nicht auf die reine materielle Beschreibung beschränkt sein. </p>
+<p>Für das Projekt war klar, dass ein Metadaten-Standard wie z.b. Dublin-Core hier viel zu kurz greifen würde und nicht die nötige Spezifität und semantische Tiefe wiedergeben kann. Stattdessen werden die Daten im LIDO (Lightweight Information Describing Objects) Standard erfasst. Dieser ermöglicht eine detaillierte Objektbeschreibung, bietet darüber hinaus aber auch Strukturen für die Beschreibung von “events” und “actors”. Als weit verbreiteter Standard in der Museums- und Sammlungswelt bietet LIDO zum einen eine Basis für konsistente und vergleichbare Datenerhebung, zum anderen genügend Flexibilität und Spielraum innerhalb der Strukturen um die sozio-kulturellen Kontexte der Objekte beschreiben zu können. LIDO ist das Produkt einer CIDOC-Arbeitsgruppe und ist mit den Ansätzen von CIDOC Conceptual Reference Model (CRM) zu großen Teilen konform. Insbesondere bildet die Event-Actor-Struktur der CRM Ontologie einen Kernaspekt des LIDO Standards, der in diesem Projekt von besonderem Interesse und Nutzen war. Durch diese eventbasierte Modellierung können die Daten auch für Graphdatenbank- und Netzwerkansätze verwendet werden, ohne das Objekt, dessen Beschreibung natürlich der Kern eines Nachlass-Projektes bleiben muss, als Informationsträger aus dem Fokus zu verlieren. Ein LIDO Dokument kann auch jederzeit in CRM übersetzt werden, um die Daten für andere Forschungsziele zu verwenden.</p>
+<p>Neben den unmittelbar objektbezogenen Metadaten enthält jeder Datensatz Daten zu drei vordefinierten Ereignissen: “Herstellung”, “Inszenierung” und “Erwerb”, welche die Biographie der Objekte rudimentär nachzeichnen. Zusätzlich können weitere nicht vordefinierte Ereignisse aufgenommen werden. Ihnen können jeweils beliebig viele Akteure zugeordnet werden. Mit diesen Strukturen können dann komplexe Aussagen erfasst werden wie z.B. “Die Maske wurde von einer bekannten Requisitenwerkstatt hergestellt” oder “Schauspieler X war der Inszenierung Y beteiligt, die auf diesem Programmzettel beschrieben wird”. Es werden also teilweise bereits in den objektbezogenen Daten Beziehungen zwischen Akteuren, Ereignissen und Objekten explizit modelliert und beschrieben. </p>
+<p>Interoperabilität und Nachhaltigkeit haben für solch ein Erschließungsprojekt maßgebliche Bedeutung. Um beides zu gewährleisten, spielen Normdaten und kontrollierte Vokabulare eine wichtige Rolle. Insbesondere personenbezogene Daten profitieren von Verknüpfungen zu externen Datensätzen. Daher werden die Personendatensätze mit GND-Nummern verknüpft (sofern vorhanden). Außerdem werden die Objekttypen unter Zuhilfenahme des Art and Architecture Thesaurus (AAT) erfasst, da sich der heterogene theaterhistorische Objektbestand mit der polyhierarchischen und multilingualen Struktur des AAT adäquat erfassen lässt. Für weitere Datenfelder und -typen, für die keine passende Standards existieren (z.B. Funktionen der Personen oder erweiterte Eventtypen), werden Theaterwissenschafts-spezifische Vokabulare entwickelt, die möglicherweise hilfreich sein können für die zukünftige Weiterentwicklung der LIDO-Terminologie.<ref n="3" target="ftn3"/>
+</p>
 <p>
-<hi rend="color(#000000)">Die zweite Herausforderung ergibt sich hinsichtlich der zeitlichen Taktung der durchgeführten Crawls. Denn durch die diachrone zeitliche Entwicklung von Wahlkämpfen, wie zum Beispiel dem diachronen Posten von Inhalten auf Blogs oder Medienwebsteinen, sowie dem Verschwinden und dem Löschen von Webinhalten noch während des Beobachtungszeitraums, muss ein und dieselbe Webseite mehrfach gecrawlt werden. Zu diskutieren ist, welche Taktungen für welche Webseiten notwendig sind und inwieweit sich durch unterschiedliche Vorgehensweisen die erstellten Korpora unterscheiden. Es muss auch die Frage geklärt werden, ob gesamte Webseiten oder nur relevante Inhalte der Webseiten häufiger zu crawlen sind. Neben ökonomisch und technisch beschränkten Mitteln ist hier ein Vorgehen zu wählen, welches sich auch an mögliche fachdisziplinäre Forschungsfragestellungen orientiert.</hi>
+An dieser Stelle ist es wichtig anzumerken, dass LIDO als umfangreiches Datenaustauschformat entwickelt worden ist. Um LIDO für das Projekt effektiv nutzen zu können, wurde ein LIDO-Sub-Schema für die projektspezifischen Bedürfnisse entwickelt, das im Laufe des Projektes erweitert und an die Bedürfnisse des Projekts angepasst wurde. Die Eingabe der Daten findet über den LIDO-Maker statt, der auf dem Metadateneditor CMDI-Maker basiert und entsprechend weiterentwickelt wurde.<ref n="4" target="ftn4"/>
+</p>
+</div>
+<div type="div1">
+<head>Von Objektdaten zu Akteur- und Inszenierungsdaten</head>
+<p>Verwandte Projekte wie z.B. IbsenStage oder AusStage<ref n="5" target="ftn5"/>
+stellen die breite Erfassung von Ereignissen, Akteuren und anderen Entitäten in den Vordergrund, und erfassen Objektbezüge nur mit rudimentäre Metadatensets. Auch im institutionsübergreifenden Nachweis- und Rechercheportal 
+                    <hi rend="italic">performing-arts.eu</hi><ref n="6" target="ftn6"/>
+(FID Darstellende Kunst) werden nur die Kerndaten zu Objekten präsentiert. Der Ausgangspunkt dieses Projektes ist dagegen die detaillierte Erschließung von Nachlassobjekten. In der Objektdatenbank werden, wie beschrieben, bereits Informationen zu den Beziehungen von Objekten zu Ereignissen und Akteur_innen explizit erfasst. Dagegen sind die Beziehungen zwischen Akteur_innen oder zwischen Ereignissen bisher nur impliziert. Um diese erforschbar und auch referenzierbar zu machen, wurden mithilfe von XSLT zwei zusätzliche Datenbanken aus der im ersten Schritt erstellten LIDO-Objektdatenbank extrapoliert. Um die komplexen XSL-Transformationen kontrollieren zu können, wurden Prinzipien der Konversionspipelines umgesetzt, so dass der Prozess der Datenkuratierung offen gelegt wird. (Barabucci 2018).
+                </p>
+<p>Die Personendaten orientieren sich hierbei an der Struktur des TEI:person-Modells<ref n="7" target="ftn7"/>, wurden aber mit einigen projektspezifischen Elementen und Attributen ergänzt. Analog dazu wurden auch die Inszenierungsdaten explizit modelliert, indem die Informationen zu einer spezifischen Inszenierung, die aus unterschiedlichen Objekten stammen, kohärent zusammengefügt wurden. In diesem Schritt wurden eindeutige Bezeichner (UUID) zu den Personen- und Inszenierungsdaten zugeordnet, so dass diese nun schon bei der Erfassung von neuen Objektdatensätzen referenziert werden können. Auch die Referenzierungen der Daten untereinander und die entsprechende Abfragen zu diesen Referenzen werden ermöglicht, um nah an der Idee der Netzwerke bleiben zu können. 
+                </p>
+<p>Innerhalb eines Akteur_in-Datensatzes sind dann komplexe personenbezogene Informationen wie Wirkungsorte und damit auch Karriereverläufe unmittelbar abrufbar. Wenn eine Person in einem Objektdatensatz als Hersteller_in des Objektes vorkommt – bspw. als Bühnenbildner_in eines Bühnenbildmodells, so wird diese Information einerseits als Objektbezug verarbeitet, andererseits landet sie im Personendatensatz als Berufs- oder Tätigkeitsbeschreibung mit zeitlichen und örtlichen Angaben. Außerdem wird die Verknüpfung mit der entsprechenden Inszenierung gewährleistet, die mit dem jeweiligen Objekt in Beziehung steht. Somit ist die Person nicht nur als Hersteller_in eines Objektes signifikant, sondern auch als Akteur_in der Inszenierungen.</p>
+</div>
+<div type="div1">
+<head>Ausblick und Fazit</head>
+<p>Als letzter Schritt von der reinen Objektdatenerfassung hin zu einer Plattform, die Akteur_innen- und Inszenierungdatenbank vernetzt, wurden im Projekt experimentell Möglichkeiten der weiteren Datenanreicherung angedacht und bereits in Teilen umgesetzt. </p>
+<p>So wurden zum Beispiel, um weitere Informationen über die biographische Hintergründe der Akteur_innen zu erhalten, die biographischen Artikel (ADB und NDB) von der 
+<hi rend="italic">Deutschen Biographie</hi>
+mithilfe der dort bereitgestellten API für die im Projekt erfassten Akteure abgefragt.<ref n="8" target="ftn8"/>
+<hi rend="background-color(#ffffff)"> Informationen zu den familiären und beruflichen Hintergründen werden mithilfe eines Skriptes extrahiert und nach einer Überprüfung in die Datensätze der Akteur_innendatenbank eingepflegt. Weiteren biographische Informationen werden aus studentischen Dossier übernommen, die im Rahmen des Projektes von Studierenden der Universität zu Köln erarbeitet wurden. </hi>
 </p>
 <p>
-<hi rend="color(#000000)">Ebenfalls soll die Schnittstellen von WARC Dateien diskutiert werden, die genutzt werden können, um analysefähige Korpora zu erstellen. Eine WARC ist ein genormtes Archivformat, das die Inhalte der gecrawlten Webseiten, sowie Metadaten zu den spezifischen Crawls enthält. Dieser Vorgang ist von großer Bedeutung, da dabei nicht nur die WARC Datei entpackt wird, sondern es findet auch eine Filterung, Gruppierung und Extraktion der Daten statt. Auch wenn dafür bereits einige Programme entwickelt wurden, wie zum Beispiel “ArchivSpark” (Holzmann, Goel &amp; Anand 2017) oder das “Archive Unleashed Toolkit” (Lin et al. 2017), braucht es zum Beispiel für den automatisierten Aufbau eines hochwertigen Textkorpus mit Metadaten aus den Webseiten, eine an den spezifischen Webseiten orientierte Extraktion der Textinhalte. Diese Anforderung ergibt sich, weil Webseiten von verschiedenen Quellen in ihrem Aufbau unterschiedlich sind. Zusätzlich können Webseiten im Laufe der Zeit ihr Aussehen verändern, wodurch in einem Webarchiv für eine Quelle mehrere Layouts enthalten sein können. Wurde nun bei der Verarbeitung einer relevanten Webseite ein Layout identifiziert, wird die Position der gewünschten Daten mit Hilfe von sogenannten </hi>
-<hi rend="italic">CSS Paths</hi> spezifiziert und die Extraktion kann erfolgen. Nach der Extraktion werden die Daten in einer Mongodb Datenbank zur weiteren Verarbeitung abgelegt.
+<hi rend="background-color(#ffffff)">Diese zwei Ansätze der Datenanreicherung sind als Schritt zu einer Öffnung von Diskussions- und Interaktionsräumen mit den Daten zu verstehen. Gleichzeitig besteht auch der Wunsch die im Projekt erarbeiteten Personendaten anderen Projekten zur Verfügung zu stellen, um so auch über den Projekt und Theaterkontext hinausgehende, prosopographische Studien zu ermöglichen. Hierbei erwies sich der Ansatz von einer prosopographischen Schnittstelle als sinnvoll – Personendaten </hi>
+profitieren von der Interoperabilität, die automatisierte Extraktion von Personenrelationen ermöglicht. (cf. Vogeler 2019).<ref n="9" target="ftn9"/>
 </p>
-<p>Nach den methodologischen Überlegungen hinsichtlich des Aufbaus eines Webarchievs, der Beschreibung des Event Crawls und der Erstellung einer MongoDB Datenbank mit Metadaten aus den WARC Dateien (wie z.B. Datum, Überschrift, Verfasser),  ist es auch unter Zuhilfenahme von Methoden der Digital Humanities nun möglich, Archive auf Basis fachwissenschaftlicher Fragestellungen zu untersuchen. Auf Grundlage des beschriebenen Archivs zum Europawahlkampf 2018 können unterschiedliche politikwissenschaftliche Forschungsfragen gestellt werden. Exemplarisch kann untersucht werden, welche Themen auf den Parteienwebsetien im Rahmen des Europawahlkampf 2018 diskutiert wurden. Weiter kann danach gefragt werden, wie die Themenkonjunktur im Laufe des Wahlkampfes war? Eine solche fachwissenschaftliche Fragestellung kann untersuchen, inwieweit die Europawahl 2018 als eine “second order election” zu verstehen ist (Hix, S. &amp; Marsh 2011, Weber 2009). Darunter versteht man den Sachverhalt, dass in europäische Wahnen häufig nationale und nicht europäische Themen im Wahlkampf diskutiert werden. Um diese Fragestellung zu bearbeiten wurde aus der MongoDB Datenbank ein spezifischer  Textkorpus mit zusätzlichen Metadaten aus den jeweiligen Webseiten erstellt. Für die Untersuchung und Ermittlung von Wahlkampfthemen fanden Methoden des Topic Modelings Anwendung, wobei hierfür das R Package “Structural Topic Modeling” von Roberts et al. (2019) genutzt wurde. Für weitere Analysen wurde zudem unter anderem auf Methoden der Netzwerkanalyse zurückgegriffen. Erste Ergebnisse können auf GitHub eingeshen werden (https://github.com/MarkusEckl/web_archive_and_stm).</p>
+<p>Als ein Ergebnis der Datenanalyse konnte zum Beispiel festgestellt werden, dass ein Akteur immer wieder an zentraler Stelle auftauchte: Carl Hagemann (1871-1945), der vor allem in den 1910er und 1920er Jahren als Intendant in Mannheim, Hamburg, Wiesbaden und beim frisch gegründeten Rundfunk in Berlin sowohl als Regisseur wie auch als Organisator tätig war. Darüber hinaus hat Hagemann in seiner gesamten Laufbahn intensiv als Autor gewirkt. Da sich anhand dieses Akteurs die komplexen Netzwerke der Theaterschaffenden besonders eindrücklich zeigen lassen, wurden die Bezüge zu seiner Theaterarbeit bei den zu digitalisierenden Objekten in den Nachlässen bevorzugt berücksichtigt. Hagemann repräsentiert in diesem Sinne idealtypisch auch jene im Antrag in den Blick genommenen biographischen Verläufe, die unterschiedliche historische Zäsuren überspannen.</p>
+<p>Es lässt sich festhalten, dass es durch die Daten- und Prozessmodellierung realisierbar ist, aus den Objektdaten Datensätze zu extrahieren, die unterschiedlich modelliert und anders definiert sind - wie beispielsweise Akteure oder Ereignisse. Auf diese Weise agieren sie nicht mehr objektgebunden, stehen mit ihnen aber noch immer in engen relationalen Beziehungen. Hiermit können die Datensätze sowohl komplexe Interaktionsnetzwerke zwischen Entitäten abbilden als auch unabhängig vom intendierten Zweck alleinstehend verwendet werden. Mit dieser Aufbereitung wird eine Datenbasis generiert, die als Grundlage für eine Forschungsumgebung dient. Im Laufe des Projektes wurden bisher 1217 Objekte erfasst. Mit Hilfe dieser Objekten sind 3198 Akteur_innen und 290 Ereignisse erschlossen worden. Diese Basis erlaubt zum einen die theaterwissenschaftliche Neuperspektivierung der Bestände, zum anderen kann sie durch die generierten Netzwerke als Grundlage einer fachwissenschaftlichen Neukonfiguration der zentralen Epochen von Theater- und Kulturgeschichte der Moderne genutzt werden.</p>
+</div>
 </body>
 <back>
-<div type="bibliogr">
-<listBibl>
-<head>Bibliographie</head>
-<bibl>
-  <hi rend="bold">Aubry, Sara</hi> (2010): 
-  <hi rend="italic">Introducing Web Archives as a New Library Service: the Experience of the National Library of France</hi>, in:
-  <hi rend="italic">LIBER Quarterly</hi>, 20(2), S. 179–199. DOI: <ref target="http://doi.org/10.18352/lq.7987"></ref>
-  <ptr target="http://doi.org/10.18352/lq.7987"/>
-</bibl>
-<bibl>
-  <hi rend="bold">Brügger, Niels</hi> (2012): <hi rend="italic">Historical Network Analysis of the Web</hi>in: Social Science Computer Review 31 (3), 306–321.DOI: <ptr target="https://doi.org/10.1177/0894439312454267"/>
-</bibl>
-<bibl>
-  <hi rend="bold">Eckl, Markus / Rehbein, Malte</hi> (2018): Methoden der Digital Humanities in Anwendung für den Aufbau und die Nutzung von Webarchiven. Konferenz zur Bewahrung digitalen kulturellen Erbes. Deutsche Nationalbibliothek. Frankfurt am Main.
-  <ref target="https://www.dnb.de/SharedDocs/Downloads/DE/Kulturell/konferenzeDigKultErbe2018_MarkusEckl.html?nn=56454"></ref>
-  <ptr target="https://www.dnb.de/SharedDocs/Downloads/DE/Kulturell/konferenzeDigKultErbe2018_MarkusEckl.html?nn=56454"/>
-  (letzter Zugriff 12. September 2019).
-</bibl>
-<bibl>
-  <hi rend="bold">Holzmann, Helge / Goel, Vinay / Anand, Avishek</hi>
-  (2016): <hi rend="italic">ArchiveSpark</hi>in: Nabil R. Adam / Boots
-  Cassel / Yelena Yesha / Richard Furuta / Michele C. Weigle (Hg.):
-  JCDL'16. Proceedings of the 16th ACM/IEEE-CS Joint Conference on
-  Digital Libraries : June 19-23, 2016, Newark, NJ, USA. DOI: <ptr target="https://doi.org/10.1145/2910896.2910902"/>
-</bibl>
-<bibl>
-  <hi rend="bold">Lin, Jimmy / Milligan, Ian / Wiebe, Jeremy / Zhou,
-  Alice</hi> (2017): <hi rend="italic">Warcbase</hi> in: Journal of Cultural Heritage 10 (4), 1–30.
-</bibl>
-<bibl>
-<hi rend="bold">Roberts, Molly E., / Stewart, Brandon M. / Tingley,
-Dustin</hi> (2019): stm: An R Package for Structural Topic Models. 
-<hi rend="italic">Journal of Statistical Software</hi>,<hi
-rend="bold">91</hi> (2), 1–40. DOI: <ref target="https://doi.org/10.18637/jss.v091.i02"></ref>
-<ref target="https://doi.org/10.18637/jss.v091.i02">
-<hi rend="color(#1155cc)underline">10.18637/jss.v091.i02</hi></ref>. 
-</bibl>
-<bibl>
-<hi rend="bold">Rogers, Richard</hi> (2019): „Periodizing Web Archiving: Biographical, Event-Based, National and Autobiographical Traditions“ in: Brügger, Niels / Milligan Ian (Hg.): 
-<hi rend="italic">The SAGA Handbook of Web History</hi>. London: SAGE.
-</bibl>
-<bibl>
-<hi rend="bold">Weber, Matthew S. / Napoli, Philip M.</hi> (2018): <hi rend="italic">Journalism History, Web Archives, and New Methods for Understanding the Evolution of Digital Journalism</hi>
-in: Digital Journalism, 6:9, 1186-1205. DOI: <ptr target="https://doi.org/10.1080/21670811.2018.1510293"/>
-</bibl>
-</listBibl>
-</div>
+  <div type="notes">
+    <note n="1" rend="footnote text" xml:id="ftn1">
+    Von dem Arbeitsbuch “100 Jahre Theaterwissenschaftliche Sammlung Köln Dokumente, Pläne, Traumreste” kann ein Überblick über die Forschung an theaterwissenschaftlich relevanten Objekten und deren Kontexte gewonnen werden (Marx, 2019)</note>
+    <note n="2" rend="footnote text" xml:id="ftn2">
+      Der Begriff “Akteur_in” wird hier weit gefasst und bezieht sich sowohl auf natürliche Personen als auch auf Körperschaften.
+    </note>
+    <note n="3" rend="footnote text" xml:id="ftn3">siehe Stand von LIDO Terminology unter: 
+    <ptr target="http://terminology.lido-schema.org/"/>.
+    </note>
+    <note n="4" rend="footnote text" xml:id="ftn4">
+      <ptr target="http://cmdi-maker.uni-koeln.de/"/>
+    </note>
+    <note n="5" rend="footnote text" xml:id="ftn5">
+      <ptr target="https://ibsenstage.hf.uio.no/"/>, <ref target="https://www.ausstage.edu.au/pages/browse/">https://www.ausstage.edu.au/</ref>
+    </note>
+    <note n="6" rend="footnote text" xml:id="ftn6">
+      <ptr target="https://www.performing-arts.eu/"/>
+    </note>
+    <note n="7" rend="footnote text" xml:id="ftn7">siehe 
+    <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-person.html">https://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-person.html</ref>
+    </note>
+    <note n="8" rend="footnote text" xml:id="ftn8">
+      <hi rend="color(#000000)">siehe </hi>
+      <ref target="https://www.deutsche-biographie.de/">https://www.www.deutsche-biographie.de</ref>,
+      für API siehe <ptr target="http://data.deutsche-biographie.de/about/"/>
+    </note>
+    <note n="9" rend="footnote text" xml:id="ftn9">
+      siehe auch <ptr target="https://github.com/GVogeler/prosopogrAPhI"/>
+    </note>
+  </div>
+  <div type="bibliogr">
+    <listBibl>
+      <head>Bibliographie</head>
+      <bibl>
+	<hi rend="bold">Barabucci, Gioele </hi> (2018): 
+	<hi rend="italic">Funktionale und deklarative Programmierung-basierte Methode für nachhaltige, reproduzierbare und verifizierbare Datenkuration</hi>. DHd Konferenz 2018: Kritik der digitalen Vernunft, 214–219, doi: 
+	<ptr target="https://doi.org/10.18716/KUPS.8085"/>  [letzter Zugriff 10. September 2019].
+      </bibl>
+      <bibl>
+	<hi rend="bold">Bogatzki, Jakob</hi> (2019): »(Re-)Collecting Theatre History. Neue Perspektiven biografischer und theaterhistoriografischer Forschung«, in: 
+	<hi rend="italic">Die vierte Wand</hi>, Heft 9, S. 26–29.
+      </bibl>
+      <bibl>
+	<hi rend="bold">Deutsche Biographie</hi>. Hauptseite, 
+	<ref target="https://www.deutsche-biographie.de/">https://www.deutsche-biographie.de</ref> [letzter Zugriff 10. September 2019]
+      </bibl>
+      <bibl>
+	<hi rend="bold">Deutsche Biographie</hi>. Services, 
+	<ptr target="http://data.deutsche-biographie.de/about/"/>  [letzter Zugriff 10. September 2019]
+      </bibl>
+      <bibl>
+	<hi rend="bold">Illmayer, Klaus</hi> (2017): „Aufbau einer digitalen Infrastruktur für Theaterwissenschaft“ (Abstract),
+	<ptr target="https://www.uibk.ac.at/congress/dha2017/bilder-und-dateien/aufbau-einer-digitalen-infrastruktur-fuer-theaterwissenschaft.pdf"/>  [letzter Zugriff 7. September 2019].
+      </bibl>
+      <bibl>
+	<hi rend="bold">Leonhardt, Nic</hi> (2014): 
+	<hi rend="italic">Digital Humanities and the Performing Arts: Building Communities, Creating Knowledge</hi>.
+	Keynote auf der SIBMAS/TLA Konferenz, New York (NY), 12. Juni 2014,
+	<ptr target="https://mappinggth.hypotheses.org/files/2014/09/Nic-Leonhardt_DH-and-the-Performing-Arts_June-2014.pdf"/> [letzter Zugriff 3. August 2019].
+      </bibl>
+      <bibl>
+	<hi rend="bold">LIDO Working Group</hi>. What is LIDO, 
+	<ptr target="http://network.icom.museum/cidoc/working-groups/lido/what-islido/"/>
+	[letzter Zugriff 10. September 2019].
+      </bibl>
+      <bibl>
+	<hi rend="bold">LIDO Working Group</hi>. LIDO Terminology, 
+	<ptr target="http://network.icom.museum/cidoc/working-groups/lido/lido-technical/terminology/"/>
+	[letzter Zugriff 10. September 2019].
+      </bibl>
+      <bibl>
+	<hi rend="bold"> Marx, Peter W., Hrsg. </hi> (2019): 100 Jahre Theaterwissenschaftliche Sammlung Köln. Dokumente, Pläne, Traumreste. Berlin: Alexander Verlag.
+      </bibl>
+      <bibl>
+	<hi rend="bold"> Probst, Nora / Pinto, Vito</hi>: Re-Collecting Theatre History. Theaterhistoriografische Nachlassforschung mit Verfahren der Digital Humanities. In: Wihstutz, Benjamin; Hoesch, Benjamin (Hg.): Neue Methoden der Theaterwissenschaft (Druck in Vorbereitung).
+      </bibl>
+      <bibl>
+	<hi rend="bold">Vogeler, Georg / Vasold, Gunter / Schlögl, Matthias </hi> (2019): 
+	<hi rend="italic">Von IIIF zu IPIF? Ein Vorschlag für den Datenaustausch über Personen</hi>. In: Sahle, Patrick (Hg.): DHd 2019 Digital Humanities: multimedial &amp; multimodal. Konferenzabstracts. Frankfurt / Mainz. DHd. 2019 DOI: 
+	<ref target="http://doi.org/10.5281/zenodo.2600812">10.5281/zenodo.2600812</ref>. pp. 239-241. 
+      </bibl>
+    </listBibl>
+  </div>
 </back>
 </text>
 </TEI>

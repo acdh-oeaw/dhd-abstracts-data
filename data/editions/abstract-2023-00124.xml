@@ -1,49 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="TRIPPEL_Thorsten_Korpora_modular__verteilt__vernetzt_in_Text" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="RADISCH_Erik_Buddhist_Murals_of_Kucha_on_the_Northern_Silk_R" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Korpora modular, verteilt, vernetzt in Text+</title>
+                <title type="full">
+                    <title type="main">Buddhist Murals of Kucha on the Northern Silk Road. Ein Versuch der Semi-Automatisierung der Annotierung</title>
+                    <title type="sub"/>
+                </title>
                 <author>
                     <persName>
-                        <surname>Leinen</surname>
-                        <forename>Peter</forename>
+                        <surname>Radisch</surname>
+                        <forename>Erik</forename>
                     </persName>
-                    <affiliation>Deutsche Nationalbibliothek</affiliation>
-                    <email>P.Leinen@dnb.de</email>
-                    <idno type="ORCID">0000-0002-3014-000X</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Trippel</surname>
-                        <forename>Thorsten</forename>
-                    </persName>
-                    <affiliation>Leibniz-Institut für Deutsche Sprache</affiliation>
-                    <email>thorsten.trippel@uni-tuebingen.de</email>
-                    <idno type="ORCID">0000-0002-7211-7393</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Weimer</surname>
-                        <forename>Lukas</forename>
-                    </persName>
-                    <affiliation>Niedersächsische Staats- und Universitätsbibliothek Göttingen</affiliation>
-                    <email>weimer@sub.uni-goettingen.de</email>
-                    <idno type="ORCID">0000-0001-6919-3646</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Witt</surname>
-                        <forename>Andreas</forename>
-                    </persName>
-                    <affiliation>Leibniz-Institut für Deutsche Sprache</affiliation>
-                    <email>witt@ids-mannheim.de</email>
-                    <idno type="ORCID">0000-0002-0299-5713</idno>
+                    <affiliation>Sächsische Akademie der Wissenschaften zu Leipzig, Deutschland</affiliation>
+                    <email>radisch@saw-leipzig.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-12-13T15:24:00Z</date>
+                    <date>2022-08-02T07:04:12.907000000</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -70,7 +45,7 @@
                     </address>
                 </publicationStmt>
             <sourceDesc>
-                <p>Converted from a Word document</p>
+                <p>Converted from an OASIS Open Document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -86,185 +61,138 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag</term>
+                    <term>Posterpräsentation</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Text+</term>
-                    <term>NFDI</term>
-                    <term>Datendomäne Sammlungen</term>
-                    <term>ortsverteilt</term>
-                    <term>Infrastruktur</term>
+                    <term>Neuronale Netze</term>
+                    <term>Bildannotation</term>
+                    <term>Semi-Automatisierung</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
+                    <term>Entdeckung</term>
+                    <term>Bilderfassung</term>
+                    <term>Annotieren</term>
                     <term>Archivierung</term>
-                    <term>Organisation</term>
-                    <term>Infrastruktur</term>
-                    <term>Text</term>
-                    <term>virtuelle Forschungsumgebungen</term>
+                    <term>Bilder</term>
+                    <term>Forschungsprozess</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einführung: Motivation</head>
-                <p style="text-align: left; ">Text+ ist ein Konsortium der nationalen Forschungsdateninfrastruktur (NFDI). Seine Partner vereinigen die Expertise der bestehenden Infrastrukturverbünde CLARIN-D (Hinrichs und Trippel 2017) und DARIAH-DE (Neuroth u. a. 2016) und integrieren weitere Partner aus den Bereichen Datenzentren, Bibliotheken, Universitäten, Akademien und Rechenzentren. Durch diesen Zusammenschluss entsteht ein einzigartiger Schatz textueller Korpora, die Text+ durch sein Angebot nicht nur unter Beachtung der FAIR- (Wilkinson u. a. 2016) und CARE-Prinzipien (Carroll u. a. 2021) der Community zur Verfügung stellt, sondern Dienste und Beratung anbietet, um auf vielfältige Weise mit ihnen zu arbeiten. Dieser Beitrag wirft einen beispielhaften Blick auf vorhandene Korpora in Text+ (in Text+ vor allem innerhalb der Datendomäne Sammlungen), veranschaulicht die Ebenen des gemeinsamen Zugriffs und zeigt Möglichkeiten zur weiteren Integration von Ressourcen auf.</p>
-                <p style="text-align: left; ">Text+ kann bei der Integration von Ressourcen auf vielfältige Vorarbeiten zurückgreifen. Die Vorarbeiten beziehen sich dabei etwa auf verschiedene Infrastrukturen, darunter CLARIN-D als nationalem Zweig der europäischen Infrastruktur CLARIN (Hinrichs und Krauwer 2014) und DARIAH-DE als nationalem Zweig der europäischen Infrastruktur DARIAH (Kálmán u. a. 2019; bzw. überblicksartig Gray 2021). Allerdings umfasst Text+ auch weitere Partner, die zuvor nicht an diesen geisteswissenschaftlichen Infrastrukturverbünden beteiligt waren, die aber unabhängig davon insbesondere große Inventare an Referenzdaten erstellt haben und weitere Erfahrungen in das Konsortium einbringen. </p>
-                <p style="text-align: left; "> </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Beispielhafte vorhandene Korpora</head>
-                <p style="text-align: left; ">Auch wenn das NFDI-Konsortium Text+ erst am 1. Oktober 2020 formal begonnen hat, gibt es zahlreiche Vorarbeiten, die durch die Partner bereits zur Verfügung stehen und von vielen Forschenden (nach-)genutzt werden. Einige dieser Referenzdatensätze, die in Text+ zu den Sammlungen gehören, werden hier kurz vorgestellt. </p>
-                <div type="div2" rend="DH-Heading2">
-                    <head>DeReKo</head>
-                    <p style="text-align: left; ">Das deutsche Referenzkorpus (DeReKo, siehe Kupietz u. a. 2018; 2010; Lüngen 2017; Kupietz und Keibel 2009) ist eine Sammlung elektronischer deutschsprachiger Korpora. Mit über 53 Milliarden Wörter ist diese linguistische Sammlung die weltweit größte ihrer Art. DeReKo enthält belletristische und wissenschaftliche Texte, Periodika und viele weitere Textarten der Gegenwart und früheren Vergangenheit. Über die Werkzeuge COSMAS II und KorAP ist es niedrigschwellig zugänglich und für diverse linguistische Fragestellungen nutzbar. </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Zeitungskorpora der DNB</head>
-                    <p style="text-align: left; ">Die Deutsche Nationalbibliothek (DNB) sammelt gemäß ihres gesetzlichen Auftrags Zeitungen und Zeitschriften, die in Deutschland publiziert werden. Der umfangreiche Bestand beläuft sich aktuell auf ca. 311.000 gedruckte Titel und ca. 3,2 Millionen Ausgaben E-Paper. Insgesamt umfasst die digitale Sammlung der DNB aktuell ca. 12 Millionen Objekte. </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Das Zeitungsportal der DDB. </head>
-                    <p style="text-align: left; ">Über das neu geschaffene Zeitungsportal der Deutschen Digitalen Bibliothek (DDB) ist eine große Sammlung historischer Zeitungen aus den Jahren 1671–1950 zugänglich. </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>ELTeC-Korpus</head>
-                    <p style="text-align: left; ">Das Korpus der European Literary Text Collection (ELTeC, Schöch u. a. 2021) im TextGrid Repository (TextGrid Repository 2020) ist eine Textsammlung von 2500 linguistisch annotierten Romanen in mindestens zehn Sprachen. Sie ermöglicht es, Methoden und Verfahren der Textanalyse über mehrere Nationalliteraturen hinweg zu vergleichen. </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Baumbanken</head>
-                    <p style="text-align: left; ">Baumbanken haben in der Sprachwissenschaft eine lange Tradition. Im Gegensatz zu anderen Arten von Korpora und Sammlungen enthalten sie geparste Texte, die syntaktische Annotationen enthalten. Dadurch werden sie für die Forschung zur Grammatik, Typologie, Sprachtechnologie, etc. eingesetzt (siehe z. B. Kübler, McDonald und Nivre 2009; Hinrichs, Filippova und Wunsch 2005). Ein Beispiel für eine Baumbank ist die Tübinger Baumbank des Deutschen/Zeitungskorpus (TüBa-D/Z, siehe auch Telljohann, Hinrichs und Kübler 2004), die auf Artikeln der Zeitung ‘die tageszeitung’ (taz) basiert und in der letzten Ausgabe (Version 11) auf 3816 Artikeln und über 100.000 Sätzen mit fast 2 Millionen Token beruht (siehe 
-                        <ref target="https://uni-tuebingen.de/de/134290">https://uni-tuebingen.de/de/134290</ref>). Mit spezialisierten Suchprogrammen wie Tündra (Martens 2013) kann nach Wörtern und syntaktischen Strukturen gesucht werden. Tündra ist dabei nicht auf das Deutsche beschränkt. Die Spannweite reicht dabei von Werken von Thomas von Aquin (Martens und Passarotti 2014) bis zu den vielen Baumbanken der Universal Dependency Treebanks Initiative (
-                        <ref target="https://universaldependencies.org/">https://universaldependencies.org/</ref>), die für viele Sprachen Baumbanken zur Verfügung stellt. 
-                    </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Beispiele weiterer Korpora in Text+ </head>
-                    <p style="text-align: left; ">Daneben gibt es in Text+ noch zahlreiche weitere wichtige Korpora. Dazu gehört beispielsweise das Deutsche Textarchiv (DTA) an der Berlin-Brandenburgischen Akademie der Wissenschaften mit Texten ab ca. 1600 bis 1900. Gesprochensprachliche Korpora sind z. B. am Bayerischen Archiv für Sprachsignale an der LMU München, mit der Datenbank Gesprochenes Deutsch (DGD) am IDS Mannheim oder auch in der Digitalen Bibliothek an der SUB Göttingen vorhanden. Diese Aufzählung ist bei weitem nicht vollständig, zeigt aber auf, dass die obige, beispielhafte Auswahl von Ressourcen nur einen kleinen Teil des Portfolios abdeckt und daher Lösungen innerhalb von Text+ zwar mit Hilfe einiger Beispiele implementiert werden, aber die Lösungen immer die Erweiterungsmöglichkeit auch auf weitere Daten und Partner erlauben muss. Alle Ressourcen, Einrichtungen und Angebote können als Module von Text+ gesehen werden, die durch die Infrastruktur vernetzt werden, so dass auf sie gemeinsam zugegriffen werden kann. </p>
-                </div>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ebenen des gemeinsamen Zugriffs</head>
-                <p style="text-align: left; ">Ressourcen in Text+ liegen an unterschiedlichen Institutionen verteilt vor, teilweise sind sie abgeschlossen, teilweise werden sie noch aktiv weiterentwickelt. Da viele bestehende und im Aufbau befindliche Ressourcen Rechte Dritter berühren, z. B. über Verlagsrechte an Texten, bedeutet ein FAIRer Zugang nicht, dass der Zugang offen und frei sein kann. Vielmehr stehen viele Ressourcen unter expliziten Lizenzen, die die Nutzungsart einschränken. So kann beispielsweise auf viele digitale textuelle Daten der DNB nur innerhalb der Bibliothek und über deren Infrastruktur zugegriffen werden, um rechtliche Bestimmungen zu wahren. Für andere Sammlungen gibt es Zugangsbeschränkungen, die über ein Login den Zugang auf autorisierte Nutzende einschränkt, um Lizenzbestimmungen und -verträge einhalten zu können. Eine Grundlage für die konsortiumsweite und communityintegrierende Arbeit an und mit den Korpora ist daher ein gemeinsamer, niederschwelliger Zugriff. In Text+ wie in verschiedenen Vorarbeiten wird dazu eine gemeinsame AAI-Lösung (Authentication and Authorization Infrastructure) verwendet, über die Nutzende die verschiedenen Ressourcen und Werkzeuge verwenden können. </p>
-                <p style="text-align: left; ">Da der Zugriff auf die Daten oft eingeschränkt ist, gibt es häufig keinen Vollzugriff auf die (digitalen) Daten. 
-                    <hi style="font-family:Roboto;font-size:10.5pt">Über ein föderiertes Anmeldeverfahren, das auf Shibboleth und den Diensten des Deutschen Forschungsnetzes (DFN) und deren europäischer Zusammenarbeit im Rahmen von GÉANT aufsetzt, sind viele Dienste institutionsunabhängig zugänglich, z. B. Dienste, die über die AcademicCloud unseres Partners GWDG angebunden sind. Dienste wie die Federated Content Search oder die DARIAH Collection Registry bieten bereits jetzt übergreifende Suchmöglichkeiten nicht nur in Korpora. Daten werden über verschiedene Archive bereitgestellt, darunter das DARIAH-DE Repository an der SUB Göttingen sowie die zahlreichen zertifizierten CLARIN-Zentren.</hi>
-                </p>
-                <p style="text-align: left; ">In vielen Fällen besteht ein freier Zugriff auf Informationen in Katalognachweissystemen. Diese enthalten in der Regel zumindest Informationen über die Existenz der Korpora (bzw. anderer Forschungsdaten) und andere grundlegende, beschreibende Metadaten. Im Bereich der Metadaten besteht eine Herausforderung in den unterschiedlichen verwendeten Metadatenformaten, die nicht zuletzt bezüglich ihrer integrierten semantischen Interoperabilität divergieren. Hier reicht die Spannbreite von Standardformaten (z. B. dem TEI-Header, Dublin Core, Marc21, ISO 24622-X CMDI) bis zu relativ frei definierten Beschreibungen von Ressourcen. Mit mehreren Hunderttausend Datensätzen der Text+ Partner insbesondere im Bereich der Sammlungen stellt die Vernetzung der Daten eine erhebliche Herausforderung dar. In Arbeitsgruppen von Text+, die über die verschiedenen Daten- und Aufgabendomänen hinweg gebildet wurden, werden für den Zugang Lösungen entwickelt. Die Arbeitsgruppe zur Text+ Registry arbeitet dabei an den einzusetzenden Verfahren und Schnittstellen, um ein Inventar der verschiedenartigen Ressourcen anbieten zu können. Dabei zeichnet sich ab, dass für eine solche große Datenmenge eine Listendarstellung nicht ausreichend ist und zumindest grundlegende gemeinsame Informationseinheiten in den verschiedenen Metadaten enthalten sein müssen, um eine sinnvolle Überblicksdarstellung des Inventars zu ermöglichen. Die unterschiedlichen Anforderungen an Metadaten durch Bestandsdaten, Datentypen und neuere Entwicklungen werden dabei gewahrt werden. Eine weitere Arbeitsgruppe beschäftigt sich mit Fragen des Linked Data, wobei hier zwischen Linked Data für beschreibende Metadaten und Objektdaten unterschieden wird. Durch die Verknüpfung von Metadaten mit z. B. Normdaten und dem Angebot im Rahmen von Linked Data-Initiativen wird untersucht, welche Mehrwerte für Forschungsfragen der Text+ Community geschaffen werden können. Die Darstellung von Objektdaten wie Korpora in Linked Data-Formaten sowie die Schaffung rechtskonformer Angebotsmöglichkeiten sind hier noch am Beginn der Entwicklungen. </p>
-                <p style="text-align: left; ">Ein zusätzlicher, gemeinsamer Zugang zu den Daten über die Metadaten hinaus wird in Text+ mit sogenannten abgeleiteten Textformaten (Schöch u. a. 2020) weiterentwickelt. Abgeleitete Textformate sind dabei Informationen über die Texte, die nicht die Lizenzbedingungen verletzen, aber trotzdem jene Informationen enthalten, die für konkrete Forschungsfragen erforderlich sind. Ein Ziel besteht dabei darin, z. B. die bei Partnern von Text+ befindlichen vollständigen Sammlungen rechtskonform nutzbar zu machen, etwa die Zeitungen, die an der DNB gesammelt werden oder Korpora des IDS, die nicht im Volltext außerhalb der Lizenzbestimmungen bereitgestellt werden dürfen. Eine zusätzliche Zugangsmöglichkeit zu den zugrundeliegenden Texten unter Berücksichtigung der Rechte Dritter entwickelt Text+ auf Grundlage einer föderierten Suche über den Inhalt von Ressourcen, die Federated Content Search (FCS, Vorarbeiten siehe Stehouwer u. a. 2012). Eine Herausforderung bei der Inhaltssuche sind die unterschiedlichen Annotationsebenen, welche die teils aufwändig annotierten Korpora enthalten, seien es linguistische aber auch andere Annotationen, die z. B. in anderen TEI-Repräsentationen von Texten enthalten sind. Hier muss – ebenso wie für andere Suchen – eine gemeinsame Anfragesprache definiert werden. Da diese gemeinsame Anfragesprache zwangsläufig nur eine Teilmenge der Möglichkeiten spezialisierter Werkzeuge bieten kann, können Anfragen, die z. B. durch hochspezialisierte Forschungsfragen motiviert sind, häufig besser mit den spezialisierten Werkzeugen bearbeitet werden. Ein konkretes Beispiel sind Anfragen zu bestimmten syntaktischen Strukturen, die in Baumbanken enthalten sind, die aber auf nicht syntaktisch annotierten Daten nicht zu einem Ergebnis führen können und daher in einer föderierten Inhaltssuche nur eingeschränkt zur Verfügung stehen. </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Integration weiterer Ressourcen</head>
-                <p style="text-align: left; ">Ein Anspruch, den eine nationale Forschungsdateninfrastruktur adressieren muss, ist der, dass eine Vollständigkeit kaum gewährleistet werden kann und daher eine Offenheit gegenüber neuen Daten und Datengebenden bestehen muss. Insbesondere vor dem Hintergrund zunehmender Anforderungen an das Forschungsdatenmanagement im Rahmen des Forschungsprozesses – etwa der Anforderung, Daten, die als Grundlage von Forschungsergebnissen dienen, für mindestens 10 Jahre aufzubewahren (siehe DFG-Leitlinien zur Sicherung guter wissenschaftlicher Praxis<ref n="1" target="ftn1"/>) – können Forschende darauf angewiesen sein, verlässliche Partner zu finden, die sie beim Datenmanagement unterstützen. Text+ adressiert diesen Bedarf auf unterschiedliche Weise: (1) durch Kooperationsprojekte zur Förderung neuer Angebote zur Integration in die Text+ Infrastruktur; (2) durch offene Schnittstellen, durch die Datenzentren ihre Angebote auch über die Infrastruktur von Text+ bereitstellen können und (3) durch Angebote von Partnern von Text+, Daten zu hosten.
-                </p>
-                <p style="text-align: left; ">Kooperationsprojekte sind Projekte, die im Rahmen von Text+ das Portfolio an Daten und Diensten für die wissenschaftliche Gemeinschaft erweitern. Jedes Jahr erfolgt in Text+ eine Ausschreibung, durch die zusätzliche Arbeiten gefördert werden können, die eine Integration im Rahmen der NFDI-Angebote von Text+ ermöglichen. Ausgestattet mit substantiellen Mitteln können dadurch Bestandsdaten und -dienste die Infrastruktur erweitern.<ref n="2" target="ftn2"/>
-                </p>
-                <p style="text-align: left; ">Neben den Kooperationsprojekten basiert die Offenheit von Text+ auch auf den Schnittstellen. Als ortsverteilte Infrastruktur mit einer verteilten Datenhaltung, unterschiedlichen Schwerpunkten der Beteiligten, diversen Dateiformaten und zugrundeliegenden Technologien der Archivsysteme bei den verschiedenen Partnern sind Schnittstellen zur Zusammenarbeit der Partner in gemeinsamen Angeboten unverzichtbar. Ein Beispiel dafür sind die bereits beschriebenen unterschiedlichen Korpora, die durch die föderierte Inhaltssuche über eine gemeinsame Schnittstelle zugänglich sind. Diese Schnittstellen werden in Text+ offen spezifiziert und sind damit auch für Datenzentren außerhalb des Konsortiums nutzbar. Dadurch können auch Datenzentren außerhalb von Text+ ihre Angebote über die Infrastruktur verfügbar machen und können, so sie ihre Angebote nachhaltig bereitstellen möchten, verlässlich integriert werden. Über diesen Mechanismus können sich z. B. auch Anbietende von bisher nicht einbezogenen Communities, etwas aus dem Bereich der sog. „kleinen Fächer“, über die Infrastruktur vernetzen. </p>
-                <p style="text-align: left; ">Daneben übernehmen die unterschiedlichen Daten- und Kompetenzzentren von Text+ aber auch selbst Daten Dritter. Wenn Daten und Dienste zur Spezialisierung und zu den Möglichkeiten eines Partners passen, können sie dort gehostet werden. Die Prozesse – angefangen von Dateiformaten bis zu den dafür notwendigen Lizenzen und Übereinkommen – basieren auf den jeweiligen lokalen Kontexten der Partner. Als Fallback steht aber auch eine Bitstream-Archivierung von einem Partner in Text+ zur Verfügung, hier werden Daten archiviert, aber nicht notwendigerweise in weitere Infrastrukturdienste integriert, z. B. weil sie nicht die formalen Voraussetzungen erfüllen oder Daten nicht zu den bestehenden Daten- und Kompetenzzentren passen. Auch dies erlaubt es, die Community zu erweitern. </p>
-                <p style="text-align: left; ">Die Erweiterungsmöglichkeiten von Text+, gerade im Bereich der Sammlungen, sind dabei sehr vielfältig und erlauben individuelle Absprachen mit Forschenden. Dabei ist es entscheidend, dass die Forschenden durch die Infrastruktur ihre Interessen wahren und die Verantwortung für und Rechte an Ressourcen nicht verlieren. </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ausblick auf weitere Entwicklungen in Text+</head>
-                <p style="text-align: left; ">Das Bestreben der Vernetzung der an Text+ beteiligten Institutionen, ihrer Daten und Dienste wird auch in weiterer Hinsicht in diversen Arbeitsgruppen von Text+ vorangetrieben. Ein Bestandteil für diese Vernetzung und Integration ist eine übergreifende Registry, über die ein Zugang zu Ressourcen aus allen Text+-Datendomänen trotz deren Unterschieden, etwa ihrer disziplinären Genese, Institution, Sprache, etc. möglich werden soll. Diese Registry, aber auch soweit möglich die Daten an sich, sollen über eine Erweiterung der Federated Content Search durchsuchbar gemacht werden. Schließlich gibt es zur Verbesserung der Vernetzung der Daten eine Arbeitsgruppe zu Linked Data (LOD) in Text+. Um den Zugriff auf all diese Dienste zu gewährleisten und zu verbessern, wird die Text+-Homepage (
-                    <ref target="https://www.text-plus.org">https://www.text-plus.org</ref>) sukzessive zu einem Text+-Portal als universalen Einstiegspunkt in die Text+-Infrastruktur transformiert. 
-                </p>
-            </div>
+            <p>Die buddhistischen Höhlenkomplexe in der Region Kucha an der nördlichen Seidenstraße (Uigurisches Autonomes Gebiet Xinjiang, VR China) beherbergen beeindruckende Wandmalereien, die etwa aus dem 5. bis 10. Jhd. stammen. Die ersten Hinweise auf eine frühere buddhistische Kultur wurden zu Beginn des 20. Jahrhunderts entdeckt, woraufhin mehrere Länder Expeditionen in das Gebiet schickten, um die einst in der Region vorherrschende Religion zu erforschen. Es war eine Sensation, als verschiedene buddhistische Höhlenkomplexe entdeckt wurden. Damals wurden auch die ersten Fotografien vom Ist-Zustand der Höhlen angefertigt und Teile der Malereien aus den Höhlen entnommen und in die jeweiligen Nationalmuseen gebracht. Heute sind Fragmente der Wandmalereien über die ganze Welt verstreut, was eine Zuordnung zu den einzelnen Ursprungshöhlen sehr schwierig macht (Weitere Informationen: Yaldiz 1987; Popova 2008; Dreyer 2015).</p>
+            <p>Das hier vorgestellte Projekt hat es sich zur Aufgabe gemacht, die Wandmalereien in situ und die weltweit vorhandenen Einzelstücke zu dokumentieren, zu beschreiben und mit Hilfe von historischen Fotografien wieder in ihren ursprünglichen Kontext zu bringen.<ref n="1" target="ftn1"/>
+            </p>
+            <p>Das Projekt bedient sich moderner Möglichkeiten der Digital Humanities, indem nicht nur eine umfangreiche textliche Beschreibung einzelner Szenen erfolgt, sondern auch die Bildinhalte der sich wiederholenden Darstellungen erfasst und mit digitalen Methoden angereichert werden. Zu diesem Zweck wird das digitale Bildannotationstool Annotorious<ref n="2" target="ftn2"/> (siehe Abbildung 1) genutzt, um die Inhalte direkt mit einer rund 1.000 Einträge umfassenden Taxonomie zu annotieren. Die erarbeiteten Forschungsdaten stehen online frei zur Verfügung.<ref n="3" target="ftn3"/>
+            </p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/8f400e17cb83c6ae4e748a13ed8c2e8d.png"/>
+                    <head>Abbildung 1: Annotatieren mit Annotorious</head>
+                </figure>Die Annotation von Objekten im Bild ermöglicht zwar eine wissenschaftliche Nachvollziehbarkeit der identifizierten Objekte, ist aber auch eine sehr umfangreiche und zeitaufwändige Aufgabe. Viele Bildinhalte wiederholen sich häufig in unterschiedlichen Zusammenhängen. Außerdem liegen manchmal mehrere Bilder eines Objekts aus verschiedenen Perspektiven vor oder es gibt Bilder aus der Zeit der Expeditionen, auf denen abgetrennte Teile noch in ihrem ursprünglichen Kontext zu sehen sind. Es besteht also die Notwendigkeit, manchmal sehr ähnliche oder gleiche Objekte mehrfach zu annotieren. Die Übertragung von Annotationen ist jedoch schwierig. Selbst wenn Fotos von denselben Objekten vorhanden sind, können unterschiedliche Blickwinkel und verschiedene Objektive dazu führen, dass die Bilder verzerrt sind. Es ist kaum möglich, diese Aufgabe mit herkömmlichen Computer-Vision-Methoden automatisch durchzuführen.
+            </p>
+            <p>Aus diesem Grund wird im Rahmen des Projekts derzeit versucht, mit den bereits vorgenommenen Annotationen Region Based Convolutional Neural Networks (RCNNs)<ref n="4" target="ftn4"/> zu trainieren, um in Zukunft zumindest Teile der Annotation halbautomatisch (die Annotierenden werden die Möglichkeit haben, die gefundenen Regionen des RCNNs einzusehen und diese anzunehmen oder gegebenenfalls zu verbessern) durchführen zu können.
+            </p>
+            <p>Bislang wurden RCNNs in den Digital Humanities vor allem zur Identifizierung, Lokalisierung und Ordnung von Objekten in Bildern eingesetzt (siehe z.B.: Howanitz et al. 2019; Arnold/Tilton 2019; Duhaime 2019; Duhaime 2019; Helm et al. 2021). Ihre Verwendung für eine halbautomatische Annotation ist zumindest zur Kenntnis des Autors dieses Posterproposals noch nicht umgesetzt worden. Da die Ränder automatisch erkannten Annotationen oft ausfransen oder nicht das gesamte Objekt erkannt wird,mag es auch gewagt sein, einen solchen Versuch zu starten.</p>
+            <p>Die Voraussetzungen des Kucha-Projekts sind sehr gut. Es existieren bereits über 9.000 Polygone, die in insgesamt etwa 12.000 Annotationen verwendet wurden (ein Polygon kann mit mehreren Elementen der Taxonomie verknüpft sein). Einige Objekte wurden mehre hundert Mal annotiert. Es gibt jedoch auch einige Probleme, die zu berücksichtigen sind. So gibt es beispielsweise zwei grundlegend verschiedene Arten von Bildern im Korpus: zum einen Fotografien (historische und moderne), zum anderen Zeichnungen der Malereien. Die Erkennung auf Fotografien dürfte deutlich schwieriger sein, da hier die Malereien oft in sehr schlechtem Zustand sind und selbst von einem geübten Auge nur schwer zu identifizieren sind.</p>
+            <p>Es wurden verschiedene Experimente durchgeführt, die die prinzipielle Nutzbarkeit von RCNNs für eine semi-automatisierte Annotation testen sollten. Diese werden im Poster näher präsentiert. In einem ersten Experiment wurden alle Trainingsdaten zusammen trainiert (mAP
+                <hi rend="sub">IoU =0.75</hi> = 5.85<ref n="5" target="ftn5"/>). Ein zweites Experiment teilte die Daten nach Bildarten auf (mAP
+                <hi rend="sub">IoU =0.75</hi> = 3.40 für Fotos und mAP
+                <hi rend="sub">IoU =0.75</hi> = 4.04 bei Zeichnungen). Es war dabei auffällig, dass die Zeichnungen bessere Resultate erzielten, die aber niedriger als die Resultate des ersten Experimentes waren. Die folgenden beiden Experimenten wurden deswegen vorerst auf Zeichnungen beschränkt. Das dritte Experiment konzentrierte sich auf Klassen mit mehr als 50 Annotationen, was zwar den Großteil der Klassen außen vor ließ, aber vielversprechende Ergebnisse erzeugte ( mAP
+                <hi rend="sub">IoU =0.75 </hi>= 23.06). Deswegen wurden in einem vierten Experiment alle Klassen von menschlichen Abbildungen zu einer Metaklasse zusammengelegt. Dieses letzte Experiment funktionierte besonders vielversprechend (mAP
+                <hi rend="sub">IoU =0.75</hi> = 59.99; ein Beispiel kann in Abbildung 2 eingesehen werden). Zur Bewertung der Experimente kann der Output der Testbilder online eingesehen werden.<ref n="6" target="ftn6"/> Bis zur DHd im nächsten Jahr sollen einige weitere Experimente durchgeführt werden und ein erster Prototyp zur Anwendung kommen und im Rahmen des Posters präsentiert werden.
+            </p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/2aa0930e41f18fd8a4b028eb59bec23c.png"/>
+                    <head>Abbildung 2: Beispiel-Output für Experiment 4</head>
+                </figure>
+            </p>
         </body>
         <back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
-                         Siehe Leitlinie 17 in DFG 2019: Leitlinien zur Sicherung guter wissenschaftlicher Praxis,
-                            <ref target="https://www.dfg.de/download/pdf/foerderung/rechtliche_rahmenbedingungen/gute_wissenschaftliche_praxis/kodex_gwp.pdf" xml:space="preserve"> https://www.dfg.de/download/pdf/foerderung/rechtliche_rahmenbedingungen/gute_wissenschaftliche_praxis/kodex_gwp.pdf</ref> (korrigierte Version 1.1 vom April 2022, zuletzt aufgerufen am 2022-12-13)
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
-                         Zum Zeitpunkt des Vortrags können zu den Kooperationsprojekten aus dem Bereich der Sammlungen konkrete Beispiele benannt werden, die derzeit noch in der Bewilligung und Kooperationsvertragsabwicklung sind.
-                    </note></div>
+<note xml:id="ftn1" rend="footnote text" n="1">
+    Wissenschaftliche Bearbeitung der buddhistischen Hoehlenmalereien in der Kucha-Region der nördlichen Seidenstrasse (SAW-Leipzig). Datenbank: 
+                    <ref target="https://kucha.saw-leipzig.de/">https://kucha.saw-leipzig.de</ref>.
+                </note>
+
+<note xml:id="ftn2" rend="footnote text" n="2">
+                   <ref target="https://recogito.github.io/annotorious/">https://recogito.github.io/annotorious/</ref>. Das Projekt hat seine eigene Reihe «Leipzig Kucha Studies». Erster Band: Konczak-Nagel/Zin 2020
+                </note>
+<note xml:id="ftn3" rend="footnote text" n="3">
+    <ref target="https://kuchatest.saw-leipzig.de/">https://kuchatest.saw-leipzig.de/</ref>
+                </note>
+
+<note xml:id="ftn4" rend="footnote text" n="4"> Das Projekt nutzt hierfür detectron2 (Wu et al. 2019).</note>
+<note xml:id="ftn5" rend="footnote text" n="5"> Die Maßeinheit gibt die Mean Average Precision bei einer Mindestübereinstimmung einer Region mit dem Goldstandard von 75% an.</note>
+<note xml:id="ftn6" rend="footnote text" n="6"><ref target="https://github.com/erikradisch/examplePics">https://github.com/erikradisch/examplePics</ref>
+                    
+                </note></div>
             <div type="bibliogr">
                 <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Carroll, Stephanie Russo, Edit Herczog, Maui Hudson, Keith Russell und Shelley Stall</hi>. 2021. „Operationalizing the CARE and FAIR Principles for Indigenous data futures“. 
-                        <hi rend="italic">Scientific Data</hi> 8 (1): 108. 
-                        <ref target="https://doi.org/10.1038/s41597-021-00892-0">https://doi.org/10.1038/s41597-021-00892-0</ref>.
+<head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Arnold, </hi>
+                        <hi rend="bold">T. </hi>
+                        <hi rend="bold">and</hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">Tilton, </hi>
+                        <hi rend="bold">L</hi>
+                        <hi rend="bold">. </hi>2019. “Distant viewing: analyzing large visual corpora.” In Digital Scholarship in the Humanities 36(1), DOI: 
+                        <ptr target="https://doi.org/10.1093/llc/fqz013"/>.
                     </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Gray, Edward J</hi>. 2021. „DARIAH ERIC: Empowering Arts and Humanities Research on a National and International Level“. Zenodo. 
-                        <ref target="https://doi.org/10.5281/zenodo.5596905">https://doi.org/10.5281/zenodo.5596905</ref>. 
+                    <bibl>
+                        <hi rend="bold">Dreyer, C.</hi> 2015. “
+                        <hi rend="italic">Abenteuer Seidenstraße: Die Berliner Turfan-Expeditionen 1902–1914</hi>.” Leipzig: Seemann.
                     </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold" xml:space="preserve">Hinrichs, Erhard, Katja Filippova, und Holger Wunsch. </hi>2005. „What Treebanks Can Do For You: Rule-based and Machine-learning Approaches to Anaphora Resolution in German“. In 
-                        <hi rend="italic">Proceedings of the 4th Workshop on Treebanks and Linguistic Theories (TLT 2005)</hi>, 77–88.
+                    <bibl>
+                        <hi rend="bold">Duhaime, D. </hi>2019. “PixPlot.” 
+                        <ptr target="https://github.com/YaleDHLab/pix-plot"/>.
                     </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Hinrichs, Erhard und Steven Krauwer</hi>. 2014. „The CLARIN Research Infrastructure: Resources and Tools for E-Humanities Scholars“. In 
-                        <hi rend="italic">Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC’14)</hi>, herausgegeben von Nicoletta Calzolari, Khalid Choukri, Thierry Declerck, Hrafn Loftsson, Bente Maegaard, Joseph Mariani, Asuncion Moreno, Jan Odijk und Stelios Piperidis, 1525–31. Reykjavík, Island: ELRA.
+                    <bibl>
+                        <hi rend="bold">Helm, </hi>
+                        <hi rend="bold">W., </hi>
+                        <hi rend="bold">Schmideler, S., </hi>
+                        <hi rend="bold">I</hi>
+                        <hi rend="bold">m, C., Mandl, T., Kollmann, </hi>
+                        <hi rend="bold">S. and </hi>
+                        <hi rend="bold">Müller, </hi>
+                        <hi rend="bold">L.</hi>
+                        <hi rend="bold"> </hi>2021. “Wie sich die Bilder ähneln. Vom Zufallsfund zur systematischen Forschung im Bereich der automatisierten Bildähnlichkeitssuche.” In Fabrikation von Erkenntnis: Experimente in den Digital Humanities, ed. Burghardt, M., Dieckmann, L., Steyer, T., Trilcke, P., Walkowski, N.-O., Weis, J. and Wuttke, U. ZfdG (Sonderband 5). DOI: 10.26298/melusina.8f8w-y749-wsdb.
                     </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Hinrichs, Erhard und Thorsten Trippel</hi>. 2017. „CLARIN-D: eine Forschungsinfrastruktur für die sprachbasierte Forschung in den Geistes- und Sozialwissenschaften“. 
-                        <hi rend="italic">Bibliothek - Forschung und Praxis</hi> 1 (41).
+                    <bibl>
+                        <hi rend="bold">Howanitz, </hi>
+                        <hi rend="bold">G., </hi>
+                        <hi rend="bold">Bermeitinger, B., Radisch, E., Gassner, S., Rehbein, M. </hi>
+                        <hi rend="bold">and</hi>
+                        <hi rend="bold"> Handschuh, S. </hi>2019. July 11. “Deep Watching - Towards New Methods of Analyzing Visual Media in Cultural Studies.” Digital Humanities 2019 (DH2019), Utrecht, Netherlands. 
+                        <ptr target="https://zenodo.org/record/3326470#.Y5uLSKfMIYw"/>.
                     </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Kálmán, Tibor, Matej Ďurčo, Frank Fischer, Nicolas Larrousse, Claudio Leone, Karlheinz Mörth und Carsten Thiel</hi>. 2019. „A landscape of data – working with digital resources within and beyond DARIAH“. 
-                        <hi rend="italic">International Journal of Digital Humanities</hi> 1 (1): 113–31. 
-                        <ref target="https://doi.org/10.1007/s42803-019-00008-6">https://doi.org/10.1007/s42803-019-00008-6</ref>.
+                    <bibl>
+                        <hi rend="bold">Konczak-Nagel, I. </hi>
+                        <hi rend="bold">a</hi>
+                        <hi rend="bold">nd </hi>
+                        <hi rend="bold">Zin, M. </hi>2020. “Essays and Studies in the Art of Kucha” (Leipzig Kucha Studies 1). New Delhi: Dev Publishers.
                     </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Kübler, Sandra, Ryan McDonald und Joakim Nivre</hi>. 2009. 
-                        <hi rend="italic">Dependency Parsing</hi>. Synthesis Lectures on Human Language Technologies. Springer. 
-                        <ref target="https://doi.org/10.1007/978-3-031-02131-2">https://doi.org/10.1007/978-3-031-02131-2</ref>.
+                    <bibl>
+                        <hi rend="bold">Popova, I. F. </hi>
+                        <hi rend="bold">(ed.)</hi>. 2008. “
+                        <hi rend="italic">Russian Expeditions to Central Asia at the Turn of the 20th Century: Collected Articles</hi>.” St Petersburg: Slavia Publishers.
                     </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Kupietz, Marc, Cyril Belica, Holger Keibel und Andreas Witt</hi>. 2010. „The German Reference Corpus DeReKo: A primordial sample for linguistic research“. In 
-                        <hi rend="italic">Proceedings of the Seventh Conference on International Language Resources and Evaluation (LREC 2010)</hi>, herausgegeben von Nicoletta Calzolari, Khalid Choukri, Bente Maegaard, Joseph Mariani, Jan Odjik, Stelios Piperidis, Mike Rosner und Daniel Tapias, 1848–54. European Language Resources Association (ELRA) 2010.
+                    <bibl>
+                        <hi rend="bold">Wu, Y., Kirillov, </hi>
+                        <hi rend="bold">A., </hi>
+                        <hi rend="bold">Massa, F., </hi>
+                        <hi rend="bold">Lo, </hi>
+                        <hi rend="bold">W. and </hi>
+                        <hi rend="bold">Girshick, R. </hi>2019. “Detectron2.” 
+                        <ptr target="https://github.com/facebookresearch/detectron2"/>.
                     </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Kupietz, Marc und Holger Keibel</hi>. 2009. „The Mannheim German Reference Corpus (DeReKo) as a basis for empirical linguistic research“. In 
-                        <hi rend="italic">Workings Papers in Corpus-based Linguistics and Language Education</hi>, herausgegeben von Makoto/Kawaguchi Minegishi, 3:53–59. Tokyo: Tokyo University of Foreign Studies 2009.
-                    </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Kupietz, Marc, Harald Lüngen, Paweł Kamocki und Andreas Witt</hi>. 2018. „The German Reference Corpus DeReKo: New Developments – New Opportunities“. In 
-                        <hi rend="italic">Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)</hi>, herausgegeben von Nicoletta Calzolari, Khalid Choukri, Christopher Cieri, Thierry Declerck, Sara Goggi, Koiti Hasida, Hitoshi Isahara, u. a., 4353–60. Miyazaki: European Language Resources Association (ELRA).
-                    </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Lüngen, Harald</hi>. 2017. „DeReKo - Das Deutsche Referenzkorpus. Schriftkorpora der deutschen Gegenwartssprache am Institut für Deutsche Sprache in Mannheim“. 
-                        <hi rend="italic">Zeitschrift für germanistische Linguistik</hi> 45 (1): 161–70.
-                    </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Martens, Scott</hi>. 2013. „TüNDRA: A Web Application for Treebank Search and Visualization“. In 
-                        <hi rend="italic">Proceedings of the 12th International Workshop on Treebanks and Linguistic Theories (TLT 2013)</hi>. Sofia, Bulgaria.
-                    </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Martens, Scott und Marco Passarotti</hi>. 2014. „Thomas Aquinas in the TüNDRA: Integrating the Index Thomisticus Treebank into CLARIN-D“. In 
-                        <hi rend="italic">Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC-2014)</hi>, herausgegeben von Nicoletta Calzolari, Khalid Choukri, Thierry Declerck, Hrafn Loftsson, Bente Maegaard, Joseph Mariani, Asuncion Moreno, Jan Odijk und Stelios Piperidis. Reykjavík, Island.
-                    </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Neuroth, Heike, Stefan Schmunk, Mirjam Blümm, Andrea Rapp, Fotis Jannidis, Dirk Wintergrün, Ulrich Schwardmann und Peter Gietz</hi>. 2016. 
-                        <hi rend="italic">DARIAH-DE – Digitalität in den Geistes- und Kulturwissenschaften am Beispiel der digitalen Forschungsinfrastruktur DARIAH-DE</hi>. Bd. 40. Bibliothek Forschung und Praxis 2. De Gruyter.
-                    </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Schöch, Christof, Frédéric Döhl, Achim Rettinger, Evelyn Gius, Peer Trilcke, Peter Leinen, Fotis Jannidis, Maria Hinzmann und Jörg Röpke</hi>. 2020. „Abgeleitete Textformate: Text und Data Mining mit urheberrechtlich geschützten Textbeständen“. 
-                        <hi rend="italic">Zeitschrift für digitale Geisteswissenschaften</hi>. 
-                        <ref target="https://doi.org/10.17175/2020_006">https://doi.org/10.17175/2020_006</ref>.
-                    </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Schöch, Christof, Roxana Patras, Tomaž Erjavec, und Diana Santos</hi>. 2021. „Creating the European Literary Text Collection (ELTeC): Challenges and Perspectives“. 
-                        <hi rend="italic">Modern Languages Open</hi> 1 (25): 1–19. 
-                        <ref target="https://doi.org/doi.org/10.3828/mlo.v0i0.364">https://doi.org/doi.org/10.3828/mlo.v0i0.364</ref>.
-                    </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Stehouwer, Herman, Matej Ďurčo, Eric Auer und Daan Broeder</hi>. 2012. „Federated Search: Towards a Common Search Infrastructure“. In 
-                        <hi rend="italic">Proceedings of the 8th International Conference on Language Resources and Evaluation (LREC’12)</hi>, herausgegeben von Nicoletta Calzolari, Khalid Choukri, Thierry Declerck, Mehmet Uğur Doğan, Bente Maegaard, Joseph Mariani, Asuncion Moreno, Jan Odijk und Stelios Piperidis. Istanbul, Türkei.
-                    </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Telljohann, Heike, Erhard Hinrichs und Sandra Kübler</hi>. 2004. „The Tüba-D/Z Treebank: Annotating German with a Context-Free Backbone“. In 
-                        <hi rend="italic">Proceedings of the Fourth International Conference on Language Resources and Evaluation (LREC’04)</hi>. Lisbon, Portugal: European Language Resources Association (ELRA). 
-                        <ref target="http://www.lrec-conf.org/proceedings/lrec2004/pdf/135.pdf">http://www.lrec-conf.org/proceedings/lrec2004/pdf/135.pdf</ref>.
-                    </bibl>
-                    <bibl style="text-align: left;">
-                        <hi rend="bold">Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, u. a</hi>. 2016. „The FAIR Guiding Principles for Scientific Data Management and Stewardship“. 
-                        <hi rend="italic">Scientific Data</hi> 3 (März): 160018. 
-                        <ref target="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</ref>.
+                    <bibl>
+                        <hi rend="bold">Yaldiz, </hi>
+                        <hi rend="bold">M.</hi> 1987. “
+                        <hi rend="italic">Archäologie und Kunstgeschichte Chinesisch-Zentralasiens (Xinjiang)</hi>.” Handbuch der Orientalistik, Abteilung 7, Kunst und Archäologie, Band 3, Innerasien. Leiden: Brill. 
                     </bibl>
                 </listBibl>
             </div>

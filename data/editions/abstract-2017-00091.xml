@@ -1,36 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="workshop-POHLO" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="vortrag-SCHUM" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Nachhaltiges Management von Bildmetadaten mit XMP, exiftool und Fotostation</title>
+<title>Nachhaltigkeit als Prozess: Zur konzeptionellen Funktion digitaler Technologien in der Nachhaltigkeitssicherung für historische Fotos im Projekt efoto-Hamburg</title>
 <author>
 <persName>
-<surname>Pohl</surname>
-<forename>Oliver</forename>
+<surname>Schumacher</surname>
+<forename>Mareike</forename>
 </persName>
-<affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland</affiliation>
-<email>opohl@bbaw.de</email>
-</author>
-<author>
-<persName>
-<surname>Schrade</surname>
-<forename>Torsten</forename>
-</persName>
-<affiliation>Akademie der Wissenschaften und Literatur Mainz, Deutschland</affiliation>
-<email>torsten.schrade@adwmainz.de</email>
+<affiliation>Universität Hamburg, Deutschland</affiliation>
+<email>mareike.schumacher@uni-hamburg.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2015-10-04T22:02:00Z</date>
+<date>2016-12-01T08:00:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
 <publisher>Prof. Dr. Michael Stolz</publisher>
 <address>
-<addrLine>Universität Bern</addrLine>
-<addrLine>Institut für Germanistik</addrLine>
+<addrLine>UniversitÃ¤t Bern</addrLine>
+<addrLine>Institut fÃ¼r Germanistik</addrLine>
 <addrLine>Laenggass-Str. 49</addrLine>
 <addrLine>CH-3000 Bern 9</addrLine>
 </address>
@@ -49,153 +41,208 @@
 <profileDesc>
 <textClass>
 <keywords n="category" scheme="ConfTool">
-<term>Workshops</term>
+<term>Vortrag</term>
 </keywords>
 <keywords n="subcategory" scheme="ConfTool">
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>XMP</term>
-<term>Glasmalerei</term>
-<term>Metadaten</term>
-<term>Modellierung</term>
-<term>RDF</term>
+<term>digitale Nachhaltigkeit</term>
+<term>Nachhaltigkeitsstrategie</term>
+<term>Bilddatenbank</term>
+<term>mobile Technologien</term>
+<term>kulturelles Erbe</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Sammlung</term>
-<term>Bilderfassung</term>
-<term>Modellierung</term>
+<term>Teilen</term>
+<term>Kommunikation</term>
 <term>Archivierung</term>
+<term>Community-Bildung</term>
 <term>Veröffentlichung</term>
+<term>Identifizierung</term>
+<term>Crowdsourcing</term>
+<term>Kollaboration</term>
+<term>Kommentierung</term>
+<term>Konservierung</term>
+<term>Artefakte</term>
+<term>Computer</term>
+<term>Daten</term>
 <term>Bilder</term>
+<term>Karte</term>
+<term>Metadaten</term>
+<term>Projekte</term>
+<term>Software</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<div/>
 <div rend="DH-Heading1" type="div1">
-<head>Das Corpus Vitrearum Deutschland als Use Case</head>
-<p>Das interakademische Vorhaben zur mittelalterlichen und frühneuzeitlichen Glasmalereiforschung „Corpus Vitrearum Medii Aevi“ (CVMA) in den Arbeitsstellen Potsdam und Freiburg steht derzeit der Herausforderung gegenüber, die im neu eingerichteten CVMA-Online-Bildarchiv
-                    <ref n="1" target="workshop-POHLOftn1" type="note">1</ref> hinterlegten Bilddateien samt Metadaten für die Langzeitarchivierung und -lesbarkeit vorzubereiten. 
-                </p>
-<p>Das Hauptziel des CVMA ist es, alle Glasmalereien des Mittelalters fotografisch zu erfassen, zu dokumentieren und zu edieren, um nicht nur das kulturelle Erbe zu bewahren und ins digitale Zeitalter zu überführen, sondern auch räumliche Distanzen zu überbrücken und die Glasmalereifotografien samt ihrer Dokumentation der Öffentlichkeit zugänglich zu machen.</p>
-<p>Für die zielgerichtete Dokumentation hat das CVMA ein eigenes Metadatenschema verfasst
-                    <ref n="2" target="workshop-POHLOftn2" type="note">2</ref>, welches auf etablierte Schemata wie Dublin Core (Weibel et al. 1998) und IPTC (IPTC 2014) aus der professionellen Fotografie aufbaut und diese mit einem speziell auf die wissenschaftlichen Bedarfe der Glasmalerei ausgerichteten eigenen Namensraum erweitert. Dabei werden die Metadaten in das zugehörige Bild integriert, um so zusätzliche Abhängigkeiten von Datenbank- oder anderer Verwaltungssoftware zu vermeiden. Dadurch wird die plattformabhängige Nutzung und maschinelle Interpretierbarkeit des Datenbestands gefördert, was nötig ist, damit die Daten auch in Zukunft von Mensch und Maschine nachgenutzt werden können (Library of Congress und National Science Foundation 2003). 
+<head>Abstract</head>
+<p rend="normal">efoto-Hamburg wird seit 2013 von der Universität Hamburg wissenschaftlich geleitet und von der Kulturbehörde der Stadt gefördert. Ziel ist der Aufbau einer gemeinsamen Bilddatenbank für private und behördliche Archive und Museen Hamburgs. 
+                    <hi rend="color(333333) background(white)">Zugleich wird eine mobile App entwickelt</hi>, die die Bilddaten für die Öffentlichkeit zugänglich, nutz- und erfahrbar macht. Als ein zentrales Element verknüpfen Narrative Abgebildetes mit der Lebenswirklichkeit der Nutzer. Das Erzählen als Basis anthropologischer Überlieferung wird mit archivarischen Arbeitsweisen und informationstechnologischen Implementierungen verknüpft, um historisches Bildmaterial langfristig als Bestandteil einer lebendigen Stadtkultur zu erhalten. Unsere auf diesem Prinzip fußende interdisziplinär angelegte Nachhaltigkeitsstrategie möchte ich im hier vorgeschlagenen Vortrag erläutern und vor allen Dingen zur Diskussion stellen, welche Rolle digitale Technologien mit Blick auf Nachhaltigkeit als konzeptionelles kulturelles Desiderat spielen können. Der Vortrag verknüpft die Diskussion um digitale Nachhaltigkeit mit Ansätzen aus der Kultur- und Erzähltheorie und zeigt ein Anwendungsbeispiel kultureller Nachhaltigkeit, welches die Verbindung von Wissenschaft und Öffentlichkeit anstrebt. 
                 </p>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>XMP</head>
-<p>Zur Lösung der Herausforderungen im Bereich Langzeitarchivierung orientiert sich das CVMA an den bereits bestehenden Lösungen aus der digitalen Dokument-Langzeitarchivierung von PDF-Dateien (Braun et al. 2010; ISO 2011), bei welcher sämtliche genutzte Abbildungen, Schriftarten und Metadaten mit in das Dokument eingebettet werden, sodass diese Datei letztendlich alle Inhalte originalgetreu ohne Zuhilfenahme dritter Anwendungen anzeigen kann. </p>
-<p>Der PDF-Standard (Adobe Systems 2006) nutzt für die Integration von Metadaten die eXtensible Metadata Platform (XMP), mit welcher die zum Dokument zugehörigen Metadaten als RDF/XML kodiert in das Dokument eingebettet werden (Adobe Systems 2005; Bright 2006) ohne die digitale Interpretierbarkeit der zu beschreibenden Datei zu beeinflussen. Wird die Datei von einem Programm geöffnet, welches den XMP-Standard nicht unterstützt, wird diese Datei dennoch angezeigt. Umgekehrt ist es möglich, dieselbe Datei mit einem Texteditor zu öffnen, um die XMP Daten in Reintextform anzuzeigen.</p>
-<p>Die Nutzung von XMP hat sich bereits auf mehreren Ebenen etabliert. Zu einem werden beim Abspeichern von Digitalfotografien EXIF- und IPTC-Daten von Digitalkameras als XMP in die erzeugten Bilddateien geschrieben (Tesic 2005) und können so durch Bildverwaltungssoftware wie Adobe Bridge
-                    <ref n="3" target="workshop-POHLOftn3" type="note">3</ref> oder FotoWare Fotostation
-                    <ref n="4" target="workshop-POHLOftn4" type="note">4</ref> gelesen und verwaltet werden. Des Weiteren wird XMP in der Digital Asset Management Community für die einfache Verwaltung von Dateibeständen bevorzugt genutzt (Regli 2009). Durch die Einheit von Dokument und Metadaten verringert sich der Aufwand bei einem Datentransfer sämtlicher Abhängigkeiten auf das Kopieren des Datenbestands (Binder 2006) und hält gleichzeitig die Möglichkeit offen, Datenbanken aus den vorliegenden XMP-Daten zu erstellen und auf die XMP-Daten aufbauende Tools zu implementieren (Abdillah 2013). Der Kern von XMP liegt inzwischen auch als ISO-Standard vor.
-                    <ref n="5" target="workshop-POHLOftn5" type="note">5</ref> Das CVMA-Onlinebildarchiv dient hierfür als Beispiel, da sich die relationale Datenbank der Online-Plattform aus den XMP-Daten des verfügbaren Bildbestandes speist.
+<head>Nachhaltigkeit kultureller Daten: Konzeptionelles Desiderat und digitale Optionen </head>
+<p rend="normal">Unser grundlegendes Verständnis von Nachhaltigkeit basiert auf einer frühen Definition nachhaltiger Entwicklung aus dem Bericht der UN-Brundtland-Kommission “Our Common Future” (World Commission on Environment and Development 1987). Darin heißt es:“Sustainable development is development that meets the needs of the present without compromising the ability of future generations to meet their own needs.” (Ebd.: 41)</p>
+<p rend="normal">
+<hi rend="background(white)">Nachhaltigkeit stellt sich hier vorrangig als Prozess der Vermittlung zwischen den Bedürfnissen der heutigen Gesellschaft und denen zukünftiger Generationen dar.</hi> Auch in Bezug auf das kulturelle Erbe wird dieses Spannungsfeld, das auch als Enkelgerechtigkeit (Die Bundesregierung 2015: 23) bezeichnet wird, als bedeutsam eingestuft (Willer 2013: 141). 
                 </p>
-<p>Ein weiterer Faktor für die internationale Verbreitung des XMP-Standards ist seine Erweiterbarkeit. Demnach ist es möglich, eigene Metadatenschemata als XMP an Dateien anzuhängen. Zwar ist dieser Anhang als RDF/XML kodiert, allerdings besteht die Restriktion kein RDFS und OWL nutzen zu können (Eriksson 2007). Das einzig gültige Subjekt in den RDF-Tripeln in XMP ist die zu beschreibende Ressource, also die Datei selbst. Es ist also nicht möglich Ontologien wie im herkömmlichen Semantic-Web-Kontext zu verwenden. Für das CVMA-Bildarchiv genügt es jedoch, die beschreibenden Metadaten für die einzelnen Bildressourcen anzulegen und so den Funktionsumfang des XMP-Standards voll auszuschöpfen.</p>
+<p rend="normal">In der frühen Definition der Nachhaltigkeit liegt der Schwerpunkt auf ökologischen Gesichtspunkten. Anschließend wurde das Konzept allerdings bereits um kulturelle Dimensionen erweitert. Für die efoto-Nachhaltigkeitsstrategie sind zwei Ansätze konzeptionell von besonderer Bedeutung:</p>
+<list type="ordered">
+<item>
+<hi rend="bold">Kulturelle Nachhaltigkeit:</hi> Kultur
+                        <ref n="1" target="vortrag-SCHUMftn1" type="note">1</ref> wird neben Wirtschaft, Ökologie und Gesellschaft als Triebfeder für Nachhaltigkeit verstanden. Dabei geht es um die Frage, inwiefern Kultur behilflich sein kann, eine nachhaltige Entwicklung voran zu treiben. Nach diesem Verständnis kann Nachhaltigkeit nur gelingen, wenn diese in der Kultur eines sozialen Systems verankert ist. (Brocchi 2007)
+                    </item>
+<item>
+<hi rend="bold">Nachhaltigkeit der Kultur:</hi> Hier geht es hauptsächlich um die Frage, wie kulturelle Artefakte langfristig erhalten und lebendig gehalten werden können. Dabei spielen in unserem Kontext Strategien eine besondere Rolle, die das Nachhaltigkeitsdesiderat durch gezielte Nutzung digitaler Technologien zu beantworten suchen. Es eröffnen sich dabei unterschiedliche Problemfelder wie z.B.
+                    </item>
+</list>
+<list type="ordered">
+<item>
+<hi rend="bold">Zugänglichkeit</hi>: Hier sind zwei Teilbereiche von überragender Bedeutung. Einerseits muss Zugang auf technischer Ebene geschaffen werden und erhalten bleiben. Objekte, die nicht ursprünglich digital sind, müssen digitalisiert und in Datenbanken und Portale überführt werden. In diesem Rahmen wird auch überlegt, wie digitale Langzeitarchivierung in Hard- und Software am besten zu leisten ist (Giebel 2013). Der zweite umfassend problematisierte Bereich ist der rechtliche Rahmen, der den öffentlichen Zugang meist erschwert (Steinhauer 2013). Die Vielfalt der Objektarten des kulturellen Erbes bedingt, dass häufig Rechte unterschiedlicher Art greifen. 
+                    </item>
+</list>
+<list type="ordered">
+<item>
+<hi rend="bold">Kuration</hi>: Grundsätzlich bietet die digitale Archivierung die Möglichkeit, Daten in großen Mengen zu erfassen. In Anbetracht der Masse der digitalen Artefakte stellt sich allerdings die Frage, was würdig ist, für das kulturelle Erbe bewahrt zu werden. Die bisher vorherrschende manuelle Sichtung durch Archivare und Kuratoren wird angesichts der schieren Datenmengen zunehmend unmöglich. Automatische digitale Kuration wurde als Lösung zwar formuliert (Zorich 2016: 14), birgt aber die Gefahr des menschlichen Kompetenzverlustes an den Computer bzw. an Algorithmen. Gleichzeitig scheint eine größere Scheu vor der digitalen Löschung als vor dem ‘Wegschmeißen’ von Artefakten zu bestehen, die als nicht archivwürdig klassifiziert werden. Das Löschen digitaler Daten wird oft als endgültig beschrieben, während ein weggeworfenes Objekt immer noch entweder physisch überdauern oder als private Kopie zu einem späteren Zeitpunkt wieder gefunden werden kann (Beinert; Straube 2013: 28f). 
+                    </item>
+</list>
+<list type="ordered">
+<item>
+<hi rend="bold">Authentizität:</hi> Dieser Punkt bezieht sich hauptsächlich auf ursprünglich digitale Artefakte, wie Zeugnisse des digitalen Wandels selbst (z. B. Webseiten). Aufgrund der Verankerung in Hard- und Software, die oft schnell obsolet wird, sind die sogenannten “born digital” Artefakte oftmals schon frühzeitig nicht mehr auf die gleiche Weise aufrufbar wie zu der Zeit, als sie entwickelt wurden (Crueger 2013). Aber auch in Bezug auf grafische Darstellungen von Digitalisaten stellt sich die Frage, inwiefern technisch langfristig gewährleistet werden kann, dass kulturelle Artefakte zumindest ähnlich betrachtet werden können wie ihre analogen Pendants (Fröhlich 2013).
+                    </item>
+</list>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>XMP Workflow beim CVMA</head>
-<p>In Deutschland haben die zwei CVMA-Arbeitsstellen in Potsdam und Freiburg unterschiedliche Workflows implementiert, um XMP-Daten in die Bilddateien einzupflegen. Beide benutzen zwar dasselbe Metadatenschema, allerdings unterscheiden sich die Tools zur Eingabe der Metadaten und die damit verbundenen Arbeitsabläufe. </p>
-<p>Um sich für das Vorhaben der deutschen CVMA-Arbeitsstellen zu eignen, muss eine entsprechende Metadatenbearbeitungssoftware folgende Kriterien erfüllen: a) Die Software muss fähig sein, XMP-Metadaten zu schreiben und auszulesen. b) Die Software muss die Anzeige und Metadatenmanipulation von gängigen Bilddateiformaten wie TIFF und JPG unterstützen. c) Die Software muss die Möglichkeit zur Konfiguration eines eigenen Metadatenschemas anbieten. d) Optional: Die Software bietet die Möglichkeit zur lokalen Recherche mit dem im c) angelegten Metadatenschema. </p>
-<p>Das Team in Freiburg nutzt die Freeware exiftoolGUI
-                    <ref n="6" target="workshop-POHLOftn6" type="note">6</ref>, welche eine konfigurierbare graphische Oberfläche für das Kommandozeilentool exiftool
-                    <ref n="7" target="workshop-POHLOftn7" type="note">7</ref> bietet. exiftool selbst ist ein Programm zum Auslesen und zur Manipulation von Bildmetadaten und unterstützt das Lesen und Schreiben von XMP-Daten. Über eine Perl-Konfigurationsdatei kann das anzuwendende Metadatenschema für Datenmanipulationen via exiftool und somit auch exiftoolGUI festgelegt werden. Die inhärenten Vorteile von exiftool und exiftoolGUI sind deren Offenheit, Konfigurierbarkeit und Plattformunabhängigkeit. Die Nutzung von exiftoolGUI für größere Bildbestände ist jedoch eher unkomfortabel, da dieses Tool ausschließlich zur Metadatenmanipulation und nicht als Bildverwaltungssoftware ausgelegt ist.
+<head>Eine Nachhaltigkeitsstrategie für efoto-Hamburg</head>
+<p>In den Partnerinstitutionen
+                    <ref n="2" target="vortrag-SCHUMftn2" type="note">2</ref> von efoto-Hamburg liegen insgesamt mehrere Millionen Bilddaten in analoger und digitaler Form vor, die unterschiedlich gut zugänglich sind. In einem ersten Schritt wird der Import einer Teilmenge von rund 100.000 Datensätzen aus fünf Partnerinstitutionen angestrebt, die in der mobilen App auf einer interaktiven Karte zugänglich gemacht werden. Darüber hinaus ist es eines der Projektziele, nach und nach möglichst viele der digital vorliegenden Bilder so bereitzustellen, dass sie in die digitale Nachhaltigkeit überführt werden können. Die Nachhaltigkeitsstrategie von efoto-Hamburg umfasst zwei einander ergänzende Vorgehensweisen. 
                 </p>
-<p>Die CVMA-Arbeitsstelle in Potsdam nutzt hingegen die proprietäre Software FotoStation von FotoWare (Version 8.0). Zwar liegt der Quellcode dieser Software nicht offen, jedoch besteht auch bei diesem Tool die Möglichkeit zur Konfiguration eigener Metadatenschemata. FotoStation bietet deutlich mehr Bedienkomfort im Vergleich zu exiftoolGUI und kann als Bildverwaltungssoftware genutzt werden, welche den lokalen Bildbestand samt Metadaten für Recherchen indexiert und die Bilder auf einem digitalen Lichttisch darstellt. Für die Konfiguration des Metadatenschemas bietet FotoStation graphische Editoren, mit welchem nicht nur die zu verwendenden Namensräume und Felder definiert werden können, sondern auch das Metadateneingabeinterface frei gestaltet werden kann. Dabei ist es möglich kontrollierte Vokabulare zu anzulegen und die Nutzereingaben über reguläre Ausdrücke validieren zu lassen. Weiterhin lässt sich die Gesamtkonfiguration von Fotostation leicht ex- und importieren, sodass sämtliche Informationen zum verwendeten Metadatenschema, Editorinterface, Vorschlagslisten, Bearbeitungsaktionen und Rerchercheeinstiege leicht innerhalb des Teams ausgetauscht und aktualisiert werden können. </p>
+<div rend="DH-Heading2" type="div2">
+<head>Strategische Dimension: Diskursives Kulturkonzept und narrative Struktur</head>
+<p rend="normal">Kulturelle Nachhaltigkeit muss nach unserem Verständnis als Entwicklungsprozess aufgefasst werden, der kulturelle Artefakte nicht nur im Sinne des kulturellen Erbes an Folgegenerationen übergibt, sondern von Beginn an eine Art 
+                        <hi rend="underline">gelebte</hi> Enkelgerechtigkeit unterstützt. Erst Kultur als tatsächliche Reflexionspraxis macht die kulturellen Artefakte auch diskursiv funktional; sie etabliert somit eine Diskursstruktur, innerhalb derer prinzipiell jeder als Zeitzeuge agieren und seine Eindrücke festhalten und teilen kann. In diesem Kontext können kulturelle Artefakte zugleich Anlass wie Gegenstand diskursiver und reflexiver Prozesse werden. 
+                    </p>
+<p rend="normal">Diese strategische Prämisse von efoto-Hamburg ruht auf zwei konzeptionellen Grundpfeilern. Der erste ist ein an Luhmann angelehntes Kulturverständnis: 
+                        <hi rend="background(white)">Kultur wird als ein Prozess verstanden</hi>, der sich auf drei Ebenen abspielt; der Objektebene, der Reflektion erster und der Reflektion zweiter Ordnung. Erst wenn alle drei Ebenen miteinander verknüpft sind, ist die Voraussetzung dafür gegeben, dass ein Artefakt nachhaltig im Kulturprozess verankert sein kann. (Luhmann 2011: 140 und Luhmann 1999: 99) Eine Verknüpfung der drei Ebenen könnte z.B. wie folgt aussehen:
+                    </p>
+<p rend="normal">
+<graphic height="9.709291666666667cm" n="1001" rend="inline" url="vortrag-SCHUM-image1.png" width="10.331980555555555cm"/>
+</p>
+<p rend="normal">Die zweite Säule ist die narrative Natur dieses Kulturprozesses. Grundannahme ist hier, dass auch in der digitalisierten Gesellschaft Überlieferung nur durch narrative Kommunikation gewährleistet werden kann. Identitäten von Individuen und Gruppen werden durch Minimalnarrative, sogenannte Small Stories (Bamberg; Georgakopoulou 2008 und Georgakopoulou 2007), ausgeformt. Die Motivation des oben abgebildeten Nutzers A ist demnach identitätsbildender Natur. Er oder sie verknüpft das, was im kulturellen Artefakt dargestellt ist, mit einem Ereignis oder einem Teilaspekt aus der eigenen Lebensgeschichte oder seiner Persönlichkeit, um diese innerhalb der efoto-Community zu stärken und/oder auf ähnliche Persönlichkeiten und/oder Lebensgeschichten zu treffen. Nutzer B und C sind ähnlich motiviert, auch wenn ihre Kommunikation nicht durch das Objekt, sondern durch die Reflexion über dasselbe ausgelöst wird. Indem alle drei Beispielnutzer über Small Stories die historischen Bilddaten mit ihrer Lebenswirklichkeit verknüpfen, halten sie diese lebendig. Artefakte, die so in einem aktuellen Kulturprozess verankert werden, sind für efoto besonders bewahrenswert. Diese Bewertung erfolgt also dynamisch in einem sozio-kulturellen System. Damit ergibt sich nun die Frage, welche spezifische Rolle digitalen Technologien in diesem Zusammenhang zukommt.</p>
+</div>
+<div rend="DH-Heading2" type="div2">
+<head>Die Rolle digitaler Technologien im Kontext der Nachhaltigkeitsstrategie</head>
+<p>Im Vordergrund von eFoto-Hamburg steht weder ein archivarisches Interesse noch eine Kulturvermittlung als Überzeugungsarbeit: nicht das möglichst nachhaltige ‘Aufbewahren’ historischer Bilder im digitalen Format und auch nicht das Erzeugen kultureller Akzeptanz für diese Bilder ist die raison d’etre des Projekts, sondern das Einbinden der Bilder in aktuelle reflexive Prozesse. </p>
+<p rend="normal">Die manuelle Einzelprüfung durch Kuratoren, die in den Partnerinstitutionen von efoto-Hamburg bereits stattgefunden hat, bevor die Bilddaten auf die digitale Plattform gelangen, versteht sich daher als Vorstufe, die die Interaktion der Community mit und über die digitalisierten Artefakte vorbereitet und unterstützt. Jeder Nutzer gilt unabhängig von Faktoren wie z.B. seinem Alter als Zeitzeuge und wird als solcher in den weiteren Kurationsprozess einbezogen. Auf diese Weise nehmen Nutzer generationenübergreifend an der Entwicklung dieses Teilbestandes des kulturellen Erbes teil - und an eben dieser Stelle bieten digitale Technologien nun die Möglichkeit, die Nachhaltigkeit kultureller Artefakte nicht nur im Sinne eines statischen (archivarischen) ‘Vorhaltens’ digitaler Repräsentationen zu sichern, sondern vielmehr auch im Sinne eines ‘Lebendighaltens’ durch den aktiven Gebrauch und die Einbettung in gelebte kulturelle Diskursprozesse zu befördern. </p>
+<p rend="normal">Im Projekt efoto wird zu diesem Zweck ein System aus konkreten technischen Features entwickelt, welches Nutzern unterschiedliche Möglichkeiten eröffnet, die im digitalen Format vorliegenden Bilder in aktive Gebrauchsprozesse einzubinden und so 
+                        <hi rend="italic">kulturelle Nachhaltigkeit qua kultureller Nutzung</hi> zu sichern. Die mobile efoto-App umfasst Features wie Stadtrundgänge, Zeitzeugen-Interviews, ein Kommentar-System, einen Bildrechte-Wegweiser, eine interaktive Karte oder das “historische Selfie”. Anhand dieser Beispielfeatures wird im vorgeschlagenen Vortrag erläutert werden, welche konzeptionellen Ideen in die Entwicklung eingeflossen sind und wie diese die Nachhaltigkeitsstrategie umsetzen. 
+                    </p>
+</div>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>Ziele des Workshops</head>
-<p>Die Teilnehmer an diesem Workshop sollen einen Einstieg in die nachhaltige Bildmetadatenverwaltung mit XMP erhalten. Als Übung wird mit den Teilnehmern gemeinsam zuerst ein Beispiel-Metadatenschema definiert. Anschließend werden die Teilnehmer in die Benutzung von exiftoolGUI und FotoStation eingeführt, um daraufhin das zuvor definierte Metadatenschema für beide Tools umzusetzen und zu testen. Weiterhin wird das Abfragen von XMP-Metadaten mit dem exiftool über die Kommandozeile geübt, um so das Potential von XMP für die Erstellung von Tools, Services oder Datenbanken für Bildbestände aufzuzeigen.</p>
-<p>Das CVMA-Deutschland erhofft sich, Interessierten und ähnlichen Projekten den Einstieg in die Erstellung und Manipulation von XMP-Daten zu erleichtern und gleichzeitig weitere Lösungsansätze und Tools für den Umgang mit XMP-Daten kennenzulernen. </p>
-<p>Für die Teilnahme an diesem Workshop werden lediglich Grundkenntnisse in XML vorausgesetzt. Die Kenntnisse einer Programmier- oder Skriptsprache sind zwar von Vorteil, aber nicht erforderlich. Den Teilnehmern entstehen für die Nutzung von Software während des Workshops keine Kosten, da exiftool und exiftool GUI kostenfrei sind und Fotostation für 14 Tage kostenfrei getestet werden kann. Der Workshop ist für maximal 20 Teilnehmer ausgelegt.</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Forschungsinteressen</head>
-<p>Oliver Pohl ist wissenschaftlicher Mitarbeiter bei TELOTA an der Berlin-Brandenburgischen Akademie der Wissenschaften und betreut dort das CVMA, das Langzeitvorhaben Corpus Coranicum sowie das Kooperationsprojekt Paleocoran mit dem Collège de France. Seine Forschungsinteressen sind Webtechnologien und Semantic Web Technologien für digitale Geisteswissenschaften als auch maschinelle Übersetzung.</p>
-<p>Torsten Schrade ist Leiter der Digitalen Akademie der Mainzer Akademie der Wissenschaften und der Literatur und beschäftigt sich vorrangig mit dem Forschungsdatenmanagement und dem Einsatz von Webtechnologien für die geisteswissenschaftliche Grundlagenforschung. Daneben zählen Methoden und Programmierparadigmen der agilen Softwareentwicklung sowie die Technologien des Semantic Web zu seinen Forschungsinteressen.</p>
+<head>Relevanz und Anschlussfähigkeit</head>
+<p rend="normal">Der vorgeschlagene Beitrag versteht sich als Anwendungsbeispiel einer interdisziplinär ausgerichteten kulturellen Nachhaltigkeitsstrategie. Ansätze aus der Erzähltheorie, der Kulturwissenschaft und den Museumswissenschaften werden mit einem ökologisch-politischen Verständnis von Nachhaltigkeit verbunden. Damit versucht efoto-Hamburg zu erproben, was bisher sowohl im wissenschaftlichen als auch im gesellschaftlichen Diskurs lediglich theoretisch reflektiert und teilweise auch proklamiert worden ist: eine kulturell angetriebene Nachhaltigkeit kulturellen Datenmaterials, deren Kernidee die Einbindung von Artefakten in (digital unterstützte) Gebrauchs- und Reflexionsprozesse und nicht deren bloßes langfristiges ‘Bewahren’ in möglichst stabilen medialen Formaten ist. </p>
+<p rend="normal">efoto-Hamburg ist dabei nicht nur interdisziplinär ausgerichtet, sondern bezieht auch Bürger und Besucher der Stadt auf allen oben skizzierten Ebenen des Kulturprozesses ein. Damit verbindet das Projekt Wissenschaft und Öffentlichkeit in möglichst durchlässiger Weise. 
+                    <hi rend="background(white)">Für die digitalen Geisteswissenschaften stellt das Projekt nicht nur ein Anwendungsbeispiel dar, sondern eine lebendige Plattform, die für zahlreiche Anschlussuntersuchungen offen ist.</hi>
+</p>
 </div>
 </body>
-<back><div type="Notes"><note n="1" rend="footnote text" xml:id="workshop-POHLOftn1"> http://www.corpusvitrearum.de </note><note n="2" rend="footnote text" xml:id="workshop-POHLOftn2"> http://www.corpusvitrearum.de/cvma/1.1/ (Stand: 25.08.2016) </note><note n="3" rend="footnote text" xml:id="workshop-POHLOftn3"> http://www.adobe.com/de/products/bridge.html</note><note n="4" rend="footnote text" xml:id="workshop-POHLOftn4"> http://www.fotoware.com/products/fotostation-client</note><note n="5" rend="footnote text" xml:id="workshop-POHLOftn5"> http://www.iso.org/iso/catalogue_detail?csnumber=57421</note><note n="6" rend="footnote text" xml:id="workshop-POHLOftn6"> http://u88.n24.queensu.ca/~bogdan/ bzw. https://hvdwolf.github.io/pyExifToolGUI/</note><note n="7" rend="footnote text" xml:id="workshop-POHLOftn7"> http://www.sno.phy.queensu.ca/~phil/exiftool/</note></div>
+<back><div type="Notes"><note n="1" rend="normal" xml:id="vortrag-SCHUMftn1"> Kultur wird hier - abweichend vom im Folgenden erläuterten Kulturverständnis innerhalb des Projektes efoto-Hamburg - sehr umfassend als Wechselspiel der Einwirkung des Menschen auf seine Umwelt und der Einwirkung der Umwelt auf den Menschen verstanden.</note><note n="2" rend="normal" xml:id="vortrag-SCHUMftn2"> Dazu gehören das Hamburger Staatsarchiv, das Landesamt für Geoinformation und Vermessung, die Hamburger Geschichtswerkstätten, das Museum der Arbeit, das Museum für Kunst und Gewerbe, das Polizeimuseum und die Hamburger Feuerwehrhistoriker.</note></div>
 <div type="bibliogr">
 <listBibl>
-<head>Bibliographie</head>
+<head>Bibliographie </head>
 <bibl>
-<hi rend="bold">Abdillah, Leon Andretti</hi> (2013):
-                        „PDF Articles Metadata Harvester“,
-                        in:
-                        <hi rend="italic">arXiv Preprint arXiv:1301.6591</hi>. 
-                        <ref target="http://arxiv.org/abs/1301.6591">http://arxiv.org/abs/1301.6591</ref> [letzter Zugriff 25. August 2016].
-                    </bibl>
+<hi rend="bold">Bamberg, Michael / Georgakopoulou, Alexandra</hi> (2008): 
+                    „Small stories as a new perspective in narrative and identity analysis“, 
+                    in: De Fina, Anna / Georgakopoulou, Alexandra (eds.): 
+                    <hi rend="italic">Narrative Analysis in the Shift from Texts toPractices</hi>. 
+                    Special Issue of <hi rend="italic">Text &amp; Talk 28</hi>: 377–396. 
+                </bibl>
 <bibl>
-<hi rend="bold">Adobe Systems</hi> (2005):
-                        <hi rend="italic">Extensible Metadata Platform (XMP) Specification</hi>.
-                        Adobe Systems
-                        <ref target="https://partners.adobe.com/public/developer/en/xmp/sdk/XMPspecification.pdf">https://partners.adobe.com/public/developer/en/xmp/sdk/XMPspecification.pdf</ref> [letzter Zugriff 25. August 2016].
-                    </bibl>
+<hi rend="bold">Beinert, Tobias / Straube, Armin</hi> (2013): 
+                    „Aktuelle Herausforderungen der digitalen Langzeitarchivierung“,
+                    in: Klimpel, Paul / Keiper, Jürgen (eds.): 
+                    <hi rend="italic">Was bleibt? Nachhaltigkeit der Kultur in der digitalen Welt</hi>. 
+                    Berlin: iRights Media Verlag 27–46.
+                </bibl>
 <bibl>
-<hi rend="bold">Adobe Systems</hi> (2006):
-                        <hi rend="italic">PDF Reference, Sixth Edition: Adobe Portable Document Format Version 1.7</hi>
-<ref target="http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/pdf_reference_1-7.pdf">http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/pdf_reference_1-7.pdf</ref> [letzter Zugriff 25. August 2016].
-                    </bibl>
+<hi rend="bold">Brocchi, Davide</hi> (2007): 
+                    „Die kulturelle Dimension der Nachhaltigkeit“,
+                    in: 
+                    <hi rend="italic">Magazin Cultura21</hi>
+<ref target="http://davidebrocchi.eu/wp-content/uploads/2013/08/2007_dimension_nachhaltigkeit.pdf">http://davidebrocchi.eu/wp-content/uploads/2013/08/2007_dimension_nachhaltigkeit.pdf</ref> [letzter Zugriff 25. August 2016].
+                </bibl>
 <bibl>
-<hi rend="bold">Binder, Jennifer</hi> (2006):
-                        „Exchanging Assets and Metadata across Platforms“,
-                        in: 
-                        <hi rend="italic">Journal of Digital Asset Management</hi> 2 (5): 215–18 10.1057/palgrave.dam.3650045.
-                    </bibl>
+<hi rend="bold">Bundesregierung</hi> (2015): 
+                    <hi rend="italic">Meilensteine der Nachhaltigkeitspolitik. Weiterentwicklung der nationalen Nachhaltigkeitsstrategie</hi>
+<ref target="http://www.bundesregierung.de/Content/DE/_Anlagen/2015/02/2015-02-03-meilensteine-der-nachhaltigkeitspolitik.pdf?__blob=publicationFile">http://www.bundesregierung.de/Content/DE/_Anlagen/2015/02/2015-02-03-meilensteine-der-nachhaltigkeitspolitik.pdf?__blob=publicationFile</ref> [letzter Zugriff 17. August 2016].
+                </bibl>
 <bibl>
-<hi rend="bold">Braun, Kim / Buddenbohm, Stefan / Dobratz, Susanne / Herb, Ulrich / Müller, Uwe / Pampel, Heinz / Schmidt, Birgit</hi> (2010):
-                        <hi rend="italic">DINI-Zertifikat Dokumenten-Und Publikationsservice 2010</hi>
-<ref target="https://pub.uni-bielefeld.de/publication/2491543">https://pub.uni-bielefeld.de/publication/2491543</ref> [letzter Zugriff 25. August 2016]. 
-                    </bibl>
+<hi rend="bold">Crueger, Jens</hi> 2013): 
+                    „Die Dark Ages des Internet“,
+                    in: Klimpel, Paul / Keiper, Jürgen (eds.): 
+                    <hi rend="italic">Was bleibt? Nachhaltigkeit der Kultur in der digitalen Welt</hi>. 
+                    Berlin: iRights Media Verlag 191–198.
+                </bibl>
 <bibl>
-<hi rend="bold">Bright, Jason</hi> (2006):
-                        „First Steps: XMP“,
-                        in: 
-                        <hi rend="italic">Journal of Digital Asset Management</hi> 2 (3–4): 198–202 10.1057/palgrave.dam.3650025.
-                    </bibl>
+<hi rend="bold">Fröhlich, Jan</hi> (2013): 
+                    „Farbraum und Bildzustand im Kontext der Langzeitarchivierung“,
+                    in: Klimpel, Paul / Keiper, Jürgen (eds.): 
+                    <hi rend="italic">Was bleibt? Nachhaltigkeit der Kultur in der digitalen Welt</hi>. 
+                    Berlin: iRights Media Verlag 119–125.
+                </bibl>
 <bibl>
-<hi rend="bold">Eriksson, Henrik</hi> (2007):
-                        „The Semantic-Document Approach to Combining Documents and Ontologies“,
-                        in: 
-                        <hi rend="italic">International Journal of Human-Computer Studies</hi> 65 (7): 624–639.
-                    </bibl>
+<hi rend="bold">Georgakopoulou, Alexandra</hi> (2007): 
+                    „Small Stories, Interaction and Identities“,
+                    in: 
+                    <hi rend="italic">Studies in Narrative 8</hi>. 
+                    Amsterdam / Philadelphia: John Benjamins.
+                </bibl>
 <bibl>
-<hi rend="bold">IPTC</hi> (2014):
-                        <hi rend="italic">IPTC - NAA Information Interchange Model Version 4.2</hi>.
-                        International Press Telecommunicatoins Council
-                        <ref target="http://www.iptc.org/std/IIM/4.2/specification/IIMV4.2.pdf">http://www.iptc.org/std/IIM/4.2/specification/IIMV4.2.pdf</ref> [letzter Zugriff 25. August 2016].
-                    </bibl>
+<hi rend="bold">Giebel, Ralph</hi> (2013): 
+                    „Speichertechnologie und Nachhaltigkeit“,
+                    in: Klimpel, Paul / Keiper, Jürgen (eds.): 
+                    <hi rend="italic">Was bleibt? Nachhaltigkeit der Kultur in der digitalen Welt</hi>. 
+                    Berlin: iRights Media Verlag 95–108.
+                </bibl>
 <bibl>
-<hi rend="bold">ISO</hi> (2011):
-                        <hi rend="italic">ISO 19005-1:2005 - Document Management -- Electronic Document File Format for Long-Term Preservation -- Part 1: Use of PDF 1.4 (PDF/A-1)</hi>
-<ref target="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=38920">http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=38920</ref> [letzter Zugriff 25. August 2016].
-                    </bibl>
+<hi rend="bold">Luhmann, Niklas</hi> (1999): 
+                    <hi rend="italic">Die Kunst der Gesellschaft</hi>.
+                    Frankfurt am Main: Suhrkamp.
+                </bibl>
 <bibl>
-<hi rend="bold">Library of Congress / National Science Foundation</hi> (2003):
-                        <hi rend="italic">It’s About Time: Research Challenges in Digital Archiving and Long-Term Preservation</hi>
-<ref target="http://www.digitalpreservation.gov/documents/about_time2003.pdf">http://www.digitalpreservation.gov/documents/about_time2003.pdf</ref> [letzter Zugriff 25. August 2016].
-                    </bibl>
+<hi rend="bold">Luhmann, Niklas</hi> (2011): 
+                    <hi rend="italic">Einführung in die Systemtheorie</hi>.
+                    Heidelberg: Carl Auer.
+                </bibl>
 <bibl>
-<hi rend="bold">Regli, Theresa</hi> (2009):
-                        „The State of Digital Asset Management: An Executive Summary of CMS Watch’s Digital Asset Management Report“,
-                        in: 
-                        <hi rend="italic">Journal of Digital Asset Management</hi> 5 (1): 21–26.
-                    </bibl>
+<hi rend="bold">Steinhauer, Eric</hi> (2013): 
+                    „Wissen ohne Zukunft? Der Rechtsrahmen der digitalen Langzeitarchivierung von Netzpublikationen“,
+                    in: Klimpel, Paul / Keiper, Jürgen (eds.): 
+                    <hi rend="italic">Was bleibt? Nachhaltigkeit der Kultur in der digitalen Welt</hi>. 
+                    Berlin: iRights Media Verlag 61–80.
+                </bibl>
 <bibl>
-<hi rend="bold">Tesic, Jelena</hi> (2005):
-                        „Metadata Practices for Consumer Photos“,
-                        in: 
-                        <hi rend="italic">IEEE MultiMedia</hi> 12 (3): 86–92.
-                    </bibl>
+<hi rend="bold">Willer, Stefan</hi> (2013): 
+                    „Kulturelles Erbe und Nachhaltigkeit“,
+                    in: Klimpel, Paul / Keiper, Jürgen (eds.): 
+                    <hi rend="italic">Was bleibt? Nachhaltigkeit der Kultur in der digitalen Welt</hi>. 
+                    Berlin: iRights Media Verlag 139–152.
+                </bibl>
 <bibl>
-<hi rend="bold">Weibel, Stuart / Kunze, John / Lagoze, Carl / Wolf, Misha</hi> (1998):
-                        <hi rend="italic">Dublin Core Metadata for Resource Discovery</hi>
-<ref target="http://www.rfc-editor.org/info/rfc2413">http://www.rfc-editor.org/info/rfc2413</ref> [letzter Zugriff 25. August 2016].
-                    </bibl>
+<hi rend="bold">World Commission on Environment and Development</hi> (1987): 
+                    <hi rend="italic">Our Common Future</hi>.
+                    <ref target="http://www.un-documents.net/our-common-future.pdf">http://www.un-documents.net/our-common-future.pdf</ref> [letzter Zugriff 17. August 2016].
+                </bibl>
+<bibl>
+<hi rend="bold">Zorich, Diane</hi> (2015): 
+                    <hi rend="italic">Report of the Summit in Digital Curation in Art Museums</hi>
+<ref target="http://advanced.jhu.edu/wp-content/uploads/2016/04/digitalCuration_summitReport10_2015.pdf">http://advanced.jhu.edu/wp-content/uploads/2016/04/digitalCuration_summitReport10_2015.pdf</ref> [letzer Zugriff 24. August 2016].
+                </bibl>
 </listBibl>
 </div>
 </back>

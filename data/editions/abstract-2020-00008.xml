@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="113_final-WEIMER_Lukas_Stilometrische_Untersuchung_von_Figurenreden_in" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="149_final-GÖRZ_Günther_A_Linked_Open_Data_Platform_for_Historical_Geog" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Stilometrische Untersuchung von Figurenreden in realistischen Erzähltexten</title>
+<title>A Linked Open Data Platform for Historical Geographic Data</title>
 <author>
 <persName>
-<surname>Weimer</surname>
-<forename>Lukas</forename>
+<surname>Görz</surname>
+<forename>Günther</forename>
 </persName>
-<affiliation>Julius-Maximilians-Universität Würzburg, Deutschland</affiliation>
-<email>lukas.weimer@uni-wuerzburg.de</email>
+<affiliation>FAU Erlangen-Nürnberg, Informatik, Deutschland; Bibliotheca Hertziana, Rom, Italien</affiliation>
+<email>guenther.goerz@fau.de</email>
+</author>
+<author>
+<persName>
+<surname>Seidl</surname>
+<forename>Chiara</forename>
+</persName>
+<affiliation>FAU Erlangen-Nürnberg, Informatik, Deutschland; Bibliotheca Hertziana, Rom, Italien</affiliation>
+<email>chiara.seidl0510@gmail.com</email>
+</author>
+<author>
+<persName>
+<surname>Thiering</surname>
+<forename>Martin</forename>
+</persName>
+<affiliation>TU Berlin, Deutschland; Bibliotheca Hertziana, Rom, Italien</affiliation>
+<email>pd_dr_Martin_Thiering@posteo.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2015-10-04T22:02:00Z</date>
+<date>2020-01-06T16:12:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -46,150 +62,160 @@
 <term>Posterpräsentation</term>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Korpus</term>
-<term>Annotation</term>
-<term>Figurenrede</term>
-<term>Stilometrie</term>
+<term>Georeferenzierung</term>
+<term>semantische Modellierung</term>
+<term>Linked Open Data</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Sammlung</term>
+<term>Transkription</term>
+<term>Räumliche Analyse</term>
+<term>Modellierung</term>
 <term>Annotieren</term>
-<term>Stilistische Analyse</term>
-<term>Literatur</term>
+<term>Karte</term>
+<term>Text</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<div rend="DH-Heading1" type="div1">
-<head>Einführung</head>
-<p style="text-align:left; ">Das Poster stellt ein Korpus deutschsprachiger Erzählungen des 19. Jahrhunderts vor, in dem Figurenreden und ihre jeweiligen Sprecher annotiert und extrahiert wurden. Sie dienen als Basis für stilistische Auswertungen mit dem etablierten Abstandsmaß Delta. Es stellt sich die Frage, ob sich der Autorenstil in den jeweiligen Figurenreden niederschlägt, sich also Figuren desselben Autors zusammengruppieren, oder ob Figurentypen dominanter sind, sich gleiche Figurentypen also werkübergreifend stilistisch ähneln. Erste Ergebnisse hiervon werden als Grafiken präsentiert.</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Verwandte Forschung</head>
-<p style="text-align:left; ">Stilometrische Verfahren gehen v.a. auf John Burrows zurück. Sein entwickeltes Abstandsmaß 
-                    <hi rend="italic">Delta</hi> (Burrows 2002) gilt als Standardverfahren in der Stilometrie und es existieren zahlreiche Studien und Verbesserungsvorschläge (z.B. Smith/Aldridge 2011, Büttner et al. 2017). Für die einfache informatische Anwendung wurde es durch das R-Package 
-                    <hi rend="italic">stylo</hi> (Eder/Rybicki/Kestemont 2016) zugänglich gemacht. Die ersten quantitativen Untersuchungen des Figurenstils liefert ebenfalls erstmals Burrows (1987) in der anglistischen Literatur. Allerdings führt die unterschiedlich große Menge an Reden pro Figur zu disparatem Analysematerial. Um das Problem unterschiedlich langer Texte zu umgehen, nutzt Hoover (2017) Textauszüge bzw. zufällige Textanordnung in seiner Studie zur intratextuellen Stilvariation. Stilometrische Analysen erfreuen sich auch in der heutigen Forschung noch hoher Beliebtheit (so z.B. Bonch-Osmolovskaya/Skorinkin 2019, auf Dramentexte Galleron 2019).
-                </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Korpus: Annotation und Datenaufbereitung</head>
-<p style="text-align:left; ">Das Korpus setzt sich aus acht realistischen Erzähltexten zwischen 1848 und 1871 zusammen, da dieser Zeitraum allgemein als Kernzeit des Realismus anerkannt ist (Aust 2006, Plumpe 2007). Um Vergleiche zu ermöglichen, enthält das Korpus zusätzlich drei Erzähltexte von vor 1848. Die Korpusauswahl beruht auf einem mehrschrittigen Prozess: Mit der Längenbegrenzung von 8.000-20.000 Wörtern wurde darauf geachtet, dass die Erzählungen einerseits lang genug sind, um stilometrische Verfahren anwenden zu können und andererseits kurz genug, um die manuelle Annotation in einem angemessenen zeitlichen Rahmen durchzuführen. Außerdem wurde darauf geachtet, sowohl kanonisierte als auch gänzlich unbekannte Texte zu integrieren, weibliche Autoren ins Korpus aufzunehmen und die Erstpublikationsorgane zu variieren. Wie in der damaligen Zeit üblich, wurde ein Großteil der Erzählungen in Zeitschriften, Almanachen oder Taschenbüchern veröffentlicht. Diese waren auf ganz verschiedene Leserschichten ausgerichtet, so dass eine Variation hier alle Stilniveaus erfassen sollte. Die Korpustexte sind die folgenden elf Erzählungen:</p>
-<figure>
-<graphic height="8.796513888888889cm" n="1001" rend="inline"
-	 url="113_final-d3f18ae9e66c226c8f6917929bb5020c.PNG"
-	 width="16.002cm"/>
-<head>Tabelle 1: Im Korpus enthaltene Erzählungen. </head>
-</figure>
-<p style="text-align:left; ">Da einige der Texte noch nicht erschlossen waren, wurden sie vor der Annotation OCR-korrigiert. Für die Annotation wurde der im Zuge des Redewiedergabe-Projekts (Brunner et al. 2018) entstandene STWR-View des Annotationstools ATHEN (Krug et al. 2018) verwendet. Bei der Annotation wurden sämtliche direkten Figurenreden manuell annotiert und ihrem jeweiligen Sprecher zugeordnet (zur automatischen Zuordnung von Sprechern: Krug et al. 2016). So konnte die gesamte direkte Redemenge einzelner Figuren extrahiert werden. In direkte Reden einer Figur A eingelagerte Reden einer Figur B wurden dabei nur der Figur B als zugehörig annotiert. Auf diese Weise wurde sichergestellt, dass Figuren ausschließlich ihre eigenen Reden zugeordnet wurden (diese Problematik ist besonders relevant bei Binnenerzählungen). Zusätzlich wurden ausschließlich Figuren in die Auswertung integriert, deren gesamte Redemenge 200 Wörter übersteigt, um stilometrische Verfahren wirksam anwenden zu können. Diese Grenze ist für stilometrische Verfahren noch immer vergleichsweise niedrig. Eder (2015) hat evaluiert, dass korpusabhängig mindestens 2500-5000 Wortformen nötig sind, damit Auswertungen mit Delta zu guten Ergebnissen führen. Aufgrund des Korpus dieser Studie kann dieser Mindestwert allerdings nicht eingehalten werden.</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Auswertung</head>
-<p style="text-align:left; ">Die folgenden Grafiken zeigen den Output des R-package 
-                    <hi rend="italic">stylo</hi> (Eder/Rybicki/Kestemont 2016) erstens der 100 häufigsten gesprochenen Wörter der Figuren und zweitens der 1000 häufigsten. Es wurde kein Sampling durchgeführt und ebenfalls kein Culling, ein Feature musste folglich nicht in einer bestimmten Anzahl Texte vorhanden sein, um in die Auswertung einbezogen zu werden. Als Abstandsmaß wurde klassisch Burrows‘ Delta gewählt, die Outputgrafiken sind Cluster-Analysen, die stilistisch ähnliche Figuren zueinander gliedern. Zu beachten ist die oben erwähnte Mindestmenge von 200 Wörtern pro Figur. Das führt dazu, dass bei der Analyse der 1000 häufigsten Wörtern von einigen Figuren alle gesprochenen Wörter in der Auswertung enthalten sind.
-                </p>
-<p style="text-align:left; ">Auswertung mit 100 häufigsten Wörtern:</p>
-<figure>
-<graphic height="16.002cm" n="1002" rend="inline" url="113_final-321aff40a59e25db96337495dd53df9d.jpeg" width="16.002cm"/>
-<head>Abbildung 1: Auswertung mit 100 häufigsten Wörtern. </head>
-</figure>
-<p style="text-align:left; ">Auswertung mit 1000 häufigsten Wörtern:</p>
-<figure>
-<graphic height="16.002cm" n="1003" rend="inline" url="113_final-acefb92506da763c9fffe135322ffc33.jpeg" width="16.002cm"/>
-<head>Abbildung 2: Auswertung mit 1000 häufigsten Wörtern. </head>
-</figure>
-<p style="text-align:left; ">In beiden Auswertungen ist zu erkennen,
-dass sich häufig Figuren desselben Autors zueinander
-gliedern. Besonders beim Mundartdichter Gotthelf
-(<hi rend="italic">Erdbeerimareili</hi>) ist das sehr verständlich. Dennoch gibt es Abweichungen. Besonders bei den 1000 häufigsten Wörtern gruppieren sich auf dem untersten Ast die Figuren mit der größten Redemenge zusammen. Dies sind häufig Binnenerzähler, die in ihrem Redestil häufig schnell die Funktion und den Stil von Erzählerrede einnehmen (Bockwinkel 2016). Um zu untersuchen, ob das Clustering nur der insgesamt größeren Redemenge dieser Figuren geschuldet ist, wurde in mehreren Analysen Sampling durchgeführt. Die hier nicht abgebildeten Auswertungen bestätigen das Ergebnis, wenngleich der Abstand der Binnenerzähler zu den übrigen Figuren geringer wird. Außerdem nimmt Colmar aus der 
-                    <hi rend="italic">Doppelgängerin</hi> einen größeren Abstand zu den übrigen Binnenerzählern ein. Auch das ist nachvollziehbar, da Colmar im Gegensatz zu ihnen nur über einen kleinen Teil der Erzählung als Binnenerzähler fungiert und sonst wie eine „normale“ Figur agiert. Figurentypen gliedern sich in dieser ersten Vorstudie dagegen nicht zusammen. Figurenpaare, die sich in gegenseitiger Liebe befinden (wie Magdalene-Werner, Xarifa-Mor, Myga-Jan, Cosima-Antonio) gruppieren sich nur teilweise als Paar und gar nicht als Figurengruppe. Weitere Schlussfolgerungen, dass sich beispielsweise gleiches Geschlecht, Figuren aus ähnlichen Subgenres (Abenteuer/Liebe) oder Erzählungen aus einer bestimmten Epoche gruppieren, können in dieser ersten Vorstudie ebenfalls noch nicht gezogen werden. Gleichfalls kann diese Studie aber auch noch nicht als Beweis fungieren, dass sich deren Stil nicht ähnelt.
-                </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Ausblick</head>
-<p style="text-align:left; ">Im weiteren Verlauf der Arbeit müssen die Maße verfeinert und sollen andere Abstandsmaße getestet, Variablen geändert und Ergebnisse evaluiert werden. Die Problematik der Kürze der Texte könnte durch eine Optimierung des Verfahrens verringert werden. So könnten eine Kombination aus Wortform-
-                    <hi rend="italic">Grammar-Tags</hi> und besonders gut zur Autorschaftsattribution geeigneter Wörter Verbesserungen bringen (Dimpel 2019). Eine Integration von Gedanken- und Schriftzitaten ist ebenfalls denkbar. Interessant wäre auch die Berücksichtigung von indirekter Rede, da hier ebenfalls die Figurenstimme stark ist. In einem Schritt weg von der Stilometrie sollen in späteren Tests darüber hinaus Topic Modeling und Sentimentanalyse durchgeführt werden, um die Figurenreden auch auf diesen Ebenen zu vergleichen.
-                </p>
-</div>
+<p rend="Plain Text">
+<hi style="font-size:11pt">The goal of Bibliotheca Hertziana's project "Historical spaces in texts and maps" is to investigate the relations between historic geographical texts and maps to reconstruct a historical understanding of space and the knowledge associated with it. Starting with a cognitive-semantic analysis of Flavio Biondo's "Italia Illustrata" (1474), first of all, toponyms, place descriptions and spatial relations are annotated in the text and Renaissance maps. Our contribution to Spatial Humanities is based on the conviction that all maps are cognitive maps, depicting culture-specific spatial knowledge and practices (Goerz et al., 2018, 2019).</hi>
+</p>
+<p rend="Plain Text">
+In general, our research combines
+cognitive-semantic parameters such as toponyms, landmarks, spatial
+frames of reference, geometric relations, gestalt principles and
+different perspectives with computational linguistic analysis
+(Thiering, 2015). We designed a workflow comprising the steps of
+transcription, annotation, geographic verification, export and
+ontology-based semantic enrichment of these data, finally stored and
+published as Linked Open Data. We use Recogito
+(<ref
+target="https://recogito.pelagios.org">https://recogito.pelagios.org</ref>,
+15.09.2019) as our main tool for static annotations of places and
+persons/peoples in text and maps. Toponyms are georeferenced with
+gazetteers, in our case primarily with Pleiades
+(<ref
+target="https://pleiades.stoa.org">https://pleiades.stoa.org</ref>,
+15.09.2019), and the annotations can be exported in various formats,
+in particular, CSV, GeoJSON, and KML. Spatial relations in texts are
+annotated in terms of the cognitive-semantic parameters by means of
+the brat tool. These annotation data are mapped into triples encoding
+cognitive parameters, primarily in "figure-spatial_relation-ground"
+constructions. Furthermore, dependency parsing
+(<ref target="http://ufal.mff.cuni.cz/udpipe">http://ufal.mff.cuni.cz/udpipe</ref>, 15.09.2019) has been applied to the text for comparison. To achieve a generic semantic level for linguistic and map-related annotations, we perform a transition to an ontology-based representation. For this purpose, we defined a domain ontology 
+<hi rend="italic" style="font-size:11pt">hmap</hi>
+for historical maps and geographical texts based on the event-centered
+CIDOC Conceptual Reference Model (CRM, ISO standard 21127) and its
+spatio-temporal extension CRMgeo in OWL-DL
+(<ref target="http://erlangen-crm.org">http://erlangen-crm.org</ref>,
+15.09.2019). Using the CRM opens up a wide spectrum of
+interoperability and linking to many web resources.  The domain
+ontology 
+<hi rend="italic" style="font-size:11pt">hmap</hi> 
+<hi style="font-size:11pt">for the description of historical maps and their content offers a framework for the general metadata of maps and geographical texts as well as for descriptions of their content.</hi>
+</p>
+<p rend="Plain Text">
+<hi style="font-size:11pt" xml:space="preserve">As Linked Data platform we chose the Virtual Research Environment WissKI (Scholz et al., 2016; </hi>
+<ref target="http://wiss-ki.eu">http://wiss-ki.eu</ref>, 15.09.2019),
+a semantic database extension of the CMS Drupal, in which we defined
+our data model in terms of so-called ontology paths. These are
+sequences of triples built from entities and properties of the
+ontology. As an example, in a map production event
+(<hi rend="italic" style="font-size:11pt">hmap:M9_Map_Production</hi>) there is an actor, the Creator, defined by
+</p>
+<!-- <p rend="Plain Text"> -->
+<!-- <hi rend="italic" style="font-size:11pt">"hmap:M28_Map -&gt; hmap:A3i_was_produced_by -\-&gt; hmap:M9_Map_Production</hi> -->
+<!-- </p> -->
+<!-- <p rend="Plain Text"> -\-&gt; hmap:A4_carried_out_by_map_author -\-&gt; hmap:M1_Map_Author </p> -->
+<!-- <p rend="Plain Text"> -\-&gt; ecrm:P131_is_identified_by -\-&gt; ecrm:E82_Actor_Appellation".</p> -->
+<code>
+  hmap:M28_Map --&gt; hmap:A3i_was_produced_by
+  <lb/> --&gt;   hmap:M9_Map_Production --&gt; hmap:A4_carried_out_by_map_author
+  --&gt; hmap:M1_Map_Author --&gt; ecrm:P131_is_identified_by
+  <lb/>--&gt; ecrm:E82_Actor_Appellation.
+</code>
+
+<p rend="Plain Text">
+For each map we may have several images, in which depicted objects are
+annotated; so there is an analogous data model for images
+(<hi rend="italic" style="font-size:11pt">hmap:M34_Image</hi>). What the image depicts, in our case annotated places, is specified by
+</p>
+<!-- <p rend="Plain Text"> -->
+<!-- <hi rend="italic" style="font-size:11pt">"hmap:M34_Image -\-&gt; hmap:A43_depicts -\-&gt; hmap:M3_Annotated_Place -\-&gt;</hi> -->
+<!-- </p> -->
+<!-- <p rend="Plain Text"> ecrm:P1_is_identified_by -\-&gt; ecrm:E42_Identifier" .</p> -->
+<code>
+  hmap:M34_Image --&gt; hmap:A43_depicts --&gt;
+  hmap:M3_Annotated_Place --&gt; ecrm:P1_is_identified_by --&gt; ecrm:E42_Identifier.
+</code>
+<p rend="Plain Text">
+  For each annotated place
+  (<hi rend="italic"
+  style="font-size:11pt">hmap:M3_Annotated_Place</hi> is a subclass of 
+<hi rend="italic"
+    style="font-size:11pt">crmgeo:SP6_Declarative_Place</hi>) where
+the (geographical) contents of the annotations are encoded in the
+columns of the CSV tables, each column is transformed into a component
+for which similar ontology paths are defined. The annotated place is
+linked to the image by 
+</p>
+<code>
+  hmap:M3_Annotated_Place --&gt; hmap:A43i_is_depicted by --&gt;
+  hmap:M34_Image
+  <lb/>--&gt; ecrm:P48_has_preferred_identifier --&gt; ecrm:E42_Identifier.
+</code>
+<!-- <p rend="Plain Text"> -->
+<!-- <hi rend="italic" style="font-size:11pt" xml:space="preserve">"hmap:M3_Annotated_Place -\-&gt; hmap:A43i_is_depicted by -\-&gt; hmap:M34_Image </hi> -->
+<!-- </p> -->
+<!-- <p rend="Plain Text"> -\-&gt; ecrm:P48_has_preferred_identifier -&gt;- ecrm:E42_Identifier" .</p> -->
+<p rend="Plain Text">
+<hi style="font-size:11pt" xml:space="preserve">So, e.g., for </hi>
+<hi rend="italic" style="font-size:11pt">QUOTE_TRANSCRIPTION</hi>, the path is
+</p>
+<!-- <p rend="Plain Text"> -->
+<!-- <hi rend="italic" style="font-size:11pt">"hmap:M3_Annotated_Place -\-&gt; ecrm:P87_is_identified_by -\-&gt;</hi> -->
+<!-- </p> -->
+<!-- <p rend="Plain Text"> -->
+<!-- <hi rend="italic" style="font-size:11pt">hmap:M42_Transcribed_Place_Appellation".</hi> -->
+<!-- </p> -->
+<code>
+  hmap:M3_Annotated_Place --&gt; ecrm:P87_is_identified_by --&gt; hmap:M42_Transcribed_Place_Appellation
+</code>
+<p rend="Plain Text">
+<hi style="font-size:11pt">Each annotation, represented as a row in the table, has a unique ID (UUID) and refers, if geographically verified with a gazetteer (Pleiades), via a URL to a graph containing various information such as e.g. sources, archeological data, images, etc. In some maps, annotated places are additionally represented by a visual item (E36) such as a church, a tower, or a wall. There are also further data models for image series and works like map collections or atlases. From these paths, WissKI generates automatically input forms for map and text metadata and provides an interface for importing all table-formatted annotations and converting them into triples. Ontological enrichment of our data with CRM allows for a semantic interpretation of annotations such that, e.g., for each PlaceName, an instantiated CRM description in RDF/OWL triple format is generated and stored in a triple store. Using the semantically enriched geo-information from text (and map) annotations as CRM instances, spatial entities ("figure", "ground") and relations obtained by spatial role labeling as "figure-spatial_relation-ground" triples can now be upgraded to this rich semantic level by linking data. Due to the fundamental underlying triple structure for all kinds of annotations, the data are immediately ready for publication as standardized Linked (Open) Data; WissKI provides a SPARQL query interface. These triple data constitute a huge knowledge graph; they are the "raw material" for further research steps, i.e. the exploration of the historical understanding of spaces and the associated knowledge. Interpretation of the data has just begun: Actually, a study of Biondo’s spatial language – comprising the whole text for the first time – by Berthele and Thiering is being finalized (2020) and a comparative overview of the toponyms in the Latium book with different maps (traditional and "modern“ Ptolemaic maps, genuine maps of Italy and portolans) as well as a representation of the hodological dimension of the text is being prepared.</hi>
+</p>
 </body>
 <back>
 <div type="bibliogr">
 <listBibl>
-  <head>Bibliographie</head>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Aust, Hugo</hi> (2006): 
-    <hi rend="italic">Realismus</hi>. Lehrbuch Germanistik, Stuttgart: Metzler.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Bockwinkel, Peggy</hi> (2018): 
-    "Wie anders ist Figurenrede? Die Rolle der direkten Rede in quantitativen Erzähltextanalysen", in: Bockwinkel, Peggy / Nickel, Beatrice / Viehhauser, Gabriel (eds.): 
-    <hi rend="italic">Digital Humanities. Perspektiven der Praxis.</hi> Berlin: Frank&amp;Timme 117-148.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Bonch-Osmolovskaya, Anastasia / Skorinkin, Daniil</hi> (2019): 
-    "The Complexity of Character-building: Speech, Portraits, Interactions in Leo Tolstoy’s 'War and Peace'", in: 
-    <hi rend="italic">Conference Abstracts of DH2019 Utrecht</hi>.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Brunner, Annelen / Engelberg, Stefan / Jannidis, Fotis / Tu, Ngoc Duyen Tanja / Weimer, Lukas</hi> (2018): 
-    "Projektvorstellung – Redewiedergabe. Eine literatur- und sprachwissenschaftliche Korpusanalyse", in: 
-    <hi rend="italic">Konferenzabstracts der DHd2018 Köln</hi> 458-460.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Burrows, John</hi> (1987): 
-    <hi rend="italic">Computation into Criticism</hi>. A Study of Jane Austen’s Novels and an Experiment in Method, Oxford: Clarendon Press.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Burrows, John</hi> (2002): 
-    "Delta: A Measure of Stylistic Difference and a Guide to Likely Authorship", in: 
-    <hi rend="italic">Literary and Linguistic Computing</hi> 17/3: 267-287.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Büttner, Andreas / Dimpel, Michael / Evert, Stefan / Jannidis, Fotis / Proisl, Thomas / Reger, Isabella / Schöch, Christof / Vitt, Thorsten</hi> (2017): 
-    "'Delta' in der stilometrischen Autorschaftsattribution", in: 
-    <hi rend="italic">Zeitschrift für digitale Geisteswissenschaft</hi> 2.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Dimpel, Friedrich Michael / Zeppezauer-Wachauer, Katharina / Schlager, Daniel</hi> (2019): 
-    "Der Streit um die Birne. Autorschafts-Attributionstest mit Burrows’ <hi rend="italic">Delta</hi> und dessen Optimierung für Kurztexte am Beispiel der ‚Halben Birne‘ des Konrad von Würzburg", in: 
-    <hi rend="italic">Das Mittelalter</hi> 24/1: 71-90.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Eder, Maciej</hi> (2015): 
-    "Does Size Matter? Authorship Attribution, Small Samples, Big Problem", in: 
-    <hi rend="italic" xml:space="preserve">Digital Scholarship in the Humanities </hi>30/2: 167-182.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Eder, Maciej / Rybicki, Jan / Kestemont, Mike</hi> (2016): 
-    "Stylometry with R: A Package for Computational Text Analysis", in: 
-    <hi rend="italic">The R Journal</hi> 8/1: 107-121.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Galleron, Ioana</hi> (2019): 
-    "Stylometric Analyses of Character Speeches in French Plays", in: 
-    <hi rend="italic">Conference Abstracts of DH2019 Utrecht</hi>.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Krug, Markus / Jannidis, Fotis / Reger, Isabella / Macharowsky, Luisa / Weimer, Lukas / Puppe, Frank</hi> (2016): 
-    "Attribuierung direkter Reden in deutschen Romanen des 18.-20. Jahrhunderts. Methoden zur Bestimmung des Sprechers und des Angesprochenen", in: 
-    <hi rend="italic">Konferenzabstracts der DHd2016 Leipzig</hi> 181-186.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Krug, Markus / Tu, Ngoc Duyen Tanja / Weimer, Lukas / Reger, Isabella / Konle, Leonard / Jannidis, Fotis / Puppe, Frank</hi> (2018): 
-    "Annotation and beyond – Using ATHEN Annotation and Text Highlighting Environment", in: 
-    <hi rend="italic">Konferenzabstracts der DHd2018 Köln</hi> 19-21.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Plumpe, Gerhard</hi> (2007): 
-    "Realismus", in: Müller, Jan-Dirk / Braungart, Georg / Fricke, Harald / Grubmüller, Klaus / Vollhardt, Friedrich / Weimar, Klaus (eds.): 
-    <hi rend="italic">Reallexikon der deutschen Literaturwissenschaft</hi> 3. Berlin / New York: De Gruyter 221-224.
-  </bibl>
-  <bibl style="text-align:left; ">
-    <hi rend="bold">Smith, Peter W. H. / Aldridge, W.</hi> (2011): 
-    "Improving Authorship Attribution: Optimizing Burrows’ Delta Method", in: 
-    <hi rend="italic">Journal of Quantitative Linguistics</hi> 18/1: 63-88.
-  </bibl>
+<head>Bibliography</head>
+<bibl>
+<hi rend="bold">Blakemore, Michael / Harley, Brian J.</hi> (1980): Concepts in the History of Cartography - A Review and Perspective. In: Cartographica. International Publications on Cartography, 17/4, Monograph 26. University of Toronto Press: Toronto.
+                    </bibl>
+<bibl>
+<hi rend="bold">Bodenhamer, David J. / Corrigan, John / Harris, Trevor M.</hi> (eds.) (2010): The Spatial Humanities. GIS and the Future of Humanities Scholarship. Bloomington &amp; Indianapolis: Indiana University Press.
+                    </bibl>
+<bibl>
+<hi rend="bold" xml:space="preserve">Görz, Günther / Geus, Klaus / Michalsky, Tanja / Thiering, Martin </hi>(2018): Spatial Cognition in Historical Geographical Texts and Maps: Towards a cognitive-semantic analysis of Flavio Biondo's 
+                        <hi rend="color(222222)" style="font-size:12pt">“</hi>Italia Illustrata'', e-perimetron 13,4: 182-199.
+                    </bibl>
+<bibl>
+<hi rend="bold" xml:space="preserve">Görz Günther / Seidl Chiara / Thiering, Martin </hi>(2019): Linked Biondo: Modelling Geographical Features in Renaissance Texts and Maps
+                        <hi rend="bold" xml:space="preserve">. </hi>In: Boutoura, Ch., Tsorlini, A., Livieratos, E. (Ed.): Proceedings 14th ICA Conference 
+                        <hi rend="italic" xml:space="preserve">Digital Approaches to Cartographic Heritage, </hi>Thessaloniki, 8-10 May 2019.International Cartographic Association, Commission on Cartographic Heritage into the Digital. AUTH CartoGeoLab, ISSN 2459-3893, 124-140. 
+                    </bibl>
+<bibl>
+<hi rend="bold" xml:space="preserve">Michalsky, Tanja / Thiering, Martin </hi>(2020): 
+                        <hi rend="color(222222)" style="font-size:12pt">Walking through history. An interdisciplinary approach to Flavio Biondo’s spaces in the “Italia illustrata”. Rome: Bibliotheca Hertziana.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" xml:space="preserve">Scholz, Martin / Merz, Dorian / Goerz, Günther </hi>(2016): Working with WissKI - A Virtual Research Environment for Object Documentation and Object-Based Research. Digital Humanities 2016, Conference Abstracts, Krakow, 11-16 July 2016. ISBN 978-83-942760-3-4, 944-945. 
+                    </bibl>
+<bibl>
+<hi rend="bold">Thiering, Martin</hi> (2015): Spatial Semiotics and Spatial Mental Models: Figure-Ground Asymmetries in Language. Berlin: De Gruyter Mouton.
+                    </bibl>
 </listBibl>
 </div>
 </back>

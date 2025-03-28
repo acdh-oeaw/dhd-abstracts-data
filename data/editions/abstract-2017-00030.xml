@@ -1,29 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="poster-LEJTO" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="vortrag-DAXEN" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>APIS – Eine Linked Open Data basierte Datamining-Webapplikation für das Auswerten biographischer Daten</title>
+<title>Semantische Suche in Ausgestorbenen Sprachen: Eine Fallstudie für das Hethitische</title>
 <author>
 <persName>
-<surname>Schlögl</surname>
-<forename>Matthias</forename>
+<surname>Daxenberger</surname>
+<forename>Johannes</forename>
 </persName>
-<affiliation>Österreichische Akademie der Wissenschaften, Österreich</affiliation>
-<email>Matthias.Schloegl@oeaw.ac.at</email>
+<affiliation>Ubiquitous Knowledge Processing Lab, Department of Computer Science, Technische Universität Darmstadt</affiliation>
+<email>daxenberger@ukp.informatik.tu-darmstadt.de</email>
 </author>
 <author>
 <persName>
-<surname>Lejtovicz</surname>
-<forename>Katalin</forename>
+<surname>Görke</surname>
+<forename>Susanne</forename>
 </persName>
-<affiliation>Österreichische Akademie der Wissenschaften, Österreich</affiliation>
-<email>katalin.lejtovicz@oeaw.ac.at</email>
+<affiliation>Altorientalische Philologie, Institut für Altertumswissenschaften, Johannes Gutenberg-Universität Mainz</affiliation>
+<email>goerkes@uni-mainz.de</email>
+</author>
+<author>
+<persName>
+<surname>Siahdohoni</surname>
+<forename>Darjush</forename>
+</persName>
+<affiliation>Ubiquitous Knowledge Processing Lab, Department of Computer Science, Technische Universität Darmstadt</affiliation>
+<email>siahdohoni@googlemail.com</email>
+</author>
+<author>
+<persName>
+<surname>Gurevych</surname>
+<forename>Iryna</forename>
+</persName>
+<affiliation>Ubiquitous Knowledge Processing Lab, Department of Computer Science, Technische Universität Darmstadt</affiliation>
+<email>gurevych@ukp.informatik.tu-darmstadt.de</email>
+</author>
+<author>
+<persName>
+<surname>Prechel</surname>
+<forename>Doris</forename>
+</persName>
+<affiliation>Altorientalische Philologie, Institut für Altertumswissenschaften, Johannes Gutenberg-Universität Mainz</affiliation>
+<email>prechel@uni-mainz.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2016-08-26T14:11:00Z</date>
+<date>2016-11-11T16:08:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -49,139 +73,196 @@
 <profileDesc>
 <textClass>
 <keywords n="category" scheme="ConfTool">
-<term>Poster</term>
+<term>Vortrag</term>
 </keywords>
 <keywords n="subcategory" scheme="ConfTool">
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>LOD</term>
-<term>Datamining</term>
-<term>Biographie</term>
-<term>Annotation</term>
+<term>Keilschrift</term>
+<term>Hethitisch</term>
+<term>Semantische Suche</term>
+<term>Natural Language Processing</term>
+<term>Lexikalisch-Semantische Methoden</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Teilen</term>
 <term>Inhaltsanalyse</term>
-<term>Modellierung</term>
-<term>Annotieren</term>
 <term>Webentwicklung</term>
-<term>Visualisierung</term>
-<term>Software</term>
-<term>Standards</term>
+<term>Artefakte</term>
+<term>Sprache</term>
 <term>Text</term>
+<term>texttragende Gegenstände</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<div/>
-<div rend="DH-Heading1" type="div1">
-<head>Einführung</head>
-<p>Das ÖBL (Österreichisches Biographisches Lexikon 1815-1950) ist ein umfassendes Werk, das derzeit rund 18,000 Biographien von wichtigen historischen Persönlichkeiten aus der österreichisch-ungarischen Monarchie und der Ersten und Zweiten Republik Österreichs enthält. Während an dem Lexikon noch gearbeitet wird, erscheint es in gedruckter Form, und seit 2009 ist es auch online verfügbar.
-                    <lb/>APIS - Mapping historical networks: Building the new Austrian Prosopographical | Biographical Information System - ist ein interdisziplinäres Digital Humanities Projekt, das WissenschaftlerInnen aus unterschiedlichen Themenbereichen (Biografien, Geschichte, Geographie, Sozialwissenschaften, Informationstechnologie) verbesserten Zugriff (Suchabfragen, API etc.) auf die ÖBL-Daten erlauben wird. Dadurch wird es möglich sein innovative, interdisziplinäre Forschung auf der Grundlage dieser einzigartigen Ressource durchzuführen. Als erstes Beispiel für eine solche angewandte wissenschaftliche Forschung und als wichtiger Test der Brauchbarkeit und Eignung der entwickelten Lösung, wird bereits im APIS Projekt eine soziodemografische Analyse, die die Formen und Muster der Migration von gesellschaftlichen Eliten untersucht, umgesetzt. 
-                    <lb/>In unserer Präsentation konzentrieren wir uns auf die zugrunde liegende technische Lösung, vor allem auf die dynamischen Aspekte - Workflow – und die Ergebnisse der verschiedenen angewandten Verfahren, um den aktuellen Stand der Umsetzung zu beschreiben.
-                    <lb/>
+<div rend="DH-Heading1" type="div1" xml:id="h.1818shwwkfq3">
+<head>Einleitung</head>
+<p>
+<hi rend="color(262626)">Mit dem Auftreten der Keilschrift am Ende des 4. Jt. v. Chr. bis zur Zeitenwende sind zahlreiche Sprachen des Vorderen Orients aufgezeichnet, deren Kenntnis sich heute allein dem Erhalt der Schriftträger dankt: Eine nicht mehr überschaubare Anzahl von Tontafeln stellt das wesentliche Medium zur Rekonstruktion einer alle menschlichen Lebensbereiche umfassenden dreitausendjährigen Geschichte der heutigen Staaten Syrien, Libanon, Türkei, Irak und Iran dar. Zu den besser bezeugten Sprachen gehört neben dem semitischen Akkadischen das isolierte Sumerisch und das indoeuropäische Hethitisch. Auch wenn sich inzwischen diverse Projekte mit der Digitalisierung des keilinschriftlichen Kulturschatzes befassen, z.B. </hi>Cohen et al. (2004) und 
+                    <hi rend="background(white)">Tyndall (2012)</hi>,
+                    <hi rend="color(262626)"> ist der Zugang zu den kulturell, historisch und linguistisch hochbedeutsamen Textcorpora, die zu großen Teilen noch unpubliziert in den Museen der Welt lagern, meist auf Fachwissenschaftler begrenzt. Um eine adäquate Verwendung der durch Grabungen stetig wachsenden Anzahl von Texten auch in fernerliegenden Arbeitsbereichen zu ermöglichen, ist ein umfassendes Angebot von Übersetzungen in moderne Sprachen höchst wünschenswert. </hi>
+</p>
+<p>
+<hi rend="color(262626)">Das hier skizzierte Projekt zielt insbesondere auf den Umstand, dass selbst die (wenigen) vorhandenen Übersetzungen aufgrund der Durchdringung mit autochtonen Termini es oft an Verständlichkeit vermissen lassen. Das Ziel unserer Pilotstudie ist eine digitale Annäherung an Keilschriftsprachen. Wir stellen eine erweiterte Suchfunktion vor, die es auch fachfremden Benutzern erlaubt, intelligente Suchanfragen in den hethitischen und akkadischen Textcorpora zu stellen. Dazu verwenden wir moderne Natural Language Processing (NLP) Methodologie, die automatisiert lexikalisch-semantische Informationen in mehrsprachigen Übersetzungen von aktuell gut 500 Keilschriftdokumenten extrahiert. Durch den Einsatz vollautomatischer Methoden ist das Hinzufügen neuer Übersetzungen jederzeit möglich </hi>
+<hi rend="color(252525)">–</hi>
+<hi rend="color(262626)"> es gibt alleine für das Akkadische über eine halbe Million (noch) nicht digitalisierter Quelltexte. Das Ergebnis unserer Studie ist in Form eines webbasierten Tools verfügbar und wurde in einer Benutzerstudie evaluiert. Die primären Anforderungen an das Tool</hi>
+<ref n="1" target="vortrag-DAXENftn1" type="note">1</ref>
+<hi rend="color(262626)"> sind a) die Rückgabe von Suchergebnissen, die neben exakten oder fast exakten Treffern auch solche enthalten, die aufgrund semantischer Ähnlichkeit zustande kommen, sowie b) eine intuitive Bedienung durch Nutzer, die weder mit der Sprache noch mit sonstigen kulturellen Gegebenheiten vertraut sind.</hi>
 </p>
 </div>
-<div rend="DH-Heading1" type="div1">
-<head>Ansatz</head>
-<p>ÖBL Daten stehen momentan in einem Ad-hoc-XML-Format zur Verfügung. Diese XMLs enthalten einige Fakten (Geburts- und Todesdaten, Orte, Berufsangaben usw.) in strukturierter Form, der Großteil der Information versteckt sich jedoch in dem unstrukturierten Haupttext der Biographie. Das Hauptziel des Projektes ist Informationen automatisch aus dem freien Text zu extrahieren, und sie in strukturierter Form zur Verfügung zu stellen. Um dieses Ziel zu erreichen, wird ein zweifacher Hybrid-Ansatz verfolgt, der einerseits automatische und manuelle Textverarbeitung kombiniert und andererseits erlaubt die erhobenen Daten in verschiedenen Formaten zu serialisieren. Letzteres beinhaltet nicht nur die Bereitstellung in verschiedenen Formaten (z.B. RDF/JSON), sondern auch die Verwendung verschiedener Ontologien (z.B. CIDOC-CRM (Doerr 2003: 75-92), NDB (Historische Kommission bei der Bayerischen Akademie der Wissenschaften 1953)). Die extrahierten Entitäten sind mit mehreren semantischen Referenz Ressourcen wie zum Beispiel GND (Pfeifer 2012: 80-91), GeoNames
-                    <ref n="1" target="poster-LEJTOftn1" type="note">1</ref> oder DBpedia (Bizer 2009: 154-165) abgeglichen und mit URIs aus diesen versehen (Entity Linking). Dieser kombinierte Ansatz wurde gewählt, um die höchstmögliche Genauigkeit der Annotationen zu gewährleisten, und den manuellen Aufwand so gering wie möglich zu halten. Obwohl es bewährte Techniken und Methoden für die Verarbeitung natürlicher Sprache gibt, wird manuelle Arbeit (Korrektur) der Forscher, die mit den jeweiligen Wissenschaftsgebieten vertraut sind, nach wie vor erforderlich sein.
-                </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Datenmodell</head>
-<p>Das Datenmodell besteht aus fünf Entitäten (Personen, Institutionen, Orte, Werke und Ereignisse) und einer Meta-Entität (Verweis auf den ursprünglichen Artikel). Es gibt Beziehungen zwischen allen Entitäten (z.B. Person - Institution, Person - Ereignis) und Beziehungen sind auch zwischen den gleichen Objekttypen möglich (z.B. Person -&gt; Vater_von -&gt; Person). Die Beziehungen können auch temporalisiert (Start- und Enddatum) und typisiert werden (Typen können je nach Bedarf angegeben werden). Das erlaubt uns praktisch alle möglichen Szenarien zu modellieren. 
-                    <lb/>Der ursprüngliche Plan war, die Daten nach bestehenden, gut definierten Ontologien zu modellieren. In der Evaluierungsphase wurde uns aber klar, dass sehr viele verschiedene Ontologien existieren. Einige sind wie CIDOC-CRM Event basiert, andere verbinden Entitäten direkt. Wir haben uns deshalb entschlossen ein eigenes (internes) Datenmodell zu erstellen und so den technischen Aufwand für die Verarbeitung, Darstellung und Speicherung der Daten möglichst gering zu halten. Gleichzeitig werden wir aber dieses interne Datenmodell mit Hilfe schon existierender Ontologien (NDB, CIDOC-CRM etc.) in verschiedenen Formen serialisieren und der Öffentlichkeit zur Verfügung stellen. Das stellt die möglichst einfache, nachhaltige Nutzung unserer Daten sicher.
-                </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Extraktion</head>
-<p>Um strukturierte semantische Informationen aus den Biographien zu extrahieren, und die dadurch identifizierten Objekte zu Ressourcen wie GND, GeoNames zu verknüpfen verwenden wir automatische Tools. Die Ergebnisse werden von Experten verifiziert und ausgebessert um die Qualität der Daten zu gewährleisten, und um unser System durch manuelle Korrektur zu verbessern. Während die NLP-Tools eine schnelle Verarbeitung ermöglichen sind die Ergebnisse nicht zu 100% korrekt. Um die Genauigkeit zu verbessern, setzen wir mehrere Systeme, Quellen und Analysen ein. Für die automatische Extraktion haben wir mehrere Tools getestet und bewertet, wie z.B. Stanford NER (Finkel 2005: 363-370), GATE (Cunningham 2011), OpenNLP
-                    <ref n="2" target="poster-LEJTOftn2" type="note">2</ref>, Stanbol (Bachmann-Gmur 2013), basierend auf folgende Kriterien: 1) welche Sprachen unterstützt das System 2) Möglichkeit der Anpassung, 3) Entity Linking Fähigkeiten, 4) Output Format und 5) die Verfügbarkeit und Qualität der API. Apache Stanbol hat sich als das am besten geeignete Werkzeug für unsere Zwecke gezeigt. Stanbol ermöglicht die Verknüpfung von Entitäten wie Personen, Institutionen zu Referenzressourcen (Normdateien, Ontologien). Wir haben die Biographien mit GND und GeoNames abgeglichen, und planen weitere LOD
-                    <ref n="3" target="poster-LEJTOftn3" type="note">3</ref> Ressourcen hinzuzufügen. Durch die Verknüpfung von oben benannten Entitäten zu den semantischen Ressourcen können wir viele zusätzliche Informationen (z.B. Alternative Namen, Titel von Werken usw.) zu unseren Daten hinzufügen, und so Inhalte mit fehlenden Informationen bereichern.
-                    <lb/>
+<div rend="DH-Heading1" type="div1" xml:id="h.edj8zv1mbuxr">
+<head>Vorarbeiten</head>
+<p>Bereits seit Längerem wird an der digitalen Methodik zur Verarbeitung von 
+                    <hi rend="color(262626)">Sprachen des Alten Orients geforscht. Dabei spielte insbesondere die automatisierte morphologische Verarbeitung eine Rolle, siehe bspw. </hi>
+<hi rend="background(white)">Barthélemy (1998) und Kataja (1988). Neuere Arbeiten setzen größtenteils auf statistische Verfahren anstelle von regelbasierten Ansätzen. Darunter fallen bspw. Liu et al. (2015) mit einer Studie zur Lemmatisierung für Sumerisch sowie Homburg und Chiarcos (2016) zur Wort-Segmentierung im Akkadischen. Im Rahmen des ORACC Projekts werden Tools zur Annotation der Morphologie in Keilschriftsprachen entwickelt, überwiegend für Akkadisch und Sumerisch.</hi>
+<ref n="2" target="vortrag-DAXENftn2" type="note">2</ref>
+<hi rend="background(white)"> Zur semantischen Analyse von Keilschrifttexten existieren hingegen kaum Arbeiten. Lediglich Jaworski (2008) entwickelte eine Ontologie für sumerische ökonomische Aktivitäten, die mit einer semantischen Grammatik dargestellt werden können. Einen Überblick über die lexikalisch-semantischen Analyseverfahren, die in dieser Arbeit zum Einsatz kommen, gibt bspw. Gurevych et al. (2016). Soweit uns bekannt ist, gab es bislang keine Studien, die untersuchen, inwiefern Keilschrifttexte bzw. deren Übersetzungen mittels semantischer-lexikalischer Verfahren für ein breiteres Publikum zugänglich gemacht werden können.</hi>
 </p>
 </div>
-<div rend="DH-Heading1" type="div1">
-<head>Anwendung</head>
-<p>Um den manuellen Arbeitsaufwand (Korrektur der Daten etc.) zu minimieren haben wir eine effiziente und einfache Weboberfläche geschaffen, die es den ForscherInnen erlaubt mit den Daten zu interagieren. Im Sinne einer nachhaltigen Nutzung und einfacher weiteren Betreuung des so entstandenen Tools haben wir uns entschlossen auf erprobte Web-Technologien zu setzen (Django
-                    <ref n="4" target="poster-LEJTOftn4" type="note">4</ref>/MySQL). Die Web-Anwendung ist in Django, einem Python-basierten Web-Entwicklungs-Framework, implementiert. Django ist nicht nur ein ausgereiftes und verbreitetes Tool (Websites wie Disqus, Pinterest und die Washington Times nutzen es), sondern bietet auch die Möglichkeit die volle Bandbreite der verschiedenen Python Bibliotheken nativ im Code zu verwenden (NLTK
-                    <ref n="5" target="poster-LEJTOftn5" type="note">5</ref>, scikit-learn
-                    <ref n="6" target="poster-LEJTOftn6" type="note">6</ref>, NumPy
-                    <ref n="7" target="poster-LEJTOftn7" type="note">7</ref> etc.) .
-                    <lb/>Die Web-Anwendung stellt die Daten der einzelnen Biographien strukturiert in drei Teilen dar: primäre minimale Informationen, Haupttext mit markierten Anmerkungen und die Listen von Orten, Institutionen und Personen, die mit dem Biographierten in Zusammenhang stehen. Die Anwendung bietet auch Funktionen für die Navigation: dropdown Listen sowie einfache Volltextsuche.
-                    <lb/>Eine weitere wichtige Funktion der Anwendung ist die Möglichkeit, den Text manuell mit Annotationen zu versehen. Dieses Feature erlaubt sowohl die Korrektur von automatischen Annotationen, als auch das Hinzufügen von neuen Annotationen. Die Kuratoren können die Entitäten mit der Maus auswählen oder im Kontextmenü identifizieren. 
-                </p>
-<p>Derzeit liegt der Schwerpunkt auf der Darstellung von Orten. Dementsprechend wird die Anwendung mit eingebetteten Karten ausgestattet, an denen identifizierte geographische Orte visualisiert werden können. In der nächsten Phase des Projekts wird eine interaktive Visualisierung entwickelt, um das Verständnis der Daten und die Navigation im Datenbestand zu erleichtern.</p>
+<div rend="DH-Heading1" type="div1" xml:id="h.6qulxeb46y40">
+<head>Methodik</head>
+<p>Um semantische Suche in Keilschrifttexten zu ermöglichen, haben wir zunächst die transliterierten und übersetzten Texte vorverarbeitet und für die Suche indexiert. Danach werden sie in einer Datenbank abgelegt, in der mittels einer webbasierten Oberfläche gesucht werden kann.</p>
+<div rend="DH-Heading2" type="div2" xml:id="h.8z4te40lfrf">
+<head>Daten</head>
+<p>Die Texte, die im Rahmen dieser Studie verarbeitet wurden, sind überwiegend hethitische, in Keilschrift verfasste Dokumente (Wilhelm 2008). Die Transliterationen und Übersetzungen (auf Deutsch, Englisch, Italienisch und Französisch) wurden an der Johannes Gutenberg-Universität Mainz sowie von Partnern an weiteren Forschungseinrichtungen im In- und Ausland erstellt. Die Originaltexte stammen aus Anatolien (heutige Türkei) und datieren in die zweite Hälfte des 2. Jt. v. Chr. Inhaltlich handelt es sich vornehmlich um religiöse Texte wie bspw. Gebete oder Rituale. Die Dokumente sind auf Satz- oder Teilsatzebene übersetzt und mit den Transliterationen abgeglichen, so dass einfach Bezüge zwischen den Übersetzungen und den Transliterationen hergestellt werden können. Für jedes Dokument existiert ein Einleitungstext, sowie jeweils eine (kommentierte) Übersetzung und eine Transliteration, siehe Abbildung 1. Die Texte sind unabhängig von dieser Arbeit online zugänglich.
+                        <ref n="3" target="vortrag-DAXENftn3" type="note">3</ref>
+</p>
+<figure>
+<graphic height="7.138458333333333cm" n="1001" rend="inline" url="vortrag-DAXEN-image1.png" width="16.002cm"/>
+</figure>
+<p>Abbildung 1: Eine manuell erstellte Transliteration (links) und normalisierte Übersetzung (rechts). Quelle: http://www.hethport.uni-wuerzburg.de</p>
 </div>
-<div rend="DH-Heading1" type="div1">
-<head>Arbeitsablauf</head>
-<p>Das System unterstützt zwei Workflows: im ersten Schritt schickt die Anwendung (das Extrakt-Modul) die Biographien im Batch-Modus zu einem Extraktionsservice (lokale Stanbol Instanz), welches die Abfragen an externe Services und/oder lokale Indizes weiterleitet und die gematchten Entitäten in einer Liste in JSON-LD Format zurückgibt. Diese Entitäten werden von dem Extrakt-Modul analysiert und in der Datenbank abgespeichert. Danach werden sie in der Web-Anwendung dargestellt und können von den ForscherInnen überprüft und korrigiert werden.
-                    <lb/>Im zweiten Schritt wird der Workflow vom Benutzer gestartet: Der menschliche Annotator markiert einen String und identifiziert ihn als Ort, die Anwendung schickt den ausgewählten String zur Stanbol Instanz, die die verfügbaren Ressourcen abfragt und mögliche Kandidaten zurückgibt. Diese Treffer werden dem/der ForscherIn in Form eines Autocomplete Feldes angezeigt.
-                    <lb/>
+<div rend="DH-Heading2" type="div2" xml:id="h.x26j2l98ghpy">
+<head>NLP Pipeline zur Vorverarbeitung der Texte</head>
+<p>Die Übersetzungen und Transliterationen werden direkt aus einem Textformat in eine Pipeline eingelesen, die die weitere linguistische Vorverarbeitung übernimmt. Diese Pipeline erkennt die Struktur der Eingabedokumente, bspw. Dokument-Titel, Sätze, Absätze oder Fußnoten. Außerdem werden die zusammengehörigen Übersetzungen und Transliterationen auf (Teil-)Satzebene gekoppelt. Anschließend werden die mehrsprachigen Übersetzungen mit Hilfe des NLP Frameworks DKPro Core (
+                        <hi rend="background(white)">Eckart de Castilho und Gurevych 2014</hi>) analysiert. DKPro Core vereint die Verwendung verschiedener NLP Werkzeuge zur linguistischen Verarbeitung. So ist es möglich, den Inhalt der Dokumente in vier Sprachen zu segmentieren, zu lemmatisieren und nach Wortarten auszuzeichnen.
+                        <ref n="4" target="vortrag-DAXENftn4" type="note">4</ref> Im nächsten Schritt werden unter Zuhilfenahme des Lesk Algorithmus (Lesk 1986) mehrdeutige Lemmata anhand ihres Kontexts disambiguiert. Dieser Schritt ist die Voraussetzung für die anschließende Zuweisung von sogenannten semantischen Labeln, die einzelne Lemmata mit abstrakteren Konzepten anreichert. Bspw. werden Verben, die eine Bewegung anzeigen, mit einem Label „Bewegung“ gekennzeichnet. Als Ergänzung zu diesen vollautomatischen Verfahren erlaubt es die Pipeline, manuell erstellte Listen für alternative Schreibweisen und Hyperonyme anzuwenden.
+                        <ref n="5" target="vortrag-DAXENftn5" type="note">5</ref> Darin enthalten sind bspw. geographische Einheiten oder Namen von hethitischen Königen oder Gottheiten, die in den lexikalisch-semantischen Ressourcen, die im Schritt zuvor eingesetzt werden, nicht oder nur teilweise enthalten sind. Bspw. werden verschiedene Namen des Wettergottes (u.a. Taru, Teššup) als solche gelistet. Das Endresultat der Pipeline wird in einem Zwischenformat gespeichert, so dass es anschließend in eine Datenbank importiert werden kann.
+                    </p>
+</div>
+<div rend="DH-Heading2" type="div2" xml:id="h.s5wj3igylh01">
+<head>Semantische Suchmaschine: Back- und Frontend</head>
+<p>Eine MYSQL Datenbank nimmt die Dokumente inklusive der von der NLP Pipeline generierten zusätzlichen semantischen Informationen auf und legt diese in indexierten Tabellen ab. Suchanfragen über das Webinterface werden in entsprechende Abfragen auf die Tabellen übersetzt. Die Anordnung der Suchergebnisse wird über eine Priorisierung der verschiedenen zusätzlichen Informationen geregelt. Wörtliche Treffer werden entsprechend höher gerankt als solche, die durch Übereinstimmung mit semantischen Labeln oder alternativen Schreibweisen zustande kommen. </p>
+<p>Das Frontend der Suchmaschine besteht aus dem Eingabefeld für einen oder mehrere Suchbegriffe. Die Suchergebnisse werden pro Dokument gebündelt und angeordnet nach der Güte der Übereinstimmung mit dem Suchbegriff. Abbildung 2 zeigt die Benutzeroberfläche nach einer Suchanfrage. Ein Klick auf ein Suchergebnis öffnet ein Fester, das den Inhalt des gesamten Dokuments jeweils als Übersetzung und Transliteration zeigt.</p>
+<figure>
+<graphic height="9.888736111111111cm" n="1002" rend="inline" url="vortrag-DAXEN-image2.png" width="14.130291666666666cm"/>
+</figure>
+<p>Abbildung 2: Das Frontend mit Ergebnissen zu einer Suchanfrage.</p>
+</div>
+</div>
+<div rend="DH-Heading1" type="div1" xml:id="h.1inhcvp1s49x">
+<head>Evaluation</head>
+<p>Um zu überprüfen, ob die Suchmaschine die eingangs gestellten Anforderungen erfüllt, haben wir eine anonyme Online-Benutzerstudie mit 23 Fragen unter 27 Teilnehmern
+                    <ref n="6" target="vortrag-DAXENftn6" type="note">6</ref> durchgeführt. Die Mehrheit der Teilnehmer waren Studierende an deutschen Universitäten. Etwa die Hälfte hatte einen geisteswissenschaftlichen Studienhintergrund, die andere Hälfte einen technischen. Inhaltlich bestand die Benutzerstudie aus einer kurzen Einleitung sowie drei Teilen mit Fragen. Der erste Teil beinhaltete einfache Fragen, die das allgemeine Verständnis der Suchabfragen überprüfen sollten (bspw. Suche nach einem Begriff in einem bestimmten Dokument). Der zweite Teil zielt explizit auf den semantischen Teil der Suchfunktion ab (bspw. Suche nach dem Namen einer Gottheit). Im dritten Teil wurde die allgemeine Bedienbarkeit und Nützlichkeit des Tools erfragt.
+                </p>
+<p>Mit wenigen Ausnahmen wurden die Aufgaben aus dem ersten Teil der Benutzerstudie von allen Teilnehmern korrekt gelöst. Im zweiten Teil mussten diverse hethitische Gottheiten, Könige oder Städte namentlich benannt werden, diese Aufgabe konnten sämtliche Teilnehmer korrekt lösen. Eine Frage, in der die (nicht vorhandene) Beziehung zwischen zwei Gottheiten anhand von Suchergebnissen bestimmt werden sollte, wurde nur von etwa zwei Dritteln der Teilnehmer korrekt gelöst. Tabelle 1 fasst die Abfragen und Ergebnisse aus dem dritten Teil der Benutzerstudie zusammen.</p>
+<table rend="rules">
+<row>
+<cell>Kriterium</cell>
+<cell>Durchschnittswert (1-5)</cell>
+</row>
+<row>
+<cell>Sortierung der Ergebnisse basierend auf einer konkreten Suchanfrage</cell>
+<cell>4.15</cell>
+</row>
+<row>
+<cell>Benutzerfreundlichkeit der Weboberfläche</cell>
+<cell>4.19</cell>
+</row>
+<row>
+<cell>Allgemeine Qualität der Suchergebnisse</cell>
+<cell>4.26</cell>
+</row>
+<row>
+<cell>Nützlichkeit für Fachfremde</cell>
+<cell>4.3</cell>
+</row>
+</table>
+<p>Tabelle 1: Kriterien und Bewertungen (Auswahlmöglichkeiten zwischen 1 = sehr schlecht und 5 = sehr gut) des dritten Teils der Benutzerstudie.
+                    <anchor xml:id="h.tep961oyrbk"/>
 </p>
 </div>
-<div rend="DH-Heading1" type="div1">
-<head>Schlussfolgerung</head>
-<p>Während wir uns in unserem Abstrakt auf die technische Umsetzung konzentriert haben, ist es wichtig im Auge zu behalten, dass das System nur eine Voraussetzung ist die eigentliche Forschungsfragen beantworten zu können. Alle im Projekt generierten Daten sowie die entwickelte Forschungsumgebung wird der Öffentlichkeit zugänglich gemacht (eine erste Version der Forschungsumgebung wird Ende September in unserem Github Account zugänglich gemacht). Wie schon weiter oben angesprochen versuchen wir die Nachhaltigkeit unserer Lösung auf mehrfache Weise zu erreichen. Zum einen verwenden wir gut etablierte Web-Technologien und ermöglichen somit vielen Entwicklern weltweit unseren Code zu warten und/oder weiter zu entwickeln. Zum anderen verbinden wir unsere Daten mit der LOD-Cloud und serialisieren sie mit Hilfe verschiedener weit verbreiteter Ontologien in den gängigsten Formaten und stellen so sicher, dass andere Projekte unsere Daten mit äußerst kleinem Aufwand direkt in ihre Projekte einbetten können.</p>
+<div rend="DH-Heading1" type="div1" xml:id="h.hdpw1u8gelus">
+<head>Diskussion</head>
+<p>In der Gesamtheit zeigen die Ergebnisse der Benutzerstudie, dass das Tool die eingangs gestellten Anforderungen erfüllt. Neben den zu lösenden Aufgaben gab es auch die Möglichkeit, per Freitextfeld Rückmeldung zu geben. Die so identifizierten Probleme sind zurückzuführen auf a) fehlende Erklärungen zur Formulierung von Suchanfragen, b) Fehlern in den manuell erstellten Listen mit alternativen Schreibweisen und Hyperonymen, und c) irreführender Hervorhebung von Wörtern bei Ergebnissen, die auf semantische Übereinstimmung zurückzuführen sind.</p>
+<p>Zu den allgemeinen Herausforderungen bei der Aufbereitung der Daten für die semantische Suche zählt u.a. die Fragmenthaftigkeit diverser Texte. Da solche Phänomene zu Fehlern in der NLP Vorverarbeitung (bspw. bei der Segmentierung) führen, wurde eine Komponente in die Pipeline integriert, die Lücken soweit möglich repariert. Der „Vocabulary Gap“ zwischen den Termini in den lexikalisch-semantischen Ressourcen und dem in den Übersetzungen tatsächlich verwendeten Vokabular hat letztlich dazu geführt, dass zusätzlich manuell erstellte Wortlisten eingesetzt wurden. Diese Listen müssen allerdings nur einmal erstellt werden und haben einen überschaubaren Umfang.</p>
+<p>Neben der Behebung der oben genannten Probleme ist als nächster Schritte u.a. vorgesehen, das Backend um eine Funktion zum einfachen Upload neuer, transliterierter und übersetzter Texte in die Datenbank zu erweitern. Wir sind zuversichtlich, dass mit dieser Studie ein erster Schritt hin zu einer einfacheren Erschließung des Inhalts keilschriftlicher Quellen genommen ist.
+                    <anchor xml:id="h.ie0ju6idepex"/>
+</p>
 </div>
 </body>
-<back><div type="Notes"><note n="1" rend="footnote text" xml:id="poster-LEJTOftn1">
-<ref target="http://www.geonames.org/">http://www.geonames.org/</ref>
-</note><note n="2" rend="footnote text" xml:id="poster-LEJTOftn2"> https://opennlp.apache.org/</note><note n="3" rend="footnote text" xml:id="poster-LEJTOftn3"> http://linkeddata.org/</note><note n="4" rend="footnote text" xml:id="poster-LEJTOftn4"> https://www.djangoproject.com/</note><note n="5" rend="footnote text" xml:id="poster-LEJTOftn5"> http://www.nltk.org/</note><note n="6" rend="footnote text" xml:id="poster-LEJTOftn6"> http://scikit-learn.org/stable/</note><note n="7" rend="footnote text" xml:id="poster-LEJTOftn7"> http://www.numpy.org/</note></div>
+<back><div type="Notes"><note n="1" rend="footnote text" xml:id="vortrag-DAXENftn1"> Zugänglich unter http://semsearch.ukp.informatik.tu-darmstadt.de. </note><note n="2" rend="footnote text" xml:id="vortrag-DAXENftn2"> http://oracc.museum.upenn.edu</note><note n="3" rend="footnote text" xml:id="vortrag-DAXENftn3"> http://www.hethiter.net</note><note n="4" xml:id="vortrag-DAXENftn4"> Die gesamte Verarbeitungspipeline wurde hier veröffentlicht: https://github.com/UKPLab/DHd2017-semsearch-cuneiform</note><note n="5" xml:id="vortrag-DAXENftn5"> Die Listen können hier eingesehen werden: https://github.com/UKPLab/DHd2017-semsearch-cuneiform</note><note n="6" rend="footnote text" xml:id="vortrag-DAXENftn6"> Das Geschlecht wurde nicht erfasst, wir beziehen uns jeweils auf alle Teilnehmerinnen und Teilnehmer.</note></div>
 <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-                        APIS: Mapping historical networks: Building the new Austrian Prosopographical | Biographical Information System (APIS) 
-                        <ref target="http://www.oeaw.ac.at/acdh/en/apis">http://www.oeaw.ac.at/acdh/en/apis</ref>
-</bibl>
-<bibl>
-<hi rend="bold">Bachmann-Gmur, Reto</hi> (2013): 
-                        <hi rend="italic">Instant Apache Stanbol</hi> (1st ed.).
-                        Packt Publishing. ISBN 1783281235.
-                    </bibl>
-<bibl>
-<hi rend="bold">Bizer, Christian / Lehmann, Jens / Kobilarov, Georgi / Auer, Soren / Becker, Christian / Cyganiak, Richard / Hellmann, Sebastian</hi> (2009): 
-                        „DBpedia - A crystallization point for the Web of Data“, 
+<hi rend="bold">Barthélemy, François</hi> (1998): 
+                        „A morphological analyzer for akkadian verbal forms with a model of phonetic transformations“,
                         in: 
-                        <hi rend="italic">Journal of Web Semantics</hi> 7 (3): 154–165.
+                        <hi rend="italic">Proceedings of the Workshop on Computational Approaches to Semitic Languages</hi> 73–81. 
                     </bibl>
 <bibl>
-<hi rend="bold">Cunningham, Hamish / Maynard, Diana / Bontcheva, Kalina</hi> (2011): 
-                        <hi rend="italic">Text Processing with GATE</hi> (Version 6). 
-                        University of Sheffield Department of Computer Science. ISBN 0956599311.
-                    </bibl>
-<bibl>
-<hi rend="bold">Doerr, Martin</hi> (2003): 
-                        „The CIDOC CRM – An Ontological Approach to Semantic Interoperability of Metadata“, 
+<hi rend="bold">Cohen, Jonathan / Duncan, Donald / Snyder, Dean / Cooper, Jerrold / Kumar, Subodh / Hahn, Daniel / Chen, Yuan / Purnomo, Budirijanto / Graettinger, John</hi> (2004): 
+                        „iClay: Digitizing Cuneiform“,
                         in: 
-                        <hi rend="italic">AI Magazine</hi> 24 (3): 75–92.
+                        <hi rend="italic">Proceedings of the International conference on Virtual Reality, Archaeology and Intelligent Cultural Heritage</hi> 135–143.
                     </bibl>
 <bibl>
-<hi rend="bold">Finkel, Jenny Rose / Grenager, Trond / Manning, Christopher</hi> (2005): 
-                        „Incorporating Non-local Information into Information Extraction Systems by Gibbs Sampling“,
+<hi rend="bold">Eckart de Castilho, Richard / Gurevych, Iryna</hi> (2014): 
+                        „A broad-coverage collection of portable NLP components for building shareable analysis pipelines“,
                         in: 
-                        <hi rend="italic">Proceedings of ACL-2005</hi> 363–370.
+                        <hi rend="italic">Proceedings of the Workshop on Open Infrastructures and Analysis Frameworks for HLT at COLING</hi> 1–11.
                     </bibl>
 <bibl>
-<hi rend="bold">Historische Kommission bei der Bayerischen Akademie der Wissenschaften</hi> (seit 1953): 
-                        <hi rend="italic">Neue deutsche Biographie</hi>, 
-                        Berlin: Duncker &amp; Humblot. ISBN 3-428-00181-8
+<hi rend="bold">Gurevych, Iryna / Eckle-Kohler, Judith / Matuschek, Michael</hi> (2016): 
+                        <hi rend="italic">Linked Lexical-Semantic Knowledge Bases: Foundations and Applications</hi>. 
+                        Morgan &amp; Claypool Publishers.
                     </bibl>
 <bibl>
-<hi rend="bold italic">ÖBL - Österreichisches Biographisches Lexikon/Austrian Biographical Lexicon (1815-1950) Online-Edition und Österreischiches Biographisches Lexikon ab 1815</hi> (2. Überarbeitete Auflage - online). 
-                        Verlag der Österreichischen Akademie der Wissenschaften. Wien.
-                        <ref target="http://www.biographien.ac.at/oebl">http://www.biographien.ac.at/oebl</ref> [letzter Zugriff 26. August 2016]
+<hi rend="bold">Homburg, Timo / Chiarcos, Christian</hi> (2016): 
+                        „Word Segmentation for Akkadian Cuneiform“,
+                        in: 
+                        <hi rend="italic">Proceedings of the International Conference on Language Resources and Evaluation</hi>.
                     </bibl>
 <bibl>
-<hi rend="bold">Pfeifer, Barbara</hi> (2012): 
-                        „Vom Projekt zum Einsatz. Die gemeinsame Normdatei (GND)“,
-                        in: Brintzinger, Klaus-Rainer (ed.): 
-                        <hi rend="italic">Bibliotheken: Tore zur Welt des Wissens</hi>. 101. Deutscher Bibliothekartag in Hamburg 2012, Olms, Hildesheim u.a. 2013: 80–91.
+<hi rend="bold">Jaworski, Woyciech </hi>(2008): 
+                        „Contents Modelling of Neo-Sumerian Ur III Economic Text Corpus“,
+                        in: 
+                        <hi rend="italic">Proceedings of the International Conference on Computational Linguistics</hi> 369–376.
+                    </bibl>
+<bibl>
+<hi rend="bold">Kataja, Laura / Koskenniemi, Kimmo</hi> (1988): 
+                        „Finite-state description of semitic morphology: a case study of Ancient Akkadian“,
+                        in: 
+                        <hi rend="italic">Proceedings of the Conference on Computational Linguistics</hi> 313–315.
+                    </bibl>
+<bibl>
+<hi rend="bold">Lesk, Michael</hi> (1986): 
+                        „Automatic sense disambiguation using machine readable dictionaries: how to tell a pine cone from an ice cream cone“,
+                        in: 
+                        <hi rend="italic">Proceedings of the Annual International Conference on Systems Documentation</hi> 24–26.
+                    </bibl>
+<bibl>
+<hi rend="bold">Liu, Yudong / Burkhart, Clinton / Hearne, James / Luo, Liang</hi> (2015): 
+                        „Enhancing Sumerian Lemmatization by Unsupervised Named-Entity Recognition“,
+                        in: 
+                        <hi rend="italic">Proceedings of the Conference of the North American Chapter of the Association for Computational Linguistics</hi> 1446–1451.
+                    </bibl>
+<bibl>
+<hi rend="bold">Tyndall, Stephen</hi> (2012): 
+                        „Toward Automatically Assembling Hittite-language Cuneiform Tablet Fragments into Larger Texts“, 
+                        in: 
+                        <hi rend="italic">Proceedings of ACL-2012</hi> 243–247. 
+                    </bibl>
+<bibl>
+<hi rend="bold">Wilhelm, Gernot</hi> (2008): 
+                        „Die Edition der Keilschrifttafeln aus Boğazköy und das Projekt ‚Hethitische Forschungen‘ der Akademie der Wissenschaften und der Literatur, Mainz“,
+                        in: Wilhelm, G. (ed.): 
+                        <hi rend="italic">Hattuša - Boğazköy: Das Hethiterreich im Spannungsfeld des Alten Orients</hi>.
+                        Wiesbaden: Harrassowitz 73–86. 
                     </bibl>
 </listBibl>
 </div>

@@ -1,29 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="poster-EDERE" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="poster-HEGEL" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Tool zur Normalisierung und Historisierung</title>
+<title type="full">
+<title type="main">Digitale Werkzeuge und Infrastrukturen zur Analyse und Beschreibung von Bewegungen in vormodernen Wissensbeständen</title>
+<title type="sub"/>
+</title>
 <author>
 <persName>
-<surname>Eder</surname>
-<forename>Elisabeth</forename>
+<surname>Hegel</surname>
+<forename>Philipp</forename>
 </persName>
-<affiliation>Ludwig Maximilians Universität München, Deutschland</affiliation>
-<email>e_eder@gmx.net</email>
+<affiliation>Technische Universität Darmstadt, Deutschland</affiliation>
+<email>hegel@linglit.tu-darmstadt.de</email>
 </author>
 <author>
 <persName>
-<surname>Hadersbeck</surname>
-<forename>Maximilian</forename>
+<surname>Tonne</surname>
+<forename>Danah</forename>
 </persName>
-<affiliation>Ludwig Maximilians Universität München, Deutschland</affiliation>
-<email>maximilian@cis.uni-muenchen.de</email>
+<affiliation>Karlsruher Institut für Technologie, Deutschland</affiliation>
+<email>danah.tonne@kit.edu</email>
+</author>
+<author>
+<persName>
+<surname>Geukes</surname>
+<forename>Albert</forename>
+</persName>
+<affiliation>Freie Universität Berlin, Deutschland</affiliation>
+<email>albert.geukes@cedis.fu-berlin.de</email>
+</author>
+<author>
+<persName>
+<surname>Krewet</surname>
+<forename>Michael</forename>
+</persName>
+<affiliation>Freie Universität Berlin, Deutschland</affiliation>
+<email>m.krewet@fu-berlin.de</email>
+</author>
+<author>
+<persName>
+<surname>Rapp</surname>
+<forename>Andrea</forename>
+</persName>
+<affiliation>Technische Universität Darmstadt, Deutschland</affiliation>
+<email>rapp@linglit.tu-darmstadt.de</email>
+</author>
+<author>
+<persName>
+<surname>Stotzka</surname>
+<forename>Rainer</forename>
+</persName>
+<affiliation>Karlsruher Institut für Technologie, Deutschland</affiliation>
+<email>rainer.stotzka@kit.edu</email>
+</author>
+<author>
+<persName>
+<surname>Uhlmann</surname>
+<forename>Gyburg</forename>
+</persName>
+<affiliation>Freie Universität Berlin, Deutschland</affiliation>
+<email>g.uhlmann@fu-berlin.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2015-10-04T22:02:00Z</date>
+<date>2016-11-21T11:44:45.223363369</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -36,7 +79,7 @@
 </address>
 </publicationStmt>
 <sourceDesc>
-<p>Converted from a Word document </p>
+<p>Converted from an OASIS Open Document</p>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
@@ -55,67 +98,73 @@
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Normalisierung</term>
-<term>Historisierung</term>
+<term>Episteme</term>
+<term>mise en page</term>
+<term>SFB 980</term>
+<term>Infrastruktur</term>
+<term>DARIAH-DE</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Programmierung</term>
-<term>Übersetzung</term>
-<term>Sprache</term>
+<term>Datenerkennung</term>
+<term>Sammlung</term>
+<term>Bilderfassung</term>
+<term>Räumliche Analyse</term>
+<term>Annotieren</term>
+<term>Archivierung</term>
+<term>Visualisierung</term>
+<term>Bilder</term>
+<term>Manuskript</term>
+<term>Karte</term>
+<term>Metadaten</term>
+<term>Software</term>
+<term>Visualisierung</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<p>Das in diesem Poster vorgestellte, unter ‹http://goethefind.cis.uni-muenchen.de/?translator› verfügbare Translationstool überführt historisches Deutsch aus einem ungefähren Zeitraum von 1750 bis 1850 in gegenwartssprachliches Deutsch und umgekehrt modernen deutschen Text in seine historische Version.</p>
-<p>Für eine Normalisierung oder Modernisierung von historischen Wörtern wurden in den letzten Jahren unterschiedliche Herangehensweisen präsentiert. Neben einer Modernisierung über Lexikon-Lookup, Transkriptionsregeln, Levenshtein-Distanz oder phonologische Ähnlichkeit fanden auch Methoden der statistischen maschinellen Übersetzung Anwendung (Scherrer / Erjavec 2015: 2f.). Um orthographischen Differenzen bei einer Translation einzelner Wörter aus eng verwandten Sprachen gerecht zu werden, werden dabei im Gegensatz zur standardmäßigen phrasenbasierten statistischen maschinellen Übersetzung die Phrasen nicht aus Wörtern, sondern aus Buchstabensequenzen gebildet und anstelle der Wörter der Ausgangs- und der Zielsprache die Buchstaben der Wortpaare aligniert [Pettersson et al., 2014]. Buchstabenbasierte statistische maschinelle Übersetzung zur Normalisierung historischer Wörter wurde vielfach mit dem Tool ‹Moses›
-                <ref n="1" target="poster-EDEREftn1" type="note">1</ref> (Koehn et al. 2007) durchgeführt, wie beispielsweise bei (Pettersson et al. 2014), (Nakov / Tiedemann 2012) oder (Scherrer / Erjavec 2015). Neben einem Gebrauch zur Normalisierung wird dieses hier auch für die umgekehrte Überführungsrichtung eingesetzt.
-            </p>
-<p>In einem weiteren Ansatz zur Modernisierung und Historisierung bedient sich das Translationstool zudem neuronaler maschineller Übersetzung. Das dabei häufig verwendete Encoder-Decoder-Modell übertragen Faruqui, Tsvetkov, Neubig und Dyer (2016) auf die buchstabenbasierte Generierung von Wortflexion. Aufgrund der ähnlichen Grundlage kommt deren Tool ‹Morph-Trans›
-                <ref n="2" target="poster-EDEREftn2" type="note">2</ref>, das sich aus LSTMs, einer speziellen Form von rekurrenten neuronalen Netzen, zusammensetzt, zum Einsatz. Nach Wissen der Autoren ist dies der erste Versuch, ein neuronales Encoder-Decoder-Modell für eine Historisierung und Normalisierung deutscher Texte zu gebrauchen.
-            </p>
-<p>Als Trainings- und Entwicklungsdatensätze für die beiden Methoden dienten Wörter von 200 literarischen Texten aus einem Zeitraum von 1749 bis 1850. Diese Wörter wurden mithilfe des ‹Cascaded Analysis Broker›
-                <ref n="3" target="poster-EDEREftn3" type="note">3</ref> vom Deutschen Textarchiv normalisiert, um im Anschluss daran auf die derzeit gültige ‹s›-Schreibung aktualisiert zu werden. Aus den historischen und den modernen Schreibweisen der Wörter wurden das Grundkorpus sowie ein Lookup-Lexikon gebildet. Im Translationstool werden die beiden Ansätze zusätzlich auch in Kombination mit diesem Lexikon eingesetzt. Zu Vergleichszwecken sind diese vier unterschiedlichen Ausgaben des Weiteren um ein auf einfachen Überführungsregeln und regulären Ausdrücken basierendes Verfahren ergänzt. Die unterschiedlichen Herangehensweisen können online anhand eigener Beispiele gegenübergestellt werden.
-            </p>
-<p>Tests auf exemplarischen Datensätzen zeigten, dass buchstabenbasierte statistische maschinelle Übersetzung nicht nur für eine Modernisierung, sondern im Deutschen ebenso für eine Historisierung dienlich ist und auch das neuronale Encoder-Decoder-Modell im Hinblick auf beide Überführungsrichtungen nutzbringend eingesetzt werden kann, wobei das Normalisieren im Vergleich zum Historisieren, wie zu erwarten war, durchweg bessere Resultate erzielte, was wohl unter anderem der Fülle an orthographischen Varianten in historischen Texten geschuldet ist.</p>
-<p>Im geisteswissenschaftlichen Kontext ist eine Modernisierung historischer Wörter oftmals für eine erfolgreiche Anwendung sprachtechnologischer Werkzeuge, wie zum Beispiel Part-of-Speech-Tagger, auf älteren Texten von Nöten, während eine Historisierung beispielsweise bei der Suche auf historischem Text zu einer erheblichen Erleichterung beitragen könnte, indem der moderne Suchterm historisiert wird, da von Anwendern und Anwenderinnen nicht erwartet werden kann, dass sie um die alten Schreibweisen der Wörter wissen. Eine Verwendung von buchstabenbasierter statistischer maschineller Übersetzung und buchstabenbasierten neuronalen Encoder-Decoder-Modellen zur Normalisierung und Historisierung bezüglich solcher Aufgaben und ähnlichen Problemstellungen im Bereich der Geisteswissenschaften ist vorstellbar.</p>
+<div rend="DH-Heading1" type="div1">
+<head>Einführung</head>
+<p>Der Sonderforschungsbereich 980 „Episteme in Bewegung“ untersucht Prozesse des Wissenswandels in europäischen und nicht-europäischen Kulturen vom 3. Jahrtausend vor Christus bis ca. 1750 nach Christus. In den Analysen der insgesamt 22 Teilprojekte aus 20 Disziplinen wird gezeigt, wie gerade dort, wo in den Selbstbeschreibungen der vormodernen Kulturen und aus der Perspektive der Moderne Kontinuität und Stabilität im Vordergrund stehen, vielfältige Formen des Wandels und der Entwicklung beschrieben werden können. Wissen wird dabei als Episteme gefasst. Dieser Begriff aus der griechischen Antike schließt Wissenschaft ebenso ein wie nicht institutionalisierte Formen von Wissen. Er zeigt an, dass Wissen sich immer auf einen Gegenstand bezieht und impliziert zudem, dass Wissen als Wissen von etwas immer mit einem Geltungsanspruch versehen ist. Wissensbewegungen, die mit dem Terminus „Wissenstransfer“ als Neukontextualisierung von Wissenselementen in neuen Kontexten beschreibbar gemacht werden, finden immer in komplexen Austauschprozessen statt, in denen verschiedene Akteure, Medien, Praktiken, Diskurse und Institutionen miteinander interagieren. Um diese komplexen multidirektionalen und multidimensionalen Prozesse erfassen und beschreiben zu können, werden digitale Werkzeuge entwickelt, die komplementär zu qualitativen exemplarischen Einzelanalysen auf größere Mengen an Texten und Bildern angewendet werden können.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Bücher auf Reisen</head>
+<p>In diesem Rahmen entwickelt das Informationsinfrastrukturprojekt „Bücher auf Reisen“ Softwarewerkzeuge, durch die räumliche und zeitliche Bewegungen von Handschriften, Drucken oder anderen Text- und Bildträgern auch für größere Objektzahlen hinweg systematisch erforscht werden. Die Ergebnisse werden als miteinander dynamisch vernetzte Elemente visualisiert. Auch „innere Reisen“, das heißt Bewegungen in Objekten wie das Hinzufügen von Randnotizen oder der Verweis auf andere Texte, sollen auf diese Weise digital aufbereitet und gespeichert werden. Neben dem Schwerpunkt auf der Entwicklung informationstechnisch unterstützter Verfahren zur Datenerschließung wird ein Forschungsdatenrepositorium für die digitalisierten Objekte mitsamt den neu ermittelten Metadaten zu Reisen und Veränderungsprozessen aufgebaut werden, das nachhaltig nutzbar ist.</p>
+<p>Zentrale Fragestellungen sind hierbei die Modellierung und Verwaltung der Relationen der sehr heterogenen Datenbestände als „dynamische Metadaten“, eine verlässliche Speicherung aller Daten im Sinne einer Langzeitverfügbarkeit und eine sehr intuitive und benutzerfreundliche Bedienung. Durch die Verwendung international anerkannter Standards und Schnittstellen wird die Interoperabilität mit anderen standardisierten Infrastrukturen, zum Beispiel DARIAH-DE, und die leichte Erweiterbarkeit gewährleistet. Alle entwickelten oder adaptierten Softwarekomponenten werden der Öffentlichkeit als open source zur Verfügung gestellt.</p>
+<p>Zuerst werden anhand von Pilotprojekten mit Daten aus der Aristotelesüberlieferung, altägyptischen Pyramidentexten, frühneuzeitlichen Fremdsprachenlehrwerken und einer Bibliothek des Osmanischen Reiches das Forschungsdatenrepositorium und die Softwarewerkzeuge erprobt und schrittweise verbessert, bis sie von allen Projektpartnertn verwendet werden können.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Handschriften in Bewegung</head>
+<p>Im selben Rahmen werden im Gastprojekt „Handschriften in Bewegung“ digitale Verfahren zur Analyse von Veränderungen innerhalb von Handschriften im Sinne der genannten „inneren Reisen“ entwickelt. Mit Algorithmen der Bildverarbeitung aus dem Projekt „eCodicology“ können Merkmale des Layouts auf digitalisierten Buchseiten und Handschriften erkannt werden, die auch als strategische Momente zur Übermittlung von Wissen verstanden werden können. Auf der Grundlage dieser reproduzierbaren Messdaten werden durch statistische Auswertungen neue Erkenntnisse über Veränderungen in Einzelhandschriften oder Entwicklungen eines gesamten Buchbestandes gewonnen. Die Ergebnisse können insbesondere genutzt werden, um De- und Rekontextualisierungen von Wissensbeständen in Büchern aufzuzeigen. Zu diesem Zweck werden verschiedene bereits existierende Softwarekomponenten eingesetzt:</p>
+<list type="ordered">
+<item>Mit einem Bildverarbeitungsworkflow werden Seiten, Text- und Bildflächen auf Digitalisaten vermessen.</item>
+<item>Mit einer Annotationssoftware können die vermessenen Bildbereiche geisteswissenschaftlich eingeordnet und mit zusätzlichen Informationen angereichert werden. So lässt sich die Wanderung einzelner Wissensbestände in einem Korpus nachvollziehen.</item>
+<item>Die Metadaten werden graphisch aufbereitet, um gattungsspezifische Differenzen und historische Veränderungen sichtbar zu machen.</item>
+</list>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Fazit und Überlegungen zur Nachhaltigkeit</head>
+<p>Die Forschungsfrage des Sonderforschungsbereichs „Episteme in Bewegung“ mit seiner Vielfalt an geisteswissenschaftlichen Disziplinen und Methoden wird durch den Einsatz informatischer Methoden und Fragestellungen substantiell bereichert. Umgekehrt bedeuten die Multidisziplinarität und die Diversität der Objekte ebenso eine Chance für die Weiterentwicklung informatischer Werkzeuge wie eine Herausforderung für die informatische Operationalisierung von Fragestellungen.</p>
+<p>Auf Grund von Erfahrungen in früheren Projektarbeiten wird ein besonderer Fokus auf Nachhaltigkeit gelegt und diesem Bereich ein eigenes Arbeitspaket gewidmet. Im Rahmen einer engen Kooperation des SFB mit DARIAH-DE und dem Center für Digitale Systeme der Freien Universität Berlin stehen der nachhaltige Betrieb der erweiterten bzw. neu geschaffenen Forschungsdateninfrastruktur sowie deren fachliche Anschlussfähigkeit bzw. Anwendbarkeit auch für andere Fachrichtungen im Vordergrund. Durch standardisierte Schnittstellen sowie Nachnutzung und Erweiterung bestehender Werkzeuge werden bereits in der Konzeption erste Ansätze verfolgt, zusätzlich sind aber auch die Integration in bestehende Infrastrukturen und Institutionen vor Ort sowie in institutionenübergreifende Infrastrukturverbünde zentrale Fragestellungen.</p>
+</div>
 </body>
-<back><div type="Notes"><note n="1" rend="footnote text" xml:id="poster-EDEREftn1"> Online verfügbar unter: http://www.statmt.org/moses/</note><note n="2" rend="footnote text" xml:id="poster-EDEREftn2"> Online verfügbar unter: https://github.com/mfaruqui/morph-trans</note><note n="3" rend="footnote text" xml:id="poster-EDEREftn3"> Online verfügbar unter: http://www.deutschestextarchiv.de/demo/cab/</note></div>
+<back>
 <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-<hi rend="bold">Faruqui, Manaal / Tsvetkov, Yulia / Neubig, Graham / Dyer, Chris</hi> (2016):
-                        „Morphological Inflection Generation Using Character Sequence to Sequence Learning“,
-                        in: 
-                        <hi rend="italic">Proceedings of NAACL</hi>
-<ref target="http://arxiv.org/pdf/1512.06110.pdf">http://arxiv.org/pdf/1512.06110.pdf</ref> [letzter Zugriff 1. August 2016].
+<hi rend="bold">Chandna, Swati / Tonne, Danah / Jeikal, Thomas / Stotzka, Rainer / Krause, Celia / Vanscheidt, Philipp / Busch, Hannah / Prabhune, Ajinkya</hi> (2015):
+                        „Software workflow for the automatic tagging of medieval manuscript images (SWATI)“,
+                        in: Ringger, Eric K. / Lamiroy, Bart (eds.):
+                        <hi rend="italic">Proceedings SPIE9492, Document Recognition and Retrieval XXII, 940201</hi> <ref target="http://dx.doi.org/10.1117/12.2076124">10.1117/12.2076124</ref>.
                     </bibl>
 <bibl>
-<hi rend="bold">Koehn, Philipp / Hoang, Hieu / Birch, Alexandra / Callison-Burch, Chris / Federico, Marcello / Bertoldi, Nicola / Cowan, Brooke / Shen, Wade / Moran, Christine / Zens, Richard / Dyer, Chris / Bojar, Ondrej / Constantin, Alexandra / Herbst, Evan</hi> (2007):
-                        „Moses: Open Source Toolkit for Statistical Machine Translation“,
-                        in: 
-                        <hi rend="italic">Annual Meeting of the Association for Computational Linguistics (ACL)</hi>, demonstration session, Prague, Czech Republic.
-                    </bibl>
-<bibl>
-<hi rend="bold">Nakov, Preslav / Tiedemann, Jörg</hi> (2012):
-                        „Combining Word Level and Character-Level Models for Machine Translation Between Closely Related Languages“,
-                        in: 
-                        <hi rend="italic">Proceedings of ACL-2012</hi>
-</bibl>
-<bibl>
-<hi rend="bold">Pettersson, Eva / Megyesi, Beáta / Nivre, Joakim</hi> (2014):
-                        „A Multilingual Evaluation of Three Spelling Normalisation Methods for Historical Text“,
-                        in: 
-                        <hi rend="italic">Proceedings of the 8th Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities (LaTeCH) @ EACL 2014</hi> 32–41.
-                    </bibl>
-<bibl>
-<hi rend="bold">Scherrer, Yves / Erjavec, Tomaž</hi> (2015):
-                        „Modernising historical Slovene words“,
-                        in: 
-                        <hi rend="italic">Natural Language Engineering</hi>
-<ref target="http://archiveouverte.unige.ch/unige:82305">http://archiveouverte.unige.ch/unige:82305</ref> [letzter Zugriff 1. August 2016]
+<hi rend="bold">Chandna, Swati / Tonne, Danah / Stotzka, Rainer / Busch, Hannah / Vanscheidt, Philipp / Krause, Celia</hi> (2016):
+                        „An effective visualization technique for determining co-relations in high-dimensional medieval manuscripts data“,
+                        in:
+                        <hi rend="italic">Proceedings of Visualization and Data Analyses 2016</hi>
+<ref target="http://www.ingentaconnect.com/contentone/ist/ei/2016/00002016/00000001/art00013">http://www.ingentaconnect.com/contentone/ist/ei/2016/00002016/00000001/art00013</ref>.
                     </bibl>
 </listBibl>
 </div>

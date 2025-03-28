@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="BUSCH_Hannah_Auf_der_Suche_nach_der_verlorenen_Materialit_t_">
+     xml:id="SCHOLZ_Martin_Digitale_Sammlungserschlie_ung_mit_WissKI_und_">
    <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title type="full">
-                    <title type="main">Auf der Suche nach der verlorenen Materialität. </title>
-                    <title type="sub">Kodikologie und Restaurierungswissen-schaft im Zeitalter der (Massen-) Digitalisierung.</title>
+                    <title type="main">Digitale Sammlungserschließung mit WissKI und CIDOC CRM</title>
+                    <title type="sub"/>
                 </title>
                 <author>
                     <persName>
-                        <surname>Busch</surname>
-                        <forename>Hannah</forename>
+                        <surname>Scholz</surname>
+                        <forename>Martin</forename>
                     </persName>
-                    <affiliation>Center for Digital Humanities, Universität Trier, Deutschland</affiliation>
-                    <email>buschh@uni-trier.de</email>
+                    <affiliation>Friedrich-Alexander-Universität Erlangen-Nürnberg, Deutschland</affiliation>
+                    <email>martin.scholz@fau.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Bös</surname>
-                        <forename>Eva</forename>
+                        <surname>Wagner</surname>
+                        <forename>Sarah</forename>
                     </persName>
-                    <affiliation>Buchbinderei Mohr, Trier, Deutschland</affiliation>
-                    <email>ef_fa@web.de</email>
+                    <affiliation>Germanisches Nationalmuseum, Deutschland</affiliation>
+                    <email>s.wagner@gnm.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2016-08-22T21:51:20.48</date>
+                    <date>2017-09-19T16:18:58.522250942</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -56,153 +56,136 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag</term>
+                    <term>Workshop</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Restaurierung</term>
-                    <term>Kodikologie</term>
-                    <term>Handschriftenbeschreibung</term>
+                    <term>WissKI</term>
+                    <term>CIDOC CRM</term>
+                    <term>Sammlungserschließung</term>
                     <term>Digitalisierung</term>
-                    <term>Dokumentation</term>
+                    <term>Objekte im Netz</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Bilderfassung</term>
-                    <term>Archivierung</term>
-                    <term>Konservierung</term>
-                    <term>Manuskript</term>
-                    <term>Standards</term>
-                    <term>texttragende Gegenstände</term>
+                    <term>Sammlung</term>
+                    <term>Modellierung</term>
+                    <term>Kollaboration</term>
+                    <term>Artefakte</term>
+                    <term>virtuelle Forschungsumgebungen</term>
                 </keywords>
             </textClass>
         <settingDesc>
             <ab n="conference">DHd2018 - "Kritik der Digitalen Vernunft", Köln</ab>
-            <ab n="paperID">215</ab>
-            <ab n="session_ID">30</ab>
+            <ab n="paperID">148</ab>
+            <ab n="session_ID">13</ab>
             <ab n="session_numberInSession">1</ab>
-            <ab n="session_short">VP_1c</ab>
-            <ab n="session_title">Sammlungsdigitalisierung I</ab>
-            <ab n="session_start">2018-02-28 09:00</ab>
-            <ab n="session_end">2018-02-28 10:30</ab>
+            <ab n="session_short">Workshop_8a</ab>
+            <ab n="session_start">2018-02-27 09:00</ab>
+            <ab n="session_end">2018-02-27 10:30</ab>
          </settingDesc>
       </profileDesc>
     </teiHeader>
    <text>
         <body>
+            <p>
+                <anchor xml:id="id_docs-internal-guid-5392ef94-b94a-0f4d-c8c7-b6a568b87aa3"/>Die systematische Erfassung und wissenschaftliche Erschließung einer Sammlung sind grundlegende Voraussetzungen, um ihr wissenschaftliches Potential sichtbar zu machen. Häufig aber fehlen Software-Lösungen und Know-How für eine flächendeckende Digitalisierung und Online-Präsenz.
+            </p>
+            <p>Dieser Workshop führt anhand praktischer Beispiele in die digitale Sammlungsarbeit mit WissKI und in die Modellierung mit dem CIDOC Conceptual Reference Model (CRM) ein. Durch die praktische Arbeit lernen die Teilnehmer die im Projekt „Objekte im Netz" bereitgestellte Modellierung sowie die Konfiguration der Virtuellen Forschungsumgebung (VFU) für universitäre Sammlungen kennen.</p>
             <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p>Die Materialitäten von Handschriften und ihrer digitalen Abbilder bieten den Ausgangspunkt unseres Vortrags, der zwei Disziplinen in einen Dialog bringt, die sich mit der Materialität handgeschriebener Artefakte beschäftigen und an der Digitalisierung beteiligt sind: die digitale Kodikologie und die Restaurierungwissenschaft. Die handwerkliche Arbeit der Buchrestauratoren ist für Digitalisierungsprojekte unerlässlich und gehört zur Vor- und Nachbereitung: In der Regel geht jeder Kodex zunächst durch ihre Hände, da unter Umständen der Zustand des Objekts bewertet, Festigungsmaßnahmen oder andere Eingriffe vorgenommen werden müssen, um die Digitalisierung physisch zu ermöglichen.
-                    <ref target="ftn1" n="1">
-                    </ref> Restauratoren sind aber mehr als bloße Dienstleister, sondern verfügen über einen speziellen Blick auf die Materialität von Originalen, der zusätzliche Informationen für digital basierte kodikologische Untersuchungen bereitstellen kann. Umgekehrt verfügen die Digital Humanities über Methoden, die für Anliegen der Restaurierung nützlich sein und gemeinsam weiterentwickelt werden könnten. Nur durch interdisziplinäre Ansätze, so die These, kann das Potenzial des Digitalisats erkannt und ausgeschöpft werden. Gleichzeitig führt die Synergie zur Kompetenzerweiterung der beteiligten Disziplinen.
+                <head>Erschließung und Digitalisierung von Sammlungen</head>
+                <p>Neben Museen beherbergen auch Universitäten einen großen Schatz an Sammlungen, die der Wissenschaftsrat 2011 „als wertvolle Infrastruktur für [...] Forschung” mit „beachtliche[m] wissenschaftliche[n] Potential” identifiziert hat.
+                    <ref target="ftn1" n="1"/> Allein in Deutschland existieren rund 1000 Sammlungen an über 80 Universitäten.
+                    <ref target="ftn2" n="2"/> Zwar sind darunter auch renommierte Sammlungen, doch leidet das Gros an unzureichender Erschließung, Sichtbarkeit, Betreuung, Pflege oder Unterbringung.
+                    <ref target="ftn3" n="3"/> Auch bei der Digitalisierung gibt es enormen Aufholbedarf: Lediglich ein Drittel der Sammlungen sind digital zugänglich. Grund dafür sind u.a. auch das Fehlen von Software-Lösungen und Know-how für eine flächendeckende Digitalisierung und Online-Präsenz.
                 </p>
-                <p>Seit mehr als zwanzig Jahren werden sukzessive Handschriftenbestände digitalisiert. Zunächst beschränkte sich dieses Unternehmen auf besonders hervorzuhebende Bestände und Einzelstücke von erhöhtem öffentlichem Interesse. Es kann davon ausgegangen werden, dass diese Digitalisierungsmaßnahme in erster Linie der allgemeinen Bereitstellung und dem Schutz des Originals galt. Das digitale Faksimile ersetzt das Original im ‘alltäglichen’ Gebrauch und schont damit das materielle Objekt, zudem dient es zumindest als visuelle Sicherung im Falle eines Verlustes des Originals. Im Gegensatz zur Ausstellung im musealen Raum, in dem in der Regel nur ein auf eine Doppelseite begrenzter Einblick in das Kulturgut gegeben werden kann, bietet das Digitalisat die Möglichkeit, die Handschrift zu durchblättern. Durch Bereitstellung im World Wide Web wird zudem die örtliche und zeitliche Begrenzung aufgehoben und ein Zugang für Forscher weltweit ermöglicht. Der Einblick in die Handschrift kann ortsunabhängig nahezu unbegrenzt vielen Personen zur selben Zeit ermöglicht werden und auch beliebig oft, ohne Verschleißerscheinungen am Original und am Digitalisat zu hinterlassen. Seitdem die Anschaffung hochwertiger Scanner oder Konstruktionen, die mit digitaler Fotografie arbeiten
-                    <ref target="ftn2" n="2">
-                    </ref>, nicht nur für die großen Digitalisierungszentren erschwinglich geworden ist, werden auch immer mehr Gesamtbestände mittelalterlicher Bibliotheken digitalisiert und der Forschung sowie interessierten Personen zur Verfügung gestellt. Digitalisierung ermöglicht also, vergessene und/oder besonders fragile handschriftliche Kulturgüter wieder in den Fokus der öffentlichen Aufmerksamkeit zu bringen und bestandsübergreifende Forschung zu erleichtern. 
+                <p>Seit einigen Jahren gibt es vermehrt Anstrengungen, universitäre Sammlungen aus ihrem Dornröschenschlaf zu wecken und sie zu einer wichtigen Ergänzung objektgebundener Forschung und Lehre weiter zu entwickeln. Dies drückt sich unter anderem in deutschlandweiten Förderprogrammen aus, wie etwa der „Allianz für universitäre Sammlungen” des Bundesministeriums für Bildung und Forschung. Das darin geförderte Projekt „Objekte im Netz”
+                    <ref target="ftn4" n="4"/> konzentriert sich auf die Digitalisierung universitärer Sammlungen und entwickelt in einer Kooperation zwischen der Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU) und dem Germanischen Nationalmuseum Nürnberg (GNM) eine gemeinsame Erschließungs- und Digitalisierungsstrategie für die Sammlungen der FAU, um die wissenschaftliche Nutzbarkeit der reichhaltigen Bestände zu verbessern.
                 </p>
-                <p>Angesichts der gewaltigen Masse finanzieller und personeller Ressourcen, die Digitalisierungsprojekte innerhalb von Institutionen binden, erscheint das Nachdenken darüber, welche Bearbeitungsschritte und technischen Features in bestehende Workflows im Kontext der Digitalisierung eingebunden werden könnten, sowohl in wissenschaftsorientierter als auch in wirtschaftlicher Hinsicht lohnenswert.
-                    <ref target="ftn3" n="3">
-                    </ref> Die Tatsache, dass im Rahmen von Digitalisierungen eine immense Zahl an Objekten einzeln in die Hand genommen und Seite für Seite durchblättert wird, birgt ein bislang noch nicht ausgeschöpftes Potential für interdisziplinäre Anschlussmöglichkeiten.
+                <p>Im Fokus stehen jedoch nicht einzelne Sammlungen oder Fachbereiche, sondern die Bereitstellung von Software-Werkzeugen und Lösungswegen, um die digitale Erschließung und Verfügbarkeit an breiter Front voranzutreiben. Die über 20 Sammlungen der FAU bilden dabei eine äußerst heterogene Entwicklungs- und Testlandschaft, um Lösungen zu erarbeiten, die über die FAU hinaus anwendbar sind. Die nötige Generizität der Ansätze und die Nachhaltigkeit sind daher zentrale Herausforderungen, wobei bei letzterem die langfristige Interpretierbarkeit der Daten im Blickpunkt des Projekts steht. Daneben müssen die meist knappen personellen und finanziellen Mittel berücksichtigt werden.</p>
+                <p>Als besonders geeignet zur Umsetzung der Ziele erscheinen auf technischer Seite Lösungen, die unter freien Lizenzen (Open Source) zur Verfügung stehen und die Ideen des Semantic Web implementieren: Flexible Wissensnetze mit klar definierter Semantik, die weltweit – und damit auch sammlungsübergreifend – verknüpft werden können. Das Projekt erweitert daher die virtuelle Forschungs- und Dokumentationsumgebung WissKI
+                    <ref target="ftn5" n="5"/> zu einem Werkzeug für die digitale Sammlungserschließung und stellt auf verschiedene Sammlungsbereiche abgestimmte Konfigurationen der Software sowie Leitfäden zur Verfügung. Für die standardisierte semantische Auszeichnung der Daten kommt das CIDOC Conceptual Reference Model (CRM) zum Einsatz.
                 </p>
+                <p>Aufgrund einer erfolgreichen Pilotstudie kann das Projekt bereits auf erste Ergebnisse verweisen. Im Rahmen des Workshops wird die bereits publizierte generische Konfiguration vorgestellt und von den Teilnehmern angewandt.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Gegen eine Theoretisierung der Materialität
-                    <ref target="ftn4" n="4"></ref> ‒ Materialität von analogem Original und digitalem Faksimile
-                </head>
-                <p>Dem digitalisierten Objekt wird häufig seine Materialität abgesprochen; darüber zu diskutieren, dass das digitale Faksimile einer mittelalterlichen Handschrift nicht die gleiche synästhetische Erfahrung bieten kann wie das Original, ist obsolet. Es ist wahr, dass das digitale Faksimile zunächst nicht dazu geeignet scheint physische Eigenschaften, wie Lagenstrukturen, Linierung, den Erhaltungszustand oder Eigenschaften der Bindung zu untersuchen (vgl. Pierazzo 2016:94). Dass dennoch gerade eHumanities-Projekte, die sich im Feld der digitalen Kodikologie angesiedelt haben, materielle Eigenschaften von Handschriften ins Zentrum zu rücken verstehen, zeigen etwa das groß angelegte Projekt der 
-                    <ref target="https://www.wasserzeichen-online.de/wzis/index.php">Wasserzeichendatenbank</ref>, die Untersuchungen des 
-                    <ref target="http://www.archimedespalimpsest.org/">Archimedes Palimpsest</ref>, 
-                    <ref target="https://github.com/leoba/VisColl">VisColl</ref>zur Visualisierung von Lagenstrukturen oder 
-                    <ref target="http://www.ecodicology.org/">eCodicology</ref>.
-                    <lb/>Das Potenzial des Digitalisats liegt im Material des Originals. Restaurierungswissenschaft kann Materialaspekte bestimmen; die Digital Humanities computergestützte Techniken bereitstellen, um diese Informationen zu erfassen, zu dokumentieren und so aufzubereiten, dass die Daten z.B. miteinander verglichen, auf unterschiedliche Weise systematisiert, visualisiert und eine Nachnutzung ermöglicht werden kann.
-                    <lb/>Der Beitrag möchte sich deshalb weniger der allgemeinen Defintion von Materialität widmen, sondern bisherige Digitalisierungspraktiken hinterfragen. Dabei steht immer die Frage im Hintergrund, welche Synergieeffekte sich durch den Austausch der Disziplinen ergeben, die in die Digitalisierungsabläufe involviert sind.
-                    <ref target="ftn5" n="5">
-                    </ref>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Gemeinsame Aufgaben, gemeinsame Ziele, gemeinsame Probleme </head>
-                <p>Wirft man einen Blick auf die Unterfangen der Digitalisierung und der Restaurierung fällt auf, dass sie die Kernaufgabe, Kulturgut zu erhalten und zugleich der Forschung und dem allgemeinen Nutzen zugänglich zu machen, gemeinsam haben. Sie teilen aber auch die mit diesen gemeinsamen Aufgaben und Zielen einhergehenden Probleme der Finanzierung der Maßnahmen, das ungeklärte und teils unabsehbare Problem der Langzeiterhaltung und den Kampf um die nötige Aufmerksamkeit auf institutioneller und politischer Ebene.
-                    <ref target="ftn6" n="6"></ref>
-                    Sammlungen und Einzelexemplare mit einer hohen Nutzungsintensität stehen in einem erhöhten Interesse der Zugänglichmachung und werden mit einer höheren Priorität der Bestandserhaltung zugeführt, während andere Handschriften ihr einsames und weitgehend ungeachtetes Dasein in den Magazinen von Bibliotheken und Magazinen fristen. Durch die Motivation, vollständige Handschriftenbestände zu digitalisieren – beispielsweise um dislozierte Bestände digital wieder zusammenzuführen – rücken jedoch inzwischen auch bisher wenig beachtete Bestände in den Fokus und erhalten den ‚Luxus‘ restauratorischer Begutachtung und Behandlung sowie der prioritären Bestandserhaltung mittels Digitalisierung
-                    <anchor xml:id="id__1fob9te"/>.
-                    <ref target="ftn7" n="7"></ref>Geht man einen Schritt weiter und richtet seinen Fokus auf die daraus resultierenden neuen Möglichkeiten für die Forschungsdisziplinen Kodikologie und Restaurierungswissenschaft, lassen sich weitere Gemeinsamkeiten erkennen: beide bedienen sich derselben Techniken – der Bildverarbeitung und Mustererkennung – um neue Erkenntnisse und Arbeitsabläufe zu kreieren (vgl. Weber / Hähner 2014: 139ff und Busch / Chandna 2017), beide stehen vor den selben Herausforderungen, wie dem Mengenbetrieb sowie der daraus resultierenden Verwaltung großer Datenmengen. 
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Aspekte des Einzelobjekts/-digitalisats</head>
-                <p>Hinsichtlich der authentischen Abbildung originaler Materialität im Digitalisat stellt sich immer auch die Frage nach dem ‚digitalen Erhaltungszustand‘. Informationsverluste bei der Digitalisierung betreffen v.a. Farbigkeiten und Oberflächenstrukturen, letztere sind in herkömmlichen Auflichtaufnahmen kaum wahrnehmbar, sodass Tiefendimensionen eingeebnet sind.
-                    <lb/>Die Restaurierung arbeitet im Rahmen von Dokumentationen mit Streiflicht und Durchlicht, um Unebenheiten, Knicke, Risse, Trockenstempel, Linierungen etc. sichtbar zu machen. Könnten solche Aufnahmetechniken in Digitalisierungsprozesse einbezogen werden, um kodikologische Merkmale im Digitalisat zu bewahren? Und wie können die Resultate von restauratorischen Dokumentationen erfasst und beispielsweise in die Metadaten digitalisierter Sammlungen einfließen?
-                    <lb/>Verschiedene Belichtungsarten (UV, IR etc.) eröffnen auch Zugänge zu nicht nur ‚einer Materialität‘, z.B. können durch die unterschiedliche Reichweite der Strahlungen frühere materielle Zustände ‒ z.B. gelöschte oder überdeckte Schriftzeichen ‒ rekonstruiert, sichtbar und darstellbar gemacht werden, vgl. Archimedes Palimpsest oder die Weimarer lösch- und brandgeschädigte Notenhandschriften (Weber / Hähner 2014: 140ff.).
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Aspekte der Objekt-/Datenmengen</head>
-                <p>Die authentische Wiedergabe kodikologischer Merkmale ist nicht zuletzt für Methoden der digitalen quantitativen Kodikologie relevant (vgl. Chandna et al. 2015). Untersuchungen zur Mise-en-page etwa (bspw. Verhältnis von beschriebenem und unbeschriebenem Raum einer Handschriftenseite) würden zu realistischeren Ergebnissen führen, wenn mit einbezogen werden könnte, ob eine Handschrift einer Trockenreinigung, Bleiche o.ä. unterzogen worden ist, da dies Einfluss auf den Ist-Zustand des Textträgers hat. Durch die durchgeführten Maßnahmen weichen Farbwerte von Handschriften gleicher Provenienz, gleichen Alters und gleicher Materialität voneinander ab; der Kontrast von Schrift zu Hintergrund verändert sich. Durch die Festlegung eines Koeffizienten zur Korrektur dieser Abweichung könnte dem entgegengewirkt und eine größere Vergleichbarkeit gewährleistet werden. Die Dokumentation von Restaurierungsmaßnahmen könnte ein solches Verfahren ermöglichen.
-                    <lb/>Andersherum könnten Techniken der Datenverarbeitung aus den DH genutzt werden, um restaurierungsrelevante Daten wie Schadensbilder, Zustandsbeschreibungen oder objektbezogene Informationen zum Einband etc. zu erfassen, die etwa für die Vorbereitung von großangelegten Restaurierungsmaßnahmen genutzt werden könnten. 
-                    <lb/>In Prozessen der Bestandserhaltung und Restaurierung von Schriftgut – wie sie zum Beispiel vor der Digitalisierung oder nach Notfällen wie Bränden und Archiveinstürzen durchgeführt werden – stehen die materiellen Aspekte der Objekte bei der Schadensdokumentation im Mittelpunkt und werden in schriftlichen Schemata festgehalten; die Inhalte der Dokumentationen werden aber nur teilweise und eher selten in weiteren Projekten weitergenutzt oder virtuell zur Verfügung gestellt. In der HAAB Weimar wird an einer digitalen Form des dort analog verwendeten Dokumentationsschemas gearbeitet; im Bibliothekskatalog sind für die beim Brand geschädigten Exemplare Felder zur Materialbeschreibung und der Art des Schadens vorgesehen.
-                    <ref target="ftn8" n="8">
-                    </ref>Umgekehrt werden bei der Digitalisierung Materialdaten nicht erfasst, die sowohl für die Forschung als auch für die Bestandserhaltung (Langzeitarchivierung und analoger Objekterhalt) von Bedeutung sein könnten. 
-                </p>
+                <head>Die Werkzeuge - WissKI und CIDOC CRM</head>
+                <p>Semantische Technologien - im Speziellen Semantic Web und Linked Open Data - erfreuen sich zunehmender Beliebtheit in den Digital Humanities. Für objektbasierte Forschung bieten die flexible, netzwerkartige Grundstruktur des Resource Description Framework (RDF) und darauf aufbauende Formate ein adäquates Mittel zur Repräsentation, Verwaltung und Publikation von (Meta-)Daten. Zahlreiche VFUs unterstützen das Erstellen von komplexen Wissensnetzen und deren Export in Tripelformaten. Wichtige Normdateien und Thesauri stehen als Linked Open Data zur Verfügung. Ontologien wie das CIDOC CRM bilden das semantische Rückgrat dieses Ansatzes und garantieren ein Mindestmaß an Interoperabilität und Datenaustausch, das über das klassische Verlinken von Web-Dokumenten hinausgeht.</p>
                 <p>
-                    <lb/>Mit dem hier skizzierten Beitrag soll nicht nur eine Kritik an der bisherigen Digitalisierungspraxis ohne ausreichende Einbeziehung der Restaurierungswissenschaften geübt werden, sondern vielmehr das mögliche Potenzial der interdisziplinären Zusammenarbeit bei zukünftigen Initiativen an konkreten Anwendungsbeispielen aufzeigen. Darüber hinaus erhoffen wir uns, das Thema interdisziplinärer Synergieeffekte hinsichtlich der Erfassung von Materialität in Digitalisaten ins Gespräch zu bringen und Anregungen zu sammeln, inwiefern sich der vorgestellte Ansatz in Zukunft in der Praxis umsetzen lässt.
+                    <anchor xml:id="id_docs-internal-guid-877475c3-b944-4e7b-8d03-43f7c56cc8bd2"/>Wenngleich die Nutzung semantischer Technologien zunimmt, stellt der praktische Einsatz unerfahrene 
+                    <anchor xml:id="id_docs-internal-guid-877475c3-b944-4e7b-8d03-43f7c56cc8bd1"/>oder wenig technikaffine 
+                    <anchor xml:id="id_docs-internal-guid-877475c3-b944-4e7b-8d03-43f7c56cc8bd"/>Nutzer meist vor große Herausforderungen. Dies gilt weniger für die Beherrschung bestimmter Formate und Werkzeuge als vielmehr für die semantische Modellierung der Daten, d.h. die Erstellung von und den richtigen Umgang mit Ontologien. Da hierbei die Bedeutung der Daten formalisiert niedergelegt wird, ist mitunter ein gehöriges Maß an Wissen über einen Anwendungs-/Fachbereich erforderlich, um Modellierungsfehler zu vermeiden und so eine spätere korrekte Interpretation zu gewährleisten. Insbesondere das CIDOC CRM
+                    <ref target="ftn6" n="6"/>, das eine Top-Level-Ontologie für die Dokumentation kulturellen Erbes darstellt, steht immer wieder in der Kritik, für Einsteiger zu komplex zu sein.
                 </p>
+                <p>Die virtuelle Forschungs- und Dokumentationsumgebung WissKI nimmt sich dieser Herausforderung an. Die browserbasierte Software ist das Produkt aus zwei DFG-geförderten Projekten und entstand aus Anforderungen an die kooperative Forschung in Museen bzw. im Bereich des Kulturerbes und seiner Dokumentation im digitalen Medium. Zentraler Fokus von WissKI ist das vernetzte Arbeiten auf Basis semantischer Tiefenerschließung von Forschungsdaten. Eine Schlüsselrolle kommt hierbei dem CIDOC CRM zu, das um projektspezifische Anwendungsontologien erweitert werden kann.</p>
+                <p>Aus Nutzersicht ist das System an die tradierten Formen der Datenakquise und -präsentation angelehnt. Die Daten werden jedoch semantisch aufbereitet und nativ als RDF mitsamt Ontologie-Konstrukten gespeichert. Dem Nutzer werden so die Vorteile von Linked Open Data und Semantic Web zugänglich, ohne dass dieser sich mit technischen und ontologischen Details auseinandersetzen muss. Kern dieses Ansatzes ist eine Abbildung zwischen den tradierten, meist datensatz-basierten, tabellarischen Darstellungen und der graphbasierten Wissensrepräsentation, die die ontologiegestützte, formale Semantik der verwendeten Datenfelder beinhaltet. Diese Abbildung wird von einem inhaltlichen Administrator festgelegt und ist für die Nutzer standardmäßig nicht sichtbar. Die formale Semantik muss also nicht verstanden werden, um das System effektiv zu nutzen. Abbildungen oder Teile davon können zwischen verschiedenen Systemen wiederverwendet und erweitert werden, so dass sich Best-Practice-Modellierungen herausbilden.</p>
+                <p>Die Open-Source-Lizenzierung aller in diesem Workshop verwendeten Werkzeuge und Standards ist ein wichtiger Aspekt. Die kostenfreie Nutzung trägt zum einen der häufig angespannten finanziellen Situation universitärer Sammlungen Rechnung und ist zum anderen Bestandteil des partizipativen Konzepts: Anwender können die Materialien nutzen, sie an ihre Bedürfnisse anpassen und wiederum der Community zur Verfügung stellen.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Zielgruppe sowie Inhalt und Ziele des Workshops</head>
+                <p>Der Workshop richtet sich an alle, die mit Sammlungsobjekten oder mit Objekten des kulturellen Erbes im Allgemeinen arbeiten und diese digital dokumentieren oder erschließen. Auch spricht der Workshop interessierte Wissenschaftler an, die Objekte standardisiert dokumentieren und ihre Metadaten semantisch aufbereiten möchten. Es werden von den Teilnehmern keine Vorkenntnisse für die VFU WissKI oder das CIDOC CRM vorausgesetzt. </p>
+                <p>Der Workshop zeigt anhand praktischer Beispiele, wie Erfassungsschemata und -modi aus der universitären Sammlungslandschaft mithilfe der Referenzontologie CIDOC CRM und der VFU WissKI auf Objekte universitärer Sammlungen bzw. des kulturellen Erbes im Allgemeinen umgesetzt werden können. </p>
+                <p>Während des Workshops arbeiten die Teilnehmer mit ihrem eigenen WissKI-System, wahlweise einzeln oder in Kleingruppen. Dabei stehen weniger die informationstechnischen Details der Werkzeuge im Vordergrund. Vielmehr werden die nötigen Schritte bis zum effektiv einsetzbaren System vermittelt und durchgeführt. Angefangen bei der Installation und einigen grundlegenden Funktionalitäten, binden die Teilnehmer die vom Projekt „Objekte im Netz” angebotene Konfiguration zur Sammlungserschließung in WissKI ein und erhalten somit ein einsetzbares System mit standardisierten Eingabe- und Anzeigemöglichkeiten. Darauf aufbauend werden Möglichkeiten der einfachen Anpassung der semantischen Modellierung aufgezeigt und selbständig geübt. Das Erfassen von (selbst mitgebrachten) Datensätzen rundet die praktische Einführung ab.</p>
+                <p>Neben einer allgemeinen Einführung in das Arbeiten mit WissKI und der semantischen Dokumentation von Daten sind die Teilnehmer nach dem Workshop in der Lage, einfache Erfassungsmasken zu modellieren, Daten mit WissKI zu erfassen und zu recherchieren.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Kurzbiographien</head>
+            
+                <p>Martin Scholz ist einer der Hauptentwickler der Virtuellen Forschungsumgebung WissKI. Er studierte Informatik und Sinologie an der Friedrich-Alexander-Universität Erlangen-Nürnberg. Nach seinem Diplom 2008 arbeitete er für die Arbeitsgemeinschaft Digital Humanities der FAU für das DFG-geförderte Projekt “Wissenschaftliche KommunikationsInfrastruktur” (WissKI). Seit 2017 engagiert er sich für die Digitalisierung der Sammlungen der FAU im Rahmen des BMBF-geförderten Projekts “Objekte im Netz”. Seine Forschungsinteressen liegen in den Digital Humanities, insbesondere in den Bereichen Wissensrepräsentation, Semantic Web und Verarbeitung natürlicher Sprache.</p>
+                <p>Martin Scholz</p>
+                <p>Friedrich-Alexander-Universität</p>
+                <p>Erlangen-Nürnberg</p>
+                <p>Referat H2 – Zentralkustodie</p>
+                <p>Hugenottenplatz 1a, 91054 Erlangen</p>
+                <p>martin.scholz@fau.de</p>
+                    
+                <p>Sarah Wagner ist Kunsthistorikerin und arbeitet seit 2012 in der Abteilung für Kulturinformatik am Germanischen Nationalmuseum Nürnberg. Sie studierte Kunstgeschichte und Museumsarbeit in Bamberg, Erlangen und Leiden (NL) und betreut seit 2014 verschiedene Forschungsprojekte, die mit WissKI arbeiten. Aktuell ist sie für das BMBF-geförderte Kooperationsprojekt “Objekte im Netz” tätig und vertritt dort die Seite des Museums. Ihre Forschungsschwerpunkte liegen in der frühneuzeitlichen Sammlungspraxis und der semantischen Wissensmodellierung.</p>
+                <p>Sarah Wagner</p>
+                <p>Germanisches Nationalmuseum Nürnberg</p>
+                <p>Kornmarkt 1, 90402 Nürnberg</p>
+                <p>s.wagner@gnm.de</p>
             </div>
         </body>
-        <back>
-            <div type="notes">
-                <note xml:id="ftn1" n="1">
-                    Bsp. der Steppkapitale der neugebundenen Mattheiser Handschriften in Trier, die vor der Digitalisierung aufgelöst und hinterher wieder erneuert werden mussten, um den nötigen Aufschlagwinkel zu erreichen.
-                </note>
-                <note xml:id="ftn2" n="2">
-                    Den größten Bekanntheitsgrad haben hier vermutlich der Grazer Büchertisch und der Wolfenbütteler Buchspiegel, aber auch Aufsichtsscanner liefern digitale Aufnahmen die hohen Qualitätsansprüchen gerecht werden.
-                </note>
-                <note xml:id="ftn3" n="3">
-                    Nicht zuletzt entsteht so auch ein Instrument für die Institutionen, ihre Relevanz für die Öffentlichkeit nachzuweisen (z.B. durch die Zahl der Zugriffe auf die digitalisierten Bestände). In Zeiten, in denen eine Vielzahl kultureller Einrichtungen um verhältnismäßig wenige öffentliche finanzielle Mittel buhlen muss und Evaluierung einen Teil des Arbeitsalltags ausmacht, ist es unerlässlich geworden, ein öffentliches Interesse der eigenen Tätigkeit nachweisen zu können, um mit einer Zuwendung bedacht zu werden (s. bspw. Knoche 2017).
-                </note>
-                <note xml:id="ftn4" n="4">
-                    Welchen Nutzen birgt das Digitalisat, abgesehen von der Bereitstellung und Zugänglichmachung von Texten inklusive eines Eindrucks des originalen Textträgers?
-                </note>
-                <note xml:id="ftn5" n="5">
-                    Welche Erkenntnisse kann uns die Materialität liefern? Wir können wir sie digital Erfassen und Präsentieren? Welchen Verlust der Materialität im Digitalen haben wir tatsächlich zu verzeichnen?
-                </note>
-                <note xml:id="ftn6" n="6">
-                    Siehe hierzu Initiativen wie den Berliner Appell aus dem Jahr 2013 und dem Weimarer Appell von 2014.
-                </note>
-                <note xml:id="ftn7" n="7">
-                    An dieser Stelle sei auf den im Dezember 2015 veröffentlichten Masterplan zur „Digitalisierung mittelalterlicher Handschriften in deutschen Bibliotheken“ verwiesen.
-                </note>
-                <note xml:id="ftn8" n="8">
-                    Die Verlust- und Schadensdokumentation der HAAB Weimar ist unter 
-                    <ptr target="https://lhwei.gbv.de/DB=2.2/"/> einsehbar [letzter Zugriff 24. September 2017].
-                </note>
-            </div>
-         <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl>Berliner Appell zum Erhalt des digitalen Kulturerbes, September 2013. http://www.berliner-appell.org [letzter Zugriff am 25. September 2017].</bibl>
-                    <bibl> 
-                        <hi rend="bold">Busch, Hannah / Chandna, Swati </hi>(2017): “eCodicology: The Computer and the Mediaeval Library” in: Busch, Hannah / Fischer, Franz / Sahle, Patrick (Hrsg.): 
-                        <hi rend="italic">Kodikologie und Paläographie im digitalen Zeitalter 4. </hi>Norderstedt: BoD. urn:nbn:de:hbz:38-77742
-                    </bibl>
-                    <bibl><hi rend="bold">Chandna, Swati / Tonne, Danah / Jejkal, Thomas / Stotzka, Rainer / Krause, Celia / Vanscheidt, Philipp / Busch, Hannah / Prabhune, Ajinkya </hi>(2015): “Software Workflow for the Automatic Tagging of Mediaeval Manuscript Images (SWATI)” in: Ringger, Eric K. / Bart Lamiroy (eds.): 
-                        <hi rend="italic">SPIE Proceedings 9402.</hi>
-                        <hi rend="italic">Document Recognition and Retrieval XXII</hi>. San Francisco, February 11-12 2015.
-                    </bibl>
-                    <bibl><hi rend="bold">Knoche, Michael</hi> (2017): „Rettung von Bücherschätzen. In guter Ordnung, aber schlechter Verfassung“ in: F.A.Z. vom 18.07.2017. http://www.faz.net/-gqz-8zv5x [letzter Zugriff 25. September 2017].
-                    </bibl>
-                    <bibl><hi rend="bold">Pierazzo, Elena</hi> (2015): 
-                        <hi rend="italic">Digital Scholarly Editing. Theories, Models and Methods.</hi> London: Routledge.
-                    </bibl>
-                    <bibl><hi rend="bold">Schreiber, Carolin / </hi>
-                        <hi rend="bold">Fabian, Claudia</hi>
-                        <hi rend="bold"> (Red.)</hi> (2015): 
-                        <hi rend="italic">Digitalisierung mittelalterlicher Handschriften in deutschen Bibliotheken.</hi> Masterplan. München. http://www.handschriftenzentren.de/wp-content/uploads/2016/06/Priorisierungsfragen-Masterplan_pub.pdf
-                    </bibl>
-                    <bibl><hi rend="bold">Weber, Jürgen / Hähner, Ulrike (Hrsg.) </hi>(2014): 
-                        <hi rend="italic">Restaurieren nach dem Brand. Die Rettung der Bücher der Herzogin Anna Amalia Bibliothek</hi>. Petersberg: Michael Imhof Verlag.
-                    </bibl>
-                    <bibl>Weimarer Appell zur Erhaltung schriftlichen Kulturguts, September 2014.</bibl>
-                </listBibl>
-            </div>
+      <back>
+         <div type="notes">
+            <note xml:id="ftn1" n="1" place="foot"> Vgl. „Empfehlungen zu wissenschaftlichen Sammlungen als Forschungsinfrastrukturen”, Verfügbar unter: 
+                        <ptr target="https://www.wissenschaftsrat.de/download/archiv/10464-11.pdf"/>) [letzter Zugriff: 10. Januar 2018]
+                    </note>
+            <note xml:id="ftn2" n="2" place="foot"> Kennzahlen zu den folgenden Aussagen sind verfügbar unter: 
+                        <ptr target="https://portal.wissenschaftliche-sammlungen.de/kennzahlen"/>/ [letzter Zugriff: 10. Januar 2018]
+                    </note>
+            <note xml:id="ftn3" n="3" place="foot">
+                        <anchor xml:id="id_docs-internal-guid-5392ef94-b962-c408-911e-ec8242784d66"/> siehe Fußnote 1
+                    </note>
+            <note xml:id="ftn4" n="4" place="foot">
+                        <anchor xml:id="id_docs-internal-guid-5392ef94-b963-dc0a-8780-317aedc2ff32"/>Das Projekt wird vom Bundesministerium für Bildung und Forschung von 2017 bis 2020 im Rahmen der Förderlinie „Vernetzen - Erschließen - Forschen. Allianz für universitäre Sammlungen” gefördert. Mehr Informationen unter URL: 
+                        <ptr target="http://objekte-im-netz.fau.de/"/> [letzter Zugriff: 10. Januar 2018]
+                    </note>
+            <note xml:id="ftn5" n="5" place="foot"> WissKI (=„Wissenschaftliche KommunikationsInfrastruktur, URL: 
+                        <ref target="file:///h">http://wiss-ki.eu/</ref>[letzter Zugriff: 10. Januar 2018]) basiert auf dem Open-Source Content Management System Drupal (URL: 
+                        <ref target="file:///h">http://drupal.org/</ref>[letzter Zugriff: 10. Januar 2018]) und wurde in Zusammenarbeit zwischen dem Germanischen Nationalmuseum, Nürnberg, dem Zoologischen Forschungsmuseum Alexander Koenig, Bonn und der Friedrich-Alexander- Universität Erlangen-Nürnberg entwickelt.
+                    </note>
+            <note xml:id="ftn6" n="6" place="foot">
+                        <anchor xml:id="id_docs-internal-guid-5392ef94-b964-6072-0052-3285a497835b"/>Das CIDOC CRM wurde vom International Committee for Documentation als Teil des International Council of Museums (ICOM) als formale Referenzontologie erarbeitet und ist seit 2006 als ISO Norm (ISO 21127) anerkannt. In der „Erlangen CRM“ (URL: 
+                        <ptr target="http://erlangen-crm.org/"/> [letzter Zugriff: 10. Januar 2018]) auf Basis der Web Ontology Language (OWL) liegt eine maschinenlesbare Version vor. Weitere Informationen zum CIDOC CRM unter URL: 
+                        <ptr target="http://cidoc-crm.org/"/> [letzter Zugriff: 10. Januar 2018].
+                    </note>
+         </div>
+          <div type="bibliogr">
+              <listBibl>
+                  <head>Bibliographie</head>
+                  <bibl> 
+                      <hi rend="italic">Definition of the CIDOC Conceptual Reference Model: Version 5.0.4.</hi>, autor. durch die CIDOC CMR Special Interest Group (SIG), 2011.
+                      <ptr target="http://www.cidoc-crm.org/sites/default/files/cidoc_crm_version_5.0.4.pdf"/>) [letzter Zugriff 25.09.2017].
+                  </bibl>
+                  <bibl>Görz, Günther: „WissKI: Semantische Annotation, Wissensverarbeitung und Wissenschaftskommunikation in einer virtuellen Forschungsumgebung” in: Kunstgeschichte, Open Peer Reviewed Journal, urn:nbn:de:bvb:355-kuge-167-7 [letzter Zugriff 10.01.2018].</bibl>
+                  <bibl>Hohmann, Georg (2011): „Die Anwendung von Ontologien zur Wissensrepräsentation und -kommunikation im Bereich des Kulturellen Erbes” in: Schomburg, Silke u.a. (eds.): Digitale Wissenschaft. Stand und Entwicklung digital vernetzter Forschung in Deutschland. Köln: Hochschulbibliothekszentrum NRW 33-39.</bibl>
+                  <bibl>Hohmann, Georg / Schiemann, Bernhard (2013): „An Ontology-Based Communication System for Cultural Heritage. Approach and Progress of the WissKI Project” in: Hans Bock u.a. (eds.): Scientific Computing and Cultural Heritage. Berlin: Springer 127-135.</bibl>
+                  <bibl>Hohmann, Georg/Fichtner, Mark. Chancen und Herausforderungen in der praktischen Anwendung von Ontologien für das Kulturerbe. In: Digitales Kulturerbe. Bewahrung und Zugänglichkeit in der wissenschaftlichen Praxis. Vol. Kulturelle Überlieferung – digital. Karlsruhe 2015. S. 115-128.</bibl>
+                  <bibl>Wissenschaftsrat (2011): 
+                      <hi rend="italic">Empfehlungen zu wissenschaftlichen Sammlungen als Forschungsinfrastrukturen</hi>. Berlin 
+                      <ptr target="https://www.wissenschaftsrat.de/download/archiv/10464-11.pdf"/>) [letzter Zugriff 25.09.2017].
+                  </bibl>
+              </listBibl>
+          </div>
       </back>
     </text>
 </TEI>

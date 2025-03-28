@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="263_final-SARIC_Sanja_Topic_Modeling_der_Hugo_Schuchardt_Korrespondenz" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="243_final-GUHR_Svenja_Doctoral_Consortium__Svenja_Guhr" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Topic Modeling der Hugo-Schuchardt-Korrespondenz – Möglichkeiten und Grenzen</title>
+<title type="full">
+<title type="main">Raise your voice!</title>
+<title type="sub">- Über den Zusammenhang zwischen Lautstärkemerkmalen in literarischen Prosatexten und der Emanzipation der Frau von 1848 bis 1920</title>
+</title>
 <author>
 <persName>
-<surname>Saric</surname>
-<forename>Sanja</forename>
+<surname>Guhr</surname>
+<forename>Svenja</forename>
 </persName>
-<affiliation>Universität Graz, Österreich</affiliation>
-<email>sanja.saric@uni-graz.at</email>
-</author>
-<author>
-<persName>
-<surname>Scholger</surname>
-<forename>Martina</forename>
-</persName>
-<affiliation>Universität Graz, Österreich</affiliation>
-<email>martina.scholger@uni-graz.at</email>
+<affiliation>TU Darmstadt, Deutschland</affiliation>
+<email>Guhr@linglit.tu-darmstadt.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2019-09-27T18:45:00Z</date>
+<date>2020-01-06T21:30:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -51,168 +46,167 @@
 <term>Paper</term>
 </keywords>
 <keywords n="subcategory" scheme="ConfTool">
-<term>Posterpräsentation</term>
+<term>Doctoral Consortium</term>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Topic Modeling</term>
-<term>Briefkorpus</term>
-<term>Hugo Schuchardt</term>
-<term>Lemmatisierung</term>
-<term>Evaluierung von Tools</term>
-</keywords>
-<keywords n="topics" scheme="ConfTool">
-<term>Inhaltsanalyse</term>
-<term>Modellierung</term>
-<term>Software</term>
-<term>Text</term>
+<term>(Audio-)Narratologie</term>
+<term>Deutsche Prosaliteratur</term>
+<term>Digitale Philologie</term>
+<term>Emanzipation der Frau</term>
+<term>Lautstärke</term>
+<term>Verba Dicendi</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<div rend="DH-Heading1" type="div1">
-<head>Einleitung</head>
-<p style="text-align:left; ">Digitale Analyseverfahren verändern immer intensiver die Forschungsweise der GeisteswissenschaftlerInnen und mit dem wachsenden Spielraum der Methoden wächst auch die Anzahl an Fragen, die sich vor allem an den Grad der Genauigkeit und wissenschaftliche Relevanz dieser Methoden richtet. Das Topic Modeling gewinnt als eine Methode für automatische Erkennung von versteckten thematischen Strukturen in großen Textmengen (Blei 2012: 8) immer mehr an Beliebtheit, erweckt aber auch Unsicherheiten. Daher beschäftigt sich diese Arbeit mit den Möglichkeiten und Problemen des Topic Modeling am Beispiel von Briefen und stellt unter anderem die Fragen, 1) wie Topic Modeling in der Analyse von Briefkorpora eingesetzt werden kann und 2) wie die Qualität der Ergebnisse dieses Prozesses beeinflusst werden kann. </p>
+<p>Mein im Rahmen des 
+                <hi rend="italic">Doctoral Consortiums</hi> vorzustellendes Dissertationsvorhaben befindet sich noch in seinen Anfängen. Verortet als interdisziplinäres Projekt berührt es die Forschungsbereiche der Digital Philology spezialisiert auf neuere deutsche Literaturwissenschaft, Bereiche der historischen Gender Studies mit Fokus auf weibliche Emanzipationsprozesse im 19. und beginnenden 20. Jahrhundert sowie Bereiche der deutschen Linguistik. Mein Projekt setzt sich mit der Analyse von Lautstärkemerkmalen in deutschsprachigen literarischen Prosatexten von 1848 bis 1920 im Kontext der Emanzipation der Frau auseinander. 
+</p>
+<div  rend="DH-Heading1" type="div1">
+  <head>Haupthypothese</head>
+<!-- <p>Haupthypothese</p> -->
+<p>Die Untersuchungen bauen auf der Hypothese auf, dass in der Mitte
+des 19. Jahrhunderts Frauenfiguren in literarischen Prosatexten
+prozentual weniger, kürzere und leisere Redebeiträge zugeschrieben
+werden als männlichen Figuren, was sich jedoch mit der ansteigenden
+Emanzipation der Frau verändert. Das Projekt zielt darauf
+herauszufinden, ob sich Frauen- und Männerfiguren im Verlauf der
+betrachteten Zeitperiode in ihrer Anzahl an Redebeiträgen und ihrer
+Lautstärke annähern. Die steigende Lautstärke zeichnet sich dabei
+durch eine „lautere“ Beschreibung von Redebeiträgen aus, die
+u.a. durch als „lauter“ wahrnehmbare redeeinleitende Verben
+gekennzeichnet sind.</p>
 </div>
-<div rend="DH-Heading1" type="div1">
-<head>Forschungsmaterial</head>
-<p style="text-align:left; ">Das Forschungsmaterial besteht aus Briefen des Grazer Sprachwissenschaftlers Hugo Schuchardt (1842-1927). Die umfangreiche und mehrsprachige Korrespondenz dieses schon seinerzeit sehr geschätzten Wissenschaftlers ist seit 2007 Teil des Digitalisierung-Projektes 
-                    <hi rend="italic">Hugo Schuchardt Archiv</hi> (Hurch 2019). Für die Topic-Modeling-Analyse werden 2261 Briefdateien im TEI-Format in Betracht gezogen, da die restlichen zurzeit noch in keinem entsprechenden Format vorhanden sind. Der Vorteil einer solchen Methode ist es aber, dass das gleiche Modell jederzeit auf eine erweiterte Menge an Daten anwendbar ist. Eine Besonderheit dieses Korpus ist, dass Schuchardt in mehreren Sprachen korrespondiert hat, von denen hier elf repräsentiert sind (Abbildung 1). Daher wird das Modell für einzelne Sprachen separat angewendet. Dies ist insofern eine Herausforderung, weil 1) Vorgänge den jeweiligen Sprachen angepasst werden müssen (wie etwa die Lemmatisierung), 2) der Textumfang bei vielen Sprachen nicht ausreichend ist und daher nicht auf alle Sprachen effektiv angewendet werden kann und 3) die verschiedenen Ergebnisse pro Sprache verglichen werden sollten. Ein weiteres Problem für das Topic Modeling ist die große Diskrepanz in den Textlängen der einzelnen Dateien (Abbildung 2), da die Korrespondenz auch kürzere Formen wie Postkarten und Telegramme beinhaltet. So enthalten etwa die kürzesten deutschsprachigen Dateien etwa drei Tokens, die längste jedoch 3947. Dies ist aber ein Zustand, den viele Briefkorpora in der Realität begegnen, da wir als ForscherInnen selten einem ‚idealen‘ Korpus gegenüberstehen. Die Auseinandersetzung mit solchen Problemen ist ein fester Bestandteil unserer Arbeit.
-                </p>
-<figure>
-<graphic height="12.78cm" n="1001" rend="inline"
-	 url="263_final-13fa207503e71d51aa935b9bc677cf68.png"
-	 width="15.98cm"/>
-<head> Abbildung 1: Anteil der einzelnen Sprachen im Briefkorpus</head>
-</figure>
-<!-- <p style="text-align:left; ">Abbildung 1: Anteil der einzelnen Sprachen im Briefkorpus</p> -->
-<figure>
-<graphic height="9.973027777777778cm" n="1002" rend="inline" url="263_final-3024284be1d4fcac5dcf964a67a0b22c.png" width="10.451041666666667cm"/>
-<head> Abbildung 2: Menge der deutschsprachigen Briefdateien nach ihrer Anzahl der Tokens</head>
-</figure>
-<!-- <p style="text-align:left; ">Abbildung 2: Menge der deutschsprachigen Briefdateien nach ihrer Anzahl der Tokens</p> -->
+<div  rend="DH-Heading1" type="div1">
+  <head>Lautstärke als (audio-)narratologisches Element</head>
+<!-- <p> -->
+<!-- <hi rend="bold" xml:space="preserve">Lautstärke als (audio-)narratologisches Element </hi> -->
+<!-- </p> -->
+<p>Lautstärke wird dabei als ein narratologisches Element betrachtet, das in der Literaturwissenschaft bisher nur wenig Aufmerksamkeit erhalten hat. Der Umgang mit Erzählformen und Diskursen als ein wichtiges Kriterium der Narratologie fand seine Erweiterung durch das neue Forschungsfeld der Audionarratologie. Diese widmet sich u.a. der Relation zwischen Narrativen und den in der Lesevorstellung bei der stillen Lektüre erlebten Geräuschen, Tönen und Dynamik (Mildorf / Kinzel 2016; Kuzmičová 2013). Literarische Texte beinhalten neben Beschreibungen von natürlichen und industriellen Geräuschen (z.B. Natur- und Maschinengeräusche) auch Wiedergaben von Figurenrede. Insbesondere in Prosa ordnen Autoren und Autorinnen (i. F. generisches Femininum) ihren Figuren durch beschreibende Einleitungen von Redebeiträgen Stimmen zu, die in den Gedanken von Rezipientinnen wahrzunehmen sind. Ein neuer Ansatz der Figurenanalyse findet in der Betrachtung von Tönen, Lautstärke und Stimmvolumen in literarischen Prosatexten Anwendung. Vor allem die redeeinleitenden Verben, die direkte wie indirekte Redebeiträge einleiten und somit die Art und Weise der Figurenrede beschreiben, ermöglichen den Rezipientinnen die Wahrnehmung von Figurenstimmen und -lautstärke, z.B. ob eine Figur schreit oder flüstert. In Anlehnung an Hunt (2017), die in ihrer Studie ein Korpus aus anglophoner Kinder- und Jungendliteratur auf stereotypische Rollendarstellungen untersuchte, die sie anhand der „gendered nature“ von redeeinleitenden Verben herausstellte, wird auch in meinem Forschungsprojekt eine genderdifferenzierte Betrachtung dieser Verbgruppe vorgenommen. In Hunts Ausführungen stützt sie sich auf Caldas-Coulthards (1992) Unterscheidung von redeeinleitenden Verben in neutrale (z.B. 
+<hi rend="italic">sagen</hi>) und illokutive (z.B. 
+<hi rend="italic">befehlen</hi>) Verben, wobei Hunt herausfand, dass in ihrem Untersuchungskorpus männlichen Figuren durchschnittlich eher redeeinleitende Verben zugeordnet wurden, die höhere Lautstärke und Macht (z.B. 
+<hi rend="italic">brülllen</hi>) widerspiegeln, während Frauenfiguren „triviale Emotionsäußerungen, Schwäche und hohe Tonlagen“ (Hunt 2017: 2; Übersetzung modifiziert) (z.B. 
+<hi rend="italic">jammern</hi>, 
+<hi rend="italic">kreischen</hi>) zugeschrieben würden (Hunt 2017).
+</p>
 </div>
-<div rend="DH-Heading1" type="div1">
-<head>Methode</head>
-<p style="text-align:left; ">Für die Beantwortung der Forschungsfragen war zuerst die Literaturrecherche nötig, und zwar erstens zum Topic Modeling, zweitens zur Textsorte Brief und drittens zu dieser Korrespondenz. Um eine genauere Vorstellung zum Forschungsstand des Topic Modeling zu bekommen, wurden wissenschaftliche Aufsätze und Anwendungsbeispiele in Betracht gezogen, wie etwa Blei 2010, Jagarlamudi/Daumé 2010, Boyd-Graber/Blei 2012, Riddell 2015, Vulić et al. 2015, Bock et al. 2016, Andorfer 2017, Fechner/Weiß 2017, Schöch 2017, Murakami et al. 2017 und Arora et al. 2018. Zudem wird am genannten Korpus Topic Modeling mit Hilfe der Programmiersprache 
-                    <hi rend="italic">Python</hi> (Python Software Foundation 2001-2019), der Software MALLET (McCallum 2002-2019) und der Anweisungen der Jupyter-Notebooks von DARIAH-DE (DARIAH-DE 2019) vollzogen. Darüber hinaus werden verschiedene Tools zur Vorverarbeitung evaluiert – z. B. 
-                    <hi rend="italic">spaCy</hi> (Explosion AI 2019) und DTA::CAB (Berlin-Brandenburgische Akademie der Wissenschaften 2011-2018) für die Lemmatisierung – sowie verschiedene Tools und Parameter für die Topic-Modellierung – z. B. 
-                    <hi rend="italic">Topics Explorer</hi> (DARIAH-DE 2018) – und die daraus resultierenden Ergebnisse und Erfahrungen verglichen. 
-                </p>
+<div  rend="DH-Heading1" type="div1">
+  <head>Ziel der Untersuchung und Sub- hypothesen</head>
+<!-- <p>Ziel der Untersuchung und Subhypothesen</p> -->
+<p>Ziel der Lautstärkeuntersuchung ist es herauszufinden, ob es einen Zusammenhang zwischen der beschriebenen Sprechweise weiblicher Prosafiguren und der ansteigenden Emanzipation der Frau in der deutschsprachigen Gesellschaft ab der zweiten Hälfte des 19. Jahrhunderts bis zum Erhalt des deutschen Frauenwahlrechts 1919 gibt (erweitert um das Jahr 1920, damit die Auswirkungen der Einführung des Frauenwahlrechtes mit aufgenommen werden). </p>
+<p>Weitere Unterhypothesen beschäftigen sich mit dem Zusammenhang zwischen der beschriebenen Lautstärke einer Frauenfigur mit ihrem Bildungsstand sowie ihrer gesellschaftlichen Stellung. Weiterhin wird untersucht, ob Frauenfiguren in der Öffentlichkeit leiser beschrieben werden als im privaten Raum (vgl. Howe 2000). Darüber hinaus soll herausgestellt werden, ob Frauenfiguren in Anwesenheit von Männerfiguren leiser dargestellt werden als in der alleinigen Gesellschaft von Frauenfiguren, wobei untersucht wird, ob die plötzliche Anwesenheit auch nur einer Männerfigur in einem weiblichen Beisammensein die Art und Weise, in der Frauenfiguren miteinander sprechen, beeinflusst und ob diese Verhaltensänderung von der Beziehung der anwesenden männlichen Figur zu den Frauenfiguren (z.B. Vater, Bruder, Cousin, Fremder, Arbeitgeber, etc.) abhängt. </p>
 </div>
-<div rend="DH-Heading1" type="div1">
-<head>Ergebnisse</head>
-<p style="text-align:left; ">Obwohl es sich um ein laufendes Projekt handelt, gibt es bereits einige relevante Ergebnisse und Schlussfolgerungen. </p>
-<p style="text-align:left; ">1) Die Vorverarbeitung stellt einen wichtigen Schritt in der Topic-Modellierung dar und beeinflusst die Ergebnisse. Dabei spielen nicht nur die eingesetzten Tools eine Rolle, sondern auch die gewählte Vorgehensweise.</p>
-<p style="text-align:left; ">2) Die Lemmatisierung, auf die beim Topic Modeling oft verzichtet wird, ermöglicht mehr semantische Differenz in den Topics. </p>
-<p style="text-align:left; ">3) Der unterschiedliche Textumfang von einzelnen VerfasserInnen kann zu falschen Ergebnissen führen, wenn die Topics pro VerfasserIn analysiert werden.</p>
-<p style="text-align:left; ">4) Entscheidungen über Parameter wie Optimierungsintervall, Topic- und Iterations-Anzahl können die Ergebnisse beeinträchtigen und müssen immer projektspezifisch getestet werden, bis ein sinnvolles Resultat vorliegt. Das ‚Sinnvolle‘ zu erkennen ist eine Herausforderung, die fachwissenschaftliches Verständnis verlangt. </p>
-<p style="text-align:left; ">Die Inkonsistenz der Topics und manchmal verwirrende Ergebnisse zeigen, dass die naive Anwendung eines Topic-Modeling-Tools nicht immer befriedigend sein kann. Intensivere Beschäftigung mit den einzelnen Schritten und Ergebnissen kann sich jedoch positiv auf den Erfolg der Analyse auswirken. Die weitere Arbeit wird zeigen, ob und welchen Mehrwert Topic Modeling bei der Analyse der Schuchardt-Korrespondenz leisten kann, die durch 
-                    <hi rend="italic">close reading</hi> nicht erreicht werden können. 
-                </p>
+<div  rend="DH-Heading1" type="div1">
+  <head>Korpusaufbau</head>
+<!-- <p>Korpusaufbau</p> -->
+<p>Die Studie basiert auf der Analyse eines deutschsprachigen Korpus bestehend aus literarischen Prosatexten (Ziel: ca. 500). Das betrachtete thematische Korpus (vgl. Baker 2007: 26, Gür-Şeker 2014: 585) befindet sich aktuell (Stand: Januar 2020) noch in der Erstellungsphase, wobei auch auf existierende und teilweise bereits annotierte Korpora wie z.B. auf das Redewiedergabekorpus der Kooperation zwischen dem Leibniz-Institut für Deutsche Sprache, Mannheim und der Universität Würzburg (Brunner et al.) zurückgegriffen werden wird. Die strömungsübergreifend deutschsprachigen Prosatexte werden nach den folgenden Kriterien ausgewählt: deutschsprachig, Zeit der Publikation zwischen 1848 und 1920, 
+<hi rend="italic">histoire</hi> (vgl. Genette 1972) spielt im zentraleuropäisch-deutschsprachigen Raum nach 1848, min. 20% der ausgewählten Texte von Autorinnen (Ziel), Vorkommen von Hoch- und Trivialliteratur.
+</p>
+</div>
+<div  rend="DH-Heading1" type="div1">
+  <head>Erste Probeanalysen und Online- umfrage</head>
+<!-- <p>Erste Probeanalysen und Onlineumfrage</p> -->
+<p>Für einen ersten Analyseansatz wurde ein Probekorpus erstellt, das 80 deutschsprachige Prosatexte umfasst und in zwei vergleichbare Subkorpora unterteilt wurde (2x 40 Prosatexte). Bei der Erstellung wurden die Texte nach den zuvor genannten Kriterien ausgewählt, wobei der Fokus auf die zwei Zeiträume 1865-75 und 1885-95 gelegt wurde, in denen jeweils eine überregional bedeutende Frauenrechtsaktion stattfand (Richards 2004). </p>
+<p>Das Probekorpus diente als Grundlage zur Entwicklung einer regelbasierten Methode, mit deren Hilfe redeeinleitende Verben sowie die sie umgebenden Adjektive, Adverbien (z.B. 
+<hi rend="italic">sagte mit lauter Stimme, sagte leise</hi>) und Namen der sprechenden Figuren extrahiert werden. Der angewandte Algorithmus gründet sich auf den sprachspezifisch morphologischen und syntaktischen Eigenschaften der deutschen redeeinleitenden Verben hinsichtlich ihrer Konstruktion und bevorzugten Anwendung in Vergangenheits- und Gegenwartsform sowie ihrer zum Teil durch Interpunktion (z.B. Anführungszeichen) aufgezeigten Nähe zur in-/direkten Rede. Darauf aufbauend wurden Lautstärkeprofile der sprechenden Figuren erstellt, die anschließend als Grundlage für einen genderorientierten Vergleich von männlichen und weiblichen Figurenbeiträgen und Sprechweisen in literarischen Prosatexten dienen. Die Lautstärkewerte zur Erstellung der Lautstärkefigurenprofile wurden den Ergebnissen einer zuvor durchgeführten Onlineumfrage (im Sommer 2018) zu 20 redeeinleitenden Verben entnommen. In der Umfrage wurden 45 deutsche Muttersprachlerinnen gebeten, in einem Vergleich desselben Satzes, der von zwei verschiedenen redeeinleitenden Verben eingeführt wurde, das jeweils lautere redeeinleitende Verb auszuwählen (Umfragebeispiel: 
+<hi rend="italic" xml:space="preserve">Marie schreit: Die Sonne scheint. </hi>vs.
+<hi rend="italic" xml:space="preserve"> Marie flüstert: Die Sonne scheint</hi>.). Durch die Umfrage ergaben sich Informationen zur Unterschiedlichkeit der durch redeeinleitende Verben erzeugten dynamischen Lesewahrnehmung von Redebeiträgen durch die Rezipientinnen. In Abgleich der untersuchten Verbauswahl konnte ein erstes Lautstärkediagramm mit Werten erstellt werden, die sich aus den erhaltenen Dynamikabstufungen der Surveyergebnisse ergaben und schließlich zur Erstellung erster Lautstärkefigurenprofile verwendet wurden.
+</p>
+</div>
+<div  rend="DH-Heading1" type="div1">
+  <head>Ausblick</head>
+<!-- <p>Ausblick</p> -->
+<p>Im Laufe des Dissertationsvorhabens sollen die Untersuchungen zur
+Lautstärkewertzuweisung zu redeeinleitenden Verben in einem
+umfangreicheren und wissenschaftlich fundierten Verfahren wiederholt
+werden. Zudem werden methodische Herausforderungen wie die Auflösung
+von Koreferenzen und Anaphern sowie die Erkennung von (unregelmäßigen)
+Redebeiträgen, Szenengrenzen und Figurenkonstellationen einen großen
+Bestandteil meiner Forschung einnehmen. </p>
 </div>
 </body>
 <back>
-<div type="bibliogr">
-<listBibl>
-<head>Bibliographie</head>
-<bibl style="text-align:left; ">
-<hi rend="bold">Andorfer, Peter</hi> (2017): 
-"Turing Test für das Topic Modeling. Von Menschen und Maschinen
-erstellte inhaltliche Analysen der Korrespondenz von Leo von
-Thun-Hohenstein im Vergleich", in: 
-<hi rend="italic">Zeitschrift für digitale Geisteswissenschaften</hi> 2. http://zfdg.de/2017_002 [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold" xml:space="preserve">Arora, Sanjeev / Ge, Rong; Halpern, Yoni / Mimno, David / Moitra, Ankur / Sontag, David / Wu, Yichen / Zhu, Michael </hi>(2018): 
-  "Learning topic models - provably and efficiently",  in: 
-  <hi rend="italic">Communications of the ACM</hi> 61 / 4: 85–93. 10.1145/3186262.
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">Berlin-Brandenburgische Akademie der Wissenschaften</hi> (ed.) (2011-2018): 
-  <hi rend="italic">Das DTA-Basisformat</hi>. http://www.deutschestextarchiv.de/doku/basisformat/ [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">Blei, David M.</hi> (2010): 
- "Introduction to Probabilistic Topic Models", in: 
- <hi rend="italic">Semantic Scholar</hi>.
- <ref target="https://pdfs.semanticscholar.org/5f10/38ad42ed8a4428e395c96d57f83d201ef3b3.pdf">https://pdfs.semanticscholar.org/5f10/38ad42ed8a4428e395c96d57f83d201ef3b3.pdf</ref>
- [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">Blei, David M.</hi> (2012): 
-  "Topic Modeling and Digital Humanities", in: 
-  <hi rend="italic">Journal of Digital Humanities</hi> 2 / 1: 8–11.
-  <ref target="http://journalofdigitalhumanities.org/2-1/topic-modeling-and-digital-humanities-by-david-m-blei/">http://journalofdigitalhumanities.org/2-1/topic-modeling-and-digital-humanities-by-david-m-blei/</ref> [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold" xml:space="preserve">Bock, Sina / Du, Keli / Huber, Michael / Pernes, Stefan / Pielström, Steffen </hi>(2016): 
-  <hi rend="italic">Der Einsatz quantitativer Textanalyse in den Geisteswissenschaften. Bericht über den Stand der Forschung.</hi> (= DARIAH-DE working papers 18). Göttingen: GOEDOC – Dokumenten- und Publikationsserver der Georg-August-Universität Göttingen. http://webdoc.sub.gwdg.de/pub/mon/dariah-de/dwp-2016-18.pdf [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">Boyd-Graber, Jordan / Blei, David</hi> (2012): 
-  <hi rend="italic">Multilingual Topic Models for Unaligned Text</hi>. http://arxiv.org/pdf/1205.2657v1 [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">DARIAH-DE</hi> (2018): 
-  <hi rend="italic">Topics Explorer</hi>. V. 2.0.1. https://github.com/DARIAH-DE/TopicsExplorer [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">DARIAH-DE</hi> (2019): 
-  <hi rend="italic">DARIAH Topics. Easy Topic Modeling in Python</hi>. V. 2.0.1. https://github.com/DARIAH-DE/Topics [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">Explosion AI</hi> (2019): 
-  <hi rend="italic">spaCy</hi>. V. 2.1.6. https://github.com/explosion/spaCy [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">Fechner, Martin / Weiß, Andreas</hi> (2017): 
-  "Einsatz von Topic Modeling in den Geschichtswissenschaften: Wissensbestände des 19. Jahrhunderts", in: 
-  <hi rend="italic">Zeitschrift für digitale Geisteswissenschaften</hi> 2. http://zfdg.de/2017_005 [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">Hurch, Bernhard</hi> (2019): 
-  "Hugo Schuchardt Archiv". Institut für Romanistik, Karl-Franzens-Universität Graz (ed.). https://schuchardt.uni-graz.at [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">Jagarlamudi, Jagadeesh / Daumé, Hal</hi> (2010): 
-  "Extracting Multilingual Topics from Unaligned Comparable Corpora",  in: Gurrin, Cathal (ed.): 
-  <hi rend="italic">Advances in information
-  retrieval. Proceedings</hi> 444–456. (= Lecture notes in computer science 5993). Berlin / Heidelberg / New York: Springer.
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">McCallum, Andrew Kachites</hi> (2002-2019): 
-  <hi rend="italic">MALLET. A Machine Learning for Language Toolkit</hi>. V. 2.0.8. http://mallet.cs.umass.edu [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold" xml:space="preserve">Murakami, Akira / Thompson, Paul / Hunston, Susan / Vajn, Dominik </hi>(2017): 
-  "‘What is this corpus about?’: using topic modelling to explore a
-  specialised corpus", in: 
-  <hi rend="italic">Corpora</hi> 12 / 2: 243–277. https://www.euppublishing.com/doi/10.3366/cor.2017.0118 [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">Python Software Foundation</hi> (2001-2019): 
-  <hi rend="italic">Python</hi>. V. 3.7.4. https://github.com/python [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">Riddell, Allen</hi> (2015): 
-  <hi rend="italic">Text Analysis with Topic Models for the Humanities and Social Sciences — Text Analysis with Topic Models for the Humanities and Social Sciences</hi>. DARIAH-DE Initiative (ed.). https://liferay.de.dariah.eu/tatom/ [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold">Schöch, Christof</hi> (2017): 
-  "Topic Modeling Genre. An Exploration of French Classical and
-  Enlightenment Drama",
-  in:  <hi rend="italic">Digital Humanities Quarterly</hi> 11 / 2. http://www.digitalhumanities.org/dhq/vol/11/2/000291/000291.html [letzter Zugriff 27. September 2019].
-</bibl>
-<bibl style="text-align:left; ">
-  <hi rend="bold" xml:space="preserve">Vulić, Ivan / Smet, Wim de / Tang, Jie / Moens, Marie-Francine </hi>(2015): 
-  "Probabilistic topic modeling in multilingual settings. An overview
-  of its methodology and applications",  in: 
-  <hi rend="italic">Information Processing &amp; Management</hi> 51 / 1: 111–147. https://www.sciencedirect.com/science/article/pii/S0306457314000739 [letzter Zugriff 27. September 2019].
-</bibl>
-</listBibl>
-</div>
+  <div type="bibliogr">
+    <listBibl>
+      <head>Bibliographie</head>
+      <bibl style="text-align:left;">
+	<hi rend="bold">Baker, Paul</hi>
+	(2010): 
+	<hi rend="italic">Sociolinguistics and corpus linguistics</hi>
+	<hi rend="color(222222)">. Edinburgh: Edinburgh University Press.</hi>
+      </bibl>
+      <bibl style="text-align:left;">
+	<hi rend="bold">Brunner, Annelen / Engelberg, Stefan / Tu, Ngoc Duyen Tanja / Jannidis, Fotis / Weimer, Lukas</hi>
+	(2019): Redewiedergabe-Projekt. Mannheim / Würzburg: Leibniz-Institut für Deutsche Sprache, Universität Würzburg https://github.com/redewiedergabe/corpus
+	<hi style="font-size:10pt">[letzter Zugriff 05. Januar 2020].</hi>
+      </bibl>
+      <bibl style="text-align:left;">
+	<hi rend="bold">Caldas-Coulthard, Carmen Rosa</hi>
+	(1992): „Reporting Speech in Narrative Discourse: Stylistic and ideological implications“, in: 
+	<hi rend="italic">Revista Ilha do Desterro</hi>
+	<hi rend="color(222222)">27: 67–82 https://doaj.org/article/346291b81422492392f7c48c0635f7a2</hi>
+	<hi style="font-size:10pt">[letzter Zugriff 05. Januar 2020].</hi>
+      </bibl>
+      <bibl style="text-align:left;">
+	<hi rend="bold">Catling, Jo</hi>
+	(ed.) (2000): 
+	<hi rend="italic">A History of Women’s Writing in Germany, Austria and Switzerland.</hi> Cambridge: Cambridge University Press.
+      </bibl>
+      <bibl style="text-align:left;">
+	<hi rend="bold">Genette, Gérard</hi>
+	(1969): 
+	<hi rend="italic">Figures. Essais.</hi>
+	Paris: Editions du Seuil.
+      </bibl>
+      <bibl style="text-align:left;">
+	<hi rend="bold">Gür-Şeker, Derya</hi>
+	(2014): „Zur Verwendung von Korpora in der Diskurslinguistik“, in: 
+	<hi rend="italic">Diskursforschung. Ein interdisziplinäres Handbuch.</hi>
+	<hi rend="italic">DiskursNetz</hi>
+	<hi rend="color(222222)">1: 583–603. Bielefeld: Transcript Verlag.</hi>
+      </bibl>
+      <bibl style="text-align:left;">
+	<hi rend="bold">Howe, Patricia</hi>
+	(2000): „Women’s writing 1830-1890“, in: Catling, Jo (ed.): 
+	<hi rend="italic">A History of Women’s Writing in Germany, Austria and Switzerland.</hi>
+	Cambridge: Cambridge University Press, 87–103. 
+      </bibl>
+      <bibl style="text-align:left;">
+	<hi rend="bold">Hunt, Sally</hi>
+	(2017): „Boast and bellow, giggle or chatter: gender and verbs of speech in children’s fiction“, in: 
+	<hi rend="italic">9th International Corpus Linguistics Conference,</hi>
+	<hi rend="color(222222)"> Birmingham: University of Birmingham https://www.birmingham.ac.uk/Documents/college-artslaw/corpus/conference-archives/2017/general/paper306.pdf</hi>
+	<hi style="font-size:10pt">[letzter Zugriff 05. Januar 2020].</hi>
+      </bibl>
+      <bibl style="text-align:left;">
+	<hi rend="bold" xml:space="preserve">Kuzmičová, Anežka</hi>
+	(2013): „Outer vs. Inner Reverberations: Verbal Auditory
+	Imagery and Meaning-Making in Literary Narrative“, 
+	<hi rend="italic">Journal of Literary Theory</hi>
+	<hi rend="color(222222)">7: 111–134 https://philpapers.org/archive/KUZOVI.pdf</hi>
+	<hi style="font-size:10pt">[letzter Zugriff 05. Januar 2020].</hi>
+      </bibl>
+      <bibl style="text-align:left;">
+	<hi rend="bold" xml:space="preserve">Mildorf, Jarmila  / Kinzel, Till</hi>
+	(2016): „Audionarratology: Prolegomena to a Research Paradigm Exploring Sound and Narrative“, in: 
+	<hi rend="italic">Audionarratology. Interfaces of Sound and Narrative.</hi>
+	Berlin / Boston: De Gruyter.
+      </bibl>
+      <bibl style="text-align:left;">
+	<hi rend="bold">Richards, Anna</hi>
+	(2004): 
+	<hi rend="italic">The Wasting Heroine in German Fiction by Women 1770-1914,</hi>
+	Oxford: Oxford University Press. 
+      </bibl>
+      <bibl style="text-align:left;">
+	<hi rend="bold">Schmid, Wolf</hi> (2014): 
+	<hi rend="italic">Elemente der Narratologie.</hi>
+	Berlin: De Gruyter.
+      </bibl>
+    </listBibl>
+  </div>
 </back>
 </text>
 </TEI>

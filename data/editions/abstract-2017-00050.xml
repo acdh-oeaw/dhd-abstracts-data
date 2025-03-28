@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="vortrag-CZMIE" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="vortrag-MATSC" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Dokumentation, Werkzeugkasten, Pakete - Nachhaltigkeit von Daten und Funktionalität Digitaler Editionen</title>
+<title>Datenmodellierung und -visualisierung mit Graphdatenbanken. Konzepte und Erfahrungen anlässlich des Relaunches der Bilddatenbank REALonline</title>
 <author>
 <persName>
-<surname>Czmiel</surname>
-<forename>Alexander</forename>
+<surname>Matschinegg</surname>
+<forename>Ingrid</forename>
 </persName>
-<affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland</affiliation>
-<email>czmiel@bbaw.de</email>
+<affiliation>Universität Salzburg, Österreich</affiliation>
+<email>ingrid.matschinegg@sbg.ac.at</email>
+</author>
+<author>
+<persName>
+<surname>Nicka</surname>
+<forename>Isabella</forename>
+</persName>
+<affiliation>Universität Salzburg, Österreich</affiliation>
+<email>isabella.nicka@sbg.ac.at</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2016-08-26T20:21:00Z</date>
+<date>2016-11-30T17:23:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -47,115 +55,65 @@
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Dokumentation</term>
-<term>Digitale Edition</term>
-<term>Standardisierung</term>
-<term>DH-Entwickler</term>
-<term>Forschungs-Software-Nachhaltigkeit</term>
+<term>Bilddatenbank</term>
+<term>Graphdatenbank</term>
+<term>Visualisierung</term>
+<term>Datenmodellierung</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Gestaltung</term>
-<term>Programmierung</term>
-<term>Veröffentlichung</term>
-<term>Kollaboration</term>
-<term>Projektmanagement</term>
-<term>Webentwicklung</term>
-<term>Daten</term>
-<term>Infrastruktur</term>
-<term>Interaktion</term>
-<term>Metadaten</term>
-<term>Methoden</term>
-<term>Projekte</term>
-<term>Forschung</term>
-<term>Forschungsprozess</term>
-<term>Forschungsergebnis</term>
-<term>Software</term>
-<term>Standards</term>
-<term>Text</term>
+<term>Visualisierung</term>
+<term>Artefakte</term>
+<term>Bilder</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<p>Die Rolle digitaler Ressourcen in den Geisteswissenschaften und die zunehmende Bedeutung von Algorithmen werden noch immer unterschätzt. In den letzten Jahren bzw. Jahrzenten wurden zahlreiche Software-Werkzeuge, virtuelle Forschungsumgebungen und interaktive Publikationen, wie Datenbanken oder Digitale Editionen, für die geisteswissenschaftliche Forschung entwickelt. Diese werden innerhalb der Forschungscommunity mit zunehmender Tendenz akzeptiert und inzwischen breit eingesetzt. Jedoch stehen wir heute vor der Herausforderung diese verschiedenen Ressourcen, die zu einem großen Teil auf unterschiedlichen technischen Grundlagen basieren, weiter zu pflegen und verfügbar zu halten. Transparenz und Reproduzierbarkeit von Forschungsergebnissen, die mit einer digitalen Ressource oder Software erstellt wurden leiden darunter, dass diese Software oft nach wenigen Jahren nicht mehr gepflegt wird und damit nicht mehr lauffähig ist. </p>
-<p>Der Vortrag beleuchtet die hier skizzierte Problematik am Beispiel Digitaler Editionen. Es werden drei Punkte vorgeschlagen, wie durch einen Bottom-Up-Ansatz die Nachhaltigkeit digitaler Ressourcen gefördert werden kann. Der Fokus liegt dabei auf den Erfahrungen, die im Laufe der letzten 10 Jahre mit der Entwicklung von XML-basierten Digitalen Editionen und dem Einsatz ausgewählter Software-Werkzeuge, wie der nativen XML-Datenbank eXistdb (
-                <ref target="http://exist-db.org">http://exist-db.org</ref>), gewonnen wurden. 
+<p>Mit der Thematik der digitalen Nachhaltigkeit sind Gedächtnisinstitutionen, die sich die umfassende digitale Sicherung und Erschließung des Kulturerbes zum Ziel setzen, gleichermaßen konfrontiert wie Forschungsprojekte, bei denen digitale Daten generiert, computergestützt ausgewertet und in Forschungsdatenbanken zugänglich gemacht werden. Dabei liegt das Hauptaugenmerk nicht nur auf der Langzeitsicherung und Archivierung; die größeren Herausforderungen stellen sich vor allem bei den Aktualisierungen der Datenmodelle, Analysemethoden und Präsentationsformen, um die neuen Werkzeuge der Digital Humanities bestmöglich einsetzen zu können. Die Überlegungen im Vorfeld derartiger Relauncharbeiten bewegen sich erfahrungsgemäß zwischen vorsichtiger Adaptierung und radikalem Umbau der vorliegenden Datenarchitektur. Dass dabei alle vorhandenen Informationen verlustfrei übertragen werden sollen, versteht sich von selbst. Der folgende Beitrag möchte die Transformation von Daten eines Langzeitprojekts in eine neue Datenarchitektur für eine Bilddatenbank vorstellen, bei der eine Graphdatenbank zum Einsatz kommt:</p>
+<p>Am Institut für Realienkunde des Mittelalters und der frühen Neuzeit (IMAREAL), einem interdisziplinär ausgerichteten Forschungsinstitut, das Teil der Universität Salzburg ist, wird die materielle Kultur des Mittelalters und der frühen Neuzeit untersucht. Bildquellen bilden dabei neben Schriftquellen und überlieferten Objekten die Grundlagen der Analysen. Mit dem Aufbau der Bilddatenbank REALonline wurde am IMAREAL in den 1970ern auf der Grundlage der von Manfred Thaller speziell für die Anforderungen der historischen Grundwissenschaften entwickelten Datenbanksysteme begonnen – zunächst 
+                <hi rend="italic">Descriptor</hi> und in weiterer Folge 
+                <hi rend="st">
+<hi rend="italic">Κλειώ</hi>
+</hi> (Thaller 1980 u. 1989). Der Datenbestand von REALonline wurde seither und wird weiterhin kontinuierlich erweitert, damit dargestellte Dinge und ihre Kontexte erforscht werden können. Die Datenbank ist seit 2002 unter 
+                <ref target="http://tethys.imareal.sbg.ac.at/realonline">http://tethys.imareal.sbg.ac.at/realonline</ref> online verfügbar (Matschinegg 2004). Anhand der Datenbank ist es möglich, die Bedeutung und Funktion der materiellen Kultur im Bilddiskurs zu untersuchen: Welche Objekte waren zu welchen Zeiten in welchen Gesellschaften und Kontexten als visuelle „Requisiten“ gegenwärtig oder vor- und damit auch darstellbar? Wie wurden Dinge im Bild verhandelt und welche Rolle nehmen sie innerhalb von ins Bild überführten Narrativen ein? 
             </p>
-<p>Bei digitalen Ressourcen handelt es sich um dynamische Objekte. Das bedeutet einerseits, dass die Inhalte jederzeit korrigiert, erweitert oder verändert werden können. Andererseits muss die technologische Basis fortlaufend aktuell, sicher und verfügbar gehalten werden. Diese beiden Prozesse sind Teilaufgaben eines größeren Aufgabenbereichs, der unter dem Begriff „
-                <hi rend="italic">data curation</hi>“ zusammengefasst werden kann.
-            </p>
-<p>Eine Digitale Edition ist mehr als nur ihre Forschungsdaten. Letztere, in vielen Fällen XML-Dokumente, werden oft erst durch eine adäquate Darstellung, durch Visualisierungen, wie Text-Bild-Verlinkungen, verschiedene Ansichten auf den Text, Netzwerke oder Timelines oder auch Verknüpfungen mit anderen externen Ressourcen „zum Leben erweckt“. Dieses Leben in Form programmierter Funktionalität ist ein genuiner Forschungsbereich der Digital Humanities. Allerdings führt die Funktionalitätsschicht (siehe Abbildung 1) einer Digitalen Edition auch dazu, dass 
-                <hi rend="italic">data curation</hi> eine sehr komplexe Aufgabe werden kann, da hier die Flexibilität der Implementierung erheblich höher ist als auf der Ebene der Datenschicht. 
+<p>Um diese Fragen beantworten zu können, wurde am IMAREAL entschieden, neben den Metadaten zum Werk bzw. Bildträger systematisch 
+                <hi rend="italic">alle</hi> im Bild dargestellten Elemente auszuzeichnen (Abb. 1). Im Gegensatz zu anderen Bilddatenbanken wird das Dargestellte nicht nur mit einigen wenigen Schlagwörtern erfasst. Diesem Umstand ist es zu verdanken, dass die in REALonline erhobenen Daten sowohl im Rahmen von interdisziplinären Forschungen zur materiellen Kultur ausgewertet werden können, als auch in unterschiedlichen geisteswissenschaftlichen Untersuchungskontexten und für Kulturerbedokumentationen eine wertvolle Ressource darstellen.
             </p>
 <figure>
-<graphic height="9.535583333333333cm" n="1001" rend="inline" url="vortrag-CZMIE-image1.png" width="16.002cm"/>
-<head>Abbildung 1: Schichtenmodell Digitale Edition</head>
+<graphic height="6.4856cm" n="1001" rend="inline" url="vortrag-MATSC-image1.png" width="12.573025cm"/>
 </figure>
-<p>Digitale Editionen sind Software-Werkzeuge für die Analyse von Forschungsdaten. Damit sind sie ein Teil des Forschungsprozesses, der erhalten werden muss, um die Reproduzierbarkeit der Forschungsergebnisse zu gewährleisten.</p>
-<p>Eine digitale geisteswissenschaftliche Ressource durchläuft üblicher Weise einen typischen Lebenszyklus. Dieser beginnt mit der Analyse der analogen Quellen, geht über die Datenmodellierung, die Auswahl bzw. Anpassung oder Neuentwicklung von Bearbeitungswerkzeugen sowie der digitalen Publikation der Forschungsergebnisse bis hin zu Fragen der Langzeitverfügbarkeit und Langzeitarchivierung. Bei jedem dieser Schritte sind verschiedenen Kompetenzen involviert. Das bedeutet, der Aufbau einer Digitalen Edition ist immer Teamwork. Dieses Team setzt sich in den meisten Fällen aus Personen zusammen, die einerseits das inhaltliche Fachwissen mitbringen und andererseits aus Personen mit einer Vielzahl unterschiedlicher technischer Kompetenzen:</p>
-<list type="ordered">
-<item>Analyse der Quellen (Geisteswissenschaftler)</item>
-<item>Anforderungsanalyse der digitalen Ressource, 
-                    <hi rend="italic">Requirement Engineering</hi> (alle Projekbeteiligten)
-                </item>
-<item>Entwurf des Daten- / Dokumentenmodells, Auswahl von Standards (Geisteswissenschaftler, Datenbankspezialisten, Markupspezialisten, Metadatenspezialisten)</item>
-<item>Auswahl, Anpassung bzw. Entwicklung von Tools (Programmierer, Geisteswissenschaftler)</item>
-<item>Aufsetzen und Betreuen der Server (Systemadministratoren)</item>
-<item>Konzept, Design und Umsetzung der Web-Publikation (Webdesigner, Webentwickler, Geisteswissenschaftler)</item>
-<item>Vorbereitung für Langzeitverfügbarkeit / -archivierung (Metadatenspezialisten, Dokumentationsspezialisten)</item>
-<item>Betreuung und Wartung nach Projektende („
-                    <hi rend="italic">data curators</hi>“)
-                </item>
-</list>
-<p>An jeder Stelle in diesem Lebenszyklus einer digitalen Ressource werden Entscheidungen getroffen, die Auswirkungen auf den nachfolgenden Schritt haben. So bilden die eigentliche Analyse der Inhalte, die z.B. in einer Digitalen Edition publiziert werden sollen, und die Anforderungsanalyse das Fundament, auf dem alles aufbaut, vom Daten- oder Dokumentenmodell, bis hin zur Publikation und der 
-                <hi rend="italic">data curation</hi>. 
+<p>Abb. 1: Erfassungsschema der Metadaten in REALonline</p>
+<p>Im Modell für die Erfassung der dargestellten Entitäten im Bild werden folgende Informationen erhoben: Für Subjekte werden neben dem Subjektnamen die Kategorien Geschlecht, Beruf bzw. Stand und Gestik erfasst. Bei Objekten werden der Objektname und die Informationen zu Farbe, Material und Form erhoben. Weiters wird die Struktur dieser Metadaten zu den Bildinhalten festgehalten und kann damit im Rahmen von Analysen abfragbar gemacht werden: Direkte Subjekt-Objekt- bzw. Objekt-Objekt-Relationen werden erfasst, um am Körper getragene bzw. von Figuren gehaltene Objekte zu dokumentieren oder einen Bezug zwischen einzelnen dargestellten Dingen (etwa ein auf einem Tisch stehender Krug) in den Daten abbilden zu können. Darüber hinaus können sowohl Körperteile als auch Teile von Objekten als Metadaten zum Dargestellten gespeichert werden (Jaritz 1993: 23-43).</p>
+<p>Graphdatenbanken eignen sich u.a. besonders dafür, die vielfältigen Beziehungen zwischen Personen oder Personen und Gegenständen bzw. Ereignissen sowie auch zwischen den Dingen untereinander möglichst flexibel abzubilden und sind nun auch in der historischen Forschung im Kommen; als Software wird oft Neo4j eingesetzt (Raspe 2014, Kaufmann &amp; Andrews 2015, Kuczera 2015). Die verzweigte Struktur der erfassten Metadaten in REALonline ist einer der Hauptgründe, warum für die neue Datenarchitektur ein property-graph-Modell gewählt wurde. Ein weiterer Leitgedanke war, dass das Beziehungsnetz von Subjekten, Objekten und Handlungen in mittelalterlichen und frühneuzeitlichen Bildern anhand des Modells eines verzweigten Graphen besser veranschaulicht werden kann als in einer langen Liste mit Metadaten. Die Graphdatenbank bietet im Fall von REALonline sowohl bei der Präsentation für die Nutzer_innen im Frontend, für die Abfrage und Darstellung der Abfrageergebnisse als auch für die Eingabe der Daten im Backend (siehe Abb. 2) eine Verbesserung der Usability gegenüber dem zuvor verwendeten hierarchischen Datenbankmodell.</p>
+<figure>
+<graphic height="8.203327777777778cm" n="1002" rend="inline" url="vortrag-MATSC-image2.png" width="16cm"/>
+</figure>
+<p>Abb. 2: Screenshot des Graphen zum Dargestellten im Bild (Backend)</p>
+<p>In unserem Projekt hat sich die Kombination von Neo4j für die Modellierung und Abfrage der „beziehungsrelevanten“ Daten mit einer NoSQL-Mongo-Dokumentendatenbank angeboten (Abb. 3). Diese Lösung baut einerseits auf dem in der Praxis bereits bewährten softwareseitigen Ineinandergreifen bei der semantischen Transformation der Informationen auf und bietet gleichzeitig die Möglichkeit zur Speicherung und Abfrage von werkgeschichtlich wie auch projektgeschichtlich relevanten Informationen zu den einzelnen Bilddokumenten, die im Verlauf dieses Langzeitprojektes erhoben wurden und laufend erweiterbar bleiben sollen.</p>
+<figure>
+<graphic height="5.913036111111111cm" n="1003" rend="inline" url="vortrag-MATSC-image3.png" width="12.295758333333334cm"/>
+</figure>
+<p>Abb. 3: Datenarchitektur von REALonline</p>
+<p>Im Vortrag möchten wir aber auch auf die Herausforderungen hinweisen, denen wir uns im Zuge des Entwurfs der Datenarchitektur von REALonline stellen mussten: So war etwa in der Struktur des hierarchischen Datenmodells die Information zur dargestellten Handlung auf derselben Ebene angesiedelt wie die Entitäten Subjekt und Objekt. Beim Datenexport aus der bis dato verwendeten 
+                <hi rend="st">
+<hi rend="italic">Κλειώ</hi>
+</hi>-Datenbank und dem Import in Neo4j konnte – nachdem in diesem Fall keine automatisierten Zuweisungen der Handlung zu Personen bzw. Objekten möglich waren – dieser Umstand nur in das neue Datenmodell mitübernommen werden. Mit der Entscheidung für eine Graphdatenbank ist dennoch gewährleistet, dass in einem weiteren Schritt Informationen, wie jene zur dargestellten Handlung, statt in Knoten in die Kanten des Graphen gelegt werden können und damit die Struktur von RDF-Triples (Subjekt-Prädikat-Objekt) bekommen. 
             </p>
-<p>Aus methodischer Sicht, mit besonderem Augenmerk auf das zugrundeliegende Text- bzw. Dokumentenmodell, wurden Digitale Editionen bereits ausführlich beschrieben (siehe Pierazzo 2015 und Sahle 2013). Eine Analyse aus technischer Sicht steht noch aus. Um die Entwicklung, Betreuung und Nachhaltigkeit Digitaler Editionen zu gewährleisten bedarf es eines technologischen Publikationskonzepts, das aus möglichst standardisierten Komponenten besteht. </p>
-<p>Bisher existieren sehr erfolgreiche Standardisierungen auf dem Gebiet der Metadaten und der Textauszeichnungen, z.B. mit den Richtlinien der 
-                <hi rend="italic">Text Encoding Initiative</hi> (TEI), aber wenig bis gar nichts bei der technischen Umsetzung und der Dokumentation. Dies würde helfen anschlussfähigere, stabilere und nachhaltigere digitale Ressourcen aufzubauen und damit auch die Arbeit eines Datenkurators, der sich um die Pflege dieser Ressourcen nach Projektende kümmert, deutlich vereinfachen.
+<p>Aufgrund der zeitintensiven Datenerhebung war ein wichtiger Aspekt des Relaunchs, die Dateneingabe so effizient wie möglich zu gestalten. Der Beitrag wird die gefundene Lösung präsentieren. Langfristig gesehen sollte versucht werden, den Zeitaufwand für die Erhebung von Metadaten zu den auf historischen Bildern dargestellten Elementen zu minimieren. Daher möchten wir die in REALonline während mehr als 40 Jahren erhobenen Informationen als Trainingsdaten in transdisziplinäre Projekte zwischen den Geisteswissenschaften und der Computer Vision – insbesondere zur (semi-)automatisierten Bilderkennung – einbringen, so dafür Fördermittel eingeworben werden können.</p>
+<p>Mit dem Relaunch von REALonline kann die Menge der erhobenen Metadaten zum im Bild Dargestellten (aktuell sind innerhalb von 23316 Datensätzen 1.165562 Begriffe dazu erfasst) besser zugänglich gemacht werden: Abfragen der Graphdatenbank und Visualisierungen (z.B. mit Software wie 
+                <hi rend="italic">gephi–The Open Graph Viz Platform</hi> oder 
+                <hi rend="italic">yEd graph editor</hi>) dieser Ergebnisse können komplexe Zusammenhänge innerhalb der Bilddetails aufdecken oder Aufschlüsse zu Mustern sowie „Ausreißern“ in unterschiedlichen Samples liefern, die nicht nur als Resultate statistischer Auswertungen verstanden werden sollen, sondern vor allem dazu dienen können, neue Fragen in der (interdisziplinären) Forschung anzustoßen. Beispielsweise wurde in 154 Datensätzen das Bildthema „Geißelung Christi“ erfasst. Bei der Erschließung dieser Datensätze wurden wiederum 516 Objekte verzeichnet, die von Figuren im Bild in der Hand gehalten werden. Die Visualisierung (Abb. 4) beschränkt sich auf jene Objekte, die nur einmal vorkommen (gelb) und die ihnen übergeordneten Thesauruskategorien (grün, dunkelrot). Während die meisten Objekte dem gängigen Narrativ „Geißelung“ zugeordnet werden können, sind die Objekte 
+                <hi rend="italic">Münze</hi> und 
+                <hi rend="italic">Geldbeutel</hi> nur über einen Konnex zum mittelalterlichen Drama erklärbar (Nicka 2014, 280–282): Die Darstellung einer Bezahlung der Geißler Christi, die nur auf einem Flügelaltar im niederösterreichischen Pöggstall im Bild festgehalten wurde, kennen wir ansonsten nur aus Passionsspielen, wo jüdische Protagonisten negativ gekennzeichnet werden, indem sie den Gerichtsknechten Geld geben, um besonders fest mit den Ruten zuzuschlagen (siehe auch Abb. 2). 
             </p>
-<p>Für eine aussichtsreiche Nachhaltigkeit kann die Lösung nicht allumfassend sein, sondern nur für klar definierte Anwendungsfälle gelten. In dem hier vorgestellten Fall ist dies eine XML-basierte Digitale Edition, die mit Technologien aus der X-Familie (XSLT, XQuery, XML-Schema, eXistdb) entwickelt wird. Das Grundprinzip ist jedoch auf andere Anwendungsszenarien übertragbar:</p>
-<list type="ordered">
-<item>Eine ausführliche Dokumentation</item>
-<item>Ein klar definierter Werkzeugkasten</item>
-<item>Die Paketierung aller Projektressourcen</item>
-</list>
-<p>Dokumentation</p>
-<p>Eine nachhaltige digitale Forschungsressource bzw. –software ist langfristig verfügbar, gut dokumentiert, lizenziert und versioniert, um die Reproduzierbarkeit der Forschungsprozesse zu garantieren. Die wichtigste Komponente ist eine ausführliche, formalisierte Dokumentation, die mindestens die folgenden Informationen enthalten sollte:</p>
-<list type="unordered">
-<item>Den Namen des Projekts und aller beteiligten Institutionen und Personen.</item>
-<item>Den Projektstatus: geplant, in Arbeit, veröffentlicht, beendet.</item>
-<item>Die eingesetzten Technologien und Standards inklusive Versionsangabe.</item>
-<item>Lizenzangaben zu Forschungsdaten, Quellcode, und anderen Komponenten, wie Schriftarten, Audio- oder Videodokumenten.</item>
-<item>Informationen darüber, wo der Quellcode und die Forschungsdaten zu finden sind.</item>
-<item>Informationen über die bereitgestellten APIs und andere Schnittstellen, um die Forschungsdaten in verschiedenen Formaten abzurufen (XML, HTML, PDF, JSON usw.) und in anderen Kontexten weiterzuverarbeiten. </item>
-<item>Details über die Forschungsmethode und den Hintergrund des Projekts. (Mehr dazu siehe Faniel 2015)</item>
-<item>Zitations- und Referenzierungsanweisungen für die persistente Adressierung aktueller und älterer Versionen der Forschungsdaten, Metadaten und Software.</item>
-<item>Eine standardisierte Historie der Projektentwicklung.</item>
-</list>
-<p>Selbstverständlich kann diese Liste nur ein erster Vorschlag sein. Sie enthält keinesfalls alle möglichen Informationen, die zu einer Digitalen Edition angegeben werden können. Die Dokumentation sollte maschinenlesbar (um z.B. als XML oder JSON weiter verarbeitet werden zu können) und über eine standardisierte Adresse bzw. einen klar definierten Zugriffspunkt (z.B. http://home.of.project/api/projectdescription) abrufbar sein. Dadurch wäre es möglich eine Digitale Edition bei einem zentralen Verzeichnis anzumelden, in dem alle Informationen und Updates über Digitale Editionen, die demselben Publikationsmodell folgen, gesammelt werden. Ein solches Verzeichnis existiert noch nicht. </p>
-<p>Definierter Werkzeugkasten</p>
-<p>Wie oben beschrieben kann Nachhaltigkeit nur in einem definierten Rahmen hergestellt werden, indem man klare Anwendungsfälle beschreibt. Selbst in diesen sind die Möglichkeiten der Umsetzung nahezu unbegrenzt. Daher ist es wichtig, genau zu definieren, welche Technologien, Standards und Software-Werkzeuge zum Einsatzkommen und welche Abhängigkeiten bestehen. Es ist ratsam die Zahl der eingesetzten Tools überschaubar zu halten und sich auf etablierte und gut dokumentierte Technologien zu konzentrieren.</p>
-<p>Paketierung </p>
-<p>Alle zusammengehörenden Komponenten einer Digitalen Ressource (Daten, Metadaten, Quellcode, Binärdatein, Dokumentation) müssen immer zusammen abrufbar sein. Diese Pakete tragen deutlich zu einer nachhaltigeren Entwicklung bei. Es ist immer klar, wo sich alle relevanten Informationen und Daten befinden. Zudem könnte ein Paket einer zentralen Kurationsstelle, z.B. einem Digital Huamnities Data Center, übergeben werden, die sich um die Betreuung der digitalen Ressourcen abgeschlossener Projekte kümmert. Diese Anlaufstelle existiert ebenfalls noch nicht.</p>
-<p>Für den hier vorgestellten Anwendungsfall bietet das von eXistdb verwendete EXPath-Format ( 
-                <ref target="http://expath.org/">
-<hi rend="underline color(0000FF)">http://expath.org/ </hi>
-</ref>) einen guten Ausgangspunkt für die Paketierung. Dieses Format beschreibt ein Packaging-System ( 
-                <ref target="http://expath.org/modules/pkg/">
-<hi rend="underline color(0000FF)">http://expath.org/modules/pkg/ </hi>
-</ref>), das es erlaubt XML-basierte Dokumente zusammen mit Abfrage- und Transformationsskripten sowie verschiedenen anderen Ressourcen auf eine standardisierte Art und Weise zu paketieren, das dieses Paket von allen Softwaresystemen, die diesem Standard folgen verstanden und ausgewertet werden kann. Damit kann dieses Packagesystem ähnlich fungieren, wie ein App-Store für Smartphones. Auch der Anpassungsaufwand für Software, die während der Projektlaufzeit eingesetzt wird, würde sich so verringern. 
-            </p>
-<p>Andere Anwendungsszenarien lassen sich nicht auf Softwareebene paketieren. In diesen Fällen kann man auf Anwendungsvirtualisierung zurückgreifen, wie sie zum Beispiel mittels Docker (
-                <ref target="https://www.docker.com/">https://www.docker.com/</ref>) möglich ist.
-            </p>
-<p>Um eine solche Standardisierung auf der technischen Ebene durchzuführen benötigt es eine aktive Digital-Humanities-Enwicklercommunity. Die Rolle des DH-Entwicklers ist im allgemeinen Diskurs noch deutlich unterrepräsentiert. Um wirklich erfolgreich Softwaretools für die geisteswissenschaftliche Forschung programmieren zu können, benötigt ein Entwickler mehr als nur ein grundlegendes Verständnis der typischen Problematiken in den einzelnen Fachdisziplinen. Umgekehrt erlauben Programmierkenntnisse ein wesentlich besseres Verständnis über die Funktionsweise der Software und damit bessere Einsatzmöglichkeiten sowie das Potential zu eigenen Verbesserungen. Um hier Fortschritte zu erzielen, müssen sich die DH-Entwickler besser organisieren. Die DH-Entwicklercommunity wäre der Kreis an Personen, die die Einführung und Anwendung von Standards, wie dem EXPath-System diskutieren und tragen. Mittelfristig wäre das Ziel für jeden Schritt im Lebenszyklus einer digitalen Ressource einen oder mehrere Vorschläge einer standardisierten Herangehensweise in Form eines 
-                <hi rend="italic">best-practice-</hi>Leitfadens zu haben, der sich als 
-                <hi rend="italic">technical reader</hi> zur Erstellung digitaler geisteswissenschaftlicher Ressourcen eignet und Vorschläge zu Schnittstellen, Standards, Lizenzen, Dokumentation, Zitationshinweise usw. anbietet.
-            </p>
-<p>Ein Ansatzpunkt dafür bietet die Arbeit des 2010 gegründeten Software Sustainability Institute (
-                <ref target="https://www.software.ac.uk/">https://www.software.ac.uk/</ref>), Hong 2010 sowie Hettrick 2016, die verschiedene Ansätze zur Forschungs-Software-Nachhaltigkeit untersucht haben.
+<figure>
+<graphic height="9.726605555555556cm" n="1004" rend="inline" url="vortrag-MATSC-image4.png" width="13.496205555555555cm"/>
+</figure>
+<p>Abb. 4: Visualisierung der dargestellten Objektbegriffe und Körperbezeichnungen aus den Bildbeschreibungen in ihrer Zuordnung zur jeweiligen Thesauruskategorie</p>
+<p>Abschließend bleibt zu erwähnen, dass sich mit der Notwendigkeit, eine gut eingeführte, aber in ihren technischen Funktionalitäten nicht mehr zeitgemäße Bilddatenbank zu modernisieren, auch die Chance zur besseren Nutzung der umfangreichen Datenbestände verbinden lässt. Im Zuge der Relaunchvorarbeiten haben wir die Konzepte und Lösungsansätze aufgegriffen, die gegenwärtig in den Digital Humanities diskutiert und getestet werden. Wir haben die Umsetzung in enger Zusammenarbeit mit den Grazer Entwicklerfirmen complement.at und zedlacher.net realisiert. Der Beitrag gibt einen knappen Überblick über die wichtigsten Entscheidungsfindungsprozesse sowie die Schwierigkeiten und Potentiale, die bei der Überführung in die neue Datenarchitektur und die gewählte Frontend-Lösung entstanden sind. Der Aspekt der Nachhaltigkeit hat dabei von Anfang an eine große Rolle gespielt; sowohl bei der Erhaltung aller vorhandenen Informationen als auch bei der nachhaltigen Nutzbarkeit der erhobenen Daten. So ist die Zitierbarkeit der Daten über einen PID (persistent identifier) mit einem handle gewährleistet und die Metadaten werden mit einer 
+                <hi rend="italic">Creative Commons by-nc-sa</hi> 4.0-Lizenz zur Verfügung gestellt. Die neue Online-Version von REALonline wird gegenwärtig getestet und optimiert und 2017 freigeschaltet.
             </p>
 </body>
 <back>
@@ -163,27 +121,60 @@
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-<hi rend="bold">Faniel, Ixchel</hi> (2015): 
-                        <hi rend="italic">Data Management and Curation in 21st Century Archives</hi>, 21. September 2015, 
-                        <ref target="http://hangingtogether.org/?p=5375">http://hangingtogether.org/?p=5375</ref>.
+<hi rend="bold">Jaritz, Gerhard</hi> (1993): 
+                        <hi rend="italic">Images: A Primer of Computer-Supported Research with <hi rend="italic">Κλειώ</hi> IAS</hi>. Halbgraue Reihe zur historischen Fachinformatik A 22. 
+                        St. Katharinen: Scripta Mercaturae Verlag. 
                     </bibl>
 <bibl>
-<hi rend="bold">Hettrick, Simon</hi> (2016): 
-                        <hi rend="italic">Research Software Sustainability. Report on a Knowledge Exchange Workshop</hi>.
+<hi rend="bold">Kaufmann, Sascha / Andrews, Tara Lee</hi> (2016): 
+                        „Bearbeitung und Annotation historischer Texte mittels Graph-Datenbanken am Beispiel der Chronik des Matthias von Edessa“,
+                        in:
+                        <hi rend="italic">DHd 2016: Modellierung - Vernetzung - Visualisierung</hi> 176–178
+                        <ref target="http://dhd2016.de/boa.pdf">http://dhd2016.de/boa.pdf</ref> [letzter Zugriff 20. August 2016].
                     </bibl>
 <bibl>
-<hi rend="bold">Hong, N. Chue</hi> et al. (2010): 
-                        <hi rend="italic">Software Preservation Benefits Framework. Software Sustainability Institute Technical Report</hi>.
+<hi rend="bold">Kuczera, Andreas</hi> (2015): 
+                        „Graphdatenbanken für Historiker. Netzwerke in den Registern der Regesten Kaiser Friedrichs III. mit neo4j und Gephi“, 
+                        in: 
+                        <hi rend="italic">Mittelalter. Interdisziplinäre Forschung und Rezeptionsgeschichte</hi>, 5. Mai 2015, 
+                        <ref target="http://mittelalter.hypotheses.org/5995">http://mittelalter.hypotheses.org/5995</ref> (ISSN 2197-6120) [letzter Zugriff 20. August 2016].
                     </bibl>
 <bibl>
-<hi rend="bold">Pierazzo, Elena</hi> (2015): 
-                        <hi rend="italic">Digital Scholarly Editing, Theories, Models and Methods</hi>. 
-                        Ashgate.
+<hi rend="bold">Matschinegg, Ingrid</hi> (2004): 
+                        „REALonline – IMAREAL's Digital Image-Server“, 
+                        in: 
+                        <hi rend="italic">[Enter the Past]. The E-way into the Four Dimensions of Cultural Heritage. CAA 2003 | Computer Applications and Quantitative Methods in Archaeology | Proceedings of the 31st Conference</hi>, Vienna, Austria, April 2003 (BAR International Series 1227). 
+                        Oxford: archaeopress, 214-216.
                     </bibl>
 <bibl>
-<hi rend="bold">Sahle, Patrick</hi> (2013):
-                        <hi rend="italic">Digitale Editionsformen, Zum Umgang mit der Überlieferung unter den Bedingungen des Medienwandels</hi>. 3 Bände.
-                        Norderstedt: Books on Demand.
+<hi rend="bold">Nicka, Isabella</hi> (2014): 
+                        „Interfaces. Berührungszonen von Transzendenz und Immanenz im spätmittelalterlichen Sakralraum“, 
+                        in: Meyer, Marion / Klimburg-Salter, Deborah (eds.):
+                        <hi rend="italic">Visualisierungen von Kult</hi>. 
+                        Wien / Köln / Weimar: Böhlau, 260-293, Abb. auf 438-444.
+                    </bibl>
+<bibl>
+<hi rend="bold">Nicka, Isabella</hi> (im Erscheinen): 
+                        „REALonline–Explore and Find Out. Wohin führt das Digitale die Kunstgeschichte?“,
+                        Beitrag zum Tagungsband der vom 6.-8. Nov. 2015 in Wien abgehaltenen Konferenz <hi rend="italic">„Newest Art History“. Wohin geht die jüngste Kunstgeschichte?</hi>
+</bibl>
+<bibl>
+<hi rend="bold">Raspe, Martin</hi> (2014): 
+                        <hi rend="italic">Zuccaro. Ein modernes, konfigurierbares Informationssystem für die Geisteswissenschaften</hi>.
+                        http://zuccaro.biblhertz.it/dokumentation/zuccaro [letzter Zugriff 20. August 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold">Thaller, Manfred</hi> (1980): 
+                        „Descriptor: Probleme der Entwicklung eines Programmsystems zur computerunterstützten Auswertung mittelalterlicher Bildquellen“, 
+                        in: 
+                        <hi rend="italic">Europäische Sachkultur des Mittelalters</hi>: Gedenkschrift aus Anlaß des 10jährigen Bestehens des Instituts für mittelalterliche Realienkunde Österreichs (Veröffentlichungen des Instituts für mittelalterliche Realienkunde Österreichs 4 / Sitzungsberichte der Akademie der Wissenschaften, Phil.-Hist. Klasse 374). 
+                        Wien: Verlag der Österreichischen Akademie der Wissenschaften, 167–194.
+                    </bibl>
+<bibl>
+<hi rend="bold">Thaller, Manfred</hi> (1989): 
+                        <hi rend="italic">Κλειώ</hi>.
+                        Ein Datenbanksysten. Halbgraue Reihe zur historischen Fachinformatik B1.
+                        St. Katharinen: Scripta Mercaturae Verlag.
                     </bibl>
 </listBibl>
 </div>

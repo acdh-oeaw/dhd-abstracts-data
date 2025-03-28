@@ -1,48 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="108_final-HADERSBECK_Maximilian_Spielräume_bei_der_Retroperspektivisch" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="125_final-WEHNER_Maximilian_OCR4all___Eine_semi_automatische_Open_Sour" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title type="full">
-<title type="main">Spielräume bei der retroperspektivischen Analyse der Wittgenstein-Edition und die Herausforderungen für das Semantic Clustering</title>
-<title type="sub"/>
-</title>
+<title>OCR4all – Eine semi-automatische Open-Source-Software für die OCR historischer Drucke</title>
 <author>
 <persName>
-<surname>Hadersbeck</surname>
+<surname>Wehner</surname>
 <forename>Maximilian</forename>
 </persName>
-<affiliation>Ludwig-Maximilians Universität München</affiliation>
-<email>maximilian@cis.uni-muenchen.de</email>
+<affiliation>Julius-Maximilians-Universität Würzburg, Deutschland</affiliation>
+<email>maximilian.wehner@uni-wuerzburg.de</email>
 </author>
 <author>
 <persName>
-<surname>Ullrich</surname>
-<forename>Sabine</forename>
+<surname>Dahnke</surname>
+<forename>Michael</forename>
 </persName>
-<affiliation>Ludwig-Maximilians Universität München</affiliation>
-<email>sabine.ullrich@campus.lmu.de</email>
+<affiliation>Universität Siegen, Deutschland</affiliation>
+<email>michael.dahnke@uni-siegen.de</email>
 </author>
 <author>
 <persName>
-<surname>Still</surname>
-<forename>Sebastian</forename>
+<surname>Landes</surname>
+<forename>Florian</forename>
 </persName>
-<affiliation>Ludwig-Maximilians Universität München</affiliation>
-<email>sebastian.still@campus.lmu.de</email>
+<affiliation>Bayerische Akademie der Wissenschaften, Deutschland</affiliation>
+<email>florian.landes@kbl.badw.de</email>
 </author>
 <author>
 <persName>
-<surname>Pichler</surname>
-<forename>Alois</forename>
+<surname>Nasarek</surname>
+<forename>Robert</forename>
 </persName>
-<affiliation>Wittgenstein Archiv Universität Bergen/Norwegen</affiliation>
-<email>Alois.Pichler@uib.no</email>
+<affiliation>Martin-Luther-Universität Halle-Wittenberg, Deutschland</affiliation>
+<email>robert.nasarek@geschichte.uni-halle.de</email>
+</author>
+<author>
+<persName>
+<surname>Reul</surname>
+<forename>Christian</forename>
+</persName>
+<affiliation>Julius-Maximilians-Universität Würzburg, Deutschland</affiliation>
+<email>christian.reul@uni-wuerzburg.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2019-09-20T16:38:42.536473260</date>
+<date>2015-10-04T22:02:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -54,7 +59,7 @@
 </address>
 </publicationStmt>
 <sourceDesc>
-<p>Converted from an OASIS Open Document</p>
+<p>Converted from a Word document</p>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
@@ -70,192 +75,151 @@
 <term>Paper</term>
 </keywords>
 <keywords n="subcategory" scheme="ConfTool">
-<term>Vortrag</term>
+<term>Workshop</term>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Textgenetik</term>
-<term>Semantik</term>
-<term>Edition</term>
-<term>NLP</term>
-<term>Clustering</term>
+<term>Optical Character Recognition</term>
+<term>Open Source</term>
+<term>Dokumentanalyse</term>
+<term>historische Drucke</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
 <term>Transkription</term>
-<term>Inhaltsanalyse</term>
-<term>Annotieren</term>
-<term>Metadaten</term>
+<term>Einführung</term>
+<term>Software</term>
+<term>Text</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<div rend="DH-Heading" type="div1">
-<head>Einleitung</head>
-<p>
-  Seit 2010 kooperieren das Wittgenstein Archiv an der Universität Bergen (WAB, Alois Pichler) und das Centrum für Informations- und Sprachverarbeitung der Ludwig-Maximilians Universität München
-  (CIS, Max Hadersbeck et. al.) in der Forschungsgruppe „Wittgenstein Advanced Search Tools” (WAST). Die WAST-Projektgruppe entwickelt die web-basierte 
-  FinderApp WiTTFind (<ptr target="http://wittfind.cis.lmu.de/"/>), die einen computerlinguistisch gestützten digitalen Zugang zu WABs Wittgenstein-Edition erlaubt. Nach einer kompletten Neuscannung des Nachlasses und intensiven Verhandlungen des WAB mit den Rechteinhabern, dürfen seit 2018 WABs Edition auf der WiTTFind-Webseite durchsucht und Faksimileextrakte dargestellt werden. Nun konnten wir uns einer zentralen Frage der Wittgensteinforscher widmen: Wo finden sich in seinem Nachlass semantisch ähnliche Bemerkungen und, retroperspektivisch betrachtet, wann fanden diese Änderungen statt? 
-</p>
-<p>Wir entwickelten das Analysetool WiTTSim (Ullrich, 2018), das semantisch ähnliche Bemerkungen in der Edition aufspürt, zusammen mit einem vorgeschalteten semantischem Clusterverfahren (Ullrich, 2019), welches die Rechenzeit der Ähnlichkeitssuche um den Faktor 100 verkürzte. Zur retroperspektivischen Analyse der Edition entwickelten wir ein zeitorientiertes, textgenetisches Datenmodell, das die Spielräume der Interpretation der bisher dokumentorientierten Edition auf zugelassene Lesarten reduziert.</p>
-<p>In unserem Vortrag stellen wir die Verfahren unserer Ähnlichkeitssuche mit vorgeschaltetem semantischen Clustering und ein neues mehr textgenetisch- als dokumentorientiertes Modell einer Edition vor, das im Web-Frontend des OdysseeReaders (www.odysseereader.wittfind.cis.lmu.de) implementiert ist und auch die Frage beantwortet: „Wann gibt es semantisch ähnliche Bemerkungen“.</p>
+<div rend="DH-Heading1" type="div1">
+<head>Das Problemfeld der OCR früher Drucke</head>
+<p style="text-align:left; ">Lange galt die automatisierte Texterkennung oder sog. Optical Character Recognition (OCR) historischer Drucke des späten Mittelalters und der Frühen Neuzeit, das heißt die Überführung des gedruckten Textes in eine maschinenverarbeitbare Form, als sehr problematisch (Rydberg-Cox 2009). Die OCR moderner Texte wird dagegen auch aufgrund technischer Innovationen wie des zeilen- statt zeichenbasierten OCR-Ansatzes (Breuel et al. 2013) weithin als informatisch gelöstes Problem angesehen. Die teils höchst komplexen Layoutstrukturen von Inkunabeln und der bis zum Ende des 18. Jahrhunderts gedruckten Werke, ihr oft schlechter Erhaltungs- und Druckzustand sowie die Vielfalt und Varianz der in ihnen verwendeten Drucktypen stellen dagegen bis heute sogar den kommerziellen State of the Art der Texterkennungssoftware wie beispielsweise ABBYY FineReader<ref n="1" target="ftn1"/>
+vor erhebliche Probleme. Auch die vermeintlich einfach gedruckten Frakturromane des 19. Jahrhunderts bereiten bei ihrer Überführung in eine E-Text-Variante immer wieder große Schwierigkeiten. Trotz der durch Bibliotheken und andere öffentliche Einrichtungen bereit gestellten, wachsenden Bestände bilddigitalisierter Vorlagen dieser Epochen ist darum der Umfang digitalisierter Texte nicht annähernd im selben Maß gewachsen, obwohl in den vergangenen Jahren bereits deutliche Fortschritte für die OCR vormoderner Drucke aufgezeigt werden konnten (Springmann / Lüdeling 2017).
+                </p>
+<p style="text-align:left; ">Vor allem für die geistes- und kulturwissenschaftliche Editionsphilologie eröffnet sich auf diese Weise ein erhebliches Problemfeld, ist diese vor dem Hintergrund der Entwicklung hin zu immer mehr digitalen Editionen doch auf meist große Textmengen in digitaler Form angewiesen, die im besten Fall neben ihrer hohen Zeichengenauigkeit bereits Metainformationen über das gedruckte Ursprungsmedium aufweisen – zu denken wäre hier besonders an die Typisierung unterschiedlicher Layoutregionen (Überschriften, Marginalien, Bildbeischriften etc.) oder die Lesereihenfolge der einzelnen Layoutelemente des originalen Textes. Und auch mit Blick auf neuere Forschungsfelder innerhalb der Geisteswissenschaften und Digital Humanities (Text Mining, Sentiment Analysis usw.) sowie deren Bedarf an großen Textmengen zur Anwendung quantitativer Analyseverfahren stellt sich zunehmend die Frage nach Möglichkeiten einer OCR früher und vormoderner Drucke, die sowohl hohen Qualitätsansprüchen als auch einem entsprechenden Automatisierungsgrad genügt.</p>
+<p style="text-align:left; ">Werkzeuge, die diese Anforderungen erfüllen, sollten zudem frei verfügbar sein, sich einfach und selbstständig von einem informatisch nicht vorgeschulten Nutzerkreis auf einer einheitlichen Benutzeroberfläche bedienen lassen und die unterschiedlichen Submodule wie beispielsweise die Vorverarbeitung von Bilddateien, Möglichkeiten der Layouttypisierung sowie die eigentliche Zeichenerkennung integrativ zu einem kohärenten OCR-Workflow zusammenführen.</p>
+<p style="text-align:left; ">Am Lehrstuhl für Künstliche Intelligenz und Angewandte Informatik der Julius-Maximilians-Universität Würzburg wurde deshalb die OCR-Software OCR4all<ref n="2" target="ftn2"/> entwickelt, welche die genannten Notwendigkeiten in sich vereint und sich als erstes Programm überhaupt mit Blick auf die besonders herausfordernden Textgruppen direkt an Geisteswissenschaftler*innen richtet. 
+                </p>
 </div>
-<div rend="DH-Heading" type="div1">
-<head>Die Datenbasis: Dokument- und Zeitorientierte Modelle</head>
-<p>Die bei uns verwendete Datenbasis BNE 2015- und IDP 2016-, die am Wittgensteinarchiv an der Universität Bergen (Pichler, WAB) erstellt werden, enthalten Faksimile und Transkriptionen (auf der Basis von XML-TEI-P5) des Nachlasses von Ludwig Wittgenstein. Dieser Nachlass umfasst ca. 20.000 Seiten, welche vom WAB in Dokumente und diese wiederum in logische Textabschnitte unterteilt sind. Jeder der 54.930 Textabschnitte – eine sogenannte Bemerkung – wird mit einer eindeutigen Bezeichnung, dem sogenannten Siglum, versehen und wird in unserer Ähnlichkeitssuche als einzelnes Textobjekt definiert und semantisch analysiert. </p>
-<p>Betrachtet man die Annotationen der BNE unter dem Aspekt der Retroperspektive, taucht folgendes Problem auf: Die BNE liefert nur auf der Ebene der Bemerkungen Informationen über ihren Erstellungszeitpunkt bzw. -zeitrahmen. Die Änderungen auf Wort und Zeichenebene sind zwar akribisch annotiert, allerdings fehlt die zeitliche Information wann diese Änderungen vorgenommen wurden. Um textgenetische Metainformationen auf Wort- bzw. Zeichenebene in das “ordered hierarchy of content objects model data” (OHCO) einer XML-Edition, wie das der BNE zu integrieren, schlägt das TEI-P5 Konsortium Fragmentierungs-, Milestone oder Standoff-Markup Annotationen vor (Jörg Hornschemeyer, 2013), die am WAB bisher nicht durchgeführt wurden. Von Geisteswissenschaftlern, deren wissenschaftliches Kerngebiet im Allgemeinen weit entfernt von der XML-Programmierung liegt, würde großer programmtechnischer Editionsaufwand verlangt. Eine Folge ist, dass von „Nachverwertern“ der Edition zur Generierung der textlichen Varianten algorithmisches Ausmultiplizierten der annotierten Varianten implementiert wird, was z.B. in der Wittgenstein-Edition bei einzelnen Bemerkungen eine vierstellige Anzahl von Lesarten generiert. Betrachtet man die so automatisch generierten Lesarten, sind die meisten syntaktisch und semantisch falsch, was fatale Auswirkungen auf semantische Analysen der Textobjekte hat. Ohne zusätzliche, fein granulierte Metainformation in den annotierten Varianten sind die Spielräume der automatisierten Lesartengenerierung jedoch nicht einzugrenzen.</p>
-<p>Im Umfeld der Wittgensteinforschung gibt es eine Edition, die bis auf Zeichenebene zeitliche Informationen zur Textgenese liefert: Die Prototractatus-Tools (PTT 2016) von Martin Pilch (Pilch 2018). Sie dokumentieren den 
-Nutzern Ludwig Wittgensteins Schreibprozess, beginnend mit einem leeren Notizbuch im Jahre 1915 und bis zum endgültigen Diktat des Ts-204 im Sommer 1918, das zu seiner einzigen philosophischen Veröffentlichung zu Lebzeiten, der „Logisch-Philosophischen Abhandlung“ führte. Leider konnten wir die Daten und Metainformationen der PTT-Edition in unserer FinderApp Infrastruktur nicht direkt analysieren, da unsere WiTTFind Infrastruktur zum einen auf das dokumentorientierte XML-TEI-P5 Datenformat aus Bergen zugeschnitten ist, und zum anderen die PTT-Edition im inkompatiblen Microsoft Word-97 Format vorliegt. Alle verfügbaren XML-TEI Importtools erfassten nur Bruchteile der Annotationen, sodass z.B. die Zeitinformationen der PTT überhaupt nicht erkannt und transformiert wurden. Um möglichst viel von der PTT-Textedition weiterzuverwenden, und damit der PTT-Hg. die Edition in seiner gewohnten Microsoft-Office Umgebung weiter optimieren kann, entwickelten wir eine mit Microsoft EXCEL leicht zu bedienende mehrdimensionale Tabellenstruktur. Die Editionsdaten und Metainformation der Word-97 Edition konnten wir größtenteils mit eigenen Programmen und Office-Macrotechniken transferieren. Zur Integration der Tabellen in die Infrastruktur unserer FinderApp verwendeten wir LibreOffice-Tools und selbst geschriebene Python Programme, die die Daten, sobald sie in das git-Repository des Projekts kopiert werden, mit Hilfe der continuous Integration automatisch transformieren und importieren. Zur Web-Präsentation werden sie an unsere neu entwickelte FinderApp, den 
-OdysseeReader (siehe Abb. 1,
-<ref target="http://odysseereader.wittfind.cis.lmu.de/">odysseereader.wittfind.cis.lmu.de</ref>), übergeben. Dieses Vorgehen trennt zwar das Daten- und Repräsentationsmodell, jedoch entwickelten wir ein positionsinvariantes Siglensystem, bestehend aus dem Tupel (Zeitstempel, Dokument, Seite, Zeile, Zeichenposition), das die beiden Modelle eineindeutig verknüpft. Diese bijektive Relation zwischen den beiden Modellen definiert dem Hg., wo er in seinem Datenmodell Änderungen vornehmen muss um sie an eine bestimmte Stelle, zu einem bestimmten Zeitpunkt im Repräsentationsmodell zu platzieren.
-</p>
-<p>
-  <figure>
-    <graphic url="108_final-4552ec749bd02ac4ba9463fd464cc20d.png"/>
-    <head> Abbildung 1: Der OdysseeReader <ref target="http://odysseereader.wittfind.cis.lmu.de/">odysseereader.wittfind.cis.lmu.de</ref></head>
-  </figure>
-</p>
-<!-- <p>Abbildung 3: Der OdysseeReader odysseereader.wittfind.lmu.de</p> -->
+<div rend="DH-Heading1" type="div1">
+<head>OCR-Workflow</head>
+<p style="text-align:left; ">Typischerweise gliedert sich ein OCR-Workflow in vier Hauptkomponenten (s. Abbildung 1). Im sog. 
+                    <hi rend="bold">Preprocessing</hi> werden die Originalbilder in Vorbereitung späterer Arbeitsschritte binarisiert (Konvertierung des Ausgangsbildes in ein Schwarzweißbild) und gerade gestellt, um die nachfolgenden Arbeitsschritte zu erleichtern.
+                </p>
+<figure>
+<graphic height="2.9792083333333332cm" n="1001" rend="block" url="125_final-51409a4df4e696fb177b4780a4fb2ed2.png" width="17.00036111111111cm"/>
+<head>Abbildung 1: Hauptkomponenten eines typischen OCR-Workflows. Von links nach rechts: Originalbild, Preprocessing, Segmentierung, OCR, Nachkorrektur. </head>
+</figure>
+<!-- <p style="text-align:left; ">Abbildung 1: Hauptkomponenten eines typischen OCR-Workflows. Von links nach rechts: Originalbild, Preprocessing, Segmentierung, OCR, Nachkorrektur.</p> -->
+<p style="text-align:left; ">Während der 
+                    <hi rend="bold">Segmentierung</hi> erfolgt die Erkennung und Typisierung der Layoutbestandteile. Dazu werden zuerst die Text- und Nicht-Textregionen (Bilder, Bordüren etc.) unterschieden, optional die Textregionen anschließend als Haupttext, Überschriften, Marginalien etc. semantisch ausgezeichnet. Abschließend werden die Textregionen zur Vorbereitung der OCR in einzelne Zeilenbilder zerschnitten. 
+                </p>
+<p style="text-align:left; ">In einem dritten Schritt, der 
+                    <hi rend="bold">OCR</hi>, werden die identifizierten Bildzeilen durch die Anwendung von sog. Modellen in maschinenverarbeitbaren Text umgewandelt. Je nach Material können dazu entweder sog. gemischte Modelle verwendet werden, die mithilfe einer Vielzahl ganz unterschiedlicher, jedoch epochentypischer Werke erstellt wurden. Handelt es sich bei den zu bearbeitenden Werken hinsichtlich der Vielfalt und Varianz der in ihnen verwendeten Drucktypen sowie deren Erhaltungszustand jedoch um sehr spezifische Drucke, können sog. werkspezifische Modelle für die Erkennung erstellt und verwendet werden.
+                </p>
+<p style="text-align:left; ">In der 
+                    <hi rend="bold">Nachkorrektur</hi> können die generierten maschinenverarbeitbaren Texte und Daten abschließend nachbearbeitet und korrigiert werden.
+                </p>
+<p style="text-align:left; ">OCR4all orientiert sich in seinem Aufbau an den beschriebenen Hauptkomponenten eines OCR-Workflows, gliedert diese jedoch noch einmal in unterschiedliche Teilmodule. Der modulare Aufbau erlaubt dabei eine Einbindung und Verwendung bereits bestehender Softwarelösungen, die gemäß ihrer Stärken zu einem kohärenten OCR-Workflow kombiniert werden.</p>
+<p style="text-align:left; ">Grundsätzlich kann der Workflow vollautomatisch durchlaufen werden. Dennoch hat der Nutzer immer die Möglichkeit, korrigierend in jeden Teilschritt einzugreifen, um ein optimales Ergebnis zu garantieren, welches als Startpunkt des dann folgenden Teilschritts fungiert. Dafür können die für jedes Teilmodul vorgegebenen Einstellungen durch den Nutzer individuell angepasst werden.</p>
+<p style="text-align:left; ">Das Preprocessing erfolgt in OCR4all wie oben beschrieben. Dabei werden alle gängigen Eingabeformate für Bilddateien unterstützt. Dem schließt sich die Layouttypisierung mithilfe des Segmentierungstools LAREX<ref n="3" target="ftn3"/>
+ (s. Abbildung 2) an. Hier können werkspezifische Parameter zur Text- und Bildtypisierung festgelegt sowie zu erkennende Layoutregionen (Haupttext, Überschriften, Marginalien, Seitenzahlen etc.) definiert werden. Je nach Komplexität des vorliegenden Seitenlayouts ist nach einer automatischen Layouterkennung ein Eingriff in das vorliegende Ergebnis mittels unterschiedlicher Korrekturwerkzeuge möglich. Weiterhin kann in LAREX die Lesereihenfolge der Layoutbestandteile markiert werden, um den Lesefluss des Originals vorlagengetreu nachbilden zu können. Vor allem für die Verwendung des maschinenverarbeitbaren Textes in digitalen Editionen sind diese Funktionen unverzichtbar. 
+                </p>
+<figure>
+<graphic height="8.263819444444444cm" n="1002" rend="block" url="125_final-665866af38792d95279d6ecf7700ae21.png" width="14.224cm"/>
+<head>Abbildung 2: Im Teilmodul der Segmentierung erfolgen die Typisierung der Layoutelemente sowie die Festlegung der Lesereihenfolge. </head>
+</figure>
+<!-- <p style="text-align:left; ">Abbildung 2: Im Teilmodul der Segmentierung erfolgen die Typisierung der Layoutelemente sowie die Festlegung der Lesereihenfolge.</p> -->
+<p style="text-align:left; ">Der Layouttypisierung folgt die Zeilensegmentierung. In dieser werden die Text beinhaltenden Layoutbestandteile in einzelne Zeilenbilder zerteilt (OCRopus<ref n="4" target="ftn4"/>), um die eigentliche OCR vorzubereiten.
+                </p>
+<p style="text-align:left; ">Anschließend wird im Erkennungsschritt aus den vorliegenden Einzelzeilen (mittels Calamari<ref n="5" target="ftn5"/>) maschinenverarbeitbarer Text generiert. Dazu können in OCR4all bereits standardmäßig integrierte gemischte Modelle für Fraktur- und Antiquaschriften unterschiedlicher Epochen genutzt werden. Es besteht die Möglichkeit, die entstandenen Texte anschließend in einem Editor komfortabel zu korrigieren (s. Abbildung 3).
+                </p>
+<figure>
+<graphic height="5.485694444444444cm" n="1003" rend="block" url="125_final-00c391eee87bbef5074d7aad70019eab.png" width="17.00036111111111cm"/>
+<head>Abbildung 3: Im Editor kann generierter Text mithilfe eines sog. Virtual Keyboard (rechts) zeichengetreu korrigiert werden.</head>
+</figure>
+<!-- <p style="text-align:left; ">Abbildung 3: Im Editor kann generierter Text mithilfe eines sog. Virtual Keyboard (rechts) zeichengetreu korrigiert werden.</p> -->
+<p style="text-align:left; ">Für die Feststellung der Fehlerrate der Zeichenerkennung kann im Evaluationsmodul der ursprünglich erkannte Text mit der durch den Nutzer vorgenommenen Korrektur verglichen werden.</p>
+<p style="text-align:left; ">Darüber hinaus bietet OCR4all die Möglichkeit, die oben angesprochenen werkspezifischen Modelle unter Verwendung vorgenommener Textkorrekturen selbst zu trainieren, stetig zu verfeinern und anzuwenden. Besonders bei Werken mit erheblicher Typenvielfalt und -varianz, bei denen ein bestehendes gemischtes Modell keine hinreichenden Erkennungsergebnisse erzielt, können auf diese Weise dennoch sehr hohe Zeichenerkennungsraten erreicht werden.</p>
+<p style="text-align:left; ">In der abschließenden Nachkorrektur können die generierten Texte editionsreif korrigiert und als Plain Text oder PageXML<ref n="6" target="ftn6"/> ausgegeben werden. Letzteres Format beinhaltet neben dem eigentlichen Text auch dessen Verankerung in semantischen Positionen auf den Druckseiten in Form von Koordinaten. 
+                </p>
+<p style="text-align:left; ">In Abhängigkeit des Ausgangsmaterials variiert der zum Erreichen einer sehr hohen Genauigkeit benötigte Arbeitsaufwand zwischen wenigen Minuten bei Werken mit einfachen Layoutstrukturen, für die ein passendes Modell vorliegt, und einigen Stunden bei sehr komplexen, frühen Drucken, für die werkspezifische Modelle trainiert werden müssen (Reul et al. 2019). </p>
 </div>
-<div rend="DH-Heading" type="div1">
-  <head>Ähnlichkeitssuche mit vorgeschaltetem Semantic Clustering</head>
-<p>Die Ähnlichkeitssuche WiTTSim berechnet mit Hilfe
-computerlinguistischer Methoden für jede Bemerkung einen
-„charakteristischen” Vektor, oder, intuitiv gesprochen: Man bestimmt
-einen “Fingerabdruck”. Dieser automatisierte Prozess wird unabhängig
-im Voraus berechnet, was spätere Prozesse vereinfacht und
-beschleunigt. Dieser „Fingerabdruck“ beinhaltet linguistische
-Informationen, wie beispielsweise Wörter, deutsche und englische
-Synonyme (aus Germanet und Wordnet), Wortarten (Treetagger) und
-Lemmata <hi rend="italic"> (WiTTLex,</hi> Röhrer 2019). Diese Informationen werden in binäre Vektoren übersetzt, welche insgesamt etwa 115.000 Features umfassen. Zusätzlich zur Datenbasis wurden 471 Bemerkungen bereits gruppiert, also mit Ground Truth Labels versehen. Die Gruppen bestehen dabei aus 2-15 Bemerkungen und das gelabelte das Korpus umfasst 1.670 Bemerkungen, was ca. 3% des gesamten Nachlasses entspricht.
-</p>
-<p>Zur Semantischen Ähnlichkeitsberechnung ist allerdings eine Reduktion des Feature Raumes zwingend nötig, da die Vektoren mit so hoher Dimensionalität semantisch „weit voneinander entfernt“ sind und keine semantischen Gruppierungen auszumachen sind. Dieses Phänomen ist auch bekannt als 
-<hi rend="italic">Curse of Dimensionality</hi>. Daher werden die Vektoren zunächst auf eine angemessene Anzahl von Features skaliert, um sie anschließend clustern zu können. Verwendete Reduktionstechniken umfassen Singular Vector Decomposition (SVD), Principal Component Analysis (PCA), Sparse Random Projection (SRP) und Uniform Manifold Approximation and Projection (UMAP). Auf unseren Daten zeigte eine SVD Reduktion zu 1.600 Dimensionen die besten Ergebnisse, zusammen mit UMAP, welches darüber hinaus die Daten im zweidimensionalen Raum klar gruppiert. Letzteres erlaubt nur eine Zieldimension von 2 bis 100 Dimensionen, weshalb zum Erhalt der Varianz die maximale Dimensionsanzahl von 100 gewählt wurde, um einen bestmöglichen Erhalt der gespeicherten Information zu gewährleisten.
-</p>
-<p>Nach erfolgter Reduktion der Dimension können die Datenpunkte, also alle Bemerkungen, geclustert werden. Verwendete Clustering Techniken umfassen den klassischen K-Means Ansatz (Mac-Queen 1967, Ball and Hall 1956, Lloyd 1982, Steinhaus 1955), aber auch Dichte-basierte Ansätze wie Mean-Shift (Duda und Hart 1973) und DBSCAN (Ester et al. 1996), das statistische Gaussian Mixture Modell (Redner und Walker 1984) und das hierarchische Ward Clustering (Ward 1963). Beste Ergebnisse konnten mit einer Kombination von SVD und K-Means mit einer Anzahl an k=150 Clustern erzielt werden. Evaluiert wurde anhand der drei unüberwachten Metriken Silhouette Score, Davies Bouldin Index, und Calinski-Harabasz Index. Zusätzlich konnte durch die verfügbaren Ground Truth Labels auch der Recall berechnet werden, welcher in den Experimenten einen maximalen Wert von 1,0 erreicht. Dies zeigt, dass alle der gelabelten Daten richtig zugeordnet werden konnten. Wird eine Suchanfrage zum Auffinden ähnlicher Bemerkungen gestartet, muss nur der charakteristische Vektor der eingegebenen Bemerkung berechnet werden und das nächstliegende Cluster bestimmt werden. Letzteres erfolgt durch eine Bestimmung des am nächsten gelegenen Cluster Mittelpunkts (Zentroids). Anschließend werden die Abstände zu allen Bemerkungen des bestimmten Clusters gemessen, welche zuletzt dem Philologen zur genaueren Prüfung „gerankt“ vorgeschlagen werden.</p>
+<div rend="DH-Heading1" type="div1">
+<head>Workshopkonzeption</head>
+<p style="text-align:left; ">Der ganztägige Workshop soll einem informatisch und technisch nicht spezifisch vorgeschulten Nutzerkreis einen nachvollziehbaren und verständlichen Einstieg in das Themen- und Problemfeld der OCR historischer Drucke bieten. Er wird dazu befähigen, mithilfe der vorgestellten Software eigenständig qualitativ hochwertige Texte aus ganz unterschiedlich anspruchsvollen Ausgangsdaten zu generieren – und dies mit zeitlich vertretbarem Aufwand. Die Konzeption erfolgt aus diesem Grund sehr praxisbezogen. Konkret bedeutet dies einen angeleiteten und individuell betreuten Durchgang durch den oben vorgestellten OCR-Workflow anhand verschiedener, nach Layoutkomplexität, Typographie, Erhaltungszustand und Entstehungszeitraum geclusterter Drucke. Dabei sollen anwendungsbezogen wichtige Grundfragen der OCR beantwortet werden: </p>
+<list type="unordered">
+<item>Wie verändert sich entsprechend des Ausgangsmaterials die Anwendung der OCR-Workflows und der in ihm enthaltenen Submodule? </item>
+<item>Mit welchem Aufwand ist in unterschiedlichen Bearbeitungsphasen des Materials zu rechnen? </item>
+<item>Wie stark lässt sich der Workflow in Abhängigkeit des vorliegenden Materials automatisieren? </item>
+<item>Wie schnell sind bei einem werkspezifischen Training welche Erkennungsraten erreichbar? </item>
+<item>Welcher Aufwand ist mit Blick auf die spätere Verwendung der produzierten Texte überhaupt sinnvoll?</item>
+<item>…</item>
+</list>
+<p style="text-align:left; ">Da sich neben den oben beschriebenen, meist vormodernen Textspezifika auch eine grundlegende technische Expertise der Benutzer*innen im Bereich der OCR als eine wichtige Bedingung für die Produktion hochwertiger digitaler Texte herausgestellt hat, strebt der Workshop neben einer besonders praktischen Handlungsanleitung auch die Vermittlung der wichtigsten Funktionskonzepte der in OCR4all integrierten Submodule an. </p>
+<p style="text-align:left; ">Der Workshop umfasst neben den oben beschriebenen Inhalten auch Fragen der Einrichtung und Installation der Software. Zusätzlich wird eine Serverversion der Software zur Verfügung gestellt, die einen reibungslosen Ablauf gewährleistet und Trainingsprozesse werkspezifischer Modelle effizient durchführbar macht. Die max. 25 Teilnehmer*innen benötigen einen Laptop und Internetzugang. Die Verwendung einer Maus wird empfohlen. </p>
 </div>
-<div rend="DH-Heading" type="div1">
-<head>Zusammenfassung und Ausblick</head>
-<p>Unsere zeitgesteuerte textgenetische Edition kann von einem Wissenschaftler ohne XML Kenntnisse innerhalb einer Office Umgebung erstellt werden. Das continuous Integration System von git transferiert die Edition automatisch in unser WEB-basiertes Repräsentationssystem, den OdysseeReader. Über das von uns entwickelte eineindeutige Siglensystem verliert der Hg. niemals den klaren Zusammenhang zwischen Editions- und Präsentationsmodell.
-</p>
-<p>Das von uns entwickelte Ähnlichkeitstool mit vorgeschaltetem Semantic Clustering könnte auch zur Ähnlichkeitsbestimmung zwischen zwei gegebenen Texten verwendet werden: Der Nutzer könnte einen Text eingeben, und es werden potentiell ähnliche Textpassagen in einer Sammlung von Texten gesucht, die dann „gerankt“ nach Ähnlichkeiten in einer Art Hitliste ausgegeben werden. Eine derartige Sortierung nach Textähnlichkeiten könnte es dem Philologen zum Beispiel besonders erleichtern, potentielle Zitate, Einflüsse und Verweise eines Autors innerhalb seines Werkes und im Bezug auf die Literatur seiner Zeit aufzuspüren.</p>
+<div rend="DH-Heading1" type="div1">
+<head>Forschungsinteressen der Beitragenden</head>
+<p style="text-align:left; ">
+<hi rend="bold">Maximilian Wehner</hi> ist Wissenschaftlicher Mitarbeiter am Lehrstuhl für Künstliche Intelligenz und Angewandte Informatik sowie am Zentrum für Philologie und Digitalität „Kallimachos“ der Julius-Maximilians-Universität Würzburg. Forschungsinteressen sind die Literatur der Frühen Neuzeit, die OCR früher Drucke sowie die Entwicklung entsprechender Vermittlungskonzepte.
+                </p>
+<p style="text-align:left; ">
+<hi rend="bold" xml:space="preserve">Dr. Michael Dahnke </hi>arbeitet als Wissenschaftlicher Mitarbeiter am Zentrum für Informations- und Medientechnologie der Universität Siegen. Seine Forschungsschwerpunkte bewegen sich in den Bereichen digitaler Editionsphilologie, Datenmodellierung im Rahmen von TEI sowie der OCR und der Modellierung gewonnener Textdaten.
+                </p>
+<p style="text-align:left; ">
+<hi rend="bold">Florian Landes</hi> ist als Wissenschaftlicher Mitarbeiter bei der Bayerischen Akademie der Wissenschaften beschäftigt. Seine Forschungsinteressen liegen in den Bereichen der OCR sowie der digitalen Rekonstruktion.
+                </p>
+<p style="text-align:left; ">
+<hi rend="bold">Robert Nasarek</hi> ist Wissenschaftlicher Mitarbeiter am Lehrstuhl für Wirtschafts- und Sozialgeschichte der Martin-Luther-Universität Halle-Wittenberg sowie des Zentrums für Wissenschaftsforschung der Nationalen Akademie der Wissenschaften Leopoldina. Seine Arbeit bewegt sich im Bereich der Wirtschafts- und Sozialgeschichte, OCR und Digital Humanities.
+                </p>
+<p style="text-align:left; ">
+<hi rend="bold" xml:space="preserve">Christian Reul </hi>ist Kommissarischer Leiter der Digitalisierungseinheit des Zentrums für Philologie und Digitalität „Kallimachos“ der Julius-Maximilians-Universität Würzburg. Seine Forschungsschwerpunkte sind die OCR auf historischem Material sowie die Entwicklung von OCR-Software.
+                </p>
 </div>
 </body>
 <back>
-<div type="bibliogr">
+  <div type="notes">
+    <note n="1" rend="footnote text" xml:id="ftn1">
+      <ptr target="https://www.abbyy.com/de-de/finereader/"/>
+    </note>
+    <note n="2" rend="footnote text" xml:id="ftn2">
+      <ptr target="https://www.uni-wuerzburg.de/zpd/ocr4all"/>
+    </note>
+    <note n="3" rend="footnote text" xml:id="ftn3">
+      <ptr target="https://github.com/OCR4all/LAREX"/>
+    </note>
+    <note n="4" rend="footnote text" xml:id="ftn4">
+      <ptr target="https://github.com/tmbdev/ocropy"/>
+    </note>
+    <note n="5" rend="footnote text" xml:id="ftn5">
+      <ptr target="https://github.com/Calamari-OCR/calamari"/>
+    </note>
+    <note n="6" rend="footnote text" xml:id="ftn6">
+      <ptr target="https://www.primaresearch.org/tools/PAGELibraries"/>
+    </note>
+  </div>
+  <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
-<bibl>
-<hi rend="bold">Ball, </hi>
-<hi rend="bold">Geoffrey H.</hi>
-<hi rend="bold"> / Hall </hi>
-<hi rend="bold">David J.</hi> (1965): 
-                        <hi rend="italic">Isodata, a novel method of data analysis and pattern classification</hi>. Technical report, Stanford research inst Menlo Park CA.
+<bibl style="text-align:left; ">
+<hi rend="bold">Breuel, Thomas M. / Ul-Hasan, Adnan / Al-Azawi, Mayce Ali / Shafait, Faisal</hi> (2013): High-Performance OCR for Printed English and Fraktur Using LSTM Networks, in:
+                        <hi rend="Betont"> 12th International Conference on Document Analysis and Recognition:</hi> 683-687.
                     </bibl>
-<bibl>
-<hi rend="bold">Duda, Richard</hi>
-<hi rend="bold"> O. / Hart, </hi>
-<hi rend="bold">Peter E.</hi> (1973): "Pattern analysis and scene classification." 
-                        <hi rend="italic">J. Wiley</hi> 1:73.
+<bibl style="text-align:left; ">
+<hi rend="bold">Reul, Christian / Christ, Dennis / Hartelt, Alexander / Balbach, Nico / Wehner, Maximilian / Springmann, Uwe / Wick, Christoph / Grundig, Christine / Büttner, Andreas / Puppe, Frank</hi> (2019): OCR4all – An Open-Source Tool Providing a (Semi-)Automatic OCR Workflow for Historical Printings, in: 
+                        <hi rend="italic" xml:space="preserve">ArXiv Preprints (submitted to MDPI – Applied Sciences) </hi>https://arxiv.org/abs/1909.04032.
                     </bibl>
-<bibl>
-<hi rend="bold">Ester, </hi>
-<hi rend="bold">Martin</hi>
-<hi rend="bold"> / Kriegel </hi>
-<hi rend="bold">Hans-Peter /</hi>
-<hi rend="bold"> Sander, </hi>
-<hi rend="bold">Jörg</hi>
-<hi rend="bold"> / Xu, </hi>
-<hi rend="bold">Xiaowei</hi>
-<hi rend="bold"> et al.</hi> (1996): „A density-based algorithm for discovering clusters in large spatial databases with noise.“, in 
-                        <hi rend="italic">KDD</hi>, volume 96, pages 226–231.
+<bibl style="text-align:left; ">
+<hi rend="bold">Rydberg-Cox, Jeffrey A.</hi> (2009): Digitizing Latin Incunabula: Callenges, Methods, and Possibilities, in: 
+                        <hi rend="italic">Digital Humanities Quarterly</hi> 3, 1 http://digitalhumanities.org:8081/dhq/vol/3/1/000027/000027.html.
                     </bibl>
-<bibl>Hadersbeck, Maximilian / Pichler, Alois / Fink, Florian / Gjesdal, Oyvind (2014): Wittgenstein’s Nachlass: WiTTFind and Wittgenstein Advanced Search Tools (WAST), DATeH, Madrid.</bibl>
-<bibl>
-<hi rend="bold">Hadersbeck, </hi>
-<hi rend="bold">Maximilian</hi>
-<hi rend="bold"> / Still, </hi>
-<hi rend="bold">Sebastian</hi>
-<hi rend="bold"> (2018): </hi>
-<hi rend="italic">Investigating Wittgenstein’s Nachlass: WiTTFind, WiTTReader, OdysseeReader and Wittgenstein Advanced Search Tools</hi>, im Katalog zur Ausstellung „DIE TRACTATUS ODYSSEE“ S.127-137, Wittgenstein Initiative, Wien.
-                    </bibl>
-<bibl>
-<hi rend="bold">Lloyd, </hi>
-<hi rend="bold">Stuart P. </hi>(1982): „Least squares quantization in pcm“, in: 
-                        <hi rend="italic">IEEE transactions on information theory</hi>, 28(2):129–137.
-                    </bibl>
-<bibl>
-<hi rend="bold">MacQueen, </hi>
-<hi rend="bold">J. B.</hi> (1967): „Some methods for classification and analysis of multivariate observations.“, in: 
-                        <hi rend="italic">Proceedings of the fifth Berkeley symposium on mathematical statistics and probability</hi>, volume 1, pages 281–297. Oakland, CA, USA, 1967
-                    </bibl>
-<bibl>
-<hi rend="bold">Pichler, Alois / Krüger, Heinz W. / Smith, D. / Bruvik, Tone / Lindebjerg, Anne / Olstad, Vemund </hi>(Hrsg.) (2009): Wittgenstein Source Bergen Facsimile (BTE). Wittgenstein Source Bergen.
-                    </bibl>
-<bibl>
-<hi rend="bold">Redner, </hi>
-<hi rend="bold">Richard A. /</hi>
-<hi rend="bold"> Walker, </hi>
-<hi rend="bold">Homer F. </hi>(1984): Mixture densities, maximum likelihood and the em algorithm. SIAM review, 26(2):195–239.
-                    </bibl>
-<bibl>
-<hi rend="bold">Röhrer, </hi>
-<hi rend="bold">Ines / </hi>
-<hi rend="bold">Ullrich, </hi>
-<hi rend="bold">Sabine / </hi>
-<hi rend="bold">Hadersbeck, </hi>
-<hi rend="bold">Maximilian </hi>(2019): 
-                        <hi rend="italic">Weltkulturerbe international digital: Erweiterung der Wittgenstein Advanced Search Tools durch Semantisierung und neuronale maschinelle Übersetzung</hi>. multimedial multimodal. Abstracts zur Jahrestagung des Verbandes Digital Humanities im deutschsprachigen Raum, 25. - 29.03.2019 an den Universitäten zu Mainz und Frankfurt.
-                    </bibl>
-<bibl>
-<hi rend="bold">Steinhaus, </hi>
-<hi rend="bold">Hans </hi>(1955): Quelques applications des principes topologiques à la géométrie des corps convexes. Fund. Math, 41:284–290.
-                    </bibl>
-<bibl>
-<hi rend="bold">Ullrich, Sabine /</hi>
-<hi rend="bold"> Bruder, Daniel /</hi>
-<hi rend="bold"> Hadersbeck, Maximilian </hi>(2018): “Aufdecken von “versteckten” Einflüssen: Teil-Automatisierte Textgenetische Prozesse mit Methoden der Computerlinguistik und des Machine Learning”, 5. Tagung Digital Humanities im deutschsprachigen Raum 26.2.-2.3. (Köln).
-                    </bibl>
-<bibl>
-<hi rend="bold">Ullrich, Sabine </hi>(2019):
-                        <hi rend="italic"> Boosting Performance of a Similarity Detection System using State of the Art Clustering Algorithms</hi>. Master‘s thesis. LMU.
-                    </bibl>
-<bibl>
-<hi rend="bold">Pilch, Martin </hi>(2018): 
-                        <hi rend="italic">Frontverläufe im Prototractatus – Zur gedanklichen Entwicklung von Krakau bis Sokal (1914/1915)</hi>, Wittgenstein-Studien 9 (S.101-154), Internationale Ludwig Wittgenstein Gesellschaft (ILWG).
-                    </bibl>
-<bibl>
-<hi rend="bold">Still, Sebastian </hi>(2018): 
-                        <hi rend="italic">Ludwig Wittgenstein: 100 Jahre Traktatus. Der Odyssee-Reader, ein web-basiertes Tool zur text-genetischen Suche im Traktatus</hi>, Masterthesis, Ludwig-Maximilians-Universität München.
-                    </bibl>
-<bibl>
-<hi rend="bold">Feldweg, Birgit /</hi>
-<hi rend="bold"> Feldweg, Helmut </hi>(1997): „GermaNet - a Lexical-Semantic Net for German.", in: 
-                        <hi rend="italic">Proceedings of the ACL workshop Automatic Information Extraction and Building of Lexical Semantic Resources for NLP Applications</hi>. Madrid.
-                    </bibl>
-<bibl>
-<hi rend="bold">Henrich, Verena / Hinrichs, Erhard </hi>(2010): „GernEdiT - The GermaNet Editing Tool", in: 
-                        <hi rend="italic">Proceedings of the Seventh Conference on International Language Resources and Evaluation (LREC 2010)</hi>. Valletta, Malta, pp. 2228-2235.
-                    </bibl>
-<bibl>
-<hi rend="bold">Hörnschemeyer, Jörg / Thaller, Manfred / Förtsch, Reinhard</hi> (2017): 
-                        <hi rend="italic">Textgenetische Prozesse in Digitalen Editionen</hi>, Köln Universitäts- und Stadtbibliothek Köln 2017, https://www.worldcat.org/title/textgenetische-prozesse-in-digitalen-editionen/oclc/1002260195
-                    </bibl>
-<bibl>
-<hi rend="bold">Schmidt, </hi>
-<hi rend="bold">Alfred </hi>(2018): „Ludwig Wittgenstein’s Nachlass in the UNESCO Memory of the World register.“, in: 
-                        <hi rend="italic">Nordic Wittgenstein Review </hi>7(2):209–213.
-                    </bibl>
-<bibl>
-  <hi rend="bold">UNESCO</hi> (2017): UNESCO-Weltdokumentenerbe - Zwei
-  Neuaufnahmen. URL:
-  <ref
-      target="https://www.unesco.at/presse/artikel/article/unesco-weltdokumentenerbe-zwei-neuaufnahmen/">https://www.unesco.at/presse/artikel/article/unesco-weltdokumentenerbe-zwei-neuaufnahmen/</ref>
-  [letzter Zugriff 19. Juni 2018].
-</bibl>
-<bibl>
-<hi rend="bold">Ward, John H. </hi>(1963): „Hierarchical grouping to optimize an objective function." 
-                        <hi rend="italic">Journal of the American statistical association</hi> 58.301: 236-244.
+<bibl style="text-align:left; ">
+<hi rend="bold">Springmann, Uwe / Lüdeling, Anke</hi> (2017): OCR of historical printings with an application to building diachronic corpora: A case study using the RIDGES herbal corpus, in: 
+                        <hi rend="italic">Digital Humanities Quarterly</hi> 11, 2 http://www.digitalhumanities.org/dhq/vol/11/2/000288/000288.html.
                     </bibl>
 </listBibl>
 </div>

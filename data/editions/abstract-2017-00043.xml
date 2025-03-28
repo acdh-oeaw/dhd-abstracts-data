@@ -1,61 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="poster-SELTM" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="poster-HERME" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title> Where the words are: a visual interactive exploration of plants names</title>
+<title type="full">
+<title type="main">Twhistory mit autoChirp</title>
+<title type="sub">Social Media Tools für die Geschichtsvermittlung</title>
+</title>
 <author>
 <persName>
-<surname>Therón</surname>
-<forename>Roberto</forename>
+<surname>Hermes</surname>
+<forename>Jürgen</forename>
 </persName>
-<affiliation>Universidad de Salamanca, Spanien</affiliation>
-<email>theron@usal.es</email>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>hermesj@uni-koeln.de</email>
 </author>
 <author>
 <persName>
-<surname>Dorn</surname>
-<forename>Amelie</forename>
+<surname>Hoffmann</surname>
+<forename>Moritz</forename>
 </persName>
-<affiliation>Österreichische Akademie der Wissenschaften, Österreich</affiliation>
-<email>amelie.dorn@oeaw.ac.at</email>
+<affiliation>Freier Historiker</affiliation>
+<email>kontakt@moritz-hoffmann.de</email>
 </author>
 <author>
 <persName>
-<surname>Seltmann</surname>
-<forename>Melanie</forename>
+<surname>Eide</surname>
+<forename>Øyvind</forename>
 </persName>
-<affiliation>Österreichische Akademie der Wissenschaften, Österreich</affiliation>
-<email>melanie.seltmann@oeaw.ac.at</email>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>oeide@uni-koeln.de</email>
 </author>
 <author>
 <persName>
-<surname>Benito</surname>
-<forename>Alejandro</forename>
+<surname>Geduldig</surname>
+<forename>Alena</forename>
 </persName>
-<affiliation>Universidad de Salamanca, Spanien</affiliation>
-<email>abenito@usal.es</email>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>ageduldi@uni-koeln.de</email>
 </author>
 <author>
 <persName>
-<surname>Wandl-Vogt</surname>
-<forename>Eveline</forename>
+<surname>Schildkamp</surname>
+<forename>Philip</forename>
 </persName>
-<affiliation>Österreichische Akademie der Wissenschaften, Österreich</affiliation>
-<email>eveline.wandl-vogt@oeaw.ac.at</email>
-</author>
-<author>
-<persName>
-<surname>Gabriel Losada Gómez</surname>
-<forename>Antonio</forename>
-</persName>
-<affiliation>Universidad de Salamanca, Spanien</affiliation>
-<email>alosada@usal.es</email>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>philip@schildkamp.net</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2016-12-01T14:45:00Z</date>
+<date>2016-08-24T10:23:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -87,80 +82,87 @@
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Visualisierung</term>
-<term>Dialekt</term>
-<term>Pflanzen</term>
-<term>Linked Open Data</term>
+<term>Public History</term>
+<term>Twitter</term>
+<term>Vermittlung</term>
+<term>Tools</term>
+<term>Daten-Organisation</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
 <term>Teilen</term>
-<term>Gestaltung</term>
-<term>Inhaltsanalyse</term>
-<term>Strukturanalyse</term>
-<term>Räumliche Analyse</term>
+<term>Transkription</term>
+<term>Programmierung</term>
+<term>Kommunikation</term>
 <term>Veröffentlichung</term>
-<term>Webentwicklung</term>
-<term>Visualisierung</term>
+<term>Lehre</term>
+<term>Organisation</term>
 <term>Daten</term>
 <term>Bilder</term>
 <term>Infrastruktur</term>
-<term>Sprache</term>
-<term>Multimedia</term>
-<term>Projekte</term>
-<term>Forschung</term>
-<term>Forschungsergebnis</term>
-<term>Visualisierung</term>
+<term>Software</term>
+<term>Werkzeuge</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<p>
-<hi rend="bold">Wo die Wörter sind: eine visuell-interaktive Erforschung von Pflanzennamen</hi>
-</p>
-<p> In den Digital Humanities werden häufig Visualisierungsmethoden eingesetzt, um bestimmte Trends, Beziehungen oder Inhalte innerhalb oder zwischen verschiedenen Datensätzen hervorzuheben. Oft werden gut etablierte und weit verbreitete Arten graphischer Darstellung von Daten herangezogen, wie Verbert (2015) gezeigt hat. Der Einsatz innovativer Visualisierungsmethoden für die Datenerforschung und den Datenzugriff ist jedoch bei Humanities-Projekten, die sich mit nicht-numerischen Daten beschäftigen, noch relativ selten. In diesem Beitrag stellen wir ein Visualisierungstool vor, das im Rahmen des DH-Projekts 
-                <hi rend="italic">exploreAT! – exploring Austria’s culture through the language glass </hi>entwickelt wird, und erläutern dessen Anwendung am Beispiel der Pflanzennamen-Sammlung für das Wörterbuch der bairischen Dialekte in Österreich.
+<p>Public History (vgl. einführend Zündorf 2010) ist im deutschsprachigen Raum ein noch junges Feld, die erste Professur wurde erst Ende 2012 in Heidelberg eingerichtet. Die Disziplin ist zurückzuführen auf die doppelte Erkenntnis, dass die Mehrheit der Fachstudierenden nicht in der Geschichtswissenschaft wird arbeiten können (und dementsprechend zielgerichtet in Vermittlungskompetenzen aller Art geschult werden muss) und dass die meisten HistorikerInnen sich zwar über mangelnde Aufmerksamkeit für ihr Fach nicht beklagen können, demgegenüber aber kaum wissenschaftlich valide Werkzeuge für den Umgang mit der Öffentlichkeit entwickelt wurden.</p>
+<p>Paradoxerweise scheint die Public History trotz ihres modernen Selbstanspruchs den Fehler der herkömmlichen Geschichtswissenschaft zu wiederholen: Die Digitalisierung ihrer Arbeit bleibt weit hinter den technischen Möglichkeiten zurück und beschränkt sich größtenteils auf die Erleichterungen einer erweiterten Schreibmaschine. Doch Öffentlichkeiten, die sie schon ihrem Namen nach im Blick hat, migrieren zusehends in den digitalen Raum der sozialen Netzwerke und sollten genau dort angesprochen werden.</p>
+<p>Eine Möglichkeit, die digitale Teilöffentlichkeit zu erreichen, bietet das soziale Netzwerk Twitter. Seit ungefähr sechs Jahren werden dort historische Ereignisse in je maximal 140 Zeichen zeitgenau nacherzählt, was unter den Bezeichnungen „Re-Entweetment“ oder auch “Twhistory” bekannt geworden ist. Dieses Potential des Medium wurde bislang fast ausschließlich von Laien genutzt, so über die Accounts 
+                <ref target="https://twitter.com/titanicrealtime">@TitanicRealTime</ref> und das MDR-Projekt 
+                <ref target="https://twitter.com/9nov89live">@9Nov89live</ref>, das über einen Tag eine fiktive Geschichte des Mauerfalls zeichnete. In jüngerer Zeit wird es aber zunehmend auch von einer geringen Zahl von (Public) Historians aktiv angeboten, beispielsweise für 
+                <ref target="https://twitter.com/NRWHistory">@NRWHistory</ref> und das Zweitweltkriegsprojekt 
+                <ref target="https://twitter.com/DigitalPast">@DigitalPast</ref>, zu dem parallel das Sachbuch “Als der Krieg nach Hause kam” (Hoffmann 2015) veröffentlicht wurde. Wahrscheinlich besser als jede andere Medienform bietet Twhistory die Möglichkeit der Erzählung in Echtzeit als nicht-textlichem Inhalt, über den Geschichte lebendig gemacht und vorhandenes historisches Interesse (re-)aktiviert werden kann.
+            </p>
+<p>Insbesondere die Zeichenbegrenzung ist für das Re-Entweetment Chance und Risiko zugleich: die Einstiegsschwelle ist im Vergleich zu herkömmlichen Darreichungsformen (Buch, Museum) äußerst gering, zugleich besteht die Gefahr der Simplifizierung sowie der Falschdarstellung von Geschichte als Aneinanderkettung von Einzelereignissen. Trotz der mittlerweile international steigenden Projektzahl hat sich noch keine Best Practice ergeben, um diesen Risiken zu begegnen. Dadurch ist auch die Zahl der digitalen Tools für diesen Bereich noch sehr klein, die Liste der Desiderate an die Digital Humanities aber lang und äußerst divers. Beispielsweise sind für die Planung, die Sammlung, die Gesamtschau und die Quellenreferenzierung von Inhalten Datenbanken oder zumindest tabellarische Aufstellungen notwendig, für die noch keine Möglichkeit bestand, die aggregierten Inhalte auch automatisch mit der Twitter-Plattform zu verknüpfen.</p>
+<p>Dies hat sich mit der Bereitstellung der Software autoChirp geändert, die an der Kölner Informationsverarbeitung entwickelt wurde, um die Umsetzung entsprechender Twhistory-Projekte zu unterstützen. Zum einen vereinfacht autoChirp die Arbeit für die ErstellerInnen von Twitter-Timelines historischer Ereignisse, indem es eine Schnittstelle zum automatischen Upload von tabellarischen Sammlungen unterschiedlichen Formats anbietet. Dabei können neben dem gewünschten Datum, der genauen Uhrzeit und den Tweet-Text auch Bilder und Geolocations für den Tweet angegeben werden (vgl. Abb. 1). Auch können ganze Gruppen von Tweets per Mausklick auf eine neue Referenzzeit geschedulet werden.</p>
+<figure>
+<graphic height="10.556875cm" n="1001" rend="inline" url="poster-HERME-image1.png" width="15.927916666666667cm"/>
+</figure>
+<p>Abb. 1: Sceenshot des autoChirp-Web-Clients, mit dem eine Reihe von Tweets automatisch aus einer Tabelle geschedulet wurde. Das Web-Application-Frontend interagiert mit einer redundant angelegten Datenbank, um die Sicherung der in den verschiedenen Projekten generierten Tweets auch jenseits der Twitter-Plattform nachhaltig zu gewährleisten. </p>
+<p>Die autoChirp-App wird zur Zeit mindestens von den Twitter-Projekten @DigitalPast (
+                <ref target="http://digitalpast.de/">http://digitalpast.de/</ref>), @NRWHistory (
+                <ref target="http://nrwhistory.de/">http://nrwhistory.de/</ref>)und 
+                <ref target="https://twitter.com/goals_from_past">@goals_from_past</ref> genutzt und dabei unter anderem auch in der Lehre eingesetzt. Dabei stehen die EntwicklerInnen im engen Austausch mit den AnwenderInnen, um das Potential für Weiterentwicklungen abzuwägen. Aktuell wird die Integration von autoChirp in das Tiwoli-Projekt (vgl.Fischer &amp; Strötgen 2015) realisiert, was zeigt, dass nicht nur historische, sondern auch literaturwissenschaftliche Vorhaben von einer Unterstützung im Zugang zur Twitter-Plattform profitieren können. 
             </p>
 <p>
-<hi rend="italic">exploreAT!</hi> (vgl. Wandl-Vogt et al, 2015) bietet unterschiedliche Einblicke in die vielfältige Beschaffenheit der deutschen Sprache in Österreich, durch exploratives Erforschen mittels einer Synthese von digitalen Infrastrukturen, Lexikographie, visueller Analyse und Citizen Science. Das Projekt basiert auf einer Sammlung von Daten zu den  bairischen Dialekten in Österreich aus dem frühen 20. Jahrhundert aus der Region der ehemaligen österreichisch-ungarischen Monarchie. Die Datenerhebung erfolgte ursprünglich mittels Fragebögen, die eine Vielzahl von Themen aus dem Alltag abdecken. Die gesammelten Daten bestehen aus rund 200.000 Stichwörtern in geschätzten 4 Millionen Datensätzen. Teile davon wurden als fünfbändiges Wörterbuch mit etwa 50.000 Stichwörtern (WBÖ), und Teile als Datenbank (DBÖ) ausgegeben. Innerhalb des Projekts gibt es vier spezifische, aber miteinander verbundene Arbeitsbereiche: kulturelle Lexikographie, semantisch-technologieorientierte Forschungsinfrastrukturen, visuelle Analyse und Bürgerwissenschaften. Des Weiteren werden use-cases für spezifische Themen wie Pflanzennamen, Farben oder Lebensmitteln entwickelt. TEI / XML Schnittstellen werden eingesetzt, um die Organisation von Metadaten, Konzepten und linguistischen Daten zu verbessern. Darüber hinaus ist vorgesehen, weitere Zugangspunkte zur Arbeit mit LOD zu schaffen, ontologische Ressourcen zu nutzen und damit die Visualisierung von konzeptionellen und semantischen Informationen zu gewährleisten.
+<lb/>Für einen niederschwelligen Einstieg läuft eine Instanz von autoChirp als Web-Application zur freien Nutzung unter 
+                <ref target="https://autochirp.spinfo.uni-koeln.de/home">
+<hi rend="color(1155CC)">https://autochirp.spinfo.uni-koeln.de/</hi>
+</ref>. Dort finden sich auch ausführliche Tutorials zur Benutzung. Für Weiterentwicklungen steht der dokumentierte Code im Github-Verzeichnis 
+                <ref target="https://github.com/spinfo/autoChirp">
+<hi rend="color(1155CC)">https://github.com/spinfo/autoChirp</hi>
+</ref> zur Verfügung.
             </p>
-<p>Mit Hilfe des vorgestellten visuellen Analysetools werden weitere Einblicke in die komplexe Struktur dieser Dialektdaten gegeben, wobei ein intuitiver und leicht zugänglicher Ansatz vorgesehen ist. In diesem Beitrag nehmen wir Pflanzennamen als exemplarischen Fall für die visuelle Exploration, Analyse und Darstellung von Datenstrukturen.</p>
-<p>Der Prototyp dieses Tools basiert auf einer Treemap-Visualisierungsmethode (vgl. Shneiderman, 1992), da diese eine kompakte Art und Weise für die Übertragung von Hierarchien ermöglicht. Der Zweck des Tools besteht darin, ein Mittel zur interaktiven Erforschung der verfügbaren Daten bereitzustellen, so dass der Benutzer Verständnis dafür gewinnt, wie das Wissen, das sich auf ein bestimmtes Wort (oder eine Zeichenkette) bezieht, in der Datenbank "gespeichert" ist, wobei die jeweiligen Lemmata mit der Benutzerabfrage zusammenhängen. Abgesehen von der Darstellung des resultierenden Sets von Lemmata, bauen wir eine Hierarchie je nach Kontext der Lemmata (in diesem Fall sind wir daran interessiert, die Lemmata in Bezug auf verschiedene Pflanzenarten zu gruppieren). Deshalb verwenden wir die beiden wichtigsten visuellen Merkmale von Treemaps: a) das Treemap-Layout (basierend auf einem Satz von verschachtelten Rechtecken, wobei jedes Rechteck einen Zweig der Hierarchie darstellt, der dann mit kleineren Rechtecken, welche Unterzweige darstellen, gekachelt wird) und b) die Fläche jedes Rechtecks ​​(die proportional zur Größe der Daten ist).</p>
-<p>Da in diesem Prototyp Pflanzennamen von größter Bedeutung sind, aber dem Benutzer, der eventuell mit den wissenschaftlichen Namen der Pflanzen nicht vertraut ist, wichtige Information verborgen bleiben könnte, entschieden wir uns für eine visuelle Art den Kontext (Pflanzen) der Lemmata, die in Zusammenhang mit der Abfrage stehen, zu vermitteln: wir verwenden den Flickr-Webdienst, um Fotos abzurufen, die mit dem wissenschaftlichen Namen der Pflanze versehen sind (siehe Abbildung 1).</p>
-<figure>
-<graphic height="8.757708333333333cm" n="1001" rend="inline" url="poster-SELTM-image1.png" width="15.927916666666667cm"/>
-</figure>
-<p>Abbildung 1: Beispiel für eine visuelle Darstellung von Pflanzennamen mit verschachtelten Rechtecken. </p>
-<p>Als Ergebnis unseres visuellen Ansatzes kann der Benutzer die Verteilung der Lemmata in Abhängigkeit von den Pflanzen, auf die sie sich bezieht, verstehen (jedes Rechteck enthält das abgerufene Foto einer bestimmten Pflanze mit einem Bereich entsprechender Größe, die davon abhängt, wie viele Lemmata in Zusammenhang damit stehen). Der Benutzer kann dann auf das Rechteck seiner Wahl klicken, um tiefer zu gehen und alle relevanten Informationen für die mit dieser Pflanze zusammenhängenden Lemmata zu erhalten (siehe Abbildung 2).</p>
-<figure>
-<graphic height="8.757708333333333cm" n="1002" rend="inline" url="poster-SELTM-image2.png" width="15.927916666666667cm"/>
-</figure>
-<p>Abbildung 2: Beispiel für die Exploration von Pflanzennamen-Lemmata in einem bestimmten Rechteck, in diesem Fall Vaccinium myrtillus; Heidelbeere, Schwarzbeere, Blaubeere (siehe Abbildung 1).</p>
-<p>Schließlich öffnen sich künftige Arbeitsfelder dank der Tatsache, dass dieser visuelle Ansatz auch noch gültig ist, wenn wir die Lemmata nach anderen Kriterien (d.h. nach einer mehrstufigen Hierarchie) gruppieren. Zum Beispiel könnte man zuerst die Lemmata nach Pflanze gruppieren; dann könnte man für eine bestimmte Pflanze die dazugehörigen Lemmata nach Zeit gruppieren, die wiederum nach Regionen gruppiert werden. Mit diesen verschiedenen Arten der Gruppierung können diverse andere Daten mit einer ähnlichen strukturellen Beschaffenheit in derselben Weise visualisiert und analysiert werden. Dies würde unser Tool vielseitig und auch offen für andere Daten, nicht nur Pflanzennamen, machen.</p>
 </body>
 <back>
 <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-<hi rend="bold">Verbert, Karen</hi> (2015):
-                        „On the Use of Visualization for the Digital Humanities“
-                        in:
-                        <hi rend="italic">DH2015: Global Digital Humanities</hi>.
-                    </bibl>
-<bibl>
-<hi rend="bold">Wandl-Vogt, Eveline / Kieslinger, Barbara / O’Connor, Alexander / Theron, Roberto</hi>
-                        (2015):
-                        „exploreAT! Perspektiven einer Transformation am Beispiel eines lexikographischen Jahrhundertprojekts“,
-                        in:
+<hi rend="bold">Fischer, Frank / Strötgen, Jannik</hi> (2015):
+                        „Wann ﬁndet die deutsche Literatur statt? Zur Untersuchung von Zeitausdrücken in großen Korpora“,
+                        in: 
                         <hi rend="italic">DHd 2015: Von Daten zu Erkenntnissen</hi>.
                     </bibl>
 <bibl>
-<hi rend="bold">Shneiderman, Ben</hi> (1992):
-                        „Tree visualization with tree-maps: 2-d space-filling approach“,
-                        in:
-                        <hi rend="italic">ACM Transaction on Graphics (TOG)</hi> 11 (1): 92-99.
+<hi rend="bold">Hoffmann, Moritz</hi> (2015): 
+                        <hi rend="italic">Als der Krieg nach Hause kam</hi>.
+                        Berlin: Ullstein.
+                    </bibl>
+<bibl>
+<hi rend="bold">Strötgen, Jannik / Gertz, Michael</hi> (2012):
+                        „Temporal Tagging on Different Domains: Challenges, Strategies, and Gold Standards“,
+                        in 
+                        <hi rend="italic">Proceedings of LREC 2012</hi> 3746–3753. 
+                    </bibl>
+<bibl>
+<hi rend="bold">Zündorf, Irmgard</hi> (2010):
+                        „Zeitgeschichte und Public History, Version: 1.0“,
+                        in: 
+                        <hi rend="italic">Docupedia-Zeitgeschichte</hi>, 11.2.2010 
+                        <ref target="http://docupedia.de/docupedia/index.php?title=Public_History&amp;oldid=68731">http://docupedia.de/docupedia/index.php?title=Public_History&amp;oldid=68731</ref> [letzter Zugriff 24. August 2016].
                     </bibl>
 </listBibl>
 </div>

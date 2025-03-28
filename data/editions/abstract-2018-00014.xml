@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp">
+     xml:id="KLEYMANN_Rabea_Perspektiven_kritischer_Interfaces_für_die_Di">
    <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="full">
-                    <title type="main">Data models for Digital Editions: Complex XML versus Graph structures</title>
-                    <title type="sub"/>
-                </title>
+                <title>Perspektiven kritischer Interfaces für die Digital Humanities im 3DH-Projekt</title>
                 <author>
                     <persName>
-                        <surname>Bruder</surname>
-                        <forename>Daniel</forename>
+                        <surname>Kleymann</surname>
+                        <forename>Rabea</forename>
                     </persName>
-                    <affiliation>University of Cambridge, Vereinigtes Königreich</affiliation>
-                    <email>dmb77@cam.ac.uk</email>
+                    <affiliation>Universität Hamburg, Deutschland</affiliation>
+                    <email>Rabea.Kleymann@uni-hamburg.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Teufel</surname>
-                        <forename>Simone</forename>
+                        <surname>Meister</surname>
+                        <forename>Jan Christoph</forename>
                     </persName>
-                    <affiliation>University of Cambridge, Vereinigtes Königreich</affiliation>
-                    <email>sht25@cl.cam.ac.uk</email>
+                    <affiliation>Universität Hamburg, Deutschland</affiliation>
+                    <email>jan-c-meister@uni-hamburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Stange</surname>
+                        <forename>Jan-Erik</forename>
+                    </persName>
+                    <affiliation>Universität Hamburg, Deutschland</affiliation>
+                    <email>jan-erik.stange@uni-hamburg.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2018-01-14T09:22:17</date>
+                    <date>2018-01-14T22:00:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -40,7 +45,7 @@
             </t:address>
          </publicationStmt>
             <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
+                <p>Converted from a Word document </p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -59,240 +64,277 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Langzeitarchivierung</term>
-                    <term>Textauszeichnung</term>
-                    <term>Graphstrukturen</term>
+                    <term>Interpretation</term>
+                    <term>Visualisierung</term>
+                    <term>Interface</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Aufzeichnung</term>
-                    <term>Transkription</term>
-                    <term>Annotieren</term>
-                    <term>Bearbeitung</term>
-                    <term>Archivierung</term>
-                    <term>Sprache</term>
+                    <term>Entdeckung</term>
+                    <term>Gestaltung</term>
+                    <term>Modellierung</term>
+                    <term>Theoretisierung</term>
+                    <term>Visualisierung</term>
+                    <term>Visualisierung</term>
                 </keywords>
             </textClass>
         <settingDesc>
             <ab n="conference">DHd2018 - "Kritik der Digitalen Vernunft", Köln</ab>
-            <ab n="paperID">285</ab>
-            <ab n="session_ID">130</ab>
-            <ab n="session_numberInSession">3</ab>
-            <ab n="session_short">VP_5d</ab>
-            <ab n="session_title">Modellierung</ab>
-            <ab n="session_start">2018-03-01 11:00</ab>
-            <ab n="session_end">2018-03-01 12:30</ab>
+            <ab n="paperID">197</ab>
+            <ab n="session_ID">128</ab>
+            <ab n="session_numberInSession">1</ab>
+            <ab n="session_short">VP_1d</ab>
+            <ab n="session_title">Visualisierung I</ab>
+            <ab n="session_start">2018-02-28 09:00</ab>
+            <ab n="session_end">2018-02-28 10:30</ab>
          </settingDesc>
       </profileDesc>
     </teiHeader>
    <text>
         <body>
-            <p>In terms of longevity and collation of textual data in the humanities, digital data, notwithstanding its potential, still falls short the qualities of the traditionally printed book.</p>
-            <p>To streamline the diverse and idiosyncratic Digital Editions of the time and to establish a cross- and re-usable, durable digital archive of textual cultural artifacts, in 1988 the Text Encoding Initiative (TEI) was established with the goal to present a commonly shared standard for the transcription of literary, scientific and other forms of text.</p>
-            <p>As data model, the extensible markup language XML was chosen to assure longevity and exchangeability of the data. However, it turns out that XML, and with it, the data model of the hierarchically ordered tree are questionable choices for the recording of complex texts – as they are commonly found in the humanities – by potentially rendering the data ambiguous on semantic level.</p>
-            <p>The abstract idea behind the commonly shared tag set for the description of textual data is reflected in the 
-                <hi rend="italic">TEI abstract model</hi> (TEI Consortium 2016b) which uses XML as a serialisation format – but to which it is not bound:
-            </p>
-            <quote>The rules and recommendations made in these Guidelines are expressed in terms of what is currently the most widely-used markup language for digital resources of all kinds: the Extensible Markup Language (XML) […]. However, the TEI encoding scheme itself does not depend on this language […], and may in future years be re-expressed in other ways as the field of markup develops and matures.</quote>
-            <p>In the following, fundamental limitations of the tree data model are highlighted in spotlight fashion and contrasted with a graph based model for the sustainable recording and long-term archiving of complex textual data.</p>
             <div type="div1" rend="DH-Heading1">
-                <head>Limitations of the tree model</head>
-                <p>Paradoxically, Digital Editions as well as digital archives, tools, platforms and data repositories are not as interoperable in practice as one would theoretically expect from standardised sources. To be able to cross- or re-use data or tools between projects, in practice, serious refactoring and rededication is necessary – e.g. existing web platforms cannot readily be re-used by another project, notwithstanding the fact that the data repositories are fully validating, validating TEI-P5 sources. How is this possible?</p>
-                <p>As will be shown, this paradoxical situation of factually unattainable interoperability of editions and tools are a direct consequence of the choice of data model.</p>
-                <p>The decision towards XML and the tree data model is based on the OHCO assumption of text as an Ordered Hierarchy of Content Objects (DeRose et al. (1990); revised in Renear, Mylonas, and Durand (1993)). Contrasting the original goals (TEI Consortium 2016c) of interoperable long-term archivable data repositories with the status quo, this decision towards XML as the serialisation format needs to be critically questioned – particularly since the TEI Guidelines themselves very early on make clear that the assumption of data model behind XML is an improper simplification (TEI Consortium 2016a):</p>
-                <quote>Surprisingly perhaps, this grossly simplified view of what text is […] turns out to be very effective for a large number of purposes. It is not, however, adequate for the full complexity of real textual structures, for which more complex mechanisms need to be employed.</quote>
-                <p>Already two most basic constellations can lead to a necessary departure from the tree paradigm which could be described as ‘Complex XML’.</p>
-                <p>These situations are commonly resolved by using workarounds (TEI Consortium 2016d). Although 
-                    <hi rend="italic">syntactically</hi> permissible on the level of XML markup, these workarounds establish structures beyond the data model of the tree and can lead to misrepresentation of the data on 
-                    <hi rend="italic">semantic</hi>, modelling level, seriously harming effective re-use and long-term archiving.
+                <head>Einleitung</head>
+                <p>Eine Haupttätigkeit von LiteraturwissenschaftlerInnen ist die Interpretation von literarischen Texten. Unter „Interpretation“ wird „ein Sprechen oder Schreiben über Texte [verstanden], in dem ihnen auf methodische und argumentierende Weise Bedeutungen zugeschrieben werden“ (Albrecht et. al. 2015: 1). Mit dem Einzug digitaler Methoden in die literaturwissenschaftliche Praxis werden dabei insbesondere die Formen der Bedeutungszuschreibung und -produktion sowie die damit verbundene Frage nach einem Textverstehen zur Disposition gestellt (vgl. Rockwell/Sinclair 2016). Eine wichtige Rolle in der Gestaltung von digitalen Zugängen zur Textinterpretation spielen in diesem Kontext User Interfaces im Allgemeinen und interaktive Visualisierungen im Speziellen. Unter „Interfaces“ verstehen wir die gesamte visuelle Struktur und Bedienlogik einer Software, mit „Visualisierungen“ bezeichnen wir interaktive Teile des Interfaces, die Nutzern auf Daten (in diesem Fall Textdaten) basierende visuelle Repräsentationen zugänglich und diese manipulierbar machen.</p>
+                <p>Die Frage, wie solche Interfaces und Visualisierungen an den Bedürfnissen interpretierender LiteraturwissenschaftlerInnen orientiert sein sollten, um eine Textanalyse und -interpretation sinnvoll zu unterstützen, ist Teil des Forschungsanliegens des Projekts 3DH –
+                    <hi rend="italic">Dreidimensionale dynamische Datenvisualisierung und Exploration für Digital Humanities-Forschungen</hi> der Universität Hamburg.
+                    <ref target="ftn1" n="1"/>
                 </p>
-                <list type="unordered">
-                    <item>Data as well as tools inevitably become idiosyncratic, i.e. they irrevocably need to be handled on individual, project-specific basis; projects increasingly develop ‘private dialects’ and couple philologists and data scientists for actually accessing the data; data and tools are inaccessible to cross- and re-use between projects; finally, the possibility of a common digital archive is lost beyond recall.</item>
-                </list>
-                <list type="unordered">
-                    <item>Complex textual structures demand additional annotation to help and guide downstream tooling to not misrepresent the data. The transcription – in spite of valid, conforming data w.r.t. to the XML Schema – cannot automatically, i.e. without human intervention, be unambiguously resolved into its textual variants. </item>
-                    <item>The necessary supplementary annotation to one-unambiguously describe and model the source sets in motion a vicious circle of exponentially growing complexity in the data. Project-specific, idiosyncratic tools become necessary and must match this complexity. Moreover, such repositories typically suffer from overtagging (Hanrahan 2015), or, in the worst case need to be abandoned entirely (Schmidt et al. 2006).</item>
-                </list>
-                <list type="unordered">
-                    <item>Any further annotation or commentary only ever increases the complexity: any further annotation must match the existing complexity of the amended tree structure to accordingly be integrated; data and tools suffer from a ‘Heisenberg-Effect’ in that any further, more precise description of the source makes the data only ever more imprecise.</item>
-                </list>
+                <p>Vor dem Hintergrund, dass Interfaces und Visualisierungen in den Geisteswissenschaften eine wachsende Relevanz zugesprochen wird, plädieren wir für eine designbasierte kritische Perspektive. Darunter verstehen wir die Einbindung von Methoden aus dem nutzerzentrierten Design in die Tool-Entwicklung. Diese erlauben eine an Nutzerbedürfnissen und -erwartungen orientierte Gestaltung von Interfaces und Visualisierungen. Dieser Ansatz zielt darauf, die Grenzen der klassischen Verfahren der Datenerhebung und -verarbeitung, wie sie bereits von bestehenden Annotationstools (z. B. CATMA; siehe http://catma.de) unterstützt werden, neu auszuloten. </p>
+                <p>Zunächst stellen wir die aus unserer Sicht notwendigen normativen Anforderungen an ein kritisches Interface- und Visualisierungskonzept vor, um dann darzulegen, welche Strategie wir in der Gestaltung und Entwicklung solcher Interfaces und Visualisierungen verfolgen. Im Anschluss werden beispielhaft einzelne Wireframes diskutiert.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Complex XML</head>
-                <p>In contrast to a simple edition, i.e. one of linear text without any further annotation, the need for ‘Complex XML’, on most fundamental, level arises through: </p>
+                <head>Grundlagen eines kritischen Interface- und Visualisierungskonzeptes</head>
+                <p>Eine kritische Bestandsaufnahme aktueller Visualisierungstools und -metaphern und deren Anwendung in den Geisteswissenschaften (vgl. Bradley 2008; Drucker 2011, 2014; Gibbs/Owens 2012) führte im 3DH-Projekt zur Formulierung von vier konzeptionellen Postulaten.
+                    <ref target="ftn2" n="2"/> Definiert werden damit die Prinzipien, die einem Interface bzw. einer Visualisierung zugrunde gelegt werden müssen, sofern diese literaturwissenschaftliche Arbeitsprozesse sinnvoll unterstützen sollen. Es handelt sich um die Postulate 
+                </p>
                 <list type="ordered">
-                    <item>the edition of a non-linear text</item>
-                    <item>the edition of a linear text, open for annotation</item>
+                    <item>des „Two-Way-Screens“: Das Interface soll vom Renderer zum bidirektionalen Instrument werden; </item>
+                    <item>der „Qualität“: Die Visualisierung soll nicht nur der Repräsentation von Daten fungieren, sondern Möglichkeiten bieten, qualitative Beobachtungen und Aussagen zu tätigen;</item>
+                    <item>der „Parallaxe“: Die visuelle und epistemische Multiperspektivität einer Visualisierung soll gestärkt werden;</item>
+                    <item>der „Diskursivität“: Durch geeignete visuelle Erscheinungsformen und -verfahren soll die Generierung, Diskussion und Kritik von Hypothesen gefördert werden.</item>
                 </list>
-                <p>In essence, anything that is beyond linear text free of annotation cannot adequately be represented by a mono-hierarchical tree model and will need “more complex mechanisms” (TEI Consortium 2016a).</p>
+                <p>Die normativen Anforderungen an ein reflektiertes Interface- und Visualisierungskonzept rekurrieren auf die spezifischen Eigenschaften eines literaturwissenschaftlichen Arbeitsprozesses. Dieser folgt keinem finiten Set von methodischen Regeln oder Verfahrensweisen. Vielmehr tritt die Textanalyse und -interpretation als komplexer epistemisch und ästhetisch geformter sowie zirkulär organisierter Prozess auf, der sich als in hohem Maße subjektiv und kontextsensitiv erweist (vgl. Winko 2015: 486). </p>
+                <p>Für die praktische Entwicklung literaturwissenschaftlicher Interfaces und Visualisierungen gehen wir von zwei Annahmen aus. </p>
+                <p>Die Komplexität des Interpretationsprozesses kann erstens auf eine Reihe von grundlegenden „routineförmige[n] Tätigkeiten“ (Albrecht et al. 2015: 2) bzw. „scholarly primitives“ (Unsworth 2000) zurückgeführt werden, die iterativ von LiteraturwissenschaftlerInnen zur Bedeutungszuweisung durchgeführt werden. Diese routineförmigen Tätigkeiten sind „oftmals nicht vollständig durch explizierbare Regeln oder Methoden bestimmt, sondern [beruhen] in hohem Maße auf implizitem Wissen und Können“ (Albrecht et al. 2015: 2).</p>
+                <p>Zweitens nehmen wir an, dass nutzerzentrierte Gestaltung als etablierter Prozess, dessen Methodenrepertoire sich sowohl aus dem an der Praxis orientierten Design speist, als auch aus der eher wissenschaftlich orientierten Human-Computer-Interaction (HCI), als Vorgehen besonders geeignet ist, implizites Wissen und Können von Nutzern herauszufinden. In diesem Sinne steht die Entwicklung eines Interfaces nicht am Ende „as an afterthought, thrown together after completing the core functionality” (Gibbs/Owens 2012), sondern ist Teil der Ausdifferenzierung und Analyse von Textinterpretation. Mit der Integration von Designmethoden, so die Argumentation des 3DH-Projekts, begegnen wir der von Gibbs und Owens beklagten mangelnden Nutzerzentriertheit bestehender DH-Annotationstools.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Annäherung an die literaturwissenschaftliche Arbeitspraxis über nutzerzentrierte Szenarien</head>
+                <p>Mithilfe von Szenarien werden besagte ‚routineförmige Tätigkeiten‘ untersucht und erfassbar gemacht.
+                    <ref target="ftn3" n="3"/> Kollaborativ wurden bislang drei generische Szenarien konstruiert, die das Spektrum typischer interpretierender Forschungstätigkeiten repräsentieren.
+                    <ref target="ftn4" n="4"/>
+                </p>
+                <p>Die Konzepte erstrecken sich vom klassischen „Close Reading“-Beispiel mit Fokus auf noch nicht taxonomisch gelenkte freie Annotationen und Kommentare bis zum „Distant Reading“-Beispiel unter Anwendung des probabilistischen Verfahrens „Topic Modeling“.</p>
+                <p>Analog zur Konstruktion der Szenarien ist auch der von uns verfolgte nutzerzentrierte Gestaltungsprozess typischerweise durch ein iteratives Vorgehen gekennzeichnet.
+                    <ref target="ftn5" n="5"/>
+                </p>
+                <p>Abbildung 1 zeigt eine Auswahl von Varianten sogenannter „Wireframes“, d.h. von Designskizzen zu einem Interface für die Tätigkeit „Kommentieren“ in dem Szenario „Exploration freier Annotationen zwecks Schärfung der literaturwissenschaftlichen Fragestellung“.</p>
+                <figure>
+                    <graphic n="1001"
+                        width="15.531041666666667cm"
+                        height="11.567583333333333cm"
+                        rend="inline"
+                        url="KLEYMANN_Rabea_Perspektiven_kritischer_Interfaces_f_r_die_Di-image1.png"/>
+                    <head>Abb.1: Wireframes für ein Interface zur Funktion „Kommentieren“ in dem Szenario „Exploration freier Annotationen zwecks Schärfung der literaturwissenschaftlichen Fragestellung“.</head>
+                </figure>
+                <figure>
+                    <graphic n="1002"
+                        width="16.002cm"
+                        height="11.567583333333333cm"
+                        rend="inline"
+                        url="KLEYMANN_Rabea_Perspektiven_kritischer_Interfaces_f_r_die_Di-image2.png"/>
+                </figure>
+                <p>In der Abbildung wird der Entwicklungsstand der visuellen Gestaltung dieser Tätigkeit zu zwei verschiedenen Zeitpunkten sichtbar. Der untere Wireframe präsentiert einen fortgeschrittenen Stand. Die Wireframes illustrieren die Verschränkung einzelner Tätigkeiten, die im Szenario beschrieben werden. Hier sieht man etwa den Zusammenhang zwischen den Tätigkeiten „Annotieren“ und „Kommentieren“ dargestellt, in dem Sinne, dass ein Kommentar in der Regel (wenn auch nicht immer) einer Annotation zugeordnet ist, die eine diskrete Position im Text besitzt, also häufig nicht isoliert von der Tätigkeit des Annotierens betrachtet werden kann.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Erste Ergebnisse und Schlussfolgerungen</head>
+                <p>Bereits in diesem grob umrissenen Beispiel von Varianten einer visuellen Unterstützung der Tätigkeit „Kommentieren“, manifestieren sich zwei der wesentlichen Herausforderungen an die Erarbeitung und Implementierung eines kritischen Interface- und Visualisierungskonzeptes:</p>
                 <div type="div2" rend="DH-Heading2">
-                    <head>Complex XML through non-linear text</head>
-                    <p>Non-linear text results from editorial operations such as insertions, deletions, substitutions. For instance, recording the genealogical writing process of two undecided variants within the same sentence, yields four different, non-linear potential readings.</p>
+                    <head>Überlagerung und Wechselwirkung routinemäßiger Tätigkeiten im Interface</head>
                     <p>
-                        <figure>
-                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-10000201000004BC0000013C2C948493.png"/>
-                        </figure>
-                        <p>These four different readings derived from mechanical re-combination potentially are not intended and to be reduced to specific readings only.</p>
+                        <anchor xml:id="gjdgxs"/>Aufgabe der Designiterationen von Szenarien und Wireframes wird es sein, für die Überlagerung und Wechselwirkung der routinemäßigen Tätigkeiten in der Gestaltung des Interfaces eine adäquate Entsprechung zu finden.
                     </p>
-                    <p>
-                        <figure>
-                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-100002010000048C000000D02F5C458C.png"/>
-                        </figure>
-                        <p>Constraining these combinatorial permutations cannot be done in general ways within the mono-hierarchical tree data model. The tree model exposes a general limitation – even without the prevalence of overlapping structures.</p>
+                    <p>Auf Grundlage der bisher erstellten Wireframes für die drei Szenarien ließen sich zwei Modi des literaturwissenschaftlichen Interpretationsverfahrens ausmachen. Zum einen besteht der Interpretationsprozess aus Tätigkeiten, die primär die analytische, investigative Erforschung des Textes adressieren (Annotieren, Sammeln, Kommentieren).
+                        <ref target="ftn6" n="6"/> Komplementär dazu verhalten sich zum anderen die argumentativen, vornehmlich synthetisierenden Tätigkeiten der Textinterpretation (Gruppieren, Ordnen, Strukturieren). Um den literaturwissenschaftlichen Arbeitsprozess adäquat unterstützen zu können, so unsere Annahme, müssen Interfaces beide Modi in enger Verschränkung umfassen und stetigen Wechsel zwischen diesen ermöglichen. Abbildung 2 zeigt einen ersten Versuch, die Ebene der Bedeutungsproduktion – von uns als „semantic plane“ bezeichnet – d.h. die Ebene, die analytische und synthetisierende Tätigkeiten umfasst und miteinander verknüpft, in die Interface-Entwürfe zu integrieren.
                     </p>
-                    <p>
-                        <figure>
-                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-100002010000045E000001E8B4A5A17E.png"/>
-                        </figure>
-                        <p>While interconnecting nodes across the tree’s boundaries by (ab-)using attributes is syntactically possible it nevertheless makes the data idiosyncratic on semantic level, i.e. project-specific rules are introduced and must individually be followed when working with the data.</p>
-                    </p>
-                    <p>
-                        <figure>
-                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-10000201000004BA000002160FBA5023.png"/>
-                        </figure>
-                        <p>These interconnections to constrain the combinatorics to specific readings cannot formally be made part of the tree structure itself. To build a tree, any node in the tree must have exactly one parent. A different data model and data structure is necessary to model more than one parent for one node, namely the data model of the graph.</p>
-                    </p>
-                    <p>
-                        <figure>
-                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-100002010000047E00000106D01A4E37.png"/>
-                        </figure>
-                    </p>
+                    <figure>
+                        <graphic n="1003"
+                           width="15.9288cm"
+                           height="11.655219444444445cm"
+                           rend="inline"
+                           url="KLEYMANN_Rabea_Perspektiven_kritischer_Interfaces_f_r_die_Di-image3.png"/>
+                        <head>Abb.2: Versuch der Integration der „semantic plane“ über die vom User vollzogene Positionierung von Elementen.</head>
+                    </figure>
                 </div>
                 <div type="div2" rend="DH-Heading2">
-                    <head>Complex XML through meta-data</head>
-                    <p>Complex XML can also result from linear text, open for annotation. The following schematic example shows a linear text with overlapping annotation:</p>
-                    <p>
-                        <figure>
-                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-10000201000004B4000001104AB5DE41.png"/>
-                        </figure>
+                    <head>Flexibilität und Manipulierbarkeit von Visualisierungen</head>
+                    <p>Um eine flexiblere Unterstützung des literaturwissenschaftlichen Arbeitsprozesses im Interface zu ermöglichen, ist ferner der Einsatz unterschiedlicher Visualisierungen sinnvoll (vgl. Cheema et al. 2015). Diese sollten vergleichbar sein in ihren Resultaten und ihre Darstellungsform, Interaktivität und der jeweils repräsentierte Datenausschnitt sollte individuell bestimmbar sein. </p>
+                    <p>Im Interesse einer Justierbarkeit der Visualisierungen orientieren wir uns an den Visualisierungssystematiken, wie sie Wilkinson mit seinem „Grammar-of-Graphics“-Ansatz vorschlägt (vgl. Wilkinson et al. 2005). Es existieren bereits verschiedene Implementierungen dieses Ansatzes, die es erlauben, die oben genannten Parameter einer Visualisierung mithilfe einer Grammatik beschreibbar und manipulierbar zu machen (vgl. Satyanarayan et al. 2017). In unserem Kontext ist die deklarative Sprache VEGA
+                        <ref target="ftn7" n="7"/> interessant, die auf der verbreiteten Javascript-Visualisierungsbibliothek D3
+                        <ref target="ftn8" n="8"/> beruht und es Nutzerinnen und Nutzern ermöglichen würde, ihre Visualisierungsspezifikationen in JSON zu formulieren.
                     </p>
-                    <p>Corresponding serialisation using XML and the segmentation method (TEI Consortium 2016d):</p>
-                    <p>
-                        <figure>
-                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-10000201000004A800000186D676681C.png"/>
-                        </figure>
-                    </p>
-                    <p>The necessary interconnection and recombination of fragmented nodes cannot be modelled within the tree structure in general ways:</p>
-                    <p>
-                        <figure>
-                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-10000201000004960000018CF71AE149.png"/>
-                        </figure>
-                    </p>
-                    <p>Another representation shows how one node in the tree is made the child of two parents:</p>
-                    <p>
-                        <figure>
-                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-100002010000040A0000012A52D7B195.png"/>
-                        </figure>
-                    </p>
+                    <p>Im Sinne einer nutzerzentrierten Gestaltung ist es wichtig, diese Funktionalitäten an die unterschiedlichen Vorkenntnisse der Nutzerinnen und Nutzer anpassen zu können. Weniger fortgeschrittene Nutzerinnen und Nutzer sollen stets auf Standardvisualisierungen zurückgreifen können. Unserem Anspruch gemäß steht die Unterstützung des interpretierenden Prozesses als Ganzheit mit dem Interface im Vordergrund.</p>
                 </div>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>The relationship between graphs and trees</head>
-                <p>Trees and graphs are closely related: An ordered tree is a special form of graph with the properties of 
-                    <hi rend="italic">a)</hi> it is a directed graph without cycles, 
-                    <hi rend="italic">b)</hi> has one designated root node and 
-                    <hi rend="italic">c)</hi> any node has exactly one parent node.
-                </p>
-                <p>As was shown in the previous basic examples, there is strictly no possibility to interconnect nodes of the tree across branches of the tree. By trying to associate two parents to one node, the tree paradigm is effectively abandoned, and results in a permanent need for case-specific handling to resolve potential ambiguities in the data.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Conclusion</head>
-                <p>Digital Editions wanting to model more than just simple structures can – notwithstanding the syntactical possibilities of XML – not be represented in interoperable ways within the paradigm of the tree data model, making longevity and uniformly re-usable digital archives impossible.</p>
-                <p>Alternative, graph-theoretic attempts to solve this problem have been suggested and could implement the 
-                    <hi rend="italic">TEI abstract model</hi> through an adequate data structure (Huitfeldt 1994; Barnard et al. 1995; Sperberg-McQueen and Huitfeldt 2000; Huitfeldt and Sperberg-McQueen 2001; Durusau and O'Donnell 2002; Tennison and Piez 2002; Dipper 2005; Dekhtyar and Iacob 2005; Banski and Przepiórkowski 2009; Di Iorio, Peroni, and Vitali 2010; Di Iorio, Peroni, and Vitali 2011; Schmidt and Colomb 2009; Schmidt 2014; Götze and Dipper 2006; Peroni, Vitali, and Di Iorio 2009; Witt 2007; Kuczera 2016).
-                </p>
-                <p>Yet, the question of an adequate serialisation and exchange format to any such data structure remains open. To be able to give guarantees of long term storage and archiving, any such serialisation format must be able to one-unambiguously represent the source as well as data structure. Ideally, any such serialisation format should be both machine readable as well as human intelligible and independent of existing computer hardware and software.</p>
-                <p>Previous graph-based approaches for the recording of complex textual data either did not catch on or have been abandoned for reasons of complexity in implementation or usage.</p>
-                <p>Because of the choice of data model, current repositories are idiosyncratic and tools and data must be handled on individual basis. In order to be able to build general digital archives fully interoperable data repositories are necessary. Interoperability is closely connected to the choice of data model. The TEI abstract model should be implemented as a graph structure, however, the graph structure is in need of a suitable exchange and serialisation format.</p>
-                <p>The commonly shared property between former graph-based approaches is the use of embedded markup. It is conjectured that future research on suitable serialisation formats for graph-based approaches should re-evaluate standoff based markup for the durable recording of Digital Editions.</p>
+                <head>Fazit</head>
+                <p>Ein reflektiertes Interface- und Visualisierungskonzept ist nach unserer Einschätzung besonders relevant, um eine Durchdringung und Neuausrichtung der Verfahren und Zugänge der Datenverarbeitung und -exploration der Textanalyse und –interpretation zu unterstützen. Die Integration von Methoden aus dem nutzerzentrierten Design stellt in diesem Kontext einen noch kaum erprobten Weg dar, um neue Tools in den DH zu entwickeln. So dient unsere designbasierte kritische Perspektive, die im Sinne einer Interface- und Visualisierungsutopie zu verstehen ist, letztlich auch der „epistemologischen Selbstaufklärung“ (Albrecht et al. 2015, 10) der literaturwissenschaftlichen Disziplin. Denn wie im 3DH-Projekt bereits deutlich wird, trägt ein reflektiertes Interface- und Visualisierungskonzept zur interdisziplinären Methodendiskussion in der Literaturwissenschaft bei. </p>
+                <p>Um den Mehrwert eines Interface- und Visualisierungskonzepts praktisch belegen zu können, wird eine sorgfältige Überprüfung unserer auf den Szenarien beruhenden Annahmen notwendig sein. Während das informelle Feedback von Expertinnen und Experten zwar hilfreich sein kann, so erlaubt es doch noch keine Rückschlüsse auf die tatsächliche Eignung und Aufgabenangemessenheit der Interfaces und Visualisierungen in der Praxis. Vorgesehen ist deshalb, im nächsten Schritt das bisher nur in Form statischer Wireframes umgesetzte Konzept in Form von funktionalen Interaktions-Prototypen mit Nutzern zu testen, um belastbarere Aussagen über seine Validität zu erhalten. </p>
             </div>
         </body>
         <back>
+         <div type="notes">
+            <note xml:id="ftn1" n="1"> Das Projekt 
+                            <hi rend="italic">3DH – Dreidimensionale dynamische Datenvisualisierung und Exploration für Digital Humanities-Forschungen</hi> wird in der ersten Projektphase (02/2016 – 01/2019) von der Behörde für Wissenschaft, Forschung und Gleichstellung gefördert. Für weitere Informationen vgl. 
+                            <ref target="http://www.threedh.net">
+                                <hi rend="underline">www.threedh.net</hi>
+                            </ref> [letzter Zugriff: 07.09.2017].
+                        </note>
+            <note xml:id="ftn2" n="2"> Einige Digital-Humanities-Tools und Forschungsansätze, die auf die Unterstützung von hermeneutischen Prozessen zielen: Pliny und TEASys.</note>
+            <note xml:id="ftn3" n="3"> Der Begriff „Szenario“ wird im Projekt in seiner Bedeutung als Methode und essentieller Bestandteil eines nutzerzentrierten Designprozesses nach Rosson/Carroll (2009) verwendet: „Scenarios of use reconcile concreteness and flexibility. [...] Initial scenarios are often extremely rough. They specify a possible design by specifying the tasks users can carry out, but without committing to lower-level details describing how the tasks will be carried out, or how the system will present the functionality for the tasks.”</note>
+            <note xml:id="ftn4" n="4"> Szenarien:(1) Exploration freier Annotationen zwecks Schärfung der literaturwissenschaftlichen Fragestellung(2) Themenexploration in einem größeren Textkorpus – Topic Modeling(3) Exploration taxonomiebasierter Annotationen zur Auswertung strukturierter TextanalysenWährend die ursprüngliche Fassung der Szenarien auf den Erfahrungen literaturwissenschaftlicher Forschungstätigkeit im eigenen Team basierte, haben wir diese im Rahmen eines Workshops (5.-7. August 2017) mit Johanna Drucker, Geoffrey Rockwell, Marian Dörk und Evelyn Gius überarbeitet.</note>
+            <note xml:id="ftn5" n="5"> Grundsätzlich lassen sich vier Phasen unterscheiden nach DIN EN ISO 9241-210:1. Analyse, Beschreibung und Verständnis des Nutzungskontextes2. Spezifikation der Nutzungsanforderungen3. Gestaltungslösungen entwerfen4. Evaluation der entworfenen Gestaltungslösungen aus NutzerperspektiveMit jeder Iteration steigt die Komplexität und/oder der Grad ästhetischer Qualität der Entwürfe. Während zu Beginn mit einfachen Handskizzen von Abläufen im Interface gearbeitet wird (Wireframes), kommen später Papierprototypen zum Einsatz, Screendesigns und schließlich auch interaktive Mock-Ups oder sogar Prototypen. Die Evaluation kann ebenfalls unterschiedliche Formen annehmen. Während in frühen Stadien Entwürfe eher informell diskutiert werden oder in Workshops mit Nutzern und Experten aller beteiligten Fachrichtungen ergänzt und erweitert werden, können spätere interaktive Entwurfsformen auch mit Probanden in qualitativen Nutzertests getestet werden. </note>
+            <note xml:id="ftn6" n="6"> Vgl. auch Winkos Ausführungen zur Differenzierung von Textanalyse und -interpretation (2003: 598): “Textanalysen basieren auf sprachlichen, formalen und strukturellen Informationen und greifen in erster Linie auf intratextuelle sowie auf denjenigen Typ extratextueller Kontexte zurück, der zum primären Verständnis vorauszusetzen ist; Interpretationen dagegen setzen Ergebnisse der Textanalyse voraus, und es dominiert tendenziell der Rekurs auf weitergehende, insbesondere inter- und extratextuelle Kontexte. Darüber hinaus sind Hypothesen über die Bedeutung eines Textes in Interpretationen komplexer als in Textanalysen.”</note>
+            <note xml:id="ftn7" n="7"> VEGA – A Visualization Grammar: 
+                                <ref target="https://vega.github.io/vega/">
+                                    <hi rend="underline">https://vega.github.io/vega/</hi>
+                                </ref>
+                            </note>
+            <note xml:id="ftn8" n="8"> D3 – Data-Driven Documents: 
+                                <ref target="https://d3js.org/">
+                                    <hi rend="underline">https://d3js.org/</hi>
+                                </ref>
+                            </note>
+         </div>
          <div type="bibliogr">
                 <listBibl>
-                    <head>Bibliography</head>
-                    <bibl><hi rend="bold">Banski, Piotr, and Adam Przepiórkowski. </hi>2009. “Stand-Off TEI Annotation: The Case of the National Corpus of P
-                        <hi rend="italic">olish.” In Proceedings of the Third Linguistic Annotati</hi>on Workshop, 64–67. Association for Computational Linguistics.
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Albrecht, Andrea / Danneberg, Lutz / Krämer, Olav / Spoerhase, Carlos</hi> (Hg.) (2015): 
+                        <hi rend="italic">Theorien, Methode und Praktiken des Interpretierens.</hi> Berlin: de Gruyter.
                     </bibl>
-                    <bibl><hi rend="bold">Barnard, David T, Lou Burnard, Jean-Pierre Gaspart, Lynne A Price, CM Sperberg-McQueen, and Giovanni Battista Varile. </hi>1995. “Hierarchical Encoding of Text: Technical Problems and SGML Solutions.” In 
-                        <hi rend="italic">Text Encoding Initiative</hi>, 211–31. Springer.
+                    <bibl>
+                        <hi rend="bold">Bradley, John</hi> (2008): “Thinking about interpretation: Pliny and scholarship in the humanities”, in: 
+                        <hi rend="italic">Literary and linguistic computing</hi>, 23(3), 263-279.
                     </bibl>
-                    <bibl><hi rend="bold">Dekhtyar, Alex, and Ionut E Iacob. </hi>2005. “A Framework for Management of Concurrent XML Markup.” 
-                        <hi rend="italic">Data &amp; Knowledge Engineering</hi> 52 (2). Elsevier:185–208.
+                    <bibl>
+                        <hi rend="bold">Bühler, Axel</hi> (2003): “Interpretieren - Vielfalt oder Einheit?”, in: Jannidis, Fotis / Lauer, Gerhard / Martínez, Matías / Winko, Simone (Hg.): 
+                        <hi rend="italic">Regeln der Bedeutung. Zur Theorie der Bedeutung literarischer Texte.</hi> Berlin: De Gruyter (Revisionen, 1) 169-181.
                     </bibl>
-                    <bibl><hi rend="bold">DeRose, Steven J., David G. Durand, Elli Mylonas, and Allen H. Renear. </hi>1990. “What is text, really.” 
-                        <hi rend="italic">Journal of Computing in Higher Education</hi> 1 (2). Springer Nature:3–26. 
-                        <ptr target="https://doi.org/10.1007/bf02941632"/>.
+                    <bibl>
+                        <hi rend="bold">Cheema, Muhammad F. / Jänicke, Stefan / Franzini, Greta / Scheuermann, Gerik</hi> (2015): “On Close and Distant Reading in Digital Humanities: A Survey and Future Challenges“, in: 
+                        <hi rend="italic">Eurographics Conference on Visualization</hi> (EuroVis) - STARs 83-103. 
+                        <ref target="https://www.informatik.uni-leipzig.de/~stjaenicke/Survey.pdf">
+                            <hi rend="underline">https://www.informatik.uni-leipzig.de/~stjaenicke/Survey.pdf </hi>
+                        </ref>[letzter Zugriff: 10.09.2017]
                     </bibl>
-                    <bibl><hi rend="bold">Di Iorio, Angelo, Silvio Peroni, and Fabio Vitali. </hi>2010. “Handling markup overlaps using OWL.” In 
-                        <hi rend="italic">Knowledge Engineering and Management by the Masses</hi>, 391–400. Springer.
+                    <bibl>
+                        <hi rend="bold">Drucker, Johanna</hi> (2011): “Humanities Approaches to Graphical Display”, in: 
+                        <hi rend="italic">DH Quarterly</hi>, 5(1).
+                        <ref target="http://digitalhumanities.org/dhq/vol/5/1/000091/000091.html">
+                            <hi rend="underline">http://digitalhumanities.org/dhq/vol/5/1/000091/000091.html</hi>
+                        </ref> [letzter Zugriff: 20.09.2017]
                     </bibl>
-                    <bibl><hi rend="bold">Di Iorio, Angelo, Silvio Peroni, and Fabio Vitali. </hi>2011. “A Semantic Web Approach to Everyday Overlapping Markup.” 
-                        <hi rend="italic">Journal of the American Society for Information Science and Technology</hi> 62 (9). Wiley Online Library:1696–1716.
+                    <bibl>
+                        <hi rend="bold">Drucker, Johanna</hi> (2014): 
+                        <hi rend="italic">Graphesis: Visual Forms of Knowledge Production</hi>. MetaLABprojects. Cambridge, Massachusetts: Harvard University Press.
                     </bibl>
-                    <bibl><hi rend="bold">Dipper, Stefanie. </hi>2005. “XML-Based Stand-Off Representation and Exploitation of Multi-Level Linguistic Annotation.” In 
-                        <hi rend="italic">Berliner XML Tage</hi>, 39–50.
+                    <bibl>
+                        <hi rend="bold">Gadamer, Hans-Georg</hi> (1960, 1990): 
+                        <hi rend="italic">Hermeneutik I. Wahrheit und Methode. Grundzüge einer philosophischen Hermeneutik.</hi> Tübingen: Mohr.
                     </bibl>
-                    <bibl><hi rend="bold">Durusau, Patrick, and M Brook O'Donnell. </hi>2002. “Concurrent Markup for XML Documents.” In 
-                        <hi rend="italic">Proc. XML Europe</hi>.
+                    <bibl>
+                        <hi rend="bold">Gibbs, Fred / Owens, Trevor</hi> (2012): “Building better digital humanities tools”, in: 
+                        <hi rend="italic">DH Quarterly</hi>, 6(2).
                     </bibl>
-                    <bibl><hi rend="bold">Götze, Michael, and Stefanie Dipper. </hi>2006. “ANNIS: Complex Multilevel Annotations in a Linguistic Database.” In 
-                        <hi rend="italic">Proceedings of the 5</hi>
-                        <hi rend="sup italic">th</hi>
-                        <hi rend="italic"> Workshop on NLP and XML: Multi-Dimensional Markup in Natural Language Processing</hi>, 61–64. Association for Computational Linguistics.
+                    <bibl>
+                        <hi rend="bold">Grinstein, Georges</hi> (2012): “New Grand Challenges in Information Visualization: New Theories, New Devices, and New Capabilities“, in: 
+                        <hi rend="italic">Keynote address at iV2012</hi>.
                     </bibl>
-                    <bibl><hi rend="bold">Hanrahan, Elise. </hi>2015. “Over-Tagging with XML in Digital Scholarly Editions.” In 
-                        <hi rend="italic">DHd2015 Conference – von Daten Zu Erkenntnissen. Book of Abstracts.</hi>, edited by Various, 162–65. Graz, Austria.
+                    <bibl>
+                        <hi rend="bold">Jannidis, Fotis / Lauer, Gerhard / Martínez, Matías / Winko, Simone</hi> (2003): “Der Bedeutungsbegriff in der Literaturwissenschaft. Eine historische und systematische Skizze”, in: dies. (Hg.): 
+                        <hi rend="italic">Regeln der Bedeutung. Zur Theorie der Bedeutung literarischer Texte</hi>. Berlin: De Gruyter (Revisionen, 1) 3-32.
                     </bibl>
-                    <bibl><hi rend="bold">Huitfeldt, Claus. </hi>1994. “Multi-Dimensional Texts in a One-Dimensional Medium.” 
-                        <hi rend="italic">Computers and the Humanities</hi> 28 (4-5). Springer:235–41.
+                    <bibl>
+                        <hi rend="bold">Kindt, Tom / Köppe, Tilmann</hi> (2008): “Einleitung”, in: dies. (Hg.): 
+                        <hi rend="italic">Moderne Interpretationstheorien. Ein Reader.</hi> Göttingen: Vandenhoeck &amp; Ruprecht 7-26.
                     </bibl>
-                    <bibl><hi rend="bold">Huitfeldt, Claus, and CM Sperberg-McQueen. </hi>2001. “TexMECS: An Experimental Markup Meta-Language for Complex Documents.” 
-                        <hi rend="italic">URL Http://Www. Hit. Uib. No/Claus/Mlcd/Papers/Texmecs. Html</hi>.
+                    <bibl>
+                        <hi rend="bold">Nünning, Ansgar</hi> (Hg.) (2008): 
+                        <hi rend="italic">Metzler Lexikon. Literatur- und Kulturtheorie. Ansätze - Personen - Grundbegriffe.</hi> Stuttgart: Metzler 281-284.
                     </bibl>
-                    <bibl><hi rend="bold">Kuczera, Andreas. </hi>2016. “Digital Editions Beyond Xml – Graph-Based Digital Editions.” In 
-                        <hi rend="italic">Proceedings of the 3</hi>
-                        <hi rend="sup italic">rd</hi>
-                        <hi rend="italic"> Histoinformatics Workshop on Computational History (Histoinformatics 2016)</hi>, edited by Johannes Preiser-Kappeller Marten Düring Adam Jatowt.
+                    <bibl>
+                        <hi rend="bold">Nünning, Vera</hi> (2010): 
+                        <hi rend="italic">Methoden der literatur- und kulturwissenschaftlichen Textanalyse. Ansätze – Grundlagen – Modellanalysen.</hi> Stuttgart: Metzler 1-29.
                     </bibl>
-                    <bibl><hi rend="bold">Peroni, Silvio, Fabio Vitali, and Angelo Di Iorio. </hi>2009. “Towards markup support for full GODDAGs and beyond: the EARMARK approach.” 
-                        <ptr target="https://doi.org/10.4242/BalisageVol3.Peroni01"/>.
+                    <bibl>
+                        <hi rend="bold">Rosson, Mary B. / Carroll, John M.</hi> (2009): 
+                        <hi rend="italic">Scenario based design. Human‐computer interaction.</hi> Boca Raton, FL, 145-162.
                     </bibl>
-                    <bibl><hi rend="bold">Renear, Allen H, Elli Mylonas, and David Durand. </hi>1993. “Refining Our Notion of What Text Really Is: The Problem of Overlapping Hierarchies.” Oxford University Press.</bibl>
-                    <bibl>Schmidt, Desmond. 2014. “Towards an Interoperable Digital Scholarly Edition.” 
-                        <hi rend="italic">Journal of the Text Encoding Initiative</hi>, no. 7. Text Encoding Initiative Consortium.
+                    <bibl>
+                        <hi rend="bold">Satyanarayan, Arvind / Moritz, Dominik / Wongsuphasawat, Kanit / Heer, Jeffrey</hi> (2017): “Vega-Lite: A Grammar of Interactive Graphics”, in: I
+                        <hi rend="italic">EEE transactions on visualization and computer graphics</hi> 23(1), 341–350. DOI: 10.1109/TVCG.2016.2599030. [letzter Zugriff: 18.09.2017]
                     </bibl>
-                    <bibl><hi rend="bold">Schmidt, Desmond, and Robert Colomb. </hi>2009. “A Data Structure for Representing Multi-Version Texts Online.” 
-                        <hi rend="italic">International Journal of Human-Computer Studies</hi> 67 (6). Elsevier:497–514.
+                    <bibl>
+                        <hi rend="bold">Unsworth, John</hi> (2000): "Scholarly Primitives: What Methods Do Humanities Researchers Have in Common, and How Might Our Tools Reflect This?", in: 
+                        <hi rend="italic">Symposium on Humanities Computing: formal methods, experimental practice.</hi> King’s College London, 2000.
+                        <ref target="http://people.brandeis.edu/%7Eunsworth/Kings.5-00/primitives.html"> </ref>
+                        <ref target="http://people.brandeis.edu/%7Eunsworth/Kings.5-00/primitives.html">
+                            <hi rend="underline">http://people.brandeis.edu/~unsworth/Kings.5-00/primitives.html</hi>
+                        </ref>.[letzter Zugriff: 18.09.2017]
                     </bibl>
-                    <bibl><hi rend="bold">Schmidt, Thomas, Christian Chiarcos, Timm Lehmberg, Georg Rehm, Andreas Witt, and Erhard Hinrichs. </hi>2006. “Avoiding Data Graveyards: From Heterogeneous Data Collected in Multiple Research Projects to Sustainable Linguistic Resources.” In 
-                        <hi rend="italic">6</hi>
-                        <hi rend="sup italic">th</hi>
-                        <hi rend="italic"> E-Meld Workshop, Ypsilanti</hi>.
+                    <bibl>
+                        <hi rend="bold">Wilkinson, Leland</hi> (2006): 
+                        <hi rend="italic">The grammar of graphics</hi>. New York: Springer Science &amp; Business Media.
                     </bibl>
-                    <bibl><hi rend="bold">Sperberg-McQueen, C Michael, and Claus Huitfeldt. </hi>2000. “GODDAG: A Data Structure for Overlapping Hierarchies.” In 
-                        <hi rend="italic">Digital Documents: Systems and Principles</hi>, 139–60. Springer.
+                    <bibl>
+                        <hi rend="bold">Winko, Simone</hi> (2003): “Textanalyse”, in: Georg Braungart / Harald Fricke / Klaus Grubmüller / Friedrich Vollhardt / Klaus Weimar (Hg.): 
+                        <hi rend="italic">Reallexikon der deutschen Literaturwissenschaft</hi>. Bd. 2.Berlin, New York: de Gruyter 2003 597-601.
                     </bibl>
-                    <bibl><hi rend="bold">TEI Consortium. </hi>2016a. “A Gentle Introduction to XML” In 
-                        <hi rend="italic">TEI P5: Guidelines for Electronic Text Encoding and Interchange</hi>, by TEI Consortium, Version 3.2.0. Last updated on 10th July 2017, revision 0fcf651. 
-                        <ptr target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html#SG152"/>.
+                    <bibl>
+                        <hi rend="bold">Winko, Simone</hi> (2015): “Zur Plausibilität als Beurteilungskriterium literaturwissenschaftlicher Interpretationen”, in: Andrea Albrecht / Lutz Danneberg / Olav Krämer / Carlos Spoerhase (Hg.): 
+                        <hi rend="italic">Theorien, Methoden und Praktiken des Interpretierens.</hi> Berlin: de Gruyter 483-511.
                     </bibl>
-                    <bibl>———. 2016b. “About These Guidelines.” In 
-                        <hi rend="italic">TEI P5: Guidelines for Electronic Text Encoding and Interchange</hi>, by TEI Consortium, Version 3.2.0. Last updated on 10th July 2017, revision 0fcf651. 
-                        <ptr target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/AB.html"/>.
+                    <bibl>3DH 
+                        <ref target="http://www.threedh.net">
+                            <hi rend="underline">http://www.threedh.net</hi>
+                        </ref>
                     </bibl>
-                    <bibl>———. 2016c. “Design Principles.” In 
-                        <hi rend="italic">TEI P5: Guidelines for Electronic Text Encoding and Interchange</hi>, by TEI Consortium, Version 3.2.0. Last updated on 10th July 2017, revision 0fcf651. 
-                        <ptr target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/AB.html#ABTEI2"/>.
+                    <bibl>CATMA 
+                        <ref target="http://www.catma.de">
+                            <hi rend="underline">http://www.catma.de</hi>
+                        </ref>
                     </bibl>
-                    <bibl>———. 2016d. “Non-Hierarchical Structures.” In 
-                        <hi rend="italic">TEI P5: Guidelines for Electronic Text Encoding and Interchange</hi>, by TEI Consortium, Version 3.2.0. Last updated on 10th July 2017, revision 0fcf651. 
-                        <ptr target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/NH.html"/>.
+                    <bibl>D3 – Data-Driven Documents: 
+                        <ref target="https://d3js.org/">
+                            <hi rend="underline">https://d3js.org/</hi>
+                        </ref>
                     </bibl>
-                    <bibl><hi rend="bold">Tennison, Jeni, and Wendell Piez. </hi>2002. “The Layered Markup and Annotation Language (LMNL).” In 
-                        <hi rend="italic">Extreme Markup Languages</hi>.
+                    <bibl>forTEXT 
+                        <ref target="http://www.fortext.net">
+                            <hi rend="underline">http://www.fortext.net</hi>
+                        </ref>
                     </bibl>
-                    <bibl><hi rend="bold">Witt, Andreas. </hi>2007. “Guideline: Multiple Hierarchies.” In 
-                        <hi rend="italic">Dagstuhl Seminar Proceedings</hi>. Schloss Dagstuhl-Leibniz-Zentrum für Informatik.
+                    <bibl>hermA 
+                        <ref target="https://www.korpuslab.uni-hamburg.de/projekte/herma.html">
+                            <hi rend="underline">https://www.korpuslab.uni-hamburg.de/projekte/herma.html</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>heureCLÉA 
+                        <ref target="http://heureclea.de">
+                            <hi rend="underline">http://www.heureclea.de</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>Pliny http://pliny.cch.kcl.ac.uk/</bibl>
+                    <bibl>TEASys http://www.annotation.es.uni-tuebingen.de/?page_id=200</bibl>
+                    <bibl>VEGA – A Visualization Grammar: 
+                        <ref target="https://vega.github.io/vega/">
+                            <hi rend="underline">https://vega.github.io/vega/</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <ref target="http://www.procontext.com/aktuelles/2010/03/iso-9241210-prozess-zur-entwicklung-gebrauchstauglicher-interaktiver-systeme-veroeffentlicht.html">
+                            <hi rend="underline">http://www.procontext.com/aktuelles/2010/03/iso-9241210-prozess-zur-entwicklung-gebrauchstauglicher-interaktiver-systeme-veroeffentlicht.html</hi>
+                        </ref> [letzter Zugriff: 18.09.2017]
                     </bibl>
                 </listBibl>
             </div>

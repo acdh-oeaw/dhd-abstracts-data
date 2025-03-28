@@ -1,61 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="vortrag-REGER" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="vortrag-CZMIE" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Analyzing Features for the Detection of Happy Endings in German Novels</title>
+<title>Dokumentation, Werkzeugkasten, Pakete - Nachhaltigkeit von Daten und Funktionalität Digitaler Editionen</title>
 <author>
 <persName>
-<surname>Jannidis</surname>
-<forename>Fotis</forename>
+<surname>Czmiel</surname>
+<forename>Alexander</forename>
 </persName>
-<affiliation>Universität Würzburg, Deutschland</affiliation>
-<email>fotis.jannidis@uni-wuerzburg.de</email>
-</author>
-<author>
-<persName>
-<surname>Reger</surname>
-<forename>Isabella</forename>
-</persName>
-<affiliation>Universität Würzburg, Deutschland</affiliation>
-<email>isabella.reger@uni-wuerzburg.de</email>
-</author>
-<author>
-<persName>
-<surname>Zehe</surname>
-<forename>Albin</forename>
-</persName>
-<affiliation>Universität Würzburg, Deutschland</affiliation>
-<email>zehe@informatik.uni-wuerzburg.de</email>
-</author>
-<author>
-<persName>
-<surname>Becker</surname>
-<forename>Martin</forename>
-</persName>
-<affiliation>Universität Würzburg, Deutschland</affiliation>
-<email>becker@informatik.uni-wuerzburg.de</email>
-</author>
-<author>
-<persName>
-<surname>Hettinger</surname>
-<forename>Lena</forename>
-</persName>
-<affiliation>Universität Würzburg, Deutschland</affiliation>
-<email>lena.hettinger@uni-wuerzburg.de</email>
-</author>
-<author>
-<persName>
-<surname>Hotho</surname>
-<forename>Andreas</forename>
-</persName>
-<affiliation>Universität Würzburg, Deutschland</affiliation>
-<email>hotho@informatik.uni-wuerzburg.de</email>
+<affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland</affiliation>
+<email>czmiel@bbaw.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2016-12-01T12:26:00Z</date>
+<date>2016-08-26T20:21:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -87,257 +47,143 @@
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Happy End classification</term>
-<term>plot representation</term>
+<term>Dokumentation</term>
+<term>Digitale Edition</term>
+<term>Standardisierung</term>
+<term>DH-Entwickler</term>
+<term>Forschungs-Software-Nachhaltigkeit</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Inhaltsanalyse</term>
-<term>Strukturanalyse</term>
-<term>Literatur</term>
+<term>Gestaltung</term>
+<term>Programmierung</term>
+<term>Veröffentlichung</term>
+<term>Kollaboration</term>
+<term>Projektmanagement</term>
+<term>Webentwicklung</term>
+<term>Daten</term>
+<term>Infrastruktur</term>
+<term>Interaktion</term>
+<term>Metadaten</term>
+<term>Methoden</term>
+<term>Projekte</term>
+<term>Forschung</term>
+<term>Forschungsprozess</term>
+<term>Forschungsergebnis</term>
+<term>Software</term>
+<term>Standards</term>
+<term>Text</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<div rend="DH-Heading1" type="div1">
-<head>Einleitung</head>
-<p>
-<hi rend="italic">Note: An English version of this paper is available from </hi>
-<ref target="https://arxiv.org/abs/1611.09028">
-<hi rend="italic color(1155CC)">https://arxiv.org/abs/1611.09028</hi>
-</ref>
-<hi rend="italic">.</hi>
-</p>
-<p>Der Plot ist ein grundlegendes Strukturelement literarischer Texte. Dementsprechend wären Methoden zur computergestützten Repräsentation von Plot oder bestimmten Plot-Elementen ein großer Gewinn für die quantitative Literaturanalyse. Dieses Paper betrachtet ein solches Plot-Element: das Ende; genauer gesagt untersuchen wir die Frage, ob ein Werk ein Happy End hat oder nicht. Dazu setzen wir Sentimentanalyse ein, wobei wir den Fokus auf die qualitative Betrachtung bestimmter Features und deren Performanz legen, um tiefere Einsicht in die Funktionsweise der automatischen Klassifikation zu erhalten. Außerdem zeigen wir, wie die beschriebene Vorgehensweise auf nachfolgende Forschungsfragen angewendet werden und dabei zu interessanten Ergebnissen hinsichtlich der Erscheinungszeit der Romane führen kann.</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Verwandte Arbeiten</head>
-<p>In einer der ersten Arbeiten beschäftigt sich Mark Finlayson mit folkloristischen Erzählungen und entwickelt einen Algorithmus, der Ereignisse erkennt und daraus übergeordnete Konzepte wie Niedertracht oder Belohnung abstrahiert (Finlayson 2012). Reiter et al. identifizieren Ereignisse sowie deren Teilnehmer und Reihenfolge und nutzen maschinelle Lernverfahren, um strukturelle Ähnlichkeiten über Erzählungen hinweg aufzudecken (Reiter 2013, Reiter et al. 2014).</p>
-<p>In letzter Zeit richtet sich einige Aufmerksamkeit auf die Sentimentanalyse, insbesondere seit Matthew Jockers emotionale Erregung als Indikator für Plotstrukturen vorgeschlagen hat (Jockers 2014). Er unterteilt Romane in Segmente und bildet daraus emotionale Plot-Kurven (Jockers 2015). Obwohl die Idee, Sentimentanalyse in diesem Zusammenhang einzusetzen, gut aufgenommen wurde, wurde Jockers für seine Verwendung der Fourier-Transformation zur Glättung der resultierenden Plot-Kurven kritisiert (Swafford 2015, Schmidt 2015).</p>
-<p>Micha Elsner (Elsner 2015) verwendet, neben anderen Features, ebenfalls Sentimentkurven, um Repräsentationen des Plots romantischer Werke zu erstellen. Er verknüpft diese Kurven mit bestimmten Figuren und untersucht auch das gemeinsame Auftreten von Figuren. Die Auswertung seines Ansatzes zeigt, dass er echte Romane mit beachtlichem Erfolg von künstlich umgestellten Versionen unterscheiden kann, was darauf hindeutet, dass seine Methoden tatsächlich bestimmte Aspekte der Plotstruktur abbilden.</p>
-<p>In vorhergehenden Arbeiten haben wir Sentiment-Features verwendet, um Happy Ends, als ein wichtiges Plot-Element, in deutschsprachigen Romanen zu erkennen, wobei wir einen F1-score von 73% erreichen konnten (Zehe et al. 2016).</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Korpus und Ressourcen</head>
-<p>Unser Datensatz besteht aus 212 deutschsprachigen Romanen, die hauptsächlich aus dem 19. Jahrhundert stammen.
-                    <ref n="1" target="vortrag-REGERftn1" type="note">1</ref> Zu jedem Roman wurde manuell annotiert, ob er ein Happy End hat (50%) oder nicht (50%). Die dafür relevanten Informationen stammen aus den Zusammenfassungen des Kindler Literatur Lexikon Online
-                    <ref n="2" target="vortrag-REGERftn2" type="note">2</ref> und aus Wikipedia
-                    <ref n="3" target="vortrag-REGERftn3" type="note">3</ref>. Sofern keine Zusammenfassung eines Romans verfügbar war, wurde das Ende von den Annotatoren gelesen.
-                </p>
-<p>Unsere Sentimentanalyse erfordert eine Ressource, die auflistet, welche Gefühle Leser typischerweise mit bestimmten Worten oder Phrasen eines Textes assoziieren. Dieses Paper verwendet das NRC Sentiment Lexikon (Mohammad und Turney 2013), zu dem eine automatisch übersetzte deutsche Version verfügbar ist
-                    <ref n="4" target="vortrag-REGERftn4" type="note">4</ref>. Eine besondere Eigenschaft dieses Lexikons ist, dass zu jedem Wort neben je einem binären Wert (0 oder 1) für positive und negative Konnotation (2 Features) auch seine Zugehörigkeit zu 8 Basisemotionen (Wut, Angst, Ekel, Überraschung, Freude, Vorfreude, Vertrauen und Trauer) festgehalten ist (vgl. Tabelle 1). Zusätzlich ermitteln wir die Polarität eines Wortes, indem der negative vom positiven Wert abgezogen wird (ein Wort mit einem positiven Wert von 0 und einem negativen Wert von 1 erhält also die Polarität -1). Die Polarität dient als ein zusammengefasster Emotionswert. Insgesamt betrachten wir also 11 Features.
-                </p>
-<p>Tabelle 1: Beispieleinträge aus dem NRC Sentiment Lexikon</p>
-<table rend="rules">
-<row>
-<cell>Wort/Dimension</cell>
-<cell>verabscheuen</cell>
-<cell>bewundernswert</cell>
-<cell>Zufall</cell>
-</row>
-<row>
-<cell>Positiv</cell>
-<cell>0</cell>
-<cell>1</cell>
-<cell>0</cell>
-</row>
-<row>
-<cell>Negativ</cell>
-<cell>1</cell>
-<cell>0</cell>
-<cell>0</cell>
-</row>
-<row>
-<cell>Polarität</cell>
-<cell>-1</cell>
-<cell>1</cell>
-<cell>0</cell>
-</row>
-<row>
-<cell>Wut</cell>
-<cell>1</cell>
-<cell>0</cell>
-<cell>0</cell>
-</row>
-<row>
-<cell>Vorfreude</cell>
-<cell>0</cell>
-<cell>0</cell>
-<cell>0</cell>
-</row>
-<row>
-<cell>Ekel</cell>
-<cell>1</cell>
-<cell>0</cell>
-<cell>0</cell>
-</row>
-<row>
-<cell>Angst</cell>
-<cell>1</cell>
-<cell>0</cell>
-<cell>0</cell>
-</row>
-<row>
-<cell>Freude</cell>
-<cell>0</cell>
-<cell>1</cell>
-<cell>0</cell>
-</row>
-<row>
-<cell>Trauer</cell>
-<cell>0</cell>
-<cell>0</cell>
-<cell>0</cell>
-</row>
-<row>
-<cell>Überraschung</cell>
-<cell>0</cell>
-<cell>0</cell>
-<cell>1</cell>
-</row>
-<row>
-<cell>Vertrauen</cell>
-<cell>0</cell>
-<cell>1</cell>
-<cell>0</cell>
-</row>
-</table>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Experimente</head>
-<p>Ziel dieses Papers ist es, Features, die zur Erkennung von Happy Ends in Romanen genutzt wurden, genauer zu untersuchen, um Einsichten in die Relevanz bestimmter Features zu erhalten. Dazu übernehmen wir die Features und Methoden, wie sie in Zehe et al. (2016) beschrieben sind. Die Parameter der linearen SVM sowie die Einteilung in 75 Segmente sind ebenfalls aus diesem Paper übernommen.</p>
-<p>
-<hi rend="italic">Features</hi>. Da keine verlässlichen Kapitelannotationen verfügbar waren, wurde jeder Roman in 75 gleichgroße Blöcke unterteilt, die wir als 
-                    <hi rend="italic">Segmente </hi>bezeichnen. Für jedes lemmatisierte Wort werden die oben beschriebenen 11 Sentiment-Werte ermittelt. Anschließend wird für jedes Segment der entsprechende Durchschnitt berechnet, sodass 11 Werte pro Segment vorliegen. Diese werden als ein Feature-Set betrachtet.
-                </p>
-<p>
-<hi rend="italic">Qualitative Feature-Analyse</hi>. Da unser Korpus zu gleichen Teilen aus Romanen mit und ohne Happy End besteht, erreichen sowohl die Random Baseline, als auch die Mehrheits-Baseline eine Klassifikationsgenauigkeit von 50%.
-                </p>
-<p>Aufgrund unserer Annahme, dass die relevante Information zur Klassifikation von Happy Ends am Ende eines Romans zu finden ist, wurden zunächst die Sentiment-Werte des letzten Segments als einziges Feature-Set (<hi rend="italic">f<hi rend="sub">d, n</hi></hi>) verwendet, was zu einer Genauigkeit von 67% führte.
-                </p>
-<p>Um unserer Intuition gerecht zu werden, dass nicht nur das letzte Segment an sich, sondern auch sein Verhältnis zum Rest des Romans für die Klassifikation von Bedeutung ist, wurden sogenannte Sektionen (
-                    <hi rend="italic">sections</hi>) eingeführt: das letzte Segment eines Romans bildet die 
-                    <hi rend="italic">final section</hi>, während die übrigen Segmente zur 
-                    <hi rend="italic">main section</hi> gehören. Über die Sektionen wurden wiederum Durchschnittswerte gebildet, indem der jeweilige Wert aller 11 Features über alle Segmente in der betreffenden Sektion gemittelt wurde. Um das Verhältnis zwischen diesen Sektionen abzubilden, wurden die Differenzen zwischen den Sentiment-Werten der final section und den durchschnittlichen Sentiment-Werten aller Segmente in der main section als zusätzliche Features betrachtet. Dies hatte jedoch keine Auswirkungen auf die Ergebnisse.
-                </p>
-<p>Diese Beobachtung führte uns zu der Annahme, dass unser Begriff des "Endes" nicht differenziert genug ist, da die Anzahl an Segmenten für jeden Roman und damit auch die Grenzen des finalen Segments relativ willkürlich gewählt wurden. Daher wurde die Aufteilung in final section und main section im Folgenden variiert, sodass die final section mehr als nur das letzte Segment enthalten kann.</p>
+<p>Die Rolle digitaler Ressourcen in den Geisteswissenschaften und die zunehmende Bedeutung von Algorithmen werden noch immer unterschätzt. In den letzten Jahren bzw. Jahrzenten wurden zahlreiche Software-Werkzeuge, virtuelle Forschungsumgebungen und interaktive Publikationen, wie Datenbanken oder Digitale Editionen, für die geisteswissenschaftliche Forschung entwickelt. Diese werden innerhalb der Forschungscommunity mit zunehmender Tendenz akzeptiert und inzwischen breit eingesetzt. Jedoch stehen wir heute vor der Herausforderung diese verschiedenen Ressourcen, die zu einem großen Teil auf unterschiedlichen technischen Grundlagen basieren, weiter zu pflegen und verfügbar zu halten. Transparenz und Reproduzierbarkeit von Forschungsergebnissen, die mit einer digitalen Ressource oder Software erstellt wurden leiden darunter, dass diese Software oft nach wenigen Jahren nicht mehr gepflegt wird und damit nicht mehr lauffähig ist. </p>
+<p>Der Vortrag beleuchtet die hier skizzierte Problematik am Beispiel Digitaler Editionen. Es werden drei Punkte vorgeschlagen, wie durch einen Bottom-Up-Ansatz die Nachhaltigkeit digitaler Ressourcen gefördert werden kann. Der Fokus liegt dabei auf den Erfahrungen, die im Laufe der letzten 10 Jahre mit der Entwicklung von XML-basierten Digitalen Editionen und dem Einsatz ausgewählter Software-Werkzeuge, wie der nativen XML-Datenbank eXistdb (
+                <ref target="http://exist-db.org">http://exist-db.org</ref>), gewonnen wurden. 
+            </p>
+<p>Bei digitalen Ressourcen handelt es sich um dynamische Objekte. Das bedeutet einerseits, dass die Inhalte jederzeit korrigiert, erweitert oder verändert werden können. Andererseits muss die technologische Basis fortlaufend aktuell, sicher und verfügbar gehalten werden. Diese beiden Prozesse sind Teilaufgaben eines größeren Aufgabenbereichs, der unter dem Begriff „
+                <hi rend="italic">data curation</hi>“ zusammengefasst werden kann.
+            </p>
+<p>Eine Digitale Edition ist mehr als nur ihre Forschungsdaten. Letztere, in vielen Fällen XML-Dokumente, werden oft erst durch eine adäquate Darstellung, durch Visualisierungen, wie Text-Bild-Verlinkungen, verschiedene Ansichten auf den Text, Netzwerke oder Timelines oder auch Verknüpfungen mit anderen externen Ressourcen „zum Leben erweckt“. Dieses Leben in Form programmierter Funktionalität ist ein genuiner Forschungsbereich der Digital Humanities. Allerdings führt die Funktionalitätsschicht (siehe Abbildung 1) einer Digitalen Edition auch dazu, dass 
+                <hi rend="italic">data curation</hi> eine sehr komplexe Aufgabe werden kann, da hier die Flexibilität der Implementierung erheblich höher ist als auf der Ebene der Datenschicht. 
+            </p>
 <figure>
-<graphic height="9.948333333333334cm" n="1001" rend="inline" url="vortrag-REGER-image1.png" width="15.927916666666667cm"/>
+<graphic height="9.535583333333333cm" n="1001" rend="inline" url="vortrag-CZMIE-image1.png" width="16.002cm"/>
+<head>Abbildung 1: Schichtenmodell Digitale Edition</head>
 </figure>
-<p>Abbildung 1: Klassifikationsgenauigkeit für verschiedene Unterteilungen in main und final section. Die gestrichelte Linie gibt die Baseline an, die gepunktete Linie markiert die Aufteilung, bei der der maximale F1-score erreicht wird.</p>
-<p>Abbildung 1 zeigt, dass die Klassifikationsgenauigkeit steigt, wenn mindestens 75% der Segmente in der main section sind und ein Maximum bei ca. 95% erreicht (bei 75 Segmenten insgesamt bedeutet das 4 Segmente in der final section und 71 Segmente in der main section). Mit dieser Aufteilung verbessert sich der F1-Wert auf 68%, wenn nur das Feature-Set der final section (<hi rend="italic">f<hi rend="sub">d, final</hi></hi>) verwendet wird, und weiter auf 69%, wenn die Differenzen zu den durchschnittlichen Sentiment-Werten der main section (<hi rend="italic">f<hi rend="sub">d, main - final</hi></hi>) miteinbezogen werden.
-                </p>
-<p>Da sich die Ergebnisse durch die Einbeziehung des Verhältnisses zwischen der final section und der main section verbessert haben, war unser nächster Schritt, den Verlauf der Sentimentkurve gegen Ende eines Romans genauer zu modellieren. Beispielsweise könnte sich kurz vor dem Ende eine Katastrophe ereignen, die anschließend im Sinne eines Happy Ends aufgelöst wird. Um diese Intuition abzubilden, führten wir eine weitere Sektion ein, die sogenannte late-main section, die die letzten Segmente der main section umfasst. Die Differenzen zwischen den Feature-Sets für die late-main section und die final section wurden als zusätzliche Merkmale verwendet (<hi rend="italic">f<hi rend="sub">d, late - final</hi></hi>). Mit diesen 3 Feature-Sets erzielten wir einen F1-score von 70%. Durch die zusätzliche Verwendung des Feature-Sets für das letzte Segment stieg der F1-score auf 73%.
-                </p>
-<p>Tabelle 2: F1-score für die verschiedenen Feature-Sets</p>
-<table rend="rules">
-<row>
-<cell>Features</cell>
-<cell>Ergebnisse</cell>
-</row>
-<row>
-<cell>1) Feature-Set finales Segment</cell>
-<cell>67%</cell>
-</row>
-<row>
-<cell>2) Feature-Set finales Segment und Differenz zur main section</cell>
-<cell>67%</cell>
-</row>
-<row>
-<cell>3) Feature-Set final section mit final section der Länge 4</cell>
-<cell>68%</cell>
-</row>
-<row>
-<cell>4) Feature-Set 3 und Differenz zur main section</cell>
-<cell>69%</cell>
-</row>
-<row>
-<cell>5) Feature-Set 4 und Differenz zwischen late-main section und final section</cell>
-<cell>70%</cell>
-</row>
-<row>
-<cell>6) Feature-Set 5 und Feature-Set finales Segment</cell>
-<cell>73%</cell>
-</row>
-</table>
-<p>Die beschriebenen Ergebnisse sind in Tabelle 2 zusammengefasst. Hier wird deutlich, dass die Aufnahme der einzelnen Feature-Sets jeweils zu einer kleinen Verbesserung geführt hat, bis hin zu einem F1-score von 73%. Obwohl die Aufteilung mit 4 Segmenten in der final section die besten Ergebnisse erzielte, konnten wir auch beobachten, dass einige Romane mit mehreren verschiedenen Unterteilungen korrekt klassifiziert werden konnten. Andere Romane hingegen konnten in keinem Setting korrekt vorhergesagt werden. Als Beispiel sei hier Jules Vernes Roman 
-                    <hi rend="italic">Zwanzigtausend Meilen unter dem Meer</hi> genannt, der ein eindeutiges Happy End mit klaren Grenzen hat, das jedoch extrem kurz ist und nur aus den ca. 250 letzten Wörtern besteht. Diese Beobachtungen zeigen, dass der Begriff des "Endes" eines Roman sehr variabel ist und von Text zu Text sehr unterschiedlich manifestiert sein kann.
-                </p>
-<p>
-<hi rend="italic">Korrelation mit Erscheinungszeit</hi>. Das wirft wiederum die Frage auf, ob die Sensibilität unserer Methode hinsichtlich solcher Variabilität genutzt werden kann, um gewisse Eigenschaften der Romane in unserem Korpus besser zu verstehen. Als Beispiel haben wir untersucht, ob und inwiefern der Erfolg verschiedener Unterteilungen von Romanen mit deren Erscheinungsdatum korrelieren. Um die Ergebnisse so gut wie möglich interpretierbar zu halten, beschränken wir uns auf ein Feature-Set: die Sentiment-Werte der finalen Sektion. Zunächst haben wir unser Korpus in 4 Gruppen unterteilt: Romane, die vor 1830 erschienen sind (65 Texte), zwischen 1831 und 1848 (31 Texte), zwischen 1849 und 1870 (29 Texte) und nach 1871 (87 Texte). Diese Einteilung führte zu ähnlich großen Untergruppen, von denen keine eine besondere Tendenz hinsichtlich Romanen mit oder ohne Happy End aufweist.
-                </p>
-<figure>
-<graphic height="9.948333333333334cm" n="1002" rend="inline" url="vortrag-REGER-image2.png" width="15.927916666666667cm"/>
-</figure>
-<p>Abbildung 2: F1-score für verschiedene Unterteilungen in main und final section. Die farbigen Kurven stehen für Romane aus verschiedenen Zeitperioden. Die gestrichelte Linie zeigt die Zufallsbaseline für die Zeitperiode ab 1871. Die Baselines für die anderen Zeitperioden liegen etwas darunter und werden daher nicht dargestellt. Die gepunkteten Linien zeigen jeweils den maximalen F1-Wert für die entsprechende Zeitperiode.</p>
-<p>Abbildung 2 zeigt, dass die Klassifikation erneut dann am besten funktioniert, wenn ca. 95-98% der Segmente in der Hauptsektion sind, unabhängig von der Zeitperiode. Die beste Aufteilung in Sektionen korreliert also nicht mit dem Erscheinungsjahr eines Romans. Es fällt jedoch auf, dass die Romane nach 1848 deutlich niedrigere Werte liefern als die vor diesem Jahr veröffentlichten Texte, meistens sogar unterhalb der Baseline. Das deutet auf eine Korrelation zwischen dem Erscheinungsdatum und der Klassifikationsgenauigkeit hin: Vor dem Realismus erschienene Romane sind hinsichtlich des Happy Ends leichter zu klassifizieren als realistische Romane. Eine mögliche Erklärung für diese Beobachtung könnte die stärker schematische Struktur der vor-realistischen Romane sein.</p>
-<p>Wir sind uns bewusst, dass die Anzahl der Romane für die einzelnen Zeitperioden relativ klein ist, sodass diese Beobachtungen zunächst als exploratorische Einblicke gesehen werden müssen. Nichtsdestotrotz zeigen diese vorläufigen Ergebnisse, dass die automatische Erkennung von Happy Ends, sogar mit nur einem recht einfachen Feature-Set, Zusammenhänge zu anderen Eigenschaften von Romanen aufdecken kann, die für die Literaturwissenschaft von großem Interesse sind.</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Fazit und zukünftige Arbeiten</head>
-<p>Die automatische Erkennung von Happy Ends als wesentlichem Plot-Element von Romanen ist ein nützlicher Schritt in Richtung einer umfassenden computergestützten Repräsentation des Plots literarischer Texte. Unsere Experimente zeigen, dass verschiedene Features auf Basis von Sentimentanalyse eine Erkennung von Happy Ends in Romanen mit unterschiedlicher, aber insgesamt solider Genauigkeit ermöglichen. Obwohl unser Ansatz relativ einfach gehalten ist, kann er zu substantiellen Erkenntnissen für die Literaturwissenschaft führen.</p>
-<p>In zukünftigen Arbeiten soll die Genauigkeit unserer Methode verbessert werden, indem die hohe Variabilität des Endes in Romanen differenzierter betrachtet wird. Außerdem könnte der Ansatz eingesetzt werden, um bestimmte Eigenschaften weiterer Romankorpora tiefergehend zu untersuchen.</p>
-</div>
+<p>Digitale Editionen sind Software-Werkzeuge für die Analyse von Forschungsdaten. Damit sind sie ein Teil des Forschungsprozesses, der erhalten werden muss, um die Reproduzierbarkeit der Forschungsergebnisse zu gewährleisten.</p>
+<p>Eine digitale geisteswissenschaftliche Ressource durchläuft üblicher Weise einen typischen Lebenszyklus. Dieser beginnt mit der Analyse der analogen Quellen, geht über die Datenmodellierung, die Auswahl bzw. Anpassung oder Neuentwicklung von Bearbeitungswerkzeugen sowie der digitalen Publikation der Forschungsergebnisse bis hin zu Fragen der Langzeitverfügbarkeit und Langzeitarchivierung. Bei jedem dieser Schritte sind verschiedenen Kompetenzen involviert. Das bedeutet, der Aufbau einer Digitalen Edition ist immer Teamwork. Dieses Team setzt sich in den meisten Fällen aus Personen zusammen, die einerseits das inhaltliche Fachwissen mitbringen und andererseits aus Personen mit einer Vielzahl unterschiedlicher technischer Kompetenzen:</p>
+<list type="ordered">
+<item>Analyse der Quellen (Geisteswissenschaftler)</item>
+<item>Anforderungsanalyse der digitalen Ressource, 
+                    <hi rend="italic">Requirement Engineering</hi> (alle Projekbeteiligten)
+                </item>
+<item>Entwurf des Daten- / Dokumentenmodells, Auswahl von Standards (Geisteswissenschaftler, Datenbankspezialisten, Markupspezialisten, Metadatenspezialisten)</item>
+<item>Auswahl, Anpassung bzw. Entwicklung von Tools (Programmierer, Geisteswissenschaftler)</item>
+<item>Aufsetzen und Betreuen der Server (Systemadministratoren)</item>
+<item>Konzept, Design und Umsetzung der Web-Publikation (Webdesigner, Webentwickler, Geisteswissenschaftler)</item>
+<item>Vorbereitung für Langzeitverfügbarkeit / -archivierung (Metadatenspezialisten, Dokumentationsspezialisten)</item>
+<item>Betreuung und Wartung nach Projektende („
+                    <hi rend="italic">data curators</hi>“)
+                </item>
+</list>
+<p>An jeder Stelle in diesem Lebenszyklus einer digitalen Ressource werden Entscheidungen getroffen, die Auswirkungen auf den nachfolgenden Schritt haben. So bilden die eigentliche Analyse der Inhalte, die z.B. in einer Digitalen Edition publiziert werden sollen, und die Anforderungsanalyse das Fundament, auf dem alles aufbaut, vom Daten- oder Dokumentenmodell, bis hin zur Publikation und der 
+                <hi rend="italic">data curation</hi>. 
+            </p>
+<p>Aus methodischer Sicht, mit besonderem Augenmerk auf das zugrundeliegende Text- bzw. Dokumentenmodell, wurden Digitale Editionen bereits ausführlich beschrieben (siehe Pierazzo 2015 und Sahle 2013). Eine Analyse aus technischer Sicht steht noch aus. Um die Entwicklung, Betreuung und Nachhaltigkeit Digitaler Editionen zu gewährleisten bedarf es eines technologischen Publikationskonzepts, das aus möglichst standardisierten Komponenten besteht. </p>
+<p>Bisher existieren sehr erfolgreiche Standardisierungen auf dem Gebiet der Metadaten und der Textauszeichnungen, z.B. mit den Richtlinien der 
+                <hi rend="italic">Text Encoding Initiative</hi> (TEI), aber wenig bis gar nichts bei der technischen Umsetzung und der Dokumentation. Dies würde helfen anschlussfähigere, stabilere und nachhaltigere digitale Ressourcen aufzubauen und damit auch die Arbeit eines Datenkurators, der sich um die Pflege dieser Ressourcen nach Projektende kümmert, deutlich vereinfachen.
+            </p>
+<p>Für eine aussichtsreiche Nachhaltigkeit kann die Lösung nicht allumfassend sein, sondern nur für klar definierte Anwendungsfälle gelten. In dem hier vorgestellten Fall ist dies eine XML-basierte Digitale Edition, die mit Technologien aus der X-Familie (XSLT, XQuery, XML-Schema, eXistdb) entwickelt wird. Das Grundprinzip ist jedoch auf andere Anwendungsszenarien übertragbar:</p>
+<list type="ordered">
+<item>Eine ausführliche Dokumentation</item>
+<item>Ein klar definierter Werkzeugkasten</item>
+<item>Die Paketierung aller Projektressourcen</item>
+</list>
+<p>Dokumentation</p>
+<p>Eine nachhaltige digitale Forschungsressource bzw. –software ist langfristig verfügbar, gut dokumentiert, lizenziert und versioniert, um die Reproduzierbarkeit der Forschungsprozesse zu garantieren. Die wichtigste Komponente ist eine ausführliche, formalisierte Dokumentation, die mindestens die folgenden Informationen enthalten sollte:</p>
+<list type="unordered">
+<item>Den Namen des Projekts und aller beteiligten Institutionen und Personen.</item>
+<item>Den Projektstatus: geplant, in Arbeit, veröffentlicht, beendet.</item>
+<item>Die eingesetzten Technologien und Standards inklusive Versionsangabe.</item>
+<item>Lizenzangaben zu Forschungsdaten, Quellcode, und anderen Komponenten, wie Schriftarten, Audio- oder Videodokumenten.</item>
+<item>Informationen darüber, wo der Quellcode und die Forschungsdaten zu finden sind.</item>
+<item>Informationen über die bereitgestellten APIs und andere Schnittstellen, um die Forschungsdaten in verschiedenen Formaten abzurufen (XML, HTML, PDF, JSON usw.) und in anderen Kontexten weiterzuverarbeiten. </item>
+<item>Details über die Forschungsmethode und den Hintergrund des Projekts. (Mehr dazu siehe Faniel 2015)</item>
+<item>Zitations- und Referenzierungsanweisungen für die persistente Adressierung aktueller und älterer Versionen der Forschungsdaten, Metadaten und Software.</item>
+<item>Eine standardisierte Historie der Projektentwicklung.</item>
+</list>
+<p>Selbstverständlich kann diese Liste nur ein erster Vorschlag sein. Sie enthält keinesfalls alle möglichen Informationen, die zu einer Digitalen Edition angegeben werden können. Die Dokumentation sollte maschinenlesbar (um z.B. als XML oder JSON weiter verarbeitet werden zu können) und über eine standardisierte Adresse bzw. einen klar definierten Zugriffspunkt (z.B. http://home.of.project/api/projectdescription) abrufbar sein. Dadurch wäre es möglich eine Digitale Edition bei einem zentralen Verzeichnis anzumelden, in dem alle Informationen und Updates über Digitale Editionen, die demselben Publikationsmodell folgen, gesammelt werden. Ein solches Verzeichnis existiert noch nicht. </p>
+<p>Definierter Werkzeugkasten</p>
+<p>Wie oben beschrieben kann Nachhaltigkeit nur in einem definierten Rahmen hergestellt werden, indem man klare Anwendungsfälle beschreibt. Selbst in diesen sind die Möglichkeiten der Umsetzung nahezu unbegrenzt. Daher ist es wichtig, genau zu definieren, welche Technologien, Standards und Software-Werkzeuge zum Einsatzkommen und welche Abhängigkeiten bestehen. Es ist ratsam die Zahl der eingesetzten Tools überschaubar zu halten und sich auf etablierte und gut dokumentierte Technologien zu konzentrieren.</p>
+<p>Paketierung </p>
+<p>Alle zusammengehörenden Komponenten einer Digitalen Ressource (Daten, Metadaten, Quellcode, Binärdatein, Dokumentation) müssen immer zusammen abrufbar sein. Diese Pakete tragen deutlich zu einer nachhaltigeren Entwicklung bei. Es ist immer klar, wo sich alle relevanten Informationen und Daten befinden. Zudem könnte ein Paket einer zentralen Kurationsstelle, z.B. einem Digital Huamnities Data Center, übergeben werden, die sich um die Betreuung der digitalen Ressourcen abgeschlossener Projekte kümmert. Diese Anlaufstelle existiert ebenfalls noch nicht.</p>
+<p>Für den hier vorgestellten Anwendungsfall bietet das von eXistdb verwendete EXPath-Format ( 
+                <ref target="http://expath.org/">
+<hi rend="underline color(0000FF)">http://expath.org/ </hi>
+</ref>) einen guten Ausgangspunkt für die Paketierung. Dieses Format beschreibt ein Packaging-System ( 
+                <ref target="http://expath.org/modules/pkg/">
+<hi rend="underline color(0000FF)">http://expath.org/modules/pkg/ </hi>
+</ref>), das es erlaubt XML-basierte Dokumente zusammen mit Abfrage- und Transformationsskripten sowie verschiedenen anderen Ressourcen auf eine standardisierte Art und Weise zu paketieren, das dieses Paket von allen Softwaresystemen, die diesem Standard folgen verstanden und ausgewertet werden kann. Damit kann dieses Packagesystem ähnlich fungieren, wie ein App-Store für Smartphones. Auch der Anpassungsaufwand für Software, die während der Projektlaufzeit eingesetzt wird, würde sich so verringern. 
+            </p>
+<p>Andere Anwendungsszenarien lassen sich nicht auf Softwareebene paketieren. In diesen Fällen kann man auf Anwendungsvirtualisierung zurückgreifen, wie sie zum Beispiel mittels Docker (
+                <ref target="https://www.docker.com/">https://www.docker.com/</ref>) möglich ist.
+            </p>
+<p>Um eine solche Standardisierung auf der technischen Ebene durchzuführen benötigt es eine aktive Digital-Humanities-Enwicklercommunity. Die Rolle des DH-Entwicklers ist im allgemeinen Diskurs noch deutlich unterrepräsentiert. Um wirklich erfolgreich Softwaretools für die geisteswissenschaftliche Forschung programmieren zu können, benötigt ein Entwickler mehr als nur ein grundlegendes Verständnis der typischen Problematiken in den einzelnen Fachdisziplinen. Umgekehrt erlauben Programmierkenntnisse ein wesentlich besseres Verständnis über die Funktionsweise der Software und damit bessere Einsatzmöglichkeiten sowie das Potential zu eigenen Verbesserungen. Um hier Fortschritte zu erzielen, müssen sich die DH-Entwickler besser organisieren. Die DH-Entwicklercommunity wäre der Kreis an Personen, die die Einführung und Anwendung von Standards, wie dem EXPath-System diskutieren und tragen. Mittelfristig wäre das Ziel für jeden Schritt im Lebenszyklus einer digitalen Ressource einen oder mehrere Vorschläge einer standardisierten Herangehensweise in Form eines 
+                <hi rend="italic">best-practice-</hi>Leitfadens zu haben, der sich als 
+                <hi rend="italic">technical reader</hi> zur Erstellung digitaler geisteswissenschaftlicher Ressourcen eignet und Vorschläge zu Schnittstellen, Standards, Lizenzen, Dokumentation, Zitationshinweise usw. anbietet.
+            </p>
+<p>Ein Ansatzpunkt dafür bietet die Arbeit des 2010 gegründeten Software Sustainability Institute (
+                <ref target="https://www.software.ac.uk/">https://www.software.ac.uk/</ref>), Hong 2010 sowie Hettrick 2016, die verschiedene Ansätze zur Forschungs-Software-Nachhaltigkeit untersucht haben.
+            </p>
 </body>
-<back><div type="Notes"><note n="1" rend="footnote text" xml:id="vortrag-REGERftn1"> Quelle: https://textgrid.de/digitale-bibliothek</note><note n="2" rend="footnote text" xml:id="vortrag-REGERftn2"> www.kll-online.de</note><note n="3" rend="footnote text" xml:id="vortrag-REGERftn3"> https://de.wikipedia.org</note><note n="4" rend="footnote text" xml:id="vortrag-REGERftn4"> http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm</note></div>
+<back>
 <div type="bibliogr">
 <listBibl>
-<head>Bibliography</head>
+<head>Bibliographie</head>
 <bibl>
-<hi rend="bold">Elsner, Micha</hi> (2015): 
-                        „Abstract Representations of Plot Structure“, 
-                        in: 
-                        <hi rend="italic">Linguistic Issues in Language Technology</hi> 12 (5).
+<hi rend="bold">Faniel, Ixchel</hi> (2015): 
+                        <hi rend="italic">Data Management and Curation in 21st Century Archives</hi>, 21. September 2015, 
+                        <ref target="http://hangingtogether.org/?p=5375">http://hangingtogether.org/?p=5375</ref>.
                     </bibl>
 <bibl>
-<hi rend="bold">Finlayson, Mark A.</hi> (2012):
-                        <hi rend="italic"> Learning Narrative Structure from Annotated Folktales</hi>. 
-                        PhD thesis, Massachusetts Institute of Technology.
+<hi rend="bold">Hettrick, Simon</hi> (2016): 
+                        <hi rend="italic">Research Software Sustainability. Report on a Knowledge Exchange Workshop</hi>.
                     </bibl>
 <bibl>
-<hi rend="bold">Jockers, Matthew L.</hi> (2014): 
-                        <hi rend="italic">A novel method for detecting plot</hi>. 
-                        <ref target="http://www.matthewjockers.net/2014/06/05/a-novel-method-for-detecting-plot/">http://www.matthewjockers.net/2014/06/05/a-novel-method-for-detecting-plot/</ref> [letzter Zugriff 25. August 2016].
+<hi rend="bold">Hong, N. Chue</hi> et al. (2010): 
+                        <hi rend="italic">Software Preservation Benefits Framework. Software Sustainability Institute Technical Report</hi>.
                     </bibl>
 <bibl>
-<hi rend="bold">Jockers, Matthew L.</hi> (2015): 
-                        <hi rend="italic">The rest of the story</hi>. 
-                        <ref target="http://www.matthewjockers.net/2015/02/25/the-rest-of-the-story/">http://www.matthewjockers.net/2015/02/25/the-rest-of-the-story/</ref> [letzter Zugriff 25. August 2016].
+<hi rend="bold">Pierazzo, Elena</hi> (2015): 
+                        <hi rend="italic">Digital Scholarly Editing, Theories, Models and Methods</hi>. 
+                        Ashgate.
                     </bibl>
 <bibl>
-<hi rend="bold">Mohammad, Saif / Turney, Peter</hi> (2013): 
-                        „Crowdsourcing a Word-Emotion Association Lexicon“, 
-                        in: 
-                        <hi rend="italic">Computational Intelligence</hi> 29 (3): 436–465.
-                    </bibl>
-<bibl>
-<hi rend="bold">Reiter, Nils</hi> (2013): 
-                        <hi rend="italic">Discovering Structural Similarities in Narrative Texts using Event Alignment Algorithms</hi>. 
-                        PhD thesis, Heidelberg University.
-                    </bibl>
-<bibl>
-<hi rend="bold">Reiter, Nils / Frank, Anette / Hellwig, Oliver</hi> (2014): 
-                        „An NLP-based Cross-Document Approach to Narrative Structure Discovery“, 
-                        in: 
-                        <hi rend="italic">Literary and Linguistic Computing</hi> 29 (4): 583–605
-                        10.1093/llc/fqu055.
-                    </bibl>
-<bibl>
-<hi rend="bold">Schmidt, Benjamin M.</hi> (2015): 
-                        <hi rend="italic">Commodius vici of recirculation: the real problem with Syuzhet</hi>. 
-                        <ref target="http://benschmidt.org/2015/04/03/commodius-vici-of-recirculation-the-real-problem-with-syuzhet/">http://benschmidt.org/2015/04/03/commodius-vici-of-recirculation-the-real-problem-with-syuzhet/</ref> [letzter Zugriff 25. August 2016].
-                    </bibl>
-<bibl>
-<hi rend="bold">Swafford, Annie</hi> (2015): “
-                        „Problems with the Syuzhet Package“. 
-                        <ref target="https://annieswafford.wordpress.com/2015/03/02/syuzhet/">https://annieswafford.wordpress.com/2015/03/02/syuzhet/</ref> [letzter Zugriff 25. August 2016].
-                    </bibl>
-<bibl>
-<hi rend="bold">Zehe, Albin / Becker, Martin / Hettinger, Lena / Hotho, Andreas / Reger, Isabella / Jannidis, Fotis</hi> (2016): 
-                        „Prediction of Happy Endings in German Novels“, 
-                        in:
-                        <hi rend="italic">Proceedings of the Workshop on Interactions between Data Mining and Natural Language Processing 2016</hi>.
+<hi rend="bold">Sahle, Patrick</hi> (2013):
+                        <hi rend="italic">Digitale Editionsformen, Zum Umgang mit der Überlieferung unter den Bedingungen des Medienwandels</hi>. 3 Bände.
+                        Norderstedt: Books on Demand.
                     </bibl>
 </listBibl>
 </div>

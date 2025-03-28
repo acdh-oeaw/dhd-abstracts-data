@@ -1,45 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="222_final-BURGHARDT_Manuel__The_Bard_meets_the_Doctor____Computergest_" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="267_final-BLUMTRITT_Jonathan_Metadaten_im_Zeitalter_von_Google_Dataset" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>“The Bard meets the Doctor” – Computergestützte Identifikation intertextueller Shakespearebezüge in der Science Fiction-Serie Dr. Who</title>
+                <title>Metadaten im Zeitalter von Google Dataset Search</title>
                 <author>
                     <persName>
-                        <surname>Burghardt</surname>
-                        <forename>Manuel</forename>
+                        <surname>Blumtritt</surname>
+                        <forename>Jonathan</forename>
                     </persName>
-                    <affiliation>Universität Leipzig, Deutschland</affiliation>
-                    <email>burghardt@informatik.uni-leipzig.de</email>
+                    <affiliation>Data Center for the Humanities, Universität zu Köln</affiliation>
+                    <email>jonathan.blumtritt@uni-koeln.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Meyer</surname>
-                        <forename>Selina</forename>
+                        <surname>Rau</surname>
+                        <forename>Felix</forename>
                     </persName>
-                    <affiliation>Universität Regensburg, Deutschland</affiliation>
-                    <email>Selina.Meyer@stud.uni-regensburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Schmidtbauer</surname>
-                        <forename>Stephanie</forename>
-                    </persName>
-                    <affiliation>Universität Regensburg, Deutschland</affiliation>
-                    <email>Stephanie.Schmidbauer@stud.uni-regensburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Molz</surname>
-                        <forename>Johannes</forename>
-                    </persName>
-                    <affiliation>Ludwig-Maximilians-Universität München, Deutschland</affiliation>
-                    <email>johannes.molz@googlemail.com</email>
+                    <affiliation>Institut für Linguistik, Universität zu Köln</affiliation>
+                    <email>frau@uni-koeln.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2019-01-06T14:11:00Z</date>
+                    <date>2015-10-04T22:02:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -71,235 +55,139 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Text Reuse</term>
-                    <term>Intertextualität</term>
-                    <term>Shakespeare</term>
+                    <term>Metadaten</term>
+                    <term>Kuratierung</term>
+                    <term>Forschungsdatenmanagement</term>
+                    <term>Suchportale</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Entdeckung</term>
-                    <term>Inhaltsanalyse</term>
-                    <term>Kontextsetzung</term>
-                    <term>Methoden</term>
-                    <term>Text</term>
+                    <term>Archivierung</term>
+                    <term>Metadaten</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einführung: Shakespeare und Intertextualität</head>
-                <p>In der jüngeren Literatur- und Kulturtheorie geht man davon aus, dass alle literarischen Texte immer auch durch eine reiche Tradition, ja ein ganzes Ökosystem, bestehender Literatur beeinflusst sind (Allen, 2000, S. 1). Dieser Einfluss, der sich im Text sowohl in impliziten als auch in expliziten Querverbindungen durch Zitate offenbart, wird gemeinhin als Intertextualität bezeichnet<hi rend="superscript">1</hi>. Als eine der zentralen Kulturtechniken der Postmoderne, lässt sich das Zitat an keinem Autor so gut studieren wie an William Shakespeare, dessen intertextuelles Nachwirken die gesamte westliche Kulturhemisphäre durchzieht (Maxwell &amp; Rumbold, 2018, S. 1). Eine Untersuchung dieser allgegenwärtigen Spuren ist somit zwingend auch eine Geschichte unserer gesamten Kultur (Taylor, 1991) und beantwortet und eröffnet Fragen, die weit über Shakespeare hinausgehen. Dabei finden sich intertextuelle Bezüge auf das Werk Shakespeares nicht nur in unterschiedlichsten literarischen Genres, sondern in zunehmendem Maße auch im Massenmedium Film und Fernsehen (Malone, 2018).
-                </p>
-                <p>Wenngleich Film in erster Linie ein visuelles Medium ist, so bietet sich über die Dialoge zusätzlich ein verbaler Analysezugang (vgl. Kozloff, 2000), Klarer (1998, S. 54) spricht in dem Zusammengang gar von Film als semi-textuelles Genre. Die den Filmen zugrunde liegenden Skripte lassen sich als Dramen lesen, da sie ausschließlich aus Figurennamen, Sprechakten und Bühnenanweisungen bestehen. Für die quantitative Analyse von Intertextualitätsphänomenen bei Filmen liegt ein großer Vorteil in der Verfügbarkeit vollständig transkribierter Dialoge die als Untertitel<hi rend="superscript">2</hi>, Drehbücher<hi rend="superscript">3</hi> oder Fan-Transkripte<hi rend="superscript">4</hi> über diverse Online-Portale angeboten werden. Die maschinenlesbaren Dialoge können sodann mit bestehenden Methoden und Algorithmen aus dem informatischen Anwendungsbereich der 
-                    <hi rend="italic">text reuse detection</hi>, also der Identifikation einer Wiederverwendung bestimmter Textfragmente in anderen Texten, eingesetzt werden. Verwandte Arbeiten zur computergestützten Intertextualitätsforschung finden sich vor allem im Bereich historischer Sprachen, insbesondere Latein und Griechisch (vgl. Berti et al., 2013; Büchler et al. 2014; Scheirer et al., 2014; Forstall et al., 2015; Bamman &amp; Crane, 2018), weniger im Bereich der Anglistik und fast gar nicht in der Shakespeareforschung. Wenngleich das Thema umfangreich mit qualitativ-hermeneutischen Methoden untersucht wurde und wird (vgl. etwa den Sammelband von Maxwell &amp; Rumbold, 2018), so finden sich nur wenige Arbeiten, die quantitative, digitale Methoden einsetzen, bspw. das Hyper-Hamlet-Projekt<hi rend="superscript">5</hi>, bei dem eine große elektronische Datenbank mit Hamlet-Referenzen aufgebaut wurde (Hohl Trillini &amp; Quassdorf, 2010).
-                </p>
-                <p>Vor diesem Hintergrund exploriert der vorliegende Beitrag intertextuelle Bezüge auf das Werk Shakespeares in der britischen Fernsehserie Dr. Who und setzt dabei auf computergestützte Analysemethoden, die bislang vor allem im Bereich klassischer Altertumswissenschaften und historischer Sprachen eingesetzt wurden. Dr. Who eignet sich dabei in besonderer Weise, da die TV-Serie fester Bestandteil der britischen Kultur ist, was automatisch eine größere Nähe zum Werk ihres Landsmannes Shakespeare bedeutet. Andererseits gibt es einige Folgen bei Dr. Who, bei denen bereits im Titel explizite Shakespeare-Bezüge deutlich werden<hi rend="superscript">6</hi>, was auf die Identifikation weiterer Zitate und Referenzen in anderen Folgen hoffen lässt. Unser Beitrag versteht sich im Wesentlichen als Fallstudie anhand derer überprüft werden soll, ob sich Standard-Methoden der 
-                    <hi rend="italic">text reuse detection</hi> prinzipiell auch für eine vergleichende Analyse von Shakespeare und TV-Serien eignen. Gleichzeitig soll am Beispiel von Dr. Who exemplarisch untersucht werden, welche Art und Menge von intertextuellen Shakespeare-Bezügen im Kontext von TV-Serien zu erwarten sind, um darauf aufbauend den computergestützten Ansatz zu optimieren und weitere Filme und Serien zu analysieren. Übergeordnetes und langfristiges Ziel ist es demnach, systematisch die Referenzierung Shakespeares in Film und Fernsehen mithilfe computergestützter Methoden zu erfassen und so die intertextuelle und intermediale Durchdringung von Shakespeares Werk über die klassischen Literaturgenres hinaus zu quantifizieren und zu kartieren.
-                </p>
+            <div>
+                <p>Perspektiven auf Kuratieren, Suchen, Finden und Präsentieren aus der Praxis</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Korpora: Shakespeare vs. Dr. Who</head>
-                <p>Im Rahmen unserer Fallstudie werden systematisch Referenzen aus zehn der bekanntesten Shakespeare-Stücke 
-                (<hi rend="italic">Hamlet</hi>, 
-                    <hi rend="italic">Macbeth</hi>, 
-                    <hi rend="italic">Merchant of Venice</hi>, 
-                    <hi rend="italic">Midsummer Night's Dream</hi>, 
-                    <hi rend="italic">Much Ado About Nothing</hi>, 
-                    <hi rend="italic">Julius Caesar</hi>, 
-                    <hi rend="italic">The Tempest</hi>, 
-                    <hi rend="italic">Romeo and Juliet</hi>, 
-                    <hi rend="italic">King Lear</hi>, 
-                    <hi rend="italic">Othello</hi>) sowie aus 154 kurzen Sonetten identifiziert werden. Die Transkripte dieser Werke stammen von der Website 
-                    <hi rend="italic">Open Source Shakespeare</hi><hi rend="superscript">7</hi> und umfassen etwa 244.000 Tokens. Gesucht werden die Shakespearebezüge in einem Vergleichskorpus, welches aus den transkribierten Dialogen der TV-Serie Dr. Who besteht. Doctor Who ist eine der populärsten Science Fiction-Serien der britischen Geschichte und wird seit 1969 vom BBC produziert. Mittlerweile umfasst die Serie 840 Folgen, verteilt auf über 36 Staffeln und 13 verschiedene Doktoren. Für die vorliegende Studie wurden die Serientranskripte der ersten fünf Doktoren analysiert. Die Transkripte wurden von der Fan-Seite 
-                    <hi rend="italic">Chakoteya</hi><hi rend="superscript">8</hi> heruntergeladen und umfassen insgesamt 141 Folgen mit einem Gesamtumfang von etwa zwei Millionen Tokens. Die Transkripte enthalten einerseits die Dialoge und andererseits Metadaten zu den jeweiligen Szenen, die vergleichbar mit Bühnenanweisungen bei Dramen sind.
-                </p>
+                <head>Relevanz des Themas</head>
+                <p>Metadaten sind Teil einer jeden datenbezogenen Forschungspraxis und ein essentieller Bestandteil einer jeden Forschungsdatenmanagementstrategie. Auch wenn Metadatenproduktion und -kuration oft einen von den Forscher*innen ungeliebten Aspekt der Projektarbeit darstellt, ist die durch Metadaten sichergestellte Find- und Zitierbarkeit von Daten für die Forschungsgemeinschaft und insbesondere auch für die Geldgeber von höchstem Interesse. Einzelne Datenzentren und nationale und internationale Forschungsinfrastrukturen haben seit Jahren in die Verbesserung der Findmechanismen investiert. Mit dem Eintritt von großen kommerziellen Anbietern wie Google und Elsevier in die Suche wissenschaftlicher Daten(sätze) kündigen sich in den letzten Monaten massive Änderungen in der Landschaft an. Als einzelnes fach- oder datentypspezifisches Repositorium müssen wir in dieser Landschaft den Erwartungen und Anforderungen von Depositor, Geldgebern, und potentiellen Nachnutzern gerecht werden, während wir mit unseren Geld- und Personalressourcen verantwortungsvoll umgehen.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Methodik: Suche nach local alignments und keywords</head>
-                <p>Für die Identifikation von textuellen Übereinstimmungen und Textähnlichkeiten 
-                (<hi rend="italic">text reuse</hi>) findet sich ein breites Spektrum an computergestützten Methoden, die im Überblickspapier von Bär et al. (2012) grundlegend hinsichtlich (1) inhaltlicher, (2) struktureller und (3) stilistischer Ähnlichkeit kategorisiert werden. In dieser Studie verwenden wir den Smith-Waterman-Algorithmus (Smith &amp; Waterman, 1981), ein Standard-Verfahren zur Identifikation von 
-                    <hi rend="italic">local alignments</hi>, also textuellen Übereinstimmungen auf der Inhaltsebene, das u.a. auch im Bereich der Bioinformatik für die Analyse von Genomsequenzen eingesetzt wird. Dabei werden auch graduelle Unschärfen wie etwa 
-                    <hi rend="italic">gaps</hi>, also einzelne fehlende Worte in ansonsten größtenteils identischen Wortgruppen, berücksichtigt. Zur Analyse der Korpora wurden die R-Packages 
-                    <hi rend="italic">TextMining</hi><hi rend="superscript">9</hi> für das 
-                    <hi rend="italic">Preprocessing</hi> der Daten und 
-                    <hi rend="italic">TextReuse</hi><hi rend="superscript">10</hi> als Implementierung für den Smith-Waterman-Algorithmus verwendet. Beim 
-                    <hi rend="italic">Preprocessing</hi> wurde schnell deutlich, dass bspw. eine Stoppwortentfernung nicht sinnvoll ist, da diese teilweise sehr charakteristisch für Shakespeare-Zitate sind (Bsp.: „to be or not to be”). Auch von Stemming und Lemmatisierung wurde abgesehen, da dies zu sehr vielen falsch-positiven Treffern führt, die dann aufwendig durch manuelle Kontrolle ausgefiltert werden müssen.
+                <head>Problemstellung</head>
+                <p>Forschungsdatenzentren und Forschungsinfrastrukturen wenden einen bedeutenden Teil ihrer personellen und finanziellen Ressourcen für die Modellierung und Kuration von Daten und Metadaten auf. Bereitstellung und Erhalt von oft komplexen Suchfunktionalitäten und die Schaffung von Anschlussfähigkeit der Metadatenschemata mit externen wissenschaftlichen und fachspezifischen Suchportalen ist arbeitsaufwändig und wartungsintensiv. </p>
+                <p>Viele Forschungsdatenzentren haben in den letzten Jahren komplexe Metadatenschemata entwickelt, die die Vielschichtigkeit des Gegenstandes detailliert abbilden. Dabei gibt es durchaus eine Tendenz zur fachspezifischen Übermodellierung von Metadaten in hochkomplexen Schemata. Diese repositoriums- und gegenstandsspezifischen Schemata bilden sowohl den grundlegenden Inhalt der Webseiten des einzelnen Repositoriums als auch das Ausgangsmaterial um externe wissenschaftliche Datensuchportale zu bedienen. </p>
+                <p>Da diese komplexen Datensätze der einzelnen Portale in den gängigen Findmechanismen des Webs  – insbesondere in der noch stets dominanten Google Web Search – aus verschiedenen Gründen schlecht erfasst werden, wurden in den letzten Jahrzehnt Metasuchportale entwickelt um eine repositoriumsübergreifende Findbarkeit sicherzustellen. Diese Metaportale sind normalerweise an eine Domäne gebunden. Die Domäne kann der Nationalstaat sein, wie beim niederländischen Portal 
+                NARCIS<hi rend="superscript">1</hi>, sie kann an eine Forschungsinfrastruktur gebunden sein, wie im Falle des CLARIN 
+                VLO<hi rend="superscript">2</hi>, sie kann fachspezifisch sein, wie im Falle des OLAC-Portals für 
+                Spracharchive<hi rend="superscript">3</hi>, oder der Service kann an einen anderen Infrastrukturservice gekoppelt sein, wie die Koppelung der 
+                DataCite-Suche<hi rend="superscript">4</hi> an die DOI-Registrierung. 
                 </p>
-                <p>Weiterhin wurde das Shakespeare-Korpus in jeweils überlappende 9-Gramme 
-                (<hi rend="italic">shingling</hi>), also jeweils Gruppen von neun Wörtern zerlegt. Für jedes einzelne 9-Gramm wurde dann im Dr. Who-Korpus mithilfe des im TextReuse-Package implementierten Smith-Waterman-Algorithmus das optimale 
-                    <hi rend="italic">local alignment</hi>, also der beste Treffer ermittelt. Dabei ist erwähnenswert, dass für jedes einzelne Shakespeare-9-Gramm immer ein optimales 
-                    <hi rend="italic">alignment</hi> im Dr. Who-Vergleichskorpus berechnet wird, auch wenn dieses ggf. nur aus einem oder zwei gemeinsamen Wörtern besteht. Der Vorgang ist somit einerseits sehr rechenintensiv und liefert andererseits eine große Menge von 
-                    <hi rend="italic">alignments</hi>, deren ausschließlich manuelle Kontrolle enorm aufwendig wäre. Dabei ist offensichtlich, dass die Verwendung einzelner, noch dazu sehr allgemeiner Wörter (Artikel, Konjunktionen, etc.) längst keinen intertextuellen Bezug darstellt. Wir betrachten deshalb nur solche 
-                    <hi rend="italic">alignments</hi> näher, die aus mindestens drei oder mehr Wörtern bestehen.
+                <p>Es ist unumstritten, dass eine einfache Auffindbarkeit und Zugänglichkeit von Datensätzen ein zentraler Baustein der Nachnutzung von Forschungsdaten ist und deshalb die Möglichkeit gefunden zu werden höher zu bewerten ist, als die Genauigkeit der zu grunde liegenden Metadaten, und die verschiedenen Metasuchportale versprechen dies zu leisten. Die Existenz dieser Metaportale hat dazu geführt, dass einzelne Repositorien die Investition in maßgeschneiderte Webinterfaces verzichtet und sich Datenzentren auf Kuration und Bereitstellung der Metadaten über (Harvesting-)Schnittstellen konzentrieren. Dies ist auch eine Reaktion auf die Tatsache, dass die in wissenschaftlichen Projekten erstellten Portale oft nicht die Qualität und Nutzerfreundlichkeit erreichen, die Nutzer*innen aus kommerziellen Webangeboten gewöhnt sind, und anspruchsvolle Webseiten, bedingt durch die Kurzlebigkeit modernen Webtechnologien sehr wartungs- und kostenintensiv sind.</p>
+                <p>Um die Diversität und Komplexität der einzelnen Metadatenschemata handhabbar zu machen, reduzieren die Metaportale die Angaben auf kompakte und flache Strukturen, die oft aus nicht mehr als Listen von Key-Value-Paaren bestehen. Das DARIAH-DE Repository hat sich für den geradezu radikalen Schritt entschieden für das Anlegen einer Kollektion im Deposit-Interface “Publikator” gerade mal drei Pflichtfelder zu definieren (Mache &amp; Klaffki 2018). Diese sind 
+                    <hi rend="italic">Titel</hi>, 
+                    <hi rend="italic">Urheber*in</hi> und 
+                    <hi rend="italic">Rechteverwaltung</hi> (Linzenzbestimmung).
                 </p>
-                <p>Gleichzeitig sind allerdings sehr kurze Referenzen, bspw. die Nennung einer Figur wie „Othello“ oder „Macbeth“, nicht ausgeschlossen, gehen aber bei diesem Ansatz verloren. Wir ergänzen den 
-                    <hi rend="italic">local alignment</hi>-Ansatz deshalb um eine 
-                    <hi rend="italic">keyword</hi>-Suche, bei der wir eine manuell erstellte Liste mit etwa 140 Stichwörtern und sehr kurzen Phrasen verwendeten. Die Liste enthält alle 
-                    <hi rend="italic">dramatis personae</hi> mit eindeutigen Namen (bspw. Ophelia, Romeo, Caliban, etc.), die Titel aller Stücke und Apokryphen sowie allgemeine Referenzen zu Shakespeares Person und Biographie (bspw. Shakespeare, Shaksper, The Bard, Stratford upon Avon, Anne Hathaway, etc.).
-                </p>
+                <p>Die komplexen Metadatenschemata in Kombination mit der Verarbeitung der Metadaten in den Metaportale hat aber auch den Effekt, dass Angaben, die nicht mit Blick auf die vereinfachte Repräsentation in den Metaportalen angelegt wurden, ohne Kontext nicht mehr verständlich sind. So kann ein Feld “Description”, das sich auf ein Objekt wie Sprache oder Sprecher in einem komplexen Metadatenschemas bezieht, in einem Metaportal so dargestellt werden, als würde es sich auf den gesamten Datensatz beziehen.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Ergebnisse und Diskussion</head>
-                <p>Insgesamt wurden mit der 
-                    <hi rend="italic">keyword</hi>-Suche 201 Treffer im Dr. Who-Korpus identifiziert, wobei ein Großteil der Treffer in einer einzelnen Folge vorkommen, da hier zwei der Hauptfiguren Troilus (108) und Cressida (37) heißen (vgl. Tabelle 1). 
+                <head>Zustand</head>
+                <p>Das 
+                    <hi rend="italic">Kölner Zentrum Analyse und Archivierung von AV</hi>
+                    <hi rend="italic" style="font-family:Cambria Math">‐</hi>
+                    <hi rend="italic">Daten</hi> (KA³) wird seit 2015 als Verbundvorhaben vom BMBF gefördert. Partner sind das 
+                    <hi rend="italic">Max-Planck-Institut für Psycholinguistik</hi> in Nimwegen (Niederlande), das 
+                    <hi rend="italic">Fraunhofer-Institut IAIS</hi> in Sankt Augustin, das 
+                    <hi rend="italic">Archiv “Deutsches Gedächtnis”</hi> der FernUniversität Hagen sowie drei Akteure an der Universität zu Köln - das
+                    <hi rend="italic" xml:space="preserve"> Regionalen Rechenzentrum</hi>, das 
+                    <hi rend="italic">Institut für Linguistik</hi> und das 
+                    <hi rend="italic">Data Center for the Humanities</hi>. Ein zentraler Bestandteil des Vorhabens ist die Etablierung eines Forschungsdatenrepositoriums am Kölner Standort. Hier werden vor allem Daten aus der linguistischen Sprachdokumentation kuratiert und archiviert und eine Ausweitung auf annotierte oder transkribierte audiovisuelle Daten aus methodisch verwandten Fachdisziplinen wie z.B. den ethnologischen Fächern oder der Oral History vorbereitet. Ein festgeschriebenes Projektziel ist die vollständige Integration des Repositoriums und Archivs 
+                    <hi rend="italic">Language Archive Cologne</hi> in die CLARIN-Forschungsinfrastruktur. Die Nähe zum Forschungsalltag der linguistischen Sprachdokumentation und die Anbindung an CLARIN bringen Bedingungen und Traditionen mit, die zu berücksichtigen sind.
                 </p>
-                <p>
-                    <hi style="font-size:9pt" xml:space="preserve">Beispielreferenz: “TROILUS: I'm sorry, </hi>
-                    <hi rend="bold" style="font-size:9pt">Cressida</hi>
-                    <hi style="font-size:9pt">, but I must obey orders.”</hi>
+                <p>Die Mehrheit der Metadaten in diesem Fachbereich liegen im 
+                IMDI-Format<hi rend="superscript">5</hi> vor. Das Format wird aktiv nur noch in wenigen Spracharchiven weltweit eingesetzt, hat aber nachhaltig die Konzeptualisierung von Metadaten in der Fachgemeinschaft geprägt. Der ausladende Charakter und das akademische Eingabetool, das primär genutzt 
+                wurde,<hi rend="superscript">6</hi>  wurden in dem Wunsch geschaffen, die Bandbreite der Forschungstätigkeit zu inkludieren. Hier verschwimmen die Grenzen zwischen Daten und Metadaten.
                 </p>
-                <p>Bei genauerer Überprüfung der Treffer wird schnell klar, dass Figurennamen aus Shakespeares Historiendramen häufig auch in der ursprünglichen Bedeutung der zugrundliegenden historischen Figur zitiert werden (bspw. 
-                    <hi rend="italic">Horatio [Nelson]</hi>, 
-                    <hi rend="italic">King John</hi>, 
-                    <hi rend="italic">Julius Caesar</hi>, 
-                    <hi rend="italic">Pericles</hi>) und somit keine genuine Shakespearereferenz vorliegt. Nach Entfernung dieser falsch-positiven Treffer verbleiben 185 echte Shakespearereferenzen. Hier muss allerdings angemerkt werden, dass die von uns verwendeten Transkripte neben den eigentlichen Dialogen auch umfangreiche Kommentare und Metadaten zu den Stücken enthalten, die häufig zusätzliche Shakespeare-Keywords enthalten. So kommt man ausschließlich über die Dialoge auf 77 Treffer, in den Metadaten finden sich zusätzliche 108 Treffer. 
+                <p>Die CLARIN-Forschungsinfrastruktur macht klare Vorgaben bezüglich der Vorhaltung und Publikation von Metadaten durch die angeschlossenen Zentren. Metadaten müssen im  CMDI-Metadatenformat verfügbar und über eine OAI-PMH Schnittstelle harvestbar sein. Die in der CMDI Component Metadata Registry definierten Profile können frei im Rahmen der existierenden Best Practices modelliert werden (CMDI 2018). Durch ein semantisches Mapping über die CLARIN Concept Registry soll eine semantische Interoperabilität von Metadatenkategorien gewährleistet werden.</p>
+                <p>Metadaten in der CLARIN-Infrastrukur werden durch das Metasuchportal 
+                    <hi rend="italic" xml:space="preserve">Virtual Language Observatory </hi>(VLO) geharvestet und dargestellt. Durch eine festgelegte Anzahl von Metadatenkategorien, die in jedem spezifischen Metadatenprofil durch Vergabe der entsprechenden Konzepten kenntlich gemacht werden müssen, werden die durchsuchbaren und facettierbaren Kategorien festgelegt. Mit der Zuordnung von bestehenden Metadatenfeldern zu definierten Kategorien (facet mapping) bestimmt der Metadatenprovider also letztendlich das Erscheinungsbild seiner Daten im VLO.
                 </p>
+                <p>Zu den relevanten internationalen Infrastrukturen und Findmechanismen, die nicht in CLARIN organisiert sind, zählt vor allem der Katalog und die Metasuchmaschine der Open Language Archives Community (OLAC). OLAC hat ein eigenes sprachressourcen-orientiertes Metadatenformat und funktioniert ebenfalls nach dem Harvester-Prinzip über die Bereitstellung einer OAI-PMH-Schnittstelle durch den Metadatenprovider.</p>
+                <p>Ein wichtiger Gravitationspunkt für eine nicht-fachspezifische übergreifende internationale Adressierbarkeit und Discoverability von Forschungsdatensätzen sind die Dienste des DataCite Konsortiums in Verbindung mit der Registrierung von Digitial Object Identifier (DOIs) für jeden Datensatz. Mit jeder DOI wird ein einfacher, aber erweiterbarer, Metadatensatz registriert, der durch die DataCite Metadatensuche auffindbar wird. DOI und DataCite ist es gelungen, dass die Vergabe mit positiven und progressiven Effekten assoziiert wird, wie Anerkennung akademischer Leistungen und Wissenschaftlichkeit des Inhalts, sodass erfolgreich eine Nachfrage aus der Forschung generiert wird. Das Metadatenschema wird damit als Referenz für eine nicht-fachspezifische Beschreibung von Forschungsdatensätzen weiter an Bedeutung gewinnen. Metadatensätze werden hier aktiv durch den Metadatenprovider über eine Schnittstelle bei DataCite registriert.</p>
+                <p>Die übergreifenden Metadatenportale müssen sich mit der Nutzerfreundlichkeit und Performanz von kommerziellen Webdiensten messen. Hierbei liegt auf der Hand, dass die Qualität der Suche maßgeblich von der Qualität der Metadaten und vor allem die Verlässlichkeit und Passung der Metadatenkategorien abhängt, über die sie selbst nur bedingt Kontrolle haben. </p>
+                <p>Es ist also angebracht, dass sich Forschungsdatenarchive und Forscher bei der Konzeptualisierung von Metadaten und bei der Kuratierung nicht ausschließlich auf die Abbildung des zugrunde liegenden Forschungsgegenstands versteifen, sondern vielmehr Metadaten von ihren intendierten Disseminationskanälen her zu denken. In Zukunft wird es immer wichtiger sein, wie Daten in den jeweiligen Meta-Portalen aussehen werden.</p>
                 <figure>
-                    <graphic n="1001" width="15.89263888888889cm" height="6.700238888888889cm" url="222_final-23e3b67374bf471442860df948fc4de5.png" rend="inline"/>
+                    <graphic n="1001" width="14.054694444444445cm" height="8.50055cm" url="267_final-27a27ab9294b5e61fc961f47769238f2.png" rend="inline"/>
                 </figure>
-                <p>
-                    <hi rend="bold" style="font-size:9pt">Tabelle 1</hi>
-                    <hi style="font-size:9pt" xml:space="preserve">: Überblick zu den gefundenen Keywords und </hi>
-                    <hi rend="italic" style="font-size:9pt">alignments</hi>
-                    <hi style="font-size:9pt" xml:space="preserve"> im Dr. Who-Korpus. Kursiv gesetzte Treffer sind falsch-Positive, d.h. nach manueller Prüfung stellte sich heraus, dass sie keine unmittelbare Shakespearereferenz beinhalten.</hi>
-                </p>
-                <p>Auffällig niedrig scheint im Vergleich zu den 
-                    <hi rend="italic">keyword</hi>-Treffern die Anzahl längerer 
-                    <hi rend="italic">alignments</hi> zu sein: So finden sich insgesamt nur acht längere Shakespeare-Zitate in unserem Dr. Who-Korpus, bspw.:
-                </p>
-                <p>
-                    <hi style="font-size:9pt">(1) “Friends, Romans, countrymen! Lend me your ears. I come to bury Caesar, not to praise him.”</hi>
-                </p>
-                <p>
-                    <hi style="font-size:9pt" xml:space="preserve">(Julius Caesar, Akt 3, Szene 2) </hi>
-                </p>
-                <p>
-                    <hi style="font-size:9pt">(2) “To be or not to be.” (Hamlet, Akt 3, Szene 1)</hi>
-                </p>
-                <p>
-                    <hi style="font-size:9pt">(3) “By the pricking of my thumbs, something wicked this way comes.” (Macbeth, Akt 4, Szene 1)</hi>
-                </p>
-                <p>Gleichzeitig erhalten wir mit dem local aligment-Ansatz auch viele falsch-positive Treffer, die zwar längere, in beiden Texten vorkommende Sequenzen beschreiben, aber keine genuinen Shakespeare-Zitate sind, sondern eher hochfrequente Idiome, bspw.:</p>
-                <p style="text-align:left;">
-                    <hi style="font-size:9pt">“You all know what you have to do.” (kommt gleichermaßen bei Shakespeare und Dr. Who vor)</hi>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Erwartungen und Veränderungen</head>
+                <p>Der neueste Ankömmling im Bereich der wissenschaftlichen Datensatz-Suche ist Google mit Google Dataset 
+                Search<hi rend="superscript">7</hi>. Dieser Service befindet sich noch im Beta-Stadium und ändert sich täglich. Die grundlegende Ausrichtung und die zugrundeliegenden Technologien sind aber bereits 
+                dokumentiert<hi rend="superscript">8</hi> und mehr oder weniger stabil. Google basiert die Datensatz-Suche auf Technologien und Strategien der Websuche auf. Nachdem Google seinen Support für OAI-PMH-Schnittstellen 2008 (Mueller 2008) eingestellt hatte, ist es nicht unerwartet, dass sie, anstatt Metadaten, über spezielle Schnittstellen abzufragen oder eine Registrierung zu erfordern, durch das Crawlen der Webseiten von Repositorien und Portalen erfasst werden. Dabei werden strukturierte Daten, die mit Hilfe der Linked-Data-Technologien 
+                JSON-LD<hi rend="superscript">9</hi> oder 
+                RDFa<hi rend="superscript">10</hi> und den 
+                Ontologien <hi rend="italic">schema.org</hi><hi rend="superscript">11</hi> oder 
+                    <hi rend="italic">W3C Data Catalog Vocabulary</hi><hi rend="superscript">12</hi> ausgezeichnet wurden, als Grundlage der Darstellung und wahrscheinlich auch des Suchindexes genommen. Durch diese Technologieentscheidungen wird eine flache Metadatenstruktur, bestehend aus einfachen Key-Value-Paaren und eine allgemeine, fachagnostische Datenfeldsemantik, bedingt. Der Fokus auf HTML-Webseiten und allgemeine Webtechnologien für strukturierte Daten als Hauptschnittstelle für Metadaten bedeutet eine grundlegende Abkehr von den gängigen Praktiken in der wissenschaftlichen Technologielandschaft. 
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Methodenreflexion und Fazit</head>
-                <p>Der zweigleisige Ansatz einer 
-                    <hi rend="italic">local alignment</hi>- sowie einer gesonderten 
-                    <hi rend="italic">keyword</hi>-Suche bringt mit 193 intertextuellen Shakespearebezügen in unserem Dr. Who-Korpus eine beeindruckende Anzahl von Treffern, deren Identifikation manuell was Umfang und Arbeitsaufwand angeht, so nicht ohne Weiteres möglich gewesen wäre. Damit ergeben sich spannende Perspektiven für die Erweiterung des Ansatzes auf größere Korpora, mit weiteren Serien und Filmen. Gleichwohl muss angemerkt werden, dass der Löwenanteil der Treffer über den relativ trivialen Ansatz der 
-                    <hi rend="italic">keyword</hi>-Suche gefunden wurde. Von den insgesamt 193 Treffern stammen nur 8 aus dem 
-                    <hi rend="italic">local alignment</hi>-Ansatz. Bedenkt man den enormen Rechenaufwand (fast 200 Stunden mit Standard-Laptops) und den Aufwand der manuellen Filterung der 
-                    <hi rend="italic">alignments</hi>, so muss man den 
-                    <hi rend="italic">local alignment</hi>-Ansatz in dieser Form doch deutlich hinterfragen. Denkbar wären hier für künftige Experimente weitere Optimierungen auf algorithmischer Seite, bspw. die Berücksichtigung von Wortarten-Ngrammen oder die Verwendung alternativer Algorithmen aus dem Bereich der 
-                    <hi rend="italic">content similarity</hi> (vgl. Bär et al., 2012). Weitere Verbesserungen sind auf Seite der Ergebnispräsentation (vgl. Burghardt &amp; Wolff, 2015) möglich, welche die Beurteilung der Treffer deutlich erleichtern und damit beschleunigen könnte. Sinnvoll scheint auch eine Vorfilterung durch die 
-                    <hi rend="italic">keyword</hi>-Suche, d.h. nur diejenigen Episoden in denen bereits ein Shakespeare-
-                    <hi rend="italic">keyword</hi> erkannt wurde werden anschließend auch noch mit dem 
-                    <hi rend="italic">local alignment</hi>-Ansatz auf komplexere Zitate hin untersucht. Als nächste Schritte sollen deshalb systematisch Korrelationen zwischen komplexen 
-                    <hi rend="italic">alignments</hi> und einzelnen 
-                    <hi rend="italic">keywords</hi> in einem größeren Korpus untersucht werden.
+                <head>Ausblick und mögliche Antworten</head>
+                <p>Die aktuellen Veränderungen in der Datensatzsuche bedeuten auf der einen Seite, dass Findbarkeit immer weiter aus der Kontrolle der einzelnen Repositorien in die Hand von Metaportalen und Drittanbietern wie Google und 
+                Elsevier<hi rend="superscript">13</hi> geht. Auf der anderen Seite bedeutet der durch Google angedeutete Technologiewechsel eine Stärkung der Webinterfaces der einzelnen Repositorien. Die Webseite ist damit wieder primäre Schnittstelle. Repositorien werden die Semantik ihrer Metadaten stärker von den intendierten Disseminationskanälen her denken müssen und einzeln und in Verbünden Strategien für die nachhaltige Findbarkeit entwickeln.
                 </p>
             </div>
         </body>
         <back>
 			<div type="notes">
-				<note place="foot" xml:id="ftn1" n="1"> Für eine Einführung zu „Intertextualität“ siehe Allen (2000).</note>
-				<note place="foot" xml:id="ftn2" n="2"> Untertitel online verfügbar unter https://www.opensubtitles.org/de (alle URLs in diesem Artikel wurden zuletzt am 14.10.2018 überprüft)</note>
-				<note place="foot" xml:id="ftn3" n="3">> Drehbücher online verfügbar unter https://www.imsdb.com/</note>
-				<note place="foot" xml:id="ftn4" n="4"> Fan-Transkripte online verfügbar unter http://transcripts.foreverdreaming.org/, https://www.springfieldspringfield.co.uk/, http://www.chakoteya.net/</note>
-				<note place="foot" xml:id="ftn5" n="5"> HyperHamlet online verfügbar unter http://www.hyperhamlet.unibas.ch/</note>
-				<note place="foot" xml:id="ftn6" n="6"> Bspw. „The Shakespeare Code“, Dr. Who Folge 180, Transkription online verfügbar unter http://www.chakoteya.net/DoctorWho/29-2.htm</note>
-				<note place="foot" xml:id="ftn7" n="7"> Open Source Shakespeare online verfügbar unter https://www.opensourceshakespeare.org/</note>
-				<note place="foot" xml:id="ftn8" n="8"> Chakoteya Fan-Transkripte online verfügbar unter http://www.chakoteya.net/DoctorWho/index.html</note>
-				<note place="foot" xml:id="ftn9" n="9"> Dokumentation online verfügbar unter https://cran.r-project.org/web/packages/tm/index.html</note>
-				<note place="foot" xml:id="ftn10" n="10"> Dokumentation online verfügbar unter https://cran.r-project.org/web/packages/textreuse/index.html</note>
+				<note place="foot" xml:id="ftn1" n="1"> <ref target="https://www.narcis.nl/">https://www.narcis.nl/</ref>, 11.01.2019.</note>
+				<note place="foot" xml:id="ftn2" n="2"> <ref target="https://vlo.clarin.eu/">https://vlo.clarin.eu/</ref>, 11.01.2019.</note>
+				<note place="foot" xml:id="ftn3" n="3"> <ref target="http://search.language-archives.org">http://search.language-archives.org</ref>, 11.01.2019.</note>
+				<note place="foot" xml:id="ftn4" n="4"> <ref target="https://search.datacite.org/">https://search.datacite.org/</ref>, 11.01.2019.</note>
+				<note place="foot" xml:id="ftn5" n="5"> <ref target="https://www.mpi.nl/ISLE/">https://www.mpi.nl/ISLE/</ref>, 11.01.2019.</note>
+				<note place="foot" xml:id="ftn6" n="6"> <ref target="https://tla.mpi.nl/tools/tla-tools/arbil/">https://tla.mpi.nl/tools/tla-tools/arbil/</ref>, 11.01.2019.</note>
+				<note place="foot" xml:id="ftn7" n="7"> <ref target="https://toolbox.google.com/datasetsearch">https://toolbox.google.com/datasetsearch</ref>, 11.01.2019.</note>
+				<note place="foot" xml:id="ftn8" n="8"> <ref target="https://developers.google.com/search/docs/data-types/dataset">https://developers.google.com/search/docs/data-types/dataset</ref>, 11.01.2019.</note>
+				<note place="foot" xml:id="ftn9" n="9"> <ref target="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</ref>, 11.01.2019.</note>
+				<note place="foot" xml:id="ftn10" n="10"> <ref target="https://www.w3.org/TR/rdfa-primer/">https://www.w3.org/TR/rdfa-primer/</ref>, 11.01.2019.</note>
+				<note place="foot" xml:id="ftn11" n="11"> <ref target="https://schema.org/">https://schema.org/</ref>, 11.01.2019.</note>
+				<note place="foot" xml:id="ftn12" n="12"> <ref target="https://www.w3.org/TR/vocab-dcat/">https://www.w3.org/TR/vocab-dcat/</ref>, 11.01.2019.</note>
+				<note place="foot" xml:id="ftn13" n="13"> <ref target="https://datasearch.elsevier.com/">https://datasearch.elsevier.com/</ref>, 11.01.2019.</note>
 			</div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">Allen, G. (2000):</hi> 
-                        <hi rend="italic">Intertextuality</hi>, 
-                        London, New York: Routledge.
+                        <hi rend="bold">Blumtritt, J. / Rau, F. (2016):</hi> 
+                        <hi rend="italic">User-Experience von Spracharchiven: Eine Neubewertung der Interaktion von Archiv und Nutzern</hi>, 
+                        in: Digital Humanities im deutschsprachigen Raum (DHd 2016), Leipzig. 
+                        <ref target="http://dhd2016.de/boa.pdf%23page=215">http://dhd2016.de/boa.pdf#page=215</ref>.
+                    </bibl>
+                    <bibl style="text-align:left;">
+                        <hi rend="bold">CMDI and Metadata Curation task forces of the Standing Committee on CLARIN Technical Centres (2018):</hi> 
+                        <hi rend="italic">CMDI Best Practices</hi>, Version 1.1.1, 
+                        <ref target="https://github.com/clarin-eric/cmdi-best-practices/releases">https://github.com/clarin-eric/cmdi-best-practices/releases</ref>.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Bamman, D. / Crane, G. (2008)</hi> 
-                        <hi rend="italic">The Logic and Discovery of Textual Allusion</hi>, 
-                        in: ACL Language Technology for Cultural Heritage, (1986).
+                        <hi rend="bold">Mache, B. / Klaffki, L. (2018):</hi> 
+                        <hi rend="italic">Das DARIAH-DE Repository. Elementarer Teil einer modularen Infrastruktur für geistes- und kulturwissenschaftliche Forschungsdaten</hi>, 
+                        in: O-Bib. Das Offene Bibliotheksjournal / Herausgeber VDB, 5(3) 2018, 92-103. 
+                        <ref target="https://doi.org/10.5282/o-bib/2018H3S92-103">https://doi.org/10.5282/o-bib/2018H3S92-103</ref>.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Bär, D. / Zesch, T. / Gurevych, I. (2012):</hi> 
-                        <hi rend="italic">Text Reuse Detection using a Composition of Text Similarity Measures</hi>, 
-                        in: Proceedings of COLING 2012, 1 (December), 167–184.
+                        <hi rend="bold">Mueller, John (2008):</hi> 
+                        <hi rend="italic">Retiring support for OAI-PMH in Sitemaps</hi>. 
+                        <ref target="https://webmasters.googleblog.com/2008/04/retiring-support-for-oai-pmh-in.html">https://webmasters.googleblog.com/2008/04/retiring-support-for-oai-pmh-in.html</ref>.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Berti, M. / Büchler, M. / Geßner, A. / Thomas, E. (2013):</hi>
-                        <hi rend="italic">Measuring the Influence of a Work by Text Reuse</hi>, 
-                        in: The Digital Classicist.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Burghardt, M. / Wolff, C. (2015):</hi> 
-                        <hi rend="italic">Humanist-Computer Interaction: Herausforderungen für die Digital Humanities aus Perspektive der Medieninformatik</hi>,
-                        in: Book of Abstracts Workshop “Informatik und die Digital Humanities”, Leipzig.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Büchler, M. / Burns, P. R. / Müller, M. / Franzini, E. / Franzini, G. (2014):</hi> 
-                        <hi rend="italic">Towards a Historical Text Re-use Detection</hi>, 
-                        in 
-                        <hi rend="bold">C. Biemann / A. Mehler (Eds.):</hi> 
-                        <hi rend="italic">Text Mining, Theory and Applications of Natural Language Processing</hi>, 
-                        Springer International Publishing.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Forstall, C. / Coffee, N. / Buck, T. / Roache, K. / Jacobson, S. (2015):</hi> 
-                        <hi rend="italic">Modeling the scholars: Detecting intertextuality through enhanced word-level n-gram matching</hi>, 
-                        in: Digital Scholarship in the Humanities, 30 (4), 503–515. 
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Hohl Trillini, R. / Quassdorf, S. (2010):</hi> 
-                        <hi rend="italic">A “key to all quotations”? A corpus-based parameter model of intertextuality</hi>, 
-                        in: Literary and Linguistic Computing, 25 (3), 269–286. 
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Klarer, M. (1999):</hi> 
-                        <hi rend="italic">An Introduction to Literary Studies</hi>, 
-                        London, New York: Routledge.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Kozloff, S. (2000):</hi> 
-                        <hi rend="italic">Overhearing Film Dialogue</hi>, 
-                        Berkeley et al.: University of California Press.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Malone, T. (2018):</hi> 
-                        <hi rend="italic">Quoting Shakespeare in Twentieth- Century Film</hi>, 
-                        in: 
-                        <hi rend="bold">Maxwell, J. / Rumbold, K. (Eds.):</hi> 
-                        <hi rend="italic">Shakespeare and Quotation</hi> 
-                        (pp. 194–208). Cambridge: Cambridge University Press.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Maxwell, J. / Rumbold, K. (2018):</hi>
-                        <hi rend="italic">Shakespeare and Quotation</hi>, 
-                        Cambridge: Cambridge University Press.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Scheirer, W. / Forstall, C. / Coffee, N. (2016):</hi> 
-                        <hi rend="italic">The sense of a connection: Automatic tracing of intertextuality by meaning</hi>, 
-                        Digital Scholarship in the Humanities, 
-                        31 (1), 204–217. 
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Smith, T. F. / Waterman, M. S. (1981):</hi> 
-                        <hi rend="italic">Identification of Common Molecular Subsequences</hi>, 
-                        Journal of Molecular Biology, 147, 195–197.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Taylor, G. (1991):</hi> 
-                        <hi rend="italic">Reinventing Shakespeare: A Cultural History from the Restoration to the Present</hi>, 
-                        Oxford: Oxford University Press.
+                        <hi rend="bold">Schaffner, J. (2009):</hi> 
+                        <hi rend="italic">The Metadata is the Interface: Better Description for Better Discovery of Archives and Special Collections, Synthesized from User Studies</hi>, 
+                        in: Report produced by OCLC Research. 
+                        <ref target="https://www.oclc.org/content/dam/research/publications/library/2009/2009-06.pdf">https://www.oclc.org/content/dam/research/publications/library/2009/2009-06.pdf</ref>.
                     </bibl>
                 </listBibl>
             </div>

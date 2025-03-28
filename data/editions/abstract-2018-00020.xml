@@ -1,30 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="BURR_Elisabeth__Kinder_des_Buchdrucks__im_Digitalen_Zeitalte">
+     xml:id="KLINGER_Roman_Digitale_Modellierung_von_Figurenkomplexität_a">
    <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>"Kinder des Buchdrucks" im Digitalen Zeitalter. Ein romanistisches Digital Humanities Modul</title>
+                <title>Digitale Modellierung von Figurenkomplexität am Beispiel des Parzival von Wolfram von Eschenbach</title>
                 <author>
                     <persName>
-                        <surname>Burr</surname>
-                        <forename>Elisabeth</forename>
+                        <surname>Braun</surname>
+                        <forename>Manuel</forename>
                     </persName>
-                    <affiliation>Universität Leipzig, Deutschland</affiliation>
-                    <email>elisabeth.burr@uni-leipzig.de</email>
+                    <affiliation>Institut für Literaturwissenschaft, Universität Stuttgart</affiliation>
+                    <email>manuel.braun@ilw.uni-stuttgart.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Fußbahn</surname>
-                        <forename>Ulrike</forename>
+                        <surname>Klinger</surname>
+                        <forename>Roman</forename>
                     </persName>
-                    <affiliation>Universität Leipzig, Deutschland</affiliation>
-                    <email>uf28bope@studserv.uni-leipzig.de</email>
+                    <affiliation>Institut für Maschinelle Sprachverarbeitung, Universität Stuttgart</affiliation>
+                    <email>roman.klinger@ims.uni-stuttgart.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Padó</surname>
+                        <forename>Sebastian</forename>
+                    </persName>
+                    <affiliation>Institut für Maschinelle Sprachverarbeitung, Universität Stuttgart</affiliation>
+                    <email>pado@ims.uni-stuttgart.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Viehhauser</surname>
+                        <forename>Gabriel</forename>
+                    </persName>
+                    <affiliation>Institut für Literaturwissenschaft, Universität Stuttgart</affiliation>
+                    <email>viehhauser@ilw.uni-stuttgart.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2015-10-04T22:02:00Z</date>
+                    <date>2018-01-09T00:07:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -53,31 +69,30 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Poster</term>
+                    <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Buchdruck</term>
-                    <term>Digitalisierung</term>
-                    <term>Grammatiken und Sprachtraktate</term>
-                    <term>Digital Humanities</term>
+                    <term>Figurenanalyse</term>
+                    <term>Distributionelle Semantik</term>
+                    <term>Distant Reading</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
+                    <term>Strukturanalyse</term>
+                    <term>Beziehungsanalyse</term>
                     <term>Modellierung</term>
-                    <term>Kontextsetzung</term>
-                    <term>Kollaboration</term>
-                    <term>Lehre</term>
-                    <term>Text</term>
+                    <term>Stilistische Analyse</term>
+                    <term>Visualisierung</term>
                 </keywords>
             </textClass>
         <settingDesc>
             <ab n="conference">DHd2018 - "Kritik der Digitalen Vernunft", Köln</ab>
-            <ab n="paperID">299</ab>
-            <ab n="session_ID">60</ab>
-            <ab n="session_numberInSession">14</ab>
-            <ab n="session_short">Poster_1</ab>
-            <ab n="session_title">Postersession</ab>
-            <ab n="session_start">2018-03-01 17:45</ab>
-            <ab n="session_end">2018-03-01 23:00</ab>
+            <ab n="paperID">178</ab>
+            <ab n="session_ID">130</ab>
+            <ab n="session_numberInSession">1</ab>
+            <ab n="session_short">VP_5d</ab>
+            <ab n="session_title">Modellierung</ab>
+            <ab n="session_start">2018-03-01 11:00</ab>
+            <ab n="session_end">2018-03-01 12:30</ab>
          </settingDesc>
       </profileDesc>
     </teiHeader>
@@ -85,154 +100,140 @@
         <body>
             <div type="div1" rend="DH-Heading1">
                 <head>Einleitung</head>
-                <p>Schon länger wird die Frage nach der Lehre der Digital Humanities gestellt (cf. u. a. Hirsch (2012), Gold (2012), Warwick / Terras / Nyhan (2012)). Zudem sind Initiativen wie die EU geförderte 
-                    <hi rend="italic">#dariahTeach</hi> entstanden, die Materialien für die Lehre von Digital Humanities entwickelt und online zur Verfügung stellt. 2017 haben dann Fotis Jannidis, Hubertus Kohle und Malte Rehbein ein umfangreiches deutschsprachiges Lehrbuch zu 
-                    <hi rend="italic">Digital Humanities</hi> vorgelegt. In keiner dieser Publikationen wird aber, soweit wir sehen können, der Frage nachgegangen, wie der Auftrag, den die neue Epistemologie 
-                    <hi rend="italic">Digital Humanities</hi> als den ihren erkennt, nämlich ein umfassenderes und kritischeres Wissen von Artefakten sowie deren Relationen untereinander mittels der Nutzung von computationellen Methoden zu schaffen, in der Lehre umgesetzt werden kann. Einen Versuch in diese Richtung unternehmen wir in einem romanistischen Master-Modul, wo frühe gedruckte Grammatiken und Sprachtraktate zunächst als „Kinder des Buchdrucks“ eingeordnet und dann mittels Transkription und Auszeichnung für Forschungen im digitalen Zeitalter verfügbar gemacht werden. 
+                <p>Figuren gehören zu den wichtigsten Bestandteilen literarischer Erzählungen. Narratologische Analysen haben sich bislang insbesondere mit zwei Aspekten von Figuren beschäftigt: ihrer strukturellen Bedeutung und ihrer Charakterisierung. Während der erste Aspekt in den Digital Humanities bereits modelliert worden ist (etwa im Rahmen von Netzwerkanalysen, vgl. Jannidis et. al. 2016, Piper et. al. 2017), steht die datengetriebene Untersuchung des zweiten noch ganz am Anfang, obwohl die hermeneutisch arbeitende Literaturwissenschaft wiederholt auf seine Bedeutung hingewiesen hat (etwa Jannidis 2004, 2009). Dieses Desiderat lässt sich darauf zurückführen, dass Figuren auf die unterschiedlichste Art gekennzeichnet werden – etwa durch ihr Handeln und Reden, aber auch durch Beschreibungen und Bewertungen des Erzählers – und dass neben expliziten Charakterisierungen schwerer zu greifende implizite stehen. Diese Informationen lassen sich nur schwer erheben und in einem umgreifenden Modell verrechnen.</p>
+                <p>Um dennoch einen Einstieg in die digitale Erfassung der Figurencharakteristik zu ermöglichen, nehmen wir eine vergleichsweise einfach zu modellierende Facette der Figurendarstellung in den Blick, und zwar das Konzept der Figurenkomplexität, das auch in der traditionellen Theoriebildung eine prominente Rolle spielt. Nach der ebenso verbreiteten wie vielkritisierten Kategorisierung von Forster (1927) lassen sich Figuren grundsätzlich in 
+                    <hi rend="italic">flat</hi> und 
+                    <hi rend="italic">round characters</hi> einteilen. Trotz der zahlreichen Differenzierungsversuche späterer Forscher prägt dieses Modell noch heute Annahmen über die literaturgeschichtliche Entwicklung von Figurenentwürfen. So gelten die Protagonisten der mittelhochdeutschen Literatur klischeehaft als 
+                    <hi rend="italic">flat characters</hi>, die in erster Linie auf ihre Funktion für das Handlungsgefüge hin konstruiert werden und nicht die Tiefe moderner Individuen erreichen (vgl. zusammenfassend Schulz 2012). Im Widerspruch hierzu hat die mediävistische Literaturwissenschaft aber auch herausgestellt, dass die Konstruktion komplexer Figuren zu den grundlegenden Gestaltungsprinzipien mittelhochdeutscher Texte gehören kann. 
                 </p>
+                <p>Als Paradefall für Figurenkomplexität kann der um 1200/1210 abgefasste Artusroman ‚Parzival‘ angesehen 
+                        <hi rend="italic">werden</hi>, dessen Autor Wolfram von Eschenbach im Prolog das Konzept eines ‚gemischten‘, nicht eindeutig als gut oder böse bewerteten Menschentypus entwirft, von dem er im Folgenden handeln will. Dementsprechend lassen sich im ‚Parzival‘ immer wieder Figuren finden, die nicht dem Ideal (nach ihm sind adelige Protagonisten nicht nur politisch mächtig, sondern zum Beispiel auch ethisch gut und körperlich schön) entsprechen, sondern in ihrer Darstellung widersprüchlich erscheinen und daher als komplex angesehen werden können.
+                </p>
+                <p>Im Folgenden schlagen wir eine Methodik vor, mit der diese Einschätzungen der hermeneutischen Forschung digital modelliert und überprüft werden kann.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Grundlagen des Versuchs</head>
-                <p>Dem Versuch zugrunde liegt ein Projekt, das es sich zum Ziel setzt, die kulturellen, politischen, gesellschaftlichen, ideologischen, genderbedingten etc. Vorstellungen, Ideen und Ziele, die sich hinter sprachbetrachtenden, sprachbeschreibenden und sprachnormierenden Werken, wie Grammatiken und Sprachtraktate, der frühen Gutenberg-Ära verbergen, vergleichend und in ihren Zusammenhängen über die einzelnen romanischen Kulturen und Sprachen hinweg zu untersuchen. Um diese Werke systematisch erforschbar zu machen, bedarf es allerdings zunächst einmal ihrer Digitalisierung und Erschließung. </p>
-                <p>Bei den Texten, die bisher berücksichtigt wurden, handelt es sich um:</p>
-                <list type="unordered">
-                    <item>Francesco Fortunio (1516): 
-                        <hi rend="italic">Regole grammaticali della volgar lingua</hi>. Ancona: Bernardin Vercellese
-                    </item>
-                    <item>Louis Meigret (1550): 
-                        <hi rend="italic">Le trętté de la GRAMMĘRE FRANCOĘZE</hi>. Paris: Chrestien Wechel
-                    </item>
-                    <item>Speron Sperone (1542): “Dialogo delle lingue”, in: Speron Sperone: 
-                        <hi rend="italic">I dialogi di Messer Speron Sperone</hi>. Vinegia: Aldus 106-131
-                    </item>
-                    <item>Joachim Du Bellay (1549): 
-                        <hi rend="italic">Deffence, et illustration de la langue francoyse</hi>. Paris: Arnoul l’Angelier.
-                    </item>
-                </list>
-                <p>Als „Kinder des frühen Buchdrucks“ weisen diese Texte nicht nur eine Vielzahl von heute nicht mehr gebrauchten Lettern, von Abkürzungen und Variationen auf, sondern sie sind zugleich auch Ausdruck der durch den Buchdruck maßgeblich geförderten Hinwendung zur eigenen romanischen Volkssprache, zur eigenen Nation, zur Abgrenzung gegenüber anderen bzw. zum Vergleich oder gar zur Konkurrenz mit anderen. Zudem wird hier ein Modell der jeweiligen romanischen Sprache entwickelt und eine (soziale) sprachliche Norm fixiert, an der gerade auch die Drucker (nicht zuletzt aus ökonomischen Gründen) ein großes Interesse haben (cf. z. B. Tory (1529)). Darüber hinaus legen sie auch Zeugnis ab von der Entstehung eines Marktes, eines Lesepublikums und der Entwicklung von Layout- und Strukturierungsverfahren, die das Lesen und Verstehen von Texten fördern.</p>
+                <head>Methode</head>
+                <p>Wir untersuchen, ob man bereits mit extrem einfachen Methoden Vorhersagen zur Figurenkomplexität treffen kann, und verwenden dazu 
+                    <hi rend="italic">distributionelle Analysen</hi> (Harris 1954, Miller und Charles 1991). Distributionelle Analysen repräsentieren die Bedeutung eines Zielwortes durch Eigenschaften der Kontexte seines Vorkommens in Textkorpora – im einfachsten Fall durch die Häufigkeiten aller Kontextwörter innerhalb eines Fensters um die Vorkommen des Zielwortes (‚Kontextvektor‘).
+                </p>
+                <p>Spezifisch betrachten wir zwei Arten frequenzbasierter Kontextvektoren: (a) 
+                    <hi rend="italic">lexikalische Kontextvektoren</hi>, berechnet über lemmatisierte Kontexte; (b) 
+                    <hi rend="italic">entitätsbasierte Kontextvektoren</hi>, berechnet über Eigennamen in den Kontexten. Dabei misst (a) die 
+                    <hi rend="italic">lexikalische</hi> Vielfalt der Kontexte, in denen die jeweilige Figur vorkommt, und (b) entsprechend die 
+                    <hi rend="italic">soziale</hi> Vielfalt der Kontexte. Beide Arten von Repräsentationen verwenden als Kontexte die sogenannten 
+                    <hi rend="italic">Dreißiger</hi>-Abschnitte (die Unterteilung des ‚Parzival‘ in Abschnitte von 30 Versen nach Karl Lachmann) und greifen nicht auf sprachliche Strukturen innerhalb der Dreißiger wie Wortarten, Syntax, Satzgrenzen oder Anaphern zurück.<ref target="ftn1" n="1"/>
+                </p>
+                <p>In der Computerlinguistik werden Kontextvektoren typischerweise miteinander verglichen, um die semantische Ähnlichkeit der Zielwörter zu modellieren und finden breite Anwendung (Pantel und Turney 2010). In unserer Studie betrachten wir stattdessen den 
+                    <hi rend="italic">Informationsgehalt</hi> der Kontextvektoren als Prädiktor für die Figurenkomplexität und messen ihn per 
+                    <hi rend="italic">Entropie</hi>. Entropie eruiert den Informationsgehalt 
+                    <hi rend="italic">H(p)</hi> einer Wahrscheinlichkeitsverteilung 
+                    <hi rend="italic">p</hi>, definiert als 
+                    <hi rend="italic">H(p) = –</hi>Σ
+                    <hi rend="italic subscript">x</hi>
+                    <hi rend="italic"> p(x) </hi>log 
+                    <hi rend="italic">p(x)</hi> (Shannon 1948). Entropie kann verstanden werden als die Anzahl an Bits, die an Information in der Verteilung enthalten sind. Damit enthalten diejenigen Kontextvektoren eine höhere Entropie, die in gleichmäßiger verteilten Kontexten vorkommen, als die, die häufig in ähnlichen Kontexten auftreten.
+                </p>
+                <p>Dies entspricht der (aus theoretischer Perspektive natürlich stark vereinfachenden) Annahme, wonach Figuren als komplexer wahrgenommen werden, wenn sie in reicheren und verschiedeneren Kontexten vorkommen. Bei lexikalischen Kontexten (s.o.) sagen wir also voraus, dass höhere lexikalische Variabilität auf Komplexität hinweist – wobei Entropie freilich nicht zwischen lexikalisch reichen und semantisch widersprüchlichen Kontexten unterscheiden kann. Bei entitätsbasierten Kontexten übernimmt diese Rolle das gemeinsame Auftreten einer Figur mit mehreren anderen Figuren.</p>
+                <p>Methodisch ist anzumerken, dass Frequenz einen Störfaktor bei der Interpretation von Entropie darstellt: Häufigere Zielwörter kommen – ceteris paribus – häufiger in verschiedenen Kontexten vor und erhalten damit eine höhere Entropie. Da dieser Zusammenhang aber nicht linear ist, ist eine einfache Normalisierung nicht möglich. In einem ersten Schritt sind also nur Zielwörter mit ähnlicher Frequenz hinsichtlich ihrer Entropie gut vergleichbar.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Umsetzung des Versuchs</head>
-                <p>Der Versuch wird in einem grundständigen und aus zwei Seminaren bestehenden Master-Modul zur französischen und italienischen Sprachwissenschaft unternommen. In diesem Modul sollen sich die Studierenden mit der Geschichte der Sprachbetrachtung und Normbildung bzw. Normierung und den dabei eingesetzten Werkzeugen auseinandersetzen. 2015 habe ich diesem Modul das oben genannte Projekt unterlegt und so konzipiert, dass die Studierenden selbst dazu einen Beitrag leisten können. Die beiden Seminare werden seither dazu genutzt, den Studierenden zu ermöglichen, alle für das Projekt benötigten Kenntnisse und Fertigkeiten zu erwerben und dabei auch ein Verständnis für die 
-                    <hi rend="italic">Digital Humanities</hi>, ihre Ziele und Methoden zu entwickeln.
+                <head>Experiment</head>
+                <p>Als Textgrundlage verwenden wir den ‚Parzival‘ nach der 5. Auflage der Ausgabe Lachmanns (1891) in der digitalisierten, mit Lemmata und der Auszeichnung von Eigennamen versehenen Fassung von Yeandle (2014).</p>
+                <p>Für unser Hauptexperiment beschränken wir uns auf die sieben im Text am häufigsten namentlich genannten Frauenfiguren Cundrîe, Herzeloyde, Jeschûte, Cunnewâre, Arnîve, Bêne und Itonjê. Hinzu kommt Sigûne als ein in der Forschung oft genanntes Beispiel für eine weniger komplexe Figur im ‚Parzival‘. Sieben der acht Figuren liegen in einem engen Frequenzband zwischen 30 und 40 Nennungen, während Sigûne nur 14 Mal vorkommt. Wir präsentieren die Ergebnisse per Streudiagramm, mit Entropie und Frequenz als den beiden Achsen.</p>
+                <p>Abbildung 1 und 2 zeigen die Ergebnisse für die wichtigsten weiblichen Hauptfiguren. Diese lassen sich zwanglos mit den Einschätzungen der hermeneutischen Literaturwissenschaft in Einklang bringen. Die höchsten Werte weisen Cundrîe und Herzeloyde auf, auf deren Komplexität die ‚Parzival‘-Forschung immer wieder hingewiesen hat: Bei Cundrîe handelt es sich um die Gralsbotin, die zwar kultiviert und nach höfischen Sitten gekleidet auftritt, zugleich aber monströs hässlich ist. Sie klagt Parzival zwar berechtigterweise an, fällt dabei aber aus dem höfischen Rahmen. Herzeloyde zieht ihren Sohn Parzival aus (übermäßiger?) Trauer um ihren im Kampf gefallenen Ehemann fern von der höfischen Welt in einer Waldeinöde auf, um zu verhindern, dass auch er einst Ritter wird – ein Verhalten, das die Forschung unterschiedlich bewertet. Mittelwerte erreichen Cunnewâre und Jeschute, die in der Forschung durchaus kontrovers diskutiert werden. Bêne, Arnîve und Itonjê lassen sich hingegen eher als Nebenfiguren bezeichnen, für die keine hohe Komplexität zu erwarten war. </p>
+                <p>Die in der Trauer um ihren Geliebten Schionatulander verharrende Sigûne, die gerade in ihrer Geradlinigkeit einen Gegenentwurf zu den auf Ruhm und Ehre versessenen Artusrittern darstellt, zeigt erwartungsgemäß keine hohen Entropiewerte. Allerdings erlaubt dieser Befund keine starke Interpretation, da für Sigûne aufgrund der niedrigeren Frequenz von vorneherein niedrigere Entropiewerte zu erwartet sind. Um dennoch eine Vorhersage zur Komplexität Sigûnes zu erhalten, vergleichen wir in den Abbildungen 3 und 4 ein breiteres Spektrum an Figuren im Frequenzbereich zwischen 10 und 20 Nennungen bezüglich ihrer Entropie. Dies entspricht einer erweiterten Version unserer Hypothese: Figuren, die 
+                    <hi rend="italic">verglichen mit anderen Figuren des gleichen Frequenzbereiches</hi> besonders hohe bzw. niedrige Entropien aufweisen, sind 
+                    <hi rend="italic">relativ zu diesen </hi>mehr bzw. weniger komplex.
                 </p>
-                <p>Umfassendes und kritisches Wissen von diesen „Kindern des Buchdrucks“ und ihrer Bedeutung für die romanischen Sprachen sowie ein Verständnis für die Implikationen von Medienrevolutionen allgemein und der Gutenberg-Ära sowie der digitalen Revolution im Besonderen erwerben die Studierenden in den beiden Seminaren durch das gemeinsame Aufarbeiten von Medientheorien (cf. Kloock / Spahr (1997)), Darstellungen zum Buchdruck und seinen Folgen (cf. Eisenstein (1997), Giesecke (
-                    <hi rend="superscript">4</hi>2006)) und Abhandlungen zur Grammatikographie der romanischen Sprachen und zu romanische Sprachen fokusierenden Sprachtraktaten (cf. u. a. Bierbach / Pellat (2003), Lüdtke (2001), Lubello (2003), Poggi Salani (1988), Swiggers (1990)). Die dabei zum Einsatz kommenden Technologien (Etherpad, Wiki, Datenbanken, Stylesheets bzw. Formatvorlagen) fordern sie zudem zu einem Umdenken bezüglich der Wissensproduktion im digitalen Zeitalter heraus (cf. z. B. Schöch (2017)), lange bevor sie sich – gestützt durch ein Tutorium - der Modellierung der zu digitalisierenden Texte, ihrer Transkription und Auszeichnung zuwenden. Bei letzterer spielen dann die Dokumentation des 
-                    <hi rend="italic">Deutschen Textarchiv</hi> (cf. DTA 2016), die Guidelines der 
-                    <hi rend="italic">Text Encoding Initiative</hi> (cf. TEI 2015), der 
-                    <hi rend="italic">Unicode Standard</hi> (cf. Uni 1991–2017) und die 
-                    <hi rend="italic">Medieval Unicode Font Initiative</hi> (cf. Haugen 2011) sowie der Oxygen XML-Editor eine zentrale Rolle.
-                </p>
+                <p>Interessanterweise liefern die beiden Kontextdefinitionen für Sigûne abweichende Vorhersagen: Die unterdurchschnittliche soziale Kontextvielfalt entspricht der Isoliertheit der Figur, die sich aus Trauer von der Welt zurückzieht und wenn, dann fast nur noch mit Parzival interagiert. Die vergleichsweise hohe lexikalische Vielfalt könnte demgegenüber darauf zurückzuführen sein, dass Sigûne neben ihrer Trauer auch die weitere Funktion hat, Parzival über seine Herkunft aufzuklären: Während Sigûne als Figur eher statisch erscheint, sind ihre Erzählungen über die Gralswelt informationshaltig. Für eingehendere Untersuchungen wären daher weitere Faktoren der Figurendarstellung wie Figurenbeschreibung und Figurenrede mit einzubeziehen sowie das Verhältnis von lexikalischer und sozialer Kontextvielfalt näher zu bestimmen.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Poster</head>
-                <p>Das komplexe Zusammenspiel von verschiedenen Wissensdomänen und einer Vielzahl von Technologien sowie die intendierten konzeptuellen Änderungen wollen wir in unserem Poster visualisieren. Dabei wollen wir nicht nur eine kritische Reflektion über dieses Vorgehen einbringen, sondern auch Ergebnisse, die sich in den Modulabschlussarbeiten der Studierenden zeigen, werten.</p>
+                <head>Diskussion</head>
+                <p>Unsere Ergebnisse legen nahe, dass sich die Analyse der lexikalischen und ‚sozialen‘ Vielfalt von Figurenkontexten durchaus als Maß für eine erste Annäherung an das Konzept der Figurenkomplexität eignet. Damit konnte mit erstaunlich einfachen Mitteln ein Zugang zum komplexen narratologischen Themenfeld der Figurencharakterisierung gewonnen werden. Auf der technischen Ebene bleiben zwei Fragen offen, zum einen die nach den sprachlichen Mechanismen, die zur Korrelation von Entropie und Figurenkomplexität führen, zum anderen die nach dem tatsächlichen Zusammenhang von Frequenz und Entropie: Gibt es also auch selten auftretende 
+                    <hi rend="italic">round characters</hi> oder häufig vorkommende flache Figuren?
+                </p>
+                <p>Auf der konzeptuellen Ebene bieten unsere Ergebnisse den Einstieg in eine differenziertere Modellierung von Figurenkomplexität, deren Erarbeitung auf die traditionelle narratologische Theoriebildung zurückwirken kann: Die digitale Modellierung macht es notwendig, die Faktoren, aus denen sich das Konzept der Figurenkomplexität zusammensetzt (etwa Figurenhandeln, -rede, -beschreibung und -bewertung), genauer und expliziter zu bestimmen sowie über ihre Gewichtung nachzudenken. Außerdem wäre zu klären, was das Konzept der Komplexität genau meint und wie es sich zu verwandten Konzepten wie denen der Hybridität, der Dynamik oder der Aktantenhaftigkeit von Figuren verhält. Im Sinne einer kritisch reflektierten digitalen Methodik werden somit vielschichtige literaturwissenschaftliche Phänomene wie die Charakterisierung von Figuren durch den formalisierenden Zugang nicht nivelliert, vielmehr führt die Verbindung von quantitativen und qualitativen Methoden zur wechselseitigen Erhellung.</p>
+                <figure>
+                    <graphic n="1001"
+                        width="16.007291666666667cm"
+                        height="13.32088888888889cm"
+                        rend="inline"
+                        url="KLINGER_Roman_Digitale_Modellierung_von_Figurenkomplexit_t_a-image1.png"/>
+                </figure>
+                <figure>
+                    <graphic n="1002"
+                        width="16.007291666666667cm"
+                        height="13.32088888888889cm"
+                        rend="inline"
+                        url="KLINGER_Roman_Digitale_Modellierung_von_Figurenkomplexit_t_a-image2.png"/>
+                </figure>
+                <figure>
+                    <graphic n="1003"
+                        width="16.007291666666667cm"
+                        height="13.32088888888889cm"
+                        rend="inline"
+                        url="KLINGER_Roman_Digitale_Modellierung_von_Figurenkomplexit_t_a-image3.png"/>
+                </figure>
+                <figure>
+                    <graphic n="1004"
+                        width="16.007291666666667cm"
+                        height="13.32088888888889cm"
+                        rend="inline"
+                        url="KLINGER_Roman_Digitale_Modellierung_von_Figurenkomplexit_t_a-image4.png"/>
+                </figure>
             </div>
         </body>
         <back>
+         <div type="notes">
+            <note xml:id="ftn1" n="1">Experimente mit kleineren Kontexten lieferten schlechtere Ergebnisse.</note>
+         </div>
          <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">Albrecht, Jörn</hi> (2001): „Sprachbewertung / Évaluation de la langue“, in: Holtus, Günter / Metzeltin, Michael / Schmitt, Christian (eds.): 
-                        <hi rend="italic">Lexikon der romanistischen Linguistik (LRL)</hi>. Band I / 2: 
-                        <hi rend="italic">Methodologie (Sprache in der Gesellschaft / Sprache und Klassifikation / Datensammlung und -verarbeitung) / Méthodologie (Langue et société / Langue et classification / Collection et traitement des données)</hi>. Tübingen: Niemeyer 526-540.
+                        <hi rend="bold">Forster, Edward M</hi>. (1927): 
+                        <hi rend="italic">Aspects of the Novel</hi>. New York: Harcourt. 
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Bierbach, Mechtild / Pellat, Jean-Christophe</hi> (2003): "Histoire de la réflexion sur les langues romanes: le français / Geschichte der Reflexion über die romanischen Sprachen: Französisch", in: Ernst, Gerhard / Gleßgen, Martin-Dietrich / Schmitt, Christian / Schweickard, Wolfgang (eds.): 
-                        <hi rend="italic">Romanische Sprachgeschichte / Histoire linguistique de la Romania</hi>. Ein internationales Handbuch zur Geschichte der romanischen Sprachen / Manuel international d'histoire linguistique de la Romania 1 (= Handbücher zur Sprach- und Kommunikationswissenschaft 23). Berlin / New York: De Gruyter 226-229. 
+                        <hi rend="bold">Harris, Zellig S.</hi> (1954): “Distributional Structure”, in: 
+                        <hi rend="italic">Word</hi> 10(2-3): 146–162. 
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Du Bellay, Joachim</hi> (1549): 
-                        <hi rend="italic">Deffence, et illustration de la langue francoyse</hi>. Paris: Arnoul l’Angelier (Digitalisat: PDF, BnF Gallica).
+                        <hi rend="bold">Jannidis, Fotis</hi> (2004): 
+                        <hi rend="italic">Figur und Person</hi>. Beitrag zu einer historischen Narratologie. Berlin: de Gruyter.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">DTA</hi> (12.01.2016): „Dokumentation“, in: 
-                        <hi rend="italic">Deutsches Textarchiv</hi> &lt;http://www.deutschestextarchiv.de/doku&gt; [25.09.2017].
+                        <hi rend="bold">Jannidis, Fotis</hi> (2009): „Character“, in: Hühn, Peter / Pier, John / Schmid, Wolf / Schönert, Jörg (eds.) Handbook of Narratology. Berlin: de Gruyter 14-29
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Eisenstein, Elisabeth I</hi>. (1997): 
-                        <hi rend="italic">Die Druckerpresse</hi>. Kulturrevolution im frühen modernen Europa. Wien / New York: Springer. 
+                        <hi rend="bold">Jannidis, Fotis / Reger, Isabella / Krug, Manfred / Weimer, Lukas / Macharowsky, Luisa / Puppe, Frank</hi> (2016): „Comparison of Methods for the Identification of Main Characters in German Novels”, in: 
+                        <hi rend="italic">Digital Humanities 2016: Conference Abstracts. Jagiellonian University &amp; Pedagogical University, Kraków</hi> 578-582. 
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Fortunio, Francesco</hi> (1516): 
-                        <hi rend="italic">Regole grammaticali della volgar lingua</hi>. Ancona: Bernardin Vercellese / Bernardino Guerralda (Digitalisat: TIFF, Universitätsbibliothek Eichstätt-Ingolstadt 03.06.2015).
+                        <hi rend="bold">Manning, Christopher D. / Schütze, Hinrich</hi> (1999): Foundations of Statistical Natural Language Processing. Cambridge, MA: MIT Press.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Giesecke, Michael</hi> (
-                        <hi rend="superscript">4</hi>2006): 
-                        <hi rend="italic">Der Buchdruck in der frühen Neuzeit</hi>. Eine historische Fallstudie über die Durchsetzung neuer Informations- und Kommunikationstechnologien. Frankfurt am Main: Suhrkamp. 
+                        <hi rend="bold">Miller, George A. / Charles, Walter G.</hi> (1991): “Contextual Correlates of Semantic Similarity”, in: 
+                        <hi rend="italic">Language and Cognitive Processes</hi> 6(1): 1–28. 
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Gold, Matthew K.</hi> (ed.) (2012): 
-                        <hi rend="italic">Debates in the Digital Humanities</hi>. Minneapolis / London: University of Minnesota Press.
+                        <hi rend="bold">Piper, Andrew / Algee-Hewitt, Mark / Sinha, Koustuv / Ruths, Derek / Vala, Hardik</hi> (2017): “Studying Literary Characters and Character Networks”, in: 
+                        <hi rend="italic">Digital Humanities 2017: Conference Abstracts. Montreal, Canada, August 8-11, 2017</hi>. 
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Haugen, Odd Einar</hi> (ed.) (2011): 
-                        <hi rend="italic">Medieval Unicode Font Initative</hi> &lt;http://folk.uib.no/hnooh/mufi/&gt; [25.09.2017].
+                        <hi rend="bold">Schulz, Armin</hi> (2012): Erzähltheorie in mediävistischer Perspektive. Berlin: De Gruyter. 
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Hirsch, Brett D</hi>. (ed.) (2012): 
-                        <hi rend="italic">Digital Humanities Pedagogy</hi>. Practices, Principles and Politics. Cambridge: Open Book Publishers.
+                        <hi rend="bold">Shannon, Claude E.</hi> (1948): “A Mathematical Theory of Communication”, in: 
+                        <hi rend="italic">Bell System Technical Journal</hi> 27(3): 379–423.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte</hi> (eds.): 
-                        <hi rend="italic">Digital Humanities</hi>. Eine Einführung . Stuttgart: J. B. Metzler.
+                        <hi rend="bold">Turney, Peter D. / Pantel, Patrick</hi> (2010): “From Frequency to Meaning: Vector Space Models of Semantics”, in: 
+                        <hi rend="italic">Journal of Artificial Intelligence Research</hi> 37(1): 141–188.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Kloock, Daniela / Spahr, Angela</hi> (1997): 
-                        <hi rend="italic">Medientheorien</hi>. Eine Einführung (= UTB 1986). München: Wilhelm Fink.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Lubello, Sergio</hi> (2003): "Storia della riflessione sulle lingue romanze: italiano e sardo / Geschichte der Reflexion über die romanischen Sprachen: Italienisch und Sardisch", in: Ernst, Gerhard / Gleßgen, Martin-Dietrich / Schmitt, Christian / Schweickard, Wolfgang (eds.): 
-                        <hi rend="italic">Romanische Sprachgeschichte / Histoire linguistique de la Romania</hi>. Ein internationales Handbuch zur Geschichte der romanischen Sprachen / Manuel international d'histoire linguistique de la Romania. Berlin: De Gruyter 208-225.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Lüdtke, Jens</hi> (2001): "Romanische Philologie von Dante bis Raynouard / La philologie romane de Dante à Raynouard", in: Holtus, Günter / Metzeltin, Michael / Schmitt, Christian (eds.): 
-                        <hi rend="italic">Lexikon der romanistischen Linguistik (LRL)</hi>. Band I / 1: Geschichte des Faches Romanistik. Methodologie (Das Sprachsystem) / Histoire de la philologie romane. Méthodologie (Langue et système). Tübingen: Niemeyer 1-35. 
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Meigret, Louis</hi> (1550): 
-                        <hi rend="italic">Le tretté de la GRAMMeRE FRANCOEZE</hi>. Paris: Chrestien Wechel (Digitalisat: PDF, Bayrische Staatsbibliothek, Münchner Digitalisierungszentrum Digitale Bibliothek 05.09.2015, JPG 10.11.2017).
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Oxygen XML Editor</hi> (2002-2017) &lt;https://www.oxygenxml.com/&gt; [25.09.2017].
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Poggi Salani, Teresa</hi> (1988): "Italienisch: Grammatikographie / Storia delle grammatiche", in: Holtus, Günter / Metzeltin, Michael / Schmitt, Christian (eds.): 
-                        <hi rend="italic">Lexikon der Romanistischen Linguistik (LRL)</hi> IV: Italienisch, Korsisch, Sardisch / Italiano, Corso, Sardo. Tübingen: Niemeyer 774-786.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Schöch, Christof</hi> (2017): „Digitale Wissensproduktion“, in: Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (eds.): 
-                        <hi rend="italic">Digital Humanities</hi>. Eine Einführung . Stuttgart: J. B. Metzler 206-212.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Schreibman, Susan / Ping Huang, Marianne / Benardou, Agiatis/ Tasovac, Toma / Scagliola, Stef / Durco, Matej / Clivaz, Claire</hi> (2015-2017): 
-                        <hi rend="italic">#dariahTeach</hi>. DH Training Materials &lt;http://dariah.eu/teach/&gt; [24.09.2017].
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Sperone, Speron</hi> (1542): “Dialogo delle lingue”, in: Speron Sperone: 
-                        <hi rend="italic">I dialogi di Messer Speron Sperone</hi>. Vinegia: Aldus 106-131 (Digitalisat: TIFF, Universitätsbibliothek Leipzig 27.04.2017).
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Swiggers, Pierre</hi> (1990): “Französisch: Grammatikographie / Grammaticographie“, in: 
-                        <hi rend="italic">Lexikon der Romanistischen Linguistik</hi> (LRL), V, 1: Französisch, Okzitanisch, Katalanisch / Le français, L'occitan, Le catalan. Tübingen: Niemeyer 843-869. 
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">TEI</hi> (05.10.2015): “Guidelines”, in: 
-                        <hi rend="italic">Text Encoding Initiative</hi> &lt;http://www.tei-c.org/Guidelines/&gt; [25.09.2017].
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Tory, Geoffroy</hi> (1529): 
-                        <hi rend="italic">Champ Fleury</hi>. Paris: Geoffroy Tory / Giles Gourmont.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Uni</hi> (1991–2017): “The Unicode Standard“, in: 
-                        <hi rend="italic">The Unicode Consortium</hi> &lt;http://www.unicode.org/standard/standard.html&gt; 25.09.2017].
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Warwick, Claire / Terras, Melissa / Nyhan, Julianne</hi> (eds.) (2012): 
-                        <hi rend="italic">Digital Humanities in Practice</hi>. London: Facet Publishing.
+                        <hi rend="bold">Yeandle, David</hi> (o. J.): 
+                        <hi rend="italic">Stellenbibliographie zum 'Parzival' Wolframs von Eschenbach für die Jahre 1753–2004</hi>. http://wolfram.lexcoll.net/homeidx.htm [letzter Zugriff 9. Januar 2017].
                     </bibl>
                 </listBibl>
             </div>

@@ -1,45 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="108_final-HODEL_Tobias_Automatic_Text_and_Feature_Recognition__Mit_REA" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="233_final-KOCH_Gertraud_Automatisierungspotenziale_in_der_qualitativen" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Automatic Text and Feature Recognition: Mit READ Werkzeugen Texte erkennen und Dokumente analysieren</title>
+                <title>Automatisierungspotenziale in der qualitativen Diskursanalyse. Das Prinzip des „Filterns“</title>
                 <author>
                     <persName>
-                        <surname>Hodel</surname>
-                        <forename>Tobias</forename>
+                        <surname>Koch</surname>
+                        <forename>Gertraud</forename>
                     </persName>
-                    <affiliation>Staatsarchiv des Kantons Zürich, Schweiz</affiliation>
-                    <email>tobias.hodel@uzh.ch</email>
+                    <affiliation>Universität Hamburg, Deutschland</affiliation>
+                    <email>gertraud.koch@uni-hamburg.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Diem</surname>
-                        <forename>Markus</forename>
+                        <surname>Franken</surname>
+                        <forename>Lina</forename>
                     </persName>
-                    <affiliation>Computer Vision Lab, TU Wien</affiliation>
-                    <email>diem@cvl.tuwien.ac.at</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Oliveira Ares</surname>
-                        <forename>Sofia</forename>
-                    </persName>
-                    <affiliation>Digital Humanities Lab, EPF Lausanne</affiliation>
-                    <email>sofia.oliveiraares@epfl.ch</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Weidemann</surname>
-                        <forename>Max</forename>
-                    </persName>
-                    <affiliation>Citlab, Universität Rostock</affiliation>
-                    <email>max.weidemann@uni-rostock.de</email>
+                    <affiliation>Universität Hamburg, Deutschland</affiliation>
+                    <email>lina.franken@uni-hamburg.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2015-10-04T22:02:00Z</date>
+                    <date>2019-01-13T17:36:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -68,114 +52,146 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Workshop</term>
+                    <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Handwritten Text Recognition</term>
-                    <term>Layout Analysis</term>
-                    <term>Transcription</term>
-                    <term>Crowdsourcing</term>
+                    <term>Diskursanalyse</term>
+                    <term>Hermeneutik</term>
+                    <term>Kulturanthropologie</term>
+                    <term>Filter</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Bilderfassung</term>
-                    <term>Transkription</term>
+                    <term>Modellierung</term>
+                    <term>Annotieren</term>
+                    <term>Kontextsetzung</term>
+                    <term>Theoretisierung</term>
+                    <term>Bewertung</term>
                     <term>Identifizierung</term>
-                    <term>Kollaboration</term>
-                    <term>Infrastruktur</term>
-                    <term>Forschungsprozess</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p style="text-align:left; ">Dank 
-                <hi rend="italic">machine learning</hi> und 
-                <hi rend="italic">computer vision</hi> ist seit wenigen Jahren die automatisierte Handschriftenerkennung möglich. Obwohl aktuell einzelne Handschriften bzw. sehr ähnliche Handschriftentypen noch trainiert werden müssen, wird es in absehbarer Zeit allgemeine Modelle geben, die Rohtranskriptionen mit einer Fehlerquote unter 10% ausgeben. Paläographische Kenntnisse werden vor allem zur Korrektur und kritischen Begutachtung der Technik nötig sein.
+            <p rend="Lina Fließtext">Diskursanalytische Verfahren werden in vielen Disziplinen verwendet, so dass die Frage nach Automatisierungspotentialen in diesem Bereich für ganz unterschiedliche Geisteswissenschaften und auch qualitativ arbeitende Sozialwissenschaften relevant ist (vgl. grundlegend Foucault 1971 und 1973; Keller 2011). Die Frage wird aktuell in einem Teilprojekt des Verbundforschungsprojektes hermA (Gaidys et al. 2017) erforscht, aus dem dieser Beitrag hervorgeht.<hi rend="superscript">1</hi> Angesichts steigender digital vorliegender Textmengen, die nicht zuletzt über das Internet verfügbar sind, stellt sich die Frage nach Automatisierungspotentialen immer drängender. Die Perspektive der wissenssoziologischen bzw. -anthropologischen Diskursanalyse, die hier eingenommen wird, kann insofern als exemplarisch angesehen werden, wird aber je nach Schwerpunktsetzung auch Variationen aufweisen.
             </p>
-            <p style="text-align:left; ">Im Rahmen des Projekts READ (Recognition and Enrichment of Archival Documents) werden unterschiedliche Aufgaben der Automatisierung (weiter-)entwickelt, um qualitativ gute Ergebnisse mit optimalem Ressourceneinsatz zu erhalten. Ein speziell dafür entwickeltes Tool ist die Software Transkribus und die Transkribus Weboberfläche (für Transkription, Tagging/Annotation und Korrektur in der Layouterkennung). Beide Ansätze verkoppeln auf unterschiedliche Weise die Arbeit von Expertinnen und maschinelle Erkennleistung. Software und Webservice sind frei verfügbar unter 
-                <ref target="http://www.transkribus.eu">www.transkribus.eu</ref>. Darüber hinaus wurden im Rahmen von READ weitere Extraktions- und Annotationsmöglichkeiten entwickelt, die im Workshop zusammen mit Transkribus vorgestellt und durch die Teilnehmenden mit eigenen oder zur Verfügung gestellten Dokumenten getestet werden 
-                können.<ref target="ftn1" n="1"/>
+            <p rend="Lina Fließtext">In der Soziologie und Wissensanthropologie wird die Diskursanalyse als Methode eingesetzt, um zu analysieren, wie sich (neue) gesellschaftliche Phänomene herausbilden und etablieren können, beispielsweise für ein vergleichsweise junges Phänomen wie die Telemedizin. Diese wird zunehmend als Lösung für den Ärztemangel in ländlichen Räumen aber auch zur Betreuung von chronisch kranken Patienten diskutiert und zwar in ganz unterschiedlichen Diskursarenen und durch verschiedene Akteure, vom Bundestag über Ärzte, Krankenkassen bis hin zu Patientenverbänden und den Patienten selbst. Mittels der Diskursanalyse kann herausgearbeitet werden, wie angesichts heterogener Interessenslagen der beteiligten Gruppen die verschiedenen Auffassungen von Telemedizin sowie ihrer Notwendigkeit verhandelt werden, ob sich ggf. ein allgemeines gesellschaftlich weitgehend akzeptiertes Verständnis von Telemedizin herausbildet, sich schließlich konkrete Arbeitsweisen (Praktiken), institutionelle Zusammenhänge oder Organisationsformen sowie gesetzliche Regelungen verfestigen (materialisieren).</p>
+            <p rend="Lina Fließtext">
+                <hi rend="bold">Spezifik der diskursanalytischen Datengrundlage</hi>
             </p>
-            <p style="text-align:left; ">Transkribus unterstützt alle Prozesse vom Import der Bilder über die Identifikation der Textblöcke und Zeilen, die zu einer detaillierten Verlinkung zwischen Text und Bild führt, sowie die Transkription und Annotation der Handschrift bis zum Export der gewonnen Daten in standardisierten Formaten. Darüber hinaus wurden aber noch weitere Tools und Algorithmen entwickelt, die zur Erkennung von graphischen Features genutzt werden können und Tabellen als solche aufbereiten.</p>
-            <p rend="DH-Heading2">Transkribus als Arbeitsumgebung </p>
-            <p style="text-align:left; ">Die Erkennung von Texten bedingt den Upload digitaler Bilder und Prozessierung mit Layouterkennungswerkzeugen. Upload und Layoutanalyse können grosse Batches verarbeiten. Die Nachkorrektur von Layoutanalyse ist nur noch in wenigen Fällen nötig.</p>
-            <p style="text-align:left; ">Je nach Einsatzzweck könne Dokumente entweder automatisch mit bereits bestehenden ATR-Modellen (Automatic Text Recognition) erkannt oder händisch Transkriptionen erstellt werden. Um im erkannten Text und Variantenlesungen (sog. Keywordspotting) zu suchen reicht in den meisten Fällen die Anwendung von bestehenden Modellen.</p>
-            <p style="text-align:left; ">Einzig im Umgang mit Tabellen sind weiterhin diverse manuelle Schritte möglich, um eine hochwertige Identifikation zu gewährleisten. Der Workshop wird einen Fokus auf die Bearbeitung und Erkennung von Tabellenstrukturen legen, die halbautomatisch erfolgen kann.</p>
-            <p style="text-align:left; ">Korrekter Text – entweder durch Transkription oder Korrektur von erkanntem Text entstanden – kann danach zum Training von Handschriftenmodellen verwendet werden. Im Rahmen des Workshops wird das Trainieren von Handschriftenmodellen demonstriert und kann durch die Teilnehmenden selbst ausgetestet werden.</p>
-            <p style="text-align:left; ">Aufbauend auf den Transkriptionen ist es möglich Entitäten (Personen, Orte, Verweise) auszuzeichnen und textuelle Annotationen (Titel, Marginalien, Fussnoten) innerhalb des Textes, aber auch darüber hinaus für Einzeldokumente und ganze Dokumentenbestände anzulegen. Visuelle Features wie Seitenzahlen, Titel oder Marginalien lassen sich nach der Auszeichnung als Strukturmodelle trainieren und können für die Erkennung von grösseren Dokumentenmassen verwendet werden. Die Vorgehensweise wird im Rahmen des Workshops vorgeführt und kann selbst nachvollzogen werden. Daneben ist auch die Anreicherung der Dokumente mit 
-                <hi rend="italic">named entities</hi> (Personen, Orten und Organisationen) möglich, sodass simple digitale Editionen grösstenteils in Transkribus erstellt werden können.
+            <p rend="Lina Fließtext">Für Diskursanalysen wird heterogenes Quellenmaterial verwendet, es können ganz unterschiedliche Textsorten eine Rolle spielen. In der dem Beitrag zugrunde liegenden Forschung zu Akzeptanzproblematiken der Telemedizin werden Webseiten (Homepages, Blogs, Foren, etc.), wissenschaftliche Beiträge und Bundestagsprotokolle analysiert. Potentiell können auch multimodale Daten wie Bilder oder audio-visuelles Material hinzugezogen werden. Zunächst erfolgt jedoch eine Beschränkung auf Textquellen, um die Datenmodellierung mit Methoden der Digital Humanities gezielt verfolgen zu können.</p>
+            <p rend="Lina Fließtext">Die Korpuserstellung erfolgt für Diskursanalysen iterativ nach dem in der Grounded Theory (GT) formulierten Prinzip des Theoretischen Sampling, mit dem eine tendenziell unüberschaubare Datenmenge epistemologisch geleitet reduziert wird. Dieses Verfahren zeichnet sich dadurch aus, dass in mehreren zyklischen Prozessen Daten erhoben, annotiert und interpretiert werden. Dabei wird nach jedem Zyklus anhand der vorliegendem Ergebnisse über die weitere Datenerhebung entschieden (vgl. Glaser/Strauss 1967). „Manuelle“ Filterprozesse sind somit eine iterative Abfolge verschiedener interpretativer, methodisch geleiteter Arbeitsschritte: theoretisches Sampling, offenes Kodieren, selektives Kodieren, axiales Kodieren, theorie-geleitete Interpretation (Bryant/Charmaz 2007; Götzö 2014). Die Informationsfülle wird so sukzessive in eine für qualitative Forschungen handhabbare Größenordnung gebracht. Im Laufe des Forschungsprozesses entsteht so in interativen Prozessen der Datenerhbung und -interpretation ein relativ kleiner Datenkorpus, meist aus unterschiedlichen Quellen, die aussagekräftig für die Fragestellung sind (vgl. Strauss/Corbin 1996). Es stellt sich die Frage, inwieweit diese „manuellen“ Filterprozesse von heterogenen Textsorten durch automatisierte Verfahren im Sinne einer höheren Effizienz oder verbesserten analytischen Qualität ergänzt werden können. Die GT zielt nicht auf Repräsentativität der Daten, sondern auf Viabilität also eine hohe Passung in der Erklärungskraft (Glasersfeld 1997) unabhängig davon ob Daten digital oder analog vorliegen. </p>
+            <p rend="Lina Fließtext">
+                <hi rend="bold">Filtern als Prinzip methodisch geleiteter Analyse</hi>
             </p>
-            <p rend="DH-Heading2">Ausgabeformate </p>
-            <p style="text-align:left; ">Für den Export stehen unterschiedliche Formate und Ausgabeformen zur Verfügung. So ist es möglich XML-Dateien zu exportieren, die den Vorgaben der TEI entsprechen (auch ist es möglich die Standardumformung abzuändern und den eigenen Bedürfnissen anzupassen). Weiter sind auch Ausgaben als Druckdaten (PDF) oder zur Weiterbearbeitung für Textverarbeitungsprogramme (DOCX, TXT) implementiert. Schließlich ist auch ein Export im PAGE-Format (zur Anzeige in Viewern für OCR gelesene Dokumente, Pletschacher, 2010) sowie als METS (Metadata Encoding and Transmission) möglich. </p>
-            <p rend="DH-Heading2">Zielpublikum </p>
-            <p style="text-align:left; ">Die Plattform Transkribus ist für unterschiedliche Gruppen konzipiert. Einerseits für Geisteswissenschaftler*innen, die selbst Transkriptionen und Editionen historischer Dokumente erstellen möchten. Andererseits richtet sich die Plattform an Archive, Bibliotheken und andere Erinnerungsinstitutionen, die handschriftliche Dokumente in ihren Sammlungen aufbewahren und ein Interesse an der Suchbarmachung des Materials haben. Angesprochen werden sollen auch Studierende der Geistes-, Archiv- und Bibliothekswissenschaften mit einem Interesse an der Transkription historischer Handschriften. </p>
-            <p style="text-align:left; ">Das Ziel, eine robuste und technisch hochstehende Automatisierung von Layout- und Handschriftenerkennung, lässt sich nur durch die enge Zusammenarbeit zwischen Geisteswissenschaftler*innen und Informatiker*innen sowie anderen Computerspezialist*innen mit unterschiedlichen Voraussetzungen und Ansprüchen an Datenqualität und Herstellung von Transkriptionen erreichen. Die Algorithmen werden somit nicht nur bis zu einem Status als 
-                <hi rend="italic">proof-of-concept</hi> erarbeitet, sondern bis zur Praxistauglichkeit verfeinert und in größeren Forschungs- und Aufbewahrungsumgebungen getestet und verbessert. Die Informatiker*innen sowie Personen aus angrenzenden Fächern sind entsprechend ebenfalls ein wichtiges Zielpublikum, wobei bei ihnen weniger die Nutzung der Plattform als das Beisteuern von Software(teilen) anvisiert wird. 
+            <p rend="Lina Fließtext">Im Sinne der iterativen Korpuserstellung wird untersucht, wie sich manuelles und automatisiertes Filtern miteinander verbinden lassen und was die jeweilige Form des Filterns auszeichnet. „Filtern“ wird dabei als ein Arbeitsschritt in der wissenschaftlichen Analyse von Daten verstanden, welches nach methodischen Prinzipien umgesetzt und zur Reduktion der im Alltag beobachtbaren Komplexität eingesetzt wird. Bei den automatisierten Ansätzen werden neben Information Retrieval (vgl. Klinke 2017; Manning et al. 2009) auch strukturelle Ansätze des Data und Text Mining für die Reduktion verfügbarer Informationen eingesetzt. Manuell wird entsprechend der Grounded Theory nach dem Prinzip des Theoretical Sampling gearbeitet, um wesentliche, also soziale Wirklichkeit setzende Dokumente bzw. Textabschnitte für die Analyse zu identifzieren. Während es bei automatisierten Ansätzen in der Tendenz darum geht, einen möglichst vollständigen Korpus aller relevanten Dokumente zu generieren, der wiederum eine Basis für weitere automatische Filteransätze bietet, erfolgt die manuelle Korpuserstellung hochgradig selektiv nach Relevanz bzw. Viabilität. </p>
+            <p rend="Lina Fließtext">Filtern manuell</p>
+            <p rend="Lina Fließtext">Beim manuellen Filtern in der qualitativen Diskursanalyse ist ein hohes Maß an Vorwissen notwendig, welches sich auf mögliche Akteure, Diskursarenen und Kontexte des Themas, hier der Telemedizin bzw. der damit verbundenen Akzeptanzproblematiken, bezieht. Auf der Basis dieses Vorwissens wird der Einstieg in die Frage möglich, wo überhaupt Quellen für die Analyse des Phänomens zu finden sind. Dabei wird heute nicht nur „manuell“ gefiltert, sondern die Hilfe von Suchmaschinen im Internet oder Suchabfragen von Stichwörtern in Archivkatalogen in Anspruch genommen. Allerdings sind damit die Informationen weiterhin tendenziell unüberschaubar und auch hinsichtlich ihrer Relevanz höchst heterogen. Ebenso ist offen, inwieweit tatsächlich alle relevanten Akteure und Diskursarenen erfasst worden sind, so dass eine Vielzahl an weiteren manuellen Filterprozessen vorgenommen werden müssen. Dabei wird das Wissen des Forschenden zum Thema stets erweitert, so dass die (stetig wachsende) Expertise der Forschenden in dem Themenfeld eine wesentliche Voraussetzung für eine hohe analytische Qualität der Diskursanalyse darstellt. Die in der Grounded Theory angelegten methodischen Arbeitsschritte profitieren wesentlich von dieser stetig wachsenden Expertise, sind dabei jedoch auch zur Objektivierung der vom Forschenden formulierten Hypothesen, im Sinne von Falsifizierungen oder Bestätigungen, unerlässlich (vgl. Glaser 1978).</p>
+            <p rend="Lina Fließtext">Filtern maschinell</p>
+            <p rend="Lina Fließtext">Maschinelles Filtern beruht auf strukturellen Analysen von Sprache und bedarf vielfältiger Ressourcen (Ontologien, Wörterbücher, Tools, Korpora). Ein rein automatisiertes Filtern zum Thema Telemedizin ist aufgrund fehlender Ressourcen auf dem aktuellen Wissensstand nicht möglich. Insgesamt darf man davon ausgehen, dass dies meist der Fall ist, wenn neue gesellschaftliche Phänomene auftreten und sich die soziale Wirklichkeit, die Themen und die Sprache wandeln. Es geht insofern darum auszuloten, unter welchen Umständen und wo im Forschungsprozess automatisierte Filterprozesse, zielführend aufgegriffen werden können.</p>
+            <p rend="Lina Fließtext">Entsprechend dieser Hypothese wurden bisher unterschiedliche halbautomatisierte Verfahren für die Unterstützung der qualitativen Diskursanalyse mit ihren verschiedenen Arbeitsschritten erprobt: Suchmaschinen, Suchfunktionen, verschiedene Webcrawler, sowie manuelle und automatisierte Annotationen mit proprietären und open-source Tools. Auch die Vorbereitung automatisierter Filterprozesse spielt für die Verfahren eine wichtige Rolle, insbesondere a) die Erstellung von Wortfeldern zur Spezifizierung der Filter-Anwendung, b) die Aufbereitung von Dokumenten für die automatisierte Analyse, c) die Klärung von Arbeitsweisen verschiedener Crawler – etwa iCrawl<hi rend="superscript">2</hi>, Apify<hi rend="superscript">3</hi> und IssueCrawler<hi rend="superscript">4</hi> oder das auf Crawlen basierende Webarchiv der Deutschen Nationalbibliothek – und wie diese für eine zielführende Diskursanalyse aufgesetzt werden können, d) die Klärung der Datenlage in bestehenden Korpora wie dem Dokumentations- und Informationssystem des Deutschen Bundestages<hi rend="superscript">5</hi>, den alternativ angebotenen Open Data-Beständen<hi rend="superscript">6</hi> sowie dem GermaParlTEI-Korpus<hi rend="superscript">7</hi> und der Aufarbeitung von Crawling-Ergebnissen. Für eine Vorbereitung der Auswertung erfolgt zudem e) die Erprobung und der Vergleich verschiedener Annotationstools von proprietären Programmen der qualitativen Datenanalyse, welche eine Computerunterstützung für Geistes- und Sozialwissenschaftler*innen zugänglich machen und bereits weit verbreitet sind (vgl. Gasteiger/Schneider 2014; Sattler 2014) und open-source Optionen wie etwa CATMA<hi rend="superscript">8</hi> sowie f) Koreferenzannotationen mittels CoRefAnnotator<hi rend="superscript">9</hi>, um Analysen zur Konkordanz und Netzwerkanalysen vorzubereiten. Dabei stehen die spezifischen Potentiale und Probleme für die Korpuserstellung und -auswertung bei diskursanalytischem Datenmaterial im Zentrum. 
             </p>
-            <p style="text-align:left; ">Die Speicherung der Dokumente erfolgt in der Cloud, gehostet auf Servern der Universität Innsbruck. Die importierten Daten bleiben auch während der Bearbeitung unverändert im Dateisystem liegen und werden ergänzt durch METS und PAGE XML. Alle bearbeiteten Dokumente und Daten bleiben somit in den unterschiedlichen Bearbeitungsstadien nicht nur lokal verfügbar, sondern können für andere Transkribusnutzerinnen und -nutzer freigegeben werden. Dank elaboriertem 
-                <hi rend="italic">user-management</hi> ist die Zuteilung von Rollen möglich. 
+            <p rend="Lina Fließtext">
+                <hi rend="bold">Filtern als Automatisierungspotential in der Diskursanalyse</hi>
             </p>
-            <p style="text-align:left; ">Die eingespeisten Dokumente und Daten bleiben privat und vor dem Zugriff Dritter geschützt. Von Projektseite können vorgenommene Arbeitsschritte zwecks besserem Verständnis der ausgeführten Arbeiten und letztlich der Verbesserung der Produkte ausgewertet werden.</p>
-            <p style="text-align:left; ">Die Erkennprozesse werden serverseitig durchgeführt, sodass die Ressourcen auf den lokalen Rechnern nicht strapaziert werden. Transkribus ist mit JAVA und SWT programmiert und kann daher plattformunabhängig (Windows, Mac, Linux) genutzt werden. </p>
-            <p rend="DH-Heading2">Ein- und Ausblicke im Workshop </p>
-            <p style="text-align:left; ">Der Workshop richtet sich sowohl an Geisteswissenschaftler*innen als auch an Computerwissenschaftler*innen, wobei vorwiegend die Tools und Möglichkeiten von Transkribus präsentiert werden. </p>
-            <p style="text-align:left; ">Drei zentrale Forschungsaspekte aus READ können im Rahmen des Workshops neben Transkribus 
-                <hi rend="italic">hands-on</hi> ausgetestet werden:
-            </p>
-            <list type="ordered">
-                <item>Max Weidemann: Das Training von Handschriftenmodellen (HTR+);</item>
-                <item>Sofia Ares Oliveira 
-                (<hi rend="italic">in English</hi>): Identifikation von visuellen Features mit dh-segment;
-                </item>
-                <item>Markus Diem: Aufbereitung und Erkennung von Tabellen mit Transkribus und nomacs.</item>
-            </list>
-            <p rend="DH-Heading2">Programm/Ablauf des Workshops </p>
-            <list type="unordered">
-                <item>Begrüssung und Einführung in READ und Transkribus :45’</item>
-                <item>Kurze Beschreibungen der vermittelten Forschungsaspekte (je 15’): 45’</item>
-                <item>Kaffeepause: 30’</item>
-                <item>Arbeit in Kleingruppen am jeweiligen Forschungsaspekt: 60’ (nach ca. 40 Minuten besteht die Möglichkeit die Gruppe zu wechseln)</item>
-                <item>Diskussion der Resultate, weiterer Ausblick und Evaluation: (15-)30'</item>
-            </list>
-            <p style="text-align:left; ">Nach Interesse der Teilnehmenden können während der Gruppenarbeit weitere Tools und Ansätze, die im Rahmen von READ entwickelt wurden, kurz diskutiert werden: 1. Matching von Text und Bild (bspw. aus bestehenden Transkriptionen), 2. Transkribus Learn (e-Learningumgebung), 3. Crowdsourcing-Infrastruktur, 4. ScanTent und DocScan (Fotografieren von Dokumenten mit Android App). </p>
-            <p style="text-align:left; ">Während des gesamten Workshops stehen vier wissenschaftliche Mitarbeitende des Projekts für Fragen und Auskünfte zur Verfügung.</p>
-            <p style="text-align:left; ">Tobias Hodel nimmt bereits im Vorfeld gerne Dokumente oder Projektideen an, damit sich die Veranstalter bereits vor dem Workshop Gedanken zu möglichen technischen Umsetzungen machen können. </p>
-            <p style="text-align:left; ">Das Projekt READ und somit die Weiterentwicklung von Transkribus werden finanziert durch einen Grant der Europäischen Union im Rahmen des Horizon 2020 Forschungs- und Innovationsprogramms (grant agreement No 674943). </p>
-            <p style="text-align:left; ">Zahl der möglichen Teilnehmerinnen und Teilnehmer: Max. 30 Personen.
-                <hi style="font-family:MS Mincho"> </hi>Benötigte technische Ausstattung: Beamer und Whiteboard. 
-            </p>
-            <p style="text-align:left; ">Teilnehmende: Eigener Rechner (wenn möglich Installation von Transkribus; Hilfe zur Installation von Transkribus wird 15 Minuten vor der Veranstaltung angeboten).</p>
-            <p style="text-align:left; ">Rückfragen bitte an tobias.hodel@ji.zh.ch </p>
-            <p style="text-align:left; ">Kontaktdaten aller Beitragenden (inkl. Forschungsinteressen)</p>
-            <p style="text-align:left;">Sofia Ares Oliveira, École Polytechnique de Lausanne, 
-                <hi rend="color(252525)" style="font-family:Helvetica;font-size:10.5pt">CDH-DHLAB</hi>, 
-                <hi rend="color(252525)" style="font-family:Helvetica;font-size:10.5pt">INN 116 / Station 14 / CH-1015 Lausanne / Switzerland</hi>; sofia.oliveiraares@epfl.ch (
-                <hi rend="color(252525)" style="font-family:Helvetica;font-size:10.5pt">Electrical engineering, signal processing, computer vision</hi>).
-            </p>
-            <p style="text-align:left; ">Markus Diem, Technische Universität Wien, Institute of Computer Aided Automation Computer Vision Lab, Favoritenstr. 9/183-2, A-1040 Vienna, Österreich; diem@caa.tuwien.ac.at (Computer Vision, Document Analysis, Layout Analysis/Page Segmentation, Cluster Analysis, Automated Flow Cytometry Analysis).</p>
-            <p style="text-align:left; ">Tobias Hodel, Staatsarchiv des Kantons Zürich, Winterthurerstrasse 170, CH-8057 Zürich, Schweiz; tobias.hodel@ji.zh.ch (Digital Humanities; Automatic Text Recognition; eArchiving; Information Retrieval).</p>
-            <p style="text-align:left; ">Max Weidemann, Institut für Mathematik, Ulmenstraße 69, Universität Rostock, 18051 Rostock, Deutschland; max.weidemann@uni-rostock.de; (Deep Learning, Information Retrieval und Natural Language Processing). </p>
+            <p rend="Lina Fließtext">Für einen lösungsorientierter Ansatz zur Anreicherung von qualitativen hermeneutischen Verfahren der Diskursanalyse mit den strukturell arbeitenden Ansätzen von Methoden der Digital Humanities hat sich bisher gezeigt, dass es vor allem einfache Verfahren des Information Retrival sind, die unterstützend für die qualitative Forschung nach GT wirken und auch gegenwärtig eingesetzt werden, allerdings vor allem auf der Ebene generischer Tools (Suchfunktionen, automatisiertes Abrufen und Speichern von Dokumenten, Wordfelder). In dem Moment, in dem Anpassungen von Tools notwendig werden, relativieren sich die Vorteile automatisierter Verfahren, insbesondere weil sich die scheinbare Fülle der Informationen im Sinne sogenannter „big data“ bei näherem Ansehen der Daten bisher nicht erfüllt hat, diese aufgrund weniger valider bzw. viabler Textstellen rasch zu „small data“ werden, die wiederum leichter qualitativen Analysen zugänglich sind. Dies hängt wohl zentral mit der Neuheit des Phänomens Telemedizin zusammen, was für Untersuchungsgegenstände der Kulturanthropologie als typisch angesehen werden kann. Gleiches gilt für die Heterogenität unterschiedlicher Textsorten und entsprechend die Herausforderungen automatischer Aufbereitungsschritte. Der gegenwärtige Lerneffekt im Projekt bezieht sich so insbesondere auf die Spezifizierung, wo und wie automatisierte Verfahren in der Diskursanalyse überhaupt sinnvoll eingebettet werden können, sowie auf die Erfahrungen hinsichtlich der Erprobung verschiedener Ansätze des Filterns inklusive der dafür notwendigen Aufbereitungen des generierten Materials und der iterativ ineinander greifenden Schritte der automatischen und manuellen Filterung. </p>
         </body>
         <back>
-            <div type="notes">
-                <note xml:id="ftn1" n="1" rend="footnote text">
-                    Einführend siehe die online Tutorials: 
-                    <ref target="https://read.transkribus.eu/transkribus/">https://read.transkribus.eu/transkribus/</ref>. Als 
-                    <hi rend="italic">hands-on</hi> Anleitung wird der Beitrag von Martin Prell empfohlen: »ps: ich bitt noch mahl umb ver gebung meines confusen und üblen schreibens wegen« – Frühneuzeitliche Briefe als Herausforderung automatisierter Handschriftenerkennung. Online: https://doi.org/10.22032/dbt.34849.
-                </note>
-            </div>
+			<div type="notes">
+				<note place="foot" xml:id="ftn1" n="1"> Der Forschungsverbund „Automatisierte Modellierung hermeneutischer Prozesse – Der Einsatz von Annotationen für sozial- und geisteswissenschaftliche Analysen im Gesundheitsbereich (hermA)“ ist ein interdisziplinäres Projekt an der Universität Hamburg, der Technischen Universität Hamburg und der Hochschule für Angewandte Wissenschaften Hamburg, das durch die Landesforschungsförderung Hamburg finanziert wird. Das Teilprojekt „Automatisierungspotenziale hermeneutischer Prozesse in der Diskursethnographie zu Akzeptanzproblematiken der Telemedizin“ ist ein Beitrag aus der Kulturanthropologie. Vgl. https://www.herma.uni-hamburg.de/.</note>
+				<note place="foot" xml:id="ftn2" n="2"> http://icrawl.l3s.uni-hannover.de/</note>
+				<note place="foot" xml:id="ftn3" n="3"> https://www.apify.com/page-analyzer</note>
+				<note place="foot" xml:id="ftn4" n="4"> https://www.issuecrawler.net/</note>
+				<note place="foot" xml:id="ftn5" n="5"> http://dipbt.bundestag.de/dip21.web/bt</note>
+				<note place="foot" xml:id="ftn6" n="6"> https://www.bundestag.de/service/opendata</note>
+				<note place="foot" xml:id="ftn7" n="7"> https://github.com/PolMine/GermaParlTEI</note>
+				<note place="foot" xml:id="ftn8" n="8"> http://catma.de/</note>
+				<note place="foot" xml:id="ftn9" n="9"> https://github.com/nilsreiter/CorefAnnotator/releases</note>
+			</div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">Leifert, Gundram / Strauß, Tobias / Grüning, Tobias / Wustlich, Welf / Labahn, Roger (2016)</hi>: <hi rend="italic">„Cells in Multidimensional Recurrent Neural Networks”</hi> in: <hi rend="italic">Journal of Machine Learning Research</hi> 17, 1-37.
+                    <bibl>
+                        <hi rend="bold">Bryant, Antony; Charmaz, Kathy (Hg.):</hi> 
+                        <hi rend="italic">The SAGE handbook of Grounded Theory</hi>, 
+                        Los Angeles 2007.
                     </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">Prell, Martin (2018)</hi>: <hi rend="italic">„»ps: ich bitt noch mahl umb ver gebung meines confusen und üblen schreibens wegen« – Frühneuzeitliche Briefe als Herausforderung automatisierter Handschriftenerkennung“</hi>. Online: https://doi.org/10.22032/dbt.34849.
+                    <bibl>
+                        <hi rend="bold">Foucault, Michel:</hi> 
+                        <hi rend="italic">Archäologie des Wissens</hi>, 
+                        Frankfurt a.M. 1973.
                     </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">READ (2018)</hi>: <hi rend="italic">„Tutorials and How To Guides“</hi>. Online: https://read.transkribus.eu/transkribus/.
+                    <bibl>
+                        <hi rend="bold">Foucault, Michel (1971):</hi> 
+                        <hi rend="italic">Die Ordnung des Diskurses</hi>, 
+                        Frankfurt a.M. 1991.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Keller, Reiner (2005):</hi> 
+                        <hi rend="italic">Wissenssoziologische Diskursanalyse. Grundlegung eines Forschungsprogramms</hi>, 
+                        3. Auflage Wiesbaden 2011.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gaidys, Uta / Gius, Evelyn / Jarchow, Margarete / Koch, Gertraud / Menzel, Wolfgang / Orth, Dominik / Zinsmeister, Heike:</hi> 
+                        <hi rend="italic">Project Descripition. HermA: Automated Modelling of Hermeneutic Processes</hi>, 
+                        in: Hamburger Journal für Kulturanthropologie 7 (2017), S. 119–123.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Glaser, Barney G.:</hi> 
+                        <hi rend="italic">Theoretical Sensitivity. Advances in the Methodology of Grounded Theory</hi>, 
+                        Mill Valley, Calif. 1978.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gasteiger, Ludwig / Schneider, Werner:</hi> 
+                        <hi rend="italic">Diskursanalyse und die Verwendung von CAQDA-Software</hi>, 
+                        in: 
+                        <hi rend="bold">Angermuller, Johannes / Nonhoff, Martin / Herschinger, Eva / Macgilchrist, Felicitas / Reisigl, Martin / Wedl, Juliette / Wrana, Daniel / Ziem, Alexander (Hg.):</hi> 
+                        <hi rend="italic">Diskursforschung. Ein interdisziplinäres Handbuch. Band 2: Methoden und Analysepraxis, Perspektiven auf Hochschulreformdiskurse</hi>, 
+                        Bielefeld 2014, S. 852–872.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Glaser, Barney G. / Strauss, Anselm L. (1967):</hi> 
+                        <hi rend="italic">Grounded Theory. Strategien qualitativer Forschung</hi>, 
+                        Bern 2010.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Glasersfeld, Ernst von:</hi> 
+                        <hi rend="italic">Radikaler Konstruktivismus</hi> 
+                        Frankfurt 1997.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Götzö, Monika:</hi> 
+                        <hi rend="italic">Theoriebildung nach Grounded Theory</hi>, 
+                        in: 
+                        <hi rend="bold">Bischoff, Christine / Oehme-Jüngling, Karoline / Leimgruber, Walter (Hg.):</hi> 
+                        <hi rend="italic">Methoden der Kulturanthropologie</hi>, 
+                        Bern 2014, S. 444–458.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Keller, Reiner (2005):</hi> 
+                        <hi rend="italic">Wissenssoziologische Diskursanalyse. Grundlegung eines Forschungsprogramms</hi>, 
+                        3. Auflage Wiesbaden 2011.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Klinke, Harald:</hi> 
+                        <hi rend="italic">Information Retrieval</hi>, 
+                        in: 
+                        <hi rend="bold">Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (Hg.):</hi> 
+                        <hi rend="italic">Digital Humanities. Eine Einführung</hi>, 
+                        Stuttgart 2017, S. 268–278.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Manning, Christopher D. / Raghavan, Prabhakar / Schütze, Hinrich:</hi> 
+                        <hi rend="italic">Introduction to Information Retrieval</hi> 
+                        Cambridge 2009.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sattler, Simone:</hi> 
+                        <hi rend="italic">Computergestützte qualitative Datenbearbeitung</hi>, 
+                        in: 
+                        <hi rend="bold">Bischoff, Christine / Oehme-Jüngling, Karoline / Leimgruber, Walter (Hg.):</hi> 
+                        <hi rend="italic">Methoden der Kulturanthropologie</hi>, 
+                        Bern 2014, S. 476–487.
                     </bibl>
                 </listBibl>
             </div>

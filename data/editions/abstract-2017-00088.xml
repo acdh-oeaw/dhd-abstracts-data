@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="workshop-JOHNS" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="poster-PEUKE" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Einführung in das PANDORA Linked Open Data Framework.</title>
+<title type="full">
+<title type="main"> Webbasierte Morphemannotation Diachroner Korpora: Ein Weg zu mehr Nachhaltigkeit?</title>
+<title type="sub"/>
+</title>
 <author>
 <persName>
-<surname>Johnson</surname>
-<forename>Christopher</forename>
+<surname>Peukert</surname>
+<forename>Hagen</forename>
 </persName>
-<affiliation>Akademie der Wissenschaften zu Göttingen, Deutschland</affiliation>
-<email>christopher.johnson@uni-goettingen.de</email>
-</author>
-<author>
-<persName>
-<surname>Wettlaufer</surname>
-<forename>Jörg</forename>
-</persName>
-<affiliation>Akademie der Wissenschaften zu Göttingen, Deutschland</affiliation>
-<email>jwettla@gwdg.de</email>
+<affiliation>Universität Hamburg, Deutschland</affiliation>
+<email>hagen.peukert@uni-hamburg.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2016-12-01T17:18:00Z</date>
+<date>2016-08-24T18:02:17.807943514</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -36,7 +31,7 @@
 </address>
 </publicationStmt>
 <sourceDesc>
-<p>Converted from a Word document </p>
+<p>Converted from an OASIS Open Document</p>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
@@ -49,170 +44,139 @@
 <profileDesc>
 <textClass>
 <keywords n="category" scheme="ConfTool">
-<term>Workshops</term>
+<term>Poster</term>
 </keywords>
 <keywords n="subcategory" scheme="ConfTool">
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Fedora Commons</term>
-<term>IIIF</term>
-<term>Digital Editions</term>
-<term>Linked Open Data</term>
-<term>SPARQL</term>
+<term>Annotation Architektur Nachhaltigkeit Derivationsmorphologie</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Teilen</term>
-<term>Sammlung</term>
+<term>Datenerkennung</term>
 <term>Programmierung</term>
-<term>Beziehungsanalyse</term>
+<term>Strukturanalyse</term>
 <term>Modellierung</term>
 <term>Annotieren</term>
-<term>Archivierung</term>
-<term>Community-Bildung</term>
-<term>Veröffentlichung</term>
-<term>Visualisierung</term>
-<term>Artefakte</term>
-<term>Daten</term>
-<term>Datei</term>
-<term>Bilder</term>
-<term>3D-Bilder</term>
-<term>Link</term>
-<term>Metadaten</term>
+<term>Bewertung</term>
+<term>Webentwicklung</term>
 <term>Methoden</term>
-<term>Multimedia</term>
 <term>Forschung</term>
 <term>Software</term>
-<term>Standards</term>
-<term>texttragende Gegenstände</term>
 <term>Werkzeuge</term>
-<term>Visualisierung</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<div rend="DH-Heading1" type="div1">
-<head>Beschreibung des Workshops [Zeitrahmen 4h]</head>
-<p>Der Workshop stellt eine Softwarearchitektur vor, die zurzeit im Rahmen des Projekts „Johann Friedrich Blumenbach – online“ der Göttinger Akademie der Wissenschaften im Zusammenhang mit der geplanten digitalen Edition der gedruckten Werke und naturhistorischen Sammlungen J.F. Blumenbachs (1752-1840) entwickelt wird. Bei der Konzeption stehen Interoperabilität, Erweiterbarkeit und Nachnutzung als zentrale Entwicklungsziele im Vordergrund. Ausgangspunkt des 
-                    <hi rend="bold">PANDORA</hi> [
-                    <hi rend="bold">P</hi>resentation (of) 
-                    <hi rend="bold">AN</hi>notations (in a) 
-                    <hi rend="bold">D</hi>igital 
-                    <hi rend="bold">O</hi>bject 
-                    <hi rend="bold">R</hi>epository 
-                    <hi rend="bold">A</hi>rchitecture] Linked Open Data (LOD) Frameworks sind digitale Abbildungen von Texten und Objekten, die in einem Fedora Commons Repository(1) gespeichert und über das International Image Interoperability Framework (IIIF) visualisiert werden. Das Framework ist insbesondere für den Einsatz im Museumskontext und im Bereich der digitalen Präsentation von Kulturgutüberlieferung geeignet. Dabei können sowohl text- also auch objektbasierte Fragestellungen untersucht bzw. Kulturgüter präsentiert und digital verfügbar gemacht werden. Ein besonderer Vorteil ist dabei die Bereitstellung der Daten als LOD und die Möglichkeit der Einbindung der Ressourcen in andere Kontexte. In dem Workshop sollen die Einsatz- und Nachnutzungsmöglichkeiten sowie die Nachhaltigkeit dieser Architektur vorgestellt, diskutiert und anhand von Beispielanwendungen zusammen mit den Teilnehmerinnen und Teilnehmern erprobt werden. 
-                </p>
-<p>PANDORA ist zunächst einmal eine Sammlung von Open Source Anwendungen, die über ein gemeinsames „Manifest“ Dokument die Präsentation der Daten für den Anwender organisieren. Das „Manifest“ besteht aus einem JSON-LD(2) Dokument und wird aus einem digitalen Objektrepositorium über die dynamische Verwendung von SPARQL-Abfragen(3) erzeugt. Es orientiert sich dabei an der Semantik und dem Konzept der „IIIF Presentation API“(4). Diese Schnittstelle definiert, wie die Struktur und das Layout eines komplexen und bild-basierten Objekts in einem Standardformat dargestellt werden kann und zielt darauf ab, die Interoperabilität und Erweiterbarkeit von Präsentationen basierend auf dem Open Annotation Datenmodell(5) zu erleichtern. In diesem Modell ist oa:Annotation jede Ressource, die aus zwei Komponenten besteht, einen „body“ und einen „target“:</p>
-<figure>
-<graphic height="6.217708333333333cm" n="1001" rend="inline" url="workshop-JOHNS-image1.png" width="10.768541666666666cm"/>
-</figure>
-<p>[Abb. 1: Annotation Datenmodell]</p>
-<p>In der IIIF Presentation API ist das Ziel ein "canvas" (eine Leinwand), der eine Abstraktion des Client-Arbeitsplatz oder Sichtbereichs darstellt. Die Annotation (body) kann mit jedem verknüpften oder eingebetteten Objekt wie einem Bild, einer Beschreibung oder einem semantischen Tag verlinkt sein. Die assoziative Beziehungen zwischen verschiedenen Annotation-„bodies“ auf einem „canvas“ sind mit der Linked-Data Semantik im Manifest instanziiert. Die Segmentierung ermöglicht die Auswahl eines Bereichs eines Bildes oder eines „canvas“ unter Verwendung rechteckiger Begrenzungsrahmen oder mit der „IIIF Image API“(6), einem „stream“ von Bildausschnitten. Hotspot Verknüpfungen ermöglichen es die Auswahl auf ein Anmerkungsobjekt zu lenken, um eine Zustandsänderung in einem anderen Annotationsobjekt auszulösen. </p>
-<p>Die Annotationen existieren im Fedora-Repository als LDP Container(7), der in einer Hierarchie von Ressourcen eine HTTP-adressierbare Ressource ist. Wenn der LDP Container in einem Triple-Store überführt wird, existiert er dort als RDF Ressource und als sog. „Named Graph“(8). Der IIIF Manifest Service unterstützt die Serialisierung bzw. „Kanonikalisierung“(9) des JSON-LD Dokuments in Form einer geordneten Liste, die im Ressource Description Framework als „collection" bezeichnet wird. Die Darstellung einer Manifest-Sequenz eines „canvas“ als RDF Sammlung erfordert die Verwendung von leeren Knoten, sog. „blank nodes“, die wie folgt miteinander verwoben sind:</p>
-<p>&lt;LDP_Manifest_Sequence_Container&gt; sc:hasCanvases _:c11 .</p>
-<p>_:c11 rdf:first &lt;http://localhost:8080/fcrepo/rest/edition/base/canvas/c000&gt; .</p>
-<p>_:c11 rdf:rest _:c001.</p>
-<p>_:c001 rdf:first &lt;http://localhost:8080/fcrepo/rest/edition/base/canvas/c001&gt; .</p>
-<p>_:c001 rdf:rest …</p>
-<p>Im Fedora-Repository wird ein „blank node“ mit einer bekannten Skolem IRI [nach RFC5785(10)] repräsentiert. </p>
-<p>Durch die Verwendung des PANDORA IIIF Manifest Services(11) wird die Konstruktion von Präsentationen aus SPARQL Abfragen erlaubt, die eine sehr differenzierte Darstellung der Annotationen über JSON-LD ermöglichen. Der Entwurf einer LDP Container-Hierarchie und von Sammlungs-Definitionen im Einklang mit der Semantik der IIIF Presentation API "Annotation-Liste"(12) und "Layer"(13) für die Darstellung von Textsequenzen (Zeilen, Wortgruppen, Absätze, Seiten, Kapitel, etc.) ist ein integraler Bestandteil von PANDORA. Das folgende Schaubild verdeutlicht die Architektur des Frameworks und die Verknüpfung und das Zusammenspiel der einzelnen Komponenten: </p>
-<figure>
-<graphic height="11.06311111111111cm" n="1002" rend="inline" url="workshop-JOHNS-image2.png" width="16.002cm"/>
-</figure>
-<p>[Abb. 2: PANDORA Architektur] </p>
-<p>Mit einer klaren Trennung der Domain- und Client-Rollen bietet das PANDORA Framework Flexibilität und Erweiterbarkeit für alle möglichen Web-Client Präsentationsmethoden. Darüber hinaus unterstützt PANDORA Node.js Instanzen, die durch socket.io und Redis Pub/Sub(14) Ereignisse verbunden sind und dadurch Redundanz und Durchsatz für dezentrale asynchrone Operationen bieten. Das Framework besteht aus aktueller Open Source Software nach Industriestandards für Linked Data. Dazu gehören das Fedora-Repository, Apache Jena, Apache Camel, Apache Karaf, Open Virtuoso und Solr. Es ist gekennzeichnet durch Interoperabilität, Flexibilität und Erweiterbarkeit und erlaubt, durch die Verwendung von Standard-Software, ebenfalls eine Nachnutzung der Forschungsdaten über Linked Open Data Schnittstellen. Diese Daten können über den SPARQL-Endpoint entweder lokal integriert oder extern zur Nachnutzung angeboten werden. Weitere Informationen finden sich im GitHub Repository.(15) Eine ausführliche Dokumentation sowie eine Webseite mit Links zum Download der Komponenten befinden sich in Vorbereitung. </p>
-<p>Eine zentrale Herausforderung für langfristig angelegte Forschungsprojekte, wie sie im Akademienprogramm der Bund-Länder-Kommission in Deutschland mit Laufzeiten zwischen 15 und 25 Jahren üblich sind, ist die Nachhaltigkeit von Systemarchitekturen in einer ständig fortschreitenden Entwicklung von Standardisierung und Versionierung. PANDORA begegnet dieser Herausforderung mit einem entkoppelten Aufbau auf der Grundlage von relativ unabhängigen voneinander agierenden Systemkomponenten, die bei Bedarf einfach ausgetauscht werden können, ohne die Grundfunktionalität zu gefährden. Auf der Ebene der Viewer können verschiedene Entwicklungen wie z.B. mirador(16) eingesetzt werden, ohne dass eine spezielle Anpassung notwendig ist. PANDORA setzt in Hinblick auf die langfristige Verfügbarkeit auf Standards aus dem Bereich des Semantik Web, die sich inzwischen weltweit durchgesetzt haben und damit sehr wahrscheinlich auch in Zukunft eine aktive Weiterentwicklung des Frameworks erlauben. Darüber hinaus ermöglichen diese Standards eine effiziente Vernetzung mit anderen Ressourcen im Web. </p>
-<p>In dem Workshop sollen die einzelnen Komponenten des PANDORA Frameworks vorgestellt und deren Installation und Konfiguration erklärt werden. In einer Testumgebung, die für die Teilnehmer auf einem Server im Internet zur Verfügung stehen wird, können Beispieldatensätze gespeichert und die Funktionalität des Frameworks erprobt werden. Ebenfalls ist vorgesehen, die vorgestellte Architektur der Software intensiv zu diskutieren und mit anderen Lösungen für digitale Repositorien/Präsentationsumgebungen zu vergleichen. </p>
-<p>Für die gewinnbringende Teilnahme sind Grundkenntnisse in Semantik Web Technologien sowie Kenntnisse der verwendeten Standards und/oder Open Source Software von Vorteil. Der Workshop eignet sich für eine Gruppe bis etwa 15 Personen. Die Teilnehmer sollten einen eignen Rechner/Laptop mit Verbindung zum Internet zur Verfügung haben, um im interaktiven Teil des Workshops die Funktionalitäten von PANDORA selber ausprobieren zu können. Die lokale Installation von zusätzlicher Software wird voraussichtlich nicht notwendig sein. Wichtige Informationen über die PANDORA Architektur können auch schon vorab in einem Video angesehen werden. (17)</p>
-<figure>
-<graphic height="23.21101388888889cm" n="1003" rend="inline" url="workshop-JOHNS-image3.jpg" width="16.002cm"/>
-</figure>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Organisatoren des Workshops:</head>
-<p>Christopher Hanna Johnson, MA.</p>
-<p>Projekt “Johann Friedrich Blumenbach-online” der ADW Göttingen</p>
-<p>Geiststraße 10</p>
-<p>37073 Göttingen</p>
+<p>Die Annreicherung historischer Texte mit derivationsmorphologischen Informationen ist aus der Sichtweise automatisierter Verfahren eine doppelte Herausforderung. Im Gegensatz dazu zeigt die automatische Erkennung von Flexionen bereits gute Ergebnisse (Dipper 2011, Bollmann et al 2014a,b). Die Herausforderungen lassen sich auf zwei wesentliche Unterschiede zurückführen. Erstens ist die Identifikation eines Derivationsmorphems aufgrund der vielzähligen Wortbildungsmechanismen und daraus folgender Überlappungsprobleme bei nicht agglutinierenden Sprachen algorithmisch nicht exakt zu bestimmen (vgl. Givón 1971, Dryer et al 2011, Lehmann 1973) und derzeit nur durch Abgleich mit einem a priori vorhandenen Lexikon überhaupt in Annäherung möglich. Zweitens ändert sich sowohl Form als auch Bedeutung eines Morphems über die Zeit hinweg, sodass sich daraus eine weitere Art der Überschneidung von Form sowie Inhalt (Bedeutung) einzelner Morpheme ergeben kann (vgl. Berg 1998, Faiß 1992, Kastovsky 2009). Vorausgesetzt man lässt eine Komplexitätsreduktion durch die Einführung von Zeitintervallen zu und vernachlässigt so die relativ langen Zeiträume, in denen sich Morpheme in einer Übergangsphase hin zu neuer Form und Inhalt befinden, folgt daraus immer noch, dass entsprechende Lexika für jede festgelegte Zeitperiode vorhanden sein müssen, um größere Textkorpora automatisch bearbeiten zu können. Je feinerkörniger die Zeitintervalle gewählt werden, desto größer wird die Anzahl an benötigten Lexika (proportional zur Anzahl der Zeitperioden). Feine Unterteilungen in den Zeitintervallen sind oft notwendig, um in der Folge die beobachteten Sprachwandelmechanismen genauer und ursächlich erklären zu können.</p>
+<p>Die Lösung dieses Problems liegt demnach in der effizienten Erstellung einer entsprechenden Ressource, welche neben dem Lemma mit der Ausweisung der morphologischen Bestandteile auch die Zeit erfasst. Neben den morphologischen Informationen (Wurzel, Position und Anzahl von Präfixen und Suffixen) werden auch die Wortklasse und das Korpus erfasst. Bei Composita gehören zudem Kopf und semantische Kategorien (dvandva, bahuvrihi, appositional) zum Annotationsschema. Effizienzgewinne können dabei einerseits durch eine möglichst geschickte Aufteilung von standardisierbaren Routineaufgaben, welche Automaten abarbeiten können, und komplexeren Entscheidungsaufgaben, die ein Bearbeiter manuell treffen muss, erzielt werden. Andererseits kann dem Bearbeiter bei der Entscheidungsfindung mit der Bereitstellung von wichtigen Informationen und Komfortabilität bei der Bedienung und Präsentation geholfen werden.</p>
+<p>Ein 
+                <hi rend="italic">Use Case</hi> eines solchen Wortanalysewerkzeugs konnte mit dem Morphilo-Toolset als 
+                <hi rend="italic">Stand-</hi>
+<hi rend="italic">A</hi>
+<hi rend="italic">lone</hi>-Anwendung ausprogrammiert werden. Diese Software berücksichtigt beim Abgleich großer Textkorpora mit dem Lexikon die Zeitspanne. Sind für das angegebene Zeitintervall Einträge vorhanden, werden diese automatisch zugewiesen. Die übrigen (unbekannten) Typen des Textes werden als neue Lemmata angelegt. Falls ein Lemma in der Vorgängerperiode bereits existiert, wird der aktuelle Eintrag mit den Informationen der Vorgängerperiode belegt und zur Bearbeitung präsentiert. Andernfalls (d.h. der Eintrag ist auch in keiner Vorgängerperiode registriert) wird das Token mit einer generischen Zerlegung automatisiert in seine morphemischen Bestandteile aufgeteilt. Der Nutzer bestätigt eine dieser Zerlegungen oder nimmt über entsprechende Menüs Änderungen vor. Erst jetzt werden diese Informationen persistent abgelegt (vgl. Peukert 2012).
+            </p>
+<p>Im so etablierten Workflow hat sich zunächst gezeigt, dass die Bearbeitung von englischen Texten aus dem 17. Jahrhundert (PPCMBE, Kroch et al 2010) schnell und effizient zu bewerkstelligen ist, wenn eine kritische Masse an Einträgen bereits vorhanden ist, da das TTR mit zunehmender Textgröße gegen Null strebt, d.h. immer nur wenige unbekannte Wörter in jedem neuen Text vorzufinden sind (Baayen 1996). Dieser Effekt trat bei der Bearbeitung von frühen mittelenglischen Texten aus dem 12. Jahrhundert (PPCME2, Kroch and Taylor 2000), nicht auf. Es zeigte sich, dass die fehlenden Schreibstandards von historischen Texten die notwendige Lemmatisierung scheitern ließen und somit auch ein Abgleich mit dem Lexikon nicht gelingen konnte (vgl. Peukert 2014).</p>
+<p>Berücksichtigt man diese beiden Erfahrungen – schnelle Annotation bei kritscher Masse an Einträgen und langsame Annoation bei fehlenden Standards – bei der Entwicklung von Lösungsstrategien, trifft man unweigerlich auf den Nachhaltigkeitsgedanken beim Ressourcenaufbau, der vorgibt, dass die kostenintensiven Annotationsaufgaben möglichst nicht mehrfach erledigt, aber nachgenutzt werden sollen. Dies impliziert eine gemeinschaftlich-synergetische Bearbeitung der Annotationszuweisung, da man die spätere Nutzung der Resource mit eigener (sehr geringer) Annotationsarbeit “bezahlen” kann. Auf diese Weise können annotierte Daten unterschiedlicher Zeiträume gesammelt werden. In der Fortführung dieser Idee ist die Architektur einer webbasierten Komponente entstanden (Abb. 1), bei der ein 
+                <hi rend="italic">Multi-User</hi>-Design die Annotationsarbeit an unterschiedlichen Korpora verteilt und Zuweisungen aus verschiedenen Lexika aber der passenden Zeitperiode und Sprache erlaubt. Um dem Problem der fraglichen Qualität der Annotationen entgegenzuwirken, ist es möglich, die Lexika, die man zur Bearbeitung benötigt, auszuwählen. Möchte man sein eigenes Korpus mit derivationsmorphologischen Informationen anreichern lassen, fliesst die jeweils eigens geleistete Annotationsarbeit in den Gesamtdatenbestand ein. Inwiefern die gesammelten Annotationsdaten mit weiteren Verfahren hinsichtlich ihrer Qualität getestet, bewertet und weiter bearbeitet werden können, wird Gegenstand einer weitergehenden Diskussion sein.
+            </p>
 <p>
-<ref target="mailto:christopher.johnson@uni-goettingen.de">christopher.johnson@uni-goettingen.de</ref> oder 
-                    <ref target="mailto:chjohnson39@gmail.com">chjohnson39@gmail.com</ref>
-</p>
-<p>
-<ref target="http://github.com/blumenbach">http://github.com/blumenbach</ref>
-</p>
-<p>Forschungsinteressen: Semantik Web Technologien, Digitale Editionen, Softwareentwicklung, Cultural Heritage Studies</p>
-<p>---------------------------------------------------------------</p>
-<p>Dr. Jörg Wettlaufer</p>
-<p>Digitisation Coordinator / Researcher</p>
-<p>Akademie der Wissenschaften zu Göttingen (ADWG)</p>
-<p>Göttingen Centre for Digital Humanities (GCDH)</p>
-<p>Papendiek 16</p>
-<p>37073 Göttingen</p>
-<p>Germany</p>
-<p>Tel. +49 551 39 20477 | 39 5366</p>
-<p>
-<ref target="mailto:jwettla@gwdg.de">jwettla@gwdg.de</ref> / skype: joewett
-                </p>
-<p>Forschungsinteressen: Digitale Geschichtswissenschaft, </p>
-<p>Semantik Web Technologien, Digitale Editionen </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Linkliste</head>
-<bibl>
-<ref target="http://fedorarepository.org/">http://fedorarepository.org/</ref>
-</bibl>
-<bibl>
-<ref target="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</ref>
-</bibl>
-<bibl>
-<ref target="https://www.w3.org/TR/sparql11-query/">https://www.w3.org/TR/sparql11-query/</ref>
-</bibl>
-<bibl>
-<ref target="http://iiif.io/api/presentation/2.1/">http://iiif.io/api/presentation/2.1/</ref>
-</bibl>
-<bibl>
-<ref target="http://www.openannotation.org/spec/core/core.html">http://www.openannotation.org/spec/core/core.html</ref>
-</bibl>
-<bibl>
-<ref target="http://iiif.io/api/image/2.1/">http://iiif.io/api/image/2.1/</ref>
-</bibl>
-<bibl>
-<ref target="ldpc">https://www.w3.org/TR/ldp/#ldpc</ref>
-</bibl>
-<bibl>
-<ref target="section-rdf-graph">https://www.w3.org/TR/rdf11-concepts/#section-rdf-graph</ref>
-</bibl>
-<bibl>
-<ref target="https://json-ld.github.io/normalization/spec/">https://json-ld.github.io/normalization/spec/</ref>
-</bibl>
-<bibl>
-<ref target="http://www.rfc-editor.org/rfc/rfc5785.txt">http://www.rfc-editor.org/rfc/rfc5785.txt</ref>
-</bibl>
-<bibl>
-<ref target="https://github.com/blumenbach/iiif-manifest-service">https://github.com/blumenbach/iiif-manifest-service</ref>
-</bibl>
-<bibl>
-<ref target="annotation-list">http://iiif.io/api/presentation/2.1/#annotation-list</ref>
-</bibl>
-<bibl>
-<ref target="layer">http://iiif.io/api/presentation/2.1/#layer</ref>
-</bibl>
-<bibl>
-<ref target="http://redis.io/topics/pubsub">http://redis.io/topics/pubsub</ref>
-</bibl>
-<bibl>
-<ref target="https://github.com/blumenbach/">https://github.com/blumenbach/</ref>
-</bibl>
-<bibl>
-<ref target="http://github.com/IIIF/mirador">http://github.com/IIIF/mirador</ref>
-</bibl>
-<bibl> Für ein einführendes Video zur PANDORA Architektur siehe: 
-                        <ref target="https://youtu.be/TEqUkiO6tcA">https://youtu.be/TEqUkiO6tcA</ref>
-</bibl>
-</div>
+<figure>
+<graphic url="poster-PEUKE-image1.png"/>
+</figure>Abb. 1: Architekturentwurf zur Integration des Annotationswerkzeugs in eine webbasierte Anwendung im Mehrnutzerbetrieb
+            </p>
+<p>Für die Lösung der noch nicht endgültig fertiggestellten Komponente (in Abb. 1 mit “Quality Control” bezeichnet) werden statistische Verfahren in Anlehnung an das maschinelle Lernen vorgestellt, die sich an zwei unterschiedlichen Strategien ausrichten. Erstens steht die häufigkeitsbedingte Analyse gleicher oder ähnlicher Einträge der verschiedenen Datenbestände der Nutzer (User_1, …, User_n) im Vordergrund. Diese Daten werden genutzt, um Ausreißer und falsche Annotationen mittels automatisierter statischer Signifikanztests zu identifizieren. Dieser Ansatz wird mit einer nutzerorientierten Strategie kontrastiert. Diese zweite Strategie bezieht die Verhaltensdaten der Nutzer ein, d.h. wie oft werden welche Datenbestände anderer Nutzer für die anstehende Annotation ausgewählt. Auch hier basiert der Ausschluss von vermeindlich fehlerhaften Daten mittels eines vorher festgelegten Signifikanzniveaus. Die mit einer dieser Strategie bereinigten Datenbestände könnten danach in den Hauptdatenbestand (Morphilo_DB in Abb. 1) überführt werden.</p>
 </body>
+<back>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl>
+<hi rend="bold">Baayen, Harald</hi> (1996): 
+                        „The effects of lexical specialization on the growth curve of the vocabulary“,
+                        in:
+                        <hi rend="italic">Computational Linguistics</hi> 22: 455–480.
+                    </bibl>
+<bibl>
+<hi rend="bold">Berg, Thomas </hi>(2009): 
+                        <hi rend="italic">Structure in language: A dynamic perspective</hi>. 
+                        New York: Routledge.
+                    </bibl>
+<bibl>
+<hi rend="bold">Bollmann, Marcel / Petran, Florian / Dipper, Stefanie / Krasselt, Julia</hi> (2014a): 
+                        „CorA: A web-based annotation tool for historical and other non-standard language data“,
+                        in: 
+                        <hi rend="italic">Proceedings of the 8th Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities (LaTeCH)</hi> 86–90.
+                    </bibl>
+<bibl>
+<hi rend="bold">Bollmann, Marcel / Petran, Florian / Dipper, Stefanie</hi> (2014b): 
+                        „Applying Rule-Based Normalization to Different Types of Historical Texts — An Evaluation“,
+                        in: Zygmunt Vetulani and Joseph Mariani (eds.): 
+                        <hi rend="italic">Human Language Technology Challenges for Computer Science and Linguistics. 5th Language and Technology Conference</hi>, LTC 2011. Revised Selected Papers. Lecture Notes in Computer Science 8387. 
+                        Springer 166–177.
+                    </bibl>
+<bibl>
+<hi rend="bold">Dipper, Stefanie</hi> (2011): 
+                        „Morphological and Part-of-Speech Tagging of Historical Language Data: A Comparison“,
+                        in:
+                        <hi rend="italic">Journal for Language Technology and Computational Linguistics</hi>. Special Issue 26 (2): 25–37.
+                    </bibl>
+<bibl>
+<hi rend="bold">Dryer, Matthew S. / Haspelmath, Martin</hi> (eds.). (2011): 
+                        <hi rend="italic">The world atlas of language structures Online</hi>. 
+                        München: Max Planck Digital Library.
+                    </bibl>
+<bibl>
+<hi rend="bold">Faiß, Klaus</hi> (1992): 
+                        <hi rend="italic">English historical morphology and word-formation: Loss versus enrichment</hi>. 
+                        Trier: Wissenschaftlicher Verlag.
+                    </bibl>
+<bibl>
+<hi rend="bold">Givón, Talmy</hi> (1971): 
+                        „Historical syntax and synchronic morphology: An archaeologist’s field trip“, 
+                        in:
+                        <hi rend="italic">Chicago Linguistic Society</hi> 7: 394–415.
+                    </bibl>
+<bibl>
+<hi rend="bold">Kastovsky, Dieter </hi>(2009): 
+                        „Diachronic perspectives“,
+                        in: Lieber, Rochelle / Štekauer, Pavol (eds.):
+                        <hi rend="italic">The Oxford handbook of compounding</hi>. 
+                        Oxford: Oxford University Press 321–340.
+                    </bibl>
+<bibl>
+<hi rend="bold">Kroch, Anthony / Santorini, Beatrice / Diertani, Ariel</hi> (2010): 
+                        <hi rend="italic">The Penn-Helsinki Parsed Corpus of Modern British English (PPCMBE)</hi>. 
+                        Department of Linguistics, University of Pennsylvania: CD-ROM, first edition <ref target="http://www.ling.upenn.edu/hist-corpora/">http://www.ling.upenn.edu/hist-corpora/</ref>.
+                    </bibl>
+<bibl>
+<hi rend="bold">Kroch, Anthony / Taylor, Ann</hi> (2000): 
+                        <hi rend="italic">The Penn-Helsinki Parsed Corpus of Middle English (PPCME)</hi>. 
+                        Department of Linguistics, University of Pennsylvania: CD-ROM, first edition <ref target="http://www.ling.upenn.edu/hist-corpora/">http://www.ling.upenn.edu/hist-corpora/</ref>.
+                    </bibl>
+<bibl>
+<hi rend="bold">Lehmann, Winfred P.</hi> (1973): 
+                        „A structural principle of language and its implications“,
+                        in: 
+                        <hi rend="italic">Language</hi> 49 (1): 47–66.
+                    </bibl>
+<bibl>
+<hi rend="bold">Peukert, Hagen</hi> (2014):
+                        „The Morphilo Toolset: Handling the Diversity of English Historical Texts“, 
+                        in: Ammermann, Anne / Brock, Alexander / Pflaeging, Jana / Schildhauer, Peter (eds.):
+                        <hi rend="italic">Facets of Linguistics: Proceedings of the 14th Norddeutsches Linguistisches Kolloquium 2013</hi>.
+                        Frankfurt: Peter Lang 161–172.
+                    </bibl>
+<bibl>
+<hi rend="bold">Peukert, Hagen</hi> (2012): 
+                        „From Semi-Automatic to Automatic Affix Extraction in Middle English Corpora: Building a Sustainable Database for Analyzing Derivational Morphology over Time“, 
+                        in: Jancsary, Jeremy (ed.):
+                        <hi rend="italic">Empirical Methods in Natural Language Processing, Wien, Scientific series of the ÖGAI</hi> 413–23.
+                    </bibl>
+</listBibl>
+</div>
+</back>
 </text>
 </TEI>

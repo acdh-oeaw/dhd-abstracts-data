@@ -1,39 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="BOREK_Luise_Netzwerk_Offenes_Mittelalter" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="JUNG_Kerstin_Die_Wahl_der_Mittel___Jupyter_Notebooks_als_For" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Netzwerk Offenes Mittelalter</title>
+                <title type="full">
+                    <title type="main">Die Wahl der Mittel – Jupyter-Notebooks als Forschungsinfrastruktur</title>
+                    <title type="sub"/>
+                </title>
                 <author>
                     <persName>
-                        <surname>Borek</surname>
-                        <forename>Luise</forename>
+                        <surname>Jung</surname>
+                        <forename>Kerstin</forename>
                     </persName>
-                    <affiliation>Technische Universität Darmstadt, Deutschland</affiliation>
-                    <email>luise.borek@tu-darmstadt.de</email>
-                    <idno type="ORCID">0000-0001-5849-374X</idno>
+                    <affiliation>Universität Stuttgart, Institut für Maschinelle Sprachverarbeitung</affiliation>
+                    <email>kerstin.jung@ims.uni-stuttgart.de</email>
+                    <idno type="ORCID">0000-0002-9548-8461</idno>
                 </author>
                 <author>
                     <persName>
-                        <surname>Busch</surname>
-                        <forename>Hannah</forename>
+                        <surname>Hein</surname>
+                        <forename>Pascal</forename>
                     </persName>
-                    <affiliation>Huygens Instituut</affiliation>
-                    <email>hannah.busch@huygens.knaw.nl</email>
-                    <idno type="ORCID">0000-0002-3491-8202</idno>
+                    <affiliation>Universität Stuttgart, Institut für Literaturwissenschaft</affiliation>
+                    <email>pascal.hein@ilw.uni-stuttgart.de</email>
+                    <idno type="ORCID">0000-0002-2138-3069</idno>
                 </author>
                 <author>
                     <persName>
-                        <surname>Ketschik</surname>
-                        <forename>Nora</forename>
+                        <surname>Blessing</surname>
+                        <forename>André</forename>
                     </persName>
-                    <affiliation>Universität Stuttgart</affiliation>
-                    <email>nora.ketschik@ilw.uni-stuttgart.de</email>
+                    <affiliation>Universität Stuttgart, Institut für Maschinelle Sprachverarbeitung</affiliation>
+                    <email>andre.blessing@ims.uni-stuttgart.de</email>
+                    <idno type="ORCID">0000-0001-7573-578X</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hess</surname>
+                        <forename>Jan</forename>
+                    </persName>
+                    <affiliation>Deutsches Literaturarchiv Marbach</affiliation>
+                    <email>jan.hess@dla-marbach.de</email>
+                    <idno type="ORCID">0000-0003-4162-2132</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kushnarenko</surname>
+                        <forename>Volodymyr</forename>
+                    </persName>
+                    <affiliation>Höchstleistungsrechenzentrum (HLRS), Universität Stuttgart</affiliation>
+                    <email>volodymyr.kushnarenko@hlrs.de</email>
+                    <idno type="ORCID">0000-0001-7427-2410</idno>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-07-28T12:46:00Z</date>
+                    <date>2022-12-15T19:28:23.553025504</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -60,7 +82,7 @@
                     </address>
                 </publicationStmt>
             <sourceDesc>
-                <p>Converted from a Word document</p>
+                <p>Converted from an OASIS Open Document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -79,103 +101,65 @@
                     <term>Posterpräsentation</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Linked Open Data</term>
-                    <term>Mediävistik</term>
-                    <term>Vernetzung</term>
+                    <term>Jupyter-Notebooks</term>
+                    <term>ausführbarer Quellcode</term>
+                    <term>Python</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Modellierung</term>
-                    <term>Annotieren</term>
-                    <term>Theoretisierung</term>
-                    <term>Community-Bildung</term>
-                    <term>Kollaboration</term>
-                    <term>Organisation</term>
+                    <term>Teilen</term>
+                    <term>Programmierung</term>
+                    <term>Veröffentlichung</term>
+                    <term>Visualisierung</term>
+                    <term>Infrastruktur</term>
+                    <term>Software</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p style="text-align: left; ">Die germanistische Mediävistik hat über Jahrzehnte viele digitale Ressourcen aufbereitet, die zu etablierten und zentralen Säulen des Faches gewachsen sind. Das DFG-Netzwerk 
-                <hi rend="italic">Netzwerk Offenes Mittelalter</hi> widmet sich dem weiteren Erschließungspotenzial dieser heterogenen und historisch gewachsenen Forschungsdaten, ihrer Vernetzung und ihrer qualitativen Verdichtung und exploriert dabei den Einsatz von Linked Open Data (LOD). Das Potenzial und die Grenzen dieser Verfahren werden forschungsorientiert erprobt und methodisch reflektiert. 
+            <p>Mit Python als vielgenutzter Programmiersprache in den Digital Humanities<ref n="1" target="ftn0"/> steigt auch der Bedarf an Möglichkeiten zur nachhaltigen Weitergabe und Wiederverwendbarkeit von Python-Quellcode. Softwareentwicklungsnahen Lösungen wie der Verfügbarmachung über Versionsverwaltungsrepositorien oder dem Einpflegen in eine Paketverwaltung wurde der ‚Notebook‘-Ansatz<ref n="2" target="ftn1"/> zur Seite gestellt, der Dokumentation, Ausführung und Visualisierung verzahnt und eine Aufbereitung für verschiedene Zielgruppen ermöglicht.
             </p>
-            <p style="text-align: left; ">Unter ‚offenes Mittelalter‘ verstehen wir dabei nicht nur die für LOD ohnehin erforderliche Einhaltung der FAIR-Prinzipien, sondern auch eine disziplinäre wie epochenübergreifende Durchlässigkeit, die den Austausch mit den relevanten Communitys und Gedächtnisinstitutionen, aber auch die Übertragbarkeit der Methoden widerspiegelt. </p>
-            <p style="text-align: left; ">Das Netzwerk liefert aus einer fachdisziplinären Perspektive heraus Impulse für den Einsatz von LOD in geisteswissenschaftlicher Forschung und befindet sich dabei in Austausch mit der Nationalen Forschungsdateninfrastruktur (NFDI), insbesondere den Konsortien Text+ und NFDI4Culture.</p>
-            <p style="text-align: left; ">Das Netzwerk setzt sich zusammen aus 18 Wissenschaftler*innen aus Deutschland, Österreich und den Niederlanden. Die individuellen Hintergründe sind vielfältig, sodass neben verschiedener mediävistischer Expertisen auch Informationswissenschaften und Bildungsforschung vertreten sind. Über die einzelnen Forschungsaktivitäten und -projekte sind zudem zentrale Ressourcen der germanistischen Mediävistik unmittelbar eingebunden, etwa der Handschriftencensus, das Mittelhochdeutsche Wörterbuch, die Mittelhochdeutsche Begriffsdatenbank, das Referenzkorpus Mittelhochdeutsch, das Mittelalterblog und diverse einschlägige Editionen (s. KONDE). </p>
-            <p style="text-align: left; ">Ergänzt und erweitert wird das Netzwerk durch Expert*innen, die als Gäste wertvolle Impulse einbringen und Austausch und Vernetzung vorantreiben. Für diesen wichtigen Aspekt des Community-Building haben wir zudem die Beteiligungsmöglichkeit als „Assoziierte Mitglieder“ geschaffen, um das Netzwerk fruchtbar zu erweitern und der fachlichen und methodischen Diversität gerecht zu werden.</p>
-            <p style="text-align: left; ">Konzeptionell beleuchtet das Netzwerk die Verfahren aus verschiedenen Perspektiven. Hierzu gehört ein editionsphilologischer Fokus: Als etablierter Standard für die Kodierung von Texten bildet TEI-XML die Grundlage vieler digitaler Editionen und dient als Archivformat (vgl. Wettlaufer 2018). Darin sind Informationen zunächst implizit erfasst, d. h. menschenlesbar, aber nicht ‚semantisch‘ nach Kriterien des Semantic Web (vgl. Hitzler 2021). Hier wurden etwa Möglichkeiten des Transfers eruiert (z. B. XTriples, Addlesee 2019), aber auch Herausforderungen in diesem Bereich diskutiert z. B. im Umgang mit Unsicherheiten und Ambiguitäten, wie sie besonders beim Umgang mit historischen Ressourcen häufig auftreten und zurzeit von besonderem Forschungsinteresse sind (Kuczera 2019; Andrews 2021-2026). Eine weitere wichtige Säule für LOD bilden persistente Identifier. Für eine forschungsgetriebene Anwendung, die über basale Metadatenkategorien hinausgeht, ergeben sich verschiedene Herausforderungen. Hier befindet sich das Netzwerk in Austausch mit der GND, beleuchtet Entwicklungen zu Normdatenstandards (z. B. Burrows et al. 2020) und exploriert zudem die Einbindung verschiedener Wikisysteme wie Wikidata und Factgrid.</p>
-            <p style="text-align: left; ">Eine wichtige Rolle spielt auch das Spannungsfeld von Materialität und Text, in dem nicht nur die Stellvertreterfunktion digitaler Objekte beachtet werden, sondern auch Möglichkeiten zu domänenspezifischen Vokabularen und granularen Identifiern gegeben sein müssen. Die Materialität stellt einen disziplinenübergreifenden ‚Berührungspunkt‘ dar, der sowohl eine Schnittstelle für LOD bilden kann als auch große Herausforderungen und Chancen für eine Erfahrbarkeit im digitalen Raum bietet.</p>
-            <p style="text-align: left; ">Die skizzierten Verfahren sind nur tragfähig, wenn für sie eine weitreichende Akzeptanz besteht und geeignete Forschungsinfrastrukturen vorhanden sind. Das Netzwerk bemüht sich daher um eine Methodenzusammenschau, liefert Best Practices und erstellt Showcases, die einen ertragreichen Einsatz von LOD illustrieren. Zu den Ergebnissen des Netzwerks gehört auch eine Wissensplattform, die eine Ressourcensammlung bietet, in der einschlägige Ressourcen zu LOD, Tutorials und Projekte gelistet werden, eine domänenspezifische Bibliographie zu LOD in der germanistischen Mediävistik gepflegt wird und die Showcases aus der Forschung der Netzwerkmitglieder präsentiert werden. Flankiert werden diese Ressourcen zudem von der ausführlichen Dokumentation der Aktivitäten des Netzwerks über Blogbeiträge (z. B. Borek et al. 2022), Meldungen auf der Website des Netzwerks und über Präsenz und Vernetzung über Social Media.</p>
-            <p style="text-align: left; ">Mit unserem Poster informieren wir über unsere bisherigen Ergebnisse und Aktivitäten des 
-                <hi rend="italic">Netzwerks Offenes Mittelalter</hi> und laden ein zu weiterem Austausch, um nachhaltige und innovative Forschungsinfrastrukturen in den digitalen Geisteswissenschaften gemeinsam mitzugestalten.
+            <p>Im Forschungskontext werden solche Notebooks daher verwendet, um auf einer (Web-)Seite Datensätze einzulesen, zu analysieren, visualisieren und die verwendete Methodik zu erläutern, ohne dies auf verschiedene Orte oder Zugänge verteilen zu müssen. In der (Nach-)Nutzung können z. B. Parameter in der Analyse oder Visualisierung direkt im Browser verändert werden und eine Anpassung ohne Programmierkenntnisse oder -erfahrung ermöglichen. Die Notebook-Dateien können wiederum über entsprechende Softwareentwicklungs-Repositorien zur Verfügung gestellt werden, was Anpassungen für weitere Datensätze oder Forschungsfragen erlaubt. Jupyter-Notebooks sind dabei als JSON-Dokumente strukturiert verarbeitbar.</p>
+            <p>Im Rahmen unseres Projekts geht es uns um die Möglichkeit, Jupyter-Notebooks so zur Verfügung zu stellen, dass sie für eine sehr heterogene Nutzendengruppe (u. a. Autor*innen, Forschende, Schüler*innen) einen Mehrwert bedeuten.<ref n="3" target="ftn2"/> Wir möchten verschiedene Ebenen der Vorkenntnisse bedienen und gleichzeitig ermöglichen, eigene Forschungsfragen einzubringen. Im Beitrag soll aber auch der infrastrukturelle Aufwand verdeutlicht werden, der hinter der Möglichkeit nachhaltig ausführbarer Notebooks für die Forschung steht und auf einen Ausgleich zwischen Flexibilität der Nutzung und Sicherheit des Angebots hinausläuft. Letztendlich möchte der Beitrag die Diskussion befördern, inwieweit die Community von einer forschungsgetriebenen, unabhängigen und nachhaltigen Infrastruktur zum Umgang mit Jupyter-Notebooks profitieren würde, da ein entsprechendes Vorgehen für individuelle Projekte weniger umsetzbar ist.
             </p>
+            <p>Zu den Vorteilen der Bereitstellung von Zugängen zu Daten und Analysen durch Notebooks gehören (i) die Möglichkeit, ein Angebot an eine breite Nutzendengruppe zu machen: Je nach Aufbereitung der Notebooks (interaktive Elemente wie Dropdown-Menüs oder Range-Sliders sind möglich) können sie fast ohne Vorkenntnisse mit Python betrieben werden und an das individuelle Forschungsinteresse angepasste Ergebnisse produziert werden, (ii) dass die technischen Voraussetzungen, z. B. benötigte Pakete, im Notebook selbst spezifiziert sind. Diese Vorteile kommen allerdings nur in einer konfigurierten Ausführungsumgebung zum Tragen. Werden nur die Jupyter-Notebook-Dateien bereitgestellt, setzt das bei den Nutzenden Kenntnisse in Python, Bash o. Ä. sowie im Umgang mit Jupyter voraus. Oft sind Pakete in aufeinander abgestimmten Versionen erforderlich oder in Abhängigkeit vom Betriebssystem verfügbar, so dass nur eine vorkonfigurierte Umgebung den Nutzenden tatsächlich die technischen Hürden abnimmt.</p>
+            <p>So stellt sich die Frage, in welchem Rahmen ausführbare Jupyter-Notebooks zur Verfügung gestellt werden können. Der Betrieb einer zugänglichen Ausführungsumgebung (‚Hub‘) setzt Hardware, Administrations- und Wartungskapazitäten voraus. Eine Nutzungsverwaltung (Vergabe und Pflege von Accounts, Monitoring von Speicher- und Rechenkapazitäten) ist dabei ebenso unerlässlich wie Aktualisierungen mittels Updates auf Ebene von Maschine, Hub und Paketen und damit verbundene Wartungsarbeiten durch Abhängigkeiten in den Notebooks. Der Betrieb einer nachhaltigen Ausführungsumgebung setzt dies für einen längeren Zeitraum voraus, so dass die Idee der eigenen Ausführungsumgebung den Rahmen eines Forschungsprojekts oft übersteigt. Des Weiteren muss der Sicherheitsaspekt berücksichtigt werden, da es sich bei ausführbaren Jupyter-Notebooks um ausführbaren Quellcode handelt, der gewollt oder ungewollt Schaden am eigenen oder an externen Systemen verursachen kann.</p>
+            <p>Mit dem Service Colaboratory<ref n="4" target="ftn3"/> bietet Google an , Notebooks einzurichten, Pakete dafür dauerhaft zu installieren und diese Notebooks ggf. mit Zugangsbeschränkung zu veröffentlichen. Dies zeigt die technische Möglichkeit, einen Notebook-Service mit großen Gestaltungsmöglichkeiten für die Nutzenden zu hosten. Allerdings kann diese Lösung für die Forschung nicht als Standard vorgeschlagen werden – allein aufgrund der problematischen Speicherung aller Daten, aber auch weil hier aufgrund des unvorhersehbaren Umgangs mit den eigenen Diensten die Nachhaltigkeit nicht gesichert werden kann.
+            </p>
+            <p>Eine Alternative hierzu kann der Betrieb einer stark restringierten Ausführungsumgebung sein, die zwar die vorhandenen Notebooks abspielen kann und Nutzende ggf. aus vorgegebenen Parametern wählen lässt, Forschenden aber kaum Flexibilität bezüglich einer eigenen Exploration oder Einbindung weiterer Pakete ermöglicht.</p>
+            <p>Sofern spezifische technische Expertise angenommen werden kann, ist eine weitere Möglichkeit, Docker-Container zum Download zur Verfügung zu stellen oder eine detaillierte Dokumentation zur Nutzung eines Notebooks innerhalb einer integrierten Entwicklungsumgebung zu liefern. Die Zielgruppe wird damit allerdings auf Nutzende der entsprechenden Infrastruktur einschränkt.</p>
+            <p>Notebooks, die über bestimmte Repositorien öffentlich zur Verfügung gestellt werden, können über Binder<ref n="5" target="ftn4"/> in eine Ausführungsumgebung gebracht werden. Dabei sind vor allem forschungsbezogene Repositorien wie Zenodo von Interesse, die gute Voraussetzungen für die langfristige Verfügbarkeit auf geschützten Servern bieten. Forschungsgetriebene Ansätze wie von GESIS<ref n="6" target="ftn5"/> mit Binder (Bleier und Erdogan 2020) sowie Forschungsumgebungen mit Nutzendenverwaltung wie das DHVLab<ref n="7" target="ftn6"/> und DH2go<ref n="8" target="ftn7"/> (Heckelen et al. 2022), die die Ausführung von Jupyter-Notebooks erlauben, ermöglichen ggf. auch den Umgang mit spezifischeren Daten, sind aber ggf. auf Nutzende aus bestimmten Fachbereichen oder Institutionen beschränkt.
+            </p>
+            <p>Ein entsprechender Ansatz für die breite Forschungscommunity wäre ein großer Gewinn bezüglich der Verfügbarmachung, Nachnutzung und Dokumentation von Forschungsmethoden und -ergebnissen.</p>
         </body>
         <back>
+<div type="notes">
+<note xml:id="ftn0" rend="footnote text" n="1">Vgl. die Wellen der Sprachen Fortran, Prolog, Perl und Python in der Korpusstudie von Burghardt et al. (2022). </note>
+<note xml:id="ftn1" rend="footnote text" n="2">Jupyter-Notebooks, https://jupyter.org/ (zugegriffen: 15. Dezember 2022).</note>
+<note xml:id="ftn2" rend="footnote text" n="3">Im Projekt SDC4Lit (Science Data Center for Literature, https://www.sdc4lit.de/, zugegriffen: 15. Dezember 2022) werden u.a. literarische Blogs zur Untersuchung zur Verfügung gestellt. Dabei kommen z.B. Tools zu Linkextraktion und Graphaufbau zum Einsatz, die über Jupyter-Notebooks bereitgestellt werden können.</note>
+<note xml:id="ftn3" rend="footnote text" n="4">https://colab.research.google.com/ (zugegriffen: 15. Dezember 2022).</note>
+<note xml:id="ftn4" rend="footnote text" n="5">https://mybinder.org/ (zugegriffen: 15. Dezember 2022).</note>
+<note xml:id="ftn5" rend="footnote text" n="6">https://notebooks.gesis.org/binder/ (zugegriffen: 15. Dezember 2022).</note>
+<note xml:id="ftn6" rend="footnote text" n="7">https://dhvlab.gwi.uni-muenchen.de/ (zugegriffen: 15. Dezember 2022).</note>
+<note xml:id="ftn7" rend="footnote text" n="8">https://dh2go.ilw.uni-stuttgart.de/ (zugegriffen: 15. Dezember 2022).</note></div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Addlesee, Angus</hi>. 2019. “Using OntoRefine to Transform Tabular Data into Linked Data”, 
-                        <ref target="https://medium.com/wallscope/using-ontorefine-to-transform-tabular-data-into-linked-data-7277ec8c2c0f">https://medium.com/wallscope/using-ontorefine-to-transform-tabular-data-into-linked-data-7277ec8c2c0f</ref> (zugegriffen: 28.07.2022).
+                    <bibl>
+                        <hi rend="bold">Bleier, Arnim und Kenan Erdogan.</hi> 2020. 
+                        <hi rend="italic">“A Persistent BinderHub: Democratizing Access to Computational Resources in the Social Sciences."</hi>
+                        <hi rend="italic">JupyterCon2020 Online Conference</hi>.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Andrews, Tara</hi>. 2021-2026. “Re-Evaluating the Eleventh Century with Linked Events and Entities”. ERC-Projekt an der Universität Wien.
+                    <bibl>
+                        <hi rend="bold">Burghardt, Manuel, Jan Luhmann und Andreas Niekler.</hi> 2022. 
+                        <hi rend="italic">“Tools as Epistemologies in DH? A Corpus-Based Exploration.“</hi> In 
+                        <hi rend="italic">Digital Humanities 2022. Conference Abstracts,</hi> 144-146. Tokyo, Japan.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Borek, Luise, Katharina Zeppezauer-Wachauer und Nora Ketschik</hi>. 2022. “Eindeutig Uneindeutig. Zur Modellierung von Unschärfe in der Mediävistik”, In Mittelalter. Interdisziplinäre Forschung und Rezeptionsgeschichte. 
-                        <ref target="https://mittelalter.hypotheses.org/27658">https://mittelalter.hypotheses.org/27658</ref> (zugegriffen: 28.07.2022).
-                    </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Burrows, Toby, Antoine Brix, Doug Emery, Arthur Mitchell Fraas, Eero Hyvönen, Esko Ikkala, Mikko Koho, David Lewis, Synnøve Myking, Kevin Page, Lynn Ransom, Emma Cawlfield Thomson, Jouni Tuominen, Hanno Wijsman und Pip Willcox</hi>. 2020. “Linked Open Data vocabularies and identifiers for medieval studies.” In Proceedings of the Digital Humanities in the Nordic Countries 5th Conference (DHN). 2612: 211-218.
-                    </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">CoReMA – Cooking Recipes of the Middle Ages</hi>, 
-                        <ref target="https://gams.uni-graz.at/context:corema">https://gams.uni-graz.at/context:corema</ref> (GAMS. 562.10).
-                    </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">FactGrid – a database for historians</hi>: 
-                        <ref target="https://blog.factgrid.de/archives/1143">https://blog.factgrid.de/archives/1143</ref> (zugegriffen: 27.07.2022).
-                    </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">FAIR Principles</hi>: 
-                        <ref target="https://www.go-fair.org/fair-principles/">https://www.go-fair.org/fair-principles/</ref> (zugegriffen: 28.07.2020).
-                    </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Hitzler, Pascal</hi>. 2021. “A Review of the Semantic Web Field.” In Communications of the ACM. 64 (2): 76-83. 10.1145/3397512. 
-                        <ref target="https://cacm.acm.org/magazines/2021/2/250085-a-review-of-the-semantic-web-field/fulltext">https://cacm.acm.org/magazines/2021/2/250085-a-review-of-the-semantic-web-field/fulltext</ref> (zugegriffen: 28-07.2022). 
-                    </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">KONDE – Kompetenznetzwerk Digitale Editionen</hi>: 
-                        <ref target="http://www.digitale-edition.at/">http://www.digitale-edition.at/</ref> (zugegriffen: 21.07.2022).
-                    </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Kuczera, Andreas, Thorsten Wübbena, Thomas Kollatz (Hg.)</hi>. 2019. “Die Modellierung des Zweifels – Schlüsselideen und -konzepte zur graphbasierten Modellierung von Unsicherheiten.” Wolfenbüttel. (Sonderband der Zeitschrift für digitale Geisteswissenschaften 4) DOI: 10.17175/sb004.
-                    </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">MHDBDB – Mittelhochdeutsche Begriffsdatenbank</hi>: 
-                        <ref target="http://mhdbdb.sbg.ac.at">http://mhdbdb.sbg.ac.at</ref> (zugegriffen: 21.07.2022).
-                    </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Mittelalterblog</hi>: 
-                        <ref target="https://mittelalter.hypotheses.org/">https://mittelalter.hypotheses.org/</ref> (zugegriffen: 21.07.2022).
-                    </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Netzwerk Offenes Mittelalter</hi> (2021-2024). DFG Netzwerk.
-                    </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">OxGarage</hi> Conversion: 
-                        <ref target="https://oxgarage.tei-c.org/">https://oxgarage.tei-c.org/</ref>
-                    </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Wettlaufer, Jörg</hi>. 2018. “Der nächste Schritt? Semantic Web und digitale Editionen.” In Digitale Metamorphose: Digital Humanities und Editionswissenschaft (Sonderband der Zeitschrift für digitale Geisteswissenschaften 2) DOI: 10.17175/sb002_007.
-                    </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Wikidata</hi>: 
-                        <ref target="https://www.wikidata.org">https://www.wikidata.org</ref> (zugegriffen: 28.07.2022).
-                    </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">XTriples</hi>: 
-                        <ref target="https://xtriples.lod.academy/index.html">https://xtriples.lod.academy/index.html</ref> (28.07.2022).
+                    <bibl>
+                        <hi rend="bold">Heckelen, Malte, Claus-Michael Schlesinger und Fabienne Burkhard.</hi> 2022. 
+                        <hi rend="italic">“Dh2go - Lehr- Und Lernumgebung Für Die Digital Humanities.“</hi> In 
+                        <hi rend="italic">DHd2022: Kulturen des digitalen Gedächtnisses. Konferenzabstracts.</hi> Zenodo. https://doi.org/10.5281/zenodo.6328013
                     </bibl>
                 </listBibl>
             </div>

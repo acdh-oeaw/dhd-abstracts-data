@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="poster-PONZE" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="poster-EDERE" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Entitäten als Topic Labels: Verbesserung der Interpretierbarkeit und Evaluierbarkeit von Themen durch Kombinieren von Entity Linking und Topic Modeling</title>
+<title>Tool zur Normalisierung und Historisierung</title>
 <author>
 <persName>
-<surname>Lauscher</surname>
-<forename>Anne</forename>
+<surname>Eder</surname>
+<forename>Elisabeth</forename>
 </persName>
-<affiliation>Universität Mannheim, Deutschland</affiliation>
-<email>anne@informatik.uni-mannheim.de</email>
+<affiliation>Ludwig Maximilians Universität München, Deutschland</affiliation>
+<email>e_eder@gmx.net</email>
 </author>
 <author>
 <persName>
-<surname>Nanni</surname>
-<forename>Federico</forename>
+<surname>Hadersbeck</surname>
+<forename>Maximilian</forename>
 </persName>
-<affiliation>Universität Mannheim, Deutschland</affiliation>
-<email>federico@informatik.uni-mannheim.de</email>
-</author>
-<author>
-<persName>
-<surname>Ponzetto</surname>
-<forename>Simone Paolo</forename>
-</persName>
-<affiliation>Universität Mannheim, Deutschland</affiliation>
-<email>simone@informatik.uni-mannheim.de</email>
+<affiliation>Ludwig Maximilians Universität München, Deutschland</affiliation>
+<email>maximilian@cis.uni-muenchen.de</email>
 </author>
 </titleStmt>
 <editionStmt>
@@ -63,129 +55,67 @@
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Themenmodelle</term>
-<term>Interpretation</term>
-<term>Evaluation</term>
-<term>Entity Linking</term>
+<term>Normalisierung</term>
+<term>Historisierung</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Inhaltsanalyse</term>
-<term>Kontextsetzung</term>
+<term>Programmierung</term>
+<term>Übersetzung</term>
+<term>Sprache</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<p>Im letzten Jahrzehnt haben Wissenschaftler aus dem Bereich der Geisteswissenschaften zunehmend mit verschiedenen Text Mining-Techniken zur Exploration großer Textkorpora experimentiert. Angefangen bei Kookkurrenz-basierten Verfahren (Buzydlowski, White und Lin 2002) über automatische Keyphrase Extraktion (Hasan, Saidul und Ng 2014) ziehen sich die angewandten Techniken bis hin zu Sequence Labeling Algorithmen, wie zum Beispiel im Falle von Named-Entity Recognition (Nadeau und Sekine 2007). Aus diesen vielfältigen Techniken bedienten sich die Forscher in den letzten Jahren vor allem des Latenten Dirichlet Allokation (LDA) Topic Model Algorithmus (Blei, Ng und Jordan 2003) (Meeks und Weingart 2012). Oftmals betonten Wissenschaftler dessen Potential für Serendipität (Alexander et al. 2014) und für Analysen im Bereich des Distant Reading (Leonard 2014; Graham, Milligan und Weingart 2016), also Studien, die über reine Textexploration hinausgehen.</p>
-<p>In den letzten Jahren wurde LDA in den Digitalen Geisteswissenschaften intensiv angewandt, obwohl bekannt ist, dass die damit erzielten Ergebnisse schwierig zu interpretieren (Chang et al. 2009; Newman et al. 2010) und dass die Möglichkeiten, deren Qualität zu evaluieren, stark begrenzt sind (Wallach et al. 2009). Die direkte Konsequenz daraus ist, dass Wissenschaftler im Bereich der Geisteswissenschaften momentan in einer Situation feststecken, in der sie Topic Models weiterhin anwenden, da sie Methoden dieser Art benötigen, aber auch gleichzeitig nur wenig neues geisteswissenschaftliches Wissen ableiten können, weil die erzielten Ergebnisse bereits intrinsisch begrenzt sind (Nanni, Kümper und Ponzetto 2016). Diese Situation ist vor allem darauf zurückzuführen, dass große Korpora bestehend aus Primärquellen nun zum ersten Mal digital verfügbar sind.</p>
-<p>Von dieser Grundsituation ausgehend wollen wir dieses komplexe Problem bewältigen, indem wir zwei spezifische und integrierte Lösungen zur Verfügung stellen. Als erstes bieten wir eine neue Methode zur Exploration von Textkorpora, die Topics erzeugt, welche leichter zu interpretieren sind als traditionelle LDA Topics. Dies erreichen wir durch die Kombination zweier Techniken, nämlich Entity Linking und Labeled LDA. Unsere Methode identifiziert in einer Ontologie eine Serie beschreibender Labels für jedes Dokument in einem Korpus. Daraufhin wird für jedes der identifizierten Labels ein Topic erzeugt. Durch die daraus resultierende direkte Beziehung zwischen Topic und Label wird die Interpretation des Topics stark vereinfacht und durch die Ontologie im Hintergrund wird die Ambiguität der Labels vermindert. Da unsere Topics mit einer limitierten Anzahl an klar umrissenen Labels beschrieben werden, fördern sie die Interpretierbarkeit und die Anwendung der Ergebnisse als quantitativ grundierte Argumente in der geisteswissenschaftlichen Forschung.</p>
-<p>Da es äußerst wichtig ist, die Qualität der Ergebnisse zu bestimmen, stellen wir zweitens eine dreischrittige Evaluationsplattform zur Verfügung, die die Ergebnisse unseres Ansatzes als Input verwendet und eine umfangreiche quantitative Analyse ermöglicht. Dies gestattet den nutzenden Wissenschaftlern aus den Digitalen Geisteswissenschaften, einen Überblick über die Ergebnisse der einzelnen Schritte der Pipeline zu erhalten und stellt Forschern im Natural Language Processing (NLP) eine Serie von Baselines zur Verfügung, die sie zur Verbesserung jedes Schrittes der vorgestellten Methodik benutzen können.</p>
-<p>Wir illustrieren das Potenzial dieses Ansatzes durch dessen Anwendung zur Bestimmung der relevantesten Topics in drei verschiedenen Datensätzen. Der erste Datensatz besteht aus der gesamten Transkription der Reden aus dem fünften Mandat des Europäischen Parlaments (1999-2004). Dieses Korpus (van Aggelen et al. 2016) wurde für Forschung im Bereich der Computational Political Science bereits intensiv eingesetzt (Hoyland und Godbout 2008; Proksch und Slapin 2010; Høyland et al. 2014) und hat enormes Potential für zukünftige politikgeschichtliche Forschungen. Das zweite Korpus ist der sogenannte Enron-Datensatz. Es handelt sich dabei um eine große Datenbank mit über 600.000 E-Mails, die von 158 Mitarbeiten der Enron Corporation erstellt und die später durch die Federal Energy Regulatory Commission während der Untersuchungen nach dem Zusammenbruch des Unternehmens akquiriert wurden. In den letzten zehn Jahren hat die NLP-Community diesen Datensatz unter Anwendung von netzwerk- und inhaltsbasierten Analysen intensiv untersucht. Unser Ziel ist es hierbei, die Qualität unseres Ansatzes anhand eines hochtechnischen und komplexen Datensatzes einer spezifischen Art (E-Mail), die in zukünftigen historischen Untersuchungen immer wichtiger werden wird, zu beleuchten. In Verbindung damit wurde als drittes Korpus der Hillary Clinton E-Mail-Datensatz ausgewählt. Er repräsentiert eine Kombination der beiden vorherigen Datensätze, da es sich um kurze Korrespondenzen via E-Mail handelt, die sich jedoch mehrheitlich auf politische Themen fokussieren.</p>
-<p>Vor über einem Jahrzehnt hat Dan Cohen (2006) bereits vorhergesehen, dass künftige Politikhistoriker in Anbetracht der Fülle an Quellen, die die öffentliche Verwaltung uns in den kommenden Jahrzehnten hinterlassen wird, auf ein Problem stoßen werden. Unsere Studie möchte ein allererster experimenteller Ansatz zu sein, diese neuen Korpora von Primärquellen zu bewältigen und Historiker im digitalen Zeitalter mit einer feinkörnigeren Lösung zur Textexploration als mittels traditionellen LDAs auszustatten.</p>
+<p>Das in diesem Poster vorgestellte, unter ‹http://goethefind.cis.uni-muenchen.de/?translator› verfügbare Translationstool überführt historisches Deutsch aus einem ungefähren Zeitraum von 1750 bis 1850 in gegenwartssprachliches Deutsch und umgekehrt modernen deutschen Text in seine historische Version.</p>
+<p>Für eine Normalisierung oder Modernisierung von historischen Wörtern wurden in den letzten Jahren unterschiedliche Herangehensweisen präsentiert. Neben einer Modernisierung über Lexikon-Lookup, Transkriptionsregeln, Levenshtein-Distanz oder phonologische Ähnlichkeit fanden auch Methoden der statistischen maschinellen Übersetzung Anwendung (Scherrer / Erjavec 2015: 2f.). Um orthographischen Differenzen bei einer Translation einzelner Wörter aus eng verwandten Sprachen gerecht zu werden, werden dabei im Gegensatz zur standardmäßigen phrasenbasierten statistischen maschinellen Übersetzung die Phrasen nicht aus Wörtern, sondern aus Buchstabensequenzen gebildet und anstelle der Wörter der Ausgangs- und der Zielsprache die Buchstaben der Wortpaare aligniert [Pettersson et al., 2014]. Buchstabenbasierte statistische maschinelle Übersetzung zur Normalisierung historischer Wörter wurde vielfach mit dem Tool ‹Moses›
+                <ref n="1" target="poster-EDEREftn1" type="note">1</ref> (Koehn et al. 2007) durchgeführt, wie beispielsweise bei (Pettersson et al. 2014), (Nakov / Tiedemann 2012) oder (Scherrer / Erjavec 2015). Neben einem Gebrauch zur Normalisierung wird dieses hier auch für die umgekehrte Überführungsrichtung eingesetzt.
+            </p>
+<p>In einem weiteren Ansatz zur Modernisierung und Historisierung bedient sich das Translationstool zudem neuronaler maschineller Übersetzung. Das dabei häufig verwendete Encoder-Decoder-Modell übertragen Faruqui, Tsvetkov, Neubig und Dyer (2016) auf die buchstabenbasierte Generierung von Wortflexion. Aufgrund der ähnlichen Grundlage kommt deren Tool ‹Morph-Trans›
+                <ref n="2" target="poster-EDEREftn2" type="note">2</ref>, das sich aus LSTMs, einer speziellen Form von rekurrenten neuronalen Netzen, zusammensetzt, zum Einsatz. Nach Wissen der Autoren ist dies der erste Versuch, ein neuronales Encoder-Decoder-Modell für eine Historisierung und Normalisierung deutscher Texte zu gebrauchen.
+            </p>
+<p>Als Trainings- und Entwicklungsdatensätze für die beiden Methoden dienten Wörter von 200 literarischen Texten aus einem Zeitraum von 1749 bis 1850. Diese Wörter wurden mithilfe des ‹Cascaded Analysis Broker›
+                <ref n="3" target="poster-EDEREftn3" type="note">3</ref> vom Deutschen Textarchiv normalisiert, um im Anschluss daran auf die derzeit gültige ‹s›-Schreibung aktualisiert zu werden. Aus den historischen und den modernen Schreibweisen der Wörter wurden das Grundkorpus sowie ein Lookup-Lexikon gebildet. Im Translationstool werden die beiden Ansätze zusätzlich auch in Kombination mit diesem Lexikon eingesetzt. Zu Vergleichszwecken sind diese vier unterschiedlichen Ausgaben des Weiteren um ein auf einfachen Überführungsregeln und regulären Ausdrücken basierendes Verfahren ergänzt. Die unterschiedlichen Herangehensweisen können online anhand eigener Beispiele gegenübergestellt werden.
+            </p>
+<p>Tests auf exemplarischen Datensätzen zeigten, dass buchstabenbasierte statistische maschinelle Übersetzung nicht nur für eine Modernisierung, sondern im Deutschen ebenso für eine Historisierung dienlich ist und auch das neuronale Encoder-Decoder-Modell im Hinblick auf beide Überführungsrichtungen nutzbringend eingesetzt werden kann, wobei das Normalisieren im Vergleich zum Historisieren, wie zu erwarten war, durchweg bessere Resultate erzielte, was wohl unter anderem der Fülle an orthographischen Varianten in historischen Texten geschuldet ist.</p>
+<p>Im geisteswissenschaftlichen Kontext ist eine Modernisierung historischer Wörter oftmals für eine erfolgreiche Anwendung sprachtechnologischer Werkzeuge, wie zum Beispiel Part-of-Speech-Tagger, auf älteren Texten von Nöten, während eine Historisierung beispielsweise bei der Suche auf historischem Text zu einer erheblichen Erleichterung beitragen könnte, indem der moderne Suchterm historisiert wird, da von Anwendern und Anwenderinnen nicht erwartet werden kann, dass sie um die alten Schreibweisen der Wörter wissen. Eine Verwendung von buchstabenbasierter statistischer maschineller Übersetzung und buchstabenbasierten neuronalen Encoder-Decoder-Modellen zur Normalisierung und Historisierung bezüglich solcher Aufgaben und ähnlichen Problemstellungen im Bereich der Geisteswissenschaften ist vorstellbar.</p>
 </body>
-<back>
+<back><div type="Notes"><note n="1" rend="footnote text" xml:id="poster-EDEREftn1"> Online verfügbar unter: http://www.statmt.org/moses/</note><note n="2" rend="footnote text" xml:id="poster-EDEREftn2"> Online verfügbar unter: https://github.com/mfaruqui/morph-trans</note><note n="3" rend="footnote text" xml:id="poster-EDEREftn3"> Online verfügbar unter: http://www.deutschestextarchiv.de/demo/cab/</note></div>
 <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-<hi rend="bold">Alexander, Eric / Kohlmann, Joe / Valenza, Robin / Witmore, Michael / Gleicher, Michael</hi> (2014):
-                        „Serendip: Topic model-driven visual exploration of text corpora“, 
-                        in:
-                        <hi rend="italic">IEEE VAST</hi> 173–182.
-                    </bibl>
-<bibl>
-<hi rend="bold">Blei, David M / Ng, Andrew Y. / Jordan, Michael I.</hi> (2003):
-                        „Latent dirichlet allocation“,
-                        in:
-                        <hi rend="italic">Journal of Machine Learning Research</hi> 3: 993–1022.
-                    </bibl>
-<bibl>
-<!--  ort -->
-<hi rend="bold">Buzydlowski, Jan W. / White, Howard D / Lin, Xia</hi> (2002):
-                        „Term co-occurrence analysis as an interface for digital libraries“,
-                        in:
-                        <hi rend="italic">Visual interfaces to digital libraries</hi>.
-                        Springer 133–144.
-                    </bibl>
-<bibl>
-<hi rend="bold">Chang, Jonathan / Gerrish, Sean / Wang, Chong / Boyd-Graber, Jordan L. / Blei, David M.</hi> (2009): 
-                        „Reading tea leaves: How humans interpret topic models“,
-                        in:  
-                        <hi rend="italic">NIPS</hi> 288–296.
-                    </bibl>
-<bibl>
-<hi rend="bold">Cohen, Dan</hi> (2006):
-                        <hi rend="italic">When machines are the audience</hi>.
-                    </bibl>
-<bibl>
-<hi rend="bold">Graham, Shawn / Milligan, Ian / Scott Weingart</hi> (2016):
-                        <hi rend="italic">Exploring big historical data: The historian’s macroscope</hi>. 
-                        Imperial College Press.</bibl>
-<bibl>
-<hi rend="bold">Hasan, Kazi Saidul / Ng, Vincent</hi> (2014):
-                        „Automatic keyphrase extraction: A survey of the state of the art“,
-                        in:
-                        <hi rend="italic">Proceedings of ACL-2014</hi> 1262–1273.
-                    </bibl>
-<bibl>
-<hi rend="bold">Høyland, Bjørn / Godbout, Jean-François</hi> (2008):
-                        <hi rend="italic">Lost in translation? Predicting party group affiliation from European parliament debates</hi>.
-                        Unveröff. Manuskript.
-                    </bibl>
-<bibl>
-<hi rend="bold">Høyland, Bjørn / Godbout, Jean-François / Lapponi, Emanuele / Velldal, Erik</hi> (2014):
-                        „Predicting party affiliations from European parliament debates“,
-                        in:
-                        <hi rend="italic">ACL 2014 Workshop on Language Technologies and Computational Social Science</hi> 56–60.
-                    </bibl>
-<bibl>
-<hi rend="bold">Leonard, Peter</hi> (2014):
-                        „Mining large datasets for the humanities“
-                        in:
-                        <hi rend="italic">IFLA WLIC</hi> 16–22.
-                    </bibl>
-<bibl>
-<hi rend="bold">Meeks, Elijah / Weingart, Scott B.</hi> (2012):
-                        „The digital humanities contribution to topic modeling“,
-                        in:
-                        <hi rend="italic">Journal of Digital Humanities</hi> 2 (1): 1–6.
-                    </bibl>
-<bibl>
-<hi rend="bold">Nadeau, David / Sekine, Satoshi</hi> (2007):
-                        „A survey of named entity recognition and classification“,
-                        in
-                        <hi rend="italic">Lingvisticae Investigationes</hi> 30 (1): 3–26.
-                    </bibl>
-<bibl>
-<hi rend="bold">Nanni, Federico / Kümper, Hiram / Ponzetto, Simone Paolo</hi> (2016):
-                        „Semi-supervised textual analysis and historical research helping each other: Some thoughts and observations“
-                        in:
-                        <hi rend="italic">International Journal of Humanities and Arts Computing</hi> 10 (1): 63–77.
-                    </bibl>
-<bibl>
-<hi rend="bold">Newman, David / Lau, Jey Han / Grieser, Karl / Baldwin, Timothy</hi> (2010):
-                        „Automatic evaluation of topic coherence“,
-                        in:
-                        <hi rend="italic">HLT-NAACL</hi> 100–108.
-                    </bibl>
-<bibl>
-<hi rend="bold">Proksch, Sven-Oliver / Slapin, Jonathan B.</hi> (2010):
-                        „Position taking in European parliament speeches“,
-                        in:
-                        <hi rend="italic">British Journal of Political Science</hi> 40 (3): 587–611.
-                    </bibl>
-<bibl>
-<hi rend="bold">van Aggelen, Astrid / Hollink, Laura / Kemman, Max / Kleppe, Martijn / Beunders, Henri</hi> (2016):
-                        „The debates of the European parliament as linked open data“,
-                        in:
-                        <hi rend="italic">Semantic Web</hi> (Preprint) 1–10.
-                    </bibl>
-<bibl>
-<hi rend="bold">Wallach, Hanna M. / Murray, Iain / Salakhutdinov, Ruslan / Mimno, David</hi> (2009):
-                        „Evaluation methods for topic models“,
+<hi rend="bold">Faruqui, Manaal / Tsvetkov, Yulia / Neubig, Graham / Dyer, Chris</hi> (2016):
+                        „Morphological Inflection Generation Using Character Sequence to Sequence Learning“,
                         in: 
-                        <hi rend="italic">ICML</hi> 1105–1112.
+                        <hi rend="italic">Proceedings of NAACL</hi>
+<ref target="http://arxiv.org/pdf/1512.06110.pdf">http://arxiv.org/pdf/1512.06110.pdf</ref> [letzter Zugriff 1. August 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold">Koehn, Philipp / Hoang, Hieu / Birch, Alexandra / Callison-Burch, Chris / Federico, Marcello / Bertoldi, Nicola / Cowan, Brooke / Shen, Wade / Moran, Christine / Zens, Richard / Dyer, Chris / Bojar, Ondrej / Constantin, Alexandra / Herbst, Evan</hi> (2007):
+                        „Moses: Open Source Toolkit for Statistical Machine Translation“,
+                        in: 
+                        <hi rend="italic">Annual Meeting of the Association for Computational Linguistics (ACL)</hi>, demonstration session, Prague, Czech Republic.
+                    </bibl>
+<bibl>
+<hi rend="bold">Nakov, Preslav / Tiedemann, Jörg</hi> (2012):
+                        „Combining Word Level and Character-Level Models for Machine Translation Between Closely Related Languages“,
+                        in: 
+                        <hi rend="italic">Proceedings of ACL-2012</hi>
+</bibl>
+<bibl>
+<hi rend="bold">Pettersson, Eva / Megyesi, Beáta / Nivre, Joakim</hi> (2014):
+                        „A Multilingual Evaluation of Three Spelling Normalisation Methods for Historical Text“,
+                        in: 
+                        <hi rend="italic">Proceedings of the 8th Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities (LaTeCH) @ EACL 2014</hi> 32–41.
+                    </bibl>
+<bibl>
+<hi rend="bold">Scherrer, Yves / Erjavec, Tomaž</hi> (2015):
+                        „Modernising historical Slovene words“,
+                        in: 
+                        <hi rend="italic">Natural Language Engineering</hi>
+<ref target="http://archiveouverte.unige.ch/unige:82305">http://archiveouverte.unige.ch/unige:82305</ref> [letzter Zugriff 1. August 2016]
                     </bibl>
 </listBibl>
 </div>

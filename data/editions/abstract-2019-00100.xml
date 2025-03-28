@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="248_final-TOSCANO_Roberta_Netzwerkanalyse_für_Historiker__Probleme_und" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="226_final-ABRAMI_Giuseppe_VAnnotatoR__Ein_Werkzeug_zur_Annotation_mult" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Netzwerkanalyse für Historiker. Probleme und Lösungen am Beispiel eines Promotionsvorhabens</title>
+                <title type="full">
+                    <title type="main">VAnnotatoR: Ein Werkzeug zur Annotation multimodaler Netzwerke in dreidimensionalen virtuellen Umgebungen</title>
+                    <title type="sub"/>
+                </title>
                 <author>
                     <persName>
-                        <surname>Toscano</surname>
-                        <forename>Roberta</forename>
+                        <surname>Abrami</surname>
+                        <forename>Giuseppe</forename>
                     </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>toscano-r@outlook.de</email>
+                    <affiliation>Goethe Universität Frankfurt, Deutschland</affiliation>
+                    <email>abrami@em.uni-frankfurt.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Spiekermann</surname>
+                        <forename>Christian</forename>
+                    </persName>
+                    <affiliation>Goethe Universität Frankfurt, Deutschland</affiliation>
+                    <email>s2717197@stud.uni-frankfurt.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mehler</surname>
+                        <forename>Alexander</forename>
+                    </persName>
+                    <affiliation>Goethe Universität Frankfurt, Deutschland</affiliation>
+                    <email>mehler@em.uni-frankfurt.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2019-01-13T14:24:00Z</date>
+                    <date>2019-01-13T20:48:54.062601996</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -28,7 +47,7 @@
                 </t:address>
             </publicationStmt>
             <sourceDesc>
-                <p>Converted from a Word document</p>
+                <p>Converted from an OASIS Open Document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -47,108 +66,112 @@
                     <term>Posterpräsentation</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>historische Netzwerkanalyse</term>
-                    <term>Gephi</term>
-                    <term>Entscheidungsprozess</term>
+                    <term>Virtual Reality</term>
+                    <term>Augmented Reality</term>
+                    <term>Annotation</term>
+                    <term>Virtuelle Umgebung</term>
+                    <term>Multimodale Hypertexte</term>
+                    <term>Multimodalität</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Beziehungsanalyse</term>
+                    <term>Annotieren</term>
                     <term>Netzwerkanalyse</term>
-                    <term>Einführung</term>
                     <term>Visualisierung</term>
-                    <term>Forschungsprozess</term>
-                    <term>Visualisierung</term>
+                    <term>Multimedia</term>
+                    <term>Text</term>
+                    <term>Werkzeuge</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einleitung </head>
-                <p>
-                    <hi style="font-size:12pt">Methoden der Digital Humanities erfreuen sich zunehmender Akzeptanz in den Geisteswissenschaften - auch in traditionellen Disziplinen wie den Geschichtswissenschaften. Die Werkzeuge der Digital Humanities können hilfreich sein, um die eigenen Daten zu strukturieren, unerwartete Zusammenhänge zu erkennen und Erkenntnisse hervorzubringen, die man ohne den Einsatz von digitalen Methoden nicht erlangt hätte. Vor allem im Bereich der historischen Netzwerkanalyse gibt es seit einigen Jahren neue interessante Entwicklungen. Während man sich anfangs noch an Werkzeugen aus der Sozialwissenschaft bediente</hi>
-                    <hi rend="Fußnotenzeichen2" xml:space="preserve"> </hi>
-                    <hi style="font-size:12pt">(Jannidis / Kohle / Rehbein 2017: 14), gibt es mittlerweile Software, die nicht nur statistische Ergebnisse ausgibt, sondern auch für historische Fragestellungen geeignet ist. Die Vorteile liegen auf der Hand: einerseits kann man komplexe Beziehungen, deren Reichweite und Auswirkungen ordnen und darstellen; andererseits durch Visualisierungen die Ergebnisse einer breiten Öffentlichkeit zugänglich machen (Düring / Kerschbaumer 2016: 31). Wenn man anfangs mit dem Gedanken spielt, ob man für die Bearbeitung einer geisteswissenschaftlichen Forschungsarbeit überhaupt digitale Hilfsmittel anwenden sollte, wird man mit verschiedenen Fragen konfrontiert:</hi>
+            <div type="div1" rend="DH-Heading">
+                <head>Abstract</head>
+                <p>Die Verarbeitung, Erzeugung und Visualisierung von multimodalen Netzwerken, in denen etwa symbolische und ikonographische Inhalte miteinander vernetzt werden, um sie multimodal rezipierbar zu machen, bilden neuartige Herausforderungen für die digitalen Geisteswissenschaften, da sie weit über textbasierte Medien hinausreichen. Digitalisate von Schrifttexten, Bildern und Illustrationen können in diesem Zusammenhang als Beispiele für knotenbildende Informationsobjekte ebenso genannt werden wie dreidimensionale Objektrepräsentationen. Die Anordnung dieser Objekte zu 
+                    <hi rend="italic">semiotischen Netzwerken</hi> hat den Zweck, deren Zusammenhangsstruktur zu visualisieren und rezipierbar zu machen. Der Begriff des Netzwerks erlaubt es dabei, Mikrostrukturen auf der Ebene von Knotenpaaren oder -triaden ebenso zu unterscheiden, wie Mesostrukturen von so genannten Netzwerkmotiven oder gar Makrostrukturen, welche die Gesamtorganisation des jeweiligen Informationsraums thematisieren (etwa im Sinne einer Zentrums-Peripherie-Struktur). Multimodale Netzwerke waren bereits Gegenstand einer Reihe von Projekten (siehe z.B. Li et al. 2007; Kane, Alavi 2008; Nasser, Gleich 2017). Allerdings befindet sich darunter kein Projekt, das eine generische Plattform zur Visualisierung und Annotation solcher Netzwerke im Rahmen virtueller Umgebungen zur Verfügung stellt. Um diese Lücke zu schließen, haben wir 
+                    <hi rend="bold">VAnnotatoR</hi> (Spiekermann, Abrami, Mehler 2018)
+                    <hi rend="bold"> </hi>entwickelt. 
+                    <hi rend="bold">VAnnotatoR</hi> ist ein Framework zur Erstellung und Visualisierung multimodaler Netzwerke in virtuellen Umgebungen. Das System erlaubt die Bearbeitung und Visualisierung dieser Netzwerke als 
+                    <hi rend="italic">multimodale Hypertexte</hi> (Mehler et al. 2018) in der 
+                    <hi rend="italic">virtuellen Realität</hi> (VR) und der 
+                    <hi rend="italic">augmentierten Realität</hi> (AR). 
+                    <hi rend="bold">VAnnotatoR</hi> wurde mithilfe von Unity3D<hi rend="superscript">1</hi> für VR implementiert und unterstützt gängige Desktop-VR-Brillen<hi rend="superscript">2</hi> (HTC Vive und Oculus Rift). Die AR-Implementierung von 
+                    <hi rend="bold">VAnnotatoR</hi> für Smartphones basiert wiederum auf AR-Core<hi rend="superscript">3</hi>. Mittels 
+                    <hi rend="bold">VAnnotatoR</hi> sind Inhalte visualisierbar, suchbar, relationierbar, attribuierbar und weit darüber hinaus annotierbar. Die derzeitige Implementierung dieses Systems erlaubt die Modellierung von Netzwerken auf der Ebene so genannter Hypergraphen (Berge 1989) und hierarchischer Graphen, in denen Knoten vollständige Graphen enthalten können. Abbildung 1 illustriert ein solches Netzwerk unter anderem durch Rekurs auf Texte, Bilder, Photographien, dreidimenionale Modelle und ein begehbares Haus. Um eine natürliche Interaktion mit den Komponenten solcher Graphen zu ermöglichen, beinhaltet 
+                    <hi rend="bold">VAnnotatoR</hi> eine Gesten- und Bewegungssteuerung mit dazugehörigen VR-Controllern. Da klassische VR-Eingabegeräte die Gestaltungsfreiheit der Gestensteuerung limitieren, beinhaltet 
+                    <hi rend="bold">VAnnotatoR </hi>darüber hinaus eine Gestenerkennung unter Verwendung von Leap-Motion<hi rend="superscript">4</hi>. Gleichzeitig wurde eine Gestenerkennung basierend auf Datenhandschuhen<hi rend="superscript">5</hi> für den
+                    <hi rend="bold">VAnnotatoR</hi> entwickelt (Kühn 2018). Da komplexe Annotationsprozesse i.d.R. von mehreren Annotatoren durchgeführt werden müssen, ermöglicht 
+                    <hi rend="bold">VAnnotatoR</hi> zudem die simultane und kollaborative Bearbeitung von multimodalen Netzwerken. Die Annotationen werden in UIMA-Strukturen, unter Verwendung des 
+                    <hi rend="italic">UIMA-Database Inferface</hi> (Abrami, Mehler 2018), abgespeichert und nutzbar gemacht.
+                </p>
+                <p>Mit 
+                    <hi rend="bold">VAnnotatoR</hi> ist ein Annotationswerkzeug entstanden, welches die Bearbeitung und Visualisierung komplexer Netzwerke gestengesteuert ermöglicht. Der Beitrag demonstriert dies am Beispiel einer 
+                    <hi rend="italic">Public History of the Holocaust</hi>, in welcher, basierend auf dem Konzept der 
+                    <hi rend="italic">Stolperwege</hi> (Mehler et al. 2017), 
+                    <hi rend="bold">VAnnotatoR</hi> dazu genutzt wird, dreidimensionale Modelle nicht mehr existierender bzw. unzugänglicher Gebäude begehbar zu machen und zu dokumentieren. Auf diese Weise entsteht ein begehbarer und erweiterbarer Informationsraum, der insbesondere dazu dient, historische Prozesse zu dokumentieren. 
+                    <hi rend="bold">VAnnotatoR</hi> ist daher als ein Werkzeug zu betrachten, das verschiedene geisteswissenschaftliche Disziplinen verbindet. Inwiefern 
+                    <hi rend="bold">VAnnotatoR</hi> daher als interdisziplinäres Werkzeug der digitalen Geisteswissenschaften aufzufassen ist, soll Diskussionsgegenstand der Präsentation dieses Systems sein.
                 </p>
                 <p>
-                    <hi style="font-size:12pt" xml:space="preserve">Wie und wo fange ich an? Welches Tool ist sinnvoll? Welche Daten habe ich überhaupt und wie möchte ich diese darstellen? Welchen Mehrwert verspreche ich mir von dem Einsatz digitaler Methoden? Muss ich meine Fragstellungen anpassen um ein zufriedenstellendes Ergebnis zu erhalten? Welche Kenntnisse und Fähigkeiten muss ich mir aneignen? Lohnt sich das überhaupt? Der Posterbeitrag soll an diese Fragen anknüpfen. </hi>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Netzwerkanalyse für Historiker</head>
-                <p>
-                    <hi style="font-size:12pt">Die eigene Recherche hat gezeigt, dass das Angebot und die Initiativen (national wie international) von "Social Network Analysis" (kurz SNA) für Historiker auf den ersten Blick enorm zu sein scheint. Allerdings stellt sich bei näherer Betrachtung meistens heraus, dass nur einige der Tools für das eigene Thema geeignet sind. Schließlich variieren bei geschichtlichen Forschungsfragen die gewählten Zugänge sowie die Quellenlage und der Blickwinkel. Dieses Poster soll einerseits die meist verbreiteten Techniken für Historiker in der Netzwerkanalyse vorstellen; andererseits soll an konkreten Schritten der Entscheidungsprozess für ein geeignetes Tool zur Netzwerkanalyse beispielhaft am eigenen Dissertationsvorhaben nachvollzogen werden. Aufkommende Probleme und mögliche Lösungswege sollen beleuchtet werden.</hi>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Anwendung in der Praxis mit „Gephi“</head>
-                <p>
-                    <hi style="font-size:12pt">Mein Forschungsthema befasst sich mit der Darstellung von Palästina in württembergischen Medien des 19. Jahrhunderts. Dafür werte ich politische, religiöse und pädagogische Medien aus. Eine der Hauptfragestellungen ist unter anderem welche Netzwerke gebildet wurden, in denen die Hauptakteure eine gewissen Einfluss übten und dadurch die gegenseitigen Beziehungen beider Länder prägten und förderten. Eine große Rolle spielt die Wissensverbreitung über das damals relativ unbekannte "Heilige Land": wie wurde spezielles Wissen - unter anderem Agrarmethoden, kulturelles und religiöses Leben in Palästina - weitergegeben? Neben den sozialen Beziehungen bestand auch ein reger wirtschaftlicher Austausch zwischen Palästina und Württemberg, der sich unter anderem im Handel äußerte. In diesem Zusammenhang plane ich meine Ergebnisse, die Verbindungen und Verflechtungen, sowie den Transfer zwischen beiden Länder mit der Hilfe von digitalen Tools zu visualisieren. Knotenpunkte wie Personen, Handelsbeziehungen, etc. sollen bei der Analyse im Fokus stehen und die ursprünglich aufgeworfenen Fragen ergänzend bereichern.</hi>
-                </p>
-                <p>
-                    <hi style="font-size:12pt">Diese Forschungsarbeit und Fragestellungen bieten den Rahmen für die nähere Betrachtung der Möglichkeiten der historischen Netzwerkanalyse mit der Open Software "Gephi". Die zahlreichen Tutorials </hi>
-                    <ref target="https://gephi.org/users/">
-                        <hi style="font-size:12pt">(https://gephi.org/users/),</hi>
-                    </ref>
-                    <hi style="font-size:12pt"> die aktive Nutzercommunity </hi>
-                    <ref target="https://gephi.wordpress.com/">
-                        <hi style="font-size:12pt">(https://gephi.wordpress.com/),</hi>
-                    </ref>
-                    <hi style="font-size:12pt"> die intuitive Nutzermaske und die vielfältigen Projekten, die bereits umgesetzt wurden, sind nur einige der Gründe, die für die Anwendung von „Gephi“ sprechen. Diese und andere Entscheidungskriterien, die in diesem Beispiel zur Wahl von „Gephi“ geführt haben, werden im Posterbeitrag veranschaulicht.</hi>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Zweck des Posters</head>
-                <p>
-                    <hi style="font-size:12pt" xml:space="preserve">Der Beitrag soll einen Überblick zu den existierenden Angeboten von Netzwerkanalysen geben sowie Vor-und Nachteile zur Diskussion stellen. Am Beispiel des eigenen Promotionsvorhabens werden Anregungen gegeben, Schritte erläutert und der Entscheidungsprozess begleitet. Das Ziel ist es aus der Perspektive eines Anfängers, Möglichkeiten aufzuzeigen wie man anfängliche Herausforderungen meistern kann. Der Beitrag wendet sich an Ein-und Quereinsteiger und soll durch eine konzeptionelle Gestaltung vermitteln, welches Potenzial und welcher Mehrwert in Netzwerkanalysen steckt. Damit stellt dieses Poster zu gleichen Teilen eine Absichtserklärung und einen Erfahrungsbericht dar. </hi>
+                    <figure>
+                        <graphic url="226_final-45cbda9b8080c7c4b2f93829f5265c65.png"/>
+                    </figure>Abbildung 1: Ein Bild und ein Text wurden aus einem Browser extrahiert (linker Kubus). Beide wurden segmentiert und mit anderen Entitäten relationiert. Das Netzwerk zeigt in diesem Beispiel unter anderem Relationen zwischen einem 3D Modell eines Gebäudes (welches im extrahierten Text thematisiert wird), einer Postion (Karte), einer Videoübertragung aus der realen Welt, einer Personenrepräsentation, einem Audio-Dokument und einem Wikidata-Eintrag. Subnetzwerke können außerdem zu Knoten aggregiert werden (visualisiert als Kubus), welche untereinander wiederum relationiert werden können. Auf diese Weise entstehen virtuelle Netzwerke von annotierten Szenen oder Situationen, die von anderen Personen weiterverarbeitet oder rezipiert werden können. Die Legende zeigt die der jeweiligen Modalität zugewiesene Farbe.
                 </p>
             </div>
         </body>
         <back>
+			<div type="notes">
+				<note xml:id="ftn1" place="foot" n="1">https://unity3d.com/de</note>
+				<note xml:id="ftn2" place="foot" n="2">Getestet mit HTC Vive (https://www.vive.com) und Oculus Rift (https://www.oculus.com/rift)</note>
+				<note xml:id="ftn3" place="foot" n="3">https://developers.google.com/ar/discover</note>
+				<note xml:id="ftn4" place="foot" n="4">https://www.leapmotion.com</note>
+				<note xml:id="ftn5" place="foot" n="5">Hi5 VR Glove (https://hi5vrglove.com)</note>
+			</div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">Bastian M. / Heymann S., Jacomy M. (2009):</hi> 
-                        <hi rend="italic">Gephi: an open source software for exploring and manipulating networks</hi>,
-                        International AAAI Conference on Weblogs and Social Media. 
-                        <ref target="https://gephi.org/publications/gephi-bastian-feb09.pdf">https://gephi.org/publications/gephi-bastian-feb09.pdf</ref>
+                        <hi rend="bold">Abrami, Giuseppe / Mehler, Alexander (2018): </hi>
+                        <hi rend="italic">A UIMA Database Interface for Managing NLP-related Text Annotations</hi>, in: 
+                        Proceedings of the 11th edition of the Language Resources and Evaluation Conference. Miyazaki / Japan
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Düring, Marten. (2017):</hi> 
-                        <hi rend="italic">Historical Network Research. Network Analysis in the Historical Disciplines.</hi> 
-                        <ref target="http://historicalnetworkresearch.org/">
-                            <hi rend="bold">http://historicalnetworkresearch.org/.</hi>
-                        </ref>
+                        <hi rend="bold">Berge, Claus (1989):</hi> 
+                        <hi rend="italic">Hypergraphs: Combinatorics of Finite Sets</hi>. North Holland, Amsterdam.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Düring, Marten / Kerschbaumer, Florian (2016):</hi> 
-                        <hi rend="italic">Quantifizierung und Visualisierung. Anknüpfungspunkte in den Geschichtswissenschaften</hi>, 
-                        in: 
-                        <hi rend="bold">Düring, Marten / Eumann, Ulrich / Stark, Martin / von Keyserlingk, Linda (eds.):</hi> 
-                        <hi rend="italic">Handbuch Historische Netzwerkforschung. Grundlagen und Anwendungen</hi>. 
-                        Münster: Lit Verlag 31- 44.
+                        <hi rend="bold">Kane, Gerald C. / Alavi, Maryam (2008):</hi> 
+                        <hi rend="italic">Casting the net: A multimodal network perspective on user-system interactions</hi>, in: 
+                        Information Systems Research, 19(3), pages 253–272.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Grandjean, M. (2015):</hi> 
-                        <hi rend="italic">GEPHI – Introduction to Network Analysis and Visualization</hi>. 
-                        http://www.martingrandjean.ch/gephi-introduction/
+                        <hi rend="bold">Kühn, Vincent Roy (2018)</hi>: 
+                        <hi rend="italic">A gesture-based interface to VR</hi>. Bachelor’s thesis, Goethe-Universität Frankfurt.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Jannidis, Fotis / Kohle, Hubertus / Rehbein, Malte (2017):</hi>
-                        <hi rend="italic">Digital Humanities. Eine Einführung</hi>. 
-                        Stuttgart: J. B. Metzler.
+                        <hi rend="bold">Li, Zhi-Chun / Huang, Hai-Jun / Lam, William HK. / Wong, Sze Chun (2007):</hi> 
+                        <hi rend="italic">A model for evaluation of transport policies in multimodal networks with road and parking capacity constraints</hi> 
+                        in: Journal of Mathematical Modelling and Algorithms 6(2), pages: 239–257.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Milligan, I. (2015):</hi> 
-                        <hi rend="italic">From Dataverse to Gephi: Network Analysis on our Data, A Step-by-Step Walkthrough</hi>. 
-                        https://ianmilligan.ca/2015/12/11/from-dataverse-to-gephi-network-analysis-on-our-data/
+                        <hi rend="bold">Mehler, Alexander / Abrami, Giuseppe / Bruendel, Steffen / Felder, Lisa / Ostertag, Thomas / Spiekermann, Christian (2017):</hi> 
+                        <hi rend="italic">Stolperwege: An App for a digital public history of the holocaust</hi> in: 
+                        Proceedings of the 28th ACM Conference on Hypertext and Social Media. Pages 319–320. New York, NY, USA. ACM.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Scott, John. </hi>
-                        <hi rend="italic">What Is Social Network Analysis? </hi>
-                        London: Bloomsbury Academic, 2013.
+                        <hi rend="bold">Mehler, Alexander / Abrami, Giuseppe / Spiekermann, Christian / Jostock, Matthias (2018):</hi> 
+                        <hi rend="italic">VAnnotatoR: A framework for generating multimodal hypertexts</hi>, in: 
+                        Proceedings of the 29th ACM Conference on Hypertext and Social Media. New York, NY, USA. ACM.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Nassar, Huda / Gleich, David F. (2017):</hi> 
+                        <hi rend="italic">Multimodal network alignment</hi> in: CoRR, abs/1703.10511.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Spiekermann, Christian / Abrami, Giuseppe / Mehler, Alexander (2018):</hi> 
+                        <hi rend="italic">VAnnotatoR: a gesture-driven annotation framework for linguistic and multimodal annotation</hi>,
+                        in: Proceedings of the Annotation, Recognition and Evaluation of Actions (AREA) Workshop. Japan.
                     </bibl>
                 </listBibl>
             </div>

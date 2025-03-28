@@ -1,37 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="269_final-VOGELER_Georg_Von_IIIF_zu_IPIF__Ein_Vorschlag_für_den_Datena" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="134_final-BRUNNER_Annelen_Das_Redewiedergabe_Korpus" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Von IIIF zu IPIF? Ein Vorschlag für den Datenaustausch über Personen</title>
+                <title type="full">
+                    <title type="main">Das Redewiedergabe-Korpus.</title>
+                    <title type="sub">Eine neue Ressource</title>
+                </title>
                 <author>
                     <persName>
-                        <surname>Vogeler</surname>
-                        <forename>Georg</forename>
+                        <surname>Brunner</surname>
+                        <forename>Annelen</forename>
                     </persName>
-                    <affiliation>Universität Graz, Österreich</affiliation>
-                    <email>georg.vogeler@uni-graz.at</email>
+                    <affiliation>Institut für Deutsche Sprache, Deutschland</affiliation>
+                    <email>brunner@ids-mannheim.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Vasold</surname>
-                        <forename>Gunter</forename>
+                        <surname>Weimer</surname>
+                        <forename>Lukas</forename>
                     </persName>
-                    <affiliation>Universität Graz, Österreich</affiliation>
-                    <email>gunter.vasold@uni-graz.at</email>
+                    <affiliation>Universität Würzburg, Deutschland</affiliation>
+                    <email>lukas.weimer@uni-wuerzburg.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Schlögl</surname>
-                        <forename>Matthias</forename>
+                        <surname>Tu</surname>
+                        <forename>Ngoc Duyen Tanja</forename>
                     </persName>
-                    <affiliation>Österreichische Akademie der Wissenschaften, Wien, Österreich</affiliation>
-                    <email>matthias.schloegl@oeaw.ac.at</email>
+                    <affiliation>Institut für Deutsche Sprache, Deutschland</affiliation>
+                    <email>tu@ids-mannheim.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Engelberg</surname>
+                        <forename>Stefan</forename>
+                    </persName>
+                    <affiliation>Institut für Deutsche Sprache, Deutschland</affiliation>
+                    <email>engelberg@ids-mannheim.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Jannidis</surname>
+                        <forename>Fotis</forename>
+                    </persName>
+                    <affiliation>Universität Würzburg, Deutschland</affiliation>
+                    <email>fotis.jannidis@uni-wuerzburg.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2019-01-12T08:04:00Z</date>
+                    <date>2019-01-07T10:53:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -63,163 +82,218 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Prosopographie</term>
-                    <term>API</term>
-                    <term>CIDOC-CRM</term>
-                    <term>Factoid-Modell</term>
+                    <term>Redewiedergabe</term>
+                    <term>Annotation</term>
+                    <term>Linguistik</term>
+                    <term>Literatur</term>
+                    <term>Korpus</term>
+                    <term>Historisch</term>
+                    <term>Zeitschriften</term>
+                    <term>Zeitungen</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Programmierung</term>
-                    <term>Personen</term>
-                    <term>Standards</term>
+                    <term>Annotieren</term>
+                    <term>Veröffentlichung</term>
+                    <term>Daten</term>
+                    <term>Literatur</term>
+                    <term>Forschung</term>
+                    <term>Text</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p style="text-align:left; ">Gesellschaften fügen sich aus Individuen zusammen. Das gilt auch für die Vergangenheit, aus der die Mehrzahl der Individuen nur schlecht bis gar nicht dokumentiert ist. Es hat sich deshalb ein eigenständiger historischer Forschungsbereich entwickelt, die “Prosopographie”, die sich der Aggregation von Einzelinformationen zu Individuen aus historischen Quellen und ihrer Auswertung widmet (Keats-Rohan 2007). Dieses Forschungsgebiet hat früh digitale Methoden eingesetzt. Der Beitrag widmet sich der Frage, ob die Methoden vergleichbar zu IIIF (International Image Interoperability Framework) in ein „International Proposography Interoperability Framework“ (IPIF) integriert werden können.</p>
-            <p style="text-align:left; ">Ein IPIF muss von den Personendatenbanken abweichen, die sich als kontrollierte Vokabularien und Referenzen für Linked Open Data in den Digital Humanities etabliert haben (GND/VIAF, deutsche-biographie), bzw. im Begriff sind, sich zu etablieren (wikidata). Diese berücksichtigen nämlich nicht den Vorgang, mit dem Informationen über eine Person aus historischen Quellen aggregiert werden. Der Ansatz weicht damit auch von der „personography“ der TEI ab, die, wie die Linked-Data-Ressourcen, eine Person mit einer Liste an Eigenschaften beschreiben. Ein IPIF muss dagegen ein Modell realisieren, für das Bradley/Short (2005) die Bezeichnung „Factoid“-Model eingeführt haben. Es geht von drei Informationseinheiten aus: Quelle, Individuum und Aussagen der Quelle über das Individuum. John Bradley hat das Modell mehreren Projekten des King’s College London zu Grunde gelegt (PASE, DPRR, CCEd). Auch das Persondendatenrepositorium (PDR) der Berlin-Brandenburgischen Akademie der Wissenschaften (Neumann et al. 2011) und Projekte, die die Software der BBAW weitergenutzt haben, verwenden das gleiche Modell, auch wenn das PDR nicht explizit auf Bradley referenziert. Ebenso verwendet das Repertorium Academicum Germanicum ein solches dreiteiliges Modell (Andresen 2008). </p>
-            <p style="text-align:left; ">Das dreiteilige Modell impliziert auch, dass (auch widersprechende) Aussagen über dasselbe Individuum aus verschiedenen Quellen an verschiedenen Orten publiziert werden können. Es erscheint also als ein Paradebeispiel für das 
-                <hi rend="italic">Web of Data</hi> des W3C. Das 
-                <hi rend="italic">Web of Data</hi> ist die Fortführung der Semantic-Web-Aktivitäten des W3C. Es konzentriert sich auf die Öffnung von Datenbanken und erhebt insbesondere den Anspruch, individuelle kleine Datenmengen als RDF über das Semantic Web abfragbar zu machen. Technisch ist RDF, die Grundlage des 
-                <hi rend="italic">Web of Data</hi>, eine weit verbreitete und gut unterstützte Technologie. Es ist deshalb auch eine Technologie, mit deren Hilfe immer häufiger Maschinen auf prosopographische Datenbanken zugreifen können. Deshalb haben Bradley/Pasin (2015) eine CIDOC-CRM basierte Version des Factoid-Modells vorgeschlagen und entsprechende Ontologien veröffentlicht (Bradley 2017). Das Basismodell ist aber auch mit anderen Vokabularien realisiert worden: SNAP verwendet z.B. Vokabularien aus dem 
-                Linking-Ancient-Wisdom-Projek<hi rend="Footnote_Anchor"><hi rend="superscript">1</hi></hi>). Das King’s Digital Lab hat jüngst mit Hilfe von 
-                <hi rend="italic">Ontop</hi><hi rend="Footnote_Anchor"><hi rend="superscript">2</hi></hi> die prosopographische Datenbank zur römischen Republik als LOD-Ressource incl. eines SPARQL-Endpoints 
-                veröffentlicht.<hi rend="Footnote_Anchor"><hi rend="superscript">3</hi></hi>
-            </p>
-            <p style="text-align:left; ">Diese Strategie teilt jedoch das Problem vieler RDF-Ressourcen: Die technische Pflege eines SPARQL-Endpoints ist sehr anspruchsvoll. SPARQL-Endpoints sind häufig nur unzuverlässig verfügbar. Nicht zuletzt deshalb stellen große Lieferanten von RDF-Ressourcen wie die Deutsche Nationalbibliothek (GND) bis dato keine SPARQL-Endpoints für ihre Daten zur Verfügung. Als alternative Technologie etabliert sich in den Digitalen Geisteswissenschaften zunehmend die Publikation von eigenen RESTful APIs, die zwar weit weniger flexible Abfragen erlauben, dafür aber deutlich stabiler funktionieren und einfacher implementiert werden können. RESTful APIs sind ein Quasi-Industriestandard und werden von jedem Webentwicklungsframework und jeder Programmiersprache unterstützt. Mit OpenAPI 
-            (ehemals swagger)<hi rend="Footnote_Anchor"><hi rend="superscript">4</hi></hi> und Core 
-            API<hi rend="Footnote_Anchor"><hi rend="superscript">5</hi></hi> liegen auch Vorschläge vor, derartige API-Definition standardisiert zu beschreiben, so dass die Implementation von einschlägigen API-Anbietern und API-Konsumenten teilweise sogar automatisiert werden 
-            kann.<hi rend="Footnote_Anchor"><hi rend="superscript">6</hi></hi> Aus Sicht des Software-Engineering erscheint es also angemessen, auf eine eigene API-Definition statt auf einen SPARQL-Endpoint zurückzugreifen. Gleichzeitig wird es damit erschwert, Daten aus verschiedenen Datenquellen zu aggregieren, da für jeden Datenanbieter ein eigener API-Konsument programmiert werden müsste. Im Bereich der Bibliotheken hat sich deshalb für die Bereitstellung von Bildern von Büchern mit IIIF eine Kombination aus einem Datenstandard und einer Adressierungs-API durchgesetzt. Es ist an der Zeit, auch für personenbezogene Daten über einen solchen technischen Standard nachzudenken, der die Implementation von Anwendungen erleichtert und die Daten auch praktisch interoperabel macht.
-            </p>
-            <p style="text-align:left; ">Ein solcher Standard muss von konkreten Anwendungsszenarien ausgehen. Sie können unter den Überschriften „Biographical Lexicon“, „Careers”, „Source Editing“, „Fact Checking“, „New Interpretation“, „Publish a Database”, „Integrate Other Databases“, „Analysis“, „Tool User“, „Tool Builder” zusammengefasst werden. Die Szenarien bilden sowohl Forschung mit prosopographischen Daten wie die Erzeugung solcher Daten ab. Zusätzlich achten die Szenarien darauf, nicht nur explizit prosopographische Workflows zu berücksichtigen, sondern schließen auch wissenschaftliches Edieren als Szenario mit ein, in dem der edierte Text als Beleg für eine Person betrachtet werden kann. In einem Workshop in Wien im Februar 2017 haben Forscher aus dem Themengebiet der Prosopographie religiöser Orden solche Anwendungsszenarien diskutiert und einen Entwurf für eine API entwickelt.</p>
-            <p style="text-align:left; ">Ein Ergebnis dieser Arbeit ist eine nach den Standards von OpenAPI beschriebenen Definition einer prosopographischen 
-            API.<hi rend="Footnote_Anchor"><hi rend="superscript">7</hi></hi> Die API baut auf dem dreiteiligen Factoid-Modell auf und erlaubt den Zugriff auf Personen, Aussagen, Quellen und ihr Aggregat, einem „Factoid“. Für alle diese Objekte gibt es eigene Pfade zur Suche und Ausgabe der Daten über die zu ihnen abgelegten IDs. Im Kern der API steht deshalb der Zugriff auf Factoide 
-            (<hi style="font-family:Courier New">/factoid</hi>). Sie können individuell über bekannte IDs adressiert werden 
-            (<hi style="font-family:Courier New">/factoid/id</hi>). Wichtiger sind aber inhaltliche Filtermöglichkeiten. Sie ergeben sich einfach aus den Eigenschaften des Factoids, als Aussage über eine Person. Die Parameter 
-                <hi rend="italic" style="font-family:Courier New">s</hi><hi rend="italic" xml:space="preserve">, </hi>
-                <hi rend="italic" style="font-family:Courier New">st</hi> und 
-                <hi rend="italic" style="font-family:Courier New">f</hi> lassen also die Suche in den Inhalten der mit dem Factoid verknüpften Quellen 
-                (<hi style="font-family:Courier New">source</hi>), Aussagen 
-                (<hi style="font-family:Courier New">statement</hi>) und den Metadaten des Factoids selbst 
-                (<hi style="font-family:Courier New">factoid</hi>) zu. Dabei ist der Standard eine Volltextsuche. Ebenso lassen sich die Quellen und Personen abfragen. Als Parameter können aber auch Identifikatoren für die einzelnen Informationsgruppen übergeben werden, also z.B. mit 
-                <hi style="font-family:Courier New">/statement/?p_id=Placidus_Seiz</hi> alle Aussagen über die Person mit einem Identifikator „Placidus_Seiz“ in einem beliebigen Kontext. Die Anwendung liefert dann ein JSON-Objekt zurück, in dem diese Aussagen formalisiert sind. Zu jeder Aussage gehört eine ID, mit der Entwickler z.B. über die API überprüfen können, woher die jeweilige Aussage stammt.
-            </p>
-            <p style="text-align:left; ">Als Rückgabewert der API-Definition sind JSON-Serialisierungen vorgesehen. Die Statements können Daten als Text (z.B. der Quelle) ebenso wie strukturiert als Graph enthalten. Die Graphen sollen den Spezifikationen von JSON-LD folgen. Damit können zwei Ziele erreicht werden: Erstens ist damit die Ausgabe der API direkt in Linked-Open-Data-Umgebungen nutzbar, kann prinzipiell auch in einer FROM-Klausel einer SPARQL-Abfrage integriert werden oder in Caching-Mechanismen wie im 2011 als Linked Data Middleware von Virtuoso vorgeschlagenen URI-Burner verwendet werden. Zweitens wird damit ein Standard verwendet, der die Referenzierung der verwendeten Vokabularien und ihre formale Beschreibung mit RDFS und OWL ermöglicht.</p>
-            <p style="text-align:left; ">Der Workshop in Wien hat als Kernproblem eines echten Datenaustausches die divergierenden Datenmodelle für die Einzelaussagen über die Individuen identifiziert. Während die Individuen selbst im Factoid-Modell keine beschreibenden Metadaten tragen und damit kaum Probleme beim Datenaustausch erzeugen, sind für die Aussagen über die Individuen je nach Projekt, Verwendungszweck und Forschungsdomäne eine Vielfalt von Vokabularien im Einsatz. Einen Ausweg aus dieser Situation bietet die 2017 gegründete 
-            dataforhistory-Initiative.<hi rend="Footnote_Anchor"><hi rend="superscript">8</hi></hi> Die Initiative arbeitet daran projekt- und domänenspezifische Modellierungen zu erleichtern, die zum CIDOC CRM kompatibel sind. Die derzeitige API-Definition sieht deshalb vor, dass die zurückgegebenen Daten eine Referenz auf ein Schema (in JSON-LD als 
-                <hi style="font-family:Courier New">@context</hi>) enthalten müssen, das die verwendeten Klassen und Eigenschaften auf Definitionen im CIDOC CRM abbildet, der es der die API konsumierenden Anwendung erlaubt, die Daten als CIDOC CRM zu interpretieren und darauf aufbauende Operationen durchzuführen. Ergänzend dazu ist ein Parameter 
-                <hi style="font-family:Courier New">format=json/cidoc-crm</hi> vorgesehen, bei dem die Transformation serverseitig stattfindet. Die Abbildung auf CIDOC CRM soll insbesondere die grundlegenden Suchoperationen ermöglichen, die Katerina Tzompanaki und Martin Doer 2012 formuliert haben und die im Projekt 
-                researchspace<hi rend="Footnote_Anchor"><hi rend="superscript">9</hi></hi> realisiert werden. Die API definiert die Objekteigenschaft 
-                <hi style="font-family:Courier New">graph</hi> für die strukturierte Repräsentation der Daten über Personen.
-            </p>
-            <p style="text-align:left; ">John Bradley und Michele Pasin haben 2015 eine OWL basierte Ontologie vorgestellt, in der eine „temporal entity documented“ (TED) als Ereignis (E4 und E5 im CIDOC-CRM) oder als eine zeitliche Einheit oder klare zeitliche Grenzen (E3: condition, state) modelliert sind. Das entspricht dem Stand der Diskussion über prosopographische Datenmodelle (Lind 1994, Andresen 2008, Tuominen / Hyvönen / Leskinen 2018).</p>
-            <p style="text-align:left; ">Nicht zuletzt der Erfolg von IIIF belegt, dass eine solche API aber auch Referenzimplementationen benötigt. Dabei ist entsprechend der oben beschriebenen Benutzungsszenarien sowohl an Ressourcen zu denken, die Daten bereitstellen, als auch an Anwendungen, die diese Daten konsumieren. Die Nachnutzung des „Archiveditors“, eines zunächst projektinternen Werkzeugs der BBAW, in anderen Projekten zeigt, dass dabei nicht nur an Datenextraktion und –anzeige sondern auch an Datengenerierung zu denken ist. Im Rahmen der Arbeit an der Personendatenbank der Österreichischen Akademie der Wissenschaften ist deutlich geworden, dass gerade automatische Informationsextraktion von „Personenrelationen“ (Schlögl et al. forthcoming, Schlögl et al. 2018) von einer solchen API profitieren kann. Die automatisch generierten Aussagen können als eigenständige Factoide in die Personendatenbanken eingehen. Die Metadaten des Factoids und die Referenz auf die verwendete Quelle stellen sicher, dass sie als automatisch generierte Daten identifizierbar bleiben. Der Vortrag wird Beispiele für Datenangebote aus dem Umfeld mittelalterlicher Urkunden (Register der Urkundenempfänger von Papsturkunden nach den Regesten von August Potthast, Daten aus monasterium.net) und Steuererhebungen (England) vorstellen, und Prototypen für Anwendungen benennen, welche die mit der API bereitgestellten Daten konsumieren können.</p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einführung</head>
+                <p style="text-align:left; ">In diesem 
+                Beitrag<ref target="ftn1" n="1"/> wird das Redewiedergabe-Korpus (RW-Korpus) vorgestellt, ein historisches Korpus fiktionaler und nicht-fiktionaler Texte, das eine detaillierte manuelle Annotation mit Redewiedergabeformen enthält. Das Korpus entsteht im Rahmen eines laufenden DFG-Projekts und ist noch nicht endgültig abgeschlossen, jedoch ist für Frühjahr 2019 ein Beta-Release geplant, welches der Forschungsgemeinschaft zur Verfügung gestellt wird. Das endgültige Release soll im Frühjahr 2020 erfolgen. Das RW-Korpus stellt eine neuartige Ressource für die Redewiedergabe-Forschung dar, die in dieser Detailliertheit für das Deutsche bisher nicht verfügbar ist, und kann sowohl für quantitative linguistische und literaturwissenschaftliche Untersuchungen als auch als Trainingsmaterial für maschinelles Lernen dienen.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Motivation und verwandte Forschung</head>
+                <p style="text-align:left; ">Redewiedergabe ist sowohl für die Linguistik als auch die Literaturwissenschaft ein interessanter Untersuchungsgegenstand. Die Repräsentation der Figurenstimme in Erzähltexten hat in der Narratologie viel Aufmerksamkeit erfahren und wurde in zahlreichen Kategoriesystemen abgebildet (vgl. z.B. Genette 2010; Martínez / Scheffel 2016). In der Linguistik besteht ein Interesse an sprachlichen Formen der Redewiedergabe, sowie an Redeeinleitungsverben (vgl. z.B. Hauser 2008, Engelberg 2015).</p>
+                <p style="text-align:left; ">Detaillierte, manuell annotierte Korpora mit diesem Themenschwerpunkt sind bislang vor allem für das Deutsche sehr rar. Ein Vorbild mit detaillierter, literaturwissenschaftlich motivierter Annotation mehrere Redewiedergabetypen für das Englische ist das Korpus von Semino/Short 2004. Das ebenfalls manuell annotierte DROC-Korpus hat seinen Schwerpunkt auf Figurenreferenzen in Romanen, enthält in diesem Kontext allerdings auch Annotationen direkter Wiedergabe mit Sprecherzuordnung (Krug et al. 2018b). Unser Korpus ist eine direkte Weiterentwicklung des aus 13 Erzähltexten bestehenden Korpus aus Brunner 2015, unterscheidet sich jedoch von diesem vor allem in folgenden Aspekten: Es enthält neben fiktionalen auch nicht-fiktionale Texte, die Annotationen sind durch Mehrfachannotation wesentlich verlässlicher und es ist deutlich umfangreicher (für das Beta-Release ca. 350.000 Tokens vs. 57.000 Tokens in Brunner 2015).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Korpuszusammensetzung</head>
+                <p style="text-align:left; ">Das RW-Korpus umfasst Textmaterial aus dem Zeitraum 1840-1920. Es beruht auf den folgenden drei Textquellen, aus denen jeweils nur die Texte ausgewählt wurden, die in den Untersuchungszeitraum passen: </p>
+                <list type="unordered">
+                    <item>Erzähltexte aus der Digitalen Bibliothek, in TEI-Format konvertiert vom Projekt TextGrid (https://textgrid.de/digitale-bibliothek)</item>
+                    <item>Texte der Zeitschrift „Die Grenzboten”, digitalisiert durch die Staats- und Universitätsbibliothek Bremen und in TEI-Format konvertiert durch das Deutsche Textarchiv (http://www.deutschestextarchiv.de/)</item>
+                    <item>Das Mannheimer Korpus Historischer Zeitungen und Zeitschriften (MKHZ, https://repos.ids-mannheim.de/mkhz-beschreibung.html), bereitgestellt vom Institut für Deutsche Sprache und in TEI-Format konvertiert durch das Deutsche Textarchiv</item>
+                </list>
+                <p style="text-align:left; ">Bei der Korpuszusammenstellung sollte eine möglichst große Diversität der enthaltenen Texte erzielt werden. Um dies zu erreichen, setzt sich das Korpus aus Textausschnitten (Samples) zusammen. Diese haben mindestens 500 Wörter für fiktionale Texte bzw. 200 Wörter für nicht-fiktionale Texte – mit dieser großzügigeren Grenze war es möglich, auch kurze, abgeschlossene Artikel aufzunehmen, die für Zeitungen/Zeitschriften typisch sind. Die Samples wurden mit folgenden Besonderheiten randomisiert aus dem vorhandenen Textmaterial gezogen: Bei den Texten der Digitalen Bibliothek wurde erzwungen, dass jeder vertretene Autor innerhalb einer Dekade gleichermaßen berücksichtigt wird. Entsprechend wurde beim MKHZ erzwungen, dass alle in einer Dekade vertretenen unterschiedlichen Zeitungen/Zeitschriften gleichermaßen berücksichtigt werden. Damit wurde verhindert, dass Autoren bzw. Zeitungen/Zeitschriften mit wenig Material beim Sampling-Prozess vollkommen herausfallen. Das Beta-Release enthält Texte von etwa 140 unterscheidbaren Autoren und aus 20 unterschiedlichen Zeitungen/Zeitschriften.</p>
+                <p style="text-align:left; ">Die Quelltexte wurden größtenteils in ihrem Ursprungszustand belassen, mit zwei Ausnahmen: Da für die Zeitschrift „Die Grenzboten” nur automatische OCR-Erkennung durchgeführt wurde, wurden die Samples aus dieser Textquelle manuell nachkorrigiert. In den Texten aus den beiden anderen Quellen wurden häufige Sonderzeichen, wie das Schaft-S, durch moderne Äquivalente ersetzt, jedoch weisen die Texte dennoch in unterschiedlichem Maße altertümliche Schreibungen und z.T. auch Sonderzeichen auf. Insgesamt ist festzuhalten, dass die Textformen im RW-Korpus sehr divers sind, so sind z.B. Texte im Dialekt enthalten, sowie Zeitungsausschnitte, die reine Listen sind. Wir haben uns bewusst dagegen entschieden, solch ungewöhnliches Material herauszufiltern, um eine realistische Repräsentation des Textmaterials aus den untersuchten Dekaden zu erhalten. </p>
+                <p style="text-align:left; ">Beim RW-Korpus wurde eine Ausgewogenheit in der zeitlichen Dimension (Textmaterial pro Dekade) sowie zwischen fiktionalen und nicht-fiktionalen Texten angestrebt.</p>
+                <p style="text-align:left; ">Entgegen ursprünglicher Annahmen stellte es sich als nicht sinnvoll heraus, die Trennung fiktional - nicht-fiktional rein aufgrund der Textquelle zu treffen: Es liegt in der Natur der Textsorte Zeitung/Zeitschrift, dass dort auch fiktionale Texte abgedruckt werden (im Feuilleton, als Fortsetzungsromane u.Ä.). Somit wurde das Kriterium ‚fiktional’ für jedes Sample individuell festgelegt. Unsere Definition für ‚Fiktion’ ist dabei angelehnt an Gabriel 2007: „Ein erfundener (‚fingierter’) einzelner Sachverhalt oder eine Zusammenfügung solcher Sachverhalte zu einer erfundenen Geschichte” (Gabriel 2007: 594). Bei der Identifizierung wurde besonderer Wert auf paratextuelle Merkmale (z.B. Untertitel, Rubriken u.Ä.) gelegt. Von den Samples aus dem MKHZ und den „Grenzboten” wurden auf diese Weise ca. 12% als fiktional eingestuft. </p>
+                <p style="text-align:left; ">Die folgende Tabelle zeigt die wichtigsten Metadaten des RW-Korpus, welche nach dem Sampling und der Textkorrektur vergeben werden.  </p>
+                <table rend="rules">
+                    <row>
+                        <cell rend="DH-Default">Metadatum</cell>
+                        <cell rend="DH-Default">Werte</cell>
+                        <cell rend="DH-Default">Beschreibung</cell>
+                    </row>
+                    <row>
+                        <cell rend="DH-Default">year</cell>
+                        <cell rend="DH-Default">Zahl zwischen 1840 und 1919</cell>
+                        <cell rend="DH-Default">Erscheinungsjahr des Textes (bei digBib-Texten: Ersterscheinungsjahr, falls verfügbar)</cell>
+                    </row>
+                    <row>
+                        <cell rend="DH-Default">decade</cell>
+                        <cell rend="DH-Default">Zahl in 10er Schritten</cell>
+                        <cell rend="DH-Default">Erscheinungsdekade des Textes</cell>
+                    </row>
+                    <row>
+                        <cell rend="DH-Default">source</cell>
+                        <cell rend="DH-Default">digBib, grenz, mkhz</cell>
+                        <cell rend="DH-Default">Textquelle; bei mkhz wird noch ein Kürzel für die jeweilige Zeitung/Zeitschrift beigefügt</cell>
+                    </row>
+                    <row>
+                        <cell rend="DH-Default">title</cell>
+                        <cell rend="DH-Default">String, undefined</cell>
+                        <cell rend="DH-Default">Titel des Textes, falls bekannt</cell>
+                    </row>
+                    <row>
+                        <cell rend="DH-Default">author</cell>
+                        <cell rend="DH-Default">String, undefined</cell>
+                        <cell rend="DH-Default">Autor des Textes, falls bekannt</cell>
+                    </row>
+                    <row>
+                        <cell rend="DH-Default">fictional</cell>
+                        <cell rend="DH-Default">yes, no </cell>
+                        <cell rend="DH-Default">Ist der Textausschnitt fiktional?</cell>
+                    </row>
+                    <row>
+                        <cell rend="DH-Default">text_type</cell>
+                        <cell rend="DH-Default">Erzähltext, Kommentar, Anzeige, Reportage, Nachrichten, Biographie, Rezension, Reisebericht/Brief, unsure </cell>
+                        <cell rend="DH-Default">Texttyp; wenn ein Ausschnitt mehrere Texttypen enthält (z.B. Kommentar und Anzeigen), wird nach dem dominanten Typ klassifiziert oder ansonsten ‚unsure’ vergeben</cell>
+                    </row>
+                </table>
+                <p style="text-align:left; ">Aufgrund der Diversität der in Zeitungen/Zeitschriften vertretenen Texte wurde für jedes Sample eine nähere Klassifikation des Texttyps vorgenommen, so dass auch dessen Einfluss auf die Verteilung der Redewiedergabetypen untersucht werden kann. Die folgende Abbildung gibt einen ersten Eindruck, welch deutliche Abweichungen hier erkennbar sind. Gezeigt werden nur die Texttypen, für beim Korpusstand vom 25.09.2018 mehr als 10 Samples vorlagen. Die Y-Achse zeigt Prozent der Tokens im Text.</p>
+                <figure>
+                    <graphic n="1001" width="15.934966666666666cm" height="7.955125cm" url="134_final-a69b2127c59f375214519da88787a895.png" rend="inline"/>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Annotationssystem</head>
+                <p style="text-align:left; ">Wir unterscheiden die vier Typen direkte, indirekte, frei indirekte (‚erlebte’) und erzählte Wiedergabe, sowie die drei Medien Rede 
+                (<hi rend="italic">speech</hi>), Gedanke 
+                (<hi rend="italic">thought</hi>) und Schrift 
+                (<hi rend="italic">writing</hi>), so dass sich insgesamt zwölf Annotationsmöglichkeiten ergeben.
+                </p>
+                <p style="text-align:left; ">Außerdem annotieren wir die Rahmenformel, die eine direkte oder eine indirekte Wiedergabe einleiten kann. In den Rahmenformeln sowie den Instanzen von erzählter Wiedergabe wird das zentrale Wort markiert, das auf die Sprech-/Gedanken-/Schreibhandlung verweist 
+                (z.B. <hi rend="italic">sagte, Gedanke</hi>). Zudem wird für alle Wiedergabetypen der Sprecher markiert, falls vorhanden.
+                </p>
+                <p style="text-align:left; ">Während die Unterscheidung der drei Medien nur in Ausnahmefällen problematisch ist, bedürfen die vier Typen genauerer Definitionen.</p>
+                <p style="text-align:left; ">Die direkte Wiedergabe 
+                (<hi rend="italic">direct</hi>) ist eine wörtlich zitierte Äußerung einer Figur. Sie kann von einer Rahmenformel eingeleitet werden und als einziger Wiedergabetyp Anführungszeichen verwenden.
+                    <lb/>
+                    <hi rend="italic" xml:space="preserve">Er fragte: </hi>
+                    <hi rend="italic underline">„Wo ist das Mittagessen?”</hi>
+                </p>
+                <p style="text-align:left; ">Die indirekte Wiedergabe 
+                (<hi rend="italic">indirect</hi>) ist eine nicht-wörtliche Wiedergabe einer Äußerung. Sie ist in unserem Annotationssystem formal definiert und besteht aus einer Rahmenformel und einem abhängigen Nebensatz, der häufig im Konjunktiv steht. Dies kann ein Nebensatz mit Verbzweitstellung sein, mit 
+                    <hi rend="italic">dass</hi>, 
+                    <hi rend="italic" xml:space="preserve">ob </hi>oder 
+                    <hi rend="italic">w</hi>-Fragewort oder ein (erweiterter) Infinitivsatz. 
+                    <lb/>
+                    <hi rend="italic" xml:space="preserve">Er fragte, </hi>
+                    <hi rend="italic underline">wo das Mittagessen sei.</hi>
+                </p>
+                <p style="text-align:left; ">Die freie indirekte Wiedergabe 
+                (<hi rend="italic">free indirect</hi>) – in der Literatur oft ‚erlebte Rede‘ genannt – definiert sich über die Überlagerung von Figuren- und Erzählerstimme und ist daher eine typische Form fiktionaler Texte. Sie weist keine Rahmenformel und keine sonstigen formalen Markierungen wie Anführungszeichen auf. Finden sich Elemente der Erzählerstimme wie das Tempus Präteritum oder Personalpronomen der dritten Person und gleichzeitig Elemente der Figurenstimme wie Deiktika, Subjektivität, Ausrufe oder figurentypischer Wortschatz, sind dies Indikatoren für freie indirekte Wiedergabe.
+                    <lb/>
+                    <hi rend="italic underline">Woher sollte er denn jetzt bloß ein Mittagessen bekommen?</hi>
+                </p>
+                <p style="text-align:left; ">Die erzählte Wiedergabe 
+                (<hi rend="italic">reported</hi>) ist die Erwähnung eines Sprech-, Denk oder Schreibakts, aus der man nicht auf den eigentlichen Inhalt schließen kann. Hinweise auf erzählte Wiedergabe geben Wiedergabewörter, die Thematisierung einer Wiedergabehandlung sowie der Inhalt derselben.
+                    <lb/>
+                    <hi rend="italic underline">Er sprach über das Mittagessen.</hi>
+                </p>
+                <p style="text-align:left; ">Ein Sonderfall sind uneingeleitete Konjunktivsätze, die zur Wiedergabe verwendet werden. Diese werden als Mischform zwischen indirekter und frei indirekter Wiedergabe markiert. 
+                    <lb/>
+                    <hi rend="italic" xml:space="preserve">Sie stellte viele Fragen. </hi>
+                    <hi rend="italic underline">Wo sei das Mittagessen?</hi>
+                </p>
+                <p style="text-align:left; ">Darüber hinaus gibt es zusätzliche Attribute, die Besonderheiten bei der Wiedergabe markieren und in der folgenden Tabelle dargestellt werden:</p>
+                <table rend="rules">
+                    <row>
+                        <cell rend="DH-Default">level</cell>
+                        <cell rend="DH-Default">Verschachtelungstiefe der Wiedergabe</cell>
+                    </row>
+                    <row>
+                        <cell rend="DH-Default">non-fact</cell>
+                        <cell rend="DH-Default">nicht-faktische Wiedergaben (z.B. Negationen, zukünftigen Aussagen oder Absichten)</cell>
+                    </row>
+                    <row>
+                        <cell rend="DH-Default">border</cell>
+                        <cell rend="DH-Default">Fälle, die an der Grenze von Rede-, Gedanken- oder Schriftwiedergabe liegen, also nicht alle prototypischen Kriterien der jeweiligen Wiedergabeart erfüllen</cell>
+                    </row>
+                    <row>
+                        <cell rend="DH-Default">prag</cell>
+                        <cell rend="DH-Default">sprachliche Wendung, die das Muster einer Wiedergabe aufweist, pragmatisch aber einen anderen Zweck erfüllt (z.B. Höflichkeitsfloskeln)</cell>
+                    </row>
+                    <row>
+                        <cell rend="DH-Default">metaph</cell>
+                        <cell rend="DH-Default">Metaphern in Form von Wiedergaben 
+                        (z.B. <hi rend="italic">Die Klugheit riet mir davon ab.</hi>)
+                        </cell>
+                    </row>
+                </table>
+                <p style="text-align:left; ">Die detaillierten Annotationsrichtlinien können unter http://redewiedergabe.de/richtlinien/richtlinien.html eingesehen werden.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Annotationsprozess</head>
+                <p style="text-align:left; ">Die genaue Identifizierung und Klassifizierung der Redewiedergaben auf der Grundlage des detaillierten Annotationssystems ist eine schwierige Aufgabe.</p>
+                <p style="text-align:left; ">Jedes Sample des RW-Korpus durchläuft darum einen mehrschrittigen Prozess. Zunächst wird es von zwei Annotatoren unabhängig voneinander annotiert. Danach vergleicht ein weiterer Experte die Annotationen und erstellt, falls notwendig, eine Konsens-Annotation, die dann ins finale Korpus aufgenommen wird. Jedes Sample wird also von drei Personen bearbeitet, um größtmögliche Konsistenz zu gewährleisten.</p>
+                <p style="text-align:left; ">Die Annotatoren arbeiten mit dem eclipse-basierten Annotationswerkzeug ATHEN (entwickelt von Markus Krug im Projekt Kallimachos, www.kallimachos.de), für das im Projekt eine spezielle Oberfläche für die Redewiedergabe-Annotation implementiert wurde (für eine detaillierte Beschreibung vgl. auch Krug et al. 2018a). Das Werkzeug ist frei verfügbar unter der Adresse 
+                    <hi rend="Hyperlink">http://ki.informatik.uni-wuerzburg.de/nappi/release/</hi>.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Verfügbarmachung und Ausblick</head>
+                <p style="text-align:left; ">Das Beta-Release wird in einem standardisierten und dokumentierten Textformat im Langzeitarchiv des Instituts für Deutsche Sprache zur freien Nutzung zur Verfügung gestellt 
+                (<hi rend="Hyperlink">https://repos.ids-mannheim.de/</hi>). Spätestens für das finale Release im Frühjahr 2020 garantieren wir ein TEI-kompatibles XML-Format. Zudem wird weiteres im Kontext des Redewiedergabe-Projekts entstandenes Material zur Verfügung gestellt, wie nur einfach annotiertes Textmaterial und annotierte Volltexte. Im Jahr 2020 werden auch Werkzeuge fertiggestellt sein, die es erlauben, in Texten verschiedene Formen der Redewiedergabe automatisch zu erkennen.
+                </p>
+                <p style="text-align:left; ">Nutzungsszenarien für das Korpus sind vielfältig: Aus NLP-Perspektive kann es als Test- und Trainingsmaterial für automatische Redewiedergabeerkenner verwendet werden. Aus linguistischer Perspektive bieten sich Korpusstudien zu sprachlichen Eigenheiten der Redewiedergabe an, wie z.B. die laufenden Studien zu Redewiedergabeeinleitern von Tu. Aus literaturwissenschaftlicher Perspektive erlaubt das Korpus z.B. Untersuchungen zu der Häufigkeit und Form von Wiedergaben in Erzähltexten in ihrer Relation zur Figurencharakterisierung.</p>
+            </div>
         </body>
         <back>
-			<div type="notes">
-				<note place="foot" xml:id="ftn1" n="1"><hi rend="Internet_Link"> http://lawd.info/ontology/</hi></note>
-				<note place="foot" xml:id="ftn2" n="2"> https://github.com/ontop/ontop</note>
-				<note place="foot" xml:id="ftn3" n="3"> <ref target="http://romanrepublic.ac.uk/rdf"><hi rend="Internet_Link">http://romanrepublic.ac.uk/rdf</hi></ref>, Dokumentation von John Bradley: <ref target="http://romanrepublic.ac.uk/rdf/doc"><hi rend="Internet_Link">http://romanrepublic.ac.uk/rdf/doc</hi></ref></note>
-				<note place="foot" xml:id="ftn4" n="4"> https://www.openapis.org/ </note>
-				<note place="foot" xml:id="ftn5" n="5"> http://www.coreapi.org</note>
-				<note place="foot" xml:id="ftn6" n="6"> z.B. das Python-Framework Flask in Verbindung mit <ref target="https://github.com/zalando/connexion"><hi rend="Internet_Link">https://github.com/zalando/connexion</hi></ref>, vgl. weitere Tools: <ref target="https://swagger.io/tools/open-source/open-source-integrations/"><hi rend="Internet_Link">https://swagger.io/tools/open-source/open-source-integrations/</hi></ref></note>
-				<note place="foot" xml:id="ftn7" n="7"> https://github.com/GVogeler/prosopogrAPhI</note>
-				<note place="foot" xml:id="ftn8" n="8"> http://dataforhistory.org</note>
-				<note place="foot" xml:id="ftn9" n="9"> https://www.researchspace.org/</note>
-			</div>
+            <div type="notes">
+                <note xml:id="ftn1" n="1" rend="footnote text">
+                    Die ersten beiden Autoren haben zu gleichen Teilen an der Erstellung dieses Beitrags mitgewirkt.
+                </note>
+            </div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">Andresen, Suse (2008):</hi> 
-                        <hi rend="italic">Das 'Repertorium Academicum Germanicum'. Überlegungen zu einer modellorientierten Datenbankstruktur und zur Aufbereitung prosopographischer Informationen der graduierten Gelehrten des Spätmittelalters</hi>, 
-                        in: 
-                        <hi rend="bold">Sigrid Schmitt u. Michael Matheus (eds.):</hi> 
-                        <hi rend="italic">Städtische Gesellschaft und Kirche im Spätmittelalter</hi> (Geschichtliche Landeskunde 62). Stuttgart: Steiner 17-26.
+                    <bibl>
+                        <hi rend="bold">Brunner, Annelen (2015)</hi>: <hi rend="italic">Automatische Erkennung von Redewiedergabe. </hi>Ein Beitrag zur quantitativen Narratologie (=Narratologia 47). Berlin: De Gruyter.
                     </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">Bradley, John (2017):</hi> 
-                        <hi rend="italic">Factoids. A site that introduces Factoid Prosopograph</hi>, 
-                        <ref target="http://factoid-dighum.kcl.ac.uk/">
-                            <hi rend="ListLabel_29">http://factoid-dighum.kcl.ac.uk/</hi>
-                        </ref> und 
-                        <ref target="https://github.com/johnBradley501/FPO">
-                            <hi rend="ListLabel_29">https://github.com/johnBradley501/FPO</hi>
-                        </ref>
+                    <bibl>
+                        <hi rend="bold">Engelberg, Stefan (2015)</hi>: <hi rend="italic">„Quantitative Verteilungen im Wortschatz. Zu lexikologischen und lexikografischen Aspekten eines dynamischen Lexikons“</hi>, in: <hi rend="bold">Eichinger, Ludwig M. (eds.)</hi>: <hi rend="italic">Sprachwissenschaft im Fokus</hi>. Positionsbestimmungen und Perspektiven. Jahrbuch 2014 des IDS. Tübingen: Narr 205-230.
                     </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">Bradley, John / Pasin, Michele (2015):</hi> 
-                        <hi rend="italic">Factoid-based Prosopography and Computer Ontologies. Towards an integrated approach</hi>, 
-                        in: DSH 30,1: 86-97.
+                    <bibl>
+                        <hi rend="bold">Gabriel, Gottfried (2007)</hi>: <hi rend="italic">„Fiktion“</hi>, in: <hi rend="bold">Fricke, Harald et al. (eds.)</hi>: <hi rend="italic">Reallexikon der deutschen Literaturwissenschaft</hi>. Bd. 1: A-G. Berlin / New York: De Gruyter 594-598.
                     </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">Bradley, John / Short, Harold (2005):</hi> 
-                        <hi rend="italic">Texts into databases. The Evolving field of New-style Prosopography</hi>, 
-                        in: LLC 20, suppl. 1: 3-24.
+                    <bibl>
+                        <hi rend="bold">Genette, Gérard (2010)</hi>: <hi rend="italic">Die Erzählung.</hi> 3., durchges. und korrigierte Aufl. Paderborn: Fink.
                     </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">CCEd: </hi>
-                        <hi rend="italic">Clergy of the Church of England Database</hi>, King’s College London 
-                        <ref target="http://theclergydatabase.org.uk/">
-                            <hi rend="ListLabel_29">http://theclergydatabase.org.uk/</hi>
-                        </ref>
+                    <bibl>
+                        <hi rend="bold">Hauser, Stefan (2008)</hi>: <hi rend="italic">„Beobachtungen zur Redewiedergabe in der Tagespresse. Eine kontrastive Analyse“</hi>, in: <hi rend="bold">Lüger, Heinz-Helmut / Lenk, Hartmut E.H. (eds.)</hi>: <hi rend="italic">Kontrastive Medienlinguistik</hi>. Landau: Verlag Empirische Pädagogik 271-286.
                     </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">DPRR: </hi>
-                        <hi rend="italic">Digital Prosopography of the Roman Republic</hi>, King’s College London 
-                        <ref target="HYPERLINK">
-                            <hi rend="ListLabel_29">http://romanrepublic.ac.uk/</hi>
-                        </ref>
+                    <bibl>
+                        <hi rend="bold">Krug, Markus / Tu, Ngoc Duyen Tanja / Weimer, Lukas / Reger, Isabella / Konle, Leonard / Jannidis, Fotis / Puppe, Frank(2018a)</hi>: <hi rend="italic">„Annotation and beyond – Using ATHEN Annotation and Text Highlighting Environment“</hi>, in: Digital Humanities im deutschsprachigen Raum – Konferenzabstracts 19-21.
                     </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">Keats-Rohan, Katherine S.B. (ed.) (2007): </hi>
-                        <hi rend="italic">Prosopography. Approaches and Applications. A Handbook</hi> 
-                        (Prosopographica et genealogica 13). Oxford: P&amp;G.
+                    <bibl>
+                        <hi rend="bold">Krug, Markus / Weimer, Lukas / Reger, Isabella / Macharowsky, Luisa / Feldhaus, Stephan / Puppe, Frank / Jannidis, Fotis (2018b)</hi>: <hi rend="italic">Description of a Corpus of Character References in German Novels - DROC [Deutsches ROman Corpus]</hi>. DARIAH-DE Working Papers Nr. 27, Göttingen: DARIAH-DE, 2018, URN: urn:nbn:de:gbv:7-dariah-2018-2-9.
                     </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">Lind, Gunner (1994):</hi> 
-                        <hi rend="italic">Data Structures for Computer Prosopography</hi>, 
-                        in: Yesterday: Proceedings from the 6th International Conference of the Association of History and Computing, Odense 1991. Odense: University Press of Southern Denmark. 77-82.
+                    <bibl>
+                        <hi rend="bold">Martínez, Matías / Scheffel, Michael (2016)</hi>: <hi rend="italic">Einführung in die Erzähltheorie</hi>. 10. Auflage. München: C.H.Beck.
                     </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">Neumann, Gerald / Körner, Fabian / Roeder, Torsten / Walkowski, Niels-Oliver (2011):</hi> 
-                        <hi rend="italic">Personendaten-Repositorium</hi>, 
-                        in: Berlin-Brandenburgische Akademie der Wissenschaften. Jahrbuch 2010: 320-326.
-                    </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">PASE:</hi>  
-                        <hi rend="italic">Prosopography of Anglo-Saxon England</hi>, King’s College London, URL: 
-                        <ref target="http://www.pase.ac.uk/jsp/index.jsp">
-                            <hi rend="ListLabel_29">http://www.pase.ac.uk/jsp/index.jsp</hi>
-                        </ref>
-                    </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">Schlögl, Matthias / Katalin Lejtovicz (2018):</hi> 
-                        <hi rend="italic">A Prosopographical Information System (APIS)</hi>, 
-                        in: 
-                        <hi rend="bold">Antske Fokkens / ter Braake Serge / Sluijter, Ronald / Arthur, Paul / Wandl-Vogt, Eveline (eds.): </hi> 
-                        <hi rend="italic">BD-2017. Biographical Data in a Digital World 2017. Proceedings of the Second Conference on Biographical Data in a Digital World 2017</hi>. 
-                        Linz, Austria, November 6-7, 2017. Budapest: CEUR (CEUR Workshop Proceedings 2119): 53-58.
-                    </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">Schlögl, Matthias / Lejtovicz, Katalin / Bernád, Ágoston Zénó / Kaiser, Maximilian / Rumpolt, Peter (2018):</hi> 
-                        <hi rend="italic">Using deep learning to explore movement of people in a large corpus of biographies</hi>. 
-                        Zenodo. 
-                        <ref target="http://doi.org/10.5281/zenodo.1149023">
-                            <hi rend="Internet_Link">http://doi.org/10.5281/zenodo.1149023</hi>
-                        </ref>
-                    </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">Tuominen, Jouni / Hyvönen, Eero / Leskinen, Petri (2018):</hi> 
-                        <hi rend="italic">Bio CRM. A Data Model for Representing Biographical Data for Prosopographical Research</hi>, 
-                        in: BD-2017. Biographical Data in a Digital World 2017, hg. v. Antske Fokkens, Serge ter Braake, Ronald Sluijter, Paul Arthur, Eveline Wandl-Vogt, Budapest: CEUR (CEUR Workshop Proceedings 2119): 59-66. 
-                    </bibl>
-                    <bibl style="text-align:left; ">
-                        <hi rend="bold">Tzompanaki, Katerina / Doerr Martin (2012):</hi> 
-                        <hi rend="italic">Fundamental Categories and Relationships for intuitive querying CIDOC-CRM based repositories</hi>, 
-                        Technical Report ICS-FORTH/TR-429, April 2012, &lt;http://cidoc-crm.org/docs/TechnicalReport429_April2012.pdf&gt;
+                    <bibl>
+                        <hi rend="bold">Semino, Elena / Short, Mick (2004)</hi>: <hi rend="italic">Corpus stylistics. </hi>Speech, writing and thought presentation in a corpus of English writing. London / New York: Routledge.
                     </bibl>
                 </listBibl>
             </div>

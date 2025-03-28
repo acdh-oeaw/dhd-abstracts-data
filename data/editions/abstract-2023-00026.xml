@@ -1,22 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="FISCHEIDL_Kathrin_das_Deutsche_Kunstarchiv_auf_neuen_Wegen" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="CHRIST_Andreas_Digitale_Interaktion_auf_Augenhöhe___drei_Weg" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Das Deutsche Kunstarchiv auf neuen Wegen</title>
+                <title>Digitale Interaktion auf Augenhöhe – drei Wege zu partizipativer Forschung und FAIRer Lehre an der UB Kiel</title>
                 <author>
                     <persName>
-                        <surname>Fischeidl</surname>
-                        <forename>Kathrin</forename>
+                        <surname>Christ</surname>
+                        <forename>Andreas</forename>
                     </persName>
-                    <affiliation>Germanisches Nationalmuseum, Deutschland</affiliation>
-                    <email>k.fischeidl@gnm.de</email>
-                    <idno type="ORCID">0000-0001-5508-7826</idno>
+                    <affiliation>Christian-Albrechts-Universität zu Kiel, Deutschland</affiliation>
+                    <email>christ@ub.uni-kiel.de</email>
+                    <idno type="ORCID">0000-0002-3591-2355</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Diebel</surname>
+                        <forename>Richard</forename>
+                    </persName>
+                    <affiliation>Christian-Albrechts-Universität zu Kiel, Deutschland</affiliation>
+                    <email>diebel@ub.uni-kiel.de</email>
+                    <idno type="ORCID">0000-0001-7525-7175</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Henzel</surname>
+                        <forename>Katrin</forename>
+                    </persName>
+                    <affiliation>Christian-Albrechts-Universität zu Kiel, Deutschland</affiliation>
+                    <email>henzel@ub.uni-kiel.de</email>
+                    <idno type="ORCID">0000-0001-8260-223X</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Petersen</surname>
+                        <forename>Britta</forename>
+                    </persName>
+                    <affiliation>Christian-Albrechts-Universität zu Kiel, Deutschland</affiliation>
+                    <email>b.petersen@rz.uni-kiel.de</email>
+                    <idno type="ORCID">0000-0002-0355-2594</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vetter</surname>
+                        <forename>Angila</forename>
+                    </persName>
+                    <affiliation>Christian-Albrechts-Universität zu Kiel, Deutschland</affiliation>
+                    <email>vetter@ub.uni-kiel.de</email>
+                    <idno type="ORCID">0000-0001-7662-191X</idno>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-12-16T13:28:00Z</date>
+                    <date>2022-12-16T17:08:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -62,17 +98,20 @@
                     <term>Posterpräsentation</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>WissKI</term>
-                    <term>Archive</term>
-                    <term>CIDOC CRM</term>
+                    <term>Partizipative Forschung</term>
+                    <term>FAIRe Lehre</term>
+                    <term>OER</term>
+                    <term>Citizen Science</term>
+                    <term>Inklusion</term>
+                    <term>Open Cultural Heritage Data</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Modellierung</term>
-                    <term>Archivierung</term>
-                    <term>Daten</term>
-                    <term>Metadaten</term>
-                    <term>Software</term>
-                    <term>virtuelle Forschungsumgebungen</term>
+                    <term>Teilen</term>
+                    <term>Community-Bildung</term>
+                    <term>Kollaboration</term>
+                    <term>Lehre</term>
+                    <term>Curricula</term>
+                    <term>Infrastruktur</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -80,79 +119,84 @@
     <text>
         <body>
             <div type="div1" rend="DH-Heading1">
-            <head>Ausgangslage</head>
-            <p>
-                <hi style="font-family:CorpoS">Mit dem Sammlungsschwerpunkt auf schriftlichen Unterlagen aus dem Bereich der Bildenden Kunst unterscheidet sich das Deutsche Kunstarchiv im Germanischen Nationalmuseum in Nürnberg von Kommunal- oder Staatsarchiven. Die ca. 1450 Bestände, die seit den 1960er Jahren gesammelt werden, umfassen Vor- und Nachlässe aus dem deutschen Sprachraum der Gebiete Architektur, Bildhauerei, Bildwissenschaft, Design, Fotografie, Kunstgeschichte, Kunsthandel, Kunsthandwerk, Malerei und Restaurierung und decken den Zeitraum vom späten 19. Jahrhundert bis in die Gegenwart ab.</hi>
-            </p>
-            <p>
-                <hi style="font-family:CorpoS">Durch den konkreten Schwerpunkt und die strukturelle Ähnlichkeit der einzelnen Bestände wuchs der Wunsch nach einem auf die Archivbestände zugeschnittenen Datenbanksystem.</hi>
-            </p>
-            <p>
-                <hi style="font-family:CorpoS">2019 wurde der Entschluss gefasst, die seit 2009 genutzte hierarchische Datenbank durch eine semantische und graphbasierte Datenbank zu ersetzen. Ein Systemwechsel war unter anderem notwendig, weil die vorherige Archivsoftware nicht 64-bit fähig war. Anpassungen bei der Onlinepräsentation sind ebenso stark eingeschränkt und berücksichtigen nicht die adäquate Darstellbarkeit auf mobilen Geräten. Ein Upgrade auf eine neuere Version desselben Systems ist kostenpflichtig.</hi>
-            </p>
-            <p>
-                <hi style="font-family:CorpoS" xml:space="preserve">Während viele Archive zur Erschließung und Onlinestellung ihrer Bestände auf kommerzielle Softwarelösungen zurückgreifen, haben die Archive des Germanischen Nationalmuseums - das Historische Archiv und das Deutsche Kunstarchiv - einen alternativen Weg beschritten. </hi>
-            </p></div>
+                <head>Ausgangslage</head>
+                <p style="text-align: left; ">Das Selbstverständnis wissenschaftlicher Bibliotheken hat sich grundlegend gewandelt (z.B. Auberer et al. 2022): Neben ‚traditionellen‘ Aufgaben im Bewahren, Digitalisieren, Erschließen und dauerhaften Bereitstellen offener Kulturdaten übernehmen insbesondere Universitätsbibliotheken zunehmend Aufgaben im Forschungsdatenmanagement, stellen Arbeits- und Infrastrukturen inklusive Schulungs- und Beratungsdienste für DH-Projekte bereit. Ihnen kommt damit „eine wichtige Rolle bei der Sicherung guter wissenschaftlicher Praxis durch professionellen Umgang mit Forschungsdaten“ zu (Rösch 2021, 136). Hierin wird die 
+                    <hi rend="italic" xml:space="preserve">vermittelnde </hi>Rolle von Bibliotheken deutlich, gerade auch im Umgang mit Standards für Open Data. Der von den Bibliotheken selbst wie auch an sie herangetragene Anspruch an Offenheit (Berg-Weiß et al. 2022) ist jedoch nicht garantiert, vielmehr zeigt sich aufgrund der ausgesprochen heterogenen Ausgangs- und Rahmenbedingungen für Open Science (vgl. UNESCO 2021, 6) erst in konkreten Anwendungsfällen, ob der Zugang zu Kulturdaten, ihre Erstellung und (Nach-)Nutzung gemäß rechtlicher Vorgaben tatsächlich offen sind.
+                </p>
+                <p style="text-align: left; ">Ein solches Anwendungsszenarium ist mit der FAIRen Produktion und Nachnutzung von OER im Kontext der Lehre Gegenstand dieses Posters. Als Beispiel dient ein an der UB Kiel angesiedeltes Projekt, welches wiederum in ein partizipatives Forschungsdatenmanagement eingebettet ist, das mit Inklusion und Citizen Science zwei weitere Schwerpunkte bildet. Alle drei Bereiche teilen dabei die Grundidee der digitalen Interaktion auf Augenhöhe, die essentiell für das Gelingen partizipativer Forschung und FAIRer Lehre ist.</p>
+            </div>
             <div type="div1" rend="DH-Heading1">
-            <head>Anforderung</head>
-            <p>
-                <hi style="font-family:CorpoS">Aufgrund der negativen Erfahrung mit der vorherigen Archivsoftware, soll die neue Software Open Source sein. Darüber hinaus ist eine flexible Webpräsentation wichtig, die an die sich stetig ändernden Anforderungen der Nutzer:innen und der Geräte jeweils angepasst werden kann. Die im Archivinformationssystem zur Verfügung gestellten Daten müssen persistent und zitierfähig sein, um Nachhaltigkeit und Zukunftsfähigkeit sicherzustellen. Außerdem ist ein strukturell standardkonformes System zentral für die Implementierung von ISAD(</hi>G) (Internationale Grundsätze für die archivische Verzeichnung
-                <hi style="font-family:CorpoS">) und dem ISO-zertifizierten CIDOC (</hi>International Committee on Documentation
-                <hi style="font-family:CorpoS">) Conceptual Reference Model des International Council of Museums (ICOM).</hi>
-            </p></div>
+                <head>FAIRe Open Educational Resources</head>
+                <p style="text-align: left; ">Freier Zugang zu und niedrigschwellige Nachnutzung von Lern- und Lehrmaterialien gehören zu einer offenen Wissenschaftspraxis. Open Educational Resources (OER) „kommt eine wichtige Funktion bei einem chancengerechten Wandel in der Bildung [...] zu“ (BMBF 2022, 2). Informations- und Kommunikationstechnologien bieten dabei, wie die UNESCO in ihrer Empfehlung zu OER betont, „ein hohes Potenzial für effektiven, chancengerechten und inklusiven Zugang zu OER und deren Weiterverwendung, Bearbeitung und Weiterverbreitung“ (UNESCO 2019, I.3). Dieses Potenzial umzusetzen ist jedoch anspruchsvoll, da neben der Verwendung offener Lizenzen und Dateiformate auch automatische Auffindbarkeit und didaktische Kontextualisierung gewährleistet werden müssen (Twillo o.J.). Herkömmliche Lernmanagement-Systeme an Hochschulen eignen sich für die Produktion FAIRer OER nur sehr bedingt (Dietrich, Zug 2020). Im zentralen Forschungsdatenmanagement der CAU kommt daher LiaScript – ein erweiterbarer, freier Markdown-Dialekt (Dietrich 2022) – zum Einsatz. Er wurde für die Erstellung digitaler Lern- und Lehrressourcen entwickelt und gewährleistet einfache Editier- und Versionierbarkeit der Materialien mittels Open-Source-Software ohne den Einsatz proprietärer Autor:innensysteme. Durch die Verwendung von Markdown bleiben die Materialien formatunabhängig und können für verschiedene Anwendungsfälle in passende Formate (u.a. HTML, PDF, SCORM für Lernmanagement-Systeme) exportiert werden. In zwei Kieler Pilotprojekten werden modulare LiaScript-Bausteine zu Digital-Literacy-Inhalten gemeinsam mit den Fachwissenschaften entwickelt, welche die didaktische Strukturierung und fachliche Einbettung sichern. Ein von der UB Kiel mit dem Germanistischen und Historischen Seminar der CAU Kiel durchgeführtes Projekt hat die Integration dieser Bausteine in bestehende curriculare Lehrveranstaltungen zum Ziel. Hierbei spielen organisatorisch-infrastrukturelle, fachliche, didaktische und technische Aspekte eine Rolle, die zusammen mit ersten Evaluationsergebnissen zum Einsatz des Tools in Lehrveranstaltungen diskutiert werden. </p>
+            </div>
             <div type="div1" rend="DH-Heading1">
-            <head>Evaluierung</head>
-            <p>
-                <hi style="font-family:CorpoS" xml:space="preserve">Die zugrundeliegende Ontologie für das semantische Datenmodell ist das CIDOC CRM. Ausschlaggebend für diese Entscheidung waren die Flexibilität und die Erweiterungsmöglichkeiten. So konnten die Anforderungen, die der Wechsel eines Erschließungssystems mit sich bringt, diskutiert und eine für die Bedürfnisse des Deutschen Kunstarchivs maßgeschneiderte aber zugleich den archivischen Standards entsprechende Erschließungsstruktur modelliert werden. </hi>
-            </p>
-            <p>
-                <hi style="font-family:CorpoS" xml:space="preserve">Bei der Konzeption der Erweiterung des CIDOC CRM wurden nicht nur die Vorgaben der inhaltlich beschreibenden Bestandserschließung berücksichtigt, sondern auch Anforderungen der Dokumentation, der Digitalisierung und der Vernetzung innerhalb der Bestände mitbedacht. Aus intensiven Diskussionen mit allen archiv- und datenbankerprobten Mitarbeiter:innen ging die Konzeption von Mechanismen zur Erfassung von archivinternen Workflows hervor. So wurden im Datenmodell Eingabefelder für restauratorische Maßnahmen, Akzessionierung oder das Depotmanagement ergänzt. Die weiteren beschreibenden Erfassungsfelder basieren auf den Erschließungsstandards ISAD(G) sowie RNAB (Ressourcenerschließung mit Normdaten in Archiven und Bibliotheken für Personen-, Familien-, Körperschaftsarchive und Sammlungen). Das entwickelte Archivinformationssystem bietet den Verzeichner:innen auf diese Weise die Möglichkeit auf allen Ebenen - vom Gesamtbestand bis hin zum Einzeldokument - inhaltliche Informationen mit Daten zur Bestandsverwaltung und -konservierung zu verknüpfen. </hi>
-            </p>
-            <p>
-                <hi style="font-family:CorpoS">Die Anwendungsontologie des Deutschen Kunstarchivs bietet neben der Ontologie des International Council on Archives Records in Contexts (RiC-O) eine praxisnahe Diskussionsgrundlage für eine allgemeinere Erweiterung des CIDOC CRM für die archivische Erschließung. Bisher gibt es in diesem Kontext nur vereinzelte Versuche, wie den des Portuguese National Archive (vgl. Melo 2022) oder für Kommunalarchive allgemein (vgl. Vitzthum 2021). Das Portuguese National Archive weicht in der Modellierung des graphbasierten Datenmodells vom Deutschen Kunstarchiv ab. Das heißt, es werden unterschiedliche Klassen des CIDOC CRMs benutzt. Die Modellierung am Beispiel der Kommunalarchive wendet die RiC-Ontologie auf die Archivbestände an. Das Archivinformationssystem des Deutschen Kunstarchivs zeigt exemplarisch, dass sich mithilfe des CIDOC CRM und WissKI Archivbestände adäquat strukturieren sowie erfassen lassen und sich darüber hinaus auch deren Binnenstruktur abbilden lässt.</hi>
-            </p>
-            <p>
-                <hi style="font-family:CorpoS">Bei der Evaluierung existierender Systeme hinsichtlich der vorliegenden Anforderungen zeigte sich, dass für die Umsetzung des Graphnetzwerks mit einer spezifischen Domänenontologie lediglich WissKI alle Aspekte erfüllt.</hi>
-            </p></div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Umsetzung, aktueller Stand und Ausblick</head>
-            <p>
-                <hi style="font-family:CorpoS">Innerhalb von zwei Jahren wurden die Daten ins neue Datenbanksystem migriert. Aktuell verzeichnen die Mitarbeiter:innen des Deutschen Kunstarchivs neue Bestände bereits im WissKI. Um in nationale und internationale Portale Daten liefern zu können, muss ein Export der auf CIDOC CRM basierenden Metadaten in die gewünschte EAD (Encoded Archival Description) xml Struktur entwickelt werden. Zusätzlich wird an einem Konzept zur Onlinestellung der Daten gearbeitet, das im folgenden Jahr umgesetzt werden soll.</hi>
-            </p>
-            <p>
-                <hi style="font-family:CorpoS">Das Poster veranschaulicht zum einen die Entscheidungsgrundlagen und Vorstellungen der Mitarbeiter:innen des Deutschen Kunstarchivs bezüglich der Umsetzung eines Linked Open Data basierten Archivinformationssystems. Zum anderen wird die Modellierung der Domänenontologie auf Basis von CIDOC CRM abgebildet, die für die Umsetzung des Datenmodells notwendig ist.</hi>
-            </p>
+                <head>Einbindung in ein Gesamtkonzept eines partizipativen und inklusiven Forschungsdatenmanagements</head>
+                <p style="text-align: left; ">Eng verbunden mit der Forderung nach offener und freier Bildung sind die Themen Partizipation der Zivilgesellschaft mittels Citizen Science und eine inklusiv gedachte und praktizierte Wissenschaft als Bestandteile einer offenen Wissenschaftskultur. Universitätsbibliotheken bieten aufgrund ihrer bestehenden Erfahrung und Infrastruktur die Möglichkeit, partizipative, trans- und interdisziplinäre Forschungsprojekte anzustoßen und zu begleiten, zur Vernetzung zwischen Bürger:innen und der Scientific Community beizutragen, Citizen-Science-Projekte sichtbar zu machen und zu beraten (Vohland et al. 2021, 114; siehe auch Wiederkehr 2021). Die Transkription von Texten, Georeferenzierung von Objekten und Kategorisierung von kulturellen Artefakten bietet, etwa über eine App, einen niederschwelligen Zugang, um Bürger:innen an Forschungsprozessen zu beteiligen (vgl. Studie zu ‘Public Participation in Scientific Research’, Bonney et al. 2009) und sie, nicht zuletzt mittels OER, beim Erwerb von Datenkompetenzen zu unterstützen. </p>
+                <p style="text-align: left; ">Offenheit und Teilhabe sind wesentliche Forderungen der FAIR-Prinzipien. Wie aber gestalten sich FAIRe Daten für und barrierearmes Arbeiten in inklusiven Forschungsgruppen? Versteht man Behinderung als komplexes Phänomen und als Interaktion zwischen Individuum und Umwelt (UNESCO 2022, Abs. 1f.), liegt die Vermutung nahe, es könne keine allgemeingültigen Standards für einen inklusiven Umgang mit Forschungsdaten geben. Doch zeigen z.B. die Regelungen im Webdesign (nach WCAG 2.1 und BITV 2.0), dass sich die Rahmenbedingungen sehr wohl ändern und Barrieren abbauen lassen. Für das Forschungsdatenmanagement soll Ähnliches erreicht werden, hier gilt es den Fokus über die Präsentation von Daten hinaus um Datenerhebung, -analyse und -archivierung zu erweitern.</p>
             </div>
         </body>
         <back>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl style="text-align: left;">
-                        <hi style="font-family:CorpoS;font-size:9pt" xml:space="preserve"><hi rend="bold">Bekiari, Chryssoula und George Bruseker, Erin Canning, Martin Doerr, Philippe Michon , Christian-Emil Ore, Stephen Stead, Athanasios Velios.</hi> 2022. „Definition of the CIDOC Conceptual Reference Model.” </hi>
-                        <ref target="https://cidoc-crm.org/sites/default/files/cidoc_crm_version_7.2.1.pdf">
-                            <hi style="font-family:CorpoS;font-size:9pt">https://cidoc-crm.org/sites/default/files/cidoc_crm_version_7.2.1.pdf</hi>
-                        </ref>
-                        <hi style="font-family:CorpoS;font-size:9pt" xml:space="preserve"> (zugegriffen: 15.12.2022).</hi>
+                    <bibl style="text-align: left; "><hi rend="bold">Auberer, Benjamin, Alexander Berg-Weiß, Vanessa Gabriel und Martin Spenger.</hi> 2022. „Potentiale nutzen und Verbindungen herstellen. Neue fachliche Aufgabenbereiche für Bibliotheken am Beispiel Forschungsdatenmanagement.“ 
+                        <hi rend="italic">O-Bib</hi> 9 (2), 1–16. 10.5282/o-bib/5783.
                     </bibl>
-                    <bibl style="text-align: left;">
-                        <hi style="font-family:CorpoS;font-size:9pt"><hi rend="bold">Brüning, Rainer und Werner Heegewaldt, Nils Brübach.</hi> 2002. „ISAD(G) - Internationale Grundsätze für die archivische Verzeichnung.“ 2. überarbeitete Ausgabe. https://www.ica.org/sites/default/files/CBPS_2000_Guidelines_ ISAD%28G%29_Second-edition_DE.pdf (zugegriffen: 15.12.2022).</hi>
+                    <bibl style="text-align: left; "><hi rend="bold">Berg-Weiß, Alexander, Sibylle Hermann, Miriam Kötter, Caroline Leiß, Christoph Müller und Annette Strauch-Davey. </hi>2022. „Openness in Bibliotheken. Positionspapier der Kommission für Forschungsnahe Dienste des VDB.“ 
+                        <hi rend="italic">O-Bib</hi> 9 (2):1-4. 10.5282/o-bib/5826.
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Clavaud, Florence und International Council on Archives Expert Group on Archival Description.</hi> 2021. „Records in Contexts Ontology (ICA RiC-O) version 0.2.“ https://www.ica.org/standards/RiC/RiC-O_v0-2.html (zugegriffen: 15.12.2022).</bibl>
-                    <bibl style="text-align: left;">
-                        <hi style="font-family:CorpoS;font-size:9pt" xml:space="preserve"><hi rend="bold">Melo, Dora und Irene Pimenta Rodrigues, Davide Varagnolo.</hi> 2022. „A strategy for archives metadata representation on CIDOC-CRM and knowledge discovery.” In </hi>
-                        <hi rend="italic" style="font-family:CorpoS;font-size:9pt" xml:space="preserve">Semantic Web – Interoperability, Usability, Applicability, </hi>
-                        <hi style="font-family:CorpoS;font-size:9pt">Pre-Press 1-32.</hi>
+                    <bibl style="text-align: left; "><hi rend="bold">Bundesministerium für Bildung und Forschung (BMBF).</hi> 2022. 
+                        <hi rend="italic" xml:space="preserve">OER-Strategie. Freie Bildungsmaterialien für die Entwicklung digitaler Bildung. </hi>Berlin: BMBF. https://www.bmbf.de/SharedDocs/Publikationen/de/bmbf/3/691288_OER-Strategie.html (zugegriffen: 14. Dezember 2022).
                     </bibl>
-                    <bibl style="text-align: left;">
-                        <hi style="font-family:CorpoS;font-size:9pt" xml:space="preserve"><hi rend="bold">Österreichische Nationalbibliothek, Schweizerische Nationalbibliothek und Staatsbibliothek zu Berlin – Preußischer Kulturbesitz.</hi> 2019. „Ressourcenerschließung mit Normdaten in Archiven und Bibliotheken (RNAB) für Personen-, Familien-, Körperschaftsarchive und Sammlungen. Richtlinie und Regeln.“ Wien, Bern, Berlin. </hi>
-                        <ref target="https://d-nb.info/1186104252/34">
-                            <hi style="font-family:CorpoS;font-size:9pt">https://d-nb.info/1186104252/34</hi>
-                        </ref>
-                        <hi style="font-family:CorpoS;font-size:9pt" xml:space="preserve"> (zugegriffen: 15.12.2022).</hi>
+                    <bibl style="text-align: left; "><hi rend="bold">Dietrich, André und Sebastian Zug.</hi> 2020. 
+                        <hi rend="italic">From Hero to Zero with Learning Management Systems. Why and How LMSs fail in distributing knowledge.</hi>
+                        <hi rend="color(0563C1)">https://aizac.herokuapp.com/from-hero-to-zero-with-learning-management-systems</hi> (zugegriffen: 28. Juli 2022).
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Society of American Archivists, Library of Congress.</hi> 1999. „EAD Application Guidelines for Version 1.0” https://www.loc.gov/ead/ (zugegriffen: 15.12.2022).</bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Vitzthum, Maximilian.</hi> 2021. „kommais“ - Zur Umsetzung eines auf Records in Contexts basierenden Archivinformationssystems für Kommunalarchive auf Grundlage der virtuellen Forschungsumgebung "WissKI". Unveröffentlichte Masterarbeit. Erlangen, Nürnberg: Friedrich-Alexander-Universität Erlangen-Nürnberg.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Dietrich, André.</hi> 2022. 
+                        <hi rend="italic">Share your knowledge and build online courses with simple Markdown!</hi>
+                        <hi rend="color(0563C1)">https://liascript.github.io</hi> (zugegriffen: 01. August 2022).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Göbel, Claudia, Justus Henke und Sylvi Mauermeister.</hi> 2020. 
+                        <hi rend="italic">Kultur und Gesellschaft gemeinsam erforschen. Überblick und Handlungsoptionen zu Citizen Science in den Geistes- und Sozialwissenschaften</hi>, 
+                        <hi rend="color(111111)">unter Mitarbeit von Susann Hippler, Nicola Gabriel und Steffen Zierold, Institut für Hochschulforschung (HoF) an der Martin</hi>
+                        <hi rend="color(111111)" style="font-family:Cambria Math">-</hi>
+                        <hi rend="color(111111)">Luther</hi>
+                        <hi rend="color(111111)" style="font-family:Cambria Math">-</hi>
+                        <hi rend="color(111111)">Universität, Halle</hi>
+                        <hi rend="color(111111)" style="font-family:Cambria Math">-</hi>
+                        <hi rend="color(111111)">Wittenberg</hi>. 
+                        <hi rend="color(0563C1)">https://www.hof.uni-halle.de/web/dateien/pdf/HoF-Handreichungen14.pdf</hi> (zugegriffen: 14. Dezember 2022).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Heinisch, Barbara, Kristin Oswald, Maike Weißpflug et al.</hi> 2021. „Citizen Humanities.“ In 
+                        <hi rend="italic">The Science of Citizen Science</hi>, hg. von Kathrin Vohland, Anne Land-Zandstra, Luigi Ceccaroni et al., Cham: Springer, 97–118. 10.1007/978-3-030-58278-4_6.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Bonney, Rick et al.</hi> 2009. 
+                        <hi rend="italic">Public participation in scientific research: Defining the field and assessing its potential for informal science education: A CAISE inquiry group report</hi>. 
+                        <ref target="https://files.eric.ed.gov/fulltext/ED519688.pdf">https://files.eric.ed.gov/fulltext/ED519688.pdf</ref> (zugegriffen: 14. Dezember 2022).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Rösch, Hermann.</hi> 2021. „Forschungsethik und Forschungsdaten.“ In 
+                        <hi rend="italic">Praxishandbuch Forschungsdatenmanagement</hi>, hg. von Markus Putnings, Heike Neuroth und Janna Neumann, Berlin, Boston: De Gruyter Saur, 115–140. 10.1515/9783110657807.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Twillo. o.J.</hi>
+                        <hi rend="italic" xml:space="preserve"> Digitaler Leitfaden Teilen von Bildungsmaterialien</hi>. 
+                        <hi rend="color(0563C1)">https://twillo-lehre-teilen.github.io/leitfaden-oer-workshop/#/</hi> (zugegriffen: 01. August 2022).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Wiederkehr, Stefan.</hi> 2021. „Citizen Science: Eine Chance für wissenschaftliche Bibliotheken.“ 
+                        <hi rend="italic">O-Bib</hi> 8 (4), 1–13
+                        <hi rend="bold" xml:space="preserve">. </hi>10.5282/o-bib/5727.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">UNESCO.</hi> 2019. 
+                        <hi rend="italic">UNESCO Empfehlung zu Open Educational Resources</hi>. Paris: UNESCO. 
+                        <hi rend="color(0563C1)">https://www.unesco.de/sites/default/files/2020-05/2019_Empfehlung%20Open%20Educational%20Resources.pdf</hi> (zugegriffen: 14. Dezember 2022).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">UNESCO.</hi> 2021. 
+                        <hi rend="italic">UNESCO Recommendation on Open Science</hi>. Paris: UNESCO. 
+                        <hi rend="color(0563C1)">https://unesdoc.unesco.org/ark:/48223/pf0000379949.locale=en</hi> (zugegriffen: 14. Dezember 2022).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">UNESCO Institute for Statistics.</hi> 2022. „Disability“, in 
+                        <hi rend="italic" xml:space="preserve">UIS Glossary. </hi>
+                        <hi rend="color(0563C1)">https://uis.unesco.org/en/glossary-term/disability</hi> (zugegriffen: 14. Dezember 2022).
+                    </bibl>
                 </listBibl>
             </div>
         </back>

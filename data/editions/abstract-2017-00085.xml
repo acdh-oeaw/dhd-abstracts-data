@@ -1,68 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="workshop-GRADL" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="vortrag-RISSL" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Daten sammeln, modellieren und durchsuchen mit DARIAH-DE </title>
+<title>Automatische Bild-Text-Analyse: Chancen für die Zeitschriftenforschung jenseits von reinen Textdaten</title>
 <author>
 <persName>
-<surname>Gradl</surname>
-<forename>Tobias</forename>
+<surname>Rißler-Pipka</surname>
+<forename>Nanette</forename>
 </persName>
-<affiliation>Universität Bamberg</affiliation>
-<email>tobias.gradl@uni-bamberg.de</email>
+<affiliation>Katholische Universität Eichstätt-Ingolstadt, Deutschland</affiliation>
+<email>nanette.rissler-pipka@ku.de</email>
 </author>
 <author>
 <persName>
-<surname>Aschauer</surname>
-<forename>Anna</forename>
+<surname>Chandna</surname>
+<forename>Swati</forename>
 </persName>
-<affiliation>Leibniz-Institut für Europäische Geschichte (IEG)</affiliation>
-<email>aschauer@ieg-mainz.de</email>
+<affiliation>Karlsruhe Institute of Technology, Deutschland</affiliation>
+<email>swati.chandna@kit.edu</email>
 </author>
 <author>
 <persName>
-<surname>Dogunke</surname>
-<forename>Swantje</forename>
+<surname>Tonne</surname>
+<forename>Danah</forename>
 </persName>
-<affiliation>Klassik Stiftung Weimar</affiliation>
-<email>swantje.dogunke@klassik-stiftung.de</email>
-</author>
-<author>
-<persName>
-<surname>Klaffki</surname>
-<forename>Lisa</forename>
-</persName>
-<affiliation>Herzog August Bibliothek Wolfenbüttel</affiliation>
-<email>klaffki@hab.de</email>
-</author>
-<author>
-<persName>
-<surname>Schmunk</surname>
-<forename>Stefan</forename>
-</persName>
-<affiliation>Niersächsische Staats- und Universitätsbibliothek Göttingen</affiliation>
-<email>schmunk@sub.uni-goettingen.de</email>
-</author>
-<author>
-<persName>
-<surname>Steyer</surname>
-<forename>Timo</forename>
-</persName>
-<affiliation>Herzog August Bibliothek Wolfenbüttel</affiliation>
-<email>steyer@hab.de</email>
+<affiliation>Karlsruhe Institute of Technology, Deutschland</affiliation>
+<email>danah.tonne@kit.edu</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2015-10-04T22:02:00Z</date>
+<date>2016-11-22T10:33:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
 <publisher>Prof. Dr. Michael Stolz</publisher>
 <address>
-<addrLine>Universität Bern</addrLine>
-<addrLine>Institut für Germanistik</addrLine>
+<addrLine>UniversitÃ¤t Bern</addrLine>
+<addrLine>Institut fÃ¼r Germanistik</addrLine>
 <addrLine>Laenggass-Str. 49</addrLine>
 <addrLine>CH-3000 Bern 9</addrLine>
 </address>
@@ -81,30 +57,34 @@
 <profileDesc>
 <textClass>
 <keywords n="category" scheme="ConfTool">
-<term>Workshops</term>
+<term>Vortrag</term>
 </keywords>
 <keywords n="subcategory" scheme="ConfTool">
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Forschungsdaten</term>
-<term>Datenmodellierung</term>
-<term>Datenföderation</term>
-<term>Nachnutzung</term>
-<term>DARIAH-DE</term>
+<term>Bildanalyse</term>
+<term>Dokumentanalyse</term>
+<term>Zeitschriften</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Umwandlung</term>
-<term>Sammlung</term>
-<term>Modellierung</term>
+<term>Datenerkennung</term>
+<term>Gestaltung</term>
+<term>Programmierung</term>
+<term>Inhaltsanalyse</term>
+<term>Beziehungsanalyse</term>
 <term>Kontextsetzung</term>
+<term>Theoretisierung</term>
 <term>Bereinigung</term>
 <term>Bearbeitung</term>
-<term>Kollaboration</term>
+<term>Archivierung</term>
+<term>Identifizierung</term>
+<term>Visualisierung</term>
 <term>Daten</term>
-<term>Infrastruktur</term>
+<term>Bilder</term>
+<term>Interaktion</term>
 <term>Metadaten</term>
-<term>Personen</term>
+<term>Visualisierung</term>
 </keywords>
 </textClass>
 </profileDesc>
@@ -112,228 +92,177 @@
 <text>
 <body>
 <div rend="DH-Heading1" type="div1">
-<head>Überblick</head>
-<p>Die sammlungsübergreifende Recherche und Nachnutzung geisteswissenschaftlicher Forschungsdaten stehen im Blickpunkt aktueller Forschung in den Digital Humanities. Obwohl das Interesse an einer Zusammenführung digitaler Forschungsdaten bereits kurz nach der Einführung erster digitaler Bibliotheken um die Jahrtausendwende entstand, bleibt die Integration von Forschungsdaten über Sammlungsgrenzen hinweg ein aktuelles Forschungsthema. Bei einer forschungsorientierten Betrachtung von Sammlungen digitaler Daten (also z. B. digitale Texte, Digitalisate, Normdaten, Metadaten) stellt sich die Frage nach den Anforderungen und Erfolgskriterien einer übergreifenden Föderation, Verarbeitung und Visualisierung von Forschungsdaten.</p>
-<p>Entgegen der in der Praxis üblichen Orientierung an institutionellen Anforderungen stellen die in DARIAH-DE entwickelten Konzepte und Dienste zur Verzeichnung, Korrelation und Zusammenführung von Forschungsdaten die Bedürfnisse von WissenschaftlerInnen im Kontext ihrer Forschungsfragen in den Mittelpunkt. Dies äußert sich beispielsweise darin, dass DARIAH-DE keine strukturellen Bedingungen an Forschungsdaten stellt. Stattdessen können Daten so publiziert, modelliert und integriert werden, dass eine möglichst gute Passung an den jeweiligen geisteswissenschaftlichen Kontext erreicht wird.</p>
-<p>Dieser Workshop wird zunächst in Form kurzer Referate Hintergrundwissen zu den Konzepten und Diensten der DARIAH-DE Föderationsarchitektur
-                    <ref n="1" target="workshop-GRADLftn1" type="note">1</ref> vermitteln. Wichtige Bereiche sind dabei nicht nur die Handhabung der Daten selbst sowie Fragen der Lizensierung von Forschungsdaten, sondern auch die Nachnutzbarkeit einmal erhobener oder gesammelter Daten für weitere Forschungsfragen oder zur Nutzung durch andere WissenschaftlerInnen. Ein wesentlicher Anteil des Workshops wird dann insbesondere in der Hands-On-Anwendung der Komponenten durch die TeilnehmerInnen selbst bestehen.
-                </p>
-<div rend="DH-Heading2" type="div2">
-<head>Thematische Schwerpunkte</head>
-<p>Die wesentlichen Themenschwerpunkte des Workshops können wie folgt zusammengefasst werden:</p>
-<list type="unordered">
-<item>Hintergründe und Best Practices zur 
-                            <hi rend="italic">Lizensierung</hi> und 
-                            <hi rend="italic">Nachnutzbarkeit</hi> von Forschungsdaten
-                        </item>
-<item>Beschreibung und nachhaltige 
-                            <hi rend="italic">Referenzierbarkeit</hi> von Sammlungen in der DARIAH-DE Collection Registry
-                        </item>
-<item>
-<hi rend="italic">Modellierung</hi> von Daten in der DARIAH-DE Schema Registry zur Beschreibung des Erstellungskontexts von Daten sowie deren Transformation in einen forschungsorientierten Verwendungskontext
-                        </item>
-</list>
-<p>Anhand der generischen Suche von DARIAH-DE werden die Auswirkungen der Benutzerinteraktion im Rahmen des Workshops sofort erkennbar, d. h. referenzierte Daten werden anhand der entwickelten Datenmodelle verarbeitet und können gemeinsam durchsucht und analysiert werden. </p>
-<p>Der gesamte Workshop wird thematisch begleitet von der konkreten, historischen Anforderung (vgl. Szöllösi-Janze, Panter &amp; Paulmann 2015), biographische Daten und Texte aus verschiedenen Datenquellen zu verarbeiten. Die schließlich integrierten biographische Profile (vgl. Gradl &amp; Henrich 2016b) können zur Unterstützung konkreter historischer Forschung herangezogen werden. Das Beispiel ist so gewählt, dass den Teilnehmerinnen und Teilnehmern eine konzeptuelle Übertragung auf ihre eigenen Daten und Forschungsfragen erleichtert wird.</p>
-</div>
-<div rend="DH-Heading2" type="div2">
-<head>Zielpublikum</head>
-<p>Der Workshop richtet sich gleichermaßen an:</p>
-<list type="unordered">
-<item>geisteswissenschaftliche WissenschaftlerInnen in den unterschiedlichsten Phasen des akademischen Werdegangs</item>
-<item>VertreterInnen von Institutionen, die Datensammlungen im Rahmen von DARIAH-DE auffindbar und zugreifbar machen möchten,</item>
-<item>sowie auch VertreterInnen der Informatik, die ein Interesse an der Implementierung von DARIAH-DE Komponenten bzw. den Datenaustausch auf Basis maschinell zugreifbarer Schnittstellen haben.</item>
-</list>
-<p>Wer bereits über digitale Daten verfügt, ist herzlich eingeladen, diese für die Hands-On-Sessions mitzubringen, um an diesen konkreten Beispielen die DARIAH-DE-Tools zu erarbeiten. Für TeilnehmerInnen, die keine geeigneten Daten mitbringen können, werden Beispiele zur Verfügung gestellt. Bitte bringen Sie in jedem Fall Ihren eigenen Laptop mit!</p>
-<p>Der Workshop ist Teil zweier konzeptionell eigenständiger Einreichungen zu den Angeboten der digitalen Forschungsinfrastrukturen TextGrid und DARIAH-DE. Der erste Workshop hat den Titel "Annotieren und Publizieren mit DARIAH-DE und TextGrid“. Der Besuch beider Workshops ermöglicht eine grundlegende und umfassende Einführung in und Anwendung von Architektur, Tools, Diensten und Workflows zum Annotieren, Sammeln, Modellieren, Recherchieren und Publizieren geisteswissenschaftlicher Forschungsdaten. </p>
-</div>
+<head>Zeitschriften und multimodale Wahrnehmung</head>
+<p>Gerade die Epoche der Moderne (1850-1945) geht mit einer Veränderung der menschlichen Wahrnehmung einher, als mit den aufkommenden Avantgardebewegungen (sowie im Zuge der technischen, ökonomischen und sozialen Weiterentwicklung) weltweit die Anzahl der Kulturzeitschriften explosionsartig steigt. Nicht so sehr die vielzitierte technische Reproduzierbarkeit des Kunstwerks (Benjamin 1935-39) zeugt von dieser Veränderung als vielmehr die Fähigkeit zur multimodalen Wahrnehmung, heraus gebildet durch die dynamische Medienlandschaft zu der neben Photographie und Film vor allem die Zeitschriften gehören. Für Lateinamerika vergleicht Raquel Macciuci die Rezeption der modernen Presse und Zeitschriften mit der Nutzung digitaler Medien (Macciuci 2015: 209), während für den deutschsprachigen Raum gleich zwei Tagungen zu Zeitschriften deren Multimodalität auf der einen Seite („Illustrierte Zeitschriften um 1900: Multimodalität und Metaisierung“, 2014) und die Funktionsweise der visuellen Zeitschriftenkultur auf der anderen Seite („Deutsche illustrierte Magazine – Journalismus und visuelle Kultur in der Weimarer Republik“, 2013) beleuchten. Das Desiderat der Forschung wird in dieser Beziehung schon 2010 von Frank et al. genau bestimmt:</p>
+<quote>So wissen wir inzwischen relativ gut darüber Bescheid, welche und wie viele einschlägige Zeitschriften es gab und gibt; weniger schon, wer darin worüber aus welcher Perspektive und mit welcher Stoßrichtung geschrieben hat; kaum mehr zuletzt aber, welche Gestaltung die Zeitschriften prägte und welcher Stellenwert dergleichen Publizistik zukam. (Frank et al.: 2010, 10)</quote>
+<p>Es geht auch hier in der Literatur- und Kulturwissenschaft vor allem um Zahlen, Metadaten und eine Möglichkeit die „Gestaltung“ der Zeitschriften quantitativ zu ermessen. Genau diese Felder sind prädestiniert für die Zusammenarbeit mit den DH.</p>
+<p>Wenn wir für mehr als 200 Zeitschriftentitel sagen könnten, wie das quantitative Bild-Text-Verhältnis ist und Metadaten dazu vergleichen könnten, wie z.B. die programmatische Ausrichtung des Titels, die Zielgruppe, die Akteure, der Standort und Verbreitungsgrad, dann ließen sich die von Frank et al. gestellten Fragen beantworten. In einer verfeinerten Analyse der Gestaltung kann überprüft werden, ob progressives, avantgardistisches Layout (gekennzeichnet durch viel Leerraum, reduzierte Ornamente, klare Schrifttypen) mit den entsprechend programmatisch eingeordneten Titeln übereinstimmt.</p>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>Inhalte und Ablauf des Workshops</head>
-<p>I - Impulsreferate “Sammeln”</p>
-<list type="unordered">
-<item>Lizensierung, Referenzierung und Nachnutzbarkeit von Forschungsdaten (
-                        <hi rend="italic">Lisa Klaffki</hi>)
-                    </item>
-<item>Transnationale Biographien als Beispiel einer historischen Motivation für die forschungsorientierte Föderation von DARIAH-DE (
-                        <hi rend="italic">Anna Aschauer</hi>)
-                    </item>
-</list>
-<p>II - Impulsreferat “Modellieren”</p>
-<list type="unordered">
-<item>Forschungsorienterte Modellierung und Korrelation von Daten in der Föderationsarchitektur von DARIAH-DE (
-                        <hi rend="italic">Stefan Schmunk, Tobias Gradl</hi>)
-                    </item>
-</list>
-<p>III - Impulsreferat “Durchsuchen”</p>
-<list type="unordered">
-<item>Integriertes Suche über heterogene Datenbestände – Anforderungen und Lösungsansätze im Bereich des kulturellen Erbes (
-                        <hi rend="italic">Timo Steyer, Swantje Dogunke</hi>) 
-                    </item>
-</list>
-<p>IV - Hands-on Session “Sammeln, Modellieren &amp; Durchsuchen” </p>
-<list type="unordered">
-<item>Anwendung der Föderationsarchitektur und generischen Suche von DARIAH-DE (
-                        <hi rend="italic">Tobias Gradl</hi>)
-                        <list type="unordered">
-<item>Modellierung von Daten und Vorbereitung einer Nachnutzung</item>
-<item>Assoziation heterogener wissenschaftlicher Sammlungen</item>
-<item>Verfeinerung der benutzerdefinierten Suchmöglichkeiten in der generischen Suche (Suchbild, Ranking etc.)</item>
-<item>Anpassung der generischen Suche und Bereitstellung benutzerdefinierter Suchen</item>
-</list>
-</item>
-</list>
+<head>Automatische Bild-Text-Erkennung: ein Versuch mit SWATI</head>
+<p>Am konkreten Beispiel mit Daten aus dem Projekt Revistas culturales 2.0 (Universität Augsburg) wurde vor dem Hintergrund dieses Desiderats der Versuch einer automatischen Bild-Text-Erkennung anhand von zunächst 69 Beispielseiten eines Heftes der argentinischen Kulturzeitschrift „El Hogar“ (Dec. 1919) unternommen. Während im Projekt die Metadaten der Zeitschriften bereits mit digitalen Tools zur Netzwerkvisualisierung (Ehrlicher / Herzgsell 2016) oder zur Zeit/Ort-Visualisierung mit dem DARIAH-DE Geo-Browser (http://geobrowser.de.dariah.eu/storage/199501) für Überblicksdarstellungen analysiert wurden, fehlte nach wie vor die Möglichkeit einer quantitativen Bild-Text-Analyse, die Gestaltung der Zeitschriften entsprechend.</p>
+<p>Der technische Ansatz zur Durchführung einer solchen quantitativen Bild-Text-Analyse basiert auf den Entwicklungen des eCodicology Projektes, in dem die Digitalisate des „Virtuellen Skriptoriums St. Matthias“ automatisch ausgewertet und die so erfassten Merkmale in den beschreibenden Metadaten abgelegt und anschließend visualisiert wurden. Auch aus informationstechnologischer Sicht stellt sich die Frage, ob die für mittelalterliche Handschriften verwendeten Verfahren und Algorithmen generisch einsatzbar sind und Potential für alternative Anwendungsfelder, hier am Beispiel spanischsprachiger Magazine untersucht, besitzen. Die Exploration von Erweiterungsmöglichkeiten verspricht ebenfalls zusätzlichen Erkenntnisgewinn für alle beteiligten Disziplinen.</p>
+<p>Zur Extraktion der Merkmale wird der SWATI Workflow (Software Workflow for the Automatic Tagging of Medieval Manuscript Images) genutzt (Chandna et al. 2015). Andere bestehende Methoden zur Image Document Analysis führten nicht zum erwarteten Resultat, da sie nur auf spezielle und kleine Datensätze angewendet werden können (vgl. DIVAServices-Spotlight). Hier wurde der SWATI-Workflow speziell an die heterogene Layout-Struktur der Zeitschriften angepasst.</p>
+<p>Als Basis der Untersuchung wurden auf den Digitalisaten der spanischsprachigen Magazine die Seitengröße sowie der Text- und Bildraum vermessen und jeweils die Fläche, Breite, Höhe, Koordinaten der linken oberen Ecke sowie der Neigungswinkel bestimmt.</p>
+<p>Da auf einer Seite mehrere Text- und/oder Bildbereiche wie beispielsweise Überschriften, Haupttext, Notizen, Initialen, Zeichnungen oder Glossen auftreten können, werden die genannten Werte für jeden Bereich einzeln ermittelt und gespeichert. Zusätzlich werden die Werte auch als relative Angaben in Prozent unabhängig von der Einheit der Messungen aufgeführt, um die Übertragbarkeit bei unterschiedlichen Auflösungen der Digitalisate zu gewährleisten. </p>
+<p>Im Bildbeispiel sind die Ergebnisse der jeweiligen automatischen Bild-Text-Erkennung zu erkennen: Originalbild (links) sowie segmentierte Bild- (Mitte) bzw. Textbereiche (rechts). Zusätzlich wird zur Vermessung des Seitenbereiches jeweils eine Segmentierung der Seite durchgeführt (hier nicht dargestellt)</p>
+<figure>
+<graphic height="6.6396444444444445cm" n="1001" rend="inline" url="vortrag-RISSL-image1.png" width="5.083538888888889cm"/>
+<head>Abbildung 1: Originalseite „El Hogar“</head>
+</figure>
+<figure>
+<graphic height="6.449875cm" n="1002" rend="inline" url="vortrag-RISSL-image2.png" width="4.938244444444445cm"/>
+<head>Abbildung 2: Bilderkennung</head>
+</figure>
+<figure>
+<graphic height="6.635438888888889cm" n="1003" rend="inline" url="vortrag-RISSL-image3.png" width="5.080319444444444cm"/>
+<head>Abbildung 3: Texterkennung</head>
+</figure>
+<figure>
+<graphic height="6.660377777777778cm" n="1004" rend="inline" url="vortrag-RISSL-image4.jpg" width="5.099847222222222cm"/>
+<head>Abbildung 4: Originalseite “El Hogar”</head>
+</figure>
+<figure>
+<graphic height="6.709644444444445cm" n="1005" rend="inline" url="vortrag-RISSL-image5.jpg" width="5.137569444444445cm"/>
+<head>Abbildung 5: Bilderkennung</head>
+</figure>
+<figure>
+<graphic height="6.633847222222222cm" n="1006" rend="inline" url="vortrag-RISSL-image6.jpg" width="5.079530555555555cm"/>
+<head>Abbildung 6: Texterkennung</head>
+</figure>
+<p>Wie man an diesen beiden Beispielseiten der Zeitschrift „El Hogar“ (Dec. 1919) erkennt, funktioniert die Bild- und Texterkennung sehr zuverlässig auch bei komplexeren Bild-Text-Gefügen, wie z.B. in Werbeanzeigen. Größere ins Bild integrierte Schriften, z.B. die Werbeüberschrift in Abb. 1 oder 4 wird als Teil des Bildes erkannt. Das ist aus gestaltungsanalytischer Sicht auch nicht falsch, hat die Werbeüberschrift doch gleichzeitig Bild- und Textfunktion.</p>
+<p>Ein anderes Problem ist die Zuordnung kleinerer Bild- oder Textflächen zu einer Einheit, z.B. gehört in Abb. 4-5 der Schriftblock am unteren rechten Bildrand zum Werbebild und gibt dem zentral stehenden Text eine Rahmung. Als Messergebnis erscheinen aber zwei verschieden große, unabhängige Text- bzw. Bildbereiche.</p>
+<p>Die eigentliche Analyse der gewonnenen Metadaten (Messdaten) ist dann für alle Beteiligten eine erneute Herausforderung, kann aber genau das oben beschriebene Problem der Zuordnung semantisch zusammenhängender Text- und Bildbereiche lösen. Durch eine Filtereinstellung werden bei mehr als 10 erkannten Text/Bildbereichen nur die 10 größten ausgewählt. Diese Selektion vermindert den Einfluss von Messartefakten und erleichtert die statistische Auswertung der Daten sowie deren Visualisierung. Auch dieser Bereich wurde im Zusammenhang des eCodicology Projekts bereits für das Korpus mittelalterlicher Handschriften erprobt (Chandna et al. 2016) und konnte auf das vorliegende Fallbeispiel übertragen werden.</p>
+<figure>
+<graphic height="14.165791666666667cm" n="1007" rend="inline" url="vortrag-RISSL-image7.png" width="16.002cm"/>
+<head>Abbildung 7: Visualisierung der 69 Beispielseiten, hier nur Textbereiche</head>
+</figure>
+<figure>
+<graphic height="13.583708333333334cm" n="1008" rend="inline" url="vortrag-RISSL-image8.png" width="16.002cm"/>
+<head>Abbildung 8: Visualisierung der 69 Beispielseiten, nur Textbereiche, Auswahl eines bestimmten Textbereichs (grüne Markierung)</head>
+</figure>
+<p>Auf einen Blick sehen wir die Verteilung des Textes, wahlweise im Vergleich mit derjenigen der Bilder auf den Zeitschriftenseiten. Durch die interaktive Funktionalität des Visualisierungstools (CodiVis) können bestimmte Bereiche, einzelne Seiten oder ganze Text- oder Bildblöcke, die bestimmte Gemeinsamkeiten aufweisen, ausgewählt werden.</p>
+<p>Wir können auf diese Weise schon beantworten, wie viel Text- und Bildbereiche es im Vergleich auf den gesamten 69 Seiten gibt. Wenn in Zahlen 668 Textbereiche von insgesamt 1421 Bereichen angezeigt werden, ist dabei zwar schon eine Selektion der größeren erfolgt, aber wir können noch nicht sagen, ob 668 einzelne Texte, Spalten, Textteile von Werbeanzeigen oder Überschriften gemeint sind. Umgekehrt sind es 753 Bildbereiche, aber das sagt uns noch nicht, dass es in Summe ebenso viele einzelne Illustrationen oder Werbebilder sind.</p>
+<p>Nichtsdestotrotz ist das Ergebnis für einen ersten Versuch mit den Zeitschriftendokumenten erstaunlich. Die automatische Erkennung von Bild und Text funktionierte und es wurden zu jeder einzelnen Seite genaue Metadaten erhoben, die unabhängig von der Annotation einzelner Forscher oder Nutzer sind und insbesondere reproduzierbar erzeugt werden können. Ein solches Verfahren bietet die Möglichkeit, große Korpora automatisiert zu erschließen und so spezifische Fragestellungen an das Material zu ermöglichen.</p>
+<p>Fügt man diesen Metadaten die vorhandenen Metadaten (primär Erscheinungszeitraum, Titel, Ort) jeder Zeitschrift hinzu und lässt den beschriebenen Workflow über das gesamte Korpus des Revistas culturales 2.0 Projekts laufen, kann man bereits historische Vergleiche die Gestaltung der Kulturzeitschriften entsprechend anstellen. Konkret erhoffen wir uns, aktuelle Annahmen, wie die Korrelation von bildlicher vs. textueller Gestaltung mit programmatischer Ausrichtung einer Zeitschrift, beantworten zu können. Lassen sich davon Gesetzmäßigkeiten ablesen, z.B. dass avantgardistische Zeitschriften generell mehr nicht-bedruckten Blattanteil haben als andere? Gibt es da Unterschiede, die die Herkunft und das kulturelle Umfeld der Zeitschriften betreffen? Lassen sich bestimmte Muster in der Gestaltung von Zeitschriften erkennen, die regional, personal oder programmatisch zugeordnet werden können? Anhand dieser Fragen können die Parameter, die für die Gestaltungsentscheidung historisch wichtig waren, definiert werden.</p>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>Komponenten des Workshops</head>
-<p>Abbildung 1 zeigt die Zusammenhänge zwischen den für die DARIAH-DE Infrastruktur zugänglichen Kollektionen, den Registries und der generischen Suche. In der Übersicht dargestellte Komponenten und Verbindungen werden im Rahmen des Workshops live durch die TeilnehmerInnen beeinflusst, weshalb wir in diesem Abschnitt eine vorbereitende Einführung anbieten möchten. Für weitere Informationen erlauben wir uns einen Verweis auf die weiterführenden Publikationen am Ende des Dokuments.</p>
-<figure>
-<graphic height="10.503958333333333cm" n="1001" rend="inline" url="workshop-GRADL-image1.png" width="15.901458333333334cm"/>
-<head>Abbildung 1: DARIAH-DE Föderationsarchitektur</head>
-</figure>
-<div rend="DH-Heading2" type="div2">
-<head>“Sammeln”: Collection Registry</head>
-<p>Die Collection Registry (vgl. Abbildung 2) ist ein zentrales Verzeichnis zur Registrierung und Beschreibung von Sammlungen von Ressourcen. Sammlungen können selbst direkt Ressourcen oder weitere untergeordnete Teilsammlungen beinhalten und können sowohl physische als auch digitale Objekte oder nur Daten aggregieren. Die Sammlungsbeschreibungen decken neben Verschlagwortung, zeitlichen und geografischen Dimensionen auch Sammlungsformate und Informationen zur Datenpflege ab.</p>
-<figure>
-<graphic height="11.535833333333333cm" n="1002" rend="inline" url="workshop-GRADL-image2.png" width="15.927916666666667cm"/>
-<head>Abbildung 2: Bildschirmausschnitt „Sammlungen“ der DARIAH-DE Collection Registry</head>
-</figure>
-</div>
-<div rend="DH-Heading2" type="div2">
-<head>“Modellieren”: Schema Registry / Mapping Registry</head>
-<p>In der Schema und Mapping Registry werden Datenmodelle und Korrelationen zwischen diesen beschrieben. Die grundlegende Zielsetzung besteht in der Definition und nachnutzbaren Modellierung der Erstellungs- und Verwendungskontexte von Daten:</p>
-<list type="unordered">
-<item>
-<hi rend="italic">Erstellungskontext</hi>: Ausgehend beispielsweise von einem XML-Schema wird ein Datenmodell angelegt, verfeinert und um Hintergrundwissen z. B. zur Sammlung, Institution erweitert (vgl. Abbildung 3). Hierdurch wird insbesondere eine Nachnutzung von Daten außerhalb des originären Sammlungskontexts ermöglicht.
-                        </item>
-<item>
-<hi rend="italic">Verwendungskontext</hi>: Durch die Definition eines fallspezifischen Integrationsmodells können Datenmodelle miteinander assoziiert werden. Durch eine Formulierung von Transformationsregeln werden Daten so umgewandelt und integriert, wie sie für eine weiterführende Untersuchung benötigt werden (vgl. Abbildung 4).
-                        </item>
-</list>
-<figure>
-<graphic height="10.63625cm" n="1003" rend="inline" url="workshop-GRADL-image3.png" width="15.901458333333334cm"/>
-<head>Abbildung 3: Bildschirmausschnitt des Schema Editors</head>
-</figure>
-<figure>
-<graphic height="9.313333333333333cm" n="1004" rend="inline" url="workshop-GRADL-image4.png" width="15.901458333333334cm"/>
-<head>Abbildung 4: Bildschirmausschnitt des Mapping Editors</head>
-</figure>
-</div>
-<div rend="DH-Heading2" type="div2">
-<head>“Durchsuchen”: Generische Suche </head>
-<p>Mit der generischen Suche wird im Rahmen von DARIAH-DE ein konkreter Anwendungsfall der Datenföderation umgesetzt. Hierbei werden Daten aus den in der Collection Registry verzeichneten Kollektionen nach den in der Schema Registry definierten Datenmodellen verarbeitet und indexiert. Die Heterogenität der Ressourcen wird zum Zeitpunkt konkreter Suchanfragen, basierend auf der zu durchsuchenden Menge von Kollektionen, mit Hilfe der Mapping Registry aufgelöst.</p>
-<p>Über die Möglichkeit der einfachen Suche über die Daten verzeichneter Kollektionen hinaus, können auf Basis der Funktionalität der generischen Suche weiterführende, fachspezifische Suchmaschinen implementiert werden (s. Abbildung 5).</p>
-<figure>
-<graphic height="12.610041666666667cm" n="1005" rend="inline" url="workshop-GRADL-image5.png" width="16.002cm"/>
-<head>Abbildung 5: Fachwissenschaftliche Spezialsuche im Rahmen der generischen Suche</head>
-</figure>
-</div>
-<div rend="DH-Heading2" type="div2">
-<head>“Durchsuchen”: Historischer Use-Case Biographien</head>
-<p>Der Use-case 
-                        <hi rend="italic">Biographien</hi> verbildlicht wie man eine historische Fragestellung anhand digitaler Werkzeuge bearbeiten kann. 
-                    </p>
-<p>Prosopographische historische Forschung orientiert sich immer noch stark an nationaler Geschichtsschreibung: religiöse, berufliche, gesellschaftliche Gruppen werden oft innerhalb der nationalen Grenzen, die selbst ein Konstrukt der Moderne sind, untersucht. Das Zusammenführen der Daten aus unterschiedlichen biographischen Datenbanken kann helfen dieses Problem zu lösen und biographische Recherchen über die nationalen Grenzen hinweg zu gestalten. </p>
-<p>Zu diesem Zweck implementiert DARIAH-DE derzeit das CosmoTool (vgl. Gradl &amp; Henrich 2016b), welches auf die Unterstützung historischer Forschung an biographischen Daten abzielt. Das Werkzeug kann dabei als logische Konsequenz einer Spezialisierung der generischen Suche interpretiert werden: </p>
-<list type="unordered">
-<item>die Sammlung von Datenquellen erfolgt in der DARIAH-DE Collection Registry, </item>
-<item>die Modellierung der Daten, sowie deren Assoziation mit einem zentralen, biographischen Schema erfolgt in der DARIAH-DE Schema / Mapping Registry</item>
-<item>die Verarbeitung und Indexierung der Daten basiert auf funktionalen Komponenten der generischen Suche</item>
-<item>Die Analyse und Visualisierung wurde und wird dagegen spezifisch für den Anwendungsfall entwickelt und bildet den tatsächlichen Kern des CosmoTools</item>
-</list>
-<figure>
-<graphic height="9.895416666666666cm" n="1006" rend="inline" url="workshop-GRADL-image6.png" width="15.927916666666667cm"/>
-<head>Abbildung 6: Bildschirmausschnitt des CosmoTools</head>
-</figure>
-</div>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Zusammenfassung</head>
-<p>Insgesamt werden den TeilnehmerInnen im Rahmen dieses Workshops verschiedene Kenntnisse im Kontext der Sammlung, Modellierung und Suche geisteswissenschaftlicher Forschungsdaten vermittelt. Durch die Anwendung der entsprechenden Komponenten von DARIAH-DE werden die in vorausgegangenen Referaten vorgestellten Ideen vertieft. </p>
-<p>Die Begleitung des Workshops durch Forschungsfragen und Daten im Kontext biographischer Daten soll den TeilnehmerInnen die praktische Anwendung der Komponenten deutlich machen. Idealerweise wird dadurch die Übertragbarkeit auf andere Daten und Fragen vermittelt, wodurch eine nachhaltige Zugänglichkeit wissenschaftlicher Forschungsdaten erreicht werden kann. </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Kontaktdaten aller Beitragenden</head>
-<p>
-<hi rend="bold">Anna Aschauer</hi>, Leibniz-Institut für Europäische Geschichte (IEG), Querschnittsbereich, Alte Universitätstraße 19, 55116 Mainz
-                    <lb/>
-<ref target="mailto:aschauer@ieg-mainz.de">aschauer@ieg-mainz.de</ref>
-<lb/>Forschungsinteressen: Pietismusforschung, Geschichte Russlands, Migration der religiösen Minderheiten in der Frühen Neuzeit, Digital Humanities.
-                </p>
-<p>
-<hi rend="bold">Swantje Dogunke</hi>, Forschungsverbund Marbach Weimar Wolfenbüttel / Klassik Stiftung Weimar, Direktion Verwaltung, Abteilung Informationstechnik, Burgplatz 4, 99423 Weimar
-                    <lb/>
-<ref target="mailto:swantje.dogunke@klassik-stiftung.de">swantje.dogunke@klassik-stiftung.de</ref>
-<lb/>Forschungsinteressen: Dokumentation im Museum, Museumsmanagement, digital curation, digitale Langzeitarchivierung, Digial Humanities
-                </p>
-<p>
-<hi rend="bold">Tobias Gradl</hi>, Otto-Friedrich-Universität Bamberg, Lehrstuhl für Medieninformatik, An der Weberei 5, 96052 Bamberg
-                    <lb/>
-<ref target="mailto:tobias.gradl@uni-bamberg.de">tobias.gradl@uni-bamberg.de</ref>
-<lb/>Forschungsinteressen: Forschungsdaten und Forschungsdatenmanagement, Digital Humanities, Datenintegration, Information Retrieval
-                </p>
-<p>
-<hi rend="bold">Lisa Klaffki</hi>, Herzog August Bibliothek Wolfenbüttel, Abteilung 1, Lessingplatz 1, 38304 Wolfenbüttel 
-                    <lb/>
-<ref target="mailto:klaffki@hab.de">klaffki@hab.de</ref>
-<lb/>Forschungsinteressen: Archäologie der germanischen Provinzen, Bestattungssitten der römischen Kaiserzeit, Digital Humanities
-                </p>
-<p>
-<hi rend="bold">Stefan Schmunk</hi>, Niedersächsische Staats- und Universitätsbibliothek Göttingen, Abt. Forschung und Entwicklung, Papendiek 14, 37073 Göttingen, 
-                    <lb/>
-<ref target="mailto:schmunk@sub.uni-goettingen.de">schmunk@sub.uni-goettingen.de</ref>
-<lb/>Forschungsinteressen: Forschungsdaten und Forschungsdatenmanagement, Digitale Geschichtswissenschaft, Virtuelle Forschungsumgebungen, Digitale Forschungsinfrastrukturen
-                </p>
-<p>
-<hi rend="bold">Timo Steyer</hi>, Forschungsverbund Marbach Weimar Wolfenbüttel / Herzog August Bibliothek Wolfenbüttel, Abteilung 1, Lessingplatz 1, 38304 Wolfenbüttel
-                    <lb/>
-<ref target="mailto:steyer@hab.de">steyer@hab.de</ref>
-<lb/>Forschungsinteressen:  Digitale Editionen, Datenmodellierung und Metadaten, Digital Humanities
-
-                </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Zahl der möglichen Teilnehmerinnen und Teilnehmer</head>
-<p>Die Zahl der möglichen Teilnehmer ist aus unserer Sicht nicht eingeschränkt. Einer sehr großen Zahl müsste ggf. durch mehrere Helfer in der Hands-On-Session entgegnet werden</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Angaben zu einer etwa benötigten technischen Ausstattung</head>
-<p>Es wird keine zusätzliche Ausstattung neben der üblichen Präsentationstechnik benötigt. Von den TeilnehmerInnen wird das Mitbringen eines eigenen Laptops für die aktive Teilnahme an der Hands-On-Session erwartet. </p>
+<head>Ausblick</head>
+<p>Eine automatische Bild-Text-Erkennung und folgende Analyse des gesamten Zeitschriftenkorpus des Revistas culturales 2.0 Projekts ist nach diesem Testlauf der nächste Schritt. Durch Kombination der bereits vorhandenen mit den automatisch erzeugten Metadaten kann die Visualisierungskomponente erweitert und vervollständigt werden. Danach soll geklärt werden, welche Informationen zusätzlich zum reinen Bild-Text-Verhältnis für jede Zeitschrift, Ausgabe, Seite aus den Messdaten gewonnen werden können. Die Position von Bild und Text auf jeder Seite ist neben der Quantität eine ebenso wichtige gestalterische Information. Durch Kontextwissen zu jedem Zeitschriftentitel und den Metadaten können daraufhin Gestaltung und intellektuelles Konzept (also auch Layout und Inhalt) miteinander verglichen werden.</p>
+<p>Sowohl aus informationstechnischer als auch aus geisteswissenschaftlicher Sicht ist die Ausweitung der automatisch erkannten Merkmale eine wichtige Herausforderung. Es stellt sich die Frage, welche zusätzlichen Merkmale für eine vollständige Analyse des Bestandes notwendig sind und durch welche angepassten oder zu entwickelnden Algorithmen diese bestimmbar sind. Auch zurzeit fehlerhaft erkannte Elemente könnten durch weiterentwickelte Funktionalitäten verbessert zugeordnet werden. </p>
+<p>Langfristig bietet sich eine Analyse aller verfügbaren digitalisierten Zeitschriftentitel (deren Bildqualität ausreicht) an. Somit könnten nicht nur transatlantisch spanischsprachige Kulturzeitschriften verglichen werden, sondern auch die internationale Szene modernistischer Zeitschriften (vgl. Blue Mountain Project) oder deutschsprachige illustrierte Magazine (vgl. Projekt: “illustrierte Magazine”).</p>
 </div>
 </body>
-<back><div type="Notes"><note n="1" rend="footnote text" xml:id="workshop-GRADLftn1"> Repository, Collection Registry, Schema / Mapping Registry und Generische Suche von DARIAH-DE (vgl. Gradl &amp; Henrich 2016a, Schmunk &amp; Funk 2016)</note></div>
+<back>
 <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-<hi rend="bold">Gradl, Tobias / Henrich, Andreas</hi> (2016a):
-                        „Die DARIAH-DE Föderationsarchitektur - Datenintegration im Spannungsfeld forschungsspezifischer und domänenübergreifender Anforderungen“,
-                        in:
-                        <hi rend="italic">Bibliothek - Forschung und Praxis 2016</hi> 40 (2): 222–228 10.1515/bfp-2016-0027.
+<hi rend="bold italic">AsymEnc</hi>: 
+                        <ref target="http://asymenc.wp.hum.uu.nl">http://asymenc.wp.hum.uu.nl</ref> [letzter Zugriff 20. November 2016].
                     </bibl>
 <bibl>
-<hi rend="bold">Gradl, Tobias / Henrich, Andreas</hi> (2016b):
-                        „Nutzung und Kombination von Daten aus strukturierten und unstrukturierten Quellen zur Identifikation transnationaler Lebensläufe“,
+<hi rend="bold">Benjamin, Walter</hi> (1935-39):
+                        „Das Kunstwerk im Zeitalter seiner technischen Reproduzierbarkeit“ 
+                        in: Tiedemann, Rolf (ed.): 
+                        <hi rend="italic">Walter Benjamin. Gesammelte Schriften</hi> 1 (2).
+                        Frankfurt am Main: Suhrkamp, 1980, 471–508.
+                    </bibl>
+<bibl>
+<hi rend="bold italic">DIVAServices-Spotlight</hi>: 
+                        <ref target="http://wuersch.pillo-srv.ch/#/">http://wuersch.pillo-srv.ch/#/</ref> [letzter Zugriff 22. November 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold">Chandna, Swati / Tonne, Danah / Stotzka, Rainer / Busch, Hannah / Vanscheidt, Philipp / Krause, Celia</hi> (2016): 
+                        „An Effective Visualization Technique for Determining Co-Relations in High-Dimensional Medieval Manuscripts Data“,
                         in: 
-                        <hi rend="italic">DHd 2016: Modellierung - Vernetzung - Visualisierung</hi> 129–132.
+                        <hi rend="italic">Visualization and Data Analysis 2016</hi>, San Francisco, California, USA, 14.–18. Februar, 1–6
+                        <ref target="http://ist.publisher.ingentaconnect.com/contentone/ist/ei/2016/00002016/00000001/art00013">http://ist.publisher.ingentaconnect.com/contentone/ist/ei/2016/00002016/00000001/art00013</ref>
+</bibl>
+<bibl>
+<hi rend="bold">Chandna Swati / Tonne, Danah / Jejkal, Thomas / Stotzka, Rainer / Krause, Celia / Vanscheidt, Philipp / Busch, Hannah / Prabhune, Ajinkya</hi> (2015): 
+                        „Software workflow for the automatic tagging of medieval manuscript images (SWATI)“, 
+                        in: Ringger, Eric K. / Lamiroy, Bart (eds.): 
+                        <hi rend="italic">Proceedings SPIE9492, Document Recognition and Retrieval</hi> XXII, 940201 (8. Februar 2015), San Francisco.
                     </bibl>
 <bibl>
-<hi rend="bold">Gradl, Tobias / Lordick, Harald / Henrich, Andreas</hi> (2016):
-                        „Judaica recherchieren: Unterstützung bei der Realisierung forschungsspezifischer Suchlösungen durch die generische Suche“,
+<hi rend="bold italic">Chinese Women's Magazines</hi>: 
+                        <ref target="http://kjc-sv013.kjc.uni-heidelberg.de/frauenzeitschriften/index.php">http://kjc-sv013.kjc.uni-heidelberg.de/frauenzeitschriften/index.php</ref> [letzter Zugriff 20. November 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold italic">Chinesische Unterhaltungspresse</hi>: 
+                        <ref target="http://projects.zo.uni-heidelberg.de/xiaobao/index.php?p=start">http://projects.zo.uni-heidelberg.de/xiaobao/index.php?p=start</ref> [letzter Zugriff 20. November 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold italic">Die Fackel, Austrian Academy Corpus</hi>: 
+                        <ref target="http://corpus1.aac.ac.at/fackel">http://corpus1.aac.ac.at/fackel</ref> [letzter Zugriff 20. November 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold italic">eCodicology Projekt</hi>: 
+                        <ref target="http://www.ecodicology.org">http://www.ecodicology.org</ref> [letzter Zugriff 20. November 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold">Ehrlicher, Hanno / Herzgsell, Teresa</hi> (2016):
+                        „Zeitschriften Als Netzwerke Und Ihre Digitale Visualisierung: Grundlegende Methodologische Überlegungen Und Erste Anwendungsbeispiele“, 
                         in:
-                        <hi rend="italic">DHd 2016: Modellierung - Vernetzung - Visualisierung</hi> 132–136.
+                        <hi rend="italic">Revistas Culturales 2.0</hi>. 
+                        <ref target="http://www.revistas-culturales.de/de/buchseite/hanno-ehrlicher-teresa-herzgsell-zeitschriften-als-netzwerke-und-ihre-digitale">http://www.revistas-culturales.de/de/buchseite/hanno-ehrlicher-teresa-herzgsell-zeitschriften-als-netzwerke-und-ihre-digitale</ref> [letzter Zugriff 20. November 2016].
                     </bibl>
 <bibl>
-<hi rend="bold">Schmunk, Stefan / Funk Stefan</hi> (2016):
-                        „Das DARIAH-DE- und das TextGrid-Repositorium: Geistes- und kulturwissenschaftliche Forschungsdaten persistent und referenzierbar langzeitspeichern“,
+<hi rend="bold italic">ESPrit</hi>: 
+                        <ref target="http://www.espr-it.eu">http://www.espr-it.eu</ref> [letzter Zugriff 20. November 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold italic">Europeana Newspapers</hi>: 
+                        <ref target="http://www.europeana-newspapers.eu">http://www.europeana-newspapers.eu</ref> [letzter Zugriff 20. November 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold italic">illustrierte magazine</hi>: 
+                        <ref target="http://magazine.illustrierte-presse.de">http://magazine.illustrierte-presse.de</ref> [letzter Zugriff 20. November 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold">Frank, Gustav / Podewski, Madleen / Scherer, Stefan</hi> (2010):
+                        „Kultur – Zeit – Schrift. Literatur- und Kulturzeitschriften als ‚kleine Archive‘“, 
                         in: 
-                        <hi rend="italic">Bibliothek - Forschung und Praxis 2016</hi> 40 (2): 213–221 10.1515/bfp-2016-0020.
+                        <hi rend="italic">Internationales Archiv für Sozialgeschichte der deutschen Literatur (IASL)</hi> 34 (2): 1–45.
                     </bibl>
 <bibl>
-<hi rend="bold">Szöllösi-Janze, Margit / Panter, Sarah / Paulmann, Johannes</hi> (2015):
-                        „Mobility and Biography. Methodological Challenges and Perspectives“,
-                        in:
-                        <hi rend="italic">Jahrbuch für Europäische Geschichte / European History Yearbook</hi> 16: 1–14 10.1515/9783110415162-001.
+<hi rend="bold">Macciuci, Raquel</hi> (2015): 
+                        „Técnica, soporte, ámbitos de sociabilidad y mecanismos de legitimación: sobre la construcción de espacios de literatura en la prensa periódica“,
+                        in: Schlünder, Susanne / Macciuci, Raquel (eds.):
+                        <hi rend="italic">Literatura y técnica: derivas ficcionales y materiales: Libros, escritores, textos, frente a la máquina y la ciencia</hi>. Actas del VIII Congreso Orbis Tertius. 
+                        La Plata: Ediciones del lado de acá 205–231.
+                    </bibl>
+<bibl>
+<hi rend="bold italic">Revistas culturales 2.0: Virtuelle Forschungsumgebung zur Erforschung spanischsprachiger Kulturzeitschriften der Moderne</hi> (2014–2016):
+                        Universität Augsburg. 2014-2016. 
+                        <ref target="http://www.revistas-culturales.de">http://www.revistas-culturales.de</ref> [letzter Zugriff 20. November 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold">Rißler-Pipka, Nanette</hi> (2014): 
+                        „Sobre Los Problemas de Investigación Con Revistas Culturales Digitalizadas Del Mundo Hispanohablante“, 
+                        in: Rißler-Pipka, Nanette / Ehrlicher, Hanno (eds.): 
+                        <hi rend="italic">Almacenes de un tiempo en fuga: Revistas culturales en la modernidad hispánica</hi>.
+                        Aachen: Shaker 59–80.
+                    </bibl>
+<bibl>
+<hi rend="bold italic">Virtuelles Skriptoriums St. Matthias</hi>: 
+                        <ref target="http://stmatthias.uni-trier.de">http://stmatthias.uni-trier.de</ref> [letzter Zugriff 20. November 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold italic">WeChangEd</hi>: 
+                        <ref target="http://www.wechanged.ugent.be">http://www.wechanged.ugent.be</ref> [letzter Zugriff 20. November 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold">Yang, Tze-I / Torget, Andrew / Mihalcea, Rada</hi> (2011): 
+                        „Topic Modeling on Historical Newspapers“, 
+                        in: 
+                        <hi rend="italic">Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities LaTeCH</hi>, 24. Juni 2011 Portland, Oregon, USA, Proceedings of the Workshop, Association for Computational Linguistics, Stroudsburg, USA, 96–104. 
+                        <ref target="https://www.aclweb.org/anthology/W/W11/W11-15.pdf">https://www.aclweb.org/anthology/W/W11/W11-15.pdf</ref> [letzter Zugriff 20. November 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold italic">ZEFYS</hi>: 
+                        <ref target="http://zefys.staatsbibliothek-berlin.de">http://zefys.staatsbibliothek-berlin.de</ref> [letzter Zugriff 20. November 2016].
                     </bibl>
 </listBibl>
 </div>

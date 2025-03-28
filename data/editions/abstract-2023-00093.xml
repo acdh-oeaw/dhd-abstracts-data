@@ -1,54 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="PICHLER_Axel_Urheberrechtlich_geschützte_Texte_nachnutzen___" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="ÇAKIR_Dîlan_Canan_Vom_Finden__Filtern_und_Auswerten_der_rele" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Urheberrechtlich geschützte Texte nachnutzen – Der XSample-Workflow</title>
+                <title>Vom Finden, Filtern und Auswerten der relevanten Daten im digitalen Nachlass von Friedrich Kittler im Deutschen Literaturarchiv Marbach</title>
                 <author>
                     <persName>
-                        <surname>Andresen</surname>
-                        <forename>Melanie</forename>
+                        <surname>Holz</surname>
+                        <forename>Alex</forename>
                     </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>melanie.andresen@ims.uni-stuttgart.de</email>
-                    <idno type="ORCID">0000-0002-3913-1273</idno>
+                    <affiliation>Deutsches Literaturarchiv Marbach, Deutschland</affiliation>
+                    <email>alex.holz@dla-marbach.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Gaertner</surname>
-                        <forename>Markus</forename>
+                        <surname>Çakir</surname>
+                        <forename>Dîlan Canan</forename>
                     </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>markus.gaertner@ims.uni-stuttgart.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Jacke</surname>
-                        <forename>Janina</forename>
-                    </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>janina.jacke@uni-goettingen.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Ketschik</surname>
-                        <forename>Nora</forename>
-                    </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>nora.ketschik@ilw.uni-stuttgart.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Pichler</surname>
-                        <forename>Axel</forename>
-                    </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>axel.pichler@ts.uni-stuttgart.de</email>
+                    <affiliation>Deutsches Literaturarchiv Marbach, Deutschland</affiliation>
+                    <email>dilan.cakir@dla-marbach.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-07-15T10:28:00Z</date>
+                    <date>2022-12-15T12:12:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -94,118 +69,105 @@
                     <term>Posterpräsentation</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Forschungsdaten</term>
-                    <term>Textauszüge</term>
-                    <term>Nachnutzung</term>
+                    <term>Literaturarchiv</term>
+                    <term>Born-Digitals</term>
+                    <term>Nachlass</term>
+                    <term>Friedrich Kittler</term>
+                    <term>NSRL</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
+                    <term>Datenerkennung</term>
+                    <term>Bereinigung</term>
                     <term>Archivierung</term>
-                    <term>Veröffentlichung</term>
-                    <term>Daten</term>
-                    <term>Methoden</term>
-                    <term>Forschungsprozess</term>
-                    <term>virtuelle Forschungsumgebungen</term>
+                    <term>Identifizierung</term>
+                    <term>Literatur</term>
+                    <term>Metadaten</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p style="text-align: left; ">Eines der Hindernisse, die der freien Weitergabe von Forschungsdaten im Sinne der Open-Science-Bewegung im Wege stehen, ist das Urheberrecht (UrhG). Dieses erschwert die Einhaltung der guten wissenschaftlichen Praxis und der FAIR-Prinzipien (Wilkinson et al. 2016) insbesondere bei Forschung zu zeitgenössischen Texten. Für urheberrechtlich geschützte Texte besteht bisher nur die Möglichkeit, sog. abgeleitete Textformate (Schöch et al. 2020) für „non-consumptive access“ (Organisciak und Downie 2021) zu veröffentlichen, etwa in Form von Frequenzlisten. Geisteswissenschaftliche Forschungsprojekte sind allerdings häufig auf die Verfügbarkeit von textuellem Kontext angewiesen, der erst eine angemessene Interpretation der Daten erlaubt. Um die Nachnutzbarkeit von Textdaten in dieser Hinsicht zu unterstützen, wurde im Projekt XSample<ref n="1" target="ftn1"/> ein Workflow entwickelt, der auf das Recht zur Weitergabe von Textauszügen aufbaut, und dabei ermöglicht, die Auszüge auf das eigene Forschungsanliegen hin zu optimieren.
-            </p>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="rz1k5476o4ec"/>Rechtslage 
-                </head>
-                <p style="text-align: left; ">Im deutschen UrhG unterliegen Texte bis 70 Jahre nach dem Tod der Autor*innen dem urheberrechtlichen Schutz, der die Vervielfältigung und die öffentliche Zugänglichmachung von Texten erheblich einschränkt. Hiervon sind vor allem zeitgenössische Texte betroffen, die aus diesem Grund womöglich gar nicht erst als Gegenstand von Forschungsprojekten in Erwägung gezogen werden. Seit 2018 ist zumindest die Verwendung von urheberrechtlich geschützten Texten zu Zwecken des Text- und Dataminings durch §60d UrhG legitimiert (vgl. Raue 2021). Die Nachnutzung der Daten nach Abschluss eines Projektes ist aber weiterhin nur unklar geregelt (vgl. Kleinkopf et al. 2021, Andresen et al. 2022). </p>
-                <p style="text-align: left; ">Der XSample-Workflow kombiniert den §60d UrhG mit § 60c Abs. 1 Nr. 1 UrhG, der es erlaubt, bis zu 15 Prozent von Werken und auch vollständige Werke geringen Umfangs zu Zwecken der nicht-kommerziellen wissenschaftlichen Forschung zu vervielfältigen und an bestimmt abgegrenzte Personenkreise für deren eigene wissenschaftliche Forschung weiterzugeben. </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="ekbrx1bvz0ri"/>Weitergabe von Auszügen im XSample-Workflow
-                </head>
-                <p style="text-align: left; ">Die Weitergabe von nur 15 Prozent eines Textes erscheint auf den ersten Blick nicht hinreichend. Um die Nützlichkeit dieser Textauszüge zu maximieren, wird im XSample-Workflow über eine Benutzeroberfläche eine gezielte Textauswahl unterstützt. So können Forschende die Textauswahl genau auf die eigenen Forschungsanliegen zuschneiden. Dafür werden auch im Korpus enthaltene Annotationen berücksichtigt, sodass bei Interesse an einem bestimmten Phänomen systematisch die mit den relevanten Kategorien annotierten Textstellen extrahiert werden können (vgl. Gärtner 2020). Die Möglichkeiten und Grenzen des Auszugskonzepts sind am Beispiel zweier Anwendungsfälle aus der Literaturwissenschaft und Linguistik erprobt worden (vgl. Andresen et al. 2022). Sie zeigen beispielsweise, dass viele Forschungsfragen davon profitieren, wenn abgeleitete Textformate, die quantitative Analysen auf dem Gesamtkorpus ermöglichen, und Auszüge, die die qualitative Interpretation erlauben, kombiniert werden.</p>
-                <figure>
-                    <graphic n="1001" width="15.644733333333333cm" height="10.324627777777778cm" url="Pictures/71226ef7add6548f31fa6c05e3352a30.png" rend="inline"/>
-                    <head><p style="text-align: left; ">Abb. 1: Der XSample-Workflow im Überblick.</p></head>
-                </figure>
-                <p style="text-align: left; ">Abbildung 1 fasst das Auszugskonzept zusammen: Forscher*innen übermitteln ihre (annotierten) Forschungsdaten an Forschungsinfrastruktureinrichtungen (z. B. wissenschaftliche Bibliotheken), die diese verwalten. Nachnutzer*innen können Zugriffsanfragen an die Infrastrukturbetreiber stellen, um Auszüge aus den Forschungsdaten zu erhalten.</p>
-                <p style="text-align: left; ">Der in Abbildung 1 beschriebene Workflow wurde im Rahmen des XSample-Projekts prototypisch in Form eines Webservices implementiert.<ref n="2" target="ftn2"/> Die urheberrechtlich geschützten Korpusdaten liegen hierbei sicher in einem Dataverse<ref n="3" target="ftn3"/>-Repositorium. Öffentlich auffindbare Metadaten ermöglichen Nutzer*innen den Einstieg in den XSample-Workflow und leiten auf einen gesonderten Server weiter, wo die eigentliche Auszugserstellung stattfindet. Hierfür stehen verschiedene Verfahren zur Auswahl, die dabei helfen können, die Nützlichkeit der Auszugsdaten für die eigenen Bedarfe zu erhöhen. Für die anfragebasierte Auszugserzeugung setzt unsere Implementierung auf ein Java-Framework für Korpusanfragen (Gärtner 2020), wodurch gezielt nach bestimmten annotierten Phänomenen gesucht werden kann, die dann als Grundlage für die individuelle Auswahl der Auszüge dienen. Während des gesamten Prozesses haben Nutzer*innen keinen direkten Zugriff auf die geschützten Daten und erhalten vor dem Download ihres individuellen Auszugs lediglich grafische Veranschaulichungen der Auszugskomposition basierend auf dem gewählten Verfahren und/oder den Suchergebnissen (vgl. Andresen et al. 2022). 
+            <div>
+                <p>
+                    <hi style="font-size:12pt">Auf unserem Poster zeigen wir, wie wir von einem digitalen Nachlass mit 3,3 Millionen Dateien zu einem Data-Set mit etwa 30.000 Dateien gelangt sind, mit dem wir sinnvoll zum Born-digital-Nachlass des Literaturwissenschaftlers und Medientheoretikers Friedrich Kittler (1943–2011), der im Deutschen Literaturarchiv Marbach (DLA) aufbewahrt wird, forschen können und dürfen. Mit unserem Fallbeispiel wollen wir zeigen, wie umfangreich ein Born-digital-Nachlass im DLA sein kann, wie man mit diesem technisch, konservatorisch und rechtlich umgeht und welches Potential darin liegt. Anhand unseres kuratierten Arbeitskorpus können wir sodann beispielsweise an der statistischen Auswertung und Visualisierung der (technischen</hi><ref n="1" target="ftn1"/>
+                    <hi style="font-size:12pt">) Metadaten arbeiten und damit zur Erschließung des Nachlasses beitragen.</hi><ref n="2" target="ftn2"/>
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="c72a584kperl"/>Fazit
-                </head>
-                <p style="text-align: left; ">„Open Access“ ist und bleibt die Zielvorstellung für offene und reproduzierbare Forschung auch in den digitalen Geisteswissenschaften. Das hier vorgestellte Auszugskonzept stellt demgegenüber eine „Behelfslösung“ dar, um die Nachnutzung urheberrechtlich geschützter Daten zu ermöglichen und der Tendenz entgegenzuwirken, diese Texte per se aus Forschungsprojekten auszuschließen (vgl. Gärtner et al. 2021). Die Lösung ist an der Forschungspraxis der digitalen Literatur- bzw. Geisteswissenschaften ausgerichtet, für die andere „verfremdende“ Verfahren wie abgeleitete Textformate (Schöch et al. 2020, Organisciak und Downie 2021) nur eingeschränkt nachnutzbar sind. Das Auszugskonzept ermöglicht hingegen eine größere Nähe zum Text, indem die ursprüngliche Textgestalt beibehalten wird, die für die Interpretation der Daten häufig unabdingbar ist. Darüber hinaus wird der rechtliche Rahmen durch die individuelle Auszugsgenerierung optimal ausgeschöpft und den individuellen Forschungsinteressen angepasst.</p>
+                <head>Digitale Vor- und Nachlässe im DLA</head>
+                <p>
+                    <hi style="font-size:12pt">Mit Kittlers Nachlass kam 2011 der bisher umfangreichste und komplexeste digitale Nachlass ins DLA. Immer noch gehört dieser mit 762 Datenträgern (648 Disketten, 100 optische Medien, 1 USB Speicher, 12 Festplatten) und einer Größe von 1,6 TB zum quantitativ größten digitalen Bestand im DLA. Berücksichtigt man Kittler nicht, umfassen die gesamten digitalen Vor- und Nachlässe von etwa 70 Bestandsbildner*innen im DLA (also im Archiv, nicht in der Bibliothek) derzeit mit etwa 1600 Datenträgern insgesamt knapp 5,2 TB.</hi>
+                </p>
+                <p>
+                    <hi style="font-size:12pt" xml:space="preserve">In den Jahren 2012 bis 2013 galt es, diesen neuen Bestand analog zu sichten, zu sortieren und zu verzeichnen. Dieser Workflow wurde bereits dokumentiert und publiziert (Enge/Kramski 2017). Die PCs, Laptops und physischen Datenträger zu sortieren, reicht (anders als beispielsweise das Sortieren von Papiermanuskripten) allerdings nicht aus, um den Nachlass zu katalogisieren. Im DLA haben wir für digitale Vor- und Nachlässe eigens sogenannte „Digital Curator[s]“, die man auch Data Librarian oder „Datenarchäolog[innen]“ nennen könnte (Bülow/Kramski 2011: 159), die seit Mitte der 2000er Jahre immer wichtiger werden (Jaillant 2022: 8). Diese bereiten ‚rohe‘ digitale Nachlässe für verschiedene Anliegen auf. Bei digitalen Archivobjekten „muss die Lese- und Interpretationsfähigkeit [nämlich] zuerst aufwendig hergestellt werden.“ (Bülow/Kramski 2011: 159) Zudem ist eine manuelle Sichtung der Dateien bei einem kleineren digitalen Nachlass zwar vorstellbar, für Kittlers Nachlass allerdings wegen des Umfangs und der Art der Dateien eher unpraktisch. </hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Kittlers digitaler Nachlass: Von 3,3 Millionen zu ca. 30.000 Dateien</head>
+                <p>
+                    <hi style="font-size:12pt" xml:space="preserve">Bei erst kürzlich verstorbenen Autor*innen, wie Kittler, muss immer mitbedacht werden, dass selten der ganze Nachlass benutzbar ist und als Ganzes gar nicht oder zu einem späteren Zeitpunkt erforscht werden kann – bei Born-digital-Nachlässen spricht man so auch von „dark archives“, denn selten kann alles (online) leicht zugänglich gemacht werden, obwohl es bereits digital vorliegt. „Nobody would reasonably claim that all born-digital data should be unlocked and openly accessible. Yet, it is important to recognize that ‚dark‘ archives contain vast amounts of data essential to scholars […].“ (Jaillant 2022: 7). </hi>
+                </p>
+                <p>
+                    <hi style="font-size:12pt">Der aktuelle Kittler-Bestand umfasst ca. 3,3 Millionen Dateien. Der erste Schritt besteht in dem ‚Identifizieren und Aussortieren‘ von hunderttausenden nicht-unikaler</hi><ref n="3" target="ftn3"/>
+                    <hi style="font-size:12pt" xml:space="preserve"> Dateien, also Dateien, die nicht von Kittler selbst erstellt wurden. Dies erfolgte automatisiert vor allem über einen Abgleich mit der National Software Reference Library (NSRL) des NIST</hi><ref n="4" target="ftn4"/>
+                    <hi style="font-size:12pt" xml:space="preserve">. Für solche Vorgänge sind auch KI-gestützte Methoden denkbar; allerdings werden solche derzeit eher für „low-level tasks“ herangezogen, etwa bei der Identifizierung von sensiblen persönlichen Informationen (Jaillant 2022: 14). Damit gelangten wir zu etwa 2,25 Millionen Dateien. </hi>
+                </p>
+                <p>In einem nächsten Schritt wurde die Menge auf die Dateien begrenzt, die von Seiten der Nachlassverwaltung begutachtet und mit einem Status versehen wurden (freigegeben, vorläufig gesperrt, gesperrt). Unser Arbeitskorpus ist also als Momentaufnahme zu sehen, da er nur auf den bereits bewerteten Dateien basiert. Ohne die bislang unbekannten bzw. noch nicht bewerteten Dateien kommen wir auf 219.989 Dateien. </p>
+                <p>Aus dieser Menge wurden zuletzt nun die für die Forschung vollständig freigegebenen Dateien (Metadaten und Inhalt) herausgefiltert, die zudem von Kittler erstellt wurden. Wir landeten bei etwa 30.000 Dateien, also etwa 0,88% von den 3,3 Millionen Dateien.</p>
+                <p>
+                    <hi style="font-size:12pt">Bei den meisten Dateien in unserem Arbeitskorpus handelt es sich um Textdateien in unterschiedlichsten Formaten. Kittler hat „nicht nur Texte, Bilder und Videos hinterlassen, sondern auch Relikte seiner programmierenden Tätigkeiten.“ (Enge/Kramski 2017). Er interessierte sich neben der Literatur, Musik und Philosophie vor allem für Technologien, Medien und das Programmieren (Winthrop-Young, 2017: 210). „[W]ie ungezählte Teenager in dieser Zeit“ habe er vor allem mit Codes gespielt und autodidaktisch gelernt (Pias 2014: 39–44). Das spiegelt sich in gewisser Weise auch in seinem Nachlass wider. So befinden sich im Arbeitskorpus beispielsweise auch mit Kommentaren versehene Dateien der Programmiersprache C/C++ (insbesondere *.c und *.h-Dateien).</hi>
+                </p>
             </div>
         </body>
         <back>
 <div type="notes">
 <note rend="footnote text" xml:id="ftn1" n="1">
-                    
-                        <ref target="https://www.izus.uni-stuttgart.de/fokus/fdm-projekte/xsample/">
-                            <hi rend="underline color(1155CC)">https://www.izus.uni-stuttgart.de/fokus/fdm-projekte/xsample/</hi>
-                        </ref> (Stand: 14.12.2022).
-                    
-                </note>
+                         Wir orientieren uns bei den Metadaten an der u.a. von Jenn Riley (2017) beschriebenen Kategorisierung. Die Technischen Metadaten sind eine Untergruppe der administrativen Metadaten. Es geht also um Informationen zu den Dateien selbst, nicht ihren Inhalt (deskriptive Metadaten). Neben FileSize und MimeType sind hier für uns besonders die Zeitstempel oder auch Informationen aus den Dateipfaden wichtig.
+                    </note>
 <note rend="footnote text" xml:id="ftn2" n="2">
-                         Langfristig soll dieser Dienst an der Universitätsbibliothek Stuttgart angeboten werden. Die Software für den Prototypen ist unter 
-                            <ref target="https://github.com/ICARUS-tooling/xsample-server">
-                                <hi rend="underline color(1155CC)">https://github.com/ICARUS-tooling/xsample-server</hi>
-                            </ref> open-source verfügbar und kann somit auch von anderen Einrichtungen genutzt werden, um eine eigene Instanz des XSample-Servers zu betreiben. 
+                        
+                            <hi style="font-size:10pt" xml:space="preserve"> Dies ist Teil des Projekts „Archivierung, Erschließung und Erforschung von Born-digitals“ des Forschungsverbundes Marbach, Weimar, Wolfenbüttel, </hi>
+                            <ref target="https://www.mww-forschung.de/born-digitals">
+                                <hi rend="underline color(0563C1)" style="font-size:10pt">https://www.mww-forschung.de/born-digitals</hi>
+                            </ref>
+                            <hi style="font-size:10pt" xml:space="preserve"> (letzter Zugriff 08.07.2022).</hi>
                         
                     </note>
 <note rend="footnote text" xml:id="ftn3" n="3">
-                         Dataverse ist eine weit verbreitete Open-Source-Repositoriumssoftware, die über eine für XSample notwendige feingranulare Rechteverwaltung verfügt und eine simple Schnittstelle zur Integration externer Services in die Benutzeroberfläche bietet.
+                         Als unikale Dateien bezeichnen wir Dateien, die von dem/der Bestandsbilder*in erstellt wurden und die außerhalb dieses digitalen Vor- oder Nachlasses nicht verfügbar sind.
+                    </note>
+<note rend="footnote text" xml:id="ftn4" n="4">
+                        
+                            <hi style="font-size:10pt" xml:space="preserve"> National Software Reference Library (NSRL) des National Institute of Standards and Technology. </hi>
+                            <ref target="https://www.nist.gov/itl/ssd/software-quality-group/national-software-reference-library-nsrl">
+                                <hi rend="underline color(1155CC)" style="font-size:10pt">https://www.nist.gov/itl/ssd/software-quality-group/national-software-reference-library-nsrl</hi>
+                            </ref>
+                            <hi style="font-size:10pt" xml:space="preserve"> (letzter Zugriff am 22.07.2022).</hi>
+                        
                     </note></div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl style="text-align: left; "><hi rend="bold">Andresen, Melanie, Markus Gärtner, Sybille Hermann, Janina Jacke, Nora Ketschik, Felicitas Kleinkopf, Jonas Kuhn und Axel Pichler.</hi> 2022. “Vorzüge von Auszügen – Urheberrechtlich geschützte Texte in den digitalen Geisteswissenschaften (nach-)nutzen.” 
-                        <hi rend="italic">Zeitschrift für digitale Geisteswissenschaften</hi>. 
-                        <ref target="https://doi.org/10.17175/2022_007">https://doi.org/10.17175/2022_007</ref>.
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt" xml:space="preserve">Bülow, Ulrich von/Kramski, Heinz Werner. </hi>
+                        <hi style="font-size:12pt">„‚Es füllt sich der Speicher mit köstlicher Habe‘ – Erfahrungen mit digitalen Archivmaterialien im Deutschen Literaturarchiv Marbach.“ In: Neues Erbe: Aspekte, Perspektiven und Konsequenzen der digitalen Überlieferung, hg. v. Caroline Y., Hauser Robert, Robertson-von Trotha, 141–62. Kulturelle Überlieferung - digital 1. Karlsruhe: KIT Scientific Publishing, 2011.</hi>
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi style="font-family:Arial Unicode MS" xml:space="preserve" rend="bold">Gärtner, Markus.</hi> 2020. “The Corpus Query Middleware of Tomorrow − A Proposal for a Hybrid Corpus Query Architecture.” In 
-                        <hi rend="italic" xml:space="preserve">Proceedings of the 8th Workshop on Challenges in the Management of Large Corpora, </hi>31–39.
-                        <ref target="https://www.aclweb.org/anthology/2020.cmlc-1.5" xml:space="preserve"> DOI: </ref>
-                        <ref target="https://www.aclweb.org/anthology/2020.cmlc-1.5">
-                            <hi rend="underline color(1155CC)">https://www.aclweb.org/anthology/2020.cmlc-1.5</hi>
-                        </ref>.
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt" xml:space="preserve">Enge, Jürgen/Kramski, Heinz Werner. </hi>
+                        <hi style="font-size:12pt">„Friedrich Kittler’s Digital Legacy – PART I - Challenges, Insights and Problem-Solving Approaches in the Editing of Complex Digital Data Collections.“ Digital Humanities Quarterly 11, Nr. 2 (22. Mai 2017). http://www.digitalhumanities.org/dhq/vol/11/2/000307/000307.html.</hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Gärtner, Markus, Felicitas Kleinkopf, Melanie Andresen, Sybille Hermann.</hi> 2021. “Corpus Reusability and Copyright – Challenges and Opportunities.” In 
-                        <hi rend="italic">Proceedings of the Workshop on Challenges in the Management of Large Corpora,</hi> 10–19. DOI: 
-                        <ref target="https://doi.org/10.14618/ids-pub-10467">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.14618/ids-pub-10467</hi>
-                        </ref>.
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt" xml:space="preserve">Jaillant, Lise. </hi>
+                        <hi style="font-size:12pt">„Introduction.“ In: Archives, Access and Artificial Intelligence: Working with Born-Digital and Digitized Archival Collections, hg. v. Jaillant, Lise, 7–28. Bielefeld, Germany: Bielefeld University Press / transcript Verlag, 2022.</hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Kleinkopf, Felicitas, Janina Jacke und Markus Gärtner.</hi> 2021. “Text- und Data-Mining – Urheberrechtliche Grenzen der Nachnutzung wissenschaftlicher Korpora bei computergestützten Verfahren und digitalen Ressourcen.” 
-                        <hi rend="italic">MMR Zeitschrift für IT-Recht und Recht der Digitalisierung</hi> 24, H. 3: 196–200. DOI: 
-                        <ref target="http://dx.doi.org/10.18419/opus-11445">
-                            <hi rend="underline color(1155CC)">http://dx.doi.org/10.18419/opus-11445</hi>
-                        </ref>.
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt" xml:space="preserve">Pias, Claus. </hi>
+                        <hi style="font-size:12pt">„Friedrich Kittler und der ‚Mißbrauch von Heeresgerät‘. Zur Situation eines Denkbildes 1964–1984–2014.“ Merkur. Deutsche Zeitschrift für europäisches Denken 69, Nr. 791 (2015): 31–43.</hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Organisciak, Peter und J. Stephen Downie.</hi> 2021. “Research access to in-copyright texts in the humanities.“ In 
-                        <hi rend="italic">Information and Knowledge Organisation in Digital Humanities</hi>, hg. von Koraljka Golub und Ying-Hsang Liu, 157–177. Digital Research in the Arts and Humanities. London, New York: Routledge.
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Raue, Benjamin.</hi> 2021. “Die Freistellung von Datenanalysen durch die neuen Text und Data Mining-Schranken.” 
-                        <hi rend="italic">Zeitschrift für Urheber- und Medienrecht</hi> 56, H. 10: 793–802.
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Schöch, Christof, Frédéric Döhl, Achim Rettinger, Evelyn Gius, Peer Trilcke, Peter Leinen, Fotis Jannidis, Maria Hinzmann und Jörg Röpke.</hi> 2020. “Abgeleitete Textformate: Text und Data Mining mit urheberrechtlich geschützten Textbeständen.” 
-                        <hi rend="italic">ZfdG</hi> 5. DOI:
-                        <ref target="https://doi.org/10.17175/2020_006" xml:space="preserve"> </ref>
-                        <ref target="https://doi.org/10.17175/2020_006">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.17175/2020_006</hi>
-                        </ref>.
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg et al.</hi> 2016. “The FAIR Guiding Principles for scientific data management and stewardship.” 
-                        <hi rend="italic">Sci Data</hi> 3
-                        , H. 160018. DOI: 
-                        <ref target="https://doi.org/10.1038/sdata.2016.18">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.1038/sdata.2016.18</hi>
-                        </ref>
-                        <ref target="https://zfdg.de/sb003_012">.</ref>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Riley, Jenn.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> Understanding metadata. What is metadata and what is it for? Baltimore 2017.</hi>
                     </bibl>
                 </listBibl>
             </div>

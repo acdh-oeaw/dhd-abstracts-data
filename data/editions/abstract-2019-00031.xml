@@ -1,40 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="147_final-KLAUS_Carsten_OCR_Nachkorrektur_des_Royal_Society_Corpus" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="122_final-MEYER_Nils_Sachthematische_Zugänge_im_Archivportal_D_am_Beis" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="full">
-                    <title type="main">OCR Nachkorrektur des Royal Society Corpus</title>
-                    <title type="sub"/>
-                </title>
+                <title>Sachthematische Zugänge im Archivportal-D am Beispiel Weimarer Republik</title>
                 <author>
                     <persName>
-                        <surname>Klaus</surname>
-                        <forename>Carsten</forename>
+                        <surname>Meyer</surname>
+                        <forename>Nils</forename>
                     </persName>
-                    <affiliation>Universität des Saarlandes, Saarbrücken, Deutschland</affiliation>
-                    <email>s8caklau@stud.uni-saarland.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Fankhauser</surname>
-                        <forename>Peter</forename>
-                    </persName>
-                    <affiliation>Institut für Deutsche Sprache, Mannheim, Deutschland</affiliation>
-                    <email>fankhauser@ids-mannheim.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Klakow</surname>
-                        <forename>Dietrich</forename>
-                    </persName>
-                    <affiliation>Universität des Saarlandes, Saarbrücken, Deutschland</affiliation>
-                    <email>dklakow@lsv.uni-saarland.de</email>
+                    <affiliation>Landesarchiv Baden-Württemberg, Deutschland</affiliation>
+                    <email>nils.meyer@la-bw.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2016-08-22T21:51:20.48</date>
+                    <date>2018-09-25T07:08:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -47,7 +28,7 @@
                 </t:address>
             </publicationStmt>
             <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
+                <p>Converted from a Word document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -66,174 +47,49 @@
                     <term>Posterpräsentation</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>noisy channel model</term>
-                    <term>historical corpus</term>
-                    <term>ocr</term>
-                    <term>misspellings</term>
-                    <term>royal society</term>
+                    <term>Archiv</term>
+                    <term>Archivportal</term>
+                    <term>Vokabular</term>
+                    <term>Anreicherung</term>
+                    <term>Machine Learning</term>
+                    <term>Maschinenlernen</term>
+                    <term>Tool</term>
+                    <term>Weimarer Republik</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Programmierung</term>
-                    <term>Modellierung</term>
-                    <term>Bereinigung</term>
+                    <term>Annotieren</term>
+                    <term>Archivierung</term>
                     <term>Kollaboration</term>
-                    <term>Daten</term>
-                    <term>Software</term>
+                    <term>Bilder</term>
+                    <term>Metadaten</term>
+                    <term>Text</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading">
-                <head>Einleitung</head>
-                <p>Linguistische Analysen historischer Texte stellen Forscher oftmals vor große Herausforderungen. Im Gegensatz zur Digitalisierung moderner Dokumente kann es bei jahrhundertealten Texten zu Schwierigkeiten kommen. Diese weisen oftmals eine geringere Qualität auf, sodass es beim Einlesen zu Fehlern kommt. Solche können schwerwiegende Störfaktoren für weitere Analysen sein. In diesem Beitrag beschreiben wir den
-                    <hi rend="bold">Noisy Channel </hi>
-                    <hi rend="bold">Spell Checker</hi>, ein Verfahren zur automatisierten Korrektur von Optical Character Recognition (OCR) induzierten Rechtschreibfehlern in historischen Texten, genauer dem 
-                    <hi rend="bold">Royal Society Corpus</hi>.
+            <div type="div1" rend="DH-Heading1">
+                <head>Ein neuer Rechercheweg</head>
+                <p>Das Archivportal-D 
+                (<ref target="http://www.archivportal-d.de">www.archivportal-d.de</ref>) ist ein Subportal der Deutschen Digitalen Bibliothek 
+                (DDB, <ref target="https://www.deutsche-digitale-bibliothek.de/">https://www.deutsche-digitale-bibliothek.de/)</ref>, das im Rahmen eines DFG-Projekts speziell für die Recherche nach Archiven und Archivgut entwickelt wurde. Derzeit sind im Archivportal zwei Nutzungsszenarien möglich: Nutzende können entweder nach einzelnen Archiven suchen und davon ausgehend durch die Bestände des jeweils ausgewählten Archivs browsen oder sie können mit der Freitextsuche nach einzelnen Objekten suchen. In beiden Fällen stehen verschiedene Facetten zur Einschränkung der Ergebnisse bereit.
                 </p>
-                <p>Beim Royal Society Corpus (RSC) handelt es sich um eine Sammlung wissenschaftlicher Texte von 1665 bis 1869, veröffentlicht im Journal
-                    <hi rend="italic">Philosophical Transactions of the Royal Society of London. </hi>Das Korpus umfasst ungefähr 10.000 Dokumente mit insgesamt 35.000.000 Tokens. Die Texte wurden mithilfe von Optical Character Recognition digitalisiert, bedingt durch das alte Material der Dokumente wurden jedoch Worte falsch erkannt und somit Rechtschreibfehler eingestreut. Diese sollen in einer Nachkorrektur berichtigt werden. (UdS Fedora Commons o.J.)
-                </p>
+                <p>In dem aktuellen, ebenfalls von der DFG geförderten Projekt sollen diese Nutzungsmöglichkeiten um einen dritten Zugang erweitert werden. Am Beispiel zweier Digitalisierungsprojekte des Landesarchivs Baden-Württemberg und des Bundesarchivs zum Thema „Weimarer Republik“ soll ein neuer, themenbasierter Zugang zu den Objekten im Archivportal entwickelt werden. Im Zentrum stehen dabei die Anreicherung der Erschließungsdaten des Archivguts mit sachthematischen Begriffen und die Nutzbarmachung der angereicherten Informationen für ein intuitives, forschungsgerechtes Angebot. Das Projekt läuft über zwei Jahre seit dem 1. Juni 2018. Projektpartner sind neben Bundesarchiv und Landesarchiv Baden-Württemberg die Deutsche Nationalbibliothek als Betreiberin der DDB sowie FIZ Karlsruhe – Leibniz-Institut für Informationsinfrastruktur.</p>
             </div>
-            <div type="div1" rend="DH-Heading">
-                <head>State of the Art </head>
-                <p>Das Korpus wird einer strikten Versionskontrolle unterzogen. Fortschritte bzgl. Formatierung oder Fehlerkorrektur werden in aufsteigenden 
-                    <hi rend="italic">corpusBuild</hi> Versionen festgehalten. Derzeit wird das Royal Society Corpus durch einen 
-                    <hi rend="bold">Pattern</hi>-basierten Ansatz bereinigt (Knappen, 2017). Hierbei werden Ersetzungsregeln auf die Texte angewendet um Fehler mit ihrer richtigen Form auszutauschen, wie beispielsweise 
-                    <hi rend="italic">tbe</hi> → 
-                    <hi rend="italic">the</hi>. Der große Nachteil dieses Verfahrens ist jedoch, dass nur ein Bruchteil der induzierten OCR Fehler abgedeckt wird, was in einer geringen Fehlererkennung resultiert. Im Folgenden erläutern wir unseren Ansatz, welcher mit einem statistischen Lernverfahren deutlich bessere Ergebnisse erzielt.
-                </p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Entwicklung von Systematik und Vokabularen</head>
+                <p>In einem ersten Schritt soll gemeinsam mit Vertreterinnen und Vertretern der Archivcommunity, der Geschichtswissenschaft und der Digital Humanities eine an den Bedürfnissen der Forschung ausgerichtete sachthematische Systematik zur Weimarer Republik erstellt werden, die sowohl als Sucheinstieg als auch als hierarchische Facette bei der Filterung der Suchergebnisse dienen kann. Den einzelnen Objekten werden dabei kontrollierte Indexbegriffe aus dem Themenbereich „Weimarer Republik“ zugewiesen, welche wiederum mit den Klassen der Systematik verknüpft sind. Für den Aufbau einer nutzerorientierten Systematik werden verschiedene wissenschaftliche und nicht-wissenschaftliche Systematiken als Grundlage genommen. Das kontrollierte Vokabular der Indexbegriffe wird aus einer umfangreichen Wortgutsammlung ausgehend von den vorhandenen Erschließungsdaten sowie externen Quellen (z.B. Normdateien, Wikidata) gespeist. Daneben soll ein kontrolliertes Vokabular zu den einzelnen Staaten der Weimarer Republik eine grundlegende geografische Suchmöglichkeit schaffen. Indexbegriffe und Systematik sollen dabei mit Wikidata-Datenobjekten und Normdateien verknüpft werden. Gleichzeitig soll auch die normdatenbasierte Indexierung bekannter Personen bei den einzelnen Archivobjekten verbessert werden.</p>
             </div>
-            <div type="div1" rend="DH-Heading">
-                <head>Methodik</head>
-                <p>Der 
-                    <hi rend="italic">Noisy Channel Spell Checker</hi> basiert auf dem 
-                    <hi rend="bold">Noisy Channel Model </hi>(Shannon, 1948). Ein potentiell fehlerhaftes Wort 
-                    <hi rend="bold italic">w</hi>
-                    <hi rend="italic"> </hi>wird wie folgt korrigiert: Aus einer Vorauswahl an geeigneten Kandidaten 
-                    <hi rend="bold italic">c</hi> aus 
-                    <hi rend="bold italic">C</hi> wird abgeschätzt welcher am ehesten als Korrektur 
-                    <hi rend="bold italic">ŵ</hi> in Frage kommt.
-                </p>
-                <p>
-                    <figure>
-                        <graphic url="147_final-35d7dd4107cdde71e841941e11703323.png"/>
-                    </figure>
-                </p>
-                <p>Das Noisy Channel Model besteht zum einen aus dem 
-                    <hi rend="bold">Sprachmodell </hi>
-                    <hi rend="bold italic">P(c)</hi> und zum anderen dem 
-                    <hi rend="bold">Fehlermodell</hi>
-                    <hi rend="bold italic">P(w|c)</hi>. Es werden hierbei zwei intuitive Gedanken kombiniert: Das Sprachmodell schätzt die Wahrscheinlichkeit des Kandidaten in seinem Wortkontext ab. Hochfrequentierte Worte sind demnach sehr wahrscheinlich. Das Gegengewicht hierzu bildet das Fehlermodell. Diese Verteilung gibt an wie sicher 
-                    <hi rend="bold italic">w</hi> eine fehlerhafte Variante von 
-                    <hi rend="bold italic">c</hi> ist, schätzt also ab, wie wahrscheinlich einzelne Korrekturschritte von
-                    <hi rend="bold italic">w</hi> nach 
-                    <hi rend="bold italic">c</hi> sind. 
-                    <hi rend="color(#000000)bold">λ</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">ist ein frei wählbarer Parameter, mithilfe dessen man das Sprachmodell gewichten kann. </hi>
-                    <hi rend="color(#000000)">(Jurafsky 2016: </hi>
-                    <hi rend="color(#000000)">61-73</hi>
-                    <hi rend="color(#000000)">)</hi>
-                </p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Tools und algorithmische Zuordnung</head>
+                <p>Ein Schwerpunkt des Projekts und zentrale Forschungsaufgabe neben der Entwicklung von Systematik und Vokabularen ist die Entwicklung von Tools zur Zuordnung der einzelnen Archivobjekte zu den verschiedenen Vokabularen. Ziel der Arbeit soll ein komfortables Zuordnungswerkzeug zur einfachen Verknüpfung von ganzen Beständen sowie auch einzelnen Archivalien mit den verschiedenen sachthematischen, geografischen und Personen-Indexbegriffen sein. Dieses Tool soll zunächst anhand der Weimar-Bestände des Bundesarchivs und des Landesarchivs Baden-Württemberg entwickelt und getestet werden. In einem späteren Schritt soll das Tool auch dem Personal in anderen Archiven sowie den Nutzenden zur Verfügung gestellt werden. Auf diese Weise können die Nutzenden kollaborativ an der Anreicherung der Erschließungsdaten und der Erweiterung des Themenzugangs mitwirken. Zugleich wird die bisher nur wenig genutzte Möglichkeit der Sachindexierung in den Archiven gestärkt.</p>
+                <p>Dem Zuordnungstool zur Seite gestellt werden soll ein Werkzeug zur algorithmischen Zuordnung von Archivobjekten zu den verschiedenen Indexbegriffen. Über Maschinenlernprozesse sollen die einzelnen Objekte beziehungsweise die Objektmetadaten und ihr jeweiliger Kontext analysiert werden. Dabei werden verschiedene externe Linked-Data-Ressourcen abgefragt und in die Analyse mit einbezogen. Daraus werden im Ergebnis Vorschläge für die Zuordnung der einzelnen Archivobjekte zu den verschiedenen Vokabularen generiert. Die Vorschläge dienen der Unterstützung des Fachpersonals und der Nutzer bei der Auswahl der passenden Indexbegriffe und können von diesen mit dem Zuordnungstool umgesetzt werden. Der hohe Anteil unstrukturierter Daten aufgrund der Erschließung in verschiedenen Freitextfeldern in den Archiven stellt die Arbeit in diesem Arbeitspaket vor besondere Herausforderungen. Unterschiedliche Ansätze (Improved Fisher Vector, Convolutional Neural Networks) sollen daher auf ihre Eignung für archivische Erschließungsdaten erprobt werden.</p>
             </div>
-            <div type="div1" rend="DH-Heading">
-                <head>Training des Modells</head>
-                <p>Die Besonderheit unseres Ansatzes besteht darin, dass Sprach-, sowie Fehlermodell 
-                    <hi rend="bold">korpusspezifisch</hi> trainiert werden. Es sind keine aufwändigen Trainingsdatenannotationen notwendig, denn es werden lediglich die Korpusdateien verwendet.
-                </p>
-                <list type="unordered">
-                    <item>Das 
-                        <hi rend="bold">Sprachmodell</hi> wurde mithilfe der aktuellsten 
-                        <hi rend="italic">corpusBuild</hi> Version des Royal Society Corpus trainiert. Diese Texte sind durch die Patterns bereits best möglich bereinigt worden. Somit wurde versucht das Rauschen innerhalb der Verteilung zu reduzieren. 
-                    </item>
-                    <item>Zum Trainieren des 
-                        <hi rend="bold">Fehlermodells</hi> wurden die bereits erwähnten Patterns als Wissensbasis hinzugezogen. Die Idee war hier aus der Korrektur durch die Patterns eine Wahrscheinlichkeitsverteilung zu erzeugen, also das Fehlerverhalten im Korpus zu generalisieren. Anhand eines Beispiels lässt sich dies veranschaulichen: Gegeben die Ersetzungsregel 
-                        <hi rend="bold italic">fuch → such. </hi>Diese wird in folgende Sequenz von edit Operationen aufgebrochen:
-                        <hi rend="bold italic">f|s </hi>
-                        <hi rend="bold italic">+</hi>
-                        <hi rend="bold italic"> u|u </hi>
-                        <hi rend="bold italic">+</hi>
-                        <hi rend="bold italic"> c|c </hi>
-                        <hi rend="bold italic">+</hi>
-                        <hi rend="bold italic"> h|h</hi>. Der Trainingsprozess erfasst nun wie oft edit Operationen angewendet wurden und leitet daraus eine Verteilung ab.
-                    </item>
-                </list>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>Resultate und Diskussion</head>
-                <p>Als Testmenge haben wir 26 Dokumente aus dem Korpus extrahiert. Diese wurden eigens korrigiert um einen Gold Standard zu erhalten. Als Evaluationsmetriken wählten wir 
-                    <hi rend="italic">Precision </hi>(Anteil der validen Korrekturen), 
-                    <hi rend="italic">Recall </hi>(Abdeckung der einzelnen Fehler) und daraus den 
-                    <hi rend="italic">F1-Score </hi>(harmonisches Mittel aus Pre. und Rec.). Um die Ergebnisse unserer Arbeit zu vergleichen, haben wir zwei weitere Methoden auf die Testdaten angewendet. Dies waren zum einen die 
-                    <hi rend="bold">Pattern</hi>
-                    <hi rend="bold">s</hi> und zum anderen nutzten wir als Referenzkorrektur für das Noisy Channel Model eine Implementierung von 
-                    <hi rend="bold">Peter Norvig</hi> (Norvig, 2009). Die Ergebnisse sind in Abbildung 1 aufgetragen.
-                </p>
-                <p>
-                    <figure>
-                        <graphic url="147_final-28a241507022c765c8b8182f40f73f0c.png"/>
-                        <head>Abbildung 1: Resultate einzelner Korrekturmethoden angewendet auf den Testdatensatz</head>
-                    </figure>
-                </p>
-                <p>
-                    <hi rend="color(#000000)">Man kann erkennen, dass </hi>
-                    <hi rend="color(#000000)">die Pattern</hi>
-                    <hi rend="color(#000000)">korrektur </hi>
-                    <hi rend="color(#000000)">(gelb)</hi>
-                    <hi rend="color(#000000)"> die beste Precision </hi>
-                    <hi rend="color(#000000)">erziel</hi>
-                    <hi rend="color(#000000)">t</hi>
-                    <hi rend="color(#000000)">.</hi>
-                    <hi rend="color(#000000)"> Dies ist ein typisches Verhalten regelbasierte</hi>
-                    <hi rend="color(#000000)">r</hi>
-                    <hi rend="color(#000000)"> Systeme. Im Gegensatz dazu decken die beiden </hi>
-                    <hi rend="color(#000000)">anderen Verfahren</hi>
-                    <hi rend="color(#000000)"> eine größere Menge an Fehlern ab, dies wird am höheren Recall deutlich. </hi>
-                    <hi rend="color(#000000)">Besonders Norvigs Variante </hi>
-                    <hi rend="color(#000000)">(blau)</hi>
-                    <hi rend="color(#000000)"> ist hier führend, jedoch tendiert diese auch zur Überkorrektur von richtig erfassten Wörtern. Wir waren bestrebt, dass unser </hi>
-                    <hi rend="color(#000000)">Spell Checker</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">(rot)</hi>
-                    <hi rend="color(#000000)"> dies </hi>
-                    <hi rend="color(#000000)">weitestgehend </hi>
-                    <hi rend="color(#000000)">vermeidet, </hi>
-                    <hi rend="color(#000000)">indem es</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">Precision und Recall möglichst balanciert. Es werden also viele OCR Rechtschreibfehler korrigiert und gleichzeitig </hi>
-                    <hi rend="color(#000000)">wird </hi>
-                    <hi rend="color(#000000)">die Rate an Falsch Positiven </hi>
-                    <hi rend="color(#000000)">gering gehalten</hi>
-                    <hi rend="color(#000000)">. </hi>
-                    <hi rend="color(#000000)">Hierbei w</hi>
-                    <hi rend="color(#000000)">ar </hi>
-                    <hi rend="color(#000000)">das Optimieren der Gewicht</hi>
-                    <hi rend="color(#000000)">u</hi>
-                    <hi rend="color(#000000)">ng </hi>
-                    <hi rend="color(#000000)">λ </hi>
-                    <hi rend="color(#000000)">des Language Models</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">ein essentieller Bestandteil der Arbeit, </hi>
-                    <hi rend="color(#000000)">sodass unser Modell </hi>
-                    <hi rend="color(#000000)">schlussendlich </hi>
-                    <hi rend="color(#000000)">einen F-Score von </hi>
-                    <hi rend="color(#000000)bold">0.61</hi>
-                    <hi rend="color(#000000)bold">2 </hi>
-                    <hi rend="color(#000000)">erzielte. </hi>
-                    <hi rend="color(#000000)">Bei der Überlegung unseren Ansatz auf andere historische, unaufbereitete Texte anzuwenden </hi>
-                    <hi rend="color(#000000)">empfiehlt es sich das Fehlerverhalten in diesen Texten bestmöglich zu generalisieren</hi>
-                    <hi rend="color(#000000)">. Deshalb sollte bereits eine Wissensbasis in Form von Ersetzungspatterns vorliegen um das Error Model korpusspezifisch zu trainieren, </hi>
-                    <hi rend="color(#000000)">das heißt genauso wie in diesem Beitrag beschrieben.</hi>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>Zusammenfassung</head>
-                <p>Im Vergleich zur derzeitigen pattern-basierten Methode verbesserte der 
-                    <hi rend="italic">Noisy Channel </hi>
-                    <hi rend="italic">Spell Checker</hi> die Korrekturqualität um mehr als das Doppelte. Es werden nun Fehler berichtigt, die die Patterns nicht einmal als solche erkennen. Die Hauptmotivation zum Aufbau des Royal Society Corpus sind Untersuchungen der diachronischen Entwicklung von wissenschaftlichem Englisch (UdS Fedora Commons o.J.). Die Bereinigung der Texte macht es möglich, dass diese Analysen in Zukunft weitaus genauer und verlässlicher werden.
-                </p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Grundlagenentwicklung für Archivportal und DDB</head>
+                <p>Um die sachthematische Systematik adäquat abbilden zu können, sollen die bisherigen Facetten des Archivportals und der DDB um eine hierarchische Dimension erweitert werden. Daneben werden die neuen sachthematischen, geografischen und personenbezogenen Metadaten der einzelnen Archivobjekte in einem eigenen, neu zu entwickelnden Repositorium unabhängig von den Ursprungsdaten des jeweiligen Archivs gesichert und sollen über eine Exportfunktion auch an das datengebende Archiv zurückgespielt werden können. Hierfür sollen umfangreichere Entwicklungsarbeiten im gemeinsamen Backend von DDB und Archivportal angestoßen werden.</p>
+                <p>Mit der Grundlagenarbeit aus dem Projekt sollen später mit geringem Aufwand auch Themenzugänge zu anderen Bereichen (Nationalsozialismus, Erster Weltkrieg, verschiedene Archivaliengattungen) möglich sein. Über das Frontend des Archivportals und der DDB sind diese unmittelbar nutzbar, über das API der DDB können die angereicherten Metadaten auch in anderen Kontexten weitergenutzt werden.</p>
             </div>
         </body>
         <back>
@@ -241,22 +97,37 @@
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">Jurafsky Daniel / Martin James H. (2016)</hi>: <hi rend="italic">"Spelling Correction and the Noisy Channel"</hi> In: Speech and Language Processing, 3. Edition, S. 61-73.
+                        <hi rend="bold">Becker, Irmgard Christa / Maier, Gerald / Uhde, Karsten / Wolf, Christina (eds.) (2016)</hi>: <hi rend="italic">Netz werken</hi>. Das Archivportal-D und andere Portale als Chance für Archive und Nutzung. Beiträge zum 19. Archivwissenschaftlichen Kolloquium (= Veröffentlichungen der Archivschule Marburg 61), Marburg: Archivschule Marburg.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Kermes, Hannah / Degaetano-Ortlieb, Stefania / Khamis, Ashraf / Knappen, Jörg / Teich, Elke (2016)</hi>: <hi rend="italic">"The Royal Society Corpus: From Uncharted Data to Corpus"</hi>, in: Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016). European Language Resources Association (ELRA).
+                        <hi rend="bold">Fähle, Daniel / Maier, Gerald / Schröter-Karin, Tobias / Wolf, Christina (2015)</hi>: <hi rend="italic">Archivportal-D</hi>. Funktionalität, Entwicklungsperspektiven und Beteiligungsmöglichkeiten, in: Archivar 68: 10-19.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Knappen, Jörg / Fischer, Stefan / Kermes, Hannah / Teich, Elke / Fankhauser, Peter (2017)</hi>: <hi rend="italic">"The Making of the Royal Society Corpus"</hi>, in ListLang@NoDaLiDa.
+                        <hi rend="bold">Hentschel, Christian / Wiradarma, Timur Pratama / Sack, Harald (2015)</hi>: <hi rend="italic">If we did not have imagenet</hi>. Comparison of fisher encodings and convolutional neural networks on limited training data, in: <hi rend="italic">Advances in Visual Computing</hi> (= Lecture Notes in Computer Science 9475) 400-409.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Norvig, Peter (2008)</hi>: <hi rend="italic">"Natural Language Corpus Data: Beautiful Data"</hi>. [online] <ptr target="http://norvig.com/ngrams/"/> [letzter Zugriff 08. November 2017].
+                        <hi rend="bold">Herrmann, Tobias / Zahnhausen, Vera (2018)</hi>: <hi rend="italic">Auf dem Weg zum Digitalen Lesesaal</hi>. Das Projekt "Weimar – Die erste deutsche Demokratie", in: <hi rend="italic">Kompetent!</hi> Archive in der Wissensgesellschaft. 86. Deutscher Archivtag 2016 in Koblenz (= Tagungsdokumentationen zum Deutschen Archivtag 21), Fulda: Verband deutscher Archivarinnen und Archivare [Veröffentlichung Herbst 2018].
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Shannon, Claude E. (1948)</hi>: <hi rend="italic">"A Mathematical Theory of Communication"</hi>, in Bell System Technical Journal.
+                        <hi rend="bold">Hollmann, Michael (2016)</hi>: <hi rend="italic">Deutschland in zwei Nachkriegszeiten</hi>. Der Einstieg in das Online-Archiv des Bundesarchivs, in: Archivar 69, 6-9.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">UdS Fedora Commons Repository (o.J.)</hi>: <hi rend="italic">"The Royal Society Corpus (RSC)"</hi>, <ptr target="https://fedora.clarin-d.uni-saarland.de/rsc/"/>. [letzter Zugriff 29. März 2018].
+                        <hi rend="bold">Laux, Susanne / Wolf, Christina (2016)</hi>: <hi rend="italic">Forschungsprojekt "Von der Monarchie zur Republik" gestartet</hi>. Digitalisierung von Quellen zur Demokratiegeschichte im deutschen Südwesten 1918-1923, in: Archivnachrichten 52, 28-29.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Lindenthal, Jutta (2016)</hi>: <hi rend="italic">Datenqualität und Retrieval</hi>. Vorschläge zur Verbesserung der Suche n der Deutschen Digitalen Bibliothek <ref target="http://jl.balilabs.de/DDB/DQ/DDB_Datenqualit%C3%A4t_Retrieval_1.0.pdf">http://jl.balilabs.de/DDB/DQ/DDB_Datenqualit%C3%A4t_Retrieval_1.0.pdf</ref> [letzter Zugriff 24. September 2018].
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Reisacher, Martin / Krauth, Wolfgang (2015)</hi>: <hi rend="italic">Vernetzen als Herausforderung</hi>. Die Deutsche Digitale Bibliothek, in: Archivnachrichten 51, 36 f.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rühle, Stefanie / Schulze, Francesca / Büchner, Michael (2014)</hi>: <hi rend="italic">Applying a Linked Data Compliant Model</hi>. The Usage of the Europeana Data Model by the Deutsche Digitale Bibliothek <ref target="http://dcevents.dublincore.org/IntConf/dc-2014/paper/view/231/225">http://dcevents.dublincore.org/IntConf/dc-2014/paper/view/231/225</ref> [letzter Zugriff 24. September 2018].
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sack, Harald (2014)</hi>: <hi rend="italic">Linked Data Technologien</hi>. Ein Überblick, in: <hi rend="bold">Pellegrini, Tassilo / Sack, Harald / Auer, Sören (eds.)</hi>: <hi rend="italic">Linked Enterprise Data</hi>. Management und Bewirtschaftung vernetzter Unternehmensdaten mit Semantic Web Technologien. Berlin: Springer 21-62.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wolf, Christina (2016)</hi>: <hi rend="italic">Eines für alle: Das Archivportal-D</hi>. Neue Zugangswege zu Archivgut, in: Neue Wege ins Archiv. Nutzer, Nutzen, Nutzung. 84. Deutscher Archivtag 2014 in Magdeburg (= Tagungsdokumentationen zum Deutschen Archivtag 19). Fulda: Verband deutscher Archivarinnen und Archivare 47‑63.
                     </bibl>
                 </listBibl>
             </div>

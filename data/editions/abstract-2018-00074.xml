@@ -1,38 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="KESSLER_Linda_Entitäten_im_Fokus_am_Beispiel_von_Captivity_N">
+     xml:id="HANNESSCHLÄGER_Vanessa_Menschen_gendern__Einige_Gedanken_übe">
    <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Entitäten im Fokus am Beispiel von Captivity Narratives</title>
+                <title>Menschen gendern? Einige Gedanken über Datenmodellierung zur Erhebung von Geschlechterverteilung anhand der TEI2016 Abstracts App</title>
                 <author>
                     <persName>
-                        <surname>Kessler</surname>
-                        <forename>Linda</forename>
+                        <surname>Hannesschläger</surname>
+                        <forename>Vanessa</forename>
                     </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>st150918@stud.uni-stuttgart.de</email>
+                    <affiliation>OEAW Österreichische Akademie der Wissenschaften, Österreich</affiliation>
+                    <email>vanessa.hannesschlaeger@oeaw.ac.at</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Braun</surname>
-                        <forename>Tamara</forename>
+                        <surname>Andorfer</surname>
+                        <forename>Peter</forename>
                     </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>st151509@stud.uni-stuttgart.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Preuß</surname>
-                        <forename>Tanja</forename>
-                    </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>st102459@stud.uni-stuttgart.de</email>
+                    <affiliation>OEAW Österreichische Akademie der Wissenschaften, Österreich</affiliation>
+                    <email>peter.andorfer@oeaw.ac.at</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2017-09-14T16:12:00Z</date>
+                    <date>2018-01-15T07:58:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -64,21 +56,26 @@
                     <term>Poster</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>maschinelles Lernverfahren</term>
-                    <term>Sentimentanalyse</term>
-                    <term>Captivity Narratives</term>
+                    <term>Datenmodellierung</term>
+                    <term>gender studies</term>
+                    <term>Geschlechtertheorie</term>
+                    <term>TEI</term>
+                    <term>Datenanreicherung</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
+                    <term>Modellierung</term>
                     <term>Annotieren</term>
-                    <term>Literatur</term>
-                    <term>benannte Entitäten (named entities)</term>
+                    <term>Theoretisierung</term>
+                    <term>Bearbeitung</term>
+                    <term>Daten</term>
+                    <term>Personen</term>
                 </keywords>
             </textClass>
         <settingDesc>
             <ab n="conference">DHd2018 - "Kritik der Digitalen Vernunft", Köln</ab>
-            <ab n="paperID">131</ab>
+            <ab n="paperID">108</ab>
             <ab n="session_ID">60</ab>
-            <ab n="session_numberInSession">28</ab>
+            <ab n="session_numberInSession">58</ab>
             <ab n="session_short">Poster_1</ab>
             <ab n="session_title">Postersession</ab>
             <ab n="session_start">2018-03-01 17:45</ab>
@@ -88,66 +85,77 @@
     </teiHeader>
    <text>
         <body>
-            <p>Eigennamenerkennung (NER) ist im Bereich der maschinellen Sprachverarbeitung bereits viel behandelt worden. Eine Übersicht hierzu findet sich bei Nadeau und Sekine (2007). In den Digital Humanities dient die Erkennung von benannten Entitäten der Identifikation zentraler Akteure und Elemente in Texten, welche unter anderem die Grundlage für tiefergehende Analysen bezüglich Beziehungen, Strukturen und Emotionen in diesen Texten bilden. Jannidis et al. (2015) thematisieren allerdings, dass die reine NER beispielsweise für eine Analyse von Figurennetzwerken in literarischen Texten unzureichend ist, da dabei nur Figurenreferenzen durch konkrete Namensnennung erfasst werden. Um spezifisch auf die Bedürfnisse von Textanalysen im Kontext der Digital Humanities einzugehen, wurden im „Center for Reflected Text Analytics“ (CRETA) (Kuhn et al. 2016) der Universität Stuttgart Annotationsrichtlinien entworfen, die über die Annotation reiner Eigennamen hinausgehen und sich auf verschiedenartige Entitätsreferenzen in deutschsprachigen Texten unterschiedlicher Genres fokussieren.<ref target="ftn1" n="1"/>
-                So wird beispielsweise das Appellativ 
-                <hi rend="italic">the indians</hi> als Entität erfasst, obwohl die Referenz nicht mit Namen spezifiziert wird. 
-            </p>
-                <p>Ein Beispiel für den Mehrwert der Annotation solcher Entitätsreferenzen findet sich bei Blessing et al. (2017). Um die Übertragbarkeit der Richtlinien nicht nur zwischen verschiedenen Textsorten, sondern auch sprachübergreifend zu evaluieren, stellen wir unser Projekt mit dem Ziel der Annotation von Erzähltexten in englischer Sprache vor. Ausgehend von der durch CRETA geschaffenen Grundlage teilt sich unser Projekt in drei Phasen auf: die manuelle Annotation und Überprüfung der Übertragbarkeit der CRETA-Richtlinien auf die gegebene Textsorte, die Automatisierung der Entitätserkennung und die Einbindung der Entitäten in eine literaturwissenschaftliche Analyse.
-            </p>
-            <p>Als Textgrundlage dient eine Sammlung von englischsprachigen Captivity Narratives.<ref target="ftn2" n="2"/>
-                Diese Erzählungen aus dem 18. Jahrhundert handeln von Erfahrungen weißer Siedler in Nordamerika, die in indianische Gefangenschaft geraten. Zunächst wurden in sieben Texten im Gesamtumfang von 71.526 Wörtern 5.163 Entitäten identifiziert und mit den von CRETA erarbeiteten Kategorien (Personen, Orte, Organisationen, Ereignisse, Werke und abstrakte Konzepte) annotiert. Im Verlauf dieser Annotationsphase wurden die CRETA Richtlinien an die speziellen Gegebenheiten der Textsorte angepasst, die in Bezug auf die Erwähnung von Personen und Orten einige Besonderheiten aufweist. Auffällig ist beispielsweise, dass Personen in vielen Fällen in Gruppen, oftmals auch ohne spezifische Namen, erwähnt werden. Um diese Nennungen dennoch zu erfassen, wird die Begrenzung auf Eigen- und Gattungsnamen aufgehoben und um Formen wie 
-                <hi rend="italic">some, others</hi> oder 
-                <hi rend="italic">a few</hi> erweitert. Zudem werden Orte häufig anhand von Landschaftsmerkmalen und nur selten mit konkreten Ortsnamen benannt. Dementsprechend bilden solche Nennungen (z.B. 
-                <hi rend="italic">the river</hi> oder 
-                <hi rend="italic">the mountain</hi>) den Großteil der annotierten Ortsentitäten. Die Erfassung von vollständigen Nominalphrasen als Entitäten erweist sich stellenweise als problematisch, da die Captivity Narratives verschachtelte Nominalphrasen enthalten, sodass sehr umfangreiche Entitäten zu annotieren sind.
-            </p>
-            <p>Der so entstandene Goldstandard dient als Trainingsdatensatz zur Entwicklung eines maschinellen Lernverfahrens. Ein Naive Bayes Classifier wurde mit Features trainiert, die sich u.a. auf die äußere Gestalt (z.B. Großschreibung), die Wortart und die Zugehörigkeit zu Wortlisten (Namen und amerikanische Orte) beziehen. Im Kreuzvalidierungsverfahren kann damit ein Micro-Fscore von 0,29 erzielt werden. Für die am häufigsten im Trainingsmaterial vorhandene Klasse PER wurde ein Precision-Wert von 0,45 erzielt. Dies bedeutet, dass fast die Hälfte der automatisch mit PER annotierten Entitäten wirklich Personen sind. Der Recall von 0,3 zeigt, wie unvollständig die Erkennung mit einem knappen Drittel aller relevanten Personen noch ist. Eine Auswertung der Ergebnisse zeigt, dass die Länge und Verschachtelung vieler Entitäten die automatische Klassifizierung erschwert. Da sich im manuellen Annotationsprozess der Kontext häufig als Entscheidungshilfe herausstellte, sollte dieser bei der automatischen NER zukünftig berücksichtigt werden. Darüber hinaus könnte die Erweiterung der verwendeten Features durch syntaktische Informationen und die Verwendung einer größeren Menge an Trainingsdaten zu Verbesserungen führen.</p>
-            <p>Um den Mehrwert der Entitätsreferenzen für eine inhaltliche Fragestellung bezüglich der Captivity Narratives zu veranschaulichen, zeigen wir die textstatistische Analyse von Emotionen im Umfeld bestimmter Entitäten bzw. Entitätsgruppen. Basierend auf den manuell annotierten Texten, lassen sich Personenentitäten mithilfe von Clusteranalysen gruppieren. Anhand von positiven und negativen Wortlisten lassen sich zwei Gruppen bilden, die sich grob als 
-                <hi rend="italic">Indianer</hi> und 
-                <hi rend="italic">Andere</hi> gegenüber stehen (siehe Abbildung 1 und 2). Eine auf denselben Wortlisten basierende Sentiment Analyse ergab einen deutlich negativeren Emotionswert für Personenentitäten, die der Gruppe der Indianer zuzuordnen sind, als für die Gruppe der anderen Personen.
-            </p>
-            <p>Abschließend lässt sich festhalten, dass auf Grundlage unserer Annotationen eine Abgrenzung der im Text auftretenden Gruppen anhand von emotionsgeladenen Wörtern möglich ist, die der erwarteten negativen Haltung der Verfasser gegenüber den Eingeborenen Nordamerikas entspricht.</p>
-            <p>Die von CRETA entwickelten Annotationsrichtlinien sind grundsätzlich auf die von uns analysierten Texte anwendbar, trotz abweichender Sprache und spezifischer Erzählweise. Um die Breite der enthaltenen Entitätsreferenzen vollständig abbilden zu können, bedarf es allerdings einzelner Spezifizierungen der Annotationsrichtlinien für diese Textsorte. </p>
-            <figure>
-                <graphic n="1001"
-                     width="12.78086388888889cm"
-                     height="9.567333333333334cm"
-                     rend="inline"
-                     url="KESSLER_Linda_Entit_ten_im_Fokus_am_Beispiel_von_Captivity_N-image1.jpg"/>
-                <head>Abbildung 1: Ergebnisse der Cluster-Analyse: Indianer
-                </head>
-            </figure>
-            <p>
-                <figure>
-                    <graphic n="1002"
-                     width="12.784666666666666cm"
-                     height="9.072716666666667cm"
-                     rend="inline"
-                     url="KESSLER_Linda_Entit_ten_im_Fokus_am_Beispiel_von_Captivity_N-image2.jpg"/>
-                    <head>Abbildung 2: Ergebnisse der Cluster-Analyse: Andere
-                    </head> 
-                </figure>
-            </p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Ausgangspunkt: Die TEI2016 Abstacts App</head>
+                <p>Die Abstracts zur TEI Konferenz 2016 wurden via ConfTool eingereicht und anschließend in Microsoft Word und InDesign ediert, um ein gedrucktes Book of Abstracts herzustellen.
+                    <ref target="ftn1" n="1"/> Die InDesign-Datei wurde dann als PDF exportiert und online verfügbar gemacht. Diese beiden Fassungen des Book of Abstracts wurden vor der Konferenz fertiggestellt. Nach der Konferenz wurde die InDesign Datei erneut exportiert, diesmal in XML Format. Diese Datei wurde dann teils manuell, teils automatisiert in Einzeldateien (jedes Abstract als eine Datei) zerlegt, bearbeitet und mit umfangreichen Metadaten versehen, um TEI-P5-Dateien herzustellen. Diese wurden auf GitHub veröffentlicht. Die jeweiligen &lt;teiHeader&gt; wurden mit umfassenden Informationen ausgestattet und detailliert codiert; etwa wurden innerhalb der mit Normdaten (VIAF) angereicherten &lt;editor&gt;- und &lt;author&gt;-Tags konsequent &lt;persName&gt;-, &lt;forename&gt;- und &lt;surname&gt;-Tags eingesetzt. Das stellte sich für die Weiterverarbeitung, Analyse und Visualisierung der Daten später als vorteilhaft heraus.
+                </p>
+                <p>Dieses Corpus bildete die Basis für die TEI2016 Abstracts App, in der die Abstracts in der Erstversion über ein Inhaltsverzeichnis, das nach Abstract-Titel oder nach Verfassenden sortiert werden konnte, ansteuerbar waren. Schon in dieser rudimentären Form zeigte sich das Potential der Daten und der Applikation für Auswertungen, die über Struktur und Zusammensetzung der Konferenz und ihrer Beitragenden Auskunft geben würden. Die App wurde daher sowohl im Bereich der Funktionalität als auch auf der Ebene der enthaltenen Daten substantiell weiterentwickelt.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Fragestellung und gender-theoretische Überlegungen</head>
+                <p>Wir trafen die Entscheidung, der weiteren Entwicklung des Prototyps der App eine Forschungsfrage zugrundezulegen. Wir entschieden uns für die Frage nach der Geschlechterverteilung unter den Beitragenden.</p>
+                <p>Aus Perspektive der Gendertheorie (in Butler’scher Tradition) bedarf die Entscheidung, diese Frage zu stellen, an sich eine Rechtfertigung, denn “a performative utterance (or practice) brings into being that of which it speaks.” (Butler 2010, 150f) Das bedeutet, dass die Frage nach der Verteilung der Geschlechter die Unterscheidung der Geschlechter erst hervorbringt, und so die historische Situation, die unser Körper bedeutet, fortsetzt: “As an intentionally organized materiality, the body is always an embodying of possibilities both conditioned and circumscribed by historical convention. In other words, the body is a historical situation, as Beauvoir has claimed, and is a manner of doing, dramatizing, and reproducing a historical situation.” (Butler 1988, 521) Berücksichtigt man außerdem die Konzepte des 
+                    <hi rend="italic">Doing</hi> bzw. 
+                    <hi rend="italic">Undoing Gender</hi> (West &amp; Zimmerman 1987; Hirschauer 1994 &amp; 2001), so wird deutlich, dass die oben formulierte Frage deutlich präzisiert werden muss, um die zu erhebenden Daten in einer Weise strukturieren zu können, die eine zeitgenössische Auffassung von Geschlechteridentitäten wiedergibt.
+                </p>
+                <p>Die Frage nach dem Geschlecht der Konferenzbeitragenden wurde daher wie folgt präzisiert: Da sie aus einem Interesse an der Stellung bzw. Repräsentation der Geschlechter im gegenwärtigen Wissenschaftsbetrieb heraus gestellt wurde, richtet sie sich nicht auf die biologische Beschaffenheit der Körper der Konferenzbeitragenden, sondern auf ihre gesellschaftliche (Selbst-)Wahrnehmung (also auf 
+                    <hi rend="italic">gender</hi> und nicht 
+                    <hi rend="italic">sex</hi>). Folgt man Butlers Auffassung, nach der die performative Äußerung das, wovon sie spricht, hervorbringt, wären daher eigene Angaben der Betroffenen zu ihrem Geschlecht die ideale Datenquelle für diese Fragestellung gewesen. Solche Angaben standen allerdings nicht zur Verfügung.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Datenmodellierung und -anreicherung</head>
+                <p>Nachdem eine Personenliste aus dem abstracts-Corpus extrahiert worden war, kamen wir zu dem Schluss, dass das Zuweisen von Geschlechtern an Personen unter Berücksichtigung der oben skizzierten geschlechtertheoretischen Überlegungen kein gangbarer Weg sein konnte. Um die soziodeterministische Neugier, aus der heraus die Ausgangsfrage gestellt worden war, dennoch befriedigen zu können, entwickelten wir ein gendersensibles Workaround für die Modellierung der Daten, das uns dennoch eine Erhebung der Geschlechterverteilung erlaubte: Anstatt den &lt;persName&gt;s ein &lt;sex&gt; zuzuweisen, wie es die TEI-Richtlinien vorsehen, entschieden wir uns dafür, dem jeweiligen &lt;forename&gt; einen @type zuzuweisen, der eine Angabe zum (sozialen) Geschlecht enthalten sollte. Diese Vorgehensweise erlaubte es, die Daten nicht den eigentlichen Personen nachzubauen und damit annahmen über deren Selbstwahrnehmung zu treffen, sondern zu erheben, welchem Geschlecht sie von einer allgemeinen Gesellschaft oder Öffentlichkeit aufgrund ihrer Namen aller Wahrscheinlichkeit nach zugeordnet würden.</p>
+                <p>Um das Vorgehen weiter zu objektivieren, entschieden wir uns gegen die Zuordnung der Geschlechter zu den Vornamen auf Basis unseres eigenen Weltwissens. Stattdessen machten wir uns auf die Suche nach Namensdatenbanken, die Angaben zum Geschlecht enthalten. Im Natural Language Toolkit (NLTK) etwa ist eine solche Liste enthalten (Kantrowitz 1997), jedoch werden keine Angaben gemacht, wie diese Liste zustande kam und auf welcher Grundlage die Geschlechter zugeordnet wurden. Wir entschieden uns daher für genderize.io, eine Datenbank, die nach eigenen Angaben auf Daten von Social-Media-Plattformen basiert, wo Personen die Informationen zu ihrem Geschlecht selbst bestimmen können. Nach dem Abgleich unserer Personenliste mit genderize.io via deren API konnten wir 102 von 124 Namen ein Geschlecht zuordnen. Da genderize.io nur zwei Geschlechter kennt, setzten wir “male”, “female” und “no-match” als @type-Werte ein. Die Namen, die nach diesem ersten Abgleich “no-match” waren, verglichen wir anschließend manuell mit der genderchecker.com-Datenbank, die ihre Geschlechtsangaben aus den "2001 and 2011 UK Census Data" bezieht, "together with multiple online sources and contributions from our 2m website visitors". Diese kommerzielle Datenbank konnte nicht für einen Gesamtvergleich genutzt werden, da nur die manuelle Verwendung kostenfrei ist. Ein interessanter Aspekt des Datenmodells von genderchecker.com ist die Berücksichtigung der Möglichkeit eines dritten Geschlechts: "If we see just one instance of a name appearing as both male and female, we categorise it as unisex." Aus gendertheoretischer Perspektive ist dieses Modell ein Schritt in die richtige Richtung, wenngleich die Benennung “unisex” diskutabel scheint. In unserer Namensliste kam kein solcher Fall vor - nach dem Abgleich der verbleibenden 22 Namen mit genderchecker.com blieben drei Namen “no-match”.</p>
+                <p>Da Daten und Code, aus denen die TEI2016 Abstracts App gebaut ist, unter einer offenen Lizenz auf GitHub frei zugänglich sind, steht es den Beitragenden frei, ihr Geschlecht und damit unsere statistische Auswertung der Geschechterverteilung zu verändern - das Ergebnis bleibt also ein vorläufiges. Im geplanten Vortrag wird es im Rahmen einer live-Demonstration der App präsentiert werden.</p>
+            </div>
         </body>
         <back>
          <div type="notes">
-            <note xml:id="ftn1" n="1"> Die Annotationsrichtlinien können eingesehen werden unter 
-                            <ref target="https://www.creta.uni-stuttgart.de/cute/datenmaterial/annotationsrichtlinien-1-1/">https://www.creta.uni-stuttgart.de/cute/datenmaterial/annotationsrichtlinien-1-1/</ref>, abgerufen am 24.08.2017.
-                        </note>
-            <note xml:id="ftn2" n="2"> Wir danken Herrn Prof. Dr. Marc Priewe und den Mitarbeiter/innen der Professur für amerikanische Literatur und Kultur an der Universität Stuttgart </note>
+            <note xml:id="ftn1" n="1" rend="footnote text"> Dieser Workflow ist, zugegebenermaßen, einer Konferenz im Bereich der Digital Humanities, und der TEI Konferenz im Besonderen, nicht ganz angemessen; eine Integration etwa des DH-Convalidators hätte den Prozess wesentlich gestrafft. Eingespielte Prozesse und Zeitdruck waren die Hauptgründe für diese Vorgehensweise.</note>
          </div>
          <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Blessing, Andre / Echelmeyer, Nora / John, Markus / Reiter, Nils </hi>(2017): “An End-to-end Environment for Research Question-Driven Entity Extraction and Network Analysis”, in: 
-                        <hi rend="italic">Proceedings of the Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature</hi>, 57–67, Vancouver, Canada. Association for Computational Linguistics.
+                    <bibl><hi rend="bold">Peter Andorfer, Vanessa Hannesschläger </hi>(2017): TEI Abstracts 2016. A little application to publish the abstracts of the TEI conference 2016. 
+                        <ref target="http://tei2016app.acdh.oeaw.ac.at/">http://tei2016app.acdh.oeaw.ac.at/
+                        </ref>
                     </bibl>
-                    <bibl><hi rend="bold">Jannidis, Fotis / Krug, Markus / Toepfer, Martin / Puppe, Frank / Reger, Isabelle / Weimer, Lukas </hi>(2015): “Automatische Erkennung von Figuren in deutschsprachigen Romanen“. Abstract für die DHd 2015 in Graz.</bibl>
-                    <bibl><hi rend="bold">Kuhn, Jonas / Alexiadou, Artemis / Braun, Manuel / Ertl, Thomas / Holtz, Sabine / Kantner, Catleen, . . . Zittel, Claus </hi>(2016): “CRETA (Centrum für reflektierte Textanalyse) – Fachübergreifende Methodenentwicklung in den Digital Humanities“. Abstract für die DHd 2016 in Leipzig.</bibl>
-                    <bibl><hi rend="bold">Nadeau, David / Sekine, Satoshi </hi>(2007): “A survey of named entity recognition and classification. 
-                        <hi rend="italic">Linguisticae Investigationes”</hi>, 
-                        <hi rend="italic">30</hi>, 3-26.
+                    <bibl><hi rend="bold">Judith Butler </hi>(1988): Performative Acts and Gender Constitution: An Essay in Phenomenology and Feminist Theory. In: Theatre Journal 40:4, 519–531.</bibl>
+                    <bibl><hi rend="bold">Judith Butler </hi>(2010): Performative Agency. In: Journal of Cultural Economy 3:2, 147–161.</bibl>
+                    <bibl><hi rend="bold">Genderchecker</hi>: 
+                        <ref target="http://genderchecker.com/">http://genderchecker.com/
+                        </ref>
                     </bibl>
+                    <bibl><hi rend="bold">genderize.io: Determine the gender of a first name</hi>. 
+                        <ref target="https://genderize.io/">https://genderize.io/
+                        </ref>
+                    </bibl>
+                    <bibl><hi rend="bold">Vanessa Hannesschläger, Daniel Schopper (Hg.) </hi>(2017): TEI Conference and Members’ Meeting 2016. Book of Abstracts [XML/TEI files]. 
+                        <ref target="https://github.com/acdh-oeaw/TEI2016abstracts">https://github.com/acdh-oeaw/TEI2016abstracts
+                        </ref>
+                    </bibl>
+                    <bibl><hi rend="bold">Stefan Hirschauer </hi>(1994): Die soziale Fortpflanzung der Zwei-Geschlechtlichkeit. In: Kölner Zeitschrift für Soziologie und Sozialpsychologie 46:4, 668–692.</bibl>
+                    <bibl><hi rend="bold">Stefan Hirschauer </hi>(2001): Das Vergessen des Geschlechts: Zur Praxeologie einer Kategorie sozialer Ordnung. In: Kölner Zeitschrift für Soziologie und Sozialpsychologie (Sonderheft 41), 208–235.</bibl>
+                    <bibl><hi rend="bold">Mark Kantrowitz </hi>(1997): Name Corpus: List of Male, Female, and Pet names. CMU Artificial Intelligence Repository. 
+                        <ref target="http://www.cs.cmu.edu/afs/cs/project/ai-repository/ai/areas/nlp/corpora/names/">http://www.cs.cmu.edu/afs/cs/project/ai-repository/ai/areas/nlp/corpora/names/
+                        </ref>
+                    </bibl>
+                    <bibl><hi rend="bold">Natural Language Toolkit </hi>(NLTK). 
+                        <ref target="http://www.nltk.org/">http://www.nltk.org/
+                        </ref>
+                    </bibl>
+                    <bibl><hi rend="bold">Susanne Oelkers </hi>(2003): Naming gender. Empirische Untersuchungen zur phonologischen Struktur von Vornamen im Deutschen. Frankfurt a. M.: Lang.</bibl>
+                    <bibl><hi rend="bold">TEI Consortium </hi>(2017): TEI P5: Guidelines for Electronic Text Encoding and Interchange. 
+                        <ref target="http://www.tei-c.org/release/doc/tei-p5-doc/en/Guidelines.pdf">http://www.tei-c.org/release/doc/tei-p5-doc/en/Guidelines.pdf
+                        </ref>
+                    </bibl>
+                    <bibl><hi rend="bold">Virtual International Authority File </hi>(VIAF). 
+                        <ref target="https://viaf.org/">https://viaf.org/
+                        </ref>
+                    </bibl>
+                    <bibl><hi rend="bold">Candance West, Don Zimmerman </hi>(1987): Doing Gender. In: Gender and Society 1:2, 125–151.</bibl>
                 </listBibl>
             </div>
       </back>

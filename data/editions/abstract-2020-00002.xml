@@ -1,35 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="105_final-STEYER_Timo_Abstract_Enhancement__Potentiale_der_Dhd_Konfere" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="115_final-SCHOLZ_Martin_Aufbau_und_Erfahrungen_aus_dem_Digital_Humanit" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
 <title type="full">
-<title type="main">Abstract Enhancement. Potentiale der DHd-Konferenzabstracts als Daten/Publikation</title>
+<title type="main">Aufbau und Erfahrungen aus dem Digital Humanities Lab der Universität Erlangen-Nürnberg</title>
 <title type="sub"/>
 </title>
 <author>
 <persName>
-<surname>Steyer</surname>
-<forename>Timo</forename>
+<surname>Scholz</surname>
+<forename>Martin</forename>
 </persName>
-<affiliation>Forschungsverbund Marbach Weimar Wolfenbüttel, Deutschland</affiliation>
-<email>steyer@hab.de</email>
+<affiliation>Universitätsbibliothek Erlangen-Nürnberg</affiliation>
+<email>martin.scholz@fau.de</email>
 </author>
 <author>
 <persName>
-<surname>Andorfer</surname>
-<forename>Peter</forename>
+<surname>Klusik-Eckert</surname>
+<forename>Jacqueline</forename>
 </persName>
-<affiliation>Österreichische Akademie der Wissenschaften</affiliation>
-<email>Peter.Andorfer@oeaw.ac.at</email>
-</author>
-<author>
-<persName>
-<surname>Cremer</surname>
-<forename>Fabian</forename>
-</persName>
-<affiliation>Max Weber Stiftung; Leibniz-Institut für Europäische Geschichte</affiliation>
-<email>Cremer@MaxWeberStiftung.de</email>
+<affiliation>IZdigital, Friedrich-Alexander-Universität Erlangen-Nürnberg</affiliation>
+<email>jacqueline.klusik@fau.de</email>
 </author>
 </titleStmt>
 <editionStmt>
@@ -65,146 +57,75 @@
 <term>Posterpräsentation</term>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Digitales Publizieren</term>
-<term>Daten</term>
-<term>Publikation</term>
+<term>Lab</term>
+<term>Werkstatt</term>
+<term>Wissensvermittlung</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Inhaltsanalyse</term>
-<term>Bereinigung</term>
-<term>Daten</term>
-<term>Metadaten</term>
-<term>Text</term>
+<term>Kollaboration</term>
+<term>Einführung</term>
+<term>Methoden</term>
+<term>Software</term>
+<term>Werkzeuge</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<div type="div1">
-<head>Das Abstract im Kontext</head>
-<p>Die Autoren haben auf der DHd2019 einen Hackathon zum Book of Abstracts durchgeführt, in dessen Rahmen sich die Teilnehmenden nicht nur mit der digitalen Publikation, sondern auch mit der Normierung der biobibliographischen Angaben und den Potentialen einer inhaltlichen Analyse der Abstracts auseinander gesetzt haben. (Andorfer et al. 2019) Dieser Beitrag greift die Erkenntnisse der Veranstaltung auf und soll sowohl die konzeptuelle Auseinandersetzung als auch die konkrete Implementierung weiterführen sowie die im Nachgang des Workshops erfolgten Arbeiten präsentieren. Dabei werden im Sinne des Konferenzthemas insbesondere experimentelle Ansätze hervorgehoben. Zwei Aspekte der Konferenzabstracts stehen im Fokus des Beitrags: 1.) das Abstract als eigenständige und reputierliche Publikation und 2.) die Abstracts als Datenquelle selbstreflexiver Untersuchungsansätze in den DH. Die wissenschaftliche Relevanz der Book of Abstracts der DHd-Jahrestagung bekräftigte zuletzt noch einmal Sahle in seiner Einführung des letzten Konferenzbandes (Sahle 2019, S.): „Books of Abstracts als durch peer review-Verfahren gefilterte und qualitätsgesicherte Summen der aktuellen Forschungen definieren das Feld, sind ein äußerst nützliches Instrument der Fachkommunikation und wertvolle Dokumente zum Beleg der Entwicklung über die Zeit.“</p>
-</div>
-<div type="div1">
-<head>Das Abstract als Publikation</head>
-<p>Der Anspruch an die Veröffentlichung der Konferenzbeiträge wird in
-dem bereits 2018 konstatierten „Status einer wissenschaftlich
-nutzbaren Publikation“ (Vogeler 2018) deutlich und mit dem letzten
-Band der DHd 2019 noch einmal unterstrichen (Sahle 2019): „Um das Ziel
-ganz klar zu formulieren: die hier vorgelegten Abstracts sind
-wissenschaftliche Texte eigenen Rechts, die auch bibliografisch
-fassbar sein sollen, um die eigenen Forschungsgebiete und die
-gewonnenen Erkenntnisse sichtbar machen zu können.“ Auf dem Weg zu
-einer digitalen Publikation, die sowohl informationswissenschaftliche
-Standards erfüllt als auch informationstechnologische Potentiale
-ausreizt, ergeben sich zum jetzigen Stand noch viel Raum für
-Entwicklung der Konferenzbeiträge (Cremer 2018). Die Book of Abstracts
-werden als Gesamtband in einer Druckfassung sowie als PDF
-publiziert. Daneben werden einzelne Beiträge von den Vortragenden auf
-verschiedenen Repositorien oder Webseiten unsystematisch
-veröffentlicht, darunter einzelne Abstracts, Poster, Präsentationen
-oder zugrundeliegende Daten.<ref n="1" target="ftn1"/> Der Beitrag evaluiert die Möglichkeiten und Voraussetzungen für eine eigenständige Publikation der einzelnen Abstracts mit persistenter Speicherung, zitationsfähiger Adressierung, bibliografischer Erfassung und multipler Repräsentationsform (PDF, HTML, TEI). Dabei werden auch dezentrale (z.B. Zenodo-Community) und zentrale Ansätze (z.B. zentrale Redaktion, eigene Infrastruktur) verglichen. Gegenüber traditionellen Formaten und Infrastrukturkomponenten im Sinne einer reputierlichen und zitierfähigen Publikationsform sollen auch experimentelle Repräsentationsformen betrachtet werden, um die vorhandenen Spielräume digitaler Publikationen auszuloten. Als Ausgangspunkt ist hier die im Rahmen des Hackathons entwickelte Präsentationsschicht zu nennen.<ref n="2" target="ftn2"/>
-</p>
-</div>
-<div type="div1">
-<head>Das Abstract als Daten</head>
 <p>
-Die Konferenzabstracts als TEI-basierte Veröffentlichungen demonstrieren ihr Potential als Untersuchungsgegenstand innerhalb des eigenen Faches (Sahle/Henny-Krahmer 2018; Hannesschläger/Andorfer 2018; Hoenen 2019; Kiefer 2019). Ein Desiderat der Untersuchungen bis dato ist die Betrachtung und Auswertung der in den Abstracts zitierten Literatur. Die Bibliographie wissenschaftlicher Artikel dient in der geisteswissenschaftlichen Forschung neben dem Nachweis der zitierten Literatur auch als Ressource für Recherche und Kontextualisierung (Andorfer, DWP 14, S. 24-25) sowie als Datenquelle für die Analyse von Publikations- und Zitationspraktiken (Nyhan/Duke-Williams 2014). Gerade in den Digital Humanities eröffnen sich durch die Verbindung mit Methoden der Netzwerkanalyse neue Untersuchungsansätze (Gao et al. 2018). Im Rahmen des Hackathons wurden die eingereichten Abstracts über Skripte automatisiert mit zusätzlichen Informationen angereichert sowie über manuelle Arbeiten in ihren Metadaten vereinheitlicht.<ref n="3" target="ftn3"/>
-Die bibliographischen Angaben in den Abstracts lagen jedoch in zu heterogenen Formen vor, so dass Auswertungen und Visualisierungen nicht möglich waren. Für das Poster werden diese Daten mit Unterstützung der DHd-AG Digitales Publizieren vereinheitlicht und in der Folge durch die Autoren in ersten Analyseergebnissen und Visualisierungen ausgewertet. Die aufgezeigten Potentiale ließen sich zudem multiplizieren, wenn auch die Konferenzabstracts früherer und folgender DHd-Tagungen aufbereitet werden können, um so auch Entwicklungen und Tendenzen eruieren zu können.
-</p>
-</div>
-<div type="div1">
-<head>Das Abstract in der Diskussion</head>
-<p>Viele Jahre nach Christines Borgmans “Call to Action for the Humanities” (Borgman 2010), der auch das digitale Publizieren jenseits der simplen Konversion der Papiermedien in das PDF-Format inkludierte, werden auch in den Digital Humanities die Möglichkeiten nicht ausgeschöpft und traditionelle Praktiken gepflegt (Kaden/Kleineberg 2017) – von dem Wechsel einer layoutbasierten zu einer strukturbasierten Publikationstechnik ganz zu schweigen (Stäcker 2013). Die DHd-Konferenzabstracts bergen dabei das Potential dieses Paradigma zu durchbrechen: die XML-basierte Einreichung, die datengestützten Analysemethoden und selbstreflexiven Ansätze des Faches, die technische Expertise der Einreichenden, die Kürze der Beiträge und die enge Vernetzung mit Infrastruktureinrichtungen. Das Poster soll auf die bisher erfolgten Arbeiten und die erzielten Ergebnisse aufmerksam machen sowie vor Ort die Diskussion um Möglichkeiten und Ressourcen sowie Relevanz und Reputation einer „erweiterten Publikation“ der DHd-Abstracts weiterführen. Die Autoren werden im Vorfeld der DHd2020 mit dem Organisationskomitee zur Anreicherung der diesjährigen Abstracts sowie Nutzung der HTML-Präsentationsschicht in Kontakt treten.</p>
-</div>
+<anchor xml:id="id_docs-internal-guid-0eaef282-7fff-5451-f022-bf3947bdc68d"/>Die Aktivitäten in den Digital Humanities sind an der Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU) historisch bedingt auf zahlreiche Lehrstühle über die fünf Fakultäten verteilt. Mit dem Interdisziplinären Zentrum für digitale Geistes- und Sozialwissenschaften (IZdigital) wurden diese 2014 erstmals lose organisiert. Darauf aufbauend wurde an der philosophischen Fakultät der fächerübergreifende Studiengang Digitale Geistes- und Sozialwissenschaften etabliert. Zwar wurde damit Studierenden der Geistes- und Sozialwissenschaften die Möglichkeit eröffnet, sich vertieft und gezielt mit digitalen Aspekten von Forschung, Arbeit und Gesellschaft auseinanderzusetzen. Doch bleibt abseits des Studiengangs für die breite Masse an Studierenden und Promovierenden die Aneignung von digitaler Kompetenz und der Austausch mit Gleichgesinnten weitgehend auf das Selbststudium und informellen Austausch beschränkt. Mit dem Digital Humanities Lab (DHLab) wollen die Universitätsbibliothek Erlangen-Nürnberg, das IZdigital und die Philosophische Fakultät gemeinsam diese Lücke füllen oder zumindest schmälern. Das Poster stellt den Aufbau und bisherige Erfahrungen aus dem Betrieb des DHLab vor.
+            </p>
+<p>Das Digital Humanities Lab versteht sich als Kombination aus Ort, Personen und Inhalten. Es möchte Studierende, Lehrende und Forschende gleichermaßen in ihren praktischen Belangen, Fragen und Problemen rund um das Thema Digital Humanities unterstützen und begreift sich als Dienstleister für die Geistes- und Sozialwissenschaften. Es verfolgt daher ein offenes Format, das Aspekte eines Helpdesks mit Schulungen, Vorträgen sowie Diskussions- und Netzwerkmöglichkeiten vereint. Das DHLab findet in Räumen der Universitätsbibliothek für je zwei Stunden pro Woche statt, in denen Bibliothekspersonal als Ansprechpartner beziehungsweise Dozent zur Verfügung steht. Die räumliche und personelle Verankerung an der Universitätsbibliothek bietet eine neutrale und institutionelle Plattform, auf der sich die unterschiedlichen DH-Akteure der FAU gleichberechtigt begegnen können. Der offene Charakter ermöglicht Interessierten das Einbringen eigener Expertise und Inhalte. Getreu dem Ziel, die Digital Literacy in die Breite zu streuen, ist das Angebot nicht als Teil bestimmter Curricula konzipiert, sondern als Ergänzung zu den fachlichen Lehrveranstaltungen. Ferner werden in den Schulungen vorwiegend niedrigschwellige Inhalte in kleinen Zeiteinheiten angeboten. Zwar werden nach Möglichkeit Querverweise hergestellt, Lerneinheiten sind aber in sich abgeschlossen, um den Einstieg zu jedem Zeitpunkt zu ermöglichen.</p>
+<p>Das DHLab nimmt damit sowohl Anleihen bei den aufkommenden Makerspaces (Owen 2017) als auch der traditionellen Bibliotheksexpertise in der Vermittlung von Informationskompetenz (Rauchmann 2010) und erweitert diese auf digitale Forschungswerkzeuge (Brandtner 2019). Die Implementierung wird bewusst bottom-up betrieben: 
+                <anchor xml:id="id_docs-internal-guid-afefd416-7fff-f6e6-3034-56333cc8e4ee"/>
+In einer Sondierungsphase wurden die Ideen bestehender oder im Aufbau
+befindlicher Angebote anderer Institutionen<ref n="1" target="ftn1"/>
+verglichen. Dabei wurde festgestellt, dass die bereits
+unterschiedlichen Konzepte stark variieren und 
+nicht einfach auf die FAU übertragen werden konnten. Im Fokus steht daher, in Zusammenarbeit mit Digital Humanists der FAU, konkrete und drängende Anliegen vor Ort anzugehen und umzusetzen: Fragen zu Räumlichkeiten, Wissensvermittlung und Austausch. Dabei konnte auf Erfahrungen vorausgegangener Initiativen des akademischen Mittelbaus aufgebaut werden. So sollen umfangreiche Planungen "am Bedarf vorbei" vermieden werden.
+            </p>
+<p>Nach einem Semester Betrieb zeichnen sich bereits erste Vorteile und Herausforderungen dieses Vorgehens sowie gewisse Tendenzen ab: Trotz gemeldetem Bedarf ist das Angebot kein Selbstläufer, sondern muss gezielt und wiederkehrend über verschiedene digitale und analoge Kanäle beworben werden. Als problematisch hat sich hier die Benennung als "Digital Humanities Lab" erwiesen. Der Begriff „Digital Humanities“ spricht die geistes- und sozialwissenschaftliche Zielgruppe ungenügend an, wirkt teils ausgrenzend oder zu abstrakt. 
+                <anchor xml:id="id_docs-internal-guid-f20e4820-7fff-9b9b-743b-91865d7a75e8"/>
+<hi rend="color(#000000)">Was hier nun für die geglückte Wahrnehmung der DH als Fach an der FAU zu interpretieren ist, wirkt gleichermaßen ausschließend</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">für alle nicht Dhler.</hi> Dies mag mit dem techniklastigen DH-Studiengang zusammenhängen, der durch den Erlanger Informatikkern (Sahle 2013: 32–37) profunde Programmierkenntnisse verlangt. 
+                <anchor xml:id="id_docs-internal-guid-32825672-7fff-1f5e-45c2-4a86d4cf6131"/>
+<hi rend="color(#000000)">Geisteswissenschaftler*innen fühlen sich daher durch die Benennung nicht angesprochen und befürchten, dass die Einstiegshürde für sie zu hoch ist.</hi> Darüberhinaus finden sich sozialwissenschaftlich Forschende in dem Begriff nicht wieder, auch wenn Digital-Humanities-Projekte häufig in ihren interdisziplinären Anlagen diese implizieren.
+            </p>
+<p>Als Lösung dieses Problems soll eine zielgruppengerechtere Bewerbung der konkreten Inhalte erfolgen. Gut angenommen wurden die Vorträge und die Schulungen zu Software-Werkzeugen, die ohne Programmierkenntnisse einen schnellen Einstieg bieten. Durch die enge Verzahnung mit den Wissenschaftlern entwickeln diese teilweise ein hohes Engagement und bringen zahlreiche Themen und Inhalte ein. Dies wirkt sich überaus fördernd auf Austausch und Vernetzung über die Fach- und Fakultätsgrenzen hinweg aus. Gerade relativ kleine Runden erlauben das Eingehen auf persönliche Wünsche und spezielle Kompetenzen. Gleichzeitig entwickelt sich ein aktiver "harter Kern" von Personen. Ob dies den Zielen wie auch der Außenwirkung eher hinderlich oder förderlich sein wird, ist momentan noch nicht abzusehen. Das Format des Helpdesks wird momentan am wenigsten angenommen. Dies mag der oben genannten Außenwahrnehmung geschuldet sein, den Öffnungszeiten, den weiteren, etablierten Beratungsmöglichkeiten der Universitätsbibliothek, oder auch der höheren Hemmschwelle einer persönlichen Anfrage.</p>
+<p>Kurzfristig wird das DHLab seine Aktivitäten daher auf Schulungen und Vorträge konzentrieren. Die einzelnen Inhalte werden genauer abgestimmt, wobei Tandem-Termine aus Erfahrungsschilderungen und einführende Tutorien eine wichtige Rolle spielen und Anreiz geben sollen, sich mit den Technologien zu beschäftigen. Momentan wird auch mit Blended Learning als Erweiterung des Präsenzangebots experimentiert. Als weitere Säule seines Service-Angebots plant das DHLab für 2020 die Bereitstellung von Spezialgeräten wie 3D-Scanner und VR-Brille. Dies soll den Einsatz moderner Technologien auch dort in Lehre und Forschung ermöglichen, wo sich die Anschaffung im Alleingang nicht lohnen würde.</p>
 </body>
 <back>
-  <div type="notes">
-    <note n="1" rend="footnote text" xml:id="ftn1">
-      DHd-Community bei Zenodo: <ptr target="https://zenodo.org/communities/dhd"/>
-    </note>
-    <note n="2" rend="footnote text" xml:id="ftn2">DHd 2019 Book of Abstracts Hackathon: 
-    <ref target="https://dhd-boas-app.acdh-dev.oeaw.ac.at/">https://dhd-boas-app.acdh-dev.oeaw.ac.at</ref>
-    </note>
-    <note n="3" rend="footnote text" xml:id="ftn3">
-      Die aufbereiteten Daten sind zu finden unter: https://github.com/csae8092/dhd-boas-data.
-    </note>
-  </div>
-  <div type="bibliogr">
+<div type="notes"><note n="1" rend="footnote text" xml:id="ftn1">
+Vgl. beispielsweise das Digital Humanities Learning Lab Marburg (<ptr
+target="https://www.uni-marburg.de/de/ub/lernen/kurse-beratung/wissen-organisieren/dll"/>
+[letzter Zugriff 24.09.2019]), 
+das Beratungsangebot der ULB Bonn (<ptr target="https://www.ulb.uni-bonn.de/de/service/digital-humanities"/> [letzter Zugriff 24.09.2019]) und das Konzept des Scholarly Makerspace der Humboldt-Universität (Kaden / Kleineberg 2019).
+</note>
+</div>
+<div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-  <hi rend="bold"> Andorfer, Peter </hi> (2015): 
-  <hi rend="italic">Forschungsdaten in den (digitalen) Geisteswissenschaften. Versuch einer Konkretisierung,</hi> DARIAH-DE Working Papers, 14 
-  <ref target="urn:nbn:de:gbv:7-dariah-2015-7-2">urn:nbn:de:gbv:7-dariah-2015-7-2</ref>[letzter Zugriff 30.08.2019].
+  <hi rend="bold">Brandtner, Andreas / Lauer, Gerhard / Reuter, Peter</hi>
+  (2019): "Die Bibliotheken haben ihre Zukunft vor sich, aber es sind Bibliotheken des 21. Jahrhunderts." Bibliotheken als Infrastrukturen der Geisteswissenschaften und als Orte der Selbstkultivierung, in: 
+  <hi rend="italic">ABI Technik</hi>, 39(2), S. 171-178. http://dx.doi.org/10.1515/abitech-2019-2011 [letzter Zugriff: 24.09.2019]
 </bibl>
 <bibl>
-  <hi rend="bold"> Andorfer, Peter / Cremer, Fabian / Steyer, Timo </hi> (2019): DHd 2019 Book of Abstracts Hackathon, in: 
-  <hi rend="italic">DHd 2019 Digital Humanities: multimedial &amp; multimodal. Konferenzabstracts </hi>
-  <ptr target="https://doi.org/10.20375/0000-000B-D512-0"/>[letzter Zugriff 30.08.2019].
+  <hi rend="bold">Kaden, Ben / Kleineberg, Michael</hi> (2019): "Scholarly Makerspaces – Ein Zwischenbericht zum DFG-Projekt FuReSH", in: 
+  <hi rend="italic">LIBREAS. Library Ideas</hi>, 35. https://libreas.eu/ausgabe35/kaden/ [letzter Zugriff: 24.09.2019]
 </bibl>
 <bibl>
-  <hi rend="bold"> Borgman, Christine L. </hi> (2010): The Digital Future is Now: A Call to Action for the Humanities, in: 
-  <hi rend="italic">Digital Humanities Quarterly</hi> 003, Nr. 4.
+<hi rend="bold">Owen, </hi>
+<hi rend="bold">Ivan</hi> (2017): "3D Printing and Makerspaces in Libraries", in: IFLA Trend Report 2017 Update, https://trends.ifla.org/files/trends/assets/documents/ifla_trend_report_2017.pdf [letzter Zugriff: 24.09.2019]
 </bibl>
 <bibl>
-  <hi rend="bold"> Cremer, Fabian </hi> (2018): Nun sag, wie hältst Du es mit dem Digitalen Publizieren, Digital Humanities?, in: 
-  <hi rend="italic">Blog. Digitale Redaktion (blog)</hi>
-  <ptr target="https://editorial.hypotheses.org/113"/>[letzter Zugriff 30.08.2019].
+  <hi rend="bold">Rauchmann, Sabine</hi> (2010): Bibliothekare in Hochschulbibliotheken als Vermittler von Informationskompetenz, Humboldt-Universität zu Berlin, Philosophische Fakultät I, Kap. 1.2.1, 5.1 und 5.2 http://dx.doi.org/10.18452/16133 [letzter Zugriff:24.09.2019]
 </bibl>
 <bibl>
-  <hi rend="bold"> Gao, J. / Duke-Williams, O. / Mahony, S. / Ramdarshan Bold, M. / Nyhan, J. </hi> (2017):The Intellectual Structure of Digital Humanities: An Author Co-Citation Analysis, in: 
-  <hi rend="italic">Digital Humanities 2017</hi>
-  <ptr target="http://discovery.ucl.ac.uk/id/eprint/10052270"/> [letzter Zugriff 30.08.2019].
-</bibl>
-<bibl>
-  <hi rend="bold"> Hall, Mark </hi> (2019): DH is the Study of dead Dudes, in:
-  <hi rend="italic">Hd 2019: multimedial &amp; multimodal Konferenzabstracts</hi>: 111-113
-  <ptr target="https://doi.org/10.5281/zenodo.2600812"/>[letzter Zugriff 30.08.2019].
-</bibl>
-<bibl>
-  <hi rend="bold"> Hannesschläger, Vanessa / Andorfer, Peter </hi> (2018): 
-  <hi rend="italic">Menschen gendern? Datenmodellierung zur Erhebung von Geschlechterverteilung am Beispiel der TEI2016 Abstracts App</hi>
-  <ptr target="https://doi.org/10.5281/zenodo.1182576"/>[letzter Zugriff 30.08.2019].
-</bibl>
-<bibl>
-  <hi rend="bold"> Henny-Krahmer, Ulrike / Sahle, Patrick </hi> (2019): Einreichungen zur DHd 2018, in: 
-  <hi rend="italic">DHd-Blog</hi> (blog), 29. März 2019 
-  <ptr target="https://dhd-blog.org/?p=9001"/>[letzter Zugriff 30.08.2019].
-</bibl>
-<bibl>
-  <hi rend="bold"> Hoenen, Armin </hi> (2019): Einreichungen zur DHd 2019 II, in: 
-  <hi rend="italic">DHd-Blog</hi> (blog), 29. März 2019 
-  <ptr target="https://dhd-blog.org/?p=11418"/>[letzter Zugriff 30.08.2019].
-</bibl>
-<bibl>
-  <hi rend="bold"> Kaden, Ben / Kleineberg, Michael </hi> (2019): Zur Situation des digitalen geisteswissenschaftlichen Publizierens – Erfahrungen aus dem DFG-Projekt ‚Future Publications in den Humanities‘, in: 
-  <hi rend="italic">Bibliothek Forschung und Praxis</hi> 41, Nr. 1 (2017): 7–14 
-  <ptr target="https://doi.org/10.1515/bfp-2017-0009"/>[letzter Zugriff 30.08.2019].
-</bibl>
-<bibl>
-  <hi rend="bold"> Kiefer, Katharina </hi> (2019): Einreichungen zur DHd 2019, in: 
-  <hi rend="italic">DHd-Blog</hi> (blog), 29. März 2019 
-  <ptr target="https://dhd-blog.org/?p=11358"/>[letzter Zugriff 30.08.2019].
-</bibl>
-<bibl>
-  <hi rend="bold"> Nyhan, Julianne / Duke-Williams, Oliver </hi> (2014): Joint and Multi-Authored Publication Patterns in the Digital Humanities, in:
-  <hi rend="italic">Literary and Linguistic Computing</hi> 29, Nr. 3 (1. September 2014) 
-  <ptr target="https://doi.org/10.1093/llc/fqu018"/>[letzter Zugriff 30.08.2019].
-</bibl>
-<bibl>
-  <hi rend="bold"> Sahle, Patrick (ed.) </hi> (2019): 
-  <hi rend="italic">DHd 2019 Digital Humanities: multimedial &amp; multimodal. Konferenzabstracts</hi>. Frankfurt am Main: Zenodo, 2019 
-  <ptr target="https://doi.org/10.5281/zenodo.2596095"/>[letzter Zugriff 30.08.2019].
-</bibl>
-<bibl>
-  <hi rend="bold"> Stäcker, Thomas </hi> (2013): Wie schreibt man Digital Humanities richtig?, in: 
-  <hi rend="italic">Bibliotheksdienst</hi> 47, Nr. 1 
-  <ptr target="https://doi.org/10.1515/bd-2013-0005"/>[letzter Zugriff 30.08.2019].
-</bibl>
-<bibl>
-  <hi rend="bold"> Vogeler, Georg (ed.) </hi> (2018): 
-  <hi rend="italic">DHd 2018: Kritik der digitalen Vernunft. Konferenzabstracts</hi>. Köln, Universität zu Köln, 2018.
+  <anchor xml:id="id_docs-internal-guid-550e2c50-7fff-b06f-bd0c-40e17e1bf12a"/>
+  <hi rend="bold">Sahle, Patrick (2013)</hi>: DH studieren! Auf dem Weg zu einem Kern- und Referenzcurriculum der Digital Humanities, DARIAH-DE Working Papers Nr. 1, Göttingen, http://nbn-resolving.de/urn:nbn:de:gbv:7-dariah-2013-1-5 [letzter Zugriff 24.09.2019]
 </bibl>
 </listBibl>
 </div>

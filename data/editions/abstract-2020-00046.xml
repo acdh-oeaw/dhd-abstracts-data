@@ -1,45 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="165_final-SCHMIDT_Thomas_BeyondTheNotes__Ein_Tool_zur_quantitativen_An" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="110_final-NICKA_Isabella_Erzählerische_Spielräume__Medienübergreifende" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>BeyondTheNotes: Ein Tool zur quantitativen Analyse in den digitalen Musikwissenschaften</title>
+<title>Erzählerische Spielräume. Medienübergreifende Erforschung von Narrativen im Mittelalter mit ONAMA</title>
 <author>
 <persName>
-<surname>Ortloff</surname>
-<forename>Anna-Marie</forename>
+<surname>Nicka</surname>
+<forename>Isabella</forename>
 </persName>
-<affiliation>Lehrstuhl Medieninformatik, Universität Regensburg, Deutschland</affiliation>
-<email>anna-marie.ortloff@stud.uni-regensburg.de</email>
+<affiliation>Interdisziplinäres Zentrum für Mittelalter und Frühneuzeit, Universität Salzburg</affiliation>
+<email>isabella.nicka@sbg.ac.at</email>
 </author>
 <author>
 <persName>
-<surname>Windl</surname>
-<forename>Maximiliane</forename>
+<surname>Hinkelmanns</surname>
+<forename>Peter</forename>
 </persName>
-<affiliation>Lehrstuhl Medieninformatik, Universität Regensburg, Deutschland</affiliation>
-<email>maximiliane.windl@stud.uni-regensburg.de</email>
+<affiliation>Interdisziplinäres Zentrum für Mittelalter und Frühneuzeit, Universität Salzburg</affiliation>
+<email>peter.hinkelmanns@sbg.ac.at</email>
 </author>
 <author>
 <persName>
-<surname>Güntner</surname>
-<forename>Lydia</forename>
+<surname>Landkammer</surname>
+<forename>Miriam</forename>
 </persName>
-<affiliation>Lehrstuhl Medieninformatik, Universität Regensburg, Deutschland</affiliation>
-<email>lydia-maria.guentner@stud.uni-regensburg.de</email>
+<affiliation>Interdisziplinäres Zentrum für Mittelalter und Frühneuzeit, Universität Salzburg</affiliation>
+<email>miriam.landkammer@sbg.ac.at</email>
 </author>
 <author>
 <persName>
-<surname>Schmidt</surname>
-<forename>Thomas</forename>
+<surname>Schwembacher</surname>
+<forename>Manuel</forename>
 </persName>
-<affiliation>Lehrstuhl Medieninformatik, Universität Regensburg, Deutschland</affiliation>
-<email>thomas.schmidt@ur.de</email>
+<affiliation>Interdisziplinäres Zentrum für Mittelalter und Frühneuzeit, Universität Salzburg</affiliation>
+<email>manuel.schwembacher@sbg.ac.at</email>
+</author>
+<author>
+<persName>
+<surname>Zeppezauer-Wachauer</surname>
+<forename>Katharina</forename>
+</persName>
+<affiliation>Interdisziplinäres Zentrum für Mittelalter und Frühneuzeit, Universität Salzburg</affiliation>
+<email>Katharina.Wachauer@sbg.ac.at</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2015-10-04T22:02:00Z</date>
+<date>2020-01-07T15:43:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -67,23 +75,23 @@
 <term>Paper</term>
 </keywords>
 <keywords n="subcategory" scheme="ConfTool">
-<term>Posterpräsentation</term>
+<term>Vortrag</term>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Digitale Musikwissenschaft</term>
-<term>Statistische Musikwissenschaft</term>
-<term>Web-Tool</term>
-<term>User Centered Design</term>
-<term>Distant Hearing</term>
-<term>Visualisierung</term>
+<term>Ontologie</term>
+<term>Narrative</term>
+<term>Semantic Web</term>
+<term>Mediävistik</term>
+<term>Kunstgeschichte</term>
+<term>Germanistik</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Gestaltung</term>
-<term>Programmierung</term>
-<term>Webentwicklung</term>
-<term>Visualisierung</term>
+<term>Beziehungsanalyse</term>
+<term>Modellierung</term>
+<term>Annotieren</term>
+<term>Bilder</term>
+<term>Literatur</term>
 <term>Werkzeuge</term>
-<term>Visualisierung</term>
 </keywords>
 </textClass>
 </profileDesc>
@@ -92,214 +100,233 @@
 <body>
 <div rend="DH-Heading1" type="div1">
 <head>Einleitung</head>
-<p style="text-align:left; ">Mit der Einführung des Konzepts des „Distant Reading“ von Moretti (2002) wurde in den digitalen Literaturwissenschaften in den letzten Jahren ein Trend angestoßen, den Einsatz von computergestützten quantitativen Methoden zur Analyse und Visualisierung von sehr großen Mengen von Texten zu explorieren. Während dieses Konzept und der Einsatz digitaler Methoden in den Literaturwissenschaften umstritten ist, sind computergestützte und quantitative Verfahren in den Musikwissenschaften schon länger etabliert und werden meist als statistische Musikwissenschaften bezeichnet (Nettheim, 1997). In Anlehnung an den Distant Reading-Begriff aus den Literaturwissenschaften wurde in den letzten Jahren versucht ähnliche Begriffe für die Musikwissenschaft einzuführen, um die computergestützte quantitative Analyse und Visualisierung von größeren Mengen an Musikstücken zu beschreiben. In der jüngsten Forschung findet man diesbezüglich die Begriffe: 
-                    <hi rend="italic">Distant Audition</hi> (Abdallah et al., 2017), 
-                    <hi rend="italic">Distant Listening</hi> (Cook, 2013) aber auch 
-                    <hi rend="italic">Distant Hearing</hi> (Burghardt, 2018). Diese Begriffe werden in Abgrenzung des jeweiligen Close-Konzepts, also 
-                    <hi rend="italic">Close Audition/Listening/Hearing</hi> betrachtet, womit die etablierte individuelle Analyse einzelner oder sehr weniger Stücke mittels hermeneutischer und qualitativer Methoden bezeichnet wird. Die genannten Begriffe sind nicht in gleicher Weise etabliert wie der Distant Reading-Begriff. Auch wird mit Distant Reading mittlerweile eine Vielzahl komplexer Methoden wie Sentiment Analysis und Topic Modeling beschrieben. Im Folgenden werden wir jedoch den Begriff Distant Hearing verwenden und bezeichnen damit die computergestützte quantitative Analyse und Visualisierung von mehreren Musikstücken. Wir berichten im vorliegenden Beitrag über den momentanen Stand der Entwicklung des neuen Tools 
-                    <hi rend="italic">BeyondTheNote</hi>, welches Konzepte des Distant Hearing integriert.
-                </p>
+<p>Wer J.R.R. Tolkiens Erzählung von der Begegnung Bilbo Beutlins mit dem Feuerdrachen Smaug, der tief im Einsamen Berg einen gigantischen Schatz bewacht, las oder auf der Leinwand opulent inszeniert sah, hatte wohl mit großer Wahrscheinlichkeit das Gefühl, einer ähnlichen Geschichte irgendwann schon einmal begegnet zu sein. Und dies zu Recht, ist doch das Aufeinandertreffen eines Helden mit einem gefährlichen Drachen, das oftmals auf einen Kampf auf Leben und Tod hinausläuft, ein weitverbreitetes, lange tradiertes Narrativ, welches sich auch im Mittelalter großer Beliebtheit erfreute und dementsprechend häufig aufgegriffen wurde. So stellen sich Siegfried, Beowulf, Tristan, Georg und Lancelot – um nur einige wenige zu nennen – erfolgreich gefährlichen Drachen entgegen. Neben Beowulf ergeben sich besonders zu Siegfried explizite Verbindungen: Siegfried, der auch außerhalb des Nibelungenliedes in einer Vielzahl von Texten präsent ist, tötet in der 
+<hi rend="italic">Völsunga Saga</hi><ref n="1" target="ftn1"/> – hier den Namen Sigurd tragend – den Drachen Fáfnir, der in einer Höhle in der Wildnis haust, um in den Besitz des Drachenhortes zu gelangen. Richard Wagner hat diese Episode in seinem 
+<hi rend="italic">Ring des Nibelungen</hi><ref n="2" target="ftn2"/> aufgegriffen; J.R.R. Tolkien hat sich für 
+<hi rend="italic">The Hobbit or There and Back Again</hi><ref n="3" target="ftn3"/> davon inspirieren lassen.
+</p>
+<p>Um nicht auf zufällige Entdeckungen von ähnlichen Narrativen angewiesen zu sein, sondern einen systematischen Vergleich der Strukturen und Bausteine von Erzähltem in der Literatur und in Bildern des Mittelalters zu ermöglichen, wurde das Projekt
+<ref target="http://onama.sbg.ac.at/">ONAMA</ref> – 
+<hi rend="italic">Ontology of the Narratives of the Middle Ages</hi> – ins Leben gerufen.
+</p>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>Tools und Programme in der digitalen Musikwissenschaft</head>
-<p style="text-align:left; ">Unabhängig von der Begriffsverwendung wurden einige Tools und Programme entwickelt, um die computergestützte Analyse im Sinne von Distant Hearing zu unterstützen. Nichtsdestotrotz liegen noch einige Mängel vor, die wir im Folgenden herausarbeiten, um die Entwicklung des neuen Tools 
-                    <hi rend="italic">BeyondTheNotes</hi> zu motivieren. Bereits in den 1990er Jahren wurde das 
-                    <hi rend="italic">Humdrum</hi>-Toolkit entwickelt (Huron, 1994; Huron, 2002). Es handelt sich dabei um eine programmiersprachen-unabhängige Sammlung von Kommandozeilen-Tools. Eines der bekanntesten und meistgenutzten Programm-Pakete ist 
-                    <hi rend="italic">music21</hi> (Cuthbert &amp; Ariza, 2010). Dies ist eine Python-Bibliothek, die Analyse-Möglichkeiten für Musikstücke bietet, die in digitalen Formaten symbolhaft repräsentierter Musik (z.B. MusicXML) vorliegen. In beiden Fällen sind jedoch fortgeschrittene Programmier- und IT-Kenntnisse notwendig, um die Tools zu verwenden. Speziell für HumDrum findet man aber auch Tools, die versuchen eine grafische Schnittstelle anzubieten, um leichter auf die Funktionen von HumDrum zuzugreifen (Taylor, 1996; Kornstädt, 1996). Die genannten Umsetzungen benötigen jedoch teils aufwendige Installationen und erhebliche Einarbeitungszeit. Wie jedoch Burghardt und Wolff (2014) in ihrem Aufsatz über Humanist-Computer Interaction schreiben, ist eine möglichst einfache Zugänglichkeit und eine geringe Schwelle bezüglich des technischen Vorwissens ein essenzielles Kriterium damit Tools in den Geisteswissenschaften breite Verwendung finden. Ferner wird argumentiert, dass auch Aspekte der Usability und User Experience besonders wichtig sind, um aufwendige Einarbeitungszeiten zu vermeiden. Ein leichter zugängliches Web-Tool ist das 
-                    <hi rend="italic">Digital Music Lab VIS</hi> (DML-VIS, Abdallah et al., 2017). Das Tool integriert auch Ideen des Konzepts von Distant Hearing und ermöglicht Analysen und Visualisierungen auf vorgefertigten Korpora. Dennoch fehlen einige Analysen wichtiger musikalischer Metriken und es ist auch nicht möglich eigenes Material zu analysieren.
-                </p>
-<p style="text-align:left; ">Tools und Programme, die speziell die Bedürfnisse von Geisteswissenschaftlern beachten sind bislang selten. Im Kontext der Digital Humanities findet man aktuell Arbeiten im Kontext von Jazz (Frieler et al., 2018), klassischer Musik (Condit-Schultz et al., 2018) und Volksmusik (Burghardt et al., 2015; Burghardt &amp; Lamm, 2017). Vereinzelt bieten diese auch statistische Analysen an (Burghardt et al., 2015), sind aber insgesamt verstärkt fokussiert auf Retrieval-Aspekte.</p>
+<head>Forschungsstand</head>
+<p>Die Erforschung von Narrativen hat in den Literaturwissenschaften eine lange Tradition, wenngleich narratologische Ansätze für Texte aus der Zeit des Mittelalters im Vergleich zu Texten der Neuzeit in geringerem Maße vorhanden sind (vgl. Störmer-Caysa 2007; Contzen/Kragl 2018). Für Erzählungen in (unbewegten) Bildern besteht hier hingegen Aufholbedarf, der unter anderem in der weit geringeren Präsenz erzähltheoretischer Forschungsansätze in der Kunstgeschichte und den Bildwissenschaften begründet ist (einen Überblick bietet Speidel 2018; konkret zu mittelalterlichen visuellen Medien vgl. Niehr 2015; Suckale 2009, Bd. 1: 427f.; Franzen 2002: 14–19). Die Ansätze der Intermedialitätsforschung bzw. Bild-Textforschung (vgl. u.a. Schellewald 2011 und Wolf 2017) wurden bis dato vor allem für Quellen genutzt, die per se schon unterschiedliche mediale Aspekte beinhalten (z.B.: illuminierte Handschriften). Übernahmen von Narrativen oder bestimmten Bausteinen eines Narrativs in unterschiedlichen Quellen bleiben dabei meist außen vor. </p>
+<p>Die Methoden der Digital Humanities werden bis dato nur am Rande für die Erforschung von Narrativen genutzt. So entwickeln beispielsweise verschiedene Projekte zur Erforschung von Erzähltexten ontologische Repräsentationen narrativer Strukturen (z.B. Ciotti 2016, Khan et al. 2016). Narrativ-Ontologien, die auf die semantische Verknüpfung medial heterogener Quellen und Artefakte über Elemente der Erzählungen abzielen, sind als Recherche- und Explorationstools im Museums- und Medienarchivbereich angesiedelt (exemplarisch Damiano 2019 bzw. Damiano/Lieto 2013, Metilli et al. 2019, Mulholland et al. 2004). Im Bereich der Germanistik wurden Konzepte für eine narratologische Textauszeichnung digitaler Corpora entwickelt (Dimpel 2019, Gius 2015). Modelle, die Spezifika des Erzählens in Bildern berücksichtigen, sind rar (Xu et al. 2017). Dies ist nicht zuletzt am Mangel an weiter verarbeitbaren Basisdaten für solche Analysen begründet.</p>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>BeyondTheNotes</head>
-<p style="text-align:left; ">BeyondTheNotes wurde mit dem Ziel entwickelt, die weiter oben genannten Probleme und Mängel bisheriger Software-Pakete aufzugreifen und sich an Bedürfnissen von Musikwissenschaftlern zu orientieren. BeyondTheNotes grenzt sich von bisherigen Tools ab indem die technischen Hürden bezüglich Programmierkenntnissen und aufwendigen Installationsverfahren umgangen werden, da BeyondTheNotes als leicht zugängliches Web-Tool geplant ist, das eine grafische Benutzeroberfläche bietet und in jedem gängigen Browser verwendet werden kann. Um Aspekten der Usability und User Experience gerecht zu werden, integrieren wir Methoden des User Centered Design-Prozesses. Als weitere Abgrenzung zu bisherigen Software-Paketen liegt der Fokus auf Distant Hearing und nicht auf der Einzelanalyse. Im DML-VIS fehlende Funktionen wie der Upload von eigenen Dateien oder die Analyse wichtiger musikalischer Metriken wurden integriert. Zielgruppe des Tools sind Musikwissenschaftler und Studierende mit Interesse an quantitativer computergestützter Musikanalyse.</p>
+<head>Datengrundlage</head>
+<p>ONAMA ist ein interdisziplinäres Joint Venture, welches sich auf die breite Datenbasis von zwei Langzeitprojekten aus dem Bereich der Digital Humanities stützt: einerseits die
+<ref target="http://mhdbdb.sbg.ac.at/">Mittelhochdeutsche Begriffsdatenbank</ref> (MHDBDB, Universität Salzburg) und andererseits die Bilddatenbank
+<ref target="https://realonline.imareal.sbg.ac.at/">REALonline</ref> des Instituts für Realienkunde des Mittelalters und der frühen Neuzeit in Krems, welches ebenfalls Teil der Universität Salzburg ist.
+                </p>
+<p>In REALonline sind visuelle Medien unterschiedlicher Gattungen und Techniken, die schwerpunktmäßig vom 14.–16. Jahrhundert entstanden, in über 20.000 Datensätzen derart erfasst, dass alle semantischen Bestandteile eines Bildes und ihre Eigenschaften sowie Beziehungen zwischen diesen einzelnen Bildelementen dokumentiert werden (vgl. Matschinegg/Nicka et al. 2019, Matschinegg/Nicka 2018). Aktuell gibt es bereits über 1,2 Millionen semantische Annotationen in REALonline. In der MHDBDB bietet ein onomasiologisches Begriffssystem den Zugang zu derzeit über 650 Texten, die von Heldenepen über religiöse Kleindichtung bis hin zu Fabeln reichen (vgl. Hinkelmanns 2019, Dimpel/Zeppezauer-Wachauer/Schlager 2019). Die Annotationen der mehr als 10,5 Millionen tokens ermöglichen extensive semantische, morphologische, lexikalische und metrische Suchanfragen. Aus diesen beiden Datenpools werden im Projekt ONAMA exemplarisch mittelalterliche Narrative ausgewählt und an ihnen ein Modell für eine medienübergreifende Beschreibung von Handlungen, Aktanten, Settings und zeitlichen Strukturen entwickelt.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Methode</head>
+<p>ONAMA zielt auf die formale Darstellung sowohl von transmedial fassbaren Bausteinen von Narrativen als auch von den jeweiligen Umsetzungen dieser Grundelemente in konkreten Bildern und Texten des Mittelalters ab. Die im Projekt erarbeitete Ontologie auf Basis der Web Ontology Language (OWL) bildet die Grundlage für den Vergleich von Narrativen. Dabei können Muster und Besonderheiten ihres Aufbaus durch Abfragen identifiziert werden, deren Ursachen und Funktionen in weiterer Folge untersucht werden können. Es wird damit weit mehr als nur der allgemeine „Plot“ einer Geschichte oder eines Bilderzyklus erfasst. Die Entwicklung des ONAMA-Grundmodells und seine Verfeinerung sind dabei die ersten Schritte im Projekt. Wir definieren (wenn möglich in Anlehnung an bestehende Klassifkationssysteme wie Motif-Index [Birkhan/Lichtblau/Tuczay 2005-2010] oder ICONCLASS<ref n="4" target="ftn4"/>) zunächst Narrativ-Konzepte (<hi rend="italic">concepts</hi>) (siehe Abb.1). Diesen werden dann die jeweiligen
+Narrativ-Realisierungen (<hi rend="italic">realisations</hi>) zugeordnet. Gemeint sind mit letzteren die Narrative in der Form, wie sie in dem zu annotierenden Werk (Bild oder Textstelle) tatsächlich vorkommen. Um in weiterer Folge sowohl bei 
+<hi rend="italic">concepts</hi> als auch bei 
+<hi rend="italic">realisations</hi> nach einzelnen Narrativelementen und ihren Kombinationen suchen zu können, nutzt das ONAMA-Modell das ursprünglich aus der Linguistik stammende Konzept semantischer Rollen. Damit wird ermöglicht, die Zusammensetzung und Art des Zusammenhangs zwischen Akteuren, Handlungen, Objekten und Settings für jedes einzelne Narrativ/jede Handlungseinheit zu spezifizieren. Die Handlungseinheiten werden in jeder Überlieferung zu Abfolgestrukturen verbunden.<ref n="5" target="ftn5"/> Wo möglich, werden Verbindungen zwischen ONAMA und dem CIDOC Conceptual Reference Model<ref n="6" target="ftn6"/> hergestellt. Am Ende des Entwicklungsprozesses steht die Publikation der Narrativ-Ontologie, die Anfang 2020 geplant ist. Im Rahmen der Annotation des ausgewählten Korpus wird daran weitergearbeitet und bei Bedarf werden weitere Adaptionen des Grundmodells veröffentlicht. 
+</p>
+<p>Obgleich sich die im Projekt bearbeiteten Beispiele aus einem Pool von deutschsprachigen Texten und mittelalterlichen Kunstwerken speisen, lässt sich die in ONAMA entwickelte Ontologie prinzipiell auch auf andere Sprachen und Medien hin erweitern. ONAMA erfasst die Ebene der Geschichte mit den Bausteinen 
+<hi rend="italic" xml:space="preserve">Handlung, Person, Objekt </hi>und 
+<hi rend="italic" xml:space="preserve">Ort </hi>und ist damit grundsätzlich als intermediales Modell angelegt.
+</p>
+<!-- <p>Abbildung 1. Beispiel für die Narrativ-Modellierung mit ONAMA auf Konzept- und Realisierungsebene. Briseida erhört Diomedes und besucht den durch Troilus im Kampf Verwundeten an seinem Krankenlager: eine in mittelalterlichen Adaptionen des Troja-Stoffkreises eingeführte Begebenheit, bildlich umgesetzt z.B. durch REALonline Archivnr. 006455 (Historia destructionis Troiae, Wien, Österreichische Nationalbibliothek, Cod. 2773, fol. 175v.), episch verarbeitet im Liet von Troye (MHDBDB-Text „TRY”). Durch semantische Rollen sind die jeweils beteiligten Entitäten mit dem Narrativ verbunden. Mit der Verbindung „hasRole“ können hingegen über die unmittelbar dargestellte Handlung hinausreichende Rollen von Akteuren erfasst werden.</p> -->
+<p>Als Ausgangsmaterial haben wir einerseits mit dem „Trojanischen Krieg“ einen spezifischen Erzählstoff herangezogen, der durch Realisierungen in beiden Datenbanken dokumentiert ist und sich somit gut für eine erzähltheoretische Auswertung unterschiedlicher Umsetzungen eines Narrativs in mehreren Versionen bzw. in Bild und Text eignet. Die Bilder stammen aus dem Cod. 2773 der Österreichischen Nationalbibliothek, einer reich illustrierten Prachthandschrift mit Guido de Columnis’ 
+                    <hi rend="italic">Historia destructionis Troiae</hi><ref n="7" target="ftn7"/> in einer deutschen Übersetzung (Mitte des 15. Jh.); die literarischen Bearbeitungen des Trojastoffes sind Herborts von Fritslâr 
+                    <hi rend="italic">Liet von Troye</hi><ref n="8" target="ftn8"/> (um 1190–1200) sowie Konrads von Würzburg 
+                    <hi rend="italic">Der Trojanische Krieg</hi><ref n="9" target="ftn9"/> (letztes Viertel des 13. Jh.). Andererseits werden entlang eines bestimmten Motivs, das auch Überschneidungen zur Trojaliteratur aufweist – dem „Bekämpfen oder Zähmen wilder Tiere/Wesen” – unterschiedliche verbal oder bildlich überlieferte Narrative aus beiden Datenbanken ausgesucht und modelliert, um eine Datenbasis zur Untersuchung der konkreten sprachlichen oder bildlichen Umsetzungen dieser jeweils geschilderten Interaktionen im Kontext ihrer verschiedenen Einbettungen zu schaffen. Der Nutzen der digitalen Ontologie für die mediävistische Erforschung von Narrativen wird im Projekt anhand von Fallstudien evaluiert, die auf den generierten Daten basieren. 
+</p>
 <figure>
-<graphic height="6.757458333333333cm" n="1001" rend="inline" url="165_final-7d52f9381c2c30b533f8eaa7828e389f.png" width="16.002cm"/>
-<head>Abbildung 1: Logo von BeyondTheNotes</head>
+<graphic height="25.184805555555556cm" n="1001" rend="inline" url="110_final-6f60feefd6d6e9b07752f80b94573693.jpeg" width="11.190111111111111cm"/>
+<head> Abbildung 1: Beispiel für die Narrativ-Modellierung mit ONAMA auf Konzept- und Realisierungsebene. Briseida erhört Diomedes und besucht den durch Troilus im Kampf Verwundeten an seinem Krankenlager: eine in mittelalterlichen Adaptionen des Troja-Stoffkreises eingeführte Begebenheit, bildlich umgesetzt z.B. durch REALonline Archivnr. 006455 (Historia destructionis Troiae, Wien, Österreichische Nationalbibliothek, Cod. 2773, fol. 175v.), episch verarbeitet im Liet von Troye (MHDBDB-Text „TRY”). Durch semantische Rollen sind die jeweils beteiligten Entitäten mit dem Narrativ verbunden. Mit der Verbindung „hasRole“ können hingegen über die unmittelbar dargestellte Handlung hinausreichende Rollen von Akteuren erfasst werden.</head>
 </figure>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>Entwicklung</head>
-<p style="text-align:left; ">Für die Entwicklung des Tools wurden Ideen des User Centered Design-Prozesses (UCD) (Vredenburg et al., 2002) integriert. Dabei wird versucht in iterativen Entwicklungszyklen potentielle Nutzer mit Methoden des Usability Engineerings so früh wie möglich in den Entwicklungsprozess einzubeziehen.</p>
-<p style="text-align:left; ">Um den Anforderungen unserer Zielgruppen gerecht zu werden, fand gemäß UCD vor Entwicklungsbeginn eine Anforderungsanalyse statt. Diesbezüglich wurden eine Fokusgruppe mit Studierenden der Musikwissenschaft sowie zwei semi-strukturierte Interviews mit ausgebildeten Musikwissenschaftlern durchgeführt. Dadurch sollte Einblick in die Arbeitsweisen von Musikwissenschaftlern gewonnen und Bedürfnisse an ein computergestütztes Tool identifiziert werden. Die Ergebnisse werden im Folgenden zusammengefasst: </p>
-<p style="text-align:left; ">Die Teilnehmer unserer Anforderungsanalysen erläuterten, dass es kein festes methodisches Vorgehen bei der Analyse von Musikstücken gibt, jedoch steht im Mittelpunkt stets das Verfassen eines Textes. Für diesen Prozess werden statistische Visualisierungen als nützlich erachtet. Meist wird nur ein Stück oder eine überschaubar große Zahl analysiert. Größere Analysen finden für Genres und Komponisten. Als wichtige Features wurden die Analyse von eigenem Material sowie der Download der Ergebnisse genannt. Interessante Metriken für die Analyse sind aus Sicht unserer Teilnehmer Leittöne, Tonarten, Akkorde, Intervalle, der Tonumfang, Tonhöhen und jegliche Form von Motiven. Die Teilnehmer äußerten selten den konkreten potentiellen Einsatz und Nutzen eines Tools in ihrem Arbeitsworkflow und sehen den meisten Nutzen eines potentiellen Tools eher in der vielseitigen Exploration einer großen Menge an Ergebnisse. Die Ergebnisse der Anforderungsanalyse wurden in greifbare Features übertragen und die Mehrzahl dieser in das Tool eingearbeitet. In der Weiterentwicklung des Tools werden wir den UCD weiter aufgreifen indem z.B. größere Usability-Tests und Redesign-Phasen stattfinden und wir den Einsatz des Tools im konkreten Forschungsworkflow untersuchen. </p>
-<p style="text-align:left; ">Das Tool wurde in Python mit dem Framework Django implementiert. Für viele musikalische Analysen wurde im Back-End music21 (Cuthbert &amp; Ariza, 2010) eingesetzt. Für die Visualisierung von Notenblätter und Statistiken wurde OpenSheetMusicDisplay<ref n="1" target="ftn1"/>, Zingchart<ref n="2" target="ftn2"/> und chartist.js<ref n="3" target="ftn3"/> genutzt. Andere wichtige Technologien für die Entwicklung schließen PostgreSQL, JavaScript und Jquery ein.
+<head>Forschungsfragen und Ergebnisse</head>
+<p>Mit ONAMA entsteht eine sprach- und medienunabhängige Ontologie zur Erschließung mittelalterlicher Narrative, die als ein neues digitales Werkzeug althergebrachte und immer noch weit verbreitete fachliche Grenzen zwischen bildlicher und textlicher Überlieferung überwindet und so der Beantwortung interdisziplinärer sowie intermedialer Forschungsfragen dient. So interessiert sich ONAMA beispielsweise dafür, wie Narrative in Bild und Text realisiert beziehungsweise materialisiert werden; in welchem Kontext die materiellen Umsetzungen stehen und wie sich Wechsel von Medien und materiellen Informationsträgern auf das vermittelte Narrativ auswirken. Mit Hilfe der Narrativ-Ontologie können Bild- und Textquellen derart annotiert werden, dass Abfrageergebnisse sowohl Rückschlüsse auf Genese und Tradierung von Erzählkernen, Figurenkonstellationen, Handlungsmuster etc. im jeweiligen Medium als auch in der medienübergreifenden Zusammenschau ermöglichen.</p>
+<p>Da die Nutzer*innen über das im Laufe des Projekts umgesetzte ONAMA-Frontend gleichzeitig auf umfangreiche Annotationen zu Narrativen in Bildern und Texten zugreifen können, werden Bezüge oder Unterschiede innerhalb der breit gefächerten Korpora zu mittelalterlichen Quellen in den beiden Datenbanken einfach identifizierbar. Die narrativen Muster, die Texten und Bildern inhärent sind, werden nach zeitgemäßen digitalen Standards annotiert, visualisiert und können damit besser empirisch bewertet werden. Darüber hinaus werden sämtliche im Rahmen von ONAMA generierten Daten auch für komplexe Abfragen via SPARQL zugänglich sein und der Scientific Community unter Creative Commons-Lizenz zur Verfügung gestellt, damit sie beispielsweise als Basis für Fragen zu Narrativen in anderen digitalen Korpora weiterverwendet werden können.</p>
+<p>Im Rahmen des Vortrags werden sowohl das Projekt ONAMA (Laufzeit März 2019 – Februar 2021) vorgestellt, das aus Mitteln des Förderprogramms 
+                    <hi rend="italic">go!digital</hi> der Österreichischen Akademie der Wissenschaften finanziert wird, als auch erste Ergebnisse präsentiert.
                 </p>
 </div>
+
+
 <div rend="DH-Heading1" type="div1">
-<head>Funktionen</head>
-<p style="text-align:left; ">Die Funktionen des Tools gliedern sich in zwei Bereiche. Die Analyse von einem einzelnen Stück inklusive seiner Partitur („Individual Analysis“) und die statistische Analyse von einem oder mehreren Werken bezüglich der Verteilungen unterschiedlicher Metriken („Distant Hearing"; Abbildung 2).</p>
-<figure>
-<graphic height="6.771677777777778cm" n="1002" rend="inline" url="165_final-efa0f745804f8362410b3f9e6e7d98c1.png" width="14.273388888888888cm"/>
-<head>Abbildung 2: Start-Screen von BeyondTheNotes</head>
-</figure>
-<p style="text-align:left; ">Nach Auswahl eines Bereichs kann der Nutzer eine oder mehrerer Dateien für die Analyse hochladen. Es werden alle gängigen Dateiformate symbolhaft repräsentierter Musik akzeptiert z.B. MusicXML, MEI, Midi, ABC usw. Alternativ wird zum Testen der music21-Korpus zur Verfügung gestellt. Es handelt sich dabei um ein freies, überschaubar großes Korpus, das unter anderem Werke von Mozart, Bach und Schubert enthält.</p>
-<p style="text-align:left; ">Über eine Suchfunktion können die hochgeladenen Dateien und das bestehende Korpus gefiltert werden (Abbildung 3).</p>
-<figure>
-<graphic height="7.581194444444445cm" n="1003" rend="inline" url="165_final-08e85878dc72022d0c46df1e681d7a2d.png" width="16.002cm"/>
-<head>Abbildung 3: Upload und Suche</head>
-</figure>
-<p style="text-align:left; ">Wird die Individual Analysis gewählt, wird die Partitur des Stücks angezeigt (Abbildung 4). </p>
-<figure>
-<graphic height="8.018638888888889cm" n="1004" rend="inline" url="165_final-e18bd75a630639dad2afa3019de46b99.png" width="16.002cm"/>
-<head>Abbildung 4: Anzeige für die Auswahl der „Individual Analysis“</head>
-</figure>
-<p style="text-align:left; ">Folgende Analysemöglichkeiten sind hier möglich:</p>
-<list type="unordered">
-<item>Die Akkordanalyse („Chords“): Hierbei wird die Partitur mit den Akkorden ersetzt und diese in römischen Ziffern oder ihren herkömmlichen Namen angezeigt (Abbildung 5) </item>
-</list>
-<figure>
-<graphic height="8.387291666666666cm" n="1005" rend="inline" url="165_final-dca2b2037abf40e0e2df11b3d63f46ec.png" width="16.002cm"/>
-<head>Abbildung 5: Transformiertes Notenblatt nachdem die Akkordanalyse durchgeführt wurde</head>
-</figure>
-<list type="unordered">
-<item>Die Analyse des Tonumfangs („Ambitus“) (Abbildung 6)</item>
-</list>
-<figure>
-<graphic height="7.660036111111111cm" n="1006" rend="inline" url="165_final-4b3815501df2361b0f00b63145efde3e.png" width="16.002cm"/>
-<head>Abbildung 6: Tonumfang-Analyse (Ambitus)</head>
-</figure>
-<list type="unordered">
-<item>Die Analyse der Tonart: Hierbei werden die vier wahrscheinlichsten Tonarten mit ihren Wahrscheinlichkeitswerten angezeigt (Abbildung 7). Die Kalkulationen basieren auf music21.</item>
-</list>
-<figure>
-<graphic height="4.254316666666667cm" n="1007" rend="inline" url="165_final-533dc50afe9d6faec32cdf8ccd45bfc2.png" width="11.413869444444444cm"/>
-<head>Abbildung 7: Tonart-Analyse</head>
-</figure>
-<p style="text-align:left; ">Die Ergebnisse der Akkord- und Tonartanalyse können auch verknüpft werden. Der Nutzer kann eine der ermittelten Tonarten auswählen und je nachdem werden die Akkorde angepasst, wenn römische Ziffern zur Anzeige verwendet werden.</p>
-<p style="text-align:left; ">Für die Distant Hearing-Funktionen muss der Nutzer zunächst die zu analysierenden Gruppen benennen. Es können dann beliebig viele Stücke der Suchleiste einer Gruppe hinzugefügt werden. Nach der Kalkulation der Daten werden fünf Visualisierungsbereiche angezeigt:</p>
-<list type="unordered">
-<item>Akkordanalyse: Über gepaarte Histogramme werden die Verteilungen der Akkorde in den einzelnen Gruppen dargestellt (Abbildung 8). Neben den Akkordverteilungen werden auch Akkord-Grundton- und Tongeschlechts-Verteilungen der Akkorde angezeigt.</item>
-</list>
-<figure>
-<graphic height="5.604647222222222cm" n="1008" rend="inline" url="165_final-fb4713d2ea924d65820867efd2733e91.png" width="16.002cm"/>
-<head>Abbildung 8: Akkordanalyse – Verteilungen von Akkorden für zwei Gruppen</head>
-</figure>
-<list type="unordered">
-<item>Tonhöhenanalyse: Über gepaarte Histogramme werden die Verteilungen der einzelnen Töne sortiert nach Tonname und Oktave angezeigt.</item>
-<item>Tondaueranalyse: Über gepaarte Histogramme werden die Verteilungen der Tondauern unterteilt in Noten und Pausen angezeigt (Abbildung 9).</item>
-</list>
-<figure>
-<graphic height="6.1342027777777774cm" n="1009" rend="inline" url="165_final-50bde11f0267de8c5457c27934169aeb.png" width="13.599583333333333cm"/>
-<head>Abbildung 9: Tondaueranalyse – Verteilungen von Tondauern für zwei Gruppen</head>
-</figure>
-<list type="unordered">
-<item>Tonartanalysen: Hier werden über gepaarte Histogramme die Verteilung der Tonarten angezeigt. Auch wird ein Liniengraph angezeigt, der pro Gruppe die Wahrscheinlichkeiten für die einzelnen Tonarten angibt (Abbildung 10).</item>
-</list>
-<figure>
-<graphic height="8.306122222222223cm" n="10010" rend="inline" url="165_final-d5228b78a832f946202d32dea92ddb79.png" width="16.002cm"/>
-<head>Abbildung 10: Tonartanalyse – Liniendiagramm für die Wahrscheinlichkeiten verschiedener Tonarten mehrerer Stücke</head>
-</figure>
-<list type="unordered">
-<item>Tonumfanganalyse: Es wird ein Reichweitendiagramm pro Gruppe angezeigt, welches den Tonumfang pro Stück in Form von horizontalen Balkendiagrammen anzeigt (Abbildung 11). Für die Gesamtgruppe wird die Menge und die Verteilung der genutzten Halbtonschritte auch noch in Form eines Boxplots angezeigt.</item>
-</list>
-<figure>
-<graphic height="9.295694444444445cm" n="10011" rend="inline" url="165_final-976d19bd853ea0d81966b34f3ba92dcd.png" width="14.514727777777777cm"/>
-<head>Abbildung 11: Tonumfanganalyse – Reichweitendiagramm für 4 Stücke, die der Gruppe Beethoven hinzugefügt wurden</head>
-</figure>
-<p style="text-align:left; ">Alle Graphen sind dabei interaktiv und bieten weiterführende Informationen an, wenn der Mauszeiger über Elemente bewegt wird. Die Diagramme können auch zusammen mit ihren Legenden heruntergeladen werden. Ebenso können die gesammelten Daten zur Weiterverwendung in einem JSON-Format heruntergeladen werden. An zahlreichen Stellen wurden Tutorials und Erklärungen eingebaut, um die Nutzung zu erleichtern.</p>
+<head>Bibliographie:</head>
+<div rend="DH-Heading2" type="div2">
+<head>Primärliteratur:</head>
+<p style="text-align:left;">
+<hi rend="bold">Herbort von Fritslâr</hi>: 
+                        <hi rend="italic">Liet von Troye</hi>. Hrsg. v. Karl Frommann (= Bibliothek der gesammten deutschen National-Literatur von der ältesten bis auf die neuere Zeit, Bd. 5). Quedlinburg / Leipzig: Basse 1837. 
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold">Konrad von Würzburg</hi>: 
+                        <hi rend="italic">Der Trojanische Krieg</hi>. Hrsg. v. Adelbert von Keller. Stuttgart: Litterar. Verein 1858.
+                    </p>
+<p style="text-align:left;">
+<hi rend="italic">The Saga of the Volsungs</hi>. The Icelandic Text according to MS Nks 1824 b, 4°. With an English Translation, Introduction and Notes by Kaaren Grimstad (= Biblioteca Germanica Series Nova Vol. 3) Saarbrücken: AQ-Verl. 2000.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold">J. R. R. Tolkien</hi>: 
+                        <hi rend="italic">The Hobbit or There and Back again</hi>. London: HarperCollins 2006.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold">Richard Wagner</hi>: 
+                        <hi rend="italic">Der Ring des Nibelungen</hi>. 
+                        <hi rend="italic">Ein Bühnenfestspiel für drei Tage und einen Vorabend. Zweiter Tag: Siegfried.</hi> Textbuch mit Varianten der Partitur. Hrsg. v. Egon Voss. Stuttgart: Reclam 2007.
+                    </p>
 </div>
-<div rend="DH-Heading1" type="div1">
-<head>Ausblick</head>
-<p style="text-align:left; ">Die momentane erste Version des Tools ist frei verfügbar und kann über 
-                    <hi rend="italic">GitHub</hi> heruntergeladen und genutzt werden<ref n="4" target="ftn4"/>. Des Weiteren ist ein erster vorläufiger Prototyp auch online verfügbar<ref n="5" target="ftn5"/>.
-                </p>
-<p style="text-align:left; ">Wir befinden uns am Ende des ersten Entwicklungszyklus und planen momentan die Evaluation des Tools gemäß dem UCD-Prozess. Des Weiteren explorieren wir weiter zusammen mit Musikwissenschaftlern, ob die gelieferten Funktionen den Analyseprozess unterstützen können und wie das Tool konkret in den Forschungsworkflow integriert werden kann. Im gleichen Schritt wollen wir auch erste forschungsrelevante Einsatzbeispiele diskutieren. Als ein Bereich für mögliche Analysen wurde von den Teilnehmern unserer Anforderungsanalyse vor allem der Vergleich von Genres, Komponisten und eigens erstellten Sammlungen bezüglich gängiger musikalischer Metriken genannt (Akkorde, Tonumfang etc.). Als eine komplexere Forschungsidee wurde die Untersuchung von Variationen diskutiert. 
-                    <hi rend="italic">La Folia</hi>, ein spanisches Motiv aus dem 16. Jahrhundert wurde von zahlreichen Komponisten als Grundlage für Variationen genutzt (Hudson, 1973). Durch die Nutzung eines geeigneten Korpus kann mit BeyondTheNotes untersucht werden, ob die Variationen dieses Motivs sich mehr nach Komponist, Zeitraum oder Ursprungsland unterscheiden. Ebenso wollen wir in den kommenden Iterationen durch die enge Zusammenarbeit mit Musikwissenschaftlern das Konzept und den tatsächlichen Nutzen des Distant Hearing kritisch reflektieren.
-                </p>
+<div rend="DH-Heading2" type="div2">
+<head>Forschungsliteratur:</head>
+<p style="text-align:left;">
+<hi rend="bold">Birkhan, Helmut / Lichtblau, Karin / Tuczay, Christa</hi> (2005-2010): Motif-Index of the German Secular Narratives from the Beginning to 1400, 7 Bde., Berlin u. a. Online-Ausgabe im Verlag der Österreichischen Akademie der Wissenschaften (ÖAW), Wien 2009. http://hw.oeaw.ac.at/motifindex?frames=yes (06.11.2019)
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold" xml:space="preserve">Ciotti, Fabio </hi>(2016): “Toward a Formal Ontology for Narrative”, in: 
+                        <hi rend="italic">Matlit</hi> 4 (1): 29–44 DOI: 10.14195/2182-8830.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold" xml:space="preserve">Contzen, Eva von / Kragl, Florian (eds.) </hi>(2018): 
+                        <hi rend="italic" xml:space="preserve">Narratologie und mittelalterliches Erzählen. </hi>Autor, Erzähler, Perspektive, Zeit und Raum (= Das Mittelalter: Beihefte 7)
+                        <hi rend="italic">.</hi> Berlin / Boston: de Gruyter.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold" xml:space="preserve">Damiano, Rossana </hi>(2019): “Investigating the Effectiveness of Narrative Relations for the Exploration of Cultural Heritage Archives”, in: Papadopoulos, George Angelos / Samaras, George / Weibelzahl, Stephan / Jannach, Dietmar / Santos, Olga C. (eds.): 
+                        <hi rend="italic">Adjunct Publication of the 27th Conference on User Modeling, Adaptation and Personalization</hi>. Larnaca, Cyprus, 09.-12.06.2019. New York: ACM Press 417–423.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold" xml:space="preserve">Damiano, Rossana / Lieto, Antonio </hi>(2013): “Ontological representations of narratives. A case study on stories and actions”, in: Finlayson, Mark A. / Fisseni, Bernhard / Löwe, Benedikt / Meister, Christoph (eds.): 
+                        <hi rend="italic">2013 Workshop on Computational Models of Narrative</hi>. CMN 2013. Hamburg, 04.–06.08.2013. Wadern: Schloss Dagstuhl - Leibniz-Zentrum für Informatik 76–93 
+                        <ref target="http://drops.dagstuhl.de/opus/volltexte/2013/4149/pdf/p076-damiano.pdf">
+<hi rend="color(1155CC)">http://drops.dagstuhl.de/opus/volltexte/2013/4149/pdf/p076-damiano.pdf</hi>
+</ref> [letzter Zugriff am 1. August 2019].
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold" xml:space="preserve">Dimpel, Friedrich Michael </hi>(2019): „Narratologische Textauszeichnung in Märe und Novelle. Mit Annotationsbeispielen und exemplarischer Auswertung von Sperber und Häslein durch MTLD und Sozialer Netzwerkanalyse“, in: 
+                        <hi rend="italic">Zeitschrift für digitale Geisteswissenschaften</hi> 4. text/html Format. DOI: 
+                        <ref target="http://dx.doi.org/10.17175/2016_012">
+<hi rend="color(1155CC)">10.17175/2016_012</hi>
+</ref>.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold" xml:space="preserve">Dimpel, Friedrich Michael / Zeppezauer-Wachauer, Katharina / Schlager, Daniel </hi>(2019): „Der Streit um die Birne: Autorschafts-Attributionstest mit Burrows’ Delta und dessen Optimierung für Kurztexte am Beispiel der ‚Halben Birne‘ des Konrad von Würzburg“, in: Bleier, Roman / Fischer, Franz / Hiltmann, Torsten / Viehhauser, Gabriel &amp; Vogeler, Georg (eds.).: 
+                        <hi rend="italic" xml:space="preserve">Digitale Mediävistik </hi>(= Das Mittelalter. Perspektiven mediävistischer Forschung; Band 24, Nr. 1) 71–90.
+                        <ref target="https://doi.org/10.1515/mial-2019-0006" xml:space="preserve"> DOI: 10.1515/mial-2019-0006</ref>.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold" xml:space="preserve">Franzen, Wilfried </hi>(2002): 
+                        <hi rend="italic" xml:space="preserve">Die Karlsruher Passion und das „Erzählen in Bildern“. </hi>Studien zur süddeutschen Tafelmalerei des 15. Jahrhunderts. Berlin: Lukas Verlag.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold" xml:space="preserve">Gius, Evelyn </hi>(2015): 
+                        <hi rend="italic" xml:space="preserve">Erzählen über Konflikte. Ein Beitrag zur digitalen Narratologie </hi>(= Narratologia 46). Berlin / Boston: de Gruyter.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold" xml:space="preserve">Hinkelmanns, Peter </hi>(2019): „Mittelhochdeutsche Lexikographie und Semantic Web: Die Anbindung der ‚Mittelhochdeutschen Begriffsdatenbank‘ an Linked Open Data“, in: Bleier, Roman / Fischer, Franz / Hiltmann, Torsten / Viehhauser, Gabriel &amp; Vogeler, Georg (eds.).: 
+                        <hi rend="italic">Digitale Mediävistik</hi> (= Das Mittelalter. Perspektiven mediävistischer Forschung; Band 24, Nr. 1) 129–141. DOI: 
+                        <ref target="https://doi.org/doi:10.1515/mial-2019-0009">
+<hi rend="color(1155CC)">10.1515/mial-2019-0009</hi>
+</ref>.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold">Hinkelmanns, Peter / Landkammer, Miriam / Nicka, Isabella / Schwembacher, Manuel / Zeppezauer-Wachauer, Katharina</hi> (in Vorbereitung): „Beyond the Plot. Der Vergleich mittelalterlicher Narrative im Semantic Web mit ONAMA", erscheint in: 
+                        <hi rend="italic">Narrare-Producere-Ordinare</hi>. New Approaches to the Middle Ages (agora. Wiener philologisch-kulturwissenschaftliche Studien/Vienna Philological and Cultural Studies). Wien: Praesens.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold" xml:space="preserve">Khan, Anas Fahad / Bellandi, Andrea / Benotto, Giulia / Frontini, Francesca / Giovannetti, Emiliano / Reboul, Marianne </hi>(2016): “Leveraging a Narrative Ontology to Query a Literary Text”, in: Miller, Ben / Lieto, Antonio / Ronfard, Rémi / Ware, Stephen G. / Finlayson, Mark A. (eds.): 
+                        <hi rend="italic">7th Workshop on Computational Models of Narrative</hi>. CMN 2016. Krakau, 11.-12.7.2016. Wadern: Schloss Dagstuhl - Leibniz-Zentrum für Informatik 10:1–10:10 
+                        <ref target="http://drops.dagstuhl.de/opus/volltexte/2016/6711/">
+<hi rend="color(1155CC)">http://drops.dagstuhl.de/opus/volltexte/2016/6711/</hi>
+</ref> [letzter Zugriff am 1. August 2019].
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold">Matschinegg, Ingrid / Nicka, Isabella</hi> (2018): „REALonline enhanced. Die neuen Funktionalitäten und Features der Forschungsbilddatenbank des IMAREAL“, in: 
+                        <hi rend="italic">MEMO 2: Digital Humanities &amp; Materielle Kultur</hi> 10–32 
+                        <ref target="http://memo.imareal.sbg.ac.at/wsarticle/memo/2018-matschinegg-nicka-realonline-enhanced/">http://memo.imareal.sbg.ac.at/wsarticle/memo/2018-matschinegg-nicka-realonline-enhanced</ref> [letzter Zugriff am 5. September 2019].
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold">Matschinegg, Ingrid / Nicka, Isabella / Hafner, Clemens / Stettner, Martin / Zedlacher, Stefan</hi> (2019): „Daten neu verknoten. Die Verwendung einer Graphdatenbank für die Bilddatenbank REALonline“, in: Blümm, Mirjam / Kollatz, Thomas / Schmunk, Stefan / Schöch, Christof (eds.): 
+                        <hi rend="italic">DARIAH-DE Working Papers</hi> Nr. 31. Göttingen: DARIAH-DE 1-36 
+                        <ref target="http://nbn-resolving.org/urn:nbn:de:gbv:7-dariah-2019-3-5">http://nbn-resolving.org/urn:nbn:de:gbv:7-dariah-2019-3-5</ref> [letzter Zugriff am 9. September 2019].
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold" xml:space="preserve">Metilli, Daniele / Bartalesi, Valentina / Meghini, Carlo </hi>(2019): “A Wikidata-based tool for building and visualising narratives”, in: 
+                        <hi rend="italic">International Journal on Digital Libraries</hi> 3 (2) DOI: 10.1007/s00799-019-00266-3.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold" xml:space="preserve">Mulholland, Paul / Collins, Trevor / Zdrahal, Zdenek </hi>(2004): “Story fountain: intelligent support for story research and exploration”, in: Vanderdonckt, Jean (ed.): 
+                        <hi rend="italic">Proceedings of the 9th international conference on intelligent user interfaces</hi>. New York: ACM 62–69.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold">Niehr, Klaus</hi> (2015): „Erzählebenen, Erzählformen, Erzählmotive im Bild. Die Festtagsseite des Göttinger Barfüßerretabels“, in: Aman, Cornelia / Hartwieg, Babette (eds.): 
+                        <hi rend="italic">Das Göttinger Barfüßerretabel von 1424</hi>. Akten des wissenschaftlichen Kolloquiums, Landesmuseum Hannover, 28.–30. September 2006. Ergebnisband des Restaurierungs- und Forschungsprojektes (= Niederdeutsche Beiträge zur Kunstgeschichte N.F. 1). Petersberg: Imhof 161–176.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold">Schellewald, Barbara</hi> (2011): „Einführung, I. Bild und Text im Mittelalter”, in: Krause, Karin / Schellewald, Barbara: 
+                        <hi rend="italic">Bild und Text im Mittelalter</hi>. Köln: Böhlau 11–21.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold">Speidel, Klaus</hi> (2018): “How single pictures tell stories. A critical introduction to narrative pictures and the problem of iconic narrative in narratology” [engl. Manuskript eines Beitrags, der in polnischer Sprache unter dem Titel “Jak pojedyncze obrazy opowiadają historie. Krytyczne wprowadzenie do problematyki narracji ikonicznej w narratologii” in: Kaczmarczyk, Katarzyna (ed.), 
+                        <hi rend="italic" xml:space="preserve">Narratologia transmedialna. </hi>Wyzwania, teorie, praktyki. Krakow: Universitas 2017, 65–148, erschienen ist] 
+                        <ref target="https://www.researchgate.net/publication/327653026">
+<hi rend="color(1155CC)">https://www.researchgate.net/publication/327653026</hi>
+</ref> [letzter Zugriff am 14. August 2019]. 
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold">Suckale, Robert</hi> (2009): 
+                        <hi rend="italic">Die Erneuerung der Malkunst vor Dürer</hi>, 2 Bde. (= Historischer Verein Bamberg für die Pflege der Geschichte des Ehemaligen Fürstbistums e.V.: Schriftenreihe 44). Petersberg: Imhof.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold">Störmer-Caysa, Uta</hi> (2007), 
+                        <hi rend="italic">Grundstrukturen mittelalterlicher Erzählungen</hi>. Raum und Zeit im höfischen Roman. Berlin / New York: de Gruyter.
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold" xml:space="preserve">Wolf, Werner </hi>(2017): „Intermedialität: Konzept, literaturwissenschaftliche Relevanz, Typologie intermedialer Formen [2014]”, in: Bernhart, Walter (Hg.):
+                        <hi rend="italic" xml:space="preserve"> Selected Essays on Intermediality by Werner Wolf (1992–2014). </hi>Theory and Typology, Literature-Music Relations, Transmedial Narratology, Miscellaneous Transmedial Phenomena (= Studies in Intermediality Online 10). Leiden / Boston: Brill Rodopi 173–211. DOI: https://doi.org/10.1163/9789004346642_008
+                    </p>
+<p style="text-align:left;">
+<hi rend="bold">Xu, Lei / Meroño-Peñuela, Albert / Huang, Zhisheng / van Harmelen, Frank (</hi>2017): “An Ontology Model for Narrative Image Annotation in the Field of Cultural Heritage”, in: Adamou, Alessandro / Daga, Enrico / Isaksen, Leif (eds.): 
+                        <hi rend="italic">Proceedings of the Second Workshop on Humanities in the Semantic Web (WHiSe II)</hi>. Wien, 22.10.2017 (=CEUR Workshop Proceedings Vol. 2104). CEUR 117–122.
+                    </p>
+</div>
 </div>
 </body>
 <back>
   <div type="notes">
     <note n="1" rend="footnote text" xml:id="ftn1">
-      https://opensheetmusicdisplay.org/
+      Volsunga saga, vgl. Grimstad 2000, S. 125, 129, 137–143.
     </note>
     <note n="2" rend="footnote text" xml:id="ftn2">
-      https://www.zingchart.com/
+      Richard Wagner, Der Ring des Nibelungen, vgl. Voss 2007, Zweiter Aufzug, V. 1565–1610, S. 73–75.
     </note>
     <note n="3" rend="footnote text" xml:id="ftn3">
-      https://gionkunz.github.io/chartist-js/
+      J. R. R. Tolkien ([1937] 2006), The Hobbit or There and Back again, S. 249–250; 257–263. Von zentraler Bedeutung für Tolkien war darüber hinaus die Drachenepisode im Beowulf.
     </note>
     <note n="4" rend="footnote text" xml:id="ftn4">
-      Online verfügbar unter: https://github.com/Maxikilliane/DH_MusicAnalysis (Eine Installationsanleitung findet man im Repository)
+      <ref target="http://www.iconclass.org/">http://www.iconclass.org/</ref>.
     </note>
     <note n="5" rend="footnote text" xml:id="ftn5">
-      Online verfügbar unter: https://beyondthenotes.herokuapp.com/ 
+      Eine nähere Beschreibung der Anwendung semantischer Rollen und der Darstellung von Abfolgen in ONAMA wird – ebenso wie ein Beispiel für ein Nutzungsszenario – in dem in Vorbereitung befindlichen Beitrag Hinkelmanns/Landkammer/Nicka/Schwembacher/Zeppezauer-Wachauer gegeben (erscheint voraussichtlich 2020).
+    </note>
+    <note n="6" rend="footnote text" xml:id="ftn6">
+      <ref target="http://www.cidoc-crm.org/">http://www.cidoc-crm.org</ref>.
+    </note>
+    <note n="7" rend="footnote text" xml:id="ftn7">
+      <ref target="http://www.handschriftencensus.de/6504">http://www.handschriftencensus.de/6504</ref>; REALonline - Archivnummern: 006340–006479.
+    </note>
+    <note n="8" rend="footnote text" xml:id="ftn8">
+      Herbort von Fritslâr, Liet von Troye, vgl. Frommann 1837.
+      <ref target="http://mhdbdb.sbg.ac.at/mhdbdb/App?action=TextInfoEdit&amp;text=TRY">http://mhdbdb.sbg.ac.at/mhdbdb/App?action=TextInfoEdit&amp;text=TRY</ref>
+    </note>
+    <note n="9" rend="footnote text" xml:id="ftn9">
+      Konrad von Würzburg, Der Trojanische Krieg, vgl. von Keller 1858.
+      <ref target="http://mhdbdb.sbg.ac.at/mhdbdb/App?action=TextInfoEdit&amp;text=TRO">http://mhdbdb.sbg.ac.at/mhdbdb/App?action=TextInfoEdit&amp;text=TRO</ref>
     </note>
   </div>
-  <div type="bibliogr">
-<listBibl>
-<head>Bibliographie</head>
-<bibl style="text-align:left; ">
-<hi rend="bold">Abdallah, Samer / Benetos, Emmanouil / Gold, Nicolas / Hargreaves, Steven / Weyde, Tillman / Wolff, Daniel</hi> (2017): “The Digital Music Lab: A Big Data Infrastructure for Digital Musicology”, in: 
-                        <hi rend="italic">Journal on Computing and Cultural Heritage (JOCCH)</hi> 10(1).
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Burghardt, Manuel</hi> (2018): “Digital Humanities in
-Der Musikwissenschaft – Computergestützte Erschließungsstrategien Und Analyseansätze Für Handschriftliche Liedblätter” in: 
-                        <hi rend="italic">Bibliothek Forschung Und Praxis</hi> 42(2): 324–32.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Burghardt, Manuel / Lamm, Lukas</hi> (2017): “Entwicklung Eines Music Information Retrieval-Tools Zur Melodic Similarity-Analyse Deutschsprachiger Volkslieder” in: Eibl, Maximilian / Gaedke Martin (eds.): 
-                        <hi rend="italic">INFORMATIK 2017</hi>. Bonn: Gesellschaft für Informatik 87–99.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Burghardt, Manuel / Wolff, Christian</hi> (2014): “Humanist-Computer Interaction: Herausforderungen für die Digital Humanities aus Perspektive der Medieninformatik” in: 
-                        <hi rend="italic">DHd Workshop: Informatik und die Digital Humanities.</hi>
-</bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Burghardt, Manuel / Lamm, Lukas / Lechler, David / Schneider, Matthias / Semmelmann, Tobias</hi> (2015): "MusicXML Analyzer. Ein Analysewerkzeug für die computergestützte Identifikation von Melodie-Patterns" in: 
-                        <hi rend="italic">Hildesheimer Evaluierungs- und Retrievalworkshop</hi> 2015: 29-42.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Condit-Schultz, Nathaniel / Ju, Yaolong / Fujinaga, Ichiro</hi> (2018): “A Flexible Approach to Automated Harmonic Analysis: Multiple Annotations of Chorales by Bach and Prætorius” in: 
-                        <hi rend="italic">19th International Society for Music Information Retrieval Conference</hi> 66–73.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Cook, Nicholas</hi> (2013): 
-                        <hi rend="italic">Beyond the score: Music as performance.</hi> Oxford University Press.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Cuthbert, Michael Scott / Christopher, Ariza</hi> (2010): “Music21: A Toolkit for Computer-Aided Musicology and Symbolic Music Data” in: 
-                        <hi rend="italic">11th International Society for Music Information Retrieval Conference (ISMIR 2010)</hi> 637–642.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Frieler, Klaus / Hoger, Frank / Pfleiderer, Martin / Dixon, Simon</hi> (2018): “Two Web Applications for Exploring Melodic Patterns in Jazz Solos” in: 
-                        <hi rend="italic">19th International Society for Music Information Retrieval Conference</hi> 777–83.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Hudson, Richard</hi> (1973): “The Folia Melodies” in: Acta Musicologica 45 (1): 98–119.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Huron, David</hi> (1994): 
-                        <hi rend="italic">UNIX Tools for Music Research: The Humdrum Toolkit</hi>. Reference manual http://www.humdrum.org/Humdrum/manual07.html [letzter Zugriff 21. September 2019].
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Huron, David.</hi> (2002): “Music Information Processing Using the Humdrum Toolkit: Concepts, Examples, and Lessons” in: 
-                        <hi rend="italic">Computer Music Journal</hi> 26 (2): 11–26. 
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Kornstädt, Andreas</hi> (1996): “SCORE-to-Humdrum: A Graphical Environment for Musicological Analysis” in: 
-                        <hi rend="italic">Computing in Musicology</hi> 10: 105–22.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Moretti, Franco</hi> (2002): “Conjectures on World Literature” in: 
-                        <hi rend="italic">New Left Review</hi> Jan / Feb: 54–68.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Nettheim, Nigel</hi> (1997): “A Bibliography of Statistical Applications in Musicology” in: 
-                        <hi rend="italic">Musicology Australia</hi> 20(1): 94–106.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Taylor, Michael</hi> (1996): 
-                        <hi rend="italic">Humdrum Graphical User Interface</hi>. Belfast, Queen’s University.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Vredenburg, Karel / Mao, Ji-Ye / Smith, Paul W. / Carey, Tom</hi> (2002): “A Survey of User-Centered Design Practice” in: 
-                        <hi rend="italic">Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</hi> 471–478.
-                    </bibl>
-</listBibl>
-</div>
 </back>
 </text>
 </TEI>

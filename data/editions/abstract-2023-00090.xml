@@ -1,33 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="NOICHL_Maximilian_PhilroBERTa__Ein_multilinguales_Sprachmode" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="BURGHARDT_Manuel_FakeNarratives___First_Forays_in_Understand" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="full">
-                    <title type="main">PhilroBERTa: Ein multilinguales Sprachmodell zur Beantwortung philosophiehistorischer Fragestellungen</title>
-                    <title type="sub"/>
-                </title>
+                <title>FakeNarratives – First Forays in Understanding Narratives of Disinformation in Public and Alternative News Videos</title>
                 <author>
                     <persName>
-                        <surname>Noichl</surname>
-                        <forename>Maximilian</forename>
+                        <surname>Tseng</surname>
+                        <forename>Chiao-I</forename>
                     </persName>
-                    <affiliation>Universität Wien, Österreich; Universität Bamberg, Deutschland</affiliation>
-                    <email>noichlmax@hotmail.co.uk</email>
-                    <idno type="ORCID">0000-0003-4518-0837</idno>
+                    <affiliation>Universität Bremen</affiliation>
+                    <email>tseng@uni-bremen.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Panzer</surname>
-                        <forename>Lukas</forename>
+                        <surname>Liebl</surname>
+                        <forename>Bernhard</forename>
                     </persName>
-                    <affiliation>Universität Bamberg, Deutschland</affiliation>
-                    <email>lukas.panzer@stud.uni-bamberg.de</email>
+                    <affiliation>Universität Leipzig</affiliation>
+                    <email>liebl@informatik.uni-leipzig.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Burghardt</surname>
+                        <forename>Manuel</forename>
+                    </persName>
+                    <affiliation>Universität Leipzig</affiliation>
+                    <email>burghardt@informatik.uni-leipzig.de</email>
+                    <idno type="ORCID">0000-0003-1354-9089</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bateman</surname>
+                        <forename>John</forename>
+                    </persName>
+                    <affiliation>Universität Bremen</affiliation>
+                    <email>bateman@uni-bremen.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-07-15T12:29:02.850000000</date>
+                    <date>2022-12-14T11:35:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -54,7 +67,7 @@
                     </address>
                 </publicationStmt>
             <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
+                <p>Converted from a Word document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -73,18 +86,17 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Sentence-Transformer</term>
-                    <term>Natural Language Processing</term>
-                    <term>Analytische Philosophie</term>
-                    <term>Kontinentale Philosophie</term>
+                    <term>video analytics</term>
+                    <term>narrative strategies</term>
+                    <term>disinformation</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Entdeckung</term>
-                    <term>Programmierung</term>
-                    <term>Strukturanalyse</term>
+                    <term>Inhaltsanalyse</term>
+                    <term>Beziehungsanalyse</term>
+                    <term>Annotieren</term>
                     <term>Visualisierung</term>
-                    <term>Literatur</term>
-                    <term>Text</term>
+                    <term>Multimodale Kommunikation</term>
+                    <term>Video</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -92,230 +104,198 @@
     <text>
         <body>
             <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="id_docs-internal-guid-3633fc81-7fff-6c5f-2bfb-33024082521b"/>Einleitung
-                </head>
-                <p>Die wohl bedeutendste Struktur der zeitgenössischen akademischen Philosophie ist die Trennung zwischen kontinentaler und analytischer Philosophie.</p>
-                <p>Obwohl wenig Einigkeit über die eigentliche Natur der Trennung besteht – ist es eine methodologische (vgl. Petrovich und Buonomo 2018), thematische, linguistische (vgl. Hobbs 2014), oder doch nur eine soziale? – spielt sie eine wichtige Rolle im philosophischen Berufsleben, und wird nicht nur informell verhandelt, sondern schlägt sich in den Aufnahmekriterien von Fachzeitschriften, in den Entscheidungen von Berufungskommissionen und im Aufbau zahlreicher professioneller Vereinigungen nieder.</p>
-                <p>Klarheit über die Topologie dieser Trennung zu erreichen, ist dementsprechend von großem Interesse. Dennoch besteht in der Literatur eine ausgesprochene Uneinigkeit über eine Reihe von basalen Fragen: Wann hat die Spaltung ihren Anfang genommen (man vgl. die Darstellungen von e.g. Glock 2008; Critchley 1997; 2001)? Handelt es sich überhaupt um eine Trennung, oder eher um zwei Extreme am Rande eines Kontinuums? Hat sie überhaupt noch Bestand, oder hat sich die Kluft im einundzwanzigsten Jahrhundert weitestgehend geschlossen (Bieri 2007; Beckermann 2003; Hoche 2009)?</p>
-                <p>
+                <head>Introduction: Narratives of Disinformation</head>
+                <p>Audiovisual media, such as film, TV, webseries, YouTube-videos and so on, have long become one, if not the, dominant cultural communication form of our times (Mirzoeff, 1999; Mitchell, 2001). Their role in shaping sociocultural configurations of all kinds appears incontestable. However, description and analysis of such media presents immense challenges which have so far resisted scalable solutions. Although it is becoming increasingly possible to conduct larger-scale stylistic and formal feature analysis (shot lengths, brightness, color profiles, dynamicity, etc.: cf., e.g., Heftberger, 2018), productive engagement with such media as powerful sociocultural artifacts demands in addition hermeneutic and functional interpretations as pursued in many branches of the humanities. Analyses of these kinds have not so far been possible within the digital humanities.</p>
+                <p>In an ongoing BMBF project on FakeNarratives<ref n="1" target="ftn1"/>, we combine expertise, experience and tools crucial for making general advances towards these goals, practically directed at a soundly delimited and, at the same time, socially significant class of audiovisual artifacts: TV news. We address the research hypothesis that news of this kind increasingly employs strategies of 
+                    <hi rend="italic">audiovisual narrative</hi> that may undercut, undermine or construct ideological positions and evaluations of news content 
+                    <hi rend="italic">independently</hi> of what may be simply stated, for example, in accompanying spoken text. The increasing sophistication and technical possibilities available to news channels makes it possible to draw on techniques for storytelling well established in film, but this can by no means always be guaranteed to work as intended. Indeed, filmic storytelling techniques may also serve to more effectively dis-inform.
+                </p>
+                <p>Although consideration of news reporting as narrative already has a considerably history and is nowadays hardly controversial (Sperry, 1981; Bell, 1999; Liebes, 1994; Langer, 1998; Hickethier, 2000; Dunn, 2005; Machill et al., 2006), methods for engaging specifically with their 
+                    <hi rend="italic">audiovisual</hi> non-verbal properties remain limited. Analyses addressing the audiovisual are overwhelmingly based on small datasets and, as is usual within the humanities, are performed interpretatively. Consequently, just how widespread ‘narrativization’ strategies are, and to what effect and aims they are being applied, urgently demands in depth and larger-scale research from within the digital humanities.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Case study: Tagesschau vs. Bild TV</head>
+                <p>The current paper presents some early results of the FakeNarratives project illustrating how narrative audiovisual strategies might begin to be addressed at variable scales. Several distinct kinds of narrative strategies have been discussed in the journalism and newsreporting literature, but for the purposes of our first case study we focus on the production of ‘individual-centered narrative’ by means of editing devices such as showing layperson’s talk, individualized events and actions, close- ups of individual faces, and emotion shown either visually or exhibited in accompanying language. These features appear to be widely used across alternative and public news outlets (Vettehen et al., 2008). Our research hypothesis is that both kinds of news outlets use narrative strategies to some degree, but that there may still be significant differences in why and how often they are actually used. We consider it highly implausible that the use of narrative strategies can be reduced to any binary “good vs. bad” or “informing vs. dis-informing” characterisation and so more finely discriminating accounts are in any case necessary. The basic challenge we address here is then to set out how hypotheses concerning narrative construction may be made amenable to larger-scale data analysis. </p>
+                <p>Here we select some of the most commonly discussed narrative features in news that contribute to highlighting individual stories, a technique that can effectively increase the viewers' memories of news contents and their perception of news severity (Aust &amp; Zillmann, 1996; Zillmann &amp; Brosius, 2012)
+                    <hi rend="color(FF0000)" xml:space="preserve">. </hi>We examine whether and how these features are presented in both public and online alternative news channels. In particular, we consider how these features are employed to individualise, personalise or emotionalise people shown in news videos. In other words, we seek to operationalise just what constitutes the narrative strategy of 
+                    <hi rend="italic">individualisation</hi> so that we can explore how the strategy is used across our selected news channels.
+                </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Data</head>
+                    <p>Our data include a preliminary selection of 166 news videos, 70 videos from Tagesschau, which we use as an example for more traditional, serious media, and 96 comparable videos from Bild TV, which we use as an example for a more recent, alternative news channel. These videos were all produced between 1 January 2022 and 15 March 2022. The length of entire news programs in both channels is around 15-25 minutes. For current purposes, we analyze the first news report of each news video, namely, the top news story of the entire program, which usually lasts from 3 to 5 minutes. The most reported top news themes from January to the middle of March in 2022 were Covid-19 and the outbreak of the Ukraine war.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Method</head>
+                    <p>For systematically analyzing the news videos, we employed the multimodal discourse approach of film cohesion (Tseng, 2013), which operates by picking out how the deployment of visual image, sound, verbal language, written language, camera movement, framing, color, and many more pattern together so as to introduce and coherently track people, places, objects and events within an unfolding event sequence. In other work, we have found that the cohesion structures resulting from such analyses appear to play significant roles for scaffolding an audience’s perception and understanding of narratives (cf., e.g., Tseng et al., 2021).</p>
+                    <p>Five distinct types of people commonly depicted in news reported were singled out for attention: (1) anchor persons, (2) reporters, (3) news commentators, (4) protagonists in the reported news events and (5) laypersons. The first three traditionally represent the authoritative voice in news and so we track and analyze whether these voices are personalized by including their own attitudes and emotions. The fourth type, protagonists, includes the main involved characters of news events, whereas the fifth type, laypersons, refers to people represented as generic exemplars effected by the news event.</p>
+<list type="ordered">
+                        <item>
+                            <hi rend="italic">Layperson in [talking head] mode</hi>: whether a news video employs layperson’s interviews.
+                        </item>
+                        <item>
+                            <hi rend="italic">Specific protagonist</hi>: whether a particular individual in the news report is cohesively identified as a specific protagonist.
+                        </item>
+                        <item>
+                            <hi rend="italic">Putin</hi>: whether the Russian president Putin is depicted as protagonist co-patterned with particular personalized quality and emotional features.
+                        </item>
+                        <item>
+                            <hi rend="italic">Close-up of laypersons and protagonists</hi>: whether laypersons or protagonists are additionally shown with close shots.
+                        </item>
+                        <item>
+                            <hi rend="italic">Self references of anchors, reporters or commentators</hi>: whether the ‘authoritative’ voices make recurring uses of self-references, such as the uses of “I”, “my”, “me” suggesting subjective opinions or personal attitudes of the journalists.
+                        </item>
+                    </list>
+                    <p>In addition to these five multimodal categories derived directly from the cohesive chains concerning individuals, we also analyze how these individuals are combined with the following four narratively relevant features: </p>
+<list type="ordered">
+                        <item>
+                            <hi rend="italic">Conflict or violent events</hi>: whether any conflict-related event is being mentioned, seen or written in news reports. 
+                        </item>
+                        <item>
+                            <hi rend="italic">Negative evaluation</hi>: whether particular, recurring quality features with negative evaluation can be found in news reports, for instance, the negative descriptions about the war or politicians. 
+                        </item>
+                        <item>
+                            <hi rend="italic">Emotions</hi>: whether there are multimodal realization of emotions, for instance, emotional terms mentioned in spoken or written texts and emotional reactions shown in visual images or sounds. 
+                        </item>
+                        <item>
+                            <hi rend="italic">Wallpapering</hi>: whether, in addition to the individuals and their evaluative features derived from the analysis of cohesive chains, background images that are not strictly related to the contents of the news report running in the foreground are shown.
+                        </item>
+                    </list>
+                    <p>The process of deriving the applicability of these categories for a video segment on the basis of the analysis of cohesive chains is depicted graphically in Figure 1.</p>
                     <figure>
-                        <graphic url="Pictures/04968ee8f4d03889e47663a481f41fde.png"/>
-                        <head>Zusammensetzung des gereinigten Datensatz über hundertzehn Jahre. Wir beobachten eine sich massiv verstärkende Dominanz des englischen Materials über das Jahrhundert hinweg, die Teils den Datenquellen geschuldet, zu einem großen Teil aber auch aus den Bedingungen des modernen wissenschaftlichen Publizierens erwachsen ist.</head>
+                        <graphic n="1001" width="16.06876388888889cm" height="6.879166666666666cm" url="Pictures/9c2dc0ac732afa311f60b6c6cb069a32.png" rend="inline"/>
+                        <head>Illustrative example of cohesive chains (right) developed on the basis of the unfolding video segment (Bild TV news, 25.02.2022, left). The chains show how the identities and elements tracked may occur in any modality and that their combination provides direct support for the narratively relevant features being targeted.</head>
                     </figure>
-                </p>
-                <p>Diese Uneinigkeit ist nicht überraschend. Da die Konkretisierung der Trennung in eine Zeit exponentieller Zunahme des wissenschaftlichen Outputs seit den 1950er Jahren fiel (vgl. Bornmann und Mutz 2015, siehe auch Abb. 1), und zugleich von geografischen und sprachlichen Grenzen moderiert wurde, aber nicht mit diesen identifiziert werden kann, ist ihre Geschichtsschreibung mit außergewöhnlichen Herausforderungen konfrontiert, da sie sich nicht mit Hunderten, sondern eigentlich mit Hunderttausenden von heterogenen Quellen befassen muss, wenn sie Fragen nach der tatsächlichen disziplinären Meta-Struktur beantworten will, anstatt sich mit philosophischen Einzelschicksalen zu befassen.</p>
-                <p>In der vorliegenden Arbeit schlagen wir eine Methode zur Beantwortung solcher grenzüberschreitenden, globalen Fragestellungen vor. Mithilfe eines multilingualen Sprachmodells (PhilroBERTa), welches wir auf philosophischen Texten fein-tunen generieren wir Textvektoren von 288.546 philosophischen Texten aus den vergangenen hundert Jahren. In dem derart aufgespannten Vektorraum identifizieren wir die Achse welche der kontinental-/-analytischen Unterscheidung entspricht. Indem wir die Positionierung der einzelnen Artikel auf dieser Achse erheben, können wir eine erste quantitative Einschätzungen der Topologie der analytisch/kontinentalen-Trennung vorschlagen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Datensatz</head>
-                <p>Eine scharfe Umgrenzung des Gebietes der Philosophie, insbesondere eine, welche einem ganzen Jahrhundert und mehreren nationalen Philosophiekulturen, verpflichtet ist, ist ausgesprochen schwierig. Dementsprechend ist für die vorgelegte Arbeit der zugrundeliegende Datensatz so expansiv wie möglich gewählt worden. Der Datensatz enthält alle Texte welche in der JStor Datenbank unter der Rubrik ‘Philosophy’ archiviert worden sind (437.703 Rohtexte), sowie alle Abstracts aus dem 
-                    <hi rend="italic">Web of Science (WOS)</hi>, welche in den Rubriken ‘Philosophy’ und ‘History and Philosophy of Science’ angesiedelt sind, oder aus in der 
-                    <hi rend="italic">PhilPapers-</hi>Journal-Liste verzeichneten Publikationen stammen (188.794 Einträge).
-                </p>
-                <p>
-                    <hi rend="color(#000000)">Da die Qualität der Rohdaten mäßig ist und die Fehlerquellen äußerst heterogen sind, verwenden wir einen Bulk-Labelling-Ansatz, bei dem alle Texte nach einem BOW-Modell encodiert werden und mit UMAP (McInnes, Healy, und Melville 2018)</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">kartographiert werden. Cluster verwendbarer Rohdaten werden in einem interaktiven Layout manuell selektiert. Dabei wurden Titeleien, publizierte Bibliographien, besonders ungenügendes OCR und nur partiell oder gar nicht erhaltene Artikel entfernt. JSTOR und WOS-Quellen wurden vereint und überschneidende Artikel angeglichen, was zu einem finalen Datensatz von 288.546 Artikeln führte.</hi>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Methode</head>
-                <p>
-                    <hi rend="color(#000000)">Die Modellierung multilingualer Textcorpora stellt seit längerem ein Problem für zahlreiche Bereiche der Digital Humanities dar </hi>
-                    <hi rend="color(#000000)">(Dombrowski 2020). Klassische Methoden, wie BOW-, Topic-, oder Wortvektormodelle stoßen hier an ihre Grenzen, da die von ihnen gelernten Repräsentationen hauptsächlich Unterschiede zwischen Sprachen als salienteste Muster erkennen, und das eigentliche übersprachliche Erkenntnisinteresse verdecken. Der aus diesen Problemen resultierende Fokus auf rein englischsprachiges Quellenmaterial ist unbefriedigend (Pitman und Taylor 2017; Galina Russell 2014). Multilinguale Sprachmodelle, wie z. B. xml-Roberta (Conneau u. a. 2020)</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">sind zwar in der Lage, dieses Problem zu lösen, indem sie deckungsgleiche Vektorräume für verschiedene Sprachen bereitstellen. Ihre Anwendbarkeit auf spezifische Forschungskorpora ist allerdings begrenzt, da die notwendige Wissensrepräsentation über den spezifischen Textgehalt nicht gegeben ist. </hi>
-                    <hi rend="color(#000000)">Das fine-tuning solcher Modelle auf den Forschungsdaten stellt hier allerdings eine Herausforderung dar, weil die dafür zur Verfügung stehenden Architekturen dazu tendieren, in multilingualen Trainingskorpora hauptsächlich Sprachunterschiede zu lernen und damit die Einbettungen ‚auseinanderzubrechen‘.</hi>
-                </p>
-                <p>
-                    <hi rend="color(#000000)">Ein kürzlich vorgeschlagener Lösungsansatz, nämlich die automatische Übersetzung des gesamten Textcorpus (vgl. Malaterre und Lareau 2022; siehe auch Böhm, Alexander u. a. 2022)</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">ist vielversprechend für die Erforschung der thematischen Zusammensetzung von Korpora, aber </hi>
-                    <hi rend="color(#000000)">ungeeignet</hi>
-                    <hi rend="color(#000000)"> für Anwendungen in denen die unterschiedlichen </hi>
-                    <hi rend="color(#000000)">Konnotationen</hi>
-                    <hi rend="color(#000000)"> von Wörtern in unterschiedlichen Sprachen und Kontexten eine Rolle spielen. Weiterhin ist die automatisierte Überführung von anderen Sprachen in eine einzige Basissprache – Englisch – mit Blick auf den Wunsch nach einer Wertschätzung verschiedener Sprachkulturen nicht ideal.</hi>
-                </p>
-                <p>
+                    <p>Initially, we coded and analyzed these nine categories in 166 video segments manually. Each segment was coded as ‘1’ when the category applies and ‘0’ when it does not apply. For simple coding of single news stories, the analyses could be entered into spreadsheets; for more complex coding, either of further narrative strategies or including more of the videos beyond the first news story, more structured annotations are essential, typically performed currently using tools such as ELAN (ELAN, 2021).</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Results and discussion</head>
+                    <p>The occurrences of the nine categories in our two selected TV channels are displayed in Figure 2. This shows the complex similarities and differences of the two channels when employing the distinct fine-grained strategies contributing to individualization. From the differing distributions among the fine-grained strategies, it becomes clear that, although both channels might be said to be employing individualization as a technique for raising the interest-value of their reports, they do this in differing ways. For example, the occurrences of closeup faces and the talk of laypersons show no significant difference across the two channel (Fisher’s exact test, p=0.101 and p=0.324 respectively); thus both channels can be seen to use the individualizing feature of closeups and laypeople reports. However, the comparison also shows that Tagesschau uses significantly more 
+                        <hi rend="italic" xml:space="preserve">protagonists </hi>to report news events than does Bild TV (Fisher’s exact test, p=0.001). This means that Tagesschau actually individualizes news stories more than Bild TV does, but in a very specific way. Nevertheless, the result in the category of 
+                        <hi rend="italic" xml:space="preserve">Putin </hi>indicates that Bild TV does specifically individualize Putin significantly more than Tagesschau. Indeed, in our data, Bild TV largely labels the Ukraine war or the violent conflict as Putin’s war, while Tagesschau mostly refers the war to the ‘invasion of Russia’ or Russian soldiers. Figure 2 also shows that the categories of conflict events, emotional reaction, negative evaluation and wallpapering all pattern similarly with significantly more use in Bild TV than in Tagesschau. Moreover, the substantial use of self references of reporters in Bild TV indicates the common insertion of personalized attitudes and opinions into their news reports.
+                    </p>
+                    <p>In summary, Tagesschau minimizes Putin’s personification, negative evaluation, decorative editing and reporters’ self-references, presumably in order to balance its heavy use of protagonist- centered narrative model with objective representation and visualization, while the Bild TV news videos employ evaluative and decorative features to dramatize the news events.</p>
                     <figure>
-                        <graphic url="Pictures/4ac8a55ab9a573929fbe865495c1fcc1.png"/>
-                        <head>Karte des verwendeten Datensatzes. Jeder der kleinen Datenpunkte entspricht einem von 288.546 Artikeln, angeordnet anhand der Cosinusähnlichkeit ihrer Textvektoren. Einzelne Cluster sind mit (aus Platzgründen) jeweils zwei zufällig ausgewählten Sprachen anhand von mit tfidf-ausgewählten Keywords gelabelt.</head>
+                        <graphic n="1002" width="16.002cm" height="8.080375cm" url="Pictures/3674589c4e6fae1112c79aee4f69be96.png" rend="inline"/>
+                        <head>The percentage occurrences of the nine categories in Tagesschau and Bild TV and corresponding p-values indicating the significance of difference (Fisher’s exact test).</head>
                     </figure>
-                </p>
-                <p>
-                    <hi rend="color(#000000)">In dieser Einreichung folgen wir dementsprechend einem alternativem Ansatz: Wir beginnen damit, zwei zur Erhebung von Textähnlichkeiten geeignete Sprachmodelle – ein </hi>
-                    <hi rend="color(#000000)">englischsprachiges</hi>
-                    <hi rend="color(#000000)"> (</hi>
-                    <hi rend="color(#000000)">paraphrase-distilroberta-base-v2</hi>
-                    <hi rend="color(#000000)">) und ein multilingual vortrainiertes Modell (</hi>
-                    <hi rend="color(#000000)">xlm-roberta-base, beide bereitgestellt von </hi>
-                    <hi rend="color(#000000)">Reimers und Gurevych 2019)</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">auf trainings-samplen aus unserem Beispielkorpus feinzutunen. Für das englischsprachige Modell greifen wir dabei auf GPL </hi>
-                    <hi rend="color(#000000)">(Wang u. a. 2022)</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">zurück, das multilinguale Modell tunen wir mit TSDAE </hi>
-                    <hi rend="color(#000000)">(Wang, Reimers, und Gurevych 2021)</hi>
-                    <hi rend="color(#000000)">, da der für GPL benötigte query-generator nur auf Englisch verfügbar ist. Danach verwenden wir den Ansatz von </hi>
-                    <hi rend="color(#000000)">Reimers und Gurevych (2020</hi>
-                    <hi rend="color(#000000)">) bei dem das englischsprachige Modell als ‘Lehrer’ verwendet wird, um mithilfe eines Korpus von Übersetzungen, die unterschiedlichen Sprachen in dem multilingualen Modell zur Deckung zu bringen. Wie Abb. 2 zeigt, gelingt das tatsächlich: Eine durch </hi>
-                    <hi rend="color(#000000)italic">UMAP</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">(McInnes, Healy, und Melville 2018)</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">auf der Grundlage von Cosinus-Ähnlichkeiten zwischen Texteinbettungen erstellte Karte unseres Korpus weist keine separierten Cluster von Einzelsprachen auf. Gleichzeitig ist das TSDAE-pretraining über die Angleichung der Sprachen hinweg erhalten geblieben: In einem Philosophie-spezifischen triplet-evaluation task, bei dem das Modell mit drei Passagen aus der </hi>
-                    <hi rend="color(#000000)italic">Stanford Encyclopedia of Philosophy </hi>
-                    <hi rend="color(#000000)">konfontiert war, in welchem zwei aus dem selben Artikel, die dritte jedoch aus einem der (mit einem einfachen BOW-Modell ermittelten) zwanzig thematisch ähnlichsten Artikel stammte, verbesserte sich die Fähigkeit, die zusammengehörenden Artikel zu ermitteln, um sieben Prozentpunkte.</hi>
-                </p>
-                <p>Um von unserem Sprachmodell zu Antworten auf unsere Fragen nach der Struktur der analytisch-kontinentalen Kluft zu kommen, encodieren wir zuerst alle Texte in unserem Sample mit dem multilingualen Sprachmodell. </p>
-                <p>Die analytisch-Kontinentale Trennung wird in philosophiehistorischen Werken häufig über die Angabe von paradigmatischen ReferenzautorInnen eingeführt (e.g. "Frege", "Russel", "Moore", Quine, Strawson, … und "Hegel", "Husserl", "Heidegger","Adorno",...). Wir sammeln solche Listen in der Literatur und wählen die am häufigsten genannten Autoren aus. Dann wählen wir zufällig 2000 Beispielartikel aus, welche Autoren aus der einen, aber nicht der anderen Gruppe zitieren, also tendenziell eher aus der analytischen, oder kontinentalen Ecke kommen. Das ist unsere 'seed'-Stichprobe. 
-                    <hi rend="color(#000000)">Einem von Waller und Anderson (2021)</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">inspirierten Verfahren für die Modellierung von Polarisierung in Online-communities folgend, bilden wir den durchschnittlichen Differenzvektor zwischen den Einbettungen dieser 'seed'-</hi>
-                    <hi rend="color(#000000)">A</hi>
-                    <hi rend="color(#000000)">rtikel. Anschließend suchen wir nach 500 Paaren von ähnlichen Artikeln, deren Vektordifferenz diesem Differenzvektor am ähnlichsten ist, d.h. Artikelpaaren, die ein ähnliches Thema behandeln, aber deren Grundeinstellung einmal analytisch, einmal kontinental ist. </hi>
-                    <hi rend="color(#000000)">Ein solches Paar bilden beispielsweise </hi>
-                    <hi rend="color(#000000)">der analytischere Text:</hi>
-                    <hi rend="color(#000000)"> '¿Hay una Filosofia de la Ciencia en el ultimo Wittgenstein?' (Moulines 1989), und die kontinentaler gelagerte Besprechung: 'Von Umgangskörpern, Vertikalspannungen, Responsivität und Musikphilosophie: Ludwig Wittgenstein im Spiegel neuerer Literatur' (Kroß 2012). Auf diese Weise ‚bereinigen‘ wir die ursprünglichen Differenzvektoren von nur thematischen Ungleichgewichten. </hi>
-                </p>
-                <p>Durch die Berechnung der Cosinus-Ähnlichkeit aller Artikelvektoren in dem Datensatz zu den kontinentalen und analytischen Artikeln in den ermittelten Artikelpaaren können wir so einen themenunabhängigen einzigen "Analytizität/Kontinentalität"-Score für jeden Artikel entlang der kontinentalen/analytischen Achse ableiten. Die Dichte-Verteilung aller Artikel auf diesem Score ist in Abb. 3.b dargestellt. </p>
-                <p>Für die Validierung dieser von dem Modell berechneten Scores, haben wir eine Web-Applikation entwickelt, in der NutzerInnen, in unserem Fall PhilosophInnen, den Titel eines Artikel aus unserem Datensatz angezeigt bekommen und entscheiden müssen, ob der Artikel aus der kontinentalen oder analytischen Philosophie stammt. Die Applikation ist sowohl auf Desktop-PCs als auch auf mobilen Endgeräten verfügbar. Die erstellte Applikation wird in den kommenden Monaten gezielt einem multilingualen Fachpublikum zugänglich gemacht werden, sodass die aus dem Sprachmodell generierten Scores empirisch validiert werden können.</p>
-                <p>Um zu messen, wie sich die kontinentale/analytische Spaltung im Laufe der Zeit vergrößert/verkleinert hat, fitten wir eine Serie von verbundenen gaußschen Mischverteilungsmodellen auf den Datensatz. Unter der Annahme, dass der Datensatz tatsächlich durch die Wirkung zweier Prozesse, welche analytische und kontinentale Philosophie generieren, entstanden ist, geben uns diese Modelle die jeweilige zentrale Tendenz und Spannbreite dieser Prozesse an.</p>
-                <p>
-                    <figure>
-                        <graphic url="Pictures/f5b7869205ba6850fda47bce8d8fffda.png"/>
-                        <head>Verteilung von Artikeln entlang des analytisch-Kontinentalen-Gradienten. (a) zeigt die Entwicklung des Gradienten im Verlauf der Zeit. Zentrale Tendenzen und Dezile sind einer Serie von verbundenen zwei-Komponenten Gaußschen Mischmodellen entnommen. Im ersten Drittel wäre allerdings ein ein-Komponenten-Modell vorzuziehen. Vier einzelne Philosophen-Karrieren sind anhand der fortschreitenden zentralen Tendenz der Werte ihrer Artikel auf dem Gradienten eingetragen. Man beachte insbesondere die Karriere Rortys von einem ursprünglich analytischen Philosophen, zu einem der wirkungsvollsten Proponenten kontinentaler Autoren im angloamerikanischen Raum. (b) Zufällig ausgewählte Beispiel-Titel entlang des analytisch-kontinentalen Gradienten, nebst Dichte-Verteilung über das gesamte Sample.</head>
-                    </figure>
-                </p>
+                    <p>Apart from the narrative strategy of 
+                        <hi rend="italic">individualisation</hi>, we are currently analysing and formalising other crucial news narrative strategies such as 
+                        <hi rend="italic">dramatisation</hi> and 
+                        <hi rend="italic" xml:space="preserve"> fragmentation</hi> (Bennett, 1988). Nevertheless, for enlarging the corpus of news videos and the scale of annotation categories, we require more effective annotation tools beyond the time-intensive manual annotation methods such as ELAN. In this pursuit, automatic annotation is one central goal of the FakeNarratives project.
+                    </p>
+                </div>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Vorläufige Ergebnisse</head>
-                <p>Die Ergebnisse dieser Modelle sind in Abb. 3.a wiedergegeben. Wir beobachten, dass sich die beiden Verteilungen bis in die späten 1940er Jahre nahezu parallel entwickeln – und in der Tat suggerieren die statistischen Kennzahlen der Modellwahl, dass eine einzige Gauß-Verteilung die Daten in diesem Bereich besser beschreiben würde. Von 1950 bis 1960 beobachten wir hingegen ein scharfes Ausschwenken der analytischen Verteilung, gemeinsam mit einer Verkleinerung der Breite der Verteilung – also eine Konzentration und Konsolidierung analytischer Tendenzen in unserem Korpus, verbunden mit einer asymmetrische Polarisierung, die bis heute weitestgehend konstant zu bestehen scheint.</p>
+                <head>What’s ahead: Automatic annotation and exploratory visualization tool</head>
+                <p>The results of the previous section are encouraging concerning the use of more abstract audiovisual analyses as a means for revealing differences and similarities between audiovisual materials in ways that naturally relate to issues of narrativization. The characterizations of our selected news media clearly indicate where differences in broader strategies are occurring. It is also nevertheless clear that for more reliable and extensive results, expanding both the kinds of audiovisual materials analyses and the kinds of strategies at issue, it will be essential to move beyond time-intensive manual annotation. Augmenting this work further by the development and application of automatic and semi-automatic annotation is consequently a further central goal of the FakeNarratives project, for which we adopt a two-pronged approach combining foci on visualization and automated analysis. </p>
+                <p>We now combine a range of computational techniques for which there are already good solutions available, such as shot detection, face detection, etc., into a flexible tool named 
+                    <hi rend="italic">Zoetrope</hi>, supporting the progressive annotation of larger data sets by means of a more interactive interface (see Figure 3). 
+                    <hi rend="italic">Zoetrope</hi> enhances the existing landscape of tools for audiovisual annotation and analysis (for an overview see Pustu-Iren et al., 2020), as it is not only capable of visualizing automatic annotations, but also provides some basic functionalities for querying the video, for instance for specific key words or named entities. By these means, annotation becomes an activity that can leverage both automatic results of audiovisual processing and more abstract characterizations of data in terms such as cohesive structures as used above. 
+                </p>
+                <p>The current 
+                    <hi rend="italic">Zoetrope 1.0</hi> prototype already allows researchers to search for keywords (
+                    <hi rend="italic">segment 1</hi>). Any keyword can be used as a query, which will then be searched in the spoken (Mozilla DeepSpeech<ref n="2" target="ftn2"/> with a German model by Agarwal and Zesch<ref n="3" target="ftn3"/>) and written (scene detection framework 
+                    <hi rend="italic">easyOCR</hi><ref n="4" target="ftn4"/>) language of the video. We also embed the query using word embeddings<ref n="5" target="ftn5"/> so that we can find words semantically related to the query as well. Via a slider, the similarity threshold can be set looser or more exact (=100%). The results of such a query are visualized in 
+                    <hi rend="italic">segment 2</hi>, which basically uses a timeline metaphor. Query results found in spoken language are rendered in green, results in written language are rendered in red. Note that for the query “Krieg” we also find semantically related concepts such as “Truppen”, “Invasion” or “Militär”, due to the semantic similarity threshold, which was set here rather low, at 50%. In segment 3, we see some exemplary automatically determined features, including face detection and audio analysis by means of a spectrogram. Finally, segment 4 shows an interactive video player, which can be navigated by means of the timeline or by clicking on specific results, such as a keyword or a face. Visible features, such as written keywords or faces, can also be rendered with their bounding box withing the video.
+                </p>
+                <figure>
+                    <graphic n="1003" width="16.002cm" height="14.322777777777778cm" url="Pictures/5fdc08387904ece20cb2da9e4fdf2e07.png" rend="inline"/>
+                    <head>
+                        <hi rend="italic">Zoetrope 1.0</hi> prototype for visualizing and exploring news videos.
+                    </head>
+                </figure>
+                <p>The tools developed within the project will continue to pursue advanced visualization and more extensive automatic analysis. The latter goal is supported by our project partners in Hanover and their continuing development of the web-based audiovisual analytics platform TIBAVA (TIB AV- Analytics).</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Diskussion</head>
-                <p>Diese Ergebnisse stehen im scharfen Kontrast zu früheren monolingualen Zitations-Studien, die eine Isoliertheit kontinentaler Philosophie identifiziert hatten (Noichl 2021). Die Erweiterung des Datensatzes um mehrere Sprachen und die damit einhergehende methodologische Komplexität stellt also in jedem Fall eine notwendige Grundlage für weitere Untersuchungen dar. Dabei hat der verwendete Datensatz noch nicht alle Möglichkeiten zu multilingualer Erweiterung ausgeschöpft: Die reichhaltige spanischsprachige OpenAccess-Kultur hat in unserer Untersuchung zum Beispiel noch nicht ausreichend Eingang gefunden. Wenn für die gestellte Fragestellung auch nicht zwingend notwendig, wäre eine Erweiterung über den europäischen Sprachraum hinweg wünschenswert.</p>
+                <head>Conclusions and Outlook </head>
+                <p>We have shown in this paper some of the benefits that may accrue when the analysis of audiovisual media can build on more abstract discourse patterns carried out at scale. We have argued that to take this further, however, a progressive increase in computational support is necessary. To this end, we have set out some first steps taken towards bridging some of the gaps between current technical feature processing possibilities and discourse-related characterizations of data. This is being enabled first and foremost by an interactive tool which already seamlessly incorporates a variety of state of the art processing techniques relevant for more abstract annotation practices. We believe such a tool will greatly speed up the manual annotation that our current corpus analysis relies on and will allow us to discover and annotate many more narrative strategies in the future. Once the tool is beyond its prototype stage, we also plan to release it for the DH community, which might use it to search other video material than news videos, for instance YouTube Let’s Play videos for game studies, or any movie or TV series for film studies scenarios. A live demo of the prototype will be included in the presentation at DHd 2023.</p>
             </div>
         </body>
         <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                         https://fakenarratives.github.io/index
+                    </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                         https://github.com/mozilla/DeepSpeech
+                    </note>
+<note rend="footnote text" xml:id="ftn3" n="3">
+                         https://github.com/AASHISHAG/deepspeech-german
+                    </note>
+<note rend="footnote text" xml:id="ftn4" n="4">
+                         https://github.com/JaidedAI/EasyOCR
+                    </note>
+<note rend="footnote text" xml:id="ftn5" n="5">
+                         Using spaCy’s de_core_news_md model
+                    </note></div>
             <div type="bibliogr">
                 <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Beckermann, Ansgar. </hi>2003. „Muss die Philosophie noch analytischer werden?  (Ist die Analytische Philosophie am Ende?)“. Universität Würzburg.</bibl>
+<head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">Bieri, Peter.</hi> 2007. „Was bleibt von der analytischen Philosophie?“ 
-                        <hi rend="color(#000000)italic">Deutsche Zeitschrift für Philosophie</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">55 (3). https://doi.org/10.1524/dzph.2007.55.3.333.</hi>
+                        <hi rend="bold">Aust, Charles &amp; Dolf Zillmann.</hi> 1996. “Effects of Victim Exemplification in Television News on Viewer Perception of Social Issues”. Journal of Mass Media and Communication Quarterly 4(73), 787-803.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Böhm, Alexander, Reiners-Selbach, Stefan, Baedke, Jan, Fábregas Tejeda, Alejandro, und Nicholson, Daniel J.</hi> 2022. „What was Theoretical Biology? A Topic-Modelling Analysis of a Multilingual Corpus of Monographs and Journals, 1914-1945“. 
-                        <hi rend="color(#000000)italic">DHd2022: Kulturen des digitalen Gedächtnisses</hi>
-                        <hi rend="color(#000000)">, März. https://doi.org/10.5281/ZENODO.6328143.</hi>
+                        <hi rend="bold" xml:space="preserve">Benett, Lance W. </hi>1988. 
+                        <hi rend="bold">“</hi>News: The Politics of Illusions”. New York: Longman.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Bornmann, Lutz, und Rüdiger Mutz.</hi> 2015. „Growth Rates of Modern Science: A Bibliometric Analysis Based on the Number of Publications and Cited References“. 
-                        <hi rend="color(#000000)italic">Journal of the Association for Information Science and Technology</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">66 (11): 2215–22. https://doi.org/10.1002/asi.23329.</hi>
-                    </bibl>
-                    <bibl><hi rend="bold">Conneau, Alexis, Kartikay Khandelwal, Naman Goyal, Vishrav Chaudhary, Guillaume Wenzek, Francisco Guzmán, Edouard Grave, Myle Ott, Luke Zettlemoyer, und Veselin Stoyanov.</hi> 2020. „Unsupervised Cross-lingual Representation Learning at Scale“. arXiv. http://arxiv.org/abs/1911.02116.</bibl>
-                    <bibl>
-                        <hi rend="bold">Critchley, Simon.</hi> 1997. „What Is Continental Philosophy?“ 
-                        <hi rend="color(#000000)italic">International Journal of Philosophical Studies</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">5 (3): 347–63. https://doi.org/10.1080/09672559708570862.</hi>
+                        <hi rend="bold">Bell, Allan.</hi> 1999. “News stories as narratives.” In A. Jaworski and N. Coupland (Eds.), 
+                        <hi rend="italic">The Discourse Reader</hi>, Chapter 13, 236–251. London: Routledge. 
                     </bibl>
                     <bibl>
-                        <hi rend="color(#000000)">———</hi>
-                        <hi rend="color(#000000)">. 2001. </hi>
-                        <hi rend="color(#000000)italic">Continental philosophy: A very short introduction</hi>
-                        <hi rend="color(#000000)">. Oxford: Oxford University Press.</hi>
-                    </bibl>
-                    <bibl><hi rend="bold">Dombrowski, uinn.</hi> 2020. „What’s a ‚Word‘: Multilingual DH and the English Default“. McGill, Oktober 15. https://quinndombrowski.com/blog/2020/10/15/whats-word-multilingual-dh-and-english-default/undefined.</bibl>
-                    <bibl>
-                        <hi rend="bold">Galina Russell, Isabel. </hi>2014. „Geographical and linguistic diversity in the Digital Humanities“. 
-                        <hi rend="color(#000000)italic">Literary and Linguistic Computing</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">29 (3): 307–16. https://doi.org/10.1093/llc/fqu005.</hi>
+                        <hi rend="bold" xml:space="preserve">Dunn, Anne. </hi>2005. “Television news as narrative.” In H. Fulton, R. Huisman, J. Murphet, and A. Dunn (Eds.), 
+                        <hi rend="italic">Narrative and Media</hi>, 140–152. Cambridge, UK: Cambridge University Press.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Glock, Hans-Johann.</hi> 2008. 
-                        <hi rend="color(#000000)italic">What is analytic philosophy?</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">Cambridge: Cambridge University Press.</hi>
+                        <hi rend="bold">ELAN.</hi> 2021. “ELAN – Linguistic Annotator (Version 6.2).” computer software. Nijmegen: Max Planck Institute for Psycholinguistics. The Language Archive.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Hobbs, Valerie.</hi> 2014. „Accounting for the Great Divide: Features of Clarity in Analytic Philosophy Journal Articles“.
-                        <hi rend="color(#000000)italic">Journal of English for Academic Purposes</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">15 (September): 27–36. https://doi.org/10.1016/j.jeap.2014.05.001.</hi>
+                        <hi rend="bold">Heftberger, Adelheit.</hi> 2018. “Digital Humanities and Film Studies: Visualising Dziga Vertov’s Work.” Switzerland: Springer Nature.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Hoche, Hans-Ulrich. </hi>2009. „Bieri über die Zukunft der analytischen Philosophie — Eine unerlässliche Entgegnung“.
-                        <hi rend="color(#000000)italic">Jahrbuch für Recht und Ethik / Annual Review of Law and Ethics</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">17: 415–44.</hi>
+                        <hi rend="bold">Hickethier, Knut.</hi> 2000. “Fernsehnachrichten. Geschichten aus 1001 Nachricht.” Message 2(2), 70–74.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Kroβ, Matthias.</hi> 2012. „Von Umgangskörpern, Vertikalspannungen, Responsivität und Musikphilosophie: Ludwig Wittgenstein im Spiegel neuerer Literatur“. 
-                        <hi rend="color(#000000)italic">Philosophische Rundschau</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">59 (3): 197–216.</hi>
+                        <hi rend="bold">Langer, John.</hi> 1998. “Tabloid Television: Popular Journalism and the ‘Other News’.” London and New York: Routledge.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Malaterre, Christophe, und Francis Lareau.</hi> 2022. „The Early Days of Contemporary Philosophy of Science: Novel Insights from Machine Translation and Topic-Modeling of Non-Parallel Multilingual Corpora“. 
-                        <hi rend="color(#000000)italic">Synthese</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">200 (3): 242. https://doi.org/10.1007/s11229-022-03722-x.</hi>
+                        <hi rend="bold">Liebes, Tamar</hi>. 1994. “Narrativization of the News: An Introduction.” 
+                        <hi rend="italic">Journal of Narrative and Life History</hi> 4(1– 2), 1–8.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">McInnes, Leland, John Healy, und James Melville.</hi> 2018. „UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction“. 
-                        <hi rend="color(#000000)italic">arXiv:1802.03426 [cs, stat]</hi>
-                        <hi rend="color(#000000)">, Februar. http://arxiv.org/abs/1802.03426.</hi>
+                        <hi rend="bold">Machill, Marcel, Sebastian Köhler, &amp; Markus Waldhauser.</hi> 2006. “Narrative Fernsehnachrichten: Ein Experiment zur Innovation journalistischer Darstellungsformen.” 
+                        <hi rend="italic">Publizistik</hi> 51(4), 479–497.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Moulines, Ulises.</hi> 1989. „¿Hay una filosofia de la ciencia en el ultimo wittgenstein?“ 
-                        <hi rend="color(#000000)italic">Theoria: An International Journal for Theory, History and Foundations of Science</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">4 (11): 327–42.</hi>
+                        <hi rend="bold">Mirzoeff, Nicholas.</hi> 1999. “An introduction to visual culture.” London &amp; New York: Routledge.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Noichl, Maximilian.</hi> 2021. „Modeling the Structure of Recent Philosophy“. 
-                        <hi rend="color(#000000)italic">Synthese</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">198 (6): 5089–5100. https://doi.org/10.1007/s11229-019-02390-8.</hi>
+                        <hi rend="bold">Mitchell, William.</hi> 2001. “What is visual culture?” In 
+                        <hi rend="italic">Meaning in the visual arts: views from the outside,</hi> 202–217. Princeton: Institute for Advanced Study.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Petrovich, Eugenio, und Valerio Buonomo. </hi>2018. „Reconstructing Late Analytic Philosophy. A Quantitative Approach“. 
-                        <hi rend="color(#000000)italic">Philosophical Inquiries</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">6 (1): 151–82. https://doi.org/10.4454/philinq.v6i1.184.</hi>
+                        <hi rend="bold">Pustu-Iren, Kader, Julian Sittel, Roman Mauer, Oksana Bulgakowa &amp; Ralph Ewerth.</hi> 2020. "Automated Visual Content Analysis for Film Studies: Current Status and Challenges". Digital Humanities Quarterly, 14(4).
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Pitman, Thea, und Claire Taylor.</hi> 2017. „Where’s the ML in DH? And Where’s the DH in ML? The Relationship between Modern Languages and Digital Humanities, and an Argument for a Critical DHML.“ 
-                        <hi rend="color(#000000)italic">DHQ: Digital Humanities Quarterly</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">11 (1).</hi>
-                    </bibl>
-                    <bibl><hi rend="bold">Reimers, Nils, und Iryna Gurevych.</hi> 2019. „Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks“. arXiv. http://arxiv.org/abs/1908.10084.</bibl>
-                    <bibl>
-                        <hi rend="color(#000000)">———</hi>
-                        <hi rend="color(#000000)">. 2020. „Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation“. arXiv. http://arxiv.org/abs/2004.09813.</hi>
+                        <hi rend="bold">Sperry, Sharon L.</hi> 1981. “Television News as Narrative.” In R. P. Adler (Ed.), 
+                        <hi rend="italic">Understanding Television: Essays on Television as a Social and Cultural Force</hi>, 295–312. New York: Praeger.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Waller, Isaac, und Ashton Anderson. </hi>2021. „Quantifying Social Organization and Political Polarization in Online Platforms“. 
-                        <hi rend="color(#000000)italic">Nature</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">600 (7888): 264–68. https://doi.org/10.1038/s41586-021-04167-x.</hi>
+                        <hi rend="bold">Tseng, Chiao-l.</hi> 2013. “Cohesion in Film: Tracking Film Elements.” Basingstoke: Palgrave Macmillan.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Wang, Kexin, Nils Reimers, und Iryna Gurevych.</hi> 2021. „TSDAE: Using Transformer-based Sequential Denoising Auto-Encoderfor Unsupervised Sentence Embedding Learning“. In 
-                        <hi rend="color(#000000)italic">Findings of the Association for Computational Linguistics: EMNLP 2021</hi>
-                        <hi rend="color(#000000)">, 671–88. Punta Cana, Dominican Republic: Association for Computational Linguistics. https://doi.org/10.18653/v1/2021.findings-emnlp.59.</hi>
+                        <hi rend="bold">Tseng, Chiao-I., Jochen Laubrock, &amp; John A. Bateman.</hi> 2021. “The impact of multimodal cohesion on attention and interpretation in film.” 
+                        <hi rend="italic">Discourse, Context &amp; Media</hi> 44, aop.
                     </bibl>
-                    <bibl>Wang, Kexin, Nandan Thakur, Nils Reimers, und Iryna Gurevych. 2022. „GPL: Generative Pseudo Labeling for Unsupervised Domain Adaptation of Dense Retrieval“. arXiv. http://arxiv.org/abs/2112.07577.</bibl>
+                    <bibl>
+                        <hi rend="bold">Vettehen, Paul, Koos Nuijten, &amp; Allerd Peeters.</hi> 2008. “Explaining effects of 
+                        <hi rend="italic">sensationalism</hi> on liking of television news stories: The role of emotional arousal.” 
+                        <hi rend="italic">Communication Research</hi> 35, 319–338.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Zillmann, Dolf &amp; Hans-Bernd Brosius.</hi> 2012. "Exemplification in Communication the influence of Case Reports on the Perception of Issues". Routledge.
+                    </bibl>
                 </listBibl>
             </div>
         </back>

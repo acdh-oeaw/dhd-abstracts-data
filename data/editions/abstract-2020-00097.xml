@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="231_final-LIEDTKE_Clemens_DH_s_Next_Top_Model__Digitale_Editionsentwic" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="193_final-HERMES_J_rgen_Public_Humanities_Tools__Der_Bedarf_an_nieders" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>DH’s Next Top-Model? Digitale Editionsentwicklung zwischen Best Practice und Innovation am Beispiel des „Corpus Masoreticum“</title>
+<title type="full">
+<title type="main">Public Humanities Tools: Der Bedarf an niederschwelligen Services</title>
+<title type="sub"/>
+</title>
 <author>
 <persName>
-<surname>Liedtke</surname>
-<forename>Clemens</forename>
+<surname>Hermes</surname>
+<forename>Jürgen</forename>
 </persName>
-<affiliation>Hochschule für Jüdische Studien Heidelberg, Deutschland</affiliation>
-<email>Clemens.Liedtke@hfjs.eu</email>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>hermesj@uni-koeln.de</email>
+</author>
+<author>
+<persName>
+<surname>Klinke</surname>
+<forename>Harald</forename>
+</persName>
+<affiliation>LMU, München</affiliation>
+<email>h.klinke@lmu.de</email>
+</author>
+<author>
+<persName>
+<surname>Demmer</surname>
+<forename>Dennis</forename>
+</persName>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>Dennis.Demmer@uni-koeln.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2020-01-08T13:35:00Z</date>
+<date>2019-09-26T15:55:59.454725307</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -27,7 +46,7 @@
 </address>
 </publicationStmt>
 <sourceDesc>
-<p>Converted from a Word document</p>
+<p>Converted from an OASIS Open Document</p>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
@@ -46,173 +65,242 @@
 <term>Vortrag</term>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Handschriften</term>
-<term>Digitale Edition</term>
-<term>Datenmodellierung</term>
-<term>Graphendaten</term>
-<term>Mittelalter</term>
-<term>Jüdische Studien</term>
+<term>Citizen Science</term>
+<term>Wissenschaftskommunikation</term>
+<term>Tool-Entwicklung</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Transkription</term>
-<term>Modellierung</term>
-<term>Annotieren</term>
-<term>Netzwerkanalyse</term>
+<term>Teilen</term>
+<term>Kommunikation</term>
+<term>Community-Bildung</term>
+<term>Veröffentlichung</term>
+<term>Crowdsourcing</term>
 <term>Webentwicklung</term>
-<term>Manuskript</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<div rend="DH-Heading1" type="div1" xml:id="OLE_LINK11">
-<head>Einführung: Handschriftenforschung und Digitale Transformation</head>
-<p style="text-align:left; ">Wenn sich auch in den Geisteswissenschaften so etwas wie ein „Digital Turn“ oder eine „Digitale Transformation“ (Pousttchi 2017) beobachten lässt, wirft das unweigerlich die Frage auf, inwiefern die Einführung digitaler Prozesse in geisteswissenschaftliche Forschung Konsequenzen für den Aufbau bzw. das Design von konkreten Forschungsprojekten hat.</p>
-<p style="text-align:left; ">In folgendem Vortrag soll diese Frage an einem Fallbeispiel aus dem Bereich der Jüdischen Studien entwickelt werden. Hier wurde unlängst von Gerben Zaagsma herauspräpariert, dass durch die nunmehr in großem Umfang verfügbaren digitalen Ressourcen zu jüdischer Geschichte und Kultur sich "die Sicherung, Bereitstellung und Analyse des in alle Welt verstreuten vielsprachigen und mehrschriftlichen Quellenmaterials“ als eine der zukünftigen Schlüsselaufgaben stellt (Zaagsma 2019:3ff.). </p>
-<p style="text-align:left; ">Dies lässt sich in besonderem Maße an dem Teilbereich der Handschriftenforschung exemplifizieren: Gerade durch die großen Digitalisierungsinitiativen der letzten Jahre an hebräischen Manuskripten, v.a. National Library of Israel, der Polonsky Foundation in Zusammenarbeit mit der British Library und der Bodleian Library stehen der wissenschaftlichen Community umfangreiche Quellenbestände zur Verfügung, die erst die Grundlage für weitere inhaltliche Tiefenerschließung, Edition und Corpusanalyse bilden.</p>
-<p style="text-align:left; ">Betrachtet man weiter das Teilgebiet der wissenschaftlichen Erforschung des hebräischen Bibeltextes, so lässt sich zeigen, dass forschungsgeschichtlich gesehen die Editionspraxis hebräischer Bibelhandschriften bereits teilweise auf digitale Prozesse zurückgreifen kann, etwa in computerlinguistischer Hinsicht durch die langjährigen Projekte des Eep Talstra Centre for Bible and Computer (ETCBC<ref n="1" target="ftn1"/>; van Lit 2019) oder durch die elektronische Edition des Westminster Leningrad Codex (WLC<ref n="2" target="ftn2"/>). Ob man dies bereits als Symptom eines digitalen Transformationsprozesses betrachten sollte, der jenseits der Einführung einzelner Tools und Verfahren übergreifende Veränderungen in Fragestellung, Methodologie und Methodenkritik sichtbar macht, ist damit noch nicht ausgemacht. Immerhin gilt nach wie vor die Print-Edition der "Biblia Hebraica Stuttgartensia" auf Grundlage der Handschrift Ms. Fircovitch B19a als eine der massgeblichen kritischen Textausgaben für Theologie und hebräische Bibeltextforschung und bildet damit noch den Stand und die Möglichkeiten der analogen Bibeltextkritik ab.
-                </p>
-<p style="text-align:left; ">Hinsichtlich der Perspektive von primär digitalen wissenschaftlichen Editionen der Hebräischen Bibel stellt sich infolgedessen die Frage nach der Anwendbarkeit bereits etablierter Verfahren; während sowohl im WLC als auch im "Digital Mishnah Project"<ref n="3" target="ftn3"/> XML-Textauszeichungen zum Einsatz kommen (entweder teilweise oder vollständig entlang der TEI P5 Spezifikationen implementiert), finden XML-basierte "best practices“ im Bereich linksläufiger Schriftsysteme wie dem Hebräischen bislang nur zögerlich Akzeptanz, zumal unter Einsatz von XML-Quelltext-Autorensystemen wie oXygen ganz basale handwerkliche Probleme das Schreiben von rechtsläufigen Tagsets und linksläufigen Schriften zur Herausforderung macht. So konstatiert auch noch das DARIAH Wiki: „Solange dieses Problem nicht grundsätzlich gelöst ist, wird die Akzeptanz von TEI und/oder XML in Hebraistik und Arabistik gering sein.“<ref n="4" target="ftn4"/>. Gleichwohl berührt dies eher die Frage, inwiefern sich solche technischen Hürden durch geeignete grafische Benutzerschnittstellen nehmen lassen, die die systemischen Anforderungen bidirektionaler Unicode-Texte von anwendungsseitigen Annotationsebene wegabstrahieren. 
-                </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Textcodierung: Modelle</head>
-<p style="text-align:left; ">Inhaltlich bedeutsamer scheint aber die mittlerweile ausführlich beschriebene Problematik zu sein, dass sich XML als semi-strukturierte, hierarchisch organisierte Markup-Sprache mit seinen strikten Regeln zur Wohlgeformtheit und Validität von Auszeichnungen nur bedingt dazu eignet, Phänomene zu annontieren, die nicht linear/hierarchisch, sondern mit Überlappungen oder sich überschneidenden Sequenzen strukturiert sind. Ebenso zwingt es die Bearbeitenden, die dokumentenzentrierte und die textzentrierte Perspektive einer zu edierenden Quelle durch zwei unterschiedliche Kodierungsstrategien zu lösen (Brüning/Henzel/Pravida 2013; Pierazzo 2017); gleichzeitig belastet die Verarbeitung von internen wie externen Verweisstrukturen im Dokument (Lesartvarianten, Zitate, Querbezüge) die Kodierung damit, die referentielle Integrität von Links zuverlässig verwalten zu können. Innovative Lösungsansätze werden für dieses Problem unter anderem entlang des Modells von Textvarianten-Graphen beschrieben (Schmidt 2008; Schmidt 2009; Schmidt/Colomb 2008:498) oder unter Verwendung von "Labelled Property Graph“-Systemen wie der Graphendatenbank Neo4J diskutiert (Kuczera 2016a, Kuczera 2016b). </p>
-<p style="text-align:left; ">An dieser beispielhaften Gegenüberstellung verschiedener Datenmodellierungsansätze einen Unterschied zwischen Standardverfahren/Best Practice und Innovation auszuloten, der bereits eine implizite Wertung von Innovation als „fortschrittlich“ mitmeint, griffe sicherlich zu kurz - gleichwohl spannt sich durch die in der Literatur diskutierten Anwendungsfälle durchaus ein Spannungsfeld auf: Einerseits belastet der Einsatz spezialisierter Datenbankmanagementsysteme<ref n="5" target="ftn5"/> die Anforderungen an Offenheit und Langzeitverfügbarkeit von zu speichernden Forschungsdaten; auch die Neumodellierung von zu erhebenden Forschungsdaten schneidet im Sinne der FAIR-Prinzipien (Wilkinson / Dumontier / Aalbersberg, 
-                    <hi rend="italic">et al.</hi> 2016) zunächst von Anschlussmöglichkeiten ab, sind doch neuartige Datenmodelle, möglicherweise eben noch nicht „interoperable“ und „reusable“. 
-                </p>
-<p style="text-align:left; ">Andererseits bedeutet auch das Anwenden bestehender 
-                    <hi rend="italic">best practices</hi> eine interpretative Einschränkung: Mit der Umsetzung standardisierter Auszeichnungsschemata, sei es TEI-XML, eine bestimmte RDF-Ontologie oder Datenbankstruktur lässt sich am Quellenmaterial nur beobachten, was sich innerhalb der Unterscheidungsmöglichkeiten des jeweiligen Schemas bezeichnen lässt. Die Praxis der XML-basierten Quellenannotation zeigt hier, dass gerade bei steigenden Komplexitätsgraden am Material sich der Focus stärker in Richtung auf Einhaltung der Schema-Compliance und weg von der Beschreibung neuer Merkmalskategorien bewegt. Gute Indikatoren für dieses Phänomen sind beispielsweise vermehrter Einsatz von Standoff-Markup, individuelle, d.h. projektbezogene Schema-Erweiterungen, aber auch steigende Mehrdeutigkeiten im Markup bestimmter Phänomene wie etwa Marginalien in Handschriften (Estill 2016).
-                </p>
-<p style="text-align:left; ">Dieses hier am Beispiel zweier Modellierungsstrategien angedeutete Spannungsverhältnis zwischen Standardisierung und Innovation lässt sich gerade im Rahmen des Projektdesigns produktiv nutzen, zwingt doch zum einen das Einführen digitaler Methoden in die Quellenerschliessung zu einer strengen Formalisierung des eigenen Forschungsprozesses, zum anderen gewinnt die Perspektive der Datenmodellierung (Owens 2011) eine größere Bedeutung. Beides hat nicht zuletzt auch entscheidenden Einfluss auf die Auswahl der zum Einsatz kommenden Technologie-Stacks.</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Fallbeispiel: Corpus Masoreticum</head>
-<p style="text-align:left; ">Am folgenden Fallbeispiel soll entwickelt werden, wie die skizzierten Überlegungen in einem konkreten Projekt umgesetzt werden können: Das von der Deutschen Forschungsgemeinschaft geförderte Langzeit-Editionsvorhaben „Corpus Masoreticum“, das an der Hochschule für Jüdische Studien Heidelberg angesiedelt ist, befasst sich mit dem sogenannten masoretischen Text in mittelalterlichen Bibelcodices. In der heutigen Forschung meint der Begriff der Masora alle meta-textuellen Elemente zum Konsonantentext der Hebräischen Bibel. Dazu gehören Grapheme, grammatische, syntaktische und statistische Notizen, Referenzen und Verweise. Ab dem 12. Jh. entstehen im Kulturraum Aschkenas (Nord-Frankreich und Deutschland) hebräische Bibel-Kodizes, in denen die Masora mit mikrographischer Schrift in ornamentalen Formen auf der Seite platziert wurde und als Fabelwesen, vor allem aber als zoomorphe Gestalten (Hunde, Pferde, Hasen, Gazellen, Vögel, Fische) und sogar als anthropomorphe Darstellungen gestaltet werden - hierfür wurde der Begriff der Masora figurata zur Unterscheidung von linearer Masora magna geprägt. Sie kann darüber hinaus Zitate aus Kommentarliteratur enthalten, die weit über die üblichen quantitativen und referentiellen Annotationen zum hebräischen Konsonantentext hinausgingen (vgl. Ms Vat. ebr. 14). Als Beispiel für in diesen masoretischen Metatexten häufig enthaltenes Listenmaterial lassen sich die sogenannten „Okhla-Listen“ herausgreifen, in denen als bewahrenswert gedachte Textphänomene und Schreibungen in unterschiedlichen Strukturen und Layouts dem Bibeltext mitgegeben werden und ihrerseits auf verschiedene extern überlieferte Rezensionen dieser Listen referieren (als Überblick: Liss/Petzold 2016). </p>
-<p style="text-align:left; ">Bereits oberflächliche Untersuchungen an diesem sehr speziellen Quellenmaterial zeigen, dass hier besonders komplexe Anforderungen an das zu definierende Editionsdatenmodell gestellt werden: Zu dokumentieren ist nicht nur linearer Text, sondern hochgradig vernetzte interne und externe Verweisstrukturen nicht nur mit Bezug auf Lesartvarianten, sondern auch auf Kommentarliteratur und Listenmaterial mit spezifischen Listenmustern, die auf extern tradiertes Listenwissen verweisen. Darüber hinaus bedarf die doppelte Lesbarkeit von Masora figurata als Text und Bild gleichermaßen in ihrem Bezug zum Bibeltext eines besonderen Dokumentationsverfahrens. </p>
-<p style="text-align:left; ">
-  <figure>
-    <graphic height="14.98423611111111cm" n="1001" rend="inline" url="231_final-84dbeaf5a3b007ca6bca4a12e163fe3d.png" width="15.991416666666666cm"/>
-  <head>Abbildung 1: Überblick über das beispielhafte mise-en-page von Bibeltext, Masora parva, Masora Magna und Masora figurata in Ms Vat ebr. 14, Fol. 85v. Prototyp einer Visualisierungssoftware für digitale Erschliessung hebräischer Bibelcodices. Quelle: <ptr target="http://bima.corpusmasoreticum.de/figurata/tor"/></head> 
-  </figure>
+<p>
+Spätestens mit der Herausbildung des Social Web (auch Web 2.0) seit
+knapp 15 Jahren, das nicht nur für die Verteilung von Information,
+sondern tatsächlich auch zur Mitgestaltung von Inhalten genutzt werden
+kann, hat das Internet die gesellschaftliche Kommunikationskultur
+(jedenfalls die derjenigen, die über verlässlichen Zugang verfügen und
+diesen nutzen) entscheidend gewandelt. Mit ResearchGate, Academia.edu,
+Mendeley und als neue, explizit nicht-kommerzielle Variante 
+ <ref target="https://hcommons.org/about/">HCommons</ref>
+ entstanden eine Reihe sozialer Medien spezifisch für den
+ wissenschaftlichen Bereich, über die Forschungsergebnisse
+ ausgetauscht und bewertet werden können und mit denen v.a. der
+ Kontakt zu Kolleg|inn|en aufgenommen werden kann (Sugimoto et
+ al. 2016). Jenseits dieser spezialisierten sozialen Medien nutzen
+ Wissenschaftler|innen auch die allgemeinen Plattformen wie Facebook
+ und Twitter, letzteres vor allem, um wissenschaftlichen Diskussionen
+ zu folgen, Forschung zu kommentieren und auf eigene
+ Veröffentlichungen - von Ergebnissen, jedoch auch von Daten und
+ Software - aufmerksam zu machen (vgl. van Noorden 2014). Über die
+ allgemein gebräuchlichen sozialen Medien ist es möglich, auch Laien
+ zu erreichen, sei es, um die 
+eigene Reichweite zu erhöhen oder um neue Nutzerkreise zu gewinnen, die mitunter sogar am Forschungsprozess partizipieren können. Entsprechende Programme wie <hi rend="italic">public engagement</hi>
+oder <hi rend="italic">Citizen</hi> bzw. <hi rend="italic">Crowd
+Science</hi> sind institutionell erwünscht (vgl. Deutsche Akademie der Technikwissenschaften et al. 2014) und innerhalb der Wissenschaften durchaus verbreitet (vgl. Franzoni &amp; Sauermann 2014).
 </p>
-<!-- <p style="text-align:left; ">Abbildung 1: Überblick über das beispielhafte mise-en-page von Bibeltext, Masora parva, Masora Magna und Masora figurata in Ms Vat ebr. 14, Fol. 85v. Prototyp einer Visualisierungssoftware für digitale Erschliessung hebräischer Bibelcodices. Quelle:  -->
-<!--                     <hi rend="Hyperlink"> -->
-<!-- <hi rend="italic">http://bima.corpusmasoreticum.de/figurata/tor</hi> -->
-<!-- </hi> -->
-<!-- </p> -->
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Implementierung von Modellen und Workflows</head>
-<p style="text-align:left; ">Durch die netzwerkartige Struktur der in die untersuchten Handschriften eingebetteten Metatexte lag es nahe, die Beschreibung von Text als Daten von vornherein als Graph zu modellieren; der „labelled-property“-Ansatz von Graphdatenbankensystemen wie Neo4J macht es durch seine sogenannte „whiteboard-friendliness“<ref n="6" target="ftn6"/> möglich, einfache Modellskizzen rasch in lauffähige digitale Speichermodelle zu implementieren. Im Editionsworkflow wird zunächst der Import von Handschriftendigitalisaten samt Metadaten über IIIF-kompatible Archive realisiert und die Handschriftendaten im Importprozess in Graphendaten als Knoten und Kanten umgewandelt. Ab hier werden über eine grafische Benutzeroberfläche erzeugte Texttranskriptionen kontextbezogen als Datenknoten verlinkt, wobei der Bezug zum Digitalisat über die Kodierung von Text als SVG-Textpfaden erhalten bleibt. Transkriptionen werden bei Bedarf weiter tokenisiert, um weitere Metadaten oder Kontextrelationen in den Graphen integrieren zu können. Aus dem so generierten Text- bzw. Knowledge Graph lassen sich Subsets (Datenaggregate) generieren, die im späteren Prozess sowohl als TEI-XML, RDF-Graph oder auch als angereicherte IIIF-Manifeste (Text, Übersetzung, Kommentar) ausgeliefert werden können. 
+<div type="div1">
+<head>Die öffentliche Publikation von Forschungsdaten</head>
+<p>
+Forschung – nicht zuletzt die in den Geisteswissenschaften – generiert große Mengen an Daten, Information und Wissen, die für (Teil)Öffentlichkeiten interessant und relevant sein können. 
+Nun ist die Publikation von Forschungsdaten – zusätzlich zu  den
+bisher gebräuchlichen  Publikationsmedien – zwar weithin erwünscht (siehe RFII 2016), zur Zeit allerdings alles andere als weitreichend umgesetzt. 
+Dafür können sehr viele unterschiedliche Ursachen ausgemacht werden
+(vgl. Kaden 2018). Auf der anderen Seite bieten soziale Medien, hier
+vor allem Twitter, die Möglichkeit, granulare  Informationshäppchen fein dosiert in den Timelines von Nutzer|inne|n erscheinen zu lassen und über diesen Weg deren Aufmerksamkeit zu gewinnen. 
+Die Nutzung von privatwirtschaftlichen Plattformen, die vorwiegend
+monetäre Interessen verfolgen,  für die Wissenschaftskommunikation ist
+nicht unproblematisch. Momentan existieren allerdings schlicht keine
+nicht-kommerziellen Alternativen Plattformen, über die man auf relativ
+simple Weise ein ähnlich großes Publikum erreichen könnte. 
 </p>
-<p style="text-align:left; ">
-  <figure>
-    <graphic height="10.766777777777778cm" n="1002" rend="inline" url="231_final-4c67f9f50f229990db0f82f55a5c3061.png" width="15.991416666666666cm"/>
-    <head>Abbildung 2: Beispielgraph anhand Cod. Vat. Ebr. 468, folio 1v, Darstellung in Neo4J. Quelle: Liedtke 2019 (in Vorbereitung) </head>
-  </figure>
+<p>
+  Ein Twitterprojekt, das weitreichende Beachtung fand bis hin zu einem <ref target="https://www.nytimes.com/2013/11/18/business/media/history-comes-to-life-with-tweets-from-the-past.html">Artikel in der New York Times</ref>
+, war das Projekt <ref target="https://9nov38.de/">@9nov38</ref> -
+heute vor 75 Jahren, in dem fünf Historiker|innen 
+die zeitliche Dimension in die Erzählung von Ereignissen der
+Reichspogromnacht über Twitter mit einbezogen. Nun ist die manuelle
+Erstellung einzelner Tweets sehr aufwendig und für größere Datensätze
+eigentlich nicht ohne weiteres zu leisten. Doch im Grunde liegen die
+Daten, die für derartige Projekte gesammelt wurden, im Normalfall
+bereits in einem strukturierten Format vor, etwa in einer Datenbank
+oder als Spreadsheet. Auf dieser Grundlage wurde nach einem Austausch
+mit den am @9Nov38-Projekt beteiligten Historiker|innen auf dem <ref
+target="https://www.histocamp.de/">Histocamp</ref> 2015 der Webservice
+<hi rend="italic">autoChirp</hi> entwickelt, zunächst im Rahmen eines Projektseminars, seither weiter betreut durch das <hi rend="italic">Institut für Digital Humanities</hi>
+ (IDH) in Köln (Hermes et al. 2017). autoChirp ist ein Webservice, der nicht auf eine spezifische Anwendung hin entwickelt wurde, sondern eine Plattform bietet, um diversen, u.a. historischen Projekten einen niedrigschwelligen Zugang zu für sie hilfreicher Technologie zu ermöglichen. In dem bewusst einfach gehaltenen Webinterface können strukturierte Daten hochgeladen werden, um sie automatisiert auf spezifizierte Zeitpunkte zu schedulen und zu veröffentlichen. Das erste Projekt, das autoChirp nutzte, war <ref target="https://twitter.com/NRWhistory">@NRWHistory</ref>, bei dem in einem Projektseminar von Düsseldorfer Historiker|innen die Entstehung des Landes NRW um 70 Jahre zeitversetzt nacherzählt wurde 
+(siehe <ptr target="http://nrwhistory.de/"/>). Kurz darauf wurde über
+autoChirp mit <ref
+target="https://twitter.com/TiwoliChirp">@TiwoliChirp</ref> ein
+weiterer Veröffentlichungskanal für bereits über eine Smartphone-App
+veröffentlichten Forschungsergebnisse der Literaturwissenschaft
+eingesetzt. 
 </p>
-<!-- <p style="text-align:left; ">Abbildung 2: Beispielgraph anhand Cod. Vat. Ebr. 468, folio 1v, Darstellung in Neo4J. Quelle: Liedtke 2019 (in Vorbereitung)</p> -->
-<p style="text-align:left; ">Die technischen Komponenten sind stark modularisiert und, wo möglich, als Microservices implementiert, so dass die einzelnen Ressourcen der Edition mit REST-APIs ausgeliefert und abgefragt werden können. Die Softwarearchitektur ist als Docker-Container-Umgebung in einer skalierbaren Cloud-Computing Landschaft realisiert, die vom heiCloud-Service des Rechenzentrums der Universität Heidelberg bereitgestellt wird, wobei die Rahmenbedingungen von Langzeitarchivierung und Nachnutzbarkeit in Zusammenarbeit mit Fachdiensten der Universitätsbibliothek Heidelberg<ref n="7" target="ftn7"/> gewährleistet werden.
-                </p>
+<p>
+Inzwischen greifen eine ganze Reihe von Projekten, die regelmäßige Tweets publizieren, auf autoChirp zurück. Das mit mehr als 4000 Followern mit Abstand reichweitenstärkste davon ist 
+<ref target="https://twitter.com/die_reklame">@Die_Reklame</ref>, mit
+dem Akteure aus dem Projekt  <ref
+target="https://9nov38.de/">@9Nov38</ref> 
+bemerkenswerte historische Werbeanzeigen twittern. Von Interesse sind
+diese, weil gerade Werbung extrem gegenwartsbezogen ist, was einen
+Einblick in die entsprechende Zeit der ursprünglichen Publikation gibt
+(vgl. Hoffmann 2018). Ein weiteres Projekt mit historischem Bezug ist
+<hi rend="italic">Verbrannte Orte</hi>  (<ref target="https://twitter.com/picturexnet">@pictureXnet</ref>), das die Orte von Bücherverbrennungen im Dritten Reich auf einer Karte sammelt 
+(siehe <ptr target="https://verbrannte-orte.de/"/>) und diese an den entsprechenden Jahrestagen der Verbrennungen vertwittert. Die Twitter-Plattform hilft hier dabei, Aufmerksamkeit zu generieren und auch Daten zu den Ereignissen zu sammeln. Einen sehr ähnlichen Ansatz verfolgt das Projekt <ref target="https://twitter.com/gedenkplaetze">@gedenkplaetze</ref>.
+</p>
+<p>
+  2019 jährte sich zum 250. Mal des Geburtstag von Alexander von Humboldt. In diesem Jahr von besonderem Interesse war daher seine Chronik 
+  (siehe <ptr target="https://edition-humboldt.de/chronologie/"/>), die von der Berlin-Brandenburgischen Akademie der Wissenschaften (BBAW) herausgegeben wird und inzwischen auch über autoChirp an Twitter angebunden wurde (Hermes 2017). Bemerkenswert hier ist, dass die Chronik unter den Twitter-Account <ref target="https://twitter.com/avhchrono">@AvHChrono</ref>
+  jahrestagsaktuell verfolgt werden kann, was von knapp 200 Leser|innen in Anspruch genommen wird. Diese tagesaktuelle Konsultation der Daten hat auch schon zur Feststellung von Fehlern geführt, die an die BBAW rückgemeldet und anschließend korrigiert wurden. Auch dieses Beispiel zeigt, dass Social Media keine Kommunikation auf der Einbahnstraße sein muss.
+</p>
 </div>
-<div rend="DH-Heading1" type="div1">
-<head>Ausblick</head>
-<p style="text-align:left; ">Bezieht man das Spannungsverhältnis von Standardisierung und Innovation digitaler Prozesse in den architektonischen Aufbau eines geisteswissenschaftlichen Forschungsprojektes ein, lässt sich diese Dynamik produktiv für die Entwicklung eigener Workflows nutzen und öffnet Spielräume für das Modellieren der eigenen Forschungsdaten. Die formale Beschreibung eines digitalen Datenmodells kann dann methodenkritisch dazu verwendet werden, die im Prozess anstehenden Ergebnisse wieder an die Ausgangsfragestellung rückzubinden und Modelle auf ihre Plausibilität zu prüfen. Die Umsetzung in Technologie-Stacks oder digitale Frameworks führt im gezeigten Fallbeispiel zu der Konstruktion einer quasi „hybriden“ Editionsumgebung und beschränkt den digitalen Anteil eines Projektes nicht nur auf das Ausliefern von „Tools“, sondern betrachtet den Aspekt der digitalen Transformation als integralen Bestandteil des gesamten Forschungsprozesses. </p>
+<div type="div1">
+<head>Die Perspektive der Kunstgeschichte</head>
+<p>Zwei der neuesten autoChirp-nutzenden Projekte kommen aus dem Bereich der Kunstgeschichte, einer bildbasierten Wissenschaft, deren Grundlage historische visuelle Objekte sind. Daher bedeutet die Einführung digitaler Methoden in das Fach vor allem die Entwicklung von Analyseprozessen, die sich auf Bild- und Metadaten beziehen (Klinke 2018). Diese werden nicht nur in der Forschung erzeugt, sondern kommen bisher vor allem aus den Sammlungsinstitutionen (GLAM).</p>
+<p>
 <figure>
-<graphic height="10.990466666666666cm" n="1003" rend="inline" url="231_final-66b2242539f0ac0063800c8fb1a298af.jpeg" width="13.674652777777778cm"/>
-    <head>Abbildung 3: Corpus Masoreticum als DH-Projekt (Schema). Quelle: Liedtke 2019 (in Vorbereitung)</head>
+  <graphic url="193_final-390166f7cb697310b3c506e55053bf9b.png"/>
+  <head> Abbildung 1: Ein Tweet aus dem Fundus des ClevelandFunFacts-Twitterbots</head>
 </figure>
-<!-- <p style="text-align:left; ">Abbildung 3: Corpus Masoreticum als DH-Projekt (Schema). Quelle: Liedtke 2019 (in Vorbereitung)</p> -->
+</p>
+<!-- <p>Abbildung 1: Ein Tweet aus dem Fundus des ClevelandFunFacts-Twitterbots</p> -->
+<p>Museen sind einer umfangreichen Transformation unterworfen, in der sie ihre Aufgaben unter dem Vorzeichen der Digitalisierung, Social Media und Virtual Reality neu definieren müssen (Kohle 2019). So eröffnet die Publikation der Sammlungsdaten als Open Data neue Möglichkeiten, die kulturellen Artefakte in neue, zeitgenössische Zusammenhänge zu bringen, in denen sie neue Bedeutungszuschreibungen erhalten können. Durch die Verwendung von autoChirp können offene Sammlungsdaten und globale Öffentlichkeit durch das visuelle Medium Twitter zusammengebracht werden. Auch hier erlaubt Twitter nicht nur die Kommunikation in eine Richtung, sondern auch die Partizipation des Publikums durch Kommentare, Retweets und das Einbinden in neue Kontexte.</p>
+<p>
+Zwei Beispiele aus dem Jahr 2019 machen dies deutlich: Der Tweetbot <ref target="https://twitter.com/cart_fun_facts?lang=en">@cart_fun_facts</ref>
+baut auf der Open Data-Strategie des Cleveland Museum of Art auf. Das
+1916 gegründete Museum ist eines der umfassendsten Kunstmuseen der
+Welt, das am 23. Januar 2019 bekannt gegeben hat, dass es sich ab
+sofort als eine Open-Access-Institution betrachtet, die die
+Bezeichnung Creative Commons Zero (CC0) für hochauflösende Bilder und
+Daten im Zusammenhang mit ihrer Sammlung verwendet (siehe <ptr
+target="http://www.clevelandart.org/open-access"/>). 
+ Die Öffentlichkeit hat damit jetzt die Möglichkeit, Bilder von mehr als 30.000 gemeinfreien Kunstwerken zu kommerziellen und nichtkommerziellen Zwecke zu teilen, neu zu mischen und wiederzuverwenden. Der von Harald Klinke (LMU München) entwickelte Tweetbot verwendet die in der Datenbank befindlichen “Fun Facts”, die täglich auf Flashcards zusammen mit den Abbildungen der Kunstwerke im Format eines visuellen Memes über den autoChirp-Service getwittert werden 
+(siehe Abbildung 1).
+</p>
+<p>
+Ein weiteres Beispiel ist der auf der Digital Art History Summer School 2019 in Malaga (DAHSS) durch Studierende entwickelte Tweetbot 
+<ref target="https://twitter.com/thyssenmlgbot">@thyssenmlgbot</ref>. Dieser twittert die Werke des dortigen Museum Carmen Thyssen unter Zuhilfenahme von NLP-Techniken und autoChirp, wodurch die Beschreibungstexte auf relevante Topics untersucht und diese in Hashtags umgewandelt werden. Dieses Projekt hat einerseits gezeigt, wie Studierende mithilfe von digitalen Kompetenzen einer GLAM-Institution helfen können, ihre Werke einer breiteren Öffentlichkeit zu vermitteln. Andererseits, wie diese Vermittlung einen Rückkanal erhalten kann, der es dem Publikum erlaubt, auf die Werke zu reagieren (beispielsweise durch in die Tweets integrierte Frage nach der vermuteten Entstehungszeit des Werks). Auf diese Weise können auch Werke, die üblicherweise nicht in der Ausstellung gezeigt werden, sondern im Depot verbleiben, sichtbar gemacht werden. Ein Online-Tool wie autoChirp ist dafür ein Hilfsmittel, das einen niederschwelligen Zugang zu neuen Formen der digitalen Museumskommunikation ermöglicht und deshalb gerade auch in der Lehre eingesetzt werden kann.
+</p>
+</div>
+<div type="div1">
+<head>autoChirp und autoPost</head>
+<p>
+Das IDH betreibt inzwischen neben autoChirp zur automatisierten Veröffentlichung auf Twitter auch <hi rend="italic">autoPost</hi>
+für analoge Aufträge für Facebook-Seiten. Beide Services basieren auf
+Spring, einem quelloffenen Java-Framework für Web-Anwendungen.
+Der Quellcode ist unter Open Source-Lizenz (<hi rend="italic">Eclipse
+Public Licence</hi>) auf GitHub beziehbar (siehe 
+<ptr target="https://github.com/DH-Cologne/autoChirp"/> und <ptr
+target="https://github.com/DH-Cologne/auto-post"/>),
+so dass eigene Services betrieben werden können. Das IDH stellt aber
+auch beide Services für alle Interessierten zur Verfügung (siehe 
+<ref
+    target="https://autochirp.spinfo.uni-koeln.de/">https://autochirp.spinfo.uni-koeln.de</ref>
+und <ptr target="https://autopost.spinfo.uni-koeln.de/home"/>). Bei der Implementation wurde vor allem auf Modularität und Erweiterbarkeit geachtet, um das Programm ohne größeren Aufwand auf weitere Social Media Plattformen, wie z.B. Instagram portieren zu können, sofern diese eine entsprechende API (Application-Programming-Interface) anbieten.
+</p>
+<p>
+<figure>
+<graphic url="193_final-17bdd37933ab46642cd190b4288a8042.png"/>
+  <head> Abbildung 2: Screenshot des autoPost-Services, mit dem große
+  Mengen von geplanten Facebook-Posts realisiert  werden können (hier zum Tiwoli-Projekt).</head>
+</figure>
+</p>
+<!-- <p> -->
+<!-- Abbildung 2: Screenshot des autoPost-Services, mit dem große Mengen -->
+<!-- von  geplanten Facebook-Posts realisiert werden können (hier zum Tiwoli-Projekt). -->
+<!-- </p> -->
+<p>
+<anchor xml:id="id_docs-internal-guid-eb924c9b-7fff-96a8-c62c-b686cd7051ee"/>Bei der Datenpersistenz wurde bei autoPost auf eine schwergewichtigere, aber performantere Datenbank gesetzt, da die Erfahrung mit autoChirp gezeigt hat, dass ein freier Scheduling-Service sehr gut angenommen wird und die Zahl der Datenbankeinträge dementsprechend groß werden kann. Um Nutzer|inne|n von autoChirp die Möglichkeit zu bieten, ihre Inhalte, die in autoChirp schon geplant sind, auch auf Facebook zu veröffentlichen, wurde für autoChirp eine Export-Funktion angelegt. Tweets können gruppenweise als TSV-Datei heruntergeladen und in autoPost als Facebook Posts importiert werden.
+                </p>
+</div>
+<div rend="DH-Heading" type="div1">
+<head>Zwischenfazit zum Nutzerzuspruch</head>
+<p>Während autoChirp schon seit 2016 läuft und für knapp 150 Nutzer|innen-Accounts bereits über 17.500 Tweets veröffentlicht hat (weitere 10.000 Tweets sind terminiert, aktuelle Zahlen erhält man über die 
+<ref
+    target="https://autochirp.spinfo.uni-koeln.de/stats">Statistik-Seite</ref>des
+Services), startete autoPost erst im Herbst 2019.
+Mit <ref
+target="https://www.facebook.com/التاريخ-السوري-المعاصر-Syrian-Modern-History-480143552037928/"><hi
+rend="italic">Syrian Modern History</hi></ref> und
+<ref target="https://www.facebook.com/ph.weekly/"><hi rend="italic">Public History Weekly</hi></ref> konnten aber bereits zwei wissenschaftlich betreute Accounts mit kombiniert über 36.000 Facebook-Abonnent|inn|en gewonnen werden, die autoPost täglich zur Bewerbung von Archiv-Artikeln nutzen. 
+</p>
+<p>Die Services autoChirp und autoPost sind Beispiele, an denen sich eine der wichtigen Aufgaben für die Digital Humanities spezifizieren lässt: Die Entwicklung erfolgte, weil Wissenschaftler|innen (nicht nur) aus den Geisteswissenschaften einen Bedarf hatten, ihre Daten auf Social Media Plattformen zu teilen. Dafür benötigten sie Tools, die eine niedrige Einstiegsschwelle haben und ihnen dabei Arbeit abnehmen können, wenn sie Aspekte ihrer Forschung öffentlich sichtbar machen und Studierende sowie die interessierte Öffentlichkeit in den Forschungsprozess (hier zuvorderst: In die Datensammlung) einbinden wollen. Insofern verstehen wir die Entwicklung von autoChirp und autoPost als Hilfsmittel zur Etablierung einer offenen, transparenten und partizipativen Wissenschaft (Open Science). Die Erfahrungen mit den hier vorgestellten Tools zeigt, dass die Methoden sowohl von den Wissenschaftler|inne|n, als auch vom Publikum angenommen werden und mithin das Potenzial haben, den Geisteswissenschaften eine größere Präsenz in der Öffentlichkeit zu ermöglichen und damit eine höhere Relevanz in der Gesellschaft zu erzielen.</p>
 </div>
 </body>
 <back>
-  <div type="notes">
-    <note n="1" rend="footnote text" xml:id="ftn1">
-      <ref target="http://etcbc.nl">http://etcbc.nl</ref>
-    </note>
-    <note n="2" rend="footnote text" xml:id="ftn2">
-      <ref target="http://tanach.us/">http://tanach.us/</ref>
-    </note>
-    <note n="3" rend="footnote text" xml:id="ftn3">
-      <ref target="http://dev.digitalmishnah.umd.edu/">http://dev.digitalmishnah.umd.edu/</ref>
-    </note>
-    <note n="4" rend="footnote text" xml:id="ftn4">
-      <ref target="https://wiki.de.dariah.eu/display/publicde/3.5+Judaistik+und+Hebraistik">https://wiki.de.dariah.eu/display/publicde/3.5+Judaistik+und+Hebraistik</ref>
-    </note>
-    <note n="5" rend="footnote text" xml:id="ftn5">
-      Die auch im nachfolgenden Fallbeispiel verwendete Community-Version von Neo4J ist unter einer GPLv.3 Lizenz als Open Source verfügbar, ist also im strengen Sinne keine proprietäre Software – die Entwicklung wird aber massgeblich von Neo4J Inc. als kommerziellem Unternehmen vorangetrieben.
-    </note>
-    <note n="6" rend="footnote text" xml:id="ftn6">
-      <ref target="https://neo4j.com/developer/guide-data-modeling/#whiteboard-friendly">https://neo4j.com/developer/guide-data-modeling/#whiteboard-friendly</ref>
-    </note>
-    <note n="7" rend="footnote text" xml:id="ftn7">
-      <ref target="https://heidata.uni-heidelberg.de/">https://heidata.uni-heidelberg.de/</ref>
-    </note>
-  </div>
-  <div type="bibliogr">
+<div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
-<bibl style="text-align:left; ">
-<hi rend="bold">Estill, Laura</hi> (2016): “Encoding the Edge: Manuscript Marginalia and the TEI.” 
-                        <hi rend="italic">Digital Literary Studies</hi> 1, no. 1. https://journals.psu.edu/dls/article/view/59715/59912.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Kuczera, Andreas</hi> (2016a): “Graphbasierte Digitale Editionen.” Blog. 
-                        <hi rend="italic">Mittelalter.</hi> Interdisziplinäre Forschung Und Rezeptionsgeschichte (blog), April 19, 2016. https://mittelalter.hypotheses.org/7994.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Kuczera, Andreas</hi> (2016b): “Digital Editions beyond XML – Graph-Based Digital Editions.”, in: 
-                        <hi rend="italic">Proceedings of the 3rd HistoInformatics Workshop on Computational History</hi> (HistoInformatics 2016), edited by Marten Düring, Adam Jatowt, Johannes Preiser-Kappeller, and Antal van Den Bosch. Krakow, 2016. http://ceur-ws.org/Vol-1632/paper_5.pdf.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Liedtke, Clemens</hi> (2019): 'How am I supposed to read this?' Challenges and Opportunities of Medieval Western Masorah as a Digital Scholarly Edition", in: J. Leipziger/H. Liss/K. J. Petzold (eds.), 
-                        <hi rend="italic">Philology and Aesthetics:</hi> Figurative Masorah in Western European Manuscripts (Judentum und Umwelt), Frankfurt am Main et al.: Peter Lang (in Vorbereitung)
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Liss, Hanna / Petzold, Kay Joe</hi> (2016): “Die Erforschung der westeuropäischen Bibeltexttradition als Aufgabe der Jüdischen Studien. Ein halbes Jahrhundert Forschung und Lehre über das Judentum in Deutschland.“, in: 
-                        <hi rend="italic">Orchidee oder Mimose.</hi> Versuch einer Standortbestimmung der Jüdischen Studien, edited by Andreas Lehnardt and Guiseppe Veltri. Berlin et al, 2016.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Owens, Trevor</hi> (2011): “Defining Data for Humanists: Text, Artifact, Information or Evidence?” 
-                        <hi rend="italic">Journal of Digital Humanities</hi> 1, no. 1. http://journalofdigitalhumanities.org/1-1/defining-data-forhumanists-by-trevor-owens/.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Pierazzo, Elena</hi> (2017): “Facsimile and Document-Centric Editing.”, in: 
-                        <hi rend="italic">Creating a Digital Scholarly Edition with the Text Encoding Initiative</hi>, edited by Marjorie Burghart. https://www.digitalmanuscripts.eu/wp-content/uploads/sites/6/2017/09/05-Digital-Facsimiles-EP.pdf.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Pousttchi, Key</hi> (2017): “Digitale Transformation.”, in: 
-                        <hi rend="italic">Enzyklopädie der Wirtschaftsinformatik.</hi> http://www.enzyklopaedie-der-wirtschaftsinformatik.de/lexikon/technologien-methoden/Informatik--Grundlagen/digitalisierung/digitale-transformation/digitale-transformation/?searchterm=digitale%20transformation.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Schmidt, Desmond</hi> (2008): “What’s a Multi-Version Document?” 
-                        <hi rend="italic">Multi-Version Documents</hi> (blog), May 3. http://multiversiondocs.blogspot.com/2008/03/whats-multi-version-document.html.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Schmidt, Desmond / Colomb, Robert</hi> (2009): “A Data Structure for Representing Multi-Version Texts Online.” 
-                        <hi rend="italic">International Journal of Human-Computer Studies</hi> 67, no. 6 (June 2009): 497–514. https://doi.org/10.1016/j.ijhcs.2009.02.001.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Schmidt, Desmond</hi> (2009): “‘Merging Multi-Version Texts: A Generic Solution to the Overlap Problem.’ Presented at Balisage: The Markup Conference 2009, Montréal, Canada, August 11 - 14, 2009,” Proceedings of Balisage: The Markup Conference 2009, 2 (2009). 
-                        <ref target="https://doi.org/10.4242/BalisageVol3.Schmidt01">https://doi.org/10.4242/BalisageVol3.Schmidt01</ref>.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Wilkinson, M. / Dumontier, M. / Aalbersberg, I. </hi>
-<hi rend="italic bold">et al.</hi>
-<hi rend="bold"> </hi>(2016): “The FAIR Guiding Principles for scientific data management and stewardship.” 
-                        <hi rend="italic">Sci Data</hi> 3
-                        <hi rend="bold">, </hi>160018. doi:10.1038/sdata.2016.18
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Zaagsma, Gerben</hi> (2018): “#DHJewish – Jewish Studies in the Digital Age.” 
-                        <hi rend="italic">Medaon.</hi> Magazin für Jüdisches Leben in Forschung und Bildung, no. 12: 1–11.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Zundert, Joris J. van / Andrews, Tara L.</hi> (2016): “Apparatus vs. Graph: New Models and Interfaces for Text.”, in: 
-                        <hi rend="italic">Interface Critique</hi>, edited by Florian Hadler and Joachim Haupt, 139:183–206. Berlin: Kulturverlag Kadmos.
-                    </bibl>
+<bibl>
+  <hi rend="bold">Deutsche Akademie der Technikwissenschaften / Union der Deutschen Akademien der Wissenschaften / Deutsche Akademie der Naturforscher Leopoldina </hi>
+  (2014): “Zur 
+  Gestaltung der Kommunikation zwischen Wissenschaft, Öffentlichkeit und den Medien. Empfehlungen vor dem Hintergrund aktueller Entwicklungen.” München: acatech – Deutsche Akademie der Technikwissenschaften e.V. / Mainz: Union der Deutschen Akademien der Wissenschaften e.V. / Halle (Saale): Deutsche Akademie der Naturforscher Leopoldina e.V. – Nationale Akademie der Wissenschaften.
+</bibl>
+<bibl>
+  <hi rend="bold">Fischer, Frank / Strötgen, Jannik</hi> (2015): 
+  „When Does German Literature Take Place? – On the Analysis of Temporal Expressions in Large Corpora”, in: 
+  <hi rend="italic">Proceedings of DH2015</hi>, Sydney: Alliance of Digital Humanities Organisations.
+</bibl>
+<bibl>
+  <hi rend="bold">Franzoni, Chiara / Sauermann, Henry </hi>
+  (2014): “Crowd science: The organization of scientific research in open collaborative projects”, in: 
+  <hi rend="italic">Research Policy</hi>, Amsterdam: Elsevier Volume 43/1, 1-20.
+</bibl>
+<bibl>
+  <hi rend="bold">Hermes, Jürgen</hi>
+  (2017): „Neu: Alex von Humboldt auf Twitter!", in 
+  <hi rend="italic">TEXperimenTales</hi>, 17/08/2017,
+  <ptr target="https://texperimentales.hypotheses.org/2069"/>.
+  [letzter Zugriff 18.12.2019]
+</bibl>
+<bibl>
+  <hi rend="bold">Hermes, Jürgen / Hoffmann, Moritz / Eide, Øyvind / Geduldig, Alena / Schildkamp, Philip</hi>
+  (2017): „Twhistory with autoChirp" in: 
+  DHd 2017 Bern – Digitale Nachhaltigkeit. Abstractband. Bern: DHd, 277ff.
+</bibl>
+<bibl>
+  <hi rend="bold">Hoffmann, Moritz</hi>
+  (2018): „Von Funden und Schwellen: Die Reklame“, 
+  <ptr target="https://www.moritz-hoffmann.de/2018/04/13/von-funden-und-schwellen-die-reklame/"/>
+  [letzter Zugriff 18.12.2019]
+</bibl>
+<bibl>
+  <hi rend="bold">Kaden, Ben</hi>
+  (2018): „Warum Forschungsdaten nicht publiziert werden“, in: 
+  <hi rend="italic">LIBREAS, Library Ideas</hi>  33.
+</bibl>
+<bibl>
+  <hi rend="bold">Klinke, Harald</hi>
+  (2018): „Daten­analyse in der Digitalen Kunstgeschichte. Neue
+  Methoden in Forschung und Lehre und der Einsatz des DHVLab in der
+  Lehre”, in: Harald Klinke (Hg.): 
+  <hi rend="italic">#DigiCampus. Digitale Forschung und Lehre in den Geisteswissenschaften</hi>, München, 2018, S. 19-34.
+</bibl>
+<bibl>
+  <hi rend="bold">Kohle, Hubertus</hi>
+  (2019): 
+  <hi rend="italic">Museen digital. Eine Gedächtnisinstitution sucht den Anschluss an die Zukunft</hi>. Heidelberg: Heidelberg University Publishing.
+</bibl>
+<bibl>
+  <hi rend="bold">RfII – Rat für Informationsinfrastrukturen </hi>
+  (2016): Leistung aus Vielfalt. Empfehlungen zu Strukturen, Prozessen und Finanzierung des Forschungsdatenmanagements in Deutschland, Göttingen. URL: 
+  <ptr target="http://www.rfii.de/?p=1998"/> [letzter Zugriff 18.12.2019]
+</bibl>
+<bibl>
+  <hi rend="bold">Schwarz, Ingo</hi>
+  (2019): „Zur Alexander von Humboldt-Chronologie”, in Ottmar Ette
+  (Hg): 
+  <hi rend="italic">edition humboldt digital</hi>, hg. v. Berlin-Brandenburgische Akademie der Wissenschaften, Berlin. Version 5 vom 11.09.2019. URL: 
+  <ptr target="https://edition-humboldt.de/v5/H0000002"/> [letzter Zugriff 18.12.2019]
+</bibl>
 </listBibl>
 </div>
 </back>

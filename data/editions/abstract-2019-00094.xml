@@ -1,29 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="239_final-KRAUTTER_Benjamin_Klassifikation_von_Titelfiguren_in_deutsch" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="138_final-DONIG_Simon_Vom_Bild_zum_Text_und_wieder_zurück" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Klassifikation von Titelfiguren in deutschsprachigen Dramen und Evaluation am Beispiel von Lessings „Emilia Galotti“</title>
+                <title type="full">
+                    <title type="main">Vom Bild zum Text und wieder zurück</title>
+                    <title type="sub"/>
+                </title>
                 <author>
                     <persName>
-                        <surname>Krautter</surname>
-                        <forename>Benjamin</forename>
+                        <surname>Donig</surname>
+                        <forename>Simon</forename>
                     </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>Benjamin.Krautter@ilw.uni-stuttgart.de</email>
+                    <affiliation>Universität Passau, Deutschland</affiliation>
+                    <email>simon.donig@uni-passau.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Pagel</surname>
-                        <forename>Janis</forename>
+                        <surname>Christoforaki</surname>
+                        <forename>Maria</forename>
                     </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>janis.pagel@ims.uni-stuttgart.de</email>
+                    <affiliation>Universität Passau, Deutschland</affiliation>
+                    <email>maria.christoforaki@uni-passau.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bermeitinger</surname>
+                        <forename>Bernhard</forename>
+                    </persName>
+                    <affiliation>Universität Passau, Deutschland</affiliation>
+                    <email>bernhard.bermeitinger@uni-passau.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Handschuh</surname>
+                        <forename>Siegfried</forename>
+                    </persName>
+                    <affiliation>Universität St. Gallen, Schweiz</affiliation>
+                    <email>siegfried.handschuh@unisg.ch</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2015-10-04T22:02:00Z</date>
+                    <date>2019-01-13T23:17:13.082609345</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -36,7 +55,7 @@
                 </t:address>
             </publicationStmt>
             <sourceDesc>
-                <p>Converted from a Word document</p>
+                <p>Converted from an OASIS Open Document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -55,337 +74,313 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Dramen</term>
-                    <term>Klassifikation</term>
-                    <term>maschinelles Lernen</term>
-                    <term>Titelfiguren</term>
-                    <term>Literatur</term>
+                    <term>Deep Learning</term>
+                    <term>Neoclassica</term>
+                    <term>Distributional Semantics</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
                     <term>Inhaltsanalyse</term>
-                    <term>Strukturanalyse</term>
-                    <term>Netzwerkanalyse</term>
-                    <term>Literatur</term>
+                    <term>Artefakte</term>
+                    <term>Bilder</term>
+                    <term>Projekte</term>
+                    <term>Text</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einführung:</head>
-                <p>In seiner Studie zu Gotthold Ephraim Lessings bürgerlichem Trauerspiel 
-                    <hi rend="italic">Emilia Galotti</hi> (1772) formuliert Gisbert Ter-Nedden: „Der erste Akt war der Selbstdarstellung des Prinzen und der höfischen Partei gewidmet; der zweite gehört den Galottis, und zwar zunächst Odoardo als dem Gegenspieler des Prinzen: nach dem Machthaber betritt der Tugendheld die Bühne“ (Ter-Nedden 1986: 189). Die Titelfigur Emilia geht in seiner Darstellung im Kollektiv der Galottis unter. Prinz und Vater Odoardo werden hingegen als die beiden Gegenspieler hervorgehoben. Sind sie also gemäß Ter-Nedden Protagonist und Antagonist, die Helden und Hauptfiguren des Stücks?
-                </p>
-                <p>Zur Einteilung und Abstufung des Dramenpersonals mithilfe quantitativ erfassbarer Kriterien führt Manfred Pfister in den späten 1970er Jahren die Terminologie der „quantitative[n] Dominanzrelationen“ (Pfister 2001 [1977]: 226) ein. Er benennt hierfür zwei Kriterien, die Haupt- von Nebenfiguren unterscheiden sollen: die „Dauer der Bühnenpräsenz einer Figur“ (ebd.) und den Anteil der Figurenrede am Haupttext. Laut Pfister fehle es allerdings an einer differenzierten Handlungsgrammatik, die auch funktionale Relationen – etwa die aktiven Handlungsschritte von Figuren – operationalisieren könne (vgl. ebd.: 227). Er wirbt letztlich für einen nicht weiter explizierten multidimensionalen Ansatz, der die quantitative Einteilung des Personals zuverlässiger und feingliedriger machen soll.</p>
-                <p>An diese Idee der quantitativen und zugleich multidimensionalen Einteilung dramatischer Figuren versuchen wir im Folgenden mittels digitaler Analysetechniken anzuschließen (vgl. Fischer u.a. 2018). Dazu fassen wir das Problem der Figureneinteilung als Klassifikationsaufgabe. Zielsetzung ist es, titelgebende Dramenfiguren mit maschinellen Lernverfahren automatisch auszuzeichnen. Dadurch sind wir in der Lage, die genauen Einflussfaktoren zu prüfen und die Ergebnisse transparent zu evaluieren. Nach unserem Dafürhalten sind es zumindest drei Gründe, die titelgebende Dramenfiguren zu einer geeigneten Zielkategorie der Klassifikation machen. Den möglichen alternativen Konzepten mangelt es erstens an einer konsensfähigen Definition und Differenzierung. Das gilt insbesondere für die Begriffe ‚HeldIn‘ und ‚ProtagonistIn‘, die teilweise synonym verwendet werden (vgl. etwa Plett 2002: 21f., Jannidis 2004: 90, 104f.). Überdies ist gerade das Heldenkonzept stark von literaturgeschichtlichen Entwicklungen geprägt und somit historisch variabel (vgl. etwa Alt 1994: 167f., Platz-Waury 2007 [1997]: 591, Martus 2011: 15). Die intersubjektive Annotation der Figurenkategorien bereitet zweitens Schwierigkeiten, vor allem dann, will man ProtagonistInnen oder HeldInnen mit Blick auf ihre Bedeutung für die Handlung bzw. den zentralen Konflikt des Dramas bestimmen.<hi rend="superscript">1</hi> Zieht man dagegen die gegebenen Titelfiguren der Texte heran, entfällt dieses Annotationsproblem. Drittens lässt sich 
-                    <hi rend="italic">a priori</hi> annehmen, dass titelgebende Figuren Eigenschaften verkörpern und im Text repräsentieren, die sie in vielen Fällen auch zu Hauptfiguren der Handlung machen.<hi rend="superscript">2</hi>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Stand der Forschung:</head>
-                <p>In der aktuellen Forschung folgen mehrere Studien der von Wladimir Propp (1986 [1928]) am russischen Volksmärchen eingeführten Figurentypologisierung, um literarische Figuren auf formaler oder automatischer Basis (sub-)klassifizieren zu können (etwa Declerck / Koleva / Krieger 2012 oder Finlayson 2017). Moretti (2011 und 2013) nutzt indessen Netzwerkdarstellungen von Shakespeares 
-                    <hi rend="italic">Hamlet</hi> für eine Neukontextualisierung der dramatischen Figureninteraktion. Mit seiner Formalisierung argumentiert er gegen die Dichotomie zwischen ProtagonistInnen und Nebenfiguren und für netzwerkanalytische Zentralitätsmaße.<hi rend="superscript">3</hi> Frank Fischer u.a. (2018) konzentrieren sich auf die dramengeschichtliche Einordnung von Protagonisten in deutschsprachigen Stücken (vgl. auch Algee-Hewitt 2017). Sie nutzen einen multidimensionalen Ansatz, der Netzwerkmetriken mit zählbasierten Maßen kombiniert. Im Gegensatz dazu versuchen Jannidis u.a. (2016) Hauptfiguren in deutschsprachigen Romanen automatisch zu klassifizieren. Als Goldstandard verwenden sie annotierte Zusammenfassungen der Romane.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Versuchsaufbau:</head>
-                <p>Das untersuchte Korpus umfasst 38 Dramen mit mindestens einer Titelfigur, deren Veröffentlichung sich von der Mitte des 18. bis ins frühe 20. Jahrhundert erstreckt.<hi rend="superscript">4</hi>
-                    <hi rend="italic">Tabelle</hi> 1 gibt einen Überblick über das Verhältnis titelgebender und nicht-titelgebender Figuren. Demnach werden lediglich drei Prozent aller Figuren durch die Titel der Stücke repräsentiert. Bei der Auswahl haben wir darauf geachtet, sowohl ein breites Spektrum literarischer Epochen als auch verschiedene dramatische Strukturen zu berücksichtigen. August Wilhelm Schlegels 
-                    <hi rend="italic">Ion</hi> kommt etwa mit sechs Figuren aus, Grabbes 
-                    <hi rend="italic" xml:space="preserve">Napoleon oder Die hundert Tage </hi>sieht 183 Figuren vor. Schillers 
-                    <hi rend="italic" xml:space="preserve">Die Verschwörung des Fiesko zu Genua </hi>umfasst insgesamt 75 Szenen, Hofmannsthals 
-                    <hi rend="italic">Elektra</hi> lediglich fünf.
-                </p>
+            <p>In den letzten Jahren hat die Anwendung von Verfahren der Computer Vision im Bereich der digitalen Kunstgeschichte und Objektforschung erheblich an Bedeutung gewonnen (Donig, Handschuh, Hastik, Kohle, Ommer, Radisch, Rehbein 2018). Dabei stellt das Schließen der semantischen Lücke eine zentrale Herausforderung für (teil-)automatisierte algorithmische Verfahren dar. Hier schlagen wir einen multimodalen Zugang vor, in dem wir eine fruchtbringende Lösung des Problems sehen und den wir im Kontext des Neoclassica-Projekts entwickeln.</p>
+            <p>Neoclassica ist ein Rahmenwerk zur Erforschung der ästhetischen Kultur des Klassizismus (ca. 1760-1860), das Methoden und Instrumente zur Erforschung von Architektur und Raumkunst bereitstellt (Donig, Christoforaki, Bermeitinger, Handschuh 2017). Dazu bedient es sich eines Ansatzes des Wissensrepräsentation in der Form einer eigenen Ontologie (Donig, Christoforaki, Handschuh 2016) sowie datengetriebener Forschungsinstrumente aus dem Bereich der künstlichen Intelligenz, hier insbesondere der Klassifizierung von Bildern und der semantischen Segmentierung von Bildinhalten mit Verfahren des Deep Learning (Donig, Christoforaki, Bermeitinger, Handschuh 2018).</p>
+            <p>Algorithmische Werkzeuge bedürfen qualitativer Metriken, um ihre Verlässlichkeit und Reproduzierbarkeit abzubilden. Was aber, wenn die Klassifizierung nicht auf einer Serie flacher Label beruht, sondern wenn die Grundlage für die Klassifizierung komplexe Konzepte sind, die durch semantische Hierarchien verbunden werden wie im Fall einer Annotation von Bilddaten mit einer Ontologie?</p>
+            <p>
+                <hi rend="color(#000000)">Bei unserer Arbeit an Neoclassica sind wir diesem Problem wiederholt begegnet. Wenn wir zum Beispiel einen Armlehnstuhl (Abb.1) </hi>
+                <anchor xml:id="id_30j0zll"/>
+                <hi rend="color(#000000)">in einem Bildwerk annotiert haben, dann weist das Konzept ohne Zweifel Gemeinsamkeiten mit dem eines Stuhls auf. In der Ontologie wird dieser Umstand dadurch ausgedrückt, dass </hi>
+                <hi rend="italic">Stuhl</hi>
+                <hi rend="color(#000000)"> eine übergeordnete Klasse zur Klasse </hi>
+                <hi rend="italic">Armlehnstuhl</hi>
+                <hi rend="color(#000000)"> ist (Abb.2).</hi>
+            </p>
+            <p>
                 <figure>
-                    <graphic n="1001" width="15.345833333333333cm" height="1.727675cm" url="239_final-14c08a26782a1d3300817bf3cc9abd84.jpeg" rend="inline"/>
-					<head>
-						<lb/>Tabelle 1. Zahl der Titelfiguren und nicht-Titelfiguren.
-					</head>
+                    <graphic url="138_final-0886a0b3ec1b4e8e2d2b1ddb44374a68.jpg"/>
+                    <head>
+                        <lb/>Abb.1 Die Bounding-box um das Möbel spiegelt die Konfidenzrate des Algorithmus wieder.
+                    </head>
                 </figure>
+            </p>
+            <p>
+                <hi rend="color(#000000)">Während für einen menschlichen Beobachter ein Armlehnstuhl eine spezielle Unterkategorie von Stühlen darstellt, ist für die von uns genutzten Algorithmen diese Zuordnung dagegen falsch - </hi>
+                <anchor xml:id="id_1fob9te"/>
+                <hi rend="color(#000000)">bezogen auf </hi> die von uns ursprünglich vorgenommenen Annotationen-,
+                <hi rend="color(#000000)"> da sie die elementare semantische Beziehung zwischen den Konzepten nicht berücksichtigen.</hi>
+            </p>
+            <p>
+                <figure>
+                    <graphic url="138_final-5027a37e41a9827d09bc21b38e195e05.png"/>
+                    <head>
+                        <lb/>Abb.2 
+                        <hi rend="color(#000000)">Neoclassica-Ontologie: Die </hi>
+                        <hi rend="italic">Chair</hi>
+                        <hi rend="color(#000000)">-Subhierarchie</hi>
+                    </head>
+                </figure>
+            </p>
+            <p>
+                <hi rend="color(#000000)">Ein vergleichbares Problem stellt der Umgang mit Geschwisterklassen einer formalen Wissensrepräsentation dar. Armlehnstühle mit offenen </hi>
+                (<hi rend="italic">Fauteuil</hi>)
+                <hi rend="color(#000000)"> und geschlossenen </hi>
+                (<hi rend="italic">Bergère</hi>)
+                <hi rend="color(#000000)"> Armlehnen sind sich in vielen Aspekten ähnlich. Dennoch ist dem Klassifizierungsprozess dieses Verwandtschaftsverhältnis zunächst nicht zu eigen (Abb.3).</hi>
+            </p>
+            <p>
+                <figure>
+                    <graphic url="138_final-6f3432f49472ddc8bc4493f2ef9a19c3.jpg"/>
+                    <head>
+                        <lb/>Abb.3 Geschwisterklasse mit hoher Konfidenzrate klassifiziert
+                    </head>
+                </figure>
+            </p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Vorgehensweise</head>
+                <p>Wir stellen hier einen multimodalen Zugang vor, der einen Ansatz aus dem NLP, einem Bereich, wo solche Beziehungen schon lange eingehend studiert worden sind (Indurkhya, Damerau 2010: 120), (Miller 1995), mit einem Ansatz der Computer Vision verbindet - dem Deep Learning visueller Merkmale.</p>
                 <p>
-                    <lb/>Für das maschinelle Klassifikationsverfahren nutzen wir mit 
-                    <hi rend="italic" xml:space="preserve">Random Forest </hi>(Ho 1995, Breiman 2001) einen Algorithmus, der Entscheidungsbäume zu einem Ensemble fügt und die Parameter mittels mathematischer Regression berechnet.<hi rend="superscript">5</hi> Da die einzelnen erlernten Entscheidungsbäume eingesehen werden können, ist 
-                    <hi rend="italic">Random Forest</hi> auch dafür geeignet, die entscheidungstragenden Merkmale näher zu untersuchen. Vorausgehende Experimente mit 
-                    <hi rend="italic">Support Vector Machines</hi> (SVM) erzielten zudem schlechtere Ergebnisse. 
-                    <hi rend="italic">Random Forest</hi> scheint besser geeignet zu sein, um viele und potentiell korrelierende Features zu verarbeiten.
+                    <hi rend="color(#000000)">Dieser Zugang beruht auf der </hi>
+                    <hi rend="italic">distributional hypothesis</hi>,
+                    <hi rend="color(#000000)"> die postuliert, dass eine Korrelation zwischen der</hi> Verteilung von Wörtern und ihrer semantischen Eigenschaften
+                    <hi rend="color(#000000)"> in einem Textkorpus besteht (Rubenstein &amp; Goodenough 1965), was erlaubt, mit Hilfe ersterer die zweiten abzuschätzen (Sahlgren, 2008). Dies schließt somit auch Generalisierungen und Spezialisierungen o.ä. zwischen verschiedenen Klassen ein.</hi>
                 </p>
-                <p>Um dem Vorsatz eines multidimensionalen Modells gerecht zu werden, kombinieren wir als Features zählbasierte Metriken (
-                    <hi rend="italic">Tokens</hi>: Anzahl der gesprochenen Tokens normalisiert nach Textlänge), Netzwerkrelationen (
-                    <hi rend="italic">Degree</hi>, 
-                    <hi rend="italic">weighted Degree</hi>, 
-                    <hi rend="italic">betweenness Centrality</hi>, 
-                    <hi rend="italic">closeness Centrality</hi>, 
-                    <hi rend="italic">eigenvector Centrality</hi>), die Bühnenpräsenz der Figuren (
-                    <hi rend="italic">Active</hi>: Figur spricht innerhalb einer Szene; 
-                    <hi rend="italic">Passive</hi>: Figur wird innerhalb einer Szene namentlich genannt), 
-                    <hi rend="italic" xml:space="preserve">Topic Modeling </hi>und Metadaten (etwa Zahl der Dramenfiguren, Epochenzugehörigkeit).<hi rend="superscript">6</hi>
+                <p>
+                    <hi rend="color(#000000)">Die ausführlichste systematische Anwendung der Verteilungshypothese findet sich in </hi>
+                    <hi rend="color(#000000)">Distributional Semantic Models</hi>
+                    <hi rend="color(#000000)"> (DSMs), die einen multidimensionalen Vektorraum bilden, in </hi>
+                    <hi rend="color(#000000)">dem</hi>
+                    <hi rend="color(#000000)">Wörter als Vektoren abgebildet werden (Lenci, 2018). Diese Vektoren bilden die Kookkurrenz eines Worts mit anderen </hi>
+                    <hi rend="color(#000000)">Wörtern</hi>
+                    <hi rend="color(#000000)"> in einem Textkorpus ab, nähern sich so einem Kontext bzw. der Bedeutung dieses </hi>
+                    <hi rend="color(#000000)">Wortes</hi>
+                    <hi rend="color(#000000)"> an. Diesen</hi>
+                    <hi rend="color(#000000)"> Prozess, in dem ein Wort auf einen 3Vektor abgebildet wird, bezeichnen wir als </hi>
+                    <hi rend="italic">word embeddings</hi>
+                    <hi rend="color(#000000)"> (Mikolov, Chen, Corrado, Dean 2013), (Collobert, Weston 2008). Der Grad semantischer Nähe von zwei Wörtern kann 3durch die Anwendung mathematischer Formeln auf diese Vektoren repräsentiert werden (Budanitsky, Hirst 2006).</hi>
+                    <anchor xml:id="id_tyjcwt"/>
                 </p>
-                <figure>
-                    <graphic n="1002" width="15.980833333333333cm" height="2.1166666666666667cm" url="239_final-ebab9fd5786f66397bd859c5598c20e4.jpeg" rend="inline"/>
-					<head>
-						<lb/>Tabelle 2. Klassifikationsergebnisse von vier Modellen für Titelfiguren (TF) und nicht-Titelfiguren (C): Majority Baseline, Tokens Baseline und alle Features.
-					</head>
-                </figure>
+                <p>
+                    <hi rend="color(#000000)">Für den hier vorgeschlagenen Beitrag haben wir ein DSM beruhend auf einem domänenspezifischen Textkorpus 
+                    erzeugt.<ref target="ftn1" n="1"/>
+                    </hi>
+                    <hi rend="color(#000000)"> Dazu benutzen wir das an unserem Lehrstuhl entwickelte Indra-Framework, das die Erzeugung, Verwendung und Evaluierung von Word</hi>
+                    <hi rend="color(#000000)">Embedding-Modellen unterstützt (Sales, Souza, Barzegar, Davis, Freitas, Handschuh 2018).</hi>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="138_final-cb99c24b28200b171b35a0ca1780c50f.png"/>
+                        <head>
+                            <lb/>Abb.4 Trainingsprozess
+                        </head>
+                    </figure>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Das DSM erlaubt es uns, Word</hi>
+                    <hi rend="color(#000000)">Embeddings für die Klassen in unserem Neoclassica-Open-Korpus (Donig, Christoforaki, Bermeitinger, Handschuh 2018: 131;133) zu erstellen. Für den ersten Schritt dieses Experiments beschränken wir uns auf Bildwerke von einzelnen Objekten.</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Anschließend trainieren wir ein Neuronales Netz (ResNet50 (He, Zhang, Ren, Sun 2015)) zur Bildklassifizierung statt mit herkömmlichen, flachen Labels mit den aus dem DSM hervorgehenden Vektoren. In Abb.4 illustrieren wir den Prozess, bei dem das Wort </hi>
+                    <hi rend="italic">Chair</hi>
+                    <hi rend="color(#000000)"> mit dem Vektor [a1, a2, … a50] korrespondiert, der dann genutzt wird, um Bilder von Stühlen zu annotieren.</hi>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="138_final-9820fb74a9e1895992a7ac9b46bb13da.png"/>
+                        <head>
+                            <lb/>Abb.5 Testphase
+                        </head>
+                    </figure>
+                </p>
+                <p>Die Testphase wird in Abb.5 illustriert, dabei wird ein Testbild in das CNN eingespeist, dass es mit einem Vektor assoziiert.</p>
+                <p>
+                    <hi rend="color(#000000)">Indra ermöglicht es uns nun, die nächsten Nachbarn dieses Vektors in </hi>
+                    <hi rend="color(#000000)">Wörtern</hi>
+                    <hi rend="color(#000000)"> zu finden und diesen ein Text-Label zuzuordnen. Diese Relationen zwischen den </hi>
+                    <hi rend="color(#000000)">Wörtern stellen zugleich eine semantische Beziehung der Bildinhalte her.</hi>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="138_final-3f2cbfaaf8de9108618eaf7ca1a4ff86.png"/>
+                        <head>
+                            <lb/>Abb.6 Idealtypische Repräsentation des reduzierten Vektorraums
+                        </head>
+                    </figure>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Illustriert wird diese Beziehung in Abb.6, die eine idealtypische Visualisierung des 50-Dimensionalen Vektorraums, reduziert auf zwei Dimensionen, zeigt. Vektor </hi>
+                    [a<hi rend="sub">1</hi>, a<hi rend="sub">2</hi>, … a<hi rend="sub">50</hi>]
+                    <hi rend="color(#000000)"> entspricht dem Begriff </hi>
+                    <hi rend="italic">Stuhl,</hi>
+                    <hi rend="color(#000000)"> wohingegen Vektor </hi>
+                    [c<hi rend="sub">1</hi>, c<hi rend="sub">2</hi>, … c<hi rend="sub">50</hi>]
+                    <hi rend="color(#000000)"> dem Begriff </hi>
+                    <hi rend="italic">Armlehnstuhl</hi>
+                    <hi rend="color(#000000)"> entspricht. Das Testbeispiel eines Gondelstuhls entspricht Vektor </hi>
+                    [b<hi rend="sub">1</hi>, b<hi rend="sub">2</hi>, … b<hi rend="sub">50</hi>]
+                    <hi rend="color(#000000)">, der größere semantische Nähe zu </hi>
+                    [c<hi rend="sub">1</hi>, c<hi rend="sub">2</hi>, … c<hi rend="sub">50</hi>]
+                    <hi rend="color(#000000)"> als zu </hi>
+                    [a<hi rend="sub">1</hi>, a<hi rend="sub">2</hi>, … a<hi rend="sub">50</hi>]
+                    <hi rend="color(#000000)"> aufweist, da der Rücken des Gondelstuhls einen armähnlichen Rahmen besitzt, der sich sanft nach vorne neigt und in die Armstützen übergeht.</hi>
+                    <anchor xml:id="id_1t3h5sf"/>
+                </p>
+                <p>Wir hoffen, dass diese semantische Beziehung zwischen mehreren Bildern natürlichsprachige Beziehungen zwischen den abgebildeten Artefakten besser reflektiert, als dies herkömmliche “simple” Klassifizierungsprozesse können.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Diskussion der Klassifikationsergebnisse:</head>
-                <p>Die 
-                    <hi rend="italic">F1-Scores</hi> der Klassifikation in 
-                    <hi rend="italic">Tabelle 2</hi> zeigen, dass das gelernte Modell (alle Features) in der Lage ist, sinnvolle Vorhersagen zu treffen, die über die Heuristiken der Majority und Tokens Baselines hinausgehen. Die verwendeten Features scheinen also tatsächlich Annäherungen an die Eigenschaften titelgebender Figuren wiederzugeben. Die Ergebnisse verdeutlichen aber auch, dass das Modell übergeneralisiert. Zwar wird jede titelgebende Figur als solche erkannt (
-                    <hi rend="italic">Recall</hi> [alle Features] 1.00), das System tendiert jedoch dazu, auch nicht-titelgebende Figuren als Titelfigur zu identifizieren (
-                    <hi rend="italic" xml:space="preserve">Precision </hi>[alle Features] 0.45). Das deutet darauf hin, dass die exponierte Stellung der Figuren im Titel des Dramas zwar durchaus im Text Realisierung findet, andere (Haupt-)Figuren die spezifischen Eigenschaften aber dennoch teilen können. Nur in elf der 38 Dramen werden alle Figuren richtig ausgezeichnet.<hi rend="superscript">7</hi>
-                    <hi rend="italic" xml:space="preserve">Abbildung 1 </hi>und 
-                    <hi rend="italic" xml:space="preserve">Abbildung 2 </hi>zeigen die 
-                    <hi rend="italic">Feature Importance</hi> und die Verteilung der Features. Im Entscheidungsprozess des Algorithmus sind die 
-                    <hi rend="italic">Tokens</hi> das wichtigste Feature. Die Leistungsfähigkeit der Tokens Baseline ließ das bereits erahnen. Aber auch einige 
-                    <hi rend="italic">Topics</hi>, Netzwerkmaße und die Bühnenpräsenz tragen zu den Klassifikationsergebnissen bei. Das erlernte 
-                    <hi rend="italic">Topic Model</hi> erreicht beispielsweise auch ohne die Zugabe weiterer Features Klassifikationsergebnisse, die im Bereich der Tokens Baseline liegen (vgl. Reiter u.a. 2018: 3). Um einen besseren direkten Vergleich der Modelle zu ermöglichen, geben wir auch Werte für den 
-                    <hi rend="italic">Matthews Correlation Coefficient</hi> (MCC) an. Der MCC ist weder auf eine einzelne Klasse fokussiert noch wird er von starken Klassenunterschieden beeinflusst. Auch hier zeigt sich, dass das Modell mit allen Features den beiden Baselines überlegen ist.
-                </p>
-                <figure>
-                    <graphic n="1003" width="16.002cm" height="14.721416666666666cm" url="239_final-47cb193b4fb5f841a163e5f05f158d7d.jpeg" rend="inline"/>
-					<head>
-						<lb/>Abbildung 1. Die <hi rend="italic">Feature Importance</hi> vergleicht die Performanz des Modells, wenn eines der Features entfällt. Die Abnahme an Performanz entspricht der relativen Wichtigkeit des jeweiligen Features für die Klassifikation (Importance). T1–T10 stehen für die zehn erlernten <hi rend="italic">Topics</hi>.
-					</head>
-                </figure>
-                <figure>
-                    <graphic n="1004" width="16.012583333333332cm" height="15.815027777777777cm" url="239_final-aaba02a0c2c0f0b0b5ea615ad2171e8d.jpeg" rend="inline"/>
-					<head>
-						<lb/>Abbildung 2. Featureverteilung der Klassifikation: Die Skalen auf der x-Achse geben den Wertebereich des jeweiligen Features wieder, die y-Achse zeigt die Verteilung der Feature-Werte auf die jeweiligen Klassen (TF: Titelfigur, C: nicht-Titelfigur).
-						</head>
-                </figure>
+                <head>Stand der Umsetzung &amp; Teilergebnisse</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Bildanalyse</head>
+                    <p>Bislang haben wir Verfahren aus dem Bereich des Deep Learning eingesetzt, um Abbildungen einzelner Möbel (Bermeitinger, Donig, Christoforaki, Freitas, Handschuh 2017) sowie mit Möbelgruppen in Interieuransichten (Donig, Christoforaki, Bermeitinger, Handschuh 2018) zu klassifizieren.
+                        <hi rend="color(#000000)"> Wir konnten dabei zeigen, dass algorithmische Instrumente hervorragend in der Lage sind, Einzelobjekte zu identifizieren (0,94 aMP) - und</hi>
+                        <hi rend="color(#000000)"> dies, relativ unabhängig vom Vorliegen in einer bestimmten</hi> Technik und
+                        <hi rend="color(#000000)"> Materialität (Fotografie, Gemälde, Zeichnung, Druckgrafik). Für Darstellungen von Mobiliar in Interieurs können wir in unseren Experimenten immer noch gute Ergebnisse vorweisen (aMP 0.53; recall 0.51). Wie eine qualitative Analyse dieser Ergebnisse gezeigt hat, ist die Differenz zum vorausgegangenen Experiment nicht alleine auf die gestiegene Komplexität (z.B. hohe Zahl </hi>
+                        <hi rend="color(#000000)">der Klassen, Überlappung von Objekten im Raum, generell Noise), sondern auch auf zahlreiche nominelle Fehlklassifizierungen zurückzuführen, die aus dem eingangs geschilderten Hierarchie-Problem resultieren.</hi>
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Verteilungssemantik</head>
+                    <p>Da es keine allgemeine Methode der Evaluierung eines domänespezifischen DSM gibt (Lenci, 2018), zeigen wir nachstehend, dass das Modell sinnvolle Ergebnisse produziert, wenn man diese mit Weltwissen sowie der Neoclassica-Ontologie vergleicht.</p>
+                    <quote>
+                        <hi rend="bold">armchair</hi>
+                        <hi rend="color(#000000)">:
+                            <lb/>['armchair', 'upholst',<ref target="ftn2" n="2"/> 'sette', 'cane', 'mendlesham']
+                        </hi>
+                    </quote>
+                    <quote>
+                        <hi rend="bold">settee</hi>
+                        <hi rend="color(#000000)">:
+                            <lb/>['sette', 'upholst', 'windsor', 'stool', 'armchair']
+                        </hi>
+                    </quote>
+                    <p>Da Begriffe mit sich selbst am nächsten verwandt sind, erscheinen sie an erster Stelle in der Begriffskette, was als ein Zeichen dafür gewertet werden kann, dass das DSM korrekt funktioniert. 
+                        <hi rend="color(#000000)">Beide Möbel gehören zu einer Klasse von gepolsterten Sitzmöbeln </hi>
+                        (‘<hi rend="italic">upholst</hi>’)
+                        <hi rend="color(#000000)">; in einigen Fällen lagen Polsterungen auch lose auf einem Geflecht auf </hi>
+                        (‘<hi rend="italic">cane</hi>’)
+                        <hi rend="color(#000000)">. Weiter wird deutlich, dass es eine reziproke Beziehung zwischen beiden Begriffen gibt, denn sie referenzieren sich wechselseitig. Das Sofa weist in diesem Korpus außerdem eine enge Nachbarschaft zu einem weiteren Sitzmöbel, dem Hocker </hi>
+                        (‘<hi rend="color(#000000)italic">stool</hi>’)
+                        <hi rend="color(#000000)"> auf. Insgesamt zeigen die Beispiele also bemerkenswerte semantische Nähe und Geschlossenheit.</hi>
+                    </p>
+                    <p>Ein abschließendes Beispiel mag der Begriff des mehrarmigen Leuchters sein:</p>
+                    <quote>
+                        <hi rend="bold">candelabra</hi>
+                        <hi rend="color(#000000)">:
+                            <lb/>['candelabra', 'consol', 'torcher', 'girandol', 'candlestick']
+                        </hi>
+                    </quote>
+                    <p>
+                        <hi rend="color(#000000)">Leuchter existieren in klassizistischen Interieurs für gewöhnlich in Paaren. Es macht daher Sinn, dass diese Leuchter auch im DSM als Mehrzahl auftreten </hi>
+                        ‘<hi rend="italic">candelabra</hi>’.
+                        <hi rend="color(#000000)"> Für gewöhnlich stehen sie auf einem Möbel oder Kaminsims </hi>
+                        (daher ‘<hi rend="italic">consol</hi>’ für einen Konsoltisch).
+                        <hi rend="color(#000000)"> In der Neoclassica-Ontologie hat die Klasse Candelabrum eine Reihe von ihr verwandten Klassen von Leuchtmitteln, die alle unabhängig von ihrem Vorliegen in der Ontologie auch innerhalb des DSM identifiziert worden sind.</hi>
+                        <anchor xml:id="id_17dp8vu"/>
+                    </p>
+                    <p>
+                        <hi rend="color(#000000)">Spezifisch sind dies die in der Ontologie auf einer Ebene angesiedelten Klassen </hi>
+                        <hi rend="italic">Candlestick</hi>,
+                        <hi rend="italic">Torchere</hi>
+                        <hi rend="color(#000000)"> und die etwas tiefer in der Hierarchie liegende </hi>
+                        <hi rend="italic">Girandole</hi>
+                        <hi rend="color(#000000)"> (Abb.7).</hi>
+                    </p>
+                    <p>
+                        <figure>
+                            <graphic url="138_final-578d1a4d2006dcc341fee7fdb96964c2.png"/>
+                            <head>
+                                <lb/>Abb.7 Neoclassica-Ontologie: Die <hi rend="italic">Interior_lighting_device</hi>-Subhierarchie
+                            </head>
+                        </figure>
+                    </p>
+                    <p>An dieser Stelle ist noch einmal zu betonen, dass die Ordnung des DSM rein auf Statistik beruht und aus dem textuellen Korpus abgeleitet ist, während die hier zum Vergleich herangezogene Ordnung der Ontologie eine menschengemachte Wissensrepräsentation ist.</p>
+                </div>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Emilia Galotti als passiv präsente Titelfigur:</head>
-                <p>Anhand Lessings 
-                    <hi rend="italic" xml:space="preserve">Emilia Galotti </hi>versuchen wir, die aufgeführten Klassifikationsergebnisse genauer nachzuvollziehen. Wir streben hierbei keine Interpretation des Stücks an, sondern wollen auf Grundlage unserer quantitativen Analysen erste Beobachtungen schildern, die sich hauptsächlich auf die Struktur des Dramas beziehen. Zwar beinhaltet die Klassifikation auch 
-                    <hi rend="italic" xml:space="preserve">Topic Modeling </hi>Ergebnisse, die erlernten 
-                    <hi rend="italic">Topics</hi> sind aber nur begrenzt interpretierbar: sie geben kaum Rückschlüsse auf die Semantiken der Figurenreden. Die Featureverteilung in 
-                    <hi rend="italic" xml:space="preserve">Abbildung 2 </hi>verdeutlicht, dass lediglich 
-                    <hi rend="italic">Topic </hi>5 ein positives Unterscheidungsmerkmal für die Auszeichnung als Titelfigur ist. Unter den zwanzig wahrscheinlichsten Begriffen von 
-                    <hi rend="italic">Topic </hi>5 finden sich jedoch ausnahmslos Funktionswörter.<hi rend="superscript">8</hi> Die Begriffe sind zudem oftmals Teil weiterer 
-                    <hi rend="italic">Topics</hi>, die dann zwar auch semantische Ausdrücke beinhalten, sich aber auf Anredeformeln, Angaben zur sozialen Stellung der Figur oder Berufsbezeichnungen beschränken.<hi rend="superscript">9</hi>
+                <head>Conclusum und nächste Schritte</head>
+                <p>Die vorliegende Kurzzusammenfassung unseres Vortrags schlägt ein Verfahren für eine Einbeziehung semantischer Kontextinformation in den Bildklassifizierungsprozess mit Deep Neural Networks vor. Das Verfahren entsteht im Rahmen des Neoclassica-Projekts und zielt insbesondere darauf, die Erkennung von Mobiliar in historischen Darstellungen von Innenräumen zu verbessern. Der multimodale Zugang wird, so die Hoffnung, dazu beitragen, Schwierigkeiten, denen wir in unserer bisherigen Arbeit begegnet sind - wie der Herausforderung unscharfer Konzepte oder dem Problem der Klassifizierung in semantischen Hierarchien - besser gerecht zu werden. Zukünftige Schritte werden sich auf drei Gebiete erstrecken. Erstens bedarf die Konstruktion eines domäne- und aufgabengerechten DSMs weiterer Verfeinerung. Es gilt zu evaluieren, ob der Umfang des Korpus für das beabsichtigte Ziel bereits ausreichend ist. Qualitätskriterien für eine Evaluierung müssen entwickelt werden, die nicht alleine nach NLP-Maßstäben, sondern auch im Domänezusammenhang sinnvoll sind. Zweitens gilt es eine adäquate Lösung für den Umgang mit zusammengesetzten Ausdrücken zu finden. (Zur Herausforderung semantischer Kompositionalität im Kontext des DSM vgl. Baroni et al., 2014). </p>
+                <p>
+                    <hi rend="color(#000000)">Die vorläufigen Ergebnisse der beiden ersten Meilensteine in den Bereichen der Bildanalyse und der Transformation des Textkorpus in ein DSM geben uns die Hoffnung,</hi> dass die Einführung von Kontext in den Bildklassifizierungsprozess die 
+                    <hi rend="italic">fuzzyness</hi> des Domänegegenstands besser akkomodiert und damit letztlich auch zu einer Verbesserung der Trefferquote des Klassifikationsverfahrens beiträgt. 
                 </p>
-                <p>Gleich vier Titelfiguren benennt die Klassifikation für Lessings bürgerliches Trauerspiel 
-                    <hi rend="italic">Emilia Galotti</hi>. Neben der tatsächlich titelgebenden Emilia werden ihr Vater Odoardo Galotti, der Prinz Hettore Gonzaga und dessen Kammerherr Marinelli als Titelfiguren ausgezeichnet. Betrachtet man ausschließlich die beiden von Pfister angeführten Kriterien quantitativer Dominanzrelationen, würde man Emilia wohl kaum als zentrale Figur des Dramas wahrnehmen. Mit nur 2363 Tokens spricht Emilia nicht nur weniger als der Prinz und Marinelli, die mit jeweils knapp über 5500 Tokens die umfassendsten Redeanteile am Haupttext haben, sie spricht auch weniger als ihr Vater Odoardo und die Gräfin Orsina (
-                    <hi rend="italic">Abbildung 3</hi>). Des Weiteren ist sie lediglich in sieben der 43 Dramenszenen aktiv präsent (
-                    <hi rend="italic">Abbildung 4</hi>). 
-                </p>
-                <figure>
-                    <graphic n="1005" width="12.719402777777777cm" height="8.47901388888889cm" url="239_final-d3acec44d4379da78366f29af06775f6.png" rend="inline"/>
-					<head>
-						<lb/>Abbildung 3. Redeanteile in Lessings <hi rend="italic" xml:space="preserve">Emilia Galotti </hi>gemessen in Tokens. Aufgeführt sind die sieben Figuren mit dem größten Redeanteil am Haupttext.
-					</head>
-                </figure>
-                <figure>
-                    <graphic n="1006" width="15.980833333333333cm" height="8.519583333333333cm" url="239_final-35362962a4e0534e9f37375a9099277d.png" rend="inline"/>
-					<head>
-						<lb/>Abbildung 4. Aktive und passive Präsenz in <hi rend="italic">Emilia Galotti</hi> gemessen an der Zahl der Szenen. Passiv präsent ist eine Figur nur dann, wenn sie in dieser Szene nicht selbst aktiv ist.
-					</head>
-                </figure>
-                <p>Warum also wird Emilia trotzdem als Titelfigur erkannt? Die Featureanalyse in 
-                    <hi rend="italic" xml:space="preserve">Abbildung 5 </hi>zeigt, dass neben den 
-                    <hi rend="italic" xml:space="preserve">Tokens </hi>vor allem die 
-                    <hi rend="italic">Topics </hi>8 und 2 sowie die 
-                    <hi rend="italic">betweenness Centrality</hi> den größten Einfluss auf die Klassifikation haben. Dass die Zahl der gesprochenen Wörter positiv bewertet wird überrascht, fällt sie doch so deutlich geringer aus als bei Marinelli oder dem Prinzen. Diese Figuren sprechen zwar mehr als Emilia, verglichen mit anderen Dramen aber wohl nicht übermäßig viel mehr. Der hier als gering wahrgenommene Umfang der Figurenrede reicht somit für den Klassifikator aus, um Emilia zumindest in die Riege potentieller Titelfiguren zu heben – auch, da in Lessings Drama insgesamt recht wenige Figuren auftreten.
-                </p>
-                <p>Für den Leser ist es dagegen wohl eher Emilias durchgängige passive Präsenz in den Dialogen und Monologen anderer Figuren, die sie als Titelfigur kennzeichnet. Exemplarisch dafür steht bereits der erste Akt. Ausgelöst durch eine Bittschrift verliert sich der Prinz in unruhigen Gedanken an Emilia Galotti: „Ich kann doch nicht mehr arbeiten. – Ich war so ruhig, bild‘ ich mir ein, so ruhig – Auf einmal muß eine arme Bruneschi, Emilia heißen: – weg ist meine Ruhe, und alles! –“ (Lessing 2000 [1772]: 293). Mit wechselnden Gesprächspartnern – Maler Conti, Marinelli und Camillo Rota – wird Emilia immer wieder zum Mittelpunkt der folgenden Dialoge. Das gilt insbesondere für die sechste Szene, als Marinelli die anstehende Vermählung Emilias mit dem Grafen Appiani preisgibt, woraufhin der eifersüchtige Prinz seinem Kammerherren Marinelli die völlige Handlungsfreiheit in dieser Angelegenheit zugesteht (vgl. ebd., 300–305). Diese passive Präsenz Emilias lässt sich über weite Teile des Dramas nachvollziehen. In 16 Szenen wird in der Figurenrede mit ihrem Namen auf sie referiert, obwohl sie selbst zu diesem Zeitpunkt nicht aktiv am Bühnengeschehen beteiligt ist. Verglichen mit anderen Dramenfiguren ist dieser Wert sehr hoch. Marinellis Name wird beispielsweise nur in fünf Szenen aufgerufen, auf Emilias Mutter Claudia wird ohne ihre Anwesenheit auf der Bühne gar nicht namentlich referiert, wie 
-                    <hi rend="italic">Abbildung 4</hi> veranschaulicht.
-                </p>
-                <figure>
-                    <graphic n="1007" width="16.007291666666667cm" height="16.007291666666667cm" url="239_final-8801a4faf7daab373a9483a44ef16b2f.jpeg" rend="inline"/>
-					<head>
-						<lb/>Abbildung 5. <hi rend="italic">Feature Importance</hi> der vier als titelgebend klassifizierten Figuren in <hi rend="italic">Emilia Galotti</hi>.
-					</head>
-                </figure>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Fazit und Ausblick:</head>
-                <p>Wir konnten zeigen, dass unser multidimensionales Modell sinnvolle Ergebnisse für die Klassifikation titelgebender Figuren liefert (MCC 0.66). Titelfiguren werden sehr zuverlässig erkannt (
-                    <hi rend="italic">Recall </hi>1.00), das Modell neigt jedoch zur Übergeneralisierung. Die Beobachtungen anhand Lessings 
-                    <hi rend="italic">Emilia Galotti</hi> lassen aber annehmen, dass die Übergeneralisierung genau die Figuren umfasst, die man als handlungstragende Hauptfiguren des Stücks bezeichnen könnte (vgl. Fick 2000: 337.) Diesen Einzelbefund wollen wir in Zukunft durch die Auswertung und Analyse zusätzlicher Dramen systematisieren. Eine weitere Aufgabe wird es sein, das Erlernen der 
-                    <hi rend="italic">Topics</hi> besser nachzuvollziehen und auf die semantische Interpretierbarkeit hin zu optimieren, ohne dabei die Leistungsfähigkeit für die Klassifikation einzuschränken.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Anhang der untersuchten Dramen:</head>
-                <p style="text-align:left; ">Arnim, L. A. von: Marino Caboga</p>
-                <p style="text-align:left; ">Brentano, C.: Ponce de Leon</p>
-                <p style="text-align:left; ">Büchner, G.: Dantons Tod</p>
-                <p style="text-align:left; ">Büchner, G.: Leonce und Lena</p>
-                <p style="text-align:left; ">Büchner, G.: Woyzeck</p>
-                <p style="text-align:left; ">Goethe, J. W.: Götz von Berlichingen mit der eisernen Hand</p>
-                <p style="text-align:left; ">Goethe, J. W.: Iphigenie auf Tauris </p>
-                <p style="text-align:left; ">Goethe, J. W.: Torquato Tasso </p>
-                <p style="text-align:left; ">Gottsched, J. Ch.: Der sterbende Cato</p>
-                <p style="text-align:left; ">Grabbe, Ch. D.: Don Juan und Faust</p>
-                <p style="text-align:left; ">Grabbe, Ch. D.: Hannibal</p>
-                <p style="text-align:left; ">Grabbe, Ch. D.: Herzog Theodor von Gothland</p>
-                <p style="text-align:left; ">Grabbe, Ch. D.: Napoleon oder Die hundert Tage</p>
-                <p style="text-align:left; ">Gutzkow, K.: Richard Savage, Sohn einer Mutter</p>
-                <p style="text-align:left; ">Gutzkow, K.: Uriel Acosta</p>
-                <p style="text-align:left; ">Hofmannsthal, H. von: Elektra</p>
-                <p style="text-align:left; ">Hofmannsthal, H. von: Ödipus und die Sphinx </p>
-                <p style="text-align:left; ">Kotzebue, A. von: Die beiden Klingsberg</p>
-                <p style="text-align:left; ">Laube, H.: Monaldeschi</p>
-                <p style="text-align:left; ">Laube, H.: Struensee</p>
-                <p style="text-align:left; ">Lessing, G. E.: Emilia Galotti </p>
-                <p style="text-align:left; ">Lessing, G. E.: Miss Sara Sampson </p>
-                <p style="text-align:left; ">Pfeil, J. G. B.: Lucie Woodvil </p>
-                <p style="text-align:left; ">Romantik Iffland, A. W.: Figaro in Deutschland</p>
-                <p style="text-align:left; ">Schiller, F.: Die Jungfrau von Orléans</p>
-                <p style="text-align:left; ">Schiller, F.: Die Piccolomini </p>
-                <p style="text-align:left; ">Schiller, F.: Die Verschwörung des Fiesko zu Genua </p>
-                <p style="text-align:left; ">Schiller, F.: Maria Stuart</p>
-                <p style="text-align:left; ">Schiller, F.: Wallensteins Tod </p>
-                <p style="text-align:left; ">Schiller, F.: Wilhelm Tell </p>
-                <p style="text-align:left; ">Schlaf, J.: Meister Oelze </p>
-                <p style="text-align:left; ">Schlegel, A. W.: Alarkos</p>
-                <p style="text-align:left; ">Schlegel, A. W.: Ion</p>
-                <p style="text-align:left; ">Schlegel, J. E.: Canut</p>
-                <p style="text-align:left; ">Schnitzler, A.: Anatol </p>
-                <p style="text-align:left; ">Schnitzler, A.: Professor Bernhardi </p>
-                <p style="text-align:left; ">Tieck, L.: Der gestiefelte Kater</p>
-                <p style="text-align:left; ">Tieck, L.: Prinz Zerbino</p>
-                <p style="text-align:left; ">Tieck, L.: Ritter Blaubart </p>
-                <p style="text-align:left; ">Uhland, L.: Ludwig der Bayer</p>
-                <p style="text-align:left; ">Wieland, Ch. M.: Klementina von Porretta</p>
-                <p style="text-align:left; ">Wieland, Ch. M.: Lady Johanna Gray</p>
             </div>
         </body>
         <back>
-			<div type="notes">
-				<note place="foot" xml:id="ftn1" n="1"> Bei einem entsprechenden Versuch erzielten wir Übereinstimmungen zwischen 0.43 und 0.83 (Cohen’s ϰ).</note>
-				<note place="foot" xml:id="ftn2" n="2"> Titelfiguren könnten dann ersatzweise als (Pseudo-)Goldstandard für die Klassifikation von Hauptfiguren genutzt werden, um zu testen, ob Eigenschaften der Titelfiguren auf andere Hauptfiguren übertragbar sind.</note>
-				<note place="foot" xml:id="ftn3" n="3"> Probleme von Morettis Vorgehen diskutiert Peer Trilcke (2013: 226–232).</note>
-				<note place="foot" xml:id="ftn4" n="4"> Wir nutzen dafür das German Drama Corpus: https://github.com/dracor-org/gerdracor.</note>
-				<note place="foot" xml:id="ftn5" n="5"> Die Implementierung erfolgt über die Pakete randomForest und Caret für R: https://cran.r-project.org/web/packages/randomForest/index.html/ und <hi rend="Internet_Link">https://cran.r-project.org/web/packages/caret/</hi>. Der vollständige Code zu den Experimenten ist zu finden unter https://quadrama.github.io/blog/2018/12/12/detect-protagonists.de/.</note>
-				<note place="foot" xml:id="ftn6" n="6"> Eine genauere Beschreibung aller Features findet sich in Krautter, Benjamin / Pagel, Janis / Reiter, Nils und Willand, Marcus (2018): „Titelhelden und Protagonisten – Interpretierbare Figurenklassifikation in deutschsprachigen Dramen“, in: <hi rend="italic">Litlab Pamphlet</hi> 7.</note>
-				<note place="foot" xml:id="ftn7" n="7"> Vollständig korrekt ausgezeichnet wurden die folgenden Dramen: <hi rend="italic">Die beiden Klingsberg</hi>, <hi rend="italic">Marino Caboga</hi>, <hi rend="italic">Die Piccolomini</hi>, <hi rend="italic">Wallensteins Tod</hi>, <hi rend="italic">Die Verschwörung des Fiesko zu Genua</hi>, <hi rend="italic">Ludwig der Bayer</hi>, <hi rend="italic">Die Jungfrau von Orleans</hi>, <hi rend="italic">Herzog Theodor von Gothland</hi>, <hi rend="italic">Dantons Tod</hi>, <hi rend="italic">Hannibal</hi>, <hi rend="italic" >Napoleon oder Die hundert Tage</hi>.</note>
-				<note place="foot" xml:id="ftn8" n="8"> Die 20 wahrscheinlichsten Begriffe von <hi rend="italic">Topic </hi>5 sind: „ich“, „und“, „die“, „nicht“, „der“, „ist“, „zu“, „–“, „das“, „Ich“, „in“, „so“, „den“, „dem“, „es“, „ein“, „mich“, „sie“, „Sie“, „er“.</note>
-				<note place="foot" xml:id="ftn9" n="9"> Etwa: „Herr“, „König“, „Königin“, „Vater“, „Narr“, „Graf“, „Majestät“, „Schuldmeister“, „Mutter“, „Tochter“, „Sohn“, „Doktor“.</note>
-			</div>
+            <div type="notes">
+                <note xml:id="ftn1" n="1" rend="footnote text">
+                    <anchor xml:id="id_35nkun2"/>
+                    <hi rend="color(#000000)">Das Textkorpus </hi>
+                    <hi rend="color(#000000)">umfasst </hi> 32 Quellen, die 1.987.544 Worte und 58.651 unique word forms repräsentieren. Es 
+                    <hi rend="color(#000000)">besteht aus englischsprachigen Fachpublikationen der Jahrhundertwende vom 19. zum 20. </hi>
+                    <hi rend="color(#000000)">Jahrhundert (cf. </hi>Abschnitt Quellen im Literaturverzeichnis). Wir haben diese Texte ausgewählt, da sie stärker differenzierte Konzepte zur Beschreibung des Fachgebiets bieten und die Qualität der von uns durchgeführten optischen Zeichenerkennung (OCR) für diesen Zeitabschnitt deutlich höher war als für zeitgenössische Texte.
+                    <hi rend="color(#000000)">Anders als moderne Fachtexte </hi>sind
+                    <hi rend="color(#000000)">diese </hi> Publikationen 
+                    <hi rend="color(#000000)">zudem</hi>
+                    <hi rend="color(#000000)">unter einer freien, permissiven Lizenz verfügbar.</hi>
+                </note>
+                <note xml:id="ftn2" n="2" rend="footnote text">
+                    Die Begriffe sind innerhalb des DSMs auf ihren Wortstamm zurückgeführt.
+                </note>
+            </div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">Algee-Hewitt, Mark (2018):</hi> 
-                        <hi rend="italic">Distributed Character: Quantitative Models of the English Stage, 1500-1920</hi>, 
-                        in: Digital Humanities 2017: Conference Abstracts: 119–121.
+						<hi rend="bold">Baroni, Marco / Bernardi, Raffaela / Zamparelli, Roberto (2014)</hi>: <hi rend="italic">“Frege in Space: A Program of Compositional Distributional Semantics”</hi>, LiLT (Linguistic Issues in Language Technology), 9: 241–346.
+					</bibl>
+                    <bibl>
+						<hi rend="bold">Bermeitinger, Bernhard / Donig, Simon / Christoforaki, Maria / Freitas, André / Handschuh, Siegfried (2017)</hi>: <hi rend="italic">“Object Classification in Images of Neoclassical Artifacts Using Deep Learning.”</hi> Montreal, Canada. https://dh2017.adho.org/abstracts/590/590.pdf [Letzter Zugriff 25.09. 2018]
+					</bibl>
+                    <bibl>
+						<hi rend="bold">Bontempi, Gianluca (2017)</hi>: <hi rend="italic">Handbook-Statistical Foundations of Machine Learning</hi>. Bruxelles: Machine Learning Group Computer Science Department ULB Belgique.
+					</bibl>
+                    <bibl>
+						<hi rend="bold">Budanitsky, Alexander / Hirst, Graeme (2006)</hi>: <hi rend="italic">“Evaluating Wordnet-Based Measures of Lexical Semantic Relatedness”</hi>, Computational Linguistics 32 (1): 13–47.
+					</bibl>
+                    <bibl>
+						<hi rend="bold">Collobert, Ronan / Weston, Jason (2008)</hi>: <hi rend="italic">“A Unified Architecture for Natural Language Processing: Deep Neural Networks with Multitask Learning”</hi>,  in: Proceedings of the 25th International Conference on Machine Learning, 160–167.
+					</bibl>
+                    <bibl>
+						<hi rend="bold">Donig, Simon / Christoforaki, Maria / Handschuh, Siegfried (2016)</hi>: <hi rend="italic">“Neoclassica - A Multilingual Domain Ontology. Representing Material Culture from the Era of Classicism in the Semantic Web”</hi>, in: <hi rend="bold">Bozic, Bojan/Mendel-Gleason, Gavin/Debruyne, Christophe / O’Sullivan, Declan  (eds.)</hi>: <hi rend="italic">Computational History and Data-Driven Humanities</hi>. CHDDH 2016 (=IFIP Advances in Information and Communication Technology, vol 482), Cham: Springer: 41–53, DOI 10.1007/978-3-319-46224-0_5.
+					</bibl>
+                    <bibl>
+						<hi rend="bold">Donig, Simon / Christoforaki, Maria /Bermeitinger, Bernhard/ Handschuh, Siegfried (2017)</hi>: <hi rend="italic">“Neoclassica – an Open Framework for Research in Neoclassicism.”</hi> Montreal, Canada. https://dh2017.adho.org/abstracts/384/384.pdf [Letzter Zugriff 25. 09. 2018]
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Alt, Peter-André (1994):</hi> 
-                        <hi rend="italic">Tragödie der Aufklärung</hi>. 
-                        <hi rend="italic">Eine Einführung</hi>. Basel / Tübingen: Francke.
-                    </bibl>
+						<hi rend="bold">Donig, Simon / Christoforaki, Maria / Bermeitinger, Bernhard / Handschuh, Siegfried (2018)</hi>: <hi rend="italic">“Bildanalyse durch Distant Viewing - zur Identifizierung von klassizistischem Mobiliar in Interieurdarstellungen”</hi>, in: <hi rend="bold">Vogeler, Georg (ed.)</hi>: <hi rend="italic">DHd 2018 - Kritik der digitalen Vernunft</hi>. Köln: 130–137.
+					</bibl>
                     <bibl>
-                        <hi rend="bold">Breiman, Leo (2001):</hi> 
-                        <hi rend="italic">Random Forests</hi>, 
-                        in: Machine Learning 24(2): 5–32.
-                    </bibl>
+						<hi rend="bold">Donig, Simon / Handschuh, Siegfried / Hastik, Canan / Kohle, Hubertus / Ommer, Björn / Rehbein, Malte (2018)</hi>: <hi rend="italic">“Der ferne Blick. Bildkorpora und Computer Vision in den Geistes- und Kulturwissenschaften - Stand - Visionen - Implikationen”</hi>, in: <hi rend="bold">Vogeler, Georg (ed.)</hi>: <hi rend="italic">DHd 2018 - Kritik der digitalen Vernunft</hi>. Köln: 86–89.
+					</bibl>
                     <bibl>
-                        <hi rend="bold">Declerck, Thierry / Koleva, Nikolina / Krieger, Hans-Ulrich (2012):</hi> 
-                        <hi rend="italic">Ontology-Based Incremental Annotation of Characters in Folktales</hi>, 
-                        in: Proceedings of the 6th Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities: 30–34 http://www.aclweb.org/anthology/W12-1006 [zuletzt abgerufen 13. Oktober 2018].
-                    </bibl>
+						<hi rend="bold">He, Kaiming / Zhang, Xiangyu / Ren, Shaoqing /Sun, Jian (2016)</hi>: <hi rend="italic">“Deep residual learning for image recognition”</hi>, in: Proceedings of the IEEE conference on computer vision and pattern recognition: 770-778.
+					</bibl>
                     <bibl>
-                        <hi rend="bold">Fick, Monika (2000):</hi> 
-                        <hi rend="italic">Emilia Galotti</hi>, 
-                        in: Lessing Handbuch. Leben–Werk–Wirkung. Stuttgart: Metzler 316–343.
-                    </bibl>
+						<hi rend="bold">Indurkhya, Nitin / Damerau, Fred J. (2010)</hi>: <hi rend="italic">Handbook of Natural Language Processing. Second Edition. Vol. 2. Machine Learning &amp; Pattern Recognition Series</hi>. Boca Raton, FL: Chapman &amp; Hall/CRC Taylor &amp; Francis Group.
+					</bibl>
                     <bibl>
-                        <hi rend="bold">Finlayson, Mark A. (2017):</hi> 
-                        <hi rend="italic">‚ProppLearner‘: Deeply Annotating a Corpus of Russian Folktales to Enable the Machine Learning of a Russian Formalist Theory</hi>, 
-                        in: Digital Scholarship in the Humanities 32(2): 284–300 https://doi.org/10.1093/llc/fqv067 [letzter Zugriff 13. Oktober 2018].
-                    </bibl>
+						<hi rend="bold">Lenci, Alessandro (2018)</hi>: <hi rend="italic">“Distributional models of word meaning”</hi>, in: Annual review of Linguistics, 4 (1) :151-171.
+					</bibl>
                     <bibl>
-                        <hi rend="bold">Fischer, Frank / Trilcke, Peer / Milling, Carsten / Skorinkin, Daniil (2018):</hi> 
-                        <hi rend="italic">To Catch a Protagonist: Quantitative Dominance Relations in German-Language Drama (1730–1930)</hi>, 
-                        in: Digitial Humanities 2018: Conference Abstracts: 193–201.
-                    </bibl>
+						<hi rend="bold">Miller, George A. (1995)</hi>: <hi rend="italic">“WordNet: A Lexical Database for English”</hi>, in: Communications of the ACM 38 (11): 39–41.
+					</bibl>
                     <bibl>
-                        <hi rend="bold">Ho, Tin Kam (1995):</hi> 
-                        <hi rend="italic">Random Decision Forests</hi>, 
-                        in: Proceedings of the 3rd International Conference on Document Analysis and Recognition: 278–282.
-                    </bibl>
+						<hi rend="bold">Sales, Juliano Efson / Souza, Leonardo / Barzegar,  Siamak / Davis, Brian / Freitas, André / Handschuh, Siegfried (2018)</hi>: <hi rend="italic">“Indra: A Word Embedding and Semantic Relatedness Server.”</hi> In LREC. Miyazaki, Japan, 2018.
+					</bibl>
                     <bibl>
-                        <hi rend="bold">Jannidis, Fotis (2004): </hi>
-                        <hi rend="italic">Figur und Person. Beitrag zu einer historischen Narratologie</hi>. 
-                        Berlin: de Gruyter.
-                    </bibl>
+						<hi rend="bold">Mikolov, Tomas / Chen, Kai / Corrado, Greg / Dean, Jeffrey (2013)</hi>: <hi rend="italic">“Efficient Estimation of Word Representations in Vector Space.”</hi> ArXiv:1301.3781 [Cs]. http://arxiv.org/abs/1301.3781. [Letzter Zugriff 25. 09. 2018]
+					</bibl>
                     <bibl>
-                        <hi rend="bold">Jannidis, Fotis / Reger, Isabella / Krug, Markus / Weimer, Lukas / Macharowsky, Luisa / Puppe, Frank (2016):</hi> 
-                        <hi rend="italic">Comparison of Methods for the Identification of Main Characters in German Novels</hi>, 
-                        in: Digital Humanities 2016: Conference Abstracts: 578–582.
-                    </bibl>
+						<hi rend="bold">Rubenstein, Herbert / Goodenough, John B. (1965)</hi>: <hi rend="italic">“Contextual Correlates of Synonymy.”</hi> Communications of the ACM 8 (10): 627-6337. https://doi.org/10.1145/365628.365657. [Letzter Zugriff 25. 09. 2018]</bibl>
                     <bibl>
-                        <hi rend="bold">Krautter, Benjamin / Pagel, Janis / Reiter, Nils / Willand, Marcus (2018):</hi> 
-                        <hi rend="italic">Titelhelden und Protagonisten – Interpretierbare Figurenklassifikation in deutschsprachigen Dramen</hi>, 
-                        in: Litlab Pamphlet 7.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Lessing, Gotthold Ephraim (2000 [1772]):</hi> 
-                        <hi rend="italic">Emilia Galotti. Ein Trauerspiel in fünf Aufzügen</hi>, 
-                        in: 
-                        <hi rend="bold">Bohnen, Klaus (ed.): </hi>
-                        <hi rend="italic">Lessing Werke und Briefe. </hi>
-                        Bd. 7. Werke 1770–1773. Frankfurt a.M.: Deutscher Klassiker-Verlag 291–371.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Martus, Steffen (2011):</hi> 
-                        <hi rend="italic">Transformationen des Heroismus. Zum politischen Wissen der Tragödie im 18. Jahrhundert am Beispiel von J. E. Schlegels Canut</hi>, 
-                        in: 
-                        <hi rend="bold">Burkhard, Torsten / Hundt, Markus / Martus, Steffen / Ort, Claus-Michael (eds.): </hi>
-                        <hi rend="italic">Politik – Ethik – Poetik. Diskurse und Medien frühneuzeitlichen Wissens</hi>. 
-                        Berlin: Akademie Verlag 15–42.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Moretti, Franco (2011):</hi> 
-                        <hi rend="italic">Network Theory, Plot Analysis</hi>, 
-                        in: Literary Lab Pamphlet 2. https://litlab.stanford.edu/LiteraryLabPamphlet2.pdf [zuletzt abgerufen 13. Oktober 2018].
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Moretti, Franco (2013):</hi> 
-                        <hi rend="italic">‚Operationalizing‘: or, the Function of Measurement in Modern Literary Theory</hi>, 
-                        in: Literary Lab Pamphlet 6. https://litlab.stanford.edu/LiteraryLabPamphlet6.pdf [zuletzt abgerufen 13. Oktober 2018].
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Pfister, Manfred (2001 [1977]): </hi>
-                        <hi rend="italic">Das Drama</hi>. 
-                        <hi rend="italic">Theorie und Analyse</hi>. München: Fink.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Platz-Waury, Elke (2007 [1997]):</hi> 
-                        <hi rend="italic">Art. Figurenkonstellation</hi>, 
-                        in: 
-                        <hi rend="bold">Weimar, Klaus / Fricke, Harald / Grubmüller, Klaus / Müller, Jan-Dirk (eds.): </hi>
-                        <hi rend="italic">Reallexikon der deutschen Literaturwissenschaft</hi>. 
-                        Bd. 1. Berlin / New York: De Gruyter 591–593.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Plett, Bettina (2002): </hi>
-                        <hi rend="italic">Problematische Naturen? Held und Heroismus im realistischen Erzählen</hi>. 
-                        München / Paderborn / Wien / Zürich: Schöningh.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Reiter, Nils / Krautter, Benjamin / Pagel, Janis / Willand, Marcus (2018):</hi> 
-                        <hi rend="italic">Detecting Protagonists in German Plays around 1800 as a Classification Task</hi>, 
-                        in: EADH 2018: Conference Abstracts. http://dx.doi.org/10.18419/opus-10162 [zuletzt abgerufen 22.12.2018].
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Ter-Nedden, Gisbert (1986): </hi>
-                        <hi rend="italic">Lessings Trauerspiele. Der Ursprung des modernen Dramas aus dem Geist der Kritik</hi>. 
-                        Stuttgart: Metzler.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Trilcke, Peer (2013): </hi>
-                        <hi rend="italic">Social Network Analysis (SNA) als Methode einer textempirischen Literaturwissenschaft</hi>, 
-                        in: 
-                        <hi rend="bold">Ajouri, Philip / Mellmann, Katja / Rauen, Christoph (eds.): </hi>
-                        <hi rend="italic">Empirie in der Literaturwissenschaft</hi>. 
-                        Münster: Mentis 201–247.
-                    </bibl>
+						<hi rend="bold">Sahlgren, Magnus (2008)</hi>: <hi rend="italic">“The Distributional Hypothesis.”</hi> Italian Journal of Linguistics 20, (1): 33–53.
+					</bibl>
                 </listBibl>
             </div>
         </back>

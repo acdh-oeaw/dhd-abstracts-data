@@ -1,48 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="NANTKE_Julia_Algorithmen_gestützte_Analyse_visuell_materiell" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="LÜCK_Christian_Standoff_Tools___Generische_Dienste_für_die_a" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Algorithmen-gestützte Analyse visuell-materieller Eigenschaften von Briefen</title>
+                <title type="full">
+                    <title type="main">Standoff-Tools - Generische Dienste für die automatische Annotation von XML-Dokumenten mit Plain-Text-Werkzeugen</title>
+                    <title type="sub"/>
+                </title>
                 <author>
                     <persName>
-                        <surname>Nantke</surname>
-                        <forename>Julia</forename>
-                    </persName>
-                    <affiliation>Universität Hamburg, Deutschland</affiliation>
-                    <email>julia.nantke@uni-hamburg.de</email>
-                    <idno type="ORCID">0000-0002-8037-1009</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Reul</surname>
+                        <surname>Lück</surname>
                         <forename>Christian</forename>
                     </persName>
-                    <affiliation>Universität Würzburg, Deutschland</affiliation>
-                    <email>christian.reul@uni-wuerzburg.de</email>
-                    <idno type="ORCID">0000-0002-1776-1469</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Bläß</surname>
-                        <forename>Sandra</forename>
-                    </persName>
-                    <affiliation>Universität Hamburg, Deutschland</affiliation>
-                    <email>sandra.blaess@uni-hamburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Flüh</surname>
-                        <forename>Marie</forename>
-                    </persName>
-                    <affiliation>Universität Hamburg, Deutschland</affiliation>
-                    <email>marie.flueh@uni-hamburg.de</email>
-                    <idno type="ORCID">0000-0002-1707-284X</idno>
+                    <affiliation>Westfälische Wilhelmsuniversität Münster, Deutschland</affiliation>
+                    <email>christian.lueck@uni-muenster.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-07-28T11:29:00Z</date>
+                    <date>2022-12-16T00:01:46.155091717</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -69,7 +45,7 @@
                     </address>
                 </publicationStmt>
             <sourceDesc>
-                <p>Converted from a Word document</p>
+                <p>Converted from an OASIS Open Document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -85,105 +61,131 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag</term>
+                    <term>Posterpräsentation</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>OCR</term>
-                    <term>Briefe</term>
-                    <term>Layoutanalyse</term>
+                    <term>TEI</term>
+                    <term>plain text</term>
+                    <term>Annotationen</term>
+                    <term>stand-off annotations</term>
+                    <term>automatische Annotationen</term>
+                    <term>computational methods</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Bilderfassung</term>
-                    <term>Strukturanalyse</term>
-                    <term>Kontextsetzung</term>
-                    <term>Manuskript</term>
-                    <term>texttragende Gegenstände</term>
+                    <term>Programmierung</term>
+                    <term>Annotieren</term>
+                    <term>Bereinigung</term>
+                    <term>Text</term>
+                    <term>Werkzeuge</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p>Der visuell-materiellen Gestaltung von historischen Dokumenten und insbesondere von Briefen kommt in der Forschung ein hoher Stellenwert zu. Visuell-materielle Eigenschaften wie die Papier- und Stiftfarbe, die Anordnung von Schrift auf der Seite und die Schriftrichtung geben Auskunft über historische Bedingungen und konkrete Umstände des Schreibens und der Schreibenden sowie, im Fall von Briefen, über das Verhältnis der Schreibenden zu den jeweiligen Adressat:innen (vgl. Baasner 2008; Wiethölter/Bohnenkamp 2010; Henzel 2020; Lukas/Osthof 2016).</p>
-            <p>Obwohl die digitale Repräsentation historischer Dokumente in digitalen Editionen und Archiven entscheidende Vorteile hinsichtlich der Darstellung visuell-materieller Charakteristika bietet (vgl. Bohnenkamp-Renken 2013; Radecke 2015), spielt deren Analyse in computergestützten Verfahren noch immer eine untergeordnete Rolle. Die meisten quantitativen Methoden und hierbei genutzten Tools beziehen sich auf den Inhalt und/oder den Schreibstil literarischer und historischer Texte, die bibliografischen Codes (McGann 1991: 77) bleiben jenseits ihrer Repräsentation als Bild-Digitalisate in digitalen Editionen bei der Analyse und Interpretation meistens unberücksichtigt.</p>
-            <p>Im Rahmen des geplanten Vortrags soll ein Ansatz zur quantitativen, Algorithmen-gestützten Erschließung visuell-materieller Charakteristika in einem Korpus von Briefen aus dem Zeitraum ‚Deutschland um 1900‘ präsentiert werden. Hierbei wollen wir zeigen, wie sich anhand verschiedener (teil-)automatisiert ermittelbarer Werte zur optisch erfassbaren Gestaltung der Briefe inhaltliche Aussagen sowohl über konkrete Dokumente sowie deren Schreibende und Adressat:innen machen als auch Erkenntnisse über die historischen Dynamiken der Textsorte ‘Brief’ gewinnen lassen. Denn zum einen handelt es sich bei Briefen um einen Dokumententyp, der spätestens seit dem 18. Jahrhundert spezifischen Kodierungen unterworfen ist, bei denen die Ebenen des sprachlichen Ausdrucks und der visuell-materiellen Gestaltung komplex ineinandergreifen (vgl. Baasner 2008). Zum anderen zeichnet sich gerade der untersuchte Entstehungszeitraum der Briefe durch die Lockerung kommunikativer Etikette aus, was im Rahmen des Briefformats zunehmende Spielräume zur individuellen Ausgestaltung eröffnet (vgl. Ehlers 2004).</p>
-            <p>Bei dem analysierten Korpus handelt es sich um einen Ausschnitt aus dem ca. 35.000 Briefe umfassenden Dehmel-Archiv der Staats- und Universitätsbibliothek Hamburg (SUB), die aktuell im Projekt 
-                <hi rend="italic">Dehmel digital</hi> wissenschaftlich erschlossen werden.<ref n="1" target="ftn1"/> Die Briefe richten sich an den um 1900 berühmten, 1920 verstorbenen Dichter Richard Dehmel und stammen von verschiedenen anderen Künstler:innen wie Rainer Maria Rilke, Stefan Zweig, Else Lasker-Schüler, Detlev von Liliencron und Peter Behrens, die in unterschiedlich engem Kontakt zu Dehmel standen und deren Erfolg als Künstler:innen zum Zeitpunkt der Korrespondenzen ebenfalls verschieden groß war. Weiterhin enthält das Korpus auch Briefe von Vertreter:innen des Literaturbetriebs, die mit Dehmel über Publikationsvorhaben, geplante Veranstaltungen oder gemeinsame Projekte verhandeln.
+            <p>TEI-XML ist eine exzellente Technologie für digitale Editionen. Aber für die computationelle Analyse ist ein Korpus von XML-Dokumenten keine günstige Grundlage, weil Algorithmen erheblich komplexer werden, wenn statt linearem plain text ein XML-Baum durchlaufen werden muss. Zwar ist die Extraktion von plain text aus XML nicht aufwendig, aber für die Rückführung von Analyse-Ergebnissen in den XML-Baum gibt es bislang keine allgemeine Lösung. Dennoch ist eine solche in vielen Fällen wünschenswert, weil dann Analyse-Ergebnisse und die Struktur des Dokuments in einer allgemeinen Abfragesprache wie XQuery ausgewertet werden können. Es existieren Insellösungen zum Enrichment von TEI-XML, die auf bestimmte Tools ausgerichtet sind, etwa Spacy (Andorfer und Schlögl 2021, Meyer 2022), oder auf bestimmte Anwendungsfälle, etwa Alliterationen (Consalvi und Fumagalli 2022). Wünschenswert wäre jedoch, ganz allgemein Analyse-Tools für plain text entwickeln zu können und sie auch zum Enrichment von XML einsetzen zu können. Genau dies ermöglichen die hier vorgestellten 
+                <hi rend="italic">StandOff Tools</hi>.
             </p>
-            <p>Wir wollen in unserem Beitrag zeigen, wie sich anhand der visuell-materiellen Gestaltung der Briefe Aussagen über die Lebensumstände der Briefschreibenden, deren Beziehung zu Dehmel sowie die Charakteristika epistolarer Kommunikation um 1900 und die Veränderung der Normen der Briefschreibung ableiten lassen, welche sich in dieser Zeit vollziehen. </p>
-            <p>Die Grundlage für die maschinenlesbare Erschließung visuell-materieller Eigenschaften der Dokumente bilden die Strukturinformationen auf der Briefseite. Diese werden im Rahmen der Layoutanalyse, einem Teilschritt der HTR (Handwritten Text Recognition), semi-automatisch mittels OCR4all<ref n="2" target="ftn2"/> (vgl. Reul et al. 2019) erfasst. Hierbei können Strukturen wie der Seitenspiegel, der Haupttext, Grußformeln, Briefköpfe etc. entweder manuell ausgezeichnet und typisiert oder ein automatisch generierter Vorschlag gezielt korrigiert werden, wobei manuell geprüfte Daten als Trainingsbeispiele für die fortlaufende Verbesserung der algorithmischen Methoden herangezogen werden können. Aus den so erzeugten Daten können anschließend die Informationen über die visuell erfassbaren Merkmale der Briefe automatisiert extrahiert werden, um im Rahmen statistischer Analysen Zusammenhänge zwischen Layout und Briefinhalt aufzudecken (vgl. Busch/Hegel 2017; Hurlbut 2013). So lassen sich z.B. statistische Mittelwerte für den Weißraum der Briefe einzelner Korrespondenzpartner:innen berechnen und miteinander vergleichen oder die Papierfarbe eines Briefs ins Verhältnis zu den innerhalb des Korpus üblichen Färbungen setzen. 
-            </p>
-            <p>Die von uns untersuchten Merkmale lassen sich grob in zwei Kategorien unterteilen: Erstens gibt es grundsätzlich vorhandene visuell-materielle Eigenschaften wie das Format der Briefbögen, das Verhältnis von Weißraum und Textraum sowie der Abstand zwischen Grußformeln und Textblock, die für die epistolare „Respektsemiotik“ (Ehlers 2004: 21) von großer Aussagekraft sind. Diese können direkt aus den oben erwähnten Auszeichnungen abgeleitet bzw. berechnet werden. Ebenfalls in den Bereich der grundsätzlichen Eigenschaften gehören die Papier- und Stiftfarbe, deren „Auswahl und Wirkungsweise [...] in enger Abhängigkeit – historisch wandelbarer – ökonomischer, kultureller, sozialer, ästhetischer u.a. Faktoren sowie des jeweiligen Inhalts und der Funktion des Briefs“ stehen (Henzel 2020: 222). Die computergestützte Identifikation dieser Merkmale erfordert allerdings im Vergleich einen etwas größeren Aufwand: Zunächst wird das originale Farbbild in ein Binärbild umgewandelt, sodass in den zuvor ausgezeichneten Textregionen die Vordergrundpixel weitestgehend der Schrift und die Hintergrundpixel weitestgehend dem unbeschriebenen Papier entsprechen. Nach dem Ausschließen von Übergangspixeln, um Störeffekte zu minimieren, werden die Entsprechungen im Farbbild gesammelt und der jeweiligen Klasse zugewiesen. Abschließend wird separat die durchschnittliche Schrift- und Papierfarbe berechnet, indem zunächst je ein Mittelwert für die drei Farbkanäle Rot, Grün und Blau gebildet wird und diese zu je einer Farbe kombiniert werden.</p>
-            <p>Neben diesen generellen visuell-materiellen Eigenschaften beziehen wir zweitens spezifische Charakteristika wie Briefköpfe, Abbildungen und Zeichnungen in unsere Analysen mit ein, die nur in einem Teil der Dokumente enthalten sind und bei denen vorerst lediglich erfasst wird, ob sie vorhanden sind oder nicht. Diese Erfassung zielt darauf, die Dokumente anschließend nach den entsprechenden Charakteristika filtern zu können, um auf breiter Basis Aussagen über die Verbreitung und die konkreten Eigenschaften der Gestaltungsmittel machen zu können.</p>
-            <p>Zwei Beispiele sollen im Folgenden die dargestellte Vorgehensweise sowie die Aussagekraft der Ergebnisse der visuell-materiellen Analysen exemplarisch illustrieren.</p>
-            <figure>
-                <graphic n="1001" width="15.92cm" height="14.040555555555555cm" url="Pictures/c3cd6e3de5873b3e3dcf936fe28db9a2.png" rend="inline"/>
-                <head><p>Abb. 1: Brief von Heinz Möller an Richard Dehmel vom 16.02.1903, Dehmel-Archiv der SUB, HANSb18474, S. 1</p></head>
-            </figure>
-            
-            <p>Der oben abgebildete Brief des Leipziger Herausgebers Heinz Möller vom 16. Februar 1903 ist offensichtlich auf eigenem Briefpapier verfasst. Wie anhand des Briefkopfs mit den Initialen des Verfassers zu erkennen, tritt Möller im eigenen Namen auf und handelt nicht im Auftrag einer Organisation. Des Weiteren orientiert sich die Gestaltung des Briefs geradezu prototypisch an den Regeln der Respektsemiotik: Das Ausmaß der textfreien Weißräume an den Briefrändern und zwischen den einzelnen Briefteilen (oberer Briefrand und Anrede, Anrede und Textblock) und das äußerst sorgfältige Schriftbild bringen auf visuell-materieller Ebene die Hochachtung des Schreibenden gegenüber dem angeschriebenen Richard Dehmel zum Ausdruck und korrespondieren dabei mit verbalsprachlichen Formeln wie „Hochverehrter Herr“ und „In aufrichtiger Verehrung und Dankbarkeit“. Insbesondere im Vergleich mit dem zweiten Beispiel wird deutlich, dass gerade im Rahmen geschäftlicher Korrespondenz auch zu Beginn des 20. Jahrhunderts die seit der Antike in stetig aktualisierten „Briefstellern“ verbreiteten formalen Regeln zur Abfassung von Briefen noch Gültigkeit besaßen (vgl. Schiegg 2020). Zugleich lässt sich aus der Gestaltung eine Aussage über das Hierarchieverhältnis der beiden Korrespondenzpartner zueinander ableiten: Möller wendet sich hier, wie gesagt in eigener Sache, an Dehmel als „Obmann“ des Kartells lyrischer Autoren, um einen Nachlass für die Honorare einer von Möller geplanten Lyrik-Anthologie zu erbitten. Der Umstand, dass es sich hier um ein Bittschreiben handelt, spiegelt sich eindrücklich in der visuell-materiellen Gestaltung des Dokuments.</p>
-            <figure>
-                <graphic n="1002" width="15.92cm" height="14.11111111111111cm" url="Pictures/980f2fc53b4d7347bfbd94de855685f7.png" rend="inline"/>
-                <head><p>Abb. 2: Brief von Peter Behrens an Richard Dehmel vom 23.09.1903, Dehmel-Archiv der SUB, HANSb313015, S. 1</p></head>
-            </figure>
-            
-            <p>Das zweite Beispiel, der Brief des Kunsthandwerkers und Designers Peter Behrens an Richard Dehmel vom 23. September 1903, zeigt eine andere Form der signifikanten Individualisierung von Briefpapier: Behrens’ Briefbogen enthält zwar keinen aufgedruckten Briefkopf, die farbliche Gestaltung, das lilafarbene Briefpapier hebt ihn aber sehr stark aus dem Feld der breiteren Masse von Briefen aus dem untersuchten Zeitraum hervor und macht ihn, etwa in einem Stapel von Briefen, sofort als einen Brief des Verfassers Behrens erkennbar. Darüber hinaus weist die Gestaltung des Dokuments durchaus grundlegende visuell-materielle Charakteristika der Briefschreibung auf, die im Rahmen einer quantitativen Analyse als Eigenschaften des etablierten Brieflayouts der Zeit um 1900 ermittelt werden können: Es besteht, wie für den Brief von Möller festgestellt, ebenfalls ein gewisser Abstand zwischen dem oberen Blattrand und der Anrede sowie zwischen Blattrand und Brieftext, die Anrede ist, wiederum analog zum Brief Möllers, zentriert und der eigentliche Brieftext als Block gesetzt. Im Vergleich mit dem ersten Beispiel zeigen sich allerdings auch deutlich messbare Differenzen, die Rückschlüsse auf das Verhältnis der Korrespondenzpartner erlauben. So besteht ein deutlich geringerer Abstand zwischen oberem Blattrand und Anrede und kein gegenüber dem sonstigen Zeilenabstand vergrößerter Abstand zwischen Anrede und Brieftext. Hinzu kommt eine Wort-Einfügung über der Zeile, die ebenfalls einen Bruch mit der klassischen epistolaren Etikette darstellt und von einer größeren Vertrautheit der Korrespondenzpartner zeugt. Wiederum spiegelt hier die visuell-materielle die verbalsprachliche Gestaltung. Peter Behrens war nicht nur künstlerisch mit Richard Dehmel verbunden, sondern auch ein guter Freund, was sich in der Anrede als „Lieber Richard“ niederschlägt.</p>
-            <p>Die beiden Beispiele zeigen andeutungsweise, wie die automatisierte, quantitative Auswertung der visuell-materiellen Gestaltungsformen in einem Briefkorpus dazu beitragen kann, bereits vor der genauen inhaltlichen Sichtung der Briefe Hypothesen über das Verhältnis der Korrespondenzpartner:innen und den Zweck der Kommunikation anzustellen sowie darüber hinaus grundsätzliche Charakteristika epistolarer Kommunikation in einem bestimmten Zeitraum zu erschließen.</p>
+            <div type="div1">
+                <head>
+                    <anchor type="bookmark-start" xml:id="id_komponenten-für-annotationspipelines"/>Komponenten für Annotationspipelines
+                    <ptr type="bookmark-end" target="#id_komponenten-für-annotationspipelines"/>
+                </head>
+                <p>Die 
+                    <hi rend="italic">StandOff Tools</hi> bestehen aus zwei Komponenten:<ref n="1" target="ftn1"/> dem Extraktor 
+                    <hi rend="italic">E</hi> und dem Internalizer 
+                    <hi rend="italic">I</hi>. In einer Annotationspipeline ist zwischen 
+                    <hi rend="italic">E</hi> und 
+                    <hi rend="italic">I</hi> ein anwendungsspezifischer Plain-Text-Tagger 
+                    <hi rend="italic">T</hi> geschaltet. (Abb. 1) 
+                    <hi rend="italic">E</hi> extrahiert aus dem XML-Quelldokument plain text, der an 
+                    <hi rend="italic">T</hi> geleitet wird. 
+                    <hi rend="italic">I</hi> nimmt von 
+                    <hi rend="italic">T</hi> gelieferte Referenzierungen von Plain-Text-Fragmenten entgegen und bringt sie als Inline-Markup stets so in den XML-Baum ein, dass wohlgeformtes XML herauskommt.
+                </p>
+                <p>
+                    <hi rend="italic">E</hi> und 
+                    <hi rend="italic">I</hi> sind insofern generische Komponenten, als dass ein beliebiger Tagger in eine Pipeline zum Enrichment von XML eingesetzt werden kann, solange er folgende Anforderungen erfüllt: a) Er muss plain text verarbeiten, b) er muss darin Textpassagen (ranges) per 
+                    <hi rend="italic">character offsets</hi> referenzieren, genauer: nach den in RFC 5147, Abschnitt 2.1.1 und 2.2.2 beschriebenen Regeln für 
+                    <hi rend="italic">character ranges</hi>.<ref n="2" target="ftn2"/> Die vom Tagger ausgegebenen Ranges dürfen einander umfassen oder überlappen, so dass auch komplexe Strukturen in der XML-Quelle ausgezeichnet werden können. Die Ranges werden von 
+                    <hi rend="italic">I</hi> so zerschnitten, dass Überlappungen mit anderen Ranges und dem internen Markup der XML-Quelle aufgelöst werden (Splitting).
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/64d18574eae86cb43c3b00207678ce68.jpg"/>
+                        <head><p>Abb. 1: Schema einer Annotationspipeline für TEI XML</p></head>
+                    </figure>
+                </p>
+                
+            </div>
+            <div type="div1">
+                <head>
+                    <anchor type="bookmark-start" xml:id="id_ansätze"/>Ansätze
+                    <ptr type="bookmark-end" target="#id_ansätze"/>
+                </head>
+                <p>Die Komponenten 
+                    <hi rend="italic">E</hi> und 
+                    <hi rend="italic">I</hi> müssen so aufeinander abgestimmt sein, dass 
+                    <hi rend="italic">I</hi> hinreichend Informationen hat, um die Annotationen von 
+                    <hi rend="italic">T</hi> in das XML-Dokument einzubauen. Neben Ansätzen, die ein Sprachmodell, und sei es auch nur eine Tokenisierung, einführen und insofern nicht generisch sind (Schopper 2021, Andorfer und Schlögel 2021), lassen sich in der DH-Software-Entwicklung zwei Ansätze beobachten.
+                </p>
+                <p>Nach dem ersten extrahiert 
+                    <hi rend="italic">E</hi> die Textknoten und sammelt dabei Informationen darüber, wo Elemente anfangen und aufhören. Dies ist auf DOM-Ebene möglich. 
+                    <hi rend="italic">I</hi> kann dann Blätter des DOM-Baums so ersetzen, dass an ihrer Stelle neue Teilbäume die (zerschnittenen) Annotationen darstellen. Diesen Ansatz verfolgen die Lösung von Meyer (2022) und der Prototyp von Lassner (2021). Sein Vorteil ist, dass gängige XML-Parser eingesetzt werden können. Sein Nachteil ist, dass manche Merkmale der serialisierten XML-Quelle nicht bewahrt werden können, weil sie nicht zur DOM-Spezifikation gehören: 
+                    <hi rend="italic">character</hi> und 
+                    <hi rend="italic">entity references</hi> sowie 
+                    <hi rend="italic">whitespace</hi> in Tags.
+                </p>
+                <p>Die 
+                    <hi rend="italic">StandOff Tools</hi> verfolgen einen anderen Ansatz: Hier speichert 
+                    <hi rend="italic">E</hi> Informationen über die Position, die jedes Zeichen des extrahierten Textes im XML-Quelldokument gehabt hat (
+                    <hi rend="italic">offset mapping</hi>). DOM-Manipulationen erfolgen nicht. Ein Parser ermittelt Positionsdaten aus dem XML-Quelldokument. Die Extraktion erfolgt dann im Wesentlichen durch Kopieren von Zeichenketten aus dem serialisiert vorliegenden XML-Quelldokument. 
+                    <hi rend="italic">I</hi> kann aufgrund des 
+                    <hi rend="italic">offset mapping</hi> die Positionsdaten des Taggers auf die XML-Quelle beziehen. Wie im ersten Ansatz zerschneidet 
+                    <hi rend="italic">I</hi> die Annotationen. Das Splitting, das Herzstück des Algorithmus, basiert auf einer Auswertung der Positionsdaten (offsets), die der XML-Parser für das interne Markup und der Tagger 
+                    <hi rend="italic">T</hi> für die Annotationen liefert. Anschließend werden aufgrund der Positionsdaten Portionen der XML-Quelle in die Ausgabe kopiert und neue Tags dazwischen gesetzt. Dieser Ansatz hat den Nachteil, dass kein üblicher XML-Parser eingesetzt werden kann. Aber er reproduziert diejenigen Merkmale der XML-Quelle, welche im ersten Ansatz verloren gehen.
+                </p>
+            </div>
+            <div type="div1">
+                <head>
+                    <anchor type="bookmark-start" xml:id="id_einsatz-für-manuelle-annotationen"/>Einsatz für manuelle Annotationen
+                    <ptr type="bookmark-end" target="#id_einsatz-für-manuelle-annotationen"/>
+                </head>
+                <p>
+                    <hi rend="italic">I</hi> kann auch allein betrieben werden, um manuelle Annotationen, die Passagen eines XML-Dokuments per character offsets referenzieren, zu internalisieren und zu anschließend zu visualisieren oder auszuwerten. Solche Annotationen können z.B. als Web Annotations (OA-Ontology) realisiert werden. Wenn dabei allerdings wie in CATMA eine schlichte Extraktion von Textknoten aus HTML oder XML erfolgt, gehen dabei Informationen verloren, welche für eine Internalisierung der Annotationen erforderlich sind. Insofern bleibt die Internalisierung von CATMA-Annotationen in TEI noch Desiderat (Cayless 2019). Dennoch weisen die verschiedenen neuen Entwicklungsansätze einen Weg abseits vom nicht-funktionalen Standoff-Konzept der TEI (Banski 2010), auf welchem der Mehrwert sowohl von Standoff-Annotationen als auch von TEI realisierbar ist.
+                </p>
+            </div>
         </body>
         <back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
-                    
-                        <hi style="font-size:10pt" xml:space="preserve"> Vgl. </hi>
-                        <ref target="https://dehmel-digital.de">
-                            <hi rend="underline color(1155CC)" style="font-size:10pt">https://dehmel-digital.de</hi>
-                        </ref>
-                        <hi style="font-size:10pt">.</hi>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
-                    
-                        <ref target="https://www.ocr4all.org">
-                            <hi rend="underline color(1155CC)" style="font-size:10pt">https://www.ocr4all.org</hi>
-                        </ref>
-                    
-                </note></div>
+<note xml:id="ftn1" rend="footnote text" n="1">
+                         Die Komponenten liegen derzeit als Kommandozeilen-Programme vor. Eine Implementierung als Webservices ist in Planung, wobei sich die Modellierung des Informationsflusses komplexer gestaltet, weil der Extraktor einen mehrfachen Output hat.
+                    </note>
+<note xml:id="ftn2" rend="footnote text" n="2">Derzeit steht als Eingabe-Format für den Internalizer CSV zur Verfügung. Eine Implementierung der Syntax von RFC 5147 ist geplant.</note></div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Baasner, Rainer.</hi> Stimme oder Schrift? Materialität und Medialität des Briefs. Adressat: Nachwelt. Briefkultur und Ruhmbildung. Hg. v. Detlev Schöttker. München: Wilhelm Fink, 2008, S. 53–69.</bibl>
-                    <bibl><hi rend="bold">Bohnenkamp-Renken, Anne, Hg.</hi> Medienwandel / Medienwechsel in der Editionswissenschaft. De Gruyter, 2013, 
-                        <ref target="https://doi.org/10.1515/9783110300437">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.1515/9783110300437</hi>
-                        </ref>.
+                    <bibl>
+                        <hi rend="bold">Andorfer, Peter und Schlögl, Matthias. 2021.</hi> acdh-spacytei. In: KONDE Weißbuch. Hrsg. v. Helmut W. Klug unter Mitarbeit von Selina Galka und Elisabeth Steiner im HRSM Projekt “Kompetenznetzwerk Digitale Edition”. Aufgerufen am: 3.8.2022. Handle: hdl.handle.net/11471/562.50.2.
                     </bibl>
-                    <bibl><hi rend="bold">Busch, Hannah, und Philipp Hegel:</hi> Automatic Layout Analysis and Storage of Digitized Medieval Books. In: Digital Philology. A Journal of Medieval Cultures, 6, 2 (2017), S. 196–212, 
-                        <ref target="https://doi.org/10.1353/dph.2017.0010">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.1353/dph.2017.0010</hi>
-                        </ref>.
+                    <bibl>
+                        <hi rend="bold">Banski, Piotr. 2010.</hi> “Why TEI stand-off annotation doesn’t quite work and why you might want to use it nevertheless.” Balisage: The Markup Conference 2010, 10.4242/BalisageVol5.Banski01
                     </bibl>
-                    <bibl><hi rend="bold">Dehmel digital.</hi> Hg. v. Julia Nantke unter Mitarbeit von Sandra Bläß und Marie Flüh, seit 2021, 
-                        <ref target="https://dehmel-digital.de">
-                            <hi rend="underline color(1155CC)">https://dehmel-digital.de</hi>
-                        </ref>.
+                    <bibl>
+                        <hi rend="bold">Cayless, Hugh. 2019.</hi> “Implementing TEI Standoff Annotation in the browser.” Proceedings of Balisage: The Markup Conference 2019, no. 23, 10.4242/BalisageVol23.Cayless01
                     </bibl>
-                    <bibl><hi rend="bold">Ehlers, Klaas-Hinrich:</hi> Raumverhalten auf dem Papier. Der Untergang eines komplexen Zeichensystems dargestellt an Briefstellern des 19. und 20. Jahrhunderts. In: Zeitschrift für germanistische Linguistik 32, 1 (2004), S. 1–31. </bibl>
-                    <bibl><hi rend="bold">Henzel, Katrin:</hi> Materialität des Briefs. In: Handbuch Brief. Von der Frühen Neuzeit bis zur Gegenwart. Hg. v. Marie Isabel Matthews-Schlinzig, Jörg Schuster, Gesa Steinbrink u. Jochen Strobel. Berlin/Boston: De Gruyter 2020, S. 222–231.</bibl>
-                    <bibl><hi rend="bold">Hurlbut, Jesse:</hi> The Manuscript Average, Part 1. Dezember 2013, 
-                        <ref target="https://jessehurlbut.net/wp/mssart/?page_id=2097">
-                            <hi rend="underline color(1155CC)">https://jessehurlbut.net/wp/mssart/?page_id=2097</hi>
-                        </ref>.
+                    <bibl>
+                        <hi rend="bold">Consalvi, A. und Fumagalli, S. 2022.</hi> “Alliteration: automatic identification and encoding.” 2022 TEI Conference. Conference abstract, Session 1A-2, (im Erscheinen)
                     </bibl>
-                    <bibl><hi rend="bold">Lukas, Wolfgang und Matthias Osthof.</hi> „Physische vs. gedeutete Räumlichkeit. Zur Auszeichnung spatialer Informationen in der historisch-kritischen Ausgabe C.F. Meyers Briefwechsel“. Jahrbuch für Computerphilologie online, 2016, 
-                        <ref target="http://computerphilologie.digital-humanities.de/jg09/lukasosthof.pdf">
-                            <hi rend="underline color(1155CC)">http://computerphilologie.digital-humanities.de/jg09/lukasosthof.pdf</hi>
-                        </ref>.
+                    <bibl>
+                        <hi rend="bold">Lassner, David.</hi> “The Standoff Converter. A standoff-based approach to work on TEI documents in Python that connects the world of digital philology with NLP.” 2021 TEI Conference and Members’ Meeting.
                     </bibl>
-                    <bibl><hi rend="bold">McGann, Jerome:</hi> The Textual Condition. Princeton: Princeton University Press 1991. </bibl>
-                    <bibl><hi rend="bold">Radecke, Gabriele:</hi> Materialautopsie. Überlegungen zu einer notwendigen Methode bei der Herstellung von digitalen Editionen am Beispiel der Genetisch-kritischen und kommentierten Hybrid-Edition von Theodor Fontanes Notizbüchern. TextGrid. Von der Community – für die Community. Eine Virtuelle Forschungsumgebung für die Geisteswissenschaften. Hg. v. Heike Neuroth u. a., 2015, S. 39–56.</bibl>
-                    <bibl><hi rend="bold">Reul, Christian; Christ, Dennis; Hartelt, Alexander; Balbach, Nico; Wehner, Maximilian; Springmann, Uwe; Wick, Christoph; Grundig, Christine; Büttner, Andreas; Puppe, Frank:</hi> OCR4all — An open-source tool providing a (semi-) automatic OCR workflow for historical printings. In: Applied Sciences, 9(22), 2019.</bibl>
-                    <bibl><hi rend="bold">Schiegg, Markus: Briefsteller.</hi> In: Handbuch Brief Von der Frühen Neuzeit bis zur Gegenwart. Hg. v. Marie Isabel Matthews-Schlinzig, Jörg Schuster, Gesa Steinbrink u. Jochen Strobel. Berlin/Boston: De Gruyter 2020, S. 276–290.</bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Wiethölter, Waltraud u. Anne Bohnenkamp (Hg.):</hi> Der Brief, Ereignis &amp; Objekt. Berlin: Stroemfeld, 2010.</bibl>
+                    <bibl>
+                        <hi rend="bold">Meier, Wolfgang. 2022.</hi> “Names sell. Named Entity Recognition in TEI Publisher”, https://e-editiones.org/blog/ (zugegriffen: 3. August 2022)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schopper, Daniel. 2021.</hi> xsl-tokenizer. In: KONDE Weißbuch. Hrsg. v. Helmut W. Klug unter Mitarbeit von Selina Galka und Elisabeth Steiner im HRSM Projekt “Kompetenznetzwerk Digitale Edition”. Aufgerufen am: 3.8.2022. Handle: hdl.handle.net/11471/562.50.216.
+                    </bibl>
                 </listBibl>
             </div>
         </back>

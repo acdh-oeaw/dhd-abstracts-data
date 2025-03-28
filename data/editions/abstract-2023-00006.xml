@@ -1,61 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="BAMBERG_Claudia__Zu_Rande_kommen___Phänomen_und_Präsentation" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="THODEN_Klaus_Forschung__Informationswissenschaft_und_Archiv_" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>‚Zu Rande kommen‘: Phänomen und Präsentation von Randnotizen am Beispiel der digitalen Ferdinand-Tönnies-Briefedition</title>
+                <title>Forschung, Informations-wissenschaft und Archiv = drei Perspektiven auf eine Aufgabe</title>
                 <author>
                     <persName>
-                        <surname>Bamberg</surname>
-                        <forename>Claudia</forename>
+                        <surname>Grundig de Vazquez</surname>
+                        <forename>Katja</forename>
                     </persName>
-                    <affiliation>Universität Trier, Deutschland</affiliation>
-                    <email>bamberg@uni-trier.de</email>
+                    <affiliation>Friedrich-Schiller-Universität Jena</affiliation>
+                    <email>katja.grundig.de.vazquez@uni-jena.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Dörk</surname>
-                        <forename>Uwe</forename>
+                        <surname>Krefft</surname>
+                        <forename>Annett</forename>
                     </persName>
-                    <affiliation>Kulturwissenschaftliches Institut, Essen, Deutschland</affiliation>
-                    <email>uwe.doerk@uni-due.de</email>
+                    <affiliation>DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation</affiliation>
+                    <email>krefft@dipf.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Wierzock</surname>
-                        <forename>Alexander</forename>
+                        <surname>Thoden</surname>
+                        <forename>Klaus</forename>
                     </persName>
-                    <affiliation>Kulturwissenschaftliches Institut, Essen, Deutschland</affiliation>
-                    <email>alexander.wierzock@hu-berlin.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Trautmann</surname>
-                        <forename>Tatjana</forename>
-                    </persName>
-                    <affiliation>Schleswig-Holsteinische Landesbibliothek, Kiel</affiliation>
-                    <email>tatjana.trautmann@shlb.landsh.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Burch</surname>
-                        <forename>Thomas</forename>
-                    </persName>
-                    <affiliation>Universität Trier, Deutschland</affiliation>
-                    <email>burch@uni-trier.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Petkov</surname>
-                        <forename>Radoslav</forename>
-                    </persName>
-                    <affiliation>Universität Trier, Deutschland</affiliation>
-                    <email>petkov@uni-trier.de</email>
+                    <affiliation>DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation</affiliation>
+                    <email>thoden@ktho.de</email>
+                    <idno type="ORCID">0000-0003-0434-3951</idno>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-12-15T09:42:00Z</date>
+                    <date>2022-07-15T10:28:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -101,18 +78,17 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>digitale Briefedition</term>
-                    <term>Ferdinand Tönnies</term>
-                    <term>Datenmodellierung</term>
-                    <term>Randnotizen</term>
+                    <term>TEI</term>
+                    <term>Briefedition</term>
+                    <term>Archiv</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
                     <term>Transkription</term>
-                    <term>Strukturanalyse</term>
-                    <term>Räumliche Analyse</term>
-                    <term>Modellierung</term>
+                    <term>Beziehungsanalyse</term>
                     <term>Annotieren</term>
-                    <term>Text</term>
+                    <term>Kontextsetzung</term>
+                    <term>Archivierung</term>
+                    <term>Forschungsergebnis</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -120,182 +96,287 @@
     <text>
         <body>
             <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p style="text-align: left; ">In den Editionswissenschaften ist nicht unbemerkt geblieben, dass Randnotizen in Briefen (fortan: RN) keineswegs von marginaler Bedeutung sind. Vielmehr können sie aufgrund ihrer Länge, ihres inhaltlichen Gewichts und ihres rezeptionsästhetischen Reizes sogar die Hauptsache eines Briefs darstellen. Und das gilt vor allem für solche, die den Briefschreibenden selbst entstammen.<ref n="1" target="ftn1"/> So wurde zu Theodor Fontanes „Kunst, auf Briefrändern zu schreiben“ etwa bemerkt, dass sie das Ergebnis „intensiver schriftstellerischer Arbeit” seien, deren imposante „Architektur” schwer zu entschlüsseln ist (Erler 1968: 318-319; Gabler 2020: 1239-1240). Damit stellen RN auch die Herstellung eines Transkripts und seiner grafischen Repräsentation vor eine große Herausforderung, die gewichtige editorische und im Fall von digitalen Editionen auch informationstechnologische Entscheidungen verlangt.
-                </p>
-                <p style="text-align: left; ">Trotzdem spielen RN in den 
-                    <hi rend="italic">Digital Humanities</hi> bzw. in digitalen Editionen bisher nur eine marginale Rolle: Die Suche nach Ansätzen, die editorisch und in Bezug auf ein geeignetes Datenmodell bereits bewährte Bau- und Fahrpläne an die Hand geben, erweist sich als eher vergeblich. Bisherige digitale Brief-Editionen geben RN meist konventionell wieder: Diplomatischen Editionskonventionen folgend werden sie topografisch, teils auch zusätzlich farblich abgesetzt präsentiert<ref n="2" target="ftn2"/> oder an der zugehörigen Stelle hinzugefügt;<ref n="3" target="ftn3"/> bisweilen werden auch Arten von Randbeschriftungen unterschieden.<ref n="4" target="ftn4"/> Obgleich alle gesichteten Editionen ihre Transkriptionsregeln explizieren, begründen sie die Art ihres Umgangs mit RN nicht näher. 
-                </p>
-                <p style="text-align: left; ">In den meisten Fällen ist ein solches Vorgehen ausreichend. Problematisch wird dieses erst, wenn RN mehrere Seiten umgreifen, unterschiedliche Sinneinheiten bilden, deren Abfolge gar schwer durchschaubar bzw. interpretationsbedürftig ist. Eine rein diplomatische Transkription führt dann zu fragmentierten Brieftexten, deren Sinneinheiten im Lesen erst mühsam rekonstruiert werden müssen. Besonders unbefriedigend ist eine solche Präsentationsweise für ‚User’-Kontexte, deren Erkenntnisinteressen sich – wie in dem hier behandelten Fall von Ferdinand Tönnies – primär auf historische, politische, netzwerktheoretische, fach- und theoriegeschichtliche u.ä. Inhalte richten, aber nur selten poetische, literatur- und theorieästhetische Formen in den Blick nehmen. Für solche Fälle bedarf es anderer Lösungen. Wie ein solches hierfür spezifiziertes digitales Design aussehen kann, möchte dieser Vortrag zur Diskussion stellen. Er bezieht sich dabei auf das bereits entwickelte Konzept einer digitalen Edition der Briefe des Soziologen Ferdinand Tönnies. Diese von der DFG geförderte Briefedition entsteht momentan am Kulturwissenschaftlichen Institut Essen, der Schleswig-Holsteinischen Landesbibliothek Kiel und am Trier Center for Digital Humanities (Kompetenzzentrum 2022).</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Beobachtungen zu Randnotizen in Tönnies-Briefen</head>
-                <p style="text-align: left; ">Die Praxis, briefkommunikativ über Bande zu spielen, tritt bei Tönnies nicht durchgängig, sondern nur episodisch in bestimmten, besonders intensiven Beziehungskonstellationen auf. Und genau dann spielen RN – darin mit Fontane vergleichbar – im brieflichen miteinander ‚zu Rande- wird. Kommen‘ keine marginale, sondern eine zentrale Rolle. Wie zu zeigen sein wird, fungierten RN als Mittel einer Inklusionsstrategie, mit der die Intensität einer Freundschaft gesteigert und diese trotz Konflikten, divergierender Interessen oder Gefühlslagen aufrecht und produktiv gehalten </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ferdinand Tönnies: Gemeinschaft und Gesellschaft </head>
-                <p style="text-align: left; ">Wer war Ferdinand Tönnies? Wissenschaftsgeschichtlich war er von besonderer Bedeutung, da er zu Beginn des 20. Jahrhunderts mit Max Weber, Georg Simmel und anderen die Soziologie als eine eigenständige Disziplin begründete. Sein 1887 erstmals erschienenes Werk „Gemeinschaft und Gesellschaft“ wurde nicht nur für die frühe Soziologie ein gesellschaftstheoretisches Standardwerk, sondern prägte auch die Kultur- und Bildungspolitik der Weimarer Republik. Das dort ausformulierte Konzept der „Gemeinschaft“, das er in Opposition zur strategischen Handlungssphäre der Gesellschaft konstruiert hatte, übte auf die politischen Diskurse der Republik einen großen Einfluss aus. Zugleich beeinflussten 
-                    <hi rend="italic">Gemeinschafts-Konzeptionen</hi> auch Tönnies’ epistolare Praxis.
-                </p>
-                <p style="text-align: left; ">Besonders aufschlussreich ist hierbei die Rolle, die der Soziologe der Sprache attestierte. Er begriff sie nicht nur als Medium von Inhalten, sondern ebenso als das „wahre Organ” von „Verständnis“ (Tönnies 2019: 144). Sprache lasse die Äußerung tiefer Gefühle zu. Gemütserregungen wie Schmerz, Lust, Furcht und Wunsch würden in Laute übersetzt, so dass Menschen aufgrund ihrer anthropologischen Befähigung zur „lebhafte
-                    <hi style="font-size:10pt">[</hi>n
-                    <hi style="font-size:10pt">]</hi> Sympathie“ zu einem wechselseitig „intimen Verständnis“ und zur gemeinschaftlichen „Übereinstimmung” gelangen könnten (Tönnies 2009: 147). In dem von Tönnies besonders geschätzten Fall des intellektuellen Austauschs unter Freunden übersteigerte er das Übereinstimmen sogar zu einer „Art von unsichtbarer Ortschaft, eine[r] mystische[n] Stadt und Versammlung“, die er als geistige Gemeinschaft von anderen Vergemeinschaftungen abgrenzte (Tönnies 2019: 139, 137). Gerade die Briefe, in denen er intensiv RN gebrauchte, waren von dieser übersteigerten Gemeinschaftserwartung getragen. Um diesen bislang unbekannten Zusammenhang sichtbar zu machen, musste auch für die digitale Edition eine spezifische Umsetzung gefunden werden.
+                <head>Kurzbeschreibung des Projekts</head>
+                <p style="text-align: left; ">Das DFG-geförderte Projekt „Erziehung über Grenzen denken - Wilhelm Reins pädagogischer Korrespondenznachlass“
+                    <hi rend="Fußnotenanker"><ref n="1" target="ftn1"/>
+                    </hi> zielt auf eine transnationale und vergleichende Analyse vielfältiger historischer pädagogischer Kontakte und länderübergreifender pädagogisch-reformerischer Diskurse und leistet damit Grundlagenforschung mit bildungstheoretischem Schwerpunkt. Quellengrundlage ist der umfangreiche, langjährige und vielfältige internationale pädagogische Korrespondenznachlass Wilhelm Reins. Der in seiner Wirkungszeit international einflussreiche Erziehungswissenschaftler, Lehrerbildner und pädagogische Netzwerker Rein (1847–1929) hatte an der Universität Jena das erste Ordinariat für Pädagogik in Deutschland inne. Das Forschungsvorhaben wird verbunden mit der archivarischen Bearbeitung der Originalquellen, der Aufbereitung des detailliert vorliegenden Metadatenkorpus sowie der Bereitstellung des gesamten pädagogischen Briefnachlasses in edierter Form als ein frei verfügbares nachnutzbares Instrument für weiterführende
+                    <anchor xml:id="_DdeLink__663_2275975164"/> Forschungen. 
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Tönnies als Briefschreiber</head>
-                <p style="text-align: left; ">Tönnies wurde am 26. Juli 1855 in eine Welt der voll entfalteten modernen Postinfrastruktur hineingeboren. Die Epochensignatur der Beschleunigung prozessierte gerade in der hochgradig brieflich geprägten Schriftkultur, wie sie für das Bürgertum des 19. und frühen 20. Jahrhunderts typisch war. In seiner „Kritik der öffentlichen Meinung“ von 1922 schrieb Tönnies: „In unendlichen Mengen schwirren heute Briefe […] hin und her, am meisten innerhalb eines Landes, noch intensiver in engeren Gebieten, aber auch über die Grenzen von allen Orten, zu allen Orten des Erdballes“ (Tönnies 2002: 370). Das galt auch für Tönnies selbst, der im damaligen Wissenschaftsbetrieb bis zur Etablierung von Soziologie eine periphere Stellung einnahm und seine globalen wie lokalen Wissenschaftsbeziehungen primär über Briefe pflegte.</p>
-                <p style="text-align: left; ">Die hohe Abhängigkeit vom Medium des Briefes schlug sich auch in einer permanenten Reflexion über Möglichkeiten und Grenzen dieser Kommunikationsform nieder, zumal Tönnies den Brief für ein unvollkommenes Surrogat der Kommunikation unter Anwesenden hielt. Trotzdem schrieb er fast täglich Briefe, da diese nicht nur Mittel zum Austausch mit Kollegen waren, sondern zugleich ein Medium zur Stiftung und Pflege sozialer Verbindungen im obigen Sinne.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Phänomen und Bedeutung von RN in Tönnies-Briefen </head>
-                <p style="text-align: left; ">Das Aufkommen von RN lässt sich bei Tönnies ausschließlich in vertrauten Kommunikationssituationen beobachten. Nur nach einer Serie von Briefwechseln, nur nach wiederholten persönlichen Treffen in physischer Anwesenheit, nur nach oder einhergehend mit – diskret oder explizit – bekundeter Sympathie griff er auf dieses Stilmittel zurück. Je persönlicher und intensiver die Korrespondenz wurde, desto häufiger und komplexer setzte er RN ein. Kühlte die Beziehung wieder ab, wurden sie seltener und weniger komplex. Komplexität bezeichnet dabei das Maß an gleichzeitiger Rekursivität und Unübersichtlichkeit, wenn RN sich über mehrere Seiten hinweg erstrecken, in wechselnde Sinneinheiten und in unterschiedliche Arten untergliedern (z.B. fortlaufende Textabschnitte mit Apposition, Unterbrechung, Stern-Kommentar und Fußnotenzitat).</p>
-                <figure>
-                    <graphic n="1001" width="10.945086111111111cm" height="17.123333333333335cm" url="Pictures/ab47d233fba254608bb8ff188b7fbd33.png" rend="inline"/>
-                    <head>Beispiel für einen Brief mit mehreren RN (Tönnies 1879: 3)</head>
-                </figure>
-                
-                <figure>
-                    <graphic n="1002" width="14.685258333333334cm" height="10.000538888888888cm" url="Pictures/4ac584e7ed0ee680451a4bb0bdc2bc52.png" rend="inline"/>
-                    <head>Beispiel für eine Postkarte mit mehreren RN (Tönnies 1881: 2)</head>
-                </figure>
-                <p style="text-align: left; ">Der Effekt für die Lesenden bestand zunächst darin, dass sie, bei gleichzeitig undeutlich werdender Schrift, eine Übersicht gewinnen, Reihenfolgen bilden und voneinander abgegrenzte Sinneinheiten und Verweiszusammenhänge rekonstruieren müssen. Systematisch zusammengefasst sind mit RN noch weitere kommunikativen Effekte verbunden:</p>
-                <p style="text-align: left; ">A) Zunächst führt das Hinausschieben des Briefendes zu einer Verlängerung der Produktionssituation, wodurch die briefliche Gemeinschaft mit der adressierten Person prolongiert wird.</p>
-                <p style="text-align: left; ">B) Sodann bedingt der Zwang, die im Vergleich zum Kerntext i.d.R. schwerer lesbaren Randnotate zu entziffern und zu ordnen, eine längere Lesezeit und damit die Prolongierung der Rezeptionssituation. </p>
-                <p style="text-align: left; ">C) RN setzen Impulse zur Anschlusskommunikation. Das gilt sowohl für den Schreibenden, der sich selbst durch RN zur Abfassung neuer RN oder zur Eröffnung neuer Briefseiten reizt, als auch für die Brieflesenden, die mit zusätzlichem Material für weitere Anschlusskommunikationen ‚gefüttert‘ werden. Diese Wirkung verstärkt sich durch eine spezifische Themenwahl. So streute Tönnies in RN bevorzugt Nachrichten aus dem geteilten sozialen Umfeld, so dass das, was ‚Tratsch‘ (Bergmann 1987: 198-202) genannt werden kann, zusätzlich zur Fortsetzung animierte. </p>
-                <p style="text-align: left; ">D) Der Themenbereich Tratsch lässt das Bemühen erkennen, mittels diskret eingebrachter Informationen unterschiedliche Netzwerke miteinander zu verknüpfen und diese zu einem Kreis geistig Gleichgesinnter zusammenzuschließen (Simmel 1989: 237-257).</p>
-                <p style="text-align: left; ">E) Häufig finden sich in RN jedoch auch Ergänzungen oder Präzisierungen literarischer oder terminologischer Art, so dass RN – insbesondere in wissenschaftlichen Kontexten – der literarischen Vernetzung dienten.</p>
-                <p style="text-align: left; ">In der Summe des Zusammenwirkens von A, B, C und D ergibt sich nicht nur die Prolongierung der briefkommunikativen Gemeinschaft per Produktion und Rezeption, sondern auch eine verstetigte Kommunikation über epistolare Einzelepisoden hinweg.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Erfassung und Darstellung von Randnotizen</head>
-                <p style="text-align: left; ">Aufgrund ihrer wichtigen Funktion musste für Randnotizen eine angemessene Präsentationsweise gefunden werden. Was aber heißt angemessen? Diese Frage lässt sich nicht allein aus der unterstellten Bedeutung von RN beantworten, sondern richtet sich zugleich an die Rezeptions- und Nutzungserwartung, die hochgradig durch die bisherige Leseerfahrung geprägt ist. Dabei ist zu beachten, dass in den Briefeditionen anderer zeitgenössischer soziologischer Fachklassiker wie Max Weber und Georg Simmel, an denen unser Editionsvorhaben gemessen wird, Randnotizen keine oder fast keine Rolle spielen.<ref n="5" target="ftn5"/> Hinzu kommt eine Fachkultur, die an der Entwicklung von Theorien großes Interesse zeigt, nicht aber an sogenannten ‘philologischen Feinheiten’. Der Brieftext hat daher primär das Kriterium der Lesbarkeit zu erfüllen. Sollte allerdings zugleich die Chance geboten werden, mithilfe des Transkripts das Faksimile entziffern zu lernen, dann wäre eine topografisch getreue Wiedergabe nötig. 
+                <head>Ausgangslage</head>
+                <p style="text-align: left; ">Das Projekt
+                    <hi rend="Fußnotenanker"><ref n="2" target="ftn2"/>
+                    </hi> baut auf Arbeitsergebnisse aus einer Vorbereitungsphase (2016-2017) und einem Anschubprojekt (1/2018-6/2019)
+                    <hi rend="Fußnotenanker"><ref n="3" target="ftn3"/>
+                    </hi> auf, in deren Verlauf das Quellenkorpus durch die Forschenden im Projekt erfasst, kategorisiert, strukturiert, systematisiert und digitalisiert wurde. Während der Vorbereitungsphase wurde der pädagogische Korrespondenznachlass aus dem Gesamtbestand des schriftlichen Nachlasses Reins herausgelöst und in (A) Briefe an Rein, (B) Briefe von Rein und (C) Kondolenzschreiben zum Ableben Reins unterteilt. Diese Dokumentmenge bildet das Quellenkorpus, das im Rahmen des vorgestellten Projekts bearbeitet und ausgewertet wird. 
                 </p>
-                <p style="text-align: left; ">Aus diesen divergierenden Ansprüchen an den Editionstext ergibt sich ein Zielkonflikt: Eine rein topografische Wiedergabe vermag den seitenübergreifenden Sinnzusammenhang von Randtexten nicht wiedergeben, so dass kein ‚lesbarer‘ Text entstünde. Eine Präsentationsweise, die Randnotizen in ihrem ‘Kontext’ darstellt, eignet sich dagegen nicht als „Lesehilfe“. Die Lösungsmöglichkeit besteht somit darin, die digitale Briefedition mit beiden Möglichkeiten der Textwiedergabe auszustatten und zugleich ein möglichst elegantes Wechseln der Präsentationsweise zu gewährleisten.</p>
-                <p style="text-align: left; ">Die Dualität des Ansatzes muss daher mit einem geeigneten Datenmodell beschrieben und mit einer passenden Erfassungsmöglichkeit ausgestattet werden. Im Projekt geschieht dies während der Transkription eines Briefes in der virtuellen Forschungsumgebung des Softwareprogramms FuD (
-                    <ref target="http://www.fud.uni-trier.de">
-                        <hi rend="underline color(1155CC)">www.fud.uni-trier.de</hi>
-                    </ref>). Auch die Modellierung der RN erfolgt dann im Kontext der gesamten digitalen Briefedition innerhalb der dafür eingesetzten virtuellen Forschungsumgebung, die auf einem relationalen Datenbankmanagementsystem aufsetzt. Dabei erhalten die Randnotizen eindeutige Identifier, mittels derer die Verknüpfung von RN untereinander und innerhalb des Haupttextes abgebildet wird. Weitere Informationen, wie die topographische Positionierung der RN auf der Seite in Form von Metadaten (u.a. Angaben wie „Position: linker Rand; Drehung: 90“ bzw. „Position: unterer Rand; Drehung: 180“) werden auch erhoben. All diese Daten werden in unserem relationalen Entity-Relationship-Modell abgebildet und können somit in ihrer Gesamtkomplexität erfasst werden. Dadurch lassen sich die RN während der Transkription an den betreffenden Stellen einordnen; ebenso lässt sich die logische Lesereihenfolge konstruieren. Zusätzlich erlaubt das Analysemodul von FuD eine Annotation sämtlicher Textteile auf einer Metaebene und damit auch eine sich auf inhaltlicher Ebene bewegende Verknüpfung und Erschließung. Die konsequente Modellierung und Abbildung der Sachverhalte in einer relationalen Datenbank erlauben einen entsprechenden Export der Daten mithilfe einer geeigneten XML-Kodierung, für die im Laufe des Projektes eine Darstellung auf Basis der TEI-Guidelines (u.a. Modul „Linking, Segmentation and Alignment“) implementiert wird.
+                <p style="text-align: left; ">Im Anschubprojekt wurde die pädagogische Korrespondenz alphabetisch nach Korrespondenzpartner*innen sowie chronologisch strukturiert, erfasst und gemäß den 
+                    <hi rend="italic" xml:space="preserve">DFG-Praxisregeln „Digitalisierung“ </hi>(Deutsche Forschungsgemeinschaft 2016) digitalisiert. Den Korrespondent*innen wurden projekteigene Grundsignaturen, den Briefen Dokumentsignaturen zugewiesen. Die grundlegenden Metadaten der Dokumente (1) Signatur, (2) Verfasser*in/Empfänger*in, (3) Ausstellungsdatum, (4) Ausstellungsort, (5) Umfang, (6) Dokumenttyp, (7) Sprache, (8) Prüfvermerke und (9) Dateinamen der zugehörigen Images wurden im Bibliographieprogramm Zotero
+                    <hi rend="Fußnotenanker"><ref n="4" target="ftn4"/>
+                    </hi> erfasst. Als Grundlage zur Auszeichnung und Auswertung der Quellen wurden eine Indexsystematik und ein fachsystematischer Index zur kontrollierten Indexierung entworfen. Im Juli 2019 wurde mit der Recherche bio-bibliographischer Angaben zu den Verfasser*innen begonnen, welche in der aktuellen Projektphase fortgeführt wird.
+                    <hi rend="Fußnotenanker"><ref n="5" target="ftn5"/>
+                    </hi>
                 </p>
-                <p style="text-align: left; ">Über die Darstellung von Brieftexten und Randnotizen hinaus ermöglicht diese Art der Kodierung auch eine quantitative Analyse des Phänomens ‘RN’ sowie eine gezielte Suche nach RN-Inhalten. So können einerseits für Fragen der Art „Bei welchen Korrespondenzpartnern verwendete Tönnies häufig RN?”, „Ändert sich die Häufigkeit von RN über den zeitlichen Verlauf einer Korrespondenz?”, „Wie verhält sich der Textumfang in den RN zur Gesamtlänge eines Briefes?” usw. geeignete Visualisierungen erstellt werden. Andererseits lassen sich durch die Annotation der RN nach dem obigen Muster qualitative Fragen wie „In welchen Korrespondenzen treten vermehrt RN mit dem Thema ‘Tratsch’ auf?”, „Wann werden welche ‘Nachrichten’ bezogen auf die Gesamtkorrespondenz in den RN erwähnt?” usw. beantworten. Auf Basis des Datenmodells können in der grafischen Benutzeroberfläche der Edition dann einerseits die einzelnen Randnotate eines aktuell gezeigten Digitalisats synoptisch oder die RN in ihrem übergreifenden Gesamtzusammenhang wiedergegeben werden. Andererseits können die Visualisierungskomponenten einzelne Befunde zu den vorgenannten Fragen in interaktiver Form anbieten, so dass die Benutzenden jederzeit von der Visualisierung Zugriff auf die Korrespondenzen haben. Durch eine modulare Anordnung der Visualisierungen lassen sich entsprechende Vergleichsmöglichkeiten schaffen. Eine einfache quantitative Analyse der RN innerhalb einer Korrespondenz zeigt die folgende Abbildung, in der die chronologische Verteilung der RN in 159 Briefen von Ferdinand Tönnies an Friedrich Paulsen abgebildet ist:</p>
-                <figure>
-                    <graphic n="1003" width="16.464266666666667cm" height="9.819855555555556cm" url="Pictures/451bdd55ac1028d345b591cebed82109.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Man erkennt, dass Tönnies im Laufe der Kommunikation immer wieder RN verwendet, das Phänomen aber über die gesamte Dauer der Korrespondenz abnimmt.</p>
+                <p style="text-align: left; ">In der Anschubphase wurden, basierend auf der Sichtung der Briefe und den erzeugten Metadaten, erste inhaltliche Erkenntnisse gewonnen, welche auf ein vielfältiges Erkenntnispotenzial des Bestandes verweisen und die zur Herleitung der u.g. Forschungsschwerpunkte geführt haben. So kann man z. B. aus Erkenntnissen zu Umfang, Dauer und Reichweite der Korrespondenz und zur Diversität der beteiligten Korrespondent*innen auf eine bemerkenswert heterogene Struktur des Korrespondenzgefüges schließen. Diese heterogene Struktur wird durch den Korrespondenznachlass wesentlich dokumentiert, so dass dieses Quellenkorpus vergleichende wie transzendierende Analysen (s. u.) von Diskursen und Dynamiken zwischen vielfältigen Akteur*innen über vielfältige Begrenzungen hinweg ermöglicht.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Zusammenfassung</head>
-                <p style="text-align: left; ">Wie gezeigt, spielen RN eine wichtige Rolle in der Art, wie Tönnies per Briefkommunikation bestimmte Netzwerke im Selbstverständnis nach 
-                    <hi rend="italic">Gemeinschaft und Gesellschaft</hi> strukturiert; als ein komplex genutztes Instrumentarium sind sie daher sowohl für die Art der Briefkommunikation als auch für die gelebte Praxis der von Tönnies entworfenen Theorie äußerst aufschlussreich. Aus diesem Grund musste für die Repräsentation der RN eine philologische, programmiertechnische und ästhetisch angemessene Lösung gefunden werden, die hier zur Diskussion gestellt wird.
+                <head>Quellenkorpus als Datengrundlage</head>
+                <p style="text-align: left; ">Der pädagogische Korrespondenznachlass Reins umfasst insgesamt 6.301 Korrespondenzdokumente (Briefe, Postkarten, Telegramme) von mehr als 3.500 Korrespondent*innen aus 42 Ländern. Diese Originalquellen – überwiegend in deutscher Kurrentschrift – bilden in einem Zeitraum von sechs Jahrzehnten (1869-1929) interne Perspektiven vielfältiger Akteur*innen ab, die in kontroverse und einflussreiche bildungspolitische Diskurse mit oftmals internationaler Reichweite eingebunden waren. Zu den Korrespondent*innen zählten Personen unterschiedlichster Hintergründe und Weltanschauungen, darunter Vertreter*innen einer pädagogisch-akademischen Elite (z. B. Nicolas Murray Butler, Adolf Damaschke, Friedrich Wilhelm Förster, Helene Lange, Paul Geheeb, Paul Natorp, Friedrich Paulsen, Eduard Spranger) und einflussreiche Personen aus Politik und Gesellschaft (z. B. Gertrud Bäumer, Houston Stewart Chamberlain, Else Fisch, Marie Fischer-Lette, Friedrich Naumann), aber auch zu einem wesentlichen Teil Personen, die aufgrund vielfältiger Faktoren (z. B. Geschlecht, sozialer, fachlicher oder akademischer Status, Religion oder geographische Herkunft) in pädagogischen Diskursen und bildungsgeschichtlich unterrepräsentiert sind. Rein zählte in mehreren Bereichen (insbesondere Lehrerbildung, Volksschulbildung, höhere Frauenbildung) als progressiver pädagogischer Reformer. Sein Expert*innennetzwerk war weitverzweigt und im zeitgenössischen Vergleich bemerkenswert heterogen und inklusiv. Der Korrespondenznachlass dokumentiert dieses in wesentlichen Auszügen und konserviert sowohl Stimmen von Akteur*innen, die ihr Wirken und ihre Expertise in der (fach)öffentlichen Wahrnehmung breiter sichtbar machen konnten, als auch von solchen Personen, die maßgeblich in die Verbreitung und Rezeption pädagogischer Theorie und Praxis eingebunden waren, aber keine nennenswerte Sichtbarkeit erlangen konnten. Das macht dieses bisher kaum erforschte Quellenkorpus aus bildungsgeschichtlicher Sicht bemerkenswert. Das Wirken unterschiedlicher Akteur*innengruppen, ihre Kontakte und Synergien, pädagogische Entwicklungen und Phänomene können vergleichend und vielfältige Abgrenzungen transzendierend (z. B. Kultur, Status, geographische und geopolitische Grenzen, Ideologien, Geschlecht) exemplarisch erforscht werden. Bei der Auswertung muss die besondere Art der Quellendokumente berücksichtigt werden. Briefe<ref n="6" target="ftn6"/> stellen besondere Anforderungen an die Auswertung, bieten aber auch Forschungspotenzial, das andere historische Quellentypen nicht aufweisen (vgl. Baillot 2020, S. 390, Budde 2020, Henzel 2020, S. 226 ff.). Sie transportieren als Lebenszeugnisse (Nutt-Kofoth 2016) und Ereignisse (Stadler, Illetschko und Seifert 2016), die in größere kommunikative Zusammenhänge eingebunden sind, mehr Informationsschichten als z. B. Fachpublikationen. Als solche sind Briefe sensible Dokumente, die ursprünglich nicht für eine (breitere) Öffentlichkeit bestimmt waren. Sie repräsentieren einen im zeitgenössischen Kontext auch durch das Postgeheimnis gesetzlich geschützten (vgl. Standhartinger 2020, S. 272) Kommunikationsraum, in dem Verfasser*innen persönliche Meinungen, fachliche Positionen oder auch private Belange tendenziell unverstellter darlegen können. 
+                </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Zielperspektiven des Projektes</head>
+                    <p style="text-align: left; ">In der 
+                        <hi rend="bold">Grundlagenforschung bzw. Quellenauswertung</hi> folgt das Projekt der Annahme, dass sich pädagogische Reform als ein verbindendes wie mehrdeutiges Motiv auf die Verbreitung, Rezeption, Gestaltung und Entwicklung pädagogischer Theorie und Praxis ausgewirkt hat. Schwerpunktmäßig soll untersucht werden, (1) ob pädagogische Reform nachweislich ein wesentliches Motiv des zeitgenössischen pädagogischen Austausches war, (2) in welchen thematischen Kontexten pädagogische Reform ggf. diskutiert worden ist, (3) ob sich verschiedene bzw. welche unterschiedlichen Konnotationen von pädagogischer Reform sich identifizieren lassen, (4) ob bzw. in welchem Maße das Sprechen über pädagogische Reform einen fachlichen Austausch über Grenzen hinweg begünstigt hat und (5) ob bzw. inwiefern unterschiedliche Konnotationen oder Verwendungen des Motivs pädagogische Reform zu Störungen in der fachlichen Kommunikation geführt haben. Ergänzend dazu sollen bio-bibliographische Daten und Erkenntnisse zu Kontakt- und Netzwerkstrukturen zwischen den beteiligten Korrespondent*innen gewonnen werden. Ein besonderes Interesse gilt bildungshistorisch unterrepräsentierten Akteur*innen, ihrem Einfluss und Wirken und den Themen und Positionen, die durch sie bearbeitet und vertreten worden sind.
+                    </p>
+                    <p style="text-align: left; ">Als 
+                        <hi rend="bold">strukturelles Ziel</hi> wird im Laufe des Projekts ein übersichtliches recherchier- und zitierfähiges, digitales Korpus als nachnutzbare Grundlage für die inhaltliche Auswertung und weiterführende Forschungen erstellt. Dazu werden die Quellentexte in digitale Volltexte in TEI/XML transkribiert, indexiert und inhaltlich ausgewertet. Aufgrund des Entstehungszeitraumes der Briefe sind zwar keine Persönlichkeitsrechte der Korrespondenzpartner*innen sowie der in den Briefen Erwähnung findenden dritten Personen zu beachten, hingegen gelten noch Urheberrechte für einen Teil der Briefe. Daher werden die Volltexte gemeinsam mit den digitalen Faksimiles der Korrespondenzdokumente über ein abgestimmtes Rechtemanagement sukzessive im Projektverlauf über die Editionsumgebung der BBF (EditionenBildungsgeschichte
+                        <hi rend="Fußnotenanker"><ref n="7" target="ftn7"/>
+                        </hi>) soweit möglich unter freier Lizenz bzw. gemäß § 60f UrhG verfügbar gemacht. Die gewonnenen bio-bibliographischen, geographischen sowie Kontakt- und Netzwerkdaten werden nach Abschluss der Auswertung als wertvolle Ergänzung der edierten Texte veröffentlicht. Zudem ist die Anreicherung der GND um bisher unbekannte Personen bzw. um hinzugewonnene biographische Informationen zu bereits erfassten Personen ein weiteres Projektziel. Von zentraler Bedeutung im Projekt ist darüber hinaus die dauerhafte Sicherung sowohl der unikalen Originaldokumente durch entsprechende konservatorische Maßnahmen als auch aller digitalen Projektdaten. 
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Daten, Methoden und Werkzeuge</head>
+                    <p style="text-align: left; ">Im Projekt werden vier Datenarten unterschieden, deren Erzeugung aufeinander aufbaut: Er-schließungsdaten (A), digitale Faksimiles (B), digitale Volltexte (TEI/XML) (C) und semantische Daten (D). Am Anfang der Forschungsdatenerzeugung steht die archivarische Nacherschließung (A) und Image-Publikation (B). Die Volltexterzeugung (C) erfolgt im TEI/XML DTA-Basisformat, das schließlich die Grundlage eines strukturierten, zitierfähigen Korpus bildet (Ausgangsdaten). Durch die darauf aufbauende semantische Anreicherung, Auswertung und automatisierte Analyse werden Forschungsdaten (Arbeitsdaten) erzeugt (D).</p>
+                    <p style="text-align: left; ">Neben der dauerhaften Sicherung dieser bildungs- und kulturhistorisch wertvollen Originalquellen verfolgt das Infrastrukturteilprojekt die Nachnutzung der im Anschubprojekt erzeugten Forschungsdaten. Der für das Projekt entwickelte Workflow vereinbart archivarische Erschließungskonventionen mit den Bedarfen eines bildungshistorischen Forschungsprojektes. Die im Anschubprojekt erzeugten Metadaten werden zunächst mithilfe des Datenbereinigungstools Open Refine
+                        <hi rend="Fußnotenanker"><ref n="8" target="ftn8"/>
+                        </hi> normalisiert, mit den digitalen Repräsentanten verknüpft sowie Orts-, Personen- und Körperschaftsangaben mit GND-Nummern angereichert. Nach dem Import in die Archivdatenbank erfolgen eine Qualitätsprüfung und die Vergabe von eindeutigen, dauerhaften Archivsignaturen. Die XML-Exporte aus der Archivdatenbank bilden die Basis für die Erzeugung von TEI/XML-Vorlagen für jeden Brief, die so bereits alle relevanten Metadaten mitführen und damit als Grundlage für die Transkription der Briefe dienen. Die Transkription erfolgt gemäß einer leicht angepassten Version des DTA-Basisformats (Haaf, Geyken und Wiegand 2014), sodass die Ergebnisse direkt in die Editionsinfrastruktur der BBF eingebunden werden können. Parallel dazu erfolgt die Veröffentlichung der Faksimiles über ScriptaPaedagogica
+                        <hi rend="Fußnotenanker"><ref n="9" target="ftn9"/>
+                        </hi>, dem digitalen Textarchiv der BBF. Das System sichert die dauerhafte Verfügbarmachung der Bilder durch die Vergabe von URN, und der integrierte IIIF-Server erlaubt den Export der Digitalisate und der zugehörigen Metadaten in einschlägigen Formaten (z. B. .jpg, .tiff, .mets). Zudem werden für die Digitalisate standardmäßig DFG-Viewer-kompatible METS/MODS-Pakete erstellt, die in Zusammenhang mit den hochauflösenden Masterscans im TIFF-Format eine Voraussetzung für den digitalen Langzeiterhalt bieten. Für die weitere wissenschaftliche Auswertung bilden die Transkription, die Metadaten sowie die Auszeichnung und Kodierung der Volltexte d
+                        <anchor xml:id="move108441872"/>ie Grundlage. Diese werden im freien, portablen und offenen Format TEI/XML gespeichert und sind somit ebenfalls langzeitarchivierungsfähig. Zudem ist so eine plattformunabhängige Nachnutzbarkeit der Daten möglich. Im Projekt werden die angereicherten TEI/XML-Dateien in strukturierte Textdateien überführt, welche wiederum als Grundlage für die weitere Auswertung in der Analysesoftware MAXQDA Analytics Pro
+                        <hi rend="Fußnotenanker"><ref n="10" target="ftn10"/>
+                        </hi> dienen. 
+                    </p>
+                    <p style="text-align: left; ">Bei der Erzeugung und Auswertung derjenigen Forschungsdaten, die der inhaltlichen Analyse dienen, werden (teil)automatisierte Analyseverfahren in ein klassisches hermeneutisches Vorgehen integriert. Die Volltexte werden auf Grundlage von deduktiv wie induktiv generierten Indizes ausgezeichnet. Angewendet werden ein fachsystematischer Index, ein Kontext- und ein Beziehungsindex. Die induktive Weiterentwicklung der Indizes stellt dabei bereits eine eigene Forschungsleistung dar, wobei die Indizes die Grundlage für die Auszeichnung expliziter wie impliziter Nennungen bilden. Als zentrales Werkzeug dient MAXQDA Analytics Pro, das durch die Anwendung und Generierung von sehr umfangreichen „lebenden“ Indizes eher unkonventionell zur Unterstützung einer hermeneutischen Textanalyse durch qualitative und quantitative Verfahren genutzt wird. MAXQDA bietet in dieser Version Funktionen (z. B. Keyword-in-Context- und Mixed-Method-Anwendungen), die eine Anreicherung eines qualitativ-quantitativ-hermeneutischen Vorgehens durch teilautomatisierte Verfahren wie Kollokations- bzw. Kookkurrenzanalysen ermöglichen. Über die initialen Forschungsfragen hinaus soll das Textkorpus perspektivisch über Topic-Modeling-Verfahren genauer beschrieben werden.</p>
+                    <p style="text-align: left; ">Die inhaltliche Analyse folgt einem vergleichend-transzendierenden Ansatz. Das besondere Potenzial des Quellenkorpus wird genutzt, um Dynamiken der Verbreitung und Rezeption pädagogischer Theorie und Praxis zwischen vielfältigen Akteur*innen über vielfältige Grenzen hinweg nachzuzeichnen. So wird ein Beitrag geleistet, Bildungsgeschichte(n) kritisch zu hinterfragen und aktuelle Bedingungen im Bildungswesen besser zu verstehen. Als besonders interessant erscheinen Unterschiede zwischen typischen und untypischen, wie zwischen repräsentierten und unterrepräsentierten Akteur*innen; eine systematische Unterscheidung, die im Projekt als zentrales Forschungswerkzeug entwickelt wurde. Im Ansatz werden vergleichende Perspektiven mit Perspektiven zusammengeführt, bei denen es um die Überwindung oder Transzendierung vielfältiger Abgrenzungen geht. Für letztere Perspektiven wird in dem hier beschriebenen Forschungsprojekt der Terminus „transzendierende Ansätze“ neu gesetzt, um Zugänge zu benennen, die Phänomene Grenzen überwindend und abgegrenzte Bereiche durchdringend beschreiben. Transzendierende Ansätze (die über transnationale Ansätze hinausgehen<ref n="11" target="ftn11"/>) werden genutzt, um Transfer- und Zirkulationsprozesse und -zusammenhänge zu erforschen und darzustellen. Vergleichende Perspektiven werden hinzugezogen, um spezifische Ausprägungen zu untersuchen. Transzendierend wie vergleichend werden pädagogische Akteur*innen(gruppen), ihr Wirken, ihr Einfluss sowie Kontakte und Netzwerke zwischen ihnen analysiert. Mit Blick auf inhaltliche, theoretische und paradigmatische Grenzen wird z. B. mit Fokus auf unterschiedliche Milieus oder Berufsgruppen u. a. untersucht, wie Motive, Positionen und Diskurse voneinander abgegrenzt und wie um Deutungshoheiten gerungen wurde, aber auch wie Motive, Positionen und Diskurse, die zunächst als widersprüchlich erscheinen (z. B. traditionelle bzw. konservative versus reformorientierte Positionen) in Theorien und Praktiken vermischt oder miteinander in Einklang gebracht wurden (vgl. Geiss/Reh 2020). 
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Herausforderungen</head>
+                <p style="text-align: left; ">Wie oben beschrieben, werden die Daten je nach Verwendungszweck in verschiedenen Formaten benötigt. Also muss sichergestellt werden, dass erstens alle Daten ohne Verlust oder Mehraufwand sowohl für die Ansprüche eines umfänglich durchsuchbaren Volltextkorpus, als auch für die Analyse mit MAXQDA aufgearbeitet werden und zweitens die erzeugten Datenarten idealerweise aufeinander aufbauen und sich gegenseitig ergänzen. Es mussten u. a. Lösungen gefunden werden, Auszeichnungsdaten z. B. zu Personen, Orten und Werken, die während der Transkription in TEI-XML vorgenommen werden, so in der Textdatei auszugeben, dass diese mit den Volltexten nach MAXQDA importiert und dort als bereits ausgezeichnet übernommen werden.</p>
+                <p style="text-align: left; ">Bei der Bearbeitung und Auswertung des Textkorpus wird mit unterschiedlichen Repräsentationsformen der Dokumente gearbeitet. Dabei müssen die Charakteristika der unterschiedlichen Formate – sowohl der physischen Originaldokumente wie aller erzeugten Repräsentanten – stets mitgedacht und Hinzufügungen wie Annotationen mitgeführt werden. Gleichzeitig bedeutet die forschungsgestützte Auszeichnung und Migration von Texten in andere Datenformate nicht nur eine Anreicherung der Originaltexte, sondern auch das Hervorbringen von neuen Daten bzw. Quellen. Das geht mit der Herausforderung einher, durch die Auswahl von geeigneten Tools die gewonnenen Informationen nachnutzbar und dauerhaft verfügbar zu machen.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Fazit</head>
+                <p style="text-align: left; ">Das Projekt baut auf Ergebnisse aus zwei vorhergehenden Projektphasen auf. Es operiert mit unterschiedlichen Datenformaten und verbindet zentrale Aufgaben und Verpflichtungen von Forschenden mit den Aufgaben einer Forschungsbibliothek mit angegliedertem Archiv (vgl. Müller 2019; Reh et al. 2020). Daraus ergeben sich komplexe Herausforderungen: (1) in der Kommunikation zwischen den unterschiedlichen Beteiligten, (2) in den Verfahrensweisen und (3) in der technischen Umsetzung. Diese gehen neben der erwähnten Verwendung unterschiedlicher Datenformate auf verschiedene (Konnotationen von) Begrifflichkeiten und Zielperspektiven zurück. Als ein Projekt, das wesentlich mit digitalen Methoden arbeitet, verorten wir es als ein einschlägiges DH-Projekt für die Bildungsgeschichte. Die Projektergebnisse können in gleichem Maße als End- und Ausgangspunkt von Forschung verstanden werden, da aus Forschendenperspektive tatsächlich neue Quellen erzeugt werden, die durch neue Daten angereichert sind. Aufgrund des erzeugten Mehrwertes werden weiterführende Forschungen eher die erzeugten Abbilder und Datenvarianten der Originalquellen als die ursprünglichen physischen Dokumente auswerten. Alle Daten werden dabei gemäß den FAIR-Prinzipien dauerhaft auffindbar, zugänglich, interoperabel und nachnutzbar bereitgestellt (vgl. Wilkinson et al. 2016).</p>
+                <p style="text-align: left; ">Bei der Überlegung, welche Datenformate im Projekt genutzt werden und auf welche Weise sie in andere Formate überführt werden, muss zudem deren mehrdimensionale Wirksamkeit – Dokumentation, Erforschung 
+                    <hi rend="italic">und</hi> Erzeugung bildungsgeschichtlicher Daten bzw. Quellen – stets mitgedacht werden. Diese Anforderung geht über den Anspruch hinaus, dass Daten so erzeugt werden müssen, dass sie sowohl Forschung wie auch editorische Bearbeitungen ermöglichen. Tatsächlich zeigt das hier vorgestellte Projekt exemplarisch, welche Bedeutung auch in den Sozial- und Geisteswissenschaften einer engen Kooperation zwischen Akteur*innen in Forschung und Infrastruktur zunehmend zukommt (vgl. Cremer et al. 2021). Um anschlussfähige und langfristig nachnutzbare Forschungsergebnisse und Forschungsinfrastrukturen zu gewinnen, müssen ab der Planung über die Durchführung bis zur Nachbereitung wissenschaftlicher Projekte Synergien zwischen Forschenden und Expert*innen aus Bereichen der Infrastrukturen genutzt werden. So können nicht nur punktuell die Infrastrukturen möglichst genau auf die Bedarfe von Forschenden angepasst werden, sondern auch erprobte Verfahrensweisen und Strukturen bei der dauerhaften Sicherung von analogen und digitalen Quellen genutzt werden. Durch die Verständigung über Vorgänge, Methoden, Werkzeuge, Begrifflichkeiten und Konzepte und deren gemeinsame (Weiter-)Entwicklung leisten solche Kooperationen auch wertvolle Übersetzungsarbeit zwischen unterschiedlichen Akteur*innengruppen. Erfahrungen und Ergebnisse aus einer solchen gegenseitigen Verständigung kann zukünftigen Vorhaben zugutekommen, da Akteur*innen sowohl aus der Forschung wie in Infrastruktureinrichtungen für die Bedarfe, Denkungsarten und Vorgehensweisen der jeweils anderen Seite sensibilisiert werden. So werden auch Forschende geübt und befähigt, bei der Wahl von Forschungsmethoden und der Arbeit mit Forschungsdaten Potenziale, Bedarfe und Grenzen von Forschungsinfrastrukturen mitzudenken und für aktuelle wie weiterführende Projekte nutzbar zu machen.
                 </p>
             </div>
         </body>
         <back>
 <div type="notes">
 <note rend="footnote text" xml:id="ftn1" n="1">
-                        
-                            <hi style="font-size:10pt" xml:space="preserve"> Im Unterschied zu solchen, die der Leserschaft wie etwa in Form des  Glossierens, Hervorhebens, Verbesserns etc. zu verdanken und Gegenstand intensiver rezeptionsästhetischer Forschung sind.</hi>
-                        
-                    </note>
+                             Das Projekt wird unter der Leitung von Dr. Katja Grundig de Vazquez, Institut für Bildung und Kultur, Lehrstuhl Historische Pädagogik und Globale Bildung der Friedrich-Schiller-Universität Jena (
+                                <ref target="https://www.uni-jena.de/">https://www.uni-jena.de/</ref>, zuletzt zugegriffen am 03.08.2022, so auch alle im folgenden angegebenen Links) in Kooperation mit Prof. Dr. Sabine Reh, BBF | Bibliothek für Bildungsgeschichtliche Forschung des DIPF | Leibniz-Institut für Bildungsforschung und Bildungsinformation (
+                                <ref target="https://bbf.dipf.de/de">
+                                    <hi rend="Internetverknüpfung">https://bbf.dipf.de/de</hi>
+                                </ref>) realisiert. Die Leitung des infrastrukturellen Teilprojekts an der BBF verantwortet Dr. Bettina Irina Reimers.
+                            
+                        </note>
 <note rend="footnote text" xml:id="ftn2" n="2">
-                        
-                            <hi style="font-size:10pt">In der Briefedition August Wilhelm Schlegels werden etwa Randbeschriftungen im Fließtext farblich (schattiert) abgesetzt (Schlegel 2014-2021).</hi>
-                        
-                    </note>
+                             Projektwebseite unter 
+                                <ref target="https://www.erziehungsforschung.uni-jena.de/dfgprojektgdv">
+                                    <hi rend="Internetverknüpfung">https://www.erziehungsforschung.uni-jena.de/dfgprojektgdv</hi>
+                                </ref>.
+                            
+                        </note>
 <note rend="footnote text" xml:id="ftn3" n="3">
-                        
-                            <hi style="font-size:10pt" xml:space="preserve">In der Briefedition Alfred Eschers (Jung 2022) werden mit Stern o. Ä. markierte Einfügungen “an der passenden Stelle des Brieftextes” integriert; Randnotizen oder nicht “eindeutig placierbare Ergänzungen” werden am Ende des Fließtextes wiedergegeben und per Mouseover im Faksimile mit einem gelben Rahmen sichtbar gemacht. Die Randbeschriftungen sind jedoch nie so komplex, dass sie mehrere Seiten umfassen. Siehe: </hi>
-                            <ref target="https://www.briefedition.alfred-escher.ch/briefe/B2616?action=search&amp;view=single&amp;odd=escher.odd&amp;view1=1#1.4.3.6.2.4">
-                                <hi rend="underline color(1155CC)" style="font-size:10pt">https://www.briefedition.alfred-escher.ch/briefe/B2616?action=search&amp;view=single&amp;odd=escher.odd&amp;view1=1#1.4.3.6.2.4</hi>
-                            </ref>
-                        
-                    </note>
+                             Projektdokumentation zum Anschubprojekt unter 
+                                <ref target="https://www.uni-due.de/allgemeine-didaktik/projekte.php">
+                                    <hi rend="Internetverknüpfung">https://www.uni-due.de/allgemeine-didaktik/projekte.php</hi>
+                                </ref>. 
+                            
+                        </note>
 <note rend="footnote text" xml:id="ftn4" n="4">
-                        
-                            <hi style="font-size:10pt" xml:space="preserve"> So unterscheidet die Edition der Briefe Alexander von Humboldts etwa „Ergänzungen“ und „Anmerkungen“ farblich voneinander (Ette 2018-2022). Ergänzungen des Autors werden zudem ausgezeichnet und im Transkript bzw. der “Webansicht” an der als zugehörig interpretierten Stelle im Kerntext, farblich abgesetzt, eingefügt. Siehe: </hi>
-                            <ref target="https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/ergaenzungen.html">
-                                <hi rend="underline color(1155CC)" style="font-size:10pt">https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/ergaenzungen.html</hi>
-                            </ref>
-                        
-                    </note>
+                            
+                                <ref target="https://www.zotero.org">https://www.zotero.org</ref>.
+                            
+                        </note>
 <note rend="footnote text" xml:id="ftn5" n="5">
-                        
-                            <hi style="font-size:10pt" xml:space="preserve"> In der Briefedition der Simmel-Gesamtausgabe werden keine RN ausgewiesen. In der Max-Weber-Gesamtausgabe sind sporadisch RN enthalten. Sie werden im “textkritischen Apparat” (Weber 1994: 686, 851) ausgewiesen.</hi>
-                        
-                    </note></div>
+                             Im Juli 2019 ging der Nachlass von Wilhelm Rein, der bis dahin als Dauerleihgabe von der Projektleiterin verwahrt und mit Zustimmung des Eigentümers wissenschaftlich bearbeitet worden war, als Schenkung des Urenkels Andreas Rein in das Eigentum des DIPF über und wird im Archiv der BBF als sammelndem Spezialarchiv für die Bildungspraxis und Bildungsgeschichte dauerhaft verwahrt.
+                        </note>
+<note rend="footnote text" xml:id="ftn6" n="6">
+                         Zur Merkmalsfestlegung von Briefen vgl. Thiedeke 2020, S. 188 ff.
+                    </note>
+<note rend="footnote text" xml:id="ftn7" n="7">
+                                 Auf Basis des TEI-Publisher werden gegenwärtig fünf Editionen und Textkorpora verwaltet und – wo rechtlich möglich – veröffentlicht (
+                                    <ref target="https://editionen.bbf.dipf.de/">
+                                        <hi rend="Internetverknüpfung">https://editionen.bbf.dipf.de</hi>
+                                    </ref>
+                                    <hi rend="Internetverknüpfung">).</hi>
+                                
+                            </note>
+<note rend="footnote text" xml:id="ftn8" n="8">
+                                
+                                    <ref target="https://openrefine.org/">
+                                        <hi rend="Internetverknüpfung">https://openrefine.org/</hi>
+                                    </ref>. 
+                                
+                            </note>
+<note rend="footnote text" xml:id="ftn9" n="9">
+                                
+                                    <ref target="https://scripta.bbf.dipf.de/">
+                                        <hi rend="Internetverknüpfung">https://scripta.bbf.dipf.de</hi>
+                                    </ref>.
+                                
+                            </note>
+<note rend="footnote text" xml:id="ftn10" n="10">
+                                
+                                    <ref target="https://www.maxqda.de/produkte/maxqda-analytics-pro">
+                                        <hi rend="Internetverknüpfung">https://www.maxqda.de/produkte/maxqda-analytics-pro</hi>
+                                    </ref>
+                                    <hi rend="Internetverknüpfung">.</hi>
+                                
+                            </note>
+<note rend="footnote text" xml:id="ftn11" n="11">
+                            
+                                <hi rend="background(white)" style="font-size:11pt" xml:space="preserve"> Zum Begriff des Transnationalen vgl. u.a. Roldán Vera/Fuchs 2019, Mayer 2019, Popkewitz 2019</hi>
+                                <hi style="font-size:11pt">.</hi>
+                            
+                        </note></div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Bergmann, Jörg.</hi> 1987. 
-                        <hi rend="italic">Klatsch. Zur Sozialform der diskreten Indiskretion</hi>. Berlin: New York: De Gruyter.
+                        <hi rend="bold">Baillot, Anne</hi>. 2020. „Digitalisierung und ihre Einflüsse auf den Umgang mit alten wie neuen ‚Briefen‘ in deutscher wie internationaler Perspektive.“ In 
+                        <hi rend="italic">Handbuch Brief</hi>, hg. von Matthews-Schlinzig, Marie Isabel, Jörg Schuster, Gesa Steinbrink und Jochen Strobel, 387–398. Berlin: De Gruyter. 
+                        <ref target="https://doi.org/10.1515/9783110376531-025">
+                            <hi rend="Internetverknüpfung">
+                                <hi rend="color(0000FF)" style="font-size:12pt">10.1515/9783110376531-025</hi>
+                            </hi>
+                        </ref>.
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Erler, Gotthard.</hi> 1968. “Ich bin der Mann der langen Briefe” 
-                        <hi rend="italic">Fontaneblätter</hi> 1/7: 318-319.
+                        <hi rend="bold">Budde, Gunilla</hi>. 2020. „Geschichtswissenschaft.“ In 
+                        <hi rend="italic">Handbuch Brief</hi>, hg. von Matthews-Schlinzig, Marie Isabel, Jörg Schuster, Gesa Steinbrink und Jochen Strobel, 61–80. Berlin: De Gruyter. 
+                        <ref target="https://doi.org/10.1515/9783110376531-004">
+                            <hi rend="Internetverknüpfung">
+                                <hi rend="color(0000FF)" style="font-size:12pt">10.151</hi>
+                                <hi rend="color(0000FF)" style="font-size:12pt">5/9783110376531-004</hi>
+                            </hi>
+                        </ref>.
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Ette, Ottmar (Hg.).</hi> 2018-2022. 
-                        <hi rend="italic">Richtlinien der</hi>
-                        <ref target="https://edition-humboldt.de">
-                            <hi rend="italic" xml:space="preserve"> edition humboldt digital</hi>
-                        </ref>, Berlin-Brandenburgische Akademie der Wissenschaften. 
-                        <ref target="https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/ergaenzungen.html">
-                            <hi rend="underline color(1155CC)">https://edition-humboldt.de/richtlinien/ediarum.BASE/DE/text/ergaenzungen.html</hi>
-                        </ref> (zugegriffen: 2. August 2022).
+                        <hi rend="bold">Cremer, Fabian, Silvia Daniel, Marina Lemaire, Katrin Moeller, Matthias Razum und Arnošt Štanzel</hi>. 2021. „Data meets history: A research data management strategy for the historically oriented humanities.“ In 
+                        <hi rend="italic">Cultural Sovereignty beyond the Modern State</hi>, hg. von Feindt, Gregor, Bernhard Gissibl und Johannes Paulmann, 155–178. Berlin: De Gruyter. 
+                        <ref target="https://doi.org/10.1515/9783110679151-009">
+                            <hi rend="Hyperlink">10.1515/9783110679151-009</hi>
+                        </ref>.
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Gabler, Thorsten.</hi> 2020. “Theodor Fontanes Briefe” In 
-                        <hi style="font-family:Tahoma">﻿</hi>
-                        <hi rend="italic">Handbuch Brief. Von der Frühen Neuzeit zur Gegenwart. Bd. 2: Historische Perspektiven - Netzwerke - Zeitgenossenschaften</hi>, hg. von Marie Isabel Matthews-Schlinzig, Jörg Schuster, Gesa Steinbrink und Jochen Strobel, 1233-1244. Berlin; Boston: De Gruyter.
+                        <hi rend="bold">Deutsche Forschungsgemeinschaft</hi>. 2016. 
+                        <hi rend="italic">DFG Praxisregeln „Digitalisierung.“</hi>
+                        <ref target="https://www.dfg.de/formulare/12_151/index.jsp">
+                            <hi rend="Internetverknüpfung">
+                                <hi rend="color(0000FF)" style="font-size:12pt">https://www.dfg.de/formulare/12_151/index.jsp</hi>
+                            </hi>
+                        </ref> (zugegriffen: 3. August 2022).
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Jung, Joseph (Hg.).</hi> 2022. 
-                        <hi rend="italic">Digitale Briefedition Alfred Escher</hi>, Relaunch Januar 2022, Zürich.
-                        <ref target="https://briefedition.alfred-escher.ch/briefe/B0503" xml:space="preserve"> </ref>
-                        <ref target="https://briefedition.alfred-escher.ch/briefe/B0503">
-                            <hi rend="underline color(1155CC)">https://briefedition.alfred-escher.ch/briefe/B0503</hi>
-                        </ref> (zugegriffen: 2. August 2022).
+                        <hi rend="bold">Geiss, Michael, und Sabine Reh</hi>. 2020. „Konservatismus und Pädagogik im Europa des 20. Jahrhunderts: Einleitung in den Themenschwerpunkt.“ In 
+                        <hi rend="italic">Jahrbuch für Historische Bildungsforschung</hi> 26: 9–27.
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Kompetenzzentrum – Trier Center for Digital Humanities.</hi> 2022. Ferdinand Tönnies-Briefe: Eine digitale Edition. 
-                        <ref target="https://tcdh.uni-trier.de/de/projekt/ferdinand-toennies-briefe-eine-digitale-edition">
-                            <hi rend="underline color(1155CC)">https://tcdh.uni-trier.de/de/projekt/ferdinand-toennies-briefe-eine-digitale-edition</hi>
-                        </ref> (zugegriffen: 2. August 2022).
+                        <hi rend="bold">Haaf, Susanne, Alexander Geyken, Frank Wiegand</hi>. 2014. „The DTA “Base Format”: A TEI Subset for the Compilation of a Large Reference Corpus of Printed Text from Multiple Sources.“ In 
+                        <hi rend="italic">Journal of the Text Encoding Initiative</hi> (Issue 8): 
+                        <ref target="https://doi.org/10.4000/jtei.1114">
+                            <hi rend="Internetverknüpfung">
+                                <hi rend="color(0000FF)" style="font-size:12pt">10.4000/jtei.1114</hi>
+                            </hi>
+                        </ref>.
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Schlegel, August Wilhelm.</hi> 2014-2021. 
-                        <hi rend="italic">Digitale Edition der Korrespondenz</hi> [Version-01-22]. 
-                        <hi rend="underline color(1155CC)">https://august-wilhelm-schlegel.de</hi>, hg. von Jochen Strobel und Claudia Bamberg, bearbeitet von Caludia Bamberg und Olivia Varwig in Zusammenarbeit mit Cornelia Bögel, Ruth Golyschkin, Bianca Müller, Radoslav Petkov, Christian Senf und Friederike Wißmach (zugegriffen: 2. August 2022).
+                        <hi rend="bold">Henzel, Katrin</hi>. 2020. „Materialität des Briefs. “ In 
+                        <hi rend="italic">Handbuch Brief</hi>, hg. von Matthews-Schlinzig, Marie Isabel, Jörg Schuster, Gesa Steinbrink und Jochen Strobel, 222–231. Berlin: De Gruyter. 
+                        <ref target="https://doi.org/10.1515/9783110376531-013">
+                            <hi rend="Internetverknüpfung">
+                                <hi rend="color(0000FF)" style="font-size:12pt">10.1515/9783110376531-013</hi>
+                            </hi>
+                        </ref>.
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Simmel, Georg.</hi> 1989. “Über sociale Differenzierung” In: 
-                        <hi rend="italic">Georg Simmel. Aufsätze 1887 bis 1890. Über sociale Differenzierung. Die Probleme der Geschichtsphilosophie (1892)</hi>, hg. von Heinz-Jürgen Dahme, 109-296. Frankfurt/M.: Suhrkamp.
+                        <hi rend="bold">Mayer, Christine</hi>. 2019. „The Transnational and Transcultural: Approaches to Studying the Circulation and Transfer of Educational Knowledge.“ In 
+                        <hi rend="italic">The Transnational in the History of Education</hi>, hg. von Fuchs, Eckhardt und Eugenia Roldán Vera, 49–68. Cham: Springer International Publishing. 
+                        <ref target="https://doi.org/10.1007/978-3-030-17168-1_2">10.1007/978-3-030-17168-1_2</ref>.
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Tönnies, Ferdinand an Paulsen, Friedrich.</hi> 25.06.1879. In 
-                        <hi rend="italic">Tönnies-Nachlass. Schleswig-Holsteinische Landesbibliothek</hi>, Cb 54.51: Paulsen, 15.
+                        <hi rend="bold">Müller, Lars</hi>. 2019. „Kooperatives Management geisteswissenschaftlicher Forschungsdaten.“ In 
+                        <hi rend="italic">ABI Technik</hi> 39 (3): 194–201. 
+                        <ref target="https://doi.org/10.1515/abitech-2019-3003">
+                            <hi rend="Internetverknüpfung">
+                                <hi rend="color(0000FF)" style="font-size:12pt">10.1515/abitech-2019-3003</hi>
+                            </hi>
+                        </ref>.
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Tönnies, Ferdinand an Paulsen, Friedrich.</hi> 19.08.1881. In 
-                        <hi rend="italic">Tönnies-Nachlass. Schleswig-Holsteinische Landesbibliothek</hi>, Cb 54.51: Paulsen, 54.
+                        <hi rend="bold">Nutt-Kofoth, Rüdiger</hi>. 2016. „Briefe herausgeben: Digitale Plattformen für Editionswissenschaftler und die Grundfragen der Briefedition.“ In 
+                        <hi rend="italic">„Ei, dem alten Herrn zoll’ ich Achtung gern“. Festschrift für Joachim Veit zum 60. Geburtstag,</hi> hg. von Richts, Kristina und Peter Stadler, 575–586. München: Allitera Verlag. 
+                        <ref target="https://doi.org/10.25366/2018.2">
+                            <hi rend="Internetverknüpfung">
+                                <hi rend="color(0000FF)" style="font-size:12pt">10.25366/2018.2</hi>
+                            </hi>
+                        </ref>.
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Tönnies, Ferdinand.</hi> 2002. “Kritik der öffentlichen Meinung” In 
-                        <hi rend="italic">Ferdinand Tönnies. Gesamtausgabe Band 14</hi>. 
-                        <hi rend="italic">1922</hi>, hg. von Alexander Deichsel, Rolf Fechner und Rainer Waßner. Berlin; New York: De Gruyter.
+                        <hi rend="bold">Popkewitz, Thomas S.</hi>. 2019. „Transnational as Comparative History: (Un)Thinking Difference in the Self and Others.“ In 
+                        <hi rend="italic">The Transnational in the History of Education</hi>, hg. von Fuchs, Eckhardt und Eugenia Roldán Vera, 261–291. Cham: Springer International Publishing. 
+                        <ref target="https://doi.org/10.1007/978-3-030-17168-1_10">
+                            <hi rend="Internetverknüpfung">
+                                <hi rend="color(0000FF)" style="font-size:12pt">10.1007/978-3-030-17168-1_10</hi>
+                            </hi>
+                        </ref>.
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Tönnies, Ferdinand.</hi> 2009. “Philosophische Terminologie in psychologisch-soziologischer Ansicht” In 
-                        <hi rend="italic">Ferdinand Tönnies. Gesamtausgabe Band 7. 1905-1906</hi>, hg. von Arno Bammé und Rolf Fechner, 119-250. Berlin; New York: De Gruyter.
+                        <hi rend="bold">Reh, Sabine, Lars Müller, Stefan Cramme, Bettina Reimers und Marcelo Caruso</hi>. 2021. „Warum sich Forschende um Archive, Zugänge und die Nutzung bildungswissenschaftlicher Forschungsdaten kümmern sollten – historische und informationswissenschaftliche Perspektiven.“ In 
+                        <hi rend="italic">Erziehungswissenschaft</hi> 31 (61 (2-2020)), 9–20. 
+                        <ref target="https://doi.org/10.3224/ezw.v31i2.02">10.3224/ezw.v31i2.02</ref>.
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Tönnies, Ferdinand.</hi> 2019. “Gemeinschaft und Gesellschaft” In 
-                        <hi rend="italic">Ferdinand Tönnies. Gesamtausgabe Band 2. 1880-1935</hi>, hg. von Bettina Clausen und Dieter Haselbach. Berlin; Boston: De Gruyter.
+                        <hi rend="bold">Roldán Vera, Eugenia und Eckhardt Fuchs</hi>. 2019. „Introduction: The Transnational in the History of Education.“ In 
+                        <hi rend="italic">The Transnational in the History of Education</hi>, hg. von Fuchs, Eckhardt und Eugenia Roldán Vera, 1–47. Cham: Springer International Publishing. 
+                        <ref target="https://doi.org/10.1007/978-3-030-17168-1_1">
+                            <hi rend="Internetverknüpfung">
+                                <hi rend="color(0000FF)" style="font-size:12pt">10.1007/978-3-030-17168-1_1</hi>
+                            </hi>
+                        </ref>.
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Weber, Max.</hi> 1994. “Briefe 1909-1910” In 
-                        <hi rend="italic">Gesamtausgabe. Abteilung 2, Band 6</hi>, hg. von M. Rainer Lepsius und Wolfgang J. Mommsen. Tübingen: J. C. B. Mohr (Paul Siebeck).
+                        <hi rend="bold">Stadler, Peter, Marcel Illetschko und Sabine Seifert</hi>. 2016. „Towards a Model for Encoding Correspondence in the TEI: Developing and Implementing.“ In 
+                        <hi rend="italic">Journal of the Text Encoding Initiative</hi> (Issue 9): 
+                        <ref target="https://doi.org/10.4000/jtei.1433">
+                            <hi rend="Internetverknüpfung">
+                                <hi rend="color(0000FF)" style="font-size:12pt">10.4000/jtei.1433</hi>
+                            </hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Standhartinger, Angela</hi>. 2020. „Briefzensur und Briefgeheimnis in der Neuzeit.“ In 
+                        <hi rend="italic">Handbuch Brief</hi>, hg. von Matthews-Schlinzig, Marie Isabel, Jörg Schuster, Gesa Steinbrink und Jochen Strobel, 269–275. Berlin: De Gruyter. 
+                        <ref target="https://doi.org/10.1515/9783110376531-016">
+                            <hi rend="Internetverknüpfung">
+                                <hi rend="color(0000FF)" style="font-size:12pt">10.1515/9783110376531-016</hi>
+                            </hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Thiedeke, Udo</hi>. 2020. „Der Brief als individualmediale Kommunikationsform: Eine mediensoziologische Beobachtung.“ In 
+                        <hi rend="italic">Handbuch Brief</hi>, hg. von Matthews-Schlinzig, Marie Isabel, Jörg Schuster, Gesa Steinbrink und Jochen Strobel, 187–202. Berlin: De Gruyter. 
+                        <ref target="https://doi.org/10.1515/9783110376531-011">
+                            <hi rend="Internetverknüpfung">
+                                <hi rend="color(0000FF)" style="font-size:12pt">10.1515/9783110376531-011</hi>
+                            </hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Wilkinson, Mark D. et al.</hi>. 2016. „The FAIR Guiding Principles for scientific data management and stewardship.“ In 
+                        <hi rend="italic">Scientific Data</hi> 3 (1): 160018. 
+                        <ref target="https://doi.org/10.1038/sdata.2016.18">
+                            <hi rend="Internetverknüpfung">
+                                <hi rend="color(0000FF)" style="font-size:12pt">10.1038/sdata.2016.18</hi>
+                            </hi>
+                        </ref>.
                     </bibl>
                 </listBibl>
             </div>

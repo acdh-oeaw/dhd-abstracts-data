@@ -1,29 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="GALKA_Selina_Minimal_Editing__Die_Hyperdiplomatische_Transkr" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="SCHUMACHER_Mareike_GitMA_oder_CATMA_für_Fortgeschrittene" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Minimal Editing: Die Hyperdiplomatische Transkriptionsplattform</title>
+                <title>GitMA oder CATMA für Fortgeschrittene</title>
                 <author>
                     <persName>
-                        <surname>Galka</surname>
-                        <forename>Selina</forename>
+                        <surname>Schumacher</surname>
+                        <forename>Mareike</forename>
                     </persName>
-                    <affiliation>Karl-Franzens-Universität Graz, Österreich</affiliation>
-                    <email>selina.galka@uni-graz.at</email>
+                    <affiliation>Technische Universität Darmstadt, Deutschland</affiliation>
+                    <email>schumacher@linglit.tu-darmstadt.de</email>
+                    <idno type="ORCID">0000-0002-7952-4194</idno>
                 </author>
                 <author>
                     <persName>
-                        <surname>Klug</surname>
-                        <forename>Helmut W.</forename>
+                        <surname>Meister</surname>
+                        <forename>Malte</forename>
                     </persName>
-                    <affiliation>Karl-Franzens-Universität Graz, Österreich</affiliation>
-                    <email>helmutwklug@gmail.com</email>
+                    <affiliation>Technische Universität Darmstadt, Deutschland</affiliation>
+                    <email>meister@linglit.tu-darmstadt.de</email>
+                    <idno type="ORCID">0000-0002-9670-3573</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gerstorfer</surname>
+                        <forename>Dominik</forename>
+                    </persName>
+                    <affiliation>Technische Universität Darmstadt, Deutschland</affiliation>
+                    <email>gerstorfer@linglit.tu-darmstadt.de</email>
+                    <idno type="ORCID">0000-0002-8095-2540</idno>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-12-15T07:52:00Z</date>
+                    <date>2022-12-15T12:54:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -66,250 +77,271 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag</term>
+                    <term>Workshop</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Edition</term>
-                    <term>Transkription</term>
-                    <term>Publikationsplattform</term>
-                    <term>Workflow</term>
-                    <term>Datenmodellierung</term>
+                    <term>manuelle Annotation</term>
+                    <term>Textanalyse</term>
+                    <term>kollaboratives Annotieren</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Sammlung</term>
-                    <term>Transkription</term>
-                    <term>Modellierung</term>
-                    <term>Archivierung</term>
-                    <term>Veröffentlichung</term>
-                    <term>Text</term>
+                    <term>Inhaltsanalyse</term>
+                    <term>Annotieren</term>
+                    <term>Netzwerkanalyse</term>
+                    <term>Kollaboration</term>
+                    <term>Einführung</term>
+                    <term>Visualisierung</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
+            <p>
+                <hi style="font-size:11pt">Dieser GitMA-Workshop richtet sich an fortgeschrittene CATMA User*innen mit Vorkenntnissen in digitaler Annotation, die im Rahmen der eigenen Arbeit oder von Forschungsprojekten mit größeren Mengen von Annotationsdaten operieren (wollen). Bei GitMA handelt es sich um ein Python-Package, mit dem Annotationsdaten, die in CATMA erstellt wurden, weiter verarbeitet werden können (Vauth et al. 2021). Wie greife ich über Git auf meine CATMA-Annotationsdaten zu? Wie visualisiere ich kollaborativ erstellte Annotationsdaten, die in mehreren Collections abgelegt sind? Wie berechne ich die Übereinstimmung zwischen mehreren Annotator*innen? Diese und ähnliche Fragen werden während des Workshops beantwortet.</hi>
+            </p>
+            <p>
+                <hi style="font-size:11pt">CATMA (Gius et al. 2021) ist eine webbasierte, kollaborative Textannotations- und Analyse-Plattform, die seit 2008 an der Universität Hamburg und im Rahmen des DFG-geförderten Projektes forTEXT seit 2020 an der Technischen Universität Darmstadt entwickelt wird. Hauptzielgruppe sind traditionell-analog arbeitende Geisteswissenschaftler*innen, die über eine intuitiv bedienbare GUI Texte annotieren und analysieren können. Mit dem Release von CATMA 6 im Jahr 2019 wurde für die Plattform ein auf Git basierendes Backend eingeführt. Für zahlreiche Projekte, die bereits auf sehr fortgeschrittenem Niveau CATMA nutzen, und Interessierte aus der Digital-Humanities-Community mit Erfahrung in der Nutzung von Git und Grundkenntnissen in Python, eröffnet sich dadurch eine Reihe neuer Funktionen, die es in bisherigen CATMA-Versionen nicht gab. Einige dieser Funktionen werden im Laufe dieses Workshops vorgestellt und vermittelt.</hi>
+            </p>
+            <p>Der Workshop bietet:</p>
+<list type="unordered">
+                <item>kurze Einführung in die Nutzung von CATMA über das graphische Userinterface</item>
+                <item>
+                    <hi style="font-size:11pt">Kennenlernen der Datenstrukturen des Backends</hi>
+                </item>
+                <item>
+                    <hi style="font-size:11pt">Zugriff auf das Backend mit Git</hi>
+                </item>
+                <item>Weiterverarbeitung der Daten mit Hilfe eines zur Verfügung gestellten Python-Packages</item>
+            </list>
             <div type="div1" rend="DH-Heading1">
-                <head>Minimal Editing</head>
-                <p style="text-align: left; ">Digitale Editionen sind in der Regel kostspielige Großprojekte, die von Drittmittelförderung abhängig sind. Projektmitarbeiterinnen und -mitarbeiter müssen umfangreiche technische und philologische Fähigkeiten mitbringen und die Projekte werden meist in sehr spezifischen Editionsumgebungen entwickelt – Elena Pierazzo nennt derartige digitale Editionen “Haute Couture”-Editionen (Pierazzo 2019, 213).</p>
-                <p style="text-align: left; ">Kleinere Editionsvorhaben werden oft nur von Einzelpersonen gestemmt oder vielleicht im Kontext einer Lehrveranstaltung oder Qualifikationsarbeit umgesetzt; eine Vermittlung der Ergebnisse in Form eines Webauftritts oder die Archivierung in einem zertifizierten Repositorium ist in derartigen Fällen nur selten möglich; oft scheitert es am entsprechenden Know-How oder an finanzieller Unterstützung. Diese Arbeiten verschwinden eher früher als später ungenutzt in dunklen Schubladen. Um dieser Problematik Herr zu werden, müssen nachhaltige Lösungen her! Eine solche Lösung für derartige Fälle wäre sicher 
-                    <hi rend="italic">minimal editing</hi>.
+                <head>Annotation in CATMA 6</head>
+                <p>
+                    <hi style="font-size:11pt">Annotation ist eine zentrale Kultur- und Forschungspraxis, die bereits seit sehr langer Zeit analog betrieben wurde (vgl. Moulin 2010), bevor sie im Rahmen der Digital Humanities ins Digitale übertragen wurde. Textauszeichnung und -anreicherung, Freitextkommentare und das taxonomiebasierte Annotieren sind Formen der Annotation, die sich zum Teil überschneiden (vgl. Jacke 2018, § 9). Alle diese Formen werden von CATMA 6 digital unterstützt. Mithilfe selbst erstellter oder auf der Plattform forTEXT.net bereitgestellter Tagsets (z.B. Flüh 2020) kann einzeln oder im Team taxonomiebasiert annotiert werden.</hi>
                 </p>
-                <p style="text-align: left; ">
-                    <hi rend="italic">Minimal Editions</hi> stellen reduzierte digitale Editionen im Gegenzug zu kostspieligen, aufwendigen Editionsgroßprojekten dar. Wie eine derartige Minimaledition zu definieren wäre, ist Gegenstand des aktuellen Forschungsdiskurses: Basiert sie auf dem effizientesten Workflow, um den Arbeitsaufwand der Datenverarbeitung zu reduzieren, der kleinstmöglichen technischen Infrastruktur (i.e 
-                    <hi rend="italic">minimal computing</hi>, cf. Gil 2015), um die Hemmschwelle vor der Technik möglichst niedrig zu halten, der sparsamsten Modellierung der Objekte, um Bearbeitungszeit zu sparen und die weitere Verarbeitung zu vereinfachen oder zeichnet sie sich durch einen reduzierten Funktionsumfang bei der Onlinepublikation aus? 
+                <p>
+                    <hi style="font-size:11pt">Eine der wichtigsten Neuerungen von CATMA 6 gegenüber früheren Versionen ist die Umstellung auf eine projektzentrierte Nutzungsarchitektur. Am Beginn der Arbeit mit CATMA steht das Anlegen eines Projektes mit beliebig vielen Dokumenten, die analysiert werden sollen, und beliebig vielen Team-Mitgliedern, die daran arbeiten wollen. Einzelne und Merfachannotationen, einander überlagernde oder überlappende Annotationen oder auch widersprüchliche Annotationen sind in CATMA durch die Speicherung der Daten als Standoff-Markup möglich. Eine weitere Neuerung im Funktionsumfang ist die Möglichkeit, Textstellen und Annotationen zu kommentieren. Offene Fragen, nicht zu Ende gedachte Interpretationsansätze oder auch der Austausch mit den anderen Team-Mitgliedern können über die Kommentarfunktion in den Annotationsprozess integriert werden. Sowohl Annotationen als auch Kommentare können über die Analyse-Funktionen von CATMA durchsucht, in tabellarische Form gebracht oder visualisiert werden. Der Umfang dessen, was über die CATMA-GUI umgesetzt werden kann, ist also recht groß. Die Einführung des auf Git basierenden Backends macht das Tool für die Digital-Humanities-Community aber noch interessanter. Der undogmatische Zugang, der bisher nur zu Annotationen und Annotationstaxonomien ermöglicht wurde, erstreckt sich nun bis zu den Annotationsdaten und der Weiterverarbeitung derselben (siehe Abbildung 1). Dieser neue Teil des CATMA-Workflows wird in diesem Workshop vermittelt werden.</hi>
                 </p>
-                <p style="text-align: left; ">
-                    <hi rend="italic">Minimal editing</hi> kann es möglich machen, digitale Editionen mit vorgefertigten Workflows, bereits etablierten, einfachen technischen Lösungen und leicht zu integrierenden Basis-Funktionalitäten im Bereich der Datenmodellierung wie auch der Datenpräsentation schnell, einfach und mit einem geringen Kostenaufwand umzusetzen. Das bringt allerdings die unterschiedlichsten Einschränkungen mit sich! Demgegenüber stehen aber die Erwartungen und Ideen der Editorinnen und Editoren und die Vorgaben der Förderorganisationen. Allerdings würde der Aufbau einer zeitgemäßen Infrastruktur, die Langzeitverfügbarkeit garantiert, mit Komponenten, die 
-                    <hi rend="italic" xml:space="preserve">ad hoc </hi>für unterschiedliche Editionsprojekte benutzbar sind, den Aufwand für die Umsetzung einer digitalen Edition reduzieren und somit vermutlich zu einer größeren Anzahl von digitalen Editionsprodukten führen. Pierazzo bezeichnet diese Editionen als “Prêt-à-Porter”-Editionen (Pierazzo 2019, 213). 
-                </p>
-                <p style="text-align: left; ">Weitere Stichworte im Zusammenhang mit 
-                    <hi rend="italic">minimal editing</hi> sind 
-                    <hi rend="italic">minimal functionalities</hi> und 
-                    <hi rend="italic">minimal computing</hi>. Federico Caria und Brigitte Mathiak untersuchten, welche minimalen Funktionalitäten der Webauftritt einer digitalen Edition unbedingt aufweisen sollte, damit diese von der Community auch zufriedenstellend genutzt werden kann (2018); Greta Franzini, Melissa Terras und Simon Mahony führten ebenfalls eine Umfrage zu Erwartungen und dem Gebrauch von digitalen Editionen durch (2019). Die dabei gesammelten Ergebnisse können helfen, die wichtigsten Komponenten einer 
-                    <hi rend="italic">Minimal Edition</hi> zu definieren, wie z. B. eine Such- und Exportfunktion über bzw. in den Daten oder eine grundsätzlich benutzerfreundliche Navigationsstruktur (Caria/Mathiak 2018, 360), oder die Einbindung von Faksimiles, leicht erkennbare Angabe von Lizenzen, die Möglichkeit der Nachnutzbarkeit der Daten und eine umfassende Dokumentation (Franzini/Terras/Mahony 2018, 1).
-                </p>
-                <p style="text-align: left; ">
-                    <hi rend="italic">Minimal computing</hi> hingegen ist ein Ansatz, bei dem versucht wird, die technischen Ansprüche zu reduzieren und für die Arbeit nur jene Technologien zu verwenden, welche tatsächlich notwendig für die Umsetzung eines bestimmten Vorhabens sind. Erst 2022 erschien eine ganze Ausgabe des 
-                    <hi rend="italic">Digital Humanities Quarterly</hi>, welche sich den unterschiedlichsten Aspekten des 
-                    <hi rend="italic">minimal computing</hi> widmet (Risam/Gil 2022a). Um zu bestimmen, welche Technologien tatsächlich notwendig und ausreichend sind, schlagen Risam und Gil vor, folgende vier Fragen zu stellen (Risam/Gill 2022b): Was brauchen wir, was haben wir, was müssen wir priorisieren und was sind wir bereit aufzugeben?
-                </p>
-                <p style="text-align: left; ">Alle diese Publikationen zeigen einen Trend in Richtung maßgeschneidertes Editionsmanagement auf. Es gibt bereits Lösungen, Tools und Plattformen, die unter dem Aspekt Minimal Editing zusammenzufassen sind – darunter fällt z.B. EVT (Edition Visualization Technique), ein Open-Source-Tool, welches es ermöglicht, XML-TEI Dokumente als digitale Editionen im Browser anzuzeigen. Dasselbe gilt für CETEIcean und TEI-Publisher, welche ebenfalls Lösungen anbieten, um XML- und TEI-Dokumente ohne Erfahrung in der Webprogrammierung im Browser zugänglich zu machen. Transcriptiones erlaubt es, Transkriptionen zu teilen und kollaborativ zu überarbeiten, wobei hier jedoch kein Fokus auf die Modellierung mit XML/TEI oder eine nachhaltige Archivierung gelegt wird. Den Tools, die eine Kodierung mit TEI unterstützen, ist gemeinsam, dass zwar niederschwellig eine Webansicht generiert werden kann, allerdings wird hier der Aspekt der Langzeitarchivierung, d.h. dass die Daten permanent zitierbar verfügbar bleiben, nicht berücksichtigt. </p>
-                <p style="text-align: left; ">Ein Zugang zur “Minimal Edition”, der sich am Paradigma eines effizient gestalteten Workflows orientiert und den Aspekt der Langzeitarchivierung miteinschließt, ist in Österreich im Rahmen des bundesgeförderten Projektes 
-                    <hi rend="italic">DiTAH - Digitale Transformation der österreichischen Geisteswissenschaften</hi> umgesetzt worden.
+                <figure>
+                    <graphic n="1001" width="15.936147222222223cm" height="17.074444444444445cm" url="Pictures/cd632d9e94e28d917691c630906f6f8e.png" rend="inline"/>
+                    <head><p>Abbildung 1: Im Workshop vermittelter Workflow zur Annotationsauswertung und -überarbeitung mit dem CATMA-Backend</p></head>
+                </figure>
+                
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Annotationen auswerten mit GitMA</head>
+                <p>
+                    <hi style="font-size:11pt" xml:space="preserve">Technische Niedrigschwelligkeit und Nähe zu traditionell-analogen Methoden der Geisteswissenschaften (vgl. Schumacher und Gius 2022) sind nach wie vor wichtige Grundsätze, die in CATMA implementiert sind. Doch mit zunehmender Verbreitung des Tools in den digitalen Geisteswissenschaften sind neben der Möglichkeit zu hermeneutisch-vielfältiger Textanalyse </hi>
+                    <hi style="font-family:Open Sans Bold Italic;font-size:11pt" xml:space="preserve">(vgl. Piez 2010) </hi>
+                    <hi style="font-size:11pt">auch die Einhaltung von Best Practices und Standards, die innerhalb der Digital-Humanities-Community entwickelt wurden, von Bedeutung. Eine Verschmelzung von CATMA und dem direkten Datenzugriff über Git zu “GitMA” ermöglicht beides. Die im Annotationsprozess erstellten Daten können zum Beispiel nach der Übereinstimmung der Annotierenden untereinander (Artstein und Poesio 2008) ausgewertet werden. Es ist möglich eine der Annotationen als ‘Silver Annotation’ festzulegen und die anderen daran zu messen. Das festgestellte Disagreement kann zur Grundlage eines Disagreement-Tagsets werden, das über das Backend auch wieder ins Frontend der CATMA-GUI zurückgespielt werden kann (siehe Abb. 1). Dasselbe gilt für die nicht übereinstimmend annotierten Passagen, welche wiederum selbst durch Annotationen dargestellt bzw. hervorgehoben werden können. So ergibt sich ein Workflow vom Frontend zum Backend und zurück, der auch die Erstellung von Goldannotationen (vgl. Wissler et al. 2014) unterstützt.</hi>
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Hyper: Hyperdiplomatische Transkriptionsplattform</head>
-                <p style="text-align: left; ">Im geplanten Vortrag soll eine Variante des 
-                    <hi rend="italic">minimal editing</hi> anhand der hyperdiplomatischen Publikationsplattform vorgestellt werden: Die Hyperdiplomatische Transkriptionsplattform (Hyper, 
-                    <ref target="http://gams.uni-graz.at/context:hyper">
-                        <hi rend="color(1155CC)">http://gams.uni-graz.at/context:hyper</hi>
-                    </ref>) wurde entwickelt, um das Archivieren und Publizieren von Editionsdaten, die auf dem standardisierten Datenmodell der hyperdiplomatischen Transkription (Böhm/Klug 2021) beruhen, möglichst ressourcenschonend und im Sinne von
-                    <hi rend="italic" xml:space="preserve"> minimal editing</hi> zu gestalten – mit den Ressourcen, die im vorliegenden Fall möglichst sparsam verwendet werden sollen, sind vor allem die nötigen Arbeiten und der finanzielle Aufwand im Zusammenhang mit einer Publikation und Langzeitarchivierung der Editionsdaten gemeint.
+                <head>Format und Ablauf des Workshops</head>
+                <p>
+                    <hi style="font-size:11pt">Der Workshop wird als halbtägiges hands-on Tutorial angeboten.</hi>
                 </p>
-                <p style="text-align: left; ">Eine hyperdiplomatische Transkription versucht, die historische Quelle möglichst detailreich bis hin zur Teilzeichenebene (z. B. Superskripte oder sogar Teilstriche eines Zeichens) bzw. unter Berücksichtigung der Quellentopographie (Verortung der Informationseinheiten in einem digitalen Abbild der Quelle) in ein modernes Zeichensystem zu übertragen. In Grazer Projekten (
-                    <ref target="https://gams.uni-graz.at/context:malab">
-                        <hi rend="italic">Mittelalterlabor</hi>
-                    </ref>, 
-                    <ref target="http://gams.uni-graz.at/context:corema">
-                        <hi rend="italic">Cooking recipes of the Middle Ages</hi>
-                    </ref>) wird nach einer hyperdiplomatischen Transkriptionsmethode gearbeitet, die ursprünglich auf die Philosophie der “Grazer dynamischen Editionsmethode” (Hofmeister-Winter 2003) zurückgeht: Es wird dabei eine “Basistransliteration” (Hofmeister-Winter 2003, S. 101) erstellt, deren Ziel es ist, den Text der Handschrift möglichst getreu mit typographischen Mitteln abzubilden, wobei die Quellentopographie dabei keine bzw. nur bedingt eine Rolle spielt. In dieser Phase soll noch keine inhaltliche Interpretation stattfinden, sondern vorerst nur der paläografische Informationsgehalt der Handschrift, also die Schriftsymbole wiedergegeben werden. Es werden in einem Graphinventar nicht nur alphabetische Schriftsymbole, sondern alle graphischen Phänomene wie Abbreviaturen, Superskripte oder Verzierungen mit bestimmten von den Transkribierenden individuell festlegbaren Kodierungen festgehalten. Im Graphinventar werden die von der Schreiberin oder dem Schreiber verwendeten Zeichen beschrieben und mit einer proprietären Kodierung versehen, sodass es gleichzeitig als Transliterationsschlüssel dient, der im Rahmen der digitalen Workflows eine zentrale Stellung einnimmt. Die Transkription soll damit sowohl sprach- und literaturwissenschaftlichen als auch geschichtswissenschaftlichen Ansprüchen genügen bzw. sie in manchen Fällen übertreffen – das Ziel dieser Herangehensweise ist es aber prinzipiell, eine Transkription zu erstellen, die über den konkreten Anwendungsfall hinaus auch von anderen Forscherinnen und Forschern verwendet werden kann (Böhm/Klug 2020). 
+                <p>Ablauf:</p>
+                <p>CATMA 6 (45 Minuten)</p>
+<list type="unordered">
+                    <item>kurze Einführung in das CATMA-Frontend</item>
+                    <item>
+                        <hi style="font-size:11pt">Struktur: Tagsets, Documents, Annotation Collections</hi>
+                    </item>
+                </list>
+                <p>
+                    <hi style="font-size:11pt">Zugriff auf Annotationsdaten über Git (30 Minuten)</hi>
                 </p>
-                <p style="text-align: left; ">Die Hyperdiplomatische Transkriptionsplattform bietet daher ein vorgefertigtes Datenmodell für die hyperdiplomatische Transkription (Klug/Böhm 2021), vorgefertigte Routinen und Transformationen, die darauf aufsetzen, und unterschiedliche Beschreibungszugänge, um den Workflow zu verdeutlichen und einfach nachnutzbar zu machen. Die Plattform (Klug/Galka 2022) wurde mit Testusern entwickelt, die sich willig auf das Experiment eingelassen haben. Die dafür produzierten Daten stehen mittlerweile offen in einem funktionell umfangreichen Webauftritt zur Verfügung: 33 Texte zum Thema “Jagd in den deutschsprachigen Texten des Mittelalters und der Frühen Neuzeit” (
-                    <ref target="http://jagd-im-mittelalter.de/">
-                        <hi rend="color(1155CC)">http://jagd-im-mittelalter.de/</hi>
-                    </ref>), transkribiert und modelliert von Timo Bülters und Simone Schultz-Balluff, und die hyperdiplomatische Transkription der Handschrift Wien, ÖNB, Cod. 3085, fol. 1r-39v von Astrid Böhm (2022).
+<list type="unordered">
+                    <item>
+                        <hi style="font-size:11pt">wie clone ich ein CATMA Project? </hi>
+                    </item>
+                    <item>
+                        <hi style="font-size:11pt">wie update ich ein CATMA Project, um neue Annotationen zu laden?</hi>
+                        <hi rend="apple-tab-span"> </hi>
+                    </item>
+                    <item>Installation des Packages</item>
+                    <item>Laden eines Projects</item>
+                    <item>
+                        <hi style="font-size:11pt">Zugriff auf Annotation Collections, Dokumente und Tagsets</hi>
+                    </item>
+                </list>
+                <p>
+                    <hi rend="bold" style="font-size:11pt">15 Minuten Pause</hi>
+                    <hi style="font-size:11pt"> </hi>
+                </p>
+                <p>Explorative Annotationsauswertungen (60 Minuten)</p>
+<list type="unordered">
+                    <item>Annotationsdaten visualisieren</item>
+                    <item>Netzwerkanalysen von Annotationsdaten</item>
+                </list>
+                <p>15 Minuten Pause</p>
+                <p>Statistische Annotationsauswertungen (45 Minuten)</p>
+<list type="unordered">
+                    <item>
+                        <hi style="font-size:11pt">Einführung in die Begrifflichkeiten Inter-Annotator-Agreement, Silver &amp; Gold Standard</hi>
+                    </item>
+                    <item>
+                        <hi style="font-size:11pt">Festlegung der Silver Annotations</hi>
+                    </item>
+                    <item>Umgang mit Annotationsspannen</item>
+                    <item>
+                        <hi style="font-size:11pt">Automatische Erstellung eines Disagreement Tagsets</hi>
+                    </item>
+                    <item>
+                        <hi style="font-size:11pt">Darstellung von Disagreement als Annotationen</hi>
+                    </item>
+                    <item>Manuelle Überarbeitung von automatischen Goldannotationen</item>
+                </list>
+                <p>Diskussion und Feedback (30 Minuten)</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Zielgruppe</head>
+                <p>Nutzer*innen, die Annotationen mit CATMA in Forschungsprojekten oder Lehrsituationen managen, sowie alle, die einen schnellen Workflow zwischen Annotation bzw. Annotationsbearbeitung und Annotationsauswertung benötigen.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Zahl der möglichen Teilnehmer*innen</head>
+                <p>30</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Technische Voraussetzungen</head>
+                <p>
+                    <hi style="font-size:11pt">Die benötigten Vorinstallationen von Git, Anaconda und GitMA (sowie dessen Abhängigkeiten) können durch die Bereitstellung eines Docker-Image vermieden werden. Die Teilnehmer*innen sollten Docker Desktop auf einem eigenen Laptop installiert haben (Touch Devices werden nicht unterstützt) und diesen zum Workshop mitbringen. Für die Durchführung des Workshops benötigen wir außerdem einen Beamer. </hi>
+                </p>
+                <p>
+                    <hi style="font-size:11pt" xml:space="preserve">Zur Vorbereitung sollten Teilnehmer*innen außerdem schon einen CATMA-Account erstellt (unter </hi>
+                    <ref target="https://app.catma.de/catma/">
+                        <hi style="font-size:11pt">https://app.catma.de/catma/</hi>
+                    </ref>
+                    <hi style="font-size:11pt" xml:space="preserve">) und sich mit der CATMA-Nutzung bekannt gemacht haben (z.B. mithilfe von der forTEXT-Lerneinheit zu CATMA 6: </hi>
+                    <ref target="https://fortext.net/routinen/lerneinheiten/manuelle-annotation-mit-catma">
+                        <hi style="font-size:11pt">Manuelle Annotation mit CATMA</hi>
+                    </ref>
+                    <hi style="font-size:11pt">). Wenn eigene CATMA-Annotationsdaten vorhanden sind, können diese während des Workshops analysiert werden. Für Teilnehmende, die nicht an eigenen Daten arbeiten möchten, stellen wir ein Demo-Projekt zur Verfügung, mit dem man während des Workshops arbeiten kann.</hi>
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Workflow</head>
-                <p style="text-align: left; ">Die hyperdiplomatische Transkription erfolgt mittels Transkribus, einer Transkriptionssoftware, die eine automatische Textsegmentierung und Text-Bild-Verknüpfung erlaubt und darüber hinaus eine äußerst benutzerinnenfreundliche Arbeitsoberfläche bietet. In Transkribus wird mittels proprietärer Codierung transkribiert, wobei die proprietäre Kodierung, die im Transkriptionsprozess verwendet wird, im TEI-XML in der Zeichenbeschreibung (&lt;charDecl&gt;) festgehalten wird. Mit Daten aus Projekten, die diese Transkriptionsmethode anwenden (
-                    <ref target="https://gams.uni-graz.at/context:malab">
-                        <hi rend="italic">Mittelalterlabor</hi>
-                    </ref>, 
-                    <ref target="http://gams.uni-graz.at/context:corema">
-                        <hi rend="italic">Cooking recipes of the Middle Ages</hi>
-                    </ref>), wurde in Transkribus außerdem ein HTR-Modell für spätmittelalterliche Bastarda trainiert (German Bastarda, hyperdiplomatic), das kurz vor der Publikation steht. Auch Textauszeichnungen (Initialen, Überschriften usw.) und die Annotationen wie z.B. Revisionen der Schreiberin oder des Schreibers oder Anmerkungen/Notizen der Editorinnen und Editoren erfolgen in Transkribus. Generell wird aber versucht, die Annotationen in Transkribus auf ein notwendiges Minimum zu beschränken. Die Software ermöglicht einen TEI/XML-Export der Transkription – die exportierten Daten werden mittels X-Technologien bzw. mit auf der Plattform bereitgestellten XSLT-Stylesheets weiterverarbeitet und ins finale Datenmodell transformiert. Die Kollationierung der Transkription mit der Quelle erfolgt außerhalb von Transkribus und setzt auf den selben Transformationen auf. Das publikationsfähige TEI-Dokument enthält einen umfangreichen &lt;teiHeader&gt; mit &lt;editorialDecl&gt;, &lt;msDesc&gt; und &lt;charDecl&gt; und den Editionstext, der die Struktur des Faksimiles abbildet. Die XSLT-Stylesheets, Schema-Dateien zur Validierung, Templates für Handschriftenbeschreibung (&lt;msDesc&gt;) und Editionsrichtlinien (&lt;editorialDecl&gt;) werden auf GitHub zum Download bereitgestellt (
-                    <ref target="https://github.com/ditah-at/hyper">
-                        <hi rend="color(1155CC)">https://github.com/ditah-at/hyper</hi>
-                    </ref>).
-                </p>
-                <p style="text-align: left; ">Die Archivierung und Publikation erfolgt mittels des Geisteswissenschaftlichen Asset Management Systems (
-                    <ref target="https://gams.uni-graz.at/">GAMS</ref>). GAMS ist ein Asset Management System zur Verwaltung, Publikation und Langzeitarchivierung digitaler Ressourcen aus allen geisteswissenschaftlichen Fächern, welches auf der Open-Source-Lösung Fedora (
-                    <hi rend="italic">Flexible Extensible Digital Object Repository Architecture</hi>) basiert und am Zentrum für Informationsmodellierung an der Universität Graz ständig weiterentwickelt wird. Mit Hilfe des Systems können unterschiedliche Ressourcen verwaltet, mit Metadaten angereichert und persistent zitierbar publiziert werden (Stigler/Steiner 2018). Das Asset-Management-System entspricht den Empfehlungen des OAIS-Referenzmodells (
-                    <hi rend="italic">Open Archival Information System</hi>), welche eine verlässliche Langzeitarchivierung von digitalen Daten garantieren sollen. Die Auffindbarkeit der Daten wird durch die Vergabe von persistenten Identifikatoren und der Anreicherung mit umfassenden Metadaten ermöglicht. GAMS ist seit 2019 mit dem Core Trust Seal als vertrauenswürdiges digitales Repositorium und seit Frühjahr 2020 außerdem als CLARIN Datencenter zertifiziert.
-                </p>
-                <p style="text-align: left; ">Das finale TEI/XML-Dokument wird gemeinsam mit den Faksimiles in das Repositorium ingestiert und unter einem systeminternen Permalink langzeitarchiviert. Die Daten werden außerdem mit einem PID aus dem Handle.net-System versehen und stehen stabil referenzierbar zur Verfügung. Im Zuge des Ingest wird automatisch die HTML-Anzeige 
-                    <hi rend="italic">on the fly</hi> mittels gängigen Webtechnologien basierend auf vorgefertigten XSLT-Transformationen generiert. Der Webauftritt der Hyperdiplomatischen Transkriptionsplattform umfasst eine vertikale wie auch horizontale Text-Bild-Synopse (wahlweise mit diplomatischer Transkription oder Lesetext), die Editionsrichtlinien, die Handschriften- und Zeichenbeschreibung, Metadaten und Lizenzinformationen sowie Zitiervorschläge.
-                </p>
-                <p style="text-align: left; ">Die Hyperdiplomatische Transkriptionsplattform stellt zur Nachvollziehbarkeit und Nachnutzbarkeit des Workflows sämtliche XSLT-Stylesheets etc. zur Verfügung. Außerdem werden in einer umfangreichen Dokumentation (
-                    <ref target="http://gams.uni-graz.at/o:hyper.documentation/sdef:TEI/get?mode=overview">
-                        <hi rend="color(1155CC)">http://gams.uni-graz.at/o:hyper.documentation/sdef:TEI/get?mode=overview</hi>
-                    </ref>), die sich der Transkription, dem Datenmodell, der Kollationierung und Validierung sowieder Archivierung und Publikation der Daten widmet, die einzelnen Schritte mit Verlinkungen zu weiteren Ressourcen, wie z.B. dem 
-                    <hi rend="italic" xml:space="preserve">KONDE-Weißbuch </hi>(Klug/Galka/Steiner 2021) mit Einträgen zur digitalen Edition, genau erläutert. Eine Kurzbeschreibung (
-                    <ref target="http://gams.uni-graz.at/o:hyper.documentation/sdef:TEI/get?mode=shortdescription">
-                        <hi rend="color(1155CC)">http://gams.uni-graz.at/o:hyper.documentation/sdef:TEI/get?mode=shortdescription</hi>
-                    </ref>) der einzelnen Schritte erspart das ständige zur Rate ziehen der ausführlichen Dokumentation und ein Aktivitätsdiagramm veranschaulicht die einzelnen Arbeitsschritte und bietet eine Verlinkung zu den jeweiligen Anleitungen (
-                    <ref target="http://gams.uni-graz.at/archive/objects/context:hyper/methods/sdef:Context/get?mode=diagram">
-                        <hi rend="color(1155CC)">http://gams.uni-graz.at/archive/objects/context:hyper/methods/sdef:Context/get?mode=diagram</hi>
-                    </ref>).
+                <head>Benötigte Vorkenntnisse</head>
+                <p>
+                    <hi style="font-size:11pt">Die Teilnehmer*innen sollten über grundlegende Kenntnisse der Kommandozeile, Git und Python sowie Jupyter verfügen.</hi>
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Fazit</head>
-                <p style="text-align: left; ">Die Plattform und das Editionskonzept richtet sich grundsätzlich an all jene Editorinnen und Editoren, die bereits Vorkenntnisse in Bezug auf digitale Editionen mitbringen, wie z.B. Wissen über XML/TEI, XSLT, oder den Umgang mit dem Oxygen-XML-Editor. Das Paradigma der “Minimal Edition” bezieht sich hier auf einen nachhaltig erarbeiteten und von weiteren Editionsprojekten nachnutzbaren Workflow. In der Regel evaluiert jedes Editionsprojekt in unterschiedlichen Stadien mögliche Tools und Workflows, mit denen im Team gearbeitet werden soll, sei es für die Transkription, Annotation oder für die Publikation. Im Projekt Hyper wurde jedoch ein standardisierter Workflow entwickelt, der auf wenigen, zur sofortigen Nutzung bereitstehenden Tools und Routinen aufbaut und in einer umfangreichen Dokumentation beschrieben wird, wodurch Editorinnen und Editoren,  welche diesen Text auch einem größeren Publikum im Zuge einer digitalen Edition möglichst einfach zugänglich machen wollen, auf diesen zugreifen können. Die “Einschränkung” ist, dass die hyperdiplomatische Transkribtionsmethode übernommen werden muss. Risam/Gill 2022b schlagen für ihre Variante des 
-                    <hi rend="italic">minimal editing</hi> vor, nur die absolut notwendigen Technologien für die Umsetzung eines bestimmten Vorhabens zu verwenden. Da einer der Grundpfeiler von digitalen Edition aber die Modellierung der Daten in einem standardisierten Datenformat ist, wurde bewusst entschieden, dass bei der hyperdiplomatischen Modellierung mit TEI/XML keine Abstriche gemacht werden sollen. Da sowohl Edierende wie auch Benutzerinnen und Benutzer von digitalen Editionen gewisse Standards in der Datenpräsentation erwarten (Caria/Mathiak 2018), werden auch dafür komplexe Technologien verwendet, die allerdings an die verwendete Repositoriumslösung angeknüpft sind. Sowohl die Modellierung der Quelle als auch die Präsentation sind in einem projektspezifischen Datenmodell verwirklicht. 
-                    <hi rend="italic">Hyper</hi> unterscheidet sich von anderen Tools und Lösungen auch dadurch, dass die Daten langzeitarchiviert werden und unter einem PID erreichbar sind. “Minimal Editing” bedeutet im Rahmen dieser Plattform also nicht nur, dass es ein fertiges Datenmodell und einen erprobten Workflow gibt, sondern auch, dass der Aufwand seitens der Repositoriumsbetreiber für die Archivierung und Präsentation der Daten sehr gering ist. Alle veröffentlichten Quellen stehen 
-                    <hi rend="italic">open access</hi> zur Verfügung, außerdem werden sämtliche Dateien, die im Workflow benötigt werden, wie XSLT-Stylesheets oder Schema-Dateien offen auf GitHub bereitgestellt.
+                <head>Beitragende</head>
+                <p>
+                    <hi rend="italic" style="font-size:12pt">Evelyn Gius, Prof. Dr.</hi>
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ausblick</head>
-                <p style="text-align: left; ">Das Ziel der 
-                    <hi rend="italic">Minimal Edition</hi> ist es nicht, möglichst viele Editionsprojekte möglichst schnell umzusetzen, sondern einen niederschwelligen Zugang anzubieten, damit ohne großen Aufwand “reduziertere” digitale Editionen geschaffen werden können, die trotzdem qualitativen Standards entsprechen. Die 
-                    <hi rend="italic">Hyperdiplomatische Transkriptionsplattform</hi> ist zwar momentan hauptsächlich für all jene interessant, die hyperdiplomatisch transkribieren – allerdings ist es ein erster Schritt in eine Zukunft, in der auch andere Editionen, die dem 
-                    <hi rend="italic">minimal-editing</hi>-Konzept folgen, ohne großen organisatorischen Aufwand publiziert werden können.
+                <p>Technische Universität Darmstadt, Institut für Sprach- und Literaturwissenschaft, Residenzschloss 1, 64283 Darmstadt</p>
+                <p>
+                    <hi style="font-size:11pt">Evelyn Gius ist Professorin für Digitale Philologie und Neuere Deutsche Literatur an der Technischen Universität Darmstadt. Sie promovierte an der Universität Hamburg mit einer Arbeit über die narrative Struktur von Konflikterzählungen. Ihre Forschungsschwerpunkte sind manuelle Annotation, Operationalisierung, Erzähltheorie, Segmentierung und Konflikte. Sie ist PI mehrerer Digital-Humanities-Projekte (EvENT, KatKit, CATMA, forTEXT) und ist Vorsitzende des Vereins Digital Humanities im deutschsprachigen Raum (DHd), Mitherausgeberin des Journal of Computational Literary Studies (JCLS) und Mitherausgeberin der Buchreihe "Digitale Literaturwissenschaft".</hi>
+                </p>
+                <p>
+                    <hi rend="italic" style="font-size:12pt">Dominik Gerstorfer, M.A.</hi>
+                </p>
+                <p>Technische Universität Darmstadt, Institut für Sprach- und Literaturwissenschaft, Residenzschloss 1, 64283 Darmstadt</p>
+                <p>
+                    <hi style="font-size:11pt">Dominik Gerstorfer promoviert über "Philosophische Fragen der Digital Humanities" an der Universität Stuttgart. Derzeit ist er im Projekt KatKit tätig, zuvor war er im DFG-Projekt forTEXT in Darmstadt und im Digital-Humanities-Projekt CRETA in Stuttgart beschäftigt. Dominik hat an der Universität Tübingen Philosophie, Politikwissenschaften und Soziologie (M.A.) studiert. Seine Forschungsschwerpunkte liegen in den Bereichen Wissenschaftstheorie, formale Methoden und Argumentationsanalyse. Im Rahmen von KatKit und forTEXT beschäftigt sich Dominik u.a. mit Intertextualität, Ontologien und der Entwicklung von Kategoriensystemen.</hi>
+                </p>
+                <p>Malte Meister, B.Sc.</p>
+                <p>Technische Universität Darmstadt, Institut für Sprach- und Literaturwissenschaft, Residenzschloss 1, 64283 Darmstadt</p>
+                <p>
+                    <hi style="font-size:11pt">Malte Meister hat 2009 sein Informatik-Diplom (B.Sc.) in Kapstadt erworben. Im Rahmen des Abschlussprojekts für sein Diplom wurde er beauftragt, das Text-Annotations und -Analysetool CATMA, für die Universität Hamburg zu erstellen. Bis Anfang 2010 wirkte er im Team an CATMA mit, bevor er sich auf seine Karriere in der freien Wirtschaft konzentrierte. Nach mehr als zehn Jahren Berufserfahrung als Softwareentwickler und Teamleiter entschied er sich, wieder in die CATMA-Entwicklung einzusteigen. Er ist seit 2021 technischer Mitarbeiter an der TU Darmstadt und beschäftigt sich dort im Rahmen von forTEXT hauptsächlich mit dem Betrieb und der Weiterentwicklung von CATMA und den damit verbundenen Systemen.</hi>
+                </p>
+                <p>Mareike Schumacher, M.A.</p>
+                <p>Technische Universität Darmstadt, Institut für Sprach- und Literaturwissenschaft, Residenzschloss 1, 64283 Darmstadt</p>
+                <p>Mareike Schumacher koordiniert das DFG-Projekt forTEXT (
+                    <ref target="https://fortext.net">https://fortext.net</ref>), in dem neben der Dissemination von digitalen Routinen, Ressourcen und Tools in die traditionelleren Fachwissenschaften auch die Weiterentwicklung von CATMA eine wesentliche Rolle spielt. Sie promovierte als digitale Literaturwissenschaftlerin über Orte und Räume im Roman, beschäftigt sich besonders mit den Methoden des 
+                    <hi rend="italic">distant reading</hi> (u. a. 
+                    <hi rend="italic">Named Entity Recognition</hi> oder Stilometrie), der Digital-Humanities-Theorie und der Verbindung von digitalen Methoden und theoriebasierter Literatur- und kulturwissenschaftlicher Forschung. 
                 </p>
             </div>
         </body>
         <back>
             <div type="bibliogr">
                 <listBibl>
-<head>Bibliographie</head>
-                    <bibl style="text-align: left; "><hi rend="bold">Böhm, Astrid.</hi> 2022. “Hyperdiplomatische Transkription der Handschrift Wien, ÖNB, Cod. 3085, fol. 1r-39v.” In 
-                        <hi rend="italic">Hyperdiplomatische Transkriptionsplattform</hi>, hg. von Helmut W. Klug unter Mitarbeit von Selina Galka. GAMS. PID: o:hyper.OENB3085 (zugegriffen: 25. Juli 2022).
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">Artstein, Ron, und Massimo Poesio. 2008. „Inter-Coder Agreement for Computational Linguistics“. </hi>
+                        <hi rend="italic" style="font-size:11pt">Computational Linguistics</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 34 (4): 555–96.</hi>
+                        <ref target="https://doi.org/10.1162/coli.07-034-R2">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.1162/coli.07-034-R2</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Böhm, Astrid, und Helmut W. Klug.</hi> 2020. “Quellenorientierte Aufbereitung historischer Texte im Rahmen digitaler Editionen: Das Problem der Transkription in mediävistischen Editionsprojekten.” In 
-                        <hi rend="italic">Digitale Methoden und Objekte in Forschung und Vermittlung der mediävistischen Disziplinen</hi>.
-                        <hi rend="italic" xml:space="preserve"> Akten der Tagung Bamberg, 08.-10. November 2018</hi>, hg. von Ingrid Bennewitz und Martin Fischer, S. 51–72. Bamberg: University of Bamberg Press.
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">Flüh, Marie. 2020. „Emotionsanalyse“. In </hi>
+                        <hi rend="italic" style="font-size:11pt">forTEXT</hi>
+                        <hi style="font-size:11pt">.</hi>
+                        <ref target="https://fortext.net/ressourcen/tagsets/emotionsanalyse">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://fortext.net/ressourcen/tagsets/emotionsanalyse</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Caria, Federico, and Brigitte Mathiak.</hi> 2018. “Minimal Functionality for Digital Scholarly Editions.” In 
-                        <hi rend="italic">Digital Cultural Heritage: Final Conference of the Marie Skłodowska-Curie Initial Training Network for Digital Cultural Heritage, ITN-DCH 2017, Olimje, Slovenia, May 23–25, 2017, Revised Selected Papers</hi>, hg. von Marinos Ioannides, 350–63. Cham: Springer International Publishing. 
-                        <ref target="https://doi.org/10.1007/978-3-319-75826-8_28">https://doi.org/10.1007/978-3-319-75826-8_28</ref> (zugegriffen: 25. Juli 2022).
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">Frey-Endres, Marcel, und Tobias Simon. 2021. </hi>
+                        <hi rend="italic" style="font-size:11pt">Digitale Werkzeuge zur textbasierten Annotation, Korpusanalyse und Netzwerkanalyse in den Geisteswissenschaften</hi>
+                        <hi style="font-size:11pt">. Bd. 2. Digital Philology | Working Papers in Digital Philology. Darmstadt: TUprints.</hi>
+                        <ref target="https://doi.org/10.26083/tuprints-00017850">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.26083/tuprints-00017850</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">CETEIcean.</hi> TEI in HTML5 Custom Elements. Raffaele Viglianti. 
-                        <ref target="https://github.com/TEIC/CETEIcean">
-                            <hi rend="color(1155CC)">https://github.com/TEIC/CETEIcean</hi>
-                        </ref> (zugegriffen: 22. Dezember 2022).
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">Gius, Evelyn, Jan Christoph Meister, Malte Meister, Marco Petris, Christian Bruck, Janina Jacke, Mareike Schumacher, Dominik Gerstorfer, Marie Flüh und Jan Horstmann.  2021. “CATMA 6 (Version 6.3)”. </hi>
+                        <hi rend="italic" style="font-size:11pt">Zenodo</hi>
+                        <hi style="font-size:11pt" xml:space="preserve">. DOI: 10.5281/zenodo.1470118. URL: </hi>
+                        <ref target="https://catma.de/">
+                            <hi style="font-size:11pt">https://catma.de/</hi>
+                        </ref>
+                        <hi style="font-size:11pt" xml:space="preserve"> [letzter Zugriff 24. November 2021]</hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">CoreTrustSeal. </hi>
-                        <ref target="https://www.coretrustseal.org/">
-                            <hi rend="color(1155CC)">https://www.coretrustseal.org/</hi>
-                        </ref> (zugegriffen: 25. Juli 2022).
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">Jacke, Janina. 2018. „Manuelle Annotation“. In </hi>
+                        <hi rend="italic" style="font-size:11pt">forTEXT</hi>
+                        <hi style="font-size:11pt">.</hi>
+                        <ref target="https://fortext.net/routinen/methoden/manuelle-annotation">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://fortext.net/routinen/methoden/manuelle-annotation</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Data Seal of Approval Synopsis. </hi>
-                        <ref target="https://www.coretrustseal.org/about/history/data-seal-of-approval-synopsis-2008-2018/">
-                            <hi rend="color(1155CC)">https://www.coretrustseal.org/about/history/data-seal-of-approval-synopsis-2008-2018/</hi>
-                        </ref>. (zugegriffen: 25. Juli 2022).
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">Moulin, Claudine. 2010. „Am Rande der Blätter. Gebrauchsspuren, Glossen und Annotationen in Handschriften und Büchern aus kulturhistorischer Perspektive“. </hi>
+                        <hi rend="italic" style="font-size:11pt">Autorenbibliotheken, Quarto. Zeitschrift des Schweizerischen Literaturarchivs</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 30/31: 19–26.</hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">EVT (Edition Visualization Technique).</hi> Roberto Rosselli Del Turco. 
-                        <ref target="http://evt.labcd.unipi.it/">
-                            <hi rend="color(1155CC)">http://evt.labcd.unipi.it</hi>
-                        </ref> (zugegriffen: 22. Dezember 2022).
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">Piez, Wendell. 2010. „Towards Hermeneutic Markup. An Architectural Outline“. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Digital Humanities 2010. Conference Abstracts</hi>
+                        <hi style="font-size:11pt">, 202–5. London.</hi>
+                        <ref target="http://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-743.html">
+                            <hi rend="color(1155CC)" style="font-size:11pt">http://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-743.html</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">FAIR Principles. </hi>
-                        <ref target="https://www.go-fair.org/fair-principles/">
-                            <hi rend="color(1155CC)">https://www.go-fair.org/fair-principles/</hi>
-                        </ref> (zugegriffen: 25. Juli 2022).
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">Rebholz-Schuhmann, Dietrich, Antonio José Jimeno Yepes, Erik M. van Mulligen, Ning Kang, Jan Kors, David Milward, Peter Corbett, u. a. 2010. „The CALBC Silver Standard Corpus for Biomedical Named Entities — A Study in Harmonizing the Contributions from Four Independent Named Entity Taggers“. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of the Seventh International Conference on Language Resources and Evaluation (LREC’10)</hi>
+                        <hi style="font-size:11pt">. Valletta, Malta: European Language Resources Association (ELRA).</hi>
+                        <ref target="http://www.lrec-conf.org/proceedings/lrec2010/pdf/888_Paper.pdf">
+                            <hi rend="color(1155CC)" style="font-size:11pt">http://www.lrec-conf.org/proceedings/lrec2010/pdf/888_Paper.pdf</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">FEDORA Commons. </hi>
-                        <ref target="http://www.fedora-commons.org/">
-                            <hi rend="color(1155CC)">http://www.fedora-commons.org/</hi>
-                        </ref> (zugegriffen: 25. Juli 2022).
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">Vauth, Michael, Hans Ole Hatzel und Evelyn Gius. 2021. “forTEXT/catma_gitlab: 1.0.0.” </hi>
+                        <hi rend="italic" style="font-size:11pt">Zenodo</hi>
+                        <hi style="font-size:11pt" xml:space="preserve">. DOI: </hi>
+                        <ref target="https://doi.org/10.5281/zenodo.5669221">
+                            <hi rend="color(1155CC)" style="font-size:11pt">10.5281/ZENODO.5669221</hi>
+                        </ref>
+                        <hi rend="bold" style="font-size:11pt">.</hi>
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Franzini, Greta, Melissa Terras und Simon Mahony.</hi> 2019. “Digital editions of text: Surveying user requirements in the Digital Humanities.” In
-                        <hi rend="italic" xml:space="preserve"> ACM Journal on Computing and Cultural Heritage (JOCCH)</hi> 12 (1): 1-23. 
-                        <ref target="https://doi.org/10.1145/3230671">
-                            <hi rend="color(1155CC)">https://doi.org/10.1145/3230671</hi>
-                        </ref> (zugegriffen: 25. Juli 2022).
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">GAMS. </hi>
-                        <ref target="https://gams.uni-graz.at/">
-                            <hi rend="color(1155CC)">https://gams.uni-graz.at</hi>
-                        </ref> (zugegriffen: 25. Juli 2022).
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Gil, Alex:</hi> “The User, the Learner and the Machines We Make”, 21. Mai 2015. 
-                        <ref target="http://go-dh.github.io/mincomp/thoughts/2015/05/21/user-vs-learner/">http://go-dh.github.io/mincomp/thoughts/2015/05/21/user-vs-learner/</ref> (zugegriffen: 25. Juli 2022).
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Handle.net Registry.</hi> 
-                        <ref target="https://www.handle.net/">
-                            <hi rend="color(1155CC)">https://www.handle.net/</hi>
-                        </ref> (zugegriffen: 25. Juli 2022).
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Hofmeister-Winter, Andrea.</hi> 2003. “Das Konzept einer „Dynamischen Edition” dargestellt an der Erstausgabe des „Brixner Dommesnerbuches” von Veit Feichter (Mitte 16. Jh.).”, Göppingen: Kümmerle.</bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">GitHub: Hyper. </hi>
-                        <ref target="https://github.com/ditah-at/hyper">
-                            <hi rend="color(1155CC)">https://github.com/ditah-at/hyper</hi>
-                        </ref> (zugegriffen: 25. Juli 2022).
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Klug, Helmut W., Astrid Böhm und Elisabeth Raunig (Hrsg.).</hi> 2019. Mittelalterlabor. Transkription der Handschrift Graz, UB, Ms. 1609. 
-                        <ref target="http://hdl.handle.net/11471/521.60">hdl.handle.net/11471/521.60</ref> (GAMS. 521.60.) (zugegriffen: 25. Juli 2022).
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Klug, Helmut W., Astrid Böhm und Christian Steiner (Hrsg).</hi> 2020-02. CoReMA - Cooking Recipes of the Middle Ages. Corpus - Analysis - Visualisation. hdl.handle.net/11471/562.10 (GAMS. 562.10) (zugegriffen: 25. Juli 2022).</bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Klug, Helmut W., Selina Galka und Elisabeth Steiner (Hrsg).</hi> 2021. KONDE Weißbuch. hdl.handle.net/11471/562.50. (GAMS. 562.50.) 
-                        <ref target="http://www.digitale-edition.at/">
-                            <hi rend="color(1155CC)">www.digitale-edition.at</hi>
-                        </ref> (zugegriffen: 25. Juli 2022).
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Klug, Helmut W. und Astrid Böhm</hi> 2021. “Datenmodell “Hyperdiplomatische Transkription”.” In 
-                        <hi rend="italic">KONDE Weißbuch</hi>, hg. von Helmut W. Klug unter Mitarbeit von Selina Galka und Elisabeth Steiner im HRSM Projekt “Kompetenznetzwerk Digitale Edition”. Handle: hdl.handle.net/11471/562.50.50. PID: o:konde.50 (zugegriffen: 25. Juli 2022).
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Klug, Helmut W. und Selina Galka (Hrsg.).</hi> 2022. Hyperdiplomatische Publikationsplattform. 
-                        <ref target="http://gams.uni-graz.at/hyper">
-                            <hi rend="color(1155CC)">gams.uni-graz.at/hyper</hi>
-                        </ref>. (zugegriffen: 25. Juli 2022).
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">OAIS Reference Model</hi> (ISO 14721). 
-                        <ref target="http://www.oais.info/">
-                            <hi rend="color(1155CC)">http://www.oais.info/</hi>
-                        </ref> (zugegriffen: 25. Juli 2022).
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Pierazzo, Elena.</hi> 2019. “What Future for Digital Scholarly Editions? From Haute Couture to Prêt-à-Porter.” In
-                        <hi rend="italic" xml:space="preserve"> International Journal of Digital Humanities</hi> 1 (2): 209-20. doi:10.1007/s42803-019-00019-3. 
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Risam, Roopika und Alex Gil.</hi> 2022a. Minimal Computing. Digital Humanities Quarterly, Vol 16 (2). 
-                        <ref target="http://www.digitalhumanities.org/dhq/vol/16/2/index.html">
-                            <hi rend="color(1155CC)">http://www.digitalhumanities.org/dhq/vol/16/2/index.html</hi>
-                        </ref> (zugegriffen: 25. Juli 2022).
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Risam, Roopika und Alex Gil.</hi> 2022b. “Introduction: The Questions of Minimal Computing.” In 
-                        <hi rend="italic">Digital Humanities Quarterly</hi> 16 (2). 
-                        <ref target="http://www.digitalhumanities.org/dhq/vol/16/2/000646/000646.html">
-                            <hi rend="color(1155CC)">http://www.digitalhumanities.org/dhq/vol/16/2/000646/000646.html</hi>
-                        </ref> (zugegriffen: 25. Juli 2022).
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Stigler, Johannes, und Elisabeth Steiner.</hi> 2018. “GAMS – Eine Infrastruktur zur Langzeitarchivierung und Publikation geisteswissenschaftlicher Forschungsdaten.” In 
-                        <hi rend="italic" xml:space="preserve">Mitteilungen der Vereinigung Österreichischer Bibliothekarinnen und Bibliothekare </hi>71: 207–16. 
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">TEI-Publisher.</hi> The Instant Publishing Toolbox. 
-                        <ref target="https://teipublisher.com/index.html">
-                            <hi rend="color(1155CC)">https://teipublisher.com/index.html</hi>
-                        </ref> (zugegriffen: 22. Dezember 2022).
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">transcriptiones.</hi> Transkriptionen historischer Manuskripte erstellen, teilen, nutzen. 
-                        <ref target="https://transcriptiones.ch/">
-                            <hi rend="color(1155CC)">https://transcriptiones.ch</hi>
-                        </ref> (zugegriffen: 22. Dezember 2022).
+                    <bibl>
+                        <lb/>Wissler, Lars, Mohammed Almashraee, Dagmar Monett, und Adrian Paschke. 2014. „The Gold Standard in Corpus Annotation“. In .
+                        <ref target="https://doi.org/10.13140/2.1.4316.3523">
+                            <hi rend="color(1155CC)">https://doi.org/10.13140/2.1.4316.3523</hi>
+                        </ref>.
                     </bibl>
                 </listBibl>
             </div>

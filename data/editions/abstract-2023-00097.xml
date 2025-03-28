@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="RADISCH_Erik_Buddhist_Murals_of_Kucha_on_the_Northern_Silk_R" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="BELL_Peter_Open_and_Closed_AI__Eine_Kunstkritik_künstlich_ge" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="full">
-                    <title type="main">Buddhist Murals of Kucha on the Northern Silk Road. Ein Versuch der Semi-Automatisierung der Annotierung</title>
-                    <title type="sub"/>
-                </title>
+                <title>Open and Closed AI. Eine Kunstkritik künstlich generierter Bilder</title>
                 <author>
                     <persName>
-                        <surname>Radisch</surname>
-                        <forename>Erik</forename>
+                        <surname>Bell</surname>
+                        <forename>Peter</forename>
                     </persName>
-                    <affiliation>Sächsische Akademie der Wissenschaften zu Leipzig, Deutschland</affiliation>
-                    <email>radisch@saw-leipzig.de</email>
+                    <affiliation>Philipps-Universität Marburg, Deutschland</affiliation>
+                    <email>peter.bell@uni-marburg.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-08-02T07:04:12.907000000</date>
+                    <date>2022-12-15T19:03:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -45,7 +42,7 @@
                     </address>
                 </publicationStmt>
             <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
+                <p>Converted from a Word document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -61,138 +58,115 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Posterpräsentation</term>
+                    <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Neuronale Netze</term>
-                    <term>Bildannotation</term>
-                    <term>Semi-Automatisierung</term>
+                    <term>Digitale Kunstgeschichte</term>
+                    <term>Kunstkritik</term>
+                    <term>Computer Vision</term>
+                    <term>aiart</term>
+                    <term>Dall-e 2</term>
+                    <term>openai</term>
+                    <term>Critical Machine Vision</term>
+                    <term>Bildverarbeitung</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Entdeckung</term>
                     <term>Bilderfassung</term>
-                    <term>Annotieren</term>
-                    <term>Archivierung</term>
+                    <term>Gestaltung</term>
+                    <term>Bewertung</term>
+                    <term>Stilistische Analyse</term>
                     <term>Bilder</term>
-                    <term>Forschungsprozess</term>
+                    <term>Visualisierung</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p>Die buddhistischen Höhlenkomplexe in der Region Kucha an der nördlichen Seidenstraße (Uigurisches Autonomes Gebiet Xinjiang, VR China) beherbergen beeindruckende Wandmalereien, die etwa aus dem 5. bis 10. Jhd. stammen. Die ersten Hinweise auf eine frühere buddhistische Kultur wurden zu Beginn des 20. Jahrhunderts entdeckt, woraufhin mehrere Länder Expeditionen in das Gebiet schickten, um die einst in der Region vorherrschende Religion zu erforschen. Es war eine Sensation, als verschiedene buddhistische Höhlenkomplexe entdeckt wurden. Damals wurden auch die ersten Fotografien vom Ist-Zustand der Höhlen angefertigt und Teile der Malereien aus den Höhlen entnommen und in die jeweiligen Nationalmuseen gebracht. Heute sind Fragmente der Wandmalereien über die ganze Welt verstreut, was eine Zuordnung zu den einzelnen Ursprungshöhlen sehr schwierig macht (Weitere Informationen: Yaldiz 1987; Popova 2008; Dreyer 2015).</p>
-            <p>Das hier vorgestellte Projekt hat es sich zur Aufgabe gemacht, die Wandmalereien in situ und die weltweit vorhandenen Einzelstücke zu dokumentieren, zu beschreiben und mit Hilfe von historischen Fotografien wieder in ihren ursprünglichen Kontext zu bringen.<ref n="1" target="ftn1"/>
-            </p>
-            <p>Das Projekt bedient sich moderner Möglichkeiten der Digital Humanities, indem nicht nur eine umfangreiche textliche Beschreibung einzelner Szenen erfolgt, sondern auch die Bildinhalte der sich wiederholenden Darstellungen erfasst und mit digitalen Methoden angereichert werden. Zu diesem Zweck wird das digitale Bildannotationstool Annotorious<ref n="2" target="ftn2"/> (siehe Abbildung 1) genutzt, um die Inhalte direkt mit einer rund 1.000 Einträge umfassenden Taxonomie zu annotieren. Die erarbeiteten Forschungsdaten stehen online frei zur Verfügung.<ref n="3" target="ftn3"/>
-            </p>
-            <p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung</head>
+                <p style="text-align: left; ">Unter dem Hashtag #aiart erscheinen täglich tausende künstlich erzeugte Bilder auf sozialen Medien und digitalen Marktplätzen z.B. als NFTs, flankiert von Kommentaren und Artikeln, welche die Qualität und Kreativität dieser Bildproduktionen diskutieren. </p>
+                <p style="text-align: left; ">Der Vortrag reflektiert diese Entwicklungen, indem er die Bilder und ihre Genese kritisch hinterfragt, wertet und die Prozesse analysiert. Dass Digital Humanities parallel zum wissenschaftlichen Rezensionswesen auch eine Kritik von Software entwickeln sollte, zeigt sich z.B. in der Gründung des CKIT Rezensionsjournal das aus dem AK digitale Kunstgeschichte und nfdi4culture entstanden ist. Im Zusammenhang generativer künstlicher Intelligenz weitet sich diese Softwarekritik in Form einer Werkkritik aus. Aufgrund der raschen Entwicklung innerhalb der Computer Vision und der generativen Modelle gibt es bislang wenige Reflexionen über deren Schöpfungshöhe (Gary et al. 2022) jenseits der informatischen Überbietungslogiken und der stetigen Diskussion über bias von AI. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>OpenAI und closed access. Technikkritik </head>
+                <p style="text-align: left; ">Digitale Kunstkritik setzt bereits ein, wo die Frage gestellt wird, ob dieses popkulturelle Phänomen Gegenstand der Kunstgeschichte oder der Medienwissenschaften ist oder – wie öffentlich viel diskutiert – es sich überhaupt um Kunst handeln kann. Die Frage ist leicht zu beantworten, denn in dem Moment, wo über Kunst oder nicht Kunst entschieden werden muss, bedarf es unvermeidlich der Methoden der Kunstgeschichte und Kunstkritik. #Aiart könnte auf einer rein ästhetisch-visuellen Ebene mit konventionellen Methoden der Kunstwissenschaft bewertet werden. Dadurch, dass die Bilder nicht von Menschen sondern in erster Linie von einem mathematischen Modell erzeugt werden, bietet sich an eine operative und technikzentrierte Medienkritik in die Kunstkritik zu integrieren. Die hier durchzuführende kritische Reflexion über AI Art findet somit in der digitalen Kunstgeschichte als Teil der Digital Humanities statt. Dies geschieht in Form Medienarchäologie, in der das maschinelle Lernen und die verschiedenen Modelle mit- und gegeneinander arbeitender neuronaler Netze untersucht werden. Dabei zeigt sich eine Vielzahl an Architekturen von GANs und Transformer-Netzwerken<ref n="1" target="ftn1"/> deren Ergebnisse teils zusätzlich noch durch verschiedene Trainingsdatenbanken<ref n="2" target="ftn2"/> variiert werden können. Die 2014 mit generative adversial networks (GAN) begonnene Entwicklung hat sich in den letzten drei Jahren deutlich beschleunigt und zu immer realistischeren Bildern geführt. Während einige Modelle selbstständig Bilder erzeugen, ist die Eingabe via Bildbeschreibung quasi als Kommando (prompt) zum Standard der künstlichen Bildproduktion geworden. Diese Texteingabe ist möglich, da in DALL-E ein Sprachmodell (GPT-3) mit Algorithmen zur Bilderzeugung kombiniert ist. Auch durch dieses Zusammenkommen von Bildverarbeitung/Visualisierung und Computerlinguistik besteht hier für die Digital Humanities ein großes Potential an Forschung, Anwendung und Kritik. Daneben verbinden sich durch die Bildsynthese die Forschungsfelder Computer Vision und Computer Grafik noch enger, so dass ein transdisziplinärer bildwissenschaftlicher Gegenstand vorliegt. Eine erste Phase von ‚Kunstkritik‘ ist den Architekturen schon eingeschrieben, da ständig entschieden wird, welche Bilder den Trainingsdaten ähneln oder durch andere Kriterien als angemessen erscheinen. 
+                </p>
+                <p style="text-align: left; ">DALL-E der Stiftung OpenAI lässt sich durch sieben Gründe nicht als ‚open‘ bezeichnen, da der Code ist bislang nicht publiziert worden und die Daten anhand derer das maschinelle Lernen durchgeführt wurde (oder werden) nicht bekannt sind. Bekannt ist lediglich, dass es sich um im Internet gescrapte Bild- und Textkombinationen (z.B. Bild und Bildunterschriften) handelt. Zudem gab es zunächst keinen freien Zugang zur Nutzung, sondern nur eine Registrierung über eine Warteliste und keine Transparenz über die Zugangsvergabe. Seit 20.07.2022 ist DALL-E monetarisiert, indem nach einer gewissen Anzahl unentgeltlicher Bilder, dann für weitere Bilderzeugungen bezahlt werden muss. Ähnlich wie bei Midjourney erscheinen diese Kosten allerdings relativ moderat. Die generierten Bilder gehören alle openai. Selbst wenn ein eigener Bildupload die Grundlage bildete oder das Kommando eine Innovation/Schöpfungshöhe besitzt. Allerdings räumt openai seit Juli 2022 eine Nutzung der Bilder auch zu kommerziellen Zwecken ein. Gleichzeitig wehren sich Künstler*innen international gegen die unfreiwillige Verwendung ihrer Bilder als Trainingsdaten, da ihr Stil so sehr einfach reproduzierbar wird. </p>
+                <p style="text-align: left; ">Die Offenheit von DALL-E wird zuletzt durch eine teils rigide Content Policy eingeschränkt, wodurch Bilder mit sensiblen Inhalten oder Deepfakes verhindert werden sollen. Andere Modelle wie Stablediffusion sind offen im Hinblick auf open source, open access und freier Texteingabe, was wiederum Kritik aufgrund der Missbrauchsmöglichkeiten erzeugt. </p>
+                <p style="text-align: left; ">Eine kritische Reflexion darüber, ob OpenAI mit dieser Herangehensweise nicht ihrer eigenen Stiftungscharta<ref n="3" target="ftn3"/> widerspricht, kann nur angerissen werden. Die Geschlossenheit der kommerziellen Systeme wie DALL-E, IMAGEGEN und PARTI ist allerdings nur ein Aspekt, der eine wissenschaftliche Erforschung und Kritik erschwert. Der Aufbau konkurrenzfähiger Modelle an Universitäten scheitert oft am Aufbau der Trainingsdatensätze sowie der Infrastruktur respektive Rechenleistung für das maschinelle Lernen. Die akademische Forschung hat somit Schwierigkeiten selbst unabhängige Architekturen zu erstellen und kann gleichzeitig mangels Verständnisses der führenden Modelle keine fundierte Kritik zu deren Funktionsweise artikulieren. Modelle wie Stablediffusion (Rombach 2022) zeigen hingegen, dass durchaus konkurrenzfähige Architekturen im akademischen Kontext entstehen klönnen. Insgesamt besteht allerdings die Herausforderung die Verfahren der oft als black box beschriebenen Netze zu interpretieren. Dies ist u.a. möglich durch den Vergleich der unterschiedlichen Modelle und Trainingsdatensätzen oder Ergebnissen aus unterschiedlichen Phasen der Bildgenerierung, sowie durch Prompt Engineering als experimentelle Methode. Bei letzterer kombiniert und ergänzt man in Versuchsreihen die Satzteile einer Befehlszeile in unterschiedlichen Reihenfolgen. Dabei können auch Marker gesetzt werden, z.B. indem im Kommando dazu aufgefordert wird, Personen einzufärben oder auf andere Weise Objekte zu markieren, um zu sehen, ob das Modell nicht nur Bilder des Konzepts kopiert, sondern ein tieferes Verständnis des Konzepts hat. Auch kann untersucht werden, wie ein Bild durch Zugabe oder Umformulierung von Text realistischer wird. An dieser Stelle zeigt sich auch wie subjektiv die Kriterien der Bewertung sind. Welche Grundlage hat die Wahrnehmung ein Bild realistischer oder die Umsetzung (man könnte auch sagen Inszenierung) eines prompts gelungener zu finden?
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Kunstkritik </head>
+                <p style="text-align: left; ">Neben der Medienarchäologie zu neuronalen Netzen und dem maschinellen Lernen muss hier also eine zweite Form der Auseinandersetzung gefunden werden, die sich methodisch an klassische Kategorien und Werte der Kunstkritik anlehnt. Diese Werte sind nicht essentialistisch zu verstehen, sondern relativistisch. So kann ein visueller Turing-Test durchgeführt werden, indem gefragt wird, ob das Bild für computergeneriert oder eine Fotografie bzw. von Menschen digital oder konventionell erstellte Grafik gehalten wird. Hier zeigt sich, dass in DALL-E 2 viele Bilder erzeugbar sind (Photograph of a house in the Bauhaus style; Abb. 1), die in diesem Turing-Test bestehen, während andere unbefriedigende Ergebnisse liefern (17th century landscape painting). Das Problem ist in vielen Fällen nicht die Imitation eines Stils, sondern die Form der dargestellten Dinge also die Detailschilderungen (im Fall der niederländischen Landschaftsmalerei sind es monströse Kühe). Die Bildgeneratoren insbesondere DALL-E 2 sind intelligent im Sinne von Mimikry. Sie können die Oberflächen von Dingen, Stilen, Texturen und Beleuchtungen überzeugend widergeben ohne ein tieferes Verständnis der Gegenstände zu haben. Die für die Kunstgeschichte und Kunstkritik so wichtigen Pole, Kunst und Natur, haben auch bei der künstlichen Bildgenerierung eine Bedeutung. Das antrainierte „Weltwissen“ führt dazu, dass die Modelle auch in der Natur vorhandene Proportionen internalisieren – also visuelle Prinzipien der Kompositionalität befolgen. Entsprechend fällt es beispielsweise dem Algorithmus schwer Elefanten zu erzeugen, die kleiner als Schildkröten sind. Dadurch erscheint auch der Namensgeber Salvatore Dali für DALL-E eher unpassend, weil dessen radikal unnatürlichen Schöpfungen innerhalb seiner surrealen Kunst mit DALL-E kaum zu reproduzieren und noch weniger von diesem Modell zu erfinden wären. </p>
+                <p style="text-align: left; ">Auf diese Weise sollen Kriterien bzw. die so genannten Rubriken der Kunstkritik (Vogt 2010) wie Bilderfindung, Komposition, Ausdruck, Stil und Dekorum, Naturnähe (im Sinne von real-world-data) und Kunstrezeption untersucht werden. Auf ikonologischer Ebene führt die Bildkritik direkt in gesellschaftliche Zusammenhänge. Denn auch bei den neuen Generationen von Bildgeneratoren zeigen sich der Bias, der in Bezug auf das maschinelle Lernen bereits viel besprochen wurde (z.B. Stereotype Frauen- und Männerberufe sowie nicht-weiße Kriminelle werden wie selbstverständlich erzeugt), während die vollständige Unwissenheit bzgl. einiger kanonischer Werke der Kunst- und Kulturgeschichte auch die mangelnde Historizität der Trainingsdaten aufzeigt. </p>
+                <p style="text-align: left; ">Anhand der exemplarischen Beurteilung der synthetischen Bilder soll es weniger um Urteile der einzelnen Bilder gehen, als um die Aufstellung von Kriterien und Erkenntnisse über die Potentiale von aiart insgesamt. Dabei zeichnet sich ab, dass wir es mit einer Form von Mimikry zu tun haben, durch die Oberflächen und Stile immer besser imitiert werden können, während komplexere Kompositionen und Konzepte scheitern. Die Forschungen zu aiart entstanden im Rahmen des SPP „Das digitale Bild“ im Projekt „Bildsynthese als Methode des kunsthistorischen Erkenntnisgewinns“ (2019-2022). In Ausblick und Diskussion soll auch darauf eingegangen werden, welche weiteren Anwendungsfelder sich in der Kunstgeschichte für die künstlich generierten Bilder aufzeigen lassen.</p>
                 <figure>
-                    <graphic url="Pictures/8f400e17cb83c6ae4e748a13ed8c2e8d.png"/>
-                    <head>Abbildung 1: Annotatieren mit Annotorious</head>
-                </figure>Die Annotation von Objekten im Bild ermöglicht zwar eine wissenschaftliche Nachvollziehbarkeit der identifizierten Objekte, ist aber auch eine sehr umfangreiche und zeitaufwändige Aufgabe. Viele Bildinhalte wiederholen sich häufig in unterschiedlichen Zusammenhängen. Außerdem liegen manchmal mehrere Bilder eines Objekts aus verschiedenen Perspektiven vor oder es gibt Bilder aus der Zeit der Expeditionen, auf denen abgetrennte Teile noch in ihrem ursprünglichen Kontext zu sehen sind. Es besteht also die Notwendigkeit, manchmal sehr ähnliche oder gleiche Objekte mehrfach zu annotieren. Die Übertragung von Annotationen ist jedoch schwierig. Selbst wenn Fotos von denselben Objekten vorhanden sind, können unterschiedliche Blickwinkel und verschiedene Objektive dazu führen, dass die Bilder verzerrt sind. Es ist kaum möglich, diese Aufgabe mit herkömmlichen Computer-Vision-Methoden automatisch durchzuführen.
-            </p>
-            <p>Aus diesem Grund wird im Rahmen des Projekts derzeit versucht, mit den bereits vorgenommenen Annotationen Region Based Convolutional Neural Networks (RCNNs)<ref n="4" target="ftn4"/> zu trainieren, um in Zukunft zumindest Teile der Annotation halbautomatisch (die Annotierenden werden die Möglichkeit haben, die gefundenen Regionen des RCNNs einzusehen und diese anzunehmen oder gegebenenfalls zu verbessern) durchführen zu können.
-            </p>
-            <p>Bislang wurden RCNNs in den Digital Humanities vor allem zur Identifizierung, Lokalisierung und Ordnung von Objekten in Bildern eingesetzt (siehe z.B.: Howanitz et al. 2019; Arnold/Tilton 2019; Duhaime 2019; Duhaime 2019; Helm et al. 2021). Ihre Verwendung für eine halbautomatische Annotation ist zumindest zur Kenntnis des Autors dieses Posterproposals noch nicht umgesetzt worden. Da die Ränder automatisch erkannten Annotationen oft ausfransen oder nicht das gesamte Objekt erkannt wird,mag es auch gewagt sein, einen solchen Versuch zu starten.</p>
-            <p>Die Voraussetzungen des Kucha-Projekts sind sehr gut. Es existieren bereits über 9.000 Polygone, die in insgesamt etwa 12.000 Annotationen verwendet wurden (ein Polygon kann mit mehreren Elementen der Taxonomie verknüpft sein). Einige Objekte wurden mehre hundert Mal annotiert. Es gibt jedoch auch einige Probleme, die zu berücksichtigen sind. So gibt es beispielsweise zwei grundlegend verschiedene Arten von Bildern im Korpus: zum einen Fotografien (historische und moderne), zum anderen Zeichnungen der Malereien. Die Erkennung auf Fotografien dürfte deutlich schwieriger sein, da hier die Malereien oft in sehr schlechtem Zustand sind und selbst von einem geübten Auge nur schwer zu identifizieren sind.</p>
-            <p>Es wurden verschiedene Experimente durchgeführt, die die prinzipielle Nutzbarkeit von RCNNs für eine semi-automatisierte Annotation testen sollten. Diese werden im Poster näher präsentiert. In einem ersten Experiment wurden alle Trainingsdaten zusammen trainiert (mAP
-                <hi rend="sub">IoU =0.75</hi> = 5.85<ref n="5" target="ftn5"/>). Ein zweites Experiment teilte die Daten nach Bildarten auf (mAP
-                <hi rend="sub">IoU =0.75</hi> = 3.40 für Fotos und mAP
-                <hi rend="sub">IoU =0.75</hi> = 4.04 bei Zeichnungen). Es war dabei auffällig, dass die Zeichnungen bessere Resultate erzielten, die aber niedriger als die Resultate des ersten Experimentes waren. Die folgenden beiden Experimenten wurden deswegen vorerst auf Zeichnungen beschränkt. Das dritte Experiment konzentrierte sich auf Klassen mit mehr als 50 Annotationen, was zwar den Großteil der Klassen außen vor ließ, aber vielversprechende Ergebnisse erzeugte ( mAP
-                <hi rend="sub">IoU =0.75 </hi>= 23.06). Deswegen wurden in einem vierten Experiment alle Klassen von menschlichen Abbildungen zu einer Metaklasse zusammengelegt. Dieses letzte Experiment funktionierte besonders vielversprechend (mAP
-                <hi rend="sub">IoU =0.75</hi> = 59.99; ein Beispiel kann in Abbildung 2 eingesehen werden). Zur Bewertung der Experimente kann der Output der Testbilder online eingesehen werden.<ref n="6" target="ftn6"/> Bis zur DHd im nächsten Jahr sollen einige weitere Experimente durchgeführt werden und ein erster Prototyp zur Anwendung kommen und im Rahmen des Posters präsentiert werden.
-            </p>
-            <p>
-                <figure>
-                    <graphic url="Pictures/2aa0930e41f18fd8a4b028eb59bec23c.png"/>
-                    <head>Abbildung 2: Beispiel-Output für Experiment 4</head>
+                    <graphic n="1001" width="16.002cm" height="6.496402777777778cm" url="Pictures/5f9d1f3ed088661758ed9c64e5e1676e.png" rend="inline"/>
                 </figure>
-            </p>
+                <p style="text-align: left; ">
+                    <hi rend="italic" xml:space="preserve">Abb. 1: Mit Dall-E 2 erzeugte Bauhaus Architekturen. </hi>
+                </p>
+            </div>
         </body>
         <back>
 <div type="notes">
-<note xml:id="ftn1" rend="footnote text" n="1">
-    Wissenschaftliche Bearbeitung der buddhistischen Hoehlenmalereien in der Kucha-Region der nördlichen Seidenstrasse (SAW-Leipzig). Datenbank: 
-                    <ref target="https://kucha.saw-leipzig.de/">https://kucha.saw-leipzig.de</ref>.
-                </note>
-
-<note xml:id="ftn2" rend="footnote text" n="2">
-                   <ref target="https://recogito.github.io/annotorious/">https://recogito.github.io/annotorious/</ref>. Das Projekt hat seine eigene Reihe «Leipzig Kucha Studies». Erster Band: Konczak-Nagel/Zin 2020
-                </note>
-<note xml:id="ftn3" rend="footnote text" n="3">
-    <ref target="https://kuchatest.saw-leipzig.de/">https://kuchatest.saw-leipzig.de/</ref>
-                </note>
-
-<note xml:id="ftn4" rend="footnote text" n="4"> Das Projekt nutzt hierfür detectron2 (Wu et al. 2019).</note>
-<note xml:id="ftn5" rend="footnote text" n="5"> Die Maßeinheit gibt die Mean Average Precision bei einer Mindestübereinstimmung einer Region mit dem Goldstandard von 75% an.</note>
-<note xml:id="ftn6" rend="footnote text" n="6"><ref target="https://github.com/erikradisch/examplePics">https://github.com/erikradisch/examplePics</ref>
-                    
-                </note></div>
+<note rend="footnote text" xml:id="ftn1" n="1">
+                         StyleGAN, VQGAN+CLIP, GAUGAN, craiyon, DALL-E 1 und 2, Imagegen, Midjourney, Stablediffusion. 
+                    </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                         z.B. ImageNet, OpenImage, CelebA.
+                    </note>
+<note rend="footnote text" xml:id="ftn3" n="3">
+                         OpenAI Charter:
+                            <hi rend="Hyperlink" xml:space="preserve"> https://openai.com/charter/</hi>
+                        
+                    </note></div>
             <div type="bibliogr">
                 <listBibl>
-<head>Bibliographie</head>
+                    <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">Arnold, </hi>
-                        <hi rend="bold">T. </hi>
-                        <hi rend="bold">and</hi>
-                        <hi rend="bold"> </hi>
-                        <hi rend="bold">Tilton, </hi>
-                        <hi rend="bold">L</hi>
-                        <hi rend="bold">. </hi>2019. “Distant viewing: analyzing large visual corpora.” In Digital Scholarship in the Humanities 36(1), DOI: 
-                        <ptr target="https://doi.org/10.1093/llc/fqz013"/>.
+                        <hi rend="bold">Chen, Weiwen, Mohammad Shidujaman, und Xuelin Tang</hi> (2020). 
+                        <hi rend="italic">AiArt: Towards Artificial Intelligence Art</hi>. In The 12th International Conference on Advances in Multimedia.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Dreyer, C.</hi> 2015. “
-                        <hi rend="italic">Abenteuer Seidenstraße: Die Berliner Turfan-Expeditionen 1902–1914</hi>.” Leipzig: Seemann.
+                        <hi rend="bold">Esser, Patrick, Robin Rombach, und Björn Ommer (</hi>2021
+                        <hi rend="italic">). Taming Transformers for High-Resolution Image Synthesis</hi>, Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pp. 12873-12883.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Duhaime, D. </hi>2019. “PixPlot.” 
-                        <ptr target="https://github.com/YaleDHLab/pix-plot"/>.
+                        <hi rend="bold">Kohle, Hubertus, und Stefan Germer (1991)</hi>. „Spontaneität und Rekonstruktion. Zur Rolle, Organisationsform und Leistung der Kunstkritik im Spannungsfeld von Kunsttheorie und Kunstgeschichte“. Buchbeitrag. Wiesbaden. 
+                        <ref target="https://archiv.ub.uni-heidelberg.de/artdok/109/">https://archiv.ub.uni-heidelberg.de/artdok/109/</ref>.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Helm, </hi>
-                        <hi rend="bold">W., </hi>
-                        <hi rend="bold">Schmideler, S., </hi>
-                        <hi rend="bold">I</hi>
-                        <hi rend="bold">m, C., Mandl, T., Kollmann, </hi>
-                        <hi rend="bold">S. and </hi>
-                        <hi rend="bold">Müller, </hi>
-                        <hi rend="bold">L.</hi>
-                        <hi rend="bold"> </hi>2021. “Wie sich die Bilder ähneln. Vom Zufallsfund zur systematischen Forschung im Bereich der automatisierten Bildähnlichkeitssuche.” In Fabrikation von Erkenntnis: Experimente in den Digital Humanities, ed. Burghardt, M., Dieckmann, L., Steyer, T., Trilcke, P., Walkowski, N.-O., Weis, J. and Wuttke, U. ZfdG (Sonderband 5). DOI: 10.26298/melusina.8f8w-y749-wsdb.
+                        <hi rend="bold">Marcus, Gary, Ernest Davis, und Scott Aaronson</hi> (2022). 
+                        <hi rend="italic">A very preliminary analysis of DALL-E 2</hi>. arXiv, 2. Mai 2022. 
+                        <ref target="https://doi.org/10.48550/arXiv.2204.13807">https://doi.org/10.48550/arXiv.2204.13807</ref>.
+                    </bibl>
+                    <bibl>Offert, Fabian, und Peter Bell (2022). 
+                        <hi rend="italic">Generative Digital Humanities</hi>. In CHR, pp. 202–212.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Howanitz, </hi>
-                        <hi rend="bold">G., </hi>
-                        <hi rend="bold">Bermeitinger, B., Radisch, E., Gassner, S., Rehbein, M. </hi>
-                        <hi rend="bold">and</hi>
-                        <hi rend="bold"> Handschuh, S. </hi>2019. July 11. “Deep Watching - Towards New Methods of Analyzing Visual Media in Cultural Studies.” Digital Humanities 2019 (DH2019), Utrecht, Netherlands. 
-                        <ptr target="https://zenodo.org/record/3326470#.Y5uLSKfMIYw"/>.
+                        <hi rend="bold">Oppenlaender, Jonas</hi> (2022). 
+                        <hi rend="italic">Prompt Engineering for Text-Based Generative Art</hi>. preprint arXiv:2204.13988.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Konczak-Nagel, I. </hi>
-                        <hi rend="bold">a</hi>
-                        <hi rend="bold">nd </hi>
-                        <hi rend="bold">Zin, M. </hi>2020. “Essays and Studies in the Art of Kucha” (Leipzig Kucha Studies 1). New Delhi: Dev Publishers.
+                        <hi rend="bold">Rombach, Robin, et al</hi>. (2022). 
+                        <hi rend="italic">High-Resolution Image Synthesis with Latent Diffusion Models</hi>. 2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), IEEE, 2022, pp. 10674–85, 
+                        <ref target="https://doi.org/10.1109/CVPR52688.2022.01042">https://doi.org/10.1109/CVPR52688.2022.01042</ref>.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Popova, I. F. </hi>
-                        <hi rend="bold">(ed.)</hi>. 2008. “
-                        <hi rend="italic">Russian Expeditions to Central Asia at the Turn of the 20th Century: Collected Articles</hi>.” St Petersburg: Slavia Publishers.
+                        <hi rend="bold">Saharia, Chitwan, William Chan, Saurabh Saxena, Lala Li, Jay Whang, Emily Denton, Seyed Kamyar Seyed Ghasemipour, et al.</hi> (2022). 
+                        <hi rend="italic">Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding</hi>. arXiv. 
+                        <ref target="https://doi.org/10.48550/arXiv.2205.11487">https://doi.org/10.48550/arXiv.2205.11487</ref>.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Wu, Y., Kirillov, </hi>
-                        <hi rend="bold">A., </hi>
-                        <hi rend="bold">Massa, F., </hi>
-                        <hi rend="bold">Lo, </hi>
-                        <hi rend="bold">W. and </hi>
-                        <hi rend="bold">Girshick, R. </hi>2019. “Detectron2.” 
-                        <ptr target="https://github.com/facebookresearch/detectron2"/>.
+                        <hi rend="bold">Sparkes, Matthew</hi> (2022). 
+                        <hi rend="italic">AI Art Tool Covertly Alters Requests</hi>. New Scientist 255, Nr. 3397 (30. Juli 2022): 10. 
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Yaldiz, </hi>
-                        <hi rend="bold">M.</hi> 1987. “
-                        <hi rend="italic">Archäologie und Kunstgeschichte Chinesisch-Zentralasiens (Xinjiang)</hi>.” Handbuch der Orientalistik, Abteilung 7, Kunst und Archäologie, Band 3, Innerasien. Leiden: Brill. 
+                        <hi rend="bold">Vogt, Margrit</hi> (2010). 
+                        <hi rend="italic">Von Kunstworten und -werten: Die Entstehung der deutschen Kunstkritik in Periodika der Aufklärung</hi>. De Gruyter, Berlin. 
                     </bibl>
                 </listBibl>
             </div>

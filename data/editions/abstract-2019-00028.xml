@@ -1,24 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="144_final-SCHNEIDER_Stefanie_über_die_Ungleichheit_im_Gleichen__Erkenn" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="112_final-GEIERHOS_Michaela_Potentielle_Privatsphäreverletzungen_aufde" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="full">
-                    <title type="main">Über die Ungleichheit im Gleichen. Erkennung unterschiedlicher Reproduktionen desselben Objekts in kunsthistorischen Bildbeständen</title>
-                    <title type="sub"/>
-                </title>
+                <title>Potentielle Privatsphäreverletzungen aufdecken und automatisiert sichtbar machen</title>
                 <author>
                     <persName>
-                        <surname>Schneider</surname>
-                        <forename>Stefanie</forename>
+                        <surname>Bäumer</surname>
+                        <forename>Frederik Simon</forename>
                     </persName>
-                    <affiliation>Ludwig-Maximilians-Universität München, Deutschland</affiliation>
-                    <email>stefanie.schneider@itg.uni-muenchen.de</email>
+                    <affiliation>Universität Paderborn, Deutschland</affiliation>
+                    <email>fbaeumer@mail.upb.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Buff</surname>
+                        <forename>Bianca</forename>
+                    </persName>
+                    <affiliation>Universität Paderborn, Deutschland</affiliation>
+                    <email>bbuff@mail.upb.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Geierhos</surname>
+                        <forename>Michaela</forename>
+                    </persName>
+                    <affiliation>Universität Paderborn, Deutschland</affiliation>
+                    <email>geierhos@mail.upb.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2016-08-22T21:51:20.48</date>
+                    <date>2018-12-20T15:48:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -31,7 +44,7 @@
                 </t:address>
             </publicationStmt>
             <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
+                <p>Converted from a Word document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -50,144 +63,90 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Reproduktion</term>
-                    <term>Objektidentifikation</term>
-                    <term>Kunstgeschichte</term>
+                    <term>Privatsphäre</term>
+                    <term>inhärente Informationen</term>
+                    <term>Informationsextraktion</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Beziehungsanalyse</term>
-                    <term>Bereinigung</term>
-                    <term>Archivierung</term>
-                    <term>Identifizierung</term>
-                    <term>Artefakte</term>
-                    <term>Bilder</term>
+                    <term>Inhaltsanalyse</term>
+                    <term>Annotieren</term>
+                    <term>Visualisierung</term>
+                    <term>Text</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p>Es finden sich mittlerweile mannigfaltige Studien, die Objekte historischen Ursprungs in den Fokus rücken und zwischen ihnen bestehende Relationen und Ähnlichkeitsverhältnisse mathematisch abzubilden versuchen (darunter Bergel et al., 2013; Monroy et al., 2014; Hentschel et al., 2016). Eine fundamentale Herausforderung 
-                <hi rend="italic">per se</hi> heterogener historischer Inventare bleibt dabei unberührt: digitale Reproduktionen ein und desselben Objekts, sogenannte 
-                <hi rend="italic">Near-duplicates</hi> oder 
-                <hi rend="italic">Near-replicas</hi>, die als separate Einträge in Aggregatordatenbanken vorgehalten werden und sich bspw. hinsichtlich ihres Farbstichs oder ihrer Helligkeit unterscheiden. Aufgrund nicht-standardisierter, teils unstrukturierter oder selten kontrollierten Vokabularen zugeordneter Metadaten ist es zumeist nicht oder nur mit größtem Aufwand möglich, derartige „Kopien“ auf Basis textueller Information sowohl nachhaltig als auch zuverlässig ohne händische Nacharbeit zu verknüpfen.
-            </p>
-            <p>Unser Ansatz zielt auf dreierlei: erstens die automatische Zusammenführung unterschiedlicher Reproduktionen desselben Objekts; die zweitens das 
-                <hi rend="italic">Retrieval</hi> variierender Reproduktionen erlaubt, um weiterführende Analysen, z. B. quellenkritischer Art, über eben jenes Objekt anstoßen zu können; und drittens die Extraktion textueller Information von Objekten, die ausschließlich visuell, d. h. als digitales Bild, vorliegen und, im Sinne einer 
-                <hi rend="italic">Reverse Image Search</hi>, mit einem bereits annotierten Inventar von Objekten abzugleichen sind. Auf diese Weise wird nicht nur eine effiziente, bildbasierte Suche in Datenbanken insbesondere (aber nicht ausschließlich) kunsthistorischer Objekte ermöglicht, sondern nahezu 
-                <hi rend="italic">Bias</hi>-freie statistische Untersuchungen, wie sie durch den Einfluss häufig reproduzierter Werke bislang nicht gegeben 
-                waren.<ref target="ftn1" n="1"/>
+            <p style="text-align:left; ">Das moderne Web basiert auf Interaktion, Diskussion und Austausch von Informationen. Durch die fortschreitende semantische Anreicherung wird das Web auch zu einer riesigen Informationsquelle für datengesteuerte Anwendungen, wie sie auch in Digital Humanities Verwendung finden. Dies stellt unter Umständen ein Risiko für einzelne 
+            Benutzer<ref target="ftn1" n="1"/> dar. Da Daten immer effektiver mit bestehenden Ressourcen verknüpft werden, können selbst ungewollt (implizit) offenbarte Einzelinformationen schädliche Folgen für einzelne Nutzer haben. Obwohl 
+                <hi rend="italic">Serviceprovider</hi> im Web die Pflicht und auch das Eigeninteresse haben, die Sicherheit und Privatsphäre von Benutzerdaten zu gewährleisten, gibt es Fälle, in denen Benutzerdaten missbraucht und kompromittiert oder öffentlich verfügbare Informationen gegen dessen ursprünglichen Verfasser verwendet werden (Gross, et al., 2005). Die bestehenden Datenschutzrichtlinien, Betreiberhinweise und (teil-)automatisierte Schutzmechanismen, welche die Privatsphäre von Personen schützen sollen, sind aber oftmals unzureichend. Es ist demnach im Interesse der Kommunizierenden, nur diejenigen Informationen in Textbeiträgen zu platzieren, die einen gewissen selbstbestimmten Grad an Anonymität wahren. Darüber hinaus ist es für alle die, die mit Daten arbeiten wollen (bspw. in der Forschung) im Interesse, private Daten filtern zu können. In diesem Beitrag stellen wir unsere bisherigen Arbeiten an 
+                <hi rend="italic">Text Broom</hi> vor, einem ersten Prototypen, welcher potentielle Privatsphäreverletzungen in Form expliziter als auch inhärenter Angaben in online verfügbaren Fließtexten erkennen sowie sichtbarmachen kann und so eine Hilfe für Benutzer als auch für die gefahrlose Weiterverwendung von Daten darstellen kann.
             </p>
             <div type="div1" rend="DH-Heading1">
-                <head>Methode</head>
-                <p>Wir stützen uns hauptsächlich auf 
-                    <hi rend="italic">Scale Invariant Feature Transform</hi> 
-                    (<hi rend="italic">SIFT</hi>; Lowe, 1999; Lowe, 2004), um aus Bildern historischer Objekte lokale Schlüsselpunkte 
-                    (<hi rend="italic">Keypoints</hi>) zu extrahieren und mittels Deskriptoren 
-                    (<hi rend="italic">Descriptors</hi>) weiterverarbeiten zu können. Schlüsselpunkte bilden einzelne Interessenregionen eines Bildes ab, die statistisch, aber nicht notwendigerweise semantisch relevante Merkmale tragen, und stellen sie in einem 128-dimensionalen Histogramm dar. Im mathematischen Sinne sind sie Extremwerte, die über einen Raum mehrfach skalierter und mit einem Gaußfilter geglätteter Bilder ermittelt werden. Mit üblichen Ähnlichkeits- und Distanzmaßen, z. B. der euklidischen Distanz, ist es so möglich, die Nähe zwischen zwei Schlüsselpunkten zu quantifizieren, und demnach auch, über die Summe der 
-                    <hi rend="italic">matchenden</hi> Schlüsselpunkte, die Nähe zwischen zwei Digitalisaten; wobei anzunehmen ist, dass die Anzahl der übereinstimmenden Schlüsselpunkte für variierende Abbildungen desselben Objekts höher ist als für Abbildungen unterschiedlicher Objekte.
-                </p>
-                <p>Ein Bild wird je nach Größe und Detailgrad mit Hunderten bis Tausenden derartiger Schlüsselpunkte assoziiert. Daraus resultierende computationale Kosten fangen wir durch drei Erweiterungen des Verfahrens ab. Erstens reduzieren wir die Dimensionalität der Deskriptoren mittels 
-                    <hi rend="italic">Principal Component Analysis</hi> 
-                    (<hi rend="italic">PCA</hi>). Im Gegensatz zu Ke und Sukthankar (2004) greifen wir nicht in den Deskriptionsprozess selbst ein, sondern ermitteln den Eigenraum auf Basis der standardmäßig durch 
-                    <hi rend="italic">SIFT</hi> eruierten Deskriptoren. Zweitens verringern wir die Anzahl der Schlüsselpunkte, indem wir zunächst die mit dem höchsten Kontrast auswählen und auf Basis dessen jene filtern, welche die größten Interessenregionen charakterisieren. Damit werden auf flächenmäßig kleinen Arealen zu findende, kontrastreiche Schlüsselpunkte getilgt, die bspw. in textuellen Ergänzungen von Kupferstichen auftreten und für das 
-                    <hi rend="italic">Matching</hi> irrelevant bis schädlich sind. Drittens setzen wir mit 
-                    <hi rend="italic">Hierarchical Navigable Small World</hi> 
-                    (<hi rend="italic">HNSW</hi>; Malkov und Yashunin, 2016) einen 
-                    <hi rend="italic">Approximate Nearest Neighbor-</hi>Ansatz mit polylogarithmischer Komplexität ein, der in aktuellen repräsentativen Benchmarks andere Graph-basierte Ansätze in Präzision und Schnelligkeit übertrifft (Aumueller et al., 2018). Eine adaptive Intensitätskorrektur jedes Bildes durch 
-                    <hi rend="italic">Contrast Limited Adaptive Histogram Equalization</hi> 
-                    (<hi rend="italic">CLAHE</hi>; Zuiderweld, 1994) wird vor der Extraktion der Schlüsselpunkte durchgeführt, um stark über- oder unterbelichtete Reproduktionen anzupassen.
+                <head>Privatsphäreverletzungen: Erkennung als Herausforderung</head>
+                <p style="text-align:left; ">Wie sich unwissentliche Informationspreisgaben in sprachlichen Ausdrücken manifestieren, wurde bisher unzureichend untersucht. Frühere Arbeiten zeigten jedoch auf, dass sprachliche Formulierungen oft mehr Informationen enthalten, als es zunächst den Anschein erweckt. Um diese zu erkennen, wurden vordefinierte Muster verwendet, die nur begrenzt dem Gestaltungsfreiraum natürlicher Sprache gerecht werden und nur offensichtliche (explizite) Informationspreisgabe feststellen (Bäumer, et al., 2017). In diesem Kontext existieren Vorarbeiten, wie die von Sweeney (1996), Dias (2016) sowie von Kleinberg und Mozes (2017). Dabei besonders erwähnenswert ist das Tool NETANOS 
+                (<hi rend="italic">Named Entity-based Text ANonymization for Open Science</hi>) von Kleinberg und Mozes (2017), das benannte Entitäten in Fließtexten erkennen und hervorheben kann. Hierbei handelt es sich stets um benannte Entitäten (z. B. Personennamen), deren wörtliche Nennung zwar eine Gefahr für die Privatsphäre der Betroffenen darstellen kann, deren isolierte Erkennung jedoch trivial im Vergleich zur Behandlung der Ausdruckskomplexität von Privatsphäreverstößen in Fließtexten ist. Denn immer noch fehlt es an Wissen über die genaue sprachliche Manifestierung und an computerlinguistischen Verfahren, die darauf zurückgreifen können. Dies ist allerdings zwingend erforderlich, um entsprechende privatsphäregefährdende Textbestandteile zu identifizieren und mit einer Erläuterung möglicher Risiken zu versehen. 
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Daten</head>
-                <p>Ein geeigneter 
-                    <hi rend="italic">Gold Standard</hi> wird in drei Schritten etabliert. Zunächst ziehen wir eine Zufallsstichprobe von 3.581 kunsthistorischen Objekten, die in der Datenbank 
-                    <hi rend="italic">ArteMIS</hi> des Instituts für Kunstgeschichte der Ludwig-Maximilians-Universität München verzeichnet 
-                    sind<ref target="ftn2" n="2"/> und einen angemessenen Querschnitt verschiedener kunsthistorischer Stile und Epochen erlauben; Holzschnitte sind ebenso inkludiert wie realistische Landschaftsmalerei und Werke des französischen 
-                    Impressionismus.<ref target="ftn3" n="3"/> In einem zweiten Schritt speisen wir Titel und Künstler jener Objekte in die 94 Datenbanken kumulierende 
-                    <hi rend="italic">Application Programming Interface</hi> von 
-                    Prometheus.<ref target="ftn4" n="4"/> Da in den jeweiligen Suchergebnissen nicht nur Digitalisate ein und desselben Objekts zu finden sind – Vorzeichnungen und aufgrund ihrer Metadaten ähnliche Reproduktionen sind auch darunter –, schließen wir einen dritten Schritt an, in dem auf unterschiedliche Objekte referenzierende Abbildungen manuell entfernt werden. Es verbleiben 9.934 Reproduktionen. Ein derart selegiertes Digitalisat trägt einen eineindeutigen Identifikator, der sowohl auf das es abbildende Objekt zeigt als auch auf die an das Digitalisat gekoppelten Metadaten weist.
-                </p>
-                <p>Um weitere in der bildarchivarischen Praxis existente, aber durch zuvor extrahierte 
-                    <hi rend="italic">reale</hi> Digitalisate unzureichend abgedeckte Modifikationen, bspw. größere Änderungen des Kontrasts oder der Sättigung eines Bildes, untersuchen zu können, generieren wir 278.152 zusätzliche, sogenannte 
-                    <hi rend="italic">synthetische</hi> Kopien. Jede Ursprungsreproduktion wird dementsprechend dupliziert und 28 mathematischen Transformationen unterzogen; ähnlich zu jenen in Ke et al. (2004), Qamra et al. (2005) und Foo et al. (2007). Unter anderem modelliert werden sich in ihrer Stärke unterscheidende nicht-lineare Verzerrungen, die Wölbungen nahe des Buchrückens von Fotografien kunsthistorischer Publikationen suggerieren.
+                <head>Arztbewertungen als Untersuchungsgegenstand</head>
+                <p style="text-align:left; ">
+                    <hi rend="italic">Service Provider</hi> nehmen im Web unterschiedliche Gestalt an, jedoch steht zumeist eine zentrale Dienstleistung im Mittelpunkt, wie es beispielsweise der Erwerb von Produkten bei Online-Shops oder entsprechende Meinungsäußerungen auf Bewertungsportalen sind. Ein medial vielbeachtetes Beispiel in diesem Zusammenhang sind sogenannte 
+                    <hi rend="italic">Physician Review Websites</hi> (PRWs), die es den Nutzern ermöglichen, medizinische Dienstleistungen und damit auch die bislang als sensibel geltende Arzt-Patienten-Beziehung anonym zu bewerten. Um eine authentische Bewertung zu erstellen, ergänzen Bewertende vielfach private Informationen, z. B. über Orte, Krankheiten oder Medikamente und sind so potentiell für Dritte identifizierbar (z. B. Ärzte, Freunde). Hier stehen nicht nur explizit genannte Informationen („Ich bin Diabetiker“) im Fokus, sondern auch inhärente Angaben („Ich bin Vater“ → männlich) sowie Metainformationen (Datum der Bewertung, Alter, Krankenkasse, Ort der Praxis). Oftmals ergibt sich eine Gefahr für die Privatsphäre nicht aus einer einzelnen Information, sondern aus der Summe expliziter und inhärenter Angaben. Das Problem wird verschärft, wenn Patient und Bewertender nicht 
+                    <hi rend="italic" xml:space="preserve">in persona </hi>auftreten und somit eine potentielle Privatsphäreverletzung an einer dritten Person (z. B. Kinder, Eltern) vorliegt (Geierhos &amp; Bäumer, 2015). Arztbewertungen eignen sich somit auf Grund der hohen Gefahr unabsichtlich preisgegebener Informationen und auch auf Grund ihrer langjährigen und öffentlichen Zugänglichkeit. So steht uns ein Korpus zur Verfügung, welches ca. 900.000 deutschsprachige Patientenberichte inklusive Metainformationen enthält und die Zeitspanne von 2007 bis 2016 abdeckt (Bäumer et al., 2015).
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Evaluation</head>
-                <p>Drei im 
-                    <hi rend="italic">Information Retrieval</hi> gewöhnliche Gütekriterien dienen der Evaluation der angewandten Methoden: Precision, Recall und 
-                    F<hi rend="sub">1</hi>-Maß. Wir gehen wie folgt vor. Der Satz an Objekten, die mit realen und synthetischen Reproduktionen assoziiert sind, wird unterteilt in 25 zufällig separierte Trainings- und Teststichproben, wobei jeweils 80 Prozent der Objekte der Trainings- und 20 Prozent der Teststichprobe zuzuordnen sind. Auf Basis der 25-fachen Kreuzvalidierung erhalten wir durchschnittliche Werte für Precision, Recall und 
-                    F<hi rend="sub">1</hi>-Maß, die von einem jeweils gegebenen Schwellenwert abhängen, der die minimale Anzahl der Schlüsselpunkte bezeichnet, die zwischen zwei Digitalisaten übereinstimmen müssen, damit diese als unterschiedliche Reproduktionen desselben Objekts gelten und entsprechend zusammengeführt werden können. Der jeweils für eine Parameterkonstellation optimale Schwellenwert bildet sich aus dem Modus der 25 Einzelschwellenwerte, die mit dem höchsten 
-                    F<hi rend="sub">1</hi>-Maß verknüpft sind.
+                <head>Annotation privater Angaben in der medizinischen Domäne</head>
+                <p style="text-align:left; ">Privatsphäreverletzungen können sich vielfältig im nutzergenerierten Texten manifestieren und sind zusätzlich auf Grund stark schwankender Textqualität schwer automatisiert zu erkennen. Deshalb werden neben präzisen, aber gering toleranten linguistischen Mustern auch Methoden des Maschinellen Lernens eingesetzt. Hier bedarf es umfangreicher Annotationen in Trainingsdaten, um private Angaben in unbekannten Texten automatisiert zu erkennen. Um eine große Anzahl an Texten annotieren zu können, nutzen wir das Annotationstool Prodigy, welches insbesondere binäre Annotationsentscheidungen mittels 
+                    <hi rend="italic">Active Learning</hi> merklich beschleunigen kann. Die Herausforderungen, die dennoch mit der Annotation einhergehen, werden im Folgenden an dem vermeintlich trivialen Beispiel der Annotation von Krankheiten im oben genannten Korpus aufgezeigt.
                 </p>
+                <p style="text-align:left; ">Bereits die Frage, was genau annotiert werden soll, ist nicht trivial: Oberbegriffe wie „Krankheit“ und „Symptom“ werden nur ergänzend mit einer Spezifizierung annotiert. Konkreter heißt dies, dass das Wort „Erkrankung“ nicht annotiert wird, jedoch das Kompositum bzw. die Nominalphrase „Herzerkrankung“ und „psychische Erkrankung“ schon. Personenbezeichnungen wie „Magersüchtige“, „Diabetiker“ und „Neurodermitiker“ und Adjektive wie „magersüchtig“ und „laktoseintolerant“ werden annotiert, da sie implizieren, dass eine Person an der jeweiligen Krankheit leidet. Die Annotation von Adjektiven stellt dabei eine Herausforderung dar. In den folgenden Beispielen enthält das attributive Adjektiv einen essentiellen Bestandteil der Semantik der Phrase: „kardiovaskuläre Erkrankung“, „bulimischer Anfall“. Ohne die Attribuierung würde das Substantiv „Erkrankung“ bzw. „Anfall“ nicht als „Krankheit“ annotiert werden. Durch das Adjektiv wird die Phrase jedoch (annähernd) gleichbedeutend mit den Ausdrücken „Herz-Kreislauf-Erkrankung“ und „Bulimie“. Da letztgenannte als „Krankheit“ annotiert werden würden, werden gleichermaßen auch alle Phrasen, die ein unspezifisches Substantiv (z. B. „Erkrankung“) sowie ein attributives Adjektiv (z. B. „kardiovaskuläre“), das den wesentlichen Teil der Semantik trägt, enthalten, als „Krankheit“ markiert. Im Gegensatz dazu werden attributive Adjektive, die eine Krankheit als solche nur näher beschreiben, nicht mit annotiert. Ein Beispiel dafür ist der „wässrige Durchfall“: In diesem Fall wird lediglich das Substantiv als „Krankheit“ annotiert und das Adjektiv nicht beachtet. In Bezug auf das Adjektiv „chronisch“, welches bei Krankheitsbildern oder Symptomen häufig attributiv verwendet wird, gilt, dass dieses Wort nicht mit annotiert wird, da es nicht maßgeblich zu der Semantik der Krankheit beiträgt. In dem Satz „Ich habe chronischen Durchfall und chronische Schmerzen.“ wird folglich nur „Durchfall“ als Krankheit annotiert.</p>
+                <p style="text-align:left; ">Dies ist nur ein Beispiel für die Komplexität der Thematik und der Herausforderungen bei der Ressourcenerstellung. Ein weiteres Beispiel sind Ambiguitäten, wie sie u. a. bei „Die Ärztin sollte nicht wie meine Mutter sein“ und „Meine Mutter hat auch MC“ vorkommen. Während der erste Satz unkritisch ist, wird im zweiten Satz die Privatsphäre einer dritten Person gefährdet. Die Interpretation des Wortes „Mutter“ gelingt nur im Kontext und zeigt, dass eine rein wortbasierte Vorgehensweise nicht zielführend ist. Aus diesem Grund wird unser Tool Text Broom zwar wie dargestellt auf Basis domänenspezifischer Texte trainiert, nutzt aber eine umfangreiche NLP-Pipeline zur kontextspezifischen Interpretation.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Ergebnisse</head>
-                <p>Wir stellen fest, dass aufgrund des hohen Anteils in den Reproduktionen enthaltener digitaler Artefakte – unter anderem Bildrauschen und Unschärfe –, Konfigurationen mit im Vergleich zu Standardwerten höherem Skalenparameter σ, der die Stärke des in 
-                    <hi rend="italic">SIFT</hi> angelegten gaußschen Weichzeichners reguliert, und niedrigeren Schwellenwerten, welche die Aufnahme von kontrastarmen oder auf Kanten situierten Schlüsselpunkten steuern, zu bevorzugen sind. Eine Reduktion der Dimensionalität der Deskriptoren und der Anzahl der Schlüsselpunkte auf jeweils 50 führt zu marginalen Einbußen in Precision und Recall, steigert jedoch maßgeblich die Performanz und mindert den notwendigen Speicherbedarf. Eine so klassifizierte, aus 500 Objekten bestehende Zufallsstichprobe resultiert in Precision = 0,9857, Recall = 0,9820 und 
-                    F<hi rend="sub">1</hi>-Maß = 0,9839, wenn für 
-                    <hi rend="italic">HNSW</hi> moderate Kompromisse zwischen der Geschwindigkeit, die der Aufbau des Index und die eine Suche im Index benötigt, formuliert werden; mindestens 7 näherungsweise übereinstimmende Schlüsselpunkte sind erforderlich, damit Digitalisate als demselben Objekt zugehörig erkannt werden. Größere Einbrüche in Recall, d. h. bis zu 5 Prozentpunkte, sind für stärkere Farbänderungen und nicht-lineare Verzerrungen zu beobachten. Insbesondere drei Gruppen von Objekten erfordern weitere Anpassungen: Digitalisate von Druckgrafiken mit hohen Kontrastunterschieden; Reproduktionen, die Rahmen oder rahmenähnliche Strukturen abbilden; Werke des Impressionismus und nicht-gegenständliche oder diffuse Werke, die unterdurchschnittlich viele Schlüsselpunkte, teilweise nur bis zu 10, produzieren.
-                </p>
-                <p>Auch ohne zusätzliche Modifikationen zeigt sich, dass die hier präsentierte Methode hinreichend exakte Ergebnisse erwarten lässt und kaum, oder lediglich im Falle hoch spezialisierter Korpora, manuelle Adjustierungen erfordert; selbst wenn stärkere Abweichungen in Kontrast oder Sättigung auftreten. Durch die Integration eines 
-                    <hi rend="italic">Approximate Nearest Neighbor-</hi>Ansatzes ist weiterhin gewährleistet, dass das Verfahren auch auf größere historische Bildbestände skaliert.
+                <head>Text Broom</head>
+                <p style="text-align:left; ">Wie dargestellt, adaptiert unser Prototyp 
+                    <hi rend="italic">Text Broom</hi> die Idee von Kleinberg und Mozes (2017), die sich auf benannte Entitäten konzentrieren. Allerdings geht 
+                    <hi rend="italic">Text Broom</hi> darüber hinaus, indem es potentielle Privatsphäreverletzungen mit Hilfe einer Textverarbeitungspipeline 
+                    (<hi rend="italic">Multi-Stage</hi>-Ansatz) erkennt, die unterschiedliche Granularitätsstufen bietet. Somit verarbeitet die 
+                    <hi rend="italic">Text-Broom</hi>-Pipeline ein viel breiteres Spektrum an linguistischen Informationen, aufgeteilt in vier Phasen. Stufe I enthält eine Vorverarbeitung, die grundlegende Sprachverarbeitung wie 
+                    <hi rend="italic">Part-Of-Speech</hi> (POS) 
+                    <hi rend="italic">Tagging</hi> verwendet. Stufe II kombiniert 
+                    <hi rend="italic">Semantic Role Labeling</hi>, linguistische Muster und Eigennamenerkennung. Dies sind nicht-domänenspezifische Komponenten, die eine breite thematische Abdeckung ermöglichen. Im Gegensatz dazu enthält Stufe III eine domänenspezifische Informationsextraktion, eine Komponente zur Phrasenklassifizierung und die finale Bewertungskomponente, die alle bis zu diesem Zeitpunkt gesammelten Informationen zusammenfasst und auswertet. Die letzte Stufe IV enthält Komponenten zur Visualisierung und Erläuterung. Nutzer erhalten somit eine vielschichtige Sicht auf ihre Texte, in denen Privatsphäreverstöße explizit hervorgehoben werden.
                 </p>
             </div>
         </body>
         <back>
             <div type="notes">
                 <note xml:id="ftn1" n="1" rend="footnote text">
-                    Dies schließt anderweitige Verzerrungen, bspw. einen <hi rend="italic">Selection Bias</hi>, natürlich nicht aus.
-                </note>
-                <note xml:id="ftn2" n="2" rend="footnote text">
-                    Eine Online-Schnittstelle ist zu erreichen unter <ptr target="http://artemis.lmu.de/"/> (25.09.2018).
-                </note>
-                <note xml:id="ftn3" n="3" rend="footnote text">
-                    Ausgenommen werden Reproduktionen eindeutig dreidimensionaler Objekte, z. B. Plastiken und Skulpturen, da sich diese zusätzlich durch den bei der Aufnahme eingenommenen Blickwinkel unterscheiden können und folglich gesondert zu evaluieren wären.
-                </note>
-                <note xml:id="ftn4" n="4" rend="footnote text">
-                    <ptr target="http://www.prometheus-bildarchiv.de/"/> (25.09.2018).
+                    <hi rend="Fußnotentext_Zeichen">Aus Gründen der leichteren Lesbarkeit wird auf eine geschlechtsspezifische Differenzierung verzichtet. Entsprechende Begriffe gelten im Sinne der Gleichbehandlung für beide Geschlechter.</hi>
                 </note>
             </div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl>
-						<hi rend="bold">Aumueller, Martin / Bernhardsson, Erik / Faitfull, Alec (2018)</hi>: <hi rend="italic">ANN Benchmarks</hi>, <ptr target="http://sss.projects.itu.dk/ann-benchmarks/index.html"/> (26.09.2018).
+                    <bibl style="text-align:left;">
+                        <hi rend="bold">Kleinberg, Bennet / Mozes, Maximilian (2017)</hi>: <hi rend="italic">Web-based text anonymization with Node.js: Introducing NETANOS (Named entity-based Text Anonymization for Open Science)</hi>. The Journal of Open Source Software.
                     </bibl>
-                    <bibl>
-						<hi rend="bold">Bergel, Giles / Franklin, Alexandra / Heaney, Michael / Arand-Jelovic, Relja / Zisserman, Andrew / Funke, Donata (2013)</hi>: <hi rend="italic">„Content-based Image Recognition on Printed Broadside Ballads. The Bodleian Libraries’ Imagematch Tool“</hi>, in: Proceedings of the IFLA World Library and Information Congress.
+                    <bibl style="text-align:left;">
+                        <hi rend="bold">Dias, Francesco (2016)</hi>: <hi rend="italic">Multilingual Automated Text Anonymization</hi>. Inst. Superior Técnico of Lisboa, Lissabon, Portugal.
                     </bibl>
-                    <bibl>
-						<hi rend="bold">Foo, Jun Jie / Zobel, Justin / Sinha, Ranjan (2007)</hi>: <hi rend="italic">„Clustering Near-duplicate Images in Large Collections“</hi>, in: Proceedings of the ACM SIGMM International Workshop on Multimedia Information Retrieval 21–30.
+                    <bibl style="text-align:left;">
+                        <hi rend="bold">Bäumer, Frederik S. / Geierhos, Michaela / Schulze, Sabine (2015)</hi>: <hi rend="italic">A System for Uncovering Latent Connectivity of Health Care Providers in Online Reviews</hi>. In <hi rend="bold">Dregvaite, Giedre / Damaševičius, Robertas (Hsg.)</hi>: <hi rend="italic">Communications in Computer and Information Science</hi>, Band 538. ICIST 2015, Litauen, Oktober 15-16, 2015. Proceedings (S. 3–15). Cham, Schweiz: Springer International.
                     </bibl>
-                    <bibl>
-						<hi rend="bold">Hentschel, Christian / Wiradarma, Timur P. / Sack, Harald (2016)</hi>: <hi rend="italic">„An Approach to Large Scale Interactive Retrieval of Cultural Heritage“</hi>, in: Proceedings of the 23th IEEE International Conference on Image Processing 3693–3697.
+                    <bibl style="text-align:left;">
+                        <hi rend="bold">Bäumer, Frederik / Grote, Nicolai / Kersting, Joschka / Geierhos, Michaela (2017)</hi>: <hi rend="italic">Privacy Matters: Detecting Nocuous Patient Data Exposure in Online Physician Reviews</hi>. In <hi rend="bold">Damaševičius, Robertas &amp; Mikašytė, Vilma (Hsg.)</hi>: <hi rend="italic">Communications in Computer and Information Science</hi>, Band 756. ICIST 2017, Litauen, 12.-14. Oktober 2017, Proceedings (S. 77–89). Cham, Schweiz: Springer International.
                     </bibl>
-                    <bibl>
-						<hi rend="bold">Ke, Yan / Sukthankar, Rahul (2004)</hi>: <hi rend="italic">„PCA-SIFT. A More Distinctive Representation for Local Image Descriptors“</hi>, in: Proceedings of the IEEE International Conference on Computer and Pattern Recognition 506–513.
+                    <bibl style="text-align:left;">
+                        <hi rend="bold">Sweeney, Latanya (1996)</hi>: <hi rend="italic">Replacing personally-identifying information in medical records, the Scrub system</hi>. Proceedings of the AMIA annual fall symposium. American Medical Informatics Association. S. 333-337.
                     </bibl>
-                    <bibl>
-						<hi rend="bold">Ke, Yan / Sukthankar, Rahul / Huston, Larry (2004)</hi>: <hi rend="italic">„An Efficient Parts-based Near-duplicate and Sub-image Retrieval System“</hi>, in: Proceedings of the >12th ACM International Conference on Multimedia 869–876.
+                    <bibl style="text-align:left;">
+                        <hi rend="bold">Geierhos, Michaela / Bäumer, Frederik S. (2015)</hi>: <hi rend="italic">Erfahrungsberichte aus zweiter Hand: Erkenntnisse über die Autorschaft von Arztbewertungen in Online-Portalen</hi>. In: DHd 2015: Book of Abstracts, ZIM-ACDH, Graz, Österreich, 2015, S. 69-72.
                     </bibl>
-                    <bibl>
-						<hi rend="bold">Lowe, David G. (1999)</hi>: <hi rend="italic">„Object Recognition from Local Scale-invariant Features“</hi>, in: Proceedings of the 7th IEEE International Conference on Computer Vision 1150–1157.
-                    </bibl>
-                    <bibl>
-						<hi rend="bold">Lowe, David G. (2004)</hi>: <hi rend="italic">„Distinctive Image Features from Scale-invariant Keypoints“</hi>, in: International Journal of Computer Vision 60 (2): 91–110.
-                    </bibl>
-                    <bibl>
-						<hi rend="bold">Malkov, Yury A. / Yashunin, Dmitry A. (2016)</hi>: <hi rend="italic">Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs</hi>.
-                    </bibl>
-                    <bibl>
-						<hi rend="bold">Monroy, Antonio / Bell, Peter / Ommer, Björn (2014)</hi>: <hi rend="italic">„Morphological Analysis for Investigating Artistic Images“</hi>, in: Image and Vision Computing 32 (6): 414–423.
-                    </bibl>
-                    <bibl>
-						<hi rend="bold">Qamra, Arun / Meng, Yan / Chang, Edward Y. (2005)</hi>: <hi rend="italic">„Enhanced Perceptual Distance Functions and Indexing for Image Replica Recognition“</hi>, in: IEEE Transactions on Pattern Analysis and Machine Intelligence 27 (3): 379–391.
-                    </bibl>
-                    <bibl>
-						<hi rend="bold">Zuiderveld, Karel (1994)</hi>: <hi rend="italic">„Contrast Limited Adaptive Histogram Equalization“</hi>, in: Academic Press 474–485.
+                    <bibl style="text-align:left;">
+                        <hi rend="bold">Gross, Ralph / Acquisti, Alessandro (2005)</hi>: <hi rend="italic">Information Revelation and Privacy in Online Social Networks (The Facebook case)</hi>. In Proceedings of the ACM Workshop on Privacy in the Electronic Society, S. 71-80, Alexandria, USA, 2005.
                     </bibl>
                 </listBibl>
             </div>

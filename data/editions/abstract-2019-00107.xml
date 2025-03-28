@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="257_final-GÖTZELMANN_Germaine_Wie_sich_die_Bilder_gleichen__Bildähnlic" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="290_final-SCHÜLLER_Daniel_Multimediale_Modelle_multimodaler_Kommunikat" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Wie sich die Bilder gleichen. Bildähnlichkeitssuche in Drucken des 16. Jahrhunderts</title>
+                <title type="full">
+                    <title type="main">Multimediale Modelle multimodaler Kommunikation</title>
+                    <title type="sub">Motion-Capturing in der computergestützten Gestenforschung</title>
+                </title>
                 <author>
                     <persName>
-                        <surname>Götzelmann</surname>
-                        <forename>Germaine</forename>
+                        <surname>Schüller</surname>
+                        <forename>Daniel</forename>
                     </persName>
-                    <affiliation>Karlsruher Institut für Technologie, Deutschland</affiliation>
-                    <email>germaine.goetzelmann@kit.edu</email>
+                    <affiliation>RWTH Aachen, Deutschland</affiliation>
+                    <email>schueller@humtec.rwth-aachen.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mittelberg</surname>
+                        <forename>Irene</forename>
+                    </persName>
+                    <affiliation>RWTH Aachen, Deutschland</affiliation>
+                    <email>mittelberg@humtec.rwth-aachen.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2018-10-14T20:26:00Z</date>
+                    <date>2019-01-13T22:12:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -47,89 +58,110 @@
                     <term>Posterpräsentation</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Bildähnlichkeitssuche</term>
-                    <term>Layoutanalyse</term>
-                    <term>Web Annotation Data Model</term>
+                    <term>Motion Capture</term>
+                    <term>Gestik</term>
+                    <term>gesprochene Sprache</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Bilderfassung</term>
+                    <term>Aufzeichnung</term>
+                    <term>Transkription</term>
+                    <term>Modellierung</term>
                     <term>Annotieren</term>
-                    <term>Netzwerkanalyse</term>
-                    <term>Bilder</term>
-                    <term>Metadaten</term>
+                    <term>Visualisierung</term>
+                    <term>Multimodale Kommunikation</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <p>Die Anzahl von Buchdigitalisaten weltweit hat längst eine Datenmenge erreicht, die sich rein manueller Auswertung entzieht (HathiTrust verzeichnet beispielsweise tagesaktuell 5.860.937.950 digitalisierte Buchseiten). Aus diesem Grund gilt es, zusätzliche Auswertungsmethoden und Workflows zu entwickeln, die solche Digitalisatsdaten analysierbar und durchsuchbar machen und damit über explorative Ansätze und Zufallsfunde hinausgehen. Ein Beispiel für eine solche Auswertungsmethode stellt die Suche nach Bildähnlichkeiten zwischen Buchillustrationen dar, die wichtige Aufschlüsse über Zusammenhänge zwischen einzelnen Buchexemplaren, aber auch über die Signifikanz von Bildformeln sowie den Zusammenhang von Bild- und Texttradition liefern kann.</p>
-            <div type="div1" rend="DH-Heading1">
-                <head>Anwendungsfall: Drucke des 16. Jahrhunderts</head>
-                <p>In deutschen (Wiegen-)Drucke des 15. und 16. Jahrhunderts insb. volksprachlicher Texte werden dem geschriebenen Wort zahlreiche Illustrationen zur Seite gestellt. Während diese zu Beginn noch große Textnähe aufweisen, wird für sie zusehends konstitutiv, dass sie bereits von vornherein polyvalent und multifunktional angelegt sind (Vgl. Ott, 1999), um leicht in verschiedene Textzusammenhänge gestellt werden zu können. Dies spiegelt unter anderem ökonomische Interessen wider. Holzschnittvorlagen werden für immer neue Bücher wiederverwendet und somit rekontextualisiert. Die Einschätzung dieser Bildübernahmen reicht in der Forschung in den Einzelfällen von ‚reflektiert’ bis ‚sorglos’ (Speth 2017, 305). </p>
-                <p>Im VD16 stehen von den ca. 106000 verzeichneten Drucken des 16. Jahrhunderts etwa 68500 mit Link zu einem Komplettdigitalisat zur Verfügung, die aus den verschiedensten Digitalisierungsprojekten stammen. Dies entspricht auch bei vorsichtigster Schätzung mehreren Millionen von Einzelseiten. Die Posterpräsentation stellt einen Workflow vor, der ausgehend von diesen Digitalisaten diejenigen Buchseiten mit Illustrationen einer Bildähnlichkeitssuche unterzieht und so die Verwendung gleicher und ähnlicher Bilder in verschiedenen Buchexemplaren sichtbar macht.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Workflow zur Bildähnlichkeitssuche</head>
-                <p>Bildähnlichkeitssuchen erschließen zusehends digitale Bestände, dabei lassen sich zwei Vorgehensweisen unterschieden: die explorative Suche, wie sie die proprietäre Bildähnlichkeitssuche der Bayerischen Staatsbibliothek (BSB) bietet und die strukturierte Suche, wie sie im Projekt 15cBOOKTRADE mittels 
-                    <hi rend="italic">VGG Image Search Engine</hi> (VISE)) umgesetzt ist. VISE kommt auch im vorgestellten Workflow zum Einsatz. In einem ersten Schritt dieses Workflows werden aus Digitalisaten die Einzelseiten als Bilddaten extrahiert. In einem zweiten Schritt wird dann auf Methoden der Layoutanalyse zurückgegriffen, um Illustrationen als Bildregionen zu segmentieren. Für den Anwendungsfall der Drucke des 16. Jahrhunderts bietet sich das Tool 
-                    <hi rend="italic">LAREX</hi> an, das im Workflow vollautomatisch angewendet wird. Mit diesem Workflowschritt geht eine Reduktion des Suchraums für die Bildähnlichkeitssuche von allen Einzelseiten auf Seiten mit erkannten Bildregionen einher – in der Praxis bedeutet dies eine Verringerung der Seitenmenge um über 75%. Anhand der Segmentierungsergebnisse wird in einem dritten Schritt die Bildähnlichkeitssuche als vollständige Suche durchgeführt: Jede segmentierte Bildregion wird mit allen anderen Seiten mit erkannten Bildregionen verglichen. Aus den Ergebnissen der Bildsuche werden in Schritt vier Ergebnisgraphen erzeugt, die die Treffer ähnlicher Bildregionen abbilden. Dabei erfolgt die Graphgenerierung so, dass nur reziproke Ergebnisse der Bildsuche aufgenommen werden. Zwei Bildregionen im Graph werden nur verbunden, wenn Bildregion A Bildregion B findet und umgekehrt (Abbildung 1). Die einzelnen Bildregionen können anschließend nach Buchzugehörigkeit zusammengefasst werden, woraus sich ein Netzwerk von Buchexemplaren ergibt, dessen gewichtete Verbindungen die Anzahl wiederverwendeter Illustrationen darstellen. Mit diesem Ergebnis eröffnen sich die eigentlichen Auswertungsmöglichkeiten unter Einbeziehung der vorliegenden Metadaten.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Workflowergebnisse als Annotationen</head>
-                <p>Im automatischen Workflow sind die einzelnen Schritte sowohl parametrisierbar als auch gegen andere Werkzeuge mit gleicher Funktion (beispielsweise andere Layoutanalyse-Tools) austauschbar. Daher sind zum einen flexible Neudurchläufe mit anderen Werten wünschenswert, zum anderen müssen die Ergebnisse der einzelnen Schritte gut vergleichbar sein. Mit diesem Ziel werden die Ergebnisse der Einzelschritte 2-5 in einem einheitlichen, standardisierten Format gemäß der W3C-Empfehlung des 
-                    <hi rend="italic">Web Annotation Data Model</hi> in einem Annotationsserver gespeichert. Diese Annotationsform ermöglicht perspektivisch auch die Verbindung mit Metadaten in der Linked Open Data Cloud sowie Veröffentlichung und Rückbindung an die öffentlich zugänglichen Digitalisatsdaten der Bibliotheken zur Nachnutzung für weitere Forschungsfragen.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Herausforderungen</head>
-                <p>Methodisch kann mit dem beschriebenen Verfahren nicht klar zwischen identischen und ähnlichen Bildern unterschieden werden. Strukturelle Ähnlichkeiten wie großflächige gleichartige Muster in den Holzschnitten können zu systematischen Fehl-Erkennungen führen, sind jedoch relativ leicht herauszufiltern. Anders steht es um korrekte Treffer ohne Signifikanz für die Fragestellung, beispielsweise Druckermarken, Initialen oder Schmuckelemente. Diese müssen ggf. manuell bereinigt werden, was allerdings mit einer Benutzeroberfläche zur Darstellung der einzelnen Regionengraphen mit vergleichsweise geringem Aufwand auch für mehrere hundert Graphen durchführbar ist. Herausforderungen stellen auch die Schnittstellen an Beginn und Ende des Workflows dar. In den Onlinebibliographien fehlen häufig noch automatische Exportmöglichkeiten. Auch die Digitalisate sind oft nur manuell zugreifbar, sodass hier ein automatisches Anstoßen des Workflows basierend auf Rechercheergebnissen kaum möglich ist. Die Vielzahl verschiedener Varianten von Digitalisatspräsentationen der verschiedenen Bibliotheken machen einen Rückbezug der Ergebnisse auf die öffentlich verfügbaren Digitalisate mühsam – aber gerade hier eröffnet das Konzept des 
-                    <hi rend="italic">Web Annotation Data Models</hi> interessante Möglichkeiten.
-                </p>
-                <figure>
-                    <graphic n="1001" width="8.080375cm" height="8.071172222222222cm" url="257_final-0c663dd0af45b5c9fa2606c2c5e53060.png" rend="inline"/>
-                    <head>Abbildung 1. Graph von Seiten mit ähnlicher Bildregion</head>
-                </figure>
-            </div>
+            <p>
+                <hi style="font-size:13pt" xml:space="preserve">Unter redebegleitende Gestik werden hier kinetische Arm-, Hand-, und Kopfbewegungen und –konfigurationen verstanden, wie sie von Sprechenden und ihren zuhörenden und zuschauenden Dialogpartnern mehr oder weniger bewusst im Rahmen der mündlichen Face-to-Face-Kommunikation eingesetzt werden (vgl. Kendon 2004, Müller 1998, Müller et.al. 2013, 2014). Bei redebegleitenden Gesten handelt es sich stets um performative, temporale und spontane Vollzüge. Im Unterschied zur Lautsprache lassen sich zunächst keine expliziten syntaktischen und semantischen Regeln erkennen, die das Phänomen unterfüttern. Somit erscheint redebegleitende Gestik (im Unterschied zu sog. Emblemen) als idiosynkratischer, aber dennoch integraler und auch musterhaft unterfütternder Bestandteil von kommunikativer Interaktion vermittels sog. </hi>
+                <hi rend="italic" style="font-size:13pt" xml:space="preserve">natürlicher </hi>
+                <hi style="font-size:13pt" xml:space="preserve">(körpereigener) </hi>
+                <hi rend="italic" style="font-size:13pt">Medien</hi>
+                <hi style="font-size:13pt">. Gesprochene Sprache wird somit als multimodaler Vollzug beschrieben, von dem sich die diskursintegrierten Gesten nicht im Sinne einer eigenen medialen Spur abtrennen lassen.</hi>
+            </p>
+            <p>
+                <hi style="font-size:13pt">Neben den etablierten, überwiegend rein qualitativ arbeitenden Methoden zur Untersuchung redebegleitender Gestik entwickeln sich zunehmend computerbasierte Verfahren, welche zusätzlich zur qualitativen Analyse von Videomaterial auch quantitative, auf numerische Daten gestützte Analyseperspektiven eröffnen. Im Natural Media Lab der RWTH Aachen werden beispielsweise Gesprächspartner mittels eines markerbasierten, optischen 3D-</hi>
+                <hi rend="italic" style="font-size:13pt">Motion-Capture</hi>
+                <hi style="font-size:13pt" xml:space="preserve">-Systems aufgenommen und aus dem Verbund von MoCap-, Video- und Audiodaten ein Korpus erstellt. Die multimediale Transkription (Jäger 2004, 2012) versetzt das Korpus in den theoretischen Status eines digitalen Modells (Schüller und Mittelberg, 2017), das für GestenforscherInnen im Sinne eines empirischen Relativs an die Stelle der (Summe der) realen, raumzeitlichen Bewegungen der Sprechenden tritt und die verschiedenen Modalitäten (gesprochene Sprache, Gestik) der Kommunikationssituation erfasst. </hi>
+            </p>
+            <p>
+                <hi style="font-size:13pt">Der Vorteil dieses in den letzten Jahren mit Informatikern der RWTH Aachen entwickelten Verfahrens gegenüber der klassischen Videoanalyse ergibt sich hierbei aus der zusätzlichen multimedialen Verschränkung der Annotationen des Gestenforschers mit den numerischen Daten des MoCap-Systems. Diese Methodik unterstützt und ergänzt die Analyse redebegleitender Gesten insofern, als diskursintegrierte Gestik nun auch probandenübergreifend und quantitativ untersucht werden kann, indem auf den MoCap-Daten ein digitaler Algorithmus als operative Instanz eines Ähnlichkeitsmodells arbeitet (Beecks et. al. 2015, 2016; Schüller et.al. 2017), der mittels Gesten-Signaturen algorithmisch nach Ähnlichkeiten im kinetischen Verhalten der Probanden sucht. Weiterhin eröffnet der notationale Charakter (Goodman 1997) des digitalen Modells die Möglichkeit zur Erstellung von Diagrammen (Schüller und Mittelberg 2016) zur Visualisierung quantitativer Daten wie Beschleunigung, Abstände von Händen und Armen zum Körper, Nutzung des Gestenraumes (McNeill 1992) etc., während der multimodalen Artikulation gesprochener Sprache. Drittens gibt es die Möglichkeit der Projektion von Bewegungsspuren auf die Videodaten, sodass auch eine visuelle Repräsentation der ansonsten nicht sichtbaren numerischen Daten erfolgt und die Videodaten anreichert.</hi>
+            </p>
+            <p>
+                <hi style="font-size:13pt">Erkenntnis- und wissenschaftstheoretisch betrachtet ist eine Reflexion des theoretischen Status solcher Modelle hochinteressant, da es sich um mittels digitaler, technischer Verfahren erzeugte, zeichenbasierte Transkriptionen realer Ereignisse handelt, die letztlich den Untersuchungsgegenstand empirischer Forschung bilden und somit zentral an der Gegenstandskonstitution beteiligt sind (Jäger 2012). Welchen Einfluss hat die Anwendung verschiedener Abstraktionslevel auf die Gegenstandskonstitution? Welche Zeichenprozesse sind an diesem transkriptiven Verfahren beteiligt?</hi>
+            </p>
+            <p>
+                <hi style="font-size:13pt">In unserer Posterpräsentation wollen wir zunächst den eigentlichen Forschungsgegenstand – multimodalen Sprachgebrauch in körpereigenen Medien am Beispiel des Verbundes aus gesprochener Sprache und redebegleitender Gestik – erfassen. Hierauf folgt eine zeichentheoretische Beschreibung der technischen, transkriptiven Verfahren der Korpuskompilation im Natural Media Lab der RWTH Aachen. Darauf aufbauend soll ein Fokus auf die wechselseitige multimediale Verschränkung von Annotationen, Sprach- und Videodaten, numerischen MoCap-Daten, Algorithmus, und den hier jeweils involvierten Abstraktionsleveln gelegt werden.</hi>
+            </p>
         </body>
         <back>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl>
-                        <hi rend="bold">Brantl, Markus, / Ceynowa, Klaus / Meiers, Thomas / Wolf, Thomas (2017):</hi> 
-                        <hi rend="italic">Visuelle Suche in historischen Werken</hi>, 
-                        in: Datenbank Spektrum 17: 53–60.
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">Beecks, C. / Hassani, M. / Hinnell, J. / Schüller, D. / Brenger, B. / Mittelberg, I. / Seidl, T. (2015):</hi> 
+                        <hi rend="italic">Spatiotemporal Similarity Search in 3D Motion Capture Gesture Streams</hi>, 
+                        in: Proceedings of the 14th International Symposium on Spatial and Temporal Databases (SSTD), Seoul, South Korea, August 26-28, 2015. S.355–372.
                     </bibl>
-                    <bibl>Hathitrust Statistics and Visualizations: 
-                        <ref target="https://www.hathitrust.org/statistics_visualizations">https://www.hathitrust.org/statistics_visualizations</ref> [letzter Zugriff 27.10.18].
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">Beecks, C. / Hassani, M. / Hinnell, J. / Schüller, D. / Brenger, B. / Mittelberg, I / Seidl, T. (2016):</hi> 
+                        <hi rend="italic">Efficient Query Processing in 3D Motion Capture Databases via Lower Bound Approximation of the Gesture Matching Distance</hi>, 
+                        in: International Journal of Semantic Computing, 10(1), 5-25.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Malaspina, Matilde / Zhong, Yujie (2017):</hi> 
-                        <hi rend="italic">Image-matching technology applied to Fifteenth-century printed book illustration</hi>, 
-                        in: Lettera Matematica 5: 287–292.
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">Goodman, Nelson (1997):</hi> 
+                        <hi rend="italic">Sprachen der Kunst. Entwurf einer Symboltheorie</hi>. 
+                        Frankfurt a. M.: Suhrkamp.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Ott, Norbert (1999):</hi> 
-                        <hi rend="italic">Leitmedium Holzschnitt</hi>, 
-                        in: Die Buchkultur im 15. und 16. Jahrhundert 2, Hamburg: Maximilian-Gesellschaft 163–252.
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">Jäger, Ludwig (2004):</hi> 
+                        <hi rend="italic">Transkription - zu einem medialen Verfahren an den Schnittstellen des kulturellen Gedächtnisses</hi>,
+                        in: TRANS Internet-Zeitschrift für Kulturwissenschaften, 15 Nr., September 2004.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Reul, Christian / Springmann, Uwe / Puppe, Frank (2017):</hi> 
-                        <hi rend="italic">LAREX – A semi-automatic open-source Tool for Layout Analysis and Region Extraction on Early Printed Books</hi>, 
-                        in Proceedings of the 2nd International Conference on Digital Access to Textual Cultural Heritage, ACM.
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">Jäger, Ludwig (2012): </hi>
+                        <hi rend="italic">Transkription</hi>, 
+                        in: 
+                        <hi rend="bold">Christina Bartz / Ludwig Jäger / Marcus Krause / Erika Linz (eds.):</hi> 
+                        <hi rend="italic">Handbuch der Mediologie. Signaturen des Medialen</hi>. München: Fink, S.306-315.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Speth, Sebastian (2017):</hi> 
-                        <hi rend="italic">Dimensionen narrativer Sinnstiftung im frühneuhochdeutschen Prosaroman. Textgeschichtliche Interpretation von ‚Fortunatus’ und ‚Herzog Ernst’</hi>, 
-                        Berlin/Boston: De Gruyter.
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">McNeill, David (1992):</hi> 
+                        <hi rend="italic">Hand and mind: What Gestures Reveal about Thought</hi>. 
+                        Chicago: Chicago University Press.
                     </bibl>
-                    <bibl>The 15cBOOKTRADE Project: 
-                        <ref target="http://15cbooktrade.ox.ac.uk/">http://15cbooktrade.ox.ac.uk/</ref> [letzter Zugriff 27.10.18].
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">Müller, Cornelia (1998):</hi> 
+                        <hi rend="italic">Redebegleitende Gesten. Kulturgeschichte - Theorie – Sprachvergleich</hi>. 
+                        Berlin: Berliner Wissenschafts-Verlag.
                     </bibl>
-                    <bibl>Web Annotation Data Model: 
-                        <ref target="https://www.w3.org/TR/annotation-model/">https://www.w3.org/TR/annotation-model/</ref> [letzter Zugriff 27.10.18].
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">Müller, Cornelia / Alan Cienki / Ellen Fricke / Silva Ladwig / David McNeill / Sedinha Teßendorf (eds.) (2013): </hi>
+                        <hi rend="italic">Body – Language – Communication. An International Handbook on Multimodality in Human Interaction </hi>
+                        (Handbooks of Linguistics and Communication Science 38.1). Berlin, Boston: Mouton de Gruyter.
+                    </bibl>
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">Müller, Cornelia / Alan Cienki / Ellen Fricke / Silva Ladwig / David McNeill / Jana Bressem (eds.) (2014):</hi> 
+                        <hi rend="italic">Body – Language – Communication. An International Handbook on Multimodality in Human Interaction </hi>
+                        (Handbooks of Linguistics and Communication Science 38.2). Berlin, Boston: Mouton de Gruyter.
+                    </bibl>
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">Schüller, D. / Beecks, C. / Hassani, M. / Hinnell, J. / Brenger, B. / Seidl, T. / I. Mittelberg (2017):</hi> 
+                        <hi rend="italic">Automated Pattern Analysis in Gesture Research: Similarity Measuring in 3D Motion Capture Models of Communicative Action</hi>, 
+                        in: Digital Humanities Quarterly, 2017:11.2.
+                    </bibl>
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">Schüller, D. / Mittelberg, I. (2016/ erschienen 2018):</hi> 
+                        <hi rend="italic">Diagramme von Gesten: Eine zeichentheoretische Analyse digitaler Bewegungsspuren</hi>, 
+                        in: Zeitschrift für Semiotik 38, 3-4, S.7-38.
+                    </bibl>
+                    <bibl style="text-align:left; ">
+                        <hi rend="bold">Schüller, D. / Mittelberg, I. (2017/ erschienen 2018):</hi> 
+                        <hi rend="italic">Motion-Capture-gestützte Gestenforschung. Zur Relevanz der Notationstheorie in den Digitalen Geisteswissenschaften</hi>, 
+                        in: Zeitschrift für Semiotik 39, 1-2, S.109-146.
                     </bibl>
                 </listBibl>
             </div>

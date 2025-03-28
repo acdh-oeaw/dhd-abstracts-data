@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="vortrag-ZIHLM" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="vortrag-PAUSE" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Entwicklung und Einrichtung einer digitalen Arbeitsumgebung für die <hi rend="italic">Jeremias Gotthelf-Edition</hi>. Ein Erfahrungsbericht</title>
+<title type="full">
+<title type="main">The Colorized Dead: Computerunterstützte Analysen der Farblichkeit von Filmen in den Digital Humanities am Beispiel von Zombiefilmen</title>
+<title type="sub"/>
+</title>
 <author>
 <persName>
-<surname>Zihlmann</surname>
-<forename>Patricia</forename>
+<surname>Pause</surname>
+<forename>Johannes</forename>
 </persName>
-<affiliation>Universität Bern, Forschungsstelle Jeremias Gotthelf, Schweiz</affiliation>
-<email>patricia.zihlmann@germ.unibe.ch</email>
+<affiliation>Technische Universität Dresden, Deutschland</affiliation>
+<email>johannes.pause@nowalkowski.de</email>
 </author>
 <author>
 <persName>
-<surname>von Zimmermann</surname>
-<forename>Christian</forename>
+<surname>Walkowski</surname>
+<forename>Niels-Oliver</forename>
 </persName>
-<affiliation>Universität Bern, Forschungsstelle Jeremias Gotthelf, Schweiz</affiliation>
-<email>vonzimmermann@germ.unibe.ch</email>
+<affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland / KU Leuven, Belgien</affiliation>
+<email>walkowski@nowalkowski.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2016-11-29T07:50:00Z</date>
+<date>2016-08-26T14:12:48.385683481</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -36,7 +39,7 @@
 </address>
 </publicationStmt>
 <sourceDesc>
-<p>Converted from a Word document </p>
+<p>Converted from an OASIS Open Document</p>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
@@ -55,178 +58,165 @@
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Edition</term>
-<term>kritischer Apparat</term>
-<term>digitale Arbeitsumgebung</term>
-<term>TEI</term>
-<term>Webedition</term>
+<term>cinemetrics</term>
+<term>color quantization</term>
+<term>k-means</term>
+<term>farbkontraste</term>
+<term>zombies</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Transkription</term>
+<term>Bilderfassung</term>
 <term>Programmierung</term>
-<term>Inhaltsanalyse</term>
-<term>Annotieren</term>
-<term>Archivierung</term>
-<term>Veröffentlichung</term>
-<term>Kollaboration</term>
-<term>Webentwicklung</term>
-<term>Daten</term>
-<term>Literatur</term>
-<term>Manuskript</term>
-<term>Forschung</term>
-<term>Text</term>
-<term>virtuelle Forschungsumgebungen</term>
+<term>Strukturanalyse</term>
+<term>Bilder</term>
+<term>Video</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<div rend="DH-Heading1" type="div1">
-<head>Ausgangslage</head>
-<p>Die 
-                    <hi rend="italic">Historisch-kritische Gesamtausgabe der Werke und Briefe von Jeremias Gotthelf</hi> (
-                    <hi rend="italic">HKG</hi>), begründet von Prof. Dr. Barbara Mahlmann-Bauer und PD Dr. Christian von Zimmermann im Jahr 2003, ist auf 67 Text- und Kommentarbände angelegt und damit eines der grösseren Editionsvorhaben im deutschsprachigen Raum.
-                    <ref n="1" target="vortrag-ZIHLMftn1" type="note">1</ref>
+<p>
+<anchor xml:id="id_docs-internal-guid-d13d4bc7-c6c5-a289-5b02-3b6f77a51167"/>Ein Aspekt, der zunehmende Aufmerksamkeit in der jüngeren Geschichte algorithmischer und statistischer Filmanalyse gewinnt, ist die Analyse der Farbigkeit von Filmen. Ein frühes Beispiel ist die stark rezipierte Abschlussarbeit des Grafikdesignstudenten Frederick Brodbeck (2011) (siehe Abbildung 1), der für eine Sequenz von Frames aus verschiedenen Filmen die dominanten Farben analysiert, aneinanderreiht und so ein Farbprofil des Films erzeugt. Einen ähnlichen Ansatz verfolgen Dillon Baker (2015) sowie Burghardt (2016). Die genannten Beispiele weisen sind jedoch trotz des interessanten Einblicks den sie bieten nicht unproblematisch.
+            </p>
+<p>
+<figure>
+<graphic url="vortrag-PAUSE-10000000000003E80000010F35C65F0FBD972A25.png"/>
+</figure>
+<hi rend="italic">Abbildung 1: </hi>
+<hi rend="italic">Beispiele eines Farbclusterings verschiedener Filme bei Brodbeck (2011)</hi>
 </p>
-<p>Nach der Publikation der ersten Bände (2012) wurden die Arbeitsprozesse evaluiert, um die Edition adäquat auf digitale Arbeitsverfahren und Publikationsformen ausrichten zu können. Texte und Kommentare sollten nun 
-                    <hi rend="italic">TEI</hi>-konform erfasst werden, zumal sich inzwischen die erweiterten 
-                    <hi rend="italic">TEI-Guidelines </hi>als internationaler editionsphilologischer Standard durchsetzen konnten. Die Umstellung sollte aber umfassender sämtliche editorischen Arbeiten von der Transkription und textgenetischen Analyse über die Dokument- und Datenverwaltung, die Registeranbindung oder Kontrollroutinen bis hin zur Publikation in Print und Web berücksichtigen. Ein wichtiges Anliegen war es, aus einem Datensatz mehrere Ausgabenformate erzeugen zu können (d.h.: unterschiedliche Printformate und digitale Präsentationsformen). Schliesslich sollten die ‘endgültigen’ Daten, die bisher allein in der historisch-kritischen Buchedition gedruckt vorlagen, in einem einheitlichen Datenformat in der 
-                    <hi rend="italic">Forschungsstelle</hi> zentral verfügbar, gesichert und anderweitig verwertbar sein. (Zuvor lagerten die durch Fahnenkorrekturen aktualisierten und in unterschiedlichen Satzprogrammen codierten Satzdaten bei mehreren beauftragten Satzbüros.)
-                </p>
-<p>Diese unterschiedlichen Aspekte machen das Umstellungsprojekt aussergewöhnlich komplex; einige der Etappenziele sind bereits erreicht worden. Unser Beitrag handelt von den Erfahrungen der vergangenen vier Jahre und gibt Aufschluss über Chancen und Schwierigkeiten des Umstiegs eines editorischen Grossprojekts auf ein exaktes, weitestgehend inhaltsorientiertes Markup und auf computerphilologische Arbeitsweisen. Von besonderem Interesse ist für uns die Vermittlung zwischen übergreifenden editorischen und digitalen Standards einerseits und individuellen Projektbedürfnissen andererseits. In unserem Vortrag möchten wir zudem den Einfluss institutioneller Rahmenbedingungen (
-                    <hi rend="italic">DaSCH/DDZ, SAGW</hi>, 
-                    <hi rend="italic">SNF, metagrid</hi>
-<ref n="2" target="vortrag-ZIHLMftn2" type="note">2</ref>) auf die Durchführung computerphilologischer Reformen thematisieren.
-                </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Kooperation mit der BBAW und Pagina</head>
-<p>Der Weg zu einer Arbeitslösung für die Edition erfolgt nicht durch eine eigene Programmentwicklung, deren Kosten auch bei einem nationalen Zusammenschluss mehrerer Projekte so nicht tragbar wären. Mittlerweile haben sich unterschiedliche modulare Lösungen etabliert (etwa auch 
-                    <hi rend="italic">textgrid</hi> etc.). Nach längerer Prüfung entschied sich die Projektgruppe dazu, die Arbeitsumgebung 
-                    <hi rend="italic">Ediarum </hi>der 
-                    <hi rend="italic">BBAW</hi> für das eigene Projekt weiterzuentwickeln, zumal 
-                    <hi rend="italic">Ediarum</hi> bereits für die 
-                    <hi rend="italic">Schleiermacher-Edition </hi>als digitale Arbeitsumgebung angewendet und auch für andere Projekte angepasst worden war. 
-                    <hi rend="italic">Ediarum </hi>basiert auf einer 
-                    <hi rend="italic">eXist</hi>-Datenbank, nutzt den 
-                    <hi rend="italic">Oxygen Author</hi> und umfasst Module für den Satzprozess sowie die digitale Datenpräsentation (Dumont/Fechner 2012; Arbeitsgruppe Telota o.J.).
-                </p>
-<p>Inzwischen sind erste Module unserer Arbeitsumgebung, die Schemata für Handschriften und Drucktexte nebst entsprechenden Anpassungen im 
-                    <hi rend="italic">Oxygen Author</hi> abgeschlossen. Für die Satzvorbereitung besteht eine Kooperation mit der Firma 
-                    <hi rend="italic">Pagina</hi>, welche das Satzmodul mit 
-                    <hi rend="italic">Tustep</hi> für die Druckvorstufe programmiert und in ersten Versionen für Drucktexte und Manuskripte bereits erfolgreich zur Verfügung gestellt hat (drucknaher Satzpreview für den Editionstext und Apparat).
-                </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Schema und Ausgabeformate</head>
-<p>Die Entwicklung (insbesondere des Handschriftenschemas) war vor allem deshalb anspruchsvoll, da die Codierung nicht nur die Einrichtung der historisch-kritischen Ausgabe nach der bisherigen Gestalt sicherstellen musste, sondern auch davon abweichende gedruckte und digitale Präsentationsformen ermöglichen sollte. Dabei sollten etwa an die Stelle der Apparate der Drucktexte in der Webedition medienspezifische Annotationsformen treten können.</p>
-<p>Die kritische Edition stellt einen Editionstext bereit und verzeichnet sämtliche textgenetischen Prozesse in der Handschrift, Emendationen bei Drucktexten und allfällige Varianten zwischen Drucktexten und Handschriften am Seitenende in unterschiedlichen Apparaten (textgenetischer Apparat, Emendationsapparat, Variantenapparat, Textstufenapparat; häufig Kombinationen). </p>
-<p>Um die Apparate der kritischen Edition in der Printausgabe zu erzeugen, hätte ein Freitextelement wie 
-                    <hi rend="bold">&lt;note&gt;</hi> völlig ausgereicht. Doch hätte eine solche Lösung, welche die analytischen Stärken der Codierung für die editionsphilologische Arbeit nicht nutzt, den Aufwand für einen Umstieg auf 
-                    <hi rend="italic">XML/TEI </hi>nicht gerechtfertigt. Gerade die Möglichkeit zur präzisen Erfassung textgenetischer Prozesse einerseits und andererseits der Anspruch, einen Datensatz für unterschiedliche Ausgabeformate zu nutzen, legte den Umstieg nahe. 
-                </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Digitale Präsentation und Korrespondenzedition</head>
-<p>Die digitale Präsentation soll im Wesentlichen im Rahmen der Edition von Gotthelfs Korrespondenzen entwickelt werden (Zihlmann-Märki 2017). Dabei sind drei Ansichten für unterschiedliche Nutzungsszenarien vorgesehen. Neben der historisch-kritischen Ansicht, welche die 
-                    <hi rend="italic">Tustep</hi>-Routine einbindet, und einer diplomatischen Ansicht stellt eine Inhaltsansicht den finalen Text samt ausgezeichneten Entitäten und Stellenkommentaren bereit. Die Codierung wird die Vorschläge der 
-                    <hi rend="italic">TEI Special Interest Group Correspondence </hi>berücksichtigen, und die Verwendung standardisierter Daten ist Voraussetzung für eine Integration in externe Suchumgebungen wie 
-                    <hi rend="italic">CorrespSearch</hi>.
-                    <ref n="3" target="vortrag-ZIHLMftn3" type="note">3</ref> Ebenso können Informationen aus anderen digitalen Ressourcen dank dem Einsatz von Normdateien und dem BEACON-Format in der digitalen Umgebung angezeigt werden (Stadler 2012; Stadler 2014). 
-                </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Vorzüge und Schwierigkeiten der Reform</head>
-<p>Überblickt man die bisherige Reform, haben sich folgende Vorteile für die Arbeitsprozesse ergeben:</p>
+<p>
+<hi rend="color(#000000)">Im Fall von Brodbeck und Burghard</hi>
+<hi rend="color(#000000)">t</hi>
+<hi rend="color(#000000)"> wird für die Bestimmung der dominanten Farben in einem Frame der Clustering-Algorithmus </hi>
+<hi rend="color(#000000)italic">K-Means</hi>
+<hi rend="color(#000000)"> verwendet</hi>
+<hi rend="color(#000000)">
+<ref target="vortrag-PAUSEftn1" type="note">1</ref>
+</hi>
+<hi rend="color(#000000)">. Dieser Algorithmus ist die gängigste Strategie zur Farbquantifizierung und findet sich auch in den einschlägigen Computer Vision Bibliotheken wie zum Beispiel </hi>
+<hi rend="color(#000000)italic">OpenCV</hi>
+<hi rend="color(#000000)">
+<ref target="vortrag-PAUSEftn2" type="note">2</ref>
+</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">wieder</hi>
+<hi rend="color(#000000)">. Die Problematik von K-Means im Kontext der filmwissenschaftlichen Farbanalyse ist vielfältig. Sie beginnt damit, dass dem Algorithmus vorgegeben werden muss, wie viele Farbcluster er erzeugen soll. Somit kann er bei der automatisierten Anwendung von bis zu 180.000 Frames pro Film nicht dem Umstand Rechnung tragen, dass es etwa farblich komplexere und einfachere Frames gibt. </hi>
+</p>
+<p>Tatsächlich gibt es ein überwachtes Verfahren in dem K-Means in einer Schleife mit unterschiedlicher Clusteranzahl auf den selben Frame angewendet wird und im Sinne des sogenannten 
+                <hi rend="italic">Silhouette Koeffizienten</hi> das bester Ergebnis bestimmt wird. Allerdings entspricht ein Clusteringergebnis bei dem die Clusterzentren bei weitestgehender Kompaktheit möglichst weit voneinander entfernt sind nicht unbedingt dem filmwissenschaftlich brauchbarsten Ergebnis (siehe Abbildung 2).
+            </p>
+<p>
+<figure>
+<graphic url="vortrag-PAUSE-10000000000003FA0000018EB4BD3D35D6891A9E.png"/>
+</figure>Abbildung 2: Clusteranalyse eines Frames aus The Walking Dead mit 2 bis 9 Clustern. Die Anzahl von 2 Clustern erzeugt den besten Silhouette Koeffizienten.
+            </p>
+<p>Intuitiv wichtige Farben eines Bildes gehen verloren. Dieses generelle Problem der Anwendung von K-Means lässt sich besonders eindrucksvoll an dem roten Mädchen aus 
+                <hi rend="italic">Schindlers Liste</hi> aufzeigen (siehe Abbildung 3). Ein Grund dafür ist die Tatsache, dass K-Means eine Tendenz zur Bildung gleichgroßer Cluster aufweist. Folglich präferiert K-Means ein auf Verteilung hin ausgerichtetes Konzept von Dominanz.
+            </p>
+<p>Ein weiteres Problem von K-Means ist der Umstand, dass der Algorithmus bei jeder Anwendung leicht variierende Ergebnisse erzeugt, wobei die Variation im häufig verwendeten Spektrum zwischen 3 und 5 Clustern am größten ist. Dies kann dazu führen, dass bei einer Anwendung ein Farbton vertreten ist, der in einem weiteren Durchlauf in anderen Clustern aufgeht. Ebenfalls bleibt in den bisherigen Projektkontexten der Umstand unreflektiert, das K-Means unterschiedlich clustered, je nachdem mit welchem Farbraummodell der Frame repräsentiert wird.</p>
+<p>
+<figure>
+<graphic url="vortrag-PAUSE-10000201000003200000020CC549FC08E77BC4D3.png"/>
+</figure>Abbildung 3: Farbclustering eines Ausschnitts aus Schindlers Liste
+            </p>
+<p>Das Problem der Präferenz für eine gleichmäßige Größe von Clustern sowie das zuletzt genannte zeigen die Notwendigkeit auf, die Idee einer dominanten Farbe im Kontext der computerunterstützten Filmanalyse stärker zu diskutieren. Dies ist bisher jedoch nur unzureichend erfolgt. Ein Mitgrund hierfür ist der Umstand, dass die genannten Projekte keine filmwissenschaftliche Deutung in Zusammenhang mit ihren Entwicklungen publiziert haben. Dadurch bleibt völlig offen, welche Semantik die erzeugten Muster tragen und inwieweit sie die Interpretation von Filmen beziehungsweise Filmkorpora inspirieren können. Dieser eher theoretische Problematik läßt sich auch nicht durch ein Ausweichen auf andere Clustering-Algorithmen wie DBSCAN oder Verfahren wie hierarchisches Clustering entgehen.</p>
+<p>Angesichts der genannten Probleme erscheint die Entwicklung eines Ansatzes vonnöten, der einen technisch weniger anfechtbaren Ausgangspunkt für eine computergestützte Untersuchung von Farben im Film liefert und zugleich Anschlüsse für mögliche Interpretationen der Werke bereitstellt. Ein in diesem Zusammenhang produktives Konzept könnte das Modell der “Sieben Farbkontraste“ des Bauhaus-Künstlers und Kunstpädagogen Johannes Itten darstellen (Itten 1961: 36-109), welches die Strukturen von Farblichkeit innerhalb eines Bildes zu systematisieren erlaubt. Ausgehend von der Grundannahme, dass Farben ihre Wirkung immer in Abhängigkeit von anderen im Blickfeld befindlichen Farben entfalten, unterscheidet Itten sieben grundlegende Kontrasttypen:</p>
 <list type="unordered">
-<item>Durch neue Arbeitsabläufe der Texterfassung (angepasste Scann- und OCR-Verfahren bei Drucktexten) konnte eine nicht unerhebliche Zeitersparnis erzielt werden. </item>
-<item>Unterschiedliche Previewansichten des Editionstextes erlauben die Hervorhebung spezifischer Besonderheiten, die für einzelne Korrekturschritte notwendig sind (etwa Hervorhebung des Zeilenfalles oder Hervorhebung von Stellen, die differenzierter codiert sind, als dies für die Druckedition im Apparat ausgegeben wird etc.). </item>
-<item>Die Dokumentation der Codierungsrichtlinien ermöglichte es, unterschiedliche Aspekte zu verknüpfen: 1) editorische Prinzipien konnten verbessert und verbindlicher gestaltet werden, 2) Probleme im Übergang von Transkription und Apparatgestaltung entfallen durch die Verbindung beider Prozesse, 3) die Verbindung von Codeerläuterung, Transkriptionsbeispiel und Präsentationsbeispiel hat der Satzfirma die Programmierung der Satzroutinen erleichtert.</item>
-<item>Die Satzfirma 
-                        <hi rend="italic">Pagina </hi>investiert vor allem in die Konzeption von Satzroutinen und kommt dann nur noch für den Feinsatz der Buchausgabe zum Einsatz. Dank Roundtripping können die Satzinformationen (Seiten- und Zeilenzahlen) in die originalen 
-                        <hi rend="italic">XML</hi>-Daten zurückgespielt werden; so verfügt die 
-                        <hi rend="italic">Forschungsstelle </hi>über aktuelle Daten, die alle Informationen zur Druckausgabe enthalten und leicht auch für andere Präsentationsformen oder – in weiteren Reformetappen – für digitale Querverweise und Kommentarverankerungen genutzt werden können.
-                    </item>
+<item>den Farbe-an-sich-Kontrast, in dem ungetrübte und daher deutlich unterscheidbare Primär-, Sekundär- oder Spektralfarben aufeinander stoßen, </item>
+<item>den Hell-Dunkel-Kontrast, </item>
+<item>den Kalt-Warm-Kontrast, </item>
+<item>den Qualitätskontrast, der zwischen gesättigten und trüben Farben entsteht, </item>
+<item>den Quantitätskontrast, der sich aus der Größe der gegenübergestellten Farbflächen ergibt, </item>
+<item>den Komplementärkontrast sowie </item>
+<item>den diesem entgegengesetzten Simultankontrast, in dem gerade das Fehlen einer Komplementärfarbe zur subjektiven Verzerrung der dargestellten Farbflächen führt.</item>
 </list>
-<p>Zugleich erwies sich der Reformprozess als überaus anspruchsvoll sowie als zeit- und kostenintensiv. </p>
-<list type="ordered">
-<item>Als Illusion erweist sich die Vorstellung, es sei möglich, eine Codierung unabhängig von späteren Ausgabeformaten zu entwickeln. Editionen, welche die Daten tatsächlich für mehrere Formate bereit halten wollen und nicht nur auf eine spezifische Ausgabe zielen, stehen hier vor bedeutenden Problemen, da sie die Dateninterpretation durch Webapplikationen ebenso berücksichtigen müssen wie die Eigenheiten von Satzroutinen oder den Wunsch nach einer mediumsspezifischen Apparatgestaltung. Dies gilt umso mehr für Projekte, welche die Umstellung im laufenden Arbeitsprozess bei bereits etablierten Editionsrichtlinien durchführen.</item>
-<item>Innerhalb der modularen Arbeitsumgebung konnte aufgrund der projektspezifischen Bedürfnisse letztlich kein einziges Modul unverändert übernommen werden. Da die Module jeweils spezifischen Projektinteressen der an der Modulentwicklung beteiligten Projektpartner folgen (müssen), sind sie – auch nach Erfahrung von 
-                        <hi rend="italic">Telota</hi> – in keinem Fall ohne Anpassung nutzbar. Andere Module (Druckvorstufe) konnten dagegen problemlos ausgetauscht werden, und dies wäre wohl eine Grundanforderung überhaupt an modulare Editionsumgebungen.
-                    </item>
-<item>Die graphische Oberfläche in 
-                        <hi rend="italic">Ediarum </hi>können wir für unsere Edition nicht nutzen, weil in ihr komplexe Textphänomene und sich überlagernde Korrekturen nicht übersichtlich darstellbar sind. Allerdings hat sich auch gezeigt, dass die Arbeit in der Code-Ansicht für die meisten Mitarbeitenden unproblematisch ist. Für einzelne Arbeitsschritte wie die Lemmatisierung wäre die Arbeit in der graphischen Oberfläche möglich.
-                    </item>
-</list>
-<p>Allein von der Kostenseite aus betrachtet, lohnt sich bei begonnenen Buchausgaben die Umstellung auf eine differenzierte Codierungspraxis nur bei einem bedeutenden Projektvolumen. Erst dann stehen die Entwicklungs- und Anpassungskosten einer digitalen Arbeitsweise in einem Verhältnis zur Einsparung von Satzkosten. Das gilt auch dann, wenn auf eine Buchedition gänzlich verzichtet wird.</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Standardisierung und heterogene Editionslandschaft</head>
-<p>Freilich wäre es zwecks Ressourcenschonung wünschenswert, dass andere Projekte von Schemata, von Satzroutinen, von der Arbeitsumgebung und der digitalen Präsentation profitieren könnten, die in unserem oder einem anderen Projekt entwickelt wurden. Tatsächlich sehen wir ein gewisses Potential im Erfahrungsaustausch. Dass eigentliche Übernahmen von Projektstrukturen hingegen schwierig sind, liegt weniger an den Codierungsstandards als an heterogenen Editionstypen und -prinzipien. Verbindliche Prinzipien der Textwiedergabe und Apparatierung könnten die Digitalisierungsprozesse wie auch die langfristige Sicherung vereinfachen (
-                    <hi rend="italic">ein</hi> Prozedere, 
-                    <hi rend="italic">ein</hi> Umwandlungsschema für alle Daten) und möglicherweise kostensenkend wirken. Die Diversität von Editionen entspringt aber nicht zufälligen Entwicklungen, sondern ist tief in heterogenen Forschungstraditionen verankert, und die Entscheidung für einen Editionstyp geht in der Regel mit einer intensiven Auseinandersetzung mit dem Editionsgegenstand einher. So rechtfertigt die Berner Parzival-Edition ihr Projekt nicht zuletzt durch Annahmen über den mittelalterlichen Textbegriff (Stolz 2002), und die Berner Gotthelf-Edition hebt auf den politisch-publizistischen wie diskursiven Charakter der Texte ab, der nur durch eine umfassende Kommentierung adäquat dargestellt werden kann (von Zimmermann 2014).
-                </p>
-<p>Auch die 
-                    <hi rend="italic">TEI </hi>trägt der Diversität prinzipiell Rechnung, stellt sie doch einen Pool möglicher Codes zur Verfügung, aus denen die Einzelprojekte ihre eigenen Schemata erarbeiten müssen. Ein über das Bekenntnis zu 
-                    <hi rend="italic">TEI/XML </hi>(oder einer anderen Auszeichnungssprache) hinausgehender, projektübergreifender Standard, der die textphilologische Kernarbeit (Transkription und Apparatierung) betrifft, kann deshalb vermutlich eher nicht entwickelt werden. 
-                </p>
-</div>
+<p>Jeder dieser Kontrasttypen ist nach Itten mit spezifischen wirkungsästhetischen Einsatzmöglichkeiten verknüpft: So steuern sie etwa die Aufmerksamkeit der Zuschauer, ermöglichen Raumwirkungen, schaffen Orientierung oder Desorientierung, unterstützen die symbolische Semantik der Bilder oder lösen Assoziationen und Emotionen aus. Auch wenn sich die meisten dieser Effekte nicht generalisieren lassen, erscheint hier eine allgemeine rezeptionsästhetische Beschreibung doch eher möglich als bei einer Interpretation von Einzelfarben (etwa Rot als Signalfarbe, Blau als Symbol für Trauer oder Tod usw.), wie sie in der Filmanalyse bis heute Einsatz findet (etwa bei Marschall 2009). </p>
+<p>
+<hi rend="color(#000000)">Eine computergestützte Bestimmung nicht nur des generellen Farbclusters eines Filmes, sondern der in ihm angelegten wesentlichen Kontrasttypen kann einen ersten Ansatz für eine differenzierte Interpretation filmischer Farbschemata liefern. So kann ein Film etwa durch einen über den gesamten Filmverlauf hinweg stabilen Gegensatz von warmen und kalten Farben gekennzeichnet sein, auf der Ebene des Hell-Dunkel-Kontrastes aber eine deutlich progressive Dynamik aufweisen (zu progressiven und synopitschen Farbschemata vgl. Wulff 1988) und in wenigen besonderen Szenen starke Komplementärkontraste verwenden. Eine auf diese Weise ausbuchstabierte Entschlüsselung der komplexer Farbaspekte eines Films ließe sich dabei einerseits im Rahmen eines </hi>
+<hi rend="color(#000000)italic">close readings </hi>
+<hi rend="color(#000000)">zurate ziehen, indem etwa die dynamischen Aspekte der Farbgestaltung auf die Erzählstruktur des Werkes bezogen oder mit der Analyse inhaltlicher </hi>
+<hi rend="color(#000000)">Leitmotive, bestimmter Figuren, dominanter Montageformen oder des </hi>
+<hi rend="color(#000000)italic">Mise en Scènes </hi>
+<hi rend="color(#000000)">verbunden werden (zur generellen Problematik der Interpretation vgl. Flückiger 2011). </hi>
+</p>
+<p>Andererseits ließe sich eine computergestützte Kontrastanalyse für einen synchronen oder diachronen Vergleich mehrerer Einzelwerke oder ganzer Werkgruppen einsetzen: So ließe sich etwa überprüfen, ob sich der spezifische Stil eines Autorenfilmers auch in einem besonderen Farbprofil niederschlägt, ob sich nationale Kinematographien durch ihre Farbigkeit unterscheiden lassen oder ob sich für bestimmte Genres innerhalb konkreter Zeitspannen ein charakteristischer Einsatz besonderer Kontrastmomente nachweisen lässt. </p>
+<p>Die Farbanalyse von Filmen in Form von Kontrasten bietet in der Umsetzung ebenfalls  eine Reihe von Vorteilen gegenüber der zuvor beschriebenen Verfahrensweise. Zunächst einmal erlauben einige Kontrastarten bereits die Untersuchung von Merkmalen der Farbsprache des Films vor der Identifikation zentraler Farben eines Frames und damit jenseits der Anwendung genannter Cluster-Algorithmen. Dies wird dadurch möglich, dass spezifische Repräsentationen des Farbraums Farben in Eigenschaften zerlegen, die direkt versuchen bestimmte Kontraste zu simulieren oder aus denen sich Kontraste leichter ableiten lassen. Am einsichtigsten ist dies im 
+                <hi rend="italic">HSV-Farbmodel</hi> (Hue, Saturation, Value).
+            </p>
+<p>So is Value eine Form der Darstellung des Hell-Dunkel-Kontrast, während Saturation den Qualitätskontrast beschreibt. Zu beachten ist hier jedoch auch, dass der Value Wert nicht vollständig identisch mit der Hell-Dunkel Empfindung eines durchschnittlichen Filmbetrachters ist. Eine Übersetzung in einen solch empfunden Hell-Dunkel Kontrast ist jedoch möglich. </p>
+<p>Die Dynamik eines bestimmten Kontrastes in einem Film kann nun erzeugt werden, indem für jeden extrahierten Frame ein Histogramm für den entsprechenden Kontrasttyp generiert wird. Die Sequenz dieser Werte lässt es zu, Muster in der Gestaltung dieses Kontrastes innerhalb des Films oder eines Filmkorpus zu identifizieren. Dabei bieten unterschiedliche Darstellungsweisen der Histogrammergebnisse in Kombination mit weiteren Phänomenen wie zum Beispiel der Berechnung des 
+                <hi rend="italic">mean absolute deviation</hi> weiteren Deutungsspielraum. Ein Beispiel für eine sequenzielle Aneinanderreihung von Histogrammen eines Kontrasttyps als Scatterplot zeigt Abbildung 4.
+            </p>
+<p>
+<figure>
+<graphic url="vortrag-PAUSE-1000020100000CA2000001F43C18D91EEC295F5C.png"/>
+</figure>
+<hi rend="italic">Abbildung </hi>
+<hi rend="italic">4</hi>
+<hi rend="italic">: </hi>
+<hi rend="italic">Scatterplot einer Histogramm-basierten Analyse des Hue Kontrasts in 28 Days Later</hi>
+</p>
+<p>Nicht alle Kontraste kommen ohne die Bestimmung eines als absolut verstandenen Farbwertes aus. Dies ist zum Beispiel beim Simultan- und Komplementärkontrast der Fall. Der vorgestellte Ansatz ist auch nicht als Ersetzung von Clusteringverfahren zu verstehen. Beide Verfahren können auch komplementär eingesetzt werden. So kann eine Analyse des Farbe-an-sich-Kontrastes der Schwierigkeit entgegenwirken, dass K-Means einer vorgegebenen Clusterzahl folgt, bzw. der Silhouette Koeffizient keine für die Filminterpretation brauchbaren Ergebnisse produziert. Konkret kann ein hoher Farben-an-sich-Kontrast zum Anlass für die Bestimmung einer größeren Clusterzahl und umgekehrt genutzt werden. Desweiteren erlaubt das Verständnis von Farbigkeit als Kombination von Kontrasten das eingangs angesprochene Phänomen zu untersuchen und produktiv anzuwenden, dass K-Means für Daten die unterschiedlichen Farbraummodellen folgen unterschiedliche Ergebnisse liefert.</p>
+<p>Der Hauptpunkt dieses Ansatzes ist es nicht ‘objektiv richtigere’ Clusteringergebnisse zu bekommen, sondern auf der Grundlage der Erkenntnis das es kein ‘richtiges’ Clustering von Farben in Farbkompositionen geben kann, hilfreiche und interpretierbare Ergebnisse mit gleichen und komplementären Verfahren zu produzieren. Der Kern von Ittens Herangehensweise an Farbkompositionen ist die Erkenntnis, dass ihre Analyse im wesentlichen ein wahrnehmungstheoretisches Problem ist. Entsprechend kann es erfolgreicher sein, bei der Herausarbeitung bestimmter Dimensionen von Farblichkeit zu beginnen anstatt die Varianz in diesen Dimensionen durch Clustering vor jeglicher Analyse zu reduzieren. Die angedeuteten Verfahren zeigen, dass es technisch gesehen nicht schwierig sein muss, diesem Umstand innerhalb einer Digital Humanities Perspektive Rechnung zu tragen.</p>
+<p>
+<lb/>
+<hi rend="color(#000000)">Der Vortrag wird die aufgezeigten Probleme bei der Farbanalyse von Filmen, den vorgestellten alternativen Ansatz sowie die Brauchbarkeit dieses Ansatzes als unterstützendes Rahmenwerk für die Filminterpretation an Hand der drei Zombiefilme </hi>
+<hi rend="color(#000000)italic">28 Days Later</hi>
+<hi rend="color(#000000)">, </hi>
+<hi rend="color(#000000)italic">[REC]</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">und </hi>
+<hi rend="color(#000000)italic">World War Z</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">vorstellen und illustrieren.</hi>
+</p>
 </body>
-<back><div type="Notes"><note n="1" rend="footnote text" xml:id="vortrag-ZIHLMftn1"> Allgemeine Projektinformationen: 
-                            <hi rend="Hyperlink">http://www.gotthelf.unibe.ch</hi>
-</note><note n="2" rend="footnote text" xml:id="vortrag-ZIHLMftn2">
-<hi rend="Hyperlink">http://www.metagrid.ch</hi>
-</note><note n="3" rend="footnote text" xml:id="vortrag-ZIHLMftn3">
-<hi rend="Hyperlink">http://correspsearch.net/index.xql</hi>
-</note></div>
+<back><div type="Notes"><note n="1" place="foot" xml:id="vortrag-PAUSEftn1">Baker erzeugt lediglich ein Frame-Mittelwert und benötigt daher kein Clustering</note><note n="2" place="foot" xml:id="vortrag-PAUSEftn2">
+<anchor xml:id="id_docs-internal-guid-d13d4bc7-c6cd-ad91-95c0-d390912c04b5"/>http://opencv.org
+                    </note></div>
 <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-<hi rend="bold">Dumont, Stefan / Fechner, Martin</hi> (2012): 
-                        <hi rend="italic">Digitale Arbeitsumgebung für das Editionsvorhaben „Schleiermacher in Berlin 1808–1834“</hi>.
-                        <ref target="http://digiversity.net/2012/digitale-arbeitsumgebung-fur-das-editionsvorhaben-schleiermacher-in-berlin-1808-1834/">http://digiversity.net/2012/digitale-arbeitsumgebung-fur-das-editionsvorhaben-schleiermacher-in-berlin-1808-1834</ref> [letzter Zugriff 25. August 2016]. 
-                    </bibl>
-<bibl>[
-                        <hi rend="bold">Arbeitsgruppe Telota</hi>]: 
-                        <hi rend="italic">Ediarum – Digitale Arbeitsumgebung für Editionsvorhaben</hi>.
-                        <ref target="http://www.bbaw.de/telota/software/ediarum">http://www.bbaw.de/telota/software/ediarum</ref> [letzter Zugriff 25. August 2016].
+<hi rend="bold">Brodbeck, Frederic</hi> (2011): 
+                        <hi rend="italic">CINEMETRICS — film data visualization</hi>. 
+                        <ref target="http://cinemetrics.fredericbrodbeck.de/">http://cinemetrics.fredericbrodbeck.de/</ref> [letzter Zugriff 26. August 2017].
                     </bibl>
 <bibl>
-<hi rend="bold">Schweizerische Akademie der Geistes- und Sozialwissenschaften</hi> (2015): 
-                        <hi rend="italic">Final report for the pilot project „Data and Service Center for the Humanities“ (DaSCH)</hi>. Swiss Academies Reports 10 (1).
-                    </bibl>
-<bibl>
-<hi rend="bold">Stadler, Peter</hi> (2012): 
-                        „Normdateien in der Edition“,
+<hi rend="bold">Burghardt, Manuel / Kao, Michael / Wolff, Christian</hi> (2016): 
+                        „Beyond Shot Lengths – Using Language Data and Color Information as Additional Parameters for Quantitative Movie Analysis“, 
                         in: 
-                        <hi rend="italic">editio</hi> 26: 174–183.
+                        <hi rend="italic">DH2016: Conference Abstracts</hi> 753–755.
                     </bibl>
 <bibl>
-<hi rend="bold">Stadler, Peter</hi> (2014): 
-                        „Interoperabilität von digitalen Briefeditionen“,
-                        in: Delf von Wolzogen, Hanna / Falk, Rainer (Hg.): 
-                        <hi rend="italic">Fontanes Briefe editiert</hi>. Internationale wissenschaftliche Tagung des Theodor-Fontane-Archivs Potsdam, 18. bis 20. September 2013 (= Fontaneana 12). 
-                        Würzburg: Königshausen &amp; Neumann 278–287.
+<hi rend="bold">Dillon Baker</hi> (2015): 
+                        „Spectrum“. 
+                        <hi rend="italic">Dillon Baker</hi>. 
+                        <ref target="http://dillonbaker.com/spectrum/">http://dillonbaker.com/spectrum/</ref> [letzter Zugriff 16. Mai 2016].
                     </bibl>
 <bibl>
-<hi rend="bold">Stolz, Michael</hi> (2002): 
-                        „Wolframs ‚Parzival‘ als unfester Text. Möglichkeiten einer überlieferungsgeschichtlichen Edition im Spannungsfeld traditioneller Textkritik und elektronischer Darstellung“,
-                        in: Haubrichs, Wolfgang / Lutz, Eckart C. / Ridder, Klaus (Hg.): 
-                        <hi rend="italic">Wolfram von Eschenbach – Bilanzen und Perspektiven</hi>.Eichstätter Colloquium 2000 (= Wolfram-Studien 17). 
-                        Berlin: Schmidt 294–321.
+<hi rend="bold">Flückiger, Barbara</hi> (2011): 
+                        „Die Vermessung ästhetischer Erscheinungen“, 
+                        in: Hediger, Vinzenz / Stauff, Markus (eds.):
+                        <hi rend="italic">Zeitschrift für Medienwissenschaften</hi> 5: 44–60.
                     </bibl>
 <bibl>
-<hi rend="bold">Zihlmann-Märki, Patricia</hi> (2017): 
-                        „Kommentierung in gedruckten und digitalen Briefausgaben“, 
-                        in: Lukas, Wolfgang / Richter, Elke (Hg.): 
-                        <hi rend="italic">Kommentieren und Erläutern im digitalen Kontext</hi> (= Beihefte zu editio) [erscheint 2017].
+<hi rend="bold">Itten, Johannes</hi> (1961): 
+                        <hi rend="italic">Kunst der Farbe</hi>. 
+                        Ravensburg: Otto Maier Verlag.
                     </bibl>
 <bibl>
-    <hi rend="bold">von Zimmermann, Christian</hi> (2014): „Geschichte, Ziele und Perspektiven der Historisch-kritischen Gesamtausgabe der Werke und Briefe von Jeremias Gotthelf (HKG)“, in: Marianne Derron / Christian von Zimmermann (Hg.): 
-                        <hi rend="italic">Jeremias Gotthelf</hi>. Neue Studien. 
-                        Hildesheim / Zürich / New York: Olms 13–37.
+<hi rend="bold">Marschall, Susanne</hi> (2009): 
+                        <hi rend="italic">Farbe im Kino</hi>. 
+                        Marbug: Schüren Verlag.
+                    </bibl>
+<bibl>
+<hi rend="bold">Wulff, Hans J.</hi> (1988): 
+                        „Die signifikativen Funktionen der Farben im Film“, 
+                        in: 
+                        <hi rend="italic">Kodikas/Code</hi> 11 (3–4): 363–376.
                     </bibl>
 </listBibl>
 </div>

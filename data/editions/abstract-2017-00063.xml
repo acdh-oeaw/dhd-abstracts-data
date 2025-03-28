@@ -1,45 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="vortrag-LANGE" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="vortrag-VONWA" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title> Archival Cultural Heritage Online: Eine Virtuelle Forschungsumgebung im Spannungsfeld von Open Access, Nachhaltigkeit und Datenschutz</title>
+    <title>„Quellen aus der Schweiz für die Welt: jederzeit, überall, für alle“ – Neue Kooperationen der NB im digitalen Zeitalter</title>
 <author>
 <persName>
-<surname>Lange</surname>
-<forename>Felix</forename>
+<surname>von Wartburg</surname>
+<forename>Karin</forename>
 </persName>
-<affiliation>Max-Planck-Institut für Wissenschaftsgeschichte, Berlin</affiliation>
-<email>flange@mpiwg-berlin.mpg.de</email>
+<affiliation>Schweizerische Nationalbibliothek, Schweiz</affiliation>
+<email>karin.vonwartburg@nb.admin.ch</email>
 </author>
 <author>
 <persName>
-<surname>Wintergrün</surname>
-<forename>Dirk</forename>
+<surname>Nepfer</surname>
+<forename>Matthias</forename>
 </persName>
-<affiliation>Max-Planck-Institut für Wissenschaftsgeschichte, Berlin</affiliation>
-<email>dwinter@mpiwg-berlin.mpg.de</email>
-</author>
-<author>
-<persName>
-<surname>Wannenwetsch</surname>
-<forename>Oliver</forename>
-</persName>
-<affiliation>Gesellschaft für wissenschaftliche Datenverarbeitung mbH, Göttingen</affiliation>
-<email>oliver.schmitt@gwdg.de</email>
-</author>
-<author>
-<persName>
-<surname>Schoepflin</surname>
-<forename>Urs</forename>
-</persName>
-<affiliation>Gesellschaft für wissenschaftliche Datenverarbeitung mbH, Göttingen</affiliation>
-<email>schoepfl@mpiwg-berlin.mpg.de</email>
+<affiliation>Schweizerische Nationalbibliothek, Schweiz</affiliation>
+<email>Matthias.Nepfer@nb.admin.ch</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2016-08-26T17:55:00Z</date>
+<date>2016-08-30T15:08:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -71,79 +55,156 @@
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Nachhaltigkeit</term>
-<term>Virtuelle Forschungsumgebung</term>
+<term>Digitale Erschliessung</term>
+<term>Linked Open Data</term>
+<term>Digitalisierung</term>
+<term>OpenGLAM</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Teilen</term>
 <term>Sammlung</term>
-<term>Programmierung</term>
-<term>Archivierung</term>
-<term>Veröffentlichung</term>
-<term>Organisation</term>
-<term>Daten</term>
-<term>Software</term>
+<term>Bereinigung</term>
+<term>Bibliographie</term>
+<term>Metadaten</term>
+<term>Personen</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<p>Wie sich die langfristige wissenschaftliche Nutzbarkeit von großen digitalen Datenrepositorien sicherstellen lässt, ist eine in den letzten Jahren in der DH-Community und darüber hinaus intensiv diskutierte und noch nicht abschließend geklärte Frage.
-                <ref n="1" target="vortrag-LANGEftn1" type="note">1</ref> In den Digitalen Geisteswissenschaften werden in diesem Zusammenhang zur Zeit vorrangig Probleme der technischen Nachhaltigkeit und der Datenstandards diskutiert [Fornaro (2016)]. Im Hinblick auf Repositorien für die gegenwartsnah arbeitenden geistes- und sozialwissenschaftlichen Disziplinen wie die Zeitgeschichte sind aber auch komplexe datenschutz- und urheberrechtliche Anforderungen zu berücksichtigen. Eine im Archivwesen diskutierte Antwort auf diese Herausforderung ist es, die rechtliche Absicherung des Zugangs zu Digitalisaten in sog. „digitalen Lesesälen“ zu organisieren, die einen Zugriff ausschließlich in den Räumlichkeiten des jeweiligen Archivs zulassen [Plassmann (2016), S. 219]. Dabei wird aber das Ziel der Open-Access-Bewegung, wissenschaftliche Quellen und Forschungsergebnisse einer möglichst großen Fachöffentlichkeit zugänglich zu machen, verfehlt.
-                <ref n="2" target="vortrag-LANGEftn2" type="note">2</ref> In den Sozialwissenschaften hat die Brisanz dieser Frage bereits zur Gründung von Datenzentren geführt, die Fragen der technischen 
-                <hi rend="italic">und</hi> der rechtlichen Datensicherheit in den Mittelpunkt stellen.
-                <ref n="3" target="vortrag-LANGEftn3" type="note">3</ref> Der vorliegende Beitrag stellt mit Archival Heritage Online – ArCHO eine digitale Forschungsinfrastruktur vor, die dazu dient, das Verlangen nach offener wissenschaftlicher Nutzung mit den rechtlichen Bedingungen für den nachhaltigen Zugang zu zeitgeschichtlichem Archivmaterial in Einklang zu bringen.
-                <ref n="4" target="vortrag-LANGEftn4" type="note">4</ref>
-</p>
-<p>Der prototypische Anwendungsfall für ArCHO ist das seit 2014 laufende und auf zunächst fünf Jahre angelegte Forschungsvorhaben „Geschichte der Max-Planck-Gesellschaft“ (GMPG).
-                <ref n="5" target="vortrag-LANGEftn5" type="note">5</ref> Es untersucht die Geschichte der MPG von ihrer Gründung im Jahre 1948 bis zum Jahr 2002 und legt dabei den Schwerpunkt auf institutsübergreifende Fragestellungen zu Themenfeldern wie Periodisierungen, Innovationen, Internationalisierung, Forschung und Wirtschaft, Gender und Wissenschaft sowie Konkurrenz und Kooperation. Diese Themen lassen sich naturgemäß nicht allein durch kleinere Fallstudien bearbeiten, sondern erfordern thematisch und chronologisch breit angelegte Querschnittsuntersuchungen mit einer entsprechend umfänglichen Quellengrundlage. Aus diesem Grund wird im Laufe des Projektes ein großes digitales Textkorpus angelegt, dessen Schwerpunkt Digitalisate von mehreren Regalkilometern an Verwaltungsschriftgut aus der Generalverwaltung der MPG und einzelnen Instituten bilden. Desweiteren werden thematisch spezialisierte Datenbestände wie eine Patent- und eine Personendatenbank sowie ein digitales Korpus mit Veröffentlichungen der MPG aufgebaut. Mit dafür entwickelten oder angepassten Tools [Kruse et al. (2015)] lassen sich so beispielsweise Konjunkturen von Forschungsthemen, unterschiedliche professionelle Netzwerke zwischen WissenschaftlerInnen und wissenschaftliche Karrierewege erforschen. Im Sinne der guten wissenschaftlichen Praxis
-                <ref n="6" target="vortrag-LANGEftn6" type="note">6</ref> sollen die Arbeitsergebnisse, also sowohl die digitalisierten und annotierten Quellen als auch alle statistischen Auswertungen, mindestens zehn Jahre nach Projektende abrufbar bleiben. ArCHO als digitales Findmittel und Analyseplattform ist daher mit einem Fokus auf langfristiger Verfügbarkeit von Forschungsdaten konzipiert worden. Dabei wurde eine Nachhaltigkeitsstrategie entwickelt, die der noch ungeklärten Aufgabenteilung zwischen Forschungseinrichtungen, Gedächtnisinstitutionen sowie Daten- und Rechenzentren bei der Langzeitarchivierung geisteswissenschaftlicher Forschungsdaten Rechnung trägt. Denn diese Aufgabe kann angesichts der großen technischen Komplexität und des Wartungsaufwandes für Virtuelle Forschungsinfrastrukturen sowie der großen Menge an vorzuhaltenden Daten nicht allein Gedächtnisinstitutionen wie wissenschaftlichen Archiven überantwortet werden. Andererseits sind Rechen- und Datenzentren nur bedingt dazu in der Lage, neben dem Archivrecht auch komplexe spezifische Zugangsregeln für einzelne Datenrepositorien umzusetzen. Daher ermöglicht es ArCHO mit einem verlässlichen Zugangsmanagement, dass die Forschungseinrichtung den Zugang selbst rechtssicher regeln kann. 
+<p>Die 
+                <ref target="http://www.nb.admin.ch/">
+<hi rend="italic">Schweizerische Nationalbibliothek</hi>
+</ref>
+<hi rend="italic"> NB</hi> ist eine Gedächtnisinstitution des Bundes. Gemeinsam mit anderen Bibliotheken, mit den Archiven und Museen trägt sie zur Erhaltung des kulturellen Erbes der Schweiz bei. Sie überliefert Texte, Bilder und Töne, die einen Bezug zur Schweiz haben, auf analogen und digitalen Trägern. Sie verfügt inzwischen über rund fünf Millionen Dokumente, die zum grössten Teil seit der Gründung des Bundesstaates 1848 entstanden sind. Zu der NB gehören das Schweizerische Literaturarchiv SLA, das Centre Dürrenmatt Neuchâtel CDN und die Fonoteca Nazionale FN.
             </p>
-<p>Die in ArCHO implementierte Zugangsverwaltung setzt auf eine starke Differenzierung von Nutzerrollen einerseits und von Bestandteilen einzelner Datensätze andererseits. Auf der Nutzerseite muss beispielsweise im Anwendungsfall GMPG unterschieden werden zwischen der wissenschaftlichen Öffentlichkeit, Forschern innerhalb des Forschungsvorhabens mit einem privilegierten Zugang zu den Aktenbeständen und einem Projektkollegium, das besonders sensible Datenbestände nach einer Einzelfallprüfung für die Forscher freigibt. Weitere Abstufungen von Zugangsrechten können sich aus spezifischen Aufgabenbereichen bei der Dateneingabe und -verwaltung ergeben [vgl. Neuroth et al. (2010), 16:14 ff.]. Die Aufgabe der Zugangsregelung muss auch nach Projektende weiter von dazu befugten Personen ausgeübt werden können und ist daher eine wichtiger Nachhaltigkeitsaspekt. Denn beispielsweise ist bei datenschutzrechtlich sensiblen Dokumenten mit Personenbezug, deren Sichtung durch Forscher der Einwilligung der betroffenen Personen bedarf, je nach konkreter rechtlicher Ausgestaltung diese Bewilligung an das Forschungsvorhaben und damit an dessen Laufzeit gebunden. Die Nutzungserlaubnis erlischt in diesen Fällen nach Projektende und entsprechend muss auch der digitale Zugang verwehrt werden. Auf der anderen Seite werden manche Akten erst nach Ende der Archivschutzfrist vollständig nutzbar, was in einer nachhaltigen Forschungsinfrastruktur ebenfalls berücksichtigt werden sollte. </p>
-<p>Auf der Datenseite ermöglicht ArCHO eine starke Differenzierung von einzelnen zu einem Dokument gehörenden Daten mit dem Ziel, unter Einhaltung der rechtlichen Vorgaben möglichst viele Informationen für die Forschung zur Verfügung zu stellen. So sind bei einer Personalakte mit sensiblen Inhalten möglicherweise die Signatur, Laufzeit und Angaben zur inhaltlichen Klassifikation durch das haltende Archiv nicht schutzwürdig, wohl aber der Volltext und der Titel. Es kann also je nach Bestand jedes Metadatum und jedes Derivat des Digitalisates (OCR-Erfassungen u.a.) eine andere Schutzwürdigkeit haben. Die Gesamtzahl dieser Regeln, die zwischen beliebigen Typen von (Meta-)Daten unterscheiden, und die Vielzahl von abgestuften Nutzerrechten führen zu einer Matrix aus Nutzerrollen und Teildatensätzen, deren einzelne Werte sich stets ändern können. Sie wird technisch realisiert durch einen sogenannten 
-                <hi rend="italic">Policy Decision Point</hi> (PDP). Dabei handelt es sich um ein außerhalb des eigentlichen Dokumentkorpus angesiedeltes und technisch eigenständiges Softwaremodul, das zwischen der Nutzer-Datenbank und dem Korpus vermittelt. 
+<p>In ihrer 
+                <hi rend="italic">Strategie</hi> stellt sich die NB den digitalen Herausforderungen und bekennt sich dazu, ihre Inhalte weltweit zugänglich machen zu wollen: „Quellen aus der Schweiz für die Welt.“ Damit soll jeder und jedem Einzelnen ermöglicht werden, diese Dokumente für die eigenen Bedürfnisse zu nutzen. Im Fokus sind dabei Personen, für die die Sammlung der NB von Bedeutung ist: Studierende, Fachleute und Forschende der Kulturwissenschaften, vor allem aber die Schweizer Bevölkerung. In strategischen Handlungsfeldern wird festgelegt, dass die Sammlung der NB leicht zu finden und einfach zu benutzen sein soll. Ausserdem wird der Anspruch formuliert, die Personen, die an unseren Beständen forschen mit Dienstleistungen und Beratung wirkungsvoll zu unterstützen. Im Fokus sind dabei die Literaturwissenschaft, die Schweizer Geschichte und die Auswertung von Bildbeständen.
             </p>
-<p>Die Umsetzung eines solchen Rechtemodells innerhalb einer ansonsten marktüblichen Webanwendung leistet den oben geschilderten Anforderungen aber noch nicht Genüge. Denn ein solches System wäre höchst verwundbar gegenüber Hacking-Angriffen. So ist denkbar, dass durch 
-                <hi rend="italic">Injection</hi>-Attacken sensible Teile der Datenbank, und im schlimmsten Fall sogar die Zugangsverwaltung, ausgelesen werden.
-                <ref n="7" target="vortrag-LANGEftn7" type="note">7</ref> Weiterhin stellt der Download größerer Mengen an Dateien im Projektalltag ein gewisses Risiko der ungewollten Weiterverbreitung dar und ist angesichts der notwendigen hohen Dokumentqualität auch recht zeitaufwändig. Eine sinnvolle Alternative ist daher eine Viewer-Anwendung, welche Dokumente bereits serverseitig so gut aufbereitet, dass ein kompletter Download vermieden werden kann. Die Anforderungen solch vergleichsweise komplexer Anwendungen an die Client-Software (i. A. Browser) können jedoch im Laufe der Zeit zu Inkompatibilitäten führen und somit die Nachhaltigkeit der gesamten Anwendung gefährden.
+<p>Ausgangslage für die Formulierung dieser strategischen Handlungsfelder war eine 
+                <hi rend="italic">Umfeldanalyse</hi>, bei der zwei Herausforderungen und einen Trend identifiziert worden waren. 
             </p>
-<p>Daher realisiert ArCHO auf der Ebene der Middleware mit Containern und Virtualisierung Architekturprinzipien, wie sie (aus zum Teil sehr verschiedenen Gründen) in der Diskussion um nachhaltige wissenschaftliche Software zur Zeit eine große Rolle spielen. 
-                <ref n="8" target="vortrag-LANGEftn8" type="note">8</ref> In der konkreten Implementierung wird erreicht, dass der Bildschirm des Nutzers einen per RDP-Protokoll bereitgestellten Virtuellen Desktop zeigt, der jeweils Einzelansichten von Dokumentseiten wiedergibt.
-                <ref n="9" target="vortrag-LANGEftn9" type="note">9</ref> Diese können nicht ohne Weiteres heruntergeladen werden. Auch ein programmatischer Zugriff auf die Datenbank ist nicht möglich, daher können Angreifer keinen massenhaften Abzug sensibler Daten erreichen. Außerdem wird die Webanwendung als solche technisch nachhaltig gemacht. Denn da sie sich in einem sehr stark abgeschlossenen System befindet, ist die technische Konfiguration des Client-Rechners zumindest mittelfristig fast ohne Belang. 
+<p>Eine 
+                <hi rend="italic">erste Herausforderung</hi> besteht darin, dass jede Informationssuche im Internet mit einer Suchmaschine beginnt – nicht mit einem Bibliothekskatalog, einer Archivdatenbank oder einem Portal von Gedächtnisinstitutionen. Dies entspricht der eigenen persönlichen Erfahrung und es wird durch diverse Studien (Eine Zusammenstellung der Befunde bei 
+                <hi rend="allcaps">Silipigni Connaway</hi> et al. 2010) bestätigt: Es ist auch bekannt, dass die Online-Enzyklopädie Wikipedia unter den ersten Treffern erscheint, sofern darin ein Artikel zum gesuchten Thema vorhanden ist. Die relevanten Metadaten und/oder Inhalte von Gedächtnisinstitutionen erscheinen – wenn überhaupt – viel weiter unten in der Liste der Suchresultate.
             </p>
-<p>Die geschilderte Kombination von Virtualisierung, Middleware-Containern und der feingranularen Zugangsverwaltung ist eine pragmatische Antwort auf das ungelöste Problem des rechtssicheren Zugangs zu schutzwürdigen digitalisierten Archivalien. Sie bietet eine Alternative zur räumlichen Zugangsbeschränkung auf Archivlesesäle. ArCHO soll dazu beitragen, die nachhaltige Nutzbarkeit von Daten, die in Forschungsprojekten erhoben wurden, über Orts- und Disziplingrenzen hinweg zu ermöglichen und damit eines der wesentlichen Versprechen der Digitalisierung in den Geisteswissenschaften einzulösen. </p>
+<p>Eine 
+                <hi rend="italic">andere Herausforderung</hi> sind die hohen Erwartungen der Benutzenden: Diese wollen nicht nur die Metadaten, also die Beschreibung von Inhalten finden, sondern auf diese jederzeit und von überall her zugreifen können, um sie sofort für die eigenen Zwecke verwenden zu können. 
+            </p>
+<p>Der Open-
+                <hi rend="italic">Trend</hi> ist eine Chance: Der Ruf nach Öffnung von Daten ist ein weltweiter Trend, die Rede ist von Open Access, Open Government Data, Open Data, OpenGLAM, usw. Gedächtnisinstitutionen – oder eben die mit dem Akronym GLAM gemeinten Galleries, Libraries, Archives and Museums – folgen bei der Erschliessung internationalen Standards und verwenden Normdaten. Ihre Metadaten, vor allem die bibliografischen Beschreibungen der Bibliotheken, gelten als qualitativ hoch stehend. Mit den fortwährenden Digitalisierungsbemühungen werden ausserdem laufend attraktive Inhalte auf verschiedenen Plattformen online gestellt. Communities wie die Wikipedianer, Open Data- und Public Domain-Aktivistinnen, sowie Forschende der Digital Humanities interessieren sich für diese Daten, sofern sich diese dank einer freien Lizenz problemlos weiterverwenden lassen.
+            </p>
+<p>Die 
+                <hi rend="italic">Umsetzung der Strategie</hi> hat zu neuen Handlungsfeldern und auch zu neuen Kooperationen geführt, die in diesem Vortrag vorgestellt werden sollen. 
+            </p>
+<p>Neue Kooperationen und Aktivitäten sind beispielsweise im Umfeld von 
+                <hi rend="italic">OpenGLAM</hi>
+<ref n="1" target="vortrag-VONWAftn1" type="note">1</ref> zu verzeichnen. 
+            </p>
+<list type="unordered">
+<item>Die NB strebt an, die eigenen Daten gemäss den von Open Knowledge International verabschiedeten Prinzipien sichtbar und für diverse Nutzungen möglichst frei verfügbar zu machen. Ausserdem soll die Nachnutzung der offenen Daten aktiv gefördert werden.</item>
+<item>Die NB stellt den Forschenden resp. allen an ihrer Sammlung interessierten Personen Metadaten, Normdaten, Digitalisate (Text und Bilder) und originär digitale Ressourcen (Webseiten, e-Medien) zur Verfügung. Die Daten werden nach Möglichkeit offen, ohne organisatorische, technische oder finanzielle Hürden zur Verfügung gestellt. Zusätzlich zum eigenen Bibliothekssystem und der eigenen Archivdatenbank werden dafür gut sichtbare, stark frequentierte Plattformen wie die Mediendatenbank der Online-Enzyklopädie Wikipedia, Wikimedia Commons oder das Portal für Schweizer Behördendaten opendata.swiss verwendet. </item>
+<item>Um die Nutzung der Daten zu fördern und mit interessierten Communities in Kontakt zu treten, beherbergte die NB 2015 den ersten Kulturdaten-Hackathon in der Schweiz, an dem auch Forschende der Digital Humanities teilnahmen. Der an diesem Hackathon entwickelte Prototyp Gugelmann-Galaxy zeigt exemplarisch, welche unerwarteten, innovativen Nutzungen „geschehen“ können wenn Gedächtnisinstitutionen gezielt Teile ihrer Sammlung aus den Datensilos befreien und der Öffentlichkeit zur Weiterverwendung überlassen.</item>
+<item>Grundlage für diese OpenGLAM-Aktivitäten waren einerseits die 2012 verabschiedete Open-Data-Strategie der NB, andererseits die 2013 abgeschlossene Kooperationsvereinbarung mit Wikimedia Schweiz. Nachdem die NB beschlossen hatte, ihre Metadaten und Inhalte „möglichst offen“ zur Verfügung zu stellen, war der Weg frei, mit Wikimedia Schweiz eine langfristige Zusammenarbeit zu vereinbaren und als erste Massnahme temporär zwei Wikipedians in Residence (vgl. 
+                    <ref target="cite_note-Outreach-18">https://en.wikipedia.org/wiki/Wikipedian_in_residence#cite_note-Outreach-18</ref> ) zu beherbergen.
+                </item>
+</list>
+<p>Ein weiteres Handlungsfeld ist im Bereich der 
+                <hi rend="italic">digitalen Erschliessung</hi> entstanden. Hier stehen laufendende Kooperationen mit Akteuren der Schweizer Geschichtswissenschaft im Fokus, deren Unterstützung, u.a. durch die Weiterentwicklung der von der NB herausgegebene Bibliographie der Schweizer Geschichte BSG, ein strategisches Ziel darstellt. 
+            </p>
+<list type="unordered">
+<item>Ein wichtiges Projekt in diesem Bereich ist Metagrid
+                    <ref n="2" target="vortrag-VONWAftn2" type="note">2</ref> bei welchem die NB seit Beginn des Projekts als Projektpartner beteiligt ist. Der Webservice Metagrid ermöglicht die Einrichtung, Verwaltung und Analyse von Links zwischen identischen Identitäten von verschiedenen Websites und Datenbanken. Seit Sommer 2016 sind der Katalog Helveticat und die BSG in Metagrid integriert und via Metagrid-Widget abrufbar. Zur Zeit beschränkt sich der Webservice auf Personennamen. Die NB liefert dem Webservice Namen von Autoren und Persönlichkeiten, welche mit einer GND-Nummer verknüpft sind. Auf diese Weise können andere Projektpartner von Metagrid die eindeutige, in der Bibliothekswelt weit verbreitete Identifikationsnummer direkt übernehmen.
+                </item>
+<item>In einem Pilotprojekt mit der Rechtsquellenstiftung des Schweizerischen Juristenvereins werden seit 2015 von der Rechtsquellenstiftung für deren Online-Editionen benötigte Literatur in der Datenbank der BSG erfasst, resp. die schon in der BSG vorhandenen Katalogisate angepasst.
+                    <ref n="3" target="vortrag-VONWAftn3" type="note">3</ref> Dank dieser Kooperation können Doppelspurigkeiten bei der Literaturerfassung vermieden, durch die gegenseitige Verlinkung die Visibilität der verschiedenen Projekte erhöht und die weiterführende Recherche für die Benutzenden vereinfacht werden. Die BSG entwickelt sich dadurch von einem auf blosse bibliografische Nachweise orientierten Literaturverzeichnis hin zu einem „Literaturportal“ oder „Informationsraum“ für Literatur zur Schweizer Geschichte (Wissen 2008: 223ff.). Datenbanken mit historischem Content erhalten so die Möglichkeit, Literaturnachweise zur Schweizer Geschichte in der BSG zu holen, zu verlinken und barrierefrei nachzunutzen.
+                </item>
+</list>
+<p>Im Vortrag werden ausgewählte Resultate präsentiert, die für Forschende der Digital Humanities potentiell von Interesse sein könnten, wie zum Beispiel die Inhalte der NB auf Wikimedia 
+                <ref target="https://commons.wikimedia.org/wiki/Category:Media_contributed_by_the_Swiss_National_Library">Commons</ref>, 
+                <ref target="https://opendata.swiss/de/organization/schweizerische-nationalbibliothek-nb">opendata.swiss</ref> oder dem Pilotportal 
+                <ref target="/start">Linked Data Service LINDAS</ref>, der Prototyp 
+                <ref target="http://www.mathiasbernhard.ch/gugelmann-galaxy/">Gugelmann-Galaxy</ref>, Verwendungen des Webservices 
+                <ref target="http://www.metagrid.ch/">Metagrid</ref> und die Veranstaltung 
+                <ref target="program; http://make.opendata.ch/wiki/event:2016-07">Open Cultural Data Hackathon</ref>. Ausserdem wird die 
+                <ref target="gid=145&amp;month=201606">Nutzung</ref> resp. der Nutzen aus Sicht der NB thematisiert und ein vorläufiges Fazit gezogen. Am Schluss wird bezüglich den Handlungsfeldern und den Kooperationen ein Ausblick in die nähere und fernere Zukunft gewagt.
+            </p>
 </body>
-<back><div type="Notes"><note n="1" xml:id="vortrag-LANGEftn1"> Als Beispiel einer über die Geisteswissenschaften hinausgehenden, internationalen Initiative sei die Arbeit der Research Data Alliance genannt: https://rd-alliance.org/ [letzter Zugriff 20. August 2016].</note><note n="2" rend="footnote text" xml:id="vortrag-LANGEftn2"> S. hierzu die „Berlin Declaration on Open Access to Knowledge in the Sciences and Humanities“, die auch vom MPI für Wissenschaftsgeschichte unterstützt wird: https://openaccess.mpg.de/Berlin-Declaration [letzter Zugriff 20. August 2016].</note><note n="3" rend="footnote text" xml:id="vortrag-LANGEftn3"> Z. B. das „GESIS Secure Data Center“: http://www.gesis.org/en/services/data-analysis/data-archive-service/secure-data-center-sdc/ [letzter Zugriff 26.11. 2016].</note><note n="4" xml:id="vortrag-LANGEftn4"> ArCHO befindet sich zum Zeitpunkt der Abfassung im Stadium eines Prototypen und wird in der Projektlaufzeit zu einem generischen Service erweitert.</note><note n="5" xml:id="vortrag-LANGEftn5"> http://gmpg.mpiwg-berlin.mpg.de [letzter Zugriff 20. August 2016].</note><note n="6" xml:id="vortrag-LANGEftn6"> Vgl. die Empfehlung 7 der Denkschrift „Sicherung guter wissenschaftlicher Praxis“ der DFG: http://www.dfg.de/download/pdf/dfg_im_profil/reden_stellungnahmen/download/empfehlung_wiss_praxis_1310.pdf [letzter Zugriff 20. August 2016].</note><note n="7" xml:id="vortrag-LANGEftn7"> Dieses für die meisten historischen Quellenkorpora absurd klingende Szenario ist im Bereich der Zeitgeschichte durchaus als denkbar anzunehmen. </note><note n="8" xml:id="vortrag-LANGEftn8"> Beachte z. B. die thematische Ausrichtung des FORGE-2016-Workshops: https://www.gwiss.uni-hamburg.de/gwin/ueber-uns/forge2016.html [letzter Zugriff 20. August 2016].</note><note n="9" xml:id="vortrag-LANGEftn9"> Die Desktop-Virtualisierung wird mit Apache Guacamole realisiert: https://guacamole.incubator.apache.org [letzter Zugriff 20. August 2016].</note></div>
+<back><div type="Notes"><note n="1" rend="footnote text" xml:id="vortrag-VONWAftn1"> OpenGLAM ist eine Initiative von Open Knowledge International die eine Öffnung der Gedächtnisinstitutionen propagiert. Das Schweizer Chapter von Open Knowledge International ist der Verein 
+                        <ref target="http://opendata.ch/organisation/">opendata.ch</ref>.
+                    </note><note n="2" rend="footnote text" xml:id="vortrag-VONWAftn2"> Metagrid ist ein Projekt der Schweizerischen Akademie der Geisteswissenschaften SAGW, durchgeführt von den Diplomatischen Dokumenten der Schweiz DDS mit der Unterstützung des Historischen Lexikons der Schweiz HLS. Vgl. www.metagrid.ch</note><note n="3" rend="footnote text" xml:id="vortrag-VONWAftn3"> Im Rechtsquellenportal des Staatsarchivs Zürich werden die in der Datenbank BSG bearbeiteten bibliografischen Aufnahmen im Literaturverzeichnis abgebildet (
+                            <ref target="http://www.rechtsquellen-online.zh.ch/startseite/literaturverzeichnis">http://www.rechtsquellen-online.zh.ch/startseite/literaturverzeichnis</ref>). In der Personendatenbank der Rechtsquellenstiftung hingegen werden für weiterführende Literatur direkt Links auf die Datenbank BSG gesetzt (https://www.ssrq-sds-fds.ch/persons-db/?query=per001666&amp;query-type=perid).
+                        </note></div>
 <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-<hi rend="bold">Fornaro , Peter R. / Rosenthaler, Lukas</hi> (2016): 
-                        „File Formats for Archiving: Stability and Persistence Issues“, 
+<hi rend="bold">Estermann, Beat</hi> (2015): 
+                        „Diffusion of Open Data and Crowdsourcing among Heritage Institutions. Based on data from Finland, Poland, Switzerland, and The Netherlands“,
                         in: 
-                        <hi rend="italic">DH2016: Conference Abstracts</hi> 507–508.
+                        <hi rend="italic">EGPA 2015 Conference</hi>
+<ref target="http://survey.openglam.ch/publications/EGPA2015_Estermann_Diffusion_of_Open_Data_and_Crowdsourcing_among_Heritage_Institutions_20150901.pdf">http://survey.openglam.ch/publications/EGPA2015_Estermann_Diffusion_of_Open_Data_and_Crowdsourcing_among_Heritage_Institutions_20150901.pdf</ref> [letzter Zugriff 26. August 2016].
                     </bibl>
 <bibl>
-<hi rend="bold">Kruse, Sebastian / Schmaltz, Florian / Stiller, Juliane / Wintergrün, Dirk</hi> (2015): 
-                        „Herausforderung ‚Big Data’ in der historischen Forschung“, 
-                        in: 
-                        <hi rend="italic">DHd 2015: Von Daten zu Erkenntnissen</hi> 171–174 
-                        <ref target="https://dhd2015.uni-graz.at/de/nachlese/book-of-abstracts">https://dhd2015.uni-graz.at/de/nachlese/book-of-abstracts</ref> [letzter Zugriff 20. August 2016].
+<hi rend="bold">Estermann, Beat</hi> (2013): 
+                        <hi rend="italic">Swiss Heritage Institutions in the Internet Era: Results of a pilot survey on open data and crowdsourcing, 2013</hi>.
+                        <ref target="http://espace.okfn.org/items/show/226">http://espace.okfn.org/items/show/226</ref> [letzter Zugriff 26. August 2016].
                     </bibl>
 <bibl>
-<hi rend="bold">Neuroth, Heike / Oßwald, Achim / Scheffel, Regine / Strathmann, Stefan / Huth, Karsten</hi> (2010): 
-                        <hi rend="italic">nestor-Handbuch: Eine kleine Enzyklopädie der digitalen Langzeitarchivierung</hi>. 
-                        Göttingen: Niedersächsische Staats- und Universitätsbibliothek Göttingen
-                        <ref target="http://www.nestor.sub.uni-goettingen.de/handbuch/index.php">http://www.nestor.sub.uni-goettingen.de/handbuch/index.php</ref> [letzter Zugriff 20. August 2016].
+<hi rend="bold">Johnson, Larry / Adams Becker, Samantha / Estrada, Victoria / Freeman, Alex</hi> (2015):
+                        <hi rend="italic">NMC Horizon Report: 2015 Library Edition</hi>.
+                        Austin, Texas: The New Media Consortium
+                        <ref target="http://www.nmc.org/publication/nmc-horizon-report-2015-library-edition/">http://www.nmc.org/publication/nmc-horizon-report-2015-library-edition/</ref> [letzter Zugriff 26. August 2016].
                     </bibl>
 <bibl>
-<hi rend="bold">Plassmann, Max</hi> (2016): 
-                        „Archiv 3.0? Langfristige Perspektiven digitaler Nutzung“, 
-                        in: 
-                        <hi rend="italic">Archivar. Zeitschrift für Archivwesen</hi> 3: 219–223 
-                        <ref target="http://www.archive.nrw.de/archivar/hefte/2016/Ausgabe_3/Archivar_3_2016.pdf">http://www.archive.nrw.de/archivar/hefte/2016/Ausgabe_3/Archivar_3_2016.pdf</ref> [letzter Zugriff 20. November 2016].
+<hi rend="bold">Koller, Guido</hi> (2016): 
+                        <hi rend="italic">Geschichte digital. Historische Welten neu vermessen</hi>.
+                        Stuttgart: W. Kohlhammer.
                     </bibl>
+<bibl>
+                        „<hi rend="bold">GLAM &amp; Wikimedia</hi>“, 
+                        in: 
+                        <hi rend="italic">arbido</hi>, Ausgabe 3, 3. September 2015 
+                        <ref target="http://www.arbido.ch/userdocs/arbidoprint/arbido_2015_3_low.pdf">http://www.arbido.ch/userdocs/arbidoprint/arbido_2015_3_low.pdf</ref> [letzter Zugriff 26. August 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold">Open Knowledge Foundation</hi> (2013): 
+                        <hi rend="italic">OpenGLAM Principles</hi>.
+                        <ref target="http://openglam.org/principles/">http://openglam.org/principles/</ref> [letzter Zugriff 26. August 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold">Sanderhoff, Merete</hi> (ed.) (2014): 
+                        <hi rend="italic">Sharing is caring. Openness and sharing in the cultural heritage sector</hi>. 
+                        <ref target="http://www.smk.dk/en/about-smk/smks-publications/sharing-is-caring/">http://www.smk.dk/en/about-smk/smks-publications/sharing-is-caring/</ref> [letzter Zugriff 26. August 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold">Pekel, Joris</hi> (2014): 
+                        <hi rend="italic">Democratising the Rijksmuseum</hi>, Europeana Foundation 
+                        <ref target="http://espace.okfn.org/items/show/260">http://espace.okfn.org/items/show/260</ref> [letzter Zugriff 26. August 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold">Schweizerische Nationalbibliothek</hi> (2014): 
+                        <hi rend="italic">Strategie 2012 – 2019</hi>, Version 2014
+                        <ref target="38;download=NHzLpZeg7t,lnp6I0NTU042l2Z6ln1acy4Zn4Z2qZpnO2Yuq2Z6gpJCEdoR3fWym162epYbg2c_JjKbNoKSn6A--">http://www.nb.admin.ch/org/00779/index.html?lang=de&amp;download=NHzLpZeg7t,lnp6I0NTU042l2Z6ln1acy4Zn4Z2qZpnO2Yuq2Z6gpJCEdoR3fWym162epYbg2c_JjKbNoKSn6A--</ref> [letzter Zugriff 26. August 2016].
+                    </bibl>
+<bibl>
+<hi rend="citation-url">Silipigni Connaway, Lynn / Dickley, Timothy J.</hi> (2010): 
+                        <hi rend="italic">The Digital Information Seeker</hi>: Report of the Findings from Selected OCLC, RIN, and JISC User Behaviour Projects
+                        <ref target="http://www.jisc.ac.uk/media/documents/publications/reports/2010/digitalinformationseekerreport.pdf">http://www.jisc.ac.uk/media/documents/publications/reports/2010/digitalinformationseekerreport.pdf</ref> [letzter Zugriff 26. August 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold">Terrass, Melissa</hi> (2016): 
+                        <hi rend="italic">Opening Access to Collections: the Making and Using of Open Digitised Cultural Content</hi>.
+                        <ref target="http://espace.okfn.org/items/show/259">http://espace.okfn.org/items/show/259</ref> [letzter Zugriff 26. August 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold italic">The Europeana Public Domain Charter</hi> (2010): 
+                        <ref target="http://pro.europeana.eu/files/Europeana_Professional/Publications/Public%20Domain%20Charter%20-%20DE.pdf">http://pro.europeana.eu/files/Europeana_Professional/Publications/Public%20Domain%20Charter%20-%20DE.pdf</ref> [letzter Zugriff 26. August 2016].
+                    </bibl>
+<bibl>
+<hi rend="bold">Wissen, Dirk</hi> (2008): 
+                        <hi rend="italic">Zukunft der Bibliographie – Bibliographie der Zukunft. Eine Expertenbefragung mittels Delphi-Technik in Archiven und Bibliotheken in Deutschland, Österreich und der Schweiz</hi>. 
+                        Berlin: Logos.</bibl>
 </listBibl>
 </div>
 </back>

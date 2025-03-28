@@ -1,30 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="DUNST_Alexander_Hin_zu_einer_Visuellen_Stilometrie__Automati">
+     xml:id="REITER_Nils_Maschinelles_Lernen_lernen__Ein_CRETA_Hackatoria">
    <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Hin zu einer Visuellen Stilometrie: Automatische Genre- und Autorunterscheidung in graphischen Narrativen</title>
+                <title>Maschinelles Lernen lernen: Ein CRETA-Hackatorial zur reflektierten automatischen Textanalyse</title>
                 <author>
                     <persName>
-                        <surname>Dunst</surname>
-                        <forename>Alexander</forename>
+                        <surname>Reiter</surname>
+                        <forename>Nils</forename>
                     </persName>
-                    <affiliation>Universität Paderborn, Deutschland</affiliation>
-                    <email>alexander.dunst@gmail.com</email>
+                    <affiliation>Institut für Maschinelle Sprachverarbeitung, Universität Stuttgart, Deutschland</affiliation>
+                    <email>nils.reiter@ims.uni-stuttgart.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Hartel</surname>
-                        <forename>Rita</forename>
+                        <surname>Ketschik</surname>
+                        <forename>Nora</forename>
                     </persName>
-                    <affiliation>Universität Paderborn, Deutschland</affiliation>
-                    <email>rst@upb.de</email>
+                    <affiliation>Institut für Literaturwissenschaft, Universtität Stuttgart, Deutschland</affiliation>
+                    <email>nora.ketschik@ilw.uni-stuttgart.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kremer</surname>
+                        <forename>Gerhard</forename>
+                    </persName>
+                    <affiliation>Institut für Maschinelle Sprachverarbeitung, Universität Stuttgart, Deutschland</affiliation>
+                    <email>gerhard.kremer@ims.uni-stuttgart.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schulz</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <affiliation>Institut für Maschinelle Sprachverarbeitung, Universität Stuttgart, Deutschland</affiliation>
+                    <email>sarah.schulz@ims.uni-stuttgart.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2017-09-25T08:15:00Z</date>
+                    <date>2017-09-18T13:49:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -53,126 +69,220 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag</term>
+                    <term>Workshop</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Bildanalyse</term>
-                    <term>Stilometrie</term>
-                    <term>Corpus</term>
-                    <term>multimodale Medien</term>
-                    <term>Comics</term>
+                    <term>Shared task</term>
+                    <term>training</term>
+                    <term>maschinelles Lernverfahren</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Bilderfassung</term>
                     <term>Programmierung</term>
-                    <term>Stilistische Analyse</term>
-                    <term>Bilder</term>
-                    <term>Multimodale Kommunikation</term>
+                    <term>Modellierung</term>
+                    <term>Annotieren</term>
+                    <term>Methoden</term>
+                    <term>Text</term>
                 </keywords>
             </textClass>
         <settingDesc>
             <ab n="conference">DHd2018 - "Kritik der Digitalen Vernunft", Köln</ab>
-            <ab n="paperID">213</ab>
-            <ab n="session_ID">123</ab>
-            <ab n="session_numberInSession">2</ab>
-            <ab n="session_short">VP_4b</ab>
-            <ab n="session_title">Der sehende Computer I</ab>
-            <ab n="session_start">2018-03-01 09:00</ab>
-            <ab n="session_end">2018-03-01 10:30</ab>
+            <ab n="paperID">121</ab>
+            <ab n="session_ID">19</ab>
+            <ab n="session_numberInSession">1</ab>
+            <ab n="session_short">Workshop_3a</ab>
+            <ab n="session_start">2018-02-26 14:00</ab>
+            <ab n="session_end">2018-02-26 15:30</ab>
          </settingDesc>
       </profileDesc>
     </teiHeader>
    <text>
         <body>
             <div type="div1" rend="DH-Heading1">
-                <head>1. Einleitung</head>
-                <p>Stilometrische Untersuchungen haben eine lange Tradition in der Literaturwissenschaft und erleben mit der Digitalisierung von Textkorpora und Analysemethoden in den letzten drei Jahrzehnten einen erneuten Aufschwung (Holmes und Calle-Martín &amp; Miranda-García). Ähnliche Tendenzen sind in den vergangenen Jahren auch in der Kunstgeschichte zu verzeichnen (Kohle; Qu, Taeb &amp; Hughes; Manovich). Im Gegensatz dazu sind stilometrische Untersuchen visueller Erzählungen noch nicht etabliert. In den Bereich visueller, oder multimodaler, Narrative fallen etwa Comics, Filme und Fernsehserien, aber auch zu einem gewissen Grad Computerspiele, und damit viele der populärsten Erzählformen des 20. und 21. Jahrhunderts. Das Fehlen einschlägiger Forschung gründet einerseits auf die technischen Herausforderungen digitaler Bildanalyse, andererseits auf den Fokus auf qualitative und ideologiekritische Zugänge in großen Teilen der Medien- und Kulturwissenschaft. Auf Basis eines Corpus von 138 graphischen Romanen (Comicbüchern in Romanlänge) stellt unser Vortrag eine Methode zur automatischen Genre- und Autorunterscheidung vor. Weiters erörtern wir die Herausforderungen stilometrischer Methoden für Erzählformen, die Text und Bild kombinieren, und diskutieren abschließend die potenzielle Übertragbarkeit des vorgestellten Zugangs auf andere Medien.
+                <head>Einleitung</head>
+                <p>Das Ziel dieses Tutorials ist es, den Teilnehmerinnen und Teilnehmern konkrete und praktische Einblicke in einen Standardfall automatischer Textanalyse zu geben. Am Beispiel der automatischen Erkennung von Entitätenreferenzen gehen wir auf allgemeine Annahmen, Verfahrensweisen und methodische Standards bei maschinellen Lernverfahren ein. Die Teilnehmerinnen und Teilnehmer können beim Bearbeiten von lauffähigem Programmiercode den Entscheidungsraum solcher Verfahren ausleuchten und austesten. Es werden dabei keinerlei Vorkenntnisse zu maschinellem Lernen oder Programmierkenntnisse vorausgesetzt.</p>
+                <p>Es gibt keinen Grund, den Ergebnissen von maschinellen Lernverfahren im Allgemeinen und NLP-Tools im Besonderen blind zu vertrauen. Durch die konkreten Einblicke in den "Maschinenraum" von maschinellen Lernverfahren wird den Teilnehmenden ermöglicht, das Potenzial und die Grenzen statistischer Textanalysewerkzeuge realistischer einzuschätzen. Mittelfristig hoffen wir dadurch, den immer wieder auftretenden Frustrationen beim Einsatz automatischer Verfahren für die Textanalyse und deren teilweise wenig zufriedenstellender Ergebnis-Daten zu begegnen, aber auch die Nutzung und Interpretation der Ergebnisse von maschinellen Lernverfahren (d.h. in erster Linie von automatisch erzeugten Annotationen) zu fördern. Zu deren adäquater Nutzung, etwa in hermeneutischen Interpretationsschritten, ist der Einblick in die Funktionsweise der maschinellen Methoden unerlässlich. Insbesondere ist die Art und Herkunft der Trainingsdaten für die Qualität der maschinell produzierten Daten von Bedeutung, wie wir im Tutorial deutlich machen werden.</p>
+                <p>Neben einem Python-Programm für die automatische Annotierung von Entitätenreferenzen, mit und an dem während des Tutorials gearbeitet werden wird, stellen wir ein heterogenes, manuell annotiertes Korpus sowie die Routinen zur Evaluation und zum Vergleich von Annotationen zu Verfügung. Das Korpus enthält Entitätenreferenzen, die im "Center for Reflected Text Analytics" (CRETA)
+                    <ref target="ftn1" n="1"/> in den letzten zwei Jahren annotiert wurden, und deckt Texte verschiedener Disziplinen und Sprachstufen ab.
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>2. Datenbasis &amp; Methode</head>
-                <p>Die Basis der Untersuchungen stellt das erste repräsentative Corpus graphischer Romane dar, dass sich derzeit im Aufbau befindet (Dunst, Hartel &amp; Laubrock). Zum Zeitpunkt der Untersuchungen im Mai 2017 waren 160 Volltexte digitalisiert; davon wurden aufgrund mangelnder Scanqualität bei einigen Titeln 138 Bücher mit einer Gesamtmenge von rund 33.000 Seiten für die Corpusstudie herangezogen. Der Fokus auf Bildanalyse ergab sich dabei sowohl aus methodischen als auch aus praktischen Überlegungen: einerseits sind Methoden zur stilometrischen Textanalyse bereits etabliert und werden laufend weiterentwickelt. Viele davon lassen sich direkt auf Comicstext anwenden oder dafür adaptieren. Andererseits bereitet eine zuverlässige, automatisierte Textlokalisierung und -Erkennung in Comics weiterhin Probleme. Damit bleibt derzeit nur der Weg über eine semi-automatische und zeitintensive Textannotation. Für größere Korpora bietet sich diese Methode daher nicht an. Drei visuelle Maße stellten die Basis unserer Berechnungen dar. Für all diese Maße wurde das Bild zunächst mithilfe einer linearen Näherung der Luminanz in eine Graustufen-Darstellung des Bildes umgewandelt. 
+            <div xml:id="entitätenreferenzen" type="div1" rend="DH-Heading1">
+                <head>Entitätenreferenzen</head>
+                <p>Als empirisches Phänomen befassen wir uns mit dem Konzept der Entität und ihrer Referenz. Das Konzept steht für verschiedene linguistische und semantische Kategorien, die im Rahmen der Digital Humanities von Interesse sind. Es ist bewusst weit gefasst und damit anschlussfähig für verschiedene Forschungsfragen aus den geistes- und sozialwissenschaftlichen Disziplinen. Auf diese Weise können unterschiedliche Perspektiven auf Entitäten berücksichtigt werden. Insgesamt werden in den ausgewählten Texten fünf verschiedene Entitätenklassen betrachtet: PER (Personen/Figuren), LOC (Orte), ORG (Organisationen), EVT (Ereignisse) und WRK (Werke).</p>
+                <p>Unter Entitätenreferenzen verstehen wir Ausdrücke, die auf eine Entität in der realen oder fiktiven Welt referieren. Das sind zum einen Eigennamen (Named Entities, z.B. "Peter"), zum anderen Gattungsnamen (z.B. "der Bauer"), sofern diese sich auf eine konkrete Instanz der Gattung beziehen. Dabei wird als Referenzausdruck immer die maximale Nominalphrase (inkl. Artikel, Attribut) annotiert. Pronominale Entitätenreferenzen werden hingegen nicht annotiert.</p>
+                <p>In 
+                    <hi rend="bold">literarischen Texten</hi> sind vor allem Figuren und Räume als grundlegende Kategorien der erzählten Welt von Interesse. Über die Annotation von Figurenreferenzen können u.a. Figurenkonstellationen und -relationen betrachtbar gemacht sowie Fragen zur Figurencharakterisierung oder Handlungsstruktur angeschlossen werden. Spätestens seit dem 
+                    <hi rend="italic">spatial turn</hi> rückt auch der Raum als relevante Entität der erzählten Welt in den Fokus. Als "semantischer Raum" (Lotmann, 1972) übernimmt er eine strukturierende Funktion und steht in Wechselwirkung mit Aspekten der Figur.
                 </p>
+                <p>In den 
+                    <hi rend="bold">Sozialwissenschaften</hi> sind politische Parteien und internationale Organisationen seit jeher zentrale Analyseobjekte der empirischen Sozialforschung. Die Annotation der Entitäten der Klassen ORG, PER und LOC in größeren Textkorpora ermöglicht vielfältige Anschlussuntersuchungen, unter anderem zur Sichtbarkeit oder Bewertung bestimmter Instanzen, beispielsweise der Europäischen Union.
+                </p>
+            </div>
+            <div xml:id="text-korpus" type="div1" rend="DH-Heading1">
+                <head>Textkorpus</head>
+                <p>Die Grundlage für (überwachte) maschinelle Lernverfahren bilden Annotationen. Um die Annotierung von Entitätenreferenzen automatisieren zu können, bedarf es Textdaten, die die Vielfalt des Entitätenkonzepts abdecken. Bei diesem Tutorial werden wir auf Annotationen zurückgreifen, die im Rahmen von CRETA an der Universität Stuttgart entstanden sind (cf. Blessing et al., 2017; Reiter et al., 2017a). Das Korpus enthält literarische Texte aus zwei Sprachstufen des Deutschen (Neuhochdeutsch und Mittelhochdeutsch) sowie ein sozialwissenschaftliches Teilkorpus.
+                    <ref target="ftn2" n="2"/>
+                </p>
+                <p>Der 
+                    <hi rend="italic bold">Parzival</hi>
+                    <hi rend="bold"> Wolframs von Eschenbach</hi> ist ein arthurischer Gralroman in mittelhochdeutscher Sprache, entstanden zwischen 1200 und 1210. Der 
+                    <hi rend="italic">Parzival</hi> zeichnet sich u.a. durch sein enormes Figureninventar und seine komplexen genealogischen Strukturen aus, wodurch er für Analysen zu Figurenrelationen von besonderem Interesse ist. Der Text ist in 16 Bücher unterteilt und umfasst knapp 25.0000 Verse.
+                </p>
+                <p>
+                    <hi rend="bold">Johann Wolfgang von Goethes </hi>
+                    <hi rend="italic bold">Die Leiden des jungen Werthers</hi> ist ein Briefroman aus dem Jahr 1774. Unsere Annotationen sind an einer überarbeiteten Fassung von 1787 vorgenommen und umfassen die einleitenden Worte des fiktiven Herausgebers sowie die ersten Briefe von Werther an seinen Freund Wilhelm.
+                </p>
+                <p>Das 
+                    <hi rend="bold">Plenardebattenkorpus des deutschen Bundestages</hi> besteht aus den von Stenografinnen und Stenografen protokollierten Plenardebatten des Bundestages und umfasst 1.226 Sitzungen zwischen 1996 und 2015.
+                    <ref target="ftn3" n="3"/> Unsere Annotationen beschränken sich auf Auszüge aus insgesamt vier Plenarprotokollen, die inhaltlich Debatten über die Europäische Union behandeln. Hierbei wurde pro Protokoll jeweils die gesamte Rede eines Politikers bzw. einer Politikerin annotiert.
+                </p>
+            </div>
+            <div xml:id="ablauf" type="div1" rend="DH-Heading1">
+                <head>Ablauf</head>
+                <p>Der Ablauf des Tutorials orientiert sich an sog. 
+                    <hi rend="italic">shared tasks</hi> aus der Computerlinguistik, wobei der Aspekt des Wettbewerbs im Tutorial vor allem spielerischen Charakter hat. Bei einem traditionellen 
+                    <hi rend="italic">shared task</hi> arbeiten die teilnehmenden Teams, oft auf Basis gleicher Daten, an Lösungen für eine einzelne gestellte Aufgabe. Solch eine definierte Aufgabe kann z.B. 
+                    <hi rend="italic">part of speech-tagging</hi> sein. Durch eine zeitgleiche Evaluation auf demselben Goldstandard können die entwickelten Systeme direkt verglichen werden. In unserem Tutorial setzen wir dieses Konzept live und vor Ort um.
+                </p>
+                <p>Zunächst diskutieren wir kurz die zugrundeliegenden Texte und deren Annotierung. Annotationsrichtlinien werden den Teilnehmerinnen und Teilnehmern im Vorfeld zur Verfügung gestellt. Im Rahmen der Einführung wird auch auf die konkrete Organisation der Annotationsarbeit eingegangen, so dass das Tutorial als Blaupause für zukünftige Tätigkeiten der Teilnehmenden in diesem und ähnlichen Arbeitsfeldern dienen kann.</p>
+                <p>Die Teilnehmerinnen und Teilnehmer versuchen selbständig und unabhängig voneinander, eine Kombination aus maschinellen Lernverfahren, Merkmalsmenge und Parametersetzungen zu finden, die auf einem neuen, vom automatischen Lernverfahren ungesehenen Datensatz zu den Ergebnissen führt, die dem Goldstandard der manuellen Annotation am Ähnlichsten sind. Das bedeutet konkret, dass der Einfluss von berücksichtigten Features (z.B. Groß- und Kleinschreibung oder Wortlänge) auf die Erkennung von Entitätenreferenzen empirisch getestet werden kann. Dabei sind Intuitionen über die Daten und das annotierte Phänomen hilfreich, da simplem Durchprobieren aller möglichen Kombinationen (``brute force'') zeitlich Grenzen gesetzt sind.</p>
+                <p>Wir verzichten bewusst auf eine graphische Benutzerschnittstelle (cf. Reiter et al., 2017b) -- stattdessen editieren die Teilnehmerinnen und Teilnehmer das (Python)-Programm direkt, nach einer Einführung und unter Anleitung. Vorkenntnisse in Python sind dabei nicht nötig: Das von uns zur Verfügung gestellte Programm ist so aufgebaut, dass auch Python-Neulinge relativ schnell die zu bearbeitenden Teile davon verstehen und damit experimentieren können. Wer bereits Erfahrung im Python-Programmieren hat, kann fortgeschrittene Funktionalitäten des Programms verwenden.</p>
+                <p>Wie am Ende jedes maschinellen Lernprozesses wird auch bei uns abschließend eine Evaluation der automatisch generierten Annotationen durchgeführt. Hierfür werden den Teilnehmerinnen und Teilnehmern nach Ablauf einer begrenzten Zeit des Experimentierens und Testens (etwa 60 Minuten) die finalen, vorher unbekannten Testdaten zur Verfügung gestellt. Auf diese Daten werden die erstellten Modelle angewendet, um automatisch Annotationen zu erzeugen. Diese wiederum werden dann mit dem Goldstandard verglichen, wobei die verschiedenen Entitätenklassen sowie Teilkorpora getrennt evaluiert werden. Auch das Programm zur Evaluation stellen wir bereit.</p>
+            </div>
+            <div xml:id="lernziele" type="div1" rend="DH-Heading1">
+                <head>Lernziele</head>
+                <p>Am hier verwendeten Beispiel der automatischen Annotation von Entitätenreferenzen demonstrieren wir, welche Schritte für die Automatisierung einer Textanalyseaufgabe mittels maschinellen Lernverfahren nötig sind und wie diese konkret implementiert werden können. Die Teilnehmerinnen und Teilnehmer bekommen einen zusammenhängenden Überblick von der manuellen Annotation ausgewählter Texte über die Feinjustierung der Lernverfahren bis zur Evaluation der Ergebnisse. Die vorgestellte Vorgehensweise für den gesamten Ablauf ist grundsätzlich auf ähnliche Projekte übertragbar.</p>
+                <p>Das Tutorial schärft dabei das Verständnis für den Zusammenhang zwischen untersuchtem Konzept und den dafür relevanten Features, die in ein statistisches Lernverfahren einfließen. Durch Einblick in die technische Umsetzung bekommen die Teilnehmerinnen und Teilnehmer ein Verständnis für die Grenzen und Möglichkeiten der Automatisierung, das sie dazu befähigt, zum einen das Potenzial solcher Verfahren für eigene Vorhaben realistisch(er) einschätzen zu können, zum anderen aber auch Ergebnisse, die auf Basis solcher Verfahren erzielt wurden, angemessen hinterfragen und deuten zu können.</p>
+                <p><hi rend="bold">Zeitplan</hi></p>
                 <list type="unordered">
-                    <item>Median der Helligkeit einer Seite: der mittlere Grauton aller Pixel eines Bildes</item>
-                    <item>Shannon-Entropie: Entsprechend der Shannon-Entropie aus der Informationstheorie: 
-                        <formula>
-                            <hi rend="italic">
-                            H(X) := -Σ<hi rend="subscript">i=1</hi><hi rend="superscript">n</hi> P(x<hi rend="subscript">i</hi>) * log<hi rend="subscript">2</hi>(P(x<hi rend="subscript">i</hi>))
-                            </hi>
-                        </formula> . Hierbei ist die betrachtete Nachricht X die Liste aller Helligkeitswerte/Grautöne eines jeden Pixels. Ein schwarz-weiß Bild hat eine Entropie zwischen 0 und 1 (da es nur ‚binäre’ Informationen (schwarz oder weiß) enthält). Die höchste Entropie (den höchsten Informationsgehalt) hat ein Bild, in dem alle Graustufen möglichst gleich verteilt vorkommen.
-                    </item>
-                    <item>Anzahl der Flächen: Hierzu wird das Bild in fünf binäre Bilder aufgeteilt, entsprechend fünf unterschiedlicher Helligkeitsstufen. Das Bild B
-                        <hi rend="subscript">i</hi> zur Helligkeitsstufe H
-                        <hi rend="subscript">i</hi> enthält an den Stellen ein Bit „1“, an denen das Originalbild ein Pixel der Helligketisstufe H
-                        <hi rend="subscript">i</hi> enthält. Anschließend werden alle zusammenhängenden Flächen von 1-Bits gezählt und für alle fünf Helligkeitsstufen aufaddiert.
-                    </item>
+                    <item>Im Vorfeld der Veranstaltung: Installationsanweisungen und Online-Support</item>
                 </list>
-                <p>Im Anschluss an die Kalkulation dieser Grundmaße berechneten wir aus den Ergebnissen pro Seite die Mediane für jedes einzelne der 138 Werke. Um stilistische Abweichungen innerhalb eines Werkes zu messen, berechneten wir die Standardabweichung von den drei Maßen. Um die stilistische Entwicklung innerhalb eines Werkes zu berechnen, wurden in einem ersten Schritt manuell Inhalts- von Funktionsseiten getrennt und letztere von der Kalkulation ausgeschlossen. Hierzu betrachten wir die Kurvenverläufe der drei visuellen Maße über alle Seiten eines graphischen Romans. Für jedes visuelle Maß ermittelten wir: die Anzahl Extrema je 100 Seiten, die Standardabweichung aller Messwerte, die Standardabweichung innerhalb der lokalen Minima bzw. Maxima, die Regelmäßigkeit einer Kurve (also die Standardabweichung des Abstands in Seiten zweier aufeinanderfolgender Extrema) und eine Klassifikation des Kurven-Beginns und -Endes (die erste/letzte Seite hat einen größeren/kleineren Messwert als die nächste/vorherige Seite). Letztere Berechnungen für die stilistische Entwicklung ergaben sieben Werte je Maß, also insgesamt 21 Ergebnisse pro graphischem Roman. Diese reduzierten wir mit Hilfe von skalierter Hauptkomponentenanalyse (Principal Component Analysis [PCA]). Die errechneten Maße zogen wir im Anschluss für die Analyse folgender literatur-, bzw. kulturwissenschaftlicher Konzepte heran: Genre, Autorschaft, und Publikationsformat. Aus Zeitgründen stellen wir hier nur Teilergebnisse für die ersten beiden Kategorien vor.</p>
+                <p><hi rend="bold">Dauer in Minuten (ca.)</hi></p>
+                <list type="unordered">
+                    <item>10 Lecture
+                        <list type="unordered">
+                            <item>Intro &amp; Ablauf</item>
+                        </list>
+                    </item>
+                    <item>15 Hands-On
+                        <list type="unordered">
+                            <item>Test der Installation bei allen</item>
+                        </list>
+                    </item>
+                    <item>50 Lecture
+                        <list type="unordered">
+                            <item>Einführung in Korpus und Annotationen</item>
+                            <item>Grundlagen maschinellen Lernens</item>
+                            <item>Überblick über das Skript (where can you edit what?)
+                                <list type="unordered">
+                                    <item>Grundlagen Python Syntax</item>
+                                    <item>Bereitgestellte Features</item>
+                                </list>
+                            </item>
+                        </list>
+                    </item>
+                    <item>15 Hands-On
+                        <list type="unordered">
+                            <item>Erste Schritte</item>
+                        </list>
+                    </item>
+                    <item>30 Kaffeepause</item>
+                    <item>60 Hands-On
+                        <list type="unordered">
+                            <item>Hack</item>
+                        </list>
+                    </item>
+                    <item>30 Evaluation &amp; Preisverleihung</item>
+                </list>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>3. Ergebnisse &amp; Diskussion</head>
+                <head>Beitragende (Kontaktdaten und Forschungsinteressen)</head>
+                <p>Der Workshop wird ausgerichtet von Mitarbeiterinnen und Mitarbeitern des "Center for Reflected Text Analytics" (CRETA) an der Universität Stuttgart. CRETA verbindet Literaturwissenschaft, Linguistik, Philosophie und Sozialwissenschaft mit Maschineller Sprachverarbeitung und Visualisierung. Hauptaufgabe von CRETA ist die Entwicklung reflektierter Methoden zur Textanalyse, wobei wir Methoden als Gesamtpaket aus konzeptuellem Rahmen, Annahmen, technischer Implementierung und Interpretationsanleitung verstehen. Methoden sollen also keine "black box" sein, sondern auch für Nicht-Technikerinnen und -Techniker so transparent sein, dass ihr reflektierter Einsatz im Hinblick auf geistes- und sozialwissenschaftliche Fragestellungen möglich wird.</p>
                 <div type="div2" rend="DH-Heading2">
-                    <head>3.a. Genre</head>
-                    <p>Unser Korpus enthält sowohl fiktionale als auch nicht-fiktionale Texte, die trotz dieser Unterschiede oftmals als graphische Romane bezeichnet werden. Tatsächlich erscheint es sinnvoller hier von graphischen Narrativen zu sprechen. Dabei handelts es sich um durchgehende Erzählungen im Medium Comics, die sich an ein erwachsenes Publikum wenden und einen Umfang von mehr als 64 Seiten haben, womit sie sich vom traditionellen Seitenformat von Comicbüchern abheben. Einzelnen Büchern wurde auf Basis von Klappentexten, Verlagsinformaionen und Zusammenfassungen eines der folgenden Genres zugewiesen: Graphic Novel, Graphic Memoir, andere nicht-fiktionale Texte (Sachbücher). Texte, denen die Subgenres Superhelden, Science Fiction, Märchen, Fantasy, Mystery und Horror zugewiesen wurden, fassten wir in der Sammelkategorie Graphic Fantasy zusammen. Eine kleine Zahl an Texten, die unter keine dieser Klassifikationen fielen, fassten wir unter dem Begriff „miscellaneous“. Die Ergebnisse der Untersuchen wurden mit Hilfe von Welch Two Sample T-Tests mit p&lt;0,05 auf ihre statistische Signifikanz untersucht.</p>
-                    <p> Dabei zeigte sich, dass sich die Genres Graphic Novel, Graphic Memoir und Graphic Fantasy signifikant voneinander unterscheiden. Im speziellen zeichnen sich graphische Romane und Memoiren durch einen deutlich regelmäßigeren visuellen Stil aus. Titel mit der niedrigsten Anzahl an Flächen und niedriger Standardabweichung von der durchschnittlichen Helligkeit gehören meist zu diesen beiden Genres. Graphische Memoiren sind außerdem deutlich heller als die Erzählungen, die wir unter Graphic Fantasy zusammengefasst hatten. Illustration 1 zeigt, dass sich auch eine historische Entwicklung nachweisen lässt. So werden graphische Memoiren seit Mitte des letzten Jahrzehnts deutlich heller – eine Entwicklung, die möglicherweise durch die beispielgebende Wirkung von mittlerweile kanonischen Titeln wie Alison Bechdels 
-                        <hi rend="italic">Fun Home</hi> bedingt ist.
+                    <head>Nils Reiter</head>
+                    <p>
+                        <ref target="mailto:nils.reiter@ims.uni-stuttgart.de">nils.reiter@ims.uni-stuttgart.de</ref>
+                        <lb/>Institut für Maschinelle Sprachverarbeitung
+                        <lb/>Pfaffenwaldring 5b
+                        <lb/>70569 Stuttgart
                     </p>
-                    <figure>
-                        <graphic n="1001"
-                             width="16.37115cm"
-                             height="10.24976388888889cm"
-                             rend="inline"
-                             url="DUNST_Alexander_Hin_zu_einer_Visuellen_Stilometrie__Automati-image1.jpeg"/>
-                        <head>Illustration 1: Historische Entwicklung der durchschnittlichen Helligkeit per Genre</head>
-                    </figure>
+                    <p>Die Forschungsinteressen von Nils Reiter liegen generell in der Anwendung computerlinguistischer Methoden auf Fragen aus den Geistes- und Sozialwissenschaften. Insbesondere die Operationalisierung literarischer Forschungsfragen und die adäquate Interpretation von Ergebnissen ist dabei ein Schwerpunkt, neben der regelgeleiteten Annotation und damit zusammenhängenden Fragen.</p>
                 </div>
-                <div type="div2" rend="DH-Heading2">   
-                    <head>3.b. Autorschaft</head>
-                    <p>Ähnlich wie im Fall der Genreunterscheidungen zeigten sich signifikante visuelle Unterschiede zwischen unterschiedlichen Autoren. Illustration 2 visualisiert die stilistische Handschrift von Künstlern, die mir mehr als drei Titeln in unserem Corpus vertreten sind. Jene, die einen von Werk zu Werk vergleichsweise konstanten Stil bevorzugen, nehmen dabei eine kleinere Fläche in der Matrix ein. Darunter fallen etwa die bekannten Autoren Jason Lutes, Chester Brown und der japanische Manga-Autor Ozamu Tezuka. Hingegen nehmen Frank Miller, Dave McKean und David Mazzuchelli aufgrund ihrer visuellen Bandbreite eine größere Fläche im stilistischen Raum (Manovichs „style space“) graphischer Erzählungen ein. Die Einbeziehung von Tezuka zeigt als Testfall aber auch die momentanen Grenzen dieser Methode auf. Die verwendeten Maße erlauben keine Differenzierung zwischen dem angloamerikanischen graphischen Roman und dem japanischen Manga, zwei Erzählformen, die trotz gegenseitiger Beeinflussung deutliche stilistische Unterschiede aufweisen.</p>
-                    <figure>
-                        <graphic n="1002"
-                             width="16.68865cm"
-                             height="13.680152777777778cm"
-                             rend="inline"
-                             url="DUNST_Alexander_Hin_zu_einer_Visuellen_Stilometrie__Automati-image2.jpeg"/>
-                        <head>Illustration 2: PCA stilistischer Handschrift von Comicsautoren</head>
-                    </figure>
-                   </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Nora Ketschik</head>
+                    <p>
+                        <ref target="mailto:nora.ketschik@ilw.uni-stuttgart.de">nora.ketschik@ilw.uni-stuttgart.de</ref>
+                        <lb/>Institut für Literaturwissenschaft
+                        <lb/>Keplerstraße 17
+                        <lb/>70174 Stuttgart
+                    </p>
+                    <p>Nora Ketschik ist Promotionsstudentin in der Abteilung für Germanistische Mediävistik. Im Rahmen des CRETA-Projekts nimmt sie Analysen narratologischer Kategorien (u.a. Figur, Raum) an ausgewählten mittelhochdeutschen Romanen vor und setzt sich dabei mit der Verwendung computergestützter Methoden für literaturwissenschaftliche Analysezwecke auseinander.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Gerhard Kremer</head>
+                    <p>
+                        <ref target="mailto:gerhard.kremer@ims.uni-stuttgart.de">gerhard.kremer@ims.uni-stuttgart.de</ref>
+                        <lb/>Institut für Maschinelle Sprachverarbeitung
+                        <lb/>Pfaffenwaldring 5b
+                        <lb/>70569 Stuttgart
+                    </p>
+                    <p>Der Interessenschwerpunkt Gerhard Kremers ist der reflektierte Einsatz von Werkzeugen der Computerlinguistik für geistes- und sozialwissenschaftliche Fragestellungen. Damit zusammenhängend gehören die Entwicklung übertragbarer Arbeitsmethoden und die angepasste, nutzerfreundliche Bedienbarkeit automatischer linguistischer Analysetools zu seinen Forschungsthemen.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Sarah Schulz</head>
+                    <p>
+                        <ref target="mailto:sarah.schulz@ims.uni-stuttgart.de">sarah.schulz@ims.uni-stuttgart.de</ref>
+                        <lb/>Institut für Maschinelle Sprachverarbeitung
+                        <lb/>Pfaffenwaldring 5b
+                        <lb/>70569 Stuttgart
+                    </p>
+                    <p>Sarah Schulz beschäftigt sich überwiegend mit der automatischen Verarbeitung von Texten, die syntaktischen oder lexikalischen Eigenschaften aufweisen und damit vom 
+                        <hi rend="italic">Standard</hi> abweichen. Sie hat einen Hintergrund in sowohl Computerlinguistik als auch Theater-und Medienwissenschaften und Germanistik.
+                    </p>
+                </div>
             </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>4. Zusammenfassung &amp; Ausblick</head>
-                <p>In diesem Vortrag haben wir automatische Bildanalysen vorgestellt, die stilometrische Unterscheidungen zwischen Genres und Autoren auf den Bereich visueller Erzählungen übertragen. Dazu ist anzumerken, dass sich dieser Zugang in einem experimentellen Stadium befindet. So werden wir demnächst zusätzliche visuelle Maße zu den hier verwendeten erproben. In einem ersten Schritt ist dabei an Farbigkeitsmaße gedacht. Die Datenbasis wird mit Fortschreiten der Retrodigitalisierung unseres Corpus auf rund 250 Werke erweitert. Bei den Genreunterscheidungen hat sich die relativ aufwändige Berechnung der internen Entwicklung eines Werkes als wenig aussagekräftig herausgestellt. Allerdings fließt diese bei den Autorenunterscheidungen in die PCA ein. Auch die Genrekategorien bedürfen einer weiteren Verfeinerung: bei Versuchen, die interne Kohärenz der Genres zu berechnen (Distanzmaße vom Zentroiden eines Clusters) hat sich die Sammelkategorie Graphic Fantasy als weniger kohärent als eine zufällige Vergleichsgruppe herausgestellt. Hier sollten bei neuerlichen Berechnungen Subgenres wie Superheldennarrative herangezogen werden. Als graphische Kunstwerke, die von Hand gezeichnet werden, unterscheiden sich Comics deutlich von Filmen, Fernsehserien, aber auch von Computerspielen. Dennoch birgt die hier präsentierte Methode unserer Meinung nach Potenzial für diese Medien, da Fragen zur Stilistik von Genre und Autorschaft auch dort eine Rolle spielen. So könnte etwa erforscht werden, ob sich das Genre des Film Noir tatächlich stilistische Kohärenz aufweist, oder ob sich komplexe Qualitätsserien wie 
-                <hi rend="italic">The Wire</hi> oder 
-                <hi rend="italic">The Sopranos</hi> visuell von anderen TV-Erzählungen unterscheiden.
-                </p>
+            <div xml:id="zahl-der-möglichen-teilnehmerinnen-und-t"
+              type="div1"
+              rend="DH-Heading1">
+                <head>Zahl der möglichen Teilnehmerinnen und Teilnehmer</head>
+                <p>Zwischen 15 und 25.</p>
+            </div>
+            <div xml:id="benötigte-technische-ausstattung"
+              type="div1"
+              rend="DH-Heading1">
+                <head>Benötigte technische Ausstattung</head>
+                <p>Es wird außer einem Beamer keine besondere technische Ausstattung benötigt. Es sollte sich um einen Raum handeln, in dem es möglich ist, den Teilnehmenden über die Schulter zu blicken und durch die Reihen zu gehen.</p>
             </div>
         </body>
         <back>
          <div type="notes">
-            <note rend="endnote text">Zwar hatte Manovich stilistische Bildanalysen auch auf Manga angewandt. Diese Studien blieben aber weitgehend explorativ und ließen keine Rückschlüsse auf Konzepte wie Autorschaft oder Genre zu (Manovich, Douglas &amp; Zepel). </note>
-            <note rend="endnote text">Diese bietet die Beta-Version unseres graphischen XML-Editors an, der unter folgender Adresse frei verfügbar ist: https://groups.uni-paderborn.de/graphic-literature/wp/?page_id=3592.</note>
+            <note xml:id="ftn1" n="1" rend="footnote text">
+                            <ref target="http://www.creta.uni-stuttgart.de">www.creta.uni-stuttgart.de</ref>
+                        </note>
+            <note xml:id="ftn2" n="2" rend="footnote text"> Aus urheberrechtlichen Gründen wird das Tutorial ohne das Teilkorpus zu Adornos ästhetischer Theorie stattfinden, das in den Publikationen erwähnt wird.</note>
+            <note xml:id="ftn3" n="3" rend="footnote text"> Die Texte wurden im Rahmen des PolMine-Projekts verfügbar gemacht: http://polmine.sowi.uni-due.de/polmine/</note>
          </div>
          <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Calle-Martin, J. &amp; A. Miranda-García </hi>(2012). „Stylometry and Authorship Attribution: Introduction to the Special Issue“, 
-                        <hi rend="italic">Stylometry and Authorship Attribution</hi>, special issue of 
-                        <hi rend="italic">English Studies</hi> 93-3: 251-58.
+                    <bibl>
+                        <hi rend="bold">Kuhn, Jonas / Reiter, Nils</hi> (2015): "A Plea for a Method-Driven Agenda in the Digital Humanities" in: 
+                        <hi rend="italic">Digital Humanities 2015: Conference Abstracts</hi>, Sydney.
                     </bibl>
-                    <bibl><hi rend="bold">Dunst, A., R. Hartel &amp; J. Laubrock </hi>(2017). „The Graphic Narrative Corpus (GNC): Design, Annotation, and Analysis for the Digital Humanities” 
-                        <hi rend="italic">Proceedings of the 14th IAPR International Conference on Document Analysis and Recognition (ICDAR 2017)</hi> [im Druck].
+                    <bibl>
+                        <hi rend="bold">Reiter, Nils / Blessing, Andre / Echelmeyer, Nora / Koch, Steffen / Kremer, Gerhard / Murr, Sandra / Overbeck, Maximilian / Pichler, Axel</hi> (2017a): "CUTE: CRETA Unshared Task zu Entitätenreferenzen" in 
+                        <hi rend="italic">Konferenzabstracts DHd2017</hi>, Bern.
                     </bibl>
-                    <bibl><hi rend="bold">Holmes, D </hi>(1998). „The Evolution of Stylometry in Humaninities Scholarship“ 
-                        <hi rend="italic">Literary and Linguistic Computing</hi> 13-3: 111-17.
+                    <bibl>
+                        <hi rend="bold">Reiter, Nils / Kuhn, Jonas / Willand, Marcus</hi> (2017b): "To GUI or not to GUI?" in 
+                        <hi rend="italic">Proceedings of INFORMATIK 2017</hi>, Chemnitz.
                     </bibl>
-                    <bibl><hi rend="bold">Kohle, H. </hi>(2013). 
-                        <hi rend="italic">Digitale Bildwissenschaft</hi>. Glückstadt: VWH.
+                    <bibl>
+                        <hi rend="bold">Blessing, Andre / Echelmeyer, Nora / John, Markus / Reiter, Nils</hi> (2017): "An end-to-end environment for research question-driven entity extraction and network analysis" in 
+                        <hi rend="italic">Proceedings of the Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature</hi>, Vancouver.
                     </bibl>
-                    <bibl><hi rend="bold">Manovich, L. </hi>(2011) “Style Space: How to Compare Image Sets and Follow their Evolution”, http://manovich.net/index.php/projects/style-space.</bibl>
-                    <bibl><hi rend="bold">Manovich, L., J. Douglas, T. Zepel </hi>(2011). „How to Compare One Million Images“, http://manovich.net/index.php/projects/how-to-compare.</bibl>
-                    <bibl><hi rend="bold">Qi, Hanchao, Armeen Taeb &amp; Shannon M. Hughes </hi>, „Visual stylometry using background selection and wavelet-HMT-based Fisher information distances for attribution and dating of impressionist paintings” 
-                        <hi rend="italic">Signal Processing</hi> 93-3 (2013): 541-53.
+                    <bibl>
+                        <hi rend="bold">Lotman, Juri</hi> (1972): 
+                        <hi rend="italic">Die Struktur literarischer Texte</hi>, München.
                     </bibl>
                 </listBibl>
             </div>

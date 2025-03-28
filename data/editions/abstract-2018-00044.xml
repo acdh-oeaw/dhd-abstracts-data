@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="FRANK_Ingo_Digitale_Vernunft_zwischen_Text_und_Diagramm">
+     xml:id="HOENEN_Armin_Principles_Aiding_in_Reading_Abbreviations_in_O">
    <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title type="full">
-                    <title type="main">Digitale Vernunft zwischen Text und Diagramm</title>
-                    <title type="sub">Digital Mapmaking als Hilfsmittel zur Erklärung historischer Ereignisse</title>
+                    <title type="main">Principles Aiding in Reading Abbreviations in OldGeorgian and Latin</title>
+                    <title type="sub"/>
                 </title>
                 <author>
                     <persName>
-                        <surname>Frank</surname>
-                        <forename>Ingo</forename>
+                        <surname>Hoenen</surname>
+                        <forename>Armin</forename>
                     </persName>
-                    <affiliation>Leibniz-Institut für Ost- und Südosteuropaforschung (IOS)</affiliation>
-                    <email>frank@ios-regensburg.de</email>
+                    <affiliation>Goethe Universität Frankfurt, Germany</affiliation>
+                    <email>hoenen@em.uni-frankfurt.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Samushia</surname>
+                        <forename>Lela</forename>
+                    </persName>
+                    <affiliation>Goethe Universität Frankfurt, Germany</affiliation>
+                    <email>samushia@em.uni-frankfurt.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2018-01-20T21:12:11.621301139</date>
+                    <date>2017-08-21T13:15:36.823740956</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -51,240 +59,484 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Digitale Methoden</term>
-                    <term>Methodologie</term>
-                    <term>Wissenschaftstheorie</term>
-                    <term>Hypertext</term>
-                    <term>Diagrammatisches Denken</term>
+                    <term>abbreviations</term>
+                    <term>Georgian</term>
+                    <term>Latin</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Modellierung</term>
+                    <term>Strukturanalyse</term>
                     <term>Theoretisierung</term>
-                    <term>Visualisierung</term>
-                    <term>Methoden</term>
-                    <term>Forschungsprozess</term>
-                    <term>Werkzeuge</term>
+                    <term>Daten</term>
+                    <term>Sprache</term>
+                    <term>Text</term>
+                    <term>texttragende Gegenstände</term>
                 </keywords>
             </textClass>
         <settingDesc>
             <ab n="conference">DHd2018 - "Kritik der Digitalen Vernunft", Köln</ab>
-            <ab n="paperID">186</ab>
-            <ab n="session_ID">129</ab>
+            <ab n="paperID">105</ab>
+            <ab n="session_ID">51</ab>
             <ab n="session_numberInSession">1</ab>
-            <ab n="session_short">VP_2d</ab>
-            <ab n="session_title">Visualisierung II</ab>
-            <ab n="session_start">2018-02-28 11:00</ab>
-            <ab n="session_end">2018-02-28 12:30</ab>
+            <ab n="session_short">VP_3b</ab>
+            <ab n="session_title">Sprachanalyse</ab>
+            <ab n="session_start">2018-02-28 14:00</ab>
+            <ab n="session_end">2018-02-28 15:30</ab>
          </settingDesc>
       </profileDesc>
     </teiHeader>
    <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p>Mit meinem Vortrag möchte ich zu einer Kritik der digitalen Methoden beitragen. Gegenwärtige Forschung im Bereich der Digital Humanities konzentriert sich vorwiegend auf den Einsatz quantitativer digitaler Methoden. Ich betrachte diesen Schwerpunkt auf ‘Big Data’, ‘Distant Reading’ und die Beschränkung auf statistische Verfahren zur Erklärung geisteswissenschaftlicher Phänomene kritisch. In einer methodologischen Kritik der digitalen Geisteswissenschaften werde ich dazu aus wissenschaftstheoretischer Perspektive anhand Beispielen historischer Forschung die Grenzen der quantitativen Ansätze aufzeigen, um dann Möglichkeiten vorzustellen, wie qualitative Methoden im Sinne eines 
-                   <hi rend="bold">Augmenting Human(ist) Intellect</hi>-Ansatzes (Engelbart 1962) digital unterstützt und erweitert werden sollten.
+            <div type="div1" rend="DH-Heading">
+                <head>Introduction</head>
+                <p>A project on Georgian Epigraphy
+                    <ref target="ftn1" n="1"/>
+                     in the context of which this article is grounded brought our attention to two phenomena which seem inseparably intertwined with the epigraphic record: abbreviations and gaps. In Old Georgian, abbreviations are very prominent and yet very heterogeneous. That is more so than in other (historical) languages. One finds many abbreviations for the same word, compare Boeder (1987). In this article, we assess the research question why this is so by trying to highlight properties of Old Georgian abbreviations, which can also be used as an aid to read them. We use Old Georgian abbreviations in inscriptions and manuscripts from the Titus web-site, Gippert (1995) under more entered within the Georgian National Corpus
+                        <ref target="ftn2" n="2"/>.
+                    In order to take a somewhat wider perspective and enable data hungry technologies to aid in the analyses of the aforementioned phenomena
+                        <ref target="ftn3" n="3"/>, we decided to compare the Georgian record with one of the largest digital epigraphic records available, classical Latin, for which we use data from the Epigraphic database Heidelberg
+                        <ref target="ftn4" n="4"/>: last accessed December 2016. The Latin data is several orders of magnitude larger than the Georgian one. While Latin contains roughly 70,000 inscriptions, Georgian features 91, so we decided to additionally analyse abbreviations in Old Georgian manuscripts. We ended up with roughly 4,000 abbreviations for Old Georgian (roughly 1,100 from the inscriptions) and roughly 170,000 for Latin.
+                </p>
+                <p>There are several partly overlapping typologies of abbreviations, compare Marchand (1969); Kreidler (1979); McArthur (1988); McArthur and McArthur (1992); Rúa (2004); Driscoll (2009). (Carroll, 2003, p.205) remarks: ”Unfortunately, universally accepted standards for many abbreviations and acronyms do not exist”.</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Position</head>
+                <p>The first investigation concerns the position of the letters in the extension, which are maintained in the abbreviation. That is &lt;precip&gt; as an abbreviation for &lt;precipitation&gt;, will be converted into 1-2-3-4-5-6. We look at the type and token levels for Old Georgian and Latin, see Table 1.</p>
+                <table rend="frame" xml:id="Table1">
+                    <row>
+                        <cell rend="bold">Text Type</cell>
+                        <cell rend="sup bold">p_0=first</cell>
+                        <cell rend="bold">p_l=last</cell>
+                        <cell rend="bold">Suspension</cell>
+                        <cell rend="bold">Contraction </cell>
+                    </row>
+                    <row>
+                        <cell>Old Georgian Inscriptions</cell>
+                        <cell>0.998</cell>
+                        <cell>0.895</cell>
+                        <cell>0.037</cell>
+                        <cell>0.158</cell>
+                    </row>
+                    <row>
+                        <cell>Old Georgian Manuscripts</cell>
+                        <cell>1.0 </cell>
+                        <cell>0.814</cell>
+                        <cell>0.185</cell>
+                        <cell>0.344</cell>
+                    </row>
+                    <row>
+                        <cell>Old Georgian Inscriptions (types)</cell>
+                        <cell>0.998 </cell>
+                        <cell>0.902</cell>
+                        <cell>0.012</cell>
+                        <cell>0.076</cell>
+                    </row>
+                    <row>
+                        <cell>Old Georgian Manuscripts (types)</cell>
+                        <cell>1.0 </cell>
+                        <cell>0.979</cell>
+                        <cell>0.016</cell>
+                        <cell>0.166</cell>
+                    </row>
+                    <row>
+                        <cell>Latin Inscriptions</cell>
+                        <cell>0.998 </cell>
+                        <cell>0.037</cell>
+                        <cell>0.424</cell>
+                        <cell>0.003</cell>
+                    </row>
+                    <row>
+                        <cell>Latin Inscriptions (types)</cell>
+                        <cell>0.987</cell>
+                        <cell>0.183</cell>
+                        <cell>0.12</cell>
+                        <cell>0.01</cell>
+                    </row>
+                </table>
+                <p>Table 1: Proportions of abbreviations starting in the first letter (first column), ending in the last (second column), being suspensions (third column) or contractions (fourth column). 'types' here counts each abbreviation - expansion tuple uniquely.</p>
+                <p>We find that abbreviations usually start in the first letter although this might be part of a prefix in both Latin and Old Georgian. This allows for keeping parafoveal preview information intact, see for instance Slattery et al. (2011); Rayner et al. (2012). Chanceaux et al. (2013) summarizing Dandurand et al. (2011) find that ”initial letters provide more information with respect to word identity than any other letter position”. Initital letters are together with the last letter the ”most visible” letters of a word, Dandurand et al. (2011), which means under more that due to the adjacent spaces, they can more easily be recognized.</p>
+                <p>Secondly, Old Georgian uses more contractions (abbreviations by first and last letter, a Christian abbreviation tradition which entails the question of how to spiritually correctly contract affixed words inducing a dilemma once many affixes are present), Latin suspensions (abbreviation by the first n letters. Figure 1 shows the patterns of occurrence of positions, given a certain word length. The y-axis represents the percentage of abbreviations (regardless of their lengths) that contain the position specified on the x-axis. In a normalized plot, all wordlengths from 4 to 11 are plotted together. For Old Georgian there is a gap after some first letters. We conjecture that the end of the word stem is most unlikely to occur in abbreviations. While in Latin, suffixes are often left out, in Georgian, which has an agglutinative morphology, this would lead to considerable difficulties in relating the actual word to the context since some suffixes carry information which in Latin are expressed by independent pre- or postpositions.</p>
+                <p>
+                    <figure>
+                        <graphic url="HOENEN_Armin_Principles_Aiding_in_Reading_Abbreviations_in_O-100002010000034A0000033B62AD3E37.png"/>
+                        <head>Figure 1: Letter position incidence in abbreviations. First row: for words of length 5 (24, 569 data points in Latin and 401 in Old Georgian). Second row: for words of length 4 to 11 (overlay). In the upper left graphic, for all abbreviated words of length 5 in Latin, the first letter was always present in the abbreviation, the second in roughly 30% of the cases, the third in slightly less cases, the fourth and fifth almost never. In Old Georgian, an alternation with 2 dominant patterns appears: one for shorter words with probably one suffix and one for words with 2 suffixes which then have more letters towards the relative middle.</head>
+                    </figure>
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Vorgehensweise</head>
-                <p>Als erstes werde ich die Methoden der Digital Humanities mit Hilfe der NeMO (NeDiMAH Methods Ontology) wissenschaftstheoretisch verorten (Abb. 1).</p>
-                <figure>
-                	<graphic url="FRANK_Ingo_Digitale_Vernunft_zwischen_Text_und_Diagramm-10000201000003BE000002F0F0A4ECD2.png"/>
-                    <head><hi rend="bold">Abb. 1</hi>: NeMO (NeDiMAH Methods Ontology) zur Modellierung von Forschungsprozessen, digitalen Methoden, Werkzeugen, Ressourcen (Dokumente, Forschungsdaten, etc.) usw. (aus Benardou et al. 2010)</head>
-		          </figure>
-		          <p>NeMO dient als Rahmen zum Aufbau einer Taxonomie digitaler Methoden und Werkzeuge. Ein erster Schritt dazu ist die Unterscheidung zwischen quantitativen und qualitativen Methoden. Da diese Unterscheidung auf methodischer Ebene und nicht etwa auf epistemologischer oder theoretischer Ebene erfolgt, erscheint die gängige scharfe Trennung in quantitative und qualitative Forschung nicht gerechtfertigt. Auf Ebene der Epistemologie muß man bei einer bestimmten erkenntnistheoretischen Position bleiben und kann dabei qualitative und quantitative Methoden kombinieren, ohne daß das methodologisch problematisch wäre (Crotty 1998). Bei digitaler Forschung kommt es auf den Ansatz der formalen Modellierung von Forschungsgegenständen an. Formale Modellierung bildet den Kern der Digital Humanities und ist Voraussetzung um überhaupt digital transformierte Foschungsmethoden einsetzen zu können – egal ob quantitativ oder qualitativ. Man könnte daher anstatt von 
-                    <hi rend="bold">digitalen</hi> Methoden besser von 
-                    <hi rend="bold">formalen</hi> bzw. 
-                    <hi rend="bold">formalisierbaren</hi> Methoden sprechen. Im Vortrag werde ich mich auf ‘Digital Mapmaking’ als Methode konzentrierten, die den Einsatz von Diagrammen zur qualitativen Forschung umfaßt. Um den Mehrwert von diagrammatischer Darstellung zu zeigen, werde ich auf Beispiele aus der Sozialgeschichte zurückgreifen. Skocpols “States and Revolutions: A Comparative Analysis of France, Russia, and China” (Skocpol 1979) eignet sich sehr gut, um zu zeigen, daß Text nicht ausreicht, um die komplexen kausalen Narrative, die zu sozialen Revolutionen führen, gut nachvollziehbar zu repräsentieren. In der methodologischen Forschung dazu wird sogar argumentiert (Mahoney 1999; George / Bennett 2005), daß die Darstellung der kausalen Prozesse in diagrammatischer Form notwendig ist, um die kausalen Zusammenhänge in der Präsentation der Forschungsergebnisse explizit zu machen und darüber hinaus den Forschungsprozess selbst durch den Zwang zur Formalisierung zu unterstützen. Am Beispiel Skocpols vergleichender Studie werde ich demonstrieren, wie die Methoden QCA (Qualitative Comparative Analysis) und Process Tracing in den Digital Humanities durch den Einsatz von geeigneten diagrammatischen ‚Denkwerkzeugen‘ wie Hypertext-Karten, Fuzzy Cognitive Maps und Dynamischer Netzwerkanalyse unterstützt und erweitert werden können.
+            <div type="div1" rend="DH-Heading">
+                <head>Vowels &amp; Consonants</head>
+                <p>Now, we look at how many vowels and consonants are retained in abbreviations, see Table 2. As one can see, in all contexts the ratio of vowels in the abbreviations is clearly lower than in the extensions. Information theory, see for instance Shannon (1948) provides a stable basis for the interpretation of these results. a) the class of vowels is smaller than the class of consonants and b) vowels are much more frequent not only because of a) but also because they occur in syllable nuclei and consequently a single vowel, yet not a single consonant can constitute a syllable.
+                    <ref target="ftn5" n="5"/>
+                    <ref target="ftn6" n="6"/> Thus, vowels are less informative and hence more easily guessable than consonants. Finally, we analysed our larger Latin data in more detail. We extract the frequency based rankings of letters and test their correlation with the ranking through probability of being retained in an abbreviation. The Spearman rank correlation suggests, that there is a significant correlation between the frequency of a consonant and its probability to be retained in an abbreviation (p-value = 0.002655, ρ 0.622807). For vowels p is above 0.01, and ρ is negative at -0.2 suggesting that for vowels, which are all quite frequent, there is no clear effect. Carreiras et al. (2009) find that vowels do not yield priming effects for recognition in opposition to consonants, which would nicely align with this finding. Thus, an inf
+                    requent consonant grapheme is more probably retained. One may deduct that consonants that are left out - if any - are more frequent than the ones retained. Knowing this and knowing that the first portion of the word root is probably represented in the abbreviation decreases the number of possible interpretations ideally by this token helping to decipher abbreviations.
                 </p>
+                <table rend="frame" xml:id="Table2">
+                    <row>
+                        <cell rend="bold">Text Type</cell>
+                        <cell>
+                            <hi rend="bold">Proportion</hi> of vowels in extension
+                        </cell>
+                        <cell>
+                            <hi rend="bold">Proportion</hi> of vowels in abbreviation
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>Old Georgian Inscriptions</cell>
+                        <cell>0.408</cell>
+                        <cell>0.276</cell>
+                    </row>
+                    <row>
+                        <cell>Old Georgian Manuscripts</cell>
+                        <cell>0.42</cell>
+                        <cell>0.275</cell>
+                    </row>
+                    <row>
+                        <cell>Old Georgian Inscriptions (types)</cell>
+                        <cell>0.41</cell>
+                        <cell>0.271</cell>
+                    </row>
+                    <row>
+                        <cell>Old Georgian Manuscripts (types)</cell>
+                        <cell>0.412</cell>
+                        <cell>0.347</cell>
+                    </row>
+                    <row>
+                        <cell>Latin Inscriptions</cell>
+                        <cell>0.466</cell>
+                        <cell>0.337</cell>
+                    </row>
+                    <row>
+                        <cell>Latin Inscriptions (types)</cell>
+                        <cell>0.446</cell>
+                        <cell>0.392</cell>
+                    </row>
+                </table>
+                <p>Table 2: Proportions of vowels in extensions and abbreviations. Note, that the inverse (1-value) is the proportion of consonants. Here, vowels and consonants are measured as vowel and consonant characters, which for both Latin and Old Georgian largely coincides with their phonemic class due to both writing systems being rather shallow.</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>
+                    Possibilities for the Abbreviator
+                </head>
+                <p>
+                    Reading abbreviations may be understood even better when taking their generation into account. One hypothesis assumes, that someone, who wants to abbreviate a word, holds in mind all possible abbreviations and chooses from them. We try to validate this, counting all possible abbreviations per word length given suspension and contraction. This can also help estimate algorithmic complexity in abbreviating.
+                </p>
+                <p>As we have empirically observed but not explicitly stated so far and implicitly assumed, a condition for a valid abbreviation may be that the indices of the letters must maintain ascending order, or, in other words, the original sequence of the letters is not permuted. If so, for each word length 
+                    <hi rend="italic">w </hi>and abbreviation length 
+                    <hi rend="italic">a </hi>there are {
+                    <hi rend="italic">w </hi>
+                    <hi rend="italic">\</hi>
+                    <hi rend="italic">choose a</hi>
+                    <hi rend="italic">}</hi>
+                    <hi rend="italic">
+                        <ref target="ftn7" n="7"/>
+                    </hi>
+                    possible abbreviations, since for each distinct combination only one can maintain the ascending order of elements. Now in order for understanding how many possible abbreviations there are for each word we need to add up values for all different 
+                    <hi rend="italic">a</hi>, where
+                    <hi rend="italic"> a &lt; w</hi>.
+                    <ref target="ftn8" n="8"/>
+                </p>
+                <p>By simply using this binomial coefficient one can compute the numbers of possible combinations (for numbers until 10, see Table 3 leftmost numbers in cells) which gives the inner portion of Pascal’s triangle. However, the outer 1s are missing, since the extension itself is no abbreviation and neither is a sequence of zero letters, the sum is thus 2^w - 2. The increase in possibilities is linear and quick, for a word of length 15, there are 32,766 possibilities how it could be abbreviated.</p>
+                <p>If we additionally fix the first letter, we count only all combinations containing element ’1’, which must then be{
+                    <hi rend="italic">w-1</hi> \choose 
+                    <hi rend="italic">a-1</hi>
+                    <hi rend="italic">}</hi>, since we have fixed the first letter and from the remaining 
+                    <hi rend="italic">w - 1 </hi>letters, we can choose any 
+                    <hi rend="italic">a - 1</hi> remaining elements of the abbreviation. This restricts the possible numbers already considerably. Overall, we halve possibilities, so 2^{w-1} - 1 becomes the sum formula, which would still leave us with 16,383 possibilities for a word of 15 letters.
+                </p>
+                <p>In case of a contraction, one fixes the first and the last letter. Then again, results are halved with one letter long abbreviations excluded, hence the sum relates to 
+                    <hi rend="italic">w</hi> by 2^{w-2} - 1. For a word of length 15 still 8,191 possibilities would be left. 
+                </p>
+                <p>Numbers remain so high towards the end of the scale that it seems improbable that someone who abbreviates a word be aware of all of the possibilities simulateneously at decision time. One also sees that contraction is quite effective in restricting possible abbreviations and might thus considerably speed-up abbreviating and decipherment/reading of abbreviations.
+                </p>
+                <table rend="frame" xml:id="Table3">
+                    <row>
+                        <cell/>
+                        <cell>1</cell>
+                        <cell>2</cell>
+                        <cell>3</cell>
+                        <cell>4</cell>
+                        <cell>5</cell>
+                    </row>
+                    <row>
+                        <cell>2</cell>
+                        <cell>2/1/0</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>3</cell>
+                        <cell>3/1/0</cell>
+                        <cell>3/2/1</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>4</cell>
+                        <cell>4/1/0</cell>
+                        <cell>6/3/1</cell>
+                        <cell>4/3/2 </cell>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>5</cell>
+                        <cell>5/1/0</cell>
+                        <cell>10/4/1</cell>
+                        <cell>10/6/3 </cell>
+                        <cell>5/4/3 </cell>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>6</cell>
+                        <cell>6/1/0</cell>
+                        <cell>15/5/1</cell>
+                        <cell>20/10/4 </cell>
+                        <cell>15/10/6 </cell>
+                        <cell>6/5/4 </cell>
+                    </row>
+                    <row>
+                        <cell>7</cell>
+                        <cell>7/1/0</cell>
+                        <cell>21/6/1</cell>
+                        <cell>35/15/5 </cell>
+                        <cell>35/20/10 </cell>
+                        <cell>21/15/10 </cell>
+                    </row>
+                    <row>
+                        <cell>8</cell>
+                        <cell>8/1/0</cell>
+                        <cell>28/7/1</cell>
+                        <cell>56/21/6</cell>
+                        <cell>70/35/15 </cell>
+                        <cell>56/35/20 </cell>
+                    </row>
+                    <row>
+                        <cell>9</cell>
+                        <cell>9/1/0</cell>
+                        <cell>36/8/1</cell>
+                        <cell>84/28/7 </cell>
+                        <cell>126/56/
+                            21 </cell>
+                        <cell>126/70/
+                            35 </cell>
+                    </row>
+                    <row>
+                        <cell>10</cell>
+                        <cell>10/1/0</cell>
+                        <cell>45/9/1</cell>
+                        <cell>120/36/8</cell>
+                        <cell>210/84/
+                            28</cell>
+                        <cell>252/126/
+                            56</cell>
+                    </row>
+                </table>
+                <table rend="frame" xml:id="Table3_2">
+                    <row>
+                        <cell/>
+                        <cell>6</cell>
+                        <cell>7</cell>
+                        <cell>8</cell>
+                        <cell>9</cell>
+                        <cell rend="bold">Σ</cell>
+                    </row>
+                    <row>
+                        <cell>2</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell>2/1/0 </cell>
+                    </row>
+                    <row>
+                        <cell>3</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell>6/3/1 </cell>
+                    </row>
+                    <row>
+                        <cell>4</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell>14/7/3 </cell>
+                    </row>
+                    <row>
+                        <cell>5</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell>30/15/7 </cell>
+                    </row>
+                    <row>
+                        <cell>6</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell>62/31/15 </cell>
+                    </row>
+                    <row>
+                        <cell>7</cell>
+                        <cell>7/6/5 </cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell>126/63/
+                            31 </cell>
+                    </row>
+                    <row>
+                        <cell>8</cell>
+                        <cell>28/21/15 </cell>
+                        <cell>8/7/6 </cell>
+                        <cell/>
+                        <cell/>
+                        <cell>254/127/
+                            63 </cell>
+                    </row>
+                    <row>
+                        <cell>9</cell>
+                        <cell>84/56/35 </cell>
+                        <cell>36/28/21 </cell>
+                        <cell>9/8/7 </cell>
+                        <cell/>
+                        <cell>510/255/
+                            127 </cell>
+                    </row>
+                    <row>
+                        <cell>10</cell>
+                        <cell>210/126/
+                            70</cell>
+                        <cell>120/84/
+                            56</cell>
+                        <cell>45/36/28</cell>
+                        <cell>10/9/8</cell>
+                        <cell>1022/
+                            511/255</cell>
+                    </row>
+                </table>
+                <p>Table 3: Numbers of possible abbreviations per word length / when first letter is fixed / when first and last letters are fixed. Rows have word length, columns abbreviation length.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Beispiele</head>
-                <p>Um überhaupt sinnvoll von ‚digitalen‘ Methoden reden zu können, muß der Aspekt der formalen Modellierung als zentral erachtet werden. Formalisierung ist die Voraussetzung für die „Mechanisierung angeblich geistiger Tätigkeiten“ (Brauer et al. 1989). Piotrowski (2016) definiert Digital Humanities wie folgt: “The digital humanities study the means and methods of constructing formal models in the humanities.” Ein Modell ist dabei als Repräsentation eines geisteswissenschaftlichen Untersuchungsgegenstands zu verstehen und ‚formal‘ bedeutet 
-                    <hi rend="bold">logisch kohärent</hi>, 
-                    <hi rend="bold">nicht mehrdeutig</hi> und 
-                    <hi rend="bold">explizit</hi> (Piotrowski 2016).
-                </p>
-                <p>Mir geht es im folgenden um digitale Methoden des ‘Mapmaking’:</p>
-                <quote>[Mapmaking] is a combinatorial method, for it involves mapping information gathered from other sources: generally secondary data or surveys, though texts are another possibility. It must thus reflect the strengths and weaknesses of its sources of data. As with hermeneutics, mapmaking involves a set of techniques beyond those involved in the methods it draws upon. Its obvious strength lies in terms of spatiality. There are, quite simply, some spatial movements that cannot be properly visualized nor comprehended without recourse to maps […] (Szostak 2004)</quote>
-                <p>Dazu kann mit NeMO Quellen- und Archivmaterial, das zur Erstellung von Karten herangezogen wird, formal erfaßt werden, was im Kontext von Digital Libraries und Forschungsdatenmanagement relevant ist.</p>
-                <p>Einführen werde ich 
-                    <hi rend="bold">Digital Mapmaking</hi> mit einem für die Geschichtswissenschaft naheliegenden Diagrammtyp (Champagne 2016): Zeitleisten. Synchronoptische Visualisierungen (Abb. 2) dienen der Kontextualisierung großer Datenmengen aus verschiedenen Quellen und ermöglichen die Generierung von Hypothesen durch Abduktion (Frank 2017a). Eine Erklärung – z. B. in Form der Beschreibung eines sozialen Mechanismus, der ein historisches Ereignis hervorbringt – kann jedoch nur durch weiterführende Forschung gefunden werden.
-                </p>
-		          <figure>
-                	<graphic url="FRANK_Ingo_Digitale_Vernunft_zwischen_Text_und_Diagramm-1000000000000780000004B059252319.png"/>
-		              <head><hi rend="bold">Abb. 2</hi>: Parallele Zeitleisten in der Zeitkarte aus der Digitalen Edition (Behrendt et al. 2010) von Peters’ Synchronoptischer Weltgeschichte (Peters / Peters 1952) als ‚Hypothesen-Generator‘</head>
-		          </figure>
-                <p>Im weiteren Verlauf werde ich zeigen, wie Visualisierungsansätze nicht nur 
-                    <hi rend="bold">explorative </hi>Analyse unterstützen können, sondern wie sie darüber hinaus auch die Möglichkeiten zur 
-                    <hi rend="bold">Erklärung</hi> historischer Ereignisse erweitern können. Sehr gut veranschaulicht werden kann ein solcher Ansatz mit den diagrammatischen Darstellungen der kausalen Narrative in Skocpols Theorie sozialer Revolutionen (Skocpol 1979).
-                </p>
-                <p>Goertz und Mahoney (2005) argumentieren, daß “a failure to appropriately conceptualize levels and relationships between levels” zu vielen Fehlinterpretationen von Skocpols Theorie geführt haben. George und Bennett (2005) empfehlen tatsächlich “diagrams to present clearly the argument of causal narratives, to make the causal claim more explicit”. Um die laut Goertz und Mahoney (2005) oft in den Interpretationen vorkommende Verwechslung von Kausalität und Konstitution zu vermeiden, eignet sich zur Darstellung von 
-                    <hi rend="bold">Two-Level Theories</hi> der Einsatz von Diagrammen (Abb. 3):
-                </p>
-                <quote>For example, the examination of an ontological relationship between levels allows the analyst to explore the specific defining properties of the basic-level concepts that actually affect the outcome of interest. In this case of an ontological relationship, the specific properties identified in the secondary level are “mechanisms” that explain why the basic-level variables have the effects they do. (Goertz / Mahoney 2005)</quote>
-		          <figure>
-                	<graphic url="FRANK_Ingo_Digitale_Vernunft_zwischen_Text_und_Diagramm-10000201000004F70000028543BCF57B.png"/>
-                	<head><hi rend="bold">Abb. 3</hi>: Diagramm für Two-Level Theories zu Ursachen und Konstitution sozialer Revolutionen (aus Goertz / Mahoney 2005)</head>
-		          </figure>
-                <p>Im Rückentext des Geschichtstheorie-Lehrbuchs von Kolmer (2008) steht dazu treffend: „Wer sich nicht von der Beredsamkeit der Historiker blenden lassen will, muss das Gerüst entdecken können, das ihre Erzählungen trägt.“ Meine Idee ist nun, die kausalen Narrative nicht nur als Diagramme zu visualisieren, sondern die historischen Narrative der komplexen kausalen Zusammenhänge als Hypertext zu modellieren. Der Mehrwert dieses 
-                    <hi rend="bold">Hypertext Mapping</hi>-Ansatzes wird durch einen weiteren Verweis auf Szostak (2004) deutlich: “Mapmaking can give unique insight into spatial and temporal aspects of causal systems (among other things).”
-                </p>
-                <p>Offensichtlich bietet die diagrammatische Visualisierung (Abb. 4) von Mahoney (1999) deutliche Vorteile bei der Darstellung der komplexen kausalen Zusammenhänge und erleichtert dadurch das genaue Nachvollziehen und Verstehen der historischen Vorgänge, die zum Zusammenbruch des französischen Staates führten, erheblich.</p>
-		          <figure>
-                	<graphic url="FRANK_Ingo_Digitale_Vernunft_zwischen_Text_und_Diagramm-10000201000004FE0000055E9944B38E.png"/>
-                	<head><hi rend="bold">Abb. 4</hi>: Diagramm des kausalen Narrativs über den Prozess des Zusammenbruchs eines Staates (aus Mahoney 1999)</head>
-		          </figure>
-                <p>Allerdings berücksichtigt das Diagramm nach Mahoney (1999) keine komplexen Rückkopplungsschleifen zwischen Ereignissen und außerdem fehlt die Darstellung der Gewichtung einzelner Ereignisse und die Möglichkeit, die Details der kausalen Prozesse zu erfassen. Diese vernachlässigten Aspekte könnten durch Causal Loop Diagrams (siehe Beispiel in Abb. 5) oder Fuzzy Cognitive Maps (Carvalho 2013) oder auch Dynamische Netzwerkanalyse (Lemercier 2015b) modelliert werden.</p>
-		          <figure>
-                	<graphic url="FRANK_Ingo_Digitale_Vernunft_zwischen_Text_und_Diagramm-10000201000003F100000301B9301622.png"/>
-			            <head><hi rend="bold">Abb. 5</hi>: Causal Loop Diagram des Konflikts zwischen der polnischen Regierung und Solidarność (aus Coleman et al. 2006)</head>
-		          </figure>
-                <p>Die ersten fünf von Mahoney (1999) aus Skocpol (1979) extrahierten kausalen Faktoren, sollen zur Veranschaulichung einer zusätzlichen Möglichkeit zur expliziten Strukturierung mit Hypertext Maps ausreichen:</p>
+                <head>Discussion and Conclusion</head>
+                <p>Various analyses (not only the presented) conducted have shown two properties of abbreviations which can help understand and read Old Georgian and Latin abbreviations.</p>
                 <list type="ordered">
-                    <item>Property relations prevent introduction of new agricultural techniques (S. 55)</item>
-                    <item>Tax system discourages agricultural innovation (S. 55)</item>
-                    <item>Sustained growth discourages agricultural innovation (S. 55)</item>
-                    <item>Backwardness of French agriculture (esp. vis-à-vis England) (S. 56)</item>
-                    <item>Weak domestic market for industrial goods (S. 55–56)</item>
+                    <item>the overwhelming majority of abbreviations contains the first letter of the extension</item>
+                    <item>morphological type is an important factor for abbreviating, for Old Georgian the end of the word stem is likely to disappear whereas suffixes tend to be represented, the last letter being likely for the contraction principle</item>
+                    <item>for Latin we found that consonants are more likely to occur in an abbreviation than vowels, less frequent consonants more than frequent ones</item>
                 </list>
-                <p>Die Kausalkette von 4 nach 5 wird von Skocpol (1979) z. B. mit einer Reihe von historischen Studien belegt. Diese Verweise können in einem Hypertext-Narrativ mit typisierten Links (Peroni / Shotton 2012) explizit gemacht werden.</p>
-                <p>Wie ein kritischer Rückblick in die Geschichte der Hypertext-Forschung zeigt, sind wesentliche Anforderungen an Hypertext-Systeme bisher immer noch nicht zufriedenstellend erfüllt. Ich werde zeigen, wie einige der sieben offenen Punkte/Issues von Halasz (2001) mit aktueller Semantic Web- und Informationsvisualisierungstechnologie angegangen werden können. Suche unter Berücksichtigung der Hypertextstruktur (Issue 1) kann auf Basis von Ontologie-basiertem Hypertext im RDF-Datenmodell realisiert werden. Berechnungen aufgrund der Hypertextstruktur (Issue 4) könnten durch den Einsatz von Dynamischer Netzwerkanalyse und Fuzzy Cognitive Maps (Carvalho 2012) umgesetzt werden.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ergebnisse</head>
-                <p>Die ‚digitale Vernunft‘ erfordert es schließlich, daß geisteswissenschaftliches 
-                    <hi rend="bold">Erklären</hi> bzw. 
-                    <hi rend="bold">Verstehen</hi> (von Wright 1971) in einem angemessen methodologischen (Schützeichel 2015) und ontologischen Rahmen (Little 2010) abläuft. Mechanistische Erklärung bietet ein explanatorischen Rahmenwerk, um z. B. die verschiedenen ‚Ismen‘ der Politikwissenschaft zu vereinen (Bennett 2013).
-                </p>
-                <p>Die Relevanz von Digital Mapmaking als Hilfsmittel zur Erklärung historischer Ereignisse zeigt sich insbesondere beim Einsatz von Hypertext Maps zur Strukturierung von historischen Narrativen. Historische Narrative können dabei durchaus als mechanistische Erklärungen historischer Ereignisse aufgefaßt werden (Glennan 2010). Analog zum Periodensystem chemischer Elemente kann ein diagrammatischer Hypertext auf Lücken im theoretisch fundierten Gerüst eines kausalen Narrativs hinweisen, um diese durch Methoden wie Process Tracing (Bennett 2010) zu füllen. Zusätzlich zu mechanistischer Erklärung unterstützt Hypertext multiperspektivische Erklärung historischer Ereignisse (Shaw 2013; Jensen 2013; Krameritsch 2009).</p>
-                <p>Die Ergebnisse bringt schließlich ein erneuter Blick in die Hypertext-Geschichte auf den Punkt: “Linearity was never an option for historical writing; hypertextuality can make complex structure concrete, clear and responsive to both the author and the reader.” (Eastgate Systems 2005)</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Zusammenfassung und Ausblick</head>
-                <p>Etablierte qualitative Methoden wie QCA, Process Tracing und Netzwerkanalyse werden in den Digital Humanities vernachlässigt oder, wie Netzwerkanalyse (Haug 2008), nicht kritisch genug eingesetzt – im Sinne von zu wenig formaler Modellierung (Lemercier 2015a). Der Einsatz dieser Methoden im Bereich der Digital Humanities setzt die formale Modellierung der geisteswissenschaftlichen Untersuchungsgegenstände voraus.</p>
-                <p>Die Rolle von formaler Ontologie für die Digital Humanities beim Aufbau von Regionalontologien für die Geisteswissenschaften (Gnoli 2008) und der Repräsentation von Wissen aus verschiedenen diziplinären Perspektiven und Kontexten wird an dieser Stelle deutlich (Frank 2017b). Bisher gibt es nur wenig Ansätze, die die Komplexität der geisteswissenschaftlichen Realität dabei angemessen berücksichtigen (Grossner 2010; Fokkens et al. 2016; Garbacz 2015).</p>
-                <p>Im Vortrag werden abschließend erste eigene formal-ontologische Modellierungsbeispiele und diagrammatische Visualisierungen kausaler Narrative historischer Ereignisse gemäß dem vorgestellten Ansatz präsentiert und offene Probleme und Fragen zur Diskussion gestellt.</p>
+                <p>Combinatorial evidence suggests that keeping in mind all possible abbreviations even in case of contraction is unlikely for longer words. Considering that Old Georgian as an agglutinative language produces long words this may partly explain why there is larger variety in the abbreviation landscape, since in each abbreviation process another possible abbreviation may have surfaced.</p>
             </div>
         </body>
         <back>
+         <div type="notes">
+            <note xml:id="ftn1" n="1" place="foot">
+                            <ref target="https://www.cedifor.de/en/cedifor/current-pilot-projects/pilot-projects/digitale-erschliessung-epigraphischer-denkmaeler/">
+                                https://www.cedifor.de/en/cedifor/current-pilot-projects/pilot-projects/digitale-erschliessung-epigraphischer-denkmaeler
+                            </ref>
+                        </note>
+            <note xml:id="ftn2" n="2" place="foot">
+                            <ptr target="http://titus.fkidg1.uni-frankfurt.de/texte/etcg/cauc/ageo/inscr/carcera/carce.htm/"/> and 
+                            <ptr target="http://gnc.gov.ge/gnc/page"/>
+                        </note>
+            <note xml:id="ftn3" n="3" place="foot"> See also Hoenen &amp; Samushia (2016)</note>
+            <note xml:id="ftn4" n="4" place="foot">
+                            <ptr target="http://edh-www.adw.uni-heidelberg.de/home"/>
+                        </note>
+            <note xml:id="ftn5" n="5" place="foot"> In principle, all but sign languages should make use of vowels, at least empirically in the Word atlas of language structures, Dryer and Haspelmath (2013) (see wals.info), there are no languages with less than 2 vowel qualities. Furthermore the lowest consonant vowel ratio in 563 languages has still more consonants (10) than vowels (9), see Maddieson (2013b,a).</note>
+            <note xml:id="ftn6" n="6" place="foot"> A third observation on vowels could be related: vowels are synchronically (dialects) and diachronically (language change) less stable.</note>
+            <note xml:id="ftn7" n="7" place="foot"> We write formulas in LaTeX syntax in order to avoid for simple formulae to be given too much space.</note>
+            <note xml:id="ftn8" n="8" place="foot"> Note, that an abbreviation can be understood as a k-skip-n-gram, Guthrie et al. (2006). The first numbers in the summing column of the table then coincide with the numbers (sum of) of all possible k-skip-n-grams for w (and all possible 
+                        <hi rend="italic">n</hi> and
+                        <hi rend="italic"> k</hi>).
+                    </note>
+         </div>
          <div type="bibliogr">
                 <listBibl>
-                    <head>Bibliographie</head>
+                    <head>Bibliography</head>
                     <bibl>
-                        <hi rend="bold">Behrendt, Hans R. / Burch, Thomas / Weinmann, Martin</hi> (2010): <hi rend="italic">Der Digitale Peters: Arno Peters’ Synchronoptische Weltgeschichte</hi>. Frankfurt am Main: Zweitausendeins.
+                        <hi rend="bold">Boeder, W.</hi> (1987). Versuch einer sprachwissenschaftlichen Interpretation der altgeorgischen Abkürzungen. In:
+                        <hi rend="italic"> Revue des études géorgiennes et caucasiennes</hi> 3:33–81.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Benardou, Agiatis / Constantopoulos, Panos / Dallas, Costis / Gavrilis, Dimitris</hi> (2010): A Conceptual Model for Scholarly Research Activity, in: <hi rend="italic">iConferencePapers 2010</hi>.
+                        <hi rend="bold">Carreiras, M., Duñabeitia, J. A., and Molinaro, N.</hi> (2009). Consonants and vowels contribute differently to visual word recognition: Erps of relative position priming. I: 
+                        <hi rend="italic">C</hi>
+                        <hi rend="italic">erebral Cortex</hi> 19(11):2659–2670.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Bennett, Andrew</hi> (2010): Process Tracing and Causal Inference, in: Brady, Henry E. (Hrsg.) / Collier, David (Hrsg.): <hi rend="italic">Rethinking Social Inquiry: Diverse Tools, Shared Standards</hi>, Rowman &amp; Littlefield Publishers.
+                        <hi rend="bold">Carroll, J.</hi> (2003). 
+                        <hi rend="italic">Oxford handbook of computational linguistics</hi>. Oxford University Press.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Bennett, Andrew</hi> (2013): The mother of all isms: Causal mechanisms and structured pluralism in International Relations theory, in: <hi rend="italic">European Journal of International Relations</hi> 19, 3: 459–481.
+                        <hi rend="bold">Chanceaux, M., Mathôt, S., and Grainger, J. </hi>(2013). Flank to the left, flank to the right: Testing the modified receptive field hypothesis of letter- specific crowding. In: 
+                        <hi rend="italic">Journal of Cognitive Psychology </hi>25(6):774–780.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Brauer, Wilfried / Haacke, Wolfhart / Münch, Siegfried</hi> (1989): <hi rend="italic">Studien- und Forschungsführer Informatik</hi>. Springer.
+                        <hi rend="bold">Dandurand, F., Grainger, J., Duñabeitia, J. A., and Granier, J.-P.</hi> (2011). On coding non-contiguous letter combinations. In: 
+                        <hi rend="italic">Frontiers in psychology</hi> 2:136.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Carvalho, João P.</hi> (2012): <hi rend="italic">Rule Based Fuzzy Cognitive Maps in Humanities, Social Sciences and Economics</hi>. 289–300, in: Seising, Rudolf (Hrsg.) / González, Veronica S. (Hrsg.): <hi rend="italic">Soft Computing in Humanities and Social Sciences</hi>, Springer.
+                        <hi rend="bold">Driscoll, M.</hi> (2009). Marking up abbreviations in old norse-icelandic manuscripts. In: 
+                        <hi rend="italic">Medieval Texts–Contemporary Media</hi>. Ibis.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Carvalho, João P.</hi> (2013): On the Semantics and the Use of Fuzzy Cognitive Maps and Dynamic Cognitive Maps in Social Sciences, in: <hi rend="italic">Fuzzy Sets and Systems</hi> 214: 6–19.
+                        <hi rend="bold">Dryer, M. S. and Haspelmath, M.,</hi> (eds) (2013). WALS Online. Max Planck Institute for Evolutionary Anthropology, Leipzig.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Champagne, Marc</hi> (2016): Diagrams of the Past: How Timelines Can Aid the Growth of Historical Knowledge, in: <hi rend="italic">Cognitive Semiotics</hi> 9, 1: 11–44.
+                        <hi rend="bold">Gippert, J. </hi>(1995). TITUS. Das Projekt eines indogermanistischen Thesaurus (”TITUS. The project of an Indo-European thesaurus”). In: 
+                        <hi rend="italic">LDV- Forum</hi> 12(2):35–47.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Coleman, Peter T. / Vallacher, Robin R. / Nowak, Andrzej / Bui-Wrzosińska, Lan</hi> (2006): Protracted Conflicts as Dynamical Systems, in: Kupfer Schneider, Andrea (Hrsg.) / Honeyman, Christopher (Hrsg.): <hi rend="italic">The Negotiator’s Fieldbook: The Desk Reference for the Experienced Negotiator</hi>. American Bar Association, (Section of Dispute Resolution) 61–74.
+                        <hi rend="bold">Guthrie, D., Allison, B., Liu, W., Guthrie, L., and Wilks, Y.</hi> (2006). A closer look at skip-gram modelling. In: 
+                        <hi rend="italic">Proceedings of the 5th international Conference on Language Resources and Evaluation (LREC-2006): </hi>1–4.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Crotty, Michael</hi> (1998): <hi rend="italic">The Foundations of Social Research: Meaning and Perspective in the Research Process</hi>. SAGE Publications.
+                        <hi rend="bold">Hoenen, </hi>
+                        <hi rend="bold">A.</hi>
+                        <hi rend="bold"> and Samushia, </hi>
+                        <hi rend="bold">L.</hi> (2016). Gepi: An Epigraphic Corpus for Old Georgian and a Tool Sketch for Aiding Reconstruction, In: 
+                        <hi rend="italic">JLCL </hi>31 (2):25–38.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Eastgate Systems</hi> (2005): Hypertext and the Linearity of History. – URL http://www.eastgate.com/HypertextNow/archives/History.html
+                        <hi rend="bold">Kreidler, C. W. </hi>(1979). Creating new words by shortening. In: 
+                        <hi rend="italic">Journal of English Linguistics</hi> 13(1):24–36.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Engelbart, Douglas C.</hi> (1962): Augmenting Human Intellect: A Conceptual Framework. – Forschungsbericht.
+                        <hi rend="bold">Maddieson, I. </hi>(2013a). WALS, Consonant-Vowel Ratio. Max Planck Institute for Evolutionary Anthropology, Leipzig.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Fokkens, Antske S. / ter Braake, Serge / Maks, Isa / Ceolin, Davide</hi> (2016): <hi rend="italic">On the Semantics of Concept Drift: Towards Formal Definitions of Semantic Change</hi>, in: Darányi, S. (Hrsg.) / Hollink, L. (Hrsg.) / Meroño Peñuela, A. (Hrsg.) / Kontopoulos, E. (Hrsg.): Proceedings of Drift-a-LOD.
+                        <hi rend="bold">Maddieson, I.</hi> (2013b). WALS, Vowel Quality Inventories. Max Planck Institute for Evolutionary Anthropology, Leipzig.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Frank, Ingo</hi> (2017a): Digital Humanities und Semiotik oder wie man die Unterstützung und Erweiterung geisteswissenschaftlichen Denkens durch Computerprogramme semiotisch erklären kann, in: Deutsche Gesellschaft für Semiotik (DGS) e. V. (Hrsg.): <hi rend="italic">15. Internationaler Kongress der Deutschen Gesellschaft für Semiotik (DGS)</hi> 70. – Panel 4: Chancen und Grenzen Digitaler Geisteswissenschaften, Sektion Digital Humanities.
+                        <hi rend="bold">Marchand, H. </hi>(1969). The categories and types of present-day English word formation: A synchronic-diachronic approach. Beck.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Frank, Ingo</hi> (2017b): Interdisciplinary Knowledge Organization as Intersection between Information Science and Digital Humanities, in: Burghardt, Manuel (Hrsg.) / Kattenbeck, Markus (Hrsg.): <hi rend="italic">ISI 2017 Satellite Workshop on the Relationship of Information Science and the Digital Humanities</hi> 25–33.
+                        <hi rend="bold">McArthur, T. </hi>(1988). The cult of abbreviation. In: 
+                        <hi rend="italic">English Today</hi> 4(03):36–42.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Garbacz, Pawel</hi> (2015): Challenges for Ontological Engineering in the Humanities – A Case Study of Philosophy, in: Garoufallou, Emmanouel (Hrsg.) / Hartley, Richard J. (Hrsg.) / Gaitanou, Panorea (Hrsg.): <hi rend="italic">Metadata and Semantics Research</hi>. Cham: Springer International Publishing 27–38.
+                        <hi rend="bold">McArthur, T. B. and McArthur, F.</hi> (1992). The Oxford companion to the English language. Oxford University Press.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">George, Alexander L. / Bennett, Andrew</hi> (2005): Case Studies and Theory Development in the Social Sciences. MIT Press, (BCSIA Studies in International Security).
+                        <hi rend="bold">Rayner, K., Pollatsek, A., Ashby, J., and jr. Clifton, C. </hi>(2012). Psychology of Reading. Psychology Press, New York/Hove.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Glennan, Stuart</hi> (2010): Ephemeral Mechanisms and Historical Explanation, in: <hi rend="italic">Erkenntnis</hi> 72, 2: 251–266.
+                        <hi rend="bold">Rúa, P. L.</hi> (2004). Acronyms &amp; co.: A typology of typologies= acrónimos y cía: una tipología de tipologías. In: 
+                        <hi rend="italic">Estudios Ingleses de la Universidad Complutense</hi> 12:109–129.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Gnoli, Claudio</hi> (2008): Categories and Facets in Integrative Levels, in: <hi rend="italic">Axiomathes</hi> 18, 2: 177–192.
+                        <hi rend="bold">Shannon, C. E.</hi> (1948). A mathematical theory of communication. In: 
+                        <hi rend="italic">Bell System Technical Journal</hi> 27:379–423.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Goertz, Gary / Mahoney, James</hi> (2005): Two-Level Theories and Fuzzy-Set Analysis, in: <hi rend="italic">Sociological Methods &amp; Research</hi> 33, 4: 497–538.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Grossner, Karl</hi> (2010): <hi rend="italic">Representing Historical Knowledge in Geographic Information Systems</hi>, University of California, Santa Barbara, Dissertation.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Halasz, Frank G.</hi> (2001): Reflections on NoteCards: Seven Issues for the Next Generation of Hypermedia Systems, in: <hi rend="italic">ACM Journal of Computer Documentation</hi> 25, 3: 71–87.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Haug, Sonja</hi> (2008): Migration Networks and Migration Decision-Making, in: <hi rend="italic">Journal of Ethnic and Migration Studies</hi> 34, 4: 585–605.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Jensen, Anthony K.</hi> (2013): <hi rend="italic">Nietzsche’s Philosophy of History</hi>. Cambridge University Press.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Kolmer, Lothar</hi> (2008): UTB Profile. Bd. 3002: <hi rend="italic">Geschichtstheorien</hi>. Fink.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Krameritsch, Jakob</hi> (2009): Die fünf Typen des historischen Erzählens – im Zeitalter digitaler Medien, in: <hi rend="italic">Zeithistorische Forschungen</hi> 3: 413–432. – URL http://www.zeithistorische-forschungen.de/3-2009/id=4566
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Lemercier, Claire</hi> (2015a): Formal network methods in history: why and how? In: <hi rend="italic">Social Networks, Political Institutions, and Rural Societies</hi>. Brepols 281–310. – URL https://halshs.archives-ouvertes.fr/halshs-00521527
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Lemercier, Claire</hi> (2015b): Taking time seriously: How do we deal with change in historical networks?, in: Düring, Marten (Hrsg.) / Gamper, Markus (Hrsg.) / Reschke, Linda (Hrsg.): <hi rend="italic">Knoten und Kanten III</hi>. Transcript Verlag 183–211. – URL https://hal.archives-ouvertes.fr/hal-01445932
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Little, Daniel</hi> (2010): <hi rend="italic">Historical Concepts and Social Ontology</hi>. 41–72, in: <hi rend="italic">New Contributions to the Philosophy of History</hi>. Dordrecht: Springer Netherlands.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Mahoney, James</hi> (1999): Nominal, Ordinal, and Narrative Appraisal in Macrocausal Analysis, in: <hi rend="italic">American Journal of Sociology</hi> 104, 4: 1154–1196.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Peroni, Silvio / Shotton, David</hi> (2012): FaBiO and CiTO: ontologies for describing bibliographic resources and citations, in: <hi rend="italic">Journal of Web Semantics: Science, Services and Agents on the World Wide Web</hi> 17: 33–43. – URL http://speroni.web.cs.unibo.it/publications/peroni-2012-fabio-cito-ontologies.pdf
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Peters, Arno / Peters, Anneliese</hi> (1952): <hi rend="italic">Synchronoptische Weltgeschichte</hi>. Frankfurt am Main: Universum-Verlag.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Piotrowski, Michael</hi> (2016): <hi rend="italic">Digital Humanities, Computational Linguistics, and Natural Language Processing</hi>. Lectures on Language Technology and History. – URL http://stp.lingfil.uu.se/~nivre/docs/michael_piotrowski_2016.pdf
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Schützeichel, Rainer</hi> (2015): <hi rend="italic">Pfade, Mechanismen, Ereignisse. Zur gegenwärtigen Forschungslage in der Soziologie sozialer Prozesse</hi>. 87–147, in: Schützeichel, Rainer (Hrsg.) / Jordan, Stefan (Hrsg.): Prozesse: Formen, Dynamiken, Erklärungen. Wiesbaden: Springer VS.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Shaw, Ryan</hi> (2013): A Semantic Tool for Historical Events, in: <hi rend="italic">Proceedings of the 1st Workshop on Events: Definition, Detection, Coreference, and Representation</hi>, Association for Computational Linguistics 38–46.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Skocpol, Theda</hi> (1979): <hi rend="italic">States and Social Revolutions: A Comparative Analysis of France, Russia, and China</hi>. Cambridge University Press.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Szostak, Rick</hi> (2004): <hi rend="italic">Information Science and Knowledge Management</hi>. Bd. 7: <hi rend="italic">Classifying Science: Phenomena, Data, Theory, Method, Practice</hi>. Springer Netherlands.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">von Wright, Georg H.</hi> (1971): <hi rend="italic">Explanation and Understanding</hi>. Cornell University Press.
+                        <hi rend="bold">Slattery, T. J., Schotter, E. R., Berry, R. W., and Rayner, K.</hi> (2011). Parafoveal and foveal processing of abbreviations during eye fixations in reading: making a case for case. In: 
+                        <hi rend="italic">Journal of Experimental Psychology: Learning, Memory, and Cognition </hi>37(4):1022.
                     </bibl>
                 </listBibl>
             </div>

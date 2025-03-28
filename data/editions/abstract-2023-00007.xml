@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="BELL_Peter_Open_and_Closed_AI__Eine_Kunstkritik_künstlich_ge" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="PETERSEN_FREY_Fynn_Erweiterbare__interaktive_Softwareplattfo" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Open and Closed AI. Eine Kunstkritik künstlich generierter Bilder</title>
+                <title type="full">
+                    <title type="main">Erweiterbare, interaktive Softwareplattform für die Anwendung von Sprachtechnologie in großen Textkorpora zur Unterstützung von Such- und Analyseworkflows in den Digital Humanities</title>
+                    <title type="sub"/>
+                </title>
                 <author>
                     <persName>
-                        <surname>Bell</surname>
-                        <forename>Peter</forename>
+                        <surname>Petersen-Frey</surname>
+                        <forename>Fynn</forename>
                     </persName>
-                    <affiliation>Philipps-Universität Marburg, Deutschland</affiliation>
-                    <email>peter.bell@uni-marburg.de</email>
+                    <affiliation>Universität Hamburg, Deutschland</affiliation>
+                    <email>fynn.petersen-frey@uni-hamburg.de</email>
+                    <idno type="ORCID">0000-0001-6450-8100</idno>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-12-15T19:03:00Z</date>
+                    <date>2022-08-02T14:14:29.430363668</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -42,7 +46,7 @@
                     </address>
                 </publicationStmt>
             <sourceDesc>
-                <p>Converted from a Word document</p>
+                <p>Converted from an OASIS Open Document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -58,115 +62,149 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag</term>
+                    <term>Doctoral Consortium</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Digitale Kunstgeschichte</term>
-                    <term>Kunstkritik</term>
-                    <term>Computer Vision</term>
-                    <term>aiart</term>
-                    <term>Dall-e 2</term>
-                    <term>openai</term>
-                    <term>Critical Machine Vision</term>
-                    <term>Bildverarbeitung</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Bilderfassung</term>
-                    <term>Gestaltung</term>
-                    <term>Bewertung</term>
-                    <term>Stilistische Analyse</term>
-                    <term>Bilder</term>
-                    <term>Visualisierung</term>
+                    <term>Software</term>
+                    <term>Plattform</term>
+                    <term>NLP</term>
+                    <term>Sprachtechnologie</term>
+                    <term>Text</term>
+                    <term>Digital Humanities</term>
+                    <term>Annotation</term>
+                    <term>Kodierung</term>
+                    <term>Suche</term>
+                    <term>Embeddings</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p style="text-align: left; ">Unter dem Hashtag #aiart erscheinen täglich tausende künstlich erzeugte Bilder auf sozialen Medien und digitalen Marktplätzen z.B. als NFTs, flankiert von Kommentaren und Artikeln, welche die Qualität und Kreativität dieser Bildproduktionen diskutieren. </p>
-                <p style="text-align: left; ">Der Vortrag reflektiert diese Entwicklungen, indem er die Bilder und ihre Genese kritisch hinterfragt, wertet und die Prozesse analysiert. Dass Digital Humanities parallel zum wissenschaftlichen Rezensionswesen auch eine Kritik von Software entwickeln sollte, zeigt sich z.B. in der Gründung des CKIT Rezensionsjournal das aus dem AK digitale Kunstgeschichte und nfdi4culture entstanden ist. Im Zusammenhang generativer künstlicher Intelligenz weitet sich diese Softwarekritik in Form einer Werkkritik aus. Aufgrund der raschen Entwicklung innerhalb der Computer Vision und der generativen Modelle gibt es bislang wenige Reflexionen über deren Schöpfungshöhe (Gary et al. 2022) jenseits der informatischen Überbietungslogiken und der stetigen Diskussion über bias von AI. </p>
+            <div type="div1" rend="DH-Heading">
+                <head>Motivation und Einleitung</head>
+                <p>In Wissenschaftsdisziplinen wie den digitalen Geistes- und Sozialwissenschaften „Digital Humanities“ (DH), besteht ein großes Interesse daran, umfangreiche Mengen von Text, z.B. aus historischen Zeitschriften (Purschwitz 2018, 109–142), sozialen Medien (Stier u. a. 2017, 1365–1388) oder Zeitungen, hinsichtlich verschiedener Fragestellungen auszuwerten. Dabei ist oft eine Kombination von qualitativen Analyseschritten mit quantitativen Auswertungen gefragt (Stulpe und Lemke 2016, 17–61).</p>
+                <p>Eine ausschließlich manuelle Bearbeitung ist angesichts des Umfangs und des daraus resultierenden Aufwands oftmals ausgeschlossen. In diesen Fällen ermöglicht es eine (teil-)automatisierte computerlinguistische Verarbeitung dennoch Analyse und Auswertung durchzuführen.</p>
+                <p>Ziel dieses Dissertationsvorhabens ist es daher geeignete Methoden zu entwickeln und in eine moderne Sprachtechnologieplattform zu integrieren, die es Wissenschaftlern aus den DH ermöglicht, selbstständig große Textkorpora mit Hilfe (teil-)automatischer Verarbeitungsschritte aus der CL vorzubereiten und hinsichtlich vielfältiger Fragestellungen auszuwerten. Dies umfasst lexikalische wie semantische Suchfunktionen, intuitive Annotationsfunktionen, AI- bzw. Human-in-the-Loop Funktionalitäten zur (teil-)automatischen Skalierung von Annotationen auf große Korpora, über klassische syntaktische Anreicherungen hinausgehende inhaltliche NLP-Methoden wie Koreferenzausflösung und Zitaterkennung sowie qualitative und quantitative Analysemöglichkeiten.</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>OpenAI und closed access. Technikkritik </head>
-                <p style="text-align: left; ">Digitale Kunstkritik setzt bereits ein, wo die Frage gestellt wird, ob dieses popkulturelle Phänomen Gegenstand der Kunstgeschichte oder der Medienwissenschaften ist oder – wie öffentlich viel diskutiert – es sich überhaupt um Kunst handeln kann. Die Frage ist leicht zu beantworten, denn in dem Moment, wo über Kunst oder nicht Kunst entschieden werden muss, bedarf es unvermeidlich der Methoden der Kunstgeschichte und Kunstkritik. #Aiart könnte auf einer rein ästhetisch-visuellen Ebene mit konventionellen Methoden der Kunstwissenschaft bewertet werden. Dadurch, dass die Bilder nicht von Menschen sondern in erster Linie von einem mathematischen Modell erzeugt werden, bietet sich an eine operative und technikzentrierte Medienkritik in die Kunstkritik zu integrieren. Die hier durchzuführende kritische Reflexion über AI Art findet somit in der digitalen Kunstgeschichte als Teil der Digital Humanities statt. Dies geschieht in Form Medienarchäologie, in der das maschinelle Lernen und die verschiedenen Modelle mit- und gegeneinander arbeitender neuronaler Netze untersucht werden. Dabei zeigt sich eine Vielzahl an Architekturen von GANs und Transformer-Netzwerken<ref n="1" target="ftn1"/> deren Ergebnisse teils zusätzlich noch durch verschiedene Trainingsdatenbanken<ref n="2" target="ftn2"/> variiert werden können. Die 2014 mit generative adversial networks (GAN) begonnene Entwicklung hat sich in den letzten drei Jahren deutlich beschleunigt und zu immer realistischeren Bildern geführt. Während einige Modelle selbstständig Bilder erzeugen, ist die Eingabe via Bildbeschreibung quasi als Kommando (prompt) zum Standard der künstlichen Bildproduktion geworden. Diese Texteingabe ist möglich, da in DALL-E ein Sprachmodell (GPT-3) mit Algorithmen zur Bilderzeugung kombiniert ist. Auch durch dieses Zusammenkommen von Bildverarbeitung/Visualisierung und Computerlinguistik besteht hier für die Digital Humanities ein großes Potential an Forschung, Anwendung und Kritik. Daneben verbinden sich durch die Bildsynthese die Forschungsfelder Computer Vision und Computer Grafik noch enger, so dass ein transdisziplinärer bildwissenschaftlicher Gegenstand vorliegt. Eine erste Phase von ‚Kunstkritik‘ ist den Architekturen schon eingeschrieben, da ständig entschieden wird, welche Bilder den Trainingsdaten ähneln oder durch andere Kriterien als angemessen erscheinen. 
+            <div type="div1" rend="DH-Heading">
+                <head>Forschungsstand</head>
+                <p>Verwandte Software aus der Computerlinguistik wie 
+                    <hi rend="italic">brat</hi> (Stenetorp u. a. 2012, 102–107), 
+                    <hi rend="italic">WebAnno</hi> (Eckart de Castilho u. a. 2016, 76–84), 
+                    <hi rend="italic">INCEpTION</hi> (Klie u. a. 2018, 5–9) oder 
+                    <hi rend="italic">TextAnnotator</hi> (Abrami u. a. 2020, 891–900) sind vorrangig für linguistische Annotationen gedacht, um annotierte Korpora zu erstellen; weniger jedoch für die inhaltliche Bearbeitung einer DH-Forschungsfrage mittels Suche, Annotation, Aggregation und Analyse.
                 </p>
-                <p style="text-align: left; ">DALL-E der Stiftung OpenAI lässt sich durch sieben Gründe nicht als ‚open‘ bezeichnen, da der Code ist bislang nicht publiziert worden und die Daten anhand derer das maschinelle Lernen durchgeführt wurde (oder werden) nicht bekannt sind. Bekannt ist lediglich, dass es sich um im Internet gescrapte Bild- und Textkombinationen (z.B. Bild und Bildunterschriften) handelt. Zudem gab es zunächst keinen freien Zugang zur Nutzung, sondern nur eine Registrierung über eine Warteliste und keine Transparenz über die Zugangsvergabe. Seit 20.07.2022 ist DALL-E monetarisiert, indem nach einer gewissen Anzahl unentgeltlicher Bilder, dann für weitere Bilderzeugungen bezahlt werden muss. Ähnlich wie bei Midjourney erscheinen diese Kosten allerdings relativ moderat. Die generierten Bilder gehören alle openai. Selbst wenn ein eigener Bildupload die Grundlage bildete oder das Kommando eine Innovation/Schöpfungshöhe besitzt. Allerdings räumt openai seit Juli 2022 eine Nutzung der Bilder auch zu kommerziellen Zwecken ein. Gleichzeitig wehren sich Künstler*innen international gegen die unfreiwillige Verwendung ihrer Bilder als Trainingsdaten, da ihr Stil so sehr einfach reproduzierbar wird. </p>
-                <p style="text-align: left; ">Die Offenheit von DALL-E wird zuletzt durch eine teils rigide Content Policy eingeschränkt, wodurch Bilder mit sensiblen Inhalten oder Deepfakes verhindert werden sollen. Andere Modelle wie Stablediffusion sind offen im Hinblick auf open source, open access und freier Texteingabe, was wiederum Kritik aufgrund der Missbrauchsmöglichkeiten erzeugt. </p>
-                <p style="text-align: left; ">Eine kritische Reflexion darüber, ob OpenAI mit dieser Herangehensweise nicht ihrer eigenen Stiftungscharta<ref n="3" target="ftn3"/> widerspricht, kann nur angerissen werden. Die Geschlossenheit der kommerziellen Systeme wie DALL-E, IMAGEGEN und PARTI ist allerdings nur ein Aspekt, der eine wissenschaftliche Erforschung und Kritik erschwert. Der Aufbau konkurrenzfähiger Modelle an Universitäten scheitert oft am Aufbau der Trainingsdatensätze sowie der Infrastruktur respektive Rechenleistung für das maschinelle Lernen. Die akademische Forschung hat somit Schwierigkeiten selbst unabhängige Architekturen zu erstellen und kann gleichzeitig mangels Verständnisses der führenden Modelle keine fundierte Kritik zu deren Funktionsweise artikulieren. Modelle wie Stablediffusion (Rombach 2022) zeigen hingegen, dass durchaus konkurrenzfähige Architekturen im akademischen Kontext entstehen klönnen. Insgesamt besteht allerdings die Herausforderung die Verfahren der oft als black box beschriebenen Netze zu interpretieren. Dies ist u.a. möglich durch den Vergleich der unterschiedlichen Modelle und Trainingsdatensätzen oder Ergebnissen aus unterschiedlichen Phasen der Bildgenerierung, sowie durch Prompt Engineering als experimentelle Methode. Bei letzterer kombiniert und ergänzt man in Versuchsreihen die Satzteile einer Befehlszeile in unterschiedlichen Reihenfolgen. Dabei können auch Marker gesetzt werden, z.B. indem im Kommando dazu aufgefordert wird, Personen einzufärben oder auf andere Weise Objekte zu markieren, um zu sehen, ob das Modell nicht nur Bilder des Konzepts kopiert, sondern ein tieferes Verständnis des Konzepts hat. Auch kann untersucht werden, wie ein Bild durch Zugabe oder Umformulierung von Text realistischer wird. An dieser Stelle zeigt sich auch wie subjektiv die Kriterien der Bewertung sind. Welche Grundlage hat die Wahrnehmung ein Bild realistischer oder die Umsetzung (man könnte auch sagen Inszenierung) eines prompts gelungener zu finden?
+                <p>Für spezifische Recherchezwecke existieren computerlinguistische Anwendungen wie 
+                    <hi rend="italic">SiNLP</hi> (Crossley u. a. 2014, 511–534) zur Diskursanalyse, 
+                    <hi rend="italic">ALCIDE</hi> (Moretti u. a. 2016, 100–112) zur Analyse von historischem und politischem Diskurs, 
+                    <hi rend="italic">new/s/leak</hi> (Wiedemann u. a. 2018, 313–322) zum Entdecken berichtenswerter Geschehnisse in großen Textkorpora sowie 
+                    <hi rend="italic">LawStats</hi> (Ruppert u. a. 2018, 212–222) zur Suche und Analyse von Revisionen des Bundesgerichtshofs. Diese Anwendungen sind jedoch weniger geeignet andere Fragestellungen zu bearbeiten.
+                </p>
+                <p>In den Sozialwissenschaften gängige qualitative Analysetools wie 
+                    <hi rend="italic">MaxQDA</hi> oder 
+                    <hi rend="italic">atlas.ti</hi> verfügen über Annotations- und qualitative Analysefunktionen, sind aber proprietär, erlauben kaum Kollaboration und bieten keine modernen NLP-Methoden.
+                </p>
+                <p>
+                    <hi rend="italic">Recogito</hi> (Simon u. a. 2017, 111–132) und 
+                    <hi rend="italic">CATMA</hi> (Gius u. a., 2022) sind intuitive Annotationsanwendungen für die DH mit Kollaborationsfunktionen. 
+                    <hi rend="italic">Recogito </hi>setzt 
+                    <hi rend="italic">e</hi>inen Fokus auf Orte und Integration in eine Karte mittels automatischer Erkennung von Entitäten. 
+                    <hi rend="italic">CATMA</hi> bietet konfigurierbare Annotationsschemata und vielfältige Analysefunktionen. Beide verfügen jedoch nur über eine bescheidene bzw. keine Suche, wenig Unterstützung für große Korpora und keine Möglichkeit zur Skalierung manueller Annotationen.
+                </p>
+                <p>
+                    <hi rend="italic">WebLicht</hi> (Hinrichs u. a. 2010, 25–29) integriert enorm viele NLP-Module, die zu individuellen Pipelines zusammengefügt werden können.
+                    <hi rend="italic"> </hi>
+                    <hi rend="italic">Nopaque</hi> (Universität Bielefeld 2022) unterstützt historische Dokumente mittels OCR und syntaktische Analysen anhand Keyword-In-Context-Suche auf Basis
+                    <hi rend="italic"> </hi>gängiger NLP-Modelle und individueller NLP-Pipelines. Beiden fehlen jedoch Annotationsmöglichkeiten, Kollaborationsfunktionen, Dokumentensuche sowie Möglichkeiten zur quantitativen Analyse großer Korpora.
+                </p>
+                <p>
+                    <hi rend="italic">ILCM</hi> (Niekler u. a. 2018, 1313–1319) ist eine Textmining-Umgebung für die datengetriebene Forschung auf der großen Textmengen mittels statistischer Analysen. Es fehlen jedoch moderne NLP-Modelle sowie interaktive Funktionalitäten wie Annotation oder Suche.
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Kunstkritik </head>
-                <p style="text-align: left; ">Neben der Medienarchäologie zu neuronalen Netzen und dem maschinellen Lernen muss hier also eine zweite Form der Auseinandersetzung gefunden werden, die sich methodisch an klassische Kategorien und Werte der Kunstkritik anlehnt. Diese Werte sind nicht essentialistisch zu verstehen, sondern relativistisch. So kann ein visueller Turing-Test durchgeführt werden, indem gefragt wird, ob das Bild für computergeneriert oder eine Fotografie bzw. von Menschen digital oder konventionell erstellte Grafik gehalten wird. Hier zeigt sich, dass in DALL-E 2 viele Bilder erzeugbar sind (Photograph of a house in the Bauhaus style; Abb. 1), die in diesem Turing-Test bestehen, während andere unbefriedigende Ergebnisse liefern (17th century landscape painting). Das Problem ist in vielen Fällen nicht die Imitation eines Stils, sondern die Form der dargestellten Dinge also die Detailschilderungen (im Fall der niederländischen Landschaftsmalerei sind es monströse Kühe). Die Bildgeneratoren insbesondere DALL-E 2 sind intelligent im Sinne von Mimikry. Sie können die Oberflächen von Dingen, Stilen, Texturen und Beleuchtungen überzeugend widergeben ohne ein tieferes Verständnis der Gegenstände zu haben. Die für die Kunstgeschichte und Kunstkritik so wichtigen Pole, Kunst und Natur, haben auch bei der künstlichen Bildgenerierung eine Bedeutung. Das antrainierte „Weltwissen“ führt dazu, dass die Modelle auch in der Natur vorhandene Proportionen internalisieren – also visuelle Prinzipien der Kompositionalität befolgen. Entsprechend fällt es beispielsweise dem Algorithmus schwer Elefanten zu erzeugen, die kleiner als Schildkröten sind. Dadurch erscheint auch der Namensgeber Salvatore Dali für DALL-E eher unpassend, weil dessen radikal unnatürlichen Schöpfungen innerhalb seiner surrealen Kunst mit DALL-E kaum zu reproduzieren und noch weniger von diesem Modell zu erfinden wären. </p>
-                <p style="text-align: left; ">Auf diese Weise sollen Kriterien bzw. die so genannten Rubriken der Kunstkritik (Vogt 2010) wie Bilderfindung, Komposition, Ausdruck, Stil und Dekorum, Naturnähe (im Sinne von real-world-data) und Kunstrezeption untersucht werden. Auf ikonologischer Ebene führt die Bildkritik direkt in gesellschaftliche Zusammenhänge. Denn auch bei den neuen Generationen von Bildgeneratoren zeigen sich der Bias, der in Bezug auf das maschinelle Lernen bereits viel besprochen wurde (z.B. Stereotype Frauen- und Männerberufe sowie nicht-weiße Kriminelle werden wie selbstverständlich erzeugt), während die vollständige Unwissenheit bzgl. einiger kanonischer Werke der Kunst- und Kulturgeschichte auch die mangelnde Historizität der Trainingsdaten aufzeigt. </p>
-                <p style="text-align: left; ">Anhand der exemplarischen Beurteilung der synthetischen Bilder soll es weniger um Urteile der einzelnen Bilder gehen, als um die Aufstellung von Kriterien und Erkenntnisse über die Potentiale von aiart insgesamt. Dabei zeichnet sich ab, dass wir es mit einer Form von Mimikry zu tun haben, durch die Oberflächen und Stile immer besser imitiert werden können, während komplexere Kompositionen und Konzepte scheitern. Die Forschungen zu aiart entstanden im Rahmen des SPP „Das digitale Bild“ im Projekt „Bildsynthese als Methode des kunsthistorischen Erkenntnisgewinns“ (2019-2022). In Ausblick und Diskussion soll auch darauf eingegangen werden, welche weiteren Anwendungsfelder sich in der Kunstgeschichte für die künstlich generierten Bilder aufzeigen lassen.</p>
-                <figure>
-                    <graphic n="1001" width="16.002cm" height="6.496402777777778cm" url="Pictures/5f9d1f3ed088661758ed9c64e5e1676e.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">
-                    <hi rend="italic" xml:space="preserve">Abb. 1: Mit Dall-E 2 erzeugte Bauhaus Architekturen. </hi>
+            <div type="div1" rend="DH-Heading">
+                <head>Forschungsvorhaben und Forschungsfragen</head>
+                <p>Das Forschungsvorhaben steht unter der übergreifenden Forschungsfrage: Wie kann eine digitale Arbeitsumgebung entwickelt werden, welche undogmatisch die Anwendung von DH-Methoden durch moderne NLP-Methoden für Suche, Annotation, Skalierung, Aggregation und Analyse auf großen Korpora unterstützt?</p>
+                <p>Das Ziel ist es geeignete Methoden für eine Sprachtechnologieplattform zu entwerfen, die intuitiv aus den DH genutzt werden kann, um manuelle Arbeit mit Textdokumenten automatisch auf große Korpora zu skalieren. Dies umfasst u. a. eine semantischen Suche um ähnliche Aussagen zu einer bestimmten Textpassage im gesamten Korpus zu finden, die Möglichkeit gefundenen Textpassagen qualitativ manuell zu analysieren oder automatisch zu aggregieren für quantitative Auswertungen. Im Zusammenspiel von Entity-Linking, Koreferenzauflösung, Zitaterkennung und Auffinden ähnlicher Textpassagen soll eine Skalierung manueller Annotation bzw. Kodierung von Textspannen auf den gesamten Korpus ermöglicht werden, indem Annotationen einzelner Textstellen auf passende Stellen gesamten Korpus angewandt wird.</p>
+                <p>Wie können dem aktuellen Stand der Forschung entsprechende computerlinguistische Methoden undogmatisch und intuitiv für die Bearbeitung verschiedener DH-Fragestellungen nutzbar gemacht werden?</p>
+                <p>Zum aktuellen Stand der Forschung zählen kontextualisierte Embeddings wie 
+                    <hi rend="italic">BERT</hi> (Devlin u. a. 2019, 4171–4186), die jedem Wort und (Ab-)Satz eine Bedeutung in Abhängigkeit des Kontexts anhand der Position in einem hochdimensionalen Vektorraum zuordnen. Wie lässt sich auf dieser Basis eine semantische Ähnlichkeitssuche zum Auffinden verwandter Aussagen mit variierender Länge entwickeln? Dabei ist zu klären, welche Lösungen für die rechenintensiven Operationen bei der Ähnlichkeitssuche mit großen Korpora skalieren.
                 </p>
+                <p>Um diese NLP-Methoden nutzbar zu machen, werden sie in eine webbasierte Benutzeroberfläche integriert, die das Durchsuchen, Annotieren, Skalieren, Aggregieren und Auswerten großer Korpora mittels der zuvor beschriebenen computerlinguistischen Funktionalitäten unterstützt. Ferner wird geeignete Softwarearchitektur entworfen, welche die Integration bestehender und zukünftiger CL-Softwarebibliotheken ermöglicht.</p>
             </div>
         </body>
         <back>
-<div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
-                         StyleGAN, VQGAN+CLIP, GAUGAN, craiyon, DALL-E 1 und 2, Imagegen, Midjourney, Stablediffusion. 
-                    </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
-                         z.B. ImageNet, OpenImage, CelebA.
-                    </note>
-<note rend="footnote text" xml:id="ftn3" n="3">
-                         OpenAI Charter:
-                            <hi rend="Hyperlink" xml:space="preserve"> https://openai.com/charter/</hi>
-                        
-                    </note></div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">Chen, Weiwen, Mohammad Shidujaman, und Xuelin Tang</hi> (2020). 
-                        <hi rend="italic">AiArt: Towards Artificial Intelligence Art</hi>. In The 12th International Conference on Advances in Multimedia.
+                        <hi rend="bold">Abrami, Giuseppe, Manuel Stoeckel und Alexander Mehler.</hi> 2020. “TextAnnotator: A UIMA Based Tool for the Simultaneous and Collaborative Annotation of Texts”. English. In: 
+                        <hi rend="italic">Proceedings of The 12th Language Resources and Evaluation Conference</hi>. Marseille, France: European Language Resources Association, S. 891–900. isbn: 979-10-95546-34-4. url: https://www.aclweb.org/anthology/2020.lrec-1.112.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Esser, Patrick, Robin Rombach, und Björn Ommer (</hi>2021
-                        <hi rend="italic">). Taming Transformers for High-Resolution Image Synthesis</hi>, Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pp. 12873-12883.
+                        <hi rend="bold">Crossley, Scott A., Laura K. Allen, Kristopher Kyle und Danielle S. McNamara.</hi> 2014. “Analyzing Discourse Processing Using a Simple Natural Language Processing Tool”. In: 
+                        <hi rend="italic">Discourse Processes 51.5-6</hi>, S. 511–534. doi: 10.1080/0163853X.2014.910723.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Kohle, Hubertus, und Stefan Germer (1991)</hi>. „Spontaneität und Rekonstruktion. Zur Rolle, Organisationsform und Leistung der Kunstkritik im Spannungsfeld von Kunsttheorie und Kunstgeschichte“. Buchbeitrag. Wiesbaden. 
-                        <ref target="https://archiv.ub.uni-heidelberg.de/artdok/109/">https://archiv.ub.uni-heidelberg.de/artdok/109/</ref>.
+                        <hi rend="bold">Devlin, Jacob, Ming-Wei Chang, Kenton Lee und Kristina Toutanova.</hi> 2019. “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding”. In: 
+                        <hi rend="italic">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)</hi>. Minneapolis, Minnesota: Association for Computational Linguistics, S. 4171–4186. doi: 10.18653/v1/N19- 1423. url: https://www.aclweb.org/anthology/N19-1423.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Marcus, Gary, Ernest Davis, und Scott Aaronson</hi> (2022). 
-                        <hi rend="italic">A very preliminary analysis of DALL-E 2</hi>. arXiv, 2. Mai 2022. 
-                        <ref target="https://doi.org/10.48550/arXiv.2204.13807">https://doi.org/10.48550/arXiv.2204.13807</ref>.
-                    </bibl>
-                    <bibl>Offert, Fabian, und Peter Bell (2022). 
-                        <hi rend="italic">Generative Digital Humanities</hi>. In CHR, pp. 202–212.
+                        <hi rend="bold">Eckart de Castilho, Richard, Éva Mújdricza-Maydt, Seid Muhie Yimam, Silvana Hartmann, Iryna Gurevych, Anette Frank und Chris Biemann.</hi> 2016. “A Web-based Tool for the Integrated Annotation of Semantic and Syntactic Structures”. In: 
+                        <hi rend="italic">Proceedings of the Workshop on Language Technology Resources and Tools for Digital Humanities (LT4DH)</hi>. Osaka, Japan: The COLING 2016 Organizing Committee, S. 76–84. url: https://www.aclweb.org/anthology/W16-4011.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Oppenlaender, Jonas</hi> (2022). 
-                        <hi rend="italic">Prompt Engineering for Text-Based Generative Art</hi>. preprint arXiv:2204.13988.
+                        <hi rend="bold">Gius, Evelyn, Jan Christoph Meister, Malte Meister, Marco Petris, Christian Bruck, Janina Jacke, Mareike Schumacher, Dominik Gerstorfer, Marie Flüh, </hi>
+                        <hi rend="bold">und</hi>
+                        <hi rend="bold"> Jan Horstmann.</hi> 2022. “CATMA”. Zenodo, url: https://doi.org/10.5281/zenodo.6419805.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Rombach, Robin, et al</hi>. (2022). 
-                        <hi rend="italic">High-Resolution Image Synthesis with Latent Diffusion Models</hi>. 2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), IEEE, 2022, pp. 10674–85, 
-                        <ref target="https://doi.org/10.1109/CVPR52688.2022.01042">https://doi.org/10.1109/CVPR52688.2022.01042</ref>.
+                        <hi rend="bold">Hinrichs, Erhard W., Marie Hinrichs and Thomas Zastrow.</hi> 2010. “WebLicht: Web-Based LRT Services for German”. In: Proceedings of the ACL 2010 System Demonstrations. S. 25–29. url: http://www.aclweb.org/anthology/P10-4005
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Saharia, Chitwan, William Chan, Saurabh Saxena, Lala Li, Jay Whang, Emily Denton, Seyed Kamyar Seyed Ghasemipour, et al.</hi> (2022). 
-                        <hi rend="italic">Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding</hi>. arXiv. 
-                        <ref target="https://doi.org/10.48550/arXiv.2205.11487">https://doi.org/10.48550/arXiv.2205.11487</ref>.
+                        <hi rend="bold">Klie, Jan-Christoph, Michael Bugert, Beto Boullosa, Richard Eckart de Castilho und Iryna Gurevych.</hi> 2018. “The INCEpTION Platform: Machine-Assisted and Knowledge-Oriented Interactive Annotation”. In: 
+                        <hi rend="italic">Proceedings of the 27th International Conference on Computational Linguistics: System Demonstrations. Association for Computational Linguistics</hi>, S. 5–9. url: http://tubiblio.ulb.tu-darmstadt.de/106270/.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Sparkes, Matthew</hi> (2022). 
-                        <hi rend="italic">AI Art Tool Covertly Alters Requests</hi>. New Scientist 255, Nr. 3397 (30. Juli 2022): 10. 
+                        <hi rend="bold">Moretti, Giovanni, Rachele Sprugnoli, Stefano Menini und Sara Tonelli.</hi> 2016. “ALCIDE: Extracting and visualising content from large document collections to support humanities studies”. In: 
+                        <hi rend="italic">Knowledge-Based Systems 111</hi>, S. 100–112. issn: 0950-7051. doi: https://doi.org/10.1016/j.knosys.2016.08.003. url: http://www.sciencedirect.com/science/article/pii/S0950705116302635.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Vogt, Margrit</hi> (2010). 
-                        <hi rend="italic">Von Kunstworten und -werten: Die Entstehung der deutschen Kunstkritik in Periodika der Aufklärung</hi>. De Gruyter, Berlin. 
+                        <hi rend="bold">Niekler, Andreas, Arnim Bleier, Christian Kahmann, Lisa Posch, Gregor Wiedemann, Kenan Erdogan, Gerhard Heyer und Markus Strohmaier.</hi> 2018. “ILCM - A Virtual Research Infrastructure for Large-Scale Qualitative Data”. In: 
+                        <hi rend="italic">Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)</hi>. Miyazaki, Japan: European Language Resources Association (ELRA), S. 1313–1319 url: https://www.aclweb.org/anthology/L18-1209.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Purschwitz, A.</hi> (2018). “Netzwerke des Wissens – Thematische und personelle Relationen innerhalb der halleschen Zeitungen und Zeitschriften der Aufklärungsepoche (1688-1818)”. In: 
+                        <hi rend="italic">Journal of Historical Network Research</hi> 2 (1), S. 109–142.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ruppert, Eugen, Dirk Hartung, Phillip Sittig, Tjorben Gschwander, Lennart Rönneburg, Tobias Killing und Chris Biemann.</hi> 2018. LawStats – Large-Scale German Court Decision Evaluation Using Web Service Classifiers. In: 
+                        <hi rend="italic">Machine Learning and Knowledge Extraction: Second IFIP TC 5, TC 8/WG 8.4, 8.9, TC 12/WG 12.9 International Cross-Domain Conference, CD-MAKE 2018</hi>, Hamburg, Germany, August 27–30, 2018, Proceedings. Springer-Verlag, Berlin, Heidelberg, 212–222. doi: 10.1007/978-3-319-99740-7_14
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">S</hi>
+                        <hi rend="bold">imon, Rainer, Elton Barker, Leif Isaksen </hi>
+                        <hi rend="bold">und</hi>
+                        <hi rend="bold"> Pau De Soto CaÑamares.</hi> 2017. “Linked Data Annotation Without the Pointy Brackets: Introducing Recogito 2”. In: Journal of Map &amp; Geography Libraries, 13:1, S. 111–132. doi: 10.1080/15420353.2017.1307303
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stenetorp, Pontus, Sampo Pyysalo, Goran Topić, Tomoko Ohta, Sophia Ananiadou und Jun’ichi Tsujii.</hi> 2012. “brat: a Web-based Tool for NLP-Assisted Text Annotation”. In: 
+                        <hi rend="italic">Proceedings of the Demonstrations at the 13th Conference of the European Chapter of the Association for Computational Linguistics</hi>. Avignon, France: Association for Computational Linguistics, S. 102–107. url: https://www.aclweb.org/anthology/E12-2021.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stier, Sebastian, Lisa Posch, Arnim Bleier und Markus Strohmaier.</hi> 2017. “When populists become popular: comparing Facebook use by the right-wing movement Pegida and German political parties”. In: 
+                        <hi rend="italic">Information, Communication &amp; Society</hi> 20, S. 1365–1388. doi: 10.1080/1369118X.2017.1328519.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stulpe, Alexander und Matthias Lemke.</hi> 2016. “Blended Reading”. In: 
+                        <hi rend="italic">Text Mining in den Sozialwissenschaften: Grundlagen und Anwendungen zwischen qualitativer und quantitativer Diskursanalyse</hi>. Hrsg. von Matthias Lemke und Gregor Wiedemann. Wiesbaden: Springer Fachmedien Wiesbaden, S. 17–61. isbn: 978-3-658-07224-7. doi: 10.1007/978-3-658-07224-7_2. url: https://doi.org/10.1007/978-3-658-07224-7_2.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wiedemann, Gregor, Seid Muhie Yimam und Chris Biemann. </hi>2018. “New/s/leak 2.0 – Multilingual Information Extraction and Visualization for Investigative Journalism”. In: 
+                        <hi rend="italic">Social Informatics</hi>. Hrsg. von Steffen Staab, Olessia Koltsova und Dmitry I. Ignatov. Cham: Springer International Publishing, S. 313–322. isbn: 978-3-030-01159-8.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Universität Bielefeld.</hi> 2022. “nopaque”. https://nopaque.uni-bielefeld.de (zugegriffen 12. Dezember 2022)
                     </bibl>
                 </listBibl>
             </div>

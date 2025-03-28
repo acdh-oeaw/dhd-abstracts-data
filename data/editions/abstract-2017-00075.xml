@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="vortrag-SCHRA" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="poster-DOEHL" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>Nachhaltige Softwareentwicklung in den Digital Humanities. Konzepte und Methoden.</title>
+<title>PaLaFra – Entwicklung einer Annotationsumgebung für ein diachrones Korpus spätlateinischer und altfranzösischer Texte</title>
 <author>
 <persName>
-<surname>Schrade</surname>
-<forename>Torsten</forename>
+<surname>Döhling</surname>
+<forename>Lars</forename>
 </persName>
-<affiliation>Akademie der Wissenschaften und der Literatur Mainz, Deutschland</affiliation>
-<email>Torsten.Schrade@adwmainz.de</email>
+<affiliation>Universität Regensburg, Deutschland</affiliation>
+<email>lars.doehling@ur.de</email>
+</author>
+<author>
+<persName>
+<surname>Burghardt</surname>
+<forename>Manuel</forename>
+</persName>
+<affiliation>Universität Regensburg, Deutschland</affiliation>
+<email>manuel.burghardt@ur.de</email>
+</author>
+<author>
+<persName>
+<surname>Wolff</surname>
+<forename>Christian</forename>
+</persName>
+<affiliation>Universität Regensburg, Deutschland</affiliation>
+<email>christian.wolff@ur.de</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2016-08-26T21:35:00Z</date>
+<date>2015-10-04T22:02:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -41,100 +57,147 @@
 <profileDesc>
 <textClass>
 <keywords n="category" scheme="ConfTool">
-<term>Vortrag</term>
+<term>Poster</term>
 </keywords>
 <keywords n="subcategory" scheme="ConfTool">
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Agile Softwareentwicklung</term>
-<term>DevOps</term>
-<term>Domain Driven Design</term>
-<term>Behaviour Driven Development</term>
+<term>Tagset</term>
+<term>Splätlatein</term>
+<term>Altfranzösisch</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
 <term>Programmierung</term>
-<term>Projektmanagement</term>
-<term>Webentwicklung</term>
-<term>Infrastruktur</term>
-<term>Software</term>
+<term>Annotieren</term>
+<term>Bereinigung</term>
+<term>Bearbeitung</term>
+<term>Einführung</term>
+<term>Metadaten</term>
+<term>Text</term>
+<term>Werkzeuge</term>
+<term>Visualisierung</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<p>Ausgehend von den umfangreichen Infrastrukturinitiativen der vergangenen Jahre existieren inzwischen vielfältige digitale Ressourcen, Werkzeuge und Dienste, die von einer lebhaften digitalen Forschungskultur in den Geisteswissenschaften zeugen. Arbeitsgruppen wie beispielsweise NESTOR oder auch die DINI-Initiative haben es sich zur Aufgabe gemacht, Empfehlungen und 
-                <hi rend="italic">best practices</hi> für den gesamten Lebenszyklus digitaler geisteswissenschaftlicher Forschungsprojekte (Datenerfassung, Datenverwaltung, Datenpublikation, Datenarchivierung) zu entwickeln. Mit dem von DARIAH und TextGrid initiierten Memorandum zur nachhaltigen Bereitstellung digitaler Forschungsinfrastrukturen für die Geistes- und Kulturwissenschaften in Deutschland ist das Thema ‚Digitale Nachhaltigkeit‘ ganz besonders in den Fokus gerückt (s. 
-                <ref target="http://dhd-blog.org/?p=6559">http://dhd-blog.org/?p=6559</ref>). 
+<p>Ziel von 
+                <hi rend="italic">PaLaFra</hi>
+<ref n="1" target="poster-DOEHLftn1" type="note">1</ref> („Le passage du latin au français“) ist der Aufbau eines digitalen Korpus spätlateinischer und altfranzösischer Texte, das durch die Kombination von Lemmatisierung, syntaktischer und morphologischer Annotation sowie diskurspragmatischen und texttypologischen Deskriptoren komplexe Abfragestrategien ermöglicht und so eine qualitativ neuartige Nutzung der Texte bei der Rekonstruktion des lateinisch-romanischen Sprachwandels erreichen soll. Daran arbeitet ein deutsch-französisches Team der Universität Regensburg, der Universität Tübingen, der 
+                <hi rend="italic">École Normale Supérieure</hi> in Lyon und der Universität Lille, das seit Sommer 2015 von der Deutschen Forschungsgemeinschaft (DFG) und der 
+                <hi rend="italic">Agence Nationale de Recherche</hi> (ANR) gefördert wird. Das Projektteam ist interdisziplinär ausgerichtet und besteht aus romanischen Sprachwissenschaftlern, Computerlinguisten und Medieninformatikern. Während für den Bereich des Altfranzösischen auf das bestehende 
+                <hi rend="italic">Base de Français Médiéval</hi>-Korpus
+                <ref n="2" target="poster-DOEHLftn2" type="note">2</ref> zurückgegriffen werden kann, so ist die Erstellung eines — was die Annotation angeht — kompatiblen Korpus spätlateinischer Texte ein wichtiges Teilziel des 
+                <hi rend="italic">PaLaFra</hi>-Projekts.
             </p>
-<p>Während das Bewußtsein für eine nachhaltige Erschließung kultureller Objekte durch den Einsatz entsprechender Datenformate und -standards inzwischen als hoch eingeschätzt werden kann, gelingt eine nachhaltige Integration von Softwarewerkzeugen in die konkrete Forschungswirklichkeit geisteswissenschaftlicher Projekte noch nicht immer. Die Gründe hierfür sind divers und reichen von einer immer noch existierenden, mangelnden Akzeptanz bzw. Berührungsangst der Geisteswissenschaftler_innen hinsichtlich informationstechnischer Verfahren bis hin zu einer nicht an den Projektzielen ausgerichteten Implementierung der benötigten Software seitens der technischen Partner eines Projektes.</p>
-<p>Ein bisher wenig berücksichtigter aber ganz zentraler Grund ist jedoch, dass die Ebene der Softwareentwicklung in den Nachhaltigkeitsdiskussionen der Digital Humanities bisher kaum eine Rolle spielt. Erst seit diesem Jahr liegt ein erster Bericht zu generellen Voraussetzungen für die Nachhaltigkeit von Forschungssoftware vor (Hettrick 2016). Dieser kommt zu folgendem Schluss: „many researchers know how to code, but few understand the wider set of skills that are needed to develop reliable, reproducible and reusable software. […] software engineering should be incorporated […] at the very start of a research career.“ (Hettrick 2016, S. 14). Neben den sicherlich notwendigen Überlegungen zur Nachhaltigkeit geisteswissenschaftlicher Forschungsdaten sollte künftig mehr darauf geachtet werden, neben der reflexiven Ebene auch das konkrete entwicklerische Handwerkszeug in Digital Humanities Studiengänge einzubeziehen. Insbesondere müssen entwicklerische Leistungen als gleichrangige akademische Tätigkeit anerkannt werden (vgl. Hettrick, S. 13). Neben die Theorie sollte ein akademisch anerkanntes Digital Humanities “Craftsmanship” treten.
-                <ref n="1" target="vortrag-SCHRAftn1" type="note">1</ref>
-</p>
-<p>Die Gründe für eine nicht nachhaltige Entwicklung geisteswissenschaftlicher Software sind relativ einfach zu identifizieren und keineswegs spezifisch für das akademische Entwicklungsumfeld. Sie spielen genauso in der freien Wirtschaft oder der Open Source Szene eine Rolle. Zu den Hauptgründen einer mangelnden Software-Nachhaltigkeit können beispielsweise gehören:</p>
-<list type="unordered">
-<item>Eine ausgelaufene Projektfinanzierung, wodurch der Weiterbetrieb der Software nicht mehr gewährleistet ist,</item>
-<item>Entwickler_innen, die dem Projekt nicht mehr zu Verfügung stehen, aber vor ihrem Weggang die ausschließlichen Wissensträger waren,</item>
-<item>eine veraltete und nicht mehr wartbare Infrastruktur,</item>
-<item>veralteter oder unverständlicher Programmcode, der von neu einsteigenden Entwickler_innen weitergeführt werden muss,</item>
-<item>Sicherheitslücken, die vermeidbar gewesen wären, jetzt aber einen Weiterbetrieb der Software verhindern,</item>
-<item>(schwerwiegende) Bugs in der Software, die erst im Produktivbetrieb auffallen, da vorher keine Softwaretests durchgeführt wurden,</item>
-<item>ein fehlendes Monitoring der geisteswissenschaftlichen Forschungsanwendung, wodurch Störfälle nicht oder erst spät auffallen.</item>
-</list>
-<p>Blickt man vor diesem Hintergrund in die freie Wirtschaft und Softwareindustrie und fragt nach aktuellen Projektmanagement-Methoden bzw. Herangehensweisen zur Steigerung der Qualität und Nachhaltigkeit einer Software, lässt sich sehr schnell feststellen, dass insbesondere die unter dem Stichwort „Agile Softwareentwicklung“ gefassten methodischen Ansätze sich sehr gut eignen, um den genannten Herausforderungen entgegenzutreten (vgl. Ayelt 2014). Obwohl agile Entwicklungsansätze häufig unterschiedliche Teilaspekte eines Entwicklungs-Workflows adressieren (bspw. die Konzeptionsebene, die Entwicklungsebene, die Ebene des Testings oder des Deployments einer Software), legen alle doch den Schwerpunkt auf eine kontinuierliche Kommunikation aller Projektbeteiligten untereinander (von den Stakeholdern über die Entwickler_innen bis zu den Testnutzer_innen und Endnutzer_innen). Agile Softwareentwicklung sieht häufig in einer für alle nachvollziehbaren Kommunikation den entscheidenden Schlüssel für ein erfolgreiches und nachhaltiges Softwareprodukt.</p>
-<p>Hiermit befinden wir uns aber wiederum sehr nahe an den Digital Humanities. Schon lange wird für Digitale Geisteswissenschaftler_innen eine kommunikative Schlüsselstellung reklamiert. Als Mediatoren mit Fachwissen aus zwei Welten sollen sie eine für alle Parteien gemeinsame, verständliche Sprache entwickeln und so die unterschiedlichen geistes- und informationswissenschaftlichen Konzepte eines Forschungsprojektes miteinander in Einklang bringen.</p>
-<p>Das Team der Digitalen Akademie der Mainzer Akademie der Wissenschaften und der Literatur integriert bereits seit 2009 Konzepte aus dem Bereich der agilen Softwareentwicklung in die tägliche Forschungs-, Entwicklungs- und Projektarbeit. Hierbei werden auf verschiedenen Ebenen Konzepte angewendet, die sich über die Zeit als besonders geeignet für geisteswissenschaftliche Anwendungskontexte herausgestellt haben. Sowohl zur Steigerung der Softwarequalität, insbesondere aber auch zur Steigerung der Nachhaltigkeit der Forschungsapplikationen wurde mit der Zeit eine an den Prinzipien der „Continuous Delivery“ ausgerichtete Prozesskette aufgebaut (zum Begriff vgl. Wolff 2015). </p>
-<p>Die nachfolgende Grafik gibt einen Überblick über die einzelnen Ebenen dieser Prozesskette.</p>
+<p>In diesem Posterbeitrag berichten wir über Herausforderungen und Lösungsansätze bei der Erstellung einer Annotationsumgebung und eines diachronen Tagsets, das gleichermaßen in der Lage ist, die Idiosynkrasien der beiden Sprachstufen adäquat abzubilden, aber auch die diachronen Elemente im Sprachwandel einheitlich zu markieren.</p>
+<p>Bereits für das spätlateinische Teilkorpus zeigt sich, dass es an einem standardisierten Tagset fehlt. Mindestens drei Varianten wurden in der Vergangenheit für die Annotation (spät-)lateinischer Texte entwickelt: 
+                <hi rend="italic">CoLaMer</hi> (Selig et al. 2015), 
+                <hi rend="italic">CompHistSem</hi> (Eger et al. 2015) und 
+                <hi rend="italic">LASLA</hi> (Denooz 1978). Diese unterscheiden sich sowohl in den zugrunde liegenden linguistischen Konzepten als auch in ihrer Granularität. Demzufolge existiert auch kein einfaches Mapping zwischen ihnen. Für die Entwicklung eines sprachübergreifenden Tagsets in 
+                <hi rend="italic">PaLaFra</hi> kommt erschwerend hinzu, dass die beiden Zielsprachen — Spätlatein und Altfranzösisch — trotz ihrer Verwandtschaft klare strukturellen Unterschiede aufweisen.
+            </p>
+<p>Zumindest für die Ebene der Wortarten (PoS, Part-of-Speech) liefert beispielsweise das Projekt 
+                <hi rend="italic">Universal Dependencies</hi>
+<ref n="3" target="poster-DOEHLftn3" type="note">3</ref> wichtige Anhaltspunkte für ein sprachübergreifendes Tagset. Dieses Projekt hat sich die Entwicklung sprachübergreifend-kompatibler Baumbanken als Ziel gesetzt hat, die auf universellen Wortartkategorien basieren. Trotzdem bedingt die Entwicklung eines übergreifenden Tagsets oft den manuellen Vergleich von Annotationen, z.B. durch visuelle Gegenüberstellung annotierter Parallelkorpora. Unsere Recherche ergab, dass es an einem adäquaten Werkzeug für diese Aufgabe mangelt. Einerseits gibt es unzählige Annotationswerkzeuge, welche auf die Darstellung nur eines Textes samt Annotationen fokussieren (Burghardt 2014, Neves and Leser 2014). Auf der anderen Seite gibt es Alignierwerkzeuge, die auf die parallele Darstellung von Texten spezialisiert sind, aber dabei Annotation meist ignorieren, z.B. 
+                <hi rend="italic">LF Aligner</hi>
+<ref n="4" target="poster-DOEHLftn4" type="note">4</ref>, 
+                <hi rend="italic">Moses</hi>
+<ref n="5" target="poster-DOEHLftn5" type="note">5</ref> oder 
+                <hi rend="italic">ParaVoz</hi>
+<ref n="6" target="poster-DOEHLftn6" type="note">6</ref>. Um diese Lücke zu schließen, haben wir auf der Basis von 
+                <hi rend="italic">InterText</hi>
+<ref n="7" target="poster-DOEHLftn7" type="note">7</ref> — einem im Webbrowser zu bedienenden Alignierwerkzeug (Vondricka 2014) — ein Vergleichswerkzeug für annotierte Parallelkorpora entwickelt. Unsere Erweiterung unterstützt sowohl die Hervorhebung zueinander kompatibler (PoS-)Tags als auch die flexible Darstellung von Lemmata und morpho-syntaktischen Annotationen (
+                <ref rend="fldSimple mergeformat" target="#Ref459211164">Abbildung 1</ref>). Die dafür nötigen Informationen werden beim Import aus den TEI-XML-Daten extrahiert und mit Hilfe von JavaScript dynamisch visualisiert.
+            </p>
 <figure>
-<graphic height="14.310430555555556cm" n="1001" rend="inline" url="vortrag-SCHRA-image1.png" width="16.002cm"/>
+<graphic height="3.887611111111111cm" n="1001" rend="inline" url="poster-DOEHL-image1.png" width="15.989652777777778cm"/>
+<head>
+<hi rend="italic">Abbildung </hi>
+<hi rend="italic">: Das Bildschirmfoto zeigt die modifizierte InterText-Ansicht, erkennbar oben an der zusätzlichen Schalterleiste. Links ist die lateinische „Vita Benedicti“ (Vogüe und Antin 1979) zu sehen, annotiert mit dem LASLA Tagset (Denooz 1978), rechts das französische Gegenstück „Vie de saint Benoit“ (Foerster 1876), annotiert mit dem Cattex Tagset (Guillot et al. 2010). Aktuell ist sowohl die Hervorhebung kompatibler PoS-Tags („Toogle color“) als auch die Anzeige der vollständigen PoS-Annotation („Toogle POS (full)“) aktiviert.</hi>
+</head>
 </figure>
-<p>Auf Ebene der Konzeption und Programmierung kommen zwei Herangehensweisen zum Einsatz: das sogennannte Domain-Driven Design (DDD) und das Behaviour-Driven Development (BDD). Domain-Driven Design ist dabei zum einen eine Herangehensweise an die Modellierung komplexer Software, zum anderen ein bestimmtes Denkkonzept zur Steigerung der Produktivität von Softwareprojekten im Umfeld komplexer fachlicher Zusammenhänge. Das Hauptaugenmerk fällt dabei auf die Einführung einer ubiquitären (allgemein verständlichen) Sprache, welche in allen Bereichen der Softwareerstellung von den Konzeptionsgesprächen mit den Fachwissenschaftler_innen bis hin zur Code-Ebene verwendet werden sollte. Domain-Driven Design ist unabhängig von Programmiersprachen, Tools und Frameworks (vgl. Evans 2013, S. 13). DDD eignet sich ausgezeichnet für eine nachhaltige und offene Modellierung geisteswissenschaftlicher Anwendungskontexte, da iterativ gearbeitet wird. Zu Beginn der Domänen-Modellierung ist in geisteswissenschaftlichen Forschungsprojekten die eigentliche Datengrundlage und der Funktionsumfang der zu erstellenden Software häufig nicht vollständig klar. Beides entsteht sukzessive in der Beschäftigung mit dem Forschungsgegenstand. Somit können während der eigentlichen Entwicklung häufig neue Gegenstände auftauchen, noch nicht bedachte Eigenschaften hinzukommen oder sich auch Teile der Applikationslogik grundlegend ändern. Durch regelmäßige Iterationen nach dem DDD-Prinzip kann die Software kontinuierlich mit der sich stetig wandelnden Projektrealität verändern. Die Codebasis bleibt dabei im Einklang mit der Konzeptions- bzw. Modellierungsebene.</p>
-<p>Behaviour-Driven Development wiederum geht davon aus, dass sich die Funktionalität einer Anwendungsdomäne (und somit die Geschäftslogik eines Domänen-Modells) durch formalisierte Szenarien in einer allgemeinverständlichen Sprache beschreiben lässt. BDD ist ein „outside-in“-Ansatz, der von außen (also mit dem Blick der Geisteswissenschaftlerinnen) auf eine Software blickt und deren Funktionalität in ausführbaren Tests dokumentiert. Ursprünglich im Umfeld des Test Driven Development entstanden, achtet auch BDD darauf, dass die Nutzungszenarien einer Software vor der eigentlichen Programmierung der Software erstellt werden. Dadurch dass die Tests in natürlicher Sprache nach einem festen Dreischritt-Prinzip (Angenommen…, Wenn…, Dann…) formuliert werden, kann die oftmals komplexe und wenig nachhaltige Präsentationsschicht und Funktionslogik einer Software in direkter Zusammenarbeit mit den Fachwissenschaftler_innen gemeinsam beschrieben und nachhaltig dokumentiert werden. In der Umsetzung hat dies für die Entwickler_innen den Vorteil, dass exakt nur soviel Code geschrieben werden muss, bis die jeweiligen Tests erfolgreich ablaufen und die Software exakt wie geplant funktioniert.</p>
-<p>Als dritte wichtige Säule in einem nachhaltigen Entwicklungsprozess ist die Virtualisierung und Automation der Infrastruktur nach ‚DevOps‘-Prinzipien (eine Zusammenfügung der beiden Begriffe Development und Operations) zu nennen. ‚DevOps‘ betrachtet ‚Infrastruktur als Code‘ und setzt entsprechende Werkzeuge ein, um eine vollständige Kapselung der Softwareschicht und gleichzeitige Reproduzierbarkeit der Gesamtapplikation einschließlich ihrer Infrastruktur zu erreichen. Der große Vorteil dieser Verfahrensweise liegt in der automatisch enstehenden Dokumention hochgradig spezialisierter Anwendungsumgebungen. Gleichzeitiger sind die „Baupläne“ dieser Anwendungsumgebungen in einem Versionskontrollsystem versionierbar.</p>
-<p>Alle bisher genannten Konzepte streben eine Versionierbarkeit ihrer Outputs an, was die Nachvollziehbarkeit und somit die Nachhaltigkeit auf der Software-Ebene deutlich steigert. Auf diese Weise hergestellte Software legt nicht nur offen, wie sie funktioniert, sondern wie sie hergestellt wurde und das auf allen Ebenen, von der Konzeption über die Programmierung und das Testing bis hin zum Deployment. Insofern kommt dem ‚Commit‘, also dem wiederholten Einspielungsvorgang der jeweiligen Entwicklungsstände die Rolle des zentralen Dreh- und Angelpunktes einer nachhaltigen Softwareentwicklung zu. Zusammenfassend lässt sich im Abgleich zu den oben genannten Punkten festhalten, dass bei einer nachhaltigen Softwareentwicklung</p>
-<list type="unordered">
-<item>insbesondere die beständige Kommunikation aller Projektbeteiligten untereinander einen zentralen Faktor darstellt,</item>
-<item>ein gemeinsames Vokabular festgelegt werden und dies auf allen Ebenen konsequent angewendet werden muss (Konzeption, Datenschema, Code, Tests etc.).</item>
-<item>auf forschungsgetriebene, agile Entwicklungsmethoden gesetzt werden sollte,</item>
-<item>ein nachvollziehbarer Entwicklungsprozess durch Versionskontrolle gewährleistet werden muss,</item>
-<item>die Infrastruktur nach DevOps-Prinzipien virtualisiert und automatisiert werden sollte,</item>
-<item>Softwaretests vor jedem Live-Deployment durchzuführen sind,</item>
-<item>die Applikation im Produktivbetrieb kontinuierlich überwacht werden muss.</item>
-</list>
-<p>Innerhalb des Vortrags werden die dargelegten Konzepte und Methoden anhand von Projektbeispielen genauer illustriert und zur Diskussion gestellt. Der Beitrag versteht sich somit als ein Erfahrungsbericht aus der mehrjährigen Arbeit im Kontext der Digital Humanities Projekte der Digitalen Akademie der Mainzer Akademie sowie des Mainzer Zentrums für Digitalität in den Geistes und Kulturwissenschaften (mainzed).</p>
+<p>Neben der eigentlichen Datenaufbereitung ist auch die Optimierung des Annotationsworkflows mit geeigneten Werkzeugen im Sinne verbesserter 
+                <hi rend="italic">User Experience </hi>ein wesentliches Projektziel (
+                <hi rend="italic">tool science</hi>, Wolff 2015). 
+            </p>
+<p>Die Entwicklung des spätlateinisch-altfranzösischen Tagsets wird im Projekt — auch mit Hilfe unseres modifizierten 
+                <hi rend="italic">InterText</hi>-Tools — vorangetrieben. In unserem Posterbeitrag erläutern wir das Vorgehen und präsentieren erste Ergebnisse.
+            </p>
 </body>
-<back><div type="Notes"><note n="1" rend="footnote text" xml:id="vortrag-SCHRAftn1"> In Anlehnung an den Begriff des 
-                        <hi rend="italic">software craftsmanship</hi>.
-                    </note></div>
+<back><div type="Notes"><note n="1" rend="footnote text" xml:id="poster-DOEHLftn1">
+<ref target="http://www.palafra.org/">http://www.palafra.org/</ref>
+</note><note n="2" rend="footnote text" xml:id="poster-DOEHLftn2">
+<ref target="http://bfm.ens-lyon.fr/">http://bfm.ens-lyon.fr/</ref>
+</note><note n="3" rend="footnote text" xml:id="poster-DOEHLftn3">
+<ref target="http://universaldependencies.org/">http://universaldependencies.org/</ref>
+</note><note n="4" xml:id="poster-DOEHLftn4">
+<ref target="http://sourceforge.net/projects/aligner/">http://sourceforge.net/projects/aligner/</ref>
+</note><note n="5" rend="footnote text" xml:id="poster-DOEHLftn5">
+<ref target="http://www.statmt.org/moses/">http://www.statmt.org/moses/</ref>
+</note><note n="6" rend="footnote text" xml:id="poster-DOEHLftn6">
+<ref target="https://bitbucket.org/rvwfels/paravoz2">https://bitbucket.org/rvwfels/paravoz2</ref>
+</note><note n="7" rend="footnote text" xml:id="poster-DOEHLftn7">
+<ref target="http://wanthalf.saga.cz/intertext">http://wanthalf.saga.cz/intertext</ref>
+</note></div>
 <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-<hi rend="bold">Komus, Ayelt</hi> (2014): 
-                        <hi rend="italic">Status Quo Agile 2014</hi>. 
-                        Hochschule Koblenz. 
-                        <ref target="https://www.hs-koblenz.de/rmc/fachbereiche/wirtschaft/forschung-projekte-weiterbildung/forschungsprojekte/status-quo-agile/">https://www.hs-koblenz.de/rmc/fachbereiche/wirtschaft/forschung-projekte-weiterbildung/forschungsprojekte/status-quo-agile/</ref> [letzter Zugriff 26. August 2016]. 
+<hi rend="bold">Burghardt, Manuel</hi> (2014):
+                        „Engineering annotation usability - Toward usability patterns for linguistic annotation tools“.
+                        Diss. Phil., Universität Regensburg, Institut für Information und Medien, Sprache und Kultur, urn:nbn:de:bvb:355-epub-307682.
                     </bibl>
 <bibl>
-<hi rend="bold">Evans, Eric</hi> (2003): 
-                        <hi rend="italic">Domain-Driven Design: Tackling Complexity in the Heart of Software</hi>. 
-                        Boston: Addison Wesley.
+<hi rend="bold">Denooz, Joseph</hi> (1978):
+                        „L’ordinateur et le latin, techniques et methods“,
+                        in:
+                        <hi rend="italic">Revue de l’Organisation Internationale pour l’Etude des Langues Anciennes par Ordinateur</hi> 4.
                     </bibl>
 <bibl>
-<hi rend="bold">Hettrick, Simon</hi> (2016): 
-                        <hi rend="italic">Research Software Sustainability: Report on a Knowledge Exchange Workshop</hi>. 
-                        Edinburgh: The Software Sustainability Institute.
+<hi rend="bold">Eger, Steffen / vor der Brück, Tim / Mehler, Alexander</hi> (2015):
+                        „Lexicon-assisted tagging and lemmatization in latin: A comparison of six taggers and two lemmatization methods“,
+                        in: 
+                        <hi rend="italic">LaTeCH 2015</hi> 105.
                     </bibl>
 <bibl>
-<hi rend="bold">Wolff, Eberhard</hi> (2015): 
-                        <hi rend="italic">Continuous Delivery: Der pragmatische Einstieg</hi>. 
-                        Heidelberg: dpunkt.verlag.
+<hi rend="bold">Guillot, Céline / Prévost, Sophie / Lavrentiev, Alexei</hi> (2010): 
+                        <hi rend="italic">Manuel de référence du jeu cattex09</hi>. technical manual, UMR ICAR, CNRS/ENS-LSH. 
+                        <ref target="http://bfm.ens-lyon.fr/IMG/pdf/Cattex2009_manuel_2.0.pdf">http://bfm.ens-lyon.fr/IMG/pdf/Cattex2009_manuel_2.0.pdf</ref>
+</bibl>
+<bibl>
+<hi rend="bold">Neves, Mariana / Leser, Ulf</hi> (2014):
+                        „A survey on annotation tools for the biomedical literature“,
+                        in:
+                        <hi rend="italic">Briefings in bioinformatics</hi> 15 (2): 327–340.
                     </bibl>
 <bibl>
-<hi rend="bold">Vernon, Vaughn</hi> (2013): 
-                        <hi rend="italic">Implementing Domain Driven Design</hi>. 
-                        Boston: Addison Wesley.
+<hi rend="bold">Selig, Maria / Eufe, Rembert / Linzmeier, Laura</hi> (2015): 
+                        <hi rend="italic">CoLaMer</hi> (corpus du latin mérovingien). (im Erscheinen).
+                    </bibl>
+<bibl>
+<hi rend="bold">Vondricka, Pavel</hi> (2014):
+                        „Aligning parallel texts with intertext“,
+                        in:
+                        <hi rend="italic">Proceedings of LREC 2014</hi>.
+                    </bibl>
+<bibl>
+<hi rend="bold">Vogüé, Adalbert de / Antin, Paul</hi> (1979): 
+                        <hi rend="italic">GREGOIRE LE GRAND, Dialogues</hi> II. 
+                        Cambridge University Press.
+                    </bibl>
+<bibl>
+<hi rend="bold">Von Foerster, Wendelin</hi> (1876): 
+                        <hi rend="italic">Li Dialoge Gregoire lo Pape. Altfranzösische Uebersetzung des XII. Jahrhunderts der Dialogen des Papstes Gregor, mit dem lateinischen Original, einem Anhang: Sermo de Sapientia und Moralium in Iob Fragmenta, einer grammatischen Einleitung, erklärenden Anmerkungen und einem Glossar</hi>, première partie: Textes. 
+                        Paris: Champion.
+                    </bibl>
+<bibl>
+<hi rend="bold">Wolff, Christian</hi> (2015):
+                        „The case for teaching ‚tool science‘. Taking software engineering and software engineering education beyond the confinements of traditional software development contexts“,
+                        in: 
+                        <hi rend="italic">Global Engineering Education Conference (EDUCON), 2015 IEEE</hi> 932–938 10.1109/EDUCON.2015.7096085
                     </bibl>
 </listBibl>
 </div>

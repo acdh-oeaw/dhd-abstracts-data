@@ -1,53 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="125_final-WEHNER_Maximilian_OCR4all___Eine_semi_automatische_Open_Sour" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="161_final-KECK_Jana_What_s_in_the_news___Erfolgs__Rezepte_für_das_wiss" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>OCR4all – Eine semi-automatische Open-Source-Software für die OCR historischer Drucke</title>
-<author>
-<persName>
-<surname>Wehner</surname>
-<forename>Maximilian</forename>
-</persName>
-<affiliation>Julius-Maximilians-Universität Würzburg, Deutschland</affiliation>
-<email>maximilian.wehner@uni-wuerzburg.de</email>
-</author>
-<author>
-<persName>
-<surname>Dahnke</surname>
-<forename>Michael</forename>
-</persName>
-<affiliation>Universität Siegen, Deutschland</affiliation>
-<email>michael.dahnke@uni-siegen.de</email>
-</author>
-<author>
-<persName>
-<surname>Landes</surname>
-<forename>Florian</forename>
-</persName>
-<affiliation>Bayerische Akademie der Wissenschaften, Deutschland</affiliation>
-<email>florian.landes@kbl.badw.de</email>
-</author>
-<author>
-<persName>
-<surname>Nasarek</surname>
-<forename>Robert</forename>
-</persName>
-<affiliation>Martin-Luther-Universität Halle-Wittenberg, Deutschland</affiliation>
-<email>robert.nasarek@geschichte.uni-halle.de</email>
-</author>
-<author>
-<persName>
-<surname>Reul</surname>
-<forename>Christian</forename>
-</persName>
-<affiliation>Julius-Maximilians-Universität Würzburg, Deutschland</affiliation>
-<email>christian.reul@uni-wuerzburg.de</email>
-</author>
+<title>What’s in the news? (Erfolgs-)Rezepte für das wissenschaftliche Arbeiten mit digitalisierten Zeitungen</title>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2015-10-04T22:02:00Z</date>
+<date>2019-09-19T12:44:00Z</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -75,19 +35,12 @@
 <term>Paper</term>
 </keywords>
 <keywords n="subcategory" scheme="ConfTool">
-<term>Workshop</term>
+<term>Panel</term>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>Optical Character Recognition</term>
-<term>Open Source</term>
-<term>Dokumentanalyse</term>
-<term>historische Drucke</term>
-</keywords>
-<keywords n="topics" scheme="ConfTool">
-<term>Transkription</term>
-<term>Einführung</term>
-<term>Software</term>
-<term>Text</term>
+<term>Digitalisierte Zeitungen</term>
+<term>Methodenkritik</term>
+<term>Textanalyse</term>
 </keywords>
 </textClass>
 </profileDesc>
@@ -95,132 +48,151 @@
 <text>
 <body>
 <div rend="DH-Heading1" type="div1">
-<head>Das Problemfeld der OCR früher Drucke</head>
-<p style="text-align:left; ">Lange galt die automatisierte Texterkennung oder sog. Optical Character Recognition (OCR) historischer Drucke des späten Mittelalters und der Frühen Neuzeit, das heißt die Überführung des gedruckten Textes in eine maschinenverarbeitbare Form, als sehr problematisch (Rydberg-Cox 2009). Die OCR moderner Texte wird dagegen auch aufgrund technischer Innovationen wie des zeilen- statt zeichenbasierten OCR-Ansatzes (Breuel et al. 2013) weithin als informatisch gelöstes Problem angesehen. Die teils höchst komplexen Layoutstrukturen von Inkunabeln und der bis zum Ende des 18. Jahrhunderts gedruckten Werke, ihr oft schlechter Erhaltungs- und Druckzustand sowie die Vielfalt und Varianz der in ihnen verwendeten Drucktypen stellen dagegen bis heute sogar den kommerziellen State of the Art der Texterkennungssoftware wie beispielsweise ABBYY FineReader<ref n="1" target="ftn1"/>
-vor erhebliche Probleme. Auch die vermeintlich einfach gedruckten Frakturromane des 19. Jahrhunderts bereiten bei ihrer Überführung in eine E-Text-Variante immer wieder große Schwierigkeiten. Trotz der durch Bibliotheken und andere öffentliche Einrichtungen bereit gestellten, wachsenden Bestände bilddigitalisierter Vorlagen dieser Epochen ist darum der Umfang digitalisierter Texte nicht annähernd im selben Maß gewachsen, obwohl in den vergangenen Jahren bereits deutliche Fortschritte für die OCR vormoderner Drucke aufgezeigt werden konnten (Springmann / Lüdeling 2017).
-                </p>
-<p style="text-align:left; ">Vor allem für die geistes- und kulturwissenschaftliche Editionsphilologie eröffnet sich auf diese Weise ein erhebliches Problemfeld, ist diese vor dem Hintergrund der Entwicklung hin zu immer mehr digitalen Editionen doch auf meist große Textmengen in digitaler Form angewiesen, die im besten Fall neben ihrer hohen Zeichengenauigkeit bereits Metainformationen über das gedruckte Ursprungsmedium aufweisen – zu denken wäre hier besonders an die Typisierung unterschiedlicher Layoutregionen (Überschriften, Marginalien, Bildbeischriften etc.) oder die Lesereihenfolge der einzelnen Layoutelemente des originalen Textes. Und auch mit Blick auf neuere Forschungsfelder innerhalb der Geisteswissenschaften und Digital Humanities (Text Mining, Sentiment Analysis usw.) sowie deren Bedarf an großen Textmengen zur Anwendung quantitativer Analyseverfahren stellt sich zunehmend die Frage nach Möglichkeiten einer OCR früher und vormoderner Drucke, die sowohl hohen Qualitätsansprüchen als auch einem entsprechenden Automatisierungsgrad genügt.</p>
-<p style="text-align:left; ">Werkzeuge, die diese Anforderungen erfüllen, sollten zudem frei verfügbar sein, sich einfach und selbstständig von einem informatisch nicht vorgeschulten Nutzerkreis auf einer einheitlichen Benutzeroberfläche bedienen lassen und die unterschiedlichen Submodule wie beispielsweise die Vorverarbeitung von Bilddateien, Möglichkeiten der Layouttypisierung sowie die eigentliche Zeichenerkennung integrativ zu einem kohärenten OCR-Workflow zusammenführen.</p>
-<p style="text-align:left; ">Am Lehrstuhl für Künstliche Intelligenz und Angewandte Informatik der Julius-Maximilians-Universität Würzburg wurde deshalb die OCR-Software OCR4all<ref n="2" target="ftn2"/> entwickelt, welche die genannten Notwendigkeiten in sich vereint und sich als erstes Programm überhaupt mit Blick auf die besonders herausfordernden Textgruppen direkt an Geisteswissenschaftler*innen richtet. 
-                </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>OCR-Workflow</head>
-<p style="text-align:left; ">Typischerweise gliedert sich ein OCR-Workflow in vier Hauptkomponenten (s. Abbildung 1). Im sog. 
-                    <hi rend="bold">Preprocessing</hi> werden die Originalbilder in Vorbereitung späterer Arbeitsschritte binarisiert (Konvertierung des Ausgangsbildes in ein Schwarzweißbild) und gerade gestellt, um die nachfolgenden Arbeitsschritte zu erleichtern.
-                </p>
-<figure>
-<graphic height="2.9792083333333332cm" n="1001" rend="block" url="125_final-51409a4df4e696fb177b4780a4fb2ed2.png" width="17.00036111111111cm"/>
-<head>Abbildung 1: Hauptkomponenten eines typischen OCR-Workflows. Von links nach rechts: Originalbild, Preprocessing, Segmentierung, OCR, Nachkorrektur. </head>
-</figure>
-<!-- <p style="text-align:left; ">Abbildung 1: Hauptkomponenten eines typischen OCR-Workflows. Von links nach rechts: Originalbild, Preprocessing, Segmentierung, OCR, Nachkorrektur.</p> -->
-<p style="text-align:left; ">Während der 
-                    <hi rend="bold">Segmentierung</hi> erfolgt die Erkennung und Typisierung der Layoutbestandteile. Dazu werden zuerst die Text- und Nicht-Textregionen (Bilder, Bordüren etc.) unterschieden, optional die Textregionen anschließend als Haupttext, Überschriften, Marginalien etc. semantisch ausgezeichnet. Abschließend werden die Textregionen zur Vorbereitung der OCR in einzelne Zeilenbilder zerschnitten. 
-                </p>
-<p style="text-align:left; ">In einem dritten Schritt, der 
-                    <hi rend="bold">OCR</hi>, werden die identifizierten Bildzeilen durch die Anwendung von sog. Modellen in maschinenverarbeitbaren Text umgewandelt. Je nach Material können dazu entweder sog. gemischte Modelle verwendet werden, die mithilfe einer Vielzahl ganz unterschiedlicher, jedoch epochentypischer Werke erstellt wurden. Handelt es sich bei den zu bearbeitenden Werken hinsichtlich der Vielfalt und Varianz der in ihnen verwendeten Drucktypen sowie deren Erhaltungszustand jedoch um sehr spezifische Drucke, können sog. werkspezifische Modelle für die Erkennung erstellt und verwendet werden.
-                </p>
-<p style="text-align:left; ">In der 
-                    <hi rend="bold">Nachkorrektur</hi> können die generierten maschinenverarbeitbaren Texte und Daten abschließend nachbearbeitet und korrigiert werden.
-                </p>
-<p style="text-align:left; ">OCR4all orientiert sich in seinem Aufbau an den beschriebenen Hauptkomponenten eines OCR-Workflows, gliedert diese jedoch noch einmal in unterschiedliche Teilmodule. Der modulare Aufbau erlaubt dabei eine Einbindung und Verwendung bereits bestehender Softwarelösungen, die gemäß ihrer Stärken zu einem kohärenten OCR-Workflow kombiniert werden.</p>
-<p style="text-align:left; ">Grundsätzlich kann der Workflow vollautomatisch durchlaufen werden. Dennoch hat der Nutzer immer die Möglichkeit, korrigierend in jeden Teilschritt einzugreifen, um ein optimales Ergebnis zu garantieren, welches als Startpunkt des dann folgenden Teilschritts fungiert. Dafür können die für jedes Teilmodul vorgegebenen Einstellungen durch den Nutzer individuell angepasst werden.</p>
-<p style="text-align:left; ">Das Preprocessing erfolgt in OCR4all wie oben beschrieben. Dabei werden alle gängigen Eingabeformate für Bilddateien unterstützt. Dem schließt sich die Layouttypisierung mithilfe des Segmentierungstools LAREX<ref n="3" target="ftn3"/>
- (s. Abbildung 2) an. Hier können werkspezifische Parameter zur Text- und Bildtypisierung festgelegt sowie zu erkennende Layoutregionen (Haupttext, Überschriften, Marginalien, Seitenzahlen etc.) definiert werden. Je nach Komplexität des vorliegenden Seitenlayouts ist nach einer automatischen Layouterkennung ein Eingriff in das vorliegende Ergebnis mittels unterschiedlicher Korrekturwerkzeuge möglich. Weiterhin kann in LAREX die Lesereihenfolge der Layoutbestandteile markiert werden, um den Lesefluss des Originals vorlagengetreu nachbilden zu können. Vor allem für die Verwendung des maschinenverarbeitbaren Textes in digitalen Editionen sind diese Funktionen unverzichtbar. 
-                </p>
-<figure>
-<graphic height="8.263819444444444cm" n="1002" rend="block" url="125_final-665866af38792d95279d6ecf7700ae21.png" width="14.224cm"/>
-<head>Abbildung 2: Im Teilmodul der Segmentierung erfolgen die Typisierung der Layoutelemente sowie die Festlegung der Lesereihenfolge. </head>
-</figure>
-<!-- <p style="text-align:left; ">Abbildung 2: Im Teilmodul der Segmentierung erfolgen die Typisierung der Layoutelemente sowie die Festlegung der Lesereihenfolge.</p> -->
-<p style="text-align:left; ">Der Layouttypisierung folgt die Zeilensegmentierung. In dieser werden die Text beinhaltenden Layoutbestandteile in einzelne Zeilenbilder zerteilt (OCRopus<ref n="4" target="ftn4"/>), um die eigentliche OCR vorzubereiten.
-                </p>
-<p style="text-align:left; ">Anschließend wird im Erkennungsschritt aus den vorliegenden Einzelzeilen (mittels Calamari<ref n="5" target="ftn5"/>) maschinenverarbeitbarer Text generiert. Dazu können in OCR4all bereits standardmäßig integrierte gemischte Modelle für Fraktur- und Antiquaschriften unterschiedlicher Epochen genutzt werden. Es besteht die Möglichkeit, die entstandenen Texte anschließend in einem Editor komfortabel zu korrigieren (s. Abbildung 3).
-                </p>
-<figure>
-<graphic height="5.485694444444444cm" n="1003" rend="block" url="125_final-00c391eee87bbef5074d7aad70019eab.png" width="17.00036111111111cm"/>
-<head>Abbildung 3: Im Editor kann generierter Text mithilfe eines sog. Virtual Keyboard (rechts) zeichengetreu korrigiert werden.</head>
-</figure>
-<!-- <p style="text-align:left; ">Abbildung 3: Im Editor kann generierter Text mithilfe eines sog. Virtual Keyboard (rechts) zeichengetreu korrigiert werden.</p> -->
-<p style="text-align:left; ">Für die Feststellung der Fehlerrate der Zeichenerkennung kann im Evaluationsmodul der ursprünglich erkannte Text mit der durch den Nutzer vorgenommenen Korrektur verglichen werden.</p>
-<p style="text-align:left; ">Darüber hinaus bietet OCR4all die Möglichkeit, die oben angesprochenen werkspezifischen Modelle unter Verwendung vorgenommener Textkorrekturen selbst zu trainieren, stetig zu verfeinern und anzuwenden. Besonders bei Werken mit erheblicher Typenvielfalt und -varianz, bei denen ein bestehendes gemischtes Modell keine hinreichenden Erkennungsergebnisse erzielt, können auf diese Weise dennoch sehr hohe Zeichenerkennungsraten erreicht werden.</p>
-<p style="text-align:left; ">In der abschließenden Nachkorrektur können die generierten Texte editionsreif korrigiert und als Plain Text oder PageXML<ref n="6" target="ftn6"/> ausgegeben werden. Letzteres Format beinhaltet neben dem eigentlichen Text auch dessen Verankerung in semantischen Positionen auf den Druckseiten in Form von Koordinaten. 
-                </p>
-<p style="text-align:left; ">In Abhängigkeit des Ausgangsmaterials variiert der zum Erreichen einer sehr hohen Genauigkeit benötigte Arbeitsaufwand zwischen wenigen Minuten bei Werken mit einfachen Layoutstrukturen, für die ein passendes Modell vorliegt, und einigen Stunden bei sehr komplexen, frühen Drucken, für die werkspezifische Modelle trainiert werden müssen (Reul et al. 2019). </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Workshopkonzeption</head>
-<p style="text-align:left; ">Der ganztägige Workshop soll einem informatisch und technisch nicht spezifisch vorgeschulten Nutzerkreis einen nachvollziehbaren und verständlichen Einstieg in das Themen- und Problemfeld der OCR historischer Drucke bieten. Er wird dazu befähigen, mithilfe der vorgestellten Software eigenständig qualitativ hochwertige Texte aus ganz unterschiedlich anspruchsvollen Ausgangsdaten zu generieren – und dies mit zeitlich vertretbarem Aufwand. Die Konzeption erfolgt aus diesem Grund sehr praxisbezogen. Konkret bedeutet dies einen angeleiteten und individuell betreuten Durchgang durch den oben vorgestellten OCR-Workflow anhand verschiedener, nach Layoutkomplexität, Typographie, Erhaltungszustand und Entstehungszeitraum geclusterter Drucke. Dabei sollen anwendungsbezogen wichtige Grundfragen der OCR beantwortet werden: </p>
+<head>Einleitung </head>
+<p style="text-align:left; ">
+<hi style="font-size:10pt">Why newspapers? Wie geht man methoden-kritisch mit digitalisierten Zeitungskorpora um? Welcher technische Aufwand ist nötig? Wie gestaltet sich die Zusammenarbeit mit Bibliotheken zum Thema Verfügbarkeit und Lizenzierung? Die zahlreichen Panels, Präsentationen und Poster auf der DH2019 haben gezeigt, dass ein großes Interesse seitens der Wissenschaft und auch der Bibliotheken besteht umfangreiche Zeitungs- und Zeitschriftensammlungen für die Öffentlichkeit und Wissenschaft digital verfügbar zu stellen (vgl. ADHO). Dabei konzentrierten sich die Debatten aber überwiegend auf die Provider-Perspektive, d.h. welche Herausforderungen sind im Rahmen des Digitalisierungsprozesses und der Zusammenarbeit mit wissenschaftlichen Institutionen zu überwinden. Im Spielraum der Wissenschaft bedeutet diese Erzeugung der Forschungsdaten, Zeitungen als Primärtexte aufgrund ihrer Menge, Zeitspannen und textuellen und thematischen Vielfalt nutzen zu können, um temporale, grenzübergreifende, multilinguale und -modale Querbezüge zu erstellen. Diese Forschung bietet die Möglichkeit operative, methodische und organisatorische Herausforderungen anzugehen, um innovative computergestützte Modelle, Tools, Codes, Daten und Infrastrukturen zu entwickeln. Die Panelvorträge geben Einblicke in Forschungsprojekte zu digitalisierten Zeitungen, die mit unterschiedlichen Korpora und Fragestellungen, aber teils ähnlichen Verfahren und Forschungsdesigns an umfangreichen historischen Zeitungssammlungen arbeiten. Dabei sollen die folgenden Kategorien angesprochen werden: Herausforderungen, Forschungsfragen, Methoden (inklusive Tools), Teamkomposition, Korpusbeschreibung, Projektformat und Projektdauer. Das Ziel dieses Panels ist es gemeinsam das Generalisierungspotential der Methoden und den wissenschaftlichen Output zu diskutieren, um eine Zutaten- und Werkzeugliste für das wissenschaftliche Arbeiten mit digitalisierten Zeitungen zu generieren. Entsprechend der vorgestellten Beiträge sollen gemeinsame Fragen diskutiert werden wie:</hi>
+</p>
 <list type="unordered">
-<item>Wie verändert sich entsprechend des Ausgangsmaterials die Anwendung der OCR-Workflows und der in ihm enthaltenen Submodule? </item>
-<item>Mit welchem Aufwand ist in unterschiedlichen Bearbeitungsphasen des Materials zu rechnen? </item>
-<item>Wie stark lässt sich der Workflow in Abhängigkeit des vorliegenden Materials automatisieren? </item>
-<item>Wie schnell sind bei einem werkspezifischen Training welche Erkennungsraten erreichbar? </item>
-<item>Welcher Aufwand ist mit Blick auf die spätere Verwendung der produzierten Texte überhaupt sinnvoll?</item>
-<item>…</item>
+<item> Wie ist das Verhältnis von Korpuskomposition und Fragestellung in den jeweiligen Projekten?</item> 
+<item> Welche forschungsspezifischen Hürden oder Fallstricke gab es in den einzelnen Projekten?</item> 
+<item> Welche geistes- und kulturwissenschaftlichen Fragen können in Anforderungen in digitale Methoden übersetzt werden und wie werden diese im digitalen Umfeld operationalisiert?</item> 
+<item> Wird die Fragestellung ggf. durch ein Interface beeinflusst, oder andersherum: lässt sich das Interface der Fragestellung anpassen? </item> 
+<item> Wie können wir sicherstellen, dass wir nicht nur projektspezifische Tools bauen und Methoden entwickeln, sondern diese auch für weitere Anwendungen in der Wissenschaft und Öffentlichkeit nachnutzbar machen?</item> 
 </list>
-<p style="text-align:left; ">Da sich neben den oben beschriebenen, meist vormodernen Textspezifika auch eine grundlegende technische Expertise der Benutzer*innen im Bereich der OCR als eine wichtige Bedingung für die Produktion hochwertiger digitaler Texte herausgestellt hat, strebt der Workshop neben einer besonders praktischen Handlungsanleitung auch die Vermittlung der wichtigsten Funktionskonzepte der in OCR4all integrierten Submodule an. </p>
-<p style="text-align:left; ">Der Workshop umfasst neben den oben beschriebenen Inhalten auch Fragen der Einrichtung und Installation der Software. Zusätzlich wird eine Serverversion der Software zur Verfügung gestellt, die einen reibungslosen Ablauf gewährleistet und Trainingsprozesse werkspezifischer Modelle effizient durchführbar macht. Die max. 25 Teilnehmer*innen benötigen einen Laptop und Internetzugang. Die Verwendung einer Maus wird empfohlen. </p>
+<!-- <p style="text-align:left; "> -->
+<!-- <hi style="font-size:10pt" xml:space="preserve">● Wie ist das Verhältnis von Korpuskomposition und Fragestellung in den jeweiligen Projekten? </hi> -->
+<!-- </p> -->
+<!-- <p style="text-align:left; "> -->
+<!-- <hi style="font-size:10pt">● Welche forschungsspezifischen Hürden oder Fallstricke gab es in den einzelnen Projekten?</hi> -->
+<!-- </p> -->
+<!-- <p style="text-align:left; "> -->
+<!-- <hi style="font-size:10pt">● Welche geistes- und kulturwissenschaftlichen Fragen können in Anforderungen in digitale Methoden übersetzt werden und wie werden diese im digitalen Umfeld operationalisiert?</hi> -->
+<!-- </p> -->
+<!-- <p style="text-align:left; "> -->
+<!-- <hi style="font-size:10pt" xml:space="preserve">● Wird die Fragestellung ggf. durch ein Interface beeinflusst, oder andersherum: lässt sich das Interface der Fragestellung anpassen? </hi> -->
+<!-- </p> -->
+<!-- <p style="text-align:left; "> -->
+<!-- <hi style="font-size:10pt">● Wie können wir sicherstellen, dass wir nicht nur projektspezifische Tools bauen und Methoden entwickeln, sondern diese auch für weitere Anwendungen in der Wissenschaft und Öffentlichkeit nachnutzbar machen?</hi> -->
+<!-- </p> -->
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>Forschungsinteressen der Beitragenden</head>
+<head>Panelvorträge </head>
+<div rend="DH-Heading2" type="div2">
+  <head>NewsEye Case Study: Rückkehrmigration in österreichischen Tageszeitungen zwischen 1850 und 1950</head>
+  <p>
+    <hi rend="italic">Sarah Oberbichler</hi>
+  </p>
+  <p style="text-align:left; ">
+    <hi style="font-size:10pt">Ein nicht unbedeutender Teil jener Menschen, die freiwillig oder unfreiwillig zwischen 1850 und 1950 ihre Heimat verlassen hatten, kehrten in ihr Ursprungsland zurück. In österreichischen Tageszeitungen wurde regelmäßig über die Rückkehr von freiwilligen Auswander*innen, in Gefangenschaft geratenen Soldaten oder Flüchtlingen berichtet, weshalb dieses Medium eine geeignete Quelle für die Erforschung des bis dato vernachlässigten Themas der Rückkehrmigration darstellt. Im Rahmen des NewsEye Projektes wurden deshalb folgende Forschungsfragen aufgegriffen: Wie und in welchem Kontext wurde in österreichischen Tageszeitungen über Heimkehrer*innen berichtet und wie hat sich die Berichterstattung im Laufe der Zeit verändert? Das zur Beantwortung der Fragestellung notwendige Korpus wird mithilfe des Online Zeitungsarchives der Österreichischen Nationalbibliothek (“ANNO”) erstellt und für die weitere Anwendung von Text-Mining Methoden und qualitativen, diskursanalytischen Analysen aufbereitet. Gerade aber dieser erste Schritt – die Bildung des Korpus – bringt eine Reihe von Herausforderungen mit sich. Nicht alle Suchbegriffe führen zu eindeutigen Ergebnissen und fehlende Speicher- und Download-Optionen führen zu langen und aufwendigen “Copy und Paste”-Verfahren. Vor diesem Hintergrund stellt sich die Frage, welche Methoden und Ansätze (beispielsweise Article Separation, Topic Modeling oder Wort Embeddings) für die Bildung eines Korpus herangezogen werden können, wenn manuelle Vorgehen einen zu großen Zeitaufwand darstellen. Ebenfalls stellt sich die Frage, wie viel Spielraum zwischen vorgegeben Funktionen und individuellen Einstellungen zielführend ist.</hi>
+  </p>
+</div>
+<div rend="DH-Heading2" type="div2">
+  <head>More than a Feeling: Media Sentiment as a Mirror of Investors’ Expectations at the Berlin Stock Exchange, 1872-1930</head>
+  <p>
+    <hi rend="italic">Lino Wehrheim / Bernhard Liebl</hi>
+  </p>
 <p style="text-align:left; ">
-<hi rend="bold">Maximilian Wehner</hi> ist Wissenschaftlicher Mitarbeiter am Lehrstuhl für Künstliche Intelligenz und Angewandte Informatik sowie am Zentrum für Philologie und Digitalität „Kallimachos“ der Julius-Maximilians-Universität Würzburg. Forschungsinteressen sind die Literatur der Frühen Neuzeit, die OCR früher Drucke sowie die Entwicklung entsprechender Vermittlungskonzepte.
-                </p>
-<p style="text-align:left; ">
-<hi rend="bold" xml:space="preserve">Dr. Michael Dahnke </hi>arbeitet als Wissenschaftlicher Mitarbeiter am Zentrum für Informations- und Medientechnologie der Universität Siegen. Seine Forschungsschwerpunkte bewegen sich in den Bereichen digitaler Editionsphilologie, Datenmodellierung im Rahmen von TEI sowie der OCR und der Modellierung gewonnener Textdaten.
-                </p>
-<p style="text-align:left; ">
-<hi rend="bold">Florian Landes</hi> ist als Wissenschaftlicher Mitarbeiter bei der Bayerischen Akademie der Wissenschaften beschäftigt. Seine Forschungsinteressen liegen in den Bereichen der OCR sowie der digitalen Rekonstruktion.
-                </p>
-<p style="text-align:left; ">
-<hi rend="bold">Robert Nasarek</hi> ist Wissenschaftlicher Mitarbeiter am Lehrstuhl für Wirtschafts- und Sozialgeschichte der Martin-Luther-Universität Halle-Wittenberg sowie des Zentrums für Wissenschaftsforschung der Nationalen Akademie der Wissenschaften Leopoldina. Seine Arbeit bewegt sich im Bereich der Wirtschafts- und Sozialgeschichte, OCR und Digital Humanities.
-                </p>
-<p style="text-align:left; ">
-<hi rend="bold" xml:space="preserve">Christian Reul </hi>ist Kommissarischer Leiter der Digitalisierungseinheit des Zentrums für Philologie und Digitalität „Kallimachos“ der Julius-Maximilians-Universität Würzburg. Seine Forschungsschwerpunkte sind die OCR auf historischem Material sowie die Entwicklung von OCR-Software.
-                </p>
+  <hi style="font-size:10pt">Das Verhalten von Finanzinvestoren wird nicht nur durch Fundamentalwerte wie etwa künftige Zahlungsströme, sondern auch durch „weiche“ Faktoren wie Stimmungen, Launen und Gefühle beeinflusst. Entsprechend hat sich in der Finanzmarktforschung das Konzept des „Investor Sentiment“ etabliert, was als eine (individuelle oder kollektive) Einstellung in Bezug auf künftige Marktentwicklungen verstanden werden kann, die nicht auf rationaler Abwägung basiert. Das Ziel des Projekts ist es, die Bedeutung von Sentiment für die Berliner Börse zwischen 1872 und 1930 zu erfassen, dem bedeutendsten deutschen Finanzplatz dieser Zeit. Inwieweit beeinflussten historische Erfahrungen wie Kriege oder politische Ereignisse die Stimmung von Finanzinvestoren, und welchen Einfluss übte Sentiment auf die Entwicklung historischer Börsenkurse aus? Hat sich dieser Einfluss im Zeitverlauf verändert? Um die Stimmung an der Berliner Börse zu quantifizieren, wird auf Basis historischer Zeitungsartikel ein Sentiment-Index erstellt, ein Ansatz, der seit der Arbeit von Tetlock (2007) verbreitet Anwendung findet, so etwa bei Ferguson et al. (2015), García (2013) und Hanna et al. (2017). Konkret werden wörterbuchbasierte Verfahren sowie Ansätze des maschinellen Lernens herangezogen. Besondere Bedeutung erhält die Generierung eines domain-spezifischen Sentiments-Wörterbuchs (Finanzmarktdeutsch des 19. Jahrhunderts). Um den Sentiment-Index um die Komponente medialer Narrative zu ergänzen, werden die Zeitungsartikel zusätzlich mit Topics Models ausgewertet. Das zugrundeliegende Korpus besteht aus Artikeln der Berliner Börsen-Zeitung, die in täglichen Marktberichten über das Geschehen und die Stimmung am Finanzplatz Berlin berichtete.</hi>
+</p>
+</div>
+<div rend="DH-Heading2" type="div2">
+  <head>"Horizontales Lesen" als digitale Analysemethode von Zeitungskritiken</head>
+  <p>
+    <hi rend="italic">Torsten Roeder</hi>
+  </p>
+  <p style="text-align:left; ">
+    <hi style="font-size:10pt">Zeitungen und Zeitschriften sind spätestens seit dem 19. Jahrhundert - bis in die Jetztzeit - ein Medium für öffentliche Debatten über Kunst und Kultur. Während historische Untersuchungen sich vor nicht allzu langer Zeit noch aufgrund der diffusen Quellenlage auf Einzelfalluntersuchungen beschränken mussten, macht aktuell die immense Menge an Material, das durch die Digitalisierung verfügbar ist und wird, die Entwicklung und Anwendung neuer Verfahren notwendig. Ein Ansatz besteht in dem Verfahren des "horizontalen" Lesens, mit dem sich thematisch zusammenhängende Texte zu einem (historischen) Meinungsspektrum anordnen lassen. Den "Named Entities" fällt dabei eine Schlüsselrolle zu, da diese die zentralen Vergleichspunkte liefern. Anhand einer ausgewählten Entity (z.B. der Titel eines musikalischen Werkes) und aller Textausschnitte, die sich direkt darauf beziehen, kann manuell und ggf. mithilfe übertragener Anwendung von Sentimentanalyse oder ggf. Topic Modeling die gesamte Bandbreite zu einem historischen Zeitpunkt oder an einem historischen Publikationsort abgebildet werden. Voraussetzungen dafür sind jedoch eine hochwertige Texterschließung und semantische Annotationen, bestenfalls mit Normdaten versehene Eigennamen von Personen, Orten, Werken etc. p.p. Während diese Methode durchaus verwertbare Ergebnisse produziert, bleibt für alle Anwendungsfälle, an welcher Stelle für die notwendige Qualität der Daten Sorge zu tragen ist: Kann dies bereits durch Provider geschehen, oder muss dies notwendigerweise - ggf. auch abgestuft - im jeweiligen Forschungsprojekt geschehen?</hi>
+  </p>
+</div>
+<div rend="DH-Heading2" type="div2">
+  <head>Oceanic Exchanges: Transnationale Textmigration</head>
+  <p>
+    <hi rend="italic">Jana Keck</hi>
+  </p>
+  <p style="text-align:left; ">
+    <hi style="font-size:10pt">Im 19. Jahrhundert entstand die Massenpresse. Die technischen Innovationen der Druckpressen, fehlende Regulierungen der Gesetzgebung und Durchsetzung des Urheberrechts und das wachsende Interesse der Bevölkerung an Informationen weltlicher, sensationeller und politischer Natur schuf eine globale Kultur reichhaltiger, schnell zirkulierender Informationsquellen. Auch wenn dies auf den grenzübergreifenden Charakter der Presse hinweist, wurde die Zeitungsforschung bisher weitgehend in Metropol- und nationalen Räumen definiert. Im Rahmen des internationalen Forschungsprojektes “Oceanic Exchanges” wurden über 100 Millionen digitalisierte Zeitungsseiten aus mehr als 7 Nationen gesammelt, um den transnationalen Charakter der Presse im 19. Jahrhundert zu untersuchen. Welche Texte und Ideen – literarisch, politisch, wissenschaftlich, wirtschaftlich, religiös – zirkulierten im öffentlichen Raum? Wie wurden diese Texte in dem jeweiligen Raum und Sprache übersetzt und modifiziert? Text Reuse Detection hat sich schon trotz „noisy“ OCR als erfolgreiche Text-Mining Methode erwiesen, um ähnliche Textpassagen in umfangreichen Datenbanken digitalisierter englischsprachiger Zeitungen zu erkennen und zu modellieren (Viral Texts Project). Das Ziel dieses Beitrages ist zu zeigen, welche methodischen Möglichkeiten, aber auch Herausforderungen beim Erkennen und Modellieren von Reprints in multi-lingualen Sammlungen und der zeitlichen Klassifizierung entstehen. Damals wie heute, nutzen diese Reprinting-Praktiken die Paradoxien eines jeden internationalen Mediensystems: scheinbare Verbundenheit und doch beständige Distanzen.</hi>
+  </p>
+</div>
+<div rend="DH-Heading2" type="div2">
+  <head>Digitale Ideengeschichte: der antimoderne Diskurs über Europa in der schweizer Presse (1900-1945) (Estelle Bunout / Marten Düring) </head>
+  <p>
+    <hi rend="italic">Estelle Bunout / Marten Düring</hi>
+  </p>
+  <p style="text-align:left; ">
+    <hi style="font-size:10pt">Die Diskussionen über Europa haben sich in der Schweiz in der ersten Hälfte des 20. Jahrhunderts auf mehreren Ebenen entwickelt: über die Initiativen zum Aufbau eines institutionellen Europas oder noch über die Rolle, die die Schweiz dabei spielen sollte. Ein Blick auf die Presse gibt eine breitere Perspektive auf diese Diskussionen. Vertreter aus unterschiedlichen Bereichen wie der Mathematik, mit Sophie Piccard (1904–1990), Verfechterin der Paneuropa-Union und der Literatur, mit Gonzague de Reynold (1880–1970) verteidigen jeweils eine eigene Vision für Europa. De Reynold, ein bekannter Antimodernist, versuchte ein Europa der Aristokratie und des Korporatismus gegenüber dem liberalen, demokratischen Europa zu verteidigen und war in den Zeitungsredaktionen gut eingebunden. In diesem Zusammenhang gehen wir der Frage nach ob es besondere Bemühungen von Antimodernisten gab, die Diskussion über Europa wieder anzueignen und die Assoziation Europas mit Frieden, Progressivismus und Aufklärung im Kontext ihrer Weltanschauung neu zu gestalten. Diese Frage wird anhand der digitalisierten Schweizer Presse bearbeitet, die im Rahmen des impresso Projekts mit NLP bereichert wurde und durch eine forschungsorientierte Oberfläche zugänglich gemacht wurde. Diese Infrastruktur und weitere NLP-Methoden helfen bei der Erstellung einer Sammlung von Artikeln, die diesen antimodernen Diskurs zu Europa beinhalten, was durch gewöhnlichen Stichwortsuche nicht möglich wäre.</hi>
+  </p>
+</div>
 </div>
 </body>
 <back>
-  <div type="notes">
-    <note n="1" rend="footnote text" xml:id="ftn1">
-      <ptr target="https://www.abbyy.com/de-de/finereader/"/>
-    </note>
-    <note n="2" rend="footnote text" xml:id="ftn2">
-      <ptr target="https://www.uni-wuerzburg.de/zpd/ocr4all"/>
-    </note>
-    <note n="3" rend="footnote text" xml:id="ftn3">
-      <ptr target="https://github.com/OCR4all/LAREX"/>
-    </note>
-    <note n="4" rend="footnote text" xml:id="ftn4">
-      <ptr target="https://github.com/tmbdev/ocropy"/>
-    </note>
-    <note n="5" rend="footnote text" xml:id="ftn5">
-      <ptr target="https://github.com/Calamari-OCR/calamari"/>
-    </note>
-    <note n="6" rend="footnote text" xml:id="ftn6">
-      <ptr target="https://www.primaresearch.org/tools/PAGELibraries"/>
-    </note>
-  </div>
-  <div type="bibliogr">
+<div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
-<bibl style="text-align:left; ">
-<hi rend="bold">Breuel, Thomas M. / Ul-Hasan, Adnan / Al-Azawi, Mayce Ali / Shafait, Faisal</hi> (2013): High-Performance OCR for Printed English and Fraktur Using LSTM Networks, in:
-                        <hi rend="Betont"> 12th International Conference on Document Analysis and Recognition:</hi> 683-687.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Reul, Christian / Christ, Dennis / Hartelt, Alexander / Balbach, Nico / Wehner, Maximilian / Springmann, Uwe / Wick, Christoph / Grundig, Christine / Büttner, Andreas / Puppe, Frank</hi> (2019): OCR4all – An Open-Source Tool Providing a (Semi-)Automatic OCR Workflow for Historical Printings, in: 
-                        <hi rend="italic" xml:space="preserve">ArXiv Preprints (submitted to MDPI – Applied Sciences) </hi>https://arxiv.org/abs/1909.04032.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Rydberg-Cox, Jeffrey A.</hi> (2009): Digitizing Latin Incunabula: Callenges, Methods, and Possibilities, in: 
-                        <hi rend="italic">Digital Humanities Quarterly</hi> 3, 1 http://digitalhumanities.org:8081/dhq/vol/3/1/000027/000027.html.
-                    </bibl>
-<bibl style="text-align:left; ">
-<hi rend="bold">Springmann, Uwe / Lüdeling, Anke</hi> (2017): OCR of historical printings with an application to building diachronic corpora: A case study using the RIDGES herbal corpus, in: 
-                        <hi rend="italic">Digital Humanities Quarterly</hi> 11, 2 http://www.digitalhumanities.org/dhq/vol/11/2/000288/000288.html.
-                    </bibl>
+<bibl>
+<hi rend="bold">ADHO: </hi> <ref target="https://dh2019.adho.org/conftool/">https://dh2019.adho.org/conftool/</ref>
+[letzter Zugriff 31. August 2019].
+</bibl>
+<bibl>
+<hi rend="bold">ANNO (AustriaN Newpapers Online): </hi> <ref target="http://anno.onb.ac.at/">http://anno.onb.ac.at/</ref>
+ [letzter Zugriff 31. August 2019].
+</bibl>
+<bibl>
+<hi rend="bold">Crymble, Adam </hi> (2016): “Digital Library Search Preferences amongst Historians and Genealogists: British History Online User Survey”, in: 
+<hi rend="italic">Digital Humanities Quarterly</hi> 10(4)
+<ref target="http://www.digitalhumanities.org/dhq/vol/10/4/000270/000270.html">http://www.digitalhumanities.org/dhq/vol/10/4/000270/000270.html</ref>
+[letzter Zugriff 31. August 2019].
+</bibl>
+<bibl>
+<hi rend="bold">Ehrmann, Maud / Bunout, Estelle / Düring, Marten</hi> (2019): “Historical Newspaper User Interfaces: A Review”, in: 
+<hi rend="italic">IFLA</hi>
+<ref target="http://library.ifla.org/2578/1/085-ehrmann-en.pdf">http://library.ifla.org/2578/1/085-ehrmann-en.pdf</ref>
+[letzter Zugriff 31. August 2019].
+</bibl>
+<bibl>
+<hi rend="bold">Ferguson, NJ et al.</hi> (2015): “Media Content and Stock Returns: The Predictive Power of Press”, in:
+<hi rend="italic">Multinational Finance Journal</hi> 19(1): 1–31.
+</bibl>
+<bibl>
+<hi rend="bold">García, D. </hi> (2013): “Sentiment during Recessions”, in:
+<hi rend="italic">The Journal of Finance</hi> 68(3): 1267–1300.
+</bibl>
+<bibl>
+<hi rend="bold">Hanna, Alan J. / Turner, John D. / Walker, Clive B. </hi>(2017): “News Media and Investor Sentiment Over the Long Run”, in: QUCEH Working Paper Series, Working Paper No. 2017-06.
+</bibl>
+<bibl>
+<hi rend="bold">impresso: </hi>
+<ref target="https://impresso-project.ch/">https://impresso-project.ch/</ref>
+ [letzter Zugriff 31. August 2019].
+</bibl>
+<bibl>
+<hi rend="bold">Koenen, Erik</hi> (2018): “Digitale Perspektiven in der Kommunikations- und Mediengeschichte”, in:
+<hi rend="italic">Publizistik</hi> 63(4): 535–56 <ref target="https://doi.org/10.1007/s11616-018-0459-4">https://doi.org/10.1007/s11616-018-0459-4</ref>
+[letzter Zugriff 31. August 2019].
+</bibl>
+<bibl>
+<hi rend="bold">NewsEye: </hi>
+<ref target="https://www.newseye.eu/">https://www.newseye.eu/</ref>
+[letzter Zugriff 31. August 2019].
+</bibl>
+<bibl>
+<hi rend="bold">Oceanic Exchanges: </hi>
+<ref target="http://oceanicexchanges.org/">http://oceanicexchanges.org/</ref>
+ [letzter Zugriff 31. August 2019].
+</bibl>
+<bibl>
+<hi rend="bold">Tetlock, PC </hi> (2007): “Giving Content to Investor Sentiment: The Role of Media in the Stock Market”, in:
+<hi rend="italic">The Journal of Finance</hi> 62 (3): 1139–1168.
+</bibl>
+<bibl>
+<hi rend="bold">Viral Texts:</hi>
+<ref target="https://viraltexts.org./">https://viraltexts.org./</ref>
+[letzter Zugriff 31. August 2019].
+</bibl>
+<bibl>
+<hi rend="bold">Wijfjes, Huub </hi> (2017): “Digital Humanities and Media History. A Challenge for Historical Newspaper Research”, in: 
+<hi rend="italic">Tijdschrift Voor Mediageschiedenis</hi> 20(1): 4-24–24 <ref target="https://doi.org/10.18146/tmg20277">https://doi.org/10.18146/tmg20277</ref>
+<hi style="font-size:10pt">[letzter Zugriff 31. August 2019].</hi>
+</bibl>
 </listBibl>
 </div>
 </back>

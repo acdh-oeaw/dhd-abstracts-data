@@ -1,25 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="PETERSEN_FREY_Fynn_Erweiterbare__interaktive_Softwareplattfo" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="KLAES_Jan_Sebastian_Die_digitale_Schulbuch_Bibliothek_GEI_Di" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="full">
-                    <title type="main">Erweiterbare, interaktive Softwareplattform für die Anwendung von Sprachtechnologie in großen Textkorpora zur Unterstützung von Such- und Analyseworkflows in den Digital Humanities</title>
-                    <title type="sub"/>
-                </title>
+                <title>Die digitale Schulbuch-Bibliothek GEI-Digital im neuen Gewand: Ein modernes Präsentationssystem öffnet digitalisierte Schulbücher für die Open Humanities</title>
                 <author>
                     <persName>
-                        <surname>Petersen-Frey</surname>
-                        <forename>Fynn</forename>
+                        <surname>Klaes</surname>
+                        <forename>Jan Sebastian</forename>
                     </persName>
-                    <affiliation>Universität Hamburg, Deutschland</affiliation>
-                    <email>fynn.petersen-frey@uni-hamburg.de</email>
-                    <idno type="ORCID">0000-0001-6450-8100</idno>
+                    <affiliation>Leibniz-Institut für Bildungsmedien | Georg Eckert-Institut, Deutschland</affiliation>
+                    <email>klaes@leibniz-gei.de</email>
+                    <idno type="ORCID">0000-0003-3597-7017</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Krüger</surname>
+                        <forename>Katharina</forename>
+                    </persName>
+                    <affiliation>Leibniz-Institut für Bildungsmedien | Georg Eckert-Institut, Deutschland</affiliation>
+                    <email>katharina.krueger@leibniz-gei.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Leonhardt</surname>
+                        <forename>Susann</forename>
+                    </persName>
+                    <affiliation>Leibniz-Institut für Bildungsmedien | Georg Eckert-Institut, Deutschland</affiliation>
+                    <email>leonhardt@leibniz-gei.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nieländer</surname>
+                        <forename>Maret</forename>
+                    </persName>
+                    <affiliation>Leibniz-Institut für Bildungsmedien | Georg Eckert-Institut, Deutschland</affiliation>
+                    <email>nielaender@leibniz-gei.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sommer</surname>
+                        <forename>Kai</forename>
+                    </persName>
+                    <affiliation>Leibniz-Institut für Bildungsmedien | Georg Eckert-Institut, Deutschland</affiliation>
+                    <email>sommer@leibniz-gei.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Towara</surname>
+                        <forename>Nadine</forename>
+                    </persName>
+                    <affiliation>Leibniz-Institut für Bildungsmedien | Georg Eckert-Institut, Deutschland</affiliation>
+                    <email>towara@leibniz-gei.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2022-08-02T14:14:29.430363668</date>
+                    <date>2022-12-14T20:55:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -46,7 +83,7 @@
                     </address>
                 </publicationStmt>
             <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
+                <p>Converted from a Word document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -62,149 +99,77 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Doctoral Consortium</term>
+                    <term>Posterpräsentation</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Software</term>
-                    <term>Plattform</term>
-                    <term>NLP</term>
-                    <term>Sprachtechnologie</term>
-                    <term>Text</term>
-                    <term>Digital Humanities</term>
-                    <term>Annotation</term>
-                    <term>Kodierung</term>
-                    <term>Suche</term>
-                    <term>Embeddings</term>
+                    <term>Bildungsmedien</term>
+                    <term>Schulbücher</term>
+                    <term>Digitale Bibliothek</term>
+                    <term>Volltexte</term>
+                    <term>Digitalisate</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Sammlung</term>
+                    <term>Webentwicklung</term>
+                    <term>Daten</term>
+                    <term>Bilder</term>
+                    <term>Infrastruktur</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading">
-                <head>Motivation und Einleitung</head>
-                <p>In Wissenschaftsdisziplinen wie den digitalen Geistes- und Sozialwissenschaften „Digital Humanities“ (DH), besteht ein großes Interesse daran, umfangreiche Mengen von Text, z.B. aus historischen Zeitschriften (Purschwitz 2018, 109–142), sozialen Medien (Stier u. a. 2017, 1365–1388) oder Zeitungen, hinsichtlich verschiedener Fragestellungen auszuwerten. Dabei ist oft eine Kombination von qualitativen Analyseschritten mit quantitativen Auswertungen gefragt (Stulpe und Lemke 2016, 17–61).</p>
-                <p>Eine ausschließlich manuelle Bearbeitung ist angesichts des Umfangs und des daraus resultierenden Aufwands oftmals ausgeschlossen. In diesen Fällen ermöglicht es eine (teil-)automatisierte computerlinguistische Verarbeitung dennoch Analyse und Auswertung durchzuführen.</p>
-                <p>Ziel dieses Dissertationsvorhabens ist es daher geeignete Methoden zu entwickeln und in eine moderne Sprachtechnologieplattform zu integrieren, die es Wissenschaftlern aus den DH ermöglicht, selbstständig große Textkorpora mit Hilfe (teil-)automatischer Verarbeitungsschritte aus der CL vorzubereiten und hinsichtlich vielfältiger Fragestellungen auszuwerten. Dies umfasst lexikalische wie semantische Suchfunktionen, intuitive Annotationsfunktionen, AI- bzw. Human-in-the-Loop Funktionalitäten zur (teil-)automatischen Skalierung von Annotationen auf große Korpora, über klassische syntaktische Anreicherungen hinausgehende inhaltliche NLP-Methoden wie Koreferenzausflösung und Zitaterkennung sowie qualitative und quantitative Analysemöglichkeiten.</p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>Forschungsstand</head>
-                <p>Verwandte Software aus der Computerlinguistik wie 
-                    <hi rend="italic">brat</hi> (Stenetorp u. a. 2012, 102–107), 
-                    <hi rend="italic">WebAnno</hi> (Eckart de Castilho u. a. 2016, 76–84), 
-                    <hi rend="italic">INCEpTION</hi> (Klie u. a. 2018, 5–9) oder 
-                    <hi rend="italic">TextAnnotator</hi> (Abrami u. a. 2020, 891–900) sind vorrangig für linguistische Annotationen gedacht, um annotierte Korpora zu erstellen; weniger jedoch für die inhaltliche Bearbeitung einer DH-Forschungsfrage mittels Suche, Annotation, Aggregation und Analyse.
-                </p>
-                <p>Für spezifische Recherchezwecke existieren computerlinguistische Anwendungen wie 
-                    <hi rend="italic">SiNLP</hi> (Crossley u. a. 2014, 511–534) zur Diskursanalyse, 
-                    <hi rend="italic">ALCIDE</hi> (Moretti u. a. 2016, 100–112) zur Analyse von historischem und politischem Diskurs, 
-                    <hi rend="italic">new/s/leak</hi> (Wiedemann u. a. 2018, 313–322) zum Entdecken berichtenswerter Geschehnisse in großen Textkorpora sowie 
-                    <hi rend="italic">LawStats</hi> (Ruppert u. a. 2018, 212–222) zur Suche und Analyse von Revisionen des Bundesgerichtshofs. Diese Anwendungen sind jedoch weniger geeignet andere Fragestellungen zu bearbeiten.
-                </p>
-                <p>In den Sozialwissenschaften gängige qualitative Analysetools wie 
-                    <hi rend="italic">MaxQDA</hi> oder 
-                    <hi rend="italic">atlas.ti</hi> verfügen über Annotations- und qualitative Analysefunktionen, sind aber proprietär, erlauben kaum Kollaboration und bieten keine modernen NLP-Methoden.
-                </p>
-                <p>
-                    <hi rend="italic">Recogito</hi> (Simon u. a. 2017, 111–132) und 
-                    <hi rend="italic">CATMA</hi> (Gius u. a., 2022) sind intuitive Annotationsanwendungen für die DH mit Kollaborationsfunktionen. 
-                    <hi rend="italic">Recogito </hi>setzt 
-                    <hi rend="italic">e</hi>inen Fokus auf Orte und Integration in eine Karte mittels automatischer Erkennung von Entitäten. 
-                    <hi rend="italic">CATMA</hi> bietet konfigurierbare Annotationsschemata und vielfältige Analysefunktionen. Beide verfügen jedoch nur über eine bescheidene bzw. keine Suche, wenig Unterstützung für große Korpora und keine Möglichkeit zur Skalierung manueller Annotationen.
-                </p>
-                <p>
-                    <hi rend="italic">WebLicht</hi> (Hinrichs u. a. 2010, 25–29) integriert enorm viele NLP-Module, die zu individuellen Pipelines zusammengefügt werden können.
-                    <hi rend="italic"> </hi>
-                    <hi rend="italic">Nopaque</hi> (Universität Bielefeld 2022) unterstützt historische Dokumente mittels OCR und syntaktische Analysen anhand Keyword-In-Context-Suche auf Basis
-                    <hi rend="italic"> </hi>gängiger NLP-Modelle und individueller NLP-Pipelines. Beiden fehlen jedoch Annotationsmöglichkeiten, Kollaborationsfunktionen, Dokumentensuche sowie Möglichkeiten zur quantitativen Analyse großer Korpora.
-                </p>
-                <p>
-                    <hi rend="italic">ILCM</hi> (Niekler u. a. 2018, 1313–1319) ist eine Textmining-Umgebung für die datengetriebene Forschung auf der großen Textmengen mittels statistischer Analysen. Es fehlen jedoch moderne NLP-Modelle sowie interaktive Funktionalitäten wie Annotation oder Suche.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>Forschungsvorhaben und Forschungsfragen</head>
-                <p>Das Forschungsvorhaben steht unter der übergreifenden Forschungsfrage: Wie kann eine digitale Arbeitsumgebung entwickelt werden, welche undogmatisch die Anwendung von DH-Methoden durch moderne NLP-Methoden für Suche, Annotation, Skalierung, Aggregation und Analyse auf großen Korpora unterstützt?</p>
-                <p>Das Ziel ist es geeignete Methoden für eine Sprachtechnologieplattform zu entwerfen, die intuitiv aus den DH genutzt werden kann, um manuelle Arbeit mit Textdokumenten automatisch auf große Korpora zu skalieren. Dies umfasst u. a. eine semantischen Suche um ähnliche Aussagen zu einer bestimmten Textpassage im gesamten Korpus zu finden, die Möglichkeit gefundenen Textpassagen qualitativ manuell zu analysieren oder automatisch zu aggregieren für quantitative Auswertungen. Im Zusammenspiel von Entity-Linking, Koreferenzauflösung, Zitaterkennung und Auffinden ähnlicher Textpassagen soll eine Skalierung manueller Annotation bzw. Kodierung von Textspannen auf den gesamten Korpus ermöglicht werden, indem Annotationen einzelner Textstellen auf passende Stellen gesamten Korpus angewandt wird.</p>
-                <p>Wie können dem aktuellen Stand der Forschung entsprechende computerlinguistische Methoden undogmatisch und intuitiv für die Bearbeitung verschiedener DH-Fragestellungen nutzbar gemacht werden?</p>
-                <p>Zum aktuellen Stand der Forschung zählen kontextualisierte Embeddings wie 
-                    <hi rend="italic">BERT</hi> (Devlin u. a. 2019, 4171–4186), die jedem Wort und (Ab-)Satz eine Bedeutung in Abhängigkeit des Kontexts anhand der Position in einem hochdimensionalen Vektorraum zuordnen. Wie lässt sich auf dieser Basis eine semantische Ähnlichkeitssuche zum Auffinden verwandter Aussagen mit variierender Länge entwickeln? Dabei ist zu klären, welche Lösungen für die rechenintensiven Operationen bei der Ähnlichkeitssuche mit großen Korpora skalieren.
-                </p>
-                <p>Um diese NLP-Methoden nutzbar zu machen, werden sie in eine webbasierte Benutzeroberfläche integriert, die das Durchsuchen, Annotieren, Skalieren, Aggregieren und Auswerten großer Korpora mittels der zuvor beschriebenen computerlinguistischen Funktionalitäten unterstützt. Ferner wird geeignete Softwarearchitektur entworfen, welche die Integration bestehender und zukünftiger CL-Softwarebibliotheken ermöglicht.</p>
-            </div>
+            <div type="div1" rend="DH-Heading1">
+            <head>Ausgangslage: </head>
+            <p style="text-align: left; ">GEI-Digital startete als Digitalisierungsprojekt im Jahr 2009 und bietet Zugang zu digitalisierten Schulbüchern zahlreicher Fächer, Epochen und Regionen. Das Schulbuchkorpus umfasst die Themengebiete Geschichte, Geographie und Politik sowie Fibeln, Atlanten, Realien- und Lesebücher („GEI-Digital“ unter 
+                <ref target="https://gei-digital.gei.de/viewer/index/">https://gei-digital.gei.de/viewer/index/</ref>). 
+            </p>
+            <p style="text-align: left; ">Der Digitalisierungsprozess umfasst dabei die Herstellung hochauflösender digitaler Images, die Erzeugung von Meta- und Strukturdaten, die Volltexterfassung, die Präsentation der Digitalisate auf der GEI-Digital-Website und Maßnahmen zur Langzeitsicherung. Gegenwärtig liegt der Fokus von GEI-Digital auf deutschsprachigen Werken, die in der Zeit zwischen dem ersten Aufkommen des Schulbuches im 16. Jahrhundert bis zum Ende des Kaiserreiches im Jahre 1918 erschienen sind. </p>
+            <p style="text-align: left; ">Die aktuell verfügbaren Sammlungen bzw. Teilkorpora auf GEI-Digital stellen eine Auswahl an historischen Schulbüchern dar, die als repräsentativ für das jeweilige Fach, die einzelnen Schulstufen und -formen und regional unterschiedlichen Ausgaben gelten kann. Im Hinblick auf die hohe Schulbuchproduktion im Deutschen Reich und die Bedeutung der Epoche für die Konstruktion einer nationalen Identität wird das digitale Korpus fachspezifisch und zeitlich in separaten Kollektionen auf GEI-Digital präsentiert. Internationale historische Schulbücher sind punktuell vorhanden und werden perspektivisch weiter ausgebaut (Hertling und Klaes 2018a, 21-44 und Hertling und Klaes 2018b 45-68).</p>
+            <p style="text-align: left; ">Digitalisiert und unter einer Public Domain-Lizenz zur freien Nachnutzung zur Verfügung gestellt, werden nach dem geltenden Urheberrechtsgesetz (UrhG) bislang nur Werke, deren Autoren seit mehr als 70 Jahren verstorben sind. Derzeit beinhaltet GEI-Digital circa 7.400 Schulbücher mit über 1,8 Millionen Seiten. Davon konnten bereits 1,4 Millionen einer Volltexterkennung zugeführt werden. Zu den nicht im Volltext vorliegenden Beständen zählen aufgrund der überwiegend grafischen Darstellungen, Atlanten, sog. Schreiblesefibeln, und Bestände in Frakturschrift mit einem Erscheinungsjahr vor 1800. Die Implementierung einer Volltexterkennung insbesondere für ältere Frakturschriften bei mittelgroßen Sammlungen ist Gegenstand eines von der DFG geförderten Verbundprojekts „OCR-D OCR4all-libraries“ (Engl et.al. 2020 und „DFG – GEPRIS“ o.J.). Dabei wird in Zusammenarbeit mit dem Zentrum für Philologie und Digitalität (ZPD) der Universität Würzburg das Open-Source-Werkzeug OCR4all (Reul et. al. 2019) so erweitert und angepasst, dass es von Bibliotheken und Archiven bei der Digitalisierung größerer Mengen eigensetzt werden kann. </p>
+            <p style="text-align: left; ">In den letzten 10 Jahren haben sich die Anforderungen an das Design und Präsentation digitaler Inhalte massiv geändert. Vor dem Hintergrund hat sich das GEI entschieden den Web-Auftritt von GEI-Digital grundlegend zu erneuern und zu optimieren. Die Präsentation der Inhalte erfolgte bisher auf Basis des von der Firma Intranda und unter der Open Source-Lizenz stehenden Softwarelösung „Goobi Workflow“ und „Goobi Viewer“, die am GEI seit 2012 unverändert eingesetzt wird (Hankiewicz 2019, 77-88). </p></div>
+            <div type="div1" rend="DH-Heading1">
+            <head>Vorgehen: </head>
+            <p style="text-align: left; ">Bereits 2014 wurde eine umfangreiche Nutzer:innenbefragung durchgeführt, die wichtige Bedarfe sichtbar machte. In der Folge wurden gezielte Feedbackrunden mit Forschenden in den Digital Humanities etabliert, um die sichtbaren Bedarfe zu konkretisieren. Unter Berücksichtigung dieser Ausgangslage begann am GEI eine interdisziplinäre Arbeitsgruppe aus den forschenden Abteilungen und der Forschungsbibliothek einen Katalog mit Optimierungsanforderungen zusammen zu stellen. Dabei kristallisierten sich Volltextverfügbarkeit, Sammlungsverwaltung und Schnittstellen für die Datenbereitstellung als zukünftige Kernbedarfe dieser Zielgruppe heraus. </p>
+            <p style="text-align: left; ">Allerdings erforderte die 2020 veraltete Softwareinfrastruktur des Goobi Viewers als Fundament für die Realisierung der Kernbedarfe ein umfassendes Upgrade. Um aber den weiterentwickelten Goobi Viewer auch für andere Anwenderinstitutionen möglichst einfach nachnutzen zu können, hat das GEI zusammen mit dem Entwicklerteam von Intranda entschieden, diese Software in Form einer unter Open Source laufenden Containervirtualisierung, auch Docker genannt, zur Verfügung zu stellen. Docker erlaubt eine vereinfachte Bereitstellung von Software-Anwendung, da alle relevanten Softwarepakete enthalten und somit schnell für eine Installation bereitstehen. Die gesamte Goobi Viewer-Software steht jetzt als Docker-Anwendung unter GitHub zur Nachnutzung bereit (Goobi-Viewer-Docker o.J.). Eng verbunden mit dem Implementierungsprozess war auch eine starke Fokussierung auf die Lokalisierung, Eingrenzung und Behebung von Problemen und Fehlern. Die interdisziplinäre Arbeitsgruppe konnte gerade im Sinne eines agilen Vorgehens schnell und effektiv Herausforderungen angehen und Lösungsansätze erarbeiten. </p></div>
+            <div type="div1" rend="DH-Heading1">
+            <head>Zusammenfassung und Ausblick:</head>
+            <p style="text-align: left; ">Das abgestufte Vorgehen mit einer Nutzer:innenbefragung, gezielten Feedbackrunden mit Forschenden und einer interdisziplinären Arbeitsgruppe erwies sich in dem hier vorliegenden Szenario als gewinnbringend. Mit Abschluss der Phase eines ersten technischen Upgrades und einer umfassenden Erneuerung der Software-Infrastruktur steht die digitale Schulbuchbibliothek GEI-Digital in einem neuen Outfit für die Nutzer:innen in den Digital Humanities zur Verfügung. Gerade die interdisziplinäre Zusammenarbeit von Akteur:innen aus den Forschungsinfrastrukturen und den wissenschaftlichen Anwender:innen konnte einen erfolgreichen Neustart sicherstellen und die nachhaltige Grundlage für weitere Optimierungen legen. </p>
+            <p style="text-align: left; ">Der kontinuierliche Betrieb einer digitalen Bibliothek und deren Optimierung sollte als eine Daueraufgabe verstanden werden. Vor dem Hintergrund ist vorgesehen, die Nutzungsmöglichkeiten von GEI-Digital für die vielfältigen Bedarfe weiter zu verbessern. Zu den nächsten Schritten zählen die Bereitstellung nachnutzbarer Datenformate nach aktuellen Standards und die Persistenz der Daten im Hinblick auf z.B. die verschiedenen Volltextversionen bei Anwendung verschiedener OCR-Engines im Kontext von Forschungsdaten.</p></div>
         </body>
         <back>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl>
-                        <hi rend="bold">Abrami, Giuseppe, Manuel Stoeckel und Alexander Mehler.</hi> 2020. “TextAnnotator: A UIMA Based Tool for the Simultaneous and Collaborative Annotation of Texts”. English. In: 
-                        <hi rend="italic">Proceedings of The 12th Language Resources and Evaluation Conference</hi>. Marseille, France: European Language Resources Association, S. 891–900. isbn: 979-10-95546-34-4. url: https://www.aclweb.org/anthology/2020.lrec-1.112.
+                    <bibl style="text-align: left;"><hi rend="bold">„DFG - GEPRIS - OCR4all-libraries – Volltexterkennung historischer Sammlungen“.</hi> o. J. Zugegriffen 14. Dezember 2022. 
+                        <ref target="https://gepris.dfg.de/gepris/projekt/460665940?context=projekt&amp;task=showDetail&amp;id=460665940&amp;">https://gepris.dfg.de/gepris/projekt/460665940?context=projekt&amp;task=showDetail&amp;id=460665940&amp;</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">Engl, Elisabeth, Konstantin Baierer, Matthias Boenig, Volker Hartmann, und Clemens Neudecker. </hi>2020. „Volltexte – die Zukunft alter Drucke: Bericht zum Abschlussworkshop des OCR-D-Projekts“. 
+                        <hi rend="italic">o-bib. Das offene Bibliotheksjournal / Herausgeber VDB</hi> 7 (2): 1–4. 
+                        <ref target="https://doi.org/10.5282/o-bib/5600">https://doi.org/10.5282/o-bib/5600</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">„GEI-Digital“.</hi> 2022. Zugegriffen 10. Dezember 2022. 
+                        <ref target="https://gei-digital.gei.de/viewer/index/">https://gei-digital.gei.de/viewer/index/</ref>.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Crossley, Scott A., Laura K. Allen, Kristopher Kyle und Danielle S. McNamara.</hi> 2014. “Analyzing Discourse Processing Using a Simple Natural Language Processing Tool”. In: 
-                        <hi rend="italic">Discourse Processes 51.5-6</hi>, S. 511–534. doi: 10.1080/0163853X.2014.910723.
+                        <hi rend="bold">Goobi-Viewer-Docker</hi>. (2022), Abgerufen 3. August 2022, von https://github.com/intranda/goobi-viewer-docker
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Devlin, Jacob, Ming-Wei Chang, Kenton Lee und Kristina Toutanova.</hi> 2019. “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding”. In: 
-                        <hi rend="italic">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)</hi>. Minneapolis, Minnesota: Association for Computational Linguistics, S. 4171–4186. doi: 10.18653/v1/N19- 1423. url: https://www.aclweb.org/anthology/N19-1423.
+                    <bibl><hi rend="bold">Hankiewicz, Steffen.</hi> 2018. „Goobi entwickeln – Eine Open-Source Software zur Verwaltung von Workflows in Digitalisierungsprojekten“. In 
+                        <hi rend="italic">Digitalisierung in Bibliotheken</hi>, herausgegeben von Gregor Neuböck, 77–88. De Gruyter. 
+                        <ref target="https://doi.org/10.1515/9783110501094-006">https://doi.org/10.1515/9783110501094-006</ref>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Eckart de Castilho, Richard, Éva Mújdricza-Maydt, Seid Muhie Yimam, Silvana Hartmann, Iryna Gurevych, Anette Frank und Chris Biemann.</hi> 2016. “A Web-based Tool for the Integrated Annotation of Semantic and Syntactic Structures”. In: 
-                        <hi rend="italic">Proceedings of the Workshop on Language Technology Resources and Tools for Digital Humanities (LT4DH)</hi>. Osaka, Japan: The COLING 2016 Organizing Committee, S. 76–84. url: https://www.aclweb.org/anthology/W16-4011.
+                    <bibl><hi rend="bold">Hertling, Anke, und Sebastian Klaes. </hi>2018a. „Historische Schulbücher als digitales Korpus für die Forschung: Auswahl und Aufbau einer digitalen Schulbuchbibliothek“. In 
+                        <hi rend="italic">Digital Humanities in der internationalen Schulbuchforschung</hi>, Volume 9:21–44. Eckert. Expertise, Volume 9. V&amp;R unipress. 
+                        <ref target="https://doi.org/10.14220/9783737009539.21">https://doi.org/10.14220/9783737009539.21</ref>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Gius, Evelyn, Jan Christoph Meister, Malte Meister, Marco Petris, Christian Bruck, Janina Jacke, Mareike Schumacher, Dominik Gerstorfer, Marie Flüh, </hi>
-                        <hi rend="bold">und</hi>
-                        <hi rend="bold"> Jan Horstmann.</hi> 2022. “CATMA”. Zenodo, url: https://doi.org/10.5281/zenodo.6419805.
+                    <bibl><hi rend="bold">Hertling, Anke, und Sebastian Klaes.</hi> 2018b. „»GEI-Digital«als Grundlage für Digital-Humanities-Projekte: Erschließung und Datenaufbereitung“. In 
+                        <hi rend="italic">Digital Humanities in der internationalen Schulbuchforschung</hi>, Volume 9:45–68. Eckert. Expertise, Volume 9. V&amp;R unipress. 
+                        <ref target="https://doi.org/10.14220/9783737009539.45">https://doi.org/10.14220/9783737009539.45</ref>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Hinrichs, Erhard W., Marie Hinrichs and Thomas Zastrow.</hi> 2010. “WebLicht: Web-Based LRT Services for German”. In: Proceedings of the ACL 2010 System Demonstrations. S. 25–29. url: http://www.aclweb.org/anthology/P10-4005
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Klie, Jan-Christoph, Michael Bugert, Beto Boullosa, Richard Eckart de Castilho und Iryna Gurevych.</hi> 2018. “The INCEpTION Platform: Machine-Assisted and Knowledge-Oriented Interactive Annotation”. In: 
-                        <hi rend="italic">Proceedings of the 27th International Conference on Computational Linguistics: System Demonstrations. Association for Computational Linguistics</hi>, S. 5–9. url: http://tubiblio.ulb.tu-darmstadt.de/106270/.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Moretti, Giovanni, Rachele Sprugnoli, Stefano Menini und Sara Tonelli.</hi> 2016. “ALCIDE: Extracting and visualising content from large document collections to support humanities studies”. In: 
-                        <hi rend="italic">Knowledge-Based Systems 111</hi>, S. 100–112. issn: 0950-7051. doi: https://doi.org/10.1016/j.knosys.2016.08.003. url: http://www.sciencedirect.com/science/article/pii/S0950705116302635.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Niekler, Andreas, Arnim Bleier, Christian Kahmann, Lisa Posch, Gregor Wiedemann, Kenan Erdogan, Gerhard Heyer und Markus Strohmaier.</hi> 2018. “ILCM - A Virtual Research Infrastructure for Large-Scale Qualitative Data”. In: 
-                        <hi rend="italic">Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)</hi>. Miyazaki, Japan: European Language Resources Association (ELRA), S. 1313–1319 url: https://www.aclweb.org/anthology/L18-1209.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Purschwitz, A.</hi> (2018). “Netzwerke des Wissens – Thematische und personelle Relationen innerhalb der halleschen Zeitungen und Zeitschriften der Aufklärungsepoche (1688-1818)”. In: 
-                        <hi rend="italic">Journal of Historical Network Research</hi> 2 (1), S. 109–142.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Ruppert, Eugen, Dirk Hartung, Phillip Sittig, Tjorben Gschwander, Lennart Rönneburg, Tobias Killing und Chris Biemann.</hi> 2018. LawStats – Large-Scale German Court Decision Evaluation Using Web Service Classifiers. In: 
-                        <hi rend="italic">Machine Learning and Knowledge Extraction: Second IFIP TC 5, TC 8/WG 8.4, 8.9, TC 12/WG 12.9 International Cross-Domain Conference, CD-MAKE 2018</hi>, Hamburg, Germany, August 27–30, 2018, Proceedings. Springer-Verlag, Berlin, Heidelberg, 212–222. doi: 10.1007/978-3-319-99740-7_14
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">S</hi>
-                        <hi rend="bold">imon, Rainer, Elton Barker, Leif Isaksen </hi>
-                        <hi rend="bold">und</hi>
-                        <hi rend="bold"> Pau De Soto CaÑamares.</hi> 2017. “Linked Data Annotation Without the Pointy Brackets: Introducing Recogito 2”. In: Journal of Map &amp; Geography Libraries, 13:1, S. 111–132. doi: 10.1080/15420353.2017.1307303
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Stenetorp, Pontus, Sampo Pyysalo, Goran Topić, Tomoko Ohta, Sophia Ananiadou und Jun’ichi Tsujii.</hi> 2012. “brat: a Web-based Tool for NLP-Assisted Text Annotation”. In: 
-                        <hi rend="italic">Proceedings of the Demonstrations at the 13th Conference of the European Chapter of the Association for Computational Linguistics</hi>. Avignon, France: Association for Computational Linguistics, S. 102–107. url: https://www.aclweb.org/anthology/E12-2021.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Stier, Sebastian, Lisa Posch, Arnim Bleier und Markus Strohmaier.</hi> 2017. “When populists become popular: comparing Facebook use by the right-wing movement Pegida and German political parties”. In: 
-                        <hi rend="italic">Information, Communication &amp; Society</hi> 20, S. 1365–1388. doi: 10.1080/1369118X.2017.1328519.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Stulpe, Alexander und Matthias Lemke.</hi> 2016. “Blended Reading”. In: 
-                        <hi rend="italic">Text Mining in den Sozialwissenschaften: Grundlagen und Anwendungen zwischen qualitativer und quantitativer Diskursanalyse</hi>. Hrsg. von Matthias Lemke und Gregor Wiedemann. Wiesbaden: Springer Fachmedien Wiesbaden, S. 17–61. isbn: 978-3-658-07224-7. doi: 10.1007/978-3-658-07224-7_2. url: https://doi.org/10.1007/978-3-658-07224-7_2.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Wiedemann, Gregor, Seid Muhie Yimam und Chris Biemann. </hi>2018. “New/s/leak 2.0 – Multilingual Information Extraction and Visualization for Investigative Journalism”. In: 
-                        <hi rend="italic">Social Informatics</hi>. Hrsg. von Steffen Staab, Olessia Koltsova und Dmitry I. Ignatov. Cham: Springer International Publishing, S. 313–322. isbn: 978-3-030-01159-8.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Universität Bielefeld.</hi> 2022. “nopaque”. https://nopaque.uni-bielefeld.de (zugegriffen 12. Dezember 2022)
+                    <bibl><hi rend="bold">Reul, Christian, Dennis Christ, Alexander Hartelt, Nico Balbach, Maximilian Wehner, Uwe Springmann, Christoph Wick, Christine Grundig, Andreas Büttner, und Frank Puppe. </hi>2019. „OCR4all—An Open-Source Tool Providing a (Semi-)Automatic OCR Workflow for Historical Printings“. 
+                        <hi rend="italic">Applied Sciences</hi> 9 (22): 4853. 
+                        <ref target="https://doi.org/10.3390/app9224853">https://doi.org/10.3390/app9224853</ref>.
                     </bibl>
                 </listBibl>
             </div>

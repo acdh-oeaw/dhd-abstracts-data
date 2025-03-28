@@ -1,53 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="149_final-KRUG_Markus_Detecting_Character_References_in_Literary_Novel" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="145_final-RITTERSHAUS_David_Tanz_annotieren_Zur_Entstehung_den_Mögl" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Detecting Character References in Literary Novels using a Two Stage Contextual Deep Learning approach</title>
+                <title>Tanz annotieren - Zur Entstehung, den Möglichkeiten und den Perspektiven digitaler Methoden in der Tanzwissenschaft</title>
                 <author>
                     <persName>
-                        <surname>Krug</surname>
-                        <forename>Markus</forename>
+                        <surname>Rittershaus</surname>
+                        <forename>David</forename>
                     </persName>
-                    <affiliation>Chair of Applied Computer Science and Artificial Intelligence, Universität Würzburg, Deutschland</affiliation>
-                    <email>markus.krug@informatik.uni-wuerzburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Kempf</surname>
-                        <forename>Sebastian</forename>
-                    </persName>
-                    <affiliation>Chair of Applied Computer Science and Artificial Intelligence, Universität Würzburg, Deutschland</affiliation>
-                    <email>sebastian.kempf@informatik.uni-wuerzburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>David</surname>
-                        <forename>Schmidt</forename>
-                    </persName>
-                    <affiliation>Chair of Applied Computer Science and Artificial Intelligence, Universität Würzburg, Deutschland</affiliation>
-                    <email>david.schmidt@informatik.uni-wuerzburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Lukas</surname>
-                        <forename>Weimer</forename>
-                    </persName>
-                    <affiliation>Chair of Literary Computing, Universität Würzburg, Deutschland</affiliation>
-                    <email>lukas.weimer@uni-wuerzburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Frank</surname>
-                        <forename>Puppe</forename>
-                    </persName>
-                    <affiliation>Chair of Applied Computer Science and Artificial Intelligence, Universität Würzburg, Deutschland</affiliation>
-                    <email>frank.puppe@informatik.uni-wuerzburg.de</email>
+                    <affiliation>Hochschule Mainz - University of Applied Sciences, Deutschland</affiliation>
+                    <email>david.rittershaus@hs-mainz.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2018-10-04T04:54:00Z</date>
+                    <date>2019-01-11T16:15:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -79,16 +47,17 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Character Reference detection</term>
-                    <term>Deep Learning</term>
-                    <term>BiLSTM-CRF</term>
+                    <term>Tanz</term>
+                    <term>Tanzwissenschaft</term>
+                    <term>Annotation</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Datenerkennung</term>
-                    <term>Programmierung</term>
-                    <term>Inhaltsanalyse</term>
+                    <term>Aufzeichnung</term>
+                    <term>Annotieren</term>
+                    <term>Archivierung</term>
                     <term>Daten</term>
-                    <term>Metadaten</term>
+                    <term>Text</term>
+                    <term>Video</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -96,91 +65,136 @@
     <text>
         <body>
             <div type="div1" rend="DH-Heading1">
-                <head>Motivation</head>
-                <p style="text-align:left;">In recent years analyzing constellations of fictional entities in literary fiction has seen a lot of interest (Elson et al. 2010, Agarwal et al. 2012). Those constellations are often visualized as networks of entities apparent in the document. Even though the pipelines used for preprocessing vary drastically they all share some common steps. In order to draw a network, one needs to define nodes and edges. An obvious choice for the nodes are the fictional entities. Those entities appear either as pronouns, nominal references or names. The detection of those character references (CR) was used for a multitude of different applications in automatic digital humanities processing, most notably genre detection (Hettinger et al. 2015) and coreference resolution (e.g. Lee et al. 2013).</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Related Work</head>
-                <p style="text-align:left;">This section only mentions the most dominant work in terms of Named Entity Recognition techniques as well as those with comparable results in terms of domain. The standard approach is to segment the input document into sentences and apply a sequence classifier on these sentences. The most robust classifier applied to this task was a Conditional Random Field (CRF) (Lafferty et al. 2001). Until the success of deep learning approaches, the classifier published by Stanford (Finkel et al. 2005) and its adaptation to German (Faruqui et al. 2010) were the dominant approaches. Lately the combination of a Bi-LSTM with word-embeddings (e.g. Mikolov et al. 2013) which automatically derived features for a CRF classifier in a deep learning approach surpassed manually created features (Huang et al. 2015). Most recently, Riedl and Padó (2018) included pretraining into the Bi-LSTM-CRF architecture and achieved state of the art results. A maximum entropy classifier with cluster features derived by word2vec and manually crafted features yielded an F1-score of 90% (Jannidis et al. 2017), serving as the only comparable work for German literary data.</p>
-                <p style="text-align:left;">However, all of these approaches classify each sentence and every token inside on their own so that subsequent sentences do not benefit from previously detected names. This does not only overcomplicate the detection, it can also introduce inconsistent results (e.g. “Effi” is detected as a name in sentence 10 and 27, but was not detected in sentence 25). Introducing no dependencies between each individual reference seems a wasted opportunity, especially in novels, because the same character reappears multiple times. This paper experimented with network architectures to leverage this shortcoming. The idea of this approach is not new and can even be dated back to the Brills Tagger (Brill 1992) - the classification by two separate classifiers each with its individual perspective on the problem.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Data</head>
-                <p style="text-align:left;">The corpus DROC (Krug et al. 2018) provides the data used in this paper. It contains about 393.000 tokens from 90 different samples taken from German novels. Each sample comprises at least one chapter. In total, this corpus contains about 53.000 manually annotated character references. 100-dimensional Word2Vec word embeddings trained on 1700 novels of project 
-                Gutenberg<ref target="ftn1" n="1"/> were used as secondary input.
+                <head>Der Choreograph William Forsythe und die digitalen Technologien </head>
+                <p style="text-align:left; ">In seiner gut dreißigjährigen Schaffensphase in Frankfurt am Main initiierte und unterstützte der Choreograph William Forsythe mehrere Großprojekte, die sich intensiv mit den Möglichkeiten zur digitalen Aufzeichnung, Archivierung, Vermittlung und Publikation von Tanz auseinandersetzten. Es sind im Laufe dieser Projekte Softwareanwendungen entstanden, die in ihrer heutigen Weiterentwicklung die Verwendung in der Tanzpraxis erlauben. Angesichts der insgesamt wachsenden Sammlungen tanzbezogener Daten stellt sich daher die Frage, ob und in welcher Form digitale Methoden auch in der Tanzwissenschaft zum Tragen kommen können. Im Folgenden soll anhand der Initiativen William Forsythes die Entwicklung nachgezeichnet werden, um anschließend grundlegende Fragen bezüglich der Möglichkeiten digitaler Methoden für die Tanzwissenschaft zu diskutieren.</p>
+                <p style="text-align:left; ">In den insgesamt zwanzig Jahren (1984-2004) unter Forsythes Leitung wurde das Frankfurter Ballett zu einem der bedeutendsten Tanzensembles der Welt. Obwohl Forsythe sich dem Ballett verbunden sah, entwickelte er immer mehr eine eigene Bewegungssprache (Siegmund 2011). Forsythe suchte daher auch nach neuen Möglichkeiten der Aufzeichnung und Vermittlung für seinen Tanz, der sich gar nicht oder nur schwer mit „herkömmlicher“ Tanznotation (Jeschke, 2010) erfassen lässt. Er wandte sich dafür bereits in den 1990er Jahren digitalen Technologien zu. So entstand in dieser Zeit in Zusammenarbeit mit dem Zentrum für Kunst und Medien in Karlsruhe (ZKM) die CD-ROM 
+                    <hi rend="italic">Improvisation Technologies: a tool for the analytical dance eye</hi>. Sie beinhaltet knapp 65 Videos, in denen Forsythe Bewegungen vorführt und erläutert. Die Videos werden von Grafiken überlagert, die räumliche Relationen und Bezüge in und um den Körper herum veranschaulichen und sich als Annotationen beschreiben lassen (DeLahunta &amp; Jenett 2017: 68). 
+                </p>
+                <p style="text-align:left; ">Die Möglichkeiten digitaler Technologien nutzte Forsythe für seine Zwecke mit seinem neuen Ensemble 
+                    <hi rend="italic">The Forsythe Company</hi> von 2005 an verstärkt. Gemeinsam mit einem Team der Ohio State University wurden die inneren organisatorischen Strukturen der Choreographie 
+                    <hi rend="italic">One Flat Thing, reproduced</hi> herausgearbeitet, visualisiert und unter dem Titel 
+                    <hi rend="italic">Synchronous Objects</hi> 
+                    publiziert<ref target="ftn1" n="1"/>. Annotationen dienen hier, wie DeLahunta und Jenett darlegen, zu Zwecken der Repräsentation: “[…] not only to draw attention to two key choreographic structuring components, the cueing and alignment systems, but also as a part of instructional videos.“ (DeLahunta &amp; Jenett 2017: 70). 
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Methods</head>
-                <p style="text-align:left;">The method used in this paper follows the intuition that, especially in literary fiction, entities appear many times throughout the text. Because each document introduces its own fictional world, each word (meaning the set of all appearances of a token with the same string) has a dominant meaning. However, not every instance of a word can be easily detected. While some might be surrounded by verbs of communication (“sagen”, “antworten”, ...), others might only be surrounded by stop words, which are not beneficial for classification. Therefore, this work introduces two passes through the text. The first pass tries to assign the dominant meaning to a word and is assumed to produce a high recall but a mediocre precision. The purpose of the second pass is to disambiguate individual instances which have been classified as a character reference but could have multiple senses. Furthermore, while the first pass might detect “Effi” and “Briest” as references, there is no information about whether the string “Effi Briest” is a single reference or two distinct references. This is solved in the second pass, which is trained for a sequential prediction and is supposed to detect the exact span of a reference.</p>
-                <p style="text-align:left;">The architectures of both neural networks can be depicted as follows:</p>
-                <p style="text-align:left;">An instance fed into the first network consists of a list of tuples, each comprising the span of the token, encoded by a word embedding, as well as a left context and a right context. Our previous work determined a context of the previous two and the next two tokens (also encoded by a pre-trained word embedding) as best performing for the determination of character references. The last input vector was derived by a Bi-LSTM character encoding of the target word. The tuples were arranged in order of appearance in the original text and encoded by a Bi-LSTM, feeding an additional tupel at each time step. The Bi-LSTM subsequently generates a condensed representation of those tuples into a vector of 256 units. The intuition is that this vector contains the most informative parts of all contexts for a given target word. The network is trained using log-loss and predicts whether the target word is a reference or not.</p>
-                <p style="text-align:left;">The network was trained for 15 epoches on 58 documents (longer training did not necessarily result in a better classification accuracy) and applied to a separate set spanning 14 documents. This second set is then used to train the second network, using Bi-LSTM character embeddings with a subsequent Bi-LSTM. However, the network is only applied to tokens that had been classified as a character reference in the first pass. This follows the intuition that it can now be decided if the current instance is of a different semantic category, which can be detected by analyzing its context. The input of this network is the snippet around the target word with a context size of two. The second task of  this network, detecting the exact bounds of a reference, is done by predicting labels in an I-O-B setting. It is noteworthy that words that were not detected in the first pass can not be recovered. The second network is trained with 25 epochs and finally tested on 18 test documents.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Evaluation</head>
-                <p style="text-align:left;">We compared the architecture described in Section 4 (denoted 2-stage) with the state of the art architecture (Bi-LSTM-CRF) similar to Riedl and Padó (2018). A Bi-LSTM-CRF using character embeddings in 
-                Tensorflow<ref target="ftn2" n="2"/> was implemented and applied to the data of DROC. At the current stage our implementation does not make use of pretraining. We used the 90 documents and split them into five folds each comprising 18 different test documents. The remaining 72 documents are used for training. The results are shown in Table 1.
+                <head>
+                    <hi rend="italic">Piecemaker</hi> - Software zur Prozessdokumentation im Tanz
+                </head>
+                <p style="text-align:left; ">Beinahe gleichzeitig entwickelte das Ensemblemitglied David Kern eine webbasierte Anwendung, die er 
+                    <hi rend="italic">Piecemaker</hi> nannte, und die von 2008 bis 2014 
+                    <hi rend="italic">The Forsythe Company</hi> zur digitalen Aufzeichnung von Proben und Aufführungen diente. Die Webanwendung ermöglichte es zeitgleich Videos und schriftliche Anmerkungen zu erfassen und verband beides automatisch miteinander, sodass die Anmerkungen als Videoannotationen gespeichert wurden. In der Zeit der Nutzung von 
+                    <hi rend="italic">Piecemaker</hi> durch die Forsythe Company ist ein ausgesprochen umfangreiches und einzigartiges digitales Archiv entstanden, das von einigen Stücken die Entstehung beinahe vollständig dokumentiert. 
                 </p>
                 <figure>
-                    <graphic n="1001" width="16.002cm" height="5.630333333333334cm" url="149_final-4f5f75ed5d81d1d5bbc053a553b18da5.png" rend="inline"/>
+                    <graphic n="1001" width="16.016111111111112cm" height="7.9375cm" url="145_final-8516eaec6d6e5b1253b871d61df513eb.jpeg" rend="inline"/>
+                    <head>Version 1 der 
+                        <hi rend="italic">Piecemaker</hi>-Webanwendung, wie sie von 
+                        <hi rend="italic" xml:space="preserve">The Forsythe Company </hi>verwendet wurde.
+                    </head>
                 </figure>
-                <p style="text-align:left;">Table 1: Results of the two systems applied to DROC. The numbers were derived in a 5-fold scenario and are noted in %. Evaluation is done on token and on entity level using Precision, Recall and F1.</p>
-                <p style="text-align:left;">Even though the 2-stage approach seems intuitive at first, it can not compete with the results obtained by the state of the art architecture. Surprisingly, the architecture failed to provide a high recall (this is already apparent after the first pass, where the recall is similar to the state of the art system, however no exact borders can be predicted). A possible explanation for this result is the high amount of about 50% of tokens with only a single appearance in the text. Since only two context tokens to the left and the right are used, the architecture has a shortcoming compared to the Bi-LSTM-CRF, which encodes the entire sentence. The architecture does especially fail to recognize references that contain the token “von” (such as “Baron von Instetten)”. While being competitive in terms of the precision, further work has to be done to increase the recall for this approach.</p>
+                <p style="text-align:left; ">Mit dem Projekt 
+                    <hi rend="italic">Motion Bank</hi><ref target="ftn2" n="2"/> gelang es Forsythe ein weiteres großes Vorhaben zur Erforschung digitaler Tanzaufzeichnung zu initiieren. 
+                    <hi rend="italic">Motion Bank</hi> übernahm die 
+                    <hi rend="italic">Piecemaker</hi> Anwendung und entwickelte sie weiter, um Choreographien einiger bedeutender Künstler*innen des Zeitgenössischen Tanzes aufzuzeichnen und zu annotieren (DeLahunta &amp; Jenett 2017: 73). Die Ergebnisse wurden in Form sogenannter 
+                    <hi rend="italic">Online Scores</hi> im Web 
+                    veröffentlicht<ref target="ftn3" n="3"/> und gewähren einen Einblick in die Konzepte und die Praxis der jeweiligen Choreograph*innen. Nach dem Ende der Förderung durch die Kulturstiftung des Bundes gelang es Florian Jenett 
+                    <hi rend="italic">Motion Bank</hi> 2016 als Forschungsprojekt an der Hochschule Mainz zu 
+                    etablieren<ref target="ftn4" n="4"/>, wo er es gemeinsam mit Scott DeLahunta leitet. Im Rahmen der Forschungsarbeit konnten seither die 
+                    <hi rend="italic">Piecemaker-</hi>Anwendung und die Publikationsplattform zum 
+                    <hi rend="italic">Motion Bank Web System</hi> weiterentwickelt und dessen Einsatz mit verschiedenen Partnern in der Tanzpraxis erprobt werden. Dabei wird der Ansatz verfolgt den Tanzschaffenden eine niederschwellige und freie Software an die Hand zu geben, mit der sie ihre eigene Praxis aufzeichnen und annotieren können. 
+                </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Conclusion</head>
-                <p style="text-align:left;">This paper presents a 2-stage contextual approach to detect character references using deep learning. The results show that while the precision yields competitive results, the recall is still much lower. Possible approaches for this shortcoming might be changing the loss function - currently a false negative and a false positive yield the same penalty - and combining both models. The state of the art model can then be used for words that only appear a single time in the text and the 2-stage approach for words appearing more than once. This could retain the high quality while still generating a consistent labeling by making use of the dependencies between individual appearances of a word.</p>
+                <head>Tanz annotieren</head>
+                <p style="text-align:left; ">Das Besondere an 
+                    <hi rend="italic">Piecemaker</hi> ist, dass die Annotationen zwar auch anhand eines Videos erstellt werden können, vor allem aber im Tanzstudio mit dem Blick auf das Geschehen im Raum aufgezeichnet werden. Dieses Verfahren zur Annotation von Tanz nennen wir Live-Annotation und es unterscheidet sich von der Post-Annotation, bei der Annotationen nachträglich bzw. anhand zeitbasierter Medien hinzugefügt werden. Die über sechs Jahre hinweg entstandenen Annotationen im Tanzstudio der Forsythe Company, wurden größtenteils von der Dramaturgin des Ensembles, Freya Vass-Rhee, als Live-Annotationen erstellt. Sie hielt darin Anweisungen des Choreographen, Diskussionen des Ensembles, Szenenabläufe, Licht- und Musikeinsätze usw. fest. Die Annotationen sind dabei keineswegs „in einer algorithmischen Strenge, Konsequenz und Ausnahmslosigkeit […] formalisiert“ (Rapp 2017, S. 256), die eine maschinelle Auswertung ohne Weiteres zulassen würde. Eine „Ontologie“ liegt ihnen nicht zugrunde. Dennoch bringen sie Metadaten mit sich, die es ermöglichen, die Daten in verschiedenen Benutzeroberflächen strukturiert zu veranschaulichen. Die Annotationen selbst enthalten für Tanzforschende Informationen, die sich aus dem Video alleine nicht erschließen lassen, sondern die Anwesenheit bei der Probe oder der Aufführung voraussetzen oder Innenansichten der beteiligten Künstler*innen widerspiegeln. Ein großes Potenzial der Annotation zeitbasierter Medien im Tanz ist die Versammlung unterschiedlicher Perspektiven wie Innen- und Außensicht, Nähe zum Geschehen (Live-Annotation) und Distanz (Post-Annotation). 
+                </p>
+                <p style="text-align:left; ">Zu der aktuellen Überarbeitung und der Integration von 
+                    <hi rend="italic">Piecemaker</hi> in das 
+                    <hi rend="italic">Motion Bank Web System</hi> gehört auch die Änderung der Datenstruktur, die nun auf dem Web Annotation Data Model des 
+                    W3C<ref target="ftn5" n="5"/> aufbaut und mit Linked Data kompatibel ist. So ist es theoretisch in Zukunft möglich verschiedene Datensätze zu verlinken oder mit anderen digitalen Tanzarchiven, wie bspw. dem digitalen Pina Bausch Archiv (Thull 2014), zu verbinden. Dafür müssten jedoch überhaupt erst Top-Level-Ontologies geschaffen werden. Angesichts der Heterogenität der Ansätze und Konzepte im Zeitgenössischen Tanz, die sich oftmals dezidiert versuchen einer Kategorisierung zu entziehen und nicht mehr auf ein standardisiertes Bewegungsrepertoire zurückgreifen, ergeben sich für die Schaffung von „Ontologien“ auf unterschiedlichen Ebenen einige Problemstellungen, die auch auf grundsätzliche Fragen digitaler Wissensrepräsentation verweisen.
+                </p>
+                <figure>
+                    <graphic n="1002" width="16.016111111111112cm" height="8.163766666666668cm" url="145_final-6f175669bbabc49070ff50e92653f34d.png" rend="inline"/>
+                    <head>Ansicht aus der derzeitigen Weiterentwicklung von 
+                        <hi rend="italic" xml:space="preserve">Piecemaker, </hi>inzwischen Teil des 
+                        <hi rend="italic">Motion Bank Systems.</hi> Live-annotierte Probe der tanzmainz Compagnie am Staatstheater Mainz mit Choreograph Taneli Törmä.
+                    </head>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Tanzwissenschaft als kritische Wissenschaft </head>
+                <p style="text-align:left; ">Wenn es für die Geisteswissenschaften ein “systembedingtes Primat des Individuellen vor dem Allgemeinen“ (Jannidis 2017: 107) gibt, gilt das für die Erforschung des Zeitgenössischen Tanzes allemal: Ihn selbst charakterisieren „Diffusionen heterogener Tanzstile und choreographischer Verfahren“, ein fortlaufender Wandel von Formen in einem Prozess ständiger „Überarbeitung und Um-Schreibung“ (Traub 2001: 181-184). Die Tanz- und Theaterwissenschaft hat es mit Singulärem zu tun, will sie es damit aufnehmen, so der Theaterwissenschaftler Nikolaus Müller-Schöll, muss sie „[…] zu allererst die mit ihrem Namen gesetzten Voraussetzungen – das Theater wie die Wissenschaft – radikal in Frage stellen.“ (Müller-Schöll 2016: 150). Die Tanzwissenschaftlerin Gabriele Klein sieht gerade in dem Finden einer Sprache für dynamische Vorgänge eine Herausforderung für Wissenschaftler*innen, die scheitern muss. Daher sei Tanzwissenschaft immer auch Wissenschaftskritik „[…] insofern, als sie sich gegen ein Wissen wendet, das dynamische Vorgänge über statische Konzepte zu fassen versucht.“ (Klein 2007: 33). Tanzwissen, über das Tänzer aufgrund körperlicher Erfahrung verfügen, kennzeichnet Klein als „spezifisches narratives Wissen“ (Klein 2007: 32). Vor diesem Hintergrund bleiben Fragen bezüglich der quantitativen bzw. maschinellen Auswertung tanzbezogener Daten offen, beispielsweise inwiefern damit verbundene Verfahren der Kategorisierung und Formalisierung gerade die Spezifik eliminieren, die den Tanz auszeichnet, oder inwiefern die Komplexität zeitgenössischer Tanzpraxis reduziert wird, die von der Tanzwissenschaft sonst narrativ abgebildet werden kann. Als kritische Wissenschaft, die immer auch ihre eigenen Grundbedingungen reflektiert, muss die Tanzwissenschaft, will sie mit digitalen Methoden arbeiten, sich mit den offenen Fragen digitaler Wissensrepräsentation auseinandersetzen: </p>
+                <quote>„[...] there is a lot of work to be done on unpicking the normative values which underlie the kinds of schema and classification embedded within the algorithmic data structures of linked data. Indeed, the fragmentation of knowledge into chunks that can be composed and recomposed at will points to the nature of a computational episteme which privileges knowledge divided into non-narrative shards of information […]. Additionally, the political economy of linked data, and linked open data, raises important questions for the way in which humanities knowledge is converted into data lakes that become a kind of oil for a postmodern capitalism.“ (Berry &amp; Fagerjord 2017: 77)</quote>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Fazit</head>
+                <p style="text-align:left; ">Der Einsatz digitaler Methoden und ihre Erforschung stehen in der Tanzwissenschaft noch am Anfang. Während mit der maschinellen und quantitativen Auswertung tanzbezogener Daten noch viele offene Fragen verbunden sind, zeichnen sich neue Möglichkeiten qualitativer Auswertung durch die diagrammatischen Text-Bild-Verbünde (Krämer 2016) der Benutzeroberflächen einer Annotationssoftware wie 
+                    <hi rend="italic">Piecemaker</hi> und des 
+                    <hi rend="italic" xml:space="preserve">Motion Bank Systems </hi>ab. Sie beruhen auch auf quantitativen Verfahren, bei denen bisher vorranging aus den Metadaten Benutzeransichten mit Visualisierungen zur Betrachtung der Daten abgeleitet werden und somit digital unterstützte qualitative Arbeitsweisen eröffnen. Zukünftig soll das 
+                    <hi rend="italic">Motion Bank System</hi> die Möglichkeit bieten individuelle, kontextspezifisch Vokabularien anzulegen, um diese bei der Annotation mit 
+                    <hi rend="italic">Piecemaker</hi> anwenden zu können. Während sich die Diskussionen rund um die Erstellung solcher Vokabularien im Praxisfeld des Zeitgenössischen Tanzes und der Tanzausbildung bereits als fruchtbar 
+                    erweisen<ref target="ftn6" n="6"/>, ist noch offen, ob und inwiefern sie sich für tanzwissenschaftliche quantitative Methoden eignen oder ob sie in erster Linie dazu dienen können, umfangreiche Inhalte in der Software – im Zuge einer vorrangig qualitativen Auswertung – besser zu filtern, zu strukturieren und zu sortieren.
+                </p>
             </div>
         </body>
         <back>
             <div type="notes">
                 <note xml:id="ftn1" n="1" rend="footnote text">
-                    https://www.gutenberg.org/
+                    <ref target="https://synchronousobjects.osu.edu/">https://synchronousobjects.osu.edu/</ref>, zuletzt aufgerufen am 23.09.2018.
                 </note>
                 <note xml:id="ftn2" n="2" rend="footnote text">
-                    https://www.tensorflow.org/
+                    <ref target="http://www.motionbank.org/">http://www.motionbank.org/</ref>, zuletzt aufgerufen am 23.09.2018.
+                </note>
+                <note xml:id="ftn3" n="3" rend="footnote text">
+                    <ref target="http://scores.motionbank.org/">http://scores.motionbank.org/</ref>, zuletzt aufgerufen am 23.09.2018.
+                </note>
+                <note xml:id="ftn4" n="4" rend="footnote text">
+                    <ref target="https://medium.com/motion-bank/motion-bank-at-hochschule-mainz-c89ef4a61643">https://medium.com/motion-bank/motion-bank-at-hochschule-mainz-c89ef4a61643</ref>, zuletzt aufgerufen am 23.09.2018.
+                </note>
+                <note xml:id="ftn5" n="5" rend="footnote text">
+                    <ref target="https://www.w3.org/TR/annotation-model/">https://www.w3.org/TR/annotation-model/</ref>, zuletzt aufgerufen am 23.09.2018.
+                </note>
+                <note xml:id="ftn6" n="6" rend="footnote text">
+                    <ref target="https://medium.com/motion-bank/developing-vocabularies-for-dance-education-e4c4584950a8">https://medium.com/motion-bank/developing-vocabularies-for-dance-education-e4c4584950a8</ref>, zuletzt aufgerufen am 08.01.2019.
                 </note>
             </div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl>
-						<hi rend="bold">Agarwal, A., Corvalan, A., Jensen, J., &amp; Rambow, O. (2012)</hi>: <hi rend="italic">Social network analysis of alice in wonderland. In Proceedings of the NAACL-HLT 2012 Workshop on computational linguistics for literature</hi> (pp. 88-96).
+                        <hi rend="bold">Berry, David M. / Fagerjord, Anders (2017)</hi>: <hi rend="italic">„Knowledge Representation and Archives.“</hi> In: <hi rend="bold">Berry, David M. / Fagerjord, Anders (eds.)</hi>: <hi rend="italic">Digital Humanities. Knowledge and Critique in a Digital Age</hi>. Cambridge, Malden: Polity 60-79.
                     </bibl>
                     <bibl>
-						<hi rend="bold">Brill, E. (1992, March)</hi>: <hi rend="italic">A simple rule-based part of speech tagger.</hi> In Proceedings of the third conference on Applied natural language processing (pp. 152-155). Association for Computational Linguistics. 
+                        <hi rend="bold">DeLahunta, Scott / Jenett, Florian (2017)</hi>: <hi rend="italic">„Making digital choreographic object interrelate. A focus on coding practices.“</hi> in: <hi rend="bold">Beyes, Timon / Leeker, Martina / Schipper, Imanuel (eds.)</hi>: <hi rend="italic">Performing the digital: performativity and performance studies in digital cultures</hi>. Bielefeld: transcript Verlag 63-79.
                     </bibl>
                     <bibl>
-						<hi rend="bold">Elson, D. K., Dames, N., &amp; McKeown, K. R. (2010, July)</hi>: <hi rend="italic">Extracting social networks from literary fiction</hi>. In Proceedings of the 48th annual meeting of the association for computational linguistics (pp. 138-147). Association for Computational Linguistics.
+                        <hi rend="bold">Jannidis, Fotis (2017)</hi>: <hi rend="italic">„Grundlagen der Datenmodellierung“</hi> in: <hi rend="bold">Jannidis, Fotis /Kohle, Hubertus / Rehbein, Malte (Hrsg.)</hi>: <hi rend="italic">Digital Humanities. Eine Einführung.</hi> Stuttgart: Metzler 99-108.
                     </bibl>
                     <bibl>
-						<hi rend="bold">Faruqui, M., Padó, S., &amp; Sprachverarbeitung, M. (2010, September)</hi>: <hi rend="italic">Training and Evaluating a German Named Entity Recognizer with Semantic Generalization</hi>. In KONVENS (pp. 129-133).
+                        <hi rend="bold">Jeschke, Claudia (2010)</hi>: <hi rend="italic">„Tanz-Notate: Bilder. Texte. Wissen.“</hi> in: <hi rend="bold">Brandstetter, Gabriele / Hofmann, Franck / Maar, Kirsten (Hrsg.)</hi>: <hi rend="italic">Notationen und choreographisches Denken.</hi> Freiburg: Rombach 47-65.
                     </bibl>
                     <bibl>
-						<hi rend="bold">Finkel, J. R., Grenager, T., &amp; Manning, C. (2005, June)</hi>: <hi rend="italic">Incorporating non-local information into information extraction systems by gibbs sampling</hi>. In Proceedings of the 43rd annual meeting on association for computational linguistics (pp. 363-370). Association for Computational Linguistics.
+                        <hi rend="bold">Klein, Gabriele (2007)</hi>: <hi rend="italic">„Tanz in der Wissensgesellschaft.“</hi> in: <hi rend="bold">Gehm, Sabine / Husemann, Pirkko / von Wilcke, Katharina (Hrsg.)</hi>: <hi rend="italic">Wissen in Bewegung. Perspektiven der künstlerischen und wissenschaftlichen Forschung im Tanz.</hi> Bielefeld: transcript 25-36.
                     </bibl>
                     <bibl>
-						<hi rend="bold">Huang, Z., Xu, W., &amp; Yu, K. (2015)</hi>: <hi rend="italic">Bidirectional LSTM-CRF models for sequence tagging.</hi> arXiv preprint arXiv:1508.01991.
+                        <hi rend="bold">Krämer, Sybille (2016)</hi>:<hi rend="italic"> Figuration, Anschauung, Erkenntnis. Grundlinien einer Diagrammatologie.</hi> Frankfurt am Main: Suhrkamp. 
                     </bibl>
                     <bibl>
-						<hi rend="bold">Hettinger, L., Becker, M., Reger, I., Jannidis, F., &amp; Hotho, A. (2015, September)</hi>: <hi rend="italic">Genre classification on German novels</hi>. In Database and Expert Systems Applications (DEXA), 2015 26th International Workshop on (pp. 249-253). IEEE.
+                        <hi rend="bold">Müller-Schöll, Nikolaus (2016)</hi>: <hi rend="italic">„Das Problem und Potential des Singulären. Theaterforschung als kritische Wissenschaft.“</hi> in: <hi rend="bold">Cairo, Milena / Hannemann, Moritz / Haß, Ulrike / Schäfer, Judith (Hrsg.)</hi>: <hi rend="italic">Episteme des Theaters. Aktuelle Kontexte von Wissenschaft, Kunst und Öffentlichkeit.</hi> Bielefeld: transcript 139-150.
                     </bibl>
                     <bibl>
-						<hi rend="bold">Jannidis, F., Reger, I., Weimer, L., Krug, M., &amp; Puppe, F. (2017)</hi>: <hi rend="italic">Automatische Erkennung von Figuren in deutschsprachigen Romanen.</hi></bibl>
-                    <bibl>
-						<hi rend="bold">Krug Markus, Puppe Frank, Reger Isabella, Weimer Lukas, Macharowsky Luisa, Feldhaus Stephan, Jannidis Fotis (2018, April)</hi>: <hi rend="italic">Description of a Corpus of Character References in German Novels - DROC [Deutsches ROman Corpus]</hi>. DARIAH-DE Working Papers Nr. 27. Göttingen: DARIAH-DE. URN: urn:nbn:de:gbv:7-dariah-2018-2-9
+                        <hi rend="bold">Rapp, Andrea (2017)</hi>: <hi rend="italic">„Manuelle und automatische Annotationen“</hi> in: <hi rend="bold">Jannidis, Fotis /Kohle, Hubertus / Rehbein, Malte (Hrsg.)</hi>: <hi rend="italic">Digital Humanities. Eine Einführung</hi>. Stuttgart: Metzler 253-267.
                     </bibl>
                     <bibl>
-						<hi rend="bold">Lafferty, J., McCallum, A., &amp; Pereira, F. C. (2001)</hi>: <hi rend="italic">Conditional random fields: Probabilistic models for segmenting and labeling sequence data.</hi></bibl>
-                    <bibl>
-						<hi rend="bold">Lee, H., Chang, A., Peirsman, Y., Chambers, N., Surdeanu, M., &amp; Jurafsky, D. (2013)</hi>: <hi rend="italic">Deterministic coreference resolution based on entity-centric, precision-ranked rules</hi>. Computational Linguistics, 39(4), 885-916.
+                        <hi rend="bold">Siegmund, Gerald (2011)</hi>: <hi rend="italic">„Of monsters and puppets. William Forsythe’s work after the ‚Robert Scott Complex‘“</hi> in: <hi rend="bold">Spier, Steven (ed.)</hi>: <hi rend="italic">William Forsythe and the Practice of Choreography</hi>. London, New York: Routledge 20-37.
                     </bibl>
                     <bibl>
-						<hi rend="bold">Mikolov, T., Sutskever, I., Chen, K., Corrado, G. S., &amp; Dean, J. (2013)</hi>: <hi rend="italic">Distributed representations of words and phrases and their compositionality</hi>. In Advances in neural information processing systems (pp. 3111-3119).
+                        <hi rend="bold">Thull, Bernhard (2014)</hi>: <hi rend="italic">„Das digitale Pina Bausch Archiv“</hi> in: <hi rend="bold">Pina Bausch Stiftung (Hrsg.)</hi>: <hi rend="italic">Tanz erben</hi>. Bielefeld: transcript 59-73.
                     </bibl>
                     <bibl>
-						<hi rend="bold">Riedl, M., &amp; Padó, S. (2018)</hi>: <hi rend="italic">A Named Entity Recognition Shootout for German</hi>. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers) (Vol. 2, pp. 120-125).
+                        <hi rend="bold">Traub, Susanne (2001)</hi>: <hi rend="italic">„Zeitgenössischer Tanz“</hi> in: <hi rend="bold">Dahms, Sibylle / Jeschke, Claudia / Woitas, Monika. (Hrsg.)</hi>: <hi rend="italic">Tanz</hi>. Kassel: Bärenreiter Metzler 181-188.
                     </bibl>
                 </listBibl>
             </div>

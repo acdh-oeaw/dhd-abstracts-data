@@ -1,21 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TEI xml:id="poster-SCHUJ" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="vortrag-FISCH" xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title>„IT for all“ – Das Projekt „Digitaler Campus Bayern – Digitale Datenanalyse in den Geisteswissenschaften“ als Beispiel für nachhaltige IT-Didaktik</title>
+<title type="full">
+<title type="main">„Der Helmut Kohl unter den Brotaufstrichen“. Zur Extraktion vossianischer Antonomasien aus großen Zeitungskorpora</title>
+<title type="sub"/>
+</title>
 <author>
 <persName>
-<surname>Schulz</surname>
-<forename>Julian</forename>
+<surname>Jäschke</surname>
+<forename>Robert</forename>
 </persName>
-<affiliation>Ludwig-Maximilians-Universität München, Deutschland</affiliation>
-<email>julian.schulz@lmu.de</email>
+<affiliation>University of Sheffield</affiliation>
+<email>r.jaschke@sheffield.ac.uk</email>
+</author>
+<author>
+<persName>
+<surname>Strötgen</surname>
+<forename>Jannik</forename>
+</persName>
+<affiliation>Max-Planck-Institut für Informatik, Saarbrücken</affiliation>
+<email>jannik.stroetgen@mpi-inf.mpg.de</email>
+</author>
+<author>
+<persName>
+<surname>Krotova</surname>
+<forename>Elena</forename>
+</persName>
+<affiliation>Higher School of Economics, Moskau</affiliation>
+<email>kroelebor@gmail.com</email>
+</author>
+<author>
+<persName>
+<surname>Fischer</surname>
+<forename>Frank</forename>
+</persName>
+<affiliation>Higher School of Economics, Moskau</affiliation>
+<email>frafis@gmail.com</email>
 </author>
 </titleStmt>
 <editionStmt>
 <edition>
-<date>2016-11-30T13:28:00Z</date>
+<date>2016-11-29T01:00:48.936622345</date>
 </edition>
 </editionStmt>
 <publicationStmt>
@@ -28,7 +55,7 @@
 </address>
 </publicationStmt>
 <sourceDesc>
-<p>Converted from a Word document </p>
+<p>Converted from an OASIS Open Document</p>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
@@ -41,211 +68,286 @@
 <profileDesc>
 <textClass>
 <keywords n="category" scheme="ConfTool">
-<term>Poster</term>
+<term>Vortrag</term>
 </keywords>
 <keywords n="subcategory" scheme="ConfTool">
 <term/>
 </keywords>
 <keywords n="keywords" scheme="ConfTool">
-<term>DH-Curriculum</term>
-<term>Nachhaltige IT-Didaktik</term>
-<term>Fachnahe IT-Grundausbildung</term>
-<term>Interaktive Lehr- und Lernumgebung</term>
-<term>Datenrepositorium</term>
+<term>Antonomasie</term>
+<term>vossianische Antonomasie</term>
+<term>Stilistik</term>
+<term>Zeitungskorpora</term>
 </keywords>
 <keywords n="topics" scheme="ConfTool">
-<term>Lehre</term>
-<term>Curricula</term>
-<term>Infrastruktur</term>
-<term>Interaktion</term>
-<term>Software</term>
-<term>virtuelle Forschungsumgebungen</term>
+<term>Programmierung</term>
+<term>Stilistische Analyse</term>
+<term>Sprache</term>
+<term>Literatur</term>
 </keywords>
 </textClass>
 </profileDesc>
 </teiHeader>
 <text>
 <body>
-<div/>
 <div rend="DH-Heading1" type="div1">
-<head>Ausgangslage</head>
-<p>Der Einfluss der unter Digital Humanities (DH) zusammengefassten digitalen Theorien und Methoden auf die geisteswissenschaftlichen Disziplinen wächst stetig. Digitale Projekte erleben in den Geisteswissenschaften einen rasanten Aufschwung (Koller 2016: 43). Damit einher geht der Bedarf an Absolventen geisteswissenschaftlicher Fächer, die bereits während ihres Studiums Kompetenzen im Bereich der Digital Humanities erwerben konnten. Bereits 2013 forderten Vertreter/innen im „Manifest für die DH“ eine Etablierung „digitale[r] Trainingsprogramme in den Geisteswissenschaften“ (DH-Manifest: 2013), angepasst an die unterschiedlichen Bedürfnisse der Fachbereiche und die jeweiligen Karrierestufen. Auch der DHd misst der Ausgestaltung der IT-Ausbildung von Studierenden eine gesteigerte Bedeutung zu. Die Arbeitsgruppe zur Erarbeitung eines „Referenzcurriculums Digital Humanities“
-                    <ref n="2" target="poster-SCHUJftn2" type="note">2</ref> beschäftigt sich mit der Suche nach einer 
-                    <hi rend="italic">bestpraxis</hi>, von der Anwender und Institutionen gleichermaßen profitieren (Sahle 2013; Thaller 2015: 3).
+<head>Einführung und Forschungslage</head>
+<p>Wenn Peter Paul Rubens als »Tarantino des Barock« beschrieben wird (im 
+                    <hi rend="italic">Tagesspiegel</hi>, 2014) oder Alice Schwarzer als der »Erich Honecker des Feminismus« (in 
+                    <hi rend="italic">Cicero</hi>, 2014), dann handelt es sich um eine Vossianische Antonomasie. Diese Trope ist nach dem niederländischen Humanisten und Rhetoriklehrer Vossius benannt (und wird im Folgenden als ›Vossanto‹ abgekürzt, in Anlehnung an den Vorschlag von Fischer/Wälzholz 2014). Generell spricht man von Antonomasie, wenn eine bestimmte Eigenschaft einer Person für diese selbst steht (z. B. »der Leimener« für Boris Becker). Beim Spezialfall der Vossanto wird einer Person über die Nennung einer anderen (bekannteren, populäreren, berüchtigteren) Person als Referenzgröße eine bestimmte Eigenschaft zugeschrieben. Dabei sorgt ein »untypologisches, aktualisierendes Signal« (Lausberg 1960) für den Bedeutungstransfer (in den oben genannten Beispielen wären dies der Barock und der Feminismus). Anders ausgedrückt: Die Vossanto stellt über einen ›modifier‹ einen Zusammenhang zwischen ›source‹ und ›target‹ her (Bergien 2013). Entitäten können sowohl als ›source‹ als auch als ›target‹ auftreten, wie ebd. am Beispiel Obama demonstriert: bis 2011 trat er in Vossantos vor allem als ›target‹ auf, danach diente er immer mehr als ›source‹. Die ›source‹-Referenz wird im Fachdiskurs im Anschluss an Lakoff 1987 auch als ›paragon‹ bezeichnet (»a specific example that comes close to embodying the qualities of the ideal«, ebd.).
                 </p>
-<p>Zahlreiche Universitätsstandorte haben auf die neuen Anforderungen mit der Einrichtung unterschiedlich ausgestalteter DH-Studiengänge reagiert (Bartsch/Borek/Rapp 2016: 173; DH Course Registry). Trotz dieser neugeschaffenen Angebote besteht ein zusätzlicher Bedarf an informationstechnologischer Ausbildung in der Breite (Ehrlicher 2016: 625). Zunehmend wird auch in „klassischen“ geisteswissenschaftlichen Berufsfeldern Sicherheit im Umgang mit Software und digitalen Technologien vorausgesetzt. Dieses Grundverständnis digitaler Methoden kann nicht mehr ausschließlich im Selbststudium angeeignet werden (Spiro 2013: 332; Sahle 2016: 79).</p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Projektziele und Rahmenbedingungen</head>
-<p>Hier setzt das Projekt „Digitaler Campus Bayern – Digitale Datenanalyse in den Geisteswissenschaften“ an, welches von der IT-Gruppe Geisteswissenschaften (ITG) der Ludwig-Maximilians-Universität München (LMU) seit Beginn dieses Jahres durchgeführt wird. Grundgedanke ist eine IT-Grundausbildung („
-                    <hi rend="italic">IT for all</hi>“), welche die Studierenden problemorientiert in die Anwendung digitaler Methoden einführt. Ausgehend von fachwissenschaftlichen Fragestellungen werden Lehrveranstaltungen mit IT-Inhalten in Kooperation mit verschiedenen geschichtswissenschaftlichen Disziplinen und der Kunstgeschichte konzipiert. Dabei soll eine möglichst umfassend angelegte Grundlagenvermittlung in Erfassung, Modellierung, Analyse und anschließender Visualisierung von Daten erfolgen (Lücke/Riepl 2016: 77). Das Verständnis digitaler Methoden steht ebenso im Vordergrund wie eine fachliche Reflexion ihrer Potentiale (Rehbein 2016: 17).
-                </p>
-<p>Die Situation der DH an der LMU gestaltete sich bis Projektbeginn (Januar 2016
-                    <ref n="3" target="poster-SCHUJftn3" type="note">3</ref>) ambivalent. In den vorgenannten Studiengängen wurden regelmäßig Überblicksveranstaltungen zur Einführung in die Informatik für Historiker bzw. Kunsthistoriker angeboten. Eine praktische Umsetzung des theoretischen Wissens konnte im Rahmen dieser Veranstaltungen jedoch nicht geleistet werden. Demgegenüber werden durch die ITG, die auf langjährige und umfangreiche Erfahrungen im Bereich des digitalen Projektmanagements
-                    <ref n="4" target="poster-SCHUJftn4" type="note">4</ref> verweisen kann, optimale Voraussetzungen für eine fortan praxisnahe IT-Ausbildung geschaffen.
-                </p>
-<p>Als Mitglied im Münchner Arbeitskreis für digitale Geisteswissenschaften (dhmuc)
-                    <ref n="5" target="poster-SCHUJftn5" type="note">5</ref> kooperiert die IT-Gruppe zudem fach- und institutionsübergreifend mit zahlreichen kulturellen Einrichtungen. An der Schnittstelle zur universitären Lehre ist es möglich, die „
-                    <hi rend="italic">IT for all</hi>“-Ausbildung geisteswissenschaftlicher Studierender auf die Anforderungen und Wünsche der potentiellen Arbeitgeberseite im (digitalen) Kultur-, Wissenschafts- und Informationssektor auszurichten.
+<p>Der Begriff »Vossianische Antonomasie« wird international kaum verwendet, stattdessen wird etwa zwischen »Antonomasia1« und »Antonomasia2« unterschieden: »metonymic« vs. »metaphorical antonomasia« (Holmqvist/Płuciennik 2010). Innerhalb dieses Klassifikationsschemas wäre unsere Vossanto ein Spezialfall von »Antonomasia2«, nämlich wenn es um »comparisons with paragons from other spheres of culture« geht: »Lyotard is a pope of postmodernism, Bush is no Demosthenes; and we can buy the Cadillac of vacuum cleaners.« (ebd.)</p>
+<p>Dieses Stilmittel, dessen reger Gebrauch seit der Antike belegt ist, ist heute medial ubiquitär anzutreffen. Oft findet es sich schon in Überschriften, da es zugleich informativ und rätselhaft sein kann und zudem oft unterhaltsame Qualitäten bietet. Eine eigene größere Sammlung an Musterexemplaren (
+                    <ptr target="http://www.umblaetterer.de/datenzentrum/vossianische-antonomasien.html"/>) gab den Ausschlag, dieses Phänomen systematisch zu erforschen, mit historischer Perspektive und auf Grundlage größerer englischer und deutscher Zeitungskorpora. Ziel dieser Arbeit ist eine erste methodisch-explorative Analyse des Phänomens Vossanto in der Tageszeitung 
+                    <hi rend="italic">New York Times</hi> (1987–2007) und der Wochenzeitung 
+                    <hi rend="italic">Die Zeit</hi> (1995–2011). Die Korpora wurden aufgrund ihrer Verfügbarkeit, Bedeutung und ihres Umfangs gewählt. Die Extraktion der Vossantos erfolgte jeweils korpusspezifisch, um den verschiedenen Formaten und Sprachen Rechnung zu tragen.
                 </p>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>Interaktive Lehr- und Lernumgebung 
-                    <hi rend="italic">DHVLab</hi>
-</head>
-<p>Für die praktische Umsetzung kommt eine interaktive Lehr- und Lernumgebung, das 
-                    <hi rend="italic">Digital Humanities Virtual Laboratory</hi> – kurz 
-                    <hi rend="italic">DHVLab</hi> – zum Einsatz
-                    <ref n="6" target="poster-SCHUJftn6" type="note">6</ref>. Die im Entstehen begriffene Plattform umfasst mehrere Komponenten, die im Folgenden vorgestellt werden sollen:
+<head>Englischsprachiges Korpus</head>
+<p>Aus den XML-Daten des 
+                    <hi rend="italic">New York Times</hi>-Korpus (Sandhaus 2008) wurde für jeden der 1.854.726 Artikel der Volltext extrahiert. Anschließend wurde der Text mit Hilfe des NLTK (Bird/Loper/Klein 2009) in Sätze zerlegt und die Wörter jedes Satzes mit dem Part-of-Speech-Tagger des NLTK annotiert. Zusätzlich wurden Named Entities (Personen, Orte, Organisationen) mit dem NLTK-eigenen Named-Entity-Extraktor annotiert. Die so annotierten Sätze wurden mit einer Liste von Vossanto-typischen Mustern (in Form von regulären Ausdrücken) abgeglichen. Eine vereinfachte Darstellung eines solchen Musters ist beispielsweise:
                 </p>
-<div rend="DH-Heading2" type="div2">
-<head>Virtuelle Rechenumgebung</head>
-<p>Die virtuelle Rechenumgebung ist das „Herzstück“ der Ausbildungsplattform. Auf dem virtuellen Desktop werden in Abstimmung mit dem/der Kursleiter/in Software und Tools installiert. Dadurch wird die sukzessive Installation durch die Teilnehmer/innen obsolet, wodurch Probleme aufgrund unterschiedlicher Betriebssysteme und Versionierungen vermieden werden. Bei Anmeldung im 
-                        <hi rend="italic">DHVLab</hi> erhält jede/r Teilnehmer/in eine eigene SQL-Datenbank. Gleichzeitig werden strukturierteDatensammlungen vorgehalten. Diese sind für die Kursteilnehmer/innen zugänglich und für eigene oder im Kurs behandelte Fragestellungen verwendbar. Im Laufe der Lehrveranstaltung können neue Forschungsfragen ausgearbeitet und ein grundsätzliches Verständnis für den sinnvollen Einsatz von Tools und Software
-                        <ref n="7" target="poster-SCHUJftn7" type="note">7</ref> in den Geisteswissenschaften entwickelt werden.
-                    </p>
-</div>
-<div rend="DH-Heading2" type="div2">
-<head>Ausbildungsmaterialien</head>
-<p>Im vergangenen Semester wurde das System testweise in vorgenannten Einführungsveranstaltungen eingesetzt. Die bei der Evaluation gesammelten Erfahrungen fließen unmittelbar in die Erstellung bzw. Erweiterung der Ausbildungsmaterialien. Anhand praxisnaher Manuale wird IT-Grundlagenwissen, in einzelne Lehreinheiten gegliedert, anschaulich dargestellt und erklärt. Die Erstellung von Lehrvideos und Übungsaufgaben ist vorgesehen. Aus diesem Portfolio können Dozentinnen und Dozenten Module entsprechend ihrer fachwissenschaftlichen Schwerpunktsetzung und der Voraussetzungen der Teilnehmer/innen auswählen. Die Seminarplanung und -durchführung erfolgt stets in enger Abstimmung mit den Projektmitarbeitern.</p>
-</div>
-<div rend="DH-Heading2" type="div2">
-<head>Publikationsumgebung</head>
-<p>Für die Vor- und Nachbereitung der einzelnen Sitzungen steht ein WordPress-Blog zur Verfügung. Dort können die Kursleiter/innen Materialen einstellen, die Studierenden ihren Erkenntnisfortschritt und Analyseergebnisse dokumentieren. Dabei erlernen sie gleichzeitig 
-                        <hi rend="italic">in praxi</hi> das wissenschaftliche Bloggen als innovative Form des Publizierens. Eine abschließende Publikation der studentischen Seminararbeiten ist auf dieser Plattform möglich.
-                    </p>
-</div>
-<div rend="DH-Heading2" type="div2">
-<head>Datenrepositorium</head>
-<p>In einem gesonderten Bereich der Datenbankumgebung werden die von den Studierenden im Rahmen einer Lehrveranstaltung erarbeiteten Datenbestände modelliert und nachhaltig abgelegt. Langfristiges Ziel ist der Aufbau eines Forschungsdatenrepositoriums. Nachfolgende Kurse mit ähnlichen Seminarthemen können auf diese Datensammlungen zugreifen, für die eigene Forschungsarbeit verwenden und dadurch sukzessive erweitern. Unterstützung erfährt die ITG durch die Universitätsbibliothek der LMU als Kooperationspartnerin auf dem Gebiet der nachhaltigen und nachnutzbaren elektronischen Publikation von Forschungsdaten.</p>
-</div>
-<div rend="DH-Heading2" type="div2">
-<head>Entwicklung eigener Analyse- und Softwarekomponenten</head>
-<p>Mit dem 
-                        <hi rend="italic">DHVLab Analytics Center</hi> wurde eine Webanwendung entwickelt, die dazu dient, konkrete geisteswissenschaftliche Fragestellungen mithilfe quantitativer statistischer Methoden zu beantworten, sowie im Stile eines explorativen Werkzeuges neue Forschungsansätze zu eröffnen. Das 
-                        <hi rend="italic">Analytics Center</hi> kombiniert einführende deskriptive Analysen mit komplexeren Methoden der multivariaten Statistik. Neben diesem Analysetool entsteht derzeit eine Editionsumgebung, die speziell auf die Anforderungen von Studierenden und Promovierenden ausgerichtet wird. Diese wird erstmals im Sommersemester 2017 in einer Übung zur Edition mittelalterlicher Urkunden zum Einsatz kommen. Die Entwicklung weiterer Instrumente ist geplant.
-                    </p>
-</div>
+<quote>\((PERSON|ORGANIZATION|GPE) *\) (is|has) (often|sometimes)? (been)? (called)? the \(PERSON|ORGANIZATION|GPE) *\) (of|among|from) \((PERSON|ORGANIZATION|GPE) *\)</quote>
+<p>Die zu findenden drei Elemente einer Vossanto sind darin durch * gekennzeichnet. Passte ein Satz auf eines der Muster, so wurden diese drei Teile extrahiert und tabellarisch ausgegeben. Anschließend wurden die extrahierten 10.744 Kandidaten manuell überprüft. Nicht-Vossantos und Vossantos mit Städten und Firmen wurden entfernt (Treffer der Art »Algarve, the Riviera of Portugal« oder »Pepsi is the Nike of soft drinks« sind eine eigene Untersuchung wert) und der Fokus auf Vossantos gelegt, in denen Individuen (Personen, Tiere, fiktive Figuren) als ›source‹ oder ›target‹ dienen. 246 Vossantos blieben dabei übrig (Übersicht in unserem Arbeitsrepo, siehe Bibliografie), die sich wie folgt über das Korpus verteilen:</p>
+<p>
+<figure>
+<graphic url="vortrag-FISCH-1000020000000320000002584F1C62E428FC24BB.png"/>
+<head>vossantos_nyt.png</head>
+</figure>
+</p>
+<p>Am häufigsten als ›source‹ verwendet wurden folgende Namen:</p>
+<table rend="frame" xml:id="Table1">
+<row>
+<cell rend="center bold">Anzahl</cell>
+<cell rend="center bold">source</cell>
+</row>
+<row>
+<cell rend="center">6</cell>
+<cell rend="center">Michael Jordan</cell>
+</row>
+<row>
+<cell rend="center">5</cell>
+<cell rend="center">Michelangelo</cell>
+</row>
+<row>
+<cell rend="center">4</cell>
+<cell rend="center">Babe Ruth</cell>
+</row>
+<row>
+<cell rend="center">3</cell>
+<cell rend="center">Zelig</cell>
+</row>
+<row>
+<cell rend="center">3</cell>
+<cell rend="center">Rodney Dangerfield</cell>
+</row>
+<row>
+<cell rend="center">3</cell>
+<cell rend="center">Neil Young</cell>
+</row>
+<row>
+<cell rend="center">3</cell>
+<cell rend="center">Elvis</cell>
+</row>
+<row>
+<cell rend="center">3</cell>
+<cell rend="center">Don Quixote</cell>
+</row>
+</table>
+<p>Als Beispiel für Treffer seien diejenigen für Michael Jordan genannt:</p>
+<list type="unordered">
+<item>»Romario is the 
+                        <hi rend="italic">Michael Jordan</hi> of soccer and Bebeto is the Magic Johnson of soccer« (1994)
+                    </item>
+<item>»Bonfire, the 
+                        <hi rend="italic">Michael Jordan</hi> of dressage horses« (1998)
+                    </item>
+<item>»Brian Foster, the 
+                        <hi rend="italic">Michael Jordan</hi> of BMX racing« (1998)
+                    </item>
+<item>»The stunt biker Dave Mirra, the 
+                        <hi rend="italic">Michael Jordan</hi> of the dirt set« (2000)
+                    </item>
+<item>»Cynthia Cooper is the 
+                        <hi rend="italic">Michael Jordan</hi>, the Larry Bird, the Magic Johnson of this league« (2000)
+                    </item>
+<item>»McNabb has been called the 
+                        <hi rend="italic">Michael Jordan</hi> of the National Football League« (2001)
+                    </item>
+</list>
+<p>Trotz der zeitlichen Einschränkung des Korpus lassen sich bereits einige vielversprechende Beobachtungen anstellen und Thesen bilden: 1. Produktive Referenzgrößen einer Vossanto sind sowohl reale als auch fiktionale Figuren (Bsp. für letztere aus der obigen Liste: Woody Allens »Zelig«, Cervantes’ »Don Quixote«). 2. Öffentliche Personen oder bekannte fiktionale Charaktere haben bestimmte Eigenschaften, die sie für die Verwendung als Referenzgröße einer Vossanto prädestinieren oder nicht (es bleibt etwa zu erforschen, warum gerade Michael Jordan und Michelangelo sich so gut eignen und nicht andere Sportler bzw. Künstler). 3. Es gibt historisch stabile Referenzgrößen, deren Bekanntheit vorausgesetzt werden kann (z. B. Michelangelo), und es gibt ephemere Referenzgrößen, die ab irgendeinem Zeitpunkt nicht mehr als Bezugspunkt taugen (für das benutzte zeitgenössische Korpus eher noch nicht relevant).</p>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>Der Einsatz der Plattform in der Lehre</head>
-<p>Nach der technischen Realisierung der Plattform und dem Aufbau grundlegender Ausbildungsmaterialien im ersten Projekthalbjahr kommt das System im Wintersemester 2016/2017 erstmals in eigens konzipierten Lehrveranstaltungen zur Anwendung. In der Kunstgeschichte soll das 
-                    <hi rend="italic">Analytics Center</hi> in einem Seminar zur Beschäftigung mit informatischen und mathematischen Verfahrensweisen anregen. Parallel dazu erfolgt eine Einführung in die Statistiksoftware 
-                    <hi rend="italic">RStudio</hi>. Ein geschichtswissenschaftliches Hauptseminar beschreitet den Weg von der Originalquelle über die strukturierte Aufnahme und Modellierung von Forschungsdaten sowie die Einführung in die Arbeit mit relationalen Datenbanken hin zur Georeferenzierung. Die in den Seminaren gewonnenen Erfahrungen und Erkenntnisse fließen unmittelbar in die Verbesserung und Ausweitung des bestehenden Lehrmaterials ein (u.a. Erstellung von Anwendungsszenarien). Neben den genannten Kursen wird die Plattform bereits in zahlreichen Lehrveranstaltungen als technische Grundlage verwendet
-                    <ref n="8" target="poster-SCHUJftn8" type="note">8</ref>.
+<head>Deutschsprachiges Korpus</head>
+<p>Das deutsche Datenset besteht aus einer Sammlung des Archivs der Wochenzeitung 
+                    <hi rend="italic">Die Zeit</hi> und enthält die Artikel aus den Jahren 1995 bis 2011. Insgesamt umfasst das Korpus 126.702 Dokumente.
                 </p>
+<p>Zunächst wurden die Volltexte (inklusive Überschriften) aller Dokumente extrahiert. Diese wurden dann mit Hilfe des Part-of-Speech-Taggers und Named-Entity-Recognition-Tools des Stanford CoreNLP Package verarbeitet. Für die Analyse deutschsprachiger Texte enthält Stanford CoreNLP speziell für das Deutsche trainierte Modelle (Faruqui und Pado 2010). Somit können alle Texte auf drei Ebenen untersucht werden: auf der Wortebene, der Part-of-Speech-Ebene sowie der Named-Entity-Ebene. Mithilfe von regulären Ausdrücken, die auf den verschiedenen Ebenen angewandt werden können, wurde dann nach Vossanto-Mustern gesucht. Im Gegensatz zur Verarbeitung des englischsprachigen Korpus wurde jedoch noch nicht versucht, auch das ›target‹ einer Vossanto zu extrahieren. Stattdessen wurden Muster entworfen, die das ›source‹-Objekt sowie das »aktualisierende Signal« matchen. Ausschlaggebend für diese Herangehensweise waren die in einem Testdurchlauf beobachtete hohe Anzahl an Vossantos ohne unmittelbaren Verweis auf das ›target‹ sowie eine große Vielfalt an möglichen Formulierungen, die auf die Relation zum ›target‹ hinweisen können. Mithilfe relativ strikter Regeln konnte die Anzahl an falschen Extraktionen im Rahmen gehalten werden. Ein vereinfachtes Beispiel für eine Extraktionsregel lautet etwa: »eine Art PERSON (der|des) (ADJECTIVE)? NOUN«.</p>
+<p>Die Produktivität der beiden häufigsten Referenznamen des NYT-Korpus bestätigt sich im verwendeten deutschen Korpus, etwa wenn vom »Michael Jordan der analytischen Philosophie« die Rede ist (
+                    <hi rend="italic">Die Zeit</hi> 44/1999) oder vom »bulgarischen Michelangelo« (
+                    <hi rend="italic">Die Zeit</hi> 14/2001). Ansonsten scheint es sprachen- bzw. kulturspezifische Präferenzen zu geben. Die häufigsten ›sources‹ sind:
+                </p>
+<table rend="frame" xml:id="Table2">
+<row>
+<cell rend="center bold">Anzahl</cell>
+<cell rend="center bold">source</cell>
+</row>
+<row>
+<cell rend="center">9</cell>
+<cell rend="center">Robin Hood</cell>
+</row>
+<row>
+<cell rend="center">6</cell>
+<cell rend="center">Bill Gates</cell>
+</row>
+<row>
+<cell rend="center">4</cell>
+<cell rend="center">Franz Beckenbauer</cell>
+</row>
+<row>
+<cell rend="center">3</cell>
+<cell rend="center">Daniel Düsentrieb</cell>
+</row>
+<row>
+<cell rend="center">3</cell>
+<cell rend="center">Heinz Rühmann</cell>
+</row>
+<row>
+<cell rend="center">3</cell>
+<cell rend="center">James Dean</cell>
+</row>
+<row>
+<cell rend="center">3</cell>
+<cell rend="center">Jesus Christus</cell>
+</row>
+<row>
+<cell rend="center">3</cell>
+<cell rend="center">Norbert Blüm</cell>
+</row>
+<row>
+<cell rend="center">3</cell>
+<cell rend="center">Willy Brandt</cell>
+</row>
+</table>
+<p>Ähnlich wie im NYT-Korpus ist erkennbar, wie stark typisierend mythische bzw. fiktive Figuren sind (Robin Hood, Daniel Düsentrieb). Daneben zeigt sich, dass »Bill Gates«, der im NYT-Korpus nur zweimal als ›source‹ einer Vossanto vorkommt, im 
+                    <hi rend="italic">Zeit</hi>-Korpus sechs Mal als Referenz vertreten ist:
+                </p>
+<list type="unordered">
+<item>»eine Art Bill Gates des Stolperns« (1998)</item>
+<item>»Der Bill Gates von Aurich« (2001)</item>
+<item>»der Bill Gates von Ostfriesland« (2001)</item>
+<item>»der Bill Gates von Aurich« (2002)</item>
+<item>»der britische Bill Gates« (2008)</item>
+<item>»der Bill Gates von Estland« (2010)</item>
+</list>
+<p>Die wiederholte Verwendung des »Bill Gates von Aurich« zeigt, wie stark ein ›target‹ mit einer ›source‹ verwachsen kann. (Paradebeispiel hierfür ist im Übrigen Vittorio Hösle, »der Boris Becker der Philosophie«, eine Bezeichnung, die es bis in den Wikipedia-Artikel zu Hösle geschafft hat.) Am Beispiel Bill Gates’ lässt sich wie zuvor am Beispiel Obama demonstrieren, dass ein Name sowohl als ›target‹ als auch als ›source‹ vorkommen kann. Bevor Bill Gates selbst als Referenz verwendet wird, wird er in einem Artikel von 1995 noch durch eine andere Person beschrieben: »Bill Gates ist der Henry Ford des Computerzeitalters«.</p>
+<p>Insgesamt wurden aus 1.456 Vossanto-Kandidaten 225 manuell als Vossantos markiert, die sich wie folgt über die im Korpus vorhandenen Jahre verteilen:</p>
+<p>
+<figure>
+<graphic url="vortrag-FISCH-100002000000032000000258BB20B0C3704E9BD3.png"/>
+<head>vossantos_zeit.png</head>
+</figure>
+</p>
+<p>Zu den fälschlich extrahierten Named Entities gehören »der Berliner Klaus Wowereit«, »der deutsche Michel« oder »der Anton aus Tirol«, stehende Wendungen, die grammatisch unseren definierten Vossanto-Mustern entsprechen.</p>
 </div>
 <div rend="DH-Heading1" type="div1">
-<head>Konzeption eines fachspezifischen DH-Curriculums</head>
-<p>Die sukzessive wachsende Plattform und die aktuell angebotenen Kurse dienen als Grundlage für eine Institutionalisierung der IT-Grundausbildung in Form eines fachspezifischen DH-Curriculums. Das Konzept für das geplante freiwillige Zusatz-Zertifikat wird derzeit in der Projektgruppe erarbeitet und baut auf Erfahrungen vergleichbarer Angebote im deutschsprachigen Raum auf
-                    <ref n="9" target="poster-SCHUJftn9" type="note">9</ref>. Angedacht ist eine Kombination aus Veranstaltungen, die explizit IT-Grundlagenwissen vermitteln, und praxisorientierten Kursen, in denen die erlernten IT-Inhalte auf fachwissenschaftliche Gegenstände angewendet werden. Wichtig erscheint eine ausgewogene Verschränkung von 
-                    <hi rend="italic">eLearning</hi>-Angeboten und Präsenzveranstaltungen, da insbesondere letzteren durch den intensiven Austausch der Studierenden mit DH-Spezialisten ein großer Beitrag zum Lernerfolg beigemessen wird
-                    <ref n="10" target="poster-SCHUJftn10" type="note">10</ref>.
+<head>Erkenntnisse und Ausblick</head>
+<p>Die Vossanto ist als Stilmittel nur scheinbar einfach strukturiert, das Erstellen von Extraktionsregeln daher alles andere als trivial. Die vorliegenden Skripte weisen bekannte Lücken auf, die Qualität hängt v. a. von der Verlässlichkeit der benutzten NER-Tools und der Präzision der definierten Muster ab. Fehlende Goldannotationen für dieses Phänomen erschweren zudem eine Evaluierung. Die vorliegende Arbeit hat daher explorativen Charakter, die Optimierung von Precision und Recall lag noch nicht in deren Fokus, ist aber das nächste Ziel dieses Projekts.</p>
+<p>Trotz der genannten Einschränkungen konnten durch diesen korpusbasierten Ansatz neue Erkenntnisse zur Vielgestaltigkeit des Phänomens ›Vossianische Antonomasie‹ gewonnen werden. So lassen sich zahlreiche Spezialfälle unterscheiden und systematisch untersuchen (vgl. auch Fischer/Wälzholz 2014), beispielhaft genannt seien:</p>
+<list type="unordered">
+<item>Tiere als ›target‹ (»
+                        <hi rend="italic">Sea Hero</hi> is the Bobo Holloman of racing«, NYT, 1993; »
+                        <hi rend="italic">Bonfire</hi>, the Michael Jordan of dressage horses«, NYT, 1998),
+                    </item>
+<item>Feminisierungen (Adele Schopenhauer, »eine Art 
+                        <hi rend="italic">Donna Quichotta</hi> des Weimarer Musenvereins«, 
+                        <hi rend="italic">Die Zeit</hi> 18/2002; »Tracey [Emin], die 
+                        <hi rend="italic">Donna Giovanna</hi> der britischen Gegenwartskunst«, 
+                        <hi rend="italic">Die Zeit</hi> 9/2006; »Kati Witt ist jetzt eine 
+                        <hi rend="italic">Franziska Beckenbauer</hi> der Münchner Olympiabewerbung.«, 
+                        <hi rend="italic">Die Zeit</hi> 39/2010),
+                    </item>
+<item>nicht individualisierbare ›sources‹: »the [God, King, Queen, Satan, Emperor, Oracle, Shogun, Czar, Sultan, Buddha] of«,</item>
+<item>mythologische und fiktive Figuren als ›sources‹: »the [Santa Claus, Midas, Godzilla, Pied Piper, Energizer Bunny, Jupiter, Icarus] of«,</item>
+<item>Personifizierungen, also der Einsatz individueller Personen/Figuren als ›source‹ für Firmen, Vereine, Bands oder Orte als ›target‹ (»
+                        <hi rend="italic">Sturm, Ruger</hi> is the 
+                        <hi rend="italic">Benedict Arnold</hi> of the gun industry«, NYT, 1989; »
+                        <hi rend="italic">Aerosmith</hi>, the 
+                        <hi rend="italic">Dorian Gray</hi> of rock bands«, NYT, 1993; »the 
+                        <hi rend="italic">Hudson</hi> has been the 
+                        <hi rend="italic">John Barrymore</hi> of rivers, noble in profile but a sorry wreck«, NYT, 1996; »the 
+                        <hi rend="italic">National Collegiate Athletic Association</hi>, the 
+                        <hi rend="italic">Kenneth Starr</hi> of sports«, NYT, 1998).
+                    </item>
+</list>
+<p>Zu letzteren Beispielen gehört nun endlich auch der titelgebende »Helmut Kohl unter den Brotaufstrichen« (
+                    <hi rend="italic">der Freitag</hi> 35/2011).
                 </p>
-</div>
-<div rend="DH-Heading1" type="div1">
-<head>Grundlage einer nachhaltigen IT-Didaktik</head>
-<p>Neben der Langzeitarchivierung der Forschungsdaten wird auch die Nachhaltigkeit der informationstechnologischen Infrastruktur (Serveranlage mit redundant ausgelegten File-, Datenbank- und Web-Servern sowie ausreichenden Storages) durch die IT-Gruppe Geisteswissenschaften dauerhaft gewährleistet. Die Architektur des 
-                    <hi rend="italic">DHVLab</hi> ist flexibel und skalierbar gestaltet, sodass sie weiter ausgebaut werden kann (bei Bedarf ist ein Hosting der Server am Leibniz-Rechenzentrum in Garching bei München möglich). Für eine nachhaltige IT-Didaktik spielt neben der langfristig gesicherten technischen Infrastruktur insbesondere die inhaltliche Kontinuität eine entscheidende Rolle. Die im Rahmen des Projektes erarbeiteten Lehreinheiten werden dauerhaft zur Verfügung gestellt. Thematisch sind sie so zu gliedern und fachlich anzupassen, dass eine spezifische Auswahl für eine Lehrveranstaltung und damit eine Integration in ein geisteswissenschaftliches Einzelfach möglich ist. Die IT-Gruppe stellt auch nach Ende der Projektlaufzeit die unterstützende Begleitung der Lehrveranstaltungen sicher. Der Vortrag möchte zur Diskussion anregen, inwiefern sich die Anpassung der Materialien an die sich rasch wandelnden Anforderungen im Bereich der Digital Humanities möglichst effizient gestalten lässt. IT-Didaktik scheint nur dann einen Anspruch auf Nachhaltigkeit zu besitzen, wenn sie sich in einem steten Anpassungsprozess befindet.
-                </p>
-<p>Ganz im Sinne des „Digitalen Campus Bayern“ ist das Münchener Pilotprojekt auf eine Ausweitung auf andere Studienstandorte ausgerichtet. Die Plattform wird beispielsweise ab 2017 in einem im Aufbau befindlichen Kooperationsprogramm zur DH-Ausbildung der Universitäten Erlangen, München und Regensburg zum Einsatz kommen. Alle Module des 
-                    <hi rend="italic">DHVLab</hi> können kollaborativ von anderen Hochschulen genutzt werden, um umfassende Sammlungen von Tutorials, Aufgaben, Softwarebeschreibungen, Anwendungsszenarien sowie Sammlungen fachwissenschaftlicher Objekt- und Metadaten aufzubauen und gemeinsam zu pflegen.
+<p>Auch zur Distribution der Vossantos innerhalb der beiden Zeitungskorpora ließen sich belastbare Ergebnisse gewinnen. Demnach sind Vossantos besonders im Kultur- und Sport-Ressort beliebt (Vorkommen in der Sektion »Arts« der NYT: 78; in der Sektion »Sports«: 57; auf dem nächsten Rang mit großem Abstand »New York and Region«: 28 – im »Feuilleton + Literatur«-Ressort der Zeit: 76, »Politik«: 54, nächstrangig ist weit entfernt »Wirtschaft« mit 23 Vorkommen; »Sport« hat hier keine Treffer, denn die gedruckte 
+                    <hi rend="italic">Zeit</hi> hat kein dediziertes Sport-Ressort).
                 </p>
 </div>
 </body>
-<back><div type="Notes"><note n="2" rend="footnote text" xml:id="poster-SCHUJftn2">Vgl. 
-                            <ref target="http://www.dh-curricula.org/index.php?id=1">http://www.dh-curricula.org/index.php?id=1</ref> [letzter Zugriff: 30. November 2016].
-                        </note><note n="3" rend="footnote text" xml:id="poster-SCHUJftn3"> Die Projektlaufzeit beträgt zwei Jahre. Das Vorhaben ist Teil eines Förderprogramms, welches das Bayerische Wissenschaftsministerium aufgelegt hat. Vgl. 
-                            <ref target="https://www.km.bayern.de/pressemitteilung/9340/.html">https://www.km.bayern.de/pressemitteilung/9340/.html</ref> [letzter Zugriff: 30. November 2016].
-                        </note><note n="4" rend="footnote text" xml:id="poster-SCHUJftn4"> Vgl. die Übersicht unter 
-                            <ref target="http://www.itg.lmu.de/projekte">www.itg.lmu.de/projekte</ref> [letzter Zugriff: 30. November 2016].
-                        </note><note n="5" rend="footnote text" xml:id="poster-SCHUJftn5"> Vgl. 
-                            <ref target="http://dhmuc.hypotheses.org/uber">http://dhmuc.hypotheses.org/uber</ref> [letzter Zugriff: 30. November 2016].
-                        </note><note n="6" rend="footnote text" xml:id="poster-SCHUJftn6"> Für die Dokumentation der technischen Infrastruktur vgl. 
-                            <hi rend="Hyperlink">http://dhvlab.gwi.uni-muenchen.de/index.php/Category:</hi>
-<ref target="http://dhvlab.gwi.uni-muenchen.de/index.php/Category:Architektur">Architektur</ref> [letzter Zugriff: 30. November 2016].
-                        </note><note n="7" rend="footnote text" xml:id="poster-SCHUJftn7"> Derzeit stehen in der virtuellen Umgebung u.a. folgende Software und Programme zur Verfügung: LibreOffice-Paket, OCRFeeder und Ocrad (Texterkennung), Python (PyCharm), RStudio (Statistik), Gephi (Visualisierung), epcEdit (XML-Editor), AntConc und TreeTagger (Korpuslinguistik).</note><note n="8" rend="footnote text" xml:id="poster-SCHUJftn8"> Vgl. die Zusammenstellung auf der Projektseite: 
-                            <ref target="http://dhvlab.gwi.uni-muenchen.de/index.php/Das_DHVLab_im_Einsatz">http://dhvlab.gwi.uni-muenchen.de/index.php/Das_DHVLab_im_Einsatz</ref> [letzter Zugriff: 30. November 2016].
-                        </note><note n="9" rend="footnote text" xml:id="poster-SCHUJftn9"> Vgl. insbesondere die Angebote in Köln (
-                            <ref target="http://www.itzertifikat.uni-koeln.de/">http://www.itzertifikat.uni-koeln.de/</ref>), Passau (
-                            <ref target="http://www.phil.uni-passau.de/zertifikat-dh/">http://www.phil.uni-passau.de/zertifikat-dh/</ref>) und Stuttgart („Das digitale Archiv“, 
-                            <ref target="http://www.uni-stuttgart.de/dda">http://www.uni-stuttgart.de/dda</ref>), letztgenanntes als Vorläufer eines DH-Masterstudienganges [letzter Zugriff: 30. November 2016].
-                        </note><note n="10" rend="footnote text" xml:id="poster-SCHUJftn10"> Vor diesem Hintergrund erscheinen grundständige 
-                            <hi rend="italic">eLearning</hi>-Angebote wie „The Programming Historian“ (
-                            <ref target="http://programminghistorian.org/">http://programminghistorian.org/</ref>) für einen autodidaktischen Einstieg begrüßenswert. Die Initiatoren des DHVLab sind jedoch der Auffassung, dass eine umfassende Präsenzausbildung nicht ersetzt werden kann.
-                        </note></div>
+<back>
 <div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-<hi rend="bold">Bartsch, Sabine / Borek, Luise / Rapp, Andrea</hi> (2016): 
-                        „Aus der Mitte der Fächer, in die Mitte der Fächer: Studiengänge und Curricula – Digital Humanities in der universitären Lehre“,
+<hi rend="bold">Bergien, Angelika</hi> (2013):
+                        „Names as frames in current-day media discourse“, 
+                        in: Felecan, Oliviu (ed.): 
+                        <hi rend="italic">Name and Naming</hi>. Proceedings of the second international conference on onomastics. Cluj-Napoca: Editura Mega 2013: 19–27.
+                    </bibl>
+<bibl>
+<hi rend="bold">Bird, Steven / Loper, Edward / Klein, Ewan</hi> (2009): 
+                        <hi rend="italic">Natural Language Processing with Python</hi>. 
+                        O’Reilly Media Inc.
+                    </bibl>
+<bibl>
+<hi rend="bold">Faruqui, Manaal / Pado, Sebastian</hi> (2010):
+                        „Training and Evaluating a German Named Entity Recognizer with Semantic Generalization“, 
                         in: 
-                        <hi rend="italic">Bibliothek – Forschung und Praxis</hi> 40 (2): 172–178 10.1515/bfp-2016-0030.
+                        <hi rend="italic">Proceedings of Konvens 2010</hi>.
                     </bibl>
 <bibl>
-<hi rend="bold">DARIAH-EU</hi>: 
-                        <hi rend="italic">Digital Humanities Registry – Courses</hi>
-<ref target="https://dh-registry.de.dariah.eu/">https://dh-registry.de.dariah.eu/</ref> [letzter Zugriff 30. November 2016].
+<hi rend="bold">Fischer, Frank / Wälzholz, Joseph</hi> (2014): 
+                        „Jeder kann Napoleon sein: Vossianische Antonomasie: Eine Stilkunde“, 
+                        in:
+                        <hi rend="italic">Frankfurter Allgemeine Sonntagszeitung</hi> 51 (21. Dezember 2014): 34 
+                        <ptr target="http://www.umblaetterer.de/wp-content/uploads/2014/12/vossanto_fas.png"/>.
                     </bibl>
 <bibl>
-<hi rend="bold">DHI Paris (Teamaccount)</hi> (2013): 
-                        „Wissenschaftlicher Nachwuchs in den Digital Humanities: Ein Manifest“,
-                        in: 
-                        <hi rend="italic">Digital Humanities am DHIP</hi>, 23. August 2013 
-                        <ref target="http://dhdhi.hypotheses.org/1995">http://dhdhi.hypotheses.org/1995</ref> [letzter Zugriff 30. November 2016].
+<hi rend="bold">Holmqvist Kenneth / Płuciennik Jarosław</hi> (2010): 
+                        „Princess antonomasia and the truth: Two types of metonymic relations“,
+                        in: Burkhardt, Armin / Nerlich, Brigitte (eds.): 
+                        <hi rend="italic">Tropical Truth(s): The Epistemology of Metaphor and Other Tropes</hi>. 
+                        Berlin/New York: De Gruyter 373–381 
+                        10.1515/9783110230215.
                     </bibl>
 <bibl>
-<hi rend="bold">Ehrlicher, Hanno</hi> (2016): 
-                        „Fingerübungen in Digitalien. Erfahrungsbericht eines teilnehmenden Beobachters der Digital Humanities aus Anlass eines Lehrexperiments“, 
-                        in: 
-                        <hi rend="italic">Romanische Studien</hi> 4: 623–636 
-                        <ref target="http://www.romanischestudien.de/index.php/rst/article/view/88">http://www.romanischestudien.de/index.php/rst/article/view/88</ref> [letzter Zugriff 30. November 2016].
+<hi rend="bold">Lakoff, George</hi> (1987): 
+                        <hi rend="italic">Women, Fire, and Dangerous Things: What Categories Reveal about the Mind</hi>. 
+                        Chicago: The University of Chicago Press.
                     </bibl>
 <bibl>
-<hi rend="bold">Koller, Guido</hi> (2016): 
-                        <hi rend="italic">Geschichte digital: Historische Welten neu vermessen</hi>. 
-                        Stuttgart: Kohlhammer.
+<hi rend="bold">Lausberg, Heinrich</hi> (1960): 
+                        <hi rend="italic">Handbuch der literarischen Rhetorik. Eine Grundlegung der Literaturwissenschaft</hi> 2. 
+                        München: Hueber.
                     </bibl>
 <bibl>
-<hi rend="bold">Lücke, Stephan / Riepl, Christian</hi> (2016): 
-                        „Auf dem Weg zu einem Curriculum in den Digital Humanities“,
-                        in: 
-                        <hi rend="italic">Akademie Aktuell</hi> 57 (1): 74–77 
-                        <ref target="http://badw.de/fileadmin/pub/akademieAktuell/2016/56/0116_17_Riepl_V04.pdf">http://badw.de/fileadmin/pub/akademieAktuell/2016/56/0116_17_Riepl_V04.pdf</ref> [letzter Zugriff 30. November 2016].
+<hi rend="bold">Sandhaus, Evan</hi> (2008): 
+                        <hi rend="italic">The New York Times Annotated Corpus LDC2008T19</hi>. DVD. 
+                        Philadelphia: Linguistic Data Consortium.
                     </bibl>
 <bibl>
-<hi rend="bold">Rehbein, Malte</hi> (2016): 
-                        <hi rend="italic">Geschichtsforschung im digitalen Raum. Über die Notwendigkeit der Digital Humanities als historische Grundwissenschaft</hi>. (Preprint) 
-                        <ref target="http://www.phil.uni-passau.de/fileadmin/dokumente/lehrstuehle/rehbein/Dokumente/GeschichtsforschungImDigitalenRaum_preprint.pdf">http://www.phil.uni-passau.de/fileadmin/dokumente/lehrstuehle/rehbein/Dokumente/GeschichtsforschungImDigitalenRaum_preprint.pdf</ref> [letzter Zugriff 30. November 2016].
-                    </bibl>
+<hi rend="bold italic">Arbeitsrepositorium</hi>: 
+                        <ptr target="https://github.com/weltliteratur/vossanto"/>
+</bibl>
 <bibl>
-<hi rend="bold">Sahle, Patrick</hi> (2013): 
-                        <hi rend="italic">DH studieren! Auf dem Weg zu einem Kern- und Referenzcurriculum der Digital Humanities (= DARIAH-DE Working Papers 1)</hi>. 
-                        Göttingen: GOEDOC 
-                        <ref target="http://webdoc.sub.gwdg.de/pub/mon/dariah-de/dwp-2013-1.pdf">http://webdoc.sub.gwdg.de/pub/mon/dariah-de/dwp-2013-1.pdf</ref> [letzter Zugriff 30. November 2016].
-                    </bibl>
-<bibl>
-<hi rend="bold">Sahle, Patrick</hi> (2016): 
-                        „Digital Humanities als Beruf. Wie wird man ein „Digital Humanist“, und was macht man dann eigentlich?“, 
-                        in: 
-                        <hi rend="italic">Akademie Aktuell</hi> 57 (1): 78–83 
-                        <ref target="http://badw.de/fileadmin/pub/akademieAktuell/2016/56/0116_18_Sahle_V04.pdf">http://badw.de/fileadmin/pub/akademieAktuell/2016/56/0116_18_Sahle_V04.pdf</ref> [letzter Zugriff 30. November 2016].
-                    </bibl>
-<bibl>
-<hi rend="bold">Spiro, Lisa</hi> (2012): 
-                        „Openingup Digital Humanities Education“, 
-                        in: Hirsch, Brett D. (ed.):
-                        <hi rend="italic">Digital Humanities Pedagogy: Practices, Principlesand Politics</hi> 331–363 
-                        <ref target="http://www.openbookpublishers.com/product/161/">http://www.openbookpublishers.com/product/161/</ref> [letzter Zugriff 30. November 2016].
-                    </bibl>
-<bibl>
-<hi rend="bold">Thaller, Manfred</hi> (2015): 
-                        „Panel: Digital Humanities als Beruf – Fortschritte auf dem Weg zu einem Curriculum“, 
-                        in: 
-                        <hi rend="italic">Digital Humanities als Beruf: Fortschritte auf dem Weg zu einem Curriculum, vorgelegt auf der Jahrestagung 2015</hi> 3–5 
-                        <ref target="https://www.digitalhumanities.tu-darmstadt.de/fileadmin/dhdarmstadt/materials/Digital_Humanities_als_Beruf_-_Stand_2015.pdf">https://www.digitalhumanities.tu-darmstadt.de/fileadmin/dhdarmstadt/materials/Digital_Humanities_als_Beruf_-_Stand_2015.pdf</ref> [letzter Zugriff 30. November 2016].
-                    </bibl>
+<hi rend="bold italic">Folien zum Vortrag</hi>: 
+                        <ptr target="https://lehkost.github.io/slides/2017-bern/"/>
+</bibl>
 </listBibl>
 </div>
 </back>

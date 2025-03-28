@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="130_final-HALL_Mark_DH_is_the_Study_of_dead_Dudes" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="159_final-LAUBROCK_Jochen_Grundzüge_einer_visuellen_Stilometrie" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="full">
-                    <title type="main">DH is the Study of dead Dudes</title>
-                    <title type="sub"/>
-                </title>
+                <title>Grundzüge einer visuellen Stilometrie</title>
                 <author>
                     <persName>
-                        <surname>Hall</surname>
-                        <forename>Mark</forename>
+                        <surname>Laubrock</surname>
+                        <forename>Jochen</forename>
                     </persName>
-                    <affiliation>Martin-Luther-Universität Halle-Wittenberg, Deutschland</affiliation>
-                    <email>mark.hall@informatik.uni-halle.de</email>
+                    <affiliation>Universität Potsdam, Deutschland</affiliation>
+                    <email>laubrock@uni-potsdam.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dubray</surname>
+                        <forename>David</forename>
+                    </persName>
+                    <affiliation>Universität Potsdam, Deutschland</affiliation>
+                    <email>ddubray@uni-potsdam.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2019-01-07T16:51:17.308384336</date>
+                    <date>2019-01-11T09:38:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -31,7 +36,7 @@
                 </t:address>
             </publicationStmt>
             <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
+                <p>Converted from a Word document</p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
@@ -50,575 +55,81 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Gender</term>
-                    <term>Sprache</term>
-                    <term>Digital Humanities</term>
-                    <term>Quantitative Analyse</term>
+                    <term>Convolutional Neural Network</term>
+                    <term>Maschinelles Sehen</term>
+                    <term>Visuelle Stilometrie</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Inhaltsanalyse</term>
-                    <term>Kontextsetzung</term>
-                    <term>Personen</term>
+                    <term>Stilistische Analyse</term>
+                    <term>Bilder</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <head>DH is the Study of dead Dudes</head>
-            <p>Die Digital Humanities (DH) werden oft als Möglichkeit gesehen neue Methoden und neue Datenmengen zu nutzen um neue Ansätze auf Fragen der Geisteswissenschaften zu entwickeln (Barry 2011). Als Teil des DH Forschungsprozesses muss in vielen Fällen ein Datensatz oder eine Person als Fokus der Studie gewählt werden. Dass dabei existierende soziale Trends verstärkt werden, besonders was den Fokus auf den Kanon betrifft ist bekannt und in verschiedenen Hinsichten problematisiert worden (Liu 2012; McPherson 2012; Wernimont 2013; Fiormonte 2016; Gallon 2016; Rhody 2016). Es basiert aber keine dieser Kritiken auf einer expliziten Analyse der im DH Bereich unternommenen Forschung. Dieser Beitrag unternimmt einen ersten Schritt um dies zu korrigieren und präsentiert einen quantitativen, distant-reading Ansatz um der Frage nach Gender, Sprache, und Herkunftsland von in DH untersuchten Personen nachzugehen.</p>
-            <div type="div1">
-                <head>Methode</head>
-                <p>Die hier präsentierte Analyse basiert auf den Konferenzabstracts der DHd Konferenzen 2016, 2017, und 2018. Aus den Abstracts wurden alle erwähnten Personen manuell identifiziert. Auf eine automatisierte Identifikation wurde verzichtet, da dies nur eine neue Fehlerquelle in die Analyse einführen würde, ohne inhaltlich irgendeinen Unterschied zu machen. Da die Abstracttexte selbst nicht im Detail gelesen wurden, ist der Ansatz als distant-reading zu verstehen und berücksichtigt auch keine Abstracts, die sich mit diesem Thema beschäftigen, aber keine Personen expliziten erwähnt.</p>
-                <p>Für die Identifikation der Personen wurden die Inklusions- und Exklusionsregeln in Tabelle 1 angewandt. Das zentrale Prinzip für das Zählen einer Person ist, dass sie explizit ausgewählt worden sein muss. Das heißt, Personen werden nur gezählt, wenn sie oder ihr Werk das primäre Untersuchungssubjekt sind (#1) oder weil sie als exemplarisches Beispiel eines Themas (#2) oder als Sample eines Datensatzes (#3) präsentiert werden. Personen, die sowohl als Studiensubjekte auftreten, aber auch selbst akademische Theorien entwickelt haben, werden nur gezählt wenn ihre Arbeiten das Ziel der Analyse sind, nicht aber wenn sie Teil des methodischen Ansatzes sind (#4). Zum Beispiel, wenn die Schriften Adornos automatisiert analysiert werden, dann wird er gezählt. Wenn aber die Theorien Adornos zur Interpretation anderer Daten genutzt werden, dann wird er nicht gezählt. Letztens werden Personen nicht gezählt, wenn sie in einer vollautomatisch erstellten Liste auftreten, bei der kein manueller Eingriff in der Erstellung auftrat (#5). Zum Beispiel wenn bei einer Häufigkeitsanalyse die 20 häufigsten Namen gelistet werden, dann werden diese nicht gezählt, da die Studie Verzerrungen in der Auswahl von Studiensubjekten betrachtet und nicht Verzerrungen in den Datensätzen.</p>
-                <table rend="frame" xml:id="Table1">
-                    <row role="label">
-                        <cell rend="start bold">#</cell>
-                        <cell rend="start bold">Regel</cell>
-                        <cell rend="start">Aktion</cell>
-                    </row>
-                    <row>
-                        <cell>1</cell>
-                        <cell>Person als primäres Untersuchungssubjekt</cell>
-                        <cell>Inklusion</cell>
-                    </row>
-                    <row>
-                        <cell>2</cell>
-                        <cell>Person als Beispiel für das untersuchte Thema</cell>
-                        <cell>Inklusion</cell>
-                    </row>
-                    <row>
-                        <cell>3</cell>
-                        <cell>Person als Sample aus dem untersuchten Datensatz</cell>
-                        <cell>Inklusion</cell>
-                    </row>
-                    <row>
-                        <cell>4</cell>
-                        <cell>Person erwähnt als Theoriegeber_in</cell>
-                        <cell>Exklusion</cell>
-                    </row>
-                    <row>
-                        <cell>5</cell>
-                        <cell>Person erwähnt als vollautomatisiertes Ergebnis</cell>
-                        <cell>Exklusion</cell>
-                    </row>
-                </table>
-                <p>Tabelle 1: Inklusions- und Exklusionsregeln für die Erstellung des Personendatensatzes.</p>
-                <p>Für die derart identifizierten Personen wurden dann Gender, Sprache, und Herkunftsland identifiziert, wobei als Quelle primär Wikipedia genutzt wurde. Bei der Klassifikation von Sprache und Herkunftsland wurde eine Mehrfachzuordnung durchgeführt, um Unterschiede zwischen heutigen und historischen Länder und Sprachgrenzen abzubilden und Mehrsprachigkeit der historischen Personen zu berücksichtigen. Aus den insgesamt 230 erwähnten Personen konnte nur für 4 keine Zuordnung durchgeführt werden. Basierend auf der Zuordnung wurde dann pro Abstract die Zahl der Erwähnungen ermittelt. Pro Abstract wurde eine Person die mehrmals erwähnt wurde nur einmal gezählt. Zugleich wurde eine Person die in verschiedenen Abstracts erwähnt wird, pro Abstract je einmal gezählt.</p>
-                <p>Die Abstracts wurden mit Publikationsjahr und Katgeorie (Vortrag, Poster, Workshop, …) annotiert, wobei hier nur die Vortrags- und Poster-abstracts analysiert werden.</p>
+            <p style="text-align:left; ">
+                <hi rend="italic" xml:space="preserve">Was kennzeichnet visuellen Stil? </hi>Nachdem die digitalen Geisteswissenschaften stark durch textanalytische Verfahren aus der Computerlinguistik und verwandten Gebieten geprägt waren, sind in den letzten Jahren vermehrt Methoden zur Beschreibung visuellen Materials vorgeschlagen worden. Diese sollten insbesondere den Bildwissenschaften neue methodische Zugänge ermöglichen. Die Frage nach einer formalen Beschreibung visuellen Stils etwa hat die kunstgeschichtlichen Forschung seit ihrem Beginn umgetrieben (Wölfflin 1915). In der Form- und Strukturanalyse dominieren jedoch verbale Beschreibungen, eine quantitative Lösung jenseits deskriptiver Ansätze steht aus. Neuere Entwicklungen im Bereich des maschinellen Sehens 
+                (<hi rend="italic">Computer Vision</hi>) lassen nun eine formale Beschreibung visuellen Stils greifbar werden. Diese basiert auf Repräsentationen in den tieferen Schichten sogenannter Convolutional Neural Networks (CNNs). 
+            </p>
+            <p style="text-align:left; ">
+                <hi rend="italic">CNNs</hi> sind eine Klasse tiefer neuronaler Netze, die inspiriert von biologischen visuellen Systemen entwickelt wurden, um ingenieurwissenschaftliche Probleme wie z.B. Handschrifterkennung zu lösen (LeCun et al. 1989). Durch nur lokale Konnektivität sind CNNs deutlich sparsamer und effizienter als klassische „
+                <hi rend="italic">fully connected</hi>“ neuronale Netze. CNNs lassen sich beschreiben als eine hierarchische Anordnung computationaler Einheiten, die visuelle Information in einem 
+                <hi rend="italic">Feedforward</hi>-Prozess verarbeiten. Jede Schicht der Hierarchie lässt sich interpretieren als eine Menge von Filtern, die bestimmte Merkmale des Eingabebildes extrahieren. Die Filterkoeffizienten werden durch Anpassung an die Daten gelernt. Die Ausgabe einer Schicht besteht aus einer Menge sogenannter Merkmalskarten, welche unterschiedlich gefilterte Versionen des Eingabebildes sind. Filter auf höheren Schichten erhalten als Eingabe im Wesentlichen eine gewichtete Rekombination der Merkmalskarten niedrigerer Schichten. In den unteren Schichten sind die Repräsentationen relativ einfach und entdecken beispielsweise Kanten oder Farben. Repräsentationen mittlerer Schichten können z.B. texturartig sein, während höhere Schichten deutlich komplexer sind und z.B. Objektteile repräsentieren können. Die unterschiedlichen Repräsentationsebenen weisen eine starke Ähnlichkeit mit der hierarchischen Verarbeitung im für Objekterkennung zuständigen ventralen Pfad des menschlichen visuellen Systems auf (Yamins and DiCarlo 2016), weshalb CNNs auch aussichtsreiche Kandidaten für die nähere und quantitativ fundierte Untersuchung ungelöster Probleme der sogenannten 
+                <hi rend="italic">Mid-Level Vision</hi> sind. Auch in diesem Bereich dominierten bis vor kurzem qualitative Beschreibungen wie z.B. gestaltpsychologische Ansätze.
+            </p>
+            <p style="text-align:left; ">
+                <hi rend="italic">Neural Style Transfer.</hi> Wie kodieren CNNs nun Stil? Leon Gatys, Alexander Ecker und Matthias Bethge haben die Methode des Style Transfer entwickelt, in der sie zeigen, dass Stil und Inhalt eines Bildes in CNNs zu einem gewissen Grad unabhängig voneinander repräsentiert werden. Am Beispiel des VGG-Netzwerkes (Simonyan and Ziisserman 2014) demonstrieren Gatys et al., dass stilistische Elemente auf niedrigeren Schichten und Bildinhalte auf höheren Schichten des Netzwerks kodiert werden. Der Stil eines Bildes A lässt sich deshalb prinzipiell auf den Inhalt eines Bildes B übertragen. Neuere Arbeiten haben diesen 
+                <hi rend="italic">Style Transfer</hi> weiter optimiert (Sanakoyeu et al. 2018). Interessanterweise ist Stil in diesen Arbeiten von gegenständlichen und auch abstrakten Gemälden extrahiert worden, obwohl das zugrundeliegende VGG für die Klassifikation von Fotos vortrainiert war. Die gelernten Filter sind offensichtlich hinreichend generisch, um derartigen Transfer zu ermöglichen.
+            </p>
+            <p style="text-align:left; ">
+                <hi rend="italic">Stil von Illustratoren.</hi> In Vorarbeiten haben wir gezeigt, dass sich CNN-Repräsentationen auch zur Beschreibung grafischer Literatur wie Comics, Graphic Novels etc. eignen (Laubrock, Hohenstein and Kümmerer 2018). 
+                <hi rend="italic">Welche Repräsentationen sind nun aber charakteristisch für den Stil von Illustratoren?</hi> Dieser Frage gehen wir in der vorliegenden Untersuchung nach. Wir nutzen dazu das Xception-Netzwerk (Chollet 2016), das deutlich effizienter ist als VGG und bei weniger Parametern typischerweise eine bessere Klassifikationsleistung erbringt. Als „Signatur“ eines Zeichners extrahieren wir das Muster der mittleren Antwortstärke über verschiedene Filter. Diese benutzen wir als Prädiktor für eine Illustrator-Klassifikation. Experimentell variieren wir dabei, aus welchen Ebenen des Netzwerks Filter zu Klassifikation genutzt werden. Die Güte der Klassifikation als Funktion der benutzten Filter dient zur Abschätzung dafür, wie relevant auf einer bestimmten Hierarchieebene repräsentierte Merkmale für den Individualstil sind. Zusätzlich berechnen wir eine Ähnlichkeitsmatrix basierend auf den CNN-Aktivierungen als Grundlage für eine bildbasierte Suche.
+            </p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Material</head>
+                <p style="text-align:left; ">Als Material verwenden wir zwei Sammlungen grafischer Literatur: (a) das Graphic Narrative Corpus (GNC; Dunst, Hartel and Laubrock 2009) und (b) Manga109 (Matsui et al. 2017). Das GNC ist eine kuratierte Sammlung über 200 zeitgenössischer Graphic Novels aus den Jahren 1979 bis 2017 mit einem Gesamtumfang von mehr als 50.000 Seiten. Der GNC beinhaltet Werke verschiedener Genres (z.B. Autobiographie, New Journalism, Crime, Superhelden). Manga109 besteht aus 109 Manga-Bänden (mehr als 20.000 Seiten), die zwischen 1970 und 2010 im Handel erhältlich waren und 2017 der Wissenschaft zur Verfügung gestellt wurden. Die Korpora wurden durch zufällige geschichtete Stichprobenziehung in ein Trainings- und ein Testcorpus unterteilt.</p>
             </div>
-            <div type="div1">
+            <div type="div1" rend="DH-Heading1">
+                <head>Methode </head>
+                <p style="text-align:left; ">Der CNN-Teil eines auf dem ImageNet-Datensatz (Deng et al. 2009) vortrainierten Xception-Netzwerk wurde benutzt, um Illustratoren in den beiden Korpora zu klassifizieren. </p>
+                <p style="text-align:left; ">
+                    <hi rend="italic">Bildsignatur.</hi> Für jedes Bild wurden zunächst Merkmalskarten auf verschiedenen ausgewählten Schichten des Xception-Netzes berechnet. Für die Merkmalskarten pro Filter wurde dann die mittlere Aktivierung 
+                    (<hi rend="italic">global average pooling</hi>) berechnet. Ein Vektor der mittleren Aktivierung über eine Menge von Filtern wurde als Signatur des Bildes gespeichert. Dies resultiert in einer recht kompakten Repräsentation mit einem Kompressionsverhältnis im Vergleich zum Ausgangsbild von ca. 1:800 für frühe bzw. ca. 1:100 für späte Schichten und 1:21 bei Verwendung aller Filter. 
+                </p>
+                <p style="text-align:left; ">
+                    <hi rend="italic">Klassifikation.</hi> Zur Klassifikation trainierten wir ein einfaches 
+                    <hi rend="italic">fully-connected</hi> neuronales Netz mit einer verdeckten Schicht von 1024 Einheiten. Diese erhielten als Input die Bildsignatur 
+                    (<hi rend="italic">average-pooled feature maps</hi>, s.o.) und als Output die Illustratoren. Das Trainings-Set enthielt 90% der Seiten eines jeden Buches, zufällig bestimmte 10% der Seiten pro Comicband wurden nicht während des Trainings präsentiert, sondern als Test-Set zur Seite gelegt zur Bewertung der Klassifikationsleistung des trainierten Netzes. 
+                </p>
+                <p style="text-align:left; ">
+                    <hi rend="italic">Läsionsexperimente.</hi> Weil wir uns dafür interessierten, welche Art von Merkmal am charakteristischsten für den Stil eines Illustrators ist, haben wir das CNN auf fortschreitend niedrigeren Ebenen läsioniert und die Klassifikationsleistung mit dem vollen, auf allen Schichten basierenden Modell verglichen.
+                </p>
+                <p style="text-align:left; ">Zusätzlich haben wir Klassifikationen basierend auf dem Output einzelner Schichten berechnet. Insgesamt vergleichen wir also die Klassifikation unter Berücksichtigung einzelner Schichten 0, 1, ..., k vs. mit der bei Berücksichtigung aller Schichten von 0 bis k. Der Merkmalsvektor wurde im letzteren Fall durch einfache Verkettung der Signaturen gebildet.</p>
+                <p style="text-align:left; ">
+                    <hi rend="italic">Ähnlichkeitsmatrix.</hi> Die Ähnlichkeiten der Merkmalsvektoren aller Bilder wurden mittels euklidischer Distanz berechnet. Basierend auf dieser Matrix wurde eine Ähnlichkeitssuche implementiert.
+                </p>
+                <p style="text-align:left; ">
+                    <hi rend="italic">Semantische Segmentierung.</hi> Mit Hilfe von CNN-Repräsentationen lassen sich auch sehr gut einzelne Bildelemente identifizieren. Zur Detektion von Sprechblasen trainieren wir ein Fully-Convolutional neuronales Netz nach der U-Net-Architektur (Ronneberger et al. 2015) auf 750 annotierte Comicseiten. In dieser Architektur wird neben einem Enkodier- auch ein Dekodierpfad benutzt, in dem die recht abstrakten, semantiknahen Repräsentationen höherer Ebenen mit Kopien der Information niedrigerer Ebenen verrechnet wird, um Ortsinformation zu rekonstruieren. Auch hier haben wir beim Enkodierpfad wieder mit vortrainierten Repräsentationen begonnen und nur ein Feintuning vorgenommen.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
                 <head>Ergebnisse</head>
-                <p>Insgesamt wurden 342 Abstracts analysiert (162 Vorträge, 180 Poster), in denen in 104 explizit Personen erwähnt wurden (60 in Vorträgen, 44 in Postern) (Tabelle 2). Bei den Vorträgen stellt dies einen Anteil zwischen 33% und 50% aller Abstracts da, bei den Postern liegt der Anteil zwischen 19% und 28%. Für die Analyse wurden erstens die Erwähnungen pro Abstract aggregiert und dann die Zahl der Abstracts mit zumindest einer Erwähnung betrachtet. Zweitens wurden die Erwähnungen auch unabhängig von den Abstracts analysiert.</p>
-                <table rend="frame" xml:id="Table2">
-                    <row>
-                        <cell/>
-                        <cell cols="2" rend="center bold">2016</cell>
-                        <cell cols="2" rend="center bold">2017</cell>
-                        <cell cols="2" rend="center bold">2018</cell>
-                    </row>
-                    <row>
-                        <cell/>
-                        <cell rend="end bold">Gesamt</cell>
-                        <cell rend="end bold">mit Personen</cell>
-                        <cell rend="end bold">Gesamt</cell>
-                        <cell rend="end bold">mit Personen</cell>
-                        <cell rend="end bold">Gesamt</cell>
-                        <cell rend="end bold">mit Personen</cell>
-                    </row>
-                    <row>
-                        <cell rend="italic">Vortrag</cell>
-                        <cell rend="end">60</cell>
-                        <cell rend="end">20</cell>
-                        <cell rend="end">36</cell>
-                        <cell rend="end">18</cell>
-                        <cell rend="end">66</cell>
-                        <cell rend="end">22</cell>
-                    </row>
-                    <row>
-                        <cell rend="italic">Poster</cell>
-                        <cell rend="end">77</cell>
-                        <cell rend="end">18</cell>
-                        <cell rend="end">36</cell>
-                        <cell rend="end">7</cell>
-                        <cell rend="end">67</cell>
-                        <cell rend="end">19</cell>
-                    </row>
-                </table>
-                <p>Tabelle 2: Zusammenfassung des analysierten Datensatzes.</p>
-                <div type="div2">
-                    <head>Gender</head>
-                    <p>Tabellen 3 und 4 zeigen die Genderverteilung für die Vortrags- und Posterabstracts. In drei Jahren Vortragsabstracts gibt es keinen einzigen in dem nur weibliche Personen erwähnt werden. Bei den Posterabstracts ist die Situation marginal besser, mit je einem Abstract in 2016 und 2017. Insgesamt wurden über die drei Jahre hinweg nur in 15% aller Vortragsabstracts und in 7% aller Posterabstracts, in denen Personen erwähnt wurden, Frauen namentlich erwähnt.</p>
-                    <table rend="frame" xml:id="Table3">
-                        <row>
-                            <cell/>
-                            <cell cols="4" rend="center bold">2016</cell>
-                            <cell cols="4" rend="center bold">2017</cell>
-                            <cell cols="4" rend="center bold">2018</cell>
-                        </row>
-                        <row>
-                            <cell/>
-                            <cell rend="end bold">M</cell>
-                            <cell rend="end bold">F</cell>
-                            <cell rend="end bold">M&amp;F</cell>
-                            <cell rend="end bold">?</cell>
-                            <cell rend="end bold">M</cell>
-                            <cell rend="end bold">F</cell>
-                            <cell rend="end bold">M&amp;F</cell>
-                            <cell rend="end bold">?</cell>
-                            <cell rend="end bold">M</cell>
-                            <cell rend="end bold">F</cell>
-                            <cell rend="end bold">M&amp;F</cell>
-                            <cell rend="end bold">?</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">Vortrag</cell>
-                            <cell rend="end">17</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">1</cell>
-                            <cell rend="end">15</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">19</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">0</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">Poster</cell>
-                            <cell rend="end">16</cell>
-                            <cell rend="end">1</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">1</cell>
-                            <cell rend="end">6</cell>
-                            <cell rend="end">1</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">18</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">1</cell>
-                            <cell rend="end">0</cell>
-                        </row>
-                    </table>
-                    <p>Tabelle 3: Anzahl an Abstracts die entweder nur männliche (M), nur weibliche (W), sowohl männliche und weibliche (M&amp;W), oder nur unbekannte (?) Personen erwähnen.</p>
-                    <p>Bei den Einzelerwähnungen (Tabelle 4) ist die Situation ähnlich. Bei den Vortragsabstracts machen Frauen 9% der Erwähnungen aus, bei den Posterabstracts 5%.</p>
-                    <table rend="frame" xml:id="Table4">
-                        <row>
-                            <cell/>
-                            <cell cols="3" rend="center bold">2016</cell>
-                            <cell cols="3" rend="center bold">2017</cell>
-                            <cell cols="3" rend="center bold">2018</cell>
-                        </row>
-                        <row>
-                            <cell/>
-                            <cell rend="end bold">M</cell>
-                            <cell rend="end bold">F</cell>
-                            <cell rend="end bold">?</cell>
-                            <cell rend="end bold">M</cell>
-                            <cell rend="end bold">F</cell>
-                            <cell rend="end bold">?</cell>
-                            <cell rend="end bold">M</cell>
-                            <cell rend="end bold">F</cell>
-                            <cell rend="end bold">?</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">Vortrag</cell>
-                            <cell rend="end">33</cell>
-                            <cell rend="end">4</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">55</cell>
-                            <cell rend="end">7</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">63</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">0</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">Poster</cell>
-                            <cell rend="end">19</cell>
-                            <cell rend="end">1</cell>
-                            <cell rend="end">1</cell>
-                            <cell rend="end">6</cell>
-                            <cell rend="end">1</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">33</cell>
-                            <cell rend="end">1</cell>
-                            <cell rend="end">0</cell>
-                        </row>
-                    </table>
-                    <p>Tabelle 4: Anzahl an Erwähnungen männlicher (M), weiblicher (W), oder unbekannter (?) Personen.</p>
-                </div>
-                <div type="div2">
-                    <head>Sprache</head>
-                    <p>Bei den Sprachen der erwähnten Personen stellt sich die Situation anders da. Bei den Vortragsabstracts bewegt sich der Anteil an Abstracts mit nicht-deutschsprachigen Personen zwischen 29% und 58% (Tabelle 5) und der Anteil an erwähnten nicht-deutschsprachig Personen zwischen 46% und 60% (Tabelle 6). Bei den Posterabstracts sind die jeweiligen Zahlen etwas niedriger, mit Anteilen zwischen 20% und 60% (Tabellen 7 und 8).</p>
-                    <table rend="frame" xml:id="Table5">
-                        <row>
-                            <cell/>
-                            <cell rend="end bold">Deutsch</cell>
-                            <cell rend="end bold">Englisch</cell>
-                            <cell rend="end bold">Französisch</cell>
-                            <cell rend="end bold">Portugisisch</cell>
-                            <cell rend="end bold">Spanisch</cell>
-                            <cell rend="end bold">Andere</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2016</cell>
-                            <cell rend="end">14</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">3</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2017</cell>
-                            <cell rend="end">14</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">4</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">2</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2018</cell>
-                            <cell rend="end">13</cell>
-                            <cell rend="end">7</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">1</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">5</cell>
-                        </row>
-                    </table>
-                    <p>Tabelle 5: Anzahl an Vorträgsabstracts die mindestens eine Person mit dieser Sprache erwähnen. Sprachen die nur einmal vorkommen sind in die Kategorie “Andere” aggregiert.</p>
-                    <table rend="frame" xml:id="Table6">
-                        <row>
-                            <cell/>
-                            <cell rend="end bold">DE</cell>
-                            <cell rend="end bold">EN</cell>
-                            <cell rend="end bold">FR</cell>
-                            <cell rend="end bold">PT</cell>
-                            <cell rend="end bold">ES</cell>
-                            <cell rend="end bold">NL</cell>
-                            <cell rend="end bold">SE</cell>
-                            <cell rend="end bold">IT</cell>
-                            <cell rend="end bold">Andere</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2016</cell>
-                            <cell rend="end">19</cell>
-                            <cell rend="end">4</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">7</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">2</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2017</cell>
-                            <cell rend="end">31</cell>
-                            <cell rend="end">16</cell>
-                            <cell rend="end">7</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2018</cell>
-                            <cell rend="end">24</cell>
-                            <cell rend="end">13</cell>
-                            <cell rend="end">11</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">4</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">5</cell>
-                        </row>
-                    </table>
-                    <p>Tabelle 6: Anzahl an Personen pro Sprache in den Vortragsabstracts.</p>
-                    <table rend="frame" xml:id="Table7">
-                        <row>
-                            <cell/>
-                            <cell rend="end bold">Deutsch</cell>
-                            <cell rend="end bold">Englisch</cell>
-                            <cell rend="end bold">Andere</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2016</cell>
-                            <cell rend="end">14</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">2</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2017</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">0</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2018</cell>
-                            <cell rend="end">11</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">5</cell>
-                        </row>
-                    </table>
-                    <p>Tabelle 7: Anzahl an Posterabstracts die mindestens eine Person mit dieser Sprache erwähnen.</p>
-                    <table rend="frame" xml:id="Table8">
-                        <row>
-                            <cell/>
-                            <cell rend="end bold">DE</cell>
-                            <cell rend="end bold">EN</cell>
-                            <cell rend="end bold">FR</cell>
-                            <cell rend="end bold">IT</cell>
-                            <cell rend="end bold">RU</cell>
-                            <cell rend="end bold">Andere</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2016</cell>
-                            <cell rend="end">16</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">2</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2017</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2018</cell>
-                            <cell rend="end">16</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">2</cell>
-                        </row>
-                    </table>
-                    <p>Tabelle 8: Anzahl an Personen pro Sprache in den Posterabstracts.</p>
-                </div>
-                <div type="div2">
-                    <head>Herkunftsland</head>
-                    <p>Die Ergebnisse für das Herkunftsland sind ähnlich (Tabellen 9, 10, 11 und 12), wobei durch die Unterteilung der deutschsprachigen Länder (Deutschland, Österreich, Schweiz) die Anteile nicht-deutscher Personen etwas höher sind (37% bis 71%).</p>
-                    <table rend="frame" xml:id="Table9">
-                        <row>
-                            <cell/>
-                            <cell rend="end bold">DE</cell>
-                            <cell rend="end bold">AT</cell>
-                            <cell rend="end bold">CH</cell>
-                            <cell rend="end bold">FR</cell>
-                            <cell rend="end bold">GB</cell>
-                            <cell rend="end bold">US</cell>
-                            <cell rend="end bold">ES</cell>
-                            <cell rend="end bold">IT</cell>
-                            <cell rend="end bold">Andere</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2016</cell>
-                            <cell rend="end">11</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">8</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2017</cell>
-                            <cell rend="end">10</cell>
-                            <cell rend="end">1</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">4</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">4</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2018</cell>
-                            <cell rend="end">12</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">6</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">7</cell>
-                        </row>
-                    </table>
-                    <p>Tabelle 9: Anzahl an Vortragsabstracts die mindestens eine Person mit diesem Herkunftsland. erwähnen.</p>
-                    <table rend="frame" xml:id="Table10">
-                        <row>
-                            <cell/>
-                            <cell rend="end bold">DE</cell>
-                            <cell rend="end bold">AT</cell>
-                            <cell rend="end bold">CH</cell>
-                            <cell rend="end bold">FR</cell>
-                            <cell rend="end bold">GB</cell>
-                            <cell rend="end bold">US</cell>
-                            <cell rend="end bold">ES</cell>
-                            <cell rend="end bold">IT</cell>
-                            <cell rend="end bold">NL</cell>
-                            <cell rend="end bold">SE</cell>
-                            <cell rend="end bold">AR</cell>
-                            <cell rend="end bold">Andere</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2016</cell>
-                            <cell rend="end">15</cell>
-                            <cell rend="end">4</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">7</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">6</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2017</cell>
-                            <cell rend="end">27</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">7</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">15</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">2</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2018</cell>
-                            <cell rend="end">19</cell>
-                            <cell rend="end">6</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">11</cell>
-                            <cell rend="end">9</cell>
-                            <cell rend="end">7</cell>
-                            <cell rend="end">4</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">7</cell>
-                        </row>
-                    </table>
-                    <p>Tabelle 10: Anzahl an Personen pro Herkunftsland in den Vortragsabstracts.</p>
-                    <table rend="frame" xml:id="Table11">
-                        <row>
-                            <cell/>
-                            <cell rend="end bold">DE</cell>
-                            <cell rend="end bold">AT</cell>
-                            <cell rend="end bold">GB</cell>
-                            <cell rend="end bold">US</cell>
-                            <cell rend="end bold">Andere</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2016</cell>
-                            <cell rend="end">10</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">2</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2017</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">3</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2018</cell>
-                            <cell rend="end">10</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">8</cell>
-                        </row>
-                    </table>
-                    <p>Tabelle 11: Anzahl an Posterabstracts die mindestens eine Person mit diesem Herkunftsland erwähnen.</p>
-                    <table rend="frame" xml:id="Table12">
-                        <row>
-                            <cell/>
-                            <cell rend="end bold">DE</cell>
-                            <cell rend="end bold">AT</cell>
-                            <cell rend="end bold">GB</cell>
-                            <cell rend="end bold">RU</cell>
-                            <cell rend="end bold">US</cell>
-                            <cell rend="end bold">FR</cell>
-                            <cell rend="end bold">IT</cell>
-                            <cell rend="end bold">CH</cell>
-                            <cell rend="end bold">Andere</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2016</cell>
-                            <cell rend="end">12</cell>
-                            <cell rend="end">3</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">2</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2017</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">1</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">1</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">1</cell>
-                            <cell rend="end">0</cell>
-                        </row>
-                        <row>
-                            <cell rend="italic">2018</cell>
-                            <cell rend="end">15</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">0</cell>
-                            <cell rend="end">5</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">2</cell>
-                            <cell rend="end">4</cell>
-                        </row>
-                    </table>
-                    <p>Tabelle 12: Anzahl an Personen pro Herkunftsland in den Posterabstracts.</p>
-                </div>
+                <p style="text-align:left; ">Abbildung 1 zeigt die Genauigkeit der Klassifikation als Funktion der zugrundeliegenden Merkmale. Insgesamt lassen sich die Seiten aufgrund rein visueller Analyse sehr gut ihren Urhebern zuordnen. Man erkennt am Abfall der Kurve für Merkmale aus einzelnen Schichten, dass für die Illustrator-Klassifikation die Repräsentationen mittlerer Ebenen am entscheidendsten sind. Die stilistische Signatur einer Graphic Novel basiert scheinbar eher auf Merkmalen mittlerer Komplexität wie Schraffuren, Texturen oder Schwüngen als auf höher integrierten Merkmalen wie Objektteilen oder spezifischen Motiven.</p>
+                <figure>
+                    <graphic n="1001" width="12.904997222222223cm" height="10.288094444444445cm" url="159_final-0cfe05d434b95a3fcb0ab33033ae16fb.png" rend="inline"/>
+                    <head>Genauigkeit der Klassifikation. Die x-Achse gibt an, welche Netzwerkschichten zur Berechnung der Signatur herangezogen wurden (siehe Text für Details). Die Linienfarbe unterscheidet, ob die Klassifikation auf Signaturen einzelner Netzwerkschichten k basiert (rot) oder auf Signaturen der Schichten von 0 bis k, k∈{0, ..., 11} (blau).</head>
+                </figure>
+                <p style="text-align:left; ">Basierend auf den Merkmalsvektoren haben wir eine bildbasierte Ähnlichkeitssuche implementiert. Nach Eingabe eines Suchbildes werden beispielsweise die 10 ähnlichsten Bilder ausgegeben. Die Untersuchung der Klassifikationsfehler ist interessant, sie zeigt beispielsweise, dass unterschiedliche Werke eines Autors zusammen gruppiert werden. Verwechslungen treten eher innerhalb von als zwischen Genres auf. Selbst historische Entwicklungen lassen sich abbilden: In „750 Years in Paris“ illustriert Vincent Mahé die Entwicklung eines Häuserblocks in Paris von 1265 bis 2015. Die Bildsuche mit einer „frühen“ Seite liefert Bilder aus der frühen Zeit, ebenso liefert die Bildsuche mit einer „späten“ Seite Bilder aus einer späteren Epoche.</p>
+                <p style="text-align:left; ">Bei der semantischen Segmentation von Sprechblasen haben wir ein hervorragendes Ergebnis erzielt. Der F1-Score auf dem Testset betrug 0.935. Auch Elemente wie ein geschwungener Hinweisstrich / Dorn und an den Rändern offene Sprechblasen konnten sehr gut segmentiert werden. Abbildung 2 zeigt ein Beispiel einer Seite, auf der alle Sprechblasen korrekt detektiert und sehr gut segmentiert wurden.</p>
+                <figure>
+                    <graphic n="1002" width="7.451013888888889cm" height="10.412316666666667cm" url="159_final-71d46b1c685ccf288c3f148efbdb266b.png" rend="inline"/>
+                    <head>Beispiel für Sprechblasen-Segmentation.</head>
+                </figure>
             </div>
-            <div type="div1">
+            <div type="div1" rend="DH-Heading1">
                 <head>Diskussion</head>
-                <p>Die Ergebnisse der Länder- und Sprachanalyse zeichnen ein positives Bild des Engagements mit Inhalten und Personen außerhalb Deutschlands, mit über 15 verschiedenen Herkunftsländern. Dies ist positiv, da aufgrund der Datenquelle eine Tendenz zu deutschsprachigen Themen zu erwarten ist.</p>
-                <p>Zugleich sind die Ergebnisse im Genderbereich katastrophal. Über einen Zeitraum von drei Jahren werden in insgesamt 342 Abstracts in 100 (29%) Männer erwähnt, aber nur in 12 Frauen (3.5%), wobei nur in 2 Abstracts (0.5%) ausschließlich weibliche Personen das Ziel der Studie bzw. die erwähnten Beispiele sind. Zwar stellen Abstracts mit Personenerwähnungen nur einen Teil der DH Forschung da, aber trotzdem zeigt die Genderverteilung eine Schieflage, welche den historischen Blickwinkel, der Frauen aus dem öffentlichen Diskurs verdrängt, verstärkt. Der Zugang zu den Outputs von Frauen ist zwar aufgrund der historischen Sozialstrukturen schwieriger, aber die Wahrscheinlichkeit, dass diese Verteilung das Vorhandensein potentieller weiblicher Studiensubjekte auch nur ansatzweise korrekt abbildet ist unwahrscheinlich. Besonders da Studien wie Fischer und Jäschke (2018) quantitativ zeigen, dass es hier hinreichend weibliche Studiensubjekte gäbe. Es ist wesentlich wahrscheinlicher, dass hier ein kognitiver Bias existiert, dem die DH als Disziplin aktiv entgegen treten muss.</p>
+                <p style="text-align:left; ">Wir haben verschiedene Sammlungen grafischer Literatur mit CNNs beschrieben und den Beitrag interner CNN-Repräsentationen unterschiedlicher Schichten zur Klassifikation von Zeichenstilen untersucht. Unsere Ergebnisse zeigen, dass der Individualstil eines Zeichners eher durch Merkmale mittlerer als durch solche höherer Komplexität charakterisiert ist. Allgemein haben CNN-basierte Repräsentationen das Potenzial, eine formale Beschreibung stilistischer Merkmale abzubilden. Sie sind deshalb aussichtsreiche Kandidaten für eine quantitative Fundierung bildwissenschaftlicher Form- und Strukturanalyse.</p>
             </div>
         </body>
         <back>
@@ -626,28 +137,43 @@
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">Berry, David M. (2011)</hi>: <hi rend="italic">"The Computational Turn: Thinking about the Digital Humanities"</hi>, in: Culture Machine 12: 1–22.
+                        <hi rend="bold">Chollet, F. (2016)</hi>: <hi rend="italic">Xception: Deep learning with depthwise separable convolutions</hi>. In: CoRR: abs/1610.02357.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Fiormonte, Domenico (2016)</hi>: <hi rend="italic">"Toward a Cultural Critique of Digital Humanities"</hi>, in <hi rend="bold">Gold, Matthew K / Klein, L. (ed.)</hi>: <hi rend="italic">Debates in the Digital Humanities 2016</hi>, University of Minnesota Press 438-458.
+                        <hi rend="bold">Chu, W. / Wu, Y. (2018)</hi>: <hi rend="italic">“Image style classification based on learnt deep correlation features.”</hi> In: IEEE Transactions on Multimedia 20(9): 2491–2502.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Fischer, Frank / Jäschke, Robert (2018)</hi>: <hi rend="italic">"Liebe und Tod in der Deutschen Nationalbibliothek"</hi>. in DHd2018: Kritik der digitalen Vernunft 261-266.
+                        <hi rend="bold">Deng, J. / Dong, W. / Socher, R. / Li, L.-J. / Li, K. / Fei-Fei, L. (2009)</hi>: <hi rend="italic">„ImageNet: A Large-Scale Hierarchical Image Database.”</hi> In: 2009 IEEE Conference on Computer Vision and Pattern Recognition: 248–255.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Gallon, Kim (2016)</hi>: <hi rend="italic">"Making a Case for the Black Digital Humanities"</hi>. in <hi rend="bold">Gold, Matthew K / Klein, L. (ed.)</hi>: <hi rend="italic">Debates in Digital Humanities 2016</hi> 42-49.
+                        <hi rend="bold">Dunst, A. / Hartel, R. / Laubrock, J. (2017)</hi>: <hi rend="italic">„The Graphic Narrative Corpus (GNC): Design, annotation, and analysis for the Digital Humanities.”</hi> In: 2017 14th IAPR International Conference on Document Analysis and Recognition (ICDAR) 03: 15–20.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Liu, Alan (2012)</hi>: <hi rend="italic">"Where is cultural criticism in the digital humanities?"</hi> in <hi rend="bold">Gold, Matthew K (ed.)</hi>: <hi rend="italic">Debates in the Digital Humanities</hi>, University of Minnesota Press 490-509.
+                        <hi rend="bold">Laubrock, J. / Hohenstein, S. / Kümmerer, M. (2018)</hi>: <hi rend="italic">„Attention to comics: Cognitive processing during the reading of graphic literature.”</hi> In: Dunst, A., Laubrock, J., and Wildfeuer, J., editors, Empirical Comics Research: Digital, Multimodal, and Cognitive Methods, ch.12: 239–263. Routledge, New York.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">McPherson, Tara (2012)</hi>: <hi rend="italic">"Why are the digital humanities so white? Or thinking the histories of race and computation"</hi>. in <hi rend="bold">Gold, Matthew K (ed.)</hi>: <hi rend="italic">Debates in the Digital Humanities</hi>, 139-160.
+                        <hi rend="bold">Matsui, Y. / Ito, K. / Aramaki, Y. / Fujimoto, A. / Ogawa, T. / Yamasaki, T. / Aizawa, K. (2017)</hi>: <hi rend="italic">“Sketch-based manga retrieval using Manga109 dataset.”</hi> In: Multimedia Tools and Applications 76(20): 21811–21838.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Rhody, Lisa M. (2016)</hi>: <hi rend="italic">"Why I dig: Feminist approaches to text analysis"</hi>. in <hi rend="bold">Gold, Matthew K / Klein, L. (ed.)</hi>: <hi rend="italic">Debates in Digital Humanities 2016</hi> 536-539.
+                        <hi rend="bold">Gatys, L. A. / Ecker, A. S. / Bethge, M. (2016)</hi>: <hi rend="italic">“Image style transfer using convolutional neural networks.”</hi> In: IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2016: 2414–2423.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Wernimont, Jacqueline (2013)</hi>: <hi rend="italic">Whence Feminism? Assessing Feminist Interventions in Digital Literary Archives</hi>. in DHQ: Digital Humanities Quarterly, 7(1).
+                        <hi rend="bold">LeCun, Y. / Boser, B. / Denker, J. S. / Henderson, D. / Howard, R. E. / Hubbard, W. / Jackel, L. D. (1989)</hi>: <hi rend="italic">“Backpropagation applied to handwritten zip code recognition.”</hi> In: Neural Computation 1(4): 541–551.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ronneberger, O. / Fischer, P. / Brox, T. (2015)</hi>: <hi rend="italic">„U-Net: Convolutional Networks for Biomedical Image Segmentation.”</hi> In: Medical Image Computing and Computer-Assisted Intervention (MICCAI), Springer, LNCS, Vol.9351: 234--241.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sanakoyeu, A. / Kotovenko, D. / Lang, S., / Ommer, B. (2018)</hi>: <hi rend="italic">“A Style-Aware Content Loss for Real-time HD Style Transfer.”</hi> In: arXiv preprint arXiv:1807.10201.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wölfflin, H. (1915)</hi>: <hi rend="italic">Kunstgeschichtliche Grundbegriffe: das Problem der Stilentwickelung in der neueren Kunst.</hi> München: Bruckmann.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Yamins, D. L. K. / DiCarlo, J. J. (2016)</hi>: <hi rend="italic">“Using goal-driven deep learning models to understand sensory cortex”</hi>. In: Nature Neuroscience 19(3):356–365.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Simonyan, K. / Zisserman, A. (2014)</hi>: <hi rend="italic">“Very deep convolutional networks for large-scale image recognition.”</hi> In: arXiv preprint arXiv:1409.1556
                     </bibl>
                 </listBibl>
             </div>

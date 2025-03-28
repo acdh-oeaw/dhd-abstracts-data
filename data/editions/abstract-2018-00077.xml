@@ -1,38 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="KLEYMANN_Rabea_Perspektiven_kritischer_Interfaces_für_die_Di">
+     xml:id="KRAUTTER_Benjamin_Quantitatives__close_reading___Vier_mikroa">
    <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Perspektiven kritischer Interfaces für die Digital Humanities im 3DH-Projekt</title>
+                <title>Quantitatives „close reading“? Vier mikroanalytische Methoden der digitalen Dramenanalyse im Vergleich.</title>
                 <author>
                     <persName>
-                        <surname>Kleymann</surname>
-                        <forename>Rabea</forename>
+                        <surname>Krautter</surname>
+                        <forename>Benjamin</forename>
                     </persName>
-                    <affiliation>Universität Hamburg, Deutschland</affiliation>
-                    <email>Rabea.Kleymann@uni-hamburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Meister</surname>
-                        <forename>Jan Christoph</forename>
-                    </persName>
-                    <affiliation>Universität Hamburg, Deutschland</affiliation>
-                    <email>jan-c-meister@uni-hamburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Stange</surname>
-                        <forename>Jan-Erik</forename>
-                    </persName>
-                    <affiliation>Universität Hamburg, Deutschland</affiliation>
-                    <email>jan-erik.stange@uni-hamburg.de</email>
+                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
+                    <email>Benjamin.Krautter@gmail.com</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2018-01-14T22:00:00Z</date>
+                    <date>2018-01-14T17:19:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -64,280 +48,242 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Interpretation</term>
-                    <term>Visualisierung</term>
-                    <term>Interface</term>
+                    <term>Stilometrie</term>
+                    <term>Kopräsenz</term>
+                    <term>Drama</term>
+                    <term>Wortfeldsemantik</term>
+                    <term>Sentiment</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Entdeckung</term>
-                    <term>Gestaltung</term>
-                    <term>Modellierung</term>
-                    <term>Theoretisierung</term>
-                    <term>Visualisierung</term>
-                    <term>Visualisierung</term>
+                    <term>Inhaltsanalyse</term>
+                    <term>Strukturanalyse</term>
+                    <term>Kontextsetzung</term>
+                    <term>Stilistische Analyse</term>
+                    <term>Literatur</term>
                 </keywords>
             </textClass>
         <settingDesc>
             <ab n="conference">DHd2018 - "Kritik der Digitalen Vernunft", Köln</ab>
-            <ab n="paperID">197</ab>
-            <ab n="session_ID">128</ab>
+            <ab n="paperID">214</ab>
+            <ab n="session_ID">115</ab>
             <ab n="session_numberInSession">1</ab>
-            <ab n="session_short">VP_1d</ab>
-            <ab n="session_title">Visualisierung I</ab>
-            <ab n="session_start">2018-02-28 09:00</ab>
-            <ab n="session_end">2018-02-28 10:30</ab>
+            <ab n="session_short">VP_4a</ab>
+            <ab n="session_title">Digitale Literaturwissenschaft</ab>
+            <ab n="session_start">2018-03-01 09:00</ab>
+            <ab n="session_end">2018-03-01 10:30</ab>
          </settingDesc>
       </profileDesc>
     </teiHeader>
    <text>
         <body>
             <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p>Eine Haupttätigkeit von LiteraturwissenschaftlerInnen ist die Interpretation von literarischen Texten. Unter „Interpretation“ wird „ein Sprechen oder Schreiben über Texte [verstanden], in dem ihnen auf methodische und argumentierende Weise Bedeutungen zugeschrieben werden“ (Albrecht et. al. 2015: 1). Mit dem Einzug digitaler Methoden in die literaturwissenschaftliche Praxis werden dabei insbesondere die Formen der Bedeutungszuschreibung und -produktion sowie die damit verbundene Frage nach einem Textverstehen zur Disposition gestellt (vgl. Rockwell/Sinclair 2016). Eine wichtige Rolle in der Gestaltung von digitalen Zugängen zur Textinterpretation spielen in diesem Kontext User Interfaces im Allgemeinen und interaktive Visualisierungen im Speziellen. Unter „Interfaces“ verstehen wir die gesamte visuelle Struktur und Bedienlogik einer Software, mit „Visualisierungen“ bezeichnen wir interaktive Teile des Interfaces, die Nutzern auf Daten (in diesem Fall Textdaten) basierende visuelle Repräsentationen zugänglich und diese manipulierbar machen.</p>
-                <p>Die Frage, wie solche Interfaces und Visualisierungen an den Bedürfnissen interpretierender LiteraturwissenschaftlerInnen orientiert sein sollten, um eine Textanalyse und -interpretation sinnvoll zu unterstützen, ist Teil des Forschungsanliegens des Projekts 3DH –
-                    <hi rend="italic">Dreidimensionale dynamische Datenvisualisierung und Exploration für Digital Humanities-Forschungen</hi> der Universität Hamburg.
-                    <ref target="ftn1" n="1"/>
+                <head>Einführung</head>
+                <p>Jüngste Ergebnisse der computergestützten Forschung legen nahe, dass Romanfiguren – gemessen an ihrer Figurenrede – von den jeweiligen Autoren stilistisch distinktiv angelegt werden können (Hoover 2017; Fields, Bassist, Roper 2017). Versierte Autoren könnten ihren Figuren also sogenannte „distinctive voices“ einschreiben, die sich stilometrisch identifizieren lassen. Anders als bei Autorschafts-, Gattungs- oder Epochensignalen handelt es sich hierbei um ein 
+                    <hi rend="italic">intratextuelles</hi> Unterscheidungskriterium. Untersuchungsgegenstand ist somit nicht ein großes Textkorpus verschiedener Autoren, sondern ein einzelner literarischer Text. David Hoover benennt dieses Vorgehen der Textselektion und -aufbereitung ‚microanalysis‘. Er setzt sich damit nicht nur von Schlagwörtern wie ‚big data‘ ab, er betont trotz vergleichbarer quantitativer Methoden auch die Unterschiede zu Konzepten wie ‚macroanalysis‘ (Jockers 2013) und ‚distant reading‘ (Moretti 2000; 2005).
                 </p>
-                <p>Vor dem Hintergrund, dass Interfaces und Visualisierungen in den Geisteswissenschaften eine wachsende Relevanz zugesprochen wird, plädieren wir für eine designbasierte kritische Perspektive. Darunter verstehen wir die Einbindung von Methoden aus dem nutzerzentrierten Design in die Tool-Entwicklung. Diese erlauben eine an Nutzerbedürfnissen und -erwartungen orientierte Gestaltung von Interfaces und Visualisierungen. Dieser Ansatz zielt darauf, die Grenzen der klassischen Verfahren der Datenerhebung und -verarbeitung, wie sie bereits von bestehenden Annotationstools (z. B. CATMA; siehe http://catma.de) unterstützt werden, neu auszuloten. </p>
-                <p>Zunächst stellen wir die aus unserer Sicht notwendigen normativen Anforderungen an ein kritisches Interface- und Visualisierungskonzept vor, um dann darzulegen, welche Strategie wir in der Gestaltung und Entwicklung solcher Interfaces und Visualisierungen verfolgen. Im Anschluss werden beispielhaft einzelne Wireframes diskutiert.</p>
+                <p>Erstaunlicherweise beschränken sich die Studien zur stilistischen Differenzierung von Figurenrede größtenteils auf Romane. Dabei ist es doch gerade die Struktur dramatischer Texte, die eine quantitative Untersuchung der Figurenrede plausibel erscheinen lässt – die Rede wird nicht von einem Erzähler sortiert, kommentiert und in einen Rahmen gebettet. Auch erste Forschungsansätze sind durchaus vorhanden: John Burrows und Hugh Craig zeigen etwa, dass einzelne Dramenfiguren sehr wohl erfolgreich einem Autorsignal zugeordnet werden können (Burrows, Craig 2012). Sie reagieren damit interessanterweise auf Kritiker, die die erfolgreiche Autorschaftsattribution von Dramentexten aufgrund der vielen verschiedenartigen Stimmen – weil es also keinen Erzähler gibt – in Frage stellen (Masten 1997).</p>
+                <p>Nachfolgend soll geprüft werden, inwieweit sich Hoovers Vorgehen (2017) zur Ermittlung distinktiver Figurenrede auch auf dramatische Texte übertragen lässt. Die Ergebnisse der stilometrischen Untersuchung werden im Anschluss durch drei weitere quantitative Analyseverfahren kontextualisiert und zugleich kritisch hinterfragt.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Grundlagen eines kritischen Interface- und Visualisierungskonzeptes</head>
-                <p>Eine kritische Bestandsaufnahme aktueller Visualisierungstools und -metaphern und deren Anwendung in den Geisteswissenschaften (vgl. Bradley 2008; Drucker 2011, 2014; Gibbs/Owens 2012) führte im 3DH-Projekt zur Formulierung von vier konzeptionellen Postulaten.
-                    <ref target="ftn2" n="2"/> Definiert werden damit die Prinzipien, die einem Interface bzw. einer Visualisierung zugrunde gelegt werden müssen, sofern diese literaturwissenschaftliche Arbeitsprozesse sinnvoll unterstützen sollen. Es handelt sich um die Postulate 
+                <head>Distinktive Figurenrede im Drama?</head>
+                <p>
+                    <hi rend="italic">Abbildung 1</hi>
+                    <ref target="ftn1" n="1"/> zeigt eine hierarchische Clusteranalyse der wichtigsten Figuren aus Gotthold Ephraim Lessings 
+                    <hi rend="italic">Minna von Barnhelm, oder das Soldatenglück</hi>.
+                    <ref target="ftn2" n="2"/> Die Abbildung setzt die Redeanteile der wichtigsten Dramenfiguren, die gemäß der Aktgrenzen segmentiert wurden, stilometrisch in Relation. Grundlage der Analyse sind die Wortfrequenzlisten, die den Redeäußerungen der einzelnen Figuren entnommen werden. Mit Hilfe von ‚Cosine Delta‘, das zuverlässigere Ergebnisse als ‚Burrows’s‘ oder ‚Argamon’s Delta‘ erzielen sollte (Evert u.a. 2017), wird aus den Wortfrequenzen die relative stilistische Ähnlichkeit der Textpassagen berechnet.
+                    <ref target="ftn3" n="3"/> Anders als bei Hoover erfolgt die Unterteilung der Figurenrede jedoch nicht nach Segmenten zu je 1500 Wörtern. Stattdessen werden die bereits gegebenen Aktgrenzen des Dramas zur Einteilung herangezogen.
+                    <ref target="ftn4" n="4"/> Dieses Vorgehen ist weniger artifiziell, da keine künstlich normalisierten Grenzen zu setzen sind. Es ist zugleich hilfreich, um die stilometrischen Ergebnisse anhand der Bedingungen ihres Zustandekommens, etwa der Kopräsenz von Figuren, zu interpretieren. Das Vorgehen hat jedoch zum Nachteil, dass die Segmente keine einheitliche Länge aufweisen und zu kurze Abschnitte aufgrund ihrer geringen Wortzahl aus dem Korpus gestrichen werden mussten.
                 </p>
-                <list type="ordered">
-                    <item>des „Two-Way-Screens“: Das Interface soll vom Renderer zum bidirektionalen Instrument werden; </item>
-                    <item>der „Qualität“: Die Visualisierung soll nicht nur der Repräsentation von Daten fungieren, sondern Möglichkeiten bieten, qualitative Beobachtungen und Aussagen zu tätigen;</item>
-                    <item>der „Parallaxe“: Die visuelle und epistemische Multiperspektivität einer Visualisierung soll gestärkt werden;</item>
-                    <item>der „Diskursivität“: Durch geeignete visuelle Erscheinungsformen und -verfahren soll die Generierung, Diskussion und Kritik von Hypothesen gefördert werden.</item>
-                </list>
-                <p>Die normativen Anforderungen an ein reflektiertes Interface- und Visualisierungskonzept rekurrieren auf die spezifischen Eigenschaften eines literaturwissenschaftlichen Arbeitsprozesses. Dieser folgt keinem finiten Set von methodischen Regeln oder Verfahrensweisen. Vielmehr tritt die Textanalyse und -interpretation als komplexer epistemisch und ästhetisch geformter sowie zirkulär organisierter Prozess auf, der sich als in hohem Maße subjektiv und kontextsensitiv erweist (vgl. Winko 2015: 486). </p>
-                <p>Für die praktische Entwicklung literaturwissenschaftlicher Interfaces und Visualisierungen gehen wir von zwei Annahmen aus. </p>
-                <p>Die Komplexität des Interpretationsprozesses kann erstens auf eine Reihe von grundlegenden „routineförmige[n] Tätigkeiten“ (Albrecht et al. 2015: 2) bzw. „scholarly primitives“ (Unsworth 2000) zurückgeführt werden, die iterativ von LiteraturwissenschaftlerInnen zur Bedeutungszuweisung durchgeführt werden. Diese routineförmigen Tätigkeiten sind „oftmals nicht vollständig durch explizierbare Regeln oder Methoden bestimmt, sondern [beruhen] in hohem Maße auf implizitem Wissen und Können“ (Albrecht et al. 2015: 2).</p>
-                <p>Zweitens nehmen wir an, dass nutzerzentrierte Gestaltung als etablierter Prozess, dessen Methodenrepertoire sich sowohl aus dem an der Praxis orientierten Design speist, als auch aus der eher wissenschaftlich orientierten Human-Computer-Interaction (HCI), als Vorgehen besonders geeignet ist, implizites Wissen und Können von Nutzern herauszufinden. In diesem Sinne steht die Entwicklung eines Interfaces nicht am Ende „as an afterthought, thrown together after completing the core functionality” (Gibbs/Owens 2012), sondern ist Teil der Ausdifferenzierung und Analyse von Textinterpretation. Mit der Integration von Designmethoden, so die Argumentation des 3DH-Projekts, begegnen wir der von Gibbs und Owens beklagten mangelnden Nutzerzentriertheit bestehender DH-Annotationstools.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Annäherung an die literaturwissenschaftliche Arbeitspraxis über nutzerzentrierte Szenarien</head>
-                <p>Mithilfe von Szenarien werden besagte ‚routineförmige Tätigkeiten‘ untersucht und erfassbar gemacht.
-                    <ref target="ftn3" n="3"/> Kollaborativ wurden bislang drei generische Szenarien konstruiert, die das Spektrum typischer interpretierender Forschungstätigkeiten repräsentieren.
-                    <ref target="ftn4" n="4"/>
+                <p>Die stilometrische Analyse von 
+                    <hi rend="italic">Minna von Barnhelm</hi> zeigt, dass die Ergebnisse, die Hoover sowie Fields, Bassist und Roper für ausgewählte englischsprachige Romane erzielen, nicht unmittelbar auf Lessings Drama übertragbar zu sein scheinen. Es gibt zwar vereinzelte Anzeichen für stilistisch distinktiv angelegte Figurenrede – von der männlichen Hauptfigur Tellheim gruppieren sich Akt 1 und Akt 3 in unmittelbarer Nähe, auf Paul Werner trifft das für Akt 3 und Akt 5 zu. Die Mehrheit der Redesegmente scheint sich allerdings nach einem anderen Kriterium anzuordnen. Besonders deutlich wird dies im obersten Abschnitt der Grafik: Die Redeanteile von Major Tellheim, Minna von Barnhelm, ihrer Kammerjungfrau Franziska und die des Wirts gruppieren sich auf einem zusammenhängenden Ast. Die vier genannten Redesegmente entstammen allesamt dem zweiten Akt des Dramas und ihre Anordnung signalisiert eine gegenseitige Ähnlichkeit in Relation zum Vergleichskorpus. Es gibt weitere Beispiele, die die Aktgrenzen als wichtigen Faktor der Analyseergebnisse plausibilisieren. Die prägnantesten sind diejenigen von Tellheim und Minna in Akt 4 und 5.
                 </p>
-                <p>Die Konzepte erstrecken sich vom klassischen „Close Reading“-Beispiel mit Fokus auf noch nicht taxonomisch gelenkte freie Annotationen und Kommentare bis zum „Distant Reading“-Beispiel unter Anwendung des probabilistischen Verfahrens „Topic Modeling“.</p>
-                <p>Analog zur Konstruktion der Szenarien ist auch der von uns verfolgte nutzerzentrierte Gestaltungsprozess typischerweise durch ein iteratives Vorgehen gekennzeichnet.
-                    <ref target="ftn5" n="5"/>
-                </p>
-                <p>Abbildung 1 zeigt eine Auswahl von Varianten sogenannter „Wireframes“, d.h. von Designskizzen zu einem Interface für die Tätigkeit „Kommentieren“ in dem Szenario „Exploration freier Annotationen zwecks Schärfung der literaturwissenschaftlichen Fragestellung“.</p>
                 <figure>
                     <graphic n="1001"
-                        width="15.531041666666667cm"
-                        height="11.567583333333333cm"
+                        width="9.810719444444445cm"
+                        height="10.980208333333334cm"
                         rend="inline"
-                        url="KLEYMANN_Rabea_Perspektiven_kritischer_Interfaces_f_r_die_Di-image1.png"/>
-                    <head>Abb.1: Wireframes für ein Interface zur Funktion „Kommentieren“ in dem Szenario „Exploration freier Annotationen zwecks Schärfung der literaturwissenschaftlichen Fragestellung“.</head>
+                        url="KRAUTTER_Benjamin_Quantitatives__close_reading___Vier_mikroa-image1.jpeg"/>
+                    <head>Abbildung 1: Minna von Barnhelm. Dendrogram, 1000 n-mfw, Cosine Delta, kein Culling, Ward-Clustering.
+                    </head>
                 </figure>
-                <figure>
-                    <graphic n="1002"
-                        width="16.002cm"
-                        height="11.567583333333333cm"
-                        rend="inline"
-                        url="KLEYMANN_Rabea_Perspektiven_kritischer_Interfaces_f_r_die_Di-image2.png"/>
-                </figure>
-                <p>In der Abbildung wird der Entwicklungsstand der visuellen Gestaltung dieser Tätigkeit zu zwei verschiedenen Zeitpunkten sichtbar. Der untere Wireframe präsentiert einen fortgeschrittenen Stand. Die Wireframes illustrieren die Verschränkung einzelner Tätigkeiten, die im Szenario beschrieben werden. Hier sieht man etwa den Zusammenhang zwischen den Tätigkeiten „Annotieren“ und „Kommentieren“ dargestellt, in dem Sinne, dass ein Kommentar in der Regel (wenn auch nicht immer) einer Annotation zugeordnet ist, die eine diskrete Position im Text besitzt, also häufig nicht isoliert von der Tätigkeit des Annotierens betrachtet werden kann.</p>
+                <p>Ein einzelnes Dendrogram darf für die Bewertung der Hypothese jedoch nicht mehr sein als ein erstes Indiz, zumal die Segmentierung nicht gemäß einer festen Länge mit vorgegebener Wortanzahl, sondern nach den Aktgrenzen vorgenommen wurde. </p>
+                <p>Um ein potentielles ‚Cherry Picking‘-Problem an dieser Stelle zu vermeiden, ergänzt 
+                    <hi rend="italic">Abbildung 2</hi> die Analyse um fünf weitere Dramen, drei von Friedrich Schiller und zwei weitere von Lessing.
+                    <ref target="ftn5" n="5"/> Betrachtet man die hierarchische Struktur, wird deutlich, dass sowohl das Autorsignal als auch die Texteinheit klar erkennbar bleiben und die Anordnung dahingehend durch die relativ geringen Wortumfänge der Redesegmente nicht negativ beeinflusst wird. 
+                </p>
+                <p>
+                    <figure>
+                        <graphic n="1002"
+                            width="16.007291666666667cm"
+                            height="23.65375cm"
+                            rend="inline"
+                            url="KRAUTTER_Benjamin_Quantitatives__close_reading___Vier_mikroa-image2.jpeg"/>
+                        <head>Abbildung 2: Die Räuber, Die Verschwörung des Fiesco zu Genua, Maria Stuart, Minna von Barnhelm, Emilia Galotti, Miß Sara Sampson. Dendrogram, 1000 n-mfw, Cosine Delta, kein Culling, Ward-Clustering.</head>
+                    </figure>
+                </p>
+                <p>Ein Ähnlichkeitssignal, das Figurentypen, etwa den zärtlichen Vater in den bürgerlichen Trauerspielen Lessings, über das einzelne Drama hinweg verbinden würde, ist zumindest auf diese Weise nicht auszumachen. Die Vermutung liegt nahe, schreibt Lessing seine Dramen doch dezidiert für die am Theater üblichen Rollenfächer des 18. Jahrhunderts (Harris 1992). Sie scheint jedoch nicht auf diese Weise stilometrisch operationalisierbar zu sein.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Erste Ergebnisse und Schlussfolgerungen</head>
-                <p>Bereits in diesem grob umrissenen Beispiel von Varianten einer visuellen Unterstützung der Tätigkeit „Kommentieren“, manifestieren sich zwei der wesentlichen Herausforderungen an die Erarbeitung und Implementierung eines kritischen Interface- und Visualisierungskonzeptes:</p>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Überlagerung und Wechselwirkung routinemäßiger Tätigkeiten im Interface</head>
-                    <p>
-                        <anchor xml:id="gjdgxs"/>Aufgabe der Designiterationen von Szenarien und Wireframes wird es sein, für die Überlagerung und Wechselwirkung der routinemäßigen Tätigkeiten in der Gestaltung des Interfaces eine adäquate Entsprechung zu finden.
-                    </p>
-                    <p>Auf Grundlage der bisher erstellten Wireframes für die drei Szenarien ließen sich zwei Modi des literaturwissenschaftlichen Interpretationsverfahrens ausmachen. Zum einen besteht der Interpretationsprozess aus Tätigkeiten, die primär die analytische, investigative Erforschung des Textes adressieren (Annotieren, Sammeln, Kommentieren).
-                        <ref target="ftn6" n="6"/> Komplementär dazu verhalten sich zum anderen die argumentativen, vornehmlich synthetisierenden Tätigkeiten der Textinterpretation (Gruppieren, Ordnen, Strukturieren). Um den literaturwissenschaftlichen Arbeitsprozess adäquat unterstützen zu können, so unsere Annahme, müssen Interfaces beide Modi in enger Verschränkung umfassen und stetigen Wechsel zwischen diesen ermöglichen. Abbildung 2 zeigt einen ersten Versuch, die Ebene der Bedeutungsproduktion – von uns als „semantic plane“ bezeichnet – d.h. die Ebene, die analytische und synthetisierende Tätigkeiten umfasst und miteinander verknüpft, in die Interface-Entwürfe zu integrieren.
-                    </p>
+                <head>Kopräsenz, Wortfeldsemantik und Sentiment</head>
+                <p>Stilometrische Analysen sind nicht das einzige Verfahren, um relative Ähnlichkeiten innerhalb eines Textkorpus zu bestimmen. Inwieweit sie geeignet sind, offene Fragestellungen – im Gegensatz etwa zur Autorschaftsattribution – zu erörtern, ist überhaupt noch zu prüfen. Sollten Parameter wie Distanzmaß, Wortumfang oder Culling tatsächlich je nach Textkorpus neu zu bestimmen sein, wären ‚Cherry Picking‘-Probleme der Methode inhärent (Schöch 2014; Jannidis 2014; Eder 2013).</p>
+                <p>Nachfolgend ist es deshalb geboten, die bisherigen Beobachtungen weiteren quantitativen Verfahren gegenüberzustellen. Dazu dienen Analysen der Kopräsenz, der Figurensemantik und der Empfindung, sogenannte Sentiment-Analysen.</p>
+                <p>
                     <figure>
                         <graphic n="1003"
-                           width="15.9288cm"
-                           height="11.655219444444445cm"
-                           rend="inline"
-                           url="KLEYMANN_Rabea_Perspektiven_kritischer_Interfaces_f_r_die_Di-image3.png"/>
-                        <head>Abb.2: Versuch der Integration der „semantic plane“ über die vom User vollzogene Positionierung von Elementen.</head>
+                            width="16.002cm"
+                            height="3.993888888888889cm"
+                            rend="inline"
+                            url="KRAUTTER_Benjamin_Quantitatives__close_reading___Vier_mikroa-image3.jpeg"/>
+                        <head>Abbildung 3: Redeäußerungen und deren Position, Minna von Barnhelm.
+                            <ref target="ftn6" n="6"/>
+                        </head>
                     </figure>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Flexibilität und Manipulierbarkeit von Visualisierungen</head>
-                    <p>Um eine flexiblere Unterstützung des literaturwissenschaftlichen Arbeitsprozesses im Interface zu ermöglichen, ist ferner der Einsatz unterschiedlicher Visualisierungen sinnvoll (vgl. Cheema et al. 2015). Diese sollten vergleichbar sein in ihren Resultaten und ihre Darstellungsform, Interaktivität und der jeweils repräsentierte Datenausschnitt sollte individuell bestimmbar sein. </p>
-                    <p>Im Interesse einer Justierbarkeit der Visualisierungen orientieren wir uns an den Visualisierungssystematiken, wie sie Wilkinson mit seinem „Grammar-of-Graphics“-Ansatz vorschlägt (vgl. Wilkinson et al. 2005). Es existieren bereits verschiedene Implementierungen dieses Ansatzes, die es erlauben, die oben genannten Parameter einer Visualisierung mithilfe einer Grammatik beschreibbar und manipulierbar zu machen (vgl. Satyanarayan et al. 2017). In unserem Kontext ist die deklarative Sprache VEGA
-                        <ref target="ftn7" n="7"/> interessant, die auf der verbreiteten Javascript-Visualisierungsbibliothek D3
-                        <ref target="ftn8" n="8"/> beruht und es Nutzerinnen und Nutzern ermöglichen würde, ihre Visualisierungsspezifikationen in JSON zu formulieren.
-                    </p>
-                    <p>Im Sinne einer nutzerzentrierten Gestaltung ist es wichtig, diese Funktionalitäten an die unterschiedlichen Vorkenntnisse der Nutzerinnen und Nutzer anpassen zu können. Weniger fortgeschrittene Nutzerinnen und Nutzer sollen stets auf Standardvisualisierungen zurückgreifen können. Unserem Anspruch gemäß steht die Unterstützung des interpretierenden Prozesses als Ganzheit mit dem Interface im Vordergrund.</p>
-                </div>
+                </p>
+                <p>Die Tabelle in 
+                    <hi rend="italic">Abbildung 3</hi> listet die fünf wichtigsten Figuren aus Lessings 
+                    <hi rend="italic">Minna von Barnhelm</hi> und markiert ihre Redeanteile in zeitlicher Abfolge. Im Zentrum der Untersuchung stehen die beiden Hauptfiguren des Dramas, namentlich Tellheim und Minna. Im zweiten, insbesondere aber im vierten und fünften Akt agieren Tellheim und Minna häufig gemeinsam auf der Bühne. Sie sind kopräsent. Diese Strukturdaten korrelieren mit den Beobachtungen aus 
+                    <hi rend="italic">Abbildung 1</hi>. Die Redesegmente der genannten Akte gruppieren sich dort in unmittelbarer Nähe zueinander, während Tellheims Redeanteile in den Akten 1 und 3 davon deutlich separiert abgetragen sind. In diesen beiden Akten stehen Tellheim und Minna nicht zur gleichen Zeit auf der Bühne. Die stilistische Ähnlichkeit der Figurenrede scheint also in Zusammenhang mit einem strukturellen Merkmal, der gemeinsamen Bühnenpräsenz der Figuren, zu stehen.
+                </p>
+                <p>Um diesen Befund weiter zu spezifizieren, soll eine semantische Wortfeldanalyse die thematische Konzeption der Figurenrede operationalisieren (Willand, Reiter 2017).<ref target="ftn7" n="7"/>
+                    <hi rend="italic">Abbildung 4</hi> schlüsselt die Äußerungen der zentralen Figuren nach den Themen ‚Liebe‘, ‚Krieg‘, ‚Familie‘, ‚Ratio‘ und ‚Religion‘ auf. Die Häufigkeiten zeigen deutlich, wie ähnlich die Figurenrede von Minna und Tellheim hinsichtlich der Wortfelder konzipiert ist. Gerade die für Lessings Drama zentralen Themen ‚Liebe‘ und ‚Ratio‘ korrelieren merklich – auch verglichen mit den übrigen Figuren. Die Heatmap in 
+                    <hi rend="italic">Abbildung 5</hi> veranschaulicht jedoch, dass dieses thematische Ähnlichkeitsverhältnis der Figurenrede von Minna und Tellheim nur eingeschränkt auf einzelne Akte heruntergebrochen werden kann. Es scheint eher der Fall zu sein, dass die anhand der Wortfelder ablesbaren Rollen von Minna und Tellheim je nach Akt differieren und zugleich weitergegeben werden können. Ein Beispiel hierfür ist der wechselnde Zweifel an einer gemeinsamen Zukunft, der Dialoge von Minna und Tellheim bis zum fünften Akt prägt. Basis der Darstellung sind die die Häufigkeiten der Wortfelder in der Figurenrede auf Ebene einzelner Akte. Die Häufigkeiten werden über die Bestimmung der euklidischen Distanz in ein Ähnlichkeitsverhältnis gesetzt. Demnach sind die nach Wortfeldern ähnlichsten Segmente die Figurenrede von Tellheim aus dem vierten Akt und diejenige von Minna aus dem dritten (euklidische Distanz: 0,001467). Es folgen die Paare Tellheim 5 und Minna 2 (0,002705) sowie Tellheim 1 und Minna 4 (0.003758). 
+                </p>
+                <p>Während also 
+                    <hi rend="italic">Abbildung 4 </hi>ein Indiz dafür liefert, dass Stil, Thema und Präsenz der Figuren und ihrer Äußerungen zusammenhängen, zeigt 
+                    <hi rend="italic">Abbildung 5</hi> eine gegensätzliche Tendenz – zumindest, wenn man nur die Redesegmente von Tellheim und Minna auf Ebene der einzelnen Akte vergleicht. Ein Grund dafür ist die Skalierung. Fügt man der Distanzberechnung weitere Figurensegmente bei, wird erkennbar, dass etwa auch die Segmente des fünften Akts von Minna und Tellheim thematisch relativ ähnlich erscheinen (0.006024).<ref target="ftn8" n="8"/>
+                </p>
+                <figure>
+                    <graphic n="1004"
+                        width="15.980833333333333cm"
+                        height="13.255625cm"
+                        rend="inline"
+                        url="KRAUTTER_Benjamin_Quantitatives__close_reading___Vier_mikroa-image4.jpeg"/>
+                        <head>Abbildung 4: Semantische Wortfelder in Minna von Barnhelm, normalisiert nach Länge der Figurenrede.</head>
+                </figure>
+                
+                <figure>
+                    <graphic n="1005"
+                        width="15.980833333333333cm"
+                        height="13.149791666666667cm"
+                        rend="inline"
+                        url="KRAUTTER_Benjamin_Quantitatives__close_reading___Vier_mikroa-image5.jpeg"/>
+                    <head>Abbildung 5: Euklidische Distanz der semantischen Wortfelder als Heatmap, Figurensegmente von Minna und Tellheim. Umso heller die Flächen dargestellt sind, umso größer ist die Übereinstimmung der Wortfelder.</head>
+                </figure>
+                    
+                <p>Die Sentiment-Analyse in 
+                    <hi rend="italic">Abbildung 6</hi> gibt den letzten der vier mikroanalytisch genutzten Zugänge zur Dramenbetrachtung wieder. In der Forschung genutzt, um etwa die unterschiedliche Verwendung von Emotionswörtern in Märchen und Romanen zu analysieren (Mohammad 2011), archetypische Stimmungskurven in Romanhandlunge sichtbar zu machen (Jockers 2015) oder zwischenmenschliche Beziehungen in Shakespeares Stücken zu untersuchen (Nalisnick, Baird 2013), wird die Analyse hier eingesetzt, um die Empfindung von Tellheim und Minna anhand ihrer Valenzwerte im fünften Akt zu vergleichen. Die Grafik muss dabei als Annäherung aufgefasst werden, da zwei Dramenfiguren immer versetzt voneinander sprechen. Normalisierung nach Länge der Figurenrede, fast dauerhafte Kopräsenz im fünften Akt und ein gleichzeitiges Abtreten im 14. Auftritt legitimieren die Annäherung gleichwohl. Die eingangs zu vernehmende Diskrepanz der beiden Kurven kann dabei tatsächlich auf das Drama rückbezogen werden: Erst im Verlauf des fünften Akts durchschaut Tellheim das missglückte Trickspiel Minnas, das beide abwechselnd an einer glücklichen Zukunft zweifeln lässt. Im fünften Akt wird diese Spannung gelöst, Minna und Tellheim finden als liebende Partner zusammen. Die Übereinstimmung der beiden Sentiment-Kurven und die positiven Werte zum Ende des fünften Akts sind somit ein bestätigender Befund.<ref target="ftn9" n="9"/>
+                </p>
+                <p>
+                    <figure>
+                      <graphic n="1006"
+                          width="16.007291666666667cm"
+                          height="13.705416666666666cm"
+                          rend="inline"
+                          url="KRAUTTER_Benjamin_Quantitatives__close_reading___Vier_mikroa-image6.jpeg"/>
+                      <head>Abbildung 6: kumulative Sentiment-Analyse, Minna von Barnhelm Akt 5, Valenz der Redeanteile von Minna und Tellheim.<ref target="ftn10" n="10"/></head>
+                    </figure>
+                </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Fazit</head>
-                <p>Ein reflektiertes Interface- und Visualisierungskonzept ist nach unserer Einschätzung besonders relevant, um eine Durchdringung und Neuausrichtung der Verfahren und Zugänge der Datenverarbeitung und -exploration der Textanalyse und –interpretation zu unterstützen. Die Integration von Methoden aus dem nutzerzentrierten Design stellt in diesem Kontext einen noch kaum erprobten Weg dar, um neue Tools in den DH zu entwickeln. So dient unsere designbasierte kritische Perspektive, die im Sinne einer Interface- und Visualisierungsutopie zu verstehen ist, letztlich auch der „epistemologischen Selbstaufklärung“ (Albrecht et al. 2015, 10) der literaturwissenschaftlichen Disziplin. Denn wie im 3DH-Projekt bereits deutlich wird, trägt ein reflektiertes Interface- und Visualisierungskonzept zur interdisziplinären Methodendiskussion in der Literaturwissenschaft bei. </p>
-                <p>Um den Mehrwert eines Interface- und Visualisierungskonzepts praktisch belegen zu können, wird eine sorgfältige Überprüfung unserer auf den Szenarien beruhenden Annahmen notwendig sein. Während das informelle Feedback von Expertinnen und Experten zwar hilfreich sein kann, so erlaubt es doch noch keine Rückschlüsse auf die tatsächliche Eignung und Aufgabenangemessenheit der Interfaces und Visualisierungen in der Praxis. Vorgesehen ist deshalb, im nächsten Schritt das bisher nur in Form statischer Wireframes umgesetzte Konzept in Form von funktionalen Interaktions-Prototypen mit Nutzern zu testen, um belastbarere Aussagen über seine Validität zu erhalten. </p>
+                <head>Fazit und Ausblick:</head>
+                <p>Die nähere Betrachtung der Figurenrede in 
+                    <hi rend="italic">Minna von Barnhelm</hi> konnte aufzeigen, dass es sinnvoll ist, die Möglichkeiten verschiedener Analysemethoden zu kombinieren und so die jeweiligen Stärken in die Untersuchung einzubringen. Ergebnisse können zusätzlich validiert und zugleich für breitere Fragestellungen geöffnet werden. Kopräsenz scheint in den gewählten Dramentexten – das Fehlen eines Erzählers könnte hierbei eine zentrale Rolle spielen – einen stärkeren Einfluss auf die Figurenrede zu haben als im (englischsprachigen) Roman. Exemplarisch dafür stehen die Redeäußerungen von Minna und Tellheim im fünften Akt von Lessings 
+                    <hi rend="italic">Minna von Barnhelm</hi>. Für die Betrachtung der Figurenentwicklung im Verlauf der Handlung eines Dramas scheint es entscheidend zu sein, Erkenntnisse aus Strukturdaten sowie semantische und stilistische Analyseverfahren kritisch gegeneinander zu stellen.
+                </p>
+                <p>Die vorliegende Arbeit wurde im Rahmen des Projekts „Quantitative Drama Analytics“ (QuaDramA) durchgeführt, das von der VolkswagenStiftung finanziert wird.</p>
             </div>
         </body>
         <back>
-         <div type="notes">
-            <note xml:id="ftn1" n="1"> Das Projekt 
-                            <hi rend="italic">3DH – Dreidimensionale dynamische Datenvisualisierung und Exploration für Digital Humanities-Forschungen</hi> wird in der ersten Projektphase (02/2016 – 01/2019) von der Behörde für Wissenschaft, Forschung und Gleichstellung gefördert. Für weitere Informationen vgl. 
-                            <ref target="http://www.threedh.net">
-                                <hi rend="underline">www.threedh.net</hi>
-                            </ref> [letzter Zugriff: 07.09.2017].
-                        </note>
-            <note xml:id="ftn2" n="2"> Einige Digital-Humanities-Tools und Forschungsansätze, die auf die Unterstützung von hermeneutischen Prozessen zielen: Pliny und TEASys.</note>
-            <note xml:id="ftn3" n="3"> Der Begriff „Szenario“ wird im Projekt in seiner Bedeutung als Methode und essentieller Bestandteil eines nutzerzentrierten Designprozesses nach Rosson/Carroll (2009) verwendet: „Scenarios of use reconcile concreteness and flexibility. [...] Initial scenarios are often extremely rough. They specify a possible design by specifying the tasks users can carry out, but without committing to lower-level details describing how the tasks will be carried out, or how the system will present the functionality for the tasks.”</note>
-            <note xml:id="ftn4" n="4"> Szenarien:(1) Exploration freier Annotationen zwecks Schärfung der literaturwissenschaftlichen Fragestellung(2) Themenexploration in einem größeren Textkorpus – Topic Modeling(3) Exploration taxonomiebasierter Annotationen zur Auswertung strukturierter TextanalysenWährend die ursprüngliche Fassung der Szenarien auf den Erfahrungen literaturwissenschaftlicher Forschungstätigkeit im eigenen Team basierte, haben wir diese im Rahmen eines Workshops (5.-7. August 2017) mit Johanna Drucker, Geoffrey Rockwell, Marian Dörk und Evelyn Gius überarbeitet.</note>
-            <note xml:id="ftn5" n="5"> Grundsätzlich lassen sich vier Phasen unterscheiden nach DIN EN ISO 9241-210:1. Analyse, Beschreibung und Verständnis des Nutzungskontextes2. Spezifikation der Nutzungsanforderungen3. Gestaltungslösungen entwerfen4. Evaluation der entworfenen Gestaltungslösungen aus NutzerperspektiveMit jeder Iteration steigt die Komplexität und/oder der Grad ästhetischer Qualität der Entwürfe. Während zu Beginn mit einfachen Handskizzen von Abläufen im Interface gearbeitet wird (Wireframes), kommen später Papierprototypen zum Einsatz, Screendesigns und schließlich auch interaktive Mock-Ups oder sogar Prototypen. Die Evaluation kann ebenfalls unterschiedliche Formen annehmen. Während in frühen Stadien Entwürfe eher informell diskutiert werden oder in Workshops mit Nutzern und Experten aller beteiligten Fachrichtungen ergänzt und erweitert werden, können spätere interaktive Entwurfsformen auch mit Probanden in qualitativen Nutzertests getestet werden. </note>
-            <note xml:id="ftn6" n="6"> Vgl. auch Winkos Ausführungen zur Differenzierung von Textanalyse und -interpretation (2003: 598): “Textanalysen basieren auf sprachlichen, formalen und strukturellen Informationen und greifen in erster Linie auf intratextuelle sowie auf denjenigen Typ extratextueller Kontexte zurück, der zum primären Verständnis vorauszusetzen ist; Interpretationen dagegen setzen Ergebnisse der Textanalyse voraus, und es dominiert tendenziell der Rekurs auf weitergehende, insbesondere inter- und extratextuelle Kontexte. Darüber hinaus sind Hypothesen über die Bedeutung eines Textes in Interpretationen komplexer als in Textanalysen.”</note>
-            <note xml:id="ftn7" n="7"> VEGA – A Visualization Grammar: 
-                                <ref target="https://vega.github.io/vega/">
-                                    <hi rend="underline">https://vega.github.io/vega/</hi>
-                                </ref>
-                            </note>
-            <note xml:id="ftn8" n="8"> D3 – Data-Driven Documents: 
-                                <ref target="https://d3js.org/">
-                                    <hi rend="underline">https://d3js.org/</hi>
-                                </ref>
-                            </note>
-         </div>
-         <div type="bibliogr">
+            <div type="notes">
+                <note xml:id="ftn1" n="1">
+                    Die Zahlen geben den Akt des Dramas wieder, dem die Figurenrede entnommen ist. Abbildung 1 und Abbildung 2 wurden mit Hilfe des ‚stylo'-Pakets für R angefertigt (Eder, Kestemont, Rybicki 2013).
+                </note>
+                <note xml:id="ftn2" n="2">
+                    Alle untersuchten Dramen entstammen dem Textgrid Repository.
+                </note>
+                <note xml:id="ftn3" n="3">
+                    Inwieweit der ohnehin schwer zu fassende Begriff ‚Stil' eine gute Wahl ist, um quantitative Methoden wie das Auszählen und vergleichen von Wortlisten zu beschreiben, ist zu diskutieren. Zumal die Vorstellung eines stilistischen Fingerabdrucks falsch zu sein scheint und ‚Autorstil' eher auf vielen kleinen Signalen fußt (Jannidis 2014). 
+                </note>
+                <note xml:id="ftn4" n="4">
+                    Zum Vergleich: Fields, Bassist und Roper nutzen Blöcke von jeweils nur 200 Wörtern (2017).
+                </note>
+                <note xml:id="ftn5" n="5">
+                    Schillers Texte sollen einen Gegenpol zu den Dramen Lessings bieten. Während Lessing dezidiert für die üblichen Rollenfächer des 18. Jahrhunderts schreibt (Harris 1992), entwirft Schiller seine Figuren eher konträr zu den Rollenfächern (Detken 2014).
+                </note>
+                <note xml:id="ftn6" n="6">
+                    Die Abbildungen 3 und 4 wurden mit Hilfe des ‚DramaAnalysis'-Pakets für R erstellt (Reiter, Willand).
+                </note>
+                <note xml:id="ftn7" n="7">
+                    Zu diesem Zweck wurden fünf Wörterbücher mit 75 bis 105 Wörtern zu den Themen ‚Liebe', ‚Krieg', ‚Familie', ‚Ratio' und ‚Religion' erstellt, die dem jeweiligen Wortfeld zugehörig sind und in Dramen zwischen 1770 und 1830 verwendet wurden (Willand, Reiter 2017).
+                </note>
+                <note xml:id="ftn8" n="8">
+                    Distanzwerte von mehr als 0,01 sind die Norm.
+                </note>
+                <note xml:id="ftn9" n="9">
+                    Andere (hier nicht aufgeführte) Auswertungen zeigen allerdings, dass Ähnlichkeitssignale von Sentiment-Analysen nicht mit stilometrischen Analysen oder Wortfeldsemantiken korrelieren müssen. Sentiment-Analysen geben keine Themen wieder, sondern Werte der Empfindung, mit der Figuren über Themen sprechen. Trotz gleicher Themen können somit ganz unterschiedliche Sentiment-Werte entstehen.
+                </note>
+                <note xml:id="ftn10" n="10">
+                    Erstellt mit Hilfe des ‚syuzhet'-Pakets für R, das die Valenz auf Ebene des Satzes bestimmt (Jockers). https://github.com/mjockers/syuzhet. Die Auswertung erfolgt mit der deutschen Version des NRC Word-Emotion Association Lexicon. http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm.
+                </note>
+            </div>
+            <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
-                    <bibl>
-                        <hi rend="bold">Albrecht, Andrea / Danneberg, Lutz / Krämer, Olav / Spoerhase, Carlos</hi> (Hg.) (2015): 
-                        <hi rend="italic">Theorien, Methode und Praktiken des Interpretierens.</hi> Berlin: de Gruyter.
+                    <bibl><hi rend="bold">Burrows, John / Craig, Hugh </hi>(2012) „Authors and characters“, in: 
+                        <hi rend="italic">English Studies</hi> 93(3): 292–309.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Bradley, John</hi> (2008): “Thinking about interpretation: Pliny and scholarship in the humanities”, in: 
-                        <hi rend="italic">Literary and linguistic computing</hi>, 23(3), 263-279.
+                    <bibl><hi rend="bold">Detken, Anke </hi>(2014): „Die Figur und ihr Fach: Konzeptionelle Überlegungen am Beispiel von Lessing und Schiller“, in: 
+                        <hi rend="italic">Zeitschrift für Literatur- und Theatersoziologie</hi> 11: 36–53.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Bühler, Axel</hi> (2003): “Interpretieren - Vielfalt oder Einheit?”, in: Jannidis, Fotis / Lauer, Gerhard / Martínez, Matías / Winko, Simone (Hg.): 
-                        <hi rend="italic">Regeln der Bedeutung. Zur Theorie der Bedeutung literarischer Texte.</hi> Berlin: De Gruyter (Revisionen, 1) 169-181.
+                    <bibl><hi rend="bold">Eder, Maciej </hi>(2013): „Computational Sylistics and Biblical Translation: How Reliable Can a Dendrogram Be?“, in: Piotrowski Tadeusz / Grabowski, Łukasz. 
+                        <hi rend="italic">The Translator and the Computer</hi>.
+                        Breslau: WSF Press: 155–170.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Cheema, Muhammad F. / Jänicke, Stefan / Franzini, Greta / Scheuermann, Gerik</hi> (2015): “On Close and Distant Reading in Digital Humanities: A Survey and Future Challenges“, in: 
-                        <hi rend="italic">Eurographics Conference on Visualization</hi> (EuroVis) - STARs 83-103. 
-                        <ref target="https://www.informatik.uni-leipzig.de/~stjaenicke/Survey.pdf">
-                            <hi rend="underline">https://www.informatik.uni-leipzig.de/~stjaenicke/Survey.pdf </hi>
-                        </ref>[letzter Zugriff: 10.09.2017]
+                    <bibl><hi rend="bold">Eder, Maciej / Kestemont, Mike /Rybicki, Jan </hi>(2013): „Stylometry with R: a Suite of Tools“, in: 
+                        <hi rend="italic">Digital Humanities 2013: Conference Abstracts</hi>: 487–89.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Drucker, Johanna</hi> (2011): “Humanities Approaches to Graphical Display”, in: 
-                        <hi rend="italic">DH Quarterly</hi>, 5(1).
-                        <ref target="http://digitalhumanities.org/dhq/vol/5/1/000091/000091.html">
-                            <hi rend="underline">http://digitalhumanities.org/dhq/vol/5/1/000091/000091.html</hi>
-                        </ref> [letzter Zugriff: 20.09.2017]
+                    <bibl><hi rend="bold">Evert, Stefan / Proisl, Thomas / Jannidis, Fotis / Reger, Isabella / Pielström, Steffen / Schöch, Christof / Vitt, Thorsten </hi>(2017): „Understanding and Explaining Delta Measures for Authorship Attribution“, in: 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>: ii4–ii16 https://doi.org/10.1093/llc/fqx023 [letzter Zugriff 15. September 2017].
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Drucker, Johanna</hi> (2014): 
-                        <hi rend="italic">Graphesis: Visual Forms of Knowledge Production</hi>. MetaLABprojects. Cambridge, Massachusetts: Harvard University Press.
+                    <bibl><hi rend="bold">Fields, Paul J. / Bassist, Larry / Roper, Matt </hi>(2017): „Characters in 19th Century Novels Display Distinctive Voices as Seen by Stylometric Analysis“, in: 
+                        <hi rend="italic">DH2017 Conference Abstracts</hi> https://dh2017.adho.org/abstracts/494/494.pdf [letzter Zugriff 15. September 2017].
+                        Harris, Edward P. (1992): „Lessing und das Rollenfachsystem. Überlegungen zur praktischen Charakterologie im 18. Jahrhundert“, in: Bender, Wolfgang F.:
+                        <hi rend="italic"> Schauspielkunst im 18. Jahrhundert: Grundlagen, Praxis, Autoren. </hi>Stuttgart: Steiner: 221–235.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Gadamer, Hans-Georg</hi> (1960, 1990): 
-                        <hi rend="italic">Hermeneutik I. Wahrheit und Methode. Grundzüge einer philosophischen Hermeneutik.</hi> Tübingen: Mohr.
+                    <bibl><hi rend="bold">Hoover, David </hi>(2017): „The Microanalysis of Style Variation“, in: 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi> https://doi.org/10.1093/llc/fqx022 [letzter Zugriff 15. September 2017].
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Gibbs, Fred / Owens, Trevor</hi> (2012): “Building better digital humanities tools”, in: 
-                        <hi rend="italic">DH Quarterly</hi>, 6(2).
+                    <bibl><hi rend="bold">Jannidis, Fotis </hi>(2014): „Der Autor ganz nah. Autorstil in Stilistik und Stilometrie“, in: 
+                        <hi rend="italic">Theorien und Praktiken der Autorschaft</hi>. Schaffrick, Matthias / Willand, Marcus. Berlin, Boston: De Gruyter: 169–195.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Grinstein, Georges</hi> (2012): “New Grand Challenges in Information Visualization: New Theories, New Devices, and New Capabilities“, in: 
-                        <hi rend="italic">Keynote address at iV2012</hi>.
+                    <bibl><hi rend="bold">Jockers, Matthew L. </hi>(2015): 
+                        <hi rend="italic">Revealing Sentiment and Plot Arcs with the Syuzhet Package </hi>http://www.matthewjockers.net/2015/02/02/syuzhet/ [letzter Zugriff 15. September 2017].
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Jannidis, Fotis / Lauer, Gerhard / Martínez, Matías / Winko, Simone</hi> (2003): “Der Bedeutungsbegriff in der Literaturwissenschaft. Eine historische und systematische Skizze”, in: dies. (Hg.): 
-                        <hi rend="italic">Regeln der Bedeutung. Zur Theorie der Bedeutung literarischer Texte</hi>. Berlin: De Gruyter (Revisionen, 1) 3-32.
+                    <bibl><hi rend="bold">Jockers, Matthew </hi>(2013): 
+                        <hi rend="italic">Macroanalysis: Digital Methods and Literary History</hi>. Urbana u.a.: Topics in the Digital Humanities.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Kindt, Tom / Köppe, Tilmann</hi> (2008): “Einleitung”, in: dies. (Hg.): 
-                        <hi rend="italic">Moderne Interpretationstheorien. Ein Reader.</hi> Göttingen: Vandenhoeck &amp; Ruprecht 7-26.
+                    <bibl><hi rend="bold">Masten, Jeffrey </hi>(1997): 
+                        <hi rend="italic">Textual Intercourse: Collaboration, Authorship and Sexualities in Renaissance Drama</hi>. Cambridge: Cambridge University Press.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Nünning, Ansgar</hi> (Hg.) (2008): 
-                        <hi rend="italic">Metzler Lexikon. Literatur- und Kulturtheorie. Ansätze - Personen - Grundbegriffe.</hi> Stuttgart: Metzler 281-284.
+                    <bibl><hi rend="bold">Mohammad, Saif </hi>(2011): “From Once Upon a Time to Happily Ever After: Tracking Emotions in Novels and Fairy Tales”, in: 
+                        <hi rend="italic">Proceedings of the 5th ACL-HLT Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities</hi>: 105–114.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Nünning, Vera</hi> (2010): 
-                        <hi rend="italic">Methoden der literatur- und kulturwissenschaftlichen Textanalyse. Ansätze – Grundlagen – Modellanalysen.</hi> Stuttgart: Metzler 1-29.
+                    <bibl><hi rend="bold">Moretti, Franco </hi>(2000): „Conjectures of World Literature“, in: 
+                        <hi rend="italic">New Left Review </hi>1: 54–68.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Rosson, Mary B. / Carroll, John M.</hi> (2009): 
-                        <hi rend="italic">Scenario based design. Human‐computer interaction.</hi> Boca Raton, FL, 145-162.
+                    <bibl><hi rend="bold">Moretti, Franco </hi>(2005): 
+                        <hi rend="italic">Graphs, Maps, Trees: Abstract Models for a Literary History</hi>. London: Verso.
+                        Nalisnick, Eric T. / Baird, Henry S. (2013): „Character-to-Character Sentiment Analysis in Shakespeare’s Plays, in: 
+                        <hi rend="italic">Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics</hi>: 479–483.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Satyanarayan, Arvind / Moritz, Dominik / Wongsuphasawat, Kanit / Heer, Jeffrey</hi> (2017): “Vega-Lite: A Grammar of Interactive Graphics”, in: I
-                        <hi rend="italic">EEE transactions on visualization and computer graphics</hi> 23(1), 341–350. DOI: 10.1109/TVCG.2016.2599030. [letzter Zugriff: 18.09.2017]
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Unsworth, John</hi> (2000): "Scholarly Primitives: What Methods Do Humanities Researchers Have in Common, and How Might Our Tools Reflect This?", in: 
-                        <hi rend="italic">Symposium on Humanities Computing: formal methods, experimental practice.</hi> King’s College London, 2000.
-                        <ref target="http://people.brandeis.edu/%7Eunsworth/Kings.5-00/primitives.html"> </ref>
-                        <ref target="http://people.brandeis.edu/%7Eunsworth/Kings.5-00/primitives.html">
-                            <hi rend="underline">http://people.brandeis.edu/~unsworth/Kings.5-00/primitives.html</hi>
-                        </ref>.[letzter Zugriff: 18.09.2017]
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Wilkinson, Leland</hi> (2006): 
-                        <hi rend="italic">The grammar of graphics</hi>. New York: Springer Science &amp; Business Media.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Winko, Simone</hi> (2003): “Textanalyse”, in: Georg Braungart / Harald Fricke / Klaus Grubmüller / Friedrich Vollhardt / Klaus Weimar (Hg.): 
-                        <hi rend="italic">Reallexikon der deutschen Literaturwissenschaft</hi>. Bd. 2.Berlin, New York: de Gruyter 2003 597-601.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Winko, Simone</hi> (2015): “Zur Plausibilität als Beurteilungskriterium literaturwissenschaftlicher Interpretationen”, in: Andrea Albrecht / Lutz Danneberg / Olav Krämer / Carlos Spoerhase (Hg.): 
-                        <hi rend="italic">Theorien, Methoden und Praktiken des Interpretierens.</hi> Berlin: de Gruyter 483-511.
-                    </bibl>
-                    <bibl>3DH 
-                        <ref target="http://www.threedh.net">
-                            <hi rend="underline">http://www.threedh.net</hi>
-                        </ref>
-                    </bibl>
-                    <bibl>CATMA 
-                        <ref target="http://www.catma.de">
-                            <hi rend="underline">http://www.catma.de</hi>
-                        </ref>
-                    </bibl>
-                    <bibl>D3 – Data-Driven Documents: 
-                        <ref target="https://d3js.org/">
-                            <hi rend="underline">https://d3js.org/</hi>
-                        </ref>
-                    </bibl>
-                    <bibl>forTEXT 
-                        <ref target="http://www.fortext.net">
-                            <hi rend="underline">http://www.fortext.net</hi>
-                        </ref>
-                    </bibl>
-                    <bibl>hermA 
-                        <ref target="https://www.korpuslab.uni-hamburg.de/projekte/herma.html">
-                            <hi rend="underline">https://www.korpuslab.uni-hamburg.de/projekte/herma.html</hi>
-                        </ref>
-                    </bibl>
-                    <bibl>heureCLÉA 
-                        <ref target="http://heureclea.de">
-                            <hi rend="underline">http://www.heureclea.de</hi>
-                        </ref>
-                    </bibl>
-                    <bibl>Pliny http://pliny.cch.kcl.ac.uk/</bibl>
-                    <bibl>TEASys http://www.annotation.es.uni-tuebingen.de/?page_id=200</bibl>
-                    <bibl>VEGA – A Visualization Grammar: 
-                        <ref target="https://vega.github.io/vega/">
-                            <hi rend="underline">https://vega.github.io/vega/</hi>
-                        </ref>
-                    </bibl>
-                    <bibl>
-                        <ref target="http://www.procontext.com/aktuelles/2010/03/iso-9241210-prozess-zur-entwicklung-gebrauchstauglicher-interaktiver-systeme-veroeffentlicht.html">
-                            <hi rend="underline">http://www.procontext.com/aktuelles/2010/03/iso-9241210-prozess-zur-entwicklung-gebrauchstauglicher-interaktiver-systeme-veroeffentlicht.html</hi>
-                        </ref> [letzter Zugriff: 18.09.2017]
+                    <bibl><hi rend="bold">Schöch, Christof </hi>(2014): „Corneille, Molière et les autres. Stilometrische Analysen zu Autorschaft und Gattungszugehörigkeit im französischen Theater der Klassik“, in: 
+                        <hi rend="italic">Literaturwissenschaft im digitalen Medienwandel. Beihefte zu Philologie im Netz
+                        </hi> 7: 130–157.
+                        Willand, Marcus / Reiter, Nils (2017): „Geschlecht und Gattung: Digitale Analysen von Kleists ‚Familie Schroffenstein‘, in: 
+                        <hi rend="italic">Kleist Jahrbuch </hi>2017: 177–195.
                     </bibl>
                 </listBibl>
             </div>
-      </back>
+        </back>
     </text>
 </TEI>

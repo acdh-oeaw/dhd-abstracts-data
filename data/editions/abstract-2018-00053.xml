@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="GOEDEL_Martina_Digitale_Differenz__Luhmanns_Zettelkasten_als">
+     xml:id="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp">
    <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title type="full">
-                    <title type="main">Digitale Differenz. Luhmanns Zettelkasten als physisch-historisches Objekt und als vernetzter Navigationsraum</title>
+                    <title type="main">Data models for Digital Editions: Complex XML versus Graph structures</title>
                     <title type="sub"/>
                 </title>
                 <author>
                     <persName>
-                        <surname>Goedel</surname>
-                        <forename>Martina</forename>
+                        <surname>Bruder</surname>
+                        <forename>Daniel</forename>
                     </persName>
-                    <affiliation>Cologne Center for eHumanities</affiliation>
-                    <email>mgoedel@uni-koeln.de</email>
+                    <affiliation>University of Cambridge, Vereinigtes Königreich</affiliation>
+                    <email>dmb77@cam.ac.uk</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Zimmer</surname>
-                        <forename>Sebastian</forename>
+                        <surname>Teufel</surname>
+                        <forename>Simone</forename>
                     </persName>
-                    <affiliation>Cologne Center for eHumanities</affiliation>
-                    <email>sebastian.zimmer@uni-koeln.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Schmidt</surname>
-                        <forename>Johannes</forename>
-                    </persName>
-                    <affiliation>Niklas Luhmann-Archiv, Fakultät für Soziologie, Universität Bielefeld</affiliation>
-                    <email>johannes.schmidt@uni-bielefeld.de</email>
+                    <affiliation>University of Cambridge, Vereinigtes Königreich</affiliation>
+                    <email>sht25@cl.cam.ac.uk</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2016-08-22T21:51:20.48</date>
+                    <date>2018-01-14T09:22:17</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -67,153 +59,240 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Zettelkasten</term>
-                    <term>TEI-Datenmodell</term>
-                    <term>Visualisierung</term>
-                    <term>Forschung</term>
+                    <term>Langzeitarchivierung</term>
+                    <term>Textauszeichnung</term>
+                    <term>Graphstrukturen</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
+                    <term>Aufzeichnung</term>
                     <term>Transkription</term>
-                    <term>Beziehungsanalyse</term>
-                    <term>Modellierung</term>
-                    <term>Forschungsprozess</term>
-                    <term>Visualisierung</term>
+                    <term>Annotieren</term>
+                    <term>Bearbeitung</term>
+                    <term>Archivierung</term>
+                    <term>Sprache</term>
                 </keywords>
             </textClass>
         <settingDesc>
             <ab n="conference">DHd2018 - "Kritik der Digitalen Vernunft", Köln</ab>
-            <ab n="paperID">218</ab>
-            <ab n="session_ID">30</ab>
-            <ab n="session_numberInSession">2</ab>
-            <ab n="session_short">VP_1c</ab>
-            <ab n="session_title">Sammlungsdigitalisierung I</ab>
-            <ab n="session_start">2018-02-28 09:00</ab>
-            <ab n="session_end">2018-02-28 10:30</ab>
+            <ab n="paperID">285</ab>
+            <ab n="session_ID">130</ab>
+            <ab n="session_numberInSession">3</ab>
+            <ab n="session_short">VP_5d</ab>
+            <ab n="session_title">Modellierung</ab>
+            <ab n="session_start">2018-03-01 11:00</ab>
+            <ab n="session_end">2018-03-01 12:30</ab>
          </settingDesc>
       </profileDesc>
     </teiHeader>
    <text>
         <body>
+            <p>In terms of longevity and collation of textual data in the humanities, digital data, notwithstanding its potential, still falls short the qualities of the traditionally printed book.</p>
+            <p>To streamline the diverse and idiosyncratic Digital Editions of the time and to establish a cross- and re-usable, durable digital archive of textual cultural artifacts, in 1988 the Text Encoding Initiative (TEI) was established with the goal to present a commonly shared standard for the transcription of literary, scientific and other forms of text.</p>
+            <p>As data model, the extensible markup language XML was chosen to assure longevity and exchangeability of the data. However, it turns out that XML, and with it, the data model of the hierarchically ordered tree are questionable choices for the recording of complex texts – as they are commonly found in the humanities – by potentially rendering the data ambiguous on semantic level.</p>
+            <p>The abstract idea behind the commonly shared tag set for the description of textual data is reflected in the 
+                <hi rend="italic">TEI abstract model</hi> (TEI Consortium 2016b) which uses XML as a serialisation format – but to which it is not bound:
+            </p>
+            <quote>The rules and recommendations made in these Guidelines are expressed in terms of what is currently the most widely-used markup language for digital resources of all kinds: the Extensible Markup Language (XML) […]. However, the TEI encoding scheme itself does not depend on this language […], and may in future years be re-expressed in other ways as the field of markup develops and matures.</quote>
+            <p>In the following, fundamental limitations of the tree data model are highlighted in spotlight fashion and contrasted with a graph based model for the sustainable recording and long-term archiving of complex textual data.</p>
             <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p>Inwieweit verändert der Einsatz digitaler Verfahren die sozialwissenschaftliche Forschung? Diese Frage lässt sich am Beispiel der Digitalisierung des Zettelkastens Niklas Luhmanns stellen, die im Rahmen des Forschungsprojektes “Niklas Luhmann - Theorie als Passion. Wissenschaftliche Erschließung und Edition des Nachlasses”<ref target="ftn1" n="1"/> erfolgt. Das Langzeitvorhaben (2015-2030), in dem die Fakultät für Soziologie der Universität Bielefeld mit dem Cologne Center for eHumanities kooperiert, wird im Akademienprogramm durch die Nordrhein-Westfälische Akademie der Wissenschaft und der Künste gefördert.
+                <head>Limitations of the tree model</head>
+                <p>Paradoxically, Digital Editions as well as digital archives, tools, platforms and data repositories are not as interoperable in practice as one would theoretically expect from standardised sources. To be able to cross- or re-use data or tools between projects, in practice, serious refactoring and rededication is necessary – e.g. existing web platforms cannot readily be re-used by another project, notwithstanding the fact that the data repositories are fully validating, validating TEI-P5 sources. How is this possible?</p>
+                <p>As will be shown, this paradoxical situation of factually unattainable interoperability of editions and tools are a direct consequence of the choice of data model.</p>
+                <p>The decision towards XML and the tree data model is based on the OHCO assumption of text as an Ordered Hierarchy of Content Objects (DeRose et al. (1990); revised in Renear, Mylonas, and Durand (1993)). Contrasting the original goals (TEI Consortium 2016c) of interoperable long-term archivable data repositories with the status quo, this decision towards XML as the serialisation format needs to be critically questioned – particularly since the TEI Guidelines themselves very early on make clear that the assumption of data model behind XML is an improper simplification (TEI Consortium 2016a):</p>
+                <quote>Surprisingly perhaps, this grossly simplified view of what text is […] turns out to be very effective for a large number of purposes. It is not, however, adequate for the full complexity of real textual structures, for which more complex mechanisms need to be employed.</quote>
+                <p>Already two most basic constellations can lead to a necessary departure from the tree paradigm which could be described as ‘Complex XML’.</p>
+                <p>These situations are commonly resolved by using workarounds (TEI Consortium 2016d). Although 
+                    <hi rend="italic">syntactically</hi> permissible on the level of XML markup, these workarounds establish structures beyond the data model of the tree and can lead to misrepresentation of the data on 
+                    <hi rend="italic">semantic</hi>, modelling level, seriously harming effective re-use and long-term archiving.
                 </p>
-                <p>
-                    <anchor xml:id="id_docs-internal-guid-ce2a7059-eb15-47db-4f93-5d5743b8acf1"/>Luhmann (1927-1998) zählt zu den bedeutendsten Soziologen des 20. Jahrhunderts. Im Laufe seiner 35-jährigen Forschungstätigkeit entwickelte er eine universale Sozial- und Gesellschaftstheorie, die er in annähernd fünfzig Monographien und 500 Aufsätzen publiziert hat. Als Basis für diese erstaunliche Produktivität diente Luhmann ein Zettelkasten, den er über vierzig Jahre lang systematisch gefüllt und gepflegt hat. Im Zuge der seit 2015 laufenden Nachlasserschließung wurden die ca. 90.0000 Zettel digitalisiert, in einem zweiten Schritt werden sie nun transkribiert und fachwissenschaftlich editiert sowie in eine Internetpräsentation überführt. Ziel dieses Prozesses ist zunächst eine digitale Reproduktion des Zettelkastens, die aber zugleich die Möglichkeiten der modernen digitalen Technik nutzt, um die nicht linear strukturierte Sammlung lesbar und ihre Genese nachvollziehbar zu machen. Indem die Digitalisierung über die reine Reproduktion hinausgeht, macht sie den Kasten selbst zu einem Forschungsobjekt.
-                </p>
+                <list type="unordered">
+                    <item>Data as well as tools inevitably become idiosyncratic, i.e. they irrevocably need to be handled on individual, project-specific basis; projects increasingly develop ‘private dialects’ and couple philologists and data scientists for actually accessing the data; data and tools are inaccessible to cross- and re-use between projects; finally, the possibility of a common digital archive is lost beyond recall.</item>
+                </list>
+                <list type="unordered">
+                    <item>Complex textual structures demand additional annotation to help and guide downstream tooling to not misrepresent the data. The transcription – in spite of valid, conforming data w.r.t. to the XML Schema – cannot automatically, i.e. without human intervention, be unambiguously resolved into its textual variants. </item>
+                    <item>The necessary supplementary annotation to one-unambiguously describe and model the source sets in motion a vicious circle of exponentially growing complexity in the data. Project-specific, idiosyncratic tools become necessary and must match this complexity. Moreover, such repositories typically suffer from overtagging (Hanrahan 2015), or, in the worst case need to be abandoned entirely (Schmidt et al. 2006).</item>
+                </list>
+                <list type="unordered">
+                    <item>Any further annotation or commentary only ever increases the complexity: any further annotation must match the existing complexity of the amended tree structure to accordingly be integrated; data and tools suffer from a ‘Heisenberg-Effect’ in that any further, more precise description of the source makes the data only ever more imprecise.</item>
+                </list>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Der (analoge) Zettelkasten Niklas Luhmanns</head>
-                <p>Die Zettelsammlung ist durch vier Merkmale gekennzeichnet, deren Kombination das besondere theoretische Kreativitätspotential der Sammlung begründet:</p>
-                <p>(a)
-                    <hi rend="bold">Nichthierarchische Ordnungsstruktur</hi>:
-                    Luhmann verzichtet weitgehend auf eine vorher festgelegte
-                    <anchor xml:id="id_docs-internal-guid-ce2a7059-eb16-6c0a-bf59-50e58b325c41"/>
-                    systematische Ordnung der Sammlung; diese ist primär ein historisches Produkt seiner Lektüre- und Forschungsinteressen. Aufgrund seines spezifischen Einstellprinzips führt die jeweilige thematische Erstfestlegung nämlich nicht zu einer monothematischen Reihung von Zetteln: Die für den Zettelkasten konstitutive Idee ist, dass
-                    <hi rend="bold">ein Zettel thematisch</hi> nur in irgendeiner Weise an den
-                    <hi rend="bold">vor ihm stehenden anschließen muss</hi>, ohne sich an einer übergeordneten (systematischen) Themenstruktur zu orientieren. Damit korrespondiert eine spezifische Art der Notizgenerierung, bei der Luhmann Nebengedanken weiterverfolgt, indem er diese zusätzlichen Notizen, auf einen an dieser Stelle einzuschiebenden Zettel notiert, so dass ein Wachstum des Zettelkastens ‚nach innen‘ erfolgt.
-                </p>
-                <p>(b)
-                    <hi rend="bold"> Nummerierungssystem</hi>:
-                    <anchor xml:id="id_docs-internal-guid-ce2a7059-eb17-0762-34ae-790459561d56"/>
-                    Mit der skizzierten Ablagetechnik in einem konstitutiven Zusammenhang steht das besondere Nummerierungssystem: Jeder Zettel erhält eine von seinem jeweiligen Einstellplatz abhängige Nummerierung, die zugleich auf das Problem reagiert, wie Luhmann neue Zettel in den Altbestand einfügen kann, ohne die schon bestehende Nummerierung in Frage zu stellen. Zunächst erfolgt eine einfache Durchnummerierung der Zettel entsprechend des Zeitpunkts des jeweiligen Eintrags (1, 2, 3 usw.). Ein später erstellter Zettel, der einen einzelnen Aspekt (also gerade nicht zwingend monothematisch) von Zettel 1 weiterverfolgt, wird mit 1a nummeriert und zwischen den Zettel 1 und 2 eingeschoben. Daran kann wiederum monothematisch 1b anschließen oder aber eine thematisch abzweigende weitere Verzettelung folgen, beispielsweise 1a1. Das führt dazu, dass zwischen zwei ursprünglich direkt hintereinander eingestellten Zetteln im Extremfall bis zu 1000 später erstellte Zettel mit einem entsprechend komplexen Nummernsystem eingestellt werden.
-                </p>
-                <p>(c)
-                    <hi rend="bold">Verweisungssystem</hi>:
-                    Das skizzierte Ablagesystem macht es außerdem nötig, dass die thematisch oder konzeptionell miteinander zusammenhängenden, aber eben verstreut in der Sammlung stehenden Zettel aufeinander verweisen, indem auf den Zetteln jeweils die entsprechenden Zettelnummern notiert werden. Neben Einzelverweisen findet man häufig am Beginn eines thematischen Abschnitts auf einem einleitenden Zettel auch
-                    eine ganze Sammlung von Verweisen, die thematisch verwandte Bereiche des Zettelkastens systematisch erschließen. Aufgrund einer stichprobenartigen Auszählung kann man davon ausgehen, dass sich in der Sammlung insgesamt ca. 50.000 Verweise befinden. Luhmann selbst nennt diese netzwerkartige Verweisungsstruktur ein „spinnenförmiges System“.
-                </p>
-                <p>(d)
-                    <hi rend="bold">Schlagwortverzeichnis</hi>:
-                    Um Einstiegspunkte in dieses Verweisungsnetz zu erhalten, hat Luhmann ein ca. 4000 Einträge umfassendes Schlagwortverzeichnis erstellt. Dieses Schlagwortregister war das zentrale Werkzeug für seine Nutzung des Kastens, da nur so Notizen zu einem bestimmten Thema zuverlässig wiedergefunden werden konnten. Das Schlagwortregister des Kastens beansprucht dabei aber keinen Anspruch auf Vollständigkeit hinsichtlich der Erfassung der einschlägigen Stellen in der Sammlung. Vielmehr notiert Luhmann in der Regel nur maximal drei Systemstellen, an denen der jeweilige Begriff zu finden ist, da er annimmt, dass man dann über das interne Verweisungsnetz schnell die anderen relevanten Stellen findet.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Technische Umsetzung</head>
+                <head>Complex XML</head>
+                <p>In contrast to a simple edition, i.e. one of linear text without any further annotation, the need for ‘Complex XML’, on most fundamental, level arises through: </p>
+                <list type="ordered">
+                    <item>the edition of a non-linear text</item>
+                    <item>the edition of a linear text, open for annotation</item>
+                </list>
+                <p>In essence, anything that is beyond linear text free of annotation cannot adequately be represented by a mono-hierarchical tree model and will need “more complex mechanisms” (TEI Consortium 2016a).</p>
                 <div type="div2" rend="DH-Heading2">
-                    <head>Datenmodell und Arbeitsumgebung</head>
-                    <p>Der Anlage des Zettelkastens folgend verstehen wir die Zettel als semantisch freie Einheiten und erzeugen für jede Zettelseite eine XML-TEI-Datei, in der die Transkription des Zettelinhalts erfolgt. Der Kopf (&lt;teiHeader&gt;) bietet Raum für Metainformationen, in einem umfangreichen Anhang zur Transkription (&lt;back&gt;) betten wir den Zettel in das Zettelnetzwerk ein. Wir unterscheiden mehrere Navigationswege durch den Kasten: Erstens eine physische Navigation in der von Zettelvorderseite zu folgender Vorderseite gesprungen wird. Zweitens geht es um übergeordnete Gliederungsverläufe. In einer dritten Navigation modellieren wir logische Abfolgen. In Form von Sprungzielen wird hier der nächste, in einem Gedankenstrang folgende Zettel angegeben, dabei werden von Luhmann eingeschobene Zettel zunächst ausgeblendet. Diese Abfolgen werden in eigenen Feldern klassifiziert und explizit gemacht.</p>
+                    <head>Complex XML through non-linear text</head>
+                    <p>Non-linear text results from editorial operations such as insertions, deletions, substitutions. For instance, recording the genealogical writing process of two undecided variants within the same sentence, yields four different, non-linear potential readings.</p>
                     <p>
                         <figure>
-                            <graphic url="GOEDEL_Martina_Digitale_Differenz__Luhmanns_Zettelkasten_als-abb1.png"/>
-                            <head>Abbildung 1: Ausschnitt aus der oXygen-Arbeitsoberfläche zur Transkription und Bearbeitung von Zettelseiten (Zettel 1-5B1c).</head>
+                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-10000201000004BC0000013C2C948493.png"/>
                         </figure>
+                        <p>These four different readings derived from mechanical re-combination potentially are not intended and to be reduced to specific readings only.</p>
                     </p>
-                    <p>Um den Fachwissenschaftlern die Arbeit mit den XML-Texten zu erleichtern, arbeiten wir mit dem Author-Mode des oXygen XML-Editors.<ref target="ftn2" n="2"/> Die von uns für die Zetteltranskription und Einbettung in das Netzwerk entwickelte Arbeitsoberfläche setzt im Verknüpfungsanhang auf fest eingerichtete Standardfelder, in die die Editoren IDs vorausliegender Zettel eintragen. Auf Basis dieser Einträge - die im Arbeitsprozess einer stetigen Weiterbearbeitung unterliegen - ergänzen wir über Skripte die Verbindung zu den davor liegenden Zetteln, um für die Portalnavigation beide Richtungen anbieten zu können.
-                    </p>
-                    <p>Für die Transkription selbst stellen wir im Framework ein Mixed-Content Feld zur Verfügung, in dem weitere Textphänomene und von Luhmanns selbst explizit formulierte Zettelverweise über Buttons ausgezeichnet werden können.</p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Forschungsportal</head>
-                    <p>Das Forschungsportal soll dem Benutzer eine intuitive Möglichkeit bieten, durch den Zettelkasten zu navigieren und ihn dabei nicht nur so benutzen zu können, wie Luhmann es vorgesehen hat, sondern die Nutzbarkeit durch die digitalen Möglichkeiten zu erweitern. Dazu wird für jeden Zettel dessen Ort in der im Rahmen des Projekts erstellten Inhaltsübersicht sowie eine interaktive Visualisierung seiner inhaltlich-logischen Einordnung angezeigt. Über indikative Buttons ist erkennbar, welche Navigationsmöglichkeiten sich für den momentan angezeigten Zettel für den Benutzer bieten (siehe Abbildung 2). Die Buttons sind gruppiert nach dem Navigationstypus.</p>
-                    <p>Innerhalb der Transkription sind Schlagwörter, bibliographische Angaben, Personennamen und vor allem Verweise zu anderen Zetteln verlinkt. Außerdem ist eine facettierte Volltext-Suche (z.B. nach Schlagworten oder bibliographischen Angaben) über vom Benutzer definierbare Bereiche des Zettelkastens möglich.</p>
                     <p>
                         <figure>
-                            <graphic url="GOEDEL_Martina_Digitale_Differenz__Luhmanns_Zettelkasten_als-abb2.png"/>
-                            <head>Abbildung 2: Ansicht eines Zettels im Forschungsportal</head>
+                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-100002010000048C000000D02F5C458C.png"/>
                         </figure>
-                    </p>
-                    <p>Neben optimierten Darstellungen für einzelne Zettelseiten gibt es Visualisierungen, die größere Bereiche des Kastens abdecken. Dazu zählt eine Visualisierung der im Rahmen der Edition erstellten inhaltlich-logischen Einordnungs- und Navigationsstruktur des Zettelkastens (siehe Abbildung 3), sowie ein Arc Diagram<ref target="ftn3" n="3"/> zur Darstellung von Zettelverweisen innerhalb verschiedener Bereiche (siehe Abbildung 4), um die Dichte der Vernetzung innerhalb und zwischen den verschiedenen Abteilungen des Zettelkastens zu verdeutlichen.
-                    </p>
-                    <p>Die Datenaufbereitung der TEI-XML-Dateien geschieht jeweils über im Rahmen des Projekts entwickelte Node.js-Skripte<ref target="ftn4" n="4"/>, bevor die Visualisierungen mit der JavaScript-Bibliothek D3.js<ref target="ftn5" n="5"/> erstellt werden.
+                        <p>Constraining these combinatorial permutations cannot be done in general ways within the mono-hierarchical tree data model. The tree model exposes a general limitation – even without the prevalence of overlapping structures.</p>
                     </p>
                     <p>
                         <figure>
-                            <graphic url="GOEDEL_Martina_Digitale_Differenz__Luhmanns_Zettelkasten_als-abb3.png"/>
-                            <head>Abbildung 3: Ausschnitt einer Visualisierung der im Rahmen der Edition erstellten inhaltlich-logischen Einordnungs- und Navigationsstruktur des digitalen Zettelkastens.</head>
+                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-100002010000045E000001E8B4A5A17E.png"/>
                         </figure>
+                        <p>While interconnecting nodes across the tree’s boundaries by (ab-)using attributes is syntactically possible it nevertheless makes the data idiosyncratic on semantic level, i.e. project-specific rules are introduced and must individually be followed when working with the data.</p>
                     </p>
                     <p>
                         <figure>
-                            <graphic url="GOEDEL_Martina_Digitale_Differenz__Luhmanns_Zettelkasten_als-abb4.png"/>
-                            <head>Abbildung 4: Visualisierung der internen Zettelverweise des ersten Auszugs von Zettelkasten I (ca. 3300 Zettel). Man erkennt die deutlichen Unterschiede der Vernetzungsdichte innerhalb und zwischen den 21 Abteilungen.</head>
+                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-10000201000004BA000002160FBA5023.png"/>
+                        </figure>
+                        <p>These interconnections to constrain the combinatorics to specific readings cannot formally be made part of the tree structure itself. To build a tree, any node in the tree must have exactly one parent. A different data model and data structure is necessary to model more than one parent for one node, namely the data model of the graph.</p>
+                    </p>
+                    <p>
+                        <figure>
+                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-100002010000047E00000106D01A4E37.png"/>
                         </figure>
                     </p>
                 </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Complex XML through meta-data</head>
+                    <p>Complex XML can also result from linear text, open for annotation. The following schematic example shows a linear text with overlapping annotation:</p>
+                    <p>
+                        <figure>
+                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-10000201000004B4000001104AB5DE41.png"/>
+                        </figure>
+                    </p>
+                    <p>Corresponding serialisation using XML and the segmentation method (TEI Consortium 2016d):</p>
+                    <p>
+                        <figure>
+                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-10000201000004A800000186D676681C.png"/>
+                        </figure>
+                    </p>
+                    <p>The necessary interconnection and recombination of fragmented nodes cannot be modelled within the tree structure in general ways:</p>
+                    <p>
+                        <figure>
+                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-10000201000004960000018CF71AE149.png"/>
+                        </figure>
+                    </p>
+                    <p>Another representation shows how one node in the tree is made the child of two parents:</p>
+                    <p>
+                        <figure>
+                            <graphic url="BRUDER_Daniel_Datenmodelle_zur_digitalen_Texterfassung__Comp-100002010000040A0000012A52D7B195.png"/>
+                        </figure>
+                    </p>
+                </div>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Fazit: Der Zettelkasten als Subjekt und Objekt der Forschung</head>
-                <p>Die Digitalisierung des Zettelkastens erfolgt als ein Editionsprojekt im Rahmen einer Nachlasserschließung, insofern ist das primäre Ziel eine digitalisierte
-                    <hi rend="bold">Reproduktion</hi> mit der Intention, die Nutzbarkeit im Luhmannschen Sinne zu rekonstruieren und zu erleichtern. Die
-                    dafür notwendige digitale Modellierung hatte eine vertiefte Reflexion über das Design des Zettelkastens zur Folge, insbesondere aufgrund der damit einhergehenden Notwendigkeit einer eindeutigen Typendifferenzierung von Zettelanschlüssen. Durch diese Differenzierung, die ihren Niederschlag in einer entsprechend komplexen Navigationsstruktur des digitalen Kastens gefunden hat
-                    <anchor xml:id="id_docs-internal-guid-ce2a7059-eb1b-17ab-0944-62a790e87a87"/>, die eine erleichterte Nutzbarkeit des Kastens ermöglicht, kam es zu einer deutlichen Konkretisierung der zweiten fachwissenschaftlichen Intention der Publikation: der Möglichkeit einer werkgenetischen Lesbarkeit des Kastens über eine Rekonstruktion der Einstellhistorie. Gerade weil die Zettel selbst undatiert sind, ist eine solche historisierende Les<hi rend="bold">art</hi> nur über die (fachwissenschaftliche) Identifizierung von ursprünglichen Zettelanschlüssen und späteren Einschüben möglich; die Les<hi rend="bold">barkeit</hi> der dadurch implizierten Zettelfolgen, die sich von der physischen Stellordnung der Zettel in Teilen unabhängig macht, ist dann aber nur aufgrund der entsprechenden technischen Umsetzung möglich.
+                <head>The relationship between graphs and trees</head>
+                <p>Trees and graphs are closely related: An ordered tree is a special form of graph with the properties of 
+                    <hi rend="italic">a)</hi> it is a directed graph without cycles, 
+                    <hi rend="italic">b)</hi> has one designated root node and 
+                    <hi rend="italic">c)</hi> any node has exactly one parent node.
                 </p>
-                <p>Die technische ‚Aufrüstung‘ des digitalen Kastens führt allerdings auch dazu, dass diese Version kein reines Abbild des analogen Kastens mehr darstellt, sondern den Zettelkasten nun in einer Weise verfügbar macht, wie Luhmann selbst ihn nie genutzt hat. Diese 
-                    <hi rend="bold">Differenz zum ursprünglichen Zettelkasten</hi> wird verstärkt durch die weiteren o.g.  Recherchemöglichkeiten im Rahmen der digitalisierten Version sowie durch die  Visualisierungsmöglichkeiten der Verweisungsstruktur zwischen den Zetteln, die zudem die Netzwerkförmigkeit der Sammlung transparent macht. Diese Form der Edition des Zettelkastens rekonstruiert den Kasten selbst also nicht mehr als das Forschungs<hi rend="bold">subjekt</hi>, das er für Luhmann als ‚Denkmaschine‘ und Theorieapparat war, sondern macht den Kasten selbst schon bei der Editionsarbeit zu einem Forschungs<hi rend="bold">objekt</hi> und bietet die für die Beantwortung von jetzt noch unbekannten Forschungsfragen notwendigen Instrumentarien an.
+                <p>As was shown in the previous basic examples, there is strictly no possibility to interconnect nodes of the tree across branches of the tree. By trying to associate two parents to one node, the tree paradigm is effectively abandoned, and results in a permanent need for case-specific handling to resolve potential ambiguities in the data.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p>Digital Editions wanting to model more than just simple structures can – notwithstanding the syntactical possibilities of XML – not be represented in interoperable ways within the paradigm of the tree data model, making longevity and uniformly re-usable digital archives impossible.</p>
+                <p>Alternative, graph-theoretic attempts to solve this problem have been suggested and could implement the 
+                    <hi rend="italic">TEI abstract model</hi> through an adequate data structure (Huitfeldt 1994; Barnard et al. 1995; Sperberg-McQueen and Huitfeldt 2000; Huitfeldt and Sperberg-McQueen 2001; Durusau and O'Donnell 2002; Tennison and Piez 2002; Dipper 2005; Dekhtyar and Iacob 2005; Banski and Przepiórkowski 2009; Di Iorio, Peroni, and Vitali 2010; Di Iorio, Peroni, and Vitali 2011; Schmidt and Colomb 2009; Schmidt 2014; Götze and Dipper 2006; Peroni, Vitali, and Di Iorio 2009; Witt 2007; Kuczera 2016).
                 </p>
+                <p>Yet, the question of an adequate serialisation and exchange format to any such data structure remains open. To be able to give guarantees of long term storage and archiving, any such serialisation format must be able to one-unambiguously represent the source as well as data structure. Ideally, any such serialisation format should be both machine readable as well as human intelligible and independent of existing computer hardware and software.</p>
+                <p>Previous graph-based approaches for the recording of complex textual data either did not catch on or have been abandoned for reasons of complexity in implementation or usage.</p>
+                <p>Because of the choice of data model, current repositories are idiosyncratic and tools and data must be handled on individual basis. In order to be able to build general digital archives fully interoperable data repositories are necessary. Interoperability is closely connected to the choice of data model. The TEI abstract model should be implemented as a graph structure, however, the graph structure is in need of a suitable exchange and serialisation format.</p>
+                <p>The commonly shared property between former graph-based approaches is the use of embedded markup. It is conjectured that future research on suitable serialisation formats for graph-based approaches should re-evaluate standoff based markup for the durable recording of Digital Editions.</p>
             </div>
         </body>
         <back>
-         <div type="notes">
-            <note xml:id="ftn1" n="1" place="foot">
-                <ref target="http://www.niklas-luhmann-archiv.de/"><hi rend="underline">www.niklas-luhmann-archiv.de</hi></ref>
-            </note>
-            <note xml:id="ftn2" n="2" place="foot">Vgl. oXygen Visual (WYSIWYG) XML Editors:
-                <ptr target="https://www.oxygenxml.com/xml_author/WYSIWYG_Editors.html"/>
-            </note>
-            <note xml:id="ftn3" n="3" place="foot">Arc diagram:
-                <ptr target="https://en.wikipedia.org/wiki/Arc_diagram"/>
-            </note>
-            <note xml:id="ftn4" n="4" place="foot">Node.js:
-                <ptr target="https://nodejs.org/en/"/>
-            </note>
-            <note xml:id="ftn5" n="5" place="foot">D3.js:
-                <ptr target="https://d3js.org/"/>
-            </note>
-         </div>
          <div type="bibliogr">
                 <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl>
-                        <hi rend="bold">Krajewski, Markus</hi> (2002):
-                        <hi rend="italic">ZettelWirtschaft. Die Geburt der Kartei aus dem Geiste der Bibliothek</hi>
-                        . Berlin: Kadmos.
+                    <head>Bibliography</head>
+                    <bibl><hi rend="bold">Banski, Piotr, and Adam Przepiórkowski. </hi>2009. “Stand-Off TEI Annotation: The Case of the National Corpus of P
+                        <hi rend="italic">olish.” In Proceedings of the Third Linguistic Annotati</hi>on Workshop, 64–67. Association for Computational Linguistics.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Schmidt, Johannes F.K.</hi> (2016): "Niklas Luhmann´s Card Index: Thinking Tool, Communication Partner, Publication Machine", in: Alberto Cevolini (ed.): Forgetting Machines. Knowledge Management Evolution in Early Modern Europe. Leiden: Brill, 289-311.
+                    <bibl><hi rend="bold">Barnard, David T, Lou Burnard, Jean-Pierre Gaspart, Lynne A Price, CM Sperberg-McQueen, and Giovanni Battista Varile. </hi>1995. “Hierarchical Encoding of Text: Technical Problems and SGML Solutions.” In 
+                        <hi rend="italic">Text Encoding Initiative</hi>, 211–31. Springer.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Watts, Duncan</hi> (2004): "The »new« science of networks", in: Annual Review of Sociology 30, 243-270.
+                    <bibl><hi rend="bold">Dekhtyar, Alex, and Ionut E Iacob. </hi>2005. “A Framework for Management of Concurrent XML Markup.” 
+                        <hi rend="italic">Data &amp; Knowledge Engineering</hi> 52 (2). Elsevier:185–208.
+                    </bibl>
+                    <bibl><hi rend="bold">DeRose, Steven J., David G. Durand, Elli Mylonas, and Allen H. Renear. </hi>1990. “What is text, really.” 
+                        <hi rend="italic">Journal of Computing in Higher Education</hi> 1 (2). Springer Nature:3–26. 
+                        <ptr target="https://doi.org/10.1007/bf02941632"/>.
+                    </bibl>
+                    <bibl><hi rend="bold">Di Iorio, Angelo, Silvio Peroni, and Fabio Vitali. </hi>2010. “Handling markup overlaps using OWL.” In 
+                        <hi rend="italic">Knowledge Engineering and Management by the Masses</hi>, 391–400. Springer.
+                    </bibl>
+                    <bibl><hi rend="bold">Di Iorio, Angelo, Silvio Peroni, and Fabio Vitali. </hi>2011. “A Semantic Web Approach to Everyday Overlapping Markup.” 
+                        <hi rend="italic">Journal of the American Society for Information Science and Technology</hi> 62 (9). Wiley Online Library:1696–1716.
+                    </bibl>
+                    <bibl><hi rend="bold">Dipper, Stefanie. </hi>2005. “XML-Based Stand-Off Representation and Exploitation of Multi-Level Linguistic Annotation.” In 
+                        <hi rend="italic">Berliner XML Tage</hi>, 39–50.
+                    </bibl>
+                    <bibl><hi rend="bold">Durusau, Patrick, and M Brook O'Donnell. </hi>2002. “Concurrent Markup for XML Documents.” In 
+                        <hi rend="italic">Proc. XML Europe</hi>.
+                    </bibl>
+                    <bibl><hi rend="bold">Götze, Michael, and Stefanie Dipper. </hi>2006. “ANNIS: Complex Multilevel Annotations in a Linguistic Database.” In 
+                        <hi rend="italic">Proceedings of the 5</hi>
+                        <hi rend="sup italic">th</hi>
+                        <hi rend="italic"> Workshop on NLP and XML: Multi-Dimensional Markup in Natural Language Processing</hi>, 61–64. Association for Computational Linguistics.
+                    </bibl>
+                    <bibl><hi rend="bold">Hanrahan, Elise. </hi>2015. “Over-Tagging with XML in Digital Scholarly Editions.” In 
+                        <hi rend="italic">DHd2015 Conference – von Daten Zu Erkenntnissen. Book of Abstracts.</hi>, edited by Various, 162–65. Graz, Austria.
+                    </bibl>
+                    <bibl><hi rend="bold">Huitfeldt, Claus. </hi>1994. “Multi-Dimensional Texts in a One-Dimensional Medium.” 
+                        <hi rend="italic">Computers and the Humanities</hi> 28 (4-5). Springer:235–41.
+                    </bibl>
+                    <bibl><hi rend="bold">Huitfeldt, Claus, and CM Sperberg-McQueen. </hi>2001. “TexMECS: An Experimental Markup Meta-Language for Complex Documents.” 
+                        <hi rend="italic">URL Http://Www. Hit. Uib. No/Claus/Mlcd/Papers/Texmecs. Html</hi>.
+                    </bibl>
+                    <bibl><hi rend="bold">Kuczera, Andreas. </hi>2016. “Digital Editions Beyond Xml – Graph-Based Digital Editions.” In 
+                        <hi rend="italic">Proceedings of the 3</hi>
+                        <hi rend="sup italic">rd</hi>
+                        <hi rend="italic"> Histoinformatics Workshop on Computational History (Histoinformatics 2016)</hi>, edited by Johannes Preiser-Kappeller Marten Düring Adam Jatowt.
+                    </bibl>
+                    <bibl><hi rend="bold">Peroni, Silvio, Fabio Vitali, and Angelo Di Iorio. </hi>2009. “Towards markup support for full GODDAGs and beyond: the EARMARK approach.” 
+                        <ptr target="https://doi.org/10.4242/BalisageVol3.Peroni01"/>.
+                    </bibl>
+                    <bibl><hi rend="bold">Renear, Allen H, Elli Mylonas, and David Durand. </hi>1993. “Refining Our Notion of What Text Really Is: The Problem of Overlapping Hierarchies.” Oxford University Press.</bibl>
+                    <bibl>Schmidt, Desmond. 2014. “Towards an Interoperable Digital Scholarly Edition.” 
+                        <hi rend="italic">Journal of the Text Encoding Initiative</hi>, no. 7. Text Encoding Initiative Consortium.
+                    </bibl>
+                    <bibl><hi rend="bold">Schmidt, Desmond, and Robert Colomb. </hi>2009. “A Data Structure for Representing Multi-Version Texts Online.” 
+                        <hi rend="italic">International Journal of Human-Computer Studies</hi> 67 (6). Elsevier:497–514.
+                    </bibl>
+                    <bibl><hi rend="bold">Schmidt, Thomas, Christian Chiarcos, Timm Lehmberg, Georg Rehm, Andreas Witt, and Erhard Hinrichs. </hi>2006. “Avoiding Data Graveyards: From Heterogeneous Data Collected in Multiple Research Projects to Sustainable Linguistic Resources.” In 
+                        <hi rend="italic">6</hi>
+                        <hi rend="sup italic">th</hi>
+                        <hi rend="italic"> E-Meld Workshop, Ypsilanti</hi>.
+                    </bibl>
+                    <bibl><hi rend="bold">Sperberg-McQueen, C Michael, and Claus Huitfeldt. </hi>2000. “GODDAG: A Data Structure for Overlapping Hierarchies.” In 
+                        <hi rend="italic">Digital Documents: Systems and Principles</hi>, 139–60. Springer.
+                    </bibl>
+                    <bibl><hi rend="bold">TEI Consortium. </hi>2016a. “A Gentle Introduction to XML” In 
+                        <hi rend="italic">TEI P5: Guidelines for Electronic Text Encoding and Interchange</hi>, by TEI Consortium, Version 3.2.0. Last updated on 10th July 2017, revision 0fcf651. 
+                        <ptr target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html#SG152"/>.
+                    </bibl>
+                    <bibl>———. 2016b. “About These Guidelines.” In 
+                        <hi rend="italic">TEI P5: Guidelines for Electronic Text Encoding and Interchange</hi>, by TEI Consortium, Version 3.2.0. Last updated on 10th July 2017, revision 0fcf651. 
+                        <ptr target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/AB.html"/>.
+                    </bibl>
+                    <bibl>———. 2016c. “Design Principles.” In 
+                        <hi rend="italic">TEI P5: Guidelines for Electronic Text Encoding and Interchange</hi>, by TEI Consortium, Version 3.2.0. Last updated on 10th July 2017, revision 0fcf651. 
+                        <ptr target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/AB.html#ABTEI2"/>.
+                    </bibl>
+                    <bibl>———. 2016d. “Non-Hierarchical Structures.” In 
+                        <hi rend="italic">TEI P5: Guidelines for Electronic Text Encoding and Interchange</hi>, by TEI Consortium, Version 3.2.0. Last updated on 10th July 2017, revision 0fcf651. 
+                        <ptr target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/NH.html"/>.
+                    </bibl>
+                    <bibl><hi rend="bold">Tennison, Jeni, and Wendell Piez. </hi>2002. “The Layered Markup and Annotation Language (LMNL).” In 
+                        <hi rend="italic">Extreme Markup Languages</hi>.
+                    </bibl>
+                    <bibl><hi rend="bold">Witt, Andreas. </hi>2007. “Guideline: Multiple Hierarchies.” In 
+                        <hi rend="italic">Dagstuhl Seminar Proceedings</hi>. Schloss Dagstuhl-Leibniz-Zentrum für Informatik.
                     </bibl>
                 </listBibl>
             </div>

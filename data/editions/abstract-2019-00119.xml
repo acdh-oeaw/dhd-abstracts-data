@@ -1,37 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="273_final-KISSINGER_Timo_Nomisma_org__Numismatik_und_das_Semantic_Web" xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="104_final-KLEYMANN_Rabea_Prototypen_als_Proto_Theorie____Pl_doyer_eine" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Nomisma.org: Numismatik und das Semantic Web</title>
+                <title>Prototypen als Proto-Theorie? – Plädoyer einer digitalen Theoriebildung</title>
                 <author>
                     <persName>
-                        <surname>Wigg-Wolf</surname>
-                        <forename>David</forename>
+                        <surname>Kleymann</surname>
+                        <forename>Rabea</forename>
                     </persName>
-                    <affiliation>Römisch-Germanische Kommission des Deutschen Archäologischen Instituts</affiliation>
-                    <email>david.wigg-wolf@dainst.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Tolle</surname>
-                        <forename>Karsten</forename>
-                    </persName>
-                    <affiliation>Johann Wolfgang Goethe-Universität Frankfurt am Main</affiliation>
-                    <email>tolle@dbis.cs.uni-frankfurt.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Kissinger</surname>
-                        <forename>Timo</forename>
-                    </persName>
-                    <affiliation>Akademie der Wissenschaften und der Literatur | Mainz, Deutschland</affiliation>
-                    <email>Timo.Kissinger@adwmainz.de</email>
+                    <affiliation>Universität Hamburg, Deutschland</affiliation>
+                    <email>r.kleymann90@gmail.com</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2018-10-15T08:39:00Z</date>
+                    <date>2018-12-31T11:37:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -63,225 +47,301 @@
                     <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Linked Open Data</term>
-                    <term>Numismatik</term>
-                    <term>Archäologie</term>
+                    <term>Theoriebildung</term>
+                    <term>Softwareprototypen</term>
+                    <term>Erkenntnistheorie</term>
+                    <term>Forschungsinfrastruktur</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Modellierung</term>
-                    <term>Daten</term>
-                    <term>Methoden</term>
-                    <term>Forschung</term>
-                    <term>texttragende Gegenstände</term>
-                    <term>Werkzeuge</term>
+                    <term>Community-Bildung</term>
+                    <term>Bewertung</term>
+                    <term>Projektmanagement</term>
+                    <term>Infrastruktur</term>
+                    <term>Forschungsprozess</term>
+                    <term>Software</term>
                 </keywords>
             </textClass>
         </profileDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einführung</head>
-                <p>In diesem Beitrag wird eine domänenspezifische Anwendung von Linked Open Data und Ontologien vorgestellt, die als Paradigma für den Umgang mit digitalen Corpora in der Archäologie dienen kann. Zunächst wird die Entwicklung des Projektes Nomisma.org sowie dessen Anwendung für die Verlinkung von digitalen Datenbeständen erläutert. In einem zweiten Teil wird ein Pilotprojekt vorgestellt, das darauf abzielt, textbasierte Münzpublikationen als RDF zur Verfügung zu stellen und somit prüft, inwieweit das Vokabular und die Ontologie von Nomisma.org eingesetzt werden können.</p>
-                <p>Das 2010 von der American Numismatic Society, New York, initiierte Projekt 
-                Nomisma.org<hi rend="superscript">1</hi> definiert und stellt stabile digitale Repräsentationen numismatischer Konzepte nach den Prinzipien von Linked Open Data zur Verfügung. Sie werden als http-URIs 
-                veröffentlicht<hi rend="superscript">2</hi>, die Zugang zu weiterverwertbaren Informationen zu den Konzepten liefern, dazu noch Links zu weiteren Linked Open Data-Ressourcen (Getty Vocabularies, wikidata, viaf, GND, u.v.m.). Ferner wurde eine numismatische 
-                Ontologie<hi rend="superscript">3</hi> entwickelt, die den Bedürfnissen und Arbeitsweisen der Numismatik gerecht ist und eine unkomplizierte Modellierung ermöglicht. Das kanonische Format von Nomisma.org ist RDF/XML, aber auch weitere Formate wie JSON-LD (für Geodaten geoJASON-LD), Turtle, KML und HTML5+RDFa 1.1. werden bedient.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Virtuelle Sammlungen</head>
-                <p>Zunächst lag der Schwerpunkt der Arbeit von Nomisma.org bei der römischen Numismatik und bis 2016 erfolgte die Onlinestellung der Linked Open Data-Ressourcen 
-                    <hi rend="italic">Coinage of the Roman Republic Online</hi> 
-                    (CRRO)<hi rend="superscript">4</hi> und 
-                    <hi rend="italic">Online Coins of the Roman Empire</hi> 
-                    (OCRE)<hi rend="superscript">5</hi> als virtuelle Münzsammlungen für die Prägungen der römischen Republik und der Kaiserzeit. Die Abfrage erfolgt über RDF Dumps der Projektpartner, die zentral gehalten werden; die dazugehörigen Bilder werden on-the-fly von den Servern der Partner geholt, wodurch nicht nur das Volumen der zentralen Datenhaltung gering gehalten und die Abfragegeschwindigkeit erhöht, sondern auch eventuelle rechtliche Probleme bei der Lizenzierung der Bilder vermieden werden.
-                </p>
-                <p>Mittlerweile befassen sich erste Projekte auch mit dem disparaten und weitaus komplexeren Stoff der griechischen 
-                Welt,<hi rend="superscript">6</hi> z.B. 
-                    <hi rend="italic">PELLA</hi> für die Prägungen der makedonischen Dynastie der Argeaden, 
-                    <hi rend="italic">Corpus Nummorum Thracorum</hi> für Thrakien, oder 
-                    <hi rend="italic">Seleucid Coins Online</hi> für die Prägungen der Seleukiden. Des Weiteren haben Arbeitsgruppen bereits angefangen, die notwendigen Konzepte für die keltische und islamische Numismatik sowie für das Mittelalter zu definieren.
-                </p>
-                <p>Fast 200.000 antike Münzen von insgesamt 39 Institutionen werden heute in auf Nomisma.org basierenden Online-Ressourcen veröffentlicht.<hi rend="superscript">7</hi> Aktiv an der Entwicklungen beteiligt sind u.a. das Institute for Studies of the Ancient World, New York, das Deutsche Archäologische Institut sowie vier der weltweit bedeutendsten Münzsammlungen: Die American Numismatic Society, das British Museum, die Bibliothèque nationale de France und das Münzkabinett der Staatlichen Museen zu Berlin. Auch eine Reihe kleinerer Sammlungen sind dabei ihre Bestände in Portalen wie OCRE und CRRO online zu stellen. Darunter schon acht der 34 deutschen universitären Sammlungen, die Mitglieder im 
-                    <hi rend="italic">NUMiD</hi>-Verbund 
-                    (<hi rend="italic">Netzwerk universitärer Münzsammlungen in Deutschland</hi>)<hi rend="superscript">8</hi> sind.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Die verlinkte Antike</head>
-                <p>Nomisma.org und die darauf bauenden Projekte sind in die Linked Open Data-Welt der Antike fest integriert. Mit Nomisma.org verlinkte, bzw. gemappte Münzen werden bei Ressourcen wie 
-                    <hi rend="italic">Pleiades</hi><hi rend="superscript">9</hi> und 
-                    <hi rend="italic">Pelagios</hi><hi rend="superscript">10</hi> angezeigt und umgekehrt können Einträge in den virtuellen Sammlungen mit kontextvermittelnden Daten aus anderen Quellen angereichert werden. Beispielsweise: Wird Literatur in der Form von iDAI.bibliographie / 
-                    ZENON<hi rend="superscript">11</hi> URIs zitiert, können umgekehrt in Zenon Verweise auf Münzen beim entsprechenden Titel angezeigt werden. Im Abschlussbericht des Work Package 15 des EU-FP7 Projektes ARIADNE wurde Nomisma.org mehrfach als führendes Beispiel für die fachspezifische Anwendung von Linked Open Data zitiert (Geser 2016).
-                </p>
-                <p>Nomisma.org hat numismatische Daten auf eine Weise digital zur Verfügung gestellt, die vor 10 Jahren kaum vorstellbar gewesen wäre und macht einen bedeutenden Bestand an Material der Forschung leichter zugänglich. Durch die Verlinkung mit anderen LOD-Ressourcen sind diese Daten auch deutlich sichtbarer und stehen damit für Forschungsvorhaben in anderen Disziplinen vermehrt zur Verfügung. So kann Nomisma.org beispielsweise einen wichtigen Beitrag zur Aufhebung der immer noch weit verbreiteten Isolation der Numismatik in den Altertumswissenschaften leisten, eine Isolation, die in der (bisher oft fehlenden) Zusammenarbeit mit der Archäologie besonders deutlich erkennbar ist.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Fundmünzen und Archäologie</head>
-                <p>Konzentrierten sich Projekte wie OCRE und PELLA zunächst auf die Präsentation von Münzen aus öffentlichen Sammlungen, richtet sich der Blick mittlerweile zunehmend auf Münzen im archäologischen Kontext. Nomisma.org kompatible Standards für die Aufnahme und Veröffentlichung von Münzen aus Ausgrabungen wurden bei einem Treffen an der University of Oxford im September 2018 vereinbart, um Re-use und Interoperabilität zu 
-                ermöglichen.<hi rend="superscript">12</hi>
-                </p>
-                <p>Nationale Projekte wie 
-                    <hi rend="italic">NUMIS</hi><hi rend="superscript">13</hi> für die Niederlande oder das 
-                    <hi rend="italic">Inventar der Fundmünzen der Schweiz</hi><hi rend="superscript">14</hi> veröffentlichen umfangreiche Bestände an Fundmünzen im Web, die aber nur über das jeweilige nationale Portal zugänglich sind. Eine länderübergreifende Abfrage ist nicht möglich. Eine Ausnahme bietet das Projekt
-                    <hi rend="italic" xml:space="preserve"> Antike Fundmünzen in Europa</hi><hi rend="superscript">15</hi>, das die Datenbanken der Römisch-Germanischen Kommission in Frankfurt und des Unternehmens 
-                    <hi rend="italic">Finds of Roman Coins in Poland</hi> auf das Vokabular und die Ontologie von Nomisma.org mappt und mittels eines D2R-Servers als RDF online stellt. Ein SPARQL-Endpoint ermöglicht die gemeinsame Abfrage der beiden Datenbestände und erleichtert damit die Analyse der Fundmünzen aus einem von der Nordsee bis zur Ukraine reichenden Raum.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Text zu RDF: Erster Versuch einer Digitalisierung</head>
-                <p>Bisher lag der Schwerpunkt der Verlinkung mit bzw. Mapping auf Nomisma.org auf in Datenbanken gehaltene Daten. In diesem Beitrag soll abschließend ein Pilotprojekt vorgestellt werden, das sich mit den Möglichkeiten der Anwendung von Nomisma.org auf textbasierte Datenbestände beschäftigt.</p>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Grundlage</head>
-                    <p>Das Projekt „Fundmünzen der römischen Zeit in Deutschland“ (FMRD) brachte 48 Bände mit weit über 300.000 erfassten Fundmünzen heraus. Im Rahmen eines Praxisprojektes im Studiengang „Digitale Methodik in den Geistes- und 
-                    Kulturwissenschaften“<hi rend="superscript">16</hi> wurde als Beispieldatensatz aus FMRD der Fundkomplex Domgrabung/Liebfrauen-Areal in Trier mit 1.157 Münzen digitalisiert (M. Radnoti-Alföldi 2006: 119–206).
-                    </p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Das Verfahren</head>
-                    <p>Die Daten zu den Münzen wurden aus dem PDF in CSV und XML extrahiert und in ein RDF-Dokument umgewandelt, um die Vernetzung und Visualisierung zu ermöglichen (Abb. 1).</p>
-                    <figure>
-                        <graphic n="1001" width="10.990791666666667cm" height="4.580819444444445cm" url="273_final-8bde4cc0eb88b4d5e83eb7f8f8877755.png" rend="inline"/>
-						<head><lb/>Abbildung 1. Verlaufsplan.</head>
-                    </figure>
-                    <p>Für die Konvertierung aus dem PDF und die Bearbeitung wurde 
-                        <hi rend="italic">Adobe Acrobat Pro DC</hi><hi rend="superscript">17</hi>, der 
-                        <hi rend="italic">Oxygen</hi><hi rend="superscript">18</hi> Editor und 
-                        <hi rend="italic">Libre Office</hi><hi rend="superscript">19</hi> verwendet. Die extrahierten Daten wurden anhand der CSV-Extraktion in ein einheitliches Spaltensystem gebracht. Über das XML-Dokument wurden anhand von regulären Ausdrücken Konvertierungsfehler etc. ausgebessert. Am Ende stand eine einzelne TEI-konforme Tabelle. Der nächste Schritt bestand darin, ein Linked-Open-Data-Modell anhand der Ontologie von Nomisma.org (Abb. 2) zu entwickeln.
-                    </p>
-                    <figure>
-                        <graphic n="1002" width="9.275027777777778cm" height="3.44195cm" url="273_final-6795df4388799d10f8eb9cd509ac3ae7.jpeg" rend="inline"/>
-						<head><lb/>Abbildung 2. RDF-Modell.</head>
-                    </figure>
-                    <p>Um dieses Modell automatisiert auf alle 1.157 Münzen der Trierer Domgrabung übertragen zu können, wurde der Webdienst 
-                        <hi rend="italic">XTriples</hi> verwendet<hi rend="Fußnotenanker"><hi rend="superscript">20</hi></hi>, der es erlaubt aus XML ein RDF-Dokument zu erzeugen.
-                    </p>
-                    <figure>
-                        <graphic n="1003" width="9.181044444444444cm" height="4.846872222222222cm" url="273_final-cc45796536649cf916d580a8fe6f4fb8.jpeg" rend="inline"/>
-						<head><lb/>Abbildung 3. Webservice XTriples.</head>
-                    </figure>
-                    <p>Das RDF-Dokument wurde auf einen Triple Store abgelegt, der über ein RDF4J-Framework verfügt und SPARQL-Abfragen erlaubt. Ein weiterer Webdienst, 
-                        <hi rend="italic">sgvizler</hi>,<hi rend="Fußnotenanker"><hi rend="superscript">21</hi></hi> ermöglicht es im Anschluss die Daten zu visualisieren und zu analysieren (Abb. 4).
-                    </p>
-                    <figure>
-                        <graphic n="1004" width="9.068152777777778cm" height="6.288263888888889cm" url="273_final-37db1c51d4891a869d93810b4cc73cdc.jpeg" rend="inline"/>
-						<head><lb/>Abbildung 4. Visualisierung über sgvizler zu den Fundmünzen der Trierer Domgrabung.</head>
-                    </figure>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Ausblick</head>
-                    <p>Das oben beschriebene Verfahren wurde dann erweitert, um eine Pipeline aufzubauen, mit der alle Bände der FMRD-Reihe digitalisiert werden können. Auf manuelle Schritte und proprietäre Software soll dabei möglichst verzichtet werden.</p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Tabellenextraktion</head>
-                    <p>In einem ersten Schritt wurden aktuelle Open-Source-Angebote verglichen, die es ermöglichen, aus der PDF-Struktur Tabellen in CSV- bzw. XML-Dateien zu extrahieren. Die Daten liegen jedoch so inhomogen vor, dass bisher erschienene Programme und Skripte/Bibliotheken schnell an ihre Grenzen stoßen. Als Beispiel soll hier das browserbasierte Tool 
-                        <hi rend="italic">Tabula</hi><hi rend="Fußnotenanker"><hi rend="superscript">22</hi></hi> dienen, welches Tabellen im PDF automatisch erkennt und anschließend als CSV ausgeben kann. Im Verlauf der Erprobung stellte sich 
-                        <hi rend="italic">Tabula</hi> als ungeeignet heraus, da immer noch zu viele manuelle Eingriffe vonnöten sind. So erkennt es manche Tabellenteile nicht (Abb. 5) und die Spalteninhalte im erzeugten CSV werden nicht richtig zugeordnet.
-                    </p>
-                    <figure>
-                        <graphic n="1005" width="5.951361111111111cm" height="6.2367333333333335cm" url="273_final-f0a68ff0a3aea8590e9e9875707596af.png" rend="inline"/>
-						<head><lb/>Abbildung 5. Tabula: Fundmünzen Nummer 1 bis 4 werden nicht erkannt.</head>
-                    </figure>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>pdftohtml</head>
-                    <p>Eine andere Herangehensweise erzeugt als Zwischenschritt XML, bevor dieses in CSV umgewandelt werden kann. Für die Erzeugung des XML wird das Tool 
-                        <hi rend="italic">pdftohtml</hi> verwendet.<hi rend="Fußnotenanker"><hi rend="superscript">23</hi></hi> Das Ergebnis lässt sich über den 
-                        <hi rend="italic">pdf2xml-viewer</hi><hi rend="superscript">24</hi> überprüfen (Abb. 6).
-                    </p>
-                    <figure>
-                        <graphic n="1006" width="5.634727777777778cm" height="7.6561055555555555cm" url="273_final-d751b9472e1886ef94912d782721d27e.jpeg" rend="inline"/>
-						<head><lb/>Abbildung 6. OCR-Ergebnis.</head>
-                    </figure>
-                    <p>Die Normalisierung der Spalten ist hier leichter, da auch leere Tabellenspalten erkannt werden. Jedoch wird auch hier der Spalteninhalt nicht überall korrekt erkannt (Münze 18). Die XML-Struktur erlaubt es über die Tags zu navigieren und diese mit X-Technologien zu manipulieren. Doch ist der Anteil der nicht korrekt erkannten Spalteninhalte immer noch zu hoch, um die Daten wie im Druckband abzubilden.</p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Reguläre Ausdrücke</head>
-                    <p>Eine andere Möglichkeit an die Tabellendaten zu gelangen sind reguläre Ausdrücke. Mithilfe eines Pythonskriptes wurden diese separiert und als CSV ausgegeben. Dafür wurden beispielhaft verschiedene Münzkomplexe herangezogen und die regulären Ausdrücke um die pro Komplex neu auftretenden Sonderfälle modifiziert. Dieses Verfahren erzeugte gute Ergebnisse für die behandelten Komplexe. So waren nur noch kleinere manuelle Nachbesserungen nötig. Im Vergleich erzeugte dieses Verfahren das beste Ergebnis.</p>
-                </div>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Fazit</head>
-                <p>Die Digitalisierung von „Fundmünzen der römischen Zeit in Deutschland“ erweist sich als anspruchsvoll. Der Ansatz, die Daten über reguläre Ausdrücke zu gewinnen und zu extrahieren, erscheint bisher am vielversprechendsten. Die dabei auftretenden Abweichungen zwischen den Münzfundkomplexen lassen sich durch auf die FMRD-Struktur zugeschnittene Ausdrücke ausbessern. So erhoffen wir uns, die bisher über Nomisma.org veröffentlichten Datenbestände durch wichtige archäologische Kontexte zu erweitern und zu bereichern.</p>
-            </div>
+            <p>In der Diskussion um den Status der Digital Humanities (DH) als wissenschaftliche Disziplin wird häufig die Frage einer Theoriebildung ins Feld geführt. Konfrontiert mit dem Vorwurf der Theorielosigkeit (vgl. Bauer 2011) sowie der Forderung nach „mehr Theorie“ (Lauer 2013, 112) lässt sich eine ausschweifende Theoriedebatte beobachten (vgl. Gold 2012). Zum einen werden die DH aufgrund der Heterogenität ihrer Gegenstände sowie ihres Aufgabenfeldes jenseits der Theoriebildung verortet 
+            (vgl. Winko/Köppe 2013, 328).<ref target="ftn1" n="1"/> Zum anderen wird die Theoriebildung in eine zeitliche Relation gebracht (vgl. Hall 2012). So wird mit der Proklamation eines ‚Endes der Theorie‘ eine posttheoretische Ära eingeläutet (vgl. Scheinfeldt 2012), zugleich bekräftigt sich das Verständnis eines vortheoretischen Status der DH (vgl. Boellstorff 2014, 105). Was nun ‚vor‘ oder ‚nach‘ der Theorie liegt bestimmen beide Positionen auf ähnliche Weise, indem sie ihren Fokus auf die Aktivitäten (vgl. Flanders/Jannidis 2015, 3) oder „doing research“ (vgl. Kath et al. 2015, 31; Cecire 2011) richten. 
+            </p>
+            <p>Im Zuge dieser Hinwendung zur digitalen Praxis gewinnt die Entwicklung von prototypischer Software zunehmend an Bedeutung (vgl. Ramsey/Rockwell 2012). Übernommen aus der informatischen Softwareentwicklung wird unter einem Softwareprototyp eine „provisorische“ und „experimentelle“ (Ruecker et al.) Software verstanden, die eine zukünftige Systemkomplexität (Houde/Hill 1997; Mogensen 1992) auf bestimmte Teilkomponenten reduziert und diese unter Annahme eines deskriptiven oder prospektiven Potenzials ausstellt. Softwareprototypen werden als methodisch und theoretisch modellierte „digitale Artefakte“ (Rockwell/Ramsey 2012) verstanden, die neben den bereits in der Informatik etablierten Funktionen der Exploration, Erklärung und Verständigung zunehmend auch in anderen diskursiven Kontexten als Argument (Ruecker/Galey 2010), Provokation (Boer/Donovan 2012), Spekulation (Hinrichs/Forlini 2017), Vermittler von Performanz und Kritik (Drucker 2012) begriffen werden. Ruecker/Galey (2010, 1) sprechen von „Prototypen als Theorie“. </p>
+            <p>Softwareprototypen scheinen, so nun der Ausgangspunkt des Vortrages, nicht nur an epistemischen Status zu gewinnen, sondern auch den Bedarf der noch ausstehenden oder bereits obsoleten Theoriebildung zu adressieren. Der vorliegende Vortrag möchte darlegen, inwiefern Softwareprototypen als ‚Proto-Theorie‘ der DH begriffen werden können. Dazu stellt der Vortrag nicht nur die theoriebildenden Effekte eines Softwareprototyps vor, sondern argumentiert, dass der Softwareprototyp eine spezifische Form der Theoriegestaltung darstellt. Unter ‚Proto-Theorie‘ wird eine durch die Form des Softwareprototyps gestaltete Theoriearbeit begriffen. Der Vortrag versteht sich als Beitrag zu den Versuchen, die „Geisteswissenschaften als Ort avancierter Theoriebildung“ (Grizelj/Jahraus 2011, 9) neu zu vermessen sowie Spielräume und Grenzen einer auf Softwareprototypen aufbauenden Theoriebildung auszuloten. Zunächst wird ein geisteswissenschaftliches Verständnis der Konzepte 
+                <hi rend="italic" xml:space="preserve">Prototyp </hi>und 
+                <hi rend="italic">Theorie</hi> vorgestellt. Anschließend wird die Theoriemündigkeit des Softwareprototyps eruiert.
+            </p>
+            <p rend="Subtitle">
+                <anchor xml:id="Hlk523303212"/>Zur Anschauung von Identität und Differenz – Das Konzept des Prototyps
+            </p>
+            <p>Während die Rede von einem Softwareprototypen im DH-Forschungsdiskurs etabliert ist, steht eine Auseinandersetzung mit dem Konzept des Prototyps über ein informatisches Verständnis hinaus noch 
+            aus.<ref target="ftn2" n="2"/> Aus dem Griechischen von 
+                <hi rend="italic">prototypon</hi> ‚Urbild‘ abgeleitet, setzt sich das Kompositum aus „
+                <hi rend="italic">proto</hi> ‚vorderster, erster, bedeutsamster“ (Kluge 2011, 728) und „
+                <hi rend="italic">typos</hi> Schlag, Stoß (von gr. typtein ‚schlagen, prägen) ‚prägende Form‘, Umriss, Gestalt, Muster nach“ (Ritter 1998, 1587) zusammen. Im taxonomischen Referenzrahmen der Klassifizierung und Kategorisierung verortet, dient der Prototyp im Allgemeinen als Beschreibungsbegriff der Validierung von „Gleichheit und Verschiedenheit“ (Mainberger 2003, 42). Es können zwei Bestimmungen des Prototyps unterschieden werden: Unter der kognitionspsychologischen Perspektive (vgl. Rosch 1975) wird der Terminus des Prototyps in der Standardverwendung als abstrakte Entität eingeführt, welche die typischen Eigenschaften einer extensionalen Kategorie als bestes Exemplar repräsentiert 
+                (vgl. Kleiber 1993, 117).<ref target="ftn2" n="2"/> Die Zugehörigkeit zu einer Kategorie wird in Bezug auf den Prototyp qua analytischer Quantifizierung von Merkmalen ermittelt. Notwendige Bedingung der Zugehörigkeit zu einer Kategorie ist die Übereinstimmung von mindestens einem Merkmal. 
+            </p>
+            <p>Davon zu unterscheiden ist eine morphologische Bestimmung des Prototyps, wie sie unter anderen Ludwig Wittgensteins Familienähnlichkeit 
+            darstellt.<ref target="ftn4" n="4"/> Am Beispiel des Begriffs „Spiel“ führt Wittgenstein aus, dass nicht alle „Glieder einer Familie“ (Wittgenstein 1945, 278) durch ein einzelnes gemeinsam definierendes Merkmal vereint sind, sondern durch „ein kompliziertes Netz von Ähnlichkeiten, die einander übergreifen und kreuzen“ (278) verknüpft sind. Die Zugehörigkeit zu einer Kategorie stellt sich über Ähnlichkeitsbeziehungen her.
+            </p>
+            <p rend="Subtitle">Gestaltung von Zugängen – Theorien in der Literaturwissenschaft</p>
+            <p>Der Begriff der Theorie „griechisch: 
+                <hi rend="italic">theoria</hi> geistiges Anschauen bzw. wissenschaftliches Betrachten“ bezeichnet „explizite, elaborierte, geordnete und logisch konsistente Kategoriensysteme, die der Beschreibung, Erforschung und Erklärung der Sachverhalte ihres jeweiligen Objektbereichs dienen“ (Nünning/Nünning 2010, 6). So adressiert die Theorie eine Mangelerfahrung, die sich in der Differenz zwischen Theorie und Welt expliziert: „Theorien sind ein Effekt der Unzugänglichkeit von Welt dergestalt, dass sie die Zugänglichkeit als Theorie substituieren und somit kompensieren“ (Jahraus 2011, 28). Bezogen auf die Literaturwissenschaft konstituieren Theorien nicht nur einen spezifischen Zugang zum Gegenstand Literatur, indem sie „Bedingungen der Produktion und Rezeption […] sowie […] Beschaffenheit und […] Funktionen“ reflektieren (Winko/Köppe 2013, 7), sondern sie erzeugen überhaupt erst den Gegenstand als epistemisches Objekt ihrer 
+                Betrachtung.<ref target="ftn5" n="5"/>
+            </p>
+            <p>Darüber hinaus stellen Theorien eine spezifische Textgattung mit eigener Literarizität dar (vgl. Culler 2011, 3). Da Theorien vorrangig in Form von schriftlich verfassten Texten erscheinen und daher einer sprachlichen Logik folgen, unterliegen sie einer spezifischen Textualität, die konstitutiv, aber nicht reduzibel für die Gestaltung eines theoretischen Gehalts ist (vgl. Saar 2013, 47). Zu den „Minimalbedingungen“ (Winko/Köppe 2013, 8) einer Literaturtheorie gehören dabei erstens, der Abstraktionsgrad der theoretischen Aussage, der „auf mehrere, eventuell sogar alle Einzelphänomene eines bestimmten Typs zutr[ifft] bzw. ein Modell der Phänomene bereitzustell[t]“ (Winko/Köppe 2013, 8). Zweitens können Literaturtheorien resümierende, erklärende, koordinierende und prognostische Funktionen zugesprochen werden. Bezogen auf die Gestaltung einer Literaturtheorie ist drittens der systematische und formale Aufbau kennzeichnend. In Folge der Systematisierung kann viertens die Explizitheit des Begriffsapparats angeführt werden 
+            (vgl. Winko/Köppe 2013, 8).<ref target="ftn6" n="6"/> In der literaturwissenschaftlichen Praxis ermöglicht der Anschluss an einer Theorie eine intersubjektive Nachvollziehbarkeit (vgl. Nünning/Nünning 2010, 2). So dienen Theorien dazu, Evidenz und Plausibilität unter Annahme eines Wahrheit- und Wissenschaftlichkeitsanspruches herzustellen und zu sichern. Mit Blick auf eine „interpretative community“ (Bode 2011, 80) und den allgemeinen wissenschaftlichen Diskurs schaffen Theorien einen spezifischen Kommunikationsrahmen. 
+            </p>
+            <p rend="Subtitle">Zur Theoriemündigkeit des Softwareprototyps in den DH</p>
+            <p>Vor dem Hintergrund der skizzierten Prototypenkonzepte sowie den Anforderungen an (literaturwissenschaftliche) Theorien stellt sich nun die Frage, inwiefern Softwareprototypen diesem Anspruch gerecht werden können. Zunächst geht der Entwicklung einer prototypischen Software ein Prozess der Datenmodellierung und der Herstellung einer Ontologie (vgl. Jannidis/Flanders 2015, 7) voraus. In den Klassifikationsverfahren zur Gewinnung von Klassen, Eigenschaften und Relationen (vgl. [Gruber 2009] zit. Jannidis/Flanders 2015, 9) sedimentiert sich bereits ein theoretisches Wissen, wie zum Beispiel die Vorstellung vom Text oder von Bedeutung. Über diese theoretische präfigurierende Modellierung hinaus expliziert sich im Softwareprototyp jedoch die für Theorie konstitutive Differenzerfahrung von Beobachtung und Beobachteten. Der Softwareprototyp stellt einen Zugang dar, der interaktiv vermittelt wird. Als reduziertes und komprimiertes 
+            Modell<ref target="ftn7" n="7"/> eines Sets von meist methodischen Operationen erfüllt der Softwareprototyp oftmals die „synthetische und integrierende Leistung einer […] Schau“ (Wirth 2013, 138). Einzelne Sachverhalte bzw. Aktivitäten werden verknüpft, die sodann prototypisch, das heißt prägend und musterhaft, als Teil eines größeren kohärenten Erklärungszusammenhangs erscheinen. Genauer gesagt, repräsentiert der Softwareprototyp die Theorie als funktionales Gefüge und übernimmt mithin eine exemplarische 
+            Funktion.<ref target="ftn8" n="8"/> Er steht „nicht bloß stellvertretend und uneigentlich für Anderes, sondern prototypisch und materialiter für etwas ein, von dem er selbst ein nur zu demonstrativen [oder explikativen, RK] Zwecken abgetrennter Teil zu sein [verspricht]“ (Schaub 2011, 12). So finden sich zum Beispiel in den Abstracts der DHd Konferenz 2018 nicht nur zahlreiche Vorstellungen von 
+            Softwareprototypen,<ref target="ftn9" n="9"/> sondern auch Formulierungen zur explikativen und prognostischen Leistung sowie zur Funktion der 
+            Validierung.<ref target="ftn10" n="10"/> Oszillierend zwischen der Vorstellung vom Softwareprototyp als eine Figuration von 
+            Evidenz<ref target="ftn11" n="11"/> und als verzeitlichte und verräumlichte Repräsentationsform der Theorie, die aufgrund ihres provisorischen Status zum spekulativen Spiel (vgl. Hacking 1983, 352) einlädt, zeigt sich die prekäre epistemische Lage. Denn der Softwareprototyp löst die scharfe „Distinktion zwischen der Welt der Dinge und der Welt der Zeichen“ (Rautzenberg/Strätling 2013, 11) auf. Vielmehr gehen die Grenzen fließend ineinander über, sodass zugleich die „differenztheoretische Grundlegung von Theorie“ (Jahraus 2011, 36) zugunsten einer interaktiven Erfahrung infrage gestellt 
+            wird.<ref target="ftn12" n="12"/>
+            </p>
+            <p>Neben den Nachweis der theoriegenerierenden Effekte stellt sich die Frage nach der Form, in der das theoretische Wissen im Softwareprototypen erscheint. Die visuelle Ordnung des Softwareprototyps in Form einer grafischen Benutzeroberfläche ist nicht der textuellen Ästhetik des Linearen verpflichtet. An die Stelle der (textuellen) Systematizität tritt eine topologische und temporäre Entfaltung der Theorie. Hinsichtlich des Kriteriums der Explizitheit kann eine epistemische Verschiebung zur Präsenz hin angenommen werden. Im Sinne eines „Präsenzphänomen[s]“ 
+            (Gumbrecht 2012, 216)<ref target="ftn13" n="13"/> scheint der Softwareprototyp nicht nur theoretisches Wissen zu repräsentieren, sondern die Visualität und Interaktion generiert einen Überschuss, in dem sich neues Wissen zeitigt. Dabei überlagert sich empirisch gesichertes und hypothetisch spekulatives Wissen.
+            </p>
+            <p>Begreift man nun die Pluralität von Softwareprototypen in der DH-Forschung aus einer übergeordneten Perspektive können die einzelnen Softwareprototypen im Sinne Wittgensteins als ‚Glieder einer Familie‘ betrachtet werden. So entsteht kein systematisches Theoriegebilde, sondern vielmehr die Dynamik eines offenen und unabgeschlossenen Netzes. </p>
+            <p rend="Subtitle">Schlussfolgerungen</p>
+            <p>Die Diskussion um den epistemischen Status des Softwareprototyps hinterfragt nicht nur das Selbstverständnis der DH als (Hilfs)Wissenschaft und als 
+            Forschungsinfrastruktur<ref target="ftn14" n="14"/>, sondern verortet die Arbeit an der Theoriebildung wieder in den Geisteswissenschaften. Wie sieht eine zeitgenössische Literaturtheorie aus, welche die einzelnen Sachverhalte in den Zusammenhang der Digitalität stellt? Die ‚Proto-Theorie‘ erweist sich als eine mögliche Antwort. Aufgaben der DH-Community sind daher, die Legitimation von unterschiedlichen Theorieformen zu erproben, die Differenzen und Barrieren zwischen textuellen und technischen Gestaltungsformen zu diskutieren und so das hybride Theorienetz zu verdichten. 
+            </p>
         </body>
         <back>
-			<div type="notes">
-					<note place="foot" xml:id="ftn1" n="1"> http://nomisma.org/; Hinweis: Alle im Beitrag erwähnten URLs wurden zuletzt am 14.10.2018 überprüft.</note>
-					<note place="foot" xml:id="ftn2" n="2"> z.B. http://nomisma.org/id/sestertius</note>
-					<note place="foot" xml:id="ftn3" n="3"> http://nomisma.org/ontology</note>
-					<note place="foot" xml:id="ftn4" n="4"> http://numismatics.org/crro/</note>
-					<note place="foot" xml:id="ftn5" n="5"> http://numismatics.org/ocre/</note>
-					<note place="foot" xml:id="ftn6" n="6"> https://www.greekcoinage.org/portals.html</note>
-					<note place="foot" xml:id="ftn7" n="7"> http://nomisma.org/datasets</note>
-					<note place="foot" xml:id="ftn8" n="8"> http://www.numid-verbund.de/</note>
-					<note place="foot" xml:id="ftn9" n="9"> https://pleiades.stoa.org/</note>
-					<note place="foot" xml:id="ftn10" n="10"> http://peripleo.pelagios.org/</note>
-					<note place="foot" xml:id="ftn11" n="11"> http://peripleo.pelagios.org/</note>
-					<note place="foot" xml:id="ftn12" n="12"> https://www.greekcoinage.org/coins-in-context.html</note>
-					<note place="foot" xml:id="ftn13" n="13"> https://www.dnb.nl/en/about-dnb/nationale-numismatische-collectie/numis/numis-database/index.jsp</note>
-					<note place="foot" xml:id="ftn14" n="14"> https://www.fundmuenzen.ch/</note>
-					<note place="foot" xml:id="ftn15" n="15"> http://afe.fundmuenzen.eu/</note>
-					<note place="foot" xml:id="ftn16" n="16"> https://www.digitale-methodik.uni-mainz.de/</note>
-					<note place="foot" xml:id="ftn17" n="17"> https://acrobat.adobe.com/de/de/acrobat/acrobat-pro.html</note>
-					<note place="foot" xml:id="ftn18" n="18"> https://www.oxygenxml.com/</note>
-					<note place="foot" xml:id="ftn19" n="19"> https://de.libreoffice.org/</note>
-					<note place="foot" xml:id="ftn20" n="20"> http://xtriples.spatialhumanities.de/index.html</note>
-					<note place="foot" xml:id="ftn21" n="21"> http://mgskjaeveland.github.io/sgvizler/</note>
-					<note place="foot" xml:id="ftn22" n="22"> https://tabula.technology/</note>
-					<note place="foot" xml:id="ftn23" n="23"> https://poppler.freedesktop.org/</note>
-                    <note place="foot" xml:id="ftn24" n="24"> https://github.com/WZBSocialScienceCenter/pdf2xml-viewer</note>
-			</div>
+            <div type="notes">
+                <note xml:id="ftn1" n="1" rend="footnote text">
+                    Vgl. Winko/Köppe (2013, 328): „Der Überblick über ihre heterogenen Arbeitsfelder macht bereits deutlich, dass die Computerphilologie nicht an der Entwicklung einer umfassenden Literaturtheorie interessiert ist, sondern andere Ziele verfolgt.“ Die eigentliche Theoriearbeit wird dabei verstanden als außerhalb der DH, zum Beispiel in den Medienwissenschaften oder Software Studies (vgl. Jannidis et. al 2017, 19) sowie der Mathematik und Informatik (Flanders/Jannidis 2015, 2).
+                </note>
+                <note xml:id="ftn2" n="2" rend="footnote text">
+                    Eine Ausnahme stellt der DHd-Beitrag von Henny-Krahmer et. al. (2018): 
+                        <hi rend="italic">Alternative Gattungstheorien: Das Prototypenmodell am Beispiel hispanoamerikanischer Romane</hi> dar. Hier wird das Protypenmodell als Gattungskonzept diskutiert.
+                </note>
+                <note xml:id="ftn3" n="3" rend="footnote text">
+                    Auf das problematische Verhältnis von Begriff und Prototyp kann an dieser Stelle nur hingewiesen werden. Weitere Ausführungen finden sich bei Kleiber (1993) sowie Gansel (2017).
+                </note>
+                <note xml:id="ftn4" n="4" rend="footnote text">
+                    Zu nennen sind auch die Verfahrensweise der vergleichenden Naturlehre, wie sie von Buffon, Herder und Goethe präsentiert werden.
+                </note>
+                <note xml:id="ftn5" n="5" rend="footnote text">
+                    Signifikant für die Praxis der Literaturwissenschaft ist dabei vor allem das Nebeneinander von unterschiedlichen theoretischen Ansätzen (Wellbery 1985, 7; Jahrhaus/Neuhaus 1995).
+                </note>
+                <note xml:id="ftn6" n="6" rend="footnote text">
+                    Methoden unterscheiden sich von Theorien dadurch, dass sie eher die Art und Weise eines Vorgehens zielführend beschreiben. Theorien können folglich eine sowie ein Set von allgemeinen (Lesen, Hypothesen generieren) sowie spezifischen (deduktiven, dialektischen) Methoden bereitstellen. Exemplarisch für die hermeneutische Theorie ist der hermeneutische Zirkel oder das systemtheoretische Re-entry für die Systemtheorie.
+                </note>
+                <note xml:id="ftn7" n="7" rend="footnote text">
+                    Stachowiak (1992, 219) definiert das Modell als „pragmatische Entität eines (mindestens) fünfstelligen Prädikats […]: X ist Modell des Originals Y für den Verwender k in der Zeitspanne t bezüglich der Intention Z.“ Allgemeine Ausführungen zum Modell vgl. auch Epple (2016).
+                </note>
+                <note xml:id="ftn8" n="8" rend="footnote text">
+                    Entgegen der These von Rockwell/Ramsey (2012) zur „Thing Theory“ geht es nicht um die konkrete Materialisation der Theorie als eines objektiven Gegenstandes, der die textuelle Form der Theorie substituiert.
+                </note>
+                <note xml:id="ftn9" n="9" rend="footnote text">
+                    Vgl. DHd 2018, Köln Abstracts: Es finden sich 17 Erwähnung von Softwareprototypen, verstanden als prototypische Software, auf den Seiten 32, 53, 65, 98, 154, 164,175, 194-195, 205, 220, 273, 282, 388, 422, 435, 459, 466-468.
+                </note>
+                <note xml:id="ftn10" n="10" rend="footnote text">
+                    Beispiele der Erwähnungen von Softwareprototypen mit Hinweis auf den Leistungsumfang: „zur Diskussion gestellt“ (S. 32); „Anforderungen und Interessen aus der Fachcommunity zur Weiterentwicklung“ (S. 53); „Prozess zu beschleunigen bzw. zuverlässiger zu machen“ (S. 65); „iterativ […] gewonnene[] Erkenntnisse“ (S. 195); „die einzelnen Funktionalitäten und Konfigurationsmöglichkeiten ausgetestet und verbessert“ (S. 205), „Interaktions-Prototypen mit Nutzern zu testen, um belastbarere Aussagen über seine Validität zu erhalten.“ (S. 282) etc.
+                </note>
+                <note xml:id="ftn11" n="11" rend="footnote text">
+                    Eine Evidenzgenerierung erfolgt bei literaturwissenschaftlichen Softwareprototypen zum Beispiel durch Visualisierung oder Text-Mining. Softwareprototypen erscheinen vor diesem Hintergrund als dezidierte Beweisverfahren der DH, die evidentielle Gewissheit und Präsenz vermitteln.
+                </note>
+                <note xml:id="ftn12" n="12" rend="footnote text">
+                    Im Unterschied zur textuellen Theorieform wird das Subjekt, das sich durch die Theorie einen Zugang verschaffen will, scheinbar schon durch die interaktive Ausrichtung des Softwareprototyps ‚mit-konstituiert‘. Hier schließt sich die Frage nach der Subjektkonstituierung in textuellen und technischen Theorieformen an.
+                </note>
+                <note xml:id="ftn13" n="13" rend="footnote text">
+                    Gumbrecht (2012) in Rekurs auf Jean-Luc Nancy einen Begriff der „Präsenz, der sich auf unser räumliches Verhältnis zu den Dingen der Welt“ aufbaut.
+                </note>
+                <note xml:id="ftn14" n="14" rend="footnote text">
+                    Unter den Aspekt der Forschungsinfrastruktur fallen Erwägungen über interdisziplinäre Teamstrukturen, Projektkonstellationen sowie Forschungsförderungen und -finanzierungen. Zur Diskussion steht unter anderen die Frage, warum Ressourcen für die Herstellung von Softwareprototypen eingesetzt werden.
+                </note>
+            </div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">G. Geser (2016):</hi> 
-                        <hi rend="italic">ARIADNE WP15 Study: Towards a Web of Archaeological Linked Open Data</hi> 
-                        (www.ariadne-infrastructure.eu/.../ARIADNE_archaeological_LOD_study_10-2016.pdf, 31.10.2016).
+						<hi rend="bold">Bauer, Jean (2011)</hi>: <hi rend="italic">“Who are you Calling Untheoretical?”</hi> in: Journal of Digital Humanities 1,1. 
+                        <ref target="http://journalofdigitalhumanities.org/1-1/who-you-calling-untheoretical-by-jean-bauer/">http://journalofdigitalhumanities.org/1-1/who-you-calling-untheoretical-by-jean-bauer/</ref> [letzter Zugriff am 29.08.2018].
                     </bibl>
                     <bibl>
-                        <hi rend="bold">E. Gruber:</hi> 
-                        <hi rend="italic">Numishare Blogspot</hi>: 
-                        <ref target="http://numishare.blogspot.com/">http://numishare.blogspot.com/</ref>.
+						<hi rend="bold">Bode Christoph (2011)</hi>: <hi rend="italic">“Theorietheorie als Praxis. Überlegungen zu einer Figur der Unhintergehbarkeit oder: Über eine Theorie-Praxis-Asymmetrie“</hi>. in: <hi rend="bold">Grizelj, Mario / Jahraus, Oliver (eds.)</hi>: 
+                        <hi rend="italic">Theorietheorie. Wider die Theoriemündigkeit in den Geisteswissenschaften</hi>. München: Fink, 79-94.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">E. Gruber / G. Bransbourg / S. Heath / A. Meadows (2014):</hi> 
-                        <hi rend="italic">Linking Roman Coins: Current Work at the American Numismatic Society</hi>, 
-                        in: 
-                        <hi rend="bold">G. Earle et al. (eds):</hi> 
-                        <hi rend="italic">Archaeology in the Digital Era</hi>: 
-                        Papers from the 40th Annual Conference of Computer Applications and Quantitative Methods in Archaeology (CAA), Southampton, 26-29 March 2012 (Amsterdam) 249–258.</bibl>
-                    <bibl>
-                        <hi rend="bold">E. Gruber / S. Heath / A. Meadows / D. Pett / D. Wigg-Wolf (2014):</hi> 
-                        <hi rend="italic">Semantic Web Technologies Applied to Numismatic Collections</hi>, 
-                        in: 
-                        <hi rend="bold">G. Earle et al. (eds):</hi> 
-                        <hi rend="italic">Archaeology in the Digital Era</hi>: 
-                        Papers from the 40th Annual Conference of Computer Applications and Quantitative Methods in Archaeology (CAA), Southampton, 26-29 March 2012 (Amsterdam) 264–274.</bibl>
-                    <bibl>Radnoti-Alföldi, M. (2006): Die Fundmünzen der römischen Zeit in Deutschland IV 3/2. Stadt und Reg.-Bez. Trier. Die Sog. Römerbauten (Mainz).</bibl>
-                    <bibl>
-                        <anchor xml:id="OLE_LINK1"/>
-                        <hi rend="bold">K. Tolle / D. Wigg-Wolf (2015):</hi> 
-                        <hi rend="italic">Uncertainty Handling for Ancient Coinage</hi>, 
-                        in: 
-                        <hi rend="bold">F. Giligny et al. (eds):</hi> 
-                        <hi rend="italic">CAA2014. 21st Century Archaeology. Concepts, Methods and Tools</hi>. 
-                        Proceedings of the 42nd Annual Conference on Computer Applications and Quantitative Methods in Archaeology (Oxford) 171–178.
+						<hi rend="bold">Boellstorff, Tom (2014)</hi>: <hi rend="italic">“Die Konstruktion von Big Data in der Theorie“</hi> in: <hi rend="bold">Reichert, Ramón (ed.)</hi>: 
+                        <hi rend="italic">Big data. Analysen zum digitalen Wandel von Wissen, Macht und Ökonomie.</hi> Bielefeld: transcript 105-131. 
+                        <ref target="http://dx.doi.org/10.14361/transcript.9783839425923">http://dx.doi.org/10.14361/transcript.9783839425923</ref> [letzter Zugriff am 24.08.2018].
                     </bibl>
                     <bibl>
-                        <hi rend="bold">K. Tolle / D. Wigg-Wolf (2016):</hi> 
-                        <hi rend="italic">How to Move from Relational to 5 Star Linked Open Data – A Numismatic Example</hi>, 
-                        in: 
-                        <hi rend="bold">S. Campana et al. (eds):</hi> 
-                        <hi rend="italic">CAA2015. Keep the Revolution Going</hi>. 
-                        Proceedings of the 43rd Annual Conference on Computer Applications and Quantitative Methods in Archaeology (Oxford 2016) 275–281.
+						<hi rend="bold">Boer, Laurens / Donovan Jared (2012)</hi>: <hi rend="italic">“Provotypes for Participatory Innovation”</hi> in: 
+                        <hi rend="italic">DIS 2012</hi>, 388-397.
+                        <ref target="https://www.researchgate.net/publication/254462007_Provotypes_for_participatory_innovation">https://www.researchgate.net/publication/254462007_Provotypes_for_<p>participatory_innovation</p></ref> [letzter Zugriff am 29.08.2018].
                     </bibl>
                     <bibl>
-                        <hi rend="bold">D. Wigg-Wolf / F. Duyrat (2017):</hi> 
-                        <hi rend="italic">La révolution des Linked Open Data en numismatique: Les exemples de nomisma.org et Online Greek Coinage</hi>. 
-                        Archéologies numériques 1.1, 2017.
+						<hi rend="bold">Cecire, Natalia (2011)</hi>: <hi rend="italic">“Introduction: Theory and the Virtues of Digital Humanites”</hi> in: 
+                        <hi rend="italic">Journal of Digital Humanities</hi> 1,1. 
+                        <ref target="http://journalofdigitalhumanities.org/1-1/who-you-calling-untheoretical-by-jean-bauer/">http://journalofdigitalhumanities.org/1-1/who-you-calling-untheoretical-by-jean-bauer/</ref> [letzter Zugriff am 29.08.2018].
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Culler, Jonathan D. (2011)</hi>: 
+                        <hi rend="italic">Literary theory. A very short introduction</hi>. Oxford: Oxford Univ. Press.
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Drucker, Johanna (2012)</hi>: <hi rend="italic">“Humanistic Theory and Digital Scholarship”</hi> in: <hi rend="bold">Gold, Matthew (ed.)</hi>: 
+                        <hi rend="italic">Debates in Digital Humanities.</hi> Minnesota: University of Minnesota Press. 
+                        <ref target="http://dhdebates.gc.cuny.edu/">http://dhdebates.gc.cuny.edu/</ref> [letzter Zugriff am 28.08.2018].
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Epple, Moritz (2016)</hi>: <hi rend="italic">“Analogien, Interpretationen, Bilder, Systeme und Modelle: Bemerkungen zur Geschichte abstrakter Repräsentationen in den Naturwissenschaften seit dem 19. Jahrhundert“</hi> in: <hi rend="bold">Axer, Eva / Geulen, Eva / Heimes, Alexandra (eds.)</hi>: 
+                        <hi rend="italic">Forum Interdisziplinäre Begriffsgeschichte</hi> 5, 1, 11-31. 
+                        <ref target="http://www.zfl-berlin.org/publikationen-detail/items/fib-5-jg-2016-1.html.html">http://www.zfl-berlin.org/publikationen-detail/items/fib-5-jg-2016-1.html.html</ref> [letzter Zugriff am 29.08.2018].
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Galey, Alan / Ruecker, Stan (2010)</hi>: <hi rend="italic">“How a Prototype Argues”</hi> in: 
+                        <hi rend="italic">Literary and Linguistic Computing </hi>25,3. doi:10.1093/llc/fqq021 [letzter Zugriff am 28.08.2018].
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Gansel, Christina (2017)</hi>: <hi rend="italic">“Prototypensemantik und Stereotypensemantik”</hi> in: <hi rend="bold">Staffeldt, Sven / Hagemann, Jörg (eds.)</hi>: 
+                        <hi rend="italic">Semantiktheorien: Lexikalische Analysen Im Vergleich.</hi> Tübingen: Stauffenburg, 77-96.
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Gold, Matthew (ed.) (2012)</hi>: 
+                        <hi rend="italic">Debates in Digital Humanities.</hi> Minnesota: University of Minnesota Press. 
+                        <ref target="http://dhdebates.gc.cuny.edu/">http://dhdebates.gc.cuny.edu/</ref> [letzter Zugriff am 28.08.2018].
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Grizelj, Mario / Jahraus, Oliver (eds.) (2011)</hi>: 
+                        <hi rend="italic">Theorietheorie. Wider die Theoriemündigkeit in den Geisteswissenschaften</hi>. München: Fink. 
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Gumbrecht, Hans Ulrich (2012)</hi>: 
+                        <hi rend="italic">Präsenz. </hi>Berlin: Suhrkamp. 
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Hacking, Ian ([1983] 1996)</hi>: 
+                        <hi rend="italic">Einführung in die Philosophie der Naturwissenschaften. </hi>Stuttgart: Reclam. 
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Hall, Gary (2012)</hi>: <hi rend="italic">“Has Critical Theory Run Out of Time for Data-Driven Scholarship”</hi> in: <hi rend="bold">Gold, Matthew (ed.)</hi>: 
+                        <hi rend="italic">Debates in Digital Humanities.</hi> Minnesota: University of Minnesota Press. 
+                        <ref target="http://dhdebates.gc.cuny.edu/">http://dhdebates.gc.cuny.edu/</ref> [letzter Zugriff am 28.08.2018].
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Hinrichs, Uta / Forlini, Stefania (2017)</hi>: <hi rend="italic">“In Defense of Sandcastles: Research Thinking trough Visualization in DH”</hi> in: 
+                        <hi rend="italic">Digital Humanities Conference 2017</hi>
+                        <ref target="https://dh2017.adho.org/abstracts/133/133.pdf">https://dh2017.adho.org/abstracts/133/133.pdf</ref> [letzter Zugriff am 28.08.2018].
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Houde, Stephanie / Hill, Charles (1997)</hi>: <hi rend="italic">“What do prototypes prototype?”</hi> in: <hi rend="bold">Helander M. / Landauer, T.K. / Prabhu P. (eds.)</hi>: 
+                        <hi rend="italic">Handbook of human-computer interaction</hi>. Amsterdam: Elsevier, 367-381.
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Jahraus, Oliver / Neuhaus, Stefan (eds.) (2002)</hi>: 
+                        <hi rend="italic">Kafkas "Urteil" und die Literaturtheorie. Zehn Modellanalysen.</hi> Stuttgart: Reclam.
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Jahraus, Oliver (2011)</hi>: <hi rend="italic">“Theorietheorie“</hi> in: <hi rend="bold">Grizelj, Mario / Jahraus, Oliver (eds.)</hi>: 
+                        <hi rend="italic">Theorietheorie. Wider die Theoriemüdigkeit in den Geisteswissenschaften</hi>. München: Fink 17-39.
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Jannidis, Fotis / Flanders, Julia (eds.). (2015)</hi>: 
+                        <hi rend="italic">Knowledge Organization and Data Modeling in the Humanities.</hi>
+                        <ref target="https://www.wwp.northeastern.edu/outreach/conference/kodm2012/flanders_jannidis_datamodeling.pdf">https://www.wwp.northeastern.edu/outreach/conference/kodm2012/flanders_jannidis_datamodeling.pdf</ref>. [letzter Zugriff am 28.08.2018].
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Jannidis, Fotis / Kohle, Hubertus / Rehbein Malte (eds.) (2017)</hi>: 
+                        <hi rend="italic">Digital Humanities. Eine Einführung.</hi> Stuttgart: Metzler. 
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Kath, Roxana / Schaal, Gary / Dumm, Sebastian (2015)</hi>: <hi rend="italic">“New Visual Hermeneutics”</hi> in: 
+                        <hi rend="italic">ZDL </hi>43,1, 27-51.
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Kleiber, Georges (1993)</hi>: 
+                        <hi rend="italic">Prototypensemantik. Eine Einführung.</hi> Tübingen: Narr. 
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Küpper, Joachim / Engell, Lorenz (eds.) (2013)</hi>: 
+                        <hi rend="italic">The beauty of theory. Zur Ästhetik und Affektökonomie von Theorien.</hi> München 2013.
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Köppe, Tilmann / Winko, Simone (2013)</hi>: 
+                        <hi rend="italic">Neuere Literaturtheorien. Eine Einführung.</hi> Stuttgart: Metzler.
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Lauer, Gerhard (2013)</hi>: <hi rend="italic">“Die digitale Vermessung der Kultur Geisteswissenschaften als Digital Humanities“</hi> in: <hi rend="bold">Geiselberger, Heinrich / Moorstedt, Tobias (eds.)</hi>: 
+                        <hi rend="italic">Big Data. Das neue Versprechen der Allwissenheit.</hi> Berlin: Suhrkamp, 99-116.
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Mainberger, Sabine (2003)</hi>: 
+                        <hi rend="italic">Die Kunst des Aufzählens.</hi> Berlin: de Gruyter. 
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Mogensen, Preben (1992)</hi>: <hi rend="italic">“Towards a Provotyping Approach in Systems Development”</hi> in: 
+                        <hi rend="italic">Scandinavian Journal of Information Systems</hi> 4, 31-53. 
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Nünning, Vera / Nünning, Ansgar (2010)</hi>: 
+                        <hi rend="italic">Methoden der literatur- und kulturwissenschaftlichen Textanalyse. Ansätze – Grundlagen – Modellanalysen</hi>. Stuttgart: Metzler.
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Ramsay, Stephen / Rockwell, Geoffrey (2012)</hi>: <hi rend="italic">“Developing Things: Notes toward an Epistemology of Building in the Digital Humanities”</hi> in: <hi rend="bold">Gold, Matthew (ed.)</hi>: 
+                        <hi rend="italic">Debates in Digital Humanities.</hi> Minnesota: University of Minnesota Press. 
+                        <ref target="http://dhdebates.gc.cuny.edu/">http://dhdebates.gc.cuny.edu/</ref> [letzter Zugriff am 28.08.2018].
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Ritter, Joachim / Gründer Karlfried (eds.) (1998)</hi>: 
+                        <hi rend="italic">Historisches Wörterbuch der Philosophie.</hi> Darmstadt: Wissenschaftliche Buchgesellschaft. 
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Rosch, Eleanor (1975)</hi>: <hi rend="italic">“Cognitive Reference Points”</hi> in: 
+                        <hi rend="italic">Cognitive Psychology</hi> 7, 532-547. 
+                        <ref target="https://doi.org/10.1016/0010-0285(75)90021-3">https://doi.org/10.1016/0010-0285(75)90021-3</ref> [letzter Zugriff am 28.08.2018].
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Ruecker, Stan (2015)</hi>: <hi rend="italic">“A Brief Taxonomy of Prototypes for the Digital Humanities”</hi> in: 
+                        <hi rend="italic">Scholarly and Research Communication</hi> 6, 2. 
+                        <ref target="https://doi.org/10.22230/src.2015v6n2a222">https://doi.org/10.22230/src.2015v6n2a222</ref> [letzter Zugriff am 28.08.2018].
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Ruecker, Stan / Scaletsky, Celso / Meyer, Guilherme / Michura, Piotr (unbekannt)</hi>: Eintrag “Prototype” in: 
+                        <hi rend="italic">MLA Commons. Digital Pedagogy in the Humanities. Concepts, Models, and Experiments</hi>
+                        <ref target="https://digitalpedagogy.mla.hcommons.org/keywords/prototype/">https://digitalpedagogy.mla.hcommons.org/keywords/prototype/</ref> [letzter Zugriff am 28.08.2018].
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Saar, Martin (2013)</hi>: <hi rend="italic">“Kritik und Affekt. Nietzsches Textpolitik“</hi> in: <hi rend="bold">Küpper, Joachim / Engell, Lorenz (eds.)</hi>: 
+                        <hi rend="italic">The beauty of theory. Zur Ästhetik und Affektökonomie von Theorien</hi>. München: Fink, 47-57.
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Schaub, Mirjam (2010)</hi>:
+                        <hi rend="italic" xml:space="preserve"> Das Singuläre und das Exemplarische. Zu Logik und Praxis in Philosophie und Ästhetik.</hi> Zürich: diaphanes. 
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Scheinfeldt, Tom (2012)</hi>: <hi rend="italic">“Why Digital Humanities Is “Nice”</hi> in: <hi rend="bold">Gold, Matthew (ed.)</hi>: 
+                        <hi rend="italic">Debates in Digital Humanities.</hi> Minnesota: University of Minnesota Press. 
+                        <ref target="http://dhdebates.gc.cuny.edu/">http://dhdebates.gc.cuny.edu/</ref> [letzter Zugriff am 28.08.2018].
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Seebold, Elmar (ed.) (2011)</hi>: 
+                        <hi rend="italic">Kluge. Etymologisches Wörterbuch der deutschen Sprache.</hi> Berlin: de Gruyter.
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Stachowiak, Herbert (1992)</hi>: <hi rend="italic">“Modell”</hi> in: <hi rend="bold">Seiffert, Helmut / Radnitzky, Gerard (eds.)</hi>: 
+                        <hi rend="italic">Handlexikon zur Wissenschaftstheorie</hi>. München: Ehrenwirth, 219-222.
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Wellbery, David (ed.) (1985)</hi>: 
+                        <hi rend="italic">Positionen der Literaturwissenschaft. Acht Modellanalysen am Beispiel von Kleists ‚Das Erdbeben von Chili‘</hi>. München: Beck. 
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Wirth, Uwe (2013)</hi>: <hi rend="italic">“Der will bloß spielen! Der Dilettant und die schöne Theorie“</hi> in: <hi rend="bold">Küpper, Joachim / Engell, Lorenz (eds.)</hi>: 
+                        <hi rend="italic">The beauty of theory. Zur Ästhetik und Affektökonomie von Theorien</hi>. München: Fink, 137-148.
+                    </bibl>
+                    <bibl>
+						<hi rend="bold">Wittgenstein, Ludwig ([1945], 1984)</hi>: 
+                        <hi rend="italic">Philosophische Untersuchungen</hi>. Bd. 1. Werkausgabe. Frankfurt: Suhrkamp.
                     </bibl>
                 </listBibl>
             </div>

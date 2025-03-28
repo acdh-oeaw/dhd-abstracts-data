@@ -1,48 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="113_final-MANDL_Thomas_Herausforderungen_für_die_Klassifikation_histor" xmlns="http://www.tei-c.org/ns/1.0" >
+<TEI xml:id="273_final-KISSINGER_Timo_Nomisma_org__Numismatik_und_das_Semantic_Web" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="full">
-                    <title type="main">Herausforderungen für die Klassifikation historischer Buchillustrationen.</title>
-                    <title type="sub"> Überlegungen am Beispiel retrodigitalisierter Kinder- und Jugendsachbücher des 19. Jahrhunderts</title>
-                </title>
+                <title>Nomisma.org: Numismatik und das Semantic Web</title>
                 <author>
                     <persName>
-                        <surname>Helm</surname>
-                        <forename>Wiebke</forename>
+                        <surname>Wigg-Wolf</surname>
+                        <forename>David</forename>
                     </persName>
-                    <affiliation>Universität Leipzig, Deutschland</affiliation>
-                    <email>wiebke.helm@uni-leipzig.de</email>
+                    <affiliation>Römisch-Germanische Kommission des Deutschen Archäologischen Instituts</affiliation>
+                    <email>david.wigg-wolf@dainst.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Im</surname>
-                        <forename>Chanjong</forename>
+                        <surname>Tolle</surname>
+                        <forename>Karsten</forename>
                     </persName>
-                    <affiliation>Universität Hildesheim, Deutschland</affiliation>
-                    <email>imchan@uni-hildesheim.de</email>
+                    <affiliation>Johann Wolfgang Goethe-Universität Frankfurt am Main</affiliation>
+                    <email>tolle@dbis.cs.uni-frankfurt.de</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Mandl</surname>
-                        <forename>Thomas</forename>
+                        <surname>Kissinger</surname>
+                        <forename>Timo</forename>
                     </persName>
-                    <affiliation>Universität Hildesheim, Deutschland</affiliation>
-                    <email>mandl@uni-hildesheim.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Schmideler</surname>
-                        <forename>Sebastian</forename>
-                    </persName>
-                    <affiliation>Universität Leipzig, Deutschland</affiliation>
-                    <email>sebastian.schmideler@uni-leipzig.de</email>
+                    <affiliation>Akademie der Wissenschaften und der Literatur | Mainz, Deutschland</affiliation>
+                    <email>Timo.Kissinger@adwmainz.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2019-01-10T21:13:00Z</date>
+                    <date>2018-10-15T08:39:00Z</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -71,19 +60,20 @@
                     <term>Paper</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="subcategory">
-                    <term>Posterpräsentation</term>
+                    <term>Vortrag</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="keywords">
-                    <term>Distant Viewing</term>
-                    <term>Bildverarbeitung</term>
-                    <term>Klassifikation</term>
-                    <term>Stilmotrie</term>
-                    <term>Objekterkennung</term>
+                    <term>Linked Open Data</term>
+                    <term>Numismatik</term>
+                    <term>Archäologie</term>
                 </keywords>
                 <keywords scheme="ConfTool" n="topics">
-                    <term>Inhaltsanalyse</term>
-                    <term>Stilistische Analyse</term>
-                    <term>Bilder</term>
+                    <term>Modellierung</term>
+                    <term>Daten</term>
+                    <term>Methoden</term>
+                    <term>Forschung</term>
+                    <term>texttragende Gegenstände</term>
+                    <term>Werkzeuge</term>
                 </keywords>
             </textClass>
         </profileDesc>
@@ -91,155 +81,207 @@
     <text>
         <body>
             <div type="div1" rend="DH-Heading1">
-                <head>Zusammenfassung</head>
-                <p style="text-align:left; ">Die maschinelle Verarbeitung einer großen Anzahl von Abbildungen eröffnet unter anderem für Forschungen im Bereich der Kunstgeschichte neue Chancen. Obwohl eine Vielzahl von Buchillustrationen bereits digitalisiert vorliegt, werden diese in den Digital Humanities bisher noch wenig beachtet. Das „Distant Viewing“-Verfahren soll es ermöglichen, nach Ähnlichkeiten von Bildern zu suchen oder Bildinhalte mittels Objekterkennung zu identifizieren. Der folgende Beitrag stellt grundlegende technische Herausforderungen ins Zentrum, die sich bei der automatischen Klassifikation von Illustrationen in einem Korpus von historischen Kinder- und Jugendbüchern des 19. Jahrhunderts ergeben haben. Neben der genauen Lokalisierung, also dem Erkennen der Lage von Illustrationen auf einer Buchseite erwies sich die korrekte Bestimmung einzelner Bildobjekte als schwierig. Für die Objekterkennung stehen zwar derzeit leistungsfähige Systeme zur Verfügung, doch wurden diese mit Fotografien natürlicher Objekte optimiert, wodurch sie sich nur bedingt für die Anwendung auf die im 19. Jahrhundert vorherrschenden Drucktechniken oder die präzise Zuweisung von fiktionalen Bildinhalten eignen. Eine weitere Schwierigkeit ergab sich durch die unterschiedlichen Formate, in denen Illustrationen angelegt sind. Tafelbilder oder Abbildungen im Text können gerahmt sein oder fließende Übergänge aufweisen und Ornamente oder Textbausteine enthalten. Darüber hinaus können auch in Initialen und ornamentalen Schmuckleisten weitere Bildmotive vorkommen. Nachfolgend sollen die Herangehensweisen an die genannten Herausforderungen umrissen, Testergebnisse diskutiert und Lösungsansätze vorgeschlagen werden.</p>
+                <head>Einführung</head>
+                <p>In diesem Beitrag wird eine domänenspezifische Anwendung von Linked Open Data und Ontologien vorgestellt, die als Paradigma für den Umgang mit digitalen Corpora in der Archäologie dienen kann. Zunächst wird die Entwicklung des Projektes Nomisma.org sowie dessen Anwendung für die Verlinkung von digitalen Datenbeständen erläutert. In einem zweiten Teil wird ein Pilotprojekt vorgestellt, das darauf abzielt, textbasierte Münzpublikationen als RDF zur Verfügung zu stellen und somit prüft, inwieweit das Vokabular und die Ontologie von Nomisma.org eingesetzt werden können.</p>
+                <p>Das 2010 von der American Numismatic Society, New York, initiierte Projekt 
+                Nomisma.org<hi rend="superscript">1</hi> definiert und stellt stabile digitale Repräsentationen numismatischer Konzepte nach den Prinzipien von Linked Open Data zur Verfügung. Sie werden als http-URIs 
+                veröffentlicht<hi rend="superscript">2</hi>, die Zugang zu weiterverwertbaren Informationen zu den Konzepten liefern, dazu noch Links zu weiteren Linked Open Data-Ressourcen (Getty Vocabularies, wikidata, viaf, GND, u.v.m.). Ferner wurde eine numismatische 
+                Ontologie<hi rend="superscript">3</hi> entwickelt, die den Bedürfnissen und Arbeitsweisen der Numismatik gerecht ist und eine unkomplizierte Modellierung ermöglicht. Das kanonische Format von Nomisma.org ist RDF/XML, aber auch weitere Formate wie JSON-LD (für Geodaten geoJASON-LD), Turtle, KML und HTML5+RDFa 1.1. werden bedient.
+                </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p style="text-align:left; ">Die Digital Humanities entwickeln sich kontinuierlich weiter und verarbeiten längst nicht mehr nur ausschließlich Texte (Kohle 2013). Doch widmen sich nur wenige Studien der massenhaften Analyse von Abbildungen, was unter anderem auf die innerhalb der (kunstgeschichtlichen) Forschungscommunity bestehenden Vorbehalte und Kontroversen, inwieweit digitale Unterstützung das Selbstverständnis der Disziplinen verändert, zurückzuführen ist. </p>
-                <figure>
-                    <graphic n="1001" width="16.002cm" height="10.516305555555556cm" url="113_final-69f554f8c9790bdddade060169db65c0.png" rend="inline"/>
-                    <head>Abbildung aus Körner, Friedrich (Hrsg.): Das Buch der Welt: Wanderungen nach Nord und Süd, Ost und West, zu den Wohnstätten der Gesittung und den Bewohnern der Wildniß. Bd. 1: Die alte Welt, Leipzig: Spamer 1855: 101; urn:nbn:de:gbv:084-18938</head>
-                </figure>
-                <p style="text-align:left; ">Die automatische Erkennung von Objekten auf Abbildungen bietet ein nicht zu unterschätzendes Potential für künftige Forschungsvorhaben, kann doch mithilfe von Software ein weitaus größerer Korpus von Bildern untersucht werden als es dem menschlichen Betrachter allein möglich ist. Beispielsweise können so Analysen zur Häufigkeit von Objekten oder quantitative Erkenntnisse zur Motiv-Geschichte einer bestimmten Illustration in größerem Umfang durchgeführt werden. </p>
-                <p style="text-align:left; ">Die Verbreitung von visuellem Material erlebte im 19. Jahrhundert einen rasanten Anstieg. Die Zunahme von Wissen vermittelnden Illustrationen in Kinder- und Jugendsachbüchern jener Epoche bildet diesen Prozess, der die Popularisierung von neuen Erkenntnissen und Entdeckungen beförderte, eindrücklich ab (vgl. Ries 1992, Schmideler 2014). Das Bildmaterial dieser Publikationen bietet daher eine ideale Voraussetzung für die Erforschung von Illustrationen mit Hilfe digitaler Methoden.</p>
-                <figure>
-                    <graphic n="1002" width="14.061722222222222cm" height="10.786544444444445cm" url="113_final-5b3a40517f439586fbaf8fea1270c41f.png" rend="inline"/>
-                    <head>Abbildung aus Voltz, Johann Michael (Ill.) (1815): Bilderbogenbuch, Nürnberg: Campe; 
-                        <ref target="https://nbn-resolving.org/urn:nbn:de:gbv:084-12012713339">urn:nbn:de:gbv:084-12012713339</ref>
-                    </head>
-                </figure>
-                <p style="text-align:left; ">In den vergangenen Jahren wurden verschiedene Werkzeuge zur Klassifikation von Objekten in Abbildungen entwickelt und optimiert. Vor allem Ansätze aus Deep Learning Prozessen trugen dazu bei, für die Bilderkennung relevante Merkmale von Bildmotiven in Abhängigkeit von der Aufgabenstellung selbstständig herauszufiltern. Hier sind es insbesondere die aus mehreren Schichten bestehenden neuronalen Netzwerke (Convolutional Neural Networks, CNNs) (Krig 2016), die bei vielen Benchmarks hervorragende Werte aufweisen. Auf CNNs basieren auch die im Projekt getesteten Werkzeuge Yolo und SDS, die per Download installiert und lokal genutzt werden können. Sie sind auf Fotografien trainiert, können zahlreiche Arten von Objekten erkennen und weisen die untersuchten Objekte durch eine Markierung, ein Rechteck, aus (z.B. Redmon et al. 2016).</p>
+                <head>Virtuelle Sammlungen</head>
+                <p>Zunächst lag der Schwerpunkt der Arbeit von Nomisma.org bei der römischen Numismatik und bis 2016 erfolgte die Onlinestellung der Linked Open Data-Ressourcen 
+                    <hi rend="italic">Coinage of the Roman Republic Online</hi> 
+                    (CRRO)<hi rend="superscript">4</hi> und 
+                    <hi rend="italic">Online Coins of the Roman Empire</hi> 
+                    (OCRE)<hi rend="superscript">5</hi> als virtuelle Münzsammlungen für die Prägungen der römischen Republik und der Kaiserzeit. Die Abfrage erfolgt über RDF Dumps der Projektpartner, die zentral gehalten werden; die dazugehörigen Bilder werden on-the-fly von den Servern der Partner geholt, wodurch nicht nur das Volumen der zentralen Datenhaltung gering gehalten und die Abfragegeschwindigkeit erhöht, sondern auch eventuelle rechtliche Probleme bei der Lizenzierung der Bilder vermieden werden.
+                </p>
+                <p>Mittlerweile befassen sich erste Projekte auch mit dem disparaten und weitaus komplexeren Stoff der griechischen 
+                Welt,<hi rend="superscript">6</hi> z.B. 
+                    <hi rend="italic">PELLA</hi> für die Prägungen der makedonischen Dynastie der Argeaden, 
+                    <hi rend="italic">Corpus Nummorum Thracorum</hi> für Thrakien, oder 
+                    <hi rend="italic">Seleucid Coins Online</hi> für die Prägungen der Seleukiden. Des Weiteren haben Arbeitsgruppen bereits angefangen, die notwendigen Konzepte für die keltische und islamische Numismatik sowie für das Mittelalter zu definieren.
+                </p>
+                <p>Fast 200.000 antike Münzen von insgesamt 39 Institutionen werden heute in auf Nomisma.org basierenden Online-Ressourcen veröffentlicht.<hi rend="superscript">7</hi> Aktiv an der Entwicklungen beteiligt sind u.a. das Institute for Studies of the Ancient World, New York, das Deutsche Archäologische Institut sowie vier der weltweit bedeutendsten Münzsammlungen: Die American Numismatic Society, das British Museum, die Bibliothèque nationale de France und das Münzkabinett der Staatlichen Museen zu Berlin. Auch eine Reihe kleinerer Sammlungen sind dabei ihre Bestände in Portalen wie OCRE und CRRO online zu stellen. Darunter schon acht der 34 deutschen universitären Sammlungen, die Mitglieder im 
+                    <hi rend="italic">NUMiD</hi>-Verbund 
+                    (<hi rend="italic">Netzwerk universitärer Münzsammlungen in Deutschland</hi>)<hi rend="superscript">8</hi> sind.
+                </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Fragestellungen zu Illustrationen aus der DH-Forschung</head>
-                <p style="text-align:left; ">Innerhalb der Digital Humanities beschäftigen sich, wie eingangs erwähnt, nur wenige Forschungsprojekte mit Fragestellungen zu Illustrationen. Aufsehen erregte die erfolgreiche Klassifikation von zahlreichen Gemälden nach Künstler und Genre, bei der neuronale Netzwerke eingesetzt wurden (Saleh / Elgammal 2015).</p>
-                <p style="text-align:left; ">In einem weiteren Ansatz wurde versucht, der Stil und der Inhalt von Gemälden zu trennen, um den Stil eines Künstlers auf andere Inhalte übertragen zu können (Gatys et al. 2015). Die Studie erlaubt allerdings nur eine subjektive Bewertung der Ergebnisse. </p>
-                <p style="text-align:left; ">Tiefergehende, auf Algorithmen gesteuerte Analysen wie in der Studie von Yarlagadda et al. (2013) versuchen auf einer Illustration die Geste einer Person zu erkennen, um daraus Rückschlüsse auf den damit verbundenen Rechtsakt eines Herrschers ziehen zu können.</p>
-                <p style="text-align:left; ">Ein von der Projektgruppe erstellter Korpus von illustrierten Kinder- und Jugendsachbüchern des 19. Jahrhunderts repräsentiert einen Ausschnitt von verschiedenen Reproduktionsverfahren, die im Untersuchungszeitraum zur Herstellung von Buchillustrationen zur Anwendung kamen. Der Fokus wurde auf einige wenige ausgewählte Druckverfahren - Holzstich, Kupferstich und Feder- bzw. Kreidelithographie - gelegt. Es wurde ein System zur automatischen Klassifizierung dieser Verfahren erstellt, das allerdings noch kein zufriedenstellendes Ergebnis liefern konnte (Im et al. 2018). </p>
+                <head>Die verlinkte Antike</head>
+                <p>Nomisma.org und die darauf bauenden Projekte sind in die Linked Open Data-Welt der Antike fest integriert. Mit Nomisma.org verlinkte, bzw. gemappte Münzen werden bei Ressourcen wie 
+                    <hi rend="italic">Pleiades</hi><hi rend="superscript">9</hi> und 
+                    <hi rend="italic">Pelagios</hi><hi rend="superscript">10</hi> angezeigt und umgekehrt können Einträge in den virtuellen Sammlungen mit kontextvermittelnden Daten aus anderen Quellen angereichert werden. Beispielsweise: Wird Literatur in der Form von iDAI.bibliographie / 
+                    ZENON<hi rend="superscript">11</hi> URIs zitiert, können umgekehrt in Zenon Verweise auf Münzen beim entsprechenden Titel angezeigt werden. Im Abschlussbericht des Work Package 15 des EU-FP7 Projektes ARIADNE wurde Nomisma.org mehrfach als führendes Beispiel für die fachspezifische Anwendung von Linked Open Data zitiert (Geser 2016).
+                </p>
+                <p>Nomisma.org hat numismatische Daten auf eine Weise digital zur Verfügung gestellt, die vor 10 Jahren kaum vorstellbar gewesen wäre und macht einen bedeutenden Bestand an Material der Forschung leichter zugänglich. Durch die Verlinkung mit anderen LOD-Ressourcen sind diese Daten auch deutlich sichtbarer und stehen damit für Forschungsvorhaben in anderen Disziplinen vermehrt zur Verfügung. So kann Nomisma.org beispielsweise einen wichtigen Beitrag zur Aufhebung der immer noch weit verbreiteten Isolation der Numismatik in den Altertumswissenschaften leisten, eine Isolation, die in der (bisher oft fehlenden) Zusammenarbeit mit der Archäologie besonders deutlich erkennbar ist.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Herausforderungen und Lösungsansätze </head>
-                <p style="text-align:left; ">Werkzeuge zur Bilderkennung sollten zur korrekten Identifikation von Objekten bei einer großen Anzahl von Illustrationen führen. Aber wie verhält sich beispielsweise auf Fotografien trainierte Software bei der Anwendung auf Illustrationen, die in einer davon abweichenden reprografischen Technik angefertigt wurden und/oder weniger bekannte beziehungsweise untypische Bildobjekte ausweisen? </p>
-                <p style="text-align:left; ">Bei einem Test an ca. 200 illustrierten historischen Kinderbüchern aus der retrodigitalisierten Kollektion des Sammlers Karl Hobrecker - digital bereitgestellt von der UB der TU Braunschweig - wurden alle als Bild erkannten Objekte mit dem Tool Yolo untersucht. Das Analyseergebnis machte deutlich, dass die Qualität des Werkzeuges zur Objekterkennung derzeit noch nicht ausreicht, um Bildmotive mit hoher Wahrscheinlichkeit für eine größere Kollektion zu verfolgen, da der Domain-Shift von Fotos zu Illustrationen zu einer Verschlechterung der Erkennungsleistung führt. Diese könnte durch umfangreiche Lerndaten verbessert werden, doch scheint dies keine tragfähige Lösung für Forschungsarbeiten im Rahmen der Digital Humanities zu sein, da selten einfache Objekte im Vordergrund stehen, sondern in der Regel Kompositionen oder komplexe Bildstrukturen sowie fiktionale Motive vorliegen. Somit kann die eindeutige Deklaration von Einzelmotiven lediglich der Klärung von Zwischenfragen im Verlauf eines Forschungsprozesses dienen. Auch aus Kostengründen können oftmals keine neuen Trainingsmengen für heterogene Fragestellungen erzeugt werden. Deshalb bietet sich das Nachtrainieren von bereits an Fotografien optimierten Systemen wie VGG-19 oder GoogleNet an. </p>
-                <p style="text-align:left; ">Von Problemen bei der Erkennung von Objekten in Gemälden berichten beispielsweise auch Crowley und Zisserman (2016), welche ein CNN-Erkennungssystem auf Kunstwerke des 19. und 20. Jahrhunderts angewendet haben. Sehr kleine Objekte wie zum Beispiel winzige Tiere oder Flugzeuge im Bildhintergrund wurden kaum erkannt. Erst die Entwicklung eines zweistufigen Verfahrens führte zu verbesserten Ergebnissen. </p>
-                <p style="text-align:left; ">In der Wissen vermittelnden Literatur - in Fachbüchern ebenso wie in populärwissenschaftlicher Literatur oder Kinder- und Jugendsachbüchern des 19. Jahrhunderts - werden Tiere teils in ungewöhnlichen Perspektiven dargestellt, die sich so nicht auf Fotos wiederfinden. Beispielsweise wird eine Fledermaus in der Draufsicht mit ausgestreckten Flügeln gezeigt. Auch werden Tiere selten in einem realistischen Größenverhältnis wiedergegeben. Das kann u.a. kompositionspragmatische Gründe haben. Somit ist das implizite Wissen eines vortrainierten Klassifikationssystems über Größen von Tieren in diesem Fall nicht weiterführend. </p>
-                <p style="text-align:left; ">Die genutzte vortrainierte Version von Yolo eignet sich für die Erkennung von ca. 9.000 Klas-sen. Davon wurden in 1.891 Abbildungen aus 168 Titeln mit ca. 16.000 Seiten der digitalen Hobrecker-Kollektion insgesamt 4.600 Objekte aus 200 Klassen erkannt. Die häufigsten zeigt die nachfolgende Tabelle.</p>
-                <table rend="rules">
-                    <row>
-                        <cell rend="left">Objekt</cell>
-                        <cell rend="left">Anzahl</cell>
-                    </row>
-                    <row>
-                        <cell rend="left">Person</cell>
-                        <cell rend="left">1.932</cell>
-                    </row>
-                    <row>
-                        <cell rend="left">Organism</cell>
-                        <cell rend="left">248</cell>
-                    </row>
-                    <row>
-                        <cell rend="left">Artefact</cell>
-                        <cell rend="left">188</cell>
-                    </row>
-                    <row>
-                        <cell rend="left">Living thing</cell>
-                        <cell rend="left">160</cell>
-                    </row>
-                    <row>
-                        <cell rend="left">Entertainer</cell>
-                        <cell rend="left">129</cell>
-                    </row>
-                    <row>
-                        <cell rend="left">Animal</cell>
-                        <cell rend="left">120</cell>
-                    </row>
-                    <row>
-                        <cell rend="left">Worker</cell>
-                        <cell rend="left">117</cell>
-                    </row>
-                    <row>
-                        <cell rend="left">Bird</cell>
-                        <cell rend="left">112</cell>
-                    </row>
-                    <row>
-                        <cell rend="left">Horse</cell>
-                        <cell rend="left">96</cell>
-                    </row>
-                </table>
-                <p>Tabelle: Frequenz der am häufigsten erkannten Bildobjekte mit Yolo</p>
-                <p style="text-align:left; ">Es ist geplant, die Bilder zu einzelnen Klassen einer Inspektion zu unterziehen, um so einen Einblick in die Qualität der Klassifikation zu gewinnen.</p>
-                <p style="text-align:left; ">In Kinderbüchern treten häufig anthropomorphisierte Tierfiguren auf, die den mit Fotografien trainierten Algorithmen nicht bekannt sind. Moderne Objekte wie Autos oder Baseball-Schläger werden hingegen gut erkannt, sie sind aber irrelevant für historische Illustrationen. Andererseits können Treffer in solchen Klassen als Fehler betrachtet werden, die bei der Verbesserung und Weiterentwicklung der Werkzeuge helfen können.</p>
-                <p style="text-align:left; ">Die Erkennung von Objekten in Buchillustrationen birgt aber über die bereits genannten noch weitere technische Herausforderungen. In den digitalisierten Bibliotheksbeständen können Illustrationen durch Werkzeuge der Schrifterkennung identifiziert und ihre Position ausgezeichnet werden. Bei der Hobrecker-Kollektion wie auch bei einzelnen Buchdigitalisaten aus anderen Institutionen zeigte sich aber, dass diese Auszeichnung zu ungenau ist und häufig nicht die notwendige Qualität erreicht. Darum muss die Identifikation von Illustrationen einer Buchseite zunächst technisch gelöst werden. Dafür hat sich der Einsatz von CNNs bewährt. Kleinere Trainingsmengen sind in diesem Fall ausreichend, wie beispielsweise eine Data Challenge alter Handschriften belegt, aufgrund derer die Erkennung unterschiedlicher Inhaltsbereiche verbessert werden konnte (Mehri et al. 2017). </p>
-                <p style="text-align:left; ">Eine weitere Herausforderung stellt bereits der Aufbau einer Trainingsmenge zur Erkennung von Abbildungen auf digitalisierten Buchseiten dar: So werden beispielsweise rechteckige Abbildungen mit und ohne Rahmen getrennt in zwei Klassen erfasst. Doch treten auch Abbildungen auf, die kein einfaches quadratisches Format aufweisen, wie die nachstehenden beiden Abbildungen belegen. </p>
-                <figure>
-                    <graphic n="1003" width="12.522880555555556cm" height="11.36473611111111cm" url="113_final-163f8eac5ae7c070ec77fefe7d054f56.png" rend="inline"/>
-                    <head>Abbildung aus Braun, Ferdinand: Braun, Ferdinand: Der junge Mathematiker und Naturforscher : Einführung in die Geheimnisse der Zahl und Wunder der Rechenkunst ; eine Anleitung zu aufmerksamer Naturbetrachtung, begleitet von zahlreichen Aufgaben zur Uebung des Urtheils und der Anschauung, Leipzig: Spamer 1876: 259; urn:nbn:de:gbv:084-14052311261</head>
-                </figure>
-                <p style="text-align:left; ">Eine weitere Schwierigkeit bei der Klassifikation von Bildern in retrodigitalisierten Kinder- und Jugendsachbüchern des 19. Jahrhunderts stellen doppelseitige oder faltbare Bildseiten dar. Für deren automatische Erfassung ist ein zusätzlicher Arbeitsschritt notwendig, der je zwei Druckseiten zusammenfasst und prüft, ob es sich um ein doppelseitiges Bild handelt, da die Auszeichnung der digitalen Daten auch hierzu keine Anhaltspunkte liefert. </p>
-                <p style="text-align:left; ">Bei der automatischen Bilderkennung von Buchillustrationen ist der ornamentale Schmuck, der die Ränder der Buchseiten ziert oder die Abbildungen rahmt, ebenfalls zu berücksichtigen, da auf diese Weise nicht nur Aussagen zur Verbreitung von Bildmotiven erfasst werden. Auch für Fragen zur Stilistik von Bildern erweist sich dieses Element als relevant. Eher selten kommen in der untersuchten Kollektion gestaltete Initialen vor. Hierbei handelt es sich um farbig abgehobene Buchstaben (Lombarden) oder um künstlerisch aufwändig gestaltete Initialen (z.B. Figureninitiale). Gerade letztgenannte Bildelemente sollten einbezogen werden, da sie beispielsweise in ABC-Büchern eine wichtige Funktion bei der Wissensvermittlung übernehmen.</p>
-                <figure>
-                    <graphic n="1004" width="10.715625cm" height="15.689791666666666cm" url="113_final-db49fc008afa81d92f2179ee2be6b2da.png" rend="inline"/>
-                    <head>Coverabbildung von Hoffmann, Franz (1873): Land- und See-Bilder in Erzählungen für die reifere Jugend: Zwei Theile in einem Bande, Stuttgart: Schmidt und Spring; https://nbn-resolving.org/urn:nbn:de:gbv:084-14110314057</head>
-                </figure>
-                <figure>
-                    <graphic n="1005" width="16.002cm" height="6.674555555555555cm" url="113_final-11ef448054883ca67ac0ab0fcae195ae.png" rend="inline"/>
-                    <head>Personifizierter Buchstabe. Abbildung aus: Das allergrösste Bilder-ABC, Berlin: Winckelmann [1828]; 
-                        <ref target="https://nbn-resolving.org/urn:nbn:de:gbv:084-13932">urn:nbn:de:gbv:084-13932</ref>
-                    </head>
-                </figure>
+                <head>Fundmünzen und Archäologie</head>
+                <p>Konzentrierten sich Projekte wie OCRE und PELLA zunächst auf die Präsentation von Münzen aus öffentlichen Sammlungen, richtet sich der Blick mittlerweile zunehmend auf Münzen im archäologischen Kontext. Nomisma.org kompatible Standards für die Aufnahme und Veröffentlichung von Münzen aus Ausgrabungen wurden bei einem Treffen an der University of Oxford im September 2018 vereinbart, um Re-use und Interoperabilität zu 
+                ermöglichen.<hi rend="superscript">12</hi>
+                </p>
+                <p>Nationale Projekte wie 
+                    <hi rend="italic">NUMIS</hi><hi rend="superscript">13</hi> für die Niederlande oder das 
+                    <hi rend="italic">Inventar der Fundmünzen der Schweiz</hi><hi rend="superscript">14</hi> veröffentlichen umfangreiche Bestände an Fundmünzen im Web, die aber nur über das jeweilige nationale Portal zugänglich sind. Eine länderübergreifende Abfrage ist nicht möglich. Eine Ausnahme bietet das Projekt
+                    <hi rend="italic" xml:space="preserve"> Antike Fundmünzen in Europa</hi><hi rend="superscript">15</hi>, das die Datenbanken der Römisch-Germanischen Kommission in Frankfurt und des Unternehmens 
+                    <hi rend="italic">Finds of Roman Coins in Poland</hi> auf das Vokabular und die Ontologie von Nomisma.org mappt und mittels eines D2R-Servers als RDF online stellt. Ein SPARQL-Endpoint ermöglicht die gemeinsame Abfrage der beiden Datenbestände und erleichtert damit die Analyse der Fundmünzen aus einem von der Nordsee bis zur Ukraine reichenden Raum.
+                </p>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Ausblick</head>
-                <p style="text-align:left; ">Wichtig für den zukünftigen Einsatz von „Distant Viewing“-Verfahren ist die Entwicklung von Evaluierungskonzepten, die stärker auf die Arbeitsweise und Bedarfe der Digital Humanities ausgerichtet sind und sich nicht nur an den Bewertungsmaßstäben der Bildverarbeitung orientieren. Zudem müssen geeignete Benutzungsoberflächen entwickelt werden, die den Umgang mit Ergebnissen erleichtern und Möglichkeiten zur Interaktion anbieten. Auf diese Weise könnten fehlklassifizierte Bilder sehr schnell und einfach von kompetenten Bildbetrachtern identifiziert und deren Informationen zur Verbesserung bestehender Systeme beitragen. Somit sind die vorgestellten Fehlklassifikationen der automatischen Bilderkennung nicht ausschließlich als Negativkriterium zu bewerten, sondern vielmehr als eine Chance zur Weiterentwicklung des „Distant Viewing“-Verfahrens wahrzunehmen. </p>
+                <head>Text zu RDF: Erster Versuch einer Digitalisierung</head>
+                <p>Bisher lag der Schwerpunkt der Verlinkung mit bzw. Mapping auf Nomisma.org auf in Datenbanken gehaltene Daten. In diesem Beitrag soll abschließend ein Pilotprojekt vorgestellt werden, das sich mit den Möglichkeiten der Anwendung von Nomisma.org auf textbasierte Datenbestände beschäftigt.</p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Grundlage</head>
+                    <p>Das Projekt „Fundmünzen der römischen Zeit in Deutschland“ (FMRD) brachte 48 Bände mit weit über 300.000 erfassten Fundmünzen heraus. Im Rahmen eines Praxisprojektes im Studiengang „Digitale Methodik in den Geistes- und 
+                    Kulturwissenschaften“<hi rend="superscript">16</hi> wurde als Beispieldatensatz aus FMRD der Fundkomplex Domgrabung/Liebfrauen-Areal in Trier mit 1.157 Münzen digitalisiert (M. Radnoti-Alföldi 2006: 119–206).
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Das Verfahren</head>
+                    <p>Die Daten zu den Münzen wurden aus dem PDF in CSV und XML extrahiert und in ein RDF-Dokument umgewandelt, um die Vernetzung und Visualisierung zu ermöglichen (Abb. 1).</p>
+                    <figure>
+                        <graphic n="1001" width="10.990791666666667cm" height="4.580819444444445cm" url="273_final-8bde4cc0eb88b4d5e83eb7f8f8877755.png" rend="inline"/>
+						<head><lb/>Abbildung 1. Verlaufsplan.</head>
+                    </figure>
+                    <p>Für die Konvertierung aus dem PDF und die Bearbeitung wurde 
+                        <hi rend="italic">Adobe Acrobat Pro DC</hi><hi rend="superscript">17</hi>, der 
+                        <hi rend="italic">Oxygen</hi><hi rend="superscript">18</hi> Editor und 
+                        <hi rend="italic">Libre Office</hi><hi rend="superscript">19</hi> verwendet. Die extrahierten Daten wurden anhand der CSV-Extraktion in ein einheitliches Spaltensystem gebracht. Über das XML-Dokument wurden anhand von regulären Ausdrücken Konvertierungsfehler etc. ausgebessert. Am Ende stand eine einzelne TEI-konforme Tabelle. Der nächste Schritt bestand darin, ein Linked-Open-Data-Modell anhand der Ontologie von Nomisma.org (Abb. 2) zu entwickeln.
+                    </p>
+                    <figure>
+                        <graphic n="1002" width="9.275027777777778cm" height="3.44195cm" url="273_final-6795df4388799d10f8eb9cd509ac3ae7.jpeg" rend="inline"/>
+						<head><lb/>Abbildung 2. RDF-Modell.</head>
+                    </figure>
+                    <p>Um dieses Modell automatisiert auf alle 1.157 Münzen der Trierer Domgrabung übertragen zu können, wurde der Webdienst 
+                        <hi rend="italic">XTriples</hi> verwendet<hi rend="Fußnotenanker"><hi rend="superscript">20</hi></hi>, der es erlaubt aus XML ein RDF-Dokument zu erzeugen.
+                    </p>
+                    <figure>
+                        <graphic n="1003" width="9.181044444444444cm" height="4.846872222222222cm" url="273_final-cc45796536649cf916d580a8fe6f4fb8.jpeg" rend="inline"/>
+						<head><lb/>Abbildung 3. Webservice XTriples.</head>
+                    </figure>
+                    <p>Das RDF-Dokument wurde auf einen Triple Store abgelegt, der über ein RDF4J-Framework verfügt und SPARQL-Abfragen erlaubt. Ein weiterer Webdienst, 
+                        <hi rend="italic">sgvizler</hi>,<hi rend="Fußnotenanker"><hi rend="superscript">21</hi></hi> ermöglicht es im Anschluss die Daten zu visualisieren und zu analysieren (Abb. 4).
+                    </p>
+                    <figure>
+                        <graphic n="1004" width="9.068152777777778cm" height="6.288263888888889cm" url="273_final-37db1c51d4891a869d93810b4cc73cdc.jpeg" rend="inline"/>
+						<head><lb/>Abbildung 4. Visualisierung über sgvizler zu den Fundmünzen der Trierer Domgrabung.</head>
+                    </figure>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Ausblick</head>
+                    <p>Das oben beschriebene Verfahren wurde dann erweitert, um eine Pipeline aufzubauen, mit der alle Bände der FMRD-Reihe digitalisiert werden können. Auf manuelle Schritte und proprietäre Software soll dabei möglichst verzichtet werden.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Tabellenextraktion</head>
+                    <p>In einem ersten Schritt wurden aktuelle Open-Source-Angebote verglichen, die es ermöglichen, aus der PDF-Struktur Tabellen in CSV- bzw. XML-Dateien zu extrahieren. Die Daten liegen jedoch so inhomogen vor, dass bisher erschienene Programme und Skripte/Bibliotheken schnell an ihre Grenzen stoßen. Als Beispiel soll hier das browserbasierte Tool 
+                        <hi rend="italic">Tabula</hi><hi rend="Fußnotenanker"><hi rend="superscript">22</hi></hi> dienen, welches Tabellen im PDF automatisch erkennt und anschließend als CSV ausgeben kann. Im Verlauf der Erprobung stellte sich 
+                        <hi rend="italic">Tabula</hi> als ungeeignet heraus, da immer noch zu viele manuelle Eingriffe vonnöten sind. So erkennt es manche Tabellenteile nicht (Abb. 5) und die Spalteninhalte im erzeugten CSV werden nicht richtig zugeordnet.
+                    </p>
+                    <figure>
+                        <graphic n="1005" width="5.951361111111111cm" height="6.2367333333333335cm" url="273_final-f0a68ff0a3aea8590e9e9875707596af.png" rend="inline"/>
+						<head><lb/>Abbildung 5. Tabula: Fundmünzen Nummer 1 bis 4 werden nicht erkannt.</head>
+                    </figure>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>pdftohtml</head>
+                    <p>Eine andere Herangehensweise erzeugt als Zwischenschritt XML, bevor dieses in CSV umgewandelt werden kann. Für die Erzeugung des XML wird das Tool 
+                        <hi rend="italic">pdftohtml</hi> verwendet.<hi rend="Fußnotenanker"><hi rend="superscript">23</hi></hi> Das Ergebnis lässt sich über den 
+                        <hi rend="italic">pdf2xml-viewer</hi><hi rend="superscript">24</hi> überprüfen (Abb. 6).
+                    </p>
+                    <figure>
+                        <graphic n="1006" width="5.634727777777778cm" height="7.6561055555555555cm" url="273_final-d751b9472e1886ef94912d782721d27e.jpeg" rend="inline"/>
+						<head><lb/>Abbildung 6. OCR-Ergebnis.</head>
+                    </figure>
+                    <p>Die Normalisierung der Spalten ist hier leichter, da auch leere Tabellenspalten erkannt werden. Jedoch wird auch hier der Spalteninhalt nicht überall korrekt erkannt (Münze 18). Die XML-Struktur erlaubt es über die Tags zu navigieren und diese mit X-Technologien zu manipulieren. Doch ist der Anteil der nicht korrekt erkannten Spalteninhalte immer noch zu hoch, um die Daten wie im Druckband abzubilden.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Reguläre Ausdrücke</head>
+                    <p>Eine andere Möglichkeit an die Tabellendaten zu gelangen sind reguläre Ausdrücke. Mithilfe eines Pythonskriptes wurden diese separiert und als CSV ausgegeben. Dafür wurden beispielhaft verschiedene Münzkomplexe herangezogen und die regulären Ausdrücke um die pro Komplex neu auftretenden Sonderfälle modifiziert. Dieses Verfahren erzeugte gute Ergebnisse für die behandelten Komplexe. So waren nur noch kleinere manuelle Nachbesserungen nötig. Im Vergleich erzeugte dieses Verfahren das beste Ergebnis.</p>
+                </div>
             </div>
             <div type="div1" rend="DH-Heading1">
-                <head>Danksagung</head>
-                <p style="text-align:left; ">Die Autoren danken für die Förderung durch die Fritz Thyssen Stiftung für das Projekt „Entwicklung der Bildikonographie in Wissen vermittelnder Kinder- und Jugendliteratur und Schullehrbüchern des 19. Jahrhunderts: ein Distant Viewing Ansatz“. Ebenso wird der UB der TU Braunschweig für die Bereitstellung der Daten der Hobrecker-Sammlung gedankt.</p>
+                <head>Fazit</head>
+                <p>Die Digitalisierung von „Fundmünzen der römischen Zeit in Deutschland“ erweist sich als anspruchsvoll. Der Ansatz, die Daten über reguläre Ausdrücke zu gewinnen und zu extrahieren, erscheint bisher am vielversprechendsten. Die dabei auftretenden Abweichungen zwischen den Münzfundkomplexen lassen sich durch auf die FMRD-Struktur zugeschnittene Ausdrücke ausbessern. So erhoffen wir uns, die bisher über Nomisma.org veröffentlichten Datenbestände durch wichtige archäologische Kontexte zu erweitern und zu bereichern.</p>
             </div>
         </body>
         <back>
+			<div type="notes">
+					<note place="foot" xml:id="ftn1" n="1"> http://nomisma.org/; Hinweis: Alle im Beitrag erwähnten URLs wurden zuletzt am 14.10.2018 überprüft.</note>
+					<note place="foot" xml:id="ftn2" n="2"> z.B. http://nomisma.org/id/sestertius</note>
+					<note place="foot" xml:id="ftn3" n="3"> http://nomisma.org/ontology</note>
+					<note place="foot" xml:id="ftn4" n="4"> http://numismatics.org/crro/</note>
+					<note place="foot" xml:id="ftn5" n="5"> http://numismatics.org/ocre/</note>
+					<note place="foot" xml:id="ftn6" n="6"> https://www.greekcoinage.org/portals.html</note>
+					<note place="foot" xml:id="ftn7" n="7"> http://nomisma.org/datasets</note>
+					<note place="foot" xml:id="ftn8" n="8"> http://www.numid-verbund.de/</note>
+					<note place="foot" xml:id="ftn9" n="9"> https://pleiades.stoa.org/</note>
+					<note place="foot" xml:id="ftn10" n="10"> http://peripleo.pelagios.org/</note>
+					<note place="foot" xml:id="ftn11" n="11"> http://peripleo.pelagios.org/</note>
+					<note place="foot" xml:id="ftn12" n="12"> https://www.greekcoinage.org/coins-in-context.html</note>
+					<note place="foot" xml:id="ftn13" n="13"> https://www.dnb.nl/en/about-dnb/nationale-numismatische-collectie/numis/numis-database/index.jsp</note>
+					<note place="foot" xml:id="ftn14" n="14"> https://www.fundmuenzen.ch/</note>
+					<note place="foot" xml:id="ftn15" n="15"> http://afe.fundmuenzen.eu/</note>
+					<note place="foot" xml:id="ftn16" n="16"> https://www.digitale-methodik.uni-mainz.de/</note>
+					<note place="foot" xml:id="ftn17" n="17"> https://acrobat.adobe.com/de/de/acrobat/acrobat-pro.html</note>
+					<note place="foot" xml:id="ftn18" n="18"> https://www.oxygenxml.com/</note>
+					<note place="foot" xml:id="ftn19" n="19"> https://de.libreoffice.org/</note>
+					<note place="foot" xml:id="ftn20" n="20"> http://xtriples.spatialhumanities.de/index.html</note>
+					<note place="foot" xml:id="ftn21" n="21"> http://mgskjaeveland.github.io/sgvizler/</note>
+					<note place="foot" xml:id="ftn22" n="22"> https://tabula.technology/</note>
+					<note place="foot" xml:id="ftn23" n="23"> https://poppler.freedesktop.org/</note>
+                    <note place="foot" xml:id="ftn24" n="24"> https://github.com/WZBSocialScienceCenter/pdf2xml-viewer</note>
+			</div>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliographie</head>
                     <bibl>
-                        <hi rend="bold">Crowley, Elliot / Zisserman, Andrew (2016)</hi>: <hi rend="italic">“The Art of Detection”</hi>, in: Computer Vision – ECCV 2016 Workshops. ECCV 2016. Lecture Notes in Computer Science, vol 9913. Springer, Cham. S. 721-737
+                        <hi rend="bold">G. Geser (2016):</hi> 
+                        <hi rend="italic">ARIADNE WP15 Study: Towards a Web of Archaeological Linked Open Data</hi> 
+                        (www.ariadne-infrastructure.eu/.../ARIADNE_archaeological_LOD_study_10-2016.pdf, 31.10.2016).
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Gatys, Leon A. / Ecker, Alexander S. / Bethge, Matthias (2015)</hi>: <hi rend="italic">A neural algorithm of artistic style</hi> arXiv preprint arXiv:1508.06576.
+                        <hi rend="bold">E. Gruber:</hi> 
+                        <hi rend="italic">Numishare Blogspot</hi>: 
+                        <ref target="http://numishare.blogspot.com/">http://numishare.blogspot.com/</ref>.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Heuwing, Ben / Mandl, Thomas / Womser-Hacker, Christa (2016)</hi>: <hi rend="italic">“Combining contextual interviews and participative design to define requirements for text analysis of historical media”</hi>, in: Proceedings of ISIC, the Information Behaviour Conference, Zadar, Croatia, 20-23 September, 2016: Part 1. Information Research, 21 (4) http://www.informationr.net/ir/21-4/isic/isic1606.html
+                        <hi rend="bold">E. Gruber / G. Bransbourg / S. Heath / A. Meadows (2014):</hi> 
+                        <hi rend="italic">Linking Roman Coins: Current Work at the American Numismatic Society</hi>, 
+                        in: 
+                        <hi rend="bold">G. Earle et al. (eds):</hi> 
+                        <hi rend="italic">Archaeology in the Digital Era</hi>: 
+                        Papers from the 40th Annual Conference of Computer Applications and Quantitative Methods in Archaeology (CAA), Southampton, 26-29 March 2012 (Amsterdam) 249–258.</bibl>
+                    <bibl>
+                        <hi rend="bold">E. Gruber / S. Heath / A. Meadows / D. Pett / D. Wigg-Wolf (2014):</hi> 
+                        <hi rend="italic">Semantic Web Technologies Applied to Numismatic Collections</hi>, 
+                        in: 
+                        <hi rend="bold">G. Earle et al. (eds):</hi> 
+                        <hi rend="italic">Archaeology in the Digital Era</hi>: 
+                        Papers from the 40th Annual Conference of Computer Applications and Quantitative Methods in Archaeology (CAA), Southampton, 26-29 March 2012 (Amsterdam) 264–274.</bibl>
+                    <bibl>Radnoti-Alföldi, M. (2006): Die Fundmünzen der römischen Zeit in Deutschland IV 3/2. Stadt und Reg.-Bez. Trier. Die Sog. Römerbauten (Mainz).</bibl>
+                    <bibl>
+                        <anchor xml:id="OLE_LINK1"/>
+                        <hi rend="bold">K. Tolle / D. Wigg-Wolf (2015):</hi> 
+                        <hi rend="italic">Uncertainty Handling for Ancient Coinage</hi>, 
+                        in: 
+                        <hi rend="bold">F. Giligny et al. (eds):</hi> 
+                        <hi rend="italic">CAA2014. 21st Century Archaeology. Concepts, Methods and Tools</hi>. 
+                        Proceedings of the 42nd Annual Conference on Computer Applications and Quantitative Methods in Archaeology (Oxford) 171–178.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Im, Chanjong / Ghauri, Junaid / Rothman, John / Mandl, Thomas (2018)</hi>: <hi rend="italic">“Deep Learning Approaches to Classification of Production Technology for 19th Century Books”</hi>, in: Lernen. Wissen. Daten. Analysen (LWDA 2018) Workshop Fachgruppe Information Retrieval (FGIR 2018) August 22-24, Mannheim: 150-158. http://ceur-ws.org/Vol-2191
+                        <hi rend="bold">K. Tolle / D. Wigg-Wolf (2016):</hi> 
+                        <hi rend="italic">How to Move from Relational to 5 Star Linked Open Data – A Numismatic Example</hi>, 
+                        in: 
+                        <hi rend="bold">S. Campana et al. (eds):</hi> 
+                        <hi rend="italic">CAA2015. Keep the Revolution Going</hi>. 
+                        Proceedings of the 43rd Annual Conference on Computer Applications and Quantitative Methods in Archaeology (Oxford 2016) 275–281.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Kohle, Hubertus (2013)</hi>: <hi rend="italic">Digitale Bildwissenschaft</hi>. Glückstadt: Verlag Werner Hülsbusch.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Krig, Scott (2016)</hi>: <hi rend="italic">Computer Vision Metrics</hi>. Cham: Springer.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Mehri, Maroua / Heroux, Pierre / Gomez-Krämer, Petra / Mullot, Rémy (2017)</hi>: <hi rend="italic">“Texture feature bench-marking and evaluation for historical document image analysis”</hi>, in: International Journal on Document Analysis and Recognition (IJDAR) 20 (1): 325-364. 
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Pech, Klaus-Ulrich (2008)</hi>: <hi rend="italic">Der ökonomisch-technische Prozess und die Entwicklung der Kinder- und Jugendbuchliteratur</hi>, in: <hi rend="bold">Brunken, Otto / Brüggemann, Theodor / Hurrelmann, Bettina / Michels-Kohlhage, Maria / Wilkending, Gisela (Hrsg.)</hi>: <hi rend="italic">Handbuch zur Kinder- und Jugendliteratur. Von 1850 bis 1900</hi>. Stuttgart, Weimar: J. B. Metzler 15-22.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Redmon, Joseph / Divvala, Santosh / Girshick, Ross / Farhadi, Ali (2016)</hi>: <hi rend="italic">“You only look once: Unified, real-time object detection”</hi>, in: Proceedings of the IEEE conference on computer vision and pattern recognition: 779-788.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Ries, Hans (1992)</hi>: <hi rend="italic">Illustration und Illustratoren des Kinder- und Jugendbuchs im deutschsprachigen Raum 1871–1914</hi>. Osnabrück: Wenner.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Saleh, Babak / Elgammal, Ahmed (2015)</hi>: <hi rend="italic">“Large-scale Classification of Fine-Art Paintings: Learning The Right Metric on The Right Feature”</hi>, in: Computer Science &gt; Computer Vision and Pattern Recognition, Arbeitsberichte. http://arxiv.org/abs/1505.00855
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Schmideler, Sebastian (2014)</hi>: <hi rend="italic">„Das bildende Bild, das unterhaltende Bild, das bewegte Bild – Zur Codalität und Medialität in der Wissen vermittelnden Kinder- und Jugendliteratur des 18. und 19. Jahrhunderts“</hi>, in: <hi rend="bold">Weinkauff, Gina u.a. (Hrsg.)</hi>: <hi rend="italic">Kinder- und Jugendliteratur in Medienkontexten. Adaption – Hybridisierung – Intermedialität – Konvergenz</hi>. Frankfurt a. M.: Peter Lang 13-26.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Yarlagadda, Pradeep / Monroy, Antonio / Carque, Bernd / Ommer, Björn (2013)</hi>: <hi rend="italic">“Towards a Computer-based Understanding of Medieval Images”</hi>, in: <hi rend="bold">Bock, Hans Georg / Jäger, Willi / Winckler, Michael J. (eds.)</hi>: <hi rend="italic">Scientific Computing and Cultural Heritage. Contributions in Computational Humanities</hi>. Berlin: Springer 89-97.
+                        <hi rend="bold">D. Wigg-Wolf / F. Duyrat (2017):</hi> 
+                        <hi rend="italic">La révolution des Linked Open Data en numismatique: Les exemples de nomisma.org et Online Greek Coinage</hi>. 
+                        Archéologies numériques 1.1, 2017.
                     </bibl>
                 </listBibl>
             </div>
