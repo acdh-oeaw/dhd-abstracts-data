@@ -9,7 +9,7 @@ do
     wget ${url}
     unzip main.zip -d tmp
     counter=1
-    find tmp -path "*/XML-files/*.xml" -type f | while read file; do
+    find tmp -path "*/XML-*/*.xml" -type f | while read file; do
         new_name=$(printf "abstract-%d-%05d.xml" "$year" "$counter")
         mkdir -p data/editions
         cp "$file" "data/editions/$new_name"
