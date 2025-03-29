@@ -1,5 +1,5 @@
 #!/bin/bash
-YEARS=(2016 2017 2018 2019 2020 2021 2022 2023 2024)
+YEARS=(2016 2017 2018 2019 2020 2022 2023 2024)
 BASE_URL=https://github.com/DHd-Verband/DHd-Abstracts-
 
 for year in "${YEARS[@]}"

@@ -15,7 +15,7 @@ jobs:
       - name: Perform Checkout
         uses: actions/checkout@v4
 
-      - name: Run checker
+      - name: Fetch the data
         run: ./fetch_data.sh
 
       - name: Commit data
