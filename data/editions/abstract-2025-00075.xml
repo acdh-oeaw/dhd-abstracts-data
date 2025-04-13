@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="KRUSIC_Lucija_SentiANNO__Annotating_Sentiment_in_Austrian_Hi">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>SentiANNO: Annotating Sentiment in Austrian Historical Newspapers</title>
+                <author>
+                    <persName>
+                        <surname>Krusic</surname>
+                        <forename>Lucija</forename>
+                    </persName>
+                    <affiliation>Department for Digital Humanities, University of Graz, Austria</affiliation>
+                    <email>lucija.krusic@uni-graz.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hochreiter</surname>
+                        <forename>Clara</forename>
+                    </persName>
+                    <affiliation>Department for Digital Humanities, University of Graz, Austria</affiliation>
+                    <email>cla.hochreiter@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Frauendorfer</surname>
+                        <forename>Melanie</forename>
+                    </persName>
+                    <affiliation>Department for Digital Humanities, University of Graz, Austria</affiliation>
+                    <email>melanie.frauendorfer@uni-graz.at</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-11-29T12:56:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Corpus Creation</term>
+                    <term>Sentiment Annotation</term>
+                    <term>Sentiment Analysis</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Sammlung</term>
+                    <term>Annotieren</term>
+                    <term>Veröffentlichung</term>
+                    <term>Daten</term>
+                    <term>Forschungsprozess</term>
+                    <term>Forschungsergebnis</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">This contribution presents the preliminary version of SentiANNO, a sentiment-annotated corpus derived from sentences in historical Austrian newspapers, and details the annotation process and the training of annotators. The corpus is intended for fine-tuning existing Machine Learning models for the NLP (Natural Language Processing) task of Sentiment Analysis (SA), facilitating the automatic detection of emotions and opinions in texts (Liu, 2012). This corpus enables SA of journalistic texts in Austrian German from 1800 to 1938 and can be applied to historical texts across various topics.</p>
+            <p style="text-align: left; ">Currently, there is a significant lack of sentiment-annotated corpora needed for fine-tuning existing Machine Learning models, such as Schweter (2020), which was trained on non-annotated historical newspapers. Despite significant efforts to create sentiment and emotion-annotated corpora of German historical dramas (Schmidt et al., 2021), no comparable resource exists for Austrian historical newspapers.</p>
+            <p style="text-align: left; ">The base corpus comprises sentences and texts from newspapers available through the ANNO (Österreichische Nationalbibliothek, 2021) and DIGITARIUM (Austrian Academy of Sciences, 2017) collections. It includes texts from newspapers such as Wienerisches Diarium, Das Vaterland, Neue Freie Presse, Arbeiter Zeitung, and Illustrierte Kronen Zeitung, spanning the years 1800 to 1938. This time frame was selected for two reasons: it encompasses significant migration and societal developments during the long 19th century and the pre-, during-, and post-war periods of the early 20th century; and documents published after 1938 are excluded due to copyright restrictions, as these works may still be protected under intellectual property laws.</p>
+            <p style="text-align: left; ">The corpus was compiled using a two-step methodology: Dynamic Topic Modeling with BERTopic, followed by classification. Annotated with topics such as migration, national minorities, education, and labor, it provides a comprehensive resource for analyzing societal changes during this period.</p>
+            <p style="text-align: left; ">The base corpus is then annotated with four sentiment categories: positive (positive sentiment is expressed in the sentence), negative (the sentence expresses a negative sentiment), neutral (there is no sentiment in the sentence), and mixed (two sentiments are expressed, it is not possible to find a clear dominant one). The annotations were provided by a team of three semi-expert annotators (Master’s students of Linguistics and Digital Humanities). Sentences were used as the unit of annotation, with an average sentence length of 35.7 tokens, the shortest sentence having four tokens and the longest having 350 tokens. A sentence was used as the annotation unit because sentiment often changes within an article and sometimes even within a sentence. </p>
+            <p style="text-align: left; ">The annotators were trained in sentiment analysis and annotation using an iterative approach, which incorporated established annotation methodologies (Sprugnoli et al., 2023; Schmidt et al., 2018). The annotation process was conducted in stages, with each stage comprising 50 to 150 annotation units centered on texts related to specific topics. Following each stage, annotators provided feedback regarding challenges and ambiguities encountered during the task. This feedback informed subsequent adjustments to the process, leading to the inclusion of additional contextual information to facilitate decision-making. The added context consisted of the newspaper title, the publication date, and the sentences immediately preceding and following the target sentence.</p>
+            <p style="text-align: left; ">Traditionally, tools such as spreadsheets and word processors have been commonly used for annotation collection (Sprugnoli and Redaelli, 2024; Sprugnoli et al., 2023; Schmidt et al., 2018). However, the selection of annotation tools can significantly impact the quality of annotations. For example, Schmidt et al. (2019) compared various tools, including Word, WebAnno, CATMA, eMargin, and Sentimentator, and found that using a specialized tool like Sentimentator can increase annotator confidence and certainty in their decisions.</p>
+            <p style="text-align: left; ">A comparative evaluation was conducted to determine the most suitable method for annotation collection (Krušić, 2024a). The tools assessed were Google Forms (a survey platform), Google Sheets (a spreadsheet application), and Doccano (a dedicated annotation tool) (Hiroki et al., 2018). The comparison focused on criteria such as the ease of presenting sentences to annotators, the clarity of sentence and annotation visualization, navigability between sentences, and the annotators' ability to provide comments. Doccano was identified as the most effective and easy-to-use annotation tool (Krušić, 2024a). This comparison will be extended in future annotation rounds, thus including other annotation tools, e.g. INCEpTION (Klie et al, 2024).</p>
+            <p style="text-align: left; ">Annotator feedback highlighted several challenges, including the complexity of the historical language and context, metaphors and satire, and the expression of multiple sentiments in one sentence (Krušić, 2024a). Despite these complexities, preliminary results indicate a fair to moderate level of agreement (0.405), which is in line with expectations and previous work (Sprugnoli et al., 2023; Schmidt et al., 2019, 2018). Further, the annotation process yielded an Average Percentage Agreement (APA) of 92.5% for majority agreement (achieved by at least two out of three annotators). These outcomes demonstrate the reliability of the annotation methodology, supporting the development of a gold-standard corpus consisting of 930 sentences, with plans for further expansion in subsequent annotation phases.</p>
+            <p style="text-align: left; ">The SentiAnno corpus, characterised by high linguistic and historical variation, promises significant contribution for the fine-tuning of models in the context of Digital Humanities (DH). Furthermore, the comprehensive annotation guidelines, along with the insights and experiences accumulated throughout the annotation process, will serve as valuable resources for the DH community. The preliminary corpus is available in the SentiAnno Github repository (Krušić, 2024b). Further annotation rounds will be conducted in the scope of the project “SentiAnno: Sentiment-annotated corpus of Austrian historical newspapers”, funded by CLARIAH-AT. The extended corpus will be made publicly available on Zenodo, a platform that supports open access and aligns with the FAIR principles. </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl style="text-align: left; "><hi rend="bold">Austrian Academy of Sciences.</hi> (2017, 2023). Wien[n]erisches Diarium. DIGITARIUM. https://digitarium-app.acdh.oeaw.ac.at/start.html?id=jg17xx</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Klie, J.-C., Eckart de Castilho, R. and Gurevych, I.</hi> 2024. “Integrating INCEpTION into larger annotation processes”. Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP) - System demonstrations.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Krušić, Lucija.</hi> 2024a. “Constructing a Sentiment-Annotated Corpus of Austrian Historical Newspapers: Challenges, Tools, and Annotator Experience”. In Proceedings of the 4th International Conference on Natural Language Processing for Digital Humanities, pages 51–62, Miami, USA. Association for Computational Linguistics.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Krušić, Lucija.</hi> 2024b. “SentiAnno [GitHub repository]”. GitHub.https://github.com/lucijakrusic/SentiAnno</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Liu, B.</hi> 2012. “Sentiment Analysis and Opinion Mining (Synthesis Lectures on Human Language Technologies)”. Morgan &amp; Claypool Publishers.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Österreichischen Nationalbibliothek.</hi> 2021. “ANNO (AustriaN Newspaper Online)”. anno.onb.ac.at</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Schmidt, T., Burghardt, M., and Dennerlein, K.</hi> 2018.“ Sentiment Annotation of Historic German Plays: An Empirical Study on Annotation Behavior”. In Proceedings of the Workshop on Annotation in Digital Humanities co-located with ESSLLI 2018 (annDH 2018) (pp. 47-52). Sofia, Bulgaria. DOI: urn:nbn:de:bvb:355-epub-437018.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Schmidt, T., Dennerlein, K., and Wolff, C.</hi> 2021. “Towards a Corpus of Historical German Plays with Emotion Annotations”. 11 pages, 741719 bytes. https://doi.org/10.4230/OASICS.LDK.2021.9</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Schweter, S.</hi> 2020. “Europeana BERT and ELECTRA models (1.0.0)”. https://doi.org/10.5281/zenodo.4275044</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Sprugnoli, R., Mambrini, F., Passarotti, M., and Moretti, G.</hi> 2023. “The Sentiment of Latin Poetry. Annotation and Automatic Analysis of the Odes of Horace”. Italian Journal of Computational Linguistics, 9(1). https://doi.org/10.4000/ijcol.1125</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

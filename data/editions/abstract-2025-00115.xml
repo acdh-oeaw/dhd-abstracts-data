@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="LECROQ_Axelle_Explorative_interface_for_accessing_a_bio_bibl">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Explorative interface for accessing a bio-bibliographical data set of GDR authors</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Lecroq</surname>
+                        <forename>Axelle</forename>
+                    </persName>
+                    <affiliation>Berliner Hochschule für Technik, Deutschland</affiliation>
+                    <email>alecroq@bht-berlin.de</email>
+                    <idno type="ORCID">0000-0002-1562-9966</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kreutel</surname>
+                        <forename>Jörn</forename>
+                    </persName>
+                    <affiliation>Berliner Hochschule für Technik, Deutschland</affiliation>
+                    <email>jkreutel@bht-berlin.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-12-02T14:25:06.919044053</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>prosopographisch</term>
+                    <term>Visualisierungen</term>
+                    <term>Exploration</term>
+                    <term>bio-bibliographische Daten</term>
+                    <term>Iterativer Entwicklungsprozess</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Entdeckung</term>
+                    <term>Gestaltung</term>
+                    <term>Visualisierung</term>
+                    <term>Bibliographie</term>
+                    <term>Personen</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Our contribution presents an exploratory interface for accessing bio-bibliographical data on a data set of authors from the former GdR. The data has been collected within the research project Forschungsplattform Literarisches Feld DDR: Autor*innen, Werke, Netzwerke which carried out a wide and in-depth collection of biographical and bibliographical data of 344 persons who studied at the Institut für Literatur ‘Johannes R. Becher’ in Leipzig, an institute for literary writing. This specific focus provides a manageable comprehensive dataset, enabling detailed exploration and analysis of the biographical and bibliographical trajectories of these authors. </p>
+            <p>Incorporating the principles of Shneiderman's Information Seeking Mantra (1996) —"Overview first, zoom and filter, then details-on-demand"— our solution offers a dashboard-like overview consisting of multiple charts such as pie charts, bar charts, timelines, and maps, that display attributes of the data set like gender, occupational fields, qualification levels, and publication details. These charts are synchronised, such that interactions in one chart dynamically result in an update of the others, following the information visualisation concept of “brushing and linking” (see, e.g., Eick and Wills 1995 ; Hearst 1999). The user can directly interact with the view of the data to alter its appearance in real time. This way, the complete dataset can be progressively filtered and drilled down into specific data points. Each chart within the dashboard serves, in terms of query languages, both as a projection of the attribute it is meant to represent and allows to express selection criteria for that attribute. As an additional non-interactive projection view, the interface provides a tabular overview of all filtered data that comprises all data attributes.</p>
+            <p>The initial version of the interface was developed over six months, guided by informal feedback from prospective users from the field of literary studies, based on prototype demonstrations. However, during this phase, users did not directly interact with the system. Drawing upon insights from Schetinger et al. (2020), we decided to conduct a user test to gather qualitative feedback – a method employed in DH projects such as those by Kemman and Kleppe (2014). The goals were twofold: to validate our primary design choices for the overview and to evaluate how effectively users can handle the interface for concrete tasks. The hybrid tests began with a semi-structured interview, where the interviewer followed a flexible set of questions and continued with participants completing predefined scenarios while exploring additional relevant issues. By July 2024, the first round of user testing was completed with a diverse group, including project stakeholders, both senior scholars and students, and digital humanities students. All sessions were recorded, and feedback was thoroughly reviewed and categorised into user requirements.</p>
+            <p>Users’ overall feedback strongly varied according to their expertise and experience in using digital tools within their research practice. As for our main user group, i.e. researchers in the area of literature studies, the tests revealed that the dual nature of the dashboard view, where charts serve both for projection output and allow for selection input, was not considered as fully intuitive. Rather, it seemed that users would have preferred a more common input modality like plain text provided, e.g, by drop down lists or autocomplete text input. Users even tried to interact with the textual data in the table view. With OPAC search interfaces being one of the frequently used digital tools by the humanities researchers among our testers, users’ expectations appeared to adhere to a paradigm of textual query formulation and, potentially but not necessarily visual, query result presentation and refinement.</p>
+            <p>In general, these observations confirm the inherent challenges of interdisciplinary DH projects, particularly when users are meant to engage with complex and multifaceted datasets (van den Berg et al. 2018). The findings, in particular, underline a preference for text-based approaches as outlined, e.g., by Drucker and Nowviskie (2004), who mention humanists’ resistance to visual forms of knowledge production. Along these lines, Vial (2016) and Grandjean (2022) see a need for training humanists in the effective use of digital tools, in general, and visual tools, in particular. Vial further argues that the challenge in designing tools for digital humanities is not merely to create a functional tool but to redefine and adapt the scholarly research experience. These issues and challenges also become strongly manifest in our own evaluation.</p>
+            <p>As Hearst (1999) and Cohen et al. (2018) suggest, offering different levels of accessibility tailored to users’ experience is essential for creating a user-friendly interface. To address this, the further development of our interface will incorporate textual input options for specifying selection criteria, which will be seamlessly integrated with the visual display of filtered data. Regarding visual result presentation, we aim to provide a more comprehensive visual overview of the data that complements the textual “overview” table and serves as an alternative to the “dashboard overview” consisting of various synchronised, yet isolated, charts. This approach ensures that the solution aligns with users’ preferences and varying levels of familiarity with data input and display modalities. The refinements will not only accommodate diverse user needs but also facilitate deeper exploration of how digital tools can transform research practices in the humanities by aligning them with researcher’s requirements.</p>
+            <p>Looking ahead to 2025, our goal is to incorporate users’ feedback into an optimised version of the interface and conduct further testing. At the DHd conference, we aim to present a refined and tested interface, comprising the new textual input modality. The poster will provide an overview of the developmental journey, highlighting the interface design and its features. It will present the process of user-driven interface development, focusing on its collaborative and iterative nature, which strongly addresses the dynamic and adaptive character of digital humanities projects. It will showcase how continuous user engagement and feedback are essential in creating effective research experiences that align with the scholarly needs and preferences of the DH community. This way, we mean to address the "Under Construction" notion of DHd 2025, as our experience underlines the necessity of ongoing development and refinement, according to Schetinger’s theory on balancing capta, users, and tasks to enhance DH interfaces.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Cohen, M</hi>
+                        <hi rend="bold">axine</hi>
+                        <hi rend="bold">, N</hi>
+                        <hi rend="bold">iklas </hi>
+                        <hi rend="bold">Elmqvist, C</hi>
+                        <hi rend="bold">atherine </hi>
+                        <hi rend="bold">Plaisant, S</hi>
+                        <hi rend="bold">teven </hi>
+                        <hi rend="bold">Jacobs</hi>
+                        <hi rend="bold">, and</hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">Ben </hi>
+                        <hi rend="bold">Schneiderman</hi>. 2018.
+                        <hi rend="italic">Designing the User Interface: Strategies for Effective Human-Computer Interaction</hi>. Pearson, 6th Edition.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Eick, S</hi>
+                        <hi rend="bold">tephen G.</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Graham J. Wills.</hi> 1995. “High interaction graphics” In 
+                        <hi rend="italic">European Journal of Operations Research</hi>, 81(3), 445-459. 
+                        <ptr target="https://doi.org/10.1016/0377-2217(94)00188-I"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Drucker, J</hi>
+                        <hi rend="bold">ohanna, and Bethany</hi>
+                        <hi rend="bold"> Nowviskie</hi>. 2004. “Speculative Computing: Aesthetic Provocations in Humanities Computing” In 
+                        <hi rend="italic">A Companion to Digital Humanities, </hi>431–447. John Wiley &amp; Sons, Ltd. DOI: 
+                        <ref target="http://dx.doi.org/10.1002/9780470999875.ch29">10.1002/9780470999875.ch29</ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Grandjean, M</hi>
+                        <hi rend="bold">artin</hi>. 2022. “La visualisation de données, entre usages démonstratifs et heuristiques” In B. Bohet &amp; V. Pringuet (Eds.), 
+                        <hi rend="italic">Les devenirs numériques des patrimoines</hi>, 199-21
+                        <hi rend="italic">7. É</hi>dition de la Maison des Sciences de l’Homme. 
+                        <ptr target="https://shs.hal.science/halshs-03845625/file/Grandjean-2022-Visualisation-de-donnees.pdf"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hearst, M</hi>
+                        <hi rend="bold">arti.</hi> 1999. “User Interfaces and Visualization” In Baeza-Yates, R. and Robeiro-Meto, B. (ed), 
+                        <hi rend="italic">Modern Information Retrieval</hi>, Addison Wesley Longman Publishing Co, Chapter 10.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kemman, M</hi>
+                        <hi rend="bold">ax, and</hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">Martjin </hi>
+                        <hi rend="bold">Kleppe</hi>. 2014. “User Required? On the Value of User Research in the Digital Humanities” In 
+                        <hi rend="italic">Papers from the CLARIN 2014 Conference</hi>, 
+                        <ptr target="https://ep.liu.se/ecp/116/006/ecp15116006.pdf"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Shneiderman, B</hi>
+                        <hi rend="bold">en</hi>
+                        <hi rend="bold">.</hi> 1996. “The Eyes Have It: A Task by Data Type Taxonomy for Information Visualizations”. In 
+                        <hi rend="italic">Proceedings of the IEEE Symposium on Visual Languages</hi>: 336-343, Washington. IEEE Computer Society Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schetinger, V</hi>
+                        <hi rend="bold">ictor, Kathrin</hi>
+                        <hi rend="bold"> Raminger, K., Velitchko Filipov, Nathalie Soursos, Susana Zapke, </hi>
+                        <hi rend="bold">and Silvia </hi>
+                        <hi rend="bold">Miksch. </hi>2020. “Bridging the Gap between Visual Analytics and Digital Humanities: Beyond the Data-Users-Tasks Design Triangle” In: 
+                        <hi rend="italic">4th Workshop on Visualization for the Digital Humanities </hi>
+                        <hi rend="italic">(VIS4DH 2020)</hi>, Vancouver, Canada, Non-EU. 
+                        <ptr target="http://hdl.handle.net/20.500.12708/86980"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Van den Berg, H</hi>
+                        <hi rend="bold">ein</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Arianna </hi>
+                        <hi rend="bold">Betti, Thom Castermans </hi>
+                        <hi rend="bold">et </hi>
+                        <hi rend="bold">al.</hi> 2018. “A philosophical perspective on visualization for digital humanities” In: 
+                        <hi rend="italic">Proc. 3rd Workshop on Visualization for the Digital Humanities (VIS4DH)</hi>. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Vial, S</hi>
+                        <hi rend="bold">téphane.</hi> 2016. “Le tournant design des humanités numériques” In 
+                        <hi rend="italic">Revue française des sciences de l’information et de la communication</hi>, 8:8. 
+                        <ptr target="https://doi.org/10.4000/rfsic.1828"/>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

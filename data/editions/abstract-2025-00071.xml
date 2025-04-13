@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="RENJE_Elena_Ans_tze_zur_Wort__und_Satzsegmentierung_in_kirch">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ansätze zur Wort- und Satzsegmentierung in kirchenslavischen HTR-Transkriptionen</title>
+                <author>
+                    <persName>
+                        <surname>Jouravel</surname>
+                        <forename>Anna</forename>
+                    </persName>
+                    <affiliation>Universität Freiburg, Deutschland</affiliation>
+                    <email>anna.jouravel@slavistik.uni-freiburg.de</email>
+                    <idno type="ORCID">0000-0002-7767-4973</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Rabus</surname>
+                        <forename>Achim</forename>
+                    </persName>
+                    <affiliation>Universität Freiburg, Deutschland</affiliation>
+                    <email>achim.rabus@slavistik.uni-freiburg.de</email>
+                    <idno type="ORCID">0000-0002-5366-1430</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Scherrer</surname>
+                        <forename>Yves</forename>
+                    </persName>
+                    <affiliation>Universität Oslo, Norwegen</affiliation>
+                    <email>yves.scherrer@ifi.uio.no</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Renje</surname>
+                        <forename>Elena</forename>
+                    </persName>
+                    <affiliation>Universität Freiburg, Deutschland</affiliation>
+                    <email>elena.renje@slavistik.uni-freiburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Meindl</surname>
+                        <forename>Martin</forename>
+                    </persName>
+                    <affiliation>Universität Freiburg, Deutschland</affiliation>
+                    <email>martin.meindl@slavistik.uni-freiburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Müller</surname>
+                        <forename>Stefan</forename>
+                    </persName>
+                    <affiliation>Bayerische Akademie der Wissenschaften, Deutschland</affiliation>
+                    <email>stefan.mueller@badw.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lendvai</surname>
+                        <forename>Piroska</forename>
+                    </persName>
+                    <affiliation>Bayerische Akademie der Wissenschaften, Deutschland</affiliation>
+                    <email>piroska.lendvai@badw.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-06-13T14:32:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Historische Sprachverarbeitung</term>
+                    <term>Kirchenslavisch</term>
+                    <term>Transkribus</term>
+                    <term>Handwritten Text Recognition</term>
+                    <term>Wortsegmentierung</term>
+                    <term>Satzsegmentierung</term>
+                    <term>UDPipe</term>
+                    <term>Stanza</term>
+                    <term>benchmarking/GT für historisches Sprachmaterial</term>
+                    <term>Sprachmodellierung</term>
+                    <term>Transformermodelle</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Strukturanalyse</term>
+                    <term>Modellierung</term>
+                    <term>Annotieren</term>
+                    <term>Bereinigung</term>
+                    <term>Manuskript</term>
+                    <term>Methoden</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi style="font-size:10pt" xml:space="preserve">Mit zunehmender Entwicklung von Sprachanalysetools eröffnen sich den historisch arbeitenden Disziplinen neue Forschungsperspektiven (u.a. Polomac, 2014; Franzini et al., 2018; Camps et al., 2019; Rabus, 2019). Als </hi>
+                <hi rend="italic" style="font-size:10pt">low-resource language</hi>
+                <hi style="font-size:10pt">steht das Kirchenslavische vor typischen Herausforderungen der Textverarbeitung wie der begrenzten Verfügbarkeit annotierter Ground-Truth-Daten (GT) sowie einer erhöhten Fehleranfälligkeit bei der automatischen Handschriftenerkennung (HTR) und Segmentierung (Rabus et al., 2023).</hi>
+            </p>
+            <p>
+                <hi style="font-size:10pt" xml:space="preserve">Um eine Grundlage für eine präzisere Datierung und Lokalisierung slavischer mittelalterlicher Schriftzeugnisse zu schaffen, zielt unsere Forschung daher darauf ab, die Ausgabe verschiedener Tools durch automatisierte Abläufe zu verbessern. Im Fokus stehen dabei zwei Ziele: die Verbesserung der Wortsegmentierung nach dem Transkriptionsprozess und die Verfeinerung der Satzsegmentierung. </hi>
+            </p>
+            <p>
+                <hi style="font-size:10pt" xml:space="preserve">In unserem Arbeitsablauf erfolgt die Erstellung der HTR durch </hi>
+                <hi rend="italic" style="font-size:10pt">Transkribus</hi><ref n="1" target="ftn1"/>
+                <hi style="font-size:10pt" xml:space="preserve">. Das verwendete Transkriptionsmodell für kirchenslavische Handschriften, die in </hi>
+                <hi rend="italic" style="font-size:10pt">scriptura continua</hi>
+                <hi style="font-size:10pt" xml:space="preserve"> abgefasst sind, erreicht eine Character Error Rate (CER) von 3,7%. Die für das Training verwendeten Daten sind jedoch nicht in </hi>
+                <hi rend="italic" style="font-size:10pt">scriptura continua</hi>
+                <hi style="font-size:10pt" xml:space="preserve">, sondern enthalten bereits von Editor*innen vorgenommene Wortsegmentierungen. Evaluierungen der HTR-Ergebnisse ergeben, dass die Wortsegmentierung eine erhebliche Fehlerquelle darstellt. Daher besteht unsere erste Zielsetzung in der nachträglichen Verbesserung der </hi>
+                <hi rend="bold" style="font-size:10pt">Wortsegmentierung</hi>
+                <hi style="font-size:10pt" xml:space="preserve">. </hi>
+            </p>
+            <p>
+                <hi style="font-size:10pt" xml:space="preserve">Außerdem zeigen qualitative Auswertungen erster Attribuierungsversuche kirchenslavischer Handschriften und Drucke aus drei Zeitabschnitten (10.–11. Jh., 15.–16. Jh., 18. Jh.) und zwei Regionen (Süd- und Ostslavia) durch Domain-Adaptation und Finetuning von BERT (Devlin et al., 2019), dass syntaktisch und semantisch kohärente Textteile verlässlicher zugeordnet werden (Lendvai et al., 2023). Daher besteht unsere zweite Zielsetzung in der Verbesserung der </hi>
+                <hi rend="bold" style="font-size:10pt">Satzsegmentierung</hi>
+                <hi style="font-size:10pt">, die unabhängig von der Wortsegmentierung betrachtet werden muss.</hi>
+            </p>
+            <p>
+                <hi style="font-size:10pt" xml:space="preserve">Hinsichtlich der Wortsegmentierung haben wir auf Basis eines multilingualen Text-to-Text-Transfer-Transformers (mT5 Modell) mit Byte-to-Byte-Erweiterung (ByT5) (Xue et al., 2020; Xue et al., 2022) einen </hi>
+                <hi rend="italic" style="font-size:10pt">Church Slavonic Word Separator</hi>
+                <hi style="font-size:10pt" xml:space="preserve"> trainiert. Dieser fügt in Zeichenketten, die in </hi>
+                <hi rend="italic" style="font-size:10pt">scriptura continua</hi>
+                <hi style="font-size:10pt" xml:space="preserve">vorliegen, Leerzeichen hinzu. Ziel ist es, den unkorrigierten HTR-Output im Nachgang zu verbessern. Für die Aufbereitung des Testsets wurden alle Leerzeichen im HTR-Text entfernt, damit der Text in </hi>
+                <hi rend="italic" style="font-size:10pt">scriptura continua</hi>
+                <hi style="font-size:10pt" xml:space="preserve"> vorliegt. Das Trainingsmaterial umfasst neben öffentlich zugänglichen Datensets wie PROIEL</hi><ref n="2" target="ftn2"/>
+                <hi style="font-size:10pt" xml:space="preserve"> und TOROT</hi><ref n="3" target="ftn3"/>
+                <hi style="font-size:10pt" xml:space="preserve"> ostslavisch-kirchenslavische Handschriften aus dem 16. Jh., wobei das beste Modell einen </hi>
+                <hi rend="italic" style="font-size:10pt" xml:space="preserve">validation loss </hi>
+                <hi style="font-size:10pt">von 0.008 erreicht. Es zeigte sich eine sichtbare Verbesserung der CER zwischen (absolut) 0,5% und 1,4%. Allerdings sind trotz der deutlichen Verbesserung der CER in einer qualitativen Analyse Falschgenerierungen des Separators wie Textdopplungen oder Einfügungen von Leerzeilen aufgefallen, die zu ungewollter Wortsegmentierung führen.</hi>
+            </p>
+            <p>
+                <hi style="font-size:10pt" xml:space="preserve">Für die Satzsegmentierung wurden zwei Tools erprobt: </hi>
+                <hi rend="italic" style="font-size:10pt">Stanza</hi>
+                <hi style="font-size:10pt" xml:space="preserve"> (version 1.6.1; Qi et al., 2020) und </hi>
+                <hi rend="italic" style="font-size:10pt">UDPipe</hi>
+                <hi style="font-size:10pt" xml:space="preserve"> (version 2.12; Straka, 2018). Beide verfügen über Modelle für das Altkirchenslavische</hi><ref n="4" target="ftn4"/>
+                <hi style="font-size:10pt" xml:space="preserve"> sowie für das Altostslavische</hi><ref n="5" target="ftn5"/>
+                <hi style="font-size:10pt" xml:space="preserve">. Daneben haben wir ein eigenes regelbasiertes Python-Skript erstellt, das die Satzsegmentierung nach universellen syntaktischen und orthographischen Regeln forciert. Zu diesen Regeln gehört etwa die Wackernagelposition von Partikeln, i.e. ihre typische Zweitstellung im Satz, oder der Einsatz von Initialen, die einen Satzbeginn markieren. Beide Tools, das regelbasierte Skript sowie die Abfolge von Skript und Tool wurden auf drei Handschriftentexten unterschiedlicher Provenienz getestet: (1) die </hi>
+                <hi rend="italic" style="font-size:10pt">Vita des Aninas</hi>
+                <hi style="font-size:10pt" xml:space="preserve"> (11. Jh., südslavisch)</hi><ref n="6" target="ftn6"/>
+                <hi style="font-size:10pt" xml:space="preserve">; (2) die </hi>
+                <hi rend="italic" style="font-size:10pt">Katechesen Kyrills von Jerusalem</hi>
+                <hi style="font-size:10pt" xml:space="preserve"> (11. Jh., ostslavisch)</hi><ref n="7" target="ftn7"/>
+                <hi style="font-size:10pt" xml:space="preserve">; (3) der Traktat </hi>
+                <hi rend="italic" style="font-size:10pt">De lepra</hi>
+                <hi style="font-size:10pt" xml:space="preserve"> des Methodius von Olympus (16. Jh., ostslavisch)</hi><ref n="8" target="ftn8"/>
+                <hi style="font-size:10pt">. Die Ergebnisse wurden in Tabelle 1 anhand von ca. 350 GT-Sätzen pro Text quantitativ evaluiert (qualitativ in Jouravel et al., 2024)</hi><ref n="9" target="ftn9"/>
+                <hi style="font-size:10pt">.</hi>
+            </p>
+            <figure>
+                <graphic n="1001" width="16.209244444444444cm" height="4.619625cm" url="Pictures/35a9799a7c54b5e8d2f74ddd6e3de8cd.jpg" rend="inline"/>
+                <head>
+                    Tabelle 1: Vergleich F1-Score-Metrik der Satzsegmentierung mit regelbasiertem Skript, mit Tools und mit ihrer Kombination.
+                </head>
+            </figure>
+            
+            <p>
+                <hi style="font-size:10pt">Insgesamt fallen die Ergebnisse auf unbekanntem und (ortho)graphisch heterogenem Textmaterial eher niedrig aus, was jedoch für historische Sprachstufen nicht ungewöhnlich ist. Dennoch spricht der höhere F1-Wert, der bei der Kombination aus regelbasiertem Skript und einem Tool in zwei von drei Fällen erzielt wurde, dafür, einen regelbasierten Ansatz in den Arbeitsablauf zu integrieren. Zugleich zeigt die Auswertung sowohl der Universal-Dependencies-benchmark-GT von Text (1) als auch der von uns erstellten GT von Text (2) und (3), dass eine allgemeingültige Satzgrenzdefinition für historische Sprachstufen ohne (satzanzeigende) Interpunktion nicht trivial ist und einer Diskussion innerhalb der Fachgemeinschaft bedarf. </hi>
+            </p>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                    
+                        <hi style="font-size:8pt">https://readcoop.eu/de/transkribus/</hi>
+                    
+                </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                    
+                        <hi style="font-size:8pt">https://universaldependencies.org/treebanks/cu_proiel/index.html</hi>
+                    
+                </note>
+<note rend="footnote text" xml:id="ftn3" n="3">
+                    
+                        <hi style="font-size:8pt">https://universaldependencies.org/treebanks/orv_torot/index.html</hi>
+                    
+                </note>
+<note rend="footnote text" xml:id="ftn4" n="4">
+                    
+                        <hi rend="italic" style="font-size:8pt">Stanza</hi>
+                        <hi style="font-size:8pt" xml:space="preserve">: language code ‘cu’; </hi>
+                        <hi rend="italic" style="font-size:8pt">UDPipe</hi>
+                        <hi style="font-size:8pt">: old_church_slavonic-proiel-ud-2.12-230717</hi>
+                    
+                </note>
+<note rend="footnote text" xml:id="ftn5" n="5">
+                    
+                        <hi rend="italic" style="font-size:8pt">Stanza</hi>
+                        <hi style="font-size:8pt" xml:space="preserve">: language code ‘orv’, mit Python-Package ‘torot’; </hi>
+                        <hi rend="italic" style="font-size:8pt">UDPipe</hi>
+                        <hi style="font-size:8pt">: old_east_slavic-torot-ud-2.12-230717</hi>
+                    
+                </note>
+<note rend="footnote text" xml:id="ftn6" n="6">
+                    
+                        <hi style="font-size:8pt" xml:space="preserve">aus </hi>
+                        <hi rend="italic" style="font-size:8pt">Codex Suprasliensis</hi>
+                        <hi style="font-size:8pt">; Sign. BN BOZ 201, Cod. Kop. 2Q, perg. I. 72; http://suprasliensis.obdurodon.org/</hi>
+                    
+                    
+                        <hi style="font-size:8pt">Teil des Testsets der Universal Dependencies benchmark.</hi>
+                    
+                    
+                        <hi style="font-size:8pt">vgl. https://github.com/UniversalDependencies/UD_Old_Church_Slavonic-PROIEL#data-splits</hi>
+                    
+                </note>
+<note rend="footnote text" xml:id="ftn7" n="7">
+                    
+                        <hi style="font-size:8pt">GIM, Sin. 478, ed. Weiher, 2017.</hi>
+                    
+                </note>
+<note rend="footnote text" xml:id="ftn8" n="8">
+                    
+                        <hi style="font-size:8pt"> GIM, Sin. 995, Fol. 310r–315r, ed. Jouravel et. al., 2024.</hi>
+                    
+                </note>
+<note rend="footnote text" xml:id="ftn9" n="9">
+                    
+                        <hi style="font-size:8pt">vgl. das Evaluationsskript https://github.com/ufal/udpipe/blob/udpipe-2/udpipe2_eval.py</hi>
+                    
+                </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Camps, Jean-Baptiste, Thibault Clérice und Ariane Pinche</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. 2019. „Stylometry for Noisy Medieval Data: Evaluating Paul Meyer’s Hagiographic Hypothesis.“ </hi>
+                        <hi rend="italic" style="font-size:10pt">arXiv preprint, arXiv: 2012.03845.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Devlin, Jacob, Ming-Wei Chang, Kenton Lee und Kristina Toutanova</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. 2019. “BERT: Pre-Training of Deep Bidirectional Transformers for Language Understanding.” In </hi>
+                        <hi rend="italic" style="font-size:10pt" xml:space="preserve">Proceedings of the 2019 Conference of the North, </hi>
+                        <hi style="font-size:10pt">hg. von Jill Burstein, Christy Doran und Thamar Solorio, 4171–4186. Stroudsburg, PA, USA: Association for Computational Linguistics.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Franzini, Greta, Mike Kestemont, Gabriela Rotari, Melina Jander, Jeremi K. Ochab, Emily Franzini, Joanna Byszuk und Jan Rybicki</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. 2018. “Attributing Authorship in the Noisy Digitized Correspondence of Jacob and Wilhelm Grimm.” </hi>
+                        <hi rend="italic" style="font-size:10pt">Frontiers in Digital Humanities</hi>
+                        <hi style="font-size:10pt">, 5.4: 1–15.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Jouravel, Anna, Elena Renje, Piroska Lendvai und Achim Rabus</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. 2024. “Assessing Automatic Sentence Segmentation in Medieval Slavic Texts.” In </hi>
+                        <hi rend="italic" style="font-size:10pt">Proceedings of the Digital Humanities Conference</hi>
+                        <hi style="font-size:10pt">, Arlington, VA, USA, August 2024.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Jouravel, Anna, Janina Sieber und Katharina Bracht</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">, hg. 2024. </hi>
+                        <hi rend="italic" style="font-size:10pt">Methodius Von Olympus: De Lepra. Griechischer Und Slavischer Text, Mit Einleitung Und Deutscher Übersetzung.</hi>
+                        <hi style="font-size:10pt" xml:space="preserve"> Die griechischen christlichen Schriftsteller der ersten drei Jahrhunderte NF, 31. Berlin: De Gruyter.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Lendvai, Piroska, Uwe Reichel, Anna Jouravel, Achim Rabus und Elena Renje</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. 2023. “Domain-Adapting BERT for Attributing Manuscript, Century and Region in Pre-Modern Slavic Texts.” In </hi>
+                        <hi rend="italic" style="font-size:10pt" xml:space="preserve">Proceedings of the 4th International Workshop on Computational Approaches to Historical Language Change 2023 (LChange'23) </hi>
+                        <hi style="font-size:10pt">co-located mit EMNLP2023, Singapur, Dezember 2023: 15–21.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Polomac, Vladimir</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. 2024. “Macarius a HTR Model for Romanian Slavonic Early Printed Books.” </hi>
+                        <hi rend="italic" style="font-size:10pt">Slavistica Vilnensis</hi>
+                        <hi style="font-size:10pt" xml:space="preserve"> 68.2: 10–23.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Qi, Peng, Yuhao Zhang, Yuhui Zhang, Jason Bolton und Christopher D. Manning</hi>
+                        <hi style="font-size:10pt">. 2020.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:10pt" xml:space="preserve">“Stanza: A Python Natural Language Processing Toolkit for Many Human Languages.” In </hi>
+                        <hi rend="italic" style="font-size:10pt">Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics: System Demonstrations</hi>
+                        <hi style="font-size:10pt">, hg. von Asli Celikyilmaz und Tsung-Hsien Wen, 101–108.  Stroudsburg, PA, USA: Association for Computational Linguistics.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Rabus, Achim</hi>
+                        <hi style="font-size:10pt">. 2019. “Recognizing Handwritten Text in Slavic Manuscripts: A Neural</hi>
+                        <hi style="font-family:Cambria Math;font-size:10pt">-</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">Network Approach Using Transkribus.” </hi>
+                        <hi rend="italic" style="font-size:10pt">Scripta &amp; E</hi>
+                        <hi rend="italic" style="font-family:Cambria Math;font-size:10pt">-</hi>
+                        <hi rend="italic" style="font-size:10pt">Scripta</hi>
+                        <hi style="font-size:10pt" xml:space="preserve"> 19: 9–32.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Rabus, Achim, Arnold Eckhart, Anna Jouravel, Piroska Lendvai, Martin Meindl, Vladimir Polomac und Elena Renje</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. 2023. “Developing a Pipeline for Automatic Linguistic Analysis of Historical Manuscripts and Early Printings: The Pre-Modern Slavic Case.” In </hi>
+                        <hi rend="italic" style="font-size:10pt">Proceedings of the Digital Humanities Conference</hi>
+                        <hi style="font-size:10pt">, Graz, Österreich, Juli 2023: 112–113. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Straka, Milan</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. 2018. “UDPipe 2.0 Prototype at CoNLL 2018 UD Shared Task.” In </hi>
+                        <hi rend="italic" style="font-size:10pt">Proceedings of the CoNLL 2018 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies</hi>
+                        <hi style="font-size:10pt">, hg. von Daniel Zeman und Jan Hajič, 197–207. Stroudsburg, PA, USA: Association for Computational Linguistics.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Weiher, Eckhard</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">, hg. 2017. </hi>
+                        <hi rend="italic" style="font-size:10pt" xml:space="preserve">Die altbulgarische Übersetzung der Katechesen Kyrills von Jerusalem. </hi>
+                        <hi style="font-size:10pt">Monumenta linguae Slavicae dialecti veteris 64. Freiburg i.Br.: Weiher.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Xue, Linting, Noah Constant, Adam Roberts, Mihir Kale, Rami Al-Rfou, Aditya Siddhant, Aditya Barua und Colin Raffel</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. 2020. „mT5: A massively multilingual pre-trained text-to-text transformer.“ </hi>
+                        <hi rend="italic" style="font-size:10pt">arXiv preprint arXiv:2010.11934</hi>
+                        <hi style="font-size:10pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Xue, Linting, Aditya Barua, Noah Constant, Rami Al-Rfou, Sharan Narang, Mihir Kale, Adam Roberts und Colin Raffel</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. 2022. „Byt5: Towards a token-free future with pre-trained byte-to-byte models.“ </hi>
+                        <hi rend="italic" style="font-size:10pt">Transactions of the Association for Computational Linguistics</hi>
+                        <hi style="font-size:10pt" xml:space="preserve"> 10: 291–306.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

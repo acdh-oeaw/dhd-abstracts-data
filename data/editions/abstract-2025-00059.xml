@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="SCHWINDT_Mark_Netzwerkanalyse_von_Erw_hnungen_der_Pers_nlich">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Netzwerkanalyse von Erwähnungen der Persönlichkeiten in der russischen Ideengeschichte</title>
+                <author>
+                    <persName>
+                        <surname>Schwindt</surname>
+                        <forename>Mark</forename>
+                    </persName>
+                    <affiliation>Freie Universität Berlin, Deutschland</affiliation>
+                    <email>mark.schwindt@fu-berlin.de</email>
+                    <idno type="ORCID">0000-0002-4337-2467</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-11-25T10:20:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Doctoral Consortium</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Netzwerkanalyse</term>
+                    <term>Ideengeschichte</term>
+                    <term>Russland</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung</head>
+                <p style="text-align: left; text-align: justify;">Die russische Ideengeschichte ist reich an bedeutenden Persönlichkeiten und intellektuellen Strömungen, die das kulturelle und gesellschaftliche Leben des Landes maßgeblich beeinflusst haben. Von den Werken der Schriftsteller des Goldenen Zeitalters bis hin zu den Schriften der sowjetischen Dissidenten spiegelt die russische ideengeschichtliche Literatur die komplexe und oft turbulente Geschichte Russlands wider. In diesem Forschungsprojekt wird die Netzwerkanalyse verwendet, um die Erwähnungen von Persönlichkeiten in der russischen ideengeschichtlichen Literatur von der Mitte des 19. Jahrhunderts bis heute zu untersuchen. Diese Analyse zielt darauf ab, tiefere Einblicke in die sozialen und intellektuellen Netzwerke zu gewinnen, die die russische ideengeschichtliche Entwicklung geprägt haben. Indem wir die Netzwerke der erwähnten Persönlichkeiten analysieren, können wir besser verstehen, wie Ideen und Einflüsse sich über Generationen hinweg verbreitet und entwickelt haben.</p>
+                <p style="text-align: left; text-align: justify;">Das Projekt nutzt dafür eine Sammlung von 250 ideengeschichtlichen Sammelbänden als Korpus, das bereits teilweise im TEI/XML-Format annotiert wurde. Diese öffentlichen Streitschriften von Intellektuellen haben seit dem 19. Jahrhundert eine einzigartige Textgattung in der russischen Ideengeschichte gebildet (Sapov, 2009, 15). Bekannte Beispiele sind 
+                    <hi rend="italic">Problemy idealizma</hi> (Berdjaev et al., 1902), 
+                    <hi rend="italic">Vechi</hi> (Berdjaev et al., 1909), 
+                    <hi rend="italic">Iz glubiny</hi> (Berdjaev et al., 1918) sowie Sammelbände sowjetischer Dissidenten wie 
+                    <hi rend="italic">Iz-pod glyb</hi> (Solženicyn et al., 1974) und 
+                    <hi rend="italic">Samosoznanie</hi> (Barabanov et al., 1976). Diese Streitschriften bieten nicht nur einen Einblick in zeitkritische Themen, sondern dokumentieren auch die öffentliche Präsenz der Autoren und Autorinnen sowie ihrer Ideen innerhalb und außerhalb Russlands.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Methodik </head>
+                <p>Die methodische Grundlage dieser Studie bildet die Netzwerkanalyse, die sich in den letzten Jahren zu einer essentiellen Methode in den Digital Humanities entwickelt hat (Fischer, Skorinkin, 2021, 517). Die Analyse wird mit dem Software-Tool 
+                    <hi rend="italic">Gephi</hi> (Bastian et al., 2009) durchgeführt. Bei der Vorverarbeitung der Daten wurden die Erwähnungen von Persönlichkeiten im Text durch die Verwendung der TEI P5 Richtlinien (TEI Consortium, 2024) im XML-Format annotiert. Diese Annotationen verlinken die erwähnten Persönlichkeiten mit Wikidata-Einträgen, was eine eindeutige Identifizierung und zusätzliche Kontextualisierung ermöglicht.
+                </p>
+                <p>Die Netzwerkkonstruktion bildet den nächsten wichtigen Schritt. Hierbei wird jede erwähnte Persönlichkeit als ein Knoten im Netzwerk dargestellt. Die Verbindungen (Kanten) zwischen diesen Knoten entstehen durch gemeinsame Erwähnungen innerhalb eines Artikels in einem Sammelband. Um potenzielle thematische Ähnlichkeiten zwischen den einzelnen Artikeln aufzuzeigen, werden auch die Erwähnungen derselben Persönlichkeiten innerhalb des gesamten Sammelbandes durch Kanten verbunden. Diese Ähnlichkeitsmetrik basiert auf dem Konzept der Kozitation, wonach zwei Artikel, die stark überlappende Referenzen aufweisen, mit hoher Wahrscheinlichkeit ein verwandtes Thema behandeln (Bu et al., 2018, 276). Zur Identifikation zentraler Akteure wird die Eigenvektorzentralität als Metrik verwendet. Diese Wahl begründet sich dadurch, dass die Eigenvektorzentralität nicht nur die direkten Verbindungen eines Knotens berücksichtigt, sondern auch die Bedeutung der Knoten, mit denen er verbunden ist. Dies ermöglicht eine nuanciertere Erfassung der Einflussstrukturen im Netzwerk.</p>
+                <p>Zur Identifikation thematischer Cluster wird eine Community-Erkennung basierend auf der Modularität (Blondel et al., 2008) durchgeführt. Die resultierenden Cluster werden anschließend inhaltlich analysiert, um thematische Schwerpunkte zu identifizieren. Dieser Ansatz ermöglicht es, Zusammenhänge zwischen Personen und Ideen sichtbar zu machen, die bei einer rein qualitativen Analyse möglicherweise übersehen worden wären.</p>
+                <p>Durch diese umfassende Methodik können verschiedene Forschungsfragen adressiert werden: Es lässt sich untersuchen, welche Persönlichkeiten zu verschiedenen Zeiten besonders einflussreich im ideengeschichtlichen Diskurs waren, wie sich die Struktur des intellektuellen Netzwerks im Laufe der Zeit veränderte, welche thematischen Schwerpunkte sich in verschiedenen Perioden identifizieren lassen und wie sich historische Ereignisse und Umbrüche in der Netzwerkstruktur widerspiegeln.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Perspektiven und Anschlüsse</head>
+                <p>Ein weiterer interessanter Aspekt zukünftiger Forschung könnte die Analyse der internationalen Einflüsse auf die russische Ideengeschichte sein. Durch die Untersuchung der erwähnten Persönlichkeiten könnten neue Erkenntnisse darüber gewonnen werden, wie globale intellektuelle Strömungen die russische Ideengeschichte beeinflusst haben. Diese transnationale Perspektive könnte dazu beitragen, die russische Ideengeschichte in einen breiteren globalen Kontext zu stellen und die komplexen Wechselwirkungen zwischen verschiedenen intellektuellen Traditionen zu beleuchten.</p>
+                <p>Darüber hinaus könnte die Analyse der Veränderungen in den Netzwerken über längere Zeiträume hinweg dazu beitragen, langfristige Trends und Muster in der ideengeschichtlichen Entwicklung zu identifizieren. Dies könnte wiederum zu einem besseren Verständnis der Mechanismen führen, die den ideengeschichtlichen Wandel antreiben, und neue Wege für die Untersuchung anderer historischer und kultureller Phänomene eröffnen. Diese Methode entspricht den Erkenntnissen von Moretti, der abstrakte Modelle für die literarische Geschichte vorschlägt und zeigt, wie die quantitative Analyse literarischer Texte neue Einsichten ermöglicht (Moretti, 2007, 91).</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl style="text-align: left; "><hi rend="bold">Barabanov, Evgenij et al.</hi> 1976. 
+                        <hi rend="italic">Samosoznanie: Sbornik statej</hi>. N’ju-Jork.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Bastian, Mathieu, Sebastien Heymann and Mathieu Jacomy</hi>. 2009. “Gephi: an open source software for exploring and manipulating networks.” In 
+                        <hi rend="italic">International AAAI Conference on Weblogs and Social Media.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Berdjaev, Nikolaj et al.</hi> 1902. 
+                        <hi rend="italic">Problemy idealizma</hi>. Moskva.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Berdjaev, Nikolaj et al.</hi> 1909. 
+                        <hi rend="italic">Vechi</hi>: 
+                        <hi rend="italic">Sbornik statej o russikoj intelligencii</hi>. Moskva.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Berdjaev, Nikolaj et al.</hi> 1918. 
+                        <hi rend="italic">Iz glubiny: Sbornik statej o russkoj revoljucii</hi>. Moskva.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Blondel, Vincent D., Jean-Loup Guillaume, Renaud Lambiotte and Etienne Lefebvre</hi>. 2008. “Fast unfolding of communities in large networks.” In 
+                        <hi rend="italic">Journal of Statistical Mechanics: Theory and Experiment</hi>, 2008 (10), P1000. 
+                        <ref target="https://doi.org/10.48550/arXiv.0803.0476">https://doi.org/10.48550/arXiv.0803.0476</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Bu, Y., B. Wang, W. Huang, S. Che and Y. Huang</hi>. 2018. “Using the appearance of citations in full text on author co-citation analysis.” In 
+                        <hi rend="italic">Scientometrics</hi>, 116, 275–289. 
+                        <ref target="https://doi.org/10.1007/s11192-018-2757-z">https://doi.org/10.1007/s11192-018-2757-z</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Fischer, Frank and Daniil Skorinkin</hi>. 2021. “Social Network Analysis in Russian Literary Studies.” In 
+                        <hi rend="italic">The Palgrave Handbook of Digital Russia Studies</hi>, 517–536. 
+                        <ref target="https://doi.org/10.1007/978-3-030-42855-6_29">https://doi.org/10.1007/978-3-030-42855-6_29</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Moretti, Franco</hi>. 2007. 
+                        <hi rend="italic">Graphs, Maps, Trees: Abstract Models for a Literary History</hi>. London. New York.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Sapov, V.V.</hi> 2009. 
+                        <hi rend="italic">Manifesty russkogo idealizma</hi>. Moskva.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Solženicyn, Aleksandr et al.</hi> 1974. 
+                        <hi rend="italic">Iz-pod glyb: Sbornik statej</hi>. Pariž.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">TEI Consortium, eds</hi>. 2024. 
+                        <hi rend="italic">TEI P5: Guidelines for Electronic Text Encoding and Interchange.</hi> 4.8.0. 2024-07-08. TEI Consortium. 
+                        <ref target="http://www.tei-c.org/Guidelines/P5/">http://www.tei-c.org/Guidelines/P5/</ref> (2024-07-21).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

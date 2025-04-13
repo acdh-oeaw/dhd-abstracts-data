@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="M_HLEDER_Peter_Hands_on_Workshop__Entwicklung_von_interaktiv">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Hands-on Workshop: Entwicklung von interaktiven 3D-Applikationen mit der Open-Source Game Engine Godot</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Mühleder</surname>
+                        <forename>Peter</forename>
+                    </persName>
+                    <affiliation>Sächsische Akademie der Wissenschaften, Deutschland</affiliation>
+                    <email>muehleder@saw-leipzig.de</email>
+                    <idno type="ORCID">0000-0001-6593-5673</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Naether</surname>
+                        <forename>Franziska</forename>
+                    </persName>
+                    <affiliation>Sächsische Akademie der Wissenschaften, Deutschland</affiliation>
+                    <email>naether@saw-leipzig.de</email>
+                    <idno type="ORCID">0000-0003-4652-6836</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Goldhahn</surname>
+                        <forename>Dirk</forename>
+                    </persName>
+                    <affiliation>Sächsische Akademie der Wissenschaften, Deutschland</affiliation>
+                    <email>goldhahn@saw-leipzig.de</email>
+                    <idno type="ORCID">0000-0003-1681-567X</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bleckmann</surname>
+                        <forename>Patrice</forename>
+                    </persName>
+                    <affiliation>Sächsische Akademie der Wissenschaften, Deutschland</affiliation>
+                    <email>patriceb@t-online.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-06-20T13:41:11.677000000</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Workshop</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Game Engine</term>
+                    <term>3D-Modelle</term>
+                    <term>Softwareentwicklung</term>
+                    <term>Interaktivität</term>
+                    <term>Hackathon</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Gestaltung</term>
+                    <term>Programmierung</term>
+                    <term>Einführung</term>
+                    <term>3D-Bilder</term>
+                    <term>Software</term>
+                    <term>Visualisierung</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung</head>
+                <p>
+                    <hi rend="color(#000000)">3D-Visualisierungen</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">spielen in vielen Bereichen der Digital Humanities eine wichtige Rolle, insbesondere der Kunstgeschichte, Museologie, Archäologie und den Heritage Studies (Münster, 2022:5). Dabei stehen oft die Produktion und die Präsentation von 3D Objekten im Zentrum. Diese Workshop beschäftigt sich mit letzterem: Ziel ist es, eine Einführung in die Erstellung von interaktiven 3D-Anwendungen mittels einer </hi>
+                    <hi rend="italic">general purpose game engine</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">zu geben. </hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Bei einer Game Engine handelt es sich um ein Framework für die Entwicklung von Videospielen, welches ermöglicht, komplexe Echtzeit 2D- und 3D-Anwendungen zu entwickeln. Es gibt keine feste Definition über den Funktionsumfang von Game Engines, aber</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="italic">general purpose game engines</hi>
+                    <hi rend="color(#000000)">’ </hi>
+                    <hi rend="color(#000000)">enthalten in der Regel Komponenten oder Bibliotheken für alle relevanten Bereiche (Rendering, Physik-Simulation, Audio, Netzwerk, etc.). Darüber hinaus stellen Game Engines oft sogenannte visuelle </hi>
+                    <hi rend="italic">scene editors</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">zur Verfügung, die es erlauben, auf einfachem Wege detaillierte 3D-Szenen zu erstellen. </hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Die Godot Game Engine</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">(https://godotengine.org/) wurde bereits 2014 als Open-Source-Software auf GitHub veröffentlicht (https://github.com/godotengine/godot).</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">Seitdem wurde die Game Engine durch die Beiträge von hunderten Freiwilligen weiterentwickelt und</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">liegt derzeit in der Version 4 vor. Mittlerweile wird die Weiterentwicklung durch die Godot Foundation, einer 2022 gegründeten NGO, unterstützt und Godot konnte sich neben Unity und Unreal Engine als eine der meistgenutzten Game Engines etablieren. </hi>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/4dd5518aaf5b66ed2eb1d5462cb143f5.png"/>
+                        <head>Abb. 1: Der Godot Editor</head>
+                    </figure>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Potentiale von Game Engines in den DH
+                </head>
+                <p>
+                    <hi rend="color(#000000)">Game Engines können genutzt werden, sowohl um Forschungsergebnisse effektiv und immersiv zu kommunizieren, z. B. durch die Ausstellung von 3D-Rekonstruktionen in Museen, als auch durch </hi>
+                    <hi rend="italic">serious games</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">(Spiele, die primär Bildungsziele verfolgen).</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">Mit dem Medium “Videospiel” besteht die Möglichkeit, ein potentiell breites, interessiertes Zielpublikum anzusprechen: Robert Houghton beschreibt beispielsweise, dass es nicht mehr ungewöhnlich ist, dass Historiker:innen von großen Studios für Spiele wie “Assassin’s Creed” oder “Total War” zur Beratung engagiert werden und Forscher:innen argumentieren, dass diese Spiele als Brücke zwischen ‘academic and popular history’ fungieren</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">können (Houghton 2018:12-13).</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Darüber hinaus können in der universitären Lehre Game Engines verwendet werden, um </hi>
+                    <hi rend="italic">immersive experiences</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">für den Unterricht zu bauen. So zeigen Studien über Studierende, dass die Verwendung von immersiven VR-Umgebungen ihre Studienleistungen und ihr Engagement verbesserte: </hi>
+                    <hi rend="color(#000000)">“</hi>
+                    <hi rend="color(#000000)">The results of the study support the findings of</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">previous studies and demonstrate</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">the positive correlation between the use of immersive technology and positive outcomes such as increased excitement for the learning process, motivation, deeper learning, and long-term retention” (Hutson/Olsen 2022:61).</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Neben dem Bereichen des universitären und öffentlichen Wissenstransfers</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">können Game Engines auch als Forschungstools verwendet werden. Sander Münster beschreibt Simulationen als wichtigen Aspekt in der Forschungsarbeit mit 3D-Visualisierungen. Methoden wie </hi>
+                    <hi rend="italic">fluid simulation, lighting simulation, crowd simualtion, simulation of mechanical processes</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">etc. können hierbei neue Einblicke und Erkenntnisse hervorbringen (Münster 2022:9). Die Umsetzung solcher Simulationen ist aber oft sehr komplex und erfordert zahlreiche hochspezialisierte technische Fähigkeiten und Ressourcen. Der Einsatz von Game Engines kann hier hilfreich sein, da derartige Simulationen auch in Videospielen zum </hi>
+                    <hi rend="color(#000000)">Einsatz kommen  (z.B. </hi>
+                    <hi rend="italic">physically based rendering, crowd simulation, weather simulation </hi>
+                    <hi rend="color(#000000)">etc.). Die dafür entwickelten Lösungen sind oft entweder direkt in Game Engines integriert oder als Plugin verfügbar, wodurch sie auch in der Forschung eingesetzt werden können. Damit haben Game Engines den Effekt, Entwicklungszeiten und –kosten gering halten zu können (Brennan/Christiansen 2018:2).</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Im Cultural-Heritage Bereich wurden Game Engines schon früh eingesetzt, um z.B. die Erzähltraditionen indigener Völker zu dokumentieren: “to preserve the historically, culturally, and sociologically significant places, infrastructure and artefacts of many remote Australian Indigenous communities for current and future generations. The use of a game engine has proven to be instrumental in engaging with young and old members of these communities alike” (Wyeld et al. 2007). Gerade im Bereich des immateriellen Kulturerbes</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">ergeben sich somit interessante Anwendungsgebiete auch jenseits der Darstellung von 3D-Objekten (z.</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">B. die Rekonstruktion von interaktiven Ritualen, Erzählungen oder Performances mittels Animations- und Sprachdaten; die Einbindung von dynamischen Soundscapes; etc.) (siehe Skublewska-Paszkowska</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">et al. 2022).</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Durch die Bemühungen und Anstrengungen</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">von Forscher:innen und öffentlichen Einrichtungen wurden in den letzten Jahrzehnten eine Vielzahl von historischen Objekten digitalisiert und sowohl</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">öffentlich über Museen, Forschungsdatenrepositorien oder andere offene, als auch kommerzielle Plattformen zugänglich gemacht (siehe Brennan/Christiansen 2018). Durch den Gebrauch von Game Engines können wir interaktive und immersive 3D-Anwendungen bauen, um ihnen für Lehre und Wissenstransfer den Artefakten neues Leben einzuhauchen, aber auch,</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">um experimentelle, neue Forschungsansätze entwickeln. Die Godot Game Engine hat im Vergleich</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">zu anderen bekannten Game Engines</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">den Vorteil, dass sie vollständig Open-Source ist, wenig Ressourcen benötigt und aufgrund ihrer einfachen Architektur leicht zu erlernen ist, auch für Personen, die sich noch nie mit Spieleentwicklung beschäftigt haben.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Zielgruppe</head>
+                <p>
+                    <hi rend="color(#000000)">Dieser Workshop richtet sich an Personen, die Interesse an einem ersten Einblick in die Entwicklung von interaktiven 3D-Anwendungen, Visualisierungen bzw. Spielen haben. Vorwissen ist dabei nicht notwendig, wobei ein Grundwissen von Programmierung (z. B. in Python) für den zweiten Teil hilfreich</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">ist. Es ist so gedacht, dass Personen aller Erfahrungslevel etwas mitnehmen können. Daher ist der Workshop auf 20 Teilnehmer:innen beschränkt,</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">um</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">eine gute individuelle Betreuung zu gewährleisten. </hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Ablauf des Workshops</head>
+                <p>
+                    <hi rend="color(#000000)">Der Workshop besteht aus zwei Teilen</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">zu jeweils vier Stunden. Der erste Teil umfasst zunächst eine kurze Einführung über die Potentiale von interaktiven 3D-Anwendungen für die Digital Humanities. Anschließend folgt eine grundlegende Einführung zu Game Engines und Real-Time-Rendering. In der verbleibenden Zeit des ersten Blocks werden die Teilnehmer:innen in die Arbeit mit dem Editor der Godot Game</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">Engine eingeführt, importieren 3D-Objekte und erstellen einfache 3D-Szenen.</hi>
+                    <hi rend="color(#000000)"> </hi>
+                </p>
+                <list type="ordered">
+                    <item>Teil: Allgemeine Einführung (4h)</item>
+                </list>
+                <list type="unordered">
+                    <item>
+                        <hi rend="color(#000000)">Anwendungsgebiete für interaktive 3D-Applikationen in den DH (20 min)</hi>
+                    </item>
+                    <item>
+                        <hi rend="color(#000000)">Einführung in 3D-Engines und Real-Time-Rendering (20 min)</hi>
+                    </item>
+                    <item>Einführung in den Godot Editor (20 min)</item>
+                    <item>
+                        <hi rend="color(#000000)">Aufbau einer Godot-Anwendung: Scenes, Nodes und Ressourcen (10 min)</hi>
+                    </item>
+                    <item>
+                        <hi rend="color(#000000)">Import- und Exportworkflows von 3D-Objekten und -Szenen (30 min)</hi>
+                    </item>
+                    <item>
+                        <hi rend="color(#000000)">Aufbau einer 3D-Szene (Objekte, Belichtung, Kamera, ...) (45 min)</hi>
+                    </item>
+                    <item>
+                        <hi rend="color(#000000)">Übung: Erstellen einer 3D-Szene (45min)</hi>
+                    </item>
+                </list>
+                <p>
+                    <hi rend="color(#000000)">Der zweite Tel des Workshops zeigt,</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">wie</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">interaktive Anwendungen in Godot entwickelt werden können. Dabei wird zuerst eine kleine Einführung in die Engine-eigene - von Python inspirierte -Skriptsprache GDScript gegeben. Anschließend wird ein einfacher 3D-Actor in die Szene integriert (</hi>
+                    <hi rend="italic">first person player controlle</hi>
+                    <hi rend="color(#000000)">r) sowie die Möglichkeiten der integrierten </hi>
+                    <hi rend="italic">physics engine </hi>
+                    <hi rend="color(#000000)">von Godot vorgestellt. Im finalen Block (“Hackathon/Jam”)</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">werden die Teilnehmer:innen</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">eine kleine virtuelle Ausstellung erstellen: eine 3D-Szene,</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">in der</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">sich der User frei bewegen und 3D-Digitalisate betrachten kann. </hi>
+                </p>
+                <p>2. Teil: Interaktivität und Hackathon (4h)</p>
+                <list type="unordered">
+                    <item>Scripting in Godot (30 min)</item>
+                    <item>
+                        <hi rend="color(#000000)">Bewegen im 3D Raum – Implementierung eines eines einfachen </hi>
+                        <hi rend="italic">first person player controlle</hi>
+                        <hi rend="color(#000000)">r (30 min)</hi>
+                    </item>
+                    <item>
+                        <hi rend="italic">Physics based interaction</hi>
+                        <hi rend="color(#000000)">: Collider, Rigidbodies and Raycasts (30 min)</hi>
+                    </item>
+                    <item>
+                        <hi rend="color(#000000)">DH-Hackathon/Jam: Erstellung einer kleinen virtuellen Ausstellung (120 min)</hi>
+                    </item>
+                </list>
+                <p>
+                    <hi rend="color(#000000)">Im Anschluss an den Workshop erhalten die Teilnehmer:innen</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">die Möglichkeit, ihre 3D-Szenen mit dem</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">Workshopteam zu teilen, das diese dann zusammen als eine “spielbare” digitale Gruppenausstellung veröffentlicht.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Technische Voraussetzungen</head>
+                <p>Workshopraum: Beamer, WLAN, ausreichend Steckdosen</p>
+                <p>
+                    <hi rend="color(#000000)">Teilnehmende: Laptop (Windows, Linux oder Mac), zur Bedienung des Godot Editors wird eine Maus empfohlen; Godot Game</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">Engine (Cross-Platform, als ~43 MB großer Download verfügbar); optional: eigene 3D-Modelle/Digitalisate (die möglichst unter einer offenen Lizenz veröffentlicht sind)</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Workshopteam</head>
+                <p>
+                    <hi rend="color(#000000)">Peter Mühleder – Wissenschaftlicher Mitarbeiter im KompetenzwerkD an der Sächsischen Akademie der Wissenschaften zu Leipzig mit Fokus auf Research Software Engineering. Verfügt über sechs Jahre Erfahrung in der Umsetzung von Software-Projekten mit Godot und weiteren Game Engines (in Coding da Vinci Hackathons, Game-Jams, und als Freelance Game Developer).</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Franziska Naether</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">- Wissenschaftliche Mitarbeiterin im KompetenzwerkD an der Sächsischen Akademie der Wissenschaften zu Leipzig mit Fokus u. a. auf digitalen Ausstellungen. Hat Erfahrungen im analogen und digitalen Kuratieren im In- und Ausland sowie in der 3D-Digitalisierung antiker Artefakte (u. a. Digital Rosetta Stone Project, South Africa, Greece and Rome: A Digital Museum).</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Dirk Goldhahn – Wissenschaftlicher Mitarbeiter im KompetenzwerkD an der Sächsischen Akademie der Wissenschaften zu Leipzig</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">mit Fokus u. a. auf digitale Forschungsmethoden und Datenmodellierung.</hi>
+                </p>
+                <p>Patrice Bleckmann – Student der Informatik an der Universität Leipzig im Bereich Bild- und Signalverarbeitung. Seit 2024 Hilfskraft im KompetenzwerkD im Bereich Research Software Engineering.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Brennan, Matthew und Leif Christiansen</hi>
+                        <hi rend="color(#000000)">. 2018. „Virtual Materiality: A Virtual Reality Framework for the Analysis and Visualization of Cultural Heritage 3D Models“. In </hi>
+                        <hi rend="italic">Digital Heritage 2018 </hi>
+                        <hi rend="color(#000000)">(Conference Paper). </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Houghton, Robert</hi>
+                        <hi rend="color(#000000)">. 2018. „World, Structure and Play: A Framework for Games as Historical Research Outputs, Tools, and Processes“. In </hi>
+                        <hi rend="italic">Práticas da História</hi>
+                        <hi rend="color(#000000)">, 7, 11-43.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hutson, James und Trenton Olsen</hi>
+                        <hi rend="color(#000000)">. 2022. „Virtual Reality and Art History: A Case Study of Digital Humanities and Immersive Learning Environments“. In </hi>
+                        <hi rend="italic">Journal of Higher Education Theory and Practice</hi>
+                        <hi rend="color(#000000)">, 22(2), 50-65.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Münster, Sander</hi>
+                        <hi rend="color(#000000)">. 2022. „Digital 3D Technologies for Humanities Research and Education: An Overview“. In </hi>
+                        <hi rend="italic">Appl. Sci.</hi>
+                        <hi rend="color(#000000)">,12, 2426.DOI: 10.3390/app12052426.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Skublewska-Paszkowska, Maria, Marek Milosz, Pawel Powroznik und Edyta Lukasik</hi>
+                        <hi rend="color(#000000)">. 2022. „3D technologies for intangible cultural heritage preservation—literature review for selected databases“. In </hi>
+                        <hi rend="italic">Heritage Science</hi>
+                        <hi rend="color(#000000)">, 10:3. DOI: 10.1186/s40494-021-00633-x</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wyeld, Theodor G., Joti Carroll, Craig Gibbons, Brendan Ledwich, Brett Leavy, James Hills und Michael Docherty</hi>
+                        <hi rend="color(#000000)">. 2007. „Doing Cultural Heritage Using the Torque Game Engine: Supporting Indigenous Storytelling in a 3D Virtual Environment“. In </hi>
+                        <hi rend="italic">International Journal of Architectural Computing,</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">418-435. DOI:</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">10.1260/147807707781514931.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

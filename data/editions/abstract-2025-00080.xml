@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="SCHNEIDER_Philipp_CREST_Annotation__Ein_Tool_zur_Unterst_tzu">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>CREST Annotation. Ein Tool zur Unterstützung von Bildannotation mit Ontologien, IIIF und Machine Learning Modellen</title>
+                <author>
+                    <persName>
+                        <surname>Eckenstaler</surname>
+                        <forename>Sophie</forename>
+                    </persName>
+                    <affiliation>Humboldt-Universität zu Berlin, Deutschland</affiliation>
+                    <email>sophie.eckenstaler.1@hu-berlin.de</email>
+                    <idno type="ORCID">0000-0001-8633-0120</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schneider</surname>
+                        <forename>Philipp</forename>
+                    </persName>
+                    <affiliation>Humboldt-Universität zu Berlin, Deutschland</affiliation>
+                    <email>philipp.schneider.1@hu-berlin.de</email>
+                    <idno type="ORCID">0000-0002-6743-8600</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hiltmann</surname>
+                        <forename>Torsten</forename>
+                    </persName>
+                    <affiliation>Humboldt-Universität zu Berlin, Deutschland</affiliation>
+                    <email>torsten.hiltmann@hu-berlin.de</email>
+                    <idno type="ORCID">0000-0002-6757-6210</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Berse</surname>
+                        <forename>Dominic</forename>
+                    </persName>
+                    <affiliation>tapdo technologies GmbH, Münster, Deutschland</affiliation>
+                    <email>dominik.berse@tapdo.io</email>
+                    <idno type="ORCID">0000-0002-6307-8556</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Burgbacher</surname>
+                        <forename>Ulrich</forename>
+                    </persName>
+                    <affiliation>tapdo technologies GmbH, Münster, Deutschland</affiliation>
+                    <email>ulrich.burgbacher@tapdo.io</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-07-24T16:41:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Bildannotation</term>
+                    <term>Computer Vision</term>
+                    <term>Ontologien</term>
+                    <term>IIIF</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Datenerkennung</term>
+                    <term>Bilderfassung</term>
+                    <term>Programmierung</term>
+                    <term>Annotieren</term>
+                    <term>Bearbeitung</term>
+                    <term>Software</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einführung</head>
+                <p style="text-align: left; ">
+                    <anchor xml:id="docs-internal-guid-70b2b8f9-7fff-f72b-73"/>Das Poster stellt das 2024 veröffentlichte Bildannotationstool 
+                    <hi rend="italic">CREST Annotation</hi> (Schneider et al., 2024) vor, das am Lehrstuhl für Digital History<ref n="1" target="ftn1"/> in Zusammenarbeit mit der Firma 
+                    <hi rend="italic">tapdo</hi><ref n="2" target="ftn2"/> entwickelt wurde. Dieses erlaubt die halbautomatische Unterstützung von Annotationsprozessen durch flexibles Hinzuladen von Machine-Learning-Modellen zur Bilddetektion oder -segmentierung sowie von Ontologien als Grundlage für Labelsets. Insbesondere die Segmentierung von Bilddaten wird so erheblich erleichtert. Zugleich werden durch die Nutzung von Ontologien mit dem Tool erstellte (Trainings-)Datensets interoperabel.
+                </p>
+                <p style="text-align: left; ">Dadurch adressiert 
+                    <hi rend="italic">CREST Annotation</hi> gleich mehrere Herausforderungen, die bei der Bildannotation üblicherweise bestehen und von bestehenden Tools nur bedingt oder gar nicht adressiert werden:
+                </p>
+                <list type="unordered">
+                    <item>Ein hoher Zeitaufwand bei der manuellen Annotation von Bilddaten – besonders bei der Erstellung von Segmentierungsmasken,</item>
+                    <item>fehlende Interoperabilität zwischen unterschiedlichen annotierten Datensätzen sowie</item>
+                    <item>fehlende Möglichkeiten zur semantischen Hierarchisierung von Labels.</item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Tool 
+                    <hi rend="italic">CREST Annotation</hi>
+                </head>
+                <p style="text-align: left; ">
+                    <anchor xml:id="docs-internal-guid-33b289e4-7fff-46e0-d4"/>Die drei Hauptfunktionen von 
+                    <hi rend="italic" xml:space="preserve">CREST Annotation </hi>sind der Import von Bildern und Labels, das manuelle oder halbautomatische Annotieren und der Export der Annotationsdaten. Die Daten sind in Projekten organisiert, die von User*innen vorab angelegt werden (Figure 1). 
+                </p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="7.251347222222222cm" url="Pictures/6824b92abcd26a5b8d18e109632c2421.png" rend="inline"/>
+                    <head>Projekte in CREST Annotation</head>
+                </figure>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Bild- und Labelimport</head>
+                    <p style="text-align: left; ">
+                        <anchor xml:id="docs-internal-guid-a8957e21-7fff-5731-13"/>Für den Bildimport gibt es zwei Optionen: Zentral ist der Upload via IIIF-Manifest, mit der IIIF Image API (Version 2.1 und 3.0)<ref n="3" target="ftn3"/>. Erweitert wurde die Funktion außerdem um den Upload aus dem lokalen Filesystem. Für das Anlegen der Labels steht eine Uploadfunktion von Ontologien mit JSON-LD zur Verfügung. Diese Funktion ermöglicht es, ein kontrolliertes Vokabular beim Annotieren zu nutzen sowie Klassenhierarchien innerhalb der Labels abzubilden (Figure 2). Zudem macht es die Bildannotationen für die Integration in einen Knowledge Graph einfacher interoperabel. Werden jedoch nur wenige flache Labels für das Annotieren benötigt, können diese auch manuell angelegt werden. 
+                    </p>
+                    <figure>
+                        <graphic n="1002" width="16.002cm" height="20.51226388888889cm" url="Pictures/918574a1c03c66cb33f53a621e8e832c.png" rend="inline"/>
+                        <head>Upload von Ontologien zur Erstellung von Labelsets</head>
+                    </figure>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Annotieren</head>
+                    <p style="text-align: left; ">
+                        <anchor xml:id="docs-internal-guid-9b2dce77-7fff-3f86-fd"/>Für das manuelle Annotieren stehen verschiedene in anderen Annotationstools (Mirador, Labelstudio, etc.) ebenfalls verwendete Werkzeuge zur Verfügung. Dazu gehört das Erstellen der Formen Polygon, Rechteck, Kreis oder Freihand entweder mit Maus oder per Stift (Tablet). Formen lassen sich zudem gruppieren und mit einem Label klassifizieren. Neu ist die AI-unterstützte Bildannotation, mit der Objekte in Bildern automatisch segmentiert oder detektiert werden können. Mit Aktivierung des Zauberstab-Werkzeugs wird das Backend für die Computer Vision konfiguriert, indem ein Modell sowie ein Modus für die AI-unterstützte Bildannotation gewählt werden. Aktuell stehen dafür eine Vorsegmentierung sowie eine Segmentierung nach Auswahl des Users zur Verfügung (Figure 3 und 4). Das Labeln der einzelnen Segmente funktioniert derzeit noch nicht automatisch, sondern muss durch den User erfolgen. Das AI-Feature erlaubt das modulare Nachladen von ML-Modellen, wodurch verschiedene, auch eigene Modelle für das Inferencing in der Anwendung nutzbar gemacht werden können. 
+                    </p>
+                    <figure>
+                        <graphic n="1003" width="16.002cm" height="12.70176388888889cm" url="Pictures/629b2f791cc3a9b9b267393917f6f0a5.png" rend="inline"/>
+                        <head>Segmentierung von Bildelementen mit ML-Modellen</head>
+                    </figure>
+                    <figure>
+                        <head>Segmentierung von Bildelementen mit ML-Modellen</head>
+                        <graphic n="1004" width="16.002cm" height="7.981597222222222cm" url="Pictures/2b3c292369392744a84f928919503e31.png" rend="inline"/>
+                        <head>Vorsegmentierung mit ML-Modellen</head>
+                    </figure>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Datenexport, Deployment und Techstack</head>
+                    <p style="text-align: left; ">
+                        <anchor xml:id="docs-internal-guid-c52066f6-7fff-f3e9-ad"/>Die Annotationsdaten können aus dem Tool exportiert und damit in anderen Kontexten weiterverarbeitet werden. Dafür werden die Daten in das standardisierte Format IIIF Open/Web Annotation überführt. 
+                    </p>
+                    <p style="text-align: left; ">
+                        <hi rend="italic">CREST Annotation</hi> ist eine containerisierte Open Source Anwendung, die lokal oder serverbasiert installiert werden kann. Das Backend umfasst eine PostgreSQL-Datenbank und eine FastAPI Anwendungsschnittstelle mit SQLAlchemy ORM. Daneben gibt es das Backend für die Computer Vision, das separat von der Hauptanwendung auf einem externen GPU-Server gehostet werden kann. Das Frontend wurde mit React und Redux (Toolkit) umgesetzt.
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>In der Praxis: Case Study 
+                    <hi rend="italic">Heraldik</hi>
+                </head>
+                <p style="text-align: left; ">
+                    <anchor xml:id="docs-internal-guid-02f3615a-7fff-54e7-fa"/>
+                    <hi rend="italic" xml:space="preserve">CREST Annotation </hi>wird im Projekt 
+                    <hi rend="italic">Digital Heraldry</hi><ref n="4" target="ftn4"/> eingesetzt, um Wappen in mittelalterlichen Handschriften zu erfassen. Dies umfasst sowohl die Annotation von einzelnen Wappenschilden, als auch die Segmentierung der Formen und Figuren, die auf diesen dargestellt sind.
+                </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Wappen-Annotationen</head>
+                    <p style="text-align: left; ">
+                        <anchor xml:id="docs-internal-guid-17aa0aa8-7fff-b852-65"/>Wappen erwiesen sich zugleich als gute Domäne zum Testen des Tools. Einzelne Wappen enthalten meist eine Vielzahl unterschiedlicher Figuren und geometrischer Formen, die in mehreren Layern über- und nebeneinander angeordnet sind. Gleichzeitig hat man es mit einer großen Vielfalt von knapp 1.000 unterschiedlichen Figuren zu tun, von denen die meisten jedoch nur sehr selten verwendet werden.
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Digital Heraldry Ontology und Segment Anything Modell</head>
+                    <p style="text-align: left; ">
+                        <anchor xml:id="docs-internal-guid-5651ead6-7fff-16b1-5e"/>Für die Label wurde die 
+                        <hi rend="italic">Digital Heraldry Ontology (</hi>Hitmann und Schneider, 2022) genutzt, die sowohl ein umfangreiches heraldisches Vokabular als auch ein formales System zur Beschreibung von Wappen beinhaltet. Als ML-Modell wurde bislang 
+                        <hi rend="italic" xml:space="preserve">Segment Anything (SAM) </hi>von Meta eingesetzt. Dieses wurde auf dem ebenfalls von Meta veröffentlichten 
+                        <hi rend="italic">SA-1B Dataset</hi> trainiert, das ca. 11 Millionen (moderne) Fotos und eine Milliarde Segmentierungsmasken enthält (Kirillov et al. 2023). Das Modell ließ sich bereits ohne weiteres Training mit großem Erfolg zur Annotation heraldischer Elemente verwenden (zero shot). Hier steht jedoch noch eine formale Evaluation aus, um zu prüfen, ob aufgrund der modernen Trainingsdaten ein Bias besteht und ein weiteres Training des Modells nötig ist.
+                    </p>
+                    <p style="text-align: left; ">
+                        <anchor xml:id="docs-internal-guid-c2628dfa-7fff-50b1-4f"/>Das Poster stellt die Funktionen von 
+                        <hi rend="italic">CREST Annotation</hi> vor und veranschaulicht diese an einem Fallbeispiel (Digital Heraldry) um mit potentiellen Nachnutzer*innen weitere Einsatzszenarien zu diskutieren.
+                    </p>
+                </div>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                         Digital History Lehrstuhl Website, 
+                            <ref target="https://www.geschichte.hu-berlin.de/de/bereiche-und-lehrstuehle/digital-history">https://www.geschichte.hu-berlin.de/de/bereiche-und-lehrstuehle/digital-history</ref>, zugegriffen am 24.07.2024
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                         tapdo technologies GmbH, Münster, 
+                            <ref target="https://tapdo.io/">https://tapdo.io/</ref>, zugegriffen am 24.07.2024.
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn3" n="3">
+                             International Image Interoperability Framework (IIIF), 
+                                <ref target="https://iiif.io/">https://iiif.io/</ref>, zugegriffen am 24.07.2024.
+                            
+                        </note>
+<note rend="footnote text" xml:id="ftn4" n="4">
+                         Digital Heraldry Projektwebsite, 
+                            <ref target="https://digitalheraldry.org/">https://digitalheraldry.org</ref>, zugegriffen am 24.07.2024
+                        
+                    </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hiltmann, Torsten</hi>, und 
+                        <hi rend="bold">Philipp Schneider</hi>. „Digital Heraldry Ontology“. Ontology Specification Draft, 2022. 
+                        <ref target="http://digitalheraldry.org/digital-heraldry-ontology/heraldry/">
+                            <hi rend="bold">http://digitalheraldry.org/digital-heraldry-ontology/heraldry/</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kirillov, Alexander</hi>, 
+                        <hi rend="bold">Eric Mintun</hi>, 
+                        <hi rend="bold">Nikhila Ravi</hi>, 
+                        <hi rend="bold">Hanzi Mao</hi>, 
+                        <hi rend="bold">Chloe Rolland</hi>, 
+                        <hi rend="bold">Laura Gustafson</hi>, 
+                        <hi rend="bold">Tete Xiao</hi>, et al. „Segment Anything“. arXiv, 5. April 2023. 
+                        <ref target="https://doi.org/10.48550/arXiv.2304.02643">https://doi.org/10.48550/arXiv.2304.02643</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">Label Studio, 
+                        <ref target="https://labelstud.io/">https://labelstud.io/</ref> (zuletzt abgerufen am 28.11.2024).
+                    </bibl>
+                    <bibl style="text-align: left; ">Project Mirador, 
+                        <ref target="https://projectmirador.org/">https://projectmirador.org/</ref> (zuletzt abgerufen am 28.11.2024).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Schneider, Philipp</hi>, 
+                        <hi rend="bold">Sophie Eckenstaler</hi>, und 
+                        <hi rend="bold">Torsten Hiltmann</hi>. 2024. "CREST Annotation." 
+                        <ref target="https://digitalheraldry.org/crest">https://digitalheraldry.org/crest</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

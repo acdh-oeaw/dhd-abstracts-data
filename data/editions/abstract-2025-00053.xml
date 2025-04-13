@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="SCHNEIDER_Sophie_Named_Entity_Uncertainty_Mining__Von_der_in">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Named Entity Uncertainty Mining: Von der intellektuellen zur computergestützten Untersuchung unsicherer Annotationen</title>
+                <author>
+                    <persName>
+                        <surname>Schneider</surname>
+                        <forename>Sophie</forename>
+                    </persName>
+                    <affiliation>Staatsbibliothek zu Berlin, Deutschland</affiliation>
+                    <email>sophie.schneider@sbb.spk-berlin.de</email>
+                    <idno type="ORCID">0000-0002-8303-1798</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bubula</surname>
+                        <forename>Michał</forename>
+                    </persName>
+                    <affiliation>Staatsbibliothek zu Berlin, Deutschland</affiliation>
+                    <email>michal.bubula@sbb.spk-berlin.de</email>
+                    <idno type="ORCID">0009-0004-6586-1319</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Labusch</surname>
+                        <forename>Kai</forename>
+                    </persName>
+                    <affiliation>Staatsbibliothek zu Berlin, Deutschland</affiliation>
+                    <email>kai.labusch@sbb.spk-berlin.de</email>
+                    <idno type="ORCID">0000-0002-7275-5483</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lehmann</surname>
+                        <forename>Jörg</forename>
+                    </persName>
+                    <affiliation>Staatsbibliothek zu Berlin, Deutschland</affiliation>
+                    <email>joerg.lehmann@sbb.spk-berlin.de</email>
+                    <idno type="ORCID">0000-0003-1334-9693</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Neudecker</surname>
+                        <forename>Clemens</forename>
+                    </persName>
+                    <affiliation>Staatsbibliothek zu Berlin, Deutschland</affiliation>
+                    <email>clemens.neudecker@sbb.spk-berlin.de</email>
+                    <idno type="ORCID">0000-0001-5293-8322</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-11-08T07:44:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Vortrag: Theorie, Metareflexion, Positionspapier</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Named Entities</term>
+                    <term>Annotation</term>
+                    <term>Unsicherheit</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Annotieren</term>
+                    <term>benannte Entitäten (named entities)</term>
+                    <term>Text</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Die Nutzungsszenarien von Named Entities (NE) erstrecken sich in den Digital Humanities von der semantischen Anreicherung digitalisierter Texte (Düring et al., 2022; Pfanzelter et. Al, 2021; Ehrmann et al., 2019) über weiterführende Untersuchungen mittels maschineller Verfahren wie Opinion Mining oder Topic Modeling (Labusch et al., 2024) bis hin zur Historischen Netzwerkanalyse (Bludau et al., 2022; Bludau et al., 2020). Es handelt sich dabei um einzelne Token bzw. eine Abfolge von Token im Text, die im Sinne des “rigid designator” nach Kripke (1980) einen eindeutigen Namen tragen, beispielsweise Eigennamen. Named Entities werden mittels computergestützter Verfahren wie der Named Entity Recognition (NER, s.a. Nadeau/Sekine, 2007) erkannt und z.B. als Personen, Orte oder Organisationen klassifiziert. Beim Entity Linking (EL) werden die Entitäten disambiguiert und mit Wissensbasen wie der Gemeinsamen Normdatei oder Wikidata verknüpft. Die Notwendigkeit einer Formalisierung für maschinelle Verfahren (vgl. Piotrowski, 2019; Rapp, 2017), etwa durch die Klassifizierung in vorab festgelegte Tagsets, führt jedoch zwangsweise dazu, dass im Falle einer Unsicherheit bei der Annotation eine unzulängliche Entscheidung zugunsten simulierter Eindeutigkeit getroffen werden muss. Auch Annotationsrichtlinien, die üblicherweise in einem iterativen Verfahren u.a. anhand der Besprechung solcher Unzulänglichkeiten fortlaufend verbessert werden (Reiter, 2020) und unter Umständen bereits sehr detaillierte Anweisungen enthalten, helfen bei dieser Problemstellung nur bedingt. Bei der Anwendung endlicher Regelwerke auf komplexe Gegenstände (z.B. historische Zeitungstexte) können immer wieder neue Fälle auftreten, die durch die Regeln nicht abgedeckt oder gar durch eindeutige Festlegungen entscheidbar sind. Dementsprechend kommt es in der Praxis zu Abweichungen und Unsicherheiten, die hinsichtlich der Vergleichbarkeit und Nachnutzbarkeit Probleme aufwerfen.</p>
+            <p style="text-align: left; ">Es existiert im Kontext geisteswissenschaftlicher Daten keine allgemeingültige Definition von Unsicherheit, allerdings wurden in verschiedenen Anwendungsbereichen der Digital Humanities Versuche einer Annäherung an den Begriff unternommen (vgl. z.B. Windhager et al., 2019; Edmond, 2018; Boukhelifa et al., 2017). Im Kontext von Annotationen besteht Unsicherheit dort, wo den Annotierenden keine eindeutige Zuordnung möglich ist. Unsicherheit entspricht in diesem Sinne einem höchst subjektiven Konzept, und die erzeugten Annotationen sind als konstruierte "capta" statt gegebener Fakten zu verstehen (Drucker, 2011).</p>
+            <p style="text-align: left; ">Dieser Beitrag führt in die Problematik der Nutzung unsicherer historischer Daten für das Training maschineller Verfahren ein, diskutiert Ursachen und Arten von Unsicherheiten in den für NER/EL zu annotierenden Daten und zeigt die Möglichkeiten computergestützter Unsicherheitsmessung auf. Auf der Grundlage einer umfassenden Literaturrecherche unternehmen wir eine Theoriereflexion, um die folgende Frage zu beantworten: Wie lassen sich Annotationsrichtlinien für historische NER/EL-Verfahren optimieren und die bei der Annotation auftretenden Unsicherheiten minimieren?</p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Entscheidungen bei der Annotation</head>
+                <p style="text-align: left; ">Die Annotation von Named Entities erweist sich aufgrund kontextabhängiger Bedeutungen oder der Verwendung stilistischer Mittel (z.B. Synonyme, Metonymien, Eponomasien) als problematisch. Unsicherheiten bezüglich der Identifizierung als Named Entity und der Klassifizierung in NE-Tags ergeben sich beispielsweise bei der Unterscheidung zwischen realen und fiktiven Entitäten, Familiennamen und Geburtsorten sowie Orten und Organisationen (Provatorova et al., 2024; Álvarez-Mellado et al., 2021; Heino et al., 2017). Ist der 
+                    <hi rend="italic">Päpstliche Stuhl</hi> eine Named Entity, eine Organisation? Taggt man das 
+                    <hi rend="italic">Weiße Haus</hi> oder den 
+                    <hi rend="italic">Dreibund</hi> als Organisation oder als Ort? Lässt sich 
+                    <hi rend="italic">Hegel'sche</hi> als Person auszeichnen?
+                </p>
+                <p style="text-align: left; ">Eine in Umfang und Grenzen korrekte Segmentierung von Entitäten stellt ebenfalls eine Herausforderung dar. Gehört bei 
+                    <hi rend="italic">F. Butzke &amp; Co., Aktiengesellschaft für Metallindustrie</hi> die 
+                    <hi rend="italic">Aktiengesellschaft für Metallindustrie</hi> noch zum Namen der Entität? Wie wird bei Funktionen und Titeln wie 
+                    <hi rend="italic">Fürst</hi> oder 
+                    <hi rend="italic">Dr.</hi> vorgegangen? Abseits der Urteilskraft einzelner Annotierender können auch vorangegangene Prozessierungsschritte wie die Layout- und Texterkennung sowie Token-/Satzsegmentierung die Annotation hierbei erschweren. Sehen die Annotationsrichtlinien eine Verschachtelung (Nesting) von Entitäten vor, steigt die Granularität von Annotationen – dies kann sich im Hinblick auf das Auftreten von Unsicherheiten sowohl positiv als auch negativ auswirken (Rücker/Akbik, 2023; Monroc et al., 2022; Álvarez-Mellado et al., 2021).
+                </p>
+                <p style="text-align: left; ">Sowohl die Disambiguierung als auch das daran anschließende Linking von Entitäten erfolgt unter Zuhilfenahme externer Datenquellen. Hierbei wird bestimmt, ob in der verwendeten Wissensbasis ein Eintrag zur jeweiligen Entität enthalten ist. Aufgrund von Ambiguitäten können mehrere Einträge infrage kommen, sodass ein Verfahren Wahrscheinlichkeiten für die Liste an Kandidaten für die Verknüpfung generieren muss (Labusch/Neudecker, 2020). Sind in der Datenbank Einträge vorhanden, die nur teilweise zutreffen (da sie zu spezifisch oder abstrakt sind), oder Duplikate, aus denen eine Auswahl getroffen werden muss (Ling et al., 2015), ist es für Annotierende nicht immer leicht zu entscheiden, welcher Eintrag in einer externen Ressource die gegebene Entität am besten beschreibt. Zum Teil liefert ein Text keine ausreichenden Hinweise darauf, welche Person innerhalb eines tief verzweigten Adelsgeschlechts oder welche Regierung (Auf welches Kabinett Deladier (I - V) bezieht sich 
+                    <hi rend="italic">Regierung Daladier</hi>?) genau gemeint sein könnte. Eine stilistische Verwendung von Sprache erschwert den Prozess der Zuordnung zusätzlich: Wenn von 
+                    <hi rend="italic">diesem Saulus-Paulus</hi> die Rede ist, kann zwar auf Paulus von Tarsus verlinkt werden, gemeint ist allerdings im Sinne der Redewendung 
+                    <hi rend="italic">vom Saulus zum Paulus</hi><ref n="1" target="ftn1"/> eine andere Entität.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Original und Bearbeitungen</head>
+                <p style="text-align: left; ">Bereits im Original kann eine historische Quelle Fehler enthalten und/oder der natürlichen Materialzersetzung unterliegen (Blouin et al., 2024; Hamdi et al., 2020). Die spätere Edition und Transkription historischer bzw. handschriftlicher Texte ist an eine Interpretation gebunden, welche auf falschen Annahmen aufbauen oder letztlich zu solchen führen kann (Dereza et al., 2023; Cameron et al., 2022). Weitere Verarbeitungsschritte, die NER und EL primär ermöglichen, sich allerdings auch als fehleranfällig und damit ursächlich für die Entstehung von Unsicherheiten erweisen können, sind:</p>
+                <list type="unordered">
+                    <item>der Digitalisierungs-/Scanprozess</item>
+                    <item>Optical Character Recognition (OCR) bzw. Handwritten Text Recognition (HTR) (Monroc et al., 2022; Hamdi et al., 2020)</item>
+                    <item>NER als Voraussetzung für EL</item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Kontext und Beschreibung</head>
+                <p style="text-align: left; ">Texte sind Produkte ihres Kontexts, ihrer Zeit und Regionalität, und die enthaltenen Bezüge sind im Nachhinein oftmals nur schwer zu rekonstruieren (Ardanuy et al., 2023). Der Verlust entsprechenden Kontextwissens stellt eine Herausforderung für die Disambiguierung und Verknüpfung von Entitäten dar, z. B. wenn der Titel oder die Funktion einer Person ohne Namen, ein Ereignis ohne genaues Datum oder ein Familienname ohne zusätzliche Informationen gegeben wird (Munnelly/Lawless, 2018; Heino et al., 2017). Metadaten können Auskunft zur Provenienz eines Objekts sowie dessen Zugangs-/Nutzungsmöglichkeiten geben, fehlende oder unvollständige Metadaten hingegen können Unsicherheiten erzeugen oder verstärken.</p>
+                <p style="text-align: left; ">Die Qualität und Abdeckung der Beschreibung von Entitäten in Wissensbasen (z.B. Wikidata, DBpedia), Normdateien (z. B. GND, s.a. Rettinghaus, 2024) oder domänenspezifischen Ontologien haben ebenfalls Einfluss auf die Entstehung von Unsicherheiten bei der Annotation. Die Ressourcen decken nicht alle Sprachen gleichermaßen ab und Kategorien passen teilweise nicht zu definierten NE-Klassen (Linhares Pontes et al., 2020). Gerade in historischen Texten erwähnte Entitäten sind in modernen Wissenssystemen nicht enthalten (sogenannte NIL oder OOKB (=out-of-knowledge-base) Entities) oder unvollständig bzw. fehlerhaft repräsentiert (Clematide et al., 2023; Ehrmann et al., 2022; Heino et al., 2017; Munnelly/Lawless, 2018; Ling et al., 2015). Die Dynamiken communitybasierter Änderungen erschweren zudem langfristige Evaluierungsstudien (Menzel et al., 2021).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Diachroner Wandel</head>
+                <p style="text-align: left; ">Ressourcen, die für NER und EL verwendet werden, sind nicht statisch und können sich im Laufe der Zeit wandeln. Vor allem im Rahmen digitaler Editionen führt jede Bearbeitung neue Ergänzungen, Streichungen oder andere Änderungen in ein Dokument ein. Grundsätzlich handelt es sich um etablierte Editionspraktiken, die allerdings einem diachronen Wandel sowie individuellem Einfluss unterliegen und selten in den Metadaten dokumentiert werden (Dereza et al., 2023).</p>
+                <p style="text-align: left; ">Sprachliche Standards entwickeln sich im Laufe der Zeit. So weisen historische Texte unzählige sprachliche Varianten auf, auch bei der Schreibung von Entitätsnamen (Provatorova et al., 2024; Ehrmann et al., 2023; Cameron et al., 2022). Die Mehrsprachigkeit von Dokumenten erzeugt weitere Variation, z. B. wenn Entitätsnamen oder andere Wörter und Phrasen nicht mit der Hauptsprache des Textes übereinstimmen (Ehrmann et al., 2022; Hamdi et al., 2021; Linhares Pontes et al., 2020). Da sich orthografische Konventionen und die Verwendung oder Bedeutung von Wörtern diachron entwickeln, können zudem Diskrepanzen zwischen der historischen Sprache eines Textes und der in modernen Ressourcen wie Wissensdatenbanken oder Benchmark-Datensätzen verwendeten Sprache beobachtet werden (Dereza et al., 2023; Lai et al., 2021; Menzel et al., 2021).</p>
+                <p style="text-align: left; ">Ein verwandter Fall ist der sogenannte “Entity Drift”, welcher das Verschwinden oder Auftauchen von Entitäten im Laufe der Zeit beschreibt (Ehrmann et al., 2023). Entitäten können beispielsweise ihren Namen ändern und sich dennoch in ihrer Bedeutung weiterhin auf dieselbe Entität beziehen, z. B. beim Wechsel des Familiennamens nach einer Heirat. Zugleich kann sich die Bedeutung oder der Umfang ein- und derselben Entität über die Zeit ändern, z. B. bei der Übertragung von Titeln, bei der Veränderung von Landesgrenzen oder bei Umstrukturierungen von Armeeeinheiten (Munnelly/Lawless, 2018; Heino et al., 2017).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Praktiken und Ressourcen</head>
+                <p style="text-align: left; ">Gängige Verfahren und Werkzeuge können Unsicherheiten verstetigen, z.B. wenn keine Optionen zur expliziten Annotation und Einordnung von Unsicherheiten in entsprechenden Werkzeugen vorhanden sind (Hägele et al., 2022). </p>
+                <p style="text-align: left; ">Allgemeingültige Standards für NER und EL auf der Grundlage historischer Texte bzw. Sprachen existieren nicht. Während die Annotation in der Regel von entsprechenden Annotationsrichtlinien begleitet wird, sind die darin definierten Anweisungen und Entitätstypen oder -attribute meist auf eine bestimmte Forschungsfrage oder Domäne zugeschnitten (González-Gallardo et al., 2023). Teilweise überschneiden sich Annotationsrichtlinien zwar, in anderen Fällen jedoch erweisen sich Annotationen als nicht kompatibel (Ehrmann et al., 2022). Um mehr Kompatibilität und Generalisierbarkeit zwischen verschiedenen annotierten NER/EL-Datensätzen zu ermöglichen (Ehrmann et al., 2023; Hamdi et al., 2021), können Mappings zwischen verschiedenen Tagsets erstellt werden, wobei auch hiermit Informationsverlust einhergehen kann (Palladino/Yousef, 2024).</p>
+                <p style="text-align: left; ">Ressourcen für die Entwicklung und Evaluation von NER/EL-Systemen wie z. B. Benchmark-Datensätze sind für historische Daten nur spärlich vorhanden, nicht zuletzt aufgrund der hohen Variabilität in Domänen und Sprachen (Ehrmann et al., 2023; Hamdi et al., 2021; Lai et al., 2021). Es zeichnet sich ein Bias zugunsten bestimmter Jahrhunderte und Sprachen in Tools und Korpora ab (Blouin et al., 2024; Palladino/Yousef, 2024; Provatorova et al., 2024; Novotny et al., 2023). Die Verfügbarkeit von und der Zugang zu (teilweise digitalisierten) Sammlungen stellen weitere Herausforderungen dar (González-Gallardo et al., 2023).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Unsicherheiten computergestützt messen</head>
+                <p style="text-align: left; ">Wie oben dargestellt, sind Annotationen von Named Entities nicht immer klar und eindeutig vorzunehmen. Bei der Annotation durch mehrere Annotierende ergeben sich daher schnell Unstimmigkeiten, und solche “Human Label Variations” (Peng et al., 2024; Plank, 2022) können ein praktikabler Indikator für Unsicherheit sein. Mithilfe des Inter Annotator Agreements und Metriken wie Cohen's Kappa lässt sich die Übereinstimmung zwischen mehreren Annotierenden quantifizieren und somit unsichere Annotationen identifizieren (Rapp, 2017). Während sich die Aussagekraft der Annotationen über zusätzliche Annotationen bzw. ein entsprechendes Re-Labeling steigern lässt (Rücker/Akbik, 2023; Hamdi et al., 2021), kann der damit verbundene Aufwand ein Hindernis bei der Optimierung solcher Datensätze darstellen.</p>
+                <p style="text-align: left; ">Über die vorgestellten Analysetechniken hinaus existieren weitere computergestützte Ansätze zur Identifizierung von Unsicherheiten in entsprechenden Daten. Mittels Bayesscher Verfahren können differenzierte Metriken zur Abschätzung von Unsicherheit generiert werden (vgl. z.B. Zhang et al., 2024; Miok et al., 2020; Xiao/Wang, 2019). Ein verbreitetes Maß ist hierbei die Monte-Carlo-Dropout-Methode (Gal/Ghahramani, 2016; Srivastava et al., 2014). Bei dieser werden im Unterschied zur Dropout-Regularisierungstechnik die Bernoulli-verteilten Dropout-Masken eines Deep Neural Networks auch zur Testzeit angewandt. Nach mehrmaligen Durchläufen unter verschiedenen Masken erhält man eine Verteilung, deren Mittelwert als Klassifikationsvorhersage und deren Varianz als Unsicherheitsmaß der Klassifikation gedeutet werden können. </p>
+                <p style="text-align: left; ">Im Anschluss an eine erfolgte Identifizierung von Unsicherheiten in den Referenzdaten können dann auf der Grundlage vorliegender Auswertungen intellektuelle Untersuchungen der Annotationssicherheit erfolgen: Auf welche der hier vorgestellten Arten und Ursachen von Unsicherheit verteilen sich die fraglichen Annotationen? Wann lassen sich Entitäten besonders schwer bestimmten Klassen zuordnen oder eindeutig verlinken? Gibt es wiederholt auftretende Fälle von Unsicherheit? Bezüglich der Annotationsrichtlinien lässt sich fragen: Können anhand der beobachteten Unsicherheiten die zugrunde liegenden Richtlinien identifiziert werden? Lassen sich aus den gemessenen Unsicherheiten schwer umzusetzende Anweisungen in den Annotationsrichtlinien ableiten? Können Untermengen identifiziert werden, die trotz unterschiedlicher Annotationsrichtlinien konsistent und zuverlässig klassifiziert werden?</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Ausblick</head>
+                <p style="text-align: left; ">In diesem Beitrag haben wir den aktuellen Forschungsstand zur Entstehung von Unsicherheiten in historischen Daten referiert. Wir planen, die vorgestellten Bayesschen Verfahren auf einem umfangreichen Datensatz zu erproben, die Ergebnisse in einer Publikation zu präsentieren und die gemessenen Unsicherheiten weiter zu diskutieren. Wir hoffen, auf dieser Grundlage Vorschläge für die Optimierung von Annotationsrichtlinien zu erarbeiten, so dass Unsicherheiten reduziert und die Kompatibilität entsprechender Datensätze verbessert werden können. Die hier ausgeführte Theoriereflexion dient dafür als Vorarbeit.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Danksagung</head>
+                <p style="text-align: left; ">Diese Arbeit wurde teilweise unterstützt durch die Beauftragte der Bundesregierung für Kultur und Medien (BKM), Projektförderung “Mensch.Maschine.Kultur - Künstliche Intelligenz für das Digitale Kulturelle Erbe” (2522DIG002).</p>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                         S.a. 
+                            <ref target="https://de.wikipedia.org/wiki/Damaskuserlebnis#Redewendung">
+                                <hi rend="color(1155CC)">https://de.wikipedia.org/wiki/Damaskuserlebnis#Redewendung</hi>
+                            </ref> (zugegriffen: 24.07.2024).
+                        
+                    </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl style="text-align: left; "><hi rend="bold">Álvarez-Mellado, Elena, María Luisa Díez-Platas, Pablo Ruiz-Fabo, Helena Bermúdez, Salvador Ros und Elena González-Blanco</hi>. 2021. "TEI-friendly annotation scheme for medieval named entities: a case on a Spanish medieval corpus." 
+                        <hi rend="italic">Language Resources and Evaluation</hi> 55, Nr. 2: 525–549. 
+                        <ref target="https://doi.org/10.1007/s10579-020-09516-2">
+                            <hi rend="color(1155CC)">https://doi.org/10.1007/s10579-020-09516-2</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Ardanuy, Mariona Coll, Federico Nanni, Kaspar Beelen und Luke Hare</hi>. 2023. "The Past is a Foreign Place: Improving Toponym Linking for Historical Newspapers." In 
+                        <hi rend="italic">CHR 2023</hi>. Paris, France. 
+                        <ref target="https://ceur-ws.org/Vol-3558/paper4426.pdf">
+                            <hi rend="color(1155CC)">https://ceur-ws.org/Vol-3558/paper4426.pdf</hi>
+                        </ref> (zugegriffen: 15. Juli 2024). 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Blouin, Baptiste, Cécile Armand und Christian Henriot</hi>. 2024. "A Dataset for Named Entity Recognition and Entity Linking in Chinese Historical Newspapers. In 
+                        <hi rend="italic">Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)</hi>, hg. von Nicoletta Calzolari, Min-Yen Kan, Veronique Hoste, Alessandro Lenci, Sakriani Sakti, und Nianwen Xue, 385–394. Torino, Italia: ELRA and ICCL. 
+                        <ref target="https://aclanthology.org/2024.lrec-main.35">
+                            <hi rend="color(1155CC)">https://aclanthology.org/2024.lrec-main.35</hi>
+                        </ref> (zugegriffen: 4. Juni 2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Bludau, Mark-Jan, Marian Dörk, Heiner Fangerau, Thorsten Halling, Elena Leitner, Sina Menzel, Gerhard Müller, Vivien Petras, Georg Rehm, Clemens Neudecker, David Zellhoefer und Julian Moreno Schneider</hi>. 2020. "SoNAR (IDH): Datenschnittstellen für historische Netzwerkanalyse." In 
+                        <hi rend="italic">DHd 2020</hi>. 
+                        <ref target="https://doi.org/10.5281/ZENODO.4621861">
+                            <hi rend="color(1155CC)">https://doi.org/10.5281/ZENODO.4621861</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Bludau, Mark-Jan, Thorsten Halling, Eva Maria Holly, Jasmin Wieloch, Hannes Schnaitter, Sandra Balck, Melina Plakidis, Georg Rehm, Heiner Fangerau und Marian Dörk</hi>. 2022. "Was sehe ich? Visualisierungsstrategien für Datentransparenz in der Historischen Netzwerkanalyse." In 
+                        <hi rend="italic">DHd 2022</hi>. 
+                        <ref target="https://doi.org/10.5281/ZENODO.6327930">
+                            <hi rend="color(1155CC)">https://doi.org/10.5281/ZENODO.6327930</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Boukhelifa, Nadia, Marc-Emmanuel Perrin, Samuel Huron und James Eagan</hi>. 2017. "How Data Workers Cope with Uncertainty: A Task Characterisation Study." In 
+                        <hi rend="italic">Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems</hi>, 3645–3656. Denver Colorado USA: ACM. 
+                        <ref target="https://doi.org/10.1145/3025453.3025738">
+                            <hi rend="color(1155CC)">https://doi.org/10.1145/3025453.3025738</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Cameron, Helena Freire, Fernanda Olival, Renata Vieira und Joaquim Santos</hi>. 2022. "Named entity annotation of an 18th-century transcribed corpus: problems and challenges." In 
+                        <hi rend="italic">DHandNLP@PROPOR 2022</hi>. 
+                        <ref target="https://ceur-ws.org/Vol-3128/paper8.pdf">
+                            <hi rend="color(1155CC)">https://ceur-ws.org/Vol-3128/paper8.pdf</hi>
+                        </ref> (zugegriffen: 12. Juli 2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Clematide, Simon, Mariona Coll-Ardanuy und Yves Maurer</hi>. 2023. "Tracking Discourses on Public and Hidden People in Historical Newspaper." In 
+                        <hi rend="italic">Computational Approaches to Digitised Historical Newspapers (Dagstuhl Seminar 22292)</hi>, hg. von Maud Ehrmann, Marten Düring, Clemens Neudecker und Antoine Doucet, 127–138. 
+                        <ref target="https://doi.org/10.4230/DAGREP.12.7.112">
+                            <hi rend="color(1155CC)">https://doi.org/10.4230/DAGREP.12.7.112</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Dereza, Oksana, Theodorus Fransen und John P. Mccrae</hi>. 2023. "Do not Trust the Experts - How the Lack of Standard Complicates NLP for Historical Irish." In 
+                        <hi rend="italic">Proceedings of the Fourth Workshop on Insights from Negative Results in NLP</hi>, hg. von Shabnam Tafreshi, Arjun Akula, João Sedoc, Aleksandr Drozd, Anna Rogers, und Anna Rumshisky, 82–87. Dubrovnik, Croatia: Association for Computational Linguistics. 
+                        <ref target="https://doi.org/10.18653/v1/2023.insights-1.10">
+                            <hi rend="color(1155CC)">https://doi.org/10.18653/v1/2023.insights-1.10</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Drucker, Johanna</hi>. 2011. "Humanities approaches to graphical display." 
+                        <hi rend="italic">Digital Humanities Quarterly</hi> 5, Nr. 1: 1–21. 
+                        <ref target="https://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html">
+                            <hi rend="color(1155CC)">https://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html</hi>
+                        </ref> (zugegriffen: 17. Juli 2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Düring, Marten, Estelle Bunout und Daniele Guido</hi>. 2022. 
+                        <hi rend="italic">Transparent Generosity: Introducing the impresso interface for the exploration of semantically enriched historical newspapers.</hi>
+                        <ref target="https://hal.science/hal-04154431">
+                            <hi rend="color(1155CC)">https://hal.science/hal-04154431</hi>
+                        </ref> (zugegriffen: 12. Juli 2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Edmond, Jennifer</hi>. 2018. "Managing Uncertainty in the Humanities: Digital and Analogue Approaches." In 
+                        <hi rend="italic">Proceedings of the Sixth International Conference on Technological Ecosystems for Enhancing Multiculturality</hi>, 840–844. Salamanca, Spain: ACM. 
+                        <ref target="https://doi.org/10.1145/3284179.3284326">
+                            <hi rend="color(1155CC)">https://doi.org/10.1145/3284179.3284326</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Ehrmann, Maud, Estelle Bunout und Düring</hi>. 2019. "Historical Newspaper User Interfaces: A Review." In 
+                        <hi rend="italic">IFLA WLIC 2019</hi>. 
+                        <ref target="https://doi.org/10.5281/ZENODO.3404155">
+                            <hi rend="color(1155CC)">https://doi.org/10.5281/ZENODO.3404155</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Ehrmann, Maud, Ahmed Hamdi, Elvys Linhares Pontes, Matteo Romanello und Antoine Doucet</hi>. 2023. "Named Entity Recognition and Classification in Historical Documents: A Survey." 
+                        <hi rend="italic">ACM Computing Surveys</hi> 56, Nr. 2: 1–47. 
+                        <ref target="https://dl.acm.org/doi/10.1145/3604931">
+                            <hi rend="color(1155CC)">https://dl.acm.org/doi/10.1145/3604931</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Ehrmann, Maud, Matteo Romanello, Sven Najem-Meyer, Antoine Doucet und Simon Clematide</hi>. 2022. "Extended Overview of HIPE-2022: Named Entity Recognition and Linking in Multilingual Historical Documents." In 
+                        <hi rend="italic">Proceedings of the Working Notes of CLEF 2022 - Conference and Labs of the Evaluation Forum</hi>. 
+                        <ref target="https://doi.org/10.5281/zenodo.6979577">
+                            <hi rend="color(1155CC)">https://doi.org/10.5281/zenodo.6979577</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Gal, Yarin und Zoubin Ghahramani</hi>. 2016. "Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning." In 
+                        <hi rend="italic">Proceedings of The 33rd International Conference on Machine Learning</hi>, 48: PMLR. 
+                        <ref target="https://proceedings.mlr.press/v48/gal16.html">
+                            <hi rend="color(1155CC)">https://proceedings.mlr.press/v48/gal16.html</hi>
+                        </ref> (zugegriffen: 4. Juni 2024). 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">González-Gallardo, Carlos-Emiliano, Emanuela Boros, Nancy Girdhar, Ahmed Hamdi, Jose G. Moreno und Antoine Doucet</hi>. 2023. "Yes but.. Can ChatGPT Identify Entities in Historical Documents?" In 
+                        <hi rend="italic">2023 ACM/IEEE Joint Conference on Digital Libraries (JCDL)</hi>, 184–189. 
+                        <ref target="https://doi.org/10.1109/JCDL57899.2023.00034">
+                            <hi rend="color(1155CC)">https://doi.org/10.1109/JCDL57899.2023.00034</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Hägele, David, Christoph Schulz, Cedric Beschle, Hannah Booth, Miriam Butt, Andrea Barth, Oliver Deussen und Daniel Weiskopf</hi>. 2022. "Uncertainty visualization: Fundamentals and recent developments." 
+                        <hi rend="italic">it - Information Technology</hi> 64, Nr. 4–5: 121–132. 
+                        <ref target="https://doi.org/10.1515/itit-2022-0033">
+                            <hi rend="color(1155CC)">https://doi.org/10.1515/itit-2022-0033</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Hamdi, Ahmed, Axel Jean-Caurant, Nicolas Sidère, Mickaël Coustaty und Antoine Doucet</hi>. 2020. "Assessing and Minimizing the Impact of OCR Quality on Named Entity Recognition." In 
+                        <hi rend="italic">Digital Libraries for Open Knowledge</hi>, hg. von Mark Hall, Tanja Merčun, Thomas Risse, und Fabien Duchateau, 87–101. Cham: Springer International Publishing. 
+                        <ref target="https://doi.org/10.1007/978-3-030-54956-5_7">
+                            <hi rend="color(1155CC)">https://doi.org/10.1007/978-3-030-54956-5_7</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Hamdi, Ahmed, Elvys Linhares Pontes, Emanuela Boros, Thi Tuyet Hai Nguyen, Günter Hackl, Jose G. Moreno und Antoine Doucet</hi>. 2021. "A Multilingual Dataset for Named Entity Recognition, Entity Linking and Stance Detection in Historical Newspapers." In 
+                        <hi rend="italic">Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval</hi>, 2328–2334. 
+                        <ref target="https://doi.org/10.1145/3404835.3463255">
+                            <hi rend="color(1155CC)">https://doi.org/10.1145/3404835.3463255</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Heino, Erkki, Minna Tamper, Eetu Mäkelä, Petri Leskinen, Esko Ikkala, Jouni Tuominen, Mikko Koho und Eero Hyvönen</hi>. 2017. "Named Entity Linking in a Complex Domain: Case Second World War History." In 
+                        <hi rend="italic">Language, Data, and Knowledge</hi>, hg. von Jorge Gracia, Francis Bond, John P. McCrae, Paul Buitelaar, Christian Chiarcos, und Sebastian Hellmann, 120–133. Cham: Springer International Publishing. 
+                        <ref target="https://doi.org/10.1007/978-3-319-59888-8_10">
+                            <hi rend="color(1155CC)">https://doi.org/10.1007/978-3-319-59888-8_10</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Kripke, Saul A</hi>. 1980. 
+                        <hi rend="italic">Naming and necessity</hi>. Bd. 217. Oxford: Blackwell.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="color(222222)" xml:space="preserve"><hi rend="bold">Labusch, Kai und Clemens Neudecker</hi>. 2020. </hi>"
+                        <hi rend="color(222222)">Named Entity Disambiguation and Linking on Historic Newspaper OCR with BERT.</hi>"
+                        <hi rend="color(222222)" xml:space="preserve"> In </hi>
+                        <hi rend="italic color(222222)" xml:space="preserve">Working Notes of CLEF 2020 - Conference and Labs of the Evaluation Forum, </hi>
+                        <hi rend="color(222222)" xml:space="preserve">hg. von Linda Cappellato, Carsten Eickhoff, Nicola Ferro, Aurélie Névéol, CEUR-WS Vol. 2696. </hi>
+                        <ref target="https://ceur-ws.org/Vol-2696/paper_163.pdf">
+                            <hi rend="color(1155CC)">https://ceur-ws.org/Vol-2696/paper_163.pdf</hi>
+                        </ref> (zugegriffen: 24. Juli 2024)
+                        <hi rend="color(222222)">.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Labusch, Kai, Sophie Schneider und Clemens Neudecker</hi>. 2024. "Automatisierte semantische Anreicherung von historischen Texten. Erkennung und Verknüpfung von Entitäten mit Wikidata und Wikipedia." 
+                        <hi rend="italic">B.I.T.online</hi>, Nr. 3. 
+                        <ref target="https://www.b-i-t-online.de/heft/2024-03-fachbeitrag-labusch.pdf">
+                            <hi rend="color(1155CC)">https://www.b-i-t-online.de/heft/2024-03-fachbeitrag-labusch.pdf</hi>
+                        </ref> (zugegriffen: 12. Juli 2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Lai, Viet Dac, Minh Van Nguyen, Heidi Kaufman und Thien Huu Nguyen</hi>. 2021. "Event Extraction from Historical Texts: A New Dataset for Black Rebellions." In 
+                        <hi rend="italic">Findings of the Association for Computational Linguistics</hi>, 2390–2400. Association for Computational Linguistics. 
+                        <ref target="https://aclanthology.org/2021.findings-acl.211.pdf">
+                            <hi rend="color(1155CC)">https://aclanthology.org/2021.findings-acl.211.pdf</hi>
+                        </ref> (zugegriffen: 15. Juli 2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Ling, Xiao, Sameer Singh und Daniel S. Weld</hi>. 2015. "Design Challenges for Entity Linking." 
+                        <hi rend="italic">Transactions of the Association for Computational Linguistics</hi> 3: 315–328. 
+                        <ref target="https://doi.org/10.1162/tacl_a_00141">
+                            <hi rend="color(1155CC)">https://doi.org/10.1162/tacl_a_00141</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Linhares Pontes, Elvys, Luis Adrián Cabrera-Diego, Jose G. Moreno, Emanuela Boros, Ahmed Hamdi, Nicolas Sidère, Mickaël Coustaty und Antoine Doucet</hi>. 2020. "Entity Linking for Historical Documents: Challenges and Solutions." In 
+                        <hi rend="italic">Digital Libraries at Times of Massive Societal Transition</hi>, hg. von Emi Ishita, Natalie Lee San Pang, und Lihong Zhou, 215–231. Cham: Springer International Publishing. 
+                        <ref target="https://doi.org/10.1007/978-3-030-64452-9_19">
+                            <hi rend="color(1155CC)">https://doi.org/10.1007/978-3-030-64452-9_19</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Menzel, Sina, Hannes Schnaitter, Josefine Zinck, Vivien Petras, Clemens Neudecker, Kai Labusch, Elena Leitner und Georg Rehm</hi>. 2021. "Named Entity Linking mit Wikidata und GND – Das Potenzial handkuratierter und strukturierter Datenquellen für die semantische Anreicherung von Volltexten." In 
+                        <hi rend="italic">Qualität in der Inhaltserschließung</hi>, hg. von Michael Franke-Maier, Anna Kasprzik, Andreas Ledl, und Hans Schürmann, 229–258. De Gruyter. 
+                        <ref target="https://doi.org/10.1515/9783110691597-012">
+                            <hi rend="color(1155CC)">https://doi.org/10.1515/9783110691597-012</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Miok, Kristian, Gregor Pirs und Marko Robnik-Sikonja</hi>. 2020. "Bayesian Methods for Semi-supervised Text Annotation." In 
+                        <hi rend="italic">Proceedings of the 14th Linguistic Annotation Workshop</hi>, hg. von Stefanie Dipper und Amir Zeldes, 1–12. Barcelona, Spain: Association for Computational Linguistics. 
+                        <ref target="https://aclanthology.org/2020.law-1.1">
+                            <hi rend="color(1155CC)">https://aclanthology.org/2020.law-1.1</hi>
+                        </ref> (zugegriffen: 4. Juni 2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Monroc, Claire Bizon, Blanche Miret, Marie-Laurence Bonhomme und Christopher Kermorvant</hi>. 2022. "A Comprehensive Study of Open-Source Libraries for Named Entity Recognition on Handwritten Historical Documents." In 
+                        <hi rend="italic">Document Analysis Systems</hi>, hg. von Seiichi Uchida, Elisa Barney, und Véronique Eglin. Cham: Springer International Publishing. 
+                        <ref target="https://doi.org/10.1007/978-3-031-06555-2_29">
+                            <hi rend="color(1155CC)">https://doi.org/10.1007/978-3-031-06555-2_29</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Munnelly, Gary und Seamus Lawless</hi>. 2018. "Investigating Entity Linking in Early English Legal Documents." In 
+                        <hi rend="italic">ACM/IEEE Joint Conference on Digital Libraries, JCDL 2018.</hi> Fort Worth, Texas, USA. 
+                        <ref target="http://www.tara.tcd.ie/handle/2262/86854">
+                            <hi rend="color(1155CC)">http://www.tara.tcd.ie/handle/2262/86854</hi>
+                        </ref> (zugegriffen: 4. Juni 2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Nadeau, David und Satoshi Sekine</hi>. 2007. "A survey of named entity recognition and classification." 
+                        <hi rend="italic">Lingvisticae Investigationes</hi> 30, Nr. 1 (15. August): 3–26. 
+                        <ref target="https://doi.org/10.1075/li.30.1.03nad">
+                            <hi rend="color(1155CC)">https://doi.org/10.1075/li.30.1.03nad</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Novotny, Vit, Kristina Luger, Michal Štefánik, Tereza Vrabcova und Ales Horak</hi>. 2023. People and Places of Historical Europe: "Bootstrapping Annotation Pipeline and a New Corpus of Named Entities in Late Medieval Texts." In 
+                        <hi rend="italic">Findings of the Association for Computational Linguistics: ACL 2023</hi>, 14104–14113. Toronto, Canada: Association for Computational Linguistics. 
+                        <ref target="https://doi.org/10.18653/v1/2023.findings-acl.887">
+                            <hi rend="color(1155CC)">https://doi.org/10.18653/v1/2023.findings-acl.887</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Palladino, Chiara und Tariq Yousef</hi>. 2024. "Development of Robust NER Models and Named Entity Tagsets for Ancient Greek." In 
+                        <hi rend="italic">Proceedings of the Third Workshop on Language Technologies for Historical and Ancient Languages (LT4HALA) @ LREC-COLING-2024</hi>, hg. von Rachele Sprugnoli und Marco Passarotti, 89–97. Torino, Italia: ELRA and ICCL. 
+                        <ref target="https://aclanthology.org/2024.lt4hala-1.11">
+                            <hi rend="color(1155CC)">https://aclanthology.org/2024.lt4hala-1.11</hi>
+                        </ref> (zugegriffen: 4. Juni 2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Peng, Siyao, Zihang Sun, Sebastian Loftus und Barbara Plank</hi>. 2024. 
+                        <hi rend="italic">Different Tastes of Entities: Investigating Human Label Variation in Named Entity Annotations.</hi>
+                        <ref target="https://doi.org/10.48550/ARXIV.2402.01423">
+                            <hi rend="color(1155CC)">https://doi.org/10.48550/ARXIV.2402.01423</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Pfanzelter, Eva, Sarah Oberbichler, Jani Marjanen, Pierre-Carl Langlais und Stefan Hechl</hi>. 2021. "Digital interfaces of historical newspapers: opportunities, restrictions and recommendations." 
+                        <hi rend="italic">Journal of Data Mining &amp; Digital Humanities</hi> HistoInformatics: 6121. 
+                        <ref target="https://doi.org/10.46298/jdmdh.6121">
+                            <hi rend="color(1155CC)">https://doi.org/10.46298/jdmdh.6121</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Piotrowski, Michael</hi>. 2019. "Accepting and Modeling Uncertainty." In 
+                        <hi rend="italic">Die Modellierung des Zweifels – Schlüsselideen und -konzepte zur graphbasierten Modellierung von Unsicherheiten</hi>, hg. von Andreas Kuczera, Thorsten Wübbena, und Thomas Kollatz. Wolfenbüttel. (= Zeitschrift für digitale Geisteswissenschaften / Sonderbände: 4). 
+                        <ref target="https://doi.org/10.17175/SB004_006A">
+                            <hi rend="color(1155CC)">https://doi.org/10.17175/SB004_006A</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Plank, Barbara</hi>. 2022. "The “Problem” of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation." In 
+                        <hi rend="italic">Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing</hi>, 10671–10682. Abu Dhabi, United Arab Emirates: Association for Computational Linguistics. 
+                        <ref target="https://doi.org/10.18653/v1/2022.emnlp-main.731">
+                            <hi rend="color(1155CC)">https://doi.org/10.18653/v1/2022.emnlp-main.731</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Provatorova, Vera, Marieke van Erp und Evangelos Kanoulas</hi>. 2024. "Too Young to NER: Improving Entity Recognition on Dutch Historical Documents." In 
+                        <hi rend="italic">Proceedings of the Third Workshop on Language Technologies for Historical and Ancient Languages (LT4HALA) @ LREC-COLING-2024</hi>, hg. von Rachele Sprugnoli und Marco Passarotti, 30–35. Torino, Italia: ELRA and ICCL. 
+                        <ref target="https://aclanthology.org/2024.lt4hala-1.4">
+                            <hi rend="color(1155CC)">https://aclanthology.org/2024.lt4hala-1.4</hi>
+                        </ref> (zugegriffen: 4. Juni 2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Rapp, Andrea</hi>. 2017. "Manuelle und automatische Annotation." In 
+                        <hi rend="italic">Digital Humanities</hi>, hg. von Fotis Jannidis, Hubertus Kohle, und Malte Rehbein, 253–267. Stuttgart: J.B. Metzler. 
+                        <ref target="https://doi.org/10.1007/978-3-476-05446-3_18">
+                            <hi rend="color(1155CC)">https://doi.org/10.1007/978-3-476-05446-3_18</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Reiter, Nils</hi>. 2020. Anleitung zur Erstellung von Annotationsrichtlinien. In: Reflektierte algorithmische Textanalyse, hg. von Nils Reiter, Axel Pichler, und Jonas Kuhn, 193–202. De Gruyter. https://doi.org/10.1515/9783110693973-009.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Rettinghaus, Klaus</hi>. 2024. "Normdaten Quo Vadis." In 
+                        <hi rend="italic">DHd 2024</hi>. 
+                        <ref target="https://doi.org/10.5281/ZENODO.10698462">
+                            <hi rend="color(1155CC)">https://doi.org/10.5281/ZENODO.10698462</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Rücker, Susanna und Alan Akbik</hi>. 2023. "CleanCoNLL: A Nearly Noise-Free Named Entity Recognition Dataset." In 
+                        <hi rend="italic">Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing</hi>, 8628–8645. Singapore: Association for Computational Linguistics. 
+                        <ref target="https://doi.org/10.18653/v1/2023.emnlp-main.533">
+                            <hi rend="color(1155CC)">https://doi.org/10.18653/v1/2023.emnlp-main.533</hi>
+                        </ref>.  
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Srivastava, Nitish, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever und Ruslan Salakhutdinov</hi>. 2014. "Dropout: a simple way to prevent neural networks from overfitting." 
+                        <hi rend="italic">The journal of machine learning research</hi> 15, Nr. 1: 1929–1958. 
+                        <ref target="https://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf">
+                            <hi rend="color(1155CC)">https://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf</hi>
+                        </ref> (zugegriffen: 19. Juli 2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Windhager, Florian, Saminu Salisu und Eva Mayr</hi>. 2019. "Exhibiting Uncertainty: Visualizing Data Quality Indicators for Cultural Collections." 
+                        <hi rend="italic">Informatics</hi> 6, Nr. 3: 29. 
+                        <ref target="https://doi.org/10.3390/informatics6030029">
+                            <hi rend="color(1155CC)">https://doi.org/10.3390/informatics6030029</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Xiao, Yijun und William Yang Wang</hi>. 2019. "Quantifying Uncertainties in Natural Language Processing Tasks." In 
+                        <hi rend="italic">Proceedings of the AAAI Conference on Artificial Intelligence</hi> 33, Nr. 01: 7322–7329. 
+                        <ref target="https://doi.org/10.1609/aaai.v33i01.33017322">
+                            <hi rend="color(1155CC)">https://doi.org/10.1609/aaai.v33i01.33017322</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Zhang, Zhen, Yuhua Zhao, Hang Gao und Mengting Hu</hi>. 2024. "LinkNER: Linking Local Named Entity Recognition Models to Large Language Models using Uncertainty." In 
+                        <hi rend="italic">Proceedings of the ACM on Web Conference 2024</hi>, 4047–4058. Singapore Singapore: ACM. 
+                        <ref target="https://doi.org/10.1145/3589334.3645414">
+                            <hi rend="color(1155CC)">https://doi.org/10.1145/3589334.3645414</hi>
+                        </ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

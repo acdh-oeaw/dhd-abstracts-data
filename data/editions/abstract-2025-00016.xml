@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="TU_Ngoc_Duyen_Tanja_Eine_Vorstudie_zur_Eignung_von_Llama_3_8">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Eine Vorstudie zur Eignung von Llama 3-8B für eine Sentimentanalyse</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Tu</surname>
+                        <forename>Ngoc Duyen Tanja</forename>
+                    </persName>
+                    <affiliation>Leibniz-Institut für Deutsche Sprache, Deutschland</affiliation>
+                    <email>tu@ids-mannheim.de</email>
+                    <idno type="ORCID">0000-0002-7586-0617</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-06-20T13:41:11.677000000</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Vortrag: Computergestützte Analyse oder Interpretation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Sentimentanalyse</term>
+                    <term>Generative KI</term>
+                    <term>Annotation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Annotieren</term>
+                    <term>Sprache</term>
+                    <term>Text</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor type="bookmark-start" xml:id="id__Ref183529567"/>
+                    <anchor type="bookmark-start" xml:id="id__Ref183529245"/>
+                    <anchor type="bookmark-start" xml:id="id__Ref1835295671"/>
+                    <anchor type="bookmark-start" xml:id="id__Ref1835292451"/>Einleitung
+                </head>
+                <p>Änderungen im deutschen Sprachgebrauch lösen bei vielen Menschen große Emotionen aus, siehe u. a. hitzige Diskussionen zu Reformbestrebungen zu Groß- und Kleinschreibung (Küppers, 1984) oder Proteste gegen die Rechtschreibreform 1998 (Johnson, 2000). Nachdem die deutsche Bundesregierung 2018 das Gesetz verabschiedet hat, im Geburtenregister auch „divers“ eintragen zu können oder keine Geschlechtsangabe zu machen, wurde der Rat für deutsche Rechtschreibung (fortfolgend: Rechtschreibrat) vielfach zum Thema geschlechtergerechte Schreibung angefragt. Im Juli 2024 wurde ein Passus dazu in das Amtliche Regelwerk des Rechtschreibrats aufgenommen. Allerdings wird darin keine klare Empfehlung gegeben, sondern festgehalten, dass der Bereich weiterhin beobachtet wird (Geschäftsstelle des Rats für deutsche Rechtschreibung, 2024, 153–154). Aufgrund dessen ist künftig weiterhin mit Anfragen zur geschlechtergerechten Schreibung zu rechnen. Dabei ist die emotionale Haltung der Anfragenden von großem Interesse. Wie sind die Personen zur geschlechtergerechten Schreibung eingestellt? Welche Emotionen zeigen sich in den Anfragen? Welche Argumente bringen die Positiv- bzw. Negativeingestellten? Um diese Fragen zu beantworten, kommt zunächst eine Sentimentanalyse in Betracht. Mit dieser kann jede Anfrage satzweise mit den Werten „positiv“, „negativ“ oder „neutral“ klassifiziert werden. Im Anschluss können die Sentimentwert-annotierten Daten analysiert werden und es kann in Vorbereitung für eine Emotionsanalyse identifiziert werden, welche Emotionen darin zu finden sind.</p>
+                <p>In diesem Beitrag wird eine Vorstudie präsentiert, in der getestet wird, ob sich die Generative Künstliche Intelligenz (GenKI) Llama-3-8B Q4_0 instruction-tuned (fortfolgend: Llama-3; Meta, 2024) für eine Sentimentanalyse eignet und für zukünftige Anfragen eingesetzt werden kann. Es wird eine GenKI getestet, da diese eine All-in-one-Solution bietet: Sowohl die Satzsegmentierung als auch die Sentimentklassifikation können mit ihr durchgeführt werden, sowie ggf. weitere Klassifikationen. Kenntnisse in Programmierung müssen dabei nicht vorhanden sein, da man die GenKI mit einer natürlichsprachlichen Eingabe (Prompt) bedient.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Forschungsstand</head>
+                <p>Studien zu Sentimentanalyse mit einer GenKI wurden bereits durchgeführt: Krugmann und Hartmann (2024) sowie Zhang et al. (2024) zeigen für englische Datensätze, dass die GenKI GPT-4 bzw. Flan-UL2 und GPT-3.5-turbo ähnlich gut oder besser abschneiden als Sprachmodelle, die mit Sentimentwert-annotierten Daten trainiert sind. Zudem stellen Krugmann und Hartmann (2024) fest, dass Llama 2 die besten Erklärungen für seine gewählten Sentimentwerte gibt.</p>
+                <p>De Araujo et al. (2024) zeigen für brasilianisch portugiesische Datensätze, dass GPT-3.5 bei einer Sentimentanalyse genauso gut oder besser abschneidet wie das bisherige State-of-the-Art-Modell GBT. Zur gleichen Erkenntnis kommen auch Al-Thubaity et al. (2023) für GPT-4 und Bard AI in ihrer Studie mit arabischsprachigen Daten.</p>
+                <p>Zu anderen Ergebnissen kommen Mæhlum et al. (2024) für ChatNort4 und NorMistral sowie Rønningstad et al. (2024) für GPT-4, die mit norwegischen Datensätzen arbeiten. Sie zeigen, dass die GenKI schlechter annotieren als Menschen. Für einen englischen Datensatz zeigen Møller et al. (2024), dass GPT-4 und Llama 2-70-B-Chat nicht so gut abschneiden wie Sprachmodelle, die mit Sentimentwert-annotierten Daten trainiert sind. Gleiches zeigen Pfister und Hotho (2024) für einen deutschen Datensatz mit german-gpt2, einer auf ca. 2 Mrd. Token deutschen Texten trainierten GenKI.</p>
+                <p>Bisher finden sich keine Untersuchungen zu Sentimentanalysen auf deutschen Texten mit GenKI, die auf sehr großen Datenmengen trainiert sind. Dafür soll die vorliegende Untersuchung einen ersten Anhaltspunkt geben.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Studienkonzeption </head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Datengrundlage</head>
+                    <p>Als Datengrundlage dienen 30 von 146 zufällig gezogenen, manuell anonymisierten E-Mail-Anfragen von 2019-02/2024 an den Rechtschreibrat, die insgesamt aus 233 Sätzen bestehen. Im Durchschnitt besteht eine Anfrage aus 134 Token und 8 Sätzen. Alleinstehende Grußformeln wie 
+                        <hi rend="italic">Sehr geehrte</hi> oder 
+                        <hi rend="italic">Viele Grüße</hi> wurden entfernt, da sie als Floskeln für die Sentimentanalyse irrelevant sind.
+                    </p>
+                    <p>Die Datengrundlage liegt aus datenschutzrechtlichen Gründen nicht öffentlich vor. Dies ist für die Studie vorteilhaft, da die Performance von Llama-3 getestet wird und es somit nicht zu einer Datenkontamination kommen kann, d. h. es kann ausgeschlossen werden, dass der Datensatz bereits annotiert in den Trainingsdaten der GenKI vorliegt.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Vorgehensweise</head>
+                    <div type="div3" rend="DH-Heading3">
+                        <head>GenKI</head>
+                        <p>Für die Sentimentanalyse wird die, nach seinem Entwickler Meta, leistungsstärkste Open-Source-GenKI Llama 3 über die Python-Bibliothek ollama genutzt. In Benchmark-Tasks zeigt Llama 3 gegenüber den Open-Source-GenKI Gemma-7B-It und Mistral-7B-Instruct eine höhere Performance (Meta, 2024).</p>
+                        <p>Ein großer Vorteil von Llama 3 gegenüber Close-Source-GenKI ist, dass man es lokal auf dem eigenen Rechner ausführen kann, womit man die Kontrolle über die Datengrundlage behält.</p>
+                    </div>
+                    <div type="div3" rend="DH-Heading3">
+                        <head>Prompt</head>
+                        <p>Studien belegen, dass die Wahl des Prompts ausschlaggebend für die Qualität der Antwort ist (Battle und Gollapudi, 2024; Leidinger et al., 2023; Schulhoff et al., 2024; Zhang et al., 2024). Bsharat et al. (2023) zeigen, dass die Performance der Modelle Llama-1/-2 sowie die von GPT-3.5/-4 bei Befolgung bestimmter Regeln zur Formulierung des Prompts steigt. Entsprechend wurden folgende, zum Task passende, Regeln aus Bsharat et al (2023) angewendet, um den Prompt zu formulieren: i) Unterlassung von Höflichkeitsfloskeln; ii) Nutzung von Direktiven; iii) Kenntlichmachung zusammenhängender Abschnitte im Prompt; iv) Nutzung der Phrasen „Your task is“ und „You must“ und v) mehrfache Wiederholung bestimmter Wörter oder Phrasen. Semantisch orientiert sich der Prompt an genutzte Prompts für Sentimentanalysen mit GenKI aus anderen Studien (De Araujo et al., 2024; Krugmann und Hartmann, 2024; Mæhlum et al., 2024; Zhang et al., 2024; Al-Thubaity et al., 2023):</p>
+                        <quote>###Instruction### Your task is to do a sentiment analysis (positive, negative, neutral) for each sentence in the following text. You must assign only one sentiment value (positive, negative or neutral). You must give your answer in the format “Sentence” -- “Sentiment value” -- “Justification”. ###Text### + 
+                            <hi rend="italic">question</hi>
+                        </quote>
+                        <p>Pro Prompt wird eine Anfrage aus der Datengrundlage präsentiert, indem sie an den Prompt am Ende konkateniert wird (+ question). </p>
+                        <p>Die Instruktion wird auf Englisch gegeben, da die Trainingsdaten von Llama-3 zu 95 % aus englischen Texten besteht (Meta, 2024) und die Antwortqualität deutlich schlechter bei nicht-englischsprachigen Prompts ausfallen kann (Schulhoff et al., 2024). Die Anfrage wird auf Deutsch übergeben, um dem Problem zu entgehen, dass sprachliche Nuancen bei einer Übersetzung verloren gehen. Testweise wurde der Prompt vollständig auf Deutsch formuliert, was zu schlechteren Ergebnissen bei der Satzsegmentierung geführt hat.</p>
+                        <p>Damit Llama-3 Kontextinformationen erhält, die bei der Sentimentklassifikation relevant sein können, wird ihm die gesamte Anfrage im Prompt übergeben und es führt zunächst eine Satzsegmentierung durch. Danach soll die GenKI die Sentimentklassifikation vornehmen und anschließend eine Begründung für den vergebenen Sentimentwert geben. Diese Reihenfolge der Instruktionen wurde gewählt, da der GenKI bei der Textgenerierung nur die bereits generierten Tokens bekannt sind und somit konsistente Antworten erwartet werden. Somit soll also bewirkt werden, dass der vergebene Sentimentwert und die Begründung der GenKI in einem logischen Zusammenhang zueinanderstehen. </p>
+                        <p>Eine Systemmessage wird nicht gesetzt. Bei der Temperatur, die angibt, wie kreativ die GenKI antwortet, wobei 1 für sehr kreativ und 0 für deterministisch steht, wird der default-Wert von 0,6 beibehalten.</p>
+                        <p>In 5 Fällen vergibt Llama-3, abweichend von der Instruktion, 2 Sentimentwerte, in diesen Fällen wurden von mir automatisch der erste Sentimentwert gesetzt.</p>
+                    </div>
+                    <div type="div3" rend="DH-Heading3">
+                        <head>Baselines</head>
+                        <p>Als Baseline dient das Sprachmodell german-sentiment-bert (Guhr et al., 2020), das auf deutschen Sentimentwert-annotierten Daten weitertrainiert ist. Dieses Modell wurde gewählt, da die Trainingsdaten aus nicht-redigierten Texten wie Facebook-Posts bestehen und die vorliegende Datengrundlage ebenfalls nicht-redigierte Texte enthält. Zusätzlich wurde zur Einordnung der Ergebnisse eine random-Baseline berechnet, die den Sätzen aus der Datengrundlage zufällig Sentimentwerte zuordnet.</p>
+                    </div>
+                    <div type="div3" rend="DH-Heading3">
+                        <head>Manuelle Annotation</head>
+                        <p>Für die manuelle Annotation wurden drei Aufgaben gestellt<ref n="1" target="ftn1"/>:
+                        </p>
+                        <p>(1) Drei Linguist:innen (M0, M1, M2) bekommen die Anfragen, die von Llama-3 Satz-segmentiert wurden. Es ist ersichtlich, welche Sätze zu einer Anfrage gehören. Ihre Aufgabe ist es, die Sätze mit einem Sentimentwert zu annotieren, dabei können sie Kontextinformationen einbeziehen. Die Annotationsbedingungen sind somit die gleichen wie die für Llama-3. </p>
+                        <p>(2) In einem 2. Schritt werden den drei Linguist:innen jeweils die Annotationen von Llama-3 präsentiert, die von ihren eigenen abweichen. Sie entscheiden, ob sie die Begründung von Llama-3 für den gewählten Sentimentwert überzeugend finden.</p>
+                        <p>(3) Drei weitere Linguist:innen (M3, M4, M5) bekommen den Datensatz, der wie in (1) beschrieben aufbereitet ist, die Annotationen und die Begründungen von Llama-3. Ihre Aufgabe ist es zu entscheiden, ob sie der Annotation von Llama-3 zustimmen. Wenn sie nicht zustimmen, vergeben sie einen anderen Sentimentwert.</p>
+                    </div>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Ergebnisse</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Inter-Annotator-Agreement</head>
+                    <p>Basierend auf dem Cohens Kappa κ (Cohen, 1960) wurde das Inter-Annotator-Agreement bestimmt. Ergebnisse von κ liegen zwischen -1 (potenziell systematische Nichtübereinstimmung) und 1 (perfekte Übereinstimmung). </p>
+                    <p>Zunächst wird κ für die Annotationsaufgabe (1) berechnet (vgl. Tabelle 1).</p>
+                    <table rend="frame" xml:id="Tabelle1">
+                        <row>
+                            <cell rend="center bold">Annotierender</cell>
+                            <cell rend="center bold">M0</cell>
+                            <cell rend="center bold">M1</cell>
+                            <cell rend="center bold">M2</cell>
+                        </row>
+                        <row>
+                            <cell rend="center bold">M0</cell>
+                            <cell rend="center">X</cell>
+                            <cell rend="center">0,56</cell>
+                            <cell rend="center">0,35</cell>
+                        </row>
+                        <row>
+                            <cell rend="center bold">M1</cell>
+                            <cell rend="center">0,56</cell>
+                            <cell rend="center">X</cell>
+                            <cell rend="center">0,53</cell>
+                        </row>
+                        <row>
+                            <cell rend="center bold">M2</cell>
+                            <cell rend="center">0,35</cell>
+                            <cell rend="center">0,53</cell>
+                            <cell rend="center">X</cell>
+                        </row>
+                        <row>
+                            <cell rend="center bold">Llama-3</cell>
+                            <cell rend="center">0,46</cell>
+                            <cell rend="center">0,35</cell>
+                            <cell rend="center">0,25</cell>
+                        </row>
+                        <row>
+                            <cell rend="center bold">BERT</cell>
+                            <cell rend="center">0,10</cell>
+                            <cell rend="center">0,23</cell>
+                            <cell rend="center">0,18</cell>
+                        </row>
+                        <row>
+                            <cell rend="center bold">random</cell>
+                            <cell rend="center">0,03</cell>
+                            <cell rend="center">-0,01</cell>
+                            <cell rend="center">-0,03</cell>
+                        </row>
+                        <head>Tabelle 1: Das IAA zwischen den menschlichen Annotierenden (M0, M1, M2) untereinander, Llama-3 sowie den Baselines BERT und random.</head>
+                    </table>
+                    <p>Aus Tabelle 1 geht hervor, dass das Inter-Annotator-Agreement zwischen den menschlichen Annotierenden und Llama-3 höher ist als zwischen den Baselines. Des Weiteren stimmen sowohl die Menschen untereinander als auch mit Llama-3 jeweils nur mittelmäßig bis moderat überein (Viera und Garrett, 2005, 362). </p>
+                    <p>Als Nächstes wird κ für die Annotationsaufgabe (3) berechnet (vgl. Tabelle 2).</p>
+                    <table rend="frame" xml:id="Tabelle2">
+                        <row>
+                            <cell rend="center bold">Annotierender</cell>
+                            <cell rend="center bold">M3</cell>
+                            <cell rend="center bold">M4</cell>
+                            <cell rend="center bold">M5</cell>
+                        </row>
+                        <row>
+                            <cell rend="center bold">M3</cell>
+                            <cell rend="center">X</cell>
+                            <cell rend="center">0,59</cell>
+                            <cell rend="center">0,49</cell>
+                        </row>
+                        <row>
+                            <cell rend="center bold">M4</cell>
+                            <cell rend="center">0,59</cell>
+                            <cell rend="center">X</cell>
+                            <cell rend="center">0,42</cell>
+                        </row>
+                        <row>
+                            <cell rend="center bold">M5</cell>
+                            <cell rend="center">0,49</cell>
+                            <cell rend="center">0,42</cell>
+                            <cell rend="center">X</cell>
+                        </row>
+                        <row>
+                            <cell rend="center bold">Llama-3</cell>
+                            <cell rend="center">0,69</cell>
+                            <cell rend="center">0,50</cell>
+                            <cell rend="center">0,37</cell>
+                        </row>
+                        <row>
+                            <cell rend="center bold">BERT</cell>
+                            <cell rend="center">0,13</cell>
+                            <cell rend="center">0,11</cell>
+                            <cell rend="center">0,05</cell>
+                        </row>
+                        <row>
+                            <cell rend="center bold">random</cell>
+                            <cell rend="center">0,03</cell>
+                            <cell rend="center">0</cell>
+                            <cell rend="center">0,06</cell>
+                        </row>
+                        <head><anchor type="bookmark-start" xml:id="id__Ref1835292452"/>Tabelle 2: Das IAA zwischen den menschlichen Annotierenden (M3, M4, M5) untereinander, Llama-3 sowie den beiden Baselines BERT und random.</head>
+                    </table>
+                    <p>
+                    </p>
+                    <p>Aus Tabelle 2 geht hervor, dass das Inter-Annotator-Agreement zwischen den menschlichen Annotierenden und Llama-3 ebenfalls höher ist als zwischen den Baselines. Vergleicht man die Werte aus Tabelle 1 mit denen aus Tabelle 2 kann man sehen, dass die κ-Werte bei Aufgabe (3) höher sind. Jedoch variieren sie zwischen den Menschen und Llama-3 stark: M3 weist eine substantielle Übereinstimmung mit Llama-3 auf, M5 nur eine mittelmäßige. M4 liegt dazwischen mit einer moderaten Übereinstimmung.</p>
+                    <p>Insgesamt kann aus den κ-Werten folgendes abgeleitet werden: </p>
+                    <p>- Die κ-Werte in Tabelle 1 für Annotationsaufgabe (1) weisen darauf hin, dass die Annotationsrichtlinien nicht präzise genug sind, weshalb das Inter-Annotator-Agreement zwischen den menschlichen Annotierenden nicht so hoch ist. M0 und M1 haben zurückgemeldet, dass sie die Annotationsaufgabe als schwierig empfanden, da das Thema selbst bereits emotionsbeladen ist. Somit bekämen die meisten Sätze ihres Empfindens nach meist einen impliziten negativen Ton. Die Aussage wird durch die Verteilung der vergebenen Sentimentwerte je Annotierende belegt (vgl. Tabelle 3): M0 und M1 klassifizieren im Vergleich zu Llama-3 deutlich mehr Sätze als „negativ“.</p>
+                    <p>- Die stark variierenden κ-Werte in Tabelle 2 für Annotationsaufgabe (3) weisen darauf hin, dass die Annotationen von Llama-3 je nach subjektivem Empfinden überzeugend sein können. Aus Tabelle 3 geht hervor, dass M4 und M5, die ein niedriges Inter-Annotator-Agreement mit Llama-3 haben, deutlich mehr Sätze als „negativ“ annotiert haben als Llama-3. Zusätzlich hat M5 deutlich weniger Sätze als „positiv“ annotiert.</p>
+                    <p>- Darüber hinaus ist es nicht überraschend, dass der Großteil der Sätze als neutral annotiert wurde, da Personen die eine Anfrage an den Rechtschreibrat stellen, oftmals eine Antwort auf ein sprachliches – neutral dargebrachtes – Problem suchen, z. B. 
+                        <hi rend="italic">Wie ist denn die bestehende Regelung für Behörden </hi>[…].
+                    </p>
+                    <p>Zusammenfassend ist zu beobachten, dass, auf Grund der Thematik der Datengrundlage, viele subjektive Empfindungen in die Sentimentklassifikation einfließen, weshalb auch das Inter-Annotator-Agreement zwischen den menschlichen Annotierenden nicht besonders hoch ist. Folglich stellt sich als Nächstes die Frage, ob die vergebenen Sentimentwerte von Llama-3 ebenfalls plausibel sind. Um diese Frage zu beantworten, werden die Ergebnisse von Annotationsaufgabe (2) betrachtet.</p>
+                    <table rend="frame" xml:id="Tabelle3">
+                        <row>
+                            <cell rend="bold">Sentimentwert</cell>
+                            <cell rend="bold">M0</cell>
+                            <cell rend="bold">M1</cell>
+                            <cell rend="bold">M2</cell>
+                            <cell rend="bold">M3</cell>
+                            <cell rend="bold">M4</cell>
+                            <cell rend="bold">M5</cell>
+                            <cell rend="bold">Llama-3</cell>
+                            <cell rend="bold">BERT</cell>
+                            <cell rend="bold">random</cell>
+                        </row>
+                        <row>
+                            <cell rend="bold">positiv</cell>
+                            <cell>32</cell>
+                            <cell>16</cell>
+                            <cell>12</cell>
+                            <cell>58</cell>
+                            <cell>54</cell>
+                            <cell>21</cell>
+                            <cell>68</cell>
+                            <cell>15</cell>
+                            <cell>80</cell>
+                        </row>
+                        <row>
+                            <cell rend="bold">negativ</cell>
+                            <cell>66</cell>
+                            <cell>66</cell>
+                            <cell>34</cell>
+                            <cell>49</cell>
+                            <cell>73</cell>
+                            <cell>76</cell>
+                            <cell>38</cell>
+                            <cell>21</cell>
+                            <cell>68</cell>
+                        </row>
+                        <row>
+                            <cell rend="bold">neutral</cell>
+                            <cell>135</cell>
+                            <cell>151</cell>
+                            <cell>187</cell>
+                            <cell>126</cell>
+                            <cell>106</cell>
+                            <cell>136</cell>
+                            <cell>127</cell>
+                            <cell>197</cell>
+                            <cell>85</cell>
+                        </row>
+                        <head><anchor type="bookmark-start" xml:id="id__Ref1835295672"/>Tabelle 3: Die Anteile der vergebenen Sentimentwerte je Annotierender.</head>
+                    </table>
+                    <p>
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Qualitative Analyse der Begründungen von Llama-3</head>
+                    <p>Aus Tabelle 3 geht hervor, dass Llama-3 im Gegensatz zu M0, M1 und M2 deutlich mehr Sätze als „positiv“ klassifiziert hat. Betrachtet man die Sätze, die Llama-3 abweichend von den drei Annotierenden als „positiv“ annotiert hat, kann man folgende Beobachtungen machen:</p>
+                    <p>- In 28 Sätzen finden sich positive Emotionen wie 
+                        <hi rend="italic">freuen</hi>, das auf Grund seines Vorkommens in einer Floskel: 
+                        <hi rend="italic">Ich würde mich über baldige Antwort sehr freuen.</hi> von den menschlichen Annotierenden mehrheitlich als „neutral“ annotiert wurde. Die Begründung der GenKI: „The speaker's enthusiasm for a prompt response indicates a positive sentiment.“ überzeugt die Annotierenden von einer positiven Annotation.
+                    </p>
+                    <p>- In 10 Sätzen werden positive Veränderungen beschrieben. Die Annotierenden klassifizieren diese Sätze mehrheitlich als „neutral“, finden die Begründungen von Llama-3 jedoch überzeugend. Ein Beispiel hierfür lautet: 
+                        <hi rend="italic">Eltern könnten ihren Kindern wieder bei den Hausaufgaben helfen,</hi> […], wobei die Begründung von Llama-3 wie folgt lautet: „The speaker suggests that the proposed changes would allow parents to help their children more effectively, which is a positive sentiment.“
+                    </p>
+                    <p>- Es ist auffällig, dass Llama-3 Sätze als „positiv“ klassifiziert, wenn sie eine ‚kämpferische‘ Handlung enthalten. Darunter fallen 10 Sätze, wie beispielsweise 
+                        <hi rend="italic">Ich </hi>[…]
+                        <hi rend="italic"> kämpfe seit langem gegen diese merkwürdigen Auswüchse, </hi>[…]
+                        <hi rend="italic">.</hi> Llama-3 begründet die Annotation folgendermaßen: „The speaker expresses determination to fight against these “weird” developments […].)” Die Begründungen bei diesen Sätzen finden die Annotierenden nicht überzeugend und klassifizieren sie mehrheitlich als „negativ“.
+                    </p>
+                    <p>- Die Begründungen von 3 Sätzen, die von Llama-3 als „positiv“ klassifiziert wurden, finden die Annotierenden nicht überzeugend. Die Problematik bei diesen Sätzen liegt darin, dass man ihnen, je nachdem, welchen Aspekt man für die Sentimentklassifikation einbezieht, einen anderen Sentimentwert zuordnen würde. Einer dieser Sätze lautet: 
+                        <hi rend="italic">Das wäre eine klar strukturierte und verständliche Lösung ohne </hi>
+                        <hi rend="italic">[Verunstaltung]</hi>
+                        <hi rend="italic">der Deutschen Sprache. </hi>Llama-3 begründet die „positive”-Klassifikation mit: „The use of words like “klar” (clear) and “verständlich” (understandable) suggests a positive sentiment towards the proposed solution.” Die Annotierenden klassifizieren diesen Satz mehrheitlich als “neutral”, da ein Lösungsvorschlag für geschlechtergerechte Schreibung präsentiert wird. Auf Grund der Verwendung des Wortes 
+                        <hi rend="italic">Verunstaltung</hi> wäre auch eine Klassifikation als „negativ“ denkbar. 
+                    </p>
+                    <p>Bei der Analyse weiterer Sätze, bei denen sich die menschlichen Annotierenden und Llama-3 uneinig sind, wird sichtbar, dass in diesen sehr viele Aspekte vorkommen, die mit Sentimentwerten klassifiziert werden könnten. Darunter fallen beispielsweise die Sprechweise, die Haltung des Anfragenden oder Emotionen, Situationen und Handlungen, die im Satz beschrieben werden. Dieser Umstand erschwert die Sentimentanalyse bei dieser Studie. </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Fazit</head>
+                <p>In diesem Beitrag wurde gezeigt, dass sich Llama-3 mit den in dieser Vorstudie genutzten Annotationsrichtlinien nicht dazu eignet, eine Sentimentanalyse durchzuführen. Die Analyse der Begründungen von Llama-3 hat gezeigt, dass die Annotationsrichtlinien verfeinert werden müssen: Es muss spezifiziert werden, welche Aspekte in die Sentimentklassifikation einfließen sollen. Somit kann Llama-3 in den Digitalen Geisteswissenschaften bei der Erstellung sowie der Verfeinerung von Annotationsrichtlinien genutzt werden. Damit kann zunächst die Arbeitskraft von menschlichen Annotierenden gespart werden. Durch die GenKI können Aspekte aufgedeckt werden, die eine Einzelperson (auf Grund subjektiver Empfindungen) nicht präsent hat.</p>
+                <p>In einem nächsten Schritt sollte eine Folgestudie durchgeführt werden, in dem die Annotierenden und Llama-3 entsprechend der verfeinerten Annotationsrichtlinien instruiert werden. Es bleibt abzusehen, ob sich das IAA dadurch erhöhen wird und Llama-3 für den Einsatz einer Sentimentanalyse in Frage kommt.</p>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note xml:id="ftn1" rend="footnote text" n="1"> Vielen Dank an die Annotierenden: Jennifer Behr, Beate Brechtel, Annelen Brunner, Christian Lang, Niklas Reinken und Roman Schneider.</note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Al-Thubaity, Abdulmohsen, Sakhar Alkhereyf, Hanan Murayshid, Nouf Alshalawi, Maha Omirah, Raghad Alateeq, Rawabi Almutairi, Razan Alsuwailem, Manal Alhassoun und Imaan Alkhanen</hi>. 2023. "Evaluating ChatGPT and Bard AI on Arabic Sentiment Analysis." In 
+                        <hi rend="italic">Proceedings of ArabicNLP 2023</hi>, 335–349. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">de Araujo, Gladson, Tiago de Melo und Carlos Maurício S. Figueiredo</hi>. 2024. "Is ChatGPT an effective solver of sentiment analysis tasks in Portuguese? A Preliminary Study." In 
+                        <hi rend="italic">Proceedings of the 16th International Conference on Computational Processing of Portuguese - Vol. 1</hi>, 13–21. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Battle, Rick und Teja Gollapudi</hi>. 2024. "The Unreasonable Effectiveness of Eccentric Automatic Prompts." arXiv. doi:10.48550/ARXIV.2402.10949, https://arxiv.org/abs/2402.10949 (zugegriffen: 2. Juli 2024).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bsharat, Sondos Mahmoud, Aidar Myrzakhan und Zhiqiang Shen</hi>. 2023. "Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4." arXiv. doi:10.48550/ARXIV.2312.16171, https://arxiv.org/abs/2312.16171 (zugegriffen: 2. Juli 2024).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Cohen, Jacob</hi>. 1960. "A Coefficient of Agreement for Nominal Scales." 
+                        <hi rend="italic">Educational and Psychological Measurement</hi> 20, Nr. 1: 37–46. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Geschäftsstelle des Rats für deutsche Rechtschreibung, Hrsg</hi>. 2024. 
+                        <hi rend="italic">Amtliches Regelwerk der deutschen Rechtschreibung. Regeln und Wörterverzeichnis</hi>. Mannheim: IDS-Verlag.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Guhr, Oliver, Anne-Kathrin Schumann, Frank Bahrmann und Hans Joachim Böhe</hi>. 2020. "Training a Broad-Coverage German Sentiment Classification Model for Dialog Systems." In 
+                        <hi rend="italic">Proceedings of the Twelfth Language Resources and Evaluation Conference</hi>, 1627–1632. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Johnson, Sally</hi>. 2000. "The Cultural Politics of the 1998 Reform of German Orthography." 
+                        <hi rend="italic">German Life and Letters</hi> 53, Nr. 1: 106–125.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Krugmann, Jan Ole und Jochen Hartmann</hi>. 2024. "Sentiment Analysis in the Age of Generative AI." 
+                        <hi rend="italic">Customer Needs and Solutions</hi> 11: 3.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Küppers, Hans-Georg</hi>. 1984. "Orthographiereform und Öffentlichkeit: zur Entwicklung und Diskussion der Rechtschreibreformbemühungen zwischen 1876 und 1982." Sprache der Gegenwart 61. Düsseldorf: Schwann.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Leidinger, Alina, Robert Van Rooij und Ekaterina Shutova</hi>. 2023. "The language of prompting: What linguistic properties make a prompt successful?" In: 
+                        <hi rend="italic">Findings of the Association for Computational Linguistics: EMNLP 2023</hi>, 9210–9232.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mæhlum, Petter, David Samuel, Rebecka Maria Norman, Elma Jelin, Øyvind Andresen Bjertnæs, Lilja Øvrelid und Erik Velldal</hi>. 2024. "It’s Difficult to Be Neutral – Human and LLM-based Sentiment Annotation of Patient Comments." In: 
+                        <hi rend="italic">Proceedings of the First Workshop on Patient-Oriented Language Processing (CL4Health) @ LREC-COLING 2024</hi>, 8–19.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Meta</hi>. 2024. Build the future of AI with Meta Llama 3. https://llama.meta.com/llama3/.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pfister, Jan und Andreas Hotho</hi>. 2024. "SuperGLEBer: German Language Understanding Evaluation Benchmark." In: 
+                        <hi rend="italic">Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)</hi>, 7904–7923.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rønningstad, Egil, Erik Velldal und Lilja Øvrelid</hi>. 2024. "A GPT among Annotators: LLM-based Entity-Level Sentiment Annotation." In: 
+                        <hi rend="italic">Proceedings of The 18th Linguistic Annotation Workshop (LAW-XVIII)</hi>, 133–139. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schulhoff, Sander, Michael Ilie, Nishant Balepur, Konstantine Kahadze, Amanda Liu, Chenglei Si, Yinheng Li, u. a</hi>. 2024. "The Prompt Report: A Systematic Survey of Prompting Techniques." arXiv. doi:10.48550/ARXIV.2406.06608, https://arxiv.org/abs/2406.06608 (zugegriffen: 2. Juli 2024).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Viera, Anthony J. und Joanne M. Garrett</hi>. 2005. "Understanding Interobserver Agreement: The Kappa Statistic." 
+                        <hi rend="italic">Family Medicine</hi> 37, Nr. 5: 360–363.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Zhang, Wenxuan, Yue Deng, Bing Liu, Sinno Pan und Lidong Bing</hi>. 2024. "Sentiment Analysis in the Era of Large Language Models: A Reality Check." In: 
+                        <hi rend="italic">Findings of the Association for Computational Linguistics</hi>, 3881–3906. 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="JANNIDIS_Fotis_M_glichkeiten_und_Grenzen_der_KI_gest_tzten_A">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Möglichkeiten und Grenzen der KI-gestützten Annotation am Beispiel von Emotionen in Lyrik</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Kröncke</surname>
+                        <forename>Merten</forename>
+                    </persName>
+                    <affiliation>Universität Würzburg, Deutschland</affiliation>
+                    <email>merten.kroencke@uni-goettingen.de</email>
+                    <idno type="ORCID">0000-0003-2717-0598</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Jannidis</surname>
+                        <forename>Fotis</forename>
+                    </persName>
+                    <affiliation>Universität Göttingen, Deutschland</affiliation>
+                    <email>fotis.jannidis@uni-wuerzburg.de</email>
+                    <idno type="ORCID">0000-0001-6944-6113</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Konle</surname>
+                        <forename>Leonard</forename>
+                    </persName>
+                    <affiliation>Universität Göttingen, Deutschland</affiliation>
+                    <email>leonard.konle@uni-wuerzburg.de</email>
+                    <idno type="ORCID">0000-0001-5833-0414</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Winko</surname>
+                        <forename>Simone</forename>
+                    </persName>
+                    <affiliation>Universität Würzburg, Deutschland</affiliation>
+                    <email>simone.winko@phil.uni-goettingen.de</email>
+                    <idno type="ORCID">0000-0002-1006-7925</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-06-20T13:41:11.677000000</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Vortrag: Methode</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Textannotation</term>
+                    <term>Sprachmodelle</term>
+                    <term>ChatGPT</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Annotieren</term>
+                    <term>Bewertung</term>
+                    <term>Literatur</term>
+                    <term>Forschungsprozess</term>
+                    <term>Software</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung</head>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-aa0c764e-7fff-6465-553c-85fdcd30f278"/>
+                    <hi rend="color(#000000)">Die rasante Entwicklung der Verarbeitung natürlicher Sprache durch neuronale Netze hat in den letzten 11 Jahren auch die Arbeitsweisen der digitalen Geisteswissenschaften deutlich verändert. Die Entwicklung neuronaler Architekturen hat zwei Ansätze ermöglicht, die auch heute das NLP bestimmen: 1. ‘Finetuning’: Ein Sprachmodell wird auf vielen Daten vortrainiert und dann auf deutlich weniger Daten für eine bestimmte Aufgabe feinjustiert. 2. ‘Chat’: Sehr große Sprachmodelle werden auf sehr vielen Daten vortrainiert und dann in einem zweiten Schritt auf die Kommunikation mit Anwendern hin eingerichtet. Der Finetuning-Ansatz hat sich schnell in den Digital Humanities durchgesetzt. Allerdings ist er mit vergleichsweise hohen Kosten verbunden, da die Leistungsfähigkeit für das Finetuning stark mit der Anzahl der Trainingsbeispiele korreliert. Deswegen ist die Verwendung von sehr großen Sprachmodellen ohne eine größere Anzahl von Trainingsbeispielen (</hi>
+                    <hi rend="italic">zero-shot </hi>
+                    <hi rend="color(#000000)">oder </hi>
+                    <hi rend="italic">few-shot prompting</hi>
+                    <hi rend="color(#000000)">) besonders interessant, schließlich muss in einem solchen Kontext nur eine kleine Menge von Testdaten annotiert werden. Eine Antwort auf die Frage, ob in einem Forschungsprojekt der klassische Finetuning-Ansatz durch </hi>
+                    <hi rend="italic">zero-shot </hi>
+                    <hi rend="color(#000000)">oder </hi>
+                    <hi rend="italic">few-shot prompting </hi>
+                    <hi rend="color(#000000)">in sehr großen Sprachmodellen ersetzt werden kann, ist nicht einfach, da die Antwort von der Komplexität der Aufgabenstellung ebenso abhängt wie vom Zeitpunkt, zu dem man die Frage stellt: Die Finetuning-Ansätze entwickeln sich ebenso weiter wie die sehr großen Sprachmodelle. Dazu kommen pragmatische Fragen: Hat die Arbeitsgruppe Zugriff auf die technische Infrastruktur, die man für das Finetuning von großen Sprachmodellen benötigt? Hat sie die finanziellen Ressourcen, um die kommerziellen Modelle für umfangreiche Annotationsaufgaben zu verwenden? Unser Beitrag will eine (wenn auch nur temporär gültige) Antwort für einen bestimmten Bereich liefern, die Annotation von Emotionen in literarischen Texten, und dadurch zugleich an der Diskussion darüber mitwirken, wie in den DH eine Antwort auf jene Frage gefunden werden kann.</hi>
+                </p>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-9e8d65d1-7fff-a612-d7cf-094e0be34132"/>
+                    <hi rend="color(#000000)">Grundlage für unsere Arbeit sind die Annotationen von lyrischen Texten im Rahmen des DFG-Projekts </hi>
+                    <hi rend="italic">The Beginnings of Modern Poetry </hi>
+                    <hi rend="color(#000000)">(</hi>
+                    <ptr target="https://uni-goettingen.de/moderne-lyrik/"/>
+                    <hi rend="color(#000000)">). Die annotierten Texte haben wir drei großen Sprachmodellen mit der Aufgabe vorgelegt, </hi>
+                    <hi rend="color(#000000)">jeweils eine Strophe mit Blick auf das Vorkommen von sechs Emotionsgruppen zu annotieren. Dabei haben wir nach einigen Vorstudien systematisch zwei Aspekte variiert: kurzer vs. langer Prompt und einfach randomisiertes vs. stratifiziert randomisiertes Sampling.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Forschungsstand</head>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-33ff96a5-7fff-7b4a-b29e-05d8db64bd80"/>Die Möglichkeit, ChatGPT und verwandte Dienste zur Annotation von Daten zu verwenden, wurde sehr schnell erkannt. Ding et al. 2023 beobachten bei wenigen und klar definierten Labeln gute bis sehr gute Resultate, sehen allerdings auch eine deutliche Varianz abhängig vom Prompt. Ähnlich optimistische Ergebnisse haben Gilardi et al. 2023 erzielt. Törnberg 2023 vergleicht ChatGPT4s Annotationen von Tweets – wird eine republikanische oder eine demokratische Position vertreten? – mit denen von Expert:innen und von Arbeitern von Mechanical Turk und kommt zu dem Ergebnis, dass die Ergebnisse von ChatGPT deutlich besser und konsistenter sind als die der beiden menschlichen Gruppen. Reiss 2023 warnt allerdings davor, ChatGPT als Annotationswerkzeug ohne manuelle Datenvalidierung zu verwenden, da das System sehr empfindlich auf die Manipulation einzelner Wörter und Einstellungen reagiert. Rebora et al. 2023 vergleichen für die Aufgabe der Sentiment Analysis ChatGPT mit einem Finetuning-Modell und kommen zu dem Ergebnis, dass letzteres immer noch bessere Ergebnisse liefert (ähnlich Wang 2023).
+                </p>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-bf78b85f-7fff-d0b7-d38e-f309feda84c2"/>Die Diskrepanzen zwischen den Ergebnissen lassen sich durch drei Aspekte gut erklären: Wie schwierig ist die Aufgabe? Named Entity Recognition ist einfacher als Sentiment Analyse usw. Welches Modell wurde verwendet? Alle Aufsätze, die wir gesichtet haben, verwenden (auch) ChatGPT, aber OpenAI bietet zu einem Zeitpunkt unterschiedliche Modelle mit unterschiedlichen Leistungsniveaus an – und die Modelle werden laufend aktualisiert. Was ist der Referenzpunkt des Vergleichs? Zum einen geht es um die Frage, ob man menschliche Annotator:innen durch große Sprachmodelle ersetzen kann, zum anderen darum, ob ChatGPT &amp; Co. die Leistungsfähigkeit von Finetuning-Modellen erreichen.
+                </p>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-0259f6c7-7fff-18de-3fa3-bc74d10c1823"/>
+                    <hi rend="color(#000000)">Für die Promptgestaltung haben wir uns an den Empfehlungen von </hi>
+                    <ptr target="https://www.promptingguide.ai/"/>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">orientiert. Nach dem Überblick von Vatsal und Dubey 2024 gibt es keine klare Empfehlung zum Prompting bei Emotionsannotationen.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Ressourcen</head>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-e571e4ed-7fff-cce3-43b6-8d27f2c568ea"/>Das Untersuchungskorpus besteht aus Texten in Lyrikanthologien, die sich auf Gedichte von Zeitgenoss:innen konzentrieren. Die Anthologien stammen aus der Zeit von 1859 bis 1919 und enthalten mehr als 6000 Gedichte, von denen 1412 manuell annotiert wurden (vgl. Winko et al. 2022a, Winko et al. 2022b).
+                    <hi rend="color(#000000)"> </hi>
+                </p>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-f35bb151-7fff-71ea-ec75-1d404e7059b1"/>
+                    <hi rend="color(#000000)">Die Emotionsannotation zielt darauf ab, die im Text gestalteten Emotionen (und nicht die Emotionen der Leser:innen) zu erfassen. Möglich war, einer Textstelle genau eine, aber auch keine oder mehrere Emotionen zuzuweisen. Genutzt wurde ein Set von 40 diskreten </hi>
+                    <hi rend="color(#000000)">Emotionen, darunter zum Beispiel Hoffnung, Sehnsucht oder Hass. Die Annotationseinheiten sind Wörter bzw. Wortfolgen (vgl. Kröncke et al. 2022). Da für viele einzelne Emotionen nur eine sehr geringe Zahl von Annotationen vorliegt, werden die Emotionen nachträglich zu sechs Gruppen zusammengefasst, orientiert an Shaver et al. 1987: Liebe (Love), Freude (Joy), Trauer (Sadness), Erregung/Überraschung (Agitation), Angst (Fear) und Wut (Anger). </hi>
+                </p>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-cf3083e3-7fff-cef0-fdb5-a6c7ff7bd55a"/>Für das maschinelle Lernen wurde der Task leicht angepasst. Um die Komplexität der Aufgabe und den Rechenaufwand zu reduzieren, haben wir eine bestimmte Segmentierung vorgegeben, nämlich die Einheit ‘Strophe’. Die Multi-Label-Klassifikation basiert auf dem (mithilfe einer großen Zahl manueller Annotationen trainierten) Modell SauerkrautLM-7B-HerO und wurde für die sechs Emotionsgruppen nach Shaver et al. 1987 durchgeführt.
+                </p>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-12fc23ae-7fff-d379-6f94-8f1dd4b48493"/>Sowohl das Korpus als auch das Annotationsverfahren und das maschinelle Lernen haben wir an anderen Stellen bereits ausführlicher erläutert (Konle et al. 2022, Konle et al. 2024).
+                </p>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-6b7afcb3-7fff-01bd-97cd-d54ce06e8682"/>
+                    <hi rend="color(#000000)">Die folgenden Experimente basieren auf zwei Samples aus dem Gesamtkorpus: Zum einen verwenden wir ein einfach randomisiertes Sample (350 Strophen), das die im Korpus </hi>
+                    <hi rend="italic">de facto</hi>
+                    <hi rend="color(#000000)"> vorhandenen Häufigkeitsverhältnisse der Emotionsklassen widerspiegeln soll, zum anderen ein stratifiziert randomisiertes Sample (ebenfalls 350 Strophen: 50 x jede der 6 Emotionsgruppen + 50 Strophen ohne Emotion), das eine gewisse Mindesthäufigkeit pro Emotionsgruppe garantiert, aber durch die Kookkurrenz von Emotionsgruppen ebenfalls nicht zu einer Gleichverteilung führt.<ref n="1" target="ftn1"/></hi>
+  
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/95beb09a94c600b3812d4ef75cf5d3cd.png"/>
+                    </figure>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Methoden</head>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-bddbf9ec-7fff-e792-3742-79889c1bc87f"/>In allen Experimenten lassen wir Chat-Modelle Fragen zu den Emotionen in lyrischen Texten beantworten. Der Task ist der gleiche, den bereits das Finetuning-Modell SauerkrautLM-7B-HerO übernommen hat, also die Zuweisung von keiner, einer oder mehreren der sechs Emotionsgruppen nach Shaver et al. 1987 zu einzelnen Strophen. Wir verwenden drei (kommerzielle) Modelle: GPT4o (OpenAI), Claude (Anthropic) und Gemini (Google).
+                </p>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-46b8732a-7fff-1978-bbf1-6e7ea505256e"/>In unseren Experimenten testen wir einen kurzen und einen langen Prompt. Der kurze Prompt enthält keine Erläuterungen der Emotionskonzepte und keine Annotationsbeispiele, der lange Prompt schon. Die Gestaltung des langen Prompts ist durch verschiedene Vorexperimente informiert. Ziel ist unter anderem, die (ansonsten zu große) Häufigkeit, mit der Emotionen zugewiesen werden, zu reduzieren. Wir setzen explizites CoT-Prompting ein und weisen darauf hin, dass hinreichend starke Emotionsindikatoren vorliegen müssen. Insgesamt ergeben sich vier Experimente:
+                </p>
+                <list type="ordered">
+                    <item>Simple random Sampling. Short Prompt</item>
+                    <item>Simple random Sampling. Long Prompt</item>
+                    <item>Stratified random Sampling. Short Prompt</item>
+                    <item>Stratified random Sampling. Long Prompt</item>
+                </list>
+            </div>
+         
+            <div type="div1" rend="DH-Heading1">
+                <head>Ergebnisse</head>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-13f90d6f-7fff-2007-ed76-64c115ebeae7"/>Tabelle 2 und 3 geben Auskunft über die Performance der Emotionserkennung. Für das Modell Claude 3.5 Sonnet können wir in der Variante Stratified random Sample – Long Prompt noch keine Ergebnisse mitteilen, 
+                    <anchor xml:id="id_docs-internal-guid-ac53423c-7fff-e858-2699-df1d8079a7b5"/>
+                    <hi rend="color(#000000)">da </hi>
+                    <hi rend="color(#000000)">unsere </hi>
+                    <hi rend="color(#000000)">langen Prompts bei Anthropic wiederholt zur Überschreitung des rate limits geführt haben</hi>. Wir planen, das Experiment nachzuholen.
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/ba1caa6084e732071981c6c7e35e17a3.png"/>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/5ea9b34643de7d783f4034a3ee95a52f.png"/>
+                    </figure>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Diskussion</head>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-6b68c9be-7fff-a81f-6b7f-207608f0f75b"/>Die Performance aller Short-Prompt-Modelle bleibt hinter den Finetuning-Ergebnissen zurück, wenn auch unterschiedlich deutlich. Andere Studien sind auf Basis anderer Daten und anderer Tasks zu ähnlichen Ergebnissen gekommen (etwa Rebora et al. 2023).
+                </p>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-73176796-7fff-d820-7a33-ae2a0f366302"/>
+                    <hi rend="color(#000000)">Die Long-Prompt-Modelle performen besser als die Short-Prompt-Modelle. Ein besonders deutliches Beispiel ist die Emotionsgruppe Agitation, die von den Short-Prompt-Modellen gar nicht erkannt wird, möglicherweise weil der Begriff in unserem Annotationsdesign ein spezifisches Konzept bezeichnet, das mit der alltagssprachlichen Bedeutung des Worts ‘Agitation’ wenig gemein hat.</hi>
+                    <hi rend="color(#000000)"><ref n="2" target="ftn2"/>
+                    </hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">In einigen Fällen reicht die Performance der besten Long-Prompt-Modelle fast an die Finetuning-Ergebnisse heran, z. B. im Fall von ‘Love’, oder zieht gleich, etwa im Fall von ‘Sadness’.</hi>
+                </p>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-9203f3eb-7fff-c692-dd1d-c7d2d5a9862f"/>Im Stratified random Sample performen die Modelle entweder ungefähr gleich gut oder deutlich besser (Anger, Fear) als im Simple random Sample. 
+                    <anchor xml:id="id_docs-internal-guid-b2cdc35a-7fff-b076-e85e-a016565a45f2"/>Relevant dafür ist allerdings, dass Anger und Fear im Simple random Sample nur selten vorkommen, weshalb die entsprechenden Ergebnisse nicht allzu belastbar sind.
+                </p>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-cde8a4f0-7fff-dd61-7d17-ac796c965cd9"/>Zwischen den drei Modellen GPT4o, Gemini 1.5 und Claude 3.5 Sonnet zeigen sich je nach Sample und je nach Prompt einige Unterschiede. Im Simple random Sample ist die Performance von GPT4o oder Claude 3.5 Sonnet am besten, im Stratified random Sample von GPT4o (wobei hier für Claude 3.5 Sonnet in der Long-Prompt-Version keine Daten verfügbar sind).
+                </p>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-abb17551-7fff-feaa-753d-498e23ab26c7"/>
+                    <hi rend="color(#000000)">Die bisherigen Beobachtungen haben sich am F1-Score orientiert. Unterscheidet man Precision und Recall, werden weitere Befunde sichtbar. Das gilt nicht zuletzt für die Erkennung von solchen Strophen, die </hi>
+                    <hi rend="italic">keine </hi>
+                    <hi rend="color(#000000)">Emotion enthalten (vgl. Tabelle 4, exemplarisch für das Simple random Sample).</hi>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/c63b90381c3df47547d49ab3192f97e0.png"/>
+                    </figure>
+                    <anchor xml:id="id_docs-internal-guid-cd2a1c26-7fff-6c1f-a5ee-21091c6e9434"/>
+                    <hi rend="color(#000000)">Für alle Modelle und für alle Prompts gilt,</hi>
+                    <hi rend="color(#000000)"><ref n="3" target="ftn3"/>
+                    </hi>
+                    <hi rend="color(#000000)"> dass bei der Erkennung von Emotionslosigkeit die Precision höher als der Recall ist. Der Befund hängt damit zusammen, dass die Modelle den Strophen häufiger Emotionen (bzw. seltener </hi>
+                    <hi rend="italic">keine </hi>
+                    <hi rend="color(#000000)">Emotionen) als menschliche Annotator:innen zuschreiben. Erklärungsrelevant dürfte sein, dass manuell ‘sparsam’ annotiert werden sollte, auch mit Rücksicht auf das Inter-Annotator-Agreement. Die Modelle sind nicht an diese Annotationspraxis gebunden, wenngleich der lange Prompt sie (wie beabsichtigt) in diese Richtung zu lenken scheint, immerhin steigt hier der Recall, besonders bei GPT4o und Gemini 1.5.</hi>
+                </p>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-4e7cab1b-7fff-d7d9-d7a3-c9ec43da821c"/>Das wichtigste Ergebnis unserer Studie ist, dass die sehr großen Sprachmodelle auch bei einer komplexen Aufgabe wie der Annotation von Emotionen teilweise das Niveau von Finetuning-Modellen erreichen, aber die Ergebnisse abhängig von der Kategorie stark und in schwer zu prognostizierender Weise schwanken. Die große und nur teilweise transparente Varianz in Abhängigkeit von der Promptgestaltung gilt es ebenfalls zu berücksichtigen.
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Zahlreiche weitere Studien sind denkbar. Aufschlussreich wäre, die Experimente auch für die 40 Einzelemotionen (statt nur für die 6 Emotionsgruppen) durchzuführen. Zudem lassen sich die Prompts anpassen, etwa insofern als den Modellen eine bestimmte Rolle zugewiesen wird (“Du bist Expertin für …”, “Du bist eine Person des 19. Jahrhunderts” usw.).</hi>
+                    <hi rend="color(#000000)"><ref n="4" target="ftn4"/>
+                    </hi>
+                    <hi rend="color(#000000)"> Des Weiteren wäre zu testen, ob sich die Performance ändert, wenn der Task modifiziert oder anders modelliert wird, zum Beispiel inklusive Segmentierung (die Teil der manuellen Annotation ist) und/oder als Reihe binärer Klassifikationen. Die binäre Klassifikation haben wir exemplarisch getestet. Es zeigte sich, dass das Modell nun </hi>
+                    <hi rend="italic">seltener</hi>
+                    <hi rend="color(#000000)"> (statt wie im bisherigen Setup häufiger) als menschliche Annotator:innen Emotionsgruppen zuweist.</hi>
+                    <hi rend="color(#000000)"><ref n="5" target="ftn5"/>
+                    </hi>
+                    <hi rend="color(#000000)"> Der Befund deutet abermals auf die große Varianz des Modellverhaltens hin. Schließlich wäre informativ, das Inter-Annotator-Agreement zwischen menschlichen Annotator:innen mit dem Agreement zwischen Sprachmodellen zu vergleichen.</hi>
+                </p>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-96de0a5c-7fff-e1e3-971c-acccb184a2c5"/>Dass die Performanz je nach Kategorien und Prompts stark variiert, veranlasst uns zu folgendem Schluss: Auch wenn die Sprachmodelle ständig verbessert werden, wird man wohl auf absehbare Zeit nicht ohne die Entwicklung von Annotationsguidelines und die Annotation von ausreichend Testdaten auskommen.
+                </p>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note xml:id="ftn1" rend="footnote text" n="1">
+                            
+                                <anchor xml:id="id_docs-internal-guid-1db38ca0-7fff-7049-5ad2-ac8d3c71f255"/>
+    <hi rend="color(#000000)"> Daten und Code: https://github.com/MertenKroencke/DHd2025_LLMs.</hi>
+                                
+                    
+                            
+                        </note>
+<note xml:id="ftn2" rend="footnote text" n="2">
+                            <anchor xml:id="id_docs-internal-guid-5b764bc0-7fff-2f18-729c-27aab6a154f8"/>
+                            <hi rend="color(#000000)">Die Emotionsgruppe ‘Agitation’ besteht aus vier Subemotionen: (unspezifische) Emotionalität, Überraschung, Spannung, Aufregung. Aufregung – diese Subemotion entspricht sprachlich am ehesten ‘Agitation’ – macht in den Samples weniger als 10% der Agitation-Annotationen aus. Bei Agitation handelt es sich zu über 80% um (unspezifische) Emotionalität.</hi>
+                        </note>
+<note xml:id="ftn3" rend="footnote text" n="3">
+                            <anchor xml:id="id_docs-internal-guid-15651ec4-7fff-5806-9bfe-9e51b8d5a074"/>
+                            <hi rend="color(#000000)">Gemini 1.5 hat bei einigen Strophen auf den Prompt keine Antwort gegeben. Diese Strophen schließen wir aus der Auswertung aus.</hi>
+                        </note>
+<note xml:id="ftn4" rend="footnote text" n="4">
+                            <anchor xml:id="id_docs-internal-guid-196e4ea0-7fff-0504-cb2c-1f0340c2fb9c"/> Vergleichbares könnte auch bei der Gestaltung des System Prompts verwendet werden. Das systematische Variieren der Temperatur hat dagegen nach Törnberg keinen größeren Effekt (Törnberg 2023).
+                        </note>
+<note xml:id="ftn5" rend="footnote text" n="5">
+                            <anchor xml:id="id_docs-internal-guid-95615cdf-7fff-c548-3a0e-a8882a0e72e7"/> Binäre Klassifikation mit ChatGPT4o (short prompt) F1-Score: Agitation: 0.5, Anger: 0.56, Fear: 0.75, Joy: 046, Love: 0.66 , Sadness: 0.76. In allen Fällen (bis auf Sadness) weist das Modell den Strophen die Emotionsgruppe seltener als menschliche Annotator:innen zu.
+                        </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <anchor xml:id="id_docs-internal-guid-58230057-7fff-9d34-3fc0-c074314d9055"/>
+                        <hi rend="color(#000000) background-color(#ffffff)"><hi rend="bold">Ding, Bosheng, Chengwei Qin, Linlin Liu, Yew Ken Chia, Shafiq Joty, Boyang Li und Lidong Bing</hi>. 2023. “Is GPT-3 a Good Data Annotator?” arXiv. </hi>
+                        <ptr target="http://arxiv.org/abs/2212.10450"/>
+                        <hi rend="color(#000000) background-color(#ffffff)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) background-color(#ffffff)"><hi rend="bold">Gilardi, Fabrizio, Meysam Alizadeh und Maël Kubli</hi>. 2023. “ChatGPT Outperforms Crowd-Workers for Text-Annotation Tasks.” In </hi>
+                        <hi rend="color(#000000) background-color(#ffffff)italic">Proceedings of the National Academy of Sciences</hi>
+                        <hi rend="color(#000000) background-color(#ffffff)"> </hi>
+                        <hi rend="color(#000000) background-color(#ffffff)">120. 30: e2305016120.</hi>
+                        <ref target="https://doi.org/10.1073/pnas.2305016120">
+                            <hi rend="color(#000000) background-color(#ffffff)"> </hi>
+                            <hi rend="color(#1155cc) background-color(#ffffff)underline">https://doi.org/10.1073/pnas.2305016120</hi>
+                        </ref>
+                        <hi rend="color(#000000) background-color(#ffffff)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000)"><hi rend="bold">Konle, Leonard, Merten Kröncke, Fotis Jannidis und Simone Winko</hi>. 2022. “Emotions and Literary Periods.” In </hi>
+                        <hi rend="italic">DH2022: Responding to Asian Diversity. Conference Abstracts, July 25–29, 2022, Tokyo, Japan</hi>
+                        <hi rend="color(#000000)">, 278–281.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000)"><hi rend="bold">Konle, Leonard, Merten Kröncke, Fotis Jannidis und Simone Winko</hi>. 2024. “On the Unity of Literary Change. The Development of Emotions in German Poetry, Prose, and Drama </hi>
+                        <hi rend="color(#000000)">between 1850 and 1920 as a Test Case.” In </hi>
+                        <hi rend="italic">CHR 2024: Computational Humanities Research Conference, December 4–6, 2024, Aarhus, Denmark</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">[eingereicht].</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000)"><hi rend="bold">Kröncke, Merten, Fotis Jannidis, Leonard Konle und Winko, Simone</hi>. 2022. “Annotationsrichtlinien Emotionsmarker und Emotionen.” Zenodo. </hi>
+                        <ptr target="https://doi.org/10.5281/zenodo.6021152"/>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) background-color(#ffffff)"><hi rend="bold">Rebora, Simone, Marina Lehmann, Anne Heumann, Wei Ding und Gerhard Lauer</hi>. 2023. “Comparing ChatGPT to Human Raters and Sentiment Analysis Tools for German Children’s Literature.” In </hi>
+                        <hi rend="color(#000000) background-color(#ffffff)italic">CHR 2023: Computational Humanities Research Conference, December 6–8, 2023, Paris, France</hi>
+                        <hi rend="color(#000000) background-color(#ffffff)">, 333–343.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) background-color(#ffffff)"><hi rend="bold">Reiss, Michael V</hi>. 2023. “Testing the Reliability of ChatGPT for Text Annotation and Classification: A Cautionary Remark”. arXiv.</hi>
+                        <ref target="https://doi.org/10.48550/arXiv.2304.11085">
+                            <hi rend="color(#000000) background-color(#ffffff)"> </hi>
+                            <hi rend="color(#1155cc) background-color(#ffffff)underline">https://doi.org/10.48550/arXiv.2304.11085</hi>
+                        </ref>
+                        <hi rend="color(#000000) background-color(#ffffff)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) background-color(#ffffff)"><hi rend="bold">Shaver, P., J. Schwartz, D. Kirson und C O’Connor</hi>. 1987. “Emotion Knowledge: Further Exploration of a Prototype Approach.” In </hi>
+                        <hi rend="color(#000000) background-color(#ffffff)italic">Journal of Personality and Social Psychology </hi>
+                        <hi rend="color(#000000) background-color(#ffffff)">52.6: 1061–1086. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) background-color(#ffffff)"><hi rend="bold">Törnberg, Petter</hi>. 2023. “ChatGPT-4 Outperforms Experts and Crowd Workers in Annotating Political Twitter Messages with Zero-Shot Learning”. arXiv. </hi>
+                        <ptr target="https://doi.org/10.48550/arXiv.2304.06588"/>
+                        <hi rend="color(#000000) background-color(#ffffff)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) background-color(#ffffff)"><hi rend="bold">Vatsal, Shubham und Harsh Dubey</hi>. 2024. “A Survey of Prompt Engineering Methods in Large Language Models for Different NLP Tasks.” arXiv. </hi>
+                        <ptr target="https://doi.org/10.48550/arXiv.2407.12994"/>
+                        <hi rend="color(#000000) background-color(#ffffff)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) background-color(#ffffff)"><hi rend="bold">Winko, Simone, Konle, Leonard, Kröncke, Merten und Fotis Jannidis</hi>. 2022a. “Lyrik-Anthologien 1850-1910.” Zenodo. </hi>
+                        <ptr target="https://doi.org/10.5281/zenodo.6053952"/>
+                        <hi rend="color(#000000) background-color(#ffffff)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) background-color(#ffffff)"><hi rend="bold">Winko, Simone, Konle, Leonard, Kröncke, Merten und Fotis Jannidis</hi>. 2022b. “Korpusbeschreibung der Lyrik-Anthologien 1850-1910.” Zenodo. </hi>
+                        <ptr target="https://doi.org/10.5281/zenodo.6204787"/>
+                        <hi rend="color(#000000) background-color(#ffffff)">. </hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

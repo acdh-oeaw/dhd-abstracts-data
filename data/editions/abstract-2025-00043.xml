@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="SCHR_TER_Julian_Zur_Modellierung_von_Unsicherheit__Machine_L">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Zur Modellierung von Unsicherheit: Machine Learning und begriffliche Vagheit am Beispiel der Novellen im 19. Jahrhundert</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Schröter</surname>
+                        <forename>Julian</forename>
+                    </persName>
+                    <affiliation>LMU München, Deutschland</affiliation>
+                    <email>j.schroeter@lmu.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-07-24T23:00:15.768845139</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Vortrag: Methode</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Machine Learning</term>
+                    <term>Unbestimmtheit</term>
+                    <term>Vagheit</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Programmierung</term>
+                    <term>Strukturanalyse</term>
+                    <term>Modellierung</term>
+                    <term>Visualisierung</term>
+                    <term>Literatur</term>
+                    <term>Text</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung</head>
+                <p>Die Modellierung von Vagheit und Unsicherheit in der sprachlichen Kategorisierung ist ein offenes Problem im Bereich des 
+                    <hi rend="italic">Machine Learning</hi>, eine drängende Herausforderung für die Computerlinguistik und eine Chance für die Rekonstruktion semiotisch komplexer kultureller Phänomene. Literaturgeschichte ist ein besonders interessanter Fall eines semiotisch komplexen kulturellen Systems. Pionierarbeit in der algorithmischen Modellierung kategorialer Vagheit in Fragen auf die Geschichte der Literatur wurde von Ted Underwood (2019b) als 
+                    <hi rend="italic">Perspectival</hi>
+                    <hi rend="italic">Modeling</hi> geleistet, und zwar insbesondere an Beispielen historischer Genres. Underwoods wegweisender Gedanke besteht darin, aus der Not, dass der kulturelle Bias in den menschlich annotierten Trainingsdaten grundsätzlich zu einer Art 
+                    <hi rend="italic">Human Bias</hi> überwachter maschineller Lernverfahren führt, eine Tugend zu machen, indem Modelle auf den historischen Gebrauch von Gattungsbegriffen trainiert und vergleichend aufeinander beziehbar gemacht werden. Die Rekonstruktion von kulturellem Wissen über literarische Gattungen sollte sich daher als eine Rekonstruktion begrifflicher Unsicherheit verstehen. Modellierung auf der Grundlage überwachten maschinellen Lernens im Feld der Digital Humanities ist, wie bereits Underwood (2019a) herausgestellt hat, besonders geeignet, Formen der Unsicherheit zu beschreiben. Seine Modellierungen haben jedoch die Ebene der Semantik selbst nicht berücksichtigt. Der vorliegende Beitrag möchte einen neuen Schritt in Richtung einer Modellierung kulturellen Wissens durch eine originelle Verbindung von drei Techniken oder Ideen gehen. Dafür gilt es in Abschnitt 2 Vagheit und begriffliche Offenheit auf der Ebene historischer Semantik zu modellieren. Diese Modellierung wird in Abschnitt 3 für eine neuartige Projektionsmethode in der konkreten historischen Analyse der Erzählprosagattungen des 19. Jahrhunderts weiterentwickelt. Durchgeführt werden die entwickelten Methoden mit realen Daten aus einem neu aufgebauten Korpus von Journalprosa des 19. Jahrhunderts (Schröter et al., 2023). Abschnitt 4 führt mit einem weiteren Verfahren zur Messung komplexer Datenstrukturen eine plausibilisierende Triangulation durch, die im abschließenden Ausblick zu Fragen der Evaluation und Interpretierbarkeit der Ergebnisse führt. Die hierfür aufgegriffenen Techniken und Ideen sind die der perspektivischen Modellierung, also die Verwendung eines Unentscheidbarkeit berücksichtigenden Maßes für Vorhersagegenauigkeit im Bereich überwachten maschinellen Lernens, und die Verwendung von Label-Distributionen anstelle binärer 
+                    <hi rend="italic">Ground Truth</hi> Label. 
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Modellierung von begrifflicher Vagheit als Prototypikalität</head>
+                <p>Die Sprachphilosophie und die literarische Gattungstheorie stellen mit der Prototypentheorie (Rosch, 1978; Taylor, 2007; Hempfer, 2010) und dem Familienähnlichkeitsbegriff nach Wittgensteins
+                    <hi rend="italic">Philosophischen Untersuchungen</hi> (2001, Abs. 65–71), (Strube, 1986; Fishelov, 1991) zwei Modelle zur Verfügung, die es erlauben, begriffliche Vagheit abzubilden. Obwohl beide Modelle in Gattungsstudien der CLS aufgegriffen wurden (Calvo Tello, 2021; Henny-Kramer, 2023), wurde die gezielte Modellierung des in den Modellen konzipierten Vagheitscharakters noch nicht mit hinreichender Komplexität abgebildet. Auch wenn sich die Prototypentheorie bei Rosch (1978) aus Wittgensteins Überlegungen zur Familienähnlichkeit hergeleitet hat, kann man die beiden Konzeptualisierungen von Vagheit gut unterscheiden: Prototypikalität lässt sich als eine Form begrifflicher Vagheit begreifen, die dadurch zustande kommt, dass einzelne Instanzen (hier literarische Werkmanifestationen) mehr oder weniger nah am begrifflichen Zentrum eines Gattungsbegriffs sind. Einige Instanzen können dabei so weit vom begrifflichen Zentrum entfernt sein, dass sie konkurrierenden Kategorien (oder Gattungsbegriffen) ebenso nah oder sogar noch näher stehen als der Kategorie, der sie nominell zugerechnet werden. Die Prototypentheorie macht also das Szenario beschreibbar, dass ein Werk, das üblicherweise der Gattung der Novelle zugerechnet wird, dem begrifflichen Zentrum konkurrierender Gattungen wie dem Roman oder dem Märchen näher steht als der Novelle. Das Familienähnlichkeitsmodell, wie es in der Gattungstheorie etwa von Fishelov und Hempfer aufgegriffen wurde, zielt dagegen auf begriffliche Strukturen mit mehreren begrifflichen Zentren oder Kernen. Die Vagheit eines Gattungsbegriffs wie der Novelle im Sinn von Familienähnlichkeit kommt, wie Strubes (1986) Analyse zeigt, dadurch zustande, dass es mehrere Subtypen von Novellen gibt, wobei es – analog zu Wittgensteins Beispiel der völlig unterschiedlichen Arten von Spielen – möglich ist, dass einzelne Subtypen der Gattung derart unterschiedlich sind, dass es zwei Novellen geben kann, die keinerlei oder zumindest nur sehr wenige vermeintlich gattungsspezifische Merkmale gemeinsam haben. Die im Folgenden vorgestellte Modellierung widmet sich ausschließlich der strukturell durch Prototypikalität zustande kommenden Vagheit. 
+                </p>
+                <p>Die folgende Modellierung ist durch drei wesentliche Schritte gekennzeichnet: (1a) der Aufbau eines geeigneten Verfahrens maschinellen Lernens, das (1b) eine nutzbare Kennzahl für eine Bemessung der relativen Nähe und Distanz zum begrifflichen Zentrum bereitstellt, (2) die Erfassung eines Bereichs relativer Vagheit, und (3) ein Maß zur Bemessung des relativen Vagheitscharakters eines Gattungsbegriffs wie der Novelle. Zu (1): Gewählt wird (1a) Logistische Regression als klassisches Modell überwachten maschinellen Lernens. Auch wenn logistische Regression ein bereits in die Jahre gekommenes Lernverfahren darstellt, hat es zwei entscheidende Vorteile. Erstens die bereits von Underwood (2019a und 2019b) betonte gute Interpretierbarkeit der Features, und zweites die relative Vorhersagewahrscheinlichkeit für die Zuordnung einer Instanz zu einer der in Frage kommenden Klassen. Die grundlegende Idee zu Schritt (1b) ist es, relative Nähe einer Instanz zum begrifflichen Zentrum im Sinn von Prototypikalität durch die Vorhersagewahrscheinlichkeit für eine bestimmte Klasse auszudrücken.</p>
+                <p>Der entscheidende und neue Schritt ist nun (2) die Einführung eines Bereichs relativer Vagheit. Das vorgestellte Modell verwendet den sogenannten 
+                    <hi rend="italic">C</hi>
+                    <hi rend="italic">@1-Score</hi> (Peñas und Rodrigo, 2011), eine Variante des 
+                    <hi rend="italic">A</hi>
+                    <hi rend="italic">ccuracy score</hi>, der Unentscheidbarkeit in einer mathematisch plausiblen Weise berücksichtigt. Seine Stärke liegt in der doppelten Funktion, begriffliche Unschärfe in der Weise interpretierbar zu machen, wie sie in der Literaturtheorie und Semantik seit den 1960er Jahren konzipiert wurde. Der 
+                    <hi rend="italic">C@1-score</hi> führt zusätzlich zur Anzahl der korrekten Prognosen 
+                    <hi rend="italic">k</hi>
+                    <hi rend="sub italic">T</hi> und zur Gesamtzahl 
+                    <hi rend="italic">n</hi> aller Prognosen die Anzahl der Enthaltungen 
+                    <hi rend="italic">k</hi>
+                    <hi rend="sub italic">U</hi> ein und hat die fol­gende Gleichung Gl. 1 (ebd., 1416). 
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/f3269c83546a704555ec6807c59f6340.png"/>
+                    </figure>
+                </p>
+                <p>Im nächsten Schritt bedarf es einer Entscheidungsfunktion für Enthaltung. Hierfür wird mit logistischer Regression ein Algorithmus verwendet, der in der sigmoiden Funktion (Logistische Funktion, Gl. 2) mit der Link-Funktion (Gl. 3) über die Berechnung von Vorhersagewahrscheinlichkeiten läuft. Abbildung 1 zeigt, wie der Bereich einer Enthaltung symmetrisch um eine Vorhersagegenauigkeit von 0,5 gewählt werden kann.<ref n="1" target="ftn1"/>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/f0ad0be1211d1f2334409d20a1e783b4.png"/>
+                        <head>Abbildung 1: Logistische Funktion mit Schwellenraum der Enthal­tung für simulierte Daten zur Klassifikation von Romanen versus Märchen.</head>
+                    </figure>
+                </p>
+                <p>Anstelle einer Entscheidungslinie bei einem Wert von y = 0,5 für die Vorhersagewahrscheinlichkeit wird eine Art Grauzone eingeführt, so dass bei Funktionswerten innerhalb dieses Bereichs anstelle einer binären Vorhersage für ei­ne der beiden möglichen Klassen eine Enthaltung erfolgt. Die Enthaltung gibt lediglich eine episte­mische Enthaltung des Modells wieder, ohne Impli­kation für den Status der Objekte. Was der 
+                    <hi rend="italic">C@1-score</hi> leistet, lässt sich über drei mathe­ma­tische Eigenschaften ausdrücken: (1) Falls der Algorith­mus jeden Fall entscheidet, so ist der 
+                    <hi rend="italic">C@1-score</hi> identisch mit dem Standard-
+                    <hi rend="italic"> </hi>
+                    <hi rend="italic">a</hi>
+                    <hi rend="italic">ccuracy-score</hi>: Diese Eigenschaft ist wichtig für die hier gewählte An­wendung, denn nur wenn diese Eigenschaft erfüllt ist, lassen sich beide Varianten aufeinander beziehen. Der 
+                    <hi rend="italic">Accuracy score</hi> ist der besondere Fall des 
+                    <hi rend="italic">C@1-scores</hi>, bei dem jeder Fall binär entschieden wird. (2) Eine korrekte Entscheidung führt immer zu einem besseren Wert als eine Enthaltung. (3) Eine Enthaltung führt zu einem bes­seren Wert als eine falsche Entscheidung. 
+                </p>
+                <p>Die optimale Breite des Enthaltungsbereichs kann in Form einer Gridsuche ermittelt werden. Abbildung 2 zeigt den Graphen, der diese Gridsuche am Beispiel eines Modells zur Klassifikation von Romanen vs. Märchen als Funktion abbildet, bei der für das trainierte Modell und die verfügbaren Validierungsdaten jeweils zu einem sukzes­sive ausgeweiteten Enthaltungsbereich für Vorhersagewahrscheinlichkeiten zwischen 0 und 1 der zugehörige 
+                    <hi rend="italic">C@1-score</hi> als Funktionswert bestimmt wird.<ref n="2" target="ftn2"/>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/8f5d0d7708fd5cfdc87e4ad2b9607b5c.png"/>
+                        <head>Abbildung 2: Bestimmung eines optimalen Bereichs der Unterscheidbarkeit für die Ent­scheidungs­funktion mit einer Gridsuche für die Klassifikation von Märchen versus Romanen, hier aber auf einem Feature-Set der 2500 häufigsten Wörter im Korpus.</head>
+                    </figure>
+                </p>
+                <p>Zu (3): Zur Berechnung des Grads an begrifflicher Vagheit, die auf diese Weise algorithmisch modelliert wird, stehen mehrere Maße als potenzielle Kandidaten zur Verfügung: (a) die Breite des optimalen Enthaltungsbereichs und (b) die 
+                    <hi rend="italic">Verbesserungsrate</hi> (s. Gl. 4) die mit einem 
+                    <hi rend="italic">C</hi>
+                    <hi rend="italic">@1-Score</hi> bei optimalem Enthaltungsbereich (
+                    <hi rend="italic">C</hi>
+                    <hi rend="italic">@1</hi>
+                    <hi rend="sub italic">optimal</hi>) gegenüber einem klassischen 
+                    <hi rend="italic">A</hi>
+                    <hi rend="italic">ccuracy score</hi> (
+                    <hi rend="italic">accuracy</hi>
+                    <hi rend="sub italic">standard</hi>) erzielt werden kann. Voraussetzung für die Verwendung des 
+                    <hi rend="italic">Accuracy scores</hi> ein hierbei ein Sampling, das je gleich große Validierungsstichproben für die zu vergleichenden Gruppen zieht.
+                </p>
+                <p>In einem Prozess interner Evalutation wurden Daten und simuliert, um das Verhalten der Berechnung optimaler Enthaltungsbreiten besser zu verstehen. Die Ergebnisse werden in den Visualisierungen aus Abbildung 3 dargestellt. Hierfür wurde Vagheit im Sinn einer Kombination von Familienähnlichkeit und potenzieller Prototypikalität dadurch simuliert, dass in einigen Fällen jede Klasse nur ein Feature-Cluster mit mehreren informativen Features und mehr oder weniger großer Varianz sowie Störrauschen (im Sinn einer Annäherung an Prototypikalität) erzeugt wurde (linke Spalte) und in einigen Fällen jede Klasse mit mehreren Feature-Clustern (2 Cluster je Klasse in der mittleren Spalte sowie 5 Cluster je Klasse in der rechten Spalte). Jedes Simulation wurde 1000-fach iteriert. Die Boxplots in der Mitte zeigen die Verteilung der optimalen Breite des optimalen Enthaltungsbereichs über alle Iterationen. Die untere Zeile zeigt die Verteilung der Verbesserungsrate. Es zeichnet sich ab, dass die Verbesserungsrate die robustere und aussagekräftigere Kennzahl ist, um komplexe Merkmalsbündel mit komplizierten Mehrfachclustern innerhalb der Klasse abzubilden. Wenn man annimmt, dass Kategorien, die durch mehrere interne Cluster gegliedert sind und dadurch vage werden, dem Familienähnlichkeitsbegriff entsprechen, dann lässt sich auf einer strukturellen Ebene sehen, dass die Verbesserungsrate anhand des C@1-scores bei einem optimalen Enthaltungsbereich eine Modellierung von Prototypikalität darstellt, die Vagheit im Sinn der Familienähnlichkeit einzufangen erlaubt. Der Vergleich von Simulation und realen Daten erlaubt Schluss­folgerungen für künftige Studien. Obwohlperspektivi­sche Modellierung auf Klassifikati­onsaufgaben beruht, die über die Logik von ›ja oder nein‹ und nicht über die von ›mehr oder weniger‹ laufen, ist das ›Mehr oder Weniger‹ in einige Klassifikationsal­gorithmen sozusagen eingebaut. Der 
+                    <hi rend="italic">C@1</hi>-score ist für sich genommen noch nicht aussagekräftig. Insbesonde­re direkte Vergleiche beispielsweise des 
+                    <hi rend="italic">C@1-score</hi>
+                    <hi rend="italic">s</hi> mit in anderen Szenarien ermittelten klassischen 
+                    <hi rend="italic">Accuracy score</hi>
+                    <hi rend="italic">s</hi> sind nicht sinnvoll. Die nützlichste Kennzahl ist die der Verbesserungsrate. 
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/1225d2f31e9adea61005aab06674640a.png"/>
+                        <head>Abbildung 3: Simulation mit Default-Einstellung: 10 Features, class_sep=1, flyp_y=0,0001, Anord­nung auf einem Hyperwürfel mit der Funktion 
+                    <hi rend="italic">make_classification</hi> in 
+                    <hi rend="italic">Scikit-Learn</hi>. Die kreisförmige Projektion zeigt die um ein Prototypenzentrum angeordneten Datenpunkte mit den eingezeichneten Grenzen für den optimalen Enthaltungsbereich als Kreislinien, als Projektionsmethode vorgestellt in Schröter (2022).</head>
+                    </figure>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Projektionen von Prototypikalität und Fallstudien zur Novelle</head>
+                <p>Mit dem entwickelten Verfahren lassen sich aufschlussreiche Anomalien historischer Gattungen sichtbar machen, die wichtige, aber im kodifizierten ›Literaturwissen‹ nach wie vor marginalisierte Positionen in der historischen Gattungsforschung stützen (Meyer, 1987; Lukas, 1998). Hierfür wurde eine Projektionsmethode entwickelt, die jeweils eine Gattung im Verhältnis zu den beiden Nachbargattungen visualisiert. Abbildung 4 zeigt die Prototypikalität nach paarweise konstruierten Gattungsunterscheidungen. Die Achsen zeigen jeweils die invertierten Vorhersagewahrscheinlichkeiten (siehe y-Achse aus Abbildung 1). Dargestellt werden die Texte einer Gattung aus dem Set der 
+                    <hi rend="italic">out-of-sample</hi>-Validierungsdaten mit den über Bootstrapping berechneten Vorhersagewahrscheinlichkeiten mit einem 1000-fach iterierten Klassifikationstask. Jede der Visualisierungen zeigt ausschließlich die Texte einer Gattung, und zwar derjenigen, deren Zentrum sich jeweils unten links befindet. Die Enthaltungsbereiche zu jeweiligen Nachbargattungen sind im Farbcode der jeweiligen Komplementärgattung (grün für Er­zählungen und rot für Novellen) eingetragen. Die Projektion macht sichtbar, dass Er­zählungen(rechts) über das gesamte 19. Jahrhundert hinweg betrachtet – ein homogenes Abgrenzungs­verhalten zu ihren beiden jeweiligen Nachbargat­tungen haben. Novellen dagegen sind in ihrem Abgrenzungsverhalten anomal: Als Novellen publi­zierte Texte (links), die das Modell im Verhältnis zu Erzählungen eindeutig als Novellen erkennt, sind typischerweise in der Unterscheidung zu Romanen nicht novellen- sondern romanartig, und umgekehrt.
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/aba2914e3229e4642315fb412988eb87.png"/>
+                        <head>Abbildung 4: Perspektivische Model­lierung von Prototypikalität: No­vellen (N) (links) und Erzählungen (E) (rechts) in Abgrenzung zu je zwei Kontrastgattungen (E und R bzw. N und R) unter Verwendung der invertierten Vorhersagewahrscheinlichkeiten (1–p) auf beiden Achsen; mit Anga­be der Verbesserungsrate durch Enthaltung (VR-Enth.) und mit optimalen Enthaltungsbereichen. Siehe die Skripte 
+                    <ref target="https://github.com/julianschroeter/PyNovellaHistory/blob/main/scripts_novellas/4-2_perspectival_classification_genres/plot_perspectival_N-vs-R%2BE_triad.py">
+                        <hi rend="color(#000000)">»plot_perspectival_[Gat­tungen]_triad[Zeitraum].py«</hi>
+                    </ref>.</head>
+                    </figure>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Triangulationen</head>
+                <p>Die im Detail in Spezialfragen historischer Gattungsforschung führenden Ergebnisse lassen sich methodologisch auf gewinnbringende Weise für Fragen der algorithmischen Modellierung von Vagheit innerhalb historischer Semantiken generalisieren, wenn es gelingt, diese Modellierung von Unbestimmtheit so zu plausibilisieren, dass die sichtbar gemachte Vagheit tatsächlich einem Ausmaß erwartbarer Vagheit in der historischen Semantik entspricht. Bis hierher lässt sich feststellen, dass das entwickelte Modell so etwas wie die Struktur der Prototypikalität im Raum algorithmischer Konzeptualisierung abbildet. Ob die Resultate indes dem entsprechen, was man in der Linguistik sowie in der Literaturwissenschaft unter Prototypen einer Gattung oder Kategorie sowie unter dem Grad an prototypikalischer begrifflicher Struktur eines bestimmten Gattungsbegriffs versteht, bedarf der Kombination (oder Triangulation) mit weiterer philologischer, evtl. auch psychologischer Evidenz. Daher wird eine Möglichkeit der Triangulation in Form eines Vergleichs der entwickelten und auf dem Konzept der Unentscheidbarkeit beruhenden Verbesserungsrate mit einer alternativen Konzeptualisierung von Vagheit diskutiert: Zumindest für die simulierten Fälle sollten die durch mehrere Feature-Cluster (s. Abb. 3 Mitte und Rechts) erzeugten Klassen mit potenzieller kategorialer Vagheit in Form von ‚
+                    <hi rend="italic">bluriness</hi>‘ durch nicht-lineare Algorithmen überwachten maschinellen Lernens (wie Neuronale Netze, Random Forests und nicht-lineare SVM) besser klassifizierbar sein als lineare Modelle (wie logistische Regression oder eine SVM mit linearem Kernel). Tabelle 1 zeigt, dass sich die Verbesserungsrate durch Unentscheidbarkeit mit C@1-score und die Verbesserungsrate durch nicht-lineare Modellierung sogar für die realen Daten, also die Erzählprosa des 19. Jahrhunderts und deren Gattungszuordnungen, proportional zueinander verhalten. Dieses Ergebnis stärkt die Annahme, dass die hier vorgestellte Modellierung von begrifflicher Vagheit geeignet ist, ein Strukturverhältnis zwischen Feature-Verteilung und Klassenzugehörigkeit zu erfassen. 
+                </p>
+                <table rend="frame" xml:id="Table4">
+                    <row>
+                        <cell cols="2">Gattungspaar</cell>
+                        <cell>Verbesserung durch nicht-lineare Modelle</cell>
+                        <cell>Verbesserung durch C@1-score</cell>
+                    </row>
+                    <row>
+                        <cell>Roman</cell>
+                        <cell>Erzählung</cell>
+                        <cell>1,16 (1,14)</cell>
+                        <cell>1,039</cell>
+                    </row>
+                    <row>
+                        <cell>Novelle</cell>
+                        <cell>Roman</cell>
+                        <cell>1,12 (1,21)</cell>
+                        <cell>1,025</cell>
+                    </row>
+                    <row>
+                        <cell>Novelle</cell>
+                        <cell>Erzählung</cell>
+                        <cell>1,00 (1,04)</cell>
+                        <cell>1,014</cell>
+                    </row>
+                    <head>Tabelle 1: Klassifikation mit Vergleich von nicht-linearem (
+                    <hi rend="italic">Random Forest</hi>) und linearem Modell (logistische Regression) für Gattungspaare mit (nach 
+                    <hi rend="italic">Z</hi>-Transformation) skalierten Daten (mit: 2500 lemmatisierten 
+                    <hi rend="italic">mfw</hi>). In Klammern sind jeweils die Werte angegeben, die auf einer Berechnung nach 
+                    <hi rend="italic">Z</hi>-Transformation (Standard-Skalierung der Daten) beruhen. Siehe die Skripte 
+                    <ref target="https://github.com/julianschroeter/PyNovellaHistory/blob/main/scripts_novellas/4-2_perspectival_classification_genres/run_classification_rnd_forest_model-comp-ttest_N-E.py">
+                        <hi rend="color(#000000)">»run_classification_rnd_forest_model-comp-ttest_[Gattungspaar].py«</hi>
+                    </ref>.</head>
+                </table>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Ausblick: Evaluation und 
+                    <hi rend="italic">Human Label Variation</hi>
+                </head>
+                <p>Zuletzt lassen sich zwei weitere wichtige Schritte für künftige Anschlussforschung präsentieren und so zur Diskussion stellen: Zum einen die Möglichkeit und vor allem die Herausforderungen einer Evaluation anhand psycholinguistischer Evidenz, indem menschliche Urteile zu mehr oder weniger prototypischen Beispielen von Kategoriezugehörigkeit herangezogen werden. Zum anderen ist der Umgang mit uneindeutigen Kategorisierungen ein offenes Problem im Arbeitsfeld des
+                    <hi rend="italic">Machine Learning</hi>, an dem im Moment auch im Bereich der Entwicklung von LLMs im Bereich des NLP intensiv geforscht wird.<ref n="3" target="ftn3"/> Der Vortrag skizziert deshalb abschließend einen Vorschlag im Anschluss an Peterson et al. (2019, 9619), wonach anstelle von 
+                    <hi rend="italic">Ground Truth Labels</hi> eine Verteilung von Labels für das Training Neuronaler Netze so verwendet werden kann, dass die relative Vagheit und Unsicherheit bereits in der Praxis der historisch uneinheitlichen Gattungszuordnung repräsentiert ist. Im Zuge einer davon unabhängigen Validierung anhand von Daten, die das Modell beim Training nicht gesehen hat, kann mit entsprechend komplexer Modellierung geprüft werden, ob das Modell die relative Vagheit und auch die der historischen Gattungszuordnung reproduzieren kann. Ziel des Beitrags ist eine Modellierung der theoretischen Struktur von begrifflicher Vagheit im Sinn der Prototypensemantik, die zu einem besseren Verständnis von semantischer Vagheit in historischen Kontexten beitragen kann. Der vorgestellte Ansatz möchte zu einer Lösung einer zentralen Herausforderung im Feld des 
+                    <hi rend="italic">Machine Learning</hi> beteiligen, nämlich, mit Unsicherheit der Kategorisierung rational umzugehen.
+                </p>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note xml:id="ftn1" rend="footnote text" n="1"> Alle Methoden und folgenden Visualisierungen können mit den Python-Skripten, Funktionen, Klassen und Methoden in der Bibliothek PyNovellaHistory(Schröter, 2024) nachvollzogen werden. Die folgenden Verweise auf relevante Python-Skripte sind mit Links hinterlegt.</note>
+<note xml:id="ftn2" rend="footnote text" n="2">
+                        <hi rend="color(#000000)">Die Visualisierung dieser Gridsuche kann in den Skripten mit der Benennungsregel »</hi>
+                        <ref target="https://github.com/julianschroeter/PyNovellaHistory/blob/main/scripts_novellas/4-2_perspectival_classification_genres/Heftromane_bootstrapped_classification_prototype_plot.py">
+                            <hi rend="color(#000000)">run_classi</hi>
+                            <hi rend="color(#000000)">­</hi>
+                            <hi rend="color(#000000)">fic_principled_sampling_[Gattungspaar].py«</hi>
+                        </ref>
+                        <hi rend="color(#000000)">repliziert werden. </hi>Der optimale 
+                        <hi rend="italic">C@1-score</hi> von 0,82 wird in diesem Beispiel bei einer Breite des Enthaltungsbereichs von 0,03 erreicht. Die bis hier vorgestellte Modellierung wurde, der grundlegenden Idee nach, bei einer Poster-Präsentation (Schröter, 2022) in Urbana-Champaign (Illinois) vorgestellt. Alle folgenden Arbeitsschritte sind noch nicht öffentlich gemachte Weiterentwicklungen.
+                    </note>
+<note xml:id="ftn3" rend="footnote text" n="3"> So etwa im Rahmen des ERC-Projets DIALECT, https://dialect-erc.github.io/.</note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Calvo Tello, José</hi>. 2021. 
+                        <hi rend="italic">The Novel in the Spanish Silver Age. A Digital Analysis of Genre Using Machine Learning</hi>. Bielefeld: Bielefeld University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fishelov, David</hi>. 1991. „Genre Theory and Family Resemblance – Revisited“. 
+                        <hi rend="italic">Poetics</hi> 20: 123–38.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hempfer, Klaus W</hi>. 2010. „Zum begrifflichen Status der Gattungsbegriffe: Von ›Klassen‹ zu ›Familienähnlichkeiten‹ und ›Prototypen‹“. 
+                        <hi rend="italic">Zeitschrift für französische Sprache und Literatur</hi> 120: 14–32.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Henny-Kramer, Ulrike</hi>. 2023. 
+                        <hi rend="italic">Genre Analysis and Corpus Design: Nineteenth-Century Spanish-American Novels (1830–1910)</hi>. Schriften Des Instituts Für Dokumentologie Und Editorik, 17. Berlin: IDE.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Lukas, Wolfgang</hi>. 1998. „Novellistik“. In 
+                        <hi rend="italic">Zwischen Restauration und Revolution 1815–1848</hi>, hg. von Gert Sautermeister und Ulrich Schmid. Hansers Sozialgeschichte der deutschen Literatur 5. München: Hanser, 251–280.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Meyer, Reinhart</hi>. 1987. 
+                        <hi rend="italic">Novelle und Journal, I: Titel und Normen: Untersuchungen zur Terminologie der Journalprosa, zu ihren Tendenzen, Verhältnissen und Bedingungen</hi>. Stuttgart: Steiner.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Peñas, Anselmo, und Alvaro Rodrigo</hi>. 2011. „A Simple Measure to Assess Non-response“. 
+                        <hi rend="italic">Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics</hi>, 1415–1424.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Peterson, Joshua, Ruairidh Battleday, Thomas Griffiths, und Olga Russakovsky</hi>. 2019. „Human Uncertainty Makes Classification More Robust“. In 
+                        <hi rend="italic">2019 IEEE/CVF International Conference on Computer Vision (ICCV)</hi>, 9616–9625.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rosch, Eleanor</hi>. 1978. „Principles of Categorization“. In 
+                        <hi rend="italic">Cognition and Categorization</hi>, herausgegeben von Eleanor Rosch und Barbara B. Lloyd. Hillsdale (NJ): Erlbaum, 27–48.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schröter, Julian</hi>. 2022. „Modeling Prototypicality for Genre Concepts (Poster presentation at the iSchool Showcase, University of Illinois at Urbana-Champaign)“. Zenodo. https://doi.org/10.5281/zenodo.7945007.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schröter, Julian</hi>
+                        <hi rend="bold">.</hi> 2024. „PyNovellaHistory: Python Code for the Project on the history of the German 19th- century novella“. Zenodo. https://doi.org/10.5281/zenodo.7945348.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schröter, Julian, Johannes Leitgeb, und Theresa Valta</hi>. 2023. „Ein digitales Korpus der Novellen und Journalprosa des 19. Jahrhunderts: Herausforderungen der Metadatenerschließung“. 
+                        <hi rend="italic">Dariah Working Papers</hi> 46. https://doi.org/10.47952/gro-publ-131.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Strube, Werner</hi>. 1986. „Sprachanalytisch-philosophische Typologie literaturwissenschaftlicher Begriffe“. In 
+                        <hi rend="italic">Zur Terminologie der Literaturwissenschaft</hi>, hg. von Christian Wagenknecht. Stuttgart: Metzler, 35–49.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Taylor, John R</hi>. 2007. 
+                        <hi rend="italic">Linguistic categorization</hi>. 3. ed., repr. Oxford textbooks in linguistics. Oxford: Oxford Univ. Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Underwood, Ted</hi>. 2019a. „Algorithmic Modeling“. In
+                        <hi rend="italic">The Shape of Data in Digital Humanities: Modeling Texts and Text Based Resources, </hi>
+                        <hi rend="italic">hg. v.</hi>
+                        <hi rend="italic"> Fotis Jannidis </hi>
+                        <hi rend="italic">und</hi>
+                        <hi rend="italic"> J</hi>
+                        <hi rend="italic">ulia</hi>
+                        <hi rend="italic"> Flanders.</hi> London: Routledge, 250–263.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Underwood, Ted</hi>
+                        <hi rend="bold">.</hi> 2019b. 
+                        <hi rend="italic">Distant Horizons. Digital Evidence and Literary Change</hi>. Chicago, London: The University of Chicago Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wittgenstein, Ludwig</hi>. 2001. 
+                        <hi rend="italic">Philosophische Untersuchungen</hi>. Frankfurt am Main: Suhrkamp.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

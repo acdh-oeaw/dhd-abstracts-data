@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="WILL_Larissa_eScriptorium_meets_LLMs__Moderne_KI_Systeme_im_">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>eScriptorium meets LLMs: Moderne KI-Systeme im Kontext der Volltexterschließung</title>
+                <author>
+                    <persName>
+                        <surname>Will</surname>
+                        <forename>Larissa</forename>
+                    </persName>
+                    <affiliation>Universitätsbibliothek Mannheim, Deutschland</affiliation>
+                    <email>larissa.will@uni-mannheim.de</email>
+                    <idno type="ORCID">0009-0004-6220-8939</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kamlah</surname>
+                        <forename>Jan</forename>
+                    </persName>
+                    <affiliation>Universitätsbibliothek Mannheim, Deutschland</affiliation>
+                    <email>jan.kamlah@uni-mannheim.de</email>
+                    <idno type="ORCID">0000-0002-0417-7562</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schmidt</surname>
+                        <forename>Thomas</forename>
+                    </persName>
+                    <affiliation>Universitätsbibliothek Mannheim, Deutschland</affiliation>
+                    <email>thomas.schmidt@uni-mannheim.de</email>
+                    <idno type="ORCID">0000-0003-3620-3355</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lang</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <affiliation>Zentrum für Informationsmodellierung, Universität Graz, Österreich</affiliation>
+                    <email>sarah.lang@uni-graz.at</email>
+                    <idno type="ORCID">0000-0002-4618-9481</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Huff</surname>
+                        <forename>Dorothee</forename>
+                    </persName>
+                    <affiliation>Universitätsbibliothek Tübingen, Deutschland</affiliation>
+                    <email>dorothee.huff@uni-tuebingen.de</email>
+                    <idno type="ORCID">0000-0003-0866-9967</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-12-02T15:37:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Workshop</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>OCR</term>
+                    <term>HTR</term>
+                    <term>eScriptorium</term>
+                    <term>Transkription</term>
+                    <term>Texterkennung</term>
+                    <term>LLM</term>
+                    <term>ChatGPT</term>
+                    <term>RAG</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Transkription</term>
+                    <term>Annotieren</term>
+                    <term>Bereinigung</term>
+                    <term>Daten</term>
+                    <term>Text</term>
+                    <term>Werkzeuge</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einführung</head>
+                <p style="text-align: left; ">In diesem Workshop werden wir mit der Texterkennungs- und Transkriptionsplattform eScriptorium (Stokes et. al, 2021) historische Handschriften und Drucke automatisiert segmentieren und transkribieren. Anschließend werden die Ergebnisse mit Large Language Models (LLMs) (Zhao et al. 2023, S. 2-7) wie ChatGPT (ChatGPT, 2024) weiterverarbeitet. Moderne Texterkennungssoftware bietet mittlerweile viele Möglichkeiten und erleichtert die Arbeit mit historischen Dokumenten, beispielsweise für digitale Editionen, ungemein. </p>
+                <p style="text-align: left; ">Jedoch ist es kein Geheimnis, dass diese bei historischen Texten immer noch häufig an ihre Grenzen stößt. Sei es ein kompliziertes Layout wie Tabellen oder bei typographischen und graphematischen Besonderheiten. Vor allem im Kontext der hohen Ansprüche, die an die Korrektheit digitaler Editionen gestellt werden, ist der Output nicht ohne (teils aufwändige) Nachbearbeitung verwendbar.</p>
+                <p style="text-align: left; ">Mit der Einführung von Transformer-Modellen (Wikipedia, 2024) in die Engine Kraken (Kraken, 2024), dem Kern von eScriptorium, erwarten wir einen qualitativen Sprung in der Qualität der automatischen Texterkennung. Aber wie groß ist dieser Sprung wirklich? Und wie können LLM-Systeme die Erstellung von Trainingsmaterial im Kontext eScriptorium sowie die Erschließung der Volltexte für weitere Fragestellungen unterstützen?</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Die Rolle von Conformer-Modellen in Kraken</head>
+                <p style="text-align: left; ">Die Implementierung von Conformer-Modellen (Kiessling, 2024) in die Kraken-Engine stellt einen bedeutenden Fortschritt dar und folgt damit anderen Transkriptionsplattformen wie Transkribus, die mit ihren sogenannten Supermodellen (READ COOP, 2023) bereits eine Transformer-Variante etablieren konnten. Die hybride Transformer-Architektur Conformer (convolution-augmented Transformer) kombiniert die Stärken von Convolutional Neural Networks (CNNs) und Transformer-Architekturen, um die Texterkennung und -verarbeitung weiter zu verbessern. Die CNN-Komponente hilft bei der Erkennung lokaler Merkmale in Bildausschnitten, während die Transformer-Komponente die Erkennung längerer kontextueller Abhängigkeiten in Sequenzen ermöglicht. Als Transformer-Komponente wurde die Transformer-XL-Architektur gewählt, die eine bessere Leistung bei kontextuellen Abhängigkeiten erzielt: 80 % länger als RNNs und 450 % länger als herkömmliche Transformer. Sowohl bei kurzen als auch bei langen Sequenzen wird eine bessere Leistung erzielt und die Auswertung erfolgt bis zu 1800-mal schneller als bei herkömmlichen Transformern (Dai et. Al, 2019, 2978-2986). Diese neuen Modelle sollen in eScriptorium als "drop in replacements"<ref n="1" target="ftn1"/> für die alten Modelle verwendet werden können.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Anwendung von LLMs zur Textverarbeitung und -anreicherung</head>
+                <p style="text-align: left; ">Large Language Models wie ChatGPT bieten eine Vielzahl von Möglichkeiten zur Weiterverarbeitung und Anreicherung der Ergebnisse aus der Texterkennung. LLMs können beispielsweise genutzt werden, um automatisch Python-Skripte zu generieren, die zur Strukturierung von Textdaten verwendet werden. Darüber hinaus können sie Fehler in der Texterkennung korrigieren und gezielt Informationen aus dem Volltext extrahieren. </p>
+                <p style="text-align: left; ">Historische Dokumente wie Protokolle, Tagebücher und Briefnachlässe stellen besondere Herausforderungen für die Texterkennung dar. Im Gegensatz zu modernen Druckwerken fehlen häufig Inhaltsverzeichnisse, Register oder Klappentexte, die inhaltliche Rückschlüsse zulassen. Dies erschwert die gezielte Suche und Erschließung solcher Materialien. In vielen Fällen bleibt nur eine zeitintensive manuelle Verschlagwortung oder Regestierung, um die Zugänglichkeit zu erhöhen. Hier können KI-Methoden einen entscheidenden Beitrag leisten. Durch den Einsatz von LLMs und anderen modernen Technologien kann die automatische Erzeugung von Inhaltsangaben sowie die Extraktion von Schlagworten, Personen- und Ortsangaben erheblich verbessert werden. Damit lassen sich klassische NLP-Arbeitsschritte wie bspw. die Named Entity Recognition (NER) für Personen oder Ortsnamen vereinfachen (Wettlaufer, 2023, 9-10, 13-14 und Dalfsen et al., 2024).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Praxisbeispiele und Evaluierung neuer Modelle</head>
+                <p style="text-align: left; ">Anhand von Praxisbeispielen werden wir im Workshop zeigen, wie die neuen convolution-augmented Transformer Modelle in der Praxis funktionieren. Wir werden die Funktionsweise dieser Modelle eingehen und die bisherigen Ergebnisse mit den neuen Modellen vergleichen, um den tatsächlichen Qualitätsgewinn zu bewerten. Darüber hinaus werden wir den Einsatz von modernen LLMs zur Korrektur und Aufwertung der Texterkennungsergebnisse evaluieren. Hierbei werden die Möglichkeiten und Grenzen des Einsatzes von LLMs wie ChatGPT zur Nachbearbeitung und Verfeinerung der Ergebnisse ausgelotet.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Qualitätskontrolle, Aufwertung und Natural Language Processing mit LLM-Systemen</head>
+                <p style="text-align: left; ">Ein wichtiger Aspekt der Texterkennung ist die Qualitätssicherung der Ergebnisse. Im Workshop wird gezeigt, wie ein Workflow zur Qualitätskontrolle und Aufwertung aussehen kann. Dabei soll die Frage geklärt werden, ob und wie Fehler, die bei konventioneller Texterkennung häufig auftreten, durch den Einsatz von LLM-Systemen minimiert werden können. Ebenso können normalisierte Ausgaben, wie z. B. die Erkennung des langen S (&#x17F;) als kurzes S (s), mit Hilfe dieser modernen Techniken denormalisiert werden. Der Einsatz entsprechender Systeme könnte somit zu zuverlässigeren, höherwertigen Ergebnissen und einer effizienteren Verarbeitung großer Textmengen führen. Doch gilt auch hier: Vertrauen ist gut, Kontrolle ist besser!? Lässt sich die kreative Natur der LLMs soweit zähmen, dass die Ergebnisse automatisch weiterverarbeitet werden können? Der vollautomatische Einsatz von LLM-basierten Werkzeugen und der „Editor-in-the-loop“-Ansatz werden gegenübergestellt und ihre Vor- und Nachteile beleuchtet. Der "Editor-in-the-loop"-Ansatz bietet eine höhere Sicherheit bei der Qualität der Überarbeitung durch den Einsatz zusätzlicher Ressourcen (Pollin, 2024). Die automatisch erzeugten Überarbeitungen werden in einem weiteren manuellen Bearbeitungsschritt kontrolliert bzw. der Abgleich durch den Editor bei der Zusammenführung unterstützt. Darüber hinaus wird die Konkurrenzfähigkeit zu aktuellen NLP-Technologien zur Identifikation und Extraktion von Entitäten und Schlüsselkomponenten demonstriert (Armaselu, 2024, 1-4).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Interaktive Texterschließung</head>
+                <p style="text-align: left; ">Ein weiterer Schwerpunkt des Workshops sind die neuesten Entwicklungen von LLM- Systemen zur interaktiven Texterschließung. LLM-Systeme können mit ihren eigenen Datensätzen “chatten”, wobei die Qualität stark vom Kontextfenster des jeweiligen Systems abhängt. Dies ermöglicht eine interaktive und explorative Texterschließung, die weit über bisherige Methoden der Informationsverarbeitung hinausgeht. Der Benutzende kann durch gezielte Fragen tiefere Einblicke gewinnen und Muster und Zusammenhänge erkennen, die dem menschlichen Auge normalerweise verborgen bleiben (Wettlaufer, 2023, 5 und 13). Wir werden diskutieren, wie diese Technologien dazu beitragen können, die Qualität und Genauigkeit von Texterkennungssystemen zu verbessern und neue Anwendungsmöglichkeiten zu erschließen, und ob die Ergebnisse den Anforderungen detailorientierter geisteswissenschaftlicher Forschung gerecht werden. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Praktische Anwendung und Nutzen für die Teilnehmenden </head>
+                <p style="text-align: left; ">Im Workshop lernen die Teilnehmenden die Texterkennungs- und Transkriptionsplattform eScriptorium kennen, mit deren Hilfe wir zunächst die Transkriptionen als Grundlage für die weitere Bearbeitung erstellen. Vom Upload der Dateien über die Layout- und Texterkennung bis hin zur Annotation und dem Datenexport werden die Teilnehmenden mit den erweiterten Funktionen von eScriptorium vertraut gemacht. Anschließend werden wir die erzeugten Daten mit Hilfe von LLMs weiterverarbeiten. LLMs bieten hierbei ein breites Anwendungsfeld für die weitere Anreicherung der Texte wie NER sowie verschiedener Post-Correction-Szenarien. Aus Zeitgründen werden wir uns im Workshop bei den Post-Correction-Szenarien auf die Nachkorrektur von OCR-Fehlern limitieren, um dieses Thema möglichst eingehend behandeln zu können. Hierzu gehören typischerweise falsch erkannte Buchstaben bzw. alte Buchstaben, die in moderne Buchstaben übersetzt wurden, die Ihnen optisch ähnlich sind (Bsp. &#x17F; und f) und fehlerhaft wiedergegebene Eigennamen.</p>
+                <p style="text-align: left; ">Der Ablauf des halbtägigen Workshops würde grob folgendermaßen aussehen (Pause nach ca. zwei Stunden):</p>
+                <p style="text-align: left; ">1 Std. Arbeiten mit eScriptorium</p>
+                <p style="text-align: left; ">30 Min. Ausblick auf die kommenden Transformer-Modelle und ihre Fähigkeiten</p>
+                <p style="text-align: left; ">1 Std. Post-Correction der OCR-Ergebnisse mit Hilfe von LLMs</p>
+                <p style="text-align: left; ">45 Min. Weiterverarbeitung der Inhalte mittels LLMS (NER, Text Analysis (Summarization))</p>
+                <p style="text-align: left; ">30 Min. Verweis auf rechtliche Fragen und Abschlussdiskussion</p>
+                <p style="text-align: left; ">Unser Ziel ist es, den Teilnehmenden ein Verständnis für die neuesten technologischen Fortschritte in der Künstlichen Intelligenz zu vermitteln und deren praktischen Nutzen für die Texterkennung und -analyse aufzuzeigen. Die Teilnehmenden sollen in die Lage versetzt werden, diese Technologien in ihren eigenen Projekten anzuwenden und die Vorteile einer verbesserten digitalen Texterkennung voll auszuschöpfen. Hierbei werden wir auch auf die Integration von LLM- Systemen in bestehende Arbeitsabläufe eingehen und praktische Tipps zur Implementierung und Nutzung dieser Technologien geben. Hierbei werden wir neben den etablierten, kommerziellen LLM-Systemen wie ChatGPT auch mindestens einen weiteren kleineren open-source Systeme betrachten. Die im Sinne einer guten wissenschaftlichen Praxis auch eine höhere Nachvollziehbarkeit und Reproduzierbarkeit gewährleisten. Neben dem praktischen Umgang mit LLM-Systemen werden auch rechtliche Aspekte angesprochen, die es zu beachten gilt.</p>
+                <p style="text-align: left; ">Das GitHub-Repo, mit dem im Workshop verwendeten Materialien (Skripte/Notebooks) werden den Teilnehmenden zur Verfügung gestellt.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Fazit</head>
+                <p style="text-align: left; ">Die neuesten Entwicklungen im Bereich der Künstlichen Intelligenz und eScriptorium bieten spannende Möglichkeiten für die Texterkennung und -verarbeitung historischer Dokumente. Mit der Einführung von Transformer-Modellen in Kraken und dem Einsatz von LLMs können die Grenzen der bisherigen Texterkennung überwunden und neue Wege der Informationsverarbeitung erschlossen werden. In unserem Workshop werden wir diese Technologien näher beleuchten, ihre Anwendungsmöglichkeiten diskutieren und praktische Beispiele vorstellen. Vorkenntnisse in den verschiedenen Bereichen werden nicht benötigt.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Zu den Organisator*innen des Workshops</head>
+                <p>Larissa Will war Projektmitarbeiterin im Projekt OCR-BW an der UB Mannheim. Sie ist dort weiterhin im Bereich OCR und Forschungsdatenmanagement tätig als Referentin für Forschungsdatenmanagement und Digitalisierung und berät Forschende aus den Geisteswissenschaften vor allem im Bereich OCR mit Fokus auf eScriptorium.</p>
+                <p>Jan Kamlah ist seit 2017 Projektmitarbeiter und Softwareentwickler in verschiedenen Projekten (u.a. OCR-D Modulprojekt und BERD@NFDI) mit Schwerpunkt moderne Texterkennung und Datenextraktion an der UB Mannheim.</p>
+                <p>Thomas Schmidt war Projektkoordinator im DFG-Projekt „OCR-D: Workflow für werkspezifisches Training auf Basis generischer Modelle mit OCR-D sowie Ground-Truth-Aufwertung“ an der UB Mannheim. Mittlerweile ist er im Forschungsdatenzentrum und beschäftigt sich mit Data Literacy.</p>
+                <p>Dr. Sarah Lang ist Postdoc am „Zentrum für Informationsmodellierung“ der Universität Graz. Zu ihren Forschungsinteressen gehören Distant Reading, Distant Viewing und die Nutzung von Methoden der Computational Humanities für die Geschichte des alchemistischen und chymischen Drucks.</p>
+                <p>Dorothee Huff war seit 2019 Projektmitarbeiterin im Projekt OCR-BW an der UB Tübingen und weiterhin für den OCR-Service der UB Tübingen mit Schwerpunkt Transkribus zuständig. Zudem arbeitete sie als wissenschaftliche Mitarbeiterin im DFG-Projekt „Narrative Vermittlung religiösen Wissens“. Mittlerweile ist sie Leiterin der Abteilung Handschriften und Historische Drucke mit Restaurierungswerkstatt und Digitalisierungszentrum an der UB Tübingen.</p>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                         Drop-in-Replacement bezeichnet die Fähigkeit einer Softwarekomponente oder eines Bauteils, eine bestehende Komponente zu ersetzen und mit dieser vollständig kompatibel zu sein.
+                    </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl><hi rend="bold">Armaselu, Florentina</hi>. 2024. “Small-Scale Testing on Generative AI and Post-OCR Correction in Historical Datasets.” In Digital Humanities Benelux 2024 Conference. https://zenodo.org/records/11403647 (zugegriffen: 23. Juli 2024).</bibl>
+                    <bibl><hi rend="bold">“ChatGPT.”</hi> n.d. Chatgpt.com. https://chatgpt.com/ (zugegriffen: 23. Juli 2024).</bibl>
+                    <bibl><hi rend="bold">Dai, Zihang, Zhilin Yang, Yiming Yang, Jaime Carbonell, Quoc V. Le und Ruslan Salakhutdinov</hi>. 2019. “Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context.” In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, 2978–88.</bibl>
+                    <bibl><hi rend="bold">Dalfsen, Arjan van, Folgert Karsdorp, Ayoub Bagheri, Thirza van Engelen, Dieuwertje Mentink, und Els Stronks</hi>. 2024. „Direct and Indirect Annotation with Generative AI: A Case Study into Finding Animals and Plants in Historical Text“. In Proceedings of the Computational Humanities Research Conference, 2024. Aarhus, Denmark. https://ceur-ws.org/Vol-3834/paper74.pdf.</bibl>
+                    <bibl><hi rend="bold">“Introducing Transkribus super models – get access to ‘The Text Titan I.’”</hi> 2023. READ-COOP. READ-COOP SCE. 10. Juli 2023. https://readcoop.eu/de/introducing-transkribus-super-models-get-access-to-the-text-titan-i/ (zugegriffen: 23. Juli 2024).</bibl>
+                    <bibl><hi rend="bold">Kiessling, Benjamin.</hi> n.d. Conformer_ocr: Text Recognizer with a Conformer. https://github.com/mittagessen/conformer_ocr (zugegriffen: 23. Juli 2024).</bibl>
+                    <bibl><hi rend="bold">“Kraken — Kraken Documentation.”</hi> n.d. Kraken.Re. https://kraken.re/main/index.html (zugegriffen: 23. Juli 2024).</bibl>
+                    <bibl><hi rend="bold">Pollin, Christopher</hi>. 2024. Workshopreihe "Angewandte Generative KI in den (digitalen) Geisteswissenschaften" (v1.1.0). Zenodo. https://doi.org/10.5281/zenodo.10647754 (zugegriffen: 23. Juli 2024).</bibl>
+                    <bibl><hi rend="bold">Stokes, Peter A., Benjamin Kiessling, Daniel Stökl Ben Ezra, Robin Tissot und El Hassane Gargem</hi>. 2021. “The EScriptorium VRE for Manuscript Cultures.”, herausgegeben von Claire Clivaz und Garrick V. Allen. In Classics@ Journal, Ancient Manuscripts and Virtual Research Environments 18 (1). https://classics-at.chs.harvard.edu/classics18-stokes-kiessling-stokl-ben-ezra-tissot-gargem/ (zugegriffen: 23. Juli 2024).</bibl>
+                    <bibl><hi rend="bold">Wettlaufer, Jörg</hi>. 2023. “Methoden der Digital History/Digitalen Geschichtswissenschaft.” In Handbuch Methoden der Geschichtswissenschaft, 1–19. Wiesbaden: Springer Fachmedien Wiesbaden.</bibl>
+                    <bibl><hi rend="bold">Wikipedia Beitragende.</hi> n.d. “Transformer (Maschinelles Lernen).” Wikipedia, The Free Encyclopedia. https://de.wikipedia.org/w/index.php?title=Transformer_(Maschinelles_Lernen)&amp;oldid=247001526 (zugegriffen: 23. Juli 2024).</bibl>
+                    <bibl><hi rend="bold">Zhao, Wayne Xin, Kun Zhou, Junyi Li, Tianyi Tang, Xiaolei Wang, Yupeng Hou, Yingqian Min, et al.</hi> 2023. “A Survey of Large Language Models.” arXiv [Cs.CL]. http://arxiv.org/abs/2303.18223 (zugegriffen: 23. Juli 2024).</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

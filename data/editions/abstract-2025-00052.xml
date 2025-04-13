@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="RASTINGER_Nina_C__Von_Aachen_bis_Zwickau__Semi_automatische_">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Von Aachen bis Zwickau: Semi-automatische Identifikation und Analyse von Korrespondenzorten in der historischen “Wiener Zeitung”</title>
+                <author>
+                    <persName>
+                        <surname>Rastinger</surname>
+                        <forename>Nina C.</forename>
+                    </persName>
+                    <affiliation>Austrian Centre for Digital Humanities and Cultural Heritage, Österreichische Akademie der Wissenschaften, Österreich</affiliation>
+                    <email>ninaclaudia.rastinger@oeaw.ac.at</email>
+                    <idno type="ORCID">0000-0002-3235-5063</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Resch</surname>
+                        <forename>Claudia</forename>
+                    </persName>
+                    <affiliation>Austrian Centre for Digital Humanities and Cultural Heritage, Österreichische Akademie der Wissenschaften, Österreich</affiliation>
+                    <email>claudia.resch@oeaw.ac.at</email>
+                    <idno type="ORCID">0000-0001-8066-7363</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-07-24T19:07:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Vortrag: Computergestützte Analyse oder Interpretation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Historische Zeitungen</term>
+                    <term>Nachrichten</term>
+                    <term>Layoutanalyse</term>
+                    <term>Texterkennung</term>
+                    <term>Datenbereinigung</term>
+                    <term>Named Entity Linking</term>
+                    <term>GIS</term>
+                    <term>Digitale Textwissenschaft</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Transkription</term>
+                    <term>Strukturanalyse</term>
+                    <term>Räumliche Analyse</term>
+                    <term>Annotieren</term>
+                    <term>Text</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung </head>
+                <p style="text-align: left; ">Historische Zeitungsausgaben unterscheiden sich in vielerlei Hinsicht von heutigen Tageszeitungen. Als vertraute Konstante der Berichterstattung dürfen jedoch insbesondere jene Orts- und Datumsangaben gelten, die einzelnen Nachrichten vorangestellt werden und somit deren Beginn markieren. Sie traten bereits zu den Anfangszeiten des Pressewesens in der historischen Zeitungslandschaft auf und bildeten in weiterer Folge ein standardisiertes Formulierungsmuster, das auch verkürzt und isoliert auftreten konnte: Die verbreitete Einleitung von Berichten, wie etwa “Auß Londen hat man vom 12. Decembris [...]”, wurde allmählich durch die knappere Angabe von Ort und Zeit ersetzt, wie etwa im Beispiel “Londen 12. Dec. 1755”. </p>
+                <p style="text-align: left; ">Für die historische Presseforschung, die sich u.a. mit Postrouten, Korrespondenznetzwerken und der Verbreitung von Nachrichten beschäftigt, sind insbesondere diese – jeder Meldung vorangestellten und typographisch abgesetzten – Kurzangaben bedeutende Marker. Wie sich diese ‘Korrespondenzköpfe’ mithilfe digitaler Methoden weitgehend automatisch identifizieren und analysieren lassen, soll anhand von über 800 Ausgaben der historischen “Wiener Zeitung” diskutiert werden.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Die historische “Wiener Zeitung”</head>
+                <p style="text-align: left; ">Die kürzlich eingestellte “Wiener Zeitung” blickt durch ihre Gründung im August 1703 auf eine mehr als 300-jährige Geschichte zurück, die im Vergleich zu anderen bedeutenden deutschsprachigen Zeitungen bislang kaum systematisch erforscht ist. Als “Wien[n]erisches Diarium” hatte die Zeitung den Anspruch, zweimal wöchentlich “von Orthen auß der gantzen Welt” (WD 8. August 1703, [2]) berichten zu wollen, wie es in der allerersten Ausgabe heißt. Tatsächlich bilden Berichte aus dem Ausland, wie Zenker (1903, 4) beobachtet, den “Grundstock des Blattes”, was auch eine unmittelbare Folge der damaligen behördlichen Einschränkungen war, auf die Würgler (2013, 51) ganz generell verweist: “Aufgrund der – im deutschen Sprachraum vorwiegend lokal-regional wirkenden – Zensur widmeten sich die Zeitungen des 18. Jahrhunderts zu 70% der Auslandsberichterstattung, zu knapp 30% den Nachrichten aus dem Reich und fast gar nicht dem Lokalgeschehen.” </p>
+                <p style="text-align: left; ">Der im “Wien[n]erischen Diarium” abgedruckte Teil der Auslandsberichterstattung speiste sich einerseits vermutlich aus ”übernommenen Beiträgen ausländischer Zeitungen” (Wille 2019, 167), die teilweise kaum bearbeitet und lediglich mit dem jeweiligen Herkunftsort versehen wurden, und ging andererseits auf eigene Korrespondenzen der Redaktion zurück. Immer aber wurden die Meldungen unter den genannten orts- und datumsbezogenen Gliederungsprinzipien arrangiert und – oft auch unter Zeitdruck – zur Publikation vorbereitet. Eine Übereinstimmung von “Korrespondenzort” und “Ereignisort” war dabei nicht immer gegeben, zumal Ereignisse ganzer Regionen zuvor an einem Korrespondenzort gebündelt worden waren, bis sie im “Wiener Diarium” – wie auch in anderen Wochenzeitungen des 17. und 18. Jahrhundert üblich (Goldschmidt 2020, 2) – unter Verweis auf den jeweiligen Korrespondenzort und das Absendedatum erscheinen konnten.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Erstellung der Datenbasis: Layout- und Texterkennung</head>
+                <p style="text-align: left; ">Die “Wiener Zeitung”, die bis vor kurzem als die älteste noch erscheinende Tageszeitung der Welt gelten durfte, liegt heute seit ihrer Gründung als analoger Quellenbestand lückenlos vor. Ihre Digitalisierung erfolgte für beinahe alle erhaltenen Ausgaben ab 2012 durch die Österreichische Nationalbibliothek, wo im Projekt Austrian Newspapers Online (ANNO) mit damaligen OCR-Methoden auch Volltexte generiert wurden. Um die Qualität der in Frakturschrift gedruckten Texte für die Forschung zu optimieren (vgl. Resch 2023), konnte dann an der Österreichischen Akademie der Wissenschaften ab 2017 im Projekt “
+                    <ref target="https://www.oeaw.ac.at/acdh/projects/completed-projects/wiennerisches-diarium-digital">Das Wien[n]erische Diarium: Digitaler Datenschatz für die geisteswissenschaftlichen Disziplinen</ref>” mit Hilfe der KI-gestützten Plattform Transkribus anhand von 6.000 Textseiten ein eigenes Texterkennungsmodelll trainiert werden, das als 
+                    <anchor xml:id="Hlk172746393"/>“German Fraktur 18th Century – WrDiarium_M9” (Resch und Kampkaspar 2020b) öffentlich zur Verfügung steht und seither breite Anwendung findet. Das Trainingsmaterial, auf dem dieses Modell basiert – 330 Ausgaben verteilt über das 18. Jahrhundert – ist als “Wienerisches DIGITARIUM” (Resch und Kampkaspar 2020a) ebenfalls veröffentlicht. 
+                </p>
+                <p style="text-align: left; ">In einem Folgeprojekt wird das bisherige technische Framework der DIGITARIUM-Webapplikation mithilfe des am ACDH-CH entwickelten DSE-Static-Cookiecutter-Templates<ref n="1" target="ftn1"/> erneuert, was die Aufnahme weit größerer Textdatenmengen und raschere Durchsuchbarkeit erlaubt. Grundlage für die Erstellung weiterer verlässlicher Volltexte des „Wienerischen Diariums” über Verfahren der Automated Text Recognition (ATR) ist die erfolgreiche Erkennung des Layouts, insbesondere der Textregionen, der Zeitungsausgaben. Gleichzeitig stellen historische Zeitungen für diesen Schritt der Layoutanalyse (LA) eine Herausforderung dar, indem sie verschiedene Textsorten und Paratexte mit unterschiedlichem typographischen Erscheinungsbild enthalten und graphisch diachronen Veränderungen unterliegen. Durch die große Menge an überliefertem Textmaterial würde eine manuelle Strukturauszeichnung zudem einen enormen Zeit- und Kostenaufwand bedeuten. 
+                </p>
+                <p style="text-align: left; ">Angesichts dieser Problematik sowie neuer Entwicklungen im LA-Bereich, nämlich der seit Herbst 2023 verfügbaren ‘Field Models’ der Transkriptionsplattform Transkribus (READ-COOP 2024), wurde für das “Wienerische Diarium” ein eigenes Layoutmodell trainiert. Hierbei wurde zwischen elf Strukturkategorien unterschieden, die jeweils wie folgt in XML/TEI-P5 (TEI Consortium 2024) kodiert wurden: catch-word (&lt;fw type=”catch”&gt;), count-date (&lt;titlePart type=”num”&gt;<ref n="2" target="ftn2"/>), figure (&lt;figure&gt;), heading (&lt;head&gt;), imprint (&lt;imprint&gt;), list (&lt;list&gt;), main-title 
+                    <anchor xml:id="Hlk184045055"/>(&lt;titlePart type=”main”&gt;), paragraph (&lt;p&gt;), separator-single (&lt;zone subtype=”seperator-single”&gt;<ref n="3" target="ftn3"/>), separator-double (&lt;zone subtype=”seperator-double”&gt;) und signature (&lt;signed&gt;). 
+                </p>
+                <figure>
+                    <graphic n="1001" width="15.917333333333334cm" height="10.9855cm" url="Pictures/bf5771b8c67ad258f73e3e3683f83c74.png" rend="inline"/>
+                    <head>Abb. 1: Zwei exemplarische strukturell ausgezeichnete Seiten des “Wienerischen Diariums”</head>
+                </figure>
+                <p style="text-align: left; ">Auf Basis des abgebildeten Annotationsschemas wurden iterativ je acht zufällig gezogene, zeitlich verteilte Ausgaben – je eine pro Jahr des Siebenjährigen Kriegs (1756–1763)<ref n="4" target="ftn4"/> – strukturell annotiert und die Ergebnisse eines hierauf trainierten Transkribus-Feldmodells evaluiert. Dieser Schritt wurde solange wiederholt, bis nur noch minimale Fehler in der LA feststellbar waren. Die finale Version des Modells (“German Newspapers 18th Century – WrDiarium M4”) basiert auf drei Annotationsiterationen, 24 Ausgaben und 304 Seiten Trainingsmaterial und erreicht der manuellen Expertenevaluation zufolge sehr gute, oft fast fehlerfreie Ergebnisse.<ref n="5" target="ftn5"/>
+                </p>
+                <p style="text-align: left; ">Über dieses Modell konnten weitere 811 Zeitungsausgaben aus der Zeit des Siebenjährigen Kriegs<ref n="6" target="ftn6"/> automatisch mit strukturellen Annotationen versehen und in verlässliche Volltexte transformiert werden. Für letzteren Schritt wurde zusätzlich auf das bereits bewährte, im Vorgängerprojekt trainierte Texterkennungsmodell zurückgegriffen. Abschließend wurden die angereicherten Volltexte in das XML/TEI-Format transformiert und über die DIGITARIUM-Webapplikation publiziert, womit für die Jahre 1756-1763 mit 835 Ausgaben eine vollständige Datenbasis öffentlich bereitsteht.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Identifikation und Analyse von Korrespondenzköpfen</head>
+                <p style="text-align: left; ">Dieses reichhaltige Teildatenset des “Wien[n]erischen Diariums” erlaubt es unter anderem, Überschriften automatisiert, z.B. über die Python-Bibliothek BeautifulSoup (Richardson 2024), auszulesen und zu untersuchen. Insgesamt lassen sich so zwischen 1756 und 1763 21.798 Überschriften mit 129.326 Tokens identifizieren. Um aus dieser Fülle die typischerweise aus Ort und Datum bestehenden Korrespondenzköpfe (z.B. “Neu=Yorck 8. Julii.”) herauszufiltern, wurden die gefundenen Fälle möglichst automatisch reduziert und abschließend manuell<ref n="7" target="ftn7"/> überprüft:
+                </p>
+                <figure>
+                    <graphic n="1002" width="14.230513888888888cm" height="7.162316666666666cm" url="Pictures/f9e89ec16a93ab303a4b4a2dec1c88a2.png" rend="inline"/>
+                    <head>Tab. 1: Vorgehen bei der Identifikation von Korrespondenzköpfen</head>
+                </figure>
+                <p style="text-align: left; ">Mithilfe dieses Prozesses konnten aus 21.798 Überschriften 10.776 Korrespondenzköpfe identifiziert werden, die sowohl aus dem Hauptteil als auch aus dem Anhang stammen. Einzig nicht Teil der Sammlung sind sogenannte “Kurz=gefaßte Nachrichten”, in denen einzelne Meldungen ohne Datumsangabe in wenigen Sätzen zusammengefasst werden, da die Korrespondenzorte hier als Teil des Fließtextes nicht erfassbar sind. Auch ohne diese Meldungen, die zukünftig mithilfe anderer Ansätze ergänzt werden sollen, erweist sich die Datenbasis aber bereits als sehr dicht. Für jeden der über 10.000 Korrespondenzköpfe wurde das Absendedatum, so vorhanden, automatisch über reguläre Ausdrücke und der Herkunftsort manuell durch die Autorinnen ausgelesen und normalisiert. Zusätzlich wurden als Korrespondenzorte genannte Kriegslager gesondert kodiert und etwaige erwähnte Truppen vermerkt. Die Ortsnamen wurden dann mithilfe der Open-Source-Software OpenRefine (Delpeuch et al. 2024) geokodiert, wobei als Referenzdatenbank GeoNames.org zum Einsatz kam. Überdies wurden für Datenanalyse und -visualisierung Pandas (The pandas development team 2024), RAWGraphs (Mauri et al. 2017) und QGIS (QGIS.org 2023) eingesetzt.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Ausgewählte Ergebnisse</head>
+                <p style="text-align: left; ">Die Untersuchung zeigt, dass die Herausgeber der “Wiener Zeitung” sich an das hielten, was Kaspar Stieler “Zeitungs=Sammler[n]” bereits 1697 empfahl, nämlich “sich auff guten Briefwechsel zu befleißigen” (Stieler 1697, 90). So enthielt die Zeitung von 1756-1763 Meldungen von über 1.000 verschiedenen Korrespondenzorten, aus denen sie in fast 50 % aller Fälle auch mehr als eine Nachricht erreichte. Am dichtesten war der Nachrichtenstrom neben Wien (933 Korrespondenzen) dabei eindeutig aus London (760 Korrespondenzen) und Paris (602 Korrespondenzen), auf die erst mit Abstand Dresden (394 Korrespondenzen) und Den Haag (288 Korrespondenzen) folgten. Selbst im eingeschränkten Untersuchungszeitraum des Siebenjährigen Krieges variierte die Menge an Korrespondenzen je Ort dabei, wie die folgenden Radardiagramme belegen:</p>
+                <figure>
+                    <graphic n="1003" width="14.097cm" height="9.419166666666667cm" url="Pictures/4d2554b590a7518c8696774b82d4eb58.png" rend="inline"/>
+                    <head>Abb. 2: Zeitliche Verteilung der Korrespondenzen ausgewählter Orte</head>
+                </figure>
+                <p style="text-align: left; ">Während etwa Nachrichten aus London im gesamten Untersuchungszeitraum – insbesondere im Jahr 1756 – einen wesentlichen Teil der Inhalte des “Diariums” ausmachten, blieben Korrespondenzen aus Dresden und Den Haag 1763 fast zur Gänze aus und auch für Paris ist eine Reduktion zu verzeichnen. Grund hierfür war möglicherweise eine ‘Nachrichtendürre’ und/oder inhaltliche Verschiebung in den letzten Kriegsjahren. Auf eine stattgefundene diachrone Veränderung weisen jedenfalls auch weitere Ergebnisse hin:</p>
+                <figure>
+                    <graphic n="1004" width="13.631333333333334cm" height="6.498166666666667cm" url="Pictures/6ecbe2f78391aad15c901a1b76eaafa9.png" rend="inline"/>
+                    <head>Abb. 3: Quantität von Korrespondenz(köpf)en über Zeit und Position</head>
+                </figure>
+                <p style="text-align: left; ">Wie Abbildung 3 zeigt, finden sich nach 1757 sowohl im Hauptteil als auch im Anhang der “Wiener Zeitung” generell immer weniger Korrespondenzköpfe: Während 1756–1758 jährlich noch zwischen 1.600 und 2.100 Korrespondenzen abgedruckt werden, sinkt diese Zahl mit der Zeit und beträgt 1763 lediglich 722 Meldungen.<ref n="8" target="ftn8"/> Bezieht man die sich zwischen den Überschriften befindlichen Nachrichtentexte mit ein, scheint sich eine Verschiebung von Vielfalt zu Ausführlichkeit vollzogen zu haben: Statt vielen, relativ kurzen Nachrichten werden zwar zunehmend weniger, dafür aber längere Nachrichten abgedruckt. So verändert sich die durchschnittliche Textlänge von rund 190 Tokens (1756–1757) zu 260–290 Tokens (1759–1761) und erreicht 1763 einen Maximalwert von 351 Tokens. Diese Beobachtungen geben Hinweis auf Umstrukturierungen im Zeitungsbetrieb während des Siebenjährigen Kriegs und zeigen, dass die Untersuchung von Korrespondenzköpfen zum tieferen Verständnis der Funktionsweise historischer Zeitungen beitragen kann.
+                </p>
+                <p style="text-align: left; ">Hinzu kommt, dass Korrespondenzköpfen wertvolle Informationen über frühneuzeitliche Nachrichtengeschwindigkeiten innewohnen. So lässt sich etwa pro Korrespondenzort die durchschnittliche Differenz zwischen Absende- und Abdruckdatum berechnen, wodurch geographisch-räumliche und mediale Distanz in Bezug zueinander gesetzt werden können. Führt man diesen Schritt für jene 206 geokodierbaren Korrespondenzorte des “Diariums” durch, von denen mindestens vier Nachrichten im Datenset vorliegen, zeichnet sich, visualisiert mit QGIS (QGIS.org 2023), folgendes Bild ab:</p>
+                <figure>
+                    <graphic n="1005" width="15.917333333333334cm" height="11.2395cm" url="Pictures/d379cbd93a238be7f8b044d417c93b53.png" rend="inline"/>
+                    <head>Abb. 4: Detailausschnitt der Karte zur durchschnittlichen Differenz zwischen Absende- und Druckdatum für Korrespondenzorte mit mindestens vier Meldungen</head>
+                </figure>
+                <p style="text-align: left; ">Wie die Karte zeigt, variieren die Reisezeiten von Nachrichten je nach Distanz erheblich: Meldungen aus Wien werden meist am selben Tag gedruckt; für Ostritz dauert es durchschnittlich 5,8 Tage, für Amsterdam 16,3 Tage, für Tunis 61 Tage und für New York 81,7 Tage. Bemerkenswerterweise spiegelt die zeitliche Differenz jedoch nicht immer die räumliche Entfernung wider. Beispielsweise werden Nachrichten aus dem 909 Kilometer entfernten Utrecht im Durchschnitt nach 16,1 Tagen publiziert, während Korrespondenzen aus dem 332 Kilometer ‘nahen’ Krakau rund 22 Tage benötigen. Räumliche Distanz entspricht also nicht immer medialer Distanz, was impliziert, dass mit bestimmten Orten trotz größerer räumlicher Entfernung eine schnellere Kommunikation aufrechterhalten wurde bzw. die Nachrichten anderer Orte erst in nachfolgenden Ausgaben publiziert wurden.</p>
+                <p style="text-align: left; ">Generell veranschaulicht Abb. 4 eine ungleiche Dichte des Nachrichtennetzes des “Wienerischen Diariums”. Insbesondere wird deutlich, dass das Gebiet des heutigen Deutschlands eine sehr hohe Konzentration an Nachrichtenkontakten aufweist, wohingegen nur selten (direkte) Kontakte mit Orten südöstlich von Wien, v.a. dem Osmanischen Reich, bestehen zu scheinen. Informationen aus diesen Regionen wurden möglicherweise zuerst an anderen Orten gebündelt und unter deren Namen abgedruckt. Um hierüber mehr zu erfahren, sollten in Zukunft auch die Inhalte der Nachrichten selbst, etwa über Named Entity Recognition (NER), einbezogen werden.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Fazit und Ausblick</head>
+                <p style="text-align: left; ">Die Auswertung von über 10.000 Korrespondenzköpfen legt offen, von welchen “Orthen auß der gantzen Welt” (WD 8. August 1703, [2]) das Lesepublikum des “Wien[n]erischen Diariums” während des Siebenjährigen Kriegs Nachrichten bezog. Diese Ergebnisse ergänzen bereits 2018 durchgeführte korpusbasierte Untersuchungen zur Nachrichtenaktualität in der frühneuzeitlichen „Wiener Zeitung“ (Resch und Rastinger 2024) und bilden ein Beispiel dafür, wie stark sich Tools und Methoden der Digital Humanities in den vergangenen Jahren – im Sinne des Konferenzthemas “Under Construction” – weiterentwickelt haben und zur Beantwortung komplexer Forschungsfragen kombiniert werden können. Insbesondere durch die verbesserte KI-gestützte Layout- und Texterkennung können Erkenntnisinteressen inzwischen an weit umfassenderes, verlässlicheres Datenmaterial herangetragen und größer dimensioniert werden als dies bisher der Fall war. Dieses Potenzial zunehmender Automatisierung wollen auch die Autorinnen weiter nutzen und künftig u.a. die Reihung der Korrespondenzen und ihren Zusammenhang mit dem Kriegsgeschehen noch genauer auswerten. Außerdem erscheint es langfristig sinnvoll, die standardisierten Korrespondenzköpfe als Annotationen in die DIGITARIUM-Webapplikation zurückzuführen, damit Nutzer*innen individuell nach Nachrichten aus bestimmten Städten wie Paris, Rom oder Bielefeld filtern können – und dadurch selbst die “gantze Welt” erkunden können.</p>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                         Der DSE-Static-Cookiecutter, der die Publikation von XML/TEI-Dateien in Form einer statischen Webapplikation über XSLT unterstützen soll, wurde von Peter Andorfer et al. (2024) entwickelt; die Transformation und Anpassung für das DIGITARIUM erfolgte durch Daniel Elsner.
+                    </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                         Diese Angabe findet sich im &lt;front&gt;-Abschnitt des XML/TEI-Dokuments. Gleiches gilt für &lt;titlePart type=”main”&gt;.
+                    </note>
+<note rend="footnote text" xml:id="ftn3" n="3">
+                         Einfache sowie doppelte Separatoren wurden derzeit (noch) nicht in den &lt;front&gt;- bzw. &lt;body&gt;-Abschnitten aufgenommen und scheinen allein innerhalb des Elements &lt;facsimile&gt; auf, wo sie inklusive ihrer Koordinaten wiedergegeben werden.
+                    </note>
+<note rend="footnote text" xml:id="ftn4" n="4">
+                         Die Erweiterung des DIGITARIUMs um die Zeitungsausgaben des Siebenjährigen Krieges liegt darin begründet, dass für diesen Zeitraum vor längerer Zeit ein detaillierter, aber bislang ungedruckter Personen- und Sachindex erstellt worden ist, der mit diesen Ausgaben in Verbindung steht (vgl. Gestrich 2000) und in der Web-Applikation ebenfalls benutzbar gemacht werden soll.
+                    </note>
+<note rend="footnote text" xml:id="ftn5" n="5">
+                         Laut automatischer Evaluation durch Transkribus wird eine Mean Average Precision (mAP) von 88,06% erzielt; dieser Indikator ist jedoch kritisch zu betrachten, da der mAP-Wert bei zunehmender Trainingsbasis teilweise abgenommen hat, die Ergebnisse bei manueller Durchsicht von Seiten des Teams jedoch besser bewertet wurden.
+                    </note>
+<note rend="footnote text" xml:id="ftn6" n="6">
+                         Die Erscheinungsweise der „Wiener Zeitung“ verändert sich in diesem Zeitraum nicht; sie wird kontinuierlich zweimal pro Woche herausgegeben.
+                    </note>
+<note rend="footnote text" xml:id="ftn7" n="7">
+                         Dieser Arbeitsschritt wurde testweise manuell durchgeführt, kann in Zukunft aber noch stärker automatisiert werden, etwa über das Hinzuziehen von Ortslexika, Ähnlichkeitsalgorithmen oder Large Language Models (LLMs).
+                    </note>
+<note rend="footnote text" xml:id="ftn8" n="8">
+                         Diese Entwicklung lässt sich nicht durch eine generelle Abnahme des Umfangs der „Wiener Zeitung“ erklären: Im betrachteten Zeitraum bleibt sowohl die Anzahl an Ausgaben pro Jahr (104–105) als auch der jährliche Durchschnitt an Seiten pro Ausgabe (12,5–14,8 Seiten) relativ konstant.
+                    </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Andorfer, Peter, Daniel Elsner, Carl Friedrich Haak, Martin Anton Müller, Stefan Probst und Dominik Fill</hi>. 2024. acdh-oeaw/dse-static-cookiecutter: Zenodo Release (1.2). Zenodo. https://doi.org/10.5281/zenodo.14260530 (zugegriffen: 1 Dezember 2024).</bibl>
+                    <bibl>
+                        <hi rend="bold">Delpeuch, Antonin et al</hi>. 2024. 
+                        <hi rend="italic">OpenRefine</hi>. 10.5281/zenodo.595996.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gestrich, Andreas. 2000</hi>. “Das Wienerische Diarium in der Zeit des Siebenjährigen Krieges: Ein Projektbericht.“ 
+                        <hi rend="italic">Aufklärung</hi> 12 (1): 73–79.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Goldschmidt, Katrin</hi>. 2020. 
+                        <hi rend="italic">Textgliederung und Textkohärenz in historischen Wochenzeitungen des 17. und 18. Jahrhunderts. Ein Modell zur Annotation von Text- und Nachrichtenstrukturen</hi>. Dissertation. Universität Bonn. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mauri, Michele, Tommaso Elli, Giorgio Caviglia, Giorgio Uboldi und Matteo Azzi</hi>. 2017. “RAWGraphs: A Visualisation Platform to Create Open Outputs.” In 
+                        <hi rend="italic" xml:space="preserve">CHItaly '17: Proceedings of the 12th Biannual Conference on Italian SIGCHI Chapter. </hi>10.1145/3125571.3125585.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">QGIS.org</hi>. 2023. 
+                        <hi rend="italic">QGIS 3.32.0</hi>. http://qgis.org (zugegriffen: 23. Juli 2024)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">READ-COOP</hi>. 2024. 
+                        <hi rend="italic">Transkribus</hi>. https://www.transkribus.org (zugegriffen am 23. Juli 2024).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Resch, Claudia</hi>. 2023. “Volltextoptimierung für die historische Wiener Zeitung mit einem Anwendungsszenario aus der germanistischen Sprachgeschichte.” In 
+                        <hi rend="italic">Digitised Newspapers – A New Eldorado for Historians? Reflections on Tools, Methods and Epistemology</hi>, hg. von Estelle Bunout, Maud Ehrmann und Frédéric Clavert, 89–111. Berlin, Boston: de Gruyter. 10.1515/9783110729214.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Resch, Claudia und Nina C. Rastinger</hi>. 2024. “Jederzeit der wahrhafftigsten / und allerneuestenn Berichterstattung verpflichtet: Korpusbasierte Befunde zu Aktualität und Authentizität in der frühneuzeitlichen „Wiener Zeitung”. In 
+                        <hi rend="italic">Zeit und Zeitgeschehen in der periodischen Presse des 17.–19. Jahrhunderts. Fallstudien zu Perzeption und Reflexion</hi>, hg. von Andreas Golob und Ingrid Haberl-Scherk, 129–149. Berlin [u.a.]: Peter Lang.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Resch, Claudia und Dario Kampkaspar</hi>. 2020a. 
+                        <hi rend="italic">Wienerisches DIGITARIUM.</hi> https://digitarium.acdh.oeaw.ac.at (zugegriffen: 23. Juli 2024).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Resch, Claudia und Dario Kampkaspar</hi>. 2020b. 
+                        <hi rend="italic">German Fraktur 18th Century – WrDiarium_M9.</hi> https://readcoop.eu/de/modelle/german-fraktur-18th-century (zugegriffen: 23. Juli 2024).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Richardson, Leonard</hi>. 2024. 
+                        <hi rend="italic">Beautiful Soup</hi>. https://www.crummy.com/software/BeautifulSoup (zugegriffen: 23. Juli 2024).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">TEI Consortium</hi>. 2024. Guidelines for Electronic Text Encoding and Interchange. http://www.tei-c.org/P5/ (zugegriffen: 1 Dezember 2024).</bibl>
+                    <bibl>
+                        <hi rend="bold">The pandas development team</hi>. 2024. 
+                        <hi rend="italic">Pandas</hi>. 10.5281/zenodo.3509134.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wille, Manuel</hi>. 2019. “Zeitungen des 18. Jahrhunderts im Kontext des Höflichkeitsdiskurses.“ 
+                        <hi rend="italic">Wiener Geschichtsblätter</hi> 74 (2): 163–181.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Würgler, Andreas</hi>. 2013. 
+                        <hi rend="italic">Medien in der Frühen Neuzeit</hi>. München: Oldenbourg Wissenschaftsverlag.  
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Zenker, Ernst Victor</hi>. 1903. “Die Geschichte der Wiener Zeitung.” In 
+                        <hi rend="italic">Zur Geschichte der kaiserlichen Wiener Zeitung</hi>, 1–44. Wien: Selbstverlag der Wiener Zeitung.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="SAMSINGER_Linda_Leveraging_Zurich_Zentralbibliothek_s_Jupyte">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Leveraging Zurich Zentralbibliothek’s Jupyter Notebooks for Metadata Retrieval and Analysis from Alma</title>
+                <author>
+                    <persName>
+                        <surname>Samsinger</surname>
+                        <forename>Linda</forename>
+                    </persName>
+                    <affiliation>Zentralbibliothek Zürich, Schweiz</affiliation>
+                    <email>linda.samsinger@zb.uzh.ch</email>
+                    <idno type="ORCID">0009-0004-6133-8790</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-11-30T12:42:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Search&amp;Retrieval</term>
+                    <term>Python</term>
+                    <term>Jupyter Notebooks</term>
+                    <term>XML-Bibliothekskatalog</term>
+                    <term>API</term>
+                    <term>Natural Language Processing</term>
+                    <term>Data Visualization</term>
+                    <term>Digital Humanities</term>
+                    <term>Library Science</term>
+                    <term>MARC-fields</term>
+                    <term>Wikidata</term>
+                    <term>GND</term>
+                    <term>Metadata Spreadsheet Table</term>
+                    <term>Statistics</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Visualisierung</term>
+                    <term>Bibliographie</term>
+                    <term>Daten</term>
+                    <term>Metadaten</term>
+                    <term>Forschung</term>
+                    <term>Forschungsprozess</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>In the realm of research, digital tools have become essential for accessing relevant literature metadata (Döring et al. 2022; Padilla 2016). Hence, Zurich Zentralbibliothek has funded the KoLibri project, following the example set by the DNB (Taube 2023), ÖNB (Kaiser 2023, 207), and other libraries (Ames and Havens 2021, 50; Yesmin and Zabed 2016) by offering a set of seven Jupyter Notebooks as digital tools designed for metadata retrieval and analysis using Python code. The zeroth Jupyter Notebook serves as the foundational Python codebase for the other six. The next two notebooks allow users to conduct both simple and advanced searches across the library catalog, while the third notebook provides statistical analysis of the search results from the previous two, generating scientific visualizations. The remaining three notebooks mirror the functionality of the first three, with the added feature of GND/Wikidata data field enrichment for the search results. Metadata retrieval and analysis can be daunting without user-friendly tools and formats for conversion, organization, and analysis. Therefore, Zurich Zentralbibliothek has developed these high-quality Jupyter Notebooks (Candela 2023, 1550) available in German. They are designed to be intuitive, transparent and customizable, integrating with powerful Python libraries for statistical analysis and data visualization.</p>
+            <p>The Jupyter Notebooks operate by executing code blocks that search and harvest library data from the Swiss Library Service Platform (SLSP) online catalog in MARC XML format, accessed through an SRU interface – a procedure similar to using the Alma API (Hyams and Pilko 2022, 1). The SLSP-Alma database is a comprehensive library catalog, aggregating data from a nationwide network of Swiss libraries, boasting over 25 million media items. This catalog is a treasure trove of resources for scholars, researchers, and enthusiasts alike, surpassing the main Swisscovery website, which includes over six million media items and is the default search platform for many library users. The intuitive nature of these Jupyter Notebooks (Boscoe et al. 2017, 1) facilitates tapping into a more extensive repository of catalog data, as the notebooks are renowned for their seamless integration of code alongside explanatory rich text. While users may require modest to advanced programming skills to fully utilize these notebooks, they cater to a broad audience of tech-savvy researchers eager to explore the rich data offered by the SLSP-Alma catalog. By utilizing these Jupyter Notebooks, researchers gain improved capabilities in building topic-specific corpora (Oberbichler and Pfanzelter 2021, 4), visualizing data, conducting literature reviews and compiling bibliographies, as compared to traditional methods of searching via the Swisscovery website.</p>
+            <p>Based on the user’s search prompt in the Jupyter Notebooks, media records of books, articles, and journals can be harvested and exported into versatile formats like Excel, JSON or CSV. This functionality empowers digital humanities researchers to efficiently manage metadata using familiar spreadsheet formats. The data is structured in a clear, cleaned and straightforward manner, facilitating easy filtering, sorting and calculation of search results within tables. The extracted metadata includes essential bibliographic fields like title, author, publisher, publication year, and location, paramount for reference generation. Additionally, derived fields, which were purposefully created in-house, such as epoch and resource type provide deeper context. Links to the table of contents allow for local bulk downloads of books’ table of contents in PDF format. Optional enrichment with Wikidata and GND reconciliation enhances insights derived from the amassed data.</p>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="9.68375cm" url="Pictures/17194763594503b84898ddd0390ca0d7.png" rend="inline"/>
+                <head>Figure 1: The initial Jupyter Notebook, titled 'Simple Search' (left), alongside its exported search results displayed in Excel (right).</head>
+                
+            </figure>
+            <p>Beyond mere retrieval, the notebooks offer robust capabilities for metadata analysis, leveraging natural language processing (NLP) techniques (Jentsch and Porada 2021, 89). NLP libraries enable in-depth analysis of textual metadata, including curated keywords of titles visualized as word clouds centered around the initial search term. Frequency and correlation across all bibliographic fields are available in bar, pie and line charts, aiding in trend and distribution interpretation. Moreover, the notebooks include features for similarity analysis, semantic visualization, and world map views, unveiling inherent insights and patterns within the dataset. Finally, tables and figures are exportable as PDFs, enhancing the accessibility and shareability of analytical findings for dissemination in reports, presentations, or scholarly articles. Reviewing these results allows users to discern thematic trends, popular authors, temporal patterns and genre preferences within the library holdings. For instance, the spreadsheet search results for the query “Heidi Johanna Spyri” can be imported into a notebook for detailed data analysis. The analysis reveals that the most frequent publishing location is Zurich, with “Hemma” being the most common publisher. The majority of the media are physical books written in German, primarily published between 2010 and 2020. Interestingly, a small fraction (1.68%) of the media consists of physical and electronic audio recordings and computer files. The geographical focus of these works is predominantly on Switzerland and the Alps, with some references to Japan and the USA. Key terms associated with this search include “grandfather,” “orphan,” “alpine pasture”, “German” and “friendship,” which are illustrated in a word cloud. Such insights are valuable to various stakeholders, such as researchers, especially in computational linguistics and digital humanities, librarians involved in collection development and enthusiasts exploring literary landscapes (Herrmann et al. 2021, 2).</p>
+            <p>Furthermore, the flexibility and transparency of Jupyter Notebooks empower users to clone, customize, and fine-tune code snippets to meet specific functional objectives. With just a few lines of code, users can tailor visualizations to highlight trends, anomalies or correlations within the SLSP catalog metadata. As these notebooks are open-source, programming researchers and librarians have the freedom to fork and extend the source code, adding their own unique database APIs and features. The notebooks are freely accessible in both cloud (browser and server-based) and offline versions on GitLab at 
+                <ref target="https://data.zb.uzh.ch/map/books/data-map-der-zentralbibliothek-zurich/page/jupyter-notebooks-der-zentralbibliothek-zurich">https://data.zb.uzh.ch/map/books/data-map-der-zentralbibliothek-zurich/page/jupyter-notebooks-der-zentralbibliothek-zurich</ref>. 
+            </p>
+            <p>In conclusion, these notebooks enable quantitative research and evaluation of a topic’s media metadata, available in the bounteous online catalog of Swiss libraries. Their functionalities are both innovative and user-friendly compared to alternatives. This solution not only promotes data-driven digital scholarship but also equips users with an adaptable toolkit to unlock the wealth of knowledge contained within the Swiss-wide library catalog.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl rend="Bibliography"><hi rend="bold">Ames, Sarah, and Lucy Havens</hi>. 2021. "Exploring National Library of Scotland Datasets With Jupyter Notebooks." 
+                        <hi rend="italic">IFLA Journal</hi> 48 (1): 50-56.
+                    </bibl>
+                    <bibl rend="Bibliography"><hi rend="bold">Boscoe, Gernadette M., Irene V. Pasquetto, Milena S. Golshan, and Christine L. Borgman</hi>. 2017. "Using the Jupyter Notebook as a Tool for Open Science: An Empirical Study." 
+                        <hi rend="italic">ACM/IEEE Joint Conference on Digital Libraries (JCDL)</hi>, 1-2.
+                    </bibl>
+                    <bibl rend="Bibliography"><hi rend="bold">Candela, Gustavo</hi>. 2023. "An Approach to Assess the Quality of Jupyter Projects Published by GLAM Institutions." 
+                        <hi rend="italic">Journal of the Association for Information Science and Technology</hi> 74 (13): 1550-1564.
+                    </bibl>
+                    <bibl rend="Bibliography"><hi rend="bold">Döring, Karoline Dominika, Mareike König, Stefan Haas, and Jörg Wettlaufer</hi>. 2022. 
+                        <hi rend="italic">Digital History: Konzepte, Methoden und Kritiken Digitaler Geschichtswissenschaft</hi>. Berlin: De Gruyter Oldenbourg.
+                    </bibl>
+                    <bibl rend="Bibliography"><hi rend="bold">Herrmann, Berenike J., Giulia Grisot, Susanne Gubser, and Elias Kreyenbühl</hi>. 2021. "Ein großer Berg Daten? Zur bibliothekswissenschaftlichen Dimension des korpusliteraturwissenschaftlichen Digital Humanities-Projekts ‘High Mountains – Deutschschweizer Erzählliteratur 1880–1930‘." 
+                        <hi rend="italic">027.7 Journal for Library Culture</hi> 8 (1): 1-26.
+                    </bibl>
+                    <bibl rend="Bibliography"><hi rend="bold">Hyams, Rebecca, and Tamara Pilko</hi>. 2022. "'You could use the API!': A Crash Course in Working with the Alma APIs using Postman." 
+                        <hi rend="italic">code4lib</hi> 54: 1.
+                    </bibl>
+                    <bibl rend="Bibliography"><hi rend="bold">Jentsch, Patrick, and Stephan Porada</hi>. 2021. "From Text to Data: Digitization, Text Analysis and Corpus Linguistics." In 
+                        <hi rend="italic">Digital Methods in the Humanities: Challenges, Ideas, Perspectives</hi>, edited by Silke Schwandt, 89-128. Bielefeld: transcript Verlag.
+                    </bibl>
+                    <bibl rend="Bibliography"><hi rend="bold">Kaiser, Max</hi>. 2023. "Digitale Sammlungen als offene Daten für die Forschung: Strategische Zielsetzungen der Österreichischen Nationalbibliothek." 
+                        <hi rend="italic">Bibliothek Forschung und Praxis</hi> 47 (2): 200-212.
+                    </bibl>
+                    <bibl rend="Bibliography"><hi rend="bold">Oberbichler, Sarah, and Eva Pfanzelter</hi>. 2021. "Topic-specific Corpus Building: A Step Towards a Representative Newspaper Corpus on the Topic of Return Migration Using Text Mining Methods." 
+                        <hi rend="italic">Journal of Digital History</hi> (1): 74-98.
+                    </bibl>
+                    <bibl rend="Bibliography"><hi rend="bold">Padilla, Thomas</hi>. 2016. "Humanities Data in the Library: Integrity, Form, Access." 
+                        <hi rend="italic">D-Lib Magazine</hi> 22 (3/4).
+                    </bibl>
+                    <bibl rend="Bibliography"><hi rend="bold">Taube, Anke</hi>. 2023. 
+                        <hi rend="italic">Open DNBLab - Ein praktischer Einstieg in den Bezug und die Analyse der Daten und freien digitalen Objekte der DNB</hi>. OPUS.
+                    </bibl>
+                    <bibl rend="Bibliography"><hi rend="bold">Yesmin, Sabina, and Ahmed Zabed</hi>. 2016. "Preference of Bangladesh University Students for Searching the Library Catalogue." 
+                        <hi rend="italic">The Electronic Library</hi> 34 (4): 683-695.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

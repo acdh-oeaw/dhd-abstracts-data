@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="KLAPPENBACH_Lou_Baustelle_digitale_Editionsumgebung__ediarum">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Baustelle digitale Editionsumgebung: ediarum und Git-basierte Versionskontrolle</title>
+                <author>
+                    <persName>
+                        <surname>Fechner</surname>
+                        <forename>Martin</forename>
+                    </persName>
+                    <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland</affiliation>
+                    <email>fechner@bbaw.de</email>
+                    <idno type="ORCID">0000-0001-9233-0653</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Klappenbach</surname>
+                        <forename>Lou</forename>
+                    </persName>
+                    <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland</affiliation>
+                    <email>klappenbach@bbaw.de</email>
+                    <idno type="ORCID">0000-0001-6587-3353</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lampert</surname>
+                        <forename>Marcus</forename>
+                    </persName>
+                    <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland</affiliation>
+                    <email>marcus.lampert@bbaw.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-06-13T14:32:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Git</term>
+                    <term>Versionskontrolle</term>
+                    <term>ediarum</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Programmierung</term>
+                    <term>Bearbeitung</term>
+                    <term>Daten</term>
+                    <term>Datei</term>
+                    <term>Software</term>
+                    <term>virtuelle Forschungsumgebungen</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Digitale Editionen befinden sich kontinuierlich im Wandel. Diese Eigenschaft ermöglicht sukzessive Veröffentlichungen und eine transparente Gestaltung des Forschungsprozesses sowohl innerhalb der Editionsteams als auch nach außen hin. Hierfür ist eine gründliche Dokumentation und Versionskontrolle notwendig. Die AG Digitales Publizieren betont die Bedeutung der Versionierung digitaler Texte für die Zitierbarkeit und Nachvollziehbarkeit (AG Digitales Publizieren 2021, 68). Einige digitale Editionen, wie die 
+                <ref target="https://edition-humboldt.de/">
+                    <hi rend="underline color(0000FF)">edition humboldt digital</hi>
+                </ref>, setzen bereits auf regelmäßige Veröffentlichungen ihrer Forschungsdaten auf Plattformen wie 
+                <ref target="https://github.com/">
+                    <hi rend="underline color(0000FF)">Github</hi>
+                </ref> und 
+                <ref target="https://zenodo.org/">
+                    <hi rend="underline color(0000FF)">Zenodo</hi>
+                </ref>, was den Nutzer:innen ermöglicht, Änderungen nachzuvollziehen und Datensätze zu vergleichen (Ette u. a. 2022). Aber nicht nur auf Ebene der Publikation, sondern auch innerhalb des Arbeitsprozesses und bei der alltäglichen Editionsarbeit sollte eine Versionierung der Forschungsdaten gewährleistet werden.
+            </p>
+            <p style="text-align: left; ">Die digitale Editionsumgebung der Berlin-Brandenburgischen Akademie der Wissenschaften (BBAW), genannt 
+                <ref target="https://www.ediarum.org/">
+                    <hi rend="Internet_Link6">ediarum</hi><ref n="1" target="ftn1"/>
+                </ref>, setzt zu diesem Zweck auf eine lückenlose Versionierung von TEI/XML-Dateien mittels 
+                <ref target="https://git-scm.com/">
+                    <hi rend="underline color(0000FF)">Git</hi>
+                </ref>-basierter Versionskontrolle. 
+                <ref target="https://www.bbaw.de/bbaw-digital/telota">
+                    <hi rend="underline color(0000FF)">TELOTA</hi>
+                </ref>, die Digital-Abteilung der BBAW, entwickelt hierfür neue Module, deren Hauptziel es ist Git-basiert zu arbeiten. Git ermöglicht es den Editor:innen einerseits, den Forschungsprozess detailliert zu verfolgen, unterschiedliche Datenstände zu vergleichen und die Historie einzelner Dateien Schritt für Schritt nachzuvollziehen (vgl. Bürgermeister 2020). Andererseits können dann ausgewählte Datenstände kombiniert und auf einem öffentlichen Git-Branch publiziert und dokumentiert werden. Die beiden Strategien, d.h. sowohl die detaillierte Datensicherung durch kleine automatisierte Commits, als auch die Publikation von erreichten Meilensteinen innerhalb der detaillierten Versionierung, fördern die Transparenz und die gute wissenschaftliche Praxis (vgl. Deutsche Forschungsgemeinschaft 2022). Versionskontrolle verbessert die Nachhaltigkeit von Editions- und Softwareprojekten (vgl. Schrade 2017, 2–3) und sollte auch in die Datenpraktiken der Projekte Einzug erhalten. Die Integration von Versionierungssystemen wie Git in (bestehende) Publikations- und Editionsumgebungen wird aktuell innerhalb der Digital Humanities intensiv diskutiert<ref n="2" target="ftn2"/>. ediarum reagiert darauf mit verschiedenen Entwicklungen, die auf diesem Poster vorgestellt und deren Anwendungsfälle beschrieben werden. Die neuen Lösungen unterstützen die Integration von Git in bestehende Systeme digitaler Editionen und bieten Nutzer:innen von ediarum und 
+                <ref target="http://exist-db.org/exist/apps/homepage/index.html">
+                    <hi rend="underline color(0000FF)">exist-db</hi>
+                </ref> neue Optionen.
+            </p>
+            <p style="text-align: left; ">ediarum.WEBDAV bietet eine Lösung, die XML-Dateien während der Eingabe im 
+                <ref target="https://www.oxygenxml.com/">
+                    <hi rend="underline color(0000FF)">Oxygen XML Editor</hi>
+                </ref> bei jedem Speichern in ein Git-Repository auf den Server überträgt und parallel dazu in eine bestehende eXist-db synchronisiert. Für die Kommunikation zwischen dem Oxygen Editor und dem Server ist eine Webdav-Schnittstelle zuständig. Die Git-History bleibt linear und ohne Konflikte, weil nur der Server die Änderungen seriell, d.h. eine nach der anderen, committet und dies nur auf dem main-Branch erfolgt. Die WebDAV Dateisperre sorgt dafür, dass die Nutzer:innen die selbe Datei nicht gleichzeitig bearbeiten und dadurch etwa unbeabsichtigt Änderungen gegenseitig überschrieben können. Besondere Eingriffe, etwa Datenänderungen per Skript, können auf eigenen Branches durchgeführt und anschließend von den Entwickler:innen in den main-Branch überführt werden.
+            </p>
+            <p style="text-align: left; ">Die direkte Bearbeitung von TEI/XML-Dateien in einem Git-Repository erhöht die Datensicherheit und vermeidet Datenverluste, die beispielsweise bei einem Absturz einer XML-Datenbank oder dem Entfernen semantisch relevanter Leerzeichen auftreten können. Diese Integration schafft Vertrauen bei den Editor:innen der digitalen Editionen. Eine Git-basierte Architektur bietet zudem Unabhängigkeit von spezifischen Technologien und Datenbanken und erleichtert die Migration in andere Systeme. Da einfache 
+                <anchor xml:id="_DdeLink__719_1825195186"/>TEI/XML-Dateien von verschiedenen Programmiersprachen und Web-Frameworks weiterverarbeitet werden können, ist eine flexible und vielseitige Nutzung gewährleistet.
+            </p>
+            <p style="text-align: left; ">ediarum.BACKEND stellt die in Git-versionierten Daten performant über eine REST-API zur Verfügung und bietet somit eine Alternative zu gängigen XML-Datenbanken. Über eine Konfigurationsdatei (einfaches XML) wird mittels XPath definiert, welche Felder in bestimmten TEI/XML-Dateien ausgelesen werden sollen. Diese kann von den Nutzer:innen selbst verwaltet werden. Per Skript werden die ausgewählten Informationen in eine SQL-Datenbank überführt und können so sehr performant über die Rest-API von ediarum.BACKEND abgefragt werden. Anschließend können sie von einem Webfrontend und der oXygen-Restschnittstelle, die bei der Dateneingabe über ediarum.BASE.edit benutzt wird, weiterverarbeitet werden.</p>
+            <p style="text-align: left; ">Das Poster visualisiert die Integration von Git in den Prozess der Erstellung und Bearbeitung von TEI/XML-Daten digitaler Editionen bei TELOTA und stellt die neuesten ediarum-Erweiterungen vor. Dies soll helfen Editor:innen und Entwickler:innen auf die Notwendigkeit der Versionskontrolle aufmerksam zu machen und mit ihnen über mögliche Lösungswege zu diskutieren.</p>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                         ediarum bietet eine auf exist-db und oXygen XML-Editor basierende Infrastruktur für die Erstellung und Publikation digitaler Editionen. Das ediarum-Universum bietet bereits viele Funktionen und wird ständig erweitert, um neuen Anforderungen aus der Forschung und der fortschreitenden Datafication gerecht zu werden.
+                    </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                     Über diese Thematik wurde beispielsweise beim letzten ediarum.MEETUP am 10. Juni 2024 gesprochen, siehe 
+                        <ref target="https://www.ediarum.org/meetups.html#meetup_06_2024">
+                            <hi rend="Internet_Link6">https://www.ediarum.org/meetups.html#meetup_06_2024</hi>
+                        </ref>.
+                    
+                </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl style="text-align: left; "><hi rend="bold">AG Digitales Publizieren</hi>. 2021. „Digitales Publizieren in den Geisteswissenschaften: Begriffe, Standards, Empfehlungen“. 
+                        <ref target="https://doi.org/10.17175/wp_2021_001_v2">
+                            <hi rend="underline color(0000FF)">10.17175/WP_2021_001_V2</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Bürgermeister, Martina</hi>. 2020. „Extending Versioning in Collaborative Research“. In Versioning Cultural Objects Digital Approaches., Schriften des Instituts für Dokumentologie und Editorik, hg. Roman Bleier und Sean M. Winslow, 171–90. Norderstedt: BoD.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Deutsche Forschungsgemeinschaft</hi>. 2022. „Guidelines for Safeguarding Good Research Practice. Code of Conduct“. 
+                        <ref target="https://doi.org/10.5281/zenodo.6472827">
+                            <hi rend="underline color(0000FF)">10.5281/zenodo.6472827</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Ette, Ottmar, Stefan Dumont, Annika Geiser, Carmen Götz, Tobias Kraft, Ulrike Leitner, Ulrich Päßler, Florian Schnee, und Christian Thomas</hi>. 2022. „TEI-XML-Datenset der Tagebücher, Briefe, Dokumente, Forschungsbeiträge, Chronologieeinträge und Register der edition humboldt digital“. 
+                        <ref target="https://doi.org/10.5281/zenodo.10457932">
+                            <hi rend="underline color(0000FF)">10.5281/zenodo.10457932</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Schrade, Torsten</hi>. 2017. „Nachhaltige Softwareentwicklung in den Digital Humanities. Konzepte und Methoden. “ Vortrag bei der DHd 2017. 
+                        <ref target="https://digicademy.github.io/2017-dhd-sustainable-software/">
+                            <hi rend="underline color(0000FF)">https://digicademy.github.io/2017-dhd-sustainable-software/</hi>
+                        </ref> (zugegriffen: 23. Juli 2024).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

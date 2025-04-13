@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="LOOSLI_Ursula_Modularisierte_Infrastrukturen_f_r_die_Digital">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Modularisierte Infrastrukturen für die Digital Humanities: Das Beispiel digitaler Editionen an der Universitätsbibliothek Bern</title>
+                <author>
+                    <persName>
+                        <surname>Loosli</surname>
+                        <forename>Ursula</forename>
+                    </persName>
+                    <affiliation>Universitätsbibliothek Bern, Schweiz</affiliation>
+                    <email>ursula.loosli@unibe.ch</email>
+                    <idno type="ORCID">0000-0002-1480-315X</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schreier</surname>
+                        <forename>Gero</forename>
+                    </persName>
+                    <affiliation>Universitätsbibliothek Bern, Schweiz</affiliation>
+                    <email>gero.schreier@unibe.ch</email>
+                    <idno type="ORCID">0000-0003-3293-9621</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-11-28T06:28:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Open Science</term>
+                    <term>Digital Humanities</term>
+                    <term>IIIF</term>
+                    <term>TEI-Publisher</term>
+                    <term>Digitale Edition</term>
+                    <term>FAIR data</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Veröffentlichung</term>
+                    <term>Daten</term>
+                    <term>Bilder</term>
+                    <term>Infrastruktur</term>
+                    <term>Text</term>
+                    <term>Werkzeuge</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p> Die Universität Bern beheimatet eine dynamische Digital-Humanities(DH)-Community, in der insbesondere an einer ganzen Reihe von digitalen Editionen gearbeitet wird. Es handelt sich dabei sowohl um seit Jahren laufende editorische Grossprojekte (vgl. zum «Berner Parzival» Stolz, 2018; zur Edition der Werke Jeremias Gotthelfs Zimmermann et al., 2017; zu «hallerNet» Dängeli/Stuber, 2020) als auch um kleinere, kontinuierlich neu entstehende Projekte. Jedes davon ist in spezifische wissenschaftliche Fachcommunities eingebettet, die jeweiligen Datenpraktiken (z.B. Datenerhebung und -aufbereitung, Präsentation) und technischen Anforderungen sind sehr heterogen. Zwar sind viele Herausforderungen vergleichbar, aber sie fordern den Projekten angesichts der je spezifischen Gegebenheiten oft noch individuelle Lösungsstrategien ab.</p>
+            <p>Eine zentrale Problematik besteht darin, die Verfügbarkeit und Funktionsfähigkeit von Datenbeständen und technischen Lösungen während längerer Zeit mit überschaubarem finanziellem und administrativem Aufwand sicherzustellen. Es gilt, eine Balance zu finden zwischen der Bereitstellung generischer technischer Lösungen, die nicht alle Einzelanforderungen reflektieren können und damit von Forschenden oft als unbefriedigend empfunden werden, und dem nicht zu leistenden Aufwand, ein heterogenes Ensemble technischer Systeme dauerhaft zu pflegen und vorzuhalten. Lösungsansätze für diese Probleme müssen auch dem Umstand Rechnung tragen, dass die Finanzierung von Projekten an die Zyklen der Drittmittelförderung gebunden und zudem mit Forderungen nach Umsetzung von Prinzipien wie FAIR Data (Wilkinson et al. 2016) und Open Research Data (ORD) verknüpft ist (für die Schweiz ist insbesondere auf SNF 2017-2024 und swissuniversities 2021 zu verweisen).</p>
+            <p>Um der Komplexität der umrissenen Anforderungen Rechnung zu tragen, wurde an der Universität Bern eine modulare Herangehensweise gewählt. Das Neue des Ansatzes liegt darin, technisch-infrastrukturelle Herausforderungen, denen sich bisher jedes Projekt individuell gegenübersah, zu bündeln und mit etablierten und so weit wie möglich standardkonformen Lösungen zu adressieren. Dazu werden generische und spezialisierte Infrastrukturdienstleistungen zu einem modulbasierten System verknüpft, aus dem Forschungsprojekte gemäss ihren individuellen Anforderungen einzelne Services oder Kombinationen von Services wählen und nutzen können. Eine zentrale Rolle bei der dauerhaften Bereitstellung dieser Infrastrukturen kommt der Universitätsbibliothek (UB) zu (siehe zur Rolle von Bibliotheken als Forschungsinfrastrukturen etwa Oberhoff 2022, 104-105). Möglich wird dies durch Kooperationen sowie eine Mischkalkulation aus Finanzbeiträgen der Universität und der Forschungsprojekte, die die Services nutzen.</p>
+            <p>Derzeit stehen folgende Module zur Verfügung: </p>
+            <list type="unordered">
+                <item>Ein IIIF-Service für Forschungsprojekte, die Bildmaterial in ihre eigenen Webpräsentationen einbinden möchten. Angeboten werden eine Serverinfrastruktur, IIIF-Schnittstellen sowie ein Verwaltungszugang zu den projekteigenen Bildern auf dem IIIF-Server. Digitale Editionen können über diesen Service ihr Bildmaterial IIIF-konform verfügbar machen und anschliessend in die projekteigene Publikationsumgebung einbinden, ohne selbst einen IIIF-Bilderserver betreiben zu müssen.</item>
+                <item>Ein TEI-Publisher-Service zur Publikation von edierten Texten. Angeboten wird pro Projekt eine TEI-Publisher-Instanz mit (bis zu einem gewissen Grad) anpassbaren Vorlagen zur Darstellung der TEI-Elemente und zur Gestaltung des Webseiten-Layouts. Bei der Erstellung der digitalen Edition mit dem TEI-Publisher unterstützt das Data Science Lab (DSL).</item>
+                <item>BORIS Portal (
+                    <ref target="https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/https%3a%2f%2fboris-portal.unibe.ch%2c">https://boris-portal.unibe.ch,</ref> vgl. Re3data 2024), ein institutionelles Forschungsinformationssystem und Forschungsdatenrepositorium für alle Fachbereiche der Universität Bern. Digitale Editionen können hier Datendumps ihrer Editionen (bei Bedarf auch in mehreren Versionen) veröffentlichen und mit Informationen zu ihrem Projekt, den beteiligten Personen und zu Publikationen verknüpfen.
+                </item>
+            </list>
+            <p>Zudem ist ein DOI-Service im Aufbau, der DOIs für Inhalte generiert, die nicht auf dem Forschungsdatenrepositorium liegen, also z.B. für einzelne Texte oder Objekte innerhalb einer Edition. Dieses Angebot wird derzeit auf Grundlage der Anforderungen mehrerer laufender Projekte durch die UB entwickelt.</p>
+            <p>Die Module können einzeln, gemeinsam oder in Kombination mit anderen, auch selbstentwickelten Tools und visuellen Umsetzungen (etwa Frontends) verwendet werden. So bieten sie den Forschenden hinreichende Flexibilität und können auch in sehr spezifischen Projektumgebungen eingesetzt werden, während sie zugleich Einhaltung von Standards, Datenaustausch und Nachnutzung ermöglichen. Andererseits wird auf der Seite der Verwaltung durch die Zusammenfassung der Infrastrukturmodule bei der UB der administrative Aufwand so gering wie möglich gehalten. Die Finanzierung der Dienstleistungen läuft über Gelder der Universität, je nach Modul ergänzt um einmalige Kostenbeiträge durch die Forschungsprojekte. Auf diese Weise generieren die Module für Forschungsprojekte keine laufenden Kosten. Durch die institutionelle Verankerung und die Bündelung der technischen und administrativen Aspekte sind die Dienstleistungen mit überschaubarem Aufwand skalierbar, und die Zugänglichkeit und Benutzbarkeit der entsprechenden Bestandteile der digitalen Editionen können mindestens mittelfristig gewährleistet werden. Zudem kann dieses Ensemble von Modulen jederzeit um weitere Service-Bausteine erweitert werden, wie das Beispiel des DOI-Services zeigt. </p>
+            <p>Für den Auf- und Ausbau dieser Unterstützungsstruktur ist die Kooperation verschiedener Akteur*innen in Forschung und Forschungsunterstützung entscheidend. Die folgenden Einrichtungen wirken an der modularen Infrastruktur mit:</p>
+            <list type="unordered">
+                <item>Die Universitätsbibliothek Bern übernimmt in Abstimmung mit den Informatikdiensten der Universität das langfristige Hosting und die Wartung der technischen Infrastruktur. Zudem beraten zwei Data Stewards, die beim Open-Science-Team der UB angesiedelt sind, im Rahmen des Forschungsdatensupports fachlich bei der Nutzung der Infrastrukturmodule, vom Schreiben von Datenmanagementplänen bis hin zur Planung und Durchführung von Datenpublikationen auf dem institutionellen Repositorium. Sie unterstützen zudem bei der Nutzung der Module (etwa beim Upload von Daten auf den IIIF-Server oder das Forschungsdatenrepositorium) und erarbeiten Dienstleistungskataloge und Vertragsvorlagen (in Abstimmung mit dem Rechtsdienst der Universität).</item>
+                <item>Die DH-Professur bringt die Bedürfnisse aus der DH-Community der Universität Bern ein, die dann gemeinsam mit der UB und dem DSL in technische Anforderungen und konkrete Infrastrukturangebote übersetzt werden. Zudem hat die Professur eine wichtige Schlüsselrolle bei der Vernetzung mit Fakultäten und Hochschulverwaltung.</item>
+                <item>Das DSL der Universität Bern übernimmt Aufgaben der Entwicklung von Software, sei es bei der Initialisierung neuer Module, sei es bei der Anpassung bestehender Infrastrukturen an die spezifischen Bedürfnisse einzelner Projekte.</item>
+            </list>
+            <p>Noch ungelöste Herausforderungen betreffen etwa die Bereitstellung eines Ansetzungsservices für Normdaten (GND) für digitale Editionen, die langfristige Kostengestaltung und die Daten-Langzeitarchivierung. Die fortschreitende technische Entwicklung im Bereich der digitalen Editionen wird es zudem nötig machen, vorhandene Infrastrukturen an neue Standards anzupassen und neue Lösungen in die bestehenden Angebote zu integrieren bzw. diese zu adaptieren.</p>
+            <p>Mit unserem Poster wollen wir das an der Universität Bern entwickelte modulare System zur Unterstützung digitaler Editionen und der DH im Allgemeinen der Fachcommunity im deutschsprachigen Raum vorstellen und zur Diskussion der erarbeiteten Lösungen und künftiger Herausforderungen einladen.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl><hi rend="bold">Dängeli, Peter, und Martin Stuber</hi>. 2020. „Nachhaltigkeit in langjährigen Erschliessungsprojekten“. 
+                        <hi rend="italic">xviii.ch</hi>. 
+                        <ref target="https://doi.org/10.24894/2673-4419.00004">https://doi.org/10.24894/2673-4419.00004</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">„hallerNet - Daten- und Editionsplattform“</hi>, 2024. Zugegriffen 18. Juli 2024. https://hallernet.org/.</bibl>
+                    <bibl><hi rend="bold">Oberhoff, Andreas</hi>. 2022. 
+                        <hi rend="italic">Digitale Editionen im Spannungsfeld des Medienwechsels: Analysen und Lösungsstrategien aus Sicht der Informatik</hi>. Digital humanities research, Band 3. Bielefeld: transcript. 
+                        <ref target="https://doi.org/www.doi.org/10.14361/9783839459058">www.doi.org/10.14361/9783839459058</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">Re3data</hi>. 2024. „BORIS Portal“. re3data.org - Registry of Research Data Repositories. 
+                        <ref target="https://doi.org/10.17616/R31NJN1O">https://doi.org/10.17616/R31NJN1O</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">SNF / Schweizerischer Nationalfonds</hi>. 2017-2024. „Open Research Data“. 
+                        <ref target="https://www.snf.ch/de/dMILj9t4LNk8NwyR/thema/open-research-data">https://www.snf.ch/de/dMILj9t4LNk8NwyR/thema/open-research-data</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">Stolz, Michael</hi>. 2018. „Copying, Emergence and Digital Reproduction. Transferring Medieval Manuscript Culture into an Electronic Edition“. 
+                        <hi rend="italic">Digital Philology. A Journal of Medieval Cultures</hi> 6 (2): 257–87.
+                    </bibl>
+                    <bibl><hi rend="bold">swissuniversities</hi>. 2021. „Swiss National Open Research Data Strategy.“ 
+                        <ref target="https://openresearchdata.swiss/wp-content/uploads/2023/12/Swiss_National_ORD_Strategy_en.pdf">https://openresearchdata.swiss/wp-content/uploads/2023/12/Swiss_National_ORD_Strategy_en.pdf</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, u. a.</hi> 2016. „The FAIR Guiding Principles for Scientific Data Management and Stewardship“. 
+                        <hi rend="italic">Scientific Data</hi> 3 (1): 160018. 
+                        <ref target="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">Zimmermann, Christian von, et al.</hi> 2017. „Mit Gotthelf ins digitale Zeitalter“. Universität Bern. Institut für Germanistik. Forschungsstelle Jeremias Gotthelf. 
+                        <ref target="https://www.gotthelf.unibe.ch/unibe/portal/fak_historisch/fuein/micro_fjg/content/e79549/e318952/e922035/NdF_Broschuere_fertig_ger.pdf">https://www.gotthelf.unibe.ch/unibe/portal/fak_historisch/fuein/micro_fjg/content/e79549/e318952/e922035/NdF_Broschuere_fertig_ger.pdf</ref>. (Alle Links wurden am 18.7.2024 überprüft.)
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

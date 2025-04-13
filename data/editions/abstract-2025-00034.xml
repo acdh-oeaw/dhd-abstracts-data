@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EICHENBERGER_Nicole_Ein_Baukasten_f_r_handschriftenkundliche">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ein Baukasten für handschriftenkundliches Vokabular. Thesauri und Fachbegriffe im Handschriftenportal</title>
+                <author>
+                    <persName>
+                        <surname>Eichenberger</surname>
+                        <forename>Nicole</forename>
+                    </persName>
+                    <affiliation>Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Deutschland</affiliation>
+                    <email>nicole.eichenberger@sbb.spk-berlin.de</email>
+                    <idno type="ORCID">0000-0002-3941-9461</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schaßan</surname>
+                        <forename>Torsten</forename>
+                    </persName>
+                    <affiliation>Herzog August Bibliothek Wolfenbüttel, Deutschland</affiliation>
+                    <email>schassan@hab.de</email>
+                    <idno type="ORCID">0000-0002-8902-4775</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schröer</surname>
+                        <forename>Annika</forename>
+                    </persName>
+                    <affiliation>Universitätsbibliothek Leipzig, Deutschland</affiliation>
+                    <email>schroeer@ub.uni-leipzig.de</email>
+                    <idno type="ORCID">0000-0003-2293-4093</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Stampfer</surname>
+                        <forename>Ursula</forename>
+                    </persName>
+                    <affiliation>Bayerische Staatsbibliothek München, Deutschland</affiliation>
+                    <email>Ursula.Stampfer@bsb-muenchen.de</email>
+                    <idno type="ORCID">0000-0002-3308-7048</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sturm</surname>
+                        <forename>Katrin</forename>
+                    </persName>
+                    <affiliation>Universitätsbibliothek Leipzig, Deutschland</affiliation>
+                    <email>sturm@ub.uni-leipzig.de</email>
+                    <idno type="ORCID">0009-0007-1756-9526</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-11-27T07:46:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Vortrag: Methode</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Normdaten</term>
+                    <term>Thesaurus</term>
+                    <term>Ontologie</term>
+                    <term>Linked Data</term>
+                    <term>Handschriftenkunde</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Modellierung</term>
+                    <term>Manuskript</term>
+                    <term>Metadaten</term>
+                    <term>benannte Entitäten (named entities)</term>
+                    <term>Forschungsprozess</term>
+                    <term>Standards</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung<ref n="1" target="ftn1"/>
+                </head>
+                <p style="text-align: left; ">Im Bereich der bibliothekarischen Erschließung spielen normierte Vokabulare seit jeher eine zentrale Rolle, um gleiche Inhalte unabhängig von ihren konkreten und ggf. abweichenden Bezeichnungen auffindbar zu machen – im prädigitalen Zeitalter etwa in Form von Karteien (Jochum 2010, Gastgeber 2011). Auch für das Spezialgebiet der Erschließung mittelalterlicher und frühneuzeitlicher Handschriften (DFG 1992; Mackert et al. 2022), das im Fokus dieses Beitrags steht, ist die Normierung von Begriffen von größter Bedeutung, da bei vormodernen Handschriften meist selbst basale Daten wie Entstehungszeit und -ort in einem wissenschaftlichen Arbeitsprozess erst erschlossen werden müssen; auch Namen von Schreiber:innen und Textautor:innen werden nur selten genannt, und wenn, dann treten sie in zahlreichen und uneindeutigen Varianten auf.<ref n="2" target="ftn2"/> Die Indizien, die zu einer Aussage über eine Handschrift geführt haben, werden dann im Zuge der Registererstellung möglichst eindeutig formuliert und normiert, um eine Durchsuchbarkeit des gesamten Katalogs zu gewährleisten.
+                </p>
+                <p style="text-align: left; ">Der Übergang von der analogen Welt des gedruckten Handschriftenkatalogs in die digitale Sphäre stellt dabei eine große Chance dar: Erstmals werden katalog- bzw. registerübergreifende Recherche und Verknüpfung von Handschriftenerschließungsdaten mit digitalen normierten Vokabularen ermöglicht. Dies bedeutet eine immense Zeitersparnis gegenüber einer iterativen Recherche in gedruckten Registern (Wagner 2009; Glaßner 2015; Schreiber 2022). Zugleich entstehen aber auch neue Herausforderungen, da Datenbanken meist eine Aggregation sehr heterogener Daten darstellen – die Handschriftenkatalogisate unterscheiden sich hinsichtlich ihres Alters, ihres Differenziertheitsgrades sowie ihrer Sprache. Hinzu kommt die der Handschriftenerschließungspraxis inhärente Interdisziplinarität: Je nach fachlicher „Schule“ werden ähnliche Phänomene mit unterschiedlichen Termini bezeichnet, die nicht zwangsläufig in einfachen Synonym-Relationen zueinander stehen.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor xml:id="z2b1mmlelicq"/>Die Datengrundlage des Handschriftenportals und ihre Herausforderungen
+                </head>
+                <p style="text-align: left; ">Mit diesen Herausforderungen sieht sich auch das von der Deutschen Forschungsgemeinschaft geförderte Handschriftenportal-Projekt (
+                    <ref target="https://handschriftenportal.de/">
+                        <hi rend="underline color(1155CC)">https://handschriftenportal.de/</hi>
+                    </ref>) konfrontiert. Hier wird ein zentrales Nachweisinstrument für Buchhandschriften aus deutschen Sammlungen entwickelt, das sowohl Katalogisate als auch Referenzen auf Digitalisate der nachgewiesenen Handschriften enthält. Zusätzlich zur Präsentation dieser Inhalte wird das Handschriftenportal ein Erfassungsmodul für die Katalogisierung bereitstellen.
+                </p>
+                <p style="text-align: left; ">Im Portal kommen normierte Daten unterschiedlicher Herkunft zum Einsatz: Zum einen werden bereits existierende Normdaten aus der Gemeinsamen Normdatei (GND) (
+                    <ref target="https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd.html">
+                        <hi rend="underline color(1155CC)">https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd.html</hi>
+                    </ref>; Behrens-Neumann 2012) nachgenutzt, um Entitäten wie Personen, Körperschaften, Orte und Sprachen zu referenzieren; zum anderen wird für die ausdifferenzierte, domänenspezifische Terminologie der Handschriftenerschließung eine eigene innovative, ontologiebasierte Lösung implementiert.<ref n="3" target="ftn3"/>
+                </p>
+                <p style="text-align: left; ">Im Feld der Handschriftenkatalogisierung spielen historische, literatur- und sprachwissenschaftliche, musik- und kunstwissenschaftliche Aspekte ebenso eine Rolle wie die historischen Grundwissenschaften Paläographie und Kodikologie. Es sind also Fachtermini aus all diesen Wissenschaftsgebieten vertreten, und oft gibt es auch innerhalb einer Disziplin verschiedene terminologische Traditionen.<ref n="4" target="ftn4"/> Dies führt auf Daten-Ebene zu einer begrifflichen Vielfalt, die im Rahmen der Erstellung normierter Vokabulare abgebildet werden muss. Zusätzlich vergrößert wird diese Vielfalt durch die diachrone Dimension, d.h. durch heute nicht mehr gebräuchliche Fachtermini in alten Katalogisaten.<ref n="5" target="ftn5"/> Zu diesem komplexen Gefüge auf Datenseite tritt aufseiten der Zielcommunity eine Vielfalt von Erwartungen an das Handschriftenportal und seine Suchfunktionalitäten, denn natürlich möchten die Fachexpert:innen genau das finden, was für ihre spezifische Fragestellung relevant ist, und zwar unter Verwendung der ihnen vertrauten Fachterminologie. Die Entwicklung normierter Fachvokabulare für das Handschriftenportal bewegt sich somit in einem Spannungsfeld von möglichst weitgehender Vereinheitlichung und Normierung als Voraussetzung für die Auffindbarkeit von Inhalten einerseits und möglichst weitgehender und flexibler Anpassung an fachliche Traditionen als Voraussetzung für die Akzeptanz des Portals in den wissenschaftlichen Communities andererseits.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor xml:id="p7xxo7mhha8r"/>Methodisches Vorgehen bei der Konzeption und Modellierung normierter Fachvokabulare 
+                </head>
+                <p style="text-align: left; ">Zur Adressierung dieser Herausforderungen und Bedarfe wurde im Handschriftenportal-Projekt ein Konzept für normierte Fachvokabulare entwickelt und innerhalb eines Graphenmodells implementiert. Zunächst wurden die Themenbereiche eingegrenzt, für die ein normiertes Fachvokabular im Portal erforderlich ist. Innerhalb dieser Themenbereiche wird unterschieden zwischen monohierarchischen Thesauri einerseits und komplexen, als Ontologie modellierten Fachbegriffen andererseits (Allemang 2011). Jeder Begriff ist mit einer Notation versehen, die Themenbereich und Thesaurus codiert und zur Bildung der das Normdatum global identifizierenden URI verwendet wird. Für jeden Begriff gibt es zudem eine Übersichtsseite in der Präsentation, die beim Aufrufen der Notation on the fly aus den hinterlegten Daten generiert wird und die wichtigsten Informationen zu diesem Begriff graphisch darstellt.</p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="17.374305555555555cm" url="Pictures/9c14d186c9edb3ab42a727397853cdcc.png" rend="inline"/>
+                    <head>Abbildung 1: Mockup einer graphischen Übersichtsseite zum Fachbegriff „Blindstempeleinband“</head>
+                </figure>
+                <p style="text-align: left; ">Die konkrete Modellierung von Thesaurus- und Fachbegriffen soll im Folgenden beispielhaft am Themenbereich „Einband“ dargestellt werden. Dieser enthält mehrere eigenständige Thesauri, etwa den Thesaurus „Bezugsart”, der angibt, ob und wie die Einbanddeckel (z.B. mit Leder) bezogen sind, und unter anderen folgende Thesaurusbegriffe enthält:</p>
+                <list type="unordered">
+                    <item>Bezug vorhanden
+                        <list type="unordered">
+                            <item>teilweise bezogen</item>
+                            <item>vollständig bezogen</item>
+                            <item>doppelt bezogen</item>
+                        </list>
+                    </item>
+                </list>
+                <p style="text-align: left; ">Die Begriffe innerhalb des Thesaurus sind hierarchisch aufeinander bezogen, stehen aber in keiner direkten Relation zu Begriffen aus anderen Thesauri desselben Themenbereichs. Zur Modellierung der einzelnen Thesauri und ihrer Begriffe wird hauptsächlich das etablierte LOD-Vokabular skos (
+                    <ref target="https://www.w3.org/TR/skos-reference/">https://www.w3.org/TR/skos-reference/</ref>) verwendet, um eine bestmögliche Anschlussfähigkeit an andere Projekte sicherzustellen.
+                </p>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="11.84275cm" url="Pictures/a7b024a2c169d854e5719831f8f056e2.jpg" rend="inline"/>
+                    <head>Abbildung 2: Beispielhafte Modellierung von Thesaurusbegriffen aus dem Themenbereich „Einband“</head>
+                </figure>
+                <p style="text-align: left; ">Die entsprechenden Textabschnitte in den Katalogisaten werden mit den Thesaurusbegriffen verknüpft, indem die URI des Normdatums innerhalb des TEI/XML<ref n="6" target="ftn6"/> des Katalogisats referenziert wird. So könnten etwa die drei untenstehenden Beispiele aus Katalogisaten jeweils mit den Thesaurusbegriffen „Deckelkern-/Umschlagmaterial: Pappe“ und „Bezugsmaterial: Samt“ verknüpft werden:
+                </p>
+                <list type="unordered">
+                    <item>„P[app]b[an]d mit schwarzem Sammet“ (Rose 1901: 4)</item>
+                    <item>„Stark abgenutzter grüner Samteinband auf Pappdeckeln“ (Eifler 2012)</item>
+                    <item>„Purpurroter Samtbezug über Pappe“ (Mazurek 2012)</item>
+                </list>
+                <figure>
+                    <graphic n="1003" width="16.002cm" height="3.8823194444444447cm" url="Pictures/6b709f1ae2c6699f855d777d05e079a7.jpg" rend="inline"/>
+                    <head>Abbildung 3: Beispielhafte Darstellung einer Verknüpfung mit Thesaurusbegriffen im TEI/XML</head>
+                </figure>
+                <p style="text-align: left; ">Bei der Indexierung für die solr<ref n="7" target="ftn7"/>-basierte Suche innerhalb des Handschriftenportals werden alle verfügbaren Informationen zu den referenzierten Normdaten aus dem internen Normdatenservice abgerufen und angereichert, sodass zusätzlich zum ursprünglichen textuellen Inhalt die am Normdatum erfasste Ansetzungsform sowie variante Bezeichnungen indexiert sind. Auf diese Weise wird sichergestellt, dass alle Einträge bei einer Suche nach Einbänden mit den Bestandteilen Pappe und Samt gefunden werden, obwohl sie sich in ihrer natürlichsprachlichen Wortwahl deutlich unterscheiden. Auch das Problem älterer Schreibweisen (hier im ersten Beispiel „Sammet“ für „Samt“) wird durch die Verknüpfung mit dem Thesaurusbegriff gelöst.
+                </p>
+                <p style="text-align: left; ">Bei komplexeren Fällen kann die Verknüpfung mit einzelnen Thesaurusbegriffen allerdings sehr aufwändig werden. Daher liegt es nahe, insbesondere für häufig auftretende Phänomene präkombinierte Begriffe zu modellieren. Gleichzeitig ist es für eine gute Usability wichtig, dass Nutzer:innen nicht nur nach einzelnen, innerhalb der Thesauri definierten Teilaspekten, sondern auch nach etablierten Fachbegriffen suchen können. Diese komplexen Fachbegriffe bilden in jedem Themenbereich einen eigenen, spezifischen Thesaurus, dessen Modellierung den Bereich des klassischen Thesaurus verlässt und ontologische Züge trägt: Dem Fachbegriff werden über verschiedene Relationen diejenigen Begriffe aus den Thesauri des Themenbereichs zugeordnet, durch die er definiert wird; seine Bedeutung erschöpft sich jedoch nicht in der Akkumulation dieser Begriffe. </p>
+                <p style="text-align: left; ">Dies soll am Beispiel des Fachbegriffs „Blindprägeeinband“ verdeutlicht werden. Damit bezeichnet man feste Einbände mit Lederbezug und Verzierung durch Blindprägung. Der Fachbegriff „Blindprägeeinband” ist daher mit „Einbandtyp: fester Einband ohne Klappe“, „Einbandtechnik: Heftung”, „Bezugsmaterial: Leder“ und „Bezugsart: Bezug vorhanden“ verknüpft. Die Verzierung kann dabei sowohl durch ein einziges Werkzeug als auch durch eine Kombination verschiedener Werkzeuge vorgenommen worden sein, daher wird hier eine und/oder-Relation gebildet: „Verzierungsart: Blindprägung“ und/oder „Einzelstempel“ und/oder „Streicheisenlinien“ und/oder „Rolle“ und/oder „Sonstige Blindprägung“. Zudem wird eine Verknüpfung mit der häufig auftretenden, aber nicht zwingenden Eigenschaft „Deckelkern-/Umschlagmaterial: Holz“ vorgenommen. Der so modellierte Fachbegriff „Blindprägeeinband“ könnte etwa mit folgenden, in ihrer natürlichsprachlichen Fassung divergenten Beispielen aus Katalogisaten verknüpft werden:</p>
+                <list type="unordered">
+                    <item>„Alter Holzb[an]d m[it] (br[aunem]) gepr[esstem] L[eder]“ (Rose 1903: 789)</item>
+                    <item>„Brauner Kalbsledereinband mit Blindprägung auf dünnen Holzdeckeln. 1. Hälfte 16. Jh. Flächendeckendes Dekor aus Rollenstempeln […] mit trennenden Streicheisenlinien.“ (Metzger 2011)</item>
+                    <item>„Zeitgenössischer Einband (1493 oder wenig später): Holzdeckeleinband mit dunkelbraunem Lederüberzug, verziert mit Streicheisenlinien und je einem Rollen- und Einzelstempel; Vorder- und Hinterdeckel gleich gestaltet: gerautetes Mittelfeld mit mindestens zwei umlaufenden Rahmen.“ (Sturm 2020)</item>
+                </list>
+                <p style="text-align: left; ">Dem Vorteil, dass der Fachbegriff mit einem Klick verknüpft werden kann, stünde bei einer einfachen Verknüpfung jedoch eine inhaltliche Unschärfe entgegen; oft ist im Katalogisat z.B. angegeben, mit welchen Werkzeugen der Band verziert ist, aber in der Verknüpfung mit dem Fachbegriff „Blindprägeeinband“ wird dies offengelassen. </p>
+                <p style="text-align: left; ">Die Varianz in den konkreten Erscheinungsformen des mit dem Fachbegriff bezeichneten Phänomens wird über die Modellierung der Relationen zwischen Fachbegriff und Thesaurusbegriffen abgebildet. Eigenschaften, die zwingend vorhanden sein müssen, um ein Phänomen mit diesem Fachbegriff zu bezeichnen, werden über die Relation hasKeyFeature („notwendige Merkmale“)<ref n="8" target="ftn8"/> verbunden. Die Erscheinungsformen eines Blindprägeeinbands können sich jedoch durch die verwendeten Werkzeuge (Stempel, Rolle, Streicheisenlinen, sonstige Prägungen) unterscheiden. Diese Varianten werden mit der Relation hasSomeKeyFeaturesFrom („ein oder mehrere notwendige Merkmale aus einer Gruppe“) verbunden, um eine spätere Spezifizierung (z.B. nur Streicheisenlinien) zu ermöglichen. Es gibt aber auch Fälle, in denen Eigenschaften nicht additiv auftreten können, sondern sich gegenseitig ausschließen, etwa bei einem Kettenbuch, dessen Kette noch vorhanden oder entfernt worden sein kann, aber nicht beides gleichzeitig. Solche Varianten werden für die spätere Auswahl mit der Relation hasOneKeyFeatureFrom („genau ein notwendiges Merkmal aus einer Gruppe“) verbunden. Zudem weisen konkrete Erscheinungsformen eines Fachbegriffs oft Eigenschaften auf, die zwar nicht zwingend vorhanden sein müssen, aber sehr verbreitet sind, zum Beispiel die Eigenschaft „Verzierung: Streicheisenlinien“ beim Fachbegriff „Blindstempeleinband“. Diese optionalen Eigenschaften werden mit der Relation hasAdditionalFeature („zusätzliche Merkmale“) verbunden.
+                </p>
+                <figure>
+                    <graphic n="1004" width="16.002cm" height="11.812763888888888cm" url="Pictures/2a49597a17d822edbf3827d6b9815d1d.jpg" rend="inline"/>
+                    <head>Abbildung 4: Mockup einer graphischen Übersichtsseite: Darstellung der Relationen des Fachbegriffs „Blindprägeeinband“</head>
+                </figure>
+                <p style="text-align: left; ">Im Erfassungsmodul werden bei der Verknüpfung eines Fachbegriffs immer alle damit verbundenen Thesaurusbegriffe angezeigt. Die zwingend vorhandenen KeyFeatures sind dabei nicht veränderbar, aber bei den über hasSomeKeyFeaturesFrom, hasOneKeyFeatureFrom und hasAdditionalFeature verbundenen Thesaurusbegriffen können die jeweils nicht zutreffenden Begriffe von den Erschließer:innen abgewählt werden, um die vorliegende Variante zu spezifizieren. Zudem besteht auch die Möglichkeit, weitere, nicht standardmäßig mit dem Fachbegriff verknüpfte Thesaurusbegriffe hinzuzufügen. Alle ausgewählten Thesaurusbegriffe werden neben dem Fachbegriff explizit im TEI/XML des Katalogisats referenziert und können so für die Suche und Filterung innerhalb des Portals berücksichtigt werden. </p>
+                <p style="text-align: left; ">In der Konzeptionsphase der normierten Fachvokabulare spielte die enge Abstimmung mit den jeweiligen Fachcommunities eine zentrale Rolle. So wurde beispielsweise für den Bereich der Musiknotation zunächst auf Basis bereits vorhandener Katalogisate und anderer bestehender Fachdatenbanken ein erster Vorschlag erarbeitet, der 2023 im Rahmen der International Medieval and Renaissance Music Conference (MedRen) in München vorgestellt wurde. Mehrere Musikwissenschaftler:innen haben sich daraufhin an der Entwicklung des Fachvokabulars beteiligt. Dabei wurden sowohl etablierte Professor:innen als auch Early Career-Wissenschaftler:innen eingebunden und unterschiedliche Schwerpunkte bzw. Erfahrungen berücksichtigt.<ref n="9" target="ftn9"/> Von der Fachseite wurde dabei betont, dass das normierte Vokabular in regelmäßigen Abständen kritisch hinterfragt werden müsse, um den Entwicklungen innerhalb der wissenschaftlichen Community Rechnung zu tragen (s. dazu unten, Ergebnisse und Ausblick). Gerade auch in Hinblick auf die Vernetzung mit anderen einschlägigen Datenbanken<ref n="10" target="ftn10"/> ist dies von zentraler Bedeutung. Sofern die technischen Voraussetzungen dafür erfüllt sind, ist perspektivisch auch eine Verlinkung auf verwandte Normdaten in anderen Datenbanken geplant.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor xml:id="jffyztizivwy"/>Ergebnisse und Ausblick
+                </head>
+                <p style="text-align: left; ">Durch den skizzierten Ansatz, die normierten Fachvokabulare im Handschriftenportal als eng geschnittene, hierarchische Thesauri einerseits und komplexe, miteinander nicht zwangsläufig in Beziehung stehende Fachbegriffe andererseits zu modellieren, wird dem Spannungsfeld von fachlich bedingter terminologischer Vielfalt und datenbankseitigem Vereinheitlichungsbedarf Rechnung getragen. Verwandte, aber nicht direkt synonyme Fachbegriffe verschiedener Disziplinen können dabei parallel existieren und die so ausgezeichneten Inhalte können dank der verknüpften detaillierten Thesaurusbegriffe dennoch als gemeinsames Datenset durchsucht werden. Damit ermöglicht die Implementierung der normierten Fachvokabulare im Handschriftenportal eine erhebliche Aufwertung und Verbesserung sowohl der Recherchefunktionalität als auch der Erfassung neuer Katalogisate. In der Recherche profitieren vor allem die Filterfunktionen von den detaillierten Thesaurusbegriffen. Die hierarchisch organisierten Daten können für Filterungen genutzt werden, um bei der Wahl eines allgemeineren Begriffs auch alle spezifischeren Begriffe zu finden. Die Suche nach alternativen Bezeichnungen erweitert zudem die Treffermenge bei heterogenen Bezeichnungen immens. Gleichzeitig wird durch die konkrete Suche nach einem normierten Begriff die Treffermenge präziser. Ergänzend können die Übersichtsseiten der Thesaurus- und Fachbegriffe zu einer Navigation durch die normierten Fachvokabulare genutzt werden und somit bei der Wahl des korrekten Begriffs für die Suche helfen. Eine Suchfunktion innerhalb der Normdaten rundet diesen Weg der Recherche ab. Um ein möglichst einheitliches Rechercheergebnis zu gewährleisten, wird das normierte Vokabular nicht nur für die neuen Katalogisate verwendet – auch die umfangreichen Altdaten werden in halbautomatischen Prozessen mit den neuen Normdaten ausgezeichnet. Hier spielen insbesondere die Fachbegriffe für das Matching von Registereinträgen aus älteren Katalogen eine zentrale Rolle. Der lange Entstehungszeitraum, unterschiedliche Katalogisierungspraktiken und die Verwendung variierender Begrifflichkeiten führen ebenso wie nicht normierte Altdaten aus Vorgängerdatenbanken dazu, dass eine kleinteilige Verknüpfung mit Thesaurusbegriffen in diesen Fällen nicht zu leisten ist. Eine Vereinheitlichung heterogen benannter Phänomene durch Fachbegriffe stellt immer noch eine große Herausforderung dar, erscheint jedoch realistischer und vielversprechender, da deutlich mehr divergierende Registereinträge auf einen Fachbegriff gemappt werden können. </p>
+                <p style="text-align: left; ">Bei der Konzeption und Implementierung der normierten Fachvokabulare wurden auch Aspekte in den Blick genommen, die über den Aufbau des Handschriftenportals hinausgehen. Die Vokabulare müssen langfristig redaktionell gepflegt und an Entwicklungen der Forschung angepasst werden. Dies wurde insbesondere beim modularen Aufbau der Fachvokabulare berücksichtigt: So können etwa neue Fachbegriffe problemlos ergänzt werden. Vorgesehen sind sowohl Melderoutinen für die Fachcommunity, über die Forschende neue Begriffe oder Änderungswünsche an bestehenden Begriffen einbringen können, als auch eine regelmäßige Evaluation der Vokabulare durch die Redaktion des Handschriftenportals, in deren Rahmen etwa durch eine Analyse der vorgenommenen Verknüpfungen problematische Begrifflichkeiten oder auch Differenzierungsbedarfe erkannt und bei der Pflege der Vokabulare berücksichtigt werden können. Darüber hinaus hat das Projekt den Anspruch und das Ziel, die entwickelten normierten Fachvokabulare auch für andere Forschungsszenarien jenseits des Handschriftenportals nachnutzbar zu machen:<ref n="11" target="ftn11"/> Die Begriffe werden mittels etablierter Vokabulare modelliert und verfügen über global auflösbare URIs. So können sie beispielsweise in anderen Datenbanken oder Vokabularen nachgenutzt bzw. referenziert werden. Zudem soll der Export eines Normdaten-Dumps aus dem zugrundeliegenden Knowledge Graphen ermöglicht werden, sodass die Gesamtheit der normierten Begriffe sowie ihre Verknüpfungen zu Kulturobjektdokumenten in anderen Forschungskontexten als Linked Open Data nachgenutzt werden können. Um den Vokabularen auch außerhalb des Portals mehr Sichtbarkeit zu verleihen, ist zudem die Publikation der Vokabulare unter freien Lizenzen auf Forschungsdatenrepositorien sowie deren Nachweis in Repertorien wie BARTOC (
+                    <ref target="https://bartoc.org/">https://bartoc.org/</ref>) oder R:hovono (Freytag et al. (2024) geplant. Damit möchte das Handschriftenportal über seine infrastrukturelle Funktion hinaus einen innovativen Beitrag zur Digital Humanities-Forschung zu vormodernen Buchhandschriften leisten.
+                </p>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                         Contributor Roles: Nicole Eichenberger (Writing – original draft; Writing – review &amp; editing), Torsten Schaßan, Annika Schröer, Ursula Stampfer und Katrin Sturm (Writing – review &amp; editing).
+                    </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                         Ein Beispiel dafür ist etwa Papst Pius II.: 
+                            <ref target="http://d-nb.info/gnd/118594702">
+                                <hi rend="underline color(1155CC)">http://d-nb.info/gnd/118594702</hi>
+                            </ref>.
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn3" n="3">
+                         Die Entscheidung für eine Eigenimplementierung beruht darauf, dass es derzeit zwar Vokabulare für einzelne Fachbereiche (z.B. 
+                            <ref target="https://codicologia.irht.cnrs.fr/">
+                                <hi rend="underline color(1155CC)">https://codicologia.irht.cnrs.fr/</hi>
+                            </ref>; 
+                            <ref target="https://einbaende.digitale-sammlungen.de/Prachteinbaende/Hauptseite">https://einbaende.digitale-sammlungen.de/Prachteinbaende/Hauptseite</ref>), und Begriffslisten für die Filterung in Portalen (z.B. in e-codices: 
+                            <ref target="https://www.e-codices.unifr.ch/de/search/?aSelectedFacets">
+                                <hi rend="underline color(1155CC)">https://www.e-codices.unifr.ch/de/search/?aSelectedFacets</hi>
+                            </ref>) gibt, aber kein durchgehend gleich strukturiertes, frei verfügbares und referenzierbares normiertes Vokabular für alle im Handschriftenportal relevanten Bereiche in der hier benötigten Tiefe und Breite; wo immer möglich, soll jedoch auf bereits existierende Vokabulare referenziert werden. 
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn4" n="4">
+                         So etwa im Bereich der Paläographie die terminologischen “Schulen” von Lieftinck (Derolez 2006) und Bischoff (Schneider 1987; 2009).
+                    </note>
+<note rend="footnote text" xml:id="ftn5" n="5">
+                         Ein Beispiel aus dem Bereich der Musiknotation ist der früher gebräuchliche Begriff „Hufnagelnotation“; in der aktuellen Forschung wird diese Notationsart als “Deutsche Neumen auf Linien” bezeichnet.
+                    </note>
+<note rend="footnote text" xml:id="ftn6" n="6">
+                         Das Handschriftenportal-Projekt verwendet ein spezifisch zugeschnittenes TEI-Schema, s. die Dokumentation unter 
+                            <ref target="https://github.com/handschriftenportal-dev/tei-odd">
+                                <hi rend="underline color(1155CC)">https://github.com/handschriftenportal-dev/tei-odd</hi>
+                            </ref>. 
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn7" n="7">
+                         Die Recherche innerhalb der im Handschriftenportal verfügbaren Handschriften und Katalogisate basiert auf der quelloffenen Suchmaschinenlösung Apache solr, 
+                            <ref target="https://solr.apache.org/">https://solr.apache.org/</ref>.
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn8" n="8">
+                         Hier und bei allen weiteren im Folgenden genannten Relationen handelt es sich um innerhalb des Handschriftenportal-Vokabulars definierte Subproperties von skos:related.
+                    </note>
+<note rend="footnote text" xml:id="ftn9" n="9">
+                         z.B. die Mitarbeit bei der Entwicklung des einschlägigen Thesaurus bei
+                            <ref target="http://fragmentarium.ms" xml:space="preserve"> </ref>
+                            <ref target="http://fragmentarium.ms">
+                                <hi rend="underline color(1155CC)">fragmentarium.ms</hi>
+                            </ref>.
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn10" n="10">
+                         z.B. der Cantus Index (
+                            <ref target="http://cantusindex.org">
+                                <hi rend="underline color(1155CC)">cantusindex.org</hi>
+                            </ref>) und die Cantus Database (
+                            <ref target="http://cantusdatabase.org">
+                                <hi rend="underline color(1155CC)">cantusdatabase.org</hi>
+                            </ref>).
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn11" n="11">
+                         Im Gegensatz dazu werden Normdaten in vergleichbaren Fachportalen (z.B. Handschriftencensus (
+                            <ref target="https://www.handschriftencensus.de/">
+                                <hi rend="underline color(1155CC)">https://www.handschriftencensus.de/</hi>
+                            </ref>), e-codices (
+                            <ref target="https://www.e-codices.unifr.ch/de">
+                                <hi rend="underline color(1155CC)">https://www.e-codices.unifr.ch/de</hi>
+                            </ref>)) zwar für Suche bzw. Filterung genutzt, können aber derzeit nicht exportiert und nachgenutzt werden.
+                        
+                    </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl style="text-align: left; "><hi rend="bold">Allemang, Dean</hi>. 2011. Semantic Web for the working ontologist: Effective modeling in RDFS and OWL. Amsterdam: Morgan Kaufmann/Elsevier.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Behrens-Neumann, Renate</hi>. 2012. “Die Gemeinsame Normdatei (GND). Ein Projekt kommt zum Abschluss
+                        <hi rend="italic">.</hi>” In 
+                        <hi rend="italic" xml:space="preserve">Dialog mit Bibliotheken </hi>24/1: 25-28.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">DFG</hi>. 1992. Richtlinien Handschriftenkatalogisierung. 5. erw. Aufl. Bonn-Bad Godesberg: Deutsche Forschungsgemeinschaft.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Derolez, Albert</hi>. 2006. 
+                        <hi rend="italic">The palaeography of Gothic manuscript books: from the twelfth to the early sixteenth century</hi>. Cambridge: Cambridge Univ. Press.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Eifler, Matthias</hi>. 2012. “Beschreibung von Weimar, Herzogin Anna Amalia Bibliothek, Q 96.” In: 
+                        <hi rend="italic">Die lateinischen Handschriften bis 1600, Bd. 2 Quarthandschriften (Q)</hi>. Wiesbaden: Harrassowitz. 
+                        <ref target="https://resolver.staatsbibliothek-berlin.de/HSP00060D1F00000000">
+                            <hi rend="color(1155CC)">https://resolver.staatsbibliothek-berlin.de/HSP00060D1F00000000</hi>
+                        </ref> (Zugriff: 23.7.2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Freytag, Julian, Katja Liebing, Katrin Moeller, Anne Purschwitz, Olaf Simons, Marius Wegener</hi> (2024). 
+                        <hi rend="italic">Dokumentation zum Register historischer und objektorientierter Vokabulare und Normdaten und Vokabulare (R:hovono) / Documentation on the register of historical and object-orientated vocabularies and authority data and vocabularies (R:hovono)</hi> (1.0). Zenodo. 
+                        <ref target="https://doi.org/10.5281/zenodo.11033367">https://doi.org/10.5281/zenodo.11033367</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Gastgeber, Christian</hi>. 2011. Wie kommt die Ordnung in die Bibliothek? Wissen verwalten. Wien: Phoibos-Verlag.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Glaßner, Christine</hi>. 2015. “Handschriftenkatalogisierung im Zeitalter der Digitalisierung. Eine Annäherung.” In 
+                        <hi rend="italic">Quelle &amp; Deutung II</hi>, hg. von Sára Balász, 11-18. Budapest: Eötvös-József-Collegium. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Jochum, Uwe</hi>. 2010. 
+                        <hi rend="italic">Geschichte der abendländischen Bibliotheken</hi>. Darmstadt: WBG.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Mackert, Christoph, Friederike Berger, Matthias Eifler, Werner Hoffmann, Ulrich Johannes Schneider, Katrin Sturm und Marek Wejwoda</hi>. 2022. 
+                        <hi rend="italic">Handschrift öffne Dich: 20 Jahre Handschriftenzentrum Leipzig</hi>. Leipzig: Universitätsbibliothek. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Mazurek, Agata</hi>. 2012. “Beschreibung von Düsseldorf, Universitäts- und Landesbibliothek Düsseldorf, Ms. C 38”. In 
+                        <hi rend="italic">Die mittelalterlichen Handschriften der Signaturengruppe C in der Universitäts- und Landesbibliothek Düsseldorf</hi>. Wiesbaden: Harrassowitz. 
+                        <ref target="https://resolver.staatsbibliothek-berlin.de/HSP0006B3AE00000000">
+                            <hi rend="color(1155CC)">https://resolver.staatsbibliothek-berlin.de/HSP0006B3AE00000000</hi>
+                        </ref> (Zugriff: 23.7.2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Metzger, Wolfgang</hi>. 2011. “Beschreibung von Stuttgart, Württembergische Landesbibliothek, Cod. Bibl. 8° 6.“ In 
+                        <hi rend="italic">Handschriftenportal</hi>. 
+                        <ref target="https://resolver.staatsbibliothek-berlin.de/HSP00063CEC00000000">https://resolver.staatsbibliothek-berlin.de/HSP00063CEC00000000</ref> (Zugriff 12.11.2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Rose, Valentin</hi>. 1901. “Beschreibung von Berlin, Staatsbibliothek, Ms. theol. lat. oct. 9 (Rose Nr. 224).” In 
+                        <hi rend="italic" xml:space="preserve">Verzeichniss der Lateinischen Handschriften der Königlichen Bibliothek zu Berlin, Zweiter Band: Die Handschriften der Kurfürstlichen Bibliothek und der Kurfürstlichen Lande, Erste Abteilung. </hi>Berlin: Asher, 1901. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Rose, Valentin</hi>. 1903. “Beschreibung von Berlin, Staatsbibliothek, Ms. theol. lat. fol. 225 (Rose Nr. 766).” In 
+                        <hi rend="italic">Verzeichniss der Lateinischen Handschriften der Königlichen Bibliothek zu Berlin, Zweiter Band: Die Handschriften der Kurfürstlichen Bibliothek und der Kurfürstlichen Lande, Zweite Abteilung</hi>. Berlin: Asher. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Schneider, Karin</hi>. 1987. Gotische Schriften in deutscher Sprache. I.: Vom späten 12. Jahrhundert bis um 1300. Textband und Tafelband. Wiesbaden: Reichert Verlag.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Schneider, Karin</hi>. 2009. Gotische Schriften in deutscher Sprache. II.: Die oberdeutschen Handschriften von 1300 bis 1350. Wiesbaden: Reichert Verlag.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Schreiber, Carolin</hi>. 2022. “Handschriftenerschließung im digitalen Zeitalter: Stand, Herausforderungen und Perspektive.” 
+                        <hi rend="italic">Bibliothek und Wissenschaft</hi> 55: 5–26.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Sturm, Katrin</hi>. 2020. “Beschreibung von Karlsruhe, Badische Landesbibliothek, Cod. Donaueschingen 356.” In 
+                        <hi rend="italic">Handschriftenportal.</hi>
+                        <ref target="https://resolver.staatsbibliothek-berlin.de/HSP00062FFF00000000">https://resolver.staatsbibliothek-berlin.de/HSP00062FFF00000000</ref> (Zugriff: 12.11.2024).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Wagner, Bettina</hi>. 2009. “Handschriftenerschließung in Deutschland. Vom gedruckten Katalog zum Informationssystem.” In 
+                        <hi rend="italic">Katalogisierung mittelalterlicher Handschriften. Methoden und Ergebnisse</hi>, hg. von Bettina Wagner, 3-7. Berlin: Akademie-Verlag.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

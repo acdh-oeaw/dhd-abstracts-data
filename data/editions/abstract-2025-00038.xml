@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="BURGHARDT_Manuel__Buchkindheiten_digital____Werkstattbericht">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>„Buchkindheiten digital“ – Werkstattbericht zur computergestützten Analyse von Illustrationen in historischen Kinder- und Jugendbüchern</title>
+                <author>
+                    <persName>
+                        <surname>Helm</surname>
+                        <forename>Wiebke</forename>
+                    </persName>
+                    <affiliation>Grundschuldidaktik Deutsch, Universität Leipzig, Deutschland</affiliation>
+                    <email>wiebke.helm@uni-leipzig.de</email>
+                    <idno type="ORCID">0000-0001-6856-9154</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Borst</surname>
+                        <forename>Janos</forename>
+                    </persName>
+                    <affiliation>Computational Humanities, Universität Leipzig, Deutschland</affiliation>
+                    <email>borst@informatik.uni-leipzig.de</email>
+                    <idno type="ORCID">0000-0002-9166-4069</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Burghardt</surname>
+                        <forename>Manuel</forename>
+                    </persName>
+                    <affiliation>Computational Humanities, Universität Leipzig, Deutschland</affiliation>
+                    <email>burghardt@informatik.uni-leipzig.de</email>
+                    <idno type="ORCID">0000-0003-1354-9089</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schmideler</surname>
+                        <forename>Sebastian</forename>
+                    </persName>
+                    <affiliation>Grundschuldidaktik Deutsch, Universität Leipzig, Deutschland</affiliation>
+                    <email>sebastian.schmideler@uni-leipzig.de</email>
+                    <idno type="ORCID">0000-0001-8276-0043</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-07-24T08:35:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Vortrag: Computergestützte Analyse oder Interpretation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Distant Viewing</term>
+                    <term>Kinder- und Jugendbücher</term>
+                    <term>Illustrationen</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Bilderfassung</term>
+                    <term>Inhaltsanalyse</term>
+                    <term>Bilder</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung</head>
+                <p>Nicht nur unsere Gegenwart befindet sich 
+                    <hi rend="italic">under construction</hi>, auch das lange 19. Jahrhundert zeichnete sich durch eine Vielzahl und Vielfalt von sichtbaren Umbrüchen aus, sei es mit Innovationen auf naturwissenschaftlich-technischem und wirtschaftlichem Gebiet, sei es im gesellschaftlichen Bereich (vgl. z.B. Osterhammel 2020; Kocka 2021). Dieser Wandel widerspiegelt sich auch in der zeitgenössischen Kinder- und Jugendliteratur. Sie bildet sowohl auf Text- als auch auf Bildebene die Wertvorstellungen ihrer Zeit ab und gibt wichtige gesellschaftliche Diskurse wieder. 
+                </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Colibri – Corpus Libri et Liberi</head>
+                    <p>Mit dem Korpus 
+                        <hi rend="italic">Colibri („Corpus Libri et Liberi“)</hi><ref n="1" target="ftn1"/> liegt für diesen Untersuchungsgegenstand eine, was Umfang und Abdeckung angeht, einzigartige Ressource vor. Konkret handelt es sich bei 
+                        <hi rend="italic">Colibri</hi> um eine bibliothekarisch voll erschlossene digitale Sammlung deutschsprachiger Kinder- und Jugendbücher unterschiedlicher Autor:innen, Genres, Auflagen und Ausgaben aus den Jahren 1801 bis 1914 (Putjenter 2022). Seit 2021 digitalisieren hierfür mit wissenschaftlicher Beratung die Staatsbibliothek zu Berlin, die Universitätsbibliotheken der TU Braunschweig und Bielefeld sowie die Internationale Jugendbibliothek München eine große Auswahl ihres historischen Bestandes an Kinder- und Jugendliteratur. Demnächst sollen 15.000 Titel als repräsentatives Korpus (Hermann/ Lauer 2018, 136-140) die bislang in VD 18, 
+                        <hi rend="italic">WegehauptDigital</hi> und 
+                        <hi rend="italic">Europeana 1914‒1918</hi> vorliegenden Volldigitalisate von Kinder- und Jugendbüchern um ein Vielfaches erweitern und eine ideale Datengrundlage für die Erforschung mit Methoden der Digital Humanities bilden. 
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Projektkontext: „Buchkindheiten digital“</head>
+                    <p>Ausgewählte Umbrüche und ihre Darstellung in Illustrationen als essentiellen Bestandteil von Kinder- und Jugendliteratur sichtbar zu machen und ihre Verschiebungen im Verlauf eines Säkulums nachzuzeichnen, ist Aufgabe des Forschungsprojekts “Buchkindheiten digital. Innovationspotenziale skalierbarer Bildanalyseverfahren für Wissenskulturen des Kinder- und Jugendbuchs des langen 19. Jahrhunderts”, das hierfür aktuelle Verfahren aus dem Bereich der computergestützten Bildanalyse im Sinne des Distant Viewing (Taylor/Arnold 2023) erprobt. </p>
+                    <p>Der Analysefokus liegt dabei auf Bildszenen von Kindheit und Jugend, d.h. auf personellen Konstellationen des Lernens und Spielens einschließlich des Repertoires an Lehr- und Spielmitteln. Dadurch sollen Entwicklungstendenzen und Veränderungen in den Vorstellungen von Kindheit und Jugend sowie der Ausbildung und Auflösung von Stereotypen im Hinblick auf Alter, Geschlecht und sozialer Schicht aufgezeigt, nachvollzogen und in den gesellschaftspolitischen und bildungspädagogischen Kontext gestellt werden. Mit der computergestützten Erschließung des Bildprogramms soll darüber hinaus ein Beitrag zur Neuordnung unseres Verständnisses vom lesenden und spielenden Kind geleistet und die Überprüfung bislang primär textbasierter Erkenntnisse der kulturhistorischen und bildungswissenschaftlichen Forschung vorgenommen werden. An den Illustrationen aus dem Korpus 
+                        <hi rend="italic">Colibri</hi>, die größtenteils auf Reproduktionstechniken wie Kupferstich, Xylografie und Lithografie beruhen, werden dafür beispielhaft neueste Distant Viewing-Ansätze getestet und ihre Potenziale ausgelotet.
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Verwandte Arbeiten</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>
+                        Distant Reading und Citizen Science-Ansätze
+                    </head>
+                    <p>Die digitale Analyse von historischen Texten und Quellen ist bisher kaum für die Kinder- und Jugendliteratur sowie die Schullesebücher erfolgt und nur ansatzweise erprobt. Neben dem Projekt “Welt der Kinder” (2014-2017), das am Georg Eckert Institut für Schulbuchforschung Braunschweig durchgeführt wurde und bei dem die Texte von rund 3.800 Schulgeschichts- und Kinderbüchern aus dem 19. Jahrhundert hinsichtlich ihrer semantischen Felder zum Wissen von Mädchen und Jungen von der Welt mit Verfahren wie Topic Detection und Opinion Mining untersucht wurden (Heuwing/Weiß 2018, Nieländer/Weiß 2018), sind einige wenige weitere Forschungsarbeiten zu erwähnen, die zudem die Illustrationen dieser Buchgattung berücksichtigen.</p>
+                    <p>Mit Bertuchs “Bilderbuch für Kinder” (1790-1830), einem für die Genese der Kinder- und Jugendliteratur bedeutenden Werk, das sich durch seine für die Entstehungszeit außergewöhnlich reiche illustrative Ausstattung auszeichnet, befasst sich in einer virtuellen Forschungsumgebung “Interlinking Pictura”. Das von der Bibliothek für Bildungsgeschichtliche Forschung 2017 initiierte und mittlerweile zum Citizen Science-Projekt avancierte Forschungsunternehmen hat alle 1.180 Bildtafeln des 12-bändigen Werks mit ihren über 6.000 Bildobjekten unterschiedlichen thematischen Inhalts annotiert, mit anderen Quellen in Beziehung gesetzt und als Wiki-Inhalte aufbereitet. Dadurch konnten Ähnlichkeiten und Bezüge zu anderen Veröffentlichungen aufgedeckt und das bisherige Wissen über das Werk und seinen Inhalt angereichert werden (Kollmann 2021, Hocker u.a. 2021).</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Machine Learning-Ansätze für die Bildanalyse</head>
+                    <p>Mit mehr als nur einem Werk und seinen Illustrationen befasste sich das Projekt „Entwicklung der Bildikonographie in Wissen vermittelnder Kinder- und Jugendliteratur des 19. Jahrhunderts” (2017-2020). Es widmete sich den Illustrationen in rund 2.600 historischen Kinder- und Jugendsachbüchern aus den digitalen Kinderbuchsammlungen 
+                        <hi rend="italic">WegehauptDigital</hi> der Staatsbibliothek zu Berlin und der Universitätsbibliothek Braunschweig und unternahm den Versuch, mit Verfahren des Distant Viewing die visuelle Repräsentation von naturwissenschaftlichem und technischem Wissen in diesen Büchern zu erfassen. Dafür mussten zunächst verschiedene Vorarbeiten durchgeführt werden, wie beispielsweise die händische Auszeichnung von 200 Bildern, denn aufgrund unterschiedlicher Metadatenformate war keine automatische Bilddatenextraktion möglich. Außerdem musste ein CNN für maschinelles Lernen darauf trainiert werden, Bilder von anderen Elementen, wie z.B. Schrifttext, zu unterscheiden. Zudem erschwerte die Qualität der Digitalisate und der Bilder die Datenaufbereitung. Hinzu kamen Probleme und Fehlzuweisungen in der Objekterkennung mit Hilfe von Computer Vision Algorithmen, v.a. beim Bestimmen zeitgemäßer Objekte und den für das Kinderbuch typischen und häufig auftretenden anthropomorphen Figuren (Im et al. 2018, Mitera u.a. 2021), die aus heutiger Sicht, wie nachfolgend gezeigt wird, einfacher zu lösen sind.
+                    </p>
+                    <p>Einen anderen inhaltlichen Akzent setzen die seit 2019 an der Universität Antwerpen durchgeführten Untersuchungen zur Darstellung von Alter im Kinderbuch. Wurde zunächst im Projekt „Constructing age for young readers“ in einer Kombination von Close und Distant Reading die Herkunft von diskriminierenden Alterskonstruktionen und -normen im historischen niederländischsprachigen Kinderbuch aufgedeckt, erweitern nun zwei Folgeprojekte die Perspektive auf die Illustrationen der Kinderbücher. Das Projekt „Understanding ideological bias through data-driven methods: testing cognitive learning processes through intersectional analysis of past data“ untersucht mit Computer Vision Tools das Bildmaterial hinsichtlich der Verbreitung von Vorurteilen nicht nur für die Kategorie Alter, sondern auch für Geschlecht, soziale Herkunft und ethnische Zugehörigkeit. Paavo van der Eecken betrachtet diese Kategorien in seinem PhD-Projekt „Biased books: A data-driven analysis of representation in illustrated children’s literature in the low countries“ an 3.000 illustrierten niederländischsprachigen Kinderbüchern des Zeitraums 1800 bis 1940 mit Methoden des Distant Viewing und des Distant Reading. Beide Projekte nutzen dafür ausgewählte Machine Learning-Modelle, die nachweislich soziale Vorbehalte modellieren.</p>
+                    <p>Die beiden letztgenannten Forschungsarbeiten schließen an aktuelle Entwicklungen zur computergestützten Bildanalyse und zum maschinellen Lernen an, die in den letzten Jahren beeindruckende Fortschritte erzielt und die zuvor geschilderten Schwierigkeiten der automatischen Bildauszeichnung größtenteils überwunden haben. Die Einführung des Vision Transformers (Dosovitskiy 2020) und die Verfügbarkeit multi-modaler Modelle bis hin zu zero-shot Modellen wie etwa CLIP (Radford 2021), YoloWorld (Chen 2024) oder ChatGPT<ref n="2" target="ftn2"/> ermöglichen es heute, Analysen von Bildmaterial wesentlich effektiver und dateneffizienter durchzuführen. Smits et al. (2022) haben im skizzierten Antwerpener Projekt gezeigt, dass diese Methoden auch in der Anwendung auf historische Kinder- und Jugendbücher gute Ergebnisse erzielen, ohne vorher in der speziellen Domäne trainiert worden zu sein. 
+                    </p>
+                    <p>Hier knüpft unser Forschungsprojekt „Buchkindheiten digital“ methodisch an. Im Folgenden zeigen wir auf, wie aktuelle Modelle aus dem Bereich des maschinellen Lernens für das eingangs beschriebene Korpus 
+                        <hi rend="italic">Colibri</hi> eingesetzt werden können, um automatisiert Lese-, Lern- und Spielszenen zu detektieren und zu vermessen. Für die Analyse der Illustrationen im Korpus 
+                        <hi rend="italic">Colibri</hi> bedarf es eines zweistufigen Workflows. Im ersten Schritt wird dabei zunächst ein Filteransatz für die Detektion von Bildseiten innerhalb der mehr als 11.000 Titeln des Korpus 
+                        <hi rend="italic">Colibri</hi> mit insgesamt etwa 2,2 Millionen Seiten erarbeitet. Im zweiten Schritt soll sodann mit Ansätzen zur computergestützten Erfassung und Analyse von Lese-, Lern- und Spielszenen gearbeitet werden. Der vorliegende Beitrag fokussiert zunächst Schritt 1 dieses Workflows, während Schritt 2 
+                        <hi rend="italic">work in progress</hi> ist, den wir im Ausblick entsprechend thematisieren.
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                   Detektion von illustrierten Buchseiten und Bucheinbänden im Korpus 
+                    <hi rend="italic bold" style="font-size:14pt">Colibri</hi>
+                </head>
+                <p>
+                    <anchor xml:id="dc0x4ez4uzo7"/>
+                    <anchor xml:id="acyuugrrtfgu"/>Da wir uns für die Beantwortung unserer Forschungsfragen auf die Illustrationen konzentrieren werden, müssen zunächst einmal innerhalb des Datensets diejenigen Seiten identifiziert werden, die Bildinformationen enthalten. Dazu zählen neben den in Frage kommenden Buchseiten auch der gestaltete Bucheinband sowie illustrierte Vorsatzblätter. Die Detektion von Seiten mit Illustrationen behandeln wir als Bildklassifikationsproblem, wobei jeder Einzelseite genau ein Label zugeordnet wird. Für die Erstellung eines Trainingssets wurden zunächst 1.000 zufällig ausgewählte Bildseiten aus dem Korpus 
+                    <hi rend="italic">Colibri</hi> annotiert und in folgende drei Klassen eingeteilt: 
+                </p>
+                <list type="unordered">
+                    <item>
+                        <hi rend="italic">non-relevant</hi>, für Seiten die keinerlei Illustrationen enthalten
+                    </item>
+                    <item>
+                        <hi rend="italic">relevant-page</hi>, für Buchseiten mit Bildanteil (hierunter fallen ganzseitige Bildtafeln und Einschaltbilder, aber auch Vorsatzpapiere, Vignetten, Embleme, Ornamente und Initialen, sofern sie kein Schmuckelement sind, sondern titelbezogene Informationen beinhalten) 
+                    </item>
+                    <item>
+                        <hi rend="italic">relevant-cover</hi>; erfasst wurde der vordere oder rückwärtige Bucheinband, sobald er eine inhaltlich relevante Bildinformation aufweist und nicht nur eine Schmuckfunktion erfüllt
+                    </item>
+                </list>
+                <p>Hieran schloss sich das Finetuning eines vortrainierten Vision Transformers an. Als Basismodell wurde eine Variante des DeiT-ViT<ref n="3" target="ftn3"/> verwendet, die im Gegensatz zu kompetitiven Varianten (Touvron 2021) bei hoher Performanz einen höheren Durchsatz erlaubt, was hinsichtlich der oben genannten Datenmenge einen Vorteil bietet. Das Modell trainiert für 20 Epochen mit einer Batchgröße von 16 und einer anfänglichen Lernrate von 5e-6. Angesichts des Ziels, so viele Illustrationen wie möglich zu finden, wurde am Ende die Iteration des Modells gewählt, die den höchsten Recall für relevante Seiten und Cover hatte.
+                </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Evaluationsergebnisse</head>
+                    <p>Abbildung 1 zeigt die Ergebnisse des Modells aus dem Validierungsset. Speziell die Ergebnisse hinsichtlich der Erkennung relevanter Seiten stimmen zuversichtlich in Bezug auf die Repräsentativität des finalen Datensatzes. Das finale Modell ist auf Huggingface verfügbar.<ref n="4" target="ftn4"/>
+                    </p>
+                    <figure>
+                        <graphic n="1001" width="12.97021111111111cm" height="2.381875cm" url="Pictures/7fcca3b805279a27ea5a45fbd8370c78.png" rend="inline"/>
+                        <head>Metriken für das optimierte DeiT-ViT-Modells aus dem Validierungsset am Ende des Trainings.
+                            <anchor xml:id="g1x0wh6wsnzk"/>
+                        </head>
+                    </figure>
+                    <p>
+                        <anchor xml:id="un53j59k06n7"/>Eine nachgeschaltete qualitative Evaluation von 4.000 Samples (2.000 der relevanten und 2.000 der nicht-relevanten Beispiele) zeigt auf, dass die Erkennung von Buch-Covern mit Illustrationen in der Praxis deutlich schlechter funktioniert als es die obigen Metriken verheißen. Eine mögliche Erklärung dafür ist die geringe Verfügbarkeit von grafisch gestalteten Bucheinbandseiten in den Trainingsdaten. Bei der manuellen Durchsicht fällt allerdings ebenfalls auf, dass relevante Cover von den nicht-relevanten schwieriger auseinander zu halten waren als relevante von nicht-relevanten Buchseiten. So wurden bei Covern etwa auch Prägungen oder Bucheinbände mit Überzugspapieren wie Bunt-, Marmor oder Rizzi-Papier des Öfteren als Illustration fehlinterpretiert. 
+                    </p>
+                    <p>Die qualitative Evaluation zeigte darüber hinaus bei Buchseiten, dass es zu fehlerhaften Zuordnungen kommt, wenn Durchbrüche im Papier aufgrund von Schädlingsbefall den Eindruck eines Bildes suggerieren und ebenso zur Deklaration als 
+                        <hi rend="italic">relevant-page</hi> führen wie Vorsatzpapiere aus Buntpapier oder typografisch stark gestaltete Textseiten. Eine positive Erkenntnis der qualitativen Evaluation war, dass lediglich zweimal das Durchscheinen eines Bildes der 
+                        <hi rend="italic">recto</hi>- bzw. 
+                        <hi rend="italic">verso</hi>-Seite fälschlicherweise als 
+                        <hi rend="italic">relevant-page</hi> zugeordnet wurde. Insgesamt funktioniert der Ansatz bereits sehr gut, muss aber für die identifizierten Problemfelder im nächsten Schritt nochmals nachtrainiert werden.
+                        <anchor xml:id="xb355kjfow6r"/>
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Vorläufige Ergebnisse der Filterung</head>
+                    <p>Die bisherige Filterung liefert zunächst 181.903 illustrierte Buchseiten und 11.252 illustrierte Bucheinbände. Hieraus lassen sich bereits erste interessante Beobachtungen zur diachronen Entwicklung der Seitenzahl von Titeln und insbesondere der Zahl illustrierter Seiten machen (vgl. Abbildung 2). </p>
+                    <p>So ist etwa erkennbar, dass die durchschnittliche Seitenzahl der Titel eine leicht fallende Tendenz hat: Während zwischen 1800 und 1810 der durchschnittliche Seitenumfang eines Kinder- oder Jugendbuchtitels noch bei 277 Seiten lag, betrug er zwischen 1900 und 1910 bei einer vergleichsweise höheren Titelproduktion nur noch 172 Seiten (vgl. Abbildung 2, oben). Zeitgleich ist ein Anstieg des Anteils an illustrierten Buchseiten von ca. 1,6% auf 12,3% zu verzeichnen (vgl. Abbildung 2, unten), was in engem Zusammenhang mit den Fortschritten in der technischen Herstellung steht, die im zweiten Drittel des 19. Jahrhunderts einsetzen und einen weiteren Aufschwung in den letzten Jahrzehnten vor 1900 erleben. Zum anderen unterstreicht dieses Ergebnis aber auch die zunehmende Bedeutung der Illustration als Anschauungsmedium im Kinder- und Jugendbuch. Hierin zeichnet sich bereits ab, dass die Kinder- und Jugendliteratur keine unbedeutende Rolle beim Aufbruch in das visuelle Zeitalter (Paul 2016) hatte, die es im Weiteren nun mit close und scalable viewing-Verfahren aufzudecken gilt.</p>
+                    <figure>
+                        <graphic n="1002" width="16.002cm" height="3.0744583333333333cm" url="Pictures/330c8762407c57875b7de832af1a113d.png" rend="inline"/>
+                        <head>Diachrone Verteilung des Seitenumfangs (obere Zeitreihe in Lila) und der illustrierten Seiten pro Buchtitel (untere Zeitreihe in Gelb) im Korpus 
+                            <hi rend="italic" xml:space="preserve">Colibri </hi>für den Untersuchungszeitraum des langen 19. Jahrhunderts.
+                        </head>
+                    </figure>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Ausblick</head>
+                <p>Nach der Auszeichnung relevanter Seiten sollen im zweiten Schritt zur Erforschung von Lese-, Lern- und Spielverhalten entsprechende Bildszenen erfasst und beschrieben werden. In den extrahierten Illustrationen werden dazu relevante Objekte und Konstellationen detektiert. Anschließend sollen sie über den gesamten Zeitverlauf beschrieben und genauer analysiert werden. Aus der Vielzahl der bestehenden Ansätze untersuchen wir insbesondere Verfahren der 
+                    <hi rend="italic">image classification</hi> sowie auch der 
+                    <hi rend="italic">object detection</hi>. 
+                </p>
+                <p>Nach ersten Versuchen liefern generative Modelle wie ChatGPT hier sehr vielversprechende Ergebnisse, sind sie doch in der Lage, auch komplexe Szenen zu interpretieren und für uns relevante Informationen zu erkennen (vgl. Abbildung 3).</p>
+                <figure>
+                    <graphic n="1003" width="12.78106388888889cm" height="9.424777777777777cm" url="Pictures/0d0f7bde6d018f1ca11b2aa264d6aa19.png" rend="inline"/>
+                    <head>
+                        <anchor xml:id="ptw069i056bt"/>Beispielhafte Analyse einer typischen Lehrszene mittels ChatGPTo.
+                    </head>
+                </figure>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                             https://colibri-portal.eu/
+                        </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                            
+                                <hi style="font-size:10pt" xml:space="preserve"> https://openai.com/index/chatgpt/</hi>
+                            
+                        </note>
+<note rend="footnote text" xml:id="ftn3" n="3">
+                        
+                            <hi style="font-size:10pt">facebook/deit-base-patch16-384</hi>
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn4" n="4">
+                            
+                                <hi style="font-size:10pt" xml:space="preserve"> https://huggingface.co/jabo/deit-base-page-filter</hi>
+                            
+                        </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Arnold, Taylor and Lauren Tilton</hi>. 2023. 
+                        <hi rend="italic" style="font-size:10pt">Distant viewing. Computational exploration of digital images</hi>
+                        <hi style="font-size:10pt">. Cambridge: The MIT Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Cheng, Tianheng, Lin Song, Yixiao Ge, Wenyu Liu, Xinggang Wang and Ying Shan</hi>. 2024. “YOLO-World: Real-Time Open-Vocabulary Object Detection.” 
+                        <hi rend="italic color(1F2328)" style="font-size:10pt">Proceedings IEEE Conference Computer Vision and Pattern Recognition (CVPR)</hi>
+                        <hi style="font-size:10pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Dosovitskiy, Alexey, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit and Neil Houlsby</hi>. 2021. “An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale.” 
+                        <hi rend="italic" style="font-size:10pt">9th International Conference on Learning Representations, (ICLR).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Herrmann, Berenike J. und Gerhard Lauer</hi>. 2018. “Korpusliteraturwissenschaft. Zur Konzeption und Praxis am Beispiel eines Korpus zur literarischen Moderne.”
+                        <hi rend="italic" style="font-size:10pt">Osnabrücker Beiträge zur Sprachtheorie 92</hi>
+                        <hi style="font-size:10pt">, 127-156.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Heuwing, Ben und Andreas Weiß</hi>. 2018. “Suche und Analyse in großen Textsammlungen: Neue Werkzeuge für die Schulbuchforschung.” In 
+                        <hi rend="italic" style="font-size:10pt">Digital Humanities in der internationalen Schulbuchforschung</hi>
+                        <hi style="font-size:10pt">, hg. von Maret Nieländer und Ernesto William de Luca, 145-169, Göttingen: V&amp;R unipress.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hocker, Julian, Cornelia Veja, Christoph Schindler und Marc Rittberger</hi>. 2021. “Potenziale von
+                        <hi rend="italic" style="font-size:10pt">Citizen Science</hi>
+                        <hi style="font-size:10pt" xml:space="preserve"> in der historischen Schulbuchforschung. Das Beispiel </hi>
+                        <hi rend="italic" style="font-size:10pt">Interlinking Pictura</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">.” In </hi>
+                        <hi rend="italic" style="font-size:10pt">BildWissen – KinderBuch. Historische Sachliteratur für Kinder und Jugendliche und ihre digitale Analyse</hi>
+                        <hi style="font-size:10pt">, hg. von Sebastian Schmideler und Wiebke Helm, 263-275, Berlin: J.B. Metzler.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Im, Chanjong, Thomas Mandl, Wiebke Helm und Sebastian Schmideler</hi>. 2018. “Automatic Image Processing in the Digital Humanities. A Pre-Study for Children’s Books in the 19th Century.” In 
+                        <hi rend="italic" style="font-size:10pt">Picture archives and the emergence of visual history of education. ISCHE 40 pre-conference workshop</hi>
+                        <hi style="font-size:10pt">, eds. Stefanie Kollmann et al., 77-86, Berlin: BBF.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kocka, Jürgen</hi>. 2021. 
+                        <hi rend="italic" style="font-size:10pt">Kampf um die Moderne. Das lange 19. Jahrhundert in Deutschland.</hi>
+                        <hi style="font-size:10pt" xml:space="preserve"> Stuttgart: Klett-Cotta.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kollmann, Stefanie</hi>. 2021. Bild, Text, Metadaten. Digitale Rekontextualisierung von Bertuchs Bilderbuch für Kinder. In 
+                        <hi rend="italic" style="font-size:10pt">BildWissen – KinderBuch. Historische Sachliteratur für Kinder und Jugendliche und ihre digitale Analyse</hi>
+                        <hi style="font-size:10pt">, hg. von Sebastian Schmideler und Wiebke Helm, 99-111, Berlin: J.B. Metzler.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mitera, Hannah, Chanjong Im, Thomas Mandl und Christa Womser-Hacker</hi>. 2021. “Objekterkennung in historischen Bilderbüchern. Eine Evaluierung des Potenzials von Computer-Vision-Algorithmen.” In 
+                        <hi rend="italic" style="font-size:10pt">BildWissen – KinderBuch. Historische Sachliteratur für Kinder und Jugendliche und ihre digitale Analyse</hi>
+                        <hi style="font-size:10pt">, hg. von Sebastian Schmideler und Wiebke Helm, 137-150, Berlin: J.B. Metzler.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Nieländer, Maret und Andreas Weiß</hi>. 2018. “
+                        <hi rend="italic" style="font-size:10pt">Schönere Daten</hi>
+                        <hi style="font-size:10pt" xml:space="preserve"> - Nachnutzung und Aufbereitung für die Verwendung in Digital-Humanities-Projekten. In </hi>
+                        <hi rend="italic" style="font-size:10pt">Digital Humanities in der internationalen Schulbuchforschung</hi>
+                        <hi style="font-size:10pt">, hg. von Maret Nieländer und Ernesto William de Luca, 91-116, Göttingen: V&amp;R unipress.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Osterhammel, Jürgen</hi>. 2020. 
+                        <hi rend="italic" style="font-size:10pt">Die Verwandlung der Welt. Eine Geschichte des 19. Jahrhunderts</hi>
+                        <hi style="font-size:10pt">. 6. Aufl. München: C.H. Beck.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Paul, Gerhard</hi>. 2016. 
+                        <hi rend="italic" style="font-size:10pt">Das visuelle Zeitalter. Punkt und Pixel.</hi>
+                        <hi style="font-size:10pt" xml:space="preserve"> Göttingen: Wallstein.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Putjenter, Sigrun</hi>. 2022. “Colibri – Klein, flink, bunt. Ein Digitalisierungsprojekt der Universitätsbibliotheken Bielefeld und Braunschweig, der Staatsbibliothek zu Berlin und der Internationalen Jugendbibliothek München.” In 
+                        <hi rend="italic" style="font-size:10pt">Bibliotheksmagazin. Mitteilungen aus den Staatsbibliotheken in Berlin und München</hi>
+                        <hi style="font-size:10pt" xml:space="preserve"> 17/2, 5-8.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Radford, Alec, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal,Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and I. Sutskever</hi>. 2021. “Learning Transferable Visual Models From Natural Language Supervision.” In 
+                        <hi rend="italic" style="font-size:10pt">International Conference on Machine Learning, PMLR. 139, 8748-8763</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Smits, Thomas, Paavo van der Eecken and Vanessa Joosen</hi>. 2022. “Using CLIP to extract and analyze images of the family in 3,000 Dutch-language children’s books, 1800–1940.” In 
+                        <hi rend="italic" style="font-size:10pt">DH Benelux.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Touvron, Hugo, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre Sablayrolles, and Herve Jegou</hi>. 2021. “Training Data-Efficient Image Transformers and Distillation through Attention.” In 
+                        <hi rend="italic" style="font-size:10pt">Proceedings of the 38th International Conference on Machine Learning</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">, </hi>
+                        <hi rend="italic" style="font-size:10pt">ICML.</hi>
+                        <hi style="font-size:10pt" xml:space="preserve"> 10347-10357.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

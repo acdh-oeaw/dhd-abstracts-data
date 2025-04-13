@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="G_TTEL_Sebastian_Reddit_als__Text__Ressource__Erstellung_und">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Reddit als (Text-)Ressource: Erstellung und Nachnutzbarkeit eines deutschsprachigen Reddit-Korpus</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Göttel</surname>
+                        <forename>Sebastian</forename>
+                    </persName>
+                    <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland</affiliation>
+                    <email>sebastian.goettel@bbaw.de</email>
+                    <idno type="ORCID">0000-0002-8590-7730</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Körber</surname>
+                        <forename>Lydia</forename>
+                    </persName>
+                    <affiliation>Universität Heidelberg, Deutschland</affiliation>
+                    <email>lydiaekoerber@gmail.com</email>
+                    <idno type="ORCID">0000-0002-8937-3799</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Barbaresi</surname>
+                        <forename>Adrien</forename>
+                    </persName>
+                    <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland</affiliation>
+                    <email>barbaresi@bbaw.de</email>
+                    <idno type="ORCID">0000-0002-8079-8694</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-07-24T13:46:42.132136107</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Korpus</term>
+                    <term>TEI-XML</term>
+                    <term>Python</term>
+                    <term>Digital Humanities</term>
+                    <term>Social Media</term>
+                    <term>Reddit</term>
+                    <term>DWDS</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Umwandlung</term>
+                    <term>Programmierung</term>
+                    <term>Bereinigung</term>
+                    <term>Daten</term>
+                    <term>Sprache</term>
+                    <term>Werkzeuge</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading2">
+                <head>
+                    <anchor xml:id="id__t102j1bnzb6o"/>Hintergrund
+                </head>
+                <p>
+                    <hi rend="sup"><ref n="1" target="ftn1"/>
+                    </hi> Reddit
+                    <hi rend="sup"><ref n="2" target="ftn2"/>
+                    </hi> gehört mit durchschnittlich über 7 Milliarden Aufrufen pro Monat
+                    <hi rend="sup"><ref n="3" target="ftn3"/>
+                    </hi> zu den weltweit am meisten besuchten Webseiten. Die Plattform kombiniert Elemente eines Forums und eines sozialen Mediums und fungiert als Social-News-Aggregator, auf dem Nutzer:innen Texte, Links, Videos und Bilder teilen können. In Subreddits, thematisch spezialisierten Foren, können Nutzer:innen Inhalte teilen und diskutieren. Jedes Subreddit widmet sich einem spezifischen Thema oder Interessenbereich, von allgemeinen Themen wie Nachrichten und Technologie bis hin zu sehr spezifischen Hobbys oder kulturellen Nischen.
+                </p>
+                <p>Als Korpus weicht Reddit in vielfacher Hinsicht von traditionellen Textkorpora, wie etwa einem Roman- oder Zeitungskorpus, ab. Die Sprache zeichnet sich durch einen hohen Grad konzeptioneller Mündlichkeit aus. Dies äußert sich in einer dialogischen und teilweise umgangssprachlichen Kommunikationsform. Zudem bietet das Korpus eine breite Palette sprachlicher Phänomene und eine erhebliche Variabilität des Wortschatzes, einschließlich Neologismen, fachspezifischer Terminologien und Jargon, die in formellen Texten typischerweise unterrepräsentiert sind. Darüber hinaus lassen sich Belege für regionale und soziolektale Varietäten finden, die von umgangssprachlichen bis hin zu mehr formalisierten Diskursformen reichen, sowie andere pragmatische Aspekte des Sprachgebrauchs. Neben linguistischen Fragestellungen eignet sich das Korpus auch für Forschungen in anderen (Teil-)Disziplinen. Es stellt eine interessante Ressource für die Digital Humanities dar und bietet breite Möglichkeiten für weiterführende Untersuchungen.</p>
+            </div>
+            <div type="div1" rend="DH-Heading2">
+                <head>
+                    <anchor xml:id="id__p211mhr01dk8"/>Deutschsprachiges Reddit-Korpus
+                </head>
+                <div type="div2" rend="DH-Heading3">
+                    <head>
+                        <anchor xml:id="id__qkr5x7edajh5"/>Forschungsstand
+                    </head>
+                    <p>In vorherigen Arbeiten wurden aus einem umfassenden Reddit-Datensatz deutschsprachige Kommentare mittels einer zweistufigen Filterung extrahiert (Barbaresi 2015; Blombach et al. 2020). Dabei griffen diese Ansätze wie auch der vorliegende auf die Pushshift-Archive
+                        <hi rend="sup"><ref n="4" target="ftn4"/>
+                        </hi> zurück.
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading3">
+                    <head>
+                        <anchor xml:id="id__je8aqqim1z3s"/>Datensatz
+                    </head>
+                    <p>Die einzelnen Subreddits und deren Kommentare sind als (ND)JSON-Dateien in zst<ref n="5" target="ftn0"/>-Archiven archiviert. Der aktuelle Datensatz reicht von der Eröffnung eines Subreddits (ca. 2006/2007, teilweise auch erst später) bis einschließlich zum 2023-12-31. Vertretene Subreddits sind dabei z. B. 
+                        <ref target="https://www.reddit.com/r/de/">
+                            <hi rend="color(#1155cc)underline">r/de</hi>
+                        </ref> (mit über 2 Mio. Abonnent:innen das größte und thematisch allgemeinste Subreddit), Subreddits mit einem speziellen thematischen Bezug, wie 
+                        <ref target="https://www.reddit.com/r/Finanzen/">
+                            <hi rend="color(#1155cc)underline">r/Finanzen</hi>
+                        </ref> oder 
+                        <ref target="https://www.reddit.com/r/Studium/">
+                            <hi rend="color(#1155cc)underline">r/Studium</hi>
+                        </ref>, aber auch solche, die eine regionale Varietät abdecken, wie 
+                        <ref target="https://www.reddit.com/r/schwiiz/">
+                            <hi rend="color(#1155cc)underline">r/schwiiz</hi>
+                        </ref> oder 
+                        <ref target="https://www.reddit.com/r/aeiou/">
+                            <hi rend="color(#1155cc)underline">r/aeiou</hi>
+                        </ref>.
+                    </p>
+                    <p>Die Auswahl umfasst 40 Subreddits, die aus den 100 meistabonnierten Subreddits im DACH-Raum händisch ausgewählt wurden. Ziel war es, eine thematisch möglichst breite Abdeckung zu erreichen, wobei Subreddits ausgeschlossen wurden, die rein pornografische oder rechtsextreme Inhalte aufweisen. Ebenfalls nicht berücksichtigt wurden Subreddits, die trotz ihrer primären Ausrichtung auf den deutschsprachigen Raum einen hohen Anteil englischsprachiger Beiträge enthalten. Die Zahl 40 wurde bewusst gewählt, um eine Datenmenge zu gewährleisten, die sowohl thematisch divers als auch für die Verarbeitung und Analyse effizient handhabbar ist.</p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading2">
+                <head>
+                    <anchor xml:id="id__h2ts2qkzr59"/>Datenaufbereitung und -konvertierung
+                </head>
+                <p>Die erarbeitete Verarbeitungspipeline transformiert die Ausgangsdaten, komprimierte zst-Dateien, in ein strukturiertes TEI-XML-Format
+                    <hi rend="sup"><ref n="6" target="ftn6"/>
+                    </hi>. Dieser Prozess beginnt mit einer Bereinigung der Daten: Hierbei werden nachträglich gelöschte Kommentare, die noch als Fragmente in den Datensätzen vorhanden sind, sowie von Bots generierte Inhalte entfernt. Ebenso werden Einträge, die ausschließlich aus URLs und/oder Zitaten bestehen, ausgeschlossen
+                    <hi rend="sup"><ref n="7" target="ftn7"/>
+                    </hi>. Anschließend werden alle Kommentare, die zu einem zusammenhängenden Thread gehören, in einheitliche JSON-Dateien überführt. Diese Dateien bestehen jeweils aus einem vollständigen Thread, identifiziert durch eindeutig zugeordnete Schlüssel aus den JSON-Objekten. Alternativ haben Nutzer:innen auch die Möglichkeit, die Kommentare nicht in Thread-Gruppen zusammenzuführen, sondern jeden Kommentar in eine separate Datei speichern zu lassen. In der letzten Phase der Datenverarbeitung werden diese JSON-Dateien in TEI-XML konvertiert. Jeder Kommentar wird dabei im XML-Dokument als &lt;item&gt; mit umfangreichen Metadaten, wie Autor, Datum und einer persistenten URL zum Originalkommentar versehen, wodurch die Originalquelle stets im ursprünglichen Reddit-Thread aufrufbar bleibt.
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/3258385a9b878bfb667d53f29dabf5f3.png"/>
+                        <head>Abbildung 1: Screenshot der TEI-XML-Kodierung eines Threads auf r/Finanzen, URL zum Original-Thread: https://www.reddit.com/r/Finanzen/comments/5wa69r/n26_black_im_ausland/.</head>
+                    </figure>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading2">
+                <head>
+                    <anchor xml:id="id__x1l86bq4o3jv"/>Nachnutzbarkeit und Zugang zum Repositorium
+                </head>
+                <p>Alle für dieses Projekt entwickelten Skripte werden in einem öffentlich zugänglichen Repositorium hinterlegt. Die Verfügbarkeit der ursprünglichen Datensätze aus den Pushshift-Archiven ermöglicht zudem die Reproduktion der Ergebnisse.</p>
+                <p>Gleichzeitig ist geplant, das Reddit-Korpus in die Plattform des Digitalen Wörterbuchs der deutschen Sprache (DWDS) zu integrieren.</p>
+            </div>
+            <div type="div1" rend="DH-Heading2">
+                <head>
+                    <anchor xml:id="id__xwomxthhrfbv"/>Poster
+                </head>
+                <p>Das Poster illustriert den Prozess der Datenerfassung, Aufbereitung und Konvertierung des Reddit-Korpus. Es zeigt anschaulich, wie aus den gesammelten Daten strukturierte TEI-XML-Dokumente erstellt werden und wie diese Daten innerhalb der DWDS-Plattform und darüber hinaus analysiert und nachgenutzt werden können.</p>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note xml:id="ftn1" rend="footnote text" n="1">Contributor Roles: Sebastian Göttel (Conceptualization, Data curation, Software, Writing – original draft), Lydia Körber (Software, Validation), Adrien Barbaresi (Software, Supervision, Writing – review &amp; editing).</note>
+<note xml:id="ftn2" rend="footnote text" n="2">
+    https://www.reddit.com/
+                        </note>
+    <note xml:id="ftn3" rend="footnote text" n="3">vgl.: https://www.statista.com/statistics/1201880/most-visited-websites-worldwide/
+                            
+                        </note>
+    <note xml:id="ftn4" rend="footnote text" n="4">Pushshift archiviert eine Vielzahl von Reddit-Daten, einschließlich aller Beiträge und Kommentare, die auf der Plattform gepostet werden. Pushshift bietet spezialisierte Daten-Dumps an, die nach einzelnen Subreddits geordnet sind und bis einschließlich Ende 2023 reichen. Für das vorliegende Korpus wurden nur die Pushshift-Dateien verwendet, die ausschließlich Kommentare innerhalb der Threads enthalten (‘_comments’ im Dateinamen) : https://academictorrents.com/details/56aa49f9653ba545f48df2e33679f014d2829c10. 
+                                
+                                <hi rend="color(#1155cc)underline">.</hi>
+                            </note>
+<note xml:id="ftn0" rend="footnote text" n="5">zst ist ein komprimiertes Datenformat, das auf dem Kompressionsalgorithmus Zstandard basiert.</note>
+<note xml:id="ftn6" rend="footnote text" n="6">vgl. die Richtlinien der Text Encoding Initiative (TEI), https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html.</note>
+<note xml:id="ftn7" rend="footnote text" n="7">Zusätzlich zu den beschriebenen Schritten wurden weitere Filtermaßnahmen angewendet, deren detaillierte Auflistung der Dokumentation des Repositoriums entnommen werden kann.</note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Barbaresi, Adrien.</hi> 2015. "Collection, description, and visualization of the German Reddit corpus." In 
+                        <hi rend="italic">2nd Workshop on Natural Language Processing for Computer-Mediated Communication</hi>, 7-11. 
+                        <ptr target="https://hal.science/hal-01207311v2"/> (zugegriffen: 24. Juli 2024).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Blombach, Andreas, Natalie Dykes, Philipp Heinrich, Besim Kabashi and Thomas Proisl.</hi> 2020. "A Corpus of German Reddit Exchanges (GeRedE)." In 
+                        <hi rend="italic">Proceedings of the </hi>
+                        <hi rend="italic">Twelfth Language Resources and Evaluation Conference</hi>, 6310–6316. 
+                        <ptr target="https://aclanthology.org/2020.lrec-1.774/"/> (zugegriffen: 24. Juli 2024).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

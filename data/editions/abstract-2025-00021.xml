@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="HOWANITZ_Gernot_Combining_LLM_and_Topic_Modeling_for_Automat">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Combining LLM and Topic Modeling for Automated Video Analysis: A Case Study</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Howanitz</surname>
+                        <forename>Gernot</forename>
+                    </persName>
+                    <affiliation>Universität Innsbruck, Österreich</affiliation>
+                    <email>gernot.howanitz@uibk.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kaltseis</surname>
+                        <forename>Magdalena</forename>
+                    </persName>
+                    <affiliation>Universität Innsbruck, Österreich</affiliation>
+                    <email>magdalena.kaltseis@uibk.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sulzhytski</surname>
+                        <forename>Ilya</forename>
+                    </persName>
+                    <affiliation>Universität Innsbruck, Österreich</affiliation>
+                    <email>ilya.sulzhytski@uibk.ac.at</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-12-03T17:13:00.113493110</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Vortrag: Methode</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>video analysis</term>
+                    <term>multimodal LLM</term>
+                    <term>topic modeling</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Bilderfassung</term>
+                    <term>Inhaltsanalyse</term>
+                    <term>Annotieren</term>
+                    <term>Multimodale Kommunikation</term>
+                    <term>Video</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading">
+                <head>Introduction</head>
+                <p>
+                    <hi rend="color(#0e101a)">With the advancement of computer vision techniques, digital humanities scholars are increasingly interested in the study of visual data, including images (O'Halloran et al., 2014; Maiwald et al., 2017; Emanuel, 2018; Munster et al., 2019) and videos (Kuhn et al., 2014; Jakubowski et al., 2017; Bakels et al., 2020; Pustu-Iren et al., 2020; El-Keilany et al., 2022). The possibilities for using computational methods in the digital humanities have expanded considerably with the recent boom in generative AI, including monomodal textual Large Language Models (LLMs) and Multimodal </hi>Large Language Models
+                    <hi rend="color(#0e101a)">(MLLMs) (Aguiar &amp; Araújo, 2024; Chun &amp; Elkins, 2023; Guo, 2024). </hi>
+                </p>
+                <p>In this respect, we agree with Thomas Smits and Melvin Wevers that “multimodal models have the potential to cause a multimodal turn in DH research” (Smits &amp; Wevers, 2023, p. 1268). However, despite the extensive capabilities associated with image understanding tasks offered by recent MLLMs, we know little about how non-human agents ‘view’ visual media (Arnold &amp; Tilton, 2023, pp. 9–31) and whether the results of such ‘viewing’ can be used to understand images and videos with complex cultural, social and behavioural contexts and dynamics.</p>
+                <p>
+                    <hi rend="color(#0e101a)">With this complexity in mind, we analyse the capabilities of MLLMs in understanding video content within Taylor Arnold’s and Lauren Tilton’s concept of ‘Distant Viewing’ (Arnold &amp; Tilton, 2023). We used two multimodal MLLMs: the closed-source </hi>
+                    <hi rend="italic">GPT-4o mini </hi>
+                    <hi rend="color(#0e101a)">from OpenAI (</hi>OpenAI, 2024
+                    <hi rend="color(#0e101a)">) and the open-source</hi>
+                    <hi rend="italic"> Large Language and Vision Assistant</hi>
+                    <hi rend="color(#0e101a)"> (LLaVA, </hi>Liu
+                    <hi rend="color(#0e101a)">et al., 2023). Both models can process textual and visual data; and while they cannot work directly with the video format, they can produce aggregated descriptions by splitting videos into sequences of frames.</hi>
+                </p>
+                <p>
+                    <hi rend="color(#0e101a)">In this paper, we present our case study that focuses on the visual and narrative features of Olga Abramchik’s 2021 documentary </hi>
+                    <hi rend="italic">Мы не знали друг друга до этого лета</hi>
+                    <hi rend="color(#0e101a)"> [</hi>
+                    <hi rend="italic">We Didn't Know Each Other Before This Summer</hi>
+                    <hi rend="color(#0e101a)">] (Abramchik, 2021) by using two different MLLMs. First, we introduce our case study</hi>. Afterwards, we
+                    <hi rend="color(#0e101a)">describe the image analysis pipeline that combines MLLM annotation with topic modelling. We then discuss our main findings by comparing the annotation results of the two models, focusing on the interpretability of the topics extracted from these annotations. Finally, we discuss the strengths and limitations of both MLLMs in the image annotation task and their use in understanding the analysed video as a whole.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Multimodal and Video Large Language Models</head>
+                <p>
+                    <hi rend="color(#0e101a)">As outlined in Section 1, recent advances in LLMs have led to the development of MLLMs, which combine the reasoning of LLMs with visual processing (Li et al., 2023; Yin et al., 2023). Notable MLLMs with image-to-text capabilities such as GPT-4o / GPT-4o mini (</hi>OpenAI, 2024
+                    <hi rend="color(#0e101a)">), LLaVA (</hi>Liu
+                    <hi rend="color(#0e101a)">et al., 2023), Llama 3 (</hi>
+                    <hi rend="color(#222222)">Dubey et al., 2024</hi>
+                    <hi rend="color(#0e101a)">), Pixtral (</hi>
+                    <hi rend="color(#222222)">Agrawal et al., 2024</hi>
+                    <hi rend="color(#0e101a)">) and others have demonstrated significant progress in image understanding through various architectural innovations and training strategies (Yin, et al., 2023).</hi>
+                </p>
+                <p>The evolution from image-focused MLLMs to LLMs with the ability of video understanding (Vid-LLMs) advances multimodal reasoning and addresses challenges such as temporal dynamics and long-range context dependencies. Recent models in this area include Video-LLaMA (Zhang et al., 2023) and Video-ChatGPT (Maaz et al., 2023). According to Tang et. al, Vid-LLMs deal with three main tasks: abstract understanding, temporal understanding and spatiotemporal understanding (Tang et al., 2023, pp. 4–5). Currently, the main challenge lies in understanding long context video data (Tang et al., 2023, pp. 13–14, Yin, et al., 2023, p. 13).</p>
+                <p>In this regard, despite the recent developments in Vid-LLMs, the analysis of videos through frame-based processing using image-focused MLLMs remains a compelling alternative to end-to-end video understanding (Huang, et al., 2024). Although Vid-LLMs theoretically provide more complete temporal analyses for short videos, they are computationally expensive for long videos and have problems with long-range dependencies (Tang et al., 2023, pp. 13–14). In this regard, Meinardus et al. demonstrated the efficacy of image-text MLLM for video moment retrieval (Mr. BLIB), emphasising the benefits of a frame-based approach without the need for resource-intensive pretraining, precise localisation of relevant moments, and flexible processing of longer videos through the use of key frames (Meinardus, et al., 2024). </p>
+                <p>Therefore, frame-based analysis remains a more reliable approach for long video understanding. The following sections (3 and 4) will provide a more detailed examination of this approach, with a demonstration of how the complex visual dynamic of protest videos can be effectively captured through the analysis of sequential frames and the synthesis of the resulting data using topic modelling.</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Methodology</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>General considerations</head>
+                    <p>In building our analysis pipeline, we had to consider several issues. First, 
+                        <hi rend="italic">LLMs are rarely trained to work directly on video input</hi>, so we decided to operate on individual frames rather than on the video as a whole. In particular, Chen (2023) suggests this approach for analysing video with the GPT-4 model family. Second, 
+                        <hi rend="italic">closed-source LLMs often outperform open-source LLMs</hi>. While many promising multimodal networks are available online, the GPT-4 model family still outperforms them on various metrics (Fu et al., 2023; Yin et al., 2023; Fu et al., 2024), but it uses a subscription model and has to be paid for. Therefore, we decided to compare the performance of 
+                        <hi rend="color(#0e101a)">GPT-4o mini</hi> with that of an open-source network. Third, 
+                        <hi rend="italic">automated image analysis still has substantial hardware requirements</hi>, most of which are not feasible to run outside of HPC clusters. After some experimentation, we chose LLaVA-v1.5 with 13 billion parameters and 4-bit encoding, as this network offers reasonable performance during inference and can be run on a single A100 GPU. Fourth, 
+                        <hi rend="italic">LLMs are notoriously black boxes</hi>, so we used them as little as possible. While LLMs can be used to create full-text descriptions of videos (e.g. Chen, 2023), we limited the automated work to keyword annotation. This approach also allowed us to compare and process the annotations more easily.
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Sample Case</head>
+                    <p>This article is part of the project ‘Kaleidoscopic Patterns of Protest’, which analyses visual and textual (self-)representations of East Slavic protest cultures. As an ideal candidate for testing a video annotation task that would meet the project’s goals, we chose the documentary 
+                        <hi rend="italic">We Didn't Know Each Other Before This Summer </hi>(Abramchik 2021). The film focuses on the protests in Belarus following the presidential elections on 9 August 2020. It provides a detailed audiovisual documentation of symbols, behaviours, police actions and other features of the protests. Constructed from footage of participants and witnesses, the film offers an unfiltered, day-by-day narrative of collective actions and police responses, without outside commentary or music. It also highlights the regime’s human rights abuses and public reactions. The documentary offers a valuable resource for studying visual representations of protests and testing LLMs ability to annotate such material, as it provides unique, unedited grassroots footage with uninterrupted protest action sequences.
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Image analysis pipeline</head>
+                    <p>We used 
+                        <hi rend="color(#0e101a)">GPT-4o mini </hi>and LLaVA to automatically annotate the documentary. First, we extracted one frame per second from the documentary using the OpenCV library for Python. Next, we evaluated 20 different prompt variations for image annotation using a random sample of 30 video frames. Through manual evaluation of descriptive accuracy and contextual completeness, we created two optimal prompts for each model. These prompts can be considered zero-shot prompts (Kojima et al., 2022), which provide no contextual information, as we wanted the LLM to ‘interpret’ as little as possible and instead describe the visual images in general terms:
+                    </p>
+                    <figure>
+                        <graphic url="Pictures/1f8b327c89fdc4d7e38122b0c7cfac3e.jpg"/>
+                    </figure>
+                    <table rend="frame" xml:id="Table1">
+
+                        <row>
+                            <cell>GPT-4-o mini</cell>
+                            <cell>LLaVA </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <p>
+                                    <hi rend="italic">Prompt: </hi>Please conduct an exhaustive analysis of the provided image. Focus on identifying and listing every visible element in the image. Write a description in the form of keywords. Be specific and extract as many unique keywords as possible.
+                                </p>
+                                <p>Output format: keyword 1, keyword 2, …</p>
+                            </cell>
+                            <cell>
+                                <hi rend="italic">Prompt: </hi>List every visible element in the image. Do not use full sentences, use only keywords. Use as many keywords as necessary, but not more than 20.
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <hi rend="italic">Result: </hi>crowd, protest, flag, Belarusian flag, people, balloons, blue sky, clouds, city skyline, trees, cheering, smartphones, outdoor event, summer, cultural gathering, democratic movement, gathering, celebration, unity, red and white colors
+                            </cell>
+                            <cell>
+                                <hi rend="italic">Result: </hi>people, flags, banners, cars, trucks, buses, boats, kites, balloons, cell phones, handbags, backpacks, ties, sunglasses, hats, shirts, pants, towels, umbrellas, benches
+                            </cell>
+                        </row>
+                        <head>Table 1. Comparison of prompts (top) and keywords (below) extracted by GPT-4o mini (left) and LLaVA (right) for the sample image shown above (Source: 
+                        <hi rend="italic">We Didn't Know Each Other Before This Summer</hi>, 00:56:44)</head>
+                    </table>
+                    <p>We used OpenAI’s Batch API (OpenAI, n.d.) to obtain the list of keywords for each frame generated by GPT-4o mini; LLaVA, on the other hand, was run locally. As a result, we extracted 3730 frames from the documentary and obtained two lists of keywords for each frame. We then used topic modelling to process the keywords. This approach avoided some of the pitfalls of LLMs as black boxes, because topic modelling is an established and mathematically proven technique. We used Gensim’s implementation of Ensemble LDA (Brigl, 2019) to run multiple topic models simultaneously, keeping only the topics consistent across several topic models, thereby reducing the number of incoherent topics.</p>
+                    <p>The keywords for a single frame were then considered a ‘document’; each keyword (which could consist of compounds, e.g., ‘army truck’) was considered a ‘word’. As a control for the method and the automated analysis, we did a close reading of the topics. We then applied the topic model to each list of keywords, resulting in a topic distribution for each frame. For a larger video corpus, each video could be identified by its topic distribution. This makes the videos easily comparable, using established distance metrics, such as PCA or Isomap, to map them (Howanitz, 2020, 92–107).</p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results</head>
+                <p>A first-look comparison of the annotations showcased clear differences in the keyword generation patterns of the two models. While 
+                    <hi rend="color(#0e101a)">GPT-4o mini</hi> provided more consistent and typically more detailed annotations, LLaVA showed a higher variability in the results and a capacity for both very sparse and extremely wordy annotations. In terms of annotation quality, further human observations revealed more nuanced differences between the two models. 
+                    <hi rend="color(#0e101a)">GPT-4o mini</hi> showed higher contextual accuracy, correctly identifying and including event-specific keywords such as 'Minsk', demonstrating its ability to accurately capture the implicit context of the images. In addition, 
+                    <hi rend="color(#0e101a)">GPT-4o mini</hi> excelled in OCR, particularly in recognising and correctly interpreting text within images, especially Cyrillic script. In contrast, LLaVA struggled with Cyrillic letters, often failing to recognise or accurately annotate the Russian or Belarusian text. Both models have difficulties with blurry night images due to poor lighting and low visibility.
+                </p>
+                <p>Topic modelling revealed further differences in the interpretability of annotations between the two models, especially when understanding video content from aggregated descriptions of individual frames. For example, both 
+                    <hi rend="color(#0e101a)">GPT-4o mini</hi> and LLaVA produced an ‘intertitle’ topic. However, 
+                    <hi rend="color(#0e101a)">GPT-4o mini</hi> was more specific and detailed, identifying the actual logo of the YouTube channel (“current time” [настоящее время]) with keywords such as ‘black background’, ‘white text’, ‘Russian language’, ‘Cyrillic script’, ‘logo’, ‘настоящее время logo’ or ‘political content’’. In contrast, LLaVA produced more common and less diverse keywords, such as ‘Russian’, ‘text’, ‘foreign language’, ‘black’ or ‘foreign’, and also contained errors (e.g. by identifying the Russian text as ‘Bulgarian’). While the keywords produced by 
+                    <hi rend="color(#0e101a)">GPT-4o mini</hi> were more concise and allowed a better interpretation of the topic, the disadvantage of LLaVA was somewhat mitigated when we applied the topic model to the whole documentary. Both ‘intertitle’ topics allowed us to immediately identify the intertitles in the documentary and, thus, served their purpose well (see Figure 1).
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/5e4f12302ea504a87952519f6039ac34.png"/>
+                    </figure>
+                    <figure>
+                        <graphic url="Pictures/f5271894492e112455d53367bf9c1ccf.png"/>
+                        <head>Figure 1. Distribution of 
+                    <hi rend="color(#0e101a)">GPT-4o mini</hi> ‘intertitle’ topic (top) and LLaVA ‘intertitle’ topic (bottom) for the documentary. X-axis is time, y-axis is topic probability. The intertitles are clearly visible and agree for both LLMs, e.g. at the beginning and the end of the documentary and around min. 00:16:00.</head>
+                    </figure>
+                </p>
+                <p>Topic modelling also revealed thematic trends, for example, when it produced similar police-related topics in both models (see Table 2). Keywords pertaining to riot control police are combined with ‘nighttime’ (
+                    <hi rend="color(#0e101a)">GPT-4o mini</hi>) or ‘night’ (LLaVA). This combination is significant because it was mainly at night that police brutality occurred during the protests, while peaceful demonstrations happened during daytime—a fact that the documentary shows very clearly. Therefore, both models recognized this contrast in protest actions, which changed dramatically depending on the time of the day.
+                </p>
+                <table rend="frame" xml:id="Table2">
+                    <row>
+                        <cell>GPT-4o mini</cell>
+                        <cell>LLaVA </cell>
+                    </row>
+                    <row>
+                        <cell>law enforcement, crowd control, pavement, urban environment, outdoor, tension, uniform, public space, protective gear, urban setting, uniformed officers, street, surveillance, building, public safety, riot gear, 
+                            <hi rend="bold">nighttime</hi>, confrontation, body armor, intervention
+                        </cell>
+                        <cell>police, security, crowd, protest, law enforcement, safety, demonstration, 
+                            <hi rend="bold">night</hi>, public safety, man, riot gear, helmet, car, public order, fence, crowd control, police officers, police car, riot, gathering
+                        </cell>
+                    </row>
+                    <head>Table 2. Two topics about police and violent protests during the nighttime, based on 
+                    <hi rend="color(#0e101a)">GPT-4o mini </hi>annotations (left) and LLaVA annotations (right).</head>
+                </table>
+                <p>We can also see a narrative pattern: If we plot the topic distribution for the ‘riot police by night’ topics, we see that night shots (and police brutality) are more present in the first half of the documentary and then gradually decrease in the second half (see Figure 2). However the topic distributions do not match as clearly as in the case of the ‘intertitle’ topics in Figure 1. This could be due to the fact that the topic ‘riot police by night’ is not as clearly delineated as the ‘intertitle’ topics and is also less visually distinguishable as the documentary also features night shots without any police.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/55711a7d9cf449546ee04611d683a02a.png"/>
+                    </figure>
+                    <figure>
+                        <graphic url="Pictures/6072b2e6c2b957e39b1007edad0e40f4.png"/>
+                        <head>Figure 2. ‘Riot police by night’ topic distribution, based on keywords by 
+                    <hi rend="color(#0e101a)">GPT-4o mini </hi>and LLaVA (bottom).</head>
+                    </figure>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Discussion</head>
+                <p>The proposed combination of zero-shot LLM annotation and topic modelling has several advantages. On a technical level, it allows the automatic analysis of a video corpus with reasonable resources. Furthermore, 
+                    <hi rend="color(#0e101a)">GPT-4o mini</hi> produces concise annotations but is too expensive for several thousand videos. Compared to GPT-4o mini, the LLaVA annotations proved not as accurate, but this difference did not affect the efficiency of our pipeline, precisely the output of the Ensemble LDA topic modelling. Another inconvenience of LLaVA is its relatively low speed: processing the 60-minute documentary took approximately 72 hours on a single A100 GPU, while GPT-4o mini completed the same task in only 3 hours and 30 minutes through the cloud API accessed via Jupyter Notebook. Possible speedups include reducing the frame size from Full HD to a lower resolution and using more focused frame sampling techniques.
+                </p>
+                <p>The advantage of the proposed combination on a conceptual level is that we did not have to introduce contextual information at an early stage and were therefore less prone to overlook certain phenomena since we did not precondition the pipeline to find only what we expected, which is a typical and bias-prone strategy in object detection/recognition. Notwithstanding the existence of a number of quantitative metrics and benchmarks for the evaluation of multimodal models with image understanding capabilities (Yang et al., 2023; Bubeck et al., 2023; 
+                    <hi rend="color(#222222)">Wang et al. 2023;</hi>
+                    <hi rend="color(#222222)">Yue et al. 2024</hi>), there is a notable lack of quantitative metrics, benchmarks, or datasets that have been specifically designed for the assessment of the performance of these models in the analysis of protest images, particularly those from Eastern Europe. In light of the aforementioned gap, a promising alternative approach is to employ grounded theory to identify potential errors, hallucinations, and ambiguities that may arise when using MLLMs to describe protest images using keywords. We plan to further develop this idea in accordance with the recent paper of Hwang et al. (2023). Adapting this framework for analysing protest images will allow us to systematically uncover the strengths and limitations of multimodal models in our particular task. After these improvements, we aim to test the method on a larger corpus (~1000 videos) and quantitatively compare the videos based on their topic distributions to uncover narrative strategies based on visual content.
+                </p>
+                <p>The presented approach has its limitations in that it focuses on basic content labelling by LLMs and therefore captures only surface-level visual information. It does not address deeper aspects of cinematic language, such as image syntax, semantics and compositional elements. This early-stage work is therefore positioned as a first step in automated analysis of protest images and videos, and as contributing to the broader discussion of computational approaches to understanding visual narratives. In the future, we aim to explore the integration of formal visual elements and more complex multimodal analysis techniques (Sommer, 2021) into a coherent analytical framework.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Acknowledgements</head>
+                <p>The work on this paper was financed by the Austrian Academy of Sciences’ 
+                    <hi rend="italic">go!digital 3.0 </hi>program.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Data availability</head>
+                <p>Data and scripts to reproduce the results of this paper are available on Github: 
+                    <ptr target="https://github.com/ghowa/llm-and-topic-modeling"/>. 
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Abramchik, Olga</hi>. 2021. "We Didn't Know Each Other Before This Summer [My ne znali drug druga do etogo leta]." Belarus: Current Time [Nastoiashchee Vremia]. 
+                        <ptr target="https://www.youtube.com/watch?v=6vU9GtE75ZA"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Agrawal, Pravesh</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Szymon Antoniak</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Emma Bou Hanna</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Baptiste Bout</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Devendra Chaplot</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Jessica Chudnovsky</hi>, ... 
+                        <hi rend="bold">and Sophia Yang</hi>.
+                        <hi rend="color(#222222)"> 2024. “Pixtral 12B.” </hi>
+                        <hi rend="italic">arXiv preprint </hi>
+                        <hi rend="color(#222222)">arXiv:2410.07073.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Aguiar, Micaela, and Sílvia Araújo</hi>. 2024. “Final Thoughts: Digital Humanities Looking at Generative AI.” In 
+                        <hi rend="italic">Digital Humanities Looking at the World: Exploring Innovative Approaches and Contributions to Society</hi>, 367-380. Cham: Springer Nature Switzerland.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Arnold, Taylor, and Lauren Tilton</hi>. 2023. 
+                        <hi rend="italic">Distant Viewing: Computational Exploration of Film and Media</hi>. MIT Press.
+                        <ref target="https://direct.mit.edu/books/oa-monograph/5674/Distant-ViewingComputational-Exploration-of"> </ref>
+                        <ptr target="https://direct.mit.edu/books/oa-monograph/5674/Distant-ViewingComputational-Exploration-of"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bakels, Jan-Hendrik, Matthias Grotkopp, Thomas Scherer and Jasper Stratil</hi>. “Matching Computational Analysis and Human Experience: Performative Arts and the Digital Humanities.”
+                        <hi rend="italic">Digit. Humanit. Q</hi>. 14 (2020): n. Pag.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Brigl, Tobias</hi>. 2023. “Extracting Reliable Topics Using Ensemble Latent Dirichlet Allocation.” 
+                        <hi rend="italic">ResearchGate.</hi>
+                        <ref target="https://www.researchgate.net/publication/369543116_Bachelor's_thesis_Subject_Extracting_Reliable_Topics_using_Ensemble_Latent_Dirichlet_Allocation">
+                            <hi rend="italic"> </hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bubeck, Sébastien, Varun Chandrasekaran, Ronen Eldan, Johannes Gehrke, Eric Horvitz, Ece Kamar, ... and Yi Zhang</hi>.
+                        <hi rend="color(#222222)"> 2023. </hi>“
+                        <hi rend="color(#222222)">Sparks of artificial general intelligence: Early experiments with gpt-4.</hi>”
+                        <hi rend="color(#222222)"> </hi>
+                        <hi rend="italic">arXiv preprint arXiv:2303.12712.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Chen, Kai</hi>. 2023. “Processing and Narrating a Video with GPT's Visual Capabilities and the TTS API.” 
+                        <hi rend="italic">OpenAI Cookbook</hi>.
+                        <ref target="https://cookbook.openai.com/examples/gpt_with_vision_for_video_understanding"> </ref>
+                        <ptr target="https://cookbook.openai.com/examples/gpt_with_vision_for_video_understanding"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Chun, Jon, and Katherine Elkins</hi>. 2023. “The Crisis of Artificial Intelligence: A New Digital Humanities Curriculum for Human-Centred AI.” 
+                        <hi rend="italic">International Journal of Humanities and Arts Computing</hi> 17 (2): 147-167.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Current Time TV</hi>. 2021. “Мы не знали друг друга до этого лета [We Did Not Know Each Other Before This Summer].” 
+                        <hi rend="italic">Current Time</hi>. Accessed February 5, 2021.
+                        <ref target="https://www.currenttime.tv/a/my-ne-znali-drug-druga-do-etogo-leta-premiera/31091846.html"> </ref>
+                        <ptr target="https://www.currenttime.tv/a/my-ne-znali-drug-druga-do-etogo-leta-premiera/31091846.html"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Dubey, Abhimanyu, Abhinav Jauhri, Abhinav Pandey, Abhishek Kadian, </hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">Ahmad Al-Dahle, </hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">Aiesha Letman, ... and Raj</hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">Ganapathy</hi>. 2024. “The llama 3 herd of models.” 
+                        <hi rend="italic">arXiv preprint arXiv:2407.21783.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Emanuel, Jeffrey P</hi>. 2018. “Stitching Together Technology for the Digital Humanities with the International Image Interoperability Framework (IIIF).” In 
+                        <hi rend="italic">Digital Humanities, Libraries, and Partnerships</hi>, 125-135. Chandos Publishing.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">El-Keilany, Alina, Thomas Schmidt, and Christian Wolff</hi>. 2022. “Distant Viewing of the Harry Potter Movies via Computer Vision.” In 
+                        <hi rend="italic">DHNB 2022, </hi>33-49. 
+                        <ptr target="https://ceur-ws.org/Vol-3232/paper03.pdf"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fu, Chaoyou, Peixian Chen, Yunhang Shen, Yulei Qin, Mengdan Zhang, Xu Lin, Jinrui Yang, Xiawu Zheng, Ke Li, Xing Sun, and others</hi>. 2023. “MME: A Comprehensive Evaluation Benchmark for Multimodal Large Language Models.” In 
+                        <hi rend="italic">arXiv preprint arXiv:2306.13394</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fu, Chaoyou, Yuhan Dai, Yongdong Luo, Lei Li, Shuhuai Ren, Renrui Zhang, Zihan Wang, Chenyu Zhou, Yunhang Shen, Mengdan Zhang, and others</hi>. 2024. “Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-Modal LLMs in Video Analysis.” In 
+                        <hi rend="italic">arXiv preprint arXiv:2405.21075</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Guo, Qiang</hi>. 2024. “Prompting Change: ChatGPT’s Impact on Digital Humanities Pedagogy–A Case Study in Art History.” 
+                        <hi rend="italic">International Journal of Humanities and Arts Computing</hi> 18 (1): 58-78.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Huang, Suyuan, </hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">Haoxin Zhang</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Yan Gao</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Yao Hu</hi>
+                        <hi rend="bold">, and </hi>
+                        <hi rend="bold">Zengchang Qin</hi>.
+                        <hi rend="color(#222222)"> 2024. “From Image to Video, what do we need in multimodal LLMs?.” </hi>
+                        <hi rend="italic">arXiv preprint arXiv:2404.11865</hi>
+                        <hi rend="color(#222222)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Howanitz, Gernot</hi>. 2020. 
+                        <hi rend="italic">Leben Weben. (Auto-)Biographische Praktiken Russischer Autorinnen und Autoren im Internet</hi>. Transcript.
+                        <ref target="https://www.transcript-verlag.de/978-3-8376-5132-4/leben-weben/?number=978-3-8394-5132-8"> </ref>
+                        <ptr target="https://www.transcript-verlag.de/978-3-8376-5132-4/leben-weben/?number=978-3-8394-5132-8"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hwang, Alyssa, Andrew Head and Chris Callison-Burch</hi>.
+                        <hi rend="color(#222222)"> 2023. “Grounded Intuition of GPT-Vision's Abilities with Scientific Images.” </hi>
+                        <hi rend="italic">arXiv preprint arXiv:2311.02069</hi>
+                        <hi rend="color(#222222)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Jakubowski, Kelly, Tuomas Eerola, Paolo Alborno, Gualtiero Volpe, Antonio Camurri, and Martin Clayton</hi>. 2017. “Extracting Coarse Body Movements from Video in Music Performance: A Comparison of Automated Computer Vision Techniques with Motion Capture Data.” 
+                        <hi rend="italic">Frontiers in Digital Humanities</hi> 4: 9.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kojima, Takeshi, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa</hi>. 2022. "Large Language Models Are Zero-Shot Reasoners." 
+                        <hi rend="italic">Advances in Neural Information Processing Systems</hi> 35: 22199-22213.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kuhn, Virginia, Michael Simeone, Luigi Marini, Dave Bock, Alan B. Craig, Liana Diesendruck, and Sandeep Puthanveetil Satheesan</hi>. 2014. “MOVIE: Large Scale Automated Analysis of MOVing ImagEs.” In 
+                        <hi rend="italic">Proceedings of the 2014 Annual Conference on Extreme Science and Engineering Discovery Environment</hi>, 1-3.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Li, Chunyuan, Cliff Wong, Sheng Zhang, Naoto Usuyama, Haotian Liu, Jianwei Yang, ... and Jianfeng Gao</hi>.
+                        <hi rend="color(#222222)"> 2024. “Llava-med: Training a large language-and-vision assistant for biomedicine in one day.” </hi>
+                        <hi rend="italic">Advances in Neural Information Processing Systems</hi>
+                        <hi rend="color(#222222)">, </hi>
+                        <hi rend="italic">36</hi>
+                        <hi rend="color(#222222)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Li, Junnan, Li, </hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">Dongxu Li</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Silvio Savarese</hi>
+                        <hi rend="bold">, and </hi>
+                        <hi rend="bold">Steven Hoi</hi>.
+                        <hi rend="color(#222222)"> 2023. “Blip-2: Bootstrapping language-image pre-training with frozen image encoders and large language models.” In </hi>
+                        <hi rend="italic">International conference on machine learning</hi>
+                        <hi rend="color(#222222)"> (pp. 19730-19742). PMLR.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Liu, Haotian, Chunyuan Li, Yuheng Li, and Yong Jae Lee</hi>. 2023. “Improved Baselines with Visual Instruction Tuning.” 
+                        <hi rend="italic">arXiv</hi>.
+                        <ref target="https://arxiv.org/abs/2310.03744"> </ref>
+                        <ptr target="https://arxiv.org/abs/2310.03744"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Luo, Sha, San Jung Kim, Zening Duan, and Kaiping Chen</hi>. 2024. “A Sociotechnical Lens for Evaluating Computer Vision Models: A Case Study on Detecting and Reasoning about Gender and Emotion.” In 
+                        <hi rend="italic">arXiv preprint arXiv:2406.08222</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Maaz, Muhammad, Hanoona Rasheed</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Salman Khan</hi>
+                        <hi rend="bold">, and </hi>
+                        <hi rend="bold">Fahad Shahbaz Khan</hi>. 2023. “Video-chatgpt: Towards detailed video understanding via large vision and language models.” 
+                        <hi rend="italic">arXiv preprint </hi>arXiv:2306.05424.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Maiwald, Ferdinand, Theresa Vietze, Danilo Schneider, Frank Henze, Sander Münster, and Florian Niebling</hi>. 2017. “Photogrammetric Analysis of Historical Image Repositories for Virtual Reconstruction in the Field of Digital Humanities.” 
+                        <hi rend="italic">The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</hi> 42: 447-452.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Meinardus, Boris, Anil Batra</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Anna Rohrbach</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Marcus Rohrbach</hi>.
+                        <hi rend="color(#222222)"> 2024. “The surprising effectiveness of multimodal large language models for video moment retrieval.” </hi>
+                        <hi rend="italic">arXiv preprint arXiv:2406.18113</hi>
+                        <hi rend="color(#222222)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Münster, Sander, Fabrizio I. Apollonio, Peter Bell, Piotr Kuroczynski, Isabella Di Lenardo, Fulvio Rinaudo, and Rosa Tamborrino</hi>. 2019. “Digital Cultural Heritage Meets Digital Humanities.” 
+                        <hi rend="italic">International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</hi> 42 (2/W15): 813-820.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Nayak, Shravan, Kanishk Jain, Rabiul Awal, Siva Reddy, Sjoerd van Steenkiste, Lisa Anne Hendricks, and others</hi>. 2024. “Benchmarking Vision Language Models for Cultural Understanding.” 
+                        <hi rend="italic">arXiv preprint arXiv:2407.10920</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">O'Halloran, Kay, Alvin Chua, and Alexey Podlasov</hi>. 2014. “The Role of Images in Social Media Analytics: A Multimodal Digital Humanities Approach.” In 
+                        <hi rend="italic">Visual Communication</hi>, edited by David Machin, 565-588. De Gruyter.
+                        <ref target="https://doi.org/10.1515/9783110255492.565"> </ref>
+                        <ptr target="https://doi.org/10.1515/9783110255492.565"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">OpenAI</hi>. 2024. “GPT-4o Mini: Advancing Cost-Efficient Intelligence.” OpenAI. Accessed November 27, 2024. 
+                        <ref target="https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/">
+                            <hi rend="underline">https://openai.com/index/gpt-4o mini-advancing-cost-efficient-intelligence/</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">OpenAI</hi>. n.d. “Batch Processing.” OpenAI. Accessed November 27, 2024. 
+                        <ptr target="https://platform.openai.com/docs/api-reference/batch"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pustu-Iren, Kader, Julian Sittel, Roman Mauer, Oksana Bulgakowa, and Ralph Ewerth</hi>. 2020. “Automated Visual Content Analysis for Film Studies: Current Status and Challenges.” 
+                        <hi rend="italic">DHQ: Digital Humanities Quarterly</hi> 14 (4).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Smits, Thomas, and Melvin Wevers</hi>. 2023. “A Multimodal Turn in Digital Humanities: Using Contrastive Machine Learning Models to Explore, Enrich, and Analyze Digital Visual Historical Collections.” 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi> 38 (3): 1267-1280.
+                        <ref target="https://doi.org/10.1093/llc/fqad008"> </ref>
+                        <ptr target="https://doi.org/10.1093/llc/fqad008"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sommer, </hi>
+                        <hi rend="bold">Vivien</hi>.
+                        <hi rend="color(#222222)"> 2021. “Multimodal analysis in qualitative research: Extending grounded theory through the lens of social semiotics.” </hi>
+                        <hi rend="italic">Qualitative Inquiry</hi>
+                        <hi rend="color(#222222)">, </hi>
+                        <hi rend="italic">27</hi>
+                        <hi rend="color(#222222)">(8-9), 1102-1113.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Tang, Yunlong, Jing Bi</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Siting Xu</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Luchuan Song</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Susan Liang</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Teng Wang, ... and </hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">Chenliang Xu</hi>.
+                        <hi rend="color(#222222)"> 2023. “Video understanding with large language models: A survey.” </hi>
+                        <hi rend="italic">arXiv preprint</hi>
+                        <hi rend="color(#222222)"> arXiv:2312.17432.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wang, Yi, Yinan He</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Yizhuo Li</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Kunchang Li</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Jiashuo Yu</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Xin Ma, ... &amp; Yu Qiao</hi>.
+                        <hi rend="color(#222222)"> 2023. “Internvid: A large-scale video-text dataset for multimodal understanding and generation.” </hi>
+                        <hi rend="italic">arXiv preprint </hi>
+                        <hi rend="color(#222222)">arXiv:2307.06942.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Yang, Zhengyuan, Linjie Li</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Kevin Lin</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Jianfeng Wang</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Chung-Ching Lin</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Zicheng Liu</hi>
+                        <hi rend="bold">, and </hi>
+                        <hi rend="bold">Lijuan Wang</hi>.
+                        <hi rend="color(#222222)"> 2023. “The dawn of lmms: Preliminary explorations with gpt-4v (ision).” </hi>
+                        <hi rend="italic">arXiv preprint arXiv:2309.17421</hi>
+                        <hi rend="color(#222222)">, </hi>
+                        <hi rend="italic">9</hi>
+                        <hi rend="color(#222222)">(1), 1.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Yin, Shukang, Chaoyou Fu, Sirui Zhao, Ke Li, Xing Sun, Tong Xu, and Enhong Chen</hi>. 2023. “A Survey on Multimodal Large Language Models.” 
+                        <hi rend="italic">arXiv preprint arXiv:2306.13549</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Yue, Xiang, Yuansheng Ni</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Kai Zhang</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Tianyu Zheng</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Ruoqi Liu</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Ge Zhang, ... and Wenhu Chen</hi>.
+                        <hi rend="color(#222222)"> 2024.</hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="color(#222222)">“Mmmu: A massive multi-discipline multimodal understanding and reasoning benchmark for expert agi.” In </hi>
+                        <hi rend="italic">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</hi>
+                        <hi rend="color(#222222)"> (pp. 9556-9567).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Zhang, Hang, Xin Li</hi>
+                        <hi rend="bold">, and </hi>
+                        <hi rend="bold">Lidong Bing</hi>.
+                        <hi rend="color(#222222)"> 2023. “Video-llama: An instruction-tuned audio-visual language model for video understanding.” </hi>
+                        <hi rend="italic">arXiv preprint</hi>
+                        <hi rend="color(#222222)"> arXiv:2306.02858.</hi>
+                    </bibl>
+                    <bibl>
+                        <anchor xml:id="id__GoBack2"/>
+                        <hi rend="bold">Zhou, Junjie, Yan Shu</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Bo Zhao</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Boya Wu</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Shitao Xiao</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Xi Yang</hi>
+                        <hi rend="bold">, </hi>
+                        <hi rend="bold">Yongping Xiong, … and </hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">Zheng Liu</hi>.
+                        <hi rend="color(#222222)"> 2024. “MLVU: A Comprehensive Benchmark for Multi-Task Long Video Understanding.” </hi>
+                        <hi rend="italic">arXiv preprint arXiv:2406.04264</hi>
+                        <hi rend="color(#222222)">.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

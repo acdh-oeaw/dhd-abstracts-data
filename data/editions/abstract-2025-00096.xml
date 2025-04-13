@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="SLUYTER_G_THJE_Henny_QUADRIGA_Fallstudien_zur_Datenkompetenz">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>QUADRIGA-Fallstudien zur Datenkompetenz in den Humanities: Jupyter Books als “scalable Open Educational Resources”</title>
+                <author>
+                    <persName>
+                        <surname>Sluyter-Gäthje</surname>
+                        <forename>Henny</forename>
+                    </persName>
+                    <affiliation>Universität Potsdam, Deutschland</affiliation>
+                    <email>henny.sluyter-gaethje@uni-potsdam.de</email>
+                    <idno type="ORCID">0000-0003-2969-3237</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Skorinkin</surname>
+                        <forename>Daniil</forename>
+                    </persName>
+                    <affiliation>Universität Potsdam, Deutschland</affiliation>
+                    <email>daniil.skorinkin@uni-potsdam.de</email>
+                    <idno type="ORCID">0000-0002-1845-9974</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Trilcke</surname>
+                        <forename>Peer</forename>
+                    </persName>
+                    <affiliation>Universität Potsdam, Deutschland</affiliation>
+                    <email>peer.trilcke@uni-potsdam.de</email>
+                    <idno type="ORCID">0000-0002-1421-4320</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chlastak</surname>
+                        <forename>Maria</forename>
+                    </persName>
+                    <affiliation>Gesellschaft für Informatik, Deutschland</affiliation>
+                    <email>maria.chlastak@gi.de</email>
+                    <idno type="ORCID">0000-0003-1046-3634</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Samoilova</surname>
+                        <forename>Evgenia</forename>
+                    </persName>
+                    <affiliation>Universität Potsdam, Deutschland</affiliation>
+                    <email>evgenia.samoilova@uni-potsdam.de</email>
+                    <idno type="ORCID">0000-0003-3858-901X</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Seltmann</surname>
+                        <forename>Melanie</forename>
+                    </persName>
+                    <affiliation>Humboldt-Universität zu Berlin, Deutschland</affiliation>
+                    <email>melanie.seltmann.1@hu-berlin.de</email>
+                    <idno type="ORCID">0000-0002-7588-4395</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-07-22T12:48:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Open Educational Resource</term>
+                    <term>Jupyter Book</term>
+                    <term>OER</term>
+                    <term>Lehrmaterial</term>
+                    <term>Fallstudie</term>
+                    <term>Datenkompetenz</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Veröffentlichung</term>
+                    <term>Einführung</term>
+                    <term>Lehre</term>
+                    <term>Text</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung</head>
+                <p>Datenkompetenz, die sowohl den kritischen Umgang mit Daten (von Sammeln über Verwalten bis hin zu Bewerten) als auch die Analyse und Interpretation von Daten (vgl.  Ridsdale et al., 2015) umfasst, wird auch für traditionell ausgebildete Geisteswissenschaftler:innen zunehmend wichtiger. Im Berlin-Brandenburgischen Datenkompetenzzentrum QUADRIGA<ref n="1" target="ftn1"/> (Buchholz et al., 2024) werden deshalb fallstudienbasierte Open Educational Resources (OER) entwickelt, die in Form von Jupyter Books (Executable Books Community, 2020) zur Verfügung stehen und sowohl die Möglichkeit der individuellen Lerndauer als auch der Interaktivität und des Assessments bieten (vgl. z.B. Chen &amp; Asta, 2022 oder Betlem et al., 2024). Eine detaillierte Darstellung des Vorgehens zur Entwicklung der OER unternehmen Samoilova et al. (2024). Das Poster legt seinen Fokus auf die Potentiale von Jupyter Books als OER.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Fallstudienbasierte Open Educational Resource</head>
+                <p>Um den verschiedenen Dimensionen der Kompetenzvermittlung gerecht zu werden, die sich von basalen technischen Fähigkeiten über methodenspezifisches Wissen bis hin zur Daten- und Methodenkritik erstrecken, orientieren sich die von QUADRIGA entwickelten OER an Fallstudien (Foran, 2001) und setzen so problembasiertes Lernen (Kay et al., 2000) ein. Das heißt, QUADRIGA geht von einer konkreten Fragestellung aus<ref n="2" target="ftn2"/>. Die sich aus der Fragestellung ergebende Forschungsstudie wird basierend auf workflow-basiertem Lernen (Mischke et al., 2021) und dem Vier-Komponenten-Instructional-Design-Modell (4C/ID) (van Merriënboer, 1997) in kleinere Aufgaben zerlegt (Abb. 01). Sie dienen als Basis für die Entwicklung von Lernzielen.
+                </p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="2.2225cm" url="Pictures/2ec0693f4cfd94264b389b089a4fa9c4.png" rend="inline"/>
+                    <head>Aufgaben innerhalb der Fallstudie "Spanische Grippe".</head>
+                </figure>
+                <p>Jede dieser Aufgaben ist in strukturell identische Komponenten unterteilt:</p>
+                <list type="ordered">
+                    <item>Präsentation der Aufgabe</item>
+                    <item>Unterstützende Informationen </item>
+                    <item>Interaktive Übungen der Lernaufgaben/Probleme</item>
+                    <item>Reflexion</item>
+                    <item>Prozedurale Informationen zu Routineaspekten der Lernaufgaben</item>
+                    <item>Assessment</item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Jupyter Books als Open Educational Resource</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Struktur</head>
+                    <p>Jupyter-Book<ref n="3" target="ftn3"/> ist eine Python-Bibliothek, die es erlaubt, aus einer Sammlung von Markdown-Dateien und Jupyter Notebooks eine Website zu erstellen (Jupyter Book genannt). Im Fall von QUADRIGA liegen die Dateien des Books auf GitHub, die Website der Fallstudie wird über GitHub-Pages gehostet und mittels einer GitHub-Action deployed. Dies ist sowohl in der Erstellung als auch in der Anwendung von Vorteil, da die Inhalte schnell geupdated und Fehler sowie Feedback zur Fallstudie über GitHub-Issues gemeldet werden können.
+                    </p>
+                    <p>Die Struktur des Books wird über ein Inhaltsverzeichnis hierarchisch festgelegt. Mit Hilfe dieser Struktur lassen sich die Aufgaben und ihre Komponenten gut abbilden. Wie auf der Landing-Page (Abb. 02) zu sehen, besteht die Website aus drei vertikalen Abschnitten.</p>
+                    <figure>
+                        <graphic n="1002" width="16.002cm" height="17.977555555555554cm" url="Pictures/1194a3d58b6b2669d891537b9b74cb5b.jpg" rend="inline"/>
+                        <head>Landing-Page der Fallstudie "Spanische Grippe".</head>
+                    </figure>
+                    <p style="text-align: left; ">Dadurch kann die Fallstudie zum einen chronologisch durchlaufen werden, zum anderen können einzelne Aufgaben und Komponenten direkt angesteuert werden. So kann selbst ein Lernpfad im Sinne des aktiven Lernens (Markant, 2016) gewählt werden. Aufgaben, Komponenten und ihre Bestandteile können über URLs referenziert werden, was die Modularität des Books weiter erhöht.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Elemente</head>
+                    <p>Die interaktiven Komponenten werden in Jupyter Notebooks erstellt, in denen sowohl Markdown als auch Python-Code geschrieben werden kann. So können kleine UI-Elemente erzeugt werden wie die Worteingabe in Abb. 03. Zusätzlich kann das gesamte Jupyter Notebook über Google Colab<ref n="4" target="ftn4"/> im Browser ausgeführt werden.
+                    </p>
+                    <figure>
+                        <graphic n="1003" width="12.32405cm" height="7.9322083333333335cm" url="Pictures/8f19bfeaef78cdefb5f72e50da95abb4.png" rend="inline"/>
+                        <head>Interaktive Elemente im Jupyter Notebook.</head>
+                    </figure>
+                    <p style="text-align: left; ">Markdown ermöglicht eine multimodale Gestaltung (durch Tabellen, Abbildungen, GIFs, Querverweise etc.), bibliographische Angaben werden über BibTeX erzeugt. Mittels der MyST (Markedly Structured Text) Markdown-Erweiterung lassen sich weitere UI-Elemente hinzufügen, z.B. Informationsboxen (Abb. 04). Diese Strukturierungsmöglichkeit macht Informationen leicht auffindbar (scannable) und Inhalte schnell überfliegbar (skimmable).</p>
+                    <figure>
+                        <graphic n="1004" width="16.002cm" height="20.73098611111111cm" url="Pictures/f9b0f56fa9101a6cb503a095cac1ee19.png" rend="inline"/>
+                        <head>Multimodale Elemente in der Markdown-Datei zur Fragestellung.</head>
+                    </figure>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Potentiale von Jupyter Book-basierten OER: Modularisierung, Skalierbarkeit</head>
+                <p>Die Realisation als Jupyter Book ermöglicht es, eine Modularisierung der Fallstudie vorzunehmen und so atomisierte Einheiten zu spezifizierten Lernzielen aus dem Feld des Datenkomptenzerwerbs zu erstellen und referenzierbar zu machen. Darüber hinaus birgt das technische Konzept von Jupyter Books die Möglichkeit, etwas zu entwickeln, was wir “scalable OER” nennen. Die dargestellte Fallstudie kann nämlich auf verschiedenen “levels of expertise” durchgeführt werden:</p>
+                <list type="unordered">
+                    <item>als traditionelles Buch (ohne Interaktion)</item>
+                    <item>mit interaktiven Elementen auf der Website</item>
+                    <item>durch die Öffnung eines Jupyter Notebooks via Binder oder Google Colab im Browser (ermöglicht individuelle Anpassungen und Erweiterung der Studie)</item>
+                    <item>mit dem Herunterladen des Books oder der Notebooks (ermöglicht die lokale Ausführung der Notebooks und die Anwendung auf eigenen Daten)</item>
+                </list>
+                <p>Die Modularisierbarkeit sowie die flexible Skalierbarkeit von Jupyter Books bieten das Potential, eine Vielzahl von Lernenden mit unterschiedlichem Vorwissen zu erreichen.</p>
+                <p>Fördervermerk</p>
+                <p>QUADRIGA wird im Rahmen der Richtlinie Förderung von Projekten zum Aufbau von Datenkompetenzzentren in der Wissenschaft des Bundesministeriums für Bildung und Forschung unter Kennzeichen 16DKZ2034A, 16DKZ2034G und 16DKZ2034H gefördert.</p>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                        
+                            <hi style="font-size:10pt" xml:space="preserve"> URL: </hi>https://www.quadriga-dk.de/ 
+                            <hi style="font-size:10pt" xml:space="preserve"> (letzter Zugriff am 14.11.2024)</hi>
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                         Vgl. dazu die textwissenschaftliche Fallstudie: 
+                            <ref target="https://dh-network.github.io/quadriga/markdown/intro.html">https://dh-network.github.io/quadriga/markdown/intro.html</ref>, Stand: 28.11.2024
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn3" n="3">
+                             URL: 
+                                <ref target="https://pypi.org/project/jupyter-book/">
+                                    <hi rend="color(1155CC)">https://pypi.org/project/jupyter-book/</hi>
+                                </ref> (letzter Zugriff am 15.07.2024)
+                            
+                        </note>
+<note rend="footnote text" xml:id="ftn4" n="4">
+                             Da sich andere Ausführungsoptionen wie 
+                                <ref target="http://mybinder.org/">mybinder.org</ref> oder Live Coding über thebe (
+                                <ref target="https://thebe.readthedocs.io/">https://thebe.readthedocs.io/</ref>) momentan als unzuverlässig zeigen, steht nur Google Colab zur Verfügung.
+                            
+                        </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl style="text-align: left; "><hi rend="bold">Betlem, Peter, Nil Rodes, Sara Mollie Cohen und Marie Vander Kloet</hi>. 2024. "Jupyter Book as an open online teaching environment in the geosciences: Lessons learned from Geo-SfM and Geo-UAV". Preprint. 
+                        <ref target="https://doi.org/10.5194/gc-2024-6">https://doi.org/10.5194/gc-2024-6</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Buchholz, Bettina, Ulrike Lucke, Sonja Schimmler, Jan-Hendrik Bakels, Jan Bernoth, Frank Fischer, Lena Gieseke, Matthias Grotkopp, Torsten Hiltmann, Daniel Krupka, Skadi Loist, Julia Meisner, Dennis Mischke, Robin Möser, Heike Neuroth, Vivien Petras, Juliane Schmeling, Sibylle Söring und Peer Trilcke</hi>. 2024. "Umsetzungskonzept QUADRIGA: Berlin-Brandenburgisches Datenkompetenzzentrum für Digital Humanities, Verwaltungswissenschaft, Informatik und Informationswissenschaft". Zenodo. 
+                        <ref target="https://doi.org/10.5281/zenodo.10805016">https://doi.org/10.5281/zenodo.10805016</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Chen, Enze und Mark Asta</hi>. 2022. "Using Jupyter Tools to Design an Interactive Textbook to Guide Undergraduate Research in Materials Informatics". 
+                        <hi rend="italic">Journal of Chemical Education</hi> 99(10): 3601–3606. 
+                        <ref target="https://doi.org/10.1021/acs.jchemed.2c00640">https://doi.org/10.1021/acs.jchemed.2c00640</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Executable Books Community</hi>. 2020. "Jupyter Book (v0.10)". Zenodo. 
+                        <ref target="https://doi.org/10.5281/zenodo.4539666">https://doi.org/10.5281/zenodo.4539666</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Foran, John</hi>. 2001. "The Case Method and the Interactive Classroom". 
+                        <hi rend="italic">Thought &amp; Action</hi> 17(1): 41–50.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Kay, Judy, Michael Barg, Alan Fekete, Tony Greening, Owen Hollands, Jeffrey H. Kingston, und Kate Crawford</hi>. 2000. "Problem-Based Learning for Foundation Computer Science Courses". 
+                        <hi rend="italic">Computer Science Education</hi> 10(2): 109–128. 
+                        <ref target="https://doi.org/10.1076/0899-3408(200008)10:2;1-C;FT109">https://doi.org/10.1076/0899-3408(200008)10:2;1-C;FT109</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Markant, Douglas B., Azzurra Ruggeri, Todd M. Gureckis und Fei Xu</hi>. 2016. "Enhanced Memory as a Common Effect of Active Learning". 
+                        <hi rend="italic">Mind, Brain, and Education</hi> 10 (3): 142–152. 
+                        <ref target="https://doi.org/10.1111/mbe.12117">https://doi.org/10.1111/mbe.12117</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Mischke, Dennis, Peer Trilcke und Henny Sluyter-Gäthje</hi>. 2021. "Workflow-basiertes Lernen in den Geisteswissenschaften: digitale Kompetenzen forschungsnah vermitteln". 
+                        <hi rend="italic">In Bildung in der digitalen Transformation</hi>, hg. von Heinz-Werner Wollersheim, Marios Karapanos und Norbert Pengel, 190–195. Münster, New York: Waxmann. 
+                        <ref target="https://www.waxmann.com/index.php?eID=download&amp;buchnr=4456">https://www.waxmann.com/index.php?eID=download&amp;buchnr=4456</ref>, letzter Zugriff: 28.11.2024.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Samoilova, Evgenia, Henny Sluyter-Gäthje, Daniil Skorinkin, Hannes Schnaitter, Peer Trilcke und Ulrike Lucke</hi>. 2024. "Forschungsgeleitete Vermittlung von Datenkompetenz. Mediendidaktische Aufbereitung von Fallstudien zu Bildungsangeboten." 
+                        <hi rend="italic">INFORMATIK 2024</hi>: 2153–2166. 
+                        <ref target="https://doi.org/10.18420/inf2024_187">https://doi.org/10.18420/inf2024_187</ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">van Merriënboer, Jeroen J. G.</hi>. 1997. 
+                        <hi rend="italic">Training complex cognitive skills. A four-component instructional design model for technical training</hi>. Educational Technology Publ, Englewood Cliffs.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Ridsdale, Chantel, James Rothwell, Mike Smit, Hossam Ali-Hassan, Michael Bliemel, Dean Irvine, Daniel Kelley, Stan Matwin und Brad Wuetherick</hi>. 2015. "Strategies and Best Practices for Data Literacy Education Knowledge Synthesis Report". Dalhousie University. 
+                        <ref target="https://doi.org/10.13140/RG.2.1.1922.5044">https://doi.org/10.13140/RG.2.1.1922.5044</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

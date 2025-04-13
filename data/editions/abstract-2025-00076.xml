@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="N_GER_Paul_Large_Language_Models_im_Archiv__Prompt_Engineeri">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Large Language Models im Archiv: Prompt-Engineering für Archivar:innen</title>
+                <author>
+                    <persName>
+                        <surname>Näger</surname>
+                        <forename>Paul M.</forename>
+                    </persName>
+                    <affiliation>Universität Münster, Deutschland</affiliation>
+                    <email>paul.naeger@uni-muenster.de</email>
+                    <idno type="ORCID">0000-0002-0251-2531</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Eickhoff</surname>
+                        <forename>Dominic</forename>
+                    </persName>
+                    <affiliation>LWL-Archivamt für Westfalen, Münster, Deutschland</affiliation>
+                    <email>dominic.eickhoff@lwl.org</email>
+                    <idno type="ORCID">0009-0008-6044-3862</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-12-02T22:43:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Vortrag: Methode</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Large Language Models</term>
+                    <term>Archiv</term>
+                    <term>Findbucheinleitung</term>
+                    <term>Prompt Engineering</term>
+                    <term>Langzeitarchivierung</term>
+                    <term>Data Life Cycle</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Datenerkennung</term>
+                    <term>Annotieren</term>
+                    <term>Bearbeitung</term>
+                    <term>Archivierung</term>
+                    <term>Schreiben</term>
+                    <term>Metadaten</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung</head>
+                <p>Allen archivierten Objekten ist gemein, dass für sie Metadaten in Textform erhoben werden, die als Findmittel, z. B. Findbücher oder Datenbanken, ausgegeben werden. Der Umgang mit den entstehenden Textdaten gehört zu den grundlegenden Aufgaben fast aller archivarischen Arbeitsprozesse. Dabei lassen sich verschiedene Aufgabentypen im Archiv unterscheiden: Bei der Erschließung werden Textdaten erstellt, mit Konkordanzen abgeglichen, formatiert, klassifiziert, und schließlich annotiert oder mit Normdaten angereichert. Aufbau und Pflege von archivischen Erschießungsdaten sind anspruchsvoll, jedoch in weiten Teilen repetitiver Natur (z. B. bei der Übernahme von Massenakten). </p>
+                <p>Mit der Entwicklung von generativen großen Sprachmodellen (Large Language Models, LLMs) gibt es Hoffnung, Teile solcher Textarbeit automatisieren zu können. Diese Modelle wurden durch die Transformer-Architektur (Vaswabi et al., 2017) in jüngster Vergangenheit zu einer Reife mit erstaunlichen Fähigkeiten entwickelt (Ouyang, 2022). Die meisten dieser aktuellen Modelle wurden explizit trainiert für die Textgenerierung auf Grundlage einer Nutzeranweisung (Prompt) und eines Kontextes. Es hat sich gezeigt, dass sie aber auch für viele andere Aufgaben der automatisierten Textverarbeitung (Natural Language Processing, NLP) geeignet sind. Archivar:innen ist dadurch ein mächtiges Werkzeug an die Hand gegeben, das verschiedenste KI-basierte Textgenerierungs- und Textverarbeitungsaufgaben durchführen kann – und das ohne jegliches Programmieren, allein aufgrund von Anweisungen in natürlicher Sprache.</p>
+                <p>Vor diesem Hintergrund ist es verständlich, dass es aktuell ein großes Interesse am Einsatz von LLMs in den textverarbeitenden Geistes- und Informationswissenschaften gibt. In diesem Artikel wollen wir einen Überblick über die möglichen Anwendungen von LLMs in der Archivarbeit geben, sowie an einem Beispiel demonstrieren, wie dies konkret durchgeführt werden kann, welche Probleme dabei auftreten, was mögliche Lösungen sein könnten und welche Grenzen aktuell bestehen. Um den Adressat:innenkreis der vorliegenden Arbeit möglichst weit zu halten, beschränken wir uns bei den diskutierten Anwendungsfällen auf die Arbeit im natursprachlichen Chat-Fenster (und lassen Anfragen über die API oder explizite Programmierung außen vor). Unsere Ergebnisse zum Prompt Engineering sind nicht nur für die Arbeit in Archiven, sondern allgemein für die Digital Humanities von Interesse.<ref n="1" target="ftn1"/>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Der Archival Metadata Cycle und Potentiale für den Einsatz von LLMs </head>
+                <p>Um ein klares Framework für mögliche Anwendungsbereiche von LLMs in der Archivarbeit zu erhalten, führen wir hier zunächst eine Taxonomie für die verschiedenen Verarbeitungsschritte archivischer Metadaten ein. Diese ist angelehnt an die Konzepte des 
+                    <hi rend="italic">Research Data Life Cycle</hi> für Forschungsdaten und des 
+                    <hi rend="italic">Records Life Cycle</hi> aus dem Bereich des 
+                    <hi rend="italic">Records Managements</hi>, unterscheidet sich aber von diesen essentiell, weil Archivmetadaten als Ewigkeitsdaten intendiert sind. Entsprechend unterliegen sie keinem 
+                    <hi rend="italic">Lebens</hi>zyklus mit wohldefiniertem Ende, sondern einem iterativen 
+                    <hi rend="italic">Verarbeitungs</hi>zyklus, der ohne Ende konzipiert ist (vgl. Yusof et al., 2000, 135-141). Der 
+                    <hi rend="italic">Archival Metadata Cycle</hi> (Zyklus archivischer Metadaten), wie wir die Taxonomie nennen wollen, soll nach unserem Vorschlag folgende vier Stufen umfassen: Datenproduktion, Datenpflege, Datenbereitstellung und Datennutzung (Abb. 1).
+                </p>
+                <figure>
+                    <graphic n="1001" width="16.501180555555557cm" height="7.145266666666667cm" url="Pictures/adfa0d2da1954692a17ae2a9b3a1427a.png" rend="inline"/>
+                    <head>Abbildung 1: Archival Metadata Cycle</head>
+                </figure>
+                <p>Wir skizzieren nun die Arbeitsschritte zu jedem der vier Zyklusschritte im Hinblick darauf, wo Potential für die Anwendung von LLMs besteht. </p>
+                <p>Unter 
+                    <hi rend="bold">Datenproduktion</hi> verstehen wir im archivischen Kontext die Erzeugung von Metadaten im Prozess der Erschließung, insbesondere die Ordnung und Verzeichnung. Zunächst geht jeder Erschließung eine Sichtung und Bewertung des abgegebenen Registraturguts voraus. Im weiteren Sinne wollen wir auch diesen Vorgang dem Schritt der Datenproduktion zurechnen. Bei dieser Bewertung könnten LLMs nützlich sein, wenn es sich um elektronisches Archivgut handelt: LLMs könnten den Inhalt zusammenfassen und Vorschläge für die Archivwürdigkeit abgeben, indem sie analysieren, inwiefern die Archivalien mit zuvor hinterlegten Bewertungsprofilen (die eine Reihe von Kriterien enthalten) übereinstimmen. 
+                </p>
+                <p>LLMs könnten auch bei der Ordnung des Archivguts eingesetzt werden. Dazu ist festzuhalten, dass Archivgut heutzutage bei der Übernahme hauptsächlich nach dem Provenienzprinzip geordnet wird, d.h. nach seinem Entstehungszusammenhang. Die oberste Hierarchie bildet dabei die Archivtektonik mit Untergruppen wie bspw. Beständen und Sammlungen. Innerhalb eines Bestands werden die Dokumente dann systematisch in Klassifikationen unterteilt, sodass thematisch zusammengehörige Archivalien in ihrem Kontext verbleiben. LLMs könnten nun eingesetzt werden, um Vorschläge für die Ordnung oder die Vergabe von aussagekräftigen Titeln für die Klassifikationen zu machen. Basis für die Vorschläge der LLMs könnten Aktenpläne oder Abgabelisten der abgebenden registraturbildenden Institution sein. </p>
+                <p>Bei der Verzeichnung muss zwischen digitalisiertem Archivgut und genuin elektronischem Archivgut unterschieden werden. Während ersteres für potentielle LLM-Verarbeitung erst in zusätzlichen Arbeitsprozessen digitalisiert und volltexterkannt werden müsste, können LLMs für letzteres (durch die Analyse der Volltext-Inhalte) Titel, Laufzeiten und Enthält-Vermerke generieren. Auch der Inhalt der Dokumente ist wichtig für die Verzeichnung. LLMs könnten auch hierbei helfen, indem sie unstrukturierte Datensätze bspw. aus Fileablagen analysieren, zusammenfassen und Zusammenhänge offenlegen (vgl. Sack, 2021). Auch die Kategorisierung von Dokumenten anhand 
+                    <hi rend="background(white)">eines hinterlegten Verschlagwortungsvokabulars (Thesauri)</hi><ref n="2" target="ftn2"/>
+                    <hi rend="background(white)" xml:space="preserve"> könnten LLMs übernehmen. Schließlich können LLMs beim</hi> Verfassen von Findbucheinleitungen (Textgenerierung) unterstützen (vgl. King, 2024). Letztere Aufgabe werden wir im nächsten Abschnitt exemplarisch demonstrieren. 
+                </p>
+                <p>Das Feld der 
+                    <hi rend="bold">Datenpflege</hi> meint mögliche Überarbeitungen der bereits bestehenden Erschließungsangaben in den Datenbanken der 
+                    <hi rend="background(white)">zentralen Archivinformationssysteme (AIS)</hi>. Hier ist denkbar, dass LLMs bei nachträglichen Tiefenerschließungen, bei der Korrektur oder dem Einpflegen von KI-gestützten Transkriptionen digitalisierten analogen Archivguts oder bei der Anreicherung mit Normdaten, etwa GND-IDs, assistieren. Die Frage nach der Arbeitsoberfläche für Metadaten und deren KI-gestützte Bearbeitung ist dabei zentral. Herausforderungen für Archive liegen in der Bedienung von KI-Tools und der Implementierung von Schnittstellen zum Datenaustausch. Ziel sollte die Anreicherung bestehender Erschließungsdaten in reimportierbarer Form sein.
+                </p>
+                <p>Bei der 
+                    <hi rend="bold" xml:space="preserve">Datenbereitstellung </hi>gibt es keine unmittelbare Anwendungsmöglichkeit für LLMs. Es ist jedoch wichtig zu diskutieren, wie Daten für eine Nutzung von LLMs am besten bereitgestellt werden. Hierbei müssen sowohl die Metadaten als auch die Dokumentinhalte berücksichtigt werden. Wegweisendes Vorbild für Archive ist die Bildung digitaler Korpora digitalisierter und OCR-erkannter historischer Zeitungen (Oberbichler, 2024). So bietet beispielsweise das Deutsche Zeitungsportal über die Schnittstellen der Deutschen Digitalen Bibliothek (DDB) die Möglichkeit, Objekte einzeln herunterzuladen oder als Harvesting über die Schnittstellen der DDB (vgl. Deutsche Digitale Bibliothek, 2024; Archivportal-D, 2024). Bzgl. der Metadaten ist es möglich, aber bislang kaum praktiziert, Nutzungsanfragen an Archive zu stellen, um ganze Metadatensätze für die maschinelle Analyse zu erhalten. Denkbare Dateiformate für einen solchen Export aus den AIS sind XML-Dateien im EAD(DDB)-Standard, tabellarische XML-Dateien (für Excel / CSV), sowie Text-Dateien (wie RTF, MD, TXT). 
+                </p>
+                <p>Das Feld der 
+                    <hi rend="bold" xml:space="preserve">Datennutzung </hi>ist schließlich der Berührungspunkt von Digital Humanities und Archiven, wenn DH-Forscher:innen Archiv-Daten in ihren Studien analysieren. Hier schließt sich der Datenkreislauf, wenn die während der Datennutzung entstehenden Metadaten – etwa im Rahmen von Citizen Science, Collaborative Tagging oder anderen Crowd Sourcing-Ansätzen – wiederum für die Anreicherung der Metadaten im Archiv selbst verwendet werden. Der immer noch neue und in deutschen Archiven bislang nicht etablierte Erschließungsstandard 
+                    <hi rend="italic">Records in Context</hi> (RiC) hat die semantische Anreicherung der Erschließungsangaben mit Verknüpfungen und Zuordnungen zum Ziel, die auch einem LLM mehr Kontext für Analysen bieten könnte (vgl. Gniffke, 2020; Hawkins, 2022). In der KI-gestützten Recherche (z. B. Yamasaki, Tomiura und Shimizu 2023) etablieren sich zunehmend sog. RAG-Systeme (Retrieval Augmented Generation), die bei einer Nutzeranfrage zunächst mittels semantischer Suche (durch sog. Embedding-LLMs) nach relevanten Texten in einem großen Korpus suchen (retrieval), um dann mit der Information dieser gefundenen Textdaten (augmented) und einem generativen LLM eine Antwort auf die Nutzerfrage zu erzeugen (generation).
+                </p>
+                <p>Aus diesem Überblick wird deutlich, dass LLMs für eine Vielzahl an Aufgaben in Archiven, die einen sprachlichen Fokus haben, nützlich, zeit- und ressourcensparend eingesetzt werden können. Insbesondere in einem Umfeld, in dem viele Aufgaben in Archiven aufgrund fehlenden Personals und explodierender Datenmengen oft nur langsam, in übersichtlicher Qualität (zunehmend flache Erschließung) oder gar nicht mehr durchgeführt werden, kann der sinnvolle Einsatz von generativer KI ein Schlüsselbaustein für die zukünftige Archivarbeit sein. Von einer zeitnahen Bereitstellung von Daten in hoher Qualität würden auch die Digital Humanities als ein primärer Verwerter von Archivdaten profitieren. </p>
+                <p>Im Folgenden wollen wir auf eine typische Aufgabe näher eingehen, dem Schreiben einer Findbucheinleitung, und daran exemplarisch demonstrieren, wie man dafür geeignet vorgehen kann. Unsere Diskussion wird zeigen, dass ein überlegtes, gestuftes Vorgehen ebenso wichtig ist, wie ein ausgefeiltes Prompt Engineering. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Textgenerierung mit LLMs: Findbucheinleitung</head>
+                <p>Findmittel wie z. B. Findbücher sind die zentralen Rechercheinstrumente eines Archivs, die die vorhandenen Archivalien in einzelne Verzeichnungseinheiten gliedern und mit Metainformationen beschreiben. Findbücher beschreiben sog. Bestände, die Archivalien gleicher Provenienz zusammenfassen, wie z. B. den Nachlass einer Person. Eine sog. Findbucheinleitung wird dem Findbuch vorangestellt, um weitere Informationen über den Bestand zu geben, z. B. über die Überlieferungssituation, die Geschichte von dessen Erschließung, Nutzungshinweise und nicht zuletzt eine zusammenfassende inhaltliche Übersicht der Themen, Dokumenttypen und wichtigen Personen oder Organisationen, die im Bestand vorkommen. Oft werden auch weitere relevante Informationen genannt, bei Nachlässen typischerweise zu Leben und Werk der betreffenden Person.</p>
+                <p>Wenn ein:e Archivar:in einen Bestand erschließt, ist das Verfassen einer Findbucheinleitung ein wichtiger Schritt, der typischerweise gegen Ende des Prozesses ausgeführt wird. Das Verfassen kann zeitraubend und mühsam sein. </p>
+                <p>Es liegt nahe, dass LLMs mit ihren Fähigkeiten, Texte zu generieren, dafür eine hervorragende Unterstützung sein können. Um deren Fähigkeiten zu evaluieren, haben wir eine Studie durchgeführt, für die uns Findbücher aus dem Westfälischen Literaturarchiv im XML-Format vorlagen. Da diese bereits Findbucheinleitungen enthielten, wurden letztere zunächst entfernt und als Referenz zum späteren Vergleich gespeichert. Die resultierenden Findbucheinträge-ex-Einleitung simulierten eine typische Situation für eine:n Archivar:in gegen Ende der Bestandserschließung. Für diese Situation prüften wir verschiedene Methoden, das Sprachmodell GPT-4o (von OpenAI) dazu zu bringen, geeignete Findbucheinleitungen zu schreiben.</p>
+                <p>Im Folgenden schildern wir die allgemeinen Ergebnisse, die wir durch qualitative Vergleiche gewonnen haben. Illustrierend und die allgemeinen Ergebnisse belegend verweisen wir exemplarisch auf die Ergebnisse, die wir zu dem Bestandseintrag des westfälischen Schriftstellers Werner Warsinsky (1910–1992) erhalten haben (Westfälisches Literaturarchiv, 2022). Die vom Archivar erstellte Findbucheinleitung zu diesem Bestand ist lang (2062 Wörter), führt in dessen Leben und Werk ein und verknüpft diese Darstellung detailliert mit den Archivalien des vorhandenen Bestands. Sie kommentiert außerdem den Nachlass und stellt dessen Bearbeitungsstand dar.</p>
+                <p>Für unsere Studie wurde die Datei eines Findbucheintrags-ex-Einleitung im XML-Format im Chat-Fenster hochgeladen und diente so als wesentlicher Kontext für den anschließenden Arbeitsschritt der Einleitungsgenerierung. Bereits mit einem einfachen Prompt („Schreibe eine Einleitung zu diesem Bestandseintrag aus einem Findbuch.“) erhält man ein Ergebnis (ChatGPT, 2024a). Der Text ist kohärent und es wird auch Bezug auf die im Findbuch verzeichneten Werke genommen, dies geschieht aber in recht oberflächlicher Weise. Auch die Gesamtlänge ist selbst bei umfangreichen Findbucheinträgen zu knapp (ca. 200 Wörter im Vergleich zu 2000 Wörtern des menschlich erstellten).</p>
+                <p>Wir haben deshalb mit Prompt Engineering (PE) die Befehle an das Modell variiert und verschiedene Möglichkeiten elaborierterer Anweisungen an das Modell getestet. Das Vorgehen war sowohl orientiert an bekannten Prinzipien des PE, als auch gestützt auf Trial and Error. Das Ergebnis dieser Versuchsreihe ist folgender Workflow, den wir hier zunächst präsentieren und dann erläutern. Die folgenden Prompts werden nacheinander in einem Chat ausgeführt. Hochgeladene Dateien werden in eckigen Klammern notiert:</p>
+                <quote>
+                    <hi rend="underline">Prompt 1</hi>: Gib einen präzisen und vollständigen Überblick über das Dokument.
+                    <lb/>[dazu hochgeladen: das Findbuch-ex-Einleitung im XML-Format]
+                </quote>
+                <quote>
+                    <hi rend="underline">Prompt 2</hi>: Du bist ein erfahrener Archivar. Schreibe eine Einleitung zu diesem Bestandseintrag aus einem Findbuch von 2000 Wörtern Länge. Berücksichtige dabei auch die Informationen aus der anhängenden Datei. Neben anderen üblichen Punkten soll die Findbucheinleitung insbesondere folgende Punkte ausführlich behandeln:
+                </quote>
+                <quote>– Biographie des Autors</quote>
+                <quote>– Werk des Autors</quote>
+                <quote>– Vorliegender Bestand</quote>
+                <quote>[dazu hochgeladen: ein Dokument mit Informationen zu Leben und Werk des Autors im Reintext-Format, s. dazu unten]</quote>
+                <p>In diesem Fall ist das gesuchte Ergebnis (ChatGPT, 2024b), die Findbucheinleitung, erst der Output des zweiten Prompts. Diese ist mit der einfach generierten Einleitung kaum mehr zu vergleichen: Sie ist reich an Informationen und gibt einen guten Überblick über Leben und Werk des Autors sowie den vorliegenden Bestand. Natürlich darf man nicht erwarten, dass diese Informationen zur Bestandsgeschichte und -erschließung enthält, weil es sich dabei um Informationen handelt, die i.d.R. exklusiv dem bearbeitenden Archiv vorliegen. Wenn man diese Ergänzungen durchführt und einige weitere kleinere Anpassungen vornimmt, könnte das Ergebnis aber durchaus als Findbucheinleitung verwendet werden. Allerdings erreicht diese nicht die Qualität einer sehr differenzierten Einleitung mit vielen Querbezügen zum Bestand (wie sie im Fall von Warsinsky durch den Archivar erstellt wurde).</p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Ad Prompt 1</head>
+                    <p>Gesamter Prompt: Der Überblick über den Findbucheintrag ist nicht Ziel des Promptings, sondern dient dazu, dass GPT die Datei gründlich liest und durch die ausgegebene Zusammenfassung einen geeigneten Kontext für Prompt 2 schafft. Die Separierung des Einlesens der Datei von Prompt 2 folgt dem Prinzip der Task Decomposition (vgl. Li et al., 2024).</p>
+                    <p>„präzise und vollständig“: Dieser kleine Zusatz macht den Überblick über die Datei merkbar detaillierter. Es ist ein Nachteil von LLMs, dass solche Kleinigkeiten im Input deutliche Unterschiede im Output bewirken können.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Ad Prompt 2</head>
+                    <p>„Du bist ein erfahrener Archivar“: Hier wird das Prinzip des Persona-Promptings angewandt (vgl. Olea et al., 2024). Führt zu kleineren Verbesserungen.</p>
+                    <p>„von 2000 Wörtern Länge“: Spezifiziert eine gewünschte Outputlänge, hier orientiert an der vom Archivar verfassten Originaleinleitung für den Eintrag zu Warsinsky. Unsere Versuche zeigen, dass eine Forderung nach einem solchen längeren Text sinnlos ist, wenn das LLM nicht genug Informationen dafür erhält. Im vorliegenden Fall wird dies durch die beiden hochgeladenen Dateien gesichert. (Andernfalls kürzt das Modell das Output doch ab oder schreibt Allgemeinplätze im Umfeld des Themas).</p>
+                    <p>„Neben anderen üblichen Punkten soll die Findbucheinleitung insbesondere folgende Punkte ausführlich behandeln…“: Dem Prinzip der Spezifität folgend („möglichst spezifische Anweisungen“, vgl. Bsharat, 2023) gibt diese Anweisung dem LLM eine Antwortstruktur vor. Ohne diese hatte das LLM i.d.R. zwar auch das Leben des Autors thematisiert, aber nicht immer einen Überblick über das Gesamtwerk und den vorliegenden Bestand gegeben.</p>
+                    <p>„Dokument mit Informationen zu Leben und Werk des Autors“: Solche Informationen müssen für weniger bekannte Personen hinzugefügt werden, weil ChatGPT für diese i.d.R. keine Informationen über Leben und Werk vorliegen. Weist man ChatGPT bspw. an „Schreibe eine Biographie über den Schriftsteller Werner Warsinsky (1910-1992) mit 500 Wörtern Länge“, fabuliert es eine völlig unzutreffende Lebensgeschichte mit einem Studium in Frankfurt, jüdischen Wurzeln, usw. (Halluzinationen; vgl. Rahman et al. 2024).</p>
+                    <p>Alternativ zu einer Datei kann man ChatGPT auch anweisen, relevante Informationen zu Leben und Werk der betreffenden Person aus dem Internet zu laden. Wenn man dies tut, erhält man bessere Ergebnisse, wenn man dies in einem separaten Schritt ausführt (wieder Task Decomposition).</p>
+                    <p>Die Ergebnisse der ChatGPT-Suche im Internet können aber dürftig sein. Will man bessere Ergebnisse erhalten, kann man, wie wir es getan haben, mithilfe des Suchdienstes perplexity.ai nach geeigneten Informationen suchen. Die Plattform kombiniert eine Websuche mit weiterer Verarbeitung durch ein LLM (nämlich GPT) und kann so maßgeschneiderte Antworten auf natursprachliche Anfragen geben, die die Informationen aus den i.d.R. fünf relevantesten Seiten oder Dokumenten zusammenfassen (und diese als Quelle angeben). Diese Antworten haben oft nicht selten eine deutlich höhere Qualität als die Websuche von ChatGPT (Perplexity AI, 2024). Die generierten Inhalte haben wir kopiert, in einer Datei abgespeichert und in ChatGPT hochgeladen.</p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Konklusion</head>
+                <p>Wir haben am Beispiel der Findbucheinleitung gezeigt, dass LLMs bei geeignetem Prompt Engineering hilfreiche Assistenten sein können, die sinnvoll und ressourcensparend in Archiven einsetzbar sind. Die qualitative Auswertung zeigt jedoch auch, dass noch nicht alle Aufgaben verlässlich durchführbar sind und auch nicht in der Qualität eine:r erfahrenen Archivar:in. Die Ergebnisse brauchen im Moment deshalb Kontrolle (und in Zukunft verbesserte Methoden). Trotz dieser Einschränkungen, ist zu erwarten, dass LLMs zur Bewältigung der archivarischen Arbeit beitragen werden und dass das gezeigte Prompt-Engineering für Archivar*innen eine neue Facette der Archivarbeit werden wird.</p>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                         Contributor Roles (CRediT): Paul M. Näger (Conceptualization, Writing, Methodology, Software), Dominic Eickhoff (Conceptualization, Writing, Data Curation, Visualization)
+                    </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                         Diese enthalten oft ein kontrolliertes Vokabular, das in den zentralen Archivinformationssystemen (AIS) gepflegt wird.
+                    </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl><hi rend="bold">Archivportal-D</hi>. 2024. „Schnittstellen.“ 
+                        <ref target="https://pro.deutsche-digitale-bibliothek.de/daten-nutzen/schnittstellen">https://pro.deutsche-digitale-bibliothek.de/daten-nutzen/schnittstellen</ref> (Zugriff am 24.07.2024).
+                    </bibl>
+                    <bibl><hi rend="bold">Bsharat, Sondos Mahmoud, Aidar Myrzakhan und Zhiqiang Shen</hi>. 2023. „Principled Instructions Are All You Need for Questioning Llama-1/2, GPT-3.5/4.“ 
+                        <hi rend="italic">arXiv</hi>
+                        <ref target="https://arxiv.org/abs/2312.16171v2">2312.16171v2</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">ChatGPT</hi>. 2024a. „Einleitung Bestandseintrag Warsinsky.“ 
+                        <ref target="https://chatgpt.com/share/7e8ec0b3-a136-443c-93f3-2bff416d8fc3">https://chatgpt.com/share/7e8ec0b3-a136-443c-93f3-2bff416d8fc3</ref> (Zugriff am 24.7.2024)
+                    </bibl>
+                    <bibl><hi rend="bold">ChatGPT</hi>. 2024b. „Übersicht Werner Warsinsky Werke.“ 
+                        <ref target="https://chatgpt.com/share/8712e1ba-9a21-4f45-96b7-1e0158b3081a">https://chatgpt.com/share/8712e1ba-9a21-4f45-96b7-1e0158b3081a</ref> (Zugriff am 24.7.2024)
+                    </bibl>
+                    <bibl><hi rend="bold">Consultative Committee for Space Data Systems (CCSDS)</hi>. 2012. „Reference Model for an Open Archival Information System (OAIS). Recommended Practice CCSD 650.0-M-2. Magentabook 2: 2-1 - 2-11.“ 
+                        <ref target="https://public.ccsds.org/pubs/650x0m2.pdf">https://public.ccsds.org/pubs/650x0m2.pdf</ref> (Zugriff am 24.07.2024).
+                    </bibl>
+                    <bibl><hi rend="bold">Deutsche Digitale Bibliothek</hi>. 2024. „Suchtipps für Forschung und Vermittlung.“ 
+                        <ref target="https://www.deutsche-digitale-bibliothek.de/content/suchtipps-fuer-forschung-und-vermittlung">https://www.deutsche-digitale-bibliothek.de/content/suchtipps-fuer-forschung-und-vermittlung</ref> (Zugriff am 24.07.2024)
+                    </bibl>
+                    <bibl><hi rend="bold">Gniffke, David</hi>. 2020. „Semantic Web und Records in Contexts (RiC).“ 
+                        <hi rend="italic">Archivwelt</hi>. 
+                        <ref target="https://doi.org/10.58079/cw30">https://doi.org/10.58079/cw30</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">Hawkins, Ashleigh</hi>. 2022. „Archives, Linked Data and the Digital Humanities: Increasing Access to Digitised and Born-Digital Archives via the Semantic Web“. 
+                        <hi rend="italic">Archival Science</hi> 22 (3): 319–44. 
+                        <ref target="https://doi.org/10.1007/s10502-021-09381-0">https://doi.org/10.1007/s10502-021-09381-0</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">King, Owen C</hi>. 2024. „Archival Meta-Metadata: Revision History and Positionality of Finding Aids.“ 
+                        <hi rend="italic">Archival Science</hi> 24 (3): 509–29. 
+                        <ref target="https://doi.org/10.1007/s10502-024-09443-z">https://doi.org/10.1007/s10502-024-09443-z</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">Li, Yinghao, Rampi Ramprasad und Chao Zhang</hi>. 2024. „A Simple but Effective Approach to Improve Structured Language Model Output for Information Extraction.“ 
+                        <hi rend="italic">arXiv</hi>
+                        <ref target="https://arxiv.org/abs/2402.13364v1">2402.13364v1</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">Oberbichler, Sarah</hi>. 2024. „Large-Scale Research with Historical Newspapers: A Turning Point through Generative AI.“ 
+                        <hi rend="italic">Digital Humanities Lab</hi>. 
+                        <ref target="https://doi.org/10.58079/11v9i">https://doi.org/10.58079/11v9i</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">Olea, Carlos, Holly Tucker, Jessica Phelan, Cameron Pattison, Shen Zhang, Maxwell Lieb, Doug Schmidt, and Jules White</hi>. 2024. „Evaluating Persona Prompting for Question Answering Tasks.“ In 
+                        <hi rend="italic" xml:space="preserve">SPTM, AIS, SOENG, AMLA, NLPA, IPPR, CSIT – 2024, </hi>hg. von D. C. Wyld et al, 63–81. 
+                        <ref target="https://doi.org/10.5121/csit.2024.141106">https://doi.org/10.5121/csit.2024.141106</ref>
+                    </bibl>
+                    <bibl><hi rend="bold">Open Preservation Foundation (OPF)</hi>. 
+                        <ref target="https://openpreservation.org">https://openpreservation.org</ref>. (Zugriff am 24.07.2024)
+                    </bibl>
+                    <bibl><hi rend="bold">Open Preservation Foundation (OPF)</hi>. Allgemein zugängliche Formatbewertungstabelle, Stand 2023. 
+                        <ref target="https://docs.google.com/spreadsheets/d/1XjEjFBCGF3N1spNZc1y0DG8_Uyw18uG2j8V2bsQdYjk/edit?gid=893099148#gid=893099148">https://docs.google.com/spreadsheets/d/1XjEjFBCGF3N1spNZc1y0DG8_Uyw18uG2j8V2bsQdYjk/edit?gid=893099148#gid=893099148</ref>. (Zugriff am 24.07.2024).
+                    </bibl>
+                    <bibl><hi rend="bold">Ouyang, Long, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et. al</hi>. 2022. „Training Language Models to Follow Instructions With Human Feedback.“ 
+                        <hi rend="italic">Advances in Neural Information Processing Systems</hi> 35: 27730–44.
+                    </bibl>
+                    <bibl><hi rend="bold">Perplexity AI</hi>. 2024. „Beschreibe ausführlich die Stationen im Leben von Werner Warsinsky.“ 
+                        <ref target="https://www.perplexity.ai/search/beschreibe-ausfuhrlich-die-sta-allVHpWaSdmrFyu5z4xZfA">https://www.perplexity.ai/search/beschreibe-ausfuhrlich-die-sta-allVHpWaSdmrFyu5z4xZfA</ref> (Zugriff am 24.7.2024).
+                    </bibl>
+                    <bibl><hi rend="bold">Rahman, A. B. M. Ashikur, Saeed Anwar, Muhammad Usman und Ajmal Mian</hi>. 2024. “Defan: Definitive Answer Dataset for LLMs Hallucination Evaluation.“ 
+                        <hi rend="italic" xml:space="preserve">arXiv </hi>
+                        <ref target="https://arxiv.org/abs/2406.09155v1">2406.09155v1</ref>.
+                    </bibl>
+                    <bibl><hi rend="bold">Sack, Harald</hi>. 2021. „Hybride Künstliche Intelligenz in der automatisierten Inhaltserschließung“. In 
+                        <hi rend="italic">Qualität in der Inhaltserschließung</hi>, hg. von Michael Franke-Maier, Anna Kasprzik, Andreas Ledl und Hans Schürmann, 387–406. De Gruyter. https://doi.org/10.1515/9783110691597-019.
+                    </bibl>
+                    <bibl><hi rend="bold">Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser und Illia Polosukhin</hi>. 2017. „Attention is All You Need.“ 
+                        <hi rend="italic">Advances in Neural Information Processing Systems</hi> 30.
+                    </bibl>
+                    <bibl><hi rend="bold">Westfälisches Literaturarchiv</hi>. 2022. „Bestand 1003 / Werner Warsinsky.“ Erstellt am 2.12.2022. 
+                        <ref target="https://www.archive.nrw.de/archivsuche?link=FINDBUCH-Find_1DC28BEA-961D-4DE5-AE7A-F9161A2A1239ACTAPRO">https://www.archive.nrw.de/archivsuche?link=FINDBUCH-Find_1DC28BEA-961D-4DE5-AE7A-F9161A2A1239ACTAPRO</ref> (Zugriff am 24.7.2024).
+                    </bibl>
+                    <bibl><hi rend="bold">Yusof, Zawiyah M. und Robert W. Chell</hi>. 2000. „The Records Life Cycle: An Inadequate Concept for Technology-Generated Records.“ 
+                        <hi rend="italic" xml:space="preserve">Information Development </hi>16,3: 135–141.
+                    </bibl>
+                    <bibl><hi rend="bold">Yamasaki, Motokazu, Yoichi Tomiura und Toshiyuki Shimizu</hi>. 2023. „Investigation of ChatGPT Use in Research Data Retrieval.“ In 
+                        <hi rend="italic">Leveraging Generative Intelligence in Digital Libraries: Towards Human-Machine Collaboration</hi>, hg. von Dion H. Goh, Shu-Jiun Chen und Suppawong Tuarob, 14457:36–40. Lecture Notes in Computer Science. Singapore: Springer Nature Singapore. 
+                        <ref target="https://doi.org/10.1007/978-981-99-8085-7_4">https://doi.org/10.1007/978-981-99-8085-7_4</ref>
+                        <hi rend="footnote_reference">.</hi>
+                    </bibl>
+                    <bibl><hi rend="bold">Zaagsma, Gerben</hi>. 2024. „Between Online and Offline. Doing Archival Research in the Digital Age.“ 
+                        <hi rend="italic">ARCHIV. theorie &amp; praxis</hi> 77,1: 16-19. 
+                        <ref target="https://www.archive.nrw.de/sites/default/files/media/files/Archiv-theorie-praxis1-2024-Internet.pdf">https://www.archive.nrw.de/sites/default/files/media/files/Archiv-theorie-praxis1-2024-Internet.pdf</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="POLLIN_Christopher_Fortgeschrittenes_Prompt_und_AI_Agent_Eng">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Fortgeschrittenes Prompt und AI Agent Engineering für wissenschaftliche Textproduktion</title>
+                <author>
+                    <persName>
+                        <surname>Pollin</surname>
+                        <forename>Christopher</forename>
+                    </persName>
+                    <affiliation>Digital Humanities Craft OG, Österreich</affiliation>
+                    <email>christopher.pollin@uni-graz.at</email>
+                    <idno type="ORCID">0000-0002-4879-129X</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Steyer</surname>
+                        <forename>Timo</forename>
+                    </persName>
+                    <affiliation>Universitätsbibliothek Braunschweig, Deutschland</affiliation>
+                    <email>t.steyer@tu-braunschweig.de</email>
+                    <idno type="ORCID">0000-0003-0218-2269</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Scholger</surname>
+                        <forename>Martina</forename>
+                    </persName>
+                    <affiliation>Institut für Digitale Geisteswissenschaften, Universität Graz, Österreich</affiliation>
+                    <email>martina.scholger@uni-graz.at</email>
+                    <idno type="ORCID">0000-0003-1438-3236</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schiller-Stoff</surname>
+                        <forename>Sebastian David</forename>
+                    </persName>
+                    <affiliation>Institut für Digitale Geisteswissenschaften, Universität Graz, Österreich</affiliation>
+                    <email>sebastian.stoff@uni-graz.at</email>
+                    <idno type="ORCID">0000-0001-6941-113X</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-07-18T07:08:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Workshop</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Generative KI</term>
+                    <term>Prompt Engineering</term>
+                    <term>Textproduktion</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Programmierung</term>
+                    <term>Schreiben</term>
+                    <term>Veröffentlichung</term>
+                    <term>Lehre</term>
+                    <term>Text</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Abstract</head>
+                <p>Dieser eintägige Workshop der AG Angewandte Generative KI und der AG Digitales Publizieren konzentriert sich auf fortgeschrittenes Prompt und AI Agent Engineering für die Textproduktion in wissenschaftlichen Kontexten. Er kombiniert theoretischen Input zu Best Practices und fortgeschrittenen Techniken mit praktischen Hands-on Sessions. Schwerpunkte sind die Vereinbarkeit von KI-gestützter Textgenerierung mit guter wissenschaftlicher Praxis sowie eine Einführung in die Implementierung und Evaluation von KI-Agenten. Durch die Arbeit an selbstgewählten Themen der Teilnehmenden bietet dieser Workshop eine praxisnahe und wissenschaftlich fundierte Weiterbildung im Bereich der KI-gestützten Textproduktion und vermittelt zusätzlich fortgeschrittenes Prompt Engineering.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung und Zielsetzung</head>
+                <p>Die AG Angewandte Generative KI (AGKI) und die AG Digitales Publizieren veranstalten einen ganztägigen Workshop zum Thema “Fortgeschrittenes Prompt und AI Agent Engineering für wissenschaftliche Textproduktion”. Ziel ist die Stärkung essentieller Kompetenzen im Bereich Prompt Engineering und im Umgang mit Large Language Models (LLMs) – Fähigkeiten, die für die Digital Humanities an der Schnittstelle von digitaler Technologie und Textforschung unerlässlich sind. Der Workshop richtet sich an Interessierte mit Grundkenntnissen in LLM und Prompt Engineering. Kenntnisse in Python sind von Vorteil. Die Teilnehmenden benötigen einen eigenen Laptop und Zugang zu einem fortgeschrittenen Chatbot (z.B. ChatGPT, Claude, Meta Llama). API-Zugang zu einem LLM ist optional, wird aber empfohlen.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Inhalte und Lernziele</head>
+                <p>Im Workshop lernen die Teilnehmenden, den Einfluss von KI auf Schreibprozesse und Textgenerierung zu analysieren. Sie werden in die Lage versetzt, ethische, rechtliche und professionelle Aspekte beim Einsatz von KI im wissenschaftlichen Schreiben zu berücksichtigen. Ein zentraler Aspekt ist die kritische Auseinandersetzung mit der Vereinbarkeit von guter wissenschaftlicher Praxis und KI-gestützter Textproduktion. Die Teilnehmenden erarbeiten Strategien zur Wahrung der wissenschaftlichen Integrität, einschließlich Transparenz, Nachvollziehbarkeit und intellektueller Eigenleistung beim Einsatz von KI-Werkzeugen 
+                    <ref target="https://www.zotero.org/google-docs/?7Q94DD">
+                        <hi rend="color(1155CC)">(Geng and Trotta 2024; Chukwuere 2024; Rezaei, Salehi, and Tabatabaei 2024)</hi>
+                    </ref>.
+                </p>
+                <p>Die Teilnehmenden erlernen fortgeschrittene Techniken und Strategien des Prompt Engineering 
+                    <ref target="https://www.zotero.org/google-docs/?jPhPSS">
+                        <hi rend="color(1155CC)">(Schulhoff et al. 2024; Sahoo et al. 2024; Amatriain 2024)</hi>
+                    </ref>, die sie in praktischen Übungen umsetzen. Dazu gehören Zero- und Few-Shot Learning, Many-Shot Learning, Chain of Thought, Tree of Thought, Self-Consistency, Iterative Prompting, Prompt Chaining, Chain of Density, Context Building und Context Compression. Sie analysieren und vergleichen verschiedene proprietäre und Open-Source-Tools sowie LLMs (wie GPT-4, Claude 3.5, Perplexity, Gemini Advanced, Llama 3 70B), wobei Funktionalitäten, Kosten und geeignete Prompting-Strategien betrachtet werden.
+                </p>
+                <p>Darüber hinaus entwickeln die Teilnehmenden tool-spezifische Fähigkeiten, insbesondere im Umgang mit Custom GPTs und Claude Projects. Sie lernen die Möglichkeiten datengetriebener Ansätze (z.B. Code-Interpreter) und multimodaler Arbeitsmethoden (Integration von Text, Bild, Audio, Video) für die Textproduktion kennen.</p>
+                <p>Ein weiterer Schwerpunkt liegt auf dem AI Agent Engineering 
+                    <ref target="https://www.zotero.org/google-docs/?Swd23y">
+                        <hi rend="color(1155CC)">(Wang and Wu, n.d.; Moura, n.d.; Chase and Weiss, n.d.)</hi>
+                    </ref>. Die Teilnehmenden erwerben Kenntnisse über grundlegende Design Patterns und Flow Engineering-Prinzipien und können diese anwenden. Sie werden in die Lage versetzt, einfache Schreib- und Recherche-AI-Agenten zu implementieren, indem sie Multi-Agent-Frameworks (z.B. CrewAI, LangGraph, AutoGen) inklusive RAG und Actions (z.B. Zotero API) nutzen und integrieren.
+                </p>
+                <p>Schließlich lernen die Teilnehmenden Methoden und Metriken 
+                    <ref target="https://www.zotero.org/google-docs/?WqRZBv">(Xie et al. 2024)</ref> zur Evaluierung und zum Testen der Leistung, Effizienz, Kosten und Qualität von AI-Agenten kennen. Sie können die Stärken und Schwächen verschiedener Evaluierungsansätze kritisch bewerten sowie geeignete Methoden für spezifische Anwendungsfälle auswählen.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Aufbau des Workshops und didaktisches Konzept</head>
+                <p>Der Workshop gliedert sich in zwei komplementäre Teile:</p>
+                <list type="unordered">
+                    <item>Vormittag: Einführung in Tools, LLMs, Best Practices und fortgeschrittene Prompt-Engineering-Techniken.</item>
+                    <item>Nachmittag: Angeleitete Hands-on Sessions zur praktischen Anwendung des Gelernten.</item>
+                </list>
+                <p>Zur Vorbereitung erstellen die Teilnehmenden ein maximal zweiseitiges, informationsdichtes Exposé zu einem selbst gewählten Thema ihrer Expertise. Das Exposé spezifiziert Zielgruppe, Textformat (z.B. Blog, Paper, Masterarbeit) und Inhalt. Die Exposés bilden die Grundlage für die praktischen Übungen. Zusätzlich sind mindestens 5 wichtige und verfügbare Quellen zum Thema aufzulisten.</p>
+                <p>Der Nachmittag fokussiert auf die angeleitete Ausarbeitung der Exposés mittels vorgegebener Prompt- und Code-Templates (“Prompt-Werkstatt”). Dies wechselt sich ab mit Input-Phasen, Hands-on-Bearbeitungszeit sowie Präsentationen und gemeinsamer Reflexion der Ergebnisse. Die Vielfalt der Themen und Formate ermöglicht eine umfassende Bewertung und Diskussion, wobei die Alltagsrelevanz der Texte im Vordergrund steht.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Nachhaltigkeit und Ressourcen</head>
+                <p>Die Ergebnisse und Lernmaterialien werden auf der Website der AGKI (
+                    <ref target="https://agki-dh.github.io/">
+                        <hi rend="color(1155CC)">https://agki-dh.github.io</hi>
+                    </ref>) veröffentlicht. Zur Vertiefung der Workshopinhalte stehen Ressourcen zur Verfügung. Die erworbenen Kompetenzen können an den eigenen Standorten weitergegeben werden, um diese in der Community der Digital Humanities nachhaltig zu stärken (“Train the Trainer”).
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Ablauf</head>
+                <p>
+                    <hi style="font-size:11pt" xml:space="preserve">09:00 - 09:30 </hi>
+                    <hi rend="bold" style="font-size:11pt">Einführung</hi>
+                </p>
+                <list type="unordered">
+                    <item>Begrüßung und Vorstellungsrunde</item>
+                    <item>Workshop-Ziele und Agenda</item>
+                    <item>Plenumsdiskussion: Wissensstand und individuelle Ziele</item>
+                </list>
+                <p>
+                    <hi style="font-size:11pt" xml:space="preserve">09:30 - 10:15 </hi>
+                    <hi rend="bold" style="font-size:11pt">Gute wissenschaftliche Praxis und KI-gestützte Textgenerierung</hi>
+                </p>
+                <list type="unordered">
+                    <item>Überblick über Best Practices</item>
+                </list>
+                <p>
+                    <hi style="font-size:11pt" xml:space="preserve">10:15 - 10:25 </hi>
+                    <hi rend="bold" style="font-size:11pt">Pause</hi>
+                </p>
+                <p>
+                    <hi style="font-size:11pt" xml:space="preserve">10:25 - 11:45 </hi>
+                    <hi rend="bold" style="font-size:11pt">Best Practices im Prompt Engineering</hi>
+                </p>
+                <list type="unordered">
+                    <item>Grundlagen</item>
+                    <item>Schreibstile, Ideengenerierung, Gliederung, Textproduktion, Recherche</item>
+                    <item>
+                        <hi style="font-size:11pt">Fallstricke, Best Practices (Context Window, Prompt Chaining, etc.)</hi>
+                    </item>
+                    <item>Fragen und Diskussion</item>
+                </list>
+                <p>
+                    <hi style="font-size:11pt" xml:space="preserve">11:45 - 12:30 </hi>
+                    <hi rend="bold" style="font-size:11pt">Fortgeschrittene Prompt Engineering-Techniken</hi>
+                </p>
+                <list type="unordered">
+                    <item>Vorstellung fortgeschrittener Methoden und Strategien</item>
+                </list>
+                <p>
+                    <hi style="font-size:11pt" xml:space="preserve">12:30 - 13:30 </hi>
+                    <hi rend="bold" style="font-size:11pt">Mittagspause</hi>
+                </p>
+                <p>
+                    <hi style="font-size:11pt" xml:space="preserve">13:30 - 15:00 </hi>
+                    <hi rend="bold" style="font-size:11pt">"Prompt-Werkstatt" I (Angeleitete und betreute Hands-on Einheit)</hi>
+                </p>
+                <list type="unordered">
+                    <item>
+                        <hi style="font-size:11pt">Code-Interpreter; Claude Artefact</hi>
+                    </item>
+                    <item>Integration von Text, Bild, Audio und Video</item>
+                    <item>Vorstellung von Ergebnissen</item>
+                </list>
+                <p>
+                    <hi style="font-size:11pt" xml:space="preserve">15:00 - 15:30 </hi>
+                    <hi rend="bold" style="font-size:11pt">Einführung in das AI-Agent-Engineering</hi>
+                </p>
+                <list type="unordered">
+                    <item>Multi-Agent-Frameworks</item>
+                    <item>Prinzipien und Entwurfsmuster des AI-Agent-Engineerings</item>
+                    <item>
+                        <hi style="font-size:11pt">Bibliotheken, API, Software und Frameworks (AutoGen, Crewai, LangGraph)</hi>
+                    </item>
+                </list>
+                <p>
+                    <hi style="font-size:11pt" xml:space="preserve">15:30 - 15:45 </hi>
+                    <hi rend="bold" style="font-size:11pt">Pause</hi>
+                </p>
+                <p>
+                    <hi style="font-size:11pt" xml:space="preserve">15:45 - 16:45 </hi>
+                    <hi rend="bold" style="font-size:11pt">"Prompt-Werkstatt" II</hi>
+                    <hi rend="italic" style="font-size:11pt">Option A (bei ausreichenden Python-Coding-Skills):</hi>
+                </p>
+                <list type="unordered">
+                    <item>
+                        <hi style="font-size:11pt">Praktische Arbeit mit AI Agents</hi>
+                    </item>
+                    <item>Integration von RAG und Actions</item>
+                    <item>
+                        <hi style="font-size:11pt">Hands-On mit Python + Jupyter Notebook</hi>
+                    </item>
+                </list>
+                <p>Option B:</p>
+                <list type="unordered">
+                    <item>Fortführung der Prompt-Werkstatt I</item>
+                    <item>Datengetriebene und multimodale Ansätze</item>
+                    <item>Arbeit mit Custom GPTs und Claude Projects</item>
+                </list>
+                <p>
+                    <hi style="font-size:11pt" xml:space="preserve">16:45 - 17:30 </hi>
+                    <hi rend="bold" style="font-size:11pt">Abschlussdiskussion und Zusammenfassung</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Facts</head>
+                <list type="unordered">
+                    <item>Zahl der möglichen TeilnehmerInnen: 20</item>
+                    <item>Ganztägig</item>
+                    <item>Zielpublikum: Wissenschaftler:innen</item>
+                    <item>Inhaltliche Voraussetzungen: Grundkenntnisse in Generativer KI und Prompt Engineering (Webinare auf 
+                        <ref target="https://agki-dh.github.io">
+                            <hi rend="color(1155CC)">https://agki-dh.github.io</hi>
+                        </ref> empfohlen). Python-Kenntnisse optional, Vorbereitetes Exposé eines zu produzierenden Textes
+                    </item>
+                    <item>Technische Voraussetzungen: eigener Laptop, Zugang zu einem GPT-4-Tier-Modell (ChatGPT, Claude, Llama 3, Perplexity oder vergleichbares Tool), es kann aber auch in Kleingruppen gearbeitet werden; LLM API Zugang (optional)</item>
+                    <item>Technische Ausstattung: Beamer, WLAN</item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Vortragende</head>
+                <p>
+                    <hi rend="bold">Christopher Pollin</hi> (AG AGKI, Digital Humanities Craft OG, 
+                    <ref target="mailto:christopher.pollin@dhcraft.org">
+                        <hi rend="color(1155CC)">christopher.pollin@dhcraft.org</hi>
+                    </ref>, ORCID: 0000-0002-4879-129X) ist Doktorand der Digitalen Geisteswissenschaften an der Universität Graz und hat einen Master in Geschichte und Digitalen Kulturerbe. Von 2016 bis 2024 arbeitete er am Institut für Digitale Geisteswissenschaften der Universität Graz (ZIM) mit den Schwerpunkten technische Entwicklung, Datenmodellierung und Semantic Web. Seit 2023 hält er Workshops und Vorträge zu generativer KI und Prompt Engineering (
+                    <ref target="https://chpollin.github.io/GM-DH">
+                        <hi rend="color(1155CC)">https://chpollin.github.io/GM-DH</hi>
+                    </ref>). Er ist Convenor der AG Angewandte Generative KI in den Digitalen Geisteswissenschaften (AGKI-DH). Weiters ist er Mitbegründer der Digital Humanities Craft OG und verbindet in seiner Arbeit digitale Methoden mit geisteswissenschaftlichen Fragestellungen.
+                </p>
+                <p>
+                    <hi rend="bold">Timo Steyer</hi> (AG Publizieren, Universitätsbibliothek Braunschweig, 
+                    <ref target="mailto:t.steyer@tu-braunschweig.de">
+                        <hi rend="color(1155CC)">t.steyer@tu-braunschweig.de</hi>
+                    </ref>, ORCID: 0000-0003-0218-2269) leitet das Referat Informationskompetenz an der Universitätsbibliothek Braunschweig und ist Fachrefeent für die Fächer Anglistik, Germanistik und Geschichte. Er ist Convenor der DHd-AG Digitales Publizieren. An der TU Braunschweig nimmt er Lehrtätgikeit für Digital Humanities und Digitale Editionen war. Seine Forschungsschwerpunkt sind Digital Sammlungsforschung, Digitales Publizieren und Datenmodellierung.   
+                </p>
+                <p>
+                    <hi rend="bold">Martina Scholger</hi> (Institut für Digitale Geisteswissenschaften, 
+                    <ref target="mailto:martina.scholger@uni-graz.at">
+                        <hi rend="color(1155CC)">martina.scholger@uni-graz.at</hi>
+                    </ref>, ORCID: 0000-0003-1438-3236) ist Senior Scientist am Institut für Digitale Geisteswissenschaften der Universität Graz mit den Schwerpunkten Digitale Edition sowie der Anwendung von Textmining- und Machine-Learning-Methoden auf kultur- und geisteswissenschaftliche Quellen. Neben ihrer Lehrtätigkeit in den Bereichen X-Technologien, Digitale Edition, Textmining und Machine Learning für Digitale Editionen an der Universität Graz hat sie in internationalen einschlägigen Summer Schools und Workshops unterrichtet. Sie ist für die Konzeption, Entwicklung und Umsetzung zahlreicher nationaler und internationaler Kooperationsprojekte im Bereich der Digital Humanities (mit)verantwortlich. Seit 2012 ist sie Mitglied des Instituts für Dokumentologie und Editorik und seit 2016 gewähltes Mitglied des TEI Technical Council. Seit 2022 ist sie Managing Editor der Rezensionszeitschrift RIDE.
+                </p>
+                <p>
+                    <lb/>
+                    <hi rend="bold">Sebastian David Schiller-Stoff</hi> (Institut für Digitale Geisteswissenschaften, 
+                    <ref target="mailto:sebastian.stoff@uni-graz.at">
+                        <hi rend="color(1155CC)">sebastian.stoff@uni-graz.at</hi>
+                    </ref>, ORCID: 0000-0001-6941-113X) ist Doktorand der Digitalen Geisteswissenschaften an der Universität Graz mit Masterabschlüssen in Geschichte, Kunstgeschichte und Digital Humanities. Seit 2022 arbeitet er als Senior Full-Stack Engineer für GAMS am Institut für Digitale Geisteswissenschaften (ZIM) in Graz. Seine Forschungsschwerpunkte umfassen digitale Editionen, Datenverarbeitung und -modellierung, wartbare Softwarearchitekturen. Er verfügt über umfangreiche Erfahrung in der Web- und Softwareentwicklung und hat an verschiedenen Digital-Humanities-Projekten mitgewirkt. Er beschäftigt sich intensiv mit KI-unterstützter Softwareentwicklung.
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">AI Explained</hi>. 2024. AI Insiders Patreon. 
+                        <ref target="https://www.patreon.com/AIExplained/posts">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://www.patreon.com/AIExplained</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Amatriain, Xavier</hi>. 2024. „Prompt Design and Engineering: Introduction and Advanced Methods“. arXiv, 4. Mai 2024. 
+                        <ref target="https://doi.org/10.48550/arXiv.2401.14423">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.48550/arXiv.2401.14423</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">„crewAIInc/crewAI“. Python</hi>. 2023. Reprint, crewAI,.
+                        <ref target="https://github.com/crewAIInc/crewAI">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://github.com/crewAIInc/crewAI</hi>
+                        </ref>
+                        <hi style="font-size:11pt" xml:space="preserve"> (zugegriffen: 17. Juli 2024).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Chase, Harrison und Rotem Weiss</hi>. 2024. „DLAI - AI Agents in LangGraph“. 
+                        <hi rend="italic" style="font-size:11pt">DLAI - Learning Platform</hi>
+                        <hi style="font-size:11pt">. .</hi>
+                        <ref target="https://learn.deeplearning.ai/courses/ai-agents-in-langgraph/lesson/1/introduction">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://learn.deeplearning.ai/courses/ai-agents-in-langgraph/lesson/1/introduction</hi>
+                        </ref>
+                        <hi style="font-size:11pt" xml:space="preserve"> (zugegriffen: 17. Juli 2024).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Chukwuere, Joshua Ebere</hi>. 2024. „Today’s Academic Research: The Role of ChatGPT Writing“. 
+                        <hi rend="italic" style="font-size:11pt">Journal of Information Systems and Informatics 6</hi>
+                        <hi style="font-size:11pt" xml:space="preserve">, Nr. 1 (23. März 2024): 30–46. </hi>
+                        <ref target="https://doi.org/10.51519/journalisi.v6i1.639">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.51519/journalisi.v6i1.639</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Geng, Mingmeng und Roberto Trotta</hi>. 2024. „Is ChatGPT Transforming Academics’ Writing Style?“ arXiv, 12. April 2024. 
+                        <ref target="https://doi.org/10.48550/arXiv.2404.08627">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.48550/arXiv.2404.08627</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">„langchain-ai/langgraph“</hi>. Python. 2023. Reprint, LangChain,.
+                        <ref target="https://github.com/langchain-ai/langgraph">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://github.com/langchain-ai/langgraph</hi>
+                        </ref>
+                        <hi style="font-size:11pt" xml:space="preserve"> (zugegriffen: 17. Juli 2024).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Moura, Joao</hi>. „DLAI - Multi AI Agent Systems with crewAI“. DLAI - Learning Platform. 
+                        <ref target="https://learn.deeplearning.ai/courses/multi-ai-agent-systems-with-crewai">
+                            <hi rend="color(1155CC)" style="font-size:11pt" xml:space="preserve">https://learn.deeplearning.ai/courses/multi-ai-agent-systems-with-crewai </hi>
+                        </ref>
+                        <hi style="font-size:11pt">(zugegriffen: 17. Juli 2024).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ng, Andrew</hi>: Andrew Ng On AI Agentic Workflows And Their Potential For Driving AI Progress. YouTube, 12. Juni 2024. 
+                        <ref target="https://youtu.be/q1XFm21I-VQ?si=l9BPdidgEiae22tK">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://youtu.be/q1XFm21I-VQ?si=l9BPdidgEiae22tK</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pollin, Christopher</hi>. 2024. „Workshopreihe ‚Angewandte Generative KI in den (digitalen) Geisteswissenschaften‘“. Zenodo, 11. Februar 2024. 
+                        <ref target="https://doi.org/10.5281/zenodo.10647754">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.5281/zenodo.10647754</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rezaei, Mahdi, Hadi Salehi und Omid Tabatabaei</hi>. 2024. „Uses and Misuses of ChatGPT as an AI-Language Model in Academic Writing“. In 2024 10th International Conference on Artificial Intelligence and Robotics (QICAR), 256–60, 2024. 
+                        <ref target="https://doi.org/10.1109/QICAR61538.2024.10496607">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.1109/QICAR61538.2024.10496607</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sahoo, Pranab, Ayush Kumar Singh, Sriparna Saha, Vinija Jain, Samrat Mondal und Aman Chadha</hi>. 2024. „A Systematic Survey of Prompt Engineering in Large Language Models: Techniques and Applications“. arXiv, 5. Februar 2024. 
+                        <ref target="https://doi.org/10.48550/arXiv.2402.07927">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.48550/arXiv.2402.07927</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schulhoff, Sander, Michael Ilie, Nishant Balepur, Konstantine Kahadze, Amanda Liu, Chenglei Si, Yinheng Li, u. a.</hi> 2024. „The Prompt Report: A Systematic Survey of Prompting Techniques“. arXiv, 16. Juni 2024. 
+                        <ref target="https://doi.org/10.48550/arXiv.2406.06608">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.48550/arXiv.2406.06608</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wang, Chi, und Qingyun Wu</hi>. „DLAI - AI Agentic Design Patterns with AutoGen“. DLAI - Learning Platform. 
+                        <ref target="https://learn.deeplearning.ai/courses/ai-agentic-design-patterns-with-autogen/lesson/1/introduction">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://learn.deeplearning.ai/courses/ai-agentic-design-patterns-with-autogen/lesson/1/introduction</hi>
+                        </ref>
+                        <hi style="font-size:11pt" xml:space="preserve"> (zugegriffen: 17. Juli 2024).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wu, Qingyun, Gargan Bansal, Jieyu Zhang, Yiran Wu, Beibin Li, Eric Zhu, Li Jiang, u. a.</hi> 2023. „AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation Framework“. Jupyter Notebook. 
+                        <ref target="https://github.com/microsoft/autogen">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://github.com/microsoft/autogen</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Xie, Tianbao, Danyang Zhang, Jixuan Chen, Xiaochuan Li, Siheng Zhao, Ruisheng Cao, Toh Jing Hua, u. a.</hi> 2024. „OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments“. arXiv, 11. April 2024. 
+                        <ref target="https://doi.org/10.48550/arXiv.2404.07972">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.48550/arXiv.2404.07972</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Xie, Tianbao, Danyang Zhang, Jixuan Chen, Xiaochuan Li, Siheng Zhao, Ruisheng Cao, Toh Jing Hua, u. a.</hi> 2024. „OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments“. arXiv, 11. April 2024. 
+                        <ref target="https://doi.org/10.48550/arXiv.2404.07972">
+                            <hi rend="color(1155CC)">https://doi.org/10.48550/arXiv.2404.07972</hi>
+                        </ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

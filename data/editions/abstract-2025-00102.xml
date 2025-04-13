@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="GOLLENSTEDE_Andreas_Umgang_mit_raumzeitlicher_Unsch_rfe___Er">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Umgang mit raumzeitlicher Unschärfe - Erfassung und Visualisierung von Bewegungsdaten mit QGIS am Beispiel der Fahrt des Kanonenboots Albatroß (1886)</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Fuest</surname>
+                        <forename>Stefan</forename>
+                    </persName>
+                    <affiliation>Leibniz Universität Hannover, Institut für Kartographie und Geoinformatik (ikg), Deutschland</affiliation>
+                    <email>stefan.fuest@ikg.uni-hannover.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gollenstede</surname>
+                        <forename>Andreas</forename>
+                    </persName>
+                    <affiliation>Jade Hochschule, Institut für Angewandte Photogrammetrie und Geoinformatik (IAPG), Deutschland</affiliation>
+                    <email>andreas.gollenstede@jade-hs.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Herbers</surname>
+                        <forename>Maximilian</forename>
+                    </persName>
+                    <affiliation>Jade Hochschule, Institut für Angewandte Photogrammetrie und Geoinformatik (IAPG), Deutschland</affiliation>
+                    <email>maximilian.herbers@jade-hs.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kaiser</surname>
+                        <forename>Rieke Marie</forename>
+                    </persName>
+                    <affiliation>Carl von Ossietzky Universität Oldenburg, FK IV, Institut für Geschichte (IfG), Deutschland</affiliation>
+                    <email>rieke.marie.kaiser@uni-oldenburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tadge</surname>
+                        <forename>Jennifer</forename>
+                    </persName>
+                    <affiliation>Landesmuseum Natur und Mensch Oldenburg (LMNM), Deutschland</affiliation>
+                    <email>j.tadge@landesmuseen-ol.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2024-11-26T14:42:25.087000000</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Bielefeld Computational Literary Studies Group</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital History</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+                <publisher>Digital Linguistics Lab</publisher>
+                <address>
+                    <addrLine>Universität Bielefeld</addrLine>
+                    <addrLine>Universitätsstraße 25</addrLine>
+                    <addrLine>33615 Bielefeld</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Workshop</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Visualisierung</term>
+                    <term>Unschärfe</term>
+                    <term>Geoinformationssystem</term>
+                    <term>Bewegung</term>
+                    <term>Provenienzforschung</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Gestaltung</term>
+                    <term>Räumliche Analyse</term>
+                    <term>Bearbeitung</term>
+                    <term>Einführung</term>
+                    <term>Visualisierung</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Hintergrund</head>
+                <p>Der Forschungsverbund DiViAS (Digitalisierung, Visualisierung und Analyse von Sammlungsgut) (DiViAS 2024) beschäftigt sich mit der Erforschung neuer technischer Methoden für die Museums-, Geschichts- und Kulturwissenschaften sowie Provenienzforschung. Eines der Projektziele, das auch in diesem Workshop thematisiert wird, ist die Nachvollziehbarkeit der Bewegung von Schiffen, Personen und Objekten, welche durch eine kartographische Visualisierung erleichtert werden kann. Dafür werden neben der automatisierten Auswertung der historischen Quellen, zum Beispiel Logbücher oder Reiseberichte, durch künstliche Intelligenz (KI) auch neue Ansätze entwickelt, um unscharfe Daten in Datenbanken abzulegen und mit neuen Methoden zu visualisieren. Die genaue Reiseroute eines Schiffs kann aufgrund fehlender, unvollständiger oder fehlerhafter Informationen in den zur Verfügung stehenden historischen Quellen oftmals nur in Teilen nachvollzogen werden, sodass für eine lückenlose Visualisierung der Daten oftmals eine räumliche und/oder zeitliche Interpolation zwischen den verschiedenen Stationen oder Ereignissen notwendig ist. Hinzu kommt, dass beispielsweise (historische) Ortsangaben ungenau beschrieben sein können, oder diese aufgrund von Umbenennungen nicht mehr korrekt sind. Weiterhin sind die Zeitangaben, an dem ein Ereignis stattgefunden hat (z. B. als Zeitspanne), oftmals ungenau hinterlegt. Daher ist es erforderlich, diese Unschärfe in den Daten geeignet visuell zu kommunizieren, sodass unscharfe Daten im Gegensatz zu exakt hinterlegten Daten auch bei Betrachterinnen und Betrachtern als solche verstanden werden.</p>
+                <p>Hinsichtlich der räumlichen Unschärfe wird zwischen der Genauigkeit der Informationen zum Reiseverlauf und der einzelnen Stationen einer Reise unterschieden. Der Verlauf zwischen zwei bekannten Stationen der Reise ist gewissermaßen immer unsicher, sofern keine Informationen über den genauen Streckenverlauf bekannt sind. Die zunehmende Entfernung zur nächsten sicher und hier damit „scharf“ erfassten Station erfordert somit eine visuell aussagekräftige und eindeutige Darstellung der Unschärfeinformationen, die aus einem in den Daten hinterlegten Unschärfemaß abgeleitet werden können. Visuell kann dies beispielsweise durch ein als Puffer um die Route gelegtes Unschärfeband oder durch das (zeitlich begrenzte) Verblassen von Teilen der Route oder von Objekten erreicht werden. Weiterhin ist es möglich, dass bei teilweise unbekannten Reiseverläufen mehrere mögliche Teilrouten in Frage kommen, die entsprechend visuell kommuniziert werden müssen.</p>
+                <p>Die räumliche Unschärfe von Standortbeschreibungen kann vielfältige Ausprägungen annehmen, sodass diese im Rahmen des Projekts sogenannten Möglichkeitsräumen zugeordnet werden, die die gesamte räumliche Ausdehnung der entsprechend einer Ortsbeschreibung möglichen Standorte umfassen. Abhängig vom Wortlaut einer Beschreibung kann ein Möglichkeitsraum beispielsweise das Gebiet eines Hafens, einer Bucht oder (im Extremfall) sogar eines gesamten Ozeans umfassen. Im Idealfall können sehr weitläufige Möglichkeitsräume durch den Kontext von bekannten Nachbarstandorten räumlich eingegrenzt werden. In der Kartographie steht ein großes Methodenspektrum zur Darstellung räumlicher Objekte und Konzepte zur Verfügung. Zur visuellen Kommunikation von Unschärfe können beispielsweise Ansätze der kartographischen Symbolisierung unter Nutzung visueller Variablen (z. B. Blurring, Transparenz, Scribbles) herangezogen (Kinkeldey et al. 2014; MacEachren et al. 2005, Fuest et al. 2023), aber auch Möglichkeiten dynamischer Effekte wie Animationen genutzt werden, die Bewegungsdaten ggf. intuitiver abbilden können (Lobben 2003).</p>
+                <p>Die im Projekt entwickelten Visualisierungskonzepte zur raumzeitlichen Darstellung von Unschärfe werden im Rahmen des Workshops mithilfe eines Geoinformationssystems (GIS) am Beispiel der Reise des Kanonenboots Albatroß in der Bismarcksee im heutigen Papua-Neuguinea im Jahre 1886 angewendet. Zusätzlich werden unter Anleitung weitere Arbeitsschritte im GIS durchgeführt, die eine Visualisierung von raumzeitlichen Daten im Umfeld der Geisteswissenschaften erleichtern.</p>
+                <p>Die Albatroß ist besonders im Zusammenhang mit der kolonialen Sammlungstätigkeit von Friedrich Graf von Baudissin (1852-1921) von Bedeutung, der von November 1885 bis Dezember 1886 Kommandant des Schiffs in Ozeanien war (Hildebrand 1979). Sein „Bericht über die Thätigkeit im Bismarck-Archipel in Erledigung von Requisitionen ausgeführter Landungen, Kämpfe und Gefechte“ vom 27. März 1886 (Baudissin 1886) erlaubt es, die im Landesmuseum Natur und Mensch Oldenburg befindlichen Objekte mit einzelnen Stationen und kriegerischen Ereignissen in Bezug zu setzen und für die Provenienzforschung auszuwerten. Die Visualisierung der Route der Albatroß soll ermöglichen, die Stationen des Objekterwerbs anschaulich zu machen und Widersprüche in der schriftlichen Überlieferung zu überprüfen.</p>
+                <p>Für Routendarstellung der Albatroß wird im Rahmen des Workshops das freie und quelloffene Geoinformationssystem QGIS (QGIS 2024) genutzt, das eine leistungsstarke Umgebung für die Erfassung, Verarbeitung, Analyse und Visualisierung raumbezogener Vektor- und Rasterdaten zur Verfügung stellt. Für die Verarbeitung raumzeitlicher Daten im Speziellen bietet QGIS zahlreiche Funktionen und Plug-ins. Bei Bedarf kann das System durch eigene Umsetzungen und Entwicklungen erweitert werden. Für komplexere kartographische Darstellungen, wie z. B. Unschärfe, können spezifische Symbolsätze entworfen und für eine spätere Wiederverwendung in nachfolgenden Visualisierungen abgelegt werden. Um Routen oder andere Daten im Allgemeinen besser in einen räumlich-historischen Kontext einordnen zu können, bietet QGIS die Option, historische Karten, die zumeist bereits als Scans im Rasterformat vorliegen, als Grundkarte mit einzubinden. Sollten diese Karten keinen Koordinatenbezug haben, besteht die Möglichkeit der Georeferenzierung. Eine in QGIS integrierte Layoutgestaltung erlaubt die maßstabsgetreue Ausgabe der Visualisierungsergebnisse als einzelne Karten mit allen notwendigen Zusatzelementen (z. B. Legende) oder als Kartenreihen im Atlasformat.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Zielsetzung des Workshops</head>
+                <p>Der Workshop bietet einem interessierten Fachpublikum eine Plattform, die den Umgang mit und die Visualisierung von raumzeitlicher Unschärfe in historischen Quellen und deren Bedeutung für die Spatial Humanities praxisnah vermittelt. Die Teilnehmenden des Workshops erwartet zudem ein einführendes Hands-On mit dem Geoinformationssystem QGIS und dessen Handhabung im oben beschriebenen Kontext.</p>
+                <p>Der Schwerpunkt liegt dabei auf der Analyse und Visualisierung von Bewegungsdaten aus historischen Quellen, beginnend bei der zumeist schriftlichen Repräsentation von Raum und Zeit in der historischen Quelle über die Verarbeitung bis hin zur Visualisierung. Anhand eines Beispieldatensatzes, der die Fahrtroute des deutschen Kanonenbootes Albatroß um 1886 in der Bismarcksee im heutigen Papua-Neuguinea abbildet, lernen die Teilnehmenden, diese Art von Datenquellen zu nutzen, in verwertbare Geodaten zu überführen und raumzeitliche Unschärfen, Unsicherheiten sowie Datenlücken durch geeignete Symbolisierung kartographisch darzustellen.</p>
+                <p>Die Teilnehmenden sollen am Ende des Workshops in der Lage sein, erste eigene Projekte mit historischen Bewegungsdaten adäquat mit QGIS zu visualisieren. Darüber hinaus bietet der Workshop die Möglichkeit, Feedback zu eigenen Ideen und Ansätzen im Bereich der Visualisierung von Unsicherheiten in den Spatial Humanities zu erhalten, zu diskutieren und diese weiterzuentwickeln.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Format</head>
+                <p>Der Workshop ist auf zwei halbe Tage (insgesamt 8 Stunden inkl. Pausen) ausgelegt und als Hands-On-Workshop konzipiert. Am ersten Tag wird zunächst eine kurze Einführung in die Planung und Inhalte des Workshops gegeben. Dabei werden neben einer Vorstellungsrunde und thematischen Einführung auch ausgewählte Forschungsfragen im Projekt DiViAS behandelt. Anschließend werden zwei Impulsvorträge gehalten. Die Vorträge widmen sich dem historischen Hintergrund der im Workshop verwendeten Quellen. Auch werden anhand exemplarischer Textdokumente Unschärfen in der Erfassung erläutert und Herausforderungen bei der Transkription und der KI-gestützten Extraktion dieser Informationen vorgestellt und diskutiert. Danach wird eine Einführung in das freie Geoinformationssystem QGIS gegeben und gemeinsam mit den Teilnehmenden eine Ideensammlung zur Visualisierung von Unschärfe erarbeitet.</p>
+                <p>Am zweiten Tag werden Teilnehmende in Kleingruppen daran arbeiten, mit QGIS unscharfe Daten abzubilden, wobei die Workshopleiterinnen und -leiter unterstützend zu Verfügung stehen. Anschließend gibt es einen Austausch über die Möglichkeiten und Einschränkungen des Geoinformationssystems sowie über die vorgestellten, diskutierten und umgesetzten Ideen zur Abbildung von Unschärfe. Beendet wird der Workshop mit einer Abschlussdiskussion und der Möglichkeit Feedback zu geben.</p>
+                <p>Ein spezifischer Call for Papers ist für den Workshop nicht vorgesehen.</p>
+                <table rend="frame" xml:id="Tabelle1">
+                    <row>
+                        <cell rend="bold">Tag/Dauer</cell>
+                        <cell rend="bold">Thema</cell>
+                        <cell rend="bold">Inhalt</cell>
+                    </row>
+                    <row>
+                        <cell rend="bold">Tag 1</cell>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>40 min</cell>
+                        <cell>Auftakt</cell>
+                        <cell>Begrüßung und Kennenlernen, Vorstellung DiViAS</cell>
+                    </row>
+                    <row>
+                        <cell>15 min</cell>
+                        <cell>Impulsvortrag 1</cell>
+                        <cell>Hintergrundinformationen zu den verwendeten historischen Quellen</cell>
+                    </row>
+                    <row>
+                        <cell>15 min</cell>
+                        <cell>Impulsvortrag 2</cell>
+                        <cell>Transkription und KI-basierte Extraktion von Orts- und Zeitangaben</cell>
+                    </row>
+                    <row>
+                        <cell>20 min</cell>
+                        <cell>Diskussion</cell>
+                        <cell>Austausch zu den Themen der Impulsvorträge</cell>
+                    </row>
+                    <row>
+                        <cell>30 min</cell>
+                        <cell>Pause</cell>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>45 min</cell>
+                        <cell>QGIS Einführung und Grundlagen</cell>
+                        <cell>UI kennenlernen, Basiskarten und Geometrien laden, Analysewerkzeuge, kartographische Symbolisierung</cell>
+                    </row>
+                    <row>
+                        <cell>45 min</cell>
+                        <cell>Ideenfindung im Plenum</cell>
+                        <cell>Erarbeitung von Visualisierungsmöglichkeiten von Unschärfe</cell>
+                    </row>
+                    <row>
+                        <cell rend="bold">Tag 2</cell>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>90 min</cell>
+                        <cell>QGIS Kleingruppen</cell>
+                        <cell>Umsetzung der Visualisierung von Unschärfe</cell>
+                    </row>
+                    <row>
+                        <cell>30 min</cell>
+                        <cell>Pause</cell>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>60 min</cell>
+                        <cell>Diskussion</cell>
+                        <cell>Möglichkeiten und Grenzen der Visualisierung von Unschärfe</cell>
+                    </row>
+                    <row>
+                        <cell>30 min</cell>
+                        <cell>Abschlussdiskussion</cell>
+                        <cell>Finaler Austausch und Feedback</cell>
+                    </row>
+                </table>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Zielgruppe</head>
+                <p>An dem Workshop können bis zu 20 Forschende teilnehmen. Der Workshop richtet sich vor allem an Geisteswissenschaftlerinnen und Geisteswissenschaftler, die an der Visualisierung ihrer räumlich und/oder zeitlich unscharfen Daten aus unterschiedlichen Quellentypen und Epochen zu Wasser und zu Land interessiert sind oder sich allgemein für die Darstellung und den Umgang mit Unschärfe in historischen Kontexten interessieren. Technische Vorkenntnisse sind nicht erforderlich, jedoch sollten die Teilnehmenden Interesse daran haben, sich im Rahmen des Workshops in das freie Geoinformationssystem QGIS einzuarbeiten.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Technische Ausstattung</head>
+                <p>Workshopteilnehmende sollten einen eigenen Laptop mitbringen und bereits vor Beginn des Workshops die Software QGIS (Version 3.34 LTR Long Term Release) (QGIS 2024) installiert haben. Vor Ort werden ein Beamer, Whiteboard und Internetzugang (WLAN) für die Teilnehmenden benötigt. Darüber hinaus sollte für alle Teilnehmenden ein Tisch und Stromzugang zur Verfügung stehen.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Beteiligte und Forschungsinteressen</head>
+                <p>
+                    <hi rend="bold">Stefan Fuest </hi>ist Wissenschaftlicher Mitarbeiter im DiViAS Projekt und am Institut für Kartographie und Geoinformatik der Leibniz Universität Hannover tätig. Seine Forschungsinteressen liegen im Bereich der kartenbasierten Visualisierung, insbesondere im Hinblick auf die Darstellung von Unschärfe in raumzeitlichen Daten.
+                </p>
+                <p>
+                    <hi rend="bold">Andreas Gollenstede </hi>ist Wissenschaftlicher Mitarbeiter im DiViAS-Projekt und an der Jade Hochschule am Institut für Photogrammetrie und Geoinformatik tätig. Er beschäftigt sich mit Geoinformationssystemen, Geovisualisierung, Geodatenstandards und -diensten, sowie räumlichen und raumzeitlichen Datenbanken – hier im Speziellen mit der Verarbeitung unscharfer Daten. Der Fokus liegt dabei auf der Nutzung freier Software und freier Geodaten.
+                </p>
+                <p>
+                    <hi rend="bold">Maximilian Herbers </hi>ist Wissenschaftlicher Mitarbeiter im DiViAS-Projekt und arbeitet an der Jade Hochschule am Institut für Photogrammetrie und Geoinformatik. Seine Forschungsinteressen liegen im Bereich der Verarbeitung natürlicher Sprache mittels Large Language Models, Knowledge Graphs und den Spatial Humanities.
+                </p>
+                <p>
+                    <hi rend="bold">Rieke Marie Kaiser </hi>ist Wissenschaftliche Mitarbeiterin im DiViAS-Projekt und als Historikerin an der Carl von Ossietzky Universität Oldenburg tätig. Ihr Forschungsinteresse liegt im Bereich der maritimen Geschichte der Frühen Neuzeit mit einem Fokus auf Sozialgeschichte sowie Digital Humanities.
+                </p>
+                <p>
+                    <hi rend="bold">Jennifer Tadge </hi>ist Wissenschaftliche Mitarbeiterin im DiViAS-Projekt und als Ethnologin am Landesmuseum Natur und Mensch in Oldenburg tätig. Ihre Arbeit beschäftigt sich mit Museumsethnologie, Provenienzforschung und Wissenschaftskommunikation und sie promoviert derzeit zum Thema „Koloniale Sammelpraktiken in militärischen Kontexten“.
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Baudissin, Friedrich.</hi> 1886. „Bericht über die Thätigkeit im Bismarck-Archipel in Erledigung von Requisitionen ausgeführter Landungen, Kämpfe und Gefechte“ In 
+                        <hi rend="italic">Bundesarchiv, RM1/2625.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">DiViAS.</hi> 2024. „Digitalisierung, Visualisierung und Analyse von Sammlungsgut (DiViAS).“ In 
+                        <hi rend="italic">divias.de</hi>, https://divias.de (zugegriffen: 22. Juli 2024).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fuest, S., Sester, M., &amp; Griffin, A. L.</hi> 2023. „Nudging travellers to societally favourable routes: The impact of visual communication and emotional responses on decision making.“ In 
+                        <hi rend="italic">Transportation research interdisciplinary perspectives,</hi> 19, 100829.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hildebrand, H. et al.</hi> 1979. 
+                        <hi rend="italic">Die deutschen Kriegsschiffe: Biographien: ein Spiegel der Marinegeschichte von 1815 bis zur Gegenwart. </hi>
+                        <hi rend="italic">Band 1.</hi> Herford: Koehler.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kinkeldey, C., MacEachren, A. M., &amp; Schiewe, J.</hi> 2014. „How to assess visual communication of uncertainty? A systematic review of geospatial uncertainty visualisation user studies.“ In 
+                        <hi rend="italic">The Cartographic Journal,</hi> 51(4), 372-386.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Lobben, A.</hi> 2003. „Classification and application of cartographic animation“ In 
+                        <hi rend="italic">The Professional Geographer, </hi>55(3), 318-328.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">MacEachren, A. M., Robinson, A., Hopper, S., Gardner, S., Murray, R., Gahegan, M., &amp; Hetzler, E.</hi> 2005. „Visualizing geospatial information uncertainty: What we know and what we need to know.“ In 
+                        <hi rend="italic">Cartography and Geographic Information Science,</hi> 32(3), 139-160.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">QGIS. 2024.</hi> „Spatial without Compromise - QGIS Web Site.“ In 
+                        <hi rend="italic">qgis.org,</hi> https://qgis.org (zugegriffen: 22. Juli 2024).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>
