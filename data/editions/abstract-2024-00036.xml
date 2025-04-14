@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="OSTROWSKI_Alina_Ans_tze_und_Tools_f_r_Historische_Text_Reuse" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Ansätze und Tools für Historische Text Reuse Detection</title>
+                    <title type="sub">Fragmentierter Text Reuse am Beispiel ripuarischer Inkunabeln des 15. Jahrhunderts</title>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Ostrowski</surname>
+                        <forename>Alina</forename>
+                    </persName>
+                    <affiliation>Universität Passau, Deutschland; Universität zu Köln, Deutschland</affiliation>
+                    <email>alina.ostrowski@uni-passau.de</email>
+                    <idno type="ORCID">0000-0002-0910-8566</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-07-19T21:53:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Digital Humanities Passau</publisher>
+                <address>
+                    <addrLine>Universität Passau</addrLine>
+                    <addrLine>Innstraße 41</addrLine>
+                    <addrLine>D-94032 Passau</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Posterpräsentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Mediävistik</term>
+                    <term>Historical Text Reuse Detection</term>
+                    <term>Inkunabeln</term>
+                    <term>Ripuarisch</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Entdeckung</term>
+                    <term>Bewertung</term>
+                    <term>Stilistische Analyse</term>
+                    <term>Methoden</term>
+                    <term>Forschungsprozess</term>
+                    <term>Text</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Text Reuse Detection (TRD) ist ein Teilgebiet des Natural Language Processing (NLP) mit dem Ziel, wiederverwendete Passagen (Text Reuse, TR) in distinkten Texten zu identifizieren. Seit etwa zehn Jahren wird TRD vermehrt für historische Forschung erprobt und eingesetzt, wobei typische Charakteristika historischer Sprachdaten (z.B. geringe sprachliche Standardisierung, fehlende digitale Ressourcen) die Durchführung erschweren. Der vorliegende Beitrag gibt einen Überblick über Ansätze und Tools zur Historischen TRD (HTRD). Anhand eines konkreten Forschungsvorhabens wird die Anwendbarkeit dreier HTRD-Tools (
+                <hi rend="italic">Passim</hi>, 
+                <hi rend="italic">BLAST</hi> und 
+                <hi rend="italic">TextPAIR</hi>) auf kurzen TR in mittelalterlichen, volkssprachigen Texten diskutiert.
+            </p>
+            <p>Oft zitiert ist 
+                <hi rend="italic">Tracer</hi> (Büchler, 2013; vgl. Hiltmann et al., 2021), eine Software-Suite, die für einzelne TRD-Schritte unterschiedliche Algorithmen zur Verfügung stellt und mit Fingerprinting arbeitet.<ref n="1" target="ftn1"/>
+                <hi rend="italic">Passim</hi> (Smith et al., 2015) und 
+                <hi rend="italic">TextPAIR</hi> (Gladstone, 2018) finden Dokumente mit TR auf Basis der Überlappung ihrer Zeichen- bzw. Wort-n-Gramme. Die Dokumentenpaare werden anschließend zwecks Eingrenzung der korrespondierenden Passagen aligniert. Auch das R-Paket 
+                <hi rend="italic">textreuse</hi> (Mullen, 2020) folgt diesem Schema, jedoch werden zur Berechnung der Dokument-Ähnlichkeit Min-Hashes und der Jaccard-Koeffizient zweier Texte benutzt. Einen sprachagnostischen Ansatz wählten Vesanto et al. (2017) und „codierten“ die natürlichsprachlichen Texte als Aminosäuren, die sie dann mit dem aus der Bioinformatik stammenden 
+                <hi rend="italic">BLAST</hi> (Basic Local Alignment Search Tool) auf ähnliche Sequenzen hin untersuchten. 
+                <hi rend="italic">Tesserae</hi> wurde speziell für die Erforschung von Allusionen in lateinischer Lyrik entwickelt (Coffee et al., 2013) und verwendet besonders weiche Ähnlichkeitskriterien sowie eine Scoring-Funktion zur nachträglichen Ergebnisfilterung. HTRD mit stochastischen Sprachmodellen wurde bisher seltener versucht (vgl. Liebl/Burghardt, 2022).
+            </p>
+            <p>Die meisten HTRD-Methoden wurden für große Textmengen in klassischen und neuzeitlichen Sprachen mit moderater orthographischer Varianz entwickelt (z.B. Smith et al., 2015; Gladstone/Cooney, 2020), in denen oft längerer TR (&gt;1 Satz) vorlag. Für viele historische Anwendungsfälle sind diese Prämissen jedoch nicht gegeben. Die Eignung der vorhandenen Ansätze für abweichende Szenarien soll darum am Beispiel zweier ripuarischer Inkunabeln (<!--≈-->&#x2248;500.000 Tokens) untersucht werden. Es handelt sich um Werke aus dem Kontext der Kölner Stadtgeschichtsschreibung, die nachweislich Parallelstellen enthalten (Anonym, 1490<ref n="2" target="ftn2"/>; Anonym, 1499<ref n="3" target="ftn3"/>; vgl. Meier, 1998, S. 78f.). Auf die Texte wurde mit 
+                <hi rend="italic">Transkribus</hi> Handwritten Text Recognition (HTR) angewandt, die stellenweise eine erhöhte Fehlerrate aufweist. Zudem liegt ein hoher Grad an intra- und intertextueller orthographischer Varianz vor. Die bereits bekannten Fälle von TR im Textkorpus legen nahe, dass dieser eher fragmentiert, d.h. kurz, nicht-wörtlich und teils in Syntax, Reihenfolge oder verwendeten Lexemen abgeändert ist, was die Anwendung von TRD allgemein erschwert (vgl. Moritz et al., 2016). Hinzukommt, dass für die ripuarische Sprache keine NLP-Ressourcen, wie trainierte Lemmatisierer oder annotierte Korpora<ref n="4" target="ftn4"/> vorliegen.
+            </p>
+            <p>Erste Tests zeigten, dass insbesondere die sprachliche Varianz der Texte sowie die Kürze des TR Probleme für die HTRD darstellen: 
+                <hi rend="italic">TextPAIR</hi> und 
+                <hi rend="italic">BLAST</hi> fanden mit Standardeinstellungen zwar zahlreiche, aber überwiegend triviale, 
+                <hi rend="italic">Passim</hi> gar keine textuellen Ähnlichkeiten. Im Folgenden werden in stark verkürzter Form die Durchführung und die Ergebnisse eines systematischen Vergleichs der drei Programme vorgestellt.
+            </p>
+            <p>Zunächst wurden für ein Evaluationsset<ref n="5" target="ftn5"/> 19 wörtliche bis schwach-wörtliche TR-Fälle in einem Auszug aus dem Untersuchungskorpus manuell annotiert. Außerdem wurden zwei naive Maßnahmen zur sprachlichen Vereinheitlichung umgesetzt: Erstens, regelbasierte Orthographie-Normalisierung und zweitens, „Pseudo-Lemmatisierung” durch das Clustern von Wörtern mit einem hohen Alignment-Wert bei Verwendung des Needleman-Wunsch-Algorithmus. Mit jeder Kombination dieser Präprozessierungsarten wurde ein Evaluationsset aus den annotierten Textteilen erstellt, die wiederum die Eingabedaten für Testdurchläufe jedes HTRD-Programms mit diversen Kombinationen aus Parameterwerten bildeten. Für diese wurde anschließend der F1-Score anhand eines Abgleichs zwischen den Ergebnistreffern und den 19 TR-Fällen berechnet.
+            </p>
+            <figure>
+                    <graphic n="1001" width="15.991416666666666cm" height="3.129138888888889cm" url="Pictures/b65a1755404a162d49bbdf9320fd6d48.png" rend="inline"/>
+            </figure>
+            <figure>
+                    <graphic n="1002" width="16.007291666666667cm" height="3.042708333333333cm" url="Pictures/4c0f6420bf289ff8d746d39a4f6064a6.png" rend="inline"/>
+            </figure>
+            <p>
+                <hi rend="italic">Passim</hi> erreichte die besten Evaluationswerte, gefolgt vom ebenfalls mit Zeichen-n-Grammen arbeitenden 
+                <hi rend="italic">BLAST</hi> (Tab. 1)<ref n="6" target="ftn6"/>. Für 
+                <hi rend="italic">TextPAIR</hi> und 
+                <hi rend="italic">Passim</hi> stellte sich die Anwendung der Pseudo-Lemmatisierung als erfolgreich heraus, wohingegen das sprachagnostische 
+                <hi rend="italic">BLAST</hi> mit nicht-vorverarbeiteten Texten erfolgreicher war. Insgesamt ist der F1-Score aller Programme trotz optimierter Parameterwerte niedrig (&lt;0,5) und die Precision bei erhöhtem Recall sehr gering (Tab. 2). In Gesamtdurchläufen mit diesen optimierten Parameterwerten wurden im Korpus zwar zuvor unbekannte Parallelstellen gefunden, doch wegen der Kürze der n-Gramme waren über 70% aller Ergebnisse triviale Ähnlichkeiten (Namen, Mehrwort-Ausdrücke, Phrasen).
+            </p>
+            <p>Es lässt sich festhalten, dass die getesteten, auf n-Gramm-Vergleichen basierenden HTRD-Ansätze zwar in der Lage sind, Parallelstellen in ripuarischen Texten zu erkennen, und somit einen Mehrwert für die Textanalyse bieten, doch dass für die zuverlässige Erkennung von komplexem TR in vormodernen, deutschsprachigen Texten weitere Forschung nötig ist oder gänzlich andere Ansätze verwendet werden müssen.</p>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                    
+                        <hi rend="italic">Tracer</hi> war trotz angemessener Versuche nicht (mehr) zugänglich.
+                    
+                </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                     Veröffentlichung in Vorbereitung.
+                </note>
+<note rend="footnote text" xml:id="ftn3" n="3">
+                     Volltext bereitgestellt vom Projekt „Koelhoffsche Chronik 1499 digital“ (https://www.uni-muenster.de/Geschichte/histsem/LG-G/Forschen/koelhoffschechronik.html; Bruch, 2023).
+                </note>
+<note rend="footnote text" xml:id="ftn4" n="4">
+                     Sprachlich entfernt verwandt aber mit geringer Type-Überlappung: ReN-Team, 2021.
+                </note>
+<note rend="footnote text" xml:id="ftn5" n="5">
+                     Veröffentlichung in Vorbereitung.
+                </note>
+<note rend="footnote text" xml:id="ftn6" n="6">
+                     Die n-Gramm-Länge steht stellvertretend für zahlreiche untersuchte Programm-Parameter. 30% aller 
+                        <hi rend="italic">TextPAIR</hi>-Durchläufe konnte wegen eines internen Programmfehlers nicht berücksichtigt werden.
+                    
+                </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Anonymus.</hi> 1490. 
+                        <hi rend="italic">Der Doernenkrantz van Collen</hi>
+                        <hi rend="italic" xml:space="preserve">. </hi>Köln: Johann Koelhoff d. J. Digitalisat: https://tudigit.ulb.tu-darmstadt.de/show/inc-ii-674 (zugegriffen: 5.12.2023).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Anonymus.</hi> 1499. 
+                        <hi rend="italic">Die Cronica van der hilliger Stat van Coellen</hi>. Köln: Johann Koelhoff d. J. Digitalisat: https://sammlungen.ulb.uni-muenster.de/hd/content/titleinfo/7159780 (zugegriffen: 5.12.2023).
+                    </bibl>
+                    <bibl>[<hi rend="italic">BLAST</hi>:] <hi rend="bold">Vesanto, Aleksi et al.</hi> 
+                        <hi rend="italic">Text Reuse Detection with BLAST</hi>. Ohne Version (Stand 2019). URL: https://github.com/avjves/textreuse-blast.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bruch, Julia.</hi> 2023. „Mit Studierenden edieren: Digitale Editionen als Chance für die Lehre.“ 
+                        <hi rend="italic">DigiTRiP</hi>. https://digitrip.hypotheses.org/1278 (zugegriffen: 19.07.2023).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Büchler, Marco.</hi> 2013. 
+                        <hi rend="italic">Informationstechnische Aspekte des Historical Text Re-use</hi>. PhD diss., Universität Leipzig. urn:nbn:de:bsz:15-qucosa-108515.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Coffee, Neil, Jean-Pierre Koenig, Shakthi Poornima, Christopher W. Forstall, Roelant Ossewaarde und Sarah L. Jacobson.</hi> 2013. „The Tesserae Project: intertextual analysis of Latin poetry.“ 
+                        <hi rend="italic">Literary and Linguistic Computing</hi> 28 (2): 221–28. 10.1093/llc/fqs033.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Franzini, Greta, Marco Passarotti, Maria Moritz und Marco Büchler.</hi> 2018. „Using and Evaluating TRACER for an Index Fontium computatus of the Summa Contra Gentiles of Thomas Aquinas.“ In 
+                        <hi rend="italic">Proceedings of the Fifth Italian Conference on Computational Linguistics CLiC-It 2018</hi>, hrsg. von E. Cabrio, A. Mazzei und F. Tamburini, 1–11. https://books.openedition.org/aaccademia/3369 (zugegriffen: 19.07.2023).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gladstone, Clovis.</hi> 2018. „TextPAIR: a new high-performance sequence aligner.“ 
+                        <hi rend="italic">ARTFL Project Research Blog</hi>. https://artfl.blogspot.com/2018/12/textpair-new-high-performance-sequence.html (zugegriffen: 19.07.2023).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gladstone, Clovis und Charles Cooney.</hi> 2020. „Opening new paths for scholarship: Algorithms to track text reuse in Eighteenth Century Collections Online.“ In 
+                        <hi rend="italic">Digitizing Enlightenment: Digital Humanities and the Transformation of Eighteenth-Century Studies</hi>, hrsg. von S. Burrows und G. Roe, S. 353–374. Oxford University Studies in the Enlightenment 2020:07. Liverpool.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hiltmann, Torsten, Jan Keupp, Melanie Althage und Philipp Schneider.</hi> 2021. „Digital Methods in Practice: The Epistemological Implications of Applying Text Re-Use Analysis to the Bloody Accounts of the Conquest of Jerusalem (1099).“ 
+                        <hi rend="italic">Geschichte und Gesellschaft</hi> 47 (1): 122–56. 10.13109/gege.2021.47.1.122.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Liebl, Bernhard und Manuel Burghardt.</hi> 2022. „The Vectorian API: A Research Framework for Semantic Textual Similarity (STS) Searches.“ In 
+                        <hi rend="italic">Digital Humanities 2022: Conference Abstracts</hi>, hrsg. von Yifan Wang, 654–56. Tokio.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Meier, Robert.</hi> 1998. 
+                        <hi rend="italic">Heinrich van Beeck und seine „Agrippina“: Ein Beitrag zur Kölner Chronistik des 15. Jahrhunderts. Mit einer Textdokumentation</hi>. Kölner historische Abhandlungen 41. Köln.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Moritz, Maria, Andreas Wiederhold, Barbara Pavlek, Yuri Bizzoni und Marco Büchler.</hi> 2016. „Non-Literal Text Reuse in Historical Texts: An Approach to Identify Reuse Transformations and its Application to Bible Reuse.“ In 
+                        <hi rend="italic">Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing</hi>, 1849–59. 10.18653/v1/D16-1190.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mullen, Lincoln.</hi> 2020. 
+                        <hi rend="italic">textreuse: Detect Text Reuse and Document Similarity</hi>. https://docs.ropensci.org/textreuse, https://github.com/ropensci/textreuse.
+                    </bibl>
+                    <bibl>[<hi rend="italic">Passim</hi>:] <hi rend="bold">Smith, David A. et al.</hi> 
+                        <hi rend="italic">passim</hi>. Version 2.0.0 alpha 2 (Stand 2022). URL: https://github.com/dasmiq/passim/releases/tag/v2.0.0-alpha.2.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">ReN-Team.</hi> 2021. „Reference Corpus Middle Low German/Low Rhenish (1200–1650); Referenzkorpus Mittelniederdeutsch/Niederrheinisch (1200–1650)“ (Version 1.1) [Data set]. 10.25592/uhhfdm.9195.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Smith, David A., Ryan Cordell und Abby Mullen.</hi> 2015. „Computational Methods for Uncovering Reprinted Texts in Antebellum Newspapers.“ 
+                        <hi rend="italic">American Literary History</hi> 27 (3): E1-E15.
+                    </bibl>
+                    <bibl>[<hi rend="italic">TextPAIR</hi>:] <hi rend="bold">ARTFL-Project.</hi> 
+                        <hi rend="italic">TextPAIR (Pairwise Alignment for Intertextual Relations)</hi>. Version 2.1 (Stand Aug. 2023). URL: https://github.com/ARTFL-Project/text-pair/releases/tag/v2.1.0.1.
+                    </bibl>
+                    <bibl>[<hi rend="italic">Transkribus</hi>:] <hi rend="bold">Kahle, Philip, Sebastian Colutto, Günter Hackl und Günter Mühlberger.</hi> 2017. „Transkribus - a Service Platform for Transcription, Recognition and Retrieval of Historical Documents.“ In 
+                        <hi rend="italic">2017 14th IAPR International Conference on Document Analysis and Recognition (ICDAR)</hi>, 19–24. 10.1109/ICDAR.2017.307.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Vesanto, Aleksi, Filip Ginter, Hannu Salmi, Heli Rantala, Asko Nivala und Tapio Salakoski.</hi> 2017. „A System for Identifying and Exploring Text Repetition in Large Historical Document Corpora.“ In 
+                        <hi rend="italic">Proceedings of the NoDaLiDa 2017 Workshop on Processing Historical Language</hi>, 330–33. https://aclanthology.org/W17-0249 (zugegriffen: 19.07.2023). 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

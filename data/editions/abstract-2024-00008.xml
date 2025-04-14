@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="ETLING_Fabian_Auffinden_und_Analysieren_komplexer_Textvarian" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Auffinden und Analysieren komplexer Textvarianten in Hannah Arendts Denk- und Schreibwerkstatt mit LERA</title>
+                <author>
+                    <persName>
+                        <surname>Etling</surname>
+                        <forename>Fabian</forename>
+                    </persName>
+                    <affiliation>Freie Universität Berlin, Deutschland</affiliation>
+                    <email>fabian.etling@fu-berlin.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pöckelmann</surname>
+                        <forename>Marcus</forename>
+                    </persName>
+                    <affiliation>Martin-Luther-Universität Halle-Wittenberg, Deutschland</affiliation>
+                    <email>marcus.poeckelmann@informatik.uni-halle.de</email>
+                    <idno type="ORCID">0000-0001-8718-1198</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Grote</surname>
+                        <forename>Brigitte</forename>
+                    </persName>
+                    <affiliation>Freie Universität Berlin, Deutschland</affiliation>
+                    <email>brigitte.grote@fu-berlin.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-06-13T14:32:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Digital Humanities Passau</publisher>
+                <address>
+                    <addrLine>Universität Passau</addrLine>
+                    <addrLine>Innstraße 41</addrLine>
+                    <addrLine>D-94032 Passau</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Posterpräsentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Digitale Edition</term>
+                    <term>Kollationierung</term>
+                    <term>textgenetischer Vergleich</term>
+                    <term>interaktive Textsynopse</term>
+                    <term>Close Reading</term>
+                    <term>Distant Reading</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Annotieren</term>
+                    <term>Webentwicklung</term>
+                    <term>Visualisierung</term>
+                    <term>Text</term>
+                    <term>Werkzeuge</term>
+                    <term>virtuelle Forschungsumgebungen</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">
+                <anchor xml:id="Hlk140674770"/>Das Editionsvorhaben 
+                <hi rend="italic">Hannah Arendt. Kritische Gesamtausgabe</hi><ref n="1" target="ftn1"/> macht sämtliche Schriften der Autorin mit Ausnahme der Briefe zugänglich. Dafür werden von einem internationalen Herausgeber:innenteam ca. 21.000 Seiten der von Hannah Arendt zu Lebzeiten veröffentlichten Werke (Monographien, Essaysammlungen, Artikel, Interviews etc.) sowie unveröffentlichter Dokumente aus ihrem Nachlass (Typoskripte, Notizen etc.) bearbeitet und mit einem detaillierten Stellenkommentar versehen. Die Website<ref n="2" target="ftn2"/> der Edition komplementiert die in den Druckbänden veröffentlichten konstituierten Texte<ref n="3" target="ftn3"/>, indem sie die zahlreichen Vorfassungen und Umarbeitungen der Autorin integriert. Die Website versteht sich nicht nur als Publikationsort der digitalen Edition, sondern darüber hinaus als erweiterte Forschungsplattform<ref n="4" target="ftn4"/>: Die Entstehungsstadien ihrer Schriften sollen, soweit Zeugnisse vorliegen, nachvollzogen werden können. Der Editionsvorgang soll dabei bis hin zu einzelnen Entzifferungs- und Deutungsentscheidungen nachprüfbar bleiben (Etling und Kieslich, 2024). Eine Herausforderung stellen dementsprechend die Kollationierung und textkritische Auseinandersetzung mit den großen Textmengen dar – eine editorische Arbeit, die manuell nur mit erheblichem Aufwand leistbar ist. Den Leser:innen der Edition sollen durch die Wiedergabe eines vollständigen Textvergleichs die textkritischen Entscheidungen transparent gemacht sowie die Identifikation und Beurteilung varianter Stellen sowohl auf einer Makroebene (Textsegmente) als auch auf einer Mikroebene (Zeichenmengen innerhalb der Segmente) ermöglicht werden.<ref n="5" target="ftn5"/>
+            </p>
+            <p style="text-align: left; ">Mit LERA<ref n="6" target="ftn6"/>
+                 existiert ein frei verfügbares digitales Kollationierungswerkzeug, welches die Berechnung und Präsentation von Textvarianten zwischen Textfassungen sowie deren Analyse mittels interaktiver Visualisierungen ermöglicht (Pöckelmann et al., 2023). Der Textvergleich erfolgt in zwei Stufen: Auf eine automatische Alignierung von größeren Textsegmenten wie Absätzen folgt ein Detailvergleich auf Tokenebene, sodass auch große Textmengen von der Software verarbeitet und dargestellt werden können. LERA ist für den Vergleich mehrerer Textfassungen ausgelegt, wobei im Gegensatz zum Leitquellenprinzip ein gleichrangiger Vergleich verfolgt wird.<ref n="7" target="ftn7"/> Spezifische Textvarianten können durch das integrierte Filtersystem dynamisch vom Textvergleich ausgenommen werden. Neben der Volltextpräsentation via synoptischer Gegenüberstellung und Variantenapparat zur Analyse von Einzelstellen (Close Reading) bietet LERA auch verschiedene, kombinierte Distant-Reading-Visualisierungen an, welche die Textvarianten aggregieren und so eine explorative Analyse ermöglichen (Schütz und Pöckelmann, 2016).
+            </p>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="12.659430555555556cm" url="Pictures/770254d9be3bb904a2bb423c5f392660.jpg" rend="inline"/>
+                <head>Abb.1: Die Einzeltextansicht der Arendt-Edition verweist für einen textkritischen Fassungsvergleich auf LERA</head><ref n="8" target="ftn8"/>
+            </figure>
+            <p style="text-align: left; ">Die Bedarfe der Arendt-Edition legen den Einsatz von LERA als Forschungswerkzeug und Visualisierungsinstrument nahe. Zunächst wurde exemplarisch die Anbindung für drei Gruppen von Textfassungen umgesetzt, um projektspezifische Anforderungen an LERA zu bestimmen. In einem ersten Schritt wird LERA durch die Editor:innen bei der Erforschung der Unterschiede und Gemeinsamkeiten zwischen Textfassungen genutzt und kann so z. B. Erkenntnisse zur Textgenese liefern und die Kollationierungsarbeit unterstützen. Als ‚semi-automatisches‘ Werkzeug liefert LERA Vorschläge für Textalignierung und variante Segmente, die in der Bedienoberfläche weiterbearbeitet und so in einem iterativen Prozess vervollständigt und präzisiert werden können. Vor allem bei großen Textmengen lassen sich Abweichungen zwischen Einzeltexten gegenüber einem manuellen Abgleich mit wesentlich geringerem Aufwand identifizieren. Die synoptische Vergleichsansicht ermöglicht hierbei durch die farbcodierte Hervorhebung der varianten Textstellen zudem das Aufdecken von Transkriptionsfehlern. Die semi-automatisch erzeugten Analysedaten werden in einem zweiten Schritt genutzt, um im Webportal die Varianten für die forschenden Leser:innen der Edition zu visualisieren. Ausgehend von der Einzelansicht eines Textes kann die Vergleichsansicht von LERA für abweichende Textfassungen aufgerufen werden (vgl. Abb. 1). Die Vergleichsansicht bietet durch die Alignierung der Segmente einen Überblick über die in Arendts Fall oft großen Textmengen sowie über theoretisch beliebig viele Fassungen und erlaubt damit, Abweichungen auf einer Makro- und Mikroebene schnell zu identifizieren und zu untersuchen (vgl. Abb. 2). Durch die Kooperation mit LERA gelingt der Edition ein erster Schritt hin zu einer virtuellen Forschungsumgebung, die vertiefte Einblicke in Arendts Denk- und Schreibprozesse erlaubt. </p>
+            <figure>
+                <graphic n="1002" width="16.002cm" height="10.655652777777778cm" url="Pictures/10f42d6a1c92c616a8762251b9096683.jpg" rend="inline"/>
+                <head>Abb. 2: Synoptische Gegenüberstellung von Textfassungen unter Hervorhebung der Textvarianten mit LERA</head><ref n="9" target="ftn9"/>
+            </figure>
+            <p style="text-align: left; ">Der Einsatz im Kontext der Arendt-Edition zeigt zugleich auch neue Bedarfe und Verbesserungspotenziale für LERA auf. So wurden die Mechanismen für die Verarbeitung von XML-Strukturen verfeinert, z. B. als Ausgangspunkt für eine Segmentierung beim Datenimport oder als Kriterien für eine jeweils spezifische Behandlung verschiedener XML-Markupkonstrukte im Textvergleich. Damit einhergehend wurden die Konfigurationsmöglichkeiten von LERA erweitert, insbesondere die Steuerung der Tokenisierung (z. B. bei Worttrennungen oder Inline-Markup) sowie die Filtereinstellungen für Textvergleich und -wiedergabe, und das User Interface hinsichtlich der Zugänglichkeit und Bedienbarkeit optimiert.</p>
+            <p style="text-align: left; ">
+                <anchor xml:id="_DdeLink__1989_3647185536"/>Die Anforderung der Arendt-Edition, den XML-Datenexport aus LERA in den Datenbestand der Edition zurückspielen und z. B. für die Anzeige von textkritischen Apparaten einsetzen zu können, motiviert die derzeitige Weiterentwicklung des LERA-Exportformats gemäß der TEI-Richtlinien mit dem Ziel, auch für Dritte eine vielfältige Nachnutzung durch einen interoperablen Datenstandard zu gewährleisten. Dieses und die Erweiterung von LERA für den strukturierten Vergleich mehrsprachiger Textfassungen, die nicht strikt parallele Texte sind, sind Gegenstand eines aktuellen DFG-Projekts<ref n="10" target="ftn10"/>. Die Synergien, die sich aus der Kooperation herausgebildet haben, bieten über die beteiligten Projekte hinaus einen Mehrwert für die Forschungslandschaft im Bereich der digitalen Editionen.
+            </p>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                         Siehe 
+                            <ref target="https://www.arendteditionprojekt.de">https://www.arendteditionprojekt.de</ref>. Seit 2020 wird das Editionsprojekt als Langfristvorhaben durch die DFG gefördert: 
+                            <ref target="https://gepris.dfg.de/gepris/projekt/421689821">https://gepris.dfg.de/gepris/projekt/421689821</ref>.
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                         Siehe 
+                            <ref target="https://hannah-arendt-edition.net">https://hannah-arendt-edition.net</ref>
+                            <hi rend="Internetverknüpfung">.</hi>
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn3" n="3">
+                         Siehe 
+                            <ref target="https://www.wallstein-verlag.de/reihen/hannah-arendt-kritische-gesamtausgabe.html">https://www.wallstein-verlag.de/reihen/hannah-arendt-kritische-gesamtausgabe.html</ref>.
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn4" n="4">
+                         Vgl. auch aktuelle Editionsvorhaben wie 
+                            <hi rend="italic">Arthur Schnitzler digital</hi> (
+                            <ref target="https://www.schnitzler-edition.net">https://www.schnitzler-edition.net</ref>
+                            <hi rend="Internetverknüpfung">), die 
+                                <hi rend="italic">Historisch-kritische Edition von Goethes Faust</hi> (
+                            </hi>
+                            <ref target="https://faustedition.net">https://faustedition.net</ref>
+                            <hi rend="element-invisible">) oder auch die 
+                                <hi rend="italic">Uwe Johnson Werkausgabe</hi> (
+                            </hi>
+                            <ref target="http://www.uwe-johnson-werkausgabe.de">http://www.uwe-johnson-werkausgabe.de</ref>
+                            <hi rend="element-invisible">), die allesamt Werkzeuge zur Analyse und Exploration der publizierten Texte anbieten.</hi>
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn5" n="5">
+                         Ein Textvergleich auf der Makroebene soll den Text in seiner Gesamtheit betrachten und sich auf anhand bestimmter Vorgaben ermittelte Segmente beziehen, z. B. Absatzstrukturen. Ein Vergleich auf der Mikroebene soll innerhalb der Segmente, die sich gemäß Makrovergleich entsprechen, bestimmte Token betrachten, z. B. Wörter, Zahlen und Satzzeichen.
+                    </note>
+<note rend="footnote text" xml:id="ftn6" n="6">
+                         LERA (Locate, Explore, Retrace and Apprehend complex text variants) wird seit 2013 im Rahmen interdisziplinärer Forschungsprojekte an der Martin-Luther-Universität Halle-Wittenberg entwickelt. Ein Demonstrator der Software mit verschiedenen Textbeispielen ist unter 
+                            <ref target="https://lera.uzi.uni-halle.de">https://lera.uzi.uni-halle.de</ref> verfügbar.
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn7" n="7">
+                         Im Gegensatz zu LERA oder auch CollateX (<hi rend="Betont">Dekker und Middell, 2011</hi>) arbeiten viele Kollationierungswerkzeuge, welche für mehr als zwei zu vergleichende Textfassungen gleichzeitig ausgelegt sind, nach dem klassischen Leitquellenprinzip, bei dem eine Textfassung als Basistext für den Vergleich ausgewählt werden muss. So zum Beispiel eComparatio (<hi rend="Betont">Bräckel et al., 2019</hi>), Juxta (<hi rend="Internetverknüpfung">Wheeles und Jensen, 2013</hi>) oder TUSTEP (Ott, 2000).
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn8" n="8">
+                     Siehe 
+                        <ref target="https://hannah-arendt-edition.net/v1/ae1254820">https://hannah-arendt-edition.net/v1/ae1254820</ref>.
+                    
+                </note>
+<note rend="footnote text" xml:id="ftn9" n="9">
+                     Siehe 
+                        <ref target="https://hakg.uzi.uni-halle.de/editions/3">https://hakg.uzi.uni-halle.de/editions/3</ref>.
+                    
+                </note>
+<note rend="footnote text" xml:id="ftn10" n="10">
+                         Siehe 
+                            <ref target="https://www.cedis.fu-berlin.de/services/projektentwicklung/aktuell/semi-automatische-kollationierung/index.html">https://www.cedis.fu-berlin.de/services/projektentwicklung/aktuell/semi-automatische-kollationierung/index.html</ref>.
+                        
+                    </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="Betont" xml:space="preserve">
+                            <hi rend="bold">Bräckel, O., H. Kahl, F. Meins und C. Schubert.</hi> 2019. </hi>
+                        <anchor xml:id="_DdeLink__2221_36471855364"/>
+                        <hi rend="Betont" xml:space="preserve">“eComparatio - A Software Tool for Automatic Text Comparison.” In Digital Classical Philology: Ancient Greek and Latin in the Digital Revolution. De Gruyter Saur, 221–238. </hi>
+                        <ref target="https://doi.org/10.1515/9783110599572-013">https://doi.org/10.1515/9783110599572-013</ref>
+                        <hi rend="Betont">.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="Betont">
+                            <hi rend="bold">Dekker, R. H. und G. Middell.</hi> 2011. “Computer-supported collation with CollateX: managing textual variance in an environment with varying requirements.</hi>
+                        <anchor xml:id="_DdeLink__990_7574048132"/>
+                        <hi rend="Betont">” Supporting Digital Humanities 2011, Kopenhagen, 17.–18.11.2011.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Etling, F. und I. Kieslich.</hi> 2024. 
+                        <hi rend="Betont">“</hi>Transformation als inhärentes Textphänomen
+                        <anchor xml:id="_DdeLink__990_757404813"/>.
+                        <hi rend="Betont">”</hi> Angenommen als Beitrag zur 20. internationalen Tagung der Arbeitsgemeinschaft für germanistische Edition zum Thema 
+                        <hi rend="Betont">Edition als Transformation. Bedingungen, Formen, Interessen und Ziele editorischer Präsentationen, Wuppertal, 21.–24. Februar 2024.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Ott, W.</hi> 2000. 
+                        <anchor xml:id="_DdeLink__2221_36471855363"/>
+                        <hi rend="Betont">“Strategies and tools for textual scholarship: the Tübingen system of text processing programs (TUSTEP)</hi>.<hi rend="Betont">”</hi> In 
+                        <hi rend="italic">Literary and Linguistic Computing</hi>, Volume 15, Issue 1, 93–108. 
+                        <ref target="https://doi.org/10.1093/llc/15.1.93">https://doi.org/10.1093/llc/15.1.93</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Pöckelmann, M., A. Medek, J. Ritter und P. Molitor.</hi> 2023. 
+                        <anchor xml:id="_DdeLink__2221_3647185536"/>
+                        <hi rend="Betont">“</hi>LERA - An interactive platform for synoptical representations of multiple text witnesses.<hi rend="Betont">”</hi> In 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, Volume 38, Issue 1, 330–346. 
+                        <ref target="https://doi.org/10.1093/llc/fqac021">https://doi.org/10.1093/llc/fqac021</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Schütz, S. und M. Pöckelmann.</hi> 2016. 
+                        <hi rend="Betont">“</hi>LERA - Explorative Analyse komplexer Textvarianten in Editionsphilologie und Diskursanalyse.<hi rend="Betont">”</hi> DHd2016, 3. Jahrestagung der Digital Humanities im deutschsprachigen Raum, Leipzig, 07.–12.03.2016. 
+                        <ref target="https://doi.org/10.5281/zenodo.4645364">https://doi.org/10.5281/zenodo.4645364</ref>
+                        <hi rend="Internetverknüpfung">.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="Internetverknüpfung" xml:space="preserve">
+                            <hi rend="bold">Wheeles, D. und K. Jensen.</hi> 2013. </hi>
+                        <anchor xml:id="_DdeLink__2221_36471855361"/>
+                        <hi rend="Betont">“</hi><hi rend="Internetverknüpfung">Juxta Commons.</hi><hi rend="Betont" xml:space="preserve">” DH2013, Proceedings of the 24. international annual conference of Digital Humanities, </hi>
+                        <hi rend="Internetverknüpfung" xml:space="preserve">Lincoln, </hi>
+                        <anchor xml:id="site-description"/>
+                        <hi rend="Internetverknüpfung">16.</hi>
+                        <hi rend="Betont">–</hi>
+                        <hi rend="Internetverknüpfung">19.07.2013. 545–546.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

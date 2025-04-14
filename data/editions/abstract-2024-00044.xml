@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="HORSTMANN_Jan_InterAnnotator__Interfaces_f_r_die_Annotation_" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>InterAnnotator: Interfaces für die Annotation intertextueller Relationen</title>
+                <author>
+                    <persName>
+                        <surname>Horstmann</surname>
+                        <forename>Jan</forename>
+                    </persName>
+                    <affiliation>Universität Münster, Deutschland</affiliation>
+                    <email>jan.horstmann@uni-muenster.de</email>
+                    <idno type="ORCID">0000-0001-8047-2232</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lück</surname>
+                        <forename>Christian</forename>
+                    </persName>
+                    <affiliation>Universität Münster, Deutschland</affiliation>
+                    <email>christian.lueck@uni-muenster.de</email>
+                    <idno type="ORCID">0009-0008-0649-5127</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Normann</surname>
+                        <forename>Immanuel</forename>
+                    </persName>
+                    <affiliation>Universität Münster, Deutschland</affiliation>
+                    <email>immanuel.normann@uni-muenster.de</email>
+                    <idno type="ORCID">0000-0003-4702-1282</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Stange</surname>
+                        <forename>Jan-Erik</forename>
+                    </persName>
+                    <affiliation>Universität Münster, Deutschland</affiliation>
+                    <email>jan-erik.stange@uni-muenster.de</email>
+                    <idno type="ORCID">0009-0004-7264-2843</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-06-13T14:32:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Digital Humanities Passau</publisher>
+                <address>
+                    <addrLine>Universität Passau</addrLine>
+                    <addrLine>Innstraße 41</addrLine>
+                    <addrLine>D-94032 Passau</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Posterpräsentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Intertextualität</term>
+                    <term>Annotation</term>
+                    <term>Interface</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Annotieren</term>
+                    <term>Theoretisierung</term>
+                    <term>Kollaboration</term>
+                    <term>Text</term>
+                    <term>Visualisierung</term>
+                    <term>virtuelle Forschungsumgebungen</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Intertextor: Interfaces für die Annotation intertextueller Relationen</head>
+                <p>Theoriegetriebene Überlegungen zur Annotation von Intertextualität fortführend, wird ein Entwurf zum 
+                    <hi rend="italic">Intertextor</hi>, einem Tool zur Annotation intertextueller Relationen, vorgestellt. Während bereits eine breite Palette von Annotationswerkzeugen zur Verfügung steht, ist ein Tool zur Formalisierung von Relationen zwischen Texten und Textstellen bislang ein Desiderat geblieben. Das Poster soll Intertextualitätsforschende einladen, über theoriegetriebene Toolgestaltungsprinzipien zu diskutieren sowie den Intertextor mit uns gemeinsam weiterzuentwickeln und durch Nutzung sukzessive zu verbessern.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Formalisierung als Vorarbeiten</head>
+                <p>Ausgangspunkt war eine Erhebung über verschiedene Theorien der Intertextualität seit Einführung des Begriffs 1967 durch Julia Kristeva (Kristeva 1972) und das Herausarbeiten ihres gemeinsamen konzeptionellen Kerns (Horstmann, Lück, Normann 2023 und dies. angenommen). Dieser konzeptionelle Kern und einflussreiche Ausprägungen der Theorie (etwa Hypertextualität, Genette 1993), wurden in RDF/OWL formalisiert, was zu einer modularen Ontologie geführt hat. Die Kern-Ontologie beschreibt ein Datenmodell, dessen zentrale Relation die intertextuelle Relation ist: Sie ist eine gerichtete Relation von einem späteren Text bzw. einer Textstelle auf einen Avant-Text bzw. eine Stelle darin; sie verfügt über weitere Properties, insbesondere ist sie entsprechend einer theoretischen Ausprägung klassifizierbar (z.B. als Travestie im Sinne Genettes) und die 
+                    <hi rend="inline-comment-marker">Anknüpfungsmittel</hi> können beschrieben werden (z.B. Übernahme eines Motivs). Zur Anwendung kommt zudem die Web-Annotations-Ontologie zur Referenzierung von Textstellen (Sanderson et al. 2017). Auf dieser Grundlage steht der 
+                    <hi rend="italic">Intertextor</hi> als Tool für die Annotation von Intertextualität auf verschiedenen Granularitätsstufen.
+                </p>
+                <p>Technisch gesehen ist der 
+                    <hi rend="italic">Intertextor</hi> ein Mensch-Maschine-Interface einer Graph-Datenbank und dient zur Erzeugung und Darstellung von RDF-Relationen aufgrund von User-Interaktionen. Seine Komponenten müssen u.a. folgende Funktionen implementieren: Anlegen, Anzeigen und Durchsuchen von Texten bzw. Korpora; Selektieren von Textstellen und Darstellung solcher Selektionen; Anlegen und Darstellen von intertextuellen Relationen; Klassifizieren und Diskutieren solcher Verbindungen; Erstellung und Darstellung von Anknüpfungsmitteln; Suche und Navigieren in diesen strukturierten Daten. Der 
+                    <hi rend="italic">Intertextor</hi> ermöglicht kollaboratives Erfassen und Erforschen von Intertextualität. Die Benutzer*innen erstellen einen globalen Intertextualitäts-Graphen. Offenheit ist daher ein grundlegendes Gestaltungsprinzip des Tools.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Skalierbare Navigation im Netzwerk der Texte als Gestaltungsprinzip</head>
+                <p>Während in unseren Vorarbeiten formale Methoden und das Datenmodell im Vordergrund standen, folgt die weitere Entwicklung des Tools einem offenen und iterativen Co-Kreationsprozess zur Visualisierung intertextueller Relationen nebst Konzentration auf Prinzipien der User-Experience. In einem Intertextualitätsnetzwerk sind Knoten ganze Texte und Textstellen. Es ist wünschenswert, in das Netzwerk 
+                    <hi rend="italic">hinein oder hinaus zoomen</hi> zu können, um Intertextualität sowohl als Struktur als auch in ihren Details explorierbar zu machen. Eine 
+                    <hi rend="italic">skalierbare Navigation</hi> ist deswegen die Grundidee des User-Interfaces: Dargestellt wird Text je nach Zoomstufe 1) als Punkt, 2) als Balken, 3) als Fläche eines ins Unleserliche verkleinerten Textes oder 4) als lesbarer Text.
+                </p>
+                <figure>
+                    <graphic n="1001" width="15.980833333333333cm" height="11.297708333333333cm" url="Pictures/f217d3843e1c22ef858cb80024be58ac.jpeg" rend="inline"/>
+                    <head>Fig. 1: Text in vier differenzierten Zoomstufen</head>
+                </figure>
+                <p>Ausgehend von dieser Grundidee soll der 
+                    <hi rend="italic">Intertextor</hi> Forschenden verschiedene Konfigurationen der Zoomstufen als Zugänge zur Analyse und Annotation von Intertexualität anbieten:
+                </p>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="11.308291666666667cm" url="Pictures/89b635460cb606a44790c4d623af6024.png" rend="inline"/>
+                    <head>Fig. 2: Globales Netzwerk</head>
+                </figure>
+                <p>
+                    <hi rend="inline-comment-marker">In Fig. 2 bildet das</hi> gesamte Netzwerk den Hintergrund, auf dem sich die Interaktion mit den Texten abspielt. Einzelne Nodes können selektiert werden, woraufhin sich ein Textfenster öffnet, in dem Textstellen markiert und Verbindungen über mehrere Texte hinweg vorgenommen werden können.
+                </p>
+                <figure>
+                    <graphic n="1003" width="16.002cm" height="11.308291666666667cm" url="Pictures/822ae7b788aaa916eed6a74b60068f44.png" rend="inline"/>
+                    <head>Fig. 3: Text und Netzwerk</head>
+                </figure>
+                <p>In Fig. 3 ist der Screen in zwei Bereiche unterteilt, links das Netzwerk, rechts die Textansicht. Aus dem Netzwerk lassen sich Texte in die Textansicht herüberziehen, um mit ihnen zu arbeiten. Durch das Markieren von Textstellen in expandierten Texten können Annotationen erzeugt werden, zwischen denen wiederum Verbindungen gezogen werden können. Rechts neben den lesbaren Texten werden diese als Balken sowie ihre Verbindungen als Bogendiagramm repräsentiert, was die Navigation intertextueller Relationen zweier Texte ermöglicht. Diese Konfiguration ist besonders nützlich bei Annotation und Analyse intertextueller Relationen einzelner Textstellen. Für hermeneutische Zugänge und Close-Reading-Ansätze ist sie besonders wertvoll.</p>
+                <figure>
+                    <graphic n="1004" width="16.002cm" height="11.308291666666667cm" url="Pictures/224965c57a7adcd50c593e2e1fadbde9.png" rend="inline"/>
+                    <head>Fig. 4: Synopse</head>
+                </figure>
+                <p>Netzwerk und der als Synopse organisierte Textbereich sind in Fig. 4 visuell stärker voneinander getrennt. In der Skizze sieht man fünf ausgewählte Texte, die jeweils eine eigene scrollbare Spalte zum Lesen haben und eine schmale, detailarme Balken-Repräsentation zur Navigation rechts daneben. Ähnlich wie in den anderen Varianten lassen sich parallel in mehreren Texten Stellen markieren, die dann miteinander verbunden werden können, um intertextuelle Relationen zu erfassen. Auch diese synoptische Konfiguration ist insbesondere für Close-Reading-Methoden geeignet.</p>
+                <figure>
+                    <graphic n="1005" width="16.002cm" height="11.308291666666667cm" url="Pictures/9c8e82cc84f938f07d1f0d321d73d7c3.png" rend="inline"/>
+                    <head>Fig 5: Korpus-Netzwerk</head>
+                </figure>
+                <p>Ähnlich wie in der ersten Konfiguration startet Fig. 5 mit einer bildschirmfüllenden Ansicht des globalen Netzwerks. In diesem lassen sich Nodes auswählen (oder neue Nodes hinzufügen), um ein Korpus zusammenzustellen. Die ausgewählten Texte werden in einem weiteren Bereich als Balken radial angeordnet und bereits existierende Verbindungen zwischen ihnen angezeigt. Die Selektion eines Balkens öffnet eine lesbare Textansicht rechts daneben, mit der wiederum Querverbindungen zwischen Textstellen erzeugt werden können, welche im Radialdiagramm links daneben sichtbar werden.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Genette, Gerard</hi>. 1993. 
+                        <hi rend="italic">Palimpseste. Die Literatur auf zweiter Stufe.</hi> Frankfurt am Main: Suhrkamp.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Horstmann, Jan, Christian Lück und Immanuel Normann</hi>. 2023. „Textliche Relationen maschinenlesbar formalisieren: Systeme der Intertextualität“. In 
+                        <hi rend="italic">DHd 2023 Open Humanities Open Culture</hi>, hg. von Peer Trilcke und Anna Busch. 9. Tagung des Verbands „Digital Humanities im deutschsprachigen Raum", Trier, Luxemburg. DOI: 
+                        <ref target="https://doi.org/10.5281/zenodo.7715368">10.5281/</ref>
+                        <ref target="https://doi.org/10.5281/zenodo.7715368">zenodo</ref>
+                        <ref target="https://doi.org/10.5281/zenodo.7715368">.7715368</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Horstmann, Jan, Christian Lück und Immanuel Normann</hi>. Angenommen. „Systems of Intertextuality. Towards a formalization of text relations for manual annotation and automated reasoning" In 
+                        <hi rend="italic">Working on and with Categories for Text Analysis: Challenges and Findings from and for Digital Humanities Practices</hi>, hg. von Dominik Gerstorfer, Evelyn Gius und Janina Jacke. Digital Humanities Quarterly.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kristeva, Julia</hi>. 1972. „Wort, Dialog und Roman bei Bachtin“. In 
+                        <hi rend="italic">Literaturwissenschaft und Linguistik. Ergebnisse und Perspektiven. Band 3: Zur linguistischen Basis der Literaturwissenschaft II</hi>, hg. von Jens Ihwe, 345–375. Frankfurt am Main: Athenäum.
+                    </bibl>
+                    <bibl>
+                        <hi rend="p-name">
+                            <hi rend="bold">Sanderson</hi>
+                        </hi>
+                        <hi rend="bold">, Robert, Paolo Ciccarese undBenjamin Young</hi>. 2017. 
+                        <hi rend="italic">Web Annotation Data Model</hi>. URL: 
+                        <ref target="https://www.w3.org/TR/annotation-model/">https://www.w3.org/TR/annotation-model/</ref> (zugegriffen: 18.07.2023).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

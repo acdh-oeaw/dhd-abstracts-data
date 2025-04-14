@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="SLUYTER_G_THJE_Henny_Zur_Perspektive_in_Erz_hltexten__Ein_An_final" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Zur Perspektive in Erzähltexten. Ein Ansatz der Computational Literary Studies.</title>
+                <author>
+                    <persName>
+                        <surname>Sluyter-Gäthje</surname>
+                        <forename>Henny</forename>
+                    </persName>
+                    <affiliation>Universität Potsdam, Deutschland</affiliation>
+                    <email>sluytergaeth@uni-potsdam.de</email>
+                    <idno type="ORCID">0000-0003-2969-3237</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-07-18T14:40:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Digital Humanities Passau</publisher>
+                <address>
+                    <addrLine>Universität Passau</addrLine>
+                    <addrLine>Innstraße 41</addrLine>
+                    <addrLine>D-94032 Passau</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Doctoral Consortium</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Erzählperspektive</term>
+                    <term>Computational Literary Studies</term>
+                    <term>Computational Narratology</term>
+                    <term>Annotation</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+			<head>1. Projektübersicht</head>
+            <p style="text-align: left;">
+                <hi style="font-size:11pt" xml:space="preserve">Das ästhetische Überformen einer Geschichte zu einer Erzählung setzt die Gestaltung der Perspektive voraus, aus der die Geschichte erzählt wird. Die Perspektive beeinflusst, wie mittelbar eine Geschichte erzählt wird (z.B. Lubbock, 2006 [1921]; Friedman, 1955; Stanzel, 1985) und ist, je nach narratologischer Modellierung, dadurch bestimmt, wer die wahrnehmende und wertende Instanz ist (z.B. Uspenskij, 1975; Rimmon-Kenan, 1983; Schmid, 2014), wer für die Vermittlung von Wissen zuständig ist (z.B. Friedman, 1955), bzw. in welchem Verhältnis das Wissen der Figuren und der Erzählinstanz steht (Genette, 2010), ob Raum und Zeit an Figuren der erzählten Welt geknüpft sind (z.B. Uspenskij, 1975; Rimmon-Kenan, 1983; Schmid, 2014) und inwiefern die Sprache durch die Figuren oder die Erzählinstanz geprägt ist (z.B. Uspenskij, 1975; Schmid, 2014). Die Ausgestaltung der Perspektive beeinflusst dementsprechend maßgeblich die Bewertung von Geschehnissen in der erzählten Welt und prägt somit auch die literaturwissenschaftliche Interpretation, etwa weil sie auf Ebene der </hi>
+                <hi rend="italic" style="font-size:11pt" xml:space="preserve">histoire </hi>
+                <hi style="font-size:11pt">auf den Wirklichkeitsstatus von Dingen und Ereignissen in der erzählten Welt Einfluss nimmt oder die Zuverlässigkeit des Erzählens bedingen kann.</hi>
+            </p>
+            <p style="text-align: left;">
+                <hi style="font-size:11pt" xml:space="preserve">Die automatisierte Identifikation von Perspektive in Erzähltexten, zu der es zum jetzigen Zeitpunkt sowohl aus den </hi>
+                <hi rend="italic" style="font-size:11pt" xml:space="preserve">Computational Literary Studies </hi>
+                <hi style="font-size:11pt" xml:space="preserve">(CLS) als auch aus dem </hi>
+                <hi rend="italic" style="font-size:11pt" xml:space="preserve">Natural Language Processing </hi>
+                <hi style="font-size:11pt">(NLP) nur reduzierte Ansätze gibt, die z.B. in der Unterscheidung einer Ich- oder Er-Erzählung liegen (z.B. Eisenberg und Finlayson, 2016; Chen und Bunescu, 2022), würde es erlauben, eine Vielzahl an Texten in kurzer Zeit untersuchbar und so Muster, z.B. im Hinblick auf Epochen, erkennbar zu machen. Die Entwicklung eines solchen Systems ist das Ziel dieses Promotionsprojekts.</hi>
+            </p>
+            <p style="text-align: left;">Daraus ergeben sich zwei Fokusse:</p>
+            <list type="ordered">
+                <item>
+                    <hi xml:space="preserve">Die Grundlage für die Implementierung eines automatischen Systems ist ein mit Perspektiven-Informationen angereichertes Korpus, das für regelbasierte oder </hi>
+                    <hi rend="italic">Machine Learning-</hi>
+                    <hi>Systeme als Entwicklungs- und Evaluationskorpus genutzt werden kann. Um die Annotation eines Korpus zu ermöglichen, muss die theoretische Modellierung von Perspektive operationalisiert werden, d.h. abstrakte Begriffe wie ‘Wahrnehmen’ oder ‘Wissen’ werden in einem Prozess der Formalisierung konkretisiert und konzentriert, sodass Indikatoren abgeleitet werden können, die an der Textoberfläche untersuchbar sind. Durch den Prozess werden einerseits existierende Perspektiventheorien auf den Prüfstand gestellt, andererseits erhoffe ich mir, sowohl durch den Annotationsprozess als auch durch die statistische Auswertung der Annotationen neue Erkenntnisse zum Phänomen ‘Perspektive’ gewinnen zu können. Darin begründet sich der methodologisch-theoretische Ansatz der Arbeit.</hi>
+                </item>
+                <item>
+                    <hi>In der Implementierung eines Systems zur automatischen Identifizierung von Perspektive besteht der zweite, computerlinguistische Teil der Arbeit. Dieser umfasst einerseits die Frage, in welche Unteraufgaben sich die Perspektivenerkennung gliedern lässt und wie sich diese gestalten, andererseits den Vergleich von verschiedenen Ansätzen. </hi>
+                </item>
+            </list>
+			</div>
+			<div type="div1" rend="DH-Heading1">
+			<head>2. Vorgehen</head>
+            <p style="text-align: left;">Das Vorhaben ist in drei Arbeitspakete unterteilt: Die Erarbeitung der narratologischen Modellierung, die Operationalisierung und Annotation sowie die Implementierung eines Systems zur automatischen Identifizierung.</p>
+            <p style="text-align: left;">Am Anfang steht die Erarbeitung narratologischer Modellierungen von Perspektive unter dem Gesichtspunkt der Operationalisierbarkeit. Dabei werden etablierte Definitionen auf den Grad der Abstraktheit bzw. in Bezug auf ihre Textnähe geprüft. In dem Projekt wird mit der Modellierung von Schmid (2014) gearbeitet, der fünf Parameter (räumlich, zeitlich, sprachlich, perzeptiv, ideologisch), die die Perspektive bedingen, unterscheidet. Der sprachliche und ideologische Parameter sind weiter unterteilt, für den zeitlichen und räumlichen Parameter werden textuelle Indikatoren zur Erkennung genannt. Aufgrund dieser Ausdifferenziertheit und der Textnähe bildet die Modellierung nach Schmid eine gute Grundlage für die Operationalisierung. Gius (2015) erarbeitete darauf aufbauend bereits ein erstes, rudimentäres Tagset zur Bestimmung von Perspektive.</p>
+            <p style="text-align: left;">
+                <hi style="font-size:11pt">Ausgehend von Schmids Modellierung werden – orientiert an Reiter (2021) – Annotationsrichtlinien formuliert, die auf ein Korpus von 6 deutschsprachigen Prosatexten angewendet werden. Hierfür wird dasselbe Korpus verwendet wie für die Untersuchung von Ereignissen (Vauth et al., 2023)</hi><ref n="1" target="ftn1"/>,
+                <hi style="font-size:11pt" xml:space="preserve"> da es über eine größere Zeitspanne reicht (1797-1915) und sowohl Autoren als auch Autorinnen beinhaltet. Darüber hinaus können am Projektende die bestehenden Annotationen korreliert und so eine weitere Bandbreite an Forschungsfragen untersucht werden. Die Annotation wird von zwei Annotatorinnen in CATMA (Gius et al., 2023) durchgeführt, die sich an dem von Gius und Jacke (2017) entwickelten Zyklus orientieren. Zum jetzigen Zeitpunkt wurde bereits ein Annotationsdurchgang und eine Überarbeitung der Richtlinien durchgeführt.</hi>
+            </p>
+            <p style="text-align: left;">
+                <hi style="font-size:11pt" xml:space="preserve">Schließlich folgt der computerlinguistische Teil der Arbeit, in dem ich zuerst nach Fragestellungen in der CL, den CLS und dem NLP suche, die derjenigen der Identifizierung von Perspektive bzw. ihren Unteraufgaben ähneln (z.B. Sentiment Analysis). Auch suche ich nach Systemen, die ggf. für die Perspektivenerkennung nutzbar gemacht werden können. Es folgt die Implementierung bzw. Erweiterung von Systemen zur Perspektivenerkennung. Zu diesem Zeitpunkt ist eine Vielzahl an Ansätzen denkbar, angefangen mit regelbasierten Systemen bis hin zu </hi>
+                <hi rend="italic" style="font-size:11pt">Deep Learning</hi>
+                <hi style="font-size:11pt" xml:space="preserve">-Systemen, die mit </hi>
+                <hi rend="italic" style="font-size:11pt">Large Language Models</hi>
+                <hi style="font-size:11pt" xml:space="preserve"> arbeiten.</hi>
+            </p>
+			</div>
+        </body>
+        <back>
+			<div type="notes">
+			<note rend="footnote text" xml:id="ftn1" n="1">
+			Der EvENT-Datensatz ist verfügbar unter:
+			<ref target="https://github.com/forTEXT/EvENT_Dataset"> 
+			<hi rend="underline color(1155CC)">https://github.com/forTEXT/EvENT_Dataset</hi>
+			</ref>
+			</note>
+			</div>
+			
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Chen, Mike und Razvan Bunescu. 2021. “Changing the narrative perspective: From deictic to anaphoric point of view.” </hi>
+                        <hi rend="italic" style="font-size:11pt">Information Processing &amp; Management 58.4: 102559</hi>. DOI: 
+                        <ref target="https://doi.org/10.1016/j.ipm.2021.102559">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.1016/j.ipm.2021.102559</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Eisenberg, Joshua und Mark Finlayson. 2016. “Automatic Identification of Narrative Diegesis and Point of View.” In </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of the 2nd Workshop on Computing News Storylines (CNS 2016)</hi>
+                        <hi style="font-size:11pt" xml:space="preserve">, 36-46. DOI: </hi>
+                        <ref target="http://dx.doi.org/10.18653/v1/W16-5705">
+                            <hi rend="color(1155CC)" style="font-size:11pt">10.18653/v1/W16-5705</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Friedman, Norman. 1955. “Point of View in Fiction: The Development of a Critical Concept.”</hi>
+                        <hi rend="italic" style="font-size:11pt">PMlA</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 70.5: 1160-1184. URL: </hi>
+                        <ref target="https://www.jstor.org/stable/459894">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://www.jstor.org/stable/459894</hi>
+                        </ref>
+                        <hi style="font-size:11pt">. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Genette, Gérard. 2010 [frz. 1972, 1983].</hi>
+                        <hi rend="italic" style="font-size:11pt">Die Erzählung</hi>
+                        <hi style="font-size:11pt">. 3., durchgesehene und korrigierte Auflage, München: Fink.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gius, Evelyn. 2015.</hi>
+                        <hi rend="italic" style="font-size:11pt">Erzählen über Konflikte. Ein Beitrag zur digitalen Narratologie.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> Berlin / Boston: De Gruyter.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">Gius, Evelyn und Janina Jacke. 2017. "The hermeneutic profit of annotation: On preventing and fostering disagreement in literary analysis." </hi>
+                        <hi rend="italic" style="font-size:11pt">International Journal of Humanities and Arts Computing</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 11.2: 233-254. DOI: 10.3366/ijhac.2017.0194.  </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gius, Evelyn, Jan Christoph Meister, Malte Meister, Marco Petris, Mareike Schumacher, Dominik Gerstorfer. 2023. CATMA 7 (Version 7.0). Zenodo. DOI:</hi>
+                        <ref target="https://doi.org/10.5281/zenodo.1470118">
+                            <hi rend="color(1155CC)" style="font-size:11pt">10.5281/zenodo.1470118</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Lubbock, Percy. 2006 [1921]. </hi>
+                        <hi rend="italic" style="font-size:11pt">The Craft of Fiction.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve">Project Gutenberg. </hi>
+                        <ref target="https://www.gutenberg.org/ebooks/18961">
+                            <hi style="font-size:11pt">https://www.gutenberg.org/ebooks/18961</hi>
+                        </ref>
+                        <hi style="font-size:11pt" xml:space="preserve"> (letzter Zugriff am 18.07.2023).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Reiter, Nils. 2020. “Anleitung zur Erstellung von Annotationsrichtlinien.” In </hi>
+                        <hi rend="italic" style="font-size:11pt" xml:space="preserve">Reflektierte Algorithmische Textanalyse. Interdisziplinäre(s) Arbeiten in der CRETA-Werkstatt, </hi>
+                        <hi style="font-size:11pt" xml:space="preserve">hg. von Nils Reiter, Axel Pichler und Jonas Kuhn, 193-203. Berlin / Boston: De Gruyter. DOI: </hi>
+                        <ref target="https://doi.org/10.1515/9783110693973">
+                            <hi rend="underline color(0000FF)" style="font-size:11pt">https://doi.org/10.1515/9783110693973</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rimmon-Kenan, Shlomith.</hi> 1983.
+                        <hi rend="italic" style="font-size:11pt">Narrative Fiction. Contemporary Poetics.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> London / New York: Methuen. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schmid, Wolf.</hi> 2014.
+                        <hi rend="italic" style="font-size:11pt">Elemente der Narratologie.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 3., erweiterte und überarbeitete Auflage. Berlin / Boston: De Gruyter. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stanzel, Franz K.</hi> 1985. 
+                        <hi rend="italic" style="font-size:11pt">Theorie des Erzählens.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 3. durchgesehene Auflage. Göttingen / Zürich: Vandenhoeck und Ruprecht.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Uspenskij, Boris A.</hi> 1975.
+                        <hi rend="italic" style="font-size:11pt">Poetik der Komposition: Struktur des künstlerischen Textes und Typologie der Kompositionsform.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> Frankfurt am Main: Suhrkamp.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Vauth, Michael, Evelyn Gius und Hans Ole Hatzel.</hi> 2023. forTEXT/EvENT_Dataset: v.1.2 (v1.2). Zenodo.
+                        <ref target="https://doi.org/10.5281/zenodo.8063719">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.5281/zenodo.8063719</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

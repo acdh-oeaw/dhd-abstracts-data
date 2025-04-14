@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="LEMKE_Marc_CANSpiN__Zur_computergest_tzten_Analyse_narrative" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">CANSpiN: Zur computergestützten Analyse narrativen Raums im Roman des 19. und 20. Jahrhunderts</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Lemke</surname>
+                        <forename>Marc</forename>
+                    </persName>
+                    <affiliation>Universität Rostock, Deutschland</affiliation>
+                    <email>marc.lemke@uni-rostock.de</email>
+                    <idno type="ORCID">0009-0004-8065-8191</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Henny-Krahmer</surname>
+                        <forename>Ulrike</forename>
+                    </persName>
+                    <affiliation>Universität Rostock, Deutschland</affiliation>
+                    <email>ulrike.henny-krahmer@uni-rostock.de</email>
+                    <idno type="ORCID">0000-0003-2852-065X</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kellner</surname>
+                        <forename>Nils</forename>
+                    </persName>
+                    <affiliation>Universität Rostock, Deutschland</affiliation>
+                    <email>nils.kellner@uni-rostock.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-06-20T13:41:11.677000000</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Digital Humanities Passau</publisher>
+                <address>
+                    <addrLine>Universität Passau</addrLine>
+                    <addrLine>Innstraße 41</addrLine>
+                    <addrLine>D-94032 Passau</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Posterpräsentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Raum</term>
+                    <term>Literatur</term>
+                    <term>Roman</term>
+                    <term>Deep Learning</term>
+                    <term>BERT</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Entdeckung</term>
+                    <term>Programmierung</term>
+                    <term>Räumliche Analyse</term>
+                    <term>Modellierung</term>
+                    <term>Annotieren</term>
+                    <term>Methoden</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Mit unserer Einreichung stellen wir den aktuellen Arbeitsstand des Projekts „Computational Approaches to Narrative Space in 19th and 20th Century Novels“ (CANSpiN) vor, das im Rahmen des DFG-Schwerpunktprogramms „Computational Literary Studies“ (SPP 2207) von April 2023 bis März 2026 gefördert wird. Ziel des Vorhabens ist es, computergestützte Methoden zur Erkennung und Analyse narrativen Raums in literarischen Texten zu entwickeln und diese Methoden für die Untersuchung literaturhistorischer Fragen zum Verhältnis von Raum und nationaler Identität in deutsch- und spanischsprachigen Romanen des 19. und 20. Jahrhunderts zur Anwendung zu bringen. Dieser Zielstellung entspricht die Zusammensetzung der Projektgruppe, die aus Wissenschaftler:innen der Germanistik, Romanistik, den Digital Humanities und der Mathematik besteht.</p>
+            <p>Ausgangspunkt der Überlegungen ist die Definition des narrativen Raums: Darunter verstehen wir im weiteren Sinne die Räumlichkeit eines narrativen Textes nach Schumacher (2022b), die durch raumreferentielle sprachliche Ausdrücke bestimmt ist. In einem engeren narratologischen Sinne begreifen wir narrativen Raum als den Raum der erzählten Welt, wie er durch die Erzählung konstituiert ist (Genette, 2010). Wie dieser Raum strukturell und funktional zu beschreiben ist, dazu existieren bereits zahlreiche literaturwissenschaftliche Vorschläge (Dennerlein, 2009; Piatti, 2008; Ryan, 2014; Lotman, 1977; Renner, 2004). Wie raumanalytische Zugänge formalisiert und auf konkrete Textmerkmale abgebildet werden können, dazu bieten Arbeiten der Computational Literary Studies schon erste Antworten (Viehhauser und Barth, 2017; Barth, 2021, 2022; Viehhauser, 2020; Schumacher, 2022a, 2022b).</p>
+            <p>Auf diesem Forschungsstand setzen wir auf: In einem offenen explorativen Verfahren erproben wir verschiedene raumanalytische Kategorien-Sets hinsichtlich ihrer literaturwissenschaftlichen Aussagekraft und ihrer computergestützten Operationalisierbarkeit (Arbeitspaket 1). Für jedes dieser Sets entwickeln wir Annotationsrichtlinien, um die verwendeten Korpora computergestützt zu annotieren und mit quantitativen Methoden vergleichend zu untersuchen. So haben wir ein erstes Kategoriensystem CANSpiN.CS1 für die Annotation von Raumreferenzen in Erzähltexten definiert und mit Hilfe des Tools CATMA (Gius et al., 2023) erprobt. Es ist geplant, auf diesem Wege eine Ground Truth aufzubauen, mit der im Tool NTEE (Lemke et al., 2023) Modelle für die Erkennung von Raumentitäten trainiert werden können, welche die semi-automatisierte, vollständige Annotation der Textkorpora im Projekt erlauben.</p>
+            <p>Das Interesse des Projekts richtet sich dabei insbesondere auch auf die Möglichkeiten und Grenzen des Deep Learnings mit Sprachmodellen der BERT-Architektur (Devlin et al., 2019) für die computergestützte Annotation literaturwissenschaftlich definierter Textphänomene: Um diese auszuloten, werden die im Arbeitspaket 1 erzeugten Modelle mit Methoden eines Explainable AI-Ansatzes (XAI) untersucht (Arbeitspaket 2), was konkrete Maßnahmen und Vorschläge zur Optimierung der Annotationsprozesse erwarten lässt, aber auch Erkenntnisse über die technischen Grenzen dieses Vorgehens (Rogers et al., 2021).</p>
+            <p>Die Korpora werden derzeit ausgehend von verschiedenen Vorarbeiten zusammengestellt, aus deutschsprachigen Romanen des 19. Jahrhunderts (Zeit: 1790-1910, Ziel: etwa 200 Romane, Quellen: ELTeC-deu (Konle et al., 2021), DTA (Berlin-Brandenburgischen Akademie der Wissenschaften, 2023), TextGrid Repository (TextGrid Konsortium, 2014)), spanischsprachigen Romanen des 19. Jahrhunderts (Zeit: 1790-1870, Ziel: etwa 100 Romane, Quellen: ELTeC-spa (Navarro-Colorado et al., 2021), Biblioteca Virtual Miguel de Cervantes (Centro de Humanidades Digitales en la Universidad de Alicante, 2021)), spanischsprachigen Romanen aus Lateinamerika des 19. Jahrhunderts (Zeit: 1830-1910, Ziel: etwa 200 Romane, Quellen: Corpus de novelas hispanoamericanas del siglo XIX (Conha19) (Henny-Krahmer, 2021)) und deutschsprachigen Romanen des 20. Jahrhunderts (Zeit: 1950-2000, Ziel: etwa 100 Romane, Quellen: TEI-Dateien der Uwe Johnson-Werkausgabe, E-Books (u.a. zu den Autor:innen Heinrich Böll, Christine Brückner, Uwe Johnson, Walter Kempowski, Christa Wolf)). Für ein einheitliches Format der Texte haben wir uns für das Schema ELTeC Level 0 (Burnard, 2012) entschieden, das wir für unsere Zwecke im CANSpiN-Projekt anpassen.</p>
+            <p>Die Auswahl der Korpora gründet auf unserer Arbeitshypothese, dass narrativer Raum in Romanen sprach- und zeitübergreifend ein für die Analyse zugängliches Phänomen ist, das unterschiedlich ausgeformt, also dargestellt und funktionalisiert sein kann. Durch die quantitativen Analysen aus Arbeitspaket 1 erwarten wir in dieser Hinsicht neue Erkenntnisse zu literaturhistorischen Fragestellungen (Arbeitspaket 3), etwa zur Darstellung und Semantik von Raum in Romanen im Kontext der Nationenbildung im 19. Jahrhundert in Deutschland und Lateinamerika (Sommer, 1993; Peñaranda Medina, 1994; Hanway, 2003; Viel, 2009; Ferrer, 2018) und der Herausbildung zweier deutscher Identitäten in der Nachkriegsliteratur des 20. Jahrhunderts (Bond, 1996; Erll et al., 2003; Helbig et al., 2007; Westphal, 2007; Nies, 2018).</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Barth, Florian</hi>. 2021. “Konzept und Klassifikation literarischer Raumentitäten.” In 
+                        <hi rend="italic">INFORMATIK 2020</hi>, hg. von Ralf Heinrich Reussner, Anne Koziolek und Robert Heinrich, 1281–1293. Bonn: Gesellschaft für Informatik. 
+                        <ptr target="https://dx.doi.org/10.18420/inf2020_120"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Barth, Florian</hi>. 2022. “Von der literaturwissenschaftlichen Theorie zu maschinellen Erkennung: Operationalisierung von Raumentitäten und Settings.” In 
+                        <hi rend="italic">Digitale Verfahren in der Literaturwissenschaft</hi>, hg. von Jan Horstmann und Frank Fischer. Sonderausgabe #6 von 
+                        <hi rend="italic">Textpraxis. Digitales Journal für Philologie</hi>. 
+                        <ptr target="https://doi.org/10.17879/64059429732"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Berlin-Brandenburgischen Akademie der Wissenschaften</hi> (Hg.). 2023. 
+                        <hi rend="italic">Deutsches Textarchiv.</hi>
+                        <hi rend="italic">Grundlage für ein Referenzkorpus der neuhochdeutschen Sprache</hi>. Berlin. 
+                        <ref target="https://www.deutschestextarchiv.de/">https://www.deutschestextarchiv.de</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bond, Greg</hi>. 1996. “<!--ʻ-->'weil es ein Haus ist, das fährt.<!--ʼ-->' Rauminszenierungen in Uwe Johnsons Werk.” In 
+                        <hi rend="italic">Johnson-Jahrbuch</hi> 3, 72–96. Göttingen: Vandenhoeck &amp; Ruprecht.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Burnard, </hi>
+                        <hi rend="bold">Lou</hi>. 2012. 
+                        <hi rend="italic">COST-ELTeC/Schemas</hi>. Version 0.8.1. 
+                        <ptr target="https://doi.org/10.5281/zenodo.4679363"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Centro de Humanidades Digitales en la Universidad de Alicante</hi> (Hg.). 2021. 
+                        <hi rend="italic">Biblioteca Virtual Miguel de Cervantes</hi>. Alicante. 
+                        <ref target="https://www.cervantesvirtual.com/">https://www.cervantesvirtual.com</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Dennerlein, Katrin</hi>. 2009. 
+                        <hi rend="italic">Narratologie des Raumes</hi>. Berlin und New York: De Gruyter.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Devlin, Jacob, Ming-Wei Chang, Kenton Lee und Kristina Toutanova</hi>. 2019. “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.” In 
+                        <hi rend="italic">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</hi>, Volume 1 (Long and Short Papers), 4171–4186. Minneapolis, Minnesota: Association for Computational Linguistics. 
+                        <ptr target="http://dx.doi.org/10.18653/v1/N19-1423"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Erll, Astrid, Marion Gymnich und Ansgar Nünning</hi> (Hg.). 2003. 
+                        <hi rend="italic">Literatur – Erinnerung – Identität: Theoriekonzeptionen und Fallstudien</hi>. Trier: VWT.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ferrer, José Luis</hi>. 2018. 
+                        <hi rend="italic">La invención de Cuba: Novela y nación (1837-1846)</hi>. Madrid: Editorial Verbum.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Genette, Gérard</hi>. 2010. 
+                        <hi rend="italic">Die Erzählung</hi>. 3., durchges. und korrigierte Aufl. Paderborn: Fink.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gius, Evelyn, Jan Christoph Meister, Malte Meister, Marco Petris, Mareike Schumacher </hi>
+                        <hi rend="bold">und</hi>
+                        <hi rend="bold"> Dominik Gerstorfer</hi>. 2023. 
+                        <hi rend="italic">CATMA.</hi> Version 7.0.0. 
+                        <ptr target="https://doi.org/10.5281/zenodo.1470118"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hanway, Nancy</hi>. 2003. 
+                        <hi rend="italic">Embodying Argentina: Body, Space and Nation in 19th Century Narrative</hi>. Jefferson, NC: McFarland.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Helbig, Holger, Kristin Felsner, Sebastian Horn und Therese Manz</hi> (Hg.). 2007. 
+                        <hi rend="italic">Weiterschreiben: zur DDR-Literatur nach dem Ende der DDR</hi>. Berlin: Akademie Verlag.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Henny-Krahmer, Ulrike </hi>(Hg.). 2021. 
+                        <hi rend="italic">Corpus de novelas hispanoamericanas del siglo XIX (conha19)</hi>. Version 1.0.1. 
+                        <ptr target="https://doi.org/10.5281/zenodo.4766987"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Konle, Leonard, Fotis Jannidis, Carolin Odebrecht und Lou Burnard</hi>. 2021. 
+                        <hi rend="italic">German Novel Corpus (ELTeC-deu)</hi>. Version 1.0.0. 
+                        <ptr target="https://doi.org/10.5281/zenodo.4662482"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Lemke, Marc, Konrad Sperfeld und Jochen Zöllner</hi>. 2023. 
+                        <hi rend="italic">NEISS TEI Entity Enricher</hi>. Version 1.1.1. 
+                        <ptr target="https://github.com/NEISSproject/tei_entity_enricher"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Lotman, Jurij Michailowitsch</hi>. 1977. 
+                        <hi rend="italic">Die Struktur literarischer Texte</hi>. München: Fink.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Navarro-Colorado, </hi>
+                        <hi rend="bold">Borja, Lou Burnard und Carolin Odebrecht</hi>. 2021. 
+                        <hi rend="italic">Spanish Novel Corpus (ELTeC-spa)</hi>. Version 0.9.1. 
+                        <ptr target="https://doi.org/10.5281/zenodo.4662603"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Nies, Martin</hi> (Hg.). 2018. 
+                        <hi rend="italic">Raumsemiotik. Räume – Grenzen – Identitäten.</hi>
+                        <ptr target="https://web.archive.org/web/20220124091647/https://www.kultursemiotik.com/wp-content/uploads/2019/10/Raumsemiotik-Martin-Nies-Hg._SMKS-Online-No.4-2018-red.pdf"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Peñaranda Medina, Rosario</hi>. 1994. 
+                        <hi rend="italic">La novela modernista hispanoamericana: estrategias narrativas</hi>. Valencia: Universitat de Valencia.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Piatti, Barbara</hi>. 2008. 
+                        <hi rend="italic">Die Geographie </hi>
+                        <hi rend="italic">d</hi>
+                        <hi rend="italic">er Literatur. Schauplätze, Handlungsräume, Raumphantasien</hi>. Göttingen: Wallstein.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Renner, Karl Nikolaus</hi>. 2004. “Grenze und Ereignis. Weiterführende Überlegungen zum Ereigniskonzept von Jurij M. Lotman.” In 
+                        <hi rend="italic">Norm – Grenze – Abweichung: Kultursemiotische Studien zu Literatur, Medien und Wirtschaft</hi>, 357–81. Passau: Verlag Karl Stutz. 
+                        <ptr target="https://web.archive.org/web/20230717115613/https://www.kultursemiotik.com/wp-content/uploads/2015/01/Renner_Grenze-und-Ereignis.pdf"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rogers, Anna, Olga Kovaleva und Anna Rumshisky</hi>. 2021. “A Primer in BERTology: What We Know About How BERT Works.” In 
+                        <hi rend="italic">Transactions of the Association for Computational Linguistics</hi> 8, 842–866. 
+                        <ptr target="https://doi.org/10.1162/tacl_a_00349"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ryan, Marie-Laure</hi>. 2014. “Space.” In 
+                        <hi rend="italic">The Living Handbook of Narratology</hi>, hg. von Peter Hühn, Jan Christoph Meister, John Pier und Wolf Schmid. Hamburg: Hamburg University. 
+                        <ptr target="https://web.archive.org/web/20221210041153/https://www-archiv.fdm.uni-hamburg.de/lhn/node/55.html"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schumacher, Mareike</hi>. 2022a. “‘Wie Wölkchen Im Morgenlicht’ – Zur automatisierten Metaphern-Erkennung und der Datenbank literarischer Raummetaphern LaRa.” In 
+                        <hi rend="italic">DHd2022: </hi>
+                        <hi rend="italic">Kulturen des digitalen Gedächtnisses. Konferenzabstracts</hi>, 232–236. 
+                        <ptr target="https://doi.org/10.5281/zenodo.6304590"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schumacher, Mareike</hi>. 2022b. 
+                        <hi rend="italic">Orte und Räume im Roman. Ein Beitrag zur digitalen Literaturwissenschaft</hi>. Berlin und Heidelberg: Metzler. 
+                        <ptr target="https://doi.org/10.1007/978-3-662-66035-5"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sommer, Doris</hi>. 1993. 
+                        <hi rend="italic">Foundational Fictions. The National Romances of Latin America.</hi> Berkeley, LA: University of California Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">TextGrid Konsortium</hi>. 2014. 
+                        <hi rend="italic">TextGrid: Virtuelle Forschungsumgebung für die Geisteswissenschaften</hi>. Göttingen: TextGrid Konsortium. 
+                        <ref target="https://www.textgrid.de/">https://www.textgrid.de</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Viehhauser, Gabriel</hi>. 2020. “Zur Erkennung von Raum in narrativen Texten. Spatial Frames und Raumsemantik als Modelle für eine digitale Narratologie des Raums.” In 
+                        <hi rend="italic">Reflektierte Algorithmische Textanalyse</hi>, 373–388. Berlin und Boston: De Gruyter. 
+                        <ptr target="https://doi.org/10.1515/9783110693973-015"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Viehhauser, Gabriel und Florian Barth</hi>. 2017. “Towards a Digital Narratology of Space.” In 
+                        <hi rend="italic">Digital Humanities 2017. Conference Abstracts,</hi> 643–646. Montréal. 
+                        <ptr target="https://web.archive.org/web/20230615201230/https://dh2017.adho.org/abstracts/DH2017-abstracts.pdf"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Viel, Bernhard</hi>. 2009. 
+                        <hi rend="italic">Utopie der Nation: Ursprünge des Nationalismus im Roman der Gründerzeit</hi>. Berlin: Matthes &amp; Seitz.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Westphal, Nicola</hi>. 2007. 
+                        <hi rend="italic">Literarische Kartografie. Erzählter Raum in den Romanen Uwe Johnsons</hi>. Göttingen: Vandenhoeck &amp; Ruprecht.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

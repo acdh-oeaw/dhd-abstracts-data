@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="GRALLERT_Till_Ob_Werkzeugkoffer__Werkstatt_oder_Baumarkt__of" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Ob Werkzeugkoffer, Werkstatt oder Baumarkt: offene, community-kuratierte Tool Registries mit Wikidata</title>
+                <author>
+                    <persName>
+                        <surname>Grallert</surname>
+                        <forename>Till</forename>
+                    </persName>
+                    <affiliation>Humboldt-Universität zu Berlin, Deutschland</affiliation>
+                    <email>till.grallert@fu-berlin.de</email>
+                    <idno type="ORCID">0000-0002-5739-8094</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Eckenstaler</surname>
+                        <forename>Sophie</forename>
+                    </persName>
+                    <affiliation>Humboldt-Universität zu Berlin, Deutschland</affiliation>
+                    <email>sophie.eckenstaler.1@ub.hu-berlin.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tirtohusodo</surname>
+                        <forename>Samantha</forename>
+                    </persName>
+                    <affiliation>Humboldt-Universität zu Berlin, Deutschland</affiliation>
+                    <email>samantha.tirtohusodo.1@hu-berlin.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schlesinger</surname>
+                        <forename>Claus-Michael</forename>
+                    </persName>
+                    <affiliation>Humboldt-Universität zu Berlin, Deutschland</affiliation>
+                    <email>claus-michael.schlesinger@hu-berlin.de</email>
+                    <idno type="ORCID">0000-0001-6718-5773</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-06-13T14:32:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Digital Humanities Passau</publisher>
+                <address>
+                    <addrLine>Universität Passau</addrLine>
+                    <addrLine>Innstraße 41</addrLine>
+                    <addrLine>D-94032 Passau</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Posterpräsentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Tool Registry</term>
+                    <term>Linked Open Daten</term>
+                    <term>Community</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Sammlung</term>
+                    <term>Annotieren</term>
+                    <term>Crowdsourcing</term>
+                    <term>Kollaboration</term>
+                    <term>benannte Entitäten (named entities)</term>
+                    <term>Software</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p rend="First Paragraph">Tools oder Werkzeuge, im Folgenden verstanden als Software und Verfahren, sind nicht nur Mittel zum Zweck, sondern als solche auch Gegenstand von Verzeichnissen. Dabei richten sich Toolverzeichnisse, die im Kontext der Digital Humanities angelegt werden, weniger auf die Verzeichnung von Objekten, die in absehbarer Zeit auch historisch werden, sondern bedienen zunächst ein instrumentelles Interesse. In diesem Zusammenhang hat sich das Toolverzeichnis in den Digital Humanities inzwischen als eigenes Genre etabliert: von DiRT zu Bamboo und TAPoR (3.0)<ref n="1" target="ftn1"/> (Grant u. a. 2020), großen EU-Projekten wie dem 
+                <hi rend="italic">Social Sciences and Humanities Open Marketplace</hi>,<ref n="2" target="ftn2"/> den Konsortien der deutschen Nationalen Forschungsdateninfrastruktur (NFDI), den Fachinformationsdiensten (FID) oder individuellen Bibliotheken und Instituten. Allen ist gemeinsam, dass sie einen Bedarf der Forschungscommunities nach einem Überblick über computergestützte Werkzeuge mit kuratorischen Ansätzen der Wissensorganisation bedienen. Für die meisten Ansätze gilt, dass sie über keine dauerhafte Finanzierung verfügen, dass sie primär auf die Kuratierung durch (unbezahlte) Expert_innen-Gremien oder Crowdsourcing setzen, diesen Prozess aber nicht dauerhaft und nachhaltig gewährleisten können, dass Datensilos mit proprietären Infrastrukturen (Datenmodelle, Backends und Frontends) geschaffen werden, und dass nur in geringem Maße APIs angeboten und dokumentiert werden. Die zum Teil umfassenden Ansprüche an möglichst vollständige Katalogisierung verfügbarer Möglichkeiten computergestützter Werkzeuge sind dabei mit einem Gegenstand konfrontiert, der oft nur schwer abgrenzbar ist und sich im Rhytmus von Release-Zyklen ständig verändert. Der Anspruch eines umfassenden oder repräsentativen Abbilds aktuell verfügbarer Werkzeuge für die computergestützte Forschung in den Digital Humanities ist daher kaum einzulösen und kann, wo er formuliert wurde, als gescheitert gelten. (Dombrowski 2021). Die Bedarfe bleiben natürlich bestehen. Wünschenswert wäre daher, dass zumindest die Daten von Verzeichnisprojekten dauerhaft, mit Bezug auf ein Referenzdatenmodell, permanenten URIs und in einem stabilen, maschinenlesbaren Format als Basis zur Verfügung stünden.
+            </p>
+            <p>Der Beitrag stellt unseren Vorschlag einer offenen Basisinfrastruktur für Toolverzeichnisse vor. Dabei steht Wikidata<ref n="3" target="ftn3"/> als eine verteilte, community-kuratierte Normdatei und offene Softwareplattform im Zentrum unseres Vorschlages. Wikidata erlaubt es, minimale Datenmodelle iterativ zu entwickeln, Datensätze zu pflegen und sie in Wikiprojekten zu kuratierten Sammlungen zusammenzustellen. Auf der Datenebene erlaubt Wikidata die unmittelbare Nutzung sämtlicher Informationen als Linked Open Data über SPARQL, APIs sowie das etablierte Webinterface. Wikidata ist außerdem eine der Quellen für das 
+                <hi rend="italic">Virtual International Authority File</hi> (VIAF)<ref n="4" target="ftn4"/> und für zusammenfassende Informationen in den Ergebnislisten der dominanten Suchmaschinen, was die Sichtbarkeit der Datensätze enorm erhöht. Darüber hinaus bieten Wikidata und ihre Schwesterprojekte eine etablierte Governancestruktur für nutzergenerierte und -kuratierte Inhalte. Jede_r kann die Einträge beitragen und pflegen, die für ihre je konkrete Forschung relevant sind. Anders als bei vielen Infrastrukturen der Digital Humanities ist die Vielsprachigkeit von Interfaces und Datensätzen ein grundlegendes Feature. Auf dieser Datenbasis lassen sich dann Fachcommunity-spezifische Toolverzeichnisse kuratieren und anreichern. Denkbar ist etwa eine Klassifizierung unter Anwendung der TaDiRAH-Taxonomie<ref n="5" target="ftn5"/> (Borek u. a. 2021) oder die Hinterlegung von Anwendungsbeispielen, Publikationen oder Tutorials im angereicherten Datensatz.
+            </p>
+            <p>Um für verteilt angelegte Datensätze ein gemeinsames Referenzmodell zu schaffen schlagen wir ein reduziertes Basisdatenmodell für DH-Werkzeuge vor, das minimale bibliografische und technische Eigenschaften definiert und anschlussfähig bleibt für bereits existierende Datenmodelle wie dem des Software Preservation Network oder von RIDE (Christopherson u. a. 2022; Sichani und Spadini 2022). Dieses Basisdatenmodell garantiert den Zugriff auf die gemeinsam verbindlich vereinbarten Basisdaten für die Nachnutzung von Einträgen in eigenen kuratierten Sammlungen.</p>
+            <p>Die Wikidata-Plattform erlaubt die Umsetzung des Ansatzes ohne weitere Software. Denkbar ist aber auch, Wikidata ausschließlich als Normdatei und Datenprovider für eigene Frontends einzusetzen, so wie es z.B. Scholia<ref n="6" target="ftn6"/> für die Profile von Wissenschaftler_innen tut (Nielsen, Mietchen, und Willighagen 2017). Schließlich adressiert unser Vorschlag die Nachhaltigkeit von Projektförderungen durch den kontinuierlichen Beitrag von Daten zu den 
+                <hi rend="italic">Digital Commons</hi> (Wittel 2013) in Gestalt von Wikidata während der Projektlaufzeit und die Weiternutzung dieser Daten nach der Projektlaufzeit. Damit ist unser Vorschlag Teil einer Bewegung, Wikidata in der Wissenschaft und GLAM-Institutionen nicht mehr nur als Anbieter von Inhalten wahrzunehmen (vgl. Zhao 2022; Fischer und Ohlig 2019).
+            </p>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                     https://tapor.ca/
+                </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                     https://marketplace.sshopencloud.eu/
+                </note>
+<note rend="footnote text" xml:id="ftn3" n="3">
+                     https://wikidata.org/
+                </note>
+<note rend="footnote text" xml:id="ftn4" n="4">
+                     https://viaf.org/
+                </note>
+<note rend="footnote text" xml:id="ftn5" n="5">
+                     https://vocabs.dariah.eu/tadirah/
+                </note>
+<note rend="footnote text" xml:id="ftn6" n="6">
+                     https://scholia.toolforge.org/
+                </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="X9739307144f8915724111fdf297847efb42bba4"/>
+                        <anchor xml:id="refs"/>
+                        <hi rend="bold">Borek, Luise, Canan Hastik, Vera Khramova, Klaus Illmayer, und Jonathan D. Geiger.</hi> 2021. „Information Organization and Access in Digital Humanities: TaDiRAH Revised, Formalized and FAIR“. In 
+                        <hi rend="italic">Information Between Data and Knowledge</hi>, 321–32. Schriften Zur Informationswissenschaft 74. Glückstadt: Werner Hülsbusch. 
+                        <ref target="https://doi.org/doi.org/10.5283/epub.44951">https://doi.org/doi.org/10.5283/epub.44951</ref>.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="Xcfe46db09ec693c244f155a761afb6b42156ba1"/>
+                        <hi rend="bold">Christopherson, Allan, Elena Colón-Marrero, Dianne Dietrich, Patricia Falcao, Claire Fox, Karen Hanson, Allen Kwan, und Matthew McEniry.</hi> 2022. „Software Metadata Recommended Format Guide“. Cornell University Library. 
+                        <ref target="https://doi.org/10.7298/XE9S-3B15">https://doi.org/10.7298/XE9S-3B15</ref>.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Dombrowski2021DirectoryParadox"/>
+                        <hi rend="bold">Dombrowski, Quinn.</hi> 2021. „The Directory Paradox“. In 
+                        <hi rend="italic">People, Practice, Power: Digital Humanities Outside the Center</hi>, herausgegeben von Anne B. McGrail, Angel David Nieves, und Siobhan Senier. Debates in the Digital Humanities. Minneapolis: University of Minnesota Press. 
+                        <hi rend="Hyperlink">https://dhdebates.gc.cuny.edu/read/people-practice-power/section/ca87ec4c-23a0-452d-8595-7cfd7e8d6f0c</hi>.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-FischerOhlig2019GNDWikibase"/>
+                        <hi rend="bold">Fischer, Barbara, und Jens Ohlig.</hi> 2019. „‚GND Meets Wikibase‘ - Eine Kooperation. Eine Bundesbehörde Geht Auf Expedition Im Wikiversum: Ein Neues Testfeld Für Wikibase“. 
+                        <hi rend="italic">GND</hi> (blog). 8. Mai 2019. 
+                        <ref target="https://wiki.dnb.de/pages/viewpage.action?pageId=147754828">https://wiki.dnb.de/pages/viewpage.action?pageId=147754828</ref>.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-GrantEtAl2020AbsorbingDiRT"/>
+                        <hi rend="bold">Grant, Kaitlyn, Quinn Dombrowski, Kamal Ranaweera, Omar Rodriguez-Arenas, Stéfan Sinclair, und Geoffrey Rockwell.</hi> 2020. „Absorbing DiRT: Tool Directories in the Digital Age“. 
+                        <hi rend="italic">Digital Studies / Le Champ Numérique</hi> 10 (1). 
+                        <ref target="https://doi.org/10.16995/dscn.325">https://doi.org/10.16995/dscn.325</ref>.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="X154ffb57014b93943f344f47f6b8d404b1cba00"/>
+                        <hi rend="bold">Nielsen, Finn Årup, Daniel Mietchen, und Egon Willighagen.</hi> 2017. „Scholia, Scientometrics and Wikidata“. In 
+                        <hi rend="italic">The Semantic Web: ESWC 2017 Satellite Events</hi>, herausgegeben von Eva Blomqvist, Katja Hose, Heiko Paulheim, Agnieszka <!-- Ł -->&#x0141;awrynowicz, Fabio Ciravegna, und Olaf Hartig, 237–59. Lecture Notes in Computer Science. Cham: Springer International Publishing. 
+                        <ref target="https://doi.org/10.1007/978-3-319-70407-4_36">https://doi.org/10.1007/978-3-319-70407-4_36</ref>.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-SichaniSpadini2022"/>
+                        <hi rend="bold">Sichani, Anna-Maria, und Elena Spadini, Hrsg.</hi> 2022. 
+                        <hi rend="italic">RIDE</hi>, Nr. 15: Tools and Environments (Dezember). 
+                        <ref target="https://ride.i-d-e.de/issues/issue-15/">https://ride.i-d-e.de/issues/issue-15/</ref>.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Wittel2013Countercommodification"/>
+                        <hi rend="bold">Wittel, Andreas.</hi> 2013. „Counter-commodification: The economy of contribution in the digital commons“. 
+                        <hi rend="italic">Culture and Organization</hi> 19 (4): 314–31. 
+                        <ref target="https://doi.org/gmqgqq">https://doi.org/gmqgqq</ref>.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Zhao2022SystematicReviewWikidata"/>
+                        <hi rend="bold">Zhao, Fudie.</hi> 2022. „A systematic review of Wikidata in Digital Humanities projects“. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, Dezember, 1–22. 
+                        <ref target="https://doi.org/10.1093/llc/fqac083">https://doi.org/10.1093/llc/fqac083</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

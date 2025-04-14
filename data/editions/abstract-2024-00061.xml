@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="KONLE_Leonard_Modellierung_von_Gattungsunterschieden__Emotio" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Modellierung von Gattungsunterschieden. Emotionen in Lyrik, Prosa und Drama</title>
+                <author>
+                    <persName>
+                        <surname>Kröncke</surname>
+                        <forename>Merten</forename>
+                    </persName>
+                    <affiliation>Universität Würzburg, Deutschland</affiliation>
+                    <email>merten.kroencke@uni-goettingen.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Konle</surname>
+                        <forename>Leonard</forename>
+                    </persName>
+                    <affiliation>Universität Göttingen, Deutschland</affiliation>
+                    <email>leonard.konle@uni-wuerzburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Winko</surname>
+                        <forename>Simone</forename>
+                    </persName>
+                    <affiliation>Universität Würzburg, Deutschland</affiliation>
+                    <email>simone.winko@phil.uni-goettingen.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Jannidis</surname>
+                        <forename>Fotis</forename>
+                    </persName>
+                    <affiliation>Universität Göttingen, Deutschland</affiliation>
+                    <email>fotis.jannidis@uni-wuerzburg.de</email>
+                    <idno type="ORCID">0000-0001-6944-6113</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-06-13T14:32:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Digital Humanities Passau</publisher>
+                <address>
+                    <addrLine>Universität Passau</addrLine>
+                    <addrLine>Innstraße 41</addrLine>
+                    <addrLine>D-94032 Passau</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Vortrag</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Emotion</term>
+                    <term>Gattung</term>
+                    <term>Domäne</term>
+                    <term>Fehleranalyse</term>
+                    <term>Machine Learning</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Modellierung</term>
+                    <term>Annotieren</term>
+                    <term>Literatur</term>
+                    <term>Methoden</term>
+                    <term>Forschungsprozess</term>
+                    <term>Text</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung</head>
+                <p style="text-align: left; ">Literaturwissenschaftliche Untersuchungen zielen häufig darauf ab, verschiedene Textgruppen (zum Beispiel Gedichte, Romane und Dramen) hinsichtlich verschiedener Texteigenschaften (zum Beispiel Themen oder Emotionen) miteinander zu vergleichen.<ref n="1" target="ftn1"/> Werden zu diesem Zweck Verfahren der Computational Literary Studies eingesetzt, bedeutet das oft, mit manuellen Annotationen trainierte Modelle auf verschiedene Textgruppen (Domänen) anzuwenden. In vielen Fällen stehen dabei aus Ressourcengründen nicht so viele Annotationen zur Verfügung, dass Modelle für jede Domäne auf ausschließlich domänenspezifischen Annotationen trainiert werden könnten. Stattdessen sind oft nur für 
+                    <hi rend="italic">eine</hi> Domäne hinreichend viele Annotationen verfügbar. Eine naheliegende Lösung besteht darin, für die weiteren, nicht umfassend annotierten Domänen dasselbe Modell wie für die ausführlich annotierte Domäne zu verwenden, oder zumindest Modelle, die maßgeblich auf Annotationen dieser Domäne basieren. Bei derartigen Prozessen kommt es bekanntermaßen zu Performanceeinbußen. Dies sollte allerdings nicht (nur) Anlass zu Enttäuschung geben, vielmehr lassen sich die zunächst suboptimal scheinenden Ergebnisse (auch) produktiv machen. Eben das zu demonstrieren, ist ein wichtiges Ziel dieses Beitrags. Vor allem soll anhand von Performanzunterschieden etwas über die Charakteristika der Domänen, und das heißt in diesem Fall: der literarischen Gattungen, ausgesagt werden.
+                </p>
+                <p style="text-align: left; ">In der Computerlinguistik (oder allgemeiner im gesamten Feld Machine Learning) wird die erläuterte Problemstellung unter dem Schlagwort Domain Adaptation intensiv beforscht (z.B. Ramponi und Plank 2020). Machine Learning-Probleme lassen sich als Versuch beschreiben, eine automatische Zuweisung von Datenpunkten x zu Labeln y zu lernen. Dabei wird unterstellt, dass alle Punkte x aus der gleichen Verteilung stammen, die zu lernende Zuweisung x→y also für jeden Datenpunkt ähnlich funktioniert. Diese Annahme ist in angewandter Forschung (darunter Computational Literary Studies) jedoch selten zu halten. Die Gründe für einen Domain Shift, also die Veränderung von x, während y stabil bleibt, können vielfältig sein (z.B. historischer Sprachwandel, Übersetzungen). Die Bereitstellung von Datensätzen, die dezidiert mehrere Domänen enthalten, ist also sowohl für Machine Learning Forschung als auch für die CLS hoch relevant.</p>
+                <p style="text-align: left; ">Als Untersuchungsbeispiel dient die Gestaltung von Emotionen in deutschsprachigen Lyrik-, Prosa- und Dramentexten der zweiten Hälfte des 19. und des beginnenden 20. Jahrhunderts. In früheren Studien hat sich unsere Forschungsgruppe auf Lyrik konzentriert und für diese Gattung umfangreiche manuelle Annotationen erstellt.<ref n="2" target="ftn2"/> Nun sollen ergänzend Prosa- und Dramentexte einbezogen werden; in beiden Fällen liegen deutlich weniger Annotationen vor. Da wir von der Emotionsontologie unserer Lyrikannotation ausgehen, können die Daten anderer Projekte, die sich mit der Analyse von Emotionen in deutscher Literatur befassen (z. B. Haider et al. 2020, Dennerlein et al. 2022), (noch) nicht einbezogen werden. Ob es in Hinsicht auf die Emotionsgestaltung Unterschiede zwischen Prosa, Drama und Lyrik gibt, ist nicht zuletzt gattungstypologisch interessant. Im Untersuchungszeitraum war die Auffassung verbreitet, dass Subjektivität und auch Emotionalität charakteristische, gegebenenfalls sogar definitionsrelevante Merkmale der Gattung Lyrik seien (vgl. Lamping 2000: 56f.). Zwar zählt die Gestaltung textueller Emotionen nicht zu den „gattungsbildende[n] Zentralmerkmal[en]“ (Zymner 2007: 36) in der Bestimmung von Prosa, Drama und Lyrik; jedoch wurde und wird – in Verallgemeinerung des Modells ‚Erlebnislyrik‘ bzw. epochenspezifischer Lyrikvarianten – Gedichten noch immer ein höherer Anteil an Subjektivität und Emotionalität zugeschrieben, wenn heute auch nur als fakultative Eigenschaft. Wenn sich die Gattungen im Untersuchungszeitraum abweichend verhalten, könnte dies aufschlussreich für die gattungstypologische Relevanz des Merkmals ‚Emotionalität‘ sein. Insgesamt soll nun also danach gefragt werden, welche Schwierigkeiten sich dabei ergeben, auf Lyrikannotationen trainierte Modelle zur Emotionserkennung auf Prosa- und Dramentexte anzuwenden, und was sich so über etwaige Gattungsunterschiede lernen lässt.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Ressourcen</head>
+                <p style="text-align: left; ">Die Studie verwendet drei Korpora: ein vergleichsweise großes Lyrikkorpus, für das umfangreiche manuelle Annotationen vorliegen, und zwei deutlich kleinere, zu Testzwecken zusammengestellte Korpora mit einerseits Prosa- und andererseits Dramentexten. Das Lyrikkorpus besteht aus Texten in Anthologien aus dem Untersuchungszeitraum, die sich auf Gedichte von Zeitgenoss:innen konzentrieren. Die Anthologien stammen aus der Zeit von 1859 bis 1919 und enthalten mehr als 6000 Gedichte, von denen 1412 (270k Token) annotiert wurden.<ref n="3" target="ftn3"/> Die Prosa- und Dramenkorpora bestehen aus jeweils 5 vollständig annotierten Texten aus der Zeit um 1900 (Prosakorpus: 17k Token, Dramenkorpus: 34k Token).<ref n="4" target="ftn4"/>
+                </p>
+                <p style="text-align: left; ">Die Emotionsannotation zielt darauf ab, die im Text gestalteten Emotionen (und nicht die Emotionen der Leser:innen) zu erfassen. Genutzt wurde ein Set von 40 diskreten Emotionen, darunter zum Beispiel Liebe, Trauer, Hoffnung, Sehnsucht oder Hass. Einerseits handelt es sich um Emotionen, die in gängigen Emotionstheorien 
+                    <ref target="https://www.zotero.org/google-docs/?ujhMJp">(Ekman 1992; 1999; Plutchik 1980b; 1980a; 2001)</ref> als grundlegend angesehen werden, andererseits wurden zusätzliche Emotionen, die in den Korpustexten häufig vorkommen, aufgenommen, um das Emotionsset an das historische Material anzupassen. Die Annotationseinheiten sind Wörter bzw. Wortfolgen.<ref n="5" target="ftn5"/> Da für viele einzelne Emotionen nur eine sehr geringe Zahl von Annotationen vorliegen, werden die Emotionen nachträglich zu sechs Gruppen zusammengefasst: Liebe, Freude, Trauer, Erregung/Überraschung, Angst und Wut. Die Gruppierung orientiert sich an der Emotionshierarchie in 
+                    <ref target="https://www.zotero.org/google-docs/?9aHjPw">Shaver u. a. (1987)</ref>. Die Lyrik-, Prosa- und Dramentexte wurden alle auf dieselbe Weise annotiert. Das Inter-Annotator-Agreement (Mahet 2015) für die Emotionsgruppen beträgt 0.71 γ (Lyrik), 0.61 γ (Prosa) und 0.59 γ (Drama).<ref n="6" target="ftn6"/> Für die Agreement-Differenzen ist möglicherweise mitverantwortlich, dass die Annotator:innen bislang deutlich weniger Prosa- und Dramen- als Lyriktexte annotiert haben und insofern mit den Gattungen unterschiedlich vertraut sind.
+                </p>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: left;" cols="7" rend="DH-Default">Tabelle 1: Annotierte Segmente nach Gattung und Emotion.</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Agitation</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Fear</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Anger</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Sadness</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Joy</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Love</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Lyrik</cell>
+                        <cell style="text-align: left;" rend="DH-Default">591</cell>
+                        <cell style="text-align: left;" rend="DH-Default">532</cell>
+                        <cell style="text-align: left;" rend="DH-Default">870</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3955</cell>
+                        <cell style="text-align: left;" rend="DH-Default">4233</cell>
+                        <cell style="text-align: left;" rend="DH-Default">4159</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Drama</cell>
+                        <cell style="text-align: left;" rend="DH-Default">134</cell>
+                        <cell style="text-align: left;" rend="DH-Default">178</cell>
+                        <cell style="text-align: left;" rend="DH-Default">161</cell>
+                        <cell style="text-align: left;" rend="DH-Default">238</cell>
+                        <cell style="text-align: left;" rend="DH-Default">148</cell>
+                        <cell style="text-align: left;" rend="DH-Default">144</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Prosa</cell>
+                        <cell style="text-align: left;" rend="DH-Default">66</cell>
+                        <cell style="text-align: left;" rend="DH-Default">42</cell>
+                        <cell style="text-align: left;" rend="DH-Default">45</cell>
+                        <cell style="text-align: left;" rend="DH-Default">41</cell>
+                        <cell style="text-align: left;" rend="DH-Default">50</cell>
+                        <cell style="text-align: left;" rend="DH-Default">23</cell>
+                    </row>
+                </table>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Klassifikation</head>
+                <p style="text-align: left; ">Tabelle 2 zeigt die Qualität der Emotionsklassifikation in den drei Gattungen. Verwendet wird ein Modell, welches lediglich mit den Annotationen für Lyrik trainiert ist. Basis ist das deutsche Bert-Modell gbert-large (Chan et al. 2020). Dieses wird zusätzlich auf Lyrik angepasst<ref n="7" target="ftn7"/> und anschließend trainiert<ref n="8" target="ftn8"/> (Konle et al. 2022).
+                </p>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: left;" cols="8" rend="DH-Default">Tabelle 2: Evaluation nach Gattung und Emotion (F1 Macro).</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Agitation</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Fear</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Anger</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Sadness</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Joy</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Love</cell>
+                        <cell style="text-align: left;" rend="DH-Default">MEAN</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Lyrik (CV<ref n="9" target="ftn9"/>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">.62</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.79</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.71</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.74</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.73</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.77</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.73</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Drama</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.51</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.61</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.54</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.43</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.58</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.58</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.54</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Prosa</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.52</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.53</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.57</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.57</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.64</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.56</cell>
+                        <cell style="text-align: left;" rend="DH-Default">.56</cell>
+                    </row>
+                </table>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Mögliche Erklärungen für Unterschiede in der Klassifikationsperformanz</head>
+                <p style="text-align: left; ">Die folgenden Abschnitte beschäftigen sich mit der Suche nach möglichen Erklärungen für die großen Qualitätsunterschiede (siehe Tab. 2). Es werden sowohl Eigenschaften des Modells als auch die Verteilung der annotierten Emotionen, die Zusammensetzung einzelner Emotionen und das zugrundeliegende Textmaterial untersucht.</p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Modellanalyse</head>
+                    <p style="text-align: left; ">Zunächst lässt sich danach fragen, wie sicher sich das Modell bei den Klassifikationen ist (Abb. 1). Blickt man auf die Vorhersage von (vorhandenen) Emotionen, ist die Sicherheit erwartungsgemäß bei Lyrik am größten, gefolgt von Prosa und danach Drama. Bei der Vorhersage ‘keine Emotion’ ist sich das Modell hingegen im Fall von Dramentexten besonders sicher (sogar noch sicherer als im Fall von Gedichten) und im Fall von Prosa besonders unsicher. Zum einen scheint die Klassifikationsperformance also mit der Sicherheit des Modells zusammenzuhängen; zum anderen weisen die Differenzen zwischen Prosa- und Dramentexten in puncto ‘Emotion’/’Keine Emotion’ auf klassifikationsrelevante Gattungsunterschiede hin.</p>
+                    <figure>
+                        <graphic n="1001" width="16.002cm" height="9.308041666666666cm" url="Pictures/a931259b1ebf4deb3da9b5d52aecb5f1.png" rend="inline"/>
+                        <head>Abbildung 1: Sicherheit der Klassifikation nach Gattung und Label. Sicherheit wird hier mit der Wahrscheinlichkeit (nach Softmax Transformation) für die ausgegebene Klasse gleichgesetzt.</head>
+                    </figure>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Emotionsverteilung</head>
+                    <p style="text-align: left; ">Um einen Eindruck von der Emotionsverteilung innerhalb der Gattungen zu erhalten, werden jeweils 50 Segmente (Verse bzw. Sätze) zu einer Einheit zusammengefasst, die als Vektor über die Anzahl der enthaltenen Emotionen repräsentiert wird. Um diese Vektoren zu visualisieren, werden sie in den 2-dimensionalen Raum projiziert (siehe McInnes 2018). Das Resultat (Abb. 2) zeigt, dass die annotierten Gedichte stärker streuen als die annotierten Texte der übrigen Gattungen, also vielfältigere Mischungen an Emotionen enthalten. Auffällig ist zusätzlich die Häufung von Dramen und Prosa im oberen rechten Bereich der Grafik. Die Emotionsverteilung innerhalb der beiden Gattungen ähnelt sich nach diesem Befund und weicht zugleich von der Verteilung in den meisten lyrischen Texten ab.</p>
+                    <figure>
+                        <graphic n="1002" width="16.002cm" height="15.901458333333334cm" url="Pictures/d643feb0e017c1833b7ce3a1070e144f.png" rend="inline"/>
+                        <head>Abbildung 2: Annotierte Emotionen über je 50 Segmenten aggregiert und in den 2D Raum projiziert.</head>
+                    </figure>
+                    <p style="text-align: left; ">Abbildung 3 macht deutlich, dass die Gattungen Emotionen in stark unterschiedlicher Häufigkeit gestalten. Lyrik enthält mit Abstand die meisten Emotionen, beinahe das Dreifache im Vergleich zu Dramen. Diese enthalten wiederum das Doppelte an Emotionen, gemessen an Prosa.</p>
+                    <figure>
+                        <graphic n="1003" width="16.002cm" height="9.200444444444445cm" url="Pictures/1d50d00bc71ae554898df91a46f077a3.png" rend="inline"/>
+                        <head>Abbildung 3: Emotionen pro Token in Gattungen.</head>
+                    </figure>
+                    <p style="text-align: left; ">Abbildung 4 ermöglicht einen Einblick in die einzelnen Emotionsgruppen nach Shaver (
+                        <ref target="https://www.zotero.org/google-docs/?9aHjPw">1987</ref>). Während Lyrik eine deutliche Ungleichverteilung zugunsten von Trauer, Freude und Liebe zeigt, sind die Gruppen in Dramen und Prosa nahe an einer Gleichverteilung.
+                    </p>
+                    <figure>
+                        <graphic n="1004" width="16.002cm" height="9.094611111111112cm" url="Pictures/f5768c33067df86e8f12de3070fa8024.png" rend="inline"/>
+                        <head>Abbildung 4: Emotionsgruppen pro Token in Gattungen.</head>
+                    </figure>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Zusammensetzung der Emotionsgruppen</head>
+                    <figure>
+                        <graphic n="1005" width="16.002cm" height="10.458097222222221cm" url="Pictures/048756f516b8580191a0830fd2a2a274.png" rend="inline"/>
+                        <head>Abbildung 5: Zusammensetzung der Gruppe Erregung/Überraschung nach Gattungen.</head>
+                    </figure>
+                    <p style="text-align: left; ">Abbildung 5 zeigt beispielhaft für die Emotionsgruppe Erregung/Überraschung, wie sich die Gruppe je nach Gattung anteilig zusammensetzt. Es zeigen sich erhebliche Unterschiede: Während in lyrischen Texten die Kategorie ‘Emotionalität’ dominiert, die vor allem für unspezifische Emotionen eingesetzt wird (‘Er war ein grundsätzlich emotionaler Mensch’ usw.), kommt in den annotierten Dramen ‘Aufregung’ am häufigsten vor; in den annotierten Prosatexten ist wiederum die Einzelemotion ‘Spannung’, verglichen mit den anderen Gattungen, besonders verbreitet. Diese Unterschiede erzeugen ein großes Fehlerpotential, da sich mit der Zusammensetzung auch die Repräsentation der Gruppe im Modell ändert. Während in Lyrik bereits gute Ergebnisse erzielt werden können, wenn lediglich die Einzelemotion ‘Emotionalität’ erkannt wird, ist diese für Prosatexte nutzlos. Umgekehrtes gilt für Spannung. </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Texteigenschaften</head>
+                    <p style="text-align: left; ">Nachdem die Verteilungsunterschiede in den Emotionen dargestellt sind, werden Differenzen in der sprachlichen Gestaltung der annotierten Texte untersucht.</p>
+                    <table rend="rules">
+                        <row>
+                            <cell style="text-align: left;" cols="3" rend="DH-Default">Tabelle 3: Emotionswörter pro Emotion.</cell>
+                        </row>
+                        <row>
+                            <cell style="text-align: left;" rend="DH-Default">Lyrik</cell>
+                            <cell style="text-align: left;" rend="DH-Default">Drama</cell>
+                            <cell style="text-align: left;" rend="DH-Default">Prosa</cell>
+                        </row>
+                        <row>
+                            <cell style="text-align: left;" rend="DH-Default">0.22</cell>
+                            <cell style="text-align: left;" rend="DH-Default">0.27</cell>
+                            <cell style="text-align: left;" rend="DH-Default">0.23</cell>
+                        </row>
+                    </table>
+                    <p style="text-align: left; ">Neben der bislang betrachteten Emotionsannotation wurde separat festgehalten, welche Wörter im Text über ihre lexikalische Bedeutung markieren, dass eine Emotion gestaltet wird, zum Beispiel Ausdrücke wie ‚Angst‘, ‚lachen‘ oder ‘jauchzen’. Eine Emotionsannotation wird meist, aber nicht immer, von der Annotation entsprechender Emotionswörter begleitet; umgekehrt kommen Emotionswörter nie ohne zugehörige Emotionsannotation vor. Tabelle 3 zeigt, wie viele Emotionswörter pro Emotionsannotation je nach Gattung vorkommen. In Dramen werden etwas mehr Emotionswörter verwendet als in Prosa und Lyrik, eine explizitere Nennung von Emotionen in Lyrik als mögliche Fehlerquelle in der anschließenden Klassifikation der anderen Gattungen kann damit ausgeschlossen werden.</p>
+                    <figure>
+                        <graphic n="1006" width="16.002cm" height="9.001125cm" url="Pictures/57fcb0056975ce8de79c99be6f0c08e0.png" rend="inline"/>
+                        <head>Abbildung 6: Jensen-Shannon-Divergenz zwischen Gattungen repräsentiert durch die jeweils 8000 häufigsten Wörter der einzelnen Gattungen.</head>
+                    </figure>
+                    <p style="text-align: left; ">Abschließend lässt sich danach fragen, wie groß der Abstand zwischen den Gattungen hinsichtlich des Textmaterials ist und ob die Unterschiede in der Klassifikationsperformance dazu ‘passen’. Abb. 6 zeigt, dass der Abstand zwischen Lyrik und Prosa am größten, der Abstand zwischen Lyrik und Drama bereits deutlich geringer und der Abstand zwischen Drama und Prosa am geringsten ausfällt. Dass Lyrik also, was das Textmaterial angeht, eher den einbezogenen Dramen- als den Prosatexten ähnelt, schlägt sich jedoch nicht unmittelbar in der Klassifikationsperformance nieder, die nämlich im Fall von Dramen nicht besser als im Fall von Prosa ist.</p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Diskussion</head>
+                <p style="text-align: left; ">Die Studie ist von der Frage ausgegangen, wie sich etwaige Unterschiede zwischen den literarischen Großgattungen Prosa, Drama und Lyrik in puncto Emotionsgestaltung mit Fragen der Domain Adaptation verknüpfen und aus dieser Perspektive modellieren lassen. Der (zu erwartende) Befund, dass ausschließlich auf Lyrikannotationen trainierte Modelle deutlich schlechter performen, wenn sie auf Prosa- und Dramentexte angewendet werden, kann mit einer ganzen Reihe von Faktoren zusammenhängen, von denen einige näher untersucht wurden. Neben pragmatischen Gesichtspunkten, zum Beispiel den etwas niedrigeren Inter-Annotator-Agreement-Werten, scheinen vor allem Spezifika der Domänen eine Rolle zu spielen. Erhebliche Unterschiede zwischen den Gattungen zeigen sich unter anderem, wenn man die Häufigkeit und Verteilung der gestalteten Emotionen betrachtet und wenn man danach fragt, aus welchen Einzelemotionen sich die Emotionsgruppen zusammensetzen. Demgegenüber deuten weitere Ergebnisse darauf hin, dass sich manche Gattungsunterschiede 
+                    <hi rend="italic">nicht</hi> – oder zumindest nicht unvermittelt – wie erwartet in den Klassifikationsergebnissen niederschlagen. Zumindest hat sich gezeigt, dass Dramen sowohl relativ viele Emotionswörter enthalten als auch lyrischen Texten auf sprachlicher Ebene vergleichsweise stark ähneln und dass für sie trotzdem keine besseren Klassifikationsergebnisse erzielt wurden als für Prosa.
+                </p>
+                <p style="text-align: left; ">Die Ergebnisse deuten indizienhaft an, dass Gedichte, verglichen mit Dramen und Prosatexten, besonders häufig Emotionen gestalten. Dieser Befund passt zu den in der Einleitung erwähnten gattungstypologischen Vermutungen, wenngleich berücksichtigt werden muss, dass an dieser Stelle nur sehr wenige Prosa- und Dramentexte einbezogen werden konnten. Um noch besser abgesicherte Schlüsse über die Gattungen zu ermöglichen, werden wir weitere Texte annotieren und verschiedene Verfahren der Domain Adaptation testen, um letztlich auch für Prosa und Dramen zuverlässige Klassifikatoren trainieren zu können.</p>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                         Wir danken Melanie Andresen für das sehr detaillierte Feedback und genaue Lektüre unseres Beitrags.
+                    </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                         Vgl. z. B. Konle u. a. 2022a, Kröncke u. a. 2023.
+                    </note>
+<note rend="footnote text" xml:id="ftn3" n="3">
+                        
+                            <hi style="font-size:10pt" xml:space="preserve">Korpus: </hi>
+                            <ref target="https://www.zotero.org/google-docs/?nbIWLy">
+                                <hi style="font-size:10pt">Winko u. a. 2022</hi>
+                            </ref>
+                            <hi style="font-size:10pt" xml:space="preserve">a; Korpusbeschreibung: </hi>
+                            <ref target="https://www.zotero.org/google-docs/?PxNNld">
+                                <hi style="font-size:10pt">Winko u. a. 2022</hi>
+                            </ref>
+                            <hi style="font-size:10pt">b.</hi>
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn4" n="4">
+                         Prosatexte: Detlev von Liliencron, 
+                            <hi rend="italic">Unter flatternden Fahnen</hi> (1888); Bjarne P. Holmsen (Arno Holz/Johannes Schlaf), 
+                            <hi rend="italic">Ein Tod</hi> (1889); Peter Altenberg, 
+                            <hi rend="italic">Fünfundzwanzig</hi> (1896); Hugo von Hofmannsthal, 
+                            <hi rend="italic">Reitergeschichte</hi> (1899); Maria Janitschek, 
+                            <hi rend="italic" xml:space="preserve">Darüber kommt kein Weib hinweg … </hi>(1902). Dramen: Hugo von Hofmannsthal, 
+                            <hi rend="italic">Der Tod des Tizian</hi> (1892); Arthur Schnitzler, 
+                            <hi rend="italic">Lebendige Stunden</hi> (1902); Hennie Raché, 
+                            <hi rend="italic">Belsazar</hi> (1904), Paul Scheerbart, 
+                            <hi rend="italic">Lachende Gespenster</hi> (1904); August Stramm, 
+                            <hi rend="italic">Erwachen</hi> (1914).
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn5" n="5">
+                        
+                            <hi style="font-size:10pt" xml:space="preserve">Annotationsrichtlinien: </hi>
+                            <ref target="https://www.zotero.org/google-docs/?05R0oJ">
+                                <hi style="font-size:10pt" xml:space="preserve">Kröncke u. a. </hi>
+                            </ref>
+                            <hi style="font-size:10pt">2022.</hi>
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn6" n="6">
+                         Verwendet wurden die Default-Einstellungen. Für weitere Ausführungen siehe Reiter und Konle 2022.
+                    </note>
+<note rend="footnote text" xml:id="ftn7" n="7">
+                         Hyperparameter: 500 steps, batchsize 30, learning rate 2e-5 (see Konle and Jannidis 2020, Gururangan et al. 2020)
+                    </note>
+<note rend="footnote text" xml:id="ftn8" n="8">
+                         Hyperparameter: 20 Epochen, batchsize 20, learning rate 1e-4
+                    </note>
+<note rend="footnote text" xml:id="ftn9" n="9">
+                                 Cross Validation
+                            </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl style="text-align: left; "><hi rend="bold">Chan, Brandon; Schweter, Stefan and Möller, Timo.</hi> 2020. German’s next language model In: Proceedings of the 28th International Conference on Computational Linguistics, Barcelona, Spain (Online), pp. 6788–6796.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Dennerlein, Katrin; Schmidt, Thomas; Wolff, Christian.</hi> 2023. Computational emotion classification for genre corpora of German tragedies and comedies from 17th to early 19th century, Digital Scholarship in the Humanities, Volume 38, Issue 4, 2023, Pages 1466–1481, 
+                        <ref target="https://www.google.com/url?q=https://doi.org/10.1093/llc/fqad046&amp;sa=D&amp;source=docs&amp;ust=1701784277880153&amp;usg=AOvVaw0lPfPAIHz9EVg3vWn6OQON">https://doi.org/10.1093/llc/fqad046</ref>
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Ekman, Paul.</hi> 1992. An Argument for Basic Emotions. Cognition and Emotion, vol. 6, no. 3-4, pp. 169–200. </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Ekman, Paul.</hi> 1999. Basic Emotions. Handbook of Cognition and Emotion, edited by John Tim Dagleish and Mich J. Power. Wiley, pp. 45-60. </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Dennerlein, Katrin; Schmidt Thomas; Wolff Christian.</hi> 2023. Computational emotion classification for genre corpora of German tragedies and comedies from 17th to early 19th century, Digital Scholarship in the Humanities, Volume 38, 4, pp. 1466–1481, 
+                        <ref target="https://doi.org/10.1093/llc/fqad046">https://doi.org/10.1093/llc/fqad046</ref>
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Gururangan, Suchin; Marasović, Ana; Swayamdipta, Swabha; Lo, Kyle; Beltagy, Iz Downey, Doug and Smith, Noah A.</hi> 2020. Don't stop pretraining: adapt language models to domains and tasks. In: Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Haider, Thomas; Eger, Steffen; Kim, Evgeny; Klinger, Roman and Menninghaus, Winfried.</hi> 2020. PO-EMO: Conceptualization, Annotation, and Modeling of Aesthetic Emotions in German and English Poetry. In Proceedings of the Twelfth Language Resources and Evaluation Conference, pages 1652–1663, Marseille, France. European Language Resources Association.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Mathet, Yann; Widlöcher, Antoine and Métivier, Jean-Philippe.</hi> 2015. 
+                        <ref target="https://aclanthology.org/J15-3003">The Unified and Holistic Method Gamma (γ) for Inter-Annotator Agreement Measure and Alignment</ref>. Computational Linguistics, 41(3), pp. 437–479.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Konle, Leonard; Kröncke, Merten; Jannidis, Fotis; Winko, Simone.</hi> 2022. Emotions and Literary Periods. DH2022. Tokyo.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Kröncke, Merten; Jannidis, Fotis; Konle, Leonard; Winko, Simone.</hi> 2022. Annotationsrichtlinien Emotionsmarker und Emotionen, 
+                        <ref target="https://doi.org/10.5281/zenodo.6021152">https://doi.org/10.5281/zenodo.6021152</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">​​<hi rend="bold">Krönke, Merten; Konle, Leonard; Winko, Simone; Jannidis, Fotis.</hi> 2023. Gattungen und Emotionen in der Lyrik des Realismus und der frühen Moderne, in: DHd2023: Open Humanities Open Culture. Konferenzabstracts, Belval/Trier, 13.–17. März 2023, DOI: 
+                        <ref target="https://doi.org/10.5281/zenodo.7715402">10.5281/zenodo.7715402</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Lamping, Dieter.</hi> 2000. Das lyrische Gedicht. Definitionen zu Theorie und Geschichte der Gattung. 3. Aufl. Göttingen.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">McInnes, Lelland; Healy, John; Saul, Nathaniel and Großberger, Lukas.</hi> 2018. UMAP: Uniform Manifold Approximation and Projection. The Journal of Open Source Software, 3(29).</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Plutchik, Robert.</hi> 1980a. Emotion: A Psychoevolutionary Synthesis. Harper &amp; Row.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Plutchik, Robert.</hi> 1980b. “A general psychoevolutionary theory of emotion.” Emotion: Theory, Research and Experience. Theories of Emotion, edited by Robert Plutchik and Henry Kellerman. Academic Press, vol. 1, pp. 3–33.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Plutchik, Robert.</hi> 2001. “The Nature of Emotions.” American Scientist, vol. 89, no. 4, pp. 344–350.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Ramponi, Alan and Plank, Barbara.</hi> 2020. 
+                        <ref target="https://aclanthology.org/2020.coling-main.603">Neural Unsupervised Domain Adaptation in NLP—A Survey</ref>. In Proceedings of the 28th International Conference on Computational Linguistics, pages 6838–6855, Barcelona, Spain (Online). International Committee on Computational Linguistics.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Reiter, Nils; Konle, Leonard.</hi> 2022. Messverfahren zum Inter-annotator-agreement (IAA). DARIAH-DE Working Papers No. 44. Göttingen: DARIAH-DE, 2022. DOI: 10.47952/gro-publ-103. </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Winko, Simone; Konle, Leonard; Kröncke, Merten; Jannidis, Fotis.</hi> 2022a. Lyrik-Anthologien 1850-1910, 
+                        <ref target="https://doi.org/10.5281/zenodo.6053952">https://doi.org/10.5281/zenodo.6053952</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Winko, Simone; Konle, Leonard; Kröncke, Merten; Jannidis, Fotis.</hi> 2022b. Korpusbeschreibung der Lyrik-Anthologien 1850-1910, 
+                        <ref target="https://doi.org/10.5281/zenodo.6204787">https://doi.org/10.5281/zenodo.6204787</ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Zymner, Rüdiger.</hi> 2007. Texttypen und Schreibweisen. In: Thomas Anz (Hg.): Handbuch Literaturwissenschaft. Bd. 1: Gegenstände und Grundbegriffe. Stuttgart, Weimar, pp. 25–80.</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

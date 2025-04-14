@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="M_LLER_Caroline_Vom_Zettel_zum_TEI_annotierten_Beleg" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Vom Zettel zum TEI annotierten Beleg</title>
+                    <title type="sub">Die Verknüpfung von lexikografischen Daten mit ihren Quellentexten im Projekt DEMel</title>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Müller</surname>
+                        <forename>Caroline</forename>
+                    </persName>
+                    <affiliation>Institut für Romanistik, Universität Rostock, Deutschland; Juniorprofessur für Digital Humanities, Universität Rostock, Deutschland</affiliation>
+                    <email>caroline.mueller4@uni-rostock.de</email>
+                    <idno type="ORCID">0000-0002-8591-7859</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Stephan</surname>
+                        <forename>Robert</forename>
+                    </persName>
+                    <affiliation>Universitätsbibliothek Rostock, Deutschland</affiliation>
+                    <email>robert.stephan@uni-rostock.de</email>
+                    <idno type="ORCID">0000-0001-7605-7415</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Labahn</surname>
+                        <forename>Karsten</forename>
+                    </persName>
+                    <affiliation>Universitätsbibliothek Rostock, Deutschland</affiliation>
+                    <email>karsten.labahn@uni-rostock.de</email>
+                    <idno type="ORCID">0000-0002-8482-807X</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-19T15:15:00</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Digital Humanities Passau</publisher>
+                <address>
+                    <addrLine>Universität Passau</addrLine>
+                    <addrLine>Innstraße 41</addrLine>
+                    <addrLine>D-94032 Passau</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Posterpräsentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Lexikografie</term>
+                    <term>Automatische Texterkennung</term>
+                    <term>TEI</term>
+                    <term>Mittelalterliches Spanisch</term>
+                    <term>Datenbank</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Datenerkennung</term>
+                    <term>Programmierung</term>
+                    <term>Annotieren</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Wörterbücher zu historischen Sprachstufen führen meist Beispiele an, um die Verwendung und Bedeutung eines Wortes im untersuchten Zeitraum zu verdeutlichen. Im Fall von digitalen Wörterbüchern, wie dem MWB Online<ref n="1" target="ftn1"/> und dem Dictionary of Old Norse Prose,<ref n="2" target="ftn2"/> werden diese Belege immer häufiger mit dem zugehörigen Quellentext verknüpft. Dadurch ist es möglich, den Beleg im vollständigen Textzusammenhang anzuzeigen. Laut Plate (2022) handelt es sich dabei um einen zukünftigen „Standard der Online-Publikationen“. Wie kann diese Verbindung jedoch möglichst automatisch hergestellt werden, wenn wesentliche Informationen, wie das Zitat und die genaue Stellenangabe, bisher nur in Form eines digitalisierten Belegzettels vorliegen? Diese Frage stellt sich im Projekt DEMel.
+            </p>
+            <p>Das von der DFG geförderte Projekt Diccionario del Español Medieval electrónico (DEMel) stellt ein lemmatisiertes Datenarchiv zum mittelalterlichen Spanisch zur Verfügung. Es basiert auf einer in Zettelkästen archivierten Belegsammlung, die in Heidelberg unter der Leitung von Prof. Bodo Müller für ein Wörterbuch zum spanischen Wortschatz des 10. bis beginnenden 15. Jahrhunderts zusammengestellt wurde.<ref n="3" target="ftn3"/> Dieses Material wurde von den Instituten für Romanistik der Universitäten Rostock und Paderborn und der Universitätsbibliothek Rostock im Rahmen des Projektes DEMel digitalisiert und erschlossen. Bei der Erschließung der Inhalte auf den Belegzetteln wurde zunächst auf eine automatische Texterkennung (ATR) verzichtet, da ihre Verwendung aus mehreren Gründen nicht sinnvoll erschien: die Mischung aus hand- und maschinenschriftlichem Material, die zahlreichen unterschiedlichen Handschriften sowie das komplexe Layout, das eine korrekte semantische Segmentierung der Zettel erschwert. Die wichtigsten Informationen wurden daher mit einer eigens entwickelten Erfassungsanwendung per Hand erfasst und in einer relationalen Datenbank gespeichert. Nun sind die rund 650.000 Belege zu über 31.000 Stichwörtern zusammen mit den Digitalisaten der zugehörigen Belegzettel in einem Webportal unter https://demel.uni-rostock.de frei zugänglich und durchsuchbar.<ref n="4" target="ftn4"/>
+            </p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/685e772ee21523a11b72bd842c5833b6.jpg"/>
+                    <head>Beispiel eines Belegzettels</head>
+                </figure>Das nächste Projektziel ist die bereits erwähnte Verknüpfung der von den Zetteln erfassten Belege mit ihren mittelalterlichen Quellen. Zu diesem Zweck wurden alle im digitalen Volltext zur Verfügung stehenden Quellentexte in XML/TEI konvertiert. Im Anschluss erfolgt darin die Auszeichnung der DEMel-Belege, wobei auf die Belegdaten aus der Datenbank zurückgegriffen wird. Indem nach der erfassten Wortform im zugehörigen Quellentext gesucht wird, werden automatisch alle möglichen Textstellen ermittelt. Anschließend muss nur noch die auf dem Belegzettel notierte Textstelle ausgewählt werden. Auch diese Aufgabe soll trotz der noch nicht erfassten Stellenangaben teilweise automatisiert werden. Dafür wird bei den Belegzetteln automatische Texterkennung eingesetzt: für die maschinenschriftlichen die Software Tesseract und für die handschriftlichen Transkribus. Dabei wurde in Transkribus nicht ein Modell für jede Hand trainiert, sondern ein gemeinsames Modell für alle. Wie es bei den sogenannten generischen Modellen üblich ist (vgl. Hodel, 2023), ist die Fehlerquote (Character Error Rate, CER) mit über 10 % relativ hoch.<ref n="5" target="ftn5"/> Da die Ergebnisse der Texterkennung aber nur für einen Abgleich mit den möglichen Textstellen verwendet werden, stört das nicht.
+            </p>
+            <p>Zwischen den zur Auswahl stehenden Textstellen und dem auf dem Belegzettel erkannten Text wird die Levenshtein-Distanz gebildet. Sie gibt an, wie viele Änderungen notwendig sind, um die Textstellen in den ATR-Text umzuwandeln (Levenshtein, 1966). Auf diese Weise lässt sich die ähnlichste Textstelle ermitteln, die normalerweise auch die gesuchte ist. Sofern die Distanz sehr klein und die Differenz zur nächstbesten Textstelle sehr groß ist, wird der Beleg im Text an der entsprechenden Stelle automatisch ausgezeichnet. Die übrigen Belege werden von studentischen Hilfskräften mit einer Erfassungsanwendung, deren Prototyp im Rahmen einer Masterarbeit entwickelt wurde (C. Müller, 2022), bearbeitet. Die Textstellen werden nach ihrer Levenshtein-Distanz zum Belegzettel sortiert, so dass die Hilfskräfte in der Regel nur zwischen den obersten Textstellen auswählen müssen. Dadurch wird die Bearbeitung sehr beschleunigt.</p>
+            <p>Durch die Auszeichnung der Belege in den TEI kodierten Quellentexten wird die gewünschte Verknüpfung zwischen den lexikografischen Daten und ihren Quellen hergestellt. Sie kann im Webportal für neue Features, wie die Anzeige der Belegkontexte und Stellenangaben sowie dem Sprung in den Volltext, verwendet werden. Das Poster stellt den Prozess der (semi)automatischen Belegauszeichnung schematisch dar. Dabei werden die Vor- und Nachteile der gewählten Methode diskutiert sowie erste Ergebnisse zur Evaluation des Workflows präsentiert.</p>
+        </body>
+        <back>
+<div type="notes">
+<note xml:id="ftn1" rend="footnote text" n="1"> http://www.mhdwb-online.de</note>
+<note xml:id="ftn2" rend="footnote text" n="2"> https://onp.ku.dk</note>
+<note xml:id="ftn3" rend="footnote text" n="3"> Ab 1987 erschienen 26 Faszikeln des Diccionario del español medieval mit Lemmata von 
+                    <hi rend="italic">a</hi> bis 
+                    <hi rend="italic">almohatac</hi> (B. Müller, 1987-2005). 2007 wurden die Arbeiten an dem Wörterbuch aus finanziellen Gründen eingestellt.
+                </note>
+<note xml:id="ftn4" rend="footnote text" n="4"> Die Daten sollen außerdem zum Projektende in offenen Datenrepositorien wie Zenodo veröffentlicht werden. Der Sourcecode des Portals ist bereits auf GitHub (https://github.com/ubrostock/demel_webportal) zugänglich.</note>
+<note xml:id="ftn5" rend="footnote text" n="5"> Das Modell soll im weiteren Projektverlauf optimiert werden.</note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi rend="bold">Hodel, Tobias.</hi> 2023. "Konsequenzen der Handschriftenerkennung und des maschinellen Lernens für die Geschichtswissenschaft. Anwendung, Einordnung und Methodenkritik." 
+                        <hi rend="italic">Historische Zeitschrift</hi> 316: 151-180. https://doi.org/10.1515/hzhz-2023-0006.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Levenshtein, Vladimir I. </hi>1966. "Binary codes capable of correcting deletions, insertions, and reversals." 
+                        <hi rend="italic">Soviet Physics – Doklady</hi> 10 (8): 707-710. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Müller, Bodo.</hi> 1987-2005. "Diccionario del español medieval, vol. 1, fascículos 1-10, vol. 2, fascículos 11-20, vol. 3, fascículos 21-26." Heidelberg: Winter. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Müller, Caroline.</hi> 2022. "Linking historical dictionary data with its sources: A tool for the semi-automatic markup of attestations." Masterarbeit, Universidad Nacional de Educación a Distancia. https://doi.org/10.18453/rosdok_id00004241.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Plate, Ralf.</hi> 2022. "Zur philologischen Theorie und Praxis der digitalen historischen Lexikographie. Am Beispiel des Mittelhochdeutschen Wörterbuchs." In 
+                        <hi rend="italic">Historische Lexikographie des Deutschen: Perspektiven eines Forschungsfeldes im digitalen Zeitalter,</hi>
+                        <hi rend="italic">hg. von Gerhard Diehl und Volker Harm,</hi> 121-136. Berlin, Boston: De Gruyter. https://doi.org/10.1515/9783110758948-008.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

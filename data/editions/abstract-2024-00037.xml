@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="LEHMANN_Marina_Visuelle_Textanalyse_vom_Distant_zum_Close_Re" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Visuelle Textanalyse vom Distant zum Close Reading mit THeMSE</title>
+                <author>
+                    <persName>
+                        <surname>Lehmann</surname>
+                        <forename>Marina</forename>
+                    </persName>
+                    <affiliation>Johannes Gutenberg-Universität Mainz, Deutschland</affiliation>
+                    <email>marina.lehmann@uni-mainz.de</email>
+                    <idno type="ORCID">0000-0002-6818-6169</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>John</surname>
+                        <forename>Markus</forename>
+                    </persName>
+                    <affiliation>Akademie der Wissenschaften und der Literatur | Mainz, Deutschland</affiliation>
+                    <email>markus.john@adwmainz.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kuczera</surname>
+                        <forename>Andreas</forename>
+                    </persName>
+                    <affiliation>Technische Hochschule Mittelhessen, Deutschland</affiliation>
+                    <email>andreas.kuczera@mni.thm.de</email>
+                    <idno type="ORCID">0000-0003-1020-507X</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-07-13T12:15:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Digital Humanities Passau</publisher>
+                <address>
+                    <addrLine>Universität Passau</addrLine>
+                    <addrLine>Innstraße 41</addrLine>
+                    <addrLine>D-94032 Passau</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Vortrag</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Visual Analytics</term>
+                    <term>Distant Reading</term>
+                    <term>Close Reading</term>
+                    <term>Textähnlichkeit</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Visualisierung</term>
+                    <term>Daten</term>
+                    <term>Manuskript</term>
+                    <term>Forschungsprozess</term>
+                    <term>Text</term>
+                    <term>Werkzeuge</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Einleitung</head>
+                <p style="text-align: left; text-align: justify;">Textvergleiche begegnen uns überall: Von Rechtschreibprüfung und Autokorrekturvorschlägen über Plagiatserkennungssoftware bis hin zu Versionierungssystemen wie Git – alle vergleichen in der ein oder anderen Form Texte. Auch im Bereich Digital Humanities beschäftigen sich Forschende mit der Frage, wie ähnlich sich Texte sind. Ein Beispiel dafür ist das DFG-Projekt 
+                    <hi rend="italic">Das Buch der Briefe der Hildegard von Bingen. Genese – Struktur – Komposition</hi><ref n="1" target="ftn1"/>, welches die in verschiedenen Handschriften überlieferten Briefe Hildegard von Bingens digital ediert.
+                </p>
+                <p style="text-align: left; ">Zwei Forschungsfragen sind im Kontext des Hildegard-Projekts von besonderem Interesse: </p>
+                <list type="ordered">
+                    <item>Welche handschriftenübergreifenden Ähnlichkeiten bestehen zwischen den überlieferten Manuskripten? Ziel ist es, Briefe oder Textbausteine zu identifizieren, die in mehreren Fassungen in gleichem oder ähnlichem Wortlaut auftreten. </item>
+                    <item>Welche Ähnlichkeiten bestehen zwischen den Briefen innerhalb einer Handschrift? Diese Frage geht einher mit der Hypothese, dass die Briefsammlungen nicht willkürlich zusammengestellt wurden, sondern kompositorischen Prinzipien folgen. Eine Aufgabe der Forschenden besteht darin, Themen und Leitgedanken zu identifizieren, die innerhalb einer Handschrift wiederkehren, um dadurch Erkenntnisse über die Komposition als Ganzes zu gewinnen.</item>
+                </list>
+                <p style="text-align: left; text-align: justify;">Um diese Fragen auf möglichst systematische Weise zu beantworten, wurde ein lauffähiger Prototyp für ein visuelles Analysewerkzeug entwickelt (Demo-Version: 
+                    <ref target="https://mlehma03.pages.gitlab.rlp.net/themse/">https://mlehma03.pages.gitlab.rlp.net/themse/</ref>). Das Werkzeug 
+                    <hi rend="italic" xml:space="preserve">THeMSE (Text-Hermeneutic Multilevel Similarity Exploration) </hi>orientiert sich dabei an dem Grundprinzip, visuelle Abstraktionen für ein Distant Reading (Moretti 2000, 54–68) der Texte mit der Möglichkeit zum Close Reading (Burdorf et al. 2007, 126) zu verbinden. Solche visuellen Abstraktionen, wie z.B. Wordclouds oder Netzwerke, können komplexe Zusammenhänge sichtbar machen, die verborgen bleiben, wenn die Analyse direkt im Detail ansetzt. Um die Zusammenhänge sowie die im Distant Reading entstandenen Ideen und Hypothesen detaillierter analysieren zu können, ist es jedoch notwendig, auch die zugehörigen Textabschnitte zu studieren. Daher werden die visuellen Abstraktionen mit dem zugrunde liegenden Textgegenstand verknüpft.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Forschungsstand</head>
+                <p style="text-align: left; text-align: justify;">Im Bereich der visuellen Textanalysewerkzeuge gibt es verschiedene visuelle Abstraktionen, die unterschiedliche Abstufungen von Nähe bzw. Distanz zum Text umsetzen. Visualisierungen wie 
+                    <hi rend="italic">CollateX</hi> (Haentjens Dekker et al. 2015, 452–470) oder 
+                    <hi rend="italic" xml:space="preserve">TRAViz (Text Re-use Alignment Visualization) </hi>(Jänicke et al. 2015a, i83–i99) ermöglichen ein Close Reading, indem sie Dokumente als 
+                    <hi rend="italic">Text Variant Graph</hi> (Schmidt und Colomb 2009, 497–514) visualisieren, um Abweichungen zwischen den Textvarianten verschiedener Editionen erkennbar zu machen. Aber auch diff-ähnliche Werkzeuge wie 
+                    <hi rend="italic">eComparatio</hi> (Bräckel et al. 2019, 221–238), das speziell auf lateinische und griechische Texte zugeschnitten ist, oder 
+                    <hi rend="italic">Tesserae</hi> (Coffee et al. 2013, 221–228), das intertextuelle Bezüge in lateinischen Texten untersucht, fallen in diese Kategorie.
+                </p>
+                <p style="text-align: left; text-align: justify;">Auf der anderen Seite des Spektrums stehen Überblicksvisualisierungen, die für ein Distant Reading entwickelt wurden. Ein Beispiel dafür sind die 
+                    <hi rend="italic" xml:space="preserve">Fingerprint Matrizen </hi>von Keim und Oelke (2007, 115–122). Sie bieten pro Text eine pixelbasierte Visualisierung bezogen auf ein bestimmtes Merkmal der Texte (z.B. Satzlänge, Lesbarkeit etc.). Ein weiterer Darstellungsansatz ist der 
+                    <hi rend="italic">Text Re-use Grid</hi> (Jänicke et al. 2015b, 153–171), eine Matrixvisualisierung mit Farbcodierung, bei der jede Zelle den Text-Reuse zwischen zwei Dokumenten im Korpus repräsentiert. Je intensiver die Farbe, desto mehr Text wurde wiederverwendet.
+                </p>
+                <p style="text-align: left; text-align: justify;">Darüber hinaus gibt es integrative Ansätze, welche auf verschiedenen Ebenen sowohl Close Reading als auch Distant Reading ermöglichen. 
+                    <hi rend="italic">TextComparator</hi>, eine Visualisierung, die im Projekt 
+                    <hi rend="italic">ePoetics</hi> zur vergleichenden Analyse verschiedener deutschsprachiger Poetiken entwickelt wurde, bietet einen Überblicksmodus mit zwei Bändern, die auf abstrakte Weise den Textverlauf mit farblich hervorgehobenen Suchwörtern visualisieren, sowie eine Detailansicht des Textes ebenfalls mit farblichen Markierungen (John 2020, 22f.). Innerhalb des gleichen Projekts ist auch der 
+                    <hi rend="italic">Varifocal Reader</hi> entstanden, der eine ganze Reihe von abstrakten Übersichtsansichten parallel zur Textansicht bietet (Koch et al. 2014, 1727). 
+                </p>
+                <p style="text-align: left; text-align: justify;">
+                    <hi rend="italic">THeMSE</hi> stellt ebenfalls das Zusammenspiel von Close Reading und Distant Reading in den Mittelpunkt. Das Prinzip, die Visualisierung in verschiedene Abstraktionsebenen einzuteilen – sowohl im 
+                    <hi rend="italic">TextComparator</hi> als auch im 
+                    <hi rend="italic">Varifocal Reader</hi> grundlegend – wurde für 
+                    <hi rend="italic">THeMSE</hi> übernommen. 
+                    <hi rend="italic">THeMSE</hi> besteht aus drei Ebenen: einer Überblicks-, einer Explorations- und einer Detailebene. Die Überblicksebene (Abb. 1) mit Heatmap ermöglicht es, handschriftenübergreifende Textähnlichkeiten zu identifizieren. Über die Explorationsebene (Abb. 2) können Nutzende flexibel anpassbare Fingerprints für Briefe erstellen lassen, in denen bestimmte Begriffe oder Begriffskombinationen auftreten. Jeder Fingerprint ist über einen Klick direkt mit der Textansicht verknüpft (Detailansicht, Abb. 3). Die drei Ebenen werden im Folgenden anhand konkreter Anwendungsfälle vorgestellt.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Überblick: Handschriftenübergreifende Textähnlichkeit</head>
+                <quote>[...] [T]he seemingly simple question “How similar are two texts?” cannot be answered independently from asking what properties make them similar. (Bär et al. 2011, 515)</quote>
+                <p style="text-align: left; text-align: justify;">Welche Eigenschaften eines Textes bei der Ermittlung von Textähnlichkeit berücksichtigt werden, hängt stark vom jeweiligen Textvergleichsverfahren ab. Daher bietet THeMSE mehrere Verfahren zur Auswahl. Je nach Ansatz wird Textähnlichkeit zeichenbasiert als Editierdistanz (Levenshtein), worthäufigkeitsbasiert (als Bag-of-Words-Modell gewichtet per TF-IDF) oder kontextbasiert (doc2vec) definiert.</p>
+                <p style="text-align: left; text-align: justify;">Bei der Verwendung der Levenshtein-Distanz (Levenshtein 1966, 707–710) wird Textähnlichkeit anhand der übereinstimmenden Zeichen zwischen zwei Texten gemessen. Zwei Texte sind ähnlich, wenn ihre Editierdistanz möglichst gering ist, d.h. wenn möglichst wenig Zeichen ergänzt, gelöscht oder ausgetauscht werden müssen.</p>
+                <p style="text-align: left; text-align: justify;">Alternativ kann Textähnlichkeit anhand der für die Texte charakteristischen Wörter gemessen werden. Mit dem Bag-of-Words-Modell werden Texte in Vektoren verwandelt, die auf Worthäufigkeiten basieren. Per TF-IDF (Term Frequency – Inverse Document Frequency) (Salton und Buckley 1988, 513–523) werden die Häufigkeiten gewichtet, sodass Wörter, die in einem Dokument häufig vorkommen, im übrigen Korpus jedoch weniger häufig, stärker gewichtet werden. Mithilfe der Kosinusdistanz wird der Abstand zwischen den Dokumentvektoren im Raum und damit indirekt die Ähnlichkeit zwischen den Dokumenten gemessen. Zwei Texte sind somit ähnlich, wenn sie ähnliche charakteristische Wörter enthalten.</p>
+                <p style="text-align: left; text-align: justify;">Auch bei doc2vec (Le und Mikolov 2014, 1–9) wird Ähnlichkeit als Kosinusdistanz zwischen Dokumentvektoren modelliert. Der Unterschied liegt darin, dass die Vektoren mithilfe von Machine-Learning auf Basis der Wortkontexte berechnet werden. Die zugrunde liegende Annahme besteht darin, dass Wörter, die in ähnlichen Kontexten auftreten, ähnliche Bedeutungen haben (Distributional Hypothesis). Bei doc2vec sind zwei Texte somit ähnlich, wenn die Wörter in ähnlichen Kontexten auftreten.</p>
+                <p style="text-align: left; text-align: justify;">Über diese Verfahren kann pro Textpaar ein Ähnlichkeitswert ermittelt werden, dessen Skala von 0 (keine Ähnlichkeit) bis 1 (maximale Ähnlichkeit) reicht. Die Ähnlichkeitswerte bilden den Ausgangspunkt für die Überblicksebene. Sie besteht aus einer Heatmap, die von den Text Re-use Grids (Jänicke et al. 2015b, 4) inspiriert ist, diese jedoch minimalistischer umsetzt. Während bei Jänicke et al. zwischen drei verschiedenen Arten von Text Re-use differenziert wird und die Zellen des Grids in ihrer Größe angepasst werden, beschränkt sich 
+                    <hi rend="italic">THeMSE</hi> darauf, die errechneten Ähnlichkeitswerte farblich zu codieren. So lässt sich schnell anhand der Farbintensität erkennen, welche Briefe sich ähneln.
+                </p>
+                <p style="text-align: left; text-align: justify;">Beim ersten Aufruf erstellt 
+                    <hi rend="italic">THeMSE</hi> eine Heatmap mit den Standardeinstellungen (Manuskriptauswahl: R-Wr, Textform: normalisiert, Textvergleichsmethode: Levenshtein). Über das Menü können die drei Parameter angepasst werden. Jede Zelle der Heatmap steht für ein Briefpaar mit jeweils einem Brief aus der Handschrift R sowie Wr. Die Farbintensität der Zellen spiegelt die Höhe des errechneten Ähnlichkeitswerts wider. Über dieses Farbmapping können die Nutzenden schnell erkennen, welche Briefe besonders ähnlich sind. Für R und Wr zeigt sich bei Nutzung des Levenshtein-Verfahrens beispielsweise anhand der dunkelroten Diagonalen, dass es für fast jeden Brief in R einen Brief in Wr gibt, der ihm besonders ähnelt (Abb. 1).
+                </p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="6.863291666666667cm" url="Pictures/5610059bf9c95afab337a519b04676fe.png" rend="inline"/>
+                   <head>Abb. 1 – Überblicksebene mit Heatmap
+                    </head>
+                </figure>
+                
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Exploration: Handschrifteninterne Ähnlichkeit</head>
+                <p style="text-align: left; text-align: justify;">Die zweite Ebene (Explorationsebene) implementiert eine Begriffssuche in Kombination mit einer Fingerprint-Visualisierung, durch die das Vorkommen ausgewählter Begriffe und Begriffskombinationen innerhalb einer Handschrift untersucht werden kann. In den Fingerprints von Oelke et al. steht jedes Pixel für eine Texteinheit, z.B. für einen Satz. Über die Farbe des Pixels können Textmerkmale codiert werden, z.B. Satzlänge oder Lesbarkeit. 
+                    <hi rend="italic">THeMSE</hi> sieht pro Wort ein Pixel vor, wobei die farbliche Kodierung das Vorkommen der Suchwörter widerspiegelt (Abb. 2).
+                </p>
+                <p style="text-align: left; text-align: justify;">Wechselt man zur Fingerprint-Ansicht, erscheint zunächst ein Suchmenü. Neben der Auswahl des Manuskripts für die Suche, können hier Sortier- und Filtereinstellungen vorgenommen werden. Beispielsweise kann festgelegt werden, dass bei mehreren Suchbegriffen nur nach deren Kombination gesucht wird. Zudem kann bestimmt werden, ob die Fingerprints nach Anzahl der Treffer sortiert werden oder nach Anzahl der Wörter zwischen den Treffern. 
+                    <hi rend="italic">THeMSE</hi> bietet Suchmöglichkeiten für drei Szenarien: 
+                </p>
+                <p style="text-align: left; text-align: justify;">1) Wissen Forschende bereits, welche Begriffe interessant sind, können sie diese ins Feld der Begriffssuche eingeben. </p>
+                <p style="text-align: left; text-align: justify;">2) Möchten Forschende stattdessen explorativ vorgehen, können sie sich Begriffsvorschläge basierend auf einem zuvor ausgewählten Brief generieren lassen. Die Vorschläge entsprechen den Top 20 der charakteristischen Begriffe dieses Briefs, d.h. den 20 Begriffen mit den höchsten TF-IDF-Werten. </p>
+                <p style="text-align: left; text-align: justify;">3) Vielversprechende Begriffe können in einer Merkliste gespeichert werden. Gespeicherte Einträge können ebenfalls für die Suche genutzt werden. Die Suche wird jeweils über den Button “Fingerprints erstellen” gestartet. </p>
+                <p style="text-align: left; text-align: justify;">Angenommen, die Forschenden möchten in der Handschrift Wr suchen, haben jedoch noch keine konkrete Themenvorstellung und betrachten daher die Begriffsvorschläge basierend auf R26. Dabei entdecken sie, dass sich aus den Begriffen “pater”, “filius” und “spiritus” das Thema “Trinität” ergeben könnte. Sie wählen die drei Begriffe aus und starten die Suche (Kombinationssuche). Sie vermuten, dass Briefe, in denen die Begriffe in geringer Distanz zueinander auftreten, am wahrscheinlichsten “Trinität” thematisieren. Daher wählen sie die Sortierung nach “Anzahl der Wörter zwischen Treffern” aus. Nun wird für jeden Brief, der diese drei Begriffe enthält, eine Fingerprint Matrix angezeigt (Abb. 2). Die grauen Kästchen der Fingerprint Matrix stehen für ein Wort im Text. Stimmt das Wort mit einem der Suchbegriffe überein, wird es farblich hervorgehoben. </p>
+                <p style="text-align: left; text-align: justify;">Die Explorationsebene implementiert somit eine weitere Variante des Distant Reading, mit der sich relevante Briefe für das Close Reading identifizieren lassen. Anhand der Profile erkennen die Nutzenden, dass Wr21 besonders interessant ist, da alle Begriffe häufig und nah beieinander vorkommen, was darauf schließen lässt, dass es in diesem Brief tatsächlich um das gesuchte Thema “Trinität” gehen könnte.</p>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="7.418916666666667cm" url="Pictures/fe85fa90a1938714c13a0bdc31f6055c.png" rend="inline"/>
+                   <head>Abb. 2 – Fingerprints in der Explorationsansicht</head>
+                    
+                </figure>
+               
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Detail: Textanalyse im Close Reading</head>
+                <p style="text-align: left; text-align: justify;">Die Textansicht (Abb. 3) kann per Klick auf die Fingerprints erreicht werden. Längere Fingerprints werden in Abschnitte unterteilt. Durch Hovern über dem Fingerprint lässt sich erkennen, welcher Abschnitt in der Textansicht angezeigt werden wird. Die Textansicht<ref n="2" target="ftn2"/> erscheint als Pop-up, sodass mehrere Briefetexte nebeneinander betrachtet werden können. Die Suchbegriffe sind auch hier farblich hervorgehoben und somit leicht erkennbar. Durch die Detailebene mit Textansicht wird der letzte Schritt vom Distant Reading zum Close Reading vollzogen, indem die abstrakte Textrepräsentation der Fingerprints in eine konkrete Textrepräsentation aufgelöst wird. In unserem Beispiel können die Nutzenden nun lesen, ob es sich wirklich um Texte zum Thema Trinität handelt, und mehrere Briefe zu einem Thema gegenüberstellen und vergleichen.
+                </p>
+                <figure>
+                    <graphic n="1003" width="8.604130555555555cm" height="9.651591666666667cm" url="Pictures/ca85a625477bd8a396db4e01098be9fe.png" rend="inline"/>
+                    <head>Abb. 3 – Pop-up Textansicht</head>
+             
+                </figure>
+                
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Innovation: Potenziale des visuellen Analysewerkzeugs</head>
+                <p style="text-align: left; text-align: justify;">
+                    <hi rend="italic">THeMSE</hi> ist darauf ausgelegt, den hermeneutischen Arbeitsprozess der Nutzenden zu unterstützen und ein produktives Zusammenspiel von qualitativen und quantitativen Herangehensweisen zu ermöglichen (Abb. 4). Seine Modellierung orientiert sich daher am hermeneutischen Zirkel (Schleiermacher 1995; Gadamer 1964) als einem Grundprinzip geisteswissenschaftlichen Arbeitens.
+                </p>
+                <figure>
+                    <graphic n="1004" width="13.936869444444444cm" height="7.764308333333333cm" url="Pictures/43245d23accaeece514848d86f0abafb.png" rend="inline"/>
+                   <head>Abb. 4 – Hermeneutischer Arbeitsprozess mit THeMSE</head>
+         
+                </figure>
+                
+                <p style="text-align: left; text-align: justify;">Die Nutzenden bringen ihre Vorannahmen mit, z.B. darüber, welche Briefe ähnlich sind oder welche Themen vorkommen könnten. Zusätzlich enthält das Werkzeug selbst Vorannahmen in Form der Ähnlichkeitswerte sowie der charakteristischen Begriffe. Unter diesen Voraussetzungen analysieren die Nutzenden die Texte im Distant und Close Reading und gewinnen dadurch ein erweitertes Textverständnis. Ihre Erkenntnisse können sie wiederum ins Werkzeug integrieren, indem sie gefundene Themen in Form von Begriffskombinationen abspeichern. Die nächste Analyse baut dann auf dem neuen Wissensstand auf und der geisteswissenschaftliche Erkenntnisprozess wird – unterstützt durch das digitale Werkzeug – weiter fortgesetzt.</p>
+                <p style="text-align: left; text-align: justify;">Darüber hinaus berücksichtigt 
+                    <hi rend="italic">THeMSE</hi>, dass Texte häufig in Sammlungen organisiert sind. Integrierte Ansätze wie der 
+                    <hi rend="italic">Varifocal Reader</hi> und 
+                    <hi rend="italic">TextComparator</hi> stellen sowohl Textansichten für eine Analyse auf Wortebene als auch abstrakte Darstellungen für eine Analyse auf Textebene bereit. Es fehlt jedoch ein Vergleich auf Sammlungsebene. Die Überblicksansicht in 
+                    <hi rend="italic">THeMSE</hi> hilft zu entscheiden, welche Texte aus verschiedenen Handschriften einen Vergleich lohnen – ein Feature, das bei anderen Ansätzen fehlt. 
+                </p>
+                <p style="text-align: left; text-align: justify;">Zuletzt ist 
+                    <hi rend="italic">THeMSE</hi> in Bezug auf die Textvergleichsmethoden sehr flexibel: Es wurden drei gängige Methoden ausgewählt, die sehr verschieden arbeiten und somit unterschiedliche Erkenntnisse fördern können. Die Verfahren könnten auch leicht durch andere Verfahren ersetzt oder ergänzt werden, z. B. durch Transformer-Modelle oder Large Language Models.
+                </p>
+                <p style="text-align: left; text-align: justify;">
+                    <hi rend="italic">THeMSE</hi> ist somit ein Textanalysewerkzeug, das ausgehend von einem flexibel definierbaren Begriff von Textähnlichkeit Forschenden die Möglichkeit gibt, sowohl handschriftenintern als auch -übergreifend Briefe auf verschiedenen Abstraktionsebenen zu visualisieren und analysieren. Die Verbindung aus hermeneutischem Arbeiten und systematischer datenbasierter Analyse fördert einen erkenntnisorientierten Forschungsprozess, der relevante Merkmale zielgerichtet identifiziert und zugleich Raum zur Exploration lässt.
+                </p>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                         Beschreibung des Hildegard-Projekts: 
+                            <ref target="https://www.adwmainz.de/projekte/das-buch-der-briefe-der-hildegard-von-bingen-genese-struktur-komposition/projektbeschreibung.html">https://www.adwmainz.de/projekte/das-buch-der-briefe-der-hildegard-von-bingen-genese-struktur-komposition/projektbeschreibung.html</ref>.
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                         Im Prototyp wird in der Textansicht die lemmatisierte Textfassung angezeigt. Perspektivisch wird hier jedoch der Originaltext erscheinen.
+                    </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl style="text-align: left; "><hi rend="bold">Bär, Daniel, Torsten Zesch und Iryna Gurevych.</hi> 2011. „A Reflective View on Text Similarity“. In Proceedings of Recent Advances in Natural Language Processing, 515–520. Association for Computational Linguistics. 
+                        <ref target="https://aclanthology.org/R11-1071">https://aclanthology.org/R11-1071</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Bräckel, Oliver, Hannes Kahl, Friedrich Meins und Charlotte Schubert.</hi> 2019. „eComparatio – a Software Tool for Automatic Text Comparison“. In Digital Classical Philology: Ancient Greek and Latin in the Digital Revolution, 221–238. Berlin: De Gruyter.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Burdorf, Dieter, Christoph Fasbender und Burkhard Moennighoff, Hrsg.</hi> 2007. „Close Reading”. In Metzler Lexikon Literatur: Begriffe und Definitionen, 126. Stuttgart: J.B. Metzler. 
+                        <ref target="https://doi.org/10.1007/978-3-476-05000-7">https://doi.org/10.1007/978-3-476-05000-7</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Coffee, Neil, Jean-Pierre Koenig, Shakthi Poornima, Christopher W. Forstall, Roelant Ossewaarde und Sarah L. Jacobson.</hi> 2013. „The Tesserae Project: Intertextual Analysis of Latin Poetry“. Literary and Linguistic Computing 28 (2): 221–228. 
+                        <ref target="https://doi.org/10.1093/llc/fqs033">https://doi.org/10.1093/llc/fqs033</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Gadamer, Hans-Georg.</hi> 1965. Wahrheit und Methode – Grundzüge einer philosophischen Hermeneutik. 2. Aufl. Tübingen: Mohr Siebeck.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Haentjens Dekker, Ronald, Dirk van Hulle, Gregor Middell, Vincent Neyt und Joris van Zundert.</hi> 2015. „Computer-Supported Collation of Modern Manuscripts: CollateX and the Beckett Digital Manuscript Project“. Digital Scholarship in the Humanities 30 (3): 452–470. 
+                        <ref target="https://doi.org/10.1093/llc/fqu007">https://doi.org/10.1093/llc/fqu007</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Jänicke, Stefan, Annette Geßner, Greta Franzini, Melissa Terras, Simon Mahony und Gerik Scheuermann.</hi> 2015a. „TRAViz: A Visualization for Variant Graphs“. Digital Scholarship in the Humanities 30 (suppl_1): i83–99. 
+                        <ref target="https://doi.org/10.1093/llc/fqv049">https://doi.org/10.1093/llc/fqv049</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Jänicke, Stefan, Thomas Efer, Marco Büchler und Gerik Scheuermann.</hi> 2015b. „Designing Close and Distant Reading Visualizations for Text Re-Use“. In Computer Vision, Imaging and Computer Graphics – Theory and Applications, herausgegeben von Sebastiano Battiato, Sabine Coquillart, Julien Pettré, Robert S. Laramee, Andreas Kerren, und José Braz, 550:153–171. Communications in Computer and Information Science. Cham: Springer International Publishing. 
+                        <ref target="https://doi.org/10.1007/978-3-319-25117-2_10">https://doi.org/10.1007/978-3-319-25117-2_10</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">John, Markus.</hi> 2020. „Interaktive visuelle Analysetechniken für die Exploration narrativer Texte“. Diss. Stuttgart: Universität Stuttgart.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Keim, Daniel A. und Daniela Oelke.</hi> 2007. „Literature Fingerprinting. A New Method for Visual Literary Analysis“. In 2007 IEEE Symposium on Visual Analytics Science and Technology, 115–122. IEEE. 
+                        <ref target="https://doi.org/10.1109/VAST.2007.4389004">https://doi.org/10.1109/VAST.2007.4389004</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Koch, Steffen, Markus John, Michael Worner, Andreas Müller und Thomas Ertl.</hi> 2014. „VarifocalReader — In-Depth Visual Analysis of Large Text Documents“. IEEE Transactions on Visualization and Computer Graphics 20 (12): 1723–1732. 
+                        <ref target="https://doi.org/10.1109/TVCG.2014.2346677">https://doi.org/10.1109/TVCG.2014.2346677</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Le, Quoc und Tomas Mikolov.</hi> 2014. „Distributed Representations of Sentences and Documents“. In Proceedings of the 31st International Conference on Machine Learning, 32: 1–9. JMLR. 
+                        <ref target="https://doi.org/10.48550/arXiv.1405.4053">https://doi.org/10.48550/arXiv.1405.4053</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Levenshtein, Vladimir.</hi> 1966. „Binary Codes Capable of Correcting Deletions, Insertions and Reversals“. In Soviet Physics Doklady 10 (8): 707–710. 
+                        <ref target="https://www.bibsonomy.org/bibtex/220546d80ce76f58c6ef6ece9dd5f5056/jimregan">https://www.bibsonomy.org/bibtex/220546d80ce76f58c6ef6ece9dd5f5056/jimregan</ref>
+                        <hi rend="color(2E3338)">.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Moretti, Franco.</hi> 2000. „Conjectures on World Literature“. New Left Review, Nr. 1: 54–68.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Salton, Gerard und Christopher Buckley.</hi> 1988. „Term-Weighting Approaches in Automatic Text Retrieval“. Information Processing &amp; Management 24 (5): 513–523. 
+                        <ref target="https://doi.org/10.1016/0306-4573(88)90021-0">https://doi.org/10.1016/0306-4573(88)90021-0</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Schleiermacher, Friedrich.</hi> 1995. Hermeneutik und Kritik. Herausgegeben von Manfred Frank. 6. Aufl. Suhrkamp Taschenbuch Wissenschaft 211. Frankfurt am Main: Suhrkamp.</bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Schmidt, Desmond und Robert Colomb.</hi> 2009. „A Data Structure for Representing Multi-Version Texts Online“. International Journal of Human-Computer Studies 67 (6): 497–514. 
+                        <ref target="https://doi.org/10.1016/j.ijhcs.2009.02.001">https://doi.org/10.1016/j.ijhcs.2009.02.001</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

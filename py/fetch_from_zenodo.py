@@ -6,13 +6,12 @@ import zipfile
 import glob
 import shutil
 
-YEAR = "2025"
+YEAR = "2024"
 F_NAME = "abstract-{}-{}.xml"
 OAI_EP = "https://zenodo.org/oai2d"
 OAI_SET = "user-dhd"
 OAI_MD = "oai_dc"
-FROM = "2025-02-02"
-filters = {"metadataPrefix": OAI_MD, "from": FROM, "set": OAI_SET}
+filters = {"metadataPrefix": OAI_MD, "set": OAI_SET}
 DL_URL = "https://zenodo.org/api/records/{}/files-archive"
 zip_dir = "zip"
 os.makedirs("zip", exist_ok=True)

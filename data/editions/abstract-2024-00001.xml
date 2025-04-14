@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="SCHNEIDER_Stefanie_My_Body_is_a_Cage__Human_Pose_Estimation_" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>My Body is a Cage: Human Pose Estimation und Retrieval in kunsthistorischen Inventaren</title>
+                <author>
+                    <persName>
+                        <surname>Schneider</surname>
+                        <forename>Stefanie</forename>
+                    </persName>
+                    <affiliation>Ludwig-Maximilians-Universität München, Deutschland</affiliation>
+                    <email>stefanie.schneider@itg.uni-muenchen.de</email>
+                    <idno type="ORCID">0000-0003-4915-6949</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-06-13T14:32:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Digital Humanities Passau</publisher>
+                <address>
+                    <addrLine>Universität Passau</addrLine>
+                    <addrLine>Innstraße 41</addrLine>
+                    <addrLine>D-94032 Passau</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Vortrag</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Human Pose Estimation</term>
+                    <term>One-shot Learning</term>
+                    <term>Semi-supervised Learning</term>
+                    <term>Domain-adaptation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Entdeckung</term>
+                    <term>Bilderfassung</term>
+                    <term>Annotieren</term>
+                    <term>Bilder</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; text-align: justify;">Theoretisch fundiert ist die Gestik als Ausdruck nonverbaler Kommunikation seit dem 17. Jahrhundert (Knowlson, 1965). Ihre Relevanz für die bildende Kunst wurde jedoch nur vereinzelt betont (Barasch, 1987), etwa als die Antike rezipierende 
+                <hi rend="italic">Pathosformel</hi> (Warburg, 1998). Diese Punktualität mag nicht nur auf die große Menge an traditionell manuell zu verarbeitenden Daten zurückzuführen sein, sondern ebenso auf das Fehlen eines die Gestik ‚kodifizierenden‘ Vokabulars. Zwar hat sich 1912 der finnische Kunsthistoriker Johan Jakob Tikkanen an einer Typologie kunsthistorischer (Bein-)Stellungsmotive versucht, die er mit potenziellen Entwicklungsketten versah (Tikkanen, 1912). Streng ökonomisch motiviert sind darüber hinaus jedoch allenfalls Studien zur Handgestik, die einige wenige Stereotypen differenzieren (u. a. Bulwer, 1644; Demisch, 1984). Um diesem Desiderat zu begegnen, konzentrieren wir uns auf die quantitativ-fundierte Exploration von Gesten- und Positurtypen in der bildenden Kunst. Die Einreichung knüpft an eigene Vorarbeiten an und erweitert diese (Springstein et al., 2022; Schneider und Vollmer, 2023). Unter Positur (engl. 
+                <hi rend="italic">posture</hi>) wird gewöhnlich eine statische, „bewusst eingenommene 
+                <hi rend="italic">Stellung</hi>“ des Körpers verstanden,<ref n="1" target="ftn1"/> im Gegensatz zur Geste (engl. 
+                <hi rend="italic">gesture</hi>), die als dynamische, „bewusst eingesetzte 
+                <hi rend="italic">Bewegung</hi>“ des Körpers definiert wird;<ref n="2" target="ftn2"/> auf diese Unterscheidung greifen auch wir, soweit möglich, im Folgenden zurück. Wir verweisen zudem auf Mulder (1996).
+            </p>
+            <p style="text-align: left; text-align: justify;">Unser Ansatz fußt auf zwei Modulen: Zunächst werden ‚Gelenkpunkte‘ von menschlichen Figuren detektiert (
+                <hi rend="italic">Human Pose Estimation; HPE</hi>). Diese werden in ‚Deskriptoren‘ überführt und aufgrund ihrer Nähe zueinander typisiert (
+                <hi rend="italic">Human Pose Retrieval; HPR</hi>). Ein webbasiertes 
+                <hi rend="italic">Retrieval</hi> im zweidimensionalen Raum rundet die Pipeline ab. Es gibt zwar Ansätze zur 
+                <hi rend="italic">HPE</hi> in kunsthistorischen Inventaren, diese fokussieren jedoch auf restriktive Datenkorpora: Impett und Süsstrunk (2016) analysieren Tafeln aus Warburgs Bilderatlas 
+                <hi rend="italic">Mnemosyne</hi>; Madhu et al. (2023) beziehen sich auf griechische Vasenmalerei.
+            </p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Semi-überwachte Human Pose Estimation</head>
+                <figure>
+                    <graphic n="1001" width="15.989652777777778cm" height="8.466666666666667cm" url="Pictures/5d43dac223cc7f337d97f12cb0349f78.png" rend="inline"/>
+                    <head>Abb. 1: Unser Ansatz zur 
+                        <hi rend="italic">HPE</hi> ist zweistufig: Zunächst werden menschliche Figuren durch 
+                        <hi rend="italic">Bounding Boxes</hi> lokalisiert und diese Begrenzungsrahmen dann auf 
+                        <hi rend="italic">Keypoints</hi> analysiert (Springstein et al., 2022).
+                    </head>
+                </figure>
+  
+                <p style="text-align: left; text-align: justify;">Der hier vorgeschlagene Ansatz zur 
+                    <hi rend="italic">HPE</hi> gründet auf der bewährten 
+                    <hi rend="italic">Top-Down</hi>-Strategie (Li et al., 2021; Wang, Sun et al., 2021): In einem Bild werden zunächst menschliche Figuren durch 
+                    <hi rend="italic">Bounding Boxes</hi> detektiert. Diese Begrenzungsrahmen werden dann auf 17 
+                    <hi rend="italic">Keypoints</hi> untersucht, die Gelenkpunkte des menschlichen Körpers approximieren. Auf diese Weise soll eine maschinell effizient handhabbare Abstraktion des menschlichen Skeletts, und damit der figuralen Gestik oder Positur, erzeugt werden. Abb. 1 zeigt die Gesamtarchitektur des Ansatzes.
+                </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Methodik</head>
+                    <p style="text-align: left; text-align: justify;">Die erste Phase basiert auf dem 
+                        <hi rend="italic">Detection-Transformer</hi>-Framework (
+                        <hi rend="italic">DETR</hi>; Carion et al., 2020). Ein 
+                        <hi rend="italic">Convolutional-Neural-Network</hi>-Backbone berechnet Merkmalsdeskriptoren, die durch ein 
+                        <hi rend="italic">Positional Encoding</hi> angereichert werden. Dieser Input wird umgewandelt in eine Sequenz visueller Merkmale und in einen 
+                        <hi rend="italic">Transformer</hi>-Encoder gespeist; der Output des Encoders wird in den 
+                        <hi rend="italic">Cross-Attention</hi>-Modulen des 
+                        <hi rend="italic">Transformer</hi>-Decoders verwendet. Nach der Verarbeitung durch den Decoder wird die Ausgabe in zwei 
+                        <hi rend="italic">Multilayer-Perceptron</hi>-Köpfe geleitet: Der erste Kopf fungiert als Klassifikator, der zwischen Figur und Bildhintergrund unterscheidet; der zweite führt eine Regression auf die Koordinaten der jeweiligen 
+                        <hi rend="italic">Bounding Box</hi> durch. Das Vorgehen in der zweiten Phase ist äquivalent, nur dass hier der Kopf für jede zuvor identifizierte 
+                        <hi rend="italic">Bounding Box</hi> die Koordinaten der 17 
+                        <hi rend="italic">Keypoints</hi> vorhersagt.
+                    </p>
+                    <p style="text-align: left; text-align: justify;">Um das jeweils verfügbare Trainingsmaterial in beiden Phasen zu erweitern, integrieren wir einen Ansatz des 
+                        <hi rend="italic">semi-überwachten Lernens (Semi-supervised Learning; SSL)</hi>, der auf dem von Xu et al. (2021) motivierten Lehrer-Schüler-Paradigma aufsetzt. In diesem übernimmt der Lehrer, dessen Gewichte aus dem 
+                        <hi rend="italic">Exponential Moving Average</hi> des Schülers abgeleitet werden (Tarvainen et al., 2017), die Rolle eines 
+                        <hi rend="italic">Pseudo-Label</hi>-Generators: Er generiert 
+                        <hi rend="italic">Bounding-Box-</hi> und 
+                        <hi rend="italic">Keypoint</hi>-Annotationen für unbeschriftete Daten.
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Daten</head>
+                    <figure>
+                        <graphic n="1002" width="16.002cm" height="8.995833333333334cm" url="Pictures/c9d9b2d7d493018e7be83d471e65d233.png" rend="inline"/>
+                        <head>Abb. 2: Es lassen sich 
+                            <hi rend="italic">Bounding-Box</hi>- und 
+                            <hi rend="italic">Keypoint</hi>-Annotationen unterscheiden. Wie in Andrea del Sartos 
+                            <hi rend="italic">Pietà mit Heiligen</hi> (1523–24) gezeigt, werden menschliche Figuren zunächst von 
+                            <hi rend="italic">Bounding Boxes</hi> umschlossen. Dann werden bis zu 17 
+                            <hi rend="italic">Keypoints</hi> zugewiesen, die in der Detailansicht durch grüne Kreise gekennzeichnet sind.
+                        </head>
+                    </figure>
+                   
+                    <p style="text-align: left; text-align: justify;">Für das Training der Modelle werden fünf Datensätze verwendet; vier sind beschriftet, drei mit 
+                        <hi rend="italic">Keypoint</hi>-Annotationen: Als realweltliche Datengrundlage dient 
+                        <hi rend="italic">COCO 2017</hi> (123.287 Bilder; Lin et al., 2014). Um die Effizienz von 
+                        <hi rend="italic">Style-Transfer-(ST)-</hi>Ansätzen zu evaluieren, generieren wir zusätzlich eine stilisierte Version, die dem jeweiligen Modell anteilig zugeführt wird (Chen et al., 2021). Kunsthistorisches Material fließt zum einen über den 
+                        <hi rend="italic">People-Art</hi>-Datensatz ein, der 
+                        <hi rend="italic">Bounding Boxes</hi> von menschlichen Figuren annotiert (4.851 Bilder; Westlake et al., 2016). Zum anderen wird der von uns in Schneider und Vollmer (2023) eingeführte 
+                        <hi rend="italic">PoPArt</hi>-Datensatz integriert, der ebenfalls 
+                        <hi rend="italic">Keypoints</hi> auf 2.454 Bildern enthält. Alle Datensätze folgen dem Microsoft 
+                        <hi rend="italic">COCO</hi>-Format, in dem bis zu 17 
+                        <hi rend="italic">Keypoints</hi> pro Figur zusätzlich zu 
+                        <hi rend="italic">Bounding Boxes</hi> gespeichert werden (Lin et al., 2014). Es gibt fünf 
+                        <hi rend="italic">Keypoints</hi> für den Kopf, die Nase, Augen und Ohren repräsentieren; sechs für den Oberkörper, die Handgelenke, Ellbogen und Schultern repräsentieren; und sechs für den Unterkörper, die Knöchel, Knie und Hüften repräsentieren (Abb. 2). Unbeschriftete Daten stammen aus 
+                        <hi rend="italic">ART500K</hi> (318.869 Bilder; Mao et al., 2017).
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Evaluation</head>
+                    
+                    <figure>
+                        <head>Tab. 1: Ergebnisse der ersten Phase der 
+                            <hi rend="italic">HPE</hi>, in der 
+                            <hi rend="italic">Bounding Boxes</hi> menschlicher Figuren detektiert werden.
+                        </head>
+                        <graphic n="1003" width="15.959666666666667cm" height="3.6618333333333335cm" url="Pictures/9797f2d8c934667e9e5df27fb47e5948.png" rend="inline"/>
+
+                    </figure>
+                   
+                    <figure>
+                        <head>Tab. 2: Ergebnisse der zweiten Phase der 
+                            <hi rend="italic">HPE</hi>, in der für jede identifizierte 
+                            <hi rend="italic">Bounding Box</hi> die Koordinaten von 17 
+                            <hi rend="italic">Keypoints</hi> vorhergesagt werden.
+                        </head>
+                        <graphic n="1004" width="15.959666666666667cm" height="3.6618333333333335cm" url="Pictures/b6f41b7bc1295bcaf6a49ff236c2f001.png" rend="inline"/>
+
+                    </figure>
+                    <p style="text-align: left; text-align: justify;">Für die verwendeten Modellparameter wird auf Springstein et al. (2022) verwiesen. Wie aus Tab. 1 ersichtlich, verbessert 
+                        <hi rend="italic">SSL</hi> die 
+                        <hi rend="italic">Bounding-Box</hi>-Erkennung wesentlich sowohl in Bezug auf 
+                        <hi rend="italic">Average Precision (AP)</hi> als auch 
+                        <hi rend="italic">Average Recall (AR)</hi>. Mit 
+                        <hi style="font-family:Cambria Math">AP</hi>
+                        <hi rend="subscript" style="font-family:Cambria Math">50</hi>
+                        <hi style="font-family:Cambria Math" xml:space="preserve"> = 0,738</hi> ist die Leistung unseres Ansatzes für 
+                        <hi rend="italic">People-Art</hi> zudem deutlich höher als die von Kadish et al. (2021) mit 
+                        <hi style="font-family:Cambria Math">AP</hi>
+                        <hi rend="subscript" style="font-family:Cambria Math">50</hi>
+                        <hi style="font-family:Cambria Math">= 0,68</hi> und als die von Gonthier et al. (2022) mit 
+                        <hi style="font-family:Cambria Math">AP</hi>
+                        <hi rend="subscript" style="font-family:Cambria Math">50</hi>
+                        <hi style="font-family:Cambria Math">= 0,583</hi>. Noch ausgeprägter ist der Unterschied in der 
+                        <hi rend="italic">Keypoint</hi>-Schätzung (Tab. 2).<ref n="3" target="ftn3"/> Ebenso zeigt sich, dass es zwar nicht notwendig ist, große Mengen an domänenspezifischem Material zu annotieren, aber kleinere Mengen in den Trainingsprozess einbezogen werden sollten, anstatt sich – wie in Madhu et al. (2023) – auf synthetisch generierte Bilder zu stützen.
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Blickwinkel-invariantes 
+                    <hi rend="italic">Human Pose Retrieval</hi>
+                </head>
+                <figure>
+                    <graphic n="1005" width="16.086666666666666cm" height="7.369527777777778cm" url="Pictures/f3d7216644d0d992a2f5ed54c835c6dc.png" rend="inline"/>
+                    <head>Abb. 3: Der 
+                        <hi rend="italic">HPR</hi>-Ansatz besteht aus drei Schritten: Zunächst wird eine 
+                        <hi rend="italic">Query</hi> gefiltert und in ein 320-dimensionales 
+                        <hi rend="italic">Embedding</hi> überführt (Sun et al., 2020). Dieses 
+                        <hi rend="italic">Embedding</hi> wird dann mit Hilfe einer 
+                        <hi rend="italic">Support</hi>-Menge klassifiziert.
+                    </head>
+                </figure>
+               
+                <p style="text-align: left; text-align: justify;">Unser dreistufiger 
+                    <hi rend="italic">HPR</hi>-Ansatz baut direkt auf der 
+                    <hi rend="italic">HPE</hi> auf: Die 
+                    <hi rend="italic">Keypoints</hi> werden hier in semantisch-plausible Gestendeskriptoren übersetzt und mit Hilfe einer kleinen 
+                    <hi rend="italic">Support</hi>-Menge typisiert. Abb. 3 stellt die Gesamtarchitektur dar.
+                </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Methodik</head>
+                    <p style="text-align: left; text-align: justify;">Ausgehend von der 
+                        <hi rend="italic">HPE</hi> des Ganzkörperskeletts werden Ober- und Unterkörper zusätzlich getrennt abgelegt; diese ‚Konfigurationen‘ ergeben die 
+                        <hi rend="italic">Query</hi>
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">q</mi>
+                            </mml:math>
+                        </formula>. In einem 
+                        <hi rend="italic">Pre-Processing</hi>-Schritt werden zunächst Konfigurationen mit hoher Unsicherheit entfernt, d. h. solche, die weniger als 
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">τ</mi>
+                                <mo xmlns="http://www.w3.org/1998/Math/MathML">=</mo>
+                                <mn xmlns="http://www.w3.org/1998/Math/MathML">0,5</mn>
+                            </mml:math>
+                        </formula> der jeweils möglichen 
+                        <hi rend="italic">Keypoints</hi> haben. Alle verbleibenden, hinreichend sicheren Konfigurationen werden in ein 320-dimensionales 
+                        <hi rend="italic">Embedding</hi> überführt, das als Gestendeskriptor fungiert. Bisherige Verfahren integrieren dazu entweder Informationen über die absolute Position der 
+                        <hi rend="italic">Keypoints</hi> (So und Baciu, 2005) oder über winkelbasierte Maße zwischen ihnen (Chen et al., 2011). In beiden Fällen sind die erzeugten 
+                        <hi rend="italic">Embeddings</hi> nicht Blickwinkel-invariant: Eine kauernde Figur würde, wenn sie einmal von vorne und einmal von hinten dargestellt wird, nicht auf den gleichen Punkt im 
+                        <hi rend="italic">Embedding Space</hi> abgebildet. Um diesen für das 
+                        <hi rend="italic">HPR</hi> gravierenden Mangel abzuschwächen, adaptieren wir die 
+                        <hi rend="italic">Pr-VIPE</hi>-Architektur von Sun et al. (2020), in der probabilistische 
+                        <hi rend="italic">Embeddings</hi> durch Blickwinkel-augmentierte 
+                        <hi rend="italic">Keypoints</hi> im zweidimensionalen Raum gelernt werden. Der Ansatz zielt darauf ab, dass das 
+                        <hi rend="italic">Embedding</hi> von zweidimensionalen Gesten in einem hochdimensionalen Raum den Abstand zwischen dreidimensionalen Gesten im euklidischen Raum widerspiegelt. Mit anderen Worten: Wenn zwei dreidimensionale Gesten einander ähnlich sind, sollten ihre zweidimensionalen Pendants im 
+                        <hi rend="italic">Embedding Space</hi> nahe beieinander liegen. Die Ähnlichkeit dreidimensionaler Gesten beruht auf ihrer visuellen Ähnlichkeit unter Berücksichtigung der menschlichen Wahrnehmung; zwei Gesten können mathematisch unterschiedlich sein, aber je nach Betrachtungswinkel visuell ähnlich erscheinen.
+                    </p>
+                    <p style="text-align: left; text-align: justify;">Jedes 
+                        <hi rend="italic">Embedding</hi> wird anschließend klassifiziert. Da bislang kein Datensatz vorliegt, der kunsthistorisch bedeutsame Gesten benennt und illustriert, konstruieren wir eine Taxonomie auf Basis von 
+                        <hi rend="italic">Iconclass</hi> (van de Waal, 1973–1985). Sie besteht aus vier Notationsgruppen: „postures of the human figure“ (
+                        <hi style="font-family:Courier New">31A23</hi>), „postures and gestures of arms and hands“ (
+                        <hi style="font-family:Courier New">31A25</hi>), „postures of the legs“ (
+                        <hi style="font-family:Courier New">31A26</hi>) und „movements of the human body“ (
+                        <hi style="font-family:Courier New">31A27</hi>). Notationen unter 
+                        <hi style="font-family:Courier New">31A23</hi> und 
+                        <hi style="font-family:Courier New">31A27</hi> dienen der Klassifizierung des Ganzkörperskeletts, 
+                        <hi style="font-family:Courier New">31A25</hi> des Ober- und 
+                        <hi style="font-family:Courier New">31A26</hi> des Unterkörpers. Die Notationen für den Oberkörper (
+                        <hi style="font-family:Courier New">31A25</hi>) und den Unterkörper (
+                        <hi style="font-family:Courier New">31A26</hi>) sind mit 22 bzw. 19 annähernd gleich häufig. Bei den Ganzkörpernotationen gibt es jedoch eine Diskrepanz: Notation 
+                        <hi style="font-family:Courier New">31A23</hi> hat 19 und Notation 
+                        <hi style="font-family:Courier New">31A27</hi> nur 8 verwendbare Unternotationen, sodass sich insgesamt 27 Unternotationen ergeben. Unser Vorgehen orientiert sich am Prinzip des 
+                        <hi rend="italic">One-shot-Lernens (OSL)</hi>: Für die insgesamt 69 Subnotationen identifizieren wir jeweils ein repräsentatives Bildbeispiel einer Figur in 
+                        <hi rend="italic">Wikidata</hi>,<ref n="4" target="ftn4"/> erstellen ihre 
+                        <hi rend="italic">Ground-Truth</hi>-Annotation und generieren ihr 
+                        <hi rend="italic">Embedding</hi>. D. h. anstatt wie in typischen 
+                        <hi rend="italic">OSL</hi>-Ansätzen einen 
+                        <hi rend="italic">One-Shot</hi>-Klassifikator separat zu trainieren (u. a. Jadon et al., 2020), nutzen wir die 
+                        <hi rend="italic">Pr-VIPE-Embeddings</hi> nach und berechnen die Abstände zwischen den 
+                        <hi rend="italic">Embeddings</hi>. Diese 
+                        <hi rend="italic">Support</hi>-Menge 
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">S</mi>
+                            </mml:math>
+                        </formula> wird verwendet zur Typisierung der Konfigurationen; die Kosinusdistanz 
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">d</mi>
+                            </mml:math>
+                        </formula> misst den Abstand zwischen dem jeweiligen 
+                        <hi rend="italic">Query-Embedding</hi> und den 
+                        <hi rend="italic">Embeddings</hi> der 
+                        <hi rend="italic">Support</hi>-Menge. Dies ermöglicht eine feingranulare Erschließung der Gestik oder Positur, auch wenn Teile einzelner Konfigurationen nur unzureichend geschätzt werden konnten. Gleichzeitig wird keine feste, semantisch zweifelhafte Kategorisierung in Gruppen vorgegeben, wie dies bei agglomerativen Clusterverfahren der Fall ist (Impett und Süsstrunk, 2016).
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Daten</head>
+                    <p style="text-align: left; text-align: justify;">Wir extrahieren 644.155 kunsthistorische Objekte durch Abfragen des 
+                        <hi rend="italic">Wikidata-SPARQL-</hi>Endpunkts.<ref n="5" target="ftn5"/> Um 
+                        <hi rend="italic">Query Timeouts</hi> zu vermeiden, gehen wir iterativ vor: Zuerst werden 171 ‚Klassenentitäten‘ extrahiert, die direkte Unterklassen der Knoten „visual artwork“ (
+                        <hi style="font-family:Courier New">wdt: Q4502142</hi> ) oder „artwork series“ (
+                        <hi style="font-family:Courier New">wdt:Q15709879</hi>) sind. Für jede Klassenentität werden dann ‚Objektentitäten‘ abgefragt, denen eine zweidimensionale Reproduktion (
+                        <hi style="font-family:Courier New">wdt:P18</hi>) zugeordnet ist und die entweder Instanzen dieser Klassenentität oder Unterklassen davon sind. Zwar ist nicht auszuschließen, dass auch 
+                        <hi rend="italic">Wikidata</hi> mehrere Knoten für dasselbe Objekt führt und somit mehr als eine Reproduktion nach demselben Original zurückliefert. Unseres Erachtens ist der Anteil jedoch geringer als bei Aggregatdatenbanken wie Prometheus.<ref n="6" target="ftn6"/>
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Evaluation</head>
+                    <p style="text-align: left; text-align: justify;">Mangels eines annotierten Testdatensatzes ist die Evaluation des 
+                        <hi rend="italic">HPR</hi> im Gegensatz zur 
+                        <hi rend="italic">HPE</hi> rein qualitativer Natur. Um dennoch eine möglichst verlässliche Aussage über die Güte des verwendeten Ansatzes treffen zu können, untersuchen wir den erzeugten 
+                        <hi rend="italic">Embedding Space</hi> auf Aggregat- und Individualebene. Die 644.155 Objekte aus 
+                        <hi rend="italic">Wikidata</hi> durchlaufen die gesamte Pipeline von 
+                        <hi rend="italic">HPE</hi> und 
+                        <hi rend="italic">HPR</hi>; 385.481 werden mit 2.355.592 Figuren als potenziell relevant erkannt.
+                    </p>
+                    <div type="div3" rend="DH-Heading3">
+                        <head>Aggregatebene</head>
+                        <figure>
+                            <graphic n="1006" width="15.980833333333333cm" height="12.091458333333334cm" url="Pictures/3970fe8a8f6d66f67104e3a3828251e5.png" rend="inline"/>
+                            <head>Abb. 4: Im dimensionsreduzierten 
+                                <hi rend="italic">Embedding Space</hi> fallen zwei marginal abgetrennte Gruppen auf, die insbesondere Konfigurationen des Ober- und Unterkörpers referenzieren.
+                            </head>
+                        </figure>
+                       
+                        <p style="text-align: left; text-align: justify;">Die Auswertung des 
+                            <hi rend="italic">Embedding Space</hi> erfolgt durch eine Reduktion der 320 Dimensionen des Ganzkörperskeletts auf zwei. Gängige Methoden zur Dimensionsreduktion wie 
+                            <hi rend="italic">t-SNE</hi> (van der Maaten und Hinton, 2008) oder 
+                            <hi rend="italic">UMAP</hi> (McInnes et al., 2018) fokussieren entweder auf die Erhaltung lokaler oder globaler Strukturen, so dass häufig falsche 
+                            <hi rend="italic">Cluster</hi> projiziert werden, die im hochdimensionalen Raum nicht existieren. Wir verwenden daher 
+                            <hi rend="italic">Pairwise Controlled Manifold Approximation Projection</hi> (
+                            <hi rend="italic">PaCMAP</hi>; Wang, Huang et al., 2021). Abb. 4 zeigt den so reduzierten 
+                            <hi rend="italic">Embedding Space</hi>, den wir auf Basis von 
+                            <hi rend="italic">PixPlot</hi> auch interaktiv explorierbar machen.<ref n="7" target="ftn7"/> Es sind zwei annähernd clusterartige Strukturen erkennbar, die vor allem Konfigurationen des Ober- und Unterkörpers entsprechen, und damit spezifischeren Arm- und Beinhaltungen, die mit Hilfe der 
+                            <hi rend="italic">Iconclass</hi>-annotierten 
+                            <hi rend="italic">Support</hi>-Menge typisiert werden konnten. Deutlich wird jedoch, dass es sich bei der Typisierung lediglich um eine Hilfskonstruktion handelt, die die Interaktion im 
+                            <hi rend="italic">Embedding Space</hi> erleichtern und mögliche Clusterbildungen schneller identifizieren soll. Insbesondere Haltungen mit stärker gebeugten Gliedmaßen – hockende, kauernde oder sitzende Figuren – bilden eine dritte Gruppe, die semantisch mehrdeutig zu erfassen ist. Falsche Schätzungen des Ganzkörperskeletts finden sich am häufigsten in den schwach besetzten Zwischenräumen, die zur Mitte konvergieren.
+                        </p>
+                    </div>
+                    <div type="div3" rend="DH-Heading3">
+                        <head>Individualebene</head>
+                        <figure>
+                            <graphic n="1007" width="16.002cm" height="7.789333333333333cm" url="Pictures/5734dc8bb952ea73e647a39958e527f3.png" rend="inline"/>
+                            <head>Abb. 5: 
+                                <hi rend="italic">Retrieval</hi>-Ergebnisse für die links abgebildete Figur aus James Tissots 
+                                <hi rend="italic">Le Coup de Lance</hi> (1886–1894) mit den jeweils geschätzten 
+                                <hi rend="italic">Keypoints</hi> in 
+                                <hi rend="italic">grün</hi>.
+                            </head>
+                        </figure>
+                        
+                        <p style="text-align: left; text-align: justify;">Für das 
+                            <hi rend="italic">HPR</hi> einzelner Gesten oder Posituren wird eine Indexstruktur erstellt, in die die 320-dimensionalen 
+                            <hi rend="italic">Embeddings</hi> der Figuren geladen werden. Wir verwenden mit 
+                            <hi rend="italic">Hierarchical Navigable Small World</hi> (
+                            <hi rend="italic">HNSW</hi>; Malkov und Yashunin, 2020) einen 
+                            <hi rend="italic">Approximate-k-Nearest-Neighbor</hi>-Ansatz mit polylogarithmischer Komplexität, der andere graphbasierte Ansätze wie 
+                            <hi rend="italic">Faiss</hi> (Johnson et al., 2021) in 
+                            <hi rend="italic">Precision</hi> und 
+                            <hi rend="italic">Recall</hi> übertrifft (Aumueller et al., 2023). Als Beispiel-
+                            <hi rend="italic">Query</hi> filtern wir eine Figur aus James Tissots 
+                            <hi rend="italic">Le Coup de Lance</hi> (1886–1894): den gekreuzigten Schächer zur Rechten Christi. In Abb. 5 ist eine Auswahl von 
+                            <hi rend="italic">Retrieval</hi>-Ergebnissen mit geringer Distanz zur 
+                            <hi rend="italic">Query</hi> dargestellt. Es dominieren naturgemäß vor allem Figuren aus Kreuzigungsgruppen, wenn auch meist mit Oberkörper-Konfigurationen in klassischer 
+                            <hi rend="italic">T</hi>- oder leichter 
+                            <hi rend="italic">Y</hi>-Form. Die angewinkelten Arme des Schächers werden in Pietà-Darstellungen aufgegriffen, z. B. in der Kopie nach Marcello Venusti (erste Zeile, fünftes Bild von links). Eine interessante Fehlschätzung findet sich in Jacques Louis Davids 
+                            <hi rend="italic">Napoleon am Großen St. Bernhard</hi> (1801; dritte Zeile, drittes Bild von links): Der vordere Teil des aufgerichteten Pferdes wird in der 
+                            <hi rend="italic">HPE</hi> fälschlicherweise als Figur mit nach hinten gestreckten Armen und angewinkelten Beinen erkannt – eine Konfiguration, die im 
+                            <hi rend="italic">HPR</hi> große Ähnlichkeit mit der des Schächers hat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Fazit und Ausblick</head>
+                <p style="text-align: left; text-align: justify;">Obwohl das 
+                    <hi rend="italic">HPR</hi> nur qualitativ auf der Aggregatebene durchgeführt werden konnte – oder auf der Individualebene exemplarisch am Beispiel des gekreuzigten Schächers in Tissots 
+                    <hi rend="italic">Le Coup</hi> – wird deutlich, dass der Ansatz in Kombination mit einer semi-überwachten 
+                    <hi rend="italic">HPE</hi> eine vielversprechende Basis schafft für die quantitativ-fundierte Exploration von Gestentypen in der bildenden Kunst: Das menschliche Skelett wird durch ein Blickwinkel-invariantes 320-dimensionales 
+                    <hi rend="italic">Embedding</hi> ganzheitlich erfasst. Indem neben dem Ganzkörperskelett auch Ober- und Unterkörper separat abgelegt werden, lassen sich Gestik oder Positur feingranular erschließen und typisieren, auch wenn einzelne Konfigurationen nur unzureichend geschätzt werden.
+                </p>
+                <p style="text-align: left; text-align: justify;">Es ist geplant, die Pipeline anhand von zwei disparaten Anwendungsfällen kunsthistorisch näher zu evaluieren: der kompositionell restriktiven Ikonographie des Sündenfalls und der zeitlich dynamischer variierenden Kreuzabnahme Christi. Beide lassen sich auf dominante Gestentypen oder zeitabhängige Phänomene hin untersuchen, wie sie für den Manierismus durch die Überstreckung der Gliedmaßen charakteristisch sind. Intra- und interikonografisch wiederkehrende Motive, deren teils radikal veränderte Semantik befremdet, sind in diesem Zusammenhang zu diskutieren.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Danksagung</head>
+                <p style="text-align: left; text-align: justify;">Diese Arbeit wurde teilweise von der Deutschen Forschungsgemeinschaft (DFG) unter der Projektnummer 415796915 gefördert.</p>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                    
+                        <ref target="https://www.duden.de/node/113566/revision/1343578">https://www.duden.de/node/113566/revision/1343578</ref>, wie alle URLs zugegriffen: 9. November 2023
+                    
+                </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                    
+                        <ref target="https://www.duden.de/node/57136/revision/1454368">https://www.duden.de/node/57136/revision/1454368</ref>.
+                    
+                </note>
+<note rend="footnote text" xml:id="ftn3" n="3">
+                             Die Auswertung erfolgt auf dem vollständig mit 
+                                <hi rend="italic">Bounding Boxes</hi> annotierten 
+                                <hi rend="italic">PoPArt</hi>-Datensatz, im Gegensatz zu Springstein et al. (2022).
+                            
+                        </note>
+<note rend="footnote text" xml:id="ftn4" n="4">
+                            
+                                <ref target="https://www.wikidata.org">https://www.wikidata.org</ref>.
+                            
+                        </note>
+<note rend="footnote text" xml:id="ftn5" n="5">
+                            
+                                <ref target="https://query.wikidata.org/bigdata/namespace/wdq/sparql">https://query.wikidata.org/bigdata/namespace/wdq/sparql</ref>.
+                            
+                        </note>
+<note rend="footnote text" xml:id="ftn6" n="6">
+                            
+                                <ref target="https://prometheus-bildarchiv.de/de">https://prometheus-bildarchiv.de/de</ref>.
+                            
+                        </note>
+<note rend="footnote text" xml:id="ftn7" n="7">
+                                
+                                    <ref target="https://github.com/YaleDHLab/pix-plot">https://github.com/YaleDHLab/pix-plot</ref>.
+                                
+                            </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl style="text-align: left; "><hi rend="bold">Aumueller, Martin, Erik Bernhardsson und Alec Faitfull.</hi> 2023. 
+                        <hi rend="italic">ANN Benchmarks</hi>. 
+                        <ref target="https://ann-benchmarks.com">https://ann-benchmarks.com</ref> (zugegriffen: 19. Juli 2023).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Barasch, Moshe.</hi> 1987. 
+                        <hi rend="italic">Giotto and the Language of Gesture.</hi> Cambridge: Cambridge University Press.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Bulwer, John.</hi> 1644. 
+                        <hi rend="italic">Chirologia. Or the Naturall Language of the Hand.</hi> London: Thomas Harper.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Carion, Nicolas, Francisco Massa, Gabriel Synnaeve, Nicolas Usunier, Alexander Kirillov und Sergey Zagoruyko.</hi> 2020. „End-to-end Object Detection with Transformers.“ In 
+                        <hi rend="italic">Computer Vision – ECCV 2020. Lecture Notes in Computer Science</hi> 12346: 213–229 10.1007/978-3-030-58452-8_13.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Chen, Cheng, Yueting Zhuang, Feiping Nie, Yi Yang, Fei Wu und Jun Xiao.</hi> 2011. „Learning a 3D Human Pose Distance Metric from Geometric Pose Descriptor.“ 
+                        <hi rend="italic">IEEE Transactions on Visualization and Computer Graphics</hi> 17.11: 1676–1689 10.1109/TVCG.2010.272.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Chen, Haibo, Lei Zhao, Zhizhong Wang, Zhang Hui Ming, Zhiwen Zuo, Ailin Li, Wei Xing und Dongming Lu.</hi> 2021. „Artistic Style Transfer with Internal-external Learning and Contrastive Learning.“ In 
+                        <hi rend="italic">35th Conference on Neural Information Processing Systems</hi>. 
+                        <ref target="https://proceedings.neurips.cc/paper/2021/file/df5354693177e83e8ba089e94b7b6b55-Paper.pdf">https://proceedings.neurips.cc/paper/2021/file/df5354693177e83e8ba089e94b7b6b55-Paper.pdf</ref> (zugegriffen: 19. Juli 2023).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Demisch, Heinz.</hi> 1984. 
+                        <hi rend="italic">Erhobene Hände. Geschichte einer Gebärde in der bildenden Kunst.</hi> Stuttgart: Urachhaus.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Gonthier, Nicolas, Saïd Ladjal und Yann Gousseau.</hi> 2022. „Multiple Instance Learning on Deep Features for Weakly Supervised Object Detection with Extreme Domain Shifts.“ 
+                        <hi rend="italic">Computer Vision and Image Understanding</hi> 214 10.1016/j.cviu.2021.103299.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Impett, Leonardo und Sabine Süsstrunk.</hi> 2016. „Pose and Pathosformel in Aby Warburg’s Bilderatlas.“ In 
+                        <hi rend="italic">Computer Vision – ECCV 2016 Workshops. Lecture Notes in Computer Science</hi> 9913: 888–902 10.1007/978-3-319-46604-0_61.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Jadon, Shruti und Aryan Jadon.</hi> 2020. 
+                        <hi rend="italic">An Overview of Deep Learning Architectures in Few-shot Learning Domain</hi>. arXiv:1412.6980.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Johnson, Jeff, Matthijs Douze und Herve Jegou.</hi> 2021. „Billion-scale Similarity Search with GPUs.“ 
+                        <hi rend="italic">IEEE Transactions of Big Data</hi> 7: 535–547 10.1109/TBDATA.2019.2921572.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Kadish, David, Sebastian Risi und Anders Sundnes Løvlie.</hi> 2021. „Improving Object Detection in Art Images Using Only Style Transfer.“ In 
+                        <hi rend="italic">International Joint Conference on Neural Networks. IJCNN 2021</hi>, 1–8 10.1109/IJCNN52387.2021.9534264.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Knowlson, James R.</hi> 1965. „The Idea of Gesture as a Universal Language in the XVIIth and XVIIIth Centuries.“ 
+                        <hi rend="italic">Journal of the History of Ideas</hi> 26: 495–508.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Li, Ke, Shijie Wang, Xiang Zhang, Yifan Xu, Weijian Xu und Zhuowen Tu.</hi> 2021. „Pose Recognition with Cascade Transformers.“ In 
+                        <hi rend="italic">IEEE Conference on Computer Vision and Pattern Recognition. CVPR 2021</hi>, 1944–1953.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Lin, Tsung-Yi, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva Ramanan, Piotr Dollár und C. Lawrence Zitnick.</hi> 2014. „Microsoft COCO. Common Objects in Context.“ In 
+                        <hi rend="italic">Computer Vision – ECCV 2014. Lecture Notes in Computer Science</hi> 8693: 740–755 10.1007/978-3-319-10602-1_48.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">van der Maaten, Laurens und Geoffrey Hinton.</hi> 2008. „Visualizing Data Using t-SNE.“ 
+                        <hi rend="italic">Journal of Machine Learning Research</hi> 9: 2579–2605. 
+                        <ref target="https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf">https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf</ref> (zugegriffen: 19. Juli 2023).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Madhu, Prathmesh, Angel Villar-Corrales, Ronak Kosti, Torsten Bendschus, Corinna Reinhardt, Peter Bell, Andreas K. Maier und Vincent Christlein.</hi> 2023. „Enhancing Human Pose Estimation in Ancient Vase Paintings via Perceptually-grounded Style Transfer Learning.“ 
+                        <hi rend="italic">ACM Journal on Computing and Cultural Heritage</hi> 16.1: 1–17 10.1145/3569089.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Malkov, Yu A. und D. A. Yushunin.</hi> 2020. „Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs.“ 
+                        <hi rend="italic">IEEE Transactions on Pattern Analysis and Machine Intelligence</hi> 42.4: 824–836 10.1109/TPAMI.2018.2889473.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Mao, Hui, Ming Cheung und James She.</hi> 2017. „DeepArt. Learning Joint Representations of Visual Arts.“ In 
+                        <hi rend="italic">MM ’17. The 25th ACM International Conference on Multimedia</hi>, 1183–1191 10.1145/3123266.3123405.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">McInnes, Leland, John Healy, Nathaniel Saul und Lukas Großberger.</hi> 2018. „UMAP. Uniform Manifold Approximation and Projection.“ 
+                        <hi rend="italic">Journal of Open Source Software</hi> 3.29 10.21105/joss.00861.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Mulder, Axel.</hi> 1996. 
+                        <hi rend="italic">Hand Gestures for HCI.</hi> Vancouver: Simon Fraser University.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Schneider, Stefanie und Ricarda Vollmer.</hi> 2023. 
+                        <hi rend="italic">Poses of People in Art. A Data Set for Human Pose Estimation in Digital Art History</hi>. arXiv:2301.05124.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">So, Clifford Kwok-Fung und George Baciu.</hi> 2005. „Entropy-based Motion Extraction for Motion Capture Animation.“ 
+                        <hi rend="italic">Computer Animation and Virtual Worlds</hi> 16.3–4: 225–235 10.1002/cav.107.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Springstein, Matthias, Stefanie Schneider, Christian Althaus und Ralph Ewerth.</hi> 2022. „Semi-supervised Human Pose Estimation in Art-historical Images.“ In 
+                        <hi rend="italic">MM ’22. The 30th ACM International Conference on Multimedia</hi>, 1107–1116 10.1145/3503161.3548371.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Sun, Jennifer J., Jiaping Zhao, Liang-Chieh Chen, Florian Schroff, Hartwig Adam und Ting Liu.</hi> 2020. „View-invariant Probabilistic Embedding for Human Pose.“ In 
+                        <hi rend="italic">Computer Vision – ECCV 2020. Lecture Notes in Computer Science</hi> 12350: 53–70 10.1007/978-3-030-58558-7_4.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Tarvainen, Antti und Harri Valpola.</hi> 2017. „Mean Teachers are Better Role Models. Weight-averaged Consistency Targets Improve Semi-supervised Deep Learning Results.“ In 
+                        <hi rend="italic">5th International Conference on Learning Representations. ICLR 2017</hi>.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Tikkanen, Johan Jakob.</hi> 1912. 
+                        <hi rend="italic">Die Beinstellungen in der Kunstgeschichte. Ein Beitrag zur Geschichte der künstlerischen Motive.</hi> Helsingfors: Druckerei der finnischen Litteraturgesellschaft.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">van de Waal, Henri.</hi> 1973–1985. 
+                        <hi rend="italic">Iconclass. An Iconographic Classification System. Completed and Edited by L. D. Couprie with R. H. Fuchs</hi>. Amsterdam: North-Holland Publishing Company.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Wang, Jingdong, Ke Sun, Tianheng Cheng, Borui Jiang, Chaorui Deng, Yang Zhao, Dong Liu, Yadong Mu, Mingkui Tan, Xinggang Wang, Wenyu Liu und Bin Xiao.</hi> 2021. „Deep High-resolution Representation Learning for Visual Recognition.“ 
+                        <hi rend="italic">IEEE Transactions on Pattern Analysis and Machine Intelligence</hi> 43.10: 3349–3364 10.1109/TPAMI.2020.2983686.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Wang, Yingfan, Haiyang Huang, Cynthia Rudin und Yaron Shaposhnik.</hi> 2021. „Understanding How Dimension Reduction Tools Work. An Empirical Approach to Deciphering t-SNE, UMAP, TriMAP, and PaCMAP for Data Visualization.“ 
+                        <hi rend="italic">Journal of Machine Learning Research</hi> 22.201: 1–73. 
+                        <ref target="https://jmlr.org/papers/v22/20-1061.html">https://jmlr.org/papers/v22/20-1061.html</ref> (zugegriffen: 19. Juli 2023).
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Warburg, Aby.</hi> 1998 [1905]. „Dürer und die italienische Antike.“ In 
+                        <hi rend="italic">Die Erneuerung der heidnischen Antike. Kulturwissenschaftliche Beiträge zur Geschichte der europäischen Renaissance. Gesammelte Schriften</hi>, hg. von Horst Bredekamp und Michael Diers, 443–449. Berlin: Akademie Verlag.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Westlake, Nicholas, Hongping Cai und Peter Hall.</hi> 2016. „Detecting People in Artwork with CNNs.“ In 
+                        <hi rend="italic">Computer Vision – ECCV 2016 Workshops. Lecture Notes in Computer Science</hi> 9913: 825–841 10.1007/978-3-319-46604-0_57.
+                    </bibl>
+                    <bibl style="text-align: left; "><hi rend="bold">Xu, Mengde, Zheng Zhang, Han Hu, Jianfeng Wang, Lijuan Wang, Fangyun Wei, Xiang Bai und Zicheng Liu.</hi> 2021. „End-to-end Semi-supervised Object Detection with Soft Teacher.“ In 
+                        <hi rend="italic">IEEE/CVF International Conference on Computer Vision. ICCV 2021</hi>, 3040–3049 10.1109/ICCV48922.2021.00305.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

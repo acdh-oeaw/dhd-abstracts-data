@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="STEINER_Petra_Compiling_Controlled_Vocabularies_of_Contribut" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Compiling Controlled Vocabularies of Contributor and User Roles for a Platform of Open Educational Resources</title>
+                <author>
+                    <persName>
+                        <surname>Steiner</surname>
+                        <forename>Petra</forename>
+                    </persName>
+                    <affiliation>TU Darmstadt, Deutschland</affiliation>
+                    <email>petra.steiner@tu-darmstadt.de</email>
+                    <idno type="ORCID">0000-0001-8997-2620</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hastik</surname>
+                        <forename>Canan</forename>
+                    </persName>
+                    <affiliation>TU Darmstadt, Deutschland</affiliation>
+                    <email>canan.hastik@fst.tu-darmstadt.de</email>
+                    <idno type="ORCID">0000-0003-1729-4642</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fuhrmans</surname>
+                        <forename>Marc</forename>
+                    </persName>
+                    <affiliation>TU Darmstadt, Deutschland</affiliation>
+                    <email>marc.fuhrmans@tu-darmstadt.de</email>
+                    <idno type="ORCID">0000-0002-9826-018X</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-12-06T16:42:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Digital Humanities Passau</publisher>
+                <address>
+                    <addrLine>Universität Passau</addrLine>
+                    <addrLine>Innstraße 41</addrLine>
+                    <addrLine>D-94032 Passau</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Posterpräsentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Metadaten</term>
+                    <term>Kontrollierte Vokabulare</term>
+                    <term>Open Educational Resources</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Teilen</term>
+                    <term>Annotieren</term>
+                    <term>Archivierung</term>
+                    <term>Lehre</term>
+                    <term>Organisation</term>
+                    <term>Metadaten</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction and Objectives</head>
+                <p style="text-align: left; ">The project DALIA - Knowledge Base for "FAIR data usage and supply” is funded by the German Federal Ministry of Education and Research (BMBF) and by the EU's Reconstruction and Resilience Facility. It aims to provide an infrastructure for educational resources, especially those which are being produced in the NFDI consortia (Sure-Vetter et al., 2021), for relevant RDM networks, and in the long-term for an international, interdisciplinary community. Its main field of interest lies in related FAIR (Wilkinson et al., 2016) data science and research data management.</p>
+                <p style="text-align: left; ">As a technical link, the DALIA platform for teaching and training materials is being developed. It is based on the DALIA Knowledge Graph which serves as an interlink of the heterogeneous and subject-specific teaching and learning materials, and assists in making them visible, findable and accessible for users from a wide range of disciplines, career and competence levels. It will implement the knowledge as an ontology in an RDF triplestore which will be reusable and interlinked with other Linked Open Data (LOD) projects.</p>
+                <p style="text-align: left; ">To this aim, the development of controlled vocabularies which are interdisciplinary usable is an essential foundation. The question of how this can be realized will be answered in feedback loops between developers, contributors, and finally frontend users: DALIA addresses content providers and curators for educational purposes with learning content repositories or future data competence centers using their own community-specific taxonomies, e.g. TaDiRAH (Borek et al., 2021). The sources and resources are heterogenous, and their providers and users have established different metadata standards and formats. Therefore, our metadata must provide solutions for many different applications and be open and extendible.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Structure of the Metadata Categories</head>
+                <p style="text-align: left; ">Our aim is to create a hierarchy of simple metadata categories with mappings to other metadata schemas and a small (closed) core set for content curation, searching and harvesters. This then can serve as best practice and quality assessment for internal and external project partners and providers.</p>
+                <p style="text-align: left; ">The metadata categories consist of descriptive metadata, administrative metadata, structural metadata, legal metadata, technical metadata, and usage, quality, and statistical metadata. Here, we introduce the controlled vocabularies concerning the human entities: contributors and their roles in accordance with the user roles of the platform.</p>
+                <p style="text-align: left; ">The format style is similar to DCTAP (
+                    <hi rend="italic">Dublin Core Tabular Application Profile</hi>) (Coyle et al., 2023) which is a set of elements and definitions for setting up metadata schemas for applications and their validations. It is a table format which is exportable and convertible to RDF structures, providing among others the terms, definitions, cardinalities, mappings to other metadata standards, term types, data types, domains and ranges.
+                </p>
+                <p style="text-align: left; ">The categories are influenced by Hoebelheinrich et al. (2022), the IEEE Standard for Learning Object Metadata (IEEE Computer Society 2020), the DataCite Metadata Working Group (2021), the DDI Alliance Controlled Vocabulary for Contributor Role (2019), Re3data.org (Strecker et al., 2021), Allgemeines Metadatenprofile for Bildungsressourcen (Pohl et al., 2023), and other standards. Emphasis has been placed on compatibility to the DataCite contributor types, which form the basis for modeling of human contributions for many terminologies, e.g. the Metadata4Ing ontology (Arndt et al., 2022) developed within NFDI4Ing.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Metadata for Human Entities in DALIA</head>
+                <p style="text-align: left; ">Metadata for human entities mostly apply to administrative and descriptive metadata with their entities of different contributor and learner types. Based on the above-mentioned resources and the requirements, we compiled a hierarchical synopsis for contributors including contributor roles. We added or substituted missing or paraphrase definitions, and decided on the term types, to make the classification and ontology entities consistent. Typical contributor types for administrative metadata are author, editor, data manager, data curator but also sponsor and work package leader. The categories of the user types, such as teachers, students, or researchers, are mostly based on the metadata profile by Pohl et al. (2023) which refers to the educational audience roles of the LRMI Concept Schemes (Barker and Sutton, 2017), and the RDA Minimal Application Profiles from Biernacka and Hoebelheinrich (2023). These synopses will be included into the ontology work. It is part of a general compilation of six metadata classes comprising about 30 entries for the minimal set and approximately 400 entries for the extended version. This extended version will be used as an inventory for harmonization.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Acknowledgements</head>
+                <p style="text-align: left; ">This project with the federal label 16DWWQP07A is funded by the German Federal Ministry of Education and Research (BMBF) and by the EU's Reconstruction and Resilience Facility.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Arndt, Susanne, Benjamin Farnbacher, Marc Fuhrmans, Stephan Hachinger, Johanna Hickmann, Nils Hoppe, et al</hi>. 2022. 
+                        <hi rend="italic">Metadata4Ing: An ontology for describing the generation of research data within a scientific activity</hi>: Zenodo. https://zenodo.org/record/7706017. DOI: 10.5281/zenodo.7706017.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Barker, Phil. and Sutton, Stuart</hi>, eds. 2017. 
+                        <hi rend="italic">LRMI Concept Scheme. LRMI Educational Audience Role Vocabulary</hi>. https://www.dublincore.org/specifications/lrmi/concept_schemes/educationalAudienceRole/.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Biernacka, Katarzyna, Nancy J., and Hoebelheinrich, Nancy J.</hi> 2023. 
+                        <hi rend="italic">ETHRD-IG Virtual Session: Learning Resources Minimal Metadata Application Profile</hi>. https://docs.google.com/presentation/d/12CCLNMCC9mGjKID4vxOGUJIhoX4XoLTipJsSLLC6mZ8.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Borek, Luise, Canan Hastik, Vera Khramova, Klaus Illmayer, and Jonathan D. Geiger</hi>. 2021. “Information Organization and Access in Digital Humanities: TaDiRAH Revised, Formalized and FAIR.” In: 
+                        <hi rend="italic">Information between data and knowledge. Information Science and its Neighbors from Data Science to Digital Humanities. Proceedings of the 16th International Symposium of Information Science (ISI 2021), Regensburg, Germany, 8th-10th March 2021</hi>, ed. Thomas Schmidt und Christian Wolff, 321–332. Glückstadt: Verlag Werner Hülsbusch, Fachverlag für Medientechnik und -wirtschaft. (Schriften zur Informationswissenschaft, 74). DOI: 10.5283/EPUB.44951.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Coyle, Karen, Tom Baker, Phil Barker, John Huck, Ben Riesenberg, and Nishad Thalhath</hi>. 2023. 
+                        <hi rend="italic">DC Tabular Application Profiles (DC TAP)</hi>
+                        <hi rend="italic" style="font-family:Cambria Math">-</hi>
+                        <hi rend="italic" xml:space="preserve"> Primer</hi>. https://github.com/dcmi/dctap/blob/main/TAPprimer.md.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">DataCite Metadata Working Group</hi>. 2021. 
+                        <hi rend="italic">DataCite Metadata Schema Documentation for the Publication and Citation of Research Data and Other Research Outputs v4.4</hi>. Members of the Metadata Working Group: Madeleine de Smaele, Isabel Bernal Martínez, Robin Dasler, Jan Ashton, Sophie Roy, Martin Fenner et al. DOI: 10.14454/3w3z-sa82.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">DDI Alliance</hi>. 2019. 
+                        <hi rend="italic">DDI Alliance Controlled Vocabulary for Contributor Role</hi> (Version 1.0.2) [Controlled vocabulary]. urn:ddi:int.ddi.cv:ContributorRole:1.0.2. https://vocabularies.cessda.eu/vocabulary/ContributorRole?lang=en.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hoebelheinrich, Nancy J., Katarzyna Biernacka, Michelle Brazas, Leyla Jael Castro, Nicola Fiore, Margareta Hellström, et al.</hi> 2022. 
+                        <hi rend="italic">Recommendations for a minimal metadata set to aid harmonised discovery of learning resources</hi>. DOI: 10.15497/RDA00073.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">IEEE Computer Society</hi>. 2020. 
+                        <hi rend="italic">IEEE Standard for Learning Object Metadata</hi>. IEEE Std 1484.12.1™-2020. https://ieeexplore.ieee.org/servlet/opac?punumber=9262116. DOI: 10.1109/IEEESTD.2020.9262118.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Pohl, Adrian, Axel Klinger, Boris Hartmann, Carl Schuurbiers, Fabian Steeg, Manuel Oellers, et al.</hi> 2023. 
+                        <hi rend="italic">Allgemeines Metadatenprofil für Bildungsressourcen (AMB)</hi>. 
+                        <hi rend="italic">Entwurf vom 06. November 2023</hi>. https://dini-ag-kim.github.io/amb/draft/.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Strecker, Dorothea, Roland Bertelmann, Helena Cousijn, Kirsten Elger, Lea Maria Ferguson, David Fichtmueller, et al</hi>. 2021. 
+                        <hi rend="italic">Metadata Schema for the Description of Research Data Repositories: version 3.1</hi>. Unter Mitarbeit von Florian Fritze, Claudio Fuchs, Agnes Kirchhof, Jens Klump, Claudia Kramer, Jessica Rücknagel et al. DOI: 10.48440/RE3.010.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sure-Vetter, York, Eva Lübke, Sophie Kraft, and Hendrik Seitz-Moskaliuk</hi>. 2021. “Nationale Forschungsdateninfrastruktur (NFDI) e. V. - Satzungsvorstellung”. https://doi.org/10.5281/ZENODO.5735196.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Wilkinson, Mark D., Michel Dumontier, Jsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, et al</hi>. 2016. “The FAIR Guiding Principles for scientific data management and stewardship,” 
+                        <hi rend="italic">Scientific Data</hi> 3: 160018. https://doi.org/10.1038/sdata.2016.18.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

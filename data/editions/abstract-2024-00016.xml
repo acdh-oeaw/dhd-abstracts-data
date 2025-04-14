@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="BARTH_Florian_TextGrid_Python_Clients__Making_the_Repository" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TextGrid Python Clients: Making the Repository Programmable</title>
+                <author>
+                    <persName>
+                        <surname>Hynek</surname>
+                        <forename>Stefan</forename>
+                    </persName>
+                    <affiliation>Niedersächsische Staats- und Universitätsbibliothek Göttingen, Deutschland</affiliation>
+                    <email>stefan.hynek@uni-goettingen.de</email>
+                    <idno type="ORCID">0000-0002-3485-0746</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Veentjer</surname>
+                        <forename>Ubbo</forename>
+                    </persName>
+                    <affiliation>Niedersächsische Staats- und Universitätsbibliothek Göttingen, Deutschland</affiliation>
+                    <email>veentjer@sub.uni-goettingen.de</email>
+                    <idno type="ORCID">0000-0002-9726-3135</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Calvo Tello</surname>
+                        <forename>José</forename>
+                    </persName>
+                    <affiliation>Niedersächsische Staats- und Universitätsbibliothek Göttingen, Deutschland</affiliation>
+                    <email>calvotello@sub.uni-goettingen.de</email>
+                    <idno type="ORCID">0000-0002-1129-5604</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Barth</surname>
+                        <forename>Florian</forename>
+                    </persName>
+                    <affiliation>Niedersächsische Staats- und Universitätsbibliothek Göttingen, Deutschland</affiliation>
+                    <email>florian.barth@uni-goettingen.de</email>
+                    <idno type="ORCID">0000-0003-3408-7311</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Funk</surname>
+                        <forename>Stefan</forename>
+                    </persName>
+                    <affiliation>Niedersächsische Staats- und Universitätsbibliothek Göttingen, Deutschland</affiliation>
+                    <email>funk@sub.uni-goettingen.de</email>
+                    <idno type="ORCID">0000-0003-1259-2288</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Goebel</surname>
+                        <forename>Mathias</forename>
+                    </persName>
+                    <affiliation>Niedersächsische Staats- und Universitätsbibliothek Göttingen, Deutschland</affiliation>
+                    <email>goebel@sub.uni-goettingen.de</email>
+                    <idno type="ORCID">0000-0002-1102-5284</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kurzawe</surname>
+                        <forename>Daniel</forename>
+                    </persName>
+                    <affiliation>Niedersächsische Staats- und Universitätsbibliothek Göttingen, Deutschland</affiliation>
+                    <email>kurzawe@sub.uni-goettingen.de</email>
+                    <idno type="ORCID">0000-0001-5027-7313</idno>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Weimer</surname>
+                        <forename>Lukas</forename>
+                    </persName>
+                    <affiliation>Niedersächsische Staats- und Universitätsbibliothek Göttingen, Deutschland</affiliation>
+                    <email>weimer@sub.uni-goettingen.de</email>
+                    <idno type="ORCID">0000-0001-6919-3646</idno>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2023-06-13T14:32:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Digital Humanities Passau</publisher>
+                <address>
+                    <addrLine>Universität Passau</addrLine>
+                    <addrLine>Innstraße 41</addrLine>
+                    <addrLine>D-94032 Passau</addrLine>
+                    <addrLine>Deutschland</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Posterpräsentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Python</term>
+                    <term>API</term>
+                    <term>Repository</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Datei</term>
+                    <term>Bilder</term>
+                    <term>Projekte</term>
+                    <term>Forschung</term>
+                    <term>Text</term>
+                    <term>virtuelle Forschungsumgebungen</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Current developments within TextGrid</head>
+                <p>Started in 2006, the TextGrid infrastructure was developed jointly with humanities scholars and focuses on texts encoded as TEI. Since 2015, TextGrid has been operated by DARIAH-DE and is now part of the services offered by the Association for Research Infrastructures in the Humanities and Cultural Studies (GKFI) and the NFDI consortium Text+. As a partner institution, the Göttingen State and University Library contributes TextGrid's offerings to the latter, which ensures further demand-oriented development.<ref n="1" target="ftn1"/> TextGrid offers interfaces via REST and SOAP and client libraries for Java and XQuery.
+                </p>
+                <p>In this poster, we present an accessible and streamlined interface which is built on the programming language highly utilised in Digital Humanities: The library 
+                    <hi rend="italic">TextGrid Python Clients</hi> (in short: 
+                    <hi rend="italic">tgclients</hi>).
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Towards programmable interfaces</head>
+                <p>Some pioneer projects in the Digital Humanities (Digital Library, Théâtre classique, Biblioteca Italiana, etc.) dealt with the compilation of literary corpora. Researchers began to modify these corpora for their research through new features, tools (de la Rosa et al. 2022) and a new generation of corpora such as KOLIMO (Herrmann and Lauer 2017), ELTeC (Schöch et al. 2021), or DraCor (Börner and Trilcke 2023; Fischer et al. 2019).</p>
+                <p>The next step to this corpus recombination is the API-driven approach of programmable corpora in the DraCor platform (Börner and Trilcke 2023, 7), inspired by Aaron Swartz's concept of the Programmable Web, in which applications are "part of the ecology— a section of the programmable web” (Swartz 2022, 7). This idea of networked and distributed resources finds resonance in the NFDI consortia such as Text+ (Hinrichs et al. 2022), where the integration of existing resources is one of the main motivations.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Modules of 
+                    <hi rend="italic">tgclients</hi>
+                </head>
+                <p>Concerning the before-mentioned developments, the 
+                    <hi rend="italic">tgclients</hi> library is made to provide a future-proof interface with unified access to the APIs of TextGrid. The clients are capable of solving current needs and are highly scalable to adapt future feature requests. The TextGrid repository is orientated on the FRBR model (Functional Requirements for Bibliographic Records), a very widespread model for library records and publications, and stores data within TextGrid objects which consists of content and metadata (IFLA Study Group 2009). These objects can be organised as `aggregation` (`collection`, `edition`), `work`, or individual `item`.
+                </p>
+                <p>
+                    <hi rend="bold">TG-crud:</hi> The TG-crud service is responsible for creating, retrieving, updating, and deleting TextGrid resources, i.e. TextGrid objects including TextGrid metadata (TextGrid-Konsortium 2023b). 
+                    <hi rend="italic">tgclients</hi> provides the full functionality of TG-crud with a Python interface and therefore allows creating and editing individual TextGrid objects.
+                </p>
+                <p>
+                    <hi rend="bold" xml:space="preserve">TG-search: </hi>TG-search is TextGrid’s central search index combining semantic and technical metadata and can be used in conjunction with access conditions. In addition to fulltext search including filters and facets, the index holds specific information required to organise objects and their relations. 
+                    <hi rend="italic">tgclients</hi> uses this interface to query for all objects of a single project and allows for applying filters such as genre, language, author gender, or period of time. Users can combine these functions with the Aggregator.
+                </p>
+                <p>
+                    <hi rend="bold">Aggregator:</hi> The TextGrid Aggregator is the export and conversion tool for data from the TextGrid repository (TextGrid-Konsortium 2023a). The aggregator collects resources in one step and converts them into relevant output formats. 
+                    <hi rend="italic">tgclients</hi> allows users to access, convert and combine the content of single objects or complete TextGrid aggregations. For example, users can convert all TEI/XML of a nested TextGrid project into plain text.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Use cases and perspectives</head>
+                <p>
+                    <hi rend="italic">tgclients</hi> and its API is optimised for the usage in Jupyter Notebooks and provides an advanced user experience in documentation and autocompletion while working on a notebook. We further provide notebooks for educational purposes: Users can access several notebooks in our documentation that explain the usage of all modules with examples in TextGrid projects.<ref n="2" target="ftn2"/>
+                </p>
+                <p style="text-align: left;">The development team is curious to implement new use cases. Some ideas we have focus on the ex- and import functionality to down- and upload complete projects to TextGrid and to interact with the service for publishing data.</p>
+            </div>
+        </body>
+        <back>
+<div type="notes">
+<note rend="footnote text" xml:id="ftn1" n="1">
+                        
+                            <ref target="https://de.dariah.eu">
+                                <hi rend="color(1155CC)">https://de.dariah.eu</hi>
+                            </ref>, GKFI: 
+                            <ref target="https://forschungsinfrastrukturen.de">
+                                <hi rend="color(1155CC)">https://forschungsinfrastrukturen.de</hi>
+                            </ref>, 
+                            <ref target="https://www.text-plus.org">https://www.text-plus.org</ref>. 
+                        
+                    </note>
+<note rend="footnote text" xml:id="ftn2" n="2">
+                        
+                            <ref target="https://dariah-de.pages.gwdg.de/textgridrep/textgrid-python-clients/docs/getting-started.html#example-jupyter-notebooks">https://dariah-de.pages.gwdg.de/textgridrep/textgrid-python-clients/docs/getting-started.html#example-jupyter-notebooks</ref>.
+                        
+                    </note></div>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliographie</head>
+                    <bibl>
+                        <hi style="font-size:11pt">
+                            <hi rend="bold">Börner, Ingo, and Peer Trilcke.</hi> 2023. “CLS INFRA D7.1 On Programmable Corpora”, February.</hi>
+                        <ref target="https://zenodo.org/record/7664964">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://zenodo.org/record/7664964</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">
+                            <hi rend="bold">Fischer, Frank, Ingo Börner, Mathias Göbel, Angelika Hechtl, Christopher Kittel, Carsten Milling, and Peer Trilcke.</hi> 2019. “Programmable Corpora: Introducing DraCor, an Infrastructure for the Research on European Drama”. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of DH2019: ‘Complexities’, Utrecht, July 9–12, 2019</hi>
+                        <hi style="font-size:11pt">. Utrecht University.</hi>
+                        <ref target="https://doi.org/10.5281/zenodo.4284002">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.5281/zenodo.4284002</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">
+                            <hi rend="bold">Herrmann, J. Berenike, and Gerhard Lauer.</hi> 2017. “Das ‘Was-Bisher-Geschah’ von KOLIMO. Ein Update Zum Korpus Der Literarischen Moderne”. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Digitale Nachhaltigkeit</hi>
+                        <hi style="font-size:11pt">. Bern: ADHO.</hi>
+                        <ref target="https://dh-abstracts.library.cmu.edu/works/10644">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://dh-abstracts.library.cmu.edu/works/10644</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:11pt">
+                            <hi rend="bold">Hinrichs, Erhard, Peter Leinen, Alexander Geyken, Andreas Speer, and Regine Stein.</hi> 2022. “Text+: Language- and Text-Based Research Data Infrastructure”. Zenodo. https://doi.org/10.5281/zenodo.6452002.</hi>
+                        <ref target="https://zenodo.org/record/6452002">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://zenodo.org/record/6452002</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">
+                            <hi rend="bold">IFLA Study Group on the Functional Requirements for Bibliographic Records.</hi> 2009. “Functional Requirements for Bibliographic Records”. Accessed July 1, 2023. </hi>
+                        <ref target="https://repository.ifla.org/bitstream/123456789/811/2/ifla-functional-requirements-for-bibliographic-records-frbr.pdf">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://repository.ifla.org/bitstream/123456789/811/2/ifla-functional-requirements-for-bibliographic-records-frbr.pdf</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">
+                            <hi rend="bold">Rosa, Javier de la, Aitor Díaz, Álvaro Pérez, Salvador Ros, and Elena González-Blanco.</hi> 2022. “Democratizing Poetry Corpora with Averell”. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Responding to Asian Diversity</hi>
+                        <hi style="font-size:11pt">. Tokyo: ADHO.</hi>
+                        <ref target="https://dh2022.dhii.asia/abstracts/414">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://dh2022.dhii.asia/abstracts/414</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">
+                            <hi rend="bold">Schöch, Christof, Tomaz Erjavec, Roxana Patras, and Diana Santos.</hi> 2021. “Creating the European Literary Text Collection (ELTeC): Challenges and Perspectives”. </hi>
+                        <hi rend="italic" style="font-size:11pt">Modern Languages Open</hi>
+                        <hi style="font-size:11pt">, no. 1 (December): 25.</hi>
+                        <ref target="https://doi.org/10.3828/mlo.v0i0.364">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.3828/mlo.v0i0.364</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">
+                            <hi rend="bold">Swartz, Aaron.</hi> 2022. </hi>
+                        <hi rend="italic" style="font-size:11pt">Aaron Swartz’s The Programmable Web: An Unfinished Work</hi>
+                        <hi style="font-size:11pt">. Synthesis Lectures on Data, Semantics, and Knowledge Series. Cham: Springer International Publishing AG.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">TextGrid-Konsortium.</hi> 2023a. “TextGrid Aggregator”. Accessed July 1, 2023. 
+                        <ref target="https://textgridlab.org/doc/services/submodules/aggregator/docs/index.html">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://textgridlab.org/doc/services/submodules/aggregator/docs/index.html</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">
+                            <hi rend="bold">TextGrid-Konsortium.</hi> 2023b. “TG-crud”. Accessed July 1, 2023. </hi>
+                        <ref target="https://textgridlab.org/doc/services/submodules/tg-crud/tgcrud-webapp/docs/index.html">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://textgridlab.org/doc/services/submodules/tg-crud/tgcrud-webapp/docs/index.html</hi>
+                        </ref>
+                        <hi style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">TextGrid-Konsortium.</hi> 2023c. “TG-search”. Accessed July 1, 2023. 
+                        <ref target="https://textgridlab.org/doc/services/submodules/tg-search/docs/index.html">
+                            <hi rend="color(1155CC)">https://textgridlab.org/doc/services/submodules/tg-search/docs/index.html</hi>
+                        </ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>
