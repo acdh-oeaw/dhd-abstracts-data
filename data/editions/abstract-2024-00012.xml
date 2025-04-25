@@ -1,162 +1,162 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xml:id="WINSLOW_Sean_A_Low_Cost_Reflectance_Transformation_Imaging_D" xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>A Low-Cost Reflectance Transformation Imaging Dome</title>
-                <author>
-                    <persName>
-                        <surname>Winslow</surname>
-                        <forename>Sean</forename>
-                    </persName>
-                    <affiliation>Karl-Franzens-Universität Graz, Österreich</affiliation>
-                    <email>sean.winslow@uni-graz.at</email>
-                    <idno type="ORCID">0000-0002-5114-0594</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Krottmaier</surname>
-                        <forename>Sina</forename>
-                    </persName>
-                    <affiliation>Karl-Franzens-Universität Graz, Österreich</affiliation>
-                    <email>sina.krottmaier@edu.uni-graz.at</email>
-                    <idno type="ORCID">0000-0002-7966-7996</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Tosques</surname>
-                        <forename>Fabio</forename>
-                    </persName>
-                    <affiliation>Karl-Franzens-Universität Graz, Österreich</affiliation>
-                    <email>fabio.tosques@uni-graz.at</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Zuanni</surname>
-                        <forename>Chiara</forename>
-                    </persName>
-                    <affiliation>Karl-Franzens-Universität Graz, Österreich</affiliation>
-                    <email>chiara.zuanni@uni-graz.at</email>
-                    <idno type="ORCID">0000-0003-4027-0278</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2023-07-19T14:44:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Digital Humanities Passau</publisher>
-                <address>
-                    <addrLine>Universität Passau</addrLine>
-                    <addrLine>Innstraße 41</addrLine>
-                    <addrLine>D-94032 Passau</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Posterpräsentation</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Reflectance Transformation Imaging</term>
-                    <term>RTI</term>
-                    <term>Digitisation</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Bilderfassung</term>
-                    <term>Artefakte</term>
-                    <term>Werkzeuge</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <p>
-                <hi rend="color(17191C)" style="font-size:10.5pt">Reflectance Transformation Imaging (RTI) has many uses in imaging heritage items such as coins, seals, and small archaeological artifacts. It allows for imaging in a way that preserves and highlights small surface details, which are often of high significance for the study of such objects. While RTI can be done by hand, this process is time-consuming and best reserved for larger objects; smaller objects are generally imaged with a dome which provides a set of lights in enough directions that all the directions of light can be reconstructed programmatically. These domes are not readily and inexpensively available; commercial examples can cost in the neighborhood of €10.000–30.000. This means that many scholars and institutions with limited need for RTI have no access to them either for production of images or for students to learn and experiment. A number of projects for self-made RTI domes are documented (primarily online), but most of these domes require specialized electronic skills, soldering, and are camera-specific.</hi>
-            </p>
-            <p> </p>
-            <p>
-                <hi rend="color(17191C)" style="font-size:10.5pt">The SimpleRTIDome project is putting together a dome which will require no soldering, combining 3D printed parts with ready-made parts from the microcontroller and single-board computer (SBC) space, designed to be assembled by individuals with no particular “Maker” skills. All of the parts for the prototype dome came to around €200, and the released version will target a total cost in parts and printing of under €300. The use of a single-board computer to drive the project, as opposed to specialized electronics or hacky workarounds, means that the dome has access to the full range of open-source software, which is used to implement a workflow that sees a python script control the workflow of the system, controlling all lights and managing the file structure. The use of gphoto2 means that a broad range of DSLRs and even consumer-grade digital cameras are already supported without any additional work by the end user, and the prototype camera is also being designed to work with the sub-€50 Raspberry Pi Camera Module 3, so that a camera can be permanently housed within the device, allowing easy use and experimentation (on small items). </hi>
-            </p>
-            <p> </p>
-            <p>
-                <hi rend="color(17191C)" style="font-size:10.5pt">Working off of the template developed for the small teaching dome, the same controller and setup can be adapted for a larger, higher-quality dome suitable for research-quality imaging of objects larger than the coins which are the target of the teaching dome. This dome, despite being higher quality and larger will still be much less expensive than commercial alternatives (target: €500) and able to be assembled with basic craft skills, as it will similarly be solderless. </hi>
-            </p>
-            <p style="text-align: left; ">
-                <hi rend="color(17191C)" style="font-size:10.5pt">Our poster will show the steps involved in the design and construction of the dome, as well as the necessary coding snippets to successfully run the application. Our aim is to promote our cost-effective workflow, which can be easily replicated by anyone interested, making RTI easier to integrate into teaching and heritage research. We hope, by presenting this project, the prototypes, and the GitHub documenting the project and providing the relevant instructions for procuring parts and assembly, we can make this interesting and innovative heritage imaging technology available to a wider community of scholars.</hi>
-            </p>
-        </body>
-        <back>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl>
-                        <hi rend="bold" xml:space="preserve">Allen, Richard Benjamin. </hi>2023. 
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>A Low-Cost Reflectance Transformation Imaging Dome</title>
+<author>
+<persName>
+<surname>Winslow</surname>
+<forename>Sean</forename>
+</persName>
+<affiliation>Karl-Franzens-Universität Graz, Österreich</affiliation>
+<email>sean.winslow@uni-graz.at</email>
+<idno type="ORCID">0000-0002-5114-0594</idno>
+</author>
+<author>
+<persName>
+<surname>Krottmaier</surname>
+<forename>Sina</forename>
+</persName>
+<affiliation>Karl-Franzens-Universität Graz, Österreich</affiliation>
+<email>sina.krottmaier@edu.uni-graz.at</email>
+<idno type="ORCID">0000-0002-7966-7996</idno>
+</author>
+<author>
+<persName>
+<surname>Tosques</surname>
+<forename>Fabio</forename>
+</persName>
+<affiliation>Karl-Franzens-Universität Graz, Österreich</affiliation>
+<email>fabio.tosques@uni-graz.at</email>
+</author>
+<author>
+<persName>
+<surname>Zuanni</surname>
+<forename>Chiara</forename>
+</persName>
+<affiliation>Karl-Franzens-Universität Graz, Österreich</affiliation>
+<email>chiara.zuanni@uni-graz.at</email>
+<idno type="ORCID">0000-0003-4027-0278</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2023-07-19T14:44:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Digital Humanities Passau</publisher>
+<address>
+<addrLine>Universität Passau</addrLine>
+<addrLine>Innstraße 41</addrLine>
+<addrLine>D-94032 Passau</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/10698358</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Posterpräsentation</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Reflectance Transformation Imaging</term>
+<term>RTI</term>
+<term>Digitisation</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Bilderfassung</term>
+<term>Artefakte</term>
+<term>Werkzeuge</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<p>
+<hi rend="color(17191C)" style="font-size:10.5pt">Reflectance Transformation Imaging (RTI) has many uses in imaging heritage items such as coins, seals, and small archaeological artifacts. It allows for imaging in a way that preserves and highlights small surface details, which are often of high significance for the study of such objects. While RTI can be done by hand, this process is time-consuming and best reserved for larger objects; smaller objects are generally imaged with a dome which provides a set of lights in enough directions that all the directions of light can be reconstructed programmatically. These domes are not readily and inexpensively available; commercial examples can cost in the neighborhood of €10.000–30.000. This means that many scholars and institutions with limited need for RTI have no access to them either for production of images or for students to learn and experiment. A number of projects for self-made RTI domes are documented (primarily online), but most of these domes require specialized electronic skills, soldering, and are camera-specific.</hi>
+</p>
+<p> </p>
+<p>
+<hi rend="color(17191C)" style="font-size:10.5pt">The SimpleRTIDome project is putting together a dome which will require no soldering, combining 3D printed parts with ready-made parts from the microcontroller and single-board computer (SBC) space, designed to be assembled by individuals with no particular “Maker” skills. All of the parts for the prototype dome came to around €200, and the released version will target a total cost in parts and printing of under €300. The use of a single-board computer to drive the project, as opposed to specialized electronics or hacky workarounds, means that the dome has access to the full range of open-source software, which is used to implement a workflow that sees a python script control the workflow of the system, controlling all lights and managing the file structure. The use of gphoto2 means that a broad range of DSLRs and even consumer-grade digital cameras are already supported without any additional work by the end user, and the prototype camera is also being designed to work with the sub-€50 Raspberry Pi Camera Module 3, so that a camera can be permanently housed within the device, allowing easy use and experimentation (on small items). </hi>
+</p>
+<p> </p>
+<p>
+<hi rend="color(17191C)" style="font-size:10.5pt">Working off of the template developed for the small teaching dome, the same controller and setup can be adapted for a larger, higher-quality dome suitable for research-quality imaging of objects larger than the coins which are the target of the teaching dome. This dome, despite being higher quality and larger will still be much less expensive than commercial alternatives (target: €500) and able to be assembled with basic craft skills, as it will similarly be solderless. </hi>
+</p>
+<p style="text-align: left; ">
+<hi rend="color(17191C)" style="font-size:10.5pt">Our poster will show the steps involved in the design and construction of the dome, as well as the necessary coding snippets to successfully run the application. Our aim is to promote our cost-effective workflow, which can be easily replicated by anyone interested, making RTI easier to integrate into teaching and heritage research. We hope, by presenting this project, the prototypes, and the GitHub documenting the project and providing the relevant instructions for procuring parts and assembly, we can make this interesting and innovative heritage imaging technology available to a wider community of scholars.</hi>
+</p>
+</body>
+<back>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl>
+<hi rend="bold" xml:space="preserve">Allen, Richard Benjamin. </hi>2023. 
                         <hi rend="italic">RTIPy</hi>. Accessed July 19, 2023, 
                         <ref target="https://github.com/BeebBenjamin/RTIPy">
-                            <hi rend="underline color(1155CC)">https://github.com/BeebBenjamin/RTIPy</hi>
-                        </ref>.
+<hi rend="underline color(1155CC)">https://github.com/BeebBenjamin/RTIPy</hi>
+</ref>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Corregidor, et al</hi>. (2020) “Arduino
+<bibl>
+<hi rend="bold">Corregidor, et al</hi>. (2020) “Arduino
                         <hi style="font-family:Cambria Math">-</hi>controlled Reflectance Transformation Imaging to the study of cultural heritage objects”. SN Applied Sciences 2:1586 | https://doi.org/10.1007/s42452-020-03343-4 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Cultural Heritage Imaging</hi>. 2002-2023. „Reflectance Transformation Imaging (RTI)“. 
+<bibl>
+<hi rend="bold">Cultural Heritage Imaging</hi>. 2002-2023. „Reflectance Transformation Imaging (RTI)“. 
                         <hi rend="italic">Cultural Heritage Imaging</hi> (blog). Accessed July 19, 2023,  
                         <ref target="https://culturalheritageimaging.org/Technologies/RTI/">
-                            <hi rend="underline color(1155CC)">https://culturalheritageimaging.org/Technologies/RTI/</hi>
-                        </ref>.
+<hi rend="underline color(1155CC)">https://culturalheritageimaging.org/Technologies/RTI/</hi>
+</ref>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Kinsman, Ted.</hi> 2016. „An Easy To Build Reflectance Transformation Imaging (RTI) System“. 
+<bibl>
+<hi rend="bold">Kinsman, Ted.</hi> 2016. „An Easy To Build Reflectance Transformation Imaging (RTI) System“. 
                         <hi rend="italic">JBC</hi> 40, No. 1: 10–14. Accessed July 17, 2023, 
                         <ref target="https://s3.cad.rit.edu/cadgallery_production/storage/media/uploads/projects/1533/documents/275/kinsman-rti-6625-47322-1-pb.pdf">
-                            <hi rend="underline color(1155CC)">https://s3.cad.rit.edu/cadgallery_production/storage/media/uploads/projects/1533/documents/275/kinsman-rti-6625-47322-1-pb.pdf</hi>
-                        </ref>.
+<hi rend="underline color(1155CC)">https://s3.cad.rit.edu/cadgallery_production/storage/media/uploads/projects/1533/documents/275/kinsman-rti-6625-47322-1-pb.pdf</hi>
+</ref>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold" xml:space="preserve">Österreichisches Archäologisches Institut. </hi>2021. 
+<bibl>
+<hi rend="bold" xml:space="preserve">Österreichisches Archäologisches Institut. </hi>2021. 
                         <hi rend="italic">RTI-Dome - Beleuchtungskuppel &amp; Software</hi>. YouTube. Accessed July 19, 2023, https://www.youtube.com/watch?v=lpPBOkwjqkI.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold" xml:space="preserve">Pawlowicz, Leszek. </hi>2017. „Affordable Reflectance Transformation Imaging Dome“. Affordable Reflectance Transformation Imaging Dome. Accessed July 19, 2023,  
+<bibl>
+<hi rend="bold" xml:space="preserve">Pawlowicz, Leszek. </hi>2017. „Affordable Reflectance Transformation Imaging Dome“. Affordable Reflectance Transformation Imaging Dome. Accessed July 19, 2023,  
                         <ref target="https://hackaday.io/project/11951/instructions">
-                            <hi rend="underline color(1155CC)">https://hackaday.io/project/11951/instructions</hi>
-                        </ref>. 
+<hi rend="underline color(1155CC)">https://hackaday.io/project/11951/instructions</hi>
+</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold" xml:space="preserve">Winslow, Sean. </hi>
-                        <hi rend="italic">SimpleRTIDome</hi>, 2023. Accessed July 19, 2023, 
+<bibl>
+<hi rend="bold" xml:space="preserve">Winslow, Sean. </hi>
+<hi rend="italic">SimpleRTIDome</hi>, 2023. Accessed July 19, 2023, 
                         <ref target="https://github.com/larkvi/SimpleRTIDome">
-                            <hi rend="underline color(1155CC)">https://github.com/larkvi/SimpleRTIDome</hi>
-                        </ref>. 
+<hi rend="underline color(1155CC)">https://github.com/larkvi/SimpleRTIDome</hi>
+</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Zaman, Tim.</hi> 2015. „Reflectance Transformation Imaging (RTI) Dome“. TimZaman.com. Accessed July 19, 2023, 
+<bibl>
+<hi rend="bold">Zaman, Tim.</hi> 2015. „Reflectance Transformation Imaging (RTI) Dome“. TimZaman.com. Accessed July 19, 2023, 
                         <ref target="http://www.timzaman.nl/rti-dome">
-                            <hi rend="underline color(1155CC)">http://www.timzaman.nl/rti-dome</hi>
-                        </ref>. 
+<hi rend="underline color(1155CC)">http://www.timzaman.nl/rti-dome</hi>
+</ref>. 
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

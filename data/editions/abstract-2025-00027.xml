@@ -1,438 +1,430 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="KAMENCEK_Teresa_Gustav_Klimt_nach_der_Secession__Kunstgeschi">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Gustav Klimt nach der Secession: Kunstgeschichte und Visual Analytics im Dialog</title>
-                <author>
-                    <persName>
-                        <surname>Kamencek</surname>
-                        <forename>Teresa</forename>
-                    </persName>
-                    <affiliation>Universität Wien, Österreich</affiliation>
-                    <email>teresa.kamencek@univie.ac.at</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Filipov</surname>
-                        <forename>Velitchko</forename>
-                    </persName>
-                    <affiliation>Technische Universität Wien, Österreich</affiliation>
-                    <email>velitchko.filipov@tuwien.ac.at</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Tuscher</surname>
-                        <forename>Michaela</forename>
-                    </persName>
-                    <affiliation>Technische Universität Wien, Österreich</affiliation>
-                    <email>michaela.tuscher@tuwien.ac.at</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Schetinger</surname>
-                        <forename>Victor</forename>
-                    </persName>
-                    <affiliation>Fachhochschule St.Pölten, Österreich</affiliation>
-                    <email>Victor.Schetinger@fhstp.ac.at</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Miksch</surname>
-                        <forename>Silvia</forename>
-                    </persName>
-                    <affiliation>Technische Universität Wien, Österreich</affiliation>
-                    <email>silvia.miksch@tuwien.ac.at</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Rosenberg</surname>
-                        <forename>Raphael</forename>
-                    </persName>
-                    <affiliation>Universität Wien, Österreich</affiliation>
-                    <email>raphael.rosenberg@univie.ac.at</email>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-12-02T13:33:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag: Offenes Feld</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Kunstgeschichte</term>
-                    <term>Moderne Kunst</term>
-                    <term>Secession Wien</term>
-                    <term>Ausstellungsdaten</term>
-                    <term>Visual Analytics</term>
-                    <term>Visualisierungen</term>
-                    <term>Netzwerkanalyse</term>
-                    <term>Interdisziplinäre Projekte</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Netzwerkanalyse</term>
-                    <term>Daten</term>
-                    <term>Personen</term>
-                    <term>Forschung</term>
-                    <term>Forschungsergebnis</term>
-                    <term>Visualisierung</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Herausforderung: Ausstellungsverhalten visualisieren und verstehen</head>
-                <p>
-                    <hi style="font-size:10pt" xml:space="preserve">Die Kunstgeschichte untersucht Phänomene, die sich über Zeit und Raum entwickeln, sich in beständiger Transformation bewegen und ändern. Obwohl die Disziplin bisher einige großformatige Datenbanken hervorgebracht hat, fehlt es bislang an geeigneten Modellen und Methoden dafür, große Datenmengen effektiv zu analysieren. Die Visualisierung umfangreicher kunsthistorischer Datensätze geht üblicherweise mit einem Dreischritt an Anforderungen einher: Sichtbarmachen, Lesbarmachen, Interpretierbarmachen. Handelt es sich um verbundene (oder zu verbindende) Daten, kann sich ein Scheitern schnell einstellen, vor allem, wenn die Daten stark verknüpft sind. Das führt oft zu einem sogenannten „Hairball Effect“, der fundamentales Detailwissen eher verschleiert als offenbart. Auch die summarische Statik von Graphen, denen die nötige Flexibilität für komplexe Analysen fehlt, kann eine sinnstiftende Visualisierung verhindern. Ausstellungsgeschichte ist ein exemplarischer Fall für die Anwendung kunsthistorischer Daten, im Kontext derer in den letzten Jahren mehrere Datenbankprojekte entwickelt wurden: Das 2009 unter Béatrice Joyeux-Prunel initiierte Projekt </hi>
-                    <hi rend="italic" style="font-size:10pt">Artl@s</hi>
-                    <hi style="font-size:10pt" xml:space="preserve"> sammelt Informationen zu Ausstellungskatalogen weltweit seit dem 18. Jahrhundert (</hi>
-                    <ref target="https://artlas.huma-num.fr/">
-                        <hi style="font-size:10pt">https://artlas.huma-num.fr/</hi>
-                    </ref>
-                    <hi style="font-size:10pt" xml:space="preserve">). Die </hi>
-                    <hi rend="italic" style="font-size:10pt">Base Salons et expositions de groupes</hi>
-                    <hi style="font-size:10pt" xml:space="preserve"> (1673-1914) des Musée d'Orsay bietet detaillierte Aufzeichnungen von Pariser Salonausstellungen sowie von nationalen und internationalen Ausstellungen auf der Grundlage von Katalogen (</hi>
-                    <ref target="https://salons.musee-orsay.fr/">
-                        <hi style="font-size:10pt">https://salons.musee-orsay.fr/</hi>
-                    </ref>
-                    <hi style="font-size:10pt" xml:space="preserve">). Die Datenbank </hi>
-                    <hi rend="italic" style="font-size:10pt">Art Exhibitions in the Czech Lands 1820-1950</hi>
-                    <hi style="font-size:10pt" xml:space="preserve"> des Instituts für Kunstgeschichte an der Tschechischen Akademie der Wissenschaften (IAH CAS) in Prag enthält Ausstellungsdaten mit ausführlichen Künstler*innenangaben, Digitalisaten von Materialien, bibliografischen Daten und Rezensionen (</hi>
-                    <ref target="https://databazevystav.udu.cas.cz/">
-                        <hi style="font-size:10pt">https://databazevystav.udu.cas.cz/</hi>
-                    </ref>
-                    <hi style="font-size:10pt" xml:space="preserve">). </hi>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="KAMENCEK_Teresa_Gustav_Klimt_nach_der_Secession__Kunstgeschi" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Gustav Klimt nach der Secession: Kunstgeschichte und Visual Analytics im Dialog</title>
+<author>
+<persName>
+<surname>Kamencek</surname>
+<forename>Teresa</forename>
+</persName>
+<affiliation>Universität Wien, Österreich</affiliation>
+<email>teresa.kamencek@univie.ac.at</email>
+</author>
+<author>
+<persName>
+<surname>Filipov</surname>
+<forename>Velitchko</forename>
+</persName>
+<affiliation>Technische Universität Wien, Österreich</affiliation>
+<email>velitchko.filipov@tuwien.ac.at</email>
+</author>
+<author>
+<persName>
+<surname>Tuscher</surname>
+<forename>Michaela</forename>
+</persName>
+<affiliation>Technische Universität Wien, Österreich</affiliation>
+<email>michaela.tuscher@tuwien.ac.at</email>
+</author>
+<author>
+<persName>
+<surname>Schetinger</surname>
+<forename>Victor</forename>
+</persName>
+<affiliation>Fachhochschule St.Pölten, Österreich</affiliation>
+<email>Victor.Schetinger@fhstp.ac.at</email>
+</author>
+<author>
+<persName>
+<surname>Miksch</surname>
+<forename>Silvia</forename>
+</persName>
+<affiliation>Technische Universität Wien, Österreich</affiliation>
+<email>silvia.miksch@tuwien.ac.at</email>
+</author>
+<author>
+<persName>
+<surname>Rosenberg</surname>
+<forename>Raphael</forename>
+</persName>
+<affiliation>Universität Wien, Österreich</affiliation>
+<email>raphael.rosenberg@univie.ac.at</email>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-12-02T13:33:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943212</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Vortrag: Offenes Feld</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Kunstgeschichte</term>
+<term>Moderne Kunst</term>
+<term>Secession Wien</term>
+<term>Ausstellungsdaten</term>
+<term>Visual Analytics</term>
+<term>Visualisierungen</term>
+<term>Netzwerkanalyse</term>
+<term>Interdisziplinäre Projekte</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Netzwerkanalyse</term>
+<term>Daten</term>
+<term>Personen</term>
+<term>Forschung</term>
+<term>Forschungsergebnis</term>
+<term>Visualisierung</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Herausforderung: Ausstellungsverhalten visualisieren und verstehen</head>
+<p>
+<hi style="font-size:10pt" xml:space="preserve">Die Kunstgeschichte untersucht Phänomene, die sich über Zeit und Raum entwickeln, sich in beständiger Transformation bewegen und ändern. Obwohl die Disziplin bisher einige großformatige Datenbanken hervorgebracht hat, fehlt es bislang an geeigneten Modellen und Methoden dafür, große Datenmengen effektiv zu analysieren. Die Visualisierung umfangreicher kunsthistorischer Datensätze geht üblicherweise mit einem Dreischritt an Anforderungen einher: Sichtbarmachen, Lesbarmachen, Interpretierbarmachen. Handelt es sich um verbundene (oder zu verbindende) Daten, kann sich ein Scheitern schnell einstellen, vor allem, wenn die Daten stark verknüpft sind. Das führt oft zu einem sogenannten „Hairball Effect“, der fundamentales Detailwissen eher verschleiert als offenbart. Auch die summarische Statik von Graphen, denen die nötige Flexibilität für komplexe Analysen fehlt, kann eine sinnstiftende Visualisierung verhindern. Ausstellungsgeschichte ist ein exemplarischer Fall für die Anwendung kunsthistorischer Daten, im Kontext derer in den letzten Jahren mehrere Datenbankprojekte entwickelt wurden: Das 2009 unter Béatrice Joyeux-Prunel initiierte Projekt </hi>
+<hi rend="italic" style="font-size:10pt">Artl@s</hi>
+<hi style="font-size:10pt" xml:space="preserve"> sammelt Informationen zu Ausstellungskatalogen weltweit seit dem 18. Jahrhundert (</hi>
+<ref target="https://artlas.huma-num.fr/">
+<hi style="font-size:10pt">https://artlas.huma-num.fr/</hi>
+</ref>
+<hi style="font-size:10pt" xml:space="preserve">). Die </hi>
+<hi rend="italic" style="font-size:10pt">Base Salons et expositions de groupes</hi>
+<hi style="font-size:10pt" xml:space="preserve"> (1673-1914) des Musée d'Orsay bietet detaillierte Aufzeichnungen von Pariser Salonausstellungen sowie von nationalen und internationalen Ausstellungen auf der Grundlage von Katalogen (</hi>
+<ref target="https://salons.musee-orsay.fr/">
+<hi style="font-size:10pt">https://salons.musee-orsay.fr/</hi>
+</ref>
+<hi style="font-size:10pt" xml:space="preserve">). Die Datenbank </hi>
+<hi rend="italic" style="font-size:10pt">Art Exhibitions in the Czech Lands 1820-1950</hi>
+<hi style="font-size:10pt" xml:space="preserve"> des Instituts für Kunstgeschichte an der Tschechischen Akademie der Wissenschaften (IAH CAS) in Prag enthält Ausstellungsdaten mit ausführlichen Künstler*innenangaben, Digitalisaten von Materialien, bibliografischen Daten und Rezensionen (</hi>
+<ref target="https://databazevystav.udu.cas.cz/">
+<hi style="font-size:10pt">https://databazevystav.udu.cas.cz/</hi>
+</ref>
+<hi style="font-size:10pt" xml:space="preserve">). </hi>
+</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>
                     ArtVis: Anwendungsbeispiel DoME
                 </head>
-                <p>
-                    <hi style="font-size:10pt" xml:space="preserve">Die </hi>
-                    <hi rend="italic" style="font-size:10pt">Database of Modern Exhibitions. European Paintings and Drawings 1905-1915</hi>
-                    <hi style="font-size:10pt" xml:space="preserve"> (kurz </hi>
-                    <hi rend="italic" style="font-size:10pt">DoME</hi>
-                    <hi style="font-size:10pt" xml:space="preserve">; </hi>
-                    <ref target="http://exhibitions.univie.ac.at/">
-                        <hi style="font-size:10pt">http://exhibitions.univie.ac.at/</hi>
-                    </ref>
-                    <hi style="font-size:10pt" xml:space="preserve">) ist für ihren Zeitraum (1905-1915) die umfassendste verfügbare Datenbank moderner Kunstausstellungen. Sie basiert auf Daten, die aus gedruckten Ausstellungskatalogen extrahiert wurden. Sie umfasst über 13.200 Künstler*innen und rund 1.300 Ausstellungen, die in 100 Städten von 219 Organisationen ausgerichtet wurden. Für jede verzeichnete Person sind Details zu ausgestellten Kunstwerken (z.B. Medium, im Katalog angeführter Titel, etc.) und den Ausstellungen, an denen sie teilgenommen hat, enthalten. Biographische Details können aus verlinkten Normdaten abgerufen werden. Außerdem finden sich in </hi>
-                    <hi rend="italic" style="font-size:10pt">DoME</hi>
-                    <hi style="font-size:10pt" xml:space="preserve">, sofern im zugehörigen Katalog enthalten, geographische, temporale und inhaltliche Informationen zu jeder verzeichneten Ausstellung (Bartosch et al. 2020). Als digitales Repositorium verknüpfter Ausstellungsdaten zwischen 1905 und 1915 erlaubt </hi>
-                    <hi rend="italic" style="font-size:10pt">DoME</hi>
-                    <hi style="font-size:10pt" xml:space="preserve"> die Nachzeichnung der transformativen Moderne, einer (Kunst-)Welt im Umbruch. </hi>
-                </p>
-                <p>
-                    <hi style="font-size:10pt" xml:space="preserve">Das Projekt </hi>
-                    <hi rend="italic" style="font-size:10pt">ArtVis. Dynamic Network Perspectives on Digital Art History</hi>
-                    <hi style="font-size:10pt">entwickelt Modelle für eine differenzierte Analyse dieser Daten und will über diesen Datensatz hinaus innovative Methoden der Visual Analytics für die interaktive Exploration und Analyse kunsthistorischer Netzwerkdaten fruchtbar machen. Das FWF-geförderte Projekt ist eine Kollaboration zwischen dem Centre for Visual Analytics Science and Technology der TU Wien und dem Institut für Kunstgeschichte der Universität Wien. Visual Analytics, definiert als „the science of analytical reasoning facilitated by interactive interfaces” (Thomas und Cook 2005, 4), verstehen sich als Schnittstelle zwischen Nutzern, Daten und Tasks (Miksch und Aigner 2014). Sie gehen über etablierte Methoden der Netzwerkanalyse hinaus und generieren visuelle Repräsentationen, die den konventionellen Stimuli der Kunstgeschichte (i.e. „Bilder“) nahestehen. Die Möglichkeit, große Datenmengen visuell und interaktiv zu untersuchen, vereint geisteswissenschaftliche Urteilsprozesse mit algorithmischer Präzision und erleichtert auf diese Weise die Analyse und Interpretation dynamischer Netzwerke.</hi>
-                    <hi style="font-size:10pt">Techniken der Visual Analytics ermöglichen es, schwer fassbare Strukturen in großen Datenmengen über geographische und temporale Prozesse anschaulich zu machen. Strukturen, die über rein qualitative, aber auch über herkömmliche statische Methoden der quantitativen Netzwerkanalyse kaum fassbar sind. Vor diesem Hintergrund haben wir mehrere innovative Visualisierungstools entwickelt (</hi>
-                    <ref target="https://artvis.cvast.tuwien.ac.at/">
-                        <hi style="font-size:10pt">https://artvis.cvast.tuwien.ac.at/</hi>
-                    </ref>
-                    <hi style="font-size:10pt" xml:space="preserve">), deren Anwendung und Nutzen in der folgenden Fallstudie durch die Verknüpfung quantitativer und qualitativer Analyse exemplarisch dargestellt werden. </hi>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
+<p>
+<hi style="font-size:10pt" xml:space="preserve">Die </hi>
+<hi rend="italic" style="font-size:10pt">Database of Modern Exhibitions. European Paintings and Drawings 1905-1915</hi>
+<hi style="font-size:10pt" xml:space="preserve"> (kurz </hi>
+<hi rend="italic" style="font-size:10pt">DoME</hi>
+<hi style="font-size:10pt" xml:space="preserve">; </hi>
+<ref target="http://exhibitions.univie.ac.at/">
+<hi style="font-size:10pt">http://exhibitions.univie.ac.at/</hi>
+</ref>
+<hi style="font-size:10pt" xml:space="preserve">) ist für ihren Zeitraum (1905-1915) die umfassendste verfügbare Datenbank moderner Kunstausstellungen. Sie basiert auf Daten, die aus gedruckten Ausstellungskatalogen extrahiert wurden. Sie umfasst über 13.200 Künstler*innen und rund 1.300 Ausstellungen, die in 100 Städten von 219 Organisationen ausgerichtet wurden. Für jede verzeichnete Person sind Details zu ausgestellten Kunstwerken (z.B. Medium, im Katalog angeführter Titel, etc.) und den Ausstellungen, an denen sie teilgenommen hat, enthalten. Biographische Details können aus verlinkten Normdaten abgerufen werden. Außerdem finden sich in </hi>
+<hi rend="italic" style="font-size:10pt">DoME</hi>
+<hi style="font-size:10pt" xml:space="preserve">, sofern im zugehörigen Katalog enthalten, geographische, temporale und inhaltliche Informationen zu jeder verzeichneten Ausstellung (Bartosch et al. 2020). Als digitales Repositorium verknüpfter Ausstellungsdaten zwischen 1905 und 1915 erlaubt </hi>
+<hi rend="italic" style="font-size:10pt">DoME</hi>
+<hi style="font-size:10pt" xml:space="preserve"> die Nachzeichnung der transformativen Moderne, einer (Kunst-)Welt im Umbruch. </hi>
+</p>
+<p>
+<hi style="font-size:10pt" xml:space="preserve">Das Projekt </hi>
+<hi rend="italic" style="font-size:10pt">ArtVis. Dynamic Network Perspectives on Digital Art History</hi>
+<hi style="font-size:10pt">entwickelt Modelle für eine differenzierte Analyse dieser Daten und will über diesen Datensatz hinaus innovative Methoden der Visual Analytics für die interaktive Exploration und Analyse kunsthistorischer Netzwerkdaten fruchtbar machen. Das FWF-geförderte Projekt ist eine Kollaboration zwischen dem Centre for Visual Analytics Science and Technology der TU Wien und dem Institut für Kunstgeschichte der Universität Wien. Visual Analytics, definiert als „the science of analytical reasoning facilitated by interactive interfaces” (Thomas und Cook 2005, 4), verstehen sich als Schnittstelle zwischen Nutzern, Daten und Tasks (Miksch und Aigner 2014). Sie gehen über etablierte Methoden der Netzwerkanalyse hinaus und generieren visuelle Repräsentationen, die den konventionellen Stimuli der Kunstgeschichte (i.e. „Bilder“) nahestehen. Die Möglichkeit, große Datenmengen visuell und interaktiv zu untersuchen, vereint geisteswissenschaftliche Urteilsprozesse mit algorithmischer Präzision und erleichtert auf diese Weise die Analyse und Interpretation dynamischer Netzwerke.</hi>
+<hi style="font-size:10pt">Techniken der Visual Analytics ermöglichen es, schwer fassbare Strukturen in großen Datenmengen über geographische und temporale Prozesse anschaulich zu machen. Strukturen, die über rein qualitative, aber auch über herkömmliche statische Methoden der quantitativen Netzwerkanalyse kaum fassbar sind. Vor diesem Hintergrund haben wir mehrere innovative Visualisierungstools entwickelt (</hi>
+<ref target="https://artvis.cvast.tuwien.ac.at/">
+<hi style="font-size:10pt">https://artvis.cvast.tuwien.ac.at/</hi>
+</ref>
+<hi style="font-size:10pt" xml:space="preserve">), deren Anwendung und Nutzen in der folgenden Fallstudie durch die Verknüpfung quantitativer und qualitativer Analyse exemplarisch dargestellt werden. </hi>
+</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>
                     Fallstudie: Gustav Klimt, Josef Engelhart und die Wiener Secession – Kollektivität, Krise, Konsequenz
                 </head>
-                <p>
-                    <hi style="font-size:10pt" xml:space="preserve">Der Schirmterminus „Secession“ wurde zu Ende des 19. Jahrhunderts von Künstler*innengruppen in München, Wien und Berlin gewählt, die kein einheitliches Programm hatten, sich aber als fortschrittlichere Erweiterung der traditionellen Kunstinstitutionen verstanden. In der kunsthistorischen Forschung wird „Secession“ primär mit dem öffentlich wirksamen Ruf nach künstlerischer Freiheit der Moderne verknüpft. Ihr Konzept als Kollektivsingular darf jedoch nicht primär als Generationskampf, sondern vielmehr als Bekenntnis zur Notwendigkeit einer Neukonzeption </hi>
-                    <anchor xml:id="Int_bAXIKXzd"/>
-                    <hi style="font-size:10pt" xml:space="preserve">des Künstler*innenberufs und seiner Repräsentation verstanden werden. Denn ihre Agenda betraf vor allem die Ausstellungsbedingungen und -modalitäten ihrer jeweiligen Städte: Alle Arten von Kunst sollte ausstellbar sein, kuratiert von einem Komitee aus Mitgliedern. Mit der Formalisierung der Secessionen knapp vor 1900 ist die Kunstgeschichte mit einem neuartigen Ausstellungskonzept konfrontiert, das nicht nur die Öffentlichkeit innovativer Kunstformen, sondern auch die internationale Vernetzung der lokalen Kunstmärkte betraf. Als symptomatisch für die Kunst um 1900 kann dabei die kunsthistorische Konsolidierung der Secessionen um wenige prominente Künstlerpersönlichkeiten gewertet werden. In Wien fungiert bis heute Gustav Klimt als unbestrittenes Sinnbild der Secession, obgleich er ihr nur acht Jahre angehörte. </hi>
-                    <hi style="font-size:10pt">
-                        <lb/>Die Kunstgeschichte hat sich der Wiener Secession in ihrem individuellen Kontext, ihren Protagonist*innen, ihrem Stilpluralismus und letztlich sogar ihren Überschneidungen in Sujets und Mitgliederlisten der Gruppen in Berlin und München eingehend gewidmet (zuletzt Gleis und Storch 2023). Offen bleibt aber eine systematische Analyse der sich dynamisch verändernden Strukturen: Welche Netzwerke etablierten die Wiener Künstler*innen? Welche Auswirkungen hatte der Austritt der sogenannten Klimt-Gruppe im Jahr 1905? Derartige Fragen können erstmals mit der kohärenten Visualisierung von vernetzten Ausstellungsdaten gestellt werden, die ein nuanciertes Verständnis von Verhaltensmustern und Zusammenhängen aufdecken.
+<p>
+<hi style="font-size:10pt" xml:space="preserve">Der Schirmterminus „Secession“ wurde zu Ende des 19. Jahrhunderts von Künstler*innengruppen in München, Wien und Berlin gewählt, die kein einheitliches Programm hatten, sich aber als fortschrittlichere Erweiterung der traditionellen Kunstinstitutionen verstanden. In der kunsthistorischen Forschung wird „Secession“ primär mit dem öffentlich wirksamen Ruf nach künstlerischer Freiheit der Moderne verknüpft. Ihr Konzept als Kollektivsingular darf jedoch nicht primär als Generationskampf, sondern vielmehr als Bekenntnis zur Notwendigkeit einer Neukonzeption </hi>
+<anchor xml:id="Int_bAXIKXzd"/>
+<hi style="font-size:10pt" xml:space="preserve">des Künstler*innenberufs und seiner Repräsentation verstanden werden. Denn ihre Agenda betraf vor allem die Ausstellungsbedingungen und -modalitäten ihrer jeweiligen Städte: Alle Arten von Kunst sollte ausstellbar sein, kuratiert von einem Komitee aus Mitgliedern. Mit der Formalisierung der Secessionen knapp vor 1900 ist die Kunstgeschichte mit einem neuartigen Ausstellungskonzept konfrontiert, das nicht nur die Öffentlichkeit innovativer Kunstformen, sondern auch die internationale Vernetzung der lokalen Kunstmärkte betraf. Als symptomatisch für die Kunst um 1900 kann dabei die kunsthistorische Konsolidierung der Secessionen um wenige prominente Künstlerpersönlichkeiten gewertet werden. In Wien fungiert bis heute Gustav Klimt als unbestrittenes Sinnbild der Secession, obgleich er ihr nur acht Jahre angehörte. </hi>
+<hi style="font-size:10pt">
+<lb/>Die Kunstgeschichte hat sich der Wiener Secession in ihrem individuellen Kontext, ihren Protagonist*innen, ihrem Stilpluralismus und letztlich sogar ihren Überschneidungen in Sujets und Mitgliederlisten der Gruppen in Berlin und München eingehend gewidmet (zuletzt Gleis und Storch 2023). Offen bleibt aber eine systematische Analyse der sich dynamisch verändernden Strukturen: Welche Netzwerke etablierten die Wiener Künstler*innen? Welche Auswirkungen hatte der Austritt der sogenannten Klimt-Gruppe im Jahr 1905? Derartige Fragen können erstmals mit der kohärenten Visualisierung von vernetzten Ausstellungsdaten gestellt werden, die ein nuanciertes Verständnis von Verhaltensmustern und Zusammenhängen aufdecken.
                     </hi>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
+</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>
                    Kollektivität und Krise in Wien: Gustav Klimt und Josef Engelhart
                 </head>
-                <p>
-                    <hi style="font-size:10pt">Für die Zeit der Wiener Secession von ihrer Gründung (1897) bis zum Austritt der Klimt-Gruppe (1905) lässt sich eine kontinuierliche Teilnahme Klimts in Veranstaltungen der Gruppe feststellen: In den 25 Ausstellungen, die die Secession über acht Jahre hinweg veranstaltete</hi><ref n="1" target="ftn1"/>
-                    <hi style="font-size:10pt">, stellte Klimt, ihr Mitbegründer und erster Präsident, neunmal aus. Josef Engelhart, ebenfalls Mitbegründer und fundamentale Kraft im Prozess des Austritts der Secession aus dem akademisch geprägten Wiener Künstlerhaus, nahm an zehn Ausstellungen Teil. Beide gemeinsam partizipierten in acht Ausstellungen und gehörten dem ersten Vorstand des Vereins an</hi>
-                    <hi rend="annotation_reference">, jeweils in Position des Präsidenten (</hi>
-                    <hi style="font-size:10pt">1898 bzw. 1899; Wiener Secession 1898, 7; 1899, 8). Eine obligatorische Konzentration auf die aktive und exklusive Partizipation in der Gruppe wurde dabei in den öffentlich vorgelegten Statuten beschlossen: „§ 10. Die Mitglieder der Vereinigung stellen in Wien nur in jenen öffentlichen Ausstellungen aus, welche von der Vereinigung veranstaltet werden; sie beschicken alle öffentlichen Ausstellungen, die von einer anderen ähnlichen Corporation veranstaltet werden, nicht.“ (Wiener Secession, 1898, 14) Im Juni 1905 erfuhr die Gruppierung dasselbe Schicksal, aus dem sie hervorgegangen war: eine Spaltung innerhalb ihres Gründerkerns. Infolge künstlerischer und struktureller Unstimmigkeiten</hi><ref n="2" target="ftn2"/>
-                    <hi style="font-size:10pt" xml:space="preserve"> traten Klimt, Carl Moll, Josef Hoffmann, Otto Wagner und anderen aus der Vereinigung aus. Der Abspaltung dieser Klimt-Gruppe und ihrer folgenden Aktivitäten – insbesondere die Organisation zweier Ausstellungen unter dem Titel „Kunstschau“ wurde in der kunsthistorischen Forschung breite Aufmerksamkeit geschenkt (zuletzt Kristan 2016). Die strukturellen Auswirkungen des Schismas auf beide Seiten wurden bisher aber nicht untersucht. </hi>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
+<p>
+<hi style="font-size:10pt">Für die Zeit der Wiener Secession von ihrer Gründung (1897) bis zum Austritt der Klimt-Gruppe (1905) lässt sich eine kontinuierliche Teilnahme Klimts in Veranstaltungen der Gruppe feststellen: In den 25 Ausstellungen, die die Secession über acht Jahre hinweg veranstaltete</hi><ref n="1" target="ftn1"/>
+<hi style="font-size:10pt">, stellte Klimt, ihr Mitbegründer und erster Präsident, neunmal aus. Josef Engelhart, ebenfalls Mitbegründer und fundamentale Kraft im Prozess des Austritts der Secession aus dem akademisch geprägten Wiener Künstlerhaus, nahm an zehn Ausstellungen Teil. Beide gemeinsam partizipierten in acht Ausstellungen und gehörten dem ersten Vorstand des Vereins an</hi>
+<hi rend="annotation_reference">, jeweils in Position des Präsidenten (</hi>
+<hi style="font-size:10pt">1898 bzw. 1899; Wiener Secession 1898, 7; 1899, 8). Eine obligatorische Konzentration auf die aktive und exklusive Partizipation in der Gruppe wurde dabei in den öffentlich vorgelegten Statuten beschlossen: „§ 10. Die Mitglieder der Vereinigung stellen in Wien nur in jenen öffentlichen Ausstellungen aus, welche von der Vereinigung veranstaltet werden; sie beschicken alle öffentlichen Ausstellungen, die von einer anderen ähnlichen Corporation veranstaltet werden, nicht.“ (Wiener Secession, 1898, 14) Im Juni 1905 erfuhr die Gruppierung dasselbe Schicksal, aus dem sie hervorgegangen war: eine Spaltung innerhalb ihres Gründerkerns. Infolge künstlerischer und struktureller Unstimmigkeiten</hi><ref n="2" target="ftn2"/>
+<hi style="font-size:10pt" xml:space="preserve"> traten Klimt, Carl Moll, Josef Hoffmann, Otto Wagner und anderen aus der Vereinigung aus. Der Abspaltung dieser Klimt-Gruppe und ihrer folgenden Aktivitäten – insbesondere die Organisation zweier Ausstellungen unter dem Titel „Kunstschau“ wurde in der kunsthistorischen Forschung breite Aufmerksamkeit geschenkt (zuletzt Kristan 2016). Die strukturellen Auswirkungen des Schismas auf beide Seiten wurden bisher aber nicht untersucht. </hi>
+</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>
                     Kollaboration und Konsequenz: Wien, München und Berlin 
                 </head>
-                <p>
-                    <hi style="font-size:10pt" xml:space="preserve">Die Frage nach den jeweiligen Ausstellungsnetzwerken der gespaltenen Wiener Secessionisten nach 1905 lässt sich am Beispiel von Klimt und Engelhart im Vergleich mit den deutschen Secessionist*innen stellen: Wie gestalteten sich ihre Beziehungen zu den Secessionen in München und Berlin? Was die Mitgliederverzeichnisse beider betrifft, so sehen wir keine maßgeblichen Unterschiede: Klimt und Engelhart blieben Mitglieder der Berliner Secession (Berliner Secession 1906, 47-48), während Klimt weiterhin der einzige Wiener Künstler im Mitgliederverzeichnis der Münchener Secession blieb (Münchener Secession 1906, 56). Diese Kontinuität kann ein Indiz dafür sein, dass Klimt trotz Verweigerung der Kollaboration mit der lokalen Secession das Potenzial der Vernetzung unter den internationalen Secessionist*innen als gewinnbringend für zukünftige Unternehmungen erachtete. In Hinblick auf die Ausstellungspartizipation beider Künstler lässt sich festhalten, dass Engelhart vor der Gründung der Wiener Secession in drei Jahren sechs Werke mit der Münchener Secession ausstellte und dort zum Verkauf freigab (Münchener Secession 1893, 37; 1894, 33; 1895, 36-37) und nach 1905 im Zuge einer Einladung der gesamten Wiener Secession zwei Werke ausstellte (Münchener Secession 1911, 9). Im Vorfeld dessen luden die in der Wiener Sezesion verbliebenen Künstler den stilistisch ähnlich traditionell ausgerichteten Münchener Fritz von Uhde dreimal (1905, 1907 und 1909) zur Teilnahme an ihren Ausstellungen ein. Engelharts Zusammenarbeit mit der Gruppe in München als Individuum wich einer typischen Eingliederung in das Kollektiv der Wiener Secession. </hi>
-                    <lb/>
-                    <hi style="font-size:10pt">Eine Kollaboration zwischen Engelhart und der Berliner Secession ergab sich sowohl vor als auch nach 1905 trotz fortwährender, korrespondierender Mitgliedschaft Engelharts im Berliner Verein nicht. Klimt, korrespondierendes Mitglied in München, stellte vor seinem Austritt ein einziges Mal nicht mit, sondern</hi>
-                    <hi rend="italic" style="font-size:10pt">in</hi>
-                    <hi style="font-size:10pt" xml:space="preserve"> der Münchener Secession – nämlich zum Anlass der ersten Schau des Deutschen Künstlerbundes in ihren Räumlichkeiten – zwei Gemälde aus (Münchener Secession 1904, 25). Die Berliner Secession, die spätestens seit 1901 als Auffangstelle progressiverer Künstler*innen galt,</hi><ref n="3" target="ftn3"/>
-                    <hi style="font-size:10pt" xml:space="preserve"> zeigte ab 1905 insgesamt 39 Werke Klimts, 13 davon im Rahmen der zweiten Ausstellung des Deutschen Künstlerbundes in ihrem Haus am Kurfürstendamm (Deutscher Künstlerbund 1905, 21; Berliner Secession 1907, 17; 1909, 27; 1910, 48). Vergleicht man die Ausstellungsaktivität Klimts mit jener Max Liebermanns (Abb. 1), der bis 1911 kontinuierlich den Vorsitz der Berliner Secession innehatte und dort zwischen 1905 und 1915 179 Werke ausstellte, so lässt sich feststellen, dass Klimt auch nach 1905 an den Ausstellungen der Berliner Gruppe (1908, 1909 und 1911) teilnahm und Liebermann zur </hi>
-                    <hi rend="italic" style="font-size:10pt">Internationalen Kunstschau Wien</hi>
-                    <hi style="font-size:10pt" xml:space="preserve"> (1909) einlud. Klimts Mitaussteller*innennetzwerk zeigt einen beträchtlichen Anteil deutscher Künstler*innen (78.91%), wobei Liebermanns Netzwerk deutscher Mitaussteller*innen Klimts vollständig deckt. Die geographische Visualisierung (Tuscher et al. 2024) von Klimts Ausstellungsaktivität zeigt damit einhergehend eine vermehrte Partizipation in Ausstellungen in Deutschland an (Abb. 2). Als schon zu Lebzeiten weitaus prominentestes Gründungsmitglied der Secession resultierte seine Ausstellungsaktivität in einem supranationalen Netzwerk, das nicht mehr an Wien gebunden war. Die gebliebenen Wiener Secessionisten hielten dagegen ein nachhaltig eng verknüpftes Netzwerk aufrecht, ihre Aktivitäten beschränkten sich auf lokale Ausstellungen oder Ausstellungen mit österreichischen Künstler*innen im Ausland, wie am Beispiel Engelharts deutlich hervorgeht (</hi>
-                    <anchor xml:id="Int_S71USwKO"/>
-                    <hi style="font-size:10pt">Abb. 3, Abb. 4, Abb. 5). Zusätzlich zu ihren Verbindungen nach Berlin bzw. München stellten Klimt und Engelhart nur ein weiteres Mal im untersuchten Zeitahmen und bezeichnenderweise ohne Beteiligung beider</hi><ref n="4" target="ftn4"/>
-                    <hi style="font-size:10pt" xml:space="preserve">gemeinsam aus. </hi>
-                </p>
-                <p>
-                    <hi style="font-size:10pt" xml:space="preserve">Die Dichotomie der Ausstellungsnetzwerke beider Künstler wird auch anhand des relativen Alters ihrer Mitaussteller*innen sichtbar. Klimt (geb. 1862) und Engelhart (geb. 1862) sind nahezu gleich alt und gehören jener Künstler*innengeneration an, zu der auch Wassily Kandinsky (geb. 1866) zählt und die der Generation von Max Liebermann (geb. 1847) nachfolgt. Zuerst zeigt Klimts Netzwerk höhere Altersdiversität (bis zu 35 Jahre jünger und 50 Jahre älter; Abb. 6) als Engelharts (bis zu 20 Jahre jünger und 35 Jahre älter; Abb. 7). Zudem setzt es sich zwischen 1905 und 1915 zu 26.3% aus gleichaltrigen Künstler*innen zusammen, während es bei Engelhart 46.33% sind. Viel öfter stellte Klimt mit Künstler*innen aus, die 10 bis 20 Jahre jünger waren als er (40.42%), Engelhart dagegen deutlich seltener (36.34%). Dabei erweist sich die vorrangige Kollaboration mit jüngeren Künstler*innen als Charakteristikum einer progressiven Künstler*innenschicht, die sich durch stilistische Weiterentwicklung typisieren lässt. Ein ähnliches Verhältnis wird etwa im Netzwerk des Avantgardisten Kandinsky sichtbar (57.47% 10 bis 20 Jahre jünger). Die festgestellte Altersverteilung im Netzwerk Engelharts gleicht dagegen derjenigen des formal konservativeren Münchener Secessionisten Franz von Stuck (33.16% 10 bis 20 Jahre jünger). </hi>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-               <head> Fazit: Eine Stadt, zwei Netzwerke</head>
-                <p>
-                    <hi style="font-size:10pt">Die hier vorgestellten Visualisierungen machen erstmals das Ausstellungsverhalten von Klimt und Engelhart nach 1905 deutlich. Grundlegende Kenngrößen von Ausstellungsaktivität wie ihr Verlauf über Zeit und Raum, die Nationalität oder das relative Alter der Mitaussteller*innen können erstmals in kunsthistorische Analysen inkludiert werden. Das Fallbeispiel zeigt, wie Künstler*innen und ihre Gruppen in dieser Zeit der „Avantgarden“ mit Umbrüchen umgingen: Die verbliebenen Secessionisten, die kaum nachhaltige Reputation erlangten, begriffen ihre Identität über die Strukturen ihrer Organisation als einheitliches und lokal agierendes Kollektiv, während die Klimt-Gruppe, bekannt genug um sich nicht mehr auf Wien zu konzentrieren, supranationale Aktivität zur Prämisse machte und jüngere Künstler*innen anzog. Auf diese Weise entspricht das Ausstellungsverhalten der Klimt-Gruppe jenem für Avantgardevereinigungen emblematischen, das der Wiener Secessionisten eher einer konservativeren Künstler*innengruppierung des 19. Jahrhunderts.</hi>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">    
-                <head>
+<p>
+<hi style="font-size:10pt" xml:space="preserve">Die Frage nach den jeweiligen Ausstellungsnetzwerken der gespaltenen Wiener Secessionisten nach 1905 lässt sich am Beispiel von Klimt und Engelhart im Vergleich mit den deutschen Secessionist*innen stellen: Wie gestalteten sich ihre Beziehungen zu den Secessionen in München und Berlin? Was die Mitgliederverzeichnisse beider betrifft, so sehen wir keine maßgeblichen Unterschiede: Klimt und Engelhart blieben Mitglieder der Berliner Secession (Berliner Secession 1906, 47-48), während Klimt weiterhin der einzige Wiener Künstler im Mitgliederverzeichnis der Münchener Secession blieb (Münchener Secession 1906, 56). Diese Kontinuität kann ein Indiz dafür sein, dass Klimt trotz Verweigerung der Kollaboration mit der lokalen Secession das Potenzial der Vernetzung unter den internationalen Secessionist*innen als gewinnbringend für zukünftige Unternehmungen erachtete. In Hinblick auf die Ausstellungspartizipation beider Künstler lässt sich festhalten, dass Engelhart vor der Gründung der Wiener Secession in drei Jahren sechs Werke mit der Münchener Secession ausstellte und dort zum Verkauf freigab (Münchener Secession 1893, 37; 1894, 33; 1895, 36-37) und nach 1905 im Zuge einer Einladung der gesamten Wiener Secession zwei Werke ausstellte (Münchener Secession 1911, 9). Im Vorfeld dessen luden die in der Wiener Sezesion verbliebenen Künstler den stilistisch ähnlich traditionell ausgerichteten Münchener Fritz von Uhde dreimal (1905, 1907 und 1909) zur Teilnahme an ihren Ausstellungen ein. Engelharts Zusammenarbeit mit der Gruppe in München als Individuum wich einer typischen Eingliederung in das Kollektiv der Wiener Secession. </hi>
+<lb/>
+<hi style="font-size:10pt">Eine Kollaboration zwischen Engelhart und der Berliner Secession ergab sich sowohl vor als auch nach 1905 trotz fortwährender, korrespondierender Mitgliedschaft Engelharts im Berliner Verein nicht. Klimt, korrespondierendes Mitglied in München, stellte vor seinem Austritt ein einziges Mal nicht mit, sondern</hi>
+<hi rend="italic" style="font-size:10pt">in</hi>
+<hi style="font-size:10pt" xml:space="preserve"> der Münchener Secession – nämlich zum Anlass der ersten Schau des Deutschen Künstlerbundes in ihren Räumlichkeiten – zwei Gemälde aus (Münchener Secession 1904, 25). Die Berliner Secession, die spätestens seit 1901 als Auffangstelle progressiverer Künstler*innen galt,</hi><ref n="3" target="ftn3"/>
+<hi style="font-size:10pt" xml:space="preserve"> zeigte ab 1905 insgesamt 39 Werke Klimts, 13 davon im Rahmen der zweiten Ausstellung des Deutschen Künstlerbundes in ihrem Haus am Kurfürstendamm (Deutscher Künstlerbund 1905, 21; Berliner Secession 1907, 17; 1909, 27; 1910, 48). Vergleicht man die Ausstellungsaktivität Klimts mit jener Max Liebermanns (Abb. 1), der bis 1911 kontinuierlich den Vorsitz der Berliner Secession innehatte und dort zwischen 1905 und 1915 179 Werke ausstellte, so lässt sich feststellen, dass Klimt auch nach 1905 an den Ausstellungen der Berliner Gruppe (1908, 1909 und 1911) teilnahm und Liebermann zur </hi>
+<hi rend="italic" style="font-size:10pt">Internationalen Kunstschau Wien</hi>
+<hi style="font-size:10pt" xml:space="preserve"> (1909) einlud. Klimts Mitaussteller*innennetzwerk zeigt einen beträchtlichen Anteil deutscher Künstler*innen (78.91%), wobei Liebermanns Netzwerk deutscher Mitaussteller*innen Klimts vollständig deckt. Die geographische Visualisierung (Tuscher et al. 2024) von Klimts Ausstellungsaktivität zeigt damit einhergehend eine vermehrte Partizipation in Ausstellungen in Deutschland an (Abb. 2). Als schon zu Lebzeiten weitaus prominentestes Gründungsmitglied der Secession resultierte seine Ausstellungsaktivität in einem supranationalen Netzwerk, das nicht mehr an Wien gebunden war. Die gebliebenen Wiener Secessionisten hielten dagegen ein nachhaltig eng verknüpftes Netzwerk aufrecht, ihre Aktivitäten beschränkten sich auf lokale Ausstellungen oder Ausstellungen mit österreichischen Künstler*innen im Ausland, wie am Beispiel Engelharts deutlich hervorgeht (</hi>
+<anchor xml:id="Int_S71USwKO"/>
+<hi style="font-size:10pt">Abb. 3, Abb. 4, Abb. 5). Zusätzlich zu ihren Verbindungen nach Berlin bzw. München stellten Klimt und Engelhart nur ein weiteres Mal im untersuchten Zeitahmen und bezeichnenderweise ohne Beteiligung beider</hi><ref n="4" target="ftn4"/>
+<hi style="font-size:10pt" xml:space="preserve">gemeinsam aus. </hi>
+</p>
+<p>
+<hi style="font-size:10pt" xml:space="preserve">Die Dichotomie der Ausstellungsnetzwerke beider Künstler wird auch anhand des relativen Alters ihrer Mitaussteller*innen sichtbar. Klimt (geb. 1862) und Engelhart (geb. 1862) sind nahezu gleich alt und gehören jener Künstler*innengeneration an, zu der auch Wassily Kandinsky (geb. 1866) zählt und die der Generation von Max Liebermann (geb. 1847) nachfolgt. Zuerst zeigt Klimts Netzwerk höhere Altersdiversität (bis zu 35 Jahre jünger und 50 Jahre älter; Abb. 6) als Engelharts (bis zu 20 Jahre jünger und 35 Jahre älter; Abb. 7). Zudem setzt es sich zwischen 1905 und 1915 zu 26.3% aus gleichaltrigen Künstler*innen zusammen, während es bei Engelhart 46.33% sind. Viel öfter stellte Klimt mit Künstler*innen aus, die 10 bis 20 Jahre jünger waren als er (40.42%), Engelhart dagegen deutlich seltener (36.34%). Dabei erweist sich die vorrangige Kollaboration mit jüngeren Künstler*innen als Charakteristikum einer progressiven Künstler*innenschicht, die sich durch stilistische Weiterentwicklung typisieren lässt. Ein ähnliches Verhältnis wird etwa im Netzwerk des Avantgardisten Kandinsky sichtbar (57.47% 10 bis 20 Jahre jünger). Die festgestellte Altersverteilung im Netzwerk Engelharts gleicht dagegen derjenigen des formal konservativeren Münchener Secessionisten Franz von Stuck (33.16% 10 bis 20 Jahre jünger). </hi>
+</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head> Fazit: Eine Stadt, zwei Netzwerke</head>
+<p>
+<hi style="font-size:10pt">Die hier vorgestellten Visualisierungen machen erstmals das Ausstellungsverhalten von Klimt und Engelhart nach 1905 deutlich. Grundlegende Kenngrößen von Ausstellungsaktivität wie ihr Verlauf über Zeit und Raum, die Nationalität oder das relative Alter der Mitaussteller*innen können erstmals in kunsthistorische Analysen inkludiert werden. Das Fallbeispiel zeigt, wie Künstler*innen und ihre Gruppen in dieser Zeit der „Avantgarden“ mit Umbrüchen umgingen: Die verbliebenen Secessionisten, die kaum nachhaltige Reputation erlangten, begriffen ihre Identität über die Strukturen ihrer Organisation als einheitliches und lokal agierendes Kollektiv, während die Klimt-Gruppe, bekannt genug um sich nicht mehr auf Wien zu konzentrieren, supranationale Aktivität zur Prämisse machte und jüngere Künstler*innen anzog. Auf diese Weise entspricht das Ausstellungsverhalten der Klimt-Gruppe jenem für Avantgardevereinigungen emblematischen, das der Wiener Secessionisten eher einer konservativeren Künstler*innengruppierung des 19. Jahrhunderts.</hi>
+</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>
                     
                     Under Construction: Visual Analytics und Digital Humanities
                 </head>
-                <p>
-                    <hi style="font-size:10pt">Durch Zusammenführung von Datenbank, neuartigen Techniken der Visual Analytics sowie kunsthistorischen Recherchen konnte in einer Fallstudie exemplarisch gezeigt werden, dass geisteswissenschaftliche Fragestellungen nach dynamischen sozialen Netzwerken auch und effektiver quantitativ verstanden werden können. Die flexiblen Visualisierungen dynamischer Informationen, die der einfachen Verbildlichung von Daten gegenüberstehen, beherbergen großes Potential für die Digital Humanities. Solche Methoden befinden sich noch im Entwicklungsstadium, bieten aber schon jetzt ein vielseitig anwendbares Instrumentarium.</hi>
-                </p>
-                <figure>
-                    <graphic n="1001" width="16.007291666666667cm" height="8.281458333333333cm" url="Pictures/f0e6e04d5550c80f932c5e86116d226b.jpeg" rend="inline"/>
-                    <head>Abb. 1: Vergleichende Visualisierung von Gustav Klimt und Max Liebermann. Die vorgestellten Tools enthalten a) eine Zeitlinie mit Anzahl der Ausstellungsbeteiligungen bzw. ausgestellter Werke visualisiert durch Halbkreise, um zeitliche Veränderungen im Ausstellungsverhalten nachzuvollziehen; b) eine Tabelle der Ausstellungen, um die Summe und das Verhältnis der jeweiligen Beteiligungen zu berücksichtigen; c) ein dynamisches Ego-Netzwerk und Flächendiagramm, die nach wählbaren Kriterien (Nationalität, Gender, Altersgruppe) die Zusammensetzung jener Künstler*innen anzeigen, die dreimal oder öfter zusammen mit dem Ego ausgestellt haben. In Gelb werden Ausstellungen markiert, an denen beide Künstler teilgenommen haben. Im Ego-Netzwerk schwarz hervorgehoben sind jene Künstler*innen, die mit beiden gemeinsam ausgestellt haben. In diesem Fall zeigt das Netzwerk eine fast gänzliche Übereinstimmung.</head>
-                </figure> 
-                <figure>   
-                    <graphic n="1002" width="15.980833333333333cm" height="7.963958333333333cm" url="Pictures/5ef8f709cc31f923aa4e40043da1a91a.jpeg" rend="inline"/>
-                    <head>Abb. 2: Geographische Darstellung der Ausstellungsbeteiligungen Gustav Klimts zwischen 1905 und 1915, mit einer Konzentration von Ausstellungen in Deutschland. Der Kreisdurchmesser entspricht der Anzahl der in der jeweiligen Stadt ausgestellten Werke, ihr Opazitätsgrad der Anzahl der Ausstellungen in der jeweiligen Stadt. Auf diese Weise können „Hotspots“ angezeigt werden und auf derselben Karte verglichen werden. Karten sind die am häufigsten verwendete Visualisierungstechnik für raumbezogene Daten und elementare Informationsquelle in geisteswissenschaftlicher Forschung.</head>
-                </figure>
-                <figure>
-                    <graphic n="1003" width="15.980833333333333cm" height="7.9375cm" url="Pictures/328dbfc62992c3b3904eea0270827d80.jpeg" rend="inline"/>
-                    <head> Geographische Darstellung der Ausstellungsbeteiligungen Josef Engelharts (1905-1915). Auffällig ist ihre Konzentration in Wien (10 Ausstellungen mit 274 Werken).</head>
-                </figure>
-                <figure>
-                    <graphic n="1004" width="16.03375cm" height="8.202083333333333cm" url="Pictures/9881879d497334ea970b6f9a4f52138b.jpeg" rend="inline"/>
-                    <head>Abb. 4: Visualisierung der Ausstellungsaktivität Josef Engelharts. Die Tabelle zeigt eine Konzentration auf Wiener Secessions-Ausstellungen, sein Netzwerk dementsprechend einen großen Anteil an österreichischen Malern (43.21% nach heutigen Ländergrenzen, ausschließlich männlich).</head>
-                </figure>
-                <figure>
-                    <graphic n="1005" width="15.980833333333333cm" height="11.58875cm" url="Pictures/f94a5cdf168145f7277823eedf00af47.jpeg" rend="inline"/>
-                    <head>Abb. 5: Eine Erhöhung der Anzahl der gemeinsamen Ausstellungsteilnahmen (≥ 10) zeigt das nachhaltig interne Netzwerk der Wiener Secessionisten. Alle in der Visualisierung aufscheinenden Künstler hielten diverse Führungspositionen, vor allem im sogenannten „Arbeitsausschuss“ und der „Hängekommission“ des Vereins, inne.</head>
-                </figure>
-                <figure>
-                    <graphic n="1006" width="16.002cm" height="2.8292777777777776cm" url="Pictures/cfe9f52a0255b5a0eb69e937ce7fb9a6.jpeg" rend="inline"/>
-                    <head>Abb. 6: Relative Altersverteilung im Mitaussteller*innen-Netzwerk Klimts. Das Flächendiagramm zeigt die Verteilung von demografischen Merkmalen der Mitaussteller*innen des Egos im Laufe der Zeit (1905-1915). Es ermöglicht die Identifikation von Kontinuitäten und Verschiebungen in der Zusammensetzung des Ego-Netzwerks.</head>
-                    <lb/>
-                    <lb/>
-                </figure>
-                <figure>
-                    <graphic n="1007" width="16.002cm" height="2.8301055555555554cm" url="Pictures/ed32efbf249dc3b246d57a14ac879653.jpeg" rend="inline"/>
-                    <head> Abb. 7: Relative Altersverteilung im Mitaussteller*innen-Netzwerk Engelharts im Flächendiagramm.</head>
-                </figure>
-            </div>
-        </body>
-        <back>
+<p>
+<hi style="font-size:10pt">Durch Zusammenführung von Datenbank, neuartigen Techniken der Visual Analytics sowie kunsthistorischen Recherchen konnte in einer Fallstudie exemplarisch gezeigt werden, dass geisteswissenschaftliche Fragestellungen nach dynamischen sozialen Netzwerken auch und effektiver quantitativ verstanden werden können. Die flexiblen Visualisierungen dynamischer Informationen, die der einfachen Verbildlichung von Daten gegenüberstehen, beherbergen großes Potential für die Digital Humanities. Solche Methoden befinden sich noch im Entwicklungsstadium, bieten aber schon jetzt ein vielseitig anwendbares Instrumentarium.</hi>
+</p>
+<figure>
+<graphic height="8.281458333333333cm" n="1001" rend="inline" url="Pictures/f0e6e04d5550c80f932c5e86116d226b.jpeg" width="16.007291666666667cm"/>
+<head>Abb. 1: Vergleichende Visualisierung von Gustav Klimt und Max Liebermann. Die vorgestellten Tools enthalten a) eine Zeitlinie mit Anzahl der Ausstellungsbeteiligungen bzw. ausgestellter Werke visualisiert durch Halbkreise, um zeitliche Veränderungen im Ausstellungsverhalten nachzuvollziehen; b) eine Tabelle der Ausstellungen, um die Summe und das Verhältnis der jeweiligen Beteiligungen zu berücksichtigen; c) ein dynamisches Ego-Netzwerk und Flächendiagramm, die nach wählbaren Kriterien (Nationalität, Gender, Altersgruppe) die Zusammensetzung jener Künstler*innen anzeigen, die dreimal oder öfter zusammen mit dem Ego ausgestellt haben. In Gelb werden Ausstellungen markiert, an denen beide Künstler teilgenommen haben. Im Ego-Netzwerk schwarz hervorgehoben sind jene Künstler*innen, die mit beiden gemeinsam ausgestellt haben. In diesem Fall zeigt das Netzwerk eine fast gänzliche Übereinstimmung.</head>
+</figure>
+<figure>
+<graphic height="7.963958333333333cm" n="1002" rend="inline" url="Pictures/5ef8f709cc31f923aa4e40043da1a91a.jpeg" width="15.980833333333333cm"/>
+<head>Abb. 2: Geographische Darstellung der Ausstellungsbeteiligungen Gustav Klimts zwischen 1905 und 1915, mit einer Konzentration von Ausstellungen in Deutschland. Der Kreisdurchmesser entspricht der Anzahl der in der jeweiligen Stadt ausgestellten Werke, ihr Opazitätsgrad der Anzahl der Ausstellungen in der jeweiligen Stadt. Auf diese Weise können „Hotspots“ angezeigt werden und auf derselben Karte verglichen werden. Karten sind die am häufigsten verwendete Visualisierungstechnik für raumbezogene Daten und elementare Informationsquelle in geisteswissenschaftlicher Forschung.</head>
+</figure>
+<figure>
+<graphic height="7.9375cm" n="1003" rend="inline" url="Pictures/328dbfc62992c3b3904eea0270827d80.jpeg" width="15.980833333333333cm"/>
+<head> Geographische Darstellung der Ausstellungsbeteiligungen Josef Engelharts (1905-1915). Auffällig ist ihre Konzentration in Wien (10 Ausstellungen mit 274 Werken).</head>
+</figure>
+<figure>
+<graphic height="8.202083333333333cm" n="1004" rend="inline" url="Pictures/9881879d497334ea970b6f9a4f52138b.jpeg" width="16.03375cm"/>
+<head>Abb. 4: Visualisierung der Ausstellungsaktivität Josef Engelharts. Die Tabelle zeigt eine Konzentration auf Wiener Secessions-Ausstellungen, sein Netzwerk dementsprechend einen großen Anteil an österreichischen Malern (43.21% nach heutigen Ländergrenzen, ausschließlich männlich).</head>
+</figure>
+<figure>
+<graphic height="11.58875cm" n="1005" rend="inline" url="Pictures/f94a5cdf168145f7277823eedf00af47.jpeg" width="15.980833333333333cm"/>
+<head>Abb. 5: Eine Erhöhung der Anzahl der gemeinsamen Ausstellungsteilnahmen (≥ 10) zeigt das nachhaltig interne Netzwerk der Wiener Secessionisten. Alle in der Visualisierung aufscheinenden Künstler hielten diverse Führungspositionen, vor allem im sogenannten „Arbeitsausschuss“ und der „Hängekommission“ des Vereins, inne.</head>
+</figure>
+<figure>
+<graphic height="2.8292777777777776cm" n="1006" rend="inline" url="Pictures/cfe9f52a0255b5a0eb69e937ce7fb9a6.jpeg" width="16.002cm"/>
+<head>Abb. 6: Relative Altersverteilung im Mitaussteller*innen-Netzwerk Klimts. Das Flächendiagramm zeigt die Verteilung von demografischen Merkmalen der Mitaussteller*innen des Egos im Laufe der Zeit (1905-1915). Es ermöglicht die Identifikation von Kontinuitäten und Verschiebungen in der Zusammensetzung des Ego-Netzwerks.</head>
+<lb/>
+<lb/>
+</figure>
+<figure>
+<graphic height="2.8301055555555554cm" n="1007" rend="inline" url="Pictures/ed32efbf249dc3b246d57a14ac879653.jpeg" width="16.002cm"/>
+<head> Abb. 7: Relative Altersverteilung im Mitaussteller*innen-Netzwerk Engelharts im Flächendiagramm.</head>
+</figure>
+</div>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
-                    
-                        <hi style="font-size:8pt" xml:space="preserve"> Digitalisate der Ausstellungskataloge befinden sich in der digitalen Sammlung des Belvedere Museums Wien: </hi>
-                        <ref target="https://digitale-bibliothek.belvedere.at/viewer/search/-/-/1/-/DC%3Asecession">
-                            <hi style="font-size:8pt">https://digitale-bibliothek.belvedere.at/viewer/search/-/-/1/-/DC%3Asecession</hi>
-                        </ref>
-                        <hi style="font-size:8pt">(zuletzt aufgerufen am 26.11.2024)</hi>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
-                    
-                        <hi style="font-size:8pt" xml:space="preserve">Josef Engelhart schilderte seine Sichtweise des Vorfalls in seiner Autobiografie. Darin betont er besonders die Absicht der Künstler der Klimt-Gruppe, den Aufnahmeprozess für neue Mitglieder zu ihren Gunsten zu sabotieren. Außerdem kritisierte er die Idee externer Kommerzialisierung, die er durch die Zusammenarbeit Carl Molls mit der Wiener Galerie Miethke befürchtete, und deren Vorbild er bei Max Liebermann sah, der „die Berliner Sezession dem jüdischen Kunsthändler Cassirer in die Arme getrieben“ hätte (Engelhart 1943, 123-124). </hi>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn3" n="3">
-                    
-                        <hi style="font-size:8pt">Nach der Ablehnung ihrer als zu radikal empfundenen Werke durch die Münchener Secession traten Max Slevogt und Lovis Corinth 1901 aus dieser aus und dem Berliner Verein bei (Gleis und Storch 2023, 30).</hi>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn4" n="4">
-                    
-                        <hi style="font-size:8pt" xml:space="preserve"> Nämlich im Herbst 1912, als die Sammlungen des deutschen Kunsthistorikers Richard Muther und des österreichischen Kunstkritikers Ludwig Hevesi in der Galerie Miethke in Wien ausgestellt wurden. Die Ausstellung umfasste eine Kohlezeichnung von Engelhart und eine Skizze von Klimt (siehe: </hi>
-                        <ref target="https://exhibitions.univie.ac.at/exhibition/1180">
-                            <hi style="font-size:8pt">https://exhibitions.univie.ac.at/exhibition/1180</hi>
-                        </ref>
-                        <hi style="font-size:8pt">; zuletzt aufgerufen am 24.07.2024). Verglichen mit den Secessionsausstellungen, die von Künstler*innen organisiert wurden, handelte es sich hierbei um die von einer kommerziellen Galerie kuratierte Schau von Privatbesitz.</hi>
-                    
-                </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Bartosch, Christina, Nirmalie Mulloli, Daniel Burckhardt, Marei Döhring, Walid Ahmad, Raphael Rosenberg</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">. 2020. "The Database of Modern Exhibitions (DOME): European Paintings and Drawings 1905–1915." In </hi>
-                        <hi rend="italic" style="font-size:10pt">The Routledge Companion to Digital Humanities and Art History</hi>
-                        <hi style="font-size:10pt">, hg. von Kathryn Brown, 423-434. London: Routledge.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Berliner Secession (Hg.)</hi>
-                        <hi style="font-size:10pt">. 1906</hi>
-                        <hi rend="italic" style="font-size:10pt">. Katalog der der elften Ausstellung der Berliner Secession</hi>
-                        <hi style="font-size:10pt">. Berlin: Ausstellungshaus am Kurfürstendamm G.m.b.H.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Berliner Secession (Hg.)</hi>
-                        <hi style="font-size:10pt">. 1907</hi>
-                        <hi rend="italic" style="font-size:10pt">. Katalog der der dreizehnten Ausstellung der Berliner Secession</hi>
-                        <hi style="font-size:10pt">. Berlin: Ausstellungshaus am Kurfürstendamm G.m.b.H.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Berliner Secession (Hg.)</hi>
-                        <hi style="font-size:10pt">. 1909</hi>
-                        <hi rend="italic" style="font-size:10pt">. Katalog der der achtzehnten Ausstellung der Berliner Secession</hi>
-                        <hi style="font-size:10pt">. Berlin: Paul Cassirer.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Berliner Secession (Hg.)</hi>
-                        <hi style="font-size:10pt">. 1910</hi>
-                        <hi rend="italic" style="font-size:10pt">. Katalog der der einundzwanzigsten Ausstellung der Berliner Secession. Zeichnende Künste</hi>
-                        <hi style="font-size:10pt">. Berlin: Ausstellungshaus am Kurfürstendamm G.m.b.H.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Deutscher Künstlerbund (Hg</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">.). 1905. </hi>
-                        <hi rend="italic" style="font-size:10pt">Katalog der zweiten Ausstellung des deutschen Künstlerbundes</hi>
-                        <hi style="font-size:10pt">. Berlin: Ausstellungshaus am Kurfürstendamm G.m.b.H.</hi>
-                        <?biblio ADDIN EN.REFLIST?>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Engelhart, Josef</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">. 1943. </hi>
-                        <hi rend="italic" style="font-size:10pt" xml:space="preserve">Ein Wiener Maler </hi>
-                        <anchor xml:id="Int_LGWkTjtC"/>
-                        <hi rend="italic" style="font-size:10pt">Erzählt: Mein Leben Und Meine Modelle</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">. Wien: Andermann. </hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Gleis, Ralph und Ursula Storch (Hg.)</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">. 2023. </hi>
-                        <hi rend="italic" style="font-size:10pt" xml:space="preserve">Secessionen: Klimt - Stuck - Liebermann </hi>
-                        <hi style="font-size:10pt">(Ausst. Kat. Alte Nationalgalerie Berlin/Wien Museum)</hi>
-                        <hi rend="italic" style="font-size:10pt">.</hi>
-                        <hi style="font-size:10pt" xml:space="preserve"> München: Hirmer. </hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Kristan, Markus</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">. 2016. </hi>
-                        <hi rend="italic" style="font-size:10pt">Kunstschau Wien 1908.</hi>
-                        <hi style="font-size:10pt" xml:space="preserve"> Weitra: Bibliothek der Provinz. </hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Miksch, Silvia und Wolfgang Aigner</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">. 2014. "A Matter of Time: Applying a Data–Users–Tasks Design Triangle to Visual Analytics of Time-Oriented Data." In </hi>
-                        <hi rend="italic" style="font-size:10pt">Computers &amp; Graphics</hi>
-                        <hi style="font-size:10pt">, 38, 286–290. DOI: 10.1016/j.cag.2013.11.002.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Münchener Secession (Hg.)</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">. 1893. </hi>
-                        <hi rend="italic" style="font-size:10pt">Offizieller Katalog der Internationalen Kunst-Ausstellung des Vereins bildender Künstler Münchens (A.V.) „Secession“ 1893</hi>
-                        <hi style="font-size:10pt">. München: Bruckmann.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Münchener Secession (Hg.)</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">. 1894. </hi>
-                        <hi rend="italic" style="font-size:10pt" xml:space="preserve">Offizieller Katalog der Internationalen Kunst-Ausstellung des Vereins bildender Künstler Münchens (A.V.) „Secession“ 1894. </hi>
-                        <hi style="font-size:10pt">München: Bruckmann.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Münchener Secession (Hg.)</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">. 1895. </hi>
-                        <hi rend="italic" style="font-size:10pt" xml:space="preserve">Offizieller Katalog der Internationalen Kunst-Ausstellung des Vereins bildender Künstler Münchens (A.V.) „Secession“ 1895. </hi>
-                        <hi style="font-size:10pt">München: Bruckmann.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Münchener Secession (Hg.)</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">. 1904. </hi>
-                        <hi rend="italic" style="font-size:10pt" xml:space="preserve">Offizieller Katalog der X. Ausstellung der Münchener Sezession. Der Deutsche Künstlerbund. </hi>
-                        <hi style="font-size:10pt">München: Bruckmann.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Münchener Secession (Hg.)</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">. 1906. </hi>
-                        <hi rend="italic" style="font-size:10pt">Offizieller Katalog der Internationalen Kunstausstellung des Vereins bildender Künstler Münchens (e.V.) „Secession“ 1906 im kgl. Kunstausstellungsgebäude am Königsplatz</hi>
-                        <hi style="font-size:10pt">. München: Bruckmann.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Münchener Secession (Hg.)</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">. 1911. </hi>
-                        <hi rend="italic" style="font-size:10pt">Winter-Ausstellung. Wiener Secession und Gedächtnis-Ausstellung Hubert von Heyden.</hi>
-                        <hi style="font-size:10pt" xml:space="preserve"> München: Verlag des Vereins Bildender Künstler Münchens "Secession".</hi>
-                        <hi rend="bold" style="font-size:10pt">Thomas, James J. und Kristin A. Cook (Hg.).</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">2005. </hi>
-                        <hi rend="italic" style="font-size:10pt" xml:space="preserve">Illuminating the Path: The Research and Development Agenda for Visual Analytics. </hi>
-                        <hi style="font-size:10pt">Los Alamitos, Calif: IEEE.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Thomas, James J. und Kristin A. Cook (Hg.).</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">2005. </hi>
-                        <hi rend="italic" style="font-size:10pt" xml:space="preserve">Illuminating the Path: The Research and Development Agenda for Visual Analytics. </hi>
-                        <hi style="font-size:10pt">Los Alamitos, Calif: IEEE.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Tuscher, Michaela, Velitchko Filipov, Teresa Kamencek, Raphael Rosenberg, Silvia Miksch.</hi>
-                        <hi style="font-size:10pt" xml:space="preserve"> 2024. “Mapping the Avantgarde: Visualizing Modern Artists’ Exhibition Activity”. In </hi>
-                        <hi rend="italic" style="font-size:10pt">EuroVis 2024 – Short Papers</hi>
-                        <hi style="font-size:10pt">, hg. von Christian Tominski, Manuela Waldner, Bei Wang. Genf: The Eurographics Association. DOI: 10.2312/evs.20241063.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Wiener Secession (Hg.</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">). 1898. </hi>
-                        <hi rend="italic" style="font-size:10pt">Katalog Der I. Kunst-Ausstellung Der Vereinigung Bildender Künstler Österreichs</hi>
-                        <hi style="font-size:10pt">. Wien: Vereinigung bildender Künstler Österreichs.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold" style="font-size:10pt">Wiener Secession (Hg.</hi>
-                        <hi style="font-size:10pt" xml:space="preserve">). 1899. </hi>
-                        <hi rend="italic" style="font-size:10pt">Katalog Der V. Ausstellung Der Vereinigung Bildender Künstler Österreichs Secession</hi>
-                        <hi style="font-size:10pt">. Wien: Vereinigung bildender Künstler Österreichs.</hi>
-                    </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+<note n="1" rend="footnote text" xml:id="ftn1">
+<hi style="font-size:8pt" xml:space="preserve"> Digitalisate der Ausstellungskataloge befinden sich in der digitalen Sammlung des Belvedere Museums Wien: </hi>
+<ref target="https://digitale-bibliothek.belvedere.at/viewer/search/-/-/1/-/DC%3Asecession">
+<hi style="font-size:8pt">https://digitale-bibliothek.belvedere.at/viewer/search/-/-/1/-/DC%3Asecession</hi>
+</ref>
+<hi style="font-size:8pt">(zuletzt aufgerufen am 26.11.2024)</hi>
+</note>
+<note n="2" rend="footnote text" xml:id="ftn2">
+<hi style="font-size:8pt" xml:space="preserve">Josef Engelhart schilderte seine Sichtweise des Vorfalls in seiner Autobiografie. Darin betont er besonders die Absicht der Künstler der Klimt-Gruppe, den Aufnahmeprozess für neue Mitglieder zu ihren Gunsten zu sabotieren. Außerdem kritisierte er die Idee externer Kommerzialisierung, die er durch die Zusammenarbeit Carl Molls mit der Wiener Galerie Miethke befürchtete, und deren Vorbild er bei Max Liebermann sah, der „die Berliner Sezession dem jüdischen Kunsthändler Cassirer in die Arme getrieben“ hätte (Engelhart 1943, 123-124). </hi>
+</note>
+<note n="3" rend="footnote text" xml:id="ftn3">
+<hi style="font-size:8pt">Nach der Ablehnung ihrer als zu radikal empfundenen Werke durch die Münchener Secession traten Max Slevogt und Lovis Corinth 1901 aus dieser aus und dem Berliner Verein bei (Gleis und Storch 2023, 30).</hi>
+</note>
+<note n="4" rend="footnote text" xml:id="ftn4">
+<hi style="font-size:8pt" xml:space="preserve"> Nämlich im Herbst 1912, als die Sammlungen des deutschen Kunsthistorikers Richard Muther und des österreichischen Kunstkritikers Ludwig Hevesi in der Galerie Miethke in Wien ausgestellt wurden. Die Ausstellung umfasste eine Kohlezeichnung von Engelhart und eine Skizze von Klimt (siehe: </hi>
+<ref target="https://exhibitions.univie.ac.at/exhibition/1180">
+<hi style="font-size:8pt">https://exhibitions.univie.ac.at/exhibition/1180</hi>
+</ref>
+<hi style="font-size:8pt">; zuletzt aufgerufen am 24.07.2024). Verglichen mit den Secessionsausstellungen, die von Künstler*innen organisiert wurden, handelte es sich hierbei um die von einer kommerziellen Galerie kuratierte Schau von Privatbesitz.</hi>
+</note></div>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Bartosch, Christina, Nirmalie Mulloli, Daniel Burckhardt, Marei Döhring, Walid Ahmad, Raphael Rosenberg</hi>
+<hi style="font-size:10pt" xml:space="preserve">. 2020. "The Database of Modern Exhibitions (DOME): European Paintings and Drawings 1905–1915." In </hi>
+<hi rend="italic" style="font-size:10pt">The Routledge Companion to Digital Humanities and Art History</hi>
+<hi style="font-size:10pt">, hg. von Kathryn Brown, 423-434. London: Routledge.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Berliner Secession (Hg.)</hi>
+<hi style="font-size:10pt">. 1906</hi>
+<hi rend="italic" style="font-size:10pt">. Katalog der der elften Ausstellung der Berliner Secession</hi>
+<hi style="font-size:10pt">. Berlin: Ausstellungshaus am Kurfürstendamm G.m.b.H.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Berliner Secession (Hg.)</hi>
+<hi style="font-size:10pt">. 1907</hi>
+<hi rend="italic" style="font-size:10pt">. Katalog der der dreizehnten Ausstellung der Berliner Secession</hi>
+<hi style="font-size:10pt">. Berlin: Ausstellungshaus am Kurfürstendamm G.m.b.H.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Berliner Secession (Hg.)</hi>
+<hi style="font-size:10pt">. 1909</hi>
+<hi rend="italic" style="font-size:10pt">. Katalog der der achtzehnten Ausstellung der Berliner Secession</hi>
+<hi style="font-size:10pt">. Berlin: Paul Cassirer.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Berliner Secession (Hg.)</hi>
+<hi style="font-size:10pt">. 1910</hi>
+<hi rend="italic" style="font-size:10pt">. Katalog der der einundzwanzigsten Ausstellung der Berliner Secession. Zeichnende Künste</hi>
+<hi style="font-size:10pt">. Berlin: Ausstellungshaus am Kurfürstendamm G.m.b.H.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Deutscher Künstlerbund (Hg</hi>
+<hi style="font-size:10pt" xml:space="preserve">.). 1905. </hi>
+<hi rend="italic" style="font-size:10pt">Katalog der zweiten Ausstellung des deutschen Künstlerbundes</hi>
+<hi style="font-size:10pt">. Berlin: Ausstellungshaus am Kurfürstendamm G.m.b.H.</hi>
+<?biblio ADDIN EN.REFLIST?>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Engelhart, Josef</hi>
+<hi style="font-size:10pt" xml:space="preserve">. 1943. </hi>
+<hi rend="italic" style="font-size:10pt" xml:space="preserve">Ein Wiener Maler </hi>
+<anchor xml:id="Int_LGWkTjtC"/>
+<hi rend="italic" style="font-size:10pt">Erzählt: Mein Leben Und Meine Modelle</hi>
+<hi style="font-size:10pt" xml:space="preserve">. Wien: Andermann. </hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Gleis, Ralph und Ursula Storch (Hg.)</hi>
+<hi style="font-size:10pt" xml:space="preserve">. 2023. </hi>
+<hi rend="italic" style="font-size:10pt" xml:space="preserve">Secessionen: Klimt - Stuck - Liebermann </hi>
+<hi style="font-size:10pt">(Ausst. Kat. Alte Nationalgalerie Berlin/Wien Museum)</hi>
+<hi rend="italic" style="font-size:10pt">.</hi>
+<hi style="font-size:10pt" xml:space="preserve"> München: Hirmer. </hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Kristan, Markus</hi>
+<hi style="font-size:10pt" xml:space="preserve">. 2016. </hi>
+<hi rend="italic" style="font-size:10pt">Kunstschau Wien 1908.</hi>
+<hi style="font-size:10pt" xml:space="preserve"> Weitra: Bibliothek der Provinz. </hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Miksch, Silvia und Wolfgang Aigner</hi>
+<hi style="font-size:10pt" xml:space="preserve">. 2014. "A Matter of Time: Applying a Data–Users–Tasks Design Triangle to Visual Analytics of Time-Oriented Data." In </hi>
+<hi rend="italic" style="font-size:10pt">Computers &amp; Graphics</hi>
+<hi style="font-size:10pt">, 38, 286–290. DOI: 10.1016/j.cag.2013.11.002.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Münchener Secession (Hg.)</hi>
+<hi style="font-size:10pt" xml:space="preserve">. 1893. </hi>
+<hi rend="italic" style="font-size:10pt">Offizieller Katalog der Internationalen Kunst-Ausstellung des Vereins bildender Künstler Münchens (A.V.) „Secession“ 1893</hi>
+<hi style="font-size:10pt">. München: Bruckmann.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Münchener Secession (Hg.)</hi>
+<hi style="font-size:10pt" xml:space="preserve">. 1894. </hi>
+<hi rend="italic" style="font-size:10pt" xml:space="preserve">Offizieller Katalog der Internationalen Kunst-Ausstellung des Vereins bildender Künstler Münchens (A.V.) „Secession“ 1894. </hi>
+<hi style="font-size:10pt">München: Bruckmann.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Münchener Secession (Hg.)</hi>
+<hi style="font-size:10pt" xml:space="preserve">. 1895. </hi>
+<hi rend="italic" style="font-size:10pt" xml:space="preserve">Offizieller Katalog der Internationalen Kunst-Ausstellung des Vereins bildender Künstler Münchens (A.V.) „Secession“ 1895. </hi>
+<hi style="font-size:10pt">München: Bruckmann.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Münchener Secession (Hg.)</hi>
+<hi style="font-size:10pt" xml:space="preserve">. 1904. </hi>
+<hi rend="italic" style="font-size:10pt" xml:space="preserve">Offizieller Katalog der X. Ausstellung der Münchener Sezession. Der Deutsche Künstlerbund. </hi>
+<hi style="font-size:10pt">München: Bruckmann.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Münchener Secession (Hg.)</hi>
+<hi style="font-size:10pt" xml:space="preserve">. 1906. </hi>
+<hi rend="italic" style="font-size:10pt">Offizieller Katalog der Internationalen Kunstausstellung des Vereins bildender Künstler Münchens (e.V.) „Secession“ 1906 im kgl. Kunstausstellungsgebäude am Königsplatz</hi>
+<hi style="font-size:10pt">. München: Bruckmann.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Münchener Secession (Hg.)</hi>
+<hi style="font-size:10pt" xml:space="preserve">. 1911. </hi>
+<hi rend="italic" style="font-size:10pt">Winter-Ausstellung. Wiener Secession und Gedächtnis-Ausstellung Hubert von Heyden.</hi>
+<hi style="font-size:10pt" xml:space="preserve"> München: Verlag des Vereins Bildender Künstler Münchens "Secession".</hi>
+<hi rend="bold" style="font-size:10pt">Thomas, James J. und Kristin A. Cook (Hg.).</hi>
+<hi style="font-size:10pt" xml:space="preserve">2005. </hi>
+<hi rend="italic" style="font-size:10pt" xml:space="preserve">Illuminating the Path: The Research and Development Agenda for Visual Analytics. </hi>
+<hi style="font-size:10pt">Los Alamitos, Calif: IEEE.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Thomas, James J. und Kristin A. Cook (Hg.).</hi>
+<hi style="font-size:10pt" xml:space="preserve">2005. </hi>
+<hi rend="italic" style="font-size:10pt" xml:space="preserve">Illuminating the Path: The Research and Development Agenda for Visual Analytics. </hi>
+<hi style="font-size:10pt">Los Alamitos, Calif: IEEE.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Tuscher, Michaela, Velitchko Filipov, Teresa Kamencek, Raphael Rosenberg, Silvia Miksch.</hi>
+<hi style="font-size:10pt" xml:space="preserve"> 2024. “Mapping the Avantgarde: Visualizing Modern Artists’ Exhibition Activity”. In </hi>
+<hi rend="italic" style="font-size:10pt">EuroVis 2024 – Short Papers</hi>
+<hi style="font-size:10pt">, hg. von Christian Tominski, Manuela Waldner, Bei Wang. Genf: The Eurographics Association. DOI: 10.2312/evs.20241063.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Wiener Secession (Hg.</hi>
+<hi style="font-size:10pt" xml:space="preserve">). 1898. </hi>
+<hi rend="italic" style="font-size:10pt">Katalog Der I. Kunst-Ausstellung Der Vereinigung Bildender Künstler Österreichs</hi>
+<hi style="font-size:10pt">. Wien: Vereinigung bildender Künstler Österreichs.</hi>
+</bibl>
+<bibl>
+<hi rend="bold" style="font-size:10pt">Wiener Secession (Hg.</hi>
+<hi style="font-size:10pt" xml:space="preserve">). 1899. </hi>
+<hi rend="italic" style="font-size:10pt">Katalog Der V. Ausstellung Der Vereinigung Bildender Künstler Österreichs Secession</hi>
+<hi style="font-size:10pt">. Wien: Vereinigung bildender Künstler Österreichs.</hi>
+</bibl>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

@@ -1,251 +1,251 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="DEMLEITNER_Adrian_Quellcodekritik_aus_der_Ferne">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="full">
-                    <title type="main">Quellcodekritik aus der Ferne</title>
-                    <title type="sub">Distant Viewing und kritische Analyse von Quellcode</title>
-                </title>
-                <author>
-                    <persName>
-                        <surname>Demleitner</surname>
-                        <forename>Adrian</forename>
-                    </persName>
-                    <affiliation>Hochschule der Künste Bern, Schweiz</affiliation>
-                    <email>adrian@thgie.ch</email>
-                    <idno type="ORCID">0000-0001-9918-7300</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Höltgen</surname>
-                        <forename>Stefan</forename>
-                    </persName>
-                    <affiliation>Universität Bonn, Deutschland</affiliation>
-                    <email>stefan.hoeltgen@uni-bonn.de</email>
-                    <idno type="ORCID">0000-0001-8669-8507</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Piontkowitz</surname>
-                        <forename>Vera</forename>
-                    </persName>
-                    <affiliation>Universität Leipzig, Deutschland</affiliation>
-                    <email>piontkowitz@informatik.uni-leipzig.de</email>
-                    <idno type="ORCID">0000-0003-3605-3609</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Gammenthaler</surname>
-                        <forename>Daniel</forename>
-                    </persName>
-                    <affiliation>Universität Bern, Schweiz</affiliation>
-                    <email>daniel.gammenthaler@unibe.ch</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Burghardt</surname>
-                        <forename>Manuel</forename>
-                    </persName>
-                    <affiliation>Universität Leipzig, Deutschland</affiliation>
-                    <email>burghardt@informatik.uni-leipzig.de</email>
-                    <idno type="ORCID">0000-0003-1354-9089</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-11-22T15:56:05.916658629</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Workshop</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Quellcodekritik</term>
-                    <term>Distant Viewing</term>
-                    <term>Formale Analyse</term>
-                    <term>Strukturelle Analyse</term>
-                    <term>Kritsche Code Analyse</term>
-                    <term>Visualisierung</term>
-                    <term>Computational Methods</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Strukturanalyse</term>
-                    <term>Kontextsetzung</term>
-                    <term>Stilistische Analyse</term>
-                    <term>Visualisierung</term>
-                    <term>Daten</term>
-                    <term>Methoden</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading2">
-                <head>Abstrakt</head>
-                <p>Die Critical Code Analysis (Marino 2020; Bajohr und Krajewski 2024) verortet Quellcode nicht nur als Funktionsanleitung für Maschinen, sondern auch als kulturelles Artefakt, als Text, der von und für Menschen geschrieben wurde. Es stellt sich die Frage, wie wir in den digitalen Geisteswissenschaften den strukturellen Eigenheiten von Quellcode gerecht werden können? Dieser Workshop geht auf verschiedene Ansätze des distant reading von Quellcode ein, zur Untersuchung auf Bedeutung und der Erarbeitung von Wissen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading2">
-                <head>Kontext</head>
-                <p>Quellcode ist Text, der Anweisungen für den Rechner enthält und nach den Regeln einer Programmiersprache strukturiert wird. Diese Regeln stellen sicher, dass Quellcode durch verschiedene Verfahren in Maschinencode übersetzt werden kann (Berry 2015). Sie führen aber auch dazu, dass sich Quellcode fundamental in seiner Struktur von anderen Textsorten unterscheiden (Willumsen 2016). So entzieht sich Quellcode einerseits den etablierten Ansätzen zur hermeneutischen Untersuchung durch distant reading in den digitalen Geisteswissenschaften. Andererseits konzentrieren sich Werkzeuge zur Analyse von Quellcode in den Informationswissenschaften auf Code-Qualität, und nicht auf die Erarbeitung von Erkenntnissen. Da sich Quellcode in Umfang und Modularität schnell der kognitiven Leistungsfähigkeit entzieht, ist distant reading ein geeigneter Ansatz, die Forschung an dieser Textsorte zu unterstützen. Dazu braucht es eine Auseinandersetzung in der Anwendung von Methoden und Werkzeugen.</p>
-                <p>Es reicht nicht aus, nur einzelne Code-Bestandteile im Detail zu betrachten. Oftmals werden lediglich die zugänglicheren Aspekte analysiert, etwa Variabel-Namen, einzelne Subroutinen oder einzelne Code-Kommentare. Um den Quellcode einer Software in seiner Gänze erfassen zu können, müssen wir uns auch strukturellen Aspekten widmen. Dazu gehören Programmfluss, Organisation des Codes, Abhängigkeiten von Programmiersprache und Computer-System und weiteres. Da sich solche Einsichten erst nach längerer und intensiver Auseinandersetzung einstellen oder durch die Menge an vorhandenem Code gar verunmöglicht werden, bietet distant reading methodische Unterstützung an. Distant reading bedeutet hier die computergestützte Methodik zur Erkennung von Strukturen, Mustern, Programmflüssen und grösseren Zusammenhängen in der Form von Visualisierungen, Large Language Models, Netzwerkanalysen, Korpusanalysen und Ähnliches.</p>
-            </div>
-            <div type="div1" rend="DH-Heading2">
-                <head>Quellenmaterial: Videospiele aus den 1980er-Jahren</head>
-                <p>Die frühe Geschichte der Videospielentwicklung ist durch inhärente Verbindung mit der Ankunft der digitalen Technologie in Europa ein wichtiger Bestandteil der Technikgeschichte (Haddon 1988; Williams 1976; Švelch 2018; Alberts und Oldenziel 2014). Die Übernahme neuer Technologien ist immer mit experimentellen und spielerischen Begegnungen verwoben. Diese lassen sich auf ein Spektrum einordnen, das von Basteln über das Spielerische bis hin zum Erschaffen von Spielen reicht (Swalwell 2021).</p>
-                <p>Eine Möglichkeit, sich der frühen Geschichte der Videospielentwicklung zu widmen, bieten die Critical Code Studies. Die kritische Codeanalyse behandelt Code nicht nur als Funktionsanweisung an eine Maschine, sondern auch als Text, der hermeneutisch angegangen und semiotisch gelesen werden kann (Marino 2020). Dabei wird der Code nicht durch gängige Analysemethoden der Informatik auf seine Qualität hin kontrolliert, sondern vor allem kontextualisiert und in Beziehung gesetzt. Aus Quellcode wird so eine Linse, durch welche sich Arbeitsprozesse, soziale Begebenheiten oder materielle Bedingungen betrachten lassen.</p>
-                <p>Wir bringen für den Workshop geeigneten Quellcode mit. Dabei handelt es sich um einfachere Spiele aus den 1980ern, welche in verschiedenen BASIC-Dialekten geschrieben wurden. Diesem Quellcode werden wir durch die weiter unten kontextualisierten Verfahren begegnen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading2">
-                <head>Ziel</head>
-                <p>Als Tutorial gedacht, geht der Workshop drei Zielen nach.</p>
-                <p> 1. Einführung in die kritische Codeanalyse</p>
-                <p> 2. Austausch und gemeinsame Erkundung des vorgestellten Ansatzes</p>
-                <p> 3. Praktische Auseinandersetzung mit distant reading von Quellcode</p>
-                <p>Der Fokus des Workshops liegt auf der kritischen Codeanalyse. Nach einer grundlegenden Einführung des Ansatzes sowie theoretischen Inputs sehen wir uns verschiedenen Quellcode an, wie dieser strukturiert ist, welche Teile davon interessant sein können und wie wir diesen begegnen könnten. In der Besprechung von konkreten Fällen versuchen wir uns in einer gemeinsamen Annäherung an Quellcode als geisteswissenschaftliches Forschungsmaterial.</p>
-                <p>Diskussionen und ein Intermezzo sollen den Ansatz zur kritischen Hinterfragung und Erweiterung öffnen. Distant reading von Quellcode ist kein etablierter Ansatz und kann von einer gemeinsamen Besprechung profitieren. Dabei dürfen die Teilnehmenden auch ihre eigenen Erfahrungen in der hermeneutischen Analyse von Quellcode einbringen.</p>
-                <p>Im letzten und optionalen Block können die besprochenen und vorgestellten Prozesse und Werkzeuge erprobt werden. Dazu gehören Aufbereitungen von Code durch Python-Scripts, Netzwerkanalysen mit Gephi, Veranschaulichungen durch Programmfluss- und Parametrisierungs-Visualisierungen, die Auseinandersetzung mit Fragestellungen an den Quellcode durch Large Language Models und weitere. Dieser Block ist als praxisorientierte Ergänzung zu den vorgängigen Präsentationen und Besprechungen zu verstehen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading2">
-                <head>Publikum und Vorwissen</head>
-                <p>Der Workshop richtet sich generell an Forschende, welche sich in ihrer Arbeit mit Quellcode auseinandersetzen oder sich dafür interessieren. Verwandte Textarten an der Schnittstelle von Mensch und Maschine, wie Hyper- oder Cybertext, sowie Forschende in den Video Game Studies sind ebenfalls herzlich eingeladen. Vorwissen sowie Einreichung eines eigenen Beitrags sind nicht notwendig.</p>
-                <p>Teilnehmende, welche am letzten und optionalen Block teilnehmen möchten, müssen ein eigenes Arbeitsgerät mitbringen. Eine gewisse Frustrationstoleranz sowie Grundkenntnisse in Python sind ebenfalls von Vorteil. Es sind Gruppenarbeiten vorgesehen, sodass sich Teilnehmende mit verschiedenen Wissensständen gegenseitig unterstützen und ergänzen können. Wir versenden vorab einen Tech-Reader, welcher hilft, die für den Workshop notwendige Software zu installieren. Die Workshopleitung steht eine halbe Stunde vor Workshopbeginn für technischen Support zur Verfügung. Weiter bringt die Workshopleitung auch geeigneten Quellcode zur Arbeit mit. Teilnehmende dürfen jedoch gerne eigene, zu untersuchende Fälle einreichen oder mitbringen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading2">
-                <head>Format und Ablauf</head>
-                <p>Der Workshop ist als Tutorial ausgelegt und für die Dauer eines ganzen Tages ausgelegt.</p>
-                <list type="unordered">
-                    <item>Grundlagen: Einführung in die kritische Codeanalyse (1h 30min)
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="DEMLEITNER_Adrian_Quellcodekritik_aus_der_Ferne" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="full">
+<title type="main">Quellcodekritik aus der Ferne</title>
+<title type="sub">Distant Viewing und kritische Analyse von Quellcode</title>
+</title>
+<author>
+<persName>
+<surname>Demleitner</surname>
+<forename>Adrian</forename>
+</persName>
+<affiliation>Hochschule der Künste Bern, Schweiz</affiliation>
+<email>adrian@thgie.ch</email>
+<idno type="ORCID">0000-0001-9918-7300</idno>
+</author>
+<author>
+<persName>
+<surname>Höltgen</surname>
+<forename>Stefan</forename>
+</persName>
+<affiliation>Universität Bonn, Deutschland</affiliation>
+<email>stefan.hoeltgen@uni-bonn.de</email>
+<idno type="ORCID">0000-0001-8669-8507</idno>
+</author>
+<author>
+<persName>
+<surname>Piontkowitz</surname>
+<forename>Vera</forename>
+</persName>
+<affiliation>Universität Leipzig, Deutschland</affiliation>
+<email>piontkowitz@informatik.uni-leipzig.de</email>
+<idno type="ORCID">0000-0003-3605-3609</idno>
+</author>
+<author>
+<persName>
+<surname>Gammenthaler</surname>
+<forename>Daniel</forename>
+</persName>
+<affiliation>Universität Bern, Schweiz</affiliation>
+<email>daniel.gammenthaler@unibe.ch</email>
+</author>
+<author>
+<persName>
+<surname>Burghardt</surname>
+<forename>Manuel</forename>
+</persName>
+<affiliation>Universität Leipzig, Deutschland</affiliation>
+<email>burghardt@informatik.uni-leipzig.de</email>
+<idno type="ORCID">0000-0003-1354-9089</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-11-22T15:56:05.916658629</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943172</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from an OASIS Open Document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Workshop</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Quellcodekritik</term>
+<term>Distant Viewing</term>
+<term>Formale Analyse</term>
+<term>Strukturelle Analyse</term>
+<term>Kritsche Code Analyse</term>
+<term>Visualisierung</term>
+<term>Computational Methods</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Strukturanalyse</term>
+<term>Kontextsetzung</term>
+<term>Stilistische Analyse</term>
+<term>Visualisierung</term>
+<term>Daten</term>
+<term>Methoden</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading2" type="div1">
+<head>Abstrakt</head>
+<p>Die Critical Code Analysis (Marino 2020; Bajohr und Krajewski 2024) verortet Quellcode nicht nur als Funktionsanleitung für Maschinen, sondern auch als kulturelles Artefakt, als Text, der von und für Menschen geschrieben wurde. Es stellt sich die Frage, wie wir in den digitalen Geisteswissenschaften den strukturellen Eigenheiten von Quellcode gerecht werden können? Dieser Workshop geht auf verschiedene Ansätze des distant reading von Quellcode ein, zur Untersuchung auf Bedeutung und der Erarbeitung von Wissen.</p>
+</div>
+<div rend="DH-Heading2" type="div1">
+<head>Kontext</head>
+<p>Quellcode ist Text, der Anweisungen für den Rechner enthält und nach den Regeln einer Programmiersprache strukturiert wird. Diese Regeln stellen sicher, dass Quellcode durch verschiedene Verfahren in Maschinencode übersetzt werden kann (Berry 2015). Sie führen aber auch dazu, dass sich Quellcode fundamental in seiner Struktur von anderen Textsorten unterscheiden (Willumsen 2016). So entzieht sich Quellcode einerseits den etablierten Ansätzen zur hermeneutischen Untersuchung durch distant reading in den digitalen Geisteswissenschaften. Andererseits konzentrieren sich Werkzeuge zur Analyse von Quellcode in den Informationswissenschaften auf Code-Qualität, und nicht auf die Erarbeitung von Erkenntnissen. Da sich Quellcode in Umfang und Modularität schnell der kognitiven Leistungsfähigkeit entzieht, ist distant reading ein geeigneter Ansatz, die Forschung an dieser Textsorte zu unterstützen. Dazu braucht es eine Auseinandersetzung in der Anwendung von Methoden und Werkzeugen.</p>
+<p>Es reicht nicht aus, nur einzelne Code-Bestandteile im Detail zu betrachten. Oftmals werden lediglich die zugänglicheren Aspekte analysiert, etwa Variabel-Namen, einzelne Subroutinen oder einzelne Code-Kommentare. Um den Quellcode einer Software in seiner Gänze erfassen zu können, müssen wir uns auch strukturellen Aspekten widmen. Dazu gehören Programmfluss, Organisation des Codes, Abhängigkeiten von Programmiersprache und Computer-System und weiteres. Da sich solche Einsichten erst nach längerer und intensiver Auseinandersetzung einstellen oder durch die Menge an vorhandenem Code gar verunmöglicht werden, bietet distant reading methodische Unterstützung an. Distant reading bedeutet hier die computergestützte Methodik zur Erkennung von Strukturen, Mustern, Programmflüssen und grösseren Zusammenhängen in der Form von Visualisierungen, Large Language Models, Netzwerkanalysen, Korpusanalysen und Ähnliches.</p>
+</div>
+<div rend="DH-Heading2" type="div1">
+<head>Quellenmaterial: Videospiele aus den 1980er-Jahren</head>
+<p>Die frühe Geschichte der Videospielentwicklung ist durch inhärente Verbindung mit der Ankunft der digitalen Technologie in Europa ein wichtiger Bestandteil der Technikgeschichte (Haddon 1988; Williams 1976; Švelch 2018; Alberts und Oldenziel 2014). Die Übernahme neuer Technologien ist immer mit experimentellen und spielerischen Begegnungen verwoben. Diese lassen sich auf ein Spektrum einordnen, das von Basteln über das Spielerische bis hin zum Erschaffen von Spielen reicht (Swalwell 2021).</p>
+<p>Eine Möglichkeit, sich der frühen Geschichte der Videospielentwicklung zu widmen, bieten die Critical Code Studies. Die kritische Codeanalyse behandelt Code nicht nur als Funktionsanweisung an eine Maschine, sondern auch als Text, der hermeneutisch angegangen und semiotisch gelesen werden kann (Marino 2020). Dabei wird der Code nicht durch gängige Analysemethoden der Informatik auf seine Qualität hin kontrolliert, sondern vor allem kontextualisiert und in Beziehung gesetzt. Aus Quellcode wird so eine Linse, durch welche sich Arbeitsprozesse, soziale Begebenheiten oder materielle Bedingungen betrachten lassen.</p>
+<p>Wir bringen für den Workshop geeigneten Quellcode mit. Dabei handelt es sich um einfachere Spiele aus den 1980ern, welche in verschiedenen BASIC-Dialekten geschrieben wurden. Diesem Quellcode werden wir durch die weiter unten kontextualisierten Verfahren begegnen.</p>
+</div>
+<div rend="DH-Heading2" type="div1">
+<head>Ziel</head>
+<p>Als Tutorial gedacht, geht der Workshop drei Zielen nach.</p>
+<p> 1. Einführung in die kritische Codeanalyse</p>
+<p> 2. Austausch und gemeinsame Erkundung des vorgestellten Ansatzes</p>
+<p> 3. Praktische Auseinandersetzung mit distant reading von Quellcode</p>
+<p>Der Fokus des Workshops liegt auf der kritischen Codeanalyse. Nach einer grundlegenden Einführung des Ansatzes sowie theoretischen Inputs sehen wir uns verschiedenen Quellcode an, wie dieser strukturiert ist, welche Teile davon interessant sein können und wie wir diesen begegnen könnten. In der Besprechung von konkreten Fällen versuchen wir uns in einer gemeinsamen Annäherung an Quellcode als geisteswissenschaftliches Forschungsmaterial.</p>
+<p>Diskussionen und ein Intermezzo sollen den Ansatz zur kritischen Hinterfragung und Erweiterung öffnen. Distant reading von Quellcode ist kein etablierter Ansatz und kann von einer gemeinsamen Besprechung profitieren. Dabei dürfen die Teilnehmenden auch ihre eigenen Erfahrungen in der hermeneutischen Analyse von Quellcode einbringen.</p>
+<p>Im letzten und optionalen Block können die besprochenen und vorgestellten Prozesse und Werkzeuge erprobt werden. Dazu gehören Aufbereitungen von Code durch Python-Scripts, Netzwerkanalysen mit Gephi, Veranschaulichungen durch Programmfluss- und Parametrisierungs-Visualisierungen, die Auseinandersetzung mit Fragestellungen an den Quellcode durch Large Language Models und weitere. Dieser Block ist als praxisorientierte Ergänzung zu den vorgängigen Präsentationen und Besprechungen zu verstehen.</p>
+</div>
+<div rend="DH-Heading2" type="div1">
+<head>Publikum und Vorwissen</head>
+<p>Der Workshop richtet sich generell an Forschende, welche sich in ihrer Arbeit mit Quellcode auseinandersetzen oder sich dafür interessieren. Verwandte Textarten an der Schnittstelle von Mensch und Maschine, wie Hyper- oder Cybertext, sowie Forschende in den Video Game Studies sind ebenfalls herzlich eingeladen. Vorwissen sowie Einreichung eines eigenen Beitrags sind nicht notwendig.</p>
+<p>Teilnehmende, welche am letzten und optionalen Block teilnehmen möchten, müssen ein eigenes Arbeitsgerät mitbringen. Eine gewisse Frustrationstoleranz sowie Grundkenntnisse in Python sind ebenfalls von Vorteil. Es sind Gruppenarbeiten vorgesehen, sodass sich Teilnehmende mit verschiedenen Wissensständen gegenseitig unterstützen und ergänzen können. Wir versenden vorab einen Tech-Reader, welcher hilft, die für den Workshop notwendige Software zu installieren. Die Workshopleitung steht eine halbe Stunde vor Workshopbeginn für technischen Support zur Verfügung. Weiter bringt die Workshopleitung auch geeigneten Quellcode zur Arbeit mit. Teilnehmende dürfen jedoch gerne eigene, zu untersuchende Fälle einreichen oder mitbringen.</p>
+</div>
+<div rend="DH-Heading2" type="div1">
+<head>Format und Ablauf</head>
+<p>Der Workshop ist als Tutorial ausgelegt und für die Dauer eines ganzen Tages ausgelegt.</p>
+<list type="unordered">
+<item>Grundlagen: Einführung in die kritische Codeanalyse (1h 30min)
                         <list type="unordered">
-                            <item>10” Einführung und Vorstellung</item>
-                            <item>25” Ansätze zu distant reading und der kritischen Codeanalyse (PhD-Kandidat Adrian Demleitner)</item>
-                            <item>25” Computational Game Studies: Annäherungsperspektiven (PhD-Kandidatin Vera Piontkowitz, Dr. Manuel Burghardt)</item>
-                            <item>25” Quellcode: Relevante Aspekte und Parametrisierung stilistischer Eigenschaften (Dr. Dr. Stefan Höltgen)</item>
-                        </list>
-                    </item>
-                    <item>15” Pause</item>
-                    <item>Praxis 1: Geisteswissenschaftliche Annäherung an Quellcode (1h 30min)
+<item>10” Einführung und Vorstellung</item>
+<item>25” Ansätze zu distant reading und der kritischen Codeanalyse (PhD-Kandidat Adrian Demleitner)</item>
+<item>25” Computational Game Studies: Annäherungsperspektiven (PhD-Kandidatin Vera Piontkowitz, Dr. Manuel Burghardt)</item>
+<item>25” Quellcode: Relevante Aspekte und Parametrisierung stilistischer Eigenschaften (Dr. Dr. Stefan Höltgen)</item>
+</list>
+</item>
+<item>15” Pause</item>
+<item>Praxis 1: Geisteswissenschaftliche Annäherung an Quellcode (1h 30min)
                         <list type="unordered">
-                            <item>Präsentation und Besprechung von Fallbeispielen</item>
-                            <item>20-30” pro Fall (3-4): Kurzvorstellung Fall mit anschliessender Besprechung in Gruppen und Plenum zur Erarbeitung geisteswissenschaftlicher Fragestellungen an Quellcode</item>
-                        </list>
-                    </item>
-                    <item>Mittags-Pause (1h)</item>
-                    <item>Kritische Auseinandersetzung (1h 30min)
+<item>Präsentation und Besprechung von Fallbeispielen</item>
+<item>20-30” pro Fall (3-4): Kurzvorstellung Fall mit anschliessender Besprechung in Gruppen und Plenum zur Erarbeitung geisteswissenschaftlicher Fragestellungen an Quellcode</item>
+</list>
+</item>
+<item>Mittags-Pause (1h)</item>
+<item>Kritische Auseinandersetzung (1h 30min)
                         <list type="unordered">
-                            <item>25” Im Gespräch mit Quellcode: Input und Demo zu Large Language Models und Code Analyse (PhD-Kandidat Adrian Demleitner)</item>
-                            <item>25” Code Analyse und Hermeneutik? Input zur kritischen Betrachtung der Critical Code Analysis (PhD-Kandidat Daniel Gammenthaler)</item>
-                            <item>25” Moderierte Diskussion und Erfahrungsaustausch</item>
-                        </list>
-                    </item>
-                    <item>15” Pause</item>
-                    <item>Praxis 2: Optionale technische Vertiefung (2h)
+<item>25” Im Gespräch mit Quellcode: Input und Demo zu Large Language Models und Code Analyse (PhD-Kandidat Adrian Demleitner)</item>
+<item>25” Code Analyse und Hermeneutik? Input zur kritischen Betrachtung der Critical Code Analysis (PhD-Kandidat Daniel Gammenthaler)</item>
+<item>25” Moderierte Diskussion und Erfahrungsaustausch</item>
+</list>
+</item>
+<item>15” Pause</item>
+<item>Praxis 2: Optionale technische Vertiefung (2h)
                         <list type="unordered">
-                            <item>Vorgängig besprochene Werkzeuge und Verfahren können in diesem Block vertieft und getestet werden: Dazu gehören Python zur Aufbereitung und ersten Analyse von Quellcode, Netzwerkanalyse mit Gephi, Visualisierungen von Programmfluss, Quantifizierung formaler Code-Aspekte und weitere</item>
-                            <item>30” Einführung der Werkzeuge und Prozesse</item>
-                            <item>1h 30” Begleitetes Arbeiten in Gruppen mit Support und Inputs der Workshopleitung</item>
-                        </list>
-                    </item>
-                </list>
-                <p>Da es stellenweise direkten Support der Teilnehmenden brauchen wird, können wir realistisch gesehen nicht mehr als 20 Personen aktiv betreuen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading2">
-                <head>Verfahrensweisen</head>
-                <div type="div2" rend="DH-Heading3">
-                    <head>Visualisierung</head>
-                    <p>Zwei strukturelle Eigenheiten von Quellcode sind die Modularisierung und der Informationsfluss. Ersteres drückt sich dadurch aus, dass sich wiederholende Code-Bausteine in eigenen Dateien oder Funktionen abstrahiert werden. Beim Informationsfluss werden durch Schleifen oder Anweisungen zum Sprung an eine andere Stelle die Linearität des Textes, und somit des Leseflusses, aufgebrochen. Um diese Strukturen besser zu erschliessen, eignen sich Visualisierungen. Hier eignen sich Flussdiagramme im Kleinen oder Graphen im Grossen, um sich bessere Übersichten und Zugänge zu verschaffen oder Erkenntnisse zu erlangen.</p>
-                </div>
-                <div type="div2" rend="DH-Heading3">
-                    <head>Korpusanalyse</head>
-                    <p>Nebst den strukturellen Vorgaben durch die Programmiersprache werden zur kognitiven Unterstützung bei der Programmierung auch frei wählbare Elemente erlaubt, unter anderem die Benennung von Variablen oder Kommentaren. Diese Elemente eignen sich natürlich für Ansätze der Korpusanalyse. Gerade Kommentare können sehr wertvoll sein. Vor allem bei Quellcode mit mehreren Autor:innen können diese frei beschreibbaren Elemente Hinweise auf Arbeitsorganisation, soziale Prozesse, Schreibstile und weiteres geben.</p>
-                    <p>Wie oben ausgeführt entzieht sich jedoch ein grosser Anteil von Quellcode angestammten computergestützten Korpusanalysen. Diese müssen in der Folge überdacht werden. Ein erster Ansatz ist der Fokus auf formale Aspekte. Programmier-Stil, Bandbreite an eingesetzten Befehlen oder das Verhältnis von Befehlen zur Programmlogik können Hinweise auf Arbeits- und Organisationsprozesse liefern. Einsichten zu Programmier-Praxen können via der Frage nach welcher und wie viel Code für welche grundlegenden Funktionen aufgewendet wurde, etwa der Darstellung von Grafiken oder der Verwaltung des Spielstandes.</p>
-                </div>
-                <div type="div2" rend="DH-Heading3">
-                    <head>Kontextualisierung</head>
-                    <p>Quellcode ist in der Regel ein Mittel zum Zweck. Das Endprodukt sind ausführbare Videospiele und andere Software. Über seine textliche Essenz hinaus ist Quellcode weiter in vielfältigen Beziehungen verwoben. Diese Verbindungen umfassen Interpreter, Compiler, Laufzeiten, integrierte Entwicklungsumgebungen (IDEs) und Entwicklungswerkzeuge, Programmiersprachen, daraus resultierende ausgeführte Ausgaben, Frameworks, geliehene Code-Fragmente und schlussendlich, wie erwähnt, den Autor:innen. Für eine hermeneutische Betrachtung von Quellcode ist es unabdingbar, diesen in Kontext mit seiner Produktion sowie seinem Produkt zu setzen. Hier eignen sich Ansätze in der Modellierung und dem Mapping von Metadaten.</p>
-                </div>
-                <div type="div2" rend="DH-Heading3">
-                    <head>Large Language Models (LLM)</head>
-                    <p>LLMs können helfen, um einen ersten Zugang zu uns unbekanntem oder unlesbarem Quellcode zu erlangen, um mit diesem ins Gespräch zu kommen. Solche Fälle können eintreten, wenn unter anderem ein kompiliertes Programm zurück in Quellcode übersetzt wird. Dabei gehen die ursprünglichen Strukturen sowie Kommentare der Programmierer:innen verloren. Oder aber die Entwickler:innen bedienten sich einer Programmiersprache, welcher wir nicht mächtig sind. LLMs können hier unterstützend wirken und mit ersten Einsichten kontextualisieren. So können in diesem Verfahren grundlegende Fragen zur Programmiersprache des Quellcodes, dessen technologischer Kontext oder auch die wahrscheinlichen Funktionsweisen einzelner Subroutinen erörtert werden. Besonders interessant werden solche Gespräche, wenn der Quellcode durch nachträgliche Informationen der ursprünglichen Entwickler:innen angereichert wird, wie wir in einem Beispiel erörtern werden.</p>
-                </div>
-            </div>
-        </body>
-        <back>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Alberts, Gerard, and Ruth Oldenziel, eds</hi>. 2014. 
+<item>Vorgängig besprochene Werkzeuge und Verfahren können in diesem Block vertieft und getestet werden: Dazu gehören Python zur Aufbereitung und ersten Analyse von Quellcode, Netzwerkanalyse mit Gephi, Visualisierungen von Programmfluss, Quantifizierung formaler Code-Aspekte und weitere</item>
+<item>30” Einführung der Werkzeuge und Prozesse</item>
+<item>1h 30” Begleitetes Arbeiten in Gruppen mit Support und Inputs der Workshopleitung</item>
+</list>
+</item>
+</list>
+<p>Da es stellenweise direkten Support der Teilnehmenden brauchen wird, können wir realistisch gesehen nicht mehr als 20 Personen aktiv betreuen.</p>
+</div>
+<div rend="DH-Heading2" type="div1">
+<head>Verfahrensweisen</head>
+<div rend="DH-Heading3" type="div2">
+<head>Visualisierung</head>
+<p>Zwei strukturelle Eigenheiten von Quellcode sind die Modularisierung und der Informationsfluss. Ersteres drückt sich dadurch aus, dass sich wiederholende Code-Bausteine in eigenen Dateien oder Funktionen abstrahiert werden. Beim Informationsfluss werden durch Schleifen oder Anweisungen zum Sprung an eine andere Stelle die Linearität des Textes, und somit des Leseflusses, aufgebrochen. Um diese Strukturen besser zu erschliessen, eignen sich Visualisierungen. Hier eignen sich Flussdiagramme im Kleinen oder Graphen im Grossen, um sich bessere Übersichten und Zugänge zu verschaffen oder Erkenntnisse zu erlangen.</p>
+</div>
+<div rend="DH-Heading3" type="div2">
+<head>Korpusanalyse</head>
+<p>Nebst den strukturellen Vorgaben durch die Programmiersprache werden zur kognitiven Unterstützung bei der Programmierung auch frei wählbare Elemente erlaubt, unter anderem die Benennung von Variablen oder Kommentaren. Diese Elemente eignen sich natürlich für Ansätze der Korpusanalyse. Gerade Kommentare können sehr wertvoll sein. Vor allem bei Quellcode mit mehreren Autor:innen können diese frei beschreibbaren Elemente Hinweise auf Arbeitsorganisation, soziale Prozesse, Schreibstile und weiteres geben.</p>
+<p>Wie oben ausgeführt entzieht sich jedoch ein grosser Anteil von Quellcode angestammten computergestützten Korpusanalysen. Diese müssen in der Folge überdacht werden. Ein erster Ansatz ist der Fokus auf formale Aspekte. Programmier-Stil, Bandbreite an eingesetzten Befehlen oder das Verhältnis von Befehlen zur Programmlogik können Hinweise auf Arbeits- und Organisationsprozesse liefern. Einsichten zu Programmier-Praxen können via der Frage nach welcher und wie viel Code für welche grundlegenden Funktionen aufgewendet wurde, etwa der Darstellung von Grafiken oder der Verwaltung des Spielstandes.</p>
+</div>
+<div rend="DH-Heading3" type="div2">
+<head>Kontextualisierung</head>
+<p>Quellcode ist in der Regel ein Mittel zum Zweck. Das Endprodukt sind ausführbare Videospiele und andere Software. Über seine textliche Essenz hinaus ist Quellcode weiter in vielfältigen Beziehungen verwoben. Diese Verbindungen umfassen Interpreter, Compiler, Laufzeiten, integrierte Entwicklungsumgebungen (IDEs) und Entwicklungswerkzeuge, Programmiersprachen, daraus resultierende ausgeführte Ausgaben, Frameworks, geliehene Code-Fragmente und schlussendlich, wie erwähnt, den Autor:innen. Für eine hermeneutische Betrachtung von Quellcode ist es unabdingbar, diesen in Kontext mit seiner Produktion sowie seinem Produkt zu setzen. Hier eignen sich Ansätze in der Modellierung und dem Mapping von Metadaten.</p>
+</div>
+<div rend="DH-Heading3" type="div2">
+<head>Large Language Models (LLM)</head>
+<p>LLMs können helfen, um einen ersten Zugang zu uns unbekanntem oder unlesbarem Quellcode zu erlangen, um mit diesem ins Gespräch zu kommen. Solche Fälle können eintreten, wenn unter anderem ein kompiliertes Programm zurück in Quellcode übersetzt wird. Dabei gehen die ursprünglichen Strukturen sowie Kommentare der Programmierer:innen verloren. Oder aber die Entwickler:innen bedienten sich einer Programmiersprache, welcher wir nicht mächtig sind. LLMs können hier unterstützend wirken und mit ersten Einsichten kontextualisieren. So können in diesem Verfahren grundlegende Fragen zur Programmiersprache des Quellcodes, dessen technologischer Kontext oder auch die wahrscheinlichen Funktionsweisen einzelner Subroutinen erörtert werden. Besonders interessant werden solche Gespräche, wenn der Quellcode durch nachträgliche Informationen der ursprünglichen Entwickler:innen angereichert wird, wie wir in einem Beispiel erörtern werden.</p>
+</div>
+</div>
+</body>
+<back>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl><hi rend="bold">Alberts, Gerard, and Ruth Oldenziel, eds</hi>. 2014. 
                         <hi rend="italic">Hacking Europe: From Computer Cultures to Demoscenes</hi>. History of Computing. London: Springer. 
                         <ptr target="https://doi.org/10.1007/978-1-4471-5493-8"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Bajohr, Hannes, and Markus Krajewski, eds</hi>. 2024. 
+<bibl><hi rend="bold">Bajohr, Hannes, and Markus Krajewski, eds</hi>. 2024. 
                         <hi rend="italic">Quellcodekritik: zur Philologie von Algorithmen</hi>. Erste Auflage. August Akademie. Berlin: August Verlag.
                     </bibl>
-                    <bibl><hi rend="bold">Berry, David M</hi>. 2015. 
+<bibl><hi rend="bold">Berry, David M</hi>. 2015. 
                         <hi rend="italic">The Philosophy of Software: Code and Mediation in the Digital Age</hi>. Basingstoke: Palgrave Macmillan.
                     </bibl>
-                    <bibl><hi rend="bold">Haddon, Leslie</hi>. 1988. “The Home Computer: The Making of a Consumer Electronic.” 
+<bibl><hi rend="bold">Haddon, Leslie</hi>. 1988. “The Home Computer: The Making of a Consumer Electronic.” 
                         <hi rend="italic">Science as Culture</hi> 1 (2): 7–51. 
                         <ptr target="https://doi.org/10.1080/09505438809526198"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Marino, Mark C</hi>. 2020. 
+<bibl><hi rend="bold">Marino, Mark C</hi>. 2020. 
                         <hi rend="italic">Critical Code Studies</hi>. Software Studies. Cambridge, Massachusetts: The MIT Press.
                     </bibl>
-                    <bibl><hi rend="bold">Švelch, Jaroslav</hi>. 2018. 
+<bibl><hi rend="bold">Švelch, Jaroslav</hi>. 2018. 
                         <hi rend="italic">Gaming the Iron Curtain – How Teenagers and Amateurs in Communist Czechoslovakia Claimed the Medium of Computer Games</hi>. Game Histories. Cambridge, Massachusetts: The MIT Press. 
                         <ptr target="https://mitpress.mit.edu/books/gaming-iron-curtain"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Swalwell, Melanie</hi>. 2021. 
+<bibl><hi rend="bold">Swalwell, Melanie</hi>. 2021. 
                         <hi rend="italic">Homebrew Gaming and the Beginnings of Vernacular Digitality</hi>. Cambridge: MIT. 
                         <ptr target="https://mitpress.mit.edu/9780262044776/homebrew-gaming-and-the-beginnings-of-vernacular-digitality/"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Williams, Richard</hi>. 1976. “Early Computers in Europe.” In 
+<bibl><hi rend="bold">Williams, Richard</hi>. 1976. “Early Computers in Europe.” In 
                         <hi rend="italic">Proceedings of the June 7-10, 1976, National Computer Conference and Exposition</hi>, 21–29. AFIPS ’76. New York, NY, USA: Association for Computing Machinery. 
                         <ptr target="https://doi.org/10.1145/1499799.1499804"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Willumsen, Ea Christina</hi>. 2016. “Source Code and Formal Analysis: A Hermeneutic Reading of Passage.” In.</bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+<bibl><hi rend="bold">Willumsen, Ea Christina</hi>. 2016. “Source Code and Formal Analysis: A Hermeneutic Reading of Passage.” In.</bibl>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

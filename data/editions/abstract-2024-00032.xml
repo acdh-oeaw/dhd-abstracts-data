@@ -1,162 +1,162 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xml:id="ROSSENOVA_Lozana_Search__Link__Integrate__The_User_Centered_" xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Search, Link, Integrate: The User-Centered Approach in Developing NFDI4Culture’s Antelope (Annotation &amp; Terminology) Service</title>
-                <author>
-                    <persName>
-                        <surname>Rossenova</surname>
-                        <forename>Lozana</forename>
-                    </persName>
-                    <affiliation>TIB – Leibniz Information Centre for Science and Technology, Deutschland</affiliation>
-                    <email>lozana.rossenova@tib.eu</email>
-                    <idno type="ORCID">0000-0002-5190-1867</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Bailly</surname>
-                        <forename>Kolja</forename>
-                    </persName>
-                    <affiliation>TIB – Leibniz Information Centre for Science and Technology, Deutschland</affiliation>
-                    <email>kolja.bailly@tib.eu</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Blümel</surname>
-                        <forename>Ina</forename>
-                    </persName>
-                    <affiliation>TIB – Leibniz Information Centre for Science and Technology, Deutschland</affiliation>
-                    <email>ina.bluemel@tib.eu</email>
-                    <idno type="ORCID">0000-0002-3075-7640</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2023-12-06T17:22:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Digital Humanities Passau</publisher>
-                <address>
-                    <addrLine>Universität Passau</addrLine>
-                    <addrLine>Innstraße 41</addrLine>
-                    <addrLine>D-94032 Passau</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Posterpräsentation</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>NFDI4Culture</term>
-                    <term>data enrichment</term>
-                    <term>terminology service</term>
-                    <term>entity linking</term>
-                    <term>annotation</term>
-                    <term>user-centered design</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Annotieren</term>
-                    <term>Metadaten</term>
-                    <term>Methoden</term>
-                    <term>benannte Entitäten (named entities)</term>
-                    <term>Software</term>
-                    <term>Standards</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-                <div type="div1" rend="DH-Heading1">
-                    <head>Context</head>
-                    <p style="text-align: left; ">In the context of NFDI (National Research Data Infrastructure) in Germany, terminologies encompass domain-specific vocabularies, thesauri and formal ontologies (Anders et al. 2022). In order to comply with the FAIR principles for research data management (GO FAIR, n.d.), NFDI consortia need to identify and align relevant terminologies within their designated communities and achieve broad adoption and application (Kailus 2023). There is a dedicated Terminology Service Working Group within the cross-NFDI Section “Metadata” and a new service is in development, meant to meet the needs of all consortia via the Base4NFDI initiative (Anders et al. 2022).</p>
-                    <p style="text-align: left; ">However, commonly used terminology tools within NFDI consortia, such as the Ontology Lookup Service (Jupp et al. 2015), struggle to accommodate vocabularies and ontologies used in the arts and humanities disciplines due to their typically large size, divergence in serialization formats, and variety of hierarchical relations within complex category trees. To address the specific needs of the culture and digital humanities (DH) research communities, the NFDI4Culture (Altenhöner et al. 2020) team based at TIB are prototyping a new service which aims to address the gaps in current service provisions. Crucial in the approach of developing the service is the close engagement with the communities represented in NFDI4Culture (Rossenova 2022), including art history, architecture, music and performing arts, as well as the agile development of the service in several stages of light-weight interactive prototypes, speculative design wireframes, and iterative releases of a public beta instance.</p>
-                </div>
-                <div type="div1" rend="DH-Heading1">
-                    <head>Requirements gathering</head>
-                    <p style="text-align: left; ">A dedicated requirements gathering workshop (2022) and two successive rounds of user testing (2023), provided evidence to support the claim that, when it comes to (meta)data enrichment, there is a growing interest in extending data with semantics and standard terminologies (Rossenova et al. 2022). But adoption remains slow due to lack of accessible tools for making ontological and vocabulary choices, and the large volume of manual input required, a problem already widely discussed in the field of ontology search and semantics (Butt et al. 2014; Vandenbussche et al. 2017). Researchers require powerful automation workflows that can traverse multiple terminology sources at once and can be connected directly (via APIs) to their own collection and research data management (RDM) systems. An example scenario discussed during the workshop includes a researcher cataloging a collection of stained glass images and adding structured data for the iconography (Fig.1). The researcher needs to find the correct IDs for iconography concepts from several external vocabularies and add these IDs in the collection management system (Rossenova et al. 2022). Using terminology search functions within separate web services, such as the GND or Iconclass websites (GND Explorer 2023; Iconclass Illustrated Edition, n.d.), or aggregators such as BARTOC or DANTE (BARTOC, n.d.; DANTE, n.d.), is a time-consuming and demanding process when it comes to identifying correct terms within domain-specific ontological hierarchies. Next comes the manual integration of the term IDs into the RDM system. </p>
-                    <figure>
-                        <graphic n="1001" width="15.9258cm" height="9.525cm" url="Pictures/dbc5d0d5cc3f6fb50dfda86a8621b9e2.png" rend="block"/>
-                        <head>Figure 1: User journey diagramme (Rossenova et al. 2022) by Anja Gerber (Berlin-Brandenburgische Akademie der Wissenschaften Corpus Vitrearum Medii Aevi). CC-BY.</head>
-                    </figure>
-                    <p style="text-align: left; ">Beyond creating structured descriptive metadata, enrichment with linked entities and annotation of diverse media – from 2D images and 3D-models to AV – is a growing part of cultural and/or humanities data curation workflows, as evidenced by the user stories collected during the formation of NFDI4Culture (NFDI4Culture, n.d.). AI- and ML-assisted workflows – especially in relation to image recognition and entity linking – are commonly referenced in DH literature (Schneider et al. 2022; Vignoli et al. 2023), but are not easy to integrate in the day-to-day tasks of researchers who do not have experience in training their own models or orchestrating the required infrastructure. It is even more challenging when researchers develop niche, domain-specific vocabularies that are unlikely to be included in more general terminology search tools and pre-trained models (Elwert and Rossenova, 2023).</p>
-                </div>
-                <div type="div1" rend="DH-Heading1">
-                    <head>Service development</head>
-                    <p style="text-align: left; ">Antelope extends the functionalities of existing tools (Falcon 2.0 2022; iArt 2023; TIB Terminology Service, n.d.) into a common framework with high impact in meeting existing user needs and closing the gaps between: 1) using semantic concepts in describing digitized cultural objects, 2) annotating different types of media, and 3) introducing automation in assisted data curation and annotation workflows. Aiming for long-term sustainability and light-weight maintenance, the Antelope framework privileges interconnectivity over aggregation. This means the framework connects to existing, individual terminology service APIs and SPARQL endpoints in order to provide users with a uniform interface and search experience. At the same time, the extensible ‘plug-and-play’ approach keeps the framework agnostic to changes in vocabilary versions, serving the latest version available via the respective provider. The Antelope beta prototype is accessible both via a frontend web portal (Antelope, 2023) and a data service API, which can be directly integrated into third-party RDM systems (Fig.2).</p>
-                    <figure>
-                        <graphic n="1002" width="16.002cm" height="6.5024cm" url="Pictures/0c7ce973a7f5cded9d12a5ede11a2abb.png" rend="block"/>
-                        <head>Figure 2: Suggested integration of Antelope service directly into the Wikibase user interface. CC-BY.</head>
-                    </figure>
-                    <p style="text-align: left; ">This poster presentation will highlight the impact of our research methodology on the choice of tool libraries, functionalities and integration strategies.</p>
-                </div>
-        </body>
-        <back>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Altenhöner, Reinhard, Ina Blümel, Franziska Boehm, Jens Bove, Katrin Bicher, Christian Bracht, Brand Ortrun, Lisa Dieckmann, Maria Effinger, Malte Hagener, Andrea Hammes, Lambert Heller, Angela Kailus, Hubertus Kohle, Jens Ludwig, Andreas Münzmay, Sarah Pittroff, Matthias Razum, Daniel Röwenstrunk, Harald Sack, Holger Simon, Dörte Schmidt, Torsten Schrade, Annika-Valeska Walzel, and Barbara Wiermann.</hi> “NFDI4Culture - Consortium for research data on material and immaterial cultural heritage.” Research Ideas and Outcomes 6: e57036 (July 2020). DOI: 10.3897/rio.6.e57036. </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Anders, Ivonne, Bailly, Kolja, Baum, Roman, Engel, Felix, Ernst, Felix, Ghiringhelli, Luca M., Kailus, Angela, et al.</hi> 2022. “Terminology Services - Working Group Charter (NFDI Section-metadata)”. Zenodo. https://doi.org/10.5281/zenodo.6759325.</bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Antelope.</hi> 2023. Accessed December 6, 2023. https://service.tib.eu/annotation/</bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">BARTOC.</hi> n.d. Accessed December 6, 2023. https://bartoc.org/</bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Butt, Anila Sahar, Haller, Armin, and Xie, Lexing.</hi> 2014. “Ontology Search: An Empirical Evaluation”. In The Semantic Web – ISWC 2014. ISWC 2014. Lecture Notes in Computer Science, edited by Mika, Peter et al., vol 8797. Springer, Cham. https://doi.org/10.1007/978-3-319-11915-1_9</bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">DANTE.</hi> n.d. Accessed December 6, 2023. https://bartoc.org/en/node/19999 </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Elwert, Frederik, and Rossenova, Lozana.</hi> 2023. “User Testing for Antelope with the DiGA project (Digitization of Gandharan Artefacts)”. 18 July, 2023. See: https://github.com/DiGArtefacts/thesaurus</bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Falcon 2.0.</hi> 2022. Last modified January 31, 2022. https://github.com/SDM-TIB/falcon2.0</bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">GND Explorer.</hi> 2023. Last modified November 13, 2023. https://explore.gnd.network/en/</bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">GO FAIR.</hi> n.d. “I2: (Meta)data use vocabularies that follow the FAIR principles”. Accessed July 19, 2023. https://www.go-fair.org/fair-principles/i2-metadata-use-vocabularies-follow-fair-principles/ </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">iArt.</hi> 2023. Last modified July 4, 2023. https://github.com/TIBHannover/iart </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Iconclass Illustrated Edition.</hi> n.d. Accessed December 6, 2023. https://iconclass.org/ </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Jupp, Simon, Burdett, Tony, Leroy, Catherine, and Parkinson, Helen.</hi> 2015. “A new Ontology Lookup Service at EMBL-EBI”. Presented at the Workshop on Semantic Web Applications and Tools for Life Sciences. Online. https://www.semanticscholar.org/paper/A-new-Ontology-Lookup-Service-at-EMBL-EBI-Jupp-Burdett/b83bfbfc1f2f08e5b88af5ef65ef2a8687ac4112</bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Kailus, Angela.</hi> 2023. “Handreichung für ein faires management kulturwissenschaftlicher forschungsdaten”. Zenodo. https://doi.org/10.5281/zenodo.7716941.</bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">NFDI4Culture.</hi> n.d. “User stories”. Accessed July 19, 2023. https://nfdi4culture.de/resources/user-stories.html</bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Rossenova, Lozana.</hi> 2022. “Sustainable community building with the Wikibase Stakeholder Group – presentation at FOSDEM 2022”. TIB Blog, February 14, 2022. https://blogs.tib.eu/wp/tib/2022/02/14/sustainable-community-building-with-the-wikibase-stakeholder-group-presentation-at-fosdem-2022/</bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Rossenova, Lozana, Sohmen, Lucia, and Bailly, Kolja.</hi> 2022. “First User Research Workshop on Terminology Services in Nfdi4culture”. Zenodo. https://doi.org/10.5281/zenodo.7100818.</bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Schneider, Stefanie, Springstein, Matthias, Rahnama, Javad, Kohle, Hubertus, Ewerth, Ralph, and Hüllermeier, Eyke.</hi> 2022. “Iart - Eine Suchmaschine Zur Unterstützung Von Bildorientierten Forschungsprozessen”. Zenodo. https://doi.org/10.5281/zenodo.6328175.</bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">TIB Terminology Service.</hi> n.d. Accessed July 19, 2023. https://terminology.tib.eu/ts </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Vandenbussche, Pierre-Yves, Atemezing, Ghislain A., Poveda-Villalón, María, and Vatant, Bernard.</hi> 2017. “Linked Open Vocabularies (LOV): A gateway to reusable semantic vocabularies on the Web”. Semantic Web, vol. 8, 437–452, Jan. 2017. DOI: 10.3233/SW-160213.</bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Vignoli, Michela, Gruber, Doris, and Simon, Rainer.</hi> 2023.” Revolution or Evolution? AI-Driven Image Classification of Historical Prints”. In Digital Humanities 2023: Book of Abstracts, edited by Anne Baillot, Toma Tasovac, Walter Scholger, and Georg Vogeler, 184–185. Zenodo. https://doi.org/10.5281/zenodo.7961822.</bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Search, Link, Integrate: The User-Centered Approach in Developing NFDI4Culture’s Antelope (Annotation &amp; Terminology) Service</title>
+<author>
+<persName>
+<surname>Rossenova</surname>
+<forename>Lozana</forename>
+</persName>
+<affiliation>TIB – Leibniz Information Centre for Science and Technology, Deutschland</affiliation>
+<email>lozana.rossenova@tib.eu</email>
+<idno type="ORCID">0000-0002-5190-1867</idno>
+</author>
+<author>
+<persName>
+<surname>Bailly</surname>
+<forename>Kolja</forename>
+</persName>
+<affiliation>TIB – Leibniz Information Centre for Science and Technology, Deutschland</affiliation>
+<email>kolja.bailly@tib.eu</email>
+</author>
+<author>
+<persName>
+<surname>Blümel</surname>
+<forename>Ina</forename>
+</persName>
+<affiliation>TIB – Leibniz Information Centre for Science and Technology, Deutschland</affiliation>
+<email>ina.bluemel@tib.eu</email>
+<idno type="ORCID">0000-0002-3075-7640</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2023-12-06T17:22:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Digital Humanities Passau</publisher>
+<address>
+<addrLine>Universität Passau</addrLine>
+<addrLine>Innstraße 41</addrLine>
+<addrLine>D-94032 Passau</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/10698295</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Posterpräsentation</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>NFDI4Culture</term>
+<term>data enrichment</term>
+<term>terminology service</term>
+<term>entity linking</term>
+<term>annotation</term>
+<term>user-centered design</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Annotieren</term>
+<term>Metadaten</term>
+<term>Methoden</term>
+<term>benannte Entitäten (named entities)</term>
+<term>Software</term>
+<term>Standards</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Context</head>
+<p style="text-align: left; ">In the context of NFDI (National Research Data Infrastructure) in Germany, terminologies encompass domain-specific vocabularies, thesauri and formal ontologies (Anders et al. 2022). In order to comply with the FAIR principles for research data management (GO FAIR, n.d.), NFDI consortia need to identify and align relevant terminologies within their designated communities and achieve broad adoption and application (Kailus 2023). There is a dedicated Terminology Service Working Group within the cross-NFDI Section “Metadata” and a new service is in development, meant to meet the needs of all consortia via the Base4NFDI initiative (Anders et al. 2022).</p>
+<p style="text-align: left; ">However, commonly used terminology tools within NFDI consortia, such as the Ontology Lookup Service (Jupp et al. 2015), struggle to accommodate vocabularies and ontologies used in the arts and humanities disciplines due to their typically large size, divergence in serialization formats, and variety of hierarchical relations within complex category trees. To address the specific needs of the culture and digital humanities (DH) research communities, the NFDI4Culture (Altenhöner et al. 2020) team based at TIB are prototyping a new service which aims to address the gaps in current service provisions. Crucial in the approach of developing the service is the close engagement with the communities represented in NFDI4Culture (Rossenova 2022), including art history, architecture, music and performing arts, as well as the agile development of the service in several stages of light-weight interactive prototypes, speculative design wireframes, and iterative releases of a public beta instance.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Requirements gathering</head>
+<p style="text-align: left; ">A dedicated requirements gathering workshop (2022) and two successive rounds of user testing (2023), provided evidence to support the claim that, when it comes to (meta)data enrichment, there is a growing interest in extending data with semantics and standard terminologies (Rossenova et al. 2022). But adoption remains slow due to lack of accessible tools for making ontological and vocabulary choices, and the large volume of manual input required, a problem already widely discussed in the field of ontology search and semantics (Butt et al. 2014; Vandenbussche et al. 2017). Researchers require powerful automation workflows that can traverse multiple terminology sources at once and can be connected directly (via APIs) to their own collection and research data management (RDM) systems. An example scenario discussed during the workshop includes a researcher cataloging a collection of stained glass images and adding structured data for the iconography (Fig.1). The researcher needs to find the correct IDs for iconography concepts from several external vocabularies and add these IDs in the collection management system (Rossenova et al. 2022). Using terminology search functions within separate web services, such as the GND or Iconclass websites (GND Explorer 2023; Iconclass Illustrated Edition, n.d.), or aggregators such as BARTOC or DANTE (BARTOC, n.d.; DANTE, n.d.), is a time-consuming and demanding process when it comes to identifying correct terms within domain-specific ontological hierarchies. Next comes the manual integration of the term IDs into the RDM system. </p>
+<figure>
+<graphic height="9.525cm" n="1001" rend="block" url="Pictures/dbc5d0d5cc3f6fb50dfda86a8621b9e2.png" width="15.9258cm"/>
+<head>Figure 1: User journey diagramme (Rossenova et al. 2022) by Anja Gerber (Berlin-Brandenburgische Akademie der Wissenschaften Corpus Vitrearum Medii Aevi). CC-BY.</head>
+</figure>
+<p style="text-align: left; ">Beyond creating structured descriptive metadata, enrichment with linked entities and annotation of diverse media – from 2D images and 3D-models to AV – is a growing part of cultural and/or humanities data curation workflows, as evidenced by the user stories collected during the formation of NFDI4Culture (NFDI4Culture, n.d.). AI- and ML-assisted workflows – especially in relation to image recognition and entity linking – are commonly referenced in DH literature (Schneider et al. 2022; Vignoli et al. 2023), but are not easy to integrate in the day-to-day tasks of researchers who do not have experience in training their own models or orchestrating the required infrastructure. It is even more challenging when researchers develop niche, domain-specific vocabularies that are unlikely to be included in more general terminology search tools and pre-trained models (Elwert and Rossenova, 2023).</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Service development</head>
+<p style="text-align: left; ">Antelope extends the functionalities of existing tools (Falcon 2.0 2022; iArt 2023; TIB Terminology Service, n.d.) into a common framework with high impact in meeting existing user needs and closing the gaps between: 1) using semantic concepts in describing digitized cultural objects, 2) annotating different types of media, and 3) introducing automation in assisted data curation and annotation workflows. Aiming for long-term sustainability and light-weight maintenance, the Antelope framework privileges interconnectivity over aggregation. This means the framework connects to existing, individual terminology service APIs and SPARQL endpoints in order to provide users with a uniform interface and search experience. At the same time, the extensible ‘plug-and-play’ approach keeps the framework agnostic to changes in vocabilary versions, serving the latest version available via the respective provider. The Antelope beta prototype is accessible both via a frontend web portal (Antelope, 2023) and a data service API, which can be directly integrated into third-party RDM systems (Fig.2).</p>
+<figure>
+<graphic height="6.5024cm" n="1002" rend="block" url="Pictures/0c7ce973a7f5cded9d12a5ede11a2abb.png" width="16.002cm"/>
+<head>Figure 2: Suggested integration of Antelope service directly into the Wikibase user interface. CC-BY.</head>
+</figure>
+<p style="text-align: left; ">This poster presentation will highlight the impact of our research methodology on the choice of tool libraries, functionalities and integration strategies.</p>
+</div>
+</body>
+<back>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl style="text-align: left; ">
+<hi rend="bold">Altenhöner, Reinhard, Ina Blümel, Franziska Boehm, Jens Bove, Katrin Bicher, Christian Bracht, Brand Ortrun, Lisa Dieckmann, Maria Effinger, Malte Hagener, Andrea Hammes, Lambert Heller, Angela Kailus, Hubertus Kohle, Jens Ludwig, Andreas Münzmay, Sarah Pittroff, Matthias Razum, Daniel Röwenstrunk, Harald Sack, Holger Simon, Dörte Schmidt, Torsten Schrade, Annika-Valeska Walzel, and Barbara Wiermann.</hi> “NFDI4Culture - Consortium for research data on material and immaterial cultural heritage.” Research Ideas and Outcomes 6: e57036 (July 2020). DOI: 10.3897/rio.6.e57036. </bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">Anders, Ivonne, Bailly, Kolja, Baum, Roman, Engel, Felix, Ernst, Felix, Ghiringhelli, Luca M., Kailus, Angela, et al.</hi> 2022. “Terminology Services - Working Group Charter (NFDI Section-metadata)”. Zenodo. https://doi.org/10.5281/zenodo.6759325.</bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">Antelope.</hi> 2023. Accessed December 6, 2023. https://service.tib.eu/annotation/</bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">BARTOC.</hi> n.d. Accessed December 6, 2023. https://bartoc.org/</bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">Butt, Anila Sahar, Haller, Armin, and Xie, Lexing.</hi> 2014. “Ontology Search: An Empirical Evaluation”. In The Semantic Web – ISWC 2014. ISWC 2014. Lecture Notes in Computer Science, edited by Mika, Peter et al., vol 8797. Springer, Cham. https://doi.org/10.1007/978-3-319-11915-1_9</bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">DANTE.</hi> n.d. Accessed December 6, 2023. https://bartoc.org/en/node/19999 </bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">Elwert, Frederik, and Rossenova, Lozana.</hi> 2023. “User Testing for Antelope with the DiGA project (Digitization of Gandharan Artefacts)”. 18 July, 2023. See: https://github.com/DiGArtefacts/thesaurus</bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">Falcon 2.0.</hi> 2022. Last modified January 31, 2022. https://github.com/SDM-TIB/falcon2.0</bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">GND Explorer.</hi> 2023. Last modified November 13, 2023. https://explore.gnd.network/en/</bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">GO FAIR.</hi> n.d. “I2: (Meta)data use vocabularies that follow the FAIR principles”. Accessed July 19, 2023. https://www.go-fair.org/fair-principles/i2-metadata-use-vocabularies-follow-fair-principles/ </bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">iArt.</hi> 2023. Last modified July 4, 2023. https://github.com/TIBHannover/iart </bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">Iconclass Illustrated Edition.</hi> n.d. Accessed December 6, 2023. https://iconclass.org/ </bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">Jupp, Simon, Burdett, Tony, Leroy, Catherine, and Parkinson, Helen.</hi> 2015. “A new Ontology Lookup Service at EMBL-EBI”. Presented at the Workshop on Semantic Web Applications and Tools for Life Sciences. Online. https://www.semanticscholar.org/paper/A-new-Ontology-Lookup-Service-at-EMBL-EBI-Jupp-Burdett/b83bfbfc1f2f08e5b88af5ef65ef2a8687ac4112</bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">Kailus, Angela.</hi> 2023. “Handreichung für ein faires management kulturwissenschaftlicher forschungsdaten”. Zenodo. https://doi.org/10.5281/zenodo.7716941.</bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">NFDI4Culture.</hi> n.d. “User stories”. Accessed July 19, 2023. https://nfdi4culture.de/resources/user-stories.html</bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">Rossenova, Lozana.</hi> 2022. “Sustainable community building with the Wikibase Stakeholder Group – presentation at FOSDEM 2022”. TIB Blog, February 14, 2022. https://blogs.tib.eu/wp/tib/2022/02/14/sustainable-community-building-with-the-wikibase-stakeholder-group-presentation-at-fosdem-2022/</bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">Rossenova, Lozana, Sohmen, Lucia, and Bailly, Kolja.</hi> 2022. “First User Research Workshop on Terminology Services in Nfdi4culture”. Zenodo. https://doi.org/10.5281/zenodo.7100818.</bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">Schneider, Stefanie, Springstein, Matthias, Rahnama, Javad, Kohle, Hubertus, Ewerth, Ralph, and Hüllermeier, Eyke.</hi> 2022. “Iart - Eine Suchmaschine Zur Unterstützung Von Bildorientierten Forschungsprozessen”. Zenodo. https://doi.org/10.5281/zenodo.6328175.</bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">TIB Terminology Service.</hi> n.d. Accessed July 19, 2023. https://terminology.tib.eu/ts </bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">Vandenbussche, Pierre-Yves, Atemezing, Ghislain A., Poveda-Villalón, María, and Vatant, Bernard.</hi> 2017. “Linked Open Vocabularies (LOV): A gateway to reusable semantic vocabularies on the Web”. Semantic Web, vol. 8, 437–452, Jan. 2017. DOI: 10.3233/SW-160213.</bibl>
+<bibl style="text-align: left; ">
+<hi rend="bold">Vignoli, Michela, Gruber, Doris, and Simon, Rainer.</hi> 2023.” Revolution or Evolution? AI-Driven Image Classification of Historical Prints”. In Digital Humanities 2023: Book of Abstracts, edited by Anne Baillot, Toma Tasovac, Walter Scholger, and Georg Vogeler, 184–185. Zenodo. https://doi.org/10.5281/zenodo.7961822.</bibl>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

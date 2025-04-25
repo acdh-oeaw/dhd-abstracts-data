@@ -1,241 +1,241 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="SITTER_Emilie_Towards_Measuring_Linguistic_Creativity_in_Lit">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Towards Measuring Linguistic Creativity in Literary and Non-literary Text. First results and insights</title>
-                <author>
-                    <persName>
-                        <surname>Sitter</surname>
-                        <forename>Emilie</forename>
-                    </persName>
-                    <affiliation>Universität Bielefeld, Deutschland</affiliation>
-                    <email>emilie.sitter@uni-bielefeld.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Wu</surname>
-                        <forename>Yaru</forename>
-                    </persName>
-                    <affiliation>Universität Bielefeld, Deutschland</affiliation>
-                    <email>yaru.wu@uni-bielefeld.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Zarrieß</surname>
-                        <forename>Sina</forename>
-                    </persName>
-                    <affiliation>Universität Bielefeld, Deutschland</affiliation>
-                    <email>sina.zarriess@uni-bielefeld.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Herrmann</surname>
-                        <forename>Berenike</forename>
-                    </persName>
-                    <affiliation>Universität Bielefeld, Deutschland</affiliation>
-                    <email>berenike.herrmann@uni-bielefeld.de</email>
-                    <idno type="ORCID">0000-0002-5256-0566</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-12-02T16:41:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Poster</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>creativity</term>
-                    <term>linguistic creativity</term>
-                    <term>language models</term>
-                    <term>stylometry</term>
-                    <term>rhetoric</term>
-                    <term>literariness</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Kontextsetzung</term>
-                    <term>Stilistische Analyse</term>
-                    <term>Crowdsourcing</term>
-                    <term>Sprache</term>
-                    <term>Metadaten</term>
-                    <term>Forschungsprozess</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Introduction</head>
-                <p style="text-align: left; ">Creative signs can be observed in literary and non-literary genres. Computational Linguistics and DH, however, often expect a poetic function of linguistic creativity. They tend to equate it with figurative language (Gervás 2010) or “foregrounding”, a deviation from the linguistic norm or an aspect of the text brought to the fore through repetition or parallelism (see (Simpson 2014: 50; Peer et al. 2021). This conflation limits the concept of creativity to artistic genres. Following Runco and Jaeger (2012), in the presented project we therefore conceptualize the creativity of a sign as its originality and effectiveness across genres.</p>
-                <p style="text-align: left; ">Using data-driven metrics and models, we operationalize linguistic creativity by disentangling originality at the level of the sign from literariness, defined as “density of specific textual features that create linguistic foregrounding” by Appel et al. (2021: 177) and from success at the level of usage, i.e.  perception and evaluation  by the actors in the discourse domain. This approach considers how readers’ perceptions of creativity depend on genres and their internal conventions and usage patterns (Steen et al. 2010).</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Objective</head>
-                <p style="text-align: left; ">The overall goal of the project is to explore to what extent linguistic creativity can be measured across textual genres with quantitative methods. Previous studies on creativity assessment have shown that this seemingly subjective concept can be measured by objective, text-inherent linguistic features (DiStefano, Patterson, and Beaty 2024; Jacobs and Kinder. 2022; Weinstein et al. 2022; Zedelius, Mills, and Schooler 2019). Building on lay readers’ creativity assessments of a collection of spatial descriptions obtained from both literary and non-literary texts, we approach creativity from the following perspectives:</p>
-                <list type="unordered">
-                    <item>Rhetorics: As fixed sets of forms that 
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="SITTER_Emilie_Towards_Measuring_Linguistic_Creativity_in_Lit" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Towards Measuring Linguistic Creativity in Literary and Non-literary Text. First results and insights</title>
+<author>
+<persName>
+<surname>Sitter</surname>
+<forename>Emilie</forename>
+</persName>
+<affiliation>Universität Bielefeld, Deutschland</affiliation>
+<email>emilie.sitter@uni-bielefeld.de</email>
+</author>
+<author>
+<persName>
+<surname>Wu</surname>
+<forename>Yaru</forename>
+</persName>
+<affiliation>Universität Bielefeld, Deutschland</affiliation>
+<email>yaru.wu@uni-bielefeld.de</email>
+</author>
+<author>
+<persName>
+<surname>Zarrieß</surname>
+<forename>Sina</forename>
+</persName>
+<affiliation>Universität Bielefeld, Deutschland</affiliation>
+<email>sina.zarriess@uni-bielefeld.de</email>
+</author>
+<author>
+<persName>
+<surname>Herrmann</surname>
+<forename>Berenike</forename>
+</persName>
+<affiliation>Universität Bielefeld, Deutschland</affiliation>
+<email>berenike.herrmann@uni-bielefeld.de</email>
+<idno type="ORCID">0000-0002-5256-0566</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-12-02T16:41:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943144</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Poster</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>creativity</term>
+<term>linguistic creativity</term>
+<term>language models</term>
+<term>stylometry</term>
+<term>rhetoric</term>
+<term>literariness</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Kontextsetzung</term>
+<term>Stilistische Analyse</term>
+<term>Crowdsourcing</term>
+<term>Sprache</term>
+<term>Metadaten</term>
+<term>Forschungsprozess</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Introduction</head>
+<p style="text-align: left; ">Creative signs can be observed in literary and non-literary genres. Computational Linguistics and DH, however, often expect a poetic function of linguistic creativity. They tend to equate it with figurative language (Gervás 2010) or “foregrounding”, a deviation from the linguistic norm or an aspect of the text brought to the fore through repetition or parallelism (see (Simpson 2014: 50; Peer et al. 2021). This conflation limits the concept of creativity to artistic genres. Following Runco and Jaeger (2012), in the presented project we therefore conceptualize the creativity of a sign as its originality and effectiveness across genres.</p>
+<p style="text-align: left; ">Using data-driven metrics and models, we operationalize linguistic creativity by disentangling originality at the level of the sign from literariness, defined as “density of specific textual features that create linguistic foregrounding” by Appel et al. (2021: 177) and from success at the level of usage, i.e.  perception and evaluation  by the actors in the discourse domain. This approach considers how readers’ perceptions of creativity depend on genres and their internal conventions and usage patterns (Steen et al. 2010).</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Objective</head>
+<p style="text-align: left; ">The overall goal of the project is to explore to what extent linguistic creativity can be measured across textual genres with quantitative methods. Previous studies on creativity assessment have shown that this seemingly subjective concept can be measured by objective, text-inherent linguistic features (DiStefano, Patterson, and Beaty 2024; Jacobs and Kinder. 2022; Weinstein et al. 2022; Zedelius, Mills, and Schooler 2019). Building on lay readers’ creativity assessments of a collection of spatial descriptions obtained from both literary and non-literary texts, we approach creativity from the following perspectives:</p>
+<list type="unordered">
+<item>Rhetorics: As fixed sets of forms that 
                         <hi rend="italic">can</hi> elicit foregrounding effects, rhetorical devices are only potentially creative. In usage, their perceived degree of creativity depends heavily on the context.
                     </item>
-                    <item>Computational stylistics (Herrmann et al. 2015): At the level of passages or whole texts, certain forms of stylistic gestalts may be viewed as linguistically creative, e.g. when stylistic divergent features are integrated (C. Martindale and A. E. Martindale 1988) into the text as one coherent whole (Anderegg 1995) in an original and communicatively successful way. However, so far, empirical research is lacking.</item>
-                    <item>NLP: From the perspective of computational linguistics, linguistic foregrounding or stylistic deviations from a frequency norm can be interpreted as an “unusual” usage of language. This can be captured at scale using surprisal metrics, such as perplexity (Humpston et al. 2016), attention entropy (Oh and Schuler 2022), and Kullback-Leibler Divergence (KLD) (Kullback and Leibler 1951). </item>
-                </list>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Project Status</head>
-                <p style="text-align: left; ">At the time of the poster presentation, we will be able to report a first set of findings about linguistic creativity at the sentence-level. We are currently running a set of experts’ annotations of rhetorical devices to determine the degree of potential creativity within our data set (see Amabile 1982). In parallel, our piloting of rating studies has provided first methodological insights into how to capture lay readers’ perceptions of creativity, and is currently being expanded to our data set. </p>
-                <p style="text-align: left; ">Our methodological work tests how conceptions of conventional language use shape assessment of originality (Veale 2012: 59). When a text is perceived as literary, linguistic signs appear systematically judged as less original, even though they may have a high level of literariness. This may be a function of exposure to genres, involving predictions from holistic schemas as well as the level of specific forms. Consider the following examples from Robert Walser’s 
+<item>Computational stylistics (Herrmann et al. 2015): At the level of passages or whole texts, certain forms of stylistic gestalts may be viewed as linguistically creative, e.g. when stylistic divergent features are integrated (C. Martindale and A. E. Martindale 1988) into the text as one coherent whole (Anderegg 1995) in an original and communicatively successful way. However, so far, empirical research is lacking.</item>
+<item>NLP: From the perspective of computational linguistics, linguistic foregrounding or stylistic deviations from a frequency norm can be interpreted as an “unusual” usage of language. This can be captured at scale using surprisal metrics, such as perplexity (Humpston et al. 2016), attention entropy (Oh and Schuler 2022), and Kullback-Leibler Divergence (KLD) (Kullback and Leibler 1951). </item>
+</list>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Project Status</head>
+<p style="text-align: left; ">At the time of the poster presentation, we will be able to report a first set of findings about linguistic creativity at the sentence-level. We are currently running a set of experts’ annotations of rhetorical devices to determine the degree of potential creativity within our data set (see Amabile 1982). In parallel, our piloting of rating studies has provided first methodological insights into how to capture lay readers’ perceptions of creativity, and is currently being expanded to our data set. </p>
+<p style="text-align: left; ">Our methodological work tests how conceptions of conventional language use shape assessment of originality (Veale 2012: 59). When a text is perceived as literary, linguistic signs appear systematically judged as less original, even though they may have a high level of literariness. This may be a function of exposure to genres, involving predictions from holistic schemas as well as the level of specific forms. Consider the following examples from Robert Walser’s 
                     <hi rend="italic" xml:space="preserve">Geschwister Tanner </hi>[1907]:
                 </p>
-                <p style="text-align: left; ">(1)   
+<p style="text-align: left; ">(1)   
                     <hi rend="italic">Unten lag die Stadt, weit und wollüstig über die Ebene gebreitet, wie ein flimmernder, glitzernder Teppich [...]. </hi>
-                </p>
-                <p style="text-align: left; ">(2)   
+</p>
+<p style="text-align: left; ">(2)   
                     <hi rend="italic">Stelle dir vor, die Luft wird ganz blau und warmfeucht in die Straßen hinuntersinken, der Himmel geht dann in Paris spazieren und mischt sich unter die entzückten Menschen.</hi>
-                </p>
-                <p style="text-align: left; ">Example (1) constitutes no strong deviation from predicted literariness in literary texts from around 1900. It might be perceived as literary, but not particularly creative—this is very likely to be different in a non-literary context. Example (2), however, is more unpredictable even in the literary domain, yet meaningful, and can thus be perceived as creative. To operationalize creativity, we therefore need to disentangle literary style from originality across genres at points in time.</p>
-                <p style="text-align: left; ">In the current phase of the project, we finetune measures to compare lay and expert readers’ creativity judgment and correlate them to stylometric features and the surprisal measures of a language model. </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Future Outlook</head>
-                <p style="text-align: left; ">In this four-year project, next steps will be determined by the correlated measures across genres. Creativity assessment will be extended to the full text level, using feature frequencies from distinct style combined with surprisal measures to assess the degree to which a text as a holistic unit is creative and literary. </p>
-                <p style="text-align: left; ">Presenting our multi-methodological and interdisciplinary approach to measuring linguistic creativity in texts and readers, we hope to engender a fruitful discussion with interested and knowledgeable colleagues.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Acknowledgement</head>
-                <p style="text-align: left; ">This research has been funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) – CRC-1646, project number 512393437, project A05.</p>
-            </div>
-        </body>
-        <back>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl style="text-align: left; "><hi rend="bold">Amabile, Teresa M.</hi> 1982. 
+</p>
+<p style="text-align: left; ">Example (1) constitutes no strong deviation from predicted literariness in literary texts from around 1900. It might be perceived as literary, but not particularly creative—this is very likely to be different in a non-literary context. Example (2), however, is more unpredictable even in the literary domain, yet meaningful, and can thus be perceived as creative. To operationalize creativity, we therefore need to disentangle literary style from originality across genres at points in time.</p>
+<p style="text-align: left; ">In the current phase of the project, we finetune measures to compare lay and expert readers’ creativity judgment and correlate them to stylometric features and the surprisal measures of a language model. </p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Future Outlook</head>
+<p style="text-align: left; ">In this four-year project, next steps will be determined by the correlated measures across genres. Creativity assessment will be extended to the full text level, using feature frequencies from distinct style combined with surprisal measures to assess the degree to which a text as a holistic unit is creative and literary. </p>
+<p style="text-align: left; ">Presenting our multi-methodological and interdisciplinary approach to measuring linguistic creativity in texts and readers, we hope to engender a fruitful discussion with interested and knowledgeable colleagues.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Acknowledgement</head>
+<p style="text-align: left; ">This research has been funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) – CRC-1646, project number 512393437, project A05.</p>
+</div>
+</body>
+<back>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl style="text-align: left; "><hi rend="bold">Amabile, Teresa M.</hi> 1982. 
                         <hi style="font-size:10pt">“</hi>Social Psychology of Creativity: A Consensual Assessment Technique
                         <hi style="font-size:10pt">”</hi>. 
                         <hi rend="italic">Journal of Personality and Social Psychology</hi> 43 (5): 997–1013. https://doi.org/10.1037/0022-3514.43.5.997.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Anderegg, Johannes.</hi> 1995. 
+<bibl style="text-align: left; "><hi rend="bold">Anderegg, Johannes.</hi> 1995. 
                         <hi style="font-size:10pt">“</hi>Stil und Stilbegriff in der neueren Literaturwissenschaft
                         <hi style="font-size:10pt">”</hi>. In 
                         <hi rend="italic">Stilfragen</hi>, edited by Gerhard Stickel, 115–27. De Gruyter. https://doi.org/10.1515/9783110622515-007.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Appel, Markus, David Hanauer, Hans Hoeken, Kobie van Krieken, Tobias Richter, and José Sanders.</hi> 2021. 
+<bibl style="text-align: left; "><hi rend="bold">Appel, Markus, David Hanauer, Hans Hoeken, Kobie van Krieken, Tobias Richter, and José Sanders.</hi> 2021. 
                         <hi style="font-size:10pt">“</hi>The Psychological and Social Effects of Literariness: Formal Features and Paratextual Information
                         <hi style="font-size:10pt">”</hi>. In 
                         <hi rend="italic">Handbook of Empirical Literary Studies</hi>, edited by Don Kuiken and Arthur M. Jacobs, 177–202. Berlin/Boston: de Gruyter.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">DiStefano, Paul V., John D. Patterson, and Roger E. Beaty.</hi> 2024. 
+<bibl style="text-align: left; "><hi rend="bold">DiStefano, Paul V., John D. Patterson, and Roger E. Beaty.</hi> 2024. 
                         <hi style="font-size:10pt">“</hi>Automatic Scoring of Metaphor Creativity with Large Language Models
                         <hi style="font-size:10pt">”</hi>. 
                         <hi rend="italic">Creativity Research Journal</hi>, March. https://doi.org/10.1080/10400419.2024.2326343.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Gervas, Pablo.</hi> 2010. 
+<bibl style="text-align: left; "><hi rend="bold">Gervas, Pablo.</hi> 2010. 
                         <hi style="font-size:10pt">“</hi>Engineering Linguistic Creativity: Bird Flight and Jet Planes
                         <hi style="font-size:10pt">”</hi>. In 
                         <hi rend="italic" xml:space="preserve">Proceedings of the NAACL HLT 2010 </hi>
-                        <hi rend="italic">Second Workshop on Computational Approaches to Linguistic Creativity</hi>, 23–30. Los Angeles. https://aclanthology.org/W10-0304.pdf.
+<hi rend="italic">Second Workshop on Computational Approaches to Linguistic Creativity</hi>, 23–30. Los Angeles. https://aclanthology.org/W10-0304.pdf.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Herrmann, Berenike, Karina van Dalen-Oskam, and Christof Schöch.</hi> 2015. 
+<bibl style="text-align: left; "><hi rend="bold">Herrmann, Berenike, Karina van Dalen-Oskam, and Christof Schöch.</hi> 2015. 
                         <hi style="font-size:10pt">“</hi>Revisiting Style, a Key Concept in Literary Studies
                         <hi style="font-size:10pt">”</hi>. 
                         <hi rend="italic">Journal of Literary Theory</hi> 9 (1): 25–52.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Humpston, Clara S., and Matthew R. Broome.</hi> 2016. 
+<bibl style="text-align: left; "><hi rend="bold">Humpston, Clara S., and Matthew R. Broome.</hi> 2016. 
                         <hi style="font-size:10pt">“</hi>Perplexity
                         <hi style="font-size:10pt">”</hi>. In 
                         <hi rend="italic">An Experiential Approach to Psychopathology: What Is It like to Suffer from Mental Disorders?</hi>, edited by Giovanni Stanghellini and Massimiliano Aragona, 245–64. Cham: Springer International Publishing. https://doi.org/10.1007/978-3-319-29945-7_13.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Jacobs, Arthur M.  and Annette Kinder.</hi> 2022. 
+<bibl style="text-align: left; "><hi rend="bold">Jacobs, Arthur M.  and Annette Kinder.</hi> 2022. 
                         <hi style="font-size:10pt">“</hi>Computational Analyses of the Topics, Sentiments, Literariness, Creativity and Beauty of Texts in a Large Corpus of English Literature
                         <hi style="font-size:10pt">”.</hi> arXiv. https://doi.org/10.48550/arXiv.2201.04356.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Kullback, S., and R. A. Leibler.</hi> 1951. 
+<bibl style="text-align: left; "><hi rend="bold">Kullback, S., and R. A. Leibler.</hi> 1951. 
                         <hi style="font-size:10pt">“</hi>On Information and Sufficiency
                         <hi style="font-size:10pt">”</hi>. 
                         <hi rend="italic">The Annals of Mathematical Statistics</hi> 22 (1): 79–86.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Martindale, Colin, and Anne E. Martindale.</hi> 1988. 
+<bibl style="text-align: left; "><hi rend="bold">Martindale, Colin, and Anne E. Martindale.</hi> 1988. 
                         <hi style="font-size:10pt">“</hi>Historical Evolution of Content of Style in Nineteenth- and Twentieth-Century American Short Stories
                         <hi style="font-size:10pt">”</hi>. 
                         <hi rend="italic">Poetics</hi> 17: 333–55.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Oh, Byung-Doh, and William Schuler.</hi> 2022. 
+<bibl style="text-align: left; "><hi rend="bold">Oh, Byung-Doh, and William Schuler.</hi> 2022. 
                         <hi style="font-size:10pt">“</hi>Entropy- and Distance-Based Predictors From GPT-2 Attention Patterns Predict Reading Times Over and Above GPT-2 Surprisal
                         <hi style="font-size:10pt">”</hi>. arXiv. https://doi.org/10.48550/arXiv.2212.11185.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Peer, Willie van, Paul Sopčák, Davide Castiglione, Olivia Fialho, Arthur M. Jacobs, and Frank Hakemulder.</hi> 2021. 
+<bibl style="text-align: left; "><hi rend="bold">Peer, Willie van, Paul Sopčák, Davide Castiglione, Olivia Fialho, Arthur M. Jacobs, and Frank Hakemulder.</hi> 2021. 
                         <hi style="font-size:10pt">“</hi>Foregrounding
                         <hi style="font-size:10pt">”</hi>. In 
                         <hi rend="italic">Handbook of Empirical Literary Studies</hi>, 145–76. De Gruyter. https://doi.org/10.1515/9783110645958-007.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Runco, Mark A., and Garret J. Jaeger.</hi> 2012. 
+<bibl style="text-align: left; "><hi rend="bold">Runco, Mark A., and Garret J. Jaeger.</hi> 2012. 
                         <hi style="font-size:10pt">“</hi>The Standard Definition of Creativity
                         <hi style="font-size:10pt">”</hi>. 
                         <hi rend="italic">Creativity Research Journal</hi> 24 (1): 92–96. https://doi.org/10.1080/10400419.2012.650092.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Simpson, Paul.</hi> 2014. 
+<bibl style="text-align: left; "><hi rend="bold">Simpson, Paul.</hi> 2014. 
                         <hi rend="italic">Stylistics: A Resource Book for Students</hi>. 2nd ed. Routledge. https://www.routledge.com/Stylistics-A-Resource-Book-for-Students/Simpson/p/book/9780415644976.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Steen, Gerard, Aletta G. Dorst, Berenike Herrmann, Anna A. Kaal, Tina Krennmayr, and Trijntje Pasma.</hi> 2010. 
+<bibl style="text-align: left; "><hi rend="bold">Steen, Gerard, Aletta G. Dorst, Berenike Herrmann, Anna A. Kaal, Tina Krennmayr, and Trijntje Pasma.</hi> 2010. 
                         <hi rend="italic">A Method for Linguistic Metaphor Identification. From MIP to MIPVU</hi>. Vol. 14. Converging Evidence in Language and Communication Research (CELCR). Amsterdam/Philadelphia: John Benjamins Publishing Company.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Veale, Tony.</hi> 2012. 
+<bibl style="text-align: left; "><hi rend="bold">Veale, Tony.</hi> 2012. 
                         <hi rend="italic">Exploding The Creativity Myth: The Computational Foundations of Linguistic Creativity</hi>. London: Bloomsbury Academic. 
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Weinstein, Theresa J., Simon Majed Ceh, Christoph Meinel, and Mathias Benedek.</hi> 2022. 
+<bibl style="text-align: left; "><hi rend="bold">Weinstein, Theresa J., Simon Majed Ceh, Christoph Meinel, and Mathias Benedek.</hi> 2022. 
                         <hi style="font-size:10pt">“</hi>What’s Creative About Sentences? A Computational Approach to Assessing Creativity in a Sentence Generation Task
                         <hi style="font-size:10pt">”</hi>. 
                         <hi rend="italic">Creativity Research Journal</hi> 34 (4): 419–30. https://doi.org/10.1080/10400419.2022.2124777.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Zedelius, Claire M., Caitlin Mills, and Jonathan W. Schooler.</hi> 2019. 
+<bibl style="text-align: left; "><hi rend="bold">Zedelius, Claire M., Caitlin Mills, and Jonathan W. Schooler.</hi> 2019. 
                         <hi style="font-size:10pt">“</hi>Beyond Subjective Judgments: Predicting Evaluations of Creative Writing from Computational Linguistic Features
                         <hi style="font-size:10pt">”</hi>. 
                         <hi rend="italic">Behavior Research Methods</hi> 51 (2): 879–94. https://doi.org/10.3758/s13428-018-1137-1.
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

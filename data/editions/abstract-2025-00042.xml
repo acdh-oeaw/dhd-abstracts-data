@@ -1,228 +1,228 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="D_RING_Marten_Towards_interoperability__Introducing_the_Impr">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="full">
-                    <title type="main">Towards interoperability: Introducing the Impresso data lab for the enrichment and analysis of historical media</title>
-                    <title type="sub"/>
-                </title>
-                <author>
-                    <persName>
-                        <surname>Düring</surname>
-                        <forename>Marten</forename>
-                    </persName>
-                    <affiliation>C2DH, Luxemburg</affiliation>
-                    <email>marten.during@uni.lu</email>
-                    <idno type="ORCID">0000-0001-7411-771X</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Guido</surname>
-                        <forename>Daniele</forename>
-                    </persName>
-                    <affiliation>C2DH, Luxemburg</affiliation>
-                    <email>daniele.guido@uni.lu</email>
-                    <idno type="ORCID">0000-0003-1601-4274</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Kalyakin</surname>
-                        <forename>Roman</forename>
-                    </persName>
-                    <affiliation>C2DH, Luxemburg</affiliation>
-                    <email>roman.kalyakin@ext.uni.lu</email>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-07-24T17:17:47.382305807</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Workshop</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>historische Medien</term>
-                    <term>data labs</term>
-                    <term>Jupyter Notebooks</term>
-                    <term>semantische Anreicherung</term>
-                    <term>LLMs</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Programmierung</term>
-                    <term>Infrastruktur</term>
-                    <term>Methoden</term>
-                    <term>Forschungsprozess</term>
-                    <term>Software</term>
-                    <term>virtuelle Forschungsumgebungen</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <p>
-                <anchor xml:id="id_docs-internal-guid-34ef6919-7fff-7e07-4fef-ae9ea095615f"/>
-                <hi rend="color(#000000)">Humanities research practices are commonly characterised by iterative workflows using a wide variety of different sources and modalities (text, image, audio, video, objects, ..) which stands in contrast to typically rather static and homogeneous cultural heritage collections. This challenge is increasingly addressed by computational DH research projects and infrastructures </hi>(“Twi-XL Project” 2024; “CLARIAH Media Suite” 2024; Kemman and Kleppe 2013)
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="D_RING_Marten_Towards_interoperability__Introducing_the_Impr" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="full">
+<title type="main">Towards interoperability: Introducing the Impresso data lab for the enrichment and analysis of historical media</title>
+<title type="sub"/>
+</title>
+<author>
+<persName>
+<surname>Düring</surname>
+<forename>Marten</forename>
+</persName>
+<affiliation>C2DH, Luxemburg</affiliation>
+<email>marten.during@uni.lu</email>
+<idno type="ORCID">0000-0001-7411-771X</idno>
+</author>
+<author>
+<persName>
+<surname>Guido</surname>
+<forename>Daniele</forename>
+</persName>
+<affiliation>C2DH, Luxemburg</affiliation>
+<email>daniele.guido@uni.lu</email>
+<idno type="ORCID">0000-0003-1601-4274</idno>
+</author>
+<author>
+<persName>
+<surname>Kalyakin</surname>
+<forename>Roman</forename>
+</persName>
+<affiliation>C2DH, Luxemburg</affiliation>
+<email>roman.kalyakin@ext.uni.lu</email>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-07-24T17:17:47.382305807</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943056</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from an OASIS Open Document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Workshop</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>historische Medien</term>
+<term>data labs</term>
+<term>Jupyter Notebooks</term>
+<term>semantische Anreicherung</term>
+<term>LLMs</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Programmierung</term>
+<term>Infrastruktur</term>
+<term>Methoden</term>
+<term>Forschungsprozess</term>
+<term>Software</term>
+<term>virtuelle Forschungsumgebungen</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<p>
+<anchor xml:id="id_docs-internal-guid-34ef6919-7fff-7e07-4fef-ae9ea095615f"/>
+<hi rend="color(#000000)">Humanities research practices are commonly characterised by iterative workflows using a wide variety of different sources and modalities (text, image, audio, video, objects, ..) which stands in contrast to typically rather static and homogeneous cultural heritage collections. This challenge is increasingly addressed by computational DH research projects and infrastructures </hi>(“Twi-XL Project” 2024; “CLARIAH Media Suite” 2024; Kemman and Kleppe 2013)
                 <hi rend="color(#000000)">.</hi>
-            </p>
-            <p>This half-day workshop invites DH scholars and librarians to explore the intersection between four fast-paced developments which have the potential to improve the interoperability between static infrastructures and dynamic research needs: </p>
-            <p>
-                <hi rend="color(#000000)">First, changing DH research practices are shifting towards computational processing. We define the subfield “computational humanities” as a distinct user group of computer-savy humanists who wish to analyse cultural (heritage) data at scale harnessing advanced methods from data science and machine learning. Within the “big tent” Digital Humanities community, the decidedly computational analysis of cultural heritage data has emerged as a vibrant subfield with dedicated journals and conference series </hi>(Karsdorp, Kestemont, and Riddell 2021; “Journal of Cultural Analytics,” n.d.; “Computational Humanities Research 2024,” n.d.)
+</p>
+<p>This half-day workshop invites DH scholars and librarians to explore the intersection between four fast-paced developments which have the potential to improve the interoperability between static infrastructures and dynamic research needs: </p>
+<p>
+<hi rend="color(#000000)">First, changing DH research practices are shifting towards computational processing. We define the subfield “computational humanities” as a distinct user group of computer-savy humanists who wish to analyse cultural (heritage) data at scale harnessing advanced methods from data science and machine learning. Within the “big tent” Digital Humanities community, the decidedly computational analysis of cultural heritage data has emerged as a vibrant subfield with dedicated journals and conference series </hi>(Karsdorp, Kestemont, and Riddell 2021; “Journal of Cultural Analytics,” n.d.; “Computational Humanities Research 2024,” n.d.)
                 <hi rend="color(#000000)">. </hi>
-            </p>
-            <p>
-                <hi rend="color(#000000)">Second, NLP-based semantic enrichment of cultural heritage data collections begins to happen at scale. Several projects have successfully combined NLP and historical research interests to advance the study of historical newspaper collections using large scale semantic enrichments such as topic modelling, text reuse detection or named entity recognition, see e.g. </hi>(Langlais 2019; Doucet et al. 2020; Cordell and Smith 2024; Ahnert and Demertzi 2023; Impresso 2024)
+</p>
+<p>
+<hi rend="color(#000000)">Second, NLP-based semantic enrichment of cultural heritage data collections begins to happen at scale. Several projects have successfully combined NLP and historical research interests to advance the study of historical newspaper collections using large scale semantic enrichments such as topic modelling, text reuse detection or named entity recognition, see e.g. </hi>(Langlais 2019; Doucet et al. 2020; Cordell and Smith 2024; Ahnert and Demertzi 2023; Impresso 2024)
                 <hi rend="color(#000000)">. </hi>
-            </p>
-            <p>
-                <hi rend="color(#000000)">Third, the integration of LLMs in research workflows. In parallel, generative AI and especially Large Language Models are beginning to find their place in (Digital) Humanities research practices (see e.g. </hi>(Pichler and Reiter 2024; Karjus 2023)
+</p>
+<p>
+<hi rend="color(#000000)">Third, the integration of LLMs in research workflows. In parallel, generative AI and especially Large Language Models are beginning to find their place in (Digital) Humanities research practices (see e.g. </hi>(Pichler and Reiter 2024; Karjus 2023)
                 <hi rend="color(#000000)">) and sharing platforms such as </hi>
-                <hi rend="color(#000000)">Hugging Face </hi>(“Hugging Face – The AI Community Building the Future.” 2024)
+<hi rend="color(#000000)">Hugging Face </hi>(“Hugging Face – The AI Community Building the Future.” 2024)
                 <hi rend="color(#000000)"> </hi>
-                <hi rend="color(#000000)">are transforming the way researchers engage with cultural heritage data. </hi>
-            </p>
-            <p>
-                <hi rend="color(#000000)">Fourth, the development of “data labs” by cultural heritage institutions to enable access to machine-readable data. This paradigm shift aligns with the The “Always already computational. Collections as data'' paradigm coined by a research project of the same name that has since 2016 received a strong resonance among libraries, archives and other GLAM institutions worldwide </hi>(“Always Already Computational” 2024)
+<hi rend="color(#000000)">are transforming the way researchers engage with cultural heritage data. </hi>
+</p>
+<p>
+<hi rend="color(#000000)">Fourth, the development of “data labs” by cultural heritage institutions to enable access to machine-readable data. This paradigm shift aligns with the The “Always already computational. Collections as data'' paradigm coined by a research project of the same name that has since 2016 received a strong resonance among libraries, archives and other GLAM institutions worldwide </hi>(“Always Already Computational” 2024)
                 <hi rend="color(#000000)">. Many of them strive to offer access to their data using dedicated platforms. </hi>(Candela et al. 2022)
                 <hi rend="color(#000000)">. The scope and capabilities of such platforms vary considerably and are shaped by copyright concerns: The spectrum ranges from closed computing infrastructures such as the HathiTrust Research Centre </hi>(“HTRC Analytics” 2024)
                 <hi rend="color(#000000)"> </hi>
-                <hi rend="color(#000000)">or commercial platforms like Constellate </hi>(“Constellate” 2024)
+<hi rend="color(#000000)">or commercial platforms like Constellate </hi>(“Constellate” 2024)
                 <hi rend="color(#000000)"> </hi>
-                <hi rend="color(#000000)">to publicly accessible public domain data such as those provided by the National Library of Scotland’s Data Foundry </hi>(Ames 2021)
+<hi rend="color(#000000)">to publicly accessible public domain data such as those provided by the National Library of Scotland’s Data Foundry </hi>(Ames 2021)
                 <hi rend="color(#000000)">. </hi>
-            </p>
-            <p>Taken together, these developments constitute an opportunity to overcome some of the main limitations researchers face when dealing with diverse data and large scale collections: Pre-defined corpora such as those provided by infrastructures do not often match the needs of researchers; NLP-based enrichment of large collections is resource-intensive and complex; copyright-concerns restrict access; and exploratory and analytical tools developed for platforms typically focus on generic tasks rather than question-specific ones.</p>
-            <p>Using the Impresso data lab (public release in October 2024) as a starting point, we will discuss how the strengths of research infrastructures (e.g. access to data, large-scale processing) can be combined with researcher needs (e.g. specific datasets and objectives) to increase interoperability. </p>
-            <p>
-                <hi rend="color(#000000)">The workshop is organised by the interdisciplinary research project Impresso Media Monitoring of the Past — </hi>
-                <hi rend="color(#000000)italic">Beyond Borders</hi>
-                <hi rend="color(#000000)"> </hi>
-                <hi rend="color(#000000)">which leverages an unprecedented corpus of newspaper and radio archives and uses machine learning to pursue a paradigm shift in the processing, semantic enrichment, representation, exploration and study of historical media across modalities, time, languages, and national borders </hi>(Impresso 2024)
+</p>
+<p>Taken together, these developments constitute an opportunity to overcome some of the main limitations researchers face when dealing with diverse data and large scale collections: Pre-defined corpora such as those provided by infrastructures do not often match the needs of researchers; NLP-based enrichment of large collections is resource-intensive and complex; copyright-concerns restrict access; and exploratory and analytical tools developed for platforms typically focus on generic tasks rather than question-specific ones.</p>
+<p>Using the Impresso data lab (public release in October 2024) as a starting point, we will discuss how the strengths of research infrastructures (e.g. access to data, large-scale processing) can be combined with researcher needs (e.g. specific datasets and objectives) to increase interoperability. </p>
+<p>
+<hi rend="color(#000000)">The workshop is organised by the interdisciplinary research project Impresso Media Monitoring of the Past — </hi>
+<hi rend="color(#000000)italic">Beyond Borders</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">which leverages an unprecedented corpus of newspaper and radio archives and uses machine learning to pursue a paradigm shift in the processing, semantic enrichment, representation, exploration and study of historical media across modalities, time, languages, and national borders </hi>(Impresso 2024)
                 <hi rend="color(#000000)">.</hi>
-            </p>
-            <p>
-                <hi rend="color(#000000)">The Impresso data lab offers access to a growing Western European newspaper and radio corpus. It has two primary purposes: First, to complement the inherently limited analytical capabilities of the Impresso web app by enabling flexible computational analysis via API (see also </hi>(Kemman and Claeyssens 2022)
+</p>
+<p>
+<hi rend="color(#000000)">The Impresso data lab offers access to a growing Western European newspaper and radio corpus. It has two primary purposes: First, to complement the inherently limited analytical capabilities of the Impresso web app by enabling flexible computational analysis via API (see also </hi>(Kemman and Claeyssens 2022)
                 <hi rend="color(#000000)">), a dedicated Python library and an environment of interactive Jupyter notebooks. Second, to respond to user needs to freely link and analyse external research data to Impresso using a variety of semantic enrichments such as named entities or topics. </hi>
-            </p>
-            <p>
-                <hi rend="color(#000000)">To this end it offers access to a dedicated API that also enables document annotation services. This with the goal to establish a transparent and versatile framework for data-driven </hi>
-                <hi rend="color(#000000)">comparative analysis of internal and research-specific external documents. Overall, the data lab provides the following services:</hi>
-            </p>
-            <list type="unordered">
-                <item>API accessibility: Opening the corpus, enrichments, and tools for programmatic exploitation.</item>
-                <item>Dynamic research workflows: Experimenting with modular, dynamic, and personalised research workflows to bridge the gap between digitised collections and data-driven historical research.</item>
-                <item>Annotation service: Enabling the enrichment of user-provided documents by project-based NLP components, supporting e.g. topic models, named entity recognition, keyphrase extraction, and vectorized representations.</item>
-                <item>Enrichment import: Allowing users e.g. to import external enrichments of project documents and empowering researchers to work with self-generated topics in the interface.</item>
-            </list>
-            <p>The user-oriented API provides convenience modules for programmatic exploitation of data and enables researchers to process the Impresso corpus and enrichments along with other documents and using (external) libraries relevant to their research needs. In other words, while the Impresso web app offers powerful search, filter and curatorial capabilities, the data lab offers space for question-specific operations with the data which go beyond the capabilities of a generic user interface. </p>
-            <div type="div1" rend="DH-Heading">
-                <head>Agenda</head>
-                <p>The workshop strives to balance instructive segments with free exploration to foster active debate among participants. We will begin with an introduction to the Impresso project, an overview of the current landscape and the results of a survey of data labs in the cultural heritage sphere. </p>
-                <p>Brief demos will showcase Impresso’s capabilities. This includes an overview of the Impresso web app and its main search and filter operations, a first data lab demo to show how users can adapt and create Jupyter notebook templates to model, curate and visualise spatial and relational data and thereby generate their own, personalised views on the Impresso corpus. A second demo will present opportunities to enrich external sources using annotation services (named entity recognition, press agency detection, topic model inferences) and to link them back to the Impresso corpus.</p>
-                <p>During hands-on sessions, participants will have the opportunity to test the web app and notebook templates for their real-world utility.</p>
-                <p>It is in the nature of things that neither data nor methods are perfect. Demo and hands-on sessions are intended as starting points for exchanges among participants about links between research infrastructures and the needs of the researcher community. This with the goal to identify and document strengths, shortcomings, opportunities and aspirations for future work against the background of real-world needs, pragmatics and restrictions.</p>
-                <p>The workshop is structured as follows:</p>
-                <p>20”: Welcome, introduction round and setup.</p>
-                <p>30”: Where we stand today: Impresso2 and results from a survey of cultural heritage data labs</p>
-                <p>20”: Demo I: From web app to data lab - Extracting and exploring spatial and network data in interactive notebooks </p>
-                <p>45”: Hands-on experimentation with notebook templates</p>
-                <p>20”: Exchange among participants</p>
-                <p>15”: Break</p>
-                <p>15”: Demo II: Enriching external sources via data lab - Named entity recognition, topic modelling and press agency detection</p>
-                <p>50”: Hands-on experimentation with notebook templates</p>
-                <p>25”: Exchange among participants and summary of discussion</p>
-                <p>We invite all members of the DH community. Coding experience is an asset but not a requirement to participate. The number of participants is limited to 25.</p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>Convenors</head>
-                <p>Marten Düring holds a PhD in Contemporary History from the University of Mainz and is part of the C2DH’s Digital History Unit. Marten’s research focuses on contemporary history, digital history and more specifically network analysis in the historical disciplines. Within Impresso, Marten contributes to project management, coordinates interface development, digital history research, and project dissemination and contributes a historical case study on discourses surrounding nuclear power technologies in historical media.</p>
-                <p>Daniele Guido is a designer and full-stack developer specialising in data visualisation, network visualisation and digital methods. He designs and develops experimental web applications and tools to improve information retrieval in the digital humanities. Within Impresso, Daniele is responsible for the design and development of the Impresso web app and the Impresso data lab.</p>
-                <p>Roman Kalyakin is a full-stack engineer. He holds an M.Sc in Electrical Engineering and Audiovisual technologies from Saint Petersburg State University of Aerospace and Instrumentation. Roman has extensive experience in building and managing software products for startups and large enterprise companies. Roman has a strong background in machine learning, having worked on projects involving ML pipelines, graph databases, and comprehensive visualization tools. Within Impresso, Roman is responsible for the design and development of the Impresso API, Impresso data lab, Impresso web app and DevOps.</p>
-            </div>
-        </body>
-        <back>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl>
-                        <anchor xml:id="id_docs-internal-guid-41236875-7fff-ad4f-f2aa-98ceb55b83be"/><hi rend="bold">Ahnert, Ruth, and Léllé Demertzi</hi>. 2023. “Living with Machines Final Report.” The Alan Turing Institute. https://doi.org/10.23636/PSQ5-6A91.
+</p>
+<p>
+<hi rend="color(#000000)">To this end it offers access to a dedicated API that also enables document annotation services. This with the goal to establish a transparent and versatile framework for data-driven </hi>
+<hi rend="color(#000000)">comparative analysis of internal and research-specific external documents. Overall, the data lab provides the following services:</hi>
+</p>
+<list type="unordered">
+<item>API accessibility: Opening the corpus, enrichments, and tools for programmatic exploitation.</item>
+<item>Dynamic research workflows: Experimenting with modular, dynamic, and personalised research workflows to bridge the gap between digitised collections and data-driven historical research.</item>
+<item>Annotation service: Enabling the enrichment of user-provided documents by project-based NLP components, supporting e.g. topic models, named entity recognition, keyphrase extraction, and vectorized representations.</item>
+<item>Enrichment import: Allowing users e.g. to import external enrichments of project documents and empowering researchers to work with self-generated topics in the interface.</item>
+</list>
+<p>The user-oriented API provides convenience modules for programmatic exploitation of data and enables researchers to process the Impresso corpus and enrichments along with other documents and using (external) libraries relevant to their research needs. In other words, while the Impresso web app offers powerful search, filter and curatorial capabilities, the data lab offers space for question-specific operations with the data which go beyond the capabilities of a generic user interface. </p>
+<div rend="DH-Heading" type="div1">
+<head>Agenda</head>
+<p>The workshop strives to balance instructive segments with free exploration to foster active debate among participants. We will begin with an introduction to the Impresso project, an overview of the current landscape and the results of a survey of data labs in the cultural heritage sphere. </p>
+<p>Brief demos will showcase Impresso’s capabilities. This includes an overview of the Impresso web app and its main search and filter operations, a first data lab demo to show how users can adapt and create Jupyter notebook templates to model, curate and visualise spatial and relational data and thereby generate their own, personalised views on the Impresso corpus. A second demo will present opportunities to enrich external sources using annotation services (named entity recognition, press agency detection, topic model inferences) and to link them back to the Impresso corpus.</p>
+<p>During hands-on sessions, participants will have the opportunity to test the web app and notebook templates for their real-world utility.</p>
+<p>It is in the nature of things that neither data nor methods are perfect. Demo and hands-on sessions are intended as starting points for exchanges among participants about links between research infrastructures and the needs of the researcher community. This with the goal to identify and document strengths, shortcomings, opportunities and aspirations for future work against the background of real-world needs, pragmatics and restrictions.</p>
+<p>The workshop is structured as follows:</p>
+<p>20”: Welcome, introduction round and setup.</p>
+<p>30”: Where we stand today: Impresso2 and results from a survey of cultural heritage data labs</p>
+<p>20”: Demo I: From web app to data lab - Extracting and exploring spatial and network data in interactive notebooks </p>
+<p>45”: Hands-on experimentation with notebook templates</p>
+<p>20”: Exchange among participants</p>
+<p>15”: Break</p>
+<p>15”: Demo II: Enriching external sources via data lab - Named entity recognition, topic modelling and press agency detection</p>
+<p>50”: Hands-on experimentation with notebook templates</p>
+<p>25”: Exchange among participants and summary of discussion</p>
+<p>We invite all members of the DH community. Coding experience is an asset but not a requirement to participate. The number of participants is limited to 25.</p>
+</div>
+<div rend="DH-Heading" type="div1">
+<head>Convenors</head>
+<p>Marten Düring holds a PhD in Contemporary History from the University of Mainz and is part of the C2DH’s Digital History Unit. Marten’s research focuses on contemporary history, digital history and more specifically network analysis in the historical disciplines. Within Impresso, Marten contributes to project management, coordinates interface development, digital history research, and project dissemination and contributes a historical case study on discourses surrounding nuclear power technologies in historical media.</p>
+<p>Daniele Guido is a designer and full-stack developer specialising in data visualisation, network visualisation and digital methods. He designs and develops experimental web applications and tools to improve information retrieval in the digital humanities. Within Impresso, Daniele is responsible for the design and development of the Impresso web app and the Impresso data lab.</p>
+<p>Roman Kalyakin is a full-stack engineer. He holds an M.Sc in Electrical Engineering and Audiovisual technologies from Saint Petersburg State University of Aerospace and Instrumentation. Roman has extensive experience in building and managing software products for startups and large enterprise companies. Roman has a strong background in machine learning, having worked on projects involving ML pipelines, graph databases, and comprehensive visualization tools. Within Impresso, Roman is responsible for the design and development of the Impresso API, Impresso data lab, Impresso web app and DevOps.</p>
+</div>
+</body>
+<back>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl>
+<anchor xml:id="id_docs-internal-guid-41236875-7fff-ad4f-f2aa-98ceb55b83be"/><hi rend="bold">Ahnert, Ruth, and Léllé Demertzi</hi>. 2023. “Living with Machines Final Report.” The Alan Turing Institute. https://doi.org/10.23636/PSQ5-6A91.
                     </bibl>
-                    <bibl><hi rend="bold">“Always Already Computational.”</hi> 2024. Always Already Computational - Collections as Data. July 23, 2024. https://collectionsasdata.github.io/.</bibl>
-                    <bibl><hi rend="bold">Ames, Sarah</hi>. 2021. “Transparency, Provenance and Collections as Data: The National Library of Scotland’s Data Foundry.” 
+<bibl><hi rend="bold">“Always Already Computational.”</hi> 2024. Always Already Computational - Collections as Data. July 23, 2024. https://collectionsasdata.github.io/.</bibl>
+<bibl><hi rend="bold">Ames, Sarah</hi>. 2021. “Transparency, Provenance and Collections as Data: The National Library of Scotland’s Data Foundry.” 
                         <hi rend="italic">LIBER Quarterly: The Journal of the Association of European Research Libraries</hi> 31 (1): 1–13. https://doi.org/10.18352/lq.10371.
                     </bibl>
-                    <bibl><hi rend="bold">Candela, Gustavo, María Dolores Sáez, MPilar Escobar Esteban, and Manuel Marco-Such</hi>. 2022. “Reusing Digital Collections from GLAM Institutions.” 
+<bibl><hi rend="bold">Candela, Gustavo, María Dolores Sáez, MPilar Escobar Esteban, and Manuel Marco-Such</hi>. 2022. “Reusing Digital Collections from GLAM Institutions.” 
                         <hi rend="italic">Journal of Information Science</hi> 48 (2): 251–67. https://doi.org/10.1177/0165551520950246.
                     </bibl>
-                    <bibl><hi rend="bold">“CLARIAH Media Suite.”</hi> 2024. July 23, 2024. https://mediasuite.clariah.nl/.</bibl>
-                    <bibl><hi rend="bold">“Computational Humanities Research 2024.”</hi> n.d. Accessed April 18, 2024. https://2024.computational-humanities-research.org/.</bibl>
-                    <bibl><hi rend="bold">“Constellate.”</hi> 2024. July 23, 2024. https://constellate.org.</bibl>
-                    <bibl><hi rend="bold">Cordell, Ryan, and David Smith</hi>. 2024. “Oceanic Exchanges.” 
+<bibl><hi rend="bold">“CLARIAH Media Suite.”</hi> 2024. July 23, 2024. https://mediasuite.clariah.nl/.</bibl>
+<bibl><hi rend="bold">“Computational Humanities Research 2024.”</hi> n.d. Accessed April 18, 2024. https://2024.computational-humanities-research.org/.</bibl>
+<bibl><hi rend="bold">“Constellate.”</hi> 2024. July 23, 2024. https://constellate.org.</bibl>
+<bibl><hi rend="bold">Cordell, Ryan, and David Smith</hi>. 2024. “Oceanic Exchanges.” 
                         <hi rend="italic">Tracing Global Information Networks In Historical Newspaper Repositories, 1840-1914</hi> (blog). July 23, 2024. http://oceanicexchanges.github.io/.
                     </bibl>
-                    <bibl><hi rend="bold">Doucet, Antoine, Martin Gasteiner, Mark Granroth-Wilding, Max Kaiser, Minna Kaukonen, Roger Labahn, Jean-Philippe Moreux, et al.</hi> 2020. “NewsEye: A Digital Investigator for Historical Newspapers.” In . https://hal.science/hal-03029072.</bibl>
-                    <bibl><hi rend="bold">“HTRC Analytics.”</hi> 2024. July 23, 2024. https://analytics.hathitrust.org/.</bibl>
-                    <bibl><hi rend="bold">“Hugging Face – The AI Community Building the Future.”</hi> 2024. July 19, 2024. https://huggingface.co/.</bibl>
-                    <bibl><hi rend="bold">Impresso</hi>. 2024. “Media Monitoring of the Past.” Impresso. impresso. July 23, 2024. https://impresso-project.ch/.</bibl>
-                    <bibl><hi rend="bold">“Journal of Cultural Analytics.”</hi> n.d. Accessed April 18, 2024. https://culturalanalytics.org/.</bibl>
-                    <bibl><hi rend="bold">Karjus, Andres</hi>. 2023. “Machine-Assisted Mixed Methods: Augmenting Humanities and Social Sciences with Artificial Intelligence.” arXiv.Org. September 24, 2023. https://arxiv.org/abs/2309.14379v1.</bibl>
-                    <bibl><hi rend="bold">Karsdorp, Folgert, Mike Kestemont, and Allen Riddell</hi>. 2021. 
+<bibl><hi rend="bold">Doucet, Antoine, Martin Gasteiner, Mark Granroth-Wilding, Max Kaiser, Minna Kaukonen, Roger Labahn, Jean-Philippe Moreux, et al.</hi> 2020. “NewsEye: A Digital Investigator for Historical Newspapers.” In . https://hal.science/hal-03029072.</bibl>
+<bibl><hi rend="bold">“HTRC Analytics.”</hi> 2024. July 23, 2024. https://analytics.hathitrust.org/.</bibl>
+<bibl><hi rend="bold">“Hugging Face – The AI Community Building the Future.”</hi> 2024. July 19, 2024. https://huggingface.co/.</bibl>
+<bibl><hi rend="bold">Impresso</hi>. 2024. “Media Monitoring of the Past.” Impresso. impresso. July 23, 2024. https://impresso-project.ch/.</bibl>
+<bibl><hi rend="bold">“Journal of Cultural Analytics.”</hi> n.d. Accessed April 18, 2024. https://culturalanalytics.org/.</bibl>
+<bibl><hi rend="bold">Karjus, Andres</hi>. 2023. “Machine-Assisted Mixed Methods: Augmenting Humanities and Social Sciences with Artificial Intelligence.” arXiv.Org. September 24, 2023. https://arxiv.org/abs/2309.14379v1.</bibl>
+<bibl><hi rend="bold">Karsdorp, Folgert, Mike Kestemont, and Allen Riddell</hi>. 2021. 
                         <hi rend="italic">Humanities Data Analysis: Case Studies with Python</hi>. Princeton University Press.
                     </bibl>
-                    <bibl><hi rend="bold">Kemman, Max, and Steven Claeyssens</hi>. 2022. “User Demand for Supporting Advanced Analysis of Historical Text Collections.” May 30. https://doi.org/10.5281/zenodo.6595769.</bibl>
-                    <bibl><hi rend="bold">Kemman, Max, and Martijn Kleppe</hi>. 2013. “PoliMedia.” In 
+<bibl><hi rend="bold">Kemman, Max, and Steven Claeyssens</hi>. 2022. “User Demand for Supporting Advanced Analysis of Historical Text Collections.” May 30. https://doi.org/10.5281/zenodo.6595769.</bibl>
+<bibl><hi rend="bold">Kemman, Max, and Martijn Kleppe</hi>. 2013. “PoliMedia.” In 
                         <hi rend="italic">Research and Advanced Technology for Digital Libraries</hi>, edited by Trond Aalberg, Christos Papatheodorou, Milena Dobreva, Giannis Tsakonas, and Charles J. Farrugia, 401–4. Berlin, Heidelberg: Springer. https://doi.org/10.1007/978-3-642-40501-3_46.
                     </bibl>
-                    <bibl><hi rend="bold">Langlais, Pierre-Carl</hi>. 2019. “Distant reading the French news with the Numapresse project: toward a contextual approach of text mining.” 
+<bibl><hi rend="bold">Langlais, Pierre-Carl</hi>. 2019. “Distant reading the French news with the Numapresse project: toward a contextual approach of text mining.” 
                         <hi rend="italic">Numapresse</hi> (blog). February 7, 2019. http://www.numapresse.org/2019/02/07/distant-reading-the-french-news-with-the-numapresse-project-toward-a-contextual-approach-of-text-mining/.
                     </bibl>
-                    <bibl><hi rend="bold">Pichler, Axel, and Nils Reiter</hi>. 2024. “»LLMs for Everything?«Potentiale Und Probleme Der Anwendung von In-Context-Learning Für Die Computational Literary Studies.” In 
+<bibl><hi rend="bold">Pichler, Axel, and Nils Reiter</hi>. 2024. “»LLMs for Everything?«Potentiale Und Probleme Der Anwendung von In-Context-Learning Für Die Computational Literary Studies.” In 
                         <hi rend="italic">Book of Abstracts of Dhd</hi>. Passau, Germany.
                     </bibl>
-                    <bibl><hi rend="bold">“Twi-XL Project.”</hi> 2024. July 23, 2024. https://twi-xl.humanities.uva.nl/.</bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+<bibl><hi rend="bold">“Twi-XL Project.”</hi> 2024. July 23, 2024. https://twi-xl.humanities.uva.nl/.</bibl>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

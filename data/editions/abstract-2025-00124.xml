@@ -1,410 +1,396 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="PICHLER_Axel_Empirische_Evaluation_des_Verhaltens_von_LLMs_a">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Empirische Evaluation des Verhaltens von LLMs auf Basis sprachphilosophischer Theorien: Methode und Pilotannotationen</title>
-                <author>
-                    <persName>
-                        <surname>Pichler</surname>
-                        <forename>Axel</forename>
-                    </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>apichler@ts.uni-stuttgart.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Gerstorfer</surname>
-                        <forename>Dominik</forename>
-                    </persName>
-                    <affiliation>Technische Universität, Darmstadt, Deutschland</affiliation>
-                    <email>dominik.gerstorfer@tu-darmstadt.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Kuhn</surname>
-                        <forename>Jonas</forename>
-                    </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>jonas.kuhn@ims.uni-stuttgart.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Pagel</surname>
-                        <forename>Janis</forename>
-                    </persName>
-                    <affiliation>Universität zu Köln, Deutschland</affiliation>
-                    <email>janis.pagel@uni-koeln.de</email>
-                    <idno type="ORCID">0000-0003-4370-1483</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2023-06-13T14:32:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag: Methode</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Large Language Model</term>
-                    <term>behavioral analysis</term>
-                    <term>Bedeutung</term>
-                    <term>Verstehen</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Modellierung</term>
-                    <term>Theoretisierung</term>
-                    <term>Methoden</term>
-                    <term>Text</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p style="text-align: left; ">Die Fähigkeit großer Sprachmodelle (LLMs), Bedeutung und Verstehen zu simulieren, hat in den letzten Jahren zu einer regen Debatte darüber geführt, inwiefern LLMs tatsächlich bedeutungsvolle Sprache generieren und diese verstehen. Bedeutungs- und Verstehensbegriff sind zugleich zentrale Konzepte der Kultur- und Geisteswissenschaften. Dementsprechend beteiligen sich auch viele traditionelle und digitale Geisteswissenschaftler:innen an der laufenden Debatte. So wurde 2023 auf einem Panel der DHd-Konferenz ein Zugang zu dieser Debatte präsentiert, der das Ziel hatte, durch theoretische Impulse eine präzisere Beschreibungssprache für die Digital Humanities (DH) zu schaffen, die dabei helfen sollte, die Unterschiede zwischen den Bedeutungsprozessen von Maschinen und Menschen herauszuarbeiten, um so die Anwendung von Künstlicher Intelligenz kritisch zu hinterfragen (Gengnagel et al. 2024). Während das Panel derartig eine geisteswissenschaftliche Kernkompetenz – die Begriffsanalyse – reaktivierte, um ordnend in die Diskussion einzugreifen, inwiefern LLMs bedeutungsvolle Sprache generieren und diese verstehen, folgte es zugleich der auch in der Natural-Language-Processing-Community weitverbreiteten Tendenz, besagte Fragen primär theoretisch zu verhandeln.</p>
-                <p style="text-align: left; ">Wir wollen dieser theoretischen Debatte keine weitere theoretische Position hinzufügen, sondern im Folgenden einen Vorschlag machen, wie ergänzend überprüft werden kann, inwiefern das Verhalten eines LLMs existierenden Sprachtheorien entspricht. Dabei knüpfen wir an die NLP-Tradition des ›behavioral testings‹ an, die sich mit der Prüfung verschiedener Fähigkeiten eines Systems durch Validierung des Eingabe-Ausgabe-Verhaltens ohne Kenntnis der internen Struktur befasst (Beizer 1995). Hierbei verfolgen wir einen theoriegeleiteten Top-Down-Ansatz, der von einer gegebenen Sprachtheorie ausgeht und diese so modelliert, dass ihre zentralen Begriffe in einer Form operationalisiert werden können (Krautter/Pichler/Reiter 2023; Gerstorfer/Gius 2023), welche die Erstellung eines Testdatensatzes erlaubt, der die zentralen sprachtheoretischen Annahmen der Referenztheorie in einem angemessenen Grad repräsentiert. Im Falle von Bedeutungstheorien sollte ein derartiger Testdatensatz das Output eines kompetenten Sprechers auf eine Art und Weise abbilden, wie es von der untersuchten Sprachtheorie impliziert wird. Mit Hilfe eines solchen Testdatensatzes könnte dann der Grad bestimmt werden, in dem das Sprachverhalten eines LLMs dem einer Sprachtheorie entspricht. Ein derartiges Wissen über das Verhalten von LLMs ist insbesondere für jene Zweige der DH relevant, deren Theorien und Analysen auf bestimmten sprachphilosophischen Vorannahmen aufbauen. Sie könnten dann für ihre Analysen jene LLMs verwenden, die diesen entsprechen.</p>
-                <p style="text-align: left; ">Wir werden daher im Folgenden eine Methode präsentieren, die eine derartige Evaluation erlaubt, sie anhand eines Beispiels – der wahrheitskonditionalen Semantik von Donald Davidson – vorführen, und die Resultate der ersten Pilotannotationen sowie erster Experimente mit LLMs präsentieren.</p>
-                <p style="text-align: left; ">An diesem Punkt sei darauf hingewiesen, dass die Auswahl von Davidsons Sprachtheorie nicht daher rührt, dass wir glauben, dass sie in höherem Grad als alternative Sprachtheorien dem Textgenerierungsverhalten von LLMs entspricht, sondern daher, dass Ausgangsszene und Kernkonzept seiner Sprachphilosophie sehr treffend die Situation beschreiben, mit der Benutzer von großen Sprachmodellen konfrontiert sind: die radikale Interpretation. Bei dieser steht der radikale Interpret einer Sprecher:in einer ihm unbekannten Sprache gegenüber und versucht auf Basis einer spezifischen Form des 
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="PICHLER_Axel_Empirische_Evaluation_des_Verhaltens_von_LLMs_a" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Empirische Evaluation des Verhaltens von LLMs auf Basis sprachphilosophischer Theorien: Methode und Pilotannotationen</title>
+<author>
+<persName>
+<surname>Pichler</surname>
+<forename>Axel</forename>
+</persName>
+<affiliation>Universität Stuttgart, Deutschland</affiliation>
+<email>apichler@ts.uni-stuttgart.de</email>
+</author>
+<author>
+<persName>
+<surname>Gerstorfer</surname>
+<forename>Dominik</forename>
+</persName>
+<affiliation>Technische Universität, Darmstadt, Deutschland</affiliation>
+<email>dominik.gerstorfer@tu-darmstadt.de</email>
+</author>
+<author>
+<persName>
+<surname>Kuhn</surname>
+<forename>Jonas</forename>
+</persName>
+<affiliation>Universität Stuttgart, Deutschland</affiliation>
+<email>jonas.kuhn@ims.uni-stuttgart.de</email>
+</author>
+<author>
+<persName>
+<surname>Pagel</surname>
+<forename>Janis</forename>
+</persName>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>janis.pagel@uni-koeln.de</email>
+<idno type="ORCID">0000-0003-4370-1483</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2023-06-13T14:32:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943146</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Vortrag: Methode</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Large Language Model</term>
+<term>behavioral analysis</term>
+<term>Bedeutung</term>
+<term>Verstehen</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Modellierung</term>
+<term>Theoretisierung</term>
+<term>Methoden</term>
+<term>Text</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Einleitung</head>
+<p style="text-align: left; ">Die Fähigkeit großer Sprachmodelle (LLMs), Bedeutung und Verstehen zu simulieren, hat in den letzten Jahren zu einer regen Debatte darüber geführt, inwiefern LLMs tatsächlich bedeutungsvolle Sprache generieren und diese verstehen. Bedeutungs- und Verstehensbegriff sind zugleich zentrale Konzepte der Kultur- und Geisteswissenschaften. Dementsprechend beteiligen sich auch viele traditionelle und digitale Geisteswissenschaftler:innen an der laufenden Debatte. So wurde 2023 auf einem Panel der DHd-Konferenz ein Zugang zu dieser Debatte präsentiert, der das Ziel hatte, durch theoretische Impulse eine präzisere Beschreibungssprache für die Digital Humanities (DH) zu schaffen, die dabei helfen sollte, die Unterschiede zwischen den Bedeutungsprozessen von Maschinen und Menschen herauszuarbeiten, um so die Anwendung von Künstlicher Intelligenz kritisch zu hinterfragen (Gengnagel et al. 2024). Während das Panel derartig eine geisteswissenschaftliche Kernkompetenz – die Begriffsanalyse – reaktivierte, um ordnend in die Diskussion einzugreifen, inwiefern LLMs bedeutungsvolle Sprache generieren und diese verstehen, folgte es zugleich der auch in der Natural-Language-Processing-Community weitverbreiteten Tendenz, besagte Fragen primär theoretisch zu verhandeln.</p>
+<p style="text-align: left; ">Wir wollen dieser theoretischen Debatte keine weitere theoretische Position hinzufügen, sondern im Folgenden einen Vorschlag machen, wie ergänzend überprüft werden kann, inwiefern das Verhalten eines LLMs existierenden Sprachtheorien entspricht. Dabei knüpfen wir an die NLP-Tradition des ›behavioral testings‹ an, die sich mit der Prüfung verschiedener Fähigkeiten eines Systems durch Validierung des Eingabe-Ausgabe-Verhaltens ohne Kenntnis der internen Struktur befasst (Beizer 1995). Hierbei verfolgen wir einen theoriegeleiteten Top-Down-Ansatz, der von einer gegebenen Sprachtheorie ausgeht und diese so modelliert, dass ihre zentralen Begriffe in einer Form operationalisiert werden können (Krautter/Pichler/Reiter 2023; Gerstorfer/Gius 2023), welche die Erstellung eines Testdatensatzes erlaubt, der die zentralen sprachtheoretischen Annahmen der Referenztheorie in einem angemessenen Grad repräsentiert. Im Falle von Bedeutungstheorien sollte ein derartiger Testdatensatz das Output eines kompetenten Sprechers auf eine Art und Weise abbilden, wie es von der untersuchten Sprachtheorie impliziert wird. Mit Hilfe eines solchen Testdatensatzes könnte dann der Grad bestimmt werden, in dem das Sprachverhalten eines LLMs dem einer Sprachtheorie entspricht. Ein derartiges Wissen über das Verhalten von LLMs ist insbesondere für jene Zweige der DH relevant, deren Theorien und Analysen auf bestimmten sprachphilosophischen Vorannahmen aufbauen. Sie könnten dann für ihre Analysen jene LLMs verwenden, die diesen entsprechen.</p>
+<p style="text-align: left; ">Wir werden daher im Folgenden eine Methode präsentieren, die eine derartige Evaluation erlaubt, sie anhand eines Beispiels – der wahrheitskonditionalen Semantik von Donald Davidson – vorführen, und die Resultate der ersten Pilotannotationen sowie erster Experimente mit LLMs präsentieren.</p>
+<p style="text-align: left; ">An diesem Punkt sei darauf hingewiesen, dass die Auswahl von Davidsons Sprachtheorie nicht daher rührt, dass wir glauben, dass sie in höherem Grad als alternative Sprachtheorien dem Textgenerierungsverhalten von LLMs entspricht, sondern daher, dass Ausgangsszene und Kernkonzept seiner Sprachphilosophie sehr treffend die Situation beschreiben, mit der Benutzer von großen Sprachmodellen konfrontiert sind: die radikale Interpretation. Bei dieser steht der radikale Interpret einer Sprecher:in einer ihm unbekannten Sprache gegenüber und versucht auf Basis einer spezifischen Form des 
                     <hi rend="italic">principles of charity</hi> sowie unter Berücksichtigung der gegebenen Situation, die durch diese Situation konditionierten Äußerungen seines Gegenübers zu interpretieren und zu verstehen. Überträgt man diese Situation auf die Interaktion mit LLMs, führt dies dazu, dass die von einem LLM generierten sprachlichen Äußerungen wie Äußerungen einer fremden Sprache rezipiert werden, die radikal interpretiert werden müssen, um verstanden werden zu können. 
                 </p>
-                <p style="text-align: left; ">Abgesehen von diesen Parallelen ist die im Folgenden vorgestellte Methode zur Entwicklung eines Testdatensatzes zur Überprüfung, inwiefern das Verhalten eines LLMs den Erwartungen einer Sprachtheorie bezüglich des Verhaltens eines kompetenten Sprechers entspricht, sprachtheorie-agnostisch. Mit ihrer Hilfe können auch alternative Sprachtheorien getestet werden, was in Anbetracht der Vielfalt des Theorieangebots in Sprachphilosophie und Semantik sowie von deren zentraler Rolle zum Beispiel in den Interpretationstheorien der Literaturwissenschaft ein Forschungsdesiderat darstellt. Längerfristig streben wir an, weitere sprachphilosophische Theorien derartig zu überprüfen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Methode</head>
-                <p style="text-align: left; ">Die Generierung eines Testdatensatzes zur Überprüfung, inwiefern das Verhalten eines LLMs den Erwartungen einer Sprachtheorie entspricht, erfolgt in drei Schritten: In einem ersten Schritt sind die zentralen Annahmen der zu testenden Sprachtheorie rational zu rekonstruieren. Ziel dieser Rekonstruktion ist, zweitens, die Rückführung besagter Sprachtheorie auf eine oder mehrere sprachtheoretische Hypothesen, die im Folgenden getestet werden. Dafür sind, drittens, die zentralen Begriffe dieser Hypothesen so zu operationalisieren, dass mit ihrer Hilfe ein Testdatensatz erzeugt werden kann.</p>
-                <p style="text-align: left; ">Im Zentrum von Davidsons Bedeutungstheorie steht die These, »that a theory of truth, modified to apply to a natural language, can be used as a theory of interpretation« (Davidson 2006, S. 189). Davidson kommt einem Ansatz wie dem hier präsentierten, der auf eine operationalisierbare Rekonstruktion einer Theorie abzielt, nun insofern entgegen, als dass Davidson selbst mit dem Konzept der radikalen Interpretation bereits eine Operationalisierung der Kernelemente seiner Sprachtheorie vorgelegt hat, die nur in Hinblick auf jene Voraussetzungen zu adaptieren ist, die LLMs im Unterschied zu kompetenten menschlichen Sprechern nicht erfüllen. Davidson schreibt: »A theory of meaning (in my mildly perverse sense) 
+<p style="text-align: left; ">Abgesehen von diesen Parallelen ist die im Folgenden vorgestellte Methode zur Entwicklung eines Testdatensatzes zur Überprüfung, inwiefern das Verhalten eines LLMs den Erwartungen einer Sprachtheorie bezüglich des Verhaltens eines kompetenten Sprechers entspricht, sprachtheorie-agnostisch. Mit ihrer Hilfe können auch alternative Sprachtheorien getestet werden, was in Anbetracht der Vielfalt des Theorieangebots in Sprachphilosophie und Semantik sowie von deren zentraler Rolle zum Beispiel in den Interpretationstheorien der Literaturwissenschaft ein Forschungsdesiderat darstellt. Längerfristig streben wir an, weitere sprachphilosophische Theorien derartig zu überprüfen.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Methode</head>
+<p style="text-align: left; ">Die Generierung eines Testdatensatzes zur Überprüfung, inwiefern das Verhalten eines LLMs den Erwartungen einer Sprachtheorie entspricht, erfolgt in drei Schritten: In einem ersten Schritt sind die zentralen Annahmen der zu testenden Sprachtheorie rational zu rekonstruieren. Ziel dieser Rekonstruktion ist, zweitens, die Rückführung besagter Sprachtheorie auf eine oder mehrere sprachtheoretische Hypothesen, die im Folgenden getestet werden. Dafür sind, drittens, die zentralen Begriffe dieser Hypothesen so zu operationalisieren, dass mit ihrer Hilfe ein Testdatensatz erzeugt werden kann.</p>
+<p style="text-align: left; ">Im Zentrum von Davidsons Bedeutungstheorie steht die These, »that a theory of truth, modified to apply to a natural language, can be used as a theory of interpretation« (Davidson 2006, S. 189). Davidson kommt einem Ansatz wie dem hier präsentierten, der auf eine operationalisierbare Rekonstruktion einer Theorie abzielt, nun insofern entgegen, als dass Davidson selbst mit dem Konzept der radikalen Interpretation bereits eine Operationalisierung der Kernelemente seiner Sprachtheorie vorgelegt hat, die nur in Hinblick auf jene Voraussetzungen zu adaptieren ist, die LLMs im Unterschied zu kompetenten menschlichen Sprechern nicht erfüllen. Davidson schreibt: »A theory of meaning (in my mildly perverse sense) 
                     <hi rend="bold">is an empirical theory</hi>, and its ambition is to account for the workings of a natural language. Like any theory, it may be tested by comparing some of its consequences with the facts. In the present case this is easy, for the theory has been characterized as issuing in an infinite flood of sentences each giving the truth conditions of a sentence; we only need to ask, in sample cases, whether what the theory avers to be the truth conditions for a sentence really are. A typical test case might involve deciding whether the sentence ‘Snow is white’ is true if and only if snow is white.« (Davidson 2006, S. 161, Hervorhebung von den Autoren)
                 </p>
-                <p style="text-align: left; ">In Hinblick auf die zu konstituierende Leithypothese heißt das, dass einem Sprachmodell eine Vielzahl von Gelegenheitssätzen in Bezug auf eine bestimmte Situation vorzulegen ist, um dann zu überprüfen, inwiefern das Model diese Sätze für wahr hält. Die absurd anmutende Formulierung des soeben artikulierten verweist bereits auf jene Elemente der Davidson’schen Theorie, die zu adaptieren sind, wenn man sie auf LLMs anwenden möchte. Dazu zählen insbesondere, dass 1.) große Sprachmodelle keine Agenten sind, 2.) keine Überzeugungen besitzen und dementsprechend 3.) auch keine Propositionen für-wahr-halten können. LLMs können jedoch das entsprechende Verhalten eines kompetenten Sprechers simulieren. Zudem entspricht die ›Kommunikationssituation‹ zwischen einem LLM und einem Menschen nicht derjenigen der radikalen Interpretation: Weder besitzt eine solche einen realweltlichen Situations- und Bezugsrahmen, auf Basis dessen in Übereinstimmung mit dem Gesamtverhalten eines Sprechers einer fremden Sprache bestimmt werden kann, ob dieser einen Satz zu einem bestimmten Zeitpunkt an einem bestimmten Ort für wahr hält oder nicht, noch handelt es sich dabei um eine kausale Relation zwischen Bezugsrahmen und Verhalten besagten Sprechers (vgl. Davidson 2001). Das im Folgenden entwickelte Testset überprüft dementsprechend nur, inwiefern sich diese Simulation zum Kommunikationsverhalten eines kompetenten Sprechers im Sinne Davidsons verhält bzw. zu welchem Grade es diesem entspricht. Ausgangspunkt bei der Entwicklung des Testsets ist dabei folgende Leit-Hypothese: (H) Ein Sprachmodell verwendet eine Sprache wie ein kompetenter Sprecher im Sinne Davidsons, gdw. es die selben zum Zeitpunkt Z geäußerten Sätze im Verhältnis zum sprachlichen Kontext K als wahr bestimmt.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Testdatensatzerstellung</head>
-                <p style="text-align: left; ">Die Testdatenerzeugung erfolgt dementsprechend in Bezug auf einen sprachlichen Kontext K, der von jedem beliebigen Text gefüllt werden kann, der eine Situation beschreibt, die im Hinblick auf situative Aussagen auf ihren Wahrheitswert hin überprüft werden kann. Dieser Fokus auf wahrheitskonditionale situative Aussagesätze ist der Orientierung an den theoretischen Grundannahmen der Davidson’schen Theorie geschuldet. Im Falle alternativer sprachphilosophischer Theorien können andere Frage-Antwort-Typen relevant sein. </p>
-                <p style="text-align: left; ">Für unsere Pilotannotation haben wir auf die Texteröffnung von Franz Kafkas Erzählung 
+<p style="text-align: left; ">In Hinblick auf die zu konstituierende Leithypothese heißt das, dass einem Sprachmodell eine Vielzahl von Gelegenheitssätzen in Bezug auf eine bestimmte Situation vorzulegen ist, um dann zu überprüfen, inwiefern das Model diese Sätze für wahr hält. Die absurd anmutende Formulierung des soeben artikulierten verweist bereits auf jene Elemente der Davidson’schen Theorie, die zu adaptieren sind, wenn man sie auf LLMs anwenden möchte. Dazu zählen insbesondere, dass 1.) große Sprachmodelle keine Agenten sind, 2.) keine Überzeugungen besitzen und dementsprechend 3.) auch keine Propositionen für-wahr-halten können. LLMs können jedoch das entsprechende Verhalten eines kompetenten Sprechers simulieren. Zudem entspricht die ›Kommunikationssituation‹ zwischen einem LLM und einem Menschen nicht derjenigen der radikalen Interpretation: Weder besitzt eine solche einen realweltlichen Situations- und Bezugsrahmen, auf Basis dessen in Übereinstimmung mit dem Gesamtverhalten eines Sprechers einer fremden Sprache bestimmt werden kann, ob dieser einen Satz zu einem bestimmten Zeitpunkt an einem bestimmten Ort für wahr hält oder nicht, noch handelt es sich dabei um eine kausale Relation zwischen Bezugsrahmen und Verhalten besagten Sprechers (vgl. Davidson 2001). Das im Folgenden entwickelte Testset überprüft dementsprechend nur, inwiefern sich diese Simulation zum Kommunikationsverhalten eines kompetenten Sprechers im Sinne Davidsons verhält bzw. zu welchem Grade es diesem entspricht. Ausgangspunkt bei der Entwicklung des Testsets ist dabei folgende Leit-Hypothese: (H) Ein Sprachmodell verwendet eine Sprache wie ein kompetenter Sprecher im Sinne Davidsons, gdw. es die selben zum Zeitpunkt Z geäußerten Sätze im Verhältnis zum sprachlichen Kontext K als wahr bestimmt.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Testdatensatzerstellung</head>
+<p style="text-align: left; ">Die Testdatenerzeugung erfolgt dementsprechend in Bezug auf einen sprachlichen Kontext K, der von jedem beliebigen Text gefüllt werden kann, der eine Situation beschreibt, die im Hinblick auf situative Aussagen auf ihren Wahrheitswert hin überprüft werden kann. Dieser Fokus auf wahrheitskonditionale situative Aussagesätze ist der Orientierung an den theoretischen Grundannahmen der Davidson’schen Theorie geschuldet. Im Falle alternativer sprachphilosophischer Theorien können andere Frage-Antwort-Typen relevant sein. </p>
+<p style="text-align: left; ">Für unsere Pilotannotation haben wir auf die Texteröffnung von Franz Kafkas Erzählung 
                     <hi rend="italic">Das Urteil</hi> zurückgegriffen, die laut Michael Scheffel als »fiktionale, illusionistische, autor- und erzählerverleugnende, aliozentrische Autorerzählung in dritter Person« mit Dietrich Weber als Standardtyp des Erzählens verstanden werden kann (Scheffel 2002, S. 61). Diese Auswahl ist eine Folge unserer leitenden Forschungsinteressen. Eine extensivere Testung von Sprachmodellen, die umfassendere Geltungsansprüche stellte als die hier vorgelegte Pilotstudie, müsste mit einer Vielzahl derartiger Kontexte arbeiten und dabei deren Auswahl ebenfalls auf Basis der untersuchten Sprachtheorie plausibilisieren. Davidson gliedert nun den Prozess für die Erarbeitung einer Wahrheits- bzw. Bedeutungstheorie für eine unbekannte Sprache, auf welche die Quantorenlogik erster Stufe projiziert wird, in drei Schritte: 1. Identifizierung (unter anderem) aller Prädikate und Singular-Phrasen, 2. Erstellung von Sätzen mit Wahrheitsbedingungen bezüglich eines gegebenen Kontextes und 3. Sätze, die nicht entscheidbar sind (vgl. Davidson 2006, S. 193).
                 </p>
-                <p style="text-align: left; ">Wir haben uns für unsere Experimente auf die ersten beiden der drei genannten Schritte konzentriert und dementsprechend in einem ersten Schritt aus den beiden Textstellen das Basisvokabular extrahiert, indem wir mithilfe von spaCy<ref n="1" target="ftn1"/> sämtliche transitiven und intransitiven Verben sowie die Nominalphrasen aus dem Text zogen. In einem zweiten Schritt haben wir auf Basis dieses Vokabulars semi-automatisch 200 situative Aussagesätze generiert und zwar 175 mithilfe von GPT-4o<ref n="2" target="ftn2"/> und einem Prompt, der das Modell dazu aufforderte, 25 Beispiele von sieben vorgegebenen Satzformen zu generieren. In einem zweiten Schritt wurde das Modell angewiesen, die solcherart generierten Sätze in eine grammatisch korrekte Form zu überführen.<ref n="3" target="ftn3"/> Ergänzt wurde dieser Bestand um 25 manuell erzeugte Sätze, die in Bezug auf die im Text beschriebene Situation wahr sein sollten, da wir davon ausgehen, dass eine große Mehrheit der erzeugten Sätze bezüglich des Kontextes K falsch sein werden.
+<p style="text-align: left; ">Wir haben uns für unsere Experimente auf die ersten beiden der drei genannten Schritte konzentriert und dementsprechend in einem ersten Schritt aus den beiden Textstellen das Basisvokabular extrahiert, indem wir mithilfe von spaCy<ref n="1" target="ftn1"/> sämtliche transitiven und intransitiven Verben sowie die Nominalphrasen aus dem Text zogen. In einem zweiten Schritt haben wir auf Basis dieses Vokabulars semi-automatisch 200 situative Aussagesätze generiert und zwar 175 mithilfe von GPT-4o<ref n="2" target="ftn2"/> und einem Prompt, der das Modell dazu aufforderte, 25 Beispiele von sieben vorgegebenen Satzformen zu generieren. In einem zweiten Schritt wurde das Modell angewiesen, die solcherart generierten Sätze in eine grammatisch korrekte Form zu überführen.<ref n="3" target="ftn3"/> Ergänzt wurde dieser Bestand um 25 manuell erzeugte Sätze, die in Bezug auf die im Text beschriebene Situation wahr sein sollten, da wir davon ausgehen, dass eine große Mehrheit der erzeugten Sätze bezüglich des Kontextes K falsch sein werden.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Pilotstudie und LLM-Experimente</head>
-                <p style="text-align: left; ">Wir führen eine Pilotstudie zur Annotation der Testdaten durch, um die Durchführbarkeit des Vorhabens zu demonstrieren.</p>
-                <p style="text-align: left; ">Die Testdaten zu Kafkas Urteil wurden von drei Annotatoren (drei der Autoren; die 25 manuellen Sätze wurden vom ersten Autor erstellt, der selber nicht annotiert hat) annotiert, und zwar bezüglich des Wahrheitswertes des Satzes im Hinblick auf den gegebenen Kontext als auch bezüglich der Angabe, ob der Satz extrinsisch oder intrinsisch wahr oder falsch ist.</p>
-                <p style="text-align: left; ">Die Auswertungen der Annotationen in Form einer Inter-Annotator-Agreement-Studie befinden sich in Tabelle 1 (Agreement bezüglich der Wahrheitswerte) und Tabelle 2 (Agreement bezüglich intrinsisch/extrinsisch). Für die Auswertungen wurden Sätze, die von den Annotatoren als nicht-entscheidbar eingeschätzt wurden, auf die Werte falsch, bzw. intrinsisch gesetzt.</p>
-                <p style="text-align: left; ">Die Tabellen zeigen das IAA für alle Sätze und für Teilmengen (subsection) der Sätze: (i) ist der Satz ein manuell oder automatisch erstellter Satz, (ii) enthält der Satz einen Junktor oder nicht und (iii) falls der Satz einen Junktor enthält, welchen? Gezeigt wird das resultierende Fleiss’ Kappa (Fleiss 1971) als Maß dafür, wie stark die Annotationen übereinstimmen<ref n="4" target="ftn4"/> (fleiss.kappa), der p-Wert als statistisches Signifikanzmaß (p.value), die Anzahl an Annotatoren (raters) und die Anzahl an annotierten Sätzen in den Teilmengen (subjects).
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Pilotstudie und LLM-Experimente</head>
+<p style="text-align: left; ">Wir führen eine Pilotstudie zur Annotation der Testdaten durch, um die Durchführbarkeit des Vorhabens zu demonstrieren.</p>
+<p style="text-align: left; ">Die Testdaten zu Kafkas Urteil wurden von drei Annotatoren (drei der Autoren; die 25 manuellen Sätze wurden vom ersten Autor erstellt, der selber nicht annotiert hat) annotiert, und zwar bezüglich des Wahrheitswertes des Satzes im Hinblick auf den gegebenen Kontext als auch bezüglich der Angabe, ob der Satz extrinsisch oder intrinsisch wahr oder falsch ist.</p>
+<p style="text-align: left; ">Die Auswertungen der Annotationen in Form einer Inter-Annotator-Agreement-Studie befinden sich in Tabelle 1 (Agreement bezüglich der Wahrheitswerte) und Tabelle 2 (Agreement bezüglich intrinsisch/extrinsisch). Für die Auswertungen wurden Sätze, die von den Annotatoren als nicht-entscheidbar eingeschätzt wurden, auf die Werte falsch, bzw. intrinsisch gesetzt.</p>
+<p style="text-align: left; ">Die Tabellen zeigen das IAA für alle Sätze und für Teilmengen (subsection) der Sätze: (i) ist der Satz ein manuell oder automatisch erstellter Satz, (ii) enthält der Satz einen Junktor oder nicht und (iii) falls der Satz einen Junktor enthält, welchen? Gezeigt wird das resultierende Fleiss’ Kappa (Fleiss 1971) als Maß dafür, wie stark die Annotationen übereinstimmen<ref n="4" target="ftn4"/> (fleiss.kappa), der p-Wert als statistisches Signifikanzmaß (p.value), die Anzahl an Annotatoren (raters) und die Anzahl an annotierten Sätzen in den Teilmengen (subjects).
                 </p>
-                <table rend="rules">
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">subsection</cell>
-                        <cell style="text-align: left;" rend="DH-Default">fleiss.kappa</cell>
-                        <cell style="text-align: left;" rend="DH-Default">p.value</cell>
-                        <cell style="text-align: left;" rend="DH-Default">raters</cell>
-                        <cell style="text-align: left;" rend="DH-Default">subjects</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">alle</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.5566922</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.00</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">200</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur automatisch</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.5566151</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.00</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">175</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur manuell</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.3386243</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.003</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">25</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur ohne Junktoren</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.7643636</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.00</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">60</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur mit Junktoren</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.4654545</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.00</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">140</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur Negationen</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.2021277</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.01</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">50</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur Implikationen</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.0865783</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.37</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">35</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur Konjunktionen</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.7452055</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.00</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">31</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur Disjunktionen</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.7473684</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.00</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">24</cell>
-                    </row>
-                    <head>Tabelle 1: IAA-Auswertung zu den Wahrheitswerten der Sätze (wahr/falsch).</head>
-                </table>
-                <table rend="rules">
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">subsection</cell>
-                        <cell style="text-align: left;" rend="DH-Default">fleiss.kappa</cell>
-                        <cell style="text-align: left;" rend="DH-Default">p.value</cell>
-                        <cell style="text-align: left;" rend="DH-Default">raters</cell>
-                        <cell style="text-align: left;" rend="DH-Default">subjects</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">alle</cell>
-                        <cell style="text-align: left;" rend="DH-Default">-0.2472789</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.00e+00</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">200</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur automatisch</cell>
-                        <cell style="text-align: left;" rend="DH-Default">-0.2466895</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.00e+00</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">175</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur manuell</cell>
-                        <cell style="text-align: left;" rend="DH-Default">-0.4722864</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1.97e-05</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">25</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur ohne Junktoren</cell>
-                        <cell style="text-align: left;" rend="DH-Default">-0.2427966</cell>
-                        <cell style="text-align: left;" rend="DH-Default">5.00e-07</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">60</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur mit Junktoren</cell>
-                        <cell style="text-align: left;" rend="DH-Default">-0.2500752</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.00e+00</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">140</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur Negationen</cell>
-                        <cell style="text-align: left;" rend="DH-Default">-0.2430939</cell>
-                        <cell style="text-align: left;" rend="DH-Default">5.30e-06</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">50</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur Implikationen</cell>
-                        <cell style="text-align: left;" rend="DH-Default">-0.2333237</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1.48e-04</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">35</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur Konjunktionen</cell>
-                        <cell style="text-align: left;" rend="DH-Default">-0.3119122</cell>
-                        <cell style="text-align: left;" rend="DH-Default">2.44e-05</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">31</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;" rend="DH-Default">nur Disjunktionen</cell>
-                        <cell style="text-align: left;" rend="DH-Default">-0.3061224</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1.54e-04</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
-                        <cell style="text-align: left;" rend="DH-Default">24</cell>
-                    </row>
-                    <head>Tabelle 2: IAA-Auswertung dazu, ob ein Satz extrinsisch oder intrinsisch wahr/falsch ist.</head>
-                </table>
-                <p style="text-align: left; ">Für die Wahrheitswerte gibt es mit einem Fleiss’ Kappa von 0.56 ein moderat gutes Agreement. Am höchsten ist das Agreement für Sätze ohne logische Junktoren und für die Kon- und Disjunktion (Fleiss’ Kappa von ca. 0.75). Am wenigsten Übereinstimmungen gibt es für die Implikations-Sätze, wobei das Ergebnis nicht statistisch signifikant ist (p&gt;0.05). Für die automatisch erstellten Sätze lässt sich ein etwas höheres Agreement ablesen als für die manuell erstellten. Im Bezug auf extrinsische/intrinsische Wahrheitswertzuschreibungen ist Fleiss’ Kappa durchweg negativ, was darauf hindeutet, dass die Annotatoren die Annotationsguidelines unterschiedlich interpretiert haben. </p>
-                <p style="text-align: left; ">Erste Experimente mit zwei LLMs – OpenAI’s GPT-4o und Anthropics Claude 3.5 Sonnet Model<ref n="5" target="ftn5"/> – auf denjenigen Daten, bei denen alle Annotatoren übereinstimmen (138 von 200 Sätzen), erzielten einen F1-Score von 85% mit GPT-4o und 77% mit Claude 3.5 Sonnet sowie eine Accuracy von 86% und 79%. Das bedeutet, dass GPT-4o in 86% und Claude 3.5 Sonnet in 79% der Fälle den Gelegenheitssätzen denselben Wahrheitswert zuordnet, wie dies ein kompetenter Sprecher nach Davidson das in Hinblick auf den vorgegebenen Kontext tun sollte.
+<table rend="rules">
+<row>
+<cell rend="DH-Default" style="text-align: left;">subsection</cell>
+<cell rend="DH-Default" style="text-align: left;">fleiss.kappa</cell>
+<cell rend="DH-Default" style="text-align: left;">p.value</cell>
+<cell rend="DH-Default" style="text-align: left;">raters</cell>
+<cell rend="DH-Default" style="text-align: left;">subjects</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">alle</cell>
+<cell rend="DH-Default" style="text-align: left;">0.5566922</cell>
+<cell rend="DH-Default" style="text-align: left;">0.00</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">200</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur automatisch</cell>
+<cell rend="DH-Default" style="text-align: left;">0.5566151</cell>
+<cell rend="DH-Default" style="text-align: left;">0.00</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">175</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur manuell</cell>
+<cell rend="DH-Default" style="text-align: left;">0.3386243</cell>
+<cell rend="DH-Default" style="text-align: left;">0.003</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">25</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur ohne Junktoren</cell>
+<cell rend="DH-Default" style="text-align: left;">0.7643636</cell>
+<cell rend="DH-Default" style="text-align: left;">0.00</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">60</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur mit Junktoren</cell>
+<cell rend="DH-Default" style="text-align: left;">0.4654545</cell>
+<cell rend="DH-Default" style="text-align: left;">0.00</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">140</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur Negationen</cell>
+<cell rend="DH-Default" style="text-align: left;">0.2021277</cell>
+<cell rend="DH-Default" style="text-align: left;">0.01</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">50</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur Implikationen</cell>
+<cell rend="DH-Default" style="text-align: left;">0.0865783</cell>
+<cell rend="DH-Default" style="text-align: left;">0.37</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">35</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur Konjunktionen</cell>
+<cell rend="DH-Default" style="text-align: left;">0.7452055</cell>
+<cell rend="DH-Default" style="text-align: left;">0.00</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">31</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur Disjunktionen</cell>
+<cell rend="DH-Default" style="text-align: left;">0.7473684</cell>
+<cell rend="DH-Default" style="text-align: left;">0.00</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">24</cell>
+</row>
+<head>Tabelle 1: IAA-Auswertung zu den Wahrheitswerten der Sätze (wahr/falsch).</head>
+</table>
+<table rend="rules">
+<row>
+<cell rend="DH-Default" style="text-align: left;">subsection</cell>
+<cell rend="DH-Default" style="text-align: left;">fleiss.kappa</cell>
+<cell rend="DH-Default" style="text-align: left;">p.value</cell>
+<cell rend="DH-Default" style="text-align: left;">raters</cell>
+<cell rend="DH-Default" style="text-align: left;">subjects</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">alle</cell>
+<cell rend="DH-Default" style="text-align: left;">-0.2472789</cell>
+<cell rend="DH-Default" style="text-align: left;">0.00e+00</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">200</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur automatisch</cell>
+<cell rend="DH-Default" style="text-align: left;">-0.2466895</cell>
+<cell rend="DH-Default" style="text-align: left;">0.00e+00</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">175</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur manuell</cell>
+<cell rend="DH-Default" style="text-align: left;">-0.4722864</cell>
+<cell rend="DH-Default" style="text-align: left;">1.97e-05</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">25</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur ohne Junktoren</cell>
+<cell rend="DH-Default" style="text-align: left;">-0.2427966</cell>
+<cell rend="DH-Default" style="text-align: left;">5.00e-07</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">60</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur mit Junktoren</cell>
+<cell rend="DH-Default" style="text-align: left;">-0.2500752</cell>
+<cell rend="DH-Default" style="text-align: left;">0.00e+00</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">140</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur Negationen</cell>
+<cell rend="DH-Default" style="text-align: left;">-0.2430939</cell>
+<cell rend="DH-Default" style="text-align: left;">5.30e-06</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">50</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur Implikationen</cell>
+<cell rend="DH-Default" style="text-align: left;">-0.2333237</cell>
+<cell rend="DH-Default" style="text-align: left;">1.48e-04</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">35</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur Konjunktionen</cell>
+<cell rend="DH-Default" style="text-align: left;">-0.3119122</cell>
+<cell rend="DH-Default" style="text-align: left;">2.44e-05</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">31</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">nur Disjunktionen</cell>
+<cell rend="DH-Default" style="text-align: left;">-0.3061224</cell>
+<cell rend="DH-Default" style="text-align: left;">1.54e-04</cell>
+<cell rend="DH-Default" style="text-align: left;">3</cell>
+<cell rend="DH-Default" style="text-align: left;">24</cell>
+</row>
+<head>Tabelle 2: IAA-Auswertung dazu, ob ein Satz extrinsisch oder intrinsisch wahr/falsch ist.</head>
+</table>
+<p style="text-align: left; ">Für die Wahrheitswerte gibt es mit einem Fleiss’ Kappa von 0.56 ein moderat gutes Agreement. Am höchsten ist das Agreement für Sätze ohne logische Junktoren und für die Kon- und Disjunktion (Fleiss’ Kappa von ca. 0.75). Am wenigsten Übereinstimmungen gibt es für die Implikations-Sätze, wobei das Ergebnis nicht statistisch signifikant ist (p&gt;0.05). Für die automatisch erstellten Sätze lässt sich ein etwas höheres Agreement ablesen als für die manuell erstellten. Im Bezug auf extrinsische/intrinsische Wahrheitswertzuschreibungen ist Fleiss’ Kappa durchweg negativ, was darauf hindeutet, dass die Annotatoren die Annotationsguidelines unterschiedlich interpretiert haben. </p>
+<p style="text-align: left; ">Erste Experimente mit zwei LLMs – OpenAI’s GPT-4o und Anthropics Claude 3.5 Sonnet Model<ref n="5" target="ftn5"/> – auf denjenigen Daten, bei denen alle Annotatoren übereinstimmen (138 von 200 Sätzen), erzielten einen F1-Score von 85% mit GPT-4o und 77% mit Claude 3.5 Sonnet sowie eine Accuracy von 86% und 79%. Das bedeutet, dass GPT-4o in 86% und Claude 3.5 Sonnet in 79% der Fälle den Gelegenheitssätzen denselben Wahrheitswert zuordnet, wie dies ein kompetenter Sprecher nach Davidson das in Hinblick auf den vorgegebenen Kontext tun sollte.
                 </p>
-                <p style="text-align: left; ">In summa haben wir gezeigt, dass es möglich ist eine Sprachtheorie so zu modellieren und anschließend in Hinblick auf einen bestimmten Testkontext zu operationalisieren, dass die Resultate als Testdaten für diese Sprachtheorie hinreichen. Im Zuge unserer ersten Experimente haben wir festgestellt, dass eine solche Modellierung und Operationalisierung jedoch zahlreiche Fallstricke besitzt: So führt zum Beispiel eine vollständig automatisierte Testdatengenerierung auf Basis eines gegebenen Vokabulars mehrheitlich zu sinnlosen Sätzen, ebenso schränkt einen die Limitierung auf das in einem bestimmten Kontext gegebene Vokabular unnötig ein. Zudem hat im konkreten Fall Davidsons formallogische Orientierung den Annotierenden Probleme gemacht. Des Weiteren haben wir darauf verzichtet, die Input-Sequenzen so zu manipulieren, dass das LLM explizit dazu aufgefordert wird, einer bestimmten Sprachtheorie entsprechend zu handeln. Bei den hier durchgeführten Experimenten ging es uns nur darum, wie die LLMs ohne zusätzliche Informationen oder Prompt Engineering Strategien auf die ›Gelegenheitssätze‹ ›reagieren‹.<ref n="6" target="ftn6"/> Zudem sollte im Weiteren untersucht werden, inwieweit andere Kontexte die Testdatenerstellung beeinflussen und ob beispielsweise ein Korpus von nicht-fiktionalen Texten andere Vorgehensweisen nötig macht.
+<p style="text-align: left; ">In summa haben wir gezeigt, dass es möglich ist eine Sprachtheorie so zu modellieren und anschließend in Hinblick auf einen bestimmten Testkontext zu operationalisieren, dass die Resultate als Testdaten für diese Sprachtheorie hinreichen. Im Zuge unserer ersten Experimente haben wir festgestellt, dass eine solche Modellierung und Operationalisierung jedoch zahlreiche Fallstricke besitzt: So führt zum Beispiel eine vollständig automatisierte Testdatengenerierung auf Basis eines gegebenen Vokabulars mehrheitlich zu sinnlosen Sätzen, ebenso schränkt einen die Limitierung auf das in einem bestimmten Kontext gegebene Vokabular unnötig ein. Zudem hat im konkreten Fall Davidsons formallogische Orientierung den Annotierenden Probleme gemacht. Des Weiteren haben wir darauf verzichtet, die Input-Sequenzen so zu manipulieren, dass das LLM explizit dazu aufgefordert wird, einer bestimmten Sprachtheorie entsprechend zu handeln. Bei den hier durchgeführten Experimenten ging es uns nur darum, wie die LLMs ohne zusätzliche Informationen oder Prompt Engineering Strategien auf die ›Gelegenheitssätze‹ ›reagieren‹.<ref n="6" target="ftn6"/> Zudem sollte im Weiteren untersucht werden, inwieweit andere Kontexte die Testdatenerstellung beeinflussen und ob beispielsweise ein Korpus von nicht-fiktionalen Texten andere Vorgehensweisen nötig macht.
                 </p>
-            </div>
-        </body>
-        <back>
+</div>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
-                        
-                            <ref target="https://spacy.io/">
-                                <hi rend="underline color(1155CC)" style="font-size:10pt">https://spacy.io/</hi>
-                            </ref>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
-                        
-                            <ref target="https://openai.com/index/hello-gpt-4o/">
-                                <hi rend="underline color(1155CC)" style="font-size:10pt">https://openai.com/index/hello-gpt-4o/</hi>
-                            </ref>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn3" n="3">
-                        
-                            <hi style="font-size:10pt" xml:space="preserve">Siehe: </hi>
-                            <ref target="https://github.com/pagelj/dhd2025">
-                                <hi style="font-size:10pt">https://github.com/pagelj/dhd2025</hi>
-                            </ref>
-                        
-                        
-                            <hi style="font-size:10pt">Es muss hier darauf hingewiesen werden, dass wir nur eine einzige Prompt-Formulierung benutzt haben und nicht getestet haben, ob andere Prompt-Formulierungen andere/bessere Resultate erbringen. Entsprechend jüngerer Studien zum Einfluss von Änderungen im Prompt Design auf die Performance der jeweiligen Modell-Prompt-Kombination (vgl. Mizrahi 2024) wäre unser Testdatensatz in weiterer Folge auf eine kontrollierbare Art und Weise zu variieren, auf deren Basis dann evaluiert werden könnte, inwiefern diese Variationen den Grad der Entsprechung des ›Sprachverhaltens‹ eines LLMs beeinflussen.</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn4" n="4">
-                        
-                            <hi style="font-size:10pt" xml:space="preserve"> Ein Kappa-Wert von 0 signalisiert, dass die Übereinstimmungen/Nicht-Übereinstimmungen in den Annotationen auch zufällig entstanden sein könnten, ein negativer Wert, dass die Nicht-Übereinstimmungen höher ausfallen als per Zufall erwartet und ein positiver Wert, dass die Übereinstimmungen höher ausfallen als per Zufall erwartet, mit einem Minimal- und Maximalwert von -1 und +1. Ein Wert von +1 entsteht, wenn alle Annotator:innen in allen Fällen das gleiche Label vergeben.</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn5" n="5">
-                        
-                            <ref target="https://www.anthropic.com/news/claude-3-5-sonnet">
-                                <hi rend="underline color(1155CC)" style="font-size:10pt">https://www.anthropic.com/news/claude-3-5-sonnet</hi>
-                            </ref>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn6" n="6">
-                        
-                            <hi style="font-size:10pt" xml:space="preserve"> Zum Einsatz von In-Contex-Learning und Prompt Engineering in den CLS sowie die dafür relevante NLP- und LLM-Forschung siehe zum Beispiel: Pagel/Pichler/Reiter 2024 und Hicke/Bizzoni/Feldkamp/Kristensen-McLachlan 2024.</hi>
-                        
-                    </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Beizer, Boris</hi>. 1995. 
+<note n="1" rend="footnote text" xml:id="ftn1">
+<ref target="https://spacy.io/">
+<hi rend="underline color(1155CC)" style="font-size:10pt">https://spacy.io/</hi>
+</ref>
+</note>
+<note n="2" rend="footnote text" xml:id="ftn2">
+<ref target="https://openai.com/index/hello-gpt-4o/">
+<hi rend="underline color(1155CC)" style="font-size:10pt">https://openai.com/index/hello-gpt-4o/</hi>
+</ref>
+</note>
+<note n="3" rend="footnote text" xml:id="ftn3">
+<hi style="font-size:10pt" xml:space="preserve">Siehe: </hi>
+<ref target="https://github.com/pagelj/dhd2025">
+<hi style="font-size:10pt">https://github.com/pagelj/dhd2025</hi>
+</ref>
+<hi style="font-size:10pt">Es muss hier darauf hingewiesen werden, dass wir nur eine einzige Prompt-Formulierung benutzt haben und nicht getestet haben, ob andere Prompt-Formulierungen andere/bessere Resultate erbringen. Entsprechend jüngerer Studien zum Einfluss von Änderungen im Prompt Design auf die Performance der jeweiligen Modell-Prompt-Kombination (vgl. Mizrahi 2024) wäre unser Testdatensatz in weiterer Folge auf eine kontrollierbare Art und Weise zu variieren, auf deren Basis dann evaluiert werden könnte, inwiefern diese Variationen den Grad der Entsprechung des ›Sprachverhaltens‹ eines LLMs beeinflussen.</hi>
+</note>
+<note n="4" rend="footnote text" xml:id="ftn4">
+<hi style="font-size:10pt" xml:space="preserve"> Ein Kappa-Wert von 0 signalisiert, dass die Übereinstimmungen/Nicht-Übereinstimmungen in den Annotationen auch zufällig entstanden sein könnten, ein negativer Wert, dass die Nicht-Übereinstimmungen höher ausfallen als per Zufall erwartet und ein positiver Wert, dass die Übereinstimmungen höher ausfallen als per Zufall erwartet, mit einem Minimal- und Maximalwert von -1 und +1. Ein Wert von +1 entsteht, wenn alle Annotator:innen in allen Fällen das gleiche Label vergeben.</hi>
+</note>
+<note n="5" rend="footnote text" xml:id="ftn5">
+<ref target="https://www.anthropic.com/news/claude-3-5-sonnet">
+<hi rend="underline color(1155CC)" style="font-size:10pt">https://www.anthropic.com/news/claude-3-5-sonnet</hi>
+</ref>
+</note>
+<note n="6" rend="footnote text" xml:id="ftn6">
+<hi style="font-size:10pt" xml:space="preserve"> Zum Einsatz von In-Contex-Learning und Prompt Engineering in den CLS sowie die dafür relevante NLP- und LLM-Forschung siehe zum Beispiel: Pagel/Pichler/Reiter 2024 und Hicke/Bizzoni/Feldkamp/Kristensen-McLachlan 2024.</hi>
+</note></div>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl><hi rend="bold">Beizer, Boris</hi>. 1995. 
                         <hi rend="italic">Black-box testing: techniques for functional testing of software and systems</hi>. New York: Wiley.
                     </bibl>
-                    <bibl><hi rend="bold">Davidson, Donald</hi>. 2009. “Radical Interpretation” In 
+<bibl><hi rend="bold">Davidson, Donald</hi>. 2009. “Radical Interpretation” In 
                         <hi rend="italic">The Essential Davidson</hi>. Oxford: Clarendon Press, 184-195.
                     </bibl>
-                    <bibl><hi rend="bold">Davidson, Donald</hi>. 2001. “Epistemology Externalized”. In 
+<bibl><hi rend="bold">Davidson, Donald</hi>. 2001. “Epistemology Externalized”. In 
                         <hi rend="italic">Subjective, intersubjective, objective</hi>. Oxford: New York: Clarendon Press; Oxford University Press, 193-204.
                     </bibl>
-                    <bibl><hi rend="bold">Fleiss, Joseph L</hi>. 1971. “Measuring Nominal Scale Agreement Among Many Raters” In 
+<bibl><hi rend="bold">Fleiss, Joseph L</hi>. 1971. “Measuring Nominal Scale Agreement Among Many Raters” In 
                         <hi rend="italic">Psychological Bulletin</hi> 76.5: 378–382.
                     </bibl>
-                    <bibl><hi rend="bold">Gengnagel, Tessa, Fotis Jannidis, Rabea Kleymann, Julian Schröter, und Heike Zinsmeister</hi>. 2024. “Bedeutung in Zeiten großer Sprachmodelle”. In 
+<bibl><hi rend="bold">Gengnagel, Tessa, Fotis Jannidis, Rabea Kleymann, Julian Schröter, und Heike Zinsmeister</hi>. 2024. “Bedeutung in Zeiten großer Sprachmodelle”. In 
                         <hi rend="italic">10. Tagung des Verbands Digital Humanities im deutschsprachigen Raum, DHd 2024</hi>, herausgegeben von Joëlle Weis, Estelle Bunout, Thomas Haider. 
                         <ref target="https://doi.org/10.5281/ZENODO.10698308">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.5281/ZENODO.10698308</hi>
-                        </ref>.
+<hi rend="underline color(1155CC)">https://doi.org/10.5281/ZENODO.10698308</hi>
+</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Gerstorfer, Dominik und Evelyn Gius</hi>. 2023. "Konflikte als Theorie, Modell und Text – Ein kategorientheoretischer Zugang zur Operationalisierung von Konflikten". In 
+<bibl><hi rend="bold">Gerstorfer, Dominik und Evelyn Gius</hi>. 2023. "Konflikte als Theorie, Modell und Text – Ein kategorientheoretischer Zugang zur Operationalisierung von Konflikten". In 
                         <hi rend="italic">9. Tagung des Verbands Digital Humanities im deutschsprachigen Raum, DHd 2023</hi>, herausgegeben von Busch, Anna und Peer Trilcke, 189. DOI: 
                         <ref target="https://doi.org/10.5281/ZENODO.7715293">
-                            <hi rend="underline color(1155CC)">10.5281/ZENODO.7715293</hi>
-                        </ref>.
+<hi rend="underline color(1155CC)">10.5281/ZENODO.7715293</hi>
+</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Hicke, Rebecca M. M., Bizzoni, Yuri, Feldkamp, Pascale, Kristensen-McLachlan, Ross Deans</hi>. 2024. „Says Who? Effective Zero-Shot Annotation of Focalization“. arXiv.
+<bibl><hi rend="bold">Hicke, Rebecca M. M., Bizzoni, Yuri, Feldkamp, Pascale, Kristensen-McLachlan, Ross Deans</hi>. 2024. „Says Who? Effective Zero-Shot Annotation of Focalization“. arXiv.
                         <ref target="http://arxiv.org/abs/2409.11390" xml:space="preserve"> </ref>
-                        <ref target="http://arxiv.org/abs/2409.11390">
-                            <hi rend="underline color(1155CC)">http://arxiv.org/abs/2409.11390</hi>
-                        </ref>.
+<ref target="http://arxiv.org/abs/2409.11390">
+<hi rend="underline color(1155CC)">http://arxiv.org/abs/2409.11390</hi>
+</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Krautter, Benjamin, Axel Pichler, und Nils Reiter</hi>. 2023. „Operationalisierung“. 
+<bibl><hi rend="bold">Krautter, Benjamin, Axel Pichler, und Nils Reiter</hi>. 2023. „Operationalisierung“. 
                         <hi rend="italic">Working Paper 2 der Zeitschrift für digitale Geisteswissenschaften</hi>. Zeitschrift für digitale Geisteswissenschaften – ZfdG.
                         <ref target="https://doi.org/10.17175/WP_2023_010" xml:space="preserve"> </ref>
-                        <ref target="https://doi.org/10.17175/WP_2023_010">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.17175/WP_2023_010</hi>
-                        </ref>.
+<ref target="https://doi.org/10.17175/WP_2023_010">
+<hi rend="underline color(1155CC)">https://doi.org/10.17175/WP_2023_010</hi>
+</ref>.
                     </bibl>
-                    <bibl>
-                        <hi rend="color(212529) background(white)" xml:space="preserve"><hi rend="bold">Mizrahi, Moran, Kaplan, Guy, Malkin, Dan, Dror, Rotem, Shahaf, Dafna, Stanovsky, Gabriel</hi>. 2024. </hi>„State of What Art? A Call for Multi-Prompt LLM Evaluation“
+<bibl>
+<hi rend="color(212529) background(white)" xml:space="preserve"><hi rend="bold">Mizrahi, Moran, Kaplan, Guy, Malkin, Dan, Dror, Rotem, Shahaf, Dafna, Stanovsky, Gabriel</hi>. 2024. </hi>„State of What Art? A Call for Multi-Prompt LLM Evaluation“
                         <hi rend="color(212529) background(white)" xml:space="preserve">. In: </hi>
-                        <hi rend="italic color(212529)">Transactions of the Association for Computational Linguistics</hi>
-                        <hi rend="color(212529) background(white)" xml:space="preserve">, 12:933–949. </hi>
-                        <ref target="https://aclanthology.org/2024.tacl-1.52">
-                            <hi rend="underline color(1155CC) background(white)">https://aclanthology.org/2024.tacl-1.52</hi>
-                        </ref>
+<hi rend="italic color(212529)">Transactions of the Association for Computational Linguistics</hi>
+<hi rend="color(212529) background(white)" xml:space="preserve">, 12:933–949. </hi>
+<ref target="https://aclanthology.org/2024.tacl-1.52">
+<hi rend="underline color(1155CC) background(white)">https://aclanthology.org/2024.tacl-1.52</hi>
+</ref>
+<hi rend="color(212529) background(white)">.</hi>
+</bibl>
+<bibl>
+<hi rend="color(212529)" xml:space="preserve"><hi rend="bold">Pagel, Janis, Pichler, Axel, Reiter</hi>. 2024. </hi>„Evaluating In-Context Learning for Computational Literary Studies: A Case Study Based on the Automatic Recognition of Knowledge Transfer in German Drama“
                         <hi rend="color(212529) background(white)">.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(212529)" xml:space="preserve"><hi rend="bold">Pagel, Janis, Pichler, Axel, Reiter</hi>. 2024. </hi>„Evaluating In-Context Learning for Computational Literary Studies: A Case Study Based on the Automatic Recognition of Knowledge Transfer in German Drama“
-                        <hi rend="color(212529) background(white)">.</hi>
-                        <hi rend="color(212529)" xml:space="preserve">In </hi>
-                        <hi rend="italic color(212529)">Proceedings of the 8th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature (LaTeCH-CLfL 2024)</hi>
-                        <hi rend="color(212529)" xml:space="preserve">, 1–10, </hi>
-                        <ref target="https://aclanthology.org/2024.latechclfl-1.1">
-                            <hi rend="underline color(1155CC)">https://aclanthology.org/2024.latechclfl-1.1</hi>
-                        </ref>
-                        <hi rend="color(212529)">.</hi>
-                    </bibl>
-                    <bibl><hi rend="bold">Scheffel, Michael</hi>. 2002. “Das Urteil – Eine Erzählung ohne ‘geraden, zusammenhängenden, verfolgabren Sinn’?”. In 
+<hi rend="color(212529)" xml:space="preserve">In </hi>
+<hi rend="italic color(212529)">Proceedings of the 8th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature (LaTeCH-CLfL 2024)</hi>
+<hi rend="color(212529)" xml:space="preserve">, 1–10, </hi>
+<ref target="https://aclanthology.org/2024.latechclfl-1.1">
+<hi rend="underline color(1155CC)">https://aclanthology.org/2024.latechclfl-1.1</hi>
+</ref>
+<hi rend="color(212529)">.</hi>
+</bibl>
+<bibl><hi rend="bold">Scheffel, Michael</hi>. 2002. “Das Urteil – Eine Erzählung ohne ‘geraden, zusammenhängenden, verfolgabren Sinn’?”. In 
                         <hi rend="italic">Kafkas „Urteil“ und die Literaturtheorie: zehn Modellanalysen</hi>, herausgegeben von Oliver Jahraus und Stefan Neuhaus, 59-77. Stuttgart: Reclam.
                     </bibl>
-                    <bibl><hi rend="bold">Srivastava, Aarohi, Abhinav Rastogi, Abhishek Rao, Abu Awal Md Shoeb, Abubakar Abid, Adam Fisch, Adam R. Brown, u. a</hi>. 2023. „Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models“. arXiv.
+<bibl><hi rend="bold">Srivastava, Aarohi, Abhinav Rastogi, Abhishek Rao, Abu Awal Md Shoeb, Abubakar Abid, Adam Fisch, Adam R. Brown, u. a</hi>. 2023. „Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models“. arXiv.
                         <ref target="http://arxiv.org/abs/2206.04615" xml:space="preserve"> </ref>
-                        <ref target="http://arxiv.org/abs/2206.04615">
-                            <hi rend="underline color(1155CC)">http://arxiv.org/abs/2206.04615</hi>
-                        </ref>.
+<ref target="http://arxiv.org/abs/2206.04615">
+<hi rend="underline color(1155CC)">http://arxiv.org/abs/2206.04615</hi>
+</ref>.
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

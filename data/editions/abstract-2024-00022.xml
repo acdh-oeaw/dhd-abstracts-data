@@ -1,171 +1,171 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xml:id="PFAFF_Sebastian_Detection_and_Classification_of_Historic_Wat" xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Detection and Classification of Historic Watermarks using neural networks and nearest neighbor search</title>
-                <author>
-                    <persName>
-                        <surname>Pfaff</surname>
-                        <forename>Sebastian</forename>
-                    </persName>
-                    <affiliation>Technische Universität München, Deutschland</affiliation>
-                    <email>s.pfaff@tum.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Beriozchin</surname>
-                        <forename>Evghenii</forename>
-                    </persName>
-                    <affiliation>Technische Universität München, Deutschland</affiliation>
-                    <email>evghenii.beriozchin@tum.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Weyh</surname>
-                        <forename>Paulina</forename>
-                    </persName>
-                    <affiliation>Technische Universität München, Deutschland</affiliation>
-                    <email>paulina.weyh@tum.de</email>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2023-12-06T18:00:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Digital Humanities Passau</publisher>
-                <address>
-                    <addrLine>Universität Passau</addrLine>
-                    <addrLine>Innstraße 41</addrLine>
-                    <addrLine>D-94032 Passau</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Posterpräsentation</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Watermarks</term>
-                    <term>Neural Network</term>
-                    <term>Watermark recognition</term>
-                    <term>Reverse Image search</term>
-                    <term>cycleGAN</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Datenerkennung</term>
-                    <term>Bilderfassung</term>
-                    <term>Strukturanalyse</term>
-                    <term>Identifizierung</term>
-                    <term>Computer</term>
-                    <term>Daten</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <p>The history of paper in Europe dates back to the 12th century when papermaking technology was imported from China through the Islamic world. The first paper mills were established in Spain and Italy, followed by France and Germany in the 13th century. Initially, paper was produced by scooping pulp from linen fibers with a sieve. These frames were often embroidered with a metal wire that formed some design or pattern, e.g., animals, or letters. The wire had a different thickness than the surrounding area. As a result, the pattern from the wire was imprinted on the paper. We call this imprint a watermark. (Hunter 1978) (Damberger 2006) (Vereinigung der Österreichischen Papierindustrie 2023)</p>
-            <p>The study of watermarks holds significance for historical humanities. Watermarks offer valuable insights into the origins of paper, aiding in identifying papermakers, mills, and periods when a specific piece of paper was made. This information plays a crucial role in dating and verifying historical documents. Watermark designs evolved, enabling precise document dating. By identifying watermarks in various documents, one can establish connections between manuscripts, trace paper sources, and track trade routes and distribution networks. However, the identification and comparison of watermarks is currently difficult and time-consuming. (Barrett 2022) (Fuller 2002)</p>
-            <p>Historians ask the German National Library (DNB) to identify watermarks, typically by sending image attachments by mail. Then, a DNB expert physically goes into the archive to find the same or a similar watermark (e.g., from the same mill but a different period). Since this manual process requires highly trained and experienced people, it is both slow and expensive. Thus, there is a bottleneck for watermark recognition since the DNB lacks resources to quickly handle all requests.</p>
-            <p>We build a “human in the middle” model, to help historians efficiently search for watermarks on their own. We provide the user with a ranking containing the most similar images to her query image. Then the user must manually compare their watermark with the results from the nearest neighbor (NN) search. This simple comparison can easily be done by non-experts in a reasonable time. </p>
-            <figure>
-                <graphic n="1001" width="14.066194444444445cm" height="8.956722222222222cm" url="Pictures/0acec0b9ee80e9d582412d25d99af08b.png" rend="inline"/>
-            </figure>
-            <p>This work presents a novel approach to automatically find similar watermarks based on the digitized collection of historical papers, watermarks, and traced watermarks from the German Museum of Books and Writing and the DNB (Deutsche Nationalbibliothek 2023). Previous approaches either used different image processing techniques or trained neural networks for classification (Stewart 1995) (Belov 1999). One disadvantage of the first one is its lack of robustness, while the second approach cannot deal with unseen groups of watermarks. Furthermore, existing approaches only include high-contrast tracings in the database, e.g., (Picard 2016) (Pondenkandath, et al. 2020) (Deng 2009) (Shen 2019). Limiting the database to tracings excludes much data in training and makes it impossible to find watermarks without corresponding tracings. As the DNB continuously adds new watermarks to the database, we aimed for an approach adaptive to new watermarks. Furthermore, as the watermarks are loosely labeled, the network needs to be independent of input-output pairs. </p>
-            <figure>
-                <graphic n="1002" width="16.002cm" height="4.695919444444445cm" url="Pictures/a512fb04ec68d8308994aeb40cd92788.png" rend="inline"/>
-            </figure>
-            <p>In our approach, we create an unpaired dataset of watermarks and preprocessed tracings (sketches). Using this dataset, we train a CycleGAN neural network that can generate a sketch of a watermark present in a scan of a historical paper (Zhu 2017). Using this model, we generate sketches for all watermarks from the dataset and combine them with the sketches produced by preprocessing tracings. We utilize a pre-trained ResNet18 neural network for extracting a feature vector from the sketch. Finally, we use the Spotify Annoy algorithm, for an efficient approximate NN search in the entire database. (Bernhardsson 2018). </p>
-            <p>To test the pipeline, we selected a test set with 22 classes of watermark-tracing groups ranging from 2 to 167 observations per class. Executing the pipeline on the watermark against a database of over 6200 digitized watermarks and traced watermarks, we achieve an accuracy of 50% of finding a corresponding tracing within 25 NNs, and over 68% within 50 NNs. </p>
-            <p>The pipeline shows promising results applicable in different scenarios. Non-experts can identify their watermark by examining fewer than 50 watermarks (~70% success). We anticipate even better results with 100-150 NNs. Watermark-experts can find similar watermarks based on the content of the image to find correlations of scientific importance. Moreover, the database easily integrates with DNB metadata for additional details on the watermark.</p>
-            <p style="text-align: left; text-align: justify;">Training on a larger dataset or using a transformer-based model could enhance the pipeline and database, making it a primary resource for both experts and non-experts in historical watermark research.</p>
-            <p>
-                <hi style="font-size:10pt" xml:space="preserve">Full report: </hi>
-                <ref target="https://www.mdsi.tum.de/en/di-lab/vergangene-projekte/ss2023-tu-delft-detection-and-classification-of-historic-watermarks/">
-                    <hi rend="color(0563C1)" style="font-size:10pt">https://www.mdsi.tum.de/en/di-lab/vergangene-projekte/ss2023-tu-delft-detection-and-classification-of-historic-watermarks/</hi>
-                </ref>
-            </p>
-            <p>Code: 
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Detection and Classification of Historic Watermarks using neural networks and nearest neighbor search</title>
+<author>
+<persName>
+<surname>Pfaff</surname>
+<forename>Sebastian</forename>
+</persName>
+<affiliation>Technische Universität München, Deutschland</affiliation>
+<email>s.pfaff@tum.de</email>
+</author>
+<author>
+<persName>
+<surname>Beriozchin</surname>
+<forename>Evghenii</forename>
+</persName>
+<affiliation>Technische Universität München, Deutschland</affiliation>
+<email>evghenii.beriozchin@tum.de</email>
+</author>
+<author>
+<persName>
+<surname>Weyh</surname>
+<forename>Paulina</forename>
+</persName>
+<affiliation>Technische Universität München, Deutschland</affiliation>
+<email>paulina.weyh@tum.de</email>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2023-12-06T18:00:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Digital Humanities Passau</publisher>
+<address>
+<addrLine>Universität Passau</addrLine>
+<addrLine>Innstraße 41</addrLine>
+<addrLine>D-94032 Passau</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/10698260</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Posterpräsentation</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Watermarks</term>
+<term>Neural Network</term>
+<term>Watermark recognition</term>
+<term>Reverse Image search</term>
+<term>cycleGAN</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Datenerkennung</term>
+<term>Bilderfassung</term>
+<term>Strukturanalyse</term>
+<term>Identifizierung</term>
+<term>Computer</term>
+<term>Daten</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<p>The history of paper in Europe dates back to the 12th century when papermaking technology was imported from China through the Islamic world. The first paper mills were established in Spain and Italy, followed by France and Germany in the 13th century. Initially, paper was produced by scooping pulp from linen fibers with a sieve. These frames were often embroidered with a metal wire that formed some design or pattern, e.g., animals, or letters. The wire had a different thickness than the surrounding area. As a result, the pattern from the wire was imprinted on the paper. We call this imprint a watermark. (Hunter 1978) (Damberger 2006) (Vereinigung der Österreichischen Papierindustrie 2023)</p>
+<p>The study of watermarks holds significance for historical humanities. Watermarks offer valuable insights into the origins of paper, aiding in identifying papermakers, mills, and periods when a specific piece of paper was made. This information plays a crucial role in dating and verifying historical documents. Watermark designs evolved, enabling precise document dating. By identifying watermarks in various documents, one can establish connections between manuscripts, trace paper sources, and track trade routes and distribution networks. However, the identification and comparison of watermarks is currently difficult and time-consuming. (Barrett 2022) (Fuller 2002)</p>
+<p>Historians ask the German National Library (DNB) to identify watermarks, typically by sending image attachments by mail. Then, a DNB expert physically goes into the archive to find the same or a similar watermark (e.g., from the same mill but a different period). Since this manual process requires highly trained and experienced people, it is both slow and expensive. Thus, there is a bottleneck for watermark recognition since the DNB lacks resources to quickly handle all requests.</p>
+<p>We build a “human in the middle” model, to help historians efficiently search for watermarks on their own. We provide the user with a ranking containing the most similar images to her query image. Then the user must manually compare their watermark with the results from the nearest neighbor (NN) search. This simple comparison can easily be done by non-experts in a reasonable time. </p>
+<figure>
+<graphic height="8.956722222222222cm" n="1001" rend="inline" url="Pictures/0acec0b9ee80e9d582412d25d99af08b.png" width="14.066194444444445cm"/>
+</figure>
+<p>This work presents a novel approach to automatically find similar watermarks based on the digitized collection of historical papers, watermarks, and traced watermarks from the German Museum of Books and Writing and the DNB (Deutsche Nationalbibliothek 2023). Previous approaches either used different image processing techniques or trained neural networks for classification (Stewart 1995) (Belov 1999). One disadvantage of the first one is its lack of robustness, while the second approach cannot deal with unseen groups of watermarks. Furthermore, existing approaches only include high-contrast tracings in the database, e.g., (Picard 2016) (Pondenkandath, et al. 2020) (Deng 2009) (Shen 2019). Limiting the database to tracings excludes much data in training and makes it impossible to find watermarks without corresponding tracings. As the DNB continuously adds new watermarks to the database, we aimed for an approach adaptive to new watermarks. Furthermore, as the watermarks are loosely labeled, the network needs to be independent of input-output pairs. </p>
+<figure>
+<graphic height="4.695919444444445cm" n="1002" rend="inline" url="Pictures/a512fb04ec68d8308994aeb40cd92788.png" width="16.002cm"/>
+</figure>
+<p>In our approach, we create an unpaired dataset of watermarks and preprocessed tracings (sketches). Using this dataset, we train a CycleGAN neural network that can generate a sketch of a watermark present in a scan of a historical paper (Zhu 2017). Using this model, we generate sketches for all watermarks from the dataset and combine them with the sketches produced by preprocessing tracings. We utilize a pre-trained ResNet18 neural network for extracting a feature vector from the sketch. Finally, we use the Spotify Annoy algorithm, for an efficient approximate NN search in the entire database. (Bernhardsson 2018). </p>
+<p>To test the pipeline, we selected a test set with 22 classes of watermark-tracing groups ranging from 2 to 167 observations per class. Executing the pipeline on the watermark against a database of over 6200 digitized watermarks and traced watermarks, we achieve an accuracy of 50% of finding a corresponding tracing within 25 NNs, and over 68% within 50 NNs. </p>
+<p>The pipeline shows promising results applicable in different scenarios. Non-experts can identify their watermark by examining fewer than 50 watermarks (~70% success). We anticipate even better results with 100-150 NNs. Watermark-experts can find similar watermarks based on the content of the image to find correlations of scientific importance. Moreover, the database easily integrates with DNB metadata for additional details on the watermark.</p>
+<p style="text-align: left; text-align: justify;">Training on a larger dataset or using a transformer-based model could enhance the pipeline and database, making it a primary resource for both experts and non-experts in historical watermark research.</p>
+<p>
+<hi style="font-size:10pt" xml:space="preserve">Full report: </hi>
+<ref target="https://www.mdsi.tum.de/en/di-lab/vergangene-projekte/ss2023-tu-delft-detection-and-classification-of-historic-watermarks/">
+<hi rend="color(0563C1)" style="font-size:10pt">https://www.mdsi.tum.de/en/di-lab/vergangene-projekte/ss2023-tu-delft-detection-and-classification-of-historic-watermarks/</hi>
+</ref>
+</p>
+<p>Code: 
                 <ref target="https://github.com/EvgheniiBeriozchin/watermark-detection">
-                    <hi style="font-size:10pt">https://github.com/EvgheniiBeriozchin/watermark-detection</hi>
-                </ref>
-            </p>
-        </body>
-        <back>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Barrett, Timothy et al.</hi> 2022. "European Papermaking Techniques 1300-1800." University of Iowa.
+<hi style="font-size:10pt">https://github.com/EvgheniiBeriozchin/watermark-detection</hi>
+</ref>
+</p>
+</body>
+<back>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl rend="Bibliography">
+<hi rend="bold">Barrett, Timothy et al.</hi> 2022. "European Papermaking Techniques 1300-1800." University of Iowa.
                     </bibl>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Belov, V.V. and Esipova, V.A. and Kalaida, V.T. and Klimkin, V.M.</hi> 1999. "Physical and Mathematical Methods for the Visualization and Identification of Watermarks." 
+<bibl rend="Bibliography">
+<hi rend="bold">Belov, V.V. and Esipova, V.A. and Kalaida, V.T. and Klimkin, V.M.</hi> 1999. "Physical and Mathematical Methods for the Visualization and Identification of Watermarks." 
                         <hi rend="italic">Solanus.</hi>
-                    </bibl>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Bernhardsson, Erik.</hi> 2018. "ANNOY library." Spotify.</bibl>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Bounou, Oumayma, Tom Monnier, Ilaria Pastrolin, Xi SHEN, and Christine Benevent et al.</hi> 2020. "A Web Application for Watermark Recognition." 
+</bibl>
+<bibl rend="Bibliography">
+<hi rend="bold">Bernhardsson, Erik.</hi> 2018. "ANNOY library." Spotify.</bibl>
+<bibl rend="Bibliography">
+<hi rend="bold">Bounou, Oumayma, Tom Monnier, Ilaria Pastrolin, Xi SHEN, and Christine Benevent et al.</hi> 2020. "A Web Application for Watermark Recognition." 
                         <hi rend="italic">Journal of Data Mining &amp; Digital Humanities</hi>, 07 14.
                     </bibl>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Damberger, Joachim.</hi> 2006. "Geschichte der Papierherstellung." (LWF - aktuell).</bibl>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Deng, Jia and Dong, Wei and Socher, Richard and Li-Jia Li, Kai Li and Li Fei-Fei.</hi> 2009. "ImageNet: A Large-Scale Hierarchical Image Database." 
+<bibl rend="Bibliography">
+<hi rend="bold">Damberger, Joachim.</hi> 2006. "Geschichte der Papierherstellung." (LWF - aktuell).</bibl>
+<bibl rend="Bibliography">
+<hi rend="bold">Deng, Jia and Dong, Wei and Socher, Richard and Li-Jia Li, Kai Li and Li Fei-Fei.</hi> 2009. "ImageNet: A Large-Scale Hierarchical Image Database." 
                         <hi rend="italic">2009 IEEE Conference on Computer Vision and Pattern Recognition.</hi> Miami, Florida: Institute of Electrical and Electronics Engineers.
                     </bibl>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Deutsche Nationalbibliothek.</hi> 2023. 
+<bibl rend="Bibliography">
+<hi rend="bold">Deutsche Nationalbibliothek.</hi> 2023. 
                         <hi rend="italic">Historical Paper Collections .</hi> 06. https://www.dnb.de/EN/Sammlungen/DBSM/PapierhistorischeSammlungen/papierhistorischeSammlungen.
                     </bibl>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Fuller, Neathery Batsell.</hi> 2002. "A Brief History Of Paper." St. Louis Community College.</bibl>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Hunter, D.</hi> 1978. 
+<bibl rend="Bibliography">
+<hi rend="bold">Fuller, Neathery Batsell.</hi> 2002. "A Brief History Of Paper." St. Louis Community College.</bibl>
+<bibl rend="Bibliography">
+<hi rend="bold">Hunter, D.</hi> 1978. 
                         <hi rend="italic">Papermaking: The History and Technique of an Ancient Craft.</hi> Dover Publications.
                     </bibl>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Picard, David and Henn, Thomas and Dietz, Georg.</hi> 2016. 
+<bibl rend="Bibliography">
+<hi rend="bold">Picard, David and Henn, Thomas and Dietz, Georg.</hi> 2016. 
                         <hi rend="italic">Non-negative dictionary learning for paper watermark similarity.</hi> Conference, Pacific Grove, United States: Asilomar Conference on Signals, Systems, and Computers.
                     </bibl>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Pondenkandath, V., M. Alberti, N. Eichenberger, R. Ingold, and M Liwicki.</hi> 2020. "Cross-Depicted Historical Motif Categorization and Retrieval with Deep Learning." 
+<bibl rend="Bibliography">
+<hi rend="bold">Pondenkandath, V., M. Alberti, N. Eichenberger, R. Ingold, and M Liwicki.</hi> 2020. "Cross-Depicted Historical Motif Categorization and Retrieval with Deep Learning." 
                         <hi rend="italic">Journal of Imaging 6</hi>, 71.
                     </bibl>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Shen, X., Pastrolin, I., Bounou, O., Gidaris, S., Smith, M., Poncet, O., &amp; Aubry, M.</hi> 2019. "Large-Scale Historical Watermark Recognition: dataset and a new consistency-based approach." 
+<bibl rend="Bibliography">
+<hi rend="bold">Shen, X., Pastrolin, I., Bounou, O., Gidaris, S., Smith, M., Poncet, O., &amp; Aubry, M.</hi> 2019. "Large-Scale Historical Watermark Recognition: dataset and a new consistency-based approach." 
                         <hi rend="italic">2020 25th International Conference on Pattern Recognition (ICPR).</hi> Milan: International Association of Pattern Recognition.
                     </bibl>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Stewart, D. and Scharf, R. A. and Arney, J. S.</hi> 1995. "niques for digital image capture of watermarks." 
+<bibl rend="Bibliography">
+<hi rend="bold">Stewart, D. and Scharf, R. A. and Arney, J. S.</hi> 1995. "niques for digital image capture of watermarks." 
                         <hi rend="italic">Journal of Imaging Science and Technology.</hi>
-                    </bibl>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Vereinigung der Österreichischen Papierindustrie.</hi> 2023. 
+</bibl>
+<bibl rend="Bibliography">
+<hi rend="bold">Vereinigung der Österreichischen Papierindustrie.</hi> 2023. 
                         <hi rend="italic">Papier macht Schule - Geschichte der Papierproduktion.</hi> Accessed Juni 2023. https://www.papiermachtschule.at/papierproduktion/geschichte/.
                     </bibl>
-                    <bibl rend="Bibliography">
-                        <hi rend="bold">Zhu, Jun-Yan and Park, Taesung and Isola, Phillip and Efros, Alexei A.</hi> 2017. "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks." Computer Vision (ICCV).</bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+<bibl rend="Bibliography">
+<hi rend="bold">Zhu, Jun-Yan and Park, Taesung and Isola, Phillip and Efros, Alexei A.</hi> 2017. "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks." Computer Vision (ICCV).</bibl>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

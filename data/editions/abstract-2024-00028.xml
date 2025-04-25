@@ -1,262 +1,262 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xml:id="REINERS_SELBACH_Stefan_HermeneuTopic__Ein_Workflow_zur_inter" xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>HermeneuTopic. Ein Workflow zur interaktiven mixed-methods Exploration (philosophie-)historischer Textkorpora.</title>
-                <author>
-                    <persName>
-                        <surname>Reiners-Selbach</surname>
-                        <forename>Stefan</forename>
-                    </persName>
-                    <affiliation>Heinrich-Heine-Universität Düsseldorf, Deutschland</affiliation>
-                    <email>stefan.reiners-selbach@hhu.de</email>
-                    <idno type="ORCID">0000-0002-4763-4348</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Baedke</surname>
-                        <forename>Jan</forename>
-                    </persName>
-                    <affiliation>Ruhr-Universität Bochum, Deutschland</affiliation>
-                    <email>jan.baedke@rub.de</email>
-                    <idno type="ORCID">0000-0003-2138-785X</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Böhm</surname>
-                        <forename>Alexander</forename>
-                    </persName>
-                    <affiliation>Ruhr-Universität Bochum, Deutschland</affiliation>
-                    <email>alexander.boehm@rub.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Fábregas-Tejeda</surname>
-                        <forename>Alejandro</forename>
-                    </persName>
-                    <affiliation>Ruhr-Universität Bochum, Deutschland</affiliation>
-                    <email>Alejandro.FabregasTejeda@rub.de</email>
-                    <idno type="ORCID">0000-0002-1797-5467</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Straetmanns</surname>
-                        <forename>Vera</forename>
-                    </persName>
-                    <affiliation>Ruhr-Universität Bochum, Deutschland</affiliation>
-                    <email>vera.straetmanns@rub.de</email>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2023-12-06T20:17:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Digital Humanities Passau</publisher>
-                <address>
-                    <addrLine>Universität Passau</addrLine>
-                    <addrLine>Innstraße 41</addrLine>
-                    <addrLine>D-94032 Passau</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Interaktive Visualisierung</term>
-                    <term>Topologische Datenanalyse</term>
-                    <term>Multilinguale Sprachmodelle</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Entdeckung</term>
-                    <term>Inhaltsanalyse</term>
-                    <term>Strukturanalyse</term>
-                    <term>Visualisierung</term>
-                    <term>Text</term>
-                    <term>Werkzeuge</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p>Methoden der Digital Humanities halten Einzug in die Philosophie. In der Fachdiskussion, insbesondere der historisch informierten Wissenschaftstheorie, finden sich mehr und mehr Arbeiten, die mit Text Mining-Methoden historische Korpora untersuchen (Malaterre, 2019; Noichl, 2021; Pence, 2022; Bertoldi et al., 2023; Böhm et al., 2022; Lean et al., 2023; Malaterre und Lareau, 2022). Für solche und ähnliche Herangehensweisen prägt sich derzeit der Begriff 
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>HermeneuTopic. Ein Workflow zur interaktiven mixed-methods Exploration (philosophie-)historischer Textkorpora.</title>
+<author>
+<persName>
+<surname>Reiners-Selbach</surname>
+<forename>Stefan</forename>
+</persName>
+<affiliation>Heinrich-Heine-Universität Düsseldorf, Deutschland</affiliation>
+<email>stefan.reiners-selbach@hhu.de</email>
+<idno type="ORCID">0000-0002-4763-4348</idno>
+</author>
+<author>
+<persName>
+<surname>Baedke</surname>
+<forename>Jan</forename>
+</persName>
+<affiliation>Ruhr-Universität Bochum, Deutschland</affiliation>
+<email>jan.baedke@rub.de</email>
+<idno type="ORCID">0000-0003-2138-785X</idno>
+</author>
+<author>
+<persName>
+<surname>Böhm</surname>
+<forename>Alexander</forename>
+</persName>
+<affiliation>Ruhr-Universität Bochum, Deutschland</affiliation>
+<email>alexander.boehm@rub.de</email>
+</author>
+<author>
+<persName>
+<surname>Fábregas-Tejeda</surname>
+<forename>Alejandro</forename>
+</persName>
+<affiliation>Ruhr-Universität Bochum, Deutschland</affiliation>
+<email>Alejandro.FabregasTejeda@rub.de</email>
+<idno type="ORCID">0000-0002-1797-5467</idno>
+</author>
+<author>
+<persName>
+<surname>Straetmanns</surname>
+<forename>Vera</forename>
+</persName>
+<affiliation>Ruhr-Universität Bochum, Deutschland</affiliation>
+<email>vera.straetmanns@rub.de</email>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2023-12-06T20:17:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Digital Humanities Passau</publisher>
+<address>
+<addrLine>Universität Passau</addrLine>
+<addrLine>Innstraße 41</addrLine>
+<addrLine>D-94032 Passau</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/10698454</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Vortrag</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Interaktive Visualisierung</term>
+<term>Topologische Datenanalyse</term>
+<term>Multilinguale Sprachmodelle</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Entdeckung</term>
+<term>Inhaltsanalyse</term>
+<term>Strukturanalyse</term>
+<term>Visualisierung</term>
+<term>Text</term>
+<term>Werkzeuge</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Einleitung</head>
+<p>Methoden der Digital Humanities halten Einzug in die Philosophie. In der Fachdiskussion, insbesondere der historisch informierten Wissenschaftstheorie, finden sich mehr und mehr Arbeiten, die mit Text Mining-Methoden historische Korpora untersuchen (Malaterre, 2019; Noichl, 2021; Pence, 2022; Bertoldi et al., 2023; Böhm et al., 2022; Lean et al., 2023; Malaterre und Lareau, 2022). Für solche und ähnliche Herangehensweisen prägt sich derzeit der Begriff 
                     <hi rend="italic">empirical philosophy of science</hi> aus – mit dem Desiderat, sich nicht mehr nur mit willkürlicher Auswahl scheinbar kanonischer Texte zu begnügen, sondern Wissenschaft in der Breite historisch zu untersuchen, „to detect features that would evade unaided examination” (Lean et al., 2023). 
                 </p>
-                <p>So konnte auch auf der DHd 2023 das erste Panel zur „Digitalen Philosophie- und Pädagogikgeschichte“ stattfinden. Die Probleme, die hier unter anderem identifiziert worden sind, beziehen sich auf die Herangehensweisen an multilinguale Korpora (Noichl, 2023) sowie auf die Lückenhaftigkeit und Undurchschaubarkeit der Datengrundlagen der digitalen Philosophie und unsere Zugriffe auf diese (Heßbrüggen-Walter, 2023). Wir versuchen im Folgenden, auf beide aufgewiesenen Problemfelder zu reagieren, indem wir ein neues methodisches Konzept als Workflow vorstellen: HermeneuTopic.</p>
-                <p>Multilinguale Korpora stellen hinsichtlich Analyse und Modellierung in vielen Bereichen der Digital Humanities eine Herausforderung dar (Dombrowski, 2020; Noichl, 2023). Ein ausschließlicher Fokus auf einen Diskurs in nur einer Sprache ist allerdings nicht zufriedenstellend (Galina Russel, 2014; Noichl, 2023); und die maschinelle Übersetzung eines Korpus, um sprachliche Homogenität herzustellen (s. Bertoldi et al., 2023; Böhm et al., 2022; Malaterre und Lareau, 2022), ist ebenfalls nur eine Behelfslösung (Noichl 2023). Wir stimmen Noichl zu, dass multilinguale Sprachmodelle hierfür die sinnigste Lösung darstellen, um sprachliche Diversität zu wahren, gleichzeitig aber Arbeiten unterschiedlichster Sprachen miteinander vergleichen und verarbeiten zu können. Es ist allerdings trotz sprachlicher Diversität schwer möglich, dem Anspruch, eine Disziplin in Gänze zu erfassen, gerecht zu werden (Heßbrüggen-Walter, 2023). Heßbrüggen-Walter mahnt in diesem Zusammenhang, stärker fragengeleitet vorzugehen und einzugrenzen, dabei Herangehensweisen, Provenienzen, aber auch Grenzen und Biases bei der Korpusbildung transparent darzustellen (2023). Eine mögliche Lösung hierfür stellt ein stärker hermeneutisches, mixed-methods Vorgehen dar: Die Modellierung und computationelle Analyse des Untersuchungsgegenstands wird nicht ans Ende der Arbeit, sondern als Element der Exploration an den Beginn gestellt. Während die Diskussion um die Rolle der Hermeneutik in den Digital Humanities ebenfalls vielfältig geführt wird und sich vielerorts die Frage nach der Anpassung der hermeneutischen Methode an die neuen Gegebenheiten der digitalen Textanalyse findet (s. z.B. Beyen, 2013; Dobson, 2019; Fickers, 2020; Ramsay, 2011; van Zundert, 2016), könnte man allerdings ebenso mit der Anpassung oder der Einbindung der digitalen Methoden an das hermeneutische Vorgehen reagieren. </p>
-                <p>Wir stellen im Folgenden einen Prototyp für einen solchen Workflow vor. Ziel des Workflows ist es, sowohl möglichst sprachagnostisch als auch (meta-)datenagnostisch zu sein. 
+<p>So konnte auch auf der DHd 2023 das erste Panel zur „Digitalen Philosophie- und Pädagogikgeschichte“ stattfinden. Die Probleme, die hier unter anderem identifiziert worden sind, beziehen sich auf die Herangehensweisen an multilinguale Korpora (Noichl, 2023) sowie auf die Lückenhaftigkeit und Undurchschaubarkeit der Datengrundlagen der digitalen Philosophie und unsere Zugriffe auf diese (Heßbrüggen-Walter, 2023). Wir versuchen im Folgenden, auf beide aufgewiesenen Problemfelder zu reagieren, indem wir ein neues methodisches Konzept als Workflow vorstellen: HermeneuTopic.</p>
+<p>Multilinguale Korpora stellen hinsichtlich Analyse und Modellierung in vielen Bereichen der Digital Humanities eine Herausforderung dar (Dombrowski, 2020; Noichl, 2023). Ein ausschließlicher Fokus auf einen Diskurs in nur einer Sprache ist allerdings nicht zufriedenstellend (Galina Russel, 2014; Noichl, 2023); und die maschinelle Übersetzung eines Korpus, um sprachliche Homogenität herzustellen (s. Bertoldi et al., 2023; Böhm et al., 2022; Malaterre und Lareau, 2022), ist ebenfalls nur eine Behelfslösung (Noichl 2023). Wir stimmen Noichl zu, dass multilinguale Sprachmodelle hierfür die sinnigste Lösung darstellen, um sprachliche Diversität zu wahren, gleichzeitig aber Arbeiten unterschiedlichster Sprachen miteinander vergleichen und verarbeiten zu können. Es ist allerdings trotz sprachlicher Diversität schwer möglich, dem Anspruch, eine Disziplin in Gänze zu erfassen, gerecht zu werden (Heßbrüggen-Walter, 2023). Heßbrüggen-Walter mahnt in diesem Zusammenhang, stärker fragengeleitet vorzugehen und einzugrenzen, dabei Herangehensweisen, Provenienzen, aber auch Grenzen und Biases bei der Korpusbildung transparent darzustellen (2023). Eine mögliche Lösung hierfür stellt ein stärker hermeneutisches, mixed-methods Vorgehen dar: Die Modellierung und computationelle Analyse des Untersuchungsgegenstands wird nicht ans Ende der Arbeit, sondern als Element der Exploration an den Beginn gestellt. Während die Diskussion um die Rolle der Hermeneutik in den Digital Humanities ebenfalls vielfältig geführt wird und sich vielerorts die Frage nach der Anpassung der hermeneutischen Methode an die neuen Gegebenheiten der digitalen Textanalyse findet (s. z.B. Beyen, 2013; Dobson, 2019; Fickers, 2020; Ramsay, 2011; van Zundert, 2016), könnte man allerdings ebenso mit der Anpassung oder der Einbindung der digitalen Methoden an das hermeneutische Vorgehen reagieren. </p>
+<p>Wir stellen im Folgenden einen Prototyp für einen solchen Workflow vor. Ziel des Workflows ist es, sowohl möglichst sprachagnostisch als auch (meta-)datenagnostisch zu sein. 
                     <anchor xml:id="Hlk140691060"/>Texte sollen möglichst unabhängig von ihrer Sprache, der Menge ihrer Metadaten oder ihrer Länge analysiert und erkundet werden können. Dazu nutzen wir ein multilinguales Sprachmodell (s. auch Noichl, 2023), mit dem wir exemplarisch Textvektoren von einem kleineren Korpus von 322 Texten generieren. Dasselbe Sprachmodell nutzen wir, um ein multilinguales, vektorbasiertes Topic Modeling durchzuführen. Aus den Resultaten erzeugen wir daraufhin eine interaktive Karte, mit deren Hilfe das Korpus exploriert werden kann. Der resultierende Vektorraum, in den wir die Textvektoren als Streudiagramm projizieren, stellt die Ähnlichkeit der Texte zueinander dar. Daneben annotieren wir die Texte mit ihren Metadaten (sofern vorhanden) und ihren Topics. Aus dieser Visualisierung kann wiederum per Klick auf die Punkte im Streudiagramm zu den durch sie repräsentierten Texten navigiert werden. Damit stellen wir einen Workflow an einem Beispiel vor, der es erlaubt, basierend auf digitalen Analysen Fragen an auch kleineren Textkorpora zu explorieren und über eine Visualisierung als Navigationstool in die Close-Reading-Analyse überzugehen.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Datensatz</head>
-                <p>Der von uns genutzte Datensatz soll nur als Beispiel dienen, um den Workflow zu zeigen. Dabei handelt es sich um einen von uns bereits vorgestellten Datensatz (Böhm et al., 2022). Dieser besteht aus 322 Texten aus den Journals Acta Biotheoretica und Bios, der Schriftenreihe Bibliotheca Biotheoretica sowie einer von Julius Schaxel herausgegebene Schriftenreihe und weiteren Monografien ohne Reihe (1901-1971, s. Fig. 1).</p>
-                <figure>
-                    <graphic n="1001" width="15.721319444444445cm" height="5.948783333333333cm" url="Pictures/44b4dd9323ba867bae2c2910cad79448.png" rend="inline"/>
-                    <head>Abbildung 1: Zusammensetzung des Beispielkorpus (in Wortanzahl per Serie per Jahrzehnt)</head>
-                </figure>
-                <p>Es ist also ein vergleichsweise kleines, teilweise handselektiertes Korpus, das einige ‚kanonische‘ Werke sowie Journals zu deren Ergänzung in der Breite enthält. Das Korpus setzt sich aus deutsch-, englisch- und französischsprachigen Texten zusammen. Maßgebend war dabei die Forschungsfrage: Wie entwickelt sich die Theorie der Biologie im Laufe des 20. Jahrhunderts von einer philosophischen zu einer mathematisch-naturwissenschaftlichen Disziplin? Die Textauswahl ist vorläufig und wird derzeit stetig ergänzt; sie reicht allerdings aus, um den Workflow vorzustellen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Methode</head>
-                <p>Ziel des Workflows ist es, aus Texten (wenn vorhanden, ergänzt mit Metadaten) ein interaktives, analysebasiertes Tool zur Navigation dieser Textdaten zu generieren: HermeneuTopic. Dazu werden die eingegebenen Texte zunächst in Chunks von 500 Wörtern zerlegt, sodass aus 322 Texten 13662 Chunks entstehen. Die ursprünglichen Dokumente werden aus ihren Chunks wieder zusammengesetzt und als XML-Dateien abgespeichert, wobei die einzelnen Chunks als Paragraphs (p-Element) mit xml:id referenziert werden, damit aus der resultierenden Visualisierung heraus einzelne Chunks im Kontext ihrer Texte aufgerufen werden können. Ein solches Chunking ist einerseits für das folgende Topic Modeling und das Embedding sinnvoll, die kleinere Textabschnitte für die Texteingabe vorsehen. Andererseits dient es dazu, Homogenität hinsichtlich der Textlänge herzustellen. Dies ermöglicht einen ebenfalls agnostischen Umgang mit der Textlänge, beziehungsweise die Verarbeitung von Texten mit unterschiedlichsten Textlängen (im Fall der Beispieldaten Monographien und Journalartikel) in derselben Analyse. Nach dem Chunking werden die Chunks mithilfe des multilingualen Sprachmodells 
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Datensatz</head>
+<p>Der von uns genutzte Datensatz soll nur als Beispiel dienen, um den Workflow zu zeigen. Dabei handelt es sich um einen von uns bereits vorgestellten Datensatz (Böhm et al., 2022). Dieser besteht aus 322 Texten aus den Journals Acta Biotheoretica und Bios, der Schriftenreihe Bibliotheca Biotheoretica sowie einer von Julius Schaxel herausgegebene Schriftenreihe und weiteren Monografien ohne Reihe (1901-1971, s. Fig. 1).</p>
+<figure>
+<graphic height="5.948783333333333cm" n="1001" rend="inline" url="Pictures/44b4dd9323ba867bae2c2910cad79448.png" width="15.721319444444445cm"/>
+<head>Abbildung 1: Zusammensetzung des Beispielkorpus (in Wortanzahl per Serie per Jahrzehnt)</head>
+</figure>
+<p>Es ist also ein vergleichsweise kleines, teilweise handselektiertes Korpus, das einige ‚kanonische‘ Werke sowie Journals zu deren Ergänzung in der Breite enthält. Das Korpus setzt sich aus deutsch-, englisch- und französischsprachigen Texten zusammen. Maßgebend war dabei die Forschungsfrage: Wie entwickelt sich die Theorie der Biologie im Laufe des 20. Jahrhunderts von einer philosophischen zu einer mathematisch-naturwissenschaftlichen Disziplin? Die Textauswahl ist vorläufig und wird derzeit stetig ergänzt; sie reicht allerdings aus, um den Workflow vorzustellen.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Methode</head>
+<p>Ziel des Workflows ist es, aus Texten (wenn vorhanden, ergänzt mit Metadaten) ein interaktives, analysebasiertes Tool zur Navigation dieser Textdaten zu generieren: HermeneuTopic. Dazu werden die eingegebenen Texte zunächst in Chunks von 500 Wörtern zerlegt, sodass aus 322 Texten 13662 Chunks entstehen. Die ursprünglichen Dokumente werden aus ihren Chunks wieder zusammengesetzt und als XML-Dateien abgespeichert, wobei die einzelnen Chunks als Paragraphs (p-Element) mit xml:id referenziert werden, damit aus der resultierenden Visualisierung heraus einzelne Chunks im Kontext ihrer Texte aufgerufen werden können. Ein solches Chunking ist einerseits für das folgende Topic Modeling und das Embedding sinnvoll, die kleinere Textabschnitte für die Texteingabe vorsehen. Andererseits dient es dazu, Homogenität hinsichtlich der Textlänge herzustellen. Dies ermöglicht einen ebenfalls agnostischen Umgang mit der Textlänge, beziehungsweise die Verarbeitung von Texten mit unterschiedlichsten Textlängen (im Fall der Beispieldaten Monographien und Journalartikel) in derselben Analyse. Nach dem Chunking werden die Chunks mithilfe des multilingualen Sprachmodells 
                     <hi rend="italic">Sentence-BERT</hi> (
                     <hi rend="italic">distiluse-base-multilingual-cased)</hi><ref n="1" target="ftn1"/> (Reimers und Gurevych, 2019; Reimers und Gurevych, 2020) in einen 512-dimensionalen Vektorraum projiziert. Dieser 512-dimensionale Vektorraum wird mit UMAP (McInnes et al., 2020) auf zwei Dimensionen reduziert, in die die Chunks als Punktvektoren projiziert werden. Dasselbe multilinguale Sprachmodell wird genutzt, um mit Top2Vec (Angelov, 2020) ein multilinguales Topic Modeling durchzuführen. Im Gegensatz zu herkömmlichen LDA-Topic Models (Blei et al., 2003) spricht für Top2Vec nicht nur die Möglichkeit, multilinguale Sprachmodelle einzubinden. Während bei LDA-Verfahren die Zahl der Topics im Vorfeld festgelegt werden muss, optimiert Top2Vec die Anzahl der Topics selbst. Daneben ist für Top2Vec-Analysen auch weniger Vorverarbeitung wie Lemmatisierung oder Stemming notwendig, was bei mehrsprachigen Korpora zusätzliche Herausforderungen bieten würde. Außerdem handelt es sich bei Top2Vec um ein vektorbasiertes Verfahren, das gleichzeitig als Clustering dienen kann und somit für die Visualisierung hilfreich ist. Zuletzt wird Bokeh (Bokeh Developement Team, 2018) genutzt, um aus einem Python-Programm heraus eine interaktive Java-Script-gestützte Visualisierung zu generieren, die im Browser als HTML-Dokument dargestellt werden kann: Die von UMAP generierten Punktvektoren werden als Streudiagramm geplottet. Dabei werden, wenn vorhanden, Metadaten sowie die Topic-Indizes und Topic-Keys des Top2Vec-Topic Modeling als Informationen für ein Mouseover-Pop-Up übergeben; die Top2Vec-Topics werden ebenfalls als thematische Cluster genutzt, indem die Punkte nach Topic eingefärbt werden. Um diese Cluster besser visualisieren zu können, nutzen wir Top2Vecs Funktion zur hierarchischen Topic-Reduktion, wenn die Anzahl der Topics 20 überschreitet. Die Annotation erfolgt mit den Keys und Indizes der nicht-reduzierten Topics. Bei Klick auf einen der Punkte gelangt man im entsprechenden XML-Dokument zum jeweils referenzierten Chunk, der durch den Punkt im Streudiagramm repräsentiert wird. Die resultierende Visualisierung kann als HTML mit eingebettetem Java-Script exportiert werden und ist somit – gemeinsam mit den XML-Dateien des Korpus – portabel und kann ebenfalls als Website zur Nachnutzung zur Verfügung gestellt werden. Grundsätzlich sind damit alle Daten in ein Standard-Datenformat überführt und können ohne weitere Umstände nachgenutzt werden. Daneben ist sämtlicher Programmcode, der genutzt wurde, quelloffen und kann ebenfalls nachgenutzt werden.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Vorläufige Ergebnisse</head>
-                <p>Die Anwendung des beschriebenen Workflows auf den Beispieldatensatz resultiert in einem interaktiven Bokeh-Plot, der wie eine Landkarte des Textkorpus gelesen und als Navigationstool genutzt werden kann. Die unterschiedlichen Topic-Cluster (58, reduziert auf 20) bilden Themenregionen, die erkundet werden können (s. Fig. 2).</p>
-                <figure>
-                    <graphic n="1002" width="16.263583333333333cm" height="15.799266666666666cm" url="Pictures/18e7459ca92380c59b6a503afd82a68f.png" rend="inline"/>
-                    <head>Abbildung 2: Ansicht des interaktiven Bokeh-Plot. Jeder Punkt repräsentiert einen Text-Chunk. Die Dimensionen geben Textähnlichkeit wieder. Farben stellen hierarchisch reduzierte Top2Vec Topics dar.</head>
-                </figure>
-                <p>Es ist am Scatterplot ersichtlich, dass die unterschiedlichen Sprachen unseres Datensatzes (Deutsch, Englisch und Französisch) aligniert sind und nicht getrennt clustern, ohne dass mit Übersetzung sprachliche Homogenität hergestellt worden wäre. Dies lässt sich ebenfalls an einigen Beispielen nachvollziehen (s. Fig. 3)</p>
-                <figure>
-                    <graphic n="1003" width="16.002cm" height="8.692444444444444cm" url="Pictures/90310c7b68e38cb8ddc22a0a719fead3.png" rend="inline"/>
-                    <head>Abbildung 3: Beispiel für ein Pop-Up-Fenster, das bei Mouseover Metadaten sowie die Ergebnisse des Topic Modeling anzeigt; außerdem ein englisch- sowie ein französischsprachiger Text, die nicht sprachlich getrennt clustern. </head>
-                </figure>
-                <p>Outlier bilden wiederum thematisch randständige Texte, wie etwa Texte zur Psychologie (der Tiere). Dies ist zu erwarten in einem Korpus, das sich mit theoretischer Biologie befasst und dessen Zentrum die Diskussion über Gesetzmäßigkeiten und deren Mathematisierbarkeit bildet (s. Fig. 4).</p>
-                <figure>
-                    <graphic n="1004" width="16.002cm" height="6.768041666666667cm" url="Pictures/7f924e8efbe6dee5e296950564b757a3.png" rend="inline"/>
-                    <head>Abbildung 4: Blick auf einen Outlier: Psychologie bzw. Tierpsychologie</head>
-                </figure>
-                <p>Will man nun einen Text weiterverfolgen, gelangt man mit Klick auf den entsprechenden Punkt im Scatterplot zu dem durch diesen repräsentierten Chunk, welcher im dazugehörigen Gesamtdokument als p-Element im XML referenziert ist (s. Fig. 5).</p>
-                <figure>
-                    <graphic n="1005" width="16.002cm" height="4.582583333333333cm" url="Pictures/d05039bf695405cd512f495bbeb6c7ad.png" rend="inline"/>
-                    <head>Abbildung 5: Beispiel für die Navigation zu einem Text-Chunk in einem XML-Dokument.</head>
-                </figure>
-                <p>Werfen wir einen kurzen Blick auf das Topic Modeling, sehen wir, dass auch hier sinnvolle Ergebnisse entstehen – beim Top2Vec-Topic Modeling sind die Topics mit den niedrigsten Indizes diejenigen mit dem höchsten Anteil am Korpus:</p>
-                <p>Topic 0: 'biosysteme', 'organsysteme', 'organogenese'…</p>
-                <p>Topic 1: 'biologen', 'biologie', 'biotheoretica'…</p>
-                <p>Topic 2: 'kompliziert', 'kompliziertheit', 'komplizierte'…</p>
-                <p>So sind die Topics 0 und 1 wenig überraschend bei einem Korpus zur Theorie der Biologie, weil hier scheinbar, zumal in Topic 1, genau dies verhandelt wird. Interessant ist Topic 2, da hier die Komplexität von biologischen Systemen im Zentrum steht. In den Keys folgen ebenfalls die Wörter „Zusammensetzung“ und „Kombination“, die weiter darauf hindeuten. Doch an dieser Stelle kommen Fragen an das Korpus auf, denen weiter im Detail nachgegangen werden muss - was mithilfe des resultierenden Navigationstools in Auseinandersetzung mit der topologischen Struktur sowie den Ergebnissen des Topic Modelings und den ursprünglichen Texten geschehen kann.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Diskussion</head>
-                <p>HermeneuTopic stellt einen sprachagnostischen Workflow dar, der es ermöglicht, selbst ohne umfassende Metadaten, Textkorpora unterschiedlichster Textlänge zu erkunden, da die Visualisierung gänzlich aus Textdaten und nicht aus Metadaten generiert wird. Dabei ermöglicht die interaktive Visualisierung, ähnlich einer Landkarte, ein heuristisches und exploratives Vorgehen: Die Strukturen und Topics, die die digitalen Analysen aufgedeckt haben, ermöglichen eine stärker fragengeleitete und hypothesengestützte Close Reading-Analyse in deren Anschluss. Die digitalen Analysen werfen Fragen auf, die unmittelbar an den Texten selbst untersucht werden können. Damit stellt der vorgeschlagene Workflow einen mixed-methods Ansatz dar, der die Vorzüge von herkömmlichen hermeneutischen Herangehensweisen und digitalen Analysen kombinieren soll, indem die Analysen – durch interaktive Bereitstellung der Daten – sich an den hermeneutischen Herangehensweisen orientieren. Hiermit reagieren wir auf Heßbrüggen-Walter (2023), indem der hier vorgestellte Workflow nicht auf Ganzheit der Daten angewiesen ist oder abzielt, sondern dezidiert im Vorfeld eingrenzt, auf kleinere Korpora zugeschnitten ist, um auch im zweiten Schritt den Texten händisch-lesend zu begegnen. Auch wenn es sich bei den von uns gewählten Daten nur um Beispieldaten handelt, konnten wir hiermit gleichzeitig auf die von Noichl (2023) geäußerte Kritik an unserem bisherigen Approach mit Machine Translation eingehen und seine Forderung, multilingual zu arbeiten, einlösen. </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ausblick</head>
-                <p>Wir stellen mit diesem Beitrag nur einen ersten Prototyp vor, der weiter ausgebaut werden kann. Das multilinguale Sprachmodell 
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Vorläufige Ergebnisse</head>
+<p>Die Anwendung des beschriebenen Workflows auf den Beispieldatensatz resultiert in einem interaktiven Bokeh-Plot, der wie eine Landkarte des Textkorpus gelesen und als Navigationstool genutzt werden kann. Die unterschiedlichen Topic-Cluster (58, reduziert auf 20) bilden Themenregionen, die erkundet werden können (s. Fig. 2).</p>
+<figure>
+<graphic height="15.799266666666666cm" n="1002" rend="inline" url="Pictures/18e7459ca92380c59b6a503afd82a68f.png" width="16.263583333333333cm"/>
+<head>Abbildung 2: Ansicht des interaktiven Bokeh-Plot. Jeder Punkt repräsentiert einen Text-Chunk. Die Dimensionen geben Textähnlichkeit wieder. Farben stellen hierarchisch reduzierte Top2Vec Topics dar.</head>
+</figure>
+<p>Es ist am Scatterplot ersichtlich, dass die unterschiedlichen Sprachen unseres Datensatzes (Deutsch, Englisch und Französisch) aligniert sind und nicht getrennt clustern, ohne dass mit Übersetzung sprachliche Homogenität hergestellt worden wäre. Dies lässt sich ebenfalls an einigen Beispielen nachvollziehen (s. Fig. 3)</p>
+<figure>
+<graphic height="8.692444444444444cm" n="1003" rend="inline" url="Pictures/90310c7b68e38cb8ddc22a0a719fead3.png" width="16.002cm"/>
+<head>Abbildung 3: Beispiel für ein Pop-Up-Fenster, das bei Mouseover Metadaten sowie die Ergebnisse des Topic Modeling anzeigt; außerdem ein englisch- sowie ein französischsprachiger Text, die nicht sprachlich getrennt clustern. </head>
+</figure>
+<p>Outlier bilden wiederum thematisch randständige Texte, wie etwa Texte zur Psychologie (der Tiere). Dies ist zu erwarten in einem Korpus, das sich mit theoretischer Biologie befasst und dessen Zentrum die Diskussion über Gesetzmäßigkeiten und deren Mathematisierbarkeit bildet (s. Fig. 4).</p>
+<figure>
+<graphic height="6.768041666666667cm" n="1004" rend="inline" url="Pictures/7f924e8efbe6dee5e296950564b757a3.png" width="16.002cm"/>
+<head>Abbildung 4: Blick auf einen Outlier: Psychologie bzw. Tierpsychologie</head>
+</figure>
+<p>Will man nun einen Text weiterverfolgen, gelangt man mit Klick auf den entsprechenden Punkt im Scatterplot zu dem durch diesen repräsentierten Chunk, welcher im dazugehörigen Gesamtdokument als p-Element im XML referenziert ist (s. Fig. 5).</p>
+<figure>
+<graphic height="4.582583333333333cm" n="1005" rend="inline" url="Pictures/d05039bf695405cd512f495bbeb6c7ad.png" width="16.002cm"/>
+<head>Abbildung 5: Beispiel für die Navigation zu einem Text-Chunk in einem XML-Dokument.</head>
+</figure>
+<p>Werfen wir einen kurzen Blick auf das Topic Modeling, sehen wir, dass auch hier sinnvolle Ergebnisse entstehen – beim Top2Vec-Topic Modeling sind die Topics mit den niedrigsten Indizes diejenigen mit dem höchsten Anteil am Korpus:</p>
+<p>Topic 0: 'biosysteme', 'organsysteme', 'organogenese'…</p>
+<p>Topic 1: 'biologen', 'biologie', 'biotheoretica'…</p>
+<p>Topic 2: 'kompliziert', 'kompliziertheit', 'komplizierte'…</p>
+<p>So sind die Topics 0 und 1 wenig überraschend bei einem Korpus zur Theorie der Biologie, weil hier scheinbar, zumal in Topic 1, genau dies verhandelt wird. Interessant ist Topic 2, da hier die Komplexität von biologischen Systemen im Zentrum steht. In den Keys folgen ebenfalls die Wörter „Zusammensetzung“ und „Kombination“, die weiter darauf hindeuten. Doch an dieser Stelle kommen Fragen an das Korpus auf, denen weiter im Detail nachgegangen werden muss - was mithilfe des resultierenden Navigationstools in Auseinandersetzung mit der topologischen Struktur sowie den Ergebnissen des Topic Modelings und den ursprünglichen Texten geschehen kann.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Diskussion</head>
+<p>HermeneuTopic stellt einen sprachagnostischen Workflow dar, der es ermöglicht, selbst ohne umfassende Metadaten, Textkorpora unterschiedlichster Textlänge zu erkunden, da die Visualisierung gänzlich aus Textdaten und nicht aus Metadaten generiert wird. Dabei ermöglicht die interaktive Visualisierung, ähnlich einer Landkarte, ein heuristisches und exploratives Vorgehen: Die Strukturen und Topics, die die digitalen Analysen aufgedeckt haben, ermöglichen eine stärker fragengeleitete und hypothesengestützte Close Reading-Analyse in deren Anschluss. Die digitalen Analysen werfen Fragen auf, die unmittelbar an den Texten selbst untersucht werden können. Damit stellt der vorgeschlagene Workflow einen mixed-methods Ansatz dar, der die Vorzüge von herkömmlichen hermeneutischen Herangehensweisen und digitalen Analysen kombinieren soll, indem die Analysen – durch interaktive Bereitstellung der Daten – sich an den hermeneutischen Herangehensweisen orientieren. Hiermit reagieren wir auf Heßbrüggen-Walter (2023), indem der hier vorgestellte Workflow nicht auf Ganzheit der Daten angewiesen ist oder abzielt, sondern dezidiert im Vorfeld eingrenzt, auf kleinere Korpora zugeschnitten ist, um auch im zweiten Schritt den Texten händisch-lesend zu begegnen. Auch wenn es sich bei den von uns gewählten Daten nur um Beispieldaten handelt, konnten wir hiermit gleichzeitig auf die von Noichl (2023) geäußerte Kritik an unserem bisherigen Approach mit Machine Translation eingehen und seine Forderung, multilingual zu arbeiten, einlösen. </p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Ausblick</head>
+<p>Wir stellen mit diesem Beitrag nur einen ersten Prototyp vor, der weiter ausgebaut werden kann. Das multilinguale Sprachmodell 
                     <hi rend="italic">distiluse-base-multilingual-cased</hi> konnte in dieser Studie auch ohne weiteres Fine Tuning sinnvoll eingesetzt werden. Es ist aber zu erwarten, dass durch ein gezieltes Fine Tuning auf dem jeweils zu untersuchenden Korpus noch bessere Ergebnisse zu erzielen wären. Insbesondere das Fachvokabular der (theoretischen) Biologie sollte dem vortrainierten Sprachmodell noch vergleichsweise unbekannt sein. Es wäre daher zu erwarten, dass nach einem Fine Tuning spezifischere Topics und schärfer umrissene Cluster erkennbar wären. Allerdings stellt die Qualitätssicherung der Ergebnisse noch grundsätzlich ein Problem dar. Top2Vec bietet keine Option für statistische Qualitätsmaße, wie dies bei LDA-Topic Modeling möglich ist, sodass bisher händische Kontrolle und Beurteilung durch folgendes Close Reading die einzigen Möglichkeiten bieten, die Qualität der Analysen zu überprüfen. Daneben ist das vorgenommene Chunking basierend auf Wortanzahl nur eine pragmatische Lösung. Hier wäre es ein Desiderat, auch etwa bei fehlender Auszeichnung von Textabschnitten solche natürliche Textunterteilungen automatisiert erkennen und im XML abbilden zu können. Außerdem könnte der hier vorgestellte Workflow neben anderen Möglichkeiten der Filterung und Suche durch eine Semantic Search-Funktion ergänzt werden: Das Embedding, das mit dem Sprachmodell erstellt wird, wäre auch für eine Symmetric Semantic Search-Funktion geeignet. 
                 </p>
-            </div>
-        </body>
-        <back>
+</div>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
+<note n="1" rend="footnote text" xml:id="ftn1">
                          Steht keine GPU zur Verfügung oder ist eine Optimierung der Laufzeit relevant, kann mit Top2Vec auch eine Version des mutlilingualen Universal-Sentence-Encoder (z.B. universal-sentence-encoder-multilingual-large) genutzt werden.
                     </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Angelov, Dimo.</hi> 2020. „Top2Vec: Distributed Representations of Topics“. arXiv. 
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl><hi rend="bold">Angelov, Dimo.</hi> 2020. „Top2Vec: Distributed Representations of Topics“. arXiv. 
                         <ref target="https://doi.org/10.48550/arXiv.2008.09470">https://doi.org/10.48550/arXiv.2008.09470</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Bertoldi, Nicola, Francis Lareau, Charles H. Pence, Christophe Malaterre.</hi> 2023. A quantitative window on the history of statistics: topic-modelling 120 years of Biometrika. 
+<bibl><hi rend="bold">Bertoldi, Nicola, Francis Lareau, Charles H. Pence, Christophe Malaterre.</hi> 2023. A quantitative window on the history of statistics: topic-modelling 120 years of Biometrika. 
                         <hi rend="italic">Digital Scholarship in the Humanities</hi> 2023. 
                         <ref target="https://doi.org/10.1093/llc/fqad072">
-                            <hi rend="italic">https://doi.org/10.1093/llc/fqad072</hi>
-                        </ref>
-                    </bibl>
-                    <bibl><hi rend="bold">Beyen, Marnix.</hi> 2013. „A Higher Form of Hermeneutics? The Digital Humanities in Political Historiography.“ BMGN - Low Countries Historical Review. 128 (4): 164–70.</bibl>
-                    <bibl><hi rend="bold">Blei, David M., Andrew Y. Ng, und Michael I. Jordan.</hi> 2003. „Latent Dirichlet Allocation“. 
+<hi rend="italic">https://doi.org/10.1093/llc/fqad072</hi>
+</ref>
+</bibl>
+<bibl><hi rend="bold">Beyen, Marnix.</hi> 2013. „A Higher Form of Hermeneutics? The Digital Humanities in Political Historiography.“ BMGN - Low Countries Historical Review. 128 (4): 164–70.</bibl>
+<bibl><hi rend="bold">Blei, David M., Andrew Y. Ng, und Michael I. Jordan.</hi> 2003. „Latent Dirichlet Allocation“. 
                         <hi rend="italic">Journal of Machine Learning Research</hi> 3 (Jan): 993–1022.
                     </bibl>
-                    <bibl><hi rend="bold">Böhm, Alexander, Stefan Reiners-Selbach, Jan Baedke, Alejandro Fábregas Tejeda, und Daniel J. Nicholson.</hi> 2022. „What was Theoretical Biology? A Topic-Modelling Analysis of a Multilingual Corpus of Monographs and Journals, 1914-1945”. In: Geierhos, M. (ed.). 
+<bibl><hi rend="bold">Böhm, Alexander, Stefan Reiners-Selbach, Jan Baedke, Alejandro Fábregas Tejeda, und Daniel J. Nicholson.</hi> 2022. „What was Theoretical Biology? A Topic-Modelling Analysis of a Multilingual Corpus of Monographs and Journals, 1914-1945”. In: Geierhos, M. (ed.). 
                         <hi rend="italic">DHd2022: Kulturen des digitalen Gedächtnisses. Konferenzabstracts</hi>. 
                         <ref target="https://doi.org/10.5281/ZENODO.6304590">https://doi.org/10.5281/ZENODO.6304590</ref>
-                    </bibl>
-                    <bibl><hi rend="bold">Bokeh Development Team.</hi> 2018. 
+</bibl>
+<bibl><hi rend="bold">Bokeh Development Team.</hi> 2018. 
                         <hi rend="italic">Bokeh: Python library for interactive visualization</hi>. 
                         <ref target="https://bokeh.pydata.org/en/latest/">https://bokeh.pydata.org/en/latest/</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Dobson, James E.</hi> 2019. 
+<bibl><hi rend="bold">Dobson, James E.</hi> 2019. 
                         <hi rend="italic">Critical Digital Humanities: The Search for a Methodology</hi>. University of Illinois Press. 
                         <ref target="https://doi.org/10.5406/j.ctvfjd0mf">https://doi.org/10.5406/j.ctvfjd0mf</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Dombrowski, Quinn.</hi> 2020. „What’s a ‚Word‘: Multilingual DH and the English Default“. 15. Oktober 2020. 
+<bibl><hi rend="bold">Dombrowski, Quinn.</hi> 2020. „What’s a ‚Word‘: Multilingual DH and the English Default“. 15. Oktober 2020. 
                         <ref target="https://www.quinndombrowski.com/blog/2020/10/15/whats-word-multilingual-dh-and-english-default/">https://www.quinndombrowski.com/blog/2020/10/15/whats-word-multilingual-dh-and-english-default/</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Fickers, Andreas.</hi> 2020. „Update für die Hermeneutik. Geschichtswissenschaft auf dem Weg zur digitalen Forensik?“ 
+<bibl><hi rend="bold">Fickers, Andreas.</hi> 2020. „Update für die Hermeneutik. Geschichtswissenschaft auf dem Weg zur digitalen Forensik?“ 
                         <hi rend="italic">Zeithistorische Forschungen/Studies in Contemporary History</hi> 17: 157–68. 
                         <ref target="https://doi.org/10.14765/zzf.dok-1765">https://doi.org/10.14765/zzf.dok-1765</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Galina Russell, I.</hi> 2014. „Geographical and Linguistic Diversity in the Digital Humanities“. 
+<bibl><hi rend="bold">Galina Russell, I.</hi> 2014. „Geographical and Linguistic Diversity in the Digital Humanities“. 
                         <hi rend="italic">Literary and Linguistic Computing</hi> 29 (3): 307–16. 
                         <ref target="https://doi.org/10.1093/llc/fqu005">https://doi.org/10.1093/llc/fqu005</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Heßbrüggen-Walter, Stefan.</hi> 2023. „Offene Daten für die digitale Philosophie: Anforderungen an eine Datensammlung zur Philosophie und ihrer Geschichte“. In 
+<bibl><hi rend="bold">Heßbrüggen-Walter, Stefan.</hi> 2023. „Offene Daten für die digitale Philosophie: Anforderungen an eine Datensammlung zur Philosophie und ihrer Geschichte“. In 
                         <hi rend="italic">DHd2023: Open Humanities, Open Culture</hi> (First Edition). Zenodo, hg. v. Anna Busch und Peer Trilcke. 
                         <ref target="https://doi.org/10.5281/zenodo.7688632">https://doi.org/10.5281/zenodo.7688632</ref>
-                    </bibl>
-                    <bibl><hi rend="bold">Lean, Oliver M., Luca Rivelli, und Charles H. Pence.</hi> 2023. „Digital Literature Analysis for Empirical Philosophy of Science’“. 
+</bibl>
+<bibl><hi rend="bold">Lean, Oliver M., Luca Rivelli, und Charles H. Pence.</hi> 2023. „Digital Literature Analysis for Empirical Philosophy of Science’“. 
                         <hi rend="italic">British Journal for the Philosophy of Science</hi> 74. 
                         <ref target="https://doi.org/10.1086/715049">https://doi.org/10.1086/715049</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Malaterre, Christophe, Jean-François Chartier, und Davide Pulizzotto.</hi> 2019. „What Is This Thing Called Philosophy of Science? A Computational Topic-Modeling Perspective, 1934–2015“. 
+<bibl><hi rend="bold">Malaterre, Christophe, Jean-François Chartier, und Davide Pulizzotto.</hi> 2019. „What Is This Thing Called Philosophy of Science? A Computational Topic-Modeling Perspective, 1934–2015“. 
                         <hi rend="italic">HOPOS: The Journal of the International Society for the History of Philosophy of Science</hi> 9 (2): 215–49. 
                         <ref target="https://doi.org/10.1086/704372">https://doi.org/10.1086/704372</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Malaterre, Christophe, und Francis Lareau.</hi> 2022. „The Early Days of Contemporary Philosophy of Science: Novel Insights from Machine Translation and Topic-Modeling of Non-Parallel Multilingual Corpora“. 
+<bibl><hi rend="bold">Malaterre, Christophe, und Francis Lareau.</hi> 2022. „The Early Days of Contemporary Philosophy of Science: Novel Insights from Machine Translation and Topic-Modeling of Non-Parallel Multilingual Corpora“. 
                         <hi rend="italic">Synthese</hi> 200 (3): 242. 
                         <ref target="https://doi.org/10.1007/s11229-022-03722-x">https://doi.org/10.1007/s11229-022-03722-x</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">McInnes, Leland, John Healy, und James Melville.</hi> 2020. „UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction“. arXiv. 
+<bibl><hi rend="bold">McInnes, Leland, John Healy, und James Melville.</hi> 2020. „UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction“. arXiv. 
                         <ref target="https://doi.org/10.48550/arXiv.1802.03426">https://doi.org/10.48550/arXiv.1802.03426</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Noichl, Maximilian.</hi> 2021. „Modeling the Structure of Recent Philosophy“. 
+<bibl><hi rend="bold">Noichl, Maximilian.</hi> 2021. „Modeling the Structure of Recent Philosophy“. 
                         <hi rend="italic">Synthese</hi> 198 (6): 5089–5100. 
                         <ref target="https://doi.org/10.1007/s11229-019-02390-8">https://doi.org/10.1007/s11229-019-02390-8</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Noichl, Maximilian.</hi> 2023. „PhilroBERTa: Ein multilinguales Sprachmodell zur Beantwortung philosophiehistorischer Fragestellungen“. In 
+<bibl><hi rend="bold">Noichl, Maximilian.</hi> 2023. „PhilroBERTa: Ein multilinguales Sprachmodell zur Beantwortung philosophiehistorischer Fragestellungen“. In 
                         <hi rend="italic">DHd2023: Open Humanities, Open Culture</hi> (First Edition). Zenodo, hg. v. Anna Busch und Peer Trilcke. 
                         <ref target="https://doi.org/10.5281/zenodo.7688632">https://doi.org/10.5281/zenodo.7688632</ref>
-                    </bibl>
-                    <bibl><hi rend="bold">Pence, Charles H.</hi> 2022. „Testing and Discovery: Responding to Challenges to Digital Philosophy of Science“. 
+</bibl>
+<bibl><hi rend="bold">Pence, Charles H.</hi> 2022. „Testing and Discovery: Responding to Challenges to Digital Philosophy of Science“. 
                         <hi rend="italic">Metaphilosophy</hi> 53 (2–3): 238–53. 
                         <ref target="https://doi.org/10.1111/meta.12549">https://doi.org/10.1111/meta.12549</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Ramsay, Stephen.</hi> 2011. 
+<bibl><hi rend="bold">Ramsay, Stephen.</hi> 2011. 
                         <hi rend="italic">Reading Machines: Toward an Algorithmic Criticism</hi>. University of Illinois Press. 
                         <ref target="https://www.jstor.org/stable/10.5406/j.ctt1xcmrr">https://www.jstor.org/stable/10.5406/j.ctt1xcmrr</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Reimers, Nils, und Iryna Gurevych.</hi> 2019. „Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks“. arXiv. 
+<bibl><hi rend="bold">Reimers, Nils, und Iryna Gurevych.</hi> 2019. „Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks“. arXiv. 
                         <ref target="https://doi.org/10.48550/arXiv.1908.10084">https://doi.org/10.48550/arXiv.1908.10084</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Reimers, Nils, und Iryna Gurevych.</hi> 2020. “Making Monolingual Sentence Embeddings Multilingual Using Knowledge Distillation.” arXiv. 
+<bibl><hi rend="bold">Reimers, Nils, und Iryna Gurevych.</hi> 2020. “Making Monolingual Sentence Embeddings Multilingual Using Knowledge Distillation.” arXiv. 
                         <ref target="https://doi.org/10.48550/arXiv.2004.09813">https://doi.org/10.48550/arXiv.2004.09813</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Zundert, Joris J. van.</hi> 2016. „Screwmeneutics and Hermenumericals: The Computationality of Hermeneutics.“ In 
+<bibl><hi rend="bold">Zundert, Joris J. van.</hi> 2016. „Screwmeneutics and Hermenumericals: The Computationality of Hermeneutics.“ In 
                         <hi rend="italic" xml:space="preserve">A New Companion to Digital Humanities, </hi>hg. v. Susan Schreibman, Ray Siemens und John Unsworth
                         <hi rend="italic">.</hi>, 331–47. Blackwell Companions to Literature and Culture 93. Chichester: John Wiley &amp; Sons. 
                         <ref target="https://doi.org/10.1002/9781118680605.ch23">https://doi.org/10.1002/9781118680605.ch23</ref>.
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

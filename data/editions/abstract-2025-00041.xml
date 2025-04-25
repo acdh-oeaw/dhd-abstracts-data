@@ -1,328 +1,325 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="DOMBROWSKI_Fabian_Netzwerkmodellierung_mit_NER_und_NEL__Schu">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="full">
-                    <title type="main">Netzwerkmodellierung mit NER und NEL. Schulbuchforschung an der Schnittstelle zur Infrastruktur</title>
-                    <title type="sub"/>
-                </title>
-                <author>
-                    <persName>
-                        <surname>Dombrowski</surname>
-                        <forename>Fabian</forename>
-                    </persName>
-                    <affiliation>Leibniz-Institut für Bildungsmedien | Georg-Eckert-Institut, Deutschland</affiliation>
-                    <email>fabian.dombrowski@gei.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Klaes</surname>
-                        <forename>Sebastian</forename>
-                    </persName>
-                    <affiliation>Leibniz-Institut für Bildungsmedien | Georg-Eckert-Institut, Deutschland</affiliation>
-                    <email>klaes@gei.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Leitgeb</surname>
-                        <forename>Johannes</forename>
-                    </persName>
-                    <affiliation>Zentrum für Philologie und Digitalität (ZPD), Universität Würzburg, Deutschland</affiliation>
-                    <email>johannes.leitgeb@stud-mail.uni-wuerzburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Reul</surname>
-                        <forename>Christian</forename>
-                    </persName>
-                    <affiliation>Zentrum für Philologie und Digitalität (ZPD), Universität Würzburg, Deutschland</affiliation>
-                    <email>christian.reul@uni-wuerzburg.de</email>
-                    <idno type="ORCID">0000-0002-1776-1469</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-12-04T20:29:38.758782830</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Poster</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Schulbücher</term>
-                    <term>Verlagswesen</term>
-                    <term>Collection Literacy</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Datenerkennung</term>
-                    <term>Modellierung</term>
-                    <term>Netzwerkanalyse</term>
-                    <term>Identifizierung</term>
-                    <term>Infrastruktur</term>
-                    <term>benannte Entitäten (named entities)</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor xml:id="id_docs-internal-guid-37aa7821-7fff-c747-7546-2f3d9e2cd796"/>Forschungsgegenstand
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="DOMBROWSKI_Fabian_Netzwerkmodellierung_mit_NER_und_NEL__Schu" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="full">
+<title type="main">Netzwerkmodellierung mit NER und NEL. Schulbuchforschung an der Schnittstelle zur Infrastruktur</title>
+<title type="sub"/>
+</title>
+<author>
+<persName>
+<surname>Dombrowski</surname>
+<forename>Fabian</forename>
+</persName>
+<affiliation>Leibniz-Institut für Bildungsmedien | Georg-Eckert-Institut, Deutschland</affiliation>
+<email>fabian.dombrowski@gei.de</email>
+</author>
+<author>
+<persName>
+<surname>Klaes</surname>
+<forename>Sebastian</forename>
+</persName>
+<affiliation>Leibniz-Institut für Bildungsmedien | Georg-Eckert-Institut, Deutschland</affiliation>
+<email>klaes@gei.de</email>
+</author>
+<author>
+<persName>
+<surname>Leitgeb</surname>
+<forename>Johannes</forename>
+</persName>
+<affiliation>Zentrum für Philologie und Digitalität (ZPD), Universität Würzburg, Deutschland</affiliation>
+<email>johannes.leitgeb@stud-mail.uni-wuerzburg.de</email>
+</author>
+<author>
+<persName>
+<surname>Reul</surname>
+<forename>Christian</forename>
+</persName>
+<affiliation>Zentrum für Philologie und Digitalität (ZPD), Universität Würzburg, Deutschland</affiliation>
+<email>christian.reul@uni-wuerzburg.de</email>
+<idno type="ORCID">0000-0002-1776-1469</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-12-04T20:29:38.758782830</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943064</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from an OASIS Open Document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Poster</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Schulbücher</term>
+<term>Verlagswesen</term>
+<term>Collection Literacy</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Datenerkennung</term>
+<term>Modellierung</term>
+<term>Netzwerkanalyse</term>
+<term>Identifizierung</term>
+<term>Infrastruktur</term>
+<term>benannte Entitäten (named entities)</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading" type="div1">
+<head>
+<anchor xml:id="id_docs-internal-guid-37aa7821-7fff-c747-7546-2f3d9e2cd796"/>Forschungsgegenstand
                 </head>
-                <p>Schulbücher kommunizieren einen Wissenskanon, den eine Gesellschaft als grundlegend erachtet. Der historischen Forschung geben sie jedoch nicht nur Einblicke in die vermittelten Inhalte, sondern auch in die Sinnwelten und Werte einer Zeit. Mit der Einführung der Schulpflicht im langen 19. Jahrhundert erlangte das Schulbuch – bereits vorher ein zentrales Massenmedium europäischer Gesellschaften – eine noch prominentere Rolle. Es verbreitete die Geschichtsbilder der entstehenden Nationalismen, stiftete Identität und stabilisierte die sozialen Zusammenhänge im Staat. Dieses Ziel erreicht es aber nicht allein durch seine Inhalte, sondern darüber hinaus durch deren zeitgenössische pädagogische Aufbereitung und flächendeckende Verbreitung. Zu diesem Zweck wurden in Deutschland zwischen 1800 und 1945 nach aktuellem Stand etwa 2.200 Geschichtsschulbücher veröffentlicht (Fuchs et al 2014; Jacobmeyer 2011).</p>
-                <p>Trotz dieser bedeutenden Rolle bleibt vieles über die Entstehung und Produktion von Schulbüchern unklar. Die Forschung neigt dazu, sich hauptsächlich auf die Analyse der Inhalte zu konzentrieren und dabei die Netzwerke der beteiligten Personen, Verlage und staatlichen Institutionen zu vernachlässigen (Otto 2018). Fragen wie „Wer schrieb die Schulbücher?“, „Wer stellte sie her und verbreitete sie?“ und „Welche Netzwerke waren daran beteiligt?“ wurden bisher nur für Einzelbeispiele beantwortet (z.B. Keiderling 2002; Kreusch 2008), eine umfassende und strukturierte Annäherung blieb aus.</p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>Methoden und Daten</head>
-                <p>
-                    <hi rend="color(#000000)">Das vorzustellende Poster zeigt einen Weg auf, diese Lücken zu füllen: Die Modellierung eines Netzwerkes der Schulbuchproduktion im deutschen Kaiserreich mit den Methoden der soziohistorischen Netzwerkanalyse (Ahnert 2021). Grundlage hierfür sind bibliographische </hi>
-                    <hi rend="color(#000000)">Daten aus dem Bibliothekskatalog des Leibniz-Instituts für Bildungsmedien</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">|</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">Georg-Eckert-Institut (GEI) sowie digitalisierte Schulbuchsammlungen aus GEI-Digital.</hi>
-                    <hi rend="color(#000000)"><ref n="1" target="ftn0"/>
-                    </hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">Zwei zentrale Technologien, die dabei zum Einsatz kommen, sind die Named Entity Recognition (NER) und das Named Entity Linking (NEL). Die primären Datenquellen für diese Untersuchung umfassen bibliographische Datensätze des GEI und digitalisierte Geschichtsschulbücher aus der Zeit von 1871 bis 1918. Dieses Korpus umfasst 1.751 Schulbücher mit über 300.000 Seiten. Aktuell werden die Schulbuch-Digitalisate und Volltexte aus dem Kaiserreich durch das Zentrum für Philologie und Digitalität (ZPD)</hi>
-                    <hi rend="color(#000000)"><ref n="2" target="ftn1"/>
-                    </hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">der Universität Würzburg aufbereitet. Im Vordergrund steht dabei die Extraktion von maschinenverarbeitbaren Volltexten aus den Digitalisaten mittels Verfahren der automatischen Texterkennung, wobei ausschließlich Open Source Werkzeuge, hauptsächlich OCR4all</hi>
-                    <hi rend="color(#000000)"><ref n="3" target="ftn2"/>
-                    </hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">(Reul et al. 2019; Nöth et al. 2024) in Kombination mit OCR-D</hi>
-                    <hi rend="color(#000000)"><ref n="4" target="ftn3"/>
-                    </hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">(Neudecker et al. 2019), zum Einsatz kommen. Die so vorverarbeiteten Texte werden im Schritt der Named Entity Recognition (NER) automatisch annotiert. Von Interesse sind dabei insbesondere die auf dem Titel sowie im Vorwort explizit genannten Personennamen sowie die davon abhängigen Koreferenzen (Orte, organisatorische Entitäten). Um die Nachnutzbarkeit der auf diese Weise extrahierten Entitäten zu gewährleisten, werden im anschließenden Named Entity Linking (NEL) zugehörige Normdaten identifiziert, die die Basis für eine ontologische Netzwerkdarstellung bilden (Menzel et al. 2021; Wintergrün 2019). </hi>
-                    <anchor xml:id="id_docs-internal-guid-4bd34a2a-7fff-92e1-686b-45a61a13a06b"/>
-                </p>
-                <p>
-                    <hi rend="color(#000000)">So bestätigt sich bei ersten Auswertungen, dass Personen und Orte den größten Teil der Entitäten ausmachen. Nicht alle identifizierten Personen sind dabei jedoch für die Netzwerkanalyse relevant ("Friedrich der Große", "Caesar"). Auch gilt es zu beachten, dass im Zuge der NER ein zweistufiger Entscheidungsprozess stattfindet: Zunächst geschieht die grundsätzliche Erkennung der Named Entity. In diesem kann es wie auch im anschließenden zweiten Schritt der Klassifizierung von Entitäten in die Kategorien PER, LOC oder ORG zu Falschannahmen kommen. Insbesondere die Genauigkeit der Ergebnisse im zweiten Schritt ist für das anschließende NEL von Bedeutung. Dennoch zeigen erste Tests eine erstaunlich hohe Präzision für die Identifikation der Entitäten. Das FlairNLP Framework (Akbik et. al., 2019) liefert beispielsweise für eine Goldstandard-Menge von 79 Entitäten eine Precision von 0,94. Diese ist von leicht abgeschwächter Aussagekraft, da auch nicht vollständige Entitäten als Treffer angesehen wurden, solange ein Teil richtig identifiziert wurde.</hi>
-                </p>
-                <p>
-                    <figure>
-                        <graphic url="Pictures/bb993d2a96b4ae3fa2af7b73538d77f2.png"/>
-                        <head>Links eine Abbildung einer Schulbuch-Titelei, rechts die passend extrahierten Entitäten.</head>
-                    </figure>
-                    <hi rend="color(#000000)">Die beiden eingesetzten Technologien NER und NEL helfen, die bibliographischen Personendaten aus dem Bibliothekskatalog im Sinne der Netzwerkmodellierung zu </hi>
-                    <hi rend="color(#000000)italic">erweitern</hi>
-                    <hi rend="color(#000000)"> und </hi>
-                    <hi rend="color(#000000)italic">anzureichern</hi>
-                    <hi rend="color(#000000)">; dies wiederum erlaubt die Modellierung der Netzwerke zwischen u.a. Autor:innen, Herausgeber:innen, Verlagen und staatlichen Institutionen. Darüber hinaus können diese Daten aus anderen Projekten am GEI erweitert werden. So z. B. durch die Ergebnisse des Projektes </hi>
-                    <hi rend="color(#000000)italic">SchulbuchEvolution</hi>
-                    <hi rend="color(#000000)">.</hi>
-                    <hi rend="color(#000000)"><ref n="5" target="ftn4"/>
-                    </hi>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>Ergebnisse</head>
-                <p>Das Plakat soll zum einen diesen Workflow verdeutlichen, zum anderen aber auch sowohl anhand einzelner Beispiele wie auch systematisch aufzeigen, dass die Probleme bei der Ermittlung des Netzwerkes nicht nur die Frage nach einem historischen Phänomen betreffen, sondern zugleich auch Herausforderungen für Infrastrukturoperationen herausstellen (Hertling u. Klaes 2022). Es muss z.B. bedacht werden, dass Verfahren der Sozialen Netzwerkanalyse (SNA) oft nicht auf die Inkonsistenz und Unvollständigkeit historischer Daten eingerichtet sind, welche aus der grundsätzlichen Überlieferungssituation erwächst. Normalerweise streben Netzwerkanalysen eine Vollständigkeit an, wie sie aber für Historiker:innen im Grunde nie verfügbar ist. Sie können maximal einen „Sättigungsgrad“ (Ferihumer, nach Dombrowski u. Haslam 2024) der Daten realisieren, um repräsentative Aussagen treffen zu können. Ein solches Projekt nutzt die Daten von Infrastrukturen nach, während es gleichzeitig auf diese zurückwirkt. Und zwar nicht nur weil Verknüpfungen zwischen Bibliothekskatalog und Normdatei geschaffen werden, die die Qualität einer oder mehrere Datenbanken verbessert, sondern auch weil das Bild der Sammlungen selbst klarer wird durch ein Verständnis der bestehenden Lücken und Inkonsistenzen aus Perspektive eines Netzwerkes. Letztlich entscheidet sich an diesen Leerstellen, wie weit Netzwerkanalysen im Speziellen und digitalen Methoden im Allgemeinen DH-Projekte in der Schulbuchforschung tragen.</p>
-            </div>
-        </body>
-        <back>
+<p>Schulbücher kommunizieren einen Wissenskanon, den eine Gesellschaft als grundlegend erachtet. Der historischen Forschung geben sie jedoch nicht nur Einblicke in die vermittelten Inhalte, sondern auch in die Sinnwelten und Werte einer Zeit. Mit der Einführung der Schulpflicht im langen 19. Jahrhundert erlangte das Schulbuch – bereits vorher ein zentrales Massenmedium europäischer Gesellschaften – eine noch prominentere Rolle. Es verbreitete die Geschichtsbilder der entstehenden Nationalismen, stiftete Identität und stabilisierte die sozialen Zusammenhänge im Staat. Dieses Ziel erreicht es aber nicht allein durch seine Inhalte, sondern darüber hinaus durch deren zeitgenössische pädagogische Aufbereitung und flächendeckende Verbreitung. Zu diesem Zweck wurden in Deutschland zwischen 1800 und 1945 nach aktuellem Stand etwa 2.200 Geschichtsschulbücher veröffentlicht (Fuchs et al 2014; Jacobmeyer 2011).</p>
+<p>Trotz dieser bedeutenden Rolle bleibt vieles über die Entstehung und Produktion von Schulbüchern unklar. Die Forschung neigt dazu, sich hauptsächlich auf die Analyse der Inhalte zu konzentrieren und dabei die Netzwerke der beteiligten Personen, Verlage und staatlichen Institutionen zu vernachlässigen (Otto 2018). Fragen wie „Wer schrieb die Schulbücher?“, „Wer stellte sie her und verbreitete sie?“ und „Welche Netzwerke waren daran beteiligt?“ wurden bisher nur für Einzelbeispiele beantwortet (z.B. Keiderling 2002; Kreusch 2008), eine umfassende und strukturierte Annäherung blieb aus.</p>
+</div>
+<div rend="DH-Heading" type="div1">
+<head>Methoden und Daten</head>
+<p>
+<hi rend="color(#000000)">Das vorzustellende Poster zeigt einen Weg auf, diese Lücken zu füllen: Die Modellierung eines Netzwerkes der Schulbuchproduktion im deutschen Kaiserreich mit den Methoden der soziohistorischen Netzwerkanalyse (Ahnert 2021). Grundlage hierfür sind bibliographische </hi>
+<hi rend="color(#000000)">Daten aus dem Bibliothekskatalog des Leibniz-Instituts für Bildungsmedien</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">|</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">Georg-Eckert-Institut (GEI) sowie digitalisierte Schulbuchsammlungen aus GEI-Digital.</hi>
+<hi rend="color(#000000)"><ref n="1" target="ftn0"/>
+</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">Zwei zentrale Technologien, die dabei zum Einsatz kommen, sind die Named Entity Recognition (NER) und das Named Entity Linking (NEL). Die primären Datenquellen für diese Untersuchung umfassen bibliographische Datensätze des GEI und digitalisierte Geschichtsschulbücher aus der Zeit von 1871 bis 1918. Dieses Korpus umfasst 1.751 Schulbücher mit über 300.000 Seiten. Aktuell werden die Schulbuch-Digitalisate und Volltexte aus dem Kaiserreich durch das Zentrum für Philologie und Digitalität (ZPD)</hi>
+<hi rend="color(#000000)"><ref n="2" target="ftn1"/>
+</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">der Universität Würzburg aufbereitet. Im Vordergrund steht dabei die Extraktion von maschinenverarbeitbaren Volltexten aus den Digitalisaten mittels Verfahren der automatischen Texterkennung, wobei ausschließlich Open Source Werkzeuge, hauptsächlich OCR4all</hi>
+<hi rend="color(#000000)"><ref n="3" target="ftn2"/>
+</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">(Reul et al. 2019; Nöth et al. 2024) in Kombination mit OCR-D</hi>
+<hi rend="color(#000000)"><ref n="4" target="ftn3"/>
+</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">(Neudecker et al. 2019), zum Einsatz kommen. Die so vorverarbeiteten Texte werden im Schritt der Named Entity Recognition (NER) automatisch annotiert. Von Interesse sind dabei insbesondere die auf dem Titel sowie im Vorwort explizit genannten Personennamen sowie die davon abhängigen Koreferenzen (Orte, organisatorische Entitäten). Um die Nachnutzbarkeit der auf diese Weise extrahierten Entitäten zu gewährleisten, werden im anschließenden Named Entity Linking (NEL) zugehörige Normdaten identifiziert, die die Basis für eine ontologische Netzwerkdarstellung bilden (Menzel et al. 2021; Wintergrün 2019). </hi>
+<anchor xml:id="id_docs-internal-guid-4bd34a2a-7fff-92e1-686b-45a61a13a06b"/>
+</p>
+<p>
+<hi rend="color(#000000)">So bestätigt sich bei ersten Auswertungen, dass Personen und Orte den größten Teil der Entitäten ausmachen. Nicht alle identifizierten Personen sind dabei jedoch für die Netzwerkanalyse relevant ("Friedrich der Große", "Caesar"). Auch gilt es zu beachten, dass im Zuge der NER ein zweistufiger Entscheidungsprozess stattfindet: Zunächst geschieht die grundsätzliche Erkennung der Named Entity. In diesem kann es wie auch im anschließenden zweiten Schritt der Klassifizierung von Entitäten in die Kategorien PER, LOC oder ORG zu Falschannahmen kommen. Insbesondere die Genauigkeit der Ergebnisse im zweiten Schritt ist für das anschließende NEL von Bedeutung. Dennoch zeigen erste Tests eine erstaunlich hohe Präzision für die Identifikation der Entitäten. Das FlairNLP Framework (Akbik et. al., 2019) liefert beispielsweise für eine Goldstandard-Menge von 79 Entitäten eine Precision von 0,94. Diese ist von leicht abgeschwächter Aussagekraft, da auch nicht vollständige Entitäten als Treffer angesehen wurden, solange ein Teil richtig identifiziert wurde.</hi>
+</p>
+<p>
+<figure>
+<graphic url="Pictures/bb993d2a96b4ae3fa2af7b73538d77f2.png"/>
+<head>Links eine Abbildung einer Schulbuch-Titelei, rechts die passend extrahierten Entitäten.</head>
+</figure>
+<hi rend="color(#000000)">Die beiden eingesetzten Technologien NER und NEL helfen, die bibliographischen Personendaten aus dem Bibliothekskatalog im Sinne der Netzwerkmodellierung zu </hi>
+<hi rend="color(#000000)italic">erweitern</hi>
+<hi rend="color(#000000)"> und </hi>
+<hi rend="color(#000000)italic">anzureichern</hi>
+<hi rend="color(#000000)">; dies wiederum erlaubt die Modellierung der Netzwerke zwischen u.a. Autor:innen, Herausgeber:innen, Verlagen und staatlichen Institutionen. Darüber hinaus können diese Daten aus anderen Projekten am GEI erweitert werden. So z. B. durch die Ergebnisse des Projektes </hi>
+<hi rend="color(#000000)italic">SchulbuchEvolution</hi>
+<hi rend="color(#000000)">.</hi>
+<hi rend="color(#000000)"><ref n="5" target="ftn4"/>
+</hi>
+</p>
+</div>
+<div rend="DH-Heading" type="div1">
+<head>Ergebnisse</head>
+<p>Das Plakat soll zum einen diesen Workflow verdeutlichen, zum anderen aber auch sowohl anhand einzelner Beispiele wie auch systematisch aufzeigen, dass die Probleme bei der Ermittlung des Netzwerkes nicht nur die Frage nach einem historischen Phänomen betreffen, sondern zugleich auch Herausforderungen für Infrastrukturoperationen herausstellen (Hertling u. Klaes 2022). Es muss z.B. bedacht werden, dass Verfahren der Sozialen Netzwerkanalyse (SNA) oft nicht auf die Inkonsistenz und Unvollständigkeit historischer Daten eingerichtet sind, welche aus der grundsätzlichen Überlieferungssituation erwächst. Normalerweise streben Netzwerkanalysen eine Vollständigkeit an, wie sie aber für Historiker:innen im Grunde nie verfügbar ist. Sie können maximal einen „Sättigungsgrad“ (Ferihumer, nach Dombrowski u. Haslam 2024) der Daten realisieren, um repräsentative Aussagen treffen zu können. Ein solches Projekt nutzt die Daten von Infrastrukturen nach, während es gleichzeitig auf diese zurückwirkt. Und zwar nicht nur weil Verknüpfungen zwischen Bibliothekskatalog und Normdatei geschaffen werden, die die Qualität einer oder mehrere Datenbanken verbessert, sondern auch weil das Bild der Sammlungen selbst klarer wird durch ein Verständnis der bestehenden Lücken und Inkonsistenzen aus Perspektive eines Netzwerkes. Letztlich entscheidet sich an diesen Leerstellen, wie weit Netzwerkanalysen im Speziellen und digitalen Methoden im Allgemeinen DH-Projekte in der Schulbuchforschung tragen.</p>
+</div>
+</body>
+<back>
 <div type="notes">
-<note xml:id="ftn0" rend="footnote text" n="1">
-                            <anchor xml:id="id_docs-internal-guid-48577278-7fff-48ba-7b2d-f42c80b2ad40"/>
-    <hi rend="color(#000000)">https://gei-digital.gei.de/ </hi>
-                            
-                            <hi rend="color(#000000)"> </hi>
-                            <hi rend="color(#000000)">(zuletzt besucht 4.12.2024).</hi>
-                        </note>
-<note xml:id="ftn1" rend="footnote text" n="2">
-                            <anchor xml:id="id_docs-internal-guid-c7cb56ab-7fff-0667-291f-ff59c61e9b0d"/>
-                            <hi rend="color(#000000)"> </hi>
-                            
-    <hi rend="color(#000000)">https://www.uni-wuerzburg.de/zpd  </hi>
-                            <hi rend="color(#000000)">(zuletzt besucht 4.12.2024).</hi>
-                        </note>
-<note xml:id="ftn2" rend="footnote text" n="3">
-                            <anchor xml:id="id_docs-internal-guid-15f88914-7fff-7aee-75f0-c76b6836786f"/>
-                            <hi rend="color(#000000)"> </hi>
-                            <ref target="https://www.ocr4all.org/">
-                                <hi rend="color(#1155cc)underline">https://www.ocr4all.org</hi>
-                            </ref>
-                            <hi rend="color(#000000)"> </hi>
-                            <hi rend="color(#000000)">(zuletzt besucht 4.12.2024).</hi>
-                        </note>
-<note xml:id="ftn3" rend="footnote text" n="4">
-                            <hi rend="color(#000000)"> </hi>
-                            <anchor xml:id="id_docs-internal-guid-350eefb6-7fff-9ae7-d809-f5db1a5e5ad7"/>
-                            <ref target="https://ocr-d.de/">
-                                <hi rend="color(#1155cc)underline">https://ocr-d.de</hi>
-                            </ref>
-                            <hi rend="color(#000000)">(zuletzt besucht 4.12.2024).</hi>
-                        </note>
-<note xml:id="ftn4" rend="footnote text" n="5">
-                            <anchor xml:id="id_docs-internal-guid-781611df-7fff-db08-1166-c680eb11a809"/> 
+<note n="1" rend="footnote text" xml:id="ftn0">
+<anchor xml:id="id_docs-internal-guid-48577278-7fff-48ba-7b2d-f42c80b2ad40"/>
+<hi rend="color(#000000)">https://gei-digital.gei.de/ </hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">(zuletzt besucht 4.12.2024).</hi>
+</note>
+<note n="2" rend="footnote text" xml:id="ftn1">
+<anchor xml:id="id_docs-internal-guid-c7cb56ab-7fff-0667-291f-ff59c61e9b0d"/>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">https://www.uni-wuerzburg.de/zpd  </hi>
+<hi rend="color(#000000)">(zuletzt besucht 4.12.2024).</hi>
+</note>
+<note n="3" rend="footnote text" xml:id="ftn2">
+<anchor xml:id="id_docs-internal-guid-15f88914-7fff-7aee-75f0-c76b6836786f"/>
+<hi rend="color(#000000)"> </hi>
+<ref target="https://www.ocr4all.org/">
+<hi rend="color(#1155cc)underline">https://www.ocr4all.org</hi>
+</ref>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">(zuletzt besucht 4.12.2024).</hi>
+</note>
+<note n="4" rend="footnote text" xml:id="ftn3">
+<hi rend="color(#000000)"> </hi>
+<anchor xml:id="id_docs-internal-guid-350eefb6-7fff-9ae7-d809-f5db1a5e5ad7"/>
+<ref target="https://ocr-d.de/">
+<hi rend="color(#1155cc)underline">https://ocr-d.de</hi>
+</ref>
+<hi rend="color(#000000)">(zuletzt besucht 4.12.2024).</hi>
+</note>
+<note n="5" rend="footnote text" xml:id="ftn4">
+<anchor xml:id="id_docs-internal-guid-781611df-7fff-db08-1166-c680eb11a809"/> 
                             <anchor xml:id="id_docs-internal-guid-2065e65c-7fff-2905-bd9a-e8af9314c2c0"/>
-                            
-    <hi rend="color(#000000)">https://www.gei.de/forschung/projekte/die-evolution-des-schulbuchs </hi>
-                            <hi rend="color(#000000)">(zuletzt besucht 4.12.2024).</hi>
-                        </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl>
-                        <anchor xml:id="id_docs-internal-guid-cdbd433e-7fff-872c-8deb-647c504fea08"/>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Akbik, Alan, Tanja Bergmann, Duncan Blythe, Kashif Rasul, Stefan Schweter, and Roland Vollgraf</hi>.</hi>
-                        <hi rend="color(#000000)"> 2019, „FLAIR: An Easy-to-Use Framework for State-of-the-Art NLP.“ </hi>
-                        <hi rend="color(#000000)italic">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (Demonstrations)</hi>
-                        <hi rend="color(#000000)">, 54–59.</hi>
-                        <ref target="https://doi.org/10.18653/v1/n19-4010">
-                            <hi rend="color(#000000)"> </hi>
-                            <hi rend="color(#1155cc)underline">https://doi.org/10.18653/v1/n19-4010</hi>
-                        </ref>
-                        <hi rend="color(#1155cc)underline">.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Ahnert, Ruth, Sebastian E. Ahnert, Catherine Nicole Coleman, und Scott B. Weingart</hi>.</hi>
-                        <hi rend="color(#000000)"> 2021. </hi>
-                        <hi rend="color(#000000)italic">The Network Turn. Changing Perspectives in the Humanities</hi>
-                        <hi rend="color(#000000)">. Elements in Publishing in the Humanities. Cambridge: Cambridge University Press.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Dombrowski, Fabian, und Rachael Haslam</hi>.</hi>
-                        <hi rend="color(#000000)"> 2024. „Conference Report: Our Interlocked Universe. Sociohistorical Network Analysis: Methods, Applications, and New Directions“. </hi>
-                        <hi rend="color(#000000)italic">H-Soz-Kult</hi>
-                        <hi rend="color(#000000)">, Juli.</hi>
-                        <ref target="https://www.hsozkult.de/conferencereport/id/fdkn-145347">
-                            <hi rend="color(#000000)"> </hi>
-                            <hi rend="color(#1155cc)underline">https://www.hsozkult.de/conferencereport/id/fdkn-145347</hi>
-                        </ref>
-                        <hi rend="color(#000000)">.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Fuchs, Eckhardt, Inga Niehaus, und Almut Stoletzki, Hrsg</hi>.</hi>
-                        <hi rend="color(#000000)"> 2014. </hi>
-                        <hi rend="color(#000000)italic">Das Schulbuch in der Forschung: Analysen und Empfehlungen für die Bildungspraxis</hi>
-                        <hi rend="color(#000000)">. 1. Aufl. Eckert. Expertise 4. Göttingen: V&amp;R unipress.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Hertling, Anke, und Sebastian Klaes</hi>.</hi>
-                        <hi rend="color(#000000)"> 2022. „Volltexte für die Forschung. OCR partizipativ, iterativ und on Demand“. </hi>
-                        <hi rend="color(#000000)italic">o-bib. Das offene Bibliotheksjournal</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">9 (3): 1–11.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Jacobmeyer, Wolfgang</hi>.</hi>
-                        <hi rend="color(#000000)"> 2011. </hi>
-                        <hi rend="color(#000000)italic">Das deutsche Schulgeschichtsbuch 1700–1945. Die erste Epoche seiner Gattungsgeschichte im Spiegel der Vorworte</hi>
-                        <hi rend="color(#000000)">. 3 Bde. Geschichtskultur und historisches Lernen. Berlin: Lit Verlag.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Jacobmeyer, Wolfgang</hi>.</hi>
-                        <hi rend="color(#000000)"> 2023. </hi>
-                        <hi rend="color(#000000)italic">Hungerleider werden Bildungsbürger. Preußische Gymnasiallehrer 1820</hi>
-                        <hi rend="color(#000000)">–</hi>
-                        <hi rend="color(#000000)italic">1914. Profile einer Profession</hi>
-                        <hi rend="color(#000000)">. Geschichtsdidaktik diskursiv. Public History und Historisches Denken. Berlin: Peter Lang GmbH, Internationaler Verlag der Wissenschaften.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Keiderling, Thomas</hi>.</hi>
-                        <hi rend="color(#000000)"> 2002. </hi>
-                        <hi rend="color(#000000)">„Der Schulbuchverleger und sein Autor. Zu Spezialisierungs- und Professionalisierungstendenzen im 19. und frühen 20. Jahrhundert“. In </hi>
-                        <hi rend="color(#000000)italic">Die Rolle von Schulbüchern für Identifikationsprozesse in historischer Perspektive</hi>
-                        <hi rend="color(#000000)">, </hi>
-                        <hi rend="color(#000000)">herausgegeben von Heinz-Werner Wollersheim, Hans-Martin Moderow, und Cathrin Friedrich. Leipziger Studien zur Erforschung von regionenbezogenen Identifikationsprozessen 5.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Kreuch, Julia</hi>.</hi>
-                        <hi rend="color(#000000)"> 2008. </hi>
-                        <hi rend="color(#000000)italic">Der Verlag der Buchhandlung des Waisenhauses als Schulbuchverlag zwischen 1830 und 1918 die erfolgreichen Geografie- und Geschichtslehrbücher und ihre Autoren</hi>
-                        <hi rend="color(#000000)">. 2008. Hallesche Forschungen 25. Tübingen: Niemeyer Harrassowitz.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Menzel, Sina, Hannes Schnaitter, Josefine Zinck, Vivien Petras, Clemens Neudecker, Kai Labusch, Elena Leitner, und Georg Rehm</hi>.</hi>
-                        <hi rend="color(#000000)"> 2021. „Named Entity Linking mit Wikidata und GND – Das Potenzial handkuratierter und strukturierter Datenquellen für die semantische Anreicherung von Volltexten“. In </hi>
-                        <hi rend="color(#000000)italic">Qualität in der Inhaltserschließung</hi>
-                        <hi rend="color(#000000)">, herausgegeben von Michael Franke-Maier, Anna Kasprzik, Andreas Ledl, und Hans Schürmann, 229–58. Bibliotheks- und Informationspraxis 70. Berlin: De Gruyter.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Neudecker, Clemens, Konstantin Baierer, Maria Federbusch, Matthias Boenig, Kay-Michael Würzner, Volker Hartmann and Elisa Herrmann</hi>.</hi>
-                        <hi rend="color(#000000)"> 2019. OCR-D: An End-to-End Open Source OCR Framework for Historical Printed Documents. In </hi>
-                        <hi rend="color(#000000)italic">Proceedings of the 3rd International Conference on Digital Access to Textual Cultural Heritage</hi>
-                        <hi rend="color(#000000)">, 53–58. DATeCH2019. ACM, 8–10 May 2019.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Nieländer, Maret, und Ernesto William De Luca, Hrsg</hi>.</hi>
-                        <hi rend="color(#000000)"> 2018. </hi>
-                        <hi rend="color(#000000)italic">Digital Humanities in der Internationalen Schulbuchforschung. Forschungsinfrastrukturen und Projekte</hi>
-                        <hi rend="color(#000000)">. Vandenhoeck &amp; Ruprecht.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Nöth, Maximilian, Herbert Baier and Christian Reul</hi>.</hi>
-                        <hi rend="color(#000000)"> 2024. OCR4all 1.0 – Flexible open-source OCR/HTR based on various single-step Solutions. </hi>
-                        <hi rend="color(#000000)italic">16th IAPR International Workshop On Document Analysis Systems (DAS)</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">(September).</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Otto, Marcus</hi>.</hi>
-                        <hi rend="color(#000000)"> 2018. </hi>
-                        <hi rend="color(#000000)">„Textbook Authors, Authorship, and Author Function“. In </hi>
-                        <hi rend="color(#000000)italic">The Palgrave Handbook of Textbook Studies</hi>
-                        <hi rend="color(#000000)">, herausgegeben von Eckhardt Fuchs und Annekatrin Bock, 95–102. New York: Palgrave Macmillan.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Reul, Christian, Dennis Christ, Alexander Hartelt, Nico Balbach, Maximilian Wehner, Uwe Springmann, Christoph Wick, Christine Grundig, Andreas Büttner und Frank Puppe</hi>. </hi>
-                        <hi rend="color(#000000)">2019. OCR4all – An Open-Source Tool Providing a (Semi-)Automatic OCR Workflow for Historical Printings. </hi>
-                        <hi rend="color(#000000)italic">Applied Sciences</hi>
-                        <hi rend="color(#000000)"> </hi>
-                        <hi rend="color(#000000)">9, Nr. 22.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="color(#000000)bold"><hi rend="bold">Wintergrün, Dirk</hi>. </hi>
-                        <hi rend="color(#000000)">2019. </hi>
-                        <hi rend="color(#000000)">„Netzwerkanaylse und semantische Datenmodellierung als heuristische Instrumente für die historische Forschung“. Erlangen / Nürnberg: Friedrich-Alexander-Universität.</hi>
-                    </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+<hi rend="color(#000000)">https://www.gei.de/forschung/projekte/die-evolution-des-schulbuchs </hi>
+<hi rend="color(#000000)">(zuletzt besucht 4.12.2024).</hi>
+</note></div>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl>
+<anchor xml:id="id_docs-internal-guid-cdbd433e-7fff-872c-8deb-647c504fea08"/>
+<hi rend="color(#000000)bold"><hi rend="bold">Akbik, Alan, Tanja Bergmann, Duncan Blythe, Kashif Rasul, Stefan Schweter, and Roland Vollgraf</hi>.</hi>
+<hi rend="color(#000000)"> 2019, „FLAIR: An Easy-to-Use Framework for State-of-the-Art NLP.“ </hi>
+<hi rend="color(#000000)italic">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (Demonstrations)</hi>
+<hi rend="color(#000000)">, 54–59.</hi>
+<ref target="https://doi.org/10.18653/v1/n19-4010">
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#1155cc)underline">https://doi.org/10.18653/v1/n19-4010</hi>
+</ref>
+<hi rend="color(#1155cc)underline">.</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Ahnert, Ruth, Sebastian E. Ahnert, Catherine Nicole Coleman, und Scott B. Weingart</hi>.</hi>
+<hi rend="color(#000000)"> 2021. </hi>
+<hi rend="color(#000000)italic">The Network Turn. Changing Perspectives in the Humanities</hi>
+<hi rend="color(#000000)">. Elements in Publishing in the Humanities. Cambridge: Cambridge University Press.</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Dombrowski, Fabian, und Rachael Haslam</hi>.</hi>
+<hi rend="color(#000000)"> 2024. „Conference Report: Our Interlocked Universe. Sociohistorical Network Analysis: Methods, Applications, and New Directions“. </hi>
+<hi rend="color(#000000)italic">H-Soz-Kult</hi>
+<hi rend="color(#000000)">, Juli.</hi>
+<ref target="https://www.hsozkult.de/conferencereport/id/fdkn-145347">
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#1155cc)underline">https://www.hsozkult.de/conferencereport/id/fdkn-145347</hi>
+</ref>
+<hi rend="color(#000000)">.</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Fuchs, Eckhardt, Inga Niehaus, und Almut Stoletzki, Hrsg</hi>.</hi>
+<hi rend="color(#000000)"> 2014. </hi>
+<hi rend="color(#000000)italic">Das Schulbuch in der Forschung: Analysen und Empfehlungen für die Bildungspraxis</hi>
+<hi rend="color(#000000)">. 1. Aufl. Eckert. Expertise 4. Göttingen: V&amp;R unipress.</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Hertling, Anke, und Sebastian Klaes</hi>.</hi>
+<hi rend="color(#000000)"> 2022. „Volltexte für die Forschung. OCR partizipativ, iterativ und on Demand“. </hi>
+<hi rend="color(#000000)italic">o-bib. Das offene Bibliotheksjournal</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">9 (3): 1–11.</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Jacobmeyer, Wolfgang</hi>.</hi>
+<hi rend="color(#000000)"> 2011. </hi>
+<hi rend="color(#000000)italic">Das deutsche Schulgeschichtsbuch 1700–1945. Die erste Epoche seiner Gattungsgeschichte im Spiegel der Vorworte</hi>
+<hi rend="color(#000000)">. 3 Bde. Geschichtskultur und historisches Lernen. Berlin: Lit Verlag.</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Jacobmeyer, Wolfgang</hi>.</hi>
+<hi rend="color(#000000)"> 2023. </hi>
+<hi rend="color(#000000)italic">Hungerleider werden Bildungsbürger. Preußische Gymnasiallehrer 1820</hi>
+<hi rend="color(#000000)">–</hi>
+<hi rend="color(#000000)italic">1914. Profile einer Profession</hi>
+<hi rend="color(#000000)">. Geschichtsdidaktik diskursiv. Public History und Historisches Denken. Berlin: Peter Lang GmbH, Internationaler Verlag der Wissenschaften.</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Keiderling, Thomas</hi>.</hi>
+<hi rend="color(#000000)"> 2002. </hi>
+<hi rend="color(#000000)">„Der Schulbuchverleger und sein Autor. Zu Spezialisierungs- und Professionalisierungstendenzen im 19. und frühen 20. Jahrhundert“. In </hi>
+<hi rend="color(#000000)italic">Die Rolle von Schulbüchern für Identifikationsprozesse in historischer Perspektive</hi>
+<hi rend="color(#000000)">, </hi>
+<hi rend="color(#000000)">herausgegeben von Heinz-Werner Wollersheim, Hans-Martin Moderow, und Cathrin Friedrich. Leipziger Studien zur Erforschung von regionenbezogenen Identifikationsprozessen 5.</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Kreuch, Julia</hi>.</hi>
+<hi rend="color(#000000)"> 2008. </hi>
+<hi rend="color(#000000)italic">Der Verlag der Buchhandlung des Waisenhauses als Schulbuchverlag zwischen 1830 und 1918 die erfolgreichen Geografie- und Geschichtslehrbücher und ihre Autoren</hi>
+<hi rend="color(#000000)">. 2008. Hallesche Forschungen 25. Tübingen: Niemeyer Harrassowitz.</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Menzel, Sina, Hannes Schnaitter, Josefine Zinck, Vivien Petras, Clemens Neudecker, Kai Labusch, Elena Leitner, und Georg Rehm</hi>.</hi>
+<hi rend="color(#000000)"> 2021. „Named Entity Linking mit Wikidata und GND – Das Potenzial handkuratierter und strukturierter Datenquellen für die semantische Anreicherung von Volltexten“. In </hi>
+<hi rend="color(#000000)italic">Qualität in der Inhaltserschließung</hi>
+<hi rend="color(#000000)">, herausgegeben von Michael Franke-Maier, Anna Kasprzik, Andreas Ledl, und Hans Schürmann, 229–58. Bibliotheks- und Informationspraxis 70. Berlin: De Gruyter.</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Neudecker, Clemens, Konstantin Baierer, Maria Federbusch, Matthias Boenig, Kay-Michael Würzner, Volker Hartmann and Elisa Herrmann</hi>.</hi>
+<hi rend="color(#000000)"> 2019. OCR-D: An End-to-End Open Source OCR Framework for Historical Printed Documents. In </hi>
+<hi rend="color(#000000)italic">Proceedings of the 3rd International Conference on Digital Access to Textual Cultural Heritage</hi>
+<hi rend="color(#000000)">, 53–58. DATeCH2019. ACM, 8–10 May 2019.</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Nieländer, Maret, und Ernesto William De Luca, Hrsg</hi>.</hi>
+<hi rend="color(#000000)"> 2018. </hi>
+<hi rend="color(#000000)italic">Digital Humanities in der Internationalen Schulbuchforschung. Forschungsinfrastrukturen und Projekte</hi>
+<hi rend="color(#000000)">. Vandenhoeck &amp; Ruprecht.</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Nöth, Maximilian, Herbert Baier and Christian Reul</hi>.</hi>
+<hi rend="color(#000000)"> 2024. OCR4all 1.0 – Flexible open-source OCR/HTR based on various single-step Solutions. </hi>
+<hi rend="color(#000000)italic">16th IAPR International Workshop On Document Analysis Systems (DAS)</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">(September).</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Otto, Marcus</hi>.</hi>
+<hi rend="color(#000000)"> 2018. </hi>
+<hi rend="color(#000000)">„Textbook Authors, Authorship, and Author Function“. In </hi>
+<hi rend="color(#000000)italic">The Palgrave Handbook of Textbook Studies</hi>
+<hi rend="color(#000000)">, herausgegeben von Eckhardt Fuchs und Annekatrin Bock, 95–102. New York: Palgrave Macmillan.</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Reul, Christian, Dennis Christ, Alexander Hartelt, Nico Balbach, Maximilian Wehner, Uwe Springmann, Christoph Wick, Christine Grundig, Andreas Büttner und Frank Puppe</hi>. </hi>
+<hi rend="color(#000000)">2019. OCR4all – An Open-Source Tool Providing a (Semi-)Automatic OCR Workflow for Historical Printings. </hi>
+<hi rend="color(#000000)italic">Applied Sciences</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">9, Nr. 22.</hi>
+</bibl>
+<bibl>
+<hi rend="color(#000000)bold"><hi rend="bold">Wintergrün, Dirk</hi>. </hi>
+<hi rend="color(#000000)">2019. </hi>
+<hi rend="color(#000000)">„Netzwerkanaylse und semantische Datenmodellierung als heuristische Instrumente für die historische Forschung“. Erlangen / Nürnberg: Friedrich-Alexander-Universität.</hi>
+</bibl>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

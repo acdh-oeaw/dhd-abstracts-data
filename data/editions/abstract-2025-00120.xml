@@ -1,241 +1,222 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="KLAUK_Stephanie_Computergest_tzte_Werkzeuge_in_der_Musikedit">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Computergestützte Werkzeuge in der Musikedition: Echtheitsfragen im Werk Tomás Luis de Victorias</title>
-                <author>
-                    <persName>
-                        <surname>Schmolenzky</surname>
-                        <forename>Pascal</forename>
-                    </persName>
-                    <affiliation>Universität des Saarlandes, Deutschland</affiliation>
-                    <email>s8plschm@stud.uni-saarland.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Klauk</surname>
-                        <forename>Stephanie</forename>
-                    </persName>
-                    <affiliation>Universität des Saarlandes, Deutschland</affiliation>
-                    <email>s.klauk@mx.uni-saarland.de</email>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-12-04T18:43:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Poster</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Musikedition</term>
-                    <term>Stilanalyse</term>
-                    <term>Victoria</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Stilistische Analyse</term>
-                    <term>Identifizierung</term>
-                    <term>Methoden</term>
-                    <term>Projekte</term>
-                    <term>Ton</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p>Der Spanier Tomás Luis de Victoria (1548‒1611) ist neben Palestrina die prominenteste Figur der posttridentinischen Kirchenmusik. Eine kritische Gesamtausgabe seiner Werke steht allerdings noch aus (Klauk et al. 2016). Im Rahmen eines solchen Projekts müssen zahlreiche Handschriften mit Kompositionen ungesicherter Zuschreibung an Victoria untersucht werden, die in den letzten Jahrzehnten zum Vorschein kamen (Klauk 2015). Computergestützte Methoden wie das merkmalsbasierte Verfahren der Software 
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="KLAUK_Stephanie_Computergest_tzte_Werkzeuge_in_der_Musikedit" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Computergestützte Werkzeuge in der Musikedition: Echtheitsfragen im Werk Tomás Luis de Victorias</title>
+<author>
+<persName>
+<surname>Schmolenzky</surname>
+<forename>Pascal</forename>
+</persName>
+<affiliation>Universität des Saarlandes, Deutschland</affiliation>
+<email>s8plschm@stud.uni-saarland.de</email>
+</author>
+<author>
+<persName>
+<surname>Klauk</surname>
+<forename>Stephanie</forename>
+</persName>
+<affiliation>Universität des Saarlandes, Deutschland</affiliation>
+<email>s.klauk@mx.uni-saarland.de</email>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-12-04T18:43:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14942968</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Poster</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Musikedition</term>
+<term>Stilanalyse</term>
+<term>Victoria</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Stilistische Analyse</term>
+<term>Identifizierung</term>
+<term>Methoden</term>
+<term>Projekte</term>
+<term>Ton</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Einleitung</head>
+<p>Der Spanier Tomás Luis de Victoria (1548‒1611) ist neben Palestrina die prominenteste Figur der posttridentinischen Kirchenmusik. Eine kritische Gesamtausgabe seiner Werke steht allerdings noch aus (Klauk et al. 2016). Im Rahmen eines solchen Projekts müssen zahlreiche Handschriften mit Kompositionen ungesicherter Zuschreibung an Victoria untersucht werden, die in den letzten Jahrzehnten zum Vorschein kamen (Klauk 2015). Computergestützte Methoden wie das merkmalsbasierte Verfahren der Software 
                     <hi rend="italic">jSymbolic</hi><ref n="1" target="ftn1"/> können dabei wertvolle Hilfestellung bieten und wurden bereits gewinnbringend zur Unterscheidung und Erkennung verschiedener Kompositionsstile eingesetzt (Rodríguez-García und MacKay 2021). Dies soll anhand zweier Fallbeispiele umstrittener Werke illustriert werden: dem Hymnus 
                     <hi rend="italic">Jesu dulcis memoria</hi>, der von musikwissenschaftlicher Seite eher als unecht eingestuft, und der achtstimmigen Motette 
                     <hi rend="italic">Vidi speciosam</hi>, die jüngst den authentischen Kompositionen zugeschlagen wurde.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Problemstellung und technische Umsetzung</head>
-                <p>Victorias Œuvre umfasst 11 Sammeldrucke aus seiner Zeit sowie über 300 Manuskripte. Diese lassen sich zum Großteil mit den gedruckten Werken in Verbindung bringen; knapp 100 sind Unikate, teilweise mit ungesicherter Zuschreibung. Vergleichende Untersuchungen zur Echtheit sind zeitaufwändig und werden häufig unter Einbezug nur weniger Kompositionen oder unter einzelnen Aspekten vorgenommen.</p>
-                <p>Mit dem open-source Java-Framework 
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Problemstellung und technische Umsetzung</head>
+<p>Victorias Œuvre umfasst 11 Sammeldrucke aus seiner Zeit sowie über 300 Manuskripte. Diese lassen sich zum Großteil mit den gedruckten Werken in Verbindung bringen; knapp 100 sind Unikate, teilweise mit ungesicherter Zuschreibung. Vergleichende Untersuchungen zur Echtheit sind zeitaufwändig und werden häufig unter Einbezug nur weniger Kompositionen oder unter einzelnen Aspekten vorgenommen.</p>
+<p>Mit dem open-source Java-Framework 
                     <hi rend="italic">jSymbolic</hi> werden musikalische Merkmale aus symbolischen Datenformaten wie MIDI und MusicXML automatisch extrahiert (McKay und Fujinaga 2006). Version 2.2 umfasst 246 solcher Merkmale, unterteilt in Kategorien wie “Pitch Statistics”, “Melodic Intervals” und “Chords and Vertical Intervals” (McKay et al. 2018, S. 349). Die extrahierten Daten eignen sich außerdem zum Training merkmalsbasierter Klassifikationsalgorithmen wie “Support Vector Machines” (SVM). Mithilfe des open-source Weka-Data-Mining-Pakets<ref n="2" target="ftn2"/> und den dort enthaltenen “Supervised-Learning”-Algorithmen können Modelle trainiert werden, die eine statistische Evidenz zur Echtheit von Kompositionen liefern oder die Stile verschiedener Komponisten unterscheiden. Mit dem Weka-Tool “InfoGainAttributeEval” kann der Informationsgehalt einzelner Merkmale bezogen auf deren Bedeutung für die Unterscheidung zwischen zwei ʻKlassen̕ berechnet werden.<ref n="3" target="ftn3"/>
-                </p>
-                <p>Die bei 
+</p>
+<p>Die bei 
                     <hi rend="italic">jSymbolic</hi> zur Verfügung stehenden Trainingsdatensätze umfassen mehrere Corpora in einem standardisierten MIDI-Format (vgl. Cumming et al. 2018). Darunter auch 259 Werke von Victoria sowie 705 von Palestrina, die zur Gegenprobe herangezogen werden.<ref n="4" target="ftn4"/> Bestehende Hypothesen über stilspezifische Charakteristika, die auf händischen Analysen beruhen, sollen auf dieser Basis einer quantitativen Überprüfung unterzogen werden. Darüber hinaus beinhaltet der Ansatz auch die Möglichkeit zur Identifikation bisher unberücksichtigter Stilmerkmale.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <hi rend="italic">Jesu dulcis memoria</hi>: unecht?
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>
+<hi rend="italic">Jesu dulcis memoria</hi>: unecht?
                 </head>
-                <p>Kritische Untersuchungen von Victorias Kompositionsstil zogen bereits in den 1940er Jahren dessen Autorschaft des Hymnus, der in die erste Gesamtausgabe integriert wurde, in Zweifel. Dabei wurden drei für Victoria untypische Merkmale angeführt: eine bestimmte rhythmische Wendung mit zwei Achtelnoten zwischen einer punktierten halben und einer halben Note, das zweimalige Vorkommen einer abwärts geführten verminderten Quarte und der übermäßig hohe Anteil an Septakkorden (May 1943, S. 150f.). Die ersten beiden Merkmale lassen sich mit den standardmäßig verfügbaren Funktionen von 
+<p>Kritische Untersuchungen von Victorias Kompositionsstil zogen bereits in den 1940er Jahren dessen Autorschaft des Hymnus, der in die erste Gesamtausgabe integriert wurde, in Zweifel. Dabei wurden drei für Victoria untypische Merkmale angeführt: eine bestimmte rhythmische Wendung mit zwei Achtelnoten zwischen einer punktierten halben und einer halben Note, das zweimalige Vorkommen einer abwärts geführten verminderten Quarte und der übermäßig hohe Anteil an Septakkorden (May 1943, S. 150f.). Die ersten beiden Merkmale lassen sich mit den standardmäßig verfügbaren Funktionen von 
                     <hi rend="italic">jSymbolic2.2</hi> nicht direkt überprüfen, da diese weder Sequenzmuster abdecken noch zwischen enharmonisch verwechselbaren Intervallen unterscheiden. Die relative Häufigkeit der Septakkorde lässt sich dagegen leicht berechnen. Das “InfoGainAttributeEval”-Tool identifiziert das Vorkommen von Dominantseptakkorden als das wichtigste Merkmal zur Unterscheidung des Hymnus von Victorias Stil, da der Informationsgehalt dieses Merkmals im Vergleich zu den Klassen “Victoria” und “nicht Victoria” von allen extrahierten Merkmalen<ref n="5" target="ftn5"/> am höchsten ist (Abbildung 1). Die Häufigkeit von Septakkorden insgesamt (einschließlich nicht-dominantischer) ist beim Hymnus deutlich höher als im Durchschnitt der Victoria zugeschriebenen Kompositionen. Abbildung 2 zeigt die markante Abweichung von 
                     <hi rend="italic">Jesu dulcis memoria</hi> gegenüber dieser Gruppe in Bezug auf die Kombination beider Merkmale.
                 </p>
-                <figure>
-                    <graphic n="1001" width="15.645308333333332cm" height="7.62cm" url="Pictures/18736c50b8bf6585ac213481709ee5d5.jpg" rend="inline"/>
-                    <head>
+<figure>
+<graphic height="7.62cm" n="1001" rend="inline" url="Pictures/18736c50b8bf6585ac213481709ee5d5.jpg" width="15.645308333333332cm"/>
+<head>
                         Abbildung 1: Auflistung der mit
                         <hi rend="italic" style="font-size:9pt">jSymbolic</hi>
                        extrahierten Feature-Werte nach Wichtigkeit zur Unterscheidung zwischen 
                         <hi rend="italic" style="font-size:9pt">Jesu dulcis memoria</hi>
                        und allen Werken Victorias.</head>
-                </figure>
-       
-  
-                <figure>
-                    <graphic n="1002" width="16.002cm" height="12.0015cm" url="Pictures/2bbe3d3d1bbbcc35de57810d80271708.jpg" rend="inline"/>
-                    <head>
+</figure>
+<figure>
+<graphic height="12.0015cm" n="1002" rend="inline" url="Pictures/2bbe3d3d1bbbcc35de57810d80271708.jpg" width="16.002cm"/>
+<head>
                         Abbildung 2: Kombination der Merkmale “Dominant Seventh Chords” und “Seventh Chords” (alle Septakkorde).
                     </head>
-                </figure>
-                
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <hi rend="italic">Vidi speciosam à 8</hi>: echt?
+</figure>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>
+<hi rend="italic">Vidi speciosam à 8</hi>: echt?
                 </head>
-                <p>Die achtstimmige Motette wird in zwei verschiedenen Manuskripten einmal Victoria, einmal Felice Anerio zugeschrieben. Eine jüngere stilkritische Analyse legt Victorias Autorschaft nahe (Cramer 2001, S. 1f., 19f.). Diese stützt sich hauptsächlich auf den Vergleich der achtstimmigen Motette mit einer sechsstimmigen Vertonung desselben Textes, die als authentisch gilt. Die zentralen Argumente beziehen sich auf intertextuelle Bezüge: Phrasenbildung, formale und harmonische Struktur, Verwendung desselben Materials. Diese Bezüge werden zusätzlich mit anderen mehrfachen Vertonungen Victorias verglichen, wobei beispielsweise die Anzahl der Stimmen eine Rolle spielen kann (Cramer 2001, S. 6ff.). Zwei weitere spezifische Merkmale der Motette werden außerdem hervorgehoben: die Verwendung einer abwärts geführten kleinen Sexte, die als direktes Argument für Victorias Autorschaft angeführt wird, sowie der hohe Grad an rhythmischer Dichte (Cramer 2001, S. 3). Ersteres lässt sich auch hier nicht auf die integrierten Merkmale von 
+<p>Die achtstimmige Motette wird in zwei verschiedenen Manuskripten einmal Victoria, einmal Felice Anerio zugeschrieben. Eine jüngere stilkritische Analyse legt Victorias Autorschaft nahe (Cramer 2001, S. 1f., 19f.). Diese stützt sich hauptsächlich auf den Vergleich der achtstimmigen Motette mit einer sechsstimmigen Vertonung desselben Textes, die als authentisch gilt. Die zentralen Argumente beziehen sich auf intertextuelle Bezüge: Phrasenbildung, formale und harmonische Struktur, Verwendung desselben Materials. Diese Bezüge werden zusätzlich mit anderen mehrfachen Vertonungen Victorias verglichen, wobei beispielsweise die Anzahl der Stimmen eine Rolle spielen kann (Cramer 2001, S. 6ff.). Zwei weitere spezifische Merkmale der Motette werden außerdem hervorgehoben: die Verwendung einer abwärts geführten kleinen Sexte, die als direktes Argument für Victorias Autorschaft angeführt wird, sowie der hohe Grad an rhythmischer Dichte (Cramer 2001, S. 3). Ersteres lässt sich auch hier nicht auf die integrierten Merkmale von 
                     <hi rend="italic">jSymbolic2.2</hi> übertragen. Die Häufigkeit aller melodischer Sexten in Kombination mit der Messung der durchschnittlichen rhythmischen Dichte zeigt indes keine signifikante statistische Auffälligkeit (Abbildung 3). Ein Vergleich der beiden Motetten offenbart allerdings eine hohe Ähnlichkeit in den Merkmalen “melodische Tonwiederholungen” oder “schrittweise Fortbewegung”. Die Gegenüberstellung dieser Merkmalskombination mit den Werken Palestrinas lässt eine deutliche Abgrenzung zu dieser Gruppe erkennen (Abbildung 4).
                 </p>
-                <figure>
-                    <graphic n="1003" width="16.002cm" height="12.0015cm" url="Pictures/4737a17276d012270a9a7e6b44631589.jpg" rend="inline"/>
-                    <head>
+<figure>
+<graphic height="12.0015cm" n="1003" rend="inline" url="Pictures/4737a17276d012270a9a7e6b44631589.jpg" width="16.002cm"/>
+<head>
                        Abbildung 3: Kombination der Merkmale “Melodic Sixths” und “Note Density per Quarter Note”.
                     </head>
-                </figure>
-                
-                <figure>
-                    <graphic n="1004" width="16.002cm" height="12.0015cm" url="Pictures/9ea63b1647d06b5ccd4383035da58da5.jpg" rend="inline"/>
-                    <head>
+</figure>
+<figure>
+<graphic height="12.0015cm" n="1004" rend="inline" url="Pictures/9ea63b1647d06b5ccd4383035da58da5.jpg" width="16.002cm"/>
+<head>
                         Abbildung 4: Kombination der Merkmale “Repeated Notes” und “Stepwise Motion”.
                     </head>
-                </figure>
-               
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Fazit und Ausblick</head>
-                <p>Auch wenn die Interpretation aller verfügbaren Merkmale durch den Klassifikationsalgorithmus bei beiden Beispielen zu denselben Ergebnissen führte, liegt das Hauptaugenmerk dieser Untersuchung auf einzelnen, in bisherigen Analysen angestellten Beobachtungen. Hierfür ist 
+</figure>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Fazit und Ausblick</head>
+<p>Auch wenn die Interpretation aller verfügbaren Merkmale durch den Klassifikationsalgorithmus bei beiden Beispielen zu denselben Ergebnissen führte, liegt das Hauptaugenmerk dieser Untersuchung auf einzelnen, in bisherigen Analysen angestellten Beobachtungen. Hierfür ist 
                     <hi rend="italic">jSymbolic2.2</hi> geeignet, da sich Entscheidungen der ML-Algorithmen immer auf konkrete Merkmale zurückführen lassen. Der Vergleich zeigt drei zentrale Aspekte: 1. Klassische Methoden basieren teilweise auf einzelnen Merkmalen, die von der Software erfasst und statistisch überprüft werden können. Dabei zeigt sich, dass einzelne Merkmale eine geringere statistische Relevanz aufweisen, als die Analyse zunächst vermuten lässt. 2. 
                     <hi rend="italic">jSymbolic2.2</hi> kann neue, statistisch relevante Merkmale aufdecken, die bisher unbemerkt blieben. 3. Klassische Analysen arbeiten zum einen mit potenziell aussagekräftigen Merkmalen (z. B. verminderte Quarte, abwärts geführte kleine Sexte), die fallspezifisch in die Software integriert werden könnten.<ref n="6" target="ftn6"/> Zum andern liefern sie historisch informierte Untersuchungsansätze wie den Vergleich mit der sechsstimmigen Vertonung des 
                     <hi rend="italic">Vidi speciosam</hi>. Dies birgt auch Potenzial für bisher nicht diskutierte Werke und anspruchsvollere Fälle, wie die Entdeckung intertextueller Bezüge in Tabulaturen vokaler Kompositionen (Klauk 2021). Für die Echtheitsforschung und Musikedition im Fall von Victoria könnte dies eine vielversprechende Perspektive sein.
                 </p>
-            </div>
-        </body>
-        <back>
+</div>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
+<note n="1" rend="footnote text" xml:id="ftn1">
                          https://jmir.sourceforge.net/jSymbolic.html
                     </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
-                        
-                            <hi style="font-size:11pt" xml:space="preserve"> https://ml.cms.waikato.ac.nz/weka</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn3" n="3">
-                        
-                            <hi style="font-size:11pt">Für eine nähere Erläuterung siehe:</hi>
-                        
-                        
-                            <hi style="font-size:11pt">https://weka.sourceforge.io/doc.dev/weka/attributeSelection/InfoGainAttributeEval.html</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn4" n="4">
-                        
-                            <hi style="font-size:11pt" xml:space="preserve"> https://jmir.sourceforge.net/manuals/jSymbolic_tutorial/home.html</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn5" n="5">
-                        
-                            <hi style="font-size:11pt" xml:space="preserve"> Liste aller Merkmale von </hi>
-                            <hi rend="italic" style="font-size:11pt">jSymbolic2.2</hi>
-                            <hi style="font-size:11pt">:</hi>
-                        
-                        
-                            <hi style="font-size:11pt">https://jmir.sourceforge.net/manuals/jSymbolic_manual/home.html</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn6" n="6">
-                        
-                            <hi style="font-size:11pt" xml:space="preserve"> Siehe: https://jmir.sourceforge.net/manuals/jSymbolic_manual/home.html</hi>
-                        
-                    </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Cramer, Eugene Casjen</hi>. 2001. 
+<note n="2" rend="footnote text" xml:id="ftn2">
+<hi style="font-size:11pt" xml:space="preserve"> https://ml.cms.waikato.ac.nz/weka</hi>
+</note>
+<note n="3" rend="footnote text" xml:id="ftn3">
+<hi style="font-size:11pt">Für eine nähere Erläuterung siehe:</hi>
+<hi style="font-size:11pt">https://weka.sourceforge.io/doc.dev/weka/attributeSelection/InfoGainAttributeEval.html</hi>
+</note>
+<note n="4" rend="footnote text" xml:id="ftn4">
+<hi style="font-size:11pt" xml:space="preserve"> https://jmir.sourceforge.net/manuals/jSymbolic_tutorial/home.html</hi>
+</note>
+<note n="5" rend="footnote text" xml:id="ftn5">
+<hi style="font-size:11pt" xml:space="preserve"> Liste aller Merkmale von </hi>
+<hi rend="italic" style="font-size:11pt">jSymbolic2.2</hi>
+<hi style="font-size:11pt">:</hi>
+<hi style="font-size:11pt">https://jmir.sourceforge.net/manuals/jSymbolic_manual/home.html</hi>
+</note>
+<note n="6" rend="footnote text" xml:id="ftn6">
+<hi style="font-size:11pt" xml:space="preserve"> Siehe: https://jmir.sourceforge.net/manuals/jSymbolic_manual/home.html</hi>
+</note></div>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl><hi rend="bold">Cramer, Eugene Casjen</hi>. 2001. 
                         <hi rend="italic">Studies in the Music of Tomás Luis de Victoria</hi>. Burlington: Ashgate.
                     </bibl>
-                    <bibl><hi rend="bold">Cumming, Julie E., Cory McKay, Jonathan Stuchbery und Ichiro Fujinaga</hi>. 2018. “Methodologies for Creating Symbolic Corpora of Western Music Before 1600.” In 
+<bibl><hi rend="bold">Cumming, Julie E., Cory McKay, Jonathan Stuchbery und Ichiro Fujinaga</hi>. 2018. “Methodologies for Creating Symbolic Corpora of Western Music Before 1600.” In 
                         <hi rend="italic">19th International Society for Music Information Retrieval Conference</hi>, 491‒498.
                     </bibl>
-                    <bibl><hi rend="bold">Klauk, Stephanie</hi>. 2015. “Problems of Authenticity in the Works of Tomás Luis de Victoria. Some Methodological Considerations.” In 
+<bibl><hi rend="bold">Klauk, Stephanie</hi>. 2015. “Problems of Authenticity in the Works of Tomás Luis de Victoria. Some Methodological Considerations.” In 
                         <hi rend="italic" xml:space="preserve">New Perspectives on Early Music in Spain </hi>hg. von Tess Knighton und Emilio Ros-Fábregas, 56
                         <hi style="font-family:Lucida Grande">‒</hi>68. Kassel: Reichenberger.
                     </bibl>
-                    <bibl><hi rend="bold">Klauk, Stephanie, Rainer Kleinertz und Sergi Zauner</hi>. 2016. “Zur Edition der Werke von Tomás Luis de Victoria. Geschichte und Perspektiven.” In 
+<bibl><hi rend="bold">Klauk, Stephanie, Rainer Kleinertz und Sergi Zauner</hi>. 2016. “Zur Edition der Werke von Tomás Luis de Victoria. Geschichte und Perspektiven.” In 
                         <hi rend="italic">„Ei, dem alten Herrn zoll’ ich Achtung gern’“. Festschrift für Joachim Veit zum 60. Geburtstag</hi>, hg. von Kristina Richts und Peter Stadler, 483
                         <hi style="font-family:Lucida Grande">‒</hi>507. München: Allitera Verlag.
                     </bibl>
-                    <bibl><hi rend="bold">Klauk, Stephanie</hi>. 2021. “Ein fünfstimmiges ‚O sacrum conviviumʻ von Tomás Luis de Victoria? Motettische Mehrfachvertonungen Victorias im Kontext von Intertextualität und Authentizität.” In 
+<bibl><hi rend="bold">Klauk, Stephanie</hi>. 2021. “Ein fünfstimmiges ‚O sacrum conviviumʻ von Tomás Luis de Victoria? Motettische Mehrfachvertonungen Victorias im Kontext von Intertextualität und Authentizität.” In 
                         <hi rend="italic">Estudios sobre Recuperación de Patrimonio Musical Histórico. Scripta Musicologica en torno a la figura del Dr. José V. González Valle</hi>, hg. von Antonio Ezquerro Esteban und Luis Antonio González Marín, 333
                         <hi style="font-family:Lucida Grande">‒</hi>344. Valencia: Tirant lo Blanch.
                     </bibl>
-                    <bibl><hi rend="bold">May, Hans von</hi>. 1943. 
+<bibl><hi rend="bold">May, Hans von</hi>. 1943. 
                         <hi rend="italic">Die Kompositionstechnik T. L. de Victorias</hi>. PhD diss., Universität Bern.
                     </bibl>
-                    <bibl><hi rend="bold">McKay, Cory und Ichiro Fujinaga</hi>. 2006. “jSymbolic: A Feature Extractor for MIDI Files.” In 
+<bibl><hi rend="bold">McKay, Cory und Ichiro Fujinaga</hi>. 2006. “jSymbolic: A Feature Extractor for MIDI Files.” In 
                         <hi rend="italic">Proceedings of the International Computer Music Conference</hi>, 302
                         <hi style="font-family:Lucida Grande">‒</hi>305.
                     </bibl>
-                    <bibl><hi rend="bold">McKay, Cory, Julie E. Cumming, und Ichiro Fujinaga</hi>. 2018. “jSymbolic 2.2: Extracting Features from Symbolic Music for Use in Musicological and MIR Research.” In 
+<bibl><hi rend="bold">McKay, Cory, Julie E. Cumming, und Ichiro Fujinaga</hi>. 2018. “jSymbolic 2.2: Extracting Features from Symbolic Music for Use in Musicological and MIR Research.” In 
                         <hi rend="italic">Proceedings of the International Society for Music Information Retrieval Conference</hi>, 348
                         <hi style="font-family:Lucida Grande">‒</hi>354.
                     </bibl>
-                    <bibl><hi rend="bold">Rodríguez-García, Esperanza und Cory McKay</hi>. 2021. “Composer Attribution of Renaissance Motets: A Case Study Using Statistical Features and Machine Learning.” In 
+<bibl><hi rend="bold">Rodríguez-García, Esperanza und Cory McKay</hi>. 2021. “Composer Attribution of Renaissance Motets: A Case Study Using Statistical Features and Machine Learning.” In 
                         <hi rend="italic">The Anatomy of Iberian Polyphony Around 1500</hi>, hg. von Esperanza Rodríguez-García und João Pedro d’Alvarenga, 401‒438. Kassel: Reichenberger.
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

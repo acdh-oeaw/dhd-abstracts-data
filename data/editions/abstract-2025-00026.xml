@@ -1,277 +1,277 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ACHMANN_Michael_Aspektbasierte_Sentimentanalyse_von_Bookstag">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Aspektbasierte Sentimentanalyse von Bookstagram-Posts</title>
-                <author>
-                    <persName>
-                        <surname>Reichert</surname>
-                        <forename>Emma Sophie</forename>
-                    </persName>
-                    <affiliation>Universität Regensburg, Deutschland</affiliation>
-                    <email>Emma-Sophie.Reichert@stud.uni-regensburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Babl</surname>
-                        <forename>Anna-Lena</forename>
-                    </persName>
-                    <affiliation>Universität Regensburg, Deutschland</affiliation>
-                    <email>Anna-Lena.Babl@stud.uni-regensburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Kim</surname>
-                        <forename>Kyuhee</forename>
-                    </persName>
-                    <affiliation>Universität Regensburg, Deutschland</affiliation>
-                    <email>Kyuhee.Kim@stud.uni-regensburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Achmann-Denkler</surname>
-                        <forename>Michael</forename>
-                    </persName>
-                    <affiliation>Universität Regensburg, Deutschland</affiliation>
-                    <email>michael.achmann@informatik.uni-regensburg.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Wolff</surname>
-                        <forename>Christian</forename>
-                    </persName>
-                    <affiliation>Universität Regensburg, Deutschland</affiliation>
-                    <email>christian.wolff@informatik.uni-regensburg.de</email>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-12-04T12:36:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Poster</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Aspektbasierte Sentimentanalyse</term>
-                    <term>Social Media Analyse</term>
-                    <term>Bookstagram</term>
-                    <term>GPT</term>
-                    <term>LLM</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Inhaltsanalyse</term>
-                    <term>Multimodale Kommunikation</term>
-                    <term>Text</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div/>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p>Der Buchmarkt befindet sich in einem Wandel, der unter anderem durch die zunehmende Präsenz von Büchern auf Online-Plattformen geprägt ist. Sogenannte “Buchblogger” verbreiten auf Social Media Inhalte über Bücher (Giacomuzzi 2021) und werden dabei nicht selten von Verlagen durch besondere Aktionen oder kostenlose Exemplare, sogenannte Rezensionsexemplare, unterstützt. Aufkleber wie “#TikTokMadeMeBuyIt” auf Büchern in Buchgeschäften (Sahner 2023) und Bestseller-Listen auf TikTok, verdeutlichen die wachsende Rolle sozialer Medien bei Kaufentscheidungen: Laut Angaben des Plattformbetreibers wurden 2023 in Deutschland über 12 Millionen '#BookTok'-Bücher verkauft (TikTok Technology Limited 2024). Auch auf Instagram hat sich eine aktive Buch-Community etabliert, die durch ihre Reichweite und Interaktionen zum Erfolg von Büchern beiträgt.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Forschungsfragen</head>
-                <p>Diese Arbeit befasst sich mit der aspektbasierten Stimmungsanalyse von Buchrezensionen auf Instagram. Dabei wurden folgende Forschungsfragen untersucht:</p>
-                <list type="unordered">
-                    <item>Ist GPT für die aspektbasierte Stimmungsanalyse geeignet?</item>
-                    <item>Wie ist die Verteilung von Stimmungen für die betrachteten Aspekte?</item>
-                    <item>Unterscheiden sich die Sentiments bei Rezensionsexemplaren und Nicht-Rezensionsexemplaren?</item>
-                    <item>Wirkt sich die Art (Album vs. Foto) des Posts auf das Sentiment aus?</item>
-                    <item>Wirkt sich das Sentiment eines Buchrezensions-Posts auf die Performance aus?</item>
-                </list>
-                <p>Die Ergebnisse dieser Analyse ergaben neue Einblicke in die Möglichkeiten der aspektbasierten Stimmungsanalyse und lieferten Aufschlüsse über die Buch-Community auf Instagram, das sogenannte Bookstagram.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="vblvnqfi6nn3"/>Material
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="ACHMANN_Michael_Aspektbasierte_Sentimentanalyse_von_Bookstag" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Aspektbasierte Sentimentanalyse von Bookstagram-Posts</title>
+<author>
+<persName>
+<surname>Reichert</surname>
+<forename>Emma Sophie</forename>
+</persName>
+<affiliation>Universität Regensburg, Deutschland</affiliation>
+<email>Emma-Sophie.Reichert@stud.uni-regensburg.de</email>
+</author>
+<author>
+<persName>
+<surname>Babl</surname>
+<forename>Anna-Lena</forename>
+</persName>
+<affiliation>Universität Regensburg, Deutschland</affiliation>
+<email>Anna-Lena.Babl@stud.uni-regensburg.de</email>
+</author>
+<author>
+<persName>
+<surname>Kim</surname>
+<forename>Kyuhee</forename>
+</persName>
+<affiliation>Universität Regensburg, Deutschland</affiliation>
+<email>Kyuhee.Kim@stud.uni-regensburg.de</email>
+</author>
+<author>
+<persName>
+<surname>Achmann-Denkler</surname>
+<forename>Michael</forename>
+</persName>
+<affiliation>Universität Regensburg, Deutschland</affiliation>
+<email>michael.achmann@informatik.uni-regensburg.de</email>
+</author>
+<author>
+<persName>
+<surname>Wolff</surname>
+<forename>Christian</forename>
+</persName>
+<affiliation>Universität Regensburg, Deutschland</affiliation>
+<email>christian.wolff@informatik.uni-regensburg.de</email>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-12-04T12:36:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943004</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Poster</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Aspektbasierte Sentimentanalyse</term>
+<term>Social Media Analyse</term>
+<term>Bookstagram</term>
+<term>GPT</term>
+<term>LLM</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Inhaltsanalyse</term>
+<term>Multimodale Kommunikation</term>
+<term>Text</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div/>
+<div rend="DH-Heading1" type="div1">
+<head>Einleitung</head>
+<p>Der Buchmarkt befindet sich in einem Wandel, der unter anderem durch die zunehmende Präsenz von Büchern auf Online-Plattformen geprägt ist. Sogenannte “Buchblogger” verbreiten auf Social Media Inhalte über Bücher (Giacomuzzi 2021) und werden dabei nicht selten von Verlagen durch besondere Aktionen oder kostenlose Exemplare, sogenannte Rezensionsexemplare, unterstützt. Aufkleber wie “#TikTokMadeMeBuyIt” auf Büchern in Buchgeschäften (Sahner 2023) und Bestseller-Listen auf TikTok, verdeutlichen die wachsende Rolle sozialer Medien bei Kaufentscheidungen: Laut Angaben des Plattformbetreibers wurden 2023 in Deutschland über 12 Millionen '#BookTok'-Bücher verkauft (TikTok Technology Limited 2024). Auch auf Instagram hat sich eine aktive Buch-Community etabliert, die durch ihre Reichweite und Interaktionen zum Erfolg von Büchern beiträgt.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Forschungsfragen</head>
+<p>Diese Arbeit befasst sich mit der aspektbasierten Stimmungsanalyse von Buchrezensionen auf Instagram. Dabei wurden folgende Forschungsfragen untersucht:</p>
+<list type="unordered">
+<item>Ist GPT für die aspektbasierte Stimmungsanalyse geeignet?</item>
+<item>Wie ist die Verteilung von Stimmungen für die betrachteten Aspekte?</item>
+<item>Unterscheiden sich die Sentiments bei Rezensionsexemplaren und Nicht-Rezensionsexemplaren?</item>
+<item>Wirkt sich die Art (Album vs. Foto) des Posts auf das Sentiment aus?</item>
+<item>Wirkt sich das Sentiment eines Buchrezensions-Posts auf die Performance aus?</item>
+</list>
+<p>Die Ergebnisse dieser Analyse ergaben neue Einblicke in die Möglichkeiten der aspektbasierten Stimmungsanalyse und lieferten Aufschlüsse über die Buch-Community auf Instagram, das sogenannte Bookstagram.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>
+<anchor xml:id="vblvnqfi6nn3"/>Material
                 </head>
-                <p style="text-align: left;">Untersuchungsgegenstand dieser Arbeit waren 3745 deutschsprachige Buchrezensionen der Bookstagram-Community (siehe Abbildung 1 für ein Beispiel). Diese wurden von 144 Accounts mit unterschiedlichen Reichweiten über die Suche nach Hashtags mithilfe des Analysetools CrowdTangle gesammelt. Alle Posts enthielten dabei das Wort “Rezension” oder die Kurzform “Rezi(e)” sowie mindestens einen der folgenden Hashtags: #bookstagramgermany, #bookstagramdeutschland, #buchrezension, #buch, #bookstagram, #bücherliebe, #leseliebe, #buchblogger, #buchcommunity.</p>
-                <figure>
-                    <graphic n="1001" width="16.002cm" height="11.200694444444444cm" url="Pictures/16f5a447989b2350c735265809849ed0.png" rend="inline"/>
-                    <head>
-                        <anchor xml:id="Ref184212767"/>Abbildung 1 Screenshot einer Buchrezension der Userin @sophie.truna auf Instagram. (Aufgenommen: 04.12.2024).
+<p style="text-align: left;">Untersuchungsgegenstand dieser Arbeit waren 3745 deutschsprachige Buchrezensionen der Bookstagram-Community (siehe Abbildung 1 für ein Beispiel). Diese wurden von 144 Accounts mit unterschiedlichen Reichweiten über die Suche nach Hashtags mithilfe des Analysetools CrowdTangle gesammelt. Alle Posts enthielten dabei das Wort “Rezension” oder die Kurzform “Rezi(e)” sowie mindestens einen der folgenden Hashtags: #bookstagramgermany, #bookstagramdeutschland, #buchrezension, #buch, #bookstagram, #bücherliebe, #leseliebe, #buchblogger, #buchcommunity.</p>
+<figure>
+<graphic height="11.200694444444444cm" n="1001" rend="inline" url="Pictures/16f5a447989b2350c735265809849ed0.png" width="16.002cm"/>
+<head>
+<anchor xml:id="Ref184212767"/>Abbildung 1 Screenshot einer Buchrezension der Userin @sophie.truna auf Instagram. (Aufgenommen: 04.12.2024).
                     </head>
-                </figure>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor xml:id="ijvlnzstu9ad"/>Methode
+</figure>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>
+<anchor xml:id="ijvlnzstu9ad"/>Methode
                 </head>
-                <p>Die aspektbasierte Stimmungsanalyse liefert ein detaillierteres Verständnis der Stimmung, indem sie den Text in verschiedene Aspekte zerlegt und deren Stimmungen einzeln analysiert (Kim and Song 2022). Die betrachteten Aspekte dieser Arbeit wurden anhand vorheriger Forschungsarbeiten (Zhang et al. 2019, Stollfuß 2023) unter Einbeziehung weiterführender Überlegungen festgelegt. Zhang et al. zeigten, dass auf sozialen Medien inhaltsbezogene Aspekte öfter vorkommen als externe Faktoren (2019). Die externen Faktoren (z.B. Cover, Schriftart, Illustrationen) wurden daher zu einem Aspekt zusammengefasst, während inhaltliche Aspekte weiter aufgeteilt wurden.</p>
-                <p>Für unsere Analyse ergaben sich folgende Aspekte: Autor, Schreibstil, externe Faktoren, Charaktere, Logik und Handlung/Spannung. Darüber hinaus wurde das allgemeine Sentiment jeder Rezension bestimmt. Das Sentiment wurde als „Positiv“, „Neutral“, „Negativ“ oder „Nicht vorhanden“ bewertet.</p>
-                <p>Nach der iterativen Entwicklung eines Prompts wurde die aspektbasierte Stimmungsanalyse mit den GPT-Modellen “gpt-3.5-turbo-0613” und “gpt-4-1106-preview” durchgeführt und verglichen. Die Reliabilität der Ergebnisse wurde durch die Bewertung von 250 zufällig ausgewählten Beiträge des Datensatzes von sechs menschlichen Annotatoren sichergestellt.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ergebnisse</head>
-                <div type="div2" rend="DH-Heading2">
-                    <head>
-                        <anchor xml:id="etv4jbf68hrf"/>Ist GPT für die aspektbasierte Stimmungsanalyse geeignet?
+<p>Die aspektbasierte Stimmungsanalyse liefert ein detaillierteres Verständnis der Stimmung, indem sie den Text in verschiedene Aspekte zerlegt und deren Stimmungen einzeln analysiert (Kim and Song 2022). Die betrachteten Aspekte dieser Arbeit wurden anhand vorheriger Forschungsarbeiten (Zhang et al. 2019, Stollfuß 2023) unter Einbeziehung weiterführender Überlegungen festgelegt. Zhang et al. zeigten, dass auf sozialen Medien inhaltsbezogene Aspekte öfter vorkommen als externe Faktoren (2019). Die externen Faktoren (z.B. Cover, Schriftart, Illustrationen) wurden daher zu einem Aspekt zusammengefasst, während inhaltliche Aspekte weiter aufgeteilt wurden.</p>
+<p>Für unsere Analyse ergaben sich folgende Aspekte: Autor, Schreibstil, externe Faktoren, Charaktere, Logik und Handlung/Spannung. Darüber hinaus wurde das allgemeine Sentiment jeder Rezension bestimmt. Das Sentiment wurde als „Positiv“, „Neutral“, „Negativ“ oder „Nicht vorhanden“ bewertet.</p>
+<p>Nach der iterativen Entwicklung eines Prompts wurde die aspektbasierte Stimmungsanalyse mit den GPT-Modellen “gpt-3.5-turbo-0613” und “gpt-4-1106-preview” durchgeführt und verglichen. Die Reliabilität der Ergebnisse wurde durch die Bewertung von 250 zufällig ausgewählten Beiträge des Datensatzes von sechs menschlichen Annotatoren sichergestellt.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Ergebnisse</head>
+<div rend="DH-Heading2" type="div2">
+<head>
+<anchor xml:id="etv4jbf68hrf"/>Ist GPT für die aspektbasierte Stimmungsanalyse geeignet?
                     </head>
-                    <p>Die Ergebnisse lassen auf die Verlässlichkeit des methodischen Vorgehens für künftige Arbeiten schließen. Für sechs von sieben Aspekten ergaben sich mit GPT-3.5 gewichtete F1-Scores zwischen 77% und 94% und mit GPT-4 zwischen 79% und 100%. Die davon abweichenden gewichteten F1-Scores bei dem Aspekt 
+<p>Die Ergebnisse lassen auf die Verlässlichkeit des methodischen Vorgehens für künftige Arbeiten schließen. Für sechs von sieben Aspekten ergaben sich mit GPT-3.5 gewichtete F1-Scores zwischen 77% und 94% und mit GPT-4 zwischen 79% und 100%. Die davon abweichenden gewichteten F1-Scores bei dem Aspekt 
                         <hi rend="italic">Logik (</hi>61% bzw. 69%) führen wir auf Uneinigkeiten bei den menschlichen Annotatoren zurück.
                     </p>
-                    <p>Der Vergleich der GPT-Modelle ergab, dass die Erkennung von Rezensionsexemplaren mit GPT-3.5 (F1-Score = 0,965) zuverlässiger war, als mit GPT-4 (F1-Score = 0,905). Diese Erkennung war zentral für die Beantwortung unserer Forschungsfragen. Außerdem waren die von GPT-4 zurückgegebenen Daten teilweise unvollständig oder nicht richtig formatiert. Für die Untersuchung der weiteren Fragestellungen wurde deshalb das GPT-3.5 Modell gewählt. </p>
-                    <figure>
-                        <graphic n="1002" width="15.92cm" height="7.408333333333333cm" url="Pictures/76c8596984f2b0727a27d71a86cbc4c1.png" rend="inline"/>
-                        <head>Abbildung 2: Konfusionsmatrizen über alle Aspekte für die beiden GPT-Modelle</head>
-                    </figure>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>
-                        <anchor xml:id="l7p93j4fx1q4"/>Wie ist die Verteilung von Stimmungen für die betrachteten Aspekte?
+<p>Der Vergleich der GPT-Modelle ergab, dass die Erkennung von Rezensionsexemplaren mit GPT-3.5 (F1-Score = 0,965) zuverlässiger war, als mit GPT-4 (F1-Score = 0,905). Diese Erkennung war zentral für die Beantwortung unserer Forschungsfragen. Außerdem waren die von GPT-4 zurückgegebenen Daten teilweise unvollständig oder nicht richtig formatiert. Für die Untersuchung der weiteren Fragestellungen wurde deshalb das GPT-3.5 Modell gewählt. </p>
+<figure>
+<graphic height="7.408333333333333cm" n="1002" rend="inline" url="Pictures/76c8596984f2b0727a27d71a86cbc4c1.png" width="15.92cm"/>
+<head>Abbildung 2: Konfusionsmatrizen über alle Aspekte für die beiden GPT-Modelle</head>
+</figure>
+</div>
+<div rend="DH-Heading2" type="div2">
+<head>
+<anchor xml:id="l7p93j4fx1q4"/>Wie ist die Verteilung von Stimmungen für die betrachteten Aspekte?
                     </head>
-                    <p>Bei der Betrachtung der Verteilung der Sentiments fällt auf, dass für jeden Aspekt, außer für 
+<p>Bei der Betrachtung der Verteilung der Sentiments fällt auf, dass für jeden Aspekt, außer für 
                         <hi rend="italic" xml:space="preserve">Logik, </hi>das positive Sentiment überwiegt. Der Aspekt 
                         <hi rend="italic" xml:space="preserve">Handlung/Spannung </hi>wird am häufigsten, 
                         <hi rend="italic" xml:space="preserve">externe Faktoren </hi>kaum negativ bewertet. 
                         <hi rend="italic" xml:space="preserve">Externe Faktoren </hi>und 
                         <hi rend="italic">Logik</hi> werden weniger erwähnt als die anderen Aspekte.
                     </p>
-                    <figure>
-                        <graphic n="1003" width="9.511772222222222cm" height="8.611155555555555cm" url="Pictures/917bebb03726f63f20599b74358c2995.png" rend="inline"/>
-                        <head>Abbildung 3: Verteilung der Sentiments pro Aspekt</head>
-                    </figure>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Gibt es Unterschiede, wenn das Buch ein Rezensionsexemplar war?</head>
-                    <p>Für die Kategorie 
+<figure>
+<graphic height="8.611155555555555cm" n="1003" rend="inline" url="Pictures/917bebb03726f63f20599b74358c2995.png" width="9.511772222222222cm"/>
+<head>Abbildung 3: Verteilung der Sentiments pro Aspekt</head>
+</figure>
+</div>
+<div rend="DH-Heading2" type="div2">
+<head>Gibt es Unterschiede, wenn das Buch ein Rezensionsexemplar war?</head>
+<p>Für die Kategorie 
                         <hi rend="italic">externe Faktoren</hi> konnte mittels eines Exakten Tests nach Fischer festgestellt werden, dass Rezensionsexemplare positiver bewertet wurden (p = .018). Der Aspekt 
                         <hi rend="italic">externe Faktoren</hi> wurde bei Rezensionsexemplaren öfter genannt. 
                     </p>
-                    <figure>
-                        <graphic n="1004" width="15.92cm" height="8.960555555555555cm" url="Pictures/17c409533e5e104ee52da8f3cad7213e.png" rend="inline"/>
-                        <head>Abbildung 4: Verteilung der Sentiments pro Aspekt, Rezensionsexemplar vs. Kein Rezensionsexemplar</head>
-                    </figure>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>
-                        <anchor xml:id="ld4gx41c8rkz"/>Wirkt sich die Art (Album vs. Foto) des Posts auf das Sentiment aus?
+<figure>
+<graphic height="8.960555555555555cm" n="1004" rend="inline" url="Pictures/17c409533e5e104ee52da8f3cad7213e.png" width="15.92cm"/>
+<head>Abbildung 4: Verteilung der Sentiments pro Aspekt, Rezensionsexemplar vs. Kein Rezensionsexemplar</head>
+</figure>
+</div>
+<div rend="DH-Heading2" type="div2">
+<head>
+<anchor xml:id="ld4gx41c8rkz"/>Wirkt sich die Art (Album vs. Foto) des Posts auf das Sentiment aus?
                     </head>
-                    <p>Es wurde untersucht, ob es Unterschiede zwischen Foto-Posts (nur ein Bild) und Album-Posts (mehrere Bilder) bezüglich der Verteilung des Sentiments gibt. Dabei konnten in der Kategorie 
+<p>Es wurde untersucht, ob es Unterschiede zwischen Foto-Posts (nur ein Bild) und Album-Posts (mehrere Bilder) bezüglich der Verteilung des Sentiments gibt. Dabei konnten in der Kategorie 
                         <hi rend="italic" xml:space="preserve">Logik </hi>(
                         <formula>
-                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
-                                <msup xmlns="http://www.w3.org/1998/Math/MathML">
-                                    <mrow>
-                                        <mi>X</mi>
-                                    </mrow>
-                                    <mrow>
-                                        <mn>2</mn>
-                                    </mrow>
-                                </msup>
-                            </mml:math>
-                        </formula>(2, N = 444) = 8.527, p = .014, V = 0.14) und 
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<msup xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mi>X</mi>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msup>
+</mml:math>
+</formula>(2, N = 444) = 8.527, p = .014, V = 0.14) und 
                         <hi rend="italic" xml:space="preserve">Handlung/Spannung </hi>(
                         <formula>
-                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
-                                <msup xmlns="http://www.w3.org/1998/Math/MathML">
-                                    <mrow>
-                                        <mi>X</mi>
-                                    </mrow>
-                                    <mrow>
-                                        <mn>2</mn>
-                                    </mrow>
-                                </msup>
-                            </mml:math>
-                        </formula>(2, N = 766) = 6.619, p = .037, V = 0.09) signifikante Unterschiede bei der Verteilung des Sentiments festgestellt werden, wenn auch mit geringer Stärke des Zusammenhangs. Für den Aspekt 
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<msup xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mi>X</mi>
+</mrow>
+<mrow>
+<mn>2</mn>
+</mrow>
+</msup>
+</mml:math>
+</formula>(2, N = 766) = 6.619, p = .037, V = 0.09) signifikante Unterschiede bei der Verteilung des Sentiments festgestellt werden, wenn auch mit geringer Stärke des Zusammenhangs. Für den Aspekt 
                         <hi rend="italic" xml:space="preserve">externe Faktoren </hi>lieferte ein Exakter Test nach Fischer ebenfalls ein signifikantes Ergebnis (p = .022).
                     </p>
-                    <figure>
-                        <graphic n="1005" width="15.92cm" height="8.960555555555555cm" url="Pictures/19f90c82ef5cdf08cea94cae2db7a764.png" rend="inline"/>
-                        <head>Abbildung 5: Verteilung der Sentiments pro Aspekt, aufgeteilt nach Typ des Posts</head>
-                    </figure>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Wirkt sich das Sentiment eines Buchrezensions-Posts auf die Performance aus?</head>
-                    <p>Anhand des von CrowdTangle bestimmten Overperforming Scores konnte mittels Spearman’s Korrelationskoeffizienten gezeigt werden, dass Beiträge umso besser performten, je negativer das allgemeine Sentiment war (
+<figure>
+<graphic height="8.960555555555555cm" n="1005" rend="inline" url="Pictures/19f90c82ef5cdf08cea94cae2db7a764.png" width="15.92cm"/>
+<head>Abbildung 5: Verteilung der Sentiments pro Aspekt, aufgeteilt nach Typ des Posts</head>
+</figure>
+</div>
+<div rend="DH-Heading2" type="div2">
+<head>Wirkt sich das Sentiment eines Buchrezensions-Posts auf die Performance aus?</head>
+<p>Anhand des von CrowdTangle bestimmten Overperforming Scores konnte mittels Spearman’s Korrelationskoeffizienten gezeigt werden, dass Beiträge umso besser performten, je negativer das allgemeine Sentiment war (
                         <hi style="font-family:Cambria Math">𝜌</hi> = -.048, p = .002).
                     </p>
-                </div>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Fazit </head>
-                <p style="text-align: left;">Die analysierten Bookstagram-Beiträge zeigen überwiegend positives Sentiment. Eine ähnliche Verteilung konnte bereits bei Posts über das Lesen auf Instagram (Zhan et al., 2018) und bei den Plattformen Goodreads und Amazon nachgewiesen werden (Dimitrov et al., 2015). Weiter konnten wir einen negativen Zusammenhang zwischen den betrachteten Sentiments und der Performance des Beitrags feststellen. Diese Ergebnisse stimmen mit den Erkenntnissen von Hsu et al. (2019) überein. Unsere Studienergebnisse legen nahe, dass die Veröffentlichung von Rezensionen auf Instagram, unterstützt durch das überwiegend positive Sentiment, potenziell förderlich für den Buchmarkt sein könnte. Sie geben einen Einblick in den Literaturdiskurs auf sozialen Plattformen und vertiefen das Verständnis für den Einfluss auf die Bookstagram-Community.</p>
-                <p>Unsere Arbeit ist durch die begrenzten Erhebungsmöglichkeiten limitiert. Zukünftige Arbeiten könnten andere Plattformen, Buchgenres oder nicht-textuelle Bestandteile von Bookstagram-Beiträgen berücksichtigen.</p>
-            </div>
-        </body>
-        <back>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Dimitrov, Stefan, Faiyaz Al Zamal, Andrew Piper und Ruths, D</hi>. 2015. "Goodreads versus Amazon: the effect of decoupling book reviewing and book selling". In 
+</div>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Fazit </head>
+<p style="text-align: left;">Die analysierten Bookstagram-Beiträge zeigen überwiegend positives Sentiment. Eine ähnliche Verteilung konnte bereits bei Posts über das Lesen auf Instagram (Zhan et al., 2018) und bei den Plattformen Goodreads und Amazon nachgewiesen werden (Dimitrov et al., 2015). Weiter konnten wir einen negativen Zusammenhang zwischen den betrachteten Sentiments und der Performance des Beitrags feststellen. Diese Ergebnisse stimmen mit den Erkenntnissen von Hsu et al. (2019) überein. Unsere Studienergebnisse legen nahe, dass die Veröffentlichung von Rezensionen auf Instagram, unterstützt durch das überwiegend positive Sentiment, potenziell förderlich für den Buchmarkt sein könnte. Sie geben einen Einblick in den Literaturdiskurs auf sozialen Plattformen und vertiefen das Verständnis für den Einfluss auf die Bookstagram-Community.</p>
+<p>Unsere Arbeit ist durch die begrenzten Erhebungsmöglichkeiten limitiert. Zukünftige Arbeiten könnten andere Plattformen, Buchgenres oder nicht-textuelle Bestandteile von Bookstagram-Beiträgen berücksichtigen.</p>
+</div>
+</body>
+<back>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl><hi rend="bold">Dimitrov, Stefan, Faiyaz Al Zamal, Andrew Piper und Ruths, D</hi>. 2015. "Goodreads versus Amazon: the effect of decoupling book reviewing and book selling". In 
                         <hi rend="italic">Proceedings of the international AI conference on web and social media</hi> 9: 602–605.
                     </bibl>
-                    <bibl><hi rend="bold">Giacomuzzi, Renate</hi>. 2021. "Die verkehrte Welt der Literaturblogs. Zur Position freier Literatur-und Leserblogs im Feld der Literaturkritik." 
+<bibl><hi rend="bold">Giacomuzzi, Renate</hi>. 2021. "Die verkehrte Welt der Literaturblogs. Zur Position freier Literatur-und Leserblogs im Feld der Literaturkritik." 
                         <hi rend="italic">Moser, Doris/Dürr, Claudia (Hg.): Über Bücher reden. Literaturrezeption in Lesegemeinschaften, Göttingen: V&amp;R unipress</hi>: 183-198.
                     </bibl>
-                    <bibl><hi rend="bold">Hsu, Ping-Yu, Hong-Tsuen Lei, Shih-Hsiang Huang, Teng Hao Liao, Yao-Chung Lo und Chin-Chun Lo</hi>. 2019. "Effects of sentiment on recommendations in social network." 
+<bibl><hi rend="bold">Hsu, Ping-Yu, Hong-Tsuen Lei, Shih-Hsiang Huang, Teng Hao Liao, Yao-Chung Lo und Chin-Chun Lo</hi>. 2019. "Effects of sentiment on recommendations in social network." 
                         <hi rend="italic">Electronic Markets</hi>, 29, 253-262.
                     </bibl>
-                    <bibl><hi rend="bold">Kim, Yuyoung, und Min Song</hi>. 2016. "A study on analyzing sentiments on movie reviews by multi-level sentiment classifier." 
+<bibl><hi rend="bold">Kim, Yuyoung, und Min Song</hi>. 2016. "A study on analyzing sentiments on movie reviews by multi-level sentiment classifier." 
                         <hi rend="italic">Journal of intelligence and information systems</hi> 22.3: 71-89
                         <hi style="font-size:10pt">.</hi>
-                    </bibl>
-                    <bibl><hi rend="bold">Sahner, Simon</hi>. 2023. "Wie wir lesen (sollen) – Amazon, TikTok und die Literatur" 
+</bibl>
+<bibl><hi rend="bold">Sahner, Simon</hi>. 2023. "Wie wir lesen (sollen) – Amazon, TikTok und die Literatur" 
                         <hi rend="italic">54book</hi>. https://54books.de/wir-wir-lesen-sollen-amazon-tiktok-und-die-literatur/  (zugegriffen: 27. November 2024).
                     </bibl>
-                    <bibl><hi rend="bold">Stollfuß, Sven</hi>. 2023. "How to talk about books on social media: The German-language social media reviewer sphere on Instagram." 
+<bibl><hi rend="bold">Stollfuß, Sven</hi>. 2023. "How to talk about books on social media: The German-language social media reviewer sphere on Instagram." 
                         <hi rend="italic">SAGE Open</hi> 13(3)
                         <hi style="font-size:10pt">.</hi>
-                    </bibl>
-                    <bibl><hi rend="bold">TikTok Technology Limited</hi>. 2024. "Nach über 12 Millionen verkauften #BookTok Büchern in 2023: TikTok und Media Control erweitern ihr Portfolio um neue Bestsellerlisten &amp; Sticker" https://newsroom.tiktok.com/de-de/tiktok-und-media-control-neue-bestsellerlisten-und-sticker (zugegriffen: 27. November 2024).</bibl>
-                    <bibl><hi rend="bold">Zhan, Ming, Ruibo Tu, und Qin Yu</hi>. 2018. "Understanding readers: Conducting sentiment analysis of Instagram captions." 
+</bibl>
+<bibl><hi rend="bold">TikTok Technology Limited</hi>. 2024. "Nach über 12 Millionen verkauften #BookTok Büchern in 2023: TikTok und Media Control erweitern ihr Portfolio um neue Bestsellerlisten &amp; Sticker" https://newsroom.tiktok.com/de-de/tiktok-und-media-control-neue-bestsellerlisten-und-sticker (zugegriffen: 27. November 2024).</bibl>
+<bibl><hi rend="bold">Zhan, Ming, Ruibo Tu, und Qin Yu</hi>. 2018. "Understanding readers: Conducting sentiment analysis of Instagram captions." 
                         <hi rend="italic">Proceedings of the 2018 2nd International Conference on Computer Science and Artificial Intelligence</hi>: 33-40. 
                     </bibl>
-                    <bibl><hi rend="bold">Zhang, Chengzhi, Tiantian Tong, und Yi Bu</hi>. 2019. "Examining differences among book reviews from various online platforms." 
+<bibl><hi rend="bold">Zhang, Chengzhi, Tiantian Tong, und Yi Bu</hi>. 2019. "Examining differences among book reviews from various online platforms." 
                         <hi rend="italic">Online Information Review</hi> 43.7: 1169-1187.
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

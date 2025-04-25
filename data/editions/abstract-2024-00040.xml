@@ -1,383 +1,372 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xml:id="PICHLER_Axel__LLMs_for_everything___Potentiale_und_Probleme_" xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>»LLMs for everything?« Potentiale und Probleme der Anwendung von In-Context-Learning für die Computational Literary Studies</title>
-                <author>
-                    <persName>
-                        <surname>Pichler</surname>
-                        <forename>Axel</forename>
-                    </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>axel.pichler@ts.uni-stuttgart.de</email>
-                    <idno type="ORCID">0000-0002-9177-7645</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Reiter</surname>
-                        <forename>Nils</forename>
-                    </persName>
-                    <affiliation>Universität zu Köln, Deutschland</affiliation>
-                    <email>nils.reiter@uni-koeln.de</email>
-                    <idno type="ORCID">0000-0003-3193-6170</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2023-12-04T15:45:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Digital Humanities Passau</publisher>
-                <address>
-                    <addrLine>Universität Passau</addrLine>
-                    <addrLine>Innstraße 41</addrLine>
-                    <addrLine>D-94032 Passau</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Large Language Models</term>
-                    <term>In-Context-Learning</term>
-                    <term>Computational Literary Studies</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Modellierung</term>
-                    <term>Annotieren</term>
-                    <term>Theoretisierung</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <p>Große Sprachmodelle, sogenannte Large Language Models (LLMs), haben das Natural Language Processing (NLP) seit dem Aufkommen der Transformer-Architektur in den letzten Jahren revolutioniert. Spätestens seit der Veröffentlichung von ChatGPT ist das Potential dieser Modelle auch der nicht akademischen Öffentlichkeit bekannt. Ein noch nicht vollständig erklärtes Merkmal dieser Modelle ist, dass sie mit zunehmender Größe – als Schwellenwert werden hier um die 10 Milliarden Parameter genannt, – auch Problemlösungskompetenzen entwickeln, für die sie nicht trainiert wurden (Wei et. al. 2022). Zu diesen sogenannten ›Emergent Abilities‹ zählt auch eine Trainingsmethode, bei der es sich im strengen Sinne gar nicht um eine ›klassische‹ Form des Fine-Tunings handelt, da dabei keine Anpassungen der Gewichte durchgeführt werden: das In-Context-Learning (ICL, Dong et al. 2023).</p>
-            <p>Darunter versteht man die Praxis, einem LLM durch die Eingabe von natürlichsprachlich verfassten Beispielen, das in diesen Beispielen inkorporierte und implizierte ›Wissen‹ zu vermitteln.<ref n="1" target="ftn1"/> Diese Beispiele werden dann mit einer Aufgabe bzw. Frage zu einem sogenannten ›Prompt‹ zusammengeführt und dem Modell zur Vorhersage eingegeben.
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>»LLMs for everything?« Potentiale und Probleme der Anwendung von In-Context-Learning für die Computational Literary Studies</title>
+<author>
+<persName>
+<surname>Pichler</surname>
+<forename>Axel</forename>
+</persName>
+<affiliation>Universität Stuttgart, Deutschland</affiliation>
+<email>axel.pichler@ts.uni-stuttgart.de</email>
+<idno type="ORCID">0000-0002-9177-7645</idno>
+</author>
+<author>
+<persName>
+<surname>Reiter</surname>
+<forename>Nils</forename>
+</persName>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>nils.reiter@uni-koeln.de</email>
+<idno type="ORCID">0000-0003-3193-6170</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2023-12-04T15:45:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Digital Humanities Passau</publisher>
+<address>
+<addrLine>Universität Passau</addrLine>
+<addrLine>Innstraße 41</addrLine>
+<addrLine>D-94032 Passau</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/10698510</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Vortrag</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Large Language Models</term>
+<term>In-Context-Learning</term>
+<term>Computational Literary Studies</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Modellierung</term>
+<term>Annotieren</term>
+<term>Theoretisierung</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<p>Große Sprachmodelle, sogenannte Large Language Models (LLMs), haben das Natural Language Processing (NLP) seit dem Aufkommen der Transformer-Architektur in den letzten Jahren revolutioniert. Spätestens seit der Veröffentlichung von ChatGPT ist das Potential dieser Modelle auch der nicht akademischen Öffentlichkeit bekannt. Ein noch nicht vollständig erklärtes Merkmal dieser Modelle ist, dass sie mit zunehmender Größe – als Schwellenwert werden hier um die 10 Milliarden Parameter genannt, – auch Problemlösungskompetenzen entwickeln, für die sie nicht trainiert wurden (Wei et. al. 2022). Zu diesen sogenannten ›Emergent Abilities‹ zählt auch eine Trainingsmethode, bei der es sich im strengen Sinne gar nicht um eine ›klassische‹ Form des Fine-Tunings handelt, da dabei keine Anpassungen der Gewichte durchgeführt werden: das In-Context-Learning (ICL, Dong et al. 2023).</p>
+<p>Darunter versteht man die Praxis, einem LLM durch die Eingabe von natürlichsprachlich verfassten Beispielen, das in diesen Beispielen inkorporierte und implizierte ›Wissen‹ zu vermitteln.<ref n="1" target="ftn1"/> Diese Beispiele werden dann mit einer Aufgabe bzw. Frage zu einem sogenannten ›Prompt‹ zusammengeführt und dem Modell zur Vorhersage eingegeben.
             </p>
-            <figure>
-                <graphic n="1001" width="16.008175cm" height="9.49906388888889cm" url="Pictures/c857158b2560e0684caab9c733a08eb0.png" rend="inline"/>
-                <head>Abbildung 1: Das Few-Shot-Beispiel aus Brown et al. 2020 als Prompt in Vicuna-13b auf 
+<figure>
+<graphic height="9.49906388888889cm" n="1001" rend="inline" url="Pictures/c857158b2560e0684caab9c733a08eb0.png" width="16.008175cm"/>
+<head>Abbildung 1: Das Few-Shot-Beispiel aus Brown et al. 2020 als Prompt in Vicuna-13b auf 
                     <ref target="https://chat.lmsys.org">
-                        <hi rend="underline color(1155CC)">https://chat.lmsys.org</hi>
-                    </ref>
-                </head>
-            </figure>
-
-            <p>Wie bereits Brown et. al. (2020) für GPT-3 zeigten, können LLMs eine Vielzahl komplexer Aufgaben mithilfe von ICL lösen. Im Detail noch nicht geklärt sind die Gründe, warum sie das tun. Jüngere Untersuchungen lassen vermuten, dass dabei die Tatsache, dass die verwendeten Beispiele plausibel bzw. wahr für die Aufgabe sind, weniger wichtig ist, als andere Faktoren wie zum Beispiel die zugrundeliegende Verteilung der Beispiele bzw. deren Format (Min et al. 2022) oder die über die Trainingsdaten implizit vermittelten semantischen Relationen von Begriffen (Xie et al. 2021). Clavíe et. al. 2023 zeigen zum Beispiel, dass bei der binären Klassifikation der Qualifikationsvoraussetzungen für eine Stellenausschreibung große LLMs wie OpenAIs text-davinci-003-Model klassische ML-Ansätze wie SVM aber auch kleinere ›foundational models‹ wie DeBERTaV3 klar übertreffen.</p>
-            <p>Für die Digital Humanities im Allgemeinen und die Computational Literary Studies (CLS) im Besonderen ist das ICL auf den ersten Blick sehr attraktiv, da es 
+<hi rend="underline color(1155CC)">https://chat.lmsys.org</hi>
+</ref>
+</head>
+</figure>
+<p>Wie bereits Brown et. al. (2020) für GPT-3 zeigten, können LLMs eine Vielzahl komplexer Aufgaben mithilfe von ICL lösen. Im Detail noch nicht geklärt sind die Gründe, warum sie das tun. Jüngere Untersuchungen lassen vermuten, dass dabei die Tatsache, dass die verwendeten Beispiele plausibel bzw. wahr für die Aufgabe sind, weniger wichtig ist, als andere Faktoren wie zum Beispiel die zugrundeliegende Verteilung der Beispiele bzw. deren Format (Min et al. 2022) oder die über die Trainingsdaten implizit vermittelten semantischen Relationen von Begriffen (Xie et al. 2021). Clavíe et. al. 2023 zeigen zum Beispiel, dass bei der binären Klassifikation der Qualifikationsvoraussetzungen für eine Stellenausschreibung große LLMs wie OpenAIs text-davinci-003-Model klassische ML-Ansätze wie SVM aber auch kleinere ›foundational models‹ wie DeBERTaV3 klar übertreffen.</p>
+<p>Für die Digital Humanities im Allgemeinen und die Computational Literary Studies (CLS) im Besonderen ist das ICL auf den ersten Blick sehr attraktiv, da es 
                 <hi rend="italic">erstens</hi> mit natürlichsprachlich verfassten Prompts arbeitet und daher weder profunde Programmier- noch Detailkenntnisse über die Modellierungspraxis von LLMs voraussetzt. Die Tatsache, dass mit natürlichsprachlich verfassten Eingaben gearbeitet wird, legt 
                 <hi rend="italic">zweitens</hi> nahe, dass beim ICL – ohne größeren Operationalisierungs-Aufwand – die traditionellen Begriffsumgangs- und Definitionspraktiken der Geisteswissenschaften in das NLP bzw. die DH importiert werden können. 
                 <hi rend="italic">Drittens</hi> ist das ICL nicht mit dem Zeitaufwand, den bekannterweise das (manuelle) Erstellen von Trainingsdaten mit sich bringt, verbunden.
             </p>
-            <p>Wir wollen im Folgenden das Potential von ICL an einem konkreten Beispiel aus den CLS überprüfen. Dabei handelt es sich um den Versuch, die Resultate der Operationalisierung und Modellierung von generischen Aussagen aus Andrew Pipers Cambridge Element 
+<p>Wir wollen im Folgenden das Potential von ICL an einem konkreten Beispiel aus den CLS überprüfen. Dabei handelt es sich um den Versuch, die Resultate der Operationalisierung und Modellierung von generischen Aussagen aus Andrew Pipers Cambridge Element 
                 <hi rend="italic">Can We Be Wrong?</hi> aus dem Jahr 2020 zu reproduzieren bzw. zu übertreffen. Ziel von Pipers Operationalisierung und Modellierung ist es ›textempirisch‹ zu überprüfen, welche Rolle Generalisierungen in den 
                 <hi rend="italic">Literary Studies</hi> spielen. Zur Beantwortung dieser Frage entwickelt er einen Workflow, der in groben Zügen mit jener Arbeitsablaufpraxis übereinstimmt, die wir zeitgleich im Rahmen von CRETA entwickelt haben und als ›reflektierte Textanalyse‹ bezeichnen (Reiter/Pichler 2020): Ausgehend von der besagten Frage erarbeiteten Piper und sein Team eine Operationalisierung des Konzepts von ›generalisierenden Aussagen‹ und von deren Subkonzepten, erstellten im Zuge dessen ein Annotationsschema, verbesserten dieses iterativ, um abschließend darauf unterschiedliche ML-Modelle zu trainieren (Piper 2020, 17–21). Im Rahmen des Operationalisierungsprozesses gelangten Piper und sein Team zu einer Bestimmung von 
                 <hi rend="italic">generalization</hi>, die das Konzept als ein externalistisch zu validierendes linguistisches Phänomen begreift: »[G]eneralization is something that is at once linguistically legible at the statement level – it has certain criteria or qualities – and is also ambiguous. […] It depends on real-world knowledge of the generality of the terms being used with respect to some context and the definitional certainty that links subject and predicate.« (Piper 2020, 27). Der Annotations- und Modellierungsprozess gestaltete sich laut Piper wie folgt (Piper 2020, 32–34): In einem ersten Annotationslauf wurden 116 Sätze aus Artikeln, die nicht im späteren Trainingsdatensatz enthalten waren, von Piper und drei anderen Mitarbeitern des Teams annotiert und im Anschluss daran gemessen, wie Pipers Annotationen mit dem Mehrheitsvotum der anderen drei Kommentatoren übereinstimmten. Im Anschluss wurden dann von Piper an die 3500 weitere Sätze auf Basis der Annotationsrichtlinen annotiert. Diese Annotationen wurden abschließend dazu verwendet, um unterschiedliche Machine-Learning-Modelle zu trainieren. Dabei wurden die manuell noch separat annotierten Kategorien 
                 <hi rend="italic">generalization</hi> und 
                 <hi rend="italic">exemplification</hi> zu einer einzigen Kategorie zusammengefasst, da von letzteren bei der manuellen Annotation nur wenige Instanzen gefunden wurden. Es handelte sich also letztendlich um eine binäre Klassifikationsaufgabe. Wir fokussieren uns im Folgenden auf die Resultate dieser Modelle und vernachlässigen aus Platzgründen die ebenfalls höchst relevante Diskussion der Konsequenzen, die Piper aus der Anwendung dieser Modelle gezogen hat. 
             </p>
-            <p>Die von Piper und seinem Team auf den annähernd ausgeglichenen Daten trainierten Modelle erzielten F1-Scores zwischen 0.591 und 0.769 sowie Accuracy-Werte zwischen 0.638 und 0.745, wobei es sich bei dem am besten performenden Modell um ein CNN mit ELMo-Embeddings handelt, bei dem der Recall die Precision deutlich übersteigt (Piper 2020, 34). Für unsere Experimente haben wir mit OpenAIs kostenpflichtigem<ref n="2" target="ftn2"/>
-                <hi rend="italic">text-davinci-003</hi>-Model gearbeitet, das von OpenAI zum Zeitpunkt der Durchführung unsrer Experimente für diese Zwecke empfohlen wurde, und haben für dieses, nach einer kurzen Explorationsphase, 11 unterschiedliche ICL-Templates entwickelt.<ref n="3" target="ftn3"/> Diese umfassten sowohl sogenannte Zero-shot-prompts, d.i. die Eingabe der Aufgabenbeschreibung ohne Beispiele, als auch unterschiedliche Arten von Few-shot-prompts, also Eingaben, die Beispiele mit oder ohne weitere kontextuelle Informationen umfassen. Unsere mit diesen Templates erzielten Resultate bewegen sich im Mittelfeld der Resultate von Piper und seinem Team, mit dem höchsten F1-Score von 0.69 und einer Accuracy von ebenfalls 0.69 mit einem Template, dass vier Beispiele mit der Instruktion »Determine the class of the incoming sentence as 'generalization' or 'neutral' on the base of the following examples« verbindet. 
+<p>Die von Piper und seinem Team auf den annähernd ausgeglichenen Daten trainierten Modelle erzielten F1-Scores zwischen 0.591 und 0.769 sowie Accuracy-Werte zwischen 0.638 und 0.745, wobei es sich bei dem am besten performenden Modell um ein CNN mit ELMo-Embeddings handelt, bei dem der Recall die Precision deutlich übersteigt (Piper 2020, 34). Für unsere Experimente haben wir mit OpenAIs kostenpflichtigem<ref n="2" target="ftn2"/>
+<hi rend="italic">text-davinci-003</hi>-Model gearbeitet, das von OpenAI zum Zeitpunkt der Durchführung unsrer Experimente für diese Zwecke empfohlen wurde, und haben für dieses, nach einer kurzen Explorationsphase, 11 unterschiedliche ICL-Templates entwickelt.<ref n="3" target="ftn3"/> Diese umfassten sowohl sogenannte Zero-shot-prompts, d.i. die Eingabe der Aufgabenbeschreibung ohne Beispiele, als auch unterschiedliche Arten von Few-shot-prompts, also Eingaben, die Beispiele mit oder ohne weitere kontextuelle Informationen umfassen. Unsere mit diesen Templates erzielten Resultate bewegen sich im Mittelfeld der Resultate von Piper und seinem Team, mit dem höchsten F1-Score von 0.69 und einer Accuracy von ebenfalls 0.69 mit einem Template, dass vier Beispiele mit der Instruktion »Determine the class of the incoming sentence as 'generalization' or 'neutral' on the base of the following examples« verbindet. 
             </p>
-            <table rend="rules">
-                <head>Tabelle 1: Klassifikationsergebnisse in Piper (2020) und Experimente mit einem LLM</head>
-                
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">Modell</cell>
-                    <cell style="text-align: left;">F1-Score</cell>
-                    <cell style="text-align: left;">Accuracy</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;">Piper (2020)</cell>
-                    <cell style="text-align: left;">
-                        <hi rend="color(231F20)" style="font-size:10pt">cnn + ELMo</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.769</cell>
-                    <cell style="text-align: right;">0.745</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi rend="color(231F20)" style="font-size:10pt">bilstm + ELMo</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.757</cell>
-                    <cell style="text-align: right;">0.741</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi rend="color(231F20)" style="font-size:10pt">stacked bilstm + ELMo</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.750</cell>
-                    <cell style="text-align: right;">0.729</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi rend="color(231F20)" style="font-size:10pt">lstm + ELMo</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.742</cell>
-                    <cell style="text-align: right;">0.724</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">bert</cell>
-                    <cell style="text-align: right;">0.736</cell>
-                    <cell style="text-align: right;">0.703</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi rend="color(231F20)" style="font-size:10pt">cnn (GloVe)</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.696</cell>
-                    <cell style="text-align: right;">0.696</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi rend="color(231F20)" style="font-size:10pt">stacked bilstm (GloVe)</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.665</cell>
-                    <cell style="text-align: right;">0.669</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi rend="color(231F20)" style="font-size:10pt">lstm (GloVe)</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.595</cell>
-                    <cell style="text-align: right;">0.641</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi rend="color(231F20)" style="font-size:10pt">bilstm (GloVe)</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.591</cell>
-                    <cell style="text-align: right;">0.638</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;">Diese Arbeit</cell>
-                    <cell style="text-align: left;">
-                        <hi style="font-size:10pt">Eingabe des zu klassifizierenden Satzes + Aufforderung, ihn einer der beiden Kategorien zuzuordnen (zero_shot)</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.620</cell>
-                    <cell style="text-align: right;">0.644</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi style="font-size:10pt">Wie zero_shot, aber mit dem Zusatz »think step-by-step« (zero_shot_reason)</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.621</cell>
-                    <cell style="text-align: right;">0.644</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi style="font-size:10pt">Eingabe von vier Beispielen und ihrer Klassifikation + zu klassifizierender Satz (few_shot)</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.574</cell>
-                    <cell style="text-align: right;">0.481</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi style="font-size:10pt">Struktur wie few_shot, aber einschließlich der Erläuterung der Aufgabe (few_shot_inst)</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.678</cell>
-                    <cell style="text-align: right;">0.678</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi style="font-size:10pt">Struktur wie few_shot_inst, aber einschließlich der Erläuterung der Rolle des Models (few_shot_inst_role)</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.684</cell>
-                    <cell style="text-align: right;">0.686</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi style="font-size:10pt">Struktur wie few_shot_inst_role, aber einschließlich einer Beschreibung der beiden Klassen (few_shot_inst_role_exp)</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.659</cell>
-                    <cell style="text-align: right;">0.659</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi style="font-size:10pt">Struktur wie few_shot, aber andere Beispiele (few_shot_2)</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.649</cell>
-                    <cell style="text-align: right;">0.596</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi style="font-size:10pt">Struktur wie few_shot_inst, aber andere Beispiele (few_shot_inst_2)</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.691</cell>
-                    <cell style="text-align: right;">0.696</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi style="font-size:10pt">Struktur wie few_shot_inst_role, aber andere Beispiele (few_shot_inst_role_2)</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.669</cell>
-                    <cell style="text-align: right;">0.683</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;"/>
-                    <cell style="text-align: left;">
-                        <hi style="font-size:10pt">Struktur wie few_shot_inst_role_exp, aber andere Beispiele (few_shot_inst_role_exp_2)</hi>
-                    </cell>
-                    <cell style="text-align: right;">0.598</cell>
-                    <cell style="text-align: right;">0.642</cell>
-                </row>
-            </table>
-            <p>Das beste ICL-Verfahren erzielt somit eine um 5-7 Prozentpunkte niedrigere Performance als das beste von Piper beschriebene Modell. Im Gegensatz zu Beispielen aus anderen Feldern zeigt sich also hier keine wesentlich bessere Performance als bei der Arbeit mit kleineren ›foundational models‹ wie z.B. BERT. In diesem konkreten Fall erachten wir unter anderem folgende Möglichkeiten als plausible Ursachen dafür: Erstens ist die Explikation der Unterscheidung zwischen ›generalization‹ und ›neutral‹ im allgemeinen Sprachgebrauch nicht üblich – man spricht zwar von generalisierenden Aussagen, bezeichnet aber gemeinhin nicht sämtliche Aussagen, die nicht unter diese Klasse fallen als ›neutral‹. Pipers theoretisch durchweg gerechtfertigtes Klassifikationsschema wird somit vom Sprachgebrauch nicht gestützt.<ref n="4" target="ftn4"/> Folgt man Min et al. in ihrer – durchweg spekulativen – Hypothese, dass ICL umso besser funktioniert, je mehr es auf in den Trainingsdaten des LLMs bereits gegebene kategorische Differenzierungen aufbauen kann, könnte deren potentielles Fehlen in Letzteren die verhältnismäßig niedrigen Scores erklären. Zweitens besteht bei der Beispielauswahl durchweg noch Spielraum. Wir haben uns bei den Experimenten auf jene Beispiele konzentriert, die Piper selbst im Text seiner Monographie verwendet und die wir daher als exemplarisch erachteten. Wir haben jedoch weder auf bekannte Sampletechniken bei der Beispielauswahl zurückgegriffen noch die von Piper und seinem Team annotierten Daten im Detail auf ihre Repräsentativität manuell überprüft. Ob, und wenn ja welche, Performance-Gewinne derartig möglich sind, wäre zu klären. 
+<table rend="rules">
+<head>Tabelle 1: Klassifikationsergebnisse in Piper (2020) und Experimente mit einem LLM</head>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">Modell</cell>
+<cell style="text-align: left;">F1-Score</cell>
+<cell style="text-align: left;">Accuracy</cell>
+</row>
+<row>
+<cell style="text-align: left;">Piper (2020)</cell>
+<cell style="text-align: left;">
+<hi rend="color(231F20)" style="font-size:10pt">cnn + ELMo</hi>
+</cell>
+<cell style="text-align: right;">0.769</cell>
+<cell style="text-align: right;">0.745</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi rend="color(231F20)" style="font-size:10pt">bilstm + ELMo</hi>
+</cell>
+<cell style="text-align: right;">0.757</cell>
+<cell style="text-align: right;">0.741</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi rend="color(231F20)" style="font-size:10pt">stacked bilstm + ELMo</hi>
+</cell>
+<cell style="text-align: right;">0.750</cell>
+<cell style="text-align: right;">0.729</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi rend="color(231F20)" style="font-size:10pt">lstm + ELMo</hi>
+</cell>
+<cell style="text-align: right;">0.742</cell>
+<cell style="text-align: right;">0.724</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">bert</cell>
+<cell style="text-align: right;">0.736</cell>
+<cell style="text-align: right;">0.703</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi rend="color(231F20)" style="font-size:10pt">cnn (GloVe)</hi>
+</cell>
+<cell style="text-align: right;">0.696</cell>
+<cell style="text-align: right;">0.696</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi rend="color(231F20)" style="font-size:10pt">stacked bilstm (GloVe)</hi>
+</cell>
+<cell style="text-align: right;">0.665</cell>
+<cell style="text-align: right;">0.669</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi rend="color(231F20)" style="font-size:10pt">lstm (GloVe)</hi>
+</cell>
+<cell style="text-align: right;">0.595</cell>
+<cell style="text-align: right;">0.641</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi rend="color(231F20)" style="font-size:10pt">bilstm (GloVe)</hi>
+</cell>
+<cell style="text-align: right;">0.591</cell>
+<cell style="text-align: right;">0.638</cell>
+</row>
+<row>
+<cell style="text-align: left;">Diese Arbeit</cell>
+<cell style="text-align: left;">
+<hi style="font-size:10pt">Eingabe des zu klassifizierenden Satzes + Aufforderung, ihn einer der beiden Kategorien zuzuordnen (zero_shot)</hi>
+</cell>
+<cell style="text-align: right;">0.620</cell>
+<cell style="text-align: right;">0.644</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi style="font-size:10pt">Wie zero_shot, aber mit dem Zusatz »think step-by-step« (zero_shot_reason)</hi>
+</cell>
+<cell style="text-align: right;">0.621</cell>
+<cell style="text-align: right;">0.644</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi style="font-size:10pt">Eingabe von vier Beispielen und ihrer Klassifikation + zu klassifizierender Satz (few_shot)</hi>
+</cell>
+<cell style="text-align: right;">0.574</cell>
+<cell style="text-align: right;">0.481</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi style="font-size:10pt">Struktur wie few_shot, aber einschließlich der Erläuterung der Aufgabe (few_shot_inst)</hi>
+</cell>
+<cell style="text-align: right;">0.678</cell>
+<cell style="text-align: right;">0.678</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi style="font-size:10pt">Struktur wie few_shot_inst, aber einschließlich der Erläuterung der Rolle des Models (few_shot_inst_role)</hi>
+</cell>
+<cell style="text-align: right;">0.684</cell>
+<cell style="text-align: right;">0.686</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi style="font-size:10pt">Struktur wie few_shot_inst_role, aber einschließlich einer Beschreibung der beiden Klassen (few_shot_inst_role_exp)</hi>
+</cell>
+<cell style="text-align: right;">0.659</cell>
+<cell style="text-align: right;">0.659</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi style="font-size:10pt">Struktur wie few_shot, aber andere Beispiele (few_shot_2)</hi>
+</cell>
+<cell style="text-align: right;">0.649</cell>
+<cell style="text-align: right;">0.596</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi style="font-size:10pt">Struktur wie few_shot_inst, aber andere Beispiele (few_shot_inst_2)</hi>
+</cell>
+<cell style="text-align: right;">0.691</cell>
+<cell style="text-align: right;">0.696</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi style="font-size:10pt">Struktur wie few_shot_inst_role, aber andere Beispiele (few_shot_inst_role_2)</hi>
+</cell>
+<cell style="text-align: right;">0.669</cell>
+<cell style="text-align: right;">0.683</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: left;">
+<hi style="font-size:10pt">Struktur wie few_shot_inst_role_exp, aber andere Beispiele (few_shot_inst_role_exp_2)</hi>
+</cell>
+<cell style="text-align: right;">0.598</cell>
+<cell style="text-align: right;">0.642</cell>
+</row>
+</table>
+<p>Das beste ICL-Verfahren erzielt somit eine um 5-7 Prozentpunkte niedrigere Performance als das beste von Piper beschriebene Modell. Im Gegensatz zu Beispielen aus anderen Feldern zeigt sich also hier keine wesentlich bessere Performance als bei der Arbeit mit kleineren ›foundational models‹ wie z.B. BERT. In diesem konkreten Fall erachten wir unter anderem folgende Möglichkeiten als plausible Ursachen dafür: Erstens ist die Explikation der Unterscheidung zwischen ›generalization‹ und ›neutral‹ im allgemeinen Sprachgebrauch nicht üblich – man spricht zwar von generalisierenden Aussagen, bezeichnet aber gemeinhin nicht sämtliche Aussagen, die nicht unter diese Klasse fallen als ›neutral‹. Pipers theoretisch durchweg gerechtfertigtes Klassifikationsschema wird somit vom Sprachgebrauch nicht gestützt.<ref n="4" target="ftn4"/> Folgt man Min et al. in ihrer – durchweg spekulativen – Hypothese, dass ICL umso besser funktioniert, je mehr es auf in den Trainingsdaten des LLMs bereits gegebene kategorische Differenzierungen aufbauen kann, könnte deren potentielles Fehlen in Letzteren die verhältnismäßig niedrigen Scores erklären. Zweitens besteht bei der Beispielauswahl durchweg noch Spielraum. Wir haben uns bei den Experimenten auf jene Beispiele konzentriert, die Piper selbst im Text seiner Monographie verwendet und die wir daher als exemplarisch erachteten. Wir haben jedoch weder auf bekannte Sampletechniken bei der Beispielauswahl zurückgegriffen noch die von Piper und seinem Team annotierten Daten im Detail auf ihre Repräsentativität manuell überprüft. Ob, und wenn ja welche, Performance-Gewinne derartig möglich sind, wäre zu klären. 
             </p>
-            <p>Ergänzend zu diesen konkreten Fragen zur verhältnismäßig schwachen Performance von ICL in Hinblick auf Pipers Daten wollen wir auch noch auf weitere potentielle Problemfelder und offene Fragen in Hinblick auf den Einsatz von In-Context-Learning in den CLS hinweisen. Dazu zählt, erstens, die prinzipielle Gefahr, dass das ICL durch seinen Fokus auf Beispiele dazu einlädt, Begriffe undefiniert und unreflektiert zu verwenden. Wenn, wie in unserem Fall, die besten Resultate mit jenem Prompt erzielt werden, der keine Definition der verwendeten Begriffe beinhaltet, lädt dies dazu ein, auf die Bestimmung dieser Begriffe von Anfang an zu verzichten. Die problematischen Konsequenzen eines solchen Vorgehens liegen auf der Hand: Ohne die Begriffe definiert zu haben, läuft ein re-import der Resultate in den fachspezifischen Diskurs Gefahr, deren Umfang zu verunklaren, da die bloße Nennung von Beispielen unterschiedliche Interpretationen von der Extension dieser Begriffe zulassen. Eine ähnliche Gefahr besteht jedoch, zweitens, auch wenn der Begriff vor und für das ICL definiert wird, da die Mechanismen hinter selbigen noch nicht geklärt sind. Bei einem Prompt, der sich aus Definition, Instruktion und Beispiel zusammensetzt, wissen die Nutzenden nicht, welche der drei Komponenten für die Klassifikation letztendlich ausschlaggebend ist. Ob es tatsächlich die dabei verwendete Definition ist, bleibt unklar. Dies führt, drittens, zu einem weiteren prinzipiellen Problem beim Einsatz von kommerziellen LLMs, das hinlänglich bekannt ist: Kommerzielle Anbieter wie OpenAI stellen ihre Modelle nicht öffentlich zur Verfügung. Die per se bereits breit diskutierte vermeintliche Opazität von LLMs wird so noch zusätzlich verstärkt. Viertens sind LLMs wie das hier verwendete text-davinci-003-Model von OpenAI nicht deterministisch. Die Resultate sind dementsprechend nicht stabil.</p>
-            <p>In den CLS wird die Pflicht, dass man sich im Zuge des Operationalisierungs- bzw. Annotationsprozesses festlegt (welche Kategorien man wann vergibt, was diese bedeuten, wo Annotationen anfangen und aufhören, etc.) oft als Vorteil von computergestützten Verfahren gegenüber der ›traditionellen‹ Literaturwissenschaft genannt (z.B. Meister 1995), da deren Begriffe »in der Regel zu vage oder zu abstrakt [seien], als dass man sie eindeutig formalisieren könnte« (Meister 2012, 294). Die insbesondere von Harald Fricke seit mehreren Jahrzehnten propagierte Auffassung, dass literaturwissenschaftliche Begriffe ausgehend vom standardsprachlichen Gebrauch zu präzisieren seien, um durch die solcherart hergestellte Exaktheit Vagheiten und Mehrdeutigkeiten aus dem literaturwissenschaftlichen Sprachgebrauch zu tilgen (Fricke 1989), bildet zwar mittlerweile das sprachtheoretische Fundament des 
+<p>Ergänzend zu diesen konkreten Fragen zur verhältnismäßig schwachen Performance von ICL in Hinblick auf Pipers Daten wollen wir auch noch auf weitere potentielle Problemfelder und offene Fragen in Hinblick auf den Einsatz von In-Context-Learning in den CLS hinweisen. Dazu zählt, erstens, die prinzipielle Gefahr, dass das ICL durch seinen Fokus auf Beispiele dazu einlädt, Begriffe undefiniert und unreflektiert zu verwenden. Wenn, wie in unserem Fall, die besten Resultate mit jenem Prompt erzielt werden, der keine Definition der verwendeten Begriffe beinhaltet, lädt dies dazu ein, auf die Bestimmung dieser Begriffe von Anfang an zu verzichten. Die problematischen Konsequenzen eines solchen Vorgehens liegen auf der Hand: Ohne die Begriffe definiert zu haben, läuft ein re-import der Resultate in den fachspezifischen Diskurs Gefahr, deren Umfang zu verunklaren, da die bloße Nennung von Beispielen unterschiedliche Interpretationen von der Extension dieser Begriffe zulassen. Eine ähnliche Gefahr besteht jedoch, zweitens, auch wenn der Begriff vor und für das ICL definiert wird, da die Mechanismen hinter selbigen noch nicht geklärt sind. Bei einem Prompt, der sich aus Definition, Instruktion und Beispiel zusammensetzt, wissen die Nutzenden nicht, welche der drei Komponenten für die Klassifikation letztendlich ausschlaggebend ist. Ob es tatsächlich die dabei verwendete Definition ist, bleibt unklar. Dies führt, drittens, zu einem weiteren prinzipiellen Problem beim Einsatz von kommerziellen LLMs, das hinlänglich bekannt ist: Kommerzielle Anbieter wie OpenAI stellen ihre Modelle nicht öffentlich zur Verfügung. Die per se bereits breit diskutierte vermeintliche Opazität von LLMs wird so noch zusätzlich verstärkt. Viertens sind LLMs wie das hier verwendete text-davinci-003-Model von OpenAI nicht deterministisch. Die Resultate sind dementsprechend nicht stabil.</p>
+<p>In den CLS wird die Pflicht, dass man sich im Zuge des Operationalisierungs- bzw. Annotationsprozesses festlegt (welche Kategorien man wann vergibt, was diese bedeuten, wo Annotationen anfangen und aufhören, etc.) oft als Vorteil von computergestützten Verfahren gegenüber der ›traditionellen‹ Literaturwissenschaft genannt (z.B. Meister 1995), da deren Begriffe »in der Regel zu vage oder zu abstrakt [seien], als dass man sie eindeutig formalisieren könnte« (Meister 2012, 294). Die insbesondere von Harald Fricke seit mehreren Jahrzehnten propagierte Auffassung, dass literaturwissenschaftliche Begriffe ausgehend vom standardsprachlichen Gebrauch zu präzisieren seien, um durch die solcherart hergestellte Exaktheit Vagheiten und Mehrdeutigkeiten aus dem literaturwissenschaftlichen Sprachgebrauch zu tilgen (Fricke 1989), bildet zwar mittlerweile das sprachtheoretische Fundament des 
                 <hi rend="italic">Reallexikons der deutschsprachigen Literaturwissenschaft</hi>, scheint aber – wie Meisters Zitat nahelegt – die Praxis im Fach immer noch nicht zu dominieren. Mit der Verwendung von LLMs entfällt auch in den CLS diese Pflicht wieder, dementsprechend ungenau und unscharf werden potentiell abermals die Begrifflichkeiten. 
             </p>
-            <p>Für den Einsatz von ICL in den CLS bedeutet das unseres Erachtens Folgendes: Erstens sollte man, unabhängig davon auf welches Sprachmodell man bei der Textanalyse zurückgreift, die für die Analyse zentralen Begriffe definieren und – idealerweise – manuell einen Referenzdatensatz erstellen. Dies erlaubt es, auch opake Modelle auf eine Art und Weise empirisch zu verankern, die den Nachvollzug sowie die Überprüfung der Validität der Analysen erleichtert bzw. in manchen Fällen überhaupt erst ermöglicht. Zweitens sollte man, falls man sich für den Einsatz von ICL entscheidet, zuerst mit kleineren Samples arbeiten, um zu überprüfen, ob das ICL überhaupt traditionelle Verfahren übertrifft: Bei Begriffen, deren Definitionen sich vom Alltagsgebrauch unterscheiden, ist das Fine-Tuning eines 
+<p>Für den Einsatz von ICL in den CLS bedeutet das unseres Erachtens Folgendes: Erstens sollte man, unabhängig davon auf welches Sprachmodell man bei der Textanalyse zurückgreift, die für die Analyse zentralen Begriffe definieren und – idealerweise – manuell einen Referenzdatensatz erstellen. Dies erlaubt es, auch opake Modelle auf eine Art und Weise empirisch zu verankern, die den Nachvollzug sowie die Überprüfung der Validität der Analysen erleichtert bzw. in manchen Fällen überhaupt erst ermöglicht. Zweitens sollte man, falls man sich für den Einsatz von ICL entscheidet, zuerst mit kleineren Samples arbeiten, um zu überprüfen, ob das ICL überhaupt traditionelle Verfahren übertrifft: Bei Begriffen, deren Definitionen sich vom Alltagsgebrauch unterscheiden, ist das Fine-Tuning eines 
                 <hi rend="italic">pretrained Language Models</hi> (PLMs) wie BERT ggf. zielführender. Drittens sollte man die fragestellungspezifische Leistung von kommerziellen LLMs der großen Techgiganten mit derjenigen von OpenSource-Modellen vergleichen.<ref n="5" target="ftn5"/> Dies spart nicht nur Geld und Ressourcen, sondern liegt aus wissenschaftsethischen Gründen nahe, legen doch Modelle wie zurzeit zum Beispiel Stanford Alpaca<ref n="6" target="ftn6"/> oder Vicuna<ref n="7" target="ftn7"/> bei einer den kommerziellen Anbietern nahen Performance sowohl ihren Quellcode als auch Ihre Trainingsdaten offen. 
             </p>
-        </body>
-        <back>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
+<note n="1" rend="footnote text" xml:id="ftn1">
                      Durch die Verwendung der Anführungszeichen wollen wir hier darauf verweisen, dass es sich bei besagtem ›Wissen‹ unseres Erachtens nicht primär um propositionales Wissen im Sinne der Erkenntnistheorie handelt und dass LLMs nicht als rationale und damit epistemisches Wissen besitzende Agenten verstanden werden, sondern dass sie Implizites Wissen – häufig in Bezug auf den habituellen Sprachgebrauch – stochastisch reproduzieren. Zur laufendenden Debatte, wie und was LLMs ›verstehen‹, und deren primär inferentielle Semantik siehe Søgaard 2022.
                 </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
-                    
-                        <hi style="font-size:10pt" xml:space="preserve"> Die Gesamtkosten beliefen sich auf ca. 260 US-Dollar.</hi>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn3" n="3">
-                    
-                        <hi style="font-size:10pt" xml:space="preserve"> Die Daten, das Python-Skript sowie ein jupyter notebook zur eigenen Exploration finden sich auf: </hi>
-                        <ref target="https://github.com/nilsreiter/dhd2024-few-shot">
-                            <hi rend="underline color(1155CC)" style="font-size:10pt">https://github.com/nilsreiter/dhd2024-few-shot</hi>
-                        </ref>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn4" n="4">
+<note n="2" rend="footnote text" xml:id="ftn2">
+<hi style="font-size:10pt" xml:space="preserve"> Die Gesamtkosten beliefen sich auf ca. 260 US-Dollar.</hi>
+</note>
+<note n="3" rend="footnote text" xml:id="ftn3">
+<hi style="font-size:10pt" xml:space="preserve"> Die Daten, das Python-Skript sowie ein jupyter notebook zur eigenen Exploration finden sich auf: </hi>
+<ref target="https://github.com/nilsreiter/dhd2024-few-shot">
+<hi rend="underline color(1155CC)" style="font-size:10pt">https://github.com/nilsreiter/dhd2024-few-shot</hi>
+</ref>
+</note>
+<note n="4" rend="footnote text" xml:id="ftn4">
                      So lautet das erste Exemplum eines neutralen Satzes in den annotierten Daten von Piper und seinem Team: »To this end, one of the main merits of Merleau-Ponty’s framing of cinema as art is that it is not wedded to celluloid film and the oft-discussed reality effect its highly indexical-iconic images.« Die annotierten Sätze findet man hier: 
                         <ref target="https://doi.org/10.6084/m9.figshare.12669329.v1">https://doi.org/10.6084/m9.figshare.12669329.v1</ref>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn5" n="5">
+</note>
+<note n="5" rend="footnote text" xml:id="ftn5">
                      Als Ausgangspunkt eines solchen Vergleiches bietet sich die Gegenüberstellung der Score auf dem LLM Leaderboard von HuggingFace – 
                         <ref target="https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard">https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard</ref> – mit den publizierten Scores der kostenpflichtigen Modelle an. Die dort verwendeten Vergleichsmetriken sind jedoch selbst in ihrer projektspezifischen Relevanz in Hinblick auf die jeweils gegebene Fragestellung zu evaluieren.
                     
                 </note>
-<note rend="footnote text" xml:id="ftn6" n="6">
-                    
-                        <ref target="https://crfm.stanford.edu/2023/03/13/alpaca.html">
-                            <hi rend="underline color(1155CC)" style="font-size:10pt">https://crfm.stanford.edu/2023/03/13/alpaca.html</hi>
-                        </ref>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn7" n="7">
-                    
-                        <ref target="https://lmsys.org/blog/2023-03-30-vicuna/">
-                            <hi rend="underline color(1155CC)" style="font-size:10pt">https://lmsys.org/blog/2023-03-30-vicuna/</hi>
-                        </ref>
-                    
-                </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Brown, Tom B., Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, u. a.</hi> 2020. „Language Models are Few-Shot Learners“.
+<note n="6" rend="footnote text" xml:id="ftn6">
+<ref target="https://crfm.stanford.edu/2023/03/13/alpaca.html">
+<hi rend="underline color(1155CC)" style="font-size:10pt">https://crfm.stanford.edu/2023/03/13/alpaca.html</hi>
+</ref>
+</note>
+<note n="7" rend="footnote text" xml:id="ftn7">
+<ref target="https://lmsys.org/blog/2023-03-30-vicuna/">
+<hi rend="underline color(1155CC)" style="font-size:10pt">https://lmsys.org/blog/2023-03-30-vicuna/</hi>
+</ref>
+</note></div>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl><hi rend="bold">Brown, Tom B., Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, u. a.</hi> 2020. „Language Models are Few-Shot Learners“.
                         <ref target="HYPERLINK" xml:space="preserve"> </ref>
-                        <ref target="HYPERLINK">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.48550/ARXIV.2005.14165</hi>
-                        </ref>.
+<ref target="HYPERLINK">
+<hi rend="underline color(1155CC)">https://doi.org/10.48550/ARXIV.2005.14165</hi>
+</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Clavié, Benjamin, Alexandru Ciceu, Frederick Naylor, Guillaume Soulié, und Thomas Brightwell.</hi> 2023. „Large Language Models in the Workplace: A Case Study on Prompt Engineering for Job Type Classification“.
+<bibl><hi rend="bold">Clavié, Benjamin, Alexandru Ciceu, Frederick Naylor, Guillaume Soulié, und Thomas Brightwell.</hi> 2023. „Large Language Models in the Workplace: A Case Study on Prompt Engineering for Job Type Classification“.
                         <ref target="HYPERLINK" xml:space="preserve"> </ref>
-                        <ref target="HYPERLINK">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.48550/ARXIV.2303.07142</hi>
-                        </ref>.
+<ref target="HYPERLINK">
+<hi rend="underline color(1155CC)">https://doi.org/10.48550/ARXIV.2303.07142</hi>
+</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Dong, Qingxiu, Lei Li, Damai Dai, Ce Zheng, Zhiyong Wu, Baobao Chang, Xu Sun, Jingjing Xu, Lei Li, und Zhifang Sui.</hi> 2023. „A Survey on In-context Learning“.
+<bibl><hi rend="bold">Dong, Qingxiu, Lei Li, Damai Dai, Ce Zheng, Zhiyong Wu, Baobao Chang, Xu Sun, Jingjing Xu, Lei Li, und Zhifang Sui.</hi> 2023. „A Survey on In-context Learning“.
                         <ref target="HYPERLINK" xml:space="preserve"> </ref>
-                        <ref target="HYPERLINK">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.48550/ARXIV.2301.00234</hi>
-                        </ref>.
+<ref target="HYPERLINK">
+<hi rend="underline color(1155CC)">https://doi.org/10.48550/ARXIV.2301.00234</hi>
+</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Fricke, Harald.</hi> 1989. „Einführung“. In 
+<bibl><hi rend="bold">Fricke, Harald.</hi> 1989. „Einführung“. In 
                         <hi rend="italic">Zur Terminologie der Literaturwissenschaft</hi>, herausgegeben von Christian Wagenknecht, 1–9. Metzler.
                     </bibl>
-                    <bibl><hi rend="bold">Meister, Jan Christoph.</hi> 1995. Consensus ex Machina? Consensus qua Machina! Literary and Linguistic Computing, 10(4):263–270.</bibl>
-                    <bibl><hi rend="bold">Meister, Jan Christoph.</hi> 2012. „Computerphilologie vs. ,Digital Text Studies‘“. In 
+<bibl><hi rend="bold">Meister, Jan Christoph.</hi> 1995. Consensus ex Machina? Consensus qua Machina! Literary and Linguistic Computing, 10(4):263–270.</bibl>
+<bibl><hi rend="bold">Meister, Jan Christoph.</hi> 2012. „Computerphilologie vs. ,Digital Text Studies‘“. In 
                         <hi rend="italic">Literatur und Digitalisierung</hi>, herausgegeben von Christine Grond-Rigler und Wolfgang Straub, 267–96. De Gruyter.
                         <ref target="https://doi.org/10.1515/9783110237887.267" xml:space="preserve"> </ref>
-                        <ref target="https://doi.org/10.1515/9783110237887.267">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.1515/9783110237887.267</hi>
-                        </ref>.
+<ref target="https://doi.org/10.1515/9783110237887.267">
+<hi rend="underline color(1155CC)">https://doi.org/10.1515/9783110237887.267</hi>
+</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Min, Sewon, Xinxi Lyu, Ari Holtzman, Mikel Artetxe, Mike Lewis, Hannaneh Hajishirzi und Luke Zettlemoyer.</hi> 2022. „What makes In-Context-Learning work?“. 
+<bibl><hi rend="bold">Min, Sewon, Xinxi Lyu, Ari Holtzman, Mikel Artetxe, Mike Lewis, Hannaneh Hajishirzi und Luke Zettlemoyer.</hi> 2022. „What makes In-Context-Learning work?“. 
                         <ref target="HYPERLINK">
-                            <hi rend="underline color(1155CC)">https://aclanthology.org/2022.emnlp-main.759.pdf</hi>
-                        </ref>
-                    </bibl>
-                    <bibl><hi rend="bold">Pichler, Axel, und Nils Reiter.</hi> 2020. „Reflektierte Textanalyse“. In 
+<hi rend="underline color(1155CC)">https://aclanthology.org/2022.emnlp-main.759.pdf</hi>
+</ref>
+</bibl>
+<bibl><hi rend="bold">Pichler, Axel, und Nils Reiter.</hi> 2020. „Reflektierte Textanalyse“. In 
                         <hi rend="italic">Reflektierte algorithmische Textanalyse</hi>, herausgegeben von Nils Reiter, Axel Pichler, und Jonas Kuhn, 43–60. De Gruyter.
                         <ref target="HYPERLINK" xml:space="preserve"> </ref>
-                        <ref target="HYPERLINK">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.1515/9783110693973-003</hi>
-                        </ref>.
+<ref target="HYPERLINK">
+<hi rend="underline color(1155CC)">https://doi.org/10.1515/9783110693973-003</hi>
+</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Piper, Andrew.</hi> 2020. 
+<bibl><hi rend="bold">Piper, Andrew.</hi> 2020. 
                         <hi rend="italic">Can We Be Wrong? The Problem of Textual Evidence in a Time of Data</hi>. 1. Aufl. Cambridge University Press.
                         <ref target="HYPERLINK" xml:space="preserve"> </ref>
-                        <ref target="HYPERLINK">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.1017/9781108922036</hi>
-                        </ref>.
+<ref target="HYPERLINK">
+<hi rend="underline color(1155CC)">https://doi.org/10.1017/9781108922036</hi>
+</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Søgaard, Anders.</hi> 2022. „Understanding Models Understanding Language“. 
+<bibl><hi rend="bold">Søgaard, Anders.</hi> 2022. „Understanding Models Understanding Language“. 
                         <hi rend="italic">Synthese</hi> 200 (6): 443. 
                         <ref target="https://doi.org/10.1007/s11229-022-03931-4">https://doi.org/10.1007/s11229-022-03931-4</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Wei, Jason, Maarten Bosma, Vincent Y. Zhao, Kelvin Guu, Adams Wei Yu, Brian Lester, Nan Du, Andrew M. Dai, und Quoc V. Le.</hi> 2021. „Finetuned Language Models Are Zero-Shot Learners“. 
+<bibl><hi rend="bold">Wei, Jason, Maarten Bosma, Vincent Y. Zhao, Kelvin Guu, Adams Wei Yu, Brian Lester, Nan Du, Andrew M. Dai, und Quoc V. Le.</hi> 2021. „Finetuned Language Models Are Zero-Shot Learners“. 
                         <hi rend="italic">CoRR</hi> abs/2109.01652.
                         <ref target="HYPERLINK" xml:space="preserve"> </ref>
-                        <ref target="HYPERLINK">
-                            <hi rend="underline color(1155CC)">https://arxiv.org/abs/2109.01652</hi>
-                        </ref>.
+<ref target="HYPERLINK">
+<hi rend="underline color(1155CC)">https://arxiv.org/abs/2109.01652</hi>
+</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Xie, Sang Michael, Aditi Raghunathan, Percy Liang, und Tengyu Ma.</hi> 2021. „An Explanation of In-context Learning as Implicit Bayesian Inference“. 
+<bibl><hi rend="bold">Xie, Sang Michael, Aditi Raghunathan, Percy Liang, und Tengyu Ma.</hi> 2021. „An Explanation of In-context Learning as Implicit Bayesian Inference“. 
                         <ref target="https://doi.org/10.48550/ARXIV.2111.02080">https://doi.org/10.48550/ARXIV.2111.02080</ref>
-                    </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</bibl>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

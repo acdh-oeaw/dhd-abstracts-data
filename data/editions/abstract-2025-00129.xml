@@ -1,458 +1,444 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="LANG_Sabine_Digital_Provenance_Research__Eine_computerassist">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Digital Provenance Research: Eine computerassistierte Bildersuche in historischen Auktionskatalogen</title>
-                <author>
-                    <persName>
-                        <surname>Lang</surname>
-                        <forename>Sabine</forename>
-                    </persName>
-                    <affiliation>Friedrich Alexander Universität (FAU) Erlangen-Nürnberg, Deutschland</affiliation>
-                    <email>sab.lang@fau.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Zinnen</surname>
-                        <forename>Mathias</forename>
-                    </persName>
-                    <affiliation>Friedrich Alexander Universität (FAU) Erlangen-Nürnberg, Deutschland</affiliation>
-                    <email>mathias.zinnen@fau.de</email>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2023-06-13T14:32:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag: Computergestützte Analyse oder Interpretation</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Provenienzforschung</term>
-                    <term>Objekterkennung</term>
-                    <term>Image Retrieval</term>
-                    <term>Auktionskataloge</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Inhaltsanalyse</term>
-                    <term>Artefakte</term>
-                    <term>Bilder</term>
-                    <term>Methoden</term>
-                    <term>Projekte</term>
-                    <term>Forschung</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Hintergrund und Motivation</head>
-                <p>Im Dezember 1998 verpflichtete sich Deutschland mit der Verabschiedung der 
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="LANG_Sabine_Digital_Provenance_Research__Eine_computerassist" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Digital Provenance Research: Eine computerassistierte Bildersuche in historischen Auktionskatalogen</title>
+<author>
+<persName>
+<surname>Lang</surname>
+<forename>Sabine</forename>
+</persName>
+<affiliation>Friedrich Alexander Universität (FAU) Erlangen-Nürnberg, Deutschland</affiliation>
+<email>sab.lang@fau.de</email>
+</author>
+<author>
+<persName>
+<surname>Zinnen</surname>
+<forename>Mathias</forename>
+</persName>
+<affiliation>Friedrich Alexander Universität (FAU) Erlangen-Nürnberg, Deutschland</affiliation>
+<email>mathias.zinnen@fau.de</email>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2023-06-13T14:32:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943104</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Vortrag: Computergestützte Analyse oder Interpretation</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Provenienzforschung</term>
+<term>Objekterkennung</term>
+<term>Image Retrieval</term>
+<term>Auktionskataloge</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Inhaltsanalyse</term>
+<term>Artefakte</term>
+<term>Bilder</term>
+<term>Methoden</term>
+<term>Projekte</term>
+<term>Forschung</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Hintergrund und Motivation</head>
+<p>Im Dezember 1998 verpflichtete sich Deutschland mit der Verabschiedung der 
                     <hi rend="italic">Washingtoner Prinzipien</hi> (Washingtoner Prinzipien, 1998) nach Kulturgütern zu suchen, die von den Nationalsozialisten verfolgungsbedingt entzogen wurden (DZK). Seither steigt die Zahl der Museen, Bibliotheken und anderen Einrichtungen, die Provenienzforschung betreiben, stetig an. Provenienzforschung untersucht dabei die Herkunft von Objekten und beschäftigt sich mit deren Besitzer:innen und den Bedingungen des Besitzwechsel. Das Wort Provenienz geht auf das lateinische Verb 
                     <hi rend="italic">provenire</hi> (hervorkommen, herkommen, entstehen) zurück, das die Herkunft einer Sache oder Person meint (Zuschlag, 2022, 11-12). Im Rahmen deutscher Kulturpolitik fokussiert sich Provenienzforschung neben NS-Raubgut auch auf „in der Sowjetischen Besatzungszone und der DDR enteignetes oder aus kolonialen Kontexten stammendes Kulturgut“ (DZK et al., 2019, 113). Ziele der Provenienzforschung sind die lückenlose Rekonstruktion der Herkunft von Objekten und die Klärung von Besitzwechseln (DZK et al., 2019, 43), im Idealfall von der Entstehung bis zum heutigen Aufbewahrungsort. Dazu werden das Objekt untersucht, Personen und Institutionen recherchiert oder Archivalien, Literatur und Online-Datenbanken durchsucht (DZK et al., 2019, ab 43). Da durch die Digitalisierung immer mehr für die Provenienzforschung relevante Ressourcen wie Archivalien oder Geschäftsunterlagen online publiziert werden, gewinnt der Zugang über Online-Ressourcen zunehmend an Bedeutung. 
                 </p>
-                <p>Eine wichtige Quelle für die Provenienzforschung ist die Datenbank 
+<p>Eine wichtige Quelle für die Provenienzforschung ist die Datenbank 
                     <hi rend="italic">German Sales</hi>, die derzeit über 12,000 meist bebilderte Auktions- und Verkaufskataloge vorwiegend aus dem deutschsprachigen Raum aus den Jahren 1901 bis 1945 umfasst (Figure 1). Die Kataloge können im Volltext durchsucht werden (German Sales). Für die Provenienzforschung sind die Kataloge essenzielle Quellen, um nachzuvollziehen, ob ein Objekt bei einer Versteigerung angeboten wurde und eventuell den Besitzer/die Besitzerin gewechselt hat. Einige Kataloge enthalten zudem handschriftliche Annotationen zu Preisen oder Käufer:innen (Zuschlag, 2022, 92-93). Obwohl der Zugriff auf diese Informationen über die Textsuche einen großen Mehrwert darstellt, können fehlende Objektinformationen, sich verändernde Titel oder Zuschreibungen den Erfolg der Suche behindern. Eine Lösung bieten computergestützte Suchverfahren, insbesondere aus dem Bereich des maschinellen Lernens, die in der Lage sind, große Datenmengen zu verarbeiten und Regelmäßigkeiten automatisch zu finden (Bishop, 2006, 1) und auf der Basis von Bildeingaben arbeiten. Die Einreichung widmet sich daher der Frage, ob diese bildbasierten Verfahren die Suche nach Abbildungen in historischen Auktionskatalogen und damit die Provenienzforschung unterstützen können. Für die Bildersuche verwenden wir das in Figure 4 dargestellte Verfahren: Nachdem die Abbildungen in den Auktionskatalogen detektiert und ausgeschnitten wurden, werden im Anschluss deren visuelle Merkmale extrahiert und in einer Datenbank gespeichert. Diese Merkmale dienen als Grundlage für die anschließende Bildersuche. Das Verfahren wird im Methodenteil näher ausgeführt. 
                 </p>
-                <p>Dieser zusätzliche Zugang ist für die Provenienzforschung und für andere Disziplinen, die sich mit dem Kunstmarkt beschäftigen, von erheblichem Nutzen, da so eine weitere Möglichkeit geschaffen wird, mit der Füllen an Daten und Informationen umzugehen. Indem der Beitrag das Potential von 
+<p>Dieser zusätzliche Zugang ist für die Provenienzforschung und für andere Disziplinen, die sich mit dem Kunstmarkt beschäftigen, von erheblichem Nutzen, da so eine weitere Möglichkeit geschaffen wird, mit der Füllen an Daten und Informationen umzugehen. Indem der Beitrag das Potential von 
                     <hi rend="italic">Machine Learning</hi> Methoden für die Provenienzforschung deutlich macht, will er auch neue Zukunftsperspektiven für die Digital Humanities aufzeigen, in denen die Digitale Provenienzforschung einen festen Platz haben muss.<ref n="1" target="ftn1"/>
+</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Forschungsstand</head>
+<p>In den vergangenen Jahren wurden Methoden der Mustererkennung basierend auf neuronalen Netzen<ref n="2" target="ftn2"/> mit großem Erfolg für die Analyse von kunsthistorischen Daten eingesetzt. Im Vordergrund stand z.B. die Detektion von Objekten wie Autos oder Tieren in großen Kunstsammlungen (Crowley und Zisserman, 2016; Gonthier et al., 2022), die Erkennung von geruchsbezogenen Objekten (Zinnen et al., 2022), oder die Wiedererkennung von Personen (Westlake et al., 2016) und Gesichtern in Kunstwerken (Bengamra et al., 2021, Mermet et al., 2020). Auch die Optimierung der Methode und damit der Detektionsergebnisse war ein Forschungsschwerpunkt (Kadish et al., 2021; Jeon et al., 2020). Andere Arbeiten adressieren die Aufgabe, Bilder oder Bildausschnitte zu finden, um künstlerische Netzwerke oder Rezeptionsprozesse zu studieren (Seguin et al., 2016; Ufer et al., 2021, Castellano et al., 2021). Die Fülle an Arbeiten, die computergestützte Methoden zur Analyse und zum Kunstverstehen anwenden, spiegelt sich in mehreren Übersichstartikeln wider, z.B. Bengamra et al. (2024) und Castellano und Vessio (2021).
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Forschungsstand</head>
-                <p>In den vergangenen Jahren wurden Methoden der Mustererkennung basierend auf neuronalen Netzen<ref n="2" target="ftn2"/> mit großem Erfolg für die Analyse von kunsthistorischen Daten eingesetzt. Im Vordergrund stand z.B. die Detektion von Objekten wie Autos oder Tieren in großen Kunstsammlungen (Crowley und Zisserman, 2016; Gonthier et al., 2022), die Erkennung von geruchsbezogenen Objekten (Zinnen et al., 2022), oder die Wiedererkennung von Personen (Westlake et al., 2016) und Gesichtern in Kunstwerken (Bengamra et al., 2021, Mermet et al., 2020). Auch die Optimierung der Methode und damit der Detektionsergebnisse war ein Forschungsschwerpunkt (Kadish et al., 2021; Jeon et al., 2020). Andere Arbeiten adressieren die Aufgabe, Bilder oder Bildausschnitte zu finden, um künstlerische Netzwerke oder Rezeptionsprozesse zu studieren (Seguin et al., 2016; Ufer et al., 2021, Castellano et al., 2021). Die Fülle an Arbeiten, die computergestützte Methoden zur Analyse und zum Kunstverstehen anwenden, spiegelt sich in mehreren Übersichstartikeln wider, z.B. Bengamra et al. (2024) und Castellano und Vessio (2021).
-                </p>
-                <p>Computergestützte Methoden werden zudem für die Kunstmarktforschung verwendet, so untersuchen Schich et al. (2017) die Geschichte des Kunstmarktes und Dynamiken des Sammelns, um soziale oder zeitliche Netzwerke zu identifizieren. Andere widmen sich dem Londoner Kunstmarkt zwischen 1850 und 1914 auf Basis von komplementären Datensätzen und Visualisierungen (Fletcher et al., 2012) oder verwenden die Objekterkennung und 
+<p>Computergestützte Methoden werden zudem für die Kunstmarktforschung verwendet, so untersuchen Schich et al. (2017) die Geschichte des Kunstmarktes und Dynamiken des Sammelns, um soziale oder zeitliche Netzwerke zu identifizieren. Andere widmen sich dem Londoner Kunstmarkt zwischen 1850 und 1914 auf Basis von komplementären Datensätzen und Visualisierungen (Fletcher et al., 2012) oder verwenden die Objekterkennung und 
                     <hi rend="italic">Text Sequence Labeling Models</hi> für die Analyse des Layouts und Inhalts von Auktionskatalogen (Scheithauer et al., 2023.) 
                 </p>
-                <p>Die digitale Provenienzforschung in Deutschland fokussiert sich auf die Chancen und Herausforderungen der Digitalität und digitaler Methoden für die Provenienzforschung (Lang, 2023), wobei wiederholt auf die mangelhaften finanziellen und personellen Ressourcen hingewiesen wird (Sepp 2023). Rother et al. (2022) beschäftigen sich mit der Transformation von unstrukturierten Provenienzangaben in 
+<p>Die digitale Provenienzforschung in Deutschland fokussiert sich auf die Chancen und Herausforderungen der Digitalität und digitaler Methoden für die Provenienzforschung (Lang, 2023), wobei wiederholt auf die mangelhaften finanziellen und personellen Ressourcen hingewiesen wird (Sepp 2023). Rother et al. (2022) beschäftigen sich mit der Transformation von unstrukturierten Provenienzangaben in 
                     <hi rend="italic">Linked Open Data</hi> oder der computergestützten Analyse von Provenienzangaben (2023). Andere widmen sich der Kommunikation von Provenienzangaben und Forschungsergebnissen online (Haffner, 2019; Haffner, 2020). Im Herbst 2021 veröffentlichte das 
                     <hi rend="italic">Fraunhofer IPK</hi> eine Pressemitteilung über eine Machbarkeitsstudie, die untersuchte, ob computerbasierte Verfahren für die Bildersuche in Auktionskatalogen verwendet werden können (Fraunhofer IPK, 2021). Methode, Material und Ziel ähneln denen der Einreichung. Bisher sind den Autor:innen aber noch keine weiteren Informationen zur Methode bekannt.<ref n="3" target="ftn3"/>
-                </p>
-                <figure>
-                    <graphic n="1001" width="12.559861111111111cm" height="5.965658333333334cm" url="Pictures/9b8c2f6896dfabee6768fc052be40955.png" rend="inline"/>
-                    <head>Beispielhafte Katalogseiten mit Abbildungen: Sowohl Anzahl als auch Ausrichtung und Format variieren. Quelle: German Sales, 
+</p>
+<figure>
+<graphic height="5.965658333333334cm" n="1001" rend="inline" url="Pictures/9b8c2f6896dfabee6768fc052be40955.png" width="12.559861111111111cm"/>
+<head>Beispielhafte Katalogseiten mit Abbildungen: Sowohl Anzahl als auch Ausrichtung und Format variieren. Quelle: German Sales, 
                         <ref target="https://doi.org/10.11588/diglit.22671#0043">https://doi.org/10.11588/diglit.22671#0043</ref>, 
                         <ref target="https://doi.org/10.11588/diglit.22671#0029">https://doi.org/10.11588/diglit.22671#0029</ref>, 
                         <ref target="https://doi.org/10.11588/diglit.22855#0043">https://doi.org/10.11588/diglit.22855#0043</ref> (v.l.). 
                     </head>
-                </figure>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Das Material</head>
-                <p>Der von uns für die Überprüfung der Methode genutzte Datensatz wurde auf Grundlage zweier Bibliografien erstellt, die Auktions- und Verkaufskataloge in 
+</figure>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Das Material</head>
+<p>Der von uns für die Überprüfung der Methode genutzte Datensatz wurde auf Grundlage zweier Bibliografien erstellt, die Auktions- und Verkaufskataloge in 
                     <hi rend="italic">German Sales</hi> aufführen. Die Bibliografien enthalten Kataloge aus Deutschland, Österreich und der Schweiz und umfassen die Zeiträume 1930-1945 bzw. 1901-1929 (Bähr, 2013; Bommert, 2019). Insgesamt sind 8,287 Kataloge mit u.a. Angaben zu Auktionshaus, Titel, Ort/Zeit, inhaltliche Schlagworte oder Link zur Digitalausgabe gelistet.<ref n="4" target="ftn4"/> Figure 2 und Figure 3 gewähren einen Einblick in den Inhalt und die Herkunft der Kataloge; zu sehen ist eine Schlagwortwolke, die auf Basis der in den Bibliografien vergebenen Schlagworte für die Kataloge erstellt wurde. Wir sehen, dass im Besonderen Gemälde, Graphik, Kunstgewerbe, Möbel und Teppiche angeboten wurden und dass vergleichsweise viele Kataloge aus Berlin in 
                     <hi rend="italic">German Sales</hi> vorhanden sind. Prototypisch filtern wir die Kataloge nach Ort (Zürich und Bern) und Objekttyp (Gemälde). Um eine Evaluation der Bildersuche zu ermöglichen, ergänzen wir die verbleibenden 86 Kataloge um 25 weitere, die uns bekannte Bildpaare enthalten. Die momentane Datenbasis besteht demnach aus 111 Katalogen.
                 </p>
-                <figure>
-                    <graphic n="1002" width="11.055613888888889cm" height="2.9954472222222224cm" url="Pictures/bf38ebe7018c694e421d2bb2805c2cfb.png" rend="inline"/>
-                    <head>Eine Schlagwortwolke, die auf Grundlage der in den Bibliografien (Bähr, 2013; Bommert, 2019) enthaltenen Schlagworte für die Kataloge erstellt wurde.</head>
-                </figure>
-                <figure>
-                    <graphic n="1003" width="9.146938888888888cm" height="6.503277777777778cm" url="Pictures/3236c043185cc73418c41e70026f5e4e.png" rend="inline"/>
-                    <head>Ein Histogramm der Versteigerungen bzw. Anzahl der Auktionskataloge im Zeitraum 1901 bis 1945. </head>
-                </figure>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Methode und technische Details</head>
-                <p>Für die eigentliche Bildersuche benötigen wir nur die Abbildungen in dem von uns zusammengestellten Datensatz. In einem Vorverarbeitungsschritt werden deshalb die Abbildungen erst in den Katalogen erkannt und dann ausgeschnitten. Dazu erstellen wir einen Trainingsdatensatz, indem wir auf 148 Seiten der Auktionskataloge die Position abgebildeter (Kunst)Objekte manuell markieren. Mit Hilfe dieser Trainingsdaten trainieren wir ein YOLOv8 (YOLOv8) Erkennungsnetzwerk auf die Erkennung der Abbildungen. Auf einem separaten Testdatensatz erreicht dieses Netzwerk eine Mean Average Precision (mAP) von über 98%.<ref n="5" target="ftn5"/> In der Praxis bedeutet dies, dass nahezu alle abgebildeten Objekte mit hinreichender Genauigkeit erkannt werden, so dass im Detektionsschritt keine verzerrenden oder voreingenommenen Effekte zu erwarten sind und auf eine tiefergehende Analyse der Trainingsdaten und -parameter verzichten werden kann. Insgesamt werden in den 111 Katalogen 3,540 Abbildungen erkannt und extrahiert. Nach erfolgreicher Extrahierung werden die Abbildungen zudem rotiert und in Graustufen umgewandelt. Figure 4 illustriert den Prozess, den wir für die Suche nach identischen und ähnlichen Bildern in Katalogen anwenden. In der ersten Phase steht die Befüllung der Merkmalsdatenbank im Fokus: Nachdem die Abbildungen in den Auktionskatalogen zunächst detektiert und ausgeschnitten wurden, werden diese als Eingabe in das Extraktionsnetzwerk gegeben, wobei visuelle Merkmale der Abbildungen, wie z.B. Formen, Farben, Kanten oder Objekte, extrahiert, als Vektoren mit 2,048 Dimensionen weiterverarbeitet und in einer Datenbank gespeichert werden. Für die Extraktion wird ein Netzwerk mit ResNet50-Architektur (He et al., 2016) verwendet, das auf ImageNet trainiert wurde. ImageNet ist eine Datenbank mit mehr als 14 Millionen realweltlichen Bildern, die Tausende verschiedene Kategorien abdecken (ImageNet, 2021). Darüber hinaus haben wir Netzwerke ausgewertet, die auf die Erkennung von Körperhaltungen sowie die Detektion geruchsbezogener Objekte in Kunstwerken trainiert wurden – mit ähnlichen Ergebnissen. Dies bedeutet, dass das auf ImageNet trainierte Netz in unserem Fall ausreichend generalisiert, um für andere Aufgaben und auf andere Daten (z.B. Kunstwerken) angewendet werden zu können. Zukünftig wollen wir weiter untersuchen, wie sich andere Trainingsdaten und -parameter auswirken. Letztlich dienen die Merkmale der Quantifizierung und Repräsentation des Bildinhalts auf deren Grundlage in der zweiten Phase die Bildersuche stattfindet. Diese beginnt wiederum mit der Merkmalsextraktion für das Eingabebild und dessen Weiterverarbeitung als Vektor mit den bereits genannten Dimensionen; um ein dazu identisches oder ähnliches Bild zu finden, wird die Distanz zwischen den Vektoren auf Basis der Euklidischen Distanz berechnet. Dabei wird die Differenz zwischen Vektor a und b und die Länge der Geraden zwischen diesen Punkten ermittelt.
+<figure>
+<graphic height="2.9954472222222224cm" n="1002" rend="inline" url="Pictures/bf38ebe7018c694e421d2bb2805c2cfb.png" width="11.055613888888889cm"/>
+<head>Eine Schlagwortwolke, die auf Grundlage der in den Bibliografien (Bähr, 2013; Bommert, 2019) enthaltenen Schlagworte für die Kataloge erstellt wurde.</head>
+</figure>
+<figure>
+<graphic height="6.503277777777778cm" n="1003" rend="inline" url="Pictures/3236c043185cc73418c41e70026f5e4e.png" width="9.146938888888888cm"/>
+<head>Ein Histogramm der Versteigerungen bzw. Anzahl der Auktionskataloge im Zeitraum 1901 bis 1945. </head>
+</figure>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Methode und technische Details</head>
+<p>Für die eigentliche Bildersuche benötigen wir nur die Abbildungen in dem von uns zusammengestellten Datensatz. In einem Vorverarbeitungsschritt werden deshalb die Abbildungen erst in den Katalogen erkannt und dann ausgeschnitten. Dazu erstellen wir einen Trainingsdatensatz, indem wir auf 148 Seiten der Auktionskataloge die Position abgebildeter (Kunst)Objekte manuell markieren. Mit Hilfe dieser Trainingsdaten trainieren wir ein YOLOv8 (YOLOv8) Erkennungsnetzwerk auf die Erkennung der Abbildungen. Auf einem separaten Testdatensatz erreicht dieses Netzwerk eine Mean Average Precision (mAP) von über 98%.<ref n="5" target="ftn5"/> In der Praxis bedeutet dies, dass nahezu alle abgebildeten Objekte mit hinreichender Genauigkeit erkannt werden, so dass im Detektionsschritt keine verzerrenden oder voreingenommenen Effekte zu erwarten sind und auf eine tiefergehende Analyse der Trainingsdaten und -parameter verzichten werden kann. Insgesamt werden in den 111 Katalogen 3,540 Abbildungen erkannt und extrahiert. Nach erfolgreicher Extrahierung werden die Abbildungen zudem rotiert und in Graustufen umgewandelt. Figure 4 illustriert den Prozess, den wir für die Suche nach identischen und ähnlichen Bildern in Katalogen anwenden. In der ersten Phase steht die Befüllung der Merkmalsdatenbank im Fokus: Nachdem die Abbildungen in den Auktionskatalogen zunächst detektiert und ausgeschnitten wurden, werden diese als Eingabe in das Extraktionsnetzwerk gegeben, wobei visuelle Merkmale der Abbildungen, wie z.B. Formen, Farben, Kanten oder Objekte, extrahiert, als Vektoren mit 2,048 Dimensionen weiterverarbeitet und in einer Datenbank gespeichert werden. Für die Extraktion wird ein Netzwerk mit ResNet50-Architektur (He et al., 2016) verwendet, das auf ImageNet trainiert wurde. ImageNet ist eine Datenbank mit mehr als 14 Millionen realweltlichen Bildern, die Tausende verschiedene Kategorien abdecken (ImageNet, 2021). Darüber hinaus haben wir Netzwerke ausgewertet, die auf die Erkennung von Körperhaltungen sowie die Detektion geruchsbezogener Objekte in Kunstwerken trainiert wurden – mit ähnlichen Ergebnissen. Dies bedeutet, dass das auf ImageNet trainierte Netz in unserem Fall ausreichend generalisiert, um für andere Aufgaben und auf andere Daten (z.B. Kunstwerken) angewendet werden zu können. Zukünftig wollen wir weiter untersuchen, wie sich andere Trainingsdaten und -parameter auswirken. Letztlich dienen die Merkmale der Quantifizierung und Repräsentation des Bildinhalts auf deren Grundlage in der zweiten Phase die Bildersuche stattfindet. Diese beginnt wiederum mit der Merkmalsextraktion für das Eingabebild und dessen Weiterverarbeitung als Vektor mit den bereits genannten Dimensionen; um ein dazu identisches oder ähnliches Bild zu finden, wird die Distanz zwischen den Vektoren auf Basis der Euklidischen Distanz berechnet. Dabei wird die Differenz zwischen Vektor a und b und die Länge der Geraden zwischen diesen Punkten ermittelt.
                 </p>
-                <p>Schließlich wird ein Interface mit der Open Source Software Gradio (Abid et al., 2019) erstellt, sodass die Methode auch in der Praxis getestet werden kann. Das Suchbild kann entweder hochgeladen oder per 
+<p>Schließlich wird ein Interface mit der Open Source Software Gradio (Abid et al., 2019) erstellt, sodass die Methode auch in der Praxis getestet werden kann. Das Suchbild kann entweder hochgeladen oder per 
                     <hi rend="italic">drag and drop</hi> hinzugefügt werden; zudem können Nutzer:innen die Anzahl der Ergebnisse einstellen. Nach dem Auslösen der Suche werden die Ergebnisse mit Quellenangabe unter dem Eingabebild angezeigt.
                 </p>
-                <figure>
-                    <graphic n="1004" width="11.339286111111111cm" height="7.397033333333333cm" url="Pictures/b1ef8a7bc8ef0243010e7d97b869ef92.png" rend="inline"/>
-                    <head>Die Pipeline illustriert die verwendete Methode, wobei in der ersten Phase die Merkmalsdatenbank befüllt wird. In der zweiten Phase findet dann die eigentliche Suche auf Basis der Merkmalsvektoren statt. </head>
-                </figure>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Evaluation</head>
-                <p>Die von uns benannte Methode für die Aufgabe der Bildersuche in historischen Auktionskatalogen erzielt eine 
+<figure>
+<graphic height="7.397033333333333cm" n="1004" rend="inline" url="Pictures/b1ef8a7bc8ef0243010e7d97b869ef92.png" width="11.339286111111111cm"/>
+<head>Die Pipeline illustriert die verwendete Methode, wobei in der ersten Phase die Merkmalsdatenbank befüllt wird. In der zweiten Phase findet dann die eigentliche Suche auf Basis der Merkmalsvektoren statt. </head>
+</figure>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Evaluation</head>
+<p>Die von uns benannte Methode für die Aufgabe der Bildersuche in historischen Auktionskatalogen erzielt eine 
                     <hi rend="italic">Retrieval Mean Average Precision</hi> (mAP)<ref n="6" target="ftn6"/> von über 72%. Zudem wird in 74% der Auswertungspaare eine Abbildung des gesuchten Kunstwerkes als erstes Suchergebnis gefunden (Top-1 Accuracy). Figure 5 zeigt die Entwicklung von 
                     <hi rend="italic">Precision</hi> (Genauigkeitsquote) und 
                     <hi rend="italic">Recall</hi> (Vollständigkeitsquote), abhängig von der Anzahl der betrachteten Suchergebnisse (x-Achse). Dabei bezeichnet die Genauigkeit den Anteil der vorhergesagten positiven Fälle, die korrekterweise tatsächlich positive Fälle sind. Unter Recall wird dagegen der Anteil an tatsächlich positiven Fällen verstanden, die korrekt als positiv vorhergesagt wurden (Powers, 2020, 38).
                 </p>
-                <figure>
-                    <graphic n="1005" width="8.212494444444445cm" height="6.531430555555556cm" url="Pictures/73d9c8515de521707d8aa6b74a78703a.jpg" rend="inline"/>
-                    <head>
-                        <hi rend="italic">Precision</hi> und 
+<figure>
+<graphic height="6.531430555555556cm" n="1005" rend="inline" url="Pictures/73d9c8515de521707d8aa6b74a78703a.jpg" width="8.212494444444445cm"/>
+<head>
+<hi rend="italic">Precision</hi> und 
                         <hi rend="italic">Recall</hi> für die Aufgabe der Bildersuche in Auktionskatalogen. 
                     </head>
-                </figure>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Case Study</head>
-                <p>Im Juli 2020 versteigert das Auktionshaus 
+</figure>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Case Study</head>
+<p>Im Juli 2020 versteigert das Auktionshaus 
                     <hi rend="italic" xml:space="preserve">Ketterer Kunst </hi>in München das Werk 
                     <hi rend="italic">Schwester Ferdinande</hi> des Künstlers Wilhelm Trübner (1851-1917). Auf der Webseite des Hauses wird für das Werk auf die Provenienz 
                     <hi rend="italic">Auktion Rudolf Elsas</hi> hingewiesen (Ketterer Kunst, 2020). Lässt sich diese Provenienz durch unsere Methode bestätigen und dadurch auch die Anwendbarkeit der Methode? Welche zum Werk ähnliche Bilder werden uns zudem vorgeschlagen? Wir verwenden dazu die Abbildung auf der Webseite als Suchbild und starten die Suche. Das Suchergebnis (Figure 6) bestätigt die angegebene Provenienz des Werkes: Im Oktober 1931 wird es in der Auktion als 
                     <hi rend="italic">Stiftsdame</hi> unter der Losnummer 70 angeboten (Rudolf Elsas a, 1931). Das Beispiel veranschaulicht die Effizienz der Methode und die Problematik des abweichenden Titels für den Erfolg einer Textsuche. Darüber hinaus ermöglicht die Bildsuche auch die Analyse von Bildern, die von der Maschine als ähnlich erkannt wurden. Im Beispiel erscheint als zweitähnlichstes Bild zum Suchbild eine Grablegung von Lovis Corinth, die in einer Auktion von Hugo Helbing am 11. Juni 1927 unter der Losnummer 35 versteigert wurde (Hugo Helbing, 1927). Hier ist eine Ähnlichkeit nicht auf den ersten Blick erkennbar und es können nur Vermutungen angestellt werden, ob eventuell die Figurenkomposition oder stilistische Merkmale eine Rolle spielen. Zukünftig wäre es interessant, auch solche Ergebnisse zu untersuchen, die dem Suchbild auf den ersten Blick nicht ähnlich sind.
                 </p>
-                <p>Nachdem die Abbildungen der Objekte computergestützt recherchiert wurden, kann nun eine vertiefende Kontextanalyse erfolgen, die das gesamte Auktionsangebot, das Auktionshaus und das Umfeld der Auktion (z.B. Käufer:innenschaft, Berichterstattung, politische Situation) einbezieht. Trübners Porträt wurde 1931 angeboten und stammt laut Titel aus der Wohnungseinrichtung einer Villa am Jasminweg 4 (Rudolf Elsas b, 1931). Während der Name im Auktionskatalog nicht auftaucht, findet sich im Eintrag des Hauses 
+<p>Nachdem die Abbildungen der Objekte computergestützt recherchiert wurden, kann nun eine vertiefende Kontextanalyse erfolgen, die das gesamte Auktionsangebot, das Auktionshaus und das Umfeld der Auktion (z.B. Käufer:innenschaft, Berichterstattung, politische Situation) einbezieht. Trübners Porträt wurde 1931 angeboten und stammt laut Titel aus der Wohnungseinrichtung einer Villa am Jasminweg 4 (Rudolf Elsas b, 1931). Während der Name im Auktionskatalog nicht auftaucht, findet sich im Eintrag des Hauses 
                     <hi rend="italic">Ketterer Kunst</hi> der Name Alfred Dressel (Ketterer Kunst, 2020). Obwohl das Werk nicht zwischen 1933 und 1945 verkauft wurde, kann nicht ausgeschlossen werden, dass es unter Druck oder zu einem unangemessenen Preis verkauft wurde. Eine vertiefende Recherche müsste hier sowohl die Person Alfred Dressel als auch die Verkaufsbedingungen in den Blick nehmen. Das Ergebnis der Bildrecherche fügt somit nicht nur eine weitere Provenienz hinzu, sondern ermöglicht nun auch Folgeforschungen, die den historischen, politischen und kulturellen Kontext in den Blick nehmen.
                 </p>
-                <figure>
-                    <graphic n="1006" width="11.36431111111111cm" height="9.62308611111111cm" url="Pictures/c9e559c9b595f4c27831b54883deb8b7.png" rend="inline"/>
-                    <head>Die ersten zwei Suchergebnisse für Wilhelm Trübners Schwester Ferdinande (1917). 
+<figure>
+<graphic height="9.62308611111111cm" n="1006" rend="inline" url="Pictures/c9e559c9b595f4c27831b54883deb8b7.png" width="11.36431111111111cm"/>
+<head>Die ersten zwei Suchergebnisse für Wilhelm Trübners Schwester Ferdinande (1917). 
                         <lb/>Quelle: German Sales, 
                         <ref target="https://doi.org/10.11588/diglit.6212#0027">https://doi.org/10.11588/diglit.6212#0027</ref>, 
                         <ref target="https://doi.org/10.11588/diglit.48882#0095">https://doi.org/10.11588/diglit.48882#0095</ref> (v.l.).
                     </head>
-                </figure>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Schlussbemerkungen und Ausblick</head>
-                <p>Können Bildsuchverfahren bei der Suche nach Abbildungen in Auktionskatalogen helfen? Die präsentierten Resultate haben gezeigt, dass die zu Beginn gestellte Frage mit einem deutlichen Ja beantwortet werden kann. Die vorgestellte Methode umgeht das Problem fehlender oder abweichender Bildinformationen, indem anstatt einer textbasierten, eine bildbasierte Suche angewendet wird und damit nach Abbildungen in Katalogen gesucht werden kann. Obwohl nicht alle in einer Auktion angebotenen Objekte abgebildet sind, wird so ein weiterer Zugang zu den Katalogen geschaffen. Die Evaluationen und 
+</figure>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Schlussbemerkungen und Ausblick</head>
+<p>Können Bildsuchverfahren bei der Suche nach Abbildungen in Auktionskatalogen helfen? Die präsentierten Resultate haben gezeigt, dass die zu Beginn gestellte Frage mit einem deutlichen Ja beantwortet werden kann. Die vorgestellte Methode umgeht das Problem fehlender oder abweichender Bildinformationen, indem anstatt einer textbasierten, eine bildbasierte Suche angewendet wird und damit nach Abbildungen in Katalogen gesucht werden kann. Obwohl nicht alle in einer Auktion angebotenen Objekte abgebildet sind, wird so ein weiterer Zugang zu den Katalogen geschaffen. Die Evaluationen und 
                     <hi rend="italic">Case Study</hi> haben gezeigt, dass bestehende Modelle für die Objekt- und Bildersuche ohne große Anpassungen auf das historische Material angewendet werden können und sehr gute Ergebnisse liefern. Diese ermutigen zu weiteren Arbeiten: Zukünftig soll daher der Datensatz erweitert und getestet werden, ob ein 
                     <hi rend="italic">fine-tuning</hi> auf den Katalogen zu besseren Detektionsergebnissen führt und inwieweit die (Druck-)Qualität der Kataloge und Digitalisate oder eine Veränderung der Trainingsdaten die Ergebnisse beeinflussen. Es wäre außerdem spannend zu untersuchen, inwieweit CLIP<ref n="7" target="ftn7"/>-Modelle (Radford et al., 2021) multimodale Abfragen ermöglichen. Inwieweit das Verfahren auch auf dreidimensionale Objekte anwendbar ist, muss zudem untersucht werden. Die vom Fraunhofer-Institut veröffentlichte Machbarkeitsstudie deutet zumindest darauf hin, dass computergestützte Bildsuchverfahren auch auf Skulpturen etc. angewendet werden können (Fraunhofer IPK, 2021).
                 </p>
-                <p>Die vorgestellte Methode hat nicht nur das Potential die Provenienzforschung bei der Rekonstruktion der Objektherkunft zu unterstützen, sondern ermöglicht auch umfassende Analysen zu Fragen des Zeitgeschmacks, der Preisentwicklung oder Netzwerke der Käufer:innen, Einliefer:innen und Auktionshäuser. Letztlich kann die Methode auch auf andere Quellen, wie Ausstellungskataloge, angewendet werden. Obwohl die Methode also in anderen Bereichen angewendet werden kann, ist sie für die Provenienzforschung aufgrund ihrer sozialen und politischen Dimension von besonderer Bedeutung. </p>
-            </div>
-        </body>
-        <back>
+<p>Die vorgestellte Methode hat nicht nur das Potential die Provenienzforschung bei der Rekonstruktion der Objektherkunft zu unterstützen, sondern ermöglicht auch umfassende Analysen zu Fragen des Zeitgeschmacks, der Preisentwicklung oder Netzwerke der Käufer:innen, Einliefer:innen und Auktionshäuser. Letztlich kann die Methode auch auf andere Quellen, wie Ausstellungskataloge, angewendet werden. Obwohl die Methode also in anderen Bereichen angewendet werden kann, ist sie für die Provenienzforschung aufgrund ihrer sozialen und politischen Dimension von besonderer Bedeutung. </p>
+</div>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
-                        
-                            <hi style="font-size:9pt" xml:space="preserve"> Die Einreichung knüpft an ein Projekt an, das zwischen dem Lehrstuhl für Mustererkennung und dem Department Digital Humanities and Social Studies an der FAU Erlangen-Nürnberg durchgeführt und durch ein studentisches Projekt im Wintersemester 2022/23 initiiert wurde, in welchem automatisierte Bildsuchverfahren für die Bildersuche in Auktionskatalogen getestet wurden.</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
-                        
-                            <hi style="font-size:9pt" xml:space="preserve"> Neuronale Netzwerkmodelle sind Algorithmen für kognitive Aufgaben, wie Lernen, welche lose auf Konzepten basieren, die aus der Forschung zur Natur des menschlichen Gehirns stammen (Müller et al., 2012, 13).</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn3" n="3">
-                        
-                            <hi style="font-size:9pt" xml:space="preserve"> Der hier benannte Forschungsstand kann aufgrund der Platzlimitationen nur einen kleinen Einblick in das breite Anwendungsfeld digitaler Methoden auf digitale Bestände der Kunstgeschichte oder Provenienzforschung geben.</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn4" n="4">
-                        
-                            <hi style="font-size:9pt" xml:space="preserve"> Die Angaben in den Bibliografien (Bähr, 2013; Bommert, 2019) sind nicht mehr aktuell und entsprechen dem Stand von </hi>
-                            <hi rend="italic" style="font-size:9pt">German Sales</hi>
-                            <hi style="font-size:9pt" xml:space="preserve"> im Jahr 2013 bzw. 2019. </hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn5" n="5">
-                        
-                            <hi style="font-size:9pt" xml:space="preserve"> Die mAP-Metrik quantifiziert die Genauigkeit der Objekterkennung; genau verwenden wird die Common Objects in Context (COCO) mAP, siehe (Lin et al., 2014).</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn6" n="6">
-                        
-                            <hi style="font-size:9pt" xml:space="preserve"> Die </hi>
-                            <hi rend="italic" style="font-size:9pt">Retrieval mAP</hi>
-                            <hi style="font-size:9pt" xml:space="preserve"> Metrik ist eine Standardmetrik des Image Retrieval, die angibt, wie häufig sich ein gesuchtes Element unter den ersten N Ergebnissen befindet, wobei der Mittelwert der betrachteten Suchergebnisse N betrachtet wird. Für eine genauere Erklärung siehe (Datta et al., 2008).</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn7" n="7">
-                        
-                            <hi style="font-size:9pt" xml:space="preserve"> Die Abkürzung CLIP steht für Contratsive Language-Image Pretraining, wobei das neuronale Netzwerk anhand von Bild-Text-Paaren trainiert wurde (Radford et al., 2021).</hi>
-                        
-                    </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl>
-                        <hi rend="bold">Abid, Abubakar, Ali Abdalla, Ali Abid, Dawood Khan, Abdulrahman Alfozan und James Zou</hi>. 2019. ”Gradio: Hassle-free sharing and testing of ml models in the wild.” 
+<note n="1" rend="footnote text" xml:id="ftn1">
+<hi style="font-size:9pt" xml:space="preserve"> Die Einreichung knüpft an ein Projekt an, das zwischen dem Lehrstuhl für Mustererkennung und dem Department Digital Humanities and Social Studies an der FAU Erlangen-Nürnberg durchgeführt und durch ein studentisches Projekt im Wintersemester 2022/23 initiiert wurde, in welchem automatisierte Bildsuchverfahren für die Bildersuche in Auktionskatalogen getestet wurden.</hi>
+</note>
+<note n="2" rend="footnote text" xml:id="ftn2">
+<hi style="font-size:9pt" xml:space="preserve"> Neuronale Netzwerkmodelle sind Algorithmen für kognitive Aufgaben, wie Lernen, welche lose auf Konzepten basieren, die aus der Forschung zur Natur des menschlichen Gehirns stammen (Müller et al., 2012, 13).</hi>
+</note>
+<note n="3" rend="footnote text" xml:id="ftn3">
+<hi style="font-size:9pt" xml:space="preserve"> Der hier benannte Forschungsstand kann aufgrund der Platzlimitationen nur einen kleinen Einblick in das breite Anwendungsfeld digitaler Methoden auf digitale Bestände der Kunstgeschichte oder Provenienzforschung geben.</hi>
+</note>
+<note n="4" rend="footnote text" xml:id="ftn4">
+<hi style="font-size:9pt" xml:space="preserve"> Die Angaben in den Bibliografien (Bähr, 2013; Bommert, 2019) sind nicht mehr aktuell und entsprechen dem Stand von </hi>
+<hi rend="italic" style="font-size:9pt">German Sales</hi>
+<hi style="font-size:9pt" xml:space="preserve"> im Jahr 2013 bzw. 2019. </hi>
+</note>
+<note n="5" rend="footnote text" xml:id="ftn5">
+<hi style="font-size:9pt" xml:space="preserve"> Die mAP-Metrik quantifiziert die Genauigkeit der Objekterkennung; genau verwenden wird die Common Objects in Context (COCO) mAP, siehe (Lin et al., 2014).</hi>
+</note>
+<note n="6" rend="footnote text" xml:id="ftn6">
+<hi style="font-size:9pt" xml:space="preserve"> Die </hi>
+<hi rend="italic" style="font-size:9pt">Retrieval mAP</hi>
+<hi style="font-size:9pt" xml:space="preserve"> Metrik ist eine Standardmetrik des Image Retrieval, die angibt, wie häufig sich ein gesuchtes Element unter den ersten N Ergebnissen befindet, wobei der Mittelwert der betrachteten Suchergebnisse N betrachtet wird. Für eine genauere Erklärung siehe (Datta et al., 2008).</hi>
+</note>
+<note n="7" rend="footnote text" xml:id="ftn7">
+<hi style="font-size:9pt" xml:space="preserve"> Die Abkürzung CLIP steht für Contratsive Language-Image Pretraining, wobei das neuronale Netzwerk anhand von Bild-Text-Paaren trainiert wurde (Radford et al., 2021).</hi>
+</note></div>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl>
+<hi rend="bold">Abid, Abubakar, Ali Abdalla, Ali Abid, Dawood Khan, Abdulrahman Alfozan und James Zou</hi>. 2019. ”Gradio: Hassle-free sharing and testing of ml models in the wild.” 
                         <hi rend="italic">arXiv preprint arXiv:1906.02569</hi>. 
                         <ref target="https://doi.org/10.48550/arXiv.1906.02569">https://doi.org/10.48550/arXiv.1906.02569</ref>
-                        <hi rend="Hyperlink">.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Bähr, Astrid</hi>. 2013.
+<hi rend="Hyperlink">.</hi>
+</bibl>
+<bibl>
+<hi rend="bold">Bähr, Astrid</hi>. 2013.
                         <hi rend="italic">German Sales 1930–1945. Bibliographie der Auktionskataloge aus Deutschland, Österreich und der Schweiz</hi>. Hg. von Joachim Brand und Moritz Wullen. 
                         <ref target="https://doi.org/10.11588/artdok.00002251">https://doi.org/10.11588/artdok.00002251</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Bengamra, Siwar, Olfa Mzoughi, André Bigand und Ezzeddine Zagrouba</hi>. 2021. “New challenges of face detection in paintings based on deep learning.” In
+<bibl>
+<hi rend="bold">Bengamra, Siwar, Olfa Mzoughi, André Bigand und Ezzeddine Zagrouba</hi>. 2021. “New challenges of face detection in paintings based on deep learning.” In
                         <hi rend="italic">Proceedings of the 16th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications-Volume 4: VISAPP</hi>, 311-320. 
                         <ref target="https://hal.science/hal-03515438v1">https://hal.science/hal-03515438v1</ref> (zugegriffen: 20. November 2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Bengamra, Siwar, Olfa Mzoughi, André Bigand und Ezzeddine Zagrouba</hi>. 2024. ”A comprehensive survey on object detection in Visual Art: taxonomy and challenge.” 
+<bibl>
+<hi rend="bold">Bengamra, Siwar, Olfa Mzoughi, André Bigand und Ezzeddine Zagrouba</hi>. 2024. ”A comprehensive survey on object detection in Visual Art: taxonomy and challenge.” 
                         <hi rend="italic">Multimedia Tools and Applications</hi> 83(5): 14637-14670. 
                         <ref target="https://doi.org/10.1007/s11042-023-15968-9">https://doi.org/10.1007/s11042-023-15968-9</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Bishop, Christopher M</hi>. 2006.
+<bibl>
+<hi rend="bold">Bishop, Christopher M</hi>. 2006.
                         <hi rend="italic">Pattern recognition and machine learning</hi>. Vol. 4. No. 4. New York: Springer.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Bommert, Britta</hi>. 2019.
+<bibl>
+<hi rend="bold">Bommert, Britta</hi>. 2019.
                         <hi rend="italic">German Sales 1901-1929. Bibliographie der Auktionskataloge aus Deutschland, Österreich und der Schweiz</hi>. Hg. von Joachim Brand. 
                         <ref target="https://doi.org/10.11588/artdok.00006565">https://doi.org/10.11588/artdok.00006565</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Castellano, Giovanna, Eufemia Lella und Gennaro Vessio</hi>. 2021. ”Visual link retrieval and knowledge discovery in painting datasets.”
+<bibl>
+<hi rend="bold">Castellano, Giovanna, Eufemia Lella und Gennaro Vessio</hi>. 2021. ”Visual link retrieval and knowledge discovery in painting datasets.”
                         <hi rend="italic">Multimedia Tools and Applications</hi> 80: 6599-6616. 
                         <ref target="https://doi.org/10.1007/s11042-020-09995-z">https://doi.org/10.1007/s11042-020-09995-z</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Castellano, Giovanna und Gennaro Vessio</hi>. 2021. "A brief overview of deep learning approaches to pattern extraction and recognition in paintings and drawings." In 
+<bibl>
+<hi rend="bold">Castellano, Giovanna und Gennaro Vessio</hi>. 2021. "A brief overview of deep learning approaches to pattern extraction and recognition in paintings and drawings." In 
                         <hi rend="italic">International Conference on Pattern Recognition</hi>, 487-501. 
                         <ref target="https://doi.org/10.1007/978-3-030-68796-0_35">https://doi.org/10.1007/978-3-030-68796-0_35</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Crowley, Elliot J. und Andrew Zisserman</hi>. 2016. ”The art of detection.“ In 
+<bibl>
+<hi rend="bold">Crowley, Elliot J. und Andrew Zisserman</hi>. 2016. ”The art of detection.“ In 
                         <hi rend="italic">Computer Vision–ECCV 2016 Workshops: Amsterdam, The Netherlands, October 8-10 and 15-16, 2016, Proceedings, Part I 14</hi>, 721-737. 
                         <ref target="https://doi.org/10.1007/978-3-319-46604-0_50">https://doi.org/10.1007/978-3-319-46604-0_50</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Datta, Ritendra, Dhiraj Joshi, Jia Li und James Z. Wang</hi>. 2008. “Image retrieval: Ideas, influences, and trends of the new age.” 
+<bibl>
+<hi rend="bold">Datta, Ritendra, Dhiraj Joshi, Jia Li und James Z. Wang</hi>. 2008. “Image retrieval: Ideas, influences, and trends of the new age.” 
                         <hi rend="italic">ACM Computing Surveys (Csur)</hi> 40(2): 1-60. 
                         <ref target="https://doi.org/10.1145/1348246.1348248">https://doi.org/10.1145/1348246.1348248</ref>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Deutsches Zentrum Kulturgutverluste (DZK) et al</hi>. (Hg.). 2019. 
+<bibl>
+<hi rend="bold">Deutsches Zentrum Kulturgutverluste (DZK) et al</hi>. (Hg.). 2019. 
                         <hi rend="italic">Leitfaden Provenienzforschung</hi>. Berlin: Königsdruck Printmedien und digitale Dienste GmbH. 
                         <ref target="https://kulturgutverluste.de/sites/default/files/2023-04/Leitfaden-Download.pdf">https://kulturgutverluste.de/sites/default/files/2023-04/Leitfaden-Download.pdf</ref> (zugegriffen: 20. November 2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Deutsches Zentrum Kulturgutverluste (DZK)</hi>. “NS-Raubgut: Grundlagen und Übersicht.“ 
+<bibl>
+<hi rend="bold">Deutsches Zentrum Kulturgutverluste (DZK)</hi>. “NS-Raubgut: Grundlagen und Übersicht.“ 
                         <ref target="https://kulturgutverluste.de/kontexte/ns-raubgut">https://kulturgutverluste.de/kontexte/ns-raubgut</ref> (zugegriffen: 28. Juni 2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Fletcher, Pamela, Anne Helmreich, David Israel und Seth Erickson</hi>. 2012. ”Local/global: mapping nineteenth-century London’s Art Market.” 
+<bibl>
+<hi rend="bold">Fletcher, Pamela, Anne Helmreich, David Israel und Seth Erickson</hi>. 2012. ”Local/global: mapping nineteenth-century London’s Art Market.” 
                         <hi rend="italic">Nineteenth-Century Art Worldwide</hi> 11(3):1. 
                         <ref target="https://www.19thc-artworldwide.org/index.php/autumn12/fletcher-helmreich-mapping-the-london-art-market">https://www.19thc-artworldwide.org/index.php/autumn12/fletcher-helmreich-mapping-the-london-art-market</ref> (zugegriffen: 13. November 2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Fraunhofer-Institut für Produktionsanlagen und Konstruktionstechnik IPK (Fraunhofer IPK) (Hg.)</hi>. 2021. “Zum Ersten, zum Zweiten, zum Dritten- gefunden!“ 
+<bibl>
+<hi rend="bold">Fraunhofer-Institut für Produktionsanlagen und Konstruktionstechnik IPK (Fraunhofer IPK) (Hg.)</hi>. 2021. “Zum Ersten, zum Zweiten, zum Dritten- gefunden!“ 
                         <hi rend="italic" xml:space="preserve">Futur: Vision, Innovation, Realisierungen; Mitteilungen aus dem Produktionstechnischen Zentrum (PTZ), Berlin </hi>2, 42-45. 
                         <ref target="https://www.ipk.fraunhofer.de/de/medien/futur/futur-2021-2/zum-ersten-zum-zweiten-zum-dritten-gefunden.html">https://www.ipk.fraunhofer.de/de/medien/futur/futur-2021-2/zum-ersten-zum-zweiten-zum-dritten-gefunden.html</ref> (zugegriffen: 29. Juni 2024). 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">German Sales</hi>.
+<bibl>
+<hi rend="bold">German Sales</hi>.
                         <ref target="https://www.arthistoricum.net/themen/portale/german-sales">https://www.arthistoricum.net/themen/portale/german-sales</ref> (zugegriffen: 28. Juni 2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Gonthier, Nicolas, Saïd Ladjal und Yann Gousseau</hi>. 2022. ”Multiple instance learning on deep features for weakly supervised object detection with extreme domain shifts.” 
+<bibl>
+<hi rend="bold">Gonthier, Nicolas, Saïd Ladjal und Yann Gousseau</hi>. 2022. ”Multiple instance learning on deep features for weakly supervised object detection with extreme domain shifts.” 
                         <hi rend="italic">Computer Vision and Image Understanding</hi> 214: 103299. 
                         <ref target="https://doi.org/10.1016/j.cviu.2021.103299">https://doi.org/10.1016/j.cviu.2021.103299</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Haffner, Dorothee</hi>. 2019. ”Provenienzforschung digital vernetzt. Ergebnisse sichtbar machen.“ 
+<bibl>
+<hi rend="bold">Haffner, Dorothee</hi>. 2019. ”Provenienzforschung digital vernetzt. Ergebnisse sichtbar machen.“ 
                         <hi rend="italic">Museumskunde</hi> 84: 90-97. 
                         <ref target="https://www.museumsbund.de/wp-content/uploads/2022/07/museumskunde-2019-1-online.pdf">https://www.museumsbund.de/wp-content/uploads/2022/07/museumskunde-2019-1-online.pdf</ref> (zugegriffen: 12. Juli 2024). 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Haffner, Dorothee</hi>. 2020. “Provenienzen in Sammlungsdatenbanken. Digitale und virtuelle Chancen für die Vermittlung.“ In 
+<bibl>
+<hi rend="bold">Haffner, Dorothee</hi>. 2020. “Provenienzen in Sammlungsdatenbanken. Digitale und virtuelle Chancen für die Vermittlung.“ In 
                         <hi rend="italic" xml:space="preserve">Provenienz &amp; Forschung. Digitale Provenienzforschung, </hi>hg. vom Deutschen Zentrum Kulturgutverluste, 36-42. Dresden: Sandstein Verlag. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">He, Kaiming, Xiangyu Zhang, Shaoqing Ren und Jian Sun</hi>. 2016. ”Deep residual learning for image recognition.” In
+<bibl>
+<hi rend="bold">He, Kaiming, Xiangyu Zhang, Shaoqing Ren und Jian Sun</hi>. 2016. ”Deep residual learning for image recognition.” In
                         <hi rend="italic">Proceedings of the IEEE on computer vision and pattern recognition</hi>, 770-778. 
                         <ref target="https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html">https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html</ref> (zugegriffen: 19. Juli 2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Hugo Helbing</hi> (Hg.). München 1927. “Ölgemälde, Aquarelle und Handzeichnungen moderner Meister aus dem Besitze eines süddeutschen Kunstfreundes und aus anderem Besitz.“ Auktion in der Galerie Hugo Helbing, München, 11. Juni 1927. 
+<bibl>
+<hi rend="bold">Hugo Helbing</hi> (Hg.). München 1927. “Ölgemälde, Aquarelle und Handzeichnungen moderner Meister aus dem Besitze eines süddeutschen Kunstfreundes und aus anderem Besitz.“ Auktion in der Galerie Hugo Helbing, München, 11. Juni 1927. 
                         <ref target="https://doi.org/10.11588/diglit.48882">https://doi.org/10.11588/diglit.48882</ref>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">ImageNet</hi>. Letztes Update am 11. März 2021. 
+<bibl>
+<hi rend="bold">ImageNet</hi>. Letztes Update am 11. März 2021. 
                         <ref target="https://www.image-net.org/index.php">https://www.image-net.org/index.php</ref> (zugegriffen: 19. November 2024). 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Jeon, Hyeong-Ju, Soonchul Jung, Yoon-Seok Choi, Jae Woo Kim und Jin Seo Kim</hi>. 2020. "Object Detection in Artworks Using Data Augmentation." In 
+<bibl>
+<hi rend="bold">Jeon, Hyeong-Ju, Soonchul Jung, Yoon-Seok Choi, Jae Woo Kim und Jin Seo Kim</hi>. 2020. "Object Detection in Artworks Using Data Augmentation." In 
                         <hi rend="italic">2020 International Conference on Information and Communication Technology Convergence (ICTC), Jeju, Korea (South),</hi> 1312-1314. 
                         <ref target="https://doi.org/10.1109/ICTC49870.2020.9289321">https://doi.org/10.1109/ICTC49870.2020.9289321</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Kadish, David, Sebastian Risi und Anders Sundnes Løvlie</hi>. 2021. "Improving Object Detection in Art Images Using Only Style Transfer." In 
+<bibl>
+<hi rend="bold">Kadish, David, Sebastian Risi und Anders Sundnes Løvlie</hi>. 2021. "Improving Object Detection in Art Images Using Only Style Transfer." In 
                         <hi rend="italic">2021 International Joint Conference on Neural Networks (IJCNN), Shenzhen, China,</hi> 1-8. 
                         <ref target="https://doi.org/10.1109/IJCNN52387.2021.9534264">https://doi.org/10.1109/IJCNN52387.2021.9534264</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Ketterer Kunst</hi>. 2020. Wilhelm Trübners “Schwester Ferdinande“ (1917), versteigert in der Auktion “Kunst des 19. Jahrhunderts“ am 18. Juli 2020, Los 553. 
+<bibl>
+<hi rend="bold">Ketterer Kunst</hi>. 2020. Wilhelm Trübners “Schwester Ferdinande“ (1917), versteigert in der Auktion “Kunst des 19. Jahrhunderts“ am 18. Juli 2020, Los 553. 
                         <ref target="https://www.kettererkunst.de/kunst/kd/details.php?obnr=120001848&amp;anummer=498">https://www.kettererkunst.de/kunst/kd/details.php?obnr=120001848&amp;anummer=498</ref> (zugegriffen: 13. November 2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Lang, Sabine</hi>. 2023. “Wie hat sich Provenienzforschung durch Digitalität verändert?“ 
+<bibl>
+<hi rend="bold">Lang, Sabine</hi>. 2023. “Wie hat sich Provenienzforschung durch Digitalität verändert?“ 
                         <hi rend="italic">RETOUR-Freier Blog für Provenienzforschende</hi>, veröffentlicht am 7. August 2023, 
                         <ref target="https://retour.hypotheses.org/2916">https://retour.hypotheses.org/2916</ref>
-                        <hi rend="Hyperlink">(zugegriffen: 18. Juli 2024.)</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Lin, Tsung-Yi, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva Ramanan, Piotr Dollár und C. Lawrence Zitnick</hi>. 2014. ”Microsoft coco: Common objects in context.” In 
+<hi rend="Hyperlink">(zugegriffen: 18. Juli 2024.)</hi>
+</bibl>
+<bibl>
+<hi rend="bold">Lin, Tsung-Yi, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva Ramanan, Piotr Dollár und C. Lawrence Zitnick</hi>. 2014. ”Microsoft coco: Common objects in context.” In 
                         <hi rend="italic">Computer Vision–ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13</hi>, 740-755. 
                         <ref target="https://doi.org/10.1007/978-3-319-10602-1_48">https://doi.org/10.1007/978-3-319-10602-1_48</ref>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Mermet, Alexis, Asanobu Kitamoto, Chikahiko Suzuki und Akira Takagishi</hi>. 2020. ”Face Detection on Pre-modern Japanese Artworks using R-CNN and Image Patching for Semi-Automatic Annotation.” In 
+<bibl>
+<hi rend="bold">Mermet, Alexis, Asanobu Kitamoto, Chikahiko Suzuki und Akira Takagishi</hi>. 2020. ”Face Detection on Pre-modern Japanese Artworks using R-CNN and Image Patching for Semi-Automatic Annotation.” In 
                         <hi rend="italic">Proceedings of the 2nd Workshop on Structuring and Understanding of Multimedia heritAge Contents (SUMAC'20). Association for Computing Machinery, New York, NY, USA 2020</hi>, 23–31. DOI: 
                         <ref target="https://doi.org/10.1145/3423323.3423412">
-                            <hi rend="underline">10.1145/3423323.3423412</hi>
-                        </ref>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Müller, Berndt, Joachim Reinhardt und Michael T. Strickland</hi>. 2012.
+<hi rend="underline">10.1145/3423323.3423412</hi>
+</ref>
+</bibl>
+<bibl>
+<hi rend="bold">Müller, Berndt, Joachim Reinhardt und Michael T. Strickland</hi>. 2012.
                         <hi rend="apple-converted-space"> </hi>
-                        <hi rend="italic" xml:space="preserve">Neural networks: an introduction. </hi>Berlin: Springer Science &amp; Business Media.
+<hi rend="italic" xml:space="preserve">Neural networks: an introduction. </hi>Berlin: Springer Science &amp; Business Media.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Powers, David MW</hi>. 2020. "Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation."
+<bibl>
+<hi rend="bold">Powers, David MW</hi>. 2020. "Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation."
                         <hi rend="italic">arXiv preprint arXiv:2010.16061</hi>
-                        <ref target="https://doi.org/10.48550/arXiv.2010.16061">https://doi.org/10.48550/arXiv.2010.16061</ref>
-                        <hi rend="Hyperlink">.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Radford, Alec, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal et al</hi>. 2021. ”Learning Transferable Visual Models from Natural Language Supervision.” In 
+<ref target="https://doi.org/10.48550/arXiv.2010.16061">https://doi.org/10.48550/arXiv.2010.16061</ref>
+<hi rend="Hyperlink">.</hi>
+</bibl>
+<bibl>
+<hi rend="bold">Radford, Alec, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal et al</hi>. 2021. ”Learning Transferable Visual Models from Natural Language Supervision.” In 
                         <hi rend="italic">Proceedings of the 38th International Conference on Machine Learning, PMLR. 2021</hi>, 8748-8763. 
                         <ref target="http://proceedings.mlr.press/v139/radford21a">http://proceedings.mlr.press/v139/radford21a</ref> (zugegriffen: 13. November 2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Rother, Lynn, Fabio Mariani und Max Koss</hi>. 2022. ”Taking Care of History: Toward a Politics of Provenance Linked Open Data in Museums.” In 
+<bibl>
+<hi rend="bold">Rother, Lynn, Fabio Mariani und Max Koss</hi>. 2022. ”Taking Care of History: Toward a Politics of Provenance Linked Open Data in Museums.” In 
                         <hi rend="italic">Perspectives on Data</hi>, hg. von Emily Lew Fry und Erin Canning. Chicago: Art Institute of Chicago. 
                         <ref target="https://doi.org/10.53269/9780865593152/06">https://doi.org/10.53269/9780865593152/06</ref>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Rother, Lynn, Fabio Mariani und Max Koss</hi>. 2023. ”Hidden Value: Provenance as a Source for Economic and Social History.” 
+<bibl>
+<hi rend="bold">Rother, Lynn, Fabio Mariani und Max Koss</hi>. 2023. ”Hidden Value: Provenance as a Source for Economic and Social History.” 
                         <hi rend="italic">Jahrbuch für Wirtschaftsgeschichte/Economic History Yearbook</hi> 64(1): 111-142. 
                         <ref target="https://doi.org/10.1515/jbwg-2023-0005">https://doi.org/10.1515/jbwg-2023-0005</ref>
-                        <hi rend="Hyperlink">.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Rudolf Elsas, Kunstauktionshaus (Rudolf Elsas a)</hi> (Hg.). Berlin 1931. “Wohnungs-Einrichtung der Villa Jasminweg 4 (Westend).“ Versteigerung: Dienstag, den 13. Oktober 1931, Mittwoch, den 14. Oktober 1931. 
+<hi rend="Hyperlink">.</hi>
+</bibl>
+<bibl>
+<hi rend="bold">Rudolf Elsas, Kunstauktionshaus (Rudolf Elsas a)</hi> (Hg.). Berlin 1931. “Wohnungs-Einrichtung der Villa Jasminweg 4 (Westend).“ Versteigerung: Dienstag, den 13. Oktober 1931, Mittwoch, den 14. Oktober 1931. 
                         <ref target="https://doi.org/10.11588/diglit.6212#0011">https://doi.org/10.11588/diglit.6212#0011</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Rudolf Elsas, Kunstauktionshaus (Rudolf Elsas b)</hi> (Hg.). Berlin 1931. “Wohnungs-Einrichtung der Villa Jasminweg 4 (Westend).“ Versteigerung: Dienstag, den 13. Oktober 1931, Mittwoch, den 14. Oktober 1931. 
+<bibl>
+<hi rend="bold">Rudolf Elsas, Kunstauktionshaus (Rudolf Elsas b)</hi> (Hg.). Berlin 1931. “Wohnungs-Einrichtung der Villa Jasminweg 4 (Westend).“ Versteigerung: Dienstag, den 13. Oktober 1931, Mittwoch, den 14. Oktober 1931. 
                         <ref target="https://doi.org/10.11588/diglit.6212">https://doi.org/10.11588/diglit.6212</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Scheithauer, Hugo, Sarah Bénière und Laurent Romary</hi>. 2024. ”Automatic retro-structuration of auction sales catalogs layout and content.” In 
+<bibl>
+<hi rend="bold">Scheithauer, Hugo, Sarah Bénière und Laurent Romary</hi>. 2024. ”Automatic retro-structuration of auction sales catalogs layout and content.” In 
                         <hi rend="italic" xml:space="preserve">DH2024 - Reinvention and Responsibility, Alliance of Digital Humanities Organizations. Washington DC, United States 2024. </hi>
-                        <ref target="https://hal.science/hal-04547239v1">https://hal.science/hal-04547239v1</ref> (zugegriffen: 13. November 2024
+<ref target="https://hal.science/hal-04547239v1">https://hal.science/hal-04547239v1</ref> (zugegriffen: 13. November 2024
                         <hi rend="italic">).</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Schich, Maximilian, Christian Huemer, Piotr Adamczyk, Lev Manovich und Yang-Yu Liu</hi>. 2017. “Network dimensions in the getty provenance index.”
+</bibl>
+<bibl>
+<hi rend="bold">Schich, Maximilian, Christian Huemer, Piotr Adamczyk, Lev Manovich und Yang-Yu Liu</hi>. 2017. “Network dimensions in the getty provenance index.”
                         <hi rend="italic">arXiv preprint arXiv:1706.02804.</hi>
-                        <ref target="https://doi.org/10.48550/arXiv.1706.02804">https://doi.org/10.48550/arXiv.1706.02804</ref>. 
+<ref target="https://doi.org/10.48550/arXiv.1706.02804">https://doi.org/10.48550/arXiv.1706.02804</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Seguin, Benoit, Carlotta Striolo, Isabella diLenardo und Frederic Kaplan</hi>. 2016. ”Visual link retrieval in a database of paintings.” In
+<bibl>
+<hi rend="bold">Seguin, Benoit, Carlotta Striolo, Isabella diLenardo und Frederic Kaplan</hi>. 2016. ”Visual link retrieval in a database of paintings.” In
                         <hi rend="italic">Computer Vision–ECCV 2016 Workshops: Amsterdam, The Netherlands, October 8-10 and 15-16, 2016, Proceedings, Part I 14,</hi>
-                        <ref target="https://doi.org/10.1007/978-3-319-46604-0_52">https://doi.org/10.1007/978-3-319-46604-0_52</ref>.
+<ref target="https://doi.org/10.1007/978-3-319-46604-0_52">https://doi.org/10.1007/978-3-319-46604-0_52</ref>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Sepp, Theresa</hi>. 2023. “Bedingt gute Rahmenbedingungen. Zur digitalen Provenienzforschung.“ Kunstchronik 76(7): 363-370. 
+<bibl>
+<hi rend="bold">Sepp, Theresa</hi>. 2023. “Bedingt gute Rahmenbedingungen. Zur digitalen Provenienzforschung.“ Kunstchronik 76(7): 363-370. 
                         <ref target="https://doi.org/10.11588/kc.2023.7.102131">https://doi.org/10.11588/kc.2023.7.102131</ref>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Ufer, Nikolai, Max Simon, Sabine Lang und Björn Ommer</hi>. 2021. “Large-scale interactive retrieval in art collections using multi-style feature aggregation.”
+</bibl>
+<bibl>
+<hi rend="bold">Ufer, Nikolai, Max Simon, Sabine Lang und Björn Ommer</hi>. 2021. “Large-scale interactive retrieval in art collections using multi-style feature aggregation.”
                         <hi rend="italic">PloS one</hi> 16(11): e0259718. 
                         <ref target="https://doi.org/10.1371/journal.pone.0259718">https://doi.org/10.1371/journal.pone.0259718</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Washingtoner Prinzipien</hi>. 1998. “Grundsätze der Washingtoner Konferenz in Bezug auf Kunstwerke, die von den Nationalsozialisten beschlagnahmt wurden (Washingtoner Principles).“ 
+<bibl>
+<hi rend="bold">Washingtoner Prinzipien</hi>. 1998. “Grundsätze der Washingtoner Konferenz in Bezug auf Kunstwerke, die von den Nationalsozialisten beschlagnahmt wurden (Washingtoner Principles).“ 
                         <ref target="https://kulturgutverluste.de/sites/default/files/2023-04/Washingtoner-Prinzipien.pdf">https://kulturgutverluste.de/sites/default/files/2023-04/Washingtoner-Prinzipien.pdf</ref> (zugegriffen: 28. Juni 2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Westlake, Nicholas, Hongping Cai und Peter Hall</hi>. 2016. ”Detecting people in artwork with CNNs.” In
+<bibl>
+<hi rend="bold">Westlake, Nicholas, Hongping Cai und Peter Hall</hi>. 2016. ”Detecting people in artwork with CNNs.” In
                         <hi rend="italic">Computer Vision–ECCV 2016 Workshops: Amsterdam, The Netherlands, October 8-10 and 15-16, 2016, Proceedings, Part I 14</hi>, 825-841. 
                         <ref target="https://doi.org/10.1007/978-3-319-46604-0_57">https://doi.org/10.1007/978-3-319-46604-0_57</ref>. 
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">YOLOv8</hi>. “Explore Ultralytics YOLOv8.“ 
+<bibl>
+<hi rend="bold">YOLOv8</hi>. “Explore Ultralytics YOLOv8.“ 
                         <ref target="https://yolov8.com">https://yolov8.com</ref> (zugegriffen: 19. Juli 2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Zinnen, Mathias, Prathmesh Madhu, Peter Bell, Andreas Maier und Vincent Christlein</hi>. 2022. ”Transfer Learning for Olfactory Object Detection.” In 
+<bibl>
+<hi rend="bold">Zinnen, Mathias, Prathmesh Madhu, Peter Bell, Andreas Maier und Vincent Christlein</hi>. 2022. ”Transfer Learning for Olfactory Object Detection.” In 
                         <hi rend="italic">Digital Humanities Conference Abstracts</hi>, 409–413. DOI: 
                         <ref target="https://doi.org/10.48550/arXiv.2301.09906">
-                            <hi rend="underline">10.48550/arXiv.2301.09906</hi>
-                        </ref>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Zuschlag, Christoph</hi>. 2022. 
+<hi rend="underline">10.48550/arXiv.2301.09906</hi>
+</ref>
+</bibl>
+<bibl>
+<hi rend="bold">Zuschlag, Christoph</hi>. 2022. 
                         <hi rend="italic" xml:space="preserve">Einführung in die Provenienzforschung: Wie die Herkunft von Kulturgut entschlüsselt wird. </hi>München: C.H. Beck.
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

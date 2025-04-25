@@ -1,190 +1,190 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="SCHELBERT_Georg_Die__De__und_Re__Konstruktion_der_Photothek">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="full">
-                    <title type="main">Die (De- und Re-)Konstruktion der Photothek</title>
-                    <title type="sub">Erschließungsstrategien am Zentralinstitut für Kunstgeschichte</title>
-                </title>
-                <author>
-                    <persName>
-                        <surname>Griebel</surname>
-                        <forename>Johannes</forename>
-                    </persName>
-                    <affiliation>Zentralinstitut für Kunstgeschichte München, Deutschland</affiliation>
-                    <email>j.griebel@zikg.eu</email>
-                    <idno type="ORCID">0000-0002-9373-6759</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Raddatz</surname>
-                        <forename>Nadine</forename>
-                    </persName>
-                    <affiliation>Zentralinstitut für Kunstgeschichte München, Deutschland</affiliation>
-                    <email>n.raddatz@zikg.eu</email>
-                    <idno type="ORCID">0009-0001-2533-4029</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Schelbert</surname>
-                        <forename>Georg</forename>
-                    </persName>
-                    <affiliation>Zentralinstitut für Kunstgeschichte München, Deutschland</affiliation>
-                    <email>g.schelbert@zikg.eu</email>
-                    <idno type="ORCID">0000-0002-7314-8589</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-12-02T08:08:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Poster</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Bildarchiv</term>
-                    <term>Datenmodellierung</term>
-                    <term>Datenextraktion</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Datenerkennung</term>
-                    <term>Bilderfassung</term>
-                    <term>Modellierung</term>
-                    <term>Kontextsetzung</term>
-                    <term>Bereinigung</term>
-                    <term>Bilder</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ausgangslage: Die kunsthistorische Photothek</head>
-                <p style="text-align: left; ">Das Zentralinstitut für Kunstgeschichte (ZI) ist ein führendes außeruniversitäres kunsthistorisches Forschungsinstitut. Seit seiner Gründung im Jahr 1947 hat es eine umfangreiche Photothek aufgebaut, die heute mehr als 1 Million Einheiten umfasst. Sie besteht zum Großteil aus Schwarzweiß-Abzügen, daneben sind auch andere Bildträger, wie etwa Diapositive oder Negative, vorhanden (Peters 2022). Diese Fotoobjekte, die als Medienobjekte mit Bild-, Material- und Schriftbestandteilen aufzufassen sind (Caraffa 2018), dokumentieren die europäische Kunstgeschichte in seltener Vollständigkeit, ebenso wie die Fachgeschichte in einzelnen Bereichen. Sie sind, wie in einem analogen Archiv unvermeidlich, in einer starren Ordnung aufgestellt, die einer fachlichen Klassifikation entspricht, die aus verschiedenen Persrspektiven zu hinterfragen ist (Huth 2024). So ging etwa verloren, dass sich die Sammlung aus Nachlässen von renommierten Forscher:innen und Dokumentarfotograf:innen sowie aus Übernahmen von Verlagsarchiven zusammensetzt, da diese durch Einordnung in die Sammlungssystematik aufgelöst wurden.</p>
-                <p style="text-align: left; ">Fast die Hälfte der Bestände wurde in den letzten Jahrzehnten bereits digitalisiert. Für wiederum etwa ein Drittel hiervon wurden Metadaten in mittlerer Erschließungstiefe angelegt.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Aufgabenstellung und Ziele: Kritische Datafizierung</head>
-                <p style="text-align: left; ">Der Zugang zu einer analogen Sammlung sollte heute primär im digitalen Format erfolgen (Schelbert 2022a), da sich auch die kunsthistorische Forschung zunehmend auf digitalisierte Quellen und digitalen Austausch stützt. Darüber hinaus wird sowohl eine langfristige und maschinenlesbare, als auch eine interdisziplinäre Nachnutzung von Daten gefordert – ein Ziel, das nur durch eine umfassende Datafizierung des Bildarchivs erreicht werden kann.</p>
-                <p style="text-align: left; ">Jede digitale Repräsentation kulturhistorischer Gegenstände – sowohl die Digitalisate als auch die sog. Metadaten umfassend – stellt eine Interpretation derselben dar. In der Photothek des ZI werden historische Ordnungen (Schelbert 2022b), Beschriftungen, Stempel etc. als “Spuren der Praktiken der Sinnstiftung” ernst genommen. Aus diesem Bewusstsein heraus sollen bestehende Systematiken im digitalen Raum dekonstruiert und ein multiperspektivischer, kritischer Zugang ermöglicht werden, in dem neue Zusammenhänge rekonstruiert werden können. So werden u.a. Angaben zu Provenienzen der Fotografien und der abgebildeten Werke, oder zu fotografischen und technischen Merkmalen der Sammlungsobjekte auswertbar. Vormalige Sammlungszusammenhänge, z.B. in Nachlässen, können wieder zusammengeführt und wichtige fachliche Themen, wie sammlungs-, institutions- und forschungsgeschichtliche Fragen aus den Daten heraus entwickelt werden.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Vorgehen: Multimodale Einzelschritte im Gesamtkonzept</head>
-                <p style="text-align: left; ">Die Grundlagen für die Lösung dieser Aufgaben werden im Projekt kunst.bild.daten – gefördert von Dezember 2023 bis Juli 2026 vom Bayerischen Staatsministerium für Wissenschaft und Kunst – gelegt. Im Rahmen dieses Projekts werden bestehende Daten, vor allem aus der Abteilung Architekturtopographie Deutschland und dem Farbdiaarchiv zur Wand- und Deckenmalerei (Klingen 2006) zusammengeführt, Infrastrukturen wie Bilderserver eingerichtet und Restrukturierungen der bestehenden und neu generierten Daten durchgeführt. Durch die Erzeugung und Sicherung strukturierter Daten, bei der zunächst keine Festlegung auf den Einsatz einer bestimmten Software erfolgt, die jedoch differenzierte Aussagen zu Entstehung, Provenienz und weiteren Bezügen dokumentieren, bleibt die Möglichkeit des Anschlusses an standardisierte fachspezifische Katalogisierungsschemata (LiDO, CIDOC CRM) explizit gewahrt.</p>
-                <p style="text-align: left; ">Die auf dem Poster dargestellten Arbeitsschritte beziehen sich auf bereits digitalisierte Sammlungsobjekte. Sie nehmen die Bearbeitung von textuellen Metadaten in den Fokus, die für fachbezogene inhaltliche Fragen weiterhin eine große Rolle spielen (Raspe, Schelbert 2024). Die analoge Sammlungsstruktur dient als erster Ausgangspunkt für den digitalen Zugang, ohne dass überall eine Einzelerschließung vorhanden sein muss. Nach der bereits erfolgten Konsolidierung der Daten stehen 373.000 Bilddateien im Umfang von 90TB (Stand 11.2024) nach IIIF-Standards auf einem ausreichend großen Bildserver in der Ablagestruktur des analogen Archivs bereit.</p>
-                <p style="text-align: left; ">Kern des Projekts ist die Aufbereitung und multiperspektivische Erweiterung der in verschiedener Form und Tiefe vorhandenen Daten zu den einzelnen Fotoobjekten. Dabei wird insbesondere auf die Unterscheidung der Beschreibungsebenen der Sammlungsgegenstände und ihrer Digitalisierung geachtet (das Digitalisat, das materielle Fotoobjekt, die zugrundeliegende fotografische Aufnahme, der Gegenstand der Aufnahme). Besondere Bedeutung kommt den Informationen aus den Inventarbüchern zu, die nach der Digitalisierung und OCR-Texterkennung mithilfe von KI in strukturierte Daten überführt werden. Zunächst werden die in den Inventaren enthaltenen, und mangels Trenner oder Feldbezeichner weitestgehend unstrukturierten Informationen manuell mit der Software Azure Document Intelligence Studio gelabelt. Nach dem Training des Modells werden strukturierte Daten ausgegeben, die weitere Aufteilung der Inhalte erfolgt durch ein LLM (Large Language Model). Der Zugriff auf die gewonnenen Daten erfolgt momentan über eine Suchmaschine auf der Basis von Elasticsearch. Das Ergebnis sind strukturierte Daten, die mit dem für andere Teile der Sammlung bereits vorhandenen digitalen Inventar (HIDA-Datenbank, Laupichler 1998) zusammengeführt werden. Anschließend erfolgt ein Mapping mit weiteren Metadaten, die bereits in verschiedenen Erschließungstiefen vorliegen.</p>
-                <p style="text-align: left; ">Aus diesem Gesamtbestand an Daten werden Entitäten wie Werktitel, Künstler:innen, Aufbewahrungsorte, Gattungsbezeichnungen etc. extrahiert und zu einem Knowledge Graphen zusammengeführt, der als zentrale Normdatenreferenz und als zentraler Wissensspeicher zur Kunstgeschichte nicht nur für den eigenen Sammlungskatalog dienen soll. Hierfür werden die Daten mithilfe der Graphdatenbank Neo4J aggregiert, analysiert, normalisiert und anschließend in einer Wikibase (Rossenova, Duchesne, Blümel 2022) verwaltet und bereitgestellt. In parallelen und nachgeordneten Arbeitsschritten werden unter Verwendung von OpenRefine Daten weiter vereinheitlicht und – sofern vorhanden – mit Wikidata-Items gemappt, was den Anschluss an weitere Normdatenrepositorien (u.a. GND, vgl. Kailus, Stein 2018) sowie andere Forschungsdateninfrastrukturen wie den Culture Knowledge Graph der NFDI ermöglicht.</p>
-                <p style="text-align: left; ">Parallel zu den Metadatenbearbeitungen werden die Digitalisate der Fotoobjekte bezüglich der darauf befindlichen Beschriftungen und Bestempelungen mit OCR und sowie der Bilder selbst mit Bilderkennung bearbeitet. Diese Daten werden mit den bereits vorhandenen Metadaten in Beziehung gesetzt. Die zukünftige Datenhaltung und -präsentation bildet aufgrund der Graphenstruktur des Backends eine eigene Herausforderung, die voraussichtlich unter Verwendung eines vorgeschalteten Digital Asset Management Systems gelöst wird.</p>
-                <p style="text-align: left; ">Das hier vorgestellte Konzept für die Photothek des ZI soll im Hinblick auf die Arbeit anderer kunsthistorischer Fotoarchive sowohl vorbildlich sein, insofern als hier Lösungenen bspw. für die Katalogisierung mehrerer Abzüge einer Aufnahme oder die Erfassung materieller Aspekte der Fotos vorgeschlagen werden. Mit der strikten Normalisierung und Standardisierung der Daten wird auch die Vernetzung fachbezogener Verbundkataloge (Bracht 2016) befördert. Auf der Basis offener und etablierter Komponenten werden schließlich entstandene Insellösungen abgelöst und Daten in standardisierter Form online verfügbar gemacht.</p>
-            </div>
-        </body>
-        <back>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl>
-                        <hi rend="bold">Bracht, Christian</hi>. 2016. “Kulturerbe vernetzt. Die Verbunddatenbank „Bildindex der Kunst und Architektur”.” In 
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="SCHELBERT_Georg_Die__De__und_Re__Konstruktion_der_Photothek" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="full">
+<title type="main">Die (De- und Re-)Konstruktion der Photothek</title>
+<title type="sub">Erschließungsstrategien am Zentralinstitut für Kunstgeschichte</title>
+</title>
+<author>
+<persName>
+<surname>Griebel</surname>
+<forename>Johannes</forename>
+</persName>
+<affiliation>Zentralinstitut für Kunstgeschichte München, Deutschland</affiliation>
+<email>j.griebel@zikg.eu</email>
+<idno type="ORCID">0000-0002-9373-6759</idno>
+</author>
+<author>
+<persName>
+<surname>Raddatz</surname>
+<forename>Nadine</forename>
+</persName>
+<affiliation>Zentralinstitut für Kunstgeschichte München, Deutschland</affiliation>
+<email>n.raddatz@zikg.eu</email>
+<idno type="ORCID">0009-0001-2533-4029</idno>
+</author>
+<author>
+<persName>
+<surname>Schelbert</surname>
+<forename>Georg</forename>
+</persName>
+<affiliation>Zentralinstitut für Kunstgeschichte München, Deutschland</affiliation>
+<email>g.schelbert@zikg.eu</email>
+<idno type="ORCID">0000-0002-7314-8589</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-12-02T08:08:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943124</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Poster</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Bildarchiv</term>
+<term>Datenmodellierung</term>
+<term>Datenextraktion</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Datenerkennung</term>
+<term>Bilderfassung</term>
+<term>Modellierung</term>
+<term>Kontextsetzung</term>
+<term>Bereinigung</term>
+<term>Bilder</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Ausgangslage: Die kunsthistorische Photothek</head>
+<p style="text-align: left; ">Das Zentralinstitut für Kunstgeschichte (ZI) ist ein führendes außeruniversitäres kunsthistorisches Forschungsinstitut. Seit seiner Gründung im Jahr 1947 hat es eine umfangreiche Photothek aufgebaut, die heute mehr als 1 Million Einheiten umfasst. Sie besteht zum Großteil aus Schwarzweiß-Abzügen, daneben sind auch andere Bildträger, wie etwa Diapositive oder Negative, vorhanden (Peters 2022). Diese Fotoobjekte, die als Medienobjekte mit Bild-, Material- und Schriftbestandteilen aufzufassen sind (Caraffa 2018), dokumentieren die europäische Kunstgeschichte in seltener Vollständigkeit, ebenso wie die Fachgeschichte in einzelnen Bereichen. Sie sind, wie in einem analogen Archiv unvermeidlich, in einer starren Ordnung aufgestellt, die einer fachlichen Klassifikation entspricht, die aus verschiedenen Persrspektiven zu hinterfragen ist (Huth 2024). So ging etwa verloren, dass sich die Sammlung aus Nachlässen von renommierten Forscher:innen und Dokumentarfotograf:innen sowie aus Übernahmen von Verlagsarchiven zusammensetzt, da diese durch Einordnung in die Sammlungssystematik aufgelöst wurden.</p>
+<p style="text-align: left; ">Fast die Hälfte der Bestände wurde in den letzten Jahrzehnten bereits digitalisiert. Für wiederum etwa ein Drittel hiervon wurden Metadaten in mittlerer Erschließungstiefe angelegt.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Aufgabenstellung und Ziele: Kritische Datafizierung</head>
+<p style="text-align: left; ">Der Zugang zu einer analogen Sammlung sollte heute primär im digitalen Format erfolgen (Schelbert 2022a), da sich auch die kunsthistorische Forschung zunehmend auf digitalisierte Quellen und digitalen Austausch stützt. Darüber hinaus wird sowohl eine langfristige und maschinenlesbare, als auch eine interdisziplinäre Nachnutzung von Daten gefordert – ein Ziel, das nur durch eine umfassende Datafizierung des Bildarchivs erreicht werden kann.</p>
+<p style="text-align: left; ">Jede digitale Repräsentation kulturhistorischer Gegenstände – sowohl die Digitalisate als auch die sog. Metadaten umfassend – stellt eine Interpretation derselben dar. In der Photothek des ZI werden historische Ordnungen (Schelbert 2022b), Beschriftungen, Stempel etc. als “Spuren der Praktiken der Sinnstiftung” ernst genommen. Aus diesem Bewusstsein heraus sollen bestehende Systematiken im digitalen Raum dekonstruiert und ein multiperspektivischer, kritischer Zugang ermöglicht werden, in dem neue Zusammenhänge rekonstruiert werden können. So werden u.a. Angaben zu Provenienzen der Fotografien und der abgebildeten Werke, oder zu fotografischen und technischen Merkmalen der Sammlungsobjekte auswertbar. Vormalige Sammlungszusammenhänge, z.B. in Nachlässen, können wieder zusammengeführt und wichtige fachliche Themen, wie sammlungs-, institutions- und forschungsgeschichtliche Fragen aus den Daten heraus entwickelt werden.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Vorgehen: Multimodale Einzelschritte im Gesamtkonzept</head>
+<p style="text-align: left; ">Die Grundlagen für die Lösung dieser Aufgaben werden im Projekt kunst.bild.daten – gefördert von Dezember 2023 bis Juli 2026 vom Bayerischen Staatsministerium für Wissenschaft und Kunst – gelegt. Im Rahmen dieses Projekts werden bestehende Daten, vor allem aus der Abteilung Architekturtopographie Deutschland und dem Farbdiaarchiv zur Wand- und Deckenmalerei (Klingen 2006) zusammengeführt, Infrastrukturen wie Bilderserver eingerichtet und Restrukturierungen der bestehenden und neu generierten Daten durchgeführt. Durch die Erzeugung und Sicherung strukturierter Daten, bei der zunächst keine Festlegung auf den Einsatz einer bestimmten Software erfolgt, die jedoch differenzierte Aussagen zu Entstehung, Provenienz und weiteren Bezügen dokumentieren, bleibt die Möglichkeit des Anschlusses an standardisierte fachspezifische Katalogisierungsschemata (LiDO, CIDOC CRM) explizit gewahrt.</p>
+<p style="text-align: left; ">Die auf dem Poster dargestellten Arbeitsschritte beziehen sich auf bereits digitalisierte Sammlungsobjekte. Sie nehmen die Bearbeitung von textuellen Metadaten in den Fokus, die für fachbezogene inhaltliche Fragen weiterhin eine große Rolle spielen (Raspe, Schelbert 2024). Die analoge Sammlungsstruktur dient als erster Ausgangspunkt für den digitalen Zugang, ohne dass überall eine Einzelerschließung vorhanden sein muss. Nach der bereits erfolgten Konsolidierung der Daten stehen 373.000 Bilddateien im Umfang von 90TB (Stand 11.2024) nach IIIF-Standards auf einem ausreichend großen Bildserver in der Ablagestruktur des analogen Archivs bereit.</p>
+<p style="text-align: left; ">Kern des Projekts ist die Aufbereitung und multiperspektivische Erweiterung der in verschiedener Form und Tiefe vorhandenen Daten zu den einzelnen Fotoobjekten. Dabei wird insbesondere auf die Unterscheidung der Beschreibungsebenen der Sammlungsgegenstände und ihrer Digitalisierung geachtet (das Digitalisat, das materielle Fotoobjekt, die zugrundeliegende fotografische Aufnahme, der Gegenstand der Aufnahme). Besondere Bedeutung kommt den Informationen aus den Inventarbüchern zu, die nach der Digitalisierung und OCR-Texterkennung mithilfe von KI in strukturierte Daten überführt werden. Zunächst werden die in den Inventaren enthaltenen, und mangels Trenner oder Feldbezeichner weitestgehend unstrukturierten Informationen manuell mit der Software Azure Document Intelligence Studio gelabelt. Nach dem Training des Modells werden strukturierte Daten ausgegeben, die weitere Aufteilung der Inhalte erfolgt durch ein LLM (Large Language Model). Der Zugriff auf die gewonnenen Daten erfolgt momentan über eine Suchmaschine auf der Basis von Elasticsearch. Das Ergebnis sind strukturierte Daten, die mit dem für andere Teile der Sammlung bereits vorhandenen digitalen Inventar (HIDA-Datenbank, Laupichler 1998) zusammengeführt werden. Anschließend erfolgt ein Mapping mit weiteren Metadaten, die bereits in verschiedenen Erschließungstiefen vorliegen.</p>
+<p style="text-align: left; ">Aus diesem Gesamtbestand an Daten werden Entitäten wie Werktitel, Künstler:innen, Aufbewahrungsorte, Gattungsbezeichnungen etc. extrahiert und zu einem Knowledge Graphen zusammengeführt, der als zentrale Normdatenreferenz und als zentraler Wissensspeicher zur Kunstgeschichte nicht nur für den eigenen Sammlungskatalog dienen soll. Hierfür werden die Daten mithilfe der Graphdatenbank Neo4J aggregiert, analysiert, normalisiert und anschließend in einer Wikibase (Rossenova, Duchesne, Blümel 2022) verwaltet und bereitgestellt. In parallelen und nachgeordneten Arbeitsschritten werden unter Verwendung von OpenRefine Daten weiter vereinheitlicht und – sofern vorhanden – mit Wikidata-Items gemappt, was den Anschluss an weitere Normdatenrepositorien (u.a. GND, vgl. Kailus, Stein 2018) sowie andere Forschungsdateninfrastrukturen wie den Culture Knowledge Graph der NFDI ermöglicht.</p>
+<p style="text-align: left; ">Parallel zu den Metadatenbearbeitungen werden die Digitalisate der Fotoobjekte bezüglich der darauf befindlichen Beschriftungen und Bestempelungen mit OCR und sowie der Bilder selbst mit Bilderkennung bearbeitet. Diese Daten werden mit den bereits vorhandenen Metadaten in Beziehung gesetzt. Die zukünftige Datenhaltung und -präsentation bildet aufgrund der Graphenstruktur des Backends eine eigene Herausforderung, die voraussichtlich unter Verwendung eines vorgeschalteten Digital Asset Management Systems gelöst wird.</p>
+<p style="text-align: left; ">Das hier vorgestellte Konzept für die Photothek des ZI soll im Hinblick auf die Arbeit anderer kunsthistorischer Fotoarchive sowohl vorbildlich sein, insofern als hier Lösungenen bspw. für die Katalogisierung mehrerer Abzüge einer Aufnahme oder die Erfassung materieller Aspekte der Fotos vorgeschlagen werden. Mit der strikten Normalisierung und Standardisierung der Daten wird auch die Vernetzung fachbezogener Verbundkataloge (Bracht 2016) befördert. Auf der Basis offener und etablierter Komponenten werden schließlich entstandene Insellösungen abgelöst und Daten in standardisierter Form online verfügbar gemacht.</p>
+</div>
+</body>
+<back>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl>
+<hi rend="bold">Bracht, Christian</hi>. 2016. “Kulturerbe vernetzt. Die Verbunddatenbank „Bildindex der Kunst und Architektur”.” In 
                         <hi rend="italic">Rundbrief Fotografie. Analoge und digitale Bildmedien in Archiven und Sammlungen</hi>, 23.2016, 2, N.F. 90, 20–32.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Caraffa, Costanza</hi>. 2018. “Photograph as Documents/Photographs as Objects: Photo Archives, Art History and the Material Approach.” In 
+<bibl>
+<hi rend="bold">Caraffa, Costanza</hi>. 2018. “Photograph as Documents/Photographs as Objects: Photo Archives, Art History and the Material Approach.” In 
                         <hi rend="italic">Collection and Curation</hi>, 37/4, 146-150.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Huth, Andreas</hi>. 2024 „Unordnung. Zur Kritik kunstwissenschaftlicher Ordnungssysteme.“ In 
+<bibl>
+<hi rend="bold">Huth, Andreas</hi>. 2024 „Unordnung. Zur Kritik kunstwissenschaftlicher Ordnungssysteme.“ In 
                         <hi rend="italic">Ordnungssysteme. Auswählen, Werten, Sortieren</hi>, hg. von Eva von Engelberg-Dočkal und Stephanie Herold, 91–95. Siegen: universi (Frieder und Henner, Bd. 4).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Kailus, Angela und Regine Stein</hi>. 2018 “Besser vernetzt: Über den Mehrwert von Standards und Normdaten zur Bilderschließung: Informationszugang, semantische Interoperabilität, Linked Open Data, Normdaten, Koreferenzierung.” In 
+<bibl>
+<hi rend="bold">Kailus, Angela und Regine Stein</hi>. 2018 “Besser vernetzt: Über den Mehrwert von Standards und Normdaten zur Bilderschließung: Informationszugang, semantische Interoperabilität, Linked Open Data, Normdaten, Koreferenzierung.” In 
                         <hi rend="italic">Computing Art Reader: Einführung in die digitale Kunstgeschichte</hi>, hg. von Piotr Kuroczyński, Peter Bell, und Lisa Dieckmann,118–139. Heidelberg: arthistoricum.net-ART-Books (Computing in Art and Architecture, Band 1)
                         <ref target="https://doi.org/10.11588/arthistoricum.413.c5772" xml:space="preserve"> </ref>
-                        <ref target="https://doi.org/10.11588/arthistoricum.413.c5772">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.11588/arthistoricum.413.c5772</hi>
-                        </ref>
-                        <hi rend="underline color(1155CC)">.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Klingen, Stephan.</hi> 2006. “Die Überlieferungsgeschichte des Farbdiabestandes aus dem "Führerauftrag" von 1943 bis zur Digitalisierung” In 
+<ref target="https://doi.org/10.11588/arthistoricum.413.c5772">
+<hi rend="underline color(1155CC)">https://doi.org/10.11588/arthistoricum.413.c5772</hi>
+</ref>
+<hi rend="underline color(1155CC)">.</hi>
+</bibl>
+<bibl>
+<hi rend="bold">Klingen, Stephan.</hi> 2006. “Die Überlieferungsgeschichte des Farbdiabestandes aus dem "Führerauftrag" von 1943 bis zur Digitalisierung” In 
                         <hi rend="italic">"Führerauftrag Monumentalmalerei". Eine Fotokampagne 1943-1945</hi>
-                        <hi rend="subscript">,</hi> hg. von Christian Fuhrmeister, Stephan Klingen, Iris Lauterbach, Ralf Peters, 63-81. Köln, Weimar: Böhlau.
+<hi rend="subscript">,</hi> hg. von Christian Fuhrmeister, Stephan Klingen, Iris Lauterbach, Ralf Peters, 63-81. Köln, Weimar: Böhlau.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Laupichler, Fritz.</hi> 1998. “MIDAS, HIDA, DISKUS – was ist das?” In 
+<bibl>
+<hi rend="bold">Laupichler, Fritz.</hi> 1998. “MIDAS, HIDA, DISKUS – was ist das?” In 
                         <hi rend="italic">AKMB-News</hi> 4 (1998), 2/3, 18-24.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Peters, Ralf.</hi> 2022. “Facetten der Veränderung. Rückblicke auf 75 Jahre Photothek.” In 
+<bibl>
+<hi rend="bold">Peters, Ralf.</hi> 2022. “Facetten der Veränderung. Rückblicke auf 75 Jahre Photothek.” In 
                         <hi rend="italic">ZI 75 - das Zentralinstitut für Kunstgeschichte in München</hi>, hg. von Wolfgang Augustyn, Iris Lauterbach und Ulrich Pfisterer, 182-204. München: Sieveking Verlag.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Raspe, Martin und Georg Schelbert</hi>. 2024. “Bilder ohne Worte? Die Kunstgeschichte auf dem Weg in die praktische Digitalität.“ In 
+<bibl>
+<hi rend="bold">Raspe, Martin und Georg Schelbert</hi>. 2024. “Bilder ohne Worte? Die Kunstgeschichte auf dem Weg in die praktische Digitalität.“ In 
                         <hi rend="italic">4D. Dimensionen | Disziplinen | Digitalität | Daten</hi>, hg. von Lisa Dieckmann, Bettina Pfleging, Georg Schelbert und Thorsten Wübbena. Heidelberg: arthistoricum.net (Computing in Art and Architecture, Band 6). 
                         <ref target="https://doi.org/10.11588/arthistoricum.1100.c15432">
-                            <hi rend="underline color(1155CC)">https://doi.org/10.11588/arthistoricum.1100.c15432</hi>
-                        </ref>
-                        <hi rend="underline color(1155CC)">.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Rossenova, Lozana, Paul Duchesne und Ina Blümel</hi>. 2022. “Wikidata and Wikibase as complementary research data management services for cultural heritage data.” In 
+<hi rend="underline color(1155CC)">https://doi.org/10.11588/arthistoricum.1100.c15432</hi>
+</ref>
+<hi rend="underline color(1155CC)">.</hi>
+</bibl>
+<bibl>
+<hi rend="bold">Rossenova, Lozana, Paul Duchesne und Ina Blümel</hi>. 2022. “Wikidata and Wikibase as complementary research data management services for cultural heritage data.” In 
                         <hi rend="italic">The 3rd Wikidata Workshop, Workshop for the scientific Wikidata community</hi>. 
                         <ref target="https://serwiss.bib.hs-hannover.de/frontdoor/index/index/docId/2573">
-                            <hi rend="underline color(1155CC)">https://serwiss.bib.hs-hannover.de/frontdoor/index/index/docId/2573</hi>
-                        </ref>
-                        <hi rend="underline color(1155CC)">.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Schelbert, Georg</hi>. 2022a. “Die kunsthistorische Bilddatenbank zwischen digitalisierter Diathek und visuellem Wissensraum.” In 
+<hi rend="underline color(1155CC)">https://serwiss.bib.hs-hannover.de/frontdoor/index/index/docId/2573</hi>
+</ref>
+<hi rend="underline color(1155CC)">.</hi>
+</bibl>
+<bibl>
+<hi rend="bold">Schelbert, Georg</hi>. 2022a. “Die kunsthistorische Bilddatenbank zwischen digitalisierter Diathek und visuellem Wissensraum.” In 
                         <hi rend="italic">Lehrmedien der Kunstgeschichte, Geschichte und Perspektiven kunsthistorischer Medienpraxis,</hi> hg. von Hubert Locher und Maria Männig, 354-373. Berlin: Deutscher Kunstverlag.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Schelbert, Georg</hi>. 2022b. 
+<bibl>
+<hi rend="bold">Schelbert, Georg</hi>. 2022b. 
                         <hi rend="italic">Die Ordnung der Diathek</hi> (Kleine Schriften zu den Sammlungen und zur Arbeitspraxis der Mediathek des IKB 3). Berlin: Institut für Kunst- und Bildgeschichte der Humboldt-Universität zu Berlin. 
                         <ref target="https://doi.org/10.18452/25410">https://doi.org/10.18452/25410</ref>.
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

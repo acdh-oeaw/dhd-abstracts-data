@@ -1,255 +1,255 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="HORSTMANN_Jan_Alles_hat_seine_Zeit__Generische_Softwareentwi">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Alles hat seine Zeit: Generische Softwareentwicklung und individuelle Projektanforderungen</title>
-                <author>
-                    <persName>
-                        <surname>Hiepel</surname>
-                        <forename>Ludger</forename>
-                    </persName>
-                    <affiliation>Universität Münster, Deutschland</affiliation>
-                    <email>ludger.hiepel@uni-muenster.de</email>
-                    <idno type="ORCID">0000-0003-4473-3399</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Horstmann</surname>
-                        <forename>Jan</forename>
-                    </persName>
-                    <affiliation>Universität Münster, Deutschland</affiliation>
-                    <email>jan.horstmann@uni-muenster.de</email>
-                    <idno type="ORCID">0000-0001-8047-2232</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Lück</surname>
-                        <forename>Christian</forename>
-                    </persName>
-                    <affiliation>Universität Münster, Deutschland</affiliation>
-                    <email>christian.lueck@uni-muenster.de</email>
-                    <idno type="ORCID">0009-0008-0649-5127</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Normann</surname>
-                        <forename>Immanuel</forename>
-                    </persName>
-                    <affiliation>Universität Münster, Deutschland</affiliation>
-                    <email>immanuel.normann@uni-muenster.de</email>
-                    <idno type="ORCID">0000-0003-4702-1282</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2023-06-13T14:32:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag: Theorie, Metareflexion, Positionspapier</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Intertextualität</term>
-                    <term>Generizität</term>
-                    <term>agile Software-Entwicklung</term>
-                    <term>Projektmanagement</term>
-                    <term>Datenmodellierung</term>
-                    <term>Ontologie</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Programmierung</term>
-                    <term>Beziehungsanalyse</term>
-                    <term>Modellierung</term>
-                    <term>Annotieren</term>
-                    <term>Kollaboration</term>
-                    <term>Projektmanagement</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einleitung<ref n="1" target="ftn1"/>
-                </head>
-                <p>Digital-Humanities-Projekte, in denen individuelle Software benötigt wird, und DH-Zentren, an denen generisch einsetzbare Forschungssoftware entwickelt wird, haben unterschiedliche Geschwindigkeiten. Beispielhaft anhand des konkreten Entwicklungsprojektes 
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="HORSTMANN_Jan_Alles_hat_seine_Zeit__Generische_Softwareentwi" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Alles hat seine Zeit: Generische Softwareentwicklung und individuelle Projektanforderungen</title>
+<author>
+<persName>
+<surname>Hiepel</surname>
+<forename>Ludger</forename>
+</persName>
+<affiliation>Universität Münster, Deutschland</affiliation>
+<email>ludger.hiepel@uni-muenster.de</email>
+<idno type="ORCID">0000-0003-4473-3399</idno>
+</author>
+<author>
+<persName>
+<surname>Horstmann</surname>
+<forename>Jan</forename>
+</persName>
+<affiliation>Universität Münster, Deutschland</affiliation>
+<email>jan.horstmann@uni-muenster.de</email>
+<idno type="ORCID">0000-0001-8047-2232</idno>
+</author>
+<author>
+<persName>
+<surname>Lück</surname>
+<forename>Christian</forename>
+</persName>
+<affiliation>Universität Münster, Deutschland</affiliation>
+<email>christian.lueck@uni-muenster.de</email>
+<idno type="ORCID">0009-0008-0649-5127</idno>
+</author>
+<author>
+<persName>
+<surname>Normann</surname>
+<forename>Immanuel</forename>
+</persName>
+<affiliation>Universität Münster, Deutschland</affiliation>
+<email>immanuel.normann@uni-muenster.de</email>
+<idno type="ORCID">0000-0003-4702-1282</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2023-06-13T14:32:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943216</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Vortrag: Theorie, Metareflexion, Positionspapier</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Intertextualität</term>
+<term>Generizität</term>
+<term>agile Software-Entwicklung</term>
+<term>Projektmanagement</term>
+<term>Datenmodellierung</term>
+<term>Ontologie</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Programmierung</term>
+<term>Beziehungsanalyse</term>
+<term>Modellierung</term>
+<term>Annotieren</term>
+<term>Kollaboration</term>
+<term>Projektmanagement</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Einleitung<ref n="1" target="ftn1"/>
+</head>
+<p>Digital-Humanities-Projekte, in denen individuelle Software benötigt wird, und DH-Zentren, an denen generisch einsetzbare Forschungssoftware entwickelt wird, haben unterschiedliche Geschwindigkeiten. Beispielhaft anhand des konkreten Entwicklungsprojektes 
                     <hi rend="italic">Intertextor</hi>, einem Tool zur Annotation und Analyse von Intertextualität, demonstriert der Beitrag das Spannungsfeld zwischen generischem Anspruch und individuell notwendigen Lösungen, die aus konkreten Projektanforderungen erwachsen. Wir diskutieren, inwieweit einerseits Elemente agilen Projektmanagements helfen können, wo andererseits aber dennoch projektspezifische Entwicklungen vorgenommen werden müssen, um Deadlines einhalten zu können.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Anspruch: Generische Softwareentwicklung</head>
-                <p>„Eine Zeit zum Lachen“: Sofern eine Forschungssoftware-Entwicklungsabteilung mit begrenzten Personalressourcen den dauerhaften Auftrag hat, für eine Vielzahl von Forschungsprojekten Software zu entwickeln, liegt es auf der Hand, entwickelte Softwarekomponenten möglichst häufig wiederzuverwenden (vgl. Krueger 1992).<ref n="2" target="ftn2"/> Der Grad der Wiederverwendbarkeit hängt wesentlich von zwei Faktoren ab: Die Heterogenität von Anforderungen aus Forschungsprojekten stellt den äußeren Faktor dar. Dem stehen als innerer Faktor die Entwicklungsstrategie bzw. -methoden des Software-Engineerings gegenüber. Da eine Entwicklungsabteilung auf den äußeren Faktor keinen Einfluss nehmen kann, kommt es darauf an, den inneren Faktor auf die äußeren Gegebenheiten optimal einzustellen: Die Priorisierung generischer Konzepte und Komponenten ist unsere Strategie, um Wiederverwendbarkeit gezielt zu erhöhen, statt sie dem Zufall projektspezifischer Entwicklung zu überlassen. Die zentrale Methode zu dieser Strategie liegt in der Identifikation gemeinsamer Aspekte aus der Vielzahl von vorgegebenen Anforderungen und in der daran anschließenden angemessenen Abstraktion überschneidender Bedarfe in geeignete Software- und Datenmodelle. Neben der Generizität ist eine Hauptherausforderung das Prinzip ‘data first’, mit dem die fundamentale Orientierung an Datenstandards einhergeht, also Daten, die in einer oder für eine generische Anwendung erzeugt werden und auch außerhalb dieser Anwendung prozessierbar sein müssen.
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Anspruch: Generische Softwareentwicklung</head>
+<p>„Eine Zeit zum Lachen“: Sofern eine Forschungssoftware-Entwicklungsabteilung mit begrenzten Personalressourcen den dauerhaften Auftrag hat, für eine Vielzahl von Forschungsprojekten Software zu entwickeln, liegt es auf der Hand, entwickelte Softwarekomponenten möglichst häufig wiederzuverwenden (vgl. Krueger 1992).<ref n="2" target="ftn2"/> Der Grad der Wiederverwendbarkeit hängt wesentlich von zwei Faktoren ab: Die Heterogenität von Anforderungen aus Forschungsprojekten stellt den äußeren Faktor dar. Dem stehen als innerer Faktor die Entwicklungsstrategie bzw. -methoden des Software-Engineerings gegenüber. Da eine Entwicklungsabteilung auf den äußeren Faktor keinen Einfluss nehmen kann, kommt es darauf an, den inneren Faktor auf die äußeren Gegebenheiten optimal einzustellen: Die Priorisierung generischer Konzepte und Komponenten ist unsere Strategie, um Wiederverwendbarkeit gezielt zu erhöhen, statt sie dem Zufall projektspezifischer Entwicklung zu überlassen. Die zentrale Methode zu dieser Strategie liegt in der Identifikation gemeinsamer Aspekte aus der Vielzahl von vorgegebenen Anforderungen und in der daran anschließenden angemessenen Abstraktion überschneidender Bedarfe in geeignete Software- und Datenmodelle. Neben der Generizität ist eine Hauptherausforderung das Prinzip ‘data first’, mit dem die fundamentale Orientierung an Datenstandards einhergeht, also Daten, die in einer oder für eine generische Anwendung erzeugt werden und auch außerhalb dieser Anwendung prozessierbar sein müssen.
                 </p>
-                <p>Der 
+<p>Der 
                     <hi rend="italic">Intertextor</hi> steht am Standort Münster derzeit prototypisch für die Entwicklung einer generischen Software (vgl. 
                     <ref target="https://uni.ms/intertextor">https://uni.ms/intertextor</ref>), die einen Bedarf mehrerer Forschungsprojekte abzudecken beabsichtigt (von denen eines weiter unten näher erläutert wird): eine komplexe, webbasierte Forschungsplattform zur manuellen Erfassung und Erforschung von Intertextualität, in der Daten nach offenen Standards produziert werden. Intertextualität bezeichnet die Beziehung eines Textes zu anderen Texten, die durch Zitate, Anspielungen oder stilistische Ähnlichkeiten hergestellt wird (vgl. Pfister 1994). Verschiedene alternative Formen von Intertextualität sind denkbar, je nachdem, was man als intertextuelle Relation betrachtet: Kommentare, Interpretationen, Übersetzungen etc. Der Intertextualitätsbegriff lässt sich darüber hinaus dahingehend erweitern, dass nicht nur schriftsprachliche Texte als Objekte von Beziehungen berücksichtigt werden, sondern jegliche kulturellen Gegenstände, die intermodale Beziehungen untereinander eingehen können; darunter zählen etwa auch Bilder, Filme, Werbung, etc.
                 </p>
-                <p>In umfangreichen Vorarbeiten haben wir verschieden ausgeprägte Intertextualitätstheorien untersucht und eine Intertextualitätsontologie herausgearbeitet, die wir in OWL formalisiert haben (vgl. Horstmann et al. 2023). Die Generizität zeigt sich darin, dass sich unterschiedliche Intertextualitätstheorien durch formale Erweiterung dieser Kernontologie modellieren lassen. Die Kernontologie setzt ihrerseits auf einen bestehenden W3C-Standard auf – das „Web Annotation Data Model“ (WADM) – womit die Nachnutzung dieser Ontologie in unterschiedlichen Softwareanwendungen zudem begünstigt wird.<ref n="3" target="ftn3"/>
-                </p>
-                <p>Innerhalb des Intertextors können intertextuelle Bezüge ontologiebasiert als strukturierte Annotationsdaten modelliert werden. Die Generizität des Intertextors besteht mithin in der Nutzung des generischen Datenmodells – allerdings nicht nur darin: Die textuellen Beziehungen sollen im Intertextor auf unterschiedlichen Ebenen hergestellt und in verschiedenen Formen dargestellt werden können (vgl. Horstmann et al. 2024). Eine in verschiedenen Projekten (etwa auch dem unten vorgestellten Ijob-Projekt) gewünschte Variante besteht in der synoptischen Darstellung zweier oder mehrerer Texte, in denen verschiedene Textpassagen hervorgehoben und mit einer Annotation versehen sind, welche die Art der Beziehung näher bestimmt. Einer solchen Benutzerschnittstelle, die das 
+<p>In umfangreichen Vorarbeiten haben wir verschieden ausgeprägte Intertextualitätstheorien untersucht und eine Intertextualitätsontologie herausgearbeitet, die wir in OWL formalisiert haben (vgl. Horstmann et al. 2023). Die Generizität zeigt sich darin, dass sich unterschiedliche Intertextualitätstheorien durch formale Erweiterung dieser Kernontologie modellieren lassen. Die Kernontologie setzt ihrerseits auf einen bestehenden W3C-Standard auf – das „Web Annotation Data Model“ (WADM) – womit die Nachnutzung dieser Ontologie in unterschiedlichen Softwareanwendungen zudem begünstigt wird.<ref n="3" target="ftn3"/>
+</p>
+<p>Innerhalb des Intertextors können intertextuelle Bezüge ontologiebasiert als strukturierte Annotationsdaten modelliert werden. Die Generizität des Intertextors besteht mithin in der Nutzung des generischen Datenmodells – allerdings nicht nur darin: Die textuellen Beziehungen sollen im Intertextor auf unterschiedlichen Ebenen hergestellt und in verschiedenen Formen dargestellt werden können (vgl. Horstmann et al. 2024). Eine in verschiedenen Projekten (etwa auch dem unten vorgestellten Ijob-Projekt) gewünschte Variante besteht in der synoptischen Darstellung zweier oder mehrerer Texte, in denen verschiedene Textpassagen hervorgehoben und mit einer Annotation versehen sind, welche die Art der Beziehung näher bestimmt. Einer solchen Benutzerschnittstelle, die das 
                     <hi rend="italic">close reading</hi> im Blick hat, steht eine netzwerkartige Präsentationsform gegenüber, bei der Gesamttexte als Knoten und intertextuelle Beziehungen zwischen diesen als Kanten dargestellt werden und so eine Weise des 
                     <hi rend="italic">distant readings</hi> ermöglichen. Zwischen den Polen der 
                     <hi rend="italic">close</hi>- und 
                     <hi rend="italic">distant</hi>-Präsentation sind verschiedene Zwischenstufen geplant.
                 </p>
-                <p>So gut es klingt, generische Software zu haben, so vielfältig sind jedoch auch die Risiken, die mit ihrer Entwicklung verbunden sind.  Das Projekt geht zum einen das Risiko ein, dass die Software nicht rechtzeitig fertig werden könnte, sondern z.B. erst zum Ende des Projekts oder gar danach. Zum anderen besteht projektseitig das Risiko der Priorisierung bei der Softwareentwicklung: Stehen die für das Projekt notwendigen und gewünschten Funktionen oben auf der Aufgabenliste der Entwickler*innen? An diese beiden Faktoren schließt sich eine weitere, nicht unerhebliche Unsicherheit an: Ist der Drittmittelgeber von der Realisierbarkeit der Software trotz etwaiger Risiken zu überzeugen? Für das DH-Zentrum besteht das Risiko, sich zu überheben. Dieses Risiko wird mit der Anzahl der Stakeholder an der Software naturgemäß größer. Auch das DH-Zentrum muss die Risiko-Einschätzung des Drittmittelgebers antizipieren, um abgelehnte Drittmittelanträge zu vermeiden.</p>
-                <p>Unter diesen Bedingungen ist die Entwicklung ausgereifter generischer Anwendungssoftware eher etwas Unwahrscheinliches. Dennoch gibt es Gründe, warum Forschungsprojekte und DH-Zentren die Risiken eingehen sollten.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Agiles Projektmanagement und Herausforderungen</head>
-                <p>„Eine Zeit zum Behalten und eine Zeit zum Wegwerfen“: Durch ihre „interdisziplinäre Ausrichtung stellen Projekte in den Digital Humanities höhere Ansprüche an Projektmanagement als andere Kooperationen innerhalb etablierter Fachkulturen, bei denen zumindest die fachlichen Perspektiven einheitlich sind und nur organisatorische Abstimmung benötigt wird“ (Kremer et al. 2024). In der Software-Entwicklung werden vor dem Hintergrund ähnlicher Anforderungen seit Jahren agile Verfahren (wie etwa Scrum) als „Framework für das Management komplexer Projekte“ (Wirdemann et al. 2022) eingesetzt. Dabei gibt agiles Projektmanagement „ein dreifaches Versprechen: ein 
+<p>So gut es klingt, generische Software zu haben, so vielfältig sind jedoch auch die Risiken, die mit ihrer Entwicklung verbunden sind.  Das Projekt geht zum einen das Risiko ein, dass die Software nicht rechtzeitig fertig werden könnte, sondern z.B. erst zum Ende des Projekts oder gar danach. Zum anderen besteht projektseitig das Risiko der Priorisierung bei der Softwareentwicklung: Stehen die für das Projekt notwendigen und gewünschten Funktionen oben auf der Aufgabenliste der Entwickler*innen? An diese beiden Faktoren schließt sich eine weitere, nicht unerhebliche Unsicherheit an: Ist der Drittmittelgeber von der Realisierbarkeit der Software trotz etwaiger Risiken zu überzeugen? Für das DH-Zentrum besteht das Risiko, sich zu überheben. Dieses Risiko wird mit der Anzahl der Stakeholder an der Software naturgemäß größer. Auch das DH-Zentrum muss die Risiko-Einschätzung des Drittmittelgebers antizipieren, um abgelehnte Drittmittelanträge zu vermeiden.</p>
+<p>Unter diesen Bedingungen ist die Entwicklung ausgereifter generischer Anwendungssoftware eher etwas Unwahrscheinliches. Dennoch gibt es Gründe, warum Forschungsprojekte und DH-Zentren die Risiken eingehen sollten.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Agiles Projektmanagement und Herausforderungen</head>
+<p>„Eine Zeit zum Behalten und eine Zeit zum Wegwerfen“: Durch ihre „interdisziplinäre Ausrichtung stellen Projekte in den Digital Humanities höhere Ansprüche an Projektmanagement als andere Kooperationen innerhalb etablierter Fachkulturen, bei denen zumindest die fachlichen Perspektiven einheitlich sind und nur organisatorische Abstimmung benötigt wird“ (Kremer et al. 2024). In der Software-Entwicklung werden vor dem Hintergrund ähnlicher Anforderungen seit Jahren agile Verfahren (wie etwa Scrum) als „Framework für das Management komplexer Projekte“ (Wirdemann et al. 2022) eingesetzt. Dabei gibt agiles Projektmanagement „ein dreifaches Versprechen: ein 
                     <hi rend="italic">Leistungsversprechen</hi> (alles wird schneller, innovativer und besser); ein 
                     <hi rend="italic">Emanzipationsversprechen</hi> (die Arbeit wird autonomer, selbstbestimmter und bedarfsorientierter) und ein 
                     <hi rend="italic">Entlastungsversprechen</hi> (statt überbordender Komplexität: Konzentration aufs Wesentliche)“ (Kremer et al. 2024). Projektmanagement wird mittlerweile einerseits als „integraler Bestandteil der modernen Wissensproduktion“ (Cremer et al. 2024) bezeichnet . Andererseits attestiert z.B. Allington (2013) den Digital Humanities eine Obsession mit Management und nennt sie daher „managerial humanities“. Neubert (2020, 65) resümiert: „doing digital research in the form of planned projects is nothing too new, however, the novelty lies in an unprecedented interdependence when collaborating with large numbers of researchers, librarians, research software engineers and other involved stakeholders.“ Von Kremer et al. (2024) stammt ein Vorschlag für eine an Forschungskontexte angepasste reduzierte Scrumvariante. Hintergrund ist die Erkenntnis, dass Forschungsprojekte, die in der Regel innerhalb des komplexen Regelwerks des öffentlichen Dienstes durchgeführt werden, nicht gewinnorientiert agieren und parallel zu Aufgaben in der Lehre, akademischen Selbstverwaltung und Fortbildung bzw. Vernetzung bearbeitet werden müssen, in ihrer spezifischen Struktur nicht für die vollständige Umsetzung der Scrum-Methodologie prädestiniert sind. Dennoch liegt es im Wesen der Agilität, Frameworks an den jeweiligen Anwendungskontext anzupassen. Kremer et al. konstatieren: „Gerade für Forschungsprojekte, die zum einen neues Wissen generieren, gleichzeitig aber in einer beschränkten Zeit einen nutzbaren Ertrag sicherstellen sollen, eignet sich agiles Projektmanagement gemäß der Grundidee eines fokussierten Teams und eines offenen Lösungswegs sehr gut“ (Kremer et al. 2024). Im pragmatischen Einsatz von SCRUM in Forschungsprojekten hat sich daher etabliert, Vorhandenes zu adaptieren und mit Versatzstücken zu arbeiten, d.h. etwa die Elemente Daily Meetings, Backlogs, Task Boards, Product Owner und Sprints einzusetzen. Freilich gibt es auch im akademischen Kontext starke Divergenzen, auf die ein agiler Entwicklungsmodus reagieren muss, z.B.: „Different disciplinary affiliations, as well as one’s position within the academic hierarchies may lead to different research cycles over time. While PhD and postdoctoral researchers have a clear time limit set by their temporary employment within the CRC, Principal Investigators and professors are limited through other tasks and research interests within their respective field” (Neubert 2020, 71f.).
                 </p>
-                <p>Auch in der Intertextor-Entwicklung setzen wir Verfahren des agilen Projektmanagements mit mehr oder weniger Erfolg um. Das Scrum-Element des Daily Meetings haben wir auf höherer SCDH-Ebene, dort spielt der Intertextor (als ein Entwicklungsprojekt neben sehr vielen vom SCDH begleiteten Forschungsprojekten) nicht jedes Mal explizit eine Rolle. Statusmeetings (von Kremer et al. 2024 zweimal wöchentlich empfohlen) finden bei uns einmal wöchentlich mit explizitem und ein zweites Mal mit möglichem Intertextorbezug statt (in Anwesenheit des Product-Owners); zusätzlich haben wir ein wöchentliches Treffen von Scrummaster und Entwicklern. Der Scrummaster ist zusätzlich Systemarchitekt des SCDH und als solcher ebenfalls Stakeholder des Intertextors (neben den Forschungsprojekten, die konkrete methodische Anforderungen an das Tool haben). Wir haben ein Product-Backlog mit Userstorys und ein Sprint-Backlog (in Form priorisierter Userstorys), sodass inkrementorientiertes Arbeiten mit hoher Autonomie des Teams in den Arbeitsphasen möglich wird. Die große Herausforderung bleibt, die unterschiedlichen Geschwindigkeiten der Projektlogiken (s. beispielhaft u.) auf der einen und der dauerhaften generischen Lösungen auf der anderen Seite zu vereinen (vgl. auch Neubert 2020, 71f.). Kremer et al. (2024) betonen die gute Passung von Scrum zu Entwicklungsprojekten von Forschungssoftware-Prototypen. Die darin implizierte Schnellschussmetaphorik, die „Projektifizierung geisteswissenschaftlicher Forschung in kurzzeitige Einheiten“ (Cremer et al. 2024) könnte ein Grund sein, der einer langfristigen generischen Lösung, einem lauffähigen und dauerhaft durch eine Institution der Forschungsinfrastruktur betriebenen Forschungstool entgegensteht. Spezifische Bedarfe, die an das generische Tool gestellt werden, werden im Folgenden beispielhaft anhand eines der Stakeholderprojekte, dem Ijob-Projekt, illustriert.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Konkrete Projektbedarfe</head>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Digitale Edition antiker Textzeugen des Ijob-buches mit Darstellung der Übersetzungsweise</head>
-                    <p>„Eine Zeit zum Bauen”: Das Projekt einer digitalen Edition der antiken Textzeugen des Ijob-buches unter der Leitung von Prof. Dr. Johannes Schnocks  möchte die aramäischen Übersetzungen, zwei fragmentarische Übersetzungen aus Qumran und den rabbinischen Targum ins Deutsche übersetzen und mit dem hebräischen Text vergleichen (vgl. DH-Blog 2023). Als „Kontrollgröße“ soll auch der griechische Text der Septuaginta hinzugezogen werden. In einer Synopse der ursprachlichen Texte und ihren deutschen Übersetzungen – das wäre in gedruckter Form eines Buches enorm unübersichtlich – macht die digitale Edition die Unterschiede sichtbar (vgl. dazu exemplarisch Schnocks 2018; zum Ijob-Buch und der Forschungsgeschichte Witte 2018). In Annotationen wird erklärt und kommentiert, wie die antiken Übersetzer gearbeitet haben. So wird die antike Übersetzungsweise deutlich herausgearbeitet: Wenn die antiken Versionen in ihrer bisweilen ja erstaunlichen Übersetzungsweise umfassender wahrgenommen werden, ergibt sich nicht nur eine größere Sicherheit in der Rekonstruktion der Textgeschichte, sondern es entstehen theologisch aufschlussreiche Einblicke in die frühe Rezeptionsgeschichte und die Intertextualitäten der biblischen Texte. In diesem Sinne handelt es sich beim Ijob-Projekt um eine Form von Intertextualität, die das synoptische Interface voraussetzt.</p>
-                    <p>Bei diesem Projekt haben sich mit der Möglichkeit auf komplexe generische Anwendungen zu setzen von Beginn an die Chancen und Risiken abgezeichnet: Einerseits lagen die Vorarbeiten zum Datenmodell des Intertextors zu Beginn der (technischen) Vorbereitung des Projekts, Anfang 2023, bereits vor und damit das Versprechen einer generischen Web-Anwendung. Andererseits hat sich im Verlauf des Jahres abgezeichnet, dass eine schnelle Realisierung des Intertextors utopisch ist. Dennoch sollten noch vor Beantragung von Drittmitteln die wesentlichen technischen Komponenten zur Durchführung der Forschungsfrage vorliegen und ihr Funktionieren nachweisbar sein, um das Risiko aus Sicht des Drittmittelgebers und somit des Projekts zu minimieren. Diese wesentlichen Komponenten sind einerseits eine Möglichkeit zur kommentierenden und klassifizierenden Erfassung auffälliger Übersetzungsweisen und andererseits eine synoptische Anzeige der Verse mit Hervorhebung der auffälligen Text-Stellen; also Datenein- und -ausgabe. Zudem zeichnen sich konzeptuelle Spannungen zwischen dem generischen Intertextor und dem Projektvorhaben ab, insofern der Intertextor weniger dafür geeignet ist, die Forschung eines Projektes zu präsentieren, als vielmehr in einen globalen Graphen zu integrieren. Schon wegen der Open-World-Assumption der dem Intertextor zugrundegelegten Semantic-Web-Architektur ist seine Eignung zum Leistungsnachweis eines Forschungsprojekts fraglich. Nichtsdestotrotz ist die spätere Integration des Datenpakets des Projekts in den Intertextor wünschenswert, z.B. um in den Genuss der geplanten umfangreichen Abfragemöglichkeiten zu kommen.</p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Pragmatische Lösungen</head>
-                    <p>„Eine Zeit für den Tanz”: Das Prinzip ‘data first’ stellt das verbindende Element der Entwicklung von projektspezifischen Lösungen und generischen Anwendungen dar. Für die generische Anwendung Intertextor impliziert das die Forderung, dass alle an der Nutzeroberfläche produzierten Daten Standards folgen und auch außerhalb der Anwendung prozessierbar sein müssen. Für die projektspezifische Lösung heißt das ebenfalls, dass Datenstandards befolgt werden müssen, um so letztlich den FAIR-Prinzipien nachzukommen und die Projektdaten nicht in Spezialsoftware einzuschließen (
+<p>Auch in der Intertextor-Entwicklung setzen wir Verfahren des agilen Projektmanagements mit mehr oder weniger Erfolg um. Das Scrum-Element des Daily Meetings haben wir auf höherer SCDH-Ebene, dort spielt der Intertextor (als ein Entwicklungsprojekt neben sehr vielen vom SCDH begleiteten Forschungsprojekten) nicht jedes Mal explizit eine Rolle. Statusmeetings (von Kremer et al. 2024 zweimal wöchentlich empfohlen) finden bei uns einmal wöchentlich mit explizitem und ein zweites Mal mit möglichem Intertextorbezug statt (in Anwesenheit des Product-Owners); zusätzlich haben wir ein wöchentliches Treffen von Scrummaster und Entwicklern. Der Scrummaster ist zusätzlich Systemarchitekt des SCDH und als solcher ebenfalls Stakeholder des Intertextors (neben den Forschungsprojekten, die konkrete methodische Anforderungen an das Tool haben). Wir haben ein Product-Backlog mit Userstorys und ein Sprint-Backlog (in Form priorisierter Userstorys), sodass inkrementorientiertes Arbeiten mit hoher Autonomie des Teams in den Arbeitsphasen möglich wird. Die große Herausforderung bleibt, die unterschiedlichen Geschwindigkeiten der Projektlogiken (s. beispielhaft u.) auf der einen und der dauerhaften generischen Lösungen auf der anderen Seite zu vereinen (vgl. auch Neubert 2020, 71f.). Kremer et al. (2024) betonen die gute Passung von Scrum zu Entwicklungsprojekten von Forschungssoftware-Prototypen. Die darin implizierte Schnellschussmetaphorik, die „Projektifizierung geisteswissenschaftlicher Forschung in kurzzeitige Einheiten“ (Cremer et al. 2024) könnte ein Grund sein, der einer langfristigen generischen Lösung, einem lauffähigen und dauerhaft durch eine Institution der Forschungsinfrastruktur betriebenen Forschungstool entgegensteht. Spezifische Bedarfe, die an das generische Tool gestellt werden, werden im Folgenden beispielhaft anhand eines der Stakeholderprojekte, dem Ijob-Projekt, illustriert.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Konkrete Projektbedarfe</head>
+<div rend="DH-Heading2" type="div2">
+<head>Digitale Edition antiker Textzeugen des Ijob-buches mit Darstellung der Übersetzungsweise</head>
+<p>„Eine Zeit zum Bauen”: Das Projekt einer digitalen Edition der antiken Textzeugen des Ijob-buches unter der Leitung von Prof. Dr. Johannes Schnocks  möchte die aramäischen Übersetzungen, zwei fragmentarische Übersetzungen aus Qumran und den rabbinischen Targum ins Deutsche übersetzen und mit dem hebräischen Text vergleichen (vgl. DH-Blog 2023). Als „Kontrollgröße“ soll auch der griechische Text der Septuaginta hinzugezogen werden. In einer Synopse der ursprachlichen Texte und ihren deutschen Übersetzungen – das wäre in gedruckter Form eines Buches enorm unübersichtlich – macht die digitale Edition die Unterschiede sichtbar (vgl. dazu exemplarisch Schnocks 2018; zum Ijob-Buch und der Forschungsgeschichte Witte 2018). In Annotationen wird erklärt und kommentiert, wie die antiken Übersetzer gearbeitet haben. So wird die antike Übersetzungsweise deutlich herausgearbeitet: Wenn die antiken Versionen in ihrer bisweilen ja erstaunlichen Übersetzungsweise umfassender wahrgenommen werden, ergibt sich nicht nur eine größere Sicherheit in der Rekonstruktion der Textgeschichte, sondern es entstehen theologisch aufschlussreiche Einblicke in die frühe Rezeptionsgeschichte und die Intertextualitäten der biblischen Texte. In diesem Sinne handelt es sich beim Ijob-Projekt um eine Form von Intertextualität, die das synoptische Interface voraussetzt.</p>
+<p>Bei diesem Projekt haben sich mit der Möglichkeit auf komplexe generische Anwendungen zu setzen von Beginn an die Chancen und Risiken abgezeichnet: Einerseits lagen die Vorarbeiten zum Datenmodell des Intertextors zu Beginn der (technischen) Vorbereitung des Projekts, Anfang 2023, bereits vor und damit das Versprechen einer generischen Web-Anwendung. Andererseits hat sich im Verlauf des Jahres abgezeichnet, dass eine schnelle Realisierung des Intertextors utopisch ist. Dennoch sollten noch vor Beantragung von Drittmitteln die wesentlichen technischen Komponenten zur Durchführung der Forschungsfrage vorliegen und ihr Funktionieren nachweisbar sein, um das Risiko aus Sicht des Drittmittelgebers und somit des Projekts zu minimieren. Diese wesentlichen Komponenten sind einerseits eine Möglichkeit zur kommentierenden und klassifizierenden Erfassung auffälliger Übersetzungsweisen und andererseits eine synoptische Anzeige der Verse mit Hervorhebung der auffälligen Text-Stellen; also Datenein- und -ausgabe. Zudem zeichnen sich konzeptuelle Spannungen zwischen dem generischen Intertextor und dem Projektvorhaben ab, insofern der Intertextor weniger dafür geeignet ist, die Forschung eines Projektes zu präsentieren, als vielmehr in einen globalen Graphen zu integrieren. Schon wegen der Open-World-Assumption der dem Intertextor zugrundegelegten Semantic-Web-Architektur ist seine Eignung zum Leistungsnachweis eines Forschungsprojekts fraglich. Nichtsdestotrotz ist die spätere Integration des Datenpakets des Projekts in den Intertextor wünschenswert, z.B. um in den Genuss der geplanten umfangreichen Abfragemöglichkeiten zu kommen.</p>
+</div>
+<div rend="DH-Heading2" type="div2">
+<head>Pragmatische Lösungen</head>
+<p>„Eine Zeit für den Tanz”: Das Prinzip ‘data first’ stellt das verbindende Element der Entwicklung von projektspezifischen Lösungen und generischen Anwendungen dar. Für die generische Anwendung Intertextor impliziert das die Forderung, dass alle an der Nutzeroberfläche produzierten Daten Standards folgen und auch außerhalb der Anwendung prozessierbar sein müssen. Für die projektspezifische Lösung heißt das ebenfalls, dass Datenstandards befolgt werden müssen, um so letztlich den FAIR-Prinzipien nachzukommen und die Projektdaten nicht in Spezialsoftware einzuschließen (
                         <hi rend="italic">lock in</hi>). Konkret hieß das für die projektspezifische Lösung, dass das Datenmodell von Beginn an analog zum Intertextor konzipiert worden ist. Das Prinzip 
                         <hi rend="italic">data first</hi> ist somit auch Grundlage dafür, am SCDH die agile Software-Entwicklung übergreifend von den Einzelprojekten und ihren Speziallösungen bis hin zu generischen Anwendungen zu denken.
                     </p>
-                    <p>Eine Herausforderung war aber die Tatsache, dass es für Standoff-Annotationen nach dem Web Annotation Data Model (WADM), das zentral für die Annotationen im Intertextor sein wird, bislang kaum Implementierungen vorliegen, insbesondere keine, die gut in ein Projekt integrierbar sind, in welchem die annotierten Texte zur gleichen Zeit noch ediert, also verändert, werden. Wir haben daher nach einer Möglichkeit der Integration von WADM-Technologie in Editionsumgebungen gesucht; zudem sollte eine  spätere Darstellung im Web möglich sein. Mit einer grundsätzlichen Trennung von Datenein- und -ausgabe war dies realisierbar. Sowohl die Texte, als auch die Standoff-Annotationen werden in TEI-XML erfasst. Standoff-Annotationen in TEI-XML sind bislang zu unrecht nicht sehr verbreitet: Mit dem Element &lt;annotation&gt; bietet TEI eine Struktur, welche die TEI-Referenz als analog zum WADM ansieht.<ref n="4" target="ftn4"/> Mit RDFa im TEI-XML zur Kodierung von Properties lassen sich Klassifizierungen einbauen, die verlustlos und ohne Konventionen RDF-konform sind. Eine projektspezifische Ontologie, die Klassen für Übersetzungsweisen definiert, schließt dazu an die Kernontologie des Intertextors an. Allerdings war eine zu den Selektoren des WADM analoge Struktur in TEI-XML eine offene Frage. Hier konnte nun Abhilfe geschaffen werden. Anlässlich des Projekts sind die in den TEI-Guidelines<ref n="5" target="ftn5"/> (und von der W3C) spezifizierten XPointer-Schemata implementiert worden, die wie die WADM-Selektoren ermöglichen, Fragmente, Bereiche zwischen Fragmenten oder Teile von Textknoten u.dgl.m. zu referenzieren (Lück et al. 2023).<ref n="6" target="ftn6"/> Eine Teilmenge der XPointer-Schemata ist kompatibel zu den WADM-Selektoren. Diese neu implementierte Softwarekomponente ist generisch; sie wurde nicht 
+<p>Eine Herausforderung war aber die Tatsache, dass es für Standoff-Annotationen nach dem Web Annotation Data Model (WADM), das zentral für die Annotationen im Intertextor sein wird, bislang kaum Implementierungen vorliegen, insbesondere keine, die gut in ein Projekt integrierbar sind, in welchem die annotierten Texte zur gleichen Zeit noch ediert, also verändert, werden. Wir haben daher nach einer Möglichkeit der Integration von WADM-Technologie in Editionsumgebungen gesucht; zudem sollte eine  spätere Darstellung im Web möglich sein. Mit einer grundsätzlichen Trennung von Datenein- und -ausgabe war dies realisierbar. Sowohl die Texte, als auch die Standoff-Annotationen werden in TEI-XML erfasst. Standoff-Annotationen in TEI-XML sind bislang zu unrecht nicht sehr verbreitet: Mit dem Element &lt;annotation&gt; bietet TEI eine Struktur, welche die TEI-Referenz als analog zum WADM ansieht.<ref n="4" target="ftn4"/> Mit RDFa im TEI-XML zur Kodierung von Properties lassen sich Klassifizierungen einbauen, die verlustlos und ohne Konventionen RDF-konform sind. Eine projektspezifische Ontologie, die Klassen für Übersetzungsweisen definiert, schließt dazu an die Kernontologie des Intertextors an. Allerdings war eine zu den Selektoren des WADM analoge Struktur in TEI-XML eine offene Frage. Hier konnte nun Abhilfe geschaffen werden. Anlässlich des Projekts sind die in den TEI-Guidelines<ref n="5" target="ftn5"/> (und von der W3C) spezifizierten XPointer-Schemata implementiert worden, die wie die WADM-Selektoren ermöglichen, Fragmente, Bereiche zwischen Fragmenten oder Teile von Textknoten u.dgl.m. zu referenzieren (Lück et al. 2023).<ref n="6" target="ftn6"/> Eine Teilmenge der XPointer-Schemata ist kompatibel zu den WADM-Selektoren. Diese neu implementierte Softwarekomponente ist generisch; sie wurde nicht 
                         <hi rend="italic">für</hi> das Projekt, sondern 
                         <hi rend="italic">anlässlich</hi> des Projekts entwickelt. Auf diese Weise konnte der tatsächlich projektspezifische Code auf 330 Zeilen XSLT begrenzt werden, die zudem ohne Abstriche in anderen Projekten einsetzbar sind, welche WADM-kompatible Standoff-Annotationen in TEI erfassen wollen. 
                     </p>
-                    <p>Aus Sicht des Intertextors mag die Entwicklung dieser Komponente ein Abweg sein. Aber sie war ein in ca. drei Wochen realisierbarer Baustein, der einen ansonsten sehr erprobten Technologie-Stack (TEI als Editionsplattform und X-Technologien) vervollständigt und für das Projekt einsetzbar macht. Und dieser hat seine Stärken: Unter Zuhilfenahme von &lt;prefixDef&gt; lassen sich Range-Pointer wie mt:12.5.2-6 (Masoreten-Text, Kapitel 12, Vers 5, Wörter 2 bis 6) schreiben. Wir haben damit eine Notationsweise, die Forschende aus dem Effeff beherrschen.</p>
-                    <p>In diesem Projekt konnte der Anspruch, den Projektbedarf mit einer generischen Forschungsplattform abzudecken, vorerst nicht eingelöst werden. Dennoch ist klar ersichtlich, dass allein die Planung generischer Forschungsplattformen die Entwicklung von Software und Datenmodellen in Projekten strukturiert und einen übergreifenden agilen Prozess in Gang setzt. Er wird von Stakeholdern mit individuellen Projektanforderungen und nahenden Deadlines häufig mehr oder weniger wohlwollend zur Kenntnis genommen, aber nicht unbedingt aktiv unterstützt. Die eigenen Projektziele und engen Deadlines sind in individueller Perspektive stets sehr viel wichtiger als die Ausarbeitung gemeinsamer Ziele in Form generischer Userstorys. </p>
-                </div>
-            </div>
-        </body>
-        <back>
+<p>Aus Sicht des Intertextors mag die Entwicklung dieser Komponente ein Abweg sein. Aber sie war ein in ca. drei Wochen realisierbarer Baustein, der einen ansonsten sehr erprobten Technologie-Stack (TEI als Editionsplattform und X-Technologien) vervollständigt und für das Projekt einsetzbar macht. Und dieser hat seine Stärken: Unter Zuhilfenahme von &lt;prefixDef&gt; lassen sich Range-Pointer wie mt:12.5.2-6 (Masoreten-Text, Kapitel 12, Vers 5, Wörter 2 bis 6) schreiben. Wir haben damit eine Notationsweise, die Forschende aus dem Effeff beherrschen.</p>
+<p>In diesem Projekt konnte der Anspruch, den Projektbedarf mit einer generischen Forschungsplattform abzudecken, vorerst nicht eingelöst werden. Dennoch ist klar ersichtlich, dass allein die Planung generischer Forschungsplattformen die Entwicklung von Software und Datenmodellen in Projekten strukturiert und einen übergreifenden agilen Prozess in Gang setzt. Er wird von Stakeholdern mit individuellen Projektanforderungen und nahenden Deadlines häufig mehr oder weniger wohlwollend zur Kenntnis genommen, aber nicht unbedingt aktiv unterstützt. Die eigenen Projektziele und engen Deadlines sind in individueller Perspektive stets sehr viel wichtiger als die Ausarbeitung gemeinsamer Ziele in Form generischer Userstorys. </p>
+</div>
+</div>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
+<note n="1" rend="footnote text" xml:id="ftn1">
                          Contributor Roles: Ludger Hiepel (Data curation, Writing – original draft), Jan Horstmann (Conceptualization, Methodology, Supervision, Writing – original draft, Writing – review &amp; editing), Christian Lück (Conceptualization, Software, Writing – review &amp; editing), Immanuel Normann (Conceptualization, Methodology, Project administration, Writing – original draft).
                     </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
+<note n="2" rend="footnote text" xml:id="ftn2">
                          Vgl. etwa auch King’s Digital Lab: Safeguarding an inheritance and ensuring a legacy,
                          
                             <ref target="https://kdl.kcl.ac.uk/blog/sdlc-for-rse/">https://kdl.kcl.ac.uk/blog/sdlc-for-rse/</ref> (zugegriffen: 02.12.2024).
                         
                     </note>
-<note rend="footnote text" xml:id="ftn3" n="3">
+<note n="3" rend="footnote text" xml:id="ftn3">
                          Vgl. 
                             <ref target="https://www.w3.org/TR/annotation-model/">https://www.w3.org/TR/annotation-model/</ref> (zugegriffen: 02.12.2024).
                         
                     </note>
-<note rend="footnote text" xml:id="ftn4" n="4">
+<note n="4" rend="footnote text" xml:id="ftn4">
                              Vgl. 
                                 <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-annotation.html">https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-annotation.html</ref> (zugegriffen: 02.12.2024).
                             
                         </note>
-<note rend="footnote text" xml:id="ftn5" n="5">
+<note n="5" rend="footnote text" xml:id="ftn5">
                              Vgl. 
                                 <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SATS">https://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SATS</ref> (zugegriffen: 02.12.2024).
                             
                         </note>
-<note rend="footnote text" xml:id="ftn6" n="6">
+<note n="6" rend="footnote text" xml:id="ftn6">
                              Vgl. 
                                 <ref target="https://github.com/scdh/tei-xpointer-schemes">https://github.com/scdh/tei-xpointer-schemes</ref> (zugegriffen: 02.12.2024).
                             
                         </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl style="text-align: left; "><hi rend="bold">Allington, Daniel</hi>. 2013. „The managerial humanities; or, Why the digital humanities don’t exist.“ 
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl style="text-align: left; "><hi rend="bold">Allington, Daniel</hi>. 2013. „The managerial humanities; or, Why the digital humanities don’t exist.“ 
                         <ref target="http://www.danielallington.net/2013/03/the-managerial-humanities-or-why-the-digital-humanities-dont-exist/">http://www.danielallington.net/2013/03/the-managerial-humanities-or-why-the-digital-humanities-dont-exist/</ref> (zugegriffen: 16. Juli 2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Cremer, Fabian, Swantje Dogunke, Anna Maria Neubert und Thorsten Wübbena</hi>. 2024. „Einleitung: Zusammenarbeit klug gestalten: Projektmanagement und Digital Humanities“. In 
+<bibl style="text-align: left; "><hi rend="bold">Cremer, Fabian, Swantje Dogunke, Anna Maria Neubert und Thorsten Wübbena</hi>. 2024. „Einleitung: Zusammenarbeit klug gestalten: Projektmanagement und Digital Humanities“. In 
                         <hi rend="italic">Digital Humanities Research</hi>, hg. von Fabian Cremer, Swantje Dogunke, Anna Maria Neubert und Thorsten Wübbena, 7–20. Bielefeld: Bielefeld University Press / transcript Verlag.
                         <ref target="https://doi.org/10.14361/9783839469675-001" xml:space="preserve"> 10.14361/9783839469675-001</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">DH-Blog Universität Münster</hi>. 2023. „Die Steine umdrehen, um zu sehen, ob die Ameisen darunter immer noch so laufen…“ 
+<bibl style="text-align: left; "><hi rend="bold">DH-Blog Universität Münster</hi>. 2023. „Die Steine umdrehen, um zu sehen, ob die Ameisen darunter immer noch so laufen…“ 
                         <ref target="https://www.dh.uni-muenster.blog/die-steine-umdrehen-um-zu-sehen-ob-die-ameisen-darunter-immer-noch-so-laufen/">https://www.dh.uni-muenster.blog/die-steine-umdrehen-um-zu-sehen-ob-die-ameisen-darunter-immer-noch-so-laufen/</ref> (zugegriffen: 22. Juli 2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Horstmann, Jan, Christian Lück und Immanuel Normann</hi>. 2023. „Systems of Intertextuality: Towards a formalization of text relations for manual annotation and automated reasoning”. 
+<bibl style="text-align: left; "><hi rend="bold">Horstmann, Jan, Christian Lück und Immanuel Normann</hi>. 2023. „Systems of Intertextuality: Towards a formalization of text relations for manual annotation and automated reasoning”. 
                         <hi rend="italic">Digital Humanities Quarterly</hi> 17(3). 
                         <ref target="http://digitalhumanities.org/dhq/vol/17/3/000731/000731.html">http://digitalhumanities.org/dhq/vol/17/3/000731/000731.html</ref> (zugegriffen: 22. Juli 2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Horstmann, Jan, Christian Lück, Immanuel Normann und Jan-Erik Stange</hi>. 2024. „Intertextor: Interfaces für die Annotation intertextueller Relationen“. 
+<bibl style="text-align: left; "><hi rend="bold">Horstmann, Jan, Christian Lück, Immanuel Normann und Jan-Erik Stange</hi>. 2024. „Intertextor: Interfaces für die Annotation intertextueller Relationen“. 
                         <hi rend="italic">DHd 2024 Quo Vadis DH</hi> (DHd2024), Passau.
                         <ref target="https://doi.org/10.5281/zenodo.10698496" xml:space="preserve"> 10.5281/zenodo.10698496</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Kremer, Dominik, Sabine Pfeiffer und Blake Byron Walker</hi>. 2024. „Effiziente Zusammenarbeit in den Digital Humanities: Ein Erfahrungsbericht aus drei Jahren Anwendung von Scrum in Forschungskontexten“. In 
+<bibl style="text-align: left; "><hi rend="bold">Kremer, Dominik, Sabine Pfeiffer und Blake Byron Walker</hi>. 2024. „Effiziente Zusammenarbeit in den Digital Humanities: Ein Erfahrungsbericht aus drei Jahren Anwendung von Scrum in Forschungskontexten“. In 
                         <hi rend="italic">Digital Humanities Research</hi>, hg. von Fabian Cremer, Swantje Dogunke, Anna Maria Neubert und Thorsten Wübbena, 153–184. Bielefeld: Bielefeld University Press / transcript Verlag.
                         <ref target="https://doi.org/10.14361/9783839469675-006" xml:space="preserve"> 10.14361/9783839469675-006</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Lück, Christian, Ludger Hiepel und Johannes Schnocks</hi>. 2023. „TEI XPointer Schemes - Implementation and Example Application”, TEI Conference “Encoding Cultures”, Paderborn. 
+<bibl style="text-align: left; "><hi rend="bold">Lück, Christian, Ludger Hiepel und Johannes Schnocks</hi>. 2023. „TEI XPointer Schemes - Implementation and Example Application”, TEI Conference “Encoding Cultures”, Paderborn. 
                         <ref target="https://teimec2023.uni-paderborn.de/contributions/134.html">https://teimec2023.uni-paderborn.de/contributions/134.html</ref> (zugegriffen: 22. Juli 2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Krueger, Charles W.</hi>. 1992. „Software reuse”. 
+<bibl style="text-align: left; "><hi rend="bold">Krueger, Charles W.</hi>. 1992. „Software reuse”. 
                         <hi rend="italic">ACM Computing Surveys</hi> 24(2), 131–183. 
                         <ref target="https://doi.org/10.1145/130844.130856">10.1145/130844.130856</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Neubert, Anna</hi>. 2020. „Navigating Disciplinary Differences in (Digital) Research Projects Through Project Management“. In 
+<bibl style="text-align: left; "><hi rend="bold">Neubert, Anna</hi>. 2020. „Navigating Disciplinary Differences in (Digital) Research Projects Through Project Management“. In 
                         <hi rend="italic">Digital Humanities Research</hi>, hg. von Silke Schwandt, 59–86. Bielefeld: Bielefeld University Press / transcript Verlag.
                         <ref target="https://doi.org/10.14361/9783839454190-003" xml:space="preserve"> 10.14361/9783839454190-003</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Pfister, Manfred</hi>. 1994. „Intertextualität“. In 
+<bibl style="text-align: left; "><hi rend="bold">Pfister, Manfred</hi>. 1994. „Intertextualität“. In 
                         <hi rend="italic">Moderne Literatur in Grundbegriffen</hi>, hg. von Dieter Borchmeyer und Viktor Žmegac, 215–218. Berlin, Boston: de Gruyter. 
                         <ref target="https://doi.org/10.1515/9783110925661.215">10.1515/9783110925661.215</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Schnocks, Johannes</hi>. 2018. „Ethische Bibellektüre als Gratwanderung. Auf der Suche nach der theologischen Autorität des Alten Testaments”. In 
+<bibl style="text-align: left; "><hi rend="bold">Schnocks, Johannes</hi>. 2018. „Ethische Bibellektüre als Gratwanderung. Auf der Suche nach der theologischen Autorität des Alten Testaments”. In 
                         <hi rend="italic">Bibel und Moral - ethische und exegetische Zugänge</hi> (Jahrbuch für Moraltheologie 2), hg. von Christof Breitsameter, Stephan Goertz u.a., 11–30. Freiburg u.a.: Herder Verlag.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Witte, Markus</hi>. 2018. 
+<bibl style="text-align: left; "><hi rend="bold">Witte, Markus</hi>. 2018. 
                         <hi rend="italic">Hiobs viele Gesichter. Studien zur Komposition, Tradition und frühen Rezeption des Hiobbuches</hi> (Forschungen zur Religion und Literatur des Alten und Neuen Testaments 267), 13–36. Göttingen: Vandenhoeck &amp; Ruprecht. 
                         <ref target="https://doi.org/10.13109/9783666552656.13">10.13109/9783666552656.13</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Wirdemann, Ralf, Astrid Ritscher und Johannes Mainusch</hi>. 2022. 
+<bibl style="text-align: left; "><hi rend="bold">Wirdemann, Ralf, Astrid Ritscher und Johannes Mainusch</hi>. 2022. 
                         <hi rend="italic">Scrum mit User Stories</hi>. 4., überarbeitete und erweiterte Auflage. München: Hanser.
                         <ref target="https://doi.org/10.3139/9783446474383" xml:space="preserve"> 10.3139/9783446474383</ref>.
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

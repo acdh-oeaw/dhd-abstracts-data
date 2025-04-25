@@ -25,7 +25,7 @@
 <addrLine>33098 Paderborn</addrLine>
 <addrLine>Deutschland</addrLine>
 </address>
-</publicationStmt>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/4621902</idno></publicationStmt>
 <sourceDesc>
 <p>Converted from a Word document</p>
 </sourceDesc>
@@ -92,10 +92,10 @@
 <p style="text-align:left; ">Am folgenden Fallbeispiel soll entwickelt werden, wie die skizzierten Überlegungen in einem konkreten Projekt umgesetzt werden können: Das von der Deutschen Forschungsgemeinschaft geförderte Langzeit-Editionsvorhaben „Corpus Masoreticum“, das an der Hochschule für Jüdische Studien Heidelberg angesiedelt ist, befasst sich mit dem sogenannten masoretischen Text in mittelalterlichen Bibelcodices. In der heutigen Forschung meint der Begriff der Masora alle meta-textuellen Elemente zum Konsonantentext der Hebräischen Bibel. Dazu gehören Grapheme, grammatische, syntaktische und statistische Notizen, Referenzen und Verweise. Ab dem 12. Jh. entstehen im Kulturraum Aschkenas (Nord-Frankreich und Deutschland) hebräische Bibel-Kodizes, in denen die Masora mit mikrographischer Schrift in ornamentalen Formen auf der Seite platziert wurde und als Fabelwesen, vor allem aber als zoomorphe Gestalten (Hunde, Pferde, Hasen, Gazellen, Vögel, Fische) und sogar als anthropomorphe Darstellungen gestaltet werden - hierfür wurde der Begriff der Masora figurata zur Unterscheidung von linearer Masora magna geprägt. Sie kann darüber hinaus Zitate aus Kommentarliteratur enthalten, die weit über die üblichen quantitativen und referentiellen Annotationen zum hebräischen Konsonantentext hinausgingen (vgl. Ms Vat. ebr. 14). Als Beispiel für in diesen masoretischen Metatexten häufig enthaltenes Listenmaterial lassen sich die sogenannten „Okhla-Listen“ herausgreifen, in denen als bewahrenswert gedachte Textphänomene und Schreibungen in unterschiedlichen Strukturen und Layouts dem Bibeltext mitgegeben werden und ihrerseits auf verschiedene extern überlieferte Rezensionen dieser Listen referieren (als Überblick: Liss/Petzold 2016). </p>
 <p style="text-align:left; ">Bereits oberflächliche Untersuchungen an diesem sehr speziellen Quellenmaterial zeigen, dass hier besonders komplexe Anforderungen an das zu definierende Editionsdatenmodell gestellt werden: Zu dokumentieren ist nicht nur linearer Text, sondern hochgradig vernetzte interne und externe Verweisstrukturen nicht nur mit Bezug auf Lesartvarianten, sondern auch auf Kommentarliteratur und Listenmaterial mit spezifischen Listenmustern, die auf extern tradiertes Listenwissen verweisen. Darüber hinaus bedarf die doppelte Lesbarkeit von Masora figurata als Text und Bild gleichermaßen in ihrem Bezug zum Bibeltext eines besonderen Dokumentationsverfahrens. </p>
 <p style="text-align:left; ">
-  <figure>
-    <graphic height="14.98423611111111cm" n="1001" rend="inline" url="231_final-84dbeaf5a3b007ca6bca4a12e163fe3d.png" width="15.991416666666666cm"/>
-  <head>Abbildung 1: Überblick über das beispielhafte mise-en-page von Bibeltext, Masora parva, Masora Magna und Masora figurata in Ms Vat ebr. 14, Fol. 85v. Prototyp einer Visualisierungssoftware für digitale Erschliessung hebräischer Bibelcodices. Quelle: <ptr target="http://bima.corpusmasoreticum.de/figurata/tor"/></head> 
-  </figure>
+<figure>
+<graphic height="14.98423611111111cm" n="1001" rend="inline" url="231_final-84dbeaf5a3b007ca6bca4a12e163fe3d.png" width="15.991416666666666cm"/>
+<head>Abbildung 1: Überblick über das beispielhafte mise-en-page von Bibeltext, Masora parva, Masora Magna und Masora figurata in Ms Vat ebr. 14, Fol. 85v. Prototyp einer Visualisierungssoftware für digitale Erschliessung hebräischer Bibelcodices. Quelle: <ptr target="http://bima.corpusmasoreticum.de/figurata/tor"/></head>
+</figure>
 </p>
 <!-- <p style="text-align:left; ">Abbildung 1: Überblick über das beispielhafte mise-en-page von Bibeltext, Masora parva, Masora Magna und Masora figurata in Ms Vat ebr. 14, Fol. 85v. Prototyp einer Visualisierungssoftware für digitale Erschliessung hebräischer Bibelcodices. Quelle:  -->
 <!--                     <hi rend="Hyperlink"> -->
@@ -108,10 +108,10 @@
 <p style="text-align:left; ">Durch die netzwerkartige Struktur der in die untersuchten Handschriften eingebetteten Metatexte lag es nahe, die Beschreibung von Text als Daten von vornherein als Graph zu modellieren; der „labelled-property“-Ansatz von Graphdatenbankensystemen wie Neo4J macht es durch seine sogenannte „whiteboard-friendliness“<ref n="6" target="ftn6"/> möglich, einfache Modellskizzen rasch in lauffähige digitale Speichermodelle zu implementieren. Im Editionsworkflow wird zunächst der Import von Handschriftendigitalisaten samt Metadaten über IIIF-kompatible Archive realisiert und die Handschriftendaten im Importprozess in Graphendaten als Knoten und Kanten umgewandelt. Ab hier werden über eine grafische Benutzeroberfläche erzeugte Texttranskriptionen kontextbezogen als Datenknoten verlinkt, wobei der Bezug zum Digitalisat über die Kodierung von Text als SVG-Textpfaden erhalten bleibt. Transkriptionen werden bei Bedarf weiter tokenisiert, um weitere Metadaten oder Kontextrelationen in den Graphen integrieren zu können. Aus dem so generierten Text- bzw. Knowledge Graph lassen sich Subsets (Datenaggregate) generieren, die im späteren Prozess sowohl als TEI-XML, RDF-Graph oder auch als angereicherte IIIF-Manifeste (Text, Übersetzung, Kommentar) ausgeliefert werden können. 
 </p>
 <p style="text-align:left; ">
-  <figure>
-    <graphic height="10.766777777777778cm" n="1002" rend="inline" url="231_final-4c67f9f50f229990db0f82f55a5c3061.png" width="15.991416666666666cm"/>
-    <head>Abbildung 2: Beispielgraph anhand Cod. Vat. Ebr. 468, folio 1v, Darstellung in Neo4J. Quelle: Liedtke 2019 (in Vorbereitung) </head>
-  </figure>
+<figure>
+<graphic height="10.766777777777778cm" n="1002" rend="inline" url="231_final-4c67f9f50f229990db0f82f55a5c3061.png" width="15.991416666666666cm"/>
+<head>Abbildung 2: Beispielgraph anhand Cod. Vat. Ebr. 468, folio 1v, Darstellung in Neo4J. Quelle: Liedtke 2019 (in Vorbereitung) </head>
+</figure>
 </p>
 <!-- <p style="text-align:left; ">Abbildung 2: Beispielgraph anhand Cod. Vat. Ebr. 468, folio 1v, Darstellung in Neo4J. Quelle: Liedtke 2019 (in Vorbereitung)</p> -->
 <p style="text-align:left; ">Die technischen Komponenten sind stark modularisiert und, wo möglich, als Microservices implementiert, so dass die einzelnen Ressourcen der Edition mit REST-APIs ausgeliefert und abgefragt werden können. Die Softwarearchitektur ist als Docker-Container-Umgebung in einer skalierbaren Cloud-Computing Landschaft realisiert, die vom heiCloud-Service des Rechenzentrums der Universität Heidelberg bereitgestellt wird, wobei die Rahmenbedingungen von Langzeitarchivierung und Nachnutzbarkeit in Zusammenarbeit mit Fachdiensten der Universitätsbibliothek Heidelberg<ref n="7" target="ftn7"/> gewährleistet werden.
@@ -122,36 +122,36 @@
 <p style="text-align:left; ">Bezieht man das Spannungsverhältnis von Standardisierung und Innovation digitaler Prozesse in den architektonischen Aufbau eines geisteswissenschaftlichen Forschungsprojektes ein, lässt sich diese Dynamik produktiv für die Entwicklung eigener Workflows nutzen und öffnet Spielräume für das Modellieren der eigenen Forschungsdaten. Die formale Beschreibung eines digitalen Datenmodells kann dann methodenkritisch dazu verwendet werden, die im Prozess anstehenden Ergebnisse wieder an die Ausgangsfragestellung rückzubinden und Modelle auf ihre Plausibilität zu prüfen. Die Umsetzung in Technologie-Stacks oder digitale Frameworks führt im gezeigten Fallbeispiel zu der Konstruktion einer quasi „hybriden“ Editionsumgebung und beschränkt den digitalen Anteil eines Projektes nicht nur auf das Ausliefern von „Tools“, sondern betrachtet den Aspekt der digitalen Transformation als integralen Bestandteil des gesamten Forschungsprozesses. </p>
 <figure>
 <graphic height="10.990466666666666cm" n="1003" rend="inline" url="231_final-66b2242539f0ac0063800c8fb1a298af.jpeg" width="13.674652777777778cm"/>
-    <head>Abbildung 3: Corpus Masoreticum als DH-Projekt (Schema). Quelle: Liedtke 2019 (in Vorbereitung)</head>
+<head>Abbildung 3: Corpus Masoreticum als DH-Projekt (Schema). Quelle: Liedtke 2019 (in Vorbereitung)</head>
 </figure>
 <!-- <p style="text-align:left; ">Abbildung 3: Corpus Masoreticum als DH-Projekt (Schema). Quelle: Liedtke 2019 (in Vorbereitung)</p> -->
 </div>
 </body>
 <back>
-  <div type="notes">
-    <note n="1" rend="footnote text" xml:id="ftn1">
-      <ref target="http://etcbc.nl">http://etcbc.nl</ref>
-    </note>
-    <note n="2" rend="footnote text" xml:id="ftn2">
-      <ref target="http://tanach.us/">http://tanach.us/</ref>
-    </note>
-    <note n="3" rend="footnote text" xml:id="ftn3">
-      <ref target="http://dev.digitalmishnah.umd.edu/">http://dev.digitalmishnah.umd.edu/</ref>
-    </note>
-    <note n="4" rend="footnote text" xml:id="ftn4">
-      <ref target="https://wiki.de.dariah.eu/display/publicde/3.5+Judaistik+und+Hebraistik">https://wiki.de.dariah.eu/display/publicde/3.5+Judaistik+und+Hebraistik</ref>
-    </note>
-    <note n="5" rend="footnote text" xml:id="ftn5">
+<div type="notes">
+<note n="1" rend="footnote text" xml:id="ftn1">
+<ref target="http://etcbc.nl">http://etcbc.nl</ref>
+</note>
+<note n="2" rend="footnote text" xml:id="ftn2">
+<ref target="http://tanach.us/">http://tanach.us/</ref>
+</note>
+<note n="3" rend="footnote text" xml:id="ftn3">
+<ref target="http://dev.digitalmishnah.umd.edu/">http://dev.digitalmishnah.umd.edu/</ref>
+</note>
+<note n="4" rend="footnote text" xml:id="ftn4">
+<ref target="https://wiki.de.dariah.eu/display/publicde/3.5+Judaistik+und+Hebraistik">https://wiki.de.dariah.eu/display/publicde/3.5+Judaistik+und+Hebraistik</ref>
+</note>
+<note n="5" rend="footnote text" xml:id="ftn5">
       Die auch im nachfolgenden Fallbeispiel verwendete Community-Version von Neo4J ist unter einer GPLv.3 Lizenz als Open Source verfügbar, ist also im strengen Sinne keine proprietäre Software – die Entwicklung wird aber massgeblich von Neo4J Inc. als kommerziellem Unternehmen vorangetrieben.
     </note>
-    <note n="6" rend="footnote text" xml:id="ftn6">
-      <ref target="https://neo4j.com/developer/guide-data-modeling/#whiteboard-friendly">https://neo4j.com/developer/guide-data-modeling/#whiteboard-friendly</ref>
-    </note>
-    <note n="7" rend="footnote text" xml:id="ftn7">
-      <ref target="https://heidata.uni-heidelberg.de/">https://heidata.uni-heidelberg.de/</ref>
-    </note>
-  </div>
-  <div type="bibliogr">
+<note n="6" rend="footnote text" xml:id="ftn6">
+<ref target="https://neo4j.com/developer/guide-data-modeling/#whiteboard-friendly">https://neo4j.com/developer/guide-data-modeling/#whiteboard-friendly</ref>
+</note>
+<note n="7" rend="footnote text" xml:id="ftn7">
+<ref target="https://heidata.uni-heidelberg.de/">https://heidata.uni-heidelberg.de/</ref>
+</note>
+</div>
+<div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl style="text-align:left; ">

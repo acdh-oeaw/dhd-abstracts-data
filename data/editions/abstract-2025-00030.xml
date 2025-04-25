@@ -1,323 +1,309 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="VIGNOLI_Michela_Voll_automatisiert_die_Natur_in_historischen">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Voll automatisiert die Natur in historischen Reiseberichten erkennen? Entzauberung von KI-Werkzeugen und ihr Nutzen für die Geisteswissenschaften</title>
-                <author>
-                    <persName>
-                        <surname>Vignoli</surname>
-                        <forename>Michela</forename>
-                    </persName>
-                    <affiliation>AIT Austrian Institute of Technology, Österreich</affiliation>
-                    <email>michela.vignoli@ait.ac.at</email>
-                    <idno type="ORCID">0000-0002-9495-5697</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Gruber</surname>
-                        <forename>Doris</forename>
-                    </persName>
-                    <affiliation>Österreichische Akademie der Wissenschaften, Österreich</affiliation>
-                    <email>doris.gruber@oeaw.ac.at</email>
-                    <idno type="ORCID">0000-0002-0512-100X</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-12-02T14:28:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag: Computergestützte Analyse oder Interpretation</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Künstliche Intelligenz</term>
-                    <term>Machine Learning</term>
-                    <term>Reiseforschung</term>
-                    <term>Textanalyse</term>
-                    <term>Naturdarstellungen</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Datenerkennung</term>
-                    <term>Inhaltsanalyse</term>
-                    <term>Annotieren</term>
-                    <term>Bilder</term>
-                    <term>Sprache</term>
-                    <term>Text</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-            <head>Einleitung</head>
-            <p style="text-align: left; ">Der rasante Vormarsch Künstlicher Intelligenz (KI) macht auch vor den Geisteswissenschaften nicht halt. Die vielversprechende Hoffnung lautet, große, digitalisierte Daten-Korpora voll automatisiert zu analysieren und darin Strukturen und Beziehungen mithilfe komplexer statistischer Modellvorhersagen zu erkennen. Modernste Ansätze des maschinellen Lernens (ML), insbesondere große Sprachmodelle (
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="VIGNOLI_Michela_Voll_automatisiert_die_Natur_in_historischen" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Voll automatisiert die Natur in historischen Reiseberichten erkennen? Entzauberung von KI-Werkzeugen und ihr Nutzen für die Geisteswissenschaften</title>
+<author>
+<persName>
+<surname>Vignoli</surname>
+<forename>Michela</forename>
+</persName>
+<affiliation>AIT Austrian Institute of Technology, Österreich</affiliation>
+<email>michela.vignoli@ait.ac.at</email>
+<idno type="ORCID">0000-0002-9495-5697</idno>
+</author>
+<author>
+<persName>
+<surname>Gruber</surname>
+<forename>Doris</forename>
+</persName>
+<affiliation>Österreichische Akademie der Wissenschaften, Österreich</affiliation>
+<email>doris.gruber@oeaw.ac.at</email>
+<idno type="ORCID">0000-0002-0512-100X</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-12-02T14:28:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943196</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Vortrag: Computergestützte Analyse oder Interpretation</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Künstliche Intelligenz</term>
+<term>Machine Learning</term>
+<term>Reiseforschung</term>
+<term>Textanalyse</term>
+<term>Naturdarstellungen</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Datenerkennung</term>
+<term>Inhaltsanalyse</term>
+<term>Annotieren</term>
+<term>Bilder</term>
+<term>Sprache</term>
+<term>Text</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Einleitung</head>
+<p style="text-align: left; ">Der rasante Vormarsch Künstlicher Intelligenz (KI) macht auch vor den Geisteswissenschaften nicht halt. Die vielversprechende Hoffnung lautet, große, digitalisierte Daten-Korpora voll automatisiert zu analysieren und darin Strukturen und Beziehungen mithilfe komplexer statistischer Modellvorhersagen zu erkennen. Modernste Ansätze des maschinellen Lernens (ML), insbesondere große Sprachmodelle (
                 <hi rend="italic">Large Language Models, LLMs</hi>) wie sie ChatGPT<ref n="1" target="ftn1"/> verwendet, erlauben es, in einem nie dagewesenen Umfang multimodale Inhalte mit Rücksicht auf den semantischen und semiotischen Kontext zu durchsuchen, zu ordnen und zusammenzufassen (z.B. Yang et al., 2024). Doch inwieweit treffen diese Versprechen zu und können maschinelle Lernmodelle als unterstützende Werkzeuge für historisch-wissenschaftliche Argumentationsprozesse bei historischen Bildern und nicht standardisierten Texten eingesetzt werden? Sind sie in der Lage, relevante Quellen aufzufinden oder gar interpretative Aufgaben zu lösen?
             </p>
-            <p style="text-align: left; ">Deep Learning Ansätze finden bereits in unterschiedlichen kunstgeschichtlichen und historischen Forschungskontexten Anwendung (z.B. Saleh und Elgammal, 2016; Cetinic et al., 2019; Im et al., 2022). Auch das 
+<p style="text-align: left; ">Deep Learning Ansätze finden bereits in unterschiedlichen kunstgeschichtlichen und historischen Forschungskontexten Anwendung (z.B. Saleh und Elgammal, 2016; Cetinic et al., 2019; Im et al., 2022). Auch das 
                 <hi rend="italic">Ottoman Nature in Travelogues</hi> Projekt<ref n="2" target="ftn2"/> (
                 <hi rend="italic">ONiT</hi>; FWF: P 35245) entwickelt eine KI-gestützte Methode, die auf die Analyse von „Naturdarstellungen” in Reiseberichten über das Osmanische Reich zugeschnitten ist (Vignoli et al., 2023a; Vignoli et al., 2023b). Das Projekt untersucht, welche Rolle die westlichen Darstellungen „osmanischer Natur“ in den zwischen 1501 und 1850 gedruckten Berichten spielen. Dafür kommen KI-Werkzeuge zum Einsatz, die durch einen Distant Reading Zugang (Moretti, 2013) zur Beantwortung dieser Forschungsfrage beitragen. Als „Naturdarstellung” fasst das Projekt jegliche piktoriale sowie textuelle Darstellungen von Flora, Fauna, Landschaften und -karten. Zur computergestützten Identifikation relevanter Bild- und Textteile in einem heterogenen Korpus von über 1.700 digitalisierten Werken optimieren wir sogenannte Transformer-Modelle (Vaswani et al., 2017) zur Informationsgewinnung (
                 <hi rend="italic">Information Retrieval</hi>).
             </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-            <head>Methode</head>
-            <p style="text-align: left; ">Zunächst untersuchen wir Bild- und Textmaterial in getrennten Verfahren, um die Analyse beider semantisch unterschiedlichen Kodierungen von Informationen anschließend zusammenzuführen. Für die Bildanalyse konnten wir aus den Reiseberichten bisher über 22.000 piktoriale Darstellungen extrahieren. Über 8.000 davon umfassen Naturdarstellungen, wobei die Flora, Fauna, Landschaften und -karten entweder alleinstehend abgebildet sind oder als Detail im Vorder- oder Hintergrund auftreten können. Um das historische Bildmaterial anhand von Text- und Bildabfragen durchsuchbar zu machen, wird ein 
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Methode</head>
+<p style="text-align: left; ">Zunächst untersuchen wir Bild- und Textmaterial in getrennten Verfahren, um die Analyse beider semantisch unterschiedlichen Kodierungen von Informationen anschließend zusammenzuführen. Für die Bildanalyse konnten wir aus den Reiseberichten bisher über 22.000 piktoriale Darstellungen extrahieren. Über 8.000 davon umfassen Naturdarstellungen, wobei die Flora, Fauna, Landschaften und -karten entweder alleinstehend abgebildet sind oder als Detail im Vorder- oder Hintergrund auftreten können. Um das historische Bildmaterial anhand von Text- und Bildabfragen durchsuchbar zu machen, wird ein 
                 <hi rend="italic">Contrastive Language-Image Pre-Training Modell</hi> (
                 <hi rend="italic">CLIP</hi>) mittels Transfer Learning eingesetzt und feinabgestimmt (Radford et al., 2021).
             </p>
-            <p style="text-align: left; ">Das optimierte Modell erreicht bei den von uns abgefragten Inhalten stark unterschiedliche Genauigkeiten und verbessert die Präzision des vortrainierten Modells nur teilweise. Während die Abfragen nach drei der Hauptklassen – „Tier”, „Pflanze” und „Landschaft” – unter den ersten 1.000 Ergebnissen höhere Präzisionswerte als das zugrundeliegende Modell erzielt (62–95%), verschlechtert das optimierte Modell die Erkennung der Hauptklasse „Landkarte” (72%). Zudem kommen wir bei einzelnen Tierspezies, welche wir nebst den Hauptklassen ebenfalls annotiert haben, zu einem ähnlich heterogenen Ergebnis (vgl. Vignoli et al., 2024). Dies lässt sich zum einen auf die im für das 
+<p style="text-align: left; ">Das optimierte Modell erreicht bei den von uns abgefragten Inhalten stark unterschiedliche Genauigkeiten und verbessert die Präzision des vortrainierten Modells nur teilweise. Während die Abfragen nach drei der Hauptklassen – „Tier”, „Pflanze” und „Landschaft” – unter den ersten 1.000 Ergebnissen höhere Präzisionswerte als das zugrundeliegende Modell erzielt (62–95%), verschlechtert das optimierte Modell die Erkennung der Hauptklasse „Landkarte” (72%). Zudem kommen wir bei einzelnen Tierspezies, welche wir nebst den Hauptklassen ebenfalls annotiert haben, zu einem ähnlich heterogenen Ergebnis (vgl. Vignoli et al., 2024). Dies lässt sich zum einen auf die im für das 
                 <hi rend="italic">Transfer Learning</hi> verwendeten Datensatz stark variierende Anzahl der Beispiele pro Klasse zurückführen (Liu et al., 2023), zum anderen auf die Bildqualität sowie die Platzierung und Prominenz der zu erkennenden Klassen im Bild (Vignoli et al., 2024).
             </p>
-            <p style="text-align: left; ">Beim Einsatz der maschinellen Textanalyse, die im Zentrum dieses Vortrags steht, sind mehrere methodische wie inhaltliche Herausforderungen hervorzuheben. Zum einen betrifft das die Qualität der von uns verwendeten Volltexte, zum anderen den sprachlichen Zuschnitt der Algorithmen. Die automatische Textanalyse des ONiT-Projekts basiert größtenteils auf zum Teil fehlerhaften Volltexten, die mit 
+<p style="text-align: left; ">Beim Einsatz der maschinellen Textanalyse, die im Zentrum dieses Vortrags steht, sind mehrere methodische wie inhaltliche Herausforderungen hervorzuheben. Zum einen betrifft das die Qualität der von uns verwendeten Volltexte, zum anderen den sprachlichen Zuschnitt der Algorithmen. Die automatische Textanalyse des ONiT-Projekts basiert größtenteils auf zum Teil fehlerhaften Volltexten, die mit 
                 <hi rend="italic">Optical Character Recognition</hi> (OCR)-Verfahren im Rahmen des Austrian-Books-Online-Projekts (ABO), einer Kooperation der Österreichischen Nationalbibliothek mit Google Books, erstellt wurden (Fritze und Krickl, 2020). Unsere bisherigen Experimente zeigen, dass die zugegebenermaßen ausbaufähige Qualität der vorliegenden Daten unsere Analysen zwar beeinträchtigt, jedoch nicht negiert.
             </p>
-            <p style="text-align: left; ">Dennoch verfolgen wir einen 
+<p style="text-align: left; ">Dennoch verfolgen wir einen 
                 <hi rend="italic" xml:space="preserve">Information Retrieval </hi>Ansatz, der sich aktueller LLMs bedient, um die Qualität der Rohdaten zu verbessern und anzureichern (vgl. Singh et al. 2024). Wir experimentieren für die sogenannte Vorverarbeitung (
                 <hi rend="italic">Preprocessing</hi>) derzeit mit einem open source LLM (LlaMA3.1-70B<ref n="3" target="ftn3"/>), um die maschinenlesbaren Volltexte automatisiert zu bearbeiten. Dadurch sollen insbesondere diejenigen durch den OCR-Prozess entstandenen Artefakte und Fehlerkennungen behoben werden, die sich nicht mit regelbasierter Datenbereinigung (
                 <hi rend="italic">Regular Expressions</hi>) beheben lassen. (Abb. 1). 
             </p>
-            <figure>
-                <graphic n="1001" width="16.00023611111111cm" height="7.373055555555555cm" url="Pictures/0e8604204fbf6cd7e6ed605a7456288c.png" rend="inline"/>
-                <head>Abb. 1: Beispiel einer von der bereinigten OCR-Textversion aus Bergks Übersetzung von Sonninis
+<figure>
+<graphic height="7.373055555555555cm" n="1001" rend="inline" url="Pictures/0e8604204fbf6cd7e6ed605a7456288c.png" width="16.00023611111111cm"/>
+<head>Abb. 1: Beispiel einer von der bereinigten OCR-Textversion aus Bergks Übersetzung von Sonninis
                 <hi rend="italic" xml:space="preserve"> Reisen in Ober= und Niederägypten</hi> (S. 16, links im Bild) generierten Korrektur von LlaMA3.1-70B anhand des Masterprompts „
                 <hi rend="italic">You are a historian expert in historical German texts. Correct the following faulty OCR texts generated from historical traveolgues printed from the 17–19th century. […]</hi>” (rechts im Bild).
                 </head>
-            </figure>
-                <p>
-                <hi rend="italic" xml:space="preserve"> Reisen in Ober= und Niederägypten</hi> (S. 16, links im Bild) generierten Korrektur von LlaMA3.1-70B anhand des Masterprompts „
+</figure>
+<p>
+<hi rend="italic" xml:space="preserve"> Reisen in Ober= und Niederägypten</hi> (S. 16, links im Bild) generierten Korrektur von LlaMA3.1-70B anhand des Masterprompts „
                 <hi rend="italic">You are a historian expert in historical German texts. Correct the following faulty OCR texts generated from historical traveolgues printed from the 17–19th century. […]</hi>” (rechts im Bild).
             </p>
-            <p style="text-align: left; ">Für die folgende Indizierung werden die vorhandenen Volltexte in Teilstücke geteilt, mit einem 
+<p style="text-align: left; ">Für die folgende Indizierung werden die vorhandenen Volltexte in Teilstücke geteilt, mit einem 
                 <hi rend="italic">Sentence Encoder</hi> (
                 <hi rend="italic">Flax Sentence Embedding</hi><ref n="4" target="ftn4"/>) vektorisiert und in eine Vektor-Datenbank (
                 <hi rend="italic">Marqo</hi><ref n="5" target="ftn5"/>) geladen. Die einzelnen Buchseiten werden eingelesen und automatisch segmentiert, die dann jeweils vektorisiert und für die Ähnlichkeitssuche indiziert werden. Mit diesem Ansatz sollen die Texte – ähnlich wie die Bilder – durch Textabfragen semantisch durchsuchbar werden. Im Gegensatz zum von uns für die Bildanalyse angewandten 
                 <hi rend="italic">Transfer Learning</hi>, ist es in diesem 
                 <hi rend="italic">Zero-Shot</hi> Ansatz nicht notwendig, zuvor einen Trainingsdatensatz mit viel Ressourcenauwand zu erstellen. Zudem ermöglicht uns dieser Ansatz, Möglichkeiten zur Erschließung von Themenzusammenhängen und Bedeutungskontexten innerhalb unseres nicht zuletzt aufgrund der unterschiedlichen Sprachen stark heterogenen Textkorpus mittels moderner LLM-Technologie zu evaluieren.
             </p>
-            <p style="text-align: left; ">Da die meisten verfügbaren Algorithmen auf modernes Englisch zugeschnitten sind, ist die Verarbeitung anderer Sprachen (insbesondere nicht standardisierter historischer Sprachen) herausfordernder (z.B. Ehrmanntraut 2024). Mögliche Lösungsansätze für die übrigen Sprachen in unserem Korpus (d.h. Französisch und Latein) planen wir exemplarisch zu erkunden. In diesem Zusammenhang erproben wir das Potenzial aktueller Large Language Models wie LlaMA3, die immer besser mit (modernen) mehrsprachigen Quellen, etwa auf Deutsch und Französisch, umgehen können (Dhakal, 2024).</p>
-            <p style="text-align: left; ">In einem ersten Schritt wenden wir die Methode auf ausgewählte Referenzberichte an. Es handelt sich um solche Reiseberichte, die aufgrund ihrer zeitgenössischen Wirkmacht ausgewählt wurden, da sie in besonders vielen Auflagen und Übersetzungen in den von uns anvisierten Sprachen nachweisbar sind. Hierzu zählt Charles Sigisbert Sonninis (1751–1812) 
+<p style="text-align: left; ">Da die meisten verfügbaren Algorithmen auf modernes Englisch zugeschnitten sind, ist die Verarbeitung anderer Sprachen (insbesondere nicht standardisierter historischer Sprachen) herausfordernder (z.B. Ehrmanntraut 2024). Mögliche Lösungsansätze für die übrigen Sprachen in unserem Korpus (d.h. Französisch und Latein) planen wir exemplarisch zu erkunden. In diesem Zusammenhang erproben wir das Potenzial aktueller Large Language Models wie LlaMA3, die immer besser mit (modernen) mehrsprachigen Quellen, etwa auf Deutsch und Französisch, umgehen können (Dhakal, 2024).</p>
+<p style="text-align: left; ">In einem ersten Schritt wenden wir die Methode auf ausgewählte Referenzberichte an. Es handelt sich um solche Reiseberichte, die aufgrund ihrer zeitgenössischen Wirkmacht ausgewählt wurden, da sie in besonders vielen Auflagen und Übersetzungen in den von uns anvisierten Sprachen nachweisbar sind. Hierzu zählt Charles Sigisbert Sonninis (1751–1812) 
                 <hi rend="italic">Voyage dans la Haute et Basse Égypte</hi> (Reisen in Ober- und Niederägypten). Ein mehrbändiges Werk, das zunächst auf Französisch erschien (1798/99), und bald darauf von Henry Hunter (1741–1802) ins Englische (1799) und von Johann Adam Bergk (1769–1834) ins Deutsche (1800) übersetzt wurde. Für die unten zusammengefasste Analyse beschränken wir uns auf den ersten Band.
             </p>
-            <p style="text-align: left; ">Die Volltexte der ausgewählten Berichte werden in einem iterativen Prozess anhand eigens durch Expert:innen im ONiT-Team generierter Richtlinien manuell annotiert und überprüft. Hier liegt der Fokus auf jenen Textpassagen, die Flora, Fauna und Landkarten betreffen. Landschaften bleiben aufgrund ihrer semantischen Mehrdeutigkeit bei der Textanalyse außen vor. Die einzelnen Tierspezies erschließen wir hingegen auch hier in die Tiefe. In den Volltexten werden nicht einzelne Schlagworte, sondern ganze Textpassagen annotiert (d.h. zumindest ein ganzer Satz, teilweise erstrecken sich solche Passagen aber auch über mehrere Seiten). Ausnahmen sind Paratexte wie Inhaltsverzeichnisse, Überschriften und Druckmarginalien, in denen aufgrund ihrer semantischen Struktur auch einzelne oder wenige Wörter annotiert werden. Bei der Annotation operieren wir mit dem standardisierten Vokabular ICONCLASS, wobei bislang über fünfzig relevante Klassen zum Einsatz kamen. Die Anwendung von ICONCLASS in diesem Kontext ist eine innovative Leistung unseres Projekts, da das für Bilder entwickelte Vokabular unseres Wissens erstmals für Texte zum Einsatz gelangt.<ref n="6" target="ftn6"/>
-            </p>
-            <p style="text-align: left; ">In einem zweiten Schritt werden wiederkehrende Konzepte und Terminologien lokalisiert und verwandtes Beispielmaterial extrahiert, um die eingesetzten maschinellen Lernmodelle zur Anreicherung und Identifikation weiterer Textpassagen zu validieren. Hierbei experimentieren wir mit verschiedenen natürlichsprachlichen Abfragen (
+<p style="text-align: left; ">Die Volltexte der ausgewählten Berichte werden in einem iterativen Prozess anhand eigens durch Expert:innen im ONiT-Team generierter Richtlinien manuell annotiert und überprüft. Hier liegt der Fokus auf jenen Textpassagen, die Flora, Fauna und Landkarten betreffen. Landschaften bleiben aufgrund ihrer semantischen Mehrdeutigkeit bei der Textanalyse außen vor. Die einzelnen Tierspezies erschließen wir hingegen auch hier in die Tiefe. In den Volltexten werden nicht einzelne Schlagworte, sondern ganze Textpassagen annotiert (d.h. zumindest ein ganzer Satz, teilweise erstrecken sich solche Passagen aber auch über mehrere Seiten). Ausnahmen sind Paratexte wie Inhaltsverzeichnisse, Überschriften und Druckmarginalien, in denen aufgrund ihrer semantischen Struktur auch einzelne oder wenige Wörter annotiert werden. Bei der Annotation operieren wir mit dem standardisierten Vokabular ICONCLASS, wobei bislang über fünfzig relevante Klassen zum Einsatz kamen. Die Anwendung von ICONCLASS in diesem Kontext ist eine innovative Leistung unseres Projekts, da das für Bilder entwickelte Vokabular unseres Wissens erstmals für Texte zum Einsatz gelangt.<ref n="6" target="ftn6"/>
+</p>
+<p style="text-align: left; ">In einem zweiten Schritt werden wiederkehrende Konzepte und Terminologien lokalisiert und verwandtes Beispielmaterial extrahiert, um die eingesetzten maschinellen Lernmodelle zur Anreicherung und Identifikation weiterer Textpassagen zu validieren. Hierbei experimentieren wir mit verschiedenen natürlichsprachlichen Abfragen (
                 <hi rend="italic">Prompt Engineering</hi>), um die Fähigkeiten der vortrainierten Modelle anhand der einzelnen ausgewählten Reiseberichte zu testen und zu optimieren. Das Ziel ist, dieselben Modelle auf das übrige Korpus des ONiT-Projekts anzuwenden, um weitere Naturdarstellungen automatisiert zu erkennen.
             </p>
-            </div>
-                <div type="div1" rend="DH-Heading1">
-            <head>Zwischenergebnisse</head>
-            <p style="text-align: left; ">Erste Zwischenergebnisse unserer Experimente zeigen, dass das für 
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Zwischenergebnisse</head>
+<p style="text-align: left; ">Erste Zwischenergebnisse unserer Experimente zeigen, dass das für 
                 <hi rend="italic">Sentence Encoding</hi> verwendete Modell ohne 
                 <hi rend="italic">Transfer Learning</hi> zwar in der Lage ist, anhand der nachbearbeiteten Texte relevante Ergebnisse zu liefern. Letztere stimmen jedoch nur zum Teil mit den von uns manuell identifizierten Textstellen überein. Für eine erste Validierung der gewählten Methode führen wir zwei Varianten derselben Abfrage durch: erstens mit den mit den regelbasiert-bereinigten OCR Texten sowie zweitens mit der mittels LlaMA3 generierten Korrekturfassung der OCR Texte. Für die Hauptklassen „Tier” und „Pflanze”, welche wir in unserem annotierten Sonnini-Text jeweils 347 mal auf 215 Seiten (= 1,61 Annotationen pro relevanter Seite), respektive 186 mal auf 148 Seiten (= 1,26 Annotationen pro relevanter Seite) identifizierten, fördert der vortrainierte 
                 <hi rend="italic">Retriever</hi> anhand der bereinigten Texte unter den ersten zweihundert gereihten Ergebnissen nur etwa 25% der Seiten mit den von uns mit „Tier” annotierten Textpassagen (insgesamt 66 Vektoren auf 53 Seiten, welche 1,25 Vektoren pro relevanter Seite entsprechen) und 32% der mit „Pflanze” annotierten Seiten zutage (49 Vektoren auf 47 Seiten, = 1,04 Vektoren pro relevanter Seite).
             </p>
-            <p style="text-align: left; ">Ernüchternderweise lassen die Ergebnisse mit der LLM-korrigierten Fassung quantitativ keine Verbesserungen für die Erfolgsrate erkennen, da die Ergebnisse für beide Klassen mit jeweils 22% und 29% unter der Erfolgsrate mit den regelbasiert-bereinigten Texten liegen.<ref n="7" target="ftn7"/> Die äußerst niedrige Erfolgsrate bei der Suche nach Tieren und Pflanzen im Allgemeinen lässt sich darauf zurückführen, dass die Ergebnisse der hybriden Suche eine starke Tendenz haben, diejenigen Sätze weiter vorne zu reihen, die ebenfalls die gesuchten Stichwörter „Tier, Tiere” bzw. „Pflanze, Pflanzen” enthalten. Da in unserem annotierten Datensatz jedoch alle Nennungen von einzelnen Tier- und Pflanzenspezies mit den jeweiligen Hauptklassen „Tiere” und „Pflanzen” annotiert sind, fallen die Resultate dieser generellen Suchanfragen einseitig aus.
+<p style="text-align: left; ">Ernüchternderweise lassen die Ergebnisse mit der LLM-korrigierten Fassung quantitativ keine Verbesserungen für die Erfolgsrate erkennen, da die Ergebnisse für beide Klassen mit jeweils 22% und 29% unter der Erfolgsrate mit den regelbasiert-bereinigten Texten liegen.<ref n="7" target="ftn7"/> Die äußerst niedrige Erfolgsrate bei der Suche nach Tieren und Pflanzen im Allgemeinen lässt sich darauf zurückführen, dass die Ergebnisse der hybriden Suche eine starke Tendenz haben, diejenigen Sätze weiter vorne zu reihen, die ebenfalls die gesuchten Stichwörter „Tier, Tiere” bzw. „Pflanze, Pflanzen” enthalten. Da in unserem annotierten Datensatz jedoch alle Nennungen von einzelnen Tier- und Pflanzenspezies mit den jeweiligen Hauptklassen „Tiere” und „Pflanzen” annotiert sind, fallen die Resultate dieser generellen Suchanfragen einseitig aus.
             </p>
-            <p style="text-align: left; ">Bessere Ergebnisse konnten die von uns näher analysierten Tierklassen „Vogel” (91 Annotationen auf 72 Seiten) und „Pferd” (48 Annotationen auf 40 Seiten) erzielen. Bei diesen spezifischeren Suchanfragen vermag der Retriever in den regelbasiert-korrigierten Texten 56% der Seiten mit den von uns annotierten „Vögeln” und 67% der Seiten mit „Pferden” zu identifizieren. Jedoch verbessert auch hier die LLM-korrigierte Textfassung die Leistung des Retrievers, der lediglich 44% (Vögel) resp. 60% (Pferde) der von uns annotierten Seiten identifiziert, nicht. Obschon die mit spezifischen Tiernennungen erzielten Ergebnisse deutlich besser sind als allgemeine Suchanfragen mit demselben Modell, scheint der verwendete 
+<p style="text-align: left; ">Bessere Ergebnisse konnten die von uns näher analysierten Tierklassen „Vogel” (91 Annotationen auf 72 Seiten) und „Pferd” (48 Annotationen auf 40 Seiten) erzielen. Bei diesen spezifischeren Suchanfragen vermag der Retriever in den regelbasiert-korrigierten Texten 56% der Seiten mit den von uns annotierten „Vögeln” und 67% der Seiten mit „Pferden” zu identifizieren. Jedoch verbessert auch hier die LLM-korrigierte Textfassung die Leistung des Retrievers, der lediglich 44% (Vögel) resp. 60% (Pferde) der von uns annotierten Seiten identifiziert, nicht. Obschon die mit spezifischen Tiernennungen erzielten Ergebnisse deutlich besser sind als allgemeine Suchanfragen mit demselben Modell, scheint der verwendete 
                 <hi rend="italic">Sentence Encoder</hi> für die Textsprache nicht optimal geeignet zu sein, sofern er nicht nachtrainiert wird. Daher planen wir weitere Experimente mit anderen Sprachmodellen zur Vektorisierung der Texte.
             </p>
-                </div>
-            <div type="div1" rend="DH-Heading1">
-            <p style="text-align: left; ">Diskussion</p>
-            <p style="text-align: left; ">Unsere bisherigen Ergebnisse zeigen, dass moderne LLMs zumindest teilweise in der Lage sind, die durch das OCR-Verfahren eingeführten „Übersetzungsfehler“ vom digitalen Schriftbild in maschinenlesbare Schriftzeichen zu korrigieren. Jedoch deutet unsere vorläufige Ergebnisevaluation darauf hin, dass dies die Auffindbarkeit der Inhalte nicht verbessert. Es macht sich bemerkbar, dass die Modelle auf „moderne“ Sprachen optimiert sind, denn es besteht die Tendenz, das frühneuzeitliche Vokabular durch ein aktuell gebräuchliches zu ersetzen (Abb. 2). Dies kann zwar durch geeignete Anweisungen (
+</div>
+<div rend="DH-Heading1" type="div1">
+<p style="text-align: left; ">Diskussion</p>
+<p style="text-align: left; ">Unsere bisherigen Ergebnisse zeigen, dass moderne LLMs zumindest teilweise in der Lage sind, die durch das OCR-Verfahren eingeführten „Übersetzungsfehler“ vom digitalen Schriftbild in maschinenlesbare Schriftzeichen zu korrigieren. Jedoch deutet unsere vorläufige Ergebnisevaluation darauf hin, dass dies die Auffindbarkeit der Inhalte nicht verbessert. Es macht sich bemerkbar, dass die Modelle auf „moderne“ Sprachen optimiert sind, denn es besteht die Tendenz, das frühneuzeitliche Vokabular durch ein aktuell gebräuchliches zu ersetzen (Abb. 2). Dies kann zwar durch geeignete Anweisungen (
                 <hi rend="italic">Prompts</hi>) an das LLM beeinflusst werden, verändert jedoch mitunter die Orthografie und lexikale Elemente, was sich teils auf die semantische Bedeutungsebene auswirkt. Dazu zählen auch von den Modellen generierte Fehler und Ungenauigkeiten, die ohne menschlichen Eingriff unbemerkt bleiben (vgl. Singh et al. 2024). Die schlechteren Ergebnisse bei der Suche anhand der LLM-korrigierten Texte lassen sich unter anderem auf solche neu generierten Fehler zurückführen. Eine genauere qualitative Analyse und Validierung der Ergebnisse stehen diesbezüglich jedoch noch aus. 
             </p>
-            <figure>
-                <graphic n="1002" width="11.643430555555556cm" height="8.535458333333333cm" url="Pictures/16a14d10f4784917eccda282236a555e.png" rend="inline"/>
-                <head>Abb. 2: Screenshot des Prompts mit der fehlerhaften OCR eines Textbeispiels aus Bergks Übersetzung von Sonninis. <hi rend="italic">Reisen in Ober= und Niederägypten (Teil 2)</hi>, S. 14, und die resultierende Transkription von ChatGPT3 (Gratisversion).
+<figure>
+<graphic height="8.535458333333333cm" n="1002" rend="inline" url="Pictures/16a14d10f4784917eccda282236a555e.png" width="11.643430555555556cm"/>
+<head>Abb. 2: Screenshot des Prompts mit der fehlerhaften OCR eines Textbeispiels aus Bergks Übersetzung von Sonninis. <hi rend="italic">Reisen in Ober= und Niederägypten (Teil 2)</hi>, S. 14, und die resultierende Transkription von ChatGPT3 (Gratisversion).
                 </head>
-            </figure>
-            <p style="text-align: left; ">Eine weitere Einschränkung hängt mit der Art und Weise zusammen, wie die Resultate von komplexen statistischen Modellen erschlossen werden und wie die dadurch neu entstehende Heuristik und Ordnung der maschinell ausgewerteten Informationen die weitere Forschungsarbeit prägen. Transformer-Modelle wandeln die Merkmale der zu analysierenden Daten in Vektoren um, basierend auf deren Distanz ihre Ähnlichkeit mathematisch berechnet wird. Die dadurch entstehende Ordnung hängt davon ab, wie stark die erschlossene Ähnlichkeit der vektorisierten Merkmale mit unseren vordefinierten Klassen bzw. Sucheingaben übereinstimmen. Unsere Ergebnisse zu den Hauptklassen „Tier” und „Pflanze” verdeutlichen, dass der von uns gewählte Ansatz die Resultate dahingehend verzerrt, dass die Textvektoren, in denen der gesuchte Begriff wörtlich enthalten ist, zu einer höheren Übereinstimmung mit den Suchkriterien führt. Die Konsequenz ist, dass Nennungen spezifischer Tierklassen wie „Pferd” und „Vogel” bei einer generellen Suche nach „Tier, Tieren” tendenziell verloren gehen.</p>
-            <p style="text-align: left; ">Dennoch bieten ML-Modelle eine erhebliche Hilfe zur Erstellung einer ersten Ordnung nach Relevanz von Bild- und Textquellen, was insbesondere zur Exploration großer, bislang nicht erschlossener Daten-Korpora dienlich ist. Besonders bei großen Datensätzen besteht jedoch weiterhin enormer manueller Aufwand, sowohl bei der Annotation von Trainings- bzw. Validierungsdaten als auch bei der Evaluierung und Qualitätskontrolle der erschlossenen Inhalte. Dies wird deutlich, wenn die von unserem Text-
+</figure>
+<p style="text-align: left; ">Eine weitere Einschränkung hängt mit der Art und Weise zusammen, wie die Resultate von komplexen statistischen Modellen erschlossen werden und wie die dadurch neu entstehende Heuristik und Ordnung der maschinell ausgewerteten Informationen die weitere Forschungsarbeit prägen. Transformer-Modelle wandeln die Merkmale der zu analysierenden Daten in Vektoren um, basierend auf deren Distanz ihre Ähnlichkeit mathematisch berechnet wird. Die dadurch entstehende Ordnung hängt davon ab, wie stark die erschlossene Ähnlichkeit der vektorisierten Merkmale mit unseren vordefinierten Klassen bzw. Sucheingaben übereinstimmen. Unsere Ergebnisse zu den Hauptklassen „Tier” und „Pflanze” verdeutlichen, dass der von uns gewählte Ansatz die Resultate dahingehend verzerrt, dass die Textvektoren, in denen der gesuchte Begriff wörtlich enthalten ist, zu einer höheren Übereinstimmung mit den Suchkriterien führt. Die Konsequenz ist, dass Nennungen spezifischer Tierklassen wie „Pferd” und „Vogel” bei einer generellen Suche nach „Tier, Tieren” tendenziell verloren gehen.</p>
+<p style="text-align: left; ">Dennoch bieten ML-Modelle eine erhebliche Hilfe zur Erstellung einer ersten Ordnung nach Relevanz von Bild- und Textquellen, was insbesondere zur Exploration großer, bislang nicht erschlossener Daten-Korpora dienlich ist. Besonders bei großen Datensätzen besteht jedoch weiterhin enormer manueller Aufwand, sowohl bei der Annotation von Trainings- bzw. Validierungsdaten als auch bei der Evaluierung und Qualitätskontrolle der erschlossenen Inhalte. Dies wird deutlich, wenn die von unserem Text-
                 <hi rend="italic">Retriever</hi> erschlossenen Inhalte genauer beleuchtet werden. Obwohl die erstgereihten Ergebnisse der 200 gefundenen Textstellen vielfach gut mit der Suchanfrage übereinstimmen, müssen besonders die weiter hinten gereihten Resultate manuell überprüft und aussortiert werden. Für die hier präsentierte Suche in einem Werk mit Annotationen in der Größenordnung von jeweils 50–350 Textbeispielen pro Klasse bedeutet dies, dass in allen Fällen mehr als die Hälfte der erschlossenen Textvektoren für die Suche irrelevante Ergebnisse liefern und hierbei nicht alle annotierten Beispiele finden.
             </p>
-            <p style="text-align: left; ">Zum Abschluss möchten wir noch ein paar Überlegungen für die maschinell gestützte Suche nach intermedialen Inhalten anführen. Multimodale Modelle wie das von uns für die Bildanalyse verwendete CLIP-Modell ermöglichen die Suche nach Ähnlichkeiten über textuelle und piktoriale Grenzen hinweg (vgl. Vignoli et al., 2024). Durch die Integration eines solchen Modells in die von uns für die Textanalyse eingesetzten Vektordatenbank, ließen sich auch intermediale Zusammenhänge und wiederkehrenden Verbindungen zwischen den Bildern und Texten unseres Korpus maschinell erkunden. Inwieweit die dergestalt maschinell erschlossenen Zusammenhänge mit den für historische Fragestellungen relevanten Aspekten übereinstimmen, etwa ob bestimmte Tiere in den Texten oder Bildern prominenter behandelt werden, gilt es noch zu erkunden. Ein wichtiger Aspekt hierbei sind Verzerrungen (
+<p style="text-align: left; ">Zum Abschluss möchten wir noch ein paar Überlegungen für die maschinell gestützte Suche nach intermedialen Inhalten anführen. Multimodale Modelle wie das von uns für die Bildanalyse verwendete CLIP-Modell ermöglichen die Suche nach Ähnlichkeiten über textuelle und piktoriale Grenzen hinweg (vgl. Vignoli et al., 2024). Durch die Integration eines solchen Modells in die von uns für die Textanalyse eingesetzten Vektordatenbank, ließen sich auch intermediale Zusammenhänge und wiederkehrenden Verbindungen zwischen den Bildern und Texten unseres Korpus maschinell erkunden. Inwieweit die dergestalt maschinell erschlossenen Zusammenhänge mit den für historische Fragestellungen relevanten Aspekten übereinstimmen, etwa ob bestimmte Tiere in den Texten oder Bildern prominenter behandelt werden, gilt es noch zu erkunden. Ein wichtiger Aspekt hierbei sind Verzerrungen (
                 <hi rend="italic">Bias</hi>), welche die Modelle aufgrund ihrer Trainingsdaten einbringen. Aktuelle Transformer-Modelle, die auch in unserem Projekt zur Anwendung kommen, wurden ursprünglich anhand Milliarden moderner, aus dem Internet stammender Daten trainiert (z.B. Smits und Wevers, 2023; Shtedritski et al., 2023: 11994; Birhane et al., 2021). Entsprechend sind die anhand dieser Modelle erzielten Ergebnisse – sowohl bei 
                 <hi rend="italic">Information Retrieval</hi> als auch bei von LLMs generierten Inhalten – geprägt von den in den Trainingsdaten widerspiegelten Weltbildern, Semantik und Symbolik, und eben nicht den historischen Gegebenheiten zur Zeit der Entstehung der von uns untersuchten Reiseberichten (vgl. Mozilla Foundation 2022).
             </p>
-                </div>
-                    <div type="div1" rend="DH-Heading1">
-            <head>Conclusio und Ausblick</head>
-            <p style="text-align: left; ">Das Team des ONiT-Projekts ist überzeugt, dass der Einsatz von KI in den Geisteswissenschaften nicht aufzuhalten ist und in vielen Bereichen neue, bislang ungeahnte Möglichkeiten eröffnet. Unsere Experimente zeigen aber auch, dass das große Versprechen der Revolution der Geisteswissenschaften kritisch zu betrachten ist und der Einsatz von KI immer im Bewusstsein der Möglichkeiten und Grenzen der Methodik erfolgen muss. Die Algorithmen gelangen derzeit nur mit signifikantem Ressourceneinsatz – der mitunter das übersteigt, was eine klassische geisteswissenschaftliche Untersuchung desselben Quellenmaterials bedürfte – in die Nähe eines Vollständigkeitsanspruchs, den es in allen Wissenschaften zu bestreben gilt. Die Algorithmen operieren mit Wahrscheinlichkeiten, die durch Feinabstimmung (
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Conclusio und Ausblick</head>
+<p style="text-align: left; ">Das Team des ONiT-Projekts ist überzeugt, dass der Einsatz von KI in den Geisteswissenschaften nicht aufzuhalten ist und in vielen Bereichen neue, bislang ungeahnte Möglichkeiten eröffnet. Unsere Experimente zeigen aber auch, dass das große Versprechen der Revolution der Geisteswissenschaften kritisch zu betrachten ist und der Einsatz von KI immer im Bewusstsein der Möglichkeiten und Grenzen der Methodik erfolgen muss. Die Algorithmen gelangen derzeit nur mit signifikantem Ressourceneinsatz – der mitunter das übersteigt, was eine klassische geisteswissenschaftliche Untersuchung desselben Quellenmaterials bedürfte – in die Nähe eines Vollständigkeitsanspruchs, den es in allen Wissenschaften zu bestreben gilt. Die Algorithmen operieren mit Wahrscheinlichkeiten, die durch Feinabstimmung (
                 <hi rend="italic">Finetuning</hi>) mittels manuell kreierter ‚
                 <hi rend="italic">Ground Truth</hi>‘ teils zwar eine hohe Genauigkeit erreichen können. In den Fällen, wo dies etwa aufgrund von Daten- oder Ressourcenmangel nicht gelingt, wird nur ein Teil des anvisierten Quellenmaterials automatisiert erschlossen. Folglich verzerrt dies die Ergebnisse der Untersuchungen und die historiographische Repräsentation der Vergangenheit. Auch präzise Modelle sind weit davon entfernt, alle Vorkommnisse bestimmter Inhalte zu erschließen. Die Notwendigkeit manueller Arbeit zur Überprüfung der Ergebnisse bleibt vorhanden, insbesondere um falsche Positive auszusortieren und falsche Negative aufzuspüren. Welche Informationen nicht aufgefunden werden, bleibt vielfach noch ein weißer Fleck auf der Landkarte.
             </p>
-            <p style="text-align: left; ">Ähnlich wie viele Reisende der Frühen Neuzeit sehen wir solche weißen Flecken aber nicht als Hindernis weiterer Explorationen, sondern – im Gegenteil – als ihr Ansporn. Was und warum die Algorithmen bislang nicht auffinden können, gilt es genauso zu reflektieren wie Maßnahmen, die wir ergreifen können, um einem blinden Vertrauen in KI-Lösungen entgegenzuwirken. Je mehr hochqualitative, standardisierte Daten der Forschung frei zur Verfügung stehen, desto schneller und besser können wir die Algorithmen trainieren. Es bedarf an mehr Expertise in den Geisteswissenschaften, um solche Standardisierungen über fachliche, sprachliche und geographische Grenzen hinweg durchzusetzen, sowie einen reflektiert-kritisch und zielgerichteten Einsatz der Methodik, um einen langfristigen und nachhaltigen Umgang mit KI in der geisteswissenschaftlichen Forschung und darüber hinaus zu garantieren.</p>
-                    </div>
-        </body>
-        <back>
+<p style="text-align: left; ">Ähnlich wie viele Reisende der Frühen Neuzeit sehen wir solche weißen Flecken aber nicht als Hindernis weiterer Explorationen, sondern – im Gegenteil – als ihr Ansporn. Was und warum die Algorithmen bislang nicht auffinden können, gilt es genauso zu reflektieren wie Maßnahmen, die wir ergreifen können, um einem blinden Vertrauen in KI-Lösungen entgegenzuwirken. Je mehr hochqualitative, standardisierte Daten der Forschung frei zur Verfügung stehen, desto schneller und besser können wir die Algorithmen trainieren. Es bedarf an mehr Expertise in den Geisteswissenschaften, um solche Standardisierungen über fachliche, sprachliche und geographische Grenzen hinweg durchzusetzen, sowie einen reflektiert-kritisch und zielgerichteten Einsatz der Methodik, um einen langfristigen und nachhaltigen Umgang mit KI in der geisteswissenschaftlichen Forschung und darüber hinaus zu garantieren.</p>
+</div>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
-                    
-                        <hi style="font-size:10pt" xml:space="preserve"> https://openai.com/chatgpt/.</hi>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
-                    
-                        <hi style="font-size:10pt" xml:space="preserve"> https://onit.oeaw.ac.at/.</hi>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn3" n="3">
-                    
-                        <hi style="font-size:10pt" xml:space="preserve"> https://llama.meta.com/llama3/.</hi>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn4" n="4">
-                    
-                        <hi style="font-size:10pt" xml:space="preserve"> https://huggingface.co/flax-sentence-embeddings/all_datasets_v4_mpnet-base.</hi>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn5" n="5">
-                    
-                        <hi style="font-size:10pt" xml:space="preserve"> https://www.marqo.ai/.</hi>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn6" n="6">
-                    
-                        <hi style="font-size:10pt" xml:space="preserve"> Eine Übersicht von Projekten, die das ICONCLASS Vokabular einsetzen, findet sich hier: https://iconclass.org/help/aboutc.</hi>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn7" n="7">
-                    
-                        <hi style="font-size:10pt" xml:space="preserve"> Die Validierung dieser vorläufigen Ergebnisse steht noch aus und wird für die Präsentation an der Konferenz nachgereicht.</hi>
-                    
-                </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl>
-                        <hi rend="bold">Birhane, Abeba, Vinay Uday Prabhu und Emmanuel Kahembwe</hi>. 2021. "Multimodal Datasets: Misogyny, Pornography, and Malignant Stereotypes." 
+<note n="1" rend="footnote text" xml:id="ftn1">
+<hi style="font-size:10pt" xml:space="preserve"> https://openai.com/chatgpt/.</hi>
+</note>
+<note n="2" rend="footnote text" xml:id="ftn2">
+<hi style="font-size:10pt" xml:space="preserve"> https://onit.oeaw.ac.at/.</hi>
+</note>
+<note n="3" rend="footnote text" xml:id="ftn3">
+<hi style="font-size:10pt" xml:space="preserve"> https://llama.meta.com/llama3/.</hi>
+</note>
+<note n="4" rend="footnote text" xml:id="ftn4">
+<hi style="font-size:10pt" xml:space="preserve"> https://huggingface.co/flax-sentence-embeddings/all_datasets_v4_mpnet-base.</hi>
+</note>
+<note n="5" rend="footnote text" xml:id="ftn5">
+<hi style="font-size:10pt" xml:space="preserve"> https://www.marqo.ai/.</hi>
+</note>
+<note n="6" rend="footnote text" xml:id="ftn6">
+<hi style="font-size:10pt" xml:space="preserve"> Eine Übersicht von Projekten, die das ICONCLASS Vokabular einsetzen, findet sich hier: https://iconclass.org/help/aboutc.</hi>
+</note>
+<note n="7" rend="footnote text" xml:id="ftn7">
+<hi style="font-size:10pt" xml:space="preserve"> Die Validierung dieser vorläufigen Ergebnisse steht noch aus und wird für die Präsentation an der Konferenz nachgereicht.</hi>
+</note></div>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl>
+<hi rend="bold">Birhane, Abeba, Vinay Uday Prabhu und Emmanuel Kahembwe</hi>. 2021. "Multimodal Datasets: Misogyny, Pornography, and Malignant Stereotypes." 
                         <hi rend="italic">arXiv</hi>, 5. Oktober. doi:10.48550/arXiv.2110.01963.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Cetinic, Eva, Tomislav Lipic und Sonja Grgic</hi>. 2019. "A Deep Learning Perspective on Beauty, Sentiment, and Remembrance of Art." 
+<bibl>
+<hi rend="bold">Cetinic, Eva, Tomislav Lipic und Sonja Grgic</hi>. 2019. "A Deep Learning Perspective on Beauty, Sentiment, and Remembrance of Art." 
                         <hi rend="italic">IEEE Access</hi> 7: 73694–73710. doi:10.1109/ACCESS.2019.2921101.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Dhakal, Shreeya</hi>. 2024. 
+<bibl>
+<hi rend="bold">Dhakal, Shreeya</hi>. 2024. 
                         <hi rend="italic">Exploring Multilingual Aspects and Vocabulary of LLaMA 3 Compared to LLaMA 2</hi>. In: Icodeformybhasa, 22. April. https://www.icodeformybhasa.com/p/exploring-multilingual-aspects-and (zugegriffen: 02. Dezember 2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Ehrmanntraut, Anton</hi>. 2024. "Historical German Text Normalization Using Type- and Token-Based Language Modeling." 
+<bibl>
+<hi rend="bold">Ehrmanntraut, Anton</hi>. 2024. "Historical German Text Normalization Using Type- and Token-Based Language Modeling." 
                         <hi rend="italic">arXiv</hi>, 4. September. doi:10.48550/arXiv.2409.02841.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Fritze, Christiane und Martin Krickl</hi>. 2020. "Austrian Books Online – Acht Jahre Digitalisierung des historischen Buchbestandes der Österreichischen Nationalbibliothek mit Google." 
+<bibl>
+<hi rend="bold">Fritze, Christiane und Martin Krickl</hi>. 2020. "Austrian Books Online – Acht Jahre Digitalisierung des historischen Buchbestandes der Österreichischen Nationalbibliothek mit Google." 
                         <hi rend="italic">Bibliothek Forschung und Praxis</hi> 44,1: 89–99. doi:10.1515/bfp-2020-0008.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Im, Chanjong, Yongho Kim und Thomas Mandl</hi>. 2022. "Deep Learning for Historical Books: Classification of Printing Technology for Digitized Images." 
+<bibl>
+<hi rend="bold">Im, Chanjong, Yongho Kim und Thomas Mandl</hi>. 2022. "Deep Learning for Historical Books: Classification of Printing Technology for Digitized Images." 
                         <hi rend="italic">Multimedia Tools and Applications</hi> 81,4: 5867–5888. doi:10.1007/s11042-021-11754-7.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Liu, Yang, Guoping Yang, Shaojie Qiao, Meiqi Liu, Lulu Qu, Nan Han et al</hi>. 2023. "Imbalanced Data Classification: Using Transfer Learning and Active Sampling." 
+<bibl>
+<hi rend="bold">Liu, Yang, Guoping Yang, Shaojie Qiao, Meiqi Liu, Lulu Qu, Nan Han et al</hi>. 2023. "Imbalanced Data Classification: Using Transfer Learning and Active Sampling." 
                         <hi rend="italic">Engineering Applications of Artificial Intelligence</hi> 117, Part B (2023): Article 105621 doi:
                         <ref target="https://doi.org/10.1016/j.engappai.2022.105621">10.1016/j.engappai.2022.105621</ref>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Moretti, Franco</hi>. 2013. 
+</bibl>
+<bibl>
+<hi rend="bold">Moretti, Franco</hi>. 2013. 
                         <hi rend="italic">Distant Reading</hi>. London/New York: Verso.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Mozilla Foundation</hi>. 2000. 
+<bibl>
+<hi rend="bold">Mozilla Foundation</hi>. 2000. 
                         <hi rend="italic">Internet Health Report 2022. Who Has Power Over AI?</hi> In: Internet Health Report 2022, https://2022.internethealthreport.org/facts/ (zugegriffen: 02. Dezember 2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Radford, Alec, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, et al</hi>. 2021. "Learning Transferable Visual Models From Natural Language Supervision." In 
+<bibl>
+<hi rend="bold">Radford, Alec, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, et al</hi>. 2021. "Learning Transferable Visual Models From Natural Language Supervision." In 
                         <hi rend="italic">Proceedings of Machine Learning Research (PMLR)</hi> 139:8748–8763.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Saleh, Babak und Ahmed Elgammal</hi>. 2016. "Large-scale Classification of Fine-Art Paintings: Learning The Right Metric on The Right Feature." 
+<bibl>
+<hi rend="bold">Saleh, Babak und Ahmed Elgammal</hi>. 2016. "Large-scale Classification of Fine-Art Paintings: Learning The Right Metric on The Right Feature." 
                         <hi rend="italic">International Journal for Digital Art History</hi> 2. doi:10.11588/DAH.2016.2.23376.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Shtedritski, Aleksandar, Christian Rupprecht und Andrea Vedaldi</hi>. 2023. "What Does CLIP Know about a Red Circle? Visual Prompt Engineering for VLMs." In 
+<bibl>
+<hi rend="bold">Shtedritski, Aleksandar, Christian Rupprecht und Andrea Vedaldi</hi>. 2023. "What Does CLIP Know about a Red Circle? Visual Prompt Engineering for VLMs." In 
                         <hi rend="italic">Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)</hi>, 11987–11997 doi:10.48550/arXiv.2304.06712.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Singh, Ayush, Navpreet Singh und Shubham Vatsal</hi>. 2024. "Robustness of LLMs to Perturbations in Text." 
+<bibl>
+<hi rend="bold">Singh, Ayush, Navpreet Singh und Shubham Vatsal</hi>. 2024. "Robustness of LLMs to Perturbations in Text." 
                         <hi rend="italic">arXiv</hi>, 12. Juli. doi:10.48550/arXiv.2407.08989
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Smits, Thomas und Melvin Wevers</hi>. 2023. "A Multimodal Turn in Digital Humanities. Using Contrastive Machine Learning Models to Explore, Enrich, and Analyze Digital Visual Historical Collections." 
+<bibl>
+<hi rend="bold">Smits, Thomas und Melvin Wevers</hi>. 2023. "A Multimodal Turn in Digital Humanities. Using Contrastive Machine Learning Models to Explore, Enrich, and Analyze Digital Visual Historical Collections." 
                         <hi rend="italic">Digital Scholarship in the Humanities</hi> 38,3: 1267–1280. doi:10.1093/llc/fqad008.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Sonnini, Charles Sigisbert</hi>. 1798/99. 
+<bibl>
+<hi rend="bold">Sonnini, Charles Sigisbert</hi>. 1798/99. 
                         <hi rend="italic">Voyage Dans La Haute Et Basse Égypte, Fait Par Ordre De L’Ancien Gouvernement, Et Contenant Des Observations De Tous Genres: Avec une Collection de 40 Planches, gravées en taille-douce par J. B. P. Tardieu, contenant des Portraits, Vues, Plans, Carte Géographique, Antiquités, Plantes, Animaux, etc. dessinées sur les lieux, sous les yeux de l’Auteur</hi>, 3 Bde., Paris: F. Buisson.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Sonnini, Charles Sigisbert</hi>. 1799. 
+<bibl>
+<hi rend="bold">Sonnini, Charles Sigisbert</hi>. 1799. 
                         <hi rend="italic">Travels in Upper and Lower Egypt: Undertaken by Order of the Old Government of France; by C. S. Sonnini, Engineer in the French Navy, and Member of Several Scientific and Literary Societies. Illustrated with Forty Engravings; Consisting of Portraits, Views, Plans, a Geographical Chart, Antiquities, Plants, Animals, &amp;c. Drawn on the Spot, under the Author’s Inspection.</hi> […]. 3 Bde., aus dem Französischen von Henry Hunter, London: John Stockdale und T. Gillet.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Sonnini, Charles Sigisbert</hi>. 1800. 
+<bibl>
+<hi rend="bold">Sonnini, Charles Sigisbert</hi>. 1800. 
                         <hi rend="italic">C. S. Sonnini’s, ehemaligen Offiziers und Jngenieurs des französischen Seewesens und Mitgliedes mehrerer gelehrten und litterarischen Gesellschaften, Reisen in Ober= und Niederägypten, auf Befehl der ehemaligen Regierung in Frankreich unternommen. Nebst einem Auszuge aus des Bürger’s Carl Norry, Mitgliedes der philotechnischen Gesellschaft, Bemerkungen über Aegypten</hi> […], 2 Bde., aus dem Französischen von Johann Adam Bergk, Leipzig und Gera: Wilhelm Heinsius.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser und Illia Polosukhin</hi>. 2017. "Attention is all you need." In 
+<bibl>
+<hi rend="bold">Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser und Illia Polosukhin</hi>. 2017. "Attention is all you need." In 
                         <hi rend="italic" xml:space="preserve">Proceedings of the 31st International Conference on Neural Information Processing Systems </hi>(= NIPS’17), 6000–6010.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Vignoli, Michela, Doris Gruber und Michael Seidl</hi>. 2024. "Revolution or Evolution? AI-Driven Retrieval of Nature Representations in Historical Prints." In 
+<bibl>
+<hi rend="bold">Vignoli, Michela, Doris Gruber und Michael Seidl</hi>. 2024. "Revolution or Evolution? AI-Driven Retrieval of Nature Representations in Historical Prints." In 
                         <hi rend="italic">Proceedings of the DH2023 Conference</hi> (= DSH Special Issue), in Begutachtung.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Vignoli, Michela, Doris Gruber und Rainer Simon</hi>. 2023a. "Revolution or Evolution? AI-Driven Image Classification of Historical Prints." In 
+<bibl>
+<hi rend="bold">Vignoli, Michela, Doris Gruber und Rainer Simon</hi>. 2023a. "Revolution or Evolution? AI-Driven Image Classification of Historical Prints." In 
                         <hi rend="italic">Digital Humanities 2023: Book of Abstracts</hi>, hg. von Anne Baillot, Toma Tasovac, Warter Scholger, und Georg Vogeler, 184–185. Graz: Universität Graz. doi:10.5281/zenodo.7961822.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Vignoli, Michela, Doris Gruber, Rainer Simon und Axel Weißenfeld</hi>. 2023b. "Impact of AI: Gamechanger for Image Classification in Historical Research?" In 
+<bibl>
+<hi rend="bold">Vignoli, Michela, Doris Gruber, Rainer Simon und Axel Weißenfeld</hi>. 2023b. "Impact of AI: Gamechanger for Image Classification in Historical Research?" In 
                         <hi rend="italic">Digitale Methoden in der geschichtswissenschaftlichen Praxis: Fachliche Transformationen und ihre epistemologischen Konsequenzen: Konferenzbeiträge der Digital History 2023, Berlin, 23.–26.5.2023</hi>, hg. von Melanie Althage, Martin Dröge, Torsten Hiltmann, und Claudia Prinz. doi: 10.5281/zenodo.8322398.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Yang, Yixin, Zheng Li, Qingxiu Dong, Heming Xia und Zhifang Sui</hi>. 2024. "Can Large Multimodal Models Uncover Deep Semantics Behind Images?" 
+<bibl>
+<hi rend="bold">Yang, Yixin, Zheng Li, Qingxiu Dong, Heming Xia und Zhifang Sui</hi>. 2024. "Can Large Multimodal Models Uncover Deep Semantics Behind Images?" 
                         <hi rend="italic">arXiv</hi>, 20. Juni. doi:10.48550/arXiv.2402.11281.
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

@@ -1,456 +1,419 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xml:id="SCHMIDT_Thomas_Fanfictions___Literatur_von_Frauen__ber_M_nne" xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Fanfictions – Literatur von Frauen über Männer? Korpusbasierte Analyse der Geschlechterrollen bei Texten und Autor*innen deutschsprachiger Fanfictions</title>
-                <author>
-                    <persName>
-                        <surname>Schmidt</surname>
-                        <forename>Thomas</forename>
-                    </persName>
-                    <affiliation>Lehrstuhl für Medieninformatik, Universität Regensburg, Deutschland</affiliation>
-                    <email>thomas.schmidt@ur.de</email>
-                    <idno type="ORCID">0000-0001-7171-8106</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Sasse</surname>
-                        <forename>Jonathan</forename>
-                    </persName>
-                    <affiliation>Lehrstuhl für Medieninformatik, Universität Regensburg, Deutschland</affiliation>
-                    <email>jonathan.sasse@ur.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Wolff</surname>
-                        <forename>Christian</forename>
-                    </persName>
-                    <affiliation>Lehrstuhl für Medieninformatik, Universität Regensburg, Deutschland</affiliation>
-                    <email>christian.wolff@ur.de</email>
-                    <idno type="ORCID">0000-0001-7278-8595</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2023-06-13T14:32:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Digital Humanities Passau</publisher>
-                <address>
-                    <addrLine>Universität Passau</addrLine>
-                    <addrLine>Innstraße 41</addrLine>
-                    <addrLine>D-94032 Passau</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Fanfiction</term>
-                    <term>Gender</term>
-                    <term>Fan Studies</term>
-                    <term>Internet Studies</term>
-                    <term>Social Media</term>
-                    <term>NER</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Sammlung</term>
-                    <term>Inhaltsanalyse</term>
-                    <term>Literatur</term>
-                    <term>Metadaten</term>
-                    <term>benannte Entitäten (named entities)</term>
-                    <term>Text</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p style="text-align: left; ">Fanfictions sind literarische Texte, erstellt von Fans und Hobby-Autor*innen, die Figuren und Geschichten aus bereits bestehenden Medien wie Filmen oder Büchern nutzen, um neue Geschichten über diese zu schreiben und auf Online-Plattformen zu veröffentlichen (Dym et al., 2018). Dieses spezielle literarische Genre wurde in den letzten Dekaden mit dem Aufstieg des Internets immer populärer und deswegen auch vielseitig in den Geistes- und Kulturwissenschaften in Hinblick auf Geschichte und kulturellen Einfluss untersucht (siehe Hellekson und Busse, 2006; Jamison, 2013). Die Verfügbarkeit von großen narrativen Textmengen mit detaillierten Metadaten macht Fanfictions auch zu einer beliebten Quelle für verschiedene Aufgaben im 
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Fanfictions – Literatur von Frauen über Männer? Korpusbasierte Analyse der Geschlechterrollen bei Texten und Autor*innen deutschsprachiger Fanfictions</title>
+<author>
+<persName>
+<surname>Schmidt</surname>
+<forename>Thomas</forename>
+</persName>
+<affiliation>Lehrstuhl für Medieninformatik, Universität Regensburg, Deutschland</affiliation>
+<email>thomas.schmidt@ur.de</email>
+<idno type="ORCID">0000-0001-7171-8106</idno>
+</author>
+<author>
+<persName>
+<surname>Sasse</surname>
+<forename>Jonathan</forename>
+</persName>
+<affiliation>Lehrstuhl für Medieninformatik, Universität Regensburg, Deutschland</affiliation>
+<email>jonathan.sasse@ur.de</email>
+</author>
+<author>
+<persName>
+<surname>Wolff</surname>
+<forename>Christian</forename>
+</persName>
+<affiliation>Lehrstuhl für Medieninformatik, Universität Regensburg, Deutschland</affiliation>
+<email>christian.wolff@ur.de</email>
+<idno type="ORCID">0000-0001-7278-8595</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2023-06-13T14:32:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Digital Humanities Passau</publisher>
+<address>
+<addrLine>Universität Passau</addrLine>
+<addrLine>Innstraße 41</addrLine>
+<addrLine>D-94032 Passau</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/10698285</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Vortrag</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Fanfiction</term>
+<term>Gender</term>
+<term>Fan Studies</term>
+<term>Internet Studies</term>
+<term>Social Media</term>
+<term>NER</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Sammlung</term>
+<term>Inhaltsanalyse</term>
+<term>Literatur</term>
+<term>Metadaten</term>
+<term>benannte Entitäten (named entities)</term>
+<term>Text</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Einleitung</head>
+<p style="text-align: left; ">Fanfictions sind literarische Texte, erstellt von Fans und Hobby-Autor*innen, die Figuren und Geschichten aus bereits bestehenden Medien wie Filmen oder Büchern nutzen, um neue Geschichten über diese zu schreiben und auf Online-Plattformen zu veröffentlichen (Dym et al., 2018). Dieses spezielle literarische Genre wurde in den letzten Dekaden mit dem Aufstieg des Internets immer populärer und deswegen auch vielseitig in den Geistes- und Kulturwissenschaften in Hinblick auf Geschichte und kulturellen Einfluss untersucht (siehe Hellekson und Busse, 2006; Jamison, 2013). Die Verfügbarkeit von großen narrativen Textmengen mit detaillierten Metadaten macht Fanfictions auch zu einer beliebten Quelle für verschiedene Aufgaben im 
                     <hi rend="italic">Natural Language Processing</hi> (NLP) (z.B. Muttenthaler et al., 2019; Kim und Klinger, 2019; Zhang et al., 2019). In den Digital Humanities werden mit computergestützten Methoden Fragen wie der Einfluss sozialer Aspekte auf Sprache (Frens et al., 2018; Rebora et al., 2021), Intertextualität (Milli und Bamman, 2016; Kleindienst und Schmidt, 2020; Cuntz-Leng et al., 2023), kulturelle Entwicklung (Pianzola et al., 2020), nationale Besonderheiten von Fanfictions (Schmidt et al., 2021b), Fan-Kultur (Yin et al., 2017; Kleindienst et al., 2022), Autor*innen und Leser*innen-Netzwerke (Carvallo und Parra, 2020) sowie Charakter-Netzwerke (Schmidt et al., 2022) untersucht.
                 </p>
-                <p style="text-align: left; ">Geschlechtsspezifische Fragestellungen spielen eine wichtige Rolle im Kontext von Fanfictions. Bisherige Analysen für mehrheitlich englischsprachige Texte deuten auf eine erhöhte weibliche Autorschaft in diesem Genre hin (Barnes, 2015; Duggan, 2020). Motivation und Bedeutung für die Popularität von Slash-Fanfictions (Fanfictions mit Fokus auf homo-romantischen Beziehungen zwischen Männern) und damit die Dominanz von männlichen und Vernachlässigung weiblicher Figuren wurden vielfach anhand begrenzter Mengen von Texten diskutiert (Jung, 2002; Tosenberger, 2008; Rossdal, 2015; Busse und Lothian, 2017). Dem entgegen argumentiert andere Forschung mit ähnlichem methodischem Zugang („close reading“, vgl. Busse, 2009; Leow, 2011; Handley, 2012; Duggan, 2017; 2020; 2022), dass die Autorschaft wesentlich diverser ist und weibliche Charaktere eine wichtige und nicht-stereotype Rolle spielen. Derartige Analysen werden computergestützt in größeren Rahmen auch von den Untersuchungen von Milli und Bamman (2016) getragen, während Fast et al. (2016) eine stereotype und negative Repräsentation von weiblichen Figuren identifizieren.</p>
-                <p style="text-align: left; ">Wir präsentieren im Folgenden die Ergebnisse eines Projekts, dass die bisher vorliegenden computergestützten Analysen mit Fokus auf den deutschsprachigen Bereich weiterführt. Unsere Forschungsbeiträge sind (1) die Akquise und Bereitstellung eines strukturierten Korpus speziell für die Analyse deutschsprachiger Texte und Communites, (2) allgemeine Korpus- und Metadatenanalysen und (3) erste Analysen zur Verteilung von Geschlechtern bezüglich Figuren und Autor*innen in diesem Korpus.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Korpusakquise</head>
-                <p style="text-align: left; ">Als Plattformen für die Korpusakquise wurden Fanfiktion.de (FF.de)<ref n="1" target="ftn1"/> und Archive of Our Own (AO3)<ref n="2" target="ftn2"/> gewählt. FF.de gilt als die größte deutschsprachige Fanfiction-Plattform und AO3 als eine der populärsten internationalen Plattformen, die allerdings nur eine verhältnismäßig kleine Menge deutschsprachiger Inhalte aufweist. Dennoch ist AO3 eine bedeutende Plattform für die Fanfictions-Forschung und wir planen in Zukunft die Akquise von weiterem deutschsprachigem Material für vergleichsbasierte Analysen.
+<p style="text-align: left; ">Geschlechtsspezifische Fragestellungen spielen eine wichtige Rolle im Kontext von Fanfictions. Bisherige Analysen für mehrheitlich englischsprachige Texte deuten auf eine erhöhte weibliche Autorschaft in diesem Genre hin (Barnes, 2015; Duggan, 2020). Motivation und Bedeutung für die Popularität von Slash-Fanfictions (Fanfictions mit Fokus auf homo-romantischen Beziehungen zwischen Männern) und damit die Dominanz von männlichen und Vernachlässigung weiblicher Figuren wurden vielfach anhand begrenzter Mengen von Texten diskutiert (Jung, 2002; Tosenberger, 2008; Rossdal, 2015; Busse und Lothian, 2017). Dem entgegen argumentiert andere Forschung mit ähnlichem methodischem Zugang („close reading“, vgl. Busse, 2009; Leow, 2011; Handley, 2012; Duggan, 2017; 2020; 2022), dass die Autorschaft wesentlich diverser ist und weibliche Charaktere eine wichtige und nicht-stereotype Rolle spielen. Derartige Analysen werden computergestützt in größeren Rahmen auch von den Untersuchungen von Milli und Bamman (2016) getragen, während Fast et al. (2016) eine stereotype und negative Repräsentation von weiblichen Figuren identifizieren.</p>
+<p style="text-align: left; ">Wir präsentieren im Folgenden die Ergebnisse eines Projekts, dass die bisher vorliegenden computergestützten Analysen mit Fokus auf den deutschsprachigen Bereich weiterführt. Unsere Forschungsbeiträge sind (1) die Akquise und Bereitstellung eines strukturierten Korpus speziell für die Analyse deutschsprachiger Texte und Communites, (2) allgemeine Korpus- und Metadatenanalysen und (3) erste Analysen zur Verteilung von Geschlechtern bezüglich Figuren und Autor*innen in diesem Korpus.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Korpusakquise</head>
+<p style="text-align: left; ">Als Plattformen für die Korpusakquise wurden Fanfiktion.de (FF.de)<ref n="1" target="ftn1"/> und Archive of Our Own (AO3)<ref n="2" target="ftn2"/> gewählt. FF.de gilt als die größte deutschsprachige Fanfiction-Plattform und AO3 als eine der populärsten internationalen Plattformen, die allerdings nur eine verhältnismäßig kleine Menge deutschsprachiger Inhalte aufweist. Dennoch ist AO3 eine bedeutende Plattform für die Fanfictions-Forschung und wir planen in Zukunft die Akquise von weiterem deutschsprachigem Material für vergleichsbasierte Analysen.
                 </p>
-                <p style="text-align: left; ">Die Inhalte beider Plattformen (Texte, Metadaten, Kommentare/Reviews, Nutzer*innen-Profile) wurden mittels 
+<p style="text-align: left; ">Die Inhalte beider Plattformen (Texte, Metadaten, Kommentare/Reviews, Nutzer*innen-Profile) wurden mittels 
                     <hi rend="italic">Scrapy</hi><ref n="3" target="ftn3"/>
-                    <hi rend="italic">,</hi> einem Python-Framework für Web-Crawling im August 2022 akquiriert (im Fall von AO3 zusätzlich mit Hilfe von Metadaten-Filter auf den deutschsprachigen Inhalt reduziert). Die relevanten Inhalte der HTML-Seiten wurden in das JSON-Format umgewandelt und in einer 
+<hi rend="italic">,</hi> einem Python-Framework für Web-Crawling im August 2022 akquiriert (im Fall von AO3 zusätzlich mit Hilfe von Metadaten-Filter auf den deutschsprachigen Inhalt reduziert). Die relevanten Inhalte der HTML-Seiten wurden in das JSON-Format umgewandelt und in einer 
                     <hi rend="italic">MongoDB</hi>-Instanz gesichert.<ref n="4" target="ftn4"/> Die grundlegende Repräsentation von Fanfictions auf beiden Plattformen ist ähnlich: Fanfictions setzen sich aus Kapiteln, ihren Texten sowie Metadaten zusammen. Einige Metadaten beider Plattformen sind identisch und lassen sich direkt aufeinander abbilden. Der Umgang mit nicht-kongruenten Metadaten wird im Folgendem explizit angesprochen. Für die nachfolgende Korpusanalyse wurden Fanfictions ausgesondert, die entweder keinen oder nur vernachlässigbar wenig Inhalt enthielten sowie solche, die ausschließlich aus Bildern oder URLs bestanden.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Allgemeine Korpusanalyse</head>
-                <p style="text-align: left; ">Tabelle 1 illustriert die allgemeinen Statistiken des Korpus in Summe und aufgeteilt nach Plattform. Mit 394.848 einzelnen Fanfictions liefert FF.de im Vergleich zu AO3 (18.075) deutlich mehr deutschsprachigen Inhalt. In beiden Plattformen muss man sich mittels eindeutigem Nutzernamen anmelden, um Texte zu posten oder damit in Kommentaren und Bewertungen zu interagieren – hierauf beziehen sich die Nutzerstatistiken. Als Reviews bezeichnen wir im Folgenden Kommentare. Token-Statistiken wurden mittels 
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Allgemeine Korpusanalyse</head>
+<p style="text-align: left; ">Tabelle 1 illustriert die allgemeinen Statistiken des Korpus in Summe und aufgeteilt nach Plattform. Mit 394.848 einzelnen Fanfictions liefert FF.de im Vergleich zu AO3 (18.075) deutlich mehr deutschsprachigen Inhalt. In beiden Plattformen muss man sich mittels eindeutigem Nutzernamen anmelden, um Texte zu posten oder damit in Kommentaren und Bewertungen zu interagieren – hierauf beziehen sich die Nutzerstatistiken. Als Reviews bezeichnen wir im Folgenden Kommentare. Token-Statistiken wurden mittels 
                     <hi rend="italic">Spacy</hi><ref n="5" target="ftn5"/> berechnet. Im Durchschnitt besteht eine Fanfiction aus 8.487 Tokens, die längste Fanfiction hat eine Länge von 4.106.713 Tokens. 
                 </p>
-                <figure>
-                    <head>Tabelle 1: Allgemeine Korpusstatistiken.</head>
-                    <graphic n="1001" width="16.002cm" height="5.882569444444444cm" url="Pictures/800913323eb79a31bc795110bfd49318.png" rend="inline"/>
-                </figure>
-
-                <p style="text-align: left; ">Als Fandom wird die mediale Referenz, also das fiktionale Universum bzw. Thematik bezeichnet, in dem eine Fanfiction spielt. Tabelle 2 und 3 illustrieren die Top 10 Fandoms für FF.de und AO3 respektive.</p>
-                <figure>
-                    <head>Tabelle 2: Top 10 Fandoms in Fanfiktion.de.</head>
-                   
-                    <graphic n="1002" width="8.149927777777778cm" height="10.55573888888889cm" url="Pictures/e12e9ad7ca909d6695b9e173a3e70d15.png" rend="inline"/>
-                </figure>
-
-                <figure>
-                    <head>Tabelle 3: Top 10 Fandoms in Archive of our Own.</head>
-                    
-                    <graphic n="1003" width="11.083366666666667cm" height="9.392516666666667cm" url="Pictures/306938d81b7e44ae354ef0479c3e0ce1.png" rend="inline"/>
-                </figure>
-        
-                <p style="text-align: left; ">Die grundsätzlichen Fandom-Verteilungen verhalten sich konform zu Analysen auf größeren englischsprachigen Plattformen mit Fandoms wie Harry Potter, Marvel und Supernatural als besonders häufigen Fandoms. Im Fall von FF.de wird die besondere historische Bedeutung von Anime (Naruto, One Piece) für die deutsche Fanfiction-Community deutlich (siehe auch Cuntz-Leng und Meintzinger, 2015). Für AO3 kristallisieren sich spezielle nationale Besonderheiten heraus wie die Häufigkeit von Tatort-, Die drei ???<ref n="6" target="ftn6"/>- sowie Sport- (vor allem Fußball-) Fanfictions. Auf geschlechtsspezifischer Ebene dominieren Fandoms mit mehrheitlich männlichen Hauptcharakteren.
+<figure>
+<head>Tabelle 1: Allgemeine Korpusstatistiken.</head>
+<graphic height="5.882569444444444cm" n="1001" rend="inline" url="Pictures/800913323eb79a31bc795110bfd49318.png" width="16.002cm"/>
+</figure>
+<p style="text-align: left; ">Als Fandom wird die mediale Referenz, also das fiktionale Universum bzw. Thematik bezeichnet, in dem eine Fanfiction spielt. Tabelle 2 und 3 illustrieren die Top 10 Fandoms für FF.de und AO3 respektive.</p>
+<figure>
+<head>Tabelle 2: Top 10 Fandoms in Fanfiktion.de.</head>
+<graphic height="10.55573888888889cm" n="1002" rend="inline" url="Pictures/e12e9ad7ca909d6695b9e173a3e70d15.png" width="8.149927777777778cm"/>
+</figure>
+<figure>
+<head>Tabelle 3: Top 10 Fandoms in Archive of our Own.</head>
+<graphic height="9.392516666666667cm" n="1003" rend="inline" url="Pictures/306938d81b7e44ae354ef0479c3e0ce1.png" width="11.083366666666667cm"/>
+</figure>
+<p style="text-align: left; ">Die grundsätzlichen Fandom-Verteilungen verhalten sich konform zu Analysen auf größeren englischsprachigen Plattformen mit Fandoms wie Harry Potter, Marvel und Supernatural als besonders häufigen Fandoms. Im Fall von FF.de wird die besondere historische Bedeutung von Anime (Naruto, One Piece) für die deutsche Fanfiction-Community deutlich (siehe auch Cuntz-Leng und Meintzinger, 2015). Für AO3 kristallisieren sich spezielle nationale Besonderheiten heraus wie die Häufigkeit von Tatort-, Die drei ???<ref n="6" target="ftn6"/>- sowie Sport- (vor allem Fußball-) Fanfictions. Auf geschlechtsspezifischer Ebene dominieren Fandoms mit mehrheitlich männlichen Hauptcharakteren.
                 </p>
-                <p style="text-align: left; ">Ein weiteres wichtiges Metadatum im Kontext dieser Forschung sind Beziehungstypen, die für beide Plattformen äquivalent vorliegen. Dadurch wird markiert, ob eine romantische/erotische Beziehung zwischen Figuren eine wichtige Rolle spielt und welcher Geschlechternatur diese ist. Tabelle 4 zeigt die kumulierte Verteilung für beide Plattformen. Dabei ist zu beachten, dass eine Fanfiction im Fall von AO3 auch mehrere Angaben bezüglich Beziehungstypen haben kann.</p>
-                <figure>
-                    <head>Tabelle 4: Beziehungstypen-Verteilungen auf FF.de und AO3 (M = Männlich, W = Weiblich). Prozentzahlen sind gerundet und beziehen sich auf den jeweiligen Sub-Korpus.</head>
-                    
-                    <graphic n="1004" width="15.762202777777778cm" height="7.912375cm" url="Pictures/85663d0e1d05742704743bec1d3f09a2.png" rend="inline"/>
-                    
-                </figure>
-                <p style="text-align: left; ">Obwohl der Großteil der Geschichten als Generisch (Generic) (66,5%) gekennzeichnet ist und damit definitionsgemäß keinen spezifischen Beziehungstyp fokussiert, spielen Slash-Fanfictions (M/M) eine bedeutende Rolle, da sie den größten Teil der verbleibenden Fanfictions ausmachen. Im Vergleich dazu sind Beziehungen, welche weibliche Figuren beinhalten, eher selten.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Geschlechtsbasierte Nutzer*innen- und Figuren-Analyse</head>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Methodik</head>
-                    <p style="text-align: left; ">Zur vertieften Analyse wurde eine Geschlechtsklassifikation genannter Personennamen in den Fanfictions durchgeführt. Dazu wurde zunächst eine 
+<p style="text-align: left; ">Ein weiteres wichtiges Metadatum im Kontext dieser Forschung sind Beziehungstypen, die für beide Plattformen äquivalent vorliegen. Dadurch wird markiert, ob eine romantische/erotische Beziehung zwischen Figuren eine wichtige Rolle spielt und welcher Geschlechternatur diese ist. Tabelle 4 zeigt die kumulierte Verteilung für beide Plattformen. Dabei ist zu beachten, dass eine Fanfiction im Fall von AO3 auch mehrere Angaben bezüglich Beziehungstypen haben kann.</p>
+<figure>
+<head>Tabelle 4: Beziehungstypen-Verteilungen auf FF.de und AO3 (M = Männlich, W = Weiblich). Prozentzahlen sind gerundet und beziehen sich auf den jeweiligen Sub-Korpus.</head>
+<graphic height="7.912375cm" n="1004" rend="inline" url="Pictures/85663d0e1d05742704743bec1d3f09a2.png" width="15.762202777777778cm"/>
+</figure>
+<p style="text-align: left; ">Obwohl der Großteil der Geschichten als Generisch (Generic) (66,5%) gekennzeichnet ist und damit definitionsgemäß keinen spezifischen Beziehungstyp fokussiert, spielen Slash-Fanfictions (M/M) eine bedeutende Rolle, da sie den größten Teil der verbleibenden Fanfictions ausmachen. Im Vergleich dazu sind Beziehungen, welche weibliche Figuren beinhalten, eher selten.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Geschlechtsbasierte Nutzer*innen- und Figuren-Analyse</head>
+<div rend="DH-Heading2" type="div2">
+<head>Methodik</head>
+<p style="text-align: left; ">Zur vertieften Analyse wurde eine Geschlechtsklassifikation genannter Personennamen in den Fanfictions durchgeführt. Dazu wurde zunächst eine 
                         <hi rend="italic">Named Entity Recognition</hi> (NER; Eigennamen-Erkennung) zur Erkennung von Personennamen in den Texten durchgeführt. Die NER wurde mit FLAIR<ref n="7" target="ftn7"/> und dem vortrainierten Modell 
                         <hi rend="italic">ner-multi-fast</hi><ref n="8" target="ftn8"/> implementiert (Akbik et al., 2018; 2019). Das Modell ist multilingual und wurde auf vier verschiedenen Korpora (für jede Sprache) trainiert (Englisch, Deutsch, Holländisch, Spanisch). Stichprobenartige Analysen zeigten, dass dieses Modell die besten Ergebnisse und Effektivität im Vergleich zu anderen FLAIR-NER-Modellen erzeugt. Experimentelle Vergleiche mit transformerbasierten Sprachmodellen zeigten keine wesentlichen Verbesserungen aber erhöhte Performanzprobleme aufgrund der Größe unseres Datensatzes, was auch ein Grund für die Entscheidung dieses Modells war. Die Häufigkeiten von Personenerkennungen in den Texten (andere NER-Entitäten wurden hierbei vernachlässigt) wurden im JSON-Format gespeichert und dem Korpus hinzugefügt.
                     </p>
-                    <p style="text-align: left; ">Nach ersten Experimenten mit vortrainierten Modellen zur geschlechtsbasierten Namenserkennung<ref n="9" target="ftn9"/> haben wir uns entschlossen ein eigenes Modell zur Namenserkennung zu trainieren. Grund hierfür waren wiederum Performanzprobleme und die Identifikation von größeren Problemen vortrainierter Modelle mit fiktionalen Namen aus Fantasy und Science-Fiction. Es wurde also ein eigenes Modell basierend auf folgenden Datensätzen aus Namen und Geschlechtsangaben trainiert:
+<p style="text-align: left; ">Nach ersten Experimenten mit vortrainierten Modellen zur geschlechtsbasierten Namenserkennung<ref n="9" target="ftn9"/> haben wir uns entschlossen ein eigenes Modell zur Namenserkennung zu trainieren. Grund hierfür waren wiederum Performanzprobleme und die Identifikation von größeren Problemen vortrainierter Modelle mit fiktionalen Namen aus Fantasy und Science-Fiction. Es wurde also ein eigenes Modell basierend auf folgenden Datensätzen aus Namen und Geschlechtsangaben trainiert:
                     </p>
-                    <list type="unordered">
-                        <item>
-                            <hi rend="italic">NLTK name corpu</hi>s<ref n="10" target="ftn10"/>
-                        </item>
-                        <item>Ein öffentlicher Datensatz von Namen von Data.gov<ref n="11" target="ftn11"/>
-                        </item>
-                        <item>Eine öffentliche Liste von Babynamen von babynames.com</item>
-                    </list>
-                    <p style="text-align: left; ">Insbesondere die Liste von babynames.com hat einen besonderen Mehrwert da hier fiktionale Namen aus Kunst und Kultur enthalten sind.<ref n="12" target="ftn12"/> Die Datensätze wurden verknüpft, Duplikate entfernt und auf eindeutige männliche und weibliche Namen reduziert. Der finale Trainingsdatensatz besteht aus 106.000 Namen-Geschlechts-Angaben und wurde in einem 5x5 Kreuzvalidierungssetting mittels 
+<list type="unordered">
+<item>
+<hi rend="italic">NLTK name corpu</hi>s<ref n="10" target="ftn10"/>
+</item>
+<item>Ein öffentlicher Datensatz von Namen von Data.gov<ref n="11" target="ftn11"/>
+</item>
+<item>Eine öffentliche Liste von Babynamen von babynames.com</item>
+</list>
+<p style="text-align: left; ">Insbesondere die Liste von babynames.com hat einen besonderen Mehrwert da hier fiktionale Namen aus Kunst und Kultur enthalten sind.<ref n="12" target="ftn12"/> Die Datensätze wurden verknüpft, Duplikate entfernt und auf eindeutige männliche und weibliche Namen reduziert. Der finale Trainingsdatensatz besteht aus 106.000 Namen-Geschlechts-Angaben und wurde in einem 5x5 Kreuzvalidierungssetting mittels 
                         <hi rend="italic">Keras</hi><ref n="13" target="ftn13"/> und 
                         <hi rend="italic">TensorFlow</hi> in einem neuronalen Netz mit LSTM-Architektur genutzt, um das Klassifikationsmodell zu trainieren. Das finale Modell wurde nach Analyse von Hyperparameter-Experimenten mit Adam-Optimizer, einer Batch-Größe von 64 und für 16 Epochen trainiert und erreicht eine durchschnittliche Erkennungsgenauigkeit von 90%. Dieses Modell wurde auf die zuvor erkannten Eigennamen und ihre Verteilungen angewandt. Das Modell ist nur auf die Erkennung von geschlechtsidentifizierenden Namen trainiert (also keine Koreferenzen oder Pronomen).
                     </p>
-                    <p style="text-align: left; ">Für Analysen, die das Autor*innen-Geschlecht verwenden, wird das Korpus auf den FF.de-Anteil beschränkt, da nur in diesem Nutzer*innen über ihr Profil freiwillige Geschlechtsangaben machen können. Eine Geschlechtserkennung auf Nutzernamen ist aufgrund ihrer Beliebigkeit and Abstraktheit in diesem Kontext nicht sinnvoll.</p>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Ergebnisse</head>
-                    <p style="text-align: left; ">Tabelle 5 zeigt das Verhältnis von männlichen zu weiblichen Namen bezüglich der fiktionalen Charaktere in den Fanfictions auf. Diejenigen Namen, die keine Erkennungssicherheit von mindestens 80% erreicht haben, wurden als unsicher markiert.<ref n="14" target="ftn14"/>
-                    </p>
-                    <figure>
-                        <head>Tabelle 5: Verteilung von männlichen und weiblichen Eigennamen.</head>
-                        
-                        <graphic n="1005" width="13.357841666666667cm" height="4.0506416666666665cm" url="Pictures/e8059eed66db83016d4901b65bb5920b.png" rend="inline"/>
-                        
-                    </figure>
-                    <p style="text-align: left; ">Insgesamt zeigt sich, dass die Nennungen von männlichen Eigennamen überwiegen, im Schnitt in einem Verhältnis von 61% zu 33% mit ca. 6% Namen, die nicht eindeutig klassifiziert werden konnten. In Tabelle 6 wird die Verteilung der freiwilligen Selbstangaben von Nutzer*innen auf FF.de aufgezeigt, wobei eine Gesamtübersicht sowie eine Unterteilung nach Autor*innen und Reviewer*innen gegeben ist. Unter letzteren werden die Geschlechtsangaben der Poster*innen von Reviews/Kommentaren verstanden. Jede Autor*in und jede Reviewer*in werden dabei einmal gezählt, unabhängig von der Zahl der veröffentlichten Geschichten oder Reviews. Es ist bei der Interpretation der Zahlen zu beachten, dass viele Autor*innen gleichzeitig auch als Reviewer*innen aktiv sind und diese beiden Kategorien Duplikate enthalten, die Gesamt-Information bezieht sich aber auf die tatsächliche Gesamtzahl aller eindeutig differenzierbaren Nutzer*innen.</p>
-                    <figure>
-                        <head>Tabelle 6. Demographie-Statistik für FF.de.</head>
-                        
-                        <graphic n="1006" width="12.804158333333334cm" height="5.0542cm" url="Pictures/d5e40f92b6d5762b852da36daec7664c.png" rend="inline"/>
-                        
-                    </figure>
-                    <p style="text-align: left; ">Ein hoher Teil der Nutzer*innen gibt kein Geschlecht an (29%). Bezogen auf Nutzer*innen, die ein Geschlecht angeben, zeigt sich jedoch eine deutliche Dominanz von weiblichen Personen. Abstrahiert man von den Nicht-Angaben (N/A), ist das Verhältnis sogar ca. 92% zu 8%. Es gibt keinen wesentlichen Unterschied beim Vergleich von Autor*innen und Reviewer*innen. Die Plattform wird basierend auf Selbstauskunft also primär von weiblichen Personen genutzt. Die Altersinformationen dienen lediglich der demographischen Vertiefung und sind nicht Fokus dieses Beitrags. Sie zeigen aber eine durchschnittlich eher junge Nutzer*innen-Gruppe auf (etwa 27 Jahre).</p>
-                    <p style="text-align: left; ">In Tabelle 7 werden die beiden Analysen in ein Verhältnis zueinander gesetzt und der Anteil weiblicher und männlicher Figurennamen in den einzelnen Autor*innen-Geschlechtsgruppen untersucht. Es zeigt sich kein wesentlicher Unterschied im Vergleich zu männlichen und weiblichen Autor*innen in der Nutzung von weiblichen oder männlichen Figurennamen. Weibliche Autor*innen nutzen männliche Figuren in einem Verhältnis von 64% zu 36% weiblichen Figuren. Der Anteil von weiblichen Figuren verringert sich lediglich um 1% für männliche Autoren.</p>
-                    <figure>
-                        <head>Tabelle 7. Anteil weiblicher und männlicher Figurennamen in den einzelnen Geschlechtsgruppen.</head>
-                        
-                        <graphic n="1007" width="11.726027777777778cm" height="3.8259527777777778cm" url="Pictures/62835fe929e87e8bb7c2139cb8649d4a.png" rend="inline"/>
-                        
-                    </figure>
-                </div>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Diskussion</head>
-                <p style="text-align: left; ">In diesem Beitrag wurden die Ergebnisse der Korpusakquise einer Sammlung von deutschsprachigen Fanfictions aufgezeigt. Es ist zu beachten, dass wir dabei einige wesentliche Bestandteile noch nicht vertieft präsentieren konnten, wie z.B. weitere Metadaten und Review-Analysen. Das Korpus ist eine relevante Ressource für den Bereich der 
+<p style="text-align: left; ">Für Analysen, die das Autor*innen-Geschlecht verwenden, wird das Korpus auf den FF.de-Anteil beschränkt, da nur in diesem Nutzer*innen über ihr Profil freiwillige Geschlechtsangaben machen können. Eine Geschlechtserkennung auf Nutzernamen ist aufgrund ihrer Beliebigkeit and Abstraktheit in diesem Kontext nicht sinnvoll.</p>
+</div>
+<div rend="DH-Heading2" type="div2">
+<head>Ergebnisse</head>
+<p style="text-align: left; ">Tabelle 5 zeigt das Verhältnis von männlichen zu weiblichen Namen bezüglich der fiktionalen Charaktere in den Fanfictions auf. Diejenigen Namen, die keine Erkennungssicherheit von mindestens 80% erreicht haben, wurden als unsicher markiert.<ref n="14" target="ftn14"/>
+</p>
+<figure>
+<head>Tabelle 5: Verteilung von männlichen und weiblichen Eigennamen.</head>
+<graphic height="4.0506416666666665cm" n="1005" rend="inline" url="Pictures/e8059eed66db83016d4901b65bb5920b.png" width="13.357841666666667cm"/>
+</figure>
+<p style="text-align: left; ">Insgesamt zeigt sich, dass die Nennungen von männlichen Eigennamen überwiegen, im Schnitt in einem Verhältnis von 61% zu 33% mit ca. 6% Namen, die nicht eindeutig klassifiziert werden konnten. In Tabelle 6 wird die Verteilung der freiwilligen Selbstangaben von Nutzer*innen auf FF.de aufgezeigt, wobei eine Gesamtübersicht sowie eine Unterteilung nach Autor*innen und Reviewer*innen gegeben ist. Unter letzteren werden die Geschlechtsangaben der Poster*innen von Reviews/Kommentaren verstanden. Jede Autor*in und jede Reviewer*in werden dabei einmal gezählt, unabhängig von der Zahl der veröffentlichten Geschichten oder Reviews. Es ist bei der Interpretation der Zahlen zu beachten, dass viele Autor*innen gleichzeitig auch als Reviewer*innen aktiv sind und diese beiden Kategorien Duplikate enthalten, die Gesamt-Information bezieht sich aber auf die tatsächliche Gesamtzahl aller eindeutig differenzierbaren Nutzer*innen.</p>
+<figure>
+<head>Tabelle 6. Demographie-Statistik für FF.de.</head>
+<graphic height="5.0542cm" n="1006" rend="inline" url="Pictures/d5e40f92b6d5762b852da36daec7664c.png" width="12.804158333333334cm"/>
+</figure>
+<p style="text-align: left; ">Ein hoher Teil der Nutzer*innen gibt kein Geschlecht an (29%). Bezogen auf Nutzer*innen, die ein Geschlecht angeben, zeigt sich jedoch eine deutliche Dominanz von weiblichen Personen. Abstrahiert man von den Nicht-Angaben (N/A), ist das Verhältnis sogar ca. 92% zu 8%. Es gibt keinen wesentlichen Unterschied beim Vergleich von Autor*innen und Reviewer*innen. Die Plattform wird basierend auf Selbstauskunft also primär von weiblichen Personen genutzt. Die Altersinformationen dienen lediglich der demographischen Vertiefung und sind nicht Fokus dieses Beitrags. Sie zeigen aber eine durchschnittlich eher junge Nutzer*innen-Gruppe auf (etwa 27 Jahre).</p>
+<p style="text-align: left; ">In Tabelle 7 werden die beiden Analysen in ein Verhältnis zueinander gesetzt und der Anteil weiblicher und männlicher Figurennamen in den einzelnen Autor*innen-Geschlechtsgruppen untersucht. Es zeigt sich kein wesentlicher Unterschied im Vergleich zu männlichen und weiblichen Autor*innen in der Nutzung von weiblichen oder männlichen Figurennamen. Weibliche Autor*innen nutzen männliche Figuren in einem Verhältnis von 64% zu 36% weiblichen Figuren. Der Anteil von weiblichen Figuren verringert sich lediglich um 1% für männliche Autoren.</p>
+<figure>
+<head>Tabelle 7. Anteil weiblicher und männlicher Figurennamen in den einzelnen Geschlechtsgruppen.</head>
+<graphic height="3.8259527777777778cm" n="1007" rend="inline" url="Pictures/62835fe929e87e8bb7c2139cb8649d4a.png" width="11.726027777777778cm"/>
+</figure>
+</div>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Diskussion</head>
+<p style="text-align: left; ">In diesem Beitrag wurden die Ergebnisse der Korpusakquise einer Sammlung von deutschsprachigen Fanfictions aufgezeigt. Es ist zu beachten, dass wir dabei einige wesentliche Bestandteile noch nicht vertieft präsentieren konnten, wie z.B. weitere Metadaten und Review-Analysen. Das Korpus ist eine relevante Ressource für den Bereich der 
                     <hi rend="italic">Computational Literary Studies</hi> und 
                     <hi rend="italic">Fan Studies</hi>, das noch mit zahlreichen Methoden exploriert werden kann. Wir beabsichtigen, insbesondere explorative Netzwerkanalysen, lexikalische Frequenzanalysen und Sentiment/Emotionsanalysen in Analogie zu anderen DH-Projekten anzuwenden (Schmidt et al., 2020a; Moßburger et al., 2020; Schmidt et al., 2020c; Dennerlein et al., 2023; Schmidt et al., 2023). Folgende Limitationen sind zu adressieren: So ist die hier gewählte NER und Geschlechtserkennung eine allgemeine Lösung, die nicht auf den Anwendungsfall hin optimiert wurde. Durch Annotationsstudien mit einer Auswahl von Texten sowie anschließender Anwendung von Machine Learning soll sich diesem Problem angenähert werden. Auch basieren die Geschlechtsstatistiken aus Selbstangaben und ca. 30% der Angaben fehlen. Die Daten zu dieser Analyse basieren auf lediglich einer Plattform (FF.de), was die Aussagekraft dieser Statistiken limitiert.
                 </p>
-                <p style="text-align: left; ">Dennoch konnten bereits durch allgemeine Metadatenanalysen nationale Besonderheiten eines deutschsprachigen Fanfiction-Korpus wie z.B. die Bedeutung von Fandoms wie Tatort oder Die drei ??? in AO3 sowie die Bedeutung von Anime in FF.de (Cuntz-Leng und Meintzinger, 2015) herausgearbeitet werden. Dies verdeutlicht die Notwendigkeit der Analyse nicht-englischer Texte nicht nur für die lokalen Wissenschafts-Communities, sondern auch für ein angemessenes Verständnis des Phänomens an sich. Im Kontext der geschlechtsspezifischen Fragestellungen konnten Analysen und Behauptungen, wonach Frauen Fanfictions nutzen, um Geschichten über unterrepräsentierte weibliche Figuren zu schreiben (Busse, 2009; Leow, 2011; Handley, 2012; Duggan, 2017; 2020; 2022; Milli und Bamman, 2016) nicht bestätigt werden. Im Gegensatz bestätigen sich bisherige Annahmen (Jung, 2002; Busse und Lothian, 2017; Tosenberger, 2008; Rossdal, 2015; Fast et al., 2016), die Fanfictions als Literatur von Frauen primär über männliche Figuren mit Fokus auf homo-romantischen Beziehungen verstehen auch für die deutschsprachige Fanfiction-Community. Auch eine Reduktion auf das Harry Potter-Fandom analog zu Duggan (2017; 2020; 2022) zeigt dieselben Verhältnisse auf. Es sei hier jedoch auch zu beachten, dass dieses Phänomen auch als Spiegelung der allgemeinen Überrepräsentation von Männern in kulturellen Medien betrachtet werden kann was jedoch bisher in mehrheitlich qualitativen Studien untersucht wurde (Collins, 2011; Bretthauer et al., 2007; Garcia et al., 2015; Jia et al., 2015; Neville und Anastasio, 2019; Schmidt et al., 2020b). Wir halten es auch für eine sehr spannende Idee, die hier vorliegende binäre Geschlechtsauffassung durch weitere Geschlechtsgruppen wie non-binär oder androgyn zu erweitern, wie dies teilweise schon in Computer Vision-Projekten in den DH gemacht wurde (Schmidt et al. 2021a; Schmidt und Kurek, 2022). Annotation und Akquise von non-binären Namen wäre hier für weitere Studien notwendig. Insgesamt ist mehr Forschung die 
+<p style="text-align: left; ">Dennoch konnten bereits durch allgemeine Metadatenanalysen nationale Besonderheiten eines deutschsprachigen Fanfiction-Korpus wie z.B. die Bedeutung von Fandoms wie Tatort oder Die drei ??? in AO3 sowie die Bedeutung von Anime in FF.de (Cuntz-Leng und Meintzinger, 2015) herausgearbeitet werden. Dies verdeutlicht die Notwendigkeit der Analyse nicht-englischer Texte nicht nur für die lokalen Wissenschafts-Communities, sondern auch für ein angemessenes Verständnis des Phänomens an sich. Im Kontext der geschlechtsspezifischen Fragestellungen konnten Analysen und Behauptungen, wonach Frauen Fanfictions nutzen, um Geschichten über unterrepräsentierte weibliche Figuren zu schreiben (Busse, 2009; Leow, 2011; Handley, 2012; Duggan, 2017; 2020; 2022; Milli und Bamman, 2016) nicht bestätigt werden. Im Gegensatz bestätigen sich bisherige Annahmen (Jung, 2002; Busse und Lothian, 2017; Tosenberger, 2008; Rossdal, 2015; Fast et al., 2016), die Fanfictions als Literatur von Frauen primär über männliche Figuren mit Fokus auf homo-romantischen Beziehungen verstehen auch für die deutschsprachige Fanfiction-Community. Auch eine Reduktion auf das Harry Potter-Fandom analog zu Duggan (2017; 2020; 2022) zeigt dieselben Verhältnisse auf. Es sei hier jedoch auch zu beachten, dass dieses Phänomen auch als Spiegelung der allgemeinen Überrepräsentation von Männern in kulturellen Medien betrachtet werden kann was jedoch bisher in mehrheitlich qualitativen Studien untersucht wurde (Collins, 2011; Bretthauer et al., 2007; Garcia et al., 2015; Jia et al., 2015; Neville und Anastasio, 2019; Schmidt et al., 2020b). Wir halten es auch für eine sehr spannende Idee, die hier vorliegende binäre Geschlechtsauffassung durch weitere Geschlechtsgruppen wie non-binär oder androgyn zu erweitern, wie dies teilweise schon in Computer Vision-Projekten in den DH gemacht wurde (Schmidt et al. 2021a; Schmidt und Kurek, 2022). Annotation und Akquise von non-binären Namen wäre hier für weitere Studien notwendig. Insgesamt ist mehr Forschung die 
                     <hi rend="italic">Close Reading</hi>, computergestützte Analysen und empirische Forschung in einem Mixed-Methods-Ansatz verknüpft, für ein vertieftes Verständnis von Fanfictions erforderlich. Das Korpus wird für die Forschungs-Community auf Anfrage zur Verfügung gestellt und soll dadurch dem Forschungsfeldern der 
                     <hi rend="italic">Fan Studies</hi>, 
                     <hi rend="italic">Internet Studies</hi> und 
                     <hi rend="italic">Computational Literary Studies</hi> neue Impulse liefern.<ref n="15" target="ftn15"/>
-                </p>
-            </div>
-        </body>
-        <back>
+</p>
+</div>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
-                        
-                            <ref target="https://www.fanfiktion.de/">https://www.fanfiktion.de/</ref>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
-                        
-                            <ref target="https://archiveofourown.org/">https://archiveofourown.org/</ref>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn3" n="3">
-                        
-                            <ref target="https://scrapy.org/">https://scrapy.org/</ref>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn4" n="4">
-                        
-                            <ref target="https://www.mongodb.com">https://www.mongodb.com</ref>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn5" n="5">
-                        
-                            <ref target="https://spacy.io">https://spacy.io</ref>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn6" n="6">
+<note n="1" rend="footnote text" xml:id="ftn1">
+<ref target="https://www.fanfiktion.de/">https://www.fanfiktion.de/</ref>
+</note>
+<note n="2" rend="footnote text" xml:id="ftn2">
+<ref target="https://archiveofourown.org/">https://archiveofourown.org/</ref>
+</note>
+<note n="3" rend="footnote text" xml:id="ftn3">
+<ref target="https://scrapy.org/">https://scrapy.org/</ref>
+</note>
+<note n="4" rend="footnote text" xml:id="ftn4">
+<ref target="https://www.mongodb.com">https://www.mongodb.com</ref>
+</note>
+<note n="5" rend="footnote text" xml:id="ftn5">
+<ref target="https://spacy.io">https://spacy.io</ref>
+</note>
+<note n="6" rend="footnote text" xml:id="ftn6">
                          Obschon die „Die drei ???“-Bücher ihren Ursprung in den USA haben, wurden Sie aufgrund der Popularität speziell in Deutschland weitergeführt.
                     </note>
-<note rend="footnote text" xml:id="ftn7" n="7">
-                            
-                                <ref target="https://github.com/flairNLP">https://github.com/flairNLP</ref>
-                            
-                        </note>
-<note rend="footnote text" xml:id="ftn8" n="8">
-                            
-                                <ref target="https://huggingface.co/flair/ner-multi-fast">https://huggingface.co/flair/ner-multi-fast</ref>
-                            
-                        </note>
-<note rend="footnote text" xml:id="ftn9" n="9">
+<note n="7" rend="footnote text" xml:id="ftn7">
+<ref target="https://github.com/flairNLP">https://github.com/flairNLP</ref>
+</note>
+<note n="8" rend="footnote text" xml:id="ftn8">
+<ref target="https://huggingface.co/flair/ner-multi-fast">https://huggingface.co/flair/ner-multi-fast</ref>
+</note>
+<note n="9" rend="footnote text" xml:id="ftn9">
                              z.B. 
                                 <ref target="https://pypi.org/project/gender-guesser/">https://pypi.org/project/gender-guesser/</ref>
-                            
-                        </note>
-<note rend="footnote text" xml:id="ftn10" n="10">
-                                
-                                    <ref target="https://www.nltk.org/howto/corpus.html">https://www.nltk.org/howto/corpus.html</ref>
-                                
-                            </note>
-<note rend="footnote text" xml:id="ftn11" n="11">
-                                
-                                    <ref target="https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-%20%20data">https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-</ref>
-                                
-                                
-                                    <hi rend="Hyperlink">data</hi>
-                                
-                            </note>
-<note rend="footnote text" xml:id="ftn12" n="12">
+</note>
+<note n="10" rend="footnote text" xml:id="ftn10">
+<ref target="https://www.nltk.org/howto/corpus.html">https://www.nltk.org/howto/corpus.html</ref>
+</note>
+<note n="11" rend="footnote text" xml:id="ftn11">
+<ref target="https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-%20%20data">https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-</ref>
+<hi rend="Hyperlink">data</hi>
+</note>
+<note n="12" rend="footnote text" xml:id="ftn12">
                              Siehe z.B. 
                                 <ref target="https://babynames.com/names/fictional-character-names.php">https://babynames.com/names/fictional-character-names.php</ref> , 
                                 <ref target="https://babynames.com/names/water-names.php">https://babynames.com/names/water-names.php</ref>
-                            
-                        </note>
-<note rend="footnote text" xml:id="ftn13" n="13">
-                            
-                                <ref target="https://keras.io/">https://keras.io/</ref>
-                            
-                        </note>
-<note rend="footnote text" xml:id="ftn14" n="14">
+</note>
+<note n="13" rend="footnote text" xml:id="ftn13">
+<ref target="https://keras.io/">https://keras.io/</ref>
+</note>
+<note n="14" rend="footnote text" xml:id="ftn14">
                              Die Wahrscheinlichkeit würde über die Sigmoidfunktion im Output-Layer berechnet.
                         </note>
-<note rend="footnote text" xml:id="ftn15" n="15">
+<note n="15" rend="footnote text" xml:id="ftn15">
                          Das Korpus ist auf Anfrage an 
                             <ref target="mailto:thomas.schmidt@ur.de">thomas.schmidt@ur.de</ref> erhältlich.
                         
                     </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl style="text-align: left; "><hi rend="bold">Akbik, Alan, Tanja Bergmann und Roland Vollgraf.</hi> 2019. “Multilingual Sequence Labeling with One Model.” In 
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl style="text-align: left; "><hi rend="bold">Akbik, Alan, Tanja Bergmann und Roland Vollgraf.</hi> 2019. “Multilingual Sequence Labeling with One Model.” In 
                         <hi rend="italic">NLDL 2019, Northern Lights Deep Learning Workshop</hi>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Akbik, Alan, Duncan Blythe und Roland Vollgraf.</hi> 2018. “Contextual String Embeddings for Sequence Labeling.” In 
+<bibl style="text-align: left; "><hi rend="bold">Akbik, Alan, Duncan Blythe und Roland Vollgraf.</hi> 2018. “Contextual String Embeddings for Sequence Labeling.” In 
                         <hi rend="italic">Proceedings of the 27th International Conference on Computational Linguistics</hi>, herausgegeben von Emily M. Bender, Leon Derczynski, and Pierre Isabelle, 1638–1649. Santa Fe, New Mexico, USA: Association for Computational Linguistics. 
                         <ref target="https://aclanthology.org/C18-1139">https://aclanthology.org/C18-1139</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Barnes, Jennifer L.</hi> 2015. “Fanfiction as Imaginary Play: What Fan-Written Stories Can Tell Us about the Cognitive Science of Fiction.” 
+<bibl style="text-align: left; "><hi rend="bold">Barnes, Jennifer L.</hi> 2015. “Fanfiction as Imaginary Play: What Fan-Written Stories Can Tell Us about the Cognitive Science of Fiction.” 
                         <hi rend="italic">Poetics</hi> 48 (February): 69–82. 
                         <ref target="https://doi.org/10.1016/j.poetic.2014.12.004">https://doi.org/10.1016/j.poetic.2014.12.004</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Bretthauer, Brook, Toni Schindler Zimmerman und James H. Banning.</hi> 2007. “A Feminist Analysis of Popular Music.” 
+<bibl style="text-align: left; "><hi rend="bold">Bretthauer, Brook, Toni Schindler Zimmerman und James H. Banning.</hi> 2007. “A Feminist Analysis of Popular Music.” 
                         <hi rend="italic">Journal of Feminist Family Therapy</hi> 18 (4): 29–51. 
                         <ref target="https://doi.org/10.1300/J086v18n04_02">https://doi.org/10.1300/J086v18n04_02</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Busse, Kristina.</hi> 2009. “In Focus: Fandom and Feminism: Gender and the Politics of Fan Production: Introduction.” 
+<bibl style="text-align: left; "><hi rend="bold">Busse, Kristina.</hi> 2009. “In Focus: Fandom and Feminism: Gender and the Politics of Fan Production: Introduction.” 
                         <hi rend="italic">Cinema Journal</hi> 48 (4): 104–107.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Busse, Kristina und Alexis Lothian.</hi> 2017. “Debating Queer Sex, Gay Politics and Media Fan Cultures.” 
+<bibl style="text-align: left; "><hi rend="bold">Busse, Kristina und Alexis Lothian.</hi> 2017. “Debating Queer Sex, Gay Politics and Media Fan Cultures.” 
                         <hi rend="italic">The Routledge Companion to Media, Sex and Sexuality</hi>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Carvallo, Andrés und Denis Parra.</hi> 2020. “Analyzing Network Effects on a Fanfiction Community.” 
+<bibl style="text-align: left; "><hi rend="bold">Carvallo, Andrés und Denis Parra.</hi> 2020. “Analyzing Network Effects on a Fanfiction Community.” 
                         <hi rend="italic">ArXiv:1909.02886 [Cs]</hi>, August. 
                         <ref target="http://arxiv.org/abs/1909.02886">http://arxiv.org/abs/1909.02886</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Collins, Rebecca L.</hi> 2011. “Content Analysis of Gender Roles in Media: Where Are We Now and Where Should We Go?” 
+<bibl style="text-align: left; "><hi rend="bold">Collins, Rebecca L.</hi> 2011. “Content Analysis of Gender Roles in Media: Where Are We Now and Where Should We Go?” 
                         <hi rend="italic">Sex Roles</hi> 64 (3): 290–298. 
                         <ref target="https://doi.org/10.1007/s11199-010-9929-5">https://doi.org/10.1007/s11199-010-9929-5</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Cuntz-Leng, Vera und Jacqueline Meintzinger.</hi> 2014. “A Brief History of Fan Fiction in Germany.” 
+<bibl style="text-align: left; "><hi rend="bold">Cuntz-Leng, Vera und Jacqueline Meintzinger.</hi> 2014. “A Brief History of Fan Fiction in Germany.” 
                         <hi rend="italic">Transformative Works and Cultures</hi> 19 (July). 
                         <ref target="https://doi.org/10.3983/twc.2015.0630">https://doi.org/10.3983/twc.2015.0630</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Cuntz-Leng, Vera, Christof Leng, and Michael Ellsworth.</hi> 2023. “Lord of the Words.” 
+<bibl style="text-align: left; "><hi rend="bold">Cuntz-Leng, Vera, Christof Leng, and Michael Ellsworth.</hi> 2023. “Lord of the Words.” 
                         <hi rend="italic">Zeitschrift für Literaturwissenschaft und Linguistik</hi> 53 (3): 711–728. 
                         <ref target="https://doi.org/10.1007/s41244-023-00312-3">https://doi.org/10.1007/s41244-023-00312-3</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Dennerlein, Katrin, Thomas Schmidt, and Christian Wolff.</hi> 2023. “Computational Emotion Classification for Genre Corpora of German Tragedies and Comedies from 17th to Early 19th Century.” 
+<bibl style="text-align: left; "><hi rend="bold">Dennerlein, Katrin, Thomas Schmidt, and Christian Wolff.</hi> 2023. “Computational Emotion Classification for Genre Corpora of German Tragedies and Comedies from 17th to Early 19th Century.” 
                         <hi rend="italic">Digital Scholarship in the Humanities</hi>, fqad046. 
                         <ref target="https://doi.org/10.1093/llc/fqad046">https://doi.org/10.1093/llc/fqad046</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Duggan, Jennifer.</hi> 2017. “Revising Hegemonic Masculinity: Homosexuality, Masculinity, and Youth-Authored Harry Potter Fanfiction.” 
+<bibl style="text-align: left; "><hi rend="bold">Duggan, Jennifer.</hi> 2017. “Revising Hegemonic Masculinity: Homosexuality, Masculinity, and Youth-Authored Harry Potter Fanfiction.” 
                         <hi rend="italic">Bookbird: A Journal of International Children’s Literature</hi> 55 (2): 38–45. 
                         <ref target="https://doi.org/10.1353/bkb.2017.0022">https://doi.org/10.1353/bkb.2017.0022</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Duggan, Jennifer.</hi> 2020. “Who Writes Harry Potter Fan Fiction? Passionate Detachment, ‘Zooming out,’ and Fan Fiction Paratexts on AO3.” 
+<bibl style="text-align: left; "><hi rend="bold">Duggan, Jennifer.</hi> 2020. “Who Writes Harry Potter Fan Fiction? Passionate Detachment, ‘Zooming out,’ and Fan Fiction Paratexts on AO3.” 
                         <hi rend="italic">Transformative Works and Cultures</hi> 34 (September). 
                         <ref target="https://doi.org/10.3983/twc.2020.1863">https://doi.org/10.3983/twc.2020.1863</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Duggan, Jennifer.</hi> 2022. “‘Worlds. . .[of] Contingent Possibilities’: Genderqueer and Trans Adolescents Reading Fan Fiction.” 
+<bibl style="text-align: left; "><hi rend="bold">Duggan, Jennifer.</hi> 2022. “‘Worlds. . .[of] Contingent Possibilities’: Genderqueer and Trans Adolescents Reading Fan Fiction.” 
                         <hi rend="italic">Television &amp; New Media</hi> 23 (7): 703–720. 
                         <ref target="https://doi.org/10.1177/15274764211016305">https://doi.org/10.1177/15274764211016305</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Dym, Brianna, Cecilia Aragon, Julia Bullard, Ruby Davis und Casey Fiesler.</hi> 2018. “Online Fandom: Boldly Going Where Few CSCW Researchers Have Gone Before.” In 
+<bibl style="text-align: left; "><hi rend="bold">Dym, Brianna, Cecilia Aragon, Julia Bullard, Ruby Davis und Casey Fiesler.</hi> 2018. “Online Fandom: Boldly Going Where Few CSCW Researchers Have Gone Before.” In 
                         <hi rend="italic">Companion of the 2018 ACM Conference on Computer Supported Cooperative Work and Social Computing</hi>, 121–124. Jersey City NJ USA: ACM. 
                         <ref target="https://doi.org/10.1145/3272973.3274542">https://doi.org/10.1145/3272973.3274542</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Frens, Jenna, Ruby Davis, Jihyun Lee, Diana Zhang und Cecilia Aragon.</hi> 2019. “Reviews Matter: How Distributed Mentoring Predicts Lexical Diversity on Fanfiction.Net.” 
+<bibl style="text-align: left; "><hi rend="bold">Frens, Jenna, Ruby Davis, Jihyun Lee, Diana Zhang und Cecilia Aragon.</hi> 2019. “Reviews Matter: How Distributed Mentoring Predicts Lexical Diversity on Fanfiction.Net.” 
                         <hi rend="italic">arXiv:1809.10268v3 [Cs.SI]</hi>. 
                         <ref target="https://doi.org/10.1184/R1/7793804.v1">https://doi.org/10.1184/R1/7793804.v1</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Garcia, David, Ingmar Weber und Venkata Garimella.</hi> 2014. “Gender Asymmetries in Reality and Fiction: The Bechdel Test of Social Media.” 
+<bibl style="text-align: left; "><hi rend="bold">Garcia, David, Ingmar Weber und Venkata Garimella.</hi> 2014. “Gender Asymmetries in Reality and Fiction: The Bechdel Test of Social Media.” 
                         <hi rend="italic">Proceedings of the International AAAI Conference on Web and Social Media</hi> 8 (1): 131–140. 
                         <ref target="https://doi.org/10.1609/icwsm.v8i1.14522">https://doi.org/10.1609/icwsm.v8i1.14522</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Handley, Christine.</hi> 2012. “‘Distressing Damsels’: Narrative Critique and Reinterpretation in Star Wars Fanfiction.” 
+<bibl style="text-align: left; "><hi rend="bold">Handley, Christine.</hi> 2012. “‘Distressing Damsels’: Narrative Critique and Reinterpretation in Star Wars Fanfiction.” 
                         <hi rend="italic">Fan Culture: Theory/Practice, Newcastle upon Tyne: Cambridge Scholars Publishing</hi>, 97–118.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Hellekson, Karen und Kristina Busse.</hi> 2006. 
+<bibl style="text-align: left; "><hi rend="bold">Hellekson, Karen und Kristina Busse.</hi> 2006. 
                         <hi rend="italic">Fan Fiction and Fan Communities in the Age of the Internet: New Essays</hi>. McFarland.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Jamison, Anne.</hi> 2013. 
+<bibl style="text-align: left; "><hi rend="bold">Jamison, Anne.</hi> 2013. 
                         <hi rend="italic">Fic: Why Fanfiction Is Taking Over the World</hi>. Dallas, Texas: Smart Pop.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Jia, Sen, Thomas Lansdall-Welfare und Nello Cristianini.</hi> 2015. “Measuring Gender Bias in News Images.” In 
+<bibl style="text-align: left; "><hi rend="bold">Jia, Sen, Thomas Lansdall-Welfare und Nello Cristianini.</hi> 2015. “Measuring Gender Bias in News Images.” In 
                         <hi rend="italic">Proceedings of the 24th International Conference on World Wide Web</hi>, 893–898. WWW ’15 Companion. New York, NY, USA: Association for Computing Machinery. 
                         <ref target="https://doi.org/10.1145/2740908.2742007">https://doi.org/10.1145/2740908.2742007</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Jung, Susanne.</hi> 2002. “Queering Popular Culture: Female Spectators and the Appeal of Writing Slash Fan Fiction.” In 
+<bibl style="text-align: left; "><hi rend="bold">Jung, Susanne.</hi> 2002. “Queering Popular Culture: Female Spectators and the Appeal of Writing Slash Fan Fiction.” In 
                         <hi rend="italic">Gender Forum</hi>, 2:30–50.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Kim, Evgeny und Roman Klinger.</hi> 2019. “Frowning Frodo, Wincing Leia, and a Seriously Great Friendship: Learning to Classify Emotional Relationships of Fictional Characters.” In 
+<bibl style="text-align: left; "><hi rend="bold">Kim, Evgeny und Roman Klinger.</hi> 2019. “Frowning Frodo, Wincing Leia, and a Seriously Great Friendship: Learning to Classify Emotional Relationships of Fictional Characters.” In 
                         <hi rend="italic">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)</hi>, 647–653. Minneapolis, Minnesota: Association for Computational Linguistics. 
                         <ref target="https://doi.org/10.18653/v1/N19-1067">https://doi.org/10.18653/v1/N19-1067</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Kleindienst, Nina und Thomas Schmidt.</hi> 2020. “Investigating the Transformation of Original Work by the Online Fan Fiction Community: A Case Study for Supernatural.” In 
+<bibl style="text-align: left; "><hi rend="bold">Kleindienst, Nina und Thomas Schmidt.</hi> 2020. “Investigating the Transformation of Original Work by the Online Fan Fiction Community: A Case Study for Supernatural.” In 
                         <hi rend="italic">Digital Practices. Reading, Writing and Evaluation on the Web</hi>. Basel, Switzerland. 
                         <ref target="https://epub.uni-regensburg.de/50828/">https://epub.uni-regensburg.de/50828/</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Kleindienst, Nina, Thomas Schmidt und Christian Wolff.</hi> 2022. “Analysis and Exploration of Supernatural Fanfictions from the Platform Archive of Our Own.” In 
+<bibl style="text-align: left; "><hi rend="bold">Kleindienst, Nina, Thomas Schmidt und Christian Wolff.</hi> 2022. “Analysis and Exploration of Supernatural Fanfictions from the Platform Archive of Our Own.” In 
                         <hi rend="italic">Responding to Asian Diversity. Digital Humanities 2022 Conference Abstracts.</hi>, herausgegeben von DH2022 Local Organizing Committee, 649–653. Tokyo, Japan: Alliance of Digital Humanities Organizations (ADHO).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Leow, Hui Min Annabeth.</hi> 2011. “Subverting the Canon in Feminist Fan Fiction.” 
+<bibl style="text-align: left; "><hi rend="bold">Leow, Hui Min Annabeth.</hi> 2011. “Subverting the Canon in Feminist Fan Fiction.” 
                         <hi rend="italic">Transformative Works and Cultures</hi> 7. 
                         <ref target="https://doi.org/10.3983/twc.2011.0286">https://doi.org/10.3983/twc.2011.0286</ref>
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Milli, Smitha und David Bamman.</hi> 2016. “Beyond Canonical Texts: A Computational Analysis of Fanfiction.” In 
+</bibl>
+<bibl style="text-align: left; "><hi rend="bold">Milli, Smitha und David Bamman.</hi> 2016. “Beyond Canonical Texts: A Computational Analysis of Fanfiction.” In 
                         <hi rend="italic">Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing</hi>, herausgegeben von Jian Su, Kevin Duh, and Xavier Carreras, 2048–2053. Austin, Texas: Association for Computational Linguistics. 
                         <ref target="https://doi.org/10.18653/v1/D16-1218">https://doi.org/10.18653/v1/D16-1218</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Moßburger, Luis, Felix Wende, Kay Brinkmann und Thomas Schmidt.</hi> 2020. “Exploring Online Depression Forums via Text Mining: A Comparison of Reddit and a Curated Online Forum.” In 
+<bibl style="text-align: left; "><hi rend="bold">Moßburger, Luis, Felix Wende, Kay Brinkmann und Thomas Schmidt.</hi> 2020. “Exploring Online Depression Forums via Text Mining: A Comparison of Reddit and a Curated Online Forum.” In 
                         <hi rend="italic">Proceedings of the Fifth Social Media Mining for Health Applications Workshop &amp; Shared Task</hi>, herausgegeben von Graciela Gonzalez-Hernandez, Ari Z. Klein, Ivan Flores, Davy Weissenbacher, Arjun Magge, Karen O’Connor, Abeed Sarker, et al., 70–81. Barcelona, Spain (Online): Association for Computational Linguistics. 
                         <ref target="https://aclanthology.org/2020.smm4h-1.11">https://aclanthology.org/2020.smm4h-1.11</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Muttenthaler, Lukas, Gordon Lucas und Janek Amann.</hi> 2019. “Authorship Attribution in Fan-Fictional Texts given Variable Length Character and Word N-Grams.”. In Working Notes of CLEF 2019 - Conference and Labs of the Evaluation Forum. Lugano, Switzerland. 
+<bibl style="text-align: left; "><hi rend="bold">Muttenthaler, Lukas, Gordon Lucas und Janek Amann.</hi> 2019. “Authorship Attribution in Fan-Fictional Texts given Variable Length Character and Word N-Grams.”. In Working Notes of CLEF 2019 - Conference and Labs of the Evaluation Forum. Lugano, Switzerland. 
                         <ref target="https://ceur-ws.org/Vol-2380/paper_49.pdf">https://ceur-ws.org/Vol-2380/paper_49.pdf</ref>
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Neville, Conor und Phyllis Anastasio.</hi> 2019. “Fewer, Younger, but Increasingly Powerful: How Portrayals of Women, Age, and Power Have Changed from 2002 to 2016 in the 50 Top-Grossing U.S. Films.” 
+</bibl>
+<bibl style="text-align: left; "><hi rend="bold">Neville, Conor und Phyllis Anastasio.</hi> 2019. “Fewer, Younger, but Increasingly Powerful: How Portrayals of Women, Age, and Power Have Changed from 2002 to 2016 in the 50 Top-Grossing U.S. Films.” 
                         <hi rend="italic">Sex Roles</hi> 80 (7): 503–514. 
                         <ref target="https://doi.org/10.1007/s11199-018-0945-1">https://doi.org/10.1007/s11199-018-0945-1</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Pianzola, Federico, Simone Rebora und Gerhard Lauer.</hi> 2020. “Wattpad as a Resource for Literary Studies. Quantitative and Qualitative Examples of the Importance of Digital Social Reading and Readers’ Comments in the Margins.” 
+<bibl style="text-align: left; "><hi rend="bold">Pianzola, Federico, Simone Rebora und Gerhard Lauer.</hi> 2020. “Wattpad as a Resource for Literary Studies. Quantitative and Qualitative Examples of the Importance of Digital Social Reading and Readers’ Comments in the Margins.” 
                         <hi rend="italic">PLOS ONE</hi> 15 (1): e0226708. 
                         <ref target="https://doi.org/10.1371/journal.pone.0226708">https://doi.org/10.1371/journal.pone.0226708</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Rebora, Simone, Peter Boot, Federico Pianzola, Brigitte Gasser, J Berenike Herrmann, Maria Kraxenberger, Moniek M Kuijpers, et al.</hi> 2021. “Digital Humanities and Digital Social Reading.” 
+<bibl style="text-align: left; "><hi rend="bold">Rebora, Simone, Peter Boot, Federico Pianzola, Brigitte Gasser, J Berenike Herrmann, Maria Kraxenberger, Moniek M Kuijpers, et al.</hi> 2021. “Digital Humanities and Digital Social Reading.” 
                         <hi rend="italic">Digital Scholarship in the Humanities</hi> 36 (Supplement_2): ii230–50. 
                         <ref target="https://doi.org/10.1093/llc/fqab020">https://doi.org/10.1093/llc/fqab020</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Rossdal, Maria.</hi> 2015. “All of the Greek and Roman Classics. Antikerezeption in Fanfiction.” 
+<bibl style="text-align: left; "><hi rend="bold">Rossdal, Maria.</hi> 2015. “All of the Greek and Roman Classics. Antikerezeption in Fanfiction.” 
                         <hi rend="italic">thersites. Journal for Transcultural Presences &amp; Diachronic Identities from Antiquity to Date</hi> 1. 
                         <ref target="https://doi.org/10.34679/thersites.vol1.5">https://doi.org/10.34679/thersites.vol1.5</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas, Marlene Bauer, Florian Habler, Hannes Heuberger, Florian Pilsl und Christian Wolff.</hi> 2020a. “Der Einsatz von Distant Reading auf einem Korpus deutschsprachiger Songtexte.” In 
+<bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas, Marlene Bauer, Florian Habler, Hannes Heuberger, Florian Pilsl und Christian Wolff.</hi> 2020a. “Der Einsatz von Distant Reading auf einem Korpus deutschsprachiger Songtexte.” In 
                         <hi rend="italic">DHd 2020: Spielräume; Digital Humanities zwischen Modellierung und Interpretation. Konferenzabstracts.</hi>, herausgegeben von Christof Schöch und Patrick Helling, 296–300. Paderborn, Germany. 
                         <ref target="https://doi.org/10.5281/zenodo.4621928">https://doi.org/10.5281/zenodo.4621928</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas, Isabella Engl, Juliane Herzog und Lisa Judisch.</hi> 2020b. “Towards an Analysis of Gender in Video Game Culture: Exploring Gender Specific Vocabulary in Video Game Magazines.” In 
+<bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas, Isabella Engl, Juliane Herzog und Lisa Judisch.</hi> 2020b. “Towards an Analysis of Gender in Video Game Culture: Exploring Gender Specific Vocabulary in Video Game Magazines.” In 
                         <hi rend="italic">Proceedings of the Digital Humanities in the Nordic Countries 5th Conference (DHN 2020),</hi> 333–341. Riga, Latvia. 
                         <ref target="http://ceur-ws.org/Vol-2612/short20.pdf">http://ceur-ws.org/Vol-2612/short20.pdf</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas, Florian Kaindl und Christian Wolff.</hi> 2020c. “Distant Reading of Religious Online Communities: A Case Study for Three Religious Forums on Reddit.” In 
+<bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas, Florian Kaindl und Christian Wolff.</hi> 2020c. “Distant Reading of Religious Online Communities: A Case Study for Three Religious Forums on Reddit.” In 
                         <hi rend="italic">Proceedings of the Digital Humanities in the Nordic Countries 5th Conference (DHN 2020)</hi>, 157–172. Riga, Latvia. 
                         <ref target="http://ceur-ws.org/Vol-2612/paper11.pdf">http://ceur-ws.org/Vol-2612/paper11.pdf</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas, Alina El-Keilany, Johannes Eger und Sarah Kurek.</hi> 2021a. “Exploring Computer Vision for Film Analysis: A Case Study for Five Canonical Movies.” In 
+<bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas, Alina El-Keilany, Johannes Eger und Sarah Kurek.</hi> 2021a. “Exploring Computer Vision for Film Analysis: A Case Study for Five Canonical Movies.” In 
                         <hi rend="italic">2nd International Conference of the European Association for Digital Humanities (EADH 2021)</hi>. Krasnoyarsk, Russia. 
                         <ref target="https://epub.uni-regensburg.de/50867/">https://epub.uni-regensburg.de/50867/</ref>
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas, Johanna Grünler, Nicole Schönwerth und Christian Wolff.</hi> 2021b. “Towards the Analysis of Fan Fictions in German Language: Exploration of a Corpus from the Platform Archive of Our Own.” In 
+</bibl>
+<bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas, Johanna Grünler, Nicole Schönwerth und Christian Wolff.</hi> 2021b. “Towards the Analysis of Fan Fictions in German Language: Exploration of a Corpus from the Platform Archive of Our Own.” In 
                         <hi rend="italic">2nd International Conference of the European Association for Digital Humanities (EADH 2021)</hi>. Krasnoyarsk, Russia. 
                         <ref target="https://epub.uni-regensburg.de/50829/">https://epub.uni-regensburg.de/50829/</ref>
-                    </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas, Johannes Hoffmann und Christian Wolff.</hi> 2022. “Analyzing Character Networks in Crossover Fan Fictions of Archive of Our Own.” In 
+</bibl>
+<bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas, Johannes Hoffmann und Christian Wolff.</hi> 2022. “Analyzing Character Networks in Crossover Fan Fictions of Archive of Our Own.” In 
                         <hi rend="italic">Workshop on Computational Methods in the Humanities 2022 (COMHUM 2022)</hi>. Lausanne, Switzerland: Laboratoire laussannois d’informatique et statistique textuelle. 
                         <ref target="https://wp.unil.ch/llist/files/2022/06/COMHUM_2022_paper_14.pdf">https://wp.unil.ch/llist/files/2022/06/COMHUM_2022_paper_14.pdf</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas und Sarah Kurek.</hi> 2022. “Der Einsatz von Computer Vision-Methoden Für Filme - Eine Fallanalyse Für Die Kriminalfilm-Reihe Tatort.” In 
+<bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas und Sarah Kurek.</hi> 2022. “Der Einsatz von Computer Vision-Methoden Für Filme - Eine Fallanalyse Für Die Kriminalfilm-Reihe Tatort.” In 
                         <hi rend="italic">DHd 2022 Kulturen Des Digitalen Gedächtnisses. 8. Tagung Des Verbands “Digital Humanities Im Deutschsprachigen Raum” (DHd 2022)</hi>, herausgegeben von Michaela Geierhos, Peer Trilcke, Ingo Börner, Sabine Seifert, Anna Busch und Patrick Helling, 65–72. Potsdam, Germany: Zenodo. 
                         <ref target="https://doi.org/10.5281/zenodo.6328169">https://doi.org/10.5281/zenodo.6328169</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas, Fabian Schiller, Matthias Götz und Christian Wolff.</hi> 2023. “A Corpus of Memes from Reddit: Acquisition, Preparation and First Case Studies.” In 
+<bibl style="text-align: left; "><hi rend="bold">Schmidt, Thomas, Fabian Schiller, Matthias Götz und Christian Wolff.</hi> 2023. “A Corpus of Memes from Reddit: Acquisition, Preparation and First Case Studies.” In 
                         <hi rend="italic">INFORMATIK 2023 - Designing Futures: Zukünfte Gestalten</hi>, herausgegeben von Maike Klein, Daniel Krupka, Cornelia Winter, and Volker Wohlgemuth, 795–804. Bonn: Gesellschaft für Informatik e.V. 
                         <ref target="https://doi.org/10.18420/inf2023_89">https://doi.org/10.18420/inf2023_89</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Tosenberger, Catherine.</hi> 2008. “Homosexuality at the Online Hogwarts: Harry Potter Slash Fanfiction.” 
+<bibl style="text-align: left; "><hi rend="bold">Tosenberger, Catherine.</hi> 2008. “Homosexuality at the Online Hogwarts: Harry Potter Slash Fanfiction.” 
                         <hi rend="italic">Children’s Literature</hi> 36 (1): 185–207. 
                         <ref target="https://doi.org/10.1353/chl.0.0017">https://doi.org/10.1353/chl.0.0017</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Yin, Kodlee, Cecilia Aragon, Sarah Evans und Katie Davis.</hi> 2017. “Where No One Has Gone Before: A Meta-Dataset of the World’s Largest Fanfiction Repository.” In 
+<bibl style="text-align: left; "><hi rend="bold">Yin, Kodlee, Cecilia Aragon, Sarah Evans und Katie Davis.</hi> 2017. “Where No One Has Gone Before: A Meta-Dataset of the World’s Largest Fanfiction Repository.” In 
                         <hi rend="italic">Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems</hi>, 6106–6110. Denver Colorado USA: ACM. 
                         <ref target="https://doi.org/10.1145/3025453.3025720">https://doi.org/10.1145/3025453.3025720</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Zhang, Weiwei, Jackie Chi Kit Cheung und Joel Oren.</hi> 2019. “Generating Character Descriptions for Automatic Summarization of Fiction.” 
+<bibl style="text-align: left; "><hi rend="bold">Zhang, Weiwei, Jackie Chi Kit Cheung und Joel Oren.</hi> 2019. “Generating Character Descriptions for Automatic Summarization of Fiction.” 
                         <hi rend="italic">Proceedings of the AAAI Conference on Artificial Intelligence</hi> 33 (July): 7476–7483. 
                         <ref target="https://doi.org/10.1609/aaai.v33i01.33017476">https://doi.org/10.1609/aaai.v33i01.33017476</ref>.
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

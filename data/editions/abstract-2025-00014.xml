@@ -1,259 +1,256 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="STIEMER_Haimo_Pause_im_Text__Zur_Exploration_semantisch_kond">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Pause im Text. Zur Exploration semantisch konditionierter Sprechpausen in Hörbüchern</title>
-                <author>
-                    <persName>
-                        <surname>Stiemer</surname>
-                        <forename>Haimo</forename>
-                    </persName>
-                    <affiliation>TU Darmstadt, Deutschland</affiliation>
-                    <email>stiemer@linglit.tu-darmstadt.de</email>
-                    <idno type="ORCID">0000-0002-4407-2415</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Hatzel</surname>
-                        <forename>Hans Ole</forename>
-                    </persName>
-                    <affiliation>Universität Hamburg, Deutschland</affiliation>
-                    <email>hans.ole.hatzel@uni-hamburg.de</email>
-                    <idno type="ORCID">0000-0002-4586-7260</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Biemann</surname>
-                        <forename>Chris</forename>
-                    </persName>
-                    <affiliation>Universität Hamburg, Deutschland</affiliation>
-                    <email>chris.biemann@uni-hamburg.de</email>
-                    <idno type="ORCID">0000-0002-8449-9624</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Gius</surname>
-                        <forename>Evelyn</forename>
-                    </persName>
-                    <affiliation>TU Darmstadt, Deutschland</affiliation>
-                    <email>evelyn.gius@tu-darmstadt.de</email>
-                    <idno type="ORCID">0000-0001-8888-8419</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-12-02T16:31:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag: Methode</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Segmentierung</term>
-                    <term>Narratologie</term>
-                    <term>Hörbücher</term>
-                    <term>Sprechpausen</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Transkription</term>
-                    <term>Strukturanalyse</term>
-                    <term>Daten</term>
-                    <term>Ton</term>
-                    <term>Text</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>1. Sprechpausen als Vehikel der Textsegmentierung</head>
-                <p>Die für die Textanalyse grundlegende Segmentierung von Prosatexten, also deren Zerlegung in diskrete Einheiten, ist in den Computational Literary Studies (CLS) weiterhin ein prominentes Problem. Obgleich viele computationelle Verfahren die vorhergehende Unterteilung von Texten voraussetzen, fehlt es bislang an standardisierten Segmenten (cf. Bartsch et al. 2023). In Abhängigkeit von der jeweiligen Forschungsfrage und der zum Einsatz bestimmten computationellen Methoden finden sich sowohl Segmentierungen von Layoutelementen bzw. Einheiten der materiellen Textgestaltung (cf. Herzog 2018), die Tokenisierung (auf Wort- oder Satzebene) oder aber das 
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="STIEMER_Haimo_Pause_im_Text__Zur_Exploration_semantisch_kond" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Pause im Text. Zur Exploration semantisch konditionierter Sprechpausen in Hörbüchern</title>
+<author>
+<persName>
+<surname>Stiemer</surname>
+<forename>Haimo</forename>
+</persName>
+<affiliation>TU Darmstadt, Deutschland</affiliation>
+<email>stiemer@linglit.tu-darmstadt.de</email>
+<idno type="ORCID">0000-0002-4407-2415</idno>
+</author>
+<author>
+<persName>
+<surname>Hatzel</surname>
+<forename>Hans Ole</forename>
+</persName>
+<affiliation>Universität Hamburg, Deutschland</affiliation>
+<email>hans.ole.hatzel@uni-hamburg.de</email>
+<idno type="ORCID">0000-0002-4586-7260</idno>
+</author>
+<author>
+<persName>
+<surname>Biemann</surname>
+<forename>Chris</forename>
+</persName>
+<affiliation>Universität Hamburg, Deutschland</affiliation>
+<email>chris.biemann@uni-hamburg.de</email>
+<idno type="ORCID">0000-0002-8449-9624</idno>
+</author>
+<author>
+<persName>
+<surname>Gius</surname>
+<forename>Evelyn</forename>
+</persName>
+<affiliation>TU Darmstadt, Deutschland</affiliation>
+<email>evelyn.gius@tu-darmstadt.de</email>
+<idno type="ORCID">0000-0001-8888-8419</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-12-02T16:31:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943032</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Vortrag: Methode</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Segmentierung</term>
+<term>Narratologie</term>
+<term>Hörbücher</term>
+<term>Sprechpausen</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Transkription</term>
+<term>Strukturanalyse</term>
+<term>Daten</term>
+<term>Ton</term>
+<term>Text</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>1. Sprechpausen als Vehikel der Textsegmentierung</head>
+<p>Die für die Textanalyse grundlegende Segmentierung von Prosatexten, also deren Zerlegung in diskrete Einheiten, ist in den Computational Literary Studies (CLS) weiterhin ein prominentes Problem. Obgleich viele computationelle Verfahren die vorhergehende Unterteilung von Texten voraussetzen, fehlt es bislang an standardisierten Segmenten (cf. Bartsch et al. 2023). In Abhängigkeit von der jeweiligen Forschungsfrage und der zum Einsatz bestimmten computationellen Methoden finden sich sowohl Segmentierungen von Layoutelementen bzw. Einheiten der materiellen Textgestaltung (cf. Herzog 2018), die Tokenisierung (auf Wort- oder Satzebene) oder aber das 
                     <hi rend="italic">Unitizing</hi>, also die nach inhaltsanalytischen Kategorien erfolgte Identifikation von größeren Einheiten in Texten wie z. B. Szenen (cf. Gius et al. 2019).
                 </p>
-                <p>Ein in den CLS bislang nicht geprüfter Ansatz der Segmentierung, die Zergliederung von Erzähltexten mittels der in der Rezitation emergenten Sprechpausen, ist Gegenstand dieses Beitrags. Wir präsentieren erste Beobachtungen hinsichtlich der Möglichkeiten wie Bedingungen für die Identifikation und Analyse semantisch konditionierter Sprechpausen in Hörbüchern. Ein solcher Zugang würde die genannten, allein vom Text ausgehenden Zugänge zur Segmentierung um eine in der Textrezeption erzeugte Segmentierung komplementieren, auch um die bestehenden Segmentierungsoptionen überprüfen zu können.</p>
-                <p>Ausgangspunkt unserer Analyse ist das in der Sprechwissenschaft und Sprecherziehung entwickelte Konzept des interpretierenden Textsprechens (cf. Geißner 1981:175; Brand 2021), mit welchem jedwede Rezitation von Texten vor Publikum als originärer Interpretationsvorgang und mithin die Sprechfassung eines Textes als dessen Interpretation verstanden werden. In der Konsequenz verstehen wir die Pausensetzung und -länge, welche der prosodischen Dimension eines literarischen Werks angehören, als die von Vortragenden ad hoc oder planmäßig vorgenommene sinnhafte Segmentierung eines Textes. Unbestimmt bleibt dabei zunächst, inwiefern es sich bei den potentiell multifunktionalen Sprechpausen um syntaktische und typographisch bedingte, auf z.B. Interpunktion oder Absätze rekurrierende, oder aber um semantisch konditionierte Unterbrechungen handelt, denen eine noch näher zu bestimmende handlungsrelevante Funktion zugewiesen werden kann. In diesem Beitrag untersuchen wir demzufolge die semantisch-interpretative Qualität von Sprechpausen in Tonaufzeichnungen von eingelesenen Erzähltexten. Der Beschreibung unseres Audio-Korpus (2.) sowie der Transkriptions-Methode (3.) folgt die Exploration der aus diesem Korpus gewonnenen, transkribierten Daten, um die mögliche Motivierung der Sprechpausen zu erfassen. Analysiert wird hierfür die Verteilung der Anzahl wie Länge der in den Daten detektierten Pausen (4.). Anschließend diskutieren wir den Zusammenhang von Sprechkompetenz und Pausensetzung (5.) und ziehen aus der Datenexploration Rückschlüsse für weitergehende Forschungsaktivitäten (6.).</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>2. Professionelle und Laien-Lesungen</head>
-                <p>Für unsere Untersuchung haben wir die aufgezeichneten Lesungen von drei, aus dem EvENT-Projektkorpus (Vauth et al. 2021) entnommenen Erzähltexten analysiert. Bei der Auswahl der Texte wurde darauf geachtet, dass sich diese durch verschiedene narrative Profile bzw. Charakteristika auszeichnen. Den analysierten Vortragsaufzeichnungen zugrunde lagen somit Franz Kafkas hypotaktisch geprägte Erzählung 
+<p>Ein in den CLS bislang nicht geprüfter Ansatz der Segmentierung, die Zergliederung von Erzähltexten mittels der in der Rezitation emergenten Sprechpausen, ist Gegenstand dieses Beitrags. Wir präsentieren erste Beobachtungen hinsichtlich der Möglichkeiten wie Bedingungen für die Identifikation und Analyse semantisch konditionierter Sprechpausen in Hörbüchern. Ein solcher Zugang würde die genannten, allein vom Text ausgehenden Zugänge zur Segmentierung um eine in der Textrezeption erzeugte Segmentierung komplementieren, auch um die bestehenden Segmentierungsoptionen überprüfen zu können.</p>
+<p>Ausgangspunkt unserer Analyse ist das in der Sprechwissenschaft und Sprecherziehung entwickelte Konzept des interpretierenden Textsprechens (cf. Geißner 1981:175; Brand 2021), mit welchem jedwede Rezitation von Texten vor Publikum als originärer Interpretationsvorgang und mithin die Sprechfassung eines Textes als dessen Interpretation verstanden werden. In der Konsequenz verstehen wir die Pausensetzung und -länge, welche der prosodischen Dimension eines literarischen Werks angehören, als die von Vortragenden ad hoc oder planmäßig vorgenommene sinnhafte Segmentierung eines Textes. Unbestimmt bleibt dabei zunächst, inwiefern es sich bei den potentiell multifunktionalen Sprechpausen um syntaktische und typographisch bedingte, auf z.B. Interpunktion oder Absätze rekurrierende, oder aber um semantisch konditionierte Unterbrechungen handelt, denen eine noch näher zu bestimmende handlungsrelevante Funktion zugewiesen werden kann. In diesem Beitrag untersuchen wir demzufolge die semantisch-interpretative Qualität von Sprechpausen in Tonaufzeichnungen von eingelesenen Erzähltexten. Der Beschreibung unseres Audio-Korpus (2.) sowie der Transkriptions-Methode (3.) folgt die Exploration der aus diesem Korpus gewonnenen, transkribierten Daten, um die mögliche Motivierung der Sprechpausen zu erfassen. Analysiert wird hierfür die Verteilung der Anzahl wie Länge der in den Daten detektierten Pausen (4.). Anschließend diskutieren wir den Zusammenhang von Sprechkompetenz und Pausensetzung (5.) und ziehen aus der Datenexploration Rückschlüsse für weitergehende Forschungsaktivitäten (6.).</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>2. Professionelle und Laien-Lesungen</head>
+<p>Für unsere Untersuchung haben wir die aufgezeichneten Lesungen von drei, aus dem EvENT-Projektkorpus (Vauth et al. 2021) entnommenen Erzähltexten analysiert. Bei der Auswahl der Texte wurde darauf geachtet, dass sich diese durch verschiedene narrative Profile bzw. Charakteristika auszeichnen. Den analysierten Vortragsaufzeichnungen zugrunde lagen somit Franz Kafkas hypotaktisch geprägte Erzählung 
                     <hi rend="italic">Die Verwandlung</hi>, Annette von Droste-Hülshoffs dialogreiche, viele Passagen mit direkter Rede aufweisende Erzählung 
                     <hi rend="italic">Die Judenbuche</hi> sowie Heinrich von Kleists 
                     <hi rend="italic">Das Erdbeben in Chili</hi>, in welchem kontrastiv zeitraffende und szenisch erzählte Passagen vorhanden sind. Für jeden dieser Texte haben wir eine professionelle, von einer/m Schauspieler:in eingesprochene Lesung sowie eine über das frei zugängliche Online-Portal 
                     <hi rend="italic">LibriVox</hi> erhältliche Laien-Lesung analysiert. Durch die Auswahl von professionellen sowie laienhaften Vorträgen enthält unser Audio-Korpus mutmaßlich Aufzeichnungen von Vortragenden mit unterschiedlicher Text- und Vortragskompetenz, was zumindest eine tentative Auswertung der Auswirkungen dieser Kompetenzen auf die Pausensetzungen in den verschiedenen Sprechfassungen ermöglicht. Die Annahme ist dabei, dass die professionell Vortragenden die Pausen bewusster einsetzen und damit auch mehr semantisch konditionierte bzw. relevante Sprechpausen vornehmen, die entsprechend stärker an Bedeutungselementen der Texte ausgerichtet sind. Solche Pausen sind an ihrer verhältnismäßig längeren Dauer erkennbar. Überdies muss berücksichtigt werden, dass die professionellen Lesungen redaktionell betreut sind und die Tonaufzeichnungen zudem eine Postproduktion, also Nachbearbeitung, durchlaufen haben.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-
-                    <head>3. Pausenerkennung mit WhisperX</head>
-                
-                <p>Für die automatische Pausenerkennung verwendeten wir Whisper (Radford et al. 2023), ein neuronales Modell zur Transkription von gesprochener Sprache, welches annähernd die Fehlerraten von professionellen Transkriptor:innen erreicht (Radford et al. 2023, Abbildung 7). Prinzipiell wäre es wünschenswert, einen Alignierungsansatz zu nutzen, die Audiodaten also mit einem – in unserem Fall verfügbaren – Originaltext abzugleichen. Schiel et al. (2017) beschreiben ein derartiges System. In der Praxis war jedoch keine Implementation einfach auf unseren Daten anwendbar, sodass die automatische Transkription für diese explorative Arbeit passend war. Konkret setzen wir die Implementation WhisperX (Bain et al. 2023) ein, welche zahlreiche zusätzliche Funktionen im Vergleich zur ursprünglichen Whisper-Implementation bietet. Die Anwendung von WhisperX auf eine beliebige Audiodatei erzeugt ein Transkript eben dieser, in dem einzelne Segmente mit Zeitcodes versehen sind. Die Segmente entsprechen dabei linguistischen Sätzen (da wir WhisperX mit den Standardoptionen aufrufen und somit 
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>3. Pausenerkennung mit WhisperX</head>
+<p>Für die automatische Pausenerkennung verwendeten wir Whisper (Radford et al. 2023), ein neuronales Modell zur Transkription von gesprochener Sprache, welches annähernd die Fehlerraten von professionellen Transkriptor:innen erreicht (Radford et al. 2023, Abbildung 7). Prinzipiell wäre es wünschenswert, einen Alignierungsansatz zu nutzen, die Audiodaten also mit einem – in unserem Fall verfügbaren – Originaltext abzugleichen. Schiel et al. (2017) beschreiben ein derartiges System. In der Praxis war jedoch keine Implementation einfach auf unseren Daten anwendbar, sodass die automatische Transkription für diese explorative Arbeit passend war. Konkret setzen wir die Implementation WhisperX (Bain et al. 2023) ein, welche zahlreiche zusätzliche Funktionen im Vergleich zur ursprünglichen Whisper-Implementation bietet. Die Anwendung von WhisperX auf eine beliebige Audiodatei erzeugt ein Transkript eben dieser, in dem einzelne Segmente mit Zeitcodes versehen sind. Die Segmente entsprechen dabei linguistischen Sätzen (da wir WhisperX mit den Standardoptionen aufrufen und somit 
                     <hi rend="italic">Sentence</hi> als Wert für die 
                     <hi rend="italic">Segment-Resolution</hi> wählen), wobei diese Separierung unter anderem auf Grundlage des transkribierten Textes erfolgt, dessen Satzzeichen naturgemäß nicht immer dem Originaltext entsprechen. Für unseren Anwendungsfall sind die ebenfalls verfügbaren Zeitinformationen auf der Wortebene – im Hintergrund durch wav2vec2 (Baevski et al. 2020) umgesetzt – essentiell, denn Whisper bietet in der Ursprungsimplementierung nur Anfangs-Zeitcodes für Segmente, sodass unklar ist, wieviel Zeit zwischen zwei Sätzen oder Segmenten verbleibt. Mit WhisperX erstellen wir also eine Transkription, in der Start- und Endzeitstempel auf der Segment- sowie auf der Tokenebene enthalten sind. Unsere Transkriptionen wurden mit der large-v2 Variante von Whisper angefertigt. Die sechs so bearbeiteten Audio-Dateien werden von dem Modell in insgesamt 4’542 Segmente aufgeteilt, die wir im Folgenden weiter untersuchen.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>4. Pausen im Korpus</head>
-                <figure>
-                    <graphic n="1001" width="15.16845cm" height="7.584225cm" url="Pictures/8f4c873d1c09b2df713a7b3e888f7803.png" rend="inline"/>
-                    <head>Abbildung 1: Verteilung der Pausen nach Länge und Anzahl in den Sprechfassungen</head>
-                </figure>
-                <p>Die Verteilung der insgesamt 4.542 im Audio-Korpus mit WhisperX detektierten Pausen (an Satzenden) nach den Sprechfassungen der Texte auf die Pausenlängenwerte (x-Achse) sowie die Pausenanzahl (y-Achse) findet sich in Abbildung 1. Mit der Auswertung der Daten und in Anlehnung an die vom Grammatischen Informationssystem grammis (cf. Institut für Deutsche Sprache 2013) vorgeschlagene Differenzierung von Sprechpausen ergeben sich zunächst folgende Beobachtungen: In allen Sprechfassungen dominieren erwartungsgemäß die sehr kurze Pausen, die lediglich auf Atemeinschnitte bei der Satzbeendigung verweisen (x&lt;0,3 Sek.), während Verzögerungspausen (0,3&lt;x&lt;1) deutlich seltener auftreten. Wird ab dem Längenwert 1 Sekunde den Pausen eine dann noch zu bestimmende semantische Relevanz zugemessen (Relevanzpause; cf. ebd.), weisen beide Sprechfassungen der 
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>4. Pausen im Korpus</head>
+<figure>
+<graphic height="7.584225cm" n="1001" rend="inline" url="Pictures/8f4c873d1c09b2df713a7b3e888f7803.png" width="15.16845cm"/>
+<head>Abbildung 1: Verteilung der Pausen nach Länge und Anzahl in den Sprechfassungen</head>
+</figure>
+<p>Die Verteilung der insgesamt 4.542 im Audio-Korpus mit WhisperX detektierten Pausen (an Satzenden) nach den Sprechfassungen der Texte auf die Pausenlängenwerte (x-Achse) sowie die Pausenanzahl (y-Achse) findet sich in Abbildung 1. Mit der Auswertung der Daten und in Anlehnung an die vom Grammatischen Informationssystem grammis (cf. Institut für Deutsche Sprache 2013) vorgeschlagene Differenzierung von Sprechpausen ergeben sich zunächst folgende Beobachtungen: In allen Sprechfassungen dominieren erwartungsgemäß die sehr kurze Pausen, die lediglich auf Atemeinschnitte bei der Satzbeendigung verweisen (x&lt;0,3 Sek.), während Verzögerungspausen (0,3&lt;x&lt;1) deutlich seltener auftreten. Wird ab dem Längenwert 1 Sekunde den Pausen eine dann noch zu bestimmende semantische Relevanz zugemessen (Relevanzpause; cf. ebd.), weisen beide Sprechfassungen der 
                     <hi rend="italic">Verwandlung</hi> in diesem Sektor die wenigsten Relevanzpausen auf (professionelle Lesung 24 % und Laienlesung 12 % aller Pausen der jeweiligen Sprechfassung), was im Zusammenhang mit der hypotaktischen Struktur des Textes oder aber dem deutlich geringeren Orts- und Zeitenwechsel im Text stehen könnte. Die Verwandlung Gregor Samsas in ein Ungeziefer und die sich anschließenden Interaktionen mit seiner Familie finden ausschließlich in der Wohnung der Samsas statt, die erzählte Zeit im ersten Kapitel beträgt ca. eineinhalb Stunden. 
                 </p>
-                <p>Die dialogreiche Gestaltung der 
+<p>Die dialogreiche Gestaltung der 
                     <hi rend="italic">Judenbuche</hi> wiederum scheint, obschon der Text kürzer als 
                     <hi rend="italic">Die Verwandlung</hi> ist, zu der höchsten Anzahl an Pausen im Audio-Korpus beizutragen (1.108 bei der Laienlesung, 1.064 bei der professionellen Lesung): Allein bei den Relevanzpausen beträgt der Anteil jener Pausen, die nach oder vor der direkten Redewiedergabe einer Figur gesetzt werden, 30 % (n = 66). Bei der 
                     <hi rend="italic">Verwandlung</hi> hingegen beläuft sich der Anteil der anscheinend durch direkte Rede motivierten Pausen im gleichen Pausenspektrum auf gerade einmal 3 % (n = 7). 
                 </p>
-                <p>Die höchsten Anteile an Relevanzpausen weisen die beiden Sprechfassungen des Kleist-Textes auf (professionelle Lesung 44 % und Laienlesung 41 % aller Pausen der jeweiligen Sprechfassung). Es handelt sich im Korpusvergleich um den Text mit den meisten Figuren, mit einem sehr handlungsintensiven, also auch diverse Ortswechsel enthaltenden, Plot. Nachdem das Verhältnis der Segmentlänge zur durchschnittlichen Satzlänge der Texte unterschiedlich ist, nehmen wir an, dass eher bestimmte narrative Eigenschaften für Pausen relevant sind. Zumindest scheint die höhere Heterogenität, die durch vermehrte narrative Elemente wie Dialoge, Figuren oder auch weitere, handlungsbezogene Elemente entsteht, auch die Anzahl an Relevanzpausen zu steigern.</p>
-                <figure>
-                    <graphic n="1002" width="11.873030555555555cm" height="6.758413888888889cm" url="Pictures/3dacbbcdeef26190a40e2e8c3b286f31.png" rend="inline"/>
-                    <head>Tabelle 1: Verteilung der Pausen nach Länge in den Sprechfassungen</head>
-                </figure>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>5. Kompetenz und Pausensetzung</head>
-                <p>Abgesehen von der Laienfassung des 
+<p>Die höchsten Anteile an Relevanzpausen weisen die beiden Sprechfassungen des Kleist-Textes auf (professionelle Lesung 44 % und Laienlesung 41 % aller Pausen der jeweiligen Sprechfassung). Es handelt sich im Korpusvergleich um den Text mit den meisten Figuren, mit einem sehr handlungsintensiven, also auch diverse Ortswechsel enthaltenden, Plot. Nachdem das Verhältnis der Segmentlänge zur durchschnittlichen Satzlänge der Texte unterschiedlich ist, nehmen wir an, dass eher bestimmte narrative Eigenschaften für Pausen relevant sind. Zumindest scheint die höhere Heterogenität, die durch vermehrte narrative Elemente wie Dialoge, Figuren oder auch weitere, handlungsbezogene Elemente entsteht, auch die Anzahl an Relevanzpausen zu steigern.</p>
+<figure>
+<graphic height="6.758413888888889cm" n="1002" rend="inline" url="Pictures/3dacbbcdeef26190a40e2e8c3b286f31.png" width="11.873030555555555cm"/>
+<head>Tabelle 1: Verteilung der Pausen nach Länge in den Sprechfassungen</head>
+</figure>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>5. Kompetenz und Pausensetzung</head>
+<p>Abgesehen von der Laienfassung des 
                     <hi rend="italic">Erdbebens</hi> ist die Anzahl der Gesamtpausen bei den beiden anderen, von Laien eingesprochenen Texten leicht höher als bei jenen der professionell Vortragenden. Eine Tendenz bezüglich der möglichen Auswirkung der Sprechkompetenz zeichnet sich jedoch ab, wenn der Fokus auf die Relevanzpausen gesetzt wird. Hier ist bei der 
                     <hi rend="italic">Verwandlung</hi> und, wenn auch nur leicht, beim 
                     <hi rend="italic">Erdbeben</hi> der prozentuale Anteil bei den professionellen im Vergleich zu den Laien-Sprecher:innen höher. Die Tendenz verstärkt sich, wenn im Spektrum der Relevanzpausen zwischen jenen Pausen unterschieden wird, die mutmaßlich stärker typographisch motiviert sind, weil sie nach Absätzen eingelegt werden, und jenen, die innerhalb von Absätzen gemacht wurden. Die Auswertung der von uns dementsprechend manuell annotierten Whisper-Transkripte ergab, dass die professionellen Leser:innen in allen Texten mehr Relevanzpausen in den Absätzen setzen als die Laien-Leser:innen. 
                 </p>
-                <p>Zu bemerken ist, dass sich in Absätzen auch weitere, möglicherweise durch typographische Trigger erzeugte Pausen befinden. Neben den Anführungszeichen der direkten Rede zählt dazu z.B. ungewöhnliche Interpunktion am Satzende. </p>
-                <figure>
-                    <graphic n="1003" width="7.429780555555555cm" height="5.9244972222222225cm" url="Pictures/a346086bfef03efcf9ed5105711d0098.png" rend="inline"/>
-                    <head>Tabelle 2: Verteilung der Relevanzpausen nach Textposition</head>
-                </figure>
-                <p>Wir gehen zugleich davon aus, dass die Textkenntnis bei den professionellen Sprecher:innen in der Regel höher ist, nicht zuletzt aufgrund der redaktionellen Betreuung, ihrer Ausbildung und der im Vorfeld der Aufnahme mutmaßlich erfolgten, eingehenden Beschäftigung mit dem Text. </p>
-                <p>6. Fazit und Ausblick</p>
-                <p>Unsere tentative Annäherung an die Segmentierungsfunktion von Sprechpausen hat ergeben, dass es lohnend erscheint, diesen Ansatz weiter zu verfolgen und durch ein größeres Audio-Korpus zu validieren. Die Exploration unserer Daten bislang deutet an, dass mittels der sprechpausenbezogenen Segmentierung Textprofile erstellt werden können und eine größere Sprecher:innenkompetenz vermutlich zu mehr nicht primär typographisch getriggerten Sprechpausen führt. </p>
-                <p>Die Erstellung eines größeren Audio-Korpus für weitere Untersuchungen erscheint dabei nicht zuletzt aufgrund der spezifischen Rhetorizität von Vortragenden geboten, ihrer idiosynkratischen Realisierung der Sprechfassung eines Textes. Um die damit verbundenen Parameter der Pausensetzung und -längen weitestmöglich zu neutralisieren, wäre die Untersuchung von deutlich mehr Sprechfassungen nur eines Textes notwendig. In einem nächsten Schritt werden wir daher acht zusätzliche Audioaufnahmen von Laien-Lesungen des 
+<p>Zu bemerken ist, dass sich in Absätzen auch weitere, möglicherweise durch typographische Trigger erzeugte Pausen befinden. Neben den Anführungszeichen der direkten Rede zählt dazu z.B. ungewöhnliche Interpunktion am Satzende. </p>
+<figure>
+<graphic height="5.9244972222222225cm" n="1003" rend="inline" url="Pictures/a346086bfef03efcf9ed5105711d0098.png" width="7.429780555555555cm"/>
+<head>Tabelle 2: Verteilung der Relevanzpausen nach Textposition</head>
+</figure>
+<p>Wir gehen zugleich davon aus, dass die Textkenntnis bei den professionellen Sprecher:innen in der Regel höher ist, nicht zuletzt aufgrund der redaktionellen Betreuung, ihrer Ausbildung und der im Vorfeld der Aufnahme mutmaßlich erfolgten, eingehenden Beschäftigung mit dem Text. </p>
+<p>6. Fazit und Ausblick</p>
+<p>Unsere tentative Annäherung an die Segmentierungsfunktion von Sprechpausen hat ergeben, dass es lohnend erscheint, diesen Ansatz weiter zu verfolgen und durch ein größeres Audio-Korpus zu validieren. Die Exploration unserer Daten bislang deutet an, dass mittels der sprechpausenbezogenen Segmentierung Textprofile erstellt werden können und eine größere Sprecher:innenkompetenz vermutlich zu mehr nicht primär typographisch getriggerten Sprechpausen führt. </p>
+<p>Die Erstellung eines größeren Audio-Korpus für weitere Untersuchungen erscheint dabei nicht zuletzt aufgrund der spezifischen Rhetorizität von Vortragenden geboten, ihrer idiosynkratischen Realisierung der Sprechfassung eines Textes. Um die damit verbundenen Parameter der Pausensetzung und -längen weitestmöglich zu neutralisieren, wäre die Untersuchung von deutlich mehr Sprechfassungen nur eines Textes notwendig. In einem nächsten Schritt werden wir daher acht zusätzliche Audioaufnahmen von Laien-Lesungen des 
                     <hi rend="italic">Erdbeben</hi>-Textes der gleichen Analyse unterziehen, auch um die bisherigen Ergebnisse einer Prüfung zu unterziehen. Auf diese Weise wollen wir ebenso eruieren, welche Textcharakteristika für die spezifische Pausenverteilung in den Sprechfassungen maßgeblich sind. Sollten sich in der Analyse eines größeren Audio-Korpus Übereinstimmungen diesbezüglich zeigen, wäre eine weitere Auswertung dieser Segmentgrenzen interessant. Zudem könnten die Daten Grundlagen für die Entwicklung eines neuen Ansatzes zur automatischen Textsegmentierung sein. Wenn die Segmente aus erzähltheoretischer Sicht stimmige bzw. konsistente Einheiten ergeben, wäre ihre automatische Erkennung eine geeignete Grundlage für darauf aufbauende narrative Analysen wie etwa von Figuren oder Handlung.
                 </p>
-            </div>
-        </body>
-        <back>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl>
-                        <hi style="font-size:9pt" xml:space="preserve"><hi rend="bold">Baevski, Alexei, Yuhao Zhou, Abdelrahman Mohamed, und Michael Auli</hi>. 2020. "wav2vec 2.0: A framework for self-supervised learning of speech representations." </hi>
-                        <hi rend="italic" style="font-size:9pt">Advances in neural information processing systems</hi>
-                        <hi style="font-size:9pt" xml:space="preserve"> 33 (2020): 12449-12460. </hi>
+</div>
+</body>
+<back>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl>
+<hi style="font-size:9pt" xml:space="preserve"><hi rend="bold">Baevski, Alexei, Yuhao Zhou, Abdelrahman Mohamed, und Michael Auli</hi>. 2020. "wav2vec 2.0: A framework for self-supervised learning of speech representations." </hi>
+<hi rend="italic" style="font-size:9pt">Advances in neural information processing systems</hi>
+<hi style="font-size:9pt" xml:space="preserve"> 33 (2020): 12449-12460. </hi>
+</bibl>
+<bibl>
+<hi style="font-size:9pt"><hi rend="bold">Bain, Max, Jaesung Huh, Tengda Han und Andrew Zisserman</hi>. 2023. "Whisperx: Time-accurate speech transcription of long-form audio." In</hi>
+<hi rend="italic" style="font-size:9pt" xml:space="preserve">Proc. INTERSPEECH 2023. </hi>
+<hi style="font-size:9pt">4489-4493.</hi>
+</bibl>
+<bibl>
+<hi style="font-size:9pt" xml:space="preserve"><hi rend="bold">Bartsch, Sabine, Evelyn Gius, Marcus Müller, Andrea Rapp und Thomas Weitin</hi>. 2023. “Sinn und Segment. Wie die digitale Analysepraxis unsere Begriffe schärft.” </hi>
+<hi rend="italic" style="font-size:9pt">Zeitschrift für digitale Geisteswissenschaften</hi>
+<hi style="font-size:9pt" xml:space="preserve"> 10.17175/2023_003.</hi>
+</bibl>
+<bibl>
+<hi style="font-size:9pt"><hi rend="bold">Brand, Svenja</hi>. 2021. “</hi>
+<hi rend="background(white)" style="font-size:9pt" xml:space="preserve">Textsprechen als Interpretation. Gedanken zur ästhetischen Kommunikation in der literaturwissenschaftlichen Lehre.” In PhiN. Philologie im Netz, Beiheft 27/2021, 66-76. </hi>
+</bibl>
+<bibl>
+<hi style="font-size:9pt"><hi rend="bold">Geißner, Hellmut</hi>. 1981. “Sprechwissenschaft. Theorie der mündlichen Kommunikation.” Königstein: Scriptor.</hi>
+</bibl>
+<bibl>
+<hi style="font-size:9pt" xml:space="preserve"><hi rend="bold">Gius, Evelyn, Carla Sökefeld, Lea Dümpelmann, Lucas Kaufmann, Annekea Schreiber, Svenja Guhr, Nathalie Wiedmer und Fotis Jannidis</hi>. 2021. “Guidelines for Detection of Scenes (1.0).” Zenodo. </hi>
+<ref target="https://doi.org/10.5281/zenodo.4457177">
+<hi rend="underline color(1155CC)" style="font-size:9pt">https://doi.org/10.5281/zenodo.4457177</hi>
+</ref>
+<hi style="font-size:9pt" xml:space="preserve"> (zugegriffen: 19.Juli 2024)</hi>
+<hi style="font-size:7pt">.</hi>
+</bibl>
+<bibl>
+<hi style="font-size:9pt" xml:space="preserve"><hi rend="bold">Herzog, Rainer</hi>. 2018. “Ein generischer Ansatz zur digitalen Layoutanalyse von Manuskripten”. </hi>
+<ref target="https://ediss.sub.uni-hamburg.de/handle/ediss/6036">
+<hi rend="underline color(1155CC)" style="font-size:9pt">https://ediss.sub.uni-hamburg.de/handle/ediss/6036</hi>
+</ref>
+<hi style="font-size:9pt" xml:space="preserve"> (zugegriffen: 19.Juli 2024). </hi>
+</bibl>
+<bibl>
+<hi style="font-size:9pt"><hi rend="bold">Kisler, Thomas, Uwe Reichel, Florian Schiel</hi>. 2017. “Multilingual processing of speech via web services.” Computer Speech &amp; Language. 47:326-347</hi>
+</bibl>
+<bibl>
+<hi style="font-size:9pt"><hi rend="bold">Klos, Thomas und Heiner Ellgring</hi>. 1987. “</hi>
+<hi rend="background(white)" style="font-size:9pt" xml:space="preserve">Manuelle versus elektronische Analyse von Sprechpausen” In </hi>
+<hi rend="italic background(white)" style="font-size:9pt">Zeitschrift für experimentelle und angewandte Psychologie</hi>
+<hi rend="background(white)" style="font-size:9pt" xml:space="preserve"> XXXIV, 64-71. </hi>
+</bibl>
+<bibl>
+<hi rend="background(white)" style="font-size:9pt" xml:space="preserve"><hi rend="bold">Leibniz-Institut für Deutsche Sprache</hi>. 2013. </hi>
+<hi style="font-size:9pt" xml:space="preserve">"Propädeutische Grammatik". Grammatisches Informationssystem grammis. </hi>
+<ref target="https://doi.org/10.14618/programm">
+<hi rend="underline color(1155CC)" style="font-size:9pt">https://doi.org/10.14618/programm</hi>
+</ref>
+<hi style="font-size:9pt" xml:space="preserve"> (zugegriffen: 19.Juli 2024).</hi>
+</bibl>
+<bibl>
+<hi style="font-size:9pt" xml:space="preserve"><hi rend="bold">Meyer-Kalkus, Reinhart</hi>. 2020. “Geschichte der literarischen Vortragskunst.” Berlin: J. B. Metzler. </hi>
+<ref target="https://doi.org/10.1007/978-3-476-04802-8">
+<hi rend="underline color(1155CC)" style="font-size:9pt">https://doi.org/10.1007/978-3-476-04802-8</hi>
+</ref>
+<hi style="font-size:9pt" xml:space="preserve"> (zugegriffen: 19.Juli 2024).</hi>
+</bibl>
+<bibl>
+<hi style="font-size:9pt" xml:space="preserve"><hi rend="bold">Radford, Alec, Jong Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey und Ilya Sutskever</hi>. 2023. "Robust speech recognition via large-scale weak supervision." In </hi>
+<hi rend="italic" style="font-size:9pt">International conference on machine learning</hi>
+<hi style="font-size:9pt" xml:space="preserve">, 28492-28518. </hi>
+</bibl>
+<bibl>
+<hi style="font-size:9pt" xml:space="preserve"><hi rend="bold">Trouvain, Jürgen und Bernd Möbius</hi>. 2018. "Zu Mustern der Pausengestaltung in natürlicher und synthetischer Lesesprache". </hi>
+<hi rend="color(212529) background(white)" style="font-size:9pt" xml:space="preserve">Proc. 29th Conf. </hi>
+<hi rend="italic color(212529) background(white)" style="font-size:9pt">Elektronische Sprachsignalverarbeitung (ESSV '18)</hi>
+<hi rend="color(212529) background(white)" style="font-size:9pt" xml:space="preserve">. 334-341. </hi>
+</bibl>
+<bibl>
+<hi style="font-size:9pt"><hi rend="bold">Vauth, Michael, Hans Ole Hatzel, Evelyn Gius und Chris Biemann</hi></hi>. 2021. “Automated Event Annotation in Literary Texts“. In: CHR 2021: Computational Humanities Research Conference, 333-345. Amsterdam. http://ceur-ws.org/Vol-2989/short_paper18.pdf
                     </bibl>
-                    <bibl>
-                        <hi style="font-size:9pt"><hi rend="bold">Bain, Max, Jaesung Huh, Tengda Han und Andrew Zisserman</hi>. 2023. "Whisperx: Time-accurate speech transcription of long-form audio." In</hi>
-                        <hi rend="italic" style="font-size:9pt" xml:space="preserve">Proc. INTERSPEECH 2023. </hi>
-                        <hi style="font-size:9pt">4489-4493.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi style="font-size:9pt" xml:space="preserve"><hi rend="bold">Bartsch, Sabine, Evelyn Gius, Marcus Müller, Andrea Rapp und Thomas Weitin</hi>. 2023. “Sinn und Segment. Wie die digitale Analysepraxis unsere Begriffe schärft.” </hi>
-                        <hi rend="italic" style="font-size:9pt">Zeitschrift für digitale Geisteswissenschaften</hi>
-                        <hi style="font-size:9pt" xml:space="preserve"> 10.17175/2023_003.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi style="font-size:9pt"><hi rend="bold">Brand, Svenja</hi>. 2021. “</hi>
-                        <hi rend="background(white)" style="font-size:9pt" xml:space="preserve">Textsprechen als Interpretation. Gedanken zur ästhetischen Kommunikation in der literaturwissenschaftlichen Lehre.” In PhiN. Philologie im Netz, Beiheft 27/2021, 66-76. </hi>
-                    </bibl>
-                    <bibl>
-                        <hi style="font-size:9pt"><hi rend="bold">Geißner, Hellmut</hi>. 1981. “Sprechwissenschaft. Theorie der mündlichen Kommunikation.” Königstein: Scriptor.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi style="font-size:9pt" xml:space="preserve"><hi rend="bold">Gius, Evelyn, Carla Sökefeld, Lea Dümpelmann, Lucas Kaufmann, Annekea Schreiber, Svenja Guhr, Nathalie Wiedmer und Fotis Jannidis</hi>. 2021. “Guidelines for Detection of Scenes (1.0).” Zenodo. </hi>
-                        <ref target="https://doi.org/10.5281/zenodo.4457177">
-                            <hi rend="underline color(1155CC)" style="font-size:9pt">https://doi.org/10.5281/zenodo.4457177</hi>
-                        </ref>
-                        <hi style="font-size:9pt" xml:space="preserve"> (zugegriffen: 19.Juli 2024)</hi>
-                        <hi style="font-size:7pt">.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi style="font-size:9pt" xml:space="preserve"><hi rend="bold">Herzog, Rainer</hi>. 2018. “Ein generischer Ansatz zur digitalen Layoutanalyse von Manuskripten”. </hi>
-                        <ref target="https://ediss.sub.uni-hamburg.de/handle/ediss/6036">
-                            <hi rend="underline color(1155CC)" style="font-size:9pt">https://ediss.sub.uni-hamburg.de/handle/ediss/6036</hi>
-                        </ref>
-                        <hi style="font-size:9pt" xml:space="preserve"> (zugegriffen: 19.Juli 2024). </hi>
-                    </bibl>
-                    <bibl>
-                        <hi style="font-size:9pt"><hi rend="bold">Kisler, Thomas, Uwe Reichel, Florian Schiel</hi>. 2017. “Multilingual processing of speech via web services.” Computer Speech &amp; Language. 47:326-347</hi>
-                    </bibl>
-                    <bibl>
-                        <hi style="font-size:9pt"><hi rend="bold">Klos, Thomas und Heiner Ellgring</hi>. 1987. “</hi>
-                        <hi rend="background(white)" style="font-size:9pt" xml:space="preserve">Manuelle versus elektronische Analyse von Sprechpausen” In </hi>
-                        <hi rend="italic background(white)" style="font-size:9pt">Zeitschrift für experimentelle und angewandte Psychologie</hi>
-                        <hi rend="background(white)" style="font-size:9pt" xml:space="preserve"> XXXIV, 64-71. </hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="background(white)" style="font-size:9pt" xml:space="preserve"><hi rend="bold">Leibniz-Institut für Deutsche Sprache</hi>. 2013. </hi>
-                        <hi style="font-size:9pt" xml:space="preserve">"Propädeutische Grammatik". Grammatisches Informationssystem grammis. </hi>
-                        <ref target="https://doi.org/10.14618/programm">
-                            <hi rend="underline color(1155CC)" style="font-size:9pt">https://doi.org/10.14618/programm</hi>
-                        </ref>
-                        <hi style="font-size:9pt" xml:space="preserve"> (zugegriffen: 19.Juli 2024).</hi>
-                    </bibl>
-                    <bibl>
-                        <hi style="font-size:9pt" xml:space="preserve"><hi rend="bold">Meyer-Kalkus, Reinhart</hi>. 2020. “Geschichte der literarischen Vortragskunst.” Berlin: J. B. Metzler. </hi>
-                        <ref target="https://doi.org/10.1007/978-3-476-04802-8">
-                            <hi rend="underline color(1155CC)" style="font-size:9pt">https://doi.org/10.1007/978-3-476-04802-8</hi>
-                        </ref>
-                        <hi style="font-size:9pt" xml:space="preserve"> (zugegriffen: 19.Juli 2024).</hi>
-                    </bibl>
-                    <bibl>
-                        <hi style="font-size:9pt" xml:space="preserve"><hi rend="bold">Radford, Alec, Jong Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey und Ilya Sutskever</hi>. 2023. "Robust speech recognition via large-scale weak supervision." In </hi>
-                        <hi rend="italic" style="font-size:9pt">International conference on machine learning</hi>
-                        <hi style="font-size:9pt" xml:space="preserve">, 28492-28518. </hi>
-                    </bibl>
-                    <bibl>
-                        <hi style="font-size:9pt" xml:space="preserve"><hi rend="bold">Trouvain, Jürgen und Bernd Möbius</hi>. 2018. "Zu Mustern der Pausengestaltung in natürlicher und synthetischer Lesesprache". </hi>
-                        <hi rend="color(212529) background(white)" style="font-size:9pt" xml:space="preserve">Proc. 29th Conf. </hi>
-                        <hi rend="italic color(212529) background(white)" style="font-size:9pt">Elektronische Sprachsignalverarbeitung (ESSV '18)</hi>
-                        <hi rend="color(212529) background(white)" style="font-size:9pt" xml:space="preserve">. 334-341. </hi>
-                    </bibl>
-                    <bibl>
-                        <hi style="font-size:9pt"><hi rend="bold">Vauth, Michael, Hans Ole Hatzel, Evelyn Gius und Chris Biemann</hi></hi>. 2021. “Automated Event Annotation in Literary Texts“. In: CHR 2021: Computational Humanities Research Conference, 333-345. Amsterdam. http://ceur-ws.org/Vol-2989/short_paper18.pdf
-                    </bibl>
-
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

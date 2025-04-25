@@ -1,188 +1,186 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="SPIELBERG_Marina_Wie_Shakespeare__bersetzungen_digital_edier">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Wie Shakespeare-Übersetzungen digital edieren?</title>
-                <author>
-                    <persName>
-                        <surname>Spielberg</surname>
-                        <forename>Marina</forename>
-                    </persName>
-                    <affiliation>Trier Center for Digital Humanities (TCDH), Universität Trier, Deutschland</affiliation>
-                    <email>s2maspie@uni-trier.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Bamberg</surname>
-                        <forename>Claudia</forename>
-                    </persName>
-                    <affiliation>Trier Center for Digital Humanities (TCDH), Universität Trier, Deutschland</affiliation>
-                    <email>bamberg@uni-trier.de</email>
-                    <idno type="ORCID">0000-0001-6453-8457</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-11-28T10:31:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Poster</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>digitale Edition</term>
-                    <term>Übersetzung</term>
-                    <term>Shakespeare</term>
-                    <term>Datenmodell</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Transkription</term>
-                    <term>Modellierung</term>
-                    <term>Annotieren</term>
-                    <term>Literatur</term>
-                    <term>Manuskript</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <p>Auf dem Gebiet der digitalen Edition von literarischen Übersetzungen sind bislang noch sehr wenige Ansätze einer spezifischen Konzeptionalisierung vorhanden. Gab es schon für Druckeditionen kaum eine Theoriebildung zu dieser Editionsform (Plachta und Woesler 2002) oder Beispiele für eine adäquate Umsetzung<ref n="1" target="ftn1"/> – sofern dies hier angesichts der medialen Beschränkungen überhaupt möglich war –, so sucht man auch auf dem Feld der digitalen Texterschließung und -edition bis heute vergeblich nach entsprechenden Modellen oder Beispielen. Erste Ansätze für eine fortlaufende Forschungsdiskussion bietet der Band 
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="SPIELBERG_Marina_Wie_Shakespeare__bersetzungen_digital_edier" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Wie Shakespeare-Übersetzungen digital edieren?</title>
+<author>
+<persName>
+<surname>Spielberg</surname>
+<forename>Marina</forename>
+</persName>
+<affiliation>Trier Center for Digital Humanities (TCDH), Universität Trier, Deutschland</affiliation>
+<email>s2maspie@uni-trier.de</email>
+</author>
+<author>
+<persName>
+<surname>Bamberg</surname>
+<forename>Claudia</forename>
+</persName>
+<affiliation>Trier Center for Digital Humanities (TCDH), Universität Trier, Deutschland</affiliation>
+<email>bamberg@uni-trier.de</email>
+<idno type="ORCID">0000-0001-6453-8457</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-11-28T10:31:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943256</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Poster</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>digitale Edition</term>
+<term>Übersetzung</term>
+<term>Shakespeare</term>
+<term>Datenmodell</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Transkription</term>
+<term>Modellierung</term>
+<term>Annotieren</term>
+<term>Literatur</term>
+<term>Manuskript</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<p>Auf dem Gebiet der digitalen Edition von literarischen Übersetzungen sind bislang noch sehr wenige Ansätze einer spezifischen Konzeptionalisierung vorhanden. Gab es schon für Druckeditionen kaum eine Theoriebildung zu dieser Editionsform (Plachta und Woesler 2002) oder Beispiele für eine adäquate Umsetzung<ref n="1" target="ftn1"/> – sofern dies hier angesichts der medialen Beschränkungen überhaupt möglich war –, so sucht man auch auf dem Feld der digitalen Texterschließung und -edition bis heute vergeblich nach entsprechenden Modellen oder Beispielen. Erste Ansätze für eine fortlaufende Forschungsdiskussion bietet der Band 
                 <hi rend="italic">Die Shakespeare-Übersetzungen August Wilhelm Schlegels und des Tieck-Kreises: Kontext – Geschichte – Edition</hi> (Bamberg, Jansohn und Knödler 2023) – das Format der digitalen Übersetzungsedition erscheint also erstmals ‚under construction‘. 
             </p>
-            <p>Das Poster möchte das geplante Projekt einer digitalen Edition der Shakespeare-Übersetzungen August Wilhelm Schlegels und des Tieck-Kreises – unter dem Namen ‚Schlegel-Tieck‘ bekannt geworden – vorstellen. Dieses wird derzeit u.a. am Trier Center for Digital Humanities und an der Shakespeare Forschungsbibliothek der LMU München vorbereitet und konzipiert. Ziel ist es, am Beispiel dieser romantischen Übertragungen, die von 1798 bis 1833 erstmals erschienen sind, auch ein nachhaltiges Konzept für die digitale Edition von Übersetzungen zu entwickeln.</p>
-            <p>Die Text- und Publikationsgeschichte des ‚Schlegel-Tieck‘, der neben dem Werk Goethes und Schillers lange als ‚dritter deutscher Klassiker‘ galt und die deutsche Shakespeare-Rezeption bis weit ins 20. Jahrhundert maßgeblich geprägt hat (Jansohn 2023), ist überaus komplex. Darin mag ein Grund liegen, dass es bis heute weder eine historisch-kritische Edition noch eine Studienausgabe gibt. Bei den heutigen Drucken, die auf die Übersetzungen August Wilhelm Schlegels und des Tieck-Kreises zurückgehen, wie sie etwa noch bei Reclam zu finden sind (Jansohn 2014), handelt es sich in der Regel um nicht weiter ausgewiesene Kompilationen verschiedener Übersetzer:innen aus verschiedenen Epochen. Da in den letzten gut zehn Jahren zahlreiche Quellen zu Schlegel und Tieck erstmals erschlossen wurden (Strobel und Bamberg 2014–2021; Latifi 2018; Hölter 2014–2023, Knödler 2018), existiert inzwischen eine wichtige, ja unabdingbare Voraussetzung für eine erfolgreiche Durchführung des Projekts. </p>
-            <p>Die geplante Übersetzungsedition möchte die Probleme der Autorschaftszuweisung des ‚Schlegel-Tieck‘ endgültig aufklären. Während August Wilhelm Schlegel die erste Ausgabe der Übersetzung von siebzehn Shakespeare-Dramen von 1797 bis 1809 allein unternahm, wurde der erste ‚Schlegel-Tieck‘ erst von 1825 bis 1833 (Shakespeare 1825–1833) gedruckt. Der Berliner Verleger Georg Andreas Reimer hatte die beiden ‚berühmten‘ romantischen Namen auf den Titel gesetzt, um sich gegen die inzwischen zahlreiche Konkurrenz der deutschen Shakespeare-Übersetzer auf dem Buchmarkt durchzusetzen. An dieser Ausgabe hatte Schlegel jedoch so gut wie keinen aktiven Anteil mehr, und auch Tieck fungierte nicht als Übersetzer. Vielmehr ließ er seine Tochter Dorothea Tieck und den Schriftsteller Wolf von Baudissin die von Schlegel noch nicht übersetzten Dramen übertragen – Ludwig Tieck selbst brachte sich nur als Berater ein und ‚korrigierte‘ zudem Schlegels Übersetzungen, die in der Ausgabe wiederabgedruckt wurden. Als Schlegel davon erfuhr, war er darüber sehr empört und forderte von Reimer, die Änderungen in den folgenden Auflagen wieder zurückzunehmen (August Wilhelm Schlegel an Georg Andreas Reimer 1825). In späteren Nachdrucken zu Lebzeiten der Übersetzer:innen wurde sodann immer wieder in die Texte eingegriffen.</p>
-            <p>Bei der Konzeption einer digitalen Edition der romantischen Shakespeare-Übersetzungen geht es zunächst darum zu erarbeiten, wie mit der Fülle an Texten – Ausgangstexten, Übersetzungen, Revisionen, mit Manuskripten und mit Drucken –, aber auch mit den Co-Autorschaften umgegangen werden kann. Sodann stellt sich die Frage, wie eine digitale Kommentierung aussehen könnte: Wie etwa lassen sich Kommentare zum interlingualen Transfer und zu den jeweiligen Übersetzungsprinzipien modellieren und sodann in einem entsprechenden UX-Design darstellen und für die Nutzer:innen abrufen? Und wie lässt sich eine konsistente Datenmodellierung für die verschiedenen Übersetzungsfassungen entwickeln – wie muss diese im Hinblick auf die Textsorte Übersetzung gegenüber konventionellen Werkausgaben modifiziert werden (vgl. ausführlich zum Datenmodell und einem darauf aufbauenden möglichen UX-Design für die romantischen Shakespeare-Übersetzungen Schlegels und des Tieck-Kreises: Bamberg und Burch 2023: 313-323)?</p>
-            <p>Die Transkription und Annotation der digitalen Faksimiles erfolgt mit dem Werkzeug 
+<p>Das Poster möchte das geplante Projekt einer digitalen Edition der Shakespeare-Übersetzungen August Wilhelm Schlegels und des Tieck-Kreises – unter dem Namen ‚Schlegel-Tieck‘ bekannt geworden – vorstellen. Dieses wird derzeit u.a. am Trier Center for Digital Humanities und an der Shakespeare Forschungsbibliothek der LMU München vorbereitet und konzipiert. Ziel ist es, am Beispiel dieser romantischen Übertragungen, die von 1798 bis 1833 erstmals erschienen sind, auch ein nachhaltiges Konzept für die digitale Edition von Übersetzungen zu entwickeln.</p>
+<p>Die Text- und Publikationsgeschichte des ‚Schlegel-Tieck‘, der neben dem Werk Goethes und Schillers lange als ‚dritter deutscher Klassiker‘ galt und die deutsche Shakespeare-Rezeption bis weit ins 20. Jahrhundert maßgeblich geprägt hat (Jansohn 2023), ist überaus komplex. Darin mag ein Grund liegen, dass es bis heute weder eine historisch-kritische Edition noch eine Studienausgabe gibt. Bei den heutigen Drucken, die auf die Übersetzungen August Wilhelm Schlegels und des Tieck-Kreises zurückgehen, wie sie etwa noch bei Reclam zu finden sind (Jansohn 2014), handelt es sich in der Regel um nicht weiter ausgewiesene Kompilationen verschiedener Übersetzer:innen aus verschiedenen Epochen. Da in den letzten gut zehn Jahren zahlreiche Quellen zu Schlegel und Tieck erstmals erschlossen wurden (Strobel und Bamberg 2014–2021; Latifi 2018; Hölter 2014–2023, Knödler 2018), existiert inzwischen eine wichtige, ja unabdingbare Voraussetzung für eine erfolgreiche Durchführung des Projekts. </p>
+<p>Die geplante Übersetzungsedition möchte die Probleme der Autorschaftszuweisung des ‚Schlegel-Tieck‘ endgültig aufklären. Während August Wilhelm Schlegel die erste Ausgabe der Übersetzung von siebzehn Shakespeare-Dramen von 1797 bis 1809 allein unternahm, wurde der erste ‚Schlegel-Tieck‘ erst von 1825 bis 1833 (Shakespeare 1825–1833) gedruckt. Der Berliner Verleger Georg Andreas Reimer hatte die beiden ‚berühmten‘ romantischen Namen auf den Titel gesetzt, um sich gegen die inzwischen zahlreiche Konkurrenz der deutschen Shakespeare-Übersetzer auf dem Buchmarkt durchzusetzen. An dieser Ausgabe hatte Schlegel jedoch so gut wie keinen aktiven Anteil mehr, und auch Tieck fungierte nicht als Übersetzer. Vielmehr ließ er seine Tochter Dorothea Tieck und den Schriftsteller Wolf von Baudissin die von Schlegel noch nicht übersetzten Dramen übertragen – Ludwig Tieck selbst brachte sich nur als Berater ein und ‚korrigierte‘ zudem Schlegels Übersetzungen, die in der Ausgabe wiederabgedruckt wurden. Als Schlegel davon erfuhr, war er darüber sehr empört und forderte von Reimer, die Änderungen in den folgenden Auflagen wieder zurückzunehmen (August Wilhelm Schlegel an Georg Andreas Reimer 1825). In späteren Nachdrucken zu Lebzeiten der Übersetzer:innen wurde sodann immer wieder in die Texte eingegriffen.</p>
+<p>Bei der Konzeption einer digitalen Edition der romantischen Shakespeare-Übersetzungen geht es zunächst darum zu erarbeiten, wie mit der Fülle an Texten – Ausgangstexten, Übersetzungen, Revisionen, mit Manuskripten und mit Drucken –, aber auch mit den Co-Autorschaften umgegangen werden kann. Sodann stellt sich die Frage, wie eine digitale Kommentierung aussehen könnte: Wie etwa lassen sich Kommentare zum interlingualen Transfer und zu den jeweiligen Übersetzungsprinzipien modellieren und sodann in einem entsprechenden UX-Design darstellen und für die Nutzer:innen abrufen? Und wie lässt sich eine konsistente Datenmodellierung für die verschiedenen Übersetzungsfassungen entwickeln – wie muss diese im Hinblick auf die Textsorte Übersetzung gegenüber konventionellen Werkausgaben modifiziert werden (vgl. ausführlich zum Datenmodell und einem darauf aufbauenden möglichen UX-Design für die romantischen Shakespeare-Übersetzungen Schlegels und des Tieck-Kreises: Bamberg und Burch 2023: 313-323)?</p>
+<p>Die Transkription und Annotation der digitalen Faksimiles erfolgt mit dem Werkzeug 
                 <hi rend="italic">Transcribo</hi> (o.J.) (Abb. 1). Damit lassen sich textgenetische Merkmale wie Autoränderungen, Materialbeschreibungen und textkritische Erläuterungen erfassen. Mit dem Werkzeug 
                 <hi rend="italic" xml:space="preserve">Comparo </hi>(o.J.) werden im Anschluss Variantensynopsen erstellt. Den Nutzer:innen der Editionsoberfläche eröffnet sich dadurch die Möglichkeit, neben bloßen Text- und Faksimileansichten stellengenaue Synopsen verschiedener Fassungen auszuwählen und gezielt zu explorieren (Abb. 2).
             </p>
-            <p>Das Poster möchte ein erstes Datenmodell für die digitale Edition der Shakespeare-Übersetzungen August Wilhelm Schlegels und des Tieck-Kreises präsentieren und vorstellen, welche Tools dabei zum Einsatz kommen. Da sich das Projekt in einer frühen Phase befindet, liegt der Fokus zunächst auf Vorüberlegungen und offenen Fragen. So soll das Poster die grundlegenden Ideen, theoretischen Ansätze und Herausforderungen des Vorhabens skizzieren, die die Datenmodellierung, Kommentierung und das UX-Design betreffen. Es möchte folglich auch schon beispielhaft demonstrieren, wie die Edition im Frontend aussehen und genutzt werde könnte. Das entworfene Konzept soll dabei auch modellbildend für künftige digitale Übersetzungseditionen sein.</p>
-            <figure>
-                <graphic n="1001" width="16.002cm" height="7.493cm" url="Pictures/c49f7728a25a0df49a35af3560a274b5.png" rend="inline"/>
-                <head>Abb. 1. Auszug einer Transkription aus Schlegels 
+<p>Das Poster möchte ein erstes Datenmodell für die digitale Edition der Shakespeare-Übersetzungen August Wilhelm Schlegels und des Tieck-Kreises präsentieren und vorstellen, welche Tools dabei zum Einsatz kommen. Da sich das Projekt in einer frühen Phase befindet, liegt der Fokus zunächst auf Vorüberlegungen und offenen Fragen. So soll das Poster die grundlegenden Ideen, theoretischen Ansätze und Herausforderungen des Vorhabens skizzieren, die die Datenmodellierung, Kommentierung und das UX-Design betreffen. Es möchte folglich auch schon beispielhaft demonstrieren, wie die Edition im Frontend aussehen und genutzt werde könnte. Das entworfene Konzept soll dabei auch modellbildend für künftige digitale Übersetzungseditionen sein.</p>
+<figure>
+<graphic height="7.493cm" n="1001" rend="inline" url="Pictures/c49f7728a25a0df49a35af3560a274b5.png" width="16.002cm"/>
+<head>Abb. 1. Auszug einer Transkription aus Schlegels 
                     <hi rend="italic">Hamlet</hi>-Manuskript (Schlegel 1798) mit der Software 
                     <hi rend="italic">Transcribo</hi>.
                 </head>
-            </figure>
-            
-            <figure>
-                <graphic n="1002" width="16.002cm" height="8.128cm" url="Pictures/fe308e8ff0355a802b5df45a5e7864ca.jpeg" rend="inline"/>
-                <head>Abb. 2. Mock-Up einer Beispielsynopse mit Kommentar aus Hamlet III,1.</head>
-            </figure>
-            
-        </body>
-        <back>
+</figure>
+<figure>
+<graphic height="8.128cm" n="1002" rend="inline" url="Pictures/fe308e8ff0355a802b5df45a5e7864ca.jpeg" width="16.002cm"/>
+<head>Abb. 2. Mock-Up einer Beispielsynopse mit Kommentar aus Hamlet III,1.</head>
+</figure>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
+<note n="1" rend="footnote text" xml:id="ftn1">
                      Ein gelungenes Beispiel findet sich in der Marburger Büchner Ausgabe: Büchner 2007.
                 </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl style="text-align: left;"><hi rend="bold">August Wilhelm Schlegel an Georg Andreas Reimer</hi>. 1825. In 
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl style="text-align: left;"><hi rend="bold">August Wilhelm Schlegel an Georg Andreas Reimer</hi>. 1825. In 
                         <hi rend="italic" xml:space="preserve">August Wilhelm Schlegel: Digitale Edition der Korrespondenz, </hi>hg. v. Jochen Strobel und Claudia Bamberg. 2014–2021. 
                         <ref target="https://august-wilhelm-schlegel.de/version-01-22/briefid/683">https://august-wilhelm-schlegel.de/version-01-22/briefid/683</ref>
-                        <hi rend="Hyperlink" xml:space="preserve"> </hi>(zugegriffen: 20. Juli 2024). 
+<hi rend="Hyperlink" xml:space="preserve"> </hi>(zugegriffen: 20. Juli 2024). 
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Bamberg, Claudia, Christa Jansohn und Stefan Knödler</hi>. 2023. 
+<bibl style="text-align: left;"><hi rend="bold">Bamberg, Claudia, Christa Jansohn und Stefan Knödler</hi>. 2023. 
                         <hi rend="italic">Die Shakespeare-Übersetzungen August Wilhelm Schlegels und des Tieck-Kreises: Kontext – Geschichte – Edition</hi>. Berlin, Boston: De Gruyter. 
                         <ref target="https://doi.org/10.1515/9783111017419%20">https://doi.org/10.1515/9783111017419</ref> (zugegriffen: 20. Juli 2024).
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Bamberg, Claudia und Thomas Burch</hi>. 2023. „Hamlet – digital ediert“. In 
+<bibl style="text-align: left;"><hi rend="bold">Bamberg, Claudia und Thomas Burch</hi>. 2023. „Hamlet – digital ediert“. In 
                         <hi rend="italic">Die Shakespeare-Übersetzungen August Wilhelm Schlegels und des Tieck-Kreises: Kontext – Geschichte – Edition</hi>, hg. v. Claudia Bamberg, Christa Jansohn und Stefan Knödler: 299-323. Berlin, Boston: De Gruyter. 
                         <ref target="https://doi.org/10.1515/9783111017419-020" xml:space="preserve">https://doi.org/10.1515/9783111017419-020 </ref>(zugegriffen 26. November 2024).
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Büchner, Georg</hi>. 2007. 
+<bibl style="text-align: left;"><hi rend="bold">Büchner, Georg</hi>. 2007. 
                         <hi rend="italic">Sämtliche Schriften. Historisch-kritische Ausgabe mit Quellendokumentation und Kommentar (Marburger Ausgabe)</hi>. Im Auftrag der Akademie der Wissenschaften und der Literatur, Mainz, hg. v. Burghard Dedner und Thomas Michael Mayer, [seit 2005:] hg. v. Burkhard Dedner, mitbegründet von Thomas Michael Mayer. 10. Bde. Darmstadt 2000-2013. Bd. 4: Übersetzungen, hg. v. Burkhard Dedner unter Mitarbeit von Arnd Beise, Gerald Funk, Ingrid Rehme und Eva-Maria Vering. Darmstadt: Wissenschaftliche Buchgesellschaft.
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Comparo. o.J.</hi> Kompetenzzentrum – Trier Center for Digital Humanities (TCDH). 
+<bibl style="text-align: left;"><hi rend="bold">Comparo. o.J.</hi> Kompetenzzentrum – Trier Center for Digital Humanities (TCDH). 
                         <ref target="https://tcdh.uni-trier.de/de/projekt/comparo">https://tcdh.uni-trier.de/de/projekt/comparo</ref>
-                        <hi rend="Hyperlink" xml:space="preserve"> </hi>(zugegriffen: 20. Juli 2024). 
+<hi rend="Hyperlink" xml:space="preserve"> </hi>(zugegriffen: 20. Juli 2024). 
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Hölter, Achim</hi>. 2014ff. 
+<bibl style="text-align: left;"><hi rend="bold">Hölter, Achim</hi>. 2014ff. 
                         <hi rend="italic" xml:space="preserve">Ludwig Tiecks Bibliothek. Anatomie einer romantisch-komparatistischen Büchersammlung. </hi>
-                        <ref target="https://tieck-bibliothek.univie.ac.at">https://tieck-bibliothek.univie.ac.at</ref>
-                        <hi rend="Hyperlink" xml:space="preserve"> </hi>(zugegriffen: 20. Juli 2024).
+<ref target="https://tieck-bibliothek.univie.ac.at">https://tieck-bibliothek.univie.ac.at</ref>
+<hi rend="Hyperlink" xml:space="preserve"> </hi>(zugegriffen: 20. Juli 2024).
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Jansohn, Christa</hi>. 2014. „[Rez. zu:] William Shakespeare: King Henry IV – König Heinrich IV. Englisch / Deutsch. P. 1 und P. 2. 2 Bde. Hrsg. v. Holger Klein“. In 
+<bibl style="text-align: left;"><hi rend="bold">Jansohn, Christa</hi>. 2014. „[Rez. zu:] William Shakespeare: King Henry IV – König Heinrich IV. Englisch / Deutsch. P. 1 und P. 2. 2 Bde. Hrsg. v. Holger Klein“. In 
                         <hi rend="italic">Arbeiten aus Anglistik und Amerikanistik</hi> 39/2: 195-203.
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Jansohn, Christa</hi>. 2023. „Die Shakespeare-Übersetzungen August Wilhelm Schlegels und des Tieck-Kreises: Prolegomena zu einigen zukünftigen Forschungsaufgaben“. In 
+<bibl style="text-align: left;"><hi rend="bold">Jansohn, Christa</hi>. 2023. „Die Shakespeare-Übersetzungen August Wilhelm Schlegels und des Tieck-Kreises: Prolegomena zu einigen zukünftigen Forschungsaufgaben“. In 
                         <hi rend="italic">Die Shakespeare-Übersetzungen August Wilhelm Schlegels und des Tieck-Kreises: Kontext – Geschichte – Edition</hi>, hg. v. Claudia Bamberg, Christa Jansohn und Stefan Knödler: 1-35. Berlin, Boston: De Gruyter. 
                         <ref target="https://doi.org/10.1515/9783111017419-003">https://doi.org/10.1515/9783111017419-003</ref> (zugegriffen 20. Juli 2024).
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Knödler, Stefan</hi>. 2018. 
+<bibl style="text-align: left;"><hi rend="bold">Knödler, Stefan</hi>. 2018. 
                         <hi rend="italic">August Wilhelm Schlegel. Kritische Ausgabe der Vorlesungen</hi>, hg. v. Georg Braungart. Bd. IV: 
                         <hi rend="italic">Vorlesungen über dramatische Kunst und Litteratur (1809-1811). 1. Teil</hi>: 
                         <hi rend="italic">Text.</hi> Paderborn: Schöningh.
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Latifi, Kaltërina, Hrsg.</hi> 2018. 
+<bibl style="text-align: left;"><hi rend="bold">Latifi, Kaltërina, Hrsg.</hi> 2018. 
                         <hi rend="italic">Hamlet-Manuskript. Kritische Ausgabe</hi>. Hildesheim, Zürich, New York: Olms.
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Plachta, Bodo und Winfried Woesler</hi>. 2002. 
+<bibl style="text-align: left;"><hi rend="bold">Plachta, Bodo und Winfried Woesler</hi>. 2002. 
                         <hi rend="italic">Edition und Übersetzung. Zur wissenschaftlichen Dokumentation des interkulturellen Transfers. Beiträge der Internationalen Fachtagung der Arbeitsgemeinschaft für germanistische Edition, 8. bis 11. März 2000</hi>. Tübingen: Niemeyer.
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Schlegel, August Wilhelm</hi>. 1798. 
+<bibl style="text-align: left;"><hi rend="bold">Schlegel, August Wilhelm</hi>. 1798. 
                         <hi rend="italic">Hamlet-Manuskript</hi>. Sächsische Landesbibliothek – Staats- und Universitätsbibliothek Dresden. Sign.: Mscr.Dresd.e.90, XXII,1. 
                         <ref target="http://digital.slub-dresden.de/id329494473/76">http://digital.slub-dresden.de/id329494473/76</ref>
-                        <hi rend="Hyperlink" xml:space="preserve"> </hi>(zugegriffen: 20. Juli 2024).
+<hi rend="Hyperlink" xml:space="preserve"> </hi>(zugegriffen: 20. Juli 2024).
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Shakespeare, William</hi>. 1825–1833. 
+<bibl style="text-align: left;"><hi rend="bold">Shakespeare, William</hi>. 1825–1833. 
                         <hi rend="italic">Dramatische Werke</hi>. Übersetzt von A. W. von Schlegel, ergänzt und erläutert von Ludwig Tieck. Berlin: Reimer. 
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Strobel, Jochen und Claudia Bamberg</hi>. 2012–2021. 
+<bibl style="text-align: left;"><hi rend="bold">Strobel, Jochen und Claudia Bamberg</hi>. 2012–2021. 
                         <hi rend="italic">August Wilhelm Schlegel: Digitale Edition der Korrespondenz</hi>. Dresden, Marburg, Trier. 
                         <ref target="https://august-wilhelm-schlegel.de">https://august-wilhelm-schlegel.de</ref>
-                        <hi rend="Hyperlink" xml:space="preserve"> </hi>(zugegriffen: 20. Juli 2024). 
+<hi rend="Hyperlink" xml:space="preserve"> </hi>(zugegriffen: 20. Juli 2024). 
                     </bibl>
-                    <bibl style="text-align: left;"><hi rend="bold">Transcribo. o.J.</hi> Kompetenzzentrum – Trier Center for Digital Humanities (TCDH). 
+<bibl style="text-align: left;"><hi rend="bold">Transcribo. o.J.</hi> Kompetenzzentrum – Trier Center for Digital Humanities (TCDH). 
                         <ref target="https://tcdh.uni-trier.de/de/projekt/transcribo">https://tcdh.uni-trier.de/de/projekt/transcribo</ref>
-                        <hi rend="Hyperlink" xml:space="preserve"> </hi>(zugegriffen: 20. Juli 2024).
+<hi rend="Hyperlink" xml:space="preserve"> </hi>(zugegriffen: 20. Juli 2024).
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

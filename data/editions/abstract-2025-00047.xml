@@ -1,132 +1,132 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="SCHR_ER_Annika_Anticipating_digital_research">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="full">
-                    <title type="main">Anticipating digital research</title>
-                    <title type="sub">Der Codex Sinaiticus gibt seine Daten frei</title>
-                </title>
-                <author>
-                    <persName>
-                        <surname>Schröer</surname>
-                        <forename>Annika</forename>
-                    </persName>
-                    <affiliation>Universitätsbibliothek Leipzig, Deutschland</affiliation>
-                    <email>schroeer@ub.uni-leipzig.de</email>
-                    <idno type="ORCID">0000-0003-2293-4093</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2023-06-13T14:32:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Poster</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Schnittstellen</term>
-                    <term>IIIF</term>
-                    <term>Linked Data</term>
-                    <term>TEI</term>
-                    <term>Annotationen</term>
-                    <term>Handschrift</term>
-                    <term>Codex Sinaiticus</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Transkription</term>
-                    <term>Veröffentlichung</term>
-                    <term>Webentwicklung</term>
-                    <term>Daten</term>
-                    <term>Bilder</term>
-                    <term>Standards</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p style="text-align: left; ">Die älteste Überlieferung des vollständigen neuen Testaments hat eine bis heute bewegte Geschichte: Im 4. Jahrhundert in griechischer Sprache auf über 400 Pergamentblätter geschrieben, zu einem großformatigen Codex gebunden und über 8 Jahrhunderte hinweg ausgesprochen reich kommentiert; Mitte des 19. Jahrhunderts im Katharinenkloster auf dem Sinai durch Konstantin von Tischendorf entdeckt und aus dem Kloster entfernt, wird der Codex Sinaiticus heute in vier Teilen aufbewahrt: in der British Library in London (BL), der Universitätsbibliothek Leipzig (UBL), dem Katharinenkloster sowie der Russischen Nationalbibliothek in St. Petersburg (Parker, 2010). Die überaus wertvolle Quelle für Forscher:innen verschiedenster geisteswissenschaftlicher Disziplinen ist digitalisiert und transkribiert seit Ende der 2000er Jahre wieder als Gesamtheit online verfügbar – allerdings primär zur Betrachtung über die Weboberfläche.</p>
-                <p style="text-align: left; ">Seit 2022 wird das Webportal im Rahmen eines mehrjährigen, DFG-geförderten Projekts komplett überarbeitet. Dadurch soll nicht nur das User Interface auf heutige Standards von Usability, Responsivität und Barrierearmut gehoben werden, sondern vor allem die reichhaltige Datengrundlage für die maschinelle Nutzung in den Digital Humanities verfügbar werden.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ausgangslage und Ziel</head>
-                <p style="text-align: left; ">Die exzellenten Daten sind das Ergebnis des von 2003 bis 2009 durchgeführten ersten Projekts, das die aktuelle Webseite entwickelt hat und an dem neben den vier Partnerinstitutionen zahlreiche weitere internationale Expert:innen beteiligt waren. Unter anderem wurden alle Seiten des Codex hochauflösend digitalisiert und der gesamte Text inklusive der Kommentare transkribiert. Die Transkription wurde als XML auf Basis des TEI-Standards kodiert und über Pixelkoordinaten wortgenau auf die Digitalisate bezogen. An einigen Stellen wurde aufgrund von Besonderheiten des Codex vom TEI-Standard abgewichen, weshalb das XML-Dokument nicht durchweg kompatibel ist. Es steht als Gesamtdatei zum Download zur Verfügung, doch es existieren keine weiteren Schnittstellen.</p>
-                <p style="text-align: left; ">Das aktuelle Projekt verfolgt datenbezogen das Ziel, alle Informationen – Images sowie Transkriptionsdaten – möglichst atomar, standardisiert und unter Verwendung quelloffener Software für maschinelle Nachnutzung aufzubereiten. Die Entwicklung findet, begleitet durch eine erneute Projektpartnerschaft mit der BL und dem Katharinenkloster auf dem Sinai, an der Universitätsbibliothek Leipzig statt.<ref n="1" target="ftn1"/> Für fachliche Fragen steht dem Projekt ein wissenschaftlicher Beirat aus internationalen Expert:innen zur Seite, der die Anforderungen spezifischer Zielgruppen vertritt.
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="SCHR_ER_Annika_Anticipating_digital_research" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="full">
+<title type="main">Anticipating digital research</title>
+<title type="sub">Der Codex Sinaiticus gibt seine Daten frei</title>
+</title>
+<author>
+<persName>
+<surname>Schröer</surname>
+<forename>Annika</forename>
+</persName>
+<affiliation>Universitätsbibliothek Leipzig, Deutschland</affiliation>
+<email>schroeer@ub.uni-leipzig.de</email>
+<idno type="ORCID">0000-0003-2293-4093</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2023-06-13T14:32:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943228</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Poster</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Schnittstellen</term>
+<term>IIIF</term>
+<term>Linked Data</term>
+<term>TEI</term>
+<term>Annotationen</term>
+<term>Handschrift</term>
+<term>Codex Sinaiticus</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Transkription</term>
+<term>Veröffentlichung</term>
+<term>Webentwicklung</term>
+<term>Daten</term>
+<term>Bilder</term>
+<term>Standards</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Einleitung</head>
+<p style="text-align: left; ">Die älteste Überlieferung des vollständigen neuen Testaments hat eine bis heute bewegte Geschichte: Im 4. Jahrhundert in griechischer Sprache auf über 400 Pergamentblätter geschrieben, zu einem großformatigen Codex gebunden und über 8 Jahrhunderte hinweg ausgesprochen reich kommentiert; Mitte des 19. Jahrhunderts im Katharinenkloster auf dem Sinai durch Konstantin von Tischendorf entdeckt und aus dem Kloster entfernt, wird der Codex Sinaiticus heute in vier Teilen aufbewahrt: in der British Library in London (BL), der Universitätsbibliothek Leipzig (UBL), dem Katharinenkloster sowie der Russischen Nationalbibliothek in St. Petersburg (Parker, 2010). Die überaus wertvolle Quelle für Forscher:innen verschiedenster geisteswissenschaftlicher Disziplinen ist digitalisiert und transkribiert seit Ende der 2000er Jahre wieder als Gesamtheit online verfügbar – allerdings primär zur Betrachtung über die Weboberfläche.</p>
+<p style="text-align: left; ">Seit 2022 wird das Webportal im Rahmen eines mehrjährigen, DFG-geförderten Projekts komplett überarbeitet. Dadurch soll nicht nur das User Interface auf heutige Standards von Usability, Responsivität und Barrierearmut gehoben werden, sondern vor allem die reichhaltige Datengrundlage für die maschinelle Nutzung in den Digital Humanities verfügbar werden.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Ausgangslage und Ziel</head>
+<p style="text-align: left; ">Die exzellenten Daten sind das Ergebnis des von 2003 bis 2009 durchgeführten ersten Projekts, das die aktuelle Webseite entwickelt hat und an dem neben den vier Partnerinstitutionen zahlreiche weitere internationale Expert:innen beteiligt waren. Unter anderem wurden alle Seiten des Codex hochauflösend digitalisiert und der gesamte Text inklusive der Kommentare transkribiert. Die Transkription wurde als XML auf Basis des TEI-Standards kodiert und über Pixelkoordinaten wortgenau auf die Digitalisate bezogen. An einigen Stellen wurde aufgrund von Besonderheiten des Codex vom TEI-Standard abgewichen, weshalb das XML-Dokument nicht durchweg kompatibel ist. Es steht als Gesamtdatei zum Download zur Verfügung, doch es existieren keine weiteren Schnittstellen.</p>
+<p style="text-align: left; ">Das aktuelle Projekt verfolgt datenbezogen das Ziel, alle Informationen – Images sowie Transkriptionsdaten – möglichst atomar, standardisiert und unter Verwendung quelloffener Software für maschinelle Nachnutzung aufzubereiten. Die Entwicklung findet, begleitet durch eine erneute Projektpartnerschaft mit der BL und dem Katharinenkloster auf dem Sinai, an der Universitätsbibliothek Leipzig statt.<ref n="1" target="ftn1"/> Für fachliche Fragen steht dem Projekt ein wissenschaftlicher Beirat aus internationalen Expert:innen zur Seite, der die Anforderungen spezifischer Zielgruppen vertritt.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Herangehensweise</head>
-                <p style="text-align: left; ">Der Einsatz des International Image Interoperability Frameworks (IIIF) zur Einbindung der Digitalisate ist eines der grundlegenden Konzepte im Projekt. Es ermöglicht unter anderem die Verlinkung beliebiger Bildbereiche und die direkte Einbindung von Inhalten in andere Anwendungen. (IIIF Consortium, o. J.) Essenziell dabei ist die Entscheidung für ein gemeinsames Manifest für den Gesamtcodex. Dieses muss für alle Seiten des Codex eindeutige, mit URI identifizierte Canvases enthalten, die wiederum die Bilder verknüpfen. Da sowohl die BL als auch die UBL für ihre jeweiligen Teile des Codex bereits über IIIF-Repräsentationen verfügen, existieren auch bereits Canvas und URI für jede davon abgedeckte Seite. Anstatt, wie häufig praktiziert, projektspezifisch neue Daten zu erzeugen, werden die URIs der vorhandenen Canvases in das gemeinsame Manifest integriert. Dadurch beziehen sich Referenzen auf IIIF-Codexseiten aus Leipzig oder London auch auf den virtuellen Gesamtcodex und umgekehrt.</p>
-                <p style="text-align: left; ">Das Fundament aller textbasierten Daten bildet die XML-Transkription. Zu Beginn des aktuellen Projekts wurde die bisherige Modellierung durch Partner unter anderem in Birmingham iterativ verbessert. Sie ist nun in allen Teilen TEI-P5-konform und zudem innerhalb des XML durch automatisiertes Tagging zu großen Teilen auf Wortebene mit griechischen Wörterbuchformen und Strongs‘ Numbers angereichert, um die Suchfunktionalitäten zu verbessern.</p>
-                <p style="text-align: left; ">Der auf Apache Solr basierenden Suchindex hält Dokumente auf Versebene vor, zu denen neben den eigentlichen Inhalten und Metadaten weitere Informationen ergänzt werden, beispielsweise Varianten der enthaltenen Nomina Sacra sowie die im TEI angereicherten, grammatisch normalisierten Wörterbuchformen und Strongs‘ Numbers mit Übersetzungen. Dies ermöglicht Treffer für Suchterme mit nicht direkt im Text vorhandenen Schreibweisen und Flektionen, und sogar Suchen in Fremdsprachen.</p>
-                <p style="text-align: left; ">Zur Darstellung und Verknüpfung der Transkriptionen mit Bilddaten und Suche werden die im TEI einzeln ausgezeichneten Wörter zu separaten, jeweils über eine URI referenzierten Annotationen nach dem Open Web Annotation Standard konvertiert. Dabei wird explizit keine komplexe Repräsentation der gesamten TEI-Semantik (Ciotto &amp; Tomasi, 2016) angestrebt, sondern ein zusätzlicher flacher Einstieg in die Daten auf Wortebene geschaffen. Jede Annotation enthält, in LOD-Vokabularen modelliert (Allemang, 2011), alle vorhandenen Angaben zu dem spezifischen Wort: die transkribierten Buchstaben, editorische Auszeichnungen, Dictionary Form, Strongs‘ Number und Übersetzungen sowie neben weiteren Metadaten die URI-codierten Koordinaten zu den Canvas-Bereichen des korrespondierenden Bildes.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ausblick</head>
-                <p style="text-align: left; ">Alle beschriebenen Daten – IIIF-Images, TEI, Annotationen – werden über Schnittstellen zur freien Nachnutzung veröffentlicht. Parallel zu den im Bereich des User Interface stattfindenden Usability Tests sollen während des Beta-Stadiums der APIs Vertreter:innen der DH-Communities nach weiteren datenzentrierten Use Cases und Verbesserungsansätzen befragt werden.</p>
-                <p style="text-align: left; ">Dadurch sollen über die Anforderungen des wissenschaftlichen Beirats hinaus die aktuellen Bedarfe der Digital Humanities erkannt und berücksichtigt werden – im Sinne des Titels „Anticipating digital research“.</p>
-            </div>
-        </body>
-        <back>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Herangehensweise</head>
+<p style="text-align: left; ">Der Einsatz des International Image Interoperability Frameworks (IIIF) zur Einbindung der Digitalisate ist eines der grundlegenden Konzepte im Projekt. Es ermöglicht unter anderem die Verlinkung beliebiger Bildbereiche und die direkte Einbindung von Inhalten in andere Anwendungen. (IIIF Consortium, o. J.) Essenziell dabei ist die Entscheidung für ein gemeinsames Manifest für den Gesamtcodex. Dieses muss für alle Seiten des Codex eindeutige, mit URI identifizierte Canvases enthalten, die wiederum die Bilder verknüpfen. Da sowohl die BL als auch die UBL für ihre jeweiligen Teile des Codex bereits über IIIF-Repräsentationen verfügen, existieren auch bereits Canvas und URI für jede davon abgedeckte Seite. Anstatt, wie häufig praktiziert, projektspezifisch neue Daten zu erzeugen, werden die URIs der vorhandenen Canvases in das gemeinsame Manifest integriert. Dadurch beziehen sich Referenzen auf IIIF-Codexseiten aus Leipzig oder London auch auf den virtuellen Gesamtcodex und umgekehrt.</p>
+<p style="text-align: left; ">Das Fundament aller textbasierten Daten bildet die XML-Transkription. Zu Beginn des aktuellen Projekts wurde die bisherige Modellierung durch Partner unter anderem in Birmingham iterativ verbessert. Sie ist nun in allen Teilen TEI-P5-konform und zudem innerhalb des XML durch automatisiertes Tagging zu großen Teilen auf Wortebene mit griechischen Wörterbuchformen und Strongs‘ Numbers angereichert, um die Suchfunktionalitäten zu verbessern.</p>
+<p style="text-align: left; ">Der auf Apache Solr basierenden Suchindex hält Dokumente auf Versebene vor, zu denen neben den eigentlichen Inhalten und Metadaten weitere Informationen ergänzt werden, beispielsweise Varianten der enthaltenen Nomina Sacra sowie die im TEI angereicherten, grammatisch normalisierten Wörterbuchformen und Strongs‘ Numbers mit Übersetzungen. Dies ermöglicht Treffer für Suchterme mit nicht direkt im Text vorhandenen Schreibweisen und Flektionen, und sogar Suchen in Fremdsprachen.</p>
+<p style="text-align: left; ">Zur Darstellung und Verknüpfung der Transkriptionen mit Bilddaten und Suche werden die im TEI einzeln ausgezeichneten Wörter zu separaten, jeweils über eine URI referenzierten Annotationen nach dem Open Web Annotation Standard konvertiert. Dabei wird explizit keine komplexe Repräsentation der gesamten TEI-Semantik (Ciotto &amp; Tomasi, 2016) angestrebt, sondern ein zusätzlicher flacher Einstieg in die Daten auf Wortebene geschaffen. Jede Annotation enthält, in LOD-Vokabularen modelliert (Allemang, 2011), alle vorhandenen Angaben zu dem spezifischen Wort: die transkribierten Buchstaben, editorische Auszeichnungen, Dictionary Form, Strongs‘ Number und Übersetzungen sowie neben weiteren Metadaten die URI-codierten Koordinaten zu den Canvas-Bereichen des korrespondierenden Bildes.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Ausblick</head>
+<p style="text-align: left; ">Alle beschriebenen Daten – IIIF-Images, TEI, Annotationen – werden über Schnittstellen zur freien Nachnutzung veröffentlicht. Parallel zu den im Bereich des User Interface stattfindenden Usability Tests sollen während des Beta-Stadiums der APIs Vertreter:innen der DH-Communities nach weiteren datenzentrierten Use Cases und Verbesserungsansätzen befragt werden.</p>
+<p style="text-align: left; ">Dadurch sollen über die Anforderungen des wissenschaftlichen Beirats hinaus die aktuellen Bedarfe der Digital Humanities erkannt und berücksichtigt werden – im Sinne des Titels „Anticipating digital research“.</p>
+</div>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
+<note n="1" rend="footnote text" xml:id="ftn1">
                          Aufgrund der aktuellen politischen Lage besteht momentan kein Kontakt zur Russischen Nationalbibliothek in St. Peterburg.
                     </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl style="text-align: left; "><hi rend="bold">Allemang, Dean</hi>. 2011. „Semantic Web for the working ontologist: Effective modeling in RDFS and OWL.” Amsterdam: Morgan Kaufmann/Elsevier.</bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Böttrich, Gottfried</hi>. 2011. „Der Jahrhundertfund: Entdeckung und Geschichte des Codex Sinaiticus.“ Leipzig: Evangelische Verlagsanstalt.</bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Ciotti, Fabio and Francesca Tomasi</hi>. 2016. „Formal Ontologies, Linked Data, and TEI Semantics“ 
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl style="text-align: left; "><hi rend="bold">Allemang, Dean</hi>. 2011. „Semantic Web for the working ontologist: Effective modeling in RDFS and OWL.” Amsterdam: Morgan Kaufmann/Elsevier.</bibl>
+<bibl style="text-align: left; "><hi rend="bold">Böttrich, Gottfried</hi>. 2011. „Der Jahrhundertfund: Entdeckung und Geschichte des Codex Sinaiticus.“ Leipzig: Evangelische Verlagsanstalt.</bibl>
+<bibl style="text-align: left; "><hi rend="bold">Ciotti, Fabio and Francesca Tomasi</hi>. 2016. „Formal Ontologies, Linked Data, and TEI Semantics“ 
                         <hi rend="italic">Journal of the Text Encoding Initiative</hi> 10.4000/jtei.1480.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">IIIF Consortium. o. J.</hi> „How It Works: A plain-language guide to how the APIs work.” https://iiif.io/get-started/how-iiif-works (zugegriffen: 24.07.2024).</bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Parker, David C</hi>. 2010. “Codex Sinaiticus: the story of the world's oldest bible.” London: The British Library.</bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+<bibl style="text-align: left; "><hi rend="bold">IIIF Consortium. o. J.</hi> „How It Works: A plain-language guide to how the APIs work.” https://iiif.io/get-started/how-iiif-works (zugegriffen: 24.07.2024).</bibl>
+<bibl style="text-align: left; "><hi rend="bold">Parker, David C</hi>. 2010. “Codex Sinaiticus: the story of the world's oldest bible.” London: The British Library.</bibl>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

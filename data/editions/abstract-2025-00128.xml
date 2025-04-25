@@ -1,281 +1,275 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="MERTGENS_Andreas_Phylogenetische__berlieferungsanalyse_mit_F">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Phylogenetische Überlieferungsanalyse mit Feature-Matrizen zur Bild- bzw. Diagrammbeschreibung. Ein Versuch an den Handschriften des ‘Compendium Historiae’ (12. Jh.ff)</title>
-                <author>
-                    <persName>
-                        <surname>Cugliana</surname>
-                        <forename>Elisa</forename>
-                    </persName>
-                    <affiliation>Universität zu Köln, Deutschland</affiliation>
-                    <email>elisa.cugliana@uni-koeln.de</email>
-                    <idno type="ORCID">0000-0002-6460-2954</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Mertgens</surname>
-                        <forename>Andreas</forename>
-                    </persName>
-                    <affiliation>Bergische Universität Wuppertal, Deutschland</affiliation>
-                    <email>mertgens@uni-wuppertal.de</email>
-                    <idno type="ORCID">0000-0003-4665-2226</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Sahle</surname>
-                        <forename>Patrick</forename>
-                    </persName>
-                    <affiliation>Bergische Universität Wuppertal, Deutschland</affiliation>
-                    <email>sahle@uni-wuppertal.de</email>
-                    <idno type="ORCID">0000-0002-8648-2033</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Ioannu</surname>
-                        <forename>Johannes</forename>
-                    </persName>
-                    <affiliation>Bergische Universität Wuppertal, Deutschland</affiliation>
-                    <email>johannes.ioannu@uni-wuppertal.de</email>
-                    <idno type="ORCID">0009-0000-3952-0730</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Rouxel</surname>
-                        <forename>Lennart</forename>
-                    </persName>
-                    <affiliation>Bergische Universität Wuppertal, Deutschland</affiliation>
-                    <email>lennart.rouxel@uni-wuppertal.de</email>
-                    <idno type="ORCID">0009-0007-6653-1954</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Goerss</surname>
-                        <forename>Eleanor</forename>
-                    </persName>
-                    <affiliation>Eberhard Karls Universität Tübingen, Deutschland</affiliation>
-                    <email>eleanor.goerss@uni-tuebingen.de</email>
-                    <idno type="ORCID">0009-0006-6575-8180</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-12-02T15:26:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag: Computergestützte Analyse oder Interpretation</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Stemmatologie</term>
-                    <term>Phylogenetik</term>
-                    <term>Feature Matrix</term>
-                    <term>Handschriften</term>
-                    <term>Diagramme</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Strukturanalyse</term>
-                    <term>Modellierung</term>
-                    <term>Visualisierung</term>
-                    <term>Bilder</term>
-                    <term>Manuskript</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <p>Peter von Poitiers Werk “Compendium Historiae in Genelaogia Christi” (chigc), entstanden am Ende des 12. Jahrhunderts in Paris, bietet einen synoptischen Blick auf die genealogischen Verhältnisse der Ahnen Jesu, beginnend mit Adam und Eva, unter Einbezug weiterer Personengruppen, mit kleineren Texten und einigen erklärenden Diagrammen. </p>
-            <figure>
-                <graphic n="1001" width="15.92cm" height="6.6322222222222225cm" url="Pictures/f81b40664de700230f42aacf7b78a684.png" rend="inline"/>
-                <head>Abb. 1: Beispiel für eine “typische” chigc-Handschrift (hier: eine Rolle), Cambridge, Harvard University, Houghton Library, Ms. Typ 216, Nordfrankreich, 1. Hälfte 13. Jh, mit genealogischem Graph, Textabschnitten und “Stämme”-Diagramm. 
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="MERTGENS_Andreas_Phylogenetische__berlieferungsanalyse_mit_F" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Phylogenetische Überlieferungsanalyse mit Feature-Matrizen zur Bild- bzw. Diagrammbeschreibung. Ein Versuch an den Handschriften des ‘Compendium Historiae’ (12. Jh.ff)</title>
+<author>
+<persName>
+<surname>Cugliana</surname>
+<forename>Elisa</forename>
+</persName>
+<affiliation>Universität zu Köln, Deutschland</affiliation>
+<email>elisa.cugliana@uni-koeln.de</email>
+<idno type="ORCID">0000-0002-6460-2954</idno>
+</author>
+<author>
+<persName>
+<surname>Mertgens</surname>
+<forename>Andreas</forename>
+</persName>
+<affiliation>Bergische Universität Wuppertal, Deutschland</affiliation>
+<email>mertgens@uni-wuppertal.de</email>
+<idno type="ORCID">0000-0003-4665-2226</idno>
+</author>
+<author>
+<persName>
+<surname>Sahle</surname>
+<forename>Patrick</forename>
+</persName>
+<affiliation>Bergische Universität Wuppertal, Deutschland</affiliation>
+<email>sahle@uni-wuppertal.de</email>
+<idno type="ORCID">0000-0002-8648-2033</idno>
+</author>
+<author>
+<persName>
+<surname>Ioannu</surname>
+<forename>Johannes</forename>
+</persName>
+<affiliation>Bergische Universität Wuppertal, Deutschland</affiliation>
+<email>johannes.ioannu@uni-wuppertal.de</email>
+<idno type="ORCID">0009-0000-3952-0730</idno>
+</author>
+<author>
+<persName>
+<surname>Rouxel</surname>
+<forename>Lennart</forename>
+</persName>
+<affiliation>Bergische Universität Wuppertal, Deutschland</affiliation>
+<email>lennart.rouxel@uni-wuppertal.de</email>
+<idno type="ORCID">0009-0007-6653-1954</idno>
+</author>
+<author>
+<persName>
+<surname>Goerss</surname>
+<forename>Eleanor</forename>
+</persName>
+<affiliation>Eberhard Karls Universität Tübingen, Deutschland</affiliation>
+<email>eleanor.goerss@uni-tuebingen.de</email>
+<idno type="ORCID">0009-0006-6575-8180</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-12-02T15:26:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943154</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Vortrag: Computergestützte Analyse oder Interpretation</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Stemmatologie</term>
+<term>Phylogenetik</term>
+<term>Feature Matrix</term>
+<term>Handschriften</term>
+<term>Diagramme</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Strukturanalyse</term>
+<term>Modellierung</term>
+<term>Visualisierung</term>
+<term>Bilder</term>
+<term>Manuskript</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<p>Peter von Poitiers Werk “Compendium Historiae in Genelaogia Christi” (chigc), entstanden am Ende des 12. Jahrhunderts in Paris, bietet einen synoptischen Blick auf die genealogischen Verhältnisse der Ahnen Jesu, beginnend mit Adam und Eva, unter Einbezug weiterer Personengruppen, mit kleineren Texten und einigen erklärenden Diagrammen. </p>
+<figure>
+<graphic height="6.6322222222222225cm" n="1001" rend="inline" url="Pictures/f81b40664de700230f42aacf7b78a684.png" width="15.92cm"/>
+<head>Abb. 1: Beispiel für eine “typische” chigc-Handschrift (hier: eine Rolle), Cambridge, Harvard University, Houghton Library, Ms. Typ 216, Nordfrankreich, 1. Hälfte 13. Jh, mit genealogischem Graph, Textabschnitten und “Stämme”-Diagramm. 
                 <ref target="https://nrs.lib.harvard.edu/urn-3:fhcl.hough:2655226">https://nrs.lib.harvard.edu/urn-3:fhcl.hough:2655226</ref></head>
-            </figure>
-            <p>
-            </p>
-            <p>Im Forschungsprojekt “Geschichte als visuelles Konzept” erforschen Spezialist:innen aus verschiedenen Disziplinen das Werk und bereiten die erste Edition vor. Dabei stehen die PIs aus Tübingen (Andrea Worm) für die Kunstgeschichte, aus Graz (Roman Bleier) für die Digital Humanities, aus Wuppertal (Patrick Sahle) für die Editionswissenschaft, aus Venedig (Franz Fischer) für die mittellateinische Philologie und aus London (Laura Cleaver) für die Kodikologie. Für die Überlieferung des Werkes sind inzwischen über 300 Handschriften erfasst worden, die nur einen Bruchteil der tatsächlich produzierten Texte darstellen. Als “Gebrauchstext” zum besseren Verständnis biblischer Geschichten z.B. in einem Unterrichtskontext, aber auch in der Form aufwändiger repräsentativer Schmuck-Rollen, sind die Handschriften über mehrere Jahrhunderte hinweg immer wieder kopiert und an die jeweilige Gebrauchssituation angepasst worden. </p>
-            <p>Für das Werk und seine Exemplare steht im Projekt weniger die Suche nach einem “Urtext” im Mittelpunkt. Vielmehr sollen zunächst Versionen unterschieden und Handschriftengruppen identifiziert werden, die besonders ähnliche Fassungen haben. Vor dem idealen Ziel eines endgültigen Stemmas, das durch die reine Zahl der erhaltenen Handschriften, die noch größere Zahl der verlorenen Exemplare und die mögliche Kontamination in den Abschreibeprozessen, in weite Ferne rückt, steht der Versuch der Clusterbildung mittels verschiedener Verfahren. Die Suche nach Clustern in der Überlieferungsgeschichte soll dabei auch die Entwicklung und Rezeption des Werkes 
+</figure>
+<p>
+</p>
+<p>Im Forschungsprojekt “Geschichte als visuelles Konzept” erforschen Spezialist:innen aus verschiedenen Disziplinen das Werk und bereiten die erste Edition vor. Dabei stehen die PIs aus Tübingen (Andrea Worm) für die Kunstgeschichte, aus Graz (Roman Bleier) für die Digital Humanities, aus Wuppertal (Patrick Sahle) für die Editionswissenschaft, aus Venedig (Franz Fischer) für die mittellateinische Philologie und aus London (Laura Cleaver) für die Kodikologie. Für die Überlieferung des Werkes sind inzwischen über 300 Handschriften erfasst worden, die nur einen Bruchteil der tatsächlich produzierten Texte darstellen. Als “Gebrauchstext” zum besseren Verständnis biblischer Geschichten z.B. in einem Unterrichtskontext, aber auch in der Form aufwändiger repräsentativer Schmuck-Rollen, sind die Handschriften über mehrere Jahrhunderte hinweg immer wieder kopiert und an die jeweilige Gebrauchssituation angepasst worden. </p>
+<p>Für das Werk und seine Exemplare steht im Projekt weniger die Suche nach einem “Urtext” im Mittelpunkt. Vielmehr sollen zunächst Versionen unterschieden und Handschriftengruppen identifiziert werden, die besonders ähnliche Fassungen haben. Vor dem idealen Ziel eines endgültigen Stemmas, das durch die reine Zahl der erhaltenen Handschriften, die noch größere Zahl der verlorenen Exemplare und die mögliche Kontamination in den Abschreibeprozessen, in weite Ferne rückt, steht der Versuch der Clusterbildung mittels verschiedener Verfahren. Die Suche nach Clustern in der Überlieferungsgeschichte soll dabei auch die Entwicklung und Rezeption des Werkes 
                 <hi rend="italic">in der Zeit</hi> aufklären.<ref n="1" target="ftn1"/> Hier kommen für die interdisziplinäre Betrachtung des Gegenstands Methodenfragen ins Spiel, die zwischen klassischen Geisteswissenschaften und den DH als Datenwissenschaft nach neuen innovativen Ansätzen suchen. Traditionellerweise würde man sich stemmatologischen Fragen mit den Mitteln der editorischen Textkritik nähern und über Textveränderungen und “Fehler” Zusammenhänge aufdecken. Dieser Ansatz allein kann aber nicht vollends überzeugen, weil “der Text” nur eine untergeordnete Rolle im Werk spielt. Betrachtet werden deshalb, neben den kodikologischen Parametern (Lokalisierung, Datierung) auch die Makro-Struktur der (fehlenden oder vorhandenen) Teil-Elemente, die Grund-Struktur der Darstellung (der genealogische Graph), ikonographische Merkmale auf einer allgemeinen oder Detail-Ebene sowie die einzelnen Diagramme. Der generelle Methodenmix verbindet zunächst manuelle Sondierungen mit einer Reihe von algorithmischen Untersuchungen. 
             </p>
-            <p>Bei letzteren liegt der Fokus aktuell auf phylogenetischen Verfahren, die schon seit einigen Jahrzehnten im Bereich der Stemmatologie für Handschriftenüberlieferungen eingesetzt werden (Roelli 2020). Über unsere laufenden Versuche zu phylogenetischen Untersuchungen, die entweder auf Kollationen laufender Texte oder auf Merkmalsmatrizen von Textunterschieden basieren, wird an anderer Stelle zu berichten sein. Hier soll ein Experiment vorgestellt werden, bei dem ein einzelnes Diagramm mit den Mitteln einer “Feature-Matrix” beschrieben und seine Varianz dann mit phylogenetischen Algorithmen untersucht wird. Diagramme als Objekte mit bestimmbaren Eigenschaften zu verstehen, die anhand einer Merkmals-Matrix beschrieben werden können, folgt dem Modell von Howe und Windram (2011), die den Erfolg der Anwendung von phylogenetischen Methoden für die Untersuchung der Genese von Objekten des kulturellen Erbes nachweisen konnten. Es besteht die Hoffnung, damit der Spezifik des Werkes 
+<p>Bei letzteren liegt der Fokus aktuell auf phylogenetischen Verfahren, die schon seit einigen Jahrzehnten im Bereich der Stemmatologie für Handschriftenüberlieferungen eingesetzt werden (Roelli 2020). Über unsere laufenden Versuche zu phylogenetischen Untersuchungen, die entweder auf Kollationen laufender Texte oder auf Merkmalsmatrizen von Textunterschieden basieren, wird an anderer Stelle zu berichten sein. Hier soll ein Experiment vorgestellt werden, bei dem ein einzelnes Diagramm mit den Mitteln einer “Feature-Matrix” beschrieben und seine Varianz dann mit phylogenetischen Algorithmen untersucht wird. Diagramme als Objekte mit bestimmbaren Eigenschaften zu verstehen, die anhand einer Merkmals-Matrix beschrieben werden können, folgt dem Modell von Howe und Windram (2011), die den Erfolg der Anwendung von phylogenetischen Methoden für die Untersuchung der Genese von Objekten des kulturellen Erbes nachweisen konnten. Es besteht die Hoffnung, damit der Spezifik des Werkes 
                 <hi rend="italic">in seiner Multimodalität</hi> eher gerecht zu werden und die verschiedenen Fachperspektiven (Kodikologie, Kunstgeschichte, Editorik) methodisch integrieren zu können. Insbesondere erfüllt der phylogenetische Ansatz auch das Programm einer “Datafizierung” der geisteswissenschaftlichen Forschung mit einer Reduktion der analogen Komplexität durch die Einführung multipler diskreter Einheiten, die die Basis des Vergleichs konstituieren und die “Konstruiertheit des Wissens” explizit machen. 
             </p>
-            <p>Bei unserem Testfall handelt es sich um das sogenannte “Stämme-Diagramm”, das Berichte aus der Bibel, Numeri 2:1–34; 3:17–38 und anderen Texten veranschaulichen soll. Sein Gegenstand ist die Anordnung der Zelte der zwölf Stämme Israels um die Stiftshütte (Tabernakel) mit der Bundeslade während ihrer Wanderung durch die Wüste. Direkt um den Tabernakel herum findet man die vier levitischen Stämme (Moses und Aaron im Osten, die Caatiter im Süden, die Gersoniter im Westen und die Merariter im Norden). Zahlen bei diesen inneren Medaillons weisen darauf hin, wie viele Städte die levitischen Stämme von den 12 Stämmen erhielten. Die verbindenden Linien zeigen, von welchen Stämmen der jeweilige levitische Stamm seinen Anteil bekam (siehe Worm 2020).</p>
-            <figure>
-                <graphic n="1002" width="15.92cm" height="16.051388888888887cm" url="Pictures/c83c9e5da03956042cae341b325f19ae.png" rend="inline"/>
-                <head>Abb. 2: Vier Beispiele. Von oben links im Uhrzeigersinn die Handschriften K (Diagramm-Typ A), L6 (Typ E), Aa (Typ C) und Lz1 (Typ D).<ref n="2" target="ftn2"/></head>
-            </figure>
-            <p>
-            </p>
-            <p>Um Diagramme systematisch untersuchen zu können, müssen ihre Merkmale identifiziert werden. Eine Frage, die sich schon beim Versuch, sie - z.B. in einer Edition - zu repräsentieren, gestellt hatte (Sutor 2024). Diese Vorüberlegungen können nun wieder aufgegriffen werden: Was sind essentielle, was arbiträre Eigenschaften? Welche Merkmale sind konstitutiv für Variantengruppen? Wo wird ein Schreiber einer Vorlage gefolgt sein, wo bestanden Freiheiten zur Änderung? Welche Ebenen der Beschreibung, welche Perspektiven kann man unterscheiden?</p>
-            <figure>
-                <graphic n="1003" width="14.67045cm" height="14.353647222222222cm" url="Pictures/c114f011c3b31df773d08e67405c1bae.jpg" rend="inline"/>
-                <head>Abb. 3: Typ A des Stämmediagramms, idealisiert. (Abstrahierende) Repräsentation ist 
+<p>Bei unserem Testfall handelt es sich um das sogenannte “Stämme-Diagramm”, das Berichte aus der Bibel, Numeri 2:1–34; 3:17–38 und anderen Texten veranschaulichen soll. Sein Gegenstand ist die Anordnung der Zelte der zwölf Stämme Israels um die Stiftshütte (Tabernakel) mit der Bundeslade während ihrer Wanderung durch die Wüste. Direkt um den Tabernakel herum findet man die vier levitischen Stämme (Moses und Aaron im Osten, die Caatiter im Süden, die Gersoniter im Westen und die Merariter im Norden). Zahlen bei diesen inneren Medaillons weisen darauf hin, wie viele Städte die levitischen Stämme von den 12 Stämmen erhielten. Die verbindenden Linien zeigen, von welchen Stämmen der jeweilige levitische Stamm seinen Anteil bekam (siehe Worm 2020).</p>
+<figure>
+<graphic height="16.051388888888887cm" n="1002" rend="inline" url="Pictures/c83c9e5da03956042cae341b325f19ae.png" width="15.92cm"/>
+<head>Abb. 2: Vier Beispiele. Von oben links im Uhrzeigersinn die Handschriften K (Diagramm-Typ A), L6 (Typ E), Aa (Typ C) und Lz1 (Typ D).<ref n="2" target="ftn2"/></head>
+</figure>
+<p>
+</p>
+<p>Um Diagramme systematisch untersuchen zu können, müssen ihre Merkmale identifiziert werden. Eine Frage, die sich schon beim Versuch, sie - z.B. in einer Edition - zu repräsentieren, gestellt hatte (Sutor 2024). Diese Vorüberlegungen können nun wieder aufgegriffen werden: Was sind essentielle, was arbiträre Eigenschaften? Welche Merkmale sind konstitutiv für Variantengruppen? Wo wird ein Schreiber einer Vorlage gefolgt sein, wo bestanden Freiheiten zur Änderung? Welche Ebenen der Beschreibung, welche Perspektiven kann man unterscheiden?</p>
+<figure>
+<graphic height="14.353647222222222cm" n="1003" rend="inline" url="Pictures/c114f011c3b31df773d08e67405c1bae.jpg" width="14.67045cm"/>
+<head>Abb. 3: Typ A des Stämmediagramms, idealisiert. (Abstrahierende) Repräsentation ist 
                 <hi rend="italic">eine</hi> Form der Merkmalsextraktion.</head>
-            </figure>
-            <p>
-            </p>
-            <p>Wenn man diese Beobachtungen zur Grundlage algorithmischer Auswertungen machen will, kann man die Codierung von Merkmalen auf Antworten zu Ja-Nein-Fragen reduzieren (z.B. “Hat der Knoten der civitates gersonite vier Verbindungen?”). Die Summe der Merkmale ergibt dann rein binäre Code-Sequenzen, die leicht mit den Verfahren der Phylogenetik verarbeitet werden können. Dabei muss klar sein, dass diese Feature-Matrizen sich epistemologisch stark von denen der Biologie unterscheiden (Mishler 2005): während bei uns die “termina” (das sind die Spezies der Biologie und die überlieferten Exemplare der Handschriften) unstrittig sind, sind die Merkmale (die “characters” der Code-Sequenz der Biologie) bei Kulturobjekten in höchstem Maße willkürlich ausgewählt und sogar konstruiert. Hier ist es wichtig, das grundlegende Vorgehen zu verstehen: die Modellierung der Merkmalsbeschreibung ist Teil eines Wechselspiels mit seinen Ergebnissen, die mit kodikologischen, historischen oder kunsthistorischen Betrachtungen abgeglichen werden, die das Stämmediagramm nicht nur nach rein formalen Merkmalen, sondern unter starker Berücksichtigung von Kontextwissen einordnen. Diese Betrachtungen werden von den kunsthistorischen und philologischen Teams des Projektes parallel formuliert und werden Teil der Projektpublikation sein. Führt die Feature-Matrix zu großen Widersprüchen gegenüber anderen Befunden, muss die Aussagekraft der Merkmale nochmals überprüft werden. Führt sie zur Zusammenlegung ansonsten deutlich unterschiedlicher Handschriften, müssen die Merkmale eventuell differenzierter beschrieben werden. Schon die Auswahl an Merkmalen stellt einen wichtigen Beitrag zu der phylogenetischen Forschung dar: Während die Konzepte von “Leitfehlern”, “monogenetischen” vs. “polygenetischen” Varianten relativ etabliert sind, ist es bei der Beschreibung von strukturellen und visuellen Aspekten (wie bei Diagrammen oder Illustrationen) noch nicht klar, was genau eine genealogische Entwicklung signalisiert und als Leitvarianten zu betrachten ist und welche Erscheinungen hingegen das Ergebnis von Polygenese sein könnten. Das schon erwähnte Wechselspiel zwischen Definition von Merkmalen und Ergebnissen ist also ein notwendiger Schritt im Erschließungsprozess. Angesichts des Mangels an Literatur zu stemmatologischen bzw. phylogenetischen Arbeiten in der Analyse der Genese visueller Aspekte in vormodernen Texten, ist unser Ansatz vor allem explorativ. Das phylogenetische Verfahren ist ein quantitativer Ansatz. Zu beobachten ist, dass auch in der bioinformatischen Praxis der Prozess der Auswahl und Gewichtung von Merkmalen für die Identifizierung von Clustern von wesentlicher Bedeutung ist (vgl. De Maio et al. 2021). </p>
-            <p>Für das Stämme-Diagramm arbeiten wir zunächst mit Merkmalsgruppen wie der Grundform, ggf. einem äußeren Rahmen, zusätzlichen Außenelementen, der Rotation und einigen Aspekten der Verbindungen zwischen den Städte-Medaillons und den Stämmen. Hieraus ergeben sich (in unserer aktuellen zweiten Iteration des Experiments) 24 Merkmale, die in späteren Überarbeitungen noch weiter differenziert werden können. Diese Merkmale bilden die Spalten einer Verzeichnungstabelle mit aktuell 148 Handschriften, die das Diagramm enthalten und von denen uns Bilder vorliegen. Jedes Merkmal wird entweder als “abwesend” (0) oder “anwesend” (1) codiert. Von den grundsätzlichen Möglichkeiten, auch “not applicable” (“-”) oder “unklar” (“?”) zu codieren, machen wir einstweilen keinen Gebrauch, da aus den ersten Versuchen deutlich geworden ist, dass eine zweiwertige Codierung für den vorliegenden Fall ausreichend ist<ref n="3" target="ftn3"/>. Die so entstehende binäre Matrix wird in eine Nexus-Datei transformiert – ein von den meisten phylogenetischen Software-Anwendungen unterstütztes Format (Mertgens et al. 2024). Diese Programme nutzen wiederum verschiedene Algorithmen, um die Strukturen in den Daten zu berechnen. Zu den weiter verbreiteten Verfahren gehören dabei neighbor-joining, maximum likelihood oder Bayesian inference (vgl. Roelli et al. 2015). Wir benutzen nach Tests mit PAUP* (Swofford 2003), aktuell vor allem Splitstree (Huson und Bryant 2006), u.a. mit der cluster-Methode “UPGMA” (Abb. 4) und mit dem 
+</figure>
+<p>
+</p>
+<p>Wenn man diese Beobachtungen zur Grundlage algorithmischer Auswertungen machen will, kann man die Codierung von Merkmalen auf Antworten zu Ja-Nein-Fragen reduzieren (z.B. “Hat der Knoten der civitates gersonite vier Verbindungen?”). Die Summe der Merkmale ergibt dann rein binäre Code-Sequenzen, die leicht mit den Verfahren der Phylogenetik verarbeitet werden können. Dabei muss klar sein, dass diese Feature-Matrizen sich epistemologisch stark von denen der Biologie unterscheiden (Mishler 2005): während bei uns die “termina” (das sind die Spezies der Biologie und die überlieferten Exemplare der Handschriften) unstrittig sind, sind die Merkmale (die “characters” der Code-Sequenz der Biologie) bei Kulturobjekten in höchstem Maße willkürlich ausgewählt und sogar konstruiert. Hier ist es wichtig, das grundlegende Vorgehen zu verstehen: die Modellierung der Merkmalsbeschreibung ist Teil eines Wechselspiels mit seinen Ergebnissen, die mit kodikologischen, historischen oder kunsthistorischen Betrachtungen abgeglichen werden, die das Stämmediagramm nicht nur nach rein formalen Merkmalen, sondern unter starker Berücksichtigung von Kontextwissen einordnen. Diese Betrachtungen werden von den kunsthistorischen und philologischen Teams des Projektes parallel formuliert und werden Teil der Projektpublikation sein. Führt die Feature-Matrix zu großen Widersprüchen gegenüber anderen Befunden, muss die Aussagekraft der Merkmale nochmals überprüft werden. Führt sie zur Zusammenlegung ansonsten deutlich unterschiedlicher Handschriften, müssen die Merkmale eventuell differenzierter beschrieben werden. Schon die Auswahl an Merkmalen stellt einen wichtigen Beitrag zu der phylogenetischen Forschung dar: Während die Konzepte von “Leitfehlern”, “monogenetischen” vs. “polygenetischen” Varianten relativ etabliert sind, ist es bei der Beschreibung von strukturellen und visuellen Aspekten (wie bei Diagrammen oder Illustrationen) noch nicht klar, was genau eine genealogische Entwicklung signalisiert und als Leitvarianten zu betrachten ist und welche Erscheinungen hingegen das Ergebnis von Polygenese sein könnten. Das schon erwähnte Wechselspiel zwischen Definition von Merkmalen und Ergebnissen ist also ein notwendiger Schritt im Erschließungsprozess. Angesichts des Mangels an Literatur zu stemmatologischen bzw. phylogenetischen Arbeiten in der Analyse der Genese visueller Aspekte in vormodernen Texten, ist unser Ansatz vor allem explorativ. Das phylogenetische Verfahren ist ein quantitativer Ansatz. Zu beobachten ist, dass auch in der bioinformatischen Praxis der Prozess der Auswahl und Gewichtung von Merkmalen für die Identifizierung von Clustern von wesentlicher Bedeutung ist (vgl. De Maio et al. 2021). </p>
+<p>Für das Stämme-Diagramm arbeiten wir zunächst mit Merkmalsgruppen wie der Grundform, ggf. einem äußeren Rahmen, zusätzlichen Außenelementen, der Rotation und einigen Aspekten der Verbindungen zwischen den Städte-Medaillons und den Stämmen. Hieraus ergeben sich (in unserer aktuellen zweiten Iteration des Experiments) 24 Merkmale, die in späteren Überarbeitungen noch weiter differenziert werden können. Diese Merkmale bilden die Spalten einer Verzeichnungstabelle mit aktuell 148 Handschriften, die das Diagramm enthalten und von denen uns Bilder vorliegen. Jedes Merkmal wird entweder als “abwesend” (0) oder “anwesend” (1) codiert. Von den grundsätzlichen Möglichkeiten, auch “not applicable” (“-”) oder “unklar” (“?”) zu codieren, machen wir einstweilen keinen Gebrauch, da aus den ersten Versuchen deutlich geworden ist, dass eine zweiwertige Codierung für den vorliegenden Fall ausreichend ist<ref n="3" target="ftn3"/>. Die so entstehende binäre Matrix wird in eine Nexus-Datei transformiert – ein von den meisten phylogenetischen Software-Anwendungen unterstütztes Format (Mertgens et al. 2024). Diese Programme nutzen wiederum verschiedene Algorithmen, um die Strukturen in den Daten zu berechnen. Zu den weiter verbreiteten Verfahren gehören dabei neighbor-joining, maximum likelihood oder Bayesian inference (vgl. Roelli et al. 2015). Wir benutzen nach Tests mit PAUP* (Swofford 2003), aktuell vor allem Splitstree (Huson und Bryant 2006), u.a. mit der cluster-Methode “UPGMA” (Abb. 4) und mit dem 
                 <hi rend="color(202122)">neighbor-joining Algorithmus (Abb. 5)</hi>, um erste Visualisierungen zu erzeugen.<ref n="4" target="ftn4"/> Auch wegen der heuristischen Natur von phylogenetischen Analysen ist die Nutzung mehrerer Methoden von wesentlicher Bedeutung, um dieselben Daten aus multiplen Perspektiven zu betrachten und mögliche Biases zu beiseitigen. Verschiedene Outputs können auf unterschiedliche Aspekte hinweisen und Kongruenzen in den Gruppierungen deuten auf eine höhere Zuverlässigkeit der Ergebnisse. 
             </p>
-            <p>Neben der Auswahl und Differenzierung der zu beobachtenden Phänomene erfolgt die weitere Feinjustierung der Daten durch eine Gewichtung der Merkmale. Dazu werden wichtige Spalten vervielfacht. Aus den 24 Merkmalen entstehen so Code-Sequenzen mit 67 Stellen.</p>
-            <figure>
-                <graphic n="1004" width="12.871980555555556cm" height="10.862069444444444cm" url="Pictures/c58faf327e01531837eab628e91de272.png" rend="inline"/>
-                <head>Abb. 4: Phylogramm (splitstree, UPGMA bootstrap tree splits)</head>
-            </figure>
-            <p>
-            </p>
-            <figure>
-                <graphic n="1005" width="13.513977777777777cm" height="12.217994444444445cm" url="Pictures/d1bff056ec7480913b760adba6cb94ff.png" rend="inline"/>
-                <head>Abb. 5: Phylogramm (splitstree, neighbor-joining tree)</head>
-            </figure>
-            <p>
-            </p>
-            <figure>
-                <graphic n="1006" width="15.92cm" height="4.974166666666667cm" url="Pictures/88272de4764042ecf61a8ac11ab0edc8.png" rend="inline"/>
-                <head>Abb. 6: Detail aus Abb. 5; Stand der Daten: 16.7.2024.</head>
-            </figure>
-            <p>
-            </p>
-            <p>Ein Teil des Baumes (Abb. 6) zeigt die Gruppe der rechteckigen Stämme-Diagramme (Typ D, siehe Abb. 2). Die Label liefern vier Informationen nach dem Muster [Handschriftensigle]_[Werk-Version]_[Handschriftengruppe]_[Jahrhundert]. Wir erkennen: Die rechteckige Form taucht in den Werk-Hauptversionen 1 und 2 und für die letztere vor allem in den bisher identifizierten Handschriftengruppen A2 und F3 auf. Den unteren Zweig (Av, P2, N) bilden hier die Handschriften mit “vier Verbindungen bei den Gersoniten” (alle in Gruppe F3). Als nächstes wäre u.a. zu prüfen, was es z.B. mit der Handschriften St1 (Stuttgart, Württembergische Landesbibliothek, Cod. theol. et phil. 2° 100; nach bisherigen Kataloginformationen “Regensburger” Provenienz) auf sich hat, die bisher einer ganz anderen Gruppe (D11) zugeordnet ist. Mit diesen heuristischen Hinweisen des Stemmas kommen wir unmittelbar in die eigentlichen Forschungsfragen: wie “wandern” eigentlich Handschriften und die Innovationen in ihnen? Und wie abhängig oder unabhängig ist die Ausprägung einzelner Phänomene von den Grundmerkmalen ansonsten verwandter Handschriften?</p>
-            <p>Mit unserer Fallstudie wollen wir auf das Potenzial der für die reine Textuntersuchung schon etablierten phylogenetischen Methoden für die Analyse der Entwicklung von multimodalen Werken aufmerksam machen. Die philologische Textkritik und nachfolgend auch die Stemmatologie ist stark vom Konzept des “Fehlers” geprägt. Dagegen will die Untersuchung der Diagramme weniger einen “richtigen” Urtext (hier: Urform) rekonstruieren, als vielmehr die Entwicklungslinien zwischen sich jeweils ähnelnden Gruppen aufdecken. Dabei kann der Fehlerbegriff keine Rolle spielen. Die allgemeine, nicht wertende Frage nach Varianz ist dann ein Argument 
+<p>Neben der Auswahl und Differenzierung der zu beobachtenden Phänomene erfolgt die weitere Feinjustierung der Daten durch eine Gewichtung der Merkmale. Dazu werden wichtige Spalten vervielfacht. Aus den 24 Merkmalen entstehen so Code-Sequenzen mit 67 Stellen.</p>
+<figure>
+<graphic height="10.862069444444444cm" n="1004" rend="inline" url="Pictures/c58faf327e01531837eab628e91de272.png" width="12.871980555555556cm"/>
+<head>Abb. 4: Phylogramm (splitstree, UPGMA bootstrap tree splits)</head>
+</figure>
+<p>
+</p>
+<figure>
+<graphic height="12.217994444444445cm" n="1005" rend="inline" url="Pictures/d1bff056ec7480913b760adba6cb94ff.png" width="13.513977777777777cm"/>
+<head>Abb. 5: Phylogramm (splitstree, neighbor-joining tree)</head>
+</figure>
+<p>
+</p>
+<figure>
+<graphic height="4.974166666666667cm" n="1006" rend="inline" url="Pictures/88272de4764042ecf61a8ac11ab0edc8.png" width="15.92cm"/>
+<head>Abb. 6: Detail aus Abb. 5; Stand der Daten: 16.7.2024.</head>
+</figure>
+<p>
+</p>
+<p>Ein Teil des Baumes (Abb. 6) zeigt die Gruppe der rechteckigen Stämme-Diagramme (Typ D, siehe Abb. 2). Die Label liefern vier Informationen nach dem Muster [Handschriftensigle]_[Werk-Version]_[Handschriftengruppe]_[Jahrhundert]. Wir erkennen: Die rechteckige Form taucht in den Werk-Hauptversionen 1 und 2 und für die letztere vor allem in den bisher identifizierten Handschriftengruppen A2 und F3 auf. Den unteren Zweig (Av, P2, N) bilden hier die Handschriften mit “vier Verbindungen bei den Gersoniten” (alle in Gruppe F3). Als nächstes wäre u.a. zu prüfen, was es z.B. mit der Handschriften St1 (Stuttgart, Württembergische Landesbibliothek, Cod. theol. et phil. 2° 100; nach bisherigen Kataloginformationen “Regensburger” Provenienz) auf sich hat, die bisher einer ganz anderen Gruppe (D11) zugeordnet ist. Mit diesen heuristischen Hinweisen des Stemmas kommen wir unmittelbar in die eigentlichen Forschungsfragen: wie “wandern” eigentlich Handschriften und die Innovationen in ihnen? Und wie abhängig oder unabhängig ist die Ausprägung einzelner Phänomene von den Grundmerkmalen ansonsten verwandter Handschriften?</p>
+<p>Mit unserer Fallstudie wollen wir auf das Potenzial der für die reine Textuntersuchung schon etablierten phylogenetischen Methoden für die Analyse der Entwicklung von multimodalen Werken aufmerksam machen. Die philologische Textkritik und nachfolgend auch die Stemmatologie ist stark vom Konzept des “Fehlers” geprägt. Dagegen will die Untersuchung der Diagramme weniger einen “richtigen” Urtext (hier: Urform) rekonstruieren, als vielmehr die Entwicklungslinien zwischen sich jeweils ähnelnden Gruppen aufdecken. Dabei kann der Fehlerbegriff keine Rolle spielen. Die allgemeine, nicht wertende Frage nach Varianz ist dann ein Argument 
                 <hi rend="italic" xml:space="preserve">für </hi>die Anwendung von phylogenetischen Methoden, da diese von einer nicht wertenden Betrachtung aller Varianten ausgehen. Dass man Varianten gewichten kann (und soll) steht nicht im Widerspruch dazu, da der Gewichtungsprozess für die Herstellung einer ausgewogenen, sachgerechten Beschreibung wichtig ist. Herausforderungen liegen im Fall von Handschriftenmaterial dann insbesondere (1.) in der Auswahl der Merkmale und ihrer weiteren Differenzierung, (2.) in der Unterscheidung von wesentlichen und zusätzlichen Unterschieden und (3.) der Reduktion von Befunden in der Datenbeschreibung auf ein binäres System. Wir sind dabei bisher einem experimentellen, iterativen Ansatz gefolgt, der auf einem Vergleich mit den Clustern basiert, die bislang aus der Analyse der textuellen Varianz, dem Vorhandensein oder Fehlen von Werkelementen sowie der Ikonographie resultieren. Wir verfügen also durchaus noch nicht über ein etabliertes stemma codicum, eine klare “ground truth”, gegen die wir die Qualität unserer phylogenetischen Ergebnisse einfach ausmessen könnten. Vielmehr sehen wir für das Gesamtprojekt multiple Perspektiven und sich ergänzende Beschreibungs- und Untersuchungsmethoden im Zusammenspiel. Kodikologie, Philologie, Kunstgeschichte und computationale (hier: phylogenetische) Verfahren stellen sich gegenseitig auf die Probe und führen zur Schärfung der jeweiligen Betrachtungsweisen. Die in unserer Datafizierung vorgenommene notwendige Reduktion auf diskrete, hier binäre Werte ist die große Herausforderung der DH, die aber in unserer Erfahrung in den meisten Fällen als Sprungbrett für neue und solidere Entdeckungen funktioniert. Die Einführung multipler, immer genauerer, explizit definierter und vermessener Merkmale, die die Komplexität unserer Quellen deutlich genug abbilden können zwingt uns, die Bequemlichkeit einer diskursiven, ambivalenten Beschreibung des Materials zu verlassen und unsere Forschung immer genauer und nachvollziehbarer zu gestalten. 
             </p>
-            <p>Diese Methodenfragen zur Genealogie bzw. Gruppierung von Handschriften markieren nur eine von mehreren epistemologischen Dimensionen. Hier geht es auch darum, Beschreibungsverfahren zu objektivieren und damit reproduzierbar und (z.B. über KI-gestützte Merkmalserhebung) automatisierbar zu machen. Interessant sind auch die Potentiale dieser Ansätze für andere Fragestellungen: Was sind eigentlich relevante Merkmale von Diagrammen (oder Bildern)? Oder: Wie agieren mittelalterliche Schreiber im Spannungsfeld von vorlagentreuer Kopie, ästhetischer Innovation, Eingriffen in die “diagrammatische Syntax”, Hinzufügung weiterer Details und inhaltlichen “Verbesserungen”? Merkmalsextraktion bei Kulturobjekten mit Feature-Matrizen ist insofern mehr als nur ein Mittel zum Zweck. Sie wirft Lichter auf die konzeptionellen Grundlagen der Objektanalyse und den weiteren Genese- und Entwicklungskontext.</p>
-        </body>
-        <back>
+<p>Diese Methodenfragen zur Genealogie bzw. Gruppierung von Handschriften markieren nur eine von mehreren epistemologischen Dimensionen. Hier geht es auch darum, Beschreibungsverfahren zu objektivieren und damit reproduzierbar und (z.B. über KI-gestützte Merkmalserhebung) automatisierbar zu machen. Interessant sind auch die Potentiale dieser Ansätze für andere Fragestellungen: Was sind eigentlich relevante Merkmale von Diagrammen (oder Bildern)? Oder: Wie agieren mittelalterliche Schreiber im Spannungsfeld von vorlagentreuer Kopie, ästhetischer Innovation, Eingriffen in die “diagrammatische Syntax”, Hinzufügung weiterer Details und inhaltlichen “Verbesserungen”? Merkmalsextraktion bei Kulturobjekten mit Feature-Matrizen ist insofern mehr als nur ein Mittel zum Zweck. Sie wirft Lichter auf die konzeptionellen Grundlagen der Objektanalyse und den weiteren Genese- und Entwicklungskontext.</p>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
-                    
-                        <hi style="font-size:10pt" xml:space="preserve"> Siehe Continis Theorie des “testo nel tempo” (Text in der Zeit). Nach dem italienischen Philologen, ist es Aufgabe der Philologie, den Text in seiner zeitlichen Dimension wieder zu öffnen und zwar vor und nach der Entstehung des Textes selbst (“La filologia, quando ne ha i mezzi, riapre questo testo chiuso e statico, lo fa aperto e dinamico, lo ripropone nel tempo. La riapertura si opera in direzioni opposte, dopo e prima del testo”; Contini (2014).</hi>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
+<note n="1" rend="footnote text" xml:id="ftn1">
+<hi style="font-size:10pt" xml:space="preserve"> Siehe Continis Theorie des “testo nel tempo” (Text in der Zeit). Nach dem italienischen Philologen, ist es Aufgabe der Philologie, den Text in seiner zeitlichen Dimension wieder zu öffnen und zwar vor und nach der Entstehung des Textes selbst (“La filologia, quando ne ha i mezzi, riapre questo testo chiuso e statico, lo fa aperto e dinamico, lo ripropone nel tempo. La riapertura si opera in direzioni opposte, dopo e prima del testo”; Contini (2014).</hi>
+</note>
+<note n="2" rend="footnote text" xml:id="ftn2">
                      K steht für Klosterneuburg, Augustiner Chorherrenstift Cod. 696, Frankreich, 13. Jh.; L6 für London, British Library, Add MS 60628/1, England, um 1250; Aa für Aargauer Kantonsbibliothek, Ms. WettF 9, Basel, 2. Viertel 14. Jh. und Lz1 für Linz, Oberösterreichische Landesbibliothek, Hs. 490, Baumgartenberg, um 1250.
                 </note>
-<note rend="footnote text" xml:id="ftn3" n="3">
-                    
-                        <hi style="font-size:10pt" xml:space="preserve"> Die Merkmale wurden so granular gewählt, dass auch spezifische Besonderheiten der Manuskripte binär erfasst werden konnten. Textzeugen, die nicht oder nur schwer lesbar waren, wurden im Zweifelsfall aus der Betrachtung ausgeschlossen.</hi>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn4" n="4">
-                    
-                        <hi style="font-size:10pt" xml:space="preserve"> Diese Algorithmen und Methoden gelten als de facto Standard in der Praxis der Phylogenetik (Roelli 2020 und Roelli et al. 2015).</hi>
-                    
-                </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl>
-                        <hi rend="bold">Contini, Gianfranco</hi>. 2014. 
+<note n="3" rend="footnote text" xml:id="ftn3">
+<hi style="font-size:10pt" xml:space="preserve"> Die Merkmale wurden so granular gewählt, dass auch spezifische Besonderheiten der Manuskripte binär erfasst werden konnten. Textzeugen, die nicht oder nur schwer lesbar waren, wurden im Zweifelsfall aus der Betrachtung ausgeschlossen.</hi>
+</note>
+<note n="4" rend="footnote text" xml:id="ftn4">
+<hi style="font-size:10pt" xml:space="preserve"> Diese Algorithmen und Methoden gelten als de facto Standard in der Praxis der Phylogenetik (Roelli 2020 und Roelli et al. 2015).</hi>
+</note></div>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl>
+<hi rend="bold">Contini, Gianfranco</hi>. 2014. 
                         <hi rend="italic" style="font-size:11pt">Filologia</hi>
-                        <hi style="font-size:11pt">, herausgegeben von Lino Leonardi. Bologna: il Mulino.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">De Maio, Nicola, Alekseyenko, Alexander V., Coleman-Smith, William J. et al</hi>. 2021. “A phylogenetic approach for weighting genetic sequences.” In: 
+<hi style="font-size:11pt">, herausgegeben von Lino Leonardi. Bologna: il Mulino.</hi>
+</bibl>
+<bibl>
+<hi rend="bold">De Maio, Nicola, Alekseyenko, Alexander V., Coleman-Smith, William J. et al</hi>. 2021. “A phylogenetic approach for weighting genetic sequences.” In: 
                         <hi rend="italic" style="font-size:11pt">BMC Bioinformatics</hi>
-                        <hi style="font-size:11pt" xml:space="preserve"> 22, 285. DOI: </hi>
-                        <ref target="https://doi.org/10.1186/s12859-021-04183-8">
-                            <hi style="font-size:11pt">10.1186/s12859-021-04183-8</hi>
-                        </ref>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Howe, Christopher J., and Heather F. Windram</hi>. 2011. “Phylomemetics—Evolutionary Analysis beyond the Gene”. 
+<hi style="font-size:11pt" xml:space="preserve"> 22, 285. DOI: </hi>
+<ref target="https://doi.org/10.1186/s12859-021-04183-8">
+<hi style="font-size:11pt">10.1186/s12859-021-04183-8</hi>
+</ref>
+</bibl>
+<bibl>
+<hi rend="bold">Howe, Christopher J., and Heather F. Windram</hi>. 2011. “Phylomemetics—Evolutionary Analysis beyond the Gene”. 
                         <hi rend="italic" style="font-size:11pt">PLoS Biology</hi>
-                        <hi style="font-size:11pt" xml:space="preserve"> 9 (5): e1001069. DOI: </hi>
-                        <ref target="https://doi.org/10.1371/journal.pbio.1001069">
-                            <hi style="font-size:11pt">10.1371/journal.pbio.1001069</hi>
-                        </ref>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Huson, D. H. und D. Bryant</hi>. 2006. “
+<hi style="font-size:11pt" xml:space="preserve"> 9 (5): e1001069. DOI: </hi>
+<ref target="https://doi.org/10.1371/journal.pbio.1001069">
+<hi style="font-size:11pt">10.1371/journal.pbio.1001069</hi>
+</ref>
+</bibl>
+<bibl>
+<hi rend="bold">Huson, D. H. und D. Bryant</hi>. 2006. “
                         <ref target="http://mbe.oxfordjournals.org/cgi/reprint/msj030?ijkey=GvcBFw4QPIORzUE&amp;keytype=ref">
-                            <hi style="font-size:11pt">Application of Phylogenetic Networks in Evolutionary Studies</hi>
-                        </ref>
-                        <hi style="font-size:11pt" xml:space="preserve">”. </hi>
-                        <hi rend="italic" style="font-size:11pt">Molecular Biology and Evolution</hi>
-                        <hi style="font-size:11pt" xml:space="preserve"> 23(2), 254-267.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Mertgens, Andreas, Lennart Rouxel, and Johannes Ioannu</hi>. 2024. ‘Datenset zur Phylogenetische Analyse Des Stämme-Diagramms Im 'Compendium Historiae'’. Zenodo, DOI: 
+<hi style="font-size:11pt">Application of Phylogenetic Networks in Evolutionary Studies</hi>
+</ref>
+<hi style="font-size:11pt" xml:space="preserve">”. </hi>
+<hi rend="italic" style="font-size:11pt">Molecular Biology and Evolution</hi>
+<hi style="font-size:11pt" xml:space="preserve"> 23(2), 254-267.</hi>
+</bibl>
+<bibl>
+<hi rend="bold">Mertgens, Andreas, Lennart Rouxel, and Johannes Ioannu</hi>. 2024. ‘Datenset zur Phylogenetische Analyse Des Stämme-Diagramms Im 'Compendium Historiae'’. Zenodo, DOI: 
                         <ref target="https://zenodo.org/doi/10.5281/zenodo.12780158">
-                            <hi style="font-size:11pt">10.5281/zenodo.12780158</hi>
-                        </ref>
-                        <hi style="font-size:11pt">.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Mishler, Brent D</hi>. 2005: “The Logic of the Data Matrix in Phylogenetic Analysis”. In: 
+<hi style="font-size:11pt">10.5281/zenodo.12780158</hi>
+</ref>
+<hi style="font-size:11pt">.</hi>
+</bibl>
+<bibl>
+<hi rend="bold">Mishler, Brent D</hi>. 2005: “The Logic of the Data Matrix in Phylogenetic Analysis”. In: 
                         <hi rend="italic" style="font-size:11pt">Parsimony, Phylogeny and Genomics</hi>
-                        <hi style="font-size:11pt">. Hg. von Victor A. Albert. Oxford. S. 57-70.</hi>
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Roelli, Philipp</hi> (Hg.). 2020. 
+<hi style="font-size:11pt">. Hg. von Victor A. Albert. Oxford. S. 57-70.</hi>
+</bibl>
+<bibl>
+<hi rend="bold">Roelli, Philipp</hi> (Hg.). 2020. 
                         <hi rend="italic" style="font-size:11pt">Handbook of Stemmatology: History, Methodology, Digital Approaches</hi>
-                        <hi style="font-size:11pt" xml:space="preserve">. De Gruyter. DOI: </hi>
-                        <ref target="https://doi.org/10.1515/9783110684384">10.1515/9783110684384</ref>
+<hi style="font-size:11pt" xml:space="preserve">. De Gruyter. DOI: </hi>
+<ref target="https://doi.org/10.1515/9783110684384">10.1515/9783110684384</ref>
+</bibl>
+<bibl>
+<hi rend="bold">Roelli, Philippe, Caroline Macé, Marko Kalevi Halonen et al</hi>. 2015. Parvum Lexicon Stemmatologicum. A brief lexicon of stemmatology. Helsinki. https://wiki.helsinki.fi/display/stemmatology
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Roelli, Philippe, Caroline Macé, Marko Kalevi Halonen et al</hi>. 2015. Parvum Lexicon Stemmatologicum. A brief lexicon of stemmatology. Helsinki. https://wiki.helsinki.fi/display/stemmatology
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Sutor, Nadine</hi>. 2024. “Diagramme repräsentieren: Zu einer neuen Editionspraxis”. In: [Book of Abstracts] 
+<bibl>
+<hi rend="bold">Sutor, Nadine</hi>. 2024. “Diagramme repräsentieren: Zu einer neuen Editionspraxis”. In: [Book of Abstracts] 
                         <hi rend="italic" style="font-size:11pt">DHd 2024 - Quo Vadis DH</hi>
-                        <hi style="font-size:11pt" xml:space="preserve">. Hg. von Joëlle Weiss, Thomas Haider und Estelle Bunout. Passau. DOI: </hi>
-                        <ref target="https://doi.org/10.5281/zenodo.10698236">
-                            <hi style="font-size:11pt">10.5281/zenodo.10698236</hi>
-                        </ref>
+<hi style="font-size:11pt" xml:space="preserve">. Hg. von Joëlle Weiss, Thomas Haider und Estelle Bunout. Passau. DOI: </hi>
+<ref target="https://doi.org/10.5281/zenodo.10698236">
+<hi style="font-size:11pt">10.5281/zenodo.10698236</hi>
+</ref>
+</bibl>
+<bibl>
+<hi rend="bold">Swofford, D. L</hi>. 2003. PAUP*. Phylogenetic Analysis Using Parsimony (*and Other Methods). Version 4. Sinauer Associates, Sunderland, Massachusetts.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Swofford, D. L</hi>. 2003. PAUP*. Phylogenetic Analysis Using Parsimony (*and Other Methods). Version 4. Sinauer Associates, Sunderland, Massachusetts.
-                    </bibl>
-                    <bibl>
-                        <hi rend="bold">Worm, Andrea</hi>. 2021. 
+<bibl>
+<hi rend="bold">Worm, Andrea</hi>. 2021. 
                         <hi rend="italic" style="font-size:11pt">Geschichte und Weltordnung. Graphische Modelle von Zeit und Raum in Universalchroniken vor 1500</hi>
-                        <hi style="font-size:11pt">. Berlin. S. 73ff. </hi>
-                    </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+<hi style="font-size:11pt">. Berlin. S. 73ff. </hi>
+</bibl>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

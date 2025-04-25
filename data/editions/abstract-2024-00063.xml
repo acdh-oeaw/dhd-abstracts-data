@@ -1,222 +1,219 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xml:id="REINERT_Matthias_Erkennen_historischer_Datierungen_in_den_Re" xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="full">
-                    <title type="main">Erkennen historischer Datierungen in den Reichstagsakten</title>
-                    <title type="sub"/>
-                </title>
-                <author>
-                    <persName>
-                        <surname>Reinert</surname>
-                        <forename>Matthias</forename>
-                    </persName>
-                    <affiliation>Historische Kommission München, Deutschland</affiliation>
-                    <email>matthias.reinert@hk.badw.de</email>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2023-07-19T16:53:01.811554403</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Digital Humanities Passau</publisher>
-                <address>
-                    <addrLine>Universität Passau</addrLine>
-                    <addrLine>Innstraße 41</addrLine>
-                    <addrLine>D-94032 Passau</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Posterpräsentation</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Mustererkennung</term>
-                    <term>Datierung</term>
-                    <term>Datumserkennung</term>
-                    <term>Heiligentage</term>
-                    <term>Festtage</term>
-                    <term>Reichstagsakten</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Datenerkennung</term>
-                    <term>Text</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor type="bookmark-start" xml:id="id_problem-historische-datierungen-anhand-der-heiligentage"/>Historische Datierungen anhand der Heiligentage
-                    <ptr type="bookmark-end" target="#id_problem-historische-datierungen-anhand-der-heiligentage"/>
-                </head>
-                <p>Die im Heiligen Römischen Reich bis zum Beginn des 16. Jahrhundert vorherrschende Datierungspraxis orientierte sich am christlichen „Kirchenjahr“, an den Sonntagen, den Heiligentagen und Festen. In den digital verfügbaren Bänden der Reichstagsakten finden sie sich - anhand der unten beschriebenen Erkennungsverfahren - vor allem bis 1541, weniger in 1543 und selten in 1556/57 und 1575. Nach der Gregorianischen Kalenderreform 1582 bildeten sich je nach konfessioneller Ausrichtung der Territorien und deren individueller Übernahme der Reform parallele Datierungen alten und neuen Stils.</p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor type="bookmark-start" xml:id="id_gegenstand-reichstagsakten"/>Reichstagsakten
-                    <ptr type="bookmark-end" target="#id_gegenstand-reichstagsakten"/>
-                </head>
-                <p>Die Reichstagsakten sind ein Editionsvorhaben der Historischen Kommission bei der Bayerischen Akademie der Wissenschaften, das seit ihrer Gründung 1858 in mittlerweile 4 Reihen vorangetrieben wurde (vgl. Annas 2021, Wolgast 2008).</p>
-                <p>Seit 2012 werden die Bände der Reihen durch ein Hybrides Editionsverfahren sowohl für den PDF-Satz als auch für eine XML-basierte Online-Fassung vorbereitet (RTA digital).</p>
-                <p>Der Arbeitskorpus besteht aus den XML-Fassungen von</p>
-                <list type="unordered">
-                    <item>Heil, Dietmar (Bearb.) 2014. Der Reichstag zu Konstanz 1507 (Reichstagsakten Mittlere Reihe. Reichstagsakten unter Maximilian I. Band 9), München.</item>
-                    <item>Heil, Dietmar (Bearb.) 2017. Der Reichstag zu Worms 1509 (Reichstagsakten Mittlere Reihe. Reichstagsakten unter Maximilian I. Band 10), München.</item>
-                    <item>Seyboth, Reinhard (Bearb.) 2017. Die Reichstage zu Augsburg 1510 und Trier/Köln 1512 (Reichstagsakten Mittlere Reihe. Reichstagsakten unter Maximilian I. Band 11), München.</item>
-                    <item>Seyboth, Reinhard (Bearb.) 2022. Die Reichstage zu Worms 1513 und Mainz 1517 (Reichstagsakten Mittlere Reihe. Reichstagsakten unter Maximilian I. Band 12), München.</item>
-                    <item>Luttenberger, Albrecht P. (Bearb.) und Christiane Neerfeld (Druckvorbereitung) 2018. Der Reichstag zu Regensburg 1541 (Deutsche Reichstagsakten, Jüngere Reihe. Reichstagsakten unter Kaiser Karl V., XI. Band.), München.</item>
-                    <item>Schweinzer-Burian, Silvia (Bearb.) und Friedrich Edelmayer (Vorarbeiten) 2021. Der Reichstag zu Nürnberg 1543 (Deutsche Reichstagsakten, Jüngere Reihe. Reichstagsakten unter Kaiser Karl V., XIV. Band.), München.</item>
-                    <item>Leeb, Josef (Bearb.) 2013. Der Reichstag zu Regensburg 1556/57 (Deutsche Reichstagsakten. Reichsversammlungen 1556-1662), München.</item>
-                    <item>Neerfeld, Christiane (Bearb.) 2016. Der Kurfürstentag zu Regensburg 1575 (Deutsche Reichstagsakten. Reichsversammlungen 1556-1662), München.</item>
-                </list>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor type="bookmark-start" xml:id="id_methode-lokale-grammatiken"/>Lokale Grammatiken
-                    <ptr type="bookmark-end" target="#id_methode-lokale-grammatiken"/>
-                </head>
-                <p>Der Korpusprozessor Unitex (Paumier 2021) erlaubt die Anwendung von speziellen Wörterbüchern in linguistische Strukturen beschreibenden Graphen. Diese können zudem in Reihe geschaltet werden (vgl. Kap. 12 CasSys in Paumier 2021, Maurel/Friburger 2011), wodurch eine Verarbeitung bestehender XML-Strukturen, dynamische Erkennung von Wörterbuch-Einträgen (Transducer) also auch serielle Anwendungen von Graphen auf einen Korpustext (Kaskaden) möglich sind.</p>
-                <p>Bereits auf der DHd 2014 wurde ein ähnlicher Ansatz (Stotz 2014) für die Erkennung von Entitäten rund um das Verb „emigrieren“ vorgestellt.</p>
-            </div>
-            <div type="div1">
-                <head>
-                    <anchor type="bookmark-start" xml:id="id_vorgehen"/>Vorgehen
-                    <ptr type="bookmark-end" target="#id_vorgehen"/>
-                </head>
-                <list type="unordered">
-                    <item>Bootstrapping der Entitäten (Tage, Heilige) = typische Struktur der Ausdrücke</item>
-                    <item>Aufbau der Wörterbücher, u.a. Extraktion Grotefend.digital</item>
-                    <item>Realtagging der Konstrukte</item>
-                    <item>Auswertung bezogen auf das Korpus</item>
-                    <item>Rewrite als Cascade: – internes Kodieren der Strukturleerstellen (mind. 2 Fassungen der Bootstrap-Graphen) – Ausgabegraph bezieht intern kodierte und extern hinterlegte Entitäten mit ein</item>
-                    <item>Entity Linking to Grotefend.digital</item>
-                </list>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor type="bookmark-start" xml:id="id_bootstrapping-heiligentage-bezeichner"/>1. Bootstrapping Heiligentage &amp; Bezeichner
-                    <ptr type="bookmark-end" target="#id_bootstrapping-heiligentage-bezeichner"/>
-                </head>
-                <p>Relevante Entitäten der Datierungen sind offenbar der Wochentag bzw. die Anzahl der Tage (N) vor oder nach („post“/„ante“[pa]) einem Fixtag. Für die Fixtage kommen Heiligen(namens)tage (SAINT) oder Feiertage (FERIA) in Frage. Diese alle können in verschiedenen Schreibweisen und Sprachen (Latein, Deutsch) vorkommen.</p>
-                <p>
-                    <figure>
-                        <graphic url="Pictures/e59a83d22b051ad5249b8afb678eb8b2.png"/>
-                        <head>Abbildung 1: Graph zur Bestimmung von Wochentagen.
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="full">
+<title type="main">Erkennen historischer Datierungen in den Reichstagsakten</title>
+<title type="sub"/>
+</title>
+<author>
+<persName>
+<surname>Reinert</surname>
+<forename>Matthias</forename>
+</persName>
+<affiliation>Historische Kommission München, Deutschland</affiliation>
+<email>matthias.reinert@hk.badw.de</email>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2023-07-19T16:53:01.811554403</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Digital Humanities Passau</publisher>
+<address>
+<addrLine>Universität Passau</addrLine>
+<addrLine>Innstraße 41</addrLine>
+<addrLine>D-94032 Passau</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/10698327</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from an OASIS Open Document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Posterpräsentation</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Mustererkennung</term>
+<term>Datierung</term>
+<term>Datumserkennung</term>
+<term>Heiligentage</term>
+<term>Festtage</term>
+<term>Reichstagsakten</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Datenerkennung</term>
+<term>Text</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading" type="div1">
+<head>
+<anchor type="bookmark-start" xml:id="id_problem-historische-datierungen-anhand-der-heiligentage"/>Historische Datierungen anhand der Heiligentage
+                    <ptr target="#id_problem-historische-datierungen-anhand-der-heiligentage" type="bookmark-end"/>
+</head>
+<p>Die im Heiligen Römischen Reich bis zum Beginn des 16. Jahrhundert vorherrschende Datierungspraxis orientierte sich am christlichen „Kirchenjahr“, an den Sonntagen, den Heiligentagen und Festen. In den digital verfügbaren Bänden der Reichstagsakten finden sie sich - anhand der unten beschriebenen Erkennungsverfahren - vor allem bis 1541, weniger in 1543 und selten in 1556/57 und 1575. Nach der Gregorianischen Kalenderreform 1582 bildeten sich je nach konfessioneller Ausrichtung der Territorien und deren individueller Übernahme der Reform parallele Datierungen alten und neuen Stils.</p>
+</div>
+<div rend="DH-Heading" type="div1">
+<head>
+<anchor type="bookmark-start" xml:id="id_gegenstand-reichstagsakten"/>Reichstagsakten
+                    <ptr target="#id_gegenstand-reichstagsakten" type="bookmark-end"/>
+</head>
+<p>Die Reichstagsakten sind ein Editionsvorhaben der Historischen Kommission bei der Bayerischen Akademie der Wissenschaften, das seit ihrer Gründung 1858 in mittlerweile 4 Reihen vorangetrieben wurde (vgl. Annas 2021, Wolgast 2008).</p>
+<p>Seit 2012 werden die Bände der Reihen durch ein Hybrides Editionsverfahren sowohl für den PDF-Satz als auch für eine XML-basierte Online-Fassung vorbereitet (RTA digital).</p>
+<p>Der Arbeitskorpus besteht aus den XML-Fassungen von</p>
+<list type="unordered">
+<item>Heil, Dietmar (Bearb.) 2014. Der Reichstag zu Konstanz 1507 (Reichstagsakten Mittlere Reihe. Reichstagsakten unter Maximilian I. Band 9), München.</item>
+<item>Heil, Dietmar (Bearb.) 2017. Der Reichstag zu Worms 1509 (Reichstagsakten Mittlere Reihe. Reichstagsakten unter Maximilian I. Band 10), München.</item>
+<item>Seyboth, Reinhard (Bearb.) 2017. Die Reichstage zu Augsburg 1510 und Trier/Köln 1512 (Reichstagsakten Mittlere Reihe. Reichstagsakten unter Maximilian I. Band 11), München.</item>
+<item>Seyboth, Reinhard (Bearb.) 2022. Die Reichstage zu Worms 1513 und Mainz 1517 (Reichstagsakten Mittlere Reihe. Reichstagsakten unter Maximilian I. Band 12), München.</item>
+<item>Luttenberger, Albrecht P. (Bearb.) und Christiane Neerfeld (Druckvorbereitung) 2018. Der Reichstag zu Regensburg 1541 (Deutsche Reichstagsakten, Jüngere Reihe. Reichstagsakten unter Kaiser Karl V., XI. Band.), München.</item>
+<item>Schweinzer-Burian, Silvia (Bearb.) und Friedrich Edelmayer (Vorarbeiten) 2021. Der Reichstag zu Nürnberg 1543 (Deutsche Reichstagsakten, Jüngere Reihe. Reichstagsakten unter Kaiser Karl V., XIV. Band.), München.</item>
+<item>Leeb, Josef (Bearb.) 2013. Der Reichstag zu Regensburg 1556/57 (Deutsche Reichstagsakten. Reichsversammlungen 1556-1662), München.</item>
+<item>Neerfeld, Christiane (Bearb.) 2016. Der Kurfürstentag zu Regensburg 1575 (Deutsche Reichstagsakten. Reichsversammlungen 1556-1662), München.</item>
+</list>
+</div>
+<div rend="DH-Heading" type="div1">
+<head>
+<anchor type="bookmark-start" xml:id="id_methode-lokale-grammatiken"/>Lokale Grammatiken
+                    <ptr target="#id_methode-lokale-grammatiken" type="bookmark-end"/>
+</head>
+<p>Der Korpusprozessor Unitex (Paumier 2021) erlaubt die Anwendung von speziellen Wörterbüchern in linguistische Strukturen beschreibenden Graphen. Diese können zudem in Reihe geschaltet werden (vgl. Kap. 12 CasSys in Paumier 2021, Maurel/Friburger 2011), wodurch eine Verarbeitung bestehender XML-Strukturen, dynamische Erkennung von Wörterbuch-Einträgen (Transducer) also auch serielle Anwendungen von Graphen auf einen Korpustext (Kaskaden) möglich sind.</p>
+<p>Bereits auf der DHd 2014 wurde ein ähnlicher Ansatz (Stotz 2014) für die Erkennung von Entitäten rund um das Verb „emigrieren“ vorgestellt.</p>
+</div>
+<div type="div1">
+<head>
+<anchor type="bookmark-start" xml:id="id_vorgehen"/>Vorgehen
+                    <ptr target="#id_vorgehen" type="bookmark-end"/>
+</head>
+<list type="unordered">
+<item>Bootstrapping der Entitäten (Tage, Heilige) = typische Struktur der Ausdrücke</item>
+<item>Aufbau der Wörterbücher, u.a. Extraktion Grotefend.digital</item>
+<item>Realtagging der Konstrukte</item>
+<item>Auswertung bezogen auf das Korpus</item>
+<item>Rewrite als Cascade: – internes Kodieren der Strukturleerstellen (mind. 2 Fassungen der Bootstrap-Graphen) – Ausgabegraph bezieht intern kodierte und extern hinterlegte Entitäten mit ein</item>
+<item>Entity Linking to Grotefend.digital</item>
+</list>
+</div>
+<div rend="DH-Heading" type="div1">
+<head>
+<anchor type="bookmark-start" xml:id="id_bootstrapping-heiligentage-bezeichner"/>1. Bootstrapping Heiligentage &amp; Bezeichner
+                    <ptr target="#id_bootstrapping-heiligentage-bezeichner" type="bookmark-end"/>
+</head>
+<p>Relevante Entitäten der Datierungen sind offenbar der Wochentag bzw. die Anzahl der Tage (N) vor oder nach („post“/„ante“[pa]) einem Fixtag. Für die Fixtage kommen Heiligen(namens)tage (SAINT) oder Feiertage (FERIA) in Frage. Diese alle können in verschiedenen Schreibweisen und Sprachen (Latein, Deutsch) vorkommen.</p>
+<p>
+<figure>
+<graphic url="Pictures/e59a83d22b051ad5249b8afb678eb8b2.png"/>
+<head>Abbildung 1: Graph zur Bestimmung von Wochentagen.
                        Ein sog. Bootstrapping versucht zunächst eine grobe Struktur der Art „N pa SAINT“ bzw. „N pa FERIA“ abzubilden und der Graph wird auf die 
                             <hi rend="italic">Ausgabe</hi> der auf die Leerstellen passenden Ausdrücke ausgelegt.</head>
-              
-                    </figure>
-                </p>
-
-                <p>
-                    <figure>
-                        <graphic url="Pictures/02810719bea2106c676dcf91fe83e056.png"/>
-                      <head>Abbildung 2: Graph zur Bestimmung von Heiligentagen.
+</figure>
+</p>
+<p>
+<figure>
+<graphic url="Pictures/02810719bea2106c676dcf91fe83e056.png"/>
+<head>Abbildung 2: Graph zur Bestimmung von Heiligentagen.
                        Die geschweiften Klammern kodieren die gefundenen Matches wiederum als Wörterbucheinträge für die folgenden Transducer-Schritte.</head>
-                    </figure>
-                </p>
-                
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor type="bookmark-start" xml:id="id_aufbau-der-wörterbücher"/>2. Aufbau der Wörterbücher
-                    <ptr type="bookmark-end" target="#id_aufbau-der-wörterbücher"/>
-                </head>
-                <p>Für die im Bootstrap-Graphen gefunden Entitäten-Bezeichner ist ein manueller Kontrollgang nötig um ggf. Fehlerkennungen aus dem Wörterbuch zu entfernen. U.U. wird der Strukturgraph erweitert.</p>
-                <p>Eine weitere Gruppe Wörterbücher für Entitäten läßt sich aus dem Angebot Grotefend.digital (Raunig 2021) sowie (Grotefend 2004) extrahieren: die Bezeichner der Heiligen(-Tage) und Festtage. Diese können ebenso in einem Graph eingebunden werden, um passende Bezeichner an den strukturell vorgegebenen Stellen zu erlauben.</p>
-                <p>Anhand des Korpus der digialisierten RTA wurden Wörterbücher für die Heiligen und Feste, die temporalen Relationen (nächster, kommender etc.) sowie Wochentage in deren unterschiedlichen Schreibformen unter besonderer Kodierung der Formen für Sonntag angelegt.</p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor type="bookmark-start" xml:id="id_auswertung"/>3. Auswertung
-                    <ptr type="bookmark-end" target="#id_auswertung"/>
-                </head>
-                <p>Der bisherige Ansatz hat mithilfe von Bootstrapping eine korpusbezogene Entitätensammlung in den Wörterbüchern hinterlegt. Eine Auswertung der Erkennungsfähigkeit des Graphen bezieht sich auf den Recall (Auffinden der entsprechenden Datierungen) und die Precision (korrektes Tagging der Entitäten).</p>
-                <p>Zum gegenwärtigen Zeitpunkt – ohne Vergleichskorpus – kann lediglich angegeben werden, dass die Entitäten-erkennenden Graphen 935 Wochentage (eine Sonntag-Form) und 721 Heiligennamen fanden; der Ausgabegraph 4438 Datumsangaben mit 1523 Heiligennamen erkannte. Die erkannten Entitäten können in einem iterativen Verfahren wiederum den Wörterbüchern hinzugefügt werden, was den Recall theoretisch erhöhen würde.</p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor type="bookmark-start" xml:id="id_verallgemeinerung-des-strukturgraphen"/>4. Verallgemeinerung des Strukturgraphen
-                    <ptr type="bookmark-end" target="#id_verallgemeinerung-des-strukturgraphen"/>
-                </head>
-                <p>Der Korpusprozessor Unitex bietet die Möglichkeit in einer „Cascade“ mehrere Graphen hintereinander in unterschiedlichen Modi anzuwenden. Der Bootstrap-Graph wird so modifiziert, dass er keine Ausgabe sondern eine interne, wörterbuchanaloge Kodierung vornimmt. Die strukturellen Leerstellen können auch vereinzelt und dementsprechend mehrere Fassungen des Graphen erzeugt werden.</p>
-                <p>
-                    <figure>
-                        <graphic url="Pictures/6b79024b106805f54ae088b6305e31c7.png"/>
-                        <head>Abbildung 3: Ausgabegraph (Transducer). Die Ergebnisse können unter www.reichstagsakten.de/feriafestum überprüft und die Erkennungsgraphen ausprobiert werden.</head>
-                    </figure>
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor type="bookmark-start" xml:id="id_ausblick-erkannte-entitäten-sinnvoll-verlinken"/>5. Ausblick: Erkannte Entitäten sinnvoll verlinken
-                    <ptr type="bookmark-end" target="#id_ausblick-erkannte-entitäten-sinnvoll-verlinken"/>
-                </head>
-                <p>Naheliegend ist einerseits die Umrechnung der erkannten Zahlangaben in einen numerischen Wert. Interessanter erscheint es die besonderes Tagesangaben zunächst auf eine stabile URL zu leiten. Mithilfe der Wörterbücher läßt sich rekonstruieren, welches Lemma einer Variante zugrundeliegt. </p>
-                <p>Eine erste Sichtung ergab, dass Datierungen mit Bezug auf „Jacobi apostoli“ häufigste Heiligennennung darstellten. Beim Versuch, dies auf die Grotefend.digital - Einträge zu beziehen, zeigte sich, dass die dazugehörige Ontologie (Ontologie 2021) Heiligennamen (Jacobus / -i) und Funktion (apostoli) über die Werte in den Aussagen prefLabel (bevorzugte Bennenung) und hasFunction (hat Funktion) abbilden. Für die Bennenung prefLabel = “Jacobi” und den Wert hasFunction = “ap.” gibt es eine beinahe vollständig übereinstimmende Eintrag. Bereits bei Datierungen auf „Viti“ ergibt sich, dass die Ontologie den exakt übereinstimmenden, aber irreführenden Wert prefLabel = “Viti” (Konzept #viti_epcf_viennen) vorhält. Der inhaltlich passende Wert für prefLabel = “Viti, Modesti et Crescentie” wäre aus dem Konzept #vitimodestietcrescentie_m für eine Verlinkung herzunehmen.</p>
-                <p>Die Ableitung eines Datumwerts aus dem Grotefend muss die geografische Verortung der Datierung berücksichtigen: gleiche Heiligennamen können in verschiedenen Orte an unterschiedlichen Tagen gefeiert worden sein. Hier könnte die geografische Angabe des edierten Stückes herangezogen werden, jedoch muss der Ausstellungsort, z.B. auf dem Reichstag, nicht mit dem konfessionellen Bezugsort des Ausstellers übereinstimmen. Dies würde das automatische Berechnen des tatsächlichen Datums noch erschweren, wenn nicht unmöglich machen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading">
-                <head>
-                    <anchor type="bookmark-start" xml:id="id_dank"/>Dank
-                    <ptr type="bookmark-end" target="#id_dank"/>
-                </head>
-                <p>Ich danke Dr. Dietmar Heil für Korrekturen und Hinweise zur Datierungspraxis, die sich in den Reichstagsakten findet.</p>
-            </div>
-        </body>
-        <back>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl><hi rend="bold">Annas, Gabriele.</hi> [2021]. Die „Deutschen Reichstagsakten“: Einleitung, in: Mathias Kluge (Hg.), Mittelalterliche Geschichte. Eine digitale Einführung (2021). 
+</figure>
+</p>
+</div>
+<div rend="DH-Heading" type="div1">
+<head>
+<anchor type="bookmark-start" xml:id="id_aufbau-der-wörterbücher"/>2. Aufbau der Wörterbücher
+                    <ptr target="#id_aufbau-der-wörterbücher" type="bookmark-end"/>
+</head>
+<p>Für die im Bootstrap-Graphen gefunden Entitäten-Bezeichner ist ein manueller Kontrollgang nötig um ggf. Fehlerkennungen aus dem Wörterbuch zu entfernen. U.U. wird der Strukturgraph erweitert.</p>
+<p>Eine weitere Gruppe Wörterbücher für Entitäten läßt sich aus dem Angebot Grotefend.digital (Raunig 2021) sowie (Grotefend 2004) extrahieren: die Bezeichner der Heiligen(-Tage) und Festtage. Diese können ebenso in einem Graph eingebunden werden, um passende Bezeichner an den strukturell vorgegebenen Stellen zu erlauben.</p>
+<p>Anhand des Korpus der digialisierten RTA wurden Wörterbücher für die Heiligen und Feste, die temporalen Relationen (nächster, kommender etc.) sowie Wochentage in deren unterschiedlichen Schreibformen unter besonderer Kodierung der Formen für Sonntag angelegt.</p>
+</div>
+<div rend="DH-Heading" type="div1">
+<head>
+<anchor type="bookmark-start" xml:id="id_auswertung"/>3. Auswertung
+                    <ptr target="#id_auswertung" type="bookmark-end"/>
+</head>
+<p>Der bisherige Ansatz hat mithilfe von Bootstrapping eine korpusbezogene Entitätensammlung in den Wörterbüchern hinterlegt. Eine Auswertung der Erkennungsfähigkeit des Graphen bezieht sich auf den Recall (Auffinden der entsprechenden Datierungen) und die Precision (korrektes Tagging der Entitäten).</p>
+<p>Zum gegenwärtigen Zeitpunkt – ohne Vergleichskorpus – kann lediglich angegeben werden, dass die Entitäten-erkennenden Graphen 935 Wochentage (eine Sonntag-Form) und 721 Heiligennamen fanden; der Ausgabegraph 4438 Datumsangaben mit 1523 Heiligennamen erkannte. Die erkannten Entitäten können in einem iterativen Verfahren wiederum den Wörterbüchern hinzugefügt werden, was den Recall theoretisch erhöhen würde.</p>
+</div>
+<div rend="DH-Heading" type="div1">
+<head>
+<anchor type="bookmark-start" xml:id="id_verallgemeinerung-des-strukturgraphen"/>4. Verallgemeinerung des Strukturgraphen
+                    <ptr target="#id_verallgemeinerung-des-strukturgraphen" type="bookmark-end"/>
+</head>
+<p>Der Korpusprozessor Unitex bietet die Möglichkeit in einer „Cascade“ mehrere Graphen hintereinander in unterschiedlichen Modi anzuwenden. Der Bootstrap-Graph wird so modifiziert, dass er keine Ausgabe sondern eine interne, wörterbuchanaloge Kodierung vornimmt. Die strukturellen Leerstellen können auch vereinzelt und dementsprechend mehrere Fassungen des Graphen erzeugt werden.</p>
+<p>
+<figure>
+<graphic url="Pictures/6b79024b106805f54ae088b6305e31c7.png"/>
+<head>Abbildung 3: Ausgabegraph (Transducer). Die Ergebnisse können unter www.reichstagsakten.de/feriafestum überprüft und die Erkennungsgraphen ausprobiert werden.</head>
+</figure>
+</p>
+</div>
+<div rend="DH-Heading" type="div1">
+<head>
+<anchor type="bookmark-start" xml:id="id_ausblick-erkannte-entitäten-sinnvoll-verlinken"/>5. Ausblick: Erkannte Entitäten sinnvoll verlinken
+                    <ptr target="#id_ausblick-erkannte-entitäten-sinnvoll-verlinken" type="bookmark-end"/>
+</head>
+<p>Naheliegend ist einerseits die Umrechnung der erkannten Zahlangaben in einen numerischen Wert. Interessanter erscheint es die besonderes Tagesangaben zunächst auf eine stabile URL zu leiten. Mithilfe der Wörterbücher läßt sich rekonstruieren, welches Lemma einer Variante zugrundeliegt. </p>
+<p>Eine erste Sichtung ergab, dass Datierungen mit Bezug auf „Jacobi apostoli“ häufigste Heiligennennung darstellten. Beim Versuch, dies auf die Grotefend.digital - Einträge zu beziehen, zeigte sich, dass die dazugehörige Ontologie (Ontologie 2021) Heiligennamen (Jacobus / -i) und Funktion (apostoli) über die Werte in den Aussagen prefLabel (bevorzugte Bennenung) und hasFunction (hat Funktion) abbilden. Für die Bennenung prefLabel = “Jacobi” und den Wert hasFunction = “ap.” gibt es eine beinahe vollständig übereinstimmende Eintrag. Bereits bei Datierungen auf „Viti“ ergibt sich, dass die Ontologie den exakt übereinstimmenden, aber irreführenden Wert prefLabel = “Viti” (Konzept #viti_epcf_viennen) vorhält. Der inhaltlich passende Wert für prefLabel = “Viti, Modesti et Crescentie” wäre aus dem Konzept #vitimodestietcrescentie_m für eine Verlinkung herzunehmen.</p>
+<p>Die Ableitung eines Datumwerts aus dem Grotefend muss die geografische Verortung der Datierung berücksichtigen: gleiche Heiligennamen können in verschiedenen Orte an unterschiedlichen Tagen gefeiert worden sein. Hier könnte die geografische Angabe des edierten Stückes herangezogen werden, jedoch muss der Ausstellungsort, z.B. auf dem Reichstag, nicht mit dem konfessionellen Bezugsort des Ausstellers übereinstimmen. Dies würde das automatische Berechnen des tatsächlichen Datums noch erschweren, wenn nicht unmöglich machen.</p>
+</div>
+<div rend="DH-Heading" type="div1">
+<head>
+<anchor type="bookmark-start" xml:id="id_dank"/>Dank
+                    <ptr target="#id_dank" type="bookmark-end"/>
+</head>
+<p>Ich danke Dr. Dietmar Heil für Korrekturen und Hinweise zur Datierungspraxis, die sich in den Reichstagsakten findet.</p>
+</div>
+</body>
+<back>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl><hi rend="bold">Annas, Gabriele.</hi> [2021]. Die „Deutschen Reichstagsakten“: Einleitung, in: Mathias Kluge (Hg.), Mittelalterliche Geschichte. Eine digitale Einführung (2021). 
                         <ptr target="https://mittelalterliche-geschichte.de/annas-gabriele-1"/>
-                    </bibl>
-                    <bibl><hi rend="bold">Grotefend, Hermann.</hi> 1898. Zeitrechnung des Deutschen Mittelalters und der Neuzeit. 2 Bde., Hannover 1891-1898. nach der HTML-Version von Horst Ruth. 2004. 
+</bibl>
+<bibl><hi rend="bold">Grotefend, Hermann.</hi> 1898. Zeitrechnung des Deutschen Mittelalters und der Neuzeit. 2 Bde., Hannover 1891-1898. nach der HTML-Version von Horst Ruth. 2004. 
                         <ptr target="http://bilder.manuscripta-mediaevalia.de/gaeste//grotefend/grotefend.htm"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Maurel, Denis, Nathalie Friburger, Jean-Yves Antoine, Iris Eshkol-Taravella, und Damien Nouvel.</hi> 2011. „Cascades de transducteurs autour de la reconnaissance des entités nommées [CasEN: a transducer cascade to recognize French Named Entities]“. Traitement Automatique des Langues 52 (1): 69–96.</bibl>
-                    <bibl><hi rend="bold">Ontologie zu „Grotefend.digital. Kalender, Feste, Heilige“.</hi> [2021] 
+<bibl><hi rend="bold">Maurel, Denis, Nathalie Friburger, Jean-Yves Antoine, Iris Eshkol-Taravella, und Damien Nouvel.</hi> 2011. „Cascades de transducteurs autour de la reconnaissance des entités nommées [CasEN: a transducer cascade to recognize French Named Entities]“. Traitement Automatique des Langues 52 (1): 69–96.</bibl>
+<bibl><hi rend="bold">Ontologie zu „Grotefend.digital. Kalender, Feste, Heilige“.</hi> [2021] 
                         <ptr target="https://gams.uni-graz.at/o:grotefend.ontology."/>
-                    </bibl>
-                    <bibl><hi rend="bold">Paumier, Sébastien (with the collaboration of Wolfgang Flury, Franz Guenthner, Eric Laporte, Friederike Malchok, Clemens Marschner, Claude Martineau, Cristian Martínez, Denis Maurel, Sebastian Nagel, Alexis Neme, Maxime Petit, Johannes Stiehler, Gilles Vollant).</hi> 2021. “Unitex 3.3. User manual”, Marne-la-Vallée. 
+</bibl>
+<bibl><hi rend="bold">Paumier, Sébastien (with the collaboration of Wolfgang Flury, Franz Guenthner, Eric Laporte, Friederike Malchok, Clemens Marschner, Claude Martineau, Cristian Martínez, Denis Maurel, Sebastian Nagel, Alexis Neme, Maxime Petit, Johannes Stiehler, Gilles Vollant).</hi> 2021. “Unitex 3.3. User manual”, Marne-la-Vallée. 
                         <ptr target="https://unitexgramlab.org/releases/3.3/man/Unitex-GramLab-3.3-usermanual-en.pdf"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Raunig, Elisabeth.</hi> 2021. Grotefend - digital : eine digitale Kalenderanwendung für liturgische Kalender auf Basis einer RDF-Repräsentation von Grotefends Heiligenverzeichnis und Kalendersammlung. 
+<bibl><hi rend="bold">Raunig, Elisabeth.</hi> 2021. Grotefend - digital : eine digitale Kalenderanwendung für liturgische Kalender auf Basis einer RDF-Repräsentation von Grotefends Heiligenverzeichnis und Kalendersammlung. 
                         <ptr target="https://unipub.uni-graz.at/urn:nbn:at:at-ubg:1-161584"/>.
                     </bibl>
-                    <bibl><hi rend="bold">Reichstagsakten digital.</hi> 2012ff. 
+<bibl><hi rend="bold">Reichstagsakten digital.</hi> 2012ff. 
                         <ref target="https://www.reichstagsakten.de/">https://www.reichstagsakten.de</ref>.
                     </bibl>
-                    <bibl><hi rend="bold">Stotz, Sophia, Valentina Stuß.</hi> 2014. “Relationsextraktion mit lokalen Grammatiken am Beispiel der Relation „emigrieren“”. Vortrag bei 
+<bibl><hi rend="bold">Stotz, Sophia, Valentina Stuß.</hi> 2014. “Relationsextraktion mit lokalen Grammatiken am Beispiel der Relation „emigrieren“”. Vortrag bei 
                         <hi rend="italic">1. Jahrestagung der Digital Humanities im deutschsprachigen Raum (DHd 2014)</hi>, Universität Passau, 25.-28. März 2014.
                     </bibl>
-                    <bibl><hi rend="bold">Wolgast, Eike.</hi> 2008. Deutsche Reichstagsakten, in: Lothar Gall (Hg.), „…für deutsche Geschichts- und Quellenforschung“. 150 Jahre Historische Kommission bei der Bayerischen Akademie der Wissenschaften, München 2008, S. 79-120. 
+<bibl><hi rend="bold">Wolgast, Eike.</hi> 2008. Deutsche Reichstagsakten, in: Lothar Gall (Hg.), „…für deutsche Geschichts- und Quellenforschung“. 150 Jahre Historische Kommission bei der Bayerischen Akademie der Wissenschaften, München 2008, S. 79-120. 
                         <ptr target="https://www.historischekommission-muenchen.de/fileadmin/user_upload/dateien/abteilungen/Deutsche_Reichstagsakten/RTA_Mittlere_Reihe/E._Wolgast_Dt._RTA_S.79_120.pdf"/>
-                    </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</bibl>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

@@ -1,235 +1,231 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="JURST_G_RLACH_Denise_Normdaten_geben_und_nehmen__oder__Frag_">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Normdaten geben und nehmen, oder: Frag nicht, was die GND für Dich tun kann, sondern was Du für die GND tun kannst</title>
-                <author>
-                    <persName>
-                        <surname>Jurst-Görlach</surname>
-                        <forename>Denise</forename>
-                    </persName>
-                    <affiliation>Goethe-Universität Frankfurt, Deutschland</affiliation>
-                    <email>jurst-goerlach@em.uni-frankfurt.de</email>
-                    <idno type="ORCID">0000-0002-7130-1121</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Kollatz</surname>
-                        <forename>Thomas</forename>
-                    </persName>
-                    <affiliation>Akademie der Wissenschaften und der Literatur | Mainz, Deutschland</affiliation>
-                    <email>thomas.kollatz@adwmainz.de</email>
-                    <idno type="ORCID">0000-0003-1904-1841</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Jarosch</surname>
-                        <forename>Julian</forename>
-                    </persName>
-                    <affiliation>Akademie der Wissenschaften und der Literatur | Mainz, Deutschland</affiliation>
-                    <email>Julian.Jarosch@adwmainz.de</email>
-                    <idno type="ORCID">0000-0001-8483-8123</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-12-02T08:37:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Poster</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Normdaten</term>
-                    <term>Mapping</term>
-                    <term>Enrichment</term>
-                    <term>GND</term>
-                    <term>Wikidata</term>
-                    <term>Workflow</term>
-                    <term>Korrespondenzen</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Teilen</term>
-                    <term>Netzwerkanalyse</term>
-                    <term>Identifizierung</term>
-                    <term>Metadaten</term>
-                    <term>benannte Entitäten (named entities)</term>
-                    <term>Personen</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ausgangslage</head>
-                <p style="text-align: left; ">Waren Normdaten ursprünglich ein von und für bibliothekarische Erschließung entwickeltes Werkzeug, sind sie heute aus einem breiten Feld von digitalen Forschungs- und Editionsprojekten nicht mehr wegzudenken. Die eindeutige Referenzierbarkeit von Personen, Körperschaften und Orten spielt sowohl für die Erfassung und Auswertung innerhalb des einzelnen Projekts eine wichtige Rolle als auch für die Verknüpfung mit anderen Projekten und damit ihrer Nachnutzbarkeit (Stadler, 2012). Auch forschungsfördernde Institutionen wie die DFG legen zunehmend Wert auf einen “fachspezifisch adäquate[n] Umgang mit Forschungsdaten”<ref n="1" target="ftn1"/>. Dies umfasst im geisteswissenschaftlichen Bereich nicht zuletzt die Anbindung der im Projekt erhobenen Daten an kontrollierte Vokabularien, also Normdateien.
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="JURST_G_RLACH_Denise_Normdaten_geben_und_nehmen__oder__Frag_" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Normdaten geben und nehmen, oder: Frag nicht, was die GND für Dich tun kann, sondern was Du für die GND tun kannst</title>
+<author>
+<persName>
+<surname>Jurst-Görlach</surname>
+<forename>Denise</forename>
+</persName>
+<affiliation>Goethe-Universität Frankfurt, Deutschland</affiliation>
+<email>jurst-goerlach@em.uni-frankfurt.de</email>
+<idno type="ORCID">0000-0002-7130-1121</idno>
+</author>
+<author>
+<persName>
+<surname>Kollatz</surname>
+<forename>Thomas</forename>
+</persName>
+<affiliation>Akademie der Wissenschaften und der Literatur | Mainz, Deutschland</affiliation>
+<email>thomas.kollatz@adwmainz.de</email>
+<idno type="ORCID">0000-0003-1904-1841</idno>
+</author>
+<author>
+<persName>
+<surname>Jarosch</surname>
+<forename>Julian</forename>
+</persName>
+<affiliation>Akademie der Wissenschaften und der Literatur | Mainz, Deutschland</affiliation>
+<email>Julian.Jarosch@adwmainz.de</email>
+<idno type="ORCID">0000-0001-8483-8123</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-12-02T08:37:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943114</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Poster</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Normdaten</term>
+<term>Mapping</term>
+<term>Enrichment</term>
+<term>GND</term>
+<term>Wikidata</term>
+<term>Workflow</term>
+<term>Korrespondenzen</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Teilen</term>
+<term>Netzwerkanalyse</term>
+<term>Identifizierung</term>
+<term>Metadaten</term>
+<term>benannte Entitäten (named entities)</term>
+<term>Personen</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Ausgangslage</head>
+<p style="text-align: left; ">Waren Normdaten ursprünglich ein von und für bibliothekarische Erschließung entwickeltes Werkzeug, sind sie heute aus einem breiten Feld von digitalen Forschungs- und Editionsprojekten nicht mehr wegzudenken. Die eindeutige Referenzierbarkeit von Personen, Körperschaften und Orten spielt sowohl für die Erfassung und Auswertung innerhalb des einzelnen Projekts eine wichtige Rolle als auch für die Verknüpfung mit anderen Projekten und damit ihrer Nachnutzbarkeit (Stadler, 2012). Auch forschungsfördernde Institutionen wie die DFG legen zunehmend Wert auf einen “fachspezifisch adäquate[n] Umgang mit Forschungsdaten”<ref n="1" target="ftn1"/>. Dies umfasst im geisteswissenschaftlichen Bereich nicht zuletzt die Anbindung der im Projekt erhobenen Daten an kontrollierte Vokabularien, also Normdateien.
                 </p>
-                <p style="text-align: left; ">Während Projekte zunehmend versuchen, ihre Daten mit den Diensten von GND, VIAF, GeoNames oder TGN abzugleichen, stoßen sie immer wieder an die Grenzen dieser Angebote, die domänenspezifische ebenso wie historische Gründe haben (Busch und Müller, 2023). So waren etwa die Personeneinträge der GND ursprünglich an mindestens eine selbständige Publikation dieser Person im deutschsprachigen Raum gebunden, was die Aufnahme marginalisierter Personen<ref n="2" target="ftn2"/> und bestimmter Berufsgruppen in der Vergangenheit signifikant unwahrscheinlicher machte. Auch wurden und werden Datensätze von Personen des 19. und 20. Jahrhunderts, die nicht in der ‘ersten Reihe’ der öffentlichen Aufmerksamkeit stehen, häufig nicht aktualisiert, so dass wesentliche Angaben zu ihnen (etwa das Sterbedatum) fehlen. Dies muss für die eindeutige Referenzierbarkeit einer Person nicht zwangsläufig ein Problem darstellen, allerdings werden Normdateien in Projekten häufig auch zur Anreicherung eigener Daten – etwa in Registern – genutzt, in denen das Fehlen solch grundlegender Informationen mindestens zu Irritationen, wenn nicht zu groben Irrtümern und Fehlinterpretationen führt.
+<p style="text-align: left; ">Während Projekte zunehmend versuchen, ihre Daten mit den Diensten von GND, VIAF, GeoNames oder TGN abzugleichen, stoßen sie immer wieder an die Grenzen dieser Angebote, die domänenspezifische ebenso wie historische Gründe haben (Busch und Müller, 2023). So waren etwa die Personeneinträge der GND ursprünglich an mindestens eine selbständige Publikation dieser Person im deutschsprachigen Raum gebunden, was die Aufnahme marginalisierter Personen<ref n="2" target="ftn2"/> und bestimmter Berufsgruppen in der Vergangenheit signifikant unwahrscheinlicher machte. Auch wurden und werden Datensätze von Personen des 19. und 20. Jahrhunderts, die nicht in der ‘ersten Reihe’ der öffentlichen Aufmerksamkeit stehen, häufig nicht aktualisiert, so dass wesentliche Angaben zu ihnen (etwa das Sterbedatum) fehlen. Dies muss für die eindeutige Referenzierbarkeit einer Person nicht zwangsläufig ein Problem darstellen, allerdings werden Normdateien in Projekten häufig auch zur Anreicherung eigener Daten – etwa in Registern – genutzt, in denen das Fehlen solch grundlegender Informationen mindestens zu Irritationen, wenn nicht zu groben Irrtümern und Fehlinterpretationen führt.
                 </p>
-                <p style="text-align: left; ">Schon früh wurde daher von Forschenden der Bedarf formuliert, auch eigene Ergebnisse in die großen Normdatendienste einfließen zu lassen. Spätestens mit der Propagierung des Semantic Web wurde daraus die Forderung, die “Holschuld muss in eine Bringschuld umgewandelt werden, der Fetch- in einen Pushdienst” (Kamzelak, 2016, S. 434). Die Umsetzung dieses – durchaus als berechtigt erkannten – Wunsches scheiterte im Fall GND bislang jedoch weitestgehend an den hierarchischen Strukturen und der personellen Ausstattung der beteiligten Institutionen.</p>
-                <p style="text-align: left; ">Während aktuell ein neuer Anlauf in Sachen GND-Agentur unter dem Dach des NFDI-Konsortiums Text+ läuft (Kett et al., 2022), hat die wissenschaftliche Community einstweilen andere Wege und Möglichkeiten gesucht, ihre Daten strukturiert, nachnutzbar und interoperabel zu gestalten, wobei die freie Wissensdatenbank Wikidata eine zunehmend zentrale Rolle spielt.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Der BKD-Workflow</head>
-                <p style="text-align: left; ">Das Poster soll ausgehend vom Editionsprojekt 
+<p style="text-align: left; ">Schon früh wurde daher von Forschenden der Bedarf formuliert, auch eigene Ergebnisse in die großen Normdatendienste einfließen zu lassen. Spätestens mit der Propagierung des Semantic Web wurde daraus die Forderung, die “Holschuld muss in eine Bringschuld umgewandelt werden, der Fetch- in einen Pushdienst” (Kamzelak, 2016, S. 434). Die Umsetzung dieses – durchaus als berechtigt erkannten – Wunsches scheiterte im Fall GND bislang jedoch weitestgehend an den hierarchischen Strukturen und der personellen Ausstattung der beteiligten Institutionen.</p>
+<p style="text-align: left; ">Während aktuell ein neuer Anlauf in Sachen GND-Agentur unter dem Dach des NFDI-Konsortiums Text+ läuft (Kett et al., 2022), hat die wissenschaftliche Community einstweilen andere Wege und Möglichkeiten gesucht, ihre Daten strukturiert, nachnutzbar und interoperabel zu gestalten, wobei die freie Wissensdatenbank Wikidata eine zunehmend zentrale Rolle spielt.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Der BKD-Workflow</head>
+<p style="text-align: left; ">Das Poster soll ausgehend vom Editionsprojekt 
                     <hi rend="italic">Buber-Korrespondenzen Digital</hi> (BKD)<ref n="3" target="ftn3"/> und am Beispiel von Personennormdaten zeigen, wie Workflows im Umgang mit Normdaten entwickelt werden können, die sowohl die konkreten und oft akuten Bedarfe des Projektes im Blick haben als auch die Möglichkeit einer (nachträglichen) Aufbereitung und nachhaltigen Integration der qualitativen Forschungsdaten in die GND.
                 </p>
-                <p style="text-align: left; ">Das Quellenkorpus von BKD umfasst mehr als 43.000 Briefe von und an den bedeutenden Religionsphilosophen Martin Buber (1878–1965), die in rund 70 Jahren und mindestens 16 Sprachen gewechselt wurden. Im Zuge der Projektarbeit wurden bislang etwa 7.000 Korrespondenzpartner:innen und über 600 weitere individualisierte Personen (Erwähnungen) identifiziert. Diese werden zunächst mit einem projektinternen Identifier versehen, in einem nächsten Schritt – sofern möglich – mit einem GND- und Wikidata-Eintrag verknüpft. Hierfür kommen neben der manuellen Eingabe zwei Werkzeuge zum Einsatz: Zum einen nutzen wir für die Datenharmonisierung den Reconciliation-Service von OpenRefine<ref n="4" target="ftn4"/>, zum anderen führen wir Datenanreicherung – konkret die wechselseitige Ergänzung von GND- und Wikidata-Identifikatoren in unserer Personenliste – mit dem Datenanalyse-Tool KNIME<ref n="5" target="ftn5"/> durch. Für den im Projekt häufigen Fall, dass eine Person nicht oder mit nur rudimentären Angaben in der GND vorhanden ist, sich über Recherchen jedoch ausreichend gesicherte Informationen ermitteln lassen, werden diese in bestehenden oder neu angelegten Wikidata-Einträgen gesammelt und belegt. Über die Q-ID der Wikidata lassen sich die – vom eigenen Projekt oder anderen Akteur:innen – erhobenen Informationen schließlich vielfältig weiternutzen: einmal für das Enrichment eigener Registerdaten – im Poster exemplarisch anhand der für Netzwerkanalysen relevanten Kategorie 
+<p style="text-align: left; ">Das Quellenkorpus von BKD umfasst mehr als 43.000 Briefe von und an den bedeutenden Religionsphilosophen Martin Buber (1878–1965), die in rund 70 Jahren und mindestens 16 Sprachen gewechselt wurden. Im Zuge der Projektarbeit wurden bislang etwa 7.000 Korrespondenzpartner:innen und über 600 weitere individualisierte Personen (Erwähnungen) identifiziert. Diese werden zunächst mit einem projektinternen Identifier versehen, in einem nächsten Schritt – sofern möglich – mit einem GND- und Wikidata-Eintrag verknüpft. Hierfür kommen neben der manuellen Eingabe zwei Werkzeuge zum Einsatz: Zum einen nutzen wir für die Datenharmonisierung den Reconciliation-Service von OpenRefine<ref n="4" target="ftn4"/>, zum anderen führen wir Datenanreicherung – konkret die wechselseitige Ergänzung von GND- und Wikidata-Identifikatoren in unserer Personenliste – mit dem Datenanalyse-Tool KNIME<ref n="5" target="ftn5"/> durch. Für den im Projekt häufigen Fall, dass eine Person nicht oder mit nur rudimentären Angaben in der GND vorhanden ist, sich über Recherchen jedoch ausreichend gesicherte Informationen ermitteln lassen, werden diese in bestehenden oder neu angelegten Wikidata-Einträgen gesammelt und belegt. Über die Q-ID der Wikidata lassen sich die – vom eigenen Projekt oder anderen Akteur:innen – erhobenen Informationen schließlich vielfältig weiternutzen: einmal für das Enrichment eigener Registerdaten – im Poster exemplarisch anhand der für Netzwerkanalysen relevanten Kategorie 
                     <hi rend="italic">Gender</hi> demonstriert –, in Zukunft aber auch für die Extraktion und Aufbereitung der Daten im Austausch- und Speicherformat entityXML<ref n="6" target="ftn6"/>, das eigens dafür konzipiert wurde, der Text+ GND-Agentur die effiziente Einarbeitung von wissenschaftlich gesicherten Daten in die GND zu ermöglichen.
                 </p>
-                <p style="text-align: left; ">Ob und inwiefern dieser Workflow den unterschiedlichsten Bedarfen von Edition und Forschung (projektintern und darüber hinaus) gerecht wird und wo es noch Ver- und Nachbesserungsbedarf gibt, erprobt das Projekt nicht nur in der täglichen Editionsarbeit, sondern diskutiert es auch mit der Fachcommunity, zuletzt im Rahmen zweier Workshops zu “Potentialen von Normdaten in den Jüdischen Studien” (Frankfurt, 30.09.–01.10.2024)<ref n="7" target="ftn7"/> sowie zum Thema “Briefe von Frauen” und wie diese erforscht werden können (Darmstadt, 12.–13.11.2024)<ref n="8" target="ftn8"/>. Die Ergebnisse dieser Workshops bestätigen die gewählten Vorgehensweisen als zukunftsträchtig und für zahlreiche Projekte anschlussfähig.
+<p style="text-align: left; ">Ob und inwiefern dieser Workflow den unterschiedlichsten Bedarfen von Edition und Forschung (projektintern und darüber hinaus) gerecht wird und wo es noch Ver- und Nachbesserungsbedarf gibt, erprobt das Projekt nicht nur in der täglichen Editionsarbeit, sondern diskutiert es auch mit der Fachcommunity, zuletzt im Rahmen zweier Workshops zu “Potentialen von Normdaten in den Jüdischen Studien” (Frankfurt, 30.09.–01.10.2024)<ref n="7" target="ftn7"/> sowie zum Thema “Briefe von Frauen” und wie diese erforscht werden können (Darmstadt, 12.–13.11.2024)<ref n="8" target="ftn8"/>. Die Ergebnisse dieser Workshops bestätigen die gewählten Vorgehensweisen als zukunftsträchtig und für zahlreiche Projekte anschlussfähig.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ausblick</head>
-                <p style="text-align: left; ">Aus den Erfahrungen unserer Projektarbeit ergeben sich die – potenziell projektübergreifend übertragbaren – Prinzipien, strukturierte Forschungsdaten erstens sofort in Wikidata ohne bürokratische Einstiegshürde zu veröffentlichen und diese zweitens mit Blick auf die langfristige Verfügbarkeit in das Format entityXML zu transformieren. Dies zielt darauf ab, an Normdateien anschlussfähige Forschungsdaten parallel auf mehreren Wegen offen zur Verfügung zu stellen. Wir hoffen, so nicht nur GND-Daten in unser Projekt einfließen zu lassen, sondern auch einen Beitrag zu leisten, qualitativ hochwertige fachwissenschaftliche Recherchen in die GND zurückfließen zu lassen.</p>
-            </div>
-        </body>
-        <back>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Ausblick</head>
+<p style="text-align: left; ">Aus den Erfahrungen unserer Projektarbeit ergeben sich die – potenziell projektübergreifend übertragbaren – Prinzipien, strukturierte Forschungsdaten erstens sofort in Wikidata ohne bürokratische Einstiegshürde zu veröffentlichen und diese zweitens mit Blick auf die langfristige Verfügbarkeit in das Format entityXML zu transformieren. Dies zielt darauf ab, an Normdateien anschlussfähige Forschungsdaten parallel auf mehreren Wegen offen zur Verfügung zu stellen. Wir hoffen, so nicht nur GND-Daten in unser Projekt einfließen zu lassen, sondern auch einen Beitrag zu leisten, qualitativ hochwertige fachwissenschaftliche Recherchen in die GND zurückfließen zu lassen.</p>
+</div>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
-                        
-                            <ref target="https://www.dfg.de/de/grundlagen-themen/grundlagen-und-prinzipien-der-foerderung/forschungsdaten">https://www.dfg.de/de/grundlagen-themen/grundlagen-und-prinzipien-der-foerderung/forschungsdaten</ref> (29.11.2024).
+<note n="1" rend="footnote text" xml:id="ftn1">
+<ref target="https://www.dfg.de/de/grundlagen-themen/grundlagen-und-prinzipien-der-foerderung/forschungsdaten">https://www.dfg.de/de/grundlagen-themen/grundlagen-und-prinzipien-der-foerderung/forschungsdaten</ref> (29.11.2024).
                         
                     </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
+<note n="2" rend="footnote text" xml:id="ftn2">
                          Neben einem signifikanten Gender-Data-Gap (Juen, 2021) stößt unser Projekt zudem auf die Marginalisierung von Jüd:innen, Emigrant:innen sowie Personen osteuropäischer Herkunft.
                     </note>
-<note rend="footnote text" xml:id="ftn3" n="3">
+<note n="3" rend="footnote text" xml:id="ftn3">
                          Informationen zum Projekt, Beteiligten, Laufzeit etc.: 
                             <ref target="https://www.adwmainz.de/projekte/buber-korrespondenzen-digital">
-                                <hi rend="color(1155CC)">https://www.adwmainz.de/projekte/buber-korrespondenzen-digital</hi>
-                            </ref> (29.11.2024); 
+<hi rend="color(1155CC)">https://www.adwmainz.de/projekte/buber-korrespondenzen-digital</hi>
+</ref> (29.11.2024); 
                             <lb/>Repositorium: 
                             <ref target="https://gitlab.rlp.net/adwmainz/digicademy/bkd/correspondences">
-                                <hi rend="color(1155CC)">https://gitlab.rlp.net/adwmainz/digicademy/bkd/correspondences</hi>
-                            </ref> (29.11.2024).
+<hi rend="color(1155CC)">https://gitlab.rlp.net/adwmainz/digicademy/bkd/correspondences</hi>
+</ref> (29.11.2024).
                         
                     </note>
-<note rend="footnote text" xml:id="ftn4" n="4">
-                        
-                            <ref target="https://openrefine.org/">
-                                <hi rend="color(1155CC)">https://openrefine.org/</hi>
-                            </ref> (29.11.2024).
+<note n="4" rend="footnote text" xml:id="ftn4">
+<ref target="https://openrefine.org/">
+<hi rend="color(1155CC)">https://openrefine.org/</hi>
+</ref> (29.11.2024).
                         
                     </note>
-<note rend="footnote text" xml:id="ftn5" n="5">
-                        
-                            <ref target="https://www.knime.com/">
-                                <hi rend="color(1155CC)">https://www.knime.com/</hi>
-                            </ref> (29.11.2024); siehe auch: Berthold, Michael R., u. a. „KNIME – the Konstanz Information Miner: Version 2.0 and Beyond“. 
+<note n="5" rend="footnote text" xml:id="ftn5">
+<ref target="https://www.knime.com/">
+<hi rend="color(1155CC)">https://www.knime.com/</hi>
+</ref> (29.11.2024); siehe auch: Berthold, Michael R., u. a. „KNIME – the Konstanz Information Miner: Version 2.0 and Beyond“. 
                             <hi rend="italic">SIGKDD Explor. Newsl.</hi>, Bd. 11, Nr. 1, November 2009, S. 26–31,
                             <ref target="https://doi.org/10.1145/1656274.1656280">
-                                <hi rend="color(1155CC)">https://doi.org/10.1145/1656274.1656280</hi>
-                            </ref> (29.11.2024).
+<hi rend="color(1155CC)">https://doi.org/10.1145/1656274.1656280</hi>
+</ref> (29.11.2024).
                         
                     </note>
-<note rend="footnote text" xml:id="ftn6" n="6">
-                        
-                            <ref target="https://entities.pages.gwdg.de/entityxml">
-                                <hi rend="color(1155CC)">https://entities.pages.gwdg.de/entityxml</hi>
-                            </ref> (29.11.2024).
+<note n="6" rend="footnote text" xml:id="ftn6">
+<ref target="https://entities.pages.gwdg.de/entityxml">
+<hi rend="color(1155CC)">https://entities.pages.gwdg.de/entityxml</hi>
+</ref> (29.11.2024).
                         
                     </note>
-<note rend="footnote text" xml:id="ftn7" n="7">
+<note n="7" rend="footnote text" xml:id="ftn7">
                          Organisation gemeinsam mit dem 
                             <hi rend="italic">FID Jüdische Studien</hi>, Beitrag zum Normdaten-Workflow in BKD.
                         
                     </note>
-<note rend="footnote text" xml:id="ftn8" n="8">
+<note n="8" rend="footnote text" xml:id="ftn8">
                          Beiträge von Heike Breitenbach &amp; Denise Jurst-Görlach: 
                             <hi rend="italic">"Unsere Gedanken kreisen immer um die Lage bei Euch". Frauen und ihre Briefe im Umfeld von Buber-Korrespondenzen Digital</hi>; Thomas Kollatz: 
                             <hi rend="italic">Kodierungsvorschlag zur projektübergreifenden Auszeichnung von Frauenbriefen</hi>. Weitere Informationen zur Tagung: 
                             <ref target="https://www.digitalhumanities.tu-darmstadt.de/workshop-frauenbriefe">
-                                <hi rend="color(1155CC)">https://www.digitalhumanities.tu-darmstadt.de/workshop-frauenbriefe</hi>
-                            </ref> (29.11.2024).
+<hi rend="color(1155CC)">https://www.digitalhumanities.tu-darmstadt.de/workshop-frauenbriefe</hi>
+</ref> (29.11.2024).
                         
                     </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl style="text-align: left; "><hi rend="bold">Berthold, Michael R., u. a.</hi> „KNIME – the Konstanz Information Miner: Version 2.0 and Beyond“. 
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl style="text-align: left; "><hi rend="bold">Berthold, Michael R., u. a.</hi> „KNIME – the Konstanz Information Miner: Version 2.0 and Beyond“. 
                         <hi rend="italic">SIGKDD Explor. Newsl.</hi>, Bd. 11, Nr. 1, November 2009, S. 26–31,
                         <ref target="https://doi.org/10.1145/1656274.1656280">
-                            <hi rend="color(1155CC)" style="font-size:10pt">https://doi.org/10.1145/1656274.1656280</hi>
-                        </ref>.
+<hi rend="color(1155CC)" style="font-size:10pt">https://doi.org/10.1145/1656274.1656280</hi>
+</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Busch, Nathanael, und Diana Müller</hi>, „Normdaten in den Geisteswissenschaften. Frequently Asked Questions“. 
+<bibl style="text-align: left; "><hi rend="bold">Busch, Nathanael, und Diana Müller</hi>, „Normdaten in den Geisteswissenschaften. Frequently Asked Questions“. 
                         <hi rend="italic">Zeitschrift für Literaturwissenschaft und Linguistik</hi>, Bd. 53, Nr. 3, September 2023, S. 781–796. 
                         <ref target="https://doi.org/10.1007/s41244-023-00295-1">
-                            <hi rend="color(1155CC)">https://doi.org/10.1007/s41244-023-00295-1</hi>
-                        </ref>.
+<hi rend="color(1155CC)">https://doi.org/10.1007/s41244-023-00295-1</hi>
+</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Juen, Sara</hi>, „Feminismus, Algorithmen, Gender-Data-Gap und was das alles mit Bibliotheks- und Informationswissenschaft zu tun hat“. 
+<bibl style="text-align: left; "><hi rend="bold">Juen, Sara</hi>, „Feminismus, Algorithmen, Gender-Data-Gap und was das alles mit Bibliotheks- und Informationswissenschaft zu tun hat“. 
                         <hi rend="italic">Library Ideas</hi>, 39, 2021. 
                         <ref target="https://doi.org/10.18452/23448">
-                            <hi rend="color(1155CC)">https://doi.org/10.18452/23448</hi>
-                        </ref>.
+<hi rend="color(1155CC)">https://doi.org/10.18452/23448</hi>
+</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Kamzelak, Roland S.</hi>, “Digitale Editionen im semantic web. Chancen und Grenzen von Normdaten, FRBR und RDF”, in: Richts, Christina und Stadler, Peter (Hrsg.), 
+<bibl style="text-align: left; "><hi rend="bold">Kamzelak, Roland S.</hi>, “Digitale Editionen im semantic web. Chancen und Grenzen von Normdaten, FRBR und RDF”, in: Richts, Christina und Stadler, Peter (Hrsg.), 
                         <hi rend="italic">„Ei, dem alten Herrn zoll’ ich Achtung gern“. Festschrift für Joachim Veit zum 60. Geburtstag</hi>. München 2016, S. 423–435.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Kett, Jürgen, u. a.</hi>, „Text+ und die GND – Community-Hub und Wissensgraph“. Z
+<bibl style="text-align: left; "><hi rend="bold">Kett, Jürgen, u. a.</hi>, „Text+ und die GND – Community-Hub und Wissensgraph“. Z
                         <hi rend="italic">eitschrift für Bibliothekswesen und Bibliographie</hi>, Bd. 69, Nr. 1–2, April 2022, S. 37–47. 
                         <ref target="https://doi.org/10.3196/1864295020691262">
-                            <hi rend="color(1155CC)">https://doi.org/10.3196/1864295020691262</hi>
-                        </ref>.
+<hi rend="color(1155CC)">https://doi.org/10.3196/1864295020691262</hi>
+</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Stadler, Peter</hi>, „Normdateien in der Edition“. 
+<bibl style="text-align: left; "><hi rend="bold">Stadler, Peter</hi>, „Normdateien in der Edition“. 
                         <hi rend="italic">Editio</hi>, Bd. 26, Nr. 1, Dezember 2012, S. 174–183. 
                         <ref target="https://doi.org/10.1515/editio-2012-0013">
-                            <hi rend="color(1155CC)">https://doi.org/10.1515/editio-2012-0013</hi>
-                        </ref>.
+<hi rend="color(1155CC)">https://doi.org/10.1515/editio-2012-0013</hi>
+</ref>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Trzeciak, Debby</hi>, 
+<bibl style="text-align: left; "><hi rend="bold">Trzeciak, Debby</hi>, 
                         <hi rend="italic">Normdaten und Liebesbriefe. Möglichkeiten und Grenzen der Auszeichnung am Beispiel einer Korrespondenz aus dem Liebesbriefarchiv</hi>. Hrsg. von Sabine Bartsch u. a., Bd. 5, Universitäts- und Landesbibliothek Darmstadt, 2023. 
                         <ref target="https://doi.org/10.26083/tuprints-00024477">
-                            <hi rend="color(1155CC)">https://doi.org/10.26083/tuprints-00024477</hi>
-                        </ref>.
+<hi rend="color(1155CC)">https://doi.org/10.26083/tuprints-00024477</hi>
+</ref>.
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

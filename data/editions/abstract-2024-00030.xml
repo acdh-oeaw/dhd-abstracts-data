@@ -1,237 +1,216 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xml:id="KUCZERA_Andreas_Applied_Text_as_Graph__ATAG_" xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="full">
-                    <title type="main">Applied Text as Graph (ATAG)</title>
-                    <title type="sub"/>
-                </title>
-                <author>
-                    <persName>
-                        <surname>Kuczera</surname>
-                        <forename>Andreas</forename>
-                    </persName>
-                    <affiliation>Technische Hochschule Mittelhessen, Deutschland</affiliation>
-                    <email>andreas.kuczera@mni.thm.de</email>
-                    <idno type="ORCID">0000-0003-1020-507X</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2023-07-15T19:38:46.048905265</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Digital Humanities Passau</publisher>
-                <address>
-                    <addrLine>Universität Passau</addrLine>
-                    <addrLine>Innstraße 41</addrLine>
-                    <addrLine>D-94032 Passau</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Text as Graph</term>
-                    <term>Digitale Editionen</term>
-                    <term>Textmodellierung</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Transkription</term>
-                    <term>Inhaltsanalyse</term>
-                    <term>Modellierung</term>
-                    <term>Annotieren</term>
-                    <term>Bearbeitung</term>
-                    <term>Kollaboration</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Stand der Forschung</head>
-                <p>
-                    <hi rend="color(#000000)">Zahlreiche Konferenzen, Workshops, Artikel und Blogbeiträge in den letzten Jahren beschäftigten sich mit der Frage, was Text eigentlich ist. Dabei hat sich der Eindruck verfestigt, dass unser Verständnis von Text viele Interpretationen zulässt und daher ständig im Wandel ist. Dies spiegelt sich auch in den TEI-Richtlinien und den verschiedenen Wegen wider, wie sie angewendet werden. Dabei können Textedierende Module und Elemente sorgfältig anpassen, um zu einem Set von Kodierungsrichtlinien zu gelangen, das mit ihrer Interpretation und ihrem Forschungsinteresse am Quelltext übereinstimmt. Dennoch unterscheidet sich oft die Art und Weise, wie die Textdaten auf einem Computer gespeichert werden, vom intellektuellen Verständnis des Textes des Editors. Das bedeutet, dass textliche Merkmale, die nicht natürlich in das Hierarchiemodell von XML passen, nur mit Hilfe von Umwegen oder zusätzlicher (vokabularspezifischer) Codierung adäquat digital dargestellt werden können. Je mehr zusätzliche Codierung erforderlich ist, desto komplizierter wird es, den Text zu kodieren, zu verarbeiten oder abzufragen. Auch in der Computerlinguistik und in den Computational Literary Studies wird das Problem der konkreten Verbindung von Theorie und Datenmodellierung diskutiert (Pichler/Reiter 2022; Bode 2023). Es ist davon auszugehen, dass die digitale Editionswissenschaft an der Schnittstelle von Wissenschaft und Technik mit demselben Problem</hi>
-                    <hi rend="color(#000000)">en</hi>
-                    <hi rend="color(#000000)"> kämpft, weil Forschende immer nur lose und implizit wissen, von welchen Zeichen sie sprechen, wenn sie Interpretationen und Schlussfolgerungen äußern. Dies führt zu einer elementaren informationellen Ungenauigkeit, die sich auf alle Interpretationsebenen ausbreitet und die Arbeit hemmen. Nicht zuletzt deswegen werden in den digitalen Editionswissenschaften seit einiger Zeit die Vorteile von Standoff-Formaten und Text as Graph diskutiert. Zuletzt haben Bleeker et al. </hi>
-                    <hi rend="color(#000000)">(</hi>
-                    <hi rend="color(#000000)">2022) ihren Vorschlag zu einer Text as Graph Markup Language (TagML) vorgestellt und dem bisher führenden Standard TEI-XML gegenübergestellt. Standoff-Formate werden in der Computerlinguistik sehr häufig verwendet und sind ein sehr robustes Format. Allerdings kann bei ihnen in der Regel </hi>
-                    <hi rend="color(#000000)">bereits</hi>
-                    <hi rend="color(#000000)"> a</hi>
-                    <hi rend="color(#000000)">n</hi>
-                    <hi rend="color(#000000)">notierte</hi>
-                    <hi rend="color(#000000)">r</hi>
-                    <hi rend="color(#000000)"> Text später nicht mehr geändert werden. Bei TagML ist dies möglich, allerdings wird </hi>
-                    <hi rend="color(#000000)">TagML</hi>
-                    <hi rend="color(#000000)"> bisher kaum produktiv eingesetzt. Das ursprünglich von Desmond Schmidt (Schmidt 2016) entwickelte und in (Neill/Kuczera 2019) vorgestellte Standoff-Property-System (SPO) vereint einen </hi>
-                    <hi rend="color(#000000)">s</hi>
-                    <hi rend="color(#000000)">tandoff-basierten Ansatz mit einer Labeled-Property-Graphdatenbank. Darauf aufbauend wird hier das Konzept </hi>
-                    <hi rend="color(#000000)italic">Applied Text as Graph</hi>
-                    <hi rend="color(#000000)"> </hi>
-                    <hi rend="color(#000000)">(ATAG) vorgestellt, das bereits im Rahmen des DFG-geförderten Projekts zum Liber Epistolarum der Hildegard von Bingen (</hi>
-                    <ptr target="https://liberepistolarum.mni.thm.de/home"/>
-                    <hi rend="color(#000000)">) eingesetzt wird </hi>
-                    <hi rend="color(#000000)">(Kuczera 2020)</hi>
-                    <hi rend="color(#000000)">. Die Software der Publikationsumgebung </hi>
-                    <hi rend="color(#000000)">(vgl. Abb. 1)</hi>
-                    <hi rend="color(#000000)"> steht auf </hi>
-                    <hi rend="color(#000000)">GitHub </hi>
-                    <hi rend="color(#000000)">zur </hi>
-                    <hi rend="color(#000000)">Nachnutzung zur Verfügung (</hi>
-                    <ptr target="https://github.com/digicademy/graph-dse"/>
-                    <hi rend="color(#000000)">).</hi>
-                </p>
-               
-                    <figure>
-                        <graphic url="Pictures/d1517c162e13d2b869373c4da8b8480a.png"/>
-                        <head>Abb 1: Der Anfang des Briefs R2 der Handschrift R des Liber Epistolarum der Hildegard von Bingen. URL: https://liberepistolarum.mni.thm.de/id/300dcfe1-9f1a-4e21-914d-4730fd85f1d2 (abgerufen am 6.7.2023).
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="full">
+<title type="main">Applied Text as Graph (ATAG)</title>
+<title type="sub"/>
+</title>
+<author>
+<persName>
+<surname>Kuczera</surname>
+<forename>Andreas</forename>
+</persName>
+<affiliation>Technische Hochschule Mittelhessen, Deutschland</affiliation>
+<email>andreas.kuczera@mni.thm.de</email>
+<idno type="ORCID">0000-0003-1020-507X</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2023-07-15T19:38:46.048905265</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Digital Humanities Passau</publisher>
+<address>
+<addrLine>Universität Passau</addrLine>
+<addrLine>Innstraße 41</addrLine>
+<addrLine>D-94032 Passau</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/10698323</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from an OASIS Open Document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Vortrag</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Text as Graph</term>
+<term>Digitale Editionen</term>
+<term>Textmodellierung</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Transkription</term>
+<term>Inhaltsanalyse</term>
+<term>Modellierung</term>
+<term>Annotieren</term>
+<term>Bearbeitung</term>
+<term>Kollaboration</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Stand der Forschung</head>
+<p>
+<hi rend="color(#000000)">Zahlreiche Konferenzen, Workshops, Artikel und Blogbeiträge in den letzten Jahren beschäftigten sich mit der Frage, was Text eigentlich ist. Dabei hat sich der Eindruck verfestigt, dass unser Verständnis von Text viele Interpretationen zulässt und daher ständig im Wandel ist. Dies spiegelt sich auch in den TEI-Richtlinien und den verschiedenen Wegen wider, wie sie angewendet werden. Dabei können Textedierende Module und Elemente sorgfältig anpassen, um zu einem Set von Kodierungsrichtlinien zu gelangen, das mit ihrer Interpretation und ihrem Forschungsinteresse am Quelltext übereinstimmt. Dennoch unterscheidet sich oft die Art und Weise, wie die Textdaten auf einem Computer gespeichert werden, vom intellektuellen Verständnis des Textes des Editors. Das bedeutet, dass textliche Merkmale, die nicht natürlich in das Hierarchiemodell von XML passen, nur mit Hilfe von Umwegen oder zusätzlicher (vokabularspezifischer) Codierung adäquat digital dargestellt werden können. Je mehr zusätzliche Codierung erforderlich ist, desto komplizierter wird es, den Text zu kodieren, zu verarbeiten oder abzufragen. Auch in der Computerlinguistik und in den Computational Literary Studies wird das Problem der konkreten Verbindung von Theorie und Datenmodellierung diskutiert (Pichler/Reiter 2022; Bode 2023). Es ist davon auszugehen, dass die digitale Editionswissenschaft an der Schnittstelle von Wissenschaft und Technik mit demselben Problem</hi>
+<hi rend="color(#000000)">en</hi>
+<hi rend="color(#000000)"> kämpft, weil Forschende immer nur lose und implizit wissen, von welchen Zeichen sie sprechen, wenn sie Interpretationen und Schlussfolgerungen äußern. Dies führt zu einer elementaren informationellen Ungenauigkeit, die sich auf alle Interpretationsebenen ausbreitet und die Arbeit hemmen. Nicht zuletzt deswegen werden in den digitalen Editionswissenschaften seit einiger Zeit die Vorteile von Standoff-Formaten und Text as Graph diskutiert. Zuletzt haben Bleeker et al. </hi>
+<hi rend="color(#000000)">(</hi>
+<hi rend="color(#000000)">2022) ihren Vorschlag zu einer Text as Graph Markup Language (TagML) vorgestellt und dem bisher führenden Standard TEI-XML gegenübergestellt. Standoff-Formate werden in der Computerlinguistik sehr häufig verwendet und sind ein sehr robustes Format. Allerdings kann bei ihnen in der Regel </hi>
+<hi rend="color(#000000)">bereits</hi>
+<hi rend="color(#000000)"> a</hi>
+<hi rend="color(#000000)">n</hi>
+<hi rend="color(#000000)">notierte</hi>
+<hi rend="color(#000000)">r</hi>
+<hi rend="color(#000000)"> Text später nicht mehr geändert werden. Bei TagML ist dies möglich, allerdings wird </hi>
+<hi rend="color(#000000)">TagML</hi>
+<hi rend="color(#000000)"> bisher kaum produktiv eingesetzt. Das ursprünglich von Desmond Schmidt (Schmidt 2016) entwickelte und in (Neill/Kuczera 2019) vorgestellte Standoff-Property-System (SPO) vereint einen </hi>
+<hi rend="color(#000000)">s</hi>
+<hi rend="color(#000000)">tandoff-basierten Ansatz mit einer Labeled-Property-Graphdatenbank. Darauf aufbauend wird hier das Konzept </hi>
+<hi rend="color(#000000)italic">Applied Text as Graph</hi>
+<hi rend="color(#000000)"> </hi>
+<hi rend="color(#000000)">(ATAG) vorgestellt, das bereits im Rahmen des DFG-geförderten Projekts zum Liber Epistolarum der Hildegard von Bingen (</hi>
+<ptr target="https://liberepistolarum.mni.thm.de/home"/>
+<hi rend="color(#000000)">) eingesetzt wird </hi>
+<hi rend="color(#000000)">(Kuczera 2020)</hi>
+<hi rend="color(#000000)">. Die Software der Publikationsumgebung </hi>
+<hi rend="color(#000000)">(vgl. Abb. 1)</hi>
+<hi rend="color(#000000)"> steht auf </hi>
+<hi rend="color(#000000)">GitHub </hi>
+<hi rend="color(#000000)">zur </hi>
+<hi rend="color(#000000)">Nachnutzung zur Verfügung (</hi>
+<ptr target="https://github.com/digicademy/graph-dse"/>
+<hi rend="color(#000000)">).</hi>
+</p>
+<figure>
+<graphic url="Pictures/d1517c162e13d2b869373c4da8b8480a.png"/>
+<head>Abb 1: Der Anfang des Briefs R2 der Handschrift R des Liber Epistolarum der Hildegard von Bingen. URL: https://liberepistolarum.mni.thm.de/id/300dcfe1-9f1a-4e21-914d-4730fd85f1d2 (abgerufen am 6.7.2023).
                         </head>
-                    </figure>
-                
-
-                <p>
-                    <hi rend="color(#000000)">Auf Grundlage dieser Publikationsumgebung wurde im folgenden die Webseite des DFG-Projekts zu den Sozinianischen Briefwechseln (</hi>
-                    <ptr target="https://gepris.dfg.de/gepris/projekt/3245185"/>
-               
-                    <hi rend="color(#000000)">) von einer Typo3-basierten Webseite auf eine graphbasierte Publikationsumgebung umgestellt. Dabei wurden die in TEI-XML vorliegenden Briefe mit Hilfe eines TEI2json-Konverters (</hi>
-                    <ptr target="https://gitlab.rlp.net/adwmainz/digicademy/"/>
-                    <ref target="https://gitlab.rlp.net/adwmainz/digicademy/sbw/tei2json">sbw/tei2json</ref>
-                    <hi rend="color(#000000)">) in das SPO-JSON-Format konvertiert und konnten so sehr einfach in die graphbasierte Publikationsumgebung eingespielt werden. </hi>
-                </p>
-                <p>Auch wenn auf der Publikationsseite alles reibungslos funktioniert, haben sich im Hildegard-Projekt im Verlauf des Projekts doch einige Herausforderungen ergeben. So werden im Editionssystem Codex (vgl. Abb. 2) Texte, die bearbeitet werden, komplett in den Browser geladen. Bei Briefen mit einer Länge bis zu zehn DINA4-Seiten (nur als Größenvergleich) ist das noch realisierbar. Bei langen Kapiteln mit vielleicht 40 Seiten stößt das System an seine Grenzen, da die Bearbeitung bei größeren Textlängen sehr träge und langsam wird.</p>
-             
-                    <figure>
-                        <graphic url="Pictures/6e510b8c05a67f12f29ecd027764cd12.png"/>
-                        <head>Abb. 2: Das graphbasierte Editionssystem Codex (Neill/Kuczera 2019).</head>
-                        
-                    </figure>
-                
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <lb/>
-                    <hi rend="italic">Applied Text as Graph</hi> (ATAG)
+</figure>
+<p>
+<hi rend="color(#000000)">Auf Grundlage dieser Publikationsumgebung wurde im folgenden die Webseite des DFG-Projekts zu den Sozinianischen Briefwechseln (</hi>
+<ptr target="https://gepris.dfg.de/gepris/projekt/3245185"/>
+<hi rend="color(#000000)">) von einer Typo3-basierten Webseite auf eine graphbasierte Publikationsumgebung umgestellt. Dabei wurden die in TEI-XML vorliegenden Briefe mit Hilfe eines TEI2json-Konverters (</hi>
+<ptr target="https://gitlab.rlp.net/adwmainz/digicademy/"/>
+<ref target="https://gitlab.rlp.net/adwmainz/digicademy/sbw/tei2json">sbw/tei2json</ref>
+<hi rend="color(#000000)">) in das SPO-JSON-Format konvertiert und konnten so sehr einfach in die graphbasierte Publikationsumgebung eingespielt werden. </hi>
+</p>
+<p>Auch wenn auf der Publikationsseite alles reibungslos funktioniert, haben sich im Hildegard-Projekt im Verlauf des Projekts doch einige Herausforderungen ergeben. So werden im Editionssystem Codex (vgl. Abb. 2) Texte, die bearbeitet werden, komplett in den Browser geladen. Bei Briefen mit einer Länge bis zu zehn DINA4-Seiten (nur als Größenvergleich) ist das noch realisierbar. Bei langen Kapiteln mit vielleicht 40 Seiten stößt das System an seine Grenzen, da die Bearbeitung bei größeren Textlängen sehr träge und langsam wird.</p>
+<figure>
+<graphic url="Pictures/6e510b8c05a67f12f29ecd027764cd12.png"/>
+<head>Abb. 2: Das graphbasierte Editionssystem Codex (Neill/Kuczera 2019).</head>
+</figure>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>
+<lb/>
+<hi rend="italic">Applied Text as Graph</hi> (ATAG)
                 </head>
-                <p>Mit 
+<p>Mit 
                     <hi rend="italic">Applied Text as Graph</hi> (ATAG) schlagen wir ein neues Konzept von Text as Graph vor, das nicht nur denselben Grad notwendiger Flexibilität mitbringt, wie man ihn bei TagML findet, sondern durch seine Anlehnung an SPO auch eine performantere technische Umsetzung in digitalen Editionsprojekten ermöglicht.
                 </p>
-             
-                    <figure>
-                        <graphic url="Pictures/cef963d8c2943de9f8e91b9daea6113a.png"/>
-                        <head>Abb 3.: Das Graphmodell des ersten Wortes des Briefes R2 aus der Handschrift R des Liber Epistolarum der Hildegard von Bingen. Der Grundtext ist normalisiert, die Annotation leiden/expansion zeigt an, dass im Rahmen der Transkription die Zeichen ‘enio’ ergänzt wurden (Quelle: Autor).</head>
-                        
-                    </figure>
-                
-                <p>Die Grundlagen sind:</p>
-                <list type="unordered">
-                    <item>Ein linearer Text (Textstream) bestehend aus Zeichen und Leerzeichen. Dieser lineare Text wird als Textstück bezeichnet.</item>
-                    <item>Die Zeichen (und Leerzeichen) eines Textstückes werden in Zeichenknoten (Orange Knoten in Abb. 3) abgebildet, die untereinander mit NEXT-Kanten verbunden sind.</item>
-                    <item>Jedes Textstück beginnt mit einem Textknoten (Blauer Knoten in Abb. 3). Von diesem Textknoten geht eine FIRST_CHARACTER-Kante und eine NEXT-Kante zum ersten Zeichen der Zeichenkette und eine LAST_CHARACTER-Kante zum letzten Zeichen der Zeichenkette.</item>
-                    <item>Die kleinste Granularität ist die Zeichenebene, deren Reihenfolge mit NEXT-Kanten festgehalten wird.</item>
-                    <item>Jeder Zeichenknoten ist über eine UUID eindeutig identifizierbar und über eine persistent stabile und auflösende URI über das Internet adressierbar.</item>
-                    <item>Die Ketten von Zeichenknoten können mit Annotationsknoten annotiert werden (Grüne Knoten in Abb. 3).</item>
-                    <item>Die Annotationsknoten sind über FIRST_CHARACTER- und LAST_CHARACTER-Kanten mit den Zeichenknoten verbunden und machen die Reichweite einer Annotation explizit.</item>
-                    <item>Eine Annotation kann mit einem weiteren Textstück verbunden werden, in dem z.B. eine alternative Lesart oder ein Kommentar enthalten ist. Damit ergibt sich ein Netzwerk von Texten und Annotationen mit Texten.</item>
-                    <item>Der Grundtext (auf den Begriff Basistext wird bewusst verzichtet, da keinerlei Hierarchie hergestellt werden soll) und die Annotationen bilden die Grundlage dieses Textmodellierungssystems.</item>
-                    <item>Das Ende einer Zeichenknotenkette kann mit einer NEXT-Kante mit dem ersten Zeichenknoten einer weiteren Zeichenknotenkette verbunden werden und gibt damit eine mögliche Leserichtung wieder.</item>
-                    <item>Das System macht keine Vorgaben, wie z.B. die Metadaten von Texten festgehalten werden. Diese könnten beispielsweise gemäß der gut dokumentierten TEI-Richtlinien in einem Metadatenknoten festgehalten werden, der mit dem Textknoten verbunden ist. Oder die Metadaten werden als Properties direkt im Textknoten abgespeichert.</item>
-                    <item>Das System macht keine Vorgaben, was ein „Zeichen“ definiert. Diese Definition findet im Projekt im Anwendungszusammenhang statt.</item>
-                    <item>Festzuhalten bleibt also, dass es lineare Textstücke gibt, die Annotationen haben können und diese Annotationen können wiederum einen Text haben, der Annotationen hat.</item>
-                    <item>Es ergibt sich ein Netzwerk von Texten.</item>
-                </list>
-                <p>Das Modell geht davon aus, dass es keine z.B. Diskontinuitäten, keine Nichtlinearitäten oder Löschungen im Text gibt, sondern betrachtet sie als konstitutive Schritte auf dem Weg zu einem lesbaren Text. Die Textphänomene wie z.B. Diskontinuitäten, Löschungen oder Nichtlinearitäten werden in den Annotationen verzeichnet. Im Unterschied zu TEI-XML, wo bei der Verwendung des &lt;choice&gt;-Elements keine Vorgabe für das Lesen des Textes vorgegeben wird, ist bei ATAG die Entscheidung für einen Basistext konstitutiv. Allerdings kann der Nutzer selbst entscheiden, was in den Basistext und was in die Annotationen kommt. Darüber hinaus ermöglicht die Verwendung eines Labeled-Property-Graphen (LPG) die Verwendung von weiteren Properties in den Zeichen- und Annotationsknoten. Damit kann sehr flexibel modelliert werden.</p>
-                <p>Abbildung 3 zeigt das ATAG-Graphmodell des ersten Wortes des Briefes R2 aus der Handschrift R des Liber Epistolarum der Hildegard von Bingen. Abb. 1 zeigt den gleichen Brief auf der Webseite. Der Grundtext ist normalisiert, die Annotation leiden/expansion zeigt an, dass im Original die Zeichen ‘enio’ fehlen. In Abb. 3 sind auch die weiteren Annotationen zu sehen, die diesen Textbereich betreffen.</p>
-                <p>Als zweites Beispiel wird eine Textstelle aus einem Brief des Sozinianerprojekts vorgestellt.</p>
-          
-                    <figure>
-                        <graphic url="Pictures/f344d77ca0df7024720cb3c2a3a6c911.png"/>
-                        <head>
+<figure>
+<graphic url="Pictures/cef963d8c2943de9f8e91b9daea6113a.png"/>
+<head>Abb 3.: Das Graphmodell des ersten Wortes des Briefes R2 aus der Handschrift R des Liber Epistolarum der Hildegard von Bingen. Der Grundtext ist normalisiert, die Annotation leiden/expansion zeigt an, dass im Rahmen der Transkription die Zeichen ‘enio’ ergänzt wurden (Quelle: Autor).</head>
+</figure>
+<p>Die Grundlagen sind:</p>
+<list type="unordered">
+<item>Ein linearer Text (Textstream) bestehend aus Zeichen und Leerzeichen. Dieser lineare Text wird als Textstück bezeichnet.</item>
+<item>Die Zeichen (und Leerzeichen) eines Textstückes werden in Zeichenknoten (Orange Knoten in Abb. 3) abgebildet, die untereinander mit NEXT-Kanten verbunden sind.</item>
+<item>Jedes Textstück beginnt mit einem Textknoten (Blauer Knoten in Abb. 3). Von diesem Textknoten geht eine FIRST_CHARACTER-Kante und eine NEXT-Kante zum ersten Zeichen der Zeichenkette und eine LAST_CHARACTER-Kante zum letzten Zeichen der Zeichenkette.</item>
+<item>Die kleinste Granularität ist die Zeichenebene, deren Reihenfolge mit NEXT-Kanten festgehalten wird.</item>
+<item>Jeder Zeichenknoten ist über eine UUID eindeutig identifizierbar und über eine persistent stabile und auflösende URI über das Internet adressierbar.</item>
+<item>Die Ketten von Zeichenknoten können mit Annotationsknoten annotiert werden (Grüne Knoten in Abb. 3).</item>
+<item>Die Annotationsknoten sind über FIRST_CHARACTER- und LAST_CHARACTER-Kanten mit den Zeichenknoten verbunden und machen die Reichweite einer Annotation explizit.</item>
+<item>Eine Annotation kann mit einem weiteren Textstück verbunden werden, in dem z.B. eine alternative Lesart oder ein Kommentar enthalten ist. Damit ergibt sich ein Netzwerk von Texten und Annotationen mit Texten.</item>
+<item>Der Grundtext (auf den Begriff Basistext wird bewusst verzichtet, da keinerlei Hierarchie hergestellt werden soll) und die Annotationen bilden die Grundlage dieses Textmodellierungssystems.</item>
+<item>Das Ende einer Zeichenknotenkette kann mit einer NEXT-Kante mit dem ersten Zeichenknoten einer weiteren Zeichenknotenkette verbunden werden und gibt damit eine mögliche Leserichtung wieder.</item>
+<item>Das System macht keine Vorgaben, wie z.B. die Metadaten von Texten festgehalten werden. Diese könnten beispielsweise gemäß der gut dokumentierten TEI-Richtlinien in einem Metadatenknoten festgehalten werden, der mit dem Textknoten verbunden ist. Oder die Metadaten werden als Properties direkt im Textknoten abgespeichert.</item>
+<item>Das System macht keine Vorgaben, was ein „Zeichen“ definiert. Diese Definition findet im Projekt im Anwendungszusammenhang statt.</item>
+<item>Festzuhalten bleibt also, dass es lineare Textstücke gibt, die Annotationen haben können und diese Annotationen können wiederum einen Text haben, der Annotationen hat.</item>
+<item>Es ergibt sich ein Netzwerk von Texten.</item>
+</list>
+<p>Das Modell geht davon aus, dass es keine z.B. Diskontinuitäten, keine Nichtlinearitäten oder Löschungen im Text gibt, sondern betrachtet sie als konstitutive Schritte auf dem Weg zu einem lesbaren Text. Die Textphänomene wie z.B. Diskontinuitäten, Löschungen oder Nichtlinearitäten werden in den Annotationen verzeichnet. Im Unterschied zu TEI-XML, wo bei der Verwendung des &lt;choice&gt;-Elements keine Vorgabe für das Lesen des Textes vorgegeben wird, ist bei ATAG die Entscheidung für einen Basistext konstitutiv. Allerdings kann der Nutzer selbst entscheiden, was in den Basistext und was in die Annotationen kommt. Darüber hinaus ermöglicht die Verwendung eines Labeled-Property-Graphen (LPG) die Verwendung von weiteren Properties in den Zeichen- und Annotationsknoten. Damit kann sehr flexibel modelliert werden.</p>
+<p>Abbildung 3 zeigt das ATAG-Graphmodell des ersten Wortes des Briefes R2 aus der Handschrift R des Liber Epistolarum der Hildegard von Bingen. Abb. 1 zeigt den gleichen Brief auf der Webseite. Der Grundtext ist normalisiert, die Annotation leiden/expansion zeigt an, dass im Original die Zeichen ‘enio’ fehlen. In Abb. 3 sind auch die weiteren Annotationen zu sehen, die diesen Textbereich betreffen.</p>
+<p>Als zweites Beispiel wird eine Textstelle aus einem Brief des Sozinianerprojekts vorgestellt.</p>
+<figure>
+<graphic url="Pictures/f344d77ca0df7024720cb3c2a3a6c911.png"/>
+<head>
                             Abb. 4.: Das erste Wort des Briefes von Johannes Müller (Hamburg) an Stanisław Lubieniecki (Hamburg) vom 5. Januar 1665 (https://sozinianer.mni.thm.de/view/ed_m3l_ldy _ vkb) abgerufen am 15.7.2023.
                         </head>
-                    </figure>
-                
-
-                <p>Links unten in Abb. 4 befindet sich der blaue Textknoten des Briefes, von dem die Zeichenkette “Praecelli.” startet. Die Zeichen von “P” bis “.” sind von der Annotation 
+</figure>
+<p>Links unten in Abb. 4 befindet sich der blaue Textknoten des Briefes, von dem die Zeichenkette “Praecelli.” startet. Die Zeichen von “P” bis “.” sind von der Annotation 
                     <hi rend="italic">abbr</hi> (grüner Knoten in Abb. 4) umfasst. Vom Annotationsknoten geht eine Kante zum oberen blauen Textknoten, von dem die Zeichenknotenkette mit der normalisierten Fassung des Wortes „Praecellentissime“ startet. Hier wird gut sichtbar, wie sich das Muster zu größeren Strukturen zusammensetzt. Festzuhalten bleibt auch, dass im Sozinianerprojekt im Grundtext die Originalschreibweise festgehalten wird, während die Normalisierung in der Annotation liegt. Im Hildegardprojekt ist hingegen der Grundtext normalisiert und die Ergänzungen annotiert. Diesbezüglich ist das Textmodell agnostisch. Ein Projekt muss allerdings zu Beginn die Entscheidung treffen, wie der Text modelliert werden soll, und sich anschließend daran halten. Prinzipiell sind die verschiedenen Varianten über Graphalgorithmen inneinander überführbar. Daher wird hier auch keine Position in der langen Diskussion eingenommen, was genau ein „Text“ ist, den diese Definition liegt bei den Nutzenden. 
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Webbasierter Editor für ATAG</head>
-                <p>Wie bereits oben erwähnt, sind standoff-basierte Textformate schon lange bekannt und werden umfangreich genutzt. Allerdings besteht bei vielen Ansätzen das Problem, dass der Basistext später nicht geändert werden kann, da sich die Indizes sonst verschieben. Mit ATAG wird das Ändern von bereits annotiertem Text möglich.</p>
-               
-                    <figure>
-                        <graphic url="Pictures/a33206d05a03511100c1de1bc8026b0b.png"/>
-                        <head>Abb. 5.: Screenshot des ATAG-Editors, der gerade im Rahmen einer Masterarbeit entwickelt wird.</head>
-                        
-                    </figure>
-                
-                <p>Momentan entsteht im Rahmen einer Masterarbeit ein webbasierter Editor für ATAG. Die Herausforderungen liegen hier vor allem in der Visualisierung der zahlreichen Annotationsebenen und -möglichkeiten. Es müssen sinnvolle Nutzungsszenarien entwickelt werden, die auf die jeweiligen Bedürfnisse der Nutzer zugeschnitten sind. Das Textmodell von ATAG ist sehr eng verwandt mit SPO, die beiden sind direkt ineinander überführbar. SPO wird in den Publikationsumgebungen des Sozinianer-Projekts und des Hildegard-Projekts schon produktiv eingesetzt. Mit einem Algorithmus kann aus SPO-Texten ATAG erstellt werden. ATAG bildet dann die Grundlage für das Edieren oder das Auswerten der annotierten Texte. Sind die Änderungen im Graph gespeichert, können die SPO-Angaben in den Text- und Annotationsknoten neu berechnet werden. Damit können die Änderungen auch direkt in die Publikationsumgebung übernommen werden. Festzuhalten ist, dass die Wahl von Zeichenknoten als kleinste Einheit dem leichteren Management im webbasierten Editor geschuldet ist. Abbildung 4 zu „Praecell.“ zeigt die direkt Verbindung zwischen Zeichenknoten und Annotationsknoten über HAS_ANNOTATION-Kanten. Damit ist für jedes Zeichen unmittelbar feststellbar, mit welchen Annotationen es verbunden ist. Diese Information erleichtert die Darstellung im webbasierten Editor. Es lassen sich ausgehend von den Zeichenknoten aber jederzeit Annotationen erstellen, die dann die Tokenebene abbilden und weitere Zusatzinformationen, wie z.B. das Lemma des Tokens, enthalten können. Grundlage ist aber immer der Grundtext mit den Zeichenknoten.</p>
-               
-                    <figure>
-                        <graphic url="Pictures/28220117ddbc00bffe430afc46d563e0.png"/>
-                        <head>Abb. 6.: Ein Textstück aus dem Brief 259 des Manuskripts R des Liber Epistolarum der Hildegard von Bingen mit Zeichen- (orange) und Tokenebene (fliederfarben).</head>
-                        
-                    </figure>
-          
-                <p>Abschließend wird in Abbildung 5 der Brief R259 mit einer sehr stark annotierten Stelle, gezeigt bei dem der Zeichenkette “sacerdotes” neben den verschiedenen Layoutannotationen noch vier Akteursannotationen zugeordnet werden, ohne dass das Modell an Klarheit verliert. Die fliederfarbenen Knoten am unteren Rand des Bildes zeigen die Tokenknoten, die jeweils mit der Zeichenebene verbunden sind. Hier wird deutlich, wie das Modell unerschiedliche Granularitätsstufen gemeinsam modellieren kann.</p>
-                <p>Für einen Test zur Performance wurden die über 200.000 Volltextregesten der Regesta Imperii Online in Neo4j importiert und in ATAG umgewandelt. Der Prozess dauerte auf einer Standardinstallation von Neo4j Desktop ca. 100 Minuten.</p>
-                
-                    <figure>
-                        <graphic url="Pictures/5ed82cfa6031baa1f726bc8698c8fe9d.png"/>
-                        <head>Abb. 7.: Ergebnis des Imports der 203717 Regesten der Regesta Imperii in ATAG.</head>
-                    </figure>
-              
-                <p>Nach dem Importprozess hatte die Datenbank knapp 120 Millionen Knoten und knapp 120 Millionen Kanten. Auf die Geschwindigkeit der Queries hatte dies jedoch keine Auswirkungen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Zusammenfassung</head>
-                <p>Mit ATAG, oder Applied Text as Graph können Text und Annotationen strukturiert modelliert werden. Im Kern basiert ATAG auf drei Hauptelementen: einem Textknoten, der den Beginn eines Textblocks kennzeichnet, einer Kette von individuellen Zeichenknoten, die den Text ausmachen, und Annotationen, die mit einem anderen Textknoten verknüpft werden können. Eine der flexiblen Eigenschaften von ATAG besteht darin, dass es zwar eine grundlegende Zeichenkette erfordert, jedoch keine Beschränkungen dafür auferlegt, was diese Kette enthalten sollte. Bemerkenswert ist, dass die Basiskette von Zeichen in ATAG dynamisch ist. Sie kann auch nach der Annotation bearbeitet oder modifiziert werden. Dies ist besonders nützlich in kollaborativen Umgebungen oder wenn Informationen aktualisiert werden. Darüber hinaus ist ATAG darauf ausgelegt, eine nahezu unbegrenzte Anzahl paralleler und sich überlappender Annotationen zu verarbeiten, ähnlich den bestehenden Standoff-Systemen, die in der Textanalyse verwendet werden. In Bezug auf zukünftige Arbeiten in ATAG gibt es mehrere Richtungen. Das Framework erforscht die Integration der Standards der Text Encoding Initiative (TEI), um seine Fähigkeiten weiter zu bereichern. Darüber hinaus wird an der Entwicklung eines webbasierten Editors gearbeitet, der die Interaktion mit ATAG benutzerfreundlicher macht. Zusammen mit dem generischen Publikationssystem stehen dann alle für eine graphbasierte digitale Edition notwendigen Komponenten zur Verfügung.</p>
-            </div>
-        </body>
-        <back>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl>
-                        <anchor xml:id="id_docs-internal-guid-94b717e3-7fff-e1ab-79ad-5bc959406c16"/>
-                        <hi rend="bold">Bleeker, Elli, Ronald Haentjens Dekker, Bram Buitendijk.</hi> 2023. “Texts as Hypergraphs: An Intuitive Representation of Interpretations of Text”, Journal of the Text Encoding Initiative, Issue 14 | April 2021- March 2023, Online since 08 June 2022, connection on 13 March 2023. URL:
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Webbasierter Editor für ATAG</head>
+<p>Wie bereits oben erwähnt, sind standoff-basierte Textformate schon lange bekannt und werden umfangreich genutzt. Allerdings besteht bei vielen Ansätzen das Problem, dass der Basistext später nicht geändert werden kann, da sich die Indizes sonst verschieben. Mit ATAG wird das Ändern von bereits annotiertem Text möglich.</p>
+<figure>
+<graphic url="Pictures/a33206d05a03511100c1de1bc8026b0b.png"/>
+<head>Abb. 5.: Screenshot des ATAG-Editors, der gerade im Rahmen einer Masterarbeit entwickelt wird.</head>
+</figure>
+<p>Momentan entsteht im Rahmen einer Masterarbeit ein webbasierter Editor für ATAG. Die Herausforderungen liegen hier vor allem in der Visualisierung der zahlreichen Annotationsebenen und -möglichkeiten. Es müssen sinnvolle Nutzungsszenarien entwickelt werden, die auf die jeweiligen Bedürfnisse der Nutzer zugeschnitten sind. Das Textmodell von ATAG ist sehr eng verwandt mit SPO, die beiden sind direkt ineinander überführbar. SPO wird in den Publikationsumgebungen des Sozinianer-Projekts und des Hildegard-Projekts schon produktiv eingesetzt. Mit einem Algorithmus kann aus SPO-Texten ATAG erstellt werden. ATAG bildet dann die Grundlage für das Edieren oder das Auswerten der annotierten Texte. Sind die Änderungen im Graph gespeichert, können die SPO-Angaben in den Text- und Annotationsknoten neu berechnet werden. Damit können die Änderungen auch direkt in die Publikationsumgebung übernommen werden. Festzuhalten ist, dass die Wahl von Zeichenknoten als kleinste Einheit dem leichteren Management im webbasierten Editor geschuldet ist. Abbildung 4 zu „Praecell.“ zeigt die direkt Verbindung zwischen Zeichenknoten und Annotationsknoten über HAS_ANNOTATION-Kanten. Damit ist für jedes Zeichen unmittelbar feststellbar, mit welchen Annotationen es verbunden ist. Diese Information erleichtert die Darstellung im webbasierten Editor. Es lassen sich ausgehend von den Zeichenknoten aber jederzeit Annotationen erstellen, die dann die Tokenebene abbilden und weitere Zusatzinformationen, wie z.B. das Lemma des Tokens, enthalten können. Grundlage ist aber immer der Grundtext mit den Zeichenknoten.</p>
+<figure>
+<graphic url="Pictures/28220117ddbc00bffe430afc46d563e0.png"/>
+<head>Abb. 6.: Ein Textstück aus dem Brief 259 des Manuskripts R des Liber Epistolarum der Hildegard von Bingen mit Zeichen- (orange) und Tokenebene (fliederfarben).</head>
+</figure>
+<p>Abschließend wird in Abbildung 5 der Brief R259 mit einer sehr stark annotierten Stelle, gezeigt bei dem der Zeichenkette “sacerdotes” neben den verschiedenen Layoutannotationen noch vier Akteursannotationen zugeordnet werden, ohne dass das Modell an Klarheit verliert. Die fliederfarbenen Knoten am unteren Rand des Bildes zeigen die Tokenknoten, die jeweils mit der Zeichenebene verbunden sind. Hier wird deutlich, wie das Modell unerschiedliche Granularitätsstufen gemeinsam modellieren kann.</p>
+<p>Für einen Test zur Performance wurden die über 200.000 Volltextregesten der Regesta Imperii Online in Neo4j importiert und in ATAG umgewandelt. Der Prozess dauerte auf einer Standardinstallation von Neo4j Desktop ca. 100 Minuten.</p>
+<figure>
+<graphic url="Pictures/5ed82cfa6031baa1f726bc8698c8fe9d.png"/>
+<head>Abb. 7.: Ergebnis des Imports der 203717 Regesten der Regesta Imperii in ATAG.</head>
+</figure>
+<p>Nach dem Importprozess hatte die Datenbank knapp 120 Millionen Knoten und knapp 120 Millionen Kanten. Auf die Geschwindigkeit der Queries hatte dies jedoch keine Auswirkungen.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Zusammenfassung</head>
+<p>Mit ATAG, oder Applied Text as Graph können Text und Annotationen strukturiert modelliert werden. Im Kern basiert ATAG auf drei Hauptelementen: einem Textknoten, der den Beginn eines Textblocks kennzeichnet, einer Kette von individuellen Zeichenknoten, die den Text ausmachen, und Annotationen, die mit einem anderen Textknoten verknüpft werden können. Eine der flexiblen Eigenschaften von ATAG besteht darin, dass es zwar eine grundlegende Zeichenkette erfordert, jedoch keine Beschränkungen dafür auferlegt, was diese Kette enthalten sollte. Bemerkenswert ist, dass die Basiskette von Zeichen in ATAG dynamisch ist. Sie kann auch nach der Annotation bearbeitet oder modifiziert werden. Dies ist besonders nützlich in kollaborativen Umgebungen oder wenn Informationen aktualisiert werden. Darüber hinaus ist ATAG darauf ausgelegt, eine nahezu unbegrenzte Anzahl paralleler und sich überlappender Annotationen zu verarbeiten, ähnlich den bestehenden Standoff-Systemen, die in der Textanalyse verwendet werden. In Bezug auf zukünftige Arbeiten in ATAG gibt es mehrere Richtungen. Das Framework erforscht die Integration der Standards der Text Encoding Initiative (TEI), um seine Fähigkeiten weiter zu bereichern. Darüber hinaus wird an der Entwicklung eines webbasierten Editors gearbeitet, der die Interaktion mit ATAG benutzerfreundlicher macht. Zusammen mit dem generischen Publikationssystem stehen dann alle für eine graphbasierte digitale Edition notwendigen Komponenten zur Verfügung.</p>
+</div>
+</body>
+<back>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl>
+<anchor xml:id="id_docs-internal-guid-94b717e3-7fff-e1ab-79ad-5bc959406c16"/>
+<hi rend="bold">Bleeker, Elli, Ronald Haentjens Dekker, Bram Buitendijk.</hi> 2023. “Texts as Hypergraphs: An Intuitive Representation of Interpretations of Text”, Journal of the Text Encoding Initiative, Issue 14 | April 2021- March 2023, Online since 08 June 2022, connection on 13 March 2023. URL:
                         <ptr target="http://journals.openedition.org/jtei/3919"/>
-                        <hi rend="color(#000000)">; DOI: </hi>
-                        <ptr target="https://doi.org/10.4000/jtei.3919"/>
-                    </bibl>
-                    <bibl><hi rend="bold">Bode, Katherin.</hi> 2022. “Doing (Computational) Literary Studies”, New Literary History 53.4-54.1 (2022-23): 531-558.</bibl>
-                    <bibl>
-                        <hi rend="bold">Kuczera, Andreas.</hi> 2022. “TEI Beyond XML – Digital Scholarly Editions as Provenance Knowledge Graphs.” In Tara Andrews, Franziska Diehr, Thomas Efer, Andreas Kuczera and Joris van Zundert (eds.): Graph Technologies in the Humanities - Proceedings 2020, published at
+<hi rend="color(#000000)">; DOI: </hi>
+<ptr target="https://doi.org/10.4000/jtei.3919"/>
+</bibl>
+<bibl><hi rend="bold">Bode, Katherin.</hi> 2022. “Doing (Computational) Literary Studies”, New Literary History 53.4-54.1 (2022-23): 531-558.</bibl>
+<bibl>
+<hi rend="bold">Kuczera, Andreas.</hi> 2022. “TEI Beyond XML – Digital Scholarly Editions as Provenance Knowledge Graphs.” In Tara Andrews, Franziska Diehr, Thomas Efer, Andreas Kuczera and Joris van Zundert (eds.): Graph Technologies in the Humanities - Proceedings 2020, published at
                         <ptr target="http://ceur-ws.org/Vol-3110"/>
-                        <hi rend="color(#000000)">, 2022. </hi>
-                        <ptr target="http://ceur-ws.org/Vol-3110/paper6.pdf"/>
-                        <hi rend="color(#000000)">.</hi>
-                    </bibl>
-                    <bibl><hi rend="bold">Neill, Iian, Andreas Kuczera.</hi> 2019. “The Codex – an Atlas of Relations.” In Die Modellierung des Zweifels – Schlüsselideen und -konzepte zur graphbasierten Modellierung von Unsicherheiten. Hg. von Andreas Kuczera / Thorsten Wübbena / Thomas Kollatz. Wolfenbüttel 2019. (= Zeitschrift für digitale Geisteswissenschaften / Sonderbände, 4) text/html Format. DOI: 10.17175/sb004_008.</bibl>
-                    <bibl><hi rend="bold">Pichler, Axel, und Nils Reiter.</hi> 2022. “From Concepts to Texts and Back: Operationalization as a Core Activity of Digital Humanities.” Journal of Cultural Analytics, vol. 7, no. 4, Dec. 2022, doi:10.22148/001c.57195.</bibl>
-                    <bibl><hi rend="bold">Schmidt, Desmond.</hi> 2016. “Using standoff properties for marking-up historical documents in the humanities.“ In it – Information Technology 58 (2016), H. 2, S. 63–69. DOI: 10.1515/itit-2015-0030</bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+<hi rend="color(#000000)">, 2022. </hi>
+<ptr target="http://ceur-ws.org/Vol-3110/paper6.pdf"/>
+<hi rend="color(#000000)">.</hi>
+</bibl>
+<bibl><hi rend="bold">Neill, Iian, Andreas Kuczera.</hi> 2019. “The Codex – an Atlas of Relations.” In Die Modellierung des Zweifels – Schlüsselideen und -konzepte zur graphbasierten Modellierung von Unsicherheiten. Hg. von Andreas Kuczera / Thorsten Wübbena / Thomas Kollatz. Wolfenbüttel 2019. (= Zeitschrift für digitale Geisteswissenschaften / Sonderbände, 4) text/html Format. DOI: 10.17175/sb004_008.</bibl>
+<bibl><hi rend="bold">Pichler, Axel, und Nils Reiter.</hi> 2022. “From Concepts to Texts and Back: Operationalization as a Core Activity of Digital Humanities.” Journal of Cultural Analytics, vol. 7, no. 4, Dec. 2022, doi:10.22148/001c.57195.</bibl>
+<bibl><hi rend="bold">Schmidt, Desmond.</hi> 2016. “Using standoff properties for marking-up historical documents in the humanities.“ In it – Information Technology 58 (2016), H. 2, S. 63–69. DOI: 10.1515/itit-2015-0030</bibl>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

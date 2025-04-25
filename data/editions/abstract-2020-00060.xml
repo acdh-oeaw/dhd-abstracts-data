@@ -44,7 +44,7 @@
 <addrLine>33098 Paderborn</addrLine>
 <addrLine>Deutschland</addrLine>
 </address>
-</publicationStmt>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/4621778</idno></publicationStmt>
 <sourceDesc>
 <p>Converted from an OASIS Open Document</p>
 </sourceDesc>
@@ -89,20 +89,20 @@
 <hi rend="italic">dramatis personae</hi> (Figurenverzeichnis) sprachlich kodiert sind, zu extrahieren und maschinenlesbar im TEI/XML vorzuhalten. Das Figurenverzeichnis kann als Paratext (Genette 1993) dem Nebentext zugerechnet werden, ist jedoch literaturwissenschaftlich, von Einführungswerken abgesehen, noch so gut wie nicht erschlossen.<ref n="1" target="ftn1"/> Das Figurenverzeichnis steht zwar unabhängig vom eigentlichen Text am Anfang, kann jedoch bereits Figuren- bzw. Textwissen vermitteln, indem die Figuren nach sozial-politischem Stand, Familienzugehörigkeit oder nach anderen Gruppierungen geordnet sind (vgl. Abbildung 1). Häufig lässt sich an der Positionierung eines Names im Figurenverzeichnis auch die Wichtigkeit der betreffenden Figur im Drama ablesen (Pangallo 2015, 91). Durch diese Strukturierung ist es teilweise möglich, schon vorab auf zentrale Konfliktpotentiale des Textes zu schließen (Jeßing 2015, 79–80). Darüberhinaus kann das Figurenverzeichnis laut Pfister und Asmuth auch der Ort erster auktorialer Bewertungen oder Hinweise sein und dient somit nicht nur der reinen Vorstellung der Figuren und ihrer Strukturen untereinander (Pfister 2001, 95; Asmuth 2016, 85).
 </p>
 <p>
-  <figure>
-    <graphic url="153_final-11dc397dbb70bbc07d01aca6df55a328.jpg"/>
-    <head> Abbildung 1: Figurenverzeichnis in Die Räuber (Friedrich Schiller, 1781)</head>
+<figure>
+<graphic url="153_final-11dc397dbb70bbc07d01aca6df55a328.jpg"/>
+<head> Abbildung 1: Figurenverzeichnis in Die Räuber (Friedrich Schiller, 1781)</head>
 </figure>
 </p>
 <p>Das Verfahren – und dessen Implementierung in einem Python-Skript – ist auch für in Zukunft digitalisierte Dramen anwendbar, und wird von uns als quelloffene Software zur Verfügung gestellt. Es ist vergleichsweise einfach auf neue Sprachstufen oder Genres anpassbar und liefert – auch bei nicht-perfekten Ergebnissen – eine gute Vorlage. Eine Evaluation des Verfahrens erfolgt auf ungesehenen Testdaten. Außerdem veröffentlichen wir einen Datensatz mit extrahierten Figurenrelationen aus deutschsprachigen Dramen, die manuell validiert und korrigiert wurden. Diese Daten werden zur einfachen und breiten Nutzung im TEI-Format in das GerDraCor<ref n="2" target="ftn2"/> eingespeist. Schlussendlich beschreiben wir beispielhaft zwei Analyseszenarien in denen die Daten neue Einblicke bieten (können).
 </p>
 </div>
 <div rend="DH-Heading" type="div1">
-  <head>Automatische Extraktion von Figurenrelationen</head>
-  <p>Unsere Methode unterscheidet zwischen sieben Kategorien von Figurenrelationen (Tabelle 1). Ausschlaggebend für die Zuordnung zu einer der Kategorien sind Signalwörter wie “Vater”, “Kammerdiener”, “Geschwister” etc. Diese Signalwörter werden in einer kontextfreien Grammatik der entsprechenden Kategorie zugeordnet.</p>
+<head>Automatische Extraktion von Figurenrelationen</head>
+<p>Unsere Methode unterscheidet zwischen sieben Kategorien von Figurenrelationen (Tabelle 1). Ausschlaggebend für die Zuordnung zu einer der Kategorien sind Signalwörter wie “Vater”, “Kammerdiener”, “Geschwister” etc. Diese Signalwörter werden in einer kontextfreien Grammatik der entsprechenden Kategorie zugeordnet.</p>
 <!-- <p>Tabelle 1: Figurenrelationen</p> -->
 <table rend="frame" xml:id="Tabelle1">
-  <head> Tabelle 1: Figurenrelationen</head>
+<head> Tabelle 1: Figurenrelationen</head>
 <row>
 <cell>Relationen Label</cell>
 <cell>gerichtet/ungerichtet</cell>
@@ -152,8 +152,8 @@
 <p>Anschließend werden alle Tokens jeder Zeile des Figurenverzeichnisses daraufhin untersucht, ob es sich dabei um Figurennennungen oder Signalwörter handelt und die Grammatik einem Parser übergeben, der die Zeilen des Figurenverzeichnisses in Baumstrukturen überführt (Abbildung 2).</p>
 <p>
 <figure>
-  <graphic url="153_final-71525d75afbb511e51085062cfc0b2ba.jpg"/>
-  <head>Abbildung 2: Zwei reduzierte Baumstrukturen für Figuren aus Nathan der Weise. </head>
+<graphic url="153_final-71525d75afbb511e51085062cfc0b2ba.jpg"/>
+<head>Abbildung 2: Zwei reduzierte Baumstrukturen für Figuren aus Nathan der Weise. </head>
 </figure>
 </p>
 <!-- <p>Abbildung 2: Zwei reduzierte Baumstrukturen für Figuren aus Nathan der Weise.</p> -->
@@ -209,7 +209,7 @@
 <p>
 <figure>
 <graphic url="153_final-d70fe97d295fea2ed5e791d5e2c39034.png"/>
-  <head>Abbildung 3: Figurennetzwerke nach Kopräsenz (oben) und Relationen (unten). Zur besseren Übersichtlichkeit wurden die Figuren auf feste Positionen gesetzt, die oben und unten gleich sind. Bezeichnungen werden nur gezeigt wenn der Grad groß genug ist (oben) oder sie an einer Beziehung beteiligt sind (unten). </head>
+<head>Abbildung 3: Figurennetzwerke nach Kopräsenz (oben) und Relationen (unten). Zur besseren Übersichtlichkeit wurden die Figuren auf feste Positionen gesetzt, die oben und unten gleich sind. Bezeichnungen werden nur gezeigt wenn der Grad groß genug ist (oben) oder sie an einer Beziehung beteiligt sind (unten). </head>
 </figure>
 </p>
 <!-- <p>Abbildung 3: Figurennetzwerke nach Kopräsenz (oben) und Relationen (unten). Zur besseren Übersichtlichkeit wurden die Figuren auf feste Positionen gesetzt, die oben und unten gleich sind. Bezeichnungen werden nur gezeigt wenn der Grad groß genug ist (oben) oder sie an einer Beziehung beteiligt sind (unten).</p> -->
@@ -217,14 +217,14 @@
 <p>
 <figure>
 <graphic url="153_final-607eb2e782c265e4776a513f48c3ed4f.jpg"/>
-  <head>Abbildung 4:  Redeanteile nach Familie </head>
+<head>Abbildung 4:  Redeanteile nach Familie </head>
 </figure>
 </p>
 <!-- <p>Abbildung 4: Redeanteile nach Familie</p> -->
 <p>
 <figure>
 <graphic url="153_final-d10d83ab61296d9578cd75456c1fa087.jpg"/>
-  <head>Abbildung 5: Verteilung der Relationen im Gesamtkorpus</head>
+<head>Abbildung 5: Verteilung der Relationen im Gesamtkorpus</head>
 </figure>
 </p>
 <!-- <p>Abbildung 5: Verteilung der Relationen im Gesamtkorpus</p> -->
@@ -236,15 +236,15 @@ wurden die Angaben auf den Titeln der Dramen übernommen und leicht
 vereinheitlicht (z.B. Bürgerliches Trauerspiel <hi rend="math">→</hi> Tragödie oder Zauberlustspiel <hi rend="math">→</hi> Komödie). Dabei ist zu konstatieren, dass Median und erstes Quartil bei 0 für alle Dramen bei 0 liegen: Viele Dramen weisen keine Beziehungsdefinition auf (oder sie konnten nicht automatisch identifiziert werden, siehe Fußnote ). Größere oder signifikante Abweichungen zwischen den Gattungen gibt es nicht, egal welche Relation betrachtet wird. Lediglich die Relation spouses scheint im Figurenverzeichnis von Komödien häufiger genannt zu werden.</p>
 <p>
 <figure>
-  <graphic url="153_final-4a1128c14a9f21d613a3039e495d24a0.png"/>
-  <head>Abbildung 6:  Anzahl typisierter Relationen nach Gattung </head>
+<graphic url="153_final-4a1128c14a9f21d613a3039e495d24a0.png"/>
+<head>Abbildung 6:  Anzahl typisierter Relationen nach Gattung </head>
 </figure>
 </p>
 <!-- <p>Abbildung 6: Anzahl typisierter Relationen nach Gattung</p> -->
 <p>
 <figure>
 <graphic url="153_final-b60d151aa656159ec80dfd80ce35709d.png"/>
-  <head>Abbildung 7: Anzahl typisierter Relationen nach Autor. Zur besseren Übersicht wurden nur Autoren berücksichtigt, die mindestens durch fünf Dramen vertreten sind</head>
+<head>Abbildung 7: Anzahl typisierter Relationen nach Autor. Zur besseren Übersicht wurden nur Autoren berücksichtigt, die mindestens durch fünf Dramen vertreten sind</head>
 </figure>
 </p>
 <!-- <p>Abbildung 7: Anzahl typisierter Relationen nach Autor. Zur besseren Übersicht wurden nur Autoren berücksichtigt, die mindestens durch fünf Dramen vertreten sind</p> -->
@@ -257,38 +257,38 @@ vereinheitlicht (z.B. Bürgerliches Trauerspiel <hi rend="math">→</hi> Tragöd
 </div>
 </body>
 <back>
-  <div type="notes">
-    <note n="1" rend="footnote text" xml:id="ftn1">
+<div type="notes">
+<note n="1" rend="footnote text" xml:id="ftn1">
       Beispielsweise  spielt das Figurenverzeichnis im kürzlich erschienenen
       (Tonger-Erk, Werber, und Baum 2018), aber auch in (Genette 1993)
       quasi keine Rolle.
     </note>
-    <note n="2" rend="footnote text" xml:id="ftn2">
-      <ref target="https://dracor.org/">https://dracor.org</ref>
-    </note>
-    <note n="3" rend="footnote text" xml:id="ftn3">
+<note n="2" rend="footnote text" xml:id="ftn2">
+<ref target="https://dracor.org/">https://dracor.org</ref>
+</note>
+<note n="3" rend="footnote text" xml:id="ftn3">
       Für mehr     Informationen vergleiche (Schlaffer 1972, 11)
     </note>
-    <note n="4" rend="footnote text" xml:id="ftn4">
-      <ptr target="https://github.com/dracor-org/shakedracor/blob/d569dc9886b3d1951f23b0454a3d7103e4cdf1bb/tei/romeo-and-juliet.xml"/>
-    </note>
-    <note n="5" rend="footnote text" xml:id="ftn5">
+<note n="4" rend="footnote text" xml:id="ftn4">
+<ptr target="https://github.com/dracor-org/shakedracor/blob/d569dc9886b3d1951f23b0454a3d7103e4cdf1bb/tei/romeo-and-juliet.xml"/>
+</note>
+<note n="5" rend="footnote text" xml:id="ftn5">
       Die konkreten Ergebnisse wurden auf den <hi rend="italic">vollautomatisch erzeugten Relationen</hi> erzielt.
     </note>
-  </div>
-  <div type="bibliogr">
+</div>
+<div type="bibliogr">
 <listBibl>
 <head>Bibliographie</head>
 <bibl>
-  <hi rend="bold"> Asmuth, Bernhard. </hi> (2016). 
+<hi rend="bold"> Asmuth, Bernhard. </hi> (2016). 
   <hi rend="italic">Einführung in die Dramenanalyse</hi>. Stuttgart: J.B. Metzler Verlag.
 </bibl>
 <bibl>
-  <hi rend="bold"> Böckenhauer, Hans-Joachim /  Juraj Hromkovič </hi> (2013): 
+<hi rend="bold"> Böckenhauer, Hans-Joachim /  Juraj Hromkovič </hi> (2013): 
   <hi rend="italic">Formale Sprachen: Endliche Automaten, Grammatiken, lexikalische und syntaktische Analyse</hi>. Zürich: Springer.
 </bibl>
 <bibl>
-  <hi rend="bold"> Fischer, Frank / Ingo Börner / Mathias Göbel /
+<hi rend="bold"> Fischer, Frank / Ingo Börner / Mathias Göbel /
   Angelika Hechtl  / Christopher Kittel / Carsten Milling /  Peer
   Trilcke</hi>
   (2019):  „Programmable Corpora – Die digitale Literaturwissenschaft zwischen Forschung und Infrastruktur am Beispiel von DraCor“. In 
@@ -296,27 +296,27 @@ vereinheitlicht (z.B. Bürgerliches Trauerspiel <hi rend="math">→</hi> Tragöd
   <ptr target="https://doi.org/10.5281/zenodo.2596095"/>.
 </bibl>
 <bibl>
-  <hi rend="bold"> Genette, Gérard </hi> (1993): 
+<hi rend="bold"> Genette, Gérard </hi> (1993): 
   <hi rend="italic">Palimpseste. Die Literatur auf zweiter Stufe</hi>. Frankfurt am Main: Suhrkamp.
 </bibl>
 <bibl>
-  <hi rend="bold"> Jeßing, Benedikt</hi> (2015): 
+<hi rend="bold"> Jeßing, Benedikt</hi> (2015): 
   <hi rend="italic">Dramenanalyse. Eine Einführung</hi>. Berlin: Erich Schmidt Verlag.
 </bibl>
 <bibl>
-  <hi rend="bold"> Pangallo, Matteo</hi> (2015):  „‚I will keep and character that name‘: Dramatis Personae Lists in Early Modern Manuscript Plays“. 
+<hi rend="bold"> Pangallo, Matteo</hi> (2015):  „‚I will keep and character that name‘: Dramatis Personae Lists in Early Modern Manuscript Plays“. 
   <hi rend="italic">Early Theatre</hi> 18 (2): 87–118. <ptr target="https://doi.org/10.12745/et.18.2.1166"/>.
 </bibl>
 <bibl>
-  <hi rend="bold"> Pfister, Manfred</hi> (2001): 
+<hi rend="bold"> Pfister, Manfred</hi> (2001): 
   <hi rend="italic">Das Drama</hi>. München: Wilhelm Fink.
 </bibl>
 <bibl>
-  <hi rend="bold"> Schlaffer, Hannelore</hi> (1972):
+<hi rend="bold"> Schlaffer, Hannelore</hi> (1972):
   <hi rend="italic">Dramenform und Klassenstruktur. Eine Analyse der dramatis persona "Volk"</hi>. Stuttgart: J.B. Metzler Verlag.
 </bibl>
 <bibl>
-  <hi rend="bold"> Tonger-Erk, Lily  /  Nils Werber /  Constanze Baum (Hrsg.)</hi> (2018):  „Hauptsache Nebentext. Regiebemerkungen im Drama“. 
+<hi rend="bold"> Tonger-Erk, Lily  /  Nils Werber /  Constanze Baum (Hrsg.)</hi> (2018):  „Hauptsache Nebentext. Regiebemerkungen im Drama“. 
   <hi rend="italic">Zeitschrift für Literaturwissenschaft und Linguistik</hi> 48 (3).
 </bibl>
 </listBibl>

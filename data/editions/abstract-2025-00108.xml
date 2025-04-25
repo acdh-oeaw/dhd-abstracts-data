@@ -1,878 +1,876 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="KETSCHIK_Nora_Netzwerkanalysen_narrativer_Texte___ein_Vorgeh">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Netzwerkanalysen narrativer Texte - ein Vorgehensmodell</title>
-                <author>
-                    <persName>
-                        <surname>Ketschik</surname>
-                        <forename>Nora</forename>
-                    </persName>
-                    <affiliation>Universität Stuttgart, Deutschland</affiliation>
-                    <email>nora.ketschik@ims.uni-stuttgart.de</email>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-12-02T10:56:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag: Methode</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Netzwerkanalyse</term>
-                    <term>Figuren</term>
-                    <term>Methode</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Annotieren</term>
-                    <term>Netzwerkanalyse</term>
-                    <term>Literatur</term>
-                    <term>Methoden</term>
-                    <term>benannte Entitäten (named entities)</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einleitung</head>
-                <p>Die soziale Netzwerkanalyse ist in den Computational Literary Studies (CLS) seit mehreren Jahrzehnten als eine Methode etabliert, mit der Figurenbeziehungen in verschiedenen Textgattungen exploriert und analysiert werden. Der Fokus liegt dabei auf dramatischen Untersuchungsgegenständen (vgl. z.B. Szemes und Vida, 2024; Trilcke, 2013; Trilcke et al., 2024; Krautter und Vauth, 2023; Viehhauser, 2023); die Verwendung der Netzwerkanalyse für narrative Texte ist hingegen vergleichsweise selten. Dies liegt m.E. insbesondere daran, dass es um ein Vielfaches voraussetzungsreicher ist, die für Netzwerkanalysen benötigten Daten aus narrativen Texten zu extrahieren, als dies für Dramen der Fall ist. Während Netzwerkanalysen dramatischer Texte i.d.R. auf den Nebentextangaben basieren und daraus szenenbasierte Kookkurrenzen ableiten, bedarf es mehrerer komplexer Schritte, um die gleiche Art der Information aus Erzähltexten zu extrahieren. Die Mehrarbeit resultiert nicht nur aus komplexen Tasks wie Entitätenreferenzerkennung und Koreferenzauflösung, sondern auch aus dem Umstand, dass die relevanten Informationen mit anderen Aspekten auf 
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="KETSCHIK_Nora_Netzwerkanalysen_narrativer_Texte___ein_Vorgeh" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Netzwerkanalysen narrativer Texte - ein Vorgehensmodell</title>
+<author>
+<persName>
+<surname>Ketschik</surname>
+<forename>Nora</forename>
+</persName>
+<affiliation>Universität Stuttgart, Deutschland</affiliation>
+<email>nora.ketschik@ims.uni-stuttgart.de</email>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-12-02T10:56:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/15124132</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Vortrag: Methode</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Netzwerkanalyse</term>
+<term>Figuren</term>
+<term>Methode</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Annotieren</term>
+<term>Netzwerkanalyse</term>
+<term>Literatur</term>
+<term>Methoden</term>
+<term>benannte Entitäten (named entities)</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Einleitung</head>
+<p>Die soziale Netzwerkanalyse ist in den Computational Literary Studies (CLS) seit mehreren Jahrzehnten als eine Methode etabliert, mit der Figurenbeziehungen in verschiedenen Textgattungen exploriert und analysiert werden. Der Fokus liegt dabei auf dramatischen Untersuchungsgegenständen (vgl. z.B. Szemes und Vida, 2024; Trilcke, 2013; Trilcke et al., 2024; Krautter und Vauth, 2023; Viehhauser, 2023); die Verwendung der Netzwerkanalyse für narrative Texte ist hingegen vergleichsweise selten. Dies liegt m.E. insbesondere daran, dass es um ein Vielfaches voraussetzungsreicher ist, die für Netzwerkanalysen benötigten Daten aus narrativen Texten zu extrahieren, als dies für Dramen der Fall ist. Während Netzwerkanalysen dramatischer Texte i.d.R. auf den Nebentextangaben basieren und daraus szenenbasierte Kookkurrenzen ableiten, bedarf es mehrerer komplexer Schritte, um die gleiche Art der Information aus Erzähltexten zu extrahieren. Die Mehrarbeit resultiert nicht nur aus komplexen Tasks wie Entitätenreferenzerkennung und Koreferenzauflösung, sondern auch aus dem Umstand, dass die relevanten Informationen mit anderen Aspekten auf 
                     <hi rend="italic">Discours</hi>- und 
                     <hi rend="italic">Histoire</hi>-Ebene zusammenhängen können. Beispielsweise ergibt es nur dann Sinn, die Beziehungen zwischen Figuren zu analysieren, wenn man differenzieren kann, welche Figuren auf welcher Erzählebene agieren, oder wenn man weiß, welche Figuren handeln und welche ggf. nur erwähnt werden (etwa, wenn andere Figuren über sie sprechen). Aspekte wie Erzählebenen (Gius et al., 2019b/2021), Erzählerkommentare (Weimer et al., 2022) und Figurenrede (Brunner et al., 2020a/b; Krug et al., 2016) sind als eigene Untersuchungsgegenstände in den CLS durchaus formalisiert, systematisiert und analysiert worden, bisher aber nicht in Workflows für netzwerkanalytische Datenerhebungen integriert worden. Im vorliegenden Beitrag stelle ich daher ein modulares Vorgehensmodell vor, das geeignet ist, kookkurrenzbasierte Netzwerke zwischen Figuren aus Erzählungen zu extrahieren, und dabei andere relevante Aspekte narrativer Texte, die die Netzwerkdaten entscheidend beeinflussen, mitberücksichtigt.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Die Methode der Netzwerkanalyse in den Computational Literary Studies</head>
-                <p>Die ursprünglich aus den Sozialwissenschaften stammende Methode der (sozialen) Netzwerkanalyse wird bereits seit vielen Jahren in den CLS für die Analyse von Figurenrelationen, darunter Informations- und Machtstrukturen (Vauth, 2019; Krautter und Vauth, 2023), zur Klassifikation von Figurentypen (Krautter et al., 2020; Vauth, 2023) oder zur Unterscheidung dramatischer Formen (Trilcke, 2013; Szemes und Vida, 2024; Viehhauser, 2023) eingesetzt. Dem Gros der Beiträge ist gemein, dass sie sich dabei erstens auf dramatische Texte und zweitens auf die Szenen- oder Gesprächsstrukturen konzentrieren. Dies liegt u.a. daran, dass die notwendigen Informationen über die Textstruktur leicht greifbar sind: Die szenische Einteilung im Drama gibt Einheiten für Figurenkonfigurationen vor. Eine solch direkte und intuitive Datenerhebung ist für narrative Texte nicht möglich – weswegen es nach wie vor keinen gleichermaßen etablierten Zugang zur Erfassung von Kookkurrenzen zwischen Figuren gibt. Rochat und Kaplan (2014) verwenden beispielsweise einen Index bestehend aus Eigennamen und Seitenzahlen, um kookkurrenzbasierte Figurennetzwerke zu Rousseaus Autobiographie zu erstellen; sie nehmen immer dann eine Figurenrelation an, wenn zwei Figuren in einem Kontext von drei Seiten gemeinsam genannt werden. Argawal et al. (2012) stützen sich hingegen auf ein an Zeitungstexten entwickeltes Konzept von 
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Die Methode der Netzwerkanalyse in den Computational Literary Studies</head>
+<p>Die ursprünglich aus den Sozialwissenschaften stammende Methode der (sozialen) Netzwerkanalyse wird bereits seit vielen Jahren in den CLS für die Analyse von Figurenrelationen, darunter Informations- und Machtstrukturen (Vauth, 2019; Krautter und Vauth, 2023), zur Klassifikation von Figurentypen (Krautter et al., 2020; Vauth, 2023) oder zur Unterscheidung dramatischer Formen (Trilcke, 2013; Szemes und Vida, 2024; Viehhauser, 2023) eingesetzt. Dem Gros der Beiträge ist gemein, dass sie sich dabei erstens auf dramatische Texte und zweitens auf die Szenen- oder Gesprächsstrukturen konzentrieren. Dies liegt u.a. daran, dass die notwendigen Informationen über die Textstruktur leicht greifbar sind: Die szenische Einteilung im Drama gibt Einheiten für Figurenkonfigurationen vor. Eine solch direkte und intuitive Datenerhebung ist für narrative Texte nicht möglich – weswegen es nach wie vor keinen gleichermaßen etablierten Zugang zur Erfassung von Kookkurrenzen zwischen Figuren gibt. Rochat und Kaplan (2014) verwenden beispielsweise einen Index bestehend aus Eigennamen und Seitenzahlen, um kookkurrenzbasierte Figurennetzwerke zu Rousseaus Autobiographie zu erstellen; sie nehmen immer dann eine Figurenrelation an, wenn zwei Figuren in einem Kontext von drei Seiten gemeinsam genannt werden. Argawal et al. (2012) stützen sich hingegen auf ein an Zeitungstexten entwickeltes Konzept von 
                     <hi rend="italic">Social Events</hi>, um Interaktionen in 
                     <hi rend="italic">Alice in Wonderland</hi> zu analysieren; Elson et al. (2010) extrahieren wiederum Konversationsnetzwerke basierend auf Dialog- und Sprecherannotationen in einem englischen Novellenkorpus. Ebenso stützt Vauth (2023) seine Analysen zu Kleist auf manuelle Sprecherannotationen (auch, um die Vergleichbarkeit mit den dramatischen Texten zu gewährleisten); Smeets (2021) erstellt wiederum Kookkurrenznetzwerke, verwendet dafür aber ausschließlich Eigennamen, die er sodann automatisch (aus einem entsprechend großen Korpus) extrahieren kann.
                 </p>
-                <p>Die Beispiele zeigen, dass eine große Varianz dahingehend besteht, (erstens) welche Arten von Referenzausdrücken, (zweitens) welche Arten von Relationen, und (drittens) auf welche Weise die Informationen erfasst werden. Darüber hinaus werden Kontexte der Figurenvorkommen (z.B. innerhalb vs. außerhalb von Figurenrede) und Einflüsse von 
+<p>Die Beispiele zeigen, dass eine große Varianz dahingehend besteht, (erstens) welche Arten von Referenzausdrücken, (zweitens) welche Arten von Relationen, und (drittens) auf welche Weise die Informationen erfasst werden. Darüber hinaus werden Kontexte der Figurenvorkommen (z.B. innerhalb vs. außerhalb von Figurenrede) und Einflüsse von 
                     <hi rend="italic">Discours</hi>-Elementen (etwa der Organisation der Erzählung auf verschiedenen Erzählebenen) mehrheitlich ignoriert. Dies führt zum einen zu undifferenzierten Netzwerken und verhindert zum anderen die Vergleichbarkeit zwischen Netzwerken über verschiedene Ansätze hinweg. Reflektiert werden die Auswirkungen verschiedener Datengrundlagen ansatzweise bei Jannidis et al. (2016), die an einem Novellenkorpus Möglichkeiten zur Evaluation automatisch erstellter Figurennetzwerke diskutieren,<ref n="1" target="ftn1"/> sowie bei Andresen und Vauth (2018), die für einen Text ermitteln, wie die Art des Referenzausdrucks (Eigenname/Appellativ/Pronomen) und sein Kontext (in/außerhalb von direkter Rede) dessen Frequenz beeinflusst.<ref n="2" target="ftn2"/>
+</p>
+<p>Es ist anzunehmen, dass die fehlende Integration verschiedener, für die Erfassung von Figurenvorkommen und -relationen relevanter Aspekte in der Komplexität dieser Teilaufgaben begründet liegt. So wäre – analog zum Drama – die Einteilung eines Textes in „Szenen“, wie sie Gius et al. (2019a) vorschlagen, ein naheliegender Schritt für die Extraktion von Kookkurrenzen, der aber seinerseits extrem voraussetzungsreich ist, da er auf komplexen Kategorien wie Raum und Zeit/Chronologie aufbaut.<ref n="3" target="ftn3"/> Auch Veränderungen in der Figurenkonfiguration (die nach Gius et al., 2019a ebenfalls einen Szenenwechsel indizieren) können nur identifiziert werden, wenn die Kontexte der Figurennennungen bereits bekannt sind. Wird beispielsweise lediglich über eine andere Figur gesprochen oder an eine andere Figur gedacht, führt dies nicht zu einer Veränderung in der Figurenkonfiguration im Sinne der Szenendefinition. Netzwerkanalysen zu narrativen Texten fußen damit – derzeit – entweder auf intensiver manueller Annotationsarbeit oder auf einer unvollständigen Datengrundlage. Umso wichtiger erscheint es, kritisch mit den möglicherweise lückenhaften Daten umzugehen und deren Auswirkungen auf die resultierenden Netzwerke abschätzen zu können.
                 </p>
-                <p>Es ist anzunehmen, dass die fehlende Integration verschiedener, für die Erfassung von Figurenvorkommen und -relationen relevanter Aspekte in der Komplexität dieser Teilaufgaben begründet liegt. So wäre – analog zum Drama – die Einteilung eines Textes in „Szenen“, wie sie Gius et al. (2019a) vorschlagen, ein naheliegender Schritt für die Extraktion von Kookkurrenzen, der aber seinerseits extrem voraussetzungsreich ist, da er auf komplexen Kategorien wie Raum und Zeit/Chronologie aufbaut.<ref n="3" target="ftn3"/> Auch Veränderungen in der Figurenkonfiguration (die nach Gius et al., 2019a ebenfalls einen Szenenwechsel indizieren) können nur identifiziert werden, wenn die Kontexte der Figurennennungen bereits bekannt sind. Wird beispielsweise lediglich über eine andere Figur gesprochen oder an eine andere Figur gedacht, führt dies nicht zu einer Veränderung in der Figurenkonfiguration im Sinne der Szenendefinition. Netzwerkanalysen zu narrativen Texten fußen damit – derzeit – entweder auf intensiver manueller Annotationsarbeit oder auf einer unvollständigen Datengrundlage. Umso wichtiger erscheint es, kritisch mit den möglicherweise lückenhaften Daten umzugehen und deren Auswirkungen auf die resultierenden Netzwerke abschätzen zu können.
-                </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Textstatistiken im Kontext von Figurennetzwerken</head>
-                <p>Das hier vorgestellte Vorgehensmodell zur Extraktion von Kookkurrenznetzwerken aus narrativen Texten baut auf Analysen zu mittelhochdeutschen Romanen (Ketschik, 2024) auf und wurde im Rahmen des vorliegenden Beitrags an anderen narrativen Texten in neuhochdeutscher Sprache weiterentwickelt und erprobt. Für die Analysen und Statistiken wurden Texte aus dem Deutschen Romankorpus (DROC, Krug et al., 2018) verwendet, in denen Annotationen zu Figuren (inkl. Koreferenzresolution) und Figurenrede enthalten sind. Die Textstatistiken vermitteln einen Eindruck davon, inwiefern die Wahl des Figurenreferenzausdrucks, die Segmentierungsgröße und die Kontexte von Figurenreferenzen die resultierenden Netzwerke beeinflussen.</p>
-                <figure>
-                    <graphic n="1001" width="15.998655555555555cm" height="7.253641666666667cm" url="Pictures/858a32bc747ba8238e0b35a1f1496150.png" rend="inline"/>
-                    <head>Tabelle 1: Texte, Anzahl der Figurenreferenzen (absolut) und Art der Referenz (in Prozent).</head>
-                </figure>
-                <p>Tabelle 1 zeigt, dass Eigennamen mit durchschnittlich 14% und Werten zwischen knapp 10% und gut 20% den geringsten Anteil der Figurenreferenzen im Textkorpus ausmachen, gefolgt von Appellativen mit durchschnittlich 18%. Die häufigsten Referenzausdrücke sind Pronomina, wobei ihr Anteil zwischen 57% und 77% liegt. Homodiegetische Erzählungen (hier 
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Textstatistiken im Kontext von Figurennetzwerken</head>
+<p>Das hier vorgestellte Vorgehensmodell zur Extraktion von Kookkurrenznetzwerken aus narrativen Texten baut auf Analysen zu mittelhochdeutschen Romanen (Ketschik, 2024) auf und wurde im Rahmen des vorliegenden Beitrags an anderen narrativen Texten in neuhochdeutscher Sprache weiterentwickelt und erprobt. Für die Analysen und Statistiken wurden Texte aus dem Deutschen Romankorpus (DROC, Krug et al., 2018) verwendet, in denen Annotationen zu Figuren (inkl. Koreferenzresolution) und Figurenrede enthalten sind. Die Textstatistiken vermitteln einen Eindruck davon, inwiefern die Wahl des Figurenreferenzausdrucks, die Segmentierungsgröße und die Kontexte von Figurenreferenzen die resultierenden Netzwerke beeinflussen.</p>
+<figure>
+<graphic height="7.253641666666667cm" n="1001" rend="inline" url="Pictures/858a32bc747ba8238e0b35a1f1496150.png" width="15.998655555555555cm"/>
+<head>Tabelle 1: Texte, Anzahl der Figurenreferenzen (absolut) und Art der Referenz (in Prozent).</head>
+</figure>
+<p>Tabelle 1 zeigt, dass Eigennamen mit durchschnittlich 14% und Werten zwischen knapp 10% und gut 20% den geringsten Anteil der Figurenreferenzen im Textkorpus ausmachen, gefolgt von Appellativen mit durchschnittlich 18%. Die häufigsten Referenzausdrücke sind Pronomina, wobei ihr Anteil zwischen 57% und 77% liegt. Homodiegetische Erzählungen (hier 
                     <hi rend="italic">Stopfkuchen</hi> und 
                     <hi rend="italic">Zwanzigtausend Meilen unter‘m Meer</hi>) führen nicht zwangsläufig zu einem höheren Anteil pronominaler Referenzen gegenüber Texten mit heterodiegetischer Erzählerinstanz.
                 </p>
-                <p>Die Verteilung ist aber innerhalb eines Textes figurenspezifisch. In 
+<p>Die Verteilung ist aber innerhalb eines Textes figurenspezifisch. In 
                     <hi rend="italic">Oliver Twist</hi> wird die Hauptfigur beispielsweise am häufigsten mit Pronomen, am zweithäufigsten mit Eigennamen und nur selten mit Appellativen benannt, für Jack hingegen gibt es zwar ebenfalls überwiegend pronominale Referenzausdrücke, aber häufiger Appellative als Eigennamen; bei Mr. Bumble wiederum sind nur knapp 50% der Referenzen pronominal, die Mehrheit hingegen Eigen- und Gattungsnamen (s. Anhang). Tendenziell haben Nebenfiguren mit niedriger Frequenz weniger pronominale Referenzen als Hauptfiguren (s. Anhang). So eine Ungleichverteilung wird immer dann relevant, wenn 
                     <hi rend="bold">nicht</hi> alle Referenzausdrücke für die Extraktion der Entitäten berücksichtigt werden. Wenn also – oftmals aus Gründen der schnelleren Operationalisierbarkeit – auf pronominale Referenzen verzichtet wird, führt dies bei der Erfassung von Figurenvorkommen und -relationen zu Verzerrungen (tendenziell dahingehend, dass Nebenfiguren begünstigt und Hauptfiguren vernachlässigt werden). Darüber hinaus ist zu betonen, dass reine Named-Entity-Ansätze manche Figuren gar nicht erfassen können (insbesondere Figuren, die über ihre Rollen benannt sind, z.B. Vater/Arzt).
                 </p>
-                <figure>
-                    <graphic n="1002" width="9.517941666666667cm" height="8.4499cm" url="Pictures/a277717ca74d25dae5006f9915312615.jpeg" rend="inline"/>
-                    <head>Abbildung 1: Netzwerk zu Fontanes 
+<figure>
+<graphic height="8.4499cm" n="1002" rend="inline" url="Pictures/a277717ca74d25dae5006f9915312615.jpeg" width="9.517941666666667cm"/>
+<head>Abbildung 1: Netzwerk zu Fontanes 
                     <hi rend="italic">Mathilde Möhring</hi> basierend auf allen Referenzausdrücken.</head>
-                </figure>
-                <figure>
-                    <graphic n="1003" width="9.050847222222222cm" height="8.405355555555555cm" url="Pictures/8a1e434e8985ace016a137fb25ffdb11.jpeg" rend="inline"/>
-                    <head>Abbildung 2: Netzwerk zu Fontanes 
+</figure>
+<figure>
+<graphic height="8.405355555555555cm" n="1003" rend="inline" url="Pictures/8a1e434e8985ace016a137fb25ffdb11.jpeg" width="9.050847222222222cm"/>
+<head>Abbildung 2: Netzwerk zu Fontanes 
                     <hi rend="italic">Mathilde Möhring</hi> basierend auf Eigennamen.</head>
-                </figure>
-                <p>Die Wahl des Referenzausdrucks hat konsequenterweise gravierende Auswirkungen auf das resultierende Netzwerk. Exemplarisch seien zwei Netzwerke zu einem Auszug aus Fontanes 
+</figure>
+<p>Die Wahl des Referenzausdrucks hat konsequenterweise gravierende Auswirkungen auf das resultierende Netzwerk. Exemplarisch seien zwei Netzwerke zu einem Auszug aus Fontanes 
                     <hi rend="italic">Mathilde Möhring</hi> gezeigt (Kookkurrenzen basieren auf Satzgrenzen): Abbildung 1 berücksichtig alle Referenzausdrücke, Abbildung 2 nur Eigennamen.<ref n="4" target="ftn4"/> Letztere umfasst, wie erwartbar, nur Bruchteile des Figureninventars. Besonders kritisch ist, dass eigentlich zentrale Figure wie Hugo irrelevant und umgekehrt Randfiguren wie die nur erwähnte Amalie zentral erscheinen. Die verzerrenden Effekte, die mit einer solchen Restriktion auf Eigennamen einhergehen, fließen in Berechnungen wie Zentralitätsmaße ein (Tabelle 2):
                 </p>
-                <figure>
-                  
-                    <graphic n="1004" width="12.725161111111111cm" height="4.130261111111111cm" url="Pictures/1bca8c7d56e93fd5f67946f4008f6b87.png" rend="inline"/>
-                    <head>Tabelle 2: Gradzentralität für ausgewählte Figuren aus <hi rend="italic">Mathilde Möhring</hi>.</head>
-                </figure>
-                <p>Neben der Wahl der Referenzausdrücke hat die Segmentgröße als Grundlage für Kookkurrenzen einen entscheidenden Einfluss auf die Netzwerke. Die Größe der Segmentierung hängt (auch) mit der Wahl der Referenzausdrücke zusammen. Werden z.B. keine Pronomina berücksichtigt, ist es sinnvoll, die Segmente zu vergrößern. Welche Segmentgröße angemessen ist, lässt sich nicht pauschal beantworten. Hinweise können die Abstände zwischen Pronomen und Antezedent geben, da etwa ein Netzwerk ohne pronominale Referenzen den „Weg“ bis zur nächsten nicht-pronominalen Referenz (Appellativ oder Eigenname) überbrücken muss. Die Abstände sind wiederum stark textabhängig (und figurenspezifisch), beispielsweise stehen in Fontanes 
+<figure>
+<graphic height="4.130261111111111cm" n="1004" rend="inline" url="Pictures/1bca8c7d56e93fd5f67946f4008f6b87.png" width="12.725161111111111cm"/>
+<head>Tabelle 2: Gradzentralität für ausgewählte Figuren aus <hi rend="italic">Mathilde Möhring</hi>.</head>
+</figure>
+<p>Neben der Wahl der Referenzausdrücke hat die Segmentgröße als Grundlage für Kookkurrenzen einen entscheidenden Einfluss auf die Netzwerke. Die Größe der Segmentierung hängt (auch) mit der Wahl der Referenzausdrücke zusammen. Werden z.B. keine Pronomina berücksichtigt, ist es sinnvoll, die Segmente zu vergrößern. Welche Segmentgröße angemessen ist, lässt sich nicht pauschal beantworten. Hinweise können die Abstände zwischen Pronomen und Antezedent geben, da etwa ein Netzwerk ohne pronominale Referenzen den „Weg“ bis zur nächsten nicht-pronominalen Referenz (Appellativ oder Eigenname) überbrücken muss. Die Abstände sind wiederum stark textabhängig (und figurenspezifisch), beispielsweise stehen in Fontanes 
                     <hi rend="italic">Mathilde Möhring</hi> die Pronomen im Durchschnitt 130 Tokens von ihrem nicht-pronominalen Antezedenten entfernt, in Dickens 
                     <hi rend="italic">Oliver Twist</hi> hingegen 37 Tokens (Tabelle 3).
                 </p>
-                <figure>
-                    <graphic n="1005" width="12.498872222222221cm" height="6.731780555555556cm" url="Pictures/79330c5c244868433118bbaf3cb0831c.png" rend="inline"/>
-                    <head>Tabelle 3: Abstände vom pronominalen Referenzausdruck zum vorangehenden Appellativ oder Eigennamen.</head>
-                </figure>
-                <p style="text-align: left; text-align: justify;">Das Beispielnetzwerk zu 
+<figure>
+<graphic height="6.731780555555556cm" n="1005" rend="inline" url="Pictures/79330c5c244868433118bbaf3cb0831c.png" width="12.498872222222221cm"/>
+<head>Tabelle 3: Abstände vom pronominalen Referenzausdruck zum vorangehenden Appellativ oder Eigennamen.</head>
+</figure>
+<p style="text-align: left; text-align: justify;">Das Beispielnetzwerk zu 
                     <hi rend="italic">Mathilde Möhring</hi> lässt weitere Fallstricke für Netzwerkanalysen narrativer Texte erkennen. Erstens wird evident, dass Figuren im Netzwerk enthalten sind, die nicht Teil der fiktiven Welt sind, Karl Moor etwa ist Schillers 
                     <hi rend="italic">Räubern</hi> entsprungen. Zweitens werden Figuren im Netzwerk abgebildet, die in der Textstelle (ein Dialog zwischen Hugo und Rybinski) nicht agieren; dies betrifft z.B. Hugos Vater, nach dem Rybinski sich erkundigt, der aber nicht anwesend und zum Zeitpunkt der Handlung bereits verstorben ist. Als weitere Kontexte von Figurenreferenzen sind neben Figurenrede Erzählerkommentare und narrative Ebenen zu berücksichtigen.
                 </p>
-                <p style="text-align: left; text-align: justify;">Die fehlende Differenzierung zwischen Kontexten der Figurennennungen führt nicht nur dazu, dass im Netzwerk ggf. Relationen zwischen Figuren visualisiert werden, die in der Handlung nie kookkurrieren, sondern auch, dass (etwa innerhalb von Figurenrede) erwähnte Figuren die Netzwerkmetriken (z.B. die Netzwerkgröße, Zentralitätswerte, Dichtemaße) in hohem Maß beeinflussen. So umfasst das Netzwerk zum 
+<p style="text-align: left; text-align: justify;">Die fehlende Differenzierung zwischen Kontexten der Figurennennungen führt nicht nur dazu, dass im Netzwerk ggf. Relationen zwischen Figuren visualisiert werden, die in der Handlung nie kookkurrieren, sondern auch, dass (etwa innerhalb von Figurenrede) erwähnte Figuren die Netzwerkmetriken (z.B. die Netzwerkgröße, Zentralitätswerte, Dichtemaße) in hohem Maß beeinflussen. So umfasst das Netzwerk zum 
                     <hi rend="italic">Mathilde-Möhring</hi>-Ausschnitt lediglich drei Figuren, wenn erwähnte Figuren herausgefiltert werden.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Vorgehensmodell</head>
-                <p>Die verschiedenen Aspekte, die für eine reflektierte Netzwerkanalyse von narrativen Texten relevant sind, werden nun in einem Vorgehensmodell zusammengefasst (Abb. 3). Das Modell kann unabhängig davon eingesetzt werden, ob die Schritte durch manuelle Annotation oder (teil-)automatisch umgesetzt werden. Bestimmte Arbeitsschritte (v.a. III–V) können je nach Texteigenschaften oder Untersuchungsfrage ggf. wegfallen. Die einzelnen Schritte werden im Folgenden kurz erläutert.</p>
-                <figure>
-                    <graphic n="1006" width="16.002cm" height="11.742208333333334cm" url="Pictures/eb43e70553c09dfc52ea1bc8d366ed2b.jpeg" rend="inline"/>
-                    <head>Abbildung 3: Vorgehensmodell zur Erstellung von Figuren-Kookkurrenznetzwerken aus narrativen Texten.</head>
-                </figure>
-                <p>
-                    <hi rend="bold">I. Figurenreferenzannotation und Koreferenzresolution</hi>: Um Figuren (oder andere Entitäten)<ref n="5" target="ftn5"/> in Erzählungen zu erfassen, müssen diejenigen Ausdrücke, die auf eine Figur referieren, manuell oder (teil-)automatisch im Text annotiert werden. Referenzausdrücke lassen sich in „Eigenname“, „Appellativ“ und „Pronomen“ einteilen. Koreferenzen müssen aufgelöst werden. Wenn es darum geht, Figurenpräsenzen zu finden, ist darauf zu achten, dass Referenzausdrücke verschachtelt sein können und eingebettete Ausdrücke herauszufiltern sind (z.B. [[Hugos] Frau] = Mathilde).
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Vorgehensmodell</head>
+<p>Die verschiedenen Aspekte, die für eine reflektierte Netzwerkanalyse von narrativen Texten relevant sind, werden nun in einem Vorgehensmodell zusammengefasst (Abb. 3). Das Modell kann unabhängig davon eingesetzt werden, ob die Schritte durch manuelle Annotation oder (teil-)automatisch umgesetzt werden. Bestimmte Arbeitsschritte (v.a. III–V) können je nach Texteigenschaften oder Untersuchungsfrage ggf. wegfallen. Die einzelnen Schritte werden im Folgenden kurz erläutert.</p>
+<figure>
+<graphic height="11.742208333333334cm" n="1006" rend="inline" url="Pictures/eb43e70553c09dfc52ea1bc8d366ed2b.jpeg" width="16.002cm"/>
+<head>Abbildung 3: Vorgehensmodell zur Erstellung von Figuren-Kookkurrenznetzwerken aus narrativen Texten.</head>
+</figure>
+<p>
+<hi rend="bold">I. Figurenreferenzannotation und Koreferenzresolution</hi>: Um Figuren (oder andere Entitäten)<ref n="5" target="ftn5"/> in Erzählungen zu erfassen, müssen diejenigen Ausdrücke, die auf eine Figur referieren, manuell oder (teil-)automatisch im Text annotiert werden. Referenzausdrücke lassen sich in „Eigenname“, „Appellativ“ und „Pronomen“ einteilen. Koreferenzen müssen aufgelöst werden. Wenn es darum geht, Figurenpräsenzen zu finden, ist darauf zu achten, dass Referenzausdrücke verschachtelt sein können und eingebettete Ausdrücke herauszufiltern sind (z.B. [[Hugos] Frau] = Mathilde).
                 </p>
-                <p>
-                    <hi rend="bold">II. Textsegmentierung</hi>: Um Kookkurrenzen zwischen Figuren zu erfassen, muss ein Textfenster vorgegeben werden. Die Textsegmentierung kann auf Grundlage von Layout-Informationen (z.B. Absätzen, linguistischen Einheiten (z.B. Sätzen) oder narratologischen Einheiten („Szenen“ nach Gius et al., 2019a) erfolgen. Für Kookkurrenznetzwerke gibt die Textsegmentierung den Rahmen vor, in dem Relationen zwischen zwei oder mehr Figuren erfasst werden. Hierbei gilt grundsätzlich: Je größer das Segmentierungsfenster ist, desto mehr Kookkurrenzen werden erfasst, desto unschärfer werden aber auch die Treffer (mehr 
+<p>
+<hi rend="bold">II. Textsegmentierung</hi>: Um Kookkurrenzen zwischen Figuren zu erfassen, muss ein Textfenster vorgegeben werden. Die Textsegmentierung kann auf Grundlage von Layout-Informationen (z.B. Absätzen, linguistischen Einheiten (z.B. Sätzen) oder narratologischen Einheiten („Szenen“ nach Gius et al., 2019a) erfolgen. Für Kookkurrenznetzwerke gibt die Textsegmentierung den Rahmen vor, in dem Relationen zwischen zwei oder mehr Figuren erfasst werden. Hierbei gilt grundsätzlich: Je größer das Segmentierungsfenster ist, desto mehr Kookkurrenzen werden erfasst, desto unschärfer werden aber auch die Treffer (mehr 
                     <hi rend="italic">false positives</hi>). Darüber hinaus ist zu bedenken, dass ein Zusammenhang zwischen der Segmentierungsgröße und der Vollständigkeit der annotierten Referenzausdrücke besteht. Während es geeignet erscheint, satzbasierte Kookkurrenzen zu extrahieren, wenn sämtliche (Ko-)Referenzen erfasst sind, müssen größere Segmente gewählt werden, wenn keine pronominalen Referenzen annotiert sind. Korpusstatistiken zu den Abständen zwischen den verschiedenen Referenzausdrücken können helfen, ein geeignetes Kookkurrenzfenster festzusetzen. 
                 </p>
-                <p>
-                    <hi rend="bold">III. Figurenrede (Filter, optional)</hi>: Grundsätzlich ist es sinnvoll, präsente bzw. handelnde Figuren von solchen, über die „nur“ gesprochen wird, zu unterscheiden. Zu diesem Zwecke sind Passagen, die Redewiedergabe (dazu zählen direkte und indirekte Formen der Rede- und Gedankenwiedergabe) enthalten, entsprechend auszuzeichnen. Dies ermöglicht es, Referenzausdrücke, die innerhalb dieser Passagen liegen, herauszufiltern, wenn Kookkurrenzen zwischen präsenten Figuren erfasst werden sollen. Im obigen Netzwerk zu 
+<p>
+<hi rend="bold">III. Figurenrede (Filter, optional)</hi>: Grundsätzlich ist es sinnvoll, präsente bzw. handelnde Figuren von solchen, über die „nur“ gesprochen wird, zu unterscheiden. Zu diesem Zwecke sind Passagen, die Redewiedergabe (dazu zählen direkte und indirekte Formen der Rede- und Gedankenwiedergabe) enthalten, entsprechend auszuzeichnen. Dies ermöglicht es, Referenzausdrücke, die innerhalb dieser Passagen liegen, herauszufiltern, wenn Kookkurrenzen zwischen präsenten Figuren erfasst werden sollen. Im obigen Netzwerk zu 
                     <hi rend="italic">Mathilde Möhring</hi> sind lediglich drei Figuren präsent, wohingegen die meisten anderen (darunter z.B. Hugos verstorbener Vater) ausschließlich in Figurenrede erwähnt werden. Gleiches gilt für Milada im 
                     <hi rend="italic">Gemeindekind</hi>, s. Anhang.
                 </p>
-                <p>
-                    <hi rend="bold">IV. Erzählebenen (Filter, optional)</hi>: Narrative Ebenen müssen grundsätzlich auseinandergehalten werden, da es sonst zu einer „Vermischung“ des Figureninventars verschiedener Ebenen kommt. Binnenerzählungen können z.T. über Figurenrede (Schritt III) erfasst werden. Eine Annotation der Erzählebenen ermöglicht es, die Figurenrelationen ebenenspezifisch zu analysieren, indem Figurenreferenzen aus anderen Erzählebenen herausgefiltert werden. Im 
+<p>
+<hi rend="bold">IV. Erzählebenen (Filter, optional)</hi>: Narrative Ebenen müssen grundsätzlich auseinandergehalten werden, da es sonst zu einer „Vermischung“ des Figureninventars verschiedener Ebenen kommt. Binnenerzählungen können z.T. über Figurenrede (Schritt III) erfasst werden. Eine Annotation der Erzählebenen ermöglicht es, die Figurenrelationen ebenenspezifisch zu analysieren, indem Figurenreferenzen aus anderen Erzählebenen herausgefiltert werden. Im 
                     <hi rend="italic">Stopfkuchen</hi> besteht beispielsweise die Rahmenhandlung aus Eduard, der sich auf der Schifffahrt nach Kappstadt befindet, wohingegen (mehrere) eingebettete Erzählebenen Figuren aus seiner Vergangenheit und Heimatstadt umfassen. Die Ebenen sind räumlich und zeitlich voneinander getrennt.
                 </p>
-                <p>
-                    <hi rend="bold">V. Exkurse/Erzählerkommentare (Filter, optional)</hi>: Unter Exkursen sind „Abschweifungen“ (Kommentare, Publikumsanreden) zu verstehen, die i.d.R. mit einer veränderten Sprechhaltung einhergehen und den Verlauf der Erzählung unterbrechen. Für Netzwerkanalysen ist die Annotation von Exkursen insbesondere dann relevant, wenn sie Referenzen auf Figuren/Personen umfassen, die 
+<p>
+<hi rend="bold">V. Exkurse/Erzählerkommentare (Filter, optional)</hi>: Unter Exkursen sind „Abschweifungen“ (Kommentare, Publikumsanreden) zu verstehen, die i.d.R. mit einer veränderten Sprechhaltung einhergehen und den Verlauf der Erzählung unterbrechen. Für Netzwerkanalysen ist die Annotation von Exkursen insbesondere dann relevant, wenn sie Referenzen auf Figuren/Personen umfassen, die 
                     <hi rend="bold">nicht</hi> Teil der erzählten Welt sind. Oftmals wird im Rahmen von Exkursen das Erzählte kommentiert (also Vergangenes aufgegriffen), es werden Vergleiche zu anderen Figuren gezogen, intertextuelle Verweise oder realhistorische Bezüge hergestellt. Exkurse können damit Referenzen auf Entitäten enthalten, die i) zwar Teil der erzählten Welt, aber nicht zwangsläufig Teil der „Szene“, ii) Teil anderer fiktiver Texte, iii) Teil der realen Welt sind. Eine Annotation der Exkurse ermöglicht eine Differenzierung zwischen den verschiedenen „Status“ der Entitäteninstanzen. 
                 </p>
-                <p>
-                    <hi rend="bold">Sonstiges</hi>: Je nach Organisation der Erzählung und Untersuchungsfrage können andere Aspekte, die das abgebildete Modell nicht berücksichtig, relevant sein. Bei anachronischen Erzählungen kann es etwa sinnvoll sein, die Erzählung zunächst in eine chronologische Reihenfolge zu bringen, insbesondere wenn dynamische Netzwerke erstellt werden. 
+<p>
+<hi rend="bold">Sonstiges</hi>: Je nach Organisation der Erzählung und Untersuchungsfrage können andere Aspekte, die das abgebildete Modell nicht berücksichtig, relevant sein. Bei anachronischen Erzählungen kann es etwa sinnvoll sein, die Erzählung zunächst in eine chronologische Reihenfolge zu bringen, insbesondere wenn dynamische Netzwerke erstellt werden. 
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Schluss</head>
-                <p>Das hier vorgestellte Vorgehensmodell umfasst relevante Schritte für die Extraktion kopräsenter Figuren aus narrativen Texten. Ein Hauptanliegen des Beitrags ist es, aufzuzeigen, welche Aspekte bei der Netzwerkanalyse narrativer Texte (potenziell) eine Rolle spielen, und diese in die Datenerhebung zu integrieren – oder, sollte dies nicht möglich sein, zumindest das Bewusstsein für deren Einfluss auf die netzwerkanalytischen Daten zu schärfen. Zweifelsohne können nicht alle Sonderfälle in einem möglichst generischen Modell berücksichtigt werden; vielmehr dient das Modell als methodische Grundlage, die dazu befähigt, Kookkurrenznetzwerke aus Erzähltexten zu erstellen, die für Einzelfälle aber angepasst oder ergänzt werden muss. Durch seine Modularität und die „Filter“-Schritte soll das Modell für viele Fragestellungen und Untersuchungsgegenstände einsetzbar sein.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Anhang</head>
-                <table rend="rules">
-                    <head>Tabelle 4: Textstatistiken zur Verteilung von Figurenreferenzausdrücken und zu Abständen zwischen koreferenten Referenzausdrücken. Berechnungen je Text-Datei und für ausgewählte Figuren. Die Textauszüge und Annotationen entsprechen DROC (Krug et al., 2018).</head>
-                    
-                    <row>
-                        <cell style="text-align: left;">
-                            <hi style="font-size:10pt">Text (Textauszug entspricht DROC) und ausgewählte Figuren</hi>
-                        </cell>
-                        <cell style="text-align: right;" cols="6">Verteilung von Figurenreferenzen nach Art der Referenz (Eigennamen, Appellative, Pronomen), Figurenvorkommen innerhalb und außerhalb von Redewiedergabe-Passagen.</cell>
-                        <cell style="text-align: right;" cols="2">
-                            <hi style="font-size:10pt">Abstände (in Tokens) von Pronomen zu koreferentem Appellativ oder Eigennamen</hi>
-                        </cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;"/>
-                        <cell style="text-align: right;">Gesamt</cell>
-                        <cell style="text-align: right;">Eigenname</cell>
-                        <cell style="text-align: right;">Appellativ</cell>
-                        <cell style="text-align: right;">
-                            <hi style="font-size:10pt">Pron.</hi>
-                        </cell>
-                        <cell style="text-align: right;">In Rede</cell>
-                        <cell style="text-align: right;">Außerhalb Rede</cell>
-                        <cell style="text-align: right;">Median</cell>
-                        <cell style="text-align: right;">Mittelwert</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">Kafka_Amerika</cell>
-                        <cell style="text-align: right;">341</cell>
-                        <cell style="text-align: right;">34</cell>
-                        <cell style="text-align: right;">65</cell>
-                        <cell style="text-align: right;">242</cell>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;">43</cell>
-                        <cell style="text-align: right;">71</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr1_Karl</cell>
-                        <cell style="text-align: right;">186</cell>
-                        <cell style="text-align: right;">29</cell>
-                        <cell style="text-align: right;">5</cell>
-                        <cell style="text-align: right;">152</cell>
-                        <cell style="text-align: right;">70</cell>
-                        <cell style="text-align: right;">116</cell>
-                        <cell style="text-align: right;">45</cell>
-                        <cell style="text-align: right;">62</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr16_Franz</cell>
-                        <cell style="text-align: right;">16</cell>
-                        <cell style="text-align: right;">3</cell>
-                        <cell style="text-align: right;">6</cell>
-                        <cell style="text-align: right;">7</cell>
-                        <cell style="text-align: right;">8</cell>
-                        <cell style="text-align: right;">8</cell>
-                        <cell style="text-align: right;">7</cell>
-                        <cell style="text-align: right;">6</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">Dickens_OTwist</cell>
-                        <cell style="text-align: right;">545</cell>
-                        <cell style="text-align: right;">119</cell>
-                        <cell style="text-align: right;">114</cell>
-                        <cell style="text-align: right;">312</cell>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;">24</cell>
-                        <cell style="text-align: right;">37</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr1_Oliver</cell>
-                        <cell style="text-align: right;">246</cell>
-                        <cell style="text-align: right;">61</cell>
-                        <cell style="text-align: right;">17</cell>
-                        <cell style="text-align: right;">168</cell>
-                        <cell style="text-align: right;">68</cell>
-                        <cell style="text-align: right;">178</cell>
-                        <cell style="text-align: right;">26</cell>
-                        <cell style="text-align: right;">42</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr314_Jack</cell>
-                        <cell style="text-align: right;">72</cell>
-                        <cell style="text-align: right;">5</cell>
-                        <cell style="text-align: right;">26</cell>
-                        <cell style="text-align: right;">41</cell>
-                        <cell style="text-align: right;">13</cell>
-                        <cell style="text-align: right;">59</cell>
-                        <cell style="text-align: right;">24</cell>
-                        <cell style="text-align: right;">28</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr10_Bumble</cell>
-                        <cell style="text-align: right;">43</cell>
-                        <cell style="text-align: right;">17</cell>
-                        <cell style="text-align: right;">6</cell>
-                        <cell style="text-align: right;">20</cell>
-                        <cell style="text-align: right;">22</cell>
-                        <cell style="text-align: right;">21</cell>
-                        <cell style="text-align: right;">14</cell>
-                        <cell style="text-align: right;">17</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">Fontane_GMinde</cell>
-                        <cell style="text-align: right;">514</cell>
-                        <cell style="text-align: right;">96</cell>
-                        <cell style="text-align: right;">70</cell>
-                        <cell style="text-align: right;">348</cell>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;">31</cell>
-                        <cell style="text-align: right;">55</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr1_Grete</cell>
-                        <cell style="text-align: right;">125</cell>
-                        <cell style="text-align: right;">34</cell>
-                        <cell style="text-align: right;">10</cell>
-                        <cell style="text-align: right;">81</cell>
-                        <cell style="text-align: right;">82</cell>
-                        <cell style="text-align: right;">43</cell>
-                        <cell style="text-align: right;">26</cell>
-                        <cell style="text-align: right;">38</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr2_Gigas</cell>
-                        <cell style="text-align: right;">71</cell>
-                        <cell style="text-align: right;">8</cell>
-                        <cell style="text-align: right;">8</cell>
-                        <cell style="text-align: right;">55</cell>
-                        <cell style="text-align: right;">39</cell>
-                        <cell style="text-align: right;">32</cell>
-                        <cell style="text-align: right;">43</cell>
-                        <cell style="text-align: right;">81</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr3_Trud</cell>
-                        <cell style="text-align: right;">69</cell>
-                        <cell style="text-align: right;">22</cell>
-                        <cell style="text-align: right;">5</cell>
-                        <cell style="text-align: right;">42</cell>
-                        <cell style="text-align: right;">44</cell>
-                        <cell style="text-align: right;">25</cell>
-                        <cell style="text-align: right;">31</cell>
-                        <cell style="text-align: right;">55</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">Fontane_MMöhring</cell>
-                        <cell style="text-align: right;">426</cell>
-                        <cell style="text-align: right;">67</cell>
-                        <cell style="text-align: right;">48</cell>
-                        <cell style="text-align: right;">311</cell>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;">80</cell>
-                        <cell style="text-align: right;">130</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr1_Hugo</cell>
-                        <cell style="text-align: right;">140</cell>
-                        <cell style="text-align: right;">13</cell>
-                        <cell style="text-align: right;">3</cell>
-                        <cell style="text-align: right;">124</cell>
-                        <cell style="text-align: right;">
-                            <hi style="font-size:10pt">111</hi>
-                        </cell>
-                        <cell style="text-align: right;">29</cell>
-                        <cell style="text-align: right;">101</cell>
-                        <cell style="text-align: right;">161</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr70_Vater</cell>
-                        <cell style="text-align: right;">33</cell>
-                        <cell style="text-align: right;">0</cell>
-                        <cell style="text-align: right;">11</cell>
-                        <cell style="text-align: right;">22</cell>
-                        <cell style="text-align: right;">33</cell>
-                        <cell style="text-align: right;">0</cell>
-                        <cell style="text-align: right;">29</cell>
-                        <cell style="text-align: right;">30</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr5_Rybinski</cell>
-                        <cell style="text-align: right;">132</cell>
-                        <cell style="text-align: right;">18</cell>
-                        <cell style="text-align: right;">5</cell>
-                        <cell style="text-align: right;">109</cell>
-                        <cell style="text-align: right;">
-                            <hi style="font-size:10pt">122</hi>
-                        </cell>
-                        <cell style="text-align: right;">
-                            <hi style="font-size:10pt">10</hi>
-                        </cell>
-                        <cell style="text-align: right;">97</cell>
-                        <cell style="text-align: right;">126</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">Raabe_Stopfkuchen</cell>
-                        <cell style="text-align: right;">293</cell>
-                        <cell style="text-align: right;">32</cell>
-                        <cell style="text-align: right;">57</cell>
-                        <cell style="text-align: right;">204</cell>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;">49</cell>
-                        <cell style="text-align: right;">157</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr1_Eduard</cell>
-                        <cell style="text-align: right;">111</cell>
-                        <cell style="text-align: right;">5</cell>
-                        <cell style="text-align: right;">10</cell>
-                        <cell style="text-align: right;">96</cell>
-                        <cell style="text-align: right;">26</cell>
-                        <cell style="text-align: right;">85</cell>
-                        <cell style="text-align: right;">81</cell>
-                        <cell style="text-align: right;">218</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr58_Stopfkuchen</cell>
-                        <cell style="text-align: right;">21</cell>
-                        <cell style="text-align: right;">12</cell>
-                        <cell style="text-align: right;">3</cell>
-                        <cell style="text-align: right;">6</cell>
-                        <cell style="text-align: right;">7</cell>
-                        <cell style="text-align: right;">14</cell>
-                        <cell style="text-align: right;">17</cell>
-                        <cell style="text-align: right;">15</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">Ahlefeld_Erna</cell>
-                        <cell style="text-align: right;">803</cell>
-                        <cell style="text-align: right;">90</cell>
-                        <cell style="text-align: right;">95</cell>
-                        <cell style="text-align: right;">618</cell>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;">74</cell>
-                        <cell style="text-align: right;">135</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr1_Alexander</cell>
-                        <cell style="text-align: right;">281</cell>
-                        <cell style="text-align: right;">22</cell>
-                        <cell style="text-align: right;">12</cell>
-                        <cell style="text-align: right;">247</cell>
-                        <cell style="text-align: right;">16</cell>
-                        <cell style="text-align: right;">265</cell>
-                        <cell style="text-align: right;">100</cell>
-                        <cell style="text-align: right;">160</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr7_Erna</cell>
-                        <cell style="text-align: right;">234</cell>
-                        <cell style="text-align: right;">29</cell>
-                        <cell style="text-align: right;">8</cell>
-                        <cell style="text-align: right;">197</cell>
-                        <cell style="text-align: right;">52</cell>
-                        <cell style="text-align: right;">182</cell>
-                        <cell style="text-align: right;">92</cell>
-                        <cell style="text-align: right;">132</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr12_Arzt</cell>
-                        <cell style="text-align: right;">
-                            <hi style="font-size:10pt">13</hi>
-                        </cell>
-                        <cell style="text-align: right;">0</cell>
-                        <cell style="text-align: right;">7</cell>
-                        <cell style="text-align: right;">5</cell>
-                        <cell style="text-align: right;">1</cell>
-                        <cell style="text-align: right;">12</cell>
-                        <cell style="text-align: right;">25</cell>
-                        <cell style="text-align: right;">42</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">
-                            <hi style="font-size:10pt">Aston_Ausdem Leben</hi>
-                        </cell>
-                        <cell style="text-align: right;">436</cell>
-                        <cell style="text-align: right;">52</cell>
-                        <cell style="text-align: right;">91</cell>
-                        <cell style="text-align: right;">293</cell>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;">38</cell>
-                        <cell style="text-align: right;">48</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr1_Oburn</cell>
-                        <cell style="text-align: right;">
-                            <hi style="font-size:10pt">195</hi>
-                        </cell>
-                        <cell style="text-align: right;">26</cell>
-                        <cell style="text-align: right;">19</cell>
-                        <cell style="text-align: right;">149</cell>
-                        <cell style="text-align: right;">58</cell>
-                        <cell style="text-align: right;">137</cell>
-                        <cell style="text-align: right;">36</cell>
-                        <cell style="text-align: right;">44</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr5_Frau</cell>
-                        <cell style="text-align: right;">123</cell>
-                        <cell style="text-align: right;">12</cell>
-                        <cell style="text-align: right;">23</cell>
-                        <cell style="text-align: right;">88</cell>
-                        <cell style="text-align: right;">53</cell>
-                        <cell style="text-align: right;">
-                            <hi style="font-size:10pt">70</hi>
-                        </cell>
-                        <cell style="text-align: right;">42</cell>
-                        <cell style="text-align: right;">58</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr163_Buchhalter</cell>
-                        <cell style="text-align: right;">
-                            <hi style="font-size:10pt">16</hi>
-                        </cell>
-                        <cell style="text-align: right;">3</cell>
-                        <cell style="text-align: right;">5</cell>
-                        <cell style="text-align: right;">7</cell>
-                        <cell style="text-align: right;">9</cell>
-                        <cell style="text-align: right;">7</cell>
-                        <cell style="text-align: right;">36</cell>
-                        <cell style="text-align: right;">33</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">Balzac_GlanzElend</cell>
-                        <cell style="text-align: right;">795</cell>
-                        <cell style="text-align: right;">152</cell>
-                        <cell style="text-align: right;">194</cell>
-                        <cell style="text-align: right;">449</cell>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;">21</cell>
-                        <cell style="text-align: right;">37</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr1_Jakob</cell>
-                        <cell style="text-align: right;">65</cell>
-                        <cell style="text-align: right;">13</cell>
-                        <cell style="text-align: right;">10</cell>
-                        <cell style="text-align: right;">42</cell>
-                        <cell style="text-align: right;">25</cell>
-                        <cell style="text-align: right;">40</cell>
-                        <cell style="text-align: right;">20</cell>
-                        <cell style="text-align: right;">33</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr7_Asien</cell>
-                        <cell style="text-align: right;">260</cell>
-                        <cell style="text-align: right;">43</cell>
-                        <cell style="text-align: right;">39</cell>
-                        <cell style="text-align: right;">178</cell>
-                        <cell style="text-align: right;">89</cell>
-                        <cell style="text-align: right;">171</cell>
-                        <cell style="text-align: right;">27</cell>
-                        <cell style="text-align: right;">37</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr99_Romette</cell>
-                        <cell style="text-align: right;">18</cell>
-                        <cell style="text-align: right;">4</cell>
-                        <cell style="text-align: right;">5</cell>
-                        <cell style="text-align: right;">9</cell>
-                        <cell style="text-align: right;">9</cell>
-                        <cell style="text-align: right;">9</cell>
-                        <cell style="text-align: right;">12</cell>
-                        <cell style="text-align: right;">19</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">
-                            <hi style="font-size:10pt">Ebner-Eschenbach _Gemeindekind</hi>
-                        </cell>
-                        <cell style="text-align: right;">896</cell>
-                        <cell style="text-align: right;">98</cell>
-                        <cell style="text-align: right;">187</cell>
-                        <cell style="text-align: right;">611</cell>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;">30</cell>
-                        <cell style="text-align: right;">55</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr1_Pavel</cell>
-                        <cell style="text-align: right;">434</cell>
-                        <cell style="text-align: right;">64</cell>
-                        <cell style="text-align: right;">41</cell>
-                        <cell style="text-align: right;">329</cell>
-                        <cell style="text-align: right;">161</cell>
-                        <cell style="text-align: right;">274</cell>
-                        <cell style="text-align: right;">30</cell>
-                        <cell style="text-align: right;">60</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr10_Lehrer</cell>
-                        <cell style="text-align: right;">95</cell>
-                        <cell style="text-align: right;">4</cell>
-                        <cell style="text-align: right;">36</cell>
-                        <cell style="text-align: right;">55</cell>
-                        <cell style="text-align: right;">22</cell>
-                        <cell style="text-align: right;">73</cell>
-                        <cell style="text-align: right;">25</cell>
-                        <cell style="text-align: right;">118</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr62_Milada</cell>
-                        <cell style="text-align: right;">35</cell>
-                        <cell style="text-align: right;">7</cell>
-                        <cell style="text-align: right;">14</cell>
-                        <cell style="text-align: right;">14</cell>
-                        <cell style="text-align: right;">34</cell>
-                        <cell style="text-align: right;">1</cell>
-                        <cell style="text-align: right;">14</cell>
-                        <cell style="text-align: right;">18</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">Verne_2000Meilen</cell>
-                        <cell style="text-align: right;">264</cell>
-                        <cell style="text-align: right;">26</cell>
-                        <cell style="text-align: right;">40</cell>
-                        <cell style="text-align: right;">198</cell>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;"/>
-                        <cell style="text-align: right;">61</cell>
-                        <cell style="text-align: right;">192</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">
-                            <hi style="font-size:10pt">cr1_ich (Eduard)</hi>
-                        </cell>
-                        <cell style="text-align: right;">113</cell>
-                        <cell style="text-align: right;">4</cell>
-                        <cell style="text-align: right;">8</cell>
-                        <cell style="text-align: right;">101</cell>
-                        <cell style="text-align: right;">34</cell>
-                        <cell style="text-align: right;">79</cell>
-                        <cell style="text-align: right;">79</cell>
-                        <cell style="text-align: right;">211</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr_14_Nemo</cell>
-                        <cell style="text-align: right;">73</cell>
-                        <cell style="text-align: right;">10</cell>
-                        <cell style="text-align: right;">16</cell>
-                        <cell style="text-align: right;">47</cell>
-                        <cell style="text-align: right;">41</cell>
-                        <cell style="text-align: right;">32</cell>
-                        <cell style="text-align: right;">19</cell>
-                        <cell style="text-align: right;">30</cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">cr_2_Conseil</cell>
-                        <cell style="text-align: right;">14</cell>
-                        <cell style="text-align: right;">7</cell>
-                        <cell style="text-align: right;">1</cell>
-                        <cell style="text-align: right;">6</cell>
-                        <cell style="text-align: right;">1</cell>
-                        <cell style="text-align: right;">13</cell>
-                        <cell style="text-align: right;">82</cell>
-                        <cell style="text-align: right;">83</cell>
-                    </row>
-                </table>
-            </div>
-        </body>
-        <back>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Schluss</head>
+<p>Das hier vorgestellte Vorgehensmodell umfasst relevante Schritte für die Extraktion kopräsenter Figuren aus narrativen Texten. Ein Hauptanliegen des Beitrags ist es, aufzuzeigen, welche Aspekte bei der Netzwerkanalyse narrativer Texte (potenziell) eine Rolle spielen, und diese in die Datenerhebung zu integrieren – oder, sollte dies nicht möglich sein, zumindest das Bewusstsein für deren Einfluss auf die netzwerkanalytischen Daten zu schärfen. Zweifelsohne können nicht alle Sonderfälle in einem möglichst generischen Modell berücksichtigt werden; vielmehr dient das Modell als methodische Grundlage, die dazu befähigt, Kookkurrenznetzwerke aus Erzähltexten zu erstellen, die für Einzelfälle aber angepasst oder ergänzt werden muss. Durch seine Modularität und die „Filter“-Schritte soll das Modell für viele Fragestellungen und Untersuchungsgegenstände einsetzbar sein.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Anhang</head>
+<table rend="rules">
+<head>Tabelle 4: Textstatistiken zur Verteilung von Figurenreferenzausdrücken und zu Abständen zwischen koreferenten Referenzausdrücken. Berechnungen je Text-Datei und für ausgewählte Figuren. Die Textauszüge und Annotationen entsprechen DROC (Krug et al., 2018).</head>
+<row>
+<cell style="text-align: left;">
+<hi style="font-size:10pt">Text (Textauszug entspricht DROC) und ausgewählte Figuren</hi>
+</cell>
+<cell cols="6" style="text-align: right;">Verteilung von Figurenreferenzen nach Art der Referenz (Eigennamen, Appellative, Pronomen), Figurenvorkommen innerhalb und außerhalb von Redewiedergabe-Passagen.</cell>
+<cell cols="2" style="text-align: right;">
+<hi style="font-size:10pt">Abstände (in Tokens) von Pronomen zu koreferentem Appellativ oder Eigennamen</hi>
+</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: right;">Gesamt</cell>
+<cell style="text-align: right;">Eigenname</cell>
+<cell style="text-align: right;">Appellativ</cell>
+<cell style="text-align: right;">
+<hi style="font-size:10pt">Pron.</hi>
+</cell>
+<cell style="text-align: right;">In Rede</cell>
+<cell style="text-align: right;">Außerhalb Rede</cell>
+<cell style="text-align: right;">Median</cell>
+<cell style="text-align: right;">Mittelwert</cell>
+</row>
+<row>
+<cell style="text-align: left;">Kafka_Amerika</cell>
+<cell style="text-align: right;">341</cell>
+<cell style="text-align: right;">34</cell>
+<cell style="text-align: right;">65</cell>
+<cell style="text-align: right;">242</cell>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;">43</cell>
+<cell style="text-align: right;">71</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr1_Karl</cell>
+<cell style="text-align: right;">186</cell>
+<cell style="text-align: right;">29</cell>
+<cell style="text-align: right;">5</cell>
+<cell style="text-align: right;">152</cell>
+<cell style="text-align: right;">70</cell>
+<cell style="text-align: right;">116</cell>
+<cell style="text-align: right;">45</cell>
+<cell style="text-align: right;">62</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr16_Franz</cell>
+<cell style="text-align: right;">16</cell>
+<cell style="text-align: right;">3</cell>
+<cell style="text-align: right;">6</cell>
+<cell style="text-align: right;">7</cell>
+<cell style="text-align: right;">8</cell>
+<cell style="text-align: right;">8</cell>
+<cell style="text-align: right;">7</cell>
+<cell style="text-align: right;">6</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+</row>
+<row>
+<cell style="text-align: left;">Dickens_OTwist</cell>
+<cell style="text-align: right;">545</cell>
+<cell style="text-align: right;">119</cell>
+<cell style="text-align: right;">114</cell>
+<cell style="text-align: right;">312</cell>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;">24</cell>
+<cell style="text-align: right;">37</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr1_Oliver</cell>
+<cell style="text-align: right;">246</cell>
+<cell style="text-align: right;">61</cell>
+<cell style="text-align: right;">17</cell>
+<cell style="text-align: right;">168</cell>
+<cell style="text-align: right;">68</cell>
+<cell style="text-align: right;">178</cell>
+<cell style="text-align: right;">26</cell>
+<cell style="text-align: right;">42</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr314_Jack</cell>
+<cell style="text-align: right;">72</cell>
+<cell style="text-align: right;">5</cell>
+<cell style="text-align: right;">26</cell>
+<cell style="text-align: right;">41</cell>
+<cell style="text-align: right;">13</cell>
+<cell style="text-align: right;">59</cell>
+<cell style="text-align: right;">24</cell>
+<cell style="text-align: right;">28</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr10_Bumble</cell>
+<cell style="text-align: right;">43</cell>
+<cell style="text-align: right;">17</cell>
+<cell style="text-align: right;">6</cell>
+<cell style="text-align: right;">20</cell>
+<cell style="text-align: right;">22</cell>
+<cell style="text-align: right;">21</cell>
+<cell style="text-align: right;">14</cell>
+<cell style="text-align: right;">17</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+</row>
+<row>
+<cell style="text-align: left;">Fontane_GMinde</cell>
+<cell style="text-align: right;">514</cell>
+<cell style="text-align: right;">96</cell>
+<cell style="text-align: right;">70</cell>
+<cell style="text-align: right;">348</cell>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;">31</cell>
+<cell style="text-align: right;">55</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr1_Grete</cell>
+<cell style="text-align: right;">125</cell>
+<cell style="text-align: right;">34</cell>
+<cell style="text-align: right;">10</cell>
+<cell style="text-align: right;">81</cell>
+<cell style="text-align: right;">82</cell>
+<cell style="text-align: right;">43</cell>
+<cell style="text-align: right;">26</cell>
+<cell style="text-align: right;">38</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr2_Gigas</cell>
+<cell style="text-align: right;">71</cell>
+<cell style="text-align: right;">8</cell>
+<cell style="text-align: right;">8</cell>
+<cell style="text-align: right;">55</cell>
+<cell style="text-align: right;">39</cell>
+<cell style="text-align: right;">32</cell>
+<cell style="text-align: right;">43</cell>
+<cell style="text-align: right;">81</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr3_Trud</cell>
+<cell style="text-align: right;">69</cell>
+<cell style="text-align: right;">22</cell>
+<cell style="text-align: right;">5</cell>
+<cell style="text-align: right;">42</cell>
+<cell style="text-align: right;">44</cell>
+<cell style="text-align: right;">25</cell>
+<cell style="text-align: right;">31</cell>
+<cell style="text-align: right;">55</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+</row>
+<row>
+<cell style="text-align: left;">Fontane_MMöhring</cell>
+<cell style="text-align: right;">426</cell>
+<cell style="text-align: right;">67</cell>
+<cell style="text-align: right;">48</cell>
+<cell style="text-align: right;">311</cell>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;">80</cell>
+<cell style="text-align: right;">130</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr1_Hugo</cell>
+<cell style="text-align: right;">140</cell>
+<cell style="text-align: right;">13</cell>
+<cell style="text-align: right;">3</cell>
+<cell style="text-align: right;">124</cell>
+<cell style="text-align: right;">
+<hi style="font-size:10pt">111</hi>
+</cell>
+<cell style="text-align: right;">29</cell>
+<cell style="text-align: right;">101</cell>
+<cell style="text-align: right;">161</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr70_Vater</cell>
+<cell style="text-align: right;">33</cell>
+<cell style="text-align: right;">0</cell>
+<cell style="text-align: right;">11</cell>
+<cell style="text-align: right;">22</cell>
+<cell style="text-align: right;">33</cell>
+<cell style="text-align: right;">0</cell>
+<cell style="text-align: right;">29</cell>
+<cell style="text-align: right;">30</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr5_Rybinski</cell>
+<cell style="text-align: right;">132</cell>
+<cell style="text-align: right;">18</cell>
+<cell style="text-align: right;">5</cell>
+<cell style="text-align: right;">109</cell>
+<cell style="text-align: right;">
+<hi style="font-size:10pt">122</hi>
+</cell>
+<cell style="text-align: right;">
+<hi style="font-size:10pt">10</hi>
+</cell>
+<cell style="text-align: right;">97</cell>
+<cell style="text-align: right;">126</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+</row>
+<row>
+<cell style="text-align: left;">Raabe_Stopfkuchen</cell>
+<cell style="text-align: right;">293</cell>
+<cell style="text-align: right;">32</cell>
+<cell style="text-align: right;">57</cell>
+<cell style="text-align: right;">204</cell>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;">49</cell>
+<cell style="text-align: right;">157</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr1_Eduard</cell>
+<cell style="text-align: right;">111</cell>
+<cell style="text-align: right;">5</cell>
+<cell style="text-align: right;">10</cell>
+<cell style="text-align: right;">96</cell>
+<cell style="text-align: right;">26</cell>
+<cell style="text-align: right;">85</cell>
+<cell style="text-align: right;">81</cell>
+<cell style="text-align: right;">218</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr58_Stopfkuchen</cell>
+<cell style="text-align: right;">21</cell>
+<cell style="text-align: right;">12</cell>
+<cell style="text-align: right;">3</cell>
+<cell style="text-align: right;">6</cell>
+<cell style="text-align: right;">7</cell>
+<cell style="text-align: right;">14</cell>
+<cell style="text-align: right;">17</cell>
+<cell style="text-align: right;">15</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+</row>
+<row>
+<cell style="text-align: left;">Ahlefeld_Erna</cell>
+<cell style="text-align: right;">803</cell>
+<cell style="text-align: right;">90</cell>
+<cell style="text-align: right;">95</cell>
+<cell style="text-align: right;">618</cell>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;">74</cell>
+<cell style="text-align: right;">135</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr1_Alexander</cell>
+<cell style="text-align: right;">281</cell>
+<cell style="text-align: right;">22</cell>
+<cell style="text-align: right;">12</cell>
+<cell style="text-align: right;">247</cell>
+<cell style="text-align: right;">16</cell>
+<cell style="text-align: right;">265</cell>
+<cell style="text-align: right;">100</cell>
+<cell style="text-align: right;">160</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr7_Erna</cell>
+<cell style="text-align: right;">234</cell>
+<cell style="text-align: right;">29</cell>
+<cell style="text-align: right;">8</cell>
+<cell style="text-align: right;">197</cell>
+<cell style="text-align: right;">52</cell>
+<cell style="text-align: right;">182</cell>
+<cell style="text-align: right;">92</cell>
+<cell style="text-align: right;">132</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr12_Arzt</cell>
+<cell style="text-align: right;">
+<hi style="font-size:10pt">13</hi>
+</cell>
+<cell style="text-align: right;">0</cell>
+<cell style="text-align: right;">7</cell>
+<cell style="text-align: right;">5</cell>
+<cell style="text-align: right;">1</cell>
+<cell style="text-align: right;">12</cell>
+<cell style="text-align: right;">25</cell>
+<cell style="text-align: right;">42</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+</row>
+<row>
+<cell style="text-align: left;">
+<hi style="font-size:10pt">Aston_Ausdem Leben</hi>
+</cell>
+<cell style="text-align: right;">436</cell>
+<cell style="text-align: right;">52</cell>
+<cell style="text-align: right;">91</cell>
+<cell style="text-align: right;">293</cell>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;">38</cell>
+<cell style="text-align: right;">48</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr1_Oburn</cell>
+<cell style="text-align: right;">
+<hi style="font-size:10pt">195</hi>
+</cell>
+<cell style="text-align: right;">26</cell>
+<cell style="text-align: right;">19</cell>
+<cell style="text-align: right;">149</cell>
+<cell style="text-align: right;">58</cell>
+<cell style="text-align: right;">137</cell>
+<cell style="text-align: right;">36</cell>
+<cell style="text-align: right;">44</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr5_Frau</cell>
+<cell style="text-align: right;">123</cell>
+<cell style="text-align: right;">12</cell>
+<cell style="text-align: right;">23</cell>
+<cell style="text-align: right;">88</cell>
+<cell style="text-align: right;">53</cell>
+<cell style="text-align: right;">
+<hi style="font-size:10pt">70</hi>
+</cell>
+<cell style="text-align: right;">42</cell>
+<cell style="text-align: right;">58</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr163_Buchhalter</cell>
+<cell style="text-align: right;">
+<hi style="font-size:10pt">16</hi>
+</cell>
+<cell style="text-align: right;">3</cell>
+<cell style="text-align: right;">5</cell>
+<cell style="text-align: right;">7</cell>
+<cell style="text-align: right;">9</cell>
+<cell style="text-align: right;">7</cell>
+<cell style="text-align: right;">36</cell>
+<cell style="text-align: right;">33</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+</row>
+<row>
+<cell style="text-align: left;">Balzac_GlanzElend</cell>
+<cell style="text-align: right;">795</cell>
+<cell style="text-align: right;">152</cell>
+<cell style="text-align: right;">194</cell>
+<cell style="text-align: right;">449</cell>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;">21</cell>
+<cell style="text-align: right;">37</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr1_Jakob</cell>
+<cell style="text-align: right;">65</cell>
+<cell style="text-align: right;">13</cell>
+<cell style="text-align: right;">10</cell>
+<cell style="text-align: right;">42</cell>
+<cell style="text-align: right;">25</cell>
+<cell style="text-align: right;">40</cell>
+<cell style="text-align: right;">20</cell>
+<cell style="text-align: right;">33</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr7_Asien</cell>
+<cell style="text-align: right;">260</cell>
+<cell style="text-align: right;">43</cell>
+<cell style="text-align: right;">39</cell>
+<cell style="text-align: right;">178</cell>
+<cell style="text-align: right;">89</cell>
+<cell style="text-align: right;">171</cell>
+<cell style="text-align: right;">27</cell>
+<cell style="text-align: right;">37</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr99_Romette</cell>
+<cell style="text-align: right;">18</cell>
+<cell style="text-align: right;">4</cell>
+<cell style="text-align: right;">5</cell>
+<cell style="text-align: right;">9</cell>
+<cell style="text-align: right;">9</cell>
+<cell style="text-align: right;">9</cell>
+<cell style="text-align: right;">12</cell>
+<cell style="text-align: right;">19</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+</row>
+<row>
+<cell style="text-align: left;">
+<hi style="font-size:10pt">Ebner-Eschenbach _Gemeindekind</hi>
+</cell>
+<cell style="text-align: right;">896</cell>
+<cell style="text-align: right;">98</cell>
+<cell style="text-align: right;">187</cell>
+<cell style="text-align: right;">611</cell>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;">30</cell>
+<cell style="text-align: right;">55</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr1_Pavel</cell>
+<cell style="text-align: right;">434</cell>
+<cell style="text-align: right;">64</cell>
+<cell style="text-align: right;">41</cell>
+<cell style="text-align: right;">329</cell>
+<cell style="text-align: right;">161</cell>
+<cell style="text-align: right;">274</cell>
+<cell style="text-align: right;">30</cell>
+<cell style="text-align: right;">60</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr10_Lehrer</cell>
+<cell style="text-align: right;">95</cell>
+<cell style="text-align: right;">4</cell>
+<cell style="text-align: right;">36</cell>
+<cell style="text-align: right;">55</cell>
+<cell style="text-align: right;">22</cell>
+<cell style="text-align: right;">73</cell>
+<cell style="text-align: right;">25</cell>
+<cell style="text-align: right;">118</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr62_Milada</cell>
+<cell style="text-align: right;">35</cell>
+<cell style="text-align: right;">7</cell>
+<cell style="text-align: right;">14</cell>
+<cell style="text-align: right;">14</cell>
+<cell style="text-align: right;">34</cell>
+<cell style="text-align: right;">1</cell>
+<cell style="text-align: right;">14</cell>
+<cell style="text-align: right;">18</cell>
+</row>
+<row>
+<cell style="text-align: left;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+</row>
+<row>
+<cell style="text-align: left;">Verne_2000Meilen</cell>
+<cell style="text-align: right;">264</cell>
+<cell style="text-align: right;">26</cell>
+<cell style="text-align: right;">40</cell>
+<cell style="text-align: right;">198</cell>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;"/>
+<cell style="text-align: right;">61</cell>
+<cell style="text-align: right;">192</cell>
+</row>
+<row>
+<cell style="text-align: left;">
+<hi style="font-size:10pt">cr1_ich (Eduard)</hi>
+</cell>
+<cell style="text-align: right;">113</cell>
+<cell style="text-align: right;">4</cell>
+<cell style="text-align: right;">8</cell>
+<cell style="text-align: right;">101</cell>
+<cell style="text-align: right;">34</cell>
+<cell style="text-align: right;">79</cell>
+<cell style="text-align: right;">79</cell>
+<cell style="text-align: right;">211</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr_14_Nemo</cell>
+<cell style="text-align: right;">73</cell>
+<cell style="text-align: right;">10</cell>
+<cell style="text-align: right;">16</cell>
+<cell style="text-align: right;">47</cell>
+<cell style="text-align: right;">41</cell>
+<cell style="text-align: right;">32</cell>
+<cell style="text-align: right;">19</cell>
+<cell style="text-align: right;">30</cell>
+</row>
+<row>
+<cell style="text-align: left;">cr_2_Conseil</cell>
+<cell style="text-align: right;">14</cell>
+<cell style="text-align: right;">7</cell>
+<cell style="text-align: right;">1</cell>
+<cell style="text-align: right;">6</cell>
+<cell style="text-align: right;">1</cell>
+<cell style="text-align: right;">13</cell>
+<cell style="text-align: right;">82</cell>
+<cell style="text-align: right;">83</cell>
+</row>
+</table>
+</div>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
+<note n="1" rend="footnote text" xml:id="ftn1">
                          Auch dort werden aber nur die Aufgaben „Identifikation von Figuren“ (inkl. Koreferenzresolution) und „Identifikation von Relationen“ (z.B. über Kookkurrenz) zur Erstellung von Figurennetzwerken berücksichtigt – Beeinflussungen der Daten durch Erzählebenen, Exkurse/Kommentare etc. bleiben unbeachtet. 
                     </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
+<note n="2" rend="footnote text" xml:id="ftn2">
                          Andresen und Vauth stellen fest, dass die Verteilungen für verschiedene Figuren des untersuchten Texts relativ stabil sind; dieser Befund ist wohl nicht generalisierbar, da die hier beigefügten Statistiken zeigen, dass etwa die Art der Referenzierung (die Verteilung von Eigennamen/Appellativen/Pronomen) je nach Figur stark variieren kann. Statistiken zu einem englischsprachigen Korpus liefern Bamman et al. (2020), die Verteilungen von Entitätenklassen und verschiedenen Referenzierungstypen sowie Abstände zu Antezedenten berechnen (allerdings nicht figurenspezifisch).
                     </note>
-<note rend="footnote text" xml:id="ftn3" n="3">
+<note n="3" rend="footnote text" xml:id="ftn3">
                          Auch die Herausforderungen einer automatischen Szenen-Annotation zeugen von der Komplexität dieser Aufgabe, vgl. Zehe et al., 2021. Zum Begriff des „Segments“ und verschiedenen Segmentierungsansätzen in der DH vgl. Bartsch et al., 2023.
                     </note>
-<note rend="footnote text" xml:id="ftn4" n="4">
+<note n="4" rend="footnote text" xml:id="ftn4">
                          Die Netzwerke wurden mit 
                             <hi rend="italic">Gephi</hi> (Bastian et al., 2009) erstellt. Die Größe der Knoten und ihrer Beschriftung richtet sich nach dem Grad, die Dicke der Kanten nach dem Gewicht.
                         
                     </note>
-<note rend="footnote text" xml:id="ftn5" n="5">
+<note n="5" rend="footnote text" xml:id="ftn5">
                          Das hier vorgestellte Vorgehensmodell kann auch auf andere Entitätenklassen (z.B. LOC/ORG) übertragen werden. Für Richtlinien zur Entitätenreferenzannotation vgl. Reiter et al., 2023.
                     </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl style="text-align: left; "><hi rend="bold">Agarwal, Apoorv, Augusto Corvalan, Jacob Jensen und Owen Rambow</hi>. 2012. “Social Network Analysis of Alice in Wonderland.” In 
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl style="text-align: left; "><hi rend="bold">Agarwal, Apoorv, Augusto Corvalan, Jacob Jensen und Owen Rambow</hi>. 2012. “Social Network Analysis of Alice in Wonderland.” In 
                         <hi rend="italic">Proceedings of the NAACL-HLT 2012 Workshop on Computational Linguistics for Literature</hi>, 88–96. 
                         <ref target="https://aclanthology.org/W12-2513">https://aclanthology.org/W12-2513</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Andresen, Melanie und Michael Vauth</hi>. 2018. “Added Value of Coreference Annotation for Character Analysis in Narratives.” In 
+<bibl style="text-align: left; "><hi rend="bold">Andresen, Melanie und Michael Vauth</hi>. 2018. “Added Value of Coreference Annotation for Character Analysis in Narratives.” In 
                         <hi rend="italic">Proceedings of the Workshop on Annotation in Digital Humanities</hi>, 1–6. 
                         <ref target="http://ceur-ws.org/Vol-2155/andresen.pdf">http://ceur-ws.org/Vol-2155/andresen.pdf</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Bamman, David, Olivia Lewke und Anya Mansoor</hi>. 2020. “An Annotated Dataset of Coreference in English Literature.” In 
+<bibl style="text-align: left; "><hi rend="bold">Bamman, David, Olivia Lewke und Anya Mansoor</hi>. 2020. “An Annotated Dataset of Coreference in English Literature.” In 
                         <hi rend="italic">Proceedings of the 12th Language Resources and Evaluation Conference (LREC 2020)</hi>, 44–54. 
                         <ref target="https://aclanthology.org/2020.lrec-1.6">https://aclanthology.org/2020.lrec-1.6</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Bartsch, Sabine, Evelyn Gius, Marcus Müller, Andrea Rapp und Thomas Weitin</hi>. 2023. “Sinn und Segment. Wie die digitale Analysepraxis unsere Begriffe schärft.” 
+<bibl style="text-align: left; "><hi rend="bold">Bartsch, Sabine, Evelyn Gius, Marcus Müller, Andrea Rapp und Thomas Weitin</hi>. 2023. “Sinn und Segment. Wie die digitale Analysepraxis unsere Begriffe schärft.” 
                         <hi rend="italic">Zeitschrift für digitale Geisteswissenschaften</hi> 8 (2023). 
                         <ref target="https://doi.org/10.17175/2023_003">https://doi.org/10.17175/2023_003</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Bastian, Mathieu, Sebastien Heymann und Mathieu Jacomy</hi>. 2009. “Gephi: An Open Source Software for Exploring and Manipulating Networks.” In 
+<bibl style="text-align: left; "><hi rend="bold">Bastian, Mathieu, Sebastien Heymann und Mathieu Jacomy</hi>. 2009. “Gephi: An Open Source Software for Exploring and Manipulating Networks.” In 
                         <hi rend="italic">Proceedings of the International AAAI Conference on Weblogs and Social Media</hi>, 361f. 
                         <ref target="http://www.aaai.org/ocs/index.php/ICWSM/09/paper/view/154">http://www.aaai.org/ocs/index.php/ICWSM/09/paper/view/154</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Brunner, Annelen, Stefan Engelberg, Fotis Jannidis, Ngoc Duyen Tanja Tu und Lukas Weimer</hi>. 2020a. “Corpus REDEWIEDERGABE.” In 
+<bibl style="text-align: left; "><hi rend="bold">Brunner, Annelen, Stefan Engelberg, Fotis Jannidis, Ngoc Duyen Tanja Tu und Lukas Weimer</hi>. 2020a. “Corpus REDEWIEDERGABE.” In 
                         <hi rend="italic">Proceedings of the 12th Language Resources and Evaluation Conference (LREC 2020)</hi>, 796–805. 
                         <ref target="https://aclanthology.org/2020.lrec-1.100">https://aclanthology.org/2020.lrec-1.100</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Brunner, Annelen, Stefan Engelberg, Fotis Jannidis, Ngoc Duyen Tanja Tu und Lukas Weimer</hi>. 2020b. “Redewiedergabe in Heftromanen und Hochliteratur.“ In 
+<bibl style="text-align: left; "><hi rend="bold">Brunner, Annelen, Stefan Engelberg, Fotis Jannidis, Ngoc Duyen Tanja Tu und Lukas Weimer</hi>. 2020b. “Redewiedergabe in Heftromanen und Hochliteratur.“ In 
                         <hi rend="italic">7. Tagung des Verbands Digital Humanities im deutschsprachigen Raum e.V. (DHd 2020)</hi>, 190–194. 
                         <ref target="https://doi.org/10.5281/zenodo.4621814">https://doi.org/10.5281/zenodo.4621814</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Elson, David, Nickolas Dames und Kathleen McKeown</hi>. 2010. “Extracting Social Networks from Literary Fiction.” In 
+<bibl style="text-align: left; "><hi rend="bold">Elson, David, Nickolas Dames und Kathleen McKeown</hi>. 2010. “Extracting Social Networks from Literary Fiction.” In 
                         <hi rend="italic">Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics (ACL 2010)</hi>, 138–147. 
                         <ref target="https://aclanthology.org/P10-1015">https://aclanthology.org/P10-1015</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Gius, Evelyn, Fotis Jannidis, Markus Krug, Albin Zehe, Andreas Hotho, Frank Puppe, Jonathan Krebs, Nils Reiter, Nathalie Wiedmer und Leonard Konle</hi>. 2019a. “Detection of Scenes in Fiction.” In 
+<bibl style="text-align: left; "><hi rend="bold">Gius, Evelyn, Fotis Jannidis, Markus Krug, Albin Zehe, Andreas Hotho, Frank Puppe, Jonathan Krebs, Nils Reiter, Nathalie Wiedmer und Leonard Konle</hi>. 2019a. “Detection of Scenes in Fiction.” In 
                         <hi rend="italic">ADHO Digital Humanities Conference (DH2019)</hi>. 
                         <ref target="https://doi.org/10.34894/OOY9CE">https://doi.org/10.34894/OOY9CE</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Gius, Evelyn, Nils Reiter und Markus Willand</hi>(Hg.). 2019b. “A Shared Task for the Digital Humanities: Annotating Narrative Levels.” 
+<bibl style="text-align: left; "><hi rend="bold">Gius, Evelyn, Nils Reiter und Markus Willand</hi>(Hg.). 2019b. “A Shared Task for the Digital Humanities: Annotating Narrative Levels.” 
                         <hi rend="italic">Journal of Cultural Analytics 4</hi>. 
                         <ref target="https://culturalanalytics.org/issue/2254-vol-4-issue-3-2019">https://culturalanalytics.org/issue/2254-vol-4-issue-3-2019</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Gius, Evelyn, Nils Reiter und Markus Willand (Hg.)</hi>. 2021. “Narrative Levels: A Shared Task for the Digital Humanities.” 
+<bibl style="text-align: left; "><hi rend="bold">Gius, Evelyn, Nils Reiter und Markus Willand (Hg.)</hi>. 2021. “Narrative Levels: A Shared Task for the Digital Humanities.” 
                         <hi rend="italic">Journal of Cultural Analytics 6</hi>. 
                         <ref target="https://culturalanalytics.org/issue/3772">https://culturalanalytics.org/issue/3772</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Jannidis, Fotis, Isabella Reger, Markus Krug, Lukas Weimer, Luisa Macharowsky und Frank Puppe</hi>. 2016. “Comparison of Methods for the Identification of Main Characters in German Novels.” In 
+<bibl style="text-align: left; "><hi rend="bold">Jannidis, Fotis, Isabella Reger, Markus Krug, Lukas Weimer, Luisa Macharowsky und Frank Puppe</hi>. 2016. “Comparison of Methods for the Identification of Main Characters in German Novels.” In 
                         <hi rend="italic">ADHO Digital Humanities Conference (DH2016)</hi>, 578–582. 
                         <ref target="https://dh2016.adho.org/abstracts/297">https://dh2016.adho.org/abstracts/297</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Ketschik, Nora</hi>. 2024. “Figurennetzwerke im mittelhochdeutschen Artusroman. Möglichkeiten und Grenzen der sozialen Netzwerkanalyse als Methode für literaturwissenschaftliche Analysen.” Metzler/Springer (Reihe: Digitale Literaturwissenschaft, hg. von Evelyn Gius und Thomas Weitin). Zugl. Dissertationsschrift, Universität Stuttgart. 
+<bibl style="text-align: left; "><hi rend="bold">Ketschik, Nora</hi>. 2024. “Figurennetzwerke im mittelhochdeutschen Artusroman. Möglichkeiten und Grenzen der sozialen Netzwerkanalyse als Methode für literaturwissenschaftliche Analysen.” Metzler/Springer (Reihe: Digitale Literaturwissenschaft, hg. von Evelyn Gius und Thomas Weitin). Zugl. Dissertationsschrift, Universität Stuttgart. 
                         <ref target="https://doi.org/10.1007/978-3-662-69984-3">https://doi.org/10.1007/978-3-662-69984-3</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Krautter, Benjamin, Janis Pagel, Nils Reiter und Marcus Willand</hi>. 2020. “»[E]in Vater, dächte ich, ist doch immer ein Vater«. Figurentypen und ihre Operationalisierung.” 
+<bibl style="text-align: left; "><hi rend="bold">Krautter, Benjamin, Janis Pagel, Nils Reiter und Marcus Willand</hi>. 2020. “»[E]in Vater, dächte ich, ist doch immer ein Vater«. Figurentypen und ihre Operationalisierung.” 
                         <hi rend="italic">Zeitschrift für digitale Geisteswissenschaften</hi>. 
                         <ref target="http://dx.doi.org/10.17175/2020_007">http://dx.doi.org/10.17175/2020_007</ref> (zugegriffen: 19.11.2024). 
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Krautter, Benjamin und Michael Vauth</hi>. 2023. “Konstellationen kommunikativer Macht. Hypothesengeleitete Netzwerkanalyse in der Literaturwissenschaft.” In 
+<bibl style="text-align: left; "><hi rend="bold">Krautter, Benjamin und Michael Vauth</hi>. 2023. “Konstellationen kommunikativer Macht. Hypothesengeleitete Netzwerkanalyse in der Literaturwissenschaft.” In 
                         <hi rend="italic">Figurenkonstellation und Gesellschaftsentwurf. Annäherung an eine narratologische Kategorie und ihre Deutungspotentiale</hi>, hg. von Henrike Schwab, 205–238. Heidelberg: Winter Verlag.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Krug, Markus, Frank Puppe, Isabella Reger, Lukas Weimer, Luisa Macharowsky, Stephan Feldhaus und Fotis Jannidis</hi>. 2018. “Description of a Corpus of Character References in German Novels - DROC [Deutsches ROman Corpus].” 
+<bibl style="text-align: left; "><hi rend="bold">Krug, Markus, Frank Puppe, Isabella Reger, Lukas Weimer, Luisa Macharowsky, Stephan Feldhaus und Fotis Jannidis</hi>. 2018. “Description of a Corpus of Character References in German Novels - DROC [Deutsches ROman Corpus].” 
                         <hi rend="italic">DARIAH-DE Working Papers 27.</hi>
-                        <ref target="http://resolver.sub.uni-goettingen.de/purl/?dariah-2018-2">http://resolver.sub.uni-goettingen.de/purl/?dariah-2018-2</ref> (zugegriffen: 19.11.2024).
+<ref target="http://resolver.sub.uni-goettingen.de/purl/?dariah-2018-2">http://resolver.sub.uni-goettingen.de/purl/?dariah-2018-2</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Krug, Markus, Fotis Jannidis, Isabella Reger, Luisa Macharowsky, Lukas Weimer und Frank Puppe</hi>. 2016. “Attribuierung direkter Reden in deutschen Romanen des 18.–20. Jahrhunderts. Methoden zur Bestimmung des Sprechers und des Angesprochenen.” In 
+<bibl style="text-align: left; "><hi rend="bold">Krug, Markus, Fotis Jannidis, Isabella Reger, Luisa Macharowsky, Lukas Weimer und Frank Puppe</hi>. 2016. “Attribuierung direkter Reden in deutschen Romanen des 18.–20. Jahrhunderts. Methoden zur Bestimmung des Sprechers und des Angesprochenen.” In 
                         <hi rend="italic">3. Tagung des Verbands Digital Humanities im deutschsprachigen Raum e.V. (DHd 2016)</hi>, 124–130.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Reiter, Nils, Andre Blessing, Nora Ketschik, Sandra Murr, Maximilian Overbeck und Axel Pichler</hi>. 2023. “Annotation Guidelines for Entity Reference Annotation (CRETA).” Zenodo (v1.1). 
+<bibl style="text-align: left; "><hi rend="bold">Reiter, Nils, Andre Blessing, Nora Ketschik, Sandra Murr, Maximilian Overbeck und Axel Pichler</hi>. 2023. “Annotation Guidelines for Entity Reference Annotation (CRETA).” Zenodo (v1.1). 
                         <ref target="https://doi.org/10.5281/zenodo.7684268">https://doi.org/10.5281/zenodo.7684268</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Rochat, Yannick und Frédéric Kaplan</hi>. 2014. “Character Networks in Les Confessions from Jean-Jacques Rousseau.” In 
+<bibl style="text-align: left; "><hi rend="bold">Rochat, Yannick und Frédéric Kaplan</hi>. 2014. “Character Networks in Les Confessions from Jean-Jacques Rousseau.” In 
                         <hi rend="italic">Proceedings of Texas Digital Humanities Conference</hi>.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Szemes, Botond und Bence Vida</hi>. 2024. “Tragic and Comical Networks. Clustering Dramatic Genres According to Structural Properties.” In 
+<bibl style="text-align: left; "><hi rend="bold">Szemes, Botond und Bence Vida</hi>. 2024. “Tragic and Comical Networks. Clustering Dramatic Genres According to Structural Properties.” In 
                         <hi rend="italic">Computational Drama Analysis. Reflecting on Methods and Interpretations,</hi> hg. von Melanie Andresen und Nils Reiter, 167–188. Berlin/Boston: De Gruyter. 
                         <ref target="https://doi.org/10.1515/9783111071824">https://doi.org/10.1515/9783111071824</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Smeets, Roel</hi>. 2021. “Character Constellations: Representations of Social Groups in Present-Day Dutch Literary Fiction.” Leuven: Leuven University Press. 
+<bibl style="text-align: left; "><hi rend="bold">Smeets, Roel</hi>. 2021. “Character Constellations: Representations of Social Groups in Present-Day Dutch Literary Fiction.” Leuven: Leuven University Press. 
                         <ref target="https://doi.org/10.2307/j.ctv21wj5cb">https://doi.org/10.2307/j.ctv21wj5cb</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Trilcke, Peer</hi>. 2013. “Social Network Analysis (SNA) als Methode einer textempirischen Literaturwissenschaft.” In 
+<bibl style="text-align: left; "><hi rend="bold">Trilcke, Peer</hi>. 2013. “Social Network Analysis (SNA) als Methode einer textempirischen Literaturwissenschaft.” In 
                         <hi rend="italic">Empirie in der Literaturwissenschaft</hi>, hg. von Philip Ajouri, Christoph Rauen und Katja Mellmann, 201–247. Münster: Mentis Verlag GmbH.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Trilcke, Peer, Evgeniya Ustinova, Ingo Börner, Frank Fischer und Carsten Milling</hi>. 2024. “Detecting Small Worlds in a Corpus of Thousands of Theater Plays.” In 
+<bibl style="text-align: left; "><hi rend="bold">Trilcke, Peer, Evgeniya Ustinova, Ingo Börner, Frank Fischer und Carsten Milling</hi>. 2024. “Detecting Small Worlds in a Corpus of Thousands of Theater Plays.” In 
                         <hi rend="italic">Computational Drama Analysis. Reflecting on Methods and Interpretations,</hi> hg. von Melanie Andresen und Nils Reiter, 7–33. Berlin/Boston: De Gruyter. 
                         <ref target="https://doi.org/10.1515/9783111071824">https://doi.org/10.1515/9783111071824</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Vauth, Michael</hi>. 2023. “Eine digitale Narratologie der Binnenerzählung. Untersuchungen zu den Dramen und Novellen Heinrich von Kleists.” Metzler/Springer (Reihe: Digitale Literaturwissenschaft, hg. von Evelyn Gius und Thomas Weitin). Zugl. Dissertationsschrift, Universität Darmstadt. 
+<bibl style="text-align: left; "><hi rend="bold">Vauth, Michael</hi>. 2023. “Eine digitale Narratologie der Binnenerzählung. Untersuchungen zu den Dramen und Novellen Heinrich von Kleists.” Metzler/Springer (Reihe: Digitale Literaturwissenschaft, hg. von Evelyn Gius und Thomas Weitin). Zugl. Dissertationsschrift, Universität Darmstadt. 
                         <ref target="https://doi.org/10.1007/978-3-662-67036-1">https://doi.org/10.1007/978-3-662-67036-1</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Vauth, Michael</hi>. 2019. “Netzwerkanalyse narrativer Informationsvermittlung in Dramen.” In 
+<bibl style="text-align: left; "><hi rend="bold">Vauth, Michael</hi>. 2019. “Netzwerkanalyse narrativer Informationsvermittlung in Dramen.” In 
                         <hi rend="italic">6. Tagung des Verbands Digital Humanities im deutschsprachigen Raum e.V. (DHd 2019),</hi> 184–188.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Viehhauser, Gabriel</hi>. 2023. “Figurenkonstellationen, Gesellschaftsentwürfe und Netzwerkanalyse. Digitale Zugänge zu Strukturmustern im Fastnachtspiel.” In 
+<bibl style="text-align: left; "><hi rend="bold">Viehhauser, Gabriel</hi>. 2023. “Figurenkonstellationen, Gesellschaftsentwürfe und Netzwerkanalyse. Digitale Zugänge zu Strukturmustern im Fastnachtspiel.” In 
                         <hi rend="italic">Figurenkonstellation und Gesellschaftsentwurf. Annäherung an eine narratologische Kategorie und ihre Deutungspotentiale</hi>, hg. von Henrike Schwab, 183–204. Heidelberg: Winter Verlag.
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Weimer, Anna Mareike, Florian Barth, Tillmann Dönicke, Luisa Gödeke, Hanna Varachkina, Anke Holler, Caroline Sporleder und Benjamin Gittel</hi>. 2022. “The (In-)Consistency of Literary Concepts – Formalising, Annotating and Detecting Literary Comment.” In 
+<bibl style="text-align: left; "><hi rend="bold">Weimer, Anna Mareike, Florian Barth, Tillmann Dönicke, Luisa Gödeke, Hanna Varachkina, Anke Holler, Caroline Sporleder und Benjamin Gittel</hi>. 2022. “The (In-)Consistency of Literary Concepts – Formalising, Annotating and Detecting Literary Comment.” In 
                         <hi rend="italic">1st Annual Conference of Computational Literary Studies. Conference Reader.</hi>
-                        <ref target="https://doi.org/10.48694/jcls.90">https://doi.org/10.48694/jcls.90</ref> (zugegriffen: 19.11.2024). 
+<ref target="https://doi.org/10.48694/jcls.90">https://doi.org/10.48694/jcls.90</ref> (zugegriffen: 19.11.2024). 
                     </bibl>
-                    <bibl style="text-align: left; "><hi rend="bold">Zehe, Albin, Leonard Konle, Lea Katharina Dümpelmann, Evelyn Gius, Andreas Hotho, Fotis Jannidis, Lucas Kaufmann, Markus Krug, Frank Puppe, Nils Reiter, Annekea Schreiber und Nathalie Wiedmer</hi>. 2021. “Detecting Scenes in Fiction: A new Segmentation Task.” In 
+<bibl style="text-align: left; "><hi rend="bold">Zehe, Albin, Leonard Konle, Lea Katharina Dümpelmann, Evelyn Gius, Andreas Hotho, Fotis Jannidis, Lucas Kaufmann, Markus Krug, Frank Puppe, Nils Reiter, Annekea Schreiber und Nathalie Wiedmer</hi>. 2021. “Detecting Scenes in Fiction: A new Segmentation Task.” In 
                         <hi rend="italic">Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics</hi>, 3167–3177. 
                         <ref target="https://doi.org/10.18653/v1/2021.eacl-main.276">https://doi.org/10.18653/v1/2021.eacl-main.276</ref> (zugegriffen: 19.11.2024).
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

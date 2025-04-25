@@ -1,388 +1,387 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EHRMANNTRAUT_Anton_Historische_Textnormalisierung__Herausfor">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title type="full">
-                    <title type="main">Historische Textnormalisierung: Herausforderungen und Potentiale von Deep Learning</title>
-                    <title type="sub"/>
-                </title>
-                <author>
-                    <persName>
-                        <surname>Ehrmanntraut</surname>
-                        <forename>Anton</forename>
-                    </persName>
-                    <affiliation>Julius-Maximilians-Universität Würzburg, Deutschland</affiliation>
-                    <email>anton.ehrmanntraut@uni-wuerzburg.de</email>
-                    <idno type="ORCID">0000-0001-6677-586X</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Bracke</surname>
-                        <forename>Yannic</forename>
-                    </persName>
-                    <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland</affiliation>
-                    <email>yannic.bracke@bbaw.de</email>
-                    <idno type="ORCID">0000-0002-7932-8230</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-11-29T14:29:13.871080999</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from an OASIS Open Document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Vortrag: Methode</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Textnormalisierung</term>
-                    <term>Historische Sprache</term>
-                    <term>NLP</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Umwandlung</term>
-                    <term>Übersetzung</term>
-                    <term>Annotieren</term>
-                    <term>Bereinigung</term>
-                    <term>Text</term>
-                    <term>Werkzeuge</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor type="bookmark-start" xml:id="id_einleitung"/>Einleitung
-                    <ptr type="bookmark-end" target="#id_einleitung"/>
-                </head>
-                <p>DH-Forschende, die mit historischen Dokumenten arbeiten wollen, haben ein Problem: je älter die historischen Texte sind, desto mehr weichen sie in ihrer Schreibweise von der gegenwärtigen Standardsprache ab. Neben dieser diachronischen Veränderung kommt noch eine synchronische Variabilität hinzu; in historischen Korpora finden sich häufig mehrere Schreibvarianten. So beobachten wir in Dokumenten des Deutschen Textarchivs (DTA) zwischen 1830 und 1890 bspw. die Varianten 
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="EHRMANNTRAUT_Anton_Historische_Textnormalisierung__Herausfor" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title type="full">
+<title type="main">Historische Textnormalisierung: Herausforderungen und Potentiale von Deep Learning</title>
+<title type="sub"/>
+</title>
+<author>
+<persName>
+<surname>Ehrmanntraut</surname>
+<forename>Anton</forename>
+</persName>
+<affiliation>Julius-Maximilians-Universität Würzburg, Deutschland</affiliation>
+<email>anton.ehrmanntraut@uni-wuerzburg.de</email>
+<idno type="ORCID">0000-0001-6677-586X</idno>
+</author>
+<author>
+<persName>
+<surname>Bracke</surname>
+<forename>Yannic</forename>
+</persName>
+<affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland</affiliation>
+<email>yannic.bracke@bbaw.de</email>
+<idno type="ORCID">0000-0002-7932-8230</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-11-29T14:29:13.871080999</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943042</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from an OASIS Open Document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Vortrag: Methode</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Textnormalisierung</term>
+<term>Historische Sprache</term>
+<term>NLP</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Umwandlung</term>
+<term>Übersetzung</term>
+<term>Annotieren</term>
+<term>Bereinigung</term>
+<term>Text</term>
+<term>Werkzeuge</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>
+<anchor type="bookmark-start" xml:id="id_einleitung"/>Einleitung
+                    <ptr target="#id_einleitung" type="bookmark-end"/>
+</head>
+<p>DH-Forschende, die mit historischen Dokumenten arbeiten wollen, haben ein Problem: je älter die historischen Texte sind, desto mehr weichen sie in ihrer Schreibweise von der gegenwärtigen Standardsprache ab. Neben dieser diachronischen Veränderung kommt noch eine synchronische Variabilität hinzu; in historischen Korpora finden sich häufig mehrere Schreibvarianten. So beobachten wir in Dokumenten des Deutschen Textarchivs (DTA) zwischen 1830 und 1890 bspw. die Varianten 
                     <hi rend="italic">heirathen, heiraten, heurathen</hi> und 
                     <hi rend="italic">heyrathen</hi>.
                 </p>
-                <p>Aus dieser orthographischen Abweichung ergeben sich nun für eine Nutzung digitalisierter historischer Texte Hindernisse: zum einen ist keine geeignete Volltextsuche mehr möglich, denn man müsste nun alle Schreibvarianten kennen und angeben. Zum anderen wird dabei die Weiterverarbeitung mithilfe von NLP-Tools erschwert: 
+<p>Aus dieser orthographischen Abweichung ergeben sich nun für eine Nutzung digitalisierter historischer Texte Hindernisse: zum einen ist keine geeignete Volltextsuche mehr möglich, denn man müsste nun alle Schreibvarianten kennen und angeben. Zum anderen wird dabei die Weiterverarbeitung mithilfe von NLP-Tools erschwert: 
                     <hi rend="italic">off-the-shelf</hi>-NLP-Werkzeuge für POS-Tagging oder Named Entity Recognition wurden auf gegenwartssprachlichen Daten trainiert und liefern für die historischen Varianten schlechtere Ergebnisse (vgl. Scheible et al., 2011; Pettersson et al., 2013; Kogkitsidou und Gambette, 2020). Das limitiert insbesondere 
                     <hi rend="italic">Distant-Reading</hi>-Ansätze auf historischen Korpora.
                 </p>
-                <p>Eine Möglichkeit, diesen beiden Problemen zu begegnen, ist eine automatisierte historische 
+<p>Eine Möglichkeit, diesen beiden Problemen zu begegnen, ist eine automatisierte historische 
                     <hi rend="italic">Textnormalisierung</hi>. Vereinfacht gesprochen wird dabei das historische Dokument automatisch in die moderne Standardschreibung „übersetzt“, wodurch z. B. sämtliche o. g. Varianten von 
                     <hi rend="italic">heiraten</hi> mit dem standardsprachlichen Äquivalent ersetzt werden. Das wird in vielen modernen Editionen älterer Werke manuell praktiziert. Eine automatische Textnormalisierung für die deutsche Sprache ab ca. 1600 bietet das Tool 
                     <hi rend="italic">Cascaded Analysis Broker</hi><ref n="1" target="ftn1"/> (CAB, Jurish, 2012) an, das u. a. für die Textnormalisierung der DTA-Korpora eingesetzt wird und als das 
                     <hi rend="italic">de-facto</hi> Standard-Tool fürs Deutsche gelten kann. CAB wendet zur Normalisierung mittels endlicher Automaten bestimmte Ersetzungsregeln von Buchstaben an, die mit linguistischem Expertenwissen händisch entwickelt wurden. Damit baut CAB auf einer deutlich älteren Technologie auf als die gegenwärtig übliche NLP-Methodik des Machine Learning (ML) via Transformern. Während es also naheliegt, automatische Textnormalisierung aus einem ML-Ansatz heraus zu operationalisieren, ergibt sich hierbei eine neue Schwierigkeit: Textnormalisierung ist in vielen Fällen eine unscharfe Praxis und selten in Konventionen festgelegt.
                 </p>
-                <p>Mit diesem Beitrag möchten wir folgendes leisten: Erstens wollen wir auf die Komplexität der Definition von 
+<p>Mit diesem Beitrag möchten wir folgendes leisten: Erstens wollen wir auf die Komplexität der Definition von 
                     <hi rend="italic">normalisiertem Text</hi>, sowie auf den unterschiedlich engen Zusammenhang dieser Definition und der Methode für die 
                     <hi rend="italic">Textnormalisierung</hi> hinweisen. Zweitens vergleichen wir in einer Fallstudie quantitativ die Güte von CAB mit gegenwärtigen Transformer-Architekturen zur Textnormalisierung. Es lassen sich zwar Verbesserungen erzielen, aber die Ergebnisse sind weiterhin ausbaufähig. Drittens ordnen wir abschließend die Ergebnisse der Fallstudie in das Vorhaben von 
                     <hi rend="italic">Text+</hi> ein, der DH-Community ein Nachfolgesystem für CAB zur Verfügung zu stellen.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor type="bookmark-start" xml:id="id_herangehensweisen"/>Herangehensweisen
-                    <ptr type="bookmark-end" target="#id_herangehensweisen"/>
-                </head>
-                <p>Wie ein normalisierter Text genau aussehen soll, ist keine triviale Frage, denn die sprachlichen Unterschiede zwischen historischen und modernen Texten betreffen verschiedene Ebenen. So illustriert das folgende Beispiel von 1749 Abweichungen auf der Ebene der Schreibung (
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>
+<anchor type="bookmark-start" xml:id="id_herangehensweisen"/>Herangehensweisen
+                    <ptr target="#id_herangehensweisen" type="bookmark-end"/>
+</head>
+<p>Wie ein normalisierter Text genau aussehen soll, ist keine triviale Frage, denn die sprachlichen Unterschiede zwischen historischen und modernen Texten betreffen verschiedene Ebenen. So illustriert das folgende Beispiel von 1749 Abweichungen auf der Ebene der Schreibung (
                     <hi rend="italic">wil</hi> statt 
                     <hi rend="italic">will</hi>), der Wortbildung (
                     <hi rend="italic">fürstellen</hi> statt 
                     <hi rend="italic">vorstellen</hi>) und der Syntax (Pronomen im Nachfeld).
                 </p>
-                <quote>
-                    <hi rend="italic">Ich wil mir in meinem Sterben fürstellen dich, o JEsu!</hi><ref n="2" target="ftn2"/>
-                </quote>
-                <p>Eine Reihe von Konventionen für die manuelle Normalisierung in verschiedenen sprachhistorischen Korpusprojekten (Durrell et al., 2012; Krasselt et al., 2015; Odebrecht et al., 2020) illustrieren die Komplexität der Aufgabe, die hier nur kurz angedeutet werden soll:<ref n="3" target="ftn3"/> Wie sollen ausgestorbene Lemmata normalisiert werden? Sollen morphosyntaktische Abweichungen normalisiert werden, und welche? Soll auch die Wortstellung der Normalisierung unterliegen (vgl. die Stellung von 
+<quote>
+<hi rend="italic">Ich wil mir in meinem Sterben fürstellen dich, o JEsu!</hi><ref n="2" target="ftn2"/>
+</quote>
+<p>Eine Reihe von Konventionen für die manuelle Normalisierung in verschiedenen sprachhistorischen Korpusprojekten (Durrell et al., 2012; Krasselt et al., 2015; Odebrecht et al., 2020) illustrieren die Komplexität der Aufgabe, die hier nur kurz angedeutet werden soll:<ref n="3" target="ftn3"/> Wie sollen ausgestorbene Lemmata normalisiert werden? Sollen morphosyntaktische Abweichungen normalisiert werden, und welche? Soll auch die Wortstellung der Normalisierung unterliegen (vgl. die Stellung von 
                     <hi rend="italic">dich</hi> im angegebenen Beispiel)? Andere Fragen betreffen die Struktur der Korpusannotation: Soll jedem Token im Originaltext genau ein modernes Token zugeordnet werden oder sollen 1:n-, n:1-, n:m-Beziehungen zwischen beiden Ebenen möglich sein, um etwa Veränderungen in Getrennt- und Zusammenschreibung abzubilden (
                     <hi rend="italic">Statt zu finden</hi> vs. 
                     <hi rend="italic">stattzufinden</hi>)?<ref n="4" target="ftn4"/> Die Antworten auf diese Fragen richten sich auch nach der vorgesehenen Nutzung der normalisierten Version.
                 </p>
-                <p>Bei der technischen Umsetzung eines Normalisierers kann zwischen zwei Ansätzen unterschieden werden: einerseits Verfahren, die auf manuell erstellten Regeln basieren, und andererseits jene, die auf dem Lernen aus annotierten Daten basieren. Diese zwei unterschiedlichen Verfahren unterscheiden sich auch darin, wie eng die Definition von normalisiertem Text und die Methode zur automatischen Erzeugung von normalisiertem Text (die eigentliche 
+<p>Bei der technischen Umsetzung eines Normalisierers kann zwischen zwei Ansätzen unterschieden werden: einerseits Verfahren, die auf manuell erstellten Regeln basieren, und andererseits jene, die auf dem Lernen aus annotierten Daten basieren. Diese zwei unterschiedlichen Verfahren unterscheiden sich auch darin, wie eng die Definition von normalisiertem Text und die Methode zur automatischen Erzeugung von normalisiertem Text (die eigentliche 
                     <hi rend="italic">Textnormalisierung</hi>) zusammenhängen.
                 </p>
-                <p>Das System CAB verfolgt den ersten Ansatz. Zu CAB gehört keine natürlichsprachliche Beschreibung von normalisiertem Text, wie in den oben genannten Konventionen, aber es basiert auf einer Reihe formaler Regeln. Die Definition von normalisiertem Text und das Vorgehen zur automatischen Normalisierung fallen also zusammen, wobei die Regeln mit einer bestimmten Vorstellung vom Ziel der Normalisierung (d. h. von korrekt normalisiertem Text) entworfen wurden.</p>
-                <p>Beim zweiten Ansatz, dem Lernen aus Trainingsdaten wie im Fall der hier evaluierten ML-Modelle, sind die Definition von normalisiertem Text und der Prozess der Normalisierung vollständig getrennt zu sehen. Das Trainingskorpus zu erstellen, setzt eine Definition von normalisiertem Text voraus, etwa in Form der o. g. Konventionen, oder – im Fall von Textausgaben – linguistischer Intuition. Im Training selbst allerdings spielt diese Definition keine Rolle. Die Modelle lernen nur die statistischen Zusammenhänge zwischen historischem und normalisiertem Text.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor type="bookmark-start" xml:id="id_fallstudie-normalisierung-historischer-literatursprache-des-19.-jahrhunderts"/>Fallstudie: Normalisierung historischer Literatursprache des 19. Jahrhunderts
-                    <ptr type="bookmark-end" target="#id_fallstudie-normalisierung-historischer-literatursprache-des-19.-jahrhunderts"/>
-                </head>
-                <p>Um die aktuellen Möglichkeiten und Grenzen von automatisierter Textnormalisierung an einem konkreten Fall zu erörtern, fokussiert unsere Fallstudie sich auf die Normalisierung von historischer Literatursprache des 19. Jahrhunderts. Wir vergleichen hierbei quantitativ die methodischen Ansätze: auf der einen Seite das regelbasierte Normalisierungssystem CAB,<ref n="5" target="ftn5"/> auf der anderen Seite ML-Systeme, welche auf einem Parallelkorpus mit historischer und moderner Schreibweise trainiert sind. Für Letzteres trainieren wir zwei Transformer-Modelle, einmal auf Satz- und einmal auf Type-Ebene.
+<p>Das System CAB verfolgt den ersten Ansatz. Zu CAB gehört keine natürlichsprachliche Beschreibung von normalisiertem Text, wie in den oben genannten Konventionen, aber es basiert auf einer Reihe formaler Regeln. Die Definition von normalisiertem Text und das Vorgehen zur automatischen Normalisierung fallen also zusammen, wobei die Regeln mit einer bestimmten Vorstellung vom Ziel der Normalisierung (d. h. von korrekt normalisiertem Text) entworfen wurden.</p>
+<p>Beim zweiten Ansatz, dem Lernen aus Trainingsdaten wie im Fall der hier evaluierten ML-Modelle, sind die Definition von normalisiertem Text und der Prozess der Normalisierung vollständig getrennt zu sehen. Das Trainingskorpus zu erstellen, setzt eine Definition von normalisiertem Text voraus, etwa in Form der o. g. Konventionen, oder – im Fall von Textausgaben – linguistischer Intuition. Im Training selbst allerdings spielt diese Definition keine Rolle. Die Modelle lernen nur die statistischen Zusammenhänge zwischen historischem und normalisiertem Text.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>
+<anchor type="bookmark-start" xml:id="id_fallstudie-normalisierung-historischer-literatursprache-des-19.-jahrhunderts"/>Fallstudie: Normalisierung historischer Literatursprache des 19. Jahrhunderts
+                    <ptr target="#id_fallstudie-normalisierung-historischer-literatursprache-des-19.-jahrhunderts" type="bookmark-end"/>
+</head>
+<p>Um die aktuellen Möglichkeiten und Grenzen von automatisierter Textnormalisierung an einem konkreten Fall zu erörtern, fokussiert unsere Fallstudie sich auf die Normalisierung von historischer Literatursprache des 19. Jahrhunderts. Wir vergleichen hierbei quantitativ die methodischen Ansätze: auf der einen Seite das regelbasierte Normalisierungssystem CAB,<ref n="5" target="ftn5"/> auf der anderen Seite ML-Systeme, welche auf einem Parallelkorpus mit historischer und moderner Schreibweise trainiert sind. Für Letzteres trainieren wir zwei Transformer-Modelle, einmal auf Satz- und einmal auf Type-Ebene.
                 </p>
-                <p>
-                    <figure>
-                        <graphic url="Pictures/f4a92d2a8029d9522c6b6659202a779a.jpg"/>
-                        <head>Abbildung 1: (Fiktives) Beispiel einer Textnormalisierungs-Instanz der Fallstudie. „DTA“: Originalschreibweise einer Erstausgabe; „TextGrid“: normalisierte Form aus gegenwärtiger Edition; „Input“: tokenisierte und vorverarbeitete Eingabe für das Normalisierungssystem; „Output“: gewünschte Gold-Ausgabe. NB: „Input“ und „Output“ sind auf der Token-Ebene aligniert.</head>
-
-                    </figure>
-                </p>
-                <p>Für das Modell auf Satz-Ebene führen wir ein 
+<p>
+<figure>
+<graphic url="Pictures/f4a92d2a8029d9522c6b6659202a779a.jpg"/>
+<head>Abbildung 1: (Fiktives) Beispiel einer Textnormalisierungs-Instanz der Fallstudie. „DTA“: Originalschreibweise einer Erstausgabe; „TextGrid“: normalisierte Form aus gegenwärtiger Edition; „Input“: tokenisierte und vorverarbeitete Eingabe für das Normalisierungssystem; „Output“: gewünschte Gold-Ausgabe. NB: „Input“ und „Output“ sind auf der Token-Ebene aligniert.</head>
+</figure>
+</p>
+<p>Für das Modell auf Satz-Ebene führen wir ein 
                     <hi rend="italic">Fine-tuning</hi> auf dem Encoder-Decoder-Modell ByT5-small (300M Parameter; Xue et al., 2021) durch, um Satz für Satz in gegenwärtige Orthographie zu „übersetzen“.<ref n="6" target="ftn6"/> Encoder-Decoder-Modelle sind für solche „Übersetzungs-Tasks“ üblicherweise am besten geeignet. Das spezielle Modell ByT5 wurde auf dem multilingualen (nicht-parallelen) C4-Korpus zur Rekonstruktion von 
                     <hi rend="italic">span corruptions</hi> unüberwacht vortrainiert. Eine Besonderheit ist, dass es keinen Tokenisierer gibt, sondern der Text Byte für Byte verarbeitet wird. Xue et al. (2021) zeigen, dass die gängige Subword-Tokenisierung von vortrainierten Modellen bei 
                     <hi rend="italic">noisy text</hi> (z. B. Text mit 
                     <hi rend="italic">zUFälLigEr GRoßScHReiBunG</hi>) zu Problemen führen kann und dass das Tokenisierer-freie ByT5 in diesem Setting besser abschneidet. Auch historischer Text weicht von der Standardschreibung ab und kann damit als 
                     <hi rend="italic">noisy</hi> gelten. In ähnlichen Kontexten wurde ByT5 schon mit vielversprechenden Ergebnissen für die Normalisierung von Social-Media-Text und von dialektalen Daten eingesetzt (Samuel und Straka, 2021; Kuparinen et al., 2023).
                 </p>
-                <p>Das zweite Modell ist ein Hybrid und besteht aus einem Encoder-Decoder-Modell und einem GPT-Modell. Die Encoder-Decoder-Komponente normalisiert kontext-unabhängig Type für Type. Dieses Modell ist ähnlich zu ByT5 aufgebaut, aber wesentlich kleiner, und wurde ohne Vortraining von Beginn an für den Task der Type-Normalisierung trainiert. Die generierten Normalisierungshypothesen pro Type werden anschließend noch von einem zweiten vortrainierten deutschsprachigem GPT2-Modell (ohne weiteres Fine-Tuning) entsprechend des Kontextes gewichtet (8M + 124M Parameter).<ref n="7" target="ftn7"/> Vereinfacht gesprochen wird dabei beispielsweise für einen Eingabesatz „Die Gemälde an den Wänden des Pallaſtes beeindruckten alle“ zuerst vom ersten Encoder-Decoder-Modell für das fragwürdige Type 
+<p>Das zweite Modell ist ein Hybrid und besteht aus einem Encoder-Decoder-Modell und einem GPT-Modell. Die Encoder-Decoder-Komponente normalisiert kontext-unabhängig Type für Type. Dieses Modell ist ähnlich zu ByT5 aufgebaut, aber wesentlich kleiner, und wurde ohne Vortraining von Beginn an für den Task der Type-Normalisierung trainiert. Die generierten Normalisierungshypothesen pro Type werden anschließend noch von einem zweiten vortrainierten deutschsprachigem GPT2-Modell (ohne weiteres Fine-Tuning) entsprechend des Kontextes gewichtet (8M + 124M Parameter).<ref n="7" target="ftn7"/> Vereinfacht gesprochen wird dabei beispielsweise für einen Eingabesatz „Die Gemälde an den Wänden des Pallaſtes beeindruckten alle“ zuerst vom ersten Encoder-Decoder-Modell für das fragwürdige Type 
                     <hi rend="italic">Pallaſtes</hi> die Normalisierungshypothesen 
                     <hi rend="italic">Pallastes</hi>, 
                     <hi rend="italic">Palistes</hi> und 
                     <hi rend="italic">Palastes</hi> generiert. Dann wird vom zweiten GPT-Modell evaluiert, welcher der drei Sätze „Die Gemälde an den Wänden des Pallastes/Palistes/Palastes beeindruckten alle“ am wahrscheinlichsten ist und als Ausgabe ausgewählt.
                 </p>
-                <p>Als weitere Baseline trainieren wir noch den auf 
+<p>Als weitere Baseline trainieren wir noch den auf 
                     <hi rend="italic">statistical machine translation</hi> basierenden Type-Normalisierer csmtiser<ref n="8" target="ftn8"/> (Ljubešić et al., 2016).
                 </p>
-                <p>Als Datensatz zum Training bzw. für die Evaluation verwenden wir das Parallelkorpus 
+<p>Als Datensatz zum Training bzw. für die Evaluation verwenden wir das Parallelkorpus 
                     <hi rend="italic">DTA EvalCorpus</hi><ref n="9" target="ftn9"/> (Jurish et al., 2013). Das Parallelkorpus aligniert auf Token-Ebene Erstausgaben des DTA mit gegenwärtigen Editionen (ab 1950) der Digitalen Bibliothek TextGrid. Diese Alignierung wurde in einem ersten Schritt automatisch berechnet, und anschließend auf Type- und Token-Ebene manuell verifiziert und ggf. korrigiert. Während dieses Parallelkorpus zwar manuell verifiziert wurde, muss die Heterogenität des Quellkorpus TextGrid problematisiert werden: so folgen die Editionen nicht „einem“ festen Normalisierungsstandard, sondern die Normalisierung geht je nach Edition und Vorstellungen der Editor:innen unterschiedlich weit. Diese wurden – anders als bei historischen Korpusprojekten – nicht in Form von Guidelines explizit gemacht. Hinzu kommt noch, dass die Editionen wahlweise der neuen oder der alten Rechtschreibung von vor 1996 folgen.
                 </p>
-                <p>Wir beschränken uns auf den nicht-lyrischen belletristischen Teil (85 Dokumente, 1784–1901) und erhalten nach Vorverarbeitung<ref n="10" target="ftn10"/> insgesamt 4 Millionen Tokens auf 180.000 Sätzen. Insbesondere bringen wir für die Type-basierten Modelle das Parallelkorpus in eine 1-zu-1-Alignierung, wie in Abb. 1. Durch die hierbei eingeführten Pseudo-Zeichen _ und # (siehe Abb. 1; vgl. Bawden et al., 2022) können wir in der Evaluation Token für Token mit der Gold-Variante vergleichen. Wir führen unseren Versuch auf einem 60-20-20 Train-dev-test-Split durch. Nähere Details zum Hybrid-Modell, zum Versuchsaufbau und weitere Auswertungen sind ferner von Ehrmanntraut (2024) in einem separaten Bericht beschrieben.<ref n="11" target="ftn11"/>
-                </p>
-                <p>Tabelle 1 zeigt die Ergebnisse auf dem Test-Split in Wortgenauigkeit („WordAcc“) auf Token-Ebene, exklusive Interpunktion. Für eine verfeinerte Analyse geben wir neben der Gesamtgenauigkeit auch die Genauigkeit für Tokens an, welche die Modelle bereits im Training gesehen haben (invocab) bzw. welche die Modelle zum ersten Mal sehen (OOV). Nur letzteres Maß bildet die Generalisierungsleistung der Modelle ab (vgl. Robertson und Goldwater, 2018).</p>
-                <table rend="frame" xml:id="Table1">
-                    <row role="label">
-                        <cell rend="start">System / Baseline</cell>
-                        <cell>Ebene</cell>
-                        <cell rend="end bold">WordAcc</cell>
-                        <cell rend="end bold">WordAcc (invocab)</cell>
-                        <cell rend="end bold">WordAcc (OOV)</cell>
-                    </row>
-                    <row>
-                        <cell rend="start italic">Original beibehalten</cell>
-                        <cell>Type</cell>
-                        <cell rend="end">96,513</cell>
-                        <cell rend="end">97,015</cell>
-                        <cell rend="end">83,912</cell>
-                    </row>
-                    <row>
-                        <cell rend="start italic">Trainings-Lexikon</cell>
-                        <cell>Type</cell>
-                        <cell rend="end">98,881</cell>
-                        <cell rend="end">99,477</cell>
-                        <cell rend="end">83,912</cell>
-                    </row>
-                    <row>
-                        <cell rend="start italic">Theoretisch bestmögliches Lexikon</cell>
-                        <cell>Type</cell>
-                        <cell rend="end">99,547</cell>
-                        <cell rend="end">99,533</cell>
-                        <cell rend="end">99,896</cell>
-                    </row>
-                    <row>
-                        <cell rend="start">CAB</cell>
-                        <cell>Type</cell>
-                        <cell rend="end">98,072</cell>
-                        <cell rend="end">—</cell>
-                        <cell rend="end">—</cell>
-                    </row>
-                    <row>
-                        <cell rend="start">csmtiser</cell>
-                        <cell>Type</cell>
-                        <cell rend="end">98,940</cell>
-                        <cell rend="end">99,321</cell>
-                        <cell rend="end">89,369</cell>
-                    </row>
-                    <row>
-                        <cell rend="start">ByT5-Modell</cell>
-                        <cell>Satz</cell>
-                        <cell rend="end">99,156</cell>
-                        <cell rend="end">99,431</cell>
-                        <cell rend="end">92,237</cell>
-                    </row>
-                    <row>
-                        <cell rend="start">Transformer-Hybrid-Modell</cell>
-                        <cell>Type</cell>
-                        <cell rend="end">99,194</cell>
-                        <cell rend="end">99,493</cell>
-                        <cell rend="end">91,701</cell>
-                    </row>
-                    <head>Tabelle 1: Wortgenauigkeit der Modelle auf dem Test-Split. „Invocab“ bzw. „OOV“ bezieht sich auf im Training gesehene bzw. nicht gesehene Tokens. Da CAB nicht trainiert ist, sind „invocab“ bzw. „OOV“ hier leer. „Trainings-Lexikon“ bezeichnet die Baseline, welche jedes Wort zur häufigsten beobachteten Normalisierung im Trainings-Datensatz normalisiert, und OOV-Wörter im Original beibehält. „Theoretisch bestmögliches Lexikon“ bezeichet das bestmögliche Ergebnis, welches unter idealen (kontext-unabhängigen) Type-für-Type-Ersetzungen erreicht werden kann.</head>
-                </table>
-                <p>Zunächst zu CAB: hier sehen wir, dass selbst ohne Trainingsressourcen das System eine starke Baseline darstellt. Allein durch die integrierten Regeln können gegenüber dem Beibehalten des Originals schon fast die Hälfte der Fehler eliminiert werden. Der Vergleich mit ML-Ansätzen zeigt, dass diese genauer arbeiten als CAB; so machen die Transformer-Modelle über alle Tokens des Test-Sets nur halb so viele Fehler wie CAB (0,844% Fehler bei ByT5 unter „WordAcc“ vs. 1,928% Fehler bei CAB), wobei dieser Vorteil durch ein Trainingskorpus und ressourcenintensives Training/Inferenz erkauft wird. Dennoch zeigt sich aus dieser Analyse, dass Textnormalisierung noch nicht als „gelöst“ gelten kann: selbst die Transformer-Modelle generieren immer noch ein fehlerhaftes Token pro 100 Tokens – unter den OOV-Tokens sogar ein Fehler pro 10 Tokens.</p>
-                <p>Eine mögliche Erklärung für den Performance-Unterschied zwischen CAB und den Transformern könnte lauten, dass CABs Regeln auf eine andere Vorstellung von normalisiertem Text ausgerichtet sind, die nicht vollständig mit der Vorstellung übereinstimmt, die in den modernen Editionen realisiert ist. Das ist zum Teil der Fall: so tilgt CAB im Gegensatz zum Parallelkorpus und den Transformer-Modellen keine Apostrophe vor Genitiv-s (
+<p>Wir beschränken uns auf den nicht-lyrischen belletristischen Teil (85 Dokumente, 1784–1901) und erhalten nach Vorverarbeitung<ref n="10" target="ftn10"/> insgesamt 4 Millionen Tokens auf 180.000 Sätzen. Insbesondere bringen wir für die Type-basierten Modelle das Parallelkorpus in eine 1-zu-1-Alignierung, wie in Abb. 1. Durch die hierbei eingeführten Pseudo-Zeichen _ und # (siehe Abb. 1; vgl. Bawden et al., 2022) können wir in der Evaluation Token für Token mit der Gold-Variante vergleichen. Wir führen unseren Versuch auf einem 60-20-20 Train-dev-test-Split durch. Nähere Details zum Hybrid-Modell, zum Versuchsaufbau und weitere Auswertungen sind ferner von Ehrmanntraut (2024) in einem separaten Bericht beschrieben.<ref n="11" target="ftn11"/>
+</p>
+<p>Tabelle 1 zeigt die Ergebnisse auf dem Test-Split in Wortgenauigkeit („WordAcc“) auf Token-Ebene, exklusive Interpunktion. Für eine verfeinerte Analyse geben wir neben der Gesamtgenauigkeit auch die Genauigkeit für Tokens an, welche die Modelle bereits im Training gesehen haben (invocab) bzw. welche die Modelle zum ersten Mal sehen (OOV). Nur letzteres Maß bildet die Generalisierungsleistung der Modelle ab (vgl. Robertson und Goldwater, 2018).</p>
+<table rend="frame" xml:id="Table1">
+<row role="label">
+<cell rend="start">System / Baseline</cell>
+<cell>Ebene</cell>
+<cell rend="end bold">WordAcc</cell>
+<cell rend="end bold">WordAcc (invocab)</cell>
+<cell rend="end bold">WordAcc (OOV)</cell>
+</row>
+<row>
+<cell rend="start italic">Original beibehalten</cell>
+<cell>Type</cell>
+<cell rend="end">96,513</cell>
+<cell rend="end">97,015</cell>
+<cell rend="end">83,912</cell>
+</row>
+<row>
+<cell rend="start italic">Trainings-Lexikon</cell>
+<cell>Type</cell>
+<cell rend="end">98,881</cell>
+<cell rend="end">99,477</cell>
+<cell rend="end">83,912</cell>
+</row>
+<row>
+<cell rend="start italic">Theoretisch bestmögliches Lexikon</cell>
+<cell>Type</cell>
+<cell rend="end">99,547</cell>
+<cell rend="end">99,533</cell>
+<cell rend="end">99,896</cell>
+</row>
+<row>
+<cell rend="start">CAB</cell>
+<cell>Type</cell>
+<cell rend="end">98,072</cell>
+<cell rend="end">—</cell>
+<cell rend="end">—</cell>
+</row>
+<row>
+<cell rend="start">csmtiser</cell>
+<cell>Type</cell>
+<cell rend="end">98,940</cell>
+<cell rend="end">99,321</cell>
+<cell rend="end">89,369</cell>
+</row>
+<row>
+<cell rend="start">ByT5-Modell</cell>
+<cell>Satz</cell>
+<cell rend="end">99,156</cell>
+<cell rend="end">99,431</cell>
+<cell rend="end">92,237</cell>
+</row>
+<row>
+<cell rend="start">Transformer-Hybrid-Modell</cell>
+<cell>Type</cell>
+<cell rend="end">99,194</cell>
+<cell rend="end">99,493</cell>
+<cell rend="end">91,701</cell>
+</row>
+<head>Tabelle 1: Wortgenauigkeit der Modelle auf dem Test-Split. „Invocab“ bzw. „OOV“ bezieht sich auf im Training gesehene bzw. nicht gesehene Tokens. Da CAB nicht trainiert ist, sind „invocab“ bzw. „OOV“ hier leer. „Trainings-Lexikon“ bezeichnet die Baseline, welche jedes Wort zur häufigsten beobachteten Normalisierung im Trainings-Datensatz normalisiert, und OOV-Wörter im Original beibehält. „Theoretisch bestmögliches Lexikon“ bezeichet das bestmögliche Ergebnis, welches unter idealen (kontext-unabhängigen) Type-für-Type-Ersetzungen erreicht werden kann.</head>
+</table>
+<p>Zunächst zu CAB: hier sehen wir, dass selbst ohne Trainingsressourcen das System eine starke Baseline darstellt. Allein durch die integrierten Regeln können gegenüber dem Beibehalten des Originals schon fast die Hälfte der Fehler eliminiert werden. Der Vergleich mit ML-Ansätzen zeigt, dass diese genauer arbeiten als CAB; so machen die Transformer-Modelle über alle Tokens des Test-Sets nur halb so viele Fehler wie CAB (0,844% Fehler bei ByT5 unter „WordAcc“ vs. 1,928% Fehler bei CAB), wobei dieser Vorteil durch ein Trainingskorpus und ressourcenintensives Training/Inferenz erkauft wird. Dennoch zeigt sich aus dieser Analyse, dass Textnormalisierung noch nicht als „gelöst“ gelten kann: selbst die Transformer-Modelle generieren immer noch ein fehlerhaftes Token pro 100 Tokens – unter den OOV-Tokens sogar ein Fehler pro 10 Tokens.</p>
+<p>Eine mögliche Erklärung für den Performance-Unterschied zwischen CAB und den Transformern könnte lauten, dass CABs Regeln auf eine andere Vorstellung von normalisiertem Text ausgerichtet sind, die nicht vollständig mit der Vorstellung übereinstimmt, die in den modernen Editionen realisiert ist. Das ist zum Teil der Fall: so tilgt CAB im Gegensatz zum Parallelkorpus und den Transformer-Modellen keine Apostrophe vor Genitiv-s (
                     <hi rend="italic">Hoppensack’s</hi> nicht zu 
                     <hi rend="italic">Hoppensacks</hi>). An diesem Beispiel sehen wir, wie wichtig es ist, die unterschiedlichen Definitionen von normalisiertem Text mitzudenken. Dennoch machen sämtliche Apostroph-Schreibungen nur 0,344% der Tokens im Testset aus, und erklären daher nicht vollständig die Differenz zu den Transformer-Modellen. In einer Stichprobe zeigte sich, dass zahlreiche der verbleibenden abweichenden Normalisierungen von CAB tatsächlich nicht als eine alternative geeignete Normalisierungsform gewertet werden können.
                 </p>
-                <p>Abschließend wollen wir noch die zwei verschiedenen Transformer-Architekturen diskutieren: Auf Basis der Fallstudie lässt sich zwischen den Modellen kein Unterschied in der Genauigkeit feststellen. Ein Fine-Tuning von vortrainierten generativen LLMs wie ByT5 hat aber den entscheidenden Vorteil, dass es einfach umsetzbar und sehr flexibel ist, z. B. im Bezug auf Wortstellung, Tokenisierung, usw. Dagegen zeigt sich, dass auch kleinere Modelle wie das Hybrid-Modell genauso gut arbeiten können, dies ist aber im Design komplexer und abhängig von fester Wortstellung. Es würde sich daher anbieten, in zukünftiger Arbeit weitere Korpora bzw. Datensätze heranzuziehen, und insbesondere die Abhängigkeit vom Volumen des Trainingsmaterials auf die Güte der Modelle zu untersuchen. Die Evaluation sollte auch auf andere Textsorten und ältere Zeitstufen ausgeweitet werden, da diese schwieriger zu normalisieren sein dürften. Dafür bleibt auch die Gewinnung geeigneter Trainingsdaten eine Herausforderung.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>
-                    <anchor type="bookmark-start" xml:id="id_ausblick-eine-infrastruktur-für-die-digital-humanities"/>Ausblick: Eine Infrastruktur für die Digital Humanities
-                    <ptr type="bookmark-end" target="#id_ausblick-eine-infrastruktur-für-die-digital-humanities"/>
-                </head>
-                <p>Wie kann die Nutzung von Tools für die automatisierte historische Normalisierung in der Praxis der Digital Humanities aussehen? Aktuell besteht in erster Linie die Möglichkeit auf den CAB-Webservice zurückzugreifen.<ref n="12" target="ftn12"/> Ein lokaler Betrieb für Nutzende ist nicht möglich, da die CAB-Instanz des DTA an zentraler Stelle urheberrechtlich geschützte Ressourcen einbindet.
+<p>Abschließend wollen wir noch die zwei verschiedenen Transformer-Architekturen diskutieren: Auf Basis der Fallstudie lässt sich zwischen den Modellen kein Unterschied in der Genauigkeit feststellen. Ein Fine-Tuning von vortrainierten generativen LLMs wie ByT5 hat aber den entscheidenden Vorteil, dass es einfach umsetzbar und sehr flexibel ist, z. B. im Bezug auf Wortstellung, Tokenisierung, usw. Dagegen zeigt sich, dass auch kleinere Modelle wie das Hybrid-Modell genauso gut arbeiten können, dies ist aber im Design komplexer und abhängig von fester Wortstellung. Es würde sich daher anbieten, in zukünftiger Arbeit weitere Korpora bzw. Datensätze heranzuziehen, und insbesondere die Abhängigkeit vom Volumen des Trainingsmaterials auf die Güte der Modelle zu untersuchen. Die Evaluation sollte auch auf andere Textsorten und ältere Zeitstufen ausgeweitet werden, da diese schwieriger zu normalisieren sein dürften. Dafür bleibt auch die Gewinnung geeigneter Trainingsdaten eine Herausforderung.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>
+<anchor type="bookmark-start" xml:id="id_ausblick-eine-infrastruktur-für-die-digital-humanities"/>Ausblick: Eine Infrastruktur für die Digital Humanities
+                    <ptr target="#id_ausblick-eine-infrastruktur-für-die-digital-humanities" type="bookmark-end"/>
+</head>
+<p>Wie kann die Nutzung von Tools für die automatisierte historische Normalisierung in der Praxis der Digital Humanities aussehen? Aktuell besteht in erster Linie die Möglichkeit auf den CAB-Webservice zurückzugreifen.<ref n="12" target="ftn12"/> Ein lokaler Betrieb für Nutzende ist nicht möglich, da die CAB-Instanz des DTA an zentraler Stelle urheberrechtlich geschützte Ressourcen einbindet.
                 </p>
-                <p>Die hier vorgestellten Modelle bzw. deren Weiterentwicklungen stellen wir frei zur Verfügung. Für das Hybrid-Modell stehen der Code und die Modelle auf Github/Huggingface zur Nutzung bereit.<ref n="13" target="ftn13"/> Das ByT5-basierte Modell wurde als 
+<p>Die hier vorgestellten Modelle bzw. deren Weiterentwicklungen stellen wir frei zur Verfügung. Für das Hybrid-Modell stehen der Code und die Modelle auf Github/Huggingface zur Nutzung bereit.<ref n="13" target="ftn13"/> Das ByT5-basierte Modell wurde als 
                     <hi rend="italic">Transnormer</hi> innerhalb des Konsortiums 
                     <hi rend="italic">Text+</hi> der Nationalen Forschungsdateninfrastruktur (NFDI) entwickelt mit dem Ziel, einen frei und flexibel nachnutzbaren Nachfolger für CAB bereitzustellen. Eine Weiterentwicklung des hier vorgestellten Modells ist auf Huggingface veröffentlicht.<ref n="14" target="ftn14"/> Weitere Veröffentlichungen für die Normalisierung historischer Texte ab dem 17. Jahrhundert werden folgen.
                 </p>
-                <p>Lokal mit den Modellen zu arbeiten, bietet Nutzenden eine größere Flexibilität: Die Modelle können in eigene Workflows eingebunden und auch nachtrainiert werden. Voraussetzung für Letzteres sind weitere Trainingsdaten in Form von Parallelkorpora aus historischem und gold-normalisiertem Text. Mit ausreichend vielen Trainingsdaten wäre ebenso ein vollständiges Training neuer Modelle nach den hier vorgestellten Architekturen möglich. In jedem Fall geht jedoch die Nutzung von Transformer-Modellen mit erhöhten Anforderungen an Hardware, höherem Ressourcenverbrauch und praktischen Hürden einher. Es bleibt zu diskutieren, wie die Voraussetzungen geschaffen werden können, dass gerade auch kleinere Projekte diese Herausforderungen bewältigen können, bzw. welche Infrastrukturen (z. B. Webservices) benötigt werden.</p>
-            </div>
-        </body>
-        <back>
+<p>Lokal mit den Modellen zu arbeiten, bietet Nutzenden eine größere Flexibilität: Die Modelle können in eigene Workflows eingebunden und auch nachtrainiert werden. Voraussetzung für Letzteres sind weitere Trainingsdaten in Form von Parallelkorpora aus historischem und gold-normalisiertem Text. Mit ausreichend vielen Trainingsdaten wäre ebenso ein vollständiges Training neuer Modelle nach den hier vorgestellten Architekturen möglich. In jedem Fall geht jedoch die Nutzung von Transformer-Modellen mit erhöhten Anforderungen an Hardware, höherem Ressourcenverbrauch und praktischen Hürden einher. Es bleibt zu diskutieren, wie die Voraussetzungen geschaffen werden können, dass gerade auch kleinere Projekte diese Herausforderungen bewältigen können, bzw. welche Infrastrukturen (z. B. Webservices) benötigt werden.</p>
+</div>
+</body>
+<back>
 <div type="notes">
-<note xml:id="ftn1" rend="footnote text" n="1">
+<note n="1" rend="footnote text" xml:id="ftn1">
     https://deutschestextarchiv.de/public/cab/
                     </note>
-<note xml:id="ftn2" rend="footnote text" n="2">Starck, Johann Friedrich: Tägliches Hand-Buch in guten und bösen Tagen. Frankfurt/Leipzig, 1749, S. 630. In: Deutsches Textarchiv 
+<note n="2" rend="footnote text" xml:id="ftn2">Starck, Johann Friedrich: Tägliches Hand-Buch in guten und bösen Tagen. Frankfurt/Leipzig, 1749, S. 630. In: Deutsches Textarchiv 
                         , abgerufen am 28.11.2024.
                     </note>
-<note xml:id="ftn3" rend="footnote text" n="3">Für einen Überblick zu verschiedenen Konventionen und eine ausführliche Diskussion zur Definition von Normalisierung, siehe Bollmann (2018), Kapitel 2.</note>
-<note xml:id="ftn4" rend="footnote text" n="4">In den genannten Konventionen bleibt die Wortreihenfolge unangetastet, womit auch die Ebenen aligniert werden können. 1:n/n:1-Beziehungen sind aber teils vorgesehen, etwa im RIDGES-Korpus (Odebrecht et al. 2020).</note>
-<note xml:id="ftn5" rend="footnote text" n="5">Um die Güte von CAB sinnvoll zu messen, haben wir das Ausnahmelexikon deaktiviert, denn dieses wurde teils aus dem DTA EvalCorpus erstellt. NB: CAB kann keine Wortverbindungen generieren.</note>
-<note xml:id="ftn6" rend="footnote text" n="6">Code: 
+<note n="3" rend="footnote text" xml:id="ftn3">Für einen Überblick zu verschiedenen Konventionen und eine ausführliche Diskussion zur Definition von Normalisierung, siehe Bollmann (2018), Kapitel 2.</note>
+<note n="4" rend="footnote text" xml:id="ftn4">In den genannten Konventionen bleibt die Wortreihenfolge unangetastet, womit auch die Ebenen aligniert werden können. 1:n/n:1-Beziehungen sind aber teils vorgesehen, etwa im RIDGES-Korpus (Odebrecht et al. 2020).</note>
+<note n="5" rend="footnote text" xml:id="ftn5">Um die Güte von CAB sinnvoll zu messen, haben wir das Ausnahmelexikon deaktiviert, denn dieses wurde teils aus dem DTA EvalCorpus erstellt. NB: CAB kann keine Wortverbindungen generieren.</note>
+<note n="6" rend="footnote text" xml:id="ftn6">Code: 
                         ; Das Fine-Tuning dauerte auf einer RTX2080ti etwa 24h.
                     </note>
-<note xml:id="ftn7" rend="footnote text" n="7">Code: 
+<note n="7" rend="footnote text" xml:id="ftn7">Code: 
                         ; Type-Modell: 
                         ; GPT-Modell: 
                         . Das Training des Type-Modells dauerte auf einer RTX2080ti etwa 4h; das GPT-Modell wurde ohne Fine-Tuning übernommen.
                     </note>
-<note xml:id="ftn8" rend="footnote text" n="8">
+<note n="8" rend="footnote text" xml:id="ftn8">
     https://github.com/clarinsi/csmtiser
                     </note>
-<note xml:id="ftn9" rend="footnote text" n="9">
+<note n="9" rend="footnote text" xml:id="ftn9">
     https://kaskade.dwds.de/~moocow/software/dtaec/
                     </note>
-<note xml:id="ftn10" rend="footnote text" n="10">Wir exkludieren insbesondere Sätze, welche im Parallelkorpus von Annotator:innen manuell als fremdsprachiges Material, als Druck-/OCR-Fehler, oder als „ungeeignet für die Aufnahme in das Trainingsmaterial (z. B. Tokenizer-Fehler, ausgestorbene Lemmata, zusammengesetzte Komposita)“ eingestuft wurde. Anschließend wenden wir eine regelbasierte Transliteration von Lang-S (
+<note n="10" rend="footnote text" xml:id="ftn10">Wir exkludieren insbesondere Sätze, welche im Parallelkorpus von Annotator:innen manuell als fremdsprachiges Material, als Druck-/OCR-Fehler, oder als „ungeeignet für die Aufnahme in das Trainingsmaterial (z. B. Tokenizer-Fehler, ausgestorbene Lemmata, zusammengesetzte Komposita)“ eingestuft wurde. Anschließend wenden wir eine regelbasierte Transliteration von Lang-S (
                         <hi rend="italic">ſ</hi>) auf Kurz-S (
                         <hi rend="italic">s</hi>) an, und bringen Umlaute in ihre gegenwärtige Form (
                         <hi rend="italic">aͤ</hi> zu 
                         <hi rend="italic">ä</hi> usw.). NB: Für das ByT5-basierte Modell ist eine solche Transliteration nicht nötig, da es per Definition keine unbekannten Zeichen für das Modell gibt.
                     </note>
-<note xml:id="ftn11" rend="footnote text" n="11">Code zur Reproduktion des Datensatzes und der Evaluation: 
+<note n="11" rend="footnote text" xml:id="ftn11">Code zur Reproduktion des Datensatzes und der Evaluation: 
                         
                     </note>
-<note xml:id="ftn12" rend="footnote text" n="12">Die tatsächliche Performance von der aufrufbaren CAB-Instanz des DTA ist dabei i. d. R. besser als im hier vorgestellten Experiment, da das Ausnahmenlexikon einige Fehler des regelbasierten Ansatzes auffängt.</note>
-<note xml:id="ftn13" rend="footnote text" n="13">Code: 
+<note n="12" rend="footnote text" xml:id="ftn12">Die tatsächliche Performance von der aufrufbaren CAB-Instanz des DTA ist dabei i. d. R. besser als im hier vorgestellten Experiment, da das Ausnahmenlexikon einige Fehler des regelbasierten Ansatzes auffängt.</note>
+<note n="13" rend="footnote text" xml:id="ftn13">Code: 
                         ; Type-Modell: 
                         ; GPT-Modell: 
                         . Das Training des Type-Modells dauerte auf einer RTX2080ti etwa 4h; das GPT-Modell wurde ohne Fine-Tuning übernommen.
                     </note>
-<note xml:id="ftn14" rend="footnote text" n="14">
+<note n="14" rend="footnote text" xml:id="ftn14">
                         . Das veröffentlichte Modell hat die gleiche Architektur wie das hier beschriebene ByT5 Modell, wurde jedoch mit überarbeiteten und teils anderen Dokumenten aus dem DTA EvalCorpus trainiert. Der Datensatz ist auf Huggingface verfügbar: https://huggingface.co/datasets/ybracke/dta-reviEvalCorpus-v1.
                     </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl>
-                        <hi rend="bold">Bawden, Rachel, Jonathan Poinhos, Eleni Kogkitsidou, Philippe Gambette, Benoît Sagot, und Simon Gabay</hi>. 2022. „Automatic Normalisation of Early Modern French“. In 
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl>
+<hi rend="bold">Bawden, Rachel, Jonathan Poinhos, Eleni Kogkitsidou, Philippe Gambette, Benoît Sagot, und Simon Gabay</hi>. 2022. „Automatic Normalisation of Early Modern French“. In 
                         <hi rend="italic">Proceedings of the Thirteenth Language Resources and Evaluation Conference</hi>, hg. von Nicoletta Calzolari, Frédéric Béchet, Philippe Blache, Khalid Choukri, Christopher Cieri, Thierry Declerck, Sara Goggi, u. a., 3354–66. Marseille, Frankreich: European Language Resources Association. 
                         <ptr target="https://aclanthology.org/2022.lrec-1.358"/>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Bollmann, Marcel</hi>. 2018. 
+<bibl>
+<hi rend="bold">Bollmann, Marcel</hi>. 2018. 
                         <hi rend="italic">Normalization of historical texts with neural network models</hi>. Dissertation, Ruhr-Universität Bochum. 
                         <ptr target="https://doi.org/10.13154/294-6213"/>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Durrell, Martin, Paul Bennett, Silke Scheible, und Richard J. Whitt</hi>. 2012. 
+<bibl>
+<hi rend="bold">Durrell, Martin, Paul Bennett, Silke Scheible, und Richard J. Whitt</hi>. 2012. 
                         <emph>The GerManC Corpus</emph>. University of Manchester. 
                         <ptr target="http://hdl.handle.net/20.500.14106/2544"/>, 
                         <ptr target="https://www.ids-mannheim.de/fileadmin/lexik/uwv/dateien/GerManC_Documentation.pdf"/> (zugegriffen: 22.07.2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Ehrmanntraut, Anton</hi>. 2024. „Historical German Text Normalization Using Type- and Token-Based Language Modeling“. ArXiv Pre-print. 
+<bibl>
+<hi rend="bold">Ehrmanntraut, Anton</hi>. 2024. „Historical German Text Normalization Using Type- and Token-Based Language Modeling“. ArXiv Pre-print. 
                         <ptr target="https://doi.org/10.48550/arXiv.2409.02841"/>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Jurish, Bryan</hi>. 2012. 
+<bibl>
+<hi rend="bold">Jurish, Bryan</hi>. 2012. 
                         <hi rend="italic">Finite-State Canonicalization Techniques for Historical German</hi>. Dissertation, Universität Potsdam. 
                         <ptr target="https://nbn-resolving.org/urn:nbn:de:kobv:517-opus-55789"/>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Jurish, Bryan, Marko Drotschmann, und Henriette Ast</hi>. 2013. „Constructing a Canonicalized Corpus of Historical German by Text Alignment“. In 
+<bibl>
+<hi rend="bold">Jurish, Bryan, Marko Drotschmann, und Henriette Ast</hi>. 2013. „Constructing a Canonicalized Corpus of Historical German by Text Alignment“. In 
                         <hi rend="italic">New Methods in Historical Corpora</hi>, 221–34. Tübingen: Narr.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Kogkitsidou, Eleni, und Philippe Gambette</hi>. 2020. „Normalisation of 16th and 17th century texts in French and geographical named entity recognition“. In 
+<bibl>
+<hi rend="bold">Kogkitsidou, Eleni, und Philippe Gambette</hi>. 2020. „Normalisation of 16th and 17th century texts in French and geographical named entity recognition“. In 
                         <hi rend="italic">Proceedings of the 4th ACM SIGSPATIAL Workshop on Geospatial Humanities</hi>, 28–34. New York, USA: Association for Computing Machinery. 
                         <ptr target="https://doi.org/10.1145/3423337.3429437"/>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Krasselt, Julia, Marcel Bollmann, Stefanie Dipper, und Florian Petran</hi>. 2015. 
+<bibl>
+<hi rend="bold">Krasselt, Julia, Marcel Bollmann, Stefanie Dipper, und Florian Petran</hi>. 2015. 
                         <hi rend="italic">Guidelines für die Normalisierung historischer deutscher Texte / Guidelines for Normalizing Historical German Texts.</hi> Bochumer Linguistische Arbeitsberichte 15. 
                         <ptr target="https://www.linguistics.rub.de/forschung/arbeitsberichte/15.pdf"/> (zugegriffen: 22.07.2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Kuparinen, Olli, Aleksandra Miletić, und Yves Scherrer</hi>. 2023. „Dialect-to-Standard Normalization: A Large-Scale Multilingual Evaluation“. In 
+<bibl>
+<hi rend="bold">Kuparinen, Olli, Aleksandra Miletić, und Yves Scherrer</hi>. 2023. „Dialect-to-Standard Normalization: A Large-Scale Multilingual Evaluation“. In 
                         <hi rend="italic">Findings of the Association for Computational Linguistics: EMNLP 2023</hi>, herausgegeben von Houda Bouamor, Juan Pino, und Kalika Bali, 13814–28. Singapore: Association for Computational Linguistics. 
                         <ptr target="https://doi.org/10.18653/v1/2023.findings-emnlp.923"/>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Ljubešić, Nikola, Katja Zupan, Darja Fišer, und Tomaž Erjavec</hi>. 2016. „Normalising Slovene data: historical texts vs. user-generated content“. In 
+<bibl>
+<hi rend="bold">Ljubešić, Nikola, Katja Zupan, Darja Fišer, und Tomaž Erjavec</hi>. 2016. „Normalising Slovene data: historical texts vs. user-generated content“. In 
                         <hi rend="italic">Proceedings of the 13th Conference on Natural Language Processing, KONVENS 2016</hi>, hg. von Stefanie Dipper, Friedrich Neubarth, und Heike Zinsmeister. Bochumer Linguistische Arbeitsberichte 16. Bochum. 
                         <ptr target="https://www.linguistics.rub.de/konvens16/pub/19_konvensproc.pdf"/> (zugegriffen: 22.07.2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Odebrecht, Carolin, Laura Perlitz, Gohar Schnelle, und Catharina Fischer</hi>. 2020. 
+<bibl>
+<hi rend="bold">Odebrecht, Carolin, Laura Perlitz, Gohar Schnelle, und Catharina Fischer</hi>. 2020. 
                         <hi rend="italic">Annotationsrichtlinien zu Ridges Herbology Version 9.0</hi>. Humboldt-Universität zu Berlin. 
                         <ptr target="https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/forschung/ridges-projekt/download-files/pubs/ridgesv9_2020-03.pdf"/> (zugegriffen: 22.07.2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Pettersson, Eva, Beáta Megyesi, und Jörg Tiedemann</hi>. 2013. „An SMT Approach to Automatic Annotation of Historical Text“. In 
+<bibl>
+<hi rend="bold">Pettersson, Eva, Beáta Megyesi, und Jörg Tiedemann</hi>. 2013. „An SMT Approach to Automatic Annotation of Historical Text“. In 
                         <hi rend="italic">Proceedings of the Workshop on Computational Historical Linguistics at NODALIDA 2013</hi>, hg. von Þórhallur Eyþórsson, Lars Borin, Dag Haug, und Eiríkur Rögnvaldsson, 54–69. Oslo, Norwegen: Northern European Association for Language Technology. 
                         <ptr target="https://ep.liu.se/en/conference-article.aspx?series=ecp&amp;issue=87&amp;Article_No=5"/> (zugegriffen: 22.07.2024).
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Robertson, Alexander, und Sharon Goldwater</hi>. 2018. „Evaluating Historical Text Normalization Systems: How Well Do They Generalize?“ In 
+<bibl>
+<hi rend="bold">Robertson, Alexander, und Sharon Goldwater</hi>. 2018. „Evaluating Historical Text Normalization Systems: How Well Do They Generalize?“ In 
                         <hi rend="italic">Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 2 (Short Papers)</hi>, hg. von Marilyn Walker, Heng Ji, und Amanda Stent, 720–25. New Orleans, Louisiana, USA: Association for Computational Linguistics. 
                         <ptr target="https://doi.org/10.18653/v1/N18-2113"/>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Samuel, David, und Milan Straka</hi>. 2021. „ÚFAL at MultiLexNorm 2021: Improving Multilingual Lexical Normalization by Fine-tuning ByT5“. In 
+<bibl>
+<hi rend="bold">Samuel, David, und Milan Straka</hi>. 2021. „ÚFAL at MultiLexNorm 2021: Improving Multilingual Lexical Normalization by Fine-tuning ByT5“. In 
                         <hi rend="italic">Proceedings of the Seventh Workshop on Noisy User-generated Text (W-NUT 2021)</hi>, herausgegeben von Wei Xu, Alan Ritter, Tim Baldwin, und Afshin Rahimi, 483–92. Online: Association for Computational Linguistics. 
                         <ptr target="https://doi.org/10.18653/v1/2021.wnut-1.54"/>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Scheible, Silke, Richard J. Whitt, Martin Durrell, und Paul Bennett</hi>. 2011. „A Gold Standard Corpus of Early Modern German“. In 
+<bibl>
+<hi rend="bold">Scheible, Silke, Richard J. Whitt, Martin Durrell, und Paul Bennett</hi>. 2011. „A Gold Standard Corpus of Early Modern German“. In 
                         <hi rend="italic">Proceedings of the 5th Linguistic Annotation Workshop</hi>, hg. von Nancy Ide, Adam Meyers, Sameer Pradhan, und Katrin Tomanek, 124–28. Portland, Oregon, USA: Association for Computational Linguistics. 
                         <ptr target="https://aclanthology.org/W11-0415"/>.
                     </bibl>
-                    <bibl>
-                        <hi rend="bold">Xue, Linting, Aditya Barua, Noah Constant, Rami Al-Rfou, Sharan Narang, Mihir Kale, Adam Roberts, und Colin Raffel</hi>. 2021. „ByT5: Towards a token-free future with pre-trained byte-to-byte models“. ArXiv Pre-print. 
+<bibl>
+<hi rend="bold">Xue, Linting, Aditya Barua, Noah Constant, Rami Al-Rfou, Sharan Narang, Mihir Kale, Adam Roberts, und Colin Raffel</hi>. 2021. „ByT5: Towards a token-free future with pre-trained byte-to-byte models“. ArXiv Pre-print. 
                         <ptr target="https://doi.org/10.48550/arXiv.2105.13626"/>.
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

@@ -1,147 +1,147 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xml:id="GERSTMEIER_Markus_Verbrechen_und_Daten__Digitales__Upcycling" xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Verbrechen, Daten und Strafen. Digitales „Upcycling“ des Archivinventars zum NS-Sondergericht München</title>
-                <author>
-                    <persName>
-                        <surname>Gerstmeier</surname>
-                        <forename>Markus</forename>
-                    </persName>
-                    <affiliation>Universität Passau, Deutschland</affiliation>
-                    <email>markus.gerstmeier@uni-passau.de</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Ernst</surname>
-                        <forename>Marlene</forename>
-                    </persName>
-                    <affiliation>Stadtarchiv Salzburg, Historisches Archiv, Österreich</affiliation>
-                    <email>marlene.ernst@stadt-salzburg.at</email>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Gassner</surname>
-                        <forename>Sebastian</forename>
-                    </persName>
-                    <affiliation>Universität Passau, Deutschland</affiliation>
-                    <email>sebastian.gassner@uni-passau.de</email>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2023-12-06T09:51:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Digital Humanities Passau</publisher>
-                <address>
-                    <addrLine>Universität Passau</addrLine>
-                    <addrLine>Innstraße 41</addrLine>
-                    <addrLine>D-94032 Passau</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Posterpräsentation</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Quantitative Datenexploration</term>
-                    <term>Strafrechtsgeschichte</term>
-                    <term>Nationalsozialismus</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Datenerkennung</term>
-                    <term>Programmierung</term>
-                    <term>Inhaltsanalyse</term>
-                    <term>Modellierung</term>
-                    <term>Kontextsetzung</term>
-                    <term>Bereinigung</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einleitung und Forschungsstand</head>
-                <p style="text-align: left; ">Die bisherige historische Forschung zu den Sondergerichten im nationalsozialistischen Deutschen Reich konzentrierte sich auf die an dieser Form der außerordentlichen Strafverfolgung beteiligten Personen und deren politische Bedeutung (z.B. Vurgun, 2017; Irmen, 2018; Materna, 2021; Lahusen, 2022). In unserer Untersuchung wird ein computerbasiertes „Upcycling“ (Scheltjens, 2023; Rehbein und Ernst, 2023, 508-509; Donig und Rehbein, 2022) des in den 1970er Jahren erstellten Archivinventars (BayStMUK, 1975-1977) zu den ca. 10.000 im Staatsarchiv München nahezu in ihrer Gänze erhaltenen Verfahrensakten des Sondergerichts am Oberlandesgericht (OLG) München (1933-1945) vorgenommen.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Historischer Kontext der verwendeten Quellen</head>
-                <p style="text-align: left; ">Die Sondergerichte der NS-Zeit stellten insofern eine Besonderheit dar, als sie die reguläre Strafverfolgung gemäß Reichsstrafgesetzbuch von 1871 und die Ahndung von „Delikten“, die erst vom NS-Regime kriminalisiert worden sind – meist politische oder ideologische Nonkonformität –, unter einer Instanz der Strafgerichtsbarkeit vereinten (zur Inklination ordentlicher und außerordentlicher Jurisdiktion im „Dritten Reich“ vgl. Ernst et al., 2023, v.a. #p15-#p23). Nicht zuletzt deshalb sind die Gegenstände der Verfahren besonders heterogen – zumindest aus der Perspektive eines aufgeklärten, modernen Rechtsstaates, welchen die NS-Ideologie zutiefst verachtete, aber zugleich für die eigenen Zwecke zu missbrauchen wusste. Die „Sekundärquelle“ des Archivinventars stellt einen halbstrukturierten Wissensspeicher dar (vgl. Gerstmeier et al., 2022, S. 218), dessen Transformation ins Digitale Herausforderungen und Chancen für auf ,konventionellem‘ Weg kaum oder gar nicht zu erzielende rechts- und sozialgeschichtliche Erkenntnisse birgt.</p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Digitalisierungsworkflow und Forschungsfragen</head>
-                <p style="text-align: left; ">Die systematische und computergestützte Aufarbeitung der in Form von „Aktenregesten“ (vgl. Abb. 1) vorerschlossenen Sondergerichtsverfahren reicht von der Objektdigitalisierung bis zur quantitativen, statistischen Datenexploration des Korpus‘. Leitfragen hierbei sind etwa: War die Verfolgung politisch Andersdenkender bzw. rassisch-ideologisch verfolgter Personen wie ostmitteleuropäischen Zwangsarbeiter/innen quantitativ und qualitativ besonders drakonisch? Zumal der Sprengel des OLG München damals den kompletten südbayerischen Kulturraum umfasste, kann auch der Frage nach einem Ideologiekonflikt zwischen der überwiegend katholischen Bevölkerung und der völkisch-rassistischen nationalsozialistischen Weltanschauung nachgegangen werden. Eine quantitative Gesamtanalyse des Datenbestandes kann außerdem Aufschluss geben über berufliche und (partei-)politische Hintergründe der Angeklagten (vgl. Abb. 1) oder über die diachrone „Nervosität“ der Repression während der NS-Herrschaft. Letztere zeigt sich u.a. daran, dass keines der insgesamt 254 Todesurteile, die das Sondergericht München verantwortete, vor 1939 gefällt wurde.</p>
-                <figure>
-                    <graphic n="1001" width="16.002cm" height="22.632458333333332cm" url="Pictures/2eeece2c4d9130b75498b7ffa76557c4.png" rend="inline"/>
-                    <head>Abb. 1: Regestenartiger Aufbau der „Verzeichniseinheiten“ im Archivinventar zu den Verfahren am Sondergericht München 1933-1945, hier BayStMUK 1975-1977, Teil 1: 301.</head>
-                </figure>
-                <p style="text-align: left; ">Die auf das maschinengeschriebene Archivinventar aus den 1970er Jahren angewandte automatische Texterkennung erwies sich als überwiegend valide, auch wenn sich die teilweise mangelnde Druckqualität der Inventarbände aus den 1970er-Jahre limitierend auswirkt; von insgesamt 9.955 Fällen können derzeit immerhin 8.531 (86 %) bearbeitet werden. Auch ist eine Informationsextraktion aus dem maschinenlesbaren Text durch dessen formalisierte Struktur möglich. Die in den 1970er Jahren durchgeführte Kompilationsarbeit war akribisch und bietet die Möglichkeit, den Inhalt auf einer systematischen Ebene zu erschließen. Gleichwohl bestehen auch einige Unstimmigkeiten und historische Desiderate: So wurden erst für die Verfahren seit 1939 auch die jeweiligen Rechtsgrundlagen miterfasst. Metadaten zu den beteiligten Staatsanwälten und Richtern waren gar nicht Teil des dem Archivinventar zugrunde liegenden Datenmodells, was symptomatisch für die Art der staatlich finanzierten Aufarbeitung des NS-Unrechts in den 1970er-Jahren ist (vgl. Materna, 2021). Diese Unstimmigkeiten stellen eine Herausforderung für das digitale „Upcycling“ im Sinne von automatisierten Prozessen dar.</p>
-                <figure>
-                    <graphic n="1002" width="16.002cm" height="15.393458333333333cm" url="Pictures/53387c7e8af12f8f7eb43b4bb9f0233a.png" rend="inline"/>
-                    <head>Abb. 2: Korrespondenzanalyse zur Verfahrenspraxis am Sondergericht München (1933-1945): soziokulturelle Hintergründe der Angeklagten im Vergleich zu den Verfahrensausgängen. Die Visualisierung zeigt z.B. (hier im I. Quadranten), dass ein enger Zusammenhang zwischen dem Personenmerkmal einer vor 1933 bestehenden Mitgliedschaft in der Deutschnationalen Volkspartei (DNVP) mit dem Verfahrensausgang „Ehrverlust“ (hier LOH, Lost of Honor) vorlag.</head>
-                </figure>
-                <p style="text-align: left; ">Nach der Objektdigitalisierung und Informationsextraktion haben wir verschiedene Kategorisierungsmethoden, zunächst im Kontext der Anklagegründe, verglichen, um ein besseres Verständnis für das Datenmaterial selbst sowie für den Vorverarbeitungsprozess aus den 1970er Jahren zu bekommen – von einem deduktiven Ansatz entlang der Rechtsgrundlagen über eine pragmatisch-explorative, auf Schlüsselwörtern basierende Herangehensweise bis hin zu „induktiven“, automatisierten Prozessen mithilfe von doc2vec, welche die Ergebnisse clustern (Ernst et al., 2023). Eine schlüssige Kategorisierung – nicht nur der Anklagen, sondern auch anderer relevanter Informationen wie z. B. der verschiedenen Verfahrensausgänge – schafft zudem die Grundlage für weitergehende Datenanalysen, z. B. eine Korrespondenzanalyse des Gesamtbestandes, wie sie beispielhaft in der Abb. 2 zu sehen ist.</p>
-            </div>
-        </body>
-        <back>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">BayStMUK.</hi> 1975-1977. “Widerstand und Verfolgung in Bayern 1933–1945. Hilfsmittel“. Im Auftrag des Bayerischen Staatsministeriums für Unterricht und Kultus (BayStMUK) herausgegeben von der Generaldirektion der Staatlichen Archive Bayerns. Archivinventare, Bd. 3: Sondergericht München, 7 Teile, München / Regensburg: Eigendruck der Staatlichen Archive Bayerns.
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Verbrechen, Daten und Strafen. Digitales „Upcycling“ des Archivinventars zum NS-Sondergericht München</title>
+<author>
+<persName>
+<surname>Gerstmeier</surname>
+<forename>Markus</forename>
+</persName>
+<affiliation>Universität Passau, Deutschland</affiliation>
+<email>markus.gerstmeier@uni-passau.de</email>
+</author>
+<author>
+<persName>
+<surname>Ernst</surname>
+<forename>Marlene</forename>
+</persName>
+<affiliation>Stadtarchiv Salzburg, Historisches Archiv, Österreich</affiliation>
+<email>marlene.ernst@stadt-salzburg.at</email>
+</author>
+<author>
+<persName>
+<surname>Gassner</surname>
+<forename>Sebastian</forename>
+</persName>
+<affiliation>Universität Passau, Deutschland</affiliation>
+<email>sebastian.gassner@uni-passau.de</email>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2023-12-06T09:51:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Digital Humanities Passau</publisher>
+<address>
+<addrLine>Universität Passau</addrLine>
+<addrLine>Innstraße 41</addrLine>
+<addrLine>D-94032 Passau</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/10698270</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Posterpräsentation</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Quantitative Datenexploration</term>
+<term>Strafrechtsgeschichte</term>
+<term>Nationalsozialismus</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Datenerkennung</term>
+<term>Programmierung</term>
+<term>Inhaltsanalyse</term>
+<term>Modellierung</term>
+<term>Kontextsetzung</term>
+<term>Bereinigung</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Einleitung und Forschungsstand</head>
+<p style="text-align: left; ">Die bisherige historische Forschung zu den Sondergerichten im nationalsozialistischen Deutschen Reich konzentrierte sich auf die an dieser Form der außerordentlichen Strafverfolgung beteiligten Personen und deren politische Bedeutung (z.B. Vurgun, 2017; Irmen, 2018; Materna, 2021; Lahusen, 2022). In unserer Untersuchung wird ein computerbasiertes „Upcycling“ (Scheltjens, 2023; Rehbein und Ernst, 2023, 508-509; Donig und Rehbein, 2022) des in den 1970er Jahren erstellten Archivinventars (BayStMUK, 1975-1977) zu den ca. 10.000 im Staatsarchiv München nahezu in ihrer Gänze erhaltenen Verfahrensakten des Sondergerichts am Oberlandesgericht (OLG) München (1933-1945) vorgenommen.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Historischer Kontext der verwendeten Quellen</head>
+<p style="text-align: left; ">Die Sondergerichte der NS-Zeit stellten insofern eine Besonderheit dar, als sie die reguläre Strafverfolgung gemäß Reichsstrafgesetzbuch von 1871 und die Ahndung von „Delikten“, die erst vom NS-Regime kriminalisiert worden sind – meist politische oder ideologische Nonkonformität –, unter einer Instanz der Strafgerichtsbarkeit vereinten (zur Inklination ordentlicher und außerordentlicher Jurisdiktion im „Dritten Reich“ vgl. Ernst et al., 2023, v.a. #p15-#p23). Nicht zuletzt deshalb sind die Gegenstände der Verfahren besonders heterogen – zumindest aus der Perspektive eines aufgeklärten, modernen Rechtsstaates, welchen die NS-Ideologie zutiefst verachtete, aber zugleich für die eigenen Zwecke zu missbrauchen wusste. Die „Sekundärquelle“ des Archivinventars stellt einen halbstrukturierten Wissensspeicher dar (vgl. Gerstmeier et al., 2022, S. 218), dessen Transformation ins Digitale Herausforderungen und Chancen für auf ,konventionellem‘ Weg kaum oder gar nicht zu erzielende rechts- und sozialgeschichtliche Erkenntnisse birgt.</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Digitalisierungsworkflow und Forschungsfragen</head>
+<p style="text-align: left; ">Die systematische und computergestützte Aufarbeitung der in Form von „Aktenregesten“ (vgl. Abb. 1) vorerschlossenen Sondergerichtsverfahren reicht von der Objektdigitalisierung bis zur quantitativen, statistischen Datenexploration des Korpus‘. Leitfragen hierbei sind etwa: War die Verfolgung politisch Andersdenkender bzw. rassisch-ideologisch verfolgter Personen wie ostmitteleuropäischen Zwangsarbeiter/innen quantitativ und qualitativ besonders drakonisch? Zumal der Sprengel des OLG München damals den kompletten südbayerischen Kulturraum umfasste, kann auch der Frage nach einem Ideologiekonflikt zwischen der überwiegend katholischen Bevölkerung und der völkisch-rassistischen nationalsozialistischen Weltanschauung nachgegangen werden. Eine quantitative Gesamtanalyse des Datenbestandes kann außerdem Aufschluss geben über berufliche und (partei-)politische Hintergründe der Angeklagten (vgl. Abb. 1) oder über die diachrone „Nervosität“ der Repression während der NS-Herrschaft. Letztere zeigt sich u.a. daran, dass keines der insgesamt 254 Todesurteile, die das Sondergericht München verantwortete, vor 1939 gefällt wurde.</p>
+<figure>
+<graphic height="22.632458333333332cm" n="1001" rend="inline" url="Pictures/2eeece2c4d9130b75498b7ffa76557c4.png" width="16.002cm"/>
+<head>Abb. 1: Regestenartiger Aufbau der „Verzeichniseinheiten“ im Archivinventar zu den Verfahren am Sondergericht München 1933-1945, hier BayStMUK 1975-1977, Teil 1: 301.</head>
+</figure>
+<p style="text-align: left; ">Die auf das maschinengeschriebene Archivinventar aus den 1970er Jahren angewandte automatische Texterkennung erwies sich als überwiegend valide, auch wenn sich die teilweise mangelnde Druckqualität der Inventarbände aus den 1970er-Jahre limitierend auswirkt; von insgesamt 9.955 Fällen können derzeit immerhin 8.531 (86 %) bearbeitet werden. Auch ist eine Informationsextraktion aus dem maschinenlesbaren Text durch dessen formalisierte Struktur möglich. Die in den 1970er Jahren durchgeführte Kompilationsarbeit war akribisch und bietet die Möglichkeit, den Inhalt auf einer systematischen Ebene zu erschließen. Gleichwohl bestehen auch einige Unstimmigkeiten und historische Desiderate: So wurden erst für die Verfahren seit 1939 auch die jeweiligen Rechtsgrundlagen miterfasst. Metadaten zu den beteiligten Staatsanwälten und Richtern waren gar nicht Teil des dem Archivinventar zugrunde liegenden Datenmodells, was symptomatisch für die Art der staatlich finanzierten Aufarbeitung des NS-Unrechts in den 1970er-Jahren ist (vgl. Materna, 2021). Diese Unstimmigkeiten stellen eine Herausforderung für das digitale „Upcycling“ im Sinne von automatisierten Prozessen dar.</p>
+<figure>
+<graphic height="15.393458333333333cm" n="1002" rend="inline" url="Pictures/53387c7e8af12f8f7eb43b4bb9f0233a.png" width="16.002cm"/>
+<head>Abb. 2: Korrespondenzanalyse zur Verfahrenspraxis am Sondergericht München (1933-1945): soziokulturelle Hintergründe der Angeklagten im Vergleich zu den Verfahrensausgängen. Die Visualisierung zeigt z.B. (hier im I. Quadranten), dass ein enger Zusammenhang zwischen dem Personenmerkmal einer vor 1933 bestehenden Mitgliedschaft in der Deutschnationalen Volkspartei (DNVP) mit dem Verfahrensausgang „Ehrverlust“ (hier LOH, Lost of Honor) vorlag.</head>
+</figure>
+<p style="text-align: left; ">Nach der Objektdigitalisierung und Informationsextraktion haben wir verschiedene Kategorisierungsmethoden, zunächst im Kontext der Anklagegründe, verglichen, um ein besseres Verständnis für das Datenmaterial selbst sowie für den Vorverarbeitungsprozess aus den 1970er Jahren zu bekommen – von einem deduktiven Ansatz entlang der Rechtsgrundlagen über eine pragmatisch-explorative, auf Schlüsselwörtern basierende Herangehensweise bis hin zu „induktiven“, automatisierten Prozessen mithilfe von doc2vec, welche die Ergebnisse clustern (Ernst et al., 2023). Eine schlüssige Kategorisierung – nicht nur der Anklagen, sondern auch anderer relevanter Informationen wie z. B. der verschiedenen Verfahrensausgänge – schafft zudem die Grundlage für weitergehende Datenanalysen, z. B. eine Korrespondenzanalyse des Gesamtbestandes, wie sie beispielhaft in der Abb. 2 zu sehen ist.</p>
+</div>
+</body>
+<back>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl style="text-align: left; ">
+<hi rend="bold">BayStMUK.</hi> 1975-1977. “Widerstand und Verfolgung in Bayern 1933–1945. Hilfsmittel“. Im Auftrag des Bayerischen Staatsministeriums für Unterricht und Kultus (BayStMUK) herausgegeben von der Generaldirektion der Staatlichen Archive Bayerns. Archivinventare, Bd. 3: Sondergericht München, 7 Teile, München / Regensburg: Eigendruck der Staatlichen Archive Bayerns.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Blasius, Jörg.</hi> 1987. “Korrespondenzanalyse: ein multivariates Verfahren zur Analyse qualitativer Daten“. Historical Social Research 12 (2/3): 172-189. 
+<bibl style="text-align: left; ">
+<hi rend="bold">Blasius, Jörg.</hi> 1987. “Korrespondenzanalyse: ein multivariates Verfahren zur Analyse qualitativer Daten“. Historical Social Research 12 (2/3): 172-189. 
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Donig, Simon und Rehbein, Malte.</hi> 2022. “Für eine ,gemeinsame digitale Zukunft‘. Eine kritische Verortung der Digital History“. Geschichte in Wissenschaft und Unterricht 72 (9/10): 527-545.
+<bibl style="text-align: left; ">
+<hi rend="bold">Donig, Simon und Rehbein, Malte.</hi> 2022. “Für eine ,gemeinsame digitale Zukunft‘. Eine kritische Verortung der Digital History“. Geschichte in Wissenschaft und Unterricht 72 (9/10): 527-545.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Ernst, Marlene, Gassner, Sebastian, Gerstmeier, Markus, Rehbein, Malte.</hi> 2023. “Categorising Legal Records – Deductive, Pragmatic, and Computational Strategies”. Digital Humanities Quarterly 17.3. http://www.digitalhumanities.org/dhq/vol/17/3/000708/000708.html (zugegriffen 19. Juli 2023)
+<bibl style="text-align: left; ">
+<hi rend="bold">Ernst, Marlene, Gassner, Sebastian, Gerstmeier, Markus, Rehbein, Malte.</hi> 2023. “Categorising Legal Records – Deductive, Pragmatic, and Computational Strategies”. Digital Humanities Quarterly 17.3. http://www.digitalhumanities.org/dhq/vol/17/3/000708/000708.html (zugegriffen 19. Juli 2023)
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Gerstmeier, Markus, Donig, Simon, Gassner, Sebastian, Rehbein, Malte.</hi> 2022. “Die Archivinventare zum Sondergericht München (1933-1945) digital. Quellenwert – Verdatung – Erkenntnisperspektiven“. Archivalische Zeitschrift 99 (1): 215-251.
+<bibl style="text-align: left; ">
+<hi rend="bold">Gerstmeier, Markus, Donig, Simon, Gassner, Sebastian, Rehbein, Malte.</hi> 2022. “Die Archivinventare zum Sondergericht München (1933-1945) digital. Quellenwert – Verdatung – Erkenntnisperspektiven“. Archivalische Zeitschrift 99 (1): 215-251.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Irmen, Helmut.</hi> 2018. “Das Sondergericht Aachen 1941-1945 (= Juristische Zeitgeschichte 2/21)“. Berlin/Boston: W. de Gruyter Verlag.
+<bibl style="text-align: left; ">
+<hi rend="bold">Irmen, Helmut.</hi> 2018. “Das Sondergericht Aachen 1941-1945 (= Juristische Zeitgeschichte 2/21)“. Berlin/Boston: W. de Gruyter Verlag.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Lahusen, Benjamin.</hi> 2022. “Der Dienstbetrieb ist nicht gestört. Die Deutschen und ihre Justiz 1943-1948.“ München: C. H. Beck.
+<bibl style="text-align: left; ">
+<hi rend="bold">Lahusen, Benjamin.</hi> 2022. “Der Dienstbetrieb ist nicht gestört. Die Deutschen und ihre Justiz 1943-1948.“ München: C. H. Beck.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Materna, Markus.</hi> 2021. „Richter der eigenen Sache. Die ,Selbstexkulpation‘ der Justiz nach 1945, dargestellt am Beispiel der Todesurteile bayerischer Sondergerichte“. Baden-Baden: Nomos Verlag.
+<bibl style="text-align: left; ">
+<hi rend="bold">Materna, Markus.</hi> 2021. „Richter der eigenen Sache. Die ,Selbstexkulpation‘ der Justiz nach 1945, dargestellt am Beispiel der Todesurteile bayerischer Sondergerichte“. Baden-Baden: Nomos Verlag.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Rehbein, Malte und Ernst, Marlene.</hi> 2023. “Erschließung handschriftlicher Dokumente zwischen Fachwissen, Citizen Science und KI“. Bibliothek – Forschung und Praxis 47 (3): 503-513.
+<bibl style="text-align: left; ">
+<hi rend="bold">Rehbein, Malte und Ernst, Marlene.</hi> 2023. “Erschließung handschriftlicher Dokumente zwischen Fachwissen, Citizen Science und KI“. Bibliothek – Forschung und Praxis 47 (3): 503-513.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Scheltjens, Walter.</hi> 2023. “Upcycling historical data collections. A paradigm for digital history?” Journal of Documentation. DOI:10.1108/JD-12-2022-0271 (zugegriffen 4. Dezember 2023)
+<bibl style="text-align: left; ">
+<hi rend="bold">Scheltjens, Walter.</hi> 2023. “Upcycling historical data collections. A paradigm for digital history?” Journal of Documentation. DOI:10.1108/JD-12-2022-0271 (zugegriffen 4. Dezember 2023)
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Vurgun, Oskar.</hi> 2017. “Die Staatsanwaltschaft beim Sondergericht Aachen“. Berlin.
+<bibl style="text-align: left; ">
+<hi rend="bold">Vurgun, Oskar.</hi> 2017. “Die Staatsanwaltschaft beim Sondergericht Aachen“. Berlin.
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

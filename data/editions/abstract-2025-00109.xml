@@ -1,159 +1,155 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="CHRIST_Andreas_Erprobung_eines_Metadatenmodells_zur_Beschrei">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Erprobung eines Metadatenmodells zur Beschreibung von FDM-Services</title>
-                <author>
-                    <persName>
-                        <surname>Lemaire</surname>
-                        <forename>Marina</forename>
-                    </persName>
-                    <affiliation>Universität Trier, Deutschland</affiliation>
-                    <email>marina.lemaire@uni-trier.de</email>
-                    <idno type="ORCID">0000-0003-4726-2481</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Christ</surname>
-                        <forename>Andreas</forename>
-                    </persName>
-                    <affiliation>Christian-Albrechts-Universität zu Kiel, Deutschland</affiliation>
-                    <email>christ@ub.uni-kiel.de</email>
-                    <idno type="ORCID">0000-0002-3591-2355</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2024-12-02T17:40:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Bielefeld Computational Literary Studies Group</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital History</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-                <publisher>Digital Linguistics Lab</publisher>
-                <address>
-                    <addrLine>Universität Bielefeld</addrLine>
-                    <addrLine>Universitätsstraße 25</addrLine>
-                    <addrLine>33615 Bielefeld</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Workshop</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>FDM-Services</term>
-                    <term>Beschreibung</term>
-                    <term>Metadaten</term>
-                    <term>Modell</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Sammlung</term>
-                    <term>Modellierung</term>
-                    <term>Infrastruktur</term>
-                    <term>Metadaten</term>
-                    <term>Standards</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <p style="text-align: left; ">Das Management von Forschungsdaten (FDM) hat für Wissenschaftler*innen zunehmend an Bedeutung gewonnen. Deshalb suchen sie nach FDM-Services, die sie dabei unterstützen, effizient und qualitätsgesichert mit ihren Forschungsdaten umzugehen. Das Angebot und die Entwicklung solcher Dienste erfolgt auf vielen Ebenen. Es reicht von lokalen (institutionellen) Stellen, die an Hochschulen und außeruniversitären Forschungseinrichtungen zu finden sind, über landes- und bundesweit übergreifende Einrichtungen, wie z. B. FDM-Landesinitiativen oder die NFDI-Konsortien bis hin zu internationalen Angeboten, bspw. die European Open Science Association (EOSC) oder das Social Sciences and Humanities Open Cloud Projekt (SSHOC). Das Angebot ist vielfältig, auf verschiedenen Plattformen und/oder einfachen Webseiten zu finden. Zudem werden die Informationen sehr divers hinsichtlich Struktur und Informationsgehalt zur Verfügung gestellt. Für Forschende ist es daher einerseits oftmals problematisch, die auf ihre Bedarfe passenden Dienste zu finden und andererseits auf der Basis der bereitgestellten Informationen zu entscheiden, ob oder welcher Dienst zu ihren Bedarfen passt. Gleichzeitig stellt sich das Problem auf der anbietenden Seite, welche Informationen wie bereitgestellt werden müssen und wie man dafür sorgen kann, dass die Forschenden das eigene Angebot einerseits finden, aber auch verstehen bzw. erfassen können, ob es für sie passend ist und worin es sich im Vergleich zu einem ähnlichen Dienst unterscheidet. Aus der Komplexität der FDM-Bedarfe sowie der individuellen und heterogenen Organisation von FDM-Services an unterschiedlichen Einrichtungen ergeben sich grundlegende konzeptionelle Fragen für Serviceeinrichtungen bei der Bereitstellung von Dienstleistungsportfolios im Bereich des Forschungsdatenmanagements. Um diese Bedarfe zu adressieren, erscheint eine Plattform sinnvoll, auf der FDM-Services nach einem einheitlichen Schema beschrieben sind und Suchoptionen angeboten werden, die das schnelle und zielgerichtete Auffinden der passenden Services ermöglicht. Ehe jedoch entsprechende technischen Lösungen implementiert werden, sollte sich über ein Metadatenschema verständigt werden, damit einerseits die Services leichter vergleichbar werden und ein allgemeines Grundverständnis/Vokabular zur Bezeichnung und Beschreibung von FDM-Diensten sich leichter etablieren kann. Andererseits ist es sinnvoll, FDM-Servicebeschreibungen aus dem eigenen System in andere Plattformen leicht überführen zu können, um die Auffindbarkeit über Metasuchmaschinen zu erhöhen. Es gibt einige Plattformen, die Suchen zu FDM-Services allgemein oder zu spezifischen FDM-Servicetypen ermöglichen, wie z.B. re3data „Registry of Research Data Repositories“ (IBI et al. 2024), der ELN-Finder (ULB TU DA/ZB MED 2024), der Dienstekatalog der DHd AG Geisteswissenschaftliches Forschungsdatenmanagement (Rau / Helling 2022) oder der RDM Navigator (KIT 2021). Viele dieser Beschreibungsmodelle decken jedoch oft nur bestimmte Teilbereiche der gesamten FDM-Servicelandschaft ab, haben einen spezifischen institutionellen Blick und/oder sind auf bestimmte Fachrichtungen oder Servicetypen beschränkt. Gleichzeitig fehlt eine einheitliche, formale Beschreibungssprache für viele Kategorien in diesen Modellen, sodass Gleiches mit dem gleichen Vokabular benannt wird. Zusätzlich existiert noch kein klares Verständnis darüber, was genau ein FDM-Service ist. Die NFDI-Konsortialversammlung definiert einen Dienst als „eine technisch-organisatorische Lösung [...], die Speicher- und Rechenleistungen, Software, Prozesse und Workflows ebenso umfassen kann wie die notwendige personelle Betreuung für unterschiedliche Service-Desks“ (NFDI 2022). Bei IT-Service-Dienstleistern ist ITIL (Information Technology Infrastructure Library) ein verbreitetes Framework für das Management von IT-Services. Es definiert Service sehr viel generischer als ein „Bündel von spezialisierten, organisatorischen Fähigkeiten“, die einen Mehrwert bei Kund*innen erbringen. Die Beschreibung eines Dienstes in einem Servicekatalog ist ein elementarer Bestandteil des Service-Managements, aber deren genaue Ausgestaltung, insbesondere für die Kund*innen, muss individuell an die Zielgruppe angepasst werden. (Ebel 2021) D. h., dass ITIL zwar ein Grundgerüst für ein Service-Metadatenmodell bereitstellt, aber die zentralen FDM-spezifischen Fragen nicht beantwortet. Des Weiteren stellt sich die Frage, wie sich ein Dienst von einem anderen abgrenzt: Ist z. B. die Schulung zu einer Software ein eigenständiger Dienst neben der Bereitstellung der Software selbst, oder ist sie ein integraler Bestandteil?</p>
-            <p style="text-align: left; ">Diesen Fragen widmet sich derzeitig eine kleine Untergruppe aus der GO UNITE! Arbeitsgruppe FDM-Beschreibungsmodelle (
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xml:id="CHRIST_Andreas_Erprobung_eines_Metadatenmodells_zur_Beschrei" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Erprobung eines Metadatenmodells zur Beschreibung von FDM-Services</title>
+<author>
+<persName>
+<surname>Lemaire</surname>
+<forename>Marina</forename>
+</persName>
+<affiliation>Universität Trier, Deutschland</affiliation>
+<email>marina.lemaire@uni-trier.de</email>
+<idno type="ORCID">0000-0003-4726-2481</idno>
+</author>
+<author>
+<persName>
+<surname>Christ</surname>
+<forename>Andreas</forename>
+</persName>
+<affiliation>Christian-Albrechts-Universität zu Kiel, Deutschland</affiliation>
+<email>christ@ub.uni-kiel.de</email>
+<idno type="ORCID">0000-0002-3591-2355</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2024-12-02T17:40:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Bielefeld Computational Literary Studies Group</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital History</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<publisher>Digital Linguistics Lab</publisher>
+<address>
+<addrLine>Universität Bielefeld</addrLine>
+<addrLine>Universitätsstraße 25</addrLine>
+<addrLine>33615 Bielefeld</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/14943014</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Workshop</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>FDM-Services</term>
+<term>Beschreibung</term>
+<term>Metadaten</term>
+<term>Modell</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Sammlung</term>
+<term>Modellierung</term>
+<term>Infrastruktur</term>
+<term>Metadaten</term>
+<term>Standards</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<p style="text-align: left; ">Das Management von Forschungsdaten (FDM) hat für Wissenschaftler*innen zunehmend an Bedeutung gewonnen. Deshalb suchen sie nach FDM-Services, die sie dabei unterstützen, effizient und qualitätsgesichert mit ihren Forschungsdaten umzugehen. Das Angebot und die Entwicklung solcher Dienste erfolgt auf vielen Ebenen. Es reicht von lokalen (institutionellen) Stellen, die an Hochschulen und außeruniversitären Forschungseinrichtungen zu finden sind, über landes- und bundesweit übergreifende Einrichtungen, wie z. B. FDM-Landesinitiativen oder die NFDI-Konsortien bis hin zu internationalen Angeboten, bspw. die European Open Science Association (EOSC) oder das Social Sciences and Humanities Open Cloud Projekt (SSHOC). Das Angebot ist vielfältig, auf verschiedenen Plattformen und/oder einfachen Webseiten zu finden. Zudem werden die Informationen sehr divers hinsichtlich Struktur und Informationsgehalt zur Verfügung gestellt. Für Forschende ist es daher einerseits oftmals problematisch, die auf ihre Bedarfe passenden Dienste zu finden und andererseits auf der Basis der bereitgestellten Informationen zu entscheiden, ob oder welcher Dienst zu ihren Bedarfen passt. Gleichzeitig stellt sich das Problem auf der anbietenden Seite, welche Informationen wie bereitgestellt werden müssen und wie man dafür sorgen kann, dass die Forschenden das eigene Angebot einerseits finden, aber auch verstehen bzw. erfassen können, ob es für sie passend ist und worin es sich im Vergleich zu einem ähnlichen Dienst unterscheidet. Aus der Komplexität der FDM-Bedarfe sowie der individuellen und heterogenen Organisation von FDM-Services an unterschiedlichen Einrichtungen ergeben sich grundlegende konzeptionelle Fragen für Serviceeinrichtungen bei der Bereitstellung von Dienstleistungsportfolios im Bereich des Forschungsdatenmanagements. Um diese Bedarfe zu adressieren, erscheint eine Plattform sinnvoll, auf der FDM-Services nach einem einheitlichen Schema beschrieben sind und Suchoptionen angeboten werden, die das schnelle und zielgerichtete Auffinden der passenden Services ermöglicht. Ehe jedoch entsprechende technischen Lösungen implementiert werden, sollte sich über ein Metadatenschema verständigt werden, damit einerseits die Services leichter vergleichbar werden und ein allgemeines Grundverständnis/Vokabular zur Bezeichnung und Beschreibung von FDM-Diensten sich leichter etablieren kann. Andererseits ist es sinnvoll, FDM-Servicebeschreibungen aus dem eigenen System in andere Plattformen leicht überführen zu können, um die Auffindbarkeit über Metasuchmaschinen zu erhöhen. Es gibt einige Plattformen, die Suchen zu FDM-Services allgemein oder zu spezifischen FDM-Servicetypen ermöglichen, wie z.B. re3data „Registry of Research Data Repositories“ (IBI et al. 2024), der ELN-Finder (ULB TU DA/ZB MED 2024), der Dienstekatalog der DHd AG Geisteswissenschaftliches Forschungsdatenmanagement (Rau / Helling 2022) oder der RDM Navigator (KIT 2021). Viele dieser Beschreibungsmodelle decken jedoch oft nur bestimmte Teilbereiche der gesamten FDM-Servicelandschaft ab, haben einen spezifischen institutionellen Blick und/oder sind auf bestimmte Fachrichtungen oder Servicetypen beschränkt. Gleichzeitig fehlt eine einheitliche, formale Beschreibungssprache für viele Kategorien in diesen Modellen, sodass Gleiches mit dem gleichen Vokabular benannt wird. Zusätzlich existiert noch kein klares Verständnis darüber, was genau ein FDM-Service ist. Die NFDI-Konsortialversammlung definiert einen Dienst als „eine technisch-organisatorische Lösung [...], die Speicher- und Rechenleistungen, Software, Prozesse und Workflows ebenso umfassen kann wie die notwendige personelle Betreuung für unterschiedliche Service-Desks“ (NFDI 2022). Bei IT-Service-Dienstleistern ist ITIL (Information Technology Infrastructure Library) ein verbreitetes Framework für das Management von IT-Services. Es definiert Service sehr viel generischer als ein „Bündel von spezialisierten, organisatorischen Fähigkeiten“, die einen Mehrwert bei Kund*innen erbringen. Die Beschreibung eines Dienstes in einem Servicekatalog ist ein elementarer Bestandteil des Service-Managements, aber deren genaue Ausgestaltung, insbesondere für die Kund*innen, muss individuell an die Zielgruppe angepasst werden. (Ebel 2021) D. h., dass ITIL zwar ein Grundgerüst für ein Service-Metadatenmodell bereitstellt, aber die zentralen FDM-spezifischen Fragen nicht beantwortet. Des Weiteren stellt sich die Frage, wie sich ein Dienst von einem anderen abgrenzt: Ist z. B. die Schulung zu einer Software ein eigenständiger Dienst neben der Bereitstellung der Software selbst, oder ist sie ein integraler Bestandteil?</p>
+<p style="text-align: left; ">Diesen Fragen widmet sich derzeitig eine kleine Untergruppe aus der GO UNITE! Arbeitsgruppe FDM-Beschreibungsmodelle (
                 <ref target="https://go-unite.de/index.php/ag-fdm-beschreibungsmodell/">https://go-unite.de/index.php/ag-fdm-beschreibungsmodell/</ref>) und hat einen ersten Vorschlag für ein Metadatenmodell zur Beschreibung von FDM-Services erarbeitet.<ref n="1" target="ftn1"/> Es wurden verschiedene FDM-Servicebeschreibungen<ref n="2" target="ftn2"/> aufeinander gemappt, die Gesamtübersicht aller Kategorien wurden in der Gruppe und in einem kleineren Workshop mit weiteren Interessierten diskutiert. Dabei wurden die Kategorienbezeichnungen sowie -beschreibungen, der Datentyp (z. B. Text, Liste), die Kardinalität (1-1, 1-n, 0-1, 0-n), die öffentliche Sichtbarkeit und in einem Feld Beispiele und Erläuterungen bzw. Fragen notiert, bei denen in der Diskussion, z. B. noch nicht zu einer Einigung gefunden wurde. Insbesondere hinsichtlich des anzuwendenden Vokabulars in einigen Kategorien bleiben aufgrund der Komplexität des FDM einige Fragen offen. Die Autor*innen gehen bewusst den Schritt, diesen ersten Vorschlag mit den identifizierten Diskussionspunkten zu veröffentlichen, um mit einem größeren Kreis diese Aspekte zu erörtern und anhand der Ergebnisse, das Modell schrittweise gemeinsam mit der Community weiterzuentwickeln.
             </p>
-            <p style="text-align: left; ">Der hier vorgeschlagene Workshop der DHd AG Geisteswissenschaftliches Forschungsdatenmanagement (gwFDM) setzt genau dort an und möchte die Diskussion des Modells beginnen. Denn die Erprobung eines Modells gelingt insbesondere dann, wenn versucht wird, das Schema auf existierende FDM-Services anzuwenden, um einerseits sich den bereits identifizierten Fragen zu widmen und hoffentlich Antworten darauf zu finden; andererseits um weitere Probleme in der Anwendung des Schemas zu identifizieren und dafür Lösungen zu erarbeiten. Viele Mitglieder der AG gwFDM stellen in ihrer Funktion als Dienstleister (Datenzentren, FDM-Servicestellen und NFDI-Konsortien) FDM-Services bereit und haben bereits vor einigen Jahren einen Dienstekatalog (Rau/Helling 2022) erstellt. Dieser bietet aufgrund seiner Heterogenität, eine hervorragende Grundlage: In ihm sind Dienste aus unterschiedlichen Datenzentren und anderen FDM-Service-anbietenden Einrichtungen enthalten, die ein breites Spektrum an Servicetypen und Beschreibungen aufweisen, sodass eine sehr große Spannbreite an FDM-Services für die Evaluation des Modells zur Verfügung stehen. Da bei der Entwicklung des Modells eben nicht nur die Anbieterseite, sondern auch die Kund*innenperspektive berücksichtigt werden soll, bietet das Publikum der DHd ein gutes Spektrum an Expertisen und Sichtweisen für die Diskussion.</p>
-            <p style="text-align: left; ">Um das Metadatenmodell im Rahmen des Workshops zu evaluieren, vorhandene Herausforderungen zu diskutieren und gemeinsam Lösungsstrategien zu entwickeln, ist folgender Ablauf geplant: Nach der Begrüßung und einer Vorstellungsrunde der Teilnehmenden beginnen wir mit der einführenden Vorstellung des Metadatenmodells sowie der Darlegung der offenen Fragen, die bereits in der Publikation benannt wurden. Anschließend werden die Teilnehmenden in kleine Gruppen aufgeteilt, um das Modell praktisch auf von ihnen ausgewählte Services des Dienstekatalogs anzuwenden. Ziel ist es, Erfahrungen zu sammeln, potenzielle Verbesserungsvorschläge zu erarbeiten und ggf. weitere Herausforderungen zu identifizieren. Nach einer kurzen Pause präsentieren die Gruppen ihre Ergebnisse und alle Workshopteilnehmenden führen eine moderierte Diskussion über die Herausforderungen, die während der Anwendung des Metadatenmodells auftraten sowie über ihre ggf. bereits angewandten Lösungsstrategien. In dieser Diskussion sollen weitere Lösungsansätze entworfen werden. Alle Aspekte der Diskussion werden auf einer Mindmap gesammelt, um sie anschließend als Grundlage in der nächsten Workshop-Phase zur Verfügung zu haben. Daran anschließend werden in der Konsolidierungsphase die Erkenntnisse durch das Clustern der Mindmap zusammengefasst und die nächsten Schritte für die Weiterentwicklung des Metadatenmodells diskutiert und festgelegt.</p>
-            <div type="div2" rend="DH-Heading3"><head>Ablaufplan für einen halbtägigen Workshop</head></div>
-            <table rend="rules">
-                <row>
-                    <cell style="text-align: left;" rend="DH-Default">Begrüßung und Einführung</cell>
-                    <cell style="text-align: right;" rend="DH-Default">(20 Minuten)</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;" rend="DH-Default">Präsentation des FDM-Service-Metadatenmodells</cell>
-                    <cell style="text-align: right;" rend="DH-Default">(25 Minuten)</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;" rend="DH-Default">
-                        <p style="text-align: left; ">Gruppenarbeit: Erprobung des Metadatenmodells anhand des </p>
-                        <p style="text-align: left; ">Dienstekatalogs</p>
-                    </cell>
-                    <cell style="text-align: right;" rend="DH-Default">(1 Stunde)</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;" rend="DH-Default">Pause</cell>
-                    <cell style="text-align: right;" rend="DH-Default">(15 Minuten)</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;" rend="DH-Default">Präsentation und Diskussion der Gruppenergebnisse</cell>
-                    <cell style="text-align: right;" rend="DH-Default">(1 Stunde)</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;" rend="DH-Default">Pause</cell>
-                    <cell style="text-align: right;" rend="DH-Default">(15 Minuten)</cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;" rend="DH-Default">
-                        <p style="text-align: left; ">Konsolidierung der Diskussionsergebnisse und Festlegung</p>
-                        <p style="text-align: left; ">der nächsten Schritte</p>
-                    </cell>
-                    <cell style="text-align: right;" rend="DH-Default">(45 Minuten)</cell>
-                </row>
-            </table>
-            <p style="text-align: left; ">Auf diese Weise bietet der Workshop eine interaktive Plattform für alle Beteiligten, die an der Optimierung von Metadatenmodellierung für FDM-Services interessiert sind. Das Metadatenmodell wird durch die Bewertung seiner Effektivität und Vollständigkeit bei der Beschreibung verschiedener FDM-Services evaluiert. Dabei wird gezielt nach Lücken und Verbesserungspotenzialen durch das Sammeln von konstruktivem Feedback zur Verfeinerung des Modells gesucht. Zusätzlich fördert der Workshop ein erweitertes Verständnis bei den Teilnehmenden für die Vielfalt und Komplexität von FDM-Services. Die unterschiedlichen Erfahrungshorizonte der Teilnehmenden tragen zu einer reichhaltigen und sich gegenseitig befruchtenden Diskussion bei, die es ermöglicht, umsetzbare Erkenntnisse zu generieren und konkrete Empfehlungen für die Weiterentwicklung und Verbesserung des Metadatenmodells zu erhalten, um dessen Implementierung in der Breite der FDM-Servicelandschaft zu begünstigen. Die Ergebnisse des Workshops werden in einem Blogbeitrag publiziert. Des Weiteren könnte dieser Workshop ein Startschuss sein für die Überarbeitung und Aktualisierung des Dienstekatalogs der AG gwFDM. Darüber hinaus ist er der Auftakt für die weitere Zusammenarbeit mit der Go Unite! AG in diesem Feld und darüber hinaus.</p>
-        </body>
-        <back>
+<p style="text-align: left; ">Der hier vorgeschlagene Workshop der DHd AG Geisteswissenschaftliches Forschungsdatenmanagement (gwFDM) setzt genau dort an und möchte die Diskussion des Modells beginnen. Denn die Erprobung eines Modells gelingt insbesondere dann, wenn versucht wird, das Schema auf existierende FDM-Services anzuwenden, um einerseits sich den bereits identifizierten Fragen zu widmen und hoffentlich Antworten darauf zu finden; andererseits um weitere Probleme in der Anwendung des Schemas zu identifizieren und dafür Lösungen zu erarbeiten. Viele Mitglieder der AG gwFDM stellen in ihrer Funktion als Dienstleister (Datenzentren, FDM-Servicestellen und NFDI-Konsortien) FDM-Services bereit und haben bereits vor einigen Jahren einen Dienstekatalog (Rau/Helling 2022) erstellt. Dieser bietet aufgrund seiner Heterogenität, eine hervorragende Grundlage: In ihm sind Dienste aus unterschiedlichen Datenzentren und anderen FDM-Service-anbietenden Einrichtungen enthalten, die ein breites Spektrum an Servicetypen und Beschreibungen aufweisen, sodass eine sehr große Spannbreite an FDM-Services für die Evaluation des Modells zur Verfügung stehen. Da bei der Entwicklung des Modells eben nicht nur die Anbieterseite, sondern auch die Kund*innenperspektive berücksichtigt werden soll, bietet das Publikum der DHd ein gutes Spektrum an Expertisen und Sichtweisen für die Diskussion.</p>
+<p style="text-align: left; ">Um das Metadatenmodell im Rahmen des Workshops zu evaluieren, vorhandene Herausforderungen zu diskutieren und gemeinsam Lösungsstrategien zu entwickeln, ist folgender Ablauf geplant: Nach der Begrüßung und einer Vorstellungsrunde der Teilnehmenden beginnen wir mit der einführenden Vorstellung des Metadatenmodells sowie der Darlegung der offenen Fragen, die bereits in der Publikation benannt wurden. Anschließend werden die Teilnehmenden in kleine Gruppen aufgeteilt, um das Modell praktisch auf von ihnen ausgewählte Services des Dienstekatalogs anzuwenden. Ziel ist es, Erfahrungen zu sammeln, potenzielle Verbesserungsvorschläge zu erarbeiten und ggf. weitere Herausforderungen zu identifizieren. Nach einer kurzen Pause präsentieren die Gruppen ihre Ergebnisse und alle Workshopteilnehmenden führen eine moderierte Diskussion über die Herausforderungen, die während der Anwendung des Metadatenmodells auftraten sowie über ihre ggf. bereits angewandten Lösungsstrategien. In dieser Diskussion sollen weitere Lösungsansätze entworfen werden. Alle Aspekte der Diskussion werden auf einer Mindmap gesammelt, um sie anschließend als Grundlage in der nächsten Workshop-Phase zur Verfügung zu haben. Daran anschließend werden in der Konsolidierungsphase die Erkenntnisse durch das Clustern der Mindmap zusammengefasst und die nächsten Schritte für die Weiterentwicklung des Metadatenmodells diskutiert und festgelegt.</p>
+<div rend="DH-Heading3" type="div2"><head>Ablaufplan für einen halbtägigen Workshop</head></div>
+<table rend="rules">
+<row>
+<cell rend="DH-Default" style="text-align: left;">Begrüßung und Einführung</cell>
+<cell rend="DH-Default" style="text-align: right;">(20 Minuten)</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">Präsentation des FDM-Service-Metadatenmodells</cell>
+<cell rend="DH-Default" style="text-align: right;">(25 Minuten)</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">
+<p style="text-align: left; ">Gruppenarbeit: Erprobung des Metadatenmodells anhand des </p>
+<p style="text-align: left; ">Dienstekatalogs</p>
+</cell>
+<cell rend="DH-Default" style="text-align: right;">(1 Stunde)</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">Pause</cell>
+<cell rend="DH-Default" style="text-align: right;">(15 Minuten)</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">Präsentation und Diskussion der Gruppenergebnisse</cell>
+<cell rend="DH-Default" style="text-align: right;">(1 Stunde)</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">Pause</cell>
+<cell rend="DH-Default" style="text-align: right;">(15 Minuten)</cell>
+</row>
+<row>
+<cell rend="DH-Default" style="text-align: left;">
+<p style="text-align: left; ">Konsolidierung der Diskussionsergebnisse und Festlegung</p>
+<p style="text-align: left; ">der nächsten Schritte</p>
+</cell>
+<cell rend="DH-Default" style="text-align: right;">(45 Minuten)</cell>
+</row>
+</table>
+<p style="text-align: left; ">Auf diese Weise bietet der Workshop eine interaktive Plattform für alle Beteiligten, die an der Optimierung von Metadatenmodellierung für FDM-Services interessiert sind. Das Metadatenmodell wird durch die Bewertung seiner Effektivität und Vollständigkeit bei der Beschreibung verschiedener FDM-Services evaluiert. Dabei wird gezielt nach Lücken und Verbesserungspotenzialen durch das Sammeln von konstruktivem Feedback zur Verfeinerung des Modells gesucht. Zusätzlich fördert der Workshop ein erweitertes Verständnis bei den Teilnehmenden für die Vielfalt und Komplexität von FDM-Services. Die unterschiedlichen Erfahrungshorizonte der Teilnehmenden tragen zu einer reichhaltigen und sich gegenseitig befruchtenden Diskussion bei, die es ermöglicht, umsetzbare Erkenntnisse zu generieren und konkrete Empfehlungen für die Weiterentwicklung und Verbesserung des Metadatenmodells zu erhalten, um dessen Implementierung in der Breite der FDM-Servicelandschaft zu begünstigen. Die Ergebnisse des Workshops werden in einem Blogbeitrag publiziert. Des Weiteren könnte dieser Workshop ein Startschuss sein für die Überarbeitung und Aktualisierung des Dienstekatalogs der AG gwFDM. Darüber hinaus ist er der Auftakt für die weitere Zusammenarbeit mit der Go Unite! AG in diesem Feld und darüber hinaus.</p>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
-                    
-                        <hi style="font-size:10pt">Die Autor*innen sind Patrick Helling, Boris Jakob, Stefan Kellendonk, Marina Lemaire und Rouven Schabinger. (Patrick Helling und Marina Lemaire sind Mitglieder der DHd AG Geisteswissenschaftliches Forschungsdatenmanagement.) Der Entwurf für das Metadatenmodell ist bereits fertiggestellt. Derzeit werden die Rahmentexte überarbeitet. Die Publikation wird bis Ende dieses Jahres erscheinen. Alle Autor*innen sind mit der Einreichung dieses Abstracts vor der Publikation einverstanden.</hi>
-                    
-                </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
-                    
-                        <hi style="font-size:10pt"> Die verwendeten Schemata sind: Dienstekatalog der DHd AG Geisteswissenschaftliches Forschungsdatenmanagement (Rau / Helling 2022), DIAMANT-Service-Beschreibung (Lemaire et al. 2020), RDMNavigator (KIT 2021), Serviceverzeichnis Forschungsdaten (Erven et al. 2019), Referenzmodell für Strategieprozesse im institutionellen Forschungsdatenmanagement (RISE-DE) (Hartmann/Jacob/Weiß 2019) und EOSC EU Node - Resource Hub (Sanchez-P. 2021).</hi>
-                    
-                </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Ebel, Nadin</hi> (2021): 
+<note n="1" rend="footnote text" xml:id="ftn1">
+<hi style="font-size:10pt">Die Autor*innen sind Patrick Helling, Boris Jakob, Stefan Kellendonk, Marina Lemaire und Rouven Schabinger. (Patrick Helling und Marina Lemaire sind Mitglieder der DHd AG Geisteswissenschaftliches Forschungsdatenmanagement.) Der Entwurf für das Metadatenmodell ist bereits fertiggestellt. Derzeit werden die Rahmentexte überarbeitet. Die Publikation wird bis Ende dieses Jahres erscheinen. Alle Autor*innen sind mit der Einreichung dieses Abstracts vor der Publikation einverstanden.</hi>
+</note>
+<note n="2" rend="footnote text" xml:id="ftn2">
+<hi style="font-size:10pt"> Die verwendeten Schemata sind: Dienstekatalog der DHd AG Geisteswissenschaftliches Forschungsdatenmanagement (Rau / Helling 2022), DIAMANT-Service-Beschreibung (Lemaire et al. 2020), RDMNavigator (KIT 2021), Serviceverzeichnis Forschungsdaten (Erven et al. 2019), Referenzmodell für Strategieprozesse im institutionellen Forschungsdatenmanagement (RISE-DE) (Hartmann/Jacob/Weiß 2019) und EOSC EU Node - Resource Hub (Sanchez-P. 2021).</hi>
+</note></div>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl style="text-align: left; ">
+<hi rend="bold">Ebel, Nadin</hi> (2021): 
                         <hi rend="italic">Basiswissen ITIL 4: Grundlagen und Know-how für das IT Service Management und die ITIL-4-Foundation-Prüfung</hi>. 1. Aufl. Dpunkt.Verlag GmbH.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Erven, Judith</hi> / 
+<bibl style="text-align: left; ">
+<hi rend="bold">Erven, Judith</hi> / 
                         <hi rend="bold">Dierkes, Jens</hi> / 
                         <hi rend="bold">Aguilera, Alvaro</hi> / 
                         <hi rend="bold">Brand, Ortrun</hi> / 
@@ -163,49 +159,49 @@
                         <hi rend="bold">Sutter, Paul</hi> (2019): 
                         <hi rend="italic">Serviceverzeichnis Forschungsdaten</hi>. https://doi.org/10.11588/heibooks.598.c8436.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Hartmann, Niklas K.</hi> / 
+<bibl style="text-align: left; ">
+<hi rend="bold">Hartmann, Niklas K.</hi> / 
                         <hi rend="bold">Jacob, Boris</hi> / 
                         <hi rend="bold">Weiß, Nadin</hi> (2019): 
                         <hi rend="italic">RISE-DE – Referenzmodell für Strategieprozesse im institutionellen Forschungsdatenmanagement. Version 1.0</hi>. Zenodo. https://doi.org/10.5281/zenodo.3585556.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">IBI, Institut für Bibliotheks- und Informations­wissen­schaft</hi> / 
+<bibl style="text-align: left; ">
+<hi rend="bold">IBI, Institut für Bibliotheks- und Informations­wissen­schaft</hi> / 
                         <hi rend="bold">KIT Bibliothek, Bibliothek des Karlsruher Instituts für Technologie</hi> / 
                         <hi rend="bold">OS Helmholtz, Helmholtz Open Science</hi> / 
                         <hi rend="bold">Lib Purdue, Libraries of Purdue University</hi> (2024): 
                         <hi rend="italic">re3data.org. – Registry of Research Data Repositories</hi>. http://www.re3data.org/ (letzter Zugriff 22. Juli 2024).
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">KIT, Karlsruher Institut für Technologie</hi> (2021): 
+<bibl style="text-align: left; ">
+<hi rend="bold">KIT, Karlsruher Institut für Technologie</hi> (2021): 
                         <hi rend="italic">RDM Navigator</hi>. https://www.rdm.kit.edu/RDM/RDM-navigator/index.php (letzter Zugriff 22. Juli 2024).
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Lemaire, Marina</hi> / 
+<bibl style="text-align: left; ">
+<hi rend="bold">Lemaire, Marina</hi> / 
                         <hi rend="bold">Gerhards, Lea</hi> / 
                         <hi rend="bold">Kellendonk, Stefan</hi> / 
                         <hi rend="bold">Blask, Katarina</hi> / 
                         <hi rend="bold">Förster, André</hi> (2020): 
                         <hi rend="italic">Das DIAMANT-Modell 2.0. Modellierung des FDM-Referenzprozesses und Empfehlungen für die Implementierung einer institutionellen FDM-Servicelandschaft</hi>. (= eSciences Working Papers 05) Trier.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">NFDI, Konsortialversammlung des Vereins Nationale Forschungsdateninfrastruktur (NFDI) e.V.</hi> (2022): 
+<bibl style="text-align: left; ">
+<hi rend="bold">NFDI, Konsortialversammlung des Vereins Nationale Forschungsdateninfrastruktur (NFDI) e.V.</hi> (2022): 
                         <hi rend="italic">Stellungnahme der NFDI-Konsortien zu Basisdiensten</hi>. Zenodo. https://doi.org/10.5281/zenodo.6091657.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Rau, Felix</hi> / 
+<bibl style="text-align: left; ">
+<hi rend="bold">Rau, Felix</hi> / 
                         <hi rend="bold">Helling, Patrick</hi> (2022): "Der Dienstekatalog der AG Datenzentren - Ein digitales Verzeichnis für Forschungsdatenmanagement-Services in den Geisteswissenschaften", 10.5281/ZENODO.6328019.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">Sanchez-P., Jorge-A.</hi> (2021): "EOSC Portal Profiles v4.00", 10.5281/zenodo.5726890.
+<bibl style="text-align: left; ">
+<hi rend="bold">Sanchez-P., Jorge-A.</hi> (2021): "EOSC Portal Profiles v4.00", 10.5281/zenodo.5726890.
                     </bibl>
-                    <bibl style="text-align: left; ">
-                        <hi rend="bold">ULB TU DA, Universitäts- und Landesbibliothek Darmstadt</hi> / 
+<bibl style="text-align: left; ">
+<hi rend="bold">ULB TU DA, Universitäts- und Landesbibliothek Darmstadt</hi> / 
                         <hi rend="bold">ZB MED, Informationszentrum Lebenswissenschaften</hi> (2024): 
                         <hi rend="italic">ELN-Finder</hi>. https://eln-finder.ulb.tu-darmstadt.de/home (letzter Zugriff 22. Juli 2024).
                     </bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>

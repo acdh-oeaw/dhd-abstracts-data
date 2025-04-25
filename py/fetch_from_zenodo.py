@@ -61,9 +61,9 @@ for zip_path in tqdm(zip_files, desc="Extracting zip files"):
         print(zip_path)
 
 
-teis = glob.glob("./extracted/*/*.xml")
-for i, x in enumerate(teis):
-    cur_nr = f"{i:05}"
-    new_name = F_NAME.format(YEAR, cur_nr)
-    save_path = os.path.join("data", "editions", new_name)
-    shutil.copy(x, save_path)
+# teis = glob.glob("./extracted/*/*.xml")
+# for i, x in enumerate(teis):
+#     cur_nr = f"{i:05}"
+#     new_name = F_NAME.format(YEAR, cur_nr)
+#     save_path = os.path.join("data", "editions", new_name)
+#     shutil.copy(x, save_path)

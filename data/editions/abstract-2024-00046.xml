@@ -1,283 +1,273 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <TEI xml:id="BOENIG_Matthias_Edierst_Du_noch_oder_trainierst_Du_schon__Fo" xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Edierst Du noch oder trainierst Du schon? Forschungsdaten als Grundlage von Trainingsdaten für die automatische Texterkennung</title>
-                <author>
-                    <persName>
-                        <surname>Boenig</surname>
-                        <forename>Matthias</forename>
-                    </persName>
-                    <affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland</affiliation>
-                    <email>boenig@bbaw.de</email>
-                    <idno type="ORCID">0000-0003-4615-4753</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Baierer</surname>
-                        <forename>Konstantin</forename>
-                    </persName>
-                    <affiliation>Staatsbibliothek zu Berlin – Preußischer Kulturbesitz, Deutschland</affiliation>
-                    <email>konstantin.baierer@sbb.spk-berlin.de</email>
-                    <idno type="ORCID">0000-0003-2397-242X</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Hinrichsen</surname>
-                        <forename>Lena</forename>
-                    </persName>
-                    <affiliation>Herzog August Bibliothek Wolfenbüttel, Deutschland</affiliation>
-                    <email>hinrichsen@hab.de</email>
-                    <idno type="ORCID">0000-0002-9286-2390</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Würzner</surname>
-                        <forename>Kay-Michael</forename>
-                    </persName>
-                    <affiliation>Sächsische Landesbibliothek — Staats- und Universitätsbibliothek Dresden (SLUB), Deutschland</affiliation>
-                    <email>kay-michael.wuerzner@slub-dresden.de</email>
-                    <idno type="ORCID">0000-0002-9039-4124</idno>
-                </author>
-                <author>
-                    <persName>
-                        <surname>Reul</surname>
-                        <forename>Christian</forename>
-                    </persName>
-                    <affiliation>Zentrum für Philologie und Digitalität (ZPD) der Universität Würzburg, Deutschland</affiliation>
-                    <email>christian.reul@uni-wuerzburg.de</email>
-                    <idno type="ORCID">0000-0002-1776-1469</idno>
-                </author>
-            </titleStmt>
-            <editionStmt>
-                <edition>
-                    <date>2023-07-17T13:36:00Z</date>
-                </edition>
-            </editionStmt>
-            <publicationStmt>
-                <publisher>Digital Humanities Passau</publisher>
-                <address>
-                    <addrLine>Universität Passau</addrLine>
-                    <addrLine>Innstraße 41</addrLine>
-                    <addrLine>D-94032 Passau</addrLine>
-                    <addrLine>Deutschland</addrLine>
-                </address>
-            </publicationStmt>
-            <sourceDesc>
-                <p>Converted from a Word document</p>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application ident="DHCONVALIDATOR" version="1.22">
-                    <label>DHConvalidator</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <profileDesc>
-            <textClass>
-                <keywords scheme="ConfTool" n="category">
-                    <term>Paper</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
-                    <term>Workshop</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="keywords">
-                    <term>Standard</term>
-                    <term>Ground-Truth</term>
-                    <term>OCR</term>
-                </keywords>
-                <keywords scheme="ConfTool" n="topics">
-                    <term>Datenerkennung</term>
-                    <term>Transkription</term>
-                    <term>Inhaltsanalyse</term>
-                    <term>Strukturanalyse</term>
-                    <term>Annotieren</term>
-                    <term>Archivierung</term>
-                </keywords>
-            </textClass>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
-            <div type="div1" rend="DH-Heading1">
-                <head>Einführung</head>
-                <p style="text-align: left; ">Wichtigste Grundlage der textorientierten Forschung in den Digital Humanities ist eine ausreichende Verfügbarkeit von hochwertigem maschinenlesbarem Text. Diese Anforderung kann bei grundständig digitalen Texten häufig einfacher erfüllt werden als bei historischen Texten, wo zunächst die Transformation vom gedruckten oder geschriebenen Wort auf Papier in eine geeignete digitale Repräsentation zu realisieren ist.</p>
-                <p style="text-align: left; ">Mit der Anwendung von Verfahren des maschinellen Lernens in der automatischen Texterkennung ist in den letzten zehn Jahren ein enormer Fortschritt vollzogen worden. Dies betrifft vor allem die Zeichenerkennung und deren Genauigkeit. Hierbei kommen Methoden zum Einsatz, die dem Paradigma 
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Edierst Du noch oder trainierst Du schon? Forschungsdaten als Grundlage von Trainingsdaten für die automatische Texterkennung</title>
+<author>
+<persName>
+<surname>Boenig</surname>
+<forename>Matthias</forename>
+</persName>
+<affiliation>Berlin-Brandenburgische Akademie der Wissenschaften, Deutschland</affiliation>
+<email>boenig@bbaw.de</email>
+<idno type="ORCID">0000-0003-4615-4753</idno>
+</author>
+<author>
+<persName>
+<surname>Baierer</surname>
+<forename>Konstantin</forename>
+</persName>
+<affiliation>Staatsbibliothek zu Berlin – Preußischer Kulturbesitz, Deutschland</affiliation>
+<email>konstantin.baierer@sbb.spk-berlin.de</email>
+<idno type="ORCID">0000-0003-2397-242X</idno>
+</author>
+<author>
+<persName>
+<surname>Hinrichsen</surname>
+<forename>Lena</forename>
+</persName>
+<affiliation>Herzog August Bibliothek Wolfenbüttel, Deutschland</affiliation>
+<email>hinrichsen@hab.de</email>
+<idno type="ORCID">0000-0002-9286-2390</idno>
+</author>
+<author>
+<persName>
+<surname>Würzner</surname>
+<forename>Kay-Michael</forename>
+</persName>
+<affiliation>Sächsische Landesbibliothek — Staats- und Universitätsbibliothek Dresden (SLUB), Deutschland</affiliation>
+<email>kay-michael.wuerzner@slub-dresden.de</email>
+<idno type="ORCID">0000-0002-9039-4124</idno>
+</author>
+<author>
+<persName>
+<surname>Reul</surname>
+<forename>Christian</forename>
+</persName>
+<affiliation>Zentrum für Philologie und Digitalität (ZPD) der Universität Würzburg, Deutschland</affiliation>
+<email>christian.reul@uni-wuerzburg.de</email>
+<idno type="ORCID">0000-0002-1776-1469</idno>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>2023-07-17T13:36:00Z</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<publisher>Digital Humanities Passau</publisher>
+<address>
+<addrLine>Universität Passau</addrLine>
+<addrLine>Innstraße 41</addrLine>
+<addrLine>D-94032 Passau</addrLine>
+<addrLine>Deutschland</addrLine>
+</address>
+<idno subtype="zenodo" type="url">https://zenodo.org/records/10698319</idno></publicationStmt>
+<sourceDesc>
+<p>Converted from a Word document</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<appInfo>
+<application ident="DHCONVALIDATOR" version="1.22">
+<label>DHConvalidator</label>
+</application>
+</appInfo>
+</encodingDesc>
+<profileDesc>
+<textClass>
+<keywords n="category" scheme="ConfTool">
+<term>Paper</term>
+</keywords>
+<keywords n="subcategory" scheme="ConfTool">
+<term>Workshop</term>
+</keywords>
+<keywords n="keywords" scheme="ConfTool">
+<term>Standard</term>
+<term>Ground-Truth</term>
+<term>OCR</term>
+</keywords>
+<keywords n="topics" scheme="ConfTool">
+<term>Datenerkennung</term>
+<term>Transkription</term>
+<term>Inhaltsanalyse</term>
+<term>Strukturanalyse</term>
+<term>Annotieren</term>
+<term>Archivierung</term>
+</keywords>
+</textClass>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div rend="DH-Heading1" type="div1">
+<head>Einführung</head>
+<p style="text-align: left; ">Wichtigste Grundlage der textorientierten Forschung in den Digital Humanities ist eine ausreichende Verfügbarkeit von hochwertigem maschinenlesbarem Text. Diese Anforderung kann bei grundständig digitalen Texten häufig einfacher erfüllt werden als bei historischen Texten, wo zunächst die Transformation vom gedruckten oder geschriebenen Wort auf Papier in eine geeignete digitale Repräsentation zu realisieren ist.</p>
+<p style="text-align: left; ">Mit der Anwendung von Verfahren des maschinellen Lernens in der automatischen Texterkennung ist in den letzten zehn Jahren ein enormer Fortschritt vollzogen worden. Dies betrifft vor allem die Zeichenerkennung und deren Genauigkeit. Hierbei kommen Methoden zum Einsatz, die dem Paradigma 
                     <hi rend="italic">Lernen aus Beispielen</hi> folgen. Die dazu nötigen Trainingsdaten werden als Ground Truth (GT) bezeichnet. 
                 </p>
-                <quote>„Der Ursprung des Wortes Ground Truth ist das deutsche Wort Grundwahrheit. Im OCR-Zusammenhang bedeutet das, dass alles auf der gedruckten Seite in gleicher Art und Weise nach definierten Regeln unter anderem in digitaler Form wiedergegeben wird.“<ref n="1" target="ftn1"/>
-                </quote>
-                <p style="text-align: left; ">Aber GT dient nicht nur dem Training der Zeichenerkennung (sowohl dem Training eines neuen Modells „from scratch“, als auch dem „Finetuning“ eines bestehenden Modells auf einen spezifischen Anwendungsfall hin), sondern wird auch zur Datenvalidierung, -evaluation und -referenzierung eingesetzt. Neben der Zeichenerkennung können aber weitere Teilprozesse der automatischen Texterkennung vom Einsatz maschinellen Lernens profitieren. Dies gilt insbesondere für die Erkennung und Auszeichnung der Seitenstruktur bzw. des Seitenlayouts. Diese unterschiedlichen Anwendungen setzen differenzierte GT-Typen voraus. Allgemein kann zwischen Struktur-GT und Text-GT unterschieden werden. </p>
-                <p style="text-align: left; ">Die Erstellung von GT erfolgt zu einem Großteil manuell, was einen hohen zeitlichen und finanziellen Aufwand erfordert. Um brauchbaren GT zu erstellen, sind abgestimmte Konventionen und Richtlinien notwendig. Aus diesem Grund entwickelt, pflegt, vermittelt und diskutiert das Projekt OCR-D<ref n="2" target="ftn2"/> neben technischen Lösungen für die Massenvolltexterschließung historischer Drucke vom 16. bis 19. Jahrhundert eigene GT-Richtlinien<ref n="3" target="ftn3"/>. Diese Richtlinien werden in einer offenen, zur kollaborativen Datenkultur verpflichtenden Umgebung erstellt und sollen sicherstellen, dass nachnutzbare Forschungsdaten entstehen sowie der Aufwand in der GT-Erstellung minimiert werden kann.<ref n="4" target="ftn4"/>
+<quote>„Der Ursprung des Wortes Ground Truth ist das deutsche Wort Grundwahrheit. Im OCR-Zusammenhang bedeutet das, dass alles auf der gedruckten Seite in gleicher Art und Weise nach definierten Regeln unter anderem in digitaler Form wiedergegeben wird.“<ref n="1" target="ftn1"/>
+</quote>
+<p style="text-align: left; ">Aber GT dient nicht nur dem Training der Zeichenerkennung (sowohl dem Training eines neuen Modells „from scratch“, als auch dem „Finetuning“ eines bestehenden Modells auf einen spezifischen Anwendungsfall hin), sondern wird auch zur Datenvalidierung, -evaluation und -referenzierung eingesetzt. Neben der Zeichenerkennung können aber weitere Teilprozesse der automatischen Texterkennung vom Einsatz maschinellen Lernens profitieren. Dies gilt insbesondere für die Erkennung und Auszeichnung der Seitenstruktur bzw. des Seitenlayouts. Diese unterschiedlichen Anwendungen setzen differenzierte GT-Typen voraus. Allgemein kann zwischen Struktur-GT und Text-GT unterschieden werden. </p>
+<p style="text-align: left; ">Die Erstellung von GT erfolgt zu einem Großteil manuell, was einen hohen zeitlichen und finanziellen Aufwand erfordert. Um brauchbaren GT zu erstellen, sind abgestimmte Konventionen und Richtlinien notwendig. Aus diesem Grund entwickelt, pflegt, vermittelt und diskutiert das Projekt OCR-D<ref n="2" target="ftn2"/> neben technischen Lösungen für die Massenvolltexterschließung historischer Drucke vom 16. bis 19. Jahrhundert eigene GT-Richtlinien<ref n="3" target="ftn3"/>. Diese Richtlinien werden in einer offenen, zur kollaborativen Datenkultur verpflichtenden Umgebung erstellt und sollen sicherstellen, dass nachnutzbare Forschungsdaten entstehen sowie der Aufwand in der GT-Erstellung minimiert werden kann.<ref n="4" target="ftn4"/>
+</p>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Forschungsdaten im Kontext des Deutschen Textarchives</head>
+<p style="text-align: left; ">Im Rahmen des vorgeschlagenen Workshops soll eine solche offene Datenkultur am Beispiel von Forschungsdaten des Deutschen Textarchivs (DTA)<ref n="5" target="ftn5"/> gemeinsam gelebt und so mittelbar ein wertvoller Beitrag zur Qualität historischer Textkorpora geleistet werden. Die Analyse des DTA vor dem Hintergrund der GT-Erstellung soll den Teilnehmenden zeigen, welche Möglichkeiten (und Grenzen) diese Daten bieten.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Forschungsdaten im Kontext des Deutschen Textarchives</head>
-                <p style="text-align: left; ">Im Rahmen des vorgeschlagenen Workshops soll eine solche offene Datenkultur am Beispiel von Forschungsdaten des Deutschen Textarchivs (DTA)<ref n="5" target="ftn5"/> gemeinsam gelebt und so mittelbar ein wertvoller Beitrag zur Qualität historischer Textkorpora geleistet werden. Die Analyse des DTA vor dem Hintergrund der GT-Erstellung soll den Teilnehmenden zeigen, welche Möglichkeiten (und Grenzen) diese Daten bieten.
-                </p>
-                <div type="div2" rend="DH-Heading2">
-                    <head>
-                        <anchor xml:id="e2s2lca43i5r"/>Betrachtung des DTA-Datenbestandes
+<div rend="DH-Heading2" type="div2">
+<head>
+<anchor xml:id="e2s2lca43i5r"/>Betrachtung des DTA-Datenbestandes
                     </head>
-                    <p style="text-align: left; ">Das DTA wurde im Rahmen eines sprachwissenschaftlich orientierten DFG-Projektes erstellt. Der Kernbestand besteht aus 1500 Druckpublikationen mit einem Gesamtumfang von 540.000 Seiten. Die Text- und Textsortenauswahl, die zeitliche Spanne des Publikationszeitraumes vom frühen 17. bis frühen 20. Jahrhundert, die Verwendung von Erstausgaben und die vorlagengetreue Transkription kennzeichnen diesen Bestand als Grundlage eines Referenzkorpus der frühneuhochdeutschen Sprache. Die Bereitstellung der digitalen Texte erfolgt sowohl in einem XML-basierten Format als auch als unannotierter Rohtext.</p>
-                    <p style="text-align: left; ">Für die Einschätzung der Nutzbarkeit des DTA als Quelle für GT sind nicht nur die Ergebnisdaten relevant. Ein genauerer Blick auf die einzelnen Etappen des ursprünglichen Datenerfassungsworkflows im DTA zeigt bisher ungenutzte Potenziale der einzelnen Datenstände als Trainingsmaterialien für Text- und Strukturerkennung. Die folgende Abbildung illustriert die beiden grundsätzlichen Wege der Volltexterstellung, die im DTA zur Anwendung kamen: Automatische Texterkennung mit anschließender Nachkorrektur („OCR way“) und manuelle Transkription im Vier-Augen-Prinzip („Double Keying way“).</p>
-                    <p>
-                      <figure>
-                        <graphic n="1001" width="16.002cm" height="23.327430555555555cm" url="Pictures/676f9b129764ebacfcdc06b89796d8af.png" rend="inline"/>
-                          <head>Abbildung 1: Schematische Darstellung des DTA-Datenerfassungsworkflows</head>
-                      </figure>
-                    </p>
-                    <p style="text-align: left; ">Letzterer kam für den Großteil des Bestands zur Anwendung. Das Double-Keying-Verfahren wurde von Nicht-Muttersprachlern vorgenommen und ist sehr genau. Die Zeichengenauigkeit kann mit 99,99 % angesetzt werden (Haaf, 2013; Geyken, 2012). Mit OCR wurden hauptsächlich Titel des 19. und Mitte des 18. Jahrhunderts erfasst.<ref n="6" target="ftn6"/> Für dieses Schrifttum existieren hoch performante und zuverlässige OCR-Modelle.<ref n="7" target="ftn7"/>
-                    </p>
-                    <p style="text-align: left; ">Beiden Wegen gemein ist ein manueller Segmentierungsschritt. In diesem wurden Textzonen und Abbildungen lokalisiert und klassifiziert. Diese Segmentierung diente zwar „nur“ der nachträglichen Auszeichnung der Volltexte im XML (und nicht etwa der Unterstützung der automatischen Texterfassung). Sie bilden aber dennoch eine der größten bekannten Sammlungen an Strukturdaten für historische deutschsprachige Drucke. Aus der Untersuchung des Datenerfassungsworkflows können somit Segmentierungsdaten und Textdaten identifiziert werden, die für die Verwendung als GT in Frage kämen. Größtes Manko der Datensammlung ist jedoch die fehlende Verknüpfung zwischen Text und Bild, die die Einsatzszenarien als Trainingsdaten massiv einschränkt. An dieser Stelle setzt der vorgeschlagene Workshop an.</p>
-                </div>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Ziel</head>
-                <p style="text-align: left; ">Die Teilnehmenden des Workshops werden mit Verfahren und Methoden der Erstellung, Erschließung und Speicherung von GT für die automatische Texterkennung vertraut gemacht. Der Workshop ist in zwei Teile geteilt: einen theoretischen und einen praktischen. Ziel des theoretischen Teils ist, dass die Teilnehmenden in die Lage versetzt werden, anhand einer Liste von Kriterien sowie einer Validierung der Daten, Forschungsdaten für die Erstellung von GT einzuschätzen. Mit den OCR-D-GT-Richtlinien bekommen die Teilnehmenden eine in der Praxis erprobte Anleitung für die Erstellung von GT zur Verfügung gestellt. Inhalt und Aufbau, aber auch die Möglichkeiten der praktischen Anwendung dieser Richtlinien im jeweiligen Projekt bilden in diesem ersten Workshopteil den Schwerpunkt. Im praktischen Teil sollen nun die Teilnehmenden in verschiedenen Szenarien GT-Daten erstellen. Dabei werden Forschungsdaten des DTA und vorhandener GT geprüft und eingeschätzt. Dazu werden die im theoretischen Teil vorgestellten Metriken und Validierungsmethoden angewendet. Mit Transformations- und Konvertierungsprogrammen kann in der Folge nun der GT automatisiert erstellt werden. Ebenfalls können spezielle Softwareprogramme für die manuelle Erstellung von GT verwendet werden. Um sich sowohl mit dem Funktionsumfang als auch mit der Leistungsfähigkeit der Tools vertraut zu machen, ist es notwendig, diese im theoretischen Teil kennenzulernen. Der unmittelbare Umgang und die Handhabung des Tools für die GT-Erstellung stehen nicht im Mittelpunkt, sondern die Entscheidung, welches Tool für das jeweilige Vorhaben am geeignetsten scheint.</p>
-                <p style="text-align: left; ">Zum Abschluss steht die Speicherung des GT in einem Repositorium. So können die Daten entsprechend der FAIR-Prinzipien zugänglich gemacht werden. Erklärungen zum Aufbau des Repositoriums sowie die Erschließung mit Metadaten, die Nutzung des OCR-D-GT-Repo-Template<ref n="8" target="ftn8"/> schließen diesen Teil und den Workshop ab.
+<p style="text-align: left; ">Das DTA wurde im Rahmen eines sprachwissenschaftlich orientierten DFG-Projektes erstellt. Der Kernbestand besteht aus 1500 Druckpublikationen mit einem Gesamtumfang von 540.000 Seiten. Die Text- und Textsortenauswahl, die zeitliche Spanne des Publikationszeitraumes vom frühen 17. bis frühen 20. Jahrhundert, die Verwendung von Erstausgaben und die vorlagengetreue Transkription kennzeichnen diesen Bestand als Grundlage eines Referenzkorpus der frühneuhochdeutschen Sprache. Die Bereitstellung der digitalen Texte erfolgt sowohl in einem XML-basierten Format als auch als unannotierter Rohtext.</p>
+<p style="text-align: left; ">Für die Einschätzung der Nutzbarkeit des DTA als Quelle für GT sind nicht nur die Ergebnisdaten relevant. Ein genauerer Blick auf die einzelnen Etappen des ursprünglichen Datenerfassungsworkflows im DTA zeigt bisher ungenutzte Potenziale der einzelnen Datenstände als Trainingsmaterialien für Text- und Strukturerkennung. Die folgende Abbildung illustriert die beiden grundsätzlichen Wege der Volltexterstellung, die im DTA zur Anwendung kamen: Automatische Texterkennung mit anschließender Nachkorrektur („OCR way“) und manuelle Transkription im Vier-Augen-Prinzip („Double Keying way“).</p>
+<p>
+<figure>
+<graphic height="23.327430555555555cm" n="1001" rend="inline" url="Pictures/676f9b129764ebacfcdc06b89796d8af.png" width="16.002cm"/>
+<head>Abbildung 1: Schematische Darstellung des DTA-Datenerfassungsworkflows</head>
+</figure>
+</p>
+<p style="text-align: left; ">Letzterer kam für den Großteil des Bestands zur Anwendung. Das Double-Keying-Verfahren wurde von Nicht-Muttersprachlern vorgenommen und ist sehr genau. Die Zeichengenauigkeit kann mit 99,99 % angesetzt werden (Haaf, 2013; Geyken, 2012). Mit OCR wurden hauptsächlich Titel des 19. und Mitte des 18. Jahrhunderts erfasst.<ref n="6" target="ftn6"/> Für dieses Schrifttum existieren hoch performante und zuverlässige OCR-Modelle.<ref n="7" target="ftn7"/>
+</p>
+<p style="text-align: left; ">Beiden Wegen gemein ist ein manueller Segmentierungsschritt. In diesem wurden Textzonen und Abbildungen lokalisiert und klassifiziert. Diese Segmentierung diente zwar „nur“ der nachträglichen Auszeichnung der Volltexte im XML (und nicht etwa der Unterstützung der automatischen Texterfassung). Sie bilden aber dennoch eine der größten bekannten Sammlungen an Strukturdaten für historische deutschsprachige Drucke. Aus der Untersuchung des Datenerfassungsworkflows können somit Segmentierungsdaten und Textdaten identifiziert werden, die für die Verwendung als GT in Frage kämen. Größtes Manko der Datensammlung ist jedoch die fehlende Verknüpfung zwischen Text und Bild, die die Einsatzszenarien als Trainingsdaten massiv einschränkt. An dieser Stelle setzt der vorgeschlagene Workshop an.</p>
+</div>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Ziel</head>
+<p style="text-align: left; ">Die Teilnehmenden des Workshops werden mit Verfahren und Methoden der Erstellung, Erschließung und Speicherung von GT für die automatische Texterkennung vertraut gemacht. Der Workshop ist in zwei Teile geteilt: einen theoretischen und einen praktischen. Ziel des theoretischen Teils ist, dass die Teilnehmenden in die Lage versetzt werden, anhand einer Liste von Kriterien sowie einer Validierung der Daten, Forschungsdaten für die Erstellung von GT einzuschätzen. Mit den OCR-D-GT-Richtlinien bekommen die Teilnehmenden eine in der Praxis erprobte Anleitung für die Erstellung von GT zur Verfügung gestellt. Inhalt und Aufbau, aber auch die Möglichkeiten der praktischen Anwendung dieser Richtlinien im jeweiligen Projekt bilden in diesem ersten Workshopteil den Schwerpunkt. Im praktischen Teil sollen nun die Teilnehmenden in verschiedenen Szenarien GT-Daten erstellen. Dabei werden Forschungsdaten des DTA und vorhandener GT geprüft und eingeschätzt. Dazu werden die im theoretischen Teil vorgestellten Metriken und Validierungsmethoden angewendet. Mit Transformations- und Konvertierungsprogrammen kann in der Folge nun der GT automatisiert erstellt werden. Ebenfalls können spezielle Softwareprogramme für die manuelle Erstellung von GT verwendet werden. Um sich sowohl mit dem Funktionsumfang als auch mit der Leistungsfähigkeit der Tools vertraut zu machen, ist es notwendig, diese im theoretischen Teil kennenzulernen. Der unmittelbare Umgang und die Handhabung des Tools für die GT-Erstellung stehen nicht im Mittelpunkt, sondern die Entscheidung, welches Tool für das jeweilige Vorhaben am geeignetsten scheint.</p>
+<p style="text-align: left; ">Zum Abschluss steht die Speicherung des GT in einem Repositorium. So können die Daten entsprechend der FAIR-Prinzipien zugänglich gemacht werden. Erklärungen zum Aufbau des Repositoriums sowie die Erschließung mit Metadaten, die Nutzung des OCR-D-GT-Repo-Template<ref n="8" target="ftn8"/> schließen diesen Teil und den Workshop ab.
                 </p>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Inhalte</head>
-                <p style="text-align: left; ">Den Teilnehmenden des Workshops sollen verschiedene Methoden und Verfahren der GT-Erstellung vorgestellt werden.</p>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Theoretischer Teil</head>
-                    <list type="ordered">
-                        <item>Prüfung und Bewertung von Forschungsdaten</item>
-                        <item>Vorstellung der OCR-D-GT-Richtlinien</item>
-                        <item>Vorstellung von Verfahren zur Alignierung von existierenden Transkriptionen und generierter Segmentierung</item>
-                        <item>Vorstellung von Softwaretools</item>
-                    </list>
-                </div>
-                <div type="div2" rend="DH-Heading2">
-                    <head>Praktischer Teil</head>
-                    <list type="ordered">
-                        <item>Erstellung von GT aus Forschungsdaten
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Inhalte</head>
+<p style="text-align: left; ">Den Teilnehmenden des Workshops sollen verschiedene Methoden und Verfahren der GT-Erstellung vorgestellt werden.</p>
+<div rend="DH-Heading2" type="div2">
+<head>Theoretischer Teil</head>
+<list type="ordered">
+<item>Prüfung und Bewertung von Forschungsdaten</item>
+<item>Vorstellung der OCR-D-GT-Richtlinien</item>
+<item>Vorstellung von Verfahren zur Alignierung von existierenden Transkriptionen und generierter Segmentierung</item>
+<item>Vorstellung von Softwaretools</item>
+</list>
+</div>
+<div rend="DH-Heading2" type="div2">
+<head>Praktischer Teil</head>
+<list type="ordered">
+<item>Erstellung von GT aus Forschungsdaten
                             <list type="ordered">
-                                <item>Bewertung der Forschungsdaten</item>
-                                <item>Transformation, Konvertierung der Forschungsdaten</item>
-                                <item>Erstellung und Validierung des GT</item>
-                            </list>
-                        </item>
-                        <item>Erstellung des GT durch Transkription
+<item>Bewertung der Forschungsdaten</item>
+<item>Transformation, Konvertierung der Forschungsdaten</item>
+<item>Erstellung und Validierung des GT</item>
+</list>
+</item>
+<item>Erstellung des GT durch Transkription
                             <list type="ordered">
-                                <item>Vorstellung und Anwendung von Transkription-GT-Tools</item>
-                            </list>
-                        </item>
-                        <item>Speicherung und Veröffentlichung des GT
+<item>Vorstellung und Anwendung von Transkription-GT-Tools</item>
+</list>
+</item>
+<item>Speicherung und Veröffentlichung des GT
                             <list type="ordered">
-                                <item>Erstellung eines GT-Repositoriums auf GitHub</item>
-                            </list>
-                        </item>
-                    </list>
-                    <div type="div3" rend="DH-Heading3">
-                        <head>Benötigte technische Ausstattung:</head>
-                        <p style="text-align: left; ">die jeweiligen Teilnehmenden verfügen über:</p>
-                        <list type="unordered">
-                            <item>einen GitHub-Account</item>
-                            <item>Laptop mit installierten Werkzeugen (Liste wird vorab per E-Mail geschickt)</item>
-                            <item>Ggf. eigene Daten</item>
-                        </list>
-                        <p style="text-align: left; ">Der Raum verfügt über:</p>
-                        <list type="unordered">
-                            <item>Beamer, Whiteboard (wenn möglich)</item>
-                            <item>Internet via W-Lan</item>
-                        </list>
-                    </div>
-                    <div type="div3" rend="DH-Heading3">
-                        <head>Umfang:</head>
-                        <list type="unordered">
-                            <item>vier Stunden (90 Minuten Theorie 30 Minuten Pause 120 Minuten Praxis)</item>
-                        </list>
-                    </div>
-                </div>
-            </div>
-            <div type="div1" rend="DH-Heading1">
-                <head>Forschungsfeld der Beitragenden</head>
-                <p style="text-align: left; ">
-                    <hi rend="bold">Matthias Boenig</hi> ist Informationswissenschaftler sowie Kunsthistoriker. Er hat Bibliotheks- und Informationswissenschaftler und Kunstgeschichte an der Humboldt-Universität zu Berlin studiert. Seit seinem Studium beschäftigt er sich mit der digitalen Transformation von Textdaten in digitale, strukturierte und XML-basierte Forschungsdaten. Dazu war er in verschiedenen Projektkontexten von 1997 an, zu Beginn am Computer- und Medienservice der Humboldt-Universität, dem Institut für Bibliotheks- und Informationswissenschaft und heute an der Berlin-Brandenburgischen Akademie der Wissenschaften tätig. Zurzeit ist Matthias Boenig wissenschaftlicher Mitarbeiter im Projekt OCR-D. Im Rahmen dieses Projekts hat er die OCR-D-GT-Richtlinien entwickelt und betreut diese. Sein derzeitiges praktisches und forschungsorientiertes Interesse besteht in der Erstellung, der Bereitstellung und Standardisierung von GT für die OCR. Matthias Boenig war Mitarbeiter am „Deutschen Textarchiv“.
+<item>Erstellung eines GT-Repositoriums auf GitHub</item>
+</list>
+</item>
+</list>
+<div rend="DH-Heading3" type="div3">
+<head>Benötigte technische Ausstattung:</head>
+<p style="text-align: left; ">die jeweiligen Teilnehmenden verfügen über:</p>
+<list type="unordered">
+<item>einen GitHub-Account</item>
+<item>Laptop mit installierten Werkzeugen (Liste wird vorab per E-Mail geschickt)</item>
+<item>Ggf. eigene Daten</item>
+</list>
+<p style="text-align: left; ">Der Raum verfügt über:</p>
+<list type="unordered">
+<item>Beamer, Whiteboard (wenn möglich)</item>
+<item>Internet via W-Lan</item>
+</list>
+</div>
+<div rend="DH-Heading3" type="div3">
+<head>Umfang:</head>
+<list type="unordered">
+<item>vier Stunden (90 Minuten Theorie 30 Minuten Pause 120 Minuten Praxis)</item>
+</list>
+</div>
+</div>
+</div>
+<div rend="DH-Heading1" type="div1">
+<head>Forschungsfeld der Beitragenden</head>
+<p style="text-align: left; ">
+<hi rend="bold">Matthias Boenig</hi> ist Informationswissenschaftler sowie Kunsthistoriker. Er hat Bibliotheks- und Informationswissenschaftler und Kunstgeschichte an der Humboldt-Universität zu Berlin studiert. Seit seinem Studium beschäftigt er sich mit der digitalen Transformation von Textdaten in digitale, strukturierte und XML-basierte Forschungsdaten. Dazu war er in verschiedenen Projektkontexten von 1997 an, zu Beginn am Computer- und Medienservice der Humboldt-Universität, dem Institut für Bibliotheks- und Informationswissenschaft und heute an der Berlin-Brandenburgischen Akademie der Wissenschaften tätig. Zurzeit ist Matthias Boenig wissenschaftlicher Mitarbeiter im Projekt OCR-D. Im Rahmen dieses Projekts hat er die OCR-D-GT-Richtlinien entwickelt und betreut diese. Sein derzeitiges praktisches und forschungsorientiertes Interesse besteht in der Erstellung, der Bereitstellung und Standardisierung von GT für die OCR. Matthias Boenig war Mitarbeiter am „Deutschen Textarchiv“.
                 </p>
-                <p style="text-align: left; ">
-                    <hi rend="bold">Kay-Michael Würzner</hi> ist Sprachwissenschaftler und hat Computerlinguistik und Germanistik studiert. Nach dem Studium arbeitete er als wissenschaftlicher Mitarbeiter an der Universität Potsdam und der Berlin-Brandenburgischen Akademie der Wissenschaften im Bereich korpuslinguistischer Forschungsdateninfrastrukturen. Seit April 2019 ist Kay-Michael Würzner an der SLUB tätig und bearbeitet Themen des maschinellen Lernens und der automatischen Sprachverarbeitung. Er koordiniert außerdem die Angebote der SLUB rund um einen offenen Forschungskreislauf.
+<p style="text-align: left; ">
+<hi rend="bold">Kay-Michael Würzner</hi> ist Sprachwissenschaftler und hat Computerlinguistik und Germanistik studiert. Nach dem Studium arbeitete er als wissenschaftlicher Mitarbeiter an der Universität Potsdam und der Berlin-Brandenburgischen Akademie der Wissenschaften im Bereich korpuslinguistischer Forschungsdateninfrastrukturen. Seit April 2019 ist Kay-Michael Würzner an der SLUB tätig und bearbeitet Themen des maschinellen Lernens und der automatischen Sprachverarbeitung. Er koordiniert außerdem die Angebote der SLUB rund um einen offenen Forschungskreislauf.
                 </p>
-                <p style="text-align: left; ">
-                    <hi rend="bold">Konstantin Baierer</hi> arbeitet seit 2018 als wissenschaftlicher Mitarbeiter für die Staatsbibliothek zu Berlin am Projekt OCR-D, insbesondere an der technischen Interoperabilität der entwickelten Lösungen, der OCR-D/core Softwarebibliothek und dem Release Management. Besonders wichtig sind ihm transparente, inklusive und robuste Methoden für verteilte Softwareentwicklung und gute Schnittstellen zwischen Kulturerbeeinrichtungen und Digital Humanities.
+<p style="text-align: left; ">
+<hi rend="bold">Konstantin Baierer</hi> arbeitet seit 2018 als wissenschaftlicher Mitarbeiter für die Staatsbibliothek zu Berlin am Projekt OCR-D, insbesondere an der technischen Interoperabilität der entwickelten Lösungen, der OCR-D/core Softwarebibliothek und dem Release Management. Besonders wichtig sind ihm transparente, inklusive und robuste Methoden für verteilte Softwareentwicklung und gute Schnittstellen zwischen Kulturerbeeinrichtungen und Digital Humanities.
                 </p>
-                <p style="text-align: left; ">
-                    <hi rend="bold">Lena Hinrichsen</hi> ist wissenschaftliche Mitarbeiterin an der Herzog August Bibliothek Wolfenbüttel und dort seit 2021 als Koordinatorin im Projekt OCR-D tätig. Ihr Studium der Buchwissenschaft absolvierte sie an der Johannes Gutenberg-Universität Mainz.
+<p style="text-align: left; ">
+<hi rend="bold">Lena Hinrichsen</hi> ist wissenschaftliche Mitarbeiterin an der Herzog August Bibliothek Wolfenbüttel und dort seit 2021 als Koordinatorin im Projekt OCR-D tätig. Ihr Studium der Buchwissenschaft absolvierte sie an der Johannes Gutenberg-Universität Mainz.
                 </p>
-                <p style="text-align: left; ">
-                    <hi rend="bold">Dr. Christian Reul</hi> leitet die Digitalisierungseinheit des Zentrums für Philologie und Digitalität (ZPD) der Universität Würzburg. Seine Forschungsschwerpunkte sind die OCR/HTR auf historischem Material sowie die Neu- und Weiterentwicklung der entsprechenden Software.
+<p style="text-align: left; ">
+<hi rend="bold">Dr. Christian Reul</hi> leitet die Digitalisierungseinheit des Zentrums für Philologie und Digitalität (ZPD) der Universität Würzburg. Seine Forschungsschwerpunkte sind die OCR/HTR auf historischem Material sowie die Neu- und Weiterentwicklung der entsprechenden Software.
                 </p>
-            </div>
-        </body>
-        <back>
+</div>
+</body>
+<back>
 <div type="notes">
-<note rend="footnote text" xml:id="ftn1" n="1">
-                        
-                            <hi style="font-size:10pt" xml:space="preserve"> vgl. OCR-D-GT-Richtlinie &lt;</hi>
-                            <ref target="https://ocr-d.de/de/gt-guidelines/trans/trLevels.html">
-                                <hi rend="underline color(1155CC)" style="font-size:10pt">https://ocr-d.de/de/gt-guidelines/trans/trLevels.html</hi>
-                            </ref>
-                            <hi style="font-size:10pt">&gt;</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn2" n="2">
-                        
-                            <hi style="font-size:10pt" xml:space="preserve"> DFG-Projekt OCR-D : </hi>
-                            <hi style="font-size:9pt">Weiterentwicklung von Verfahren für die Optical-Character-Recognition (OCR), Koordinierungsprojekt &lt;</hi>
-                            <ref target="https://ocr-d.de/de/about">
-                                <hi rend="bold underline color(1155CC)" style="font-size:9pt">https://ocr-d.de/de/about</hi>
-                            </ref>
-                            <hi style="font-size:10pt">&gt;</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn3" n="3">
-                        
-                            <hi style="font-size:10pt" xml:space="preserve"> OCR-D-</hi>GT-Richtlinien
+<note n="1" rend="footnote text" xml:id="ftn1">
+<hi style="font-size:10pt" xml:space="preserve"> vgl. OCR-D-GT-Richtlinie &lt;</hi>
+<ref target="https://ocr-d.de/de/gt-guidelines/trans/trLevels.html">
+<hi rend="underline color(1155CC)" style="font-size:10pt">https://ocr-d.de/de/gt-guidelines/trans/trLevels.html</hi>
+</ref>
+<hi style="font-size:10pt">&gt;</hi>
+</note>
+<note n="2" rend="footnote text" xml:id="ftn2">
+<hi style="font-size:10pt" xml:space="preserve"> DFG-Projekt OCR-D : </hi>
+<hi style="font-size:9pt">Weiterentwicklung von Verfahren für die Optical-Character-Recognition (OCR), Koordinierungsprojekt &lt;</hi>
+<ref target="https://ocr-d.de/de/about">
+<hi rend="bold underline color(1155CC)" style="font-size:9pt">https://ocr-d.de/de/about</hi>
+</ref>
+<hi style="font-size:10pt">&gt;</hi>
+</note>
+<note n="3" rend="footnote text" xml:id="ftn3">
+<hi style="font-size:10pt" xml:space="preserve"> OCR-D-</hi>GT-Richtlinien
                             <hi style="font-family:Roboto;font-size:10pt" xml:space="preserve"> &lt;https://ocr-d.de/de/gt-guidelines/trans/&gt;</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn4" n="4">
+</note>
+<note n="4" rend="footnote text" xml:id="ftn4">
                          siehe dazu Volltexte für die Frühe Neuzeit. Der Beitrag des OCR-D-Projekts zur Volltexterkennung frühneuzeitlicher Drucke (Engl 2020)
                     </note>
-<note rend="footnote text" xml:id="ftn5" n="5">
-                        
-                            <hi style="font-size:10pt" xml:space="preserve"> Deutsches Textarchiv &lt;https://deutschestextarchiv.de/&gt;</hi>
-                        
-                    </note>
-<note rend="footnote text" xml:id="ftn6" n="6">
+<note n="5" rend="footnote text" xml:id="ftn5">
+<hi style="font-size:10pt" xml:space="preserve"> Deutsches Textarchiv &lt;https://deutschestextarchiv.de/&gt;</hi>
+</note>
+<note n="6" rend="footnote text" xml:id="ftn6">
                              siehe dazu Deutsches Textarchiv – Der Digitalisierungsworkflow im DTA &lt;
                                 <ref target="https://deutschestextarchiv.de/doku/workflow">https://deutschestextarchiv.de/doku/workflow</ref>&gt;
                             
                         </note>
-<note rend="footnote text" xml:id="ftn7" n="7">
+<note n="7" rend="footnote text" xml:id="ftn7">
                              Siehe dazu GT4Hist-GT-Datensatz mit Korrekturen: 
                                 <ref target="https://code.bib.uni-mannheim.de/ocr-d/GT4HistOCR">https://code.bib.uni-mannheim.de/ocr-d/GT4HistOCR</ref>, Training Fraktur from GT4HistOCR: 
                                 <ref target="https://github.com/tesseract-ocr/tesstrain/wiki/GT4HistOCR">https://github.com/tesseract-ocr/tesstrain/wiki/GT4HistOCR</ref>, Modelle: GT4HistOCR: 
                                 <ref target="https://code.bib.uni-mannheim.de/ocr-d/GT4HistOCR/src/branch/master/models">https://code.bib.uni-mannheim.de/ocr-d/GT4HistOCR/src/branch/master/models</ref>, frak2021: https://ub-backup.bib.uni-mannheim.de/~stweil/tesstrain/frak2021/
                             
                         </note>
-<note rend="footnote text" xml:id="ftn8" n="8">
-                        
-                            <hi style="font-size:10pt" xml:space="preserve"> OCR-D/gt-repo-template: A template for creating a ground truth repo with the various functions and features: such as metadata creation, data analysis and presentation. (github.com) &lt;</hi>
-                            <ref target="https://github.com/OCR-D/gt-repo-template">
-                                <hi rend="underline color(1155CC)" style="font-size:10pt">https://github.com/OCR-D/gt-repo-template</hi>
-                            </ref>
-                            <hi style="font-size:10pt">&gt;</hi>
-                        
-                    </note></div>
-            <div type="bibliogr">
-                <listBibl>
-                    <head>Bibliographie</head>
-                    <bibl style="text-align: left; "><hi rend ="bold">Engl, Elisabeth; Boenig, Matthias; Baierer, Konstantin; Neudecker, Clemens; Hartmann, Volker.</hi> 2020: „Volltexte für die Frühe Neuzeit : Der Beitrag des OCR-D-Projekts zur Volltexterkennung frühneuzeitlicher Drucke“. Zeitschrift für Historische Forschung, 47(2), 223-250. doi:10.3790/zhf.47.2.223.</bibl>
-                    <bibl style="text-align: left; "><hi rend ="bold">Haaf, Susanne; Wiegand, Frank; Geyken, Alexander:</hi> „Measuring the Correctness of Double-Keying: Error Classification and Quality Control in a Large Corpus of TEI-Annotated Historical Text“. Journal of the Text Encoding Initiative (jTEI) 4, 2013. doi:10.4000/jtei.739.</bibl>
-                    <bibl style="text-align: left; "><hi rend ="bold">Geyken, Alexander; Haaf, Susanne; Jurish, Bryan; Schulz, Matthias; Thomas, Christian; Wiegand, Frank:</hi> „TEI und Textkorpora: Fehlerklassifikation und Qualitätskontrolle vor, während und nach der Texterfassung im Deutschen Textarchiv“. Jahrbuch für Computerphilologie – online, 2012, http://computerphilologie.digital-humanities.de/jg09/geykenetal.html.</bibl>
-                </listBibl>
-            </div>
-        </back>
-    </text>
+<note n="8" rend="footnote text" xml:id="ftn8">
+<hi style="font-size:10pt" xml:space="preserve"> OCR-D/gt-repo-template: A template for creating a ground truth repo with the various functions and features: such as metadata creation, data analysis and presentation. (github.com) &lt;</hi>
+<ref target="https://github.com/OCR-D/gt-repo-template">
+<hi rend="underline color(1155CC)" style="font-size:10pt">https://github.com/OCR-D/gt-repo-template</hi>
+</ref>
+<hi style="font-size:10pt">&gt;</hi>
+</note></div>
+<div type="bibliogr">
+<listBibl>
+<head>Bibliographie</head>
+<bibl style="text-align: left; "><hi rend="bold">Engl, Elisabeth; Boenig, Matthias; Baierer, Konstantin; Neudecker, Clemens; Hartmann, Volker.</hi> 2020: „Volltexte für die Frühe Neuzeit : Der Beitrag des OCR-D-Projekts zur Volltexterkennung frühneuzeitlicher Drucke“. Zeitschrift für Historische Forschung, 47(2), 223-250. doi:10.3790/zhf.47.2.223.</bibl>
+<bibl style="text-align: left; "><hi rend="bold">Haaf, Susanne; Wiegand, Frank; Geyken, Alexander:</hi> „Measuring the Correctness of Double-Keying: Error Classification and Quality Control in a Large Corpus of TEI-Annotated Historical Text“. Journal of the Text Encoding Initiative (jTEI) 4, 2013. doi:10.4000/jtei.739.</bibl>
+<bibl style="text-align: left; "><hi rend="bold">Geyken, Alexander; Haaf, Susanne; Jurish, Bryan; Schulz, Matthias; Thomas, Christian; Wiegand, Frank:</hi> „TEI und Textkorpora: Fehlerklassifikation und Qualitätskontrolle vor, während und nach der Texterfassung im Deutschen Textarchiv“. Jahrbuch für Computerphilologie – online, 2012, http://computerphilologie.digital-humanities.de/jg09/geykenetal.html.</bibl>
+</listBibl>
+</div>
+</back>
+</text>
 </TEI>
